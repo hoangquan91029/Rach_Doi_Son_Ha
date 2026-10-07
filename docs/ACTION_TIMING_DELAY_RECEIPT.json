@@ -1,0 +1,249 @@
+{
+  "status": "PASS_AFTER_NARROW_QA_ORDERED_CLOSE_FIX",
+  "completedUtc": "2026-10-07T20:51:34.166Z",
+  "publicUrl": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net",
+  "normalTls": true,
+  "chromiumResolverIp": "103.84.155.153",
+  "browserVersions": {
+    "chromium": "151.0.7922.34",
+    "firefox": "153.0"
+  },
+  "exactBundlePins": [
+    {
+      "url": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/assets/index-ClW3IlNb.js",
+      "bytes": 136130,
+      "sha256": "ca8e6428603c0033ccd9926fdb69daa5d78cee28fef4259607946530fe02e08b"
+    }
+  ],
+  "map": "delta",
+  "mode": "online",
+  "configuredApplicationMessageHoldEachDirectionMs": 90,
+  "nominalAddedApplicationRoundtripMs": 180,
+  "method": "Playwright routeWebSocket connectToServer; ordered FIFO hold by arrival+configured delay. TLS/native connection establishment is not delayed; close is held in the same FIFO after prior messages. This is application-message delay, not WAN/network emulation. Forwarded counts denote send API calls; gameplay outcomes verify end-to-end use.",
+  "observedConnections": 3,
+  "directionStreams": 6,
+  "messageCounters": {
+    "received": 546,
+    "forwardedSendApiCalls": 546,
+    "queuedAtReceipt": 0,
+    "discardedAfterLogicalCloseAtReceipt": 0,
+    "orderViolations": 0,
+    "closeEventsReceived": 5,
+    "closeEventsForwarded": 5
+  },
+  "perStreamMeasuredDelayAndClose": [
+    {
+      "streamId": 1,
+      "connectionId": 1,
+      "page": "host-delta",
+      "direction": "clientToServer",
+      "configuredHoldMs": 90,
+      "received": 36,
+      "forwarded": 36,
+      "discardedAfterLogicalClose": 0,
+      "queuedMessages": 0,
+      "closesReceived": 1,
+      "closesForwarded": 1,
+      "closeHeldMs": [
+        90.6999119999964
+      ],
+      "orderViolations": 0,
+      "messageTypes": {
+        "create": 1,
+        "configure": 1,
+        "ready": 2,
+        "ping": 23,
+        "command": 7,
+        "rematch": 1,
+        "leave": 1
+      },
+      "actualHoldMs": {
+        "min": 90.28791300000012,
+        "p50": 90.86117899999954,
+        "p95": 99.04540400000042,
+        "max": 99.72174599999926
+      }
+    },
+    {
+      "streamId": 2,
+      "connectionId": 1,
+      "page": "host-delta",
+      "direction": "serverToClient",
+      "configuredHoldMs": 90,
+      "received": 238,
+      "forwarded": 238,
+      "discardedAfterLogicalClose": 0,
+      "queuedMessages": 0,
+      "closesReceived": 1,
+      "closesForwarded": 1,
+      "closeHeldMs": [
+        90.52142099999764
+      ],
+      "orderViolations": 0,
+      "messageTypes": {
+        "joined": 1,
+        "lobby": 12,
+        "start": 2,
+        "state": 200,
+        "pong": 23
+      },
+      "actualHoldMs": {
+        "min": 90.18430200000148,
+        "p50": 90.8665220000039,
+        "p95": 96.87585599999875,
+        "max": 109.18089899999904
+      }
+    },
+    {
+      "streamId": 3,
+      "connectionId": 2,
+      "page": "peer-delta",
+      "direction": "clientToServer",
+      "configuredHoldMs": 90,
+      "received": 3,
+      "forwarded": 3,
+      "discardedAfterLogicalClose": 0,
+      "queuedMessages": 0,
+      "closesReceived": 1,
+      "closesForwarded": 1,
+      "closeHeldMs": [
+        91.1862200000005
+      ],
+      "orderViolations": 0,
+      "messageTypes": {
+        "join": 1,
+        "ready": 1,
+        "ping": 1
+      },
+      "actualHoldMs": {
+        "min": 90.62262699999974,
+        "p50": 91.19015899999977,
+        "p95": 91.19015899999977,
+        "max": 91.52948199999992
+      }
+    },
+    {
+      "streamId": 4,
+      "connectionId": 2,
+      "page": "peer-delta",
+      "direction": "serverToClient",
+      "configuredHoldMs": 90,
+      "received": 10,
+      "forwarded": 10,
+      "discardedAfterLogicalClose": 0,
+      "queuedMessages": 0,
+      "closesReceived": 1,
+      "closesForwarded": 1,
+      "closeHeldMs": [
+        90.83432700000048
+      ],
+      "orderViolations": 0,
+      "messageTypes": {
+        "joined": 1,
+        "lobby": 4,
+        "start": 1,
+        "state": 3,
+        "pong": 1
+      },
+      "actualHoldMs": {
+        "min": 90.28864300000077,
+        "p50": 91.00890299999992,
+        "p95": 91.44506400000046,
+        "max": 106.38636399999996
+      }
+    },
+    {
+      "streamId": 5,
+      "connectionId": 3,
+      "page": "peer-delta",
+      "direction": "clientToServer",
+      "configuredHoldMs": 90,
+      "received": 27,
+      "forwarded": 27,
+      "discardedAfterLogicalClose": 0,
+      "queuedMessages": 0,
+      "closesReceived": 1,
+      "closesForwarded": 1,
+      "closeHeldMs": [
+        90.59045399999741
+      ],
+      "orderViolations": 0,
+      "messageTypes": {
+        "resume": 1,
+        "command": 1,
+        "ping": 22,
+        "rematch": 1,
+        "ready": 1,
+        "leave": 1
+      },
+      "actualHoldMs": {
+        "min": 90.1611890000022,
+        "p50": 90.74844699999812,
+        "p95": 91.25823700000183,
+        "max": 102.82132799999818
+      }
+    },
+    {
+      "streamId": 6,
+      "connectionId": 3,
+      "page": "peer-delta",
+      "direction": "serverToClient",
+      "configuredHoldMs": 90,
+      "received": 232,
+      "forwarded": 232,
+      "discardedAfterLogicalClose": 0,
+      "queuedMessages": 0,
+      "closesReceived": 0,
+      "closesForwarded": 0,
+      "closeHeldMs": [],
+      "orderViolations": 0,
+      "messageTypes": {
+        "joined": 1,
+        "lobby": 8,
+        "start": 2,
+        "state": 199,
+        "pong": 22
+      },
+      "actualHoldMs": {
+        "min": 90.15284300000349,
+        "p50": 90.90742000000319,
+        "p95": 99.02499000000535,
+        "max": 107.43491200000426
+      }
+    }
+  ],
+  "outcomes": {
+    "combatWinner": 0,
+    "combatReason": "Enemy General defeated",
+    "realReloadReconnect": true,
+    "consensualRematch": true,
+    "bothResultAndMenu": true,
+    "initialHostTick": 4,
+    "lastLoopSampleHostTick": 453,
+    "confirmedVictoryPeerTick": 597,
+    "errors": [],
+    "wallSecondsIncludingPostVictoryChecks": 37.486
+  },
+  "tickSamplingNote": "Original raw finalTickHost453 is the last loop sample, not a final synchronized snapshot. Peer tick597 is confirmed victory. Source harness now labels these lastLoopSampleTickHost / confirmedVictoryTickPeer. No desync inference from noncontemporaneous samples.",
+  "preservedFailure": {
+    "path": "artifacts/production-action-timing-delay90/failure.json",
+    "sha256": "36c9f8b642d53556fc426b52dc28a4537e749e740a658631fb77d4497e3753ff",
+    "cause": "QA immediately propagated close, discarding buffered host leave; live runtime unchanged. Narrow fix queues close after prior application messages."
+  },
+  "passingEvidence": {
+    "path": "artifacts/production-action-timing-delay90/retry-ordered-close/receipt.json",
+    "sha256": "457411a67d2e38510458d509dacbdfc4f684e02333de1b5d0019ac79d8f90062",
+    "victoryPng": "artifacts/production-action-timing-delay90/retry-ordered-close/chromium-delta-victory.png",
+    "victoryPngSha256": "5699a2357d4cb757e6f1bf64a7d0d306360cf96094c4711daa423ce88335a492"
+  },
+  "healthAfter": {
+    "ok": true,
+    "rooms": 0
+  },
+  "limits": [
+    "One public Delta same-host headless Chromium/Firefox flow, with one narrow harness retry.",
+    "Application message scheduling only, not WAN packet latency/jitter/loss/bandwidth or TLS-handshake emulation.",
+    "Close holds follow FIFO; counters are observed at receipt time, not every eventual teardown event.",
+    "No severe-desync, maximum-load, external-device or art/motion qualification claim."
+  ]
+}
