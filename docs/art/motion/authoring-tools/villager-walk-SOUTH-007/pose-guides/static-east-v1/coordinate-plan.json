@@ -1,0 +1,133 @@
+{
+  "status": "MODEL_ONLY_NON_ART_NOT_ANIMATION",
+  "canvas": [
+    1254,
+    1254
+  ],
+  "root": [
+    654,
+    1140
+  ],
+  "worldScale": 0.030303030303030304,
+  "direction": {
+    "screen": "EAST_RIGHT",
+    "engine": "D07",
+    "world": "NE",
+    "worldForward": [
+      1,
+      -1
+    ]
+  },
+  "camera": {
+    "elevationDegrees": 26.565,
+    "projection": "locked game orthographic dimetric affine",
+    "groundDiamondRatio": [
+      2,
+      1
+    ]
+  },
+  "projectionFormula": "screen=(654+x,1140+0.5*depth-projectedHeight), axis aligned local heading NE; preserves game2:1 affine ground",
+  "proportions": "Visual South reference used for overall height and body segment proportions only; coordinate anatomy is MODEL_ONLY authored hypothesis, not exact measured body landmarks",
+  "sourceReference": {
+    "path": "../../identity/south-neutral-reference/raw.png",
+    "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+    "usage": "inspected proportions only; no copied pixels, traces, cutouts or image edits"
+  },
+  "anatomicalOwnership": "RIGHT side near(camera SE); LEFT side far(NW) for actor heading worldNE. Labels are QA only.",
+  "points": {
+    "LEFT_shoulder": [
+      654,
+      309.0
+    ],
+    "LEFT_elbow": [
+      674,
+      514.0
+    ],
+    "LEFT_wrist": [
+      680,
+      679.0
+    ],
+    "LEFT_hip": [
+      654,
+      721.0
+    ],
+    "LEFT_knee": [
+      650,
+      904.0
+    ],
+    "LEFT_ankle": [
+      654,
+      1064.0
+    ],
+    "LEFT_heel": [
+      619,
+      1126.0
+    ],
+    "LEFT_toe": [
+      769,
+      1126.0
+    ],
+    "RIGHT_shoulder": [
+      654,
+      337.0
+    ],
+    "RIGHT_elbow": [
+      674,
+      542.0
+    ],
+    "RIGHT_wrist": [
+      680,
+      707.0
+    ],
+    "RIGHT_hip": [
+      654,
+      749.0
+    ],
+    "RIGHT_knee": [
+      650,
+      932.0
+    ],
+    "RIGHT_ankle": [
+      654,
+      1092.0
+    ],
+    "RIGHT_heel": [
+      619,
+      1154.0
+    ],
+    "RIGHT_toe": [
+      769,
+      1154.0
+    ]
+  },
+  "constraints": [
+    "Head face, sternum, pelvis and both feet point screen right, not only the head",
+    "One visible side eye/nose silhouette; no full front face",
+    "Shoulder/hip pair overlap horizontally; narrow profile chest/pelvis",
+    "Both sole longitudinal axes have positiveX and zeroY; minor toe-out only if later illustration remains clearly profile",
+    "Fixed root and equal corresponding limb segment lengths; ground support sole points remain on their own projected depth plane"
+  ],
+  "legSegmentLengthsSource": {
+    "LEFT": [
+      183.04371062672436,
+      160.04999218994044
+    ],
+    "RIGHT": [
+      183.04371062672436,
+      160.04999218994044
+    ]
+  },
+  "footAxes": {
+    "LEFT": [
+      150,
+      0.0
+    ],
+    "RIGHT": [
+      150,
+      0.0
+    ]
+  },
+  "finishedArt": false,
+  "motionQualified": false,
+  "runtimeIntegrated": false
+}

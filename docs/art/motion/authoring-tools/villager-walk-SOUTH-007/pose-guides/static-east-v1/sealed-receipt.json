@@ -1,0 +1,36 @@
+{
+  "status": "MODEL_ONLY_STATIC_EAST_POSE_GUIDE",
+  "canvas": [
+    1254,
+    1254
+  ],
+  "root": [
+    654,
+    1140
+  ],
+  "direction": {
+    "screen": "RIGHT_EAST",
+    "engine": "D07",
+    "world": "NE"
+  },
+  "parentReview": "Parent accepted profile guide structure only; no art, camera-exactness or motion qualification",
+  "assemblerInspection": "Actual final guide-qa.png viewed: one side-face, narrow profile body, near RIGHT arm visible over core, overlapping equal-length legs, both sole axes horizontal +X; separate LEFT/FAR RIGHT/NEAR QA labels",
+  "sourceUsage": "South reference inspected for overall proportions only; no source pixel extraction, tracing, edits or finished identity reproduction",
+  "revisionNote": "Final guide includes visible near-arm overlay and150px model foot axes; structural profile remains unchanged",
+  "outputs": [
+    {
+      "path": "guide.png",
+      "sha256": "9cf118bfcaa6958415f043e83dc1a3d9f7f49b22299509c1cc5fb134e98c938e"
+    },
+    {
+      "path": "guide-qa.png",
+      "sha256": "328d2d3b0bdb0bbd9903ca5dd498f1ce36481296ff2d9f62a082ab54087193ee"
+    }
+  ],
+  "imageCalls": 0,
+  "runtimeChanges": false,
+  "sealedAtlasToolingModified": false,
+  "finishedArt": false,
+  "motionQualified": false,
+  "remainingAuthorizedActions": "None in this window; held for parent checkpoint/post-reset task"
+}
