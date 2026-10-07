@@ -85,7 +85,7 @@ export function createRasterSlice({enabled=new URLSearchParams(globalThis.locati
    if(!enabled||!ready||!entity||entity.embarked||typeof project!=='function'||!finite(entity.x)||!finite(entity.y))return false;
    if(entity.kind==='building'&&entity.construction){recordMissing(`${entity.type}:construction`,'No authored construction sequence');return false;}
    let families,kind,direction;
-   if(entity.kind==='building'){if(entity.type!=='residence')return false;families=['residence','building.residence'];kind='building';direction=null;}
+   if(entity.kind==='building'){if(!['residence','granary'].includes(entity.type))return false;families=[entity.type,`building.${entity.type}`];kind='building';direction=null;}
    else if(['villager','infantry','cavalry'].includes(entity.type)){families=[entity.type,`unit.${entity.type}`];kind='unit';direction=entity.dir;}
    else if(entity.type==='general'&&entity.character==='tran_hung_dao'){families=['tran_hung_dao','unit.tran_hung_dao'];kind='unit';direction=entity.dir;}
    else return false;
