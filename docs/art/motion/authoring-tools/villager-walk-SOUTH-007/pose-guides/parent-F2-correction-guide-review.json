@@ -1,0 +1,17 @@
+{
+  "status": "PASS_CONTROLLED_F2_TARGET_GUIDE_ONLY",
+  "reviewed": [
+    "actualnative1254guide",
+    "actualnative1254QA",
+    "heldF2andselectedF0comparison"
+  ],
+  "guideSha256": "ed5f9f7234b2b2122ccf2c2970b5da1605239985a42bc6f110b3a1ae8496fa34",
+  "qaSha256": "cde299715227149ae6777480c04d76eee8d276e27341f351b82e3eb4e0803c88",
+  "observations": [
+    "LEFTviewerRIGHT target sole~1138, RIGHTviewerLEFT passing sole~1058 and samegrounddepth, root6541140.",
+    "OldmodelF0ghost1218 explicit80pixelretreat, separateapproxactualF0ghost1210; do not equate observed manual landmarks with exactmodel.",
+    "Fixedcanvas/bodyproportions; manipulate actuallimb poses/foreshortening notcompleteimageshift/shrink."
+  ],
+  "finishedArtApproved": false,
+  "motionApproved": false
+}

@@ -1,0 +1,274 @@
+{
+  "status": "MODEL_ONLY_SINGLE_F2_CORRECTION_PARENT_AUDIT_PENDING",
+  "canvas": [
+    1254,
+    1254
+  ],
+  "root": [
+    654,
+    1140
+  ],
+  "geometrySource": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-guides/walk-south-keys-v2/coordinate-plan.json",
+    "sha256": "c6499aebde1287abe2066de1dfcc3f6fc74bae9b0952452a34024e3da27c87bf"
+  },
+  "characterReferences": [
+    {
+      "role": "accepted F0 inspected only",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/walk/keys/F00-left-contact-01/raw.png",
+      "sha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001"
+    },
+    {
+      "role": "held F2 inspected only; not selected",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/walk/keys/F02-right-passing-01/raw.png",
+      "sha256": "1c41fdda017b5f64dd7bb03deb5c0c72a24c0d18cacbbbf1f79b2e1c2a274366"
+    }
+  ],
+  "frame": 2,
+  "timeMs": 150,
+  "support": "LEFT / viewer RIGHT",
+  "passing": "RIGHT / viewer LEFT",
+  "unchangedF2Geometry": {
+    "frame": 2,
+    "timeMs": 150,
+    "support": "LEFT",
+    "swing": "RIGHT",
+    "passing": true,
+    "pelvisZ": 500,
+    "lateralWeightShift": 55,
+    "bodyCenterSourceX": 709,
+    "bodyTravelDepth": 160.0,
+    "points3D": {
+      "LEFT_hip": [
+        155,
+        -100,
+        500
+      ],
+      "LEFT_knee": [
+        126.1013986013986,
+        15.39759277519164,
+        268.8111888111888
+      ],
+      "LEFT_ankle": [
+        100,
+        -100.0,
+        60
+      ],
+      "LEFT_heel": [
+        100,
+        -150.0,
+        0
+      ],
+      "LEFT_toe": [
+        100,
+        10.0,
+        0
+      ],
+      "LEFT_shoulder": [
+        235.0,
+        -100,
+        810
+      ],
+      "LEFT_elbow": [
+        235.0,
+        -5.965956773181816,
+        633.4848484848485
+      ],
+      "LEFT_wrist": [
+        235.0,
+        -100,
+        480
+      ],
+      "RIGHT_hip": [
+        -45,
+        -100,
+        500
+      ],
+      "RIGHT_knee": [
+        -74.57351555136663,
+        71.04165745875883,
+        306.42789820923656
+      ],
+      "RIGHT_ankle": [
+        -100,
+        -100,
+        140
+      ],
+      "RIGHT_heel": [
+        -100,
+        -150,
+        80
+      ],
+      "RIGHT_toe": [
+        -100,
+        10,
+        80
+      ],
+      "RIGHT_shoulder": [
+        -125.0,
+        -100,
+        810
+      ],
+      "RIGHT_elbow": [
+        -125.0,
+        -194.0340432268182,
+        633.4848484848485
+      ],
+      "RIGHT_wrist": [
+        -125.0,
+        -100,
+        480
+      ]
+    },
+    "points2D": {
+      "LEFT_hip": [
+        809,
+        590.0
+      ],
+      "LEFT_knee": [
+        780.1013986013986,
+        878.887607576407
+      ],
+      "LEFT_ankle": [
+        754,
+        1030.0
+      ],
+      "LEFT_heel": [
+        754,
+        1065.0
+      ],
+      "LEFT_toe": [
+        754,
+        1145.0
+      ],
+      "LEFT_shoulder": [
+        889.0,
+        280.0
+      ],
+      "LEFT_elbow": [
+        889.0,
+        503.53217312856054
+      ],
+      "LEFT_wrist": [
+        889.0,
+        610.0
+      ],
+      "RIGHT_hip": [
+        609,
+        590.0
+      ],
+      "RIGHT_knee": [
+        579.4264844486333,
+        869.0929305201429
+      ],
+      "RIGHT_ankle": [
+        554,
+        950.0
+      ],
+      "RIGHT_heel": [
+        554,
+        985.0
+      ],
+      "RIGHT_toe": [
+        554,
+        1065.0
+      ],
+      "RIGHT_shoulder": [
+        529.0,
+        280.0
+      ],
+      "RIGHT_elbow": [
+        529.0,
+        409.49812990174246
+      ],
+      "RIGHT_wrist": [
+        529.0,
+        610.0
+      ]
+    },
+    "soles": {
+      "LEFT": {
+        "planted": true,
+        "heightAboveGround": 0,
+        "axis": [
+          0,
+          160,
+          0
+        ],
+        "worldHeel": [
+          100,
+          10.0,
+          0
+        ],
+        "worldToe": [
+          100,
+          170.0,
+          0
+        ]
+      },
+      "RIGHT": {
+        "planted": false,
+        "heightAboveGround": 80,
+        "axis": [
+          0,
+          160,
+          0
+        ],
+        "worldHeel": [
+          -100,
+          10.0,
+          80
+        ],
+        "worldToe": [
+          -100,
+          170.0,
+          80
+        ]
+      }
+    },
+    "lengths": {
+      "LEFT": {
+        "thigh": 260.0,
+        "shin": 239.99999999999997,
+        "upperArm": 200.0,
+        "forearm": 180.00000000000003
+      },
+      "RIGHT": {
+        "thigh": 260.0,
+        "shin": 239.99999999999997,
+        "upperArm": 200.0,
+        "forearm": 180.00000000000003
+      }
+    }
+  },
+  "targetExtents": {
+    "supportModelOutlineBottomY": 1137.5,
+    "passingModelOutlineBottomY": 1057.5,
+    "F0ModelOutlineBottomY": 1217.5,
+    "exactModelBackwardLocalDisplacementY": -80,
+    "observedF0ApproxBottomY": 1208,
+    "observedHeldF2ApproxBottomY": 1206,
+    "observedF0GhostApproxY": 1210,
+    "observedReferenceIsNotExactModelTrack": true
+  },
+  "stablePlanes": {
+    "hatApexY": 30,
+    "shoulderY": 280,
+    "hipY": 590,
+    "rootY": 1140,
+    "anatomicalLeftSoleCenterX": 754,
+    "anatomicalRightSoleCenterX": 554
+  },
+  "bodyShift": {
+    "sourcePx": 55,
+    "meaning": "authored shift toward support, not measured exact COM"
+  },
+  "closedGates": [
+    "Finished source frame authoring requires parent direction/identity gate authorization",
+    "No motion/loop/art/runtime qualification from geometry"
+  ],
+  "sourcePixelOperations": false,
+  "imageCalls": 0,
+  "finishedArt": false,
+  "motionQualified": false
+}
