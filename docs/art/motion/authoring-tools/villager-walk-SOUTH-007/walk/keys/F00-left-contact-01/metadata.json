@@ -1,0 +1,81 @@
+{
+  "asset": "villager South walk key F00 LEFT contact candidate",
+  "status": "PENDING_PARENT_VISUAL_REVIEW",
+  "calls_initiated": 1,
+  "authorized_call_count": 1,
+  "retries": 0,
+  "generated_output_path": "/home/kieu-hoang-quan/.codex/generated_images/01a116ce-195d-73e0-a579-e4e5e990575d/exec-3d53c0f5-ad58-4133-9fdd-ce3ca357f35c.png",
+  "raw_path": "raw.png",
+  "raw_sha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001",
+  "decoded_rgba_sha256": "07bc362e869f40e8a3d5ba0b6fabdd7845f6132c0aa4656a17f762ee46609410",
+  "source_format": "PNG",
+  "source_canvas": [
+    1254,
+    1254
+  ],
+  "source_mode": "RGBA",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "alpha_bounds_exclusive": {
+    "0": [
+      55,
+      42,
+      1192,
+      1230
+    ],
+    "1": [
+      387,
+      43,
+      877,
+      1212
+    ],
+    "16": [
+      390,
+      45,
+      875,
+      1210
+    ],
+    "128": [
+      391,
+      46,
+      874,
+      1209
+    ],
+    "250": [
+      392,
+      47,
+      873,
+      1208
+    ]
+  },
+  "work_order_sha256": "7e0a2190431b549fd7ce65a387bec33a78d67e33fe78ec67cfa622a27d7f73c9",
+  "identity_lock_sha256": "35fbcf7c558cd32450ddfb6cae76b94bb42994bda36e88c5a3a4df18e239eec3",
+  "identity_review_sha256": "7b493e42607bd03dbe29bf9ae7a3e6bae0f6443fdb152be297f1d92266920d1d",
+  "prompt_sha256": "91f7e281dce54aa32bfc7ddb7f3c6502dcbe21eea4fd7154624bd3c17b7fead2",
+  "input_locks_sha256": "cf325be5721f9f6011f131bf6d633cbc4aa3e681c9722d59d76e9bf340bcde14",
+  "locked_ground_pivot": [
+    654,
+    1140
+  ],
+  "whole_canvas_logical_size": 38,
+  "phase": {
+    "frame": "F00",
+    "time_ms": 0,
+    "duration_ms": 80,
+    "primary_support": "LEFT/viewer RIGHT",
+    "left_foot": "forward, intended planted and weight receiving",
+    "right_foot": "trailing, intended heel raised/toe down",
+    "left_arm": "back",
+    "right_arm": "forward",
+    "weight_shift_source_px_hypothesis": 25
+  },
+  "review_observations": {
+    "native": "A single complete illustrated South-facing character with visible forward stride; viewer-right foot is substantially forward and the viewer-left leg trails. No guide marks/text/background visible in native preview.",
+    "support": "The viewer-right forward sandal appears to be the low/grounded support; the viewer-left trailing foot appears lifted. Confirm sole contact and toe/heel relationship during parent review.",
+    "identity": "Conical hat, face/goatee, ivory tunic, dark asymmetric sash, brown trousers, pale wraps and sandals remain recognizable; no mirroring.",
+    "preview": "Direct full-canvas 1254-to-38 reduction only; use parent game-scale review for binary support call."
+  },
+  "scope": "Only F00 candidate exists; no F02/F04/F06 or inbetweens authorized; no runtime or final art approval"
+}
