@@ -1,0 +1,77 @@
+{
+  "component_id": "arm_near_upper",
+  "order_id": 4,
+  "status": "REVIEW_ONLY_STATIC_CALIBRATION_PROPOSAL",
+  "source_canvas": [
+    1254,
+    1254
+  ],
+  "mode": "RGBA",
+  "alpha_threshold_bounds": {
+    "16": {
+      "bbox_exclusive": [
+        315,
+        114,
+        987,
+        1115
+      ],
+      "size": [
+        672,
+        1001
+      ]
+    },
+    "128": {
+      "bbox_exclusive": [
+        315,
+        115,
+        987,
+        1114
+      ],
+      "size": [
+        672,
+        999
+      ]
+    }
+  },
+  "raw_sha256": "fc5b48675f96d4ed7c4520d9babc8d0aa9f683b1e459e47c194e4b5bf711adac",
+  "decoded_rgba_sha256": "b06edee5aa3dc28908450056f5140ef1077b1815376efcb78ea74395b4de163a",
+  "inspection": "One isolated pale near/screen-right upper sleeve in the correct elevated three-quarter rest-axis direction; no forearm, hand or other part visible.",
+  "landmarks_raw_px": {
+    "shoulder_proximal_overlap_center": {
+      "xy": [
+        430,
+        120
+      ],
+      "uncertainty_px": 35,
+      "basis": "rounded shoulder cap center at upper-left proximal end"
+    },
+    "elbow_distal_overlap_center": {
+      "xy": [
+        816,
+        1055
+      ],
+      "uncertainty_px": 35,
+      "basis": "center of distal cuff opening at lower-right end"
+    }
+  },
+  "measured_axis_px": 1011.544,
+  "target_rest_axis_px": 170.31,
+  "static_calibration": {
+    "scale_uniform": 0.168366,
+    "rotation_degrees": 18.655,
+    "translation_source_space": [
+      726.649,
+      275.76
+    ],
+    "target_proximal_rest": [
+      788.78,
+      318.06
+    ],
+    "target_distal_rest": [
+      800,
+      488
+    ],
+    "basis": "One static per-component uniform calibration; endpoint positions are visual hypotheses and require fixed-38 static assembly review. No per-frame fit or anatomy deformation."
+  },
+  "motion_approved": false
+}

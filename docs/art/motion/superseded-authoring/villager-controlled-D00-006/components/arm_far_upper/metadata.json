@@ -1,0 +1,28 @@
+{
+  "component_id": "arm_far_upper",
+  "order_id": 2,
+  "status": "REVIEW_ONLY_SCALE_MISMATCH_STOP",
+  "source_canvas": [
+    1254,
+    1254
+  ],
+  "mode": "RGBA",
+  "alpha_bbox_exclusive": [
+    33,
+    19,
+    1226,
+    1254
+  ],
+  "alpha_bbox_size": [
+    1193,
+    1235
+  ],
+  "raw_sha256": "984de1d005365d9aa0e332167aba834800b05aff27b52806cff8fe1c11ad8b5d",
+  "decoded_rgba_sha256": "8d85ac9330f30a7a26aa506837975069d88939afd5ce9fff5ee6262e52d3faf7",
+  "natural_landmarks": {
+    "shoulder_proximal_overlap": "Not resolved against master; silhouette has an upper shoulder cap at the upper-right end, but the nearly full-canvas part is too large for reliable anatomy measurement.",
+    "elbow_distal_overlap": "Not resolved; distal opening visible at lower end, but no trustworthy native-space coordinate because output scale is grossly mismatched.",
+    "joint_measurements": "Not recorded; component scale failure prevents truthful natural landmark measurement."
+  },
+  "inspection": "Correct isolated pale far/screen-left tunic sleeve with shoulder and distal elbow overlap; no forearm/hand or extraneous body parts. However alpha bounds are 1193x1235 px, nearly canvas-filling and incompatible with natural upper-arm proportion under the locked 38/1254 world scale and core calibration. Stop sequential component authorization for parent review."
+}

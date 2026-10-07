@@ -1,0 +1,177 @@
+{
+  "rigSha256": "b6cc9e8462898d86cab7219f7a8cdd81d4142f5c37d36627c8b88c48427119c5",
+  "originalHashes": {
+    "core": "504793f67b8cc81fcede31fcb3a1d7db2a9c1585dbce5bff6cbbfe8263355cc3",
+    "far_upper_arm": "984de1d005365d9aa0e332167aba834800b05aff27b52806cff8fe1c11ad8b5d",
+    "far_forearm_hand": "bb132ffd9982441111f728db622619bdd12e47b2e7878f5dccdaf9d31340b5d9"
+  },
+  "status": "PARTIAL_NOT_MOTION",
+  "canvas": [
+    1254,
+    1254
+  ],
+  "root": [
+    650,
+    1140
+  ],
+  "scale": 0.030303030303030304,
+  "cycleDurationMs": null,
+  "frameCount": 1,
+  "originalCustody": {
+    "core": {
+      "sha256": "504793f67b8cc81fcede31fcb3a1d7db2a9c1585dbce5bff6cbbfe8263355cc3",
+      "rgbaSha256": "0a5121d70f8f5650ca51ab4078c3f02efd5a168f9126eb1d529770dd248351d8",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "landmarkMetadata": {
+        "hat_apex": {
+          "name": "hat_apex",
+          "xy": [
+            646,
+            34
+          ],
+          "uncertainty_px": 6,
+          "status": "visible approximate"
+        },
+        "face_center": {
+          "name": "face_center",
+          "xy": [
+            666,
+            263
+          ],
+          "uncertainty_px": 22,
+          "status": "visible approximate"
+        },
+        "neck_base": {
+          "name": "neck_base",
+          "xy": [
+            652,
+            396
+          ],
+          "uncertainty_px": 24,
+          "status": "visible approximate"
+        },
+        "shoulder_far_screen_left_overlap": {
+          "name": "shoulder_far_screen_left_overlap",
+          "xy": [
+            425,
+            462
+          ],
+          "uncertainty_px": 24,
+          "status": "visible attachment cap; approximate center"
+        },
+        "shoulder_near_screen_right_overlap": {
+          "name": "shoulder_near_screen_right_overlap",
+          "xy": [
+            869,
+            463
+          ],
+          "uncertainty_px": 24,
+          "status": "visible attachment cap; approximate center"
+        },
+        "waist_sash_center": {
+          "name": "waist_sash_center",
+          "xy": [
+            651,
+            783
+          ],
+          "uncertainty_px": 16,
+          "status": "visible approximate"
+        },
+        "hip_far_screen_left_overlap": {
+          "name": "hip_far_screen_left_overlap",
+          "xy": [
+            560,
+            1110
+          ],
+          "range_xy": {
+            "x": [
+              515,
+              620
+            ],
+            "y": [
+              1040,
+              1170
+            ]
+          },
+          "uncertainty_px": 60,
+          "status": "AUTHORED_RIG_ATTACHMENT_HYPOTHESIS_IN_VISIBLE_UPPER_TROUSER_OVERLAP_LOBE; not a measured anatomical center"
+        },
+        "hip_near_screen_right_overlap": {
+          "name": "hip_near_screen_right_overlap",
+          "xy": [
+            780,
+            1110
+          ],
+          "range_xy": {
+            "x": [
+              735,
+              840
+            ],
+            "y": [
+              1040,
+              1170
+            ]
+          },
+          "uncertainty_px": 60,
+          "status": "AUTHORED_RIG_ATTACHMENT_HYPOTHESIS_IN_VISIBLE_UPPER_TROUSER_OVERLAP_LOBE; not a measured anatomical center"
+        }
+      },
+      "inspection": {
+        "actor": "Codex art producer",
+        "method": "native-image visual inspection plus alpha-bound diagnostics",
+        "uncertainty": "visible landmarks approximate within stated pixel radii; concealed hip pivots are unresolved",
+        "status": "TECHNICALLY_USABLE_FOR_RIG_PROTOTYPE_PENDING_WHOLE_LOOP_REVIEW"
+      }
+    },
+    "far_upper_arm": {
+      "sha256": "984de1d005365d9aa0e332167aba834800b05aff27b52806cff8fe1c11ad8b5d",
+      "rgbaSha256": "8d85ac9330f30a7a26aa506837975069d88939afd5ce9fff5ee6262e52d3faf7",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "landmarkMetadata": {},
+      "inspection": {
+        "actor": "Codex art producer and parent correction, verified by rig assembler",
+        "method": "Natural cap/cuff endpoints from sidecar-v2; actual native image inspected; hashes verified on intake",
+        "status": "TECHNICALLY_USABLE_FOR_STATIC_DIAGNOSTIC",
+        "uncertainty": "Parent/producer approximate natural landmarks, shoulder25px elbow30px"
+      }
+    },
+    "far_forearm_hand": {
+      "sha256": "bb132ffd9982441111f728db622619bdd12e47b2e7878f5dccdaf9d31340b5d9",
+      "rgbaSha256": "2e9d807046f7fac95396af040240b9f31162eb5cbef9d4faa88fe20f07f40fee",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "landmarkMetadata": {
+        "elbow_proximal_overlap_center": {
+          "xy": [
+            594,
+            380
+          ],
+          "uncertainty_px": 40,
+          "basis": "center of exposed skin at lower sleeve cuff opening"
+        },
+        "wrist_joint_center": {
+          "xy": [
+            717,
+            846
+          ],
+          "uncertainty_px": 30,
+          "basis": "narrow wrist transition before hand widens"
+        }
+      },
+      "inspection": {
+        "actor": "Codex art producer; native/raw inspected by rig assembler",
+        "method": "Producer measured natural elbow/wrist centers, native image inspected and byte/RGBA custody checked",
+        "status": "TECHNICALLY_USABLE_FOR_STATIC_DIAGNOSTIC",
+        "uncertainty": "elbow40rawpx/wrist30rawpx approximate natural centers"
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "component_id": "core_head_torso_pelvis",
+  "source_raw_sha256": "504793f67b8cc81fcede31fcb3a1d7db2a9c1585dbce5bff6cbbfe8263355cc3",
+  "status": "PREVIEW_ONLY_PARENT_REVIEW_REQUIRED",
+  "source_to_rest_transform": {
+    "scale": 0.62,
+    "rotation_rad": 0,
+    "translation_source_px": [
+      250.0,
+      31.0
+    ]
+  },
+  "anchor_observation": {
+    "source_hat_apex": [
+      646,
+      34
+    ],
+    "target_master_hat_apex": [
+      650,
+      52
+    ],
+    "uncertainty_px": 6
+  },
+  "fit_basis": "natural head-top-to-pelvis-overlap vertical span, not alpha bounding box",
+  "limitation": "The scale may leave shoulder width or face/hat size mismatched. Compare both landmarks before approval; if one uniform transform cannot preserve body volume and camera, hold this component rather than distort it."
+}

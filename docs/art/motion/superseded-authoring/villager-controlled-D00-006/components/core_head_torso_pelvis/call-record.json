@@ -1,0 +1,23 @@
+{
+  "job_id": "villager-controlled-D00-006",
+  "component_id": "core_head_torso_pelvis",
+  "order_id": 1,
+  "local_attempt_id": "controlled006-core-001",
+  "tool_call_id": null,
+  "tool": "built-in ImageGen",
+  "output_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-controlled-D00-006/components/core_head_torso_pelvis/raw.png",
+  "output_sha256": "504793f67b8cc81fcede31fcb3a1d7db2a9c1585dbce5bff6cbbfe8263355cc3",
+  "prompt_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-controlled-D00-006/components/core_head_torso_pelvis/prompt.txt",
+  "prompt_sha256": "6b9ebd62e6bff990fcf2f6003adf32c089caa6adedd94a22500640ee0b37e3ef",
+  "inputs": [
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+      "role": "locked identity/body-volume/material/camera reference"
+    }
+  ],
+  "transparent_background_requested": true,
+  "call_cap": 1,
+  "retries": 0,
+  "decision": "RAW_CANDIDATE_PENDING_PARENT_REVIEW"
+}

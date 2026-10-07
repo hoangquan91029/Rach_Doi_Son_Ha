@@ -1,0 +1,133 @@
+{
+  "component_id": "core_head_torso_pelvis",
+  "order_id": 1,
+  "original": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-controlled-D00-006/components/core_head_torso_pelvis/raw.png",
+  "sha256": "504793f67b8cc81fcede31fcb3a1d7db2a9c1585dbce5bff6cbbfe8263355cc3",
+  "rgbaSha256": "0a5121d70f8f5650ca51ab4078c3f02efd5a168f9126eb1d529770dd248351d8",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "slot": "core",
+  "inspection": {
+    "actor": "Codex art producer",
+    "method": "native-image visual inspection plus alpha-bound diagnostics",
+    "uncertainty": "visible landmarks approximate within stated pixel radii; concealed hip pivots are unresolved",
+    "status": "TECHNICALLY_USABLE_FOR_RIG_PROTOTYPE_PENDING_WHOLE_LOOP_REVIEW"
+  },
+  "landmarks": [
+    {
+      "name": "hat_apex",
+      "xy": [
+        646,
+        34
+      ],
+      "uncertainty_px": 6,
+      "status": "visible approximate"
+    },
+    {
+      "name": "face_center",
+      "xy": [
+        666,
+        263
+      ],
+      "uncertainty_px": 22,
+      "status": "visible approximate"
+    },
+    {
+      "name": "neck_base",
+      "xy": [
+        652,
+        396
+      ],
+      "uncertainty_px": 24,
+      "status": "visible approximate"
+    },
+    {
+      "name": "shoulder_far_screen_left_overlap",
+      "xy": [
+        425,
+        462
+      ],
+      "uncertainty_px": 24,
+      "status": "visible attachment cap; approximate center"
+    },
+    {
+      "name": "shoulder_near_screen_right_overlap",
+      "xy": [
+        869,
+        463
+      ],
+      "uncertainty_px": 24,
+      "status": "visible attachment cap; approximate center"
+    },
+    {
+      "name": "waist_sash_center",
+      "xy": [
+        651,
+        783
+      ],
+      "uncertainty_px": 16,
+      "status": "visible approximate"
+    },
+    {
+      "name": "hip_far_screen_left_overlap",
+      "xy": [
+        560,
+        1110
+      ],
+      "range_xy": {
+        "x": [
+          515,
+          620
+        ],
+        "y": [
+          1040,
+          1170
+        ]
+      },
+      "uncertainty_px": 60,
+      "status": "AUTHORED_RIG_ATTACHMENT_HYPOTHESIS_IN_VISIBLE_UPPER_TROUSER_OVERLAP_LOBE; not a measured anatomical center"
+    },
+    {
+      "name": "hip_near_screen_right_overlap",
+      "xy": [
+        780,
+        1110
+      ],
+      "range_xy": {
+        "x": [
+          735,
+          840
+        ],
+        "y": [
+          1040,
+          1170
+        ]
+      },
+      "uncertainty_px": 60,
+      "status": "AUTHORED_RIG_ATTACHMENT_HYPOTHESIS_IN_VISIBLE_UPPER_TROUSER_OVERLAP_LOBE; not a measured anatomical center"
+    }
+  ],
+  "static_transform_proposal": {
+    "scale": 0.62,
+    "rotation_rad": 0,
+    "translation_source_px": [
+      250,
+      31
+    ],
+    "alignment": "Parent accepted as preliminary whole-profile calibration; aligns hat/face/sash at 38px. Keep as one static uniform transform, no per-frame fitting.",
+    "uncertainty_scale": 0.05,
+    "status": "PARENT_ACCEPTED_PRELIMINARY_FOR_PROTOTYPE"
+  },
+  "world_root": [
+    650,
+    1140
+  ],
+  "notes": [
+    "Parent accepted the 0.62 uniform scale and (250,31) translation as preliminary whole-profile calibration.",
+    "Shoulder points are estimated visible cap centers.",
+    "Hip points are authored rig attachment hypotheses selected inside visible upper-trouser overlap lobes, each with 60px uncertainty; they are not claims of exact anatomy. Whole-loop review must determine whether those attachment locations create a visible defect.",
+    "Raw remains byte-identical; no per-frame fitting."
+  ]
+}

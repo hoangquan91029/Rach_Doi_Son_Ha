@@ -1,0 +1,1021 @@
+{
+  "manifest": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/public/assets/art-v1/manifest.json",
+  "packaging": "PASS",
+  "visualApprovalGranted": false,
+  "manifestStatus": "CANDIDATE",
+  "assets": [
+    {
+      "id": "grass",
+      "packaging": "PASS",
+      "visualReview": "CANDIDATE",
+      "candidate": true,
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/public/assets/art-v1/terrain/grass-b.png",
+        "sha256": "73442cfce6444daedc03e13c250f7c0fe6d93fb6e28f8c956816dfb2ac976b19",
+        "rgbaSha256": "b03da1502b4512a726b4b2c6121c15946b34e31ac9bfaa6a885e81c4a1090dbe",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "bbox": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "warnings": []
+      },
+      "runtime": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/public/assets/art-v1/runtime/grass.webp",
+        "sha256": "8c7f2d6fd9da7ef7be4abad5f1b3e3d1b4968e9d30180c80bcde0dd97ae9bb5a",
+        "rgbaSha256": "b8c7a3128f57e484b202fed4deb99aa0ae0eff29c8bc8780ed5d8c38db3dbefb",
+        "dimensions": [
+          512,
+          512
+        ],
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "bbox": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "warnings": []
+      },
+      "frames": [],
+      "fixedPivot": {
+        "x": 0,
+        "y": 0,
+        "space": "source"
+      },
+      "logicalRender": {
+        "width": 256,
+        "height": 256
+      },
+      "warnings": []
+    },
+    {
+      "id": "water",
+      "packaging": "PASS",
+      "visualReview": "CANDIDATE",
+      "candidate": true,
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/public/assets/art-v1/terrain/water-b.png",
+        "sha256": "bd8df19179b803c6c5a292d275fc28b8cd1b35439de225b536968148524227d4",
+        "rgbaSha256": "926df89700e284b7661f58f60d2c5558382544bb343870dc91cd69d1d8edc5be",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "bbox": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "warnings": []
+      },
+      "runtime": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/public/assets/art-v1/runtime/water.webp",
+        "sha256": "3e790526414f3b6188f1438e8996da620bf940a42ae2ca257305430592cf204d",
+        "rgbaSha256": "2fa7a257fa5f6e7af920cfdac69d90bd9fc4a64c5c909fea9a360691d1774196",
+        "dimensions": [
+          512,
+          512
+        ],
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "bbox": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "warnings": []
+      },
+      "frames": [],
+      "fixedPivot": {
+        "x": 0,
+        "y": 0,
+        "space": "source"
+      },
+      "logicalRender": {
+        "width": 256,
+        "height": 256
+      },
+      "warnings": []
+    },
+    {
+      "id": "forest",
+      "packaging": "PASS",
+      "visualReview": "CANDIDATE",
+      "candidate": true,
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/public/assets/art-v1/terrain/tree-broadleaf-a.png",
+        "sha256": "7cb5f28c907e3a1b93cbc0c2cbdd773f5974a0d270bf79742379f7fcc0ecfac7",
+        "rgbaSha256": "b625eedc2e880eaaa62477c7ba7797b86110013b9f0695e6ea06418c701da73a",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          0,
+          21,
+          1240,
+          1254
+        ],
+        "warnings": [
+          {
+            "status": "CANDIDATE_WARNING",
+            "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+            "borderMax": 1,
+            "threshold16BBox": [
+              61,
+              40,
+              1222,
+              1222
+            ]
+          }
+        ]
+      },
+      "runtime": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/public/assets/art-v1/runtime/forest-512.webp",
+        "sha256": "3b9b78cce37b89d73e55ca6da35e71e553723af397406fec6eafec9380232453",
+        "rgbaSha256": "fcc3b8690305d7faf824916479fc84e7b928800099d77856ddd510aa8e759e9e",
+        "dimensions": [
+          512,
+          512
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          23,
+          13,
+          505,
+          501
+        ],
+        "warnings": []
+      },
+      "frames": [],
+      "fixedPivot": {
+        "x": 645,
+        "y": 1140,
+        "space": "source"
+      },
+      "logicalRender": {
+        "width": 75,
+        "height": 75
+      },
+      "warnings": [
+        {
+          "status": "CANDIDATE_WARNING",
+          "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+          "borderMax": 1,
+          "threshold16BBox": [
+            61,
+            40,
+            1222,
+            1222
+          ]
+        }
+      ]
+    },
+    {
+      "id": "residence",
+      "packaging": "PASS",
+      "visualReview": "CANDIDATE",
+      "candidate": true,
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/residence/variant-02/raw.png",
+        "sha256": "f617c3540680cafff467358bab1adb01bf735417563f2cba86ab8af523b07dcc",
+        "rgbaSha256": "51fd1193e644b8c444fd9daa23a6febbc1b79a26c96a430273d7715645baaed2",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          17,
+          21,
+          1254,
+          1254
+        ],
+        "warnings": [
+          {
+            "status": "CANDIDATE_WARNING",
+            "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+            "borderMax": 2,
+            "threshold16BBox": [
+              21,
+              187,
+              1239,
+              1115
+            ]
+          }
+        ]
+      },
+      "runtime": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/public/assets/art-v1/runtime/residence-512.webp",
+        "sha256": "225bbbae5f3f72695bbddf91270743b96f08488e09f23db2b5339ace78d091ea",
+        "rgbaSha256": "09ec25135fabdde428f5406afe325029f8d7d4927c7df53adb145bebb9e63a8e",
+        "dimensions": [
+          512,
+          512
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          6,
+          35,
+          512,
+          483
+        ],
+        "warnings": [
+          {
+            "status": "CANDIDATE_WARNING",
+            "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+            "borderMax": 2,
+            "threshold16BBox": [
+              8,
+              76,
+              506,
+              455
+            ]
+          }
+        ]
+      },
+      "frames": [],
+      "fixedPivot": {
+        "x": 640,
+        "y": 970,
+        "space": "source"
+      },
+      "logicalRender": {
+        "width": 130,
+        "height": 130
+      },
+      "warnings": [
+        {
+          "status": "CANDIDATE_WARNING",
+          "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+          "borderMax": 2,
+          "threshold16BBox": [
+            21,
+            187,
+            1239,
+            1115
+          ]
+        },
+        {
+          "status": "CANDIDATE_WARNING",
+          "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+          "borderMax": 2,
+          "threshold16BBox": [
+            8,
+            76,
+            506,
+            455
+          ]
+        }
+      ]
+    },
+    {
+      "id": "infantry-idle-D00",
+      "packaging": "PASS",
+      "visualReview": "CANDIDATE",
+      "candidate": true,
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/units/sources/infantry-neutral-se-refine-01-imagegen-raw.png",
+        "sha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+        "rgbaSha256": "0fdc9a92dab8aa2c420c764ff0808977daec9f4133eda860cdebc18e67463179",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          97,
+          48,
+          1208,
+          1222
+        ],
+        "warnings": []
+      },
+      "runtime": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/public/assets/art-v1/runtime/infantry-idle-D00.webp",
+        "sha256": "de7a865b865ee6ac8b9ff7ba3df07825c01106e1e7ac691cb0924a187f145c51",
+        "rgbaSha256": "2d82cb1b8dca4004fbf424c1ca0f079682ac7df3f6c78ae8bb30fecb38c86e94",
+        "dimensions": [
+          512,
+          512
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          40,
+          19,
+          409,
+          488
+        ],
+        "warnings": []
+      },
+      "frames": [],
+      "fixedPivot": {
+        "x": 653,
+        "y": 1057,
+        "space": "source"
+      },
+      "logicalRender": {
+        "width": 42,
+        "height": 42
+      },
+      "warnings": []
+    },
+    {
+      "id": "cavalry-idle-D00",
+      "packaging": "PASS",
+      "visualReview": "CANDIDATE",
+      "candidate": true,
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/units/sources/cavalry-neutral-se-imagegen-raw.png",
+        "sha256": "552c4fcdf8ce6bdb802c6faae1bc139416393d53cb30caa95a1d22309b77b091",
+        "rgbaSha256": "3c4a110747c50488d420b70d45f564b93c740a31227a5c278b7af190fe0d3caf",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          33,
+          17,
+          1224,
+          1226
+        ],
+        "warnings": []
+      },
+      "runtime": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/public/assets/art-v1/runtime/cavalry-idle-D00.webp",
+        "sha256": "8571f53f2260947f758e796806a8552b96ba221b004b47d4fcdb2c4c2d549709",
+        "rgbaSha256": "285eb7fc4be508b48bde261013e9520aaaf39ce96726f2adc472f2e90ccda3e0",
+        "dimensions": [
+          512,
+          512
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          29,
+          7,
+          455,
+          500
+        ],
+        "warnings": []
+      },
+      "frames": [],
+      "fixedPivot": {
+        "x": 655,
+        "y": 1110,
+        "space": "source"
+      },
+      "logicalRender": {
+        "width": 51,
+        "height": 51
+      },
+      "warnings": []
+    },
+    {
+      "id": "villager-idle-D00",
+      "packaging": "PASS",
+      "visualReview": "CANDIDATE",
+      "candidate": true,
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+        "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+        "rgbaSha256": "c960d206222a191b903a8cc1a679e82bdce8d8c51df4010a935f444b3cacdb9c",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          65,
+          21,
+          1214,
+          1254
+        ],
+        "warnings": [
+          {
+            "status": "CANDIDATE_WARNING",
+            "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+            "borderMax": 1,
+            "threshold16BBox": [
+              421,
+              52,
+              882,
+              1199
+            ]
+          }
+        ]
+      },
+      "runtime": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/public/assets/art-v1/runtime/villager-idle-D00.webp",
+        "sha256": "17aade7d14ecdc4655b5fd88778ed1a73540a2d2123fe18c9ac7482c1fc9762e",
+        "rgbaSha256": "a55d23f10428ca3a64b32b8baf216d145107f2fda04cfe2d6c584ba35e3270ac",
+        "dimensions": [
+          512,
+          512
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          40,
+          19,
+          465,
+          505
+        ],
+        "warnings": []
+      },
+      "frames": [],
+      "fixedPivot": {
+        "x": 654,
+        "y": 1140,
+        "space": "source"
+      },
+      "logicalRender": {
+        "width": 38,
+        "height": 38
+      },
+      "warnings": [
+        {
+          "status": "CANDIDATE_WARNING",
+          "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+          "borderMax": 1,
+          "threshold16BBox": [
+            421,
+            52,
+            882,
+            1199
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tran-hung-dao-idle-D00",
+      "packaging": "PASS",
+      "visualReview": "CANDIDATE",
+      "candidate": true,
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/tran-hung-dao-neutral-D00-screen-ESE/raw.png",
+        "sha256": "21e7d7c160fc27b52f8e9475702914e73a628752a5c2b5a4c290d9c7b466d553",
+        "rgbaSha256": "0e609a27dcfb1998b55df073e7f084f35a7b19123c218376ac2cdced3db0e017",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          0,
+          16,
+          1230,
+          1254
+        ],
+        "warnings": [
+          {
+            "status": "CANDIDATE_WARNING",
+            "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+            "borderMax": 1,
+            "threshold16BBox": [
+              242,
+              18,
+              973,
+              1239
+            ]
+          }
+        ]
+      },
+      "runtime": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/public/assets/art-v1/runtime/tran-hung-dao-idle-D00.webp",
+        "sha256": "f1f6b64cd4241120c821f392937dcef2fdaa02df18de0f234291589cd847b04c",
+        "rgbaSha256": "bd6a709084edeb73a33803ef01fbc40808431314c4b0f89b274c2ab5c3e53a92",
+        "dimensions": [
+          512,
+          512
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          36,
+          5,
+          494,
+          512
+        ],
+        "warnings": [
+          {
+            "status": "CANDIDATE_WARNING",
+            "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+            "borderMax": 1,
+            "threshold16BBox": [
+              99,
+              7,
+              397,
+              506
+            ]
+          }
+        ]
+      },
+      "frames": [],
+      "fixedPivot": {
+        "x": 701,
+        "y": 1164,
+        "space": "source"
+      },
+      "logicalRender": {
+        "width": 42,
+        "height": 42
+      },
+      "warnings": [
+        {
+          "status": "CANDIDATE_WARNING",
+          "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+          "borderMax": 1,
+          "threshold16BBox": [
+            242,
+            18,
+            973,
+            1239
+          ]
+        },
+        {
+          "status": "CANDIDATE_WARNING",
+          "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+          "borderMax": 1,
+          "threshold16BBox": [
+            99,
+            7,
+            397,
+            506
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit-contact-shadow",
+      "packaging": "PASS",
+      "visualReview": "CANDIDATE",
+      "candidate": true,
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/public/assets/art-v1/effects/unit-contact-shadow.png",
+        "sha256": "1572b3fd6dd84d36a423adbdbfca1975a071b07bd0c4043edd55688db0ed99bd",
+        "rgbaSha256": "242424c39edc2976292046eb766fcad9360a922b9c2b2f43d2ead0f5d6455d19",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "alphaExtrema": [
+          0,
+          168
+        ],
+        "bbox": [
+          103,
+          53,
+          1196,
+          1196
+        ],
+        "warnings": []
+      },
+      "runtime": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/public/assets/art-v1/runtime/unit-contact-shadow.webp",
+        "sha256": "274b81f26e3869e158b0ab1e5093cd8a899d5255f0239c25ec7ab07ec314a7ff",
+        "rgbaSha256": "d581fe0139344e7a72697d43abcfe00b332f5eea107bb9a4ed7acebfb79ab647",
+        "dimensions": [
+          256,
+          256
+        ],
+        "alphaExtrema": [
+          0,
+          167
+        ],
+        "bbox": [
+          66,
+          115,
+          200,
+          150
+        ],
+        "warnings": []
+      },
+      "frames": [],
+      "fixedPivot": {
+        "x": 658,
+        "y": 648,
+        "space": "source"
+      },
+      "logicalRender": {
+        "width": 42,
+        "height": 42
+      },
+      "warnings": []
+    },
+    {
+      "id": "ford",
+      "packaging": "PASS",
+      "visualReview": "CANDIDATE",
+      "candidate": true,
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/public/assets/art-v1/terrain/ford-a.png",
+        "sha256": "34d9d5f50cf1840277cfd0bf67e9c4909425a3eb8ff9ec3c1032783169b6f2ae",
+        "rgbaSha256": "88b0e2b4c4f9cf7caa5d19973fa9511aeb1d62b0b7bae556d1767006b891cd6e",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "bbox": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "warnings": []
+      },
+      "runtime": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/public/assets/art-v1/runtime/ford.webp",
+        "sha256": "6085208b5a3eaa97c8bb070da9faae489bf401b02e9da2213665e3925f567ad2",
+        "rgbaSha256": "c0b0f37850608b600ddc0152fef12a659095223f856b47e329ccba0e7e4bc336",
+        "dimensions": [
+          512,
+          512
+        ],
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "bbox": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "warnings": []
+      },
+      "frames": [],
+      "fixedPivot": {
+        "x": 0,
+        "y": 0,
+        "space": "source"
+      },
+      "logicalRender": {
+        "width": 256,
+        "height": 256
+      },
+      "warnings": []
+    },
+    {
+      "id": "shore",
+      "packaging": "PASS",
+      "visualReview": "CANDIDATE",
+      "candidate": true,
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/public/assets/art-v1/terrain/shore-b.png",
+        "sha256": "977c09ab6cdcbe48fd244c416dafd9f9353360bf41e1ac125edc55a460793fd3",
+        "rgbaSha256": "aa77e27379cd735ba083103e87e8d427c54ca95461484b932adc04bcdf902736",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "bbox": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "warnings": []
+      },
+      "runtime": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/public/assets/art-v1/runtime/shore-b.webp",
+        "sha256": "e8fd3695183ed37a726da4fa52ea57e026431ac99bb6e9508cbde85f364bd646",
+        "rgbaSha256": "d294c57b1d1cbf912ff9dc8e6b956dd78513b20bb7d465243e0e1d0fd9291c9a",
+        "dimensions": [
+          512,
+          512
+        ],
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "bbox": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "warnings": []
+      },
+      "frames": [],
+      "fixedPivot": {
+        "x": 0,
+        "y": 0,
+        "space": "source"
+      },
+      "logicalRender": {
+        "width": 256,
+        "height": 256
+      },
+      "warnings": []
+    },
+    {
+      "id": "forest-bamboo",
+      "packaging": "PASS",
+      "visualReview": "CANDIDATE",
+      "candidate": true,
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/public/assets/art-v1/terrain/forest-bamboo-a.png",
+        "sha256": "bb9b5088b37356b6c640fbc6d287460ac0f1605c41181fd77d17348b18f9b7c8",
+        "rgbaSha256": "d019aec99229a059eb25d54a4c7a7a7386b2b070e34f978e8b47c2572e9023d1",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          0,
+          7,
+          1248,
+          1254
+        ],
+        "warnings": [
+          {
+            "status": "CANDIDATE_WARNING",
+            "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+            "borderMax": 1,
+            "threshold16BBox": [
+              196,
+              36,
+              1094,
+              1174
+            ]
+          }
+        ]
+      },
+      "runtime": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/public/assets/art-v1/runtime/forest-bamboo-512.webp",
+        "sha256": "aadff088ffc55a9cf12597ab501f6524405a7c00634ed3017637ac77539bdcb7",
+        "rgbaSha256": "02e40d9dbb4ed73553df8344e6b03dd74b6ebadc70f4047d48c62d7bbea510a2",
+        "dimensions": [
+          512,
+          512
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          30,
+          12,
+          500,
+          496
+        ],
+        "warnings": []
+      },
+      "frames": [],
+      "fixedPivot": {
+        "x": 645,
+        "y": 1140,
+        "space": "source"
+      },
+      "logicalRender": {
+        "width": 75,
+        "height": 75
+      },
+      "warnings": [
+        {
+          "status": "CANDIDATE_WARNING",
+          "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+          "borderMax": 1,
+          "threshold16BBox": [
+            196,
+            36,
+            1094,
+            1174
+          ]
+        }
+      ]
+    },
+    {
+      "id": "forest-palm",
+      "packaging": "PASS",
+      "visualReview": "CANDIDATE",
+      "candidate": true,
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/public/assets/art-v1/terrain/forest-palm-a.png",
+        "sha256": "1a249128658e798e18a0e4c7d28e1479fdb0ac24e83f45615177ca45f2cac359",
+        "rgbaSha256": "b6aca15d7b50386a364f2ca96161bf37a2749b892316ad4f4883bd20d09ceb94",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          31,
+          9,
+          1216,
+          1254
+        ],
+        "warnings": [
+          {
+            "status": "CANDIDATE_WARNING",
+            "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+            "borderMax": 1,
+            "threshold16BBox": [
+              269,
+              85,
+              1049,
+              1170
+            ]
+          }
+        ]
+      },
+      "runtime": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/public/assets/art-v1/runtime/forest-palm-512.webp",
+        "sha256": "ab540fc3ef9eec050518c0a74bf2ad94743ea2bf429f03bfe5b114d2fc3c239a",
+        "rgbaSha256": "7a148323dd6b2fa014f9f26f061dd1c67e86f5a5959c818966f9ad431ac506a4",
+        "dimensions": [
+          512,
+          512
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          35,
+          4,
+          494,
+          495
+        ],
+        "warnings": []
+      },
+      "frames": [],
+      "fixedPivot": {
+        "x": 645,
+        "y": 1140,
+        "space": "source"
+      },
+      "logicalRender": {
+        "width": 75,
+        "height": 75
+      },
+      "warnings": [
+        {
+          "status": "CANDIDATE_WARNING",
+          "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+          "borderMax": 1,
+          "threshold16BBox": [
+            269,
+            85,
+            1049,
+            1170
+          ]
+        }
+      ]
+    },
+    {
+      "id": "granary",
+      "packaging": "PASS",
+      "visualReview": "CANDIDATE",
+      "candidate": true,
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/granary/variant-01/raw.png",
+        "sha256": "0d0c3963f3faed9341cd09f2ff118a753e9bd1ee431290b51635eebb17b61715",
+        "rgbaSha256": "c581948e880937a356ffe68c0be47f2ba26802327eba482356b7a8057d67d3d9",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          41,
+          21,
+          1230,
+          1254
+        ],
+        "warnings": [
+          {
+            "status": "CANDIDATE_WARNING",
+            "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+            "borderMax": 1,
+            "threshold16BBox": [
+              46,
+              201,
+              1228,
+              1137
+            ]
+          }
+        ]
+      },
+      "runtime": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/public/assets/art-v1/runtime/granary-idle.webp",
+        "sha256": "b663d289fe8fbe44e778b586d8e5aa85aa14401badafcfabe12b4aae963f4cca",
+        "rgbaSha256": "df3e2e6bbc7c4cb6632012228ae1a308ece43325d79053accef479dcf3331cb3",
+        "dimensions": [
+          512,
+          512
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          16,
+          42,
+          504,
+          495
+        ],
+        "warnings": []
+      },
+      "frames": [],
+      "fixedPivot": {
+        "x": 640,
+        "y": 1050,
+        "space": "source"
+      },
+      "logicalRender": {
+        "width": 85,
+        "height": 85
+      },
+      "warnings": [
+        {
+          "status": "CANDIDATE_WARNING",
+          "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+          "borderMax": 1,
+          "threshold16BBox": [
+            46,
+            201,
+            1228,
+            1137
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

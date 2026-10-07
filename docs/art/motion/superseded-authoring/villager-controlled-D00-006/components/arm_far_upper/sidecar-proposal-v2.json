@@ -1,0 +1,84 @@
+{
+  "component_id": "arm_far_upper",
+  "order_id": 2,
+  "status": "PARENT_CORRECTED_STATIC_CALIBRATION_PROPOSAL",
+  "raw_path": "raw.png",
+  "raw_sha256": "984de1d005365d9aa0e332167aba834800b05aff27b52806cff8fe1c11ad8b5d",
+  "decoded_rgba_sha256": "8d85ac9330f30a7a26aa506837975069d88939afd5ce9fff5ee6262e52d3faf7",
+  "source_canvas": [
+    1254,
+    1254
+  ],
+  "mode": "RGBA",
+  "alpha_threshold_bounds": {
+    "16": {
+      "bbox_exclusive": [
+        340,
+        178,
+        972,
+        1081
+      ],
+      "size": [
+        632,
+        903
+      ]
+    },
+    "128": {
+      "bbox_exclusive": [
+        341,
+        179,
+        971,
+        1080
+      ],
+      "size": [
+        630,
+        901
+      ]
+    }
+  },
+  "landmarks_raw_px": {
+    "shoulder_proximal_overlap_center": {
+      "xy": [
+        875,
+        300
+      ],
+      "uncertainty_px": 25,
+      "basis": "Rounded shoulder cap center at proximal upper-right end of sleeve; parent independently inspected this region."
+    },
+    "elbow_distal_opening_center": {
+      "xy": [
+        485,
+        1000
+      ],
+      "uncertainty_px": 30,
+      "basis": "Rounded center of distal elbow cuff opening at lower end; parent independently inspected this region."
+    }
+  },
+  "bone_length_source_px": 180,
+  "static_calibration": {
+    "scale_uniform": 0.224632,
+    "rotation_degrees": -8.998,
+    "translation_source_space": [
+      308.826,
+      281.621
+    ],
+    "source_proximal_to_rest": [
+      875,
+      300
+    ],
+    "target_proximal_rest": [
+      513.5,
+      317.44
+    ],
+    "source_distal_to_rest": [
+      485,
+      1000
+    ],
+    "target_distal_rest": [
+      451.57,
+      486.45
+    ],
+    "basis": "One measured static uniform transform only; scale maps measured raw endpoint distance to declared 180 source-pixel bone; rotation aligns provisional far upper-arm rest axis; translation pins proximal shoulder to core cap after accepted core static transform. Must be inspected in 38px assembly; not final motion approval."
+  },
+  "limits": "Uniform scale/rotation/translation only for this component into rest space. No alpha cleanup, crop, anisotropic stretch, per-frame fit, or motion approval. Inspect actual assembly at fixed 38/1254 and refine only by recorded parent-reviewed evidence."
+}

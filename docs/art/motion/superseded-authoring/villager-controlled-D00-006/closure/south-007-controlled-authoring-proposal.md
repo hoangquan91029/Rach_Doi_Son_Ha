@@ -1,0 +1,12 @@
+# South identity and walk authoring proposal (no generation authorized)
+
+The user requirements in `docs/FRAME_ANIMATION_REQUIREMENTS_115_145.md` and `docs/art/SOUTH_WALK_RESTART_007.md` supersede D00-006. Keep its four returned originals, one interrupted attempt, raw receipts, and partial renders as D00 diagnostics. South is screen-down/front-facing, engine D01/world SE; the D00 screen-ESE master remains identity/material/camera reference only and cannot be relabeled as South.
+
+The smallest controlled sequence is:
+
+1. Create the complete illustrated South-facing full-body identity reference from the locked identity first. This accepted South image is also the S slot in the eight-view turnaround, so the lock contains exactly eight views, not nine. Review its camera, face, clothing, sandals, light, full-body silhouette, canvas and ground pivot, then author the remaining seven views N, NE, E, SE, SW, W, NW incrementally. Keep all eight direction views full-body illustrations. The South view becomes the sole pose-art authority for the first walk.
+2. Using that South lock plus an internal pose guide/rig only, author exactly four complete illustrated South keyframes: F0 left contact, F2 right passing with left support, F4 right contact, F6 left passing with right support. Each is a full character cel, not a parts composite visible to players. Annotate anatomy LEFT/RIGHT and support/swing only on QA images. Review leg phase, identity, pivot, full canvas and contact before authorizing in-betweens.
+3. After key pose approval, derive F1/F3/F5/F7 from canonical South identity, their previous selected frame, the next approved key pose and the explicit phase spec. Preserve one canvas and ground pivot. Then create the labeled 8-frame contact sheet at 100%, 50% and actual 38px whole-canvas scale, plus normal-speed loop and moving fixed-grid review. Check planted-foot stability, both passing gaps, F7→F0 seam and all eight scores; leg phase must score 10/10 and every other category at least 8/10.
+4. Only after the parent accepts that whole cycle may production proceed to another direction. Final game inputs are full illustrated frames compiled to atlas metadata; internal bones never ship as visible runtime parts. World travel remains simulation-controlled.
+
+No image calls, frame counts beyond this finite prototype, or atlas/runtime changes are authorized by this proposal. A corrected finite work order and South identity review must precede generation.

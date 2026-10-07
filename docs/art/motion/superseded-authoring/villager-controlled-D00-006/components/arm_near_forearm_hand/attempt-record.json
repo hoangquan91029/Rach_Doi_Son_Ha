@@ -1,0 +1,17 @@
+{
+  "component_id": "arm_near_forearm_hand",
+  "order_id": 5,
+  "attempt_id": "controlled006-arm-near-forearm-hand-001",
+  "tool": "built-in ImageGen",
+  "tool_call_id": "unavailable",
+  "exec_cell_id": "134",
+  "status": "INTERRUPTED_NO_RESULT_RETURNED",
+  "attempt_started": true,
+  "result_returned": false,
+  "raw_saved": false,
+  "observed_generated_image_count_after_interrupt": 0,
+  "input_locks_sha256": "98eca8a65daceafb4acf411abb03117b870df76802af1da14cdcbcea6dcd8194",
+  "prompt_sha256": "a2324467d5b10b4a244ab77a191ec6d20f5e516ab714970131648aac47a74f80",
+  "retry_authorized": false,
+  "note": "ImageGen was invoked and returned a running exec cell; user interruption aborted the wait. A later attempt to resume cell 134 returned not found. No corresponding new PNG was present in the session generated_images directory at closure inspection. Treat call consumption as uncertain; do not retry under the old order."
+}

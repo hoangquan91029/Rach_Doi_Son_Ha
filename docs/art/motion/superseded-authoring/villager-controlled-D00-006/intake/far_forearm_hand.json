@@ -1,0 +1,45 @@
+{
+  "original": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-controlled-D00-006/components/arm_far_forearm_hand/raw.png",
+  "sha256": "bb132ffd9982441111f728db622619bdd12e47b2e7878f5dccdaf9d31340b5d9",
+  "rgbaSha256": "2e9d807046f7fac95396af040240b9f31162eb5cbef9d4faa88fe20f07f40fee",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "slot": "far_forearm_hand",
+  "inspection": {
+    "actor": "Codex art producer; native/raw inspected by rig assembler",
+    "method": "Producer measured natural elbow/wrist centers, native image inspected and byte/RGBA custody checked",
+    "status": "TECHNICALLY_USABLE_FOR_STATIC_DIAGNOSTIC",
+    "uncertainty": "elbow40rawpx/wrist30rawpx approximate natural centers"
+  },
+  "landmarks": {
+    "elbow_proximal_overlap_center": [
+      594,
+      380
+    ],
+    "wrist_joint_center": [
+      717,
+      846
+    ]
+  },
+  "landmarkMetadata": {
+    "elbow_proximal_overlap_center": {
+      "xy": [
+        594,
+        380
+      ],
+      "uncertainty_px": 40,
+      "basis": "center of exposed skin at lower sleeve cuff opening"
+    },
+    "wrist_joint_center": {
+      "xy": [
+        717,
+        846
+      ],
+      "uncertainty_px": 30,
+      "basis": "narrow wrist transition before hand widens"
+    }
+  },
+  "sourceSidecarSha256": "97cda9f424d006309365904bc028083f2a8fbb036735b5cdeabd8ab72882fe9a"
+}

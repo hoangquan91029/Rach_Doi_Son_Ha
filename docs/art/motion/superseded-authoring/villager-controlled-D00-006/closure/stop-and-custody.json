@@ -1,0 +1,82 @@
+{
+  "lease": "villager-controlled-D00-006",
+  "status": "CLOSED_FOR_D00_GENERATION_PER_SOUTH_RESTART_007",
+  "superseding_requirements": [
+    "docs/FRAME_ANIMATION_REQUIREMENTS_115_145.md",
+    "docs/art/SOUTH_WALK_RESTART_007.md"
+  ],
+  "identity_master": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+    "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94"
+  },
+  "d00_method": "controlled 2D original components; D00 identity/master only, never South. Preserve as diagnostics, do not integrate as runtime bones.",
+  "calls": {
+    "raw_returned_and_preserved": 4,
+    "components_with_raw": [
+      "core_head_torso_pelvis",
+      "arm_far_upper",
+      "arm_far_forearm_hand",
+      "arm_near_upper"
+    ],
+    "attempted_no_raw": [
+      "arm_near_forearm_hand"
+    ],
+    "retries": 0,
+    "started_attempts_including_interrupted": 5,
+    "remaining_authorized_cap_count": "uncertain because interrupted attempt may have consumed its one-call slot; no further use under old order"
+  },
+  "raws": [
+    {
+      "component": "core_head_torso_pelvis",
+      "path": "components/core_head_torso_pelvis/raw.png",
+      "sha256": "504793f67b8cc81fcede31fcb3a1d7db2a9c1585dbce5bff6cbbfe8263355cc3",
+      "decoded_rgba_sha256": "0a5121d70f8f5650ca51ab4078c3f02efd5a168f9126eb1d529770dd248351d8"
+    },
+    {
+      "component": "arm_far_upper",
+      "path": "components/arm_far_upper/raw.png",
+      "sha256": "984de1d005365d9aa0e332167aba834800b05aff27b52806cff8fe1c11ad8b5d",
+      "decoded_rgba_sha256": "8d85ac9330f30a7a26aa506837975069d88939afd5ce9fff5ee6262e52d3faf7"
+    },
+    {
+      "component": "arm_far_forearm_hand",
+      "path": "components/arm_far_forearm_hand/raw.png",
+      "sha256": "bb132ffd9982441111f728db622619bdd12e47b2e7878f5dccdaf9d31340b5d9",
+      "decoded_rgba_sha256": "2e9d807046f7fac95396af040240b9f31162eb5cbef9d4faa88fe20f07f40fee"
+    },
+    {
+      "component": "arm_near_upper",
+      "path": "components/arm_near_upper/raw.png",
+      "sha256": "fc5b48675f96d4ed7c4520d9babc8d0aa9f683b1e459e47c194e4b5bf711adac",
+      "decoded_rgba_sha256": "b06edee5aa3dc28908450056f5140ef1077b1815376efcb78ea74395b4de163a"
+    }
+  ],
+  "unresolved_tool_state": {
+    "component_id": "arm_near_forearm_hand",
+    "order_id": 5,
+    "attempt_id": "controlled006-arm-near-forearm-hand-001",
+    "tool": "built-in ImageGen",
+    "tool_call_id": "unavailable",
+    "exec_cell_id": "134",
+    "status": "INTERRUPTED_NO_RESULT_RETURNED",
+    "attempt_started": true,
+    "result_returned": false,
+    "raw_saved": false,
+    "observed_generated_image_count_after_interrupt": 0,
+    "input_locks_sha256": "98eca8a65daceafb4acf411abb03117b870df76802af1da14cdcbcea6dcd8194",
+    "prompt_sha256": "a2324467d5b10b4a244ab77a191ec6d20f5e516ab714970131648aac47a74f80",
+    "retry_authorized": false,
+    "note": "ImageGen was invoked and returned a running exec cell; user interruption aborted the wait. A later attempt to resume cell 134 returned not found. No corresponding new PNG was present in the session generated_images directory at closure inspection. Treat call consumption as uncertain; do not retry under the old order."
+  },
+  "partial_diagnostics": [
+    "diagnostics/partial-core-far-arm/",
+    "diagnostics/partial-core-far-arm-hand/"
+  ],
+  "prohibited_next_actions": [
+    "no additional D00 component calls",
+    "no relabeling D00 as South",
+    "no runtime-bone integration",
+    "no animation or atlas fanout before South identity and key-pose approvals"
+  ],
+  "motion_acceptance": "0 complete accepted cycles; no South frames generated in this lease."
+}

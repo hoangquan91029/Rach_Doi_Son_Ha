@@ -1,0 +1,64 @@
+{
+  "status": "PARTIAL_NOT_MOTION",
+  "canvas": [
+    1254,
+    1254
+  ],
+  "root": [
+    650,
+    1140
+  ],
+  "direction": "D00",
+  "scale": 0.030303030303030304,
+  "parts": {
+    "core": {
+      "sidecar": "components/core_head_torso_pelvis/sidecar-proposal.json",
+      "scale": 0.62,
+      "anchor": "waist_sash_center",
+      "joints": [
+        "pelvis"
+      ]
+    },
+    "far_upper_arm": {
+      "sidecar": "intake/far_upper_arm.json",
+      "scale": 0.22463176533012386,
+      "anchor": "shoulder_proximal_overlap_center",
+      "distal": "elbow_distal_opening_center",
+      "length": 180,
+      "joints": [
+        "shoulder_far",
+        "elbow_far"
+      ]
+    }
+  },
+  "drawOrder": [
+    "far_upper_arm",
+    "core"
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "root": [
+        650,
+        1140
+      ],
+      "joints": {
+        "pelvis": [
+          653.62,
+          516.46
+        ],
+        "shoulder_far": [
+          513.5,
+          317.44
+        ],
+        "elbow_far": [
+          451.56439700775064,
+          486.4488195390598
+        ]
+      },
+      "angles": {
+        "core": 0
+      }
+    }
+  ]
+}

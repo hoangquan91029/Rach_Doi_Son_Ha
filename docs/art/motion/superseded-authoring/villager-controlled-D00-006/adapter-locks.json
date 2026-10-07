@@ -1,0 +1,56 @@
+{
+  "schema": "villager-controlled-d00-adapter/v1",
+  "status": "PROPOSAL_ONLY_REVIEW_ONLY",
+  "master": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+    "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94"
+  },
+  "canvas": [
+    1254,
+    1254
+  ],
+  "root": [
+    650,
+    1140
+  ],
+  "worldScale": 0.030303030303030304,
+  "scaleMeaning": "entire source canvas renders38logicalpixels; never per-frame visible-bounds fitting",
+  "direction": "D00",
+  "nearOwnership": "screen-right arm/leg and lower-right sandal",
+  "farOwnership": "screen-left arm/leg",
+  "camera": {
+    "tile": [
+      54,
+      27
+    ],
+    "worldDirection": [
+      1,
+      0
+    ],
+    "projectedDirection": [
+      27,
+      13.5
+    ]
+  },
+  "sourceOriginalsModified": false,
+  "runtimeIntegrated": false,
+  "motionApproved": false,
+  "componentLandmarks": "Unresolved until inspected original part sidecars; no numeric placeholders",
+  "proposedStrideWorldTiles": null,
+  "proposedCycleAtBaseSpeedMs": null,
+  "reviewTiming": {
+    "frameCount": 24,
+    "durationMs": 800,
+    "authoredPhaseKeys": 8
+  },
+  "strideGate": "Measured real calibrated limbs and reachable contact tracks first; no fixed tile stride requirement",
+  "coreCalibration": {
+    "scale": 0.62,
+    "translation": [
+      250,
+      31
+    ],
+    "status": "PARENT_ACCEPTED_FOR_PROTOTYPE",
+    "hipStatus": "AUTHORED_HIDDEN_ATTACHMENT_HYPOTHESES +/-60 raw pixels, not measured anatomical centers"
+  }
+}

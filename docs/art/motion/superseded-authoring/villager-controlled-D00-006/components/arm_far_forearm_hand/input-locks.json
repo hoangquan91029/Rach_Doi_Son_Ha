@@ -1,0 +1,25 @@
+{
+  "component_id": "arm_far_forearm_hand",
+  "order_id": 3,
+  "inputs": [
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+      "role": "locked identity/proportion/camera authority"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-controlled-D00-006/components/core_head_torso_pelvis/raw.png",
+      "sha256": "504793f67b8cc81fcede31fcb3a1d7db2a9c1585dbce5bff6cbbfe8263355cc3",
+      "role": "parent-reviewed material/style reference only; not scale authority"
+    }
+  ],
+  "prompt_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-controlled-D00-006/components/arm_far_forearm_hand/prompt.txt",
+  "call_budget": {
+    "component_calls_made": 1,
+    "this_component_cap": 1,
+    "total_cap_including_core": 11,
+    "parent_authorized": true,
+    "retries": 0
+  },
+  "prompt_sha256": "c11beddb6833af1ddc37724376282e7a206bba2135b5522ff7660f0f9dcb20ef"
+}

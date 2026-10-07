@@ -84,3 +84,9 @@ Terrain cell `(x, y)` covers world `[x, x+1) × [y, y+1)` and is drawn at `(x+0.
 | D07 | NE | (+54, 0) | E |
 
 Do not interpret a file's informal screen-SE name as engine D01 coverage. Current neutral sprites are explicitly D00 trials, not accepted eight-direction packages.
+
+## Binding animation update: sections115–145
+
+The preserved user brief `FRAME_ANIMATION_REQUIREMENTS_115_145.md` supersedes earlier conflicting animation conventions. Final visible animation consists of complete illustrated cel frames compiled into atlases. Internal rigs/IK/pose guides are permitted authoring tools; baked files still require paused illustration and actual-motion review. Establish the canonical eight-direction static identity lock before animation. Produce only one eight-frame South walk first, four explicit left/right keys before in-betweens; F0/F4 same supporting leg rejects the whole cycle. See `art/SOUTH_WALK_RESTART_007.md` for the phase/timing/pivot contract and explicit screen-South to engineD01 mapping.
+
+Store variable frame durations and event markers in generated atlas metadata. Fixed20Hz simulation remains authoritative; browser frame events do not commit damage, gathering, transfers, food or victory. Require contact sheets at100%,50%,gameplay scale and a planted-foot grid test. All eight audit scores must reach8/10; LegPhase must be10/10. Eight static direction references do not authorize other-direction animation before the South loop passes. Mirroring is permitted only after documented symmetry/historical equipment review under section130; no current asset has such approval.

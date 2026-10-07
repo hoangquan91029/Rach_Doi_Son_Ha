@@ -1,0 +1,61 @@
+{
+  "component_id": "core_head_torso_pelvis",
+  "order_id": 1,
+  "status": "TECHNICALLY_USABLE_FOR_RIG_PROTOTYPE_PENDING_WHOLE_LOOP_REVIEW",
+  "built_in_imagegen_output": "/home/kieu-hoang-quan/.codex/generated_images/01a116ce-195d-73e0-a579-e4e5e990575d/exec-c9332079-e782-4956-bf36-2d9c9634984a.png",
+  "copied_raw": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-controlled-D00-006/components/core_head_torso_pelvis/raw.png",
+  "raw_byte_sha256": "504793f67b8cc81fcede31fcb3a1d7db2a9c1585dbce5bff6cbbfe8263355cc3",
+  "raw_rgba_sha256": "0a5121d70f8f5650ca51ab4078c3f02efd5a168f9126eb1d529770dd248351d8",
+  "source_dimensions": [
+    1254,
+    1254
+  ],
+  "mode": "RGBA",
+  "alpha_range": [
+    0,
+    255
+  ],
+  "alpha_bbox_nonzero": [
+    0,
+    19,
+    1230,
+    1221
+  ],
+  "alpha_bbox_threshold_8": [
+    373,
+    33,
+    917,
+    1214
+  ],
+  "alpha_bbox_threshold_128": [
+    374,
+    34,
+    916,
+    1213
+  ],
+  "prompt_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-controlled-D00-006/components/core_head_torso_pelvis/prompt.txt",
+  "prompt_sha256": "6b9ebd62e6bff990fcf2f6003adf32c089caa6adedd94a22500640ee0b37e3ef",
+  "input_master": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+  "input_master_sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+  "tool_call_id": null,
+  "local_attempt_id": "controlled006-core-001",
+  "call_count_this_component": 1,
+  "component_call_total_used": 1,
+  "component_call_total_max": 11,
+  "retries": 0,
+  "preview_fixed_85px": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-controlled-D00-006/components/core_head_torso_pelvis/preview-fixed-85px.png",
+  "preview_uncalibrated_fixed_38px": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-controlled-D00-006/components/core_head_torso_pelvis/MASTER-CORE-fixed-38px.png",
+  "static_calibration_proposal": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-controlled-D00-006/components/core_head_torso_pelvis/calibration-proposal.json",
+  "calibration_preview": "calibration-proposal-1254.png",
+  "no_raw_postprocessing": true,
+  "inspection_note": "Raw core keeps face/hat/material identity and has filled shoulder/hip underlap surfaces. It includes no visible hands, forearms, shins or feet. At uncalibrated whole-canvas 38/1254 preview, core nearly fills the 38px height; a static uniform scale is required for assembly and must match natural master landmarks, not bbox-fit.",
+  "static_transform_proposal": {
+    "scale": 0.62,
+    "rotation_rad": 0,
+    "translation_source_px": [
+      250,
+      31
+    ],
+    "status": "PARENT_ACCEPTED_PRELIMINARY"
+  }
+}

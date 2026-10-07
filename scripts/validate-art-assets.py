@@ -142,6 +142,10 @@ def validate_asset(asset, base, source_base, require_approved):
         check(x>=0 and y>=0 and w==cell['width'] and h==cell['height'] and x+w<=runtime['width'] and y+h<=runtime['height'],f'frame {i}: cell outside sheet or changes canvas')
         check(number(frame.get('durationMs')) and 0<frame['durationMs']<=60000,f'frame {i}: invalid duration')
         check('pivot' not in frame or frame['pivot']==pivot,f'frame {i}: per-frame pivot fitting forbidden')
+        events=frame.get('events',[])
+        check(isinstance(events,list) and len(events)<=32,f'frame {i}: invalid events')
+        for marker in events:
+            check(isinstance(marker,dict) and isinstance(marker.get('name'),str) and re.fullmatch(r'[A-Z][A-Z0-9_]{0,63}',marker['name']) is not None and integer(marker.get('offsetMs')) and 0<=marker['offsetMs']<frame['durationMs'],f'frame {i}: invalid event marker')
         check(not any(x<r[2] and x+w>r[0] and y<r[3] and y+h>r[1] for r in occupied),f'frame {i}: overlapping cells')
         occupied.append((x,y,x+w,y+h))
         if len(frames)>1:

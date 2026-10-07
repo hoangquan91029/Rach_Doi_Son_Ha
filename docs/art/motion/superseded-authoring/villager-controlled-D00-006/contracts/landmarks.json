@@ -1,0 +1,176 @@
+{
+  "master_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+  "master_sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+  "canvas": [
+    1254,
+    1254
+  ],
+  "root_anchor": [
+    650,
+    1140
+  ],
+  "scale": "38/1254",
+  "status": "ROUGH_VISUAL_HYPOTHESES_ONLY_NOT_COMPONENT_SIDECARS",
+  "coordinate_convention": "source raw pixel x,y; approximate centers visually inferred from the inspected D00 master; final sidecars must be measured on actual generated component originals",
+  "points": [
+    {
+      "id": "neck_base",
+      "xy": [
+        650,
+        262
+      ],
+      "uncertainty_px": 28,
+      "visibility": "partly hidden by tunic/face"
+    },
+    {
+      "id": "shoulder_far_screen_left",
+      "xy": [
+        534,
+        326
+      ],
+      "uncertainty_px": 24,
+      "visibility": "partly covered by sleeve"
+    },
+    {
+      "id": "shoulder_near_screen_right",
+      "xy": [
+        775,
+        350
+      ],
+      "uncertainty_px": 24,
+      "visibility": "partly covered by sleeve"
+    },
+    {
+      "id": "elbow_far_screen_left",
+      "xy": [
+        478,
+        497
+      ],
+      "uncertainty_px": 20,
+      "visibility": "visible sleeve bend"
+    },
+    {
+      "id": "elbow_near_screen_right",
+      "xy": [
+        794,
+        516
+      ],
+      "uncertainty_px": 20,
+      "visibility": "visible sleeve bend"
+    },
+    {
+      "id": "wrist_far_screen_left",
+      "xy": [
+        440,
+        681
+      ],
+      "uncertainty_px": 18,
+      "visibility": "visible cuff/hand junction"
+    },
+    {
+      "id": "wrist_near_screen_right",
+      "xy": [
+        783,
+        685
+      ],
+      "uncertainty_px": 18,
+      "visibility": "visible cuff/hand junction"
+    },
+    {
+      "id": "hip_far_screen_left",
+      "xy": [
+        590,
+        746
+      ],
+      "uncertainty_px": 32,
+      "visibility": "hidden under tunic; unresolved exact center"
+    },
+    {
+      "id": "hip_near_screen_right",
+      "xy": [
+        715,
+        755
+      ],
+      "uncertainty_px": 32,
+      "visibility": "hidden under tunic; unresolved exact center"
+    },
+    {
+      "id": "knee_far_screen_left",
+      "xy": [
+        526,
+        916
+      ],
+      "uncertainty_px": 25,
+      "visibility": "under loose trousers; approximate bend center"
+    },
+    {
+      "id": "knee_near_screen_right",
+      "xy": [
+        757,
+        923
+      ],
+      "uncertainty_px": 25,
+      "visibility": "under loose trousers; approximate bend center"
+    },
+    {
+      "id": "ankle_far_screen_left",
+      "xy": [
+        536,
+        1051
+      ],
+      "uncertainty_px": 18,
+      "visibility": "wrap/sandal junction"
+    },
+    {
+      "id": "ankle_near_screen_right",
+      "xy": [
+        772,
+        1064
+      ],
+      "uncertainty_px": 18,
+      "visibility": "wrap/sandal junction"
+    },
+    {
+      "id": "heel_far_screen_left",
+      "xy": [
+        531,
+        1110
+      ],
+      "uncertainty_px": 16,
+      "visibility": "visible sandal"
+    },
+    {
+      "id": "toe_far_screen_left",
+      "xy": [
+        469,
+        1124
+      ],
+      "uncertainty_px": 16,
+      "visibility": "visible sandal"
+    },
+    {
+      "id": "heel_near_screen_right",
+      "xy": [
+        779,
+        1148
+      ],
+      "uncertainty_px": 16,
+      "visibility": "visible sandal"
+    },
+    {
+      "id": "toe_near_screen_right",
+      "xy": [
+        842,
+        1157
+      ],
+      "uncertainty_px": 16,
+      "visibility": "visible sandal"
+    }
+  ],
+  "notes": [
+    "Near/far points are screen-side ownership hypotheses from the D00 master.",
+    "Hidden hip/shoulder centers are not calibration values.",
+    "Do not use these rough estimates to distort, cut, or fit a component.",
+    "Actual component sidecars must bind raw hashes and measured coordinates; ambiguous joints stay unresolved."
+  ]
+}

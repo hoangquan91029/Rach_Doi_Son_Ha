@@ -1,0 +1,81 @@
+{
+  "component_id": "arm_far_upper",
+  "prior_status_file": "status.json",
+  "correction_status": "PARENT_CORRECTED_FOR_ALPHA_FRINGE_USABLE_STATIC_CALIBRATION_PROPOSAL",
+  "parent_review_note": "Parent inspection found the near-canvas alpha bbox was dominated by faint fringe; thresholded bounds give a compact sleeve silhouette. Previous stop status is retained as historical record.",
+  "alpha_threshold_bounds": {
+    "16": {
+      "bbox_exclusive": [
+        340,
+        178,
+        972,
+        1081
+      ],
+      "size": [
+        632,
+        903
+      ]
+    },
+    "128": {
+      "bbox_exclusive": [
+        341,
+        179,
+        971,
+        1080
+      ],
+      "size": [
+        630,
+        901
+      ]
+    }
+  },
+  "measured_landmarks_raw_px": {
+    "shoulder_proximal_overlap_center": {
+      "xy": [
+        875,
+        300
+      ],
+      "uncertainty_px": 25,
+      "basis": "Rounded shoulder cap center at proximal upper-right end of sleeve; parent independently inspected this region."
+    },
+    "elbow_distal_opening_center": {
+      "xy": [
+        485,
+        1000
+      ],
+      "uncertainty_px": 30,
+      "basis": "Rounded center of distal elbow cuff opening at lower end; parent independently inspected this region."
+    }
+  },
+  "endpoint_distance_px": 801.311,
+  "declared_bone_source_px": 180,
+  "static_calibration_proposal": {
+    "scale_uniform": 0.224632,
+    "rotation_degrees": -8.998,
+    "translation_source_space": [
+      308.826,
+      281.621
+    ],
+    "source_proximal_to_rest": [
+      875,
+      300
+    ],
+    "target_proximal_rest": [
+      513.5,
+      317.44
+    ],
+    "source_distal_to_rest": [
+      485,
+      1000
+    ],
+    "target_distal_rest": [
+      451.57,
+      486.45
+    ],
+    "basis": "One measured static uniform transform only; scale maps measured raw endpoint distance to declared 180 source-pixel bone; rotation aligns provisional far upper-arm rest axis; translation pins proximal shoulder to core cap after accepted core static transform. Must be inspected in 38px assembly; not final motion approval."
+  },
+  "raw_sha256": "984de1d005365d9aa0e332167aba834800b05aff27b52806cff8fe1c11ad8b5d",
+  "decoded_rgba_sha256": "8d85ac9330f30a7a26aa506837975069d88939afd5ce9fff5ee6262e52d3faf7",
+  "input_prompt_sha256": "04cd840889508b972b5cd1959bea5089fd5dad3315511cbddbb3ba1f27a7ea92",
+  "input_lock_sha256": "f8ca70edffeebe612893dd97e2e9aa2c833d5ab08b57ba32110e33236ac72416"
+}
