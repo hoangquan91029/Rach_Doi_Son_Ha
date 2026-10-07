@@ -112,19 +112,19 @@ export function command(s,p,c){
  const ids=[...new Set(c.ids)],es=ids.map(id=>get(s,id));if(es.some(e=>!e||e.owner!==p||e.kind!=='unit'||e.embarked))return reject('Invalid unit ownership');
  if(['move','attackMove'].includes(c.type)){
   if(!bounds(s,c.x,c.y))return reject('Invalid destination');if(es.some(e=>active(s,e,'shock')))return reject('Assault commitment prevents retreat orders');
-  for(const [i,e] of es.entries()){const offset=es.length>1?{x:(i%5-2)*0.45,y:(Math.floor(i/5)%5-2)*0.45}:{x:0,y:0};const target={x:Math.max(0.5,Math.min(s.map.width-0.5,c.x+offset.x)),y:Math.max(0.5,Math.min(s.map.height-0.5,c.y+offset.y))};e.order={type:c.type,...target};e.path=[];e.retryPath=0;e.state='walk';}return {ok:true};
+  for(const [i,e] of es.entries()){const offset=es.length>1?{x:(i%5-2)*0.45,y:(Math.floor(i/5)%5-2)*0.45}:{x:0,y:0};const target={x:Math.max(0.5,Math.min(s.map.width-0.5,c.x+offset.x)),y:Math.max(0.5,Math.min(s.map.height-0.5,c.y+offset.y))};cancelAttack(e);e.order={type:c.type,...target};e.path=[];e.retryPath=0;e.state='walk';}return {ok:true};
  }
- if(c.type==='stop'||c.type==='hold'){if(es.some(e=>active(s,e,'shock')))return reject('Assault commitment is active');for(const e of es){e.order=c.type==='hold'?{type:'hold'}:null;e.path=[];e.state='idle';}return {ok:true};}
+ if(c.type==='stop'||c.type==='hold'){if(es.some(e=>active(s,e,'shock')))return reject('Assault commitment is active');for(const e of es){cancelAttack(e);e.order=c.type==='hold'?{type:'hold'}:null;e.path=[];e.state='idle';}return {ok:true};}
  if(c.type==='attack'){
-  const t=get(s,c.target);updateFog(s);if(!t||t.owner===p||!visible(s,p,t)||es.some(e=>UNITS[e.type].damage===0))return reject('Target cannot be attacked');for(const e of es){e.order={type:'attack',target:t.id,lastX:t.x,lastY:t.y};e.path=[];e.retryPath=0;}return {ok:true};
+  const t=get(s,c.target);updateFog(s);if(!t||t.owner===p||!visible(s,p,t)||es.some(e=>UNITS[e.type].damage===0))return reject('Target cannot be attacked');for(const e of es){if(e.pendingAttack&&e.pendingAttack.target!==t.id)cancelAttack(e);e.order={type:'attack',target:t.id,lastX:t.x,lastY:t.y};e.path=[];e.retryPath=0;}return {ok:true};
  }
  if(c.type==='repair'){
   const b=get(s,c.target);if(es.length!==1||!b||b.kind!=='building'||b.owner!==p||!['king','villager'].includes(es[0].type)||(b.type==='residence'?es[0].type!=='king':es[0].type!=='villager'))return reject('Select a suitable friendly builder');
   const route=path(s,es[0],b,BUILDINGS[b.type].radius+1.25);if(dist(es[0],b)>BUILDINGS[b.type].radius+1.25&&(!route.length||dist(route.at(-1),b)>BUILDINGS[b.type].radius+1.25))return reject('Builder cannot reach this building');
-  es[0].order={type:b.construction?'build':'repair',target:b.id};es[0].path=[];es[0].retryPath=0;if(b.construction)b.construction.builder=es[0].id;return {ok:true};
+  cancelAttack(es[0]);es[0].order={type:b.construction?'build':'repair',target:b.id};es[0].path=[];es[0].retryPath=0;if(b.construction)b.construction.builder=es[0].id;return {ok:true};
  }
  if(c.type==='gather'){
-  const r=s.map.resources.find(r=>r.id===c.target&&r.amount>0);if(!r||es.some(e=>e.type!=='villager'))return reject('Invalid gathering order');updateFog(s);if(!s.fog[p].explored[Math.floor(r.y)*s.map.width+Math.floor(r.x)])return reject('Resource not discovered');for(const e of es){e.order={type:'gather',target:r.id};e.path=[];e.retryPath=0;}return {ok:true};
+  const r=s.map.resources.find(r=>r.id===c.target&&r.amount>0);if(!r||es.some(e=>e.type!=='villager'))return reject('Invalid gathering order');updateFog(s);if(!s.fog[p].explored[Math.floor(r.y)*s.map.width+Math.floor(r.x)])return reject('Resource not discovered');for(const e of es){cancelAttack(e);e.order={type:'gather',target:r.id};e.path=[];e.retryPath=0;}return {ok:true};
  }
  if(c.type==='build'){
   const d=typeof c.building==='string'&&Object.hasOwn(BUILDINGS,c.building)?BUILDINGS[c.building]:null;if(!d||es.length!==1||!['king','villager'].includes(es[0].type))return reject('Invalid builder');
@@ -132,12 +132,12 @@ export function command(s,p,c){
   if(c.building!=='residence'&&es[0].type!=='villager')return reject('Select a villager');if(!bounds(s,c.x,c.y))return reject('Invalid construction site');
   const x=Math.floor(c.x)+0.5,y=Math.floor(c.y)+0.5;if(!s.fog[p].visible[Math.floor(y)*s.map.width+Math.floor(x)])return reject('Construction site must be visible');if(!placement(s,p,c.building,x,y))return reject('Construction site blocked or shipyard is inland');
   const route=path(s,es[0],{x,y},d.radius+1.25);if(dist(es[0],{x,y})>d.radius+1.25&&(!route.length||dist(route.at(-1),{x,y})>d.radius+1.25))return reject('Builder cannot reach this site');
-  const cost={...d.cost};if(c.building==='residence')cost.wood*=s.players[p].modifiers.rebuild;if(!affordable(s,p,cost))return reject('Not enough resources');spend(s,p,cost,es[0]);const b=add(s,p,c.building,x,y,{hp:d.hp*0.12,spentCost:cost,construction:{remaining:d.buildTime,total:d.buildTime,builder:es[0].id},cargo:{food:0,wood:0,iron:0,units:[]}});s.navVersion++;es[0].order={type:'build',target:b.id};es[0].path=[];es[0].retryPath=0;return {ok:true,entity:b.id};
+  const cost={...d.cost};if(c.building==='residence')cost.wood*=s.players[p].modifiers.rebuild;if(!affordable(s,p,cost))return reject('Not enough resources');spend(s,p,cost,es[0]);const b=add(s,p,c.building,x,y,{hp:d.hp*0.12,spentCost:cost,construction:{remaining:d.buildTime,total:d.buildTime,builder:es[0].id},cargo:{food:0,wood:0,iron:0,units:[]}});s.navVersion++;cancelAttack(es[0]);es[0].order={type:'build',target:b.id};es[0].path=[];es[0].retryPath=0;return {ok:true,entity:b.id};
  }
  if(c.type==='load'||c.type==='unload'){
   const target=get(s,c.target);if(es.some(e=>!['wagon','transport'].includes(e.type)))return reject('Select a wagon or transport');if(!target||target.owner!==p)return reject('Select friendly cargo source or destination');
   for(const e of es){if(e.type==='wagon'&&(!stores(target)||e.id===target.id))return reject('Wagons transfer food with completed stores');if(e.type==='transport'&&c.type==='load'&&(target.kind!=='unit'||UNITS[target.type].naval||target.embarked||target.id===e.id))return reject('Invalid passenger');}
-  for(const e of es){e.order={type:c.type,target:target.id};e.path=[];e.retryPath=0;}return {ok:true};
+  for(const e of es){cancelAttack(e);e.order={type:c.type,target:target.id};e.path=[];e.retryPath=0;}return {ok:true};
  }
  if(c.type==='ability'){
   if(es.some(e=>!e.character||e.abilityCooldown>0))return reject('Ability unavailable');
@@ -146,10 +146,11 @@ export function command(s,p,c){
  }
  return reject('Unknown command');
 }
+function cancelAttack(e){delete e.pendingAttack;delete e.attackStartedTick;delete e.attackImpactTick;delete e.attackCueKind;}
 function hurt(s,e,damage,attacker){
  if(e.hp<=0||s.winner!==null)return;e.hp=Math.max(0,e.hp-damage);e.hitUntil=s.tick+5;e.morale=Math.max(5,e.morale-damage*0.13);
  if(e.type==='general'&&s.tick%20<2)event(s,e.hp/e.maxHp<0.3?'GENERAL LOW HP':'GENERAL UNDER ATTACK',e.owner);
- if(e.hp>0)return;e.state='death';e.deadTick=s.tick;e.order=null;e.path=[];s.players[e.owner].stats.lost++;
+ if(e.hp>0)return;cancelAttack(e);e.state='death';e.deadTick=s.tick;e.order=null;e.path=[];s.players[e.owner].stats.lost++;
  if(attacker){s.players[attacker.owner].stats.kills++;if(e.kind==='building')s.players[attacker.owner].stats.buildingsDestroyed++;if(e.type==='wagon')s.players[attacker.owner].stats.wagonsDestroyed++;}
  if(e.kind==='building')s.navVersion++;
  if(e.type==='transport')for(const id of e.cargo.units){const passenger=get(s,id);if(passenger)hurt(s,passenger,passenger.hp,attacker);}
@@ -158,16 +159,33 @@ function hurt(s,e,damage,attacker){
  if(e.type==='general'){s.winner=1-e.owner;s.reason='Enemy General defeated';event(s,`${s.players[e.owner].name}'s General has fallen`);}
 }
 function attack(s,e,t){
- const d=UNITS[e.type]||BUILDINGS[e.type],m=s.players[e.owner].modifiers,terrain=tile(s,e.x,e.y),targetTerrain=tile(s,t.x,t.y),range=d.range+(TERRAIN[terrain]?.range||0);
- if(dist(e,t)>range+0.25){if(e.kind==='unit'&&e.order?.type!=='hold')travel(s,e,t,range);return false;}e.state='attack';e.dir=(Math.round(Math.atan2(t.y-e.y,t.x-e.x)/(Math.PI/4))+8)%8;
- if(e.cooldown>0)return true;let damage=d.damage*m.damage*(d.bonus?.[t.type]||d.bonus?.[t.kind]||1);
+ const d=UNITS[e.type]||BUILDINGS[e.type],range=d.range+(TERRAIN[tile(s,e.x,e.y)]?.range||0);
+ if(e.pendingAttack)return true;
+ if(dist(e,t)>range+0.25){if(e.kind==='unit'&&e.order?.type!=='hold')travel(s,e,t,range);return false;}
+ e.state='attack';e.dir=(Math.round(Math.atan2(t.y-e.y,t.x-e.x)/(Math.PI/4))+8)%8;
+ if(s.tick<(e.attackReadyTick??0)||e.attackReadyTick===undefined&&e.cooldown>0)return true;
+ const windup=d.attackWindupTicks,recovery=Math.ceil(d.cooldown*TICK_RATE/(active(s,e,'concentrate')&&e.type==='artillery'?1.3:1));
+ e.attackStartedTick=s.tick;e.attackImpactTick=s.tick+windup;e.attackCueKind=d.attackCueKind;
+ e.attackReadyTick=e.attackImpactTick+recovery;e.cooldown=(windup+recovery)/TICK_RATE;
+ e.pendingAttack={target:t.id,x:e.x,y:e.y,orderType:e.order?.type||null};return true;
+}
+function resolveAttack(s,e){
+ const pending=e.pendingAttack;if(!pending)return;
+ const sameOrder=pending.orderType===(e.order?.type||null)&&(pending.orderType!=='attack'||e.order.target===pending.target);
+ if(!living(e)||e.construction||!sameOrder||e.x!==pending.x||e.y!==pending.y){cancelAttack(e);return;}
+ if(s.tick<e.attackImpactTick)return;
+ delete e.pendingAttack;
+ const t=get(s,pending.target),d=UNITS[e.type]||BUILDINGS[e.type],terrain=tile(s,e.x,e.y),range=d.range+(TERRAIN[terrain]?.range||0);
+ if(!t||!living(t)||t.owner===e.owner||!visible(s,e.owner,t)||dist(e,t)>range+.25){cancelAttack(e);e.state='idle';return;}
+ const m=s.players[e.owner].modifiers,targetTerrain=tile(s,t.x,t.y);
+ let damage=d.damage*m.damage*(d.bonus?.[t.type]||d.bonus?.[t.kind]||1);
  if(e.foodMax&&e.food/e.foodMax<BALANCE.lowSupply)damage*=e.food>0?0.85:0.55;damage*=0.7+e.morale/250;
  if(terrain==='forest'&&!e.lastAttack||terrain==='forest'&&s.tick-e.lastAttack>100)damage*=1.25;
  if(active(s,e,'shock'))damage*=1.45;if(active(s,e,'tempo')&&e.lastMovedTick>s.tick-40)damage*=1.3;
  if(s.players[e.owner].tags.includes('SUPPLY_DENIAL')&&['wagon','granary','depot','transport'].includes(t.type))damage*=1.2;
  let armor=(UNITS[t.type]||BUILDINGS[t.type]).armor*(['fort','wall','gate'].includes(t.type)?s.players[t.owner].modifiers.fortification:1)+(TERRAIN[targetTerrain]?.armor||0)+s.players[t.owner].modifiers.armor;if(active(s,t,'riverDefense')&&(targetTerrain==='ford'||s.entities.some(b=>b.owner===t.owner&&b.kind==='building'&&b.hp>0&&dist(b,t)<5)))armor+=6;
  hurt(s,t,Math.max(1,damage-armor),e);if(d.splash)for(const other of s.entities)if(other.owner!==e.owner&&other.id!==t.id&&living(other)&&dist(other,t)<d.splash)hurt(s,other,Math.max(1,(damage-armor)*0.35),e);
- e.cooldown=d.cooldown/(active(s,e,'concentrate')&&e.type==='artillery'?1.3:1);e.lastAttack=s.tick;return true;
+ e.lastAttack=s.tick;
 }
 function nearestEnemy(s,e,r){let best=null,bestScore=Infinity;for(const t of s.entities){if(!living(t)||t.owner===e.owner||!visible(s,e.owner,t)||dist(e,t)>r)continue;if(UNITS[e.type]?.naval&&UNITS[t.type]?.naval===false&&dist(e,t)>UNITS[e.type].range)continue;const score=dist(e,t)+(t.type==='general'?-2:0)+(t.kind==='building'?2:0);if(score<bestScore){best=t;bestScore=score;}}return best;}
 function resupply(s,e){
@@ -189,7 +207,7 @@ function transfer(s,e,t,kind){
   }return;
  }
  if(kind==='load'){
-  if(!t||t.embarked||t.kind!=='unit'||UNITS[t.type].naval){e.order=null;return;}if(travel(s,e,t,2.6)&&dist(e,t)<=2.6){if(e.cargo.units.length<UNITS.transport.capacity){t.embarked=e.id;t.order=null;t.path=[];e.cargo.units.push(t.id);}e.order=null;}
+  if(!t||t.embarked||t.kind!=='unit'||UNITS[t.type].naval){e.order=null;return;}if(travel(s,e,t,2.6)&&dist(e,t)<=2.6){if(e.cargo.units.length<UNITS.transport.capacity){cancelAttack(t);t.embarked=e.id;t.order=null;t.path=[];e.cargo.units.push(t.id);}e.order=null;}
  }else{
   const candidates=[];for(let y=Math.floor(e.y)-3;y<=Math.floor(e.y)+3;y++)for(let x=Math.floor(e.x)-3;x<=Math.floor(e.x)+3;x++)if(pass(s,{type:'villager',owner:e.owner},x+0.5,y+0.5)&&dist(e,{x:x+0.5,y:y+0.5})<=3)candidates.push({x:x+0.5,y:y+0.5});
   if(!candidates.length){travel(s,e,t,2.5);return;}for(const id of e.cargo.units){const u=get(s,id);if(u){const spot=candidates[0];u.x=spot.x;u.y=spot.y;u.embarked=null;u.state='idle';}}e.cargo.units=[];e.order=null;
@@ -209,7 +227,7 @@ function tickUnit(s,e){
  if(e.food<=0){e.starving=(e.starving||0)+DT;e.morale=Math.max(15,e.morale-0.5*DT);if(e.starving>BALANCE.starveGrace)hurt(s,e,BALANCE.starveDamage*DT,null);}else{e.starving=0;const nearLeader=s.entities.some(u=>u.owner===e.owner&&u.character&&living(u)&&dist(u,e)<7);e.morale=Math.min(Math.min(100,80+m.morale),e.morale+(nearLeader?3:0.5)*DT);}
  if(!living(e))return;if(active(s,e,'consensus')||active(s,e,'restore')){e.hp=Math.min(e.maxHp,e.hp+2*DT);e.morale=Math.min(100,e.morale+8*DT);}
  for(const f of s.effects)if(f.kind==='riverTrap'&&f.owner!==e.owner&&f.until>s.tick&&dist(e,f)<f.radius&&TERRAIN[tile(s,e.x,e.y)]?.water)hurt(s,e,7*DT,{owner:f.owner});
- if(!living(e))return;const previous={x:e.x,y:e.y},o=e.order;e.state='idle';
+ if(!living(e))return;if(e.pendingAttack){e.state='attack';return;}const previous={x:e.x,y:e.y},o=e.order;e.state='idle';
  if(o?.type==='build'){const b=get(s,o.target);if(!b||!b.construction)e.order=null;else travel(s,e,b,BUILDINGS[b.type].radius+1.25);}
  else if(o?.type==='repair'){const b=get(s,o.target);if(!b||b.hp>=b.maxHp)e.order=null;else if(travel(s,e,b,BUILDINGS[b.type].radius+1.25)){const n=Math.min(b.maxHp-b.hp,6*DT,s.players[e.owner].resources.wood*5);if(n>0){b.hp+=n;s.players[e.owner].resources.wood-=n/5;e.state='build';}}}
  else if(o?.type==='gather')gather(s,e,s.map.resources.find(r=>r.id===o.target));
@@ -294,16 +312,18 @@ function ai(s,p){
  for(const ship of own.filter(e=>e.type==='warship'))if(!ship.order){const target=visibleEnemies.find(e=>UNITS[e.type]?.naval)||{x:s.map.spawns[1-p].x,y:42};command(s,p,{type:'attackMove',ids:[ship.id],x:target.x,y:target.y});}
 }
 export function step(s){
- if(s.winner!==null)return s;s.tick++;if(s.tick%5===0)updateFog(s);s.effects=s.effects.filter(f=>f.until>s.tick);if(s.aiPlayer!==null)ai(s,s.aiPlayer);
+ if(s.winner!==null)return s;s.tick++;updateFog(s);s.effects=s.effects.filter(f=>f.until>s.tick);if(s.aiPlayer!==null)ai(s,s.aiPlayer);
  // Iteration snapshot prevents newly trained units taking an extra update on their birth tick.
- for(const e of [...s.entities]){if(s.winner!==null)break;if(e.hp<=0)continue;e.cooldown=Math.max(0,e.cooldown-DT);if(e.abilityCooldown)e.abilityCooldown=Math.max(0,e.abilityCooldown-1);if(e.kind==='building')tickBuilding(s,e);else tickUnit(s,e);
+ for(const e of [...s.entities]){if(s.winner!==null)break;if(e.hp<=0){cancelAttack(e);continue;}e.cooldown=e.attackReadyTick===undefined?Math.max(0,e.cooldown-DT):Math.max(0,(e.attackReadyTick-s.tick)/TICK_RATE);if(e.abilityCooldown)e.abilityCooldown=Math.max(0,e.abilityCooldown-1);if(e.kind==='building')tickBuilding(s,e);else tickUnit(s,e);
   if(e.kind==='building'&&active(s,e,'inspection'))e.hp=Math.min(e.maxHp,e.hp+DT*3);
  }
- s.entities=s.entities.filter(e=>e.hp>0||s.tick-(e.deadTick??s.tick)<TICK_RATE*4);economy(s);return s;
+ // Current-tick movement/visibility precedes authoritative impact; view calls cannot change this timing.
+ updateFog(s);for(const e of s.entities){if(s.winner!==null)break;resolveAttack(s,e);}
+ s.entities=s.entities.filter(e=>e.hp>0||s.tick-(e.deadTick??s.tick)<TICK_RATE*4);updateFog(s);economy(s);return s;
 }
 export function view(s,p){
  if(p!==0&&p!==1)throw new Error('Invalid viewer');updateFog(s);const result={tick:s.tick,map:{id:s.map.id,name:s.map.name,width:s.map.width,height:s.map.height,tiles:[...s.map.tiles],resources:s.map.resources.map(r=>s.fog[p].resources[r.id]).filter(Boolean).map(clone)},players:s.players.map(player=>({id:player.id,name:player.name,king:player.king,general:player.general,resources:player.id===p?clone(player.resources):{wood:0,food:0,iron:0},population:player.id===p?player.population:0,populationCap:BALANCE.populationCap,synergies:player.synergies,stats:player.id===p||s.winner!==null?clone(player.stats):undefined})),entities:[],winner:s.winner,reason:s.reason,events:s.events.filter(e=>e.owner===null||e.owner===p).map(e=>e.text),fog:clone(s.fog[p]),effects:s.effects.filter(f=>f.owner===p||s.fog[p].visible[Math.floor(f.y)*s.map.width+Math.floor(f.x)]).map(clone)};
- for(const e of s.entities){if(e.owner!==p&&!visible(s,p,e))continue;const {path,pathKey,retryPath,order,...publicEntity}=e;const v=clone(publicEntity);if(e.owner===p)v.order=order?clone(order):null;else{v.queue=[];v.cargo={food:0,wood:0,iron:0,units:[]};delete v.abilityCooldown;delete v.construction;}result.entities.push(v);}
+ for(const e of s.entities){if(e.owner!==p&&!visible(s,p,e))continue;const {path,pathKey,retryPath,order,pendingAttack,...publicEntity}=e;const v=clone(publicEntity);if(e.owner===p)v.order=order?clone(order):null;else{v.queue=[];v.cargo={food:0,wood:0,iron:0,units:[]};delete v.abilityCooldown;delete v.construction;}result.entities.push(v);}
  return result;
 }
 export function hashState(s){let hash=2166136261;const text=JSON.stringify(s);for(let i=0;i<text.length;i++){hash^=text.charCodeAt(i);hash=Math.imul(hash,16777619);}return (hash>>>0).toString(16).padStart(8,'0');}

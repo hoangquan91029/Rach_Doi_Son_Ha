@@ -19,3 +19,18 @@ export function sampleSpriteAnimation(frames,{timeMs=0,loop=true,frame:requested
  }
  return {frame,elapsedMs,durationMs,events:(frames[frame].events||[]).map(event=>({...event}))};
 }
+
+export function defaultAnimationLoop(asset){return asset.loop??['idle','walk'].includes(asset.state);}
+/** Map an authored contact marker onto authoritative impact; no gameplay dispatch. */
+export function attackAnimationTime(asset,entity,visualTimeMs){
+ const start=entity.attackStartedTick*50,impact=entity.attackImpactTick*50,ready=entity.attackReadyTick*50;
+ const confirmedTime=entity.lastAttack>=entity.attackImpactTick&&Number.isFinite(impact)?Math.max(impact,visualTimeMs):visualTimeMs;
+ const fallback=Math.max(0,confirmedTime-(Number.isFinite(start)?start:(entity.lastAttack||0)*50));
+ if(!Number.isFinite(start)||!Number.isFinite(impact)||impact<=start)return fallback;
+ let marker=null,total=0,count=0;
+ for(const frame of asset.frames){for(const event of frame.events||[]){if(['DEAL_DAMAGE','FIRE_PROJECTILE','WEAPON_CONTACT'].includes(event.name)&&Number.isSafeInteger(event.offsetMs)&&event.offsetMs>=0&&event.offsetMs<frame.durationMs){marker=total+event.offsetMs;count++;}}total+=frame.durationMs;}
+ if(count!==1||marker<=0||marker>=total||!Number.isFinite(ready)||ready<=impact)return fallback;
+ const time=entity.lastAttack>=entity.attackImpactTick?Math.max(impact,visualTimeMs):visualTimeMs;
+ if(time<=impact)return Math.max(0,Math.min(marker,(time-start)/(impact-start)*marker));
+ return Math.min(total,marker+(time-impact)/(ready-impact)*(total-marker));
+}

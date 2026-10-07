@@ -1,0 +1,89 @@
+{
+  "status": "PASS_AFTER_QA_LOBBY_ACK_CORRECTION",
+  "completedUtc": "2026-10-07T20:00:13.257Z",
+  "serviceRestartLocal": "2026-10-08 02:55:58 +07",
+  "healthBeforeRestart": {
+    "ok": true,
+    "rooms": 0
+  },
+  "healthAfterAcceptance": {
+    "ok": true,
+    "rooms": 0
+  },
+  "url": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net",
+  "build": {
+    "file": "index-ClW3IlNb.js",
+    "sha256": "ca8e6428603c0033ccd9926fdb69daa5d78cee28fef4259607946530fe02e08b"
+  },
+  "backendSources": {
+    "shared/sim.js": "0613dad6d4557c49a483a87deed918f8771ad6b8849c6dd1f4f80a4bb6bf7318",
+    "shared/data.js": "ffc3f45adc58f212066d3763c591377ce15b9f6ac78e4685a95fc3ac747818e1"
+  },
+  "browserVersions": {
+    "chromium": "151.0.7922.34",
+    "firefox": "153.0"
+  },
+  "normalTls": true,
+  "chromiumResolverIp": "103.84.155.153",
+  "results": [
+    {
+      "browser": "chromium",
+      "map": "delta",
+      "mode": "single",
+      "passed": true,
+      "offlineTicks": 23,
+      "errors": []
+    },
+    {
+      "browser": "chromium",
+      "map": "delta",
+      "mode": "online",
+      "passed": true,
+      "code": "CEF2AB",
+      "peerBrowser": "firefox",
+      "forcedPublicRelayIP": "103.84.155.153",
+      "combatWinner": 0,
+      "combatWallSeconds": 36.214,
+      "reconnect": true,
+      "rematch": true,
+      "errors": []
+    },
+    {
+      "browser": "chromium",
+      "map": "coast",
+      "mode": "single",
+      "passed": true,
+      "offlineTicks": 23,
+      "errors": []
+    },
+    {
+      "browser": "chromium",
+      "map": "coast",
+      "mode": "online",
+      "passed": true,
+      "code": "4A1BC5",
+      "peerBrowser": "firefox",
+      "forcedPublicRelayIP": "103.84.155.153",
+      "combatWinner": 0,
+      "combatWallSeconds": 61.082,
+      "reconnect": true,
+      "rematch": true,
+      "errors": []
+    }
+  ],
+  "receipt": {
+    "path": "artifacts/production-action-timing-mixed/retry-lobby-ack/receipt.json",
+    "sha256": "b06e5a780f463edf5a7fadb6431ea1cccc6f0f87fe178b4c950e853ee6940ed9"
+  },
+  "preservedFirstFailure": {
+    "path": "artifacts/production-action-timing-mixed/failure.json",
+    "sha256": "008c01fcb560127a06f8fdb88058e7c27f5e6510a2e2a3cf3956afcdfd4851cb"
+  },
+  "limits": [
+    "Same-host headless Chromium host and Firefox peer, not external devices.",
+    "Default presentation mode; no art=pilot or finished-animation approval.",
+    "Offline scenario uses existing easy difficulty; online victory uses ordinary combat rules.",
+    "Combat wall duration includes existing post-victory rematch/menu checks.",
+    "Captured errors: pageerror, HTTP >=400, server error messages."
+  ]
+}

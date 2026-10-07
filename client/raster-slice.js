@@ -1,3 +1,4 @@
+import {sampleSpriteAnimation,defaultAnimationLoop,attackAnimationTime} from './sprite-timing.js';
 import {createArtAssetPipeline} from './art-assets.js';
 import {createTerrainTransitions} from './terrain-transitions.js';
 import {TILE_WIDTH,TILE_HEIGHT} from './world-presentation.js';
@@ -95,9 +96,11 @@ export function createRasterSlice({enabled=new URLSearchParams(globalThis.locati
    const candidates=(pipeline.manifest?.assets||[]).filter(a=>a.kind===kind&&families.includes(a.family||a.id)&&a.state===visualState&&a.direction===direction);
    if(!candidates.length){recordMissing(`${families[0]}:${visualState}:${direction}`,'No exact authored raster state/direction');return false;}
    const asset=candidates[0];let elapsed=timeMs;
-   if(visualState==='death')elapsed=Math.max(0,(tick-(entity.deadTick??tick))*50);
-   else if(visualState==='attack'&&finite(entity.lastAttack))elapsed=Math.max(0,(tick-entity.lastAttack)*50);
-   const raster=pipeline.get(asset.id,{state:visualState,direction,timeMs:elapsed});if(!raster.image){recordMissing(asset.id,raster.reason);return false;}
+   if(visualState==='hit')elapsed=Math.max(0,timeMs-((entity.hitUntil||tick)-6)*50);
+   else if(visualState==='death')elapsed=Math.max(0,timeMs-(entity.deadTick??tick)*50);
+   else if(visualState==='attack'&&finite(entity.attackStartedTick??entity.lastAttack))elapsed=attackAnimationTime(asset,entity,timeMs);
+   const sample=sampleSpriteAnimation(asset.frames,{timeMs:elapsed,loop:defaultAnimationLoop(asset)});
+   const raster=pipeline.get(asset.id,{state:visualState,direction,timeMs:elapsed,frame:sample.frame});if(!raster.image){recordMissing(asset.id,raster.reason);return false;}
    if(rasterAt(ctx,raster,project(entity.x,entity.y),zoom)){status.entityDraws++;return true;}return false;
   },
   /** Deterministic existing forest density, sorted ready for a merged prop/entity depth queue. */
