@@ -1,0 +1,95 @@
+{
+  "asset": "villager South walk F02 corrected right-passing attempt",
+  "status": "PENDING_PARENT_REVIEW_LIKELY_SUPPORT_TRACK_FAILURE",
+  "calls_initiated": 1,
+  "authorized_call_count": 1,
+  "retries": 0,
+  "generated_output_path": "/home/kieu-hoang-quan/.codex/generated_images/01a116ce-195d-73e0-a579-e4e5e990575d/exec-a4d832c3-82dc-4f4e-a286-25961525672d.png",
+  "raw_path": "raw.png",
+  "raw_sha256": "b3262d6bef4fe407a0fff19816f0fdaa81a5e6c5b52521d500b8572154aa6985",
+  "decoded_rgba_sha256": "0fdbcfd0e35927540ce3cc607a4295dc4760dcbedb3cee2666deb4db94294eef",
+  "source_format": "PNG",
+  "source_canvas": [
+    1254,
+    1254
+  ],
+  "source_mode": "RGBA",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "alpha_bounds_exclusive": {
+    "0": [
+      0,
+      24,
+      1240,
+      1254
+    ],
+    "1": [
+      410,
+      48,
+      897,
+      1212
+    ],
+    "16": [
+      412,
+      51,
+      894,
+      1210
+    ],
+    "128": [
+      413,
+      52,
+      893,
+      1209
+    ],
+    "250": [
+      416,
+      53,
+      892,
+      1208
+    ]
+  },
+  "measured_game_review_evidence": {
+    "viewer_right_LEFT_support_region_alpha128_bbox_x680_880_y1000_1254": [
+      696,
+      1000,
+      828,
+      1209
+    ],
+    "selected_F00_same_region_alpha128_bbox_x680_880_y1000_1254": [
+      703,
+      1000,
+      820,
+      1209
+    ],
+    "viewer_left_RIGHT_swing_region_alpha128_bbox_x360_620_y1000_1254": [
+      525,
+      1000,
+      601,
+      1056
+    ]
+  },
+  "work_order_sha256": "797982cbb6293444129999030ad935c49009768e50074e9e92f167faf19c9dd2",
+  "identity_lock_sha256": "35fbcf7c558cd32450ddfb6cae76b94bb42994bda36e88c5a3a4df18e239eec3",
+  "identity_review_sha256": "7b493e42607bd03dbe29bf9ae7a3e6bae0f6443fdb152be297f1d92266920d1d",
+  "selected_F00_parent_review_sha256": "881a8bdb5aa709e1c89e62f69eeae61e6a52cdf1e0e8e1a045fb242843e07ba3",
+  "prompt_sha256": "912783176a2f63c9df777a2e8610bf70bfba296ade075d24ac62755799bcff8d",
+  "input_locks_sha256": "4ad13fd8a78e82c7b352bf19d3f6b8cf6d1f3be5d0e359f676f49b96aca1e836",
+  "ground_root": [
+    654,
+    1140
+  ],
+  "canvas_logical_size": 38,
+  "phase": {
+    "frame": "F02",
+    "time_ms": 150,
+    "primary_support": "LEFT/viewer RIGHT",
+    "left_support_target_sole_bottom_y": "1130-1140",
+    "right_airborne_target_sole_bottom_y": "about 1058",
+    "right_airborne_gap_px": 80
+  },
+  "interpretation": "On alpha>128 pixel scan in lower body region, viewer-right support-foot region bbox bottom is y1209, exactly the same as selected F00 (y1209). Viewer-left swing-foot region bottom is y1056, near the requested airborne target. Thus the right swing appears lifted, but the required LEFT support retreat/stance progression appears not achieved. No transform applied.",
+  "preview": "Direct whole canvas 1254-to-38 reduction only.",
+  "scope": "One correction call spent. No third F2 call, F4/F6, inbetweens, or runtime authorized."
+}

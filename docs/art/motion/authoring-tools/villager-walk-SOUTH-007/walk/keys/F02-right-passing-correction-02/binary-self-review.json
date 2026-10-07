@@ -1,0 +1,35 @@
+{
+  "status": "SELF_REVIEW_FAIL_REQUIRED_SUPPORT_RETREAT_NOT_DEMONSTRATED",
+  "checks": {
+    "one_complete_illustration": "PASS",
+    "transparent_rgba": "PASS",
+    "1254_square_canvas": "PASS",
+    "no_guide_art_visible": "PASS",
+    "viewer_left_RIGHT_airborne_passing_around_y1058": "PASS_CANDIDATE_MEASURED_BOTTOM_1056",
+    "viewer_right_LEFT_sole_retreat_to_y1130_1140": "FAIL_MEASURED_BOTTOM_1209",
+    "no_repeated_F00_contact": "FAIL_SUPPORT_FOOT_BOTTOM_MATCHES_SELECTED_F00_1209",
+    "whole_root_and_identity_stability": "NEEDS_PARENT_REVIEW"
+  },
+  "binary_contact_evidence": {
+    "support_region_bbox_current_alpha128": [
+      696,
+      1000,
+      828,
+      1209
+    ],
+    "support_region_bbox_selected_F00_alpha128": [
+      703,
+      1000,
+      820,
+      1209
+    ],
+    "swing_region_bbox_current_alpha128": [
+      525,
+      1000,
+      601,
+      1056
+    ],
+    "delta_support_bottom_vs_F00_px": 0
+  },
+  "next_action": "Parent visual review only. Correction call cap is spent; stop this method if parent confirms support track still fails. No automatic third F2 call."
+}

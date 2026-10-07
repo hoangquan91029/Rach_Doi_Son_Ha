@@ -1,0 +1,72 @@
+{
+  "status": "PREPARED_FOR_EXACTLY_ONE_AUTHORIZED_F2_CORRECTION_CALL",
+  "work_order_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/walk/F2-correction-work-order.json",
+  "work_order_sha256": "797982cbb6293444129999030ad935c49009768e50074e9e92f167faf19c9dd2",
+  "identity_lock_sha256": "35fbcf7c558cd32450ddfb6cae76b94bb42994bda36e88c5a3a4df18e239eec3",
+  "identity_review_sha256": "7b493e42607bd03dbe29bf9ae7a3e6bae0f6443fdb152be297f1d92266920d1d",
+  "selected_F00_parent_review_sha256": "881a8bdb5aa709e1c89e62f69eeae61e6a52cdf1e0e8e1a045fb242843e07ba3",
+  "verified_all_eight_identity_sources": true,
+  "correction_used_held_F2_as_input": false,
+  "authorized_call_count": 1,
+  "calls_initiated": 0,
+  "retries": 0,
+  "canvas": [
+    1254,
+    1254
+  ],
+  "ground_pivot": [
+    654,
+    1140
+  ],
+  "whole_canvas_logical_size": 38,
+  "phase": {
+    "frame": "F02",
+    "time_ms": 150,
+    "duration_ms": 80,
+    "primary_support": "LEFT/viewer RIGHT",
+    "left_sole_target_y": "1130-1140 grounded under body, 70-80 source px retreat from F00 toe",
+    "right_sole_target_y": 1058,
+    "right_sole": "airborne passing under body, same ground depth as left, 80px gap; no contact",
+    "arms": "passing neutral",
+    "weight_shift_px_hypothesis": 55
+  },
+  "direction": {
+    "screen": "SOUTH",
+    "engine": "D01",
+    "world": "SE"
+  },
+  "attached_inputs": [
+    {
+      "role": "canonical_D00_appearance",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+      "use": "canonical appearance only"
+    },
+    {
+      "role": "sealed_South_identity_and_camera",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/south-neutral-reference/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "use": "South identity and camera"
+    },
+    {
+      "role": "selected_F00_continuity",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/walk/keys/F00-left-contact-01/raw.png",
+      "sha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001",
+      "use": "selected F00 only; advance pose"
+    },
+    {
+      "role": "MODEL_ONLY_F2_v3_target_geometry",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-guides/walk-south-F2-correction-v3/guide.png",
+      "sha256": "ed5f9f7234b2b2122ccf2c2970b5da1605239985a42bc6f110b3a1ae8496fa34",
+      "use": "target support/pass geometry only"
+    }
+  ],
+  "inspected_only_not_attached": {
+    "role": "MODEL_ONLY_QA_target_vs_old_contact",
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-guides/walk-south-F2-correction-v3/guide-qa.png",
+    "sha256": "cde299715227149ae6777480c04d76eee8d276e27341f351b82e3eb4e0803c88",
+    "reason": "labels/ghost are review-only; clean v3 geometry guide is the sole pose image attached"
+  },
+  "prompt_sha256": "912783176a2f63c9df777a2e8610bf70bfba296ade075d24ac62755799bcff8d",
+  "scope": "one F2 correction call only; no further F2 attempt, F4/F6, inbetweens, runtime or qualification authorized"
+}

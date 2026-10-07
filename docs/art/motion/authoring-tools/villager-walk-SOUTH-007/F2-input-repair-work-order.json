@@ -1,0 +1,88 @@
+{
+  "schema": "south-eight-cel-key-work-order/v1",
+  "status": "AUTHORIZED_ONE_F2_INPUT_ORDER_REPAIR_CALL_ONLY",
+  "scope": "VillagerwalkSouth8finishedcels; currentfinitecallslotF2only",
+  "canvas": [
+    1254,
+    1254
+  ],
+  "groundPivot": [
+    654,
+    1140
+  ],
+  "wholeCanvasLogicalSize": 38,
+  "direction": {
+    "screen": "SOUTH",
+    "engine": "D01",
+    "world": "SE"
+  },
+  "identityReview": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/identity-lock-review.json",
+    "sha256": "7b493e42607bd03dbe29bf9ae7a3e6bae0f6443fdb152be297f1d92266920d1d"
+  },
+  "references": [
+    {
+      "role": "CanonicalSEALED_Southidentity/camera/appearanceauthority",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/south-neutral-reference/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+    },
+    {
+      "role": "SelectedF0continuity; advanceposeDO_NOTFREEZE",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/walk/keys/F00-left-contact-01/raw.png",
+      "sha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001"
+    },
+    {
+      "role": "MODEL_ONLY_QAexplicitoldcontactvsrequiredtarget; labels/ghostNOTFINALART",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-guides/walk-south-F2-correction-v3/guide-qa.png",
+      "sha256": "cde299715227149ae6777480c04d76eee8d276e27341f351b82e3eb4e0803c88"
+    }
+  ],
+  "previousSelectedAnimationFrame": {
+    "frame": 0,
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/walk/keys/F00-left-contact-01/raw.png",
+    "sha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001",
+    "parentReviewSha256": "881a8bdb5aa709e1c89e62f69eeae61e6a52cdf1e0e8e1a045fb242843e07ba3"
+  },
+  "nextSelectedKeyFrame": null,
+  "selectedAnimatedFrameCount": 1,
+  "authorizedCallCount": 1,
+  "retries": 0,
+  "outputDirectory": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/walk/keys/F02-right-passing-annotated-target-03",
+  "phase": {
+    "frame": 2,
+    "timeMs": 150,
+    "durationMs": 80,
+    "primarySupport": "LEFT",
+    "leftViewerSide": "RIGHT",
+    "leftFoot": "Solegroundedunderbodyaroundy1130-1140, retreatsapprox70-80sourcepixelsfromF0toe1208throughreallegposeforeshortening",
+    "rightFoot": "Soleairbornepassingaroundy1058,samegrounddepthassupport; clear~80gapnotcontacttrailing166gap",
+    "leftArm": "passingneutral",
+    "rightArm": "passingneutral",
+    "weightShiftPxHypothesis": 55
+  },
+  "sourceMethod": "CONTROLLED_GUIDE_FINISHED_WHOLE_CHARACTER_IMAGE_EDIT",
+  "finalAppearance": "FullcompleteillustrationmatchingcanonicalSouth, no visibleparts/bones/guidecolors/text/grid/shadowbackground",
+  "constraints": [
+    "ExactlyoneoriginalRGBAtransparentPNG, same1254canvas",
+    "No mirroringcroppingbboxfitwholeimageshift",
+    "Guidegeometrydoesnotreplaceidentity/anatomy/artquality",
+    "AllfouractualF0/F2/F4/F6keysmustpassparentbinarysupportbeforeinbetweens",
+    "600msnominaltimingand0.50791worldstridearehypothesesforrealcontact/gridreview",
+    "Nootherdirection/action/unitruntime/finalapproval",
+    "Keepidentity/headsize/torsoheight/canvas/pivot; changelegposesnotwholeimagescale/translate. LEFTstanceforeshortensbeneathbody. NeverduplicateF0localforwardsole.",
+    "AnnotatedQAguide MUSTbeactualreferenced_image_paths attachment. DoNOTomitbecauseitcontainsdebuglabels. Labels/ghostareonlyinputguide, excludedfromoutput. Noextraappearance/neutralguideorheldframeattachments."
+  ],
+  "stopAfter": "Preserveoneoriginal/custody/native38selfreviewandreturn. Mandatoryhaltifstancecontacttrackunchanged; noautomaticfourthF2/F4.",
+  "correctionOf": {
+    "heldRawSha256": "1c41fdda017b5f64dd7bb03deb5c0c72a24c0d18cacbbbf1f79b2e1c2a274366",
+    "usedAsInput": false,
+    "defect": "Supportsole stillforwardatF0depth; needactualpassing/contactretreat"
+  },
+  "guideReview": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-guides/parent-F2-correction-guide-review.json",
+    "sha256": "9d532c9908eb48edde8f3053c57e857f9d3d1f6057b487691475fc53b7609e70"
+  },
+  "inputOrderRepair": "PreviouscallomittedrequiredQAattachment. Thisonecallspecificallyteststheactualannotatedtargetwitholdcontactghost. No furtherF2ifstancefails.",
+  "mandatoryExactAttachmentCount": 3,
+  "attachmentPathsMustExactlyMatchOrder": true
+}
