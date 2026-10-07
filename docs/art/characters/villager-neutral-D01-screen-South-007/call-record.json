@@ -1,0 +1,44 @@
+{
+  "attempt_id": "south007-neutral-reference-001",
+  "tool": "built-in ImageGen",
+  "tool_call_id": null,
+  "raw_output_path": "/home/kieu-hoang-quan/.codex/generated_images/01a116ce-195d-73e0-a579-e4e5e990575d/exec-12ed009c-b952-45ef-9218-4b280f46a3dd.png",
+  "raw_path": "raw.png",
+  "raw_sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+  "decoded_rgba_sha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6",
+  "prompt_path": "prompt.txt",
+  "prompt_sha256": "1ab585d43ffa8f5e3bce3f46d618dc6707330b479b951aae9f992ed6c32964a2",
+  "inputs": [
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+      "role": "existing canonical identity and appearance reference; D00 view is not South"
+    }
+  ],
+  "call_cap": 1,
+  "calls_initiated": 1,
+  "retries": 0,
+  "transparent_background_requested": true,
+  "disposition": "HOLD for parent visual review: measured ground contact y\u22481179 vs intended pivot y1140; no translation/bbox fit.",
+  "input_locks_before_call_sha256": "40b0931c154de537acff907d36f6653e2d73b6d09c50106829a2ec64b96708ed",
+  "input_locks_after_result_sha256": "054a527163178a8de1f2629d1198a5c510c4fb3b6945dcb6b16798048f48e230",
+  "measured_actual_ground_contact": {
+    "left_sandal_sole_contact_center_approx": [
+      490,
+      1177
+    ],
+    "right_sandal_sole_contact_center_approx": [
+      794,
+      1180
+    ],
+    "combined_between_feet_pivot_approx": [
+      650,
+      1179
+    ],
+    "uncertainty_px": [
+      12,
+      3
+    ],
+    "measurement_basis": "Threshold alpha>16 scan: left sandal last opaque-contact row ~1177 and right sandal row ~1180; pivot estimated between the two grounded soles. Not a bbox-centered pivot."
+  }
+}

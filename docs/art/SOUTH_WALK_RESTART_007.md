@@ -38,3 +38,11 @@ Parent scores IdentityConsistency,Anatomy,LegPhase,FootPlacement,MotionReadabili
 ## Runtime contract
 
 Automated atlas compilation retains each original frame and records animation,direction,frame rectangle,pivot,duration and event markers. Avoid independent tiny-frame requests. Existing fixed20Hz simulation remains authoritative for movement, damage, consumption, gathering, transfers and victory. Frame playback never commits gameplay state. Future attack/transfer event alignment must use authoritative fixed-tick timing and visual event metadata, without making browserFPS decide outcomes.
+
+## First static South reference
+
+One controlled identity edit returned1254RGBA `../characters/villager-neutral-D01-screen-South-007/raw.png`, SHA256`68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db`. Parent inspected native and fixed38pxwholecanvas views and accepted it as STATIC_IDENTITY_REFERENCE_CANDIDATE for turnaround authoring. Source ground anchor6541140is sealed as an authored between-feet ground-plane pivot, without cropping/fitting. Face, hat, ivory tunic, asymmetric sash, trousers, wraps and sandals remain recognizable. Sourcefringe is still a candidate warning. Eight-direction identity lock and all actual walking frames remain unfinished; no runtime or final visual approval. See the separate parent receipt in that source folder.
+
+## First East static attempt held
+
+East edit SHA256`5b647c86c8957e94ce32a0733cc248d07f48dcdf19af3e4d6b161f17bb55a5d7` preserves appearance but fails whole-body East heading: head turns right while chest/pelvis and near sandal remain three-quarter/front. It does not fill the E identity slot. Original, prompt, hashes and separate parent HOLD receipt are preserved at`../characters/villager-EAST-held-007-01/`. The lowest opaque toe row is not the ground pivot; no automatic translation/fitting follows from that measurement. Prepare a controlled profile pose guide before a bounded corrected edit.

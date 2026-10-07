@@ -1,0 +1,20 @@
+{
+  "status": "PARENT_HOLD_UNQUALIFIED_EAST_DIRECTION",
+  "review_authority": "root parent visual review",
+  "asset": "east-neutral-reference candidate",
+  "raw_path": "raw.png",
+  "raw_sha256": "5b647c86c8957e94ce32a0733cc248d07f48dcdf19af3e4d6b161f17bb55a5d7",
+  "decoded_rgba_sha256": "37d64a38eb36eb625869ca47b22a8c94139510912e00fb1fc4979e840e6366ab",
+  "call_record_sha256": "b5b960d99db718d2a37d163124d780d2943b427bcf2296fac23c13ce24b623df",
+  "parent_findings": [
+    "Head points screen-right, but chest and pelvis remain in a three-quarter/front orientation.",
+    "Near sandal/toes still point down toward the viewer; whole-body direction is not a true screen-East profile."
+  ],
+  "contact_plane": "Last opaque contact row y=1204 vs root y=1140 is retained as measurement only; this alone does not prove pivot failure because pivot is between feet and not the lowest opaque toe. Candidate contact-plane calibration remains unresolved.",
+  "disposition": "Preserve this attempt as unqualified East-direction evidence. Do not relabel it as East-qualified or another view; do not generate an alternate view or retry under this order. Wait for the explicit model-only East profile guide before any new art authorization.",
+  "scope_closed": [
+    "No additional turnarounds authorized by this receipt.",
+    "South remains accepted only as a static identity candidate; eight-direction lock is still closed.",
+    "No animation or runtime work approved."
+  ]
+}

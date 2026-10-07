@@ -1,0 +1,90 @@
+{
+  "asset": "villager East neutral full-body turnaround reference",
+  "status": "HOLD_FOR_PARENT_VISUAL_REVIEW_PIVOT",
+  "source_format": "PNG",
+  "source_canvas": [
+    1254,
+    1254
+  ],
+  "source_mode": "RGBA",
+  "decoded_mode": "RGBA",
+  "alpha_threshold_bounds": {
+    "0": {
+      "bbox_exclusive": [
+        39,
+        19,
+        1222,
+        1214
+      ],
+      "size": [
+        1183,
+        1195
+      ]
+    },
+    "16": {
+      "bbox_exclusive": [
+        457,
+        41,
+        860,
+        1205
+      ],
+      "size": [
+        403,
+        1164
+      ]
+    },
+    "128": {
+      "bbox_exclusive": [
+        458,
+        42,
+        859,
+        1204
+      ],
+      "size": [
+        401,
+        1162
+      ]
+    },
+    "250": {
+      "bbox_exclusive": [
+        459,
+        43,
+        858,
+        1203
+      ],
+      "size": [
+        399,
+        1160
+      ]
+    }
+  },
+  "raw_sha256": "5b647c86c8957e94ce32a0733cc248d07f48dcdf19af3e4d6b161f17bb55a5d7",
+  "decoded_rgba_sha256": "37d64a38eb36eb625869ca47b22a8c94139510912e00fb1fc4979e840e6366ab",
+  "prompt_path": "prompt.txt",
+  "prompt_sha256": "796da5357bf1962566d164a91ab757a60857342ae9d15822e530d1fbf2509f44",
+  "input_locks_before_call_sha256": "ea9647481daacd741704f26c1df85c3d3c02a6ee129a563c5dc2c977bc0e08db",
+  "input_locks_after_result_sha256": "1c17a575f5369d545dfafd42e4d5539c321066c93360032fbcf2919745aac16e",
+  "direction_requested": "EAST, screen-right, engine D07/worldNE",
+  "canvas_fit": "Native full canvas uniformly previewed at38/1254; no crop or bbox fit.",
+  "intended_ground_pivot": [
+    654,
+    1140
+  ],
+  "measured_actual_ground_contact": {
+    "threshold": 16,
+    "last_row": 1204,
+    "last_row_spans": [
+      [
+        548,
+        571
+      ]
+    ]
+  },
+  "pivot_offset_from_intended_px": [
+    null,
+    64
+  ],
+  "pivot_offset_logical_px": 1.939,
+  "inspection": "Whole illustrated neutral East-facing villager, recognizable face/hat/tunic/asymmetric sash/trousers/wraps/sandals. Parent must review orientation, exact identity and equipment continuity, northwest light/camera, transparency fringe and ground alignment.",
+  "motion_or_runtime_approved": false
+}

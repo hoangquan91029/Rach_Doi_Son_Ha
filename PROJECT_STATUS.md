@@ -47,3 +47,5 @@ Browser QA: `GAME_URL=https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net QA_BR
 Deployment: `deploy/README.md`; network lifecycle: `docs/NETWORK_RECEIPT.md`; Firefox diagnosis: `docs/FIREFOX_WEBSOCKET_DIAGNOSIS.md`; input custody: `docs/leadership-source-hashes.json`.
 
 South restart timing checkpoint: variable-duration sampling and validated declarative event markers pass61tests,14candidate custody packages and localChromium/Firefox plus publicHTTPS boot/match smoke. Latest bundle is`index-CgNaCiaX.js` (132.01kB,gzip44.65kB). This adds no accepted motion. Server-side action/impact alignment and visual event dispatch remain open; see`docs/SPRITE_TIMING.md`.
+
+South static identity reference returned and was inspected at native1254 and fixed38pxwholecanvas. Accepted only for static turnaround authoring; eight-view lock is incomplete and actual walking-frame count remains zero. Atlas authoring tools pass six separate NON_ART technical tests and refuse missing identity/key-review gates.

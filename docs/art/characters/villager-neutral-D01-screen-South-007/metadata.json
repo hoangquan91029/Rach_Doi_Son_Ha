@@ -1,0 +1,100 @@
+{
+  "asset": "villager South neutral full-body identity reference",
+  "status": "HOLD_FOR_PARENT_REVIEW_PIVOT_OFFSET",
+  "source_format": "PNG",
+  "source_canvas": [
+    1254,
+    1254
+  ],
+  "source_mode": "RGBA",
+  "decoded_mode": "RGBA",
+  "alpha_threshold_bounds": {
+    "0": {
+      "bbox_exclusive": [
+        69,
+        21,
+        1218,
+        1198
+      ],
+      "size": [
+        1149,
+        1177
+      ]
+    },
+    "16": {
+      "bbox_exclusive": [
+        398,
+        51,
+        859,
+        1181
+      ],
+      "size": [
+        461,
+        1130
+      ]
+    },
+    "128": {
+      "bbox_exclusive": [
+        399,
+        52,
+        858,
+        1181
+      ],
+      "size": [
+        459,
+        1129
+      ]
+    },
+    "250": {
+      "bbox_exclusive": [
+        400,
+        53,
+        856,
+        1180
+      ],
+      "size": [
+        456,
+        1127
+      ]
+    }
+  },
+  "raw_sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+  "decoded_rgba_sha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6",
+  "prompt_path": "prompt.txt",
+  "prompt_sha256": "1ab585d43ffa8f5e3bce3f46d618dc6707330b479b951aae9f992ed6c32964a2",
+  "input_locks_sha256": "40b0931c154de537acff907d36f6653e2d73b6d09c50106829a2ec64b96708ed",
+  "direction_requested": "SOUTH, screen-down/front-facing; anatomical LEFT on viewer RIGHT",
+  "inspection": "Whole-body front-facing villager present with recognizable face, n\u00f3n l\u00e1, tunic, asymmetric sash, trousers, wraps, sandals; neutral static stance. Must be reviewed against canonical master for exact identity, palette/light/camera and true transparent background.",
+  "canvas_fit": "Preview uses entire native canvas uniformly at38/1254; no bbox fit or crop.",
+  "intended_ground_pivot": [
+    654,
+    1140
+  ],
+  "observed_ground_contact": "Measure from original pixels before approval; intended pivot is not assumed.",
+  "measured_actual_ground_contact": {
+    "left_sandal_sole_contact_center_approx": [
+      490,
+      1177
+    ],
+    "right_sandal_sole_contact_center_approx": [
+      794,
+      1180
+    ],
+    "combined_between_feet_pivot_approx": [
+      650,
+      1179
+    ],
+    "uncertainty_px": [
+      12,
+      3
+    ],
+    "measurement_basis": "Threshold alpha>16 scan: left sandal last opaque-contact row ~1177 and right sandal row ~1180; pivot estimated between the two grounded soles. Not a bbox-centered pivot."
+  },
+  "pivot_offset_from_intended_px": [
+    -4,
+    39
+  ],
+  "pivot_offset_logical_px": 1.182,
+  "review_note": "Candidate is full-body, transparent 1254 square and appears South/front-facing, but actual ground line is about39 source px below requested pivot y1140. Do not translate or bbox-fit it. Parent must inspect full-resolution art, transparency/fringe, identity, South facing, L/R orientation, camera/light and decide whether acceptable or whether a corrected work order is needed.",
+  "input_locks_before_call_sha256": "40b0931c154de537acff907d36f6653e2d73b6d09c50106829a2ec64b96708ed"
+}

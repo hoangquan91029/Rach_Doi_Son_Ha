@@ -1,0 +1,34 @@
+{
+  "asset": "villager East neutral full-body identity turnaround reference",
+  "status": "READY_FOR_ONE_PARENT_AUTHORIZED_CALL",
+  "inputs": [
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+      "role": "primary identity/material/camera authority; D00 is not East or South"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/south-neutral-reference/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "role": "parent-accepted South appearance and scale/canvas consistency reference"
+    }
+  ],
+  "prompt_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/turnarounds/east-neutral-reference/prompt.txt",
+  "prompt_sha256": "796da5357bf1962566d164a91ab757a60857342ae9d15822e530d1fbf2509f44",
+  "canvas_requested": [
+    1254,
+    1254
+  ],
+  "intended_ground_pivot": [
+    654,
+    1140
+  ],
+  "direction": "EAST screen-right, engine D07/worldNE",
+  "call_cap": 1,
+  "calls_initiated": 1,
+  "retries": 0,
+  "transparent_background": true,
+  "no_animation": true,
+  "raw_returned": true,
+  "raw_sha256": "5b647c86c8957e94ce32a0733cc248d07f48dcdf19af3e4d6b161f17bb55a5d7"
+}

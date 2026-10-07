@@ -15,3 +15,5 @@ Public playtest: https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/
 Candidate preview: same URL with `?art=pilot` (CANDIDATE).
 Service: `systemctl --user status rach-doi-son-ha.service`; `tailscale funnel status`.
 Source: `shared/sim.js`, `server/index.js`, `client/renderer.js`, `client/main.js`.
+
+Restart007: South neutral full-body reference is parent-inspected STATIC_IDENTITY_REFERENCE_CANDIDATE (SHA68a7fb9a…678db), stored in `docs/art/characters/villager-neutral-D01-screen-South-007/`. Groundpivot6541140sealed as authored between-feet anchor. The one East static edit returned and is HOLD_UNQUALIFIED_DIRECTION: head-right but chest/pelvis/near sandal remain three-quarter/front. Preserve`docs/art/characters/villager-EAST-held-007-01/`; code worker prepares a MODEL_ONLY whole-body East pose guide before another bounded edit; no animation calls open until eight static directions seal. Corrected atlas tools are preserved under`docs/art/motion/authoring-tools/villager-walk-SOUTH-007/`; six NON_ART custody/packing tests pass. Numeric fixture loops are not artwork or motion evidence.

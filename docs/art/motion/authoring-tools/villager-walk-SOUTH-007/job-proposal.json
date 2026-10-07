@@ -1,0 +1,140 @@
+{
+  "status": "PROPOSAL_ONLY_NOT_READY",
+  "direction": {
+    "name": "SOUTH",
+    "screen": "down",
+    "engine": "D01",
+    "world": "SE"
+  },
+  "canvas": [
+    1254,
+    1254
+  ],
+  "worldScale": 0.030303030303030304,
+  "groundPivot": [
+    654,
+    1140
+  ],
+  "pivotStatus": "PROPOSED_TO_BE_CONFIRMED_ON_REAL_SOUTH_REFERENCE_ONCE",
+  "sourceMethod": "CONTROLLED_FINISHED_ILLUSTRATED_FRAMES",
+  "southReference": {
+    "path": null,
+    "sha256": null,
+    "viewReviewReceipt": null
+  },
+  "keyPoseReview": {
+    "reviewer": null,
+    "receiptPath": null,
+    "receiptSha256": null,
+    "supportGatePass": false,
+    "frameHashes": {}
+  },
+  "qaStrideWorldTiles": null,
+  "frames": [
+    {
+      "index": 0,
+      "path": "sources/F00.png",
+      "originalSha256": null,
+      "custodyReceipt": null,
+      "support": "LEFT",
+      "swing": "RIGHT",
+      "durationMs": 80,
+      "method": "FINISHED_WHOLE_CHARACTER"
+    },
+    {
+      "index": 1,
+      "path": "sources/F01.png",
+      "originalSha256": null,
+      "custodyReceipt": null,
+      "support": "LEFT",
+      "swing": "RIGHT",
+      "durationMs": 70,
+      "method": "FINISHED_WHOLE_CHARACTER"
+    },
+    {
+      "index": 2,
+      "path": "sources/F02.png",
+      "originalSha256": null,
+      "custodyReceipt": null,
+      "support": "LEFT",
+      "swing": "RIGHT",
+      "durationMs": 80,
+      "method": "FINISHED_WHOLE_CHARACTER"
+    },
+    {
+      "index": 3,
+      "path": "sources/F03.png",
+      "originalSha256": null,
+      "custodyReceipt": null,
+      "support": "LEFT",
+      "swing": "RIGHT",
+      "durationMs": 70,
+      "method": "FINISHED_WHOLE_CHARACTER"
+    },
+    {
+      "index": 4,
+      "path": "sources/F04.png",
+      "originalSha256": null,
+      "custodyReceipt": null,
+      "support": "RIGHT",
+      "swing": "LEFT",
+      "durationMs": 80,
+      "method": "FINISHED_WHOLE_CHARACTER"
+    },
+    {
+      "index": 5,
+      "path": "sources/F05.png",
+      "originalSha256": null,
+      "custodyReceipt": null,
+      "support": "RIGHT",
+      "swing": "LEFT",
+      "durationMs": 70,
+      "method": "FINISHED_WHOLE_CHARACTER"
+    },
+    {
+      "index": 6,
+      "path": "sources/F06.png",
+      "originalSha256": null,
+      "custodyReceipt": null,
+      "support": "RIGHT",
+      "swing": "LEFT",
+      "durationMs": 80,
+      "method": "FINISHED_WHOLE_CHARACTER"
+    },
+    {
+      "index": 7,
+      "path": "sources/F07.png",
+      "originalSha256": null,
+      "custodyReceipt": null,
+      "support": "RIGHT",
+      "swing": "LEFT",
+      "durationMs": 70,
+      "method": "FINISHED_WHOLE_CHARACTER"
+    }
+  ],
+  "identityTurnaround": {
+    "canvas": [
+      1254,
+      1254
+    ],
+    "camera": {
+      "projection": "dimetric",
+      "ratio": [
+        2,
+        1
+      ],
+      "tile": [
+        54,
+        27
+      ],
+      "elevation": 26.565
+    },
+    "frames": {},
+    "review": {
+      "reviewer": null,
+      "receiptPath": null,
+      "receiptSha256": null,
+      "frameHashes": {}
+    }
+  }
+}

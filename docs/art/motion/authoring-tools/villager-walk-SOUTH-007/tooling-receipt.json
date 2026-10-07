@@ -1,0 +1,37 @@
+{
+  "status": "TOOLING_READY_IDENTITY_GATE_CLOSED",
+  "tests": {
+    "command": "python3 -m unittest discover -s tooling -p test_*.py",
+    "passed": 6,
+    "fixtures": "Generated numeric PNGs explicitly NON_ART; temporary directories deleted; no motion qualification"
+  },
+  "requirements": [
+    "Eight actual full-body static views + sealed hash-bound review BEFORE animation preflight",
+    "South reference must equal sealed S view; screenSOUTH=D01/worldSE",
+    "Proposed pivot6541140 must be sealed once on actual South reference",
+    "Grid stride validated before output writes",
+    "Existing nonempty compilation directory refused",
+    "Source bytes preserved; common full-canvas cells, SHA/RGBA custody and source/cell pivots",
+    "Visual-only UPPER_SNAKE_CASE events with offsetMs within frame duration"
+  ],
+  "actualAnimationFrames": 0,
+  "actualAtlasesCompiled": 0,
+  "imageCalls": 0,
+  "runtimeEdits": false,
+  "D00LeaseClosedNoMoreWrites": true,
+  "rootReportedSouthReference": {
+    "status": "STATIC_IDENTITY_REFERENCE_CANDIDATE",
+    "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+    "canvas": [
+      1254,
+      1254
+    ],
+    "sealedPivot": [
+      654,
+      1140
+    ],
+    "verification": "Reported by root; not read by this agent in final checks"
+  },
+  "eightDirectionLockComplete": false,
+  "animationAuthoringOpen": false
+}

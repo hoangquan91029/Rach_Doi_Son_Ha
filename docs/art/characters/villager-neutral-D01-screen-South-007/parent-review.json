@@ -1,0 +1,77 @@
+{
+  "status": "STATIC_IDENTITY_REFERENCE_CANDIDATE",
+  "reviewer": "parent",
+  "rawSha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+  "canonicalAppearanceSha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+  "viewsInspected": [
+    "native1254RGBA",
+    "fixedwholecanvas38px"
+  ],
+  "direction": {
+    "screen": "SOUTH",
+    "engine": "D01",
+    "world": "SE"
+  },
+  "fixedSourceCanvas": [
+    1254,
+    1254
+  ],
+  "sealedGroundPivot": {
+    "x": 654,
+    "y": 1140,
+    "space": "source",
+    "method": "authored ground-plane anchor between the neutral feet; no automatic bbox fitting"
+  },
+  "anatomicalLeft": "viewer-right",
+  "anatomicalRight": "viewer-left",
+  "finding": "Recognizable same face/goatee, woven hat, ivory wrap tunic, asymmetric dark sash, brown trousers, shin wraps and sandals. Front-facing view, stable full-body scale. Static reference sufficient for controlled turnaround authoring.",
+  "openLimits": [
+    "Source colored fringe remains a candidate warning",
+    "Eight-direction static identity lock incomplete",
+    "No actual animation or support-leg validation",
+    "No runtime integration or final visual approval"
+  ],
+  "authorizedNext": "one static screen-EAST identity edit, zero retries; no animation calls",
+  "files": [
+    {
+      "path": "raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "bytes": 896301
+    },
+    {
+      "path": "prompt.txt",
+      "sha256": "1ab585d43ffa8f5e3bce3f46d618dc6707330b479b951aae9f992ed6c32964a2",
+      "bytes": 1957
+    },
+    {
+      "path": "metadata.json",
+      "sha256": "e1d54dec38f8aef7e09863ec705bd8e78996ca7f9e0017bf0229b97a6b911891",
+      "bytes": 3036
+    },
+    {
+      "path": "input-locks.json",
+      "sha256": "054a527163178a8de1f2629d1198a5c510c4fb3b6945dcb6b16798048f48e230",
+      "bytes": 1033
+    },
+    {
+      "path": "call-record.json",
+      "sha256": "37dec5c5e66db9af89a27450b4cecea067188a34cf246e24d2a1c75c0d62bb76",
+      "bytes": 1874
+    },
+    {
+      "path": "status.json",
+      "sha256": "92f5dea87034510c4e9c6b16bce54f4881b4a3c2eaee2b1ac62dd402b9a87a88",
+      "bytes": 356
+    },
+    {
+      "path": "SHA256SUMS.txt",
+      "sha256": "e24a69cf5ac75cf8b360cb7ce647d884c89bfb180e2c73a60dc715ddbccbd08a",
+      "bytes": 1359
+    },
+    {
+      "path": "preview-fixed-38px-fullcanvas.png",
+      "sha256": "8839e2b8b9ab8bfbb3743f2724622a70a6859bd6f99dd0e63bc437b755cce26f",
+      "bytes": 2126
+    }
+  ]
+}

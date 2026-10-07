@@ -1,0 +1,30 @@
+{
+  "attempt_id": "south007-east-neutral-001",
+  "tool": "built-in ImageGen",
+  "tool_call_id": null,
+  "raw_output_path": "/home/kieu-hoang-quan/.codex/generated_images/01a116ce-195d-73d0-a579-e4e5e990575d/exec-ad772888-6318-4ee5-8d32-66776854cb5a.png",
+  "raw_path": "raw.png",
+  "raw_sha256": "5b647c86c8957e94ce32a0733cc248d07f48dcdf19af3e4d6b161f17bb55a5d7",
+  "decoded_rgba_sha256": "37d64a38eb36eb625869ca47b22a8c94139510912e00fb1fc4979e840e6366ab",
+  "prompt_path": "prompt.txt",
+  "prompt_sha256": "796da5357bf1962566d164a91ab757a60857342ae9d15822e530d1fbf2509f44",
+  "input_locks_before_call_sha256": "ea9647481daacd741704f26c1df85c3d3c02a6ee129a563c5dc2c977bc0e08db",
+  "input_locks_after_result_sha256": "1c17a575f5369d545dfafd42e4d5539c321066c93360032fbcf2919745aac16e",
+  "inputs": [
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+      "role": "primary identity/material/camera authority; D00 is not East or South"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/south-neutral-reference/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "role": "parent-accepted South appearance and scale/canvas consistency reference"
+    }
+  ],
+  "call_cap": 1,
+  "calls_initiated": 1,
+  "retries": 0,
+  "transparent_background_requested": true,
+  "disposition": "HOLD: one static East turnaround candidate; bottom opaque contact row does not match locked source pivot; no translation or bbox fit."
+}
