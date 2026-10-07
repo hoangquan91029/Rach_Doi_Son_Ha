@@ -1,0 +1,75 @@
+{
+  "asset": "villager Southwest neutral full-body identity turnaround guided-01",
+  "status": "PENDING_PARENT_VISUAL_REVIEW",
+  "calls_initiated": 1,
+  "call_cap": 1,
+  "retries": 0,
+  "generated_output_path": "/home/kieu-hoang-quan/.codex/generated_images/01a116ce-195d-73e0-a579-e4e5e990575d/exec-cc2f1db7-6af9-4ad2-a7d1-c65cfc60036f.png",
+  "raw_path": "raw.png",
+  "raw_sha256": "11239a5f9e8ee5796eae1968eb16aa2332004c0c65a5678c20db6e671fb61722",
+  "decoded_rgba_sha256": "559e7bdc3c4771f0bb2255d7be1f2252657d2ded4d81476a45ae50e5a4738590",
+  "source_format": "PNG",
+  "source_canvas": [
+    1254,
+    1254
+  ],
+  "source_mode": "RGBA",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "alpha_bounds_exclusive": {
+    "0": [
+      41,
+      32,
+      1234,
+      1230
+    ],
+    "1": [
+      426,
+      52,
+      859,
+      1208
+    ],
+    "16": [
+      428,
+      54,
+      858,
+      1206
+    ],
+    "128": [
+      429,
+      55,
+      857,
+      1205
+    ],
+    "250": [
+      434,
+      56,
+      855,
+      1204
+    ]
+  },
+  "prompt_sha256": "ac6ed71a02289e6f2df931d80b5ecf2e0fc5b176491b24e23ff09ad58fed5fb6",
+  "input_locks_sha256": "4d167470c562893db8edfff761f2425a7d309e1587a2a426e8aa16b44270723b",
+  "direction_intended": {
+    "screen": "down-left SW",
+    "engine": "D02",
+    "world": "S",
+    "view": "front three-quarter",
+    "anatomical_LEFT": "near/viewer-right",
+    "anatomical_RIGHT": "far/viewer-left"
+  },
+  "locked_ground_pivot": [
+    654,
+    1140
+  ],
+  "fixed_wholecanvas_scale": "38/1254",
+  "review_observations": {
+    "native": "Full-body illustrated front three-quarter facing down-left; face visible; viewer-right sash tail/knot corresponds to actor LEFT/near.",
+    "feet": "Both sandal axes appear down-left together; parent to verify at fixed 38px.",
+    "framing": "1254x1254 canvas, no post-generation crop/fit/transform.",
+    "preview": "Direct full-canvas 1254-to-38 downsample only."
+  },
+  "scope": "one static SW identity candidate only; no further views or animation calls authorized"
+}

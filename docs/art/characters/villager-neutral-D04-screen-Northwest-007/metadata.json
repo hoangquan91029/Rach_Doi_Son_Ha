@@ -1,0 +1,75 @@
+{
+  "asset": "villager Northwest neutral full-body identity turnaround guided-01",
+  "status": "PENDING_PARENT_VISUAL_REVIEW",
+  "calls_initiated": 1,
+  "call_cap": 1,
+  "retries": 0,
+  "generated_output_path": "/home/kieu-hoang-quan/.codex/generated_images/01a116ce-195d-73e0-a579-e4e5e990575d/exec-59ea6ca7-9e7f-4231-9036-9676c055f985.png",
+  "raw_path": "raw.png",
+  "raw_sha256": "5cfe0b9b31dbdd180debec5568f8cfc82d1050664bcb7696d59507039cbb5048",
+  "decoded_rgba_sha256": "09204479a5f8191d14918737fc8633b33493c078782fe8994310eb469ccad032",
+  "source_format": "PNG",
+  "source_canvas": [
+    1254,
+    1254
+  ],
+  "source_mode": "RGBA",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "alpha_bounds_exclusive": {
+    "0": [
+      17,
+      32,
+      1226,
+      1214
+    ],
+    "1": [
+      425,
+      42,
+      829,
+      1193
+    ],
+    "16": [
+      427,
+      45,
+      827,
+      1191
+    ],
+    "128": [
+      428,
+      45,
+      826,
+      1190
+    ],
+    "250": [
+      429,
+      47,
+      825,
+      1189
+    ]
+  },
+  "prompt_sha256": "2d256b6721561772164bd29605d03067caa3e830c64899dc6e21198cb5749fdd",
+  "input_locks_sha256": "e17bd30b78e2a12fb2f98d1c65347db29d02b5745aa1dc0cf2fdebabc042b40e",
+  "direction_intended": {
+    "screen": "up-left NW",
+    "engine": "D04",
+    "world": "W",
+    "view": "back three-quarter",
+    "anatomical_LEFT": "near/viewer-left",
+    "anatomical_RIGHT": "far/viewer-right"
+  },
+  "locked_ground_pivot": [
+    654,
+    1140
+  ],
+  "fixed_wholecanvas_scale": "38/1254",
+  "review_observations": {
+    "native": "Rear three-quarter view; hat rear, nape, and back of tunic prominent. Partial side profile visible, no full front face. Actor LEFT sash/knot/tail appears viewer-left.",
+    "feet": "Both sandals visible; inspect actual longitudinal foot heading NW at fixed 38px.",
+    "framing": "1254x1254 full canvas; no post-generation crop/fit/transform.",
+    "preview": "Direct whole-canvas 1254-to-38 downsample only."
+  },
+  "scope": "single static NW identity candidate only; no further calls or animation authorized"
+}

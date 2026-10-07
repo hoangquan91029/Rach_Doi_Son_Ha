@@ -1,0 +1,33 @@
+{
+  "status": "PARENT_ACCEPTED_STATIC_IDENTITY_REFERENCE_CANDIDATE",
+  "reviewer": "root parent visual review",
+  "asset": "Southeast neutral full-body identity reference candidate (alpha-removal derivation)",
+  "raw_path": "raw.png",
+  "raw_sha256": "2d32f65fe0f4c8037e19aeb5ace9b1b29e70ecf45a158d101770e86f9aa9092f",
+  "decoded_rgba_sha256": "97ca8c426f2f102ca86aeeed5ad381b8272459a4905694904d17c937f78f8078",
+  "canvas": [
+    1254,
+    1254
+  ],
+  "direction": {
+    "screen": "down-right ESE",
+    "engine": "D00",
+    "world": "E"
+  },
+  "locked_ground_pivot": [
+    654,
+    1140
+  ],
+  "parent_findings": [
+    "Parent inspected native raw and fixed 38px preview and accepts as static identity-reference candidate.",
+    "Real transparent RGBA; complete Southeast three-quarter facing down-right with both sandal axes ESE.",
+    "Correct costume asymmetry: actor LEFT/far sash on viewer-right. Identity, lighting, canvas, pivot and whole-canvas scale are consistent."
+  ],
+  "open_limits": [
+    "Some paint pixels changed during the authorized tool-based background removal; do not claim pixel-identical removal.",
+    "Static identity candidate only; not final art/runtime or animation approval."
+  ],
+  "producer_record_preserved": true,
+  "technical_derivation_source": "../southeast-neutral-reference-guided-01/raw.png",
+  "next_scope": "One static NE turnaround only, after use of the inspected corrected v2 geometry guide; no animation."
+}

@@ -1,0 +1,33 @@
+{
+  "status": "PARENT_ACCEPTED_STATIC_IDENTITY_REFERENCE_CANDIDATE",
+  "reviewer": "root parent visual review",
+  "asset": "Northeast neutral full-body identity reference candidate",
+  "raw_path": "raw.png",
+  "raw_sha256": "0b5c25d9676c87d3388bd25ac244ce301ec6d5b79a76993f9b6b68b88828a6f8",
+  "decoded_rgba_sha256": "d2e1cf059d63d7eff13e009a97eb1e8b679b7acef3356b4059d5d49bfc05521e",
+  "canvas": [
+    1254,
+    1254
+  ],
+  "direction": {
+    "screen": "up-right NE",
+    "engine": "D06",
+    "world": "N",
+    "view": "back three-quarter"
+  },
+  "locked_ground_pivot": [
+    654,
+    1140
+  ],
+  "parent_findings": [
+    "Parent inspected native and fixed 38px preview and accepts as a static identity-reference candidate.",
+    "Back three-quarter with right-side partial head and no full front face; pelvis reads back; both sandal axes point NE (+X,-Y).",
+    "Actor LEFT/far sash is correctly on viewer-left."
+  ],
+  "open_limits": [
+    "Source fringe remains a candidate warning.",
+    "Static identity candidate only; not final art/runtime approval."
+  ],
+  "producer_record_preserved": true,
+  "next_scope": "One static SW identity view only using inspected corrected v2 guide; no animation."
+}

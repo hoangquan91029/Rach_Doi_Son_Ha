@@ -1,6 +1,6 @@
 {
   "schema": "villager-static-identity-lock/v1",
-  "status": "INCOMPLETE",
+  "status": "SEALED_STATIC_IDENTITY_LOCK_FOR_SOUTH_AUTHORING_ONLY",
   "canonicalAppearanceSource": "docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
   "canonicalAppearanceSha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
   "canonicalAppearanceIsTurnaroundCoverage": false,
@@ -30,9 +30,9 @@
       "engineDirection": 6,
       "worldDirection": "N",
       "screenHeading": "ENE",
-      "status": "NOT_AUTHORED",
-      "source": null,
-      "sha256": null
+      "status": "STATIC_IDENTITY_REFERENCE_CANDIDATE",
+      "source": "docs/art/characters/villager-neutral-D06-screen-Northeast-007/raw.png",
+      "sha256": "0b5c25d9676c87d3388bd25ac244ce301ec6d5b79a76993f9b6b68b88828a6f8"
     },
     "E": {
       "engineDirection": 7,
@@ -46,9 +46,9 @@
       "engineDirection": 0,
       "worldDirection": "E",
       "screenHeading": "ESE",
-      "status": "BACKGROUND_REPAIR_IN_PROGRESS",
-      "source": null,
-      "sha256": null,
+      "status": "STATIC_IDENTITY_REFERENCE_CANDIDATE",
+      "source": "docs/art/characters/villager-neutral-D00-screen-Southeast-007/raw.png",
+      "sha256": "2d32f65fe0f4c8037e19aeb5ace9b1b29e70ecf45a158d101770e86f9aa9092f",
       "heldSource": "docs/art/characters/villager-Southeast-held-007-01/raw.png",
       "heldSourceSha256": "c2f31b29f5bf0f42cd1884849f39304f9cee0a2351fff7f340134127b8545f1c",
       "holdReason": "RGB baked checkerboard, not transparent. Pose/identity acceptable; sash onviewerRIGHT is correctactorLEFT. Rootv1guide wronglylabelled near/far; v2corrected."
@@ -65,9 +65,9 @@
       "engineDirection": 2,
       "worldDirection": "S",
       "screenHeading": "WSW",
-      "status": "NOT_AUTHORED",
-      "source": null,
-      "sha256": null
+      "status": "STATIC_IDENTITY_REFERENCE_CANDIDATE",
+      "source": "docs/art/characters/villager-neutral-D02-screen-Southwest-007/raw.png",
+      "sha256": "11239a5f9e8ee5796eae1968eb16aa2332004c0c65a5678c20db6e671fb61722"
     },
     "W": {
       "engineDirection": 3,
@@ -81,15 +81,19 @@
       "engineDirection": 4,
       "worldDirection": "W",
       "screenHeading": "WNW",
-      "status": "NOT_AUTHORED",
-      "source": null,
-      "sha256": null
+      "status": "STATIC_IDENTITY_REFERENCE_CANDIDATE",
+      "source": "docs/art/characters/villager-neutral-D04-screen-Northwest-007/raw.png",
+      "sha256": "5cfe0b9b31dbdd180debec5568f8cfc82d1050664bcb7696d59507039cbb5048"
     }
   },
-  "animationAuthoringOpen": false,
+  "animationAuthoringOpen": "SOUTH_WALK_FOUR_KEYS_ONLY",
   "walkFrameCount": 0,
   "independentMotionReview": "NOT_STARTED",
   "runtimeIntegrated": false,
   "finalVisualApproval": false,
-  "staticCandidateCount": 4
+  "staticCandidateCount": 8,
+  "review": {
+    "path": "docs/art/VILLAGER_IDENTITY_REVIEW_007.json",
+    "sha256": "7b493e42607bd03dbe29bf9ae7a3e6bae0f6443fdb152be297f1d92266920d1d"
+  }
 }

@@ -1,0 +1,56 @@
+{
+  "status": "PREPARED_FOR_ONE_AUTHORIZED_CALL",
+  "call_cap": 1,
+  "calls_initiated": 0,
+  "retries": 0,
+  "canvas": [
+    1254,
+    1254
+  ],
+  "locked_ground_pivot": [
+    654,
+    1140
+  ],
+  "fixed_scale": "38/1254 whole canvas",
+  "direction_intended": {
+    "screen": "down-left SW",
+    "engine": "D02",
+    "world": "S",
+    "view": "front three-quarter",
+    "anatomical_LEFT": "near/viewer-right",
+    "anatomical_RIGHT": "far/viewer-left"
+  },
+  "attachments": [
+    {
+      "role": "D00_master",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+      "use": "canonical identity appearance"
+    },
+    {
+      "role": "South_front_accepted",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "use": "front appearance and costume continuity"
+    },
+    {
+      "role": "West_profile_accepted",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D03-screen-West-guided-007/raw.png",
+      "sha256": "630f000746e140e501a55847a6a9d7736fd025736684969ca8bdd9e778b22ccf",
+      "use": "profile appearance and costume continuity"
+    },
+    {
+      "role": "MODEL_ONLY_SW_v2",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-guides/static-southwest-v2/guide.png",
+      "sha256": "c380b26878085470ef85057ad27ac962eb53488e45009674ee830ba7b528a916",
+      "use": "geometry only: SW front three-quarter orientation and sandal axes"
+    }
+  ],
+  "guide_qa_inspected_not_attached": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-guides/static-southwest-v2/guide-qa.png",
+    "sha256": "2e4243093a77f8f33fa8ad052e8dd90a8e7f9d543a92afd31f76b0f865f61403"
+  },
+  "prompt_sha256": "ac6ed71a02289e6f2df931d80b5ecf2e0fc5b176491b24e23ff09ad58fed5fb6",
+  "transparent_background_requested": true,
+  "scope": "one static SW identity reference only; no additional turnaround or animation call"
+}

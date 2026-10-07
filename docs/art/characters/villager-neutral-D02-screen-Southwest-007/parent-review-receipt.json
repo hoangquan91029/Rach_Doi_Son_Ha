@@ -1,0 +1,33 @@
+{
+  "status": "PARENT_ACCEPTED_STATIC_IDENTITY_REFERENCE_CANDIDATE",
+  "reviewer": "root parent visual review",
+  "asset": "Southwest neutral full-body identity reference candidate",
+  "raw_path": "raw.png",
+  "raw_sha256": "11239a5f9e8ee5796eae1968eb16aa2332004c0c65a5678c20db6e671fb61722",
+  "decoded_rgba_sha256": "559e7bdc3c4771f0bb2255d7be1f2252657d2ded4d81476a45ae50e5a4738590",
+  "canvas": [
+    1254,
+    1254
+  ],
+  "direction": {
+    "screen": "down-left SW",
+    "engine": "D02",
+    "world": "S",
+    "view": "front three-quarter"
+  },
+  "locked_ground_pivot": [
+    654,
+    1140
+  ],
+  "parent_findings": [
+    "Parent inspected native and fixed 38px preview and accepts as a static identity-reference candidate.",
+    "Head, chest, pelvis and both sole longitudinal axes read as a whole-body down-left heading; natural toe-out remains readable.",
+    "Actor LEFT/near sash on viewer-right is correct and not mirrored; identity, outfit, light, scale, pivot and true RGBA retained."
+  ],
+  "open_limits": [
+    "Source fringe remains a candidate warning.",
+    "Static identity candidate only; not final art/runtime or animation approval."
+  ],
+  "producer_record_preserved": true,
+  "next_scope": "One static NW identity view only using inspected v2 guide; no animation."
+}

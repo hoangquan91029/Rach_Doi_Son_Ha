@@ -1,0 +1,75 @@
+{
+  "asset": "villager Northeast neutral full-body identity turnaround guided-01",
+  "status": "PENDING_PARENT_VISUAL_REVIEW",
+  "calls_initiated": 1,
+  "call_cap": 1,
+  "retries": 0,
+  "generated_output_path": "/home/kieu-hoang-quan/.codex/generated_images/01a116ce-195d-73e0-a579-e4e5e990575d/exec-6f5293f4-44df-410f-9cf5-1b0e37594395.png",
+  "raw_path": "raw.png",
+  "raw_sha256": "0b5c25d9676c87d3388bd25ac244ce301ec6d5b79a76993f9b6b68b88828a6f8",
+  "decoded_rgba_sha256": "d2e1cf059d63d7eff13e009a97eb1e8b679b7acef3356b4059d5d49bfc05521e",
+  "source_format": "PNG",
+  "source_canvas": [
+    1254,
+    1254
+  ],
+  "source_mode": "RGBA",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "alpha_bounds_exclusive": {
+    "0": [
+      39,
+      13,
+      1240,
+      1214
+    ],
+    "1": [
+      455,
+      44,
+      865,
+      1196
+    ],
+    "16": [
+      458,
+      46,
+      863,
+      1194
+    ],
+    "128": [
+      459,
+      47,
+      862,
+      1193
+    ],
+    "250": [
+      460,
+      48,
+      861,
+      1192
+    ]
+  },
+  "prompt_sha256": "59fb188f35285a6523f19e260a3ea6dcc99a3044937ceb5df7f8f8441692072b",
+  "input_locks_sha256": "822739162dcfbfe3f64be88035f4a49f2078741e9e1381b03b7d58c961b687e5",
+  "direction_intended": {
+    "screen": "up-right NE",
+    "engine": "D06",
+    "world": "N",
+    "view": "back three-quarter",
+    "anatomical_RIGHT": "near/viewer-right",
+    "anatomical_LEFT": "far/viewer-left"
+  },
+  "locked_ground_pivot": [
+    654,
+    1140
+  ],
+  "fixed_wholecanvas_scale": "38/1254",
+  "review_observations": {
+    "native": "Back three-quarter whole-body illustration. Rear hat, hair/nape and tunic back are prominent; dark sash tail/knot appears viewer-left. Face profile partly visible on viewer-right. Inspect whether this amount of profile is acceptable.",
+    "feet": "Both sandals are visible. Parent should inspect actual NE toe axes at native and fixed 38px.",
+    "framing": "Full-canvas 1254 square; no crop/fit or postgeneration edits.",
+    "preview": "Direct whole-canvas reduction from 1254 to 38 px only."
+  },
+  "scope": "single static NE identity candidate only; no more view or animation calls authorized"
+}
