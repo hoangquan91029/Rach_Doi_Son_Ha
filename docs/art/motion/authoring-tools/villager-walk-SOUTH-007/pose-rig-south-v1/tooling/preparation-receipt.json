@@ -1,0 +1,29 @@
+{
+  "status": "PREPARATION_ONLY_RASTER_BAKER_UNIMPLEMENTED",
+  "candidate": false,
+  "imageCalls": 0,
+  "renderedIllustratedFrames": 0,
+  "tests": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest -v test_preflight.py",
+    "passed": 7
+  },
+  "completed": [
+    "strict missing-input/no-overwrite gate",
+    "byte+RGBA/sidecar custody validation interface",
+    "v2 contract/identity/geometry byte binding",
+    "fixed 3D bone and world sole invariance verification",
+    "separate camera bone-plane and independent foot targets"
+  ],
+  "remaining": [
+    "actual sealed originals and natural sidecars",
+    "one-time calibrated anatomical attachments",
+    "validated mesh/shared seam continuity",
+    "articulated shin/rigidfoot renderer",
+    "four whole PNG custody and finished-illustration review"
+  ],
+  "files": {
+    "README.md": "24a62bc8abe37854f897a4980dd106e4d15ce4b01486c4b7652fd9aac9766474",
+    "rig_preflight.py": "b0c2bb4c040dd3fda22aa11afa6b3381ad13fa4a5ba79b0207e25bf9e8626cb8",
+    "test_preflight.py": "be7c17caa507dcdf03267a59839d7c858ecfd31949b7ddbe90048e29cb65903e"
+  }
+}

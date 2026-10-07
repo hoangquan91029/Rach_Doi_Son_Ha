@@ -1,0 +1,13 @@
+# Persistent rig preparation checkpoint
+
+Implemented: a read-only custody/preflight interface and persistent four-key numerical camera-plane planner. **Raster baker not implemented.** This checkpoint deliberately refuses all baking, writes no PNGs, and makes no finished-art or motion claim. No component originals or calibrated sidecars exist here. Nine textures remain proposed; no image call is authorized.
+
+Run `python3 -m unittest -v test_preflight.py` from this directory. Tests use temporary NON_ART records and the sealed authored geometry, not illustrated pixel fixtures. The CLI `python3 rig_preflight.py manifest.json nonexistent-output-directory` returns JSON refusal and exit 2. Existing output is always refused.
+
+Input manifest interface: `parts` maps the nine v2 IDs to `sidecarPath` and `sidecarSha256`; `layerOrderByKey` explicitly lists all nine IDs once for each F0/F2/F4/F6. No fixed LEFT-near/RIGHT-far rule is encoded. Parent must review actual per-pose overlap/depth order.
+
+Each sidecar needs status SEALED_ORIGINAL_CALIBRATION, raw `{path,sha256,rgbaSha256}` (1254 RGBA), one `uniformRawToRest` `{scale,rotationRad,translation:[x,y]}`, and inspected `landmarks` with `{xy,method,uncertaintyPx}`. Method distinguishes observed_original from authored_hidden_hypothesis. No landmark coordinates are supplied by this preparation tool. Lower-sandal records additionally require knee/ankle/heel/toe/solePlane and mesh shinPolygon/footPolygon/sharedAnkleSeam. This early structural gate does not prove correct anatomical measurement, calibrated attachment, polygon continuity, or pose contact in actual art.
+
+The numeric planner verifies constant 260/240 leg and 200/180 arm lengths, 160 sole length, fixed root6541140, byte-bound geometry, and support-world heel/toe invariance across F0→F2/F4→F6. It constructs camera projection matrices separately from immutable source calibration. Feet have independent ankle/heel/toe targets; they are never obtained by rigidly rotating the whole shin/sandal texture. Projected affine foreshortening is geometry, not raw-to-rest anisotropic calibration or per-frame bbox fitting.
+
+Remaining gate/work: validate natural attachment calibration and semantic polygons/seam correspondence; implement continuous shared ankle seam with independent rigid foot-plane articulation (or request separate foot textures if impossible); perform complete preflight before any output; then implement four whole-transparent-canvas PNG renders and source/output byte+RGBA custody. Output status must be SOURCE_BAKED_RIG_REQUIRES_FINISHED_ILLUSTRATION_REVIEW with candidate false. No atlas/eight frames before four finished-key review. No runtime, actual canonical/held sprite pixel alteration, art calls, or approval is included.

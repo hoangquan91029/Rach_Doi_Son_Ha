@@ -1,0 +1,182 @@
+{
+  "schema": "south-illustrated-bitmap-rig-part-contract/v2",
+  "status": "PREPARATION_ONLY_PARENT_REVIEW_REQUIRED_V2",
+  "scope": "Internal authoring rig for baking finished whole-character illustrated South walk cels. This contract does not authorize image calls, runtime puppet output, animation keys, in-betweens, or integration.",
+  "art_calls": {
+    "authorized_now": 0,
+    "proposed_future_original_component_calls": 9,
+    "future_calls_authorized": false,
+    "retry_cap": 0,
+    "opening_condition": "Parent reviews this contract and issues a separate finite work order. Generate one original component per authorized call; stop on missing or materially wrong anatomy."
+  },
+  "identity_lock": {
+    "lock_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/identity-lock.json",
+    "lock_sha256": "35fbcf7c558cd32450ddfb6cae76b94bb42994bda36e88c5a3a4df18e239eec3",
+    "lock_status": "PASS_STATIC_IDENTITY_LOCK_FOR_SOUTH_AUTHORING_ONLY",
+    "primary_south_reference": {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/south-neutral-reference/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "rgba_sha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6",
+      "role": "Sealed South canonical full-body appearance and neutral rest-shape authority. It is still a static identity candidate, not final art approval."
+    },
+    "camera": {
+      "canvas_px": [
+        1254,
+        1254
+      ],
+      "projection": "dimetric",
+      "tile_ratio": [
+        2,
+        1
+      ],
+      "tile_px": [
+        54,
+        27
+      ],
+      "elevation_degrees": 26.565,
+      "source_pivot_px": [
+        654,
+        1140
+      ],
+      "whole_canvas_logical_size_px": 38,
+      "source_fringe_warning": "The sealed identity review retains a thin colored edge-fringe candidate warning; do not clean, crop, or normalize it as part authoring."
+    },
+    "side_ownership": {
+      "actor_left": "Anatomical LEFT appears on viewer-right in the front-facing South reference. The asymmetric sash/knot remains on actor LEFT and viewer-right. Screen side does not establish depth.",
+      "actor_right": "Anatomical RIGHT appears on viewer-left in the front-facing South reference. Screen side does not establish depth.",
+      "depth_semantics": "LEFT/RIGHT name anatomical ownership only. Neither limb is permanently near or far. Neutral feet are modeled at the same depth; limb depth and occlusion order are resolved for each pose from model-space depth and actual overlap.",
+      "mirroring": "Forbidden. Preserve the locked face, costume asymmetry, palette, lighting, and view."
+    }
+  },
+  "component_policy": {
+    "target_count": 9,
+    "final_visual_method": "Each authored pose is rendered and baked as a complete illustrated full-character PNG cel. Runtime consumes finished frames, never independently rotating component sprites.",
+    "texture_handling": "Retain each original RGBA component immutably with byte and decoded-RGBA hashes. No crop, alpha cleanup, tracing, repaint, anisotropic source-image calibration, or per-frame bounding-box rescaling.",
+    "rest_pose": "Use the sealed South neutral reference. Limbs are authored naturally unbent; do not pre-bend elbows or knees.",
+    "calibration": "For each original component, record one immutable measured uniform raw-to-rest scale/rotation/translation. Never anisotropically calibrate source textures. Model fixed-camera 3D depth foreshortening separately; it must not become per-frame bbox fitting or variable bone/model-plane length. Exact component calibration is pending originals.",
+    "landmarks": "All natural landmarks remain PENDING actual original-part inspection. Record source-pixel coordinates, measurement method, and uncertainty only after each original exists. Hidden pivots must be marked as authored hypotheses, never measurements.",
+    "projection": "Keep the 2:1 dimetric camera fixed. Bone lengths remain constant in model space. Explicitly declared 3D camera-plane projection may foreshorten screen-space endpoint lengths by direction/depth; this is projection, not source-texture anisotropic calibration. No per-frame bounding-box rescaling."
+  },
+  "parts": [
+    {
+      "order": 1,
+      "id": "core_head_torso_pelvis",
+      "ownership": "Hat, head, neck, full central torso/tunic, sash and its asymmetric knot/tail, pelvis, and tunic hem in one rigid illustrated core.",
+      "rest_axis": "Neutral South; head over torso and pelvis. No independent head, sash, or torso articulation in this minimal topology.",
+      "joint_interfaces": [
+        "actor_left_shoulder_cap",
+        "actor_right_shoulder_cap",
+        "actor_left_hip_under_hem",
+        "actor_right_hip_under_hem"
+      ],
+      "overlap_and_depth": "Paint sufficient hidden sleeve and thigh overlap beneath the core at all four attachment regions. Core masks close proximal seams. Preserve sash and hem silhouette; no holes at shoulders or hips.",
+      "landmarks": "Shoulder-cap and hip-under-hem locations are pending direct inspection of the original component and sealed South source; no coordinates supplied."
+    },
+    {
+      "order": 2,
+      "id": "arm_right_upper",
+      "ownership": "Actor RIGHT upper arm and sleeve, shoulder cap through elbow overlap.",
+      "rest_axis": "Shoulder to elbow in the natural neutral South view; exact axis and endpoints pending original-part measurement.",
+      "overlap_and_depth": "Proximal cap extends beneath core mask; distal end overlaps actor RIGHT lower arm at elbow. Resolve whether the arm passes in front of or behind the core from model-space depth and actual overlap in each pose; do not fix its order by anatomical side.",
+      "landmarks": "Shoulder, elbow, and usable overlap bounds pending."
+    },
+    {
+      "order": 3,
+      "id": "arm_right_lower_hand",
+      "ownership": "Actor RIGHT forearm, cuff, wrist, and hand integrated into one illustrated component.",
+      "rest_axis": "Elbow to wrist/hand in neutral South view; exact axis and endpoints pending measurement.",
+      "overlap_and_depth": "Overlap the upper-arm art at elbow and preserve a wrist semantic joint for counter-swing without separating the hand texture. No disembodied hand gap.",
+      "landmarks": "Elbow, wrist, hand center, and grip/attachment point if visible are pending."
+    },
+    {
+      "order": 4,
+      "id": "arm_left_upper",
+      "ownership": "Actor LEFT upper arm and sleeve, shoulder cap through elbow overlap.",
+      "rest_axis": "Shoulder to elbow in the natural neutral South view; exact axis and endpoints pending original-part measurement.",
+      "overlap_and_depth": "Proximal cap extends beneath core mask; distal end overlaps actor LEFT lower arm at elbow. Resolve shoulder occlusion from model-space depth and actual overlap in each pose. Preserve the asymmetric sash knot/tail on actor LEFT; do not relocate it.",
+      "landmarks": "Shoulder, elbow, and usable overlap bounds pending."
+    },
+    {
+      "order": 5,
+      "id": "arm_left_lower_hand",
+      "ownership": "Actor LEFT forearm, cuff, wrist, and hand integrated into one illustrated component.",
+      "rest_axis": "Elbow to wrist/hand in neutral South view; exact axis and endpoints pending measurement.",
+      "overlap_and_depth": "Overlap the upper-arm art at elbow and preserve a wrist semantic joint for counter-swing with the hand attached. Protect actor-LEFT sash silhouette and avoid hand/body intersections in the baked pose.",
+      "landmarks": "Elbow, wrist, and hand center are pending."
+    },
+    {
+      "order": 6,
+      "id": "leg_right_upper",
+      "ownership": "Actor RIGHT upper leg and trouser thigh from hidden hip overlap to knee overlap.",
+      "rest_axis": "Hip to knee in neutral South view; exact axis/endpoints pending original-part measurement.",
+      "overlap_and_depth": "Top extends beneath the core hem mask. Distal end overlaps the corresponding lower leg at the knee. Resolve leg-crossing order from model-space depth and actual overlap for each pose.",
+      "landmarks": "Hidden hip is an authored hypothesis; visible thigh/knee bounds and uncertainty are pending."
+    },
+    {
+      "order": 7,
+      "id": "leg_right_lower_sandal",
+      "ownership": "Actor RIGHT lower leg, shin wraps, ankle, foot, and sandal integrated as one illustrated texture.",
+      "rest_axis": "Knee to ankle in neutral South view. Include a semantic ankle/foot-plane sub-joint or authored shin/foot mesh regions so the sandal sole can hold contact while the shin rotates; exact boundary is pending actual art inspection.",
+      "overlap_and_depth": "Overlap upper leg at knee. Preserve heel, toe, and sole contact plane as a single rigid foot region during stance. Use controlled local deformation only at the authored mesh boundary; reject any setup that bends the sandal/sole or stretches bone lengths to force contact.",
+      "landmarks": "Knee, ankle, heel, toe, sole plane, and mesh boundary all pending actual original inspection.",
+      "required_texture_regions": [
+        "Sealed shin polygon",
+        "Sealed foot/sandal plane polygon",
+        "Shared authored ankle boundary"
+      ],
+      "mesh_contract": "The original component author must provide separate shin and foot/sandal mesh polygons with a shared ankle seam, plus independently inspected natural ankle, heel, toe, and sole-plane landmarks. The foot plane may remain planted while the shin rotates. If polygons or landmarks are absent or ambiguous, this part remains unresolved and the baker must refuse it; do not infer coordinates or rotate the entire texture as one rigid segment."
+    },
+    {
+      "order": 8,
+      "id": "leg_left_upper",
+      "ownership": "Actor LEFT upper leg and trouser thigh from hidden hip overlap to knee overlap.",
+      "rest_axis": "Hip to knee in neutral South view; exact axis/endpoints pending original-part measurement.",
+      "overlap_and_depth": "Top extends beneath the core hem mask. Resolve thigh and knee overlap from model-space depth for each pose; order may change as the legs cross.",
+      "landmarks": "Hidden hip is an authored hypothesis; visible thigh/knee bounds and uncertainty are pending."
+    },
+    {
+      "order": 9,
+      "id": "leg_left_lower_sandal",
+      "ownership": "Actor LEFT lower leg, shin wraps, ankle, foot, and sandal integrated as one illustrated texture.",
+      "rest_axis": "Knee to ankle in neutral South view. Include a semantic ankle/foot-plane sub-joint or authored shin/foot mesh regions so the sandal sole can hold contact while the shin rotates; exact boundary is pending actual art inspection.",
+      "overlap_and_depth": "Overlap upper leg at knee. Preserve heel, toe, and sole contact plane as a single rigid foot region during stance. Permit actor LEFT to be the F0/F1/F2/F3 support track, then transfer support to actor RIGHT at F4; this contract does not authorize key creation.",
+      "landmarks": "Knee, ankle, heel, toe, sole plane, and mesh boundary all pending actual original inspection.",
+      "required_texture_regions": [
+        "Sealed shin polygon",
+        "Sealed foot/sandal plane polygon",
+        "Shared authored ankle boundary"
+      ],
+      "mesh_contract": "The original component author must provide separate shin and foot/sandal mesh polygons with a shared ankle seam, plus independently inspected natural ankle, heel, toe, and sole-plane landmarks. The foot plane may remain planted while the shin rotates. If polygons or landmarks are absent or ambiguous, this part remains unresolved and the baker must refuse it; do not infer coordinates or rotate the entire texture as one rigid segment."
+    }
+  ],
+  "pose_contract_reference": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/FRAME_ANIMATION_REQUIREMENTS_115_145.md",
+    "key_slots": [
+      "F0",
+      "F2",
+      "F4",
+      "F6"
+    ],
+    "cycle_slots": [
+      "F0",
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F7"
+    ],
+    "contact_ownership": {
+      "F0-F3": "actor LEFT support track",
+      "F4-F7": "actor RIGHT support track"
+    },
+    "current_state": "These are design constraints only. Existing F0 is a parent-selected candidate; F2 attempts are held. This preparation contract creates no selected rig pose, finished cel, or cycle approval."
+  },
+  "depth_and_occlusion": {
+    "rule": "Resolve depth ordering independently for every pose using authored/model-space depth and the actual projected overlap. Do not assign permanent near/far status from viewer-left/viewer-right screen position or anatomical LEFT/RIGHT.",
+    "neutral_rest": "The two feet are at the same model depth in the neutral rest pose unless direct measured source evidence and parent review establish otherwise.",
+    "joint_overlap": "Use hidden authored overlap at shoulders, hips, elbows, and knees. Core masks close proximal seams. Determine which limb is in front at each overlap from that pose’s model depth; leg crossing may change order during the stride.",
+    "validation": "The baker must reject missing or ambiguous depth/occlusion data rather than infer a permanent near/far assignment."
+  }
+}

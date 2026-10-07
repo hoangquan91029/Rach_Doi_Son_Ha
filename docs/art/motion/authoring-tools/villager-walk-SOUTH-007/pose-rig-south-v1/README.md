@@ -1,0 +1,15 @@
+# South illustrated bitmap rig contract (preparation only)
+
+This folder records a proposed minimal persistent component topology for authoring the South villager walk. Parent review is required before any component art is commissioned. **No image calls are authorized by this folder.**
+
+The proposed rig has nine original illustrated textures: one rigid identity core; two components for each arm, with each hand integrated into its lower arm; and two components for each leg, with each sandal integrated into its lower leg. Each lower-leg texture must provide separately sealed shin and foot/sandal mesh regions with a shared ankle seam and independently measured ankle, heel, toe, and sole-plane landmarks. This lets stance keep the heel and toe planted while the shin changes angle without adding separate foot textures. If polygons or natural landmarks are missing or ambiguous, the baker must refuse the part; do not infer coordinates, rotate the entire texture as one rigid segment, silently add parts, or stretch the art.
+
+South ownership follows the sealed front-facing reference: anatomical LEFT is near and on viewer-right; anatomical RIGHT is far and on viewer-left. The actor-LEFT sash knot/tail stays on viewer-right. Nothing may be mirrored. Parts overlap under the core at shoulders and hips, and at elbow/knee joints. The core closes hidden proximal seams. The composer must support near/far occlusion and per-pose limb ordering at crossings; it must not expose seams or create a paper-puppet appearance.
+
+Natural rest landmarks, overlap extents, mesh boundaries, and component calibrations are intentionally pending. They must be measured from the actual original components and recorded with raw-pixel coordinates, method, uncertainty, byte hash, and decoded RGBA hash. Hidden pivots must be named as hypotheses. This contract supplies no fabricated coordinates or transforms.
+
+Identity/canvas authority is the parent-sealed South identity lock in `identity/identity-lock.json`; primary South source SHA-256 is `68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db`. Its status is an identity candidate for South authoring, not final-art approval. Keep its 1254×1254 canvas, between-feet pivot (654,1140), dimetric 2:1 projection at 26.565°, and 38px whole-canvas gameplay scale. No crop, bounding-box fit, or per-frame baseline adjustment.
+
+The final game receives finished, complete illustrated PNG frames baked from the internal authoring rig. It never receives independently rotating component sprites or bones. The first reviewable motion work remains four complete illustrated key cels F0/F2/F4/F6, after parent authorization and actual-component calibration; only then can a full eight-frame loop be assessed. Existing F0 is a selected candidate and F2 attempts remain held, so there is no approved cycle.
+
+See `part-contract.json` for side ownership, component responsibilities, depth/overlap, rest-axis requirements, and the explicit zero-call authorization state.
