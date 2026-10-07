@@ -46,3 +46,9 @@ One controlled identity edit returned1254RGBA `../characters/villager-neutral-D0
 ## First East static attempt held
 
 East edit SHA256`5b647c86c8957e94ce32a0733cc248d07f48dcdf19af3e4d6b161f17bb55a5d7` preserves appearance but fails whole-body East heading: head turns right while chest/pelvis and near sandal remain three-quarter/front. It does not fill the E identity slot. Original, prompt, hashes and separate parent HOLD receipt are preserved at`../characters/villager-EAST-held-007-01/`. The lowest opaque toe row is not the ground pivot; no automatic translation/fitting follows from that measurement. Prepare a controlled profile pose guide before a bounded corrected edit.
+
+## Eight-view static lock — 8 October
+
+ActualN/NE/E/SE/S/SW/W/NW1254RGBA sources are parent-inspected and byte-bound in `../VILLAGER_IDENTITY_REVIEW_007.json`. Native and fixed38views plus combined627/38contact sheets preserve identity/asymmetricactorLEFTsash, wholebody direction and one scale/root. GuidedEastcorrected the heldinitialorientation. HeldSE had bakedRGBcheckerboard; one explicitlyallowed built-in alpha-only edit returned a transparentidentitycandidate, with minorpaintchanges truthfully recorded. Diagonalv1label ownership was wrong; originals/requestremainpreserved andv2corrects anatomicalLEFT=(forward.depth,-forward.x).
+
+Only Southkeys nowopen. `motion/authoring-tools/villager-walk-SOUTH-007/pose-guides/walk-south-keys-v2/` is MODEL_ONLY3DIK/mannequin geometry, notfinishedart. Skeletonweight shifts towardsupport; fixedroot/solecontacttracks andconstantbone dimensions remain. Nominal600ms versus reachable0.50791worldstride/base241.862ms is disclosed andunsealed until actualillustratedgrid/motion review. OneF0call is authorized in `F0-work-order.json`, no retries/automaticfanout. Actualwalkingframes0/qualifiedloops0 atthiscall boundary.
