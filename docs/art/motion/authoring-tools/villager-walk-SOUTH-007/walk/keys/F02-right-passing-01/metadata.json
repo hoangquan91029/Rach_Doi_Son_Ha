@@ -1,0 +1,83 @@
+{
+  "asset": "villager South walk key F02 RIGHT passing candidate",
+  "status": "PENDING_PARENT_VISUAL_REVIEW",
+  "calls_initiated": 1,
+  "authorized_call_count": 1,
+  "retries": 0,
+  "generated_output_path": "/home/kieu-hoang-quan/.codex/generated_images/01a116ce-195d-73e0-a579-e4e5e990575d/exec-ac8a047b-efef-4449-a73b-5e1e5c11bd59.png",
+  "raw_path": "raw.png",
+  "raw_sha256": "1c41fdda017b5f64dd7bb03deb5c0c72a24c0d18cacbbbf1f79b2e1c2a274366",
+  "decoded_rgba_sha256": "ecdc6271a6657aeb7dc8fbe1a4172a59092ca6e6ef8202389fc4c00c383cf8e3",
+  "source_format": "PNG",
+  "source_canvas": [
+    1254,
+    1254
+  ],
+  "source_mode": "RGBA",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "alpha_bounds_exclusive": {
+    "0": [
+      0,
+      23,
+      1238,
+      1230
+    ],
+    "1": [
+      399,
+      51,
+      859,
+      1210
+    ],
+    "16": [
+      400,
+      53,
+      857,
+      1208
+    ],
+    "128": [
+      400,
+      54,
+      857,
+      1207
+    ],
+    "250": [
+      401,
+      56,
+      856,
+      1206
+    ]
+  },
+  "work_order_sha256": "3bb33a70f94f200927359d80a3a72f4188f384966c120deffe3f86704de39677",
+  "identity_lock_sha256": "35fbcf7c558cd32450ddfb6cae76b94bb42994bda36e88c5a3a4df18e239eec3",
+  "identity_review_sha256": "7b493e42607bd03dbe29bf9ae7a3e6bae0f6443fdb152be297f1d92266920d1d",
+  "previous_F00_parent_review_sha256": "881a8bdb5aa709e1c89e62f69eeae61e6a52cdf1e0e8e1a045fb242843e07ba3",
+  "prompt_sha256": "776f65e0da8c81a28424b40d83732f131b42c64015de36d155afc355b2934dbc",
+  "input_locks_sha256": "341035ed52dbc2f8fb09f99f15c01f43e62a8c186938fb2113a14eaba254f35b",
+  "locked_ground_pivot": [
+    654,
+    1140
+  ],
+  "whole_canvas_logical_size": 38,
+  "phase": {
+    "frame": "F02",
+    "time_ms": 150,
+    "duration_ms": 80,
+    "primary_support": "LEFT/viewer RIGHT",
+    "left_foot": "grounded beneath body, heel/toe contact required",
+    "right_foot": "airborne passing under body, sole z80 source px, no contact",
+    "left_arm": "passing neutral",
+    "right_arm": "passing neutral",
+    "weight_shift_px_hypothesis": 55
+  },
+  "review_observations": {
+    "native": "Single complete South-facing character; posture advances from F00. Viewer-right/LEFT-side leg is low/forward as support candidate. Viewer-left/RIGHT-side leg is lifted and passing beneath body with apparent visible gap.",
+    "support": "Candidate geometry is visually distinct; parent must make binary determination that viewer-right sole is planted and viewer-left sole is truly airborne at 38px.",
+    "arms": "Arms nearer passing position; exact counter-swing readability remains for parent inspection.",
+    "identity": "Face, hat, tunic, asymmetric sash, trousers, wraps and sandals remain recognizable.",
+    "preview": "Direct full-canvas 1254-to-38 reduction only."
+  },
+  "scope": "Only F00 and this F02 candidate exist; no F4/F6/inbetweens authorized; no runtime, cycle, seam or final approval"
+}
