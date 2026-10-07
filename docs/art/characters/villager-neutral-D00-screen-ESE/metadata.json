@@ -1,0 +1,50 @@
+{
+  "status": "RAW_PILOT_CANDIDATE_PENDING_PARENT_REVIEW",
+  "neutral_direction_label": "D00 world-east / screen-ESE trial; not D01 screen-SE",
+  "built_in_imagegen": true,
+  "generated_output": "/home/kieu-hoang-quan/.codex/generated_images/01a1159e-8aea-7b82-8892-33fd9bbf13bd/exec-15afc2cb-bda6-4e00-8345-d7269daaae85.png",
+  "raw_source": "docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+  "raw_sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+  "raw_size": [
+    1254,
+    1254
+  ],
+  "raw_mode": "RGBA",
+  "raw_alpha_extrema": [
+    0,
+    255
+  ],
+  "raw_alpha_bbox_threshold_128": [
+    422,
+    53,
+    852,
+    1196
+  ],
+  "raw_transparent_pixels": 1222132,
+  "raw_partial_alpha_pixels": 349827,
+  "prompt": "docs/art/characters/villager-neutral-D00-screen-ESE/prompt.txt",
+  "prompt_sha256": "e805729be6a291341adf3e21a7493da2d462d336e7776ec60f478df95b917a4e",
+  "reference_inputs": [
+    {
+      "path": "public/assets/art-v1/units/infantry-neutral-se.png",
+      "role": "material rendering style only",
+      "sha256": "f93740e8f1b6b90ff754c7bc3f6e488f60eb3456850c95985425db57629a7e84"
+    },
+    {
+      "path": "public/assets/art-v1/residence/candidate-02.png",
+      "role": "palette and brushwork only",
+      "sha256": "f617c3540680cafff467358bab1adb01bf735417563f2cba86ab8af523b07dcc"
+    }
+  ],
+  "derivative": "public/assets/art-v1/characters/villager-neutral-D00-screen-ESE.png",
+  "derivative_sha256": "3a1515cb0065d91b8c12147a88f5c0b345b23a24076df84692b1c50e07edfbea",
+  "derivative_dimensions": [
+    1024,
+    1024
+  ],
+  "derivative_method": "Unmodified raw full canvas resized by Lanczos to 90 percent of a 1024px canvas, centered on transparent RGBA; no crop, alpha cleanup, or repaint.",
+  "preview_source": "docs/art/characters/villager-neutral-D00-screen-ESE/preview-source-128.png",
+  "preview_game_scale": "docs/art/characters/villager-neutral-D00-screen-ESE/preview-game-scale-36.png",
+  "game_preview_visible_height_px": 36,
+  "review_note": "Full figure, face, woven hat, both feet, and shadow visible. Raw edge margin is below 5 percent at the bottom; centered 90-percent canvas derivative gives padding. Historical fit, gameplay readability, and parent rating remain pending."
+}

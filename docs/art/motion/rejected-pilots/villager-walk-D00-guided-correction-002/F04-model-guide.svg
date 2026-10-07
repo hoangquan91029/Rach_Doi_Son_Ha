@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1254" height="1254" viewBox="0 0 1254 1254">
+<title>MODEL_ONLY F04 far-leg-leading pose geometry guide</title>
+<desc>Transparent geometry diagram only. Not painted art or motion evidence. Gray body and hat framing approximate measured F00 placement; orange FAR limbs lead lower-right and sweep backward; cyan NEAR limbs trail upper-left with near arm swinging forward.</desc>
+<defs><marker id="arrowFar" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#e47c36"/></marker><marker id="arrowNear" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#43b7c9"/></marker></defs>
+<!-- fixed hat, head, shoulder, pelvis alignment guides measured from F00 -->
+<path d="M624 67 L508 222 Q666 270 838 215 Z" fill="#b79b68" fill-opacity=".12" stroke="#e9dfcb" stroke-width="12"/>
+<path d="M508 222 Q666 270 838 215" fill="none" stroke="#e9dfcb" stroke-width="14"/>
+<ellipse cx="682" cy="204" rx="54" ry="72" fill="#e9dfcb" fill-opacity=".15" stroke="#e9dfcb" stroke-width="12"/>
+<path d="M672 278 L672 347 M535 356 L790 356 M580 730 Q643 700 700 735 M672 356 L650 581 L640 710" fill="none" stroke="#e9dfcb" stroke-opacity=".78" stroke-width="22" stroke-linecap="round"/>
+<path d="M535 356 Q505 462 538 570 L602 635 L700 646 L770 585 Q798 480 790 356" fill="#e9dfcb" fill-opacity=".08" stroke="#e9dfcb" stroke-opacity=".7" stroke-width="12"/>
+<!-- FAR limbs are behind: far leg leads; far arm sweeps back -->
+<path d="M580 730 L650 900 L755 1050 L820 1148 L866 1168" fill="none" stroke="#e47c36" stroke-width="38" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowFar)"/>
+<path d="M520 355 L450 410 L395 475" fill="none" stroke="#e47c36" stroke-width="32" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowFar)"/>
+<!-- NEAR limbs are overlaid: near leg trails upper-left; near arm swings forward -->
+<path d="M700 735 L560 865 L500 1015 L465 1090 L495 1100" fill="none" stroke="#43b7c9" stroke-width="46" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowNear)"/>
+<path d="M790 355 L830 420 L875 500" fill="none" stroke="#43b7c9" stroke-width="34" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowNear)"/>
+<!-- joint markers -->
+<g fill="#f4ead2" stroke="#263331" stroke-width="7"><circle cx="580" cy="730" r="24"/><circle cx="650" cy="900" r="25"/><circle cx="755" cy="1050" r="25"/><circle cx="700" cy="735" r="25"/><circle cx="560" cy="865" r="26"/><circle cx="500" cy="1015" r="25"/><circle cx="520" cy="355" r="20"/><circle cx="450" cy="410" r="20"/><circle cx="790" cy="355" r="20"/><circle cx="830" cy="420" r="20"/></g>
+<!-- fixed canvas root/pivot -->
+<path d="M620 1140 H680 M650 1110 V1170" stroke="#fff2c7" stroke-width="10"/>
+<circle cx="650" cy="1140" r="28" fill="none" stroke="#fff2c7" stroke-width="9"/>
+<g font-family="sans-serif" font-weight="bold" font-size="30" paint-order="stroke" stroke="#182321" stroke-width="8" fill="#fff2c7">
+<text x="850" y="1000" fill="#e47c36">FAR LEG LEADS</text><text x="285" y="930" fill="#43b7c9">NEAR LEG TRAILS</text><text x="835" y="470" fill="#43b7c9">NEAR ARM FORWARD</text><text x="292" y="370" fill="#e47c36">FAR ARM BACK</text><text x="690" y="1138">ROOT 650,1140</text>
+</g>
+</svg>

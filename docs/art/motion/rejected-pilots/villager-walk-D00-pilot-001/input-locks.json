@@ -1,0 +1,48 @@
+{
+  "status": "SETUP_LOCKED_TWO_IMAGEGEN_CALLS_AUTHORIZED",
+  "identity_master": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+    "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA"
+  },
+  "direction": "D00 world east / screen ESE",
+  "canvas": [
+    1254,
+    1254
+  ],
+  "proposed_fixed_review_root": [
+    650,
+    1140
+  ],
+  "timing_ms_per_frame": 100,
+  "cycle_frames": 8,
+  "authorized_new_whole_body_edit_calls": [
+    "F00",
+    "F04"
+  ],
+  "authorized_call_cap": 2,
+  "generated_frames": [
+    {
+      "frame": "F00",
+      "raw_sha256": "57fe10ac4a0708ff168ce6a0eb1f4b932a98673b4dd34a97aee264f38e55acb4",
+      "status": "RAW_GENERATED_SELECTED_AS_F04_CONTINUITY_PENDING_PARENT_REVIEW"
+    },
+    {
+      "frame": "F04",
+      "raw_sha256": "2434e2c50a10fba397bda24048065a36b10ee6a2c8fae61d25c6d7f18f12b7fe",
+      "status": "RAW_GENERATED_POSE_MISMATCH_STOPPED_AT_AUTHORIZED_CALL_CAP"
+    }
+  ],
+  "fixed_review_transform": {
+    "method": "scale entire 1254x1254 canvas to 38x38",
+    "scale": "38/1254",
+    "root_canvas": [
+      650,
+      1140
+    ]
+  }
+}

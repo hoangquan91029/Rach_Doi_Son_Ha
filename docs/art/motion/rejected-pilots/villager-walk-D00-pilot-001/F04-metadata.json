@@ -1,0 +1,40 @@
+{
+  "frame": "F04",
+  "phase": "opposite contact at 400 ms",
+  "status": "RAW_GENERATED_POSE_MISMATCH_STOPPED_AT_AUTHORIZED_CALL_CAP",
+  "generated_output": "/home/kieu-hoang-quan/.codex/generated_images/01a1159e-8aea-7b82-8892-33fd9bbf13bd/exec-0d39eae5-ca31-4a69-adc6-7e1e00fbc2cb.png",
+  "raw_file": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-pilot-001/F04-raw.png",
+  "raw_sha256": "2434e2c50a10fba397bda24048065a36b10ee6a2c8fae61d25c6d7f18f12b7fe",
+  "raw_dimensions": [
+    1254,
+    1254
+  ],
+  "raw_mode": "RGBA",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "alpha_bbox_threshold_128": [
+    367,
+    67,
+    927,
+    1181
+  ],
+  "prompt_file": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-pilot-001/F04-prompt.txt",
+  "prompt_sha256": "5e5812d215d615b4e44cef52cb6a673180046bdaefd523a79ef2c673e24cabde",
+  "input_images": [
+    {
+      "role": "identity master",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94"
+    },
+    {
+      "role": "F00 near-contact predecessor for continuity",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-pilot-001/F00-raw.png",
+      "sha256": "57fe10ac4a0708ff168ce6a0eb1f4b932a98673b4dd34a97aee264f38e55acb4"
+    }
+  ],
+  "review_preview": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-pilot-001/F00-F04-fixed-38px-review.jpg",
+  "preview_transform": "Same 38/1254 whole-canvas scale and root placement (canvas 650,1140 to panel 53,74) for Master, F00 and F04; no bbox fitting or frame-specific repositioning.",
+  "producer_observation": "F04 does not satisfy the intended opposite contact: the screen-right leg still appears forward and the screen-left leg trails, closely matching F00. Silhouette proportions/canvas differ somewhat, and the arms do not show a clear reversed counter-swing at game size. Identity and D00 view remain recognizable. This is retained as the exact raw result; no correction call is authorized and the two-call cap has been reached."
+}

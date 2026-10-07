@@ -1,0 +1,119 @@
+{
+  "status": "MODEL_GUIDE_PREPARED_AWAITING_PARENT_REVIEW_NO_IMAGEGEN_CALL",
+  "guide_type": "MODEL_ONLY_GEOMETRY_NOT_PAINTED_ART_NOT_MOTION_EVIDENCE",
+  "canvas": [
+    1254,
+    1254
+  ],
+  "direction": "D00 world east / screen ESE",
+  "identity_master": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+    "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94"
+  },
+  "continuity_reference": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-pilot-001/F00-raw.png",
+    "sha256": "57fe10ac4a0708ff168ce6a0eb1f4b932a98673b4dd34a97aee264f38e55acb4"
+  },
+  "excluded_rejected_reference": "Pilot-001 F04 raw is excluded from geometry construction and planned input list.",
+  "guide_svg": {
+    "path": "F04-model-guide.svg",
+    "sha256": "1e42558e63ac3461fadf6459ba908e6d9728ec1619a88a365ec52cc2463e8262"
+  },
+  "guide_png": {
+    "path": "F04-model-guide.png",
+    "sha256": "ea26e1a7b78ff7cb1e9fb2f7893888763a6aba8b5eeced758c49eb76e4dce475"
+  },
+  "guide_preview_38px": {
+    "path": "F04-guide-fixed-38px-preview.png",
+    "sha256": "0f434ed2ece43b73a3f5b99432053b064587c0cdb5312c2ffe478f4801bcc098",
+    "transform": "full canvas scaled at 38/1254; root (650,1140) placed at (48,68); no bbox fitting"
+  },
+  "planned_prompt": {
+    "path": "F04-correction-prompt.txt",
+    "sha256": "551891bd6870b737a4d252e3ebe3fc8e9dc950df8d54a9a1b626b7a63143087a"
+  },
+  "guide_geometry": {
+    "root": [
+      650,
+      1140
+    ],
+    "far_leading_leg": [
+      [
+        580,
+        730
+      ],
+      [
+        650,
+        900
+      ],
+      [
+        755,
+        1050
+      ],
+      [
+        820,
+        1148
+      ],
+      [
+        866,
+        1168
+      ]
+    ],
+    "near_trailing_leg": [
+      [
+        700,
+        735
+      ],
+      [
+        560,
+        865
+      ],
+      [
+        500,
+        1015
+      ],
+      [
+        465,
+        1090
+      ],
+      [
+        495,
+        1100
+      ]
+    ],
+    "far_arm_swing_back": [
+      [
+        520,
+        355
+      ],
+      [
+        450,
+        410
+      ],
+      [
+        395,
+        475
+      ]
+    ],
+    "near_arm_swing_forward": [
+      [
+        790,
+        355
+      ],
+      [
+        830,
+        420
+      ],
+      [
+        875,
+        500
+      ]
+    ],
+    "occlusion": "Far limbs drawn behind; near limbs drawn in front."
+  },
+  "call_status": {
+    "imagegen_calls_made": 0,
+    "planned_authorized_calls": 1,
+    "next_gate": "Parent must inspect and approve guide before the single F04 correction call."
+  }
+}

@@ -1,0 +1,797 @@
+{
+  "schemaVersion": 1,
+  "status": "CANDIDATE",
+  "camera": {
+    "projection": "dimetric",
+    "ratio": [
+      2,
+      1
+    ],
+    "tile": [
+      54,
+      27
+    ],
+    "elevation": 26.565
+  },
+  "notes": "Optional art=pilot development preview only. Only known static/idle D00 trial poses; no motion or eight-direction acceptance. Filename SE was art screen-heading description, explicitly trial-mapped D00 by parent based ESE projection. Pivots provisional until browser footprint QA.",
+  "assets": [
+    {
+      "id": "grass",
+      "family": "grass",
+      "kind": "terrain",
+      "source": {
+        "path": "terrain/grass-b.png",
+        "sha256": "73442cfce6444daedc03e13c250f7c0fe6d93fb6e28f8c956816dfb2ac976b19",
+        "rgbaSha256": "b03da1502b4512a726b4b2c6121c15946b34e31ac9bfaa6a885e81c4a1090dbe",
+        "width": 1254,
+        "height": 1254,
+        "bbox": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "alphaExtrema": [
+          255,
+          255
+        ]
+      },
+      "runtime": {
+        "path": "runtime/grass.webp",
+        "sha256": "8c7f2d6fd9da7ef7be4abad5f1b3e3d1b4968e9d30180c80bcde0dd97ae9bb5a",
+        "rgbaSha256": "b8c7a3128f57e484b202fed4deb99aa0ae0eff29c8bc8780ed5d8c38db3dbefb",
+        "width": 512,
+        "height": 512,
+        "bbox": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "derivation": {
+          "method": "resize",
+          "sourceSha256": "73442cfce6444daedc03e13c250f7c0fe6d93fb6e28f8c956816dfb2ac976b19",
+          "filter": "lanczos"
+        }
+      },
+      "cell": {
+        "width": 512,
+        "height": 512
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0,
+        "space": "source"
+      },
+      "render": {
+        "width": 256,
+        "height": 256
+      },
+      "state": "material",
+      "direction": null,
+      "loop": true,
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 512,
+          "height": 512,
+          "durationMs": 1000
+        }
+      ],
+      "alphaPolicy": "opaque",
+      "contactShadow": {
+        "mode": "none"
+      },
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "candidate": true,
+      "notes": "Second quieter grass candidate; grass-a retained as rejected noisy trial. Parent browser repeat review pending."
+    },
+    {
+      "id": "water",
+      "family": "water",
+      "kind": "terrain",
+      "source": {
+        "path": "terrain/water-b.png",
+        "sha256": "bd8df19179b803c6c5a292d275fc28b8cd1b35439de225b536968148524227d4",
+        "rgbaSha256": "926df89700e284b7661f58f60d2c5558382544bb343870dc91cd69d1d8edc5be",
+        "width": 1254,
+        "height": 1254,
+        "bbox": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "alphaExtrema": [
+          255,
+          255
+        ]
+      },
+      "runtime": {
+        "path": "runtime/water.webp",
+        "sha256": "3e790526414f3b6188f1438e8996da620bf940a42ae2ca257305430592cf204d",
+        "rgbaSha256": "2fa7a257fa5f6e7af920cfdac69d90bd9fc4a64c5c909fea9a360691d1774196",
+        "width": 512,
+        "height": 512,
+        "bbox": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "derivation": {
+          "method": "resize",
+          "sourceSha256": "bd8df19179b803c6c5a292d275fc28b8cd1b35439de225b536968148524227d4",
+          "filter": "lanczos"
+        }
+      },
+      "cell": {
+        "width": 512,
+        "height": 512
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0,
+        "space": "source"
+      },
+      "render": {
+        "width": 256,
+        "height": 256
+      },
+      "state": "material",
+      "direction": null,
+      "loop": true,
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 512,
+          "height": 512,
+          "durationMs": 1000
+        }
+      ],
+      "alphaPolicy": "opaque",
+      "contactShadow": {
+        "mode": "none"
+      },
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "candidate": true,
+      "notes": "Quieter broad painted-ripple trial. Prior bright water-a retained. No shoreline or finalwater approval."
+    },
+    {
+      "id": "forest",
+      "family": "forest",
+      "kind": "prop",
+      "source": {
+        "path": "terrain/tree-broadleaf-a.png",
+        "sha256": "7cb5f28c907e3a1b93cbc0c2cbdd773f5974a0d270bf79742379f7fcc0ecfac7",
+        "rgbaSha256": "b625eedc2e880eaaa62477c7ba7797b86110013b9f0695e6ea06418c701da73a",
+        "width": 1254,
+        "height": 1254,
+        "bbox": [
+          0,
+          21,
+          1240,
+          1254
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ]
+      },
+      "runtime": {
+        "path": "runtime/forest.webp",
+        "sha256": "fc53047062715920790b109d741844e79a52a3e67e2ad655c3c894001993dd63",
+        "rgbaSha256": "b625eedc2e880eaaa62477c7ba7797b86110013b9f0695e6ea06418c701da73a",
+        "width": 1254,
+        "height": 1254,
+        "bbox": [
+          0,
+          21,
+          1240,
+          1254
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "derivation": {
+          "method": "copy",
+          "sourceSha256": "7cb5f28c907e3a1b93cbc0c2cbdd773f5974a0d270bf79742379f7fcc0ecfac7",
+          "filter": "lanczos"
+        }
+      },
+      "cell": {
+        "width": 1254,
+        "height": 1254
+      },
+      "pivot": {
+        "x": 645,
+        "y": 1140,
+        "space": "source"
+      },
+      "render": {
+        "width": 75,
+        "height": 75
+      },
+      "state": "static",
+      "direction": null,
+      "loop": true,
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 1254,
+          "height": 1254,
+          "durationMs": 1000
+        }
+      ],
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "candidate": true
+    },
+    {
+      "id": "residence",
+      "family": "residence",
+      "kind": "building",
+      "source": {
+        "path": "../../../docs/art/residence/variant-02/raw.png",
+        "sha256": "f617c3540680cafff467358bab1adb01bf735417563f2cba86ab8af523b07dcc",
+        "rgbaSha256": "51fd1193e644b8c444fd9daa23a6febbc1b79a26c96a430273d7715645baaed2",
+        "width": 1254,
+        "height": 1254,
+        "bbox": [
+          17,
+          21,
+          1254,
+          1254
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ]
+      },
+      "runtime": {
+        "path": "runtime/residence.webp",
+        "sha256": "28921964375e24793ec6785be94dc3ba33a9e76649d342b0f50523cafc968db5",
+        "rgbaSha256": "51fd1193e644b8c444fd9daa23a6febbc1b79a26c96a430273d7715645baaed2",
+        "width": 1254,
+        "height": 1254,
+        "bbox": [
+          17,
+          21,
+          1254,
+          1254
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "derivation": {
+          "method": "copy",
+          "sourceSha256": "f617c3540680cafff467358bab1adb01bf735417563f2cba86ab8af523b07dcc",
+          "filter": "lanczos"
+        }
+      },
+      "cell": {
+        "width": 1254,
+        "height": 1254
+      },
+      "pivot": {
+        "x": 640,
+        "y": 970,
+        "space": "source"
+      },
+      "render": {
+        "width": 130,
+        "height": 130
+      },
+      "state": "idle",
+      "direction": null,
+      "loop": true,
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 1254,
+          "height": 1254,
+          "durationMs": 1000
+        }
+      ],
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "candidate": true
+    },
+    {
+      "id": "infantry-idle-D00",
+      "family": "infantry",
+      "kind": "unit",
+      "source": {
+        "path": "../../../docs/art/units/sources/infantry-neutral-se-refine-01-imagegen-raw.png",
+        "sha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+        "rgbaSha256": "0fdc9a92dab8aa2c420c764ff0808977daec9f4133eda860cdebc18e67463179",
+        "width": 1254,
+        "height": 1254,
+        "bbox": [
+          97,
+          48,
+          1208,
+          1222
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ]
+      },
+      "runtime": {
+        "path": "runtime/infantry-idle-D00.webp",
+        "sha256": "de7a865b865ee6ac8b9ff7ba3df07825c01106e1e7ac691cb0924a187f145c51",
+        "rgbaSha256": "2d82cb1b8dca4004fbf424c1ca0f079682ac7df3f6c78ae8bb30fecb38c86e94",
+        "width": 512,
+        "height": 512,
+        "bbox": [
+          40,
+          19,
+          409,
+          488
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "derivation": {
+          "method": "resize",
+          "sourceSha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+          "filter": "lanczos"
+        }
+      },
+      "cell": {
+        "width": 512,
+        "height": 512
+      },
+      "pivot": {
+        "x": 653,
+        "y": 1057,
+        "space": "source"
+      },
+      "render": {
+        "width": 42,
+        "height": 42
+      },
+      "state": "idle",
+      "direction": 0,
+      "loop": true,
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 512,
+          "height": 512,
+          "durationMs": 1000
+        }
+      ],
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "separate",
+        "assetId": "unit-contact-shadow"
+      },
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "candidate": true,
+      "notes": "Elevated-camera refinement neutral only. Fixed foot-midpoint anchor measured from this new basis; this basis would be held for any future frames. No motion, contact-shadow or final visual approval."
+    },
+    {
+      "id": "cavalry-idle-D00",
+      "family": "cavalry",
+      "kind": "unit",
+      "source": {
+        "path": "../../../docs/art/units/sources/cavalry-neutral-se-imagegen-raw.png",
+        "sha256": "552c4fcdf8ce6bdb802c6faae1bc139416393d53cb30caa95a1d22309b77b091",
+        "rgbaSha256": "3c4a110747c50488d420b70d45f564b93c740a31227a5c278b7af190fe0d3caf",
+        "width": 1254,
+        "height": 1254,
+        "bbox": [
+          33,
+          17,
+          1224,
+          1226
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ]
+      },
+      "runtime": {
+        "path": "runtime/cavalry-idle-D00.webp",
+        "sha256": "8571f53f2260947f758e796806a8552b96ba221b004b47d4fcdb2c4c2d549709",
+        "rgbaSha256": "285eb7fc4be508b48bde261013e9520aaaf39ce96726f2adc472f2e90ccda3e0",
+        "width": 512,
+        "height": 512,
+        "bbox": [
+          29,
+          7,
+          455,
+          500
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "derivation": {
+          "method": "resize",
+          "sourceSha256": "552c4fcdf8ce6bdb802c6faae1bc139416393d53cb30caa95a1d22309b77b091",
+          "filter": "lanczos"
+        }
+      },
+      "cell": {
+        "width": 512,
+        "height": 512
+      },
+      "pivot": {
+        "x": 655,
+        "y": 1110,
+        "space": "source"
+      },
+      "render": {
+        "width": 51,
+        "height": 51
+      },
+      "state": "idle",
+      "direction": 0,
+      "loop": true,
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 512,
+          "height": 512,
+          "durationMs": 1000
+        }
+      ],
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "candidate": true
+    },
+    {
+      "id": "villager-idle-D00",
+      "family": "villager",
+      "kind": "unit",
+      "source": {
+        "path": "../../../docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+        "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+        "rgbaSha256": "c960d206222a191b903a8cc1a679e82bdce8d8c51df4010a935f444b3cacdb9c",
+        "width": 1254,
+        "height": 1254,
+        "bbox": [
+          65,
+          21,
+          1214,
+          1254
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ]
+      },
+      "runtime": {
+        "path": "runtime/villager-idle-D00.webp",
+        "sha256": "17aade7d14ecdc4655b5fd88778ed1a73540a2d2123fe18c9ac7482c1fc9762e",
+        "rgbaSha256": "a55d23f10428ca3a64b32b8baf216d145107f2fda04cfe2d6c584ba35e3270ac",
+        "width": 512,
+        "height": 512,
+        "bbox": [
+          40,
+          19,
+          465,
+          505
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "derivation": {
+          "method": "resize",
+          "sourceSha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+          "filter": "lanczos"
+        }
+      },
+      "cell": {
+        "width": 512,
+        "height": 512
+      },
+      "pivot": {
+        "x": 654,
+        "y": 1140,
+        "space": "source"
+      },
+      "render": {
+        "width": 38,
+        "height": 38
+      },
+      "state": "idle",
+      "direction": 0,
+      "loop": true,
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 512,
+          "height": 512,
+          "durationMs": 1000
+        }
+      ],
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "candidate": true,
+      "notes": "RAW fullcanvas candidate; separate artist-padded convenience derivative is not integrated. One neutral D00 view only, no motion or final approval."
+    },
+    {
+      "id": "tran-hung-dao-idle-D00",
+      "family": "tran_hung_dao",
+      "kind": "unit",
+      "source": {
+        "path": "../../../docs/art/characters/tran-hung-dao-neutral-D00-screen-ESE/raw.png",
+        "sha256": "21e7d7c160fc27b52f8e9475702914e73a628752a5c2b5a4c290d9c7b466d553",
+        "rgbaSha256": "0e609a27dcfb1998b55df073e7f084f35a7b19123c218376ac2cdced3db0e017",
+        "width": 1254,
+        "height": 1254,
+        "bbox": [
+          0,
+          16,
+          1230,
+          1254
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ]
+      },
+      "runtime": {
+        "path": "runtime/tran-hung-dao-idle-D00.webp",
+        "sha256": "f1f6b64cd4241120c821f392937dcef2fdaa02df18de0f234291589cd847b04c",
+        "rgbaSha256": "bd6a709084edeb73a33803ef01fbc40808431314c4b0f89b274c2ab5c3e53a92",
+        "width": 512,
+        "height": 512,
+        "bbox": [
+          36,
+          5,
+          494,
+          512
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "derivation": {
+          "method": "resize",
+          "sourceSha256": "21e7d7c160fc27b52f8e9475702914e73a628752a5c2b5a4c290d9c7b466d553",
+          "filter": "lanczos"
+        }
+      },
+      "cell": {
+        "width": 512,
+        "height": 512
+      },
+      "pivot": {
+        "x": 701,
+        "y": 1164,
+        "space": "source"
+      },
+      "render": {
+        "width": 42,
+        "height": 42
+      },
+      "state": "idle",
+      "direction": 0,
+      "loop": true,
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 512,
+          "height": 512,
+          "durationMs": 1000
+        }
+      ],
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "candidate": true,
+      "notes": "RAW fullcanvas candidate; separate artist-padded convenience derivative is not integrated. One neutral D00 view only, no motion or final approval."
+    },
+    {
+      "id": "unit-contact-shadow",
+      "family": "unit-contact-shadow",
+      "kind": "vfx",
+      "source": {
+        "path": "effects/unit-contact-shadow.png",
+        "sha256": "1572b3fd6dd84d36a423adbdbfca1975a071b07bd0c4043edd55688db0ed99bd",
+        "rgbaSha256": "242424c39edc2976292046eb766fcad9360a922b9c2b2f43d2ead0f5d6455d19",
+        "width": 1254,
+        "height": 1254,
+        "bbox": [
+          103,
+          53,
+          1196,
+          1196
+        ],
+        "alphaExtrema": [
+          0,
+          168
+        ]
+      },
+      "runtime": {
+        "path": "runtime/unit-contact-shadow.webp",
+        "sha256": "274b81f26e3869e158b0ab1e5093cd8a899d5255f0239c25ec7ab07ec314a7ff",
+        "rgbaSha256": "d581fe0139344e7a72697d43abcfe00b332f5eea107bb9a4ed7acebfb79ab647",
+        "width": 256,
+        "height": 256,
+        "bbox": [
+          66,
+          115,
+          200,
+          150
+        ],
+        "alphaExtrema": [
+          0,
+          167
+        ],
+        "derivation": {
+          "method": "resize",
+          "sourceSha256": "1572b3fd6dd84d36a423adbdbfca1975a071b07bd0c4043edd55688db0ed99bd",
+          "filter": "lanczos"
+        }
+      },
+      "cell": {
+        "width": 256,
+        "height": 256
+      },
+      "pivot": {
+        "x": 658,
+        "y": 648,
+        "space": "source"
+      },
+      "render": {
+        "width": 42,
+        "height": 42
+      },
+      "state": "static",
+      "direction": null,
+      "loop": true,
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 256,
+          "height": 256,
+          "durationMs": 1000
+        }
+      ],
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "none"
+      },
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "candidate": true,
+      "notes": "Independent translucent authored ground shadow; raw retained, candidate only."
+    },
+    {
+      "id": "ford",
+      "family": "ford",
+      "kind": "terrain",
+      "source": {
+        "path": "terrain/ford-a.png",
+        "sha256": "34d9d5f50cf1840277cfd0bf67e9c4909425a3eb8ff9ec3c1032783169b6f2ae",
+        "rgbaSha256": "88b0e2b4c4f9cf7caa5d19973fa9511aeb1d62b0b7bae556d1767006b891cd6e",
+        "width": 1254,
+        "height": 1254,
+        "bbox": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "alphaExtrema": [
+          255,
+          255
+        ]
+      },
+      "runtime": {
+        "path": "runtime/ford.webp",
+        "sha256": "6085208b5a3eaa97c8bb070da9faae489bf401b02e9da2213665e3925f567ad2",
+        "rgbaSha256": "c0b0f37850608b600ddc0152fef12a659095223f856b47e329ccba0e7e4bc336",
+        "width": 512,
+        "height": 512,
+        "bbox": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "derivation": {
+          "method": "resize",
+          "sourceSha256": "34d9d5f50cf1840277cfd0bf67e9c4909425a3eb8ff9ec3c1032783169b6f2ae",
+          "filter": "lanczos"
+        }
+      },
+      "cell": {
+        "width": 512,
+        "height": 512
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0,
+        "space": "source"
+      },
+      "render": {
+        "width": 256,
+        "height": 256
+      },
+      "state": "material",
+      "direction": null,
+      "loop": true,
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 512,
+          "height": 512,
+          "durationMs": 1000
+        }
+      ],
+      "alphaPolicy": "opaque",
+      "contactShadow": {
+        "mode": "none"
+      },
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "candidate": true,
+      "notes": "First shallow pebbled ford candidate, distinct from river/sea water. Hard tile-boundary shore transitions and material style review remain open; no approval."
+    }
+  ]
+}

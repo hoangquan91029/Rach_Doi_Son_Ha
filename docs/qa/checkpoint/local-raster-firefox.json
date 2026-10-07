@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-07T11:07:40.308Z",
+  "url": "http://127.0.0.1:3000/?art=pilot",
+  "engine": "firefox",
+  "normalZoom": 1.08,
+  "commands": "UI only",
+  "visualApproval": false,
+  "quality": "PLACEHOLDER_ONLY",
+  "errors": [],
+  "art": {
+    "enabled": true,
+    "phase": "CANDIDATE",
+    "quality": "PLACEHOLDER_ONLY",
+    "groundDraws": 1567295,
+    "propDraws": 10683,
+    "entityDraws": 11377,
+    "missing": [
+      {
+        "key": "ground:mountain",
+        "reason": "No authored material for this terrain",
+        "status": "PLACEHOLDER_ONLY"
+      },
+      {
+        "key": "villager:walk:0",
+        "reason": "No exact authored raster state/direction",
+        "status": "PLACEHOLDER_ONLY"
+      },
+      {
+        "key": "cavalryCamp:construction",
+        "reason": "No authored construction sequence",
+        "status": "PLACEHOLDER_ONLY"
+      },
+      {
+        "key": "villager:build:0",
+        "reason": "No exact authored raster state/direction",
+        "status": "PLACEHOLDER_ONLY"
+      },
+      {
+        "key": "cavalry:walk:0",
+        "reason": "No exact authored raster state/direction",
+        "status": "PLACEHOLDER_ONLY"
+      },
+      {
+        "key": "cavalry:walk:2",
+        "reason": "No exact authored raster state/direction",
+        "status": "PLACEHOLDER_ONLY"
+      }
+    ],
+    "pipeline": {
+      "status": "CANDIDATE",
+      "manifest": "ready",
+      "declared": 10,
+      "ready": 10,
+      "approved": 0,
+      "candidates": 10,
+      "failed": 0,
+      "skipped": 0,
+      "fallbacks": 0,
+      "failures": []
+    }
+  }
+}

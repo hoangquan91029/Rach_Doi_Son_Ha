@@ -1,0 +1,54 @@
+{
+  "status": "PILOT_CANDIDATE_PENDING_PARENT_REVIEW",
+  "asset": "public/assets/art-v1/units/infantry-neutral-se.png",
+  "raw_generation": "docs/art/units/sources/infantry-neutral-se-imagegen-raw.png",
+  "built_in_imagegen": true,
+  "raw_dimensions": [
+    1254,
+    1254
+  ],
+  "asset_dimensions": [
+    1024,
+    1024
+  ],
+  "raw_sha256": "d09fde8f28bc2ee75db9e85695801973161fed96a974b0cb6991316552bc049f",
+  "asset_sha256": "f93740e8f1b6b90ff754c7bc3f6e488f60eb3456850c95985425db57629a7e84",
+  "alpha_bounds_raw": {
+    "1": [
+      91,
+      16,
+      1224,
+      1246
+    ],
+    "16": [
+      362,
+      19,
+      926,
+      1218
+    ],
+    "128": [
+      363,
+      20,
+      925,
+      1217
+    ],
+    "250": [
+      364,
+      25,
+      925,
+      1216
+    ]
+  },
+  "gameplay_preview": "docs/art/units/previews/infantry-neutral-se-36px.png",
+  "preview_subject_height_logical_px": 36,
+  "preview_subject_bounds_px": [
+    17,
+    36
+  ],
+  "review_notes": [
+    "Strong painted material finish and readable full-body SE pose at native scale.",
+    "At 36px height the subject occupies about 17px width; fine armor and blade/shield details collapse, so normal-zoom readability and parent 8/10 rating remain pending.",
+    "Helmet/armor still needs historical-plausibility review; do not treat this generated candidate as accepted coverage.",
+    "Built-in generator returned 1254x1254. Original retained; public 1024x1024 asset is a full-canvas Lanczos downsample with no crop or alpha removal."
+  ]
+}

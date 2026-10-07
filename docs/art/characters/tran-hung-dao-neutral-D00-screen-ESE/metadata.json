@@ -1,0 +1,60 @@
+{
+  "status": "RAW_PILOT_CANDIDATE_PENDING_PARENT_REVIEW",
+  "neutral_direction_label": "D00 world-east / screen-ESE trial; not D01 screen-SE",
+  "built_in_imagegen": true,
+  "generated_output": "/home/kieu-hoang-quan/.codex/generated_images/01a1159e-8aea-7b82-8892-33fd9bbf13bd/exec-06e10866-3712-4cab-af48-0102a6c1adcc.png",
+  "raw_source": "docs/art/characters/tran-hung-dao-neutral-D00-screen-ESE/raw.png",
+  "raw_sha256": "21e7d7c160fc27b52f8e9475702914e73a628752a5c2b5a4c290d9c7b466d553",
+  "raw_size": [
+    1254,
+    1254
+  ],
+  "raw_mode": "RGBA",
+  "raw_alpha_extrema": [
+    0,
+    255
+  ],
+  "raw_alpha_bbox_threshold_128": [
+    243,
+    19,
+    898,
+    1237
+  ],
+  "raw_transparent_pixels": 1058392,
+  "raw_partial_alpha_pixels": 513801,
+  "prompt": "docs/art/characters/tran-hung-dao-neutral-D00-screen-ESE/prompt.txt",
+  "prompt_sha256": "8b76e9fc16d252cd7aed80b4c380479ad6d4cbdaaa65ed7d5c88d33c0820656f",
+  "reference_inputs": [
+    {
+      "path": "leadership/tran_hung_dao/candidates/TN-LD-TRAN-HUNG-DAO-B01/identity-reference/tran_hung_dao-identity-D00.png",
+      "role": "identity lock: face, topknot/headpiece, beard, armor, red robe/cape, hip sword",
+      "sha256": "6ab3825af8ead29f7630be4c0539afe19c50df0664924c05e0df2366f69b1aeb"
+    },
+    {
+      "path": "public/assets/art-v1/residence/candidate-02.png",
+      "role": "palette and brushwork only",
+      "sha256": "f617c3540680cafff467358bab1adb01bf735417563f2cba86ab8af523b07dcc"
+    },
+    {
+      "path": "public/assets/art-v1/units/infantry-neutral-se.png",
+      "role": "paint/material rendering only",
+      "sha256": "f93740e8f1b6b90ff754c7bc3f6e488f60eb3456850c95985425db57629a7e84"
+    },
+    {
+      "path": "docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "role": "figure scale and rendering consistency only",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94"
+    }
+  ],
+  "derivative": "public/assets/art-v1/characters/tran-hung-dao-general-neutral-D00-screen-ESE.png",
+  "derivative_sha256": "fdb08322c2a0019e8f06c6a983099ee4cc64f682f6eb0e9bd84bf995f1001762",
+  "derivative_dimensions": [
+    1024,
+    1024
+  ],
+  "derivative_method": "Unmodified raw full canvas resized by Lanczos to 90 percent of a 1024px canvas (922x922), centered at integer offset (51,51) on transparent RGBA. No crop, alpha cleanup, or repaint. Candidate convenience derivative only; parent review targets raw first.",
+  "preview_source": "docs/art/characters/tran-hung-dao-neutral-D00-screen-ESE/preview-source-128.jpg",
+  "preview_game_scale": "docs/art/characters/tran-hung-dao-neutral-D00-screen-ESE/preview-game-scale-40.jpg",
+  "game_preview_visible_height_px": 40,
+  "review_note": "The raw remains the review target. The visible profile retains the source-matched tied topknot/narrow headpiece, beard, gray lamellar, dark-red robe/cape, cream layer, and single sheathed hip sword; no full helmet was introduced. Raw edge clearance and game readability remain parent review gates. No animation or other directions authorized."
+}

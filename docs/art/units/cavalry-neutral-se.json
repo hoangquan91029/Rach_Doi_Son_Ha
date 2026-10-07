@@ -1,0 +1,55 @@
+{
+  "status": "PILOT_CANDIDATE_PENDING_PARENT_REVIEW",
+  "asset": "public/assets/art-v1/units/cavalry-neutral-se.png",
+  "raw_generation": "docs/art/units/sources/cavalry-neutral-se-imagegen-raw.png",
+  "style_reference": "public/assets/art-v1/units/infantry-neutral-se.png (pending parent review; style/material only)",
+  "built_in_imagegen": true,
+  "raw_dimensions": [
+    1254,
+    1254
+  ],
+  "asset_dimensions": [
+    1024,
+    1024
+  ],
+  "raw_sha256": "552c4fcdf8ce6bdb802c6faae1bc139416393d53cb30caa95a1d22309b77b091",
+  "asset_sha256": "dbc3258a77385a7aa7f71b72e32f2e26f907e68cd89e3acac77ddd07ff354c79",
+  "alpha_bounds_raw": {
+    "1": [
+      33,
+      17,
+      1224,
+      1226
+    ],
+    "16": [
+      206,
+      23,
+      1107,
+      1219
+    ],
+    "128": [
+      209,
+      24,
+      1107,
+      1218
+    ],
+    "250": [
+      235,
+      24,
+      1106,
+      1217
+    ]
+  },
+  "gameplay_preview": "docs/art/units/previews/cavalry-neutral-se-48px.png",
+  "preview_subject_height_logical_px": 48,
+  "preview_subject_bounds_px": [
+    36,
+    48
+  ],
+  "review_notes": [
+    "Believable compact horse proportions, four planted legs, readable rider/horse silhouette and subdued palette at native scale.",
+    "At 48px height the unit remains identifiable as mounted cavalry; fine tack and sword details collapse, so normal-zoom readability and parent 8/10 rating remain pending.",
+    "The rider resembles the infantry reference by design; historical equipment plausibility and candidate-specific identity remain subject to parent review.",
+    "Built-in generator returned 1254x1254. Original retained; public 1024x1024 asset is a full-canvas Lanczos downsample with no crop or alpha removal."
+  ]
+}

@@ -1,0 +1,9 @@
+# Infantry neutral SE refinement 01
+
+Status: PILOT CANDIDATE; PARENT REVIEW REQUIRED; NOT ACCEPTED COVERAGE
+
+Built-in ImageGen edit, one call. ImageGen raw output is preserved unchanged at `sources/infantry-neutral-se-refine-01-imagegen-raw.png`. The exact prompt is `infantry-neutral-se-refine-01-prompt.txt`. Hashes for raw, public candidate, prompt, gameplay preview, and both input references are in `infantry-neutral-se-refine-01.sha256`.
+
+Public candidate: `public/assets/art-v1/units/infantry-neutral-se-refine-01.png` (1024 × 1024 RGBA). This is a non-destructive 0.7850085 full-canvas Lanczos normalization of the 1254 × 1254 raw output, centered on transparency to guarantee at least 5% transparent margin at every edge. The raw image remains unchanged. Its all-nonzero-alpha bounds are [97, 48, 1208, 1222]; normalized public alpha bounds are [76, 52, 948, 973].
+
+Gameplay preview: `previews/infantry-neutral-se-refine-01-38px.png`, with the visible figure scaled to 38 logical pixels high (20 pixels wide). At that scale the blade and round shield silhouette are more distinct than in the prior pilot, though small armor details still collapse. The elevated view now shows the helmet and shoulder tops, legs are separated, and the pose is grounded. The raw remains ornate; parent must judge whether its material planes and 38px readability meet the 8/10 gate. Historical plausibility, animation, and runtime placement remain unreviewed.

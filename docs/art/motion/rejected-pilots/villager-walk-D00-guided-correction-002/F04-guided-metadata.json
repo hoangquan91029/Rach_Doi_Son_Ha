@@ -1,0 +1,49 @@
+{
+  "status": "RAW_GENERATED_F04_CONTACT_MISMATCH_STOPPED_AT_ONE_CALL_CAP",
+  "frame": "F04 guided opposite-contact correction at 400ms",
+  "built_in_imagegen": true,
+  "generated_output": "/home/kieu-hoang-quan/.codex/generated_images/01a1159e-8aea-7b82-8892-33fd9bbf13bd/exec-36b45d7f-ebf3-4938-91ba-e653ff17d625.png",
+  "raw_file": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-guided-correction-002/F04-guided-raw.png",
+  "raw_sha256": "37f3246546673320028798f4750d446c0030bb5410baeeec6bccb0941b5b3988",
+  "raw_dimensions": [
+    1254,
+    1254
+  ],
+  "raw_mode": "RGBA",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "alpha_bbox_threshold_128": [
+    346,
+    48,
+    958,
+    1201
+  ],
+  "prompt_file": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-guided-correction-002/F04-correction-prompt.txt",
+  "prompt_sha256": "772fca2156a226adac92d8ae542e0fe126152e55dd9d2ed3b5e35a8fe924e01a",
+  "input_images": [
+    {
+      "role": "locked identity master",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94"
+    },
+    {
+      "role": "selected F00 appearance/continuity only",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-pilot-001/F00-raw.png",
+      "sha256": "57fe10ac4a0708ff168ce6a0eb1f4b932a98673b4dd34a97aee264f38e55acb4"
+    },
+    {
+      "role": "parent-approved model-only pose phase/ownership guide",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-guided-correction-002/F04-model-guide.png",
+      "sha256": "ea26e1a7b78ff7cb1e9fb2f7893888763a6aba8b5eeced758c49eb76e4dce475"
+    }
+  ],
+  "excluded_references": [
+    "Rejected F04 raw from villager-walk-D00-pilot-001 was not attached or used."
+  ],
+  "preview_fixed38": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-guided-correction-002/F00-F04-guided-fixed-38px-review.jpg",
+  "preview_native": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-guided-correction-002/F00-F04-guided-native-review.jpg",
+  "preview_transform": "Full 1254x1254 canvases each scaled by 38/1254 and placed with root (650,1140) at panel (53,74); no alpha-bbox fitting, crop, or per-frame adjustment.",
+  "producer_observation": "The output maintains recognizable identity and close overall body scale, but fails the intended opposite contact: screen-right/near foot remains forward at lower-right and screen-left/far leg trails upper-left, as in F00. Guide conditioning did not switch contact ownership. Preserve exact raw and stop at the one-call cap; no more corrections or in-betweens."
+}
