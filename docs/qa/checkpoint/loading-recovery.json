@@ -1,0 +1,22 @@
+{
+  "url": "http://127.0.0.1:3000/?art=pilot",
+  "networkFixtures": true,
+  "simulationMutation": false,
+  "results": [
+    {
+      "scenario": "manifest unavailable",
+      "errorVisible": true,
+      "explicitDevelopmentContinuation": true,
+      "matchStarted": true
+    },
+    {
+      "scenario": "fresh retry after network recovery",
+      "readyAssets": 13
+    },
+    {
+      "scenario": "bundle network failure",
+      "watchdogVisible": true,
+      "retryReadyAssets": 13
+    }
+  ]
+}

@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="app">
-      <div id="boot" class="boot-screen"><div class="seal">雙</div><span>Preparing the riverlands…</span></div>
+      <div id="boot" class="boot-screen"><div class="seal">雙</div><span id="bootStatus" role="status" aria-live="polite">Preparing the riverlands…</span><button id="bootRetry" hidden type="button">Retry loading</button><button id="bootContinue" hidden type="button">Continue with development placeholders</button></div>
       <main id="menu" class="screen hidden">
         <div class="menu-backdrop"></div>
         <header class="brand"><div class="brand-mark">山</div><div><p class="eyebrow">A HISTORICAL REAL-TIME STRATEGY</p><h1>Rạch Đôi <em>Sơn Hà</em></h1></div></header>
@@ -38,6 +38,10 @@
       <div id="toast" class="toast hidden"></div>
       <div id="mobileNotice" class="mobile-notice hidden"><b>Rạch Đôi Sơn Hà is a desktop strategy game.</b><span>Open this page on a larger screen to command the field.</span></div>
     </div>
+    <script>
+      document.getElementById('bootRetry').onclick=()=>location.reload();
+      window.rdshBootWatchdog=setTimeout(()=>{if(document.getElementById('boot').dataset.started)return;document.getElementById('bootStatus').textContent='The game is taking too long to arrive. Check your connection and retry.';document.getElementById('bootRetry').hidden=false;},20000);
+    </script>
     <script type="module" src="/client/main.js"></script>
   </body>
 </html>

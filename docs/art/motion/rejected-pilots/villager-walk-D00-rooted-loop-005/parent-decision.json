@@ -1,0 +1,24 @@
+{
+  "reviewer": "parent agent",
+  "decision": "METHOD_HOLD",
+  "classification": "REJECTED_CONTACT_PHASE",
+  "frame": "current-job 005 F04 at 400ms",
+  "finding": "Native and fixed-38 review shows the NEAR/screen-right foreground leg planted lower-right while the FAR/screen-left leg trails raised; this fails the requested opposite-contact ownership.",
+  "call_budget": {
+    "new_authored_calls_used": 1,
+    "new_authored_calls_max": 7,
+    "retries": 0,
+    "remaining_calls_authorized": 0
+  },
+  "stop": "No further image calls, in-betweens, integration, or fanout.",
+  "preserve": {
+    "f04_raw_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-rooted-loop-005/F04-raw.png",
+    "f04_raw_sha256": "c2dfd05a30cafb2fc91882077bc4b62809244df3f09c83076ee32c1c72c8800f",
+    "f04_metadata_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-rooted-loop-005/F04-metadata.json",
+    "f04_metadata_sha256": "c5d2ed903e4289e0884aefae09e818277250051c1ab5e7bb483dc9fdc0a91797",
+    "f01_handoff_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-passing-first-004/F02-master-only-raw.png",
+    "f01_handoff_sha256": "f546e96687e2e2ad4de282bbbf16668e932292a0306f61ccaf4d57c60e4919da",
+    "f01_handoff_raw_or_metadata_modified": false
+  },
+  "scope": "Separate parent decision receipt. Does not delete or alter 005 raw, prompt, input locks, or source metadata."
+}

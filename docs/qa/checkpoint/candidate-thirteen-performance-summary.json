@@ -1,0 +1,44 @@
+{
+  "url": "http://127.0.0.1:3000/?art=pilot",
+  "results": [
+    {
+      "transport": {
+        "requestedUrl": "http://127.0.0.1:3000/?art=pilot",
+        "actualUrl": "http://127.0.0.1:3000/?art=pilot",
+        "resolveIp": null,
+        "tlsVerificationBypassed": false,
+        "httpStatus": 200,
+        "serverAddress": {
+          "ipAddress": "127.0.0.1",
+          "port": 3000
+        },
+        "securityDetails": {}
+      },
+      "performance": {
+        "method": "Pure numeric RAF callback; separate 1Hz read-only filtered snapshots. frameCost includes offline step/view and renderer synchronous work. Counts are observed scene only.",
+        "cadenceMs": {
+          "p50": 16.69999999999709,
+          "p95": 16.70000000001164,
+          "count": 7246
+        },
+        "peakObservedStateEntities": 52,
+        "peakObservedMilitary": 17,
+        "peakViewportEntities": 31,
+        "peakViewportMilitary": 14,
+        "denseBattleAccepted": false,
+        "windowCount": 121,
+        "windowSource": "artifacts/performance/candidate-thirteen-ai-win/receipt.json"
+      },
+      "map": "delta",
+      "difficulty": "easy",
+      "winner": 0,
+      "reason": "Enemy General defeated",
+      "tick": 2433,
+      "simulationSeconds": 121.65,
+      "wallSeconds": 121.743,
+      "errors": [],
+      "method": "Actual production UI mouse/keyboard only; read-only filtered diagnostics. No state mutation, simulation speed-up or injected commands.",
+      "resultScreenAndMenuVerified": true
+    }
+  ]
+}

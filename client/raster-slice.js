@@ -1,4 +1,5 @@
 import {createArtAssetPipeline} from './art-assets.js';
+import {createTerrainTransitions} from './terrain-transitions.js';
 import {TILE_WIDTH,TILE_HEIGHT} from './world-presentation.js';
 
 const TW=TILE_WIDTH,TH=TILE_HEIGHT;
@@ -33,8 +34,31 @@ export function createRasterSlice({enabled=new URLSearchParams(globalThis.locati
   return drawAt(ctx,shadow,point,zoom);
  };
  const rasterAt=(ctx,raster,point,zoom)=>{if(!shadowAt(ctx,raster,point,zoom))return false;return drawAt(ctx,raster,point,zoom);};
+ const transitionMaterials=new Map();
+ const transitionRaster=(terrain,timeMs)=>{
+  const cached=transitionMaterials.get(terrain);if(cached?.timeMs===timeMs)return cached.raster;
+  const families=terrain==='shore'?['shore']:terrain==='ford'?['ford','terrain.ford']:['water','terrain.water'];
+  const raster=select({families,kind:'terrain',state:'material',direction:null,timeMs});if(!raster)return false;
+  transitionMaterials.set(terrain,{timeMs,raster});return raster;
+ };
+ const paintMaterial=(ctx,terrain,{project,zoom,timeMs,bounds})=>{
+  const raster=transitionRaster(terrain,timeMs);if(!raster)return false;
+  const image=cellImage(raster);if(!image)return false;
+  let byRaster=patterns.get(ctx);if(!byRaster){byRaster=new Map();patterns.set(ctx,byRaster);}
+  const key=`${raster.id}:${raster.frame}`;if(!byRaster.has(key))byRaster.set(key,{pattern:ctx.createPattern(image,'repeat'),last:null});
+  const cached=byRaster.get(key),pattern=cached.pattern;if(!pattern?.setTransform){recordMissing(raster.id,'World-anchored CanvasPattern transform unsupported');return false;}
+  const repeat=raster.asset.materialWorldSize,wx=finite(repeat?.width)&&repeat.width>0?repeat.width:materialWorldSize,wy=finite(repeat?.height)&&repeat.height>0?repeat.height:materialWorldSize,origin=project(0,0);
+  if(!finite(wx)||!finite(wy)||wx<=0||wy<=0||!finite(origin?.x)||!finite(origin?.y))return false;
+  pattern.setTransform({a:TW*zoom/2*wx/raster.sw,b:TH*zoom/2*wx/raster.sw,c:-TW*zoom/2*wy/raster.sh,d:TH*zoom/2*wy/raster.sh,e:origin.x,f:origin.y});cached.last=null;
+  ctx.fillStyle=pattern;ctx.fillRect(bounds.x,bounds.y,bounds.width,bounds.height);return true;
+ };
+ const transitions=createTerrainTransitions({paintMaterial,
+  materialKey:(terrain,timeMs)=>{const r=transitionRaster(terrain,timeMs);return r?JSON.stringify([r.id,r.frame,r.asset.runtime?.sha256,r.asset.source?.sha256,r.asset.materialWorldSize]):null;},
+  hasBank:()=>Boolean(pipeline.manifest?.assets?.some(a=>a.kind==='terrain'&&a.family==='shore'&&a.state==='material'&&a.direction===null)),
+  onMissingBank:()=>recordMissing('shore:material:null','Dedicated authored bank material unavailable; bounded original-material blending remains a candidate')});
  return {
   status,pipeline,
+  drawTransitions(ctx,options){if(!enabled||!ready)return false;return transitions.draw(ctx,options);},
   async preload(){if(!enabled)return this;await pipeline.preload();ready=true;status.quality=pipeline.stats.status;return this;},
   /** project uses existing renderer logical pixels; camera zoom and DPR must not be applied twice. */
   drawGround(ctx,{x,y,terrain,project,zoom=1,timeMs=0}={}) {
@@ -83,6 +107,6 @@ export function createRasterSlice({enabled=new URLSearchParams(globalThis.locati
    for(let y=0;y<height;y++)for(let x=0;x<width;x++){const index=y*width+x,v=(x*17+y*31)%19;if(tiles[index]!=='forest'||v>=5||onlyVisible&&state.fog?.visible&&!state.fog.visible[index])continue;props.push({type:'forest',x:x+.5,y:y+.5,variant:v,key:`forest:${x}:${y}`,depth:x+y});}
    return props.sort((a,b)=>a.depth-b.depth||a.y-b.y||a.x-b.x);
   },
-  dispose(){pipeline.dispose();cells.clear();ready=false;}
+  dispose(){transitions.dispose();transitionMaterials.clear();pipeline.dispose();cells.clear();ready=false;}
  };
 }

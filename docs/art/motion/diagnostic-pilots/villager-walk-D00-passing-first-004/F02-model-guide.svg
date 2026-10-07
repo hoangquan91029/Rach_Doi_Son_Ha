@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1254" height="1254" viewBox="0 0 1254 1254">
+<rect width="1254" height="1254" fill="#1d2a27"/>
+<g stroke-linecap="round" stroke-linejoin="round" fill="none">
+ <path d="M410 1140H900" stroke="#77877b" stroke-width="3"/>
+ <ellipse cx="651" cy="1141" rx="57" ry="14" fill="#0c110f" fill-opacity=".45" stroke="none"/>
+ <!-- FAR leg/arm are orange and behind the body. -->
+ <path d="M585 735L705 850L710 1000L730 1008" stroke="#f28441" stroke-width="58"/><path d="M585 735L705 850L710 1000L730 1008" stroke="#1c211c" stroke-width="9"/>
+ <path d="M525 350L465 415L425 500" stroke="#f28441" stroke-width="54"/><path d="M525 350L465 415L425 500" stroke="#1c211c" stroke-width="9"/>
+ <!-- Side-aware three-quarter torso, master remains camera and body-shape authority. -->
+ <path d="M538 326L607 294L733 305L792 360L769 575L745 735L557 735L529 575Z" fill="#dcd3b4" stroke="#1c211c" stroke-width="9"/>
+ <path d="M547 580H758" stroke="#7c6c52" stroke-width="26"/>
+ <path d="M630 350L705 470L681 565" stroke="#c6b797" stroke-width="7"/>
+ <ellipse cx="670" cy="227" rx="60" ry="69" fill="#9d704c" stroke="#1c211c" stroke-width="8"/>
+ <path d="M503 208L615 66L811 191L788 228L531 238Z" fill="#b18f5d" stroke="#1c211c" stroke-width="10"/>
+ <path d="M519 211H793" stroke="#eedabc" stroke-width="10"/>
+ <!-- Near leg supports almost straight under the torso; near arm swings forward. -->
+ <path d="M705 735L670 865L650 1040L650 1115" stroke="#41bece" stroke-width="62"/><path d="M705 735L670 865L650 1040L650 1115" stroke="#1c211c" stroke-width="9"/>
+ <path d="M785 355L830 425L865 500" stroke="#41bece" stroke-width="56"/><path d="M785 355L830 425L865 500" stroke="#1c211c" stroke-width="9"/>
+ <!-- Far swinging sandal is clearly airborne; there is no shadow or ground mark under it. -->
+ <path d="M730 1008L780 1027L773 1043L723 1024Z" fill="#f28441" stroke="#1c211c" stroke-width="7"/>
+ <path d="M730 1008L780 1027" stroke="#f4e7c9" stroke-width="4"/>
+ <!-- Planted NEAR sandal, centered at the root under the body. -->
+ <path d="M620 1120L682 1147L675 1162L613 1135Z" fill="#41bece" stroke="#1c211c" stroke-width="7"/>
+ <path d="M620 1120L682 1147" stroke="#f4e7c9" stroke-width="4"/>
+</g>
+<g fill="#f1e7cc" stroke="#1c211c" stroke-width="7"><circle cx="705" cy="850" r="27"/><circle cx="465" cy="415" r="26"/><circle cx="670" cy="865" r="29"/><circle cx="830" cy="425" r="27"/></g>
+<g font-family="DejaVu Sans, sans-serif" font-weight="bold" paint-order="stroke" stroke="#1c211c" stroke-width="4">
+ <text x="75" y="930" fill="#41bece" font-size="30">NEAR / SCREEN-RIGHT</text>
+ <text x="75" y="968" fill="#41bece" font-size="23">PLANTED UNDER BODY</text>
+ <text x="845" y="930" fill="#f28441" font-size="30">FAR / SCREEN-LEFT</text>
+ <text x="845" y="968" fill="#f28441" font-size="23">SWINGING / AIRBORNE</text>
+ <text x="518" y="1180" fill="#f1e7cc" font-size="23">ROOT (650,1140)</text>
+</g>
+</svg>

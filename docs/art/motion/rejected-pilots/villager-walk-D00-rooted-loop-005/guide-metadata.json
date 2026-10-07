@@ -1,0 +1,27 @@
+{
+  "status": "MODEL_ONLY_GUIDE_PREPARED_NOT_ART_NOT_MOTION_PROOF",
+  "target": "F04 far-contact bridge at 400ms in proposed 8-frame, 100ms/frame loop",
+  "canvas": [
+    1254,
+    1254
+  ],
+  "locked_source_root": [
+    650,
+    1140
+  ],
+  "phase_geometry": {
+    "far_screen_left_leg": "advances to lower-right flat contact near x=710; ground shadow only under this sole",
+    "near_screen_right_leg": "releases support and trails upper-left with heel/sandal lifted",
+    "arm_swing": "far arm back, near arm forward",
+    "torso": "upright with restrained counter-rotation and small bob"
+  },
+  "guide_svg": "F04-bridge-model-guide.svg",
+  "guide_svg_sha256": "3de1656926493d9596771c0069ea2a0c541342ae7c256074f0c160f329554f18",
+  "guide_png": "F04-bridge-model-guide.png",
+  "guide_png_sha256": "0a511e39af8a82175ef08d831065cf88fe17ce03cd17c92272532df5f25fc4d4",
+  "fixed_38px_preview": "F04-bridge-fixed-38px-preview.png",
+  "fixed_38px_preview_sha256": "36fa9cda72a913f3fe92c0cd137e74077040c3eee13ade87652d51e61bed94bf",
+  "prompt": "F04-bridge-prompt.txt",
+  "prompt_sha256": "ac7cf6ee60b19541ffd507634393296f9f014dcbc6af54387653eb798e156a0f",
+  "inspection": "Native schematic reviewed; fixed-38 preview confirms opposite-contact ownership and stable source root. No image call made."
+}

@@ -1,0 +1,89 @@
+{
+  "id": "forest-palm-a",
+  "status": "CANDIDATE",
+  "generation_tool": "built-in image_gen",
+  "generation_call_count": 1,
+  "returned_generation_path": "/home/kieu-hoang-quan/.codex/generated_images/01a116cd-59ce-75b1-a5b0-b0c4c0323924/exec-ff102055-a06e-489d-9cfb-9b4fa58a2ade.png",
+  "raw_copy": "docs/art/terrain/forest-palm-a/forest-palm-a.raw.png",
+  "public_candidate": "public/assets/art-v1/terrain/forest-palm-a.png",
+  "prompt_file": "docs/art/terrain/forest-palm-a/prompt.txt",
+  "input_images": [],
+  "input_hashes": [],
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "mode": "RGBA",
+  "format": "PNG",
+  "requested_transparency": true,
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "decoded_rgba_extrema": [
+    [
+      0,
+      255
+    ],
+    [
+      0,
+      255
+    ],
+    [
+      0,
+      255
+    ],
+    [
+      0,
+      255
+    ]
+  ],
+  "raw_sha256": "1a249128658e798e18a0e4c7d28e1479fdb0ac24e83f45615177ca45f2cac359",
+  "decoded_rgba_sha256": "b6aca15d7b50386a364f2ca96161bf37a2749b892316ad4f4883bd20d09ceb94",
+  "alpha_bbox_threshold_gt_0": [
+    31,
+    9,
+    1216,
+    1254
+  ],
+  "alpha_bbox_threshold_gt_8": [
+    269,
+    85,
+    1050,
+    1172
+  ],
+  "alpha_bbox_threshold_gt_128": [
+    272,
+    89,
+    1046,
+    1164
+  ],
+  "family_layout": {
+    "source_canvas": [
+      1254,
+      1254
+    ],
+    "render": [
+      75,
+      75
+    ],
+    "source_pivot": [
+      645,
+      1140
+    ],
+    "preview_method": "Lanczos resize of the entire canvas to 75x75; no alpha-bbox fitting, crop, or recenter",
+    "preview_pivot": [
+      38.577,
+      68.182
+    ]
+  },
+  "preview": "docs/art/terrain/forest-palm-a/forest-palm-a.preview-75.png",
+  "visual_observations": [
+    "One curved trunk, feathered palm fronds, and a modest coconut cluster read as a palm, distinct from broadleaf and bamboo.",
+    "Substantive alpha bbox at alpha>8 is [269,85,1050,1172], leaving margin around the silhouette.",
+    "Source pivot pixel (645,1140) is within opaque trunk/base contact area.",
+    "A short dark shadow is visible at the base.",
+    "Bright yellow-green edge fringing appears around several frond edges in the native view and needs parent review."
+  ],
+  "review": "Candidate only; no approval or integration claim. Review the bright edge fringe and game-scale silhouette."
+}

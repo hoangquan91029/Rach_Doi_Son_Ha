@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-07T15:32:51.790Z",
+  "url": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/?art=pilot",
+  "engine": "chromium",
+  "menuReadyMs": 24934,
+  "transport": {
+    "httpStatus": 200,
+    "securityDetails": {
+      "issuer": "YE1",
+      "protocol": "TLS 1.3",
+      "subjectName": "kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net",
+      "validFrom": 1786518706,
+      "validTo": 1794294705
+    },
+    "serverAddress": {
+      "ipAddress": "103.84.155.153",
+      "port": 443
+    },
+    "tlsVerificationBypassed": false
+  },
+  "normalZoom": 1.08,
+  "commands": "UI only",
+  "visualApproval": false,
+  "quality": "PLACEHOLDER_ONLY",
+  "errors": [],
+  "failedRequests": [],
+  "terrainCache": {
+    "builds": 1,
+    "draws": 2591,
+    "pixels": 5169280
+  },
+  "art": {
+    "enabled": true,
+    "phase": "CANDIDATE",
+    "quality": "PLACEHOLDER_ONLY",
+    "groundDraws": 3042,
+    "propDraws": 26303,
+    "entityDraws": 27463,
+    "missing": [
+      {
+        "key": "ground:mountain",
+        "reason": "No authored material for this terrain",
+        "status": "PLACEHOLDER_ONLY"
+      },
+      {
+        "key": "cavalryCamp:construction",
+        "reason": "No authored construction sequence",
+        "status": "PLACEHOLDER_ONLY"
+      },
+      {
+        "key": "villager:walk:0",
+        "reason": "No exact authored raster state/direction",
+        "status": "PLACEHOLDER_ONLY"
+      },
+      {
+        "key": "villager:build:0",
+        "reason": "No exact authored raster state/direction",
+        "status": "PLACEHOLDER_ONLY"
+      },
+      {
+        "key": "cavalry:walk:0",
+        "reason": "No exact authored raster state/direction",
+        "status": "PLACEHOLDER_ONLY"
+      },
+      {
+        "key": "cavalry:walk:2",
+        "reason": "No exact authored raster state/direction",
+        "status": "PLACEHOLDER_ONLY"
+      }
+    ],
+    "pipeline": {
+      "status": "CANDIDATE",
+      "manifest": "ready",
+      "declared": 13,
+      "ready": 13,
+      "approved": 0,
+      "candidates": 13,
+      "failed": 0,
+      "skipped": 0,
+      "fallbacks": 0,
+      "failures": []
+    }
+  }
+}

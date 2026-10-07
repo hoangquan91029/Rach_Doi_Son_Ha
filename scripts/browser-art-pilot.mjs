@@ -16,7 +16,9 @@ const click=async(x,y,button='left')=>{const s=await snap(),mini=page.locator('#
 const select=async(e)=>{const s=await snap(),mini=page.locator('#minimap'),box=await mini.boundingBox();await mini.click({position:{x:e.x/s.displayedState.map.width*box.width,y:e.y/s.displayedState.map.height*box.height}});await page.waitForTimeout(80);const pt=await page.evaluate(id=>window.rtsDiagnostics.entityPoint(id),e.id);await page.locator('#world').click({position:pt});};
 const wait=async(predicate,timeout=45000)=>{const started=Date.now();while(Date.now()-started<timeout){const s=await snap();if(predicate(s))return s;await page.waitForTimeout(200);}throw Error('Timed out waiting for normal gameplay action');};
 try{
- const url=new URL(base);url.searchParams.set('art','pilot');await page.goto(url.href,{waitUntil:'networkidle'});
+ const url=new URL(base);url.searchParams.set('art','pilot');const loadStarted=Date.now();const response=await page.goto(url.href,{waitUntil:'domcontentloaded'});
+ await page.locator('#singleStart').waitFor({state:'visible',timeout:75000});const menuReadyMs=Date.now()-loadStarted;
+ const transport={httpStatus:response.status(),securityDetails:await response.securityDetails(),serverAddress:await response.serverAddr(),tlsVerificationBypassed:false};
  await page.locator('#singleStart').click();await page.locator('#difficulty').selectOption('easy');await page.locator('#launchSingle').click();
  let s=await wait(s=>s.tick>10);assert.equal(s.camera.zoom,1.08);assert.equal(s.art.pipeline.failed,0);
  await page.screenshot({path:`${out}/start.png`});
@@ -35,6 +37,6 @@ try{
  const minimap=page.locator('#minimap'),box=await minimap.boundingBox();await minimap.click({position:{x:32/s.displayedState.map.width*box.width,y:24/s.displayedState.map.height*box.height}});await page.waitForTimeout(250);
  await page.screenshot({path:`${out}/scouted-river.png`});s=await snap();
 
- await writeFile(`${out}/receipt.json`,JSON.stringify({date:new Date().toISOString(),url:url.href,engine,normalZoom:1.08,commands:'UI only',visualApproval:false,quality:'PLACEHOLDER_ONLY',errors,art:s.art},null,2));assert.deepEqual(errors,[]);
+ await writeFile(`${out}/receipt.json`,JSON.stringify({date:new Date().toISOString(),url:url.href,engine,menuReadyMs,transport,normalZoom:1.08,commands:'UI only',visualApproval:false,quality:'PLACEHOLDER_ONLY',errors,failedRequests,terrainCache:s.terrainCache,art:s.art},null,2));assert.deepEqual(errors,[]);assert.deepEqual(failedRequests,[]);
  console.log(JSON.stringify({engine,normalZoom:s.camera.zoom,trainedCavalry:true,missingMovementRecorded:true,errors,visualApproval:false}));
 }catch(error){await page.screenshot({path:`${out}/failure.png`});const snapshot=await snap().catch(()=>null);await writeFile(`${out}/failure.json`,JSON.stringify({error:error.stack,url:page.url(),snapshot,errors,failedRequests},null,2));throw error;}finally{await browser.close();}

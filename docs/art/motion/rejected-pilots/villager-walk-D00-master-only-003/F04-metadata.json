@@ -1,0 +1,64 @@
+{
+  "status": "RAW_GENERATED_F04_CONTACT_MISMATCH_STOPPED_AT_ONE_CALL_CAP",
+  "frame": "F04 proposed opposite-contact at 400 ms; unselected raw result",
+  "built_in_imagegen_calls": 1,
+  "built_in_imagegen_calls_cap": 1,
+  "generated_output_source": "/home/kieu-hoang-quan/.codex/generated_images/01a116ce-195d-73e0-a579-e4e5e990575d/exec-71742a36-5068-4864-9f16-a5af94bfbf26.png",
+  "raw_metrics": {
+    "raw_file": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-master-only-003/F04-master-only-raw.png",
+    "raw_sha256": "fb827f065cf404a034d1dbefb0553f18bd3927dd6db925cc71b118cf882bfe5e",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bbox_threshold_128": [
+      380,
+      51,
+      881,
+      1176
+    ],
+    "transparent_pixels": 1231228,
+    "partial_alpha_pixels": 340832
+  },
+  "prompt_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-master-only-003/F04-imagegen-prompt.txt",
+  "prompt_sha256": "888060f47e1e7119d1f378a06db1ae04a3c01b80def0aa29da5926f05d8b2788",
+  "proposed_prompt_reference": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-master-only-003/F04-proposed-prompt.txt",
+  "input_images": [
+    {
+      "order": 1,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+      "role": "sole identity, appearance, proportion, camera and framing authority"
+    },
+    {
+      "order": 2,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-master-only-003/F04-model-guide.png",
+      "sha256": "eec0512e129bceba3894429ef260364b58ba3ebaddd95f47ca0a12048bebd369",
+      "role": "new model-only F04 phase and contact ownership guide"
+    }
+  ],
+  "excluded_from_generation_inputs": [
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-pilot-001/F00-raw.png",
+      "role": "selected F00 from closed failed pilot-001, review evidence only",
+      "sha256": "57fe10ac4a0708ff168ce6a0eb1f4b932a98673b4dd34a97aee264f38e55acb4"
+    },
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-pilot-001/F04-raw.png",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-guided-correction-002/F04-guided-raw.png"
+  ],
+  "review_comparison": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-master-only-003/F00-F04-master-only-fixed-38px-review.png",
+    "transform": "each complete 1254x1254 canvas scaled by 38/1254; root (650,1140) held at same per-panel placement; no bbox fit, crop, mirror, or per-frame adjustment"
+  },
+  "producer_observation": "The result retains the master identity and three-quarter D00 camera, but the near/screen-right sandal still leads lower-right while the far/screen-left foot trails upper-left. The opposite contact did not transfer. This repeats the same contact ownership visible in pilot-001 F00 and the rejected guided pilot-002 F04. Stop at the one-call cap; do not select the frame, generate in-betweens, or fan out.",
+  "phase_verdict": "METHOD_HOLD / REJECTED_CONTACT_PHASE",
+  "identity_camera_verdict": "Appearance remains close to master; three-quarter D00 camera retained.",
+  "visual_motion_verdict": "FAIL: near/right lead remains; no opposite-contact key.",
+  "complete_cycles": 0,
+  "production_approval": false
+}

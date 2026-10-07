@@ -1,0 +1,18 @@
+{
+  "job": "villager-walk-D00-rooted-loop-005",
+  "slot": "F01",
+  "time_ms": 100,
+  "selection_status": "REVIEW_ONLY_EARLY_SWING_DIAGNOSTIC",
+  "source_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-passing-first-004/F02-master-only-raw.png",
+  "sha256": "f546e96687e2e2ad4de282bbbf16668e932292a0306f61ccaf4d57c60e4919da",
+  "source_project": "villager-walk-D00-passing-first-004",
+  "original_producer_label": "F02",
+  "handoff": "unchanged raw selected into current 005 sequence as F01; raw and original producer metadata remain in 004 unchanged",
+  "parent_findings": [
+    "identity and body scale retained",
+    "meaningful raised rear foot visible",
+    "requested forward passing-foot placement wrong",
+    "support sole approximately 85 source px / 2.6 gameplay px right of root (650,1140)"
+  ],
+  "decision_boundary": "Selection provides one-time continuity predecessor eligibility only; it is not motion approval, completed-loop approval, runtime acceptance, or fanout permission."
+}

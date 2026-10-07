@@ -1,0 +1,107 @@
+{
+  "status": "MODEL_GUIDE_PREPARED_AWAITING_PARENT_REVIEW_NO_IMAGEGEN_CALL",
+  "guide_type": "MODEL_ONLY_PHASE_AND_SUPPORT_SWING_GEOMETRY",
+  "canvas": [
+    1254,
+    1254
+  ],
+  "direction": "D00 world east / elevated screen-ESE three-quarter view",
+  "root": [
+    650,
+    1140
+  ],
+  "identity_master": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+    "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94"
+  },
+  "proposed_inputs": [
+    "locked neutral master",
+    "F02-model-guide.png only"
+  ],
+  "excluded_review_evidence_only": [
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-pilot-001/F00-raw.png",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-pilot-001/F04-raw.png",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-guided-correction-002/F04-guided-raw.png",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-master-only-003/F04-master-only-raw.png"
+  ],
+  "geometry": {
+    "near_support_leg": [
+      [
+        705,
+        735
+      ],
+      [
+        670,
+        865
+      ],
+      [
+        650,
+        1040
+      ],
+      [
+        650,
+        1115
+      ]
+    ],
+    "near_support_sandal_center_approx": [
+      651,
+      1134
+    ],
+    "far_swing_leg": [
+      [
+        585,
+        735
+      ],
+      [
+        705,
+        850
+      ],
+      [
+        710,
+        1000
+      ],
+      [
+        730,
+        1008
+      ]
+    ],
+    "far_airborne_sandal_center_approx": [
+      755,
+      1018
+    ],
+    "far_knee_bend": "clear forward thigh and tucked lower-leg angle; chain lengths comparable to the support leg",
+    "raised_sandal_gap_source_px": 116,
+    "fixed_38_px_sandal_gap_px": 3.52,
+    "near_arm": "forward swing",
+    "far_arm": "back swing",
+    "shadow": "only beneath planted near sandal; none under airborne far sandal",
+    "torso_head": "upright, small bob, side-aware ESE cue; identity/camera remain master-authoritative"
+  },
+  "files": {
+    "native_geometry_preview": {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-passing-first-004/F02-model-guide.png",
+      "sha256": "2f88bb8c1f876c24bc876ed07e3572925d76ff1d369a4d614fc45eab107929cb"
+    },
+    "fixed38_preview": {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-passing-first-004/F02-guide-fixed-38px-preview.png",
+      "sha256": "9a4c1ccd534b3203c6faa553e35dd3aa0c3197e19a044a713fd4710d173532e1"
+    },
+    "fixed38_enlarged_diagnostic": {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-passing-first-004/F02-guide-fixed-38px-preview-6x.png",
+      "sha256": "2769351c50e3ab7a21999567d85ae0d56170f053810a831968354f4673159e47"
+    },
+    "svg": {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-passing-first-004/F02-model-guide.svg",
+      "sha256": "7545da3da6cb8ebd582fd7f7addd554f796287b36c7aaf3acee3bc24fdb29ded"
+    },
+    "prompt": {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-passing-first-004/F02-proposed-prompt.txt",
+      "sha256": "7feb70bd6c60ac6183735ae23653e8c9a340450dabb113e5fc98543953040ee5"
+    }
+  },
+  "call_budget": {
+    "imagegen_calls_made": 0,
+    "proposed_calls": 1,
+    "parent_authorized": false
+  }
+}

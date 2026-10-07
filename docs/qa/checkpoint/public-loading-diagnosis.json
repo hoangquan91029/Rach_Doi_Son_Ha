@@ -1,0 +1,459 @@
+{
+  "url": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/?art=pilot",
+  "resolveIp": "103.84.155.153",
+  "tlsVerificationBypassed": false,
+  "readyMs": 31232,
+  "httpStatus": 200,
+  "securityDetails": {
+    "issuer": "YE1",
+    "protocol": "TLS 1.3",
+    "subjectName": "kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net",
+    "validFrom": 1786518706,
+    "validTo": 1794294705
+  },
+  "serverAddress": {
+    "ipAddress": "103.84.155.153",
+    "port": 443
+  },
+  "snapshot": {
+    "mode": null,
+    "localPlayer": 0,
+    "roomCode": null,
+    "paused": false,
+    "camera": {
+      "x": 24,
+      "y": 24,
+      "zoom": 1
+    },
+    "selection": [],
+    "tick": null,
+    "pingMs": 0,
+    "frameMs": 0,
+    "art": {
+      "enabled": true,
+      "phase": "CANDIDATE",
+      "quality": "CANDIDATE",
+      "groundDraws": 0,
+      "propDraws": 0,
+      "entityDraws": 0,
+      "missing": [],
+      "pipeline": {
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 13,
+        "ready": 13,
+        "approved": 0,
+        "candidates": 13,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "failures": []
+      }
+    },
+    "terrainCache": {
+      "builds": 0,
+      "draws": 0,
+      "pixels": 0
+    },
+    "displayedState": null
+  },
+  "errors": [],
+  "requests": [
+    {
+      "url": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/?art=pilot",
+      "type": "document",
+      "atMs": 5,
+      "endMs": 1010,
+      "timing": {
+        "startTime": 1791386762807.617,
+        "domainLookupStart": 0.449,
+        "domainLookupEnd": 0.456,
+        "connectStart": 0.456,
+        "secureConnectionStart": 179.505,
+        "connectEnd": 711.126,
+        "requestStart": 711.271,
+        "responseStart": 998.633,
+        "responseEnd": 1000.112
+      },
+      "status": 200
+    },
+    {
+      "url": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/assets/index-BGPMj5CE.js",
+      "type": "script",
+      "atMs": 1008,
+      "endMs": 1739,
+      "timing": {
+        "startTime": 1791386763813.138,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 0.421,
+        "responseStart": 202.642,
+        "responseEnd": 729.933
+      },
+      "status": 200
+    },
+    {
+      "url": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/assets/index-DZSftvxz.css",
+      "type": "stylesheet",
+      "atMs": 1009,
+      "endMs": 1540,
+      "timing": {
+        "startTime": 1791386763813.4019,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 0.105,
+        "responseStart": 201.745,
+        "responseEnd": 532.007
+      },
+      "status": 200
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap",
+      "type": "stylesheet",
+      "atMs": 1540,
+      "endMs": 1824,
+      "timing": {
+        "startTime": 1791386764342.487,
+        "domainLookupStart": 0.063,
+        "domainLookupEnd": 34.679,
+        "connectStart": 34.733,
+        "secureConnectionStart": 107.337,
+        "connectEnd": 182.395,
+        "requestStart": 182.505,
+        "responseStart": 282.875,
+        "responseEnd": 283.781
+      },
+      "status": 200
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2",
+      "type": "font",
+      "atMs": 1839,
+      "endMs": 2050,
+      "timing": {
+        "startTime": 1791386764642.335,
+        "domainLookupStart": 0.053,
+        "domainLookupEnd": 0.614,
+        "connectStart": 0.679,
+        "secureConnectionStart": 85.455,
+        "connectEnd": 124.422,
+        "requestStart": 124.552,
+        "responseStart": 164.718,
+        "responseEnd": 222.173
+      },
+      "status": 200
+    },
+    {
+      "url": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/assets/art-v1/manifest.json",
+      "type": "fetch",
+      "atMs": 1840,
+      "endMs": 2331,
+      "timing": {
+        "startTime": 1791386764642.103,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 0.385,
+        "responseStart": 201.912,
+        "responseEnd": 491.279
+      },
+      "status": 200
+    },
+    {
+      "url": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/assets/art-v1/runtime/grass.webp",
+      "type": "fetch",
+      "atMs": 2333,
+      "endMs": 13390,
+      "timing": {
+        "startTime": 1791386765135.654,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 0.795,
+        "responseStart": 502.441,
+        "responseEnd": 11056.643
+      },
+      "status": 200
+    },
+    {
+      "url": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/assets/art-v1/runtime/water.webp",
+      "type": "fetch",
+      "atMs": 2334,
+      "endMs": 10835,
+      "timing": {
+        "startTime": 1791386765135.885,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 0.617,
+        "responseStart": 211.577,
+        "responseEnd": 8501.3
+      },
+      "status": 200
+    },
+    {
+      "url": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/assets/art-v1/runtime/forest-512.webp",
+      "type": "fetch",
+      "atMs": 2334,
+      "endMs": 12371,
+      "timing": {
+        "startTime": 1791386765136.0728,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 0.478,
+        "responseStart": 212.046,
+        "responseEnd": 10037.579
+      },
+      "status": 200
+    },
+    {
+      "url": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/assets/art-v1/runtime/residence.webp",
+      "type": "fetch",
+      "atMs": 2334,
+      "endMs": 21281,
+      "timing": {
+        "startTime": 1791386765136.2898,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 0.31,
+        "responseStart": 3023.024,
+        "responseEnd": 18945.611
+      },
+      "status": 200
+    },
+    {
+      "url": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/assets/art-v1/runtime/infantry-idle-D00.webp",
+      "type": "fetch",
+      "atMs": 21305,
+      "endMs": 22918,
+      "timing": {
+        "startTime": 1791386784107.835,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 0.505,
+        "responseStart": 285.172,
+        "responseEnd": 1612.447
+      },
+      "status": 200
+    },
+    {
+      "url": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/assets/art-v1/runtime/cavalry-idle-D00.webp",
+      "type": "fetch",
+      "atMs": 21305,
+      "endMs": 24352,
+      "timing": {
+        "startTime": 1791386784108.0989,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 0.271,
+        "responseStart": 595.489,
+        "responseEnd": 3046.094
+      },
+      "status": 200
+    },
+    {
+      "url": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/assets/art-v1/runtime/villager-idle-D00.webp",
+      "type": "fetch",
+      "atMs": 21305,
+      "endMs": 24249,
+      "timing": {
+        "startTime": 1791386784108.189,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 0.199,
+        "responseStart": 1048.796,
+        "responseEnd": 2942.944
+      },
+      "status": 200
+    },
+    {
+      "url": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/assets/art-v1/runtime/tran-hung-dao-idle-D00.webp",
+      "type": "fetch",
+      "atMs": 21305,
+      "endMs": 24448,
+      "timing": {
+        "startTime": 1791386784108.262,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 0.147,
+        "responseStart": 1049.3,
+        "responseEnd": 3143.039
+      },
+      "status": 200
+    },
+    {
+      "url": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/assets/art-v1/runtime/unit-contact-shadow.webp",
+      "type": "fetch",
+      "atMs": 24453,
+      "endMs": 24674,
+      "timing": {
+        "startTime": 1791386787256.4102,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 0.636,
+        "responseStart": 210.828,
+        "responseEnd": 220.88
+      },
+      "status": 200
+    },
+    {
+      "url": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/assets/art-v1/runtime/ford.webp",
+      "type": "fetch",
+      "atMs": 24453,
+      "endMs": 29574,
+      "timing": {
+        "startTime": 1791386787256.656,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 0.456,
+        "responseStart": 1023.34,
+        "responseEnd": 5120.193
+      },
+      "status": 200
+    },
+    {
+      "url": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/assets/art-v1/runtime/shore-b.webp",
+      "type": "fetch",
+      "atMs": 24453,
+      "endMs": 28652,
+      "timing": {
+        "startTime": 1791386787256.78,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 0.356,
+        "responseStart": 220.231,
+        "responseEnd": 4197.771
+      },
+      "status": 200
+    },
+    {
+      "url": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/assets/art-v1/runtime/forest-bamboo-512.webp",
+      "type": "fetch",
+      "atMs": 24453,
+      "endMs": 27218,
+      "timing": {
+        "startTime": 1791386787256.914,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 0.261,
+        "responseStart": 409.189,
+        "responseEnd": 2764.242
+      },
+      "status": 200
+    },
+    {
+      "url": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/assets/art-v1/runtime/forest-palm-512.webp",
+      "type": "fetch",
+      "atMs": 29582,
+      "endMs": 30803,
+      "timing": {
+        "startTime": 1791386792384.909,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 0.175,
+        "responseStart": 203.978,
+        "responseEnd": 1220.577
+      },
+      "status": 200
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2",
+      "type": "font",
+      "atMs": 30846,
+      "endMs": 31006,
+      "timing": {
+        "startTime": 1791386793648.6008,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 0.671,
+        "responseStart": 157.573,
+        "responseEnd": 184.622
+      },
+      "status": 200
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTLYgFE_.woff2",
+      "type": "font",
+      "atMs": 30846,
+      "endMs": 31008,
+      "timing": {
+        "startTime": 1791386793649.383,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 0.151,
+        "responseStart": 157.815,
+        "responseEnd": 175.482
+      },
+      "status": 200
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTPYgFE_.woff2",
+      "type": "font",
+      "atMs": 30846,
+      "endMs": 31105,
+      "timing": {
+        "startTime": 1791386793649.476,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 0.075,
+        "responseStart": 158.739,
+        "responseEnd": 273.856
+      },
+      "status": 200
+    }
+  ]
+}

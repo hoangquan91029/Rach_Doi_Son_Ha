@@ -1,0 +1,91 @@
+{
+  "locked_identity_master": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+    "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+    "role": "sole identity, appearance, body-volume, palette and camera authority"
+  },
+  "first_call_proposed_inputs": [
+    {
+      "order": 1,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+      "role": "locked identity master; sole appearance/camera authority"
+    },
+    {
+      "order": 2,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-passing-first-004/F02-master-only-raw.png",
+      "sha256": "f546e96687e2e2ad4de282bbbf16668e932292a0306f61ccaf4d57c60e4919da",
+      "role": "current-job selected F01 at 100ms; unchanged raw handed off from 004, original producer filename says F02; REVIEW_ONLY_EARLY_SWING_DIAGNOSTIC; selected predecessor only"
+    },
+    {
+      "order": 3,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-rooted-loop-005/F04-bridge-model-guide.png",
+      "sha256": "0a511e39af8a82175ef08d831065cf88fe17ce03cd17c92272532df5f25fc4d4",
+      "role": "model-only F04 phase/contact geometry guide; no appearance or camera authority"
+    }
+  ],
+  "excluded_from_all_generation_inputs": [
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-pilot-001/F00-raw.png",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-pilot-001/F04-raw.png",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-guided-correction-002/F04-guided-raw.png",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-master-only-003/F04-master-only-raw.png"
+  ],
+  "review_evidence_only": [
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-pilot-001/F00-raw.png",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-pilot-001/F04-raw.png",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-guided-correction-002/F04-guided-raw.png",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-master-only-003/F04-master-only-raw.png"
+  ],
+  "canvas": [
+    1254,
+    1254
+  ],
+  "source_root": [
+    650,
+    1140
+  ],
+  "first_call_fixed_review": "complete source canvases at 38/1254; same root placement; no per-frame bbox fit, crop, mirror, translate or resize",
+  "call_budget": {
+    "new_authored_frames_max": 7,
+    "calls_made_before_this_call": 0,
+    "first_call_cap": 1,
+    "first_call_parent_authorized": true,
+    "retry_calls": 0,
+    "one_call_per_remaining_slot": true,
+    "calls_made": 1
+  },
+  "first_call_proposed_prompt": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-rooted-loop-005/F04-bridge-prompt.txt",
+    "sha256": "62e276720615ff1345780b5f443ca020d3684f003cf719791fe0925973ba5678",
+    "role": "exact first-call prompt; advances selected F01 at 100ms to F04 at 400ms"
+  },
+  "first_call_guide_source": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-rooted-loop-005/F04-bridge-model-guide.svg",
+    "sha256": "3de1656926493d9596771c0069ea2a0c541342ae7c256074f0c160f329554f18",
+    "rendered_png_sha256": "0a511e39af8a82175ef08d831065cf88fe17ce03cd17c92272532df5f25fc4d4",
+    "role": "model-only phase/contact geometry; source rendered and inspected at native and fixed 38/1254 scale"
+  },
+  "prior_pose_review_decision": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-passing-first-004/parent-review-decision.json",
+    "role": "separate review receipt; 004 raw remains immutable and attached only once for proposed continuity",
+    "sha256": "a0f08c8b072d6bcfcf735423be85f0247c9fd3c523ca33149ccfee9e0432682d"
+  },
+  "selected_current_job_source_frames": [
+    {
+      "slot": "F01",
+      "time_ms": 100,
+      "source_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-passing-first-004/F02-master-only-raw.png",
+      "sha256": "f546e96687e2e2ad4de282bbbf16668e932292a0306f61ccaf4d57c60e4919da",
+      "original_source_slot_name": "F02 in 004 producer metadata",
+      "selection_status": "REVIEW_ONLY_EARLY_SWING_DIAGNOSTIC",
+      "role": "current 005 selected predecessor for continuity; not motion approval or runtime acceptance",
+      "raw_or_metadata_modified": false
+    }
+  ],
+  "first_call_result": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-rooted-loop-005/F04-raw.png",
+    "byte_sha256": "c2dfd05a30cafb2fc91882077bc4b62809244df3f09c83076ee32c1c72c8800f",
+    "rgba_sha256": "63707a1c1c33a6d18a83824951dc72e0d8c64724a22ab3a6b57e0be741c5139d",
+    "status": "pending parent review; not yet a selected sequence frame"
+  }
+}

@@ -1,0 +1,452 @@
+{
+  "url": "http://127.0.0.1:3000/",
+  "viewport": [
+    1440,
+    900
+  ],
+  "headless": true,
+  "durationMs": 4000,
+  "method": "Actual initial easy single-player UI and minimap camera movement; pure RAF samples plus separate 1Hz read-only snapshots. No dense battle.",
+  "results": [
+    {
+      "engine": "chromium",
+      "version": "151.0.7922.34",
+      "candidate": false,
+      "menu": {
+        "cadenceMs": {
+          "p50": 16.699999999999818,
+          "p95": 16.700000000000728,
+          "count": 241
+        },
+        "frameCostMs": {
+          "p50": null,
+          "p95": null,
+          "count": 0
+        },
+        "snapshotCloneMs": {
+          "p50": null,
+          "p95": null,
+          "count": 0
+        },
+        "visibility": "visible"
+      },
+      "basePure": {
+        "cadenceMs": {
+          "p50": 16.69999999999891,
+          "p95": 16.700000000000728,
+          "count": 241
+        },
+        "frameCostMs": {
+          "p50": null,
+          "p95": null,
+          "count": 0
+        },
+        "snapshotCloneMs": {
+          "p50": null,
+          "p95": null,
+          "count": 0
+        },
+        "visibility": "visible"
+      },
+      "baseRare": {
+        "cadenceMs": {
+          "p50": 16.69999999999891,
+          "p95": 16.700000000000728,
+          "count": 241
+        },
+        "frameCostMs": {
+          "p50": 4.700000017881393,
+          "p95": 4.700000017881393,
+          "count": 3
+        },
+        "snapshotCloneMs": {
+          "p50": 0.5,
+          "p95": 0.5,
+          "count": 3
+        },
+        "visibility": "visible"
+      },
+      "riverPure": {
+        "cadenceMs": {
+          "p50": 16.700000000000728,
+          "p95": 33.399999999999636,
+          "count": 185
+        },
+        "frameCostMs": {
+          "p50": null,
+          "p95": null,
+          "count": 0
+        },
+        "snapshotCloneMs": {
+          "p50": null,
+          "p95": null,
+          "count": 0
+        },
+        "visibility": "visible"
+      },
+      "riverRare": {
+        "cadenceMs": {
+          "p50": 16.700000000000728,
+          "p95": 33.400000000001455,
+          "count": 173
+        },
+        "frameCostMs": {
+          "p50": 8.300000011920929,
+          "p95": 8.300000011920929,
+          "count": 3
+        },
+        "snapshotCloneMs": {
+          "p50": 0.4000000059604645,
+          "p95": 0.4000000059604645,
+          "count": 3
+        },
+        "visibility": "visible"
+      },
+      "entities": 17,
+      "camera": {
+        "base": {
+          "x": 9.5,
+          "y": 23.5,
+          "zoom": 1.08
+        },
+        "river": {
+          "x": 26.997352430555555,
+          "y": 24,
+          "zoom": 1.08
+        }
+      },
+      "tick": 359,
+      "errors": []
+    },
+    {
+      "engine": "chromium",
+      "version": "151.0.7922.34",
+      "candidate": true,
+      "menu": {
+        "cadenceMs": {
+          "p50": 16.699999999999818,
+          "p95": 16.799999999999727,
+          "count": 241
+        },
+        "frameCostMs": {
+          "p50": null,
+          "p95": null,
+          "count": 0
+        },
+        "snapshotCloneMs": {
+          "p50": null,
+          "p95": null,
+          "count": 0
+        },
+        "visibility": "visible"
+      },
+      "basePure": {
+        "cadenceMs": {
+          "p50": 16.69999999999891,
+          "p95": 16.799999999999272,
+          "count": 239
+        },
+        "frameCostMs": {
+          "p50": null,
+          "p95": null,
+          "count": 0
+        },
+        "snapshotCloneMs": {
+          "p50": null,
+          "p95": null,
+          "count": 0
+        },
+        "visibility": "visible"
+      },
+      "baseRare": {
+        "cadenceMs": {
+          "p50": 16.69999999999891,
+          "p95": 16.700000000000728,
+          "count": 240
+        },
+        "frameCostMs": {
+          "p50": 8.399999976158142,
+          "p95": 8.399999976158142,
+          "count": 3
+        },
+        "snapshotCloneMs": {
+          "p50": 0.4000000059604645,
+          "p95": 0.4000000059604645,
+          "count": 3
+        },
+        "visibility": "visible"
+      },
+      "riverPure": {
+        "cadenceMs": {
+          "p50": 16.700000000000728,
+          "p95": 33.30000000000291,
+          "count": 215
+        },
+        "frameCostMs": {
+          "p50": null,
+          "p95": null,
+          "count": 0
+        },
+        "snapshotCloneMs": {
+          "p50": null,
+          "p95": null,
+          "count": 0
+        },
+        "visibility": "visible"
+      },
+      "riverRare": {
+        "cadenceMs": {
+          "p50": 16.700000000000728,
+          "p95": 33.29999999999927,
+          "count": 215
+        },
+        "frameCostMs": {
+          "p50": 11.5,
+          "p95": 11.5,
+          "count": 3
+        },
+        "snapshotCloneMs": {
+          "p50": 0.3999999761581421,
+          "p95": 0.3999999761581421,
+          "count": 3
+        },
+        "visibility": "visible"
+      },
+      "entities": 17,
+      "camera": {
+        "base": {
+          "x": 9.5,
+          "y": 23.5,
+          "zoom": 1.08
+        },
+        "river": {
+          "x": 26.997352430555555,
+          "y": 24,
+          "zoom": 1.08
+        }
+      },
+      "tick": 356,
+      "errors": []
+    },
+    {
+      "engine": "firefox",
+      "version": "153.0",
+      "candidate": false,
+      "menu": {
+        "cadenceMs": {
+          "p50": 17.059999999999945,
+          "p95": 17.179999999999836,
+          "count": 241
+        },
+        "frameCostMs": {
+          "p50": null,
+          "p95": null,
+          "count": 0
+        },
+        "snapshotCloneMs": {
+          "p50": null,
+          "p95": null,
+          "count": 0
+        },
+        "visibility": "visible"
+      },
+      "basePure": {
+        "cadenceMs": {
+          "p50": 17.05999999999949,
+          "p95": 17.159999999999854,
+          "count": 240
+        },
+        "frameCostMs": {
+          "p50": null,
+          "p95": null,
+          "count": 0
+        },
+        "snapshotCloneMs": {
+          "p50": null,
+          "p95": null,
+          "count": 0
+        },
+        "visibility": "visible"
+      },
+      "baseRare": {
+        "cadenceMs": {
+          "p50": 17.06000000000131,
+          "p95": 17.179999999998472,
+          "count": 239
+        },
+        "frameCostMs": {
+          "p50": 15,
+          "p95": 15,
+          "count": 3
+        },
+        "snapshotCloneMs": {
+          "p50": 0,
+          "p95": 0,
+          "count": 3
+        },
+        "visibility": "visible"
+      },
+      "riverPure": {
+        "cadenceMs": {
+          "p50": 17.07999999999811,
+          "p95": 33.220000000001164,
+          "count": 220
+        },
+        "frameCostMs": {
+          "p50": null,
+          "p95": null,
+          "count": 0
+        },
+        "snapshotCloneMs": {
+          "p50": null,
+          "p95": null,
+          "count": 0
+        },
+        "visibility": "visible"
+      },
+      "riverRare": {
+        "cadenceMs": {
+          "p50": 17.080000000001746,
+          "p95": 33.23999999999796,
+          "count": 217
+        },
+        "frameCostMs": {
+          "p50": 19,
+          "p95": 19,
+          "count": 3
+        },
+        "snapshotCloneMs": {
+          "p50": 0,
+          "p95": 0,
+          "count": 3
+        },
+        "visibility": "visible"
+      },
+      "entities": 17,
+      "camera": {
+        "base": {
+          "x": 9.5,
+          "y": 23.5,
+          "zoom": 1.08
+        },
+        "river": {
+          "x": 26.666666666666668,
+          "y": 24,
+          "zoom": 1.08
+        }
+      },
+      "tick": 360,
+      "errors": []
+    },
+    {
+      "engine": "firefox",
+      "version": "153.0",
+      "candidate": true,
+      "menu": {
+        "cadenceMs": {
+          "p50": 16.440000000000055,
+          "p95": 17.259999999999764,
+          "count": 241
+        },
+        "frameCostMs": {
+          "p50": null,
+          "p95": null,
+          "count": 0
+        },
+        "snapshotCloneMs": {
+          "p50": null,
+          "p95": null,
+          "count": 0
+        },
+        "visibility": "visible"
+      },
+      "basePure": {
+        "cadenceMs": {
+          "p50": 17.040000000000873,
+          "p95": 17.18000000000029,
+          "count": 240
+        },
+        "frameCostMs": {
+          "p50": null,
+          "p95": null,
+          "count": 0
+        },
+        "snapshotCloneMs": {
+          "p50": null,
+          "p95": null,
+          "count": 0
+        },
+        "visibility": "visible"
+      },
+      "baseRare": {
+        "cadenceMs": {
+          "p50": 17.05999999999949,
+          "p95": 17.1200000000008,
+          "count": 239
+        },
+        "frameCostMs": {
+          "p50": 13,
+          "p95": 20,
+          "count": 4
+        },
+        "snapshotCloneMs": {
+          "p50": 1,
+          "p95": 1,
+          "count": 4
+        },
+        "visibility": "visible"
+      },
+      "riverPure": {
+        "cadenceMs": {
+          "p50": 17.040000000000873,
+          "p95": 17.179999999996653,
+          "count": 240
+        },
+        "frameCostMs": {
+          "p50": null,
+          "p95": null,
+          "count": 0
+        },
+        "snapshotCloneMs": {
+          "p50": null,
+          "p95": null,
+          "count": 0
+        },
+        "visibility": "visible"
+      },
+      "riverRare": {
+        "cadenceMs": {
+          "p50": 17.040000000000873,
+          "p95": 17.18000000000029,
+          "count": 240
+        },
+        "frameCostMs": {
+          "p50": 13,
+          "p95": 13,
+          "count": 3
+        },
+        "snapshotCloneMs": {
+          "p50": 0,
+          "p95": 0,
+          "count": 3
+        },
+        "visibility": "visible"
+      },
+      "entities": 17,
+      "camera": {
+        "base": {
+          "x": 9.5,
+          "y": 23.5,
+          "zoom": 1.08
+        },
+        "river": {
+          "x": 26.666666666666668,
+          "y": 24,
+          "zoom": 1.08
+        }
+      },
+      "tick": 358,
+      "errors": []
+    }
+  ]
+}

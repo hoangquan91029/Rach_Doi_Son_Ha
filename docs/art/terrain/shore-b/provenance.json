@@ -1,0 +1,67 @@
+{
+  "status": "CANDIDATE",
+  "generation_tool": "built-in image_gen",
+  "generation_calls": 1,
+  "returned_generation_path": "/home/kieu-hoang-quan/.codex/generated_images/01a116cd-59ce-75b1-a5b0-b0c4c0323924/exec-ac67ecfc-4f33-4cec-bf66-8e90d8b7cf21.png",
+  "raw_copy_in_project": "docs/art/terrain/shore-b/shore-b.raw.png",
+  "runtime_candidate_copy": "public/assets/art-v1/terrain/shore-b.png",
+  "prompt_file": "docs/art/terrain/shore-b/prompt.txt",
+  "requested_dimensions": "square, 1024x1024 initially requested by prior shoreline task",
+  "actual_dimensions": [
+    1254,
+    1254
+  ],
+  "actual_format": "PNG",
+  "actual_mode": "RGB",
+  "alpha_extrema": [
+    255,
+    255
+  ],
+  "decoded_rgba_extrema": [
+    [
+      53,
+      239
+    ],
+    [
+      45,
+      225
+    ],
+    [
+      32,
+      204
+    ],
+    [
+      255,
+      255
+    ]
+  ],
+  "raw_file_sha256": "977c09ab6cdcbe48fd244c416dafd9f9353360bf41e1ac125edc55a460793fd3",
+  "decoded_rgba_sha256": "aa77e27379cd735ba083103e87e8d427c54ca95461484b932adc04bcdf902736",
+  "input_images": [],
+  "input_hashes": [],
+  "repeat_qa": {
+    "preview": "docs/art/terrain/shore-b/shore-b.repeat-qa-3x3.png",
+    "method": "Unmodified 3x3 packaging repeat of the original RGBA pixels",
+    "edge_differences": {
+      "horizontal": {
+        "mean_absolute_rgb_difference": 11.57,
+        "max_absolute_channel_difference": 53,
+        "mean_per_pixel_euclidean_rgb_difference": 20.48
+      },
+      "vertical": {
+        "mean_absolute_rgb_difference": 11.33,
+        "max_absolute_channel_difference": 79,
+        "mean_per_pixel_euclidean_rgb_difference": 20.36
+      }
+    }
+  },
+  "visual_observations": [
+    "Muted gray-ochre wet earth with subtle subdued green undertone; no large color islands or diagonal bands.",
+    "Native image has even, fine grain with scattered visible small pebbles.",
+    "No waterbody, shoreline silhouette, root web, sky reflection, foam, text, grid, or diamond pattern is visible.",
+    "3x3 repeat preview recorded separately for visual inspection.",
+    "At 3x3 scale, tile boundaries form faint but visible horizontal and vertical seams; the candidate does not yet demonstrate seamless repetition.",
+    "No large macro islands recur, but the fine grain and pebble speckles remain busier than the requested quiet strip material."
+  ],
+  "review": "CANDIDATE only; inspect further in the map slice. Visible repeat seams and busy grain remain; no approval or integration claim."
+}

@@ -1,0 +1,103 @@
+{
+  "status": "RAW_GENERATED_F02_PASSING_CANDIDATE_PENDING_PARENT_REVIEW",
+  "frame": "F02 D00 passing at 200ms; one whole-body output only; unselected pending parent review",
+  "built_in_imagegen_calls_made": 1,
+  "authorized_call_cap": 1,
+  "transparent_background_requested": true,
+  "raw_metrics": {
+    "generated_output_source": "/home/kieu-hoang-quan/.codex/generated_images/01a116ce-195d-73e0-a579-e4e5e990575d/exec-62faeda3-9a58-46cc-8053-143d44b1e0be.png",
+    "raw_file": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-passing-first-004/F02-master-only-raw.png",
+    "raw_sha256": "f546e96687e2e2ad4de282bbbf16668e932292a0306f61ccaf4d57c60e4919da",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bbox_threshold_128": [
+      416,
+      56,
+      872,
+      1187
+    ],
+    "transparent_pixels": 1264416,
+    "partial_alpha_pixels": 307645
+  },
+  "actual_prompt": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-passing-first-004/F02-imagegen-prompt.txt",
+    "sha256": "7feb70bd6c60ac6183735ae23653e8c9a340450dabb113e5fc98543953040ee5"
+  },
+  "input_images_attached": [
+    {
+      "order": 1,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+      "role": "sole identity, appearance, proportion, palette, camera and framing authority"
+    },
+    {
+      "order": 2,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-passing-first-004/F02-model-guide.png",
+      "sha256": "2f88bb8c1f876c24bc876ed07e3572925d76ff1d369a4d614fc45eab107929cb",
+      "role": "model-only passing phase/support-swing gap and ownership guide"
+    }
+  ],
+  "review_evidence_only_not_attached": [
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-pilot-001/F00-raw.png",
+      "sha256": "57fe10ac4a0708ff168ce6a0eb1f4b932a98673b4dd34a97aee264f38e55acb4",
+      "role": "selected F00 from closed pilot-001; comparison evidence only"
+    },
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-pilot-001/F04-raw.png",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-guided-correction-002/F04-guided-raw.png",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-master-only-003/F04-master-only-raw.png"
+  ],
+  "review_comparisons": [
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-passing-first-004/MASTER-F00-F02-fixed-38px-review.png",
+      "method": "whole 1254x1254 canvases scaled by 38/1254; root (650,1140) at consistent per-panel placement; no bbox fitting, crop, mirror or frame adjustment",
+      "sha256": "e52f982962d45c57d70b65615a250512b7da2eb8c4ba1b2db0a16eb77224bf46"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-passing-first-004/MASTER-F00-F02-fixed-38px-review-6x.png",
+      "method": "nearest-neighbour magnification of the fixed-38 comparison for inspection only",
+      "sha256": "12264278e025e184ad841022a72bca27ca28a6f2bbb525a9dd9fe5fc0f3e2b7f"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-passing-first-004/F02-foot-landmark-diagnostic.png",
+      "method": "coordinate grid over a review-only copy; raw preserved byte-for-byte",
+      "sha256": "a40dfc44fbf25ebc932580edcd5345fb938e5e9b58e9dc833caa7f1f6e3f866d"
+    }
+  ],
+  "observations": {
+    "raised_far_foot": "The screen-left/far sandal is plainly airborne, approximately centered near (550,945) with its sole bottom around y=980. The planted sandal sole is near y=1170, so the raw image-coordinate vertical separation is about 190 px (~5.8 px at fixed 38 scale), larger than the guide target (~120 px). There is no contact shadow beneath the raised sandal.",
+    "near_support": "The screen-right/near sandal is flat and grounded with a compact shadow. Its center is approximately (735,1140), about 85 px / 2.6 fixed-game px screen-right of the requested root x=650. The source canvas and root were not transformed.",
+    "limb_phase": "Near leg supports with modest bend; far leg is visibly flexed and lifted. FAR arm is back, NEAR arm forward.",
+    "identity_camera": "Face, nón lá, tunic, sash, trousers and painterly material remain close to master. The three-quarter screen-ESE view is retained; no straight-front turn or guide colors/labels appear.",
+    "body_scale": "Full-canvas height remains close to master; silhouette width is slightly larger with the pose. No per-frame bbox fitting was applied.",
+    "complete_cycle": "No complete cycle; no other key, in-between, integration or fanout.",
+    "swing_direction": "The raised far foot appears screen-left of the guide target near (750,1020), at approximately x=550. It is visibly lifted, but its forward screen placement differs from the intended guide; parent should judge whether this reads as F02 passing.",
+    "root_body": "Hat/head/torso remain close to the master framing; body axis remains around the fixed root. No whole-image translation, crop, bbox fit or scaling was applied."
+  },
+  "production_verdict": "PARENT_REVIEW_PENDING; output is not selected or approved for a loop.",
+  "master_bbox_threshold_128": [
+    422,
+    53,
+    852,
+    1196
+  ],
+  "comparison_geometry": {
+    "master_visible_bbox_size": [
+      430,
+      1143
+    ],
+    "raw_visible_bbox_size": [
+      456,
+      1131
+    ],
+    "raw_width_change_percent": 6.0,
+    "raw_height_change_percent": -1.0
+  }
+}

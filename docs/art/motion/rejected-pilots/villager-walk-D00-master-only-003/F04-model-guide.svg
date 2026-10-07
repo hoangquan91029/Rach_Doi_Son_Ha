@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1254" height="1254" viewBox="0 0 1254 1254">
+<rect width="1254" height="1254" fill="#1d2a27"/>
+<g fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M400 1140H900" stroke="#77877b" stroke-width="3"/>
+  <!-- FAR limbs are orange and behind the body. Segment lengths remain comparable to the master. -->
+  <path d="M585 735L670 850L715 1000" stroke="#f28441" stroke-width="60"/><path d="M585 735L670 850L715 1000" stroke="#1c211c" stroke-width="10"/>
+  <path d="M525 350L465 415L425 500" stroke="#f28441" stroke-width="58"/><path d="M525 350L465 415L425 500" stroke="#1c211c" stroke-width="10"/>
+  <!-- torso -->
+  <path d="M535 325L603 292L737 300L796 355L772 590L746 735L558 735L529 590Z" fill="#dcd3b4" stroke="#1c211c" stroke-width="10"/>
+  <path d="M548 580H758" stroke="#7c6c52" stroke-width="28"/>
+  <!-- head and conical hat -->
+  <ellipse cx="661" cy="232" rx="59" ry="68" fill="#9d704c" stroke="#1c211c" stroke-width="8"/>
+  <path d="M505 205L628 70L812 202L785 231L540 231Z" fill="#b18f5d" stroke="#1c211c" stroke-width="10"/>
+  <path d="M524 207H790" stroke="#eedabc" stroke-width="12"/>
+  <!-- NEAR arm forward, NEAR leg trailing: cyan, in front. -->
+  <path d="M785 355L829 430L860 510" stroke="#41bece" stroke-width="64"/><path d="M785 355L829 430L860 510" stroke="#1c211c" stroke-width="10"/>
+  <path d="M704 735L630 850L570 1000" stroke="#41bece" stroke-width="62"/><path d="M704 735L630 850L570 1000" stroke="#1c211c" stroke-width="10"/>
+  <!-- Sandals, toes point along screen ESE. -->
+  <path d="M715 1000L740 1070" stroke="#f28441" stroke-width="50"/><path d="M715 1000L740 1070" stroke="#1c211c" stroke-width="8"/><path d="M740 1070L790 1110L777 1128L727 1090Z" fill="#f28441" stroke="#1c211c" stroke-width="8"/>
+  <path d="M570 1000L535 1068" stroke="#41bece" stroke-width="52"/><path d="M570 1000L535 1068" stroke="#1c211c" stroke-width="8"/><path d="M535 1068L490 1094L498 1116L550 1090Z" fill="#41bece" stroke="#1c211c" stroke-width="8"/>
+  <path d="M740 1070L790 1110M535 1068L490 1094" stroke="#f4e8c6" stroke-width="5"/>
+</g>
+<g fill="#e1d7b6" stroke="#1c211c" stroke-width="8">
+ <circle cx="635" cy="860" r="36"/><circle cx="465" cy="415" r="29"/>
+ <circle cx="829" cy="430" r="31"/><circle cx="650" cy="860" r="38"/>
+</g>
+<g font-family="DejaVu Sans, sans-serif" font-weight="bold" paint-order="stroke" stroke="#1c211c" stroke-width="4">
+ <text x="85" y="900" fill="#41bece" font-size="28">NEAR / SCREEN-RIGHT</text>
+ <text x="85" y="938" fill="#41bece" font-size="23">TRAILS • ARM FORWARD</text>
+ <text x="850" y="900" fill="#f28441" font-size="28">FAR / SCREEN-LEFT</text>
+ <text x="850" y="938" fill="#f28441" font-size="23">LEADS • ARM BACK</text>
+ <text x="563" y="1180" fill="#e1d7b6" font-size="24">ROOT (650, 1140)</text>
+</g>
+<g fill="#f28441" stroke="#1c211c" stroke-width="6"><circle cx="790" cy="1110" r="15"/></g>
+<g fill="#41bece" stroke="#1c211c" stroke-width="6"><circle cx="490" cy="1094" r="15"/></g>
+</svg>

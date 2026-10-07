@@ -1,0 +1,65 @@
+{
+  "id": "forest-bamboo-a",
+  "status": "CANDIDATE",
+  "generation_tool": "built-in image_gen",
+  "generation_call_count": 1,
+  "returned_generation_path": "/home/kieu-hoang-quan/.codex/generated_images/01a116cd-59ce-75b1-a5b0-b0c4c0323924/exec-7db4cd87-5285-4ae6-9ced-da99558d94e4.png",
+  "raw_copy": "docs/art/terrain/forest-bamboo-a/forest-bamboo-a.raw.png",
+  "public_candidate": "public/assets/art-v1/terrain/forest-bamboo-a.png",
+  "prompt_file": "docs/art/terrain/forest-bamboo-a/prompt.txt",
+  "input_images": [],
+  "input_hashes": [],
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "mode": "RGBA",
+  "format": "PNG",
+  "requested_transparency": true,
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "raw_sha256": "bb9b5088b37356b6c640fbc6d287460ac0f1605c41181fd77d17348b18f9b7c8",
+  "decoded_rgba_sha256": "d019aec99229a059eb25d54a4c7a7a7386b2b070e34f978e8b47c2572e9023d1",
+  "alpha_bbox_threshold_gt_0": [
+    0,
+    7,
+    1248,
+    1254
+  ],
+  "alpha_bbox_threshold_gt_8": [
+    195,
+    35,
+    1094,
+    1175
+  ],
+  "family_layout": {
+    "source_canvas": [
+      1254,
+      1254
+    ],
+    "render": [
+      75,
+      75
+    ],
+    "source_pivot": [
+      645,
+      1140
+    ],
+    "preview_method": "Lanczos resize of entire 1254x1254 canvas to 75x75; no alpha-bbox fitting, crop, or recenter",
+    "preview_pivot": [
+      38.577,
+      68.182
+    ]
+  },
+  "preview": "docs/art/terrain/forest-bamboo-a/forest-bamboo-a.preview-75.png",
+  "visual_observations": [
+    "Five distinct bamboo canes with clear joints and layered narrow leaves; recognizable at 75x75.",
+    "Localized soft dark contact shadow is present near the source pivot.",
+    "Substantive alpha bbox at alpha>8 is [195,35,1094,1175]; top crown margin is 35 source pixels.",
+    "At alpha>0, two one-pixel alpha remnants touch left and bottom canvas edges; no substantive opaque content touches those edges.",
+    "Bright yellow-green edging is visible around some leaves in the native preview and should be reviewed in the game slice."
+  ],
+  "review": "Candidate only. Root alignment appears near the requested pivot; tight crown margin, low-alpha border remnants, and bright edge fringing require parent review."
+}

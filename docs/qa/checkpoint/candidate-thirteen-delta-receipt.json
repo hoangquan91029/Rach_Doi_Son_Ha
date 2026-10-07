@@ -1,0 +1,4211 @@
+{
+  "transport": {
+    "requestedUrl": "http://127.0.0.1:3000/?art=pilot",
+    "actualUrl": "http://127.0.0.1:3000/?art=pilot",
+    "resolveIp": null,
+    "tlsVerificationBypassed": false,
+    "httpStatus": 200,
+    "serverAddress": {
+      "ipAddress": "127.0.0.1",
+      "port": 3000
+    },
+    "securityDetails": {}
+  },
+  "performance": {
+    "method": "Pure numeric RAF callback; separate 1Hz read-only filtered snapshots. frameCost includes offline step/view and renderer synchronous work. Counts are observed scene only.",
+    "cadenceMs": {
+      "p50": 16.69999999999709,
+      "p95": 16.70000000001164,
+      "count": 7246
+    },
+    "peakObservedStateEntities": 52,
+    "peakObservedMilitary": 17,
+    "peakViewportEntities": 31,
+    "peakViewportMilitary": 14,
+    "windows": [
+      {
+        "elapsedMs": 1000.7999999821186,
+        "tick": 23,
+        "camera": {
+          "x": 5.496875,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 59,
+        "cadenceP50Ms": 16.700000000000045,
+        "cadenceP95Ms": 16.700000000000045,
+        "frameCostMs": 2.5999999940395355,
+        "snapshotCloneMs": 0.5999999940395355,
+        "liveObservedStateEntities": 17,
+        "observedMilitary": 5,
+        "liveInViewportEntities": 17,
+        "militaryInViewport": 5,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 2000.699999988079,
+        "tick": 43,
+        "camera": {
+          "x": 10.499565972222221,
+          "y": 18.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 59,
+        "cadenceP50Ms": 16.699999999999818,
+        "cadenceP95Ms": 16.799999999999727,
+        "frameCostMs": 3.199999988079071,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 17,
+        "observedMilitary": 5,
+        "liveInViewportEntities": 17,
+        "militaryInViewport": 5,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 3000.7999999821186,
+        "tick": 63,
+        "camera": {
+          "x": 13.496875,
+          "y": 26.498578752790177,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.699999999999818,
+        "cadenceP95Ms": 16.700000000000273,
+        "frameCostMs": 4.5,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 17,
+        "observedMilitary": 5,
+        "liveInViewportEntities": 17,
+        "militaryInViewport": 5,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 4000.699999988079,
+        "tick": 83,
+        "camera": {
+          "x": 13.496875,
+          "y": 20.49857875279018,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.699999999999818,
+        "cadenceP95Ms": 16.700000000000728,
+        "frameCostMs": 3.5999999940395355,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 17,
+        "observedMilitary": 5,
+        "liveInViewportEntities": 17,
+        "militaryInViewport": 5,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 5000.799999982119,
+        "tick": 103,
+        "camera": {
+          "x": 13.496875,
+          "y": 20.49857875279018,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.699999999999818,
+        "cadenceP95Ms": 16.700000000000728,
+        "frameCostMs": 3.600000023841858,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 17,
+        "observedMilitary": 5,
+        "liveInViewportEntities": 17,
+        "militaryInViewport": 5,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 6000.5999999940395,
+        "tick": 123,
+        "camera": {
+          "x": 11,
+          "y": 25.5,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.699999999999818,
+        "cadenceP95Ms": 16.699999999999818,
+        "frameCostMs": 3.4000000059604645,
+        "snapshotCloneMs": 0.4000000059604645,
+        "liveObservedStateEntities": 17,
+        "observedMilitary": 5,
+        "liveInViewportEntities": 17,
+        "militaryInViewport": 5,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 7000.699999988079,
+        "tick": 143,
+        "camera": {
+          "x": 12.497786458333334,
+          "y": 30.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.699999999999818,
+        "cadenceP95Ms": 16.700000000000728,
+        "frameCostMs": 3.300000011920929,
+        "snapshotCloneMs": 0.4000000059604645,
+        "liveObservedStateEntities": 17,
+        "observedMilitary": 5,
+        "liveInViewportEntities": 17,
+        "militaryInViewport": 5,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 8000.5999999940395,
+        "tick": 163,
+        "camera": {
+          "x": 12.497786458333334,
+          "y": 30.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999891,
+        "cadenceP95Ms": 16.799999999999272,
+        "frameCostMs": 3.199999988079071,
+        "snapshotCloneMs": 0.4000000059604645,
+        "liveObservedStateEntities": 17,
+        "observedMilitary": 5,
+        "liveInViewportEntities": 17,
+        "militaryInViewport": 5,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 9000.699999988079,
+        "tick": 183,
+        "camera": {
+          "x": 12.497786458333334,
+          "y": 30.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999891,
+        "cadenceP95Ms": 16.700000000000728,
+        "frameCostMs": 3.2999999821186066,
+        "snapshotCloneMs": 0.4000000059604645,
+        "liveObservedStateEntities": 17,
+        "observedMilitary": 5,
+        "liveInViewportEntities": 17,
+        "militaryInViewport": 5,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 10000.59999999404,
+        "tick": 203,
+        "camera": {
+          "x": 12.497786458333334,
+          "y": 30.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999891,
+        "cadenceP95Ms": 16.799999999999272,
+        "frameCostMs": 3.300000011920929,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 17,
+        "observedMilitary": 5,
+        "liveInViewportEntities": 17,
+        "militaryInViewport": 5,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 11000.699999988079,
+        "tick": 223,
+        "camera": {
+          "x": 12.497786458333334,
+          "y": 30.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999891,
+        "cadenceP95Ms": 16.700000000000728,
+        "frameCostMs": 3.2000000178813934,
+        "snapshotCloneMs": 0.30000001192092896,
+        "liveObservedStateEntities": 17,
+        "observedMilitary": 5,
+        "liveInViewportEntities": 17,
+        "militaryInViewport": 5,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 12000.90000000596,
+        "tick": 243,
+        "camera": {
+          "x": 12.497786458333334,
+          "y": 30.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999891,
+        "cadenceP95Ms": 16.700000000000728,
+        "frameCostMs": 3.2000000178813934,
+        "snapshotCloneMs": 0.3999999761581421,
+        "liveObservedStateEntities": 17,
+        "observedMilitary": 5,
+        "liveInViewportEntities": 17,
+        "militaryInViewport": 5,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 13000.59999999404,
+        "tick": 263,
+        "camera": {
+          "x": 12.497786458333334,
+          "y": 30.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 57,
+        "cadenceP50Ms": 16.69999999999891,
+        "cadenceP95Ms": 16.799999999999272,
+        "frameCostMs": 4.299999982118607,
+        "snapshotCloneMs": 0.4000000059604645,
+        "liveObservedStateEntities": 18,
+        "observedMilitary": 5,
+        "liveInViewportEntities": 18,
+        "militaryInViewport": 5,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 14000.699999988079,
+        "tick": 283,
+        "camera": {
+          "x": 5.496875,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999891,
+        "cadenceP95Ms": 16.799999999999272,
+        "frameCostMs": 2.699999988079071,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 18,
+        "observedMilitary": 5,
+        "liveInViewportEntities": 18,
+        "militaryInViewport": 5,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 15000.59999999404,
+        "tick": 303,
+        "camera": {
+          "x": 5.496875,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999891,
+        "cadenceP95Ms": 16.799999999999272,
+        "frameCostMs": 2.699999988079071,
+        "snapshotCloneMs": 0.30000001192092896,
+        "liveObservedStateEntities": 18,
+        "observedMilitary": 5,
+        "liveInViewportEntities": 18,
+        "militaryInViewport": 5,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 16000.699999988079,
+        "tick": 323,
+        "camera": {
+          "x": 5.496875,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999891,
+        "cadenceP95Ms": 16.700000000000728,
+        "frameCostMs": 2.899999976158142,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 18,
+        "observedMilitary": 5,
+        "liveInViewportEntities": 18,
+        "militaryInViewport": 5,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 17000.69999998808,
+        "tick": 343,
+        "camera": {
+          "x": 5.496875,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.700000000000728,
+        "frameCostMs": 2.7000000178813934,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 19,
+        "observedMilitary": 6,
+        "liveInViewportEntities": 19,
+        "militaryInViewport": 6,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 18000.69999998808,
+        "tick": 363,
+        "camera": {
+          "x": 5.496875,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.700000000000728,
+        "cadenceP95Ms": 16.700000000000728,
+        "frameCostMs": 2.5,
+        "snapshotCloneMs": 0.5999999940395355,
+        "liveObservedStateEntities": 19,
+        "observedMilitary": 6,
+        "liveInViewportEntities": 19,
+        "militaryInViewport": 6,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 19000.59999999404,
+        "tick": 383,
+        "camera": {
+          "x": 5.496875,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.700000000000728,
+        "cadenceP95Ms": 16.700000000000728,
+        "frameCostMs": 3,
+        "snapshotCloneMs": 0.4000000059604645,
+        "liveObservedStateEntities": 19,
+        "observedMilitary": 6,
+        "liveInViewportEntities": 19,
+        "militaryInViewport": 6,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 20000.59999999404,
+        "tick": 403,
+        "camera": {
+          "x": 13.496875,
+          "y": 26.498578752790177,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.700000000000728,
+        "frameCostMs": 4.0999999940395355,
+        "snapshotCloneMs": 0.30000001192092896,
+        "liveObservedStateEntities": 20,
+        "observedMilitary": 6,
+        "liveInViewportEntities": 20,
+        "militaryInViewport": 6,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 21000.69999998808,
+        "tick": 423,
+        "camera": {
+          "x": 13.496875,
+          "y": 26.498578752790177,
+          "zoom": 1.08
+        },
+        "rafSamples": 59,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.799999999999272,
+        "frameCostMs": 3.7999999821186066,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 20,
+        "observedMilitary": 6,
+        "liveInViewportEntities": 20,
+        "militaryInViewport": 6,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 22000.69999998808,
+        "tick": 443,
+        "camera": {
+          "x": 13.496875,
+          "y": 26.498578752790177,
+          "zoom": 1.08
+        },
+        "rafSamples": 58,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.80000000000291,
+        "frameCostMs": 3.9000000059604645,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 20,
+        "observedMilitary": 6,
+        "liveInViewportEntities": 20,
+        "militaryInViewport": 6,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 23012.40000000596,
+        "tick": 463,
+        "camera": {
+          "x": 10.997352430555555,
+          "y": 27,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.700000000000728,
+        "cadenceP95Ms": 16.700000000000728,
+        "frameCostMs": 6.399999976158142,
+        "snapshotCloneMs": 0.4000000059604645,
+        "liveObservedStateEntities": 21,
+        "observedMilitary": 6,
+        "liveInViewportEntities": 21,
+        "militaryInViewport": 6,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 24000.69999998808,
+        "tick": 483,
+        "camera": {
+          "x": 10.997352430555555,
+          "y": 27,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.700000000000728,
+        "cadenceP95Ms": 16.700000000000728,
+        "frameCostMs": 3.5,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 21,
+        "observedMilitary": 6,
+        "liveInViewportEntities": 21,
+        "militaryInViewport": 6,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 25000.5,
+        "tick": 503,
+        "camera": {
+          "x": 10.997352430555555,
+          "y": 27,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.700000000000728,
+        "frameCostMs": 4.0999999940395355,
+        "snapshotCloneMs": 0.4000000059604645,
+        "liveObservedStateEntities": 21,
+        "observedMilitary": 6,
+        "liveInViewportEntities": 21,
+        "militaryInViewport": 6,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 26000.69999998808,
+        "tick": 523,
+        "camera": {
+          "x": 10.997352430555555,
+          "y": 27,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.700000000000728,
+        "cadenceP95Ms": 16.700000000000728,
+        "frameCostMs": 3.5,
+        "snapshotCloneMs": 0.5999999940395355,
+        "liveObservedStateEntities": 21,
+        "observedMilitary": 6,
+        "liveInViewportEntities": 21,
+        "militaryInViewport": 6,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 27000.59999999404,
+        "tick": 543,
+        "camera": {
+          "x": 7.498654513888889,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.700000000000728,
+        "cadenceP95Ms": 16.799999999999272,
+        "frameCostMs": 3,
+        "snapshotCloneMs": 0.4000000059604645,
+        "liveObservedStateEntities": 22,
+        "observedMilitary": 6,
+        "liveInViewportEntities": 22,
+        "militaryInViewport": 6,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 28014.40000000596,
+        "tick": 564,
+        "camera": {
+          "x": 10.499565972222221,
+          "y": 18.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 61,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.700000000000728,
+        "frameCostMs": 3.5999999940395355,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 22,
+        "observedMilitary": 6,
+        "liveInViewportEntities": 22,
+        "militaryInViewport": 6,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 29000.69999998808,
+        "tick": 583,
+        "camera": {
+          "x": 10.499565972222221,
+          "y": 18.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 59,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.799999999999272,
+        "frameCostMs": 3.2999999821186066,
+        "snapshotCloneMs": 0.4000000059604645,
+        "liveObservedStateEntities": 23,
+        "observedMilitary": 7,
+        "liveInViewportEntities": 23,
+        "militaryInViewport": 7,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 30000.69999998808,
+        "tick": 603,
+        "camera": {
+          "x": 10.499565972222221,
+          "y": 18.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.700000000000728,
+        "cadenceP95Ms": 16.700000000000728,
+        "frameCostMs": 3.2999999821186066,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 23,
+        "observedMilitary": 7,
+        "liveInViewportEntities": 23,
+        "militaryInViewport": 7,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 31000.69999998808,
+        "tick": 623,
+        "camera": {
+          "x": 10.499565972222221,
+          "y": 18.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.700000000000728,
+        "cadenceP95Ms": 16.799999999999272,
+        "frameCostMs": 3.300000011920929,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 23,
+        "observedMilitary": 7,
+        "liveInViewportEntities": 23,
+        "militaryInViewport": 7,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 32000.59999999404,
+        "tick": 643,
+        "camera": {
+          "x": 10.499565972222221,
+          "y": 18.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.700000000000728,
+        "cadenceP95Ms": 16.700000000000728,
+        "frameCostMs": 3.4000000059604645,
+        "snapshotCloneMs": 0.4000000059604645,
+        "liveObservedStateEntities": 23,
+        "observedMilitary": 7,
+        "liveInViewportEntities": 23,
+        "militaryInViewport": 7,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 33000.59999999404,
+        "tick": 663,
+        "camera": {
+          "x": 10.499565972222221,
+          "y": 18.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.80000000000291,
+        "frameCostMs": 3.300000011920929,
+        "snapshotCloneMs": 0.4000000059604645,
+        "liveObservedStateEntities": 23,
+        "observedMilitary": 7,
+        "liveInViewportEntities": 23,
+        "militaryInViewport": 7,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 34000.69999998808,
+        "tick": 683,
+        "camera": {
+          "x": 7.498654513888889,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.799999999995634,
+        "frameCostMs": 3.0999999940395355,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 24,
+        "observedMilitary": 7,
+        "liveInViewportEntities": 24,
+        "militaryInViewport": 7,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 35000.59999999404,
+        "tick": 703,
+        "camera": {
+          "x": 13.496875,
+          "y": 26.498578752790177,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.700000000004366,
+        "frameCostMs": 4.4000000059604645,
+        "snapshotCloneMs": 0.4000000059604645,
+        "liveObservedStateEntities": 24,
+        "observedMilitary": 7,
+        "liveInViewportEntities": 24,
+        "militaryInViewport": 7,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 36015,
+        "tick": 724,
+        "camera": {
+          "x": 13.496875,
+          "y": 26.498578752790177,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.700000000004366,
+        "frameCostMs": 4.799999982118607,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 24,
+        "observedMilitary": 7,
+        "liveInViewportEntities": 24,
+        "militaryInViewport": 7,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 37000.69999998808,
+        "tick": 743,
+        "camera": {
+          "x": 6.997352430555556,
+          "y": 18,
+          "zoom": 1.08
+        },
+        "rafSamples": 59,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.700000000004366,
+        "frameCostMs": 4.5,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 25,
+        "observedMilitary": 7,
+        "liveInViewportEntities": 25,
+        "militaryInViewport": 7,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 38000.79999998212,
+        "tick": 763,
+        "camera": {
+          "x": 6.997352430555556,
+          "y": 18,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.700000000004366,
+        "frameCostMs": 2.5999999940395355,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 25,
+        "observedMilitary": 7,
+        "liveInViewportEntities": 25,
+        "militaryInViewport": 7,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 39000.69999998808,
+        "tick": 783,
+        "camera": {
+          "x": 6.997352430555556,
+          "y": 18,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.799999999995634,
+        "frameCostMs": 2.800000011920929,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 25,
+        "observedMilitary": 7,
+        "liveInViewportEntities": 25,
+        "militaryInViewport": 7,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 40000.69999998808,
+        "tick": 803,
+        "camera": {
+          "x": 6.997352430555556,
+          "y": 18,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.700000000004366,
+        "frameCostMs": 4.799999982118607,
+        "snapshotCloneMs": 0.4000000059604645,
+        "liveObservedStateEntities": 25,
+        "observedMilitary": 7,
+        "liveInViewportEntities": 25,
+        "militaryInViewport": 7,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 41000.90000000596,
+        "tick": 823,
+        "camera": {
+          "x": 6.997352430555556,
+          "y": 18,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.799999999995634,
+        "frameCostMs": 2.699999988079071,
+        "snapshotCloneMs": 0.6000000238418579,
+        "liveObservedStateEntities": 26,
+        "observedMilitary": 8,
+        "liveInViewportEntities": 26,
+        "militaryInViewport": 8,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 42000.79999998212,
+        "tick": 843,
+        "camera": {
+          "x": 6.997352430555556,
+          "y": 18,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.700000000004366,
+        "frameCostMs": 2.5999999940395355,
+        "snapshotCloneMs": 0.5999999940395355,
+        "liveObservedStateEntities": 26,
+        "observedMilitary": 8,
+        "liveInViewportEntities": 26,
+        "militaryInViewport": 8,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 43000.69999998808,
+        "tick": 863,
+        "camera": {
+          "x": 6.997352430555556,
+          "y": 18,
+          "zoom": 1.08
+        },
+        "rafSamples": 57,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.80000000000291,
+        "frameCostMs": 3.800000011920929,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 26,
+        "observedMilitary": 8,
+        "liveInViewportEntities": 26,
+        "militaryInViewport": 8,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 44025.69999998808,
+        "tick": 884,
+        "camera": {
+          "x": 6.997352430555556,
+          "y": 18,
+          "zoom": 1.08
+        },
+        "rafSamples": 61,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.700000000004366,
+        "frameCostMs": 5.700000017881393,
+        "snapshotCloneMs": 1.0999999940395355,
+        "liveObservedStateEntities": 26,
+        "observedMilitary": 8,
+        "liveInViewportEntities": 26,
+        "militaryInViewport": 8,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 45000.79999998212,
+        "tick": 903,
+        "camera": {
+          "x": 6.997352430555556,
+          "y": 18,
+          "zoom": 1.08
+        },
+        "rafSamples": 59,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.700000000004366,
+        "frameCostMs": 3.100000023841858,
+        "snapshotCloneMs": 0.5999999940395355,
+        "liveObservedStateEntities": 26,
+        "observedMilitary": 8,
+        "liveInViewportEntities": 26,
+        "militaryInViewport": 8,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 46001,
+        "tick": 923,
+        "camera": {
+          "x": 6.997352430555556,
+          "y": 18,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.700000000004366,
+        "frameCostMs": 3.7000000178813934,
+        "snapshotCloneMs": 0.800000011920929,
+        "liveObservedStateEntities": 26,
+        "observedMilitary": 8,
+        "liveInViewportEntities": 26,
+        "militaryInViewport": 8,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 47000.79999998212,
+        "tick": 943,
+        "camera": {
+          "x": 6.997352430555556,
+          "y": 18,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.799999999995634,
+        "frameCostMs": 3.4000000059604645,
+        "snapshotCloneMs": 0.699999988079071,
+        "liveObservedStateEntities": 26,
+        "observedMilitary": 8,
+        "liveInViewportEntities": 26,
+        "militaryInViewport": 8,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 48012.69999998808,
+        "tick": 964,
+        "camera": {
+          "x": 6.997352430555556,
+          "y": 18,
+          "zoom": 1.08
+        },
+        "rafSamples": 61,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.799999999995634,
+        "frameCostMs": 3.0999999940395355,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 26,
+        "observedMilitary": 8,
+        "liveInViewportEntities": 26,
+        "militaryInViewport": 8,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 49000.79999998212,
+        "tick": 983,
+        "camera": {
+          "x": 6.997352430555556,
+          "y": 18,
+          "zoom": 1.08
+        },
+        "rafSamples": 59,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.80000000000291,
+        "frameCostMs": 2.800000011920929,
+        "snapshotCloneMs": 0.5999999940395355,
+        "liveObservedStateEntities": 26,
+        "observedMilitary": 8,
+        "liveInViewportEntities": 26,
+        "militaryInViewport": 8,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 50012.69999998808,
+        "tick": 1004,
+        "camera": {
+          "x": 6.997352430555556,
+          "y": 18,
+          "zoom": 1.08
+        },
+        "rafSamples": 61,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.700000000004366,
+        "frameCostMs": 2.800000011920929,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 26,
+        "observedMilitary": 8,
+        "liveInViewportEntities": 26,
+        "militaryInViewport": 8,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 51010.90000000596,
+        "tick": 1024,
+        "camera": {
+          "x": 6.997352430555556,
+          "y": 18,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.700000000004366,
+        "frameCostMs": 2.9000000059604645,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 26,
+        "observedMilitary": 8,
+        "liveInViewportEntities": 26,
+        "militaryInViewport": 8,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 52001,
+        "tick": 1043,
+        "camera": {
+          "x": 6.997352430555556,
+          "y": 18,
+          "zoom": 1.08
+        },
+        "rafSamples": 59,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.700000000004366,
+        "frameCostMs": 2.4000000059604645,
+        "snapshotCloneMs": 0.800000011920929,
+        "liveObservedStateEntities": 26,
+        "observedMilitary": 8,
+        "liveInViewportEntities": 26,
+        "militaryInViewport": 8,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 53007.5,
+        "tick": 1063,
+        "camera": {
+          "x": 5.496875,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.799999999995634,
+        "frameCostMs": 2.5999999940395355,
+        "snapshotCloneMs": 0.4000000059604645,
+        "liveObservedStateEntities": 27,
+        "observedMilitary": 9,
+        "liveInViewportEntities": 27,
+        "militaryInViewport": 9,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 54011.19999998808,
+        "tick": 1084,
+        "camera": {
+          "x": 5.496875,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 61,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.80000000000291,
+        "frameCostMs": 2.9000000059604645,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 27,
+        "observedMilitary": 9,
+        "liveInViewportEntities": 27,
+        "militaryInViewport": 9,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 55013.90000000596,
+        "tick": 1104,
+        "camera": {
+          "x": 5.496875,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.799999999995634,
+        "frameCostMs": 4.4000000059604645,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 27,
+        "observedMilitary": 9,
+        "liveInViewportEntities": 27,
+        "militaryInViewport": 9,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 56025,
+        "tick": 1124,
+        "camera": {
+          "x": 5.496875,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.799999999995634,
+        "frameCostMs": 4.4000000059604645,
+        "snapshotCloneMs": 0.9000000059604645,
+        "liveObservedStateEntities": 27,
+        "observedMilitary": 9,
+        "liveInViewportEntities": 27,
+        "militaryInViewport": 9,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 57012.59999999404,
+        "tick": 1144,
+        "camera": {
+          "x": 5.496875,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 59,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.700000000004366,
+        "frameCostMs": 2.699999988079071,
+        "snapshotCloneMs": 0.5999999940395355,
+        "liveObservedStateEntities": 27,
+        "observedMilitary": 9,
+        "liveInViewportEntities": 27,
+        "militaryInViewport": 9,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 58014.79999998212,
+        "tick": 1164,
+        "camera": {
+          "x": 5.496875,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.700000000004366,
+        "frameCostMs": 4.399999976158142,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 27,
+        "observedMilitary": 9,
+        "liveInViewportEntities": 27,
+        "militaryInViewport": 9,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 59015.09999999404,
+        "tick": 1184,
+        "camera": {
+          "x": 5.496875,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.799999999995634,
+        "frameCostMs": 2.7999999821186066,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 27,
+        "observedMilitary": 9,
+        "liveInViewportEntities": 27,
+        "militaryInViewport": 9,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 60010,
+        "tick": 1204,
+        "camera": {
+          "x": 5.496875,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.799999999995634,
+        "frameCostMs": 2.800000011920929,
+        "snapshotCloneMs": 0.5999999940395355,
+        "liveObservedStateEntities": 27,
+        "observedMilitary": 9,
+        "liveInViewportEntities": 27,
+        "militaryInViewport": 9,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 61013.90000000596,
+        "tick": 1224,
+        "camera": {
+          "x": 5.496875,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.700000000004366,
+        "frameCostMs": 2.699999988079071,
+        "snapshotCloneMs": 0.4000000059604645,
+        "liveObservedStateEntities": 27,
+        "observedMilitary": 9,
+        "liveInViewportEntities": 27,
+        "militaryInViewport": 9,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 62010.5,
+        "tick": 1244,
+        "camera": {
+          "x": 5.496875,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.700000000004366,
+        "frameCostMs": 2.7000000178813934,
+        "snapshotCloneMs": 0.4000000059604645,
+        "liveObservedStateEntities": 27,
+        "observedMilitary": 9,
+        "liveInViewportEntities": 27,
+        "militaryInViewport": 9,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 63010.40000000596,
+        "tick": 1264,
+        "camera": {
+          "x": 5.496875,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.700000000004366,
+        "frameCostMs": 2.7000000178813934,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 27,
+        "observedMilitary": 9,
+        "liveInViewportEntities": 27,
+        "militaryInViewport": 9,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 64010.09999999404,
+        "tick": 1284,
+        "camera": {
+          "x": 5.496875,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 58,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.80000000000291,
+        "frameCostMs": 2.800000011920929,
+        "snapshotCloneMs": 0.30000001192092896,
+        "liveObservedStateEntities": 27,
+        "observedMilitary": 9,
+        "liveInViewportEntities": 27,
+        "militaryInViewport": 9,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 65010.40000000596,
+        "tick": 1304,
+        "camera": {
+          "x": 5.496875,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.700000000004366,
+        "frameCostMs": 2.800000011920929,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 28,
+        "observedMilitary": 10,
+        "liveInViewportEntities": 28,
+        "militaryInViewport": 10,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 66009.29999998212,
+        "tick": 1324,
+        "camera": {
+          "x": 5.496875,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.70000000001164,
+        "frameCostMs": 2.699999988079071,
+        "snapshotCloneMs": 0.5999999940395355,
+        "liveObservedStateEntities": 28,
+        "observedMilitary": 10,
+        "liveInViewportEntities": 28,
+        "militaryInViewport": 10,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 67009.5,
+        "tick": 1344,
+        "camera": {
+          "x": 5.496875,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.70000000001164,
+        "frameCostMs": 2.7999999821186066,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 28,
+        "observedMilitary": 10,
+        "liveInViewportEntities": 28,
+        "militaryInViewport": 10,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 68009.5,
+        "tick": 1364,
+        "camera": {
+          "x": 5.496875,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.70000000001164,
+        "frameCostMs": 2.699999988079071,
+        "snapshotCloneMs": 0.4000000059604645,
+        "liveObservedStateEntities": 28,
+        "observedMilitary": 10,
+        "liveInViewportEntities": 28,
+        "militaryInViewport": 10,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 69010.90000000596,
+        "tick": 1384,
+        "camera": {
+          "x": 5.496875,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.70000000001164,
+        "frameCostMs": 3.699999988079071,
+        "snapshotCloneMs": 0.3999999761581421,
+        "liveObservedStateEntities": 28,
+        "observedMilitary": 10,
+        "liveInViewportEntities": 28,
+        "militaryInViewport": 10,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 70011.59999999404,
+        "tick": 1404,
+        "camera": {
+          "x": 5.496875,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.70000000001164,
+        "frameCostMs": 3.0999999940395355,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 28,
+        "observedMilitary": 10,
+        "liveInViewportEntities": 28,
+        "militaryInViewport": 10,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 71012.59999999404,
+        "tick": 1424,
+        "camera": {
+          "x": 5.496875,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.80000000000291,
+        "frameCostMs": 2.699999988079071,
+        "snapshotCloneMs": 0.4000000059604645,
+        "liveObservedStateEntities": 28,
+        "observedMilitary": 10,
+        "liveInViewportEntities": 28,
+        "militaryInViewport": 10,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 72024.90000000596,
+        "tick": 1444,
+        "camera": {
+          "x": 5.496875,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.80000000000291,
+        "frameCostMs": 9.800000011920929,
+        "snapshotCloneMs": 0.7999999821186066,
+        "liveObservedStateEntities": 28,
+        "observedMilitary": 10,
+        "liveInViewportEntities": 28,
+        "militaryInViewport": 10,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 73010.19999998808,
+        "tick": 1464,
+        "camera": {
+          "x": 5.496875,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.79999999998836,
+        "frameCostMs": 3.5,
+        "snapshotCloneMs": 0.4000000059604645,
+        "liveObservedStateEntities": 28,
+        "observedMilitary": 10,
+        "liveInViewportEntities": 28,
+        "militaryInViewport": 10,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 74008.90000000596,
+        "tick": 1484,
+        "camera": {
+          "x": 5.496875,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.70000000001164,
+        "frameCostMs": 2.600000023841858,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 28,
+        "observedMilitary": 10,
+        "liveInViewportEntities": 28,
+        "militaryInViewport": 10,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 75018.19999998808,
+        "tick": 1504,
+        "camera": {
+          "x": 5.496875,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.70000000001164,
+        "frameCostMs": 5,
+        "snapshotCloneMs": 1.300000011920929,
+        "liveObservedStateEntities": 28,
+        "observedMilitary": 10,
+        "liveInViewportEntities": 28,
+        "militaryInViewport": 10,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 76009.29999998212,
+        "tick": 1524,
+        "camera": {
+          "x": 5.496875,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.70000000001164,
+        "frameCostMs": 2.9000000059604645,
+        "snapshotCloneMs": 0.3999999761581421,
+        "liveObservedStateEntities": 28,
+        "observedMilitary": 10,
+        "liveInViewportEntities": 28,
+        "militaryInViewport": 10,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 77009,
+        "tick": 1544,
+        "camera": {
+          "x": 5.496875,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.70000000001164,
+        "frameCostMs": 2.800000011920929,
+        "snapshotCloneMs": 0.4000000059604645,
+        "liveObservedStateEntities": 29,
+        "observedMilitary": 11,
+        "liveInViewportEntities": 29,
+        "militaryInViewport": 11,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 78009.19999998808,
+        "tick": 1564,
+        "camera": {
+          "x": 5.496875,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.70000000001164,
+        "frameCostMs": 2.7000000178813934,
+        "snapshotCloneMs": 0.4000000059604645,
+        "liveObservedStateEntities": 29,
+        "observedMilitary": 11,
+        "liveInViewportEntities": 29,
+        "militaryInViewport": 11,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 79009,
+        "tick": 1584,
+        "camera": {
+          "x": 5.496875,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.70000000001164,
+        "frameCostMs": 2.800000011920929,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 29,
+        "observedMilitary": 11,
+        "liveInViewportEntities": 29,
+        "militaryInViewport": 11,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 80008.90000000596,
+        "tick": 1604,
+        "camera": {
+          "x": 5.496875,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.80000000000291,
+        "frameCostMs": 2.7000000178813934,
+        "snapshotCloneMs": 0.3999999761581421,
+        "liveObservedStateEntities": 29,
+        "observedMilitary": 11,
+        "liveInViewportEntities": 29,
+        "militaryInViewport": 11,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 81009.09999999404,
+        "tick": 1624,
+        "camera": {
+          "x": 5.496875,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.69999999999709,
+        "frameCostMs": 2.7999999821186066,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 29,
+        "observedMilitary": 11,
+        "liveInViewportEntities": 29,
+        "militaryInViewport": 11,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 82009.29999998212,
+        "tick": 1644,
+        "camera": {
+          "x": 5.496875,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.70000000001164,
+        "frameCostMs": 2.699999988079071,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 29,
+        "observedMilitary": 11,
+        "liveInViewportEntities": 29,
+        "militaryInViewport": 11,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 83012.29999998212,
+        "tick": 1664,
+        "camera": {
+          "x": 5.496875,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.70000000001164,
+        "frameCostMs": 2.9000000059604645,
+        "snapshotCloneMs": 0.4000000059604645,
+        "liveObservedStateEntities": 29,
+        "observedMilitary": 11,
+        "liveInViewportEntities": 29,
+        "militaryInViewport": 11,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 84009,
+        "tick": 1684,
+        "camera": {
+          "x": 5.496875,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.70000000001164,
+        "frameCostMs": 2.5999999940395355,
+        "snapshotCloneMs": 0.4000000059604645,
+        "liveObservedStateEntities": 29,
+        "observedMilitary": 11,
+        "liveInViewportEntities": 29,
+        "militaryInViewport": 11,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 85008.90000000596,
+        "tick": 1704,
+        "camera": {
+          "x": 5.496875,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.79999999998836,
+        "frameCostMs": 2.7000000178813934,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 29,
+        "observedMilitary": 11,
+        "liveInViewportEntities": 29,
+        "militaryInViewport": 11,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 86008.79999998212,
+        "tick": 1724,
+        "camera": {
+          "x": 5.496875,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.80000000000291,
+        "frameCostMs": 2.699999988079071,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 29,
+        "observedMilitary": 11,
+        "liveInViewportEntities": 29,
+        "militaryInViewport": 11,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 87008.5,
+        "tick": 1744,
+        "camera": {
+          "x": 5.496875,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.80000000000291,
+        "frameCostMs": 2.699999988079071,
+        "snapshotCloneMs": 0.4000000059604645,
+        "liveObservedStateEntities": 29,
+        "observedMilitary": 11,
+        "liveInViewportEntities": 29,
+        "militaryInViewport": 11,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 88008.69999998808,
+        "tick": 1764,
+        "camera": {
+          "x": 5.496875,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.70000000001164,
+        "frameCostMs": 2.699999988079071,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 29,
+        "observedMilitary": 11,
+        "liveInViewportEntities": 29,
+        "militaryInViewport": 11,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 89008.59999999404,
+        "tick": 1784,
+        "camera": {
+          "x": 5.496875,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.69999999999709,
+        "frameCostMs": 2.5999999940395355,
+        "snapshotCloneMs": 0.4000000059604645,
+        "liveObservedStateEntities": 30,
+        "observedMilitary": 12,
+        "liveInViewportEntities": 30,
+        "militaryInViewport": 12,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 90012.19999998808,
+        "tick": 1804,
+        "camera": {
+          "x": 5.496875,
+          "y": 21.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.70000000001164,
+        "frameCostMs": 2.699999988079071,
+        "snapshotCloneMs": 0.4000000059604645,
+        "liveObservedStateEntities": 30,
+        "observedMilitary": 12,
+        "liveInViewportEntities": 30,
+        "militaryInViewport": 12,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 91011,
+        "tick": 1824,
+        "camera": {
+          "x": 12.999131944444445,
+          "y": 26.447152273995535,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.80000000000291,
+        "frameCostMs": 3.9000000059604645,
+        "snapshotCloneMs": 0.5999999940395355,
+        "liveObservedStateEntities": 30,
+        "observedMilitary": 12,
+        "liveInViewportEntities": 30,
+        "militaryInViewport": 12,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 92010.19999998808,
+        "tick": 1844,
+        "camera": {
+          "x": 12.999131944444445,
+          "y": 26.447152273995535,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.80000000000291,
+        "frameCostMs": 3.5999999940395355,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 30,
+        "observedMilitary": 12,
+        "liveInViewportEntities": 30,
+        "militaryInViewport": 12,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 93015,
+        "tick": 1864,
+        "camera": {
+          "x": 54.49956597222222,
+          "y": 23.49857875279018,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.79999999998836,
+        "frameCostMs": 6,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 30,
+        "observedMilitary": 12,
+        "liveInViewportEntities": 0,
+        "militaryInViewport": 0,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 94013.69999998808,
+        "tick": 1884,
+        "camera": {
+          "x": 54.49956597222222,
+          "y": 23.49857875279018,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.70000000001164,
+        "frameCostMs": 6.399999976158142,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 30,
+        "observedMilitary": 12,
+        "liveInViewportEntities": 0,
+        "militaryInViewport": 0,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 95017.90000000596,
+        "tick": 1904,
+        "camera": {
+          "x": 54.49956597222222,
+          "y": 23.49857875279018,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.70000000001164,
+        "frameCostMs": 6.299999982118607,
+        "snapshotCloneMs": 0.6000000238418579,
+        "liveObservedStateEntities": 30,
+        "observedMilitary": 12,
+        "liveInViewportEntities": 0,
+        "militaryInViewport": 0,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 96014.29999998212,
+        "tick": 1924,
+        "camera": {
+          "x": 24.344878472222224,
+          "y": 24.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.70000000001164,
+        "frameCostMs": 4.300000011920929,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 30,
+        "observedMilitary": 12,
+        "liveInViewportEntities": 30,
+        "militaryInViewport": 12,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 97012.29999998212,
+        "tick": 1944,
+        "camera": {
+          "x": 54.49956597222222,
+          "y": 23.49857875279018,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.70000000001164,
+        "frameCostMs": 5.800000011920929,
+        "snapshotCloneMs": 0.4000000059604645,
+        "liveObservedStateEntities": 32,
+        "observedMilitary": 14,
+        "liveInViewportEntities": 2,
+        "militaryInViewport": 2,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 98013.29999998212,
+        "tick": 1964,
+        "camera": {
+          "x": 54.49956597222222,
+          "y": 23.49857875279018,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.80000000000291,
+        "frameCostMs": 5.699999988079071,
+        "snapshotCloneMs": 0.5999999940395355,
+        "liveObservedStateEntities": 32,
+        "observedMilitary": 14,
+        "liveInViewportEntities": 2,
+        "militaryInViewport": 2,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 99012.5,
+        "tick": 1984,
+        "camera": {
+          "x": 54.49956597222222,
+          "y": 23.49857875279018,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.70000000001164,
+        "frameCostMs": 5.5999999940395355,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 33,
+        "observedMilitary": 15,
+        "liveInViewportEntities": 4,
+        "militaryInViewport": 4,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 100012.09999999404,
+        "tick": 2004,
+        "camera": {
+          "x": 54.49956597222222,
+          "y": 23.49857875279018,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.70000000001164,
+        "frameCostMs": 5.5999999940395355,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 33,
+        "observedMilitary": 15,
+        "liveInViewportEntities": 4,
+        "militaryInViewport": 4,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 101012,
+        "tick": 2024,
+        "camera": {
+          "x": 54.49956597222222,
+          "y": 23.49857875279018,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.80000000000291,
+        "frameCostMs": 5.5999999940395355,
+        "snapshotCloneMs": 0.4000000059604645,
+        "liveObservedStateEntities": 32,
+        "observedMilitary": 14,
+        "liveInViewportEntities": 2,
+        "militaryInViewport": 2,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 102011.29999998212,
+        "tick": 2044,
+        "camera": {
+          "x": 30.140451388888888,
+          "y": 24.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.70000000001164,
+        "frameCostMs": 4.299999982118607,
+        "snapshotCloneMs": 0.4000000059604645,
+        "liveObservedStateEntities": 32,
+        "observedMilitary": 14,
+        "liveInViewportEntities": 28,
+        "militaryInViewport": 14,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 103011.5,
+        "tick": 2064,
+        "camera": {
+          "x": 30.140451388888888,
+          "y": 24.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.70000000001164,
+        "frameCostMs": 4.4000000059604645,
+        "snapshotCloneMs": 0.5999999940395355,
+        "liveObservedStateEntities": 31,
+        "observedMilitary": 13,
+        "liveInViewportEntities": 27,
+        "militaryInViewport": 13,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 104011.29999998212,
+        "tick": 2084,
+        "camera": {
+          "x": 54.49956597222222,
+          "y": 23.49857875279018,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.80000000000291,
+        "frameCostMs": 5.300000011920929,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 31,
+        "observedMilitary": 13,
+        "liveInViewportEntities": 4,
+        "militaryInViewport": 4,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 105011.59999999404,
+        "tick": 2104,
+        "camera": {
+          "x": 54.49956597222222,
+          "y": 23.49857875279018,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.70000000001164,
+        "frameCostMs": 5.199999988079071,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 31,
+        "observedMilitary": 13,
+        "liveInViewportEntities": 4,
+        "militaryInViewport": 4,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 106010.5,
+        "tick": 2124,
+        "camera": {
+          "x": 54.49956597222222,
+          "y": 23.49857875279018,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.69999999999709,
+        "frameCostMs": 4.799999982118607,
+        "snapshotCloneMs": 0.4000000059604645,
+        "liveObservedStateEntities": 31,
+        "observedMilitary": 13,
+        "liveInViewportEntities": 11,
+        "militaryInViewport": 11,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 107010.79999998212,
+        "tick": 2144,
+        "camera": {
+          "x": 36.78576388888889,
+          "y": 24.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.70000000001164,
+        "frameCostMs": 4.299999982118607,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 33,
+        "observedMilitary": 15,
+        "liveInViewportEntities": 16,
+        "militaryInViewport": 14,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 108010.59999999404,
+        "tick": 2164,
+        "camera": {
+          "x": 54.49956597222222,
+          "y": 23.49857875279018,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.70000000001164,
+        "frameCostMs": 4.700000017881393,
+        "snapshotCloneMs": 0.4000000059604645,
+        "liveObservedStateEntities": 35,
+        "observedMilitary": 15,
+        "liveInViewportEntities": 15,
+        "militaryInViewport": 13,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 109010.29999998212,
+        "tick": 2184,
+        "camera": {
+          "x": 54.49956597222222,
+          "y": 23.49857875279018,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.70000000001164,
+        "frameCostMs": 4.600000023841858,
+        "snapshotCloneMs": 0.5999999940395355,
+        "liveObservedStateEntities": 35,
+        "observedMilitary": 15,
+        "liveInViewportEntities": 15,
+        "militaryInViewport": 13,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 110010.79999998212,
+        "tick": 2204,
+        "camera": {
+          "x": 54.49956597222222,
+          "y": 23.49857875279018,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.69999999999709,
+        "frameCostMs": 4.5999999940395355,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 35,
+        "observedMilitary": 15,
+        "liveInViewportEntities": 15,
+        "militaryInViewport": 13,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 111015.40000000596,
+        "tick": 2224,
+        "camera": {
+          "x": 54.49956597222222,
+          "y": 23.49857875279018,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.79999999998836,
+        "frameCostMs": 9.200000017881393,
+        "snapshotCloneMs": 0.3999999761581421,
+        "liveObservedStateEntities": 37,
+        "observedMilitary": 13,
+        "liveInViewportEntities": 17,
+        "militaryInViewport": 11,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 112010.40000000596,
+        "tick": 2244,
+        "camera": {
+          "x": 54.49956597222222,
+          "y": 23.49857875279018,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.70000000001164,
+        "frameCostMs": 4.300000011920929,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 38,
+        "observedMilitary": 13,
+        "liveInViewportEntities": 18,
+        "militaryInViewport": 11,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 113010,
+        "tick": 2264,
+        "camera": {
+          "x": 54.49956597222222,
+          "y": 23.49857875279018,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.70000000001164,
+        "frameCostMs": 4.300000011920929,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 45,
+        "observedMilitary": 15,
+        "liveInViewportEntities": 25,
+        "militaryInViewport": 12,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 114009.59999999404,
+        "tick": 2284,
+        "camera": {
+          "x": 55.872005208333334,
+          "y": 25.5,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.69999999999709,
+        "frameCostMs": 4,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 50,
+        "observedMilitary": 15,
+        "liveInViewportEntities": 31,
+        "militaryInViewport": 13,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 115009.19999998808,
+        "tick": 2304,
+        "camera": {
+          "x": 55.872005208333334,
+          "y": 25.5,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.70000000001164,
+        "frameCostMs": 4.0999999940395355,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 50,
+        "observedMilitary": 15,
+        "liveInViewportEntities": 31,
+        "militaryInViewport": 13,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 116010.69999998808,
+        "tick": 2324,
+        "camera": {
+          "x": 55.872005208333334,
+          "y": 25.5,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.70000000001164,
+        "frameCostMs": 4.0999999940395355,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 50,
+        "observedMilitary": 15,
+        "liveInViewportEntities": 31,
+        "militaryInViewport": 13,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 117011,
+        "tick": 2344,
+        "camera": {
+          "x": 51.982204861111114,
+          "y": 27.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.80000000000291,
+        "frameCostMs": 4.199999988079071,
+        "snapshotCloneMs": 0.7000000178813934,
+        "liveObservedStateEntities": 50,
+        "observedMilitary": 15,
+        "liveInViewportEntities": 31,
+        "militaryInViewport": 13,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 118010.19999998808,
+        "tick": 2364,
+        "camera": {
+          "x": 51.982204861111114,
+          "y": 27.49713134765625,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.69999999999709,
+        "frameCostMs": 4,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 50,
+        "observedMilitary": 15,
+        "liveInViewportEntities": 31,
+        "militaryInViewport": 13,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 119010,
+        "tick": 2384,
+        "camera": {
+          "x": 55.872005208333334,
+          "y": 25.5,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.80000000000291,
+        "frameCostMs": 4.199999988079071,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 50,
+        "observedMilitary": 15,
+        "liveInViewportEntities": 31,
+        "militaryInViewport": 13,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 120012.29999998212,
+        "tick": 2404,
+        "camera": {
+          "x": 55.872005208333334,
+          "y": 25.5,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.80000000000291,
+        "frameCostMs": 3.899999976158142,
+        "snapshotCloneMs": 0.5,
+        "liveObservedStateEntities": 52,
+        "observedMilitary": 17,
+        "liveInViewportEntities": 30,
+        "militaryInViewport": 12,
+        "artAssets": 13,
+        "winner": null
+      },
+      {
+        "elapsedMs": 121014.29999998212,
+        "tick": 2424,
+        "camera": {
+          "x": 55.872005208333334,
+          "y": 25.5,
+          "zoom": 1.08
+        },
+        "rafSamples": 60,
+        "cadenceP50Ms": 16.69999999999709,
+        "cadenceP95Ms": 16.70000000001164,
+        "frameCostMs": 3.800000011920929,
+        "snapshotCloneMs": 0.4000000059604645,
+        "liveObservedStateEntities": 52,
+        "observedMilitary": 17,
+        "liveInViewportEntities": 30,
+        "militaryInViewport": 12,
+        "artAssets": 13,
+        "winner": null
+      }
+    ],
+    "denseBattleAccepted": false
+  },
+  "map": "delta",
+  "difficulty": "easy",
+  "winner": 0,
+  "reason": "Enemy General defeated",
+  "tick": 2433,
+  "simulationSeconds": 121.65,
+  "wallSeconds": 121.743,
+  "errors": [],
+  "method": "Actual production UI mouse/keyboard only; read-only filtered diagnostics. No state mutation, simulation speed-up or injected commands.",
+  "actions": [
+    {
+      "tick": 104,
+      "action": "Eight firearms queued through barracks UI"
+    },
+    {
+      "tick": 120,
+      "action": "Four economic reinforcements queued"
+    },
+    {
+      "tick": 123,
+      "action": "General held at home; forts cover the position"
+    },
+    {
+      "tick": 270,
+      "action": "Idle builder returned to wood gathering"
+    },
+    {
+      "tick": 462,
+      "action": "Defensive fort reserved"
+    },
+    {
+      "tick": 732,
+      "action": "Defensive fort reserved"
+    },
+    {
+      "tick": 1048,
+      "action": "Idle builder returned to wood gathering"
+    },
+    {
+      "tick": 1054,
+      "action": "Idle builder returned to wood gathering"
+    },
+    {
+      "tick": 1249,
+      "action": "Idle builder returned to wood gathering"
+    },
+    {
+      "tick": 1255,
+      "action": "Idle builder returned to wood gathering"
+    },
+    {
+      "tick": 1803,
+      "action": "Mass advance at ninety simulation seconds"
+    }
+  ],
+  "timeline": [
+    {
+      "tick": 129,
+      "winner": null,
+      "general": {
+        "hp": 360,
+        "x": 11,
+        "y": 25.5
+      },
+      "army": [
+        {
+          "id": 13,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 23.5,
+          "state": "idle",
+          "food": 39.1
+        },
+        {
+          "id": 14,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 24.1,
+          "state": "idle",
+          "food": 39.1
+        },
+        {
+          "id": 15,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 24.8,
+          "state": "idle",
+          "food": 39.1
+        },
+        {
+          "id": 16,
+          "type": "spearman",
+          "hp": 105,
+          "x": 15.5,
+          "y": 25.4,
+          "state": "idle",
+          "food": 39.1
+        }
+      ],
+      "resources": {
+        "wood": 270,
+        "food": 266.56876800000583,
+        "iron": 20
+      },
+      "forts": [],
+      "enemy": []
+    },
+    {
+      "tick": 332,
+      "winner": null,
+      "general": {
+        "hp": 360,
+        "x": 11,
+        "y": 25.5
+      },
+      "army": [
+        {
+          "id": 13,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 23.5,
+          "state": "idle",
+          "food": 37.8
+        },
+        {
+          "id": 14,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 24.1,
+          "state": "idle",
+          "food": 37.8
+        },
+        {
+          "id": 15,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 24.8,
+          "state": "idle",
+          "food": 37.8
+        },
+        {
+          "id": 16,
+          "type": "spearman",
+          "hp": 105,
+          "x": 15.5,
+          "y": 25.4,
+          "state": "idle",
+          "food": 37.8
+        },
+        {
+          "id": 40,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 40
+        }
+      ],
+      "resources": {
+        "wood": 310,
+        "food": 300.8058880000054,
+        "iron": 60
+      },
+      "forts": [],
+      "enemy": []
+    },
+    {
+      "tick": 536,
+      "winner": null,
+      "general": {
+        "hp": 360,
+        "x": 11,
+        "y": 25.5
+      },
+      "army": [
+        {
+          "id": 13,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 23.5,
+          "state": "idle",
+          "food": 36.4
+        },
+        {
+          "id": 14,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 24.1,
+          "state": "idle",
+          "food": 36.4
+        },
+        {
+          "id": 15,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 24.8,
+          "state": "idle",
+          "food": 36.4
+        },
+        {
+          "id": 16,
+          "type": "spearman",
+          "hp": 105,
+          "x": 15.5,
+          "y": 25.4,
+          "state": "idle",
+          "food": 36.4
+        },
+        {
+          "id": 40,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 38.6
+        }
+      ],
+      "resources": {
+        "wood": 190,
+        "food": 328.4587520000013,
+        "iron": 0
+      },
+      "forts": [
+        {
+          "id": 45,
+          "hp": 150,
+          "construction": true
+        }
+      ],
+      "enemy": []
+    },
+    {
+      "tick": 740,
+      "winner": null,
+      "general": {
+        "hp": 360,
+        "x": 11,
+        "y": 25.5
+      },
+      "army": [
+        {
+          "id": 13,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 23.5,
+          "state": "idle",
+          "food": 35.1
+        },
+        {
+          "id": 14,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 24.1,
+          "state": "idle",
+          "food": 35.1
+        },
+        {
+          "id": 15,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 24.8,
+          "state": "idle",
+          "food": 35.1
+        },
+        {
+          "id": 16,
+          "type": "spearman",
+          "hp": 105,
+          "x": 15.5,
+          "y": 25.4,
+          "state": "idle",
+          "food": 35.1
+        },
+        {
+          "id": 40,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 37.3
+        },
+        {
+          "id": 50,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 38.8
+        }
+      ],
+      "resources": {
+        "wood": 50,
+        "food": 357.84710399999784,
+        "iron": 0
+      },
+      "forts": [
+        {
+          "id": 45,
+          "hp": 583.3999999999996,
+          "construction": true
+        },
+        {
+          "id": 57,
+          "hp": 150,
+          "construction": true
+        }
+      ],
+      "enemy": []
+    },
+    {
+      "tick": 941,
+      "winner": null,
+      "general": {
+        "hp": 360,
+        "x": 11,
+        "y": 25.5
+      },
+      "army": [
+        {
+          "id": 13,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 23.5,
+          "state": "idle",
+          "food": 33.8
+        },
+        {
+          "id": 14,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 24.1,
+          "state": "idle",
+          "food": 33.8
+        },
+        {
+          "id": 15,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 24.8,
+          "state": "idle",
+          "food": 33.8
+        },
+        {
+          "id": 16,
+          "type": "spearman",
+          "hp": 105,
+          "x": 15.5,
+          "y": 25.4,
+          "state": "idle",
+          "food": 33.8
+        },
+        {
+          "id": 40,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 35.9
+        },
+        {
+          "id": 50,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 37.5
+        },
+        {
+          "id": 58,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 39.1
+        }
+      ],
+      "resources": {
+        "wood": 70,
+        "food": 465.8377920000025,
+        "iron": 100
+      },
+      "forts": [
+        {
+          "id": 45,
+          "hp": 1025.6000000000088,
+          "construction": true
+        },
+        {
+          "id": 57,
+          "hp": 574.5999999999995,
+          "construction": true
+        }
+      ],
+      "enemy": []
+    },
+    {
+      "tick": 1143,
+      "winner": null,
+      "general": {
+        "hp": 360,
+        "x": 11,
+        "y": 25.5
+      },
+      "army": [
+        {
+          "id": 13,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 23.5,
+          "state": "idle",
+          "food": 32.4
+        },
+        {
+          "id": 14,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 24.1,
+          "state": "idle",
+          "food": 32.4
+        },
+        {
+          "id": 15,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 24.8,
+          "state": "idle",
+          "food": 32.4
+        },
+        {
+          "id": 16,
+          "type": "spearman",
+          "hp": 105,
+          "x": 15.5,
+          "y": 25.4,
+          "state": "idle",
+          "food": 32.4
+        },
+        {
+          "id": 40,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 34.6
+        },
+        {
+          "id": 50,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 36.2
+        },
+        {
+          "id": 58,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 37.8
+        },
+        {
+          "id": 59,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 39.4
+        }
+      ],
+      "resources": {
+        "wood": 110,
+        "food": 516.054144000009,
+        "iron": 220
+      },
+      "forts": [
+        {
+          "id": 45,
+          "hp": 1250,
+          "construction": false
+        },
+        {
+          "id": 57,
+          "hp": 1019.0000000000086,
+          "construction": true
+        }
+      ],
+      "enemy": []
+    },
+    {
+      "tick": 1345,
+      "winner": null,
+      "general": {
+        "hp": 360,
+        "x": 11,
+        "y": 25.5
+      },
+      "army": [
+        {
+          "id": 13,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 23.5,
+          "state": "idle",
+          "food": 31.1
+        },
+        {
+          "id": 14,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 24.1,
+          "state": "idle",
+          "food": 31.1
+        },
+        {
+          "id": 15,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 24.8,
+          "state": "idle",
+          "food": 31.1
+        },
+        {
+          "id": 16,
+          "type": "spearman",
+          "hp": 105,
+          "x": 15.5,
+          "y": 25.4,
+          "state": "idle",
+          "food": 31.1
+        },
+        {
+          "id": 40,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 33.3
+        },
+        {
+          "id": 50,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 34.8
+        },
+        {
+          "id": 58,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 36.4
+        },
+        {
+          "id": 59,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 38
+        },
+        {
+          "id": 60,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 39.6
+        }
+      ],
+      "resources": {
+        "wood": 170,
+        "food": 564.2832960000133,
+        "iron": 340
+      },
+      "forts": [
+        {
+          "id": 45,
+          "hp": 1250,
+          "construction": false
+        },
+        {
+          "id": 57,
+          "hp": 1250,
+          "construction": false
+        }
+      ],
+      "enemy": []
+    },
+    {
+      "tick": 1546,
+      "winner": null,
+      "general": {
+        "hp": 360,
+        "x": 11,
+        "y": 25.5
+      },
+      "army": [
+        {
+          "id": 13,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 23.5,
+          "state": "idle",
+          "food": 29.8
+        },
+        {
+          "id": 14,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 24.1,
+          "state": "idle",
+          "food": 29.8
+        },
+        {
+          "id": 15,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 24.8,
+          "state": "idle",
+          "food": 29.8
+        },
+        {
+          "id": 16,
+          "type": "spearman",
+          "hp": 105,
+          "x": 15.5,
+          "y": 25.4,
+          "state": "idle",
+          "food": 29.8
+        },
+        {
+          "id": 40,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 31.9
+        },
+        {
+          "id": 50,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 33.5
+        },
+        {
+          "id": 58,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 35.1
+        },
+        {
+          "id": 59,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 36.7
+        },
+        {
+          "id": 60,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 38.3
+        },
+        {
+          "id": 62,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 39.9
+        }
+      ],
+      "resources": {
+        "wood": 230,
+        "food": 614.618880000018,
+        "iron": 460
+      },
+      "forts": [
+        {
+          "id": 45,
+          "hp": 1250,
+          "construction": false
+        },
+        {
+          "id": 57,
+          "hp": 1250,
+          "construction": false
+        }
+      ],
+      "enemy": []
+    },
+    {
+      "tick": 1746,
+      "winner": null,
+      "general": {
+        "hp": 360,
+        "x": 11,
+        "y": 25.5
+      },
+      "army": [
+        {
+          "id": 13,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 23.5,
+          "state": "idle",
+          "food": 28.4
+        },
+        {
+          "id": 14,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 24.1,
+          "state": "idle",
+          "food": 28.4
+        },
+        {
+          "id": 15,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 24.8,
+          "state": "idle",
+          "food": 28.4
+        },
+        {
+          "id": 16,
+          "type": "spearman",
+          "hp": 105,
+          "x": 15.5,
+          "y": 25.4,
+          "state": "idle",
+          "food": 28.4
+        },
+        {
+          "id": 40,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 30.6
+        },
+        {
+          "id": 50,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 32.2
+        },
+        {
+          "id": 58,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 33.8
+        },
+        {
+          "id": 59,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 35.4
+        },
+        {
+          "id": 60,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 37
+        },
+        {
+          "id": 62,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 38.5
+        }
+      ],
+      "resources": {
+        "wood": 255,
+        "food": 618.9873600000226,
+        "iron": 550
+      },
+      "forts": [
+        {
+          "id": 45,
+          "hp": 1250,
+          "construction": false
+        },
+        {
+          "id": 57,
+          "hp": 1250,
+          "construction": false
+        }
+      ],
+      "enemy": []
+    },
+    {
+      "tick": 1948,
+      "winner": null,
+      "general": {
+        "hp": 360,
+        "x": 11,
+        "y": 25.5
+      },
+      "army": [
+        {
+          "id": 13,
+          "type": "infantry",
+          "hp": 125,
+          "x": 31,
+          "y": 23.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 27.1
+        },
+        {
+          "id": 14,
+          "type": "infantry",
+          "hp": 125,
+          "x": 30.9,
+          "y": 24.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 27.1
+        },
+        {
+          "id": 15,
+          "type": "infantry",
+          "hp": 125,
+          "x": 31,
+          "y": 24.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 27.1
+        },
+        {
+          "id": 16,
+          "type": "spearman",
+          "hp": 105,
+          "x": 29.9,
+          "y": 24.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 27.1
+        },
+        {
+          "id": 40,
+          "type": "firearm",
+          "hp": 80,
+          "x": 25.1,
+          "y": 19.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 29.3
+        },
+        {
+          "id": 50,
+          "type": "firearm",
+          "hp": 80,
+          "x": 25.1,
+          "y": 19.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 30.8
+        },
+        {
+          "id": 58,
+          "type": "firearm",
+          "hp": 80,
+          "x": 25.1,
+          "y": 19.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 32.4
+        },
+        {
+          "id": 59,
+          "type": "firearm",
+          "hp": 80,
+          "x": 25.1,
+          "y": 19.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 34
+        },
+        {
+          "id": 60,
+          "type": "firearm",
+          "hp": 80,
+          "x": 25.1,
+          "y": 19.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 35.6
+        },
+        {
+          "id": 62,
+          "type": "firearm",
+          "hp": 80,
+          "x": 25.1,
+          "y": 19.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 37.2
+        },
+        {
+          "id": 64,
+          "type": "firearm",
+          "hp": 80,
+          "x": 25.1,
+          "y": 19.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 38.8
+        }
+      ],
+      "resources": {
+        "wood": 300,
+        "food": 624.1705920000276,
+        "iron": 640
+      },
+      "forts": [
+        {
+          "id": 45,
+          "hp": 1250,
+          "construction": false
+        },
+        {
+          "id": 57,
+          "hp": 1250,
+          "construction": false
+        }
+      ],
+      "enemy": [
+        {
+          "id": 32,
+          "type": "infantry",
+          "hp": 125,
+          "x": 36.00903065089086,
+          "y": 24.5
+        },
+        {
+          "id": 33,
+          "type": "spearman",
+          "hp": 105,
+          "x": 36.51124921972508,
+          "y": 25.5
+        }
+      ]
+    },
+    {
+      "tick": 2157,
+      "winner": null,
+      "general": {
+        "hp": 360,
+        "x": 11,
+        "y": 25.5
+      },
+      "army": [
+        {
+          "id": 13,
+          "type": "infantry",
+          "hp": 100.34,
+          "x": 43.8,
+          "y": 23.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 25.7
+        },
+        {
+          "id": 14,
+          "type": "infantry",
+          "hp": 105.31750746356049,
+          "x": 43.1,
+          "y": 24.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 25.7
+        },
+        {
+          "id": 15,
+          "type": "infantry",
+          "hp": 98.80666549134321,
+          "x": 43.1,
+          "y": 24.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 25.7
+        },
+        {
+          "id": 16,
+          "type": "spearman",
+          "hp": 105,
+          "x": 42.1,
+          "y": 24.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 25.7
+        },
+        {
+          "id": 40,
+          "type": "firearm",
+          "hp": 80,
+          "x": 34.7,
+          "y": 22.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 27.9
+        },
+        {
+          "id": 50,
+          "type": "firearm",
+          "hp": 80,
+          "x": 34.8,
+          "y": 22.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 29.5
+        },
+        {
+          "id": 58,
+          "type": "firearm",
+          "hp": 80,
+          "x": 34.8,
+          "y": 22.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 31.1
+        },
+        {
+          "id": 59,
+          "type": "firearm",
+          "hp": 80,
+          "x": 34.8,
+          "y": 22.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 32.6
+        },
+        {
+          "id": 60,
+          "type": "firearm",
+          "hp": 80,
+          "x": 34.8,
+          "y": 22.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 34.2
+        },
+        {
+          "id": 62,
+          "type": "firearm",
+          "hp": 80,
+          "x": 34.8,
+          "y": 22.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 35.8
+        },
+        {
+          "id": 64,
+          "type": "firearm",
+          "hp": 80,
+          "x": 34.8,
+          "y": 22.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 37.4
+        },
+        {
+          "id": 65,
+          "type": "firearm",
+          "hp": 80,
+          "x": 24.8,
+          "y": 19.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 39
+        }
+      ],
+      "resources": {
+        "wood": 325,
+        "food": 665.9822080000321,
+        "iron": 730
+      },
+      "forts": [
+        {
+          "id": 45,
+          "hp": 1250,
+          "construction": false
+        },
+        {
+          "id": 57,
+          "hp": 1250,
+          "construction": false
+        }
+      ],
+      "enemy": [
+        {
+          "id": 30,
+          "type": "infantry",
+          "hp": 125,
+          "x": 47.119999999999976,
+          "y": 23.5
+        },
+        {
+          "id": 31,
+          "type": "infantry",
+          "hp": 125,
+          "x": 47.17948100502087,
+          "y": 24.5
+        }
+      ]
+    },
+    {
+      "tick": 2359,
+      "winner": null,
+      "general": {
+        "hp": 360,
+        "x": 11,
+        "y": 25.5
+      },
+      "army": [
+        {
+          "id": 13,
+          "type": "infantry",
+          "hp": 24.785363085091024,
+          "x": 54.6,
+          "y": 25.5,
+          "state": "attack",
+          "order": "attack",
+          "food": 24.4
+        },
+        {
+          "id": 14,
+          "type": "infantry",
+          "hp": 105.31750746356049,
+          "x": 54.5,
+          "y": 25.5,
+          "state": "attack",
+          "order": "attack",
+          "food": 24.4
+        },
+        {
+          "id": 15,
+          "type": "infantry",
+          "hp": 98.80666549134321,
+          "x": 55,
+          "y": 26.5,
+          "state": "attack",
+          "order": "attack",
+          "food": 24.4
+        },
+        {
+          "id": 16,
+          "type": "spearman",
+          "hp": 105,
+          "x": 54.2,
+          "y": 25.5,
+          "state": "attack",
+          "order": "attack",
+          "food": 24.4
+        },
+        {
+          "id": 40,
+          "type": "firearm",
+          "hp": 80,
+          "x": 51.1,
+          "y": 22.5,
+          "state": "attack",
+          "order": "attack",
+          "food": 26.5
+        },
+        {
+          "id": 50,
+          "type": "firearm",
+          "hp": 80,
+          "x": 51.1,
+          "y": 22.5,
+          "state": "attack",
+          "order": "attack",
+          "food": 28.1
+        },
+        {
+          "id": 58,
+          "type": "firearm",
+          "hp": 80,
+          "x": 51.1,
+          "y": 22.5,
+          "state": "attack",
+          "order": "attack",
+          "food": 29.7
+        },
+        {
+          "id": 59,
+          "type": "firearm",
+          "hp": 80,
+          "x": 51.1,
+          "y": 22.5,
+          "state": "attack",
+          "order": "attack",
+          "food": 31.3
+        },
+        {
+          "id": 60,
+          "type": "firearm",
+          "hp": 80,
+          "x": 51.1,
+          "y": 22.5,
+          "state": "attack",
+          "order": "attack",
+          "food": 32.9
+        },
+        {
+          "id": 62,
+          "type": "firearm",
+          "hp": 80,
+          "x": 51.1,
+          "y": 22.5,
+          "state": "attack",
+          "order": "attack",
+          "food": 34.5
+        },
+        {
+          "id": 64,
+          "type": "firearm",
+          "hp": 80,
+          "x": 51.1,
+          "y": 22.5,
+          "state": "attack",
+          "order": "attack",
+          "food": 36.1
+        },
+        {
+          "id": 65,
+          "type": "firearm",
+          "hp": 80,
+          "x": 37.8,
+          "y": 22.5,
+          "state": "walk",
+          "order": "attack",
+          "food": 37.7
+        },
+        {
+          "id": 66,
+          "type": "firearm",
+          "hp": 80,
+          "x": 19.8,
+          "y": 19.5,
+          "state": "walk",
+          "order": "attack",
+          "food": 39.3
+        }
+      ],
+      "resources": {
+        "wood": 370,
+        "food": 689.8207680000374,
+        "iron": 820
+      },
+      "forts": [
+        {
+          "id": 45,
+          "hp": 1250,
+          "construction": false
+        },
+        {
+          "id": 57,
+          "hp": 1250,
+          "construction": false
+        }
+      ],
+      "enemy": [
+        {
+          "id": 18,
+          "type": "residence",
+          "hp": 1100,
+          "x": 54.5,
+          "y": 23.5
+        },
+        {
+          "id": 19,
+          "type": "granary",
+          "hp": 450,
+          "x": 57.5,
+          "y": 26.5
+        },
+        {
+          "id": 20,
+          "type": "depot",
+          "hp": 480,
+          "x": 50.5,
+          "y": 28.5
+        },
+        {
+          "id": 21,
+          "type": "barracks",
+          "hp": 553.1199999999998,
+          "x": 50.5,
+          "y": 20.5
+        },
+        {
+          "id": 22,
+          "type": "king",
+          "hp": 320,
+          "x": 56.5,
+          "y": 25
+        },
+        {
+          "id": 23,
+          "type": "general",
+          "hp": 232.89459105313787,
+          "x": 55.87500000000005,
+          "y": 25.5
+        },
+        {
+          "id": 24,
+          "type": "villager",
+          "hp": 65,
+          "x": 55.30450236435765,
+          "y": 21.5
+        },
+        {
+          "id": 26,
+          "type": "villager",
+          "hp": 65,
+          "x": 53.900000000000134,
+          "y": 26.5
+        },
+        {
+          "id": 27,
+          "type": "villager",
+          "hp": 65,
+          "x": 58.5,
+          "y": 22.771865442297063
+        },
+        {
+          "id": 28,
+          "type": "villager",
+          "hp": 65,
+          "x": 54.5,
+          "y": 21.333085106383013
+        },
+        {
+          "id": 29,
+          "type": "villager",
+          "hp": 65,
+          "x": 51.33316420625287,
+          "y": 27.19918424209238
+        },
+        {
+          "id": 35,
+          "type": "villager",
+          "hp": 65,
+          "x": 58.5,
+          "y": 22.5
+        },
+        {
+          "id": 39,
+          "type": "villager",
+          "hp": 65,
+          "x": 53.5,
+          "y": 19.561914893616986
+        },
+        {
+          "id": 42,
+          "type": "villager",
+          "hp": 65,
+          "x": 51.30847388708994,
+          "y": 27.202459039458503
+        },
+        {
+          "id": 47,
+          "type": "villager",
+          "hp": 65,
+          "x": 58.5,
+          "y": 22.5
+        },
+        {
+          "id": 51,
+          "type": "villager",
+          "hp": 65,
+          "x": 53.5,
+          "y": 20.295286708600795
+        },
+        {
+          "id": 54,
+          "type": "villager",
+          "hp": 65,
+          "x": 51.30847388708994,
+          "y": 27.202459039458503
+        },
+        {
+          "id": 67,
+          "type": "fort",
+          "hp": 150,
+          "x": 42.5,
+          "y": 20.5
+        }
+      ]
+    },
+    {
+      "tick": 2433,
+      "winner": 0,
+      "general": {
+        "hp": 360,
+        "x": 11,
+        "y": 25.5
+      },
+      "army": [
+        {
+          "id": 14,
+          "type": "infantry",
+          "hp": 105.31750746356049,
+          "x": 54.5,
+          "y": 25.5,
+          "state": "attack",
+          "order": "attack",
+          "food": 23.9
+        },
+        {
+          "id": 15,
+          "type": "infantry",
+          "hp": 98.80666549134321,
+          "x": 55,
+          "y": 26.5,
+          "state": "attack",
+          "order": "attack",
+          "food": 23.9
+        },
+        {
+          "id": 16,
+          "type": "spearman",
+          "hp": 105,
+          "x": 54.2,
+          "y": 25.5,
+          "state": "attack",
+          "order": "attack",
+          "food": 23.9
+        },
+        {
+          "id": 40,
+          "type": "firearm",
+          "hp": 80,
+          "x": 51.1,
+          "y": 22.5,
+          "state": "attack",
+          "order": "attack",
+          "food": 26
+        },
+        {
+          "id": 50,
+          "type": "firearm",
+          "hp": 80,
+          "x": 51.1,
+          "y": 22.5,
+          "state": "attack",
+          "order": "attack",
+          "food": 27.6
+        },
+        {
+          "id": 58,
+          "type": "firearm",
+          "hp": 80,
+          "x": 51.1,
+          "y": 22.5,
+          "state": "attack",
+          "order": "attack",
+          "food": 29.2
+        },
+        {
+          "id": 59,
+          "type": "firearm",
+          "hp": 80,
+          "x": 51.1,
+          "y": 22.5,
+          "state": "attack",
+          "order": "attack",
+          "food": 30.8
+        },
+        {
+          "id": 60,
+          "type": "firearm",
+          "hp": 80,
+          "x": 51.1,
+          "y": 22.5,
+          "state": "attack",
+          "order": "attack",
+          "food": 32.4
+        },
+        {
+          "id": 62,
+          "type": "firearm",
+          "hp": 80,
+          "x": 51.1,
+          "y": 22.5,
+          "state": "attack",
+          "order": "attack",
+          "food": 34
+        },
+        {
+          "id": 64,
+          "type": "firearm",
+          "hp": 80,
+          "x": 51.1,
+          "y": 22.5,
+          "state": "attack",
+          "order": "attack",
+          "food": 35.6
+        },
+        {
+          "id": 65,
+          "type": "firearm",
+          "hp": 80,
+          "x": 44.7,
+          "y": 22.5,
+          "state": "walk",
+          "order": "attack",
+          "food": 39.9
+        },
+        {
+          "id": 66,
+          "type": "firearm",
+          "hp": 80,
+          "x": 25.8,
+          "y": 19.5,
+          "state": "walk",
+          "order": "attack",
+          "food": 38.8
+        }
+      ],
+      "resources": {
+        "wood": 390,
+        "food": 687.1248000000403,
+        "iron": 860
+      },
+      "forts": [
+        {
+          "id": 45,
+          "hp": 1250,
+          "construction": false
+        },
+        {
+          "id": 57,
+          "hp": 1250,
+          "construction": false
+        }
+      ],
+      "enemy": [
+        {
+          "id": 18,
+          "type": "residence",
+          "hp": 1100,
+          "x": 54.5,
+          "y": 23.5
+        },
+        {
+          "id": 19,
+          "type": "granary",
+          "hp": 450,
+          "x": 57.5,
+          "y": 26.5
+        },
+        {
+          "id": 20,
+          "type": "depot",
+          "hp": 480,
+          "x": 50.5,
+          "y": 28.5
+        },
+        {
+          "id": 21,
+          "type": "barracks",
+          "hp": 553.1199999999998,
+          "x": 50.5,
+          "y": 20.5
+        },
+        {
+          "id": 22,
+          "type": "king",
+          "hp": 320,
+          "x": 56.5,
+          "y": 25
+        },
+        {
+          "id": 24,
+          "type": "villager",
+          "hp": 65,
+          "x": 47.534502364357884,
+          "y": 21.5
+        },
+        {
+          "id": 26,
+          "type": "villager",
+          "hp": 65,
+          "x": 51.54294020776476,
+          "y": 27.022886580392683
+        },
+        {
+          "id": 27,
+          "type": "villager",
+          "hp": 65,
+          "x": 58.5,
+          "y": 22.771865442297063
+        },
+        {
+          "id": 28,
+          "type": "villager",
+          "hp": 65,
+          "x": 53.5,
+          "y": 19.561914893616986
+        },
+        {
+          "id": 29,
+          "type": "villager",
+          "hp": 65,
+          "x": 51.33316420625287,
+          "y": 27.19918424209238
+        },
+        {
+          "id": 35,
+          "type": "villager",
+          "hp": 65,
+          "x": 58.5,
+          "y": 22.5
+        },
+        {
+          "id": 39,
+          "type": "villager",
+          "hp": 65,
+          "x": 53.5,
+          "y": 19.561914893616986
+        },
+        {
+          "id": 41,
+          "type": "firearm",
+          "hp": 80,
+          "x": 5.5,
+          "y": 32.09500000000008
+        },
+        {
+          "id": 42,
+          "type": "villager",
+          "hp": 65,
+          "x": 51.30847388708994,
+          "y": 27.202459039458503
+        },
+        {
+          "id": 47,
+          "type": "villager",
+          "hp": 65,
+          "x": 58.5,
+          "y": 23.445000000000004
+        },
+        {
+          "id": 48,
+          "type": "infantry",
+          "hp": 99.92,
+          "x": 8.377681386832773,
+          "y": 31.461560499598267
+        },
+        {
+          "id": 51,
+          "type": "villager",
+          "hp": 65,
+          "x": 53.5,
+          "y": 19.560286708600792
+        },
+        {
+          "id": 53,
+          "type": "firearm",
+          "hp": 80,
+          "x": 5.5,
+          "y": 32.09500000000008
+        },
+        {
+          "id": 54,
+          "type": "villager",
+          "hp": 65,
+          "x": 51.30847388708994,
+          "y": 27.202459039458503
+        },
+        {
+          "id": 67,
+          "type": "fort",
+          "hp": 150,
+          "x": 42.5,
+          "y": 20.5
+        }
+      ]
+    }
+  ],
+  "resultScreenAndMenuVerified": true
+}

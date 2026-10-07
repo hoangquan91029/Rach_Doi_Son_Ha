@@ -1,0 +1,72 @@
+{
+  "identity_master": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+    "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+    "proposed_role": "sole authority for identity, appearance, proportions, camera and framing"
+  },
+  "proposed_image_inputs": [
+    {
+      "order": 1,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+      "role": "locked identity and camera master"
+    },
+    {
+      "order": 2,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-passing-first-004/F02-model-guide.png",
+      "role": "model-only passing phase, support/swing ownership and limb overlap",
+      "sha256": "2f88bb8c1f876c24bc876ed07e3572925d76ff1d369a4d614fc45eab107929cb"
+    }
+  ],
+  "review_evidence_only_excluded_from_attachments": [
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-pilot-001/F00-raw.png",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-pilot-001/F04-raw.png",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-guided-correction-002/F04-guided-raw.png",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-master-only-003/F04-master-only-raw.png"
+  ],
+  "canvas": [
+    1254,
+    1254
+  ],
+  "root": [
+    650,
+    1140
+  ],
+  "fixed_game_preview": "whole canvas scaled by 38/1254; source root (650,1140) maps to preview (48,68); no bbox fit",
+  "call_budget": {
+    "imagegen_calls_made": 0,
+    "proposed_calls": 1,
+    "parent_authorized": false
+  },
+  "guide_svg": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-passing-first-004/F02-model-guide.svg",
+    "sha256": "7545da3da6cb8ebd582fd7f7addd554f796287b36c7aaf3acee3bc24fdb29ded"
+  },
+  "native_guide_preview": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-passing-first-004/F02-model-guide.png",
+    "sha256": "2f88bb8c1f876c24bc876ed07e3572925d76ff1d369a4d614fc45eab107929cb"
+  },
+  "fixed38_preview": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-passing-first-004/F02-guide-fixed-38px-preview.png",
+    "sha256": "9a4c1ccd534b3203c6faa553e35dd3aa0c3197e19a044a713fd4710d173532e1"
+  },
+  "fixed38_enlarged_diagnostic": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-passing-first-004/F02-guide-fixed-38px-preview-6x.png",
+    "method": "upscale only after fixed 38/1254 full-canvas transform, nearest-neighbour; for inspection only"
+  },
+  "proposed_prompt_sha256": "7feb70bd6c60ac6183735ae23653e8c9a340450dabb113e5fc98543953040ee5",
+  "identity_master_sha256_verified": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+  "actual_call": {
+    "calls_made": 1,
+    "transparent_background_requested": true,
+    "exact_prompt_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-passing-first-004/F02-imagegen-prompt.txt",
+    "exact_prompt_sha256": "7feb70bd6c60ac6183735ae23653e8c9a340450dabb113e5fc98543953040ee5",
+    "raw_output_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-passing-first-004/F02-master-only-raw.png",
+    "raw_output_sha256": "f546e96687e2e2ad4de282bbbf16668e932292a0306f61ccaf4d57c60e4919da",
+    "raw_output_dimensions": [
+      1254,
+      1254
+    ],
+    "raw_output_mode": "RGBA"
+  }
+}

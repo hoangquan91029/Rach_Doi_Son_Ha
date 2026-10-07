@@ -1,0 +1,68 @@
+{
+  "status": "CANDIDATE",
+  "generation_tool": "built-in image_gen",
+  "generation_calls": 1,
+  "returned_generation_path": "/home/kieu-hoang-quan/.codex/generated_images/01a116cd-59ce-75b1-a5b0-b0c4c0323924/exec-b9cb1c46-c594-49aa-b633-92e2699068fe.png",
+  "raw_copy_in_project": "docs/art/terrain/shore-a/shore-a.raw.png",
+  "runtime_candidate_copy": "public/assets/art-v1/terrain/shore-a.png",
+  "prompt_file": "docs/art/terrain/shore-a/prompt.txt",
+  "requested_dimensions": "1024x1024 square",
+  "actual_dimensions": [
+    1254,
+    1254
+  ],
+  "actual_format": "PNG",
+  "actual_mode": "RGB",
+  "alpha_extrema": [
+    255,
+    255
+  ],
+  "decoded_rgba_extrema": [
+    [
+      60,
+      255
+    ],
+    [
+      43,
+      246
+    ],
+    [
+      15,
+      202
+    ],
+    [
+      255,
+      255
+    ]
+  ],
+  "raw_file_sha256": "21b442044d6699684f29898b9584948200ed912dd85f396434ea9a95d1ba49cd",
+  "decoded_rgba_sha256": "02306cfbaf69c39d048a79599510beca6045c285b5f733196054389faaf801d7",
+  "repeat_qa": {
+    "preview": "docs/art/terrain/shore-a/shore-a.repeat-qa.png",
+    "method": "Unmodified 2x2 packaging repeat of the original RGBA pixels",
+    "edge_differences": {
+      "horizontal": {
+        "mean_absolute_rgb_difference": 9.49,
+        "max_absolute_channel_difference": 62,
+        "mean_per_pixel_euclidean_rgb_difference": 17.17
+      },
+      "vertical": {
+        "mean_absolute_rgb_difference": 10.92,
+        "max_absolute_channel_difference": 89,
+        "mean_per_pixel_euclidean_rgb_difference": 19.81
+      }
+    }
+  },
+  "visual_observations": [
+    "Broad warm ochre/sand fields with mossy jade-green damp areas.",
+    "Scattered tiny pebbles and sparse branching reed-root marks are visible.",
+    "No waterbody, waterline, bank silhouette, foam, lettering, grid, or diamond pattern is visible.",
+    "The square repeats as a texture, though opposite-edge color differences may produce visible seams; inspect the 2x2 QA preview."
+  ],
+  "reference_observations": {
+    "grass-b.png": "Soft, low-contrast mottled green/earth painterly surface.",
+    "water-b.png": "Muted jade-teal broad painted strokes with calm contrast.",
+    "ford-a.png": "Warm ochre and damp gray-green shoreline palette; substantially busier than this candidate."
+  },
+  "review": "Candidate only; no approval or integration claim."
+}

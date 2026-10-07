@@ -1,0 +1,61 @@
+{
+  "status": "CANDIDATE_RUNTIME_DERIVATIVE",
+  "method": "Fixed full-canvas Lanczos 1254\u2192512 then exact lossless WebP; no crop, alpha cleanup, bbox fit, pivot or logical render change",
+  "sourceSha256": "f617c3540680cafff467358bab1adb01bf735417563f2cba86ab8af523b07dcc",
+  "previousRuntime": {
+    "path": "runtime/residence.webp",
+    "sha256": "28921964375e24793ec6785be94dc3ba33a9e76649d342b0f50523cafc968db5",
+    "rgbaSha256": "51fd1193e644b8c444fd9daa23a6febbc1b79a26c96a430273d7715645baaed2",
+    "width": 1254,
+    "height": 1254,
+    "bbox": [
+      17,
+      21,
+      1254,
+      1254
+    ],
+    "alphaExtrema": [
+      0,
+      255
+    ],
+    "derivation": {
+      "method": "copy",
+      "sourceSha256": "f617c3540680cafff467358bab1adb01bf735417563f2cba86ab8af523b07dcc",
+      "filter": "lanczos"
+    }
+  },
+  "runtime": {
+    "path": "runtime/residence-512.webp",
+    "sha256": "225bbbae5f3f72695bbddf91270743b96f08488e09f23db2b5339ace78d091ea",
+    "rgbaSha256": "09ec25135fabdde428f5406afe325029f8d7d4927c7df53adb145bebb9e63a8e",
+    "width": 512,
+    "height": 512,
+    "bbox": [
+      6,
+      35,
+      512,
+      483
+    ],
+    "alphaExtrema": [
+      0,
+      255
+    ],
+    "derivation": {
+      "method": "resize",
+      "sourceSha256": "f617c3540680cafff467358bab1adb01bf735417563f2cba86ab8af523b07dcc",
+      "filter": "lanczos"
+    }
+  },
+  "pivot": {
+    "x": 640,
+    "y": 970,
+    "space": "source"
+  },
+  "render": {
+    "width": 130,
+    "height": 130
+  },
+  "previousBytes": 1250654,
+  "runtimeBytes": 229022,
+  "visualApproval": false
+}

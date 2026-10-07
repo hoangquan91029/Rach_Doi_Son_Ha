@@ -1,0 +1,16 @@
+{
+  "reviewer": "parent agent",
+  "decision": "REVIEW_ONLY_EARLY_SWING_DIAGNOSTIC",
+  "frame": "F02 passing-first pilot 004",
+  "not_selected_as": ["F02 sequence key", "completed walking cycle"],
+  "findings": [
+    "Meaningful raised rear foot is visible.",
+    "Identity and body scale are retained.",
+    "Requested forward passing-foot placement is wrong.",
+    "Planted support sole offset is approximately 2.6 gameplay pixels from the fixed root and raises a root-drift concern."
+  ],
+  "raw_preserved": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-passing-first-004/F02-master-only-raw.png",
+  "raw_sha256": "f546e96687e2e2ad4de282bbbf16668e932292a0306f61ccaf4d57c60e4919da",
+  "metadata_preserved": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-D00-passing-first-004/F02-metadata.json",
+  "decision_scope": "Preserve original raw and producer metadata; this separate record seals the parent review outcome."
+}
