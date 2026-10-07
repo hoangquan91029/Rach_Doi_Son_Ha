@@ -35,3 +35,18 @@ Both Delta and Coast passed offline UI play and mixed-engine online reload/recon
 The first failed attempt is preserved at `artifacts/production-action-timing-mixed/failure.json`: Delta offline passed, then the host remained in lobby without match state. The existing QA script selected an already-active map and could ready before both browsers received the configuration acknowledgment; configuration resets readiness. The QA script now awaits read-only lobby acknowledgments before readying, records served build/engine versions/current timestamp, and captures timeout screenshots/snapshots. No runtime change or second restart was needed. Passing receipts and inspected victory screenshots are under `artifacts/production-action-timing-mixed/retry-lobby-ack/`.
 
 Limits: both headless engines ran on the same host through the public HTTPS endpoint, not separate external devices. The default presentation mode and existing easy offline scenario were used; this proves ordinary UI/network/gameplay acceptance, not dense-battle performance, art=pilot coverage or finished animation quality. No art/status documents were changed and no commit was made.
+
+## Public pilot human-versus-AI replay — 2026-10-08
+
+One bounded attempt per map with `?art=pilot`, existing easy AI UI strategy and normal authoritative timing passed without retries or strategy/game-code changes. Delta ended at tick 2593 (129.65 simulation s / 129.768 wall s); Coast at tick 2529 (126.45 simulation s / 126.413 wall s). Both produced normal `Enemy General defeated` player victory, verified result-to-menu, and zero captured page errors. Actual victory screenshots were inspected. Compact tracked evidence: [ACTION_TIMING_AI_RECEIPT.json](ACTION_TIMING_AI_RECEIPT.json); full per-second windows/actions/timeline/screenshots: `artifacts/production-action-timing-ai/`.
+
+Chromium 151.0.7922.34 used public HTTPS with normal TLS validation and resolver 103.84.155.153. Both served bundle `index-ClW3IlNb.js` SHA256 `ca8e6428603c0033ccd9926fdb69daa5d78cee28fef4259607946530fe02e08b` and 14-asset manifest SHA256 `4fda8d2ec7f6bb4690a36644bacf2e222b722091905f9cfcc904295fa4e59814`; all 14 assets were ready. Actual runtime asset hashes are retained in the full receipt.
+
+| Map | Combat RAF samples/windows | Combat cadence p50/p95 | Peak viewport entities/military/attacking military | Peak observed-state entities/military |
+| --- | --- | --- | --- | --- |
+| Delta | 1136 / 19 | 16.7 / 16.7 ms | 30 / 15 / 13 | 53 / 18 |
+| Coast | 959 / 16 | 16.7 / 16.7 ms | 32 / 15 / 13 | 54 / 20 |
+
+Viewport counts use living, unembarked ground anchors inside the 1280×800 canvas; they do not measure overlap/occlusion or imply all entities remain simultaneously onscreen. Observed-state counts are fog-filtered and are separate from viewport density. A combat window means at least one viewport military entity in `attack` state. Pure RAF callbacks collect only numeric intervals; sparse read-only snapshots run once per second. Terrain cache built once per map, backing 5,169,280 pixels; last sampled draws were 7745 / 7569. `frameCostMs` is only one sample per second and includes offline simulation step/view as well as synchronous drawing.
+
+These measured scenes were smooth on this headless host and preserve the normal human victory after added windups. They do not establish maximum-density battle performance, external-device behavior, or finished raster attack animation quality. No server restart, deployment update, commit or art change occurred during this validation.

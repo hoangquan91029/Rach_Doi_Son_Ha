@@ -1,0 +1,184 @@
+{
+  "status": "PASS",
+  "url": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/?art=pilot",
+  "attemptsPerMap": 1,
+  "method": "Existing browser UI strategy; normal easy AI and gameplay timing, no injected simulation commands, mutations or acceleration. Pure numeric RAF plus 1Hz read-only diagnostics.",
+  "results": [
+    {
+      "map": "delta",
+      "completedUtc": "2026-10-07T20:04:37.419Z",
+      "difficulty": "easy",
+      "winner": 0,
+      "reason": "Enemy General defeated",
+      "tick": 2593,
+      "simulationSeconds": 129.65,
+      "wallSeconds": 129.768,
+      "resultScreenAndMenuVerified": true,
+      "pageErrors": [],
+      "browserVersion": "151.0.7922.34",
+      "transport": {
+        "requestedUrl": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/?art=pilot",
+        "actualUrl": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/?art=pilot",
+        "resolveIp": "103.84.155.153",
+        "tlsVerificationBypassed": false,
+        "httpStatus": 200,
+        "serverAddress": {
+          "ipAddress": "103.84.155.153",
+          "port": 443
+        },
+        "securityDetails": {
+          "issuer": "YE1",
+          "protocol": "TLS 1.3",
+          "subjectName": "kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net",
+          "validFrom": 1786518706,
+          "validTo": 1794294705
+        }
+      },
+      "pins": [
+        {
+          "url": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/assets/index-ClW3IlNb.js",
+          "sha256": "ca8e6428603c0033ccd9926fdb69daa5d78cee28fef4259607946530fe02e08b",
+          "bytes": 136130
+        },
+        {
+          "url": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/assets/art-v1/manifest.json",
+          "sha256": "4fda8d2ec7f6bb4690a36644bacf2e222b722091905f9cfcc904295fa4e59814",
+          "bytes": 27812,
+          "assets": 14
+        }
+      ],
+      "performance": {
+        "method": "Pure numeric RAF callback; separate 1Hz read-only filtered snapshots. frameCost includes offline step/view and renderer synchronous work. Counts are observed scene only.",
+        "cadenceMs": {
+          "p50": 16.69999999999709,
+          "p95": 16.70000000001164,
+          "count": 7735
+        },
+        "combatCadenceMs": {
+          "p50": 16.69999999999709,
+          "p95": 16.70000000001164,
+          "count": 1136,
+          "windows": 19
+        },
+        "peakAttackingMilitaryInViewport": 13,
+        "peakObservedStateEntities": 53,
+        "peakObservedMilitary": 18,
+        "peakViewportEntities": 30,
+        "peakViewportMilitary": 15,
+        "denseBattleAccepted": false
+      },
+      "combatSampledFrameCostMs": {
+        "p50": 4.4000000059604645,
+        "p95": 5.5
+      },
+      "combatSnapshotCloneMs": {
+        "p50": 0.699999988079071,
+        "p95": 0.800000011920929
+      },
+      "lastSampleTerrainCache": {
+        "builds": 1,
+        "draws": 7745,
+        "pixels": 5169280
+      },
+      "readyAssets": 14,
+      "evidence": {
+        "receipt": "artifacts/production-action-timing-ai/delta-receipt.json",
+        "sha256": "59395b05ac81c439324a307d02acd4db88ef270e4a225255d9d13b77c9a00bf9",
+        "victoryImage": "artifacts/production-action-timing-ai/delta-victory.png",
+        "victoryImageSha256": "676bd22217b36a93659671808bc92886b2743aa06b17207d8c93688a6531f9a0"
+      }
+    },
+    {
+      "map": "coast",
+      "completedUtc": "2026-10-07T20:06:51.588Z",
+      "difficulty": "easy",
+      "winner": 0,
+      "reason": "Enemy General defeated",
+      "tick": 2529,
+      "simulationSeconds": 126.45,
+      "wallSeconds": 126.413,
+      "resultScreenAndMenuVerified": true,
+      "pageErrors": [],
+      "browserVersion": "151.0.7922.34",
+      "transport": {
+        "requestedUrl": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/?art=pilot",
+        "actualUrl": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/?art=pilot",
+        "resolveIp": "103.84.155.153",
+        "tlsVerificationBypassed": false,
+        "httpStatus": 200,
+        "serverAddress": {
+          "ipAddress": "103.84.155.153",
+          "port": 443
+        },
+        "securityDetails": {
+          "issuer": "YE1",
+          "protocol": "TLS 1.3",
+          "subjectName": "kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net",
+          "validFrom": 1786518706,
+          "validTo": 1794294705
+        }
+      },
+      "pins": [
+        {
+          "url": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/assets/index-ClW3IlNb.js",
+          "sha256": "ca8e6428603c0033ccd9926fdb69daa5d78cee28fef4259607946530fe02e08b",
+          "bytes": 136130
+        },
+        {
+          "url": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/assets/art-v1/manifest.json",
+          "sha256": "4fda8d2ec7f6bb4690a36644bacf2e222b722091905f9cfcc904295fa4e59814",
+          "bytes": 27812,
+          "assets": 14
+        }
+      ],
+      "performance": {
+        "method": "Pure numeric RAF callback; separate 1Hz read-only filtered snapshots. frameCost includes offline step/view and renderer synchronous work. Counts are observed scene only.",
+        "cadenceMs": {
+          "p50": 16.69999999999709,
+          "p95": 16.70000000001164,
+          "count": 7558
+        },
+        "combatCadenceMs": {
+          "p50": 16.69999999999709,
+          "p95": 16.70000000001164,
+          "count": 959,
+          "windows": 16
+        },
+        "peakAttackingMilitaryInViewport": 13,
+        "peakObservedStateEntities": 54,
+        "peakObservedMilitary": 20,
+        "peakViewportEntities": 32,
+        "peakViewportMilitary": 15,
+        "denseBattleAccepted": false
+      },
+      "combatSampledFrameCostMs": {
+        "p50": 5.0999999940395355,
+        "p95": 6.4000000059604645
+      },
+      "combatSnapshotCloneMs": {
+        "p50": 0.5999999940395355,
+        "p95": 0.6000000238418579
+      },
+      "lastSampleTerrainCache": {
+        "builds": 1,
+        "draws": 7569,
+        "pixels": 5169280
+      },
+      "readyAssets": 14,
+      "evidence": {
+        "receipt": "artifacts/production-action-timing-ai/coast-receipt.json",
+        "sha256": "ed5f560b50014c96b8dda22d8eb1701ba47236c79e10160304b60ff0c521a017",
+        "victoryImage": "artifacts/production-action-timing-ai/coast-victory.png",
+        "victoryImageSha256": "623bd39a9c10529d829868df5544f941afa9cb7f32c93bacd7e0c7cb4b1310b5"
+      }
+    }
+  ],
+  "limits": [
+    "One headless Chromium host via public normal-TLS HTTPS, not an external device.",
+    "Viewport counts use alive, unembarked entity ground anchors inside1280x800 canvas; they are not pixel occlusion/crowding measurements.",
+    "Observed-state entity counts are fog-filtered, not all-map army totals.",
+    "Combat windows require at least one observed viewport military entity in attack state.",
+    "One sampled frameCost each second includes offline simulation step/view plus synchronous renderer; not a frame-cost distribution.",
+    "No maximum-density battle or finished raster attack-art approval."
+  ]
+}
