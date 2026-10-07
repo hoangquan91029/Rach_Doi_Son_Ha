@@ -1,0 +1,120 @@
+{
+  "asset": "villager South walk F02 annotated-guide input-order repair candidate",
+  "status": "PENDING_PARENT_REVIEW_SUPPORT_TRACK_STILL_SHORT",
+  "calls_initiated": 1,
+  "authorized_call_count": 1,
+  "retries": 0,
+  "generated_output_path": "/home/kieu-hoang-quan/.codex/generated_images/01a116ce-195d-73e0-a579-e4e5e990575d/exec-75a08866-8d33-4561-ada9-86ecbd365cd4.png",
+  "raw_path": "raw.png",
+  "raw_sha256": "0713b03a0c32a2c582130b67fc3bb9bd031bdcd7fc9e9e25c4b7682e49666960",
+  "decoded_rgba_sha256": "28e35f560e8dd97c8860e6e8e14526e7e03bacb11037f31d47949ca85b7eeba3",
+  "source_format": "PNG",
+  "source_canvas": [
+    1254,
+    1254
+  ],
+  "source_mode": "RGBA",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "alpha_bounds_exclusive": {
+    "0": [
+      33,
+      25,
+      1226,
+      1254
+    ],
+    "1": [
+      396,
+      46,
+      878,
+      1202
+    ],
+    "16": [
+      398,
+      49,
+      876,
+      1199
+    ],
+    "128": [
+      399,
+      49,
+      875,
+      1198
+    ],
+    "250": [
+      401,
+      50,
+      874,
+      1197
+    ]
+  },
+  "work_order_sha256": "abf574aa2a5eaf9c693c7d7c26c0dbb83f2d19fd3de15400af605335cad43572",
+  "identity_review_sha256": "7b493e42607bd03dbe29bf9ae7a3e6bae0f6443fdb152be297f1d92266920d1d",
+  "selected_F00_parent_review_sha256": "881a8bdb5aa709e1c89e62f69eeae61e6a52cdf1e0e8e1a045fb242843e07ba3",
+  "prompt_sha256": "2a15e37e914d28fb99c49040e7c320b4cb7b8ad3102e207ff88b2842b681ed83",
+  "input_locks_sha256": "f3dd56e858a06486eed3702ff77ad765a2a71af6d9a437200432c9ae8f3d80c1",
+  "ground_root": [
+    654,
+    1140
+  ],
+  "canvas_logical_size": 38,
+  "phase": {
+    "frame": "F02",
+    "time_ms": 150,
+    "primary_support": "LEFT/viewer RIGHT",
+    "left_support_sole_bottom_target_y": "1130-1140",
+    "right_swing_sole_bottom_target_y": 1058,
+    "right_swing_gap_px_target": 80
+  },
+  "input_order_verification": {
+    "exactly_three_actual_attachments": true,
+    "paths_in_order": [
+      {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/south-neutral-reference/raw.png",
+        "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+      },
+      {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/walk/keys/F00-left-contact-01/raw.png",
+        "sha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001"
+      },
+      {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-guides/walk-south-F2-correction-v3/guide-qa.png",
+        "sha256": "cde299715227149ae6777480c04d76eee8d276e27341f351b82e3eb4e0803c88"
+      }
+    ],
+    "held_F2_not_attached": true,
+    "D00_and_plain_guide_not_attached": true
+  },
+  "measured_game_review_evidence": {
+    "current_viewer_right_support_alpha128_region_bbox": [
+      680,
+      1000,
+      880,
+      1254
+    ],
+    "current_viewer_right_support_alpha128_bbox": [
+      680,
+      1000,
+      798,
+      1198
+    ],
+    "selected_F00_viewer_right_support_alpha128_bbox": [
+      703,
+      1000,
+      820,
+      1209
+    ],
+    "support_bottom_delta_upward_px": 11,
+    "current_viewer_left_swing_alpha128_bbox": [
+      523,
+      1000,
+      596,
+      1027
+    ]
+  },
+  "interpretation": "The output has a visibly raised viewer-left swing foot, but the viewer-right support foot retreats only about 11 source pixels from selected F00, not the required 70\u201380. The swing foot is also elevated beyond the target region (bottom y1027 vs target about1058), and appears trailing rather than passing beneath the body. Likely another support-track failure; parent binary review required. No transforms applied.",
+  "preview": "Direct full-canvas 1254-to-38 reduction only.",
+  "scope": "One input-order repair call spent. No further F2, F4/F6, inbetweens or runtime authorized."
+}

@@ -1,0 +1,35 @@
+{
+  "status": "SELF_REVIEW_FAIL_SUPPORT_RETREAT_REMAINS_SHORT",
+  "checks": {
+    "one_complete_illustration": "PASS",
+    "transparent_rgba": "PASS",
+    "1254_square_canvas": "PASS",
+    "annotated_guide_labels_or_ghost_visible_in_output": "NO",
+    "right_airborne_leg_visible": "PASS_CANDIDATE_BUT_TOO_HIGH_AT_BOTTOM_Y1027",
+    "left_support_sole_retreat_70_80px": "FAIL_ONLY_ABOUT_11PX_UPWARD_FROM_F00",
+    "passing_under_body_not_trailing": "FAIL_OR_UNCLEAR",
+    "identity_and_camera": "PASS_CANDIDATE"
+  },
+  "binary_contact_evidence": {
+    "current_support_region_alpha128_bbox": [
+      680,
+      1000,
+      798,
+      1198
+    ],
+    "F00_support_region_alpha128_bbox": [
+      703,
+      1000,
+      820,
+      1209
+    ],
+    "support_bottom_delta_upward_px": 11,
+    "current_swing_region_alpha128_bbox": [
+      523,
+      1000,
+      596,
+      1027
+    ]
+  },
+  "next_action": "Parent review only. If parent confirms support track still fails, stop this method. No further F2 attempt."
+}

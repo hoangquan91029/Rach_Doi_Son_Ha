@@ -1,0 +1,58 @@
+{
+  "status": "PREPARED_FOR_EXACTLY_ONE_AUTHORIZED_F2_INPUT_ORDER_REPAIR_CALL",
+  "work_order_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/walk/F2-input-repair-work-order.json",
+  "work_order_sha256": "abf574aa2a5eaf9c693c7d7c26c0dbb83f2d19fd3de15400af605335cad43572",
+  "identity_review_sha256": "7b493e42607bd03dbe29bf9ae7a3e6bae0f6443fdb152be297f1d92266920d1d",
+  "selected_F00_parent_review_sha256": "881a8bdb5aa709e1c89e62f69eeae61e6a52cdf1e0e8e1a045fb242843e07ba3",
+  "authorized_call_count": 1,
+  "calls_initiated": 0,
+  "retries": 0,
+  "canvas": [
+    1254,
+    1254
+  ],
+  "ground_pivot": [
+    654,
+    1140
+  ],
+  "whole_canvas_logical_size": 38,
+  "phase": {
+    "frame": 2,
+    "timeMs": 150,
+    "durationMs": 80,
+    "primarySupport": "LEFT",
+    "leftViewerSide": "RIGHT",
+    "leftFoot": "Solegroundedunderbodyaroundy1130-1140, retreatsapprox70-80sourcepixelsfromF0toe1208throughreallegposeforeshortening",
+    "rightFoot": "Soleairbornepassingaroundy1058,samegrounddepthassupport; clear~80gapnotcontacttrailing166gap",
+    "leftArm": "passingneutral",
+    "rightArm": "passingneutral",
+    "weightShiftPxHypothesis": 55
+  },
+  "direction": {
+    "screen": "SOUTH",
+    "engine": "D01",
+    "world": "SE"
+  },
+  "references_in_exact_required_order": [
+    {
+      "role": "CanonicalSEALED_Southidentity/camera/appearanceauthority",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/south-neutral-reference/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+    },
+    {
+      "role": "SelectedF0continuity; advanceposeDO_NOTFREEZE",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/walk/keys/F00-left-contact-01/raw.png",
+      "sha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001"
+    },
+    {
+      "role": "MODEL_ONLY_QAexplicitoldcontactvsrequiredtarget; labels/ghostNOTFINALART",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-guides/walk-south-F2-correction-v3/guide-qa.png",
+      "sha256": "cde299715227149ae6777480c04d76eee8d276e27341f351b82e3eb4e0803c88"
+    }
+  ],
+  "attached_input_count": 3,
+  "held_F2_used_as_input": false,
+  "D00_master_or_plain_guide_attached": false,
+  "prompt_sha256": "2a15e37e914d28fb99c49040e7c320b4cb7b8ad3102e207ff88b2842b681ed83",
+  "scope": "exactly one F2 input-order repair call; if stance contact still fails, stop with no further F2/F4/inbetweens"
+}
