@@ -32,7 +32,10 @@ export class IsoRenderer{
  const props=this.raster.propsForState(state).filter(e=>{const p=this.project(e.x,e.y);return p.x>-90*z&&p.x<w+90*z&&p.y>-90*z&&p.y<h+90*z;});
  const depthQueue=[...entities.map(e=>({entity:e,x:e.x,y:e.y})),...props.map(e=>({prop:e,x:e.x,y:e.y})),...resources.map(e=>({resource:e,x:e.x,y:e.y}))].sort((a,b)=>(a.x+a.y)-(b.x+b.y));
  for(const item of depthQueue){if(item.entity)this.drawEntity(ctx,item.entity,delta);else if(item.resource)this.drawResource(ctx,item.resource);else if(!this.raster.drawProp(ctx,{...item.prop,project:(x,y)=>this.project(x,y),zoom:z,timeMs:state.tick*50})){const p=this.project(item.x,item.y);this.tree(ctx,p.x,p.y,z,item.prop.variant);}}
- const fog=state.fog;if(fog?.visible){for(let y=0;y<height;y++)for(let x=0;x<width;x++)if(!fog.visible[y*width+x]){const p=this.project(x+.5,y+.5);if(p.x>-TW&&p.x<w+TW&&p.y>-TH&&p.y<h+TH){ctx.fillStyle=fog.explored?.[y*width+x]?'rgba(12,28,24,.35)':'rgba(8,23,21,.85)';this.diamond(ctx,p.x,p.y,TW*z/2,TH*z/2);}}}
+ const fog=state.fog;if(fog?.visible){
+  // Fill each fog region as one path: shared cell edges must not accumulate antialias seams.
+  for(const explored of [true,false]){ctx.beginPath();for(let y=0;y<height;y++)for(let x=0;x<width;x++){const index=y*width+x;if(fog.visible[index]||Boolean(fog.explored?.[index])!==explored)continue;const p=this.project(x+.5,y+.5);if(p.x<=-TW||p.x>=w+TW||p.y<=-TH||p.y>=h+TH)continue;const rx=TW*z/2,ry=TH*z/2;ctx.moveTo(p.x,p.y-ry);ctx.lineTo(p.x+rx,p.y);ctx.lineTo(p.x,p.y+ry);ctx.lineTo(p.x-rx,p.y);ctx.closePath();}ctx.fillStyle=explored?'rgba(12,28,24,.35)':'rgba(8,23,21,.85)';ctx.fill();}
+ }
  this.drawMinimap(state,player);
  }
  selectionPoint(e){const p=this.project(e.x,e.y),z=this.camera.zoom;for(const dy of [-15,-24,-8,-32,0])for(const dx of [0,-4,4]){const point={x:p.x+dx*z,y:p.y+dy*z};if(pickVisibleEntity(this,point.x,point.y)?.id===e.id)return point;}return p;}
