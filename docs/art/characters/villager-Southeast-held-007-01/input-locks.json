@@ -1,0 +1,52 @@
+{
+  "status": "PREPARED_FOR_ONE_AUTHORIZED_CALL",
+  "call_cap": 1,
+  "calls_initiated": 0,
+  "retries": 0,
+  "canvas": [
+    1254,
+    1254
+  ],
+  "locked_ground_pivot": [
+    654,
+    1140
+  ],
+  "fixed_scale": "38/1254 whole canvas",
+  "intended_direction": {
+    "screen": "down-right ESE",
+    "engine": "D00",
+    "world": "E"
+  },
+  "attachments": [
+    {
+      "role": "south_identity",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "use": "appearance identity and material reference"
+    },
+    {
+      "role": "east_accepted_profile",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/turnarounds/east-neutral-reference-guided-02/raw.png",
+      "sha256": "45ae1e7a27d3cb9260dc9e5495cf83b4956481b1047ead2975572aff1385aae3",
+      "use": "appearance and costume continuity reference"
+    },
+    {
+      "role": "D00_master",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+      "use": "canonical identity appearance reference"
+    },
+    {
+      "role": "MODEL_ONLY_SE_geometry",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-guides/static-southeast-v1/guide.png",
+      "sha256": "4a0a3a722bf64e5e76a7b0e57e30cedc3255e197b5de5e1057e8924addcc8ef5",
+      "use": "geometry only: head/body/pelvis and both sandal axes"
+    }
+  ],
+  "guide_qa_inspected_only_not_attached": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-guides/static-southeast-v1/guide-qa.png",
+    "sha256": "b36fd3bd443ad8acb372e03c6515d683ec415ca38f11cb00e3a0f66222850923"
+  },
+  "prompt_sha256": "a9fcb9c9f7b0767cf83e5471981230faac0ff13a7c3a3908f54622c4f6711abd",
+  "scope": "single static southeast identity reference only; no additional views, animation, runtime, or integration"
+}

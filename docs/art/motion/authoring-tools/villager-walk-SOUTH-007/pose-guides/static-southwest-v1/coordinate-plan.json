@@ -1,0 +1,130 @@
+{
+  "status": "MODEL_ONLY_NON_ART_STATIC_GUIDE",
+  "canvas": [
+    1254,
+    1254
+  ],
+  "root": [
+    654,
+    1140
+  ],
+  "worldScale": 0.030303030303030304,
+  "direction": {
+    "screen": "SW",
+    "engine": "D02",
+    "world": "S",
+    "bodyPlaneForward": [
+      -0.7071067811865475,
+      0.7071067811865475
+    ],
+    "screenForward": [
+      -0.7071067811865475,
+      0.35355339059327373
+    ]
+  },
+  "camera": {
+    "projection": "orthographic dimetric geometry hypothesis",
+    "groundDiamondRatio": [
+      2,
+      1
+    ],
+    "elevationDegrees": 26.565
+  },
+  "projectionFormula": "screen=(654+forward.x*longitudinal+left.x*lateral,1140+0.5*(forward.depth*longitudinal+left.depth*lateral)-projectedHeight)",
+  "anatomicalOwnership": {
+    "near": "RIGHT",
+    "far": "LEFT",
+    "leftBodyAxis": [
+      -0.7071067811865475,
+      -0.7071067811865475
+    ],
+    "note": "Labels are anatomical. Reflection only in authored mannequin coordinates, never painted character artwork."
+  },
+  "points": {
+    "LEFT_shoulder": [
+      574.097,
+      283.048
+    ],
+    "LEFT_elbow": [
+      565.612,
+      492.291
+    ],
+    "LEFT_wrist": [
+      558.541,
+      660.827
+    ],
+    "LEFT_hip": [
+      574.097,
+      695.048
+    ],
+    "LEFT_knee": [
+      576.925,
+      876.634
+    ],
+    "LEFT_ankle": [
+      574.097,
+      1076.048
+    ],
+    "LEFT_heel": [
+      598.846,
+      1087.674
+    ],
+    "LEFT_toe": [
+      492.78,
+      1140.707
+    ],
+    "RIGHT_shoulder": [
+      733.903,
+      362.952
+    ],
+    "RIGHT_elbow": [
+      725.418,
+      572.194
+    ],
+    "RIGHT_wrist": [
+      718.347,
+      740.73
+    ],
+    "RIGHT_hip": [
+      733.903,
+      774.952
+    ],
+    "RIGHT_knee": [
+      736.731,
+      956.537
+    ],
+    "RIGHT_ankle": [
+      733.903,
+      1155.952
+    ],
+    "RIGHT_heel": [
+      758.652,
+      1167.577
+    ],
+    "RIGHT_toe": [
+      652.586,
+      1220.61
+    ]
+  },
+  "footAxes": {
+    "LEFT": [
+      -106.066,
+      53.033
+    ],
+    "RIGHT": [
+      -106.066,
+      53.033
+    ]
+  },
+  "constraints": [
+    "All head, chest/back, pelvis and both sandal longitudinal axes share the diagonal heading",
+    "Front three-quarter visible",
+    "Exactly one fixed root6541140; no image crop, bbox fit or large translation",
+    "Neutral weight balanced across feet, not a walking pose",
+    "Canonical illustrated identity supplied separately; guide geometry may not leak into final image"
+  ],
+  "finishedArt": false,
+  "motionQualified": false,
+  "runtimeIntegrated": false,
+  "imageCalls": 0
+}

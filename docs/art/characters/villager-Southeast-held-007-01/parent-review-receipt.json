@@ -1,0 +1,21 @@
+{
+  "status": "PARENT_HOLD_NONTRANSPARENT_BACKGROUND",
+  "reviewer": "root parent visual review",
+  "asset": "Southeast static identity candidate",
+  "raw_path": "raw.png",
+  "raw_sha256": "c2f31b29f5bf0f42cd1884849f39304f9cee0a2351fff7f340134127b8545f1c",
+  "decoded_rgba_sha256": "4e1d52826af5f26e5a1ff1a76c4f3ffcc8bfeaf2bf228cc9fc80899072f5ed10",
+  "canvas": [
+    1254,
+    1254
+  ],
+  "source_mode": "RGB",
+  "parent_findings": [
+    "Actual raw reviewed; checkerboard is baked into RGB pixels and there is no alpha channel. Hold is for nontransparent background.",
+    "Parent confirms the Southeast anatomical mapping: actor LEFT is viewer-right/far and actor RIGHT is viewer-left/near. The sash knot/tail on viewer-right is therefore the correct actor-LEFT side and is not an identity rejection.",
+    "Parent takes responsibility for the incorrect near-side label in the v1 guide/request. Preserve v1 guide and prompt as historical evidence; corrected v2 labels will precede any future call."
+  ],
+  "producer_record_preserved": true,
+  "no_cleanup_or_retry": true,
+  "next_scope": "No paid calls until parent has inspected corrected v2 geometry labels and issued a finite work order. Parent may separately authorize a pure-alpha repair only if pose and identity remain acceptable."
+}

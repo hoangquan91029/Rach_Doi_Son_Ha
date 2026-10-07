@@ -1,4 +1,4 @@
-# Project status — 2026-10-07
+# Project status — 2026-10-08
 
 **NOT COMPLETE under sections81–145. VISUAL GATE FAILED.** This is a deployed playable development build. Do not turn implementation or automated checks into final visual or map acceptance.
 
@@ -51,3 +51,9 @@ South restart timing checkpoint: variable-duration sampling and validated declar
 South static identity reference returned and was inspected at native1254 and fixed38pxwholecanvas. Accepted only for static turnaround authoring; eight-view lock is incomplete and actual walking-frame count remains zero. Atlas authoring tools pass six separate NON_ART technical tests and refuse missing identity/key-review gates.
 
 Near-quota continuation checkpoint follows master37 (94%used at lastmeaningfulboundary, ordinaryusage allowed). All current raw/held sources, staticSouthreference, completed atlas tools and MODEL_ONLYEastprofileguide are saved; no paid artcall pending. Exactnext task and active5hour continuation are recorded in`docs/CHECKPOINT.md`/`NEXT_STEPS.md`. Goal remains active and NOTCOMPLETE.
+
+## 8 October resumed implementation
+
+72/72 Node checks pass. Production bundle `index-ClW3IlNb.js` implements fixed-tick attack windup/impact/recovery, cancellation reservation, snapshot-private pending targets, fog sampling invariance, bounded cosmetic clock and authored impact-marker alignment. Default public Chromium/Firefox peers passed both maps, reload/reconnect, ordinary General combat victory, results, rematch and return; normalTLS and zero captured errors. See `ACTION_TIMING_DEPLOYMENT_RECEIPT.json`. This is current runtime acceptance for these changes, not finished attack art or external-device certification. Earlier bundle/test counts above describe preserved historical receipts.
+
+Static villager identity count is4/8 (S/E/N/W), all parent-inspected candidates. Controlled diagonal guides are MODEL_ONLY; Southeast pose returned with bakedRGBcheckerboard and is held; one tool-onlyalpha repair is in progress. Incorrectdiagonalv1anatomical labels were corrected in preservedv2guides before moreviewwork. See `art/VILLAGER_IDENTITY_LOCK_007.json`. Actual walking frame count0, complete loops0, animation fanout closed; final visual gate still failed. Complete public candidate AI victory/performance recheck is underway after combat cadence changed.

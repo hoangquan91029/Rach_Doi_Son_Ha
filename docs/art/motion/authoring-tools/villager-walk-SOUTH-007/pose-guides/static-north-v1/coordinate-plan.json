@@ -1,0 +1,131 @@
+{
+  "status": "MODEL_ONLY_NON_ART_STATIC_GUIDE",
+  "canvas": [
+    1254,
+    1254
+  ],
+  "root": [
+    654,
+    1140
+  ],
+  "worldScale": 0.030303030303030304,
+  "direction": {
+    "screen": "NORTH_UP",
+    "engine": "D05",
+    "world": "NW",
+    "worldForward": [
+      -1,
+      -1
+    ]
+  },
+  "camera": {
+    "projection": "dimetric guide hypothesis",
+    "groundDiamondRatio": [
+      2,
+      1
+    ],
+    "elevationDegrees": 26.565
+  },
+  "anatomicalOwnership": "Back-facing: LEFT is viewer-left, RIGHT viewer-right. No mirrored character art.",
+  "sourceReference": {
+    "path": "../../identity/south-neutral-reference/raw.png",
+    "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+    "usage": "Overall proportions only; no traced/copied/extracted pixels"
+  },
+  "points": {
+    "LEFT_hip": [
+      541,
+      745
+    ],
+    "LEFT_knee": [
+      541,
+      932
+    ],
+    "LEFT_ankle": [
+      541,
+      1092
+    ],
+    "LEFT_heel": [
+      541,
+      1154
+    ],
+    "LEFT_toe": [
+      541,
+      1079
+    ],
+    "LEFT_shoulder": [
+      506,
+      345
+    ],
+    "LEFT_elbow": [
+      486,
+      548
+    ],
+    "LEFT_wrist": [
+      479,
+      710
+    ],
+    "RIGHT_hip": [
+      767,
+      745
+    ],
+    "RIGHT_knee": [
+      767,
+      932
+    ],
+    "RIGHT_ankle": [
+      767,
+      1092
+    ],
+    "RIGHT_heel": [
+      767,
+      1154
+    ],
+    "RIGHT_toe": [
+      767,
+      1079
+    ],
+    "RIGHT_shoulder": [
+      802,
+      345
+    ],
+    "RIGHT_elbow": [
+      822,
+      548
+    ],
+    "RIGHT_wrist": [
+      829,
+      710
+    ]
+  },
+  "constraints": [
+    "Entire head, torso, pelvis and feet face screen-up, back visible",
+    "No facial eyes/nose or front tunic wrap neckline",
+    "Rear hat, short nape, back sleeves/coat/sash, trouser rear and sandal heels remain recognizable",
+    "Both foot longitudinal axes point toward screen-up",
+    "Equal authored leg lengths, one6541140ground anchor, no bbox fitting"
+  ],
+  "footAxes": {
+    "LEFT": [
+      0,
+      -75
+    ],
+    "RIGHT": [
+      0,
+      -75
+    ]
+  },
+  "legSegmentLengths": {
+    "LEFT": [
+      187.0,
+      160.0
+    ],
+    "RIGHT": [
+      187.0,
+      160.0
+    ]
+  },
+  "finishedArt": false,
+  "motionQualified": false,
+  "runtimeIntegrated": false
+}

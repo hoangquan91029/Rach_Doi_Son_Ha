@@ -1,0 +1,48 @@
+{
+  "asset": "East neutral full-body identity turnaround, guided edit 02",
+  "status": "READY_FOR_ONE_PARENT_AUTHORIZED_CALL",
+  "direction": {
+    "screen": "RIGHT/EAST",
+    "engine": "D07",
+    "world": "NE"
+  },
+  "inputs": [
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+      "role": "locked canonical appearance identity, face, costume, palette, and painterly style; D00 view is not East"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "role": "parent-accepted South appearance and source scale reference"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/authoring-tools/villager-walk-SOUTH-007/pose-guides/static-east-v1/guide.png",
+      "sha256": "9cf118bfcaa6958415f043e83dc1a3d9f7f49b22299509c1cc5fb134e98c938e",
+      "role": "MODEL_ONLY profile geometry/heading/foot-axis guide only; not appearance art"
+    }
+  ],
+  "excluded_inputs": [
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/turnarounds/east-neutral-reference/raw.png"
+  ],
+  "prompt_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/turnarounds/east-neutral-reference-guided-02/prompt.txt",
+  "prompt_sha256": "454db50bc367fff5eadf6568cbdc67f14ada67f52517705efef44b00573d8b20",
+  "canvas_requested": [
+    1254,
+    1254
+  ],
+  "ground_pivot": [
+    654,
+    1140
+  ],
+  "world_scale": "38/1254 full canvas",
+  "call_cap": 1,
+  "calls_initiated": 1,
+  "retries": 0,
+  "transparent_background": true,
+  "runtime_changes": false,
+  "other_turnarounds_or_animation_authorized": false,
+  "raw_returned": true,
+  "raw_sha256": "45ae1e7a27d3cb9260dc9e5495cf83b4956481b1047ead2975572aff1385aae3"
+}

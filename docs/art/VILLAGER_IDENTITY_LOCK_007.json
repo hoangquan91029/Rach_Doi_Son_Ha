@@ -1,0 +1,95 @@
+{
+  "schema": "villager-static-identity-lock/v1",
+  "status": "INCOMPLETE",
+  "canonicalAppearanceSource": "docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+  "canonicalAppearanceSha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+  "canonicalAppearanceIsTurnaroundCoverage": false,
+  "canvas": [
+    1254,
+    1254
+  ],
+  "sourcePivot": [
+    654,
+    1140
+  ],
+  "logicalWholeCanvasSize": [
+    38,
+    38
+  ],
+  "directionConvention": "Screen-facing eight-view names map explicitly into dimetric engine headings; do not change simulation directions",
+  "directions": {
+    "N": {
+      "engineDirection": 5,
+      "worldDirection": "NW",
+      "screenHeading": "N",
+      "status": "STATIC_IDENTITY_REFERENCE_CANDIDATE",
+      "source": "docs/art/characters/villager-neutral-D05-screen-North-007/raw.png",
+      "sha256": "bb8501eb042e188c99cfb8489d58a8a396d073eee6e3eb802318eaa4e5333038"
+    },
+    "NE": {
+      "engineDirection": 6,
+      "worldDirection": "N",
+      "screenHeading": "ENE",
+      "status": "NOT_AUTHORED",
+      "source": null,
+      "sha256": null
+    },
+    "E": {
+      "engineDirection": 7,
+      "worldDirection": "NE",
+      "screenHeading": "E",
+      "status": "STATIC_IDENTITY_REFERENCE_CANDIDATE",
+      "source": "docs/art/characters/villager-neutral-D07-screen-East-guided-007/raw.png",
+      "sha256": "45ae1e7a27d3cb9260dc9e5495cf83b4956481b1047ead2975572aff1385aae3"
+    },
+    "SE": {
+      "engineDirection": 0,
+      "worldDirection": "E",
+      "screenHeading": "ESE",
+      "status": "BACKGROUND_REPAIR_IN_PROGRESS",
+      "source": null,
+      "sha256": null,
+      "heldSource": "docs/art/characters/villager-Southeast-held-007-01/raw.png",
+      "heldSourceSha256": "c2f31b29f5bf0f42cd1884849f39304f9cee0a2351fff7f340134127b8545f1c",
+      "holdReason": "RGB baked checkerboard, not transparent. Pose/identity acceptable; sash onviewerRIGHT is correctactorLEFT. Rootv1guide wronglylabelled near/far; v2corrected."
+    },
+    "S": {
+      "engineDirection": 1,
+      "worldDirection": "SE",
+      "screenHeading": "S",
+      "status": "STATIC_IDENTITY_REFERENCE_CANDIDATE",
+      "source": "docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+    },
+    "SW": {
+      "engineDirection": 2,
+      "worldDirection": "S",
+      "screenHeading": "WSW",
+      "status": "NOT_AUTHORED",
+      "source": null,
+      "sha256": null
+    },
+    "W": {
+      "engineDirection": 3,
+      "worldDirection": "SW",
+      "screenHeading": "W",
+      "status": "STATIC_IDENTITY_REFERENCE_CANDIDATE",
+      "source": "docs/art/characters/villager-neutral-D03-screen-West-guided-007/raw.png",
+      "sha256": "630f000746e140e501a55847a6a9d7736fd025736684969ca8bdd9e778b22ccf"
+    },
+    "NW": {
+      "engineDirection": 4,
+      "worldDirection": "W",
+      "screenHeading": "WNW",
+      "status": "NOT_AUTHORED",
+      "source": null,
+      "sha256": null
+    }
+  },
+  "animationAuthoringOpen": false,
+  "walkFrameCount": 0,
+  "independentMotionReview": "NOT_STARTED",
+  "runtimeIntegrated": false,
+  "finalVisualApproval": false,
+  "staticCandidateCount": 4
+}

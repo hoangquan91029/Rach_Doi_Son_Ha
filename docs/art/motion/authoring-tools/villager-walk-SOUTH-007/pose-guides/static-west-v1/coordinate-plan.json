@@ -1,0 +1,137 @@
+{
+  "status": "MODEL_ONLY_NON_ART_NOT_ANIMATION",
+  "canvas": [
+    1254,
+    1254
+  ],
+  "root": [
+    654,
+    1140
+  ],
+  "worldScale": 0.030303030303030304,
+  "direction": {
+    "screen": "WEST_LEFT",
+    "engine": "D03",
+    "world": "SW",
+    "worldForward": [
+      -1,
+      1
+    ]
+  },
+  "camera": {
+    "elevationDegrees": 26.565,
+    "projection": "locked game orthographic dimetric affine",
+    "groundDiamondRatio": [
+      2,
+      1
+    ]
+  },
+  "projectionFormula": "MODEL_ONLY East geometry reflected around screen x654: screen=(654-x,1140+0.5*depth-projectedHeight). Character artwork never mirrored.",
+  "proportions": "Visual South reference used for overall height and body segment proportions only; coordinate anatomy is MODEL_ONLY authored hypothesis, not exact measured body landmarks",
+  "sourceReference": {
+    "path": "../../identity/south-neutral-reference/raw.png",
+    "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+    "usage": "inspected proportions only; no copied pixels, traces, cutouts or image edits"
+  },
+  "anatomicalOwnership": "Actor facing worldSW: anatomicalLEFT near cameraSE; RIGHT farNW",
+  "points": {
+    "RIGHT_shoulder": [
+      654,
+      309.0
+    ],
+    "RIGHT_elbow": [
+      634,
+      514.0
+    ],
+    "RIGHT_wrist": [
+      628,
+      679.0
+    ],
+    "RIGHT_hip": [
+      654,
+      721.0
+    ],
+    "RIGHT_knee": [
+      658,
+      904.0
+    ],
+    "RIGHT_ankle": [
+      654,
+      1064.0
+    ],
+    "RIGHT_heel": [
+      689,
+      1126.0
+    ],
+    "RIGHT_toe": [
+      539,
+      1126.0
+    ],
+    "LEFT_shoulder": [
+      654,
+      337.0
+    ],
+    "LEFT_elbow": [
+      634,
+      542.0
+    ],
+    "LEFT_wrist": [
+      628,
+      707.0
+    ],
+    "LEFT_hip": [
+      654,
+      749.0
+    ],
+    "LEFT_knee": [
+      658,
+      932.0
+    ],
+    "LEFT_ankle": [
+      654,
+      1092.0
+    ],
+    "LEFT_heel": [
+      689,
+      1154.0
+    ],
+    "LEFT_toe": [
+      539,
+      1154.0
+    ]
+  },
+  "constraints": [
+    "Whole head, narrow chest/pelvis and both soles face left",
+    "One side eye/nose; overlapping profile hips/shoulders",
+    "Preserve original anatomical costume asymmetry in eventual illustration; no finished-art mirroring",
+    "Sourcecanvas1254 root6541140 scale38/1254 fixed; authored model guide only"
+  ],
+  "legSegmentLengthsSource": {
+    "LEFT": [
+      183.04371062672436,
+      160.04999218994044
+    ],
+    "RIGHT": [
+      183.04371062672436,
+      160.04999218994044
+    ]
+  },
+  "footAxes": {
+    "LEFT": [
+      -150,
+      0
+    ],
+    "RIGHT": [
+      -150,
+      0
+    ]
+  },
+  "finishedArt": false,
+  "motionQualified": false,
+  "runtimeIntegrated": false,
+  "sourceGeometry": {
+    "path": "../static-east-v1/guide.svg",
+    "sha256": "1018318872b74d4602f8d64236be8cf785049eb0f8fe614f4f359876b0ef31e0",
+    "operation": "Reflect authored mannequin vector geometry about fixedrootx654; swap anatomical near/far ownership. No character raster mirrored."
+  }
+}

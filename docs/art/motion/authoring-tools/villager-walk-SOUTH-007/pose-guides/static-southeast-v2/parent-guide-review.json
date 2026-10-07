@@ -1,0 +1,22 @@
+{
+  "status": "PARENT_INSPECTED_MODEL_ONLY_NON_ART_STATIC_GUIDE",
+  "supersedes": "static-southeast-v1",
+  "correction": "Anatomical LEFT body axis=(forward.depth,-forward.x), matches SouthLEFTviewerRIGHT/EastLEFTfar/NorthLEFTviewerLEFT/WestLEFTnear. v1 labels accidentally reversed; v1 source and paid edit preserved.",
+  "canvas": [
+    1254,
+    1254
+  ],
+  "groundPivot": [
+    654,
+    1140
+  ],
+  "imageCalls": 0,
+  "guideSha256": "4d790312fe096cc674d1fbdbc731b6c39c4b1d6348827bcf10f6bb0b32652d4e",
+  "qaSha256": "703ee06d8eef0399da8d947e0cefd7d8dbabba16823f19fe45db3638271db6aa",
+  "sourceBuilder": "../diagonal-guide-source-v2.py",
+  "sourceBuilderSha256": "cb8cf91d3b29bb77a339ad92ca8a13c95c5a0db83f8eb714259a71bb535f751f",
+  "finding": "Actual clean/QA mannequin images inspected; corrected label/near/far ownership matches frontal and profile accepted views. Both feet follow heading. No character art mirrored.",
+  "finishedArt": false,
+  "motionQualified": false,
+  "runtimeIntegrated": false
+}

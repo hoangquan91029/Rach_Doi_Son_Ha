@@ -1,0 +1,53 @@
+{
+  "asset": "West neutral full-body identity turnaround guided-01",
+  "status": "READY_FOR_ONE_PARENT_AUTHORIZED_CALL",
+  "direction": {
+    "screen": "LEFT/WEST",
+    "engine": "D03",
+    "world": "SW"
+  },
+  "inputs": [
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "role": "parent-accepted South canonical identity/appearance/costume/palette authority"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/turnarounds/east-neutral-reference-guided-02/raw.png",
+      "sha256": "45ae1e7a27d3cb9260dc9e5495cf83b4956481b1047ead2975572aff1385aae3",
+      "role": "parent-accepted East profile identity/material/body consistency only; no side or mirroring authority"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+      "role": "locked original identity and garment construction/material authority; D00 is not West"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-guides/static-west-v1/guide.png",
+      "sha256": "739c883c01eabb2aae34a1d89c239609825e856ef1ac5c6302e217e89fe2f49e",
+      "role": "MODEL_ONLY West profile geometry, screen-left heading, anatomical side ownership, and -X shoe-axis guide only"
+    }
+  ],
+  "excluded_inputs": [
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/turnarounds/east-neutral-reference/raw.png"
+  ],
+  "prompt_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/turnarounds/west-neutral-reference-guided-01/prompt.txt",
+  "prompt_sha256": "361762f0180978bb6906608674c884e3b0b2f7d66b9b2a412428a151a27db190",
+  "canvas_requested": [
+    1254,
+    1254
+  ],
+  "ground_pivot": [
+    654,
+    1140
+  ],
+  "world_scale": "38/1254 full canvas",
+  "call_cap": 1,
+  "calls_initiated": 1,
+  "retries": 0,
+  "transparent_background": true,
+  "runtime_changes": false,
+  "other_turnarounds_or_animation_authorized": false,
+  "raw_returned": true,
+  "raw_sha256": "630f000746e140e501a55847a6a9d7736fd025736684969ca8bdd9e778b22ccf"
+}

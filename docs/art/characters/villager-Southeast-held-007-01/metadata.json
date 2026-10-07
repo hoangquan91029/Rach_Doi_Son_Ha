@@ -1,0 +1,40 @@
+{
+  "asset": "villager Southeast neutral full-body identity turnaround guided-01",
+  "status": "PENDING_PARENT_VISUAL_REVIEW",
+  "calls_initiated": 1,
+  "call_cap": 1,
+  "retries": 0,
+  "generated_output_path": "/home/kieu-hoang-quan/.codex/generated_images/01a116ce-195d-73e0-a579-e4e5e990575d/exec-ed7c01cd-328b-498b-bc10-6804152102c6.png",
+  "raw_path": "raw.png",
+  "raw_sha256": "c2f31b29f5bf0f42cd1884849f39304f9cee0a2351fff7f340134127b8545f1c",
+  "decoded_rgba_sha256": "4e1d52826af5f26e5a1ff1a76c4f3ffcc8bfeaf2bf228cc9fc80899072f5ed10",
+  "source_format": "PNG",
+  "source_canvas": [
+    1254,
+    1254
+  ],
+  "source_mode": "RGB",
+  "transparency": {
+    "present": false,
+    "diagnosis": "Returned RGB image has no alpha channel; checkerboard appearance is baked into pixel data. No background removal or cleanup performed."
+  },
+  "prompt_sha256": "a9fcb9c9f7b0767cf83e5471981230faac0ff13a7c3a3908f54622c4f6711abd",
+  "input_locks_sha256": "27ba05b3595cac923b4636e496f941558d796a51774c584013dfa02d5a9383cd",
+  "direction_intended": {
+    "screen": "down-right ESE",
+    "engine": "D00",
+    "world": "E"
+  },
+  "locked_ground_pivot": [
+    654,
+    1140
+  ],
+  "fixed_wholecanvas_scale": "38/1254",
+  "review_observations": {
+    "native": "Clear full-body three-quarter pose facing screen-right and slightly down; head, torso and pelvis read ESE. Both sandals appear pointed screen-right/down. Recognizable hat, goatee, ivory tunic, dark sash, brown trousers, pale wraps and sandals retained.",
+    "asymmetry": "Sash knot/hanging tail appear on viewer-right. The brief required actor anatomical LEFT near side at viewer-left; this may be reversed and needs parent inspection.",
+    "framing": "1254 square full canvas; no crop or fit; source pixel frame retained.",
+    "preview": "preview-fixed-38px-fullcanvas.png is a direct whole-canvas 1254-to-38 LANCZOS reduction; no crop/fit."
+  },
+  "scope": "single static SE identity candidate only; no more views, animation, runtime, or integration authorized"
+}
