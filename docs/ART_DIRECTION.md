@@ -1,6 +1,6 @@
 # Art direction — Rạch Đôi Sơn Hà
 
-**Version 1 · 7 October 2026**  
+**Version 1 · 7 October 2026**
 This document is binding for every visual contributor. Sections 82–114 of [visual-quality-requirements.md](visual-quality-requirements.md) are hard acceptance requirements. Existing procedural game art is **PLACEHOLDER_ONLY** and rejected for release. Do not create a large asset batch before the parent reviews and accepts the browser visual slice.
 
 ## Visual identity
