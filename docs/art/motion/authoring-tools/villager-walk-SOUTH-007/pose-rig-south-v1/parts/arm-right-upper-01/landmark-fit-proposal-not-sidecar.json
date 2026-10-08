@@ -1,0 +1,180 @@
+{
+  "schema": "south-upperarm-landmark-fit-proposal/v1",
+  "status": "PROPOSED_UNIFORM_FIT_NOT_SIDECAR_NOT_SEALED",
+  "raw_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-upper-01/raw.png",
+  "raw_sha256": "ebeace7fb22057c786b56e00d8634832b5261d905d9fa91904f57bc413e37d46",
+  "decoded_rgba_sha256": "f9a382adb47cb2d8a3671c772849b6181086acd56b8b1710346cce8b15fc4bcf",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "landmark_candidates": [
+    {
+      "name": "shoulder",
+      "xy_raw_approx": [
+        762,
+        188
+      ],
+      "method": "observed_original",
+      "uncertainty_raw_px": 30,
+      "evidence": "Visible upper sleeve cap apex / center of the short proximal silhouette at the top of the actual raw. No explicit anatomical joint seam is present; this is an uncertain cloth-endpoint candidate and may be partly hidden under the core."
+    },
+    {
+      "name": "elbow",
+      "xy_raw_approx": [
+        600,
+        966
+      ],
+      "method": "observed_original",
+      "uncertainty_raw_px": 35,
+      "evidence": "Approximate center of the dark cuff-mouth opening at the distal end of the actual sleeve. The rolled cuff is broad and folded, with no unambiguous elbow joint center; candidate is a cloth boundary convention, not measured anatomy."
+    }
+  ],
+  "candidate_uniform_raw_to_bone_rest": {
+    "formula": "x_rest=s*(cos(theta)*x - sin(theta)*y)+tx; y_rest=s*(sin(theta)*x + cos(theta)*y)+ty",
+    "scale": 0.25167129878945776,
+    "rotationRad": -0.2052927303255352,
+    "translation": [
+      -197.39172293231655,
+      -7.226916304581876
+    ],
+    "maps_shoulder_to": [
+      0,
+      0
+    ],
+    "maps_elbow_to": [
+      0,
+      200
+    ],
+    "projected_raw_endpoint_distance_px": 794.6873599095433,
+    "numerical_endpoint_fit_residual_px": 0,
+    "warning": "Zero residual follows exactly from a two-point fit; it does not validate anatomical point choice. Separate fit uncertainty is approximately 8\u20139 local px from endpoint uncertainty."
+  },
+  "alpha_cross_section_profile": [
+    {
+      "fraction": 0,
+      "centerRawXY": [
+        762.0,
+        188.0
+      ],
+      "widthRawAtAlphaGt128Px": 64,
+      "widthAfterCandidateUniformFitLocalPx": 16.11
+    },
+    {
+      "fraction": 0.05,
+      "centerRawXY": [
+        753.9,
+        226.9
+      ],
+      "widthRawAtAlphaGt128Px": 148,
+      "widthAfterCandidateUniformFitLocalPx": 37.25
+    },
+    {
+      "fraction": 0.1,
+      "centerRawXY": [
+        745.8,
+        265.8
+      ],
+      "widthRawAtAlphaGt128Px": 209,
+      "widthAfterCandidateUniformFitLocalPx": 52.6
+    },
+    {
+      "fraction": 0.2,
+      "centerRawXY": [
+        729.6,
+        343.6
+      ],
+      "widthRawAtAlphaGt128Px": 297,
+      "widthAfterCandidateUniformFitLocalPx": 74.75
+    },
+    {
+      "fraction": 0.3,
+      "centerRawXY": [
+        713.4,
+        421.4
+      ],
+      "widthRawAtAlphaGt128Px": 334,
+      "widthAfterCandidateUniformFitLocalPx": 84.06
+    },
+    {
+      "fraction": 0.4,
+      "centerRawXY": [
+        697.2,
+        499.2
+      ],
+      "widthRawAtAlphaGt128Px": 343,
+      "widthAfterCandidateUniformFitLocalPx": 86.32
+    },
+    {
+      "fraction": 0.5,
+      "centerRawXY": [
+        681.0,
+        577.0
+      ],
+      "widthRawAtAlphaGt128Px": 343,
+      "widthAfterCandidateUniformFitLocalPx": 86.32
+    },
+    {
+      "fraction": 0.6,
+      "centerRawXY": [
+        664.8,
+        654.8
+      ],
+      "widthRawAtAlphaGt128Px": 343,
+      "widthAfterCandidateUniformFitLocalPx": 86.32
+    },
+    {
+      "fraction": 0.7,
+      "centerRawXY": [
+        648.6,
+        732.6
+      ],
+      "widthRawAtAlphaGt128Px": 374,
+      "widthAfterCandidateUniformFitLocalPx": 94.13
+    },
+    {
+      "fraction": 0.8,
+      "centerRawXY": [
+        632.4,
+        810.4
+      ],
+      "widthRawAtAlphaGt128Px": 350,
+      "widthAfterCandidateUniformFitLocalPx": 88.08
+    },
+    {
+      "fraction": 0.9,
+      "centerRawXY": [
+        616.2,
+        888.2
+      ],
+      "widthRawAtAlphaGt128Px": 355,
+      "widthAfterCandidateUniformFitLocalPx": 89.34
+    },
+    {
+      "fraction": 0.95,
+      "centerRawXY": [
+        608.1,
+        927.1
+      ],
+      "widthRawAtAlphaGt128Px": 351,
+      "widthAfterCandidateUniformFitLocalPx": 88.34
+    },
+    {
+      "fraction": 1,
+      "centerRawXY": [
+        600.0,
+        966.0
+      ],
+      "widthRawAtAlphaGt128Px": 332,
+      "widthAfterCandidateUniformFitLocalPx": 83.55
+    }
+  ],
+  "width_guidance_comparison": {
+    "v2_guide_local_width_approx_px": {
+      "proximal": 80,
+      "distal": 60
+    },
+    "observed_after_candidate_uniform_fit": "Source alpha width is ~75px by20% along the chosen axis, broadens to ~84\u201394px through body/cuff and remains ~84px at distal mouth; initial apex tip is ~16px. This reverses the desired taper and flags possible source geometry mismatch. Do not distort, redraw, clean, or retry; parent review decides suitability."
+  },
+  "camera_separation": "This candidate mapping is raw\u2192unforeshortened bone rest only. Fixed26.565-degree final projection is separately performed by tooling-v4/v5 baker; do not pre-project the raw."
+}

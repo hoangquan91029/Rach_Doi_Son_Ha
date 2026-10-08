@@ -1,9 +1,9 @@
 {
   "schema": "south-persistent-component-live-ledger/v1",
-  "timestampUtc": "2026-10-08T01:34:52.086240+00:00",
-  "status": "ONE_CALIBRATED_CORE_AUTHORING_ONLY",
-  "partsGenerated": 1,
-  "componentImageCalls": 1,
+  "timestampUtc": "2026-10-08T01:44:08.410370+00:00",
+  "status": "ONE_CALIBRATED_CORE_ONE_UNSEALED_SLEEVE_PROPOSAL",
+  "partsGenerated": 2,
+  "componentImageCalls": 2,
   "calibratedParts": 1,
   "selectedReadyParts": 1,
   "illustratedBakedKeys": 0,
@@ -18,9 +18,17 @@
       "calibrationParentReviewSha256": "f2d304415f809c4de3ae3e00ea901a6a0cbeecb69ac70051eaf90d144e6c2bca",
       "sidecar": "parts/core-head-torso-pelvis-01/sidecar-v3.json",
       "sidecarSha256": "1554ddbd9cf9a6d81ff4840d2dd941baebd5f387bd2ca598541f2fa0e1329b8d"
+    },
+    "arm_right_upper": {
+      "raw": "parts/arm-right-upper-01/raw.png",
+      "rawSha256": "ebeace7fb22057c786b56e00d8634832b5261d905d9fa91904f57bc413e37d46",
+      "parentReviewSha256": "9754de8105e77d7f446e90f8508cdc6bf86a76412777c8b903ec39d9a76f2e23",
+      "status": "PASS_MATERIAL_ONLY_UNCERTAIN_FIT_ASSEMBLY_REVIEW_PENDING",
+      "calibrated": false,
+      "selectedReady": false
     }
   },
-  "next": "Review corrected upperarm bone-plane guide then issue separate finite one-original work order; do not reuse projected screen173.33 guide as unforeshortened200 rest texture.",
+  "next": "Separate PROPOSAL_ONLY diagnostic using exact candidate uniform fit, intact fullalpha mesh and existing four camera poses; no fake SEALED sidecar.",
   "motionQualified": false,
   "finalArtApproved": false
 }

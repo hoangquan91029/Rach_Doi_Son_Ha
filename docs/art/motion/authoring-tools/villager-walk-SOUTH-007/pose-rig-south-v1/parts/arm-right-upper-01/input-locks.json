@@ -1,0 +1,54 @@
+{
+  "schema": "south-bitmap-single-call-input-locks/v1",
+  "authorization_sha256": "46477431208df2a2d4e850cf68474573a439d41e0b731280921ca76fdb367651",
+  "prompt_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-upper-pilot-draft-v2/prompt.txt",
+  "prompt_sha256": "f3e4d2f59e3d183c5b59100f1007a2c0c800d7978a3aa76176627f7ccbc6abc6",
+  "references_exact_order": [
+    {
+      "order": 1,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/south-neutral-reference/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "decoded_rgba_sha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6",
+      "role": "Canonical South identity, neutral pose, costume and body-scale authority.",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "order": 2,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+      "decoded_rgba_sha256": "c960d206222a191b903a8cc1a679e82bdce8d8c51df4010a935f444b3cacdb9c",
+      "role": "Established painterly style, material rendering, palette and northwest-light authority; not direction or global scale authority.",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "order": 3,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/core-rest-inspection-v3/partial-rest-core.png",
+      "sha256": "03998fdc1524d6d5216c80ae8620382cc3eca5d91d467b58c6bdfc4129f78f7a",
+      "decoded_rgba_sha256": "cb09a045147832d877b42d0d051819c3f09d2fbf86f9281ae3189e4f2cb5fca5",
+      "role": "Actual core after sealed uniform static calibration; cloth weave, ivory tone and actual shoulder-cap overlap/style reference only. Preview is not a source edit or final art.",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "order": 4,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-upper-pilot-draft-v2/guide.png",
+      "sha256": "fa558cc189776ab2fb496481bd789e300248fb60b7ad5ae2be5f8bc609bfc9bf",
+      "decoded_rgba_sha256": "85cbd43348dff5d3b2d132703feb10dd11dbfe310c9925225a359b134951974a",
+      "role": "MODEL_ONLY local bone-plane geometry: actor RIGHT upper arm silhouette, unforeshortened 200-unit shoulder-to-elbow axis, proximal/distal overlap. No appearance authority.",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    }
+  ],
+  "imagegen_mode": "built-in",
+  "transparent_background": true
+}

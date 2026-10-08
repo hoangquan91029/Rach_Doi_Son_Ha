@@ -1,0 +1,53 @@
+{
+  "schema": "south-upperarm-original-self-review/v1",
+  "status": "SOURCE_MATCHING_CANDIDATE_GEOMETRY_WIDTH_PROFILE_REVIEW_REQUIRED",
+  "raw_sha256": "ebeace7fb22057c786b56e00d8634832b5261d905d9fa91904f57bc413e37d46",
+  "decoded_rgba_sha256": "f9a382adb47cb2d8a3671c772849b6181086acd56b8b1710346cce8b15fc4bcf",
+  "visual_findings": [
+    "One isolated ivory sleeve component with matching woven tunic texture and soft northwest highlights.",
+    "No bare forearm/hand, second limb, floor, background or text.",
+    "Raw natural bounds are very large relative to the 200-local-unit rest bone: native alpha>128 box spans x418\u2013877,y177\u20131042.",
+    "Proximal apex is narrow and source sleeve broadens markedly toward the elbow cuff. Uniform-fit local width profile is approximately16px at apex,75px at 20% length,84\u201394px through the sleeve/cuff, and84px at the distal mouth, versus guide target~80 proximal/~60 distal.",
+    "Natural endpoint semantics are uncertain: candidate shoulder at top cap apex; candidate elbow at cuff-mouth center. No crisp anatomical joint centers."
+  ],
+  "proposed_landmarks": {
+    "shoulder_raw": [
+      762,
+      188
+    ],
+    "shoulder_uncertainty_raw_px": 30,
+    "elbow_raw": [
+      600,
+      966
+    ],
+    "elbow_uncertainty_raw_px": 35
+  },
+  "candidate_uniform_fit": {
+    "scale": 0.25167129878945776,
+    "rotationRad": -0.2052927303255352,
+    "translation": [
+      -197.39172293231655,
+      -7.226916304581876
+    ],
+    "rest_axis": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        200
+      ]
+    ],
+    "sealed": false
+  },
+  "requirements_not_satisfied_or_pending": [
+    "Do not seal sidecar until parent reviews endpoint semantics and widths.",
+    "No actual partial assembly preview yet; engineer can run v5 actual-source inspector only after endpoint proposal parent review.",
+    "No key/loop/atlas/runtime art; no additional image call."
+  ],
+  "raw_untouched": true,
+  "motionQualified": false,
+  "finalArtApproved": false,
+  "additionalCallsAuthorized": 0
+}

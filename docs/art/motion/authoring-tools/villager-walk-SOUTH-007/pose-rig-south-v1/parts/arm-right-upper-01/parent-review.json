@@ -1,0 +1,24 @@
+{
+  "schema": "south-component-parent-original-review/v1",
+  "timestampUtc": "2026-10-08T01:44:08.410370+00:00",
+  "status": "PASS_MATERIAL_ONLY_UNCERTAIN_FIT_ASSEMBLY_REVIEW_PENDING",
+  "partId": "arm_right_upper",
+  "sourceByteSha256": "ebeace7fb22057c786b56e00d8634832b5261d905d9fa91904f57bc413e37d46",
+  "sourceRgbaSha256": "f9a382adb47cb2d8a3671c772849b6181086acd56b8b1710346cce8b15fc4bcf",
+  "actuallyViewed": [
+    "raw.png",
+    "endpoint-measurement-QA.png",
+    "preview-fixed-38px-fullcanvas.png",
+    "preview-fixed-38px-3x.png"
+  ],
+  "inputCustodyVerified": true,
+  "callRecordSha256": "8395184f82290c95d43c14712f1ab6317cd6005f9db8e8aa6b3a7968bf2e1721",
+  "candidateFitSha256": "56b9f4d1637b24b929cf316abb58328fb00b8f3c62e66903e1be22bcd86636f2",
+  "decision": "Single ivory sleeve/no unwanted body parts; painterly cloth agrees with identity. Candidate cap-apex and cuff-mouth conventions have uncertain semantics; no anatomical joints measured. Numerical two-point zero residual cannot certify source fit. Observed sleeve broadens through cuff; acceptability must be judged on the real core+sleeve partial assembly at native/fixed38, not isolated magnification.",
+  "calibrationAccepted": false,
+  "sidecarSealed": false,
+  "remainingReview": "Separate PROPOSAL_ONLY diagnostic using exact candidate uniform fit, intact fullalpha mesh and existing four camera poses; no fake SEALED sidecar.",
+  "additionalCallsAuthorized": 0,
+  "motionQualified": false,
+  "finalArtApproved": false
+}
