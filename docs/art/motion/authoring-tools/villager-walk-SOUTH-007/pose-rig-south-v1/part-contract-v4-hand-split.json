@@ -1,0 +1,113 @@
+{
+  "schema": "south-original-component-contract/v4-hand-split",
+  "timestampUtc": "2026-10-08T09:21:04.828832+00:00",
+  "status": "PARENT_INTERNAL_HAND_SPLIT_AUTHORING_CONTRACT_ONLY",
+  "scope": "Internal controlled source authoring/partial diagnostics only; final runtime complete1254 illustrated cels/atlas required. No finalart/fullkey/loop/11part ordering approval.",
+  "previousContract": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/part-contract-v3.json",
+    "sha256": "e4715f935a88952a7f6d477d29879641fda6041bf4e783169c6664a386afa7bc",
+    "retainedUnchanged": true
+  },
+  "reason": "Combinedforearm+hand originals produced incompatible handproportions under mandatoryuniform180bonefit. Two finitebuiltin source edits removedcuff butfailedhandratio; threecombinedlower originals held. STOP further integratedhandproportion edits. Independentlyoriginal forearm andhand permit separate fixeduniformcalibration and wristorientation without crop/stretch or perposefit.",
+  "identity_lock": {
+    "lock_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/identity-lock.json",
+    "lock_sha256": "35fbcf7c558cd32450ddfb6cae76b94bb42994bda36e88c5a3a4df18e239eec3",
+    "lock_status": "PASS_STATIC_IDENTITY_LOCK_FOR_SOUTH_AUTHORING_ONLY",
+    "primary_south_reference": {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/south-neutral-reference/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "rgba_sha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6",
+      "role": "Sealed South canonical full-body appearance and neutral rest-shape authority. It is still a static identity candidate, not final art approval."
+    },
+    "camera": {
+      "canvas_px": [
+        1254,
+        1254
+      ],
+      "projection": "dimetric",
+      "tile_ratio": [
+        2,
+        1
+      ],
+      "tile_px": [
+        54,
+        27
+      ],
+      "elevation_degrees": 26.565,
+      "source_pivot_px": [
+        654,
+        1140
+      ],
+      "whole_canvas_logical_size_px": 38,
+      "source_fringe_warning": "The sealed identity review retains a thin colored edge-fringe candidate warning; do not clean, crop, or normalize it as part authoring."
+    },
+    "side_ownership": {
+      "actor_left": "Anatomical LEFT appears on viewer-right in the front-facing South reference. The asymmetric sash/knot remains on actor LEFT and viewer-right. Screen side does not establish depth.",
+      "actor_right": "Anatomical RIGHT appears on viewer-left in the front-facing South reference. Screen side does not establish depth.",
+      "depth_semantics": "LEFT/RIGHT name anatomical ownership only. Neither limb is permanently near or far. Neutral feet are modeled at the same depth; limb depth and occlusion order are resolved for each pose from model-space depth and actual overlap.",
+      "mirroring": "Forbidden. Preserve the locked face, costume asymmetry, palette, lighting, and view."
+    }
+  },
+  "coreRestAdjustmentSource": "Immutable v3 core_rest_adjustment + parentreviewv4/sidecar-v3; preserve all numbers and two accepted originalcalibrations.",
+  "parts": [
+    "core_head_torso_pelvis",
+    "arm_right_upper",
+    "arm_right_forearm",
+    "hand_right_palm",
+    "arm_left_upper",
+    "arm_left_forearm",
+    "hand_left_palm",
+    "leg_right_upper",
+    "leg_right_lower_sandal",
+    "leg_left_upper",
+    "leg_left_lower_sandal"
+  ],
+  "originalSlotCount": 11,
+  "reusedAcceptedSlots": [
+    "core_head_torso_pelvis",
+    "arm_right_upper"
+  ],
+  "supersededHeldSlots": [
+    "arm_right_lower_hand",
+    "arm_left_lower_hand (never generated)"
+  ],
+  "armSplit": {
+    "arm_right_forearm": {
+      "ownership": "Bare actorRIGHT forearm only, proximalhidden elbow overlap to distalwrist cap; no hand/cloth/cuff.",
+      "calibration": "One immutableuniform similarity from actual inspectedhiddenelbow convention and distalwrist-contour convention to local[0,0]/[0,180]; uncertainties separatefromnumericfit.",
+      "projection": "Existing unchangedRIGHT elbow/wrist3D track andfixedcameraonce."
+    },
+    "hand_right_palm": {
+      "ownership": "Independent originalRIGHT relaxedhand only, smallbarewrist overlap; no forearm/sleeve/props. ThumbviewerRIGHT/bodyinterior inSouth.",
+      "calibration": "One measuredstaticuniform similarity from actual wristcap attachmentconvention to distalfinger contour landmark; nominal65model extent, hypothesis pending actual4partnative/half/game38review. No perposefit/mirrors/alpha cleanup/sourcecut.",
+      "projection": "Explicit internalSouth handplane. Nominal tip=wrist+[0,0,-65], widthaxisworldX; cameraappliedonce. Fixedorientation is a firstpartialdiagnosticpose hypothesis, not motionapproval; reviewwristseam/forearmhand depth eachpose. No source hand foreshortening to match forearm axis."
+    },
+    "left": "Corresponding originalLEFT forearm+hand slots planned; no mirroring or copyingRIGHTsources. No futurecall implied."
+  },
+  "preservedPipelinePins": {
+    "tooling-v4/bake_keys.py": "b5ad84368a091cf1b2643e687fe7a98b7465906a52ede606a7eb89b791d29923",
+    "parts/core-head-torso-pelvis-01/sidecar-v3.json": "1554ddbd9cf9a6d81ff4840d2dd941baebd5f387bd2ca598541f2fa0e1329b8d",
+    "parts/arm-right-upper-01/sidecar-v1.json": "7e60eb992fb5dfd24b6daa1332c09399cd20197741d5fdd96bc3c52e71bbac7a",
+    "parts/arm-right-lower-hand-edit-03/parent-review.json": "a10f3cc26aa4906c04b8d85b5a8182e602777678ca050c96aed510152220c7a6",
+    "component-ownership-clarification-v1.json": "9a874ebd63262f54a99df53c84fd4404c354ba0f9290e32ac4888d9dde363076"
+  },
+  "fixedCanvas": [
+    1254,
+    1254
+  ],
+  "fixedPivot": [
+    654,
+    1140
+  ],
+  "wholeCanvasLogicalSize": 38,
+  "upperBoneLength": 200,
+  "forearmBoneLength": 180,
+  "handNominalExtent": 65,
+  "footRollGate": "Actualtoe-groundedheelrise from observedrigidfootplane +IK required BEFORE fourfinishedkeys; v3 flat12px preservedunaccepted.",
+  "perPoseOrderingApproved": false,
+  "fullBakerForElevenPartsImplemented": false,
+  "imageCallsAuthorizedByContract": 0,
+  "finishedKeys": 0,
+  "qualifiedLoops": 0,
+  "next": "Review separate finiteRIGHT forearmonly sourceedit guide/order, then independentlyoriginalRIGHT hand guide/order. Actual4partpartialrest andall4poses before calibseals. Full11partbaker/intake remains closed."
+}
