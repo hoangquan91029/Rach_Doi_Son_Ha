@@ -1,0 +1,3743 @@
+{
+  "timestamp": "2026-10-08T23:41:01.343Z",
+  "browserVersion": "151.0.7922.34",
+  "pins": [
+    {
+      "url": "http://127.0.0.1:42903/assets/index-BQc6lscV.js",
+      "sha256": "48de160de21a0baa7d84b9ff447e28f162dba5573926efd98b01ee72afd1cc4b",
+      "bytes": 141864
+    },
+    {
+      "url": "http://127.0.0.1:42903/assets/art-v1/gather-026-manifest.json",
+      "sha256": "377d433dbdd2050564131f6ea7e67e14f65a749069cf2500bc46b54039e3471f",
+      "bytes": 50569,
+      "assets": 17,
+      "runtimeAssets": [
+        {
+          "id": "grass",
+          "sha256": "8c7f2d6fd9da7ef7be4abad5f1b3e3d1b4968e9d30180c80bcde0dd97ae9bb5a"
+        },
+        {
+          "id": "water",
+          "sha256": "3e790526414f3b6188f1438e8996da620bf940a42ae2ca257305430592cf204d"
+        },
+        {
+          "id": "forest",
+          "sha256": "3b9b78cce37b89d73e55ca6da35e71e553723af397406fec6eafec9380232453"
+        },
+        {
+          "id": "residence",
+          "sha256": "225bbbae5f3f72695bbddf91270743b96f08488e09f23db2b5339ace78d091ea"
+        },
+        {
+          "id": "infantry-idle-D00",
+          "sha256": "de7a865b865ee6ac8b9ff7ba3df07825c01106e1e7ac691cb0924a187f145c51"
+        },
+        {
+          "id": "cavalry-idle-D00",
+          "sha256": "8571f53f2260947f758e796806a8552b96ba221b004b47d4fcdb2c4c2d549709"
+        },
+        {
+          "id": "villager-idle-D00",
+          "sha256": "17aade7d14ecdc4655b5fd88778ed1a73540a2d2123fe18c9ac7482c1fc9762e"
+        },
+        {
+          "id": "tran-hung-dao-idle-D00",
+          "sha256": "f1f6b64cd4241120c821f392937dcef2fdaa02df18de0f234291589cd847b04c"
+        },
+        {
+          "id": "unit-contact-shadow",
+          "sha256": "274b81f26e3869e158b0ab1e5093cd8a899d5255f0239c25ec7ab07ec314a7ff"
+        },
+        {
+          "id": "ford",
+          "sha256": "6085208b5a3eaa97c8bb070da9faae489bf401b02e9da2213665e3925f567ad2"
+        },
+        {
+          "id": "shore",
+          "sha256": "e8fd3695183ed37a726da4fa52ea57e026431ac99bb6e9508cbde85f364bd646"
+        },
+        {
+          "id": "forest-bamboo",
+          "sha256": "aadff088ffc55a9cf12597ab501f6524405a7c00634ed3017637ac77539bdcb7"
+        },
+        {
+          "id": "forest-palm",
+          "sha256": "ab540fc3ef9eec050518c0a74bf2ad94743ea2bf429f03bfe5b114d2fc3c239a"
+        },
+        {
+          "id": "granary",
+          "sha256": "b663d289fe8fbe44e778b586d8e5aa85aa14401badafcfabe12b4aae963f4cca"
+        },
+        {
+          "id": "villager-walk-south-014",
+          "sha256": "b2bdd86bd02f967bde9b070e5952e97dae257706b5d52730b787e32e9580fc13"
+        },
+        {
+          "id": "villager-idle-south-014",
+          "sha256": "17962707943bb616362271cdde1abbfc17a05b0bad950dc714dd3586954b95ab"
+        },
+        {
+          "id": "villager-gather-wood-south-024",
+          "sha256": "5db6455a859a823658e2297544ca739dd466509856f8c2534644a05903cd1092"
+        }
+      ]
+    },
+    {
+      "url": "http://127.0.0.1:42903/assets/art-v1/gather-026/atlas.png",
+      "sha256": "5db6455a859a823658e2297544ca739dd466509856f8c2534644a05903cd1092",
+      "bytes": 123493
+    }
+  ],
+  "transport": {
+    "requestedUrl": "http://127.0.0.1:42903/?art=work",
+    "actualUrl": "http://127.0.0.1:42903/?art=work",
+    "resolveIp": null,
+    "tlsVerificationBypassed": false,
+    "httpStatus": 200,
+    "serverAddress": {
+      "ipAddress": "127.0.0.1",
+      "port": 42903
+    },
+    "securityDetails": {}
+  },
+  "map": "delta",
+  "difficulty": "easy",
+  "winner": 1,
+  "reason": "Enemy General defeated",
+  "tick": 6431,
+  "simulationSeconds": 321.55,
+  "wallSeconds": 321.865,
+  "errors": [],
+  "networkFailures": [],
+  "offlineAfterLoad": true,
+  "offlineStatus": {
+    "beforeDisconnect": true,
+    "afterDisconnect": false,
+    "afterMatch": false,
+    "finalAssets": {
+      "art": {
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 17,
+        "ready": 17,
+        "approved": 0,
+        "candidates": 17,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "failures": []
+      },
+      "portraits": {
+        "declared": 12,
+        "ready": 12,
+        "failures": [],
+        "fontWarnings": []
+      }
+    },
+    "afterResultMenu": false
+  },
+  "strategy": "adaptive-resources",
+  "method": "Actual production UI mouse/keyboard only; read-only filtered diagnostics. No state mutation, simulation speed-up or injected commands.",
+  "actions": [
+    {
+      "tick": 104,
+      "action": "Eight firearms queued through barracks UI"
+    },
+    {
+      "tick": 121,
+      "action": "Four economic reinforcements queued"
+    },
+    {
+      "tick": 124,
+      "action": "General held at home; forts cover the position"
+    },
+    {
+      "tick": 267,
+      "action": "Idle builder returned to wood gathering"
+    },
+    {
+      "tick": 406,
+      "action": "Idle builder returned to wood gathering"
+    },
+    {
+      "tick": 444,
+      "action": "Defensive fort reserved"
+    },
+    {
+      "tick": 547,
+      "action": "Idle builder returned to wood gathering"
+    },
+    {
+      "tick": 842,
+      "action": "Defensive fort reserved"
+    },
+    {
+      "tick": 1006,
+      "action": "Idle builder returned to wood gathering"
+    },
+    {
+      "tick": 1012,
+      "action": "Idle builder returned to wood gathering"
+    },
+    {
+      "tick": 1366,
+      "action": "Idle builder returned to wood gathering"
+    },
+    {
+      "tick": 1803,
+      "action": "Mass advance at ninety simulation seconds"
+    },
+    {
+      "tick": 4371,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 4392,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 4408,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 4420,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 4440,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 4460,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 4482,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 4495,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 4511,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 4530,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 4546,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 4560,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 4580,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 4594,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 4608,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 4627,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 4642,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 4655,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 4675,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 4690,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 4702,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 5556,
+      "action": "Fort placement rejected: Construction site blocked or shipyard is inland"
+    },
+    {
+      "tick": 5644,
+      "action": "Fort placement rejected: Construction site blocked or shipyard is inland"
+    },
+    {
+      "tick": 5702,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 5725,
+      "action": "Fort placement rejected: Construction site blocked or shipyard is inland"
+    },
+    {
+      "tick": 5727,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 5746,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 5760,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 5773,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 5795,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 5811,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 5824,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 5844,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 5857,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 5870,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 5891,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 5907,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 5921,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 5942,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 5956,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 5969,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 5991,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 6010,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 6023,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 6042,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 6056,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 6070,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 6091,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 6111,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 6131,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 6147,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 6161,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 6183,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 6198,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 6212,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 6231,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 6246,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 6260,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 6279,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 6294,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 6306,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 6325,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 6338,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 6351,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 6370,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 6385,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 6398,
+      "action": "General retreat from raid through ordinary move UI"
+    },
+    {
+      "tick": 6418,
+      "action": "General retreat from raid through ordinary move UI"
+    }
+  ],
+  "timeline": [
+    {
+      "tick": 131,
+      "winner": null,
+      "general": {
+        "hp": 360,
+        "x": 11,
+        "y": 25.5
+      },
+      "army": [
+        {
+          "id": 13,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 23.5,
+          "state": "idle",
+          "food": 39.1
+        },
+        {
+          "id": 14,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 24.1,
+          "state": "idle",
+          "food": 39.1
+        },
+        {
+          "id": 15,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 24.8,
+          "state": "idle",
+          "food": 39.1
+        },
+        {
+          "id": 16,
+          "type": "spearman",
+          "hp": 105,
+          "x": 15.5,
+          "y": 25.4,
+          "state": "idle",
+          "food": 39.1
+        }
+      ],
+      "resources": {
+        "wood": 270,
+        "food": 266.15145600000574,
+        "iron": 20
+      },
+      "forts": [],
+      "enemy": []
+    },
+    {
+      "tick": 337,
+      "winner": null,
+      "general": {
+        "hp": 360,
+        "x": 11,
+        "y": 25.5
+      },
+      "army": [
+        {
+          "id": 13,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 23.5,
+          "state": "idle",
+          "food": 37.8
+        },
+        {
+          "id": 14,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 24.1,
+          "state": "idle",
+          "food": 37.8
+        },
+        {
+          "id": 15,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 24.8,
+          "state": "idle",
+          "food": 37.8
+        },
+        {
+          "id": 16,
+          "type": "spearman",
+          "hp": 105,
+          "x": 15.5,
+          "y": 25.4,
+          "state": "idle",
+          "food": 37.8
+        },
+        {
+          "id": 40,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 39.9
+        }
+      ],
+      "resources": {
+        "wood": 310,
+        "food": 297.9376960000051,
+        "iron": 60
+      },
+      "forts": [],
+      "enemy": []
+    },
+    {
+      "tick": 537,
+      "winner": null,
+      "general": {
+        "hp": 360,
+        "x": 11,
+        "y": 25.5
+      },
+      "army": [
+        {
+          "id": 13,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 23.5,
+          "state": "idle",
+          "food": 36.4
+        },
+        {
+          "id": 14,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 24.1,
+          "state": "idle",
+          "food": 36.4
+        },
+        {
+          "id": 15,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 24.8,
+          "state": "idle",
+          "food": 36.4
+        },
+        {
+          "id": 16,
+          "type": "spearman",
+          "hp": 105,
+          "x": 15.5,
+          "y": 25.4,
+          "state": "idle",
+          "food": 36.4
+        },
+        {
+          "id": 40,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 38.6
+        }
+      ],
+      "resources": {
+        "wood": 190,
+        "food": 328.18054400000403,
+        "iron": 0
+      },
+      "forts": [
+        {
+          "id": 45,
+          "hp": 224.7999999999996,
+          "construction": true
+        }
+      ],
+      "enemy": []
+    },
+    {
+      "tick": 739,
+      "winner": null,
+      "general": {
+        "hp": 360,
+        "x": 11,
+        "y": 25.5
+      },
+      "army": [
+        {
+          "id": 13,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 23.5,
+          "state": "idle",
+          "food": 35.1
+        },
+        {
+          "id": 14,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 24.1,
+          "state": "idle",
+          "food": 35.1
+        },
+        {
+          "id": 15,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 24.8,
+          "state": "idle",
+          "food": 35.1
+        },
+        {
+          "id": 16,
+          "type": "spearman",
+          "hp": 105,
+          "x": 15.5,
+          "y": 25.4,
+          "state": "idle",
+          "food": 35.1
+        },
+        {
+          "id": 40,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 37.3
+        },
+        {
+          "id": 50,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 38.9
+        }
+      ],
+      "resources": {
+        "wood": 270,
+        "food": 354.47548800000345,
+        "iron": 80
+      },
+      "forts": [
+        {
+          "id": 45,
+          "hp": 669.2000000000014,
+          "construction": true
+        }
+      ],
+      "enemy": []
+    },
+    {
+      "tick": 940,
+      "winner": null,
+      "general": {
+        "hp": 360,
+        "x": 11,
+        "y": 25.5
+      },
+      "army": [
+        {
+          "id": 13,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 23.5,
+          "state": "idle",
+          "food": 33.8
+        },
+        {
+          "id": 14,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 24.1,
+          "state": "idle",
+          "food": 33.8
+        },
+        {
+          "id": 15,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 24.8,
+          "state": "idle",
+          "food": 33.8
+        },
+        {
+          "id": 16,
+          "type": "spearman",
+          "hp": 105,
+          "x": 15.5,
+          "y": 25.4,
+          "state": "idle",
+          "food": 33.8
+        },
+        {
+          "id": 40,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 35.9
+        },
+        {
+          "id": 50,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 37.5
+        },
+        {
+          "id": 57,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 39.1
+        }
+      ],
+      "resources": {
+        "wood": 190,
+        "food": 402.2503680000088,
+        "iron": 40
+      },
+      "forts": [
+        {
+          "id": 45,
+          "hp": 1111.4000000000106,
+          "construction": true
+        },
+        {
+          "id": 58,
+          "hp": 314.99999999999915,
+          "construction": true
+        }
+      ],
+      "enemy": []
+    },
+    {
+      "tick": 1141,
+      "winner": null,
+      "general": {
+        "hp": 360,
+        "x": 11,
+        "y": 25.5
+      },
+      "army": [
+        {
+          "id": 13,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 23.5,
+          "state": "idle",
+          "food": 32.4
+        },
+        {
+          "id": 14,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 24.1,
+          "state": "idle",
+          "food": 32.4
+        },
+        {
+          "id": 15,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 24.8,
+          "state": "idle",
+          "food": 32.4
+        },
+        {
+          "id": 16,
+          "type": "spearman",
+          "hp": 105,
+          "x": 15.5,
+          "y": 25.4,
+          "state": "idle",
+          "food": 32.4
+        },
+        {
+          "id": 40,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 34.6
+        },
+        {
+          "id": 50,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 36.2
+        },
+        {
+          "id": 57,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 37.8
+        },
+        {
+          "id": 59,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 39.4
+        }
+      ],
+      "resources": {
+        "wood": 250,
+        "food": 451.1391360000122,
+        "iron": 140
+      },
+      "forts": [
+        {
+          "id": 45,
+          "hp": 1250,
+          "construction": false
+        },
+        {
+          "id": 58,
+          "hp": 757.2000000000032,
+          "construction": true
+        }
+      ],
+      "enemy": []
+    },
+    {
+      "tick": 1346,
+      "winner": null,
+      "general": {
+        "hp": 360,
+        "x": 11,
+        "y": 25.5
+      },
+      "army": [
+        {
+          "id": 13,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 23.5,
+          "state": "idle",
+          "food": 31.1
+        },
+        {
+          "id": 14,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 24.1,
+          "state": "idle",
+          "food": 31.1
+        },
+        {
+          "id": 15,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 24.8,
+          "state": "idle",
+          "food": 31.1
+        },
+        {
+          "id": 16,
+          "type": "spearman",
+          "hp": 105,
+          "x": 15.5,
+          "y": 25.4,
+          "state": "idle",
+          "food": 31.1
+        },
+        {
+          "id": 40,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 33.2
+        },
+        {
+          "id": 50,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 34.8
+        },
+        {
+          "id": 57,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 36.4
+        },
+        {
+          "id": 59,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 38
+        },
+        {
+          "id": 61,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 39.6
+        }
+      ],
+      "resources": {
+        "wood": 350,
+        "food": 480.5407360000153,
+        "iron": 220
+      },
+      "forts": [
+        {
+          "id": 45,
+          "hp": 1250,
+          "construction": false
+        },
+        {
+          "id": 58,
+          "hp": 1208.2000000000126,
+          "construction": true
+        }
+      ],
+      "enemy": []
+    },
+    {
+      "tick": 1551,
+      "winner": null,
+      "general": {
+        "hp": 360,
+        "x": 11,
+        "y": 25.5
+      },
+      "army": [
+        {
+          "id": 13,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 23.5,
+          "state": "idle",
+          "food": 29.7
+        },
+        {
+          "id": 14,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 24.1,
+          "state": "idle",
+          "food": 29.7
+        },
+        {
+          "id": 15,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 24.8,
+          "state": "idle",
+          "food": 29.7
+        },
+        {
+          "id": 16,
+          "type": "spearman",
+          "hp": 105,
+          "x": 15.5,
+          "y": 25.4,
+          "state": "idle",
+          "food": 29.7
+        },
+        {
+          "id": 40,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 31.9
+        },
+        {
+          "id": 50,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 33.5
+        },
+        {
+          "id": 57,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 35.1
+        },
+        {
+          "id": 59,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 36.7
+        },
+        {
+          "id": 61,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 38.2
+        },
+        {
+          "id": 63,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 39.8
+        }
+      ],
+      "resources": {
+        "wood": 470,
+        "food": 505.67648000001725,
+        "iron": 320
+      },
+      "forts": [
+        {
+          "id": 45,
+          "hp": 1250,
+          "construction": false
+        },
+        {
+          "id": 58,
+          "hp": 1250,
+          "construction": false
+        }
+      ],
+      "enemy": []
+    },
+    {
+      "tick": 1751,
+      "winner": null,
+      "general": {
+        "hp": 360,
+        "x": 11,
+        "y": 25.5
+      },
+      "army": [
+        {
+          "id": 13,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 23.5,
+          "state": "idle",
+          "food": 28.4
+        },
+        {
+          "id": 14,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 24.1,
+          "state": "idle",
+          "food": 28.4
+        },
+        {
+          "id": 15,
+          "type": "infantry",
+          "hp": 125,
+          "x": 15.5,
+          "y": 24.8,
+          "state": "idle",
+          "food": 28.4
+        },
+        {
+          "id": 16,
+          "type": "spearman",
+          "hp": 105,
+          "x": 15.5,
+          "y": 25.4,
+          "state": "idle",
+          "food": 28.4
+        },
+        {
+          "id": 40,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 30.6
+        },
+        {
+          "id": 50,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 32.2
+        },
+        {
+          "id": 57,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 33.7
+        },
+        {
+          "id": 59,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 35.3
+        },
+        {
+          "id": 61,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 36.9
+        },
+        {
+          "id": 63,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 38.5
+        }
+      ],
+      "resources": {
+        "wood": 535,
+        "food": 489.61440000002005,
+        "iron": 370
+      },
+      "forts": [
+        {
+          "id": 45,
+          "hp": 1250,
+          "construction": false
+        },
+        {
+          "id": 58,
+          "hp": 1250,
+          "construction": false
+        }
+      ],
+      "enemy": []
+    },
+    {
+      "tick": 1953,
+      "winner": null,
+      "general": {
+        "hp": 360,
+        "x": 11,
+        "y": 25.5
+      },
+      "army": [
+        {
+          "id": 13,
+          "type": "infantry",
+          "hp": 125,
+          "x": 31.2,
+          "y": 23.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 27.1
+        },
+        {
+          "id": 14,
+          "type": "infantry",
+          "hp": 125,
+          "x": 31.1,
+          "y": 24.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 27.1
+        },
+        {
+          "id": 15,
+          "type": "infantry",
+          "hp": 125,
+          "x": 31.2,
+          "y": 24.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 27.1
+        },
+        {
+          "id": 16,
+          "type": "spearman",
+          "hp": 105,
+          "x": 30.5,
+          "y": 24.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 27.1
+        },
+        {
+          "id": 40,
+          "type": "firearm",
+          "hp": 80,
+          "x": 24.6,
+          "y": 20.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 29.2
+        },
+        {
+          "id": 50,
+          "type": "firearm",
+          "hp": 80,
+          "x": 24.6,
+          "y": 20.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 30.8
+        },
+        {
+          "id": 57,
+          "type": "firearm",
+          "hp": 80,
+          "x": 24.6,
+          "y": 20.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 32.4
+        },
+        {
+          "id": 59,
+          "type": "firearm",
+          "hp": 80,
+          "x": 24.6,
+          "y": 20.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 34
+        },
+        {
+          "id": 61,
+          "type": "firearm",
+          "hp": 80,
+          "x": 24.6,
+          "y": 20.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 35.6
+        },
+        {
+          "id": 63,
+          "type": "firearm",
+          "hp": 80,
+          "x": 24.6,
+          "y": 20.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 37.2
+        },
+        {
+          "id": 64,
+          "type": "firearm",
+          "hp": 80,
+          "x": 24.6,
+          "y": 20.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 38.8
+        }
+      ],
+      "resources": {
+        "wood": 600,
+        "food": 473.54569600002264,
+        "iron": 440
+      },
+      "forts": [
+        {
+          "id": 45,
+          "hp": 1250,
+          "construction": false
+        },
+        {
+          "id": 58,
+          "hp": 1250,
+          "construction": false
+        }
+      ],
+      "enemy": [
+        {
+          "id": 32,
+          "type": "infantry",
+          "hp": 125,
+          "x": 35.43403065089085,
+          "y": 24.5
+        },
+        {
+          "id": 33,
+          "type": "spearman",
+          "hp": 105,
+          "x": 35.96124921972508,
+          "y": 25.5
+        },
+        {
+          "id": 36,
+          "type": "spearman",
+          "hp": 105,
+          "x": 37.780299037918134,
+          "y": 21.5
+        }
+      ]
+    },
+    {
+      "tick": 2159,
+      "winner": null,
+      "general": {
+        "hp": 360,
+        "x": 11,
+        "y": 25.5
+      },
+      "army": [
+        {
+          "id": 13,
+          "type": "infantry",
+          "hp": 116.78,
+          "x": 43.7,
+          "y": 22.3,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 25.7
+        },
+        {
+          "id": 14,
+          "type": "infantry",
+          "hp": 80.64426347106786,
+          "x": 43.1,
+          "y": 22.9,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 25.7
+        },
+        {
+          "id": 15,
+          "type": "infantry",
+          "hp": 114.74,
+          "x": 42.8,
+          "y": 23.2,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 25.7
+        },
+        {
+          "id": 16,
+          "type": "spearman",
+          "hp": 105,
+          "x": 42,
+          "y": 23,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 25.7
+        },
+        {
+          "id": 40,
+          "type": "firearm",
+          "hp": 80,
+          "x": 35.8,
+          "y": 22.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 27.9
+        },
+        {
+          "id": 50,
+          "type": "firearm",
+          "hp": 80,
+          "x": 35.8,
+          "y": 22.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 29.4
+        },
+        {
+          "id": 57,
+          "type": "firearm",
+          "hp": 80,
+          "x": 35.8,
+          "y": 22.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 31
+        },
+        {
+          "id": 59,
+          "type": "firearm",
+          "hp": 80,
+          "x": 35.8,
+          "y": 22.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 32.6
+        },
+        {
+          "id": 61,
+          "type": "firearm",
+          "hp": 80,
+          "x": 35.8,
+          "y": 22.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 34.2
+        },
+        {
+          "id": 63,
+          "type": "firearm",
+          "hp": 80,
+          "x": 35.8,
+          "y": 22.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 35.8
+        },
+        {
+          "id": 64,
+          "type": "firearm",
+          "hp": 80,
+          "x": 35.8,
+          "y": 22.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 37.4
+        },
+        {
+          "id": 66,
+          "type": "firearm",
+          "hp": 80,
+          "x": 22.8,
+          "y": 20.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 39
+        }
+      ],
+      "resources": {
+        "wood": 665,
+        "food": 455.3440640000247,
+        "iron": 490
+      },
+      "forts": [
+        {
+          "id": 45,
+          "hp": 1250,
+          "construction": false
+        },
+        {
+          "id": 58,
+          "hp": 1250,
+          "construction": false
+        }
+      ],
+      "enemy": [
+        {
+          "id": 24,
+          "type": "villager",
+          "hp": 65,
+          "x": 44.5,
+          "y": 20.5
+        },
+        {
+          "id": 30,
+          "type": "infantry",
+          "hp": 125,
+          "x": 46.77499999999997,
+          "y": 23.5
+        },
+        {
+          "id": 31,
+          "type": "infantry",
+          "hp": 125,
+          "x": 46.92846758114945,
+          "y": 24.452942791957046
+        },
+        {
+          "id": 65,
+          "type": "fort",
+          "hp": 375.16999999999877,
+          "x": 42.5,
+          "y": 20.5
+        },
+        {
+          "id": 67,
+          "type": "spearman",
+          "hp": 105,
+          "x": 49.5,
+          "y": 19.5
+        }
+      ]
+    },
+    {
+      "tick": 2370,
+      "winner": null,
+      "general": {
+        "hp": 348.5292263999981,
+        "x": 11,
+        "y": 25.5
+      },
+      "army": [
+        {
+          "id": 15,
+          "type": "infantry",
+          "hp": 114.74,
+          "x": 44,
+          "y": 22,
+          "state": "attack",
+          "order": "attackMove",
+          "food": 24.3
+        },
+        {
+          "id": 16,
+          "type": "spearman",
+          "hp": 105,
+          "x": 43.2,
+          "y": 21.8,
+          "state": "idle",
+          "order": "attackMove",
+          "food": 24.3
+        },
+        {
+          "id": 40,
+          "type": "firearm",
+          "hp": 80,
+          "x": 37.2,
+          "y": 22.5,
+          "state": "attack",
+          "order": "attackMove",
+          "food": 40
+        },
+        {
+          "id": 50,
+          "type": "firearm",
+          "hp": 80,
+          "x": 37.2,
+          "y": 22.5,
+          "state": "attack",
+          "order": "attackMove",
+          "food": 40
+        },
+        {
+          "id": 57,
+          "type": "firearm",
+          "hp": 80,
+          "x": 37.2,
+          "y": 22.5,
+          "state": "attack",
+          "order": "attackMove",
+          "food": 40
+        },
+        {
+          "id": 59,
+          "type": "firearm",
+          "hp": 80,
+          "x": 37.2,
+          "y": 22.5,
+          "state": "attack",
+          "order": "attackMove",
+          "food": 40
+        },
+        {
+          "id": 61,
+          "type": "firearm",
+          "hp": 80,
+          "x": 37.2,
+          "y": 22.5,
+          "state": "attack",
+          "order": "attackMove",
+          "food": 40
+        },
+        {
+          "id": 63,
+          "type": "firearm",
+          "hp": 80,
+          "x": 37.2,
+          "y": 22.5,
+          "state": "attack",
+          "order": "attackMove",
+          "food": 40
+        },
+        {
+          "id": 64,
+          "type": "firearm",
+          "hp": 80,
+          "x": 37.2,
+          "y": 22.5,
+          "state": "attack",
+          "order": "attackMove",
+          "food": 40
+        },
+        {
+          "id": 66,
+          "type": "firearm",
+          "hp": 80,
+          "x": 37.1,
+          "y": 22.5,
+          "state": "attack",
+          "order": "attackMove",
+          "food": 40
+        },
+        {
+          "id": 69,
+          "type": "firearm",
+          "hp": 80,
+          "x": 21.9,
+          "y": 21.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 39.2
+        }
+      ],
+      "resources": {
+        "wood": 750,
+        "food": 475.74476800002674,
+        "iron": 560
+      },
+      "forts": [
+        {
+          "id": 45,
+          "hp": 1250,
+          "construction": false
+        },
+        {
+          "id": 58,
+          "hp": 1250,
+          "construction": false
+        }
+      ],
+      "enemy": [
+        {
+          "id": 21,
+          "type": "barracks",
+          "hp": 650,
+          "x": 50.5,
+          "y": 20.5
+        },
+        {
+          "id": 24,
+          "type": "villager",
+          "hp": 57.96,
+          "x": 44.5,
+          "y": 20.5
+        },
+        {
+          "id": 30,
+          "type": "infantry",
+          "hp": 119.96,
+          "x": 44.937850108956646,
+          "y": 22.93785010895665
+        },
+        {
+          "id": 31,
+          "type": "infantry",
+          "hp": 51.051900774805056,
+          "x": 44.925231438654244,
+          "y": 22.925231438654247
+        },
+        {
+          "id": 41,
+          "type": "firearm",
+          "hp": 80,
+          "x": 6.5,
+          "y": 32.222451838845636
+        },
+        {
+          "id": 48,
+          "type": "infantry",
+          "hp": 24.680000000000003,
+          "x": 10.303578479965548,
+          "y": 26.696421520034452
+        },
+        {
+          "id": 53,
+          "type": "firearm",
+          "hp": 80,
+          "x": 6.5,
+          "y": 32.222451838845636
+        },
+        {
+          "id": 65,
+          "type": "fort",
+          "hp": 374.4799999999922,
+          "x": 42.5,
+          "y": 20.5
+        },
+        {
+          "id": 67,
+          "type": "spearman",
+          "hp": 105,
+          "x": 45.50878575314169,
+          "y": 21.31460394573102
+        },
+        {
+          "id": 68,
+          "type": "firearm",
+          "hp": 80,
+          "x": 49.120000000000005,
+          "y": 19.5
+        },
+        {
+          "id": 70,
+          "type": "infantry",
+          "hp": 125,
+          "x": 44.962042750919196,
+          "y": 21.0379572490808
+        },
+        {
+          "id": 71,
+          "type": "spearman",
+          "hp": 105,
+          "x": 49.5,
+          "y": 19.5
+        }
+      ]
+    },
+    {
+      "tick": 2573,
+      "winner": null,
+      "general": {
+        "hp": 360,
+        "x": 11,
+        "y": 25.5
+      },
+      "army": [
+        {
+          "id": 40,
+          "type": "firearm",
+          "hp": 56.114191999999974,
+          "x": 38.5,
+          "y": 22.5,
+          "state": "attack",
+          "order": "attackMove",
+          "food": 38.9
+        },
+        {
+          "id": 50,
+          "type": "firearm",
+          "hp": 80,
+          "x": 38.5,
+          "y": 22.5,
+          "state": "attack",
+          "order": "attackMove",
+          "food": 38.9
+        },
+        {
+          "id": 57,
+          "type": "firearm",
+          "hp": 80,
+          "x": 38.5,
+          "y": 22.5,
+          "state": "attack",
+          "order": "attackMove",
+          "food": 38.9
+        },
+        {
+          "id": 59,
+          "type": "firearm",
+          "hp": 80,
+          "x": 38.5,
+          "y": 22.5,
+          "state": "attack",
+          "order": "attackMove",
+          "food": 38.9
+        },
+        {
+          "id": 61,
+          "type": "firearm",
+          "hp": 80,
+          "x": 38.5,
+          "y": 22.5,
+          "state": "attack",
+          "order": "attackMove",
+          "food": 38.9
+        },
+        {
+          "id": 63,
+          "type": "firearm",
+          "hp": 80,
+          "x": 38.5,
+          "y": 22.5,
+          "state": "attack",
+          "order": "attackMove",
+          "food": 38.9
+        },
+        {
+          "id": 64,
+          "type": "firearm",
+          "hp": 80,
+          "x": 38.5,
+          "y": 22.5,
+          "state": "attack",
+          "order": "attackMove",
+          "food": 38.9
+        },
+        {
+          "id": 66,
+          "type": "firearm",
+          "hp": 80,
+          "x": 37.7,
+          "y": 22.5,
+          "state": "attack",
+          "order": "attackMove",
+          "food": 38.9
+        },
+        {
+          "id": 69,
+          "type": "firearm",
+          "hp": 80,
+          "x": 34.5,
+          "y": 22.5,
+          "state": "attack",
+          "order": "attackMove",
+          "food": 39.3
+        },
+        {
+          "id": 73,
+          "type": "firearm",
+          "hp": 80,
+          "x": 16.9,
+          "y": 19.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 39.4
+        }
+      ],
+      "resources": {
+        "wood": 855,
+        "food": 459.34486400002936,
+        "iron": 610
+      },
+      "forts": [
+        {
+          "id": 45,
+          "hp": 1250,
+          "construction": false
+        },
+        {
+          "id": 58,
+          "hp": 1250,
+          "construction": false
+        }
+      ],
+      "enemy": [
+        {
+          "id": 24,
+          "type": "villager",
+          "hp": 57.96,
+          "x": 44.5,
+          "y": 20.5
+        },
+        {
+          "id": 30,
+          "type": "infantry",
+          "hp": 54.43999999999998,
+          "x": 39.82803880646502,
+          "y": 22.5
+        },
+        {
+          "id": 53,
+          "type": "firearm",
+          "hp": 51.92,
+          "x": 6.5,
+          "y": 32.222451838845636
+        },
+        {
+          "id": 65,
+          "type": "fort",
+          "hp": 1437.5,
+          "x": 42.5,
+          "y": 20.5
+        },
+        {
+          "id": 67,
+          "type": "spearman",
+          "hp": 105,
+          "x": 43.32126277546652,
+          "y": 21.5
+        },
+        {
+          "id": 70,
+          "type": "infantry",
+          "hp": 116.12,
+          "x": 42.848314223892906,
+          "y": 21.5
+        },
+        {
+          "id": 71,
+          "type": "spearman",
+          "hp": 105,
+          "x": 43.21392602267289,
+          "y": 21.5
+        }
+      ]
+    },
+    {
+      "tick": 2787,
+      "winner": null,
+      "general": {
+        "hp": 360,
+        "x": 11,
+        "y": 25.5
+      },
+      "army": [
+        {
+          "id": 61,
+          "type": "firearm",
+          "hp": 62.28,
+          "x": 38.5,
+          "y": 22.5,
+          "state": "attack",
+          "order": "attackMove",
+          "food": 37.5
+        },
+        {
+          "id": 63,
+          "type": "firearm",
+          "hp": 80,
+          "x": 38.5,
+          "y": 22.5,
+          "state": "attack",
+          "order": "attackMove",
+          "food": 37.5
+        },
+        {
+          "id": 64,
+          "type": "firearm",
+          "hp": 80,
+          "x": 38.5,
+          "y": 22.5,
+          "state": "attack",
+          "order": "attackMove",
+          "food": 37.5
+        },
+        {
+          "id": 66,
+          "type": "firearm",
+          "hp": 80,
+          "x": 37.7,
+          "y": 22.5,
+          "state": "attack",
+          "order": "attackMove",
+          "food": 37.5
+        },
+        {
+          "id": 69,
+          "type": "firearm",
+          "hp": 80,
+          "x": 35.4,
+          "y": 22.5,
+          "state": "attack",
+          "order": "attackMove",
+          "food": 37.9
+        },
+        {
+          "id": 73,
+          "type": "firearm",
+          "hp": 80,
+          "x": 32.7,
+          "y": 22.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 38
+        },
+        {
+          "id": 76,
+          "type": "firearm",
+          "hp": 80,
+          "x": 16,
+          "y": 19.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 39.6
+        }
+      ],
+      "resources": {
+        "wood": 955,
+        "food": 366.96460800003183,
+        "iron": 710
+      },
+      "forts": [
+        {
+          "id": 45,
+          "hp": 1250,
+          "construction": false
+        },
+        {
+          "id": 58,
+          "hp": 1250,
+          "construction": false
+        }
+      ],
+      "enemy": [
+        {
+          "id": 65,
+          "type": "fort",
+          "hp": 1437.5,
+          "x": 42.5,
+          "y": 20.5
+        },
+        {
+          "id": 67,
+          "type": "spearman",
+          "hp": 105,
+          "x": 39.91126277546654,
+          "y": 21.5
+        },
+        {
+          "id": 68,
+          "type": "firearm",
+          "hp": 80,
+          "x": 43.72502798030343,
+          "y": 20.27497201969657
+        },
+        {
+          "id": 71,
+          "type": "spearman",
+          "hp": 105,
+          "x": 39.913926022672904,
+          "y": 21.5
+        },
+        {
+          "id": 72,
+          "type": "firearm",
+          "hp": 80,
+          "x": 43.72502798030343,
+          "y": 20.27497201969657
+        }
+      ]
+    },
+    {
+      "tick": 3006,
+      "winner": null,
+      "general": {
+        "hp": 360,
+        "x": 11,
+        "y": 25.5
+      },
+      "army": [
+        {
+          "id": 66,
+          "type": "firearm",
+          "hp": 80,
+          "x": 38.2,
+          "y": 21.9,
+          "state": "attack",
+          "order": "attackMove",
+          "food": 36.1
+        },
+        {
+          "id": 69,
+          "type": "firearm",
+          "hp": 0.19253810284799755,
+          "x": 38.2,
+          "y": 21.7,
+          "state": "attack",
+          "order": "attackMove",
+          "food": 36.5
+        },
+        {
+          "id": 73,
+          "type": "firearm",
+          "hp": 80,
+          "x": 38.1,
+          "y": 21.7,
+          "state": "attack",
+          "order": "attackMove",
+          "food": 36.6
+        },
+        {
+          "id": 76,
+          "type": "firearm",
+          "hp": 80,
+          "x": 32.4,
+          "y": 22.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 40
+        },
+        {
+          "id": 79,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 39.7
+        }
+      ],
+      "resources": {
+        "wood": 1025,
+        "food": 304.3591360000344,
+        "iron": 770
+      },
+      "forts": [
+        {
+          "id": 45,
+          "hp": 1250,
+          "construction": false
+        },
+        {
+          "id": 58,
+          "hp": 1250,
+          "construction": false
+        }
+      ],
+      "enemy": [
+        {
+          "id": 65,
+          "type": "fort",
+          "hp": 1437.5,
+          "x": 42.5,
+          "y": 20.5
+        },
+        {
+          "id": 68,
+          "type": "firearm",
+          "hp": 6.531428444289908,
+          "x": 43.70786440057176,
+          "y": 20.368408690927915
+        },
+        {
+          "id": 72,
+          "type": "firearm",
+          "hp": 80,
+          "x": 43.70786440057176,
+          "y": 20.368408690927915
+        }
+      ]
+    },
+    {
+      "tick": 3208,
+      "winner": null,
+      "general": {
+        "hp": 360,
+        "x": 11,
+        "y": 25.5
+      },
+      "army": [
+        {
+          "id": 66,
+          "type": "firearm",
+          "hp": 80,
+          "x": 38.2,
+          "y": 21.9,
+          "state": "attack",
+          "order": "attackMove",
+          "food": 34.7
+        },
+        {
+          "id": 76,
+          "type": "firearm",
+          "hp": 44.56,
+          "x": 38.1,
+          "y": 21.7,
+          "state": "attack",
+          "order": "attackMove",
+          "food": 39.1
+        },
+        {
+          "id": 79,
+          "type": "firearm",
+          "hp": 80,
+          "x": 28.6,
+          "y": 21.6,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 38.4
+        },
+        {
+          "id": 82,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "idle",
+          "food": 40
+        }
+      ],
+      "resources": {
+        "wood": 1125,
+        "food": 333.17120000003695,
+        "iron": 830
+      },
+      "forts": [
+        {
+          "id": 45,
+          "hp": 1250,
+          "construction": false
+        },
+        {
+          "id": 58,
+          "hp": 1250,
+          "construction": false
+        }
+      ],
+      "enemy": [
+        {
+          "id": 65,
+          "type": "fort",
+          "hp": 1418.41,
+          "x": 42.5,
+          "y": 20.5
+        }
+      ]
+    },
+    {
+      "tick": 3414,
+      "winner": null,
+      "general": {
+        "hp": 360,
+        "x": 11,
+        "y": 25.5
+      },
+      "army": [
+        {
+          "id": 66,
+          "type": "firearm",
+          "hp": 62.28,
+          "x": 38.2,
+          "y": 21.9,
+          "state": "attack",
+          "order": "attackMove",
+          "food": 33.4
+        },
+        {
+          "id": 79,
+          "type": "firearm",
+          "hp": 80,
+          "x": 37.1,
+          "y": 22.5,
+          "state": "attack",
+          "order": "attackMove",
+          "food": 40
+        },
+        {
+          "id": 82,
+          "type": "firearm",
+          "hp": 80,
+          "x": 27.7,
+          "y": 20.8,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 38.6
+        }
+      ],
+      "resources": {
+        "wood": 1190,
+        "food": 335.89030400003946,
+        "iron": 920
+      },
+      "forts": [
+        {
+          "id": 45,
+          "hp": 1250,
+          "construction": false
+        },
+        {
+          "id": 58,
+          "hp": 1250,
+          "construction": false
+        }
+      ],
+      "enemy": [
+        {
+          "id": 65,
+          "type": "fort",
+          "hp": 1304.2251936000005,
+          "x": 42.5,
+          "y": 20.5
+        }
+      ]
+    },
+    {
+      "tick": 3626,
+      "winner": null,
+      "general": {
+        "hp": 360,
+        "x": 11,
+        "y": 25.5
+      },
+      "army": [
+        {
+          "id": 86,
+          "type": "firearm",
+          "hp": 80,
+          "x": 27.4,
+          "y": 20.5,
+          "state": "walk",
+          "order": "attackMove",
+          "food": 38.8
+        }
+      ],
+      "resources": {
+        "wood": 1275,
+        "food": 336.5029760000415,
+        "iron": 970
+      },
+      "forts": [
+        {
+          "id": 45,
+          "hp": 1250,
+          "construction": false
+        },
+        {
+          "id": 58,
+          "hp": 1250,
+          "construction": false
+        }
+      ],
+      "enemy": [
+        {
+          "id": 81,
+          "type": "infantry",
+          "hp": 125,
+          "x": 34.77494624569836,
+          "y": 22.13985266335689
+        },
+        {
+          "id": 84,
+          "type": "infantry",
+          "hp": 125,
+          "x": 34.77494624569836,
+          "y": 22.13985266335689
+        },
+        {
+          "id": 85,
+          "type": "cavalry",
+          "hp": 142.32,
+          "x": 35.610483735091,
+          "y": 22.688264169153737
+        }
+      ]
+    },
+    {
+      "tick": 3830,
+      "winner": null,
+      "general": {
+        "hp": 360,
+        "x": 11,
+        "y": 25.5
+      },
+      "army": [
+        {
+          "id": 88,
+          "type": "firearm",
+          "hp": 80,
+          "x": 21.7,
+          "y": 20.7,
+          "state": "attack",
+          "order": "attackMove",
+          "food": 39
+        }
+      ],
+      "resources": {
+        "wood": 1360,
+        "food": 319.1955840000437,
+        "iron": 1040
+      },
+      "forts": [
+        {
+          "id": 45,
+          "hp": 1250,
+          "construction": false
+        },
+        {
+          "id": 58,
+          "hp": 1250,
+          "construction": false
+        }
+      ],
+      "enemy": [
+        {
+          "id": 81,
+          "type": "infantry",
+          "hp": 80.32,
+          "x": 25.159204098976574,
+          "y": 23.159204098976574
+        },
+        {
+          "id": 84,
+          "type": "infantry",
+          "hp": 125,
+          "x": 25.159204098976574,
+          "y": 23.159204098976574
+        },
+        {
+          "id": 85,
+          "type": "cavalry",
+          "hp": 118.47999999999999,
+          "x": 23.972055799308734,
+          "y": 21.972055799308734
+        }
+      ]
+    },
+    {
+      "tick": 4031,
+      "winner": null,
+      "general": {
+        "hp": 360,
+        "x": 11,
+        "y": 25.5
+      },
+      "army": [],
+      "resources": {
+        "wood": 1425,
+        "food": 302.9016640000462,
+        "iron": 1090
+      },
+      "forts": [
+        {
+          "id": 45,
+          "hp": 1250,
+          "construction": false
+        },
+        {
+          "id": 58,
+          "hp": 1250,
+          "construction": false
+        }
+      ],
+      "enemy": [
+        {
+          "id": 80,
+          "type": "firearm",
+          "hp": 80,
+          "x": 18.805085330053036,
+          "y": 24.194914669946964
+        },
+        {
+          "id": 81,
+          "type": "infantry",
+          "hp": 30.159999999999993,
+          "x": 13.803386188540161,
+          "y": 19.5
+        },
+        {
+          "id": 83,
+          "type": "firearm",
+          "hp": 80,
+          "x": 18.805085330053036,
+          "y": 24.194914669946964
+        },
+        {
+          "id": 84,
+          "type": "infantry",
+          "hp": 125,
+          "x": 13.803386188540161,
+          "y": 19.5
+        },
+        {
+          "id": 85,
+          "type": "cavalry",
+          "hp": 20.810625487820708,
+          "x": 13.818722272075643,
+          "y": 19.5
+        }
+      ]
+    },
+    {
+      "tick": 4235,
+      "winner": null,
+      "general": {
+        "hp": 322.3156103999979,
+        "x": 11,
+        "y": 25.5
+      },
+      "army": [],
+      "resources": {
+        "wood": 1510,
+        "food": 286.66736000004875,
+        "iron": 1140
+      },
+      "forts": [
+        {
+          "id": 45,
+          "hp": 1250,
+          "construction": false
+        },
+        {
+          "id": 58,
+          "hp": 1250,
+          "construction": false
+        }
+      ],
+      "enemy": [
+        {
+          "id": 80,
+          "type": "firearm",
+          "hp": 80,
+          "x": 18.67073504162759,
+          "y": 24.32926495837241
+        },
+        {
+          "id": 83,
+          "type": "firearm",
+          "hp": 80,
+          "x": 18.67073504162759,
+          "y": 24.32926495837241
+        },
+        {
+          "id": 84,
+          "type": "infantry",
+          "hp": 31.475273738542775,
+          "x": 13.803386188540161,
+          "y": 19.5
+        },
+        {
+          "id": 85,
+          "type": "cavalry",
+          "hp": 20.810625487820708,
+          "x": 13.818722272075643,
+          "y": 19.5
+        },
+        {
+          "id": 87,
+          "type": "infantry",
+          "hp": 99.92,
+          "x": 11.669378954982953,
+          "y": 24.330621045017047
+        },
+        {
+          "id": 89,
+          "type": "spearman",
+          "hp": 26.76,
+          "x": 12.721796667170974,
+          "y": 25.278203332829023
+        }
+      ]
+    },
+    {
+      "tick": 4453,
+      "winner": null,
+      "general": {
+        "hp": 272.09843483320157,
+        "x": 7.5,
+        "y": 24.630000000000006
+      },
+      "army": [
+        {
+          "id": 99,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "attack",
+          "order": "attackMove",
+          "food": 39.7
+        }
+      ],
+      "resources": {
+        "wood": 1630,
+        "food": 313.25376000005105,
+        "iron": 1140
+      },
+      "forts": [
+        {
+          "id": 45,
+          "hp": 1250,
+          "construction": false
+        },
+        {
+          "id": 58,
+          "hp": 1250,
+          "construction": false
+        }
+      ],
+      "enemy": [
+        {
+          "id": 80,
+          "type": "firearm",
+          "hp": 80,
+          "x": 18.050555012741352,
+          "y": 23.88997378867892
+        },
+        {
+          "id": 83,
+          "type": "firearm",
+          "hp": 80,
+          "x": 18.050555012741352,
+          "y": 23.88997378867892
+        },
+        {
+          "id": 87,
+          "type": "infantry",
+          "hp": 27.919999999999998,
+          "x": 8.738531579249496,
+          "y": 25.49965394847993
+        },
+        {
+          "id": 94,
+          "type": "infantry",
+          "hp": 82.446003460896,
+          "x": 8.761440764633916,
+          "y": 25.499365602428615
+        },
+        {
+          "id": 95,
+          "type": "spearman",
+          "hp": 105,
+          "x": 14.73025766359956,
+          "y": 19.730257663599563
+        },
+        {
+          "id": 96,
+          "type": "infantry",
+          "hp": 125,
+          "x": 19.600640687119096,
+          "y": 22.5
+        },
+        {
+          "id": 98,
+          "type": "cavalry",
+          "hp": 190,
+          "x": 16.491836407388853,
+          "y": 26.508163592611147
+        }
+      ]
+    },
+    {
+      "tick": 4654,
+      "winner": null,
+      "general": {
+        "hp": 277.34843483320077,
+        "x": 2.380790248639771,
+        "y": 18.7654275525357
+      },
+      "army": [
+        {
+          "id": 102,
+          "type": "firearm",
+          "hp": 80,
+          "x": 12.5,
+          "y": 19.5,
+          "state": "attack",
+          "food": 39.9
+        }
+      ],
+      "resources": {
+        "wood": 1715,
+        "food": 316.9863360000511,
+        "iron": 1110
+      },
+      "forts": [
+        {
+          "id": 45,
+          "hp": 1250,
+          "construction": false
+        },
+        {
+          "id": 58,
+          "hp": 1250,
+          "construction": false
+        }
+      ],
+      "enemy": [
+        {
+          "id": 80,
+          "type": "firearm",
+          "hp": 80,
+          "x": 18.050555012741352,
+          "y": 23.88997378867892
+        },
+        {
+          "id": 83,
+          "type": "firearm",
+          "hp": 80,
+          "x": 18.050555012741352,
+          "y": 23.88997378867892
+        },
+        {
+          "id": 94,
+          "type": "infantry",
+          "hp": 32.286003460896,
+          "x": 5.5,
+          "y": 22.5
+        },
+        {
+          "id": 95,
+          "type": "spearman",
+          "hp": 33.370142664191974,
+          "x": 14.165633510702841,
+          "y": 19.5
+        },
+        {
+          "id": 96,
+          "type": "infantry",
+          "hp": 60.86480549620117,
+          "x": 13.828281374238452,
+          "y": 19.5
+        },
+        {
+          "id": 98,
+          "type": "cavalry",
+          "hp": 54.59999999999998,
+          "x": 14.879632946283515,
+          "y": 28.120367053716485
+        }
+      ]
+    },
+    {
+      "tick": 4857,
+      "winner": null,
+      "general": {
+        "hp": 277.34843483320077,
+        "x": 1.5,
+        "y": 18.5
+      },
+      "army": [],
+      "resources": {
+        "wood": 1780,
+        "food": 321.6617280000828,
+        "iron": 1080
+      },
+      "forts": [
+        {
+          "id": 45,
+          "hp": 1250,
+          "construction": false
+        },
+        {
+          "id": 58,
+          "hp": 1250,
+          "construction": false
+        }
+      ],
+      "enemy": [
+        {
+          "id": 80,
+          "type": "firearm",
+          "hp": 80,
+          "x": 17.84064970998082,
+          "y": 23.360030618260613
+        },
+        {
+          "id": 83,
+          "type": "firearm",
+          "hp": 80,
+          "x": 17.84064970998082,
+          "y": 23.360030618260613
+        },
+        {
+          "id": 100,
+          "type": "firearm",
+          "hp": 80,
+          "x": 18.988906534285668,
+          "y": 22.168669588835044
+        },
+        {
+          "id": 101,
+          "type": "infantry",
+          "hp": 125,
+          "x": 19.140640687119102,
+          "y": 22.5
+        }
+      ]
+    },
+    {
+      "tick": 5069,
+      "winner": null,
+      "general": {
+        "hp": 277.34843483320077,
+        "x": 1.5,
+        "y": 18.5
+      },
+      "army": [],
+      "resources": {
+        "wood": 1845,
+        "food": 312.91254400008506,
+        "iron": 1050
+      },
+      "forts": [
+        {
+          "id": 45,
+          "hp": 1250,
+          "construction": false
+        },
+        {
+          "id": 58,
+          "hp": 1250,
+          "construction": false
+        }
+      ],
+      "enemy": [
+        {
+          "id": 80,
+          "type": "firearm",
+          "hp": 80,
+          "x": 16.99516358183647,
+          "y": 24.00483641816353
+        },
+        {
+          "id": 83,
+          "type": "firearm",
+          "hp": 80,
+          "x": 16.99516358183647,
+          "y": 24.00483641816353
+        },
+        {
+          "id": 90,
+          "type": "cavalry",
+          "hp": 190,
+          "x": 9.546811293196857,
+          "y": 33.338924458119635
+        },
+        {
+          "id": 100,
+          "type": "firearm",
+          "hp": 80,
+          "x": 17.004886926625996,
+          "y": 23.995113073374004
+        },
+        {
+          "id": 103,
+          "type": "cavalry",
+          "hp": 81.67999999999998,
+          "x": 14.879632946283515,
+          "y": 28.120367053716485
+        }
+      ]
+    },
+    {
+      "tick": 5280,
+      "winner": null,
+      "general": {
+        "hp": 277.34843483320077,
+        "x": 1.5,
+        "y": 18.5
+      },
+      "army": [],
+      "resources": {
+        "wood": 1985,
+        "food": 349.1699840000873,
+        "iron": 1050
+      },
+      "forts": [
+        {
+          "id": 45,
+          "hp": 851.642205180051,
+          "construction": false
+        },
+        {
+          "id": 58,
+          "hp": 1250,
+          "construction": false
+        }
+      ],
+      "enemy": [
+        {
+          "id": 80,
+          "type": "firearm",
+          "hp": 80,
+          "x": 16.666631515042756,
+          "y": 24.996850370226845
+        },
+        {
+          "id": 83,
+          "type": "firearm",
+          "hp": 80,
+          "x": 16.666631515042756,
+          "y": 24.996850370226845
+        },
+        {
+          "id": 90,
+          "type": "cavalry",
+          "hp": 136.27723152179198,
+          "x": 11.119112276973564,
+          "y": 28.880887723026436
+        },
+        {
+          "id": 91,
+          "type": "infantry",
+          "hp": 100.7692861256588,
+          "x": 11.197900490095625,
+          "y": 28.802099509904377
+        },
+        {
+          "id": 92,
+          "type": "firearm",
+          "hp": 80,
+          "x": 11.358210236266554,
+          "y": 33.196879785834206
+        },
+        {
+          "id": 100,
+          "type": "firearm",
+          "hp": 80,
+          "x": 16.723696141439795,
+          "y": 25.276303858560205
+        },
+        {
+          "id": 103,
+          "type": "cavalry",
+          "hp": 35.06079582344222,
+          "x": 12.76525360376698,
+          "y": 27.76525360376698
+        },
+        {
+          "id": 104,
+          "type": "firearm",
+          "hp": 80,
+          "x": 16.751459981087745,
+          "y": 25.307762274396858
+        },
+        {
+          "id": 105,
+          "type": "spearman",
+          "hp": 105,
+          "x": 12.728156765696507,
+          "y": 26.27184323430349
+        }
+      ]
+    },
+    {
+      "tick": 5481,
+      "winner": null,
+      "general": {
+        "hp": 277.34843483320077,
+        "x": 1.5,
+        "y": 18.5
+      },
+      "army": [],
+      "resources": {
+        "wood": 2085,
+        "food": 385.49366400008944,
+        "iron": 1050
+      },
+      "forts": [
+        {
+          "id": 45,
+          "hp": 215.32504612862888,
+          "construction": false
+        },
+        {
+          "id": 58,
+          "hp": 1250,
+          "construction": false
+        }
+      ],
+      "enemy": [
+        {
+          "id": 80,
+          "type": "firearm",
+          "hp": 80,
+          "x": 16.666631515042756,
+          "y": 24.996850370226845
+        },
+        {
+          "id": 83,
+          "type": "firearm",
+          "hp": 80,
+          "x": 16.666631515042756,
+          "y": 24.996850370226845
+        },
+        {
+          "id": 90,
+          "type": "cavalry",
+          "hp": 136.27723152179198,
+          "x": 11.119112276973564,
+          "y": 28.880887723026436
+        },
+        {
+          "id": 91,
+          "type": "infantry",
+          "hp": 69.3292861256588,
+          "x": 11.197900490095625,
+          "y": 28.802099509904377
+        },
+        {
+          "id": 92,
+          "type": "firearm",
+          "hp": 80,
+          "x": 11.358210236266554,
+          "y": 33.196879785834206
+        },
+        {
+          "id": 100,
+          "type": "firearm",
+          "hp": 80,
+          "x": 16.723696141439795,
+          "y": 25.276303858560205
+        },
+        {
+          "id": 104,
+          "type": "firearm",
+          "hp": 80,
+          "x": 16.751459981087745,
+          "y": 25.307762274396858
+        },
+        {
+          "id": 105,
+          "type": "spearman",
+          "hp": 105,
+          "x": 12.728156765696507,
+          "y": 26.27184323430349
+        },
+        {
+          "id": 107,
+          "type": "infantry",
+          "hp": 125,
+          "x": 12.804471278524668,
+          "y": 27.19552872147533
+        },
+        {
+          "id": 109,
+          "type": "cavalry",
+          "hp": 172.28,
+          "x": 12.791800694014155,
+          "y": 27.208199305985847
+        }
+      ]
+    },
+    {
+      "tick": 5684,
+      "winner": null,
+      "general": {
+        "hp": 277.34843483320077,
+        "x": 1.5,
+        "y": 18.5
+      },
+      "army": [],
+      "resources": {
+        "wood": 2205,
+        "food": 421.83721600009153,
+        "iron": 1050
+      },
+      "forts": [
+        {
+          "id": 58,
+          "hp": 1250,
+          "construction": false
+        }
+      ],
+      "enemy": [
+        {
+          "id": 80,
+          "type": "firearm",
+          "hp": 80,
+          "x": 14.053189278507036,
+          "y": 23.969741253969573
+        },
+        {
+          "id": 83,
+          "type": "firearm",
+          "hp": 80,
+          "x": 14.053189278507036,
+          "y": 23.969741253969573
+        },
+        {
+          "id": 90,
+          "type": "cavalry",
+          "hp": 136.27723152179198,
+          "x": 7.6693402231500105,
+          "y": 25.51738049169304
+        },
+        {
+          "id": 91,
+          "type": "infantry",
+          "hp": 69.3292861256588,
+          "x": 8.131260903772883,
+          "y": 25.604565423544468
+        },
+        {
+          "id": 92,
+          "type": "firearm",
+          "hp": 80,
+          "x": 10.21593251532088,
+          "y": 29.459468458930157
+        },
+        {
+          "id": 100,
+          "type": "firearm",
+          "hp": 80,
+          "x": 14.843974360776654,
+          "y": 25.5
+        },
+        {
+          "id": 104,
+          "type": "firearm",
+          "hp": 80,
+          "x": 14.830493664357096,
+          "y": 25.616860646909636
+        },
+        {
+          "id": 105,
+          "type": "spearman",
+          "hp": 105,
+          "x": 8.392141869657314,
+          "y": 25.76368937669924
+        },
+        {
+          "id": 107,
+          "type": "infantry",
+          "hp": 125,
+          "x": 8.087915566314308,
+          "y": 25.58006579795651
+        },
+        {
+          "id": 108,
+          "type": "spearman",
+          "hp": 26.76,
+          "x": 11.677531752307775,
+          "y": 20.67753175230778
+        },
+        {
+          "id": 109,
+          "type": "cavalry",
+          "hp": 154.56,
+          "x": 8.46205871353059,
+          "y": 25.62581640266648
+        },
+        {
+          "id": 110,
+          "type": "spearman",
+          "hp": 105,
+          "x": 10.07528137423867,
+          "y": 25.5
+        }
+      ]
+    },
+    {
+      "tick": 5905,
+      "winner": null,
+      "general": {
+        "hp": 277.34843483320077,
+        "x": 1.5,
+        "y": 18.5
+      },
+      "army": [],
+      "resources": {
+        "wood": 2245,
+        "food": 440.68464000009135,
+        "iron": 1050
+      },
+      "forts": [
+        {
+          "id": 58,
+          "hp": 1250,
+          "construction": false
+        }
+      ],
+      "enemy": [
+        {
+          "id": 80,
+          "type": "firearm",
+          "hp": 80,
+          "x": 14.053189278507036,
+          "y": 23.969741253969573
+        },
+        {
+          "id": 83,
+          "type": "firearm",
+          "hp": 80,
+          "x": 14.053189278507036,
+          "y": 23.969741253969573
+        },
+        {
+          "id": 90,
+          "type": "cavalry",
+          "hp": 136.27723152179198,
+          "x": 6.5,
+          "y": 25.221357050050667
+        },
+        {
+          "id": 91,
+          "type": "infantry",
+          "hp": 69.3292861256588,
+          "x": 6.204387307976134,
+          "y": 25.204387307976134
+        },
+        {
+          "id": 92,
+          "type": "firearm",
+          "hp": 80,
+          "x": 9.160367197781575,
+          "y": 29.26113917006919
+        },
+        {
+          "id": 100,
+          "type": "firearm",
+          "hp": 80,
+          "x": 13.85315738160999,
+          "y": 24.762770921765142
+        },
+        {
+          "id": 104,
+          "type": "firearm",
+          "hp": 80,
+          "x": 13.811821926887367,
+          "y": 24.76175369963323
+        },
+        {
+          "id": 105,
+          "type": "spearman",
+          "hp": 105,
+          "x": 6.5,
+          "y": 24.814017789218685
+        },
+        {
+          "id": 107,
+          "type": "infantry",
+          "hp": 125,
+          "x": 6.194994786785878,
+          "y": 25.194994786785877
+        },
+        {
+          "id": 109,
+          "type": "cavalry",
+          "hp": 73.32000000000001,
+          "x": 6.5,
+          "y": 25.070000000000004
+        },
+        {
+          "id": 110,
+          "type": "spearman",
+          "hp": 105,
+          "x": 9.5,
+          "y": 25.5
+        },
+        {
+          "id": 111,
+          "type": "firearm",
+          "hp": 80,
+          "x": 15.072067811865818,
+          "y": 24.5
+        },
+        {
+          "id": 112,
+          "type": "infantry",
+          "hp": 125,
+          "x": 11.5,
+          "y": 23.5
+        }
+      ]
+    },
+    {
+      "tick": 6108,
+      "winner": null,
+      "general": {
+        "hp": 277.34843483320077,
+        "x": 1.5,
+        "y": 18.5
+      },
+      "army": [],
+      "resources": {
+        "wood": 2245,
+        "food": 440.68464000009135,
+        "iron": 1050
+      },
+      "forts": [
+        {
+          "id": 58,
+          "hp": 1250,
+          "construction": false
+        }
+      ],
+      "enemy": [
+        {
+          "id": 80,
+          "type": "firearm",
+          "hp": 80,
+          "x": 14.053189278507036,
+          "y": 23.969741253969573
+        },
+        {
+          "id": 83,
+          "type": "firearm",
+          "hp": 80,
+          "x": 14.053189278507036,
+          "y": 23.969741253969573
+        },
+        {
+          "id": 90,
+          "type": "cavalry",
+          "hp": 55.03723152179198,
+          "x": 7.5,
+          "y": 23.5
+        },
+        {
+          "id": 91,
+          "type": "infantry",
+          "hp": 69.3292861256588,
+          "x": 7.5,
+          "y": 23.5
+        },
+        {
+          "id": 92,
+          "type": "firearm",
+          "hp": 80,
+          "x": 9.199078681014113,
+          "y": 29.17438422170348
+        },
+        {
+          "id": 100,
+          "type": "firearm",
+          "hp": 80,
+          "x": 13.85315738160999,
+          "y": 24.762770921765142
+        },
+        {
+          "id": 104,
+          "type": "firearm",
+          "hp": 80,
+          "x": 13.811821926887367,
+          "y": 24.76175369963323
+        },
+        {
+          "id": 105,
+          "type": "spearman",
+          "hp": 78.92,
+          "x": 7.5,
+          "y": 23.5
+        },
+        {
+          "id": 107,
+          "type": "infantry",
+          "hp": 125,
+          "x": 7.5,
+          "y": 23.5
+        },
+        {
+          "id": 109,
+          "type": "cavalry",
+          "hp": 46.24000000000001,
+          "x": 7.5,
+          "y": 23.5
+        },
+        {
+          "id": 110,
+          "type": "spearman",
+          "hp": 105,
+          "x": 9.5,
+          "y": 25.5
+        },
+        {
+          "id": 111,
+          "type": "firearm",
+          "hp": 80,
+          "x": 15.072067811865818,
+          "y": 24.5
+        },
+        {
+          "id": 112,
+          "type": "infantry",
+          "hp": 125,
+          "x": 11.5,
+          "y": 23.5
+        },
+        {
+          "id": 113,
+          "type": "firearm",
+          "hp": 80,
+          "x": 15.128248444889687,
+          "y": 24.5
+        },
+        {
+          "id": 114,
+          "type": "infantry",
+          "hp": 125,
+          "x": 11.5,
+          "y": 23.5
+        },
+        {
+          "id": 115,
+          "type": "spearman",
+          "hp": 105,
+          "x": 16.235281374238642,
+          "y": 25.5
+        }
+      ]
+    },
+    {
+      "tick": 6318,
+      "winner": null,
+      "general": {
+        "hp": 214.36678683320028,
+        "x": 1.5,
+        "y": 18.5
+      },
+      "army": [],
+      "resources": {
+        "wood": 2245,
+        "food": 0,
+        "iron": 1050
+      },
+      "forts": [
+        {
+          "id": 58,
+          "hp": 1085.4931213869436,
+          "construction": false
+        }
+      ],
+      "enemy": [
+        {
+          "id": 80,
+          "type": "firearm",
+          "hp": 80,
+          "x": 11.009072683355804,
+          "y": 23.009072683355804
+        },
+        {
+          "id": 83,
+          "type": "firearm",
+          "hp": 80,
+          "x": 11.009072683355804,
+          "y": 23.009072683355804
+        },
+        {
+          "id": 91,
+          "type": "infantry",
+          "hp": 52.019319962778795,
+          "x": 2.385,
+          "y": 19.5
+        },
+        {
+          "id": 100,
+          "type": "firearm",
+          "hp": 80,
+          "x": 9.731682624820799,
+          "y": 23.7316826248208
+        },
+        {
+          "id": 105,
+          "type": "spearman",
+          "hp": 78.92,
+          "x": 2.737113101093392,
+          "y": 19.737113101093396
+        },
+        {
+          "id": 107,
+          "type": "infantry",
+          "hp": 125,
+          "x": 2.385,
+          "y": 19.5
+        },
+        {
+          "id": 109,
+          "type": "cavalry",
+          "hp": 19.160000000000007,
+          "x": 2.5,
+          "y": 19.5
+        },
+        {
+          "id": 111,
+          "type": "firearm",
+          "hp": 80,
+          "x": 9.769606645264435,
+          "y": 23.769606645264435
+        },
+        {
+          "id": 112,
+          "type": "infantry",
+          "hp": 101.2690256,
+          "x": 7.840722407359616,
+          "y": 19.840722407359618
+        },
+        {
+          "id": 113,
+          "type": "firearm",
+          "hp": 80,
+          "x": 9.742157207634245,
+          "y": 23.742157207634243
+        },
+        {
+          "id": 114,
+          "type": "infantry",
+          "hp": 125,
+          "x": 2.7350686720291217,
+          "y": 19.735068672029122
+        },
+        {
+          "id": 115,
+          "type": "spearman",
+          "hp": 105,
+          "x": 8.706928214313155,
+          "y": 19.70692821431316
+        },
+        {
+          "id": 116,
+          "type": "infantry",
+          "hp": 125,
+          "x": 8.76828137423842,
+          "y": 25.5
+        }
+      ]
+    },
+    {
+      "tick": 6431,
+      "winner": 1,
+      "army": [],
+      "resources": {
+        "wood": 2245,
+        "food": 0,
+        "iron": 1050
+      },
+      "forts": [
+        {
+          "id": 58,
+          "hp": 792.3418085924585,
+          "construction": false
+        }
+      ],
+      "enemy": [
+        {
+          "id": 80,
+          "type": "firearm",
+          "hp": 80,
+          "x": 11.009072683355804,
+          "y": 23.009072683355804
+        },
+        {
+          "id": 83,
+          "type": "firearm",
+          "hp": 80,
+          "x": 11.009072683355804,
+          "y": 23.009072683355804
+        },
+        {
+          "id": 91,
+          "type": "infantry",
+          "hp": 1.1280818618638015,
+          "x": 2.385,
+          "y": 19.5
+        },
+        {
+          "id": 92,
+          "type": "firearm",
+          "hp": 80,
+          "x": 8.5,
+          "y": 24.083163852108143
+        },
+        {
+          "id": 100,
+          "type": "firearm",
+          "hp": 80,
+          "x": 9.731682624820799,
+          "y": 23.7316826248208
+        },
+        {
+          "id": 104,
+          "type": "firearm",
+          "hp": 80,
+          "x": 8.5,
+          "y": 24.100416851502896
+        },
+        {
+          "id": 105,
+          "type": "spearman",
+          "hp": 78.92,
+          "x": 2.737113101093392,
+          "y": 19.737113101093396
+        },
+        {
+          "id": 107,
+          "type": "infantry",
+          "hp": 125,
+          "x": 2.385,
+          "y": 19.5
+        },
+        {
+          "id": 109,
+          "type": "cavalry",
+          "hp": 19.160000000000007,
+          "x": 2.5,
+          "y": 19.5
+        },
+        {
+          "id": 110,
+          "type": "spearman",
+          "hp": 105,
+          "x": 2.6937824176466934,
+          "y": 19.693782417646695
+        },
+        {
+          "id": 111,
+          "type": "firearm",
+          "hp": 80,
+          "x": 9.769606645264435,
+          "y": 23.769606645264435
+        },
+        {
+          "id": 112,
+          "type": "infantry",
+          "hp": 37.3050545832279,
+          "x": 7.840722407359616,
+          "y": 19.840722407359618
+        },
+        {
+          "id": 113,
+          "type": "firearm",
+          "hp": 80,
+          "x": 9.742157207634245,
+          "y": 23.742157207634243
+        },
+        {
+          "id": 114,
+          "type": "infantry",
+          "hp": 125,
+          "x": 2.385,
+          "y": 19.5
+        },
+        {
+          "id": 115,
+          "type": "spearman",
+          "hp": 105,
+          "x": 8.706928214313155,
+          "y": 19.70692821431316
+        },
+        {
+          "id": 116,
+          "type": "infantry",
+          "hp": 125,
+          "x": 5.7053085821449985,
+          "y": 23.466823836988755
+        }
+      ]
+    }
+  ],
+  "resultScreenAndMenuVerified": true
+}

@@ -104,6 +104,16 @@ Current local026: first complete South/D1 eight-frame illustrated gather_wood ca
 Candidate online028 now completes local authoritative1v1 on BOTHDelta andCoast, actual Chromium151.0.7922.34 host+Firefox153.0 guest, ordinaryGeneralcombatdefeat, guestreload/reconnect, synchronizedvictory, consensusrematch andbothmenus; errors0. Servedcurrent20modulebundle index-BQc6lscV.js SHA48de160de21a0baa7d84b9ff447e28f162dba5573926efd98b01ee72afd1cc4b/141864bytes matches temporaryproductionbuild. Delta combat54.904s/peer victorytick555; Coast27.899s/tick592. Each ownedisolatedserver healthyrooms0 before/after, closedlisteningfalse, no productionservice restart. See docs/qa/candidate-match-028/ and coast/ receipts. This is localmechanicalcandidatecoverage, not publicHTTPS/WAN/externaldevice/finalacceptedart certification. No retry/gameplay changes.
 
 
+## Current offline match checkpoint029
+
+The optional local `?art=work` candidate ran Delta against easy AI after Chromium disconnected before Single Player setup. All17 art assets and12 portraits were ready. The240-second attempt ended at tick4802 with no winner, zero page errors and zero network failures. This is a preserved strategy timeout, not a completed offline match or established runtime defect. Wood20/iron1640 and army attrition motivate a bounded adaptive-resource QA strategy; gameplay remains unchanged. Coast was not run. The original receipt lacks a final navigator sample because there was no result menu; future runs now sample it at match end too. Owned browser/server closed, rooms0. See `docs/qa/candidate-ai-029/`.
+
+Attempt030 ended in a normal Delta defeat at tick6431 after321.865 seconds. Adaptive wood allocation removed the shortage, but army losses/base raids defeated the human strategy. Result screen and return to menu worked while still offline, with17/17 art assets,12/12 portraits, zero page errors and zero failed requests. This passes the local offline completed-loss/menu flow, while the human-victory strategy assertion still fails. See `docs/qa/candidate-ai-030/`; no Delta retry or Coast victory attempt. Browser/server closed, rooms0.
+
+One distinct finite031 task is now in progress: Coast normal-AI defeat and offline result/menu lifecycle using the existing loss scenario, without gameplay changes or another winning-strategy retry. Inspect its live worker/session before resuming; do not duplicate it or overwrite029/030. No image call or deployment is open. Gather026 continuous motion acceptance remains open; no still-audit repeats or direction/unit fanout. Full game NOT COMPLETE.
+
+---
+
 ## Historical art boundary before the8October scope correction
 
 Eight1254RGBA static villager identity views are sealed for South authoring only in `docs/art/VILLAGER_IDENTITY_LOCK_007.json` and byte-bound parent `VILLAGER_IDENTITY_REVIEW_007.json`. Every native/fixed38 image plus combined627/38 sheets was inspected. Fixed authored root6541140, whole-canvas38scale, screenSouth=D01/worldSE. HeldEast/RGBSE, alpha-repairedSE, originalwrong-labelv1 and correctedv2 guides remain preserved. No character mirroring or simulation-heading changes.
