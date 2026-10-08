@@ -40,7 +40,7 @@ Presentation reads simulation state: traveled distance controls walk phase; stop
 
 ## Current atomic task and actual status
 
-The work order is /home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/canonical-villager-binding-005/WORK_ORDER.json. At this plan checkpoint, producer /root/arm_tool is running; source/evaluation are not yet delivered. Check its live agent/session state before restarting or reissuing work. A saved work order is not proof of a live job.
+The work order is /home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/canonical-villager-binding-005/WORK_ORDER.json. At this plan checkpoint, producer /root/arm_tool is running; binding005.py and evaluate-binding.py are delivered with parent-verified producer hashes; the single501-phase evaluation is running and parent geometry review remains pending. Check its live agent/session state before restarting or reissuing work. A saved work order is not proof of a live job.
 
 Binding005 is an internal geometry tool order only: deterministic knee-aware deformation of the complete004 lower garment/panels on frozen003 poses. Sourceframes0, AIcalls0, one501-phase geometry evaluation; no art render, loop export, runtime edit or fanout. Its numerical clearance result cannot qualify appearance, actual cloth motion or physical collision correctness. Parent will review its exact evidence before integration. Any failed samples stay held; no retry batch is authorized.
 
