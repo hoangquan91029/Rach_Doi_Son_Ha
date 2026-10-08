@@ -1,0 +1,22 @@
+{
+  "status": "READY_V2_TOOLING_ONLY",
+  "profile": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low"
+  },
+  "imageCalls": 0,
+  "actualArtExports": 0,
+  "sourceArtEdits": 0,
+  "v1PreservedPinsVerified": true,
+  "dependencyTest": "1 finite test PASS: actual authored shadow validator PASS; missing/mismatch rejected",
+  "shadowSourceEncodedSha256": "1572b3fd6dd84d36a423adbdbfca1975a071b07bd0c4043edd55688db0ed99bd",
+  "shadowRuntimeEncodedSha256": "274b81f26e3869e158b0ab1e5093cd8a899d5255f0239c25ec7ab07ec314a7ff",
+  "files": {
+    "export-v2.py": "76de54c0557348181223750c9f630f06e93d7a4de5c3d5f2dd0f4436d7333601",
+    "preview-v2.html": "0dff72c04d8e3a1804c83ee6d94a974bb04fb19b04d8a2b995cc33d7cbd1c4ae",
+    "test-shadow-v2.py": "d6763700da1af54a3961160acd7da03b109ead19ff14254f685ac8a9cab84e0f",
+    "shadow-dependency-v2.json": "0158e0749c9dcdaab97f31ebf469659302db1c636a5ed3a4fb80fc9803de5f73",
+    "README-v2.md": "dab511c00cc8b4da9adca0c61a66f14284ba62d38807869e76ecca9ea3ecc843"
+  },
+  "limits": "Single existing candidate shadow only. No actual8art export/browser/runtime approval; no partialset export. Frozenv1 unchanged."
+}

@@ -1,0 +1,7 @@
+# South009 F4 contact correction — GUIDE ONLY READY
+
+Parent-review package: `F4-left-trailing-contact-guide.png`, `F4-contact-landmarks.json`, `prompt-draft.txt`, `WORK_ORDER_DRAFT.json`, `READY.json`. `make-guide.py` is the reproducible hand2D annotation tool; gray context is source alpha silhouette only, never original RGB or appearance authority. Guide is monochrome and explicitly AUTHORING_ONLY. Original files are untouched.
+
+Actual held F4 already has heel rise. Target the uncertain broad exposed sandal top/toe contact with compact toe/forefoot flexion, preserving calf/knee/upper ankle, receiving RIGHT sole~5301193 and complete frame placement. Prior v2 toe/heel x-order risks reversing the outward/down-right foot. Parent's suggested ankle7201045 would move it too far down; native inspection and independent art audit support approximate ankle7201008, heel7161045, toe7641093 with disclosed ranges. All estimates remain unsealed. Rear floor-depth cue y1093 is not a measured floor or world foot-lock proof.
+
+Exactly ONE built-in edit is drafted, zero retries, ONLY F4, after separate parent review/authorization. Required refs are canonical identity + held F4 correction target + new guide. SelectedF0 is optional comparison, never edit target or a promise of motion continuity. No call is authorized by this package; no source art, other keys, controller, runtime or production changes. No visual/motion/owner acceptance. Source/reference, guide and tool hashes are in READY.json. Producer profile is GPT-6.1 Sol / low.

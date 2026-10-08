@@ -1,0 +1,139 @@
+{
+  "tool": "image_gen.imagegen",
+  "profile": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low"
+  },
+  "authorizationSha256": "a4b0bde5cc4a9f36bfafb47a3e2f78af8c5f8f9dc85068761f9106d44eac1a67",
+  "callsStarted": 2,
+  "callsCompleted": 2,
+  "retries": 0,
+  "jobs": {
+    "F2": {
+      "status": "ACTUAL_OUTPUT_PRESERVED",
+      "prompt": "DRAFT AFTER PARENT BRIEF GUIDE VIEW: exactly one built-in edit for F2, zero retries. Edit selectedF0 into a complete richly illustrated passing pose between the selected F0 and F4 contacts (F6 is F4 toward next F0). CanonicalSouth supplies identity/material/light/camera; both selected keys are continuity references, and the monochrome F2 guide is AUTHORING_ONLY pose intent, never appearance.\n\nAnatomical LEFT / viewer RIGHT is the supporting/loaded leg, nearly straight under the body. Move its sole from the prior front contact toward midstride near [735, 1140]; do not leave it at the old forward footprint. Anatomical RIGHT / viewer LEFT passes forward under the hip with a naturally bent knee and clear lifted sandal near [620, 1100], y1090-1110. Preserve plausible knee/ankle connection and distinct limb ownership. These are approximate hand2D estimates, not rigid pixel pins or projection. Small natural body bounce and modest transitioning counter-swing; no huge arm poses.\n\nKeep1254x1254 canvas, family pivot[654,1140], referenceHeight1130 and whole-frame scale/camera unchanged. Preserve face, hat, LEFT sash ownership, proportions, outfit, rich folds/materials, coherent light/shadow and sandals in a finished whole2D illustration. No mirroring, crop/fit/shift, new isolated limb textures, puppet assembly, 3D dependency, colored guide traces or guide labels in output. Genuine alpha and intact raw output. Aim for natural smooth movement; tiny cloth/pixel differences are not a gate. Return ONLY this one phase. No in-betweens until actual F2/F6 exist and simple key review. Candidate only, no loop/foot-lock/runtime/owner approval.\n",
+      "promptSha256": "92f19a214e85573d07c22039d5b30b95043ab8a9ddf43fe4c41df2bafaa9ef03",
+      "references": [
+        {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+          "encodedSha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+          "rgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6",
+          "dimensions": [
+            1254,
+            1254
+          ],
+          "role": "identity/material/camera authority"
+        },
+        {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/authoring-tools/villager-walk-SOUTH-007/walk/keys/F00-left-contact-01/raw.png",
+          "encodedSha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001",
+          "rgbaSha256": "07bc362e869f40e8a3d5ba0b6fabdd7845f6132c0aa4656a17f762ee46609410",
+          "dimensions": [
+            1254,
+            1254
+          ],
+          "role": "selected key candidate comparison/continuity; no loop approval"
+        },
+        {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-009/F4-trailing-contact-correction-01/raw.png",
+          "encodedSha256": "929b9805f696abf341b8ea9b4df425a753da2c48b1be9ca13282bb5c72e0793f",
+          "rgbaSha256": "12a430a74fe4a945971a0821b6a0c7548cf6db9b84f40aedaeccfd40b28b75d8",
+          "dimensions": [
+            1254,
+            1254
+          ],
+          "role": "selected key candidate comparison/continuity; no loop approval"
+        },
+        {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-pure2d-SOUTH-010/F2-passing-guide.png",
+          "sha256": "e96d42a9be1429964389e1b6dcb94d7dbcb520ad5baac0a7cb6b6e6c15f899ae"
+        }
+      ],
+      "transparent_background": true,
+      "sourcePath": "/home/kieu-hoang-quan/.codex/generated_images/01a11b6e-49a9-7203-831b-320d46f6f237/exec-4eb6c082-1ee2-40dc-91d7-ba989d31926c.png",
+      "diagnostics": {
+        "sourcePath": "/home/kieu-hoang-quan/.codex/generated_images/01a11b6e-49a9-7203-831b-320d46f6f237/exec-4eb6c082-1ee2-40dc-91d7-ba989d31926c.png",
+        "rawPath": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-pure2d-SOUTH-010/F2-right-passing-01/raw.png",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "mode": "RGBA",
+        "encodedSha256": "bd2679353741d51575a99ccd0ded835281d0688abb1018146ed60d3077cc2b1c",
+        "rgbaSha256": "1a9f899a98ff1daea6c4e8a32ae9a507b8098a5e65ea9541c1757f5432e3208c",
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "alphaZeroPixels": 1238358,
+        "alphaPartialPixels": 333898,
+        "alphaOpaquePixels": 260,
+        "sourceBytesIdentical": true,
+        "status": "CANDIDATE_PARENT_REVIEW_PENDING"
+      }
+    },
+    "F6": {
+      "status": "ACTUAL_OUTPUT_PRESERVED",
+      "prompt": "DRAFT AFTER PARENT BRIEF GUIDE VIEW: exactly one built-in edit for F6, zero retries. Edit selectedF4 into a complete richly illustrated passing pose between the selected F0 and F4 contacts (F6 is F4 toward next F0). CanonicalSouth supplies identity/material/light/camera; both selected keys are continuity references, and the monochrome F6 guide is AUTHORING_ONLY pose intent, never appearance.\n\nAnatomical RIGHT / viewer LEFT is the supporting/loaded leg, nearly straight under the body. Move its sole from the prior front contact toward midstride near [565, 1140]; do not leave it at the old forward footprint. Anatomical LEFT / viewer RIGHT passes forward under the hip with a naturally bent knee and clear lifted sandal near [695, 1100], y1090-1110. Preserve plausible knee/ankle connection and distinct limb ownership. These are approximate hand2D estimates, not rigid pixel pins or projection. Small natural body bounce and modest transitioning counter-swing; no huge arm poses.\n\nKeep1254x1254 canvas, family pivot[654,1140], referenceHeight1130 and whole-frame scale/camera unchanged. Preserve face, hat, LEFT sash ownership, proportions, outfit, rich folds/materials, coherent light/shadow and sandals in a finished whole2D illustration. No mirroring, crop/fit/shift, new isolated limb textures, puppet assembly, 3D dependency, colored guide traces or guide labels in output. Genuine alpha and intact raw output. Aim for natural smooth movement; tiny cloth/pixel differences are not a gate. Return ONLY this one phase. No in-betweens until actual F2/F6 exist and simple key review. Candidate only, no loop/foot-lock/runtime/owner approval.\n",
+      "promptSha256": "dae739e69a3a9a1b17600e74ceff69db8c9b6bdafa461973887f7a6ab2289d4c",
+      "references": [
+        {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+          "encodedSha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+          "rgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6",
+          "dimensions": [
+            1254,
+            1254
+          ],
+          "role": "identity/material/camera authority"
+        },
+        {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/authoring-tools/villager-walk-SOUTH-007/walk/keys/F00-left-contact-01/raw.png",
+          "encodedSha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001",
+          "rgbaSha256": "07bc362e869f40e8a3d5ba0b6fabdd7845f6132c0aa4656a17f762ee46609410",
+          "dimensions": [
+            1254,
+            1254
+          ],
+          "role": "selected key candidate comparison/continuity; no loop approval"
+        },
+        {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-009/F4-trailing-contact-correction-01/raw.png",
+          "encodedSha256": "929b9805f696abf341b8ea9b4df425a753da2c48b1be9ca13282bb5c72e0793f",
+          "rgbaSha256": "12a430a74fe4a945971a0821b6a0c7548cf6db9b84f40aedaeccfd40b28b75d8",
+          "dimensions": [
+            1254,
+            1254
+          ],
+          "role": "selected key candidate comparison/continuity; no loop approval"
+        },
+        {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-pure2d-SOUTH-010/F6-passing-guide.png",
+          "sha256": "cfc644b5dc40fcf8baa8193713f3391b859d12b4b4f8f6fb03f85a5c6de6ebdc"
+        }
+      ],
+      "transparent_background": true,
+      "sourcePath": "/home/kieu-hoang-quan/.codex/generated_images/01a11b6e-49a9-7203-831b-320d46f6f237/exec-3b61fb48-10a8-44c5-b397-e777173cade8.png",
+      "diagnostics": {
+        "sourcePath": "/home/kieu-hoang-quan/.codex/generated_images/01a11b6e-49a9-7203-831b-320d46f6f237/exec-3b61fb48-10a8-44c5-b397-e777173cade8.png",
+        "rawPath": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-pure2d-SOUTH-010/F6-left-passing-01/raw.png",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "mode": "RGBA",
+        "encodedSha256": "6ed3e9b8f0693441c457038e748789496421cefe3e02c696b6956fa074f34822",
+        "rgbaSha256": "7e13e010294f7013a3b871a67b9a9c390f4559e68fa2eb6b27546538b576d41b",
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "alphaZeroPixels": 1234233,
+        "alphaPartialPixels": 338013,
+        "alphaOpaquePixels": 270,
+        "sourceBytesIdentical": true,
+        "status": "CANDIDATE_PARENT_REVIEW_PENDING"
+      }
+    }
+  }
+}

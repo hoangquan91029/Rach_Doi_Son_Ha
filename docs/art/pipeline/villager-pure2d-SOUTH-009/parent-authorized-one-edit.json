@@ -1,0 +1,54 @@
+{
+  "schema": "pure2d-parent-finite-edit-order/v1",
+  "status": "ONE_F4_LOCAL_CONTACT_EDIT_AUTHORIZED",
+  "baselineCommit": "1b46846",
+  "profile": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low"
+  },
+  "createdUtc": "2026-10-08T12:29:27.700142+00:00",
+  "orderSha256": "a1965247f75b3d3ed7615a7b2ae816013a713fe161c2c55b8b296e07f0951dca",
+  "promptSha256": "80fcef696de71f5c585077d71ae960e11860875d431a0ff2a99fe02b2b5b6ebe",
+  "referencesInExactOrder": [
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "role": "identity/material/camera authority only",
+      "encodedSha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "rgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-008/F4-right-contact-02/raw.png",
+      "role": "held correction target, NOT selected continuity neighbor",
+      "encodedSha256": "90bc3e2fbab8497eb6696078104d3fcce004fcabb1184ebc0b6068d46548253d",
+      "rgbaSha256": "3c275a46b01dd324b4eaa919513b88e7cacf76eb9ce8f29d0a654000514d0bee",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-pure2d-SOUTH-009/F4-left-trailing-contact-guide.png",
+      "role": "AUTHORING_ONLY approximate hand2D contact guidance; no appearance authority",
+      "encodedSha256": "f6055cba3827988ac9564d72057b455e0bf8d6d97db14316441ded1efdcaa594",
+      "rgbaSha256": "b06b12bfd99b7ce0090c80462d6dd519f3c562c1227da4019b4354b08990b69b",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    }
+  ],
+  "maxCalls": 1,
+  "maxRetries": 0,
+  "onlyFrame": "F4",
+  "outputDirectory": "F4-trailing-contact-correction-01",
+  "guideParentReview": "Actually inspected1254 guide. Monochrome2D context, ankle neighborhood preserved; heelup/inward and toeoutward/down corrected. Proposed compact forefoot shape remains anatomical/contact hypothesis, not acceptance. Permit only local LEFT sandal correction with coherent lower-wrap transition; no guide appearance/colors/text copied.",
+  "reviewAudit": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-contact-audit-009/contact-audit-review-only.json",
+  "heldTargetIsNotSelectedNeighbor": true,
+  "noOtherFramesOrFanout": true,
+  "rawUnchanged": true,
+  "stopAfterActualOutputAndSelfQA": true
+}

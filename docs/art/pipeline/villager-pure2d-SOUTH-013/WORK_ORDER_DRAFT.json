@@ -1,0 +1,63 @@
+{
+  "status": "ONE_CALL_DRAFT_READY_PENDING_PARENT_BRIEF_GUIDE_VIEW",
+  "profile": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low"
+  },
+  "phase": "F7",
+  "editTargetRole": "currentF7CorrectionTarget",
+  "maxCalls": 1,
+  "maxRetries": 0,
+  "imageCallsUsed": 0,
+  "references": {
+    "canonicalSouth": {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "encodedSha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "rgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "role": "identity/material/light authority"
+    },
+    "currentF7CorrectionTarget": {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-011/F7-inbetween-01/raw.png",
+      "encodedSha256": "e6a04ccce4eab77f01def3406a314e53550837a46937a5fdfb6a1209afa69a5e",
+      "rgbaSha256": "da0a91d162e9f55bf10fbedd8a318c0ff8552cd8402e6e30d6618cfec39a78c0",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "role": "local correction edit target; preserve upper-body art"
+    },
+    "selectedF6": {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-010/F6-left-passing-01/raw.png",
+      "encodedSha256": "6ed3e9b8f0693441c457038e748789496421cefe3e02c696b6956fa074f34822",
+      "rgbaSha256": "7e13e010294f7013a3b871a67b9a9c390f4559e68fa2eb6b27546538b576d41b",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "role": "actual selected neighboring key continuity reference"
+    },
+    "selectedF0": {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/authoring-tools/villager-walk-SOUTH-007/walk/keys/F00-left-contact-01/raw.png",
+      "encodedSha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001",
+      "rgbaSha256": "07bc362e869f40e8a3d5ba0b6fabdd7845f6132c0aa4656a17f762ee46609410",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "role": "actual selected neighboring key continuity reference"
+    }
+  },
+  "guide": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-pure2d-SOUTH-013/F7-separated-calves-guide.png",
+    "sha256": "32606b54c470a982229c671397bbebc4a218d8cbb7b260d3ab9c5a27cf00eb6c"
+  },
+  "prompt": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-pure2d-SOUTH-013/prompt-draft.txt",
+    "sha256": "d3b4c8e3a64cfeea7cc0d79e85b9de7dc9151d24e477ee193b767f045edcbb30"
+  },
+  "scope": "Only local natural lower-leg spacing correction. All other frames untouched. Guide-only task grants no image-call authorization."
+}

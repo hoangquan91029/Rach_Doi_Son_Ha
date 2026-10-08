@@ -1,0 +1,79 @@
+{
+  "schema": "pure2d-finite-contact-correction-order/v1",
+  "status": "DRAFT_READY_PENDING_PARENT_REVIEW_NO_CALL_AUTHORIZED",
+  "profile": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low"
+  },
+  "frame": "F4",
+  "maxBuiltInImageEdits": 1,
+  "maxRetries": 0,
+  "imageCallsUsed": 0,
+  "sourceArtEditsUsed": 0,
+  "requiredReferenceRoles": [
+    "canonicalSouth",
+    "heldF4EditTarget",
+    "newGuide"
+  ],
+  "optionalReferenceRoles": [
+    "selectedF0Comparison"
+  ],
+  "references": {
+    "canonicalSouth": {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "role": "identity/material/camera authority only",
+      "encodedSha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "rgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "heldF4EditTarget": {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-008/F4-right-contact-02/raw.png",
+      "role": "held correction target, NOT selected continuity neighbor",
+      "encodedSha256": "90bc3e2fbab8497eb6696078104d3fcce004fcabb1184ebc0b6068d46548253d",
+      "rgbaSha256": "3c275a46b01dd324b4eaa919513b88e7cacf76eb9ce8f29d0a654000514d0bee",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "selectedF0Comparison": {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/walk/keys/F00-left-contact-01/raw.png",
+      "role": "optional comparison only; not edit target; PASS_KEY_CANDIDATE_ONLY",
+      "encodedSha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001",
+      "rgbaSha256": "07bc362e869f40e8a3d5ba0b6fabdd7845f6132c0aa4656a17f762ee46609410",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "newGuide": {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-pure2d-SOUTH-009/F4-left-trailing-contact-guide.png",
+      "role": "AUTHORING_ONLY approximate hand2D contact guidance; no appearance authority",
+      "encodedSha256": "f6055cba3827988ac9564d72057b455e0bf8d6d97db14316441ded1efdcaa594",
+      "rgbaSha256": "b06b12bfd99b7ce0090c80462d6dd519f3c562c1227da4019b4354b08990b69b",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    }
+  },
+  "prompt": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-pure2d-SOUTH-009/prompt-draft.txt",
+    "sha256": "80fcef696de71f5c585077d71ae960e11860875d431a0ff2a99fe02b2b5b6ebe"
+  },
+  "canvas": [
+    1254,
+    1254
+  ],
+  "pivot": [
+    654,
+    1140
+  ],
+  "referenceHeight": 1130,
+  "scope": "Smallest local LEFT trailing sandal toe/forefoot contact and flexion correction; upper ankle/calf/knee, receiving RIGHT sole and overall illustration placement unchanged. HeldF4 is correction target, NOT selected continuity neighbor.",
+  "approval": "Parent must review guide/order before a separately authorized exactly-one built-in edit. No other keys, repairs, fanout or retries.",
+  "no3D": true
+}

@@ -1,0 +1,23 @@
+{
+  "status": "READY_TOOLING_ONLY",
+  "profile": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low"
+  },
+  "imageCalls": 0,
+  "actualArtExports": 0,
+  "repoMutations": 0,
+  "tests": "3 finite unittest groups PASS; temporary NON_ART_TEST_ONLY fixtures deleted",
+  "files": {
+    "test_export.py": "53aec1e2a1c6725ecea0a44fc4f058bb7f94ef6fe8c81c16ea7989431a039513",
+    "README.md": "09a762189e16197aa462fd05985951d6b9c575f111ae235e53cb982ed7cf5f7c",
+    "export.py": "eb40742fa56d7a793ea18545b63bcf8cf0d14afc66ce83ded7901be80543516f",
+    "preview.html": "209f9b77e7ed50c2bdfa2b57a10a75fd3c6e8c361850512f3a953779eb6184a9"
+  },
+  "readOnlyContractPins": {
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/authoring-tools/villager-walk-SOUTH-007/tooling/atlas.py": "887c93c638cc869e9c64e7aa44758685dc0a03d13e1843398ae5ff227a805b18",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/validate-art-assets.py": "a6661ea6c5f3cd3af86d0bf58df971bab6b0632d06e7821889cad0ecc2950646",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/client/art-assets.js": "7fb92eb80e2eea203c2647c41df3831e22a8b0485a0e51a932ce00623508f439"
+  },
+  "limitation": "No actual-art/browser acceptance; requires complete8selected frames. Current held partial set cannot export. Existing exact-cell candidate schema only; natural/smooth actual loop next."
+}

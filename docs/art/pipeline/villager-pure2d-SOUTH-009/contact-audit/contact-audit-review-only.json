@@ -1,0 +1,84 @@
+{
+  "schema": "pure2d-static-contact-audit/v1",
+  "status": "REVIEW_ONLY_NO_ART_AUTHORIZATION_OR_APPROVAL",
+  "profile": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low"
+  },
+  "head": "1b46846c6ef09dbc381610b82887d6fe66183402",
+  "createdUtc": "2026-10-08T12:27:26.946271+00:00",
+  "imageCalls": 0,
+  "sourceMutations": 0,
+  "inspected": [
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-008/F4-right-contact-02/raw.png",
+      "sha256": "90bc3e2fbab8497eb6696078104d3fcce004fcabb1184ebc0b6068d46548253d"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/authoring-tools/villager-walk-SOUTH-007/walk/keys/F00-left-contact-01/raw.png",
+      "sha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-008/static-review/captures/neutral.png",
+      "sha256": "5963153b500b359ca3f3e19b122c451770408cec6540cb6d3d7db3ae4f08b838"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-008/static-review/captures/light.png",
+      "sha256": "5afb631023244311a02cd7bfb022b8e980e8097fb05bf5c9d43c87228fcd730b"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-008/static-review/captures/dark.png",
+      "sha256": "464cf742ea0642e05786b64b3033d0020c155a56f3f8afc3e5ab0a9c56c8d186"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-008/parent-review.json",
+      "sha256": "5fba4a7a0b7c365acffb8fbe9b9efaa291ac2e51811d3d7a16aa91853d10ddf5"
+    }
+  ],
+  "assessment": "F4 LEFT/viewer-right trailing heel silhouette is visibly higher than toe; heel-rise is not wholly absent. Broad visible dorsal sandal and full sole read as a whole lifted foot at 64/80/96, while lack of a ground plane prevents toe contact proof. Existing selected F0 RIGHT trailing sandal has similar broad-top and ground ambiguity. Static evidence cannot distinguish air phase conclusively.",
+  "oldGuide": "heel8571064/toe8111091 gives toe toward viewer-left relative to heel, inconsistent with F4 outward/down viewer-right forefoot; authored only, should not be forced.",
+  "parentProposal": "heel7241060/toe7781093 has sensible outward/down direction. ankle7201045 is substantially lower than existing ankle near714995 and shortens projected foot; avoid rigidly forcing this shift.",
+  "minimalCorrection": "Local coherent illustration of LEFT sandal rolling onto compact toe/forefoot, rear heel up/inward, less broad flat-looking dorsal/sole surface. Preserve calf/knee/body, RIGHT front sole near5301193 and toe depth row near1090. No ground or labels in final source.",
+  "authoredEstimateRanges": {
+    "status": "MANUAL_REVIEW_ONLY_NOT_MEASURED_OR_VALIDATED",
+    "ankle": {
+      "x": [
+        710,
+        730
+      ],
+      "y": [
+        995,
+        1020
+      ]
+    },
+    "rearHeel": {
+      "x": [
+        700,
+        725
+      ],
+      "y": [
+        1035,
+        1060
+      ]
+    },
+    "toeContact": {
+      "x": [
+        750,
+        778
+      ],
+      "y": [
+        1090,
+        1100
+      ]
+    },
+    "frontSoleUnchanged": [
+      530,
+      1193
+    ]
+  },
+  "limitations": "Pixel y separation includes camera perspective and foot depth, not a measured physical heel elevation. Local ankle/heel labeling remains approximate; toe-contact ownership must be assessed in corrected actual art. No complete loop exists. No motion review skill or motion/runtime/owner approval."
+}

@@ -2,7 +2,7 @@
 
 Model routing (human instruction, 2026-10-08): use `model='gpt-6.1-sol'` and `reasoning_effort='low'` for every future code and art task in this project. Do not use Luna anywhere or silently fall back to another model. This supersedes the old master art Luna/HIGH split; preserve the original briefs, assets, directives and receipts as history. This is project routing policy, not a claim that the current chat UI model changed.
 
-Current evidence (South008): one actual illustrated F4 edit exists and is **HELD_CONTACT_KEY_NOT_SELECTED** after native and fixed64/80/96 browser review. Support roles exchange, appearance retains canonical richness, but trailing LEFT toe/heel contact needs correction. Both guides/raw/call/model custody are in `villager-pure2d-SOUTH-008/`. Existing one-call order is exhausted; next prepare a corrected hand2D contact guide and new finite order. No other-key, in-between or fanout call is open. Historical preparation steps below are completed where recorded in that parent review.
+Current evidence: South009–011 provide four selected keys and four illustrated in-betweens; actual eight-frame atlas/APNG/browser playback is in `pure2d-loop-preview-012/`. Brief review identifies only F7 calf crossing; South013 completed one finite whole-frame correction; corrected loop014 has separated calves and fresh actual Chromium playback. No open call. Latest human instruction in `REVIEW_PRIORITY_20261008.md` prioritizes natural smooth gameplay-size motion and avoids exhaustive audits. Small cloth/pixel differences are nonblocking; preserved old South008 holds are historical, not instructions to repeat contact polishing.
 
 Latest authority: PURE_2D_MASTER_DIRECTIVE_20261008.txt explicitly replaces the prior3D proposal. Character production is pure2D illustration and controlled frame-by-frame animation. The previous plan remains recoverable in Git219d1fe; no source asset or experiment is deleted.
 
@@ -25,7 +25,7 @@ The human explicitly rejects character modeling, Blender, skinning, UV maps,3D m
 
 ## Resolution and performance
 
-256² source canvas with224–233px character,112–116px runtime and roughly80px display is a baseline to validate, not immutable law. Review64/80/96px plus paused frames. Preserve high-quality originals separately and never upscale to invent detail. Larger declared canvases are allowed for weapons, horses or animation extents; never clip artwork or fit each frame independently. Use one family-wide scale/pivot and an explicitly validated bounding-box policy.
+256² source canvas with224–233px character,112–116px runtime and roughly80px display is a baseline to validate, not immutable law. Use one brief loop review near80px; inspect another scale or paused frame only to resolve a visible problem. Preserve high-quality originals separately and never upscale to invent detail. Larger declared canvases are allowed for weapons, horses or animation extents; never clip artwork or fit each frame independently. Use one family-wide scale/pivot and an explicitly validated bounding-box policy.
 
 Eight walk frames are the first pilot. If real playback slides, first inspect2D foot tracks/cadence/travel calibration; additional controlled illustrated in-betweens require an explicit finite order. The superseded3D48-frame clip supplies no new2D key, timing acceptance or production dependency. Do not hide problems by changing gameplay speed, blur or per-frame pivot.
 
@@ -33,11 +33,11 @@ Keep editable PNG originals outside runtime atlases. Reuse current hash/alpha/fr
 
 ## Current next implementation
 
-1. Audit existing South canonical andF0 contact. Keep static eight-view identity lock as preserved authoring evidence, not animated acceptance. OldF2 retries remain held; do not reuse them as selected continuity keys.
-2. Prepare a new pure2D consistency/pose guide and one finite oppositeF4 edit order using canonical+F0+explicit guide, not unrelated prompts. No3D measurements/modules as dependencies; old2D proportions/root/left-right annotations may be reused when verified.
-3. Inspect the actual returned image, keep raw/prompt/reference hashes, compare fixed-scaleF0/F4 at game size and record held/selected candidacy honestly. No in-betweens before four-key acceptance. No full loop claim until all finished frames are reviewed.
-4. QualifyF2/F6 with planted-foot tracks and neighbors; produce in-betweens only after keys pass; use actual playback at simulation travel speed and independent review.
-5. Integrate one qualified atlas through existing exact state/direction API, then the remaining directions/actions and two reuse pilots. Public deployment waits for its actual build/runtime gates.
+1. Completed: one guide-bound F7 spacing correction in South013; first loop012 and all source originals preserved.
+2. Completed: corrected loop014 rebuilt through existing atlas/APNG helpers; brief80px sheet shows separated calves and actual browser capture reports all eight frames/three cycles/zero errors. Naturalness remains a practical viewing judgment.
+3. Integrate one usable atlas through existing state/direction APIs; check travel, stop and pause against simulation-authoritative movement.
+4. Extend directions/actions and archetype reuse only after the first walk is usable. Keep finite work orders and source custody without repeated microscopic audits.
+5. Finish battlefield art and validate the final public build against the full completion criteria.
 
 Binding005 is terminalHELD and superseded: sampled clearance, continuity and triangle area failed;0 images/AI/runtime changes. Preserve its frozen evidence without further geometry work. The old hidden-joint/component rig is optional2D pose reference only; no new limb reconstruction art and no visible puppet assembly. Finished whole-body illustration quality takes precedence.
 

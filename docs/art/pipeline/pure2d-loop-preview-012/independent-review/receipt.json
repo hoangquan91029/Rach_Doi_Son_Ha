@@ -1,0 +1,71 @@
+{
+  "status": "HOLD_ONE_VISIBLE_FIX",
+  "reviewer": "/root/walk_review_sol",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "low",
+  "subject": "villager walk D01/world SE",
+  "frames": 8,
+  "durationMs": 600,
+  "normalSpeed": 1,
+  "nominalHeightPx": 80,
+  "reviewEvidence": "Brief browser screenshot samples plus exact80px full-frame sheet; no continuous video perception",
+  "fix": "F7 lower-leg crossing: keep walking lanes coherent from F6 to F0",
+  "nonblocking": "minor cloth/pixel variance",
+  "continuousSeam": "UNVERIFIED_BY_REVIEWER",
+  "owner": "PENDING",
+  "runtimeIntegration": "UNTESTED",
+  "fanout": "NOT_CERTIFIED",
+  "hashes": {
+    "atlas-job.json": "7fbc91e4c2bb77439c8e8b3ad0cc483f714c0b23d76bef9b83ff0ed69b9f2a28",
+    "actual-sources.json": "822476cc088f5bf91f704b660d0d8afe70dc68d7d2a08b4c89d3de1c5e9bd028",
+    "compiled/manifest.json": "bddb800c94e0d727f8d2a77584df5e6be557e5a7a094a7c6df95effb1757266a",
+    "compiled/receipt.json": "4e228037224fd12bf656256a6636eeff578910716eeef9a6fbfeaeb501eb1017",
+    "playback/receipt.json": "b88d664719d928e2ce7eb4b573201e99fdccfa1dfe0be00653274452a70a29d8",
+    "playback/actual-eight-frame-loop.png": "0c600e4b33bc63b36aa46368b22efff8d8daabca095e14c7e1425f272aad01ff",
+    "all-eight80-static.png": "2ac2cbc6fea022f74efd436e726860e4a3d5573b34f99be9b1527701ed518e01",
+    "playback/captures/receipt.json": "a85cf612a67da2bb4a35a8cead8f45a0014211404ea658a784494063e6bdf198"
+  },
+  "sources": [
+    {
+      "frame": 0,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/authoring-tools/villager-walk-SOUTH-007/walk/keys/F00-left-contact-01/raw.png",
+      "sha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001"
+    },
+    {
+      "frame": 1,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-011/F1-inbetween-01/raw.png",
+      "sha256": "1306a28e6424d6f9c1d547ee3c68bff22a93e544bd9264117514b3cc10b96356"
+    },
+    {
+      "frame": 2,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-010/F2-right-passing-01/raw.png",
+      "sha256": "bd2679353741d51575a99ccd0ded835281d0688abb1018146ed60d3077cc2b1c"
+    },
+    {
+      "frame": 3,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-011/F3-inbetween-01/raw.png",
+      "sha256": "b7201ddf0e9e791b708835fd52a278af5c9487a2ee1a9c9592fa42d6b3e12687"
+    },
+    {
+      "frame": 4,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-009/F4-trailing-contact-correction-01/raw.png",
+      "sha256": "929b9805f696abf341b8ea9b4df425a753da2c48b1be9ca13282bb5c72e0793f"
+    },
+    {
+      "frame": 5,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-011/F5-inbetween-01/raw.png",
+      "sha256": "9db20e4f44a57dfe0c801673b6e18c41350b44c88d486933d03d7dd359f90b36"
+    },
+    {
+      "frame": 6,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-010/F6-left-passing-01/raw.png",
+      "sha256": "6ed3e9b8f0693441c457038e748789496421cefe3e02c696b6956fa074f34822"
+    },
+    {
+      "frame": 7,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-011/F7-inbetween-01/raw.png",
+      "sha256": "e6a04ccce4eab77f01def3406a314e53550837a46937a5fdfb6a1209afa69a5e"
+    }
+  ],
+  "reportSha256": "c70521edc5d1fcc01ffab9ced8636603993342735e06ca52aa708e7dcf95d33a"
+}

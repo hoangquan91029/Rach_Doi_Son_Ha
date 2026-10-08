@@ -1,0 +1,225 @@
+{
+  "schema": "pure2d-hand-contact-guide/v1",
+  "status": "AUTHORING_ONLY_READY_PENDING_PARENT_REVIEW",
+  "frame": "F4",
+  "direction": {
+    "screen": "South",
+    "engine": "D01",
+    "world": "SE"
+  },
+  "profile": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low"
+  },
+  "canvas": [
+    1254,
+    1254
+  ],
+  "pivot": [
+    654,
+    1140
+  ],
+  "referenceHeight": 1130,
+  "references": {
+    "canonicalSouth": {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "role": "identity/material/camera authority only",
+      "encodedSha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "rgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "heldF4EditTarget": {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-008/F4-right-contact-02/raw.png",
+      "role": "held correction target, NOT selected continuity neighbor",
+      "encodedSha256": "90bc3e2fbab8497eb6696078104d3fcce004fcabb1184ebc0b6068d46548253d",
+      "rgbaSha256": "3c275a46b01dd324b4eaa919513b88e7cacf76eb9ce8f29d0a654000514d0bee",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "selectedF0Comparison": {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/walk/keys/F00-left-contact-01/raw.png",
+      "role": "optional comparison only; not edit target; PASS_KEY_CANDIDATE_ONLY",
+      "encodedSha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001",
+      "rgbaSha256": "07bc362e869f40e8a3d5ba0b6fabdd7845f6132c0aa4656a17f762ee46609410",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    }
+  },
+  "confidence": "Manual visual estimates from actual full held F4/canonical/F0; targets hand-authored, not sealed measurements, projection or contact acceptance.",
+  "uncertaintyPx": 18,
+  "observedHeldF4": {
+    "trailingAnatomicalLEFTViewerRIGHT": {
+      "toeApprox": [
+        735,
+        1093
+      ],
+      "rearHeelApprox": [
+        687,
+        990
+      ],
+      "note": "Rear heel estimate refers to high back sandal region; heel center/sole landmark is anatomically uncertain. Heel is already raised in silhouette; toe-ground contact remains ambiguous and no floor/contact is established by raw transparency."
+    },
+    "receivingAnatomicalRIGHTViewerLEFT": {
+      "soleApprox": [
+        530,
+        1193
+      ],
+      "instruction": "preserve exact source placement and shape"
+    }
+  },
+  "target": {
+    "trailingAnatomicalLEFTViewerRIGHT": {
+      "ankleApprox": [
+        720,
+        1008
+      ],
+      "raisedHeelApprox": [
+        716,
+        1045
+      ],
+      "plantedToeApprox": [
+        764,
+        1093
+      ],
+      "ballBendApprox": [
+        756,
+        1084
+      ],
+      "authoredRanges": {
+        "ankle": [
+          [
+            710,
+            995
+          ],
+          [
+            730,
+            1020
+          ]
+        ],
+        "heel": [
+          [
+            700,
+            1035
+          ],
+          [
+            725,
+            1060
+          ]
+        ],
+        "toe": [
+          [
+            750,
+            1090
+          ],
+          [
+            778,
+            1100
+          ]
+        ]
+      },
+      "solePathApprox": [
+        [
+          716,
+          1045
+        ],
+        [
+          735,
+          1066
+        ],
+        [
+          753,
+          1090
+        ],
+        [
+          764,
+          1093
+        ]
+      ],
+      "outlineApprox": [
+        [
+          710,
+          993
+        ],
+        [
+          729,
+          993
+        ],
+        [
+          730,
+          1010
+        ],
+        [
+          723,
+          1032
+        ],
+        [
+          728,
+          1048
+        ],
+        [
+          744,
+          1069
+        ],
+        [
+          763,
+          1080
+        ],
+        [
+          779,
+          1087
+        ],
+        [
+          780,
+          1093
+        ],
+        [
+          770,
+          1097
+        ],
+        [
+          753,
+          1093
+        ],
+        [
+          746,
+          1080
+        ],
+        [
+          735,
+          1066
+        ],
+        [
+          711,
+          1053
+        ],
+        [
+          705,
+          1044
+        ],
+        [
+          710,
+          1024
+        ],
+        [
+          710,
+          993
+        ]
+      ],
+      "localFloorDepthYApprox": 1093,
+      "heelRisePixelsApprox": 48,
+      "instruction": "Coherent short toe-grounded push-off: heel behind/up-left of toe; flex toe/forefoot toward local floor. Preserve upper leg/knee and whole frame; allow only local lower wrap/ankle transition needed for coherent sandal."
+    }
+  },
+  "priorGuideCorrection": "Prior v2 toe[811,1091]/heel[857,1064] was an independent estimate. Actual sandal points toward down/right; placing heel to right of toe risks reversing foot orientation. New target keeps heel up-left of toe. Parent heel7241060/toe7781093/ankle7201045 were starting estimates. Actual calf and independent native review favor ankle995..1020 instead of forcing it45px down; ranges above preserve orientation and reduce broad floating-looking sole. No rigid pixel pins.",
+  "knownUncertainty": "Rear toe depth y1093 is an authored local ground cue consistent with trailing depth, not a global flat baseline; receiving y1193 remains untouched. No floor exists in transparent raw. Visual parent review must judge floor depth, anatomy and contact; no world foot-lock or final acceptance is asserted.",
+  "sourceMutated": false,
+  "imageCalls": 0,
+  "no3D": true
+}
