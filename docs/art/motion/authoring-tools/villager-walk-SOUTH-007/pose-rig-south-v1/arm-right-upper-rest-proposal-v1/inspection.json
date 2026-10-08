@@ -1,0 +1,184 @@
+{
+  "status": "PROPOSAL_ONLY_UNSEALED_CLOTH_ENDPOINT_PARTIAL_REST",
+  "candidate": false,
+  "finishedKey": false,
+  "motionQualified": false,
+  "sealedSidecarCreated": false,
+  "partCount": 2,
+  "missingOriginalParts": 7,
+  "sourceProposalSha256": "56b9f4d1637b24b929cf316abb58328fb00b8f3c62e66903e1be22bcd86636f2",
+  "rawSha256": "ebeace7fb22057c786b56e00d8634832b5261d905d9fa91904f57bc413e37d46",
+  "rawRgbaSha256": "f9a382adb47cb2d8a3671c772849b6181086acd56b8b1710346cce8b15fc4bcf",
+  "endpointEvidence": [
+    {
+      "name": "shoulder",
+      "xy_raw_approx": [
+        762,
+        188
+      ],
+      "method": "observed_original",
+      "uncertainty_raw_px": 30,
+      "evidence": "Visible upper sleeve cap apex / center of the short proximal silhouette at the top of the actual raw. No explicit anatomical joint seam is present; this is an uncertain cloth-endpoint candidate and may be partly hidden under the core."
+    },
+    {
+      "name": "elbow",
+      "xy_raw_approx": [
+        600,
+        966
+      ],
+      "method": "observed_original",
+      "uncertainty_raw_px": 35,
+      "evidence": "Approximate center of the dark cuff-mouth opening at the distal end of the actual sleeve. The rolled cuff is broad and folded, with no unambiguous elbow joint center; candidate is a cloth boundary convention, not measured anatomy."
+    }
+  ],
+  "jointAndCameraReport": {
+    "rawInspectedEndpointNames": [
+      "shoulder",
+      "elbow"
+    ],
+    "rawEndpointSpan": 794.6873599095433,
+    "directedUniformEndpointFitProposal": {
+      "scale": 0.25167129878945776,
+      "rotationRad": -0.2052927303255352,
+      "translation": [
+        -197.39172293231655,
+        -7.226916304581876
+      ]
+    },
+    "providedImmutableCalibration": {
+      "scale": 0.25167129878945776,
+      "rotationRad": -0.2052927303255352,
+      "translation": [
+        -197.39172293231655,
+        -7.226916304581876
+      ],
+      "tolerancePx": 0.01
+    },
+    "providedEndpointRestResidualPx": [
+      0.0,
+      4.0194366942304644e-14
+    ],
+    "unforeshortenedBonePlaneLength": 200,
+    "neutralBodyRestScreenEndpoints": [
+      [
+        495.6299472118419,
+        342.1125238796267
+      ],
+      [
+        481.0089369823421,
+        514.8230498622925
+      ]
+    ],
+    "neutralBodyRestScreenLength": 173.3283004166954,
+    "neutralBodyScreenToBoneRatio": 0.866641502083477,
+    "cameraRole": "Fixed2:1 affine camera projection applied ONCE after uniform raw-to-unforeshortened bone-plane calibration. Screen length is not a200px source-calibration target.",
+    "allFourJointRecords": [
+      {
+        "key": 0,
+        "proximalScreenXY": [
+          520.6299472118419,
+          342.1125238796267
+        ],
+        "distalScreenXY": [
+          506.0089369823421,
+          514.8230498622925
+        ],
+        "modelLength": 200.0,
+        "screenLength": 173.3283004166954,
+        "screenToModelRatio": 0.866641502083477
+      },
+      {
+        "key": 2,
+        "proximalScreenXY": [
+          550.6299472118419,
+          322.1125238796267
+        ],
+        "distalScreenXY": [
+          538.8288103772236,
+          417.55794095663305
+        ],
+        "modelLength": 200.00000000000003,
+        "screenLength": 96.17221257511488,
+        "screenToModelRatio": 0.4808610628755744
+      },
+      {
+        "key": 4,
+        "proximalScreenXY": [
+          470.6299472118419,
+          342.1125238796267
+        ],
+        "distalScreenXY": [
+          456.0089369823421,
+          558.603662799444
+        ],
+        "modelLength": 200.0,
+        "screenLength": 216.98430166933917,
+        "screenToModelRatio": 1.0849215083466959
+      },
+      {
+        "key": 6,
+        "proximalScreenXY": [
+          440.6299472118419,
+          322.1125238796267
+        ],
+        "distalScreenXY": [
+          428.82881037722353,
+          540.8055987180751
+        ],
+        "modelLength": 200.00000000000003,
+        "screenLength": 219.01125042537103,
+        "screenToModelRatio": 1.0950562521268552
+      }
+    ]
+  },
+  "allFourPoseGeometryBounds": {
+    "F0": [
+      324.29472007391905,
+      287.37746716672245,
+      678.7160308912324,
+      594.2600645829486
+    ],
+    "F2": [
+      354.0085795364039,
+      291.10844612945357,
+      712.2275078590654,
+      462.3585994890068
+    ],
+    "F4": [
+      274.29472007391905,
+      273.50260737803046,
+      628.7160308912324,
+      658.1772683536949
+    ],
+    "F6": [
+      244.0085795364039,
+      251.07320839059503,
+      602.2275078590654,
+      643.4568738581625
+    ]
+  },
+  "sourceCoverage": "Full unchanged1254 canvas quad; all alpha retained; no bbox fit/cleanup/crop.",
+  "layerOrderProposal": [
+    "arm_right_upper",
+    "core_head_torso_pelvis"
+  ],
+  "orderingApproved": false,
+  "outputs": [
+    {
+      "path": "partial-rest.png",
+      "sha256": "7cb1daaa97911f145ffe1decee1122698810b62fdcce62dd5a4b0d2c65843b36",
+      "rgbaSha256": "deafda97236516791edcf7b84498228d185e2b83de3f254b734262a6e877e18a"
+    },
+    {
+      "path": "partial-rest-QA.png",
+      "sha256": "d4fd84034a0adbff148950a1a1730c7d3bbb28fc3cc120377c6327b991fdb5c9",
+      "rgbaSha256": "05c0370b9b20e1b67b8dff60e50ca48091862a0813d1c25acfb9a0b29314d48d"
+    },
+    {
+      "path": "partial-rest-whole38.png",
+      "sha256": "14633b82b04ae44b8d0ceaa994392c5d892a4f4658e37b9bd91ec73b06ab3cff",
+      "rgbaSha256": "36621dd07161c44656259b7ae3c9168dd5de30ba020ebd6a583b8fe573a2ea1a"
+    }
+  ],
+  "toolSha256": "e22f4a7f5f55f972383140db9158abfa3898bff98b3e42eabae75f67faf20c8a"
+}

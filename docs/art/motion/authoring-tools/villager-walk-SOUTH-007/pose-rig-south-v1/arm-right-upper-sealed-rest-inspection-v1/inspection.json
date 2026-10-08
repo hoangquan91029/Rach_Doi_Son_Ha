@@ -1,0 +1,219 @@
+{
+  "schema": "south-two-part-rest-inspection/v1",
+  "status": "PARTIAL_REST_INSPECTION_REQUIRES_SOURCE_REVIEW",
+  "candidate": false,
+  "fullCharacter": false,
+  "finishedKey": false,
+  "motionQualified": false,
+  "finalArtApproved": false,
+  "imageCalls": 0,
+  "runtimeChanges": false,
+  "purpose": "ACTUAL_SOURCE_PROPOSAL",
+  "partId": "arm_right_upper",
+  "coreAndLimbOnly": true,
+  "missingOriginalParts": 7,
+  "proposedLayerOrder": [
+    "arm_right_upper",
+    "core_head_torso_pelvis"
+  ],
+  "orderingApproved": false,
+  "bodyRestReference": "Stationary core+onepart rest diagnostic, not F0 key art or a loop.",
+  "jointAndCameraReport": {
+    "rawInspectedEndpointNames": [
+      "shoulder",
+      "elbow"
+    ],
+    "rawEndpointSpan": 794.6873599095433,
+    "directedUniformEndpointFitProposal": {
+      "scale": 0.25167129878945776,
+      "rotationRad": -0.2052927303255352,
+      "translation": [
+        -197.39172293231655,
+        -7.226916304581876
+      ]
+    },
+    "providedImmutableCalibration": {
+      "scale": 0.25167129878945776,
+      "rotationRad": -0.2052927303255352,
+      "translation": [
+        -197.39172293231655,
+        -7.226916304581876
+      ],
+      "tolerancePx": 0.01
+    },
+    "providedEndpointRestResidualPx": [
+      0.0,
+      4.0194366942304644e-14
+    ],
+    "unforeshortenedBonePlaneLength": 200,
+    "neutralBodyRestScreenEndpoints": [
+      [
+        495.6299472118419,
+        342.1125238796267
+      ],
+      [
+        481.0089369823421,
+        514.8230498622925
+      ]
+    ],
+    "neutralBodyRestScreenLength": 173.3283004166954,
+    "neutralBodyScreenToBoneRatio": 0.866641502083477,
+    "cameraRole": "Fixed2:1 affine camera projection applied ONCE after uniform raw-to-unforeshortened bone-plane calibration. Screen length is not a200px source-calibration target.",
+    "allFourJointRecords": [
+      {
+        "key": 0,
+        "proximalScreenXY": [
+          520.6299472118419,
+          342.1125238796267
+        ],
+        "distalScreenXY": [
+          506.0089369823421,
+          514.8230498622925
+        ],
+        "modelLength": 200.0,
+        "screenLength": 173.3283004166954,
+        "screenToModelRatio": 0.866641502083477
+      },
+      {
+        "key": 2,
+        "proximalScreenXY": [
+          550.6299472118419,
+          322.1125238796267
+        ],
+        "distalScreenXY": [
+          538.8288103772236,
+          417.55794095663305
+        ],
+        "modelLength": 200.00000000000003,
+        "screenLength": 96.17221257511488,
+        "screenToModelRatio": 0.4808610628755744
+      },
+      {
+        "key": 4,
+        "proximalScreenXY": [
+          470.6299472118419,
+          342.1125238796267
+        ],
+        "distalScreenXY": [
+          456.0089369823421,
+          558.603662799444
+        ],
+        "modelLength": 200.0,
+        "screenLength": 216.98430166933917,
+        "screenToModelRatio": 1.0849215083466959
+      },
+      {
+        "key": 6,
+        "proximalScreenXY": [
+          440.6299472118419,
+          322.1125238796267
+        ],
+        "distalScreenXY": [
+          428.82881037722353,
+          540.8055987180751
+        ],
+        "modelLength": 200.00000000000003,
+        "screenLength": 219.01125042537103,
+        "screenToModelRatio": 1.0950562521268552
+      }
+    ]
+  },
+  "allFourPoseGeometryBounds": {
+    "core_head_torso_pelvis": {
+      "F0": [
+        278.28355901507285,
+        43.17156817270814,
+        1036.9181964294307,
+        840.1504021322111
+      ],
+      "F2": [
+        308.28355901507285,
+        23.17156817270814,
+        1066.9181964294307,
+        820.1504021322111
+      ],
+      "F4": [
+        228.28355901507285,
+        43.17156817270814,
+        986.9181964294307,
+        840.1504021322111
+      ],
+      "F6": [
+        198.28355901507285,
+        23.17156817270814,
+        956.9181964294307,
+        820.1504021322111
+      ]
+    },
+    "arm_right_upper": {
+      "F0": [
+        324.29472007391905,
+        287.37746716672245,
+        678.7160308912324,
+        594.2600645829486
+      ],
+      "F2": [
+        354.0085795364039,
+        291.10844612945357,
+        712.2275078590654,
+        462.3585994890068
+      ],
+      "F4": [
+        274.29472007391905,
+        273.50260737803046,
+        628.7160308912324,
+        658.1772683536949
+      ],
+      "F6": [
+        244.0085795364039,
+        251.07320839059503,
+        602.2275078590654,
+        643.4568738581625
+      ]
+    }
+  },
+  "sourceAlphaOutsideEachMesh": 0,
+  "sourceCustody": {
+    "core_head_torso_pelvis": {
+      "rawPath": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/core-head-torso-pelvis-01/raw.png",
+      "rawSha256": "b5d8542917309bacf90dfd117d8d2da287d9b6eb9c63c4b358e8e5d09f250c6a",
+      "rgbaSha256": "d7cd792b95e7ff329909b0fbd682e24b6f7e5beb4fa2eec3af427ea1916c6e52",
+      "sidecarPath": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/core-head-torso-pelvis-01/sidecar-v3.json",
+      "sidecarSha256": "1554ddbd9cf9a6d81ff4840d2dd941baebd5f387bd2ca598541f2fa0e1329b8d"
+    },
+    "arm_right_upper": {
+      "rawPath": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-upper-01/raw.png",
+      "rawSha256": "ebeace7fb22057c786b56e00d8634832b5261d905d9fa91904f57bc413e37d46",
+      "rgbaSha256": "f9a382adb47cb2d8a3671c772849b6181086acd56b8b1710346cce8b15fc4bcf",
+      "sidecarPath": "parts/arm-right-upper-01/sidecar-v1.json",
+      "sidecarSha256": "7e60eb992fb5dfd24b6daa1332c09399cd20197741d5fdd96bc3c52e71bbac7a"
+    }
+  },
+  "outputs": [
+    {
+      "path": "partial-rest.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "7cb1daaa97911f145ffe1decee1122698810b62fdcce62dd5a4b0d2c65843b36",
+      "rgbaSha256": "deafda97236516791edcf7b84498228d185e2b83de3f254b734262a6e877e18a"
+    },
+    {
+      "path": "partial-rest-QA.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "e8773803c01029254f1aa2648b3314a6273728f94d6423a0ab476bcdb26706f4",
+      "rgbaSha256": "48a570f159d30ec4287e81353ce96045a0179c05730b342a8951d1550a74478e"
+    },
+    {
+      "path": "partial-rest-whole38.png",
+      "width": 38,
+      "height": 38,
+      "sha256": "14633b82b04ae44b8d0ceaa994392c5d892a4f4658e37b9bd91ec73b06ab3cff",
+      "rgbaSha256": "36621dd07161c44656259b7ae3c9168dd5de30ba020ebd6a583b8fe573a2ea1a"
+    }
+  ],
+  "toolSha256": "113387b26342a3c1d7ccab28a7cc43039d017b8e948cf04e87ceacd109c9f830",
+  "sealedV4EngineSha256": "b5ad84368a091cf1b2643e687fe7a98b7465906a52ede606a7eb89b791d29923",
+  "parentCoreReviewSha256": "f2d304415f809c4de3ae3e00ea901a6a0cbeecb69ac70051eaf90d144e6c2bca",
+  "remainingFootGate": "Actual trailing toe-grounded/heel-rise rigid foot plane must be authored from lower_sandal originals and reviewed BEFORE four finishedkey acceptance; preservedflat12px hypothesis is not contact qualification."
+}

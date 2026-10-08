@@ -1,0 +1,50 @@
+{
+  "schema": "south-parent-upperarm-calibration-review/v1",
+  "timestampUtc": "2026-10-08T01:47:08.937414+00:00",
+  "status": "PASS_FIXED_UNIFORM_UPPERARM_AUTHORING_CALIBRATION_ONLY",
+  "actuallyViewed": [
+    "arm-right-upper-rest-proposal-v1/partial-rest-QA.png",
+    "arm-right-upper-rest-proposal-v1/partial-rest-whole38.png",
+    "arm-right-upper-four-pose-diagnostic-v2/PARTIAL_POSE_DIAGNOSTIC-627-sheet.png",
+    "arm-right-upper-four-pose-diagnostic-v2/PARTIAL_POSE_DIAGNOSTIC-38-sheet.png",
+    "arm-right-upper-four-pose-diagnostic-v2/F2-PARTIAL.png",
+    "arm-right-upper-four-pose-diagnostic-v2/F4-PARTIAL.png"
+  ],
+  "pins": {
+    "parts/arm-right-upper-01/raw.png": "ebeace7fb22057c786b56e00d8634832b5261d905d9fa91904f57bc413e37d46",
+    "parts/arm-right-upper-01/landmark-fit-proposal-not-sidecar.json": "56b9f4d1637b24b929cf316abb58328fb00b8f3c62e66903e1be22bcd86636f2",
+    "arm-right-upper-rest-proposal-v1/inspection.json": "4990e9fc2cc470b0e228ee02b2ef38ae2a326c2d5d409cae64dce0602b306de3",
+    "arm-right-upper-four-pose-diagnostic-v2/inspection.json": "9304485492a3885c89ec9aaebf6d9bddc6623bbf6d15647e56790afe9e9e2942",
+    "tooling-v5/inspect_partial.py": "113387b26342a3c1d7ccab28a7cc43039d017b8e948cf04e87ceacd109c9f830",
+    "tooling-v5/inspect_arm_proposal.py": "e22f4a7f5f55f972383140db9158abfa3898bff98b3e42eabae75f67faf20c8a",
+    "tooling-v5/render_partial_four.py": "12eac964b9afc4b7f5d6d261723e0de76bb4c1627c41dc354b41cc95495f3404",
+    "tooling-v5/test_partial.py": "bdedf60248f1ef8a14b122419c195814a9e5f131b74136b4918eca0bb3834567"
+  },
+  "decision": "Same fixed source fit retains costume/material and a usable sleeve-to-core overlap in partial four-pose views. Broader cuff is acceptable at38px for internal authoring; guide taper is not an anatomical measurement. No perpose fitting or bone-length change. Shoulder cap is an authored cloth convention\u00b130RAWpx; cuff mouth is observed cloth boundary\u00b135RAWpx, not measured elbow anatomy. One eventual sidecar may bind these exact cloth points and immutable calibration; numerical0.01px correspondence is separate from8\u20139localpx source convention uncertainty.",
+  "sidecarSealAuthorized": true,
+  "sourcePoints": {
+    "shoulder": [
+      762,
+      188
+    ],
+    "elbow": [
+      600,
+      966
+    ]
+  },
+  "oneImmutableCalibration": {
+    "scale": 0.25167129878945776,
+    "rotationRad": -0.2052927303255352,
+    "translation": [
+      -197.39172293231655,
+      -7.226916304581876
+    ]
+  },
+  "layerOrder": "Arm behind core is acceptable for this partial diagnostic only; fullninepart/perpose forearm/leg/cloth depth ordering remains unsealed.",
+  "finishedIllustratedKeys": 0,
+  "qualifiedLoops": 0,
+  "motionQualified": false,
+  "finalArtApproved": false,
+  "additionalImageCallsAuthorized": 0,
+  "remainingGate": "All7missing originalparts, all9perpose ordering, actual trailing toe-groundedheel-roll, complete illustratedfourkey visual review before inbetweens/full8loop."
+}

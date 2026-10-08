@@ -1,0 +1,144 @@
+{
+  "status": "PARTIAL_POSE_DIAGNOSTIC_REQUIRES_PARENT_REVIEW",
+  "candidate": false,
+  "finishedKey": false,
+  "motionQualified": false,
+  "sealedSidecarCreated": false,
+  "partCount": 2,
+  "missingOriginalParts": 7,
+  "keys": [
+    0,
+    2,
+    4,
+    6
+  ],
+  "sourceProposalSha256": "56b9f4d1637b24b929cf316abb58328fb00b8f3c62e66903e1be22bcd86636f2",
+  "rawSha256": "ebeace7fb22057c786b56e00d8634832b5261d905d9fa91904f57bc413e37d46",
+  "rawRgbaSha256": "f9a382adb47cb2d8a3671c772849b6181086acd56b8b1710346cce8b15fc4bcf",
+  "coreRawSha256": "b5d8542917309bacf90dfd117d8d2da287d9b6eb9c63c4b358e8e5d09f250c6a",
+  "coreSidecarSha256": "1554ddbd9cf9a6d81ff4840d2dd941baebd5f387bd2ca598541f2fa0e1329b8d",
+  "posePlanSha256": "dd685b2b444e8c1b1cdcab04be06d92651c81657cf265489c90cee56203abfcf",
+  "calibration": {
+    "scale": 0.25167129878945776,
+    "rotationRad": -0.2052927303255352,
+    "translation": [
+      -197.39172293231655,
+      -7.226916304581876
+    ],
+    "tolerancePx": 0.01
+  },
+  "allFourPoseGeometryBounds": {
+    "arm_right_upper": {
+      "F0": [
+        324.29472007391905,
+        287.37746716672245,
+        678.7160308912324,
+        594.2600645829486
+      ],
+      "F2": [
+        354.0085795364039,
+        291.10844612945357,
+        712.2275078590654,
+        462.3585994890068
+      ],
+      "F4": [
+        274.29472007391905,
+        273.50260737803046,
+        628.7160308912324,
+        658.1772683536949
+      ],
+      "F6": [
+        244.0085795364039,
+        251.07320839059503,
+        602.2275078590654,
+        643.4568738581625
+      ]
+    },
+    "core_head_torso_pelvis": {
+      "F0": [
+        278.28355901507285,
+        43.17156817270814,
+        1036.9181964294307,
+        840.1504021322111
+      ],
+      "F2": [
+        308.28355901507285,
+        23.17156817270814,
+        1066.9181964294307,
+        820.1504021322111
+      ],
+      "F4": [
+        228.28355901507285,
+        43.17156817270814,
+        986.9181964294307,
+        840.1504021322111
+      ],
+      "F6": [
+        198.28355901507285,
+        23.17156817270814,
+        956.9181964294307,
+        820.1504021322111
+      ]
+    }
+  },
+  "coverage": "Full original arm canvas semantic quad; unchanged sourcebytes/all alpha retained; fixed calibration; no fit/crop/cleanup per pose.",
+  "layerOrderProposal": [
+    "arm_right_upper",
+    "core_head_torso_pelvis"
+  ],
+  "fullNinePartOrderingApproved": false,
+  "outputs": [
+    {
+      "path": "F0-PARTIAL.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "fa8aa8d7fb924a11d2b5600ba40c21a5a9ac883fdc5399f3b4709fe70da21d22",
+      "rgbaSha256": "2d431dd7caeeb35b90573f3a3cc5898628814cf0f3deb35a9d4fc1cc813716ce"
+    },
+    {
+      "path": "F2-PARTIAL.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "4a630fb1fd4c88b11c0e7d698440573a14e3b9ffdee29c056a5638b4be0709b5",
+      "rgbaSha256": "3eb707ffaed7c4ae300a30d0a0b70abb3eebbba5e9c94d96790d93146b5897d8"
+    },
+    {
+      "path": "F4-PARTIAL.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "13fed0c9c24e97067c342111a665e1785a195956aefcc255867f08246840fd90",
+      "rgbaSha256": "6530e55bede93c2b4afa616ff8d9aa3c45cbd5ca80d921a8d7d68ec8c6aae398"
+    },
+    {
+      "path": "F6-PARTIAL.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "5d4a3b31039c7d577fc53bae23cbd6edf766ce054d5cf6b0f251ee989aca6908",
+      "rgbaSha256": "6b3508dbe9fb202022a91e1826e3f0ee522197a2a1453dd5d99b88fc5cdf0eb1"
+    },
+    {
+      "path": "PARTIAL_POSE_DIAGNOSTIC-1254-sheet.png",
+      "width": 5016,
+      "height": 1314,
+      "sha256": "d950f3ecb10f6ce3a34bb5899d797b234f55df5ed6c8dec44f81256a08ebadee",
+      "rgbaSha256": "d775918bcea42f9a91412767ab1cc598530677196fe6d5de2281c12e4dd947d2"
+    },
+    {
+      "path": "PARTIAL_POSE_DIAGNOSTIC-627-sheet.png",
+      "width": 2508,
+      "height": 687,
+      "sha256": "1ceb2082ed2fe3967974add00e1614c960a643b8e439012b14df265540c00e1b",
+      "rgbaSha256": "b0ef967b276894fb8bb886d4fe4614f2712e4c2a5853627cb28016b6edec99b2"
+    },
+    {
+      "path": "PARTIAL_POSE_DIAGNOSTIC-38-sheet.png",
+      "width": 152,
+      "height": 76,
+      "sha256": "66f1e0c9f1ec5c7222e6bd7ad9ab7de4ed0fb3a91561e5d730f785587e2d54ce",
+      "rgbaSha256": "9ed80272fbe62715da77eb0b29833d1c8951a0da7187e5704b08aba11e988572"
+    }
+  ],
+  "candidateEvidenceSha256": "3e163cfe0d8354436e92095e76384d82dbcb77977657879701a4e8f8c58b3f56",
+  "toolSha256": "12eac964b9afc4b7f5d6d261723e0de76bb4c1627c41dc354b41cc95495f3404",
+  "remainingGate": "Parent separate four-pose diagnostic review before actual sidecar seal; these are not finished illustrated keys."
+}

@@ -1,0 +1,116 @@
+{
+  "schema": "south-bitmap-rig-sidecar/v3",
+  "partId": "arm_right_upper",
+  "status": "SEALED_ORIGINAL_CALIBRATION",
+  "raw": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-upper-01/raw.png",
+    "sha256": "ebeace7fb22057c786b56e00d8634832b5261d905d9fa91904f57bc413e37d46",
+    "rgbaSha256": "f9a382adb47cb2d8a3671c772849b6181086acd56b8b1710346cce8b15fc4bcf",
+    "width": 1254,
+    "height": 1254
+  },
+  "calibration": {
+    "scale": 0.25167129878945776,
+    "rotationRad": -0.2052927303255352,
+    "translation": [
+      -197.39172293231655,
+      -7.226916304581876
+    ],
+    "tolerancePx": 0.01
+  },
+  "landmarks": {
+    "shoulder": {
+      "xy": [
+        762,
+        188
+      ],
+      "method": "authored_cloth_attachment_convention",
+      "uncertaintyPx": 30,
+      "evidence": "Parent-reviewed authored sleeve cap cloth endpoint convention; not an observed anatomical shoulder joint. Source convention uncertainty30RAWpx is separate from numerical0.01px mapping tolerance."
+    },
+    "elbow": {
+      "xy": [
+        600,
+        966
+      ],
+      "method": "observed_original",
+      "uncertaintyPx": 35,
+      "evidence": "Observed cuff-mouth cloth boundary center, uncertain35RAWpx; not a measured anatomical elbow joint. Separate from numerical0.01px endpoint fit tolerance."
+    }
+  },
+  "mesh": {
+    "vertices": [
+      {
+        "rawXY": [
+          0,
+          0
+        ],
+        "binding": {
+          "frame": "bone",
+          "local": [
+            -197.39172293231655,
+            -7.226916304581876
+          ]
+        }
+      },
+      {
+        "rawXY": [
+          1254,
+          0
+        ],
+        "binding": {
+          "frame": "bone",
+          "local": [
+            111.57700054471064,
+            -71.56230602601946
+          ]
+        }
+      },
+      {
+        "rawXY": [
+          1254,
+          1254
+        ],
+        "binding": {
+          "frame": "bone",
+          "local": [
+            175.91239026614818,
+            237.40641745100774
+          ]
+        }
+      },
+      {
+        "rawXY": [
+          0,
+          1254
+        ],
+        "binding": {
+          "frame": "bone",
+          "local": [
+            -133.05633321087896,
+            301.7418071724453
+          ]
+        }
+      }
+    ],
+    "triangles": [
+      {
+        "indices": [
+          0,
+          1,
+          2
+        ],
+        "region": "bone"
+      },
+      {
+        "indices": [
+          0,
+          2,
+          3
+        ],
+        "region": "bone"
+      }
+    ],
+    "sharedAnkleSeam": []
+  }
+}

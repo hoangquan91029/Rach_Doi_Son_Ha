@@ -1,0 +1,34 @@
+{
+  "schema": "south-parent-partial-tool-review/v1",
+  "timestampUtc": "2026-10-08T01:50:18.870780+00:00",
+  "status": "PASS_PARTIAL_TOOL_AUTHORING_ONLY",
+  "parentRead": [
+    "tooling-v5/inspect_partial.py",
+    "tooling-v5/inspect_arm_proposal.py",
+    "tooling-v5/render_partial_four.py"
+  ],
+  "parentRerun": {
+    "test_partial.py": 5,
+    "scope": "temporary NON_ART tests, not motion"
+  },
+  "actualSourceInspections": "One real upper sleeve sidecar passes source/decoded custody, fullalpha coverage, immutable raw-to200 fit and all4pose bounds. Parent reviewed actualrestnative/38 and actualpartialfourpose sheet/nativeF2/F4. Originalraw and proposal preserved.",
+  "calibratedParts": 2,
+  "selectedReadyParts": 2,
+  "finishedIllustratedKeys": 0,
+  "qualifiedLoops": 0,
+  "fullOrderingApproved": false,
+  "sourceUncertainty": "Cap convention30RAWpx; observed cloth-mouth35RAWpx. Numeric0.01pxfit does not measure joint accuracy.",
+  "pins": {
+    "tooling-v5/inspect_partial.py": "113387b26342a3c1d7ccab28a7cc43039d017b8e948cf04e87ceacd109c9f830",
+    "tooling-v5/inspect_arm_proposal.py": "e22f4a7f5f55f972383140db9158abfa3898bff98b3e42eabae75f67faf20c8a",
+    "tooling-v5/render_partial_four.py": "12eac964b9afc4b7f5d6d261723e0de76bb4c1627c41dc354b41cc95495f3404",
+    "parts/arm-right-upper-01/parent-calibration-review-v1.json": "93fd995c1cd84746d710735fd92c4e76bff81d9e55b8b820c26e69e4352e5663",
+    "parts/arm-right-upper-01/sidecar-v1.json": "7e60eb992fb5dfd24b6daa1332c09399cd20197741d5fdd96bc3c52e71bbac7a",
+    "parts/arm-right-upper-01/calibration-seal-receipt-v1.json": "a9547feb900a8874b85d33c5498cea8d0d03a1d354c222d6fb9b71696b00a6c5",
+    "arm-right-upper-sealed-rest-inspection-v1/inspection.json": "92b6937f76b8124b958ca2e094e4e802542e367336dc294734084e689722e9b7"
+  },
+  "remainingGate": "Seven real parts, actual toeheel roll and complete illustratedfourkeys before inbetweens/eightloop.",
+  "motionQualified": false,
+  "finalArtApproved": false,
+  "runtimeChanges": false
+}

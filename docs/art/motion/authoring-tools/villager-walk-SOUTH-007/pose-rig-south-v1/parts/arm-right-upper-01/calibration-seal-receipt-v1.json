@@ -1,0 +1,78 @@
+{
+  "schema": "south-upperarm-calibration-seal-receipt/v1",
+  "status": "SEALED_AUTHORING_CALIBRATION_ONLY",
+  "candidate": false,
+  "finishedKey": false,
+  "motionQualified": false,
+  "imageCalls": 0,
+  "runtimeChanges": false,
+  "parentReviewPath": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-upper-01/parent-calibration-review-v1.json",
+  "parentReviewSha256": "93fd995c1cd84746d710735fd92c4e76bff81d9e55b8b820c26e69e4352e5663",
+  "sidecarPath": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-upper-01/sidecar-v1.json",
+  "sidecarSha256": "7e60eb992fb5dfd24b6daa1332c09399cd20197741d5fdd96bc3c52e71bbac7a",
+  "rawSha256": "ebeace7fb22057c786b56e00d8634832b5261d905d9fa91904f57bc413e37d46",
+  "rawRgbaSha256": "f9a382adb47cb2d8a3671c772849b6181086acd56b8b1710346cce8b15fc4bcf",
+  "v4ActualInspectSidecar": {
+    "status": "PARTIAL_REST_INSPECTION_ONLY",
+    "partId": "arm_right_upper",
+    "candidate": false,
+    "outputsWritten": 0,
+    "canvas": [
+      1254,
+      1254
+    ],
+    "pivot": [
+      654,
+      1140
+    ],
+    "sourceByteSha256": "ebeace7fb22057c786b56e00d8634832b5261d905d9fa91904f57bc413e37d46",
+    "sourceRgbaSha256": "f9a382adb47cb2d8a3671c772849b6181086acd56b8b1710346cce8b15fc4bcf",
+    "calibration": {
+      "scale": 0.25167129878945776,
+      "rotationRad": -0.2052927303255352,
+      "translation": [
+        -197.39172293231655,
+        -7.226916304581876
+      ],
+      "tolerancePx": 0.01
+    },
+    "fullCharacter": false,
+    "animationKey": false,
+    "allFourPoseGeometryChecked": true,
+    "projectedMeshBounds": {
+      "F0": [
+        324.29472007391905,
+        287.37746716672245,
+        678.7160308912324,
+        594.2600645829486
+      ],
+      "F2": [
+        354.0085795364039,
+        291.10844612945357,
+        712.2275078590654,
+        462.3585994890068
+      ],
+      "F4": [
+        274.29472007391905,
+        273.50260737803046,
+        628.7160308912324,
+        658.1772683536949
+      ],
+      "F6": [
+        244.0085795364039,
+        251.07320839059503,
+        602.2275078590654,
+        643.4568738581625
+      ]
+    },
+    "sourceAlphaOutsideMesh": 0
+  },
+  "v5ActualPartialInspectionPath": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/arm-right-upper-sealed-rest-inspection-v1/inspection.json",
+  "v5ActualPartialInspectionSha256": "92b6937f76b8124b958ca2e094e4e802542e367336dc294734084e689722e9b7",
+  "v5Status": "PARTIAL_REST_INSPECTION_REQUIRES_SOURCE_REVIEW",
+  "staticLayerOrderScope": "arm behind core proposal for partial two-part diagnostics only; fullninepart/perpose order unsealed",
+  "uncertainty": "shoulder authored cloth convention30RAWpx; observed cuff-mouth boundary center35RAWpx; neither anatomicaljoint; numerical0.01px tolerance separate",
+  "publication": "Sidecar validated before atomic no-overwrite hard-link publication; no power-loss durability claim.",
+  "remainingGate": "Seven missing originals; ninepart perpose ordering; actual toe-grounded heelroll before four complete finished illustratedkey review.",
+  "tests": "V5 five temporary NON_ART tests previously PASS and independently rerun by parent; actual v4/v5 inspections PASS now."
+}

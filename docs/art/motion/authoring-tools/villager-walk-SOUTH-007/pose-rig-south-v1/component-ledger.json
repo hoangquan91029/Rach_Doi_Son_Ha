@@ -1,11 +1,11 @@
 {
   "schema": "south-persistent-component-live-ledger/v1",
-  "timestampUtc": "2026-10-08T01:44:08.410370+00:00",
-  "status": "ONE_CALIBRATED_CORE_ONE_UNSEALED_SLEEVE_PROPOSAL",
+  "timestampUtc": "2026-10-08T01:50:18.870780+00:00",
+  "status": "TWO_CALIBRATED_AUTHORING_PARTS",
   "partsGenerated": 2,
   "componentImageCalls": 2,
-  "calibratedParts": 1,
-  "selectedReadyParts": 1,
+  "calibratedParts": 2,
+  "selectedReadyParts": 2,
   "illustratedBakedKeys": 0,
   "qualifiedLoops": 0,
   "parts": {
@@ -23,12 +23,15 @@
       "raw": "parts/arm-right-upper-01/raw.png",
       "rawSha256": "ebeace7fb22057c786b56e00d8634832b5261d905d9fa91904f57bc413e37d46",
       "parentReviewSha256": "9754de8105e77d7f446e90f8508cdc6bf86a76412777c8b903ec39d9a76f2e23",
-      "status": "PASS_MATERIAL_ONLY_UNCERTAIN_FIT_ASSEMBLY_REVIEW_PENDING",
-      "calibrated": false,
-      "selectedReady": false
+      "status": "PASS_CALIBRATED_AUTHORING_COMPONENT_ONLY",
+      "calibrated": true,
+      "selectedReady": true,
+      "sidecar": "parts/arm-right-upper-01/sidecar-v1.json",
+      "sidecarSha256": "7e60eb992fb5dfd24b6daa1332c09399cd20197741d5fdd96bc3c52e71bbac7a",
+      "calibrationParentReviewSha256": "93fd995c1cd84746d710735fd92c4e76bff81d9e55b8b820c26e69e4352e5663"
     }
   },
-  "next": "Separate PROPOSAL_ONLY diagnostic using exact candidate uniform fit, intact fullalpha mesh and existing four camera poses; no fake SEALED sidecar.",
+  "next": "Review corrected lowerarmguidev2 then one finite original call. No blind remaining-part batch.",
   "motionQualified": false,
   "finalArtApproved": false
 }

@@ -1,0 +1,25 @@
+{
+  "schema": "south-partial-tooling-receipt/v1",
+  "status": "READY_FOR_PARENT_TOOL_REVIEW_ACTUAL_LIMB_PENDING",
+  "candidate": false,
+  "finishedKey": false,
+  "motionQualified": false,
+  "imageCalls": 0,
+  "runtimeChanges": false,
+  "tests": {
+    "command": "python3 -B -m unittest -v test_partial.py",
+    "passed": 5,
+    "failed": 0,
+    "fixtures": "NON_ART temporary bitmap only; deleted after tests"
+  },
+  "actualLimbSourcesInspected": 0,
+  "actualLimbCalibrationAuthored": false,
+  "preservedEngineSha256": "b5ad84368a091cf1b2643e687fe7a98b7465906a52ede606a7eb89b791d29923",
+  "parentCoreReviewSha256": "f2d304415f809c4de3ae3e00ea901a6a0cbeecb69ac70051eaf90d144e6c2bca",
+  "files": {
+    "inspect_partial.py": "113387b26342a3c1d7ccab28a7cc43039d017b8e948cf04e87ceacd109c9f830",
+    "test_partial.py": "bdedf60248f1ef8a14b122419c195814a9e5f131b74136b4918eca0bb3834567",
+    "README.md": "def2adb14a6f86d30272d64699a94dfce6f9517091bf45fd733bfbaa81360572"
+  },
+  "remainingGate": "Actual original + measured endpoint proposal + immutable calibration/semantic coverage sidecar, then parent partial rest inspection review. No whole key/loop export."
+}
