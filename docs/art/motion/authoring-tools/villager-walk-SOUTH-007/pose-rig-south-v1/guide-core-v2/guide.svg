@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1254" height="1254" viewBox="0 0 1254 1254">
+  <!-- MODEL_ONLY geometry. Simplified shape proposal, not a traced character or anatomical measurement. -->
+  <g fill="#4f88d9" fill-opacity="0.62" stroke="#154a88" stroke-width="9" stroke-linejoin="round">
+    <!-- Main head, torso, tunic, pelvis and hem coverage is unchanged from guide v1. -->
+    <path d="M 569 266 L 547 265
+      Q 503 279 462 310 Q 439 330 448 371 L 486 496
+      Q 500 522 506 543 L 454 747 Q 446 790 470 832
+      Q 529 853 626 852 Q 723 853 782 832 Q 806 790 798 747
+      L 746 543 Q 752 522 766 496 L 804 371 Q 813 330 790 310
+      Q 749 279 705 265 L 683 266 L 683 248 L 569 248 Z"/>
+    <!-- Head / neck zone remains at the same approximate extent. -->
+    <path d="M 555 194 Q 566 150 626 145 Q 686 150 697 194 L 683 266 Q 661 295 626 296 Q 591 295 569 266 Z" fill="#70a5e6" fill-opacity="0.7"/>
+    <!-- Conical nón lá: straight, splayed crown and broad curved brim replace v1's dome. -->
+    <path d="M 626 42 L 477 172 Q 626 210 775 172 Z" fill="#4f88d9" fill-opacity="0.7"/>
+    <path d="M 444 174 Q 626 220 808 174 L 792 203 Q 626 256 460 203 Z" fill="#4f88d9" fill-opacity="0.68"/>
+  </g>
+  <!-- Provisional overlap geometry only; these patches do not identify joints. -->
+  <g fill="#35c7b2" fill-opacity="0.7" stroke="#0b786d" stroke-width="5" stroke-dasharray="12 10">
+    <path d="M 450 300 Q 474 281 508 299 L 524 348 Q 500 371 470 359 Z"/>
+    <path d="M 802 300 Q 778 281 744 299 L 728 348 Q 752 371 782 359 Z"/>
+    <path d="M 500 735 Q 528 710 558 728 L 566 785 Q 536 801 506 780 Z"/>
+    <path d="M 752 728 Q 782 710 810 735 L 804 780 Q 774 801 744 785 Z"/>
+  </g>
+</svg>

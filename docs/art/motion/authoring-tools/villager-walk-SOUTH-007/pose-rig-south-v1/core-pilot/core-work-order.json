@@ -1,0 +1,112 @@
+{
+  "schema": "south-bitmap-rig-component-work-order/v2",
+  "id": "south-core-head-torso-pelvis-pilot-01",
+  "status": "PREPARED_WAITING_FOR_PARENT_GATE_AND_EXPLICIT_CALL_AUTHORIZATION",
+  "scope": "One original core_head_torso_pelvis component only. This does not open the remaining eight component calls or any animation rendering.",
+  "call_budget": {
+    "authorized_now": 0,
+    "maximum_after_parent_authorization": 1,
+    "retries": 0,
+    "new_component_images": 0
+  },
+  "required_parent_gate": [
+    "Parent reviews the exact three attached references, guide QA, prompt, and input locks.",
+    "Engineer completes and tests the v2 core-only sidecar inspector against a truthful non-art fixture; the all-nine raster baker must continue to reject incomplete parts.",
+    "Parent confirms the core output will be inspected/custodied only; no cycle, animation, runtime, or artwork approval follows automatically."
+  ],
+  "target_part": {
+    "id": "core_head_torso_pelvis",
+    "contract_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/part-contract-v2.json",
+    "ownership": "Hat, head, neck, torso/tunic, actor-LEFT asymmetric sash/knot/tail, pelvis and tunic hem in one rigid original texture. Include hidden overlap coverage at both shoulder caps and both hips. Exclude arms/hands/legs/feet/sandals.",
+    "source_art": "One original transparent RGBA bitmap, full 1254×1254 canvas, unchanged source-scale placement; no crop, trace, mirror, whole-image shift, or bbox fit.",
+    "landmarks_and_calibration": "PENDING original. Do not invent coordinates. Once output exists, inspect actual natural shoulder-cap and hip-under-hem landmarks with uncertainty; mark hidden points as authored hypotheses. Record one measured uniform raw-to-rest scale/rotation/translation. No bake until sidecar is inspected and sealed."
+  },
+  "camera_lock": {
+    "view": "South screen-down/front-facing, engine D01/world SE",
+    "projection": "fixed 2:1 dimetric, 26.565 degree elevation",
+    "canvas": [
+      1254,
+      1254
+    ],
+    "source_pivot": [
+      654,
+      1140
+    ],
+    "whole_canvas_scale": "38/1254 logical pixels",
+    "placement_rule": "Preserve full-canvas source placement. Core has no foot pixels; the pivot cannot be measured or corrected from this component."
+  },
+  "source_contact_caveat": "South identity producer estimate places the between-feet ground contact near (650,1179), about39 source pixels below locked pivot y1140. Keep immutable raw and parent pivot; core-only output cannot resolve or correct that offset.",
+  "references": {
+    "input_locks_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/core-pilot/input-locks.json",
+    "input_locks_sha256": "fc7a36d5adf343111e744a95a73a382c1015bb9600f2b59698adf515cb7d0764",
+    "prompt_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/core-pilot/prompt.txt",
+    "prompt_sha256": "6e0ef12e9952a38f18577763755c2b38554f16779a45fc0af4cb80880f9b33bb",
+    "exact_attached_reference_paths_in_order": [
+      "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/south-neutral-reference/raw.png",
+      "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/guide-core/guide.png"
+    ]
+  },
+  "post_call_custody_if_later_authorized": [
+    "Preserve exact raw output bytes, dimensions/mode and decoded-RGBA hash; never overwrite input identity or guide.",
+    "Record actual call metadata/tool ID if supplied; never invent missing provenance fields.",
+    "Create only whole-canvas 38px inspection preview and native review evidence from the immutable raw. No normalization or postprocessing.",
+    "Produce one core v2 sidecar from actual original inspection only, with truthful landmarks/uncertainties, mesh and one-time uniform calibration; no coordinates before output.",
+    "Stop for parent inspection. Do not open other eight parts, render keys, bake frames, integrate, or claim candidate acceptance."
+  ],
+  "tooling_gate": {
+    "status": "CORE_ONLY_INSPECTOR_PENDING_ENGINEER",
+    "basis": "Current nine-part preflight passes seven non-art custody/numerical tests but refuses incomplete rigs; the raster baker is unimplemented. This core-only pilot does not authorize bypassing those refusals.",
+    "required_before_call": [
+      "Engineer provides a core-only sidecar inspector under the v2 tool lane.",
+      "Non-art tests prove that a well-formed core sidecar can be inspected, missing/incorrect raw custody is rejected, missing natural landmarks/calibration are refused, and no image/frame output or runtime change is written.",
+      "Parent reviews the actual clean guide and exact input order.",
+      "Parent separately authorizes exactly one core original call."
+    ],
+    "expected_core_sidecar_schema": "south-bitmap-rig-sidecar/v2",
+    "expected_fields_after_original_exists": {
+      "partId": "core_head_torso_pelvis",
+      "status": "SEALED_ORIGINAL_CALIBRATION",
+      "raw": [
+        "path",
+        "sha256",
+        "rgbaSha256",
+        "width=1254",
+        "height=1254"
+      ],
+      "uniformRawToRest": [
+        "scale",
+        "rotationRad",
+        "translation"
+      ],
+      "landmarks": [
+        "actor_left_shoulder_cap",
+        "actor_right_shoulder_cap",
+        "actor_left_hip_under_hem",
+        "actor_right_hip_under_hem"
+      ],
+      "landmark_fields": [
+        "xy",
+        "method=observed_original|authored_hidden_hypothesis",
+        "uncertaintyPx",
+        "truthful nonempty evidence"
+      ],
+      "mesh": [
+        "indexed rawXY vertices",
+        "binding from core localXY to fixed source-rest screenXY",
+        "triangles region=core"
+      ]
+    },
+    "coordinate_rule": "No landmark coordinates, mesh vertices, or calibrated transform are written before actual core art exists and has been inspected."
+  },
+  "guide_review": {
+    "clean_guide_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/guide-core/guide.png",
+    "clean_guide_sha256": "df5c4f04fc4279f5565978afbea05ce9e9a09de4060b4c4f3875bca8ccecbcf2",
+    "qa_only_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/guide-core/guide-qa.png",
+    "qa_only_sha256": "a1a226598e6e65e17772d9448f05289d5a9aea67158480338586fa066d4a2a6a",
+    "status": "SELF_INSPECTED_PARENT_REVIEW_REQUIRED",
+    "authority": "Approximate model geometry and provisional overlap zones only; no anatomical landmark or calibration evidence.",
+    "provenance_note_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/guide-core/guide-note.json",
+    "provenance_note_sha256": "283c842296fe7ca0b1fb28ae88b2edcee4aabfbf391fc38c95380fcab1c212be"
+  }
+}

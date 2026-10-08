@@ -1,0 +1,40 @@
+{
+  "schema": "model-only-core-guide-note/v2",
+  "status": "MODEL_ONLY_GEOMETRY_PROPOSAL_NOT_ANATOMY_OR_ART",
+  "canvas": [1254, 1254],
+  "cleanGuide": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/guide-core-v2/guide.png",
+    "sha256": "2dc7ff117ff5e292ff5a97ea8ee41f5d17d9d16718002021a8c0a77fceca9e23"
+  },
+  "qaGuide": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/guide-core-v2/guide-qa.png",
+    "sha256": "08d3c7ae044f63995cd3e1c633d263205b847b0efdb82aab051edf002dab9f16",
+    "notAnImageGenAttachment": true
+  },
+  "changesFromV1": {
+    "hat": "Replaced rounded dome geometry with a clearly conical, triangular crown and broad splayed brim inspired by the canonical South nón lá silhouette; no sprite pixels were traced.",
+    "headTorsoHem": "Unchanged approximate geometry and placement from v1.",
+    "greenLowerPatches": "Relabeled PROVISIONAL HEM/THIGH OVERLAP only; they do not identify or locate hip joints."
+  },
+  "hipPivotInstruction": "Hidden hip pivots are authored later from inspected original anatomy with uncertainty disclosure. Never infer a hip joint, pivot, or natural source landmark from the green overlap patches.",
+  "inspectionBasis": [
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/south-neutral-reference/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "role": "visual identity/view context inspected only"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+      "role": "canonical appearance context inspected only; D00 orientation not copied"
+    }
+  ],
+  "geometryMeaning": "Approximate central core silhouette and provisional overlap regions only; not source-image trace, natural landmark measurement, attachment-coordinate source, anatomy target, or pixel-quality target.",
+  "creation": {
+    "method": "Hand-authored geometric SVG rendered to transparent clean PNG and opaque QA PNG.",
+    "imageCalls": 0,
+    "sourceCharacterPixelsModified": false,
+    "runtimeChanges": false,
+    "parentReviewRequired": true
+  }
+}

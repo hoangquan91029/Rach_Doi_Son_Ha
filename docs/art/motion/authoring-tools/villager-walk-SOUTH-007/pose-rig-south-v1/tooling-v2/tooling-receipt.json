@@ -1,0 +1,56 @@
+{
+  "schema": "south-rig-tooling-checkpoint/v2",
+  "status": "PASS_NON_ART_TECHNICAL_RASTER_TESTS_REQUIRES_ACTUAL_SOURCE_REVIEW",
+  "timestampUtc": "2026-10-08T00:48:06.202890+00:00",
+  "candidate": false,
+  "actualOriginalParts": 0,
+  "actualBakedIllustratedKeys": 0,
+  "qualifiedLoops": 0,
+  "imageCalls": 0,
+  "runtimeChanges": 0,
+  "priorSealedToolingPreserved": {
+    "README.md": true,
+    "rig_preflight.py": true,
+    "test_preflight.py": true
+  },
+  "tests": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest -v test_bake_keys.py",
+    "passed": 10,
+    "durationSeconds": 4.344,
+    "temporaryFixtureWholePngs": 4,
+    "fixturesDeleted": true,
+    "qualification": false,
+    "rasterWorldCentroidToleranceSourcePx": 1.5
+  },
+  "actualMissingInputCheck": {
+    "command": "python3 bake_keys.py bake pending-originals.json /tmp/South-007-actual-bake-must-remain-absent",
+    "exitCode": 2,
+    "reason": "missing or unknown original parts; all nine required",
+    "outputExists": false
+  },
+  "interface": [
+    "inspect-sidecar emits PARTIAL_REST_INSPECTION_ONLY",
+    "four-key full baker requires nine immutable originals and reviewed calibrations",
+    "atomic Linux no-overwrite publication",
+    "source/output byte and decodedRGBA custody",
+    "shared indexed ankle seam with separately rigid foot region"
+  ],
+  "remaining": [
+    "Actual one-core original and natural sidecar inspection after separate parent authorization",
+    "Actual remaining original parts and measured immutable calibration",
+    "Four complete illustrated key audit of identity/anatomy/overlap/contact/seam/38px quality",
+    "Full8 intermediate frames/cycle review remain closed"
+  ],
+  "limits": [
+    "Numeric fixtures never qualify motion or illustration",
+    "Four authored keys have flat independent foot orientation; full8 heel-push must be separately authored and reviewed",
+    "Current model core attachment/foot geometry must be revised once if real originals cannot fit naturally; no per-frame fit",
+    "Mesh has an articulated ankle transition; aesthetic painted seam quality is unproven until actual parts"
+  ],
+  "files": {
+    "README.md": "f63789b9af2740133af73b4f0d47fe01dde01c297b0a2f8e0d64c9acab96a2e1",
+    "bake_keys.py": "a76d8659befa393657133c49cc7be46c7cde33949b433ba0e650632711a3e8e4",
+    "pending-originals.json": "b4fd8fcf68e9ebd69a53078bbd62d73bc24f9e9f7059e7eabfb95d0d031bc7de",
+    "test_bake_keys.py": "708c5a52918f4520dabe9b477882b8b4d3083fda4ddf4f6425a0834fb1c2c39e"
+  }
+}

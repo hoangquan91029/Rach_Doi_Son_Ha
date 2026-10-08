@@ -1,0 +1,45 @@
+{
+  "schema": "model-only-core-guide-note/v1",
+  "status": "MODEL_ONLY_GEOMETRY_PROPOSAL_NOT_ANATOMY_OR_ART",
+  "canvas": [1254, 1254],
+  "cleanGuide": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/guide-core/guide.png",
+    "sha256": "df5c4f04fc4279f5565978afbea05ce9e9a09de4060b4c4f3875bca8ccecbcf2"
+  },
+  "qaGuide": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/guide-core/guide-qa.png",
+    "sha256": "a1a226598e6e65e17772d9448f05289d5a9aea67158480338586fa066d4a2a6a",
+    "notAnImageGenAttachment": true
+  },
+  "inspectionBasis": [
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/south-neutral-reference/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "role": "visual identity/view context inspected only"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+      "role": "canonical appearance context inspected only; D00 orientation not copied"
+    }
+  ],
+  "geometry": {
+    "meaning": "Approximate central core coverage and four provisional hidden-overlap patches only.",
+    "notMeaning": [
+      "not a source-image trace",
+      "not a natural landmark measurement",
+      "not an attachment coordinate source",
+      "not an anatomy or pixel-quality target",
+      "not a full-character pose guide"
+    ],
+    "partIncluded": "hat, head, neck, torso/tunic, asymmetric sash, pelvis and hem",
+    "partExcluded": "arms, hands, legs, feet and sandals",
+    "overlapZones": "Provisional geometry hints for shoulder caps and hip-under-hem overlap; all actual endpoints remain pending component inspection."
+  },
+  "creation": {
+    "method": "Hand-authored simple geometric SVG rendered to transparent PNG and opaque QA PNG.",
+    "imageCalls": 0,
+    "runtimeChanges": false,
+    "parentReviewRequired": true
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "timestamp": "2026-10-08T00:53:06.994Z",
+  "url": "http://127.0.0.1:3000",
+  "browser": "151.0.7922.34",
+  "wallMs": 219402,
+  "errors": [],
+  "knownLimitations": [
+    "Same host two Chromium headless online peers only; no external physical device or WAN",
+    "World point within canvas counts, not independently distinguishable silhouettes: normal PNG shows heavy overlapping groups at ford",
+    "Repeated ordinary minimap center UI actions every ~600ms after rally during capture/combat; active run preserved",
+    "Distinct observed maxima can differ; density-qualified subset requires simultaneous >=40 viewport military and >=1 attacking in same window",
+    "Candidate14 development artwork; no final art or dense/max-load acceptance"
+  ],
+  "build": [
+    {
+      "player": 0,
+      "url": "http://127.0.0.1:3000/assets/index-ClW3IlNb.js",
+      "bytes": 136130,
+      "sha256": "ca8e6428603c0033ccd9926fdb69daa5d78cee28fef4259607946530fe02e08b"
+    },
+    {
+      "player": 1,
+      "url": "http://127.0.0.1:3000/assets/index-ClW3IlNb.js",
+      "bytes": 136130,
+      "sha256": "ca8e6428603c0033ccd9926fdb69daa5d78cee28fef4259607946530fe02e08b"
+    }
+  ],
+  "peers": [
+    {
+      "player": 0,
+      "all": {
+        "windows": 217,
+        "ticks": [
+          28,
+          4344
+        ],
+        "raf": {
+          "count": 12104,
+          "p50": 16.69999999999709,
+          "p95": 16.70000000001164
+        },
+        "frameCost": {
+          "count": 217,
+          "p50": 4.5999999940395355,
+          "p95": 6.300000011920929
+        },
+        "snapshotClone": {
+          "count": 217,
+          "p50": 0.5,
+          "p95": 0.6000000238418579
+        },
+        "peaks": {
+          "viewportMilitary": 45,
+          "viewportAttackingMilitary": 42
+        }
+      },
+      "combat": {
+        "windows": 33,
+        "ticks": [
+          3684,
+          4344
+        ],
+        "raf": {
+          "count": 1230,
+          "p50": 16.699999999982538,
+          "p95": 16.800000000017462
+        },
+        "frameCost": {
+          "count": 33,
+          "p50": 5.5999999940395355,
+          "p95": 5.800000011920929
+        },
+        "snapshotClone": {
+          "count": 33,
+          "p50": 0.5,
+          "p95": 0.699999988079071
+        },
+        "peaks": {
+          "viewportMilitary": 45,
+          "viewportAttackingMilitary": 42
+        }
+      },
+      "denseCombat": {
+        "windows": 5,
+        "ticks": [
+          3684,
+          3784
+        ],
+        "raf": {
+          "count": 192,
+          "p50": 16.699999999982538,
+          "p95": 33.20000000001164
+        },
+        "frameCost": {
+          "count": 5,
+          "p50": 5.800000011920929,
+          "p95": 5.800000011920929
+        },
+        "snapshotClone": {
+          "count": 5,
+          "p50": 0.5,
+          "p95": 0.5999999940395355
+        },
+        "peaks": {
+          "viewportMilitary": 45,
+          "viewportAttackingMilitary": 42
+        }
+      }
+    },
+    {
+      "player": 1,
+      "all": {
+        "windows": 216,
+        "ticks": [
+          28,
+          4320
+        ],
+        "raf": {
+          "count": 12801,
+          "p50": 16.69999999999709,
+          "p95": 16.799999999995634
+        },
+        "frameCost": {
+          "count": 216,
+          "p50": 4.5999999940395355,
+          "p95": 6.5999999940395355
+        },
+        "snapshotClone": {
+          "count": 216,
+          "p50": 0.5,
+          "p95": 0.5999999940395355
+        },
+        "peaks": {
+          "viewportMilitary": 45,
+          "viewportAttackingMilitary": 42
+        }
+      },
+      "combat": {
+        "windows": 32,
+        "ticks": [
+          3684,
+          4320
+        ],
+        "raf": {
+          "count": 1807,
+          "p50": 16.699999999982538,
+          "p95": 33.29999999998836
+        },
+        "frameCost": {
+          "count": 32,
+          "p50": 6.199999988079071,
+          "p95": 6.5999999940395355
+        },
+        "snapshotClone": {
+          "count": 32,
+          "p50": 0.5,
+          "p95": 0.5999999940395355
+        },
+        "peaks": {
+          "viewportMilitary": 45,
+          "viewportAttackingMilitary": 42
+        }
+      },
+      "denseCombat": {
+        "windows": 5,
+        "ticks": [
+          3684,
+          3784
+        ],
+        "raf": {
+          "count": 271,
+          "p50": 16.699999999982538,
+          "p95": 33.30000000001746
+        },
+        "frameCost": {
+          "count": 5,
+          "p50": 6.5,
+          "p95": 6.600000023841858
+        },
+        "snapshotClone": {
+          "count": 5,
+          "p50": 0.5999999940395355,
+          "p95": 0.5999999940395355
+        },
+        "peaks": {
+          "viewportMilitary": 45,
+          "viewportAttackingMilitary": 42
+        }
+      }
+    }
+  ],
+  "capture": {
+    "tick": 3692,
+    "camera": {
+      "x": 32,
+      "y": 24,
+      "zoom": 1.08
+    },
+    "viewportMilitary": 45,
+    "viewportAttackingMilitary": 5
+  },
+  "denseBattleAccepted": false
+}

@@ -1,0 +1,39 @@
+{
+  "schema": "south-core-pilot-input-lock/v1",
+  "status": "PREPARED_NOT_AUTHORIZED",
+  "order": [
+    {
+      "index": 1,
+      "role": "sealed South identity and neutral rest appearance/view authority",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/south-neutral-reference/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "rgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6",
+      "dimensions": [1254, 1254],
+      "mode": "RGBA"
+    },
+    {
+      "index": 2,
+      "role": "canonical D00 identity/material appearance only; ESE direction and pose explicitly excluded",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+      "rgbaSha256": "c960d206222a191b903a8cc1a679e82bdce8d8c51df4010a935f444b3cacdb9c",
+      "dimensions": [1254, 1254],
+      "mode": "RGBA"
+    },
+    {
+      "index": 3,
+      "role": "MODEL_ONLY approximate core silhouette/attachment geometry; not art or landmark evidence",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/guide-core/guide.png",
+      "sha256": "df5c4f04fc4279f5565978afbea05ce9e9a09de4060b4c4f3875bca8ccecbcf2",
+      "rgbaSha256": "2ce45ff57207e6f7e322177600785c3894eca76ad0ec4229cf905bc320dbb748",
+      "dimensions": [1254, 1254],
+      "mode": "RGBA"
+    }
+  ],
+  "not_attached": [
+    "guide-core/guide-qa.png (inspection only)",
+    "all held or rejected animation frames",
+    "all D00-006 part trials and rig components",
+    "other directional turnarounds"
+  ]
+}

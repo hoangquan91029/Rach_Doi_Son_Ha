@@ -1,0 +1,44 @@
+{
+  "schema": "south-core-parent-finite-call-authorization/v1",
+  "status": "ONE_CORE_ORIGINAL_CALL_OPEN",
+  "timestampUtc": "2026-10-08T00:58:02.996321+00:00",
+  "reviewer": "root parent",
+  "workOrder": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/core-pilot-v2/core-work-order.json",
+    "sha256": "9214b8ddb7feed120efd579242948005808aaee28b2081f1ab332cc955d07a32"
+  },
+  "guideReviewSha256": "0df9f46a4a291b03c14ba85dd7f69a9b74fe1d19a32498abc4be4f141808d261",
+  "toolReviewSha256": "22898a991fba39f8516cbda7c9ba32c675681b8ef67d17ba92d08aa79984dc59",
+  "toolOverride": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/tooling-v3/bake_keys.py",
+    "sha256": "004109df5ec2d7ccc78ad919438e1bb4ebf87515cfc077f66ff57e5b27787ce5",
+    "meaning": "Use corrected v3 inspector; preserved draft mentions v2. Input/output schema remains v2."
+  },
+  "exactReferencePathsInOrder": [
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/south-neutral-reference/raw.png",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/guide-core-v2/guide.png"
+  ],
+  "referenceHashes": [
+    "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+    "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+    "2dc7ff117ff5e292ff5a97ea8ee41f5d17d9d16718002021a8c0a77fceca9e23"
+  ],
+  "promptSha256": "0056deacd872728fab788840d438ef81bac8ac12f0f1ee82eb57b6c5ef6c8481",
+  "outputDirectory": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/core-head-torso-pelvis-01",
+  "budget": {
+    "originalCoreCalls": 1,
+    "retries": 0,
+    "otherParts": 0,
+    "wholeBodyCalls": 0
+  },
+  "requirements": [
+    "builtin ImageGen only; readskill and inspect actual3references then attach exact3paths",
+    "transparent1254RGBA immutable raw/request/custody/nativewhole38 preserved",
+    "measure observed source shoulders and authoredhiddenhip hypotheses only after actual original exists",
+    "one uniform calibration; refuse natural mismatch without distortion",
+    "run v3 core inspector and stop for parent source review; missing natural source calibration is pending, not forced",
+    "no otherpart/key/inbetween/atlas/runtime/finalapproval"
+  ],
+  "pivotCaveat": "Lowest toe estimate is not ground pivot; no whole-image correction from core without feet."
+}

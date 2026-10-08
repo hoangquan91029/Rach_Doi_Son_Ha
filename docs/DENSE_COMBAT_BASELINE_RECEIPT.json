@@ -1,0 +1,47 @@
+{
+  "schema": "dense-online-development-baseline/v1",
+  "status": "OBSERVED_PROJECTED_DENSITY_AND_COMBAT_NOT_VISUAL_ACCEPTANCE",
+  "timestampUtc": "2026-10-08T00:55:25.180455+00:00",
+  "reviewer": "root parent",
+  "fullReceipt": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/artifacts/performance/dense-online-candidate14-20261008/receipt.json",
+    "sha256": "107faa3cad4dea66c585efba0e98cface9e7da34a29dfa98bb1c44833a72c786"
+  },
+  "summary": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/checkpoint/dense-online-candidate14-20261008/summary.json",
+    "sha256": "dc509881346e15d1b4bcc035f4bd8239375de3f0e8bc3d052ba07996f67a4e9f"
+  },
+  "capture": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/checkpoint/dense-online-candidate14-20261008/dense-normal-zoom.png",
+    "sha256": "3a2f14914da86423ebbe66882674e564a94b44137a47217c26a9b3b14ebd719e",
+    "parentViewed": true
+  },
+  "buildSha256": "ca8e6428603c0033ccd9926fdb69daa5d78cee28fef4259607946530fe02e08b",
+  "runSeconds": 219.402,
+  "pageErrors": 0,
+  "peaks": {
+    "projectedViewportMilitary": 45,
+    "attackingMilitary": 42
+  },
+  "denseWindowsPerPeer": 5,
+  "denseRafP50P95Ms": {
+    "host": [
+      16.7,
+      33.2
+    ],
+    "peer": [
+      16.7,
+      33.3
+    ]
+  },
+  "limitations": [
+    "Two local same-host Chromium headless peers; no publicTLS or physical external-device claim.",
+    "Point-in-canvas counts include substantial overlapping soldiers, about12 distinguishable silhouettes in parent-viewed normal capture.",
+    "Five dense combat windows per peer is short; not long-match/max-load certification.",
+    "Run included repeated minimap recenter; preserved harness is separate from later QA-only sampling fix.",
+    "Candidate14 artwork remains unapproved."
+  ],
+  "findings": "Ordinary training and combat exercise45 projected military without captured errors; crowd stacking prevents readable dense visual acceptance. Read-only diagnosis pending.",
+  "denseBattleAccepted": false,
+  "finalArtApproved": false
+}
