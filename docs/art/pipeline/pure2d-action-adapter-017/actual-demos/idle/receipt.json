@@ -1,0 +1,146 @@
+{
+  "status": "CANDIDATE_TECHNICAL_CUSTODY_ONLY",
+  "jobSha256": "0302bdf48f3fc84e968847d269d2f81b07827a3fbfd6be9f710b16920168a729",
+  "contractValidatorSha256": "a6661ea6c5f3cd3af86d0bf58df971bab6b0632d06e7821889cad0ecc2950646",
+  "packagingValidation": {
+    "manifest": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-action-adapter-017/actual-demos/idle/manifest.json",
+    "packaging": "PASS",
+    "visualApprovalGranted": false,
+    "manifestStatus": "CANDIDATE",
+    "assets": [
+      {
+        "id": "villager-idle-south-017",
+        "packaging": "PASS",
+        "visualReview": "CANDIDATE",
+        "candidate": true,
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+          "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+          "rgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6",
+          "dimensions": [
+            1254,
+            1254
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            69,
+            21,
+            1218,
+            1198
+          ],
+          "warnings": []
+        },
+        "runtime": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-action-adapter-017/actual-demos/idle/atlas.png",
+          "sha256": "17962707943bb616362271cdde1abbfc17a05b0bad950dc714dd3586954b95ab",
+          "rgbaSha256": "701143131c71470bf01612220cb870f0f47abda08a1089e9407c4505f1ac8721",
+          "dimensions": [
+            128,
+            128
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            38,
+            3,
+            90,
+            123
+          ],
+          "warnings": []
+        },
+        "frames": [],
+        "fixedPivot": {
+          "x": 654,
+          "y": 1140,
+          "space": "source"
+        },
+        "logicalRender": {
+          "width": 89,
+          "height": 89
+        },
+        "warnings": []
+      },
+      {
+        "id": "unit-contact-shadow",
+        "packaging": "PASS",
+        "visualReview": "CANDIDATE",
+        "candidate": true,
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/public/assets/art-v1/effects/unit-contact-shadow.png",
+          "sha256": "1572b3fd6dd84d36a423adbdbfca1975a071b07bd0c4043edd55688db0ed99bd",
+          "rgbaSha256": "242424c39edc2976292046eb766fcad9360a922b9c2b2f43d2ead0f5d6455d19",
+          "dimensions": [
+            1254,
+            1254
+          ],
+          "alphaExtrema": [
+            0,
+            168
+          ],
+          "bbox": [
+            103,
+            53,
+            1196,
+            1196
+          ],
+          "warnings": []
+        },
+        "runtime": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-action-adapter-017/actual-demos/idle/unit-contact-shadow.webp",
+          "sha256": "274b81f26e3869e158b0ab1e5093cd8a899d5255f0239c25ec7ab07ec314a7ff",
+          "rgbaSha256": "d581fe0139344e7a72697d43abcfe00b332f5eea107bb9a4ed7acebfb79ab647",
+          "dimensions": [
+            256,
+            256
+          ],
+          "alphaExtrema": [
+            0,
+            167
+          ],
+          "bbox": [
+            66,
+            115,
+            200,
+            150
+          ],
+          "warnings": []
+        },
+        "frames": [],
+        "fixedPivot": {
+          "x": 658,
+          "y": 648,
+          "space": "source"
+        },
+        "logicalRender": {
+          "width": 42,
+          "height": 42
+        },
+        "warnings": []
+      }
+    ],
+    "errors": []
+  },
+  "runtimePivot": [
+    66.75598086124401,
+    116.36363636363636
+  ],
+  "uniformScale": 0.10207336523125997,
+  "gutter": 0,
+  "gutterPolicy": "transparent zero padding only; no extrusion/trim",
+  "cycleDurationMs": 1000,
+  "frames": 1,
+  "outputs": {
+    "manifest.json": "d8f4f841dfb888215952b0fe4f550a29f10831ff0f591320853bd77441920c55",
+    "atlas.png": "17962707943bb616362271cdde1abbfc17a05b0bad950dc714dd3586954b95ab",
+    "preview.json": "4c646479a5ad283cbe691b27869672e2d3e572b4f61919d096f6fa9854e31ab2",
+    "preview.html": "e71f0cebebf82f7ffcb61ac1579665f227dbb46cac53537873ea5953ac983e62",
+    "unit-contact-shadow.webp": "274b81f26e3869e158b0ab1e5093cd8a899d5255f0239c25ec7ab07ec314a7ff",
+    "contact-sheet.png": "c0c03eff5fd46ef53cad87106af82b80447e0b85e9eb0a6b1bf5371909ec4985"
+  },
+  "limits": "Technical packaging only. Preview is actual declared-frame local playback; no travel/foot-lock/cadence/identity/owner/runtime approval."
+}

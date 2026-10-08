@@ -1,0 +1,13 @@
+# Whole2D action adapter v3
+
+Run `python3 export-v3.py JOB.json NEW_OUTPUT`. Additive tooling only; frozen009/014/016 and client/public runtime remain unchanged. Python/Pillow and the existing read-only repository validator are required.
+
+Same whole-canvas job contract as009v2: explicit id/family/direction, sourceCanvas/runtimeCell/renderSize/sharedpivot, camera metadata, wholeCanvasTransform `UNIFORM_LANCZOS_NO_CROP_SHIFT_FIT`, sourceMethod `FINISHED_WHOLE_2D_FRAMES`, transparent RGBA hash-pinned source frames, selectionReceipt byte pins, durations/events and honest baked or existing authored separate-shadow dependency. Add an explicit state string (idle/walk/attack/hit/death/gather/chop/mine/carry/build/repair/reload etc) and boolean loop; death must be false. Accepts1..256 distinct ordered frames F0..Fn with positive durations, existing uppercase event markers and exact source/status receipts. Generic status `SELECTED_FRAME_CANDIDATE` supports arbitrary actions; old key/in-between statuses remain accepted only for eight-frame walk with their original phase roles. Held/rejected/unselected/missing frames and duplicate decoded source frames are rejected.
+
+No per-frame fit/crop/shift/mirror/parts, anisotropic resizing or upscaling. Automatic exact-cell rectangles and transparent gutters follow the existing validator. Single-frame output requires columns1/gutter0 and declares supported copy/resize derivation; multiframe declares atlas. Optional positive walk-only `locomotion.distancePerCycle` is copied to the candidate asset, not a foot-lock claim. Shadow reuse remains the single known authored candidate unit-contact-shadow dependency from009v2; original source reference and runtime bytes retained unchanged.
+
+Outputs candidate manifest/atlas/contact-sheet/receipt plus generic preview. Preview respects declared loop, holds nonloop terminal frame, and has pause/replay. It is technical playback only; arbitrary state names do not prove actual game action mapping or approval.
+
+`actual-demos/idle`:1 actual canonicalSouth frame,1254→128, render89, pivot6541140. `actual-demos/walk`:8 actual selected correctedwalk014 frames, unchanged source bytes and timing, same family layout and existing authored shadow. Jobs and selection receipt are retained here. No real walk relabeled as death; no image calls/source edits. Root owns actual browser checks.
+
+`python3 test-v3.py`: one bounded test group passed (3-frame nonloop, singleidle, malformed loop/death/custody/event/pivot/layout/held rejection). Clearly NON_ART_TEST_ONLY fixtures are temporary and deleted; they grant no motion approval. Basic packaging validation passes both actual demos. No framework, banks, trims, LOD or roster batch.

@@ -1,0 +1,641 @@
+{
+  "status": "READY_ACTUAL_DEMOS_COMPILED_BROWSER_PENDING",
+  "profile": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low"
+  },
+  "imageCalls": 0,
+  "sourceArtEdits": 0,
+  "actualCounts": {
+    "idle": 1,
+    "walk": 8
+  },
+  "tests": "One finite group PASS:3nonloop/1idle + invaliddeclarations; temporaryNON_ARTfixturesdeleted",
+  "actualDemos": {
+    "idle": {
+      "status": "CANDIDATE_TECHNICAL_CUSTODY_ONLY",
+      "jobSha256": "0302bdf48f3fc84e968847d269d2f81b07827a3fbfd6be9f710b16920168a729",
+      "contractValidatorSha256": "a6661ea6c5f3cd3af86d0bf58df971bab6b0632d06e7821889cad0ecc2950646",
+      "packagingValidation": {
+        "manifest": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-action-adapter-017/actual-demos/idle/manifest.json",
+        "packaging": "PASS",
+        "visualApprovalGranted": false,
+        "manifestStatus": "CANDIDATE",
+        "assets": [
+          {
+            "id": "villager-idle-south-017",
+            "packaging": "PASS",
+            "visualReview": "CANDIDATE",
+            "candidate": true,
+            "source": {
+              "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+              "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+              "rgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6",
+              "dimensions": [
+                1254,
+                1254
+              ],
+              "alphaExtrema": [
+                0,
+                255
+              ],
+              "bbox": [
+                69,
+                21,
+                1218,
+                1198
+              ],
+              "warnings": []
+            },
+            "runtime": {
+              "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-action-adapter-017/actual-demos/idle/atlas.png",
+              "sha256": "17962707943bb616362271cdde1abbfc17a05b0bad950dc714dd3586954b95ab",
+              "rgbaSha256": "701143131c71470bf01612220cb870f0f47abda08a1089e9407c4505f1ac8721",
+              "dimensions": [
+                128,
+                128
+              ],
+              "alphaExtrema": [
+                0,
+                255
+              ],
+              "bbox": [
+                38,
+                3,
+                90,
+                123
+              ],
+              "warnings": []
+            },
+            "frames": [],
+            "fixedPivot": {
+              "x": 654,
+              "y": 1140,
+              "space": "source"
+            },
+            "logicalRender": {
+              "width": 89,
+              "height": 89
+            },
+            "warnings": []
+          },
+          {
+            "id": "unit-contact-shadow",
+            "packaging": "PASS",
+            "visualReview": "CANDIDATE",
+            "candidate": true,
+            "source": {
+              "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/public/assets/art-v1/effects/unit-contact-shadow.png",
+              "sha256": "1572b3fd6dd84d36a423adbdbfca1975a071b07bd0c4043edd55688db0ed99bd",
+              "rgbaSha256": "242424c39edc2976292046eb766fcad9360a922b9c2b2f43d2ead0f5d6455d19",
+              "dimensions": [
+                1254,
+                1254
+              ],
+              "alphaExtrema": [
+                0,
+                168
+              ],
+              "bbox": [
+                103,
+                53,
+                1196,
+                1196
+              ],
+              "warnings": []
+            },
+            "runtime": {
+              "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-action-adapter-017/actual-demos/idle/unit-contact-shadow.webp",
+              "sha256": "274b81f26e3869e158b0ab1e5093cd8a899d5255f0239c25ec7ab07ec314a7ff",
+              "rgbaSha256": "d581fe0139344e7a72697d43abcfe00b332f5eea107bb9a4ed7acebfb79ab647",
+              "dimensions": [
+                256,
+                256
+              ],
+              "alphaExtrema": [
+                0,
+                167
+              ],
+              "bbox": [
+                66,
+                115,
+                200,
+                150
+              ],
+              "warnings": []
+            },
+            "frames": [],
+            "fixedPivot": {
+              "x": 658,
+              "y": 648,
+              "space": "source"
+            },
+            "logicalRender": {
+              "width": 42,
+              "height": 42
+            },
+            "warnings": []
+          }
+        ],
+        "errors": []
+      },
+      "runtimePivot": [
+        66.75598086124401,
+        116.36363636363636
+      ],
+      "uniformScale": 0.10207336523125997,
+      "gutter": 0,
+      "gutterPolicy": "transparent zero padding only; no extrusion/trim",
+      "cycleDurationMs": 1000,
+      "frames": 1,
+      "outputs": {
+        "manifest.json": "d8f4f841dfb888215952b0fe4f550a29f10831ff0f591320853bd77441920c55",
+        "atlas.png": "17962707943bb616362271cdde1abbfc17a05b0bad950dc714dd3586954b95ab",
+        "preview.json": "4c646479a5ad283cbe691b27869672e2d3e572b4f61919d096f6fa9854e31ab2",
+        "preview.html": "e71f0cebebf82f7ffcb61ac1579665f227dbb46cac53537873ea5953ac983e62",
+        "unit-contact-shadow.webp": "274b81f26e3869e158b0ab1e5093cd8a899d5255f0239c25ec7ab07ec314a7ff",
+        "contact-sheet.png": "c0c03eff5fd46ef53cad87106af82b80447e0b85e9eb0a6b1bf5371909ec4985"
+      },
+      "limits": "Technical packaging only. Preview is actual declared-frame local playback; no travel/foot-lock/cadence/identity/owner/runtime approval."
+    },
+    "walk": {
+      "status": "CANDIDATE_TECHNICAL_CUSTODY_ONLY",
+      "jobSha256": "57aecc8582b1688743f01e89af2d3a7c6649b0d455bd40790d235c9dfc8645cd",
+      "contractValidatorSha256": "a6661ea6c5f3cd3af86d0bf58df971bab6b0632d06e7821889cad0ecc2950646",
+      "packagingValidation": {
+        "manifest": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-action-adapter-017/actual-demos/walk/manifest.json",
+        "packaging": "PASS",
+        "visualApprovalGranted": false,
+        "manifestStatus": "CANDIDATE",
+        "assets": [
+          {
+            "id": "villager-walk-south-014",
+            "packaging": "PASS",
+            "visualReview": "CANDIDATE",
+            "candidate": true,
+            "source": {
+              "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/authoring-tools/villager-walk-SOUTH-007/walk/keys/F00-left-contact-01/raw.png",
+              "sha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001",
+              "rgbaSha256": "07bc362e869f40e8a3d5ba0b6fabdd7845f6132c0aa4656a17f762ee46609410",
+              "dimensions": [
+                1254,
+                1254
+              ],
+              "alphaExtrema": [
+                0,
+                255
+              ],
+              "bbox": [
+                55,
+                42,
+                1192,
+                1230
+              ],
+              "warnings": []
+            },
+            "runtime": {
+              "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-action-adapter-017/actual-demos/walk/atlas.png",
+              "sha256": "b2bdd86bd02f967bde9b070e5952e97dae257706b5d52730b787e32e9580fc13",
+              "rgbaSha256": "44c8454d0663c6c9823138633596a46af50efe5b42530f2ef1ab210d2c6790eb",
+              "dimensions": [
+                528,
+                264
+              ],
+              "alphaExtrema": [
+                0,
+                255
+              ],
+              "bbox": [
+                38,
+                4,
+                522,
+                260
+              ],
+              "warnings": []
+            },
+            "frames": [
+              {
+                "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/authoring-tools/villager-walk-SOUTH-007/walk/keys/F00-left-contact-01/raw.png",
+                "sha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001",
+                "rgbaSha256": "07bc362e869f40e8a3d5ba0b6fabdd7845f6132c0aa4656a17f762ee46609410",
+                "dimensions": [
+                  1254,
+                  1254
+                ],
+                "alphaExtrema": [
+                  0,
+                  255
+                ],
+                "bbox": [
+                  55,
+                  42,
+                  1192,
+                  1230
+                ],
+                "warnings": []
+              },
+              {
+                "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-011/F1-inbetween-01/raw.png",
+                "sha256": "1306a28e6424d6f9c1d547ee3c68bff22a93e544bd9264117514b3cc10b96356",
+                "rgbaSha256": "623ec4c6991fe775a328a7e90e5ada0ddaa9c7c6007c3627191a98d2afa7a6b8",
+                "dimensions": [
+                  1254,
+                  1254
+                ],
+                "alphaExtrema": [
+                  0,
+                  255
+                ],
+                "bbox": [
+                  0,
+                  37,
+                  1240,
+                  1243
+                ],
+                "warnings": [
+                  {
+                    "status": "CANDIDATE_WARNING",
+                    "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+                    "borderMax": 1,
+                    "threshold16BBox": [
+                      377,
+                      49,
+                      874,
+                      1206
+                    ]
+                  }
+                ]
+              },
+              {
+                "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-010/F2-right-passing-01/raw.png",
+                "sha256": "bd2679353741d51575a99ccd0ded835281d0688abb1018146ed60d3077cc2b1c",
+                "rgbaSha256": "1a9f899a98ff1daea6c4e8a32ae9a507b8098a5e65ea9541c1757f5432e3208c",
+                "dimensions": [
+                  1254,
+                  1254
+                ],
+                "alphaExtrema": [
+                  0,
+                  255
+                ],
+                "bbox": [
+                  0,
+                  19,
+                  1232,
+                  1230
+                ],
+                "warnings": [
+                  {
+                    "status": "CANDIDATE_WARNING",
+                    "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+                    "borderMax": 1,
+                    "threshold16BBox": [
+                      376,
+                      47,
+                      869,
+                      1207
+                    ]
+                  }
+                ]
+              },
+              {
+                "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-011/F3-inbetween-01/raw.png",
+                "sha256": "b7201ddf0e9e791b708835fd52a278af5c9487a2ee1a9c9592fa42d6b3e12687",
+                "rgbaSha256": "ed7d1f5900e1793eac8f0aa84c0a8a98e9f5c02a03c979fec898fe43b13f1805",
+                "dimensions": [
+                  1254,
+                  1254
+                ],
+                "alphaExtrema": [
+                  0,
+                  255
+                ],
+                "bbox": [
+                  0,
+                  21,
+                  1240,
+                  1254
+                ],
+                "warnings": [
+                  {
+                    "status": "CANDIDATE_WARNING",
+                    "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+                    "borderMax": 1,
+                    "threshold16BBox": [
+                      378,
+                      51,
+                      898,
+                      1182
+                    ]
+                  }
+                ]
+              },
+              {
+                "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-009/F4-trailing-contact-correction-01/raw.png",
+                "sha256": "929b9805f696abf341b8ea9b4df425a753da2c48b1be9ca13282bb5c72e0793f",
+                "rgbaSha256": "12a430a74fe4a945971a0821b6a0c7548cf6db9b84f40aedaeccfd40b28b75d8",
+                "dimensions": [
+                  1254,
+                  1254
+                ],
+                "alphaExtrema": [
+                  0,
+                  255
+                ],
+                "bbox": [
+                  0,
+                  17,
+                  1240,
+                  1213
+                ],
+                "warnings": [
+                  {
+                    "status": "CANDIDATE_WARNING",
+                    "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+                    "borderMax": 1,
+                    "threshold16BBox": [
+                      378,
+                      44,
+                      865,
+                      1203
+                    ]
+                  }
+                ]
+              },
+              {
+                "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-011/F5-inbetween-01/raw.png",
+                "sha256": "9db20e4f44a57dfe0c801673b6e18c41350b44c88d486933d03d7dd359f90b36",
+                "rgbaSha256": "13b06b25f91d66e1022c3e84b534669d678cb2da05aee6850e38ca0cf1db06de",
+                "dimensions": [
+                  1254,
+                  1254
+                ],
+                "alphaExtrema": [
+                  0,
+                  255
+                ],
+                "bbox": [
+                  0,
+                  3,
+                  1254,
+                  1254
+                ],
+                "warnings": [
+                  {
+                    "status": "CANDIDATE_WARNING",
+                    "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+                    "borderMax": 1,
+                    "threshold16BBox": [
+                      372,
+                      48,
+                      866,
+                      1192
+                    ]
+                  }
+                ]
+              },
+              {
+                "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-010/F6-left-passing-01/raw.png",
+                "sha256": "6ed3e9b8f0693441c457038e748789496421cefe3e02c696b6956fa074f34822",
+                "rgbaSha256": "7e13e010294f7013a3b871a67b9a9c390f4559e68fa2eb6b27546538b576d41b",
+                "dimensions": [
+                  1254,
+                  1254
+                ],
+                "alphaExtrema": [
+                  0,
+                  255
+                ],
+                "bbox": [
+                  0,
+                  32,
+                  1232,
+                  1232
+                ],
+                "warnings": [
+                  {
+                    "status": "CANDIDATE_WARNING",
+                    "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+                    "borderMax": 1,
+                    "threshold16BBox": [
+                      373,
+                      46,
+                      874,
+                      1193
+                    ]
+                  }
+                ]
+              },
+              {
+                "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-013/F7-spacing-correction-01/raw.png",
+                "sha256": "716902cbeeb96793da81583548b736bd0c9ab735922398ac5728c574d680f479",
+                "rgbaSha256": "962762d41e745f8b0f238668105af0488da16307c19a096eea01c0273904b92a",
+                "dimensions": [
+                  1254,
+                  1254
+                ],
+                "alphaExtrema": [
+                  0,
+                  255
+                ],
+                "bbox": [
+                  0,
+                  19,
+                  1240,
+                  1230
+                ],
+                "warnings": [
+                  {
+                    "status": "CANDIDATE_WARNING",
+                    "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+                    "borderMax": 1,
+                    "threshold16BBox": [
+                      365,
+                      45,
+                      894,
+                      1208
+                    ]
+                  }
+                ]
+              }
+            ],
+            "fixedPivot": {
+              "x": 654,
+              "y": 1140,
+              "space": "source"
+            },
+            "logicalRender": {
+              "width": 89,
+              "height": 89
+            },
+            "warnings": [
+              {
+                "status": "CANDIDATE_WARNING",
+                "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+                "borderMax": 1,
+                "threshold16BBox": [
+                  377,
+                  49,
+                  874,
+                  1206
+                ]
+              },
+              {
+                "status": "CANDIDATE_WARNING",
+                "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+                "borderMax": 1,
+                "threshold16BBox": [
+                  376,
+                  47,
+                  869,
+                  1207
+                ]
+              },
+              {
+                "status": "CANDIDATE_WARNING",
+                "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+                "borderMax": 1,
+                "threshold16BBox": [
+                  378,
+                  51,
+                  898,
+                  1182
+                ]
+              },
+              {
+                "status": "CANDIDATE_WARNING",
+                "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+                "borderMax": 1,
+                "threshold16BBox": [
+                  378,
+                  44,
+                  865,
+                  1203
+                ]
+              },
+              {
+                "status": "CANDIDATE_WARNING",
+                "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+                "borderMax": 1,
+                "threshold16BBox": [
+                  372,
+                  48,
+                  866,
+                  1192
+                ]
+              },
+              {
+                "status": "CANDIDATE_WARNING",
+                "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+                "borderMax": 1,
+                "threshold16BBox": [
+                  373,
+                  46,
+                  874,
+                  1193
+                ]
+              },
+              {
+                "status": "CANDIDATE_WARNING",
+                "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+                "borderMax": 1,
+                "threshold16BBox": [
+                  365,
+                  45,
+                  894,
+                  1208
+                ]
+              }
+            ]
+          },
+          {
+            "id": "unit-contact-shadow",
+            "packaging": "PASS",
+            "visualReview": "CANDIDATE",
+            "candidate": true,
+            "source": {
+              "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/public/assets/art-v1/effects/unit-contact-shadow.png",
+              "sha256": "1572b3fd6dd84d36a423adbdbfca1975a071b07bd0c4043edd55688db0ed99bd",
+              "rgbaSha256": "242424c39edc2976292046eb766fcad9360a922b9c2b2f43d2ead0f5d6455d19",
+              "dimensions": [
+                1254,
+                1254
+              ],
+              "alphaExtrema": [
+                0,
+                168
+              ],
+              "bbox": [
+                103,
+                53,
+                1196,
+                1196
+              ],
+              "warnings": []
+            },
+            "runtime": {
+              "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-action-adapter-017/actual-demos/walk/unit-contact-shadow.webp",
+              "sha256": "274b81f26e3869e158b0ab1e5093cd8a899d5255f0239c25ec7ab07ec314a7ff",
+              "rgbaSha256": "d581fe0139344e7a72697d43abcfe00b332f5eea107bb9a4ed7acebfb79ab647",
+              "dimensions": [
+                256,
+                256
+              ],
+              "alphaExtrema": [
+                0,
+                167
+              ],
+              "bbox": [
+                66,
+                115,
+                200,
+                150
+              ],
+              "warnings": []
+            },
+            "frames": [],
+            "fixedPivot": {
+              "x": 658,
+              "y": 648,
+              "space": "source"
+            },
+            "logicalRender": {
+              "width": 42,
+              "height": 42
+            },
+            "warnings": []
+          }
+        ],
+        "errors": []
+      },
+      "runtimePivot": [
+        66.75598086124401,
+        116.36363636363636
+      ],
+      "uniformScale": 0.10207336523125997,
+      "gutter": 2,
+      "gutterPolicy": "transparent zero padding only; no extrusion/trim",
+      "cycleDurationMs": 600,
+      "frames": 8,
+      "outputs": {
+        "manifest.json": "cd28c172a7619b0e847f1bef4a90b8d810c62ebb7d6d1bfab832ff28c2cbc7c9",
+        "atlas.png": "b2bdd86bd02f967bde9b070e5952e97dae257706b5d52730b787e32e9580fc13",
+        "preview.json": "b45f897c5dbbce89995302ed71c175fbbcc5a96fdbcd4d0cdcc98b05d4c5eb7d",
+        "preview.html": "e71f0cebebf82f7ffcb61ac1579665f227dbb46cac53537873ea5953ac983e62",
+        "unit-contact-shadow.webp": "274b81f26e3869e158b0ab1e5093cd8a899d5255f0239c25ec7ab07ec314a7ff",
+        "contact-sheet.png": "1d9e5b46c9dc8a820804a826504fa808102fa3b06f410755d2e4203cfe211cd8"
+      },
+      "limits": "Technical packaging only. Preview is actual declared-frame local playback; no travel/foot-lock/cadence/identity/owner/runtime approval."
+    }
+  },
+  "toolPins": {
+    "export-v3.py": "cb39f7b3e73261783831efe6b3f99c0ee2327e4122bc6233a6d868404bd10593",
+    "preview-v3.html": "e71f0cebebf82f7ffcb61ac1579665f227dbb46cac53537873ea5953ac983e62",
+    "test-v3.py": "2e6fc4e71c5b2b4532062dd05146687cddb019938fbbea50bdde90ff9a74b756",
+    "README.md": "27a610f41838a6ebdfc6ca2a33c2c5659f5a5d1e6f9a3a15c7c5dd0f95a76e7a",
+    "idle-job.json": "0302bdf48f3fc84e968847d269d2f81b07827a3fbfd6be9f710b16920168a729",
+    "walk-job.json": "57aecc8582b1688743f01e89af2d3a7c6649b0d455bd40790d235c9dfc8645cd",
+    "idle-selection.json": "4e50e932b2a890bfec91f217eea90e48ad5022c1ac5345bfd9a0af06b46a229a"
+  },
+  "limits": "Candidate technical custody only. Browser review root-owned; no action/fanout/motion/owner/runtime approval."
+}

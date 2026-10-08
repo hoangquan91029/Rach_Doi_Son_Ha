@@ -1,0 +1,46 @@
+{
+  "status": "LOCAL_GENERIC_ACTION_EXPORT_CHECKPOINT",
+  "timeUtc": "2026-10-08T14:39:11.999334+00:00",
+  "baseCommit": "91d2fd4",
+  "profile": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low"
+  },
+  "imageCalls": 0,
+  "sourceArtEdits": 0,
+  "actualFrames": {
+    "idle": 1,
+    "walk": 8
+  },
+  "walkAtlasUnchangedFrom014": true,
+  "browser": {
+    "engine": "chromium",
+    "drawSize": 89,
+    "observedFrames": {
+      "idle": [
+        0
+      ],
+      "walk": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "errors": []
+  },
+  "pins": {
+    "export-v3.py": "f0e77975a8989b1ca5998807830cc1b9f89102f9cc6fec81947864a9a1372abe",
+    "preview-v3.html": "e71f0cebebf82f7ffcb61ac1579665f227dbb46cac53537873ea5953ac983e62",
+    "test-v3.py": "2e6fc4e71c5b2b4532062dd05146687cddb019938fbbea50bdde90ff9a74b756",
+    "browser-check.mjs": "0ccdf6698aaaa608abdbffbee7eb31331a3e86ef4799b27ab94b7c1837df0e7c",
+    "chromium/receipt.json": "27dec85ac3485d3ad069981aeb2c982ec87ee2eda977e8631c2bc91229c83db3",
+    "actual-demos/idle/atlas.png": "17962707943bb616362271cdde1abbfc17a05b0bad950dc714dd3586954b95ab",
+    "actual-demos/walk/atlas.png": "b2bdd86bd02f967bde9b070e5952e97dae257706b5d52730b787e32e9580fc13"
+  },
+  "limits": "Offline tool and demo checks only; no new action art, continuous motion/foot lock/fanout/owner/production approval."
+}
