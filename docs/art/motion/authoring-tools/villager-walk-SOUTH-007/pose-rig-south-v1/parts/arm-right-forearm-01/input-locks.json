@@ -1,0 +1,44 @@
+{
+  "schema": "south-authorized-forearm-edit-input-locks/v1",
+  "exactReferencedImagePathsOrder": [
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-lower-hand-edit-02/raw.png",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/south-neutral-reference/raw.png",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-forearm-only-draft-v1/forearm-geometry-guide.png"
+  ],
+  "inputs": [
+    {
+      "order": 1,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-lower-hand-edit-02/raw.png",
+      "sha256": "f95457f586608347dd0648abbf769f0c77092f62da425d65de88d1bd1ba36f0c",
+      "decodedRgbaSha256": "b2260baf913a9aa25c5a0740d13ec03d9ad7b898b6fd68412b33c01462aec748",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "role": "EDIT_TARGET"
+    },
+    {
+      "order": 2,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/south-neutral-reference/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "decodedRgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "role": "APPEARANCE_REFERENCE_ONLY"
+    },
+    {
+      "order": 3,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-forearm-only-draft-v1/forearm-geometry-guide.png",
+      "sha256": "e52625ecc75756af91b7c37331cce49e10d14a3e87799d7fc130865fdcd72257",
+      "decodedRgbaSha256": "5e90a25c748d728e47300f84fb1065b65c4e714a73162d4375ac5aa8f2097b4f",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "role": "GEOMETRY_ONLY"
+    }
+  ],
+  "authorizationSha256": "cfbb6a8181e09485bc014e53a3437e0989713210fc5d86ff653df514d5ebfd79"
+}

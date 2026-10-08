@@ -1,0 +1,39 @@
+{
+  "schema": "south-source-edit-custody/v1",
+  "status": "RAW_PRESERVED_PENDING_PARENT_REVIEW",
+  "partId": "arm_right_forearm",
+  "contract": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/part-contract-v4-hand-split.json",
+    "sha256": "63859443aad0ec34c44672315b52e45823c03d294bffe74741733f0e43322083"
+  },
+  "authorization": {
+    "path": "parent-call-authorization.json",
+    "sha256": "cfbb6a8181e09485bc014e53a3437e0989713210fc5d86ff653df514d5ebfd79"
+  },
+  "generatedOriginal": {
+    "path": "/home/kieu-hoang-quan/.codex/generated_images/01a11a79-66c7-73f1-94e0-7e606d8be8c3/exec-2aa110bb-47f1-4aca-829e-e6bccbe4d541.png",
+    "sha256": "1d6e0a3a2f8e697a08921e31db20d05e07aa9edd80155ea89481b7b71da87b12",
+    "preservationCopyPath": "raw.png",
+    "preservationCopySha256": "1d6e0a3a2f8e697a08921e31db20d05e07aa9edd80155ea89481b7b71da87b12",
+    "byteCopyVerified": true
+  },
+  "heldEditTarget": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-lower-hand-edit-02/raw.png",
+    "sha256": "f95457f586608347dd0648abbf769f0c77092f62da425d65de88d1bd1ba36f0c",
+    "preservedUnchanged": true
+  },
+  "sourcePixels": "Provider regenerated substantial pixels; no exact-preservation claim. See raw-technical-inspection.json.",
+  "reviewState": {
+    "parentArtReview": "pending",
+    "sidecar": "not sealed",
+    "partAcceptance": "not granted",
+    "motionQualification": "not granted",
+    "runtimeUse": "not granted"
+  },
+  "callState": {
+    "callsConsumed": 1,
+    "retries": 0,
+    "providerCallId": null,
+    "note": "Tool response exposed no call/provider ID; null retained, none inferred."
+  }
+}

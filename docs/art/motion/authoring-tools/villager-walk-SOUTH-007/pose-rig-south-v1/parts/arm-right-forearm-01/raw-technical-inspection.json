@@ -1,0 +1,37 @@
+{
+  "schema": "south-raw-technical-inspection/v1",
+  "file": "raw.png",
+  "sha256": "1d6e0a3a2f8e697a08921e31db20d05e07aa9edd80155ea89481b7b71da87b12",
+  "decodedRgbaSha256": "10b4ebd792ec292e9f47d0e2b15a65972bc947f8cfd0c4973c4a1a6204c17fe6",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "mode": "RGBA",
+  "visibleAlphaBounds": [
+    518,
+    202,
+    777,
+    887
+  ],
+  "visiblePixelsAlphaGreaterThan8": 136386,
+  "targetComparison": [
+    {
+      "region": "x=480..789,y=190..649",
+      "visibleMaskThresholdAlpha": 8,
+      "visibleMaskIoU": 0.7941462436726306,
+      "changedMaskPixels": 20537,
+      "commonVisiblePixels": 79228,
+      "meanAbsoluteRGBDifferenceWhereBothVisible": 16.547676747277897
+    },
+    {
+      "region": "x=480..789,y=190..679",
+      "visibleMaskThresholdAlpha": 8,
+      "visibleMaskIoU": 0.7931980986811275,
+      "changedMaskPixels": 21623,
+      "commonVisiblePixels": 82936,
+      "meanAbsoluteRGBDifferenceWhereBothVisible": 16.48088887817112
+    }
+  ],
+  "interpretation": "Output is isolated bare forearm with no hand/cloth. It is not a faithful pixel/placement preservation: the distal end is around y=880, roughly 200 px below the intended y≈680 wrist cap; the forearm is wider than target/guide, and texture/contour are substantially regenerated. No cleanup, rescale, warp, crop, or correction was applied."
+}

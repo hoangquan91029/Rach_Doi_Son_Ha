@@ -1,0 +1,20 @@
+{
+  "status": "FAILED_EIGHT_FRAME_HOLD_SLIP",
+  "thresholdPx": 2,
+  "actual60HzSameContactMaxSlipPx": 3.9087541658006444,
+  "analyticHeldPoseGroundSlipMaxPx": 3.4456423156863236,
+  "measurementMethod": "Track originalmesh sole-toe landmark through actual held cel sample and integer APNG paste placement at60Hz; not opticalflow, no pivot compensation",
+  "worstContinuousHoldBoundPx": 3.5158798283261805,
+  "physicalScreenSpeedPxSec": 86.60078170547885,
+  "simulationHz": 60,
+  "celFrames": 8,
+  "testCycles": 2,
+  "previewWholeCanvasSize": 88,
+  "actualPreviewScalePxPerModelUnit": 44.0,
+  "mathematicalStanceContactPass": true,
+  "heldSpriteContactPass": false,
+  "sourcePivotCorrection": false,
+  "cadenceAccepted": false,
+  "higherTemporalCelCountRecommended": 24,
+  "recommendation": "Preserve8-frame failed hold pilot. Same eight phase keys need24/32 temporal cels and repeat real60Hz held-ground gate before motion acceptance. No other direction generated."
+}

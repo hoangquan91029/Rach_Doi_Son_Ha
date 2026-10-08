@@ -1,0 +1,75 @@
+{
+  "status": "INDEPENDENT_MOTION_FAIL_NARROW",
+  "scope": {
+    "unit": "villager",
+    "action": "walk",
+    "direction": "D07 screenEast / worldNE theta315",
+    "sourceFrames": 8,
+    "sizesInspected": [64, 80, 96],
+    "fanout": "NOT_AUTHORIZED"
+  },
+  "frozenSubject": {
+    "pilotScriptSha256": "b5c1472cce875cec649e8331b4f91da2bef64a7f57b910109a360ad727fb62e4",
+    "animationSha256": "ec9951436196c0f6208df8f2f20589531f0a216e482e06499369f6d08b88d530",
+    "receiptSha256": "9bd0d0efa5d8c4b12c66d73af92240e191cc9f8dde882029785282edc898749f",
+    "specSha256": "367a8fd40dca14a110c44ca456743ad47cb976d8ebd010eb007d945e44f9f049",
+    "canonicalFrontSha256": "68a7fb9a71ae614f7c01432b1270e7a25071975676cfdf082ae02326d97678db",
+    "canonicalSideSha256": "45ae1e7a27d3cb9260dc9e5495cf83b4956481b1047ead2975572aff1385aae3",
+    "durationsMs": [41, 40, 41, 40, 41, 41, 40, 41],
+    "cycleMs": 325,
+    "referenceCharacterHeight": 233,
+    "actualAlphaHeightRange": [223, 237]
+  },
+  "custody": {
+    "procedure": "Imported the frozen pilot module and called its original render(pose(phase)) once per frame phase into this new review lease. Did not invoke build/freeze or change source files.",
+    "rerenderReceipt": "rerender-receipt.json",
+    "allEightPngBytesEqual": true,
+    "allEightDecodedRgbaEqual": true,
+    "checkoutCopiesOfScriptSpecAnimationReceiptAndEightFramesMatchLease": true
+  },
+  "technical": {
+    "continuousRigContact": "PASS_NUMERIC_ONLY",
+    "phasesSampled": 501,
+    "maxUpperBoneError": 1.6653345369377348e-16,
+    "maxLowerBoneError": 3.3306690738754696e-16,
+    "maxStanceToeSpeedPerPhase": 5.551115123125783e-10,
+    "actualHeldCelToeSlipAt60HzMaxPx": 3.9087541658006444,
+    "heldCelGateThresholdPx": 2,
+    "heldCelContact": "FAIL"
+  },
+  "independentVisualMotion": {
+    "result": "FAIL_NARROW",
+    "viewEvidence": "The 64/80/96 contact sheets and the fixed-root/scrolling-ground browser-capture screenshots were inspected at 1x. The live local browser preview was additionally inspected at 80 declared character pixels at 1x and the available 0.5x diagnostic rate, with contact markers toggled during the slower diagnostic. Source-to-screen scale is height/233; the 80px view uses 0.34335 screen pixels per source pixel. The preview uses the engine sprite timing sampler. No 1.5x rate or continuous zoom control is exposed. Legacy travel APNG/GIF were excluded because their background scroll and sprite movement compound relative velocity.",
+    "observations": [
+      "The two alternating flat-contact keys F0 and F4 show opposite leading feet, and the cycle reads as walking at the declared sizes.",
+      "The 325ms cycle is visibly brisk and somewhat mechanical; cadence is not approved.",
+      "Foot-to-ground sliding is measurable in the actual held-cel sampling and visible in the moving-ground comparison; max tracked same-contact toe slip is 3.91px versus the 2px gate.",
+      "No gross scale pulse, outfit pop or obvious F7-to-F0 silhouette flash was apparent at the inspected sizes; this observation does not override the contact failure."
+    ],
+    "identityAppearance": "Broad conical-hat, cream upper garment, brown lower garment and sandal color/silhouette cues are present. The rendered toon reconstruction is visibly flatter and less textured than the painterly canonical front/side; face, body volume and costume detail remain visually unapproved."
+  },
+  "viewMapping": {
+    "reviewCanvasCssPixels": 1024,
+    "browserScreenshotPixels": [1280, 720],
+    "devicePixelRatio": 1,
+    "declared80CharacterPixels": 80,
+    "sourceToScreenScaleAt80": 0.3433476395,
+    "canvasRenderedWholeSizeAt80": 87.9,
+    "cameraElevationDegrees": 26.5650511771,
+    "groundVerticalToHorizontalRatio": 0.4472135955,
+    "runtimeGridRatio": 0.5,
+    "cameraGridReconciliation": "OPEN"
+  },
+  "ownership": {
+    "humanOwnerApproval": "PENDING",
+    "runtimeIntegration": "NOT_INTEGRATED",
+    "productionAcceptance": "NOT_ACCEPTED",
+    "otherDirectionsOrActions": "NOT_REVIEWED"
+  },
+  "limitations": [
+    "This is one direction and one walk pilot only.",
+    "No runtime engine integration or owner visual approval was performed.",
+    "The preview is a review surface and its browser playback check is not production certification.",
+    "No new frames, directions, source edits or production flags were made by this review."
+  ]
+}

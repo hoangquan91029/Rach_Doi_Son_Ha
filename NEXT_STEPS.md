@@ -1,3 +1,23 @@
+## Current atomic checkpoint — deterministic RTS sprites
+
+Latest live usage90%primary/88%weekly: finish checkpoint only; no further image/model/gait calls this turn. Pipeline decision and scope correction are in docs/art/pipeline/. Separate limb artwork/cut-out assembly STOPPED. Complete original clothed3D cels are the preferred final path; no AI calls in either new pilot. Legacy originals/leadership/held art preserved.
+
+Pilot001 eight cels: exact rerenderedPNG/RGBA, fixed256source/128runtime; actual held-toe3.90875px fails2px. Independent motion FAIL_NARROW; amendment withdraws parent's mistaken grid warning. Pilot00224cels: exact same model/motion/style, all8oldkeys preserved, phase seam exactRGBA; tracked60Hz error1.404/1.509/1.611px at64/80/96 passes numerical2px. Real runtime128 atlas browser playback Chromium/Firefox all3sizes passes with zero captured errors. Cadence still hurried/mechanical; identity/style, exact-camera reconciliation, full independent24motion, owner, engine integration and production all pending. No fanout allowed.
+
+Exact next action when live quota permits: ONE sameD07 gait correction, not new unit/direction/detail. Freeze approximately650ms/1.28model stride/hip≈0.84 reach hypothesis with constantbones, actualtoe-ground roll and501phase validation; adjust torso weight transfer coherently. Unchangedworld2.1 and fixedscale233/pivot128237. Initial48temporal samples derive from<=2px frame-hold budget; no lowering thresholds or pivot/speed workaround. Validate contacts before one render, then real runtimeatlas loop and independent review. After motion passes, reconcile camera26.565°physicalratio.4472 versus54x27grid.5 with one global projection/camera contract. Productionpacking may use ONE union crop per motionfamily/action with immutable translatedpivot; never perframebboxfit. Current schema1 needs explicitcrop derivation support before this. Recompute frame/memorybanks budgets after accepted gait.
+
+The full game remains NOT COMPLETE; public production bundle/simulation/service unchanged. Five-hour recurring continuation is ACTIVE and updated to this scope with quiet notification policy. Sources/metrics/README/commands are sufficient to resume without reviving old11part work. All specialized agents stopped; no open image work order.
+
+---
+
+## Latest scope — 8 October 2026 (supersedes older next actions below)
+
+User stopped separate limb textures and cut-out assembly. Preferred FINAL art path is deterministic complete clothed3D rendering to styled2D sprite frames. Keep old2D rig as landmarks only; preserve all original identity/leader/held sources. New source character192–256px, runtime96–128px, gameplay64–96px. AI repaint optional after real-size flatness review; no image calls open. See docs/art/pipeline/SCOPE_CORRECTION_20261008.md and ANIMATION_PIPELINE_DECISION.md.
+
+Current next: one villagerD07/screenEast walk, opposite F0/F4 contacts, actual60Hz held-sprite foot lock at simulation travel speed, stable pivot, full8phase loop and64/80/96px review. No direction/unit fanout before parent acceptance. Eight pose keys may need denser temporal sampling to prevent held-frame sliding; measure honestly. Public runtime remains unchanged; whole project and final visual gates NOT COMPLETE. Six legacy component sources/calls are preserved; two accepted authoring slots, the rest held/superseded. The completed forearm-only call is unsealed; hand draft has zero calls; v7 is superseded. Automation updated to this scope, retaining five-hour quiet cadence.
+
+---
+
 # Next steps / continuation boundary
 
 **NOT COMPLETE under sections81–145. Final visual release FAIL.** Public playable development build: https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/ . Candidate art preview adds `?art=pilot`; fourteen candidates remain unapproved. Preserve all leadership originals, rejected/held sources, raw image outputs and custody records.

@@ -1,0 +1,9 @@
+Perform ONE targeted source edit on the exact bare RIGHT forearm in image 1. This is a controlled part-authoring edit, not a new illustration. Return one isolated transparent RGBA forearm on the same 1254×1254 canvas and preserve the source's camera/view and placement.
+
+Part boundary and geometry: edit image 1 to retain a single bare-skin forearm from a small proximal bare-skin overlap cap near raw y≈235 down to a narrow, flat natural wrist cap near raw y≈680. The overlap edge is a hidden assembly convention, not a measured anatomical elbow. Follow image 3's target-space geometry only: centerline roughly (621,235) to (608,680), monotonic gradual taper with a rough width about 200 raw pixels near the proximal end and about 120 raw pixels at the wrist. Keep the usable forearm shape and natural South-view contour.
+
+Remove the entire existing hand distal to the wrist cap. End cleanly at the wrist; do not draw any palm, thumb, fingers, nails, jewelry, props, sleeve, ivory cloth, or cuff. The isolated segment should contain bare skin only. The wrist cap is an attachment boundary, not a hand.
+
+Image roles: image 1 is the exact EDIT TARGET and is the authority for the forearm source pixels, texture, and placement. Image 2 is appearance reference ONLY for the canonical South villager's skin tone, lighting, and painterly realism; do not copy its clothing, body, arm shape, or hand. Image 3 is geometry guide ONLY for the pixel-space forearm axis, outline, taper, and endpoints; its gray model is not appearance reference.
+
+Preserve the upper forearm above y≈650 as closely as possible while removing only the distal hand and resolving the wrist cap. Keep the full canvas and transparency; do not crop, mirror, rotate, resize, warp, stretch, clean alpha, or add labels. Do not include any other body part. One source result only.

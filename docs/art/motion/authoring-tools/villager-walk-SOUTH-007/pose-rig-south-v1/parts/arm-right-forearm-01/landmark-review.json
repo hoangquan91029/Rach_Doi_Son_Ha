@@ -1,0 +1,55 @@
+{
+  "schema": "south-rough-source-landmark-review/v1",
+  "status": "ROUGH_VISUAL_CANDIDATES_ONLY_NOT_SIDECAR",
+  "partId": "arm_right_forearm",
+  "source": "raw.png",
+  "coordinateSpace": "1254x1254 source pixels",
+  "observations": {
+    "proximalSkinBoundary": {
+      "candidateCenterPx": [
+        640,
+        205
+      ],
+      "approxExtentPx": [
+        [
+          548,
+          202
+        ],
+        [
+          762,
+          231
+        ]
+      ],
+      "uncertaintyPx": 25,
+      "interpretation": "Bare proximal cut/overlap convention, not measured elbow anatomy; hidden overlap must be verified against upper source in assembly."
+    },
+    "distalWristCap": {
+      "candidateCenterPx": [
+        636,
+        876
+      ],
+      "approxExtentPx": [
+        [
+          552,
+          850
+        ],
+        [
+          720,
+          887
+        ]
+      ],
+      "uncertaintyPx": 25,
+      "interpretation": "Approximate visible terminal contour; too low relative to requested wrist cap near y680, and shape is somewhat broad/flat."
+    },
+    "widthSamples": {
+      "aroundY300": 243,
+      "aroundY400": 254,
+      "aroundY600": 185,
+      "aroundY680": 155,
+      "targetGuideApproxAtY235": 200,
+      "targetGuideApproxAtY680": 120
+    },
+    "uncertainty": "Visual alpha contour approximations only; no sealed fit or source calibration."
+  },
+  "decision": "No hand or cloth remains, but placement and width miss the reviewed geometry guide. Output end is around y880 rather than y680, and the source is wider; parent should decide whether held as diagnostic only. No retry authorized."
+}

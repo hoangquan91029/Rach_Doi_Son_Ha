@@ -1,0 +1,848 @@
+{
+  "status": "REAL_ORIGINAL_3D_EIGHT_FRAME_PILOT_PENDING_REVIEW",
+  "direction": "D07 screenEast/worldNEtheta315",
+  "sourceCanvas": [
+    256,
+    256
+  ],
+  "sourcePivot": [
+    128,
+    237
+  ],
+  "runtimeCell": [
+    128,
+    128
+  ],
+  "runtimePivot": [
+    64,
+    118.5
+  ],
+  "durationsMs": [
+    42,
+    42,
+    43,
+    42,
+    42,
+    42,
+    43,
+    42
+  ],
+  "totalDurationMs": 338,
+  "exactModelPeriodMs": 337.8392467246273,
+  "referenceCharacterHeight": 224.0,
+  "targetReviewHeights": [
+    64,
+    80,
+    96
+  ],
+  "fixedWholeCanvasReviewSizes": {
+    "64": 73,
+    "80": 91,
+    "96": 110
+  },
+  "reviewActualHeightRanges": {
+    "64": [
+      63.58984375,
+      67.58203125
+    ],
+    "80": [
+      79.26953125,
+      84.24609375
+    ],
+    "96": [
+      95.8203125,
+      101.8359375
+    ]
+  },
+  "rootTravelModelPerCycle": 0.64,
+  "rootTravelWorldPerCycle": 0.7094624181217174,
+  "groundSpeedScreenPxSec": 86.60078170547885,
+  "frameRecords": [
+    {
+      "frame": 0,
+      "phase": 0.0,
+      "path": "frames/F0.png",
+      "runtimePath": "runtime128/F0.png",
+      "durationMs": 42,
+      "startMs": 0,
+      "sourceCanvas": [
+        256,
+        256
+      ],
+      "sourcePivot": [
+        128,
+        237
+      ],
+      "alphaBounds": [
+        87,
+        14,
+        171,
+        247
+      ],
+      "actualAlphaHeight": 233,
+      "declaredHeightForFixedReviewScale": 224.0,
+      "toeScreenSourceXY": {
+        "LEFT": [
+          169.216,
+          243.01055072351943
+        ],
+        "RIGHT": [
+          128.256,
+          230.98944927648057
+        ]
+      },
+      "contacts": {
+        "LEFT": {
+          "mode": "FLAT",
+          "toeLocal3D": [
+            -0.105,
+            0.322,
+            0.0
+          ],
+          "toeWorld3D": [
+            -0.105,
+            0.322,
+            0.0
+          ],
+          "heelLocal3D": [
+            -0.105,
+            0.11199999999999999,
+            0.0
+          ],
+          "ankleLocal3D": [
+            -0.105,
+            0.177,
+            0.105
+          ],
+          "pitchDegrees": 0.0
+        },
+        "RIGHT": {
+          "mode": "TOE_ROLL",
+          "toeLocal3D": [
+            0.105,
+            0.0020000000000000018,
+            0.0
+          ],
+          "toeWorld3D": [
+            0.105,
+            0.0020000000000000018,
+            0.0
+          ],
+          "heelLocal3D": [
+            0.105,
+            -0.199864956147047,
+            0.05788384472156981
+          ],
+          "ankleLocal3D": [
+            0.105,
+            -0.10844102355027137,
+            0.14089989466698835
+          ],
+          "pitchDegrees": 15.999999999999995
+        }
+      },
+      "sha256": "636e233d25bbe541e7ca6f358554544044f41b9b8f23781a92ae2b409c69165d",
+      "mesh": {
+        "vertices": 4866,
+        "triangles": 6457,
+        "geometryBounds": [
+          88.256,
+          14.970278298009674,
+          170.24,
+          245.92996107494315
+        ]
+      }
+    },
+    {
+      "frame": 1,
+      "phase": 0.125,
+      "path": "frames/F1.png",
+      "runtimePath": "runtime128/F1.png",
+      "durationMs": 42,
+      "startMs": 42,
+      "sourceCanvas": [
+        256,
+        256
+      ],
+      "sourcePivot": [
+        128,
+        237
+      ],
+      "alphaBounds": [
+        87,
+        12,
+        169,
+        247
+      ],
+      "actualAlphaHeight": 235,
+      "declaredHeightForFixedReviewScale": 224.0,
+      "toeScreenSourceXY": {
+        "LEFT": [
+          158.976,
+          243.01055072351943
+        ],
+        "RIGHT": [
+          118.936,
+          230.37941470189534
+        ]
+      },
+      "contacts": {
+        "LEFT": {
+          "mode": "FLAT",
+          "toeLocal3D": [
+            -0.105,
+            0.242,
+            0.0
+          ],
+          "toeWorld3D": [
+            -0.105,
+            0.322,
+            0.0
+          ],
+          "heelLocal3D": [
+            -0.105,
+            0.03199999999999997,
+            0.0
+          ],
+          "ankleLocal3D": [
+            -0.105,
+            0.09699999999999998,
+            0.105
+          ],
+          "pitchDegrees": 0.0
+        },
+        "RIGHT": {
+          "mode": "SWING",
+          "toeLocal3D": [
+            0.105,
+            -0.07081249999999999,
+            0.005328432724209935
+          ],
+          "toeWorld3D": [
+            0.105,
+            0.009187500000000015,
+            0.005328432724209935
+          ],
+          "heelLocal3D": [
+            0.105,
+            -0.24959709055210572,
+            0.11549226608668843
+          ],
+          "ankleLocal3D": [
+            0.105,
+            -0.1391770863190242,
+            0.1707862319886408
+          ],
+          "pitchDegrees": 31.640625
+        }
+      },
+      "sha256": "e81d01ed98c32661c335a7345db7c3bb502e12812ff0fea7fc63a5073e46c7c6",
+      "mesh": {
+        "vertices": 4866,
+        "triangles": 6457,
+        "geometryBounds": [
+          88.256,
+          13.099205792956383,
+          167.744,
+          245.92996107494315
+        ]
+      }
+    },
+    {
+      "frame": 2,
+      "phase": 0.25,
+      "path": "frames/F2.png",
+      "runtimePath": "runtime128/F2.png",
+      "durationMs": 43,
+      "startMs": 84,
+      "sourceCanvas": [
+        256,
+        256
+      ],
+      "sourcePivot": [
+        128,
+        237
+      ],
+      "alphaBounds": [
+        87,
+        10,
+        169,
+        247
+      ],
+      "actualAlphaHeight": 237,
+      "declaredHeightForFixedReviewScale": 224.0,
+      "toeScreenSourceXY": {
+        "LEFT": [
+          148.736,
+          243.01055072351943
+        ],
+        "RIGHT": [
+          133.696,
+          217.30858007809957
+        ]
+      },
+      "contacts": {
+        "LEFT": {
+          "mode": "FLAT",
+          "toeLocal3D": [
+            -0.105,
+            0.162,
+            0.0
+          ],
+          "toeWorld3D": [
+            -0.105,
+            0.322,
+            0.0
+          ],
+          "heelLocal3D": [
+            -0.105,
+            -0.048000000000000015,
+            0.0
+          ],
+          "ankleLocal3D": [
+            -0.105,
+            0.016999999999999987,
+            0.105
+          ],
+          "pitchDegrees": 0.0
+        },
+        "RIGHT": {
+          "mode": "SWING",
+          "toeLocal3D": [
+            0.105,
+            0.04450000000000007,
+            0.11949747468305837
+          ],
+          "toeWorld3D": [
+            0.105,
+            0.20450000000000007,
+            0.11949747468305837
+          ],
+          "heelLocal3D": [
+            0.105,
+            -0.1503797715603587,
+            0.19773988413332
+          ],
+          "ankleLocal3D": [
+            0.105,
+            -0.05093863754273589,
+            0.2709618812741327
+          ],
+          "pitchDegrees": 21.874999999999996
+        }
+      },
+      "sha256": "7bfc5c9e5203b2ba1d8a11204644071e6c08a12ca7cdca8e92d7c6cedb6e2c69",
+      "mesh": {
+        "vertices": 4866,
+        "triangles": 6457,
+        "geometryBounds": [
+          88.256,
+          10.848757801882044,
+          167.88030101268936,
+          245.92996107494315
+        ]
+      }
+    },
+    {
+      "frame": 3,
+      "phase": 0.375,
+      "path": "frames/F3.png",
+      "runtimePath": "runtime128/F3.png",
+      "durationMs": 42,
+      "startMs": 127,
+      "sourceCanvas": [
+        256,
+        256
+      ],
+      "sourcePivot": [
+        128,
+        237
+      ],
+      "alphaBounds": [
+        87,
+        11,
+        175,
+        247
+      ],
+      "actualAlphaHeight": 236,
+      "declaredHeightForFixedReviewScale": 224.0,
+      "toeScreenSourceXY": {
+        "LEFT": [
+          138.496,
+          243.01055072351943
+        ],
+        "RIGHT": [
+          160.456,
+          219.9085307367468
+        ]
+      },
+      "contacts": {
+        "LEFT": {
+          "mode": "FLAT",
+          "toeLocal3D": [
+            -0.105,
+            0.08200000000000002,
+            0.0
+          ],
+          "toeWorld3D": [
+            -0.105,
+            0.322,
+            0.0
+          ],
+          "heelLocal3D": [
+            -0.105,
+            -0.128,
+            0.0
+          ],
+          "ankleLocal3D": [
+            -0.105,
+            -0.063,
+            0.105
+          ],
+          "pitchDegrees": 0.0
+        },
+        "RIGHT": {
+          "mode": "SWING",
+          "toeLocal3D": [
+            0.105,
+            0.2535625,
+            0.09678784026555634
+          ],
+          "toeWorld3D": [
+            0.105,
+            0.4935625,
+            0.09678784026555634
+          ],
+          "heelLocal3D": [
+            0.105,
+            0.04532189740086823,
+            0.12391442186277345
+          ],
+          "ankleLocal3D": [
+            0.105,
+            0.12334061281349376,
+            0.21963840028701023
+          ],
+          "pitchDegrees": 7.421874999999999
+        }
+      },
+      "sha256": "094d8d99d88b8d921392cf9c79ec8fa043b484b78d8c9f1375ee2e05d412de81",
+      "mesh": {
+        "vertices": 4866,
+        "triangles": 6457,
+        "geometryBounds": [
+          88.256,
+          11.803936863351424,
+          174.43260494359203,
+          245.92996107494315
+        ]
+      }
+    },
+    {
+      "frame": 4,
+      "phase": 0.5,
+      "path": "frames/F4.png",
+      "runtimePath": "runtime128/F4.png",
+      "durationMs": 42,
+      "startMs": 169,
+      "sourceCanvas": [
+        256,
+        256
+      ],
+      "sourcePivot": [
+        128,
+        237
+      ],
+      "alphaBounds": [
+        87,
+        12,
+        171,
+        245
+      ],
+      "actualAlphaHeight": 233,
+      "declaredHeightForFixedReviewScale": 224.0,
+      "toeScreenSourceXY": {
+        "LEFT": [
+          128.256,
+          243.01055072351943
+        ],
+        "RIGHT": [
+          169.216,
+          230.98944927648057
+        ]
+      },
+      "contacts": {
+        "LEFT": {
+          "mode": "TOE_ROLL",
+          "toeLocal3D": [
+            -0.105,
+            0.0020000000000000018,
+            0.0
+          ],
+          "toeWorld3D": [
+            -0.105,
+            0.322,
+            0.0
+          ],
+          "heelLocal3D": [
+            -0.105,
+            -0.199864956147047,
+            0.05788384472156981
+          ],
+          "ankleLocal3D": [
+            -0.105,
+            -0.10844102355027137,
+            0.14089989466698835
+          ],
+          "pitchDegrees": 15.999999999999995
+        },
+        "RIGHT": {
+          "mode": "FLAT",
+          "toeLocal3D": [
+            0.105,
+            0.322,
+            0.0
+          ],
+          "toeWorld3D": [
+            0.105,
+            0.642,
+            0.0
+          ],
+          "heelLocal3D": [
+            0.105,
+            0.11199999999999999,
+            0.0
+          ],
+          "ankleLocal3D": [
+            0.105,
+            0.177,
+            0.105
+          ],
+          "pitchDegrees": 0.0
+        }
+      },
+      "sha256": "b76203ef2e3dc6e12d9fd07f19f16e2ed84d09f0ad8fbb58cfa7f848741de0a6",
+      "mesh": {
+        "vertices": 4866,
+        "triangles": 6457,
+        "geometryBounds": [
+          88.256,
+          13.138491410841851,
+          170.24,
+          244.1043942630179
+        ]
+      }
+    },
+    {
+      "frame": 5,
+      "phase": 0.625,
+      "path": "frames/F5.png",
+      "runtimePath": "runtime128/F5.png",
+      "durationMs": 42,
+      "startMs": 211,
+      "sourceCanvas": [
+        256,
+        256
+      ],
+      "sourcePivot": [
+        128,
+        237
+      ],
+      "alphaBounds": [
+        87,
+        11,
+        169,
+        244
+      ],
+      "actualAlphaHeight": 233,
+      "declaredHeightForFixedReviewScale": 224.0,
+      "toeScreenSourceXY": {
+        "LEFT": [
+          118.936,
+          242.4005161489342
+        ],
+        "RIGHT": [
+          158.976,
+          230.98944927648057
+        ]
+      },
+      "contacts": {
+        "LEFT": {
+          "mode": "SWING",
+          "toeLocal3D": [
+            -0.105,
+            -0.0708125,
+            0.005328432724209935
+          ],
+          "toeWorld3D": [
+            -0.105,
+            0.3291875,
+            0.005328432724209935
+          ],
+          "heelLocal3D": [
+            -0.105,
+            -0.24959709055210572,
+            0.11549226608668843
+          ],
+          "ankleLocal3D": [
+            -0.105,
+            -0.13917708631902423,
+            0.1707862319886408
+          ],
+          "pitchDegrees": 31.640625
+        },
+        "RIGHT": {
+          "mode": "FLAT",
+          "toeLocal3D": [
+            0.105,
+            0.242,
+            0.0
+          ],
+          "toeWorld3D": [
+            0.105,
+            0.642,
+            0.0
+          ],
+          "heelLocal3D": [
+            0.105,
+            0.03199999999999997,
+            0.0
+          ],
+          "ankleLocal3D": [
+            0.105,
+            0.09699999999999998,
+            0.105
+          ],
+          "pitchDegrees": 0.0
+        }
+      },
+      "sha256": "a3d99c46ab4840f7b3b5fd0017db0fa705bc8598c5bb8864c97c10cc75e00ede",
+      "mesh": {
+        "vertices": 4866,
+        "triangles": 6457,
+        "geometryBounds": [
+          88.256,
+          11.803936863351424,
+          167.744,
+          243.01535798827905
+        ]
+      }
+    },
+    {
+      "frame": 6,
+      "phase": 0.75,
+      "path": "frames/F6.png",
+      "runtimePath": "runtime128/F6.png",
+      "durationMs": 43,
+      "startMs": 253,
+      "sourceCanvas": [
+        256,
+        256
+      ],
+      "sourcePivot": [
+        128,
+        237
+      ],
+      "alphaBounds": [
+        87,
+        10,
+        169,
+        235
+      ],
+      "actualAlphaHeight": 225,
+      "declaredHeightForFixedReviewScale": 224.0,
+      "toeScreenSourceXY": {
+        "LEFT": [
+          133.69600000000003,
+          229.32968152513845
+        ],
+        "RIGHT": [
+          148.736,
+          230.98944927648057
+        ]
+      },
+      "contacts": {
+        "LEFT": {
+          "mode": "SWING",
+          "toeLocal3D": [
+            -0.105,
+            0.044500000000000095,
+            0.11949747468305837
+          ],
+          "toeWorld3D": [
+            -0.105,
+            0.5245000000000001,
+            0.11949747468305837
+          ],
+          "heelLocal3D": [
+            -0.105,
+            -0.15037977156035867,
+            0.19773988413332
+          ],
+          "ankleLocal3D": [
+            -0.105,
+            -0.050938637542735865,
+            0.2709618812741327
+          ],
+          "pitchDegrees": 21.874999999999996
+        },
+        "RIGHT": {
+          "mode": "FLAT",
+          "toeLocal3D": [
+            0.105,
+            0.16200000000000003,
+            0.0
+          ],
+          "toeWorld3D": [
+            0.105,
+            0.642,
+            0.0
+          ],
+          "heelLocal3D": [
+            0.105,
+            -0.04799999999999999,
+            0.0
+          ],
+          "ankleLocal3D": [
+            0.105,
+            0.017000000000000015,
+            0.105
+          ],
+          "pitchDegrees": 0.0
+        }
+      },
+      "sha256": "dbcb709a709d960184c82991c1bf7f791ade31aa2a074c6efbafb856f5354dfb",
+      "mesh": {
+        "vertices": 4866,
+        "triangles": 6457,
+        "geometryBounds": [
+          88.256,
+          10.848757801882044,
+          167.88030101268936,
+          233.9088596279043
+        ]
+      }
+    },
+    {
+      "frame": 7,
+      "phase": 0.875,
+      "path": "frames/F7.png",
+      "runtimePath": "runtime128/F7.png",
+      "durationMs": 42,
+      "startMs": 296,
+      "sourceCanvas": [
+        256,
+        256
+      ],
+      "sourcePivot": [
+        128,
+        237
+      ],
+      "alphaBounds": [
+        87,
+        12,
+        175,
+        235
+      ],
+      "actualAlphaHeight": 223,
+      "declaredHeightForFixedReviewScale": 224.0,
+      "toeScreenSourceXY": {
+        "LEFT": [
+          160.456,
+          231.92963218378566
+        ],
+        "RIGHT": [
+          138.49599999999998,
+          230.98944927648057
+        ]
+      },
+      "contacts": {
+        "LEFT": {
+          "mode": "SWING",
+          "toeLocal3D": [
+            -0.105,
+            0.2535624999999999,
+            0.09678784026555634
+          ],
+          "toeWorld3D": [
+            -0.105,
+            0.8135625,
+            0.09678784026555634
+          ],
+          "heelLocal3D": [
+            -0.105,
+            0.045321897400868116,
+            0.12391442186277345
+          ],
+          "ankleLocal3D": [
+            -0.105,
+            0.12334061281349365,
+            0.21963840028701023
+          ],
+          "pitchDegrees": 7.421874999999999
+        },
+        "RIGHT": {
+          "mode": "FLAT",
+          "toeLocal3D": [
+            0.105,
+            0.08199999999999996,
+            0.0
+          ],
+          "toeWorld3D": [
+            0.105,
+            0.642,
+            0.0
+          ],
+          "heelLocal3D": [
+            0.105,
+            -0.12800000000000006,
+            0.0
+          ],
+          "ankleLocal3D": [
+            0.105,
+            -0.06300000000000006,
+            0.105
+          ],
+          "pitchDegrees": 0.0
+        }
+      },
+      "sha256": "e784ebe49b40764ea6e21ddb2e1f215b7366e68793a859e4d045703b5f7bed22",
+      "mesh": {
+        "vertices": 4866,
+        "triangles": 6457,
+        "geometryBounds": [
+          88.256,
+          13.099205792956383,
+          174.43260494359203,
+          233.9088596279043
+        ]
+      }
+    }
+  ],
+  "auxEncoding": {
+    "mask": "binary actual geometry silhouette, excludes stylized outline",
+    "depth": "16bit same fixed near/far map: depthUnit=(-1+3*(pixel-1)/65534);0background",
+    "normal": "world unit normal encoded127.5*(n+1),alpha silhouette",
+    "limbID": {
+      "tunic": 1,
+      "hat": 2,
+      "head": 3,
+      "LEFT_thigh": 4,
+      "RIGHT_thigh": 5,
+      "LEFT_shin": 6,
+      "RIGHT_shin": 7,
+      "LEFT_foot": 8,
+      "RIGHT_foot": 9,
+      "LEFT_arm": 10,
+      "RIGHT_arm": 11,
+      "LEFT_hand": 12,
+      "RIGHT_hand": 13,
+      "sash": 14
+    }
+  },
+  "identityAccepted": false,
+  "motionAccepted": false,
+  "runtimeIntegrated": false,
+  "sourceCutoutsUsed": false,
+  "imageGenerationCalls": 0
+}

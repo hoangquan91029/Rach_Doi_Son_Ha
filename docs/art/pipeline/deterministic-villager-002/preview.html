@@ -1,0 +1,42 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Villager motion pilot — gameplay size</title>
+<style>
+body{margin:0;background:#182520;color:#e6dcc4;font:16px system-ui}main{max-width:1024px;margin:24px auto;padding:0 16px}h1{font-size:22px}p{line-height:1.5}.controls{display:flex;gap:18px;align-items:center;flex-wrap:wrap;padding:12px;background:#2b3a31}select,button,input{font:inherit}button,select{background:#eee5ce;color:#203327;border:0;padding:6px}canvas{width:100%;height:320px;display:block;background:#526249;margin-top:16px}#status{color:#e3bd77;font-size:14px}.captions{display:flex;justify-content:space-around;color:#ecdec0}a{color:#e3bd77}
+</style>
+<main>
+<h1>Villager walk / Vòng đi bộ dân làng</h1>
+<p>One direction, complete rendered sprites. Review at real character size.<br>Một hướng, sprite nhân vật hoàn chỉnh. Đánh giá ở kích thước chơi thật.</p>
+<div class="controls">
+<label>Height / Cao <select id="height"><option>64</option><option selected>80</option><option>96</option></select> px</label>
+<button id="pause">Pause / Dừng</button>
+<label>Rate / Tốc độ <select id="rate"><option value="1">1×</option><option value="0.5">0.5× review</option></select></label>
+<label><input type="checkbox" id="markers"> Contact guides / Mốc chân</label>
+<label>Frame / Ảnh <input id="scrub" type="range" min="0" max="7" value="0"></label>
+</div>
+<p id="status">Loading candidate / Đang tải bản thử…</p>
+<canvas id="view" width="1024" height="320"></canvas>
+<div class="captions"><span>Moving ground / Mặt đất di chuyển</span><span>In place / Tại chỗ</span></div>
+<p>Candidate only. Numerical checks and visual approval are separate.<br>Bản thử chưa được duyệt. Kiểm tra số liệu không thay thế đánh giá hình ảnh.</p>
+</main>
+<script type="module">
+import {sampleSpriteAnimation} from '/client/sprite-timing.js';
+const $=s=>document.querySelector(s),canvas=$('#view'),ctx=canvas.getContext('2d'),errors=[];
+window.addEventListener('error',e=>errors.push(e.message));
+window.addEventListener('unhandledrejection',e=>errors.push(String(e.reason)));
+const meta=await fetch('./preview-metadata.json').then(r=>{if(!r.ok)throw Error('Missing pilot metadata');return r.json()});
+let images;if(meta.atlas){const atlas=new Image;atlas.src=meta.atlas.path;await atlas.decode();images=meta.frames.map(()=>atlas)}else images=await Promise.all(meta.frames.map(async frame=>{const img=new Image;img.src=frame.path;await img.decode();return img}));
+const durations=meta.frames.map(f=>({durationMs:f.durationMs}));
+$('#scrub').max=images.length-1;
+let paused=false,timeMs=0,last=performance.now(),draws=0,currentFrame=0;
+$('#pause').onclick=()=>{paused=!paused;$('#pause').textContent=paused?'Play / Chạy':'Pause / Dừng'};
+$('#scrub').oninput=()=>{paused=true;$('#pause').textContent='Play / Chạy';timeMs=durations.slice(0,Number($('#scrub').value)).reduce((s,f)=>s+f.durationMs,0);paint()};
+const snapshot=()=>({ready:true,draws,frame:currentFrame,timeMs,height:Number($('#height').value),paused,errors:[...errors],cssCanvasWidth:canvas.clientWidth,cssCanvasHeight:canvas.clientHeight,dpr:devicePixelRatio,source:meta.sourceCanvas,raster:meta.rasterCanvas,frameCount:images.length,cycleMs:durations.reduce((s,f)=>s+f.durationMs,0),speed80:meta.speed80,usesEngineSampler:true,artStatus:meta.status});
+window.pilotPreview={snapshot,pause:()=>{paused=true;paint()},setFrame:f=>{paused=true;timeMs=durations.slice(0,f).reduce((s,x)=>s+x.durationMs,0)+0.000001;paint()}};
+function grid(x0,width,offset){ctx.save();ctx.beginPath();ctx.rect(x0,0,width,320);ctx.clip();ctx.fillStyle='#56674b';ctx.fillRect(x0,0,width,320);ctx.strokeStyle='#8b96704a';ctx.lineWidth=1;for(let i=-20;i<40;i++){let x=x0+i*32-offset%32;ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x-160,320);ctx.stroke()}for(let y=16;y<320;y+=24){ctx.beginPath();ctx.moveTo(x0,y);ctx.lineTo(x0+width,y);ctx.stroke()}ctx.restore()}
+function character(x,y,frame,scale){const pivot=meta.pivot;const rect=meta.frames[frame].atlasRect;if(rect)ctx.drawImage(images[frame],rect.x,rect.y,rect.width,rect.height,x-pivot[0]*scale,y-pivot[1]*scale,meta.rasterCanvas[0]*scale,meta.rasterCanvas[1]*scale);else ctx.drawImage(images[frame],x-pivot[0]*scale,y-pivot[1]*scale,meta.rasterCanvas[0]*scale,meta.rasterCanvas[1]*scale);if($('#markers').checked){for(const toe of meta.frames[frame].toes||[]){ctx.fillStyle=toe.side==='LEFT'?'#f77':'#7cf';ctx.beginPath();ctx.arc(x+(toe.xy[0]-pivot[0])*scale,y+(toe.xy[1]-pivot[1])*scale,2,0,2*Math.PI);ctx.fill()}}}
+function paint(){const w=canvas.clientWidth||1024,dpr=devicePixelRatio||1;if(canvas.width!==Math.round(w*dpr)||canvas.height!==Math.round(320*dpr)){canvas.width=Math.round(w*dpr);canvas.height=Math.round(320*dpr)}ctx.setTransform(dpr,0,0,dpr,0,0);const height=Number($('#height').value),scale=height/meta.rasterReferenceHeight,travel=meta.speed80*(height/80)*timeMs/1000;currentFrame=sampleSpriteAnimation(durations,{timeMs,loop:true}).frame;grid(0,w/2,travel);grid(w/2,w/2,0);ctx.strokeStyle='#b5bd9177';ctx.beginPath();ctx.moveTo(w/2,0);ctx.lineTo(w/2,320);ctx.stroke();character(w/4,232,currentFrame,scale);character(w*3/4,232,currentFrame,scale);ctx.fillStyle='#eae1c5';ctx.font='14px system-ui';ctx.fillText(`F${currentFrame} · ${height}px · ${meta.status}`,16,28);$('#scrub').value=currentFrame;$('#status').textContent=`${images.length} frames · ${(durations.reduce((s,f)=>s+f.durationMs,0)).toFixed(1)}ms/cycle · ${(meta.speed80*height/80).toFixed(1)}px/s · ${meta.status}`;draws++}
+function loop(now){const dt=Math.min(50,Math.max(0,now-last));last=now;if(!paused)timeMs+=dt*Number($('#rate').value);paint();requestAnimationFrame(loop)}
+requestAnimationFrame(loop);
+</script>

@@ -1,0 +1,166 @@
+{
+  "status": "FROZEN_GEOMETRY_SPEC_PENDING_VISUAL_REVIEW",
+  "canonicalAppearanceReference": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+    "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+    "usage": "inspected identity only; no copied pixels/cutouts/textures"
+  },
+  "renderer": "deterministic original custom triangle meshes, numpy/PIL orthographic z-buffer",
+  "direction": {
+    "screen": "East D07",
+    "world": "engineNE theta315",
+    "engineWorldX": [
+      1,
+      0,
+      0
+    ],
+    "engineWorldY": [
+      0,
+      1,
+      0
+    ],
+    "worldUp": [
+      0,
+      0,
+      1
+    ],
+    "cardinalMapping": "engineX=East; engineY=-North; camera+engineX/+engineY. Anatomical ownership follows explicit local rig axes, not reflected geographic labels.",
+    "screenRight": [
+      0.7071067811865475,
+      -0.7071067811865475,
+      0.0
+    ],
+    "cameraGroundAxis": [
+      0.7071067811865475,
+      0.7071067811865475,
+      0.0
+    ],
+    "localActorRight": [
+      -0.7071067811865475,
+      -0.7071067811865475,
+      -0.0
+    ],
+    "localActorForward": [
+      0.7071067811865475,
+      -0.7071067811865475,
+      0.0
+    ],
+    "anatomicalLeftSash": "local x negative, camera-near side; fixed ownership/material"
+  },
+  "camera": {
+    "type": "orthographic",
+    "elevationRad": 0.4636476090008061,
+    "elevationDegrees": 26.56505117707799,
+    "projection": "screen=(128+128 dot(p,E),237+128[sin(alpha)dot(p,D)-cos(alpha)z]); depth=cos(alpha)dot(p,D)+sin(alpha)z",
+    "canvas": [
+      256,
+      256
+    ],
+    "root": [
+      128,
+      237
+    ],
+    "pixelsPerModelUnit": 128.0,
+    "sourceReferenceCharacterHeight": 224.0,
+    "scalePerPose": false,
+    "runtimeCell": [
+      128,
+      128
+    ],
+    "reviewCharacterTargets": [
+      64,
+      80,
+      96
+    ],
+    "actualProjectionMatrixModelToScreenPerUnit": [
+      [
+        0.7071067811865475,
+        -0.7071067811865475,
+        0.0
+      ],
+      [
+        0.3162277660168379,
+        0.3162277660168379,
+        -0.8944271909999159
+      ],
+      [
+        0.6324555320336758,
+        0.6324555320336758,
+        0.4472135954999579
+      ]
+    ],
+    "groundBasisScreenUnitVectors": {
+      "engineX": [
+        0.7071067811865475,
+        0.3162277660168379
+      ],
+      "engineY": [
+        -0.7071067811865475,
+        0.3162277660168379
+      ]
+    },
+    "groundDiamondVerticalToHorizontalRatio": 0.4472135954999579,
+    "engine54x27ReconciliationAccepted": false
+  },
+  "physicalScale": {
+    "strideModelUnits": 0.64,
+    "gameplay80PixelsPerModelUnit": 45.714285714285715,
+    "runtimeWorldPixelsPerUnit": 41.23846747879945,
+    "modelUnitInRuntimeWorldUnits": 1.1085350283151834,
+    "worldSpeed": 2.1,
+    "screenEastSpeedPxSec": 86.60078170547885,
+    "periodSec": 0.3378392467246273,
+    "eightFrameHoldMs": 42.22990584057841,
+    "limitation": "physical orthographic camera elevationatan(.5) has sin(elevation) ground projection, whereas runtime2:1 grid convention uses .5; only screenEast foot/root speed is calibrated here."
+  },
+  "rig": {
+    "thigh": 0.43,
+    "shin": 0.42,
+    "upperArm": 0.255,
+    "forearm": 0.235,
+    "stanceFraction": 0.6,
+    "heelRiseStartPhase": 0.4,
+    "heelRiseMaxDegrees": 32,
+    "footLength": 0.21,
+    "toeRest": [
+      0,
+      0.13,
+      0
+    ],
+    "heelRest": [
+      0,
+      -0.08,
+      0
+    ],
+    "ankleRest": [
+      0,
+      -0.015,
+      0.105
+    ],
+    "hipHeight": 0.9,
+    "rootTravelPerPhase": 0.64,
+    "cadenceAccepted": false,
+    "leftContactPhase": 0,
+    "rightContactPhase": 0.5,
+    "sourceFootPitch": "rigid whole foot around toe; ankle derived then knee IK; no leg stretch or pivot correction"
+  },
+  "gates": {
+    "boneLengthErrorMax": 1e-08,
+    "stanceToeZMax": 1e-10,
+    "stanceWorldToeSpeedPerPhaseMax": 1e-07,
+    "meshSourceCanvasMax": 256,
+    "sourceCharacterHeightRange": [
+      192,
+      256
+    ],
+    "realHeldSpriteGroundSlipMaxPx": 2.0,
+    "identityAccepted": false,
+    "motionAccepted": false,
+    "runtimeIntegrated": false
+  },
+  "sideAppearanceReference": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D07-screen-East-guided-007/raw.png",
+    "sha256": "45ae1e7a27d3cb9260dc9e5495cf83b4956481b1047ead2975572aff1385aae3",
+    "usage": "actually inspected side silhouette/colors only; no pixels copied"
+  }
+}

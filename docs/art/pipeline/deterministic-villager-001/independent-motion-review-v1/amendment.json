@@ -1,0 +1,12 @@
+{
+  "type": "ADDITIVE_REVIEW_AMENDMENT",
+  "appliesTo": "review.json and review.md in this directory; original files remain unchanged",
+  "finding": "The prior warning that the original travel APNG/GIF compounds ground scrolling with sprite motion was incorrect and is withdrawn.",
+  "evidence": {
+    "frozenPilotScriptSha256": "b5c1472cce875cec649e8331b4f91da2bef64a7f57b910109a360ad727fb62e4",
+    "line": 224,
+    "behavior": "The frame builder calls grid(480,256) with the default zero offset, then places the sprite using an advancing root_x. The ground is static while the character root moves; the sprite and ground do not compound relative velocity. The travel APNG/GIF is a valid diagnostic preview of the eight held cels."
+  },
+  "reviewEffect": "No verdict change. This review's visual inspection used the separate fixed-root/scrolling-ground browser preview with the engine sprite timing sampler. It did not use the travel APNG/GIF as visual motion evidence. The held-cel toe-slip gate remains 3.9087541658px against 2px, so the same narrow motion failure stands.",
+  "serverCleanup": "This agent did not stop, signal, or clean up the root preview server on port 8766. It only read local files, made a read-only HTTP GET check, and opened the preview page in the browser."
+}

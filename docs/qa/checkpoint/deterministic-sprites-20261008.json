@@ -1,0 +1,38 @@
+{
+  "schema": "deterministic-sprite-master37-checkpoint/v1",
+  "liveUsage": {
+    "primaryUsedPercent": 90,
+    "weeklyUsedPercent": 88,
+    "ordinaryAllowed": true,
+    "primaryResetUnix": 1791455923
+  },
+  "oldHead": "985c476",
+  "newImageCalls": 0,
+  "legacyComponentCallsTotal": 6,
+  "handCalls": 0,
+  "pipeline": "DETERMINISTIC_COMPLETE3D_STYLED_SPRITES",
+  "pilots": {
+    "001": {
+      "frames": 8,
+      "tracked80Slip": 3.908754,
+      "accepted": false
+    },
+    "002": {
+      "frames": 24,
+      "tracked64_80_96Slip": [
+        1.40418,
+        1.5093,
+        1.61116
+      ],
+      "numericContactPass": true,
+      "accepted": false
+    }
+  },
+  "fanoutAllowed": false,
+  "fullGameComplete": false,
+  "agents": "STOPPED_AFTER_ATOMIC_WORK",
+  "automation": "ACTIVE_EVERY5H_UPDATED_LATEST_SCOPE",
+  "publicBuildChanged": false,
+  "requiredNext": "sameD07gaitcadencecorrection_notparttextures",
+  "ownedPreviewServerCleanup": "rootlocal8766 only; unknown earlierSIGTERMpreserved; no productionservice restart"
+}

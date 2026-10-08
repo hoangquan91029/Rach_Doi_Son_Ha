@@ -1,0 +1,61 @@
+{
+  "schema": "south-original-right-hand-source-generation-order-draft/v1",
+  "status": "DRAFT_ZERO_CALLS_PARENT_REVIEW_REQUIRED",
+  "contract": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/part-contract-v4-hand-split.json",
+    "sha256": "63859443aad0ec34c44672315b52e45823c03d294bffe74741733f0e43322083",
+    "schema": "south-original-component-contract/v4-hand-split"
+  },
+  "partId": "hand_right_palm",
+  "outputDirectory": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/hand-right-palm-original-01",
+  "callsProspective": 1,
+  "callsAuthorized": 0,
+  "retryCapRequested": 0,
+  "prompt": {
+    "path": "prompt-draft.txt",
+    "sha256": "ee984cc7a56ea600c8b9b575fd0faae9d7296531845eba40b9d77a4f7e7df21d"
+  },
+  "inputsExactOrder": [
+    {
+      "order": 1,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/south-neutral-reference/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "role": "APPEARANCE_REFERENCE_ONLY; South canonical identity appearance and skin."
+    },
+    {
+      "order": 2,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/hand-right-palm-draft-v1/hand-geometry-guide.png",
+      "sha256": "6edf99afcf0216370f1d5db4bc97576804d32192710faf18c7886a6dbaa01594",
+      "role": "GEOMETRY_ONLY; isolated relaxed right-hand shape, scale cue, wrist-cap and viewer-right thumb."
+    }
+  ],
+  "referencedImagePaths": [
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/south-neutral-reference/raw.png",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/hand-right-palm-draft-v1/hand-geometry-guide.png"
+  ],
+  "transparentBackground": true,
+  "canvas": [
+    1254,
+    1254
+  ],
+  "geometryHypothesis": {
+    "displayWristToLowestFingerPx": [
+      764,
+      800
+    ],
+    "nominalExtentWorldUnits": 65,
+    "orientation": "actor RIGHT thumb viewer-right/body-interior in South; no mirroring",
+    "shape": "isolated hand with small bare wrist cap; relaxed straight-down fingers gently curled, not hooked",
+    "calibration": "one static uniform hand scale from actual source landmarks to nominal hand extent; hypothesis pending source and partial assembly diagnostics"
+  },
+  "scope": "One independent original isolated RIGHT hand source. No forearm, sleeve, cuff, clothing, prop, or prior-hand positive appearance reference.",
+  "stopConditions": [
+    "Do not call until parent inspects this exact guide/order and issues separate hash-bound authorization.",
+    "No retries/additional calls implied.",
+    "No source crop/cut, alpha cleanup, mirror, per-pose fit, seal, acceptance, key/loop, or runtime use.",
+    "No integrated lower-arm/hand proportion edits."
+  ],
+  "identityLockSha256": "35fbc7fc558cd32450ddfb6cae76b94bb42994bda36e88c5a3a4df18e239eec3",
+  "wholeKeyCount": 0,
+  "qualifiedLoops": 0
+}

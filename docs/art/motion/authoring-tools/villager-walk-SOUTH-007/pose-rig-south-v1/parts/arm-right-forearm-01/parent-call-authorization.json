@@ -1,0 +1,51 @@
+{
+  "schema": "south-finite-forearm-only-source-edit-authorization/v1",
+  "timestampUtc": "2026-10-08T09:29:29.268115+00:00",
+  "status": "OPEN_EXACTLY_ONE_BUILTIN_FOREARM_ONLY_EDIT",
+  "callsAuthorized": 1,
+  "retryCap": 0,
+  "callsConsumedAtIssue": 0,
+  "partId": "arm_right_forearm",
+  "outputDirectory": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-forearm-01",
+  "promptPath": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-forearm-only-draft-v1/prompt-draft.txt",
+  "promptSha256": "272b61162c3c4fe293c58d06a725e9e975ce37b2a337e09419ca4c2baf571f67",
+  "draftSha256": "8d6fc134561b1eca51b6081826089273fefd1cfee6358ad9a90626df33ef5b8f",
+  "parentReviewSha256": "2df7ac0a5b39ceafccef23f50e9e25b1cfe55c88c0163c8890ee133acca7038d",
+  "contract": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/part-contract-v4-hand-split.json",
+    "sha256": "63859443aad0ec34c44672315b52e45823c03d294bffe74741733f0e43322083"
+  },
+  "inputsExactOrder": [
+    {
+      "order": 1,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-lower-hand-edit-02/raw.png",
+      "sha256": "f95457f586608347dd0648abbf769f0c77092f62da425d65de88d1bd1ba36f0c",
+      "role": "EDIT_TARGET; held bare edit-02 source, forearm reusable, current distal hand must be removed.",
+      "rgbaSha256": "b2260baf913a9aa25c5a0740d13ec03d9ad7b898b6fd68412b33c01462aec748",
+      "actuallyViewedByParent": true
+    },
+    {
+      "order": 2,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/south-neutral-reference/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "role": "APPEARANCE_REFERENCE_ONLY; canonical South identity appearance.",
+      "rgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6",
+      "actuallyViewedByParent": true
+    },
+    {
+      "order": 3,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-forearm-only-draft-v1/forearm-geometry-guide.png",
+      "sha256": "e52625ecc75756af91b7c37331cce49e10d14a3e87799d7fc130865fdcd72257",
+      "role": "GEOMETRY_ONLY; forearm axis, rough monotonic taper, proximal overlap and wrist-cap locations.",
+      "rgbaSha256": "5e90a25c748d728e47300f84fb1065b65c4e714a73162d4375ac5aa8f2097b4f",
+      "actuallyViewedByParent": true
+    }
+  ],
+  "referencedImagePaths": [
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-lower-hand-edit-02/raw.png",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/south-neutral-reference/raw.png",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-forearm-only-draft-v1/forearm-geometry-guide.png"
+  ],
+  "transparentBackground": true,
+  "scope": "Exactly1 builtinforearm-only sourceedit, no hand/cloth. No retry/handcall/otherparts/fullkey/loop/runtime/seal/finalapproval."
+}

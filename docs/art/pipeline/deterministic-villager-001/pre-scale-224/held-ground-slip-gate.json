@@ -1,0 +1,18 @@
+{
+  "status": "FAILED_EIGHT_FRAME_HOLD_SLIP",
+  "thresholdPx": 2,
+  "actual60HzSameContactMaxSlipPx": 3.6300656761151293,
+  "worstContinuousHoldBoundPx": 3.6571428571428575,
+  "physicalScreenSpeedPxSec": 86.60078170547885,
+  "simulationHz": 60,
+  "celFrames": 8,
+  "testCycles": 2,
+  "previewWholeCanvasSize": 91,
+  "actualPreviewScalePxPerModelUnit": 45.5,
+  "mathematicalStanceContactPass": true,
+  "heldSpriteContactPass": false,
+  "sourcePivotCorrection": false,
+  "cadenceAccepted": false,
+  "higherTemporalCelCountRecommended": 24,
+  "recommendation": "Preserve8-frame failed hold pilot. Same eight phase keys need24/32 temporal cels and repeat real60Hz held-ground gate before motion acceptance. No other direction generated."
+}
