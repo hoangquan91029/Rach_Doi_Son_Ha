@@ -1,0 +1,110 @@
+{
+  "schema": "south-lowerarm-held-source-edit-work-order-draft/v1",
+  "status": "DRAFT_ONLY_PARENT_REVIEW_REQUIRED",
+  "calls_authorized_now": 0,
+  "prospective_call_count": 1,
+  "retry_cap": 0,
+  "call_type": "builtin_image_gen_targeted_edit",
+  "gate": "Do not call image_gen until the parent reviews this exact draft and issues hash-bound parent-call-authorization. This work order itself authorizes no call.",
+  "scope": "One edited original for actor RIGHT lowerarm+hand only. No other parts, keys, animation, in-betweens, runtime/integration, atlas, loop review, source cleanup, or acceptance.",
+  "edit_target": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-lower-hand-01/raw.png",
+    "sha256": "1984793eb1fc2c57c1dafac2f454e0f57b6d48d03ead610958a333cf342ebf54",
+    "decoded_rgba_sha256": "cdcc37631c109eb97f7d254cbd106873a3d454eeeb0f73bf00cb76de96591ecf",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "role": "Image 1; only edit target. Preserve immutable original alongside any future result."
+  },
+  "inputs_exact_order": [
+    {
+      "order": 1,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-lower-hand-01/raw.png",
+      "sha256": "1984793eb1fc2c57c1dafac2f454e0f57b6d48d03ead610958a333cf342ebf54",
+      "role": "EDIT_TARGET; actual inspected held source, one part only."
+    },
+    {
+      "order": 2,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/south-neutral-reference/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "decoded_rgba_sha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6",
+      "role": "APPEARANCE_REFERENCE_ONLY; South identity, skin appearance, relaxed hand, and actor RIGHT thumb ownership."
+    },
+    {
+      "order": 3,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-lower-source-edit-draft-v1/guide.png",
+      "sha256": "5ba8ad2e0c48605dfc4c88740e579e322a7b927a2f46ea8a081d125635912055",
+      "role": "GEOMETRY_ONLY; unforeshortened bone plane, forearm taper, wrist-before-palm transition, approximate hand extent. No appearance authority."
+    }
+  ],
+  "excluded_references": [
+    "Do not attach or use upper sleeve, cuff, core, D00, proposal preview, rejected proofs, guide QA, or any other part/art reference. The held raw itself and the identity reference are the only art images."
+  ],
+  "component": {
+    "id": "arm_right_lower_hand",
+    "ownership": "Actor RIGHT bare-skin forearm, wrist, and attached relaxed hand. Lower part contains NO ivory cloth; upper sleeve owns the visible cuff. Front-facing South places this arm viewer-left; actor RIGHT thumb hypothesis is on viewer-right/body-interior.",
+    "target_canvas_px": [
+      1254,
+      1254
+    ],
+    "target_format": "transparent RGBA",
+    "rest_geometry_hypothesis": {
+      "axis": "straight unforeshortened local +Y",
+      "elbow_to_wrist": 180,
+      "approx_width_local_px": {
+        "proximal_forearm": 50,
+        "wrist_and_distal_forearm": 40,
+        "maximum_palm": 65,
+        "distal_forearm_wrist": 40
+      },
+      "hand_extension_beyond_wrist": [
+        60,
+        70
+      ],
+      "wrist_boundary": "Forearm remains near 40 wide through the wrist at local +Y=180. Palm expansion begins strictly distal to the wrist; do not widen into the palm before the wrist landmark.",
+      "uncertainty": "Approximate visual guide values only; do not infer raw source landmarks from them.",
+      "guide_display_scale": 4,
+      "guide_display_note": "Uniform geometry-display enlargement only: 180 local elbow-to-wrist units are drawn as 720 guide pixels; the estimated 65-local hand is about 260 guide pixels. This does not define source scale, calibration, or natural landmarks."
+    },
+    "cuff_ownership": "Upper sleeve owns the visible ivory cuff. Edited lower component is bare skin with only a small hidden proximal overlap.",
+    "proximal_landmark_uncertainty": "Existing source skin emergence under cloth is not a measured anatomical elbow. Preserve boundary uncertainty; do not invent a joint coordinate."
+  },
+  "imagegen_call_draft": {
+    "mode": "builtin",
+    "intent": "edit",
+    "transparent_background": true,
+    "num_outputs": 1,
+    "prompt_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-lower-source-edit-draft-v1/prompt-draft.txt",
+    "referenced_image_paths_if_parent_authorizes": [
+      "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-lower-hand-01/raw.png",
+      "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/south-neutral-reference/raw.png",
+      "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-lower-source-edit-draft-v1/guide.png"
+    ],
+    "tool_id": null,
+    "attempt_id": null,
+    "output_directory_if_parent_authorizes": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-lower-source-edit-draft-v1/raw-output-if-authorized"
+  },
+  "review_basis": {
+    "parent_review_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-lower-hand-01/parent-review.json",
+    "parent_review_sha256": "e496818b6c247e8eb7e4729cb0b8c8cb04ea8632d496a94aaaa9049e7bbc6c12",
+    "landmark_review_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-lower-hand-01/landmark-review.json",
+    "landmark_review_sha256": "6906f8a83dc9a7ca473ba98a1c32f454fcd7a47839e797fddd1f7a25b9e08c9f",
+    "prior_geometry_readme_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-lower-pilot-draft-v2/README.md",
+    "prior_geometry_readme_sha256": "d854e62280181a584838ee70d0e0d01a8b48df318f360c5ca80dfe2628be0508",
+    "upper_part_parent_review_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-upper-01/parent-review.json",
+    "upper_part_parent_review_sha256": "9754de8105e77d7f446e90f8508cdc6bf86a76412777c8b903ec39d9a76f2e23",
+    "upper_part_original_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-upper-01/raw.png",
+    "upper_part_original_sha256": "ebeace7fb22057c786b56e00d8634832b5261d905d9fa91904f57bc413e37d46",
+    "upper_part_reference_use": "Metadata/custody only: parent record establishes that upper owns visible ivory cuff. Neither the upper raw image nor other cloth image is attached or used as an edit reference.",
+    "sealed_contract_note": "The sealed v3 contract/tool pins remain unchanged. This draft follows the later held lower-source parent review and upper-part ownership record; parent may issue a separate ownership clarification receipt."
+  },
+  "acceptance_state": {
+    "source_edit": "not called; draft only",
+    "landmarks": "pending future raw inspection",
+    "calibration_or_sidecar": "not authorized",
+    "part_acceptance": "pending review of any separately authorized output",
+    "motion_qualification": "not authorized",
+    "runtime_use": "not authorized"
+  }
+}
