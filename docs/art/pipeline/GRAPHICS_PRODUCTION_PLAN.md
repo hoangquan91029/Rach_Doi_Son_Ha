@@ -2,6 +2,8 @@
 
 Model routing (human instruction, 2026-10-08): use `model='gpt-6.1-sol'` and `reasoning_effort='low'` for every future code and art task in this project. Do not use Luna anywhere or silently fall back to another model. This supersedes the old master art Luna/HIGH split; preserve the original briefs, assets, directives and receipts as history. This is project routing policy, not a claim that the current chat UI model changed.
 
+Current evidence (South008): one actual illustrated F4 edit exists and is **HELD_CONTACT_KEY_NOT_SELECTED** after native and fixed64/80/96 browser review. Support roles exchange, appearance retains canonical richness, but trailing LEFT toe/heel contact needs correction. Both guides/raw/call/model custody are in `villager-pure2d-SOUTH-008/`. Existing one-call order is exhausted; next prepare a corrected hand2D contact guide and new finite order. No other-key, in-between or fanout call is open. Historical preparation steps below are completed where recorded in that parent review.
+
 Latest authority: PURE_2D_MASTER_DIRECTIVE_20261008.txt explicitly replaces the prior3D proposal. Character production is pure2D illustration and controlled frame-by-frame animation. The previous plan remains recoverable in Git219d1fe; no source asset or experiment is deleted.
 
 **Canonical2D Illustration →2D Character Consistency Specification →Controlled2D Key Poses →2D In-Between Frames →Finished Illustrated PNG Frames →Sprite Atlas →Web Game.**

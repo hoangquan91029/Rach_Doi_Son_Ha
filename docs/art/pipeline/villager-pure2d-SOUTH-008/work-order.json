@@ -1,0 +1,90 @@
+{
+  "schema": "pure2d-whole-image-key-edit/v1",
+  "id": "villager-walk-SOUTH-F04-right-contact-01",
+  "status": "READY_FOR_PARENT_REVIEW_NO_CALL_AUTHORIZED_YET",
+  "method": "BUILT_IN_IMAGE_EDIT_WHOLE_2D_ILLUSTRATION",
+  "scope": {
+    "oneImageEditCall": true,
+    "proposedCallCount": 1,
+    "callsStarted": 0,
+    "retryCount": 0,
+    "onlyFrame": "F4 opposite RIGHT contact",
+    "noF2orF6orInbetweens": true,
+    "noLoopOrFanout": true,
+    "noImageGenerationUntilParentReviewsExactGuideOrderAndIssuesAuthorization": true
+  },
+  "referencesInExactCallOrder": [
+    {
+      "index": 1,
+      "role": "CANONICAL_SOUTH_IDENTITY_APPEARANCE_CAMERA",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975676cfdf082ae02326d97678db",
+      "decodedRGBAsha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6",
+      "use": "appearance, identity, South camera and rich 2D materials only"
+    },
+    {
+      "index": 2,
+      "role": "SELECTED_F0_WHOLE_IMAGE_EDIT_TARGET_AND_CONTINUITY",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/walk/keys/F00-left-contact-01/raw.png",
+      "sha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001",
+      "decodedRGBAsha256": "07bc362e869f40e8a3d5ba0b6fabdd7845f6132c0aa4656a17f762ee46609410",
+      "use": "preserve current illustrated identity, full canvas placement and shape continuity while changing to opposite pose"
+    },
+    {
+      "index": 3,
+      "role": "HAND_AUTHORED_MODEL_ONLY_2D_CONTACT_GUIDE",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-pure2d-SOUTH-008/F4-opposite-contact-guide.png",
+      "sha256": "c5b8be03828254f189bb1fe81f8a0ace4ab5e327f8dbe38236311141810d1fd6",
+      "use": "geometry, labels, ownership and approximate contacts only; not appearance or colors"
+    }
+  ],
+  "nonAttachmentMetadata": [
+    {
+      "role": "F0_PARENT_REVIEW_METADATA_ONLY",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/authoring-tools/villager-walk-SOUTH-007/walk/keys/F00-left-contact-01/parent-review.json",
+      "sha256": "881a8bdb5aa709e1c89e62f69eeae61e6a52cdf1e0e8e1a045fb242843e07ba3",
+      "purpose": "confirms F0 candidate's LEFT/viewer-right support and pivot [654,1140]; not an image reference"
+    }
+  ],
+  "output": {
+    "directory": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-pure2d-SOUTH-008/F4-right-contact-01/",
+    "rawFilename": "raw.png",
+    "requestedCanvas": [
+      1254,
+      1254
+    ],
+    "requestedMode": "RGBA with genuine transparency",
+    "requestedPivot": [
+      654,
+      1140
+    ],
+    "sourceTransform": "none; preserve full canvas, scale, camera and placement",
+    "transformPolicy": "preserve generator raw bytes; do not crop, resize, shift, mirror, clean alpha or repair; if returned dimensions differ, retain raw and mark held"
+  },
+  "reviewScale": {
+    "sourceCanvas": [
+      1254,
+      1254
+    ],
+    "declaredWholeCanvasScale": 0.07079646017699115,
+    "basis": "one uniform 80 logical px / 1130 canonical alpha>=32 body-pixel measurement",
+    "status": "PROPOSED_REVIEW_ONLY_NOT_CALIBRATED_OR_ACCEPTED",
+    "limitations": "old F0 was parent-reviewed at native and fixed 38px only; its 80px presentation is not yet approved. Do not apply per-frame fitting."
+  },
+  "promptFile": "prompt-draft.txt",
+  "promptSha256": "cc2fa0d39109a71574409a430e655d9a110a84656e460424842949d2dfb76184",
+  "guideLandmarks": "F4-landmarks.json",
+  "provenance": {
+    "guideMethod": "hand-authored 2D pixel annotations using the inspected F0 raw only as a faint geometry/continuity underlay; no3D scripts, coordinates, projection, models, limb assets, masks or generated guide",
+    "guideGenerator": "make-guide.py",
+    "noProtectedRepositoryChanges": true
+  },
+  "acceptanceState": {
+    "identity": "PENDING",
+    "oppositeContactSupportExchange": "PENDING_ACTUAL_RAW_AND_PARENT_VISUAL_REVIEW",
+    "80pxReadability": "PENDING; scale is proposed only",
+    "runtime": "NOT_APPROVED",
+    "finalArt": "NOT_APPROVED",
+    "loop": "NOT_AUTHORIZED"
+  }
+}

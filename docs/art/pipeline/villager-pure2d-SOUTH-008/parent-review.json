@@ -1,0 +1,43 @@
+{
+  "schema": "pure2d-south-contact-parent-review/v1",
+  "reviewedUtc": "2026-10-08T12:23:23.971842+00:00",
+  "status": "HELD_CONTACT_KEY_NOT_SELECTED",
+  "source": "F4-right-contact-02/raw.png",
+  "encodedSha256": "90bc3e2fbab8497eb6696078104d3fcce004fcabb1184ebc0b6068d46548253d",
+  "rgbaSha256": "3c275a46b01dd324b4eaa919513b88e7cacf76eb9ce8f29d0a654000514d0bee",
+  "producerProfile": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low"
+  },
+  "imageCalls": 1,
+  "retries": 0,
+  "direction": {
+    "screen": "South",
+    "engine": "D01",
+    "world": "SE"
+  },
+  "evidenceActuallyInspected": [
+    "actual complete raw PNG",
+    "static-review/captures/neutral.png",
+    "static-review/captures/light.png",
+    "static-review/captures/dark.png",
+    "alpha-comparison.json"
+  ],
+  "findings": {
+    "oppositeLegRoles": "PASS_POSE_EXCHANGE_ONLY: RIGHT/viewerLEFT receives forward and LEFT/viewerRIGHT trails compared with F0. Opposite arm swing also exchanged.",
+    "illustratedIdentity": "PASS_CANDIDACY_ONLY: conical hat, ivory wrap, dark LEFT sash, brown trousers, pale wraps, sandals and richly shaded full-body illustration remain recognizable at nominal64/80/96px. No final owner acceptance.",
+    "trailingContact": "HELD: LEFT trailing sandal appears lifted as a whole foot; toe-down push-off/raised-heel ground contact is not convincingly established. Need one corrected 2D toe/heel/sandal contact guide before any targeted edit; do not use this as a selected neighbor.",
+    "landmarks": "Manual estimates from producer: front sole[530,1193], trailing toe[735,1093], heel[687,990]. Differ from guide targets[496,1197],[811,1091],[857,1064], beyond authored18px tolerance. Estimates are not sealed landmark measurements or a world foot-lock test.",
+    "alpha": "No new broad translucency defect established: canonical/F0/F4 alpha>=32 body median253, 10th percentile252, 90th253; common interior samples253. Preserve original partial alpha; no cleanup or forced opacity performed. Low-alpha fringe and small red/yellow edge pixels visible native remain production cleanup/contamination risks to review separately.",
+    "scaleAndAnchor": "Whole1254 canvas preserved. Diagnostic uniformly downsamples128/1254, uses shared source referenceHeight1130 and declared pivot[654,1140]; no per-frame crop/fit/shift. Alpha>=32 heights canonical1130,F0=1165,F4=1156. At nominal80 actual heights80,82.48,81.84px; fixed metadata pivot is not proof of stable anatomy or physical foot contact.",
+    "browser": "Chromium localhost DPR1; actual128 derivatives on neutral/light/dark at nominal64/80/96. Zero captured errors. STATIC ONLY, no loop, production browser or runtime validation.",
+    "motion": "NOT_EVALUATED: no complete four-key set, eight-frame loop, real travel/contact sequence, cadence, pivot wobble or F7->F0 seam. No direction/unit fanout."
+  },
+  "selectedForInbetweens": false,
+  "visualApproved": false,
+  "motionApproved": false,
+  "ownerApproved": false,
+  "runtimeApproved": false,
+  "next": "Preserve both guides and raw source. Prepare a new finite pure2D F4 contact correction order with corrected LEFT trailing toe/heel guide and unchanged selectedF0/canonical identity. Parent verifies contact and fixed family anchor first. Current v2 one-call order is exhausted; no retry or other-key call open.",
+  "fullProject": "NOT_COMPLETE"
+}

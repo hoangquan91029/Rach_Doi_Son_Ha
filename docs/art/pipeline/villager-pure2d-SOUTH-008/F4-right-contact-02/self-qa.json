@@ -1,0 +1,25 @@
+{
+  "status": "CANDIDATE_ONLY_PARENT_REVIEW_PENDING",
+  "calls": {
+    "started": 1,
+    "completedWithActualOutput": 1,
+    "retries": 0
+  },
+  "visualInspection": "Actual raw PNG viewed at full canvas using view_image",
+  "identity": "Conical hat, recognisable face, rich ivory patterned wrap tunic, brown trousers, pale wraps, sandals and asymmetric viewer-right sash visibly retained. Illustration remains coherent whole body. Fine face/cloth repaint differs from F0.",
+  "targetContactOwnership": "Anatomical RIGHT/viewer-left visibly becomes lower front receiving sandal; LEFT/viewer-right is raised behind. This is a substantive opposite pose.",
+  "receivingFoot": "Low front sole appears approximately [530,1193], manual visual estimate, outside authored center [496,1197] +/-18 tolerance. Flat sole intent appears plausible in frontal view.",
+  "trailingFoot": "Approximate toe/frontsole [735,1093] and heel [687,990], manual visual estimates, substantially inward and with different heel geometry from target [811,1091]/[857,1064]. Clear raised heel/toe-down contact is not confidently established from this image; parent must assess.",
+  "armCounterSwing": "LEFT/viewer-right arm visibly forward with bent elbow; RIGHT/viewer-left arm back/lower.",
+  "placement": "Canvas exact 1254 square; character hat top and front ground row broadly consistent. Declared pivot is metadata intent, not proved by visual inspection.",
+  "alpha": "Real zero alpha present; 332732 partial-alpha pixels and only 714 fully opaque pixels. Unexpected widespread partial alpha and alpha bbox touching x=0 must be reviewed; raw alpha left unchanged.",
+  "sourceCustody": "Entire returned original copied byte-identically; no resize/crop/mirror/shift/pixel/alpha repair.",
+  "acceptance": {
+    "technical": "Exact dimensions and RGBA custody verified; alpha quality unresolved",
+    "visual": "NOT_APPROVED",
+    "owner": "NOT_APPROVED",
+    "runtime": "NOT_APPROVED",
+    "loop": "NO_LOOP_PRODUCED_OR_AUTHORIZED"
+  },
+  "next": "Parent review this sole candidate; zero retries or other keys performed."
+}

@@ -1,0 +1,64 @@
+{
+  "status": "ACTUAL_OUTPUT_RECEIVED_PRESERVED",
+  "workerProfile": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low"
+  },
+  "tool": "image_gen.imagegen",
+  "callsPlanned": 1,
+  "callsCompleted": 1,
+  "retries": 0,
+  "transparent_background": true,
+  "prompt": "Image 1 is the canonical SOUTH villager identity, style, camera, lighting and material-quality authority. Image 2 is the selected complete F0 illustration and the whole-image edit target; preserve its character identity and framing while changing the pose to the opposite contact. Image 3 is a MODEL-ONLY hand-authored 2D geometry guide: use only its labels, left/right ownership, approximate contact placement and pose silhouette. Do not copy the guide's colors, annotations, lines or washed F0 underlay into the finished illustration.\n\nCreate exactly one polished, complete, richly detailed 2D SOUTH-facing F4 walk-contact illustration of the same villager. Preserve the canonical face and expression, traditional conical hat, detailed ivory wrap tunic, dark asymmetric waist sash on viewer-right/anatomical LEFT, loose brown trousers, pale lower-leg wraps, sandals, rich natural materials, dimensional soft NW lighting, body proportions and South camera. Repaint the whole figure coherently where required so the supporting leg, trailing leg, tunic overlap and arms connect naturally as one finished illustration; do not use detached limb cutouts, visible seams, or a flat paper-doll look.\n\nOpposite support pose: anatomical RIGHT on viewer-left advances into a low, nearly straight receiving contact with the full sandal flat. The guide's authored approximate F4 sole center is near source point [496,1197] (\u00b118 px); this F4 target is authored independently and is not a measurement or mirror of F0's support foot. Keep the contact near the existing F0 ground row, whose inspected LEFT-support sole center is approximately [764,1202] (\u00b115 px). Anatomical LEFT on viewer-right trails behind, with toe down and heel visibly raised; guide target estimates are toe [811,1091] and raised heel [857,1064] (\u00b118 px). These are source-space drawing aids, not rigid joints. Swing the LEFT arm forward on viewer-right and RIGHT arm back on viewer-left. Let weight settle subtly over the receiving RIGHT leg while preserving the whole-body anchor and natural full-body anatomy.\n\nKeep the original 1254\u00d71254 transparent full canvas, same whole-canvas scale, South view, camera and declared anchor [654,1140]. Keep the F0 character size and overall placement consistent; no crop, mirror, per-frame fit, global resize, translation, or canvas change. Output one complete transparent RGBA PNG only. Do not include guide marks, labels, text, colored skeleton lines, grids, background, extra characters, sheets, or alternate poses. This is one opposite-contact key candidate only, not a loop or approved final art.\n",
+  "referencesInExactOrder": [
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "role": "CANONICAL_SOUTH_IDENTITY_APPEARANCE_CAMERA",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "rgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/walk/keys/F00-left-contact-01/raw.png",
+      "role": "SELECTED_F0_WHOLE_IMAGE_EDIT_TARGET_AND_CONTINUITY",
+      "sha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001",
+      "rgbaSha256": "07bc362e869f40e8a3d5ba0b6fabdd7845f6132c0aa4656a17f762ee46609410"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-pure2d-SOUTH-008/F4-opposite-contact-guide-v2.png",
+      "role": "HAND_AUTHORED_MODEL_ONLY_2D_CONTACT_GUIDE",
+      "sha256": "312c2cc78973de2dea693925522800aed1b953a883b8dfbc67cfd385ff62955e",
+      "rgbaSha256": "32cb56343bd76cd7c795291ef07587eafa32469958b41007f1317aabcad4007a"
+    }
+  ],
+  "generatedSourcePath": "/home/kieu-hoang-quan/.codex/generated_images/01a11b6e-49a9-7203-831b-320d46f6f237/exec-4c480420-17bc-4034-8a27-c115549b1c2b.png",
+  "destination": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-pure2d-SOUTH-008/F4-right-contact-02/raw.png",
+  "createdUtc": "2026-10-08T12:13:37.602381+00:00",
+  "pathClarification": "Parent corrected dispatch typo -01 to actual work-order-v2 -02 before image submission",
+  "callsStarted": 1,
+  "output": {
+    "sourcePath": "/home/kieu-hoang-quan/.codex/generated_images/01a11b6e-49a9-7203-831b-320d46f6f237/exec-4c480420-17bc-4034-8a27-c115549b1c2b.png",
+    "rawPath": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-pure2d-SOUTH-008/F4-right-contact-02/raw.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "encodedSha256": "90bc3e2fbab8497eb6696078104d3fcce004fcabb1184ebc0b6068d46548253d",
+    "rgbaSha256": "3c275a46b01dd324b4eaa919513b88e7cacf76eb9ce8f29d0a654000514d0bee",
+    "alphaExtrema": [
+      0,
+      255
+    ],
+    "alphaZeroPixels": 1239070,
+    "alphaPartialPixels": 332732,
+    "alphaOpaquePixels": 714,
+    "alphaBbox": [
+      0,
+      37,
+      1194,
+      1232
+    ],
+    "sourceBytesIdentical": true,
+    "status": "PENDING_PARENT_REVIEW"
+  }
+}

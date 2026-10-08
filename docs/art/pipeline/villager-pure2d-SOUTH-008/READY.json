@@ -1,0 +1,59 @@
+{
+  "status": "FROZEN_READY_FOR_PARENT_INSPECTION_NO_IMAGE_CALL",
+  "task": "One controlled pure-2D F4 opposite-contact whole-image edit work order and hand-authored guide only.",
+  "referencesViewed": [
+    {
+      "role": "canonical SOUTH identity",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975676cfdf082ae02326d97678db"
+    },
+    {
+      "role": "selected whole-body F0",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/walk/keys/F00-left-contact-01/raw.png",
+      "sha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001"
+    },
+    {
+      "role": "F0 parent review metadata, not attached image",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/authoring-tools/villager-walk-SOUTH-007/walk/keys/F00-left-contact-01/parent-review.json",
+      "sha256": "881a8bdb5aa709e1c89e62f69eeae61e6a52cdf1e0e8e1a045fb242843e07ba3"
+    }
+  ],
+  "artifacts": {
+    "guide": {
+      "path": "F4-opposite-contact-guide.png",
+      "sha256": "c5b8be03828254f189bb1fe81f8a0ace4ab5e327f8dbe38236311141810d1fd6",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    "landmarks": {
+      "path": "F4-landmarks.json",
+      "sha256": "e9adda1dee04d08a6aaa5721c7b3af0b67224cc8c9d88e0cf2c1f53cb165ad2a"
+    },
+    "prompt": {
+      "path": "prompt-draft.txt",
+      "sha256": "cc2fa0d39109a71574409a430e655d9a110a84656e460424842949d2dfb76184"
+    },
+    "workOrder": {
+      "path": "work-order.json",
+      "sha256": "4954c64de9bd33d4131fee00dc823299d3bf065f76cd25d629615c6ec6fc16ca"
+    },
+    "guideGenerator": {
+      "path": "make-guide.py",
+      "sha256": "cb91afe66b2c481e960836a16abe33375d0ee740aa5635a459e4daedd10d7fa0"
+    }
+  },
+  "contactRoleSummary": "F0 anatomical LEFT/viewer-right is forward flat support at estimated sole center [814,1201] \u00b110px; anatomical RIGHT/viewer-left trails (toe [450,1060], raised heel [526,1086], \u00b110px). F4 target swaps: RIGHT/viewer-left receives flat at [496,1197] \u00b118px; LEFT/viewer-right trails toe-down [811,1091] with raised heel [857,1064] \u00b118px; arms counter-swing.",
+  "scaleAndAnchor": "Full 1254\u00b2 canvas, coordinates native 1.0x, pivot/anchor metadata [654,1140] preserved. One uniform 80/1130=0.07079646 whole-canvas scale is proposed for review only; F0 has only fixed38px gameplay review. F0 sole pixels sit around y1201, lower than metadata anchor; discrepancy preserved, not normalized.",
+  "scope": {
+    "builtInImageEditCalls": 0,
+    "proposedFiniteCalls": 1,
+    "retries": 0,
+    "noOtherFrames": true,
+    "no3DInputsOrDependencies": true,
+    "noLimbReconstruction": true,
+    "protectedRepoWrites": 0,
+    "awaitingParentReview": true
+  }
+}

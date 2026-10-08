@@ -1,0 +1,40 @@
+{
+  "schema": "pure2d-parent-finite-edit-order/v1",
+  "status": "ONE_F4_EDIT_AUTHORIZED",
+  "baselineCommit": "fa4e68f",
+  "workerProfile": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low"
+  },
+  "workOrderSha256": "c3e965803cfbd04f49cfe1e27d96785ed5e8aac9d776de82ae1527d3c5621528",
+  "promptSha256": "bc0014ebfb358d17556c4d73061cc53758d233feb92f824e8c189c58b1a7d383",
+  "references": [
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "role": "CANONICAL_SOUTH_IDENTITY_APPEARANCE_CAMERA",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "rgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/walk/keys/F00-left-contact-01/raw.png",
+      "role": "SELECTED_F0_WHOLE_IMAGE_EDIT_TARGET_AND_CONTINUITY",
+      "sha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001",
+      "rgbaSha256": "07bc362e869f40e8a3d5ba0b6fabdd7845f6132c0aa4656a17f762ee46609410"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-pure2d-SOUTH-008/F4-opposite-contact-guide-v2.png",
+      "role": "HAND_AUTHORED_MODEL_ONLY_2D_CONTACT_GUIDE",
+      "sha256": "312c2cc78973de2dea693925522800aed1b953a883b8dfbc67cfd385ff62955e",
+      "rgbaSha256": "32cb56343bd76cd7c795291ef07587eafa32469958b41007f1317aabcad4007a"
+    }
+  ],
+  "guideReview": "Parent actually viewed guidev2 and canonical/F0; anatomicalRIGHT/viewerLEFT receives, LEFT/viewerRIGHT trails. Corrected measuredF0landmarks and sourcehash confirmed. Guide is authoring evidence only.",
+  "maxCalls": 1,
+  "maxRetries": 0,
+  "onlyFrame": 4,
+  "noOtherKeysOrInbetweens": true,
+  "no3D": true,
+  "rawMustRemainUnchanged": true,
+  "noVisualOrRuntimeApproval": true,
+  "stop": "After one edit, inspect actual output and publish custody/selfQA, then stop. Parent reviews separately."
+}

@@ -1,0 +1,13 @@
+<!doctype html><meta charset="utf-8"><title>Pure2D static contact diagnostic</title>
+<style>body{margin:0;background:#192820;color:#eee;font:16px system-ui}main{width:1080px;margin:20px auto}h1{font-size:20px}canvas{display:block;width:1080px;height:510px}select{font:inherit}</style>
+<main><h1>STATIC_CONTACT_DIAGNOSTIC_NOT_MOTION_APPROVAL</h1><p>Three actual whole-frame derivatives. Fixed family anchor and scale. No animation or approval.</p><label>Ground <select id="ground"><option>neutral</option><option>light</option><option>dark</option></select></label><canvas id="view" width="1080" height="510"></canvas></main>
+<script type="module">
+const meta=await fetch('./metadata.json').then(r=>{if(!r.ok)throw Error('Missing metadata');return r.json()});
+if(meta.status!=='STATIC_CONTACT_DIAGNOSTIC_NOT_MOTION_APPROVAL')throw Error(meta.status);
+if(devicePixelRatio!==1)throw Error('DPR1 required');
+const subjects=await Promise.all(meta.subjects.map(async s=>{const image=new Image();image.src=s.path;await image.decode();if(image.width!==128||image.height!==128)throw Error('Runtime size mismatch');return {...s,image}}));
+const canvas=document.querySelector('canvas'),ctx=canvas.getContext('2d'),ground=document.querySelector('select');let draws=0;
+function paint(){const bg=ground.value;ctx.fillStyle={neutral:'#56674b',light:'#d8d7bc',dark:'#182520'}[bg];ctx.fillRect(0,0,1080,510);ctx.fillStyle=bg==='light'?'#203028':'#eee';ctx.font='14px system-ui';subjects.forEach((s,i)=>ctx.fillText(s.role,45+i*360,24));
+[64,80,96].forEach((height,row)=>{const y=155+row*165,scale=height/meta.runtimeReferenceHeight;ctx.fillText(`${height}px nominal`,8,y-110);ctx.strokeStyle=bg==='light'?'#667766':'#aabb9988';ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(1080,y);ctx.stroke();subjects.forEach((s,i)=>{const x=180+i*360;ctx.drawImage(s.image,x-meta.runtimePivot[0]*scale,y-meta.runtimePivot[1]*scale,128*scale,128*scale);ctx.strokeRect(x-2,y-2,4,4)})});draws++}
+paint();ground.onchange=paint;window.contactDiagnostic={snapshot:()=>({ready:draws>0,status:meta.status,ground:ground.value,dpr:devicePixelRatio,heights:[64,80,96],pivot:meta.runtimePivot,referenceHeight:meta.runtimeReferenceHeight,subjects:meta.subjects,draws})};
+</script>

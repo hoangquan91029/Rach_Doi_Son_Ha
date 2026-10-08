@@ -1,0 +1,31 @@
+{
+  "schema": "pure2d-F4-draft-correction/v1",
+  "status": "ADDITIVE_V2_READY_NO_IMAGE_CALL",
+  "preservesV1": true,
+  "v1FilesRemainUnchanged": true,
+  "v1Hashes": {
+    "READY.json": "672cc45c688c9560c9befd7d0b8c40f90eb1576b6c8c104f2d2bc9e8ce0285b0",
+    "F4-landmarks.json": "e9adda1dee04d08a6aaa5721c7b3af0b67224cc8c9d88e0cf2c1f53cb165ad2a",
+    "F4-opposite-contact-guide.png": "c5b8be03828254f189bb1fe81f8a0ace4ab5e327f8dbe38236311141810d1fd6",
+    "prompt-draft.txt": "cc2fa0d39109a71574409a430e655d9a110a84656e460424842949d2dfb76184",
+    "work-order.json": "4954c64de9bd33d4131fee00dc823299d3bf065f76cd25d629615c6ec6fc16ca"
+  },
+  "corrections": [
+    "Canonical South encoded and decoded hashes were recomputed directly from the referenced raw.png; the exact current filesystem digest and RGBA digest are stored in landmarks/work-order v2.",
+    "Removed incorrect F0 right-trailing foot coordinates [450,1060]/[526,1086], which fell outside the actual foot. Corrected inspected landmarks to toe/frontsole about [552,1084] and raised heel about [590,1012], \u00b115px.",
+    "Corrected F0 anatomical LEFT support sole region to approximately [704,1178,820,1211], center [764,1202], with \u00b115px manual estimate.",
+    "Kept F4 target contacts as authored independent geometry estimates; explicitly do not derive them by reflecting F0."
+  ],
+  "v2Files": {
+    "guide": "F4-opposite-contact-guide-v2.png",
+    "landmarks": "F4-landmarks-v2.json",
+    "prompt": "prompt-draft-v2.txt",
+    "workOrder": "work-order-v2.json"
+  },
+  "callStatus": {
+    "builtInImageEditCalls": 0,
+    "proposedOneCall": true,
+    "retries": 0,
+    "awaitingFreshParentReviewAndAuthorization": true
+  }
+}

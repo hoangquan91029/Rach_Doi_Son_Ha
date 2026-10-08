@@ -1,0 +1,88 @@
+{
+  "schema": "pure2d-south-walk-key-landmarks/v1",
+  "status": "MODEL_ONLY_GUIDE_PENDING_PARENT_REVIEW",
+  "frame": "F4",
+  "direction": {"screen": "SOUTH", "engine": "D01", "world": "SE"},
+  "coordinateSystem": {
+    "canvas": [1254, 1254],
+    "origin": "top-left; x right; y down",
+    "sourceToGuideScale": 1.0,
+    "wholeCanvasAnchor": [654, 1140],
+    "anchorSource": "F0 parent review metadata; keep fixed; do not translate/crop/fit full image",
+    "declaredGameplayReviewScale": 0.07079646017699115,
+    "scaleMeaning": "one uniform 80px / 1130px canonical alpha>=32 body-height display scale for visual review only; not applied to guide or raw output; F0's historical 38px preview does not validate 80px acceptance"
+  },
+  "references": {
+    "canonicalSouth": {
+      "role": "identity, appearance, camera and material authority only",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975676cfdf082ae02326d97678db",
+      "decodedRGBAsha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6",
+      "size": [1254, 1254],
+      "alpha32BoundsExclusive": [398, 51, 859, 1181],
+      "alpha32BodyHeight": 1130
+    },
+    "selectedF0": {
+      "role": "whole-image edit target and selected pose continuity only; not a fixed pose",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/walk/keys/F00-left-contact-01/raw.png",
+      "sha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001",
+      "decodedRGBAsha256": "07bc362e869f40e8a3d5ba0b6fabdd7845f6132c0aa4656a17f762ee46609410",
+      "size": [1254, 1254],
+      "alpha128BoundsExclusive": [391, 46, 874, 1209],
+      "parentReview": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/authoring-tools/villager-walk-SOUTH-007/walk/keys/F00-left-contact-01/parent-review.json",
+        "sha256": "881a8bdb5aa709e1c89e62f69eeae61e6a52cdf1e0e8e1a045fb242843e07ba3",
+        "status": "PASS_KEY_CANDIDATE_ONLY",
+        "pivot": [654, 1140]
+      }
+    },
+    "F4Guide": {
+      "role": "MODEL_ONLY 2D pose/contact geometry; no appearance authority",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-pure2d-SOUTH-008/F4-opposite-contact-guide.png",
+      "sourceCanvas": [1254, 1254],
+      "generator": "make-guide.py; hand-authored pixel-space annotations over a faint selected-F0 geometry underlay",
+      "no3DDependency": true
+    }
+  },
+  "observedF0Landmarks": {
+    "confidence": "manual visual estimate from inspected original F0 raw pixels; approximate, not a sealed anatomical measurement",
+    "uncertaintyPx": 10,
+    "leftSupportViewerRight": {
+      "semantic": "anatomical LEFT forward/flat/weight receiving",
+      "soleContactCenter": [814, 1201],
+      "soleContactRegionApprox": [760, 1177, 872, 1211]
+    },
+    "rightTrailingViewerLeft": {
+      "semantic": "anatomical RIGHT trails; heel raised, toe lower",
+      "toe": [450, 1060],
+      "heel": [526, 1086]
+    }
+  },
+  "targetF4Landmarks": {
+    "confidence": "authored target estimates from measured F0 contact spacing; guide aid only, not future-output observations",
+    "uncertaintyPx": 18,
+    "rightSupportViewerLeft": {
+      "semantic": "anatomical RIGHT advances into flat low receiving contact; sole near shared ground line",
+      "soleCenter": [496, 1197],
+      "flatSoleLineEndpoints": [[446, 1199], [548, 1199]],
+      "hip": [600, 820],
+      "knee": [574, 948],
+      "ankle": [528, 1085]
+    },
+    "leftTrailingViewerRight": {
+      "semantic": "anatomical LEFT trails; toe remains down and heel is clearly raised",
+      "toeContact": [811, 1091],
+      "heelRaised": [857, 1064],
+      "hip": [704, 820],
+      "knee": [768, 946],
+      "ankle": [820, 1070]
+    },
+    "armCounterSwing": {
+      "rightArmViewerLeft": "back; illustrative wrist target about [465,693]",
+      "leftArmViewerRight": "forward; illustrative wrist target about [818,650]"
+    },
+    "torso": "settle subtly toward anatomical RIGHT/viewer-left support; keep whole-image anchor/camera/scale unchanged"
+  },
+  "knownDiscrepancy": "F0 visual sole line is about y=1201 while metadata anchor is [654,1140]. Preserve both as existing evidence; do not silently redefine or shift the anchor. Future raw output must be visually measured before any anchor claim.",
+  "notIncluded": ["3D coordinates", "projected rig", "mesh/Blender", "limb textures", "source cutout", "mirror", "frame fitting", "AI-generated guide"]
+}

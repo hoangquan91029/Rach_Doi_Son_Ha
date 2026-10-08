@@ -1,0 +1,38 @@
+{
+  "status": "FROZEN_V2_READY_FOR_PARENT_INSPECTION_NO_IMAGE_CALL",
+  "amendment": "amendment-v2.json",
+  "amendmentSha256": "6392b4113f1f2fcf1e2012a472cc3d2d4d5e3e08d81929b77b696143e15544e8",
+  "guide": {
+    "path": "F4-opposite-contact-guide-v2.png",
+    "sha256": "312c2cc78973de2dea693925522800aed1b953a883b8dfbc67cfd385ff62955e"
+  },
+  "landmarks": {
+    "path": "F4-landmarks-v2.json",
+    "sha256": "bdfb10b06db3f0f87fbd2754d4677a73d8327a4427f0a37e456eae2105126f08"
+  },
+  "prompt": {
+    "path": "prompt-draft-v2.txt",
+    "sha256": "bc0014ebfb358d17556c4d73061cc53758d233feb92f824e8c189c58b1a7d383"
+  },
+  "workOrder": {
+    "path": "work-order-v2.json",
+    "sha256": "c3e965803cfbd04f49cfe1e27d96785ed5e8aac9d776de82ae1527d3c5621528"
+  },
+  "guideGenerator": {
+    "path": "make-guide-v2.py",
+    "sha256": "c3381e7c5680c6198f01515e8ac30c9be19832bb3563bfb558f2f6d426257167"
+  },
+  "v1Preserved": true,
+  "calls": {
+    "started": 0,
+    "planned": 1,
+    "retries": 0
+  },
+  "sourcePins": {
+    "canonicalSouthEncodedSha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+    "canonicalSouthDecodedRgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6",
+    "selectedF0EncodedSha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001",
+    "selectedF0DecodedRgbaSha256": "07bc362e869f40e8a3d5ba0b6fabdd7845f6132c0aa4656a17f762ee46609410",
+    "parentReviewSha256": "881a8bdb5aa709e1c89e62f69eeae61e6a52cdf1e0e8e1a045fb242843e07ba3"
+  }
+}
