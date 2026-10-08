@@ -1,0 +1,33 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Canonical fidelity audit — existing images only</title>
+<style>
+body{margin:0;background:#192820;color:#eee5d4;font:16px system-ui}main{max-width:1120px;margin:24px auto;padding:0 16px}h1{font-size:22px}p{line-height:1.5}canvas{width:100%;height:420px;display:block}select{font:inherit;padding:5px}small{display:block;margin-top:12px;line-height:1.5;color:#d5c9ae}
+</style>
+<main>
+<h1>Canonical appearance / Diện mạo theo asset gốc</h1>
+<p>Existing D07 identity reference versus the motion pilot. Static appearance comparison only.<br>Đối chiếu hình ảnh đã có. Đây không phải kiểm tra hoặc duyệt chuyển động.</p>
+<label>Ground / Nền <select id="ground"><option value="neutral">Neutral</option><option value="light">Light</option><option value="dark">Dark</option></select></label>
+<canvas id="view"></canvas>
+<small>Fixed scales and original pivots. Canonical pose is neutral; pilot poses are walking. Compare clothing, silhouette and material appearance, not their different leg poses.<br>Giữ tỷ lệ và pivot cố định. Dáng đứng gốc và dáng đi khác nhau; đối chiếu trang phục, hình dáng và chất liệu.</small>
+</main>
+<script type="module">
+const meta=await fetch('./metadata.json').then(r=>{if(!r.ok)throw Error('Missing audit metadata');return r.json()});
+const subjects=await Promise.all(meta.subjects.map(async s=>{const image=new Image;image.src=s.path;await image.decode();return{...s,image}}));
+const canvas=document.querySelector('#view'),ctx=canvas.getContext('2d'),ground=document.querySelector('#ground');
+let draws=0;
+function paint(){
+ const w=canvas.clientWidth,dpr=devicePixelRatio||1;canvas.width=Math.round(w*dpr);canvas.height=Math.round(420*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);
+ const light=ground.value==='light';ctx.fillStyle={neutral:'#56674b',light:'#d8d7bc',dark:'#182520'}[ground.value];ctx.fillRect(0,0,w,420);ctx.fillStyle=light?'#24382b':'#f1e6ce';ctx.font='14px system-ui';
+ subjects.forEach((s,i)=>ctx.fillText(s.label,i*w/subjects.length+12,28));
+ for(const [row,h] of [80,96].entries()){
+  const y=180+row*190;ctx.fillText(`${h}px nominal / fixed calibration`,12,y-118);
+  ctx.strokeStyle=light?'#62705d88':'#c4cba088';ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(w,y);ctx.stroke();
+  subjects.forEach((s,i)=>{const scale=h/s.referenceHeight,x=(i+.5)*w/subjects.length;ctx.drawImage(s.image,x-s.pivot[0]*scale,y-s.pivot[1]*scale,s.canvas[0]*scale,s.canvas[1]*scale)});
+ }
+ draws++;
+}
+window.appearanceAudit={snapshot:()=>({ready:true,draws,ground:ground.value,cssWidth:canvas.clientWidth,cssHeight:canvas.clientHeight,dpr:devicePixelRatio,subjects:meta.subjects,heights:[80,96],motionApproval:false})};
+ground.onchange=paint;window.addEventListener('resize',paint);paint();
+</script>

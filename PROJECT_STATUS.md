@@ -12,6 +12,8 @@ Latest human clarification: final graphics must look realistic like the existing
 
 Next: if the review holds this pilot, make only its smallest recorded motion/readability correction. If narrowly accepted, reconcile the physical camera's 26.565° / 0.4472 ground ratio with the engine's 54×27 / 0.5 grid before a second direction. Gate engine distance-phase/stop/pause behavior, immutable union-crop derivation, production gutters/manifest and roster memory budgets separately. No limb cutouts; the old 2D rig is landmarks only. Final owner, engine, crowd and full production-match acceptance remain open.
 
+Latest bounded evidence: canonical-gameplay-audit-001 compares unchanged D07 reference and actual pilot runtime cells at nominal80/96px on light/dark/neutral grounds (1CSSpx per backingpx). Appearance remains HELD: short tunic, insufficient trouser volume, simplified hat profile and flat material shading remain visible during gameplay. The next task is one complete-character garment/hat/material correction on the preserved003 clip, with opposite-contact appearance review first; no limb art or fanout. See its REVIEW.md and hash-bound captures. This diagnostic created no source frame and changed no motion or production code. Near quota is a checkpoint rule, not a hard tool denial: ordinaryUsageAllowed remained true; prior93% automatic-block assumption was corrected.
+
 ---
 
 ## Latest scope — 8 October 2026 (supersedes older next actions below)

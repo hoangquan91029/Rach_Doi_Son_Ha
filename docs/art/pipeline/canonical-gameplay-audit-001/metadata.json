@@ -1,0 +1,131 @@
+{
+  "status": "APPEARANCE_DIAGNOSTIC_EXISTING_IMAGES_ONLY",
+  "subjects": [
+    {
+      "label": "Canonical D07 / identity reference",
+      "path": "/docs/art/characters/villager-neutral-D07-screen-East-guided-007/raw.png",
+      "canvas": [
+        1254,
+        1254
+      ],
+      "pivot": [
+        654,
+        1140
+      ],
+      "referenceHeight": 1130,
+      "calibration": "One static reference measurement: alpha>=32 bounds [510,55,819,1185]. This is not a production crop or alpha repair.",
+      "role": "STATIC_IDENTITY_REFERENCE_NOT_FINAL_ANIMATION",
+      "sha256": "45ae1e7a27d3cb9260dc9e5495cf83b4956481b1047ead2975572aff1385aae3",
+      "alphaBounds": [
+        43,
+        19,
+        1230,
+        1214
+      ],
+      "bodyBoundsAtAlpha32": [
+        510,
+        55,
+        819,
+        1185
+      ],
+      "actualBodyHeightAtNominal80": 80
+    },
+    {
+      "label": "Pilot F0 / LEFT contact",
+      "path": "/docs/art/pipeline/deterministic-villager-003/runtime128/F0.png",
+      "canvas": [
+        128,
+        128
+      ],
+      "pivot": [
+        64,
+        118.5
+      ],
+      "referenceHeight": 116.5,
+      "calibration": "Unchanged pilot233source /2 runtime calibration, no frame fit.",
+      "role": "MOTION_PILOT_VISUAL_HELD",
+      "sha256": "bdeed6799c197a311812568edc06ca711b8bb959ed1b20e298308abe07a8e3bd",
+      "alphaBounds": [
+        40,
+        8,
+        100,
+        126
+      ],
+      "bodyBoundsAtAlpha32": [
+        42,
+        10,
+        98,
+        124
+      ],
+      "actualBodyHeightAtNominal80": 78.28326180257511
+    },
+    {
+      "label": "Pilot F24 / RIGHT contact",
+      "path": "/docs/art/pipeline/deterministic-villager-003/runtime128/F24.png",
+      "canvas": [
+        128,
+        128
+      ],
+      "pivot": [
+        64,
+        118.5
+      ],
+      "referenceHeight": 116.5,
+      "calibration": "Unchanged pilot233source /2 runtime calibration, no frame fit.",
+      "role": "MOTION_PILOT_VISUAL_HELD",
+      "sha256": "c515947983e68d55abe8ee9e98df312242f8eb80730bbdbadce22756c07b4442",
+      "alphaBounds": [
+        40,
+        7,
+        100,
+        125
+      ],
+      "bodyBoundsAtAlpha32": [
+        42,
+        9,
+        98,
+        123
+      ],
+      "actualBodyHeightAtNominal80": 78.28326180257511
+    },
+    {
+      "label": "Pilot F12 / passing phase",
+      "path": "/docs/art/pipeline/deterministic-villager-003/runtime128/F12.png",
+      "canvas": [
+        128,
+        128
+      ],
+      "pivot": [
+        64,
+        118.5
+      ],
+      "referenceHeight": 116.5,
+      "calibration": "Unchanged pilot233source /2 runtime calibration, no frame fit.",
+      "role": "MOTION_PILOT_VISUAL_HELD",
+      "sha256": "219bbcbd934330fbab5340d683c28dfb228ce2e31fcc8ec8bfb464b5ad5f05ca",
+      "alphaBounds": [
+        41,
+        6,
+        87,
+        126
+      ],
+      "bodyBoundsAtAlpha32": [
+        43,
+        8,
+        85,
+        124
+      ],
+      "actualBodyHeightAtNominal80": 79.65665236051503
+    }
+  ],
+  "newSourceFrames": 0,
+  "imageGenerationCalls": 0,
+  "simulationOrArtChanged": false,
+  "noPerFrameFit": true,
+  "notes": [
+    "Historical1254reference preserved; it is not a newly authored sourceframe.",
+    "Canonical neutral pose differs from walking poses; leg stance is not a likeness score.",
+    "Original sourcepivot preserved. Alpha>=32 is an audit measurement only; no alpha cleanup/crop applied.",
+    "The full alpha bbox of the canonical source includes low-alpha fringe; it is not a reliable character-height measurement."
+  ]
+}
