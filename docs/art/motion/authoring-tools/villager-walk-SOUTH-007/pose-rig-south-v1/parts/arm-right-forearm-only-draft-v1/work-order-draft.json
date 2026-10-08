@@ -1,0 +1,73 @@
+{
+  "schema": "south-forearm-only-source-edit-order-draft/v1",
+  "status": "DRAFT_ZERO_CALLS_PARENT_REVIEW_REQUIRED",
+  "contract": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/part-contract-v4-hand-split.json",
+    "sha256": "63859443aad0ec34c44672315b52e45823c03d294bffe74741733f0e43322083",
+    "schema": "south-original-component-contract/v4-hand-split"
+  },
+  "partId": "arm_right_forearm",
+  "outputDirectory": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-forearm-only-edit-01",
+  "callsProspective": 1,
+  "callsAuthorized": 0,
+  "retryCapRequested": 0,
+  "prompt": {
+    "path": "prompt-draft.txt",
+    "sha256": "272b61162c3c4fe293c58d06a725e9e975ce37b2a337e09419ca4c2baf571f67"
+  },
+  "inputsExactOrder": [
+    {
+      "order": 1,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-lower-hand-edit-02/raw.png",
+      "sha256": "f95457f586608347dd0648abbf769f0c77092f62da425d65de88d1bd1ba36f0c",
+      "role": "EDIT_TARGET; held bare edit-02 source, forearm reusable, current distal hand must be removed."
+    },
+    {
+      "order": 2,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/south-neutral-reference/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "role": "APPEARANCE_REFERENCE_ONLY; canonical South identity appearance."
+    },
+    {
+      "order": 3,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-forearm-only-draft-v1/forearm-geometry-guide.png",
+      "sha256": "e52625ecc75756af91b7c37331cce49e10d14a3e87799d7fc130865fdcd72257",
+      "role": "GEOMETRY_ONLY; forearm axis, rough monotonic taper, proximal overlap and wrist-cap locations."
+    }
+  ],
+  "referencedImagePaths": [
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-lower-hand-edit-02/raw.png",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/south-neutral-reference/raw.png",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-forearm-only-draft-v1/forearm-geometry-guide.png"
+  ],
+  "transparentBackground": true,
+  "canvas": [
+    1254,
+    1254
+  ],
+  "sourceFactsAndGeometryGuide": {
+    "proximalOverlapConvention": [
+      621,
+      235
+    ],
+    "wristCapCandidate": [
+      608,
+      680
+    ],
+    "roughWidthsRawPx": {
+      "proximal": 200,
+      "wrist": 120
+    },
+    "uncertainty": "rough source-space guide, not sealed landmark measurement"
+  },
+  "scope": "One forearm-only bare-skin source edit, with no hand/palm/fingers/cuff/cloth. Preserve usable forearm; remove existing hand distal to wrist cap.",
+  "stopConditions": [
+    "Do not call until parent inspects this exact guide/order and issues hash-bound authorization.",
+    "No retries or additional calls.",
+    "No integrated forearm-plus-hand proportion edits.",
+    "No repo writes, runtime changes, sealing, acceptance, keys, or loops."
+  ],
+  "identityLockSha256": "35fbcf7c558cd32450ddfb6cae76b94bb42994bda36e88c5a3a4df18e239eec3",
+  "wholeKeyCount": 0,
+  "qualifiedLoops": 0
+}
