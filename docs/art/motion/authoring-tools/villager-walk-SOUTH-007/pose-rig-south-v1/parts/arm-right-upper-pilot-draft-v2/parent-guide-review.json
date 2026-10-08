@@ -1,0 +1,19 @@
+{
+  "schema": "south-upperarm-guide-parent-review/v2",
+  "timestampUtc": "2026-10-08T01:36:12.644180+00:00",
+  "status": "PASS_INTERNAL_UNFORESHORTENED_TEXTURE_GUIDE_ONLY",
+  "actuallyViewed": [
+    "guide.png",
+    "guide-qa.png"
+  ],
+  "workOrderDraftSha256": "bf7d2839854bdb29a88e38ac53baad0c27d2e9e5e4647d3f5c215e5511d6dbc8",
+  "promptDraftSha256": "fafced36f2783833cf24b3f3aa619049ece5023f69395d5a2307bb98877ef494",
+  "cleanGuideSha256": "fa558cc189776ab2fb496481bd789e300248fb60b7ad5ae2be5f8bc609bfc9bf",
+  "qaGuideSha256": "138a58fd6d59fb7a1f6f34df37442e8367cd6ee841fe191d19b20265a934b1f5",
+  "decision": "Straight200 local bone-plane axis with approximate80/60 widths; South camera not baked into geometry. Canvas placement and endpoint caps are guide hypotheses only. Actual raw landmarks must be inspected and measured; one uniform fit to local200 must then be validated against real core assembly at native and fixed38.",
+  "v1PreservedRejectedForRestTexture": "173.33 already-projected length would cause double projection and width inflation under endpoint-to200 uniform calibration.",
+  "attachment3": "Calibrated actual core partial preview is accepted as cloth/cap overlap appearance reference only; immutable original raw remains preserved.",
+  "motionQualified": false,
+  "finalArtApproved": false,
+  "imageCallsMade": 0
+}

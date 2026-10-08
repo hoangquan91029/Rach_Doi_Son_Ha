@@ -1,0 +1,119 @@
+{
+  "schema": "south-upperarm-original-pilot-work-order-draft/v1",
+  "status": "DRAFT_CLOSED_NO_IMAGE_CALL_AUTHORIZED",
+  "art_calls_authorized": 0,
+  "retry_cap_if_later_authorized": 0,
+  "scope": "One original actor RIGHT upper-arm/sleeve component only. No remaining parts, no full-body keys, no animation, no runtime/integration.",
+  "gate": "Requires parent finite authorization after tooling-v4 validates the source-driven core adjustment and parent inspects this exact draft. This packet itself authorizes no call.",
+  "source_contract": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/part-contract-v3.json",
+    "sha256": "e4715f935a88952a7f6d477d29879641fda6041bf4e783169c6664a386afa7bc",
+    "schema": "south-illustrated-bitmap-rig-part-contract/v3",
+    "core_attachment_target": {
+      "id": "actor_right_shoulder_cap",
+      "sourceRawXY": [
+        430,
+        484
+      ],
+      "restScreenXY": [
+        495.6299472118419,
+        342.1125238796266
+      ],
+      "method": "authored_cloth_attachment_convention",
+      "uncertaintyRawPx": 14,
+      "status": "provisional_pending_tooling_v4_core_inspector"
+    }
+  },
+  "component": {
+    "id": "arm_right_upper",
+    "canvas_px": [
+      1254,
+      1254
+    ],
+    "transparent_background": true,
+    "ownership": "actor RIGHT upper arm and ivory sleeve; shoulder-cap underlap through elbow cuff overlap",
+    "rest_pose": "neutral South, unbent shoulder-to-elbow axis",
+    "model_bone_length": 200.0,
+    "projected_guide_endpoints": {
+      "shoulder_xy": [
+        495.6299472118419,
+        342.1125238796266
+      ],
+      "elbow_xy": [
+        481.0089369823421,
+        514.8230498622925
+      ],
+      "projected_distance_px": 173.32830041669547,
+      "provenance": "model-only neutralized rest axis from v3 plan; not measured from original arm art"
+    },
+    "visual_width_guide_approx": {
+      "proximal_px": 80,
+      "elbow_px": 60,
+      "provenance": "visual estimate from canonical South sleeve, not measurement"
+    },
+    "overlap": {
+      "shoulder": "extend under core mask; core closes proximal seam",
+      "elbow": "sleeve cuff overlaps future actor RIGHT lower-arm art",
+      "uncertainty": "actual edge and natural endpoints are measured after raw output"
+    },
+    "single_uniform_calibration": "pending actual raw original inspection; record byte/RGBA hashes and natural endpoints; no anisotropic source scaling, crop, cleanup, tracing, redraw, or per-frame fit"
+  },
+  "inputs_exact_order_if_parent_later_authorizes": [
+    {
+      "order": 1,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/south-neutral-reference/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "decoded_rgba_sha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6",
+      "role": "Canonical South identity, direction, neutral body scale, sleeve silhouette and costume appearance authority."
+    },
+    {
+      "order": 2,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+      "decoded_rgba_sha256": "c960d206222a191b903a8cc1a679e82bdce8d8c51df4010a935f444b3cacdb9c",
+      "role": "Established character painterly style, palette/material rendering and northwest-light appearance authority; not direction authority."
+    },
+    {
+      "order": 3,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/core-head-torso-pelvis-01/raw.png",
+      "sha256": "b5d8542917309bacf90dfd117d8d2da287d9b6eb9c63c4b358e8e5d09f250c6a",
+      "decoded_rgba_sha256": "d7cd792b95e7ff329909b0fbd682e24b6f7e5beb4fa2eec3af427ea1916c6e52",
+      "role": "Exact central-core identity/material and actor-RIGHT/viewer-left shoulder cloth cap seam reference; not global scale authority, no source edits."
+    },
+    {
+      "order": 4,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-upper-pilot-draft-v1/guide.png",
+      "sha256": "d9a2f81da5298d84ffe23f4852c9af5e12ca84750766df4c69d9c28937d0c6d5",
+      "decoded_rgba_sha256": "172052ffe88c1943501d294a8c2608df359298c762af620ee1eb399ba6ae28bc",
+      "role": "MODEL_ONLY geometry guide controlling this component silhouette, anatomical RIGHT ownership, neutral axis and joint-overlap placement only; no appearance authority."
+    }
+  ],
+  "geometry_guide": {
+    "clean_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-upper-pilot-draft-v1/guide.png",
+    "sha256": "d9a2f81da5298d84ffe23f4852c9af5e12ca84750766df4c69d9c28937d0c6d5",
+    "qa_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-upper-pilot-draft-v1/guide-qa.png",
+    "qa_sha256": "5b936675caf3c249a37761cdbc3599a5593ede652ed765f2bce3380d9267f733",
+    "note": "Clean guide contains only one gray component silhouette on transparent canvas. QA copy labels the provisional points. Neither is artwork."
+  },
+  "prompt_draft_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-upper-pilot-draft-v1/prompt-draft.txt",
+  "dependencies": {
+    "core_inspector": "tooling-v4 source-driven core inspector must pass after one authorized model adjustment",
+    "whole_character_keys": "Not available until all nine original components are separately authorized, inspected and calibrated."
+  },
+  "future_output_directory": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-upper-pilot-draft-v1/raw-output-if-authorized",
+  "custody_required_if_authorized": [
+    "exact prompt/input hashes and actual attachment order",
+    "immutable raw original PNG byte and decoded-RGBA hashes",
+    "native inspection and fixed 38px full-canvas review",
+    "measure natural shoulder/elbow landmarks and overlap bounds after raw exists",
+    "record one uniform static raw-to-rest calibration only after measurement"
+  ],
+  "approvals": {
+    "identity_art": "existing sealed South identity only",
+    "model_geometry": "draft only",
+    "generation": "not authorized",
+    "part_acceptance": "pending actual raw review",
+    "whole_loop": "not authorized",
+    "runtime_integration": "not authorized"
+  }
+}

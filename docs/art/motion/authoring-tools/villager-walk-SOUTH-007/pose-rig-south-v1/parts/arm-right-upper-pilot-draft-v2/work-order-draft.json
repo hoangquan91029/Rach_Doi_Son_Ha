@@ -1,0 +1,106 @@
+{
+  "schema": "south-upperarm-original-pilot-work-order-draft/v2",
+  "status": "DRAFT_CLOSED_NO_IMAGE_CALL_AUTHORIZED",
+  "calls_authorized_now": 0,
+  "retry_cap_if_separately_authorized": 0,
+  "scope": "One original actor RIGHT upper-arm/sleeve only. No other part, animation key, in-between, atlas, runtime output, or integration.",
+  "finite_gate": "A separate parent authorization must name this exact v2 prompt/input set and allow one call. Until then do not generate.",
+  "validated_contract": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/part-contract-v3.json",
+    "sha256": "e4715f935a88952a7f6d477d29879641fda6041bf4e783169c6664a386afa7bc",
+    "core_sidecar_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/core-head-torso-pelvis-01/sidecar-v3.json",
+    "core_sidecar_sha256": "1554ddbd9cf9a6d81ff4840d2dd941baebd5f387bd2ca598541f2fa0e1329b8d",
+    "core_partial_inspection": "PASS_SOURCE_DRIVEN_CORE_MODEL_ADJUSTMENT_TECHNICAL_INSPECTION_ONLY; actual art and all motion remain unqualified."
+  },
+  "tooling_v4": {
+    "bake_keys_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/tooling-v4/bake_keys.py",
+    "sha256": "b5ad84368a091cf1b2643e687fe7a98b7465906a52ede606a7eb89b791d29923",
+    "inspect_core_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/tooling-v4/inspect_core.py",
+    "sha256_inspect_core": "e93f079df341489406e07bccd313d2645a40124a2dc6dbdfe87319164c523435",
+    "receipt_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/tooling-v4/tooling-receipt.json",
+    "receipt_sha256": "86ff62df241482639d5698846ecb0abe9b20e773140b5918bb377d3da2b4050a",
+    "behavior": "one uniform raw-to-bone-rest calibration maps actual observed proximal/distal raw points to local [0,0] and [0,200]; final 3D fixed South camera projection occurs later in baker."
+  },
+  "part": {
+    "id": "arm_right_upper",
+    "ownership": "Actor RIGHT upper arm and ivory sleeve; shoulder cap underlap through elbow cuff overlap. In South front view it appears viewer-left.",
+    "canvas_px": [
+      1254,
+      1254
+    ],
+    "background": "transparent RGBA",
+    "local_bone_plane": {
+      "proximal": [
+        0,
+        0
+      ],
+      "distal": [
+        0,
+        200
+      ],
+      "bone_length": 200,
+      "orientation": "straight unforeshortened local Y axis; arbitrary full-canvas visual placement is not a world/screen attachment point",
+      "width_profile_approx_px": {
+        "proximal": 80,
+        "distal": 60
+      },
+      "width_source": "visual estimate from canonical South sleeve; approximate style/shape guidance only."
+    },
+    "attachment": "Actor RIGHT shoulder attaches to the calibrated core cloth-cap convention in part-contract-v3. The guide\u2019s proximal end is only a model layout hypothesis, not a measured core/limb source landmark.",
+    "actual_landmarks": "Natural shoulder and elbow coordinates are pending future raw original. Record method observed_original, uncertainty, evidence, byte/RGBA hashes, and one uniform calibration; no invented or guide-derived coordinates.",
+    "camera": "Final 26.565 degree fixed South camera is applied by v4 baker. Do not pre-foreshorten guide/source texture or double-apply projection.",
+    "source_calibration": "Only one immutable uniform scale/rotation/translation after actual raw inspection. No anisotropic scale, crop, alpha cleanup, tracing, source edits, or per-frame fit."
+  },
+  "inputs_exact_order_if_parent_authorizes": [
+    {
+      "order": 1,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/south-neutral-reference/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "decoded_rgba_sha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6",
+      "role": "Canonical South identity, neutral pose, costume and body-scale authority."
+    },
+    {
+      "order": 2,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+      "decoded_rgba_sha256": "c960d206222a191b903a8cc1a679e82bdce8d8c51df4010a935f444b3cacdb9c",
+      "role": "Established painterly style, material rendering, palette and northwest-light authority; not direction or global scale authority."
+    },
+    {
+      "order": 3,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/core-rest-inspection-v3/partial-rest-core.png",
+      "sha256": "03998fdc1524d6d5216c80ae8620382cc3eca5d91d467b58c6bdfc4129f78f7a",
+      "decoded_rgba_sha256": "cb09a045147832d877b42d0d051819c3f09d2fbf86f9281ae3189e4f2cb5fca5",
+      "role": "Actual core after sealed uniform static calibration; cloth weave, ivory tone and actual shoulder-cap overlap/style reference only. Preview is not a source edit or final art."
+    },
+    {
+      "order": 4,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-upper-pilot-draft-v2/guide.png",
+      "sha256": "fa558cc189776ab2fb496481bd789e300248fb60b7ad5ae2be5f8bc609bfc9bf",
+      "decoded_rgba_sha256": "85cbd43348dff5d3b2d132703feb10dd11dbfe310c9925225a359b134951974a",
+      "role": "MODEL_ONLY local bone-plane geometry: actor RIGHT upper arm silhouette, unforeshortened 200-unit shoulder-to-elbow axis, proximal/distal overlap. No appearance authority."
+    }
+  ],
+  "guide": {
+    "clean_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-upper-pilot-draft-v2/guide.png",
+    "sha256": "fa558cc189776ab2fb496481bd789e300248fb60b7ad5ae2be5f8bc609bfc9bf",
+    "qa_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-upper-pilot-draft-v2/guide-qa.png",
+    "qa_sha256": "138a58fd6d59fb7a1f6f34df37442e8367cd6ee841fe191d19b20265a934b1f5",
+    "definition": "Clean guide is a single geometry-only gray sleeve on transparent full canvas; no identity or appearance authority."
+  },
+  "prompt_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-upper-pilot-draft-v2/prompt-draft.txt",
+  "pose_plan": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-guides/walk-south-keys-v3/coordinate-plan.json",
+    "sha256": "dd685b2b444e8c1b1cdcab04be06d92651c81657cf265489c90cee56203abfcf",
+    "use": "defines fixed South camera and model lengths; the guide is the local 200-unit bone plane, not projected key art."
+  },
+  "future_raw_output_directory": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-upper-pilot-draft-v2/raw-output-if-authorized",
+  "approval_state": {
+    "core_technical_inspection": "passed partial rest inspection only",
+    "upperarm_geometry": "draft pending parent visual review",
+    "generation": "not authorized",
+    "part_acceptance": "pending actual raw and sidecar inspection",
+    "whole_loop": "not authorized",
+    "runtime_integration": "not authorized"
+  }
+}
