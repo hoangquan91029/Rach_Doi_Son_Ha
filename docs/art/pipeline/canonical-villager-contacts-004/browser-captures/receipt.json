@@ -1,0 +1,319 @@
+{
+  "status": "STATIC_COMPARISON_CAPTURED",
+  "browser": "151.0.7922.34",
+  "url": "http://127.0.0.1:8767/docs/art/pipeline/canonical-villager-contacts-004/preview.html",
+  "errors": [],
+  "states": [
+    {
+      "ready": true,
+      "draws": 2,
+      "ground": "neutral",
+      "cssWidth": 1120,
+      "cssHeight": 420,
+      "dpr": 1,
+      "subjects": [
+        {
+          "label": "Canonical D07 / identity reference",
+          "path": "/docs/art/characters/villager-neutral-D07-screen-East-guided-007/raw.png",
+          "canvas": [
+            1254,
+            1254
+          ],
+          "pivot": [
+            654,
+            1140
+          ],
+          "referenceHeight": 1130,
+          "calibration": "One static reference measurement: alpha>=32 bounds [510,55,819,1185]. This is not a production crop or alpha repair.",
+          "role": "STATIC_IDENTITY_REFERENCE_NOT_FINAL_ANIMATION",
+          "sha256": "45ae1e7a27d3cb9260dc9e5495cf83b4956481b1047ead2975572aff1385aae3",
+          "alphaBounds": [
+            43,
+            19,
+            1230,
+            1214
+          ],
+          "bodyBoundsAtAlpha32": [
+            510,
+            55,
+            819,
+            1185
+          ],
+          "actualBodyHeightAtNominal80": 80
+        },
+        {
+          "label": "Pilot F0 / LEFT contact",
+          "path": "/docs/art/pipeline/deterministic-villager-003/runtime128/F0.png",
+          "canvas": [
+            128,
+            128
+          ],
+          "pivot": [
+            64,
+            118.5
+          ],
+          "referenceHeight": 116.5,
+          "calibration": "Unchanged pilot233source /2 runtime calibration, no frame fit.",
+          "role": "MOTION_PILOT_VISUAL_HELD",
+          "sha256": "bdeed6799c197a311812568edc06ca711b8bb959ed1b20e298308abe07a8e3bd",
+          "alphaBounds": [
+            40,
+            8,
+            100,
+            126
+          ],
+          "bodyBoundsAtAlpha32": [
+            42,
+            10,
+            98,
+            124
+          ],
+          "actualBodyHeightAtNominal80": 78.28326180257511
+        },
+        {
+          "label": "Appearance004 / LEFT contact",
+          "path": "/docs/art/pipeline/canonical-villager-contacts-004/rendered-contacts/F0-runtime128.png",
+          "canvas": [
+            128,
+            128
+          ],
+          "pivot": [
+            64,
+            118.5
+          ],
+          "referenceHeight": 116.5,
+          "sha256": "d2e5692f27df255a66d7f95620c45bb48600c097b73438e4e1c0d32e0fd6676d",
+          "role": "HELD_TWO_CONTACT_APPEARANCE_EXPERIMENT"
+        },
+        {
+          "label": "Appearance004 / RIGHT contact",
+          "path": "/docs/art/pipeline/canonical-villager-contacts-004/rendered-contacts/F24-runtime128.png",
+          "canvas": [
+            128,
+            128
+          ],
+          "pivot": [
+            64,
+            118.5
+          ],
+          "referenceHeight": 116.5,
+          "sha256": "6b83878749db7cb7c7675dbe36527b38e63d6c9594b625303a76a7139d558744",
+          "role": "HELD_TWO_CONTACT_APPEARANCE_EXPERIMENT"
+        }
+      ],
+      "heights": [
+        80,
+        96
+      ],
+      "motionApproval": false
+    },
+    {
+      "ready": true,
+      "draws": 3,
+      "ground": "light",
+      "cssWidth": 1120,
+      "cssHeight": 420,
+      "dpr": 1,
+      "subjects": [
+        {
+          "label": "Canonical D07 / identity reference",
+          "path": "/docs/art/characters/villager-neutral-D07-screen-East-guided-007/raw.png",
+          "canvas": [
+            1254,
+            1254
+          ],
+          "pivot": [
+            654,
+            1140
+          ],
+          "referenceHeight": 1130,
+          "calibration": "One static reference measurement: alpha>=32 bounds [510,55,819,1185]. This is not a production crop or alpha repair.",
+          "role": "STATIC_IDENTITY_REFERENCE_NOT_FINAL_ANIMATION",
+          "sha256": "45ae1e7a27d3cb9260dc9e5495cf83b4956481b1047ead2975572aff1385aae3",
+          "alphaBounds": [
+            43,
+            19,
+            1230,
+            1214
+          ],
+          "bodyBoundsAtAlpha32": [
+            510,
+            55,
+            819,
+            1185
+          ],
+          "actualBodyHeightAtNominal80": 80
+        },
+        {
+          "label": "Pilot F0 / LEFT contact",
+          "path": "/docs/art/pipeline/deterministic-villager-003/runtime128/F0.png",
+          "canvas": [
+            128,
+            128
+          ],
+          "pivot": [
+            64,
+            118.5
+          ],
+          "referenceHeight": 116.5,
+          "calibration": "Unchanged pilot233source /2 runtime calibration, no frame fit.",
+          "role": "MOTION_PILOT_VISUAL_HELD",
+          "sha256": "bdeed6799c197a311812568edc06ca711b8bb959ed1b20e298308abe07a8e3bd",
+          "alphaBounds": [
+            40,
+            8,
+            100,
+            126
+          ],
+          "bodyBoundsAtAlpha32": [
+            42,
+            10,
+            98,
+            124
+          ],
+          "actualBodyHeightAtNominal80": 78.28326180257511
+        },
+        {
+          "label": "Appearance004 / LEFT contact",
+          "path": "/docs/art/pipeline/canonical-villager-contacts-004/rendered-contacts/F0-runtime128.png",
+          "canvas": [
+            128,
+            128
+          ],
+          "pivot": [
+            64,
+            118.5
+          ],
+          "referenceHeight": 116.5,
+          "sha256": "d2e5692f27df255a66d7f95620c45bb48600c097b73438e4e1c0d32e0fd6676d",
+          "role": "HELD_TWO_CONTACT_APPEARANCE_EXPERIMENT"
+        },
+        {
+          "label": "Appearance004 / RIGHT contact",
+          "path": "/docs/art/pipeline/canonical-villager-contacts-004/rendered-contacts/F24-runtime128.png",
+          "canvas": [
+            128,
+            128
+          ],
+          "pivot": [
+            64,
+            118.5
+          ],
+          "referenceHeight": 116.5,
+          "sha256": "6b83878749db7cb7c7675dbe36527b38e63d6c9594b625303a76a7139d558744",
+          "role": "HELD_TWO_CONTACT_APPEARANCE_EXPERIMENT"
+        }
+      ],
+      "heights": [
+        80,
+        96
+      ],
+      "motionApproval": false
+    },
+    {
+      "ready": true,
+      "draws": 4,
+      "ground": "dark",
+      "cssWidth": 1120,
+      "cssHeight": 420,
+      "dpr": 1,
+      "subjects": [
+        {
+          "label": "Canonical D07 / identity reference",
+          "path": "/docs/art/characters/villager-neutral-D07-screen-East-guided-007/raw.png",
+          "canvas": [
+            1254,
+            1254
+          ],
+          "pivot": [
+            654,
+            1140
+          ],
+          "referenceHeight": 1130,
+          "calibration": "One static reference measurement: alpha>=32 bounds [510,55,819,1185]. This is not a production crop or alpha repair.",
+          "role": "STATIC_IDENTITY_REFERENCE_NOT_FINAL_ANIMATION",
+          "sha256": "45ae1e7a27d3cb9260dc9e5495cf83b4956481b1047ead2975572aff1385aae3",
+          "alphaBounds": [
+            43,
+            19,
+            1230,
+            1214
+          ],
+          "bodyBoundsAtAlpha32": [
+            510,
+            55,
+            819,
+            1185
+          ],
+          "actualBodyHeightAtNominal80": 80
+        },
+        {
+          "label": "Pilot F0 / LEFT contact",
+          "path": "/docs/art/pipeline/deterministic-villager-003/runtime128/F0.png",
+          "canvas": [
+            128,
+            128
+          ],
+          "pivot": [
+            64,
+            118.5
+          ],
+          "referenceHeight": 116.5,
+          "calibration": "Unchanged pilot233source /2 runtime calibration, no frame fit.",
+          "role": "MOTION_PILOT_VISUAL_HELD",
+          "sha256": "bdeed6799c197a311812568edc06ca711b8bb959ed1b20e298308abe07a8e3bd",
+          "alphaBounds": [
+            40,
+            8,
+            100,
+            126
+          ],
+          "bodyBoundsAtAlpha32": [
+            42,
+            10,
+            98,
+            124
+          ],
+          "actualBodyHeightAtNominal80": 78.28326180257511
+        },
+        {
+          "label": "Appearance004 / LEFT contact",
+          "path": "/docs/art/pipeline/canonical-villager-contacts-004/rendered-contacts/F0-runtime128.png",
+          "canvas": [
+            128,
+            128
+          ],
+          "pivot": [
+            64,
+            118.5
+          ],
+          "referenceHeight": 116.5,
+          "sha256": "d2e5692f27df255a66d7f95620c45bb48600c097b73438e4e1c0d32e0fd6676d",
+          "role": "HELD_TWO_CONTACT_APPEARANCE_EXPERIMENT"
+        },
+        {
+          "label": "Appearance004 / RIGHT contact",
+          "path": "/docs/art/pipeline/canonical-villager-contacts-004/rendered-contacts/F24-runtime128.png",
+          "canvas": [
+            128,
+            128
+          ],
+          "pivot": [
+            64,
+            118.5
+          ],
+          "referenceHeight": 116.5,
+          "sha256": "6b83878749db7cb7c7675dbe36527b38e63d6c9594b625303a76a7139d558744",
+          "role": "HELD_TWO_CONTACT_APPEARANCE_EXPERIMENT"
+        }
+      ],
+      "heights": [
+        80,
+        96
+      ],
+      "motionApproval": false
+    }
+  ],
+  "artApproved": false,
+  "motionApproved": false
+}

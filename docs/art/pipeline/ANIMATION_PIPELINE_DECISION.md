@@ -1,10 +1,19 @@
 # Deterministic sprite production decision
 
-> Latest human clarification: the blocky 001–003 reconstruction is NOT approved final art. Final graphics must match the realism of the existing assets. Deterministic 3D-to-sprite remains a candidate final path only after canonical visual fidelity passes. See CANONICAL_REALISM_CLARIFICATION_20261008.md.
+> Latest human clarification: the blocky 001–004 reconstruction is NOT approved final art. Final graphics must match the realism of the existing assets. Deterministic 3D-to-sprite remains a candidate final path only after canonical visual fidelity passes. See CANONICAL_REALISM_CLARIFICATION_20261008.md.
 
 Status: pipeline decision and bounded pilot in progress; no production art acceptance. Latest authority: [scope correction](SCOPE_CORRECTION_20261008.md). Earlier [research brief](ANIMATION_PIPELINE_RESEARCH_BRIEF.txt) is preserved; its mandatory ten AI attempts per contact frame is superseded by the optional-AI correction.
 
-## Actual pilot evidence
+## Current evidence and next appearance gate
+
+Pilot 003 supersedes the earlier cadence hypotheses below: one D07 screen-East walk, 48 complete frames, 649.579324 ms at unchanged world speed2.1. Independent one-build reproduction matches all48 PNG/RGBA frames. Independent review and its direction-label amendment give PASS_NARROW for this motion only. Canonical identity/realism remains HUMAN_VISUAL_HELD; no direction/unit fanout.
+
+The gameplay-size audit prompted exactly two complete contacts in canonical-villager-contacts-004. The source256/runtime128 appearance trial improves garment length and trouser volume, but remains HUMAN_VISUAL_HELD at nominal80/96px. Parent REVIEW.md, parent-review.json and parent-intake.json bind the actual static browser evidence. The regular hat, rigid garment panels and simplified materials remain below canonical realism. The primitive-geometry-plus-diffuse-only method is held as a final-art path; qualify a faithful whole model with coherent reusable surface treatment instead. Texture alone cannot correct the outfit's shape.
+
+The garment follows the pelvis rather than moving coherently around the knees. Bound parent-cloth-risk.json confirms leading knees outside a conservative ring envelope and narrow front-opening azimuth; this is a binding risk, not exact collision proof or full-loop visibility acceptance. Next: one complete canonical-faithful appearance and knee-aware garment binding on the frozen003 clip, opposite-contact appearance review before any full48 export. No work order is open. Fixedpivot/reference233 and source192–256/runtime96–128 character ranges remain binding. No separate limb art, per-frame fitting, additional AI calls or direction/unit fanout. Changed clothing must repeat actual independent loop review once its appearance passes.
+The previous93% weekly threshold was treated as a hard block too early: live tools still allowed ordinary usage. Near-quota handling remains a requirement to bound and checkpoint the current atomic task, rather than inventing a universal numerical denial threshold. Do not open a large refactor or uncontrolled art batch.
+
+## Earlier pilot evidence (preserved history)
 
 Pilot001 now exists: original articulated3D meshes, eight complete256² source cels,128² runtime derivatives/atlas, depth/normal/limb-ID masks and64/80/96px review outputs. Actual source character heights223–237px, fixed reference233px, fixed source pivot[128,237]. The final physical clip period is324.7897ms, rounded eight-frame preview325ms. No AI calls or source cutouts were used. The256→128 reduction gives runtime character111.5–118.5px, within the requested96–128px range. Gameplay80px review uses the actual128px runtime derivative, fixed80/116.5 scale; no responsive CSS shrink is allowed to change declared character height.
 

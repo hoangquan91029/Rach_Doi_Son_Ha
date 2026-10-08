@@ -1,0 +1,44 @@
+{
+  "status": "GARMENT_BINDING_RISK_CONFIRMED_NOT_FULL_COLLISION_SOLVER",
+  "method": "Locked003 leading knee center vs interpolated004 pelvis-following skirt ring at same height; conservative7.5percent radial expansion. No source edits.",
+  "contacts": [
+    {
+      "frame": 0,
+      "leadingSide": "LEFT",
+      "kneeLocal": [
+        -0.11394475840981562,
+        0.2825054149890849,
+        0.5158998394509051
+      ],
+      "garmentRestZ": 0.5758998394509052,
+      "ringRadiusX": 0.31623004816472844,
+      "ringRadiusY": 0.2148736670139181,
+      "maxFoldExpansion": 1.075,
+      "kneeCenterEllipseRatio": 1.25650321560251,
+      "outsideConservativeShellEnvelope": true,
+      "deviationFromFrontOpeningRad": 0.3337323474671936,
+      "frontOpeningHalfAngleRad": 0.2,
+      "kneeCenterOutsideOpeningAzimuth": true
+    },
+    {
+      "frame": 24,
+      "leadingSide": "RIGHT",
+      "kneeLocal": [
+        0.11394475840981563,
+        0.28250541498908516,
+        0.5158998394509053
+      ],
+      "garmentRestZ": 0.5758998394509054,
+      "ringRadiusX": 0.3162300481647284,
+      "ringRadiusY": 0.21487366701391805,
+      "maxFoldExpansion": 1.075,
+      "kneeCenterEllipseRatio": 1.2565032156025113,
+      "outsideConservativeShellEnvelope": true,
+      "deviationFromFrontOpeningRad": 0.33373234746719316,
+      "frontOpeningHalfAngleRad": 0.2,
+      "kneeCenterOutsideOpeningAzimuth": true
+    }
+  ],
+  "finding": "Leading knee centers lie outside the skirt radial envelope and outside its narrow front-opening azimuth. This exposes the missing knee-aware drape. It is not an exact triangle-triangle collision proof or a full-loop visibility verdict.",
+  "next": "Bind/deform complete garment geometry coherently around the preserved leg tracks before a fullloop; do not hide the problem with cutouts, perframefit or lowered quality gates."
+}

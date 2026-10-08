@@ -1,0 +1,19 @@
+# Parent appearance review — contacts 004
+
+**Appearance HELD. These blocky units are motion scaffolding, not official graphics.** The final requirement remains realistic artwork matching the existing canonical assets at default gameplay zoom. This is a parent review of exactly two static contacts; it is not an independent loop review or human owner approval.
+
+The longer ivory garment, fuller brown trousers and softer shading improve the previous silhouette. The actual runtime128 browser comparison at nominal80/96px still shows a regular faceted hat, rigid apron-like panels and simplified cloth/skin forms. The figure remains below the canonical reference's natural garment construction and illustrated material appearance. More temporal samples or numerical contact passes cannot remedy that appearance.
+
+The authoring trial changed whole-character geometry and continuous diffuse shading, not a coherent canonical surface texture/bake. Stop repeating the primitive-geometry-plus-diffuse-only method as a final-art solution. The next appearance task must combine faithful whole-model silhouette, outfit and hat with reusable coherent materials/surface treatment derived from the existing artwork. A surface bake alone cannot fix incorrect garment construction. No isolated limb textures, cutout rotation, anatomical micro-detail or zoomed-in beauty target.
+
+The skirt currently follows pelvis bob/sway without knee-aware drape. Parent geometry evidence places both leading knee centers outside a conservative ring envelope (normalized ratio1.2565) and outside the narrow front opening. This confirms a garment-binding risk, not an exact triangle collision or complete-loop visibility verdict. Bind/deform the complete garment around the unchanged003 leg tracks before further loop exports; do not mask the risk by changing pivot, fitting each frame, shortening clothing or weakening the gate.
+
+Exactly one render build produced F0/phase0 and F24/phase0.5. Source canvases256² contain226px characters; runtime128² gives113px characters. Fixed reference233, pivot[128,237] and runtime pivot[64,118.5] are retained. This 2:1 reduction keeps source and runtime characters within requested ranges and permits real-size80/96px review without oversized new source frames. The 501-phase preflight proves preserved pose/foot landmarks and bounds only. Pilot003's narrow accepted motion remains separate; changed004 clothing has no loop, foot-visibility, cadence or seam acceptance.
+
+Parent viewed actual contact sheets and neutral browser comparison; Chromium static captures cover neutral/light/dark backgrounds at DPR1 with zero captured errors. No Firefox check, in-engine integration or production match was performed for004. Original reference and all003 inputs are unchanged. All copied producer files and declared source/frame/auxiliary pins verify; parent intake binds every retained004 file. Frozen producer paths remain in original receipts intentionally.
+
+**Next:** qualify one complete canonical-faithful appearance in the same D07 direction before exporting another walk. Keep003 contacts/IK/stride1.28/hip0.84/cycle649.579324ms/worldspeed2.1/camera/calibration locked. Use a new external authoring directory and finite reviewed order, with whole-garment binding and opposite-contact appearance evidence first. No work order is currently open. Once appearance qualifies, independently review the changed complete loop at gameplay size, then reconcile exact camera and engine distance-phase before other directions/units.
+
+No retries, additional frames, AI calls, fanout, runtime changes or deployment. The full game and final visual gate remain incomplete.
+
+VI: Các unit hình khối chỉ là bản thử chuyển động. Hai pose004 có trang phục đầy hơn nhưng vẫn chưa đạt đồ họa chân thực của asset gốc; tà áo cũng chưa biến dạng theo chân. Giữ bản này chưa đạt, hoàn thiện một nhân vật nguyên khối bám sát hình mẫu trước khi xuất tiếp vòng đi hoặc nhân rộng.

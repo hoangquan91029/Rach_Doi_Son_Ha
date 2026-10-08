@@ -1,4 +1,16 @@
-## Current checkpoint: pilot 003 cadence correction
+## Current checkpoint: contacts004 appearance HELD
+
+Latest authority: final graphics must be realistic like the existing canonical assets. The blocky001–004 figures are motion scaffolding, not official art. One bounded004 trial produced exactly two complete contacts (F0/F24), with longer garments, fuller trousers and softer shading. Actual runtime128 comparisons at nominal80/96px remain too simplified; appearance is HELD. No full48 export or fanout. See docs/art/pipeline/canonical-villager-contacts-004/REVIEW.md and parent-review.json.
+
+All declared source/frame/auxiliary pins and copied producer files verify. Source256 canvases contain226px characters; runtime128 contains113px characters, fixedpivot/reference233 retained. The501-phase preflight retains003 pose/foot tracks and bounds, but does not solve garment collision. Parent knee/ring evidence confirms missing knee-aware garment binding; it is not exact triangle collision or a full-loop verdict. Chromium static light/dark/neutral captures report zero errors; this is not new loop or production acceptance. Protected runtime, originals and frozen001–003 remain byte-identical to20e3576.
+
+Exact next task: qualify one complete canonical-faithful model/surface appearance in the same D07 direction, with coherent garment deformation around the unchanged003 legs. Stop primitive-geometry-plus-diffuse-only appearance iteration. Faithful silhouette/outfit/hat and reusable material treatment must pass opposite-contact gameplay-size review before any new full loop. No separate limb art or per-frame fitting. Keep003 stride1.28, hip0.84, cycle649.579324ms, worldspeed2.1, camera, pivot and calibration. Then independently review changed clothing in the full loop; exact camera and engine distance-clock gates remain open before fanout. No new work order is open; workers are idle.
+
+Latest live usage checked during this checkpoint:42% primary /95% weekly, ordinaryUsageAllowed=true, checked at 2026-10-08T11:37:18.620694+00:00. Near quota means finish this atomic checkpoint, not a hard numerical tool denial. No reset credit used. Existing five-hour quiet continuation remains ACTIVE. No production code, service, bundle or deployment changes; full game NOT COMPLETE and final visual gate FAIL.
+
+---
+
+## Historical checkpoint: pilot 003 cadence correction
 
 The five-hour quota reset was verified live at 0% primary / 89% weekly after one timer tied to the reported reset. Latest verified usage at 11:02:51 UTC is 22% primary / 92% weekly. Finish only this pilot's review and checkpoint; no new gait, model, art call or direction/unit fanout. No reset credit used. The quiet five-hour recurring continuation remains ACTIVE.
 
@@ -16,7 +28,7 @@ Latest bounded evidence: canonical-gameplay-audit-001 compares unchanged D07 ref
 
 ---
 
-## Latest scope — 8 October 2026 (supersedes older next actions below)
+## Preserved scope correction — current next action is the contacts004 checkpoint above
 
 User stopped separate limb textures and cut-out assembly. Preferred FINAL art path is deterministic complete clothed3D rendering to styled2D sprite frames. Keep old2D rig as landmarks only; preserve all original identity/leader/held sources. New source character192–256px, runtime96–128px, gameplay64–96px. AI repaint optional after real-size flatness review; no image calls open. See docs/art/pipeline/SCOPE_CORRECTION_20261008.md and ANIMATION_PIPELINE_DECISION.md.
 

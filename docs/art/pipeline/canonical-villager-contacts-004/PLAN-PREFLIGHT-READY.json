@@ -1,0 +1,104 @@
+{
+  "schema": "canonical-villager-appearance-contact-pilot/v1",
+  "status": "PREFLIGHT_READY_AWAITING_PARENT_REVIEW_BEFORE_TWO_CONTACT_RENDER",
+  "revision": "appearance-only full character on frozen003 motion/camera scaffold",
+  "direction": "D07 Screen East / engine-world NE theta=315 only",
+  "visualObjective": "At fixed 80px and 96px full-scene scale, move the whole mesh toward the approved canonical reference: long wrapped ivory tunic with hanging panels and soft low-frequency folds; loose brown trousers with gathered cuff and pale lower-leg wraps; visibly tilted/asymmetric conical hat with underside lip; smooth coherent whole-character cloth and skin shading.",
+  "appearanceChanges": [
+    "Extended tunic shell to knee-level hem and authored overlapping drape panels/seams with broad folds; no image-space operations.",
+    "Widened and reshaped brown trousers on the unchanged leg bones; extended brown cloth below knee into a gathered transition and retained pale wraps below.",
+    "Strengthened the existing physical hat tilt/profile, made the brim cross-section asymmetric, and deepened its layered underside lip.",
+    "Replaced four quantized hard diffuse bands with continuous soft diffuse shading; no separate limb textures, microdetail, repaint or source pixel reuse."
+  ],
+  "lockedScaffold": {
+    "poseImplementation": "Exact model003 pose/foot functions, joints, stance state, stride and IK retained by copied source; validated at 501 phases.",
+    "sourceCanvas": [
+      256,
+      256
+    ],
+    "sourcePivot": [
+      128,
+      237
+    ],
+    "runtimeCell": [
+      128,
+      128
+    ],
+    "runtimePivot": [
+      64,
+      118.5
+    ],
+    "referenceHeight": 233,
+    "stride": 1.28,
+    "hipRest": 0.84,
+    "periodMs": 649.5793241743906,
+    "worldSpeed": 2.1,
+    "camera": "existing 26.565-degree physical projection; no camera or pivot changes"
+  },
+  "renderBudget": {
+    "completeFrames": 2,
+    "phases": [
+      0,
+      0.5
+    ],
+    "frameNames": [
+      "F0-left-contact",
+      "F24-right-contact"
+    ],
+    "frameCanvas": [
+      256,
+      256
+    ],
+    "runtimeDerivatives": [
+      128,
+      128
+    ],
+    "auxiliaryPerFrame": [
+      "mask",
+      "depth",
+      "normal",
+      "limbID"
+    ],
+    "renderBuildCountBeforeRender": 0,
+    "maximumRenderBuilds": 1,
+    "retries": 0,
+    "loopOrFanout": false
+  },
+  "preflight": {
+    "status": "READY_FOR_PARENT_PREFLIGHT_REVIEW",
+    "phaseSamples": 501,
+    "minMeshZ": 0.0,
+    "groundClearancePass": true,
+    "maxHipAnkleReach": 0.8272802120186089,
+    "wholeMeshCanvasBoundsPass": true,
+    "lockedJointPoseMaxDelta": 0,
+    "lockedFootLandmarkMaxDelta": 0,
+    "lockedMotionTracksEqual": true,
+    "clothSelfIntersection": "NOT SOLVED BY NUMERICAL PREFLIGHT; pending visual review at F0/F24 only",
+    "legOcclusion": "NOT SOLVED BY NUMERICAL PREFLIGHT; pending visual review at F0/F24 only",
+    "motionMetrics": "Pose/feet/mode/phase are byte-source-identical functions from frozen003; no cadence, gait, root, camera, pivot or scale edits.",
+    "inputs": {
+      "frozenModel003": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/deterministic-villager-003/model003.py",
+        "sha256": "2e03d733f742ec60cc046c026fcd2ee13f2413d9bcd8cbeefe652aaeccddbd59"
+      },
+      "appearanceModel": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/canonical-villager-contacts-004/model-appearance-v1.py",
+        "sha256": "421aad76da67de32b3f1c95353c2d5d465d77820e0306ac8c9a9190162651192"
+      },
+      "canonicalEastReference": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D07-screen-East-guided-007/raw.png",
+        "sha256": "45ae1e7a27d3cb9260dc9e5495cf83b4956481b1047ead2975572aff1385aae3"
+      },
+      "animation003": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/deterministic-villager-003/animation.json",
+        "sha256": "575a00c7fff3da2ca237e3667ff16e9ddd1d33f84ec4271082c9e9daa4345f97"
+      }
+    }
+  },
+  "limitations": [
+    "No visual acceptance is claimed by numerical preflight.",
+    "Cloth self-intersection and gait-dependent leg occlusion are unresolved until review of F0/F24; if either violates the gates, stop and record failure rather than alter the frozen source.",
+    "Static contacts do not establish motion, identity, runtime integration, owner approval, production approval, or direction fanout."
+  ]
+}

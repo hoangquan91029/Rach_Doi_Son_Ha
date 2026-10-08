@@ -1,0 +1,121 @@
+{
+  "schema": "canonical-villager-appearance-final-review/v1",
+  "status": "TWO_CONTACTS_READY_VISUAL_GATE_HELD",
+  "direction": "D07 Screen East / engine-world NE theta=315 only",
+  "renderBuildCount": 1,
+  "completeContactCount": 2,
+  "retryCount": 0,
+  "extraFrameCount": 0,
+  "renderReceipt": {
+    "path": "rendered-contacts/receipt.json",
+    "sha256": "4b549c781eb9b0c6ba1e19461c3db77699736ab86caedf3d3369ba4f9d3c46cb"
+  },
+  "sourceHashes": {
+    "appearanceSource": {
+      "path": "model-appearance-v1.py",
+      "sha256": "421aad76da67de32b3f1c95353c2d5d465d77820e0306ac8c9a9190162651192"
+    },
+    "twoContactRenderer": {
+      "path": "render-two-contacts.py",
+      "sha256": "2a5e578d8bb3b6e0625f6387e5b196f1b2e7ae4db7e68a8e7c8187131850416e"
+    },
+    "frozen003Model": {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/deterministic-villager-003/model003.py",
+      "sha256": "2e03d733f742ec60cc046c026fcd2ee13f2413d9bcd8cbeefe652aaeccddbd59"
+    },
+    "canonicalEastRaw": {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D07-screen-East-guided-007/raw.png",
+      "sha256": "45ae1e7a27d3cb9260dc9e5495cf83b4956481b1047ead2975572aff1385aae3"
+    }
+  },
+  "renderedContacts": [
+    {
+      "frame": "F0",
+      "phase": 0.0,
+      "sourceCanvas": [
+        256,
+        256
+      ],
+      "sourcePivot": [
+        128,
+        237
+      ],
+      "alphaBounds": [
+        81,
+        21,
+        196,
+        247
+      ],
+      "actualAlphaHeight": 226,
+      "geometryBounds": [
+        82.42688000000001,
+        21.845221982249114,
+        194.81599999999997,
+        245.92996107494315
+      ],
+      "vertices": 5628,
+      "triangles": 7635,
+      "pngSha256": "f497e8ad3c935643bb13a6ef8801221e32fb099abbf2bc8aa7c546ded494372d",
+      "runtime128Sha256": "d2e5692f27df255a66d7f95620c45bb48600c097b73438e4e1c0d32e0fd6676d",
+      "auxSha256": {
+        "mask": "02209915a29733cced854c71ec995564bb8d440dcb05015267a91a2f4c8cba18",
+        "depth": "c158b0d96e5e1b97e6b2cc55f2c76217460b14a0068be1ac51c1aecbe16164e6",
+        "normal": "46d843e5ab985aaafe0f5a7010767065e42508ce84b86fc5182bf5594e2c9eed",
+        "limbID": "fd5f4f904e0be41b7b483e53635cc4515f9f54f248e81a5620336a4c4ad17d61"
+      }
+    },
+    {
+      "frame": "F24",
+      "phase": 0.5,
+      "sourceCanvas": [
+        256,
+        256
+      ],
+      "sourcePivot": [
+        128,
+        237
+      ],
+      "alphaBounds": [
+        82,
+        19,
+        196,
+        245
+      ],
+      "actualAlphaHeight": 226,
+      "geometryBounds": [
+        82.42688000000001,
+        20.013435095081263,
+        194.81599999999997,
+        244.1043942630179
+      ],
+      "vertices": 5628,
+      "triangles": 7635,
+      "pngSha256": "c9f0e50460dad347b7547a03c742c0511a852df5aab17981a7a4bf8f3c82ef69",
+      "runtime128Sha256": "6b83878749db7cb7c7675dbe36527b38e63d6c9594b625303a76a7139d558744",
+      "auxSha256": {
+        "mask": "585f5695d2c7b4df296c50154536e94d4546a8b9f9fe487c622bf2e98a0c3d7b",
+        "depth": "6944ffa701e68dc6589fefa9868b9e0288f0c48e4e012393b71fde702ccec540",
+        "normal": "bd3d8f3483d8889a1d72f128a9631ad83a5e9a45dcd69284562a17204208dc1f",
+        "limbID": "c597be1129a3c74a32aa3d3d152898673e6770cdfd2e784977c9913b6b304365"
+      }
+    }
+  ],
+  "gameplayContactSheets": {
+    "80": "2cd4941dff8f4bc2702e6836f81eee90eb7e0e0284c09396043c7ee282a18b41",
+    "96": "7964880df09040a75093a9c416e6856ccdb8aaa06edff2620558ee14b9eb7fd6"
+  },
+  "preflight": {
+    "path": "preflight.json",
+    "sha256": "db1a715bd12d5375f700f85220cf99eeed2f2f9c63d28d07945dc45413e825c8",
+    "result": "501 phase pass; minZ 0; in-canvas bounds; max hip-ankle reach 0.82728; exact locked pose/foot landmark match."
+  },
+  "visualAssessment": {
+    "result": "HUMAN_VISUAL_HELD",
+    "at80and96": "Longer ivory drape, wider brown trousers, and the cream lower-wrap transition are visible; the two stances retain the opposite contact poses. The continuous diffuse response is softer than the prior four-band treatment.",
+    "canonicalMatch": "Still insufficient. The complete figure reads as simplified low-poly/toon art, with a faceted regular hat, rigid-looking apron/skirt panels, coarse surfaces and limited natural garment/skin shading. It does not achieve the requested realistic appearance of the existing canonical asset. The hat profile is somewhat tilted/asymmetric but remains too uniform.",
+    "collisionAndOcclusion": "Unresolved. The skirt follows the pelvis, not the knees. F0/F24 do not prove cloth collision, self-intersection, or all-phase leg visibility. Numerical preflight did not test these.",
+    "decision": "Keep this as a held appearance experiment, not official art. No motion, identity, owner, runtime, production, or fanout approval follows from two static contacts."
+  },
+  "lockedMotion": "Unchanged from frozen003: pose, joints, contacts, stride1.28, hip0.84, period649.579324ms, worldSpeed2.1, camera, pivot and 233 reference calibration.",
+  "stop": "No more render calls, no full48 export, no retry, no material or geometry changes after the two authorized contacts."
+}
