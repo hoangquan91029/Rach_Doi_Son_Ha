@@ -1,0 +1,31 @@
+{
+  "modelRouting": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low"
+  },
+  "maxCalls": 2,
+  "retryCap": 0,
+  "callsConsumed": 0,
+  "slots": [
+    "F04",
+    "F06"
+  ],
+  "conditional": "F06 only ifF04 brief89/~80pxlook coherent",
+  "originalPlan": "0218slot1080ms unchanged",
+  "canvas": [
+    1254,
+    1254
+  ],
+  "pivot": [
+    654,
+    1140
+  ],
+  "runtimeCanvas": 128,
+  "renderSize": 89,
+  "inputPins": {
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-018/F00-call01/raw.png": "e6293fe86eaefc2c9f414241320ab178758cdd52ef09946344364b6a41e41117",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-021/F02-call01/raw.png": "bb10c55f7f648e82b952ef955989ad1ffe38eb0332c9aa8d0381557a1867f4e9"
+  },
+  "noOtherCalls": true,
+  "loopAndRuntimeApproval": "ABSENT"
+}

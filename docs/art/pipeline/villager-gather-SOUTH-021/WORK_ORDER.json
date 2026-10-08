@@ -1,0 +1,97 @@
+{
+  "schema": "finite-low-amplitude-wood-chop/v1",
+  "modelRouting": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low"
+  },
+  "protectedHEAD": "7e33902",
+  "method": "one new complete wholecharacter ImageGen edit;not region-edit or rig-export",
+  "stage": "AUTHORIZED_SINGLE_F02_CALL",
+  "canvas": [
+    1254,
+    1254
+  ],
+  "pivot": [
+    654,
+    1140
+  ],
+  "runtimeCanvas": 128,
+  "renderSize": 89,
+  "loop": true,
+  "cycleMs": 1080,
+  "fullPlan": [
+    {
+      "slot": "F00",
+      "pose": "existing low ready",
+      "durationMs": 170,
+      "status": "SELECTED_EXISTING_BASE"
+    },
+    {
+      "slot": "F01",
+      "pose": "small lift transition",
+      "durationMs": 130,
+      "status": "PLANNED_NO_CALL"
+    },
+    {
+      "slot": "F02",
+      "pose": "low shoulder windup",
+      "durationMs": 160,
+      "status": "PLANNED_NO_CALL"
+    },
+    {
+      "slot": "F03",
+      "pose": "short forward downswing",
+      "durationMs": 80,
+      "status": "PLANNED_NO_CALL"
+    },
+    {
+      "slot": "F04",
+      "pose": "low forward chop",
+      "durationMs": 100,
+      "status": "PLANNED_NO_CALL"
+    },
+    {
+      "slot": "F05",
+      "pose": "small followthrough",
+      "durationMs": 110,
+      "status": "PLANNED_NO_CALL"
+    },
+    {
+      "slot": "F06",
+      "pose": "low recovery",
+      "durationMs": 150,
+      "status": "PLANNED_NO_CALL"
+    },
+    {
+      "slot": "F07",
+      "pose": "return ready",
+      "durationMs": 180,
+      "status": "PLANNED_NO_CALL"
+    }
+  ],
+  "keyOrder": [
+    "F00 existing",
+    "F02 new low windup",
+    "F04 low forward chop",
+    "F06 recovery"
+  ],
+  "laterInbetweens": [
+    "F01",
+    "F03",
+    "F05",
+    "F07"
+  ],
+  "maxCallsThisOrder": 1,
+  "slotThisOrder": "F02",
+  "callsConsumed": 0,
+  "retryCap": 0,
+  "allowedAttachments": [
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-018/F00-call01/raw.png",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-gather-SOUTH-021/guide-F02-low-windup.png"
+  ],
+  "inputs": {
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-018/F00-call01/raw.png": "e6293fe86eaefc2c9f414241320ab178758cdd52ef09946344364b6a41e41117"
+  },
+  "remainingGates": "source selection pending; full revised loop absent; no independent motion/runtime/owner/production approval; other slots need laterGO",
+  "next": "Exactly one builtin call, then brief fixed89/~80px look and stop."
+}

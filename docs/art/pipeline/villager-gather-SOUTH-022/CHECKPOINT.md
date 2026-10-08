@@ -1,0 +1,5 @@
+# Low-amplitude wood-chop022 — F04 key selected only
+
+Original order allowed two keys; near-quota amendment capped it at one completed F04 call, zero retries. F06 guide/prompt remain prepared and uncalled, not a generated frame. Raw/source receipts preserved byte-identically; parent-selection.json records actual disposition. One brief80px comparison shows a readable low forward chop and stable whole-body identity/height. Knees/feet widen with forward lean; no claim of unchanged planted feet, foot lock or qualified continuous motion. No new source fit, shift, part assembly or concealed repair.
+
+Next when quota permits: new finite order for one F06 recovery using selected018F00,021F02 and022F04. Then four illustrated inbetweens with actual adjacent keys, complete eight-frame1080ms exporter017 loop and one brief gameplay-size loop look. Fix any visible sliding/wobble, avoid microscopic audits. No direction/unit fanout, runtime source install or public deployment yet. All workers terminal, no call open. Full game remains incomplete.

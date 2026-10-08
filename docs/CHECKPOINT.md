@@ -1,3 +1,13 @@
+## Latest resumable checkpoint021/022
+
+Current021/022: revised low-amplitude wood chop has three selected key candidates—018F00 ready,021F02 low shoulder windup and022F04 low forward chop. Two new builtin calls, zero retries; original018/019 held lifts and020 derived splice remain preserved. Brief~80px looks find coherent identity and readable actions. F04 stance widens with forward lean; its eventual foot transition must be judged in the actual loop, not claimed fixed or smooth from isolated keys. Near-quota022 stopped after one call; F06 is prepared/UNCALLED, all four inbetweens UNCALLED. Next one new finite F06 recovery order, then actual inbetweens/export017/eight-frame1080ms loop/one brief gameplay-size look. No gatherloop is installed or approved; returns remain ordinary walk.
+
+Offline-before-setup021 uncovered lazy portraits unavailable after network disconnect. New bounded boot preload retains all12 decoded portraits before successful menu, with existing Retry/Continue on portrait failure; font preload is bounded with readable fallback. Five targeted deadline/recovery tests and temporary production build pass. Actual clean Chromium disconnects BEFORE setup: both map/leader-choice/launch/menu flows, Delta wood gathering and pause/resume work;12portraits available, lateportrait failures0/pageerrors0. Blocking one portrait shows11/12+Retry/Continue; unblocking and clicking Retry reaches12-ready menu. Original failure and repaired diagnostic-race harness attempts are retained in docs/qa/offline-before-setup-021/. One late offline font request remains, distinct from portrait/gameplay coverage. This is local after-load validation, not offline reload, full-match or public final-art acceptance.
+
+Latest inspected quota87%primary/14%weekly, ordinaryUsageAllowed=true. Finish this atomic checkpoint; no reset credit used. All workers terminal, no image call open. Source originals, leadership, public art manifests and deployed bundle/service are preserved. Full RTS remains NOT COMPLETE.
+
+---
+
 ## Current direction: pure 2D illustrated animation
 
 Use `model='gpt-6.1-sol'` and `reasoning_effort='low'` for every future project worker. No Luna or silent fallback. This records project routing, not a change to the root chat UI model.

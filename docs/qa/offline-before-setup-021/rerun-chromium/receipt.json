@@ -1,0 +1,728 @@
+{
+  "status": "OFFLINE_BEFORE_SETUP_LOCAL_GAME_PASS",
+  "url": "http://127.0.0.1:5175/?art=walk",
+  "networkDisconnectedBeforeSetup": true,
+  "reconnected": false,
+  "loaded": {
+    "status": "CANDIDATE",
+    "manifest": "ready",
+    "declared": 16,
+    "ready": 16,
+    "approved": 0,
+    "candidates": 16,
+    "failed": 0,
+    "skipped": 0,
+    "fallbacks": 0,
+    "failures": []
+  },
+  "bootUi": {
+    "declared": 12,
+    "ready": 12,
+    "failures": [],
+    "fontWarnings": []
+  },
+  "flows": {
+    "delta": {
+      "leaders": {
+        "king": "xiang_yu",
+        "general": "napoleon_bonaparte"
+      },
+      "startTick": 5,
+      "laterTick": 13,
+      "mode": "offline",
+      "gather": {
+        "tick": 28,
+        "entity": {
+          "id": 7,
+          "owner": 0,
+          "type": "villager",
+          "kind": "unit",
+          "x": 6.554999999999996,
+          "y": 21.5,
+          "hp": 65,
+          "maxHp": 65,
+          "food": 39.94623999999999,
+          "foodMax": 40,
+          "morale": 90,
+          "state": "gather",
+          "dir": 4,
+          "cooldown": 0,
+          "queue": [],
+          "cargo": {
+            "food": 0,
+            "wood": 0.15000000000000002,
+            "iron": 0,
+            "units": []
+          },
+          "resuppliedTick": 22,
+          "starving": 0,
+          "lastMovedTick": 28,
+          "visibleAction": {
+            "kind": "gather",
+            "resource": "wood",
+            "startedTick": 28
+          },
+          "order": {
+            "type": "gather",
+            "target": 2
+          }
+        },
+        "patch": {
+          "id": 2,
+          "type": "wood",
+          "x": 5.5,
+          "y": 21.5,
+          "amount": 4200
+        }
+      },
+      "pause": {
+        "before": 29,
+        "after": 29,
+        "resumed": 31
+      },
+      "returnedToMenu": true
+    },
+    "coast": {
+      "leaders": {
+        "king": "xiang_yu",
+        "general": "napoleon_bonaparte"
+      },
+      "startTick": 6,
+      "laterTick": 13,
+      "mode": "offline",
+      "returnedToMenu": true
+    }
+  },
+  "images": {
+    "deltaSetup": [
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/han_xin/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/xiang_yu/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/napoleon_bonaparte/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/ly_thuong_kiet/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/tran_hung_dao/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/nguyen_hue/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/le_thanh_tong/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/minh_menh/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/nguyen_anh/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/nguyen_phuc_chu/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/tran_nhan_tong/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/trinh_cuong/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/han_xin/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/xiang_yu/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/napoleon_bonaparte/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/ly_thuong_kiet/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/tran_hung_dao/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/nguyen_hue/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/le_thanh_tong/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/minh_menh/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/nguyen_anh/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/nguyen_phuc_chu/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/tran_nhan_tong/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/trinh_cuong/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      }
+    ],
+    "deltaMatch": [
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/han_xin/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/xiang_yu/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/napoleon_bonaparte/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/ly_thuong_kiet/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/tran_hung_dao/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/nguyen_hue/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/le_thanh_tong/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/minh_menh/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/nguyen_anh/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/nguyen_phuc_chu/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/tran_nhan_tong/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/trinh_cuong/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/han_xin/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/xiang_yu/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/napoleon_bonaparte/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/ly_thuong_kiet/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/tran_hung_dao/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/nguyen_hue/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/le_thanh_tong/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/minh_menh/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/nguyen_anh/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/nguyen_phuc_chu/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/tran_nhan_tong/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/trinh_cuong/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/xiang_yu/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/napoleon_bonaparte/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      }
+    ],
+    "coastSetup": [
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/han_xin/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/xiang_yu/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/napoleon_bonaparte/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/ly_thuong_kiet/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/tran_hung_dao/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/nguyen_hue/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/le_thanh_tong/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/minh_menh/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/nguyen_anh/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/nguyen_phuc_chu/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/tran_nhan_tong/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/trinh_cuong/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/han_xin/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/xiang_yu/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/napoleon_bonaparte/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/ly_thuong_kiet/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/tran_hung_dao/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/nguyen_hue/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/le_thanh_tong/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/minh_menh/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/nguyen_anh/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/nguyen_phuc_chu/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/tran_nhan_tong/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/trinh_cuong/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/xiang_yu/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/napoleon_bonaparte/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      }
+    ],
+    "coastMatch": [
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/han_xin/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/xiang_yu/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/napoleon_bonaparte/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/ly_thuong_kiet/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/tran_hung_dao/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/nguyen_hue/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/le_thanh_tong/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/minh_menh/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/nguyen_anh/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/nguyen_phuc_chu/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/tran_nhan_tong/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/trinh_cuong/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/han_xin/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/xiang_yu/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/napoleon_bonaparte/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/ly_thuong_kiet/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/tran_hung_dao/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/nguyen_hue/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/le_thanh_tong/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/minh_menh/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/nguyen_anh/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/nguyen_phuc_chu/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/tran_nhan_tong/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/trinh_cuong/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/xiang_yu/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      },
+      {
+        "url": "http://127.0.0.1:5175/assets/leadership/napoleon_bonaparte/portrait.webp",
+        "complete": true,
+        "naturalWidth": 256,
+        "visible": true
+      }
+    ]
+  },
+  "missingPortraits": [],
+  "pageErrors": [],
+  "networkFailures": [
+    {
+      "stage": "delta-setup",
+      "url": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu6-K6h9Q.woff2",
+      "error": "net::ERR_INTERNET_DISCONNECTED"
+    }
+  ],
+  "limits": "Clean-context localhost candidate check only; gameplay progress, gathering, pause/resume, menu and both map launch checked. No full match completion or production/offline reload claim."
+}

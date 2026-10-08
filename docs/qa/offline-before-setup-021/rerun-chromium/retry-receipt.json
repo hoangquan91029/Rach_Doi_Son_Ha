@@ -1,0 +1,29 @@
+{
+  "status": "ACTUAL_BLOCKED_PORTRAIT_RETRY_PASS",
+  "blockedStatus": "GRAPHICS COULD NOT FINISH LOADING · ARTWORK 16/16, PORTRAITS 11/12 READY. 1 LEADERSHIP PORTRAITS UNAVAILABLE: THE SOURCE IMAGE CANNOT BE DECODED.",
+  "blockedBootUi": {
+    "declared": 12,
+    "ready": 11,
+    "failures": [
+      {
+        "id": "han_xin",
+        "message": "The source image cannot be decoded."
+      }
+    ],
+    "fontWarnings": []
+  },
+  "recoveredBootUi": {
+    "declared": 12,
+    "ready": 12,
+    "failures": [],
+    "fontWarnings": []
+  },
+  "pageErrors": [],
+  "networkFailures": [
+    {
+      "url": "http://127.0.0.1:5175/assets/leadership/han_xin/portrait.webp",
+      "error": "net::ERR_FAILED"
+    }
+  ],
+  "retryButton": "Existing index.html reload handler verified by actual click"
+}

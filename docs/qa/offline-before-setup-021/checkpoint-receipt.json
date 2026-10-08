@@ -1,0 +1,26 @@
+{
+  "status": "LOCAL_OFFLINE_PORTRAIT_BOOT_FIX_PASS",
+  "sourcePins": {
+    "client/boot-ui-assets.js": "c8c064a2fda4fe344b16d4ba9305757b1f4adcd1079d490322b4eb345c15ee83",
+    "client/main.js": "e593e60d43316ae982b0ffca58ff3c5f1daef2768570f13b958a643d4c935c59",
+    "tests/boot-ui-assets.test.js": "6c9a63a33a6f67f0c3006627c71237aaa4240085142ee7b3a0e66c0bd4d6d80b"
+  },
+  "targetedTests": {
+    "command": "node --test tests/boot-ui-assets.test.js tests/loading-deadline.test.js",
+    "passed": 5,
+    "failed": 0
+  },
+  "temporaryProductionBuild": {
+    "path": "/tmp/rach-doi-son-ha-boot021-check",
+    "passed": true,
+    "bundles": {
+      "index-DFfX8Zkw.js": "ca63bdf5966ed11ff307c3182cf7633a4a9ba5d3ae996be9522d2d9c3930c79b"
+    }
+  },
+  "actualBrowserReceipts": [
+    "rerun-chromium/receipt.json",
+    "rerun-chromium/retry-receipt.json"
+  ],
+  "coverage": "Chrome offline after load BEFORE setup; both maps basic flow, Delta actual gathering/pause, portraits retained, blocked portrait recovery",
+  "remaining": "One late font request uses fallback. No offline reload, full match, final-art or public deployment acceptance."
+}

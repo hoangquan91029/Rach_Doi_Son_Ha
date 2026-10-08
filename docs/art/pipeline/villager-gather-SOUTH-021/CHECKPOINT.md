@@ -1,0 +1,5 @@
+# Low-amplitude wood-chop021 — F02 key selected only
+
+Exactly one builtin ImageGen whole-character edit, zero retries. Revised low shoulder windup uses selected018F00 identity/base and a simple new2D diagram; no overhead lift, ghost guide, donor splice or parts. Original raw1254RGBA, prompts, inputs, receipts and guide retained. Parent brief fixed89canvas/~80character look selectedF02 as a key candidate; body/hat/feet placement has no clear jump and low lift is readable. Small cloth differences are nonblocking. This does not establish a smooth complete action. Runtime128cells/fixedpivot[654,1140], one family transform; no per-frame fit or shift.
+
+Subsequent022 produced one low-forward-chopF04 candidate selected as an isolated key. Wider stance remains a real loop-transition question. F06 and all four inbetweens are uncalled. Exactly three selected keys currently exist:018F00,021F02,022F04. No complete gatheringloop, no runtime installation or motion approval. Return resource movement remains existing walk.
