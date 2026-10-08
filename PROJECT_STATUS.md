@@ -1,4 +1,18 @@
-## Current checkpoint: contacts004 appearance HELD
+## Current direction: PURE2D illustrated character production
+
+The latest human MASTER DIRECTIVE replaces the3D proposal entirely: canonical2D illustration → consistency spec → controlled2D keys → illustrated in-betweens → finishedPNG frames → atlas → webgame. No3D character modeling, Blender/skin/UV/baking/rendering or required3D intermediate. Preserve experiments001–005 as history only. Read docs/art/pipeline/{PURE_2D_MASTER_DIRECTIVE_20261008.txt,GRAPHICS_PRODUCTION_PLAN.md,PURE_2D_CHARACTER_PIPELINE.md}. No engine migration is required for this authoring change.
+
+Binding005 completed terminalHELD andSTOPPED before the new directive; its preserved evaluation failed sampled garment clearance, continuity and triangle area. Sourceframes0, AIcalls0, runtime changes0. Its copied producer bytes are pinned in SUPERSEDED.json; never restart it. The earlier blocky loops cannot supply new2D motion or appearance approval. Historical3D next actions below are superseded.
+
+Current bounded task: /root/forearm_art is preparing one pure2D SouthF4 opposite-contact guide/order at external lease /home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-pure2d-SOUTH-008. Inputs are canonicalSouth and old selectedF0; anatomicalLEFT is viewerRIGHT. Parent must review guide/reference custody before exactly one built-in whole-image edit. No image call, other key, in-between or fanout currently opened. Check live agent/session state before reissuing work; a saved work order is not evidence of a running process. OldF2 attempts remain held. Finished eight-frame loop and new scale/cadence/world contact qualification remain open.
+
+Current baseline256source/224–233character,112–116runtime/about80display is flexible under the new directive; preserve high-quality originals and declare one uniform family transform, no invented upscaling or per-frame fitting. Existing2D landmarks/root/proportions may serve guides; avoid new isolated limb textures and complex puppet reconstruction. Keep original rich illustrated materials/anatomy/light/shadow and complete coherent paused frames.
+
+Five-hour continuation updated to pure2D, preserving schedule/status/quiet intent. Latest verified live usage56%primary/98%weekly, ordinaryUsageAllowed=true; finish only current bounded task/checkpoint, no reset credit used. Runtime, public service/bundle and originals unchanged. Full game NOT COMPLETE; final visual acceptance remains open.
+
+---
+
+## Historical checkpoint: contacts004 appearance HELD —3D superseded
 
 Graphics plan requested by user is now in docs/art/pipeline/GRAPHICS_PRODUCTION_PLAN.md. It orders faithful whole-villager appearance, actual walk review, camera/eight-direction/action qualification, archetype production, finished battlefield art and production browser validation. One geometry-only prerequisite is currently assigned to live /root/arm_tool at external lease /home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/canonical-villager-binding-005/WORK_ORDER.json: coherent knee-aware whole-garment binding,0 rendered frames,0 AI calls, one501-phase evaluation. Binding source and evaluator are now delivered in the external lease; parent verified their reported hashes. The single501-phase evaluation is running; results and parent geometry review remain pending. Inspect authoritative agent/process state before resuming; do not duplicate a running job. Parent intake/review and exact numerical scope remain pending. Latest live usage44% primary /96% weekly with ordinaryUsageAllowed=true; no reset credit used.
 

@@ -1,0 +1,43 @@
+{
+  "status": "SUPERSEDED_PRESERVED_3D_EXPERIMENT_ONLY",
+  "authority": "../PURE_2D_MASTER_DIRECTIVE_20261008.txt",
+  "producerTerminal": "HELD_STOPPED",
+  "newSourceFrames": 0,
+  "aiCalls": 0,
+  "producerFiles": [
+    {
+      "path": "EVALUATION.json",
+      "sha256": "c7063653aa8b8011d6446d7d07dc2268f4e2416d0118cf10ccbe1559a532eb0e"
+    },
+    {
+      "path": "READY.json",
+      "sha256": "42d0bf1c72a48a7315ffbdcc4031206ff966ee1fb8243ba674f67b2203096395"
+    },
+    {
+      "path": "READY.md",
+      "sha256": "1cd867be994cc97f22014101f308d4854d7f0e07b6d5e079861e253e9ccca442"
+    },
+    {
+      "path": "WORK_ORDER.json",
+      "sha256": "4983712b0ad7b0dac0d99382a06f7cafc9472e109c26f298a7fab3056b0f2df1"
+    },
+    {
+      "path": "binding005.py",
+      "sha256": "46f0461be9a1c88518b49790bb04fc13701bcdf557d9831288452f4f47be11f2"
+    },
+    {
+      "path": "evaluate-binding.py",
+      "sha256": "d57588e5436bc37d919f9a508d603ac81c66ef4bc085c45f73be44be5edc1472"
+    },
+    {
+      "path": "evaluation-phases.csv",
+      "sha256": "2c4201c0a810f3346c52ccd0dc44c03dd8d01d90e884812ffdf1c7e9b94f426a"
+    },
+    {
+      "path": "evaluation-started.json",
+      "sha256": "9efbe039e260b65f2dd59272306e727a0ebe9931f3be2604c3288705461744d2"
+    }
+  ],
+  "reason": "Latest user forbids required3D character intermediates. No further geometry work or character production dependency. Producer reported failed clearance/continuity/triangle-area checks; preserved evaluation is authoritative for exact numeric scope.",
+  "parentReview": "Custody only; no new evaluation or approval."
+}

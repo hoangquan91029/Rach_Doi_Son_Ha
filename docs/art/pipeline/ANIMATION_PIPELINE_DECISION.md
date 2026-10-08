@@ -1,3 +1,11 @@
+# Current decision: PURE2D illustration and frame-by-frame sprites
+
+The latest explicit human directive rejects the previous3D/Blender character workflow, including internal required geometry. Active plan: GRAPHICS_PRODUCTION_PLAN.md; detailed production spec: PURE_2D_CHARACTER_PIPELINE.md; exact human directive: PURE_2D_MASTER_DIRECTIVE_20261008.txt. Preserve the realistic canonical illustrations. Use controlled2D whole-frame editing with guides/neighboring selected keys, finishedPNG cels, atlas packaging and simulation-authoritative presentation. No3D character production task remains authorized. No engine migration follows from this change.
+
+The historical comparison,3D trial numbers/research and proposed tasks below are preserved evidence only. They are NOT active recommendations or production dependencies. Binding005 is terminalHELD/superseded; current pilot is South pure2D008, opposite contact first. No new loop/final art approval follows from historical narrow3D motion acceptance.
+
+---
+
 # Deterministic sprite production decision
 
 > Latest human clarification: the blocky 001–004 reconstruction is NOT approved final art. Final graphics must match the realism of the existing assets. Deterministic 3D-to-sprite remains a candidate final path only after canonical visual fidelity passes. See CANONICAL_REALISM_CLARIFICATION_20261008.md.

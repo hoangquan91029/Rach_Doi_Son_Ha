@@ -1,0 +1,47 @@
+{
+  "schema": "whole-garment-binding-tool-work-order/v1",
+  "baselineCommit": "67c4d5c",
+  "status": "OPEN_AUTHORING_TOOL_ONLY",
+  "goal": "Implement deterministic knee-aware complete-garment binding on preserved003 motion, a prerequisite for canonical realistic character reconstruction. No appearance approval.",
+  "lease": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/canonical-villager-binding-005",
+  "inputs": {
+    "docs/art/pipeline/canonical-villager-contacts-004/model-appearance-v1.py": "421aad76da67de32b3f1c95353c2d5d465d77820e0306ac8c9a9190162651192",
+    "docs/art/pipeline/canonical-villager-contacts-004/parent-cloth-risk.json": "c1e968eae953e53b8d1d7c2356df47bf901efb3e83b1aca92ceb722e3d7b21a4",
+    "docs/art/pipeline/deterministic-villager-003/model003.py": "2e03d733f742ec60cc046c026fcd2ee13f2413d9bcd8cbeefe652aaeccddbd59",
+    "docs/art/pipeline/deterministic-villager-003/animation.json": "575a00c7fff3da2ca237e3667ff16e9ddd1d33f84ec4271082c9e9daa4345f97",
+    "docs/art/characters/villager-neutral-D07-screen-East-guided-007/raw.png": "45ae1e7a27d3cb9260dc9e5495cf83b4956481b1047ead2975572aff1385aae3"
+  },
+  "scope": [
+    "New binding source and analytic clearance diagnostics only",
+    "Modify complete tunic lower-shell and associated panel/hem vertices; no motion/joint/foot/camera/scale changes",
+    "Topology/materials/non-garment vertices remain unchanged",
+    "Garment motion must be pure function of locked pose, phase-periodic and stable; no per-frame fitting",
+    "Measure whole garment triangle samples against conservative leg-volume capsules; disclose sample limitations, no exact collision claims",
+    "One bounded501-phase evaluation build; fixed topology/order, ground/canvas bounds, seam equality and neighboring-phase displacement diagnostics",
+    "Recompute normals for changed whole geometry when needed; no disabled normal checks called artistic proof"
+  ],
+  "prohibited": [
+    "ImageGen/AI calls",
+    "Any new PNG/GIF/video/sprite/atlas or full-loop export",
+    "Separate limb textures",
+    "Runtime/source originals modifications",
+    "Changing garment length to hide contact",
+    "Global body inflation as a claimed realistic solution",
+    "Visual/camera/motion/fanout/owner/production acceptance"
+  ],
+  "budgets": {
+    "evaluationBuildCountMax": 1,
+    "sourceFrameCount": 0,
+    "aiCalls": 0,
+    "directions": 1,
+    "wholeGarmentBindingRevisions": 1
+  },
+  "output": [
+    "binding005.py",
+    "evaluate-binding.py",
+    "EVALUATION.json",
+    "READY.md",
+    "READY.json"
+  ],
+  "stop": "After source and one evaluation; if clearance/bounds or quality risks remain report held, no retry. Parent independently reviews before integration."
+}

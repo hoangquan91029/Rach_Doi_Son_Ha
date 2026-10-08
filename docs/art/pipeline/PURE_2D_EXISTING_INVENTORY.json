@@ -1,0 +1,67 @@
+{
+  "schema": "pure2d-existing-runtime-inventory/v1",
+  "baselineCommit": "219d1fe",
+  "characters": [
+    {
+      "id": "han_xin",
+      "name": "Han Xin"
+    },
+    {
+      "id": "xiang_yu",
+      "name": "Xiang Yu"
+    },
+    {
+      "id": "napoleon_bonaparte",
+      "name": "Napoleon Bonaparte"
+    },
+    {
+      "id": "ly_thuong_kiet",
+      "name": "Lý Thường Kiệt"
+    },
+    {
+      "id": "tran_hung_dao",
+      "name": "Trần Hưng Đạo"
+    },
+    {
+      "id": "nguyen_hue",
+      "name": "Nguyễn Huệ / Quang Trung"
+    },
+    {
+      "id": "le_thanh_tong",
+      "name": "Lê Thánh Tông"
+    },
+    {
+      "id": "minh_menh",
+      "name": "Minh Mạng / Minh Mệnh"
+    },
+    {
+      "id": "nguyen_anh",
+      "name": "Nguyễn Ánh / Gia Long"
+    },
+    {
+      "id": "nguyen_phuc_chu",
+      "name": "Nguyễn Phúc Chu"
+    },
+    {
+      "id": "tran_nhan_tong",
+      "name": "Trần Nhân Tông"
+    },
+    {
+      "id": "trinh_cuong",
+      "name": "Trịnh Cương"
+    }
+  ],
+  "characterCount": 12,
+  "rosterMismatch": "Human examples include Trịnh Tùng/Nguyễn Phúc Nguyên; current configuration uses Trịnh Cương/Nguyễn Phúc Chu. Do not silently replace historical identities or claim exact roster alignment; resolve against original dossier before leader fanout.",
+  "inputs": {
+    "shared/data.js": "ffc3f45adc58f212066d3763c591377ce15b9f6ac78e4685a95fc3ac747818e1",
+    "client/art-assets.js": "7fb92eb80e2eea203c2647c41df3831e22a8b0485a0e51a932ce00623508f439",
+    "client/sprite-timing.js": "d567ca4060bd9a0689ed9aae1ba00b6a776c8699c2c0c2b168b09ef951a6aad9",
+    "scripts/validate-art-assets.py": "a6661ea6c5f3cd3af86d0bf58df971bab6b0632d06e7821889cad0ecc2950646",
+    "public/assets/art-v1/manifest.json": "4fda8d2ec7f6bb4690a36644bacf2e222b722091905f9cfcc904295fa4e59814",
+    "docs/art/VILLAGER_IDENTITY_LOCK_007.json": "567d1844595d07a274ad2da885a298dc16925bafd5fe11a4d9c49ee33783828a",
+    "docs/art/motion/authoring-tools/villager-walk-SOUTH-007/tooling/atlas.py": "887c93c638cc869e9c64e7aa44758685dc0a03d13e1843398ae5ff227a805b18"
+  },
+  "runtimeChanged": false,
+  "new3DDependency": false
+}

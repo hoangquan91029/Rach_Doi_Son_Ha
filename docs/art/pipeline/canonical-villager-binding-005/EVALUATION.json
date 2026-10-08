@@ -1,0 +1,94 @@
+{
+  "schema": "whole-garment-binding-evaluation/v1",
+  "status": "HELD_STOP_BINDING_EVALUATION_FAILED",
+  "technicalPass": false,
+  "gates": {
+    "finite": true,
+    "nonGarmentGeometryExact": true,
+    "topologyExactAcrossPhases": true,
+    "materialsAndIDsExactAcrossPhases": true,
+    "garmentLengthVertexZExact": true,
+    "sourceCanvasBounds": true,
+    "ground": true,
+    "phaseSeam": true,
+    "neighborStep": false,
+    "sampledTriangleClearance": false,
+    "triangleAreaRatio": false,
+    "garmentNormalsUnit": true
+  },
+  "thresholds": {
+    "phaseCount": 501,
+    "clearanceMin": 0.012,
+    "clearanceTolerance": 1e-08,
+    "groundMin": -1e-09,
+    "seamMax": 1e-09,
+    "neighborVertexStepMax": 0.03,
+    "triangleAreaRatioMin": 0.05,
+    "normalLengthResidualMax": 1e-06,
+    "sourceCanvasMax": 256
+  },
+  "evaluationBuildCount": 1,
+  "phaseCount": 501,
+  "garmentTriangleCount": 674,
+  "samplesPerTrianglePerPhase": 16,
+  "samplingMethod": "degree4 barycentricgrid plus centroid on everytunic triangle; includes lower shell/lapels/overlap panels/hem. This is sampledclearance only, not exact triangle-capsule intersection or CCD.",
+  "capsuleEnvelopeRadii": {
+    "thigh": 0.19,
+    "trouser_shin": 0.14,
+    "wrap": 0.094
+  },
+  "clearanceRequired": 0.012,
+  "vertexChordMargin": 0.014,
+  "radialMovementCap": 0.36,
+  "fullBindingRestZMax": 0.96,
+  "anchorRestZ": 1.08,
+  "minimumSampleClearance": -0.06402527075631752,
+  "worstSample": {
+    "phase": 0.9,
+    "garmentFaceOrdinal": 639,
+    "sampleIndex": 2,
+    "sampleLocalXYZ": [
+      -0.18216155678599277,
+      0.3093730124608169,
+      0.39967376207875077
+    ],
+    "clearance": -0.06402527075631752
+  },
+  "maxGarmentDisplacementModelUnits": 0.36000000000000004,
+  "maxGarmentDisplacementGameplay80Px": 15.821459227467813,
+  "maxNeighborVertexStepModelUnits": 0.21361438168671756,
+  "phaseSeamResidual": 3.3306690738754696e-16,
+  "groundMin": 0.0,
+  "triangleAreaRatioMin": 7.450578240301988e-09,
+  "normalLengthResidualMax": 3.3306690738754696e-16,
+  "inputCustody": {
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/canonical-villager-contacts-004/model-appearance-v1.py": "421aad76da67de32b3f1c95353c2d5d465d77820e0306ac8c9a9190162651192",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/canonical-villager-contacts-004/parent-cloth-risk.json": "c1e968eae953e53b8d1d7c2356df47bf901efb3e83b1aca92ceb722e3d7b21a4",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/deterministic-villager-003/model003.py": "2e03d733f742ec60cc046c026fcd2ee13f2413d9bcd8cbeefe652aaeccddbd59",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/deterministic-villager-003/animation.json": "575a00c7fff3da2ca237e3667ff16e9ddd1d33f84ec4271082c9e9daa4345f97",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D07-screen-East-guided-007/raw.png": "45ae1e7a27d3cb9260dc9e5495cf83b4956481b1047ead2975572aff1385aae3"
+  },
+  "inputsUnchanged": true,
+  "sourceFrames": 0,
+  "renderCalls": 0,
+  "aiCalls": 0,
+  "runtimeChanges": false,
+  "appearanceAccepted": false,
+  "motionAccepted": false,
+  "ownerAccepted": false,
+  "fanoutOpened": false,
+  "limitations": [
+    "Uniform worst-radius legcapsules overestimatehip/ankle volumes and may force excessive skirt bulge; this cannot establish canonical silhouette.",
+    "Anchored uppertransition may failclearance whereconservativehipcaps overlap waist.",
+    "Vertex-only outwardwarp withfixedtopology can leave triangle interiors penetrating despite vertexmargin; allsample failures remainheld.",
+    "No fabric dynamics/cloth selfcollision/inter-panel collision/triangleexactcollision/continuouscollision proof.",
+    "Finite501phase sampling canmiss betweenphase extrema; degree4 triangle samples canmiss unsampledinteriors.",
+    "No PNG or appearance trial; models001\u2013004 remainmotion scaffolds, not realisticfinalart."
+  ],
+  "elapsedSec": 107.82964181900024,
+  "sourceHashes": {
+    "binding005.py": "46f0461be9a1c88518b49790bb04fc13701bcdf557d9831288452f4f47be11f2",
+    "evaluate-binding.py": "d57588e5436bc37d919f9a508d603ac81c66ef4bc085c45f73be44be5edc1472",
+    "WORK_ORDER.json": "4983712b0ad7b0dac0d99382a06f7cafc9472e109c26f298a7fab3056b0f2df1"
+  }
+}

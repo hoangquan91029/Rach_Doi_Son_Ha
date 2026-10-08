@@ -1,0 +1,1061 @@
+# MASTER DIRECTIVE — REPLACE THE 3D PRODUCTION PIPELINE WITH A PURE 2D ILLUSTRATED SPRITE PIPELINE
+
+## 0. CRITICAL CHANGE OF DIRECTION
+
+I am explicitly changing the animation and graphics production requirements for the entire Rạch Đôi Sơn Hà RTS project.
+
+**DO NOT BUILD 3D CHARACTER MODELS.**
+
+**DO NOT USE BLENDER TO MODEL, RIG, SKIN, UV-MAP, OR RENDER 3D CHARACTERS.**
+
+**DO NOT REQUIRE ANY 3D GEOMETRY AS AN INTERMEDIATE STEP.**
+
+I want beautiful, highly detailed, professionally illustrated **2D characters that LOOK three-dimensional**, not actual 3D characters.
+
+The visual target is:
+
+**High-quality 2D illustrations + convincing three-dimensional depth + frame-by-frame sprite animation + an angled RTS camera.**
+
+Think of classic illustrated and pre-rendered RTS sprites, but do not assume that their original 3D production techniques are necessary.
+
+The final appearance matters more than replicating their production methods.
+
+Every animation frame must be an actual 2D image.
+
+---
+
+## 1. FIRST ACTION: REVISE THE EXISTING PLAN
+
+Read the existing project and this document:
+
+`/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/GRAPHICS_PRODUCTION_PLAN.md`
+
+Inspect the current:
+
+- Character artwork
+- Villager source images
+- Existing rig experiments
+- Pose references
+- Limb reconstruction assets
+- Animation scripts
+- Sprite export tools
+- Animation manifests
+- Rendering pipeline
+- Runtime atlas system
+- Existing project documentation
+
+The current production plan proposes:
+
+`Canonical Asset → 3D Model → 3D Animation → 2D Sprite → Atlas → Game`
+
+**THIS PIPELINE IS REJECTED.**
+
+Replace it with:
+
+`Canonical 2D Illustration → 2D Character Consistency Specification → Controlled 2D Key Poses → 2D In-Between Frames → Finished Illustrated PNG Frames → Sprite Atlas → Web Game`
+
+Update `GRAPHICS_PRODUCTION_PLAN.md` accordingly.
+
+Remove 3D modeling, Blender rigging, UV mapping, 3D texture baking, 3D skeletal animation, and 3D rendering from the required character-production workflow.
+
+Do not delete existing user assets or experimental files without authorization.
+
+Do not migrate the game engine unnecessarily.
+
+---
+
+## 2. THE EXACT VISUAL STYLE I WANT
+
+The characters should have the appearance of high-quality, realistic or semi-realistic historical illustrations.
+
+A 2D image should convey the impression of a volumetric human body through:
+
+- Realistic lighting and shading
+- Anatomically believable proportions
+- Natural skin shading
+- Cloth folds and wrinkles
+- Occlusion between body parts
+- Detailed material textures
+- Realistic depth
+- Correct perspective
+- Ambient shadows
+- Soft contact shadows
+- Consistent highlights
+- Convincing silhouette
+
+The result must NOT look like:
+
+- Flat cartoon stickers
+- Vector characters
+- Low-detail icons
+- Pixel-art placeholders
+- Simple geometric shapes
+- Paper dolls assembled from detached limbs
+- Cutout puppets with visible seams
+- 3D low-poly models
+- Untextured geometry
+- Cheap procedural characters
+
+**The image must look dimensional, but it must remain entirely 2D artwork.**
+
+This is an art-direction requirement, not a requirement to use a 3D engine.
+
+---
+
+## 3. PRESERVE THE EXISTING VILLAGER ART QUALITY
+
+The current villager artwork is an important visual reference.
+
+It features:
+
+- Traditional Vietnamese conical hat
+- Historical Vietnamese-inspired clothing
+- Detailed beige fabric
+- Dark waist sash
+- Natural cloth folds
+- Loose trousers
+- Sandals
+- Realistic facial rendering
+- Detailed material shading
+- Believable body proportions
+
+The existing art has a specific visual identity and level of detail.
+
+DO NOT simplify it merely to make animation easier.
+
+In particular:
+
+Do not turn the villager into a generic cartoon farmer.
+
+Do not replace detailed cloth with flat-colored shapes.
+
+Do not rebuild the character from crude geometric body segments.
+
+Do not lower the material quality of the original artwork.
+
+Each finished animation frame must preserve the visual identity and richness of the canonical asset.
+
+The character should remain recognizable across all directions and animation states.
+
+---
+
+## 4. PURE 2D FRAME-BY-FRAME ANIMATION
+
+The final animation system must use sequences of finished 2D image frames.
+
+Example:
+
+`villager_walk_s_000.png`
+
+`villager_walk_s_001.png`
+
+`villager_walk_s_002.png`
+
+`villager_walk_s_003.png`
+
+`villager_walk_s_004.png`
+
+`villager_walk_s_005.png`
+
+`villager_walk_s_006.png`
+
+`villager_walk_s_007.png`
+
+When the frames are played sequentially, they create motion.
+
+This is similar to traditional cel animation or flipbook animation.
+
+The runtime must not require:
+
+- 3D skeletons
+- 3D character meshes
+- 3D animation clips
+- 3D character rendering
+- Runtime puppet-style body assembly
+
+The runtime should simply display the correct finished sprite frame according to animation state and facing direction.
+
+---
+
+## 5. 2D POSE GUIDES ARE ALLOWED
+
+Although 3D modeling is forbidden, controlled 2D pose assistance IS allowed.
+
+For example:
+
+- 2D skeleton diagrams
+- Joint reference points
+- Anatomical proportion guides
+- Left/right limb labels
+- Foot-contact guides
+- 2D pose interpolation
+- Temporary 2D rigging for pose planning
+- 2D image warping
+- Layered editing
+- Masks
+- Inpainting
+- Paint-over correction
+- Reference-conditioned image generation
+
+These techniques are permitted only to produce or improve the final illustrated 2D frames.
+
+The final frame should be a complete, polished character illustration.
+
+Do not expose visible disconnected limb pieces in the game.
+
+---
+
+## 6. REUSE THE CURRENT RIG EXPERIMENT ONLY WHERE USEFUL
+
+The current experimental villager process has attempted to determine:
+
+- Fixed root
+- Shoulder positions
+- Hip positions
+- Arm lengths
+- Leg lengths
+- Supporting leg
+- Ground contact
+- Overall character proportions
+
+This information can remain useful.
+
+However:
+
+Do not spend excessive time reconstructing a complete hidden body as a complicated puppet if a simpler 2D pose-control workflow produces better finished frames.
+
+Evaluate which existing measurements genuinely help preserve animation consistency.
+
+Keep useful:
+
+- Body proportions
+- Pose landmarks
+- Left/right limb identity
+- Root calibration
+- Foot-contact coordinates
+- Camera reference
+- Character silhouette
+
+Discard unnecessary complexity.
+
+**The rig should serve the illustrations. The illustrations should not be compromised to serve the rig.**
+
+---
+
+## 7. SOLVE THE SUPPORTING-LEG PROBLEM
+
+The current major technical problem is that independently generated walking poses repeatedly fail to switch supporting legs correctly.
+
+Fix this using explicit 2D key-pose planning.
+
+Start with an eight-frame walking cycle:
+
+| Frame | Main pose |
+|---|---|
+| F0 | Left foot forward contact |
+| F1 | Weight transfers onto left leg |
+| F2 | Right leg passes the supporting left leg |
+| F3 | Left leg pushes off |
+| F4 | Right foot forward contact |
+| F5 | Weight transfers onto right leg |
+| F6 | Left leg passes the supporting right leg |
+| F7 | Right leg pushes off |
+
+The sequence must form a continuous loop.
+
+Do not assume that all phases have an exclusively planted foot; brief transitions between contact and push-off must remain anatomically plausible.
+
+Validate:
+
+- Left/right identity
+- Foot contact
+- Support-leg alternation
+- Stride length
+- Weight transfer
+- Leg crossing
+- Body bounce
+- Arm counter-swing
+- Clothing movement
+- Root consistency
+- Loop continuity
+
+Generate key poses first.
+
+Only create in-between frames after the key poses pass validation.
+
+Do not generate all eight images independently from unrelated text prompts.
+
+---
+
+## 8. HOW TO PRODUCE THE FINISHED 2D FRAMES
+
+Use a controlled illustration workflow.
+
+### Phase A — Canonical Artwork
+
+Preserve one approved character design.
+
+This establishes:
+
+- Face
+- Body proportions
+- Clothing
+- Color
+- Equipment
+- Material style
+- Light direction
+- Camera perspective
+
+### Phase B — Key Poses
+
+Create the essential key poses from the canonical character.
+
+Use reference images, masks, pose guides, and 2D editing to control the motion.
+
+### Phase C — Anatomy Validation
+
+Confirm that the key poses show correct movement before spending time refining details.
+
+### Phase D — Finished Frame Illustration
+
+Render or paint the frame as one coherent 2D illustration.
+
+Correct:
+
+- Clothing folds
+- Shoulder contours
+- Hip deformation
+- Arm overlap
+- Leg overlap
+- Hat position
+- Lighting
+- Shadows
+- Material continuity
+
+### Phase E — In-Between Frames
+
+Create additional poses between validated keyframes using controlled 2D image generation/editing.
+
+Use neighboring frames as references.
+
+Do not regenerate the character identity.
+
+### Phase F — Quality Control
+
+Inspect the full animation as a contact sheet and animated preview.
+
+Reject:
+
+- Limb swaps
+- Identity drift
+- Clothing drift
+- Inconsistent anatomy
+- Changing proportions
+- Broken feet
+- Unnatural motion
+- Flickering textures
+- Floating objects
+- Missing details
+
+### Phase G — Export
+
+Export the approved complete character images as transparent PNGs.
+
+Preserve their pivot metadata.
+
+Pack the finished frames into web-optimized sprite atlases.
+
+---
+
+## 9. DO NOT SIMPLY ROTATE LIMB IMAGES
+
+This is extremely important.
+
+A common failure of 2D puppet animation is rotating separate images of:
+
+- Arms
+- Forearms
+- Thighs
+- Lower legs
+- Torso
+
+without correctly reconstructing clothing and anatomical transitions.
+
+That creates visible puppet seams.
+
+For this project:
+
+**Rotated 2D components are allowed as pose guides, but the final frame must be visually reconstructed into a complete illustration.**
+
+For example:
+
+When the leg moves forward, the tunic should naturally overlap the thigh.
+
+When the arm rises, the shoulder and sleeve should deform naturally.
+
+When walking, the sash and loose clothing should follow the motion.
+
+Do not leave gaps between the limbs and torso.
+
+Do not accept disconnected clothing shapes.
+
+---
+
+## 10. EIGHT DIRECTIONS
+
+The game requires eight-direction movement for major characters.
+
+Directions:
+
+- N
+- NE
+- E
+- SE
+- S
+- SW
+- W
+- NW
+
+Create a canonical directional reference set for the character.
+
+All views must preserve:
+
+- Character identity
+- Historical clothing
+- Material style
+- Body size
+- Equipment
+- Light direction
+- Perspective
+- Ground contact
+
+Mirroring may be considered for symmetric generic units, but only when it does not introduce incorrect weapon hands, asymmetrical equipment, or clothing details.
+
+Kings and Generals should receive special attention and may require eight independently illustrated directions.
+
+Do not generate all eight directions until the first validated direction works correctly.
+
+---
+
+## 11. TWO-DIMENSIONAL DEPTH AND PERSPECTIVE
+
+Even though all assets are 2D, they must feel embedded in a coherent 2.5D world.
+
+Establish a consistent camera projection.
+
+All units and buildings must follow compatible visual rules.
+
+Define:
+
+- Camera elevation
+- Camera azimuth
+- Direction conventions
+- Unit scale
+- Light direction
+- Shadow direction
+- Ground contact
+- Occlusion order
+
+The visual objective is that a villager, cavalry unit, building, tree, and siege weapon all appear to belong in the same world.
+
+Do not create one character with an eye-level frontal camera and another with a steep top-down camera.
+
+---
+
+## 12. REUSABLE 2D ANIMATION ARCHETYPES
+
+This project will contain many units.
+
+Do not independently invent every animation from scratch.
+
+Create reusable 2D motion references and pose templates.
+
+Suggested motion families:
+
+**HUMANOID_GENERIC**
+
+- Villager
+- Light infantry
+- Civilian
+
+**HUMANOID_SPEAR**
+
+- Spearman
+- Polearm infantry
+
+**HUMANOID_FIREARM**
+
+- Arquebusier
+- Musket infantry
+
+**COMMANDER**
+
+- King
+- General
+
+**CAVALRY**
+
+- Horse
+- Mounted soldier
+
+**ARTILLERY_CREW**
+
+- Gunners
+- Loaders
+
+**SUPPLY_WAGON**
+
+- Cart
+- Driver
+- Draft animal
+
+**SHIP**
+
+- Vessel motion
+- Firing
+- Damage
+- Sinking
+
+Reuse movement specifications and pose references.
+
+But do not force all characters to share identical visual poses.
+
+The final illustrations must still reflect equipment, body proportions, clothing, historical identity, and unit role.
+
+---
+
+## 13. KINGS AND GENERALS
+
+The game includes historical leaders such as:
+
+- Han Xin
+- Xiang Yu
+- Napoleon Bonaparte
+- Lý Thường Kiệt
+- Trần Hưng Đạo
+- Nguyễn Huệ
+- Nguyễn Ánh
+- Lê Thánh Tông
+- Minh Mạng
+- Trần Nhân Tông
+- Trịnh Tùng
+- Nguyễn Phúc Nguyên
+
+The final roster should be verified against the project configuration.
+
+Kings and Generals are premium-quality assets.
+
+They must not look like generic villagers with different clothing colors.
+
+Each should preserve:
+
+- Historical silhouette
+- Distinct headgear
+- Recognizable attire
+- Equipment
+- Facial identity
+- Character-specific posture
+- Commanding animations
+
+They may reuse general 2D motion planning but require individually finished illustration frames.
+
+---
+
+## 14. UNIT-SPECIFIC ANIMATION REQUIREMENTS
+
+Do not produce unnecessary animations for every unit.
+
+Develop role-specific animation sets.
+
+### Villager
+
+- Idle
+- Walk
+- Run if gameplay requires it
+- Gather
+- Chop wood
+- Collect iron
+- Harvest food
+- Carry resources
+- Build
+- Repair
+- Hit
+- Death
+
+### Infantry
+
+- Idle
+- Walk
+- Run
+- Attack
+- Hit
+- Death
+
+### Firearm Infantry
+
+- Idle
+- Walk
+- Run
+- Aim
+- Fire
+- Reload
+- Hit
+- Death
+
+### King / General
+
+- Idle
+- Walk
+- Run
+- Command
+- Ability
+- Attack where applicable
+- Hit
+- Death
+
+### Cavalry
+
+- Idle
+- Walk
+- Gallop
+- Charge
+- Attack
+- Hit
+- Death
+
+### Artillery
+
+- Move
+- Deploy
+- Aim
+- Fire
+- Recoil
+- Reload
+- Destroyed
+
+### Supply Wagon
+
+- Idle
+- Move
+- Load
+- Unload
+- Destroyed
+
+### Ship
+
+- Idle
+- Move
+- Fire
+- Damage
+- Sink
+
+Use dedicated 2D illustration/animation workflows for horses, artillery, wagons and ships.
+
+Do not force them into a humanoid pose system.
+
+---
+
+## 15. WEB PERFORMANCE REQUIREMENTS
+
+The game runs directly in a browser.
+
+The production pipeline must avoid generating an impractically large asset library.
+
+Use:
+
+- Finished PNG source frames
+- Automated sprite atlas packing
+- Stable pivots
+- Frame metadata
+- Appropriate texture sizes
+- Compressed deployment assets where supported
+- Lazy loading
+- Asset deduplication
+- Visual animation LOD where beneficial
+
+Do not load every unit and every character animation before the main menu appears.
+
+Loading should be based on the selected map and match requirements.
+
+Runtime animation should remain independent from game simulation and online synchronization.
+
+---
+
+## 16. SPRITE RESOLUTION
+
+The current proposed production sizes are approximately:
+
+Source canvas:
+
+256 × 256 px
+
+Source character height:
+
+224–233 px
+
+Runtime character height:
+
+112–116 px
+
+Intended displayed height:
+
+approximately 80 px
+
+Treat these as the current baseline, NOT immutable requirements.
+
+Validate the proposed scale against:
+
+- Historical leader silhouette
+- Small weapon visibility
+- Clothing readability
+- Zoom levels
+- Sprite atlas efficiency
+- Animation quality
+- Memory
+
+Do not automatically upscale images and invent detail.
+
+Preserve high-quality source images separately from optimized runtime assets.
+
+If the source dimensions cannot accommodate a particular attack animation, weapon swing, long spear, horse, or other animation extent, define an appropriate larger canvas or directional bounding-box policy rather than clipping the artwork.
+
+---
+
+## 17. ANIMATION ATLAS SYSTEM
+
+Keep editable 2D source frames separate from runtime atlases.
+
+Conceptual structure:
+
+```text
+art/
+  source/
+    characters/
+      villager/
+        canonical/
+        directions/
+        pose_guides/
+        keyframes/
+        animations/
+          walk/
+            s/
+            se/
+            e/
+            ne/
+            n/
+            nw/
+            w/
+            sw/
+  approved/
+    characters/
+  runtime/
+    atlases/
+    manifests/
+```
+
+Build or reuse automated tooling for:
+
+- Frame validation
+- Naming
+- Alpha transparency
+- Frame size
+- Pivot consistency
+- Missing frame detection
+- Contact sheet creation
+- Preview animation generation
+- Atlas packing
+- Manifest generation
+
+Do not manually configure thousands of sprite rectangles.
+
+---
+
+## 18. VISUAL QUALITY ACCEPTANCE
+
+Every production animation must pass quality gates.
+
+Evaluate:
+
+1. Canonical identity consistency
+2. Character anatomy
+3. Supporting-leg correctness
+4. Motion continuity
+5. Foot sliding
+6. Pivot stability
+7. Clothing deformation
+8. Lighting consistency
+9. Direction correctness
+10. Material detail
+11. Normal gameplay zoom readability
+12. Loop quality
+
+Any major visual defect blocks approval.
+
+Do not hide broken anatomy with:
+
+- Fast playback
+- Motion blur
+- Particle effects
+- Darkness
+- Extreme scaling
+
+The asset must still look good when paused at an individual frame.
+
+---
+
+## 19. BUILD ONE QUALIFIED VILLAGER FIRST
+
+Do not immediately mass-produce sprites.
+
+The first milestone is:
+
+**ONE COMPLETE HIGH-QUALITY 2D VILLAGER.**
+
+Production order:
+
+### STEP 1
+
+Qualify the canonical villager artwork.
+
+Ensure full-body design, clothing, hat, sash, trousers, footwear, lighting and materials are correct.
+
+### STEP 2
+
+Create two opposing walk-contact key poses.
+
+Verify that the left and right legs exchange their roles.
+
+### STEP 3
+
+Produce one complete eight-frame walk cycle.
+
+All frames must retain the same visual quality.
+
+### STEP 4
+
+Inspect the loop at actual game size.
+
+Check support leg, foot sliding, clothing, pivot and readability.
+
+### STEP 5
+
+Produce the remaining directional references.
+
+### STEP 6
+
+Complete eight-direction walking.
+
+### STEP 7
+
+Add the remaining villager animation states.
+
+### STEP 8
+
+Export sprites into atlases and test them in the actual browser game.
+
+Do NOT begin full army sprite production until this pipeline succeeds.
+
+---
+
+## 20. SCALE THE PIPELINE, NOT THE MANUAL WORK
+
+After the villager is qualified:
+
+Validate at least one additional humanoid military unit.
+
+Then validate one complex unit, such as cavalry.
+
+The pipeline must demonstrate that existing:
+
+- Motion planning
+- Pose specifications
+- Frame QA
+- Export scripts
+- Atlas tools
+- Runtime controllers
+
+can be reused.
+
+The goal is not to create one perfect villager through hundreds of manual steps that cannot be repeated.
+
+The goal is a high-quality system that can produce many historically distinct units efficiently.
+
+---
+
+## 21. UPDATE THE SIX-STAGE GRAPHICS PRODUCTION PLAN
+
+Revise the existing plan to follow these stages:
+
+### STAGE 1 — QUALIFY ONE 2D VILLAGER
+
+Preserve the realism of the existing artwork.
+
+Complete full-body design and opposing walk poses.
+
+NO 3D MODELING.
+
+### STAGE 2 — COMPLETE THE 2D WALK CYCLE
+
+Use controlled 2D keyframes and illustrated in-betweens.
+
+Validate animation biomechanics and final artwork.
+
+### STAGE 3 — COMPLETE VILLAGER ANIMATIONS
+
+Produce eight directions and the required role-specific animations.
+
+### STAGE 4 — EXPAND TO MILITARY UNITS
+
+Reuse 2D motion archetypes and animation tooling.
+
+Create distinct, finished artwork for each unit.
+
+### STAGE 5 — COMPLETE THE BATTLEFIELD ART
+
+Produce professional 2D/2.5D:
+
+- Buildings
+- Trees
+- Forests
+- Resources
+- Rivers
+- Seas
+- Hills
+- Mountains
+- Fortifications
+- UI
+- Visual effects
+
+Do not use crude geometric shapes as final assets.
+
+### STAGE 6 — VALIDATE THE WEB GAME
+
+Pack atlases.
+
+Test browser loading and memory.
+
+Test Single Player and Online 1v1.
+
+Review visual quality during real RTS battles.
+
+---
+
+## 22. DO NOT INTRODUCE 3D THROUGH THE BACK DOOR
+
+This is an important constraint.
+
+Do not claim:
+
+"3D is only internal, so it is acceptable."
+
+For the character-production pipeline in this project, I explicitly want to avoid the time and complexity of:
+
+- Blender character modeling
+- 3D skeleton creation
+- Skinning
+- UV unwrapping
+- 3D material setup
+- 3D lighting scenes
+- 3D animation
+- 3D-to-sprite rendering
+
+Instead, use 2D illustration and 2D animation-production techniques.
+
+If some existing experimental 3D asset happens to exist, it may remain archived, but it must not become a required dependency for producing new characters.
+
+Only recommend reintroducing 3D if I explicitly ask to reconsider this constraint later.
+
+---
+
+## 23. AI AGENT RESPONSIBILITY
+
+If specialized subagents are available:
+
+Assign high-quality visual tasks to the designated art-focused model, preferably GPT Luna High 6 if actually available.
+
+Assign code, automation, asset validation, atlas tooling and animation controllers to the designated coding model, preferably GPT Sol 6.1 Light if actually available.
+
+Do not invent model availability or claim a delegation occurred if the tools do not support it.
+
+The parent/orchestrating model must audit:
+
+- Frame quality
+- Visual identity
+- Animation correctness
+- Technical consistency
+- Memory performance
+- Runtime compatibility
+
+Art agents must receive canonical visual references and the same art-direction specification.
+
+Code agents must not redesign characters using primitive geometry.
+
+---
+
+## 24. REQUIRED DELIVERABLES
+
+After inspecting the project:
+
+1. Update `GRAPHICS_PRODUCTION_PLAN.md` to reflect the pure 2D pipeline.
+
+2. Document the reasons for abandoning the proposed 3D/Blender workflow.
+
+3. Produce an updated 2D animation pipeline specification.
+
+4. Define the canonical character reference system.
+
+5. Define the 2D keyframe and in-between workflow.
+
+6. Define the supporting-leg validation method.
+
+7. Define the eight-direction strategy.
+
+8. Define the reusable 2D animation archetypes.
+
+9. Define atlas and manifest standards.
+
+10. Identify current scripts/assets that can be reused.
+
+11. Identify unnecessary 3D dependencies or planned tasks to remove.
+
+12. Produce a concrete implementation sequence.
+
+13. Continue improving the current villager using the approved 2D workflow.
+
+Do not stop after rewriting the plan if the required editing and asset-generation tools are available.
+
+Do not claim an animation was generated or visually approved without actually inspecting its output.
+
+If a necessary image-editing capability is unavailable, report that blocker accurately and proceed with the feasible tooling, specifications and tests.
+
+---
+
+## 25. FINAL NON-NEGOTIABLE DECISION
+
+The approved visual production direction is:
+
+**PURE 2D ARTWORK WITH CONVINCING 3D-LIKE DEPTH.**
+
+The approved animation direction is:
+
+**CONTROLLED FRAME-BY-FRAME 2D SPRITE ANIMATION.**
+
+The approved runtime representation is:
+
+**FINISHED 2D SPRITE FRAMES PACKED INTO TEXTURE ATLASES.**
+
+The rejected requirement is:
+
+**MANDATORY 3D CHARACTER MODELING, BLENDER 3D RIGGING, AND 3D-TO-2D BAKING.**
+
+Do not sacrifice visual quality.
+
+Do not continue building a complex 3D pipeline.
+
+Do not restart the project unnecessarily.
+
+Preserve the existing realistic villager artwork.
+
+Use 2D techniques to create consistent, beautiful, naturally moving historical characters.
+
+**FIRST, UPDATE THE EXISTING GRAPHICS PRODUCTION PLAN. THEN CONTINUE THE 2D VILLAGER ANIMATION WORK.**

@@ -1,3 +1,5 @@
+> Updated authority: PURE_2D_MASTER_DIRECTIVE_20261008.txt explicitly forbids3D character modeling/rendering/intermediates. Realistic illustrated quality remains binding; prior3D suggestions below are superseded history. Follow GRAPHICS_PRODUCTION_PLAN.md and PURE_2D_CHARACTER_PIPELINE.md.
+
 # Canonical realism clarification — 8 October 2026
 
 The user asked whether the blocky units were only motion scaffolding or official art, and explicitly said: “tôi muốn đồ họa chân thực như các asset hiện tại mà” (I want realistic graphics like the existing assets).
