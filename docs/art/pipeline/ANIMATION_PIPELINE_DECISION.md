@@ -1,5 +1,7 @@
 # Deterministic sprite production decision
 
+> Latest human clarification: the blocky 001–003 reconstruction is NOT approved final art. Final graphics must match the realism of the existing assets. Deterministic 3D-to-sprite remains a candidate final path only after canonical visual fidelity passes. See CANONICAL_REALISM_CLARIFICATION_20261008.md.
+
 Status: pipeline decision and bounded pilot in progress; no production art acceptance. Latest authority: [scope correction](SCOPE_CORRECTION_20261008.md). Earlier [research brief](ANIMATION_PIPELINE_RESEARCH_BRIEF.txt) is preserved; its mandatory ten AI attempts per contact frame is superseded by the optional-AI correction.
 
 ## Actual pilot evidence

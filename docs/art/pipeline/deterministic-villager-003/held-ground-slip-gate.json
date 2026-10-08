@@ -1,0 +1,39 @@
+{
+  "status": "NUMERICAL_48_HELD_CONTACT_PASS_PENDING_ACTUAL_BROWSER_REVIEW",
+  "pass": true,
+  "method": "60Hz held exact48 phase cel, track original3D soletoe through source projection+fixed scale+actualintegerpaste; floatengine error separately. Not opticalflow.",
+  "cycles": 4,
+  "simulationHz": 60,
+  "precisePeriodMs": 649.5793241743906,
+  "samplePhaseRule": "distance_world/world_stride; frame=floor(frac(distancephase)*48)",
+  "sceneZoomConvention": "64/80/96 are entire-scene camera zooms64/80,1,96/80: sameworld2.1; sprite,rootvelocity andgridscale together. Sprite-only resize at fixedworldpixelmapping is a different physicalscale and is notqualified.",
+  "thresholdsByHeight": {
+    "64": {
+      "thresholdPx": 2.0,
+      "floatEngine60HzMaxPx": 0.9364408040500507,
+      "integerPaste60HzMaxPx": 1.4041773962803745,
+      "worstContinuousFloatHoldBoundPx": 0.9375679542203148,
+      "integerPasteUpperBoundPx": 1.4375679542203148,
+      "pass": true,
+      "sourcePivotCorrection": false
+    },
+    "80": {
+      "thresholdPx": 2.0,
+      "floatEngine60HzMaxPx": 1.1705510050625492,
+      "integerPaste60HzMaxPx": 1.5092989985693919,
+      "worstContinuousFloatHoldBoundPx": 1.1719599427753935,
+      "integerPasteUpperBoundPx": 1.6719599427753935,
+      "pass": true,
+      "sourcePivotCorrection": false
+    },
+    "96": {
+      "thresholdPx": 2.0,
+      "floatEngine60HzMaxPx": 1.4046612060750476,
+      "integerPaste60HzMaxPx": 1.6111587982832702,
+      "worstContinuousFloatHoldBoundPx": 1.406351931330472,
+      "integerPasteUpperBoundPx": 1.906351931330472,
+      "pass": true,
+      "sourcePivotCorrection": false
+    }
+  }
+}

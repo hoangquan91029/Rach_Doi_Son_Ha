@@ -1,0 +1,38 @@
+{
+  "status": "READY",
+  "amendmentType": "direction-label-correction",
+  "preservesOriginalReviewBytes": true,
+  "originalReviewFiles": {
+    "review.json": {
+      "path": "review.json",
+      "sha256": "c78c4b56819a6d814ef18fa74fe0c3ae3b1b5874c112d667c4f0c0324341a5df"
+    },
+    "review.md": {
+      "path": "review.md",
+      "sha256": "95d78b8dde1bff703020871eff3ae6707e2fba52a521fa1b5a8dd0f57dd929c7"
+    }
+  },
+  "correction": {
+    "incorrectLabel": "D07 South",
+    "correctLabel": "D07 Screen East / engine-world NE (theta=315 degrees)",
+    "appliesTo": [
+      "review.json scope",
+      "review.md first paragraph"
+    ],
+    "frozenEvidence": {
+      "plan.json": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/deterministic-villager-003/plan.json",
+        "sha256": "e96479a1b7396b2d8e428c63a84eb7d1a8954112630f6c80040b2f80a400d50d",
+        "direction": "D07 screenEast/worldNEtheta315 ONLY"
+      },
+      "animation.json": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/deterministic-villager-003/animation.json",
+        "sha256": "575a00c7fff3da2ca237e3667ff16e9ddd1d33f84ec4271082c9e9daa4345f97",
+        "direction": "D07 screenEast/worldNEtheta315"
+      }
+    },
+    "reviewedSubject": "The original rerender comparisons, runtime preview, and motion observations in this review refer to the frozen D07 Screen East / engine-world NE theta=315 pilot. The original review did not assess D07 South.",
+    "motionDisposition": "Unchanged: PASS_NARROW applies only to this exact D07 Screen East pilot. No South-direction approval is inferred.",
+    "actionsTaken": "No source changes, rerender, new capture, or change to the original review files."
+  }
+}

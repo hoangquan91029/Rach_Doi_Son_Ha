@@ -1,0 +1,92 @@
+{
+  "schema": "parent-deterministic-villager-review/v1",
+  "subject": "villager walk D07 ONLY pilot003",
+  "subjectAnimationSha256": "575a00c7fff3da2ca237e3667ff16e9ddd1d33f84ec4271082c9e9daa4345f97",
+  "producerReceiptSha256": "0625a4cefaf03561f9fd844a4899d6a2517876e21285315f3860b23f9277e986",
+  "custody": "PASS317outputpins/READYhashes/001002baselinepins",
+  "sourceFrames": 48,
+  "sourceAlphaHeightRange": [
+    216,
+    230
+  ],
+  "sourceCanvas": [
+    256,
+    256
+  ],
+  "runtimeCell": [
+    128,
+    128
+  ],
+  "fixedReferenceHeight": 233,
+  "actualDefaultGameplayHeightRange": [
+    74.16309012875537,
+    78.96995708154506
+  ],
+  "fixedPivot": [
+    128,
+    237
+  ],
+  "precisePeriodMs": 649.5793241743906,
+  "worldSpeedUnchanged": 2.1,
+  "meshPreflight": "PASS501phases",
+  "heldSoleToe60HzMaxPx": {
+    "64": 1.4041773962803745,
+    "80": 1.5092989985693919,
+    "96": 1.6111587982832702
+  },
+  "heldContactMethod": "Projected original mesh sole-toe at held source phase versus continuous rig at60Hz. Not opticalflow or complete visual acceptance.",
+  "atlas": {
+    "size": [
+      1024,
+      768
+    ],
+    "pngBytes": 394265,
+    "decodedRgbaBytes": 3145728
+  },
+  "atlasVisibleRgbaAndAlpha": "PASS48cells",
+  "browserPlayback": [
+    {
+      "browser": "chromium",
+      "version": "151.0.7922.34",
+      "status": "BROWSER_PLAYBACK_PASS_NOT_VISUAL_APPROVAL",
+      "errors": []
+    },
+    {
+      "browser": "firefox",
+      "version": "153.0",
+      "status": "BROWSER_PLAYBACK_PASS_NOT_VISUAL_APPROVAL",
+      "errors": []
+    }
+  ],
+  "parentVisualObservations": "Actual80px 1x browser samplesF33/F14, .5x96F29 and80pxF0light;48game-size contact sheet shows oppositefoot cycle/consistenthatcreamwrap/brownsash. These samples do not independently certify fullvisibleloop/cadence/identity.",
+  "independentMotionReview": {
+    "verdict": "PASS_NARROW exact D07 SCREEN EAST walk motion only",
+    "reviewPins": {
+      "review.json": "c78c4b56819a6d814ef18fa74fe0c3ae3b1b5874c112d667c4f0c0324341a5df",
+      "review.md": "95d78b8dde1bff703020871eff3ae6707e2fba52a521fa1b5a8dd0f57dd929c7",
+      "rerender-receipt.json": "66c4cb61baf119011f28639079f3705e9874d89f05d7a2acffb22bfd13bda58d",
+      "captures/capture-receipt.json": "7122a71879d5a242d1bf1075ca6e45747000a36eaca9ad887697f94894e8e092",
+      "amendment.json": "f259be43c50e4bf6ccd759106eacf9ce5ca8ab496f5b29a62386dbf78b239682",
+      "amendment.md": "6e3a5680cdc0dd64729b14531129a4394a953cfbcd3a48851a9ec877252b181d"
+    },
+    "amendment": "Original review text incorrectly said South; bound amendment corrects label to screenEast/worldNEtheta315. No South approval.",
+    "reproduction": "48PNG and decodedRGBA exact, ONE build; four non-render path/cache/custody differences disclosed",
+    "visualStyle": "HUMAN_VISUAL_HELD"
+  },
+  "motionAccepted": true,
+  "cadenceAccepted": true,
+  "identityAccepted": false,
+  "cameraReconciliationAccepted": false,
+  "runtimeIntegrated": false,
+  "owner": "PENDING",
+  "productionAccepted": false,
+  "fanoutAllowed": false,
+  "limitations": [
+    "Physical ortho26.565deg square-ground ratio.4472 vsengine54x27grid.5 unresolved.",
+    "No engine distanceclock integration, productionmanifest/gutters/globalcrop or crowdacceptance.",
+    "Lightbackground previewoverlaytext lowcontrast; sourcecharacter remains readable; reviewUIonly.",
+    "All8phasekeys plus48temporal cels are sameone-direction pilot, not otherdirections/actions."
+  ],
+  "humanVisualSteering": "Canonical realism matching existing assets required; current blocky appearance is HELD as final art.",
+  "parentMotionDisposition": "ACCEPT_NARROW motion clip evidence only, not appearance/fanout"
+}

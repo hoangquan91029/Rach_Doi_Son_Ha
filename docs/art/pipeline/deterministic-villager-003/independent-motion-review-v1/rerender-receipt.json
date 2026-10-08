@@ -1,0 +1,684 @@
+{
+  "status": "REPRODUCED_ONCE_ALL48_PIXELS_MATCH",
+  "sourceLease": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/deterministic-villager-003",
+  "rerenderLease": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/deterministic-villager-003-independent-rerender",
+  "frozenPins": {
+    "model003.py": "2e03d733f742ec60cc046c026fcd2ee13f2413d9bcd8cbeefe652aaeccddbd59",
+    "pilot48.py": "eade5cb496a54790020d2d288f01a2d7a424219bb3aecb31fc5801c5fbd10d94",
+    "animation.json": "575a00c7fff3da2ca237e3667ff16e9ddd1d33f84ec4271082c9e9daa4345f97",
+    "receipt.json": "0625a4cefaf03561f9fd844a4899d6a2517876e21285315f3860b23f9277e986",
+    "plan.json": "e96479a1b7396b2d8e428c63a84eb7d1a8954112630f6c80040b2f80a400d50d",
+    "spec.json": "ec40577b9a149ed8904f850818fa16ebf59348cf8b76e76828b6b6d71dd7b1a1",
+    "key-geometry-F0-F24.json": "6a85983481a86b6572c008b4a575fd9021a5dbb3749cca58d12e7d2683718398",
+    "geometry-preflight-501.json": "6afb1a3e6280a73b5b5840b4ae503131016f6d76b037d51f83f9ff0a5d07a6cc",
+    "qa-header-correction-receipt.json": "1e5e41e60e6d353fb1d20855fdfc56b5f48e498bd57b0d78bdefe6cfcac19114",
+    "correct_qa_headers.py": "fd3bf492e118174a61277b4228c13a63562874f50df8a10cf9a89ed9d04390c4",
+    "reproduce-new-lease.txt": "2808d9b097194588da691128ca3e2e9c6b1f9f9a6fefb5b9a50d831cf45f3892"
+  },
+  "rerenderInputs": {
+    "model003.py": "2e03d733f742ec60cc046c026fcd2ee13f2413d9bcd8cbeefe652aaeccddbd59",
+    "pilot48.py": "eade5cb496a54790020d2d288f01a2d7a424219bb3aecb31fc5801c5fbd10d94",
+    "correct_qa_headers.py": "fd3bf492e118174a61277b4228c13a63562874f50df8a10cf9a89ed9d04390c4",
+    "old001_pilot.py": "b5c1472cce875cec649e8331b4f91da2bef64a7f57b910109a360ad727fb62e4",
+    "old001_animation.json": "ec9951436196c0f6208df8f2f20589531f0a216e482e06499369f6d08b88d530",
+    "old002_pilot24.py": "a38258f42d289e991d970d6272442a524c089b50610547f8cd955aecc66166d0",
+    "old002_animation.json": "f0fa09919b0f179ce849e2a4d5dd8b3dbdf4503c6ea9ab10c0d19d65f7baec35"
+  },
+  "buildCount": 1,
+  "frames": [
+    {
+      "frame": 0,
+      "originalPngSha256": "c6bd66dd41a3b0f8734f8b5f4d673a3568d581d1375aee2dc24d52af75083d61",
+      "rerenderPngSha256": "c6bd66dd41a3b0f8734f8b5f4d673a3568d581d1375aee2dc24d52af75083d61",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "cb7e0e2ab9fd409554c5bfcf6fe9c6e74bfd5c8c3f2a93969c579f58c6997748",
+      "rerenderRgbaSha256": "cb7e0e2ab9fd409554c5bfcf6fe9c6e74bfd5c8c3f2a93969c579f58c6997748",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 1,
+      "originalPngSha256": "3eae247a773774ab301983e6b2dc3c7678e0710334d806a98878f4d870f8a261",
+      "rerenderPngSha256": "3eae247a773774ab301983e6b2dc3c7678e0710334d806a98878f4d870f8a261",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "41bb03918e784d0a5d215fbb7588ed5d6ef6f2bd17e19fdd7f8f507fa9319b56",
+      "rerenderRgbaSha256": "41bb03918e784d0a5d215fbb7588ed5d6ef6f2bd17e19fdd7f8f507fa9319b56",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 2,
+      "originalPngSha256": "a755921ed8e7d8e44335d88e8a6d577b5365abc967db170ab656ebd289bef45a",
+      "rerenderPngSha256": "a755921ed8e7d8e44335d88e8a6d577b5365abc967db170ab656ebd289bef45a",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "abfbfaf6bacc6bf29c63eefe9ad556c94ef1ba78f2a83f65bd65b5fbf8846b9a",
+      "rerenderRgbaSha256": "abfbfaf6bacc6bf29c63eefe9ad556c94ef1ba78f2a83f65bd65b5fbf8846b9a",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 3,
+      "originalPngSha256": "89be681b39e399af2d613bfe5a1b81c893d6deeb7c903b09113a29643c975000",
+      "rerenderPngSha256": "89be681b39e399af2d613bfe5a1b81c893d6deeb7c903b09113a29643c975000",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "c1c600a60adc8473bd09a89ca24f4b9f9761573e5051d4a3e62fa61928e525f2",
+      "rerenderRgbaSha256": "c1c600a60adc8473bd09a89ca24f4b9f9761573e5051d4a3e62fa61928e525f2",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 4,
+      "originalPngSha256": "dc22e7fb73d163457cf8f57c541b70bd0bf542a09af827025e6164322d2f57b6",
+      "rerenderPngSha256": "dc22e7fb73d163457cf8f57c541b70bd0bf542a09af827025e6164322d2f57b6",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "bf360a9c2a7ce0aab2771e0a1c792610cde13f085ef68f0816d9259b2721b84c",
+      "rerenderRgbaSha256": "bf360a9c2a7ce0aab2771e0a1c792610cde13f085ef68f0816d9259b2721b84c",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 5,
+      "originalPngSha256": "bf6ca26dee18fff946c9b0389bde25f99f92e540de6f68d62355e609bafbf637",
+      "rerenderPngSha256": "bf6ca26dee18fff946c9b0389bde25f99f92e540de6f68d62355e609bafbf637",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "ba3cb4d22f61ad26cc51e9a9fde0dd1a794e0fce83d88ea70bbc744ebaa060bf",
+      "rerenderRgbaSha256": "ba3cb4d22f61ad26cc51e9a9fde0dd1a794e0fce83d88ea70bbc744ebaa060bf",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 6,
+      "originalPngSha256": "cfd135910ad6815859f4003bc80a200ff1006e8bab4ef2bc0c1b0b50e7866551",
+      "rerenderPngSha256": "cfd135910ad6815859f4003bc80a200ff1006e8bab4ef2bc0c1b0b50e7866551",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "9f65bb8ca0b0ebf63bc3386ac8101679abcbe5971936e1674e7811a61757b7ad",
+      "rerenderRgbaSha256": "9f65bb8ca0b0ebf63bc3386ac8101679abcbe5971936e1674e7811a61757b7ad",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 7,
+      "originalPngSha256": "9c21d6225dc9e04d2344c0d1cc4012ffdf51fe38fe3aed73fc64a4227546ff71",
+      "rerenderPngSha256": "9c21d6225dc9e04d2344c0d1cc4012ffdf51fe38fe3aed73fc64a4227546ff71",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "4976c87bf6b522ad3c7a4863a89133dc9df4fddea50cccea0dc239d5076e3a42",
+      "rerenderRgbaSha256": "4976c87bf6b522ad3c7a4863a89133dc9df4fddea50cccea0dc239d5076e3a42",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 8,
+      "originalPngSha256": "9735ec12bb138d57a262f2c81fbbb3ed19f87fe02fc1de509a3216e6ef48e3a9",
+      "rerenderPngSha256": "9735ec12bb138d57a262f2c81fbbb3ed19f87fe02fc1de509a3216e6ef48e3a9",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "293d88eaf56153a85d0a71f1ea5637b314d1512537fe3ec1847f5720efe16e7a",
+      "rerenderRgbaSha256": "293d88eaf56153a85d0a71f1ea5637b314d1512537fe3ec1847f5720efe16e7a",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 9,
+      "originalPngSha256": "25ba7c066c9bfcfbdf0e066cc701536db54ee4c565ab367ed9d49ad0e2a7ad8d",
+      "rerenderPngSha256": "25ba7c066c9bfcfbdf0e066cc701536db54ee4c565ab367ed9d49ad0e2a7ad8d",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "0cd5cd691f561f7dc6f1173f45f8677c2b8e83d3a156beeabbf99fb15f2d1804",
+      "rerenderRgbaSha256": "0cd5cd691f561f7dc6f1173f45f8677c2b8e83d3a156beeabbf99fb15f2d1804",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 10,
+      "originalPngSha256": "7ed0dabd92d361acf1f43ef0cc3a58fef07883815aecde86cdf5c4fdfc5e1db9",
+      "rerenderPngSha256": "7ed0dabd92d361acf1f43ef0cc3a58fef07883815aecde86cdf5c4fdfc5e1db9",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "8da91157a657956e2032912074e8a633d946ef30b2ec1da6d7983d6f8f162dd7",
+      "rerenderRgbaSha256": "8da91157a657956e2032912074e8a633d946ef30b2ec1da6d7983d6f8f162dd7",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 11,
+      "originalPngSha256": "a8bb81aa39fdbcfe1062abfd57ec05275a9c1f75fdc7aff3e4eb6ace9511bfe0",
+      "rerenderPngSha256": "a8bb81aa39fdbcfe1062abfd57ec05275a9c1f75fdc7aff3e4eb6ace9511bfe0",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "42ec0af14a8848135523cc4bd3138b686c0f6884b04b78f97c6f75ebb2332327",
+      "rerenderRgbaSha256": "42ec0af14a8848135523cc4bd3138b686c0f6884b04b78f97c6f75ebb2332327",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 12,
+      "originalPngSha256": "bf1f241551814ffe62d74adb65448fa742b3186283ad02c510ff650baf2e92bb",
+      "rerenderPngSha256": "bf1f241551814ffe62d74adb65448fa742b3186283ad02c510ff650baf2e92bb",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "8db636f8598ecd5a684d317e439700711aa30aca83c0f26e0490307da8de2da9",
+      "rerenderRgbaSha256": "8db636f8598ecd5a684d317e439700711aa30aca83c0f26e0490307da8de2da9",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 13,
+      "originalPngSha256": "d0ea393dab707d4f1b1bb0cdd0add98aa86685b6d0827e4ee2f3ce8da2d5860d",
+      "rerenderPngSha256": "d0ea393dab707d4f1b1bb0cdd0add98aa86685b6d0827e4ee2f3ce8da2d5860d",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "dc35e17f962f55788cf5a9988c1ab570e4e24b5ab85504a1c3ffd66287255f3c",
+      "rerenderRgbaSha256": "dc35e17f962f55788cf5a9988c1ab570e4e24b5ab85504a1c3ffd66287255f3c",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 14,
+      "originalPngSha256": "566f8b845525f8118ecf77eab51561248040a543252b9e8c9a3b58d57168bd04",
+      "rerenderPngSha256": "566f8b845525f8118ecf77eab51561248040a543252b9e8c9a3b58d57168bd04",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "9d78c6fc58cdc2187101e65c6c46276f0db14773612a8a5879f5bbcf53545bf3",
+      "rerenderRgbaSha256": "9d78c6fc58cdc2187101e65c6c46276f0db14773612a8a5879f5bbcf53545bf3",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 15,
+      "originalPngSha256": "9e37e68449b52bbc448209e8f0c9cd8f75bcfeb737a3ceac49bb6e553fb8da1a",
+      "rerenderPngSha256": "9e37e68449b52bbc448209e8f0c9cd8f75bcfeb737a3ceac49bb6e553fb8da1a",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "998fb5e5fc64d6147c60ef70d3e455206e414ca91ea1d0482edd4f6f63df05b1",
+      "rerenderRgbaSha256": "998fb5e5fc64d6147c60ef70d3e455206e414ca91ea1d0482edd4f6f63df05b1",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 16,
+      "originalPngSha256": "66b20385f8bb2d5ec93cc3d4bf3a8cf91e81b2c57f035e9c8e6c6fd4c36a83da",
+      "rerenderPngSha256": "66b20385f8bb2d5ec93cc3d4bf3a8cf91e81b2c57f035e9c8e6c6fd4c36a83da",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "68d81bf322f2c0e2a465ee2d7e6a710cf3cffe89b0f8d935b3253ea884b20b05",
+      "rerenderRgbaSha256": "68d81bf322f2c0e2a465ee2d7e6a710cf3cffe89b0f8d935b3253ea884b20b05",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 17,
+      "originalPngSha256": "c0d261e59b049add3104168caf66052e3a764784ae176586faa3047605097fa3",
+      "rerenderPngSha256": "c0d261e59b049add3104168caf66052e3a764784ae176586faa3047605097fa3",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "4e878cb1ed07ee216ae5e99ff58c48a9000086e9e086eb4101aa3b866a0b55a7",
+      "rerenderRgbaSha256": "4e878cb1ed07ee216ae5e99ff58c48a9000086e9e086eb4101aa3b866a0b55a7",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 18,
+      "originalPngSha256": "a7eb990f1697c31341ecd53263ee9819ede610102274b2ef6c561926613515db",
+      "rerenderPngSha256": "a7eb990f1697c31341ecd53263ee9819ede610102274b2ef6c561926613515db",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "c6459e06973c4450d8745dfe03f044991222b2e386c611158e2fb0361ea4b855",
+      "rerenderRgbaSha256": "c6459e06973c4450d8745dfe03f044991222b2e386c611158e2fb0361ea4b855",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 19,
+      "originalPngSha256": "5233cafd3b244b6b97b9fc311c59fcf6e4cb15f48d8b694365a7c623ee15fa95",
+      "rerenderPngSha256": "5233cafd3b244b6b97b9fc311c59fcf6e4cb15f48d8b694365a7c623ee15fa95",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "c5b168b7c8fa6bc851e20b90fe86547ae2203c58d81f71d14ac0b0ae57544ae6",
+      "rerenderRgbaSha256": "c5b168b7c8fa6bc851e20b90fe86547ae2203c58d81f71d14ac0b0ae57544ae6",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 20,
+      "originalPngSha256": "d9d94b04a7d89d58a837bc272ca9a73dae8b38cff2bc5ad8fcc34baafde6b639",
+      "rerenderPngSha256": "d9d94b04a7d89d58a837bc272ca9a73dae8b38cff2bc5ad8fcc34baafde6b639",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "69b5e2364dd66f649a60ba3f880a6a2ad29db19b8585de4c4744da859d6d7319",
+      "rerenderRgbaSha256": "69b5e2364dd66f649a60ba3f880a6a2ad29db19b8585de4c4744da859d6d7319",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 21,
+      "originalPngSha256": "23a16c9643a0d94828e3ce36964d5ec5836c8424a2ef0e1497e248b39792f3d7",
+      "rerenderPngSha256": "23a16c9643a0d94828e3ce36964d5ec5836c8424a2ef0e1497e248b39792f3d7",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "e8d8181011ba724ed039f86261e2f45b947f301eec69292d3a8047f21ba324ed",
+      "rerenderRgbaSha256": "e8d8181011ba724ed039f86261e2f45b947f301eec69292d3a8047f21ba324ed",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 22,
+      "originalPngSha256": "aa022e35140cad439ede0f898ccb0c81442c269ac2eaf7d976a5cc3c49b58d9b",
+      "rerenderPngSha256": "aa022e35140cad439ede0f898ccb0c81442c269ac2eaf7d976a5cc3c49b58d9b",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "559723a5267d84bf7a5ffa3ba1fefc2659127701da5d371c7339d3359df9384e",
+      "rerenderRgbaSha256": "559723a5267d84bf7a5ffa3ba1fefc2659127701da5d371c7339d3359df9384e",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 23,
+      "originalPngSha256": "096ebe4131f03f8bcb4aa4f912514c2e89dd19ad79aebd9d31ebd6f03130be66",
+      "rerenderPngSha256": "096ebe4131f03f8bcb4aa4f912514c2e89dd19ad79aebd9d31ebd6f03130be66",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "e2ad84ad79ab2d574ba3623442ca26fcad24b162a8db2ab43010d14869eb8005",
+      "rerenderRgbaSha256": "e2ad84ad79ab2d574ba3623442ca26fcad24b162a8db2ab43010d14869eb8005",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 24,
+      "originalPngSha256": "278bd22f82785c1f667c889b413c98595321ed5f85594e3f07fbaf496350efc7",
+      "rerenderPngSha256": "278bd22f82785c1f667c889b413c98595321ed5f85594e3f07fbaf496350efc7",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "2cdadb86f487d8eb7f937ebbc4dc0072c1ce41ac7de1e8b142cb82f8e8a70c7f",
+      "rerenderRgbaSha256": "2cdadb86f487d8eb7f937ebbc4dc0072c1ce41ac7de1e8b142cb82f8e8a70c7f",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 25,
+      "originalPngSha256": "28e28c40dd1387e778d0fdebad1ef0edfd16b7fb502bb213ae53b529f8fd315e",
+      "rerenderPngSha256": "28e28c40dd1387e778d0fdebad1ef0edfd16b7fb502bb213ae53b529f8fd315e",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "826702d68a35600e6c9e348c28451b0c75f5ce62db8f3529505ba449e1c65b8d",
+      "rerenderRgbaSha256": "826702d68a35600e6c9e348c28451b0c75f5ce62db8f3529505ba449e1c65b8d",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 26,
+      "originalPngSha256": "e81cf2f1731bcfe6b7ece4a1e1672d04c61613912dc0f83091a1868a04d6bd59",
+      "rerenderPngSha256": "e81cf2f1731bcfe6b7ece4a1e1672d04c61613912dc0f83091a1868a04d6bd59",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "b11b37b3bc1d433565c0be098f4839195dbbc60a8d91d675ad85ee787473dd66",
+      "rerenderRgbaSha256": "b11b37b3bc1d433565c0be098f4839195dbbc60a8d91d675ad85ee787473dd66",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 27,
+      "originalPngSha256": "c1e6b9689e0cbf01ca862bbe654fab55ec24d83df512ff7dc83c305a40791fb7",
+      "rerenderPngSha256": "c1e6b9689e0cbf01ca862bbe654fab55ec24d83df512ff7dc83c305a40791fb7",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "38bac82baec01b0e4cd0b7807333f66eb09a820d7d9c9a7364de9aa8d1922974",
+      "rerenderRgbaSha256": "38bac82baec01b0e4cd0b7807333f66eb09a820d7d9c9a7364de9aa8d1922974",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 28,
+      "originalPngSha256": "419b7bd1db36ba5cbcda779308cd7f4b3b72d07a071f04f717ba2026fbb13c3b",
+      "rerenderPngSha256": "419b7bd1db36ba5cbcda779308cd7f4b3b72d07a071f04f717ba2026fbb13c3b",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "ba80df215bc6930e5f907999caa05d904c76be499babbc671117c04930e7e9c2",
+      "rerenderRgbaSha256": "ba80df215bc6930e5f907999caa05d904c76be499babbc671117c04930e7e9c2",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 29,
+      "originalPngSha256": "29e99f541dc60af0e0aeee3c54728f69f7df51aee18b084694a5245cb820fef6",
+      "rerenderPngSha256": "29e99f541dc60af0e0aeee3c54728f69f7df51aee18b084694a5245cb820fef6",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "adf08c31a04162e451277b31e22fc999f20e377f3141e131ff1da4e41c7fb46f",
+      "rerenderRgbaSha256": "adf08c31a04162e451277b31e22fc999f20e377f3141e131ff1da4e41c7fb46f",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 30,
+      "originalPngSha256": "db20afb7b95625e20a3c7042c22f2cbc881a89753c1608e97e124a24dc0a4bdd",
+      "rerenderPngSha256": "db20afb7b95625e20a3c7042c22f2cbc881a89753c1608e97e124a24dc0a4bdd",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "a4be02a31db6d53c248f19aad9ef084562d0befb34e38a30e61ef033e0c5f536",
+      "rerenderRgbaSha256": "a4be02a31db6d53c248f19aad9ef084562d0befb34e38a30e61ef033e0c5f536",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 31,
+      "originalPngSha256": "6702b48fa740d5afe2abdc229f78351aadb0fabed9b8e167aac865216601cd31",
+      "rerenderPngSha256": "6702b48fa740d5afe2abdc229f78351aadb0fabed9b8e167aac865216601cd31",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "7119f1022ecc32649845e208c1956054f1a3ae2adf85bf96cebe1a18378db01c",
+      "rerenderRgbaSha256": "7119f1022ecc32649845e208c1956054f1a3ae2adf85bf96cebe1a18378db01c",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 32,
+      "originalPngSha256": "8f1b38164857d4f843af6f784aaa0470ad16cb20a4eddbb448635c375e93ee5b",
+      "rerenderPngSha256": "8f1b38164857d4f843af6f784aaa0470ad16cb20a4eddbb448635c375e93ee5b",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "40e6bd91ed877a377f6538c3539f10a7055b44d8d5f4047dd84179db2ee51de3",
+      "rerenderRgbaSha256": "40e6bd91ed877a377f6538c3539f10a7055b44d8d5f4047dd84179db2ee51de3",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 33,
+      "originalPngSha256": "90b1db71833f50c97a1115023123d52ada2cd64bb1dcbdd0ea0936b3fc8fa2b6",
+      "rerenderPngSha256": "90b1db71833f50c97a1115023123d52ada2cd64bb1dcbdd0ea0936b3fc8fa2b6",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "506f9195299d8b3c46f08f5279d7f0173cc271a0ce3f3e1318e2883560b238a1",
+      "rerenderRgbaSha256": "506f9195299d8b3c46f08f5279d7f0173cc271a0ce3f3e1318e2883560b238a1",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 34,
+      "originalPngSha256": "592bfb631b32042100174c53e8b157595ed6520e0404873cd3ced83c9c55b357",
+      "rerenderPngSha256": "592bfb631b32042100174c53e8b157595ed6520e0404873cd3ced83c9c55b357",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "64dad18a4e88dc877dd03c953a0aa5138b753c40d82b339da35564eb620ed1b3",
+      "rerenderRgbaSha256": "64dad18a4e88dc877dd03c953a0aa5138b753c40d82b339da35564eb620ed1b3",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 35,
+      "originalPngSha256": "07aeeaa866587490eb815cc5fc796fd0643614b3bc8dfb026bf0732b38056e7d",
+      "rerenderPngSha256": "07aeeaa866587490eb815cc5fc796fd0643614b3bc8dfb026bf0732b38056e7d",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "cd103c4cc932fa33ed1fe8af699a20b999a30e3967121e03cf4fd1c850c34c25",
+      "rerenderRgbaSha256": "cd103c4cc932fa33ed1fe8af699a20b999a30e3967121e03cf4fd1c850c34c25",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 36,
+      "originalPngSha256": "511a9d73e4a7b22c9eebb2999bbaf0bd4d5bd3c27073213f69890569214e8410",
+      "rerenderPngSha256": "511a9d73e4a7b22c9eebb2999bbaf0bd4d5bd3c27073213f69890569214e8410",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "2e6f2f6983aa5e20b158a8d3ac2d2fa044cbdedf012203fe3ab7b6d962da3316",
+      "rerenderRgbaSha256": "2e6f2f6983aa5e20b158a8d3ac2d2fa044cbdedf012203fe3ab7b6d962da3316",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 37,
+      "originalPngSha256": "dedab022ac647b17480249dc63b834ede0a7356a098b0410f9adf2f1a8e8abc7",
+      "rerenderPngSha256": "dedab022ac647b17480249dc63b834ede0a7356a098b0410f9adf2f1a8e8abc7",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "98cf789a97ebb51b5561314547092da4a7d5814ed6d24122fbb44d8ed014e75c",
+      "rerenderRgbaSha256": "98cf789a97ebb51b5561314547092da4a7d5814ed6d24122fbb44d8ed014e75c",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 38,
+      "originalPngSha256": "aa102808b17c6180d7169f22bbf2844d65512f06381867a6c92fabb4d26e88be",
+      "rerenderPngSha256": "aa102808b17c6180d7169f22bbf2844d65512f06381867a6c92fabb4d26e88be",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "ad2849bb7983c09c7eaebdd993c390ef8f8d6d1a807132294474a20dfdf25b73",
+      "rerenderRgbaSha256": "ad2849bb7983c09c7eaebdd993c390ef8f8d6d1a807132294474a20dfdf25b73",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 39,
+      "originalPngSha256": "c14e2cd6f7757151853cb664b44a4f19c54b0911ad5c7a427de37e21120f21ac",
+      "rerenderPngSha256": "c14e2cd6f7757151853cb664b44a4f19c54b0911ad5c7a427de37e21120f21ac",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "253895af16f20c7548b786ffce022a44790c27666e83f16d2ec4e33493918764",
+      "rerenderRgbaSha256": "253895af16f20c7548b786ffce022a44790c27666e83f16d2ec4e33493918764",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 40,
+      "originalPngSha256": "d6193aae9e51b953dcacb622b57073e22abf76377c7288f2dfc3e53c3f08ade3",
+      "rerenderPngSha256": "d6193aae9e51b953dcacb622b57073e22abf76377c7288f2dfc3e53c3f08ade3",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "adf595adc3b3a0c964268f47ab42ecc49c8037dbfd2e24a39866589432cb4a6d",
+      "rerenderRgbaSha256": "adf595adc3b3a0c964268f47ab42ecc49c8037dbfd2e24a39866589432cb4a6d",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 41,
+      "originalPngSha256": "03e575b354731a5db53d3146aedb260d068203cd362fca93e0cadff5c08d75eb",
+      "rerenderPngSha256": "03e575b354731a5db53d3146aedb260d068203cd362fca93e0cadff5c08d75eb",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "3e72d3ec9ba883fb5784d888b1f614666d5c735b77ec782dc434d7309a9971de",
+      "rerenderRgbaSha256": "3e72d3ec9ba883fb5784d888b1f614666d5c735b77ec782dc434d7309a9971de",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 42,
+      "originalPngSha256": "27d8295b11fcb70ca797508ac19562f5c9812a3633f35fcdf7839953ac98af6b",
+      "rerenderPngSha256": "27d8295b11fcb70ca797508ac19562f5c9812a3633f35fcdf7839953ac98af6b",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "610dba15824011c6499a80429fdc9437c0975186c0c411ca8644da35208b52eb",
+      "rerenderRgbaSha256": "610dba15824011c6499a80429fdc9437c0975186c0c411ca8644da35208b52eb",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 43,
+      "originalPngSha256": "1c7406d7720d459661373e26a3c3cd7b4c559fb85e261746caab898307d344ec",
+      "rerenderPngSha256": "1c7406d7720d459661373e26a3c3cd7b4c559fb85e261746caab898307d344ec",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "bfd34d3d5a81c7ae62ccbbbb976813119f6ee7cbd553978f4b1e7422104b1252",
+      "rerenderRgbaSha256": "bfd34d3d5a81c7ae62ccbbbb976813119f6ee7cbd553978f4b1e7422104b1252",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 44,
+      "originalPngSha256": "f7fc6c5da53903e5c8b1538a5ccdb4c5ab7bc6e6d32d66efdaeb2e6b39b8d81b",
+      "rerenderPngSha256": "f7fc6c5da53903e5c8b1538a5ccdb4c5ab7bc6e6d32d66efdaeb2e6b39b8d81b",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "506ad95686e404db2d804c7ac6b9f28b11777aafc0c7f3227911870a7682f3d5",
+      "rerenderRgbaSha256": "506ad95686e404db2d804c7ac6b9f28b11777aafc0c7f3227911870a7682f3d5",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 45,
+      "originalPngSha256": "2cf0836da7d9ccded6a7dc849951179779a6d7789715c77cd7c4e5ecb7ea962d",
+      "rerenderPngSha256": "2cf0836da7d9ccded6a7dc849951179779a6d7789715c77cd7c4e5ecb7ea962d",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "8bc7ec2c6b44008d3fdc554efacae0b67119339a26b186cd2984288014c81607",
+      "rerenderRgbaSha256": "8bc7ec2c6b44008d3fdc554efacae0b67119339a26b186cd2984288014c81607",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 46,
+      "originalPngSha256": "769a88c3cc263e93107cbbb244d27356d9eab44fd5a783c4d058fc0ee06b47dd",
+      "rerenderPngSha256": "769a88c3cc263e93107cbbb244d27356d9eab44fd5a783c4d058fc0ee06b47dd",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "92410a611630e3d0ba86e9c2a4e5088b9391e879d8eedc3307746752d908d659",
+      "rerenderRgbaSha256": "92410a611630e3d0ba86e9c2a4e5088b9391e879d8eedc3307746752d908d659",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "frame": 47,
+      "originalPngSha256": "62f806128c2154c665c07ae36f803e2a932cedbe68c1a6683ebeceba56fea505",
+      "rerenderPngSha256": "62f806128c2154c665c07ae36f803e2a932cedbe68c1a6683ebeceba56fea505",
+      "pngBytesEqual": true,
+      "originalRgbaSha256": "042b98ca4212bd117fab94d21d5ed86bf85881a26ea54898d670998a8d959844",
+      "rerenderRgbaSha256": "042b98ca4212bd117fab94d21d5ed86bf85881a26ea54898d670998a8d959844",
+      "rgbaEqual": true,
+      "size": [
+        256,
+        256
+      ]
+    }
+  ],
+  "pngBytesEqualCount": 48,
+  "decodedRgbaEqualCount": 48,
+  "producerOutputHashMismatchCount": 4,
+  "producerOutputHashMismatches": [
+    {
+      "path": "plan.json",
+      "expected": "e96479a1b7396b2d8e428c63a84eb7d1a8954112630f6c80040b2f80a400d50d",
+      "actual": "fcdf150a20ac1947647b69e221b4a1e6bfb7a17351059db3082d83a34f03477d",
+      "exists": true
+    },
+    {
+      "path": "spec.json",
+      "expected": "ec40577b9a149ed8904f850818fa16ebf59348cf8b76e76828b6b6d71dd7b1a1",
+      "actual": null,
+      "exists": false
+    },
+    {
+      "path": "model-copy-change-proof.json",
+      "expected": "a12d9fc97e32a53e31cf429ae76fdaed60cbba07893e5d018b58541b80790702",
+      "actual": null,
+      "exists": false
+    },
+    {
+      "path": "__pycache__/model003.cpython-314.pyc",
+      "expected": "bea42bfce7bb4e0a8db26de060aa03764574964035818f213c4381c71f6cd71a",
+      "actual": "ea2e8e7cadcdeb4220f146f6380a4c958af2df4f829f399b335f096b70ae31d2",
+      "exists": true
+    }
+  ],
+  "mismatchExplanation": "Fresh reproduction used the frozen reproduction instructions. Expected path/context metadata differences: plan.json embeds the new lease path; spec.json and model-copy-change-proof.json are not part of the prescribed copied inputs/output; model003 pycache is newly generated. All 48 source frame PNG bytes and decoded RGBA pixels match exactly; other rendered production outputs match the frozen receipt."
+}

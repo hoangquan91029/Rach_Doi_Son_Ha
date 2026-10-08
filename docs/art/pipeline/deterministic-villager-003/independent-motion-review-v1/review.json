@@ -1,0 +1,126 @@
+{
+  "reviewId": "deterministic-villager-003-independent-motion-review-v1",
+  "status": "READY",
+  "motionVerdict": "PASS_NARROW",
+  "scope": "Only the exact D07 South walk pilot, 48 frozen frames, at the reviewed 64/80/96 nominal full-scene scales and tested playback rates. No direction or action fanout.",
+  "frozenInputs": {
+    "model003.py": "2e03d733f742ec60cc046c026fcd2ee13f2413d9bcd8cbeefe652aaeccddbd59",
+    "pilot48.py": "eade5cb496a54790020d2d288f01a2d7a424219bb3aecb31fc5801c5fbd10d94",
+    "animation.json": "575a00c7fff3da2ca237e3667ff16e9ddd1d33f84ec4271082c9e9daa4345f97",
+    "receipt.json": "0625a4cefaf03561f9fd844a4899d6a2517876e21285315f3860b23f9277e986",
+    "plan.json": "e96479a1b7396b2d8e428c63a84eb7d1a8954112630f6c80040b2f80a400d50d"
+  },
+  "reproduction": {
+    "status": "ONE_BUILD_COMPLETE; all 48 PNG byte comparisons and decoded RGBA comparisons equal",
+    "receipt": "../deterministic-villager-003-independent-rerender/receipt.json and rerender-receipt.json in this review directory",
+    "buildCount": 1,
+    "caveat": "A duplicate prepare process was interrupted before build; only one build was run. Four non-render custody outputs differed as recorded in rerender-receipt.json (path/context-specific plan, unprescribed spec/model-copy proof, and regenerated Python cache). Frozen inputs were not modified."
+  },
+  "numericEvidence": {
+    "periodMs": 649.579324,
+    "frames": 48,
+    "nominalFrameDurationMs": 13.5329,
+    "heldToe60HzMaxPx": {
+      "64": 1.404177396,
+      "80": 1.509298999,
+      "96": 1.611158798
+    },
+    "continuousRigAndSeam": "Frozen receipt reports bone-length error 2.78e-16, stance toe speed 5.55e-10, joint seam residual 2.64e-16, toe seam residual 1.11e-16; these are numeric checks, not visual approval.",
+    "camera": "26.565051 degrees, projected ground ratio 0.4472136 versus runtime grid 0.5; reconciliation remains unaccepted."
+  },
+  "independentVisualMotion": {
+    "observations": [
+      "At 1x the loop reads as a brisk but readable walk; at 0.5x it remains smooth; 1.5x is a fast diagnostic playback.",
+      "F0/F24 show a visible support-foot exchange; F47-to-F0 has no obvious pose, pivot, or material pop.",
+      "No obvious foot skating/lift at contact, scale pulse, ground clipping, reverse bend, disconnected limb, or false double support. Hat, cream tunic, dark near-side sash/cloth, and brown lower garment remain stable across the loop."
+    ],
+    "limitations": [
+      "This is an independent visual read, not human owner acceptance.",
+      "The 649.58 ms cycle is brisk and has no separate owner timing approval.",
+      "Identity/style fidelity and the camera/grid reconciliation remain unapproved."
+    ]
+  },
+  "humanVisualSteering": {
+    "verdict": "HUMAN_VISUAL_HELD",
+    "quotedSteering": "\u201crealistic graphics matching existing assets\u201d",
+    "interpretation": "The current blocky, low-detail 3D pilot is motion-framework evidence only. It is below canonical visual quality and is not approved as official art. Realistic graphics consistent with the existing assets, including whole-model and consistent texture fidelity, remain a required future gate.",
+    "scopeConsequences": "No identity/style approval, production approval, extra directions/actions, detail pass, limb textures, repaint, or image-generation call is authorized by this review."
+  },
+  "separateDecisionStates": {
+    "technicalCustody": "PASS for the pinned one-build reproduction and matching 48 PNG/RGBA frames; mismatching non-render custody outputs are itemized in the rerender receipt.",
+    "numericMotion": "PASS for reported frozen numerical checks.",
+    "independentVisibleMotion": "PASS_NARROW for exact D07 walk pilot only.",
+    "visualIdentityAndRealism": "HUMAN_VISUAL_HELD.",
+    "cameraReconciliation": "HELD.",
+    "runtimeIntegration": "NOT_APPROVED.",
+    "ownerApproval": "NOT_GRANTED.",
+    "productionAndFanout": "NOT_APPROVED."
+  },
+  "previewCapture": {
+    "url": "http://127.0.0.1:8766/docs/art/pipeline/deterministic-villager-003/preview.html",
+    "captureCount": 15,
+    "captureDimensions": {
+      "key-80-neutral-F0-0.png": [
+        1120,
+        700
+      ],
+      "key-80-neutral-F0-1.png": [
+        1120,
+        700
+      ],
+      "key-80-neutral-F24-0.png": [
+        1120,
+        700
+      ],
+      "key-80-neutral-F47-0.png": [
+        1120,
+        700
+      ],
+      "loop-64-dark-1x.png": [
+        1120,
+        700
+      ],
+      "loop-64-light-1x.png": [
+        1120,
+        700
+      ],
+      "loop-64-neutral-1x.png": [
+        1120,
+        700
+      ],
+      "loop-80-dark-1x.png": [
+        1120,
+        700
+      ],
+      "loop-80-light-1x.png": [
+        1120,
+        700
+      ],
+      "loop-80-neutral-0p5x.png": [
+        1120,
+        700
+      ],
+      "loop-80-neutral-1p5x.png": [
+        1120,
+        700
+      ],
+      "loop-80-neutral-1x.png": [
+        1120,
+        700
+      ],
+      "loop-96-dark-1x.png": [
+        1120,
+        700
+      ],
+      "loop-96-light-1x.png": [
+        1120,
+        700
+      ],
+      "loop-96-neutral-1x.png": [
+        1120,
+        700
+      ]
+    },
+    "captureReceipt": "captures/capture-receipt.json"
+  }
+}

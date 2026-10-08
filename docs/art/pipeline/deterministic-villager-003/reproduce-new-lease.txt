@@ -1,0 +1,12 @@
+# Future reproduction only; not executed by producer. Fresh siblinglease mandatory.
+# This retains frozen001/002/003 and creates one reproducible newrenderbuild.
+NEW_LEASE=/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/deterministic-villager-003-reproduce
+mkdir "$NEW_LEASE"
+cp /home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/deterministic-villager-003/model003.py "$NEW_LEASE/model003.py"
+cp /home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/deterministic-villager-003/pilot48.py "$NEW_LEASE/pilot48.py"
+cp /home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/deterministic-villager-003/correct_qa_headers.py "$NEW_LEASE/correct_qa_headers.py"
+python3 "$NEW_LEASE/pilot48.py" prepare
+python3 "$NEW_LEASE/pilot48.py" build
+python3 "$NEW_LEASE/correct_qa_headers.py"
+# Requires standard numpy/PIL and pinned frozen001/002 siblings+canonicalreferences.
+# Existing frames/receipt guards prevent a secondbuild in thatlease.

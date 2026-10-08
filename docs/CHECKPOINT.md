@@ -1,12 +1,16 @@
-## Current atomic checkpoint — deterministic RTS sprites
+## Current checkpoint: pilot 003 cadence correction
 
-Latest live usage90%primary/88%weekly: finish checkpoint only; no further image/model/gait calls this turn. Pipeline decision and scope correction are in docs/art/pipeline/. Separate limb artwork/cut-out assembly STOPPED. Complete original clothed3D cels are the preferred final path; no AI calls in either new pilot. Legacy originals/leadership/held art preserved.
+The five-hour quota reset was verified live at 0% primary / 89% weekly after one timer tied to the reported reset. Latest verified usage at 11:02:51 UTC is 22% primary / 92% weekly. Finish only this pilot's review and checkpoint; no new gait, model, art call or direction/unit fanout. No reset credit used. The quiet five-hour recurring continuation remains ACTIVE.
 
-Pilot001 eight cels: exact rerenderedPNG/RGBA, fixed256source/128runtime; actual held-toe3.90875px fails2px. Independent motion FAIL_NARROW; amendment withdraws parent's mistaken grid warning. Pilot00224cels: exact same model/motion/style, all8oldkeys preserved, phase seam exactRGBA; tracked60Hz error1.404/1.509/1.611px at64/80/96 passes numerical2px. Real runtime128 atlas browser playback Chromium/Firefox all3sizes passes with zero captured errors. Cadence still hurried/mechanical; identity/style, exact-camera reconciliation, full independent24motion, owner, engine integration and production all pending. No fanout allowed.
+Pilot 003 completed exactly one whole-character build: 48 frames, a 649.579324 ms cycle at unchanged world speed 2.1, stride 1.28 and hip height 0.84. The upper body moves down coherently by 0.06. Source characters measure 216–230 px in 256 px canvases; runtime characters measure 108–115 px in 128 px cells. Fixed reference height 233 and pivot [128,237] map proposed default 80 px to actual 74–79 px. The 501-phase preflight, opposite F0/F24 contacts and exact phase seam pass. Projected held-toe error at 60 Hz is 1.404/1.509/1.611 px at nominal 64/80/96 px, below 2 px; this is not optical flow or visible-motion acceptance.
 
-Exact next action when live quota permits: ONE sameD07 gait correction, not new unit/direction/detail. Freeze approximately650ms/1.28model stride/hip≈0.84 reach hypothesis with constantbones, actualtoe-ground roll and501phase validation; adjust torso weight transfer coherently. Unchangedworld2.1 and fixedscale233/pivot128237. Initial48temporal samples derive from<=2px frame-hold budget; no lowering thresholds or pivot/speed workaround. Validate contacts before one render, then real runtimeatlas loop and independent review. After motion passes, reconcile camera26.565°physicalratio.4472 versus54x27grid.5 with one global projection/camera contract. Productionpacking may use ONE union crop per motionfamily/action with immutable translatedpivot; never perframebboxfit. Current schema1 needs explicitcrop derivation support before this. Recompute frame/memorybanks budgets after accepted gait.
+The 8×6 runtime atlas uses 394,265 PNG bytes / 3 MiB decoded RGBA. All 48 cells match visible RGBA and alpha. Local Chromium/Firefox playback passes at all three sizes with zero captured errors. All 317 producer output pins and baseline 001/002 pins verify. Mislabeled original contact sheets remain preserved beside corrected 48-frame sheets. Source, legacy, leadership and held-art custody is intact; zero AI calls.
 
-The full game remains NOT COMPLETE; public production bundle/simulation/service unchanged. Five-hour recurring continuation is ACTIVE and updated to this scope with quiet notification policy. Sources/metrics/README/commands are sufficient to resume without reviving old11part work. All specialized agents stopped; no open image work order.
+Independent review gives PASS_NARROW for exact D07 screen East walk motion only, with all 48 PNG/RGBA frames reproduced in one build. A bound amendment corrects the original review’s mistaken “South” label. Parent accepts this motion evidence narrowly; canonical identity and final appearance remain HELD. See docs/art/pipeline/deterministic-villager-003/parent-review.json and README.md. No production manifest, art flags, engine integration or deployment. Full game NOT COMPLETE; final visual gate FAIL. Public bundle, simulation and service remain unchanged.
+
+Latest human clarification: final graphics must look realistic like the existing approved assets. The blocky pilot is motion evidence, not official art; its appearance is HELD. See docs/art/pipeline/CANONICAL_REALISM_CLARIFICATION_20261008.md. Even a narrow motion pass does not permit fanout. Qualify a complete canonical-faithful character in this same direction before further production.
+
+Next: if the review holds this pilot, make only its smallest recorded motion/readability correction. If narrowly accepted, reconcile the physical camera's 26.565° / 0.4472 ground ratio with the engine's 54×27 / 0.5 grid before a second direction. Gate engine distance-phase/stop/pause behavior, immutable union-crop derivation, production gutters/manifest and roster memory budgets separately. No limb cutouts; the old 2D rig is landmarks only. Final owner, engine, crowd and full production-match acceptance remain open.
 
 ---
 
@@ -18,7 +22,7 @@ Current next: one villagerD07/screenEast walk, opposite F0/F4 contacts, actual60
 
 ---
 
-# Active continuation checkpoint — 8 October2026
+# Historical pre-scope checkpoint — superseded by the current boundary above
 
 Full project NOT COMPLETE; final visual gate FAIL. Live usage permitted work; latest41%primary/80%weekly. Prior master37 stop checkpoint remains in qa/checkpoint/south-007-near-quota-db73ff1.md.
 

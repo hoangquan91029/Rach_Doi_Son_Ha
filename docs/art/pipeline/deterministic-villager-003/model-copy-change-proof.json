@@ -1,0 +1,15 @@
+{
+  "status": "EXACT_BOUNDED_COPY_CHANGES_VERIFIED",
+  "source001ScriptSha256": "b5c1472cce875cec649e8331b4f91da2bef64a7f57b910109a360ad727fb62e4",
+  "newModelSha256": "2e03d733f742ec60cc046c026fcd2ee13f2413d9bcd8cbeefe652aaeccddbd59",
+  "codeSectionsRetained": "Allconstants+geometryfunctions throughmeasurements; Mesh/mesh_for/project_vertices/render. Legacywriterfunctionsremoved.",
+  "changes": [
+    "STRIDE .64->1.28",
+    "hipjointrest .90->.84",
+    "shoulderjointrest1.35->1.29",
+    "upperbodymesh offsetbob->bob-.06",
+    "modulepreamble ownscope/path BASE fromown__file__"
+  ],
+  "otherGeometryStyleCodeChanges": false,
+  "originalModulesMonkeypatched": false
+}
