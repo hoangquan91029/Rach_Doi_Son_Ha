@@ -1,0 +1,33 @@
+{
+  "job": "023 new finite F06 recovery",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "low",
+  "maxCalls": 1,
+  "retryCap": 0,
+  "callsConsumed": 0,
+  "priorCallState": "022terminalF04done,F06uncalled; no023callstarted",
+  "HEAD": "d8f4bb36d3b73e880d1a0e2bcce31fb33b128fa5",
+  "plan": "021 eightframe1080ms keysfirst reused; this order ONLY F06",
+  "canvas": [
+    1254,
+    1254
+  ],
+  "pivot": [
+    654,
+    1140
+  ],
+  "runtimeCanvas": 128,
+  "renderSize": 89,
+  "referenceRoles": [
+    "F00 identity/prop/readydestination",
+    "selectedF04 predecessor",
+    "MODEL_ONLY simple F06 poseguide; reused uncalled022 preparation geometry"
+  ],
+  "inputPins": {
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-018/F00-call01/raw.png": "e6293fe86eaefc2c9f414241320ab178758cdd52ef09946344364b6a41e41117",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-022/F04-call01/raw.png": "2c84045f4a17c7440fb2cc494e9a9ce4ac1c721ad851427140f5544a98ef0cdc",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-gather-SOUTH-023/guide-F06.png": "dda1f2763250dd666bc1186d4d82595b9e4c3f65aaa1959db5c6352ab0ce0353"
+  },
+  "next": "onecall then brief80look STOP parentselection",
+  "remainingGates": "inbetweens/fullcycle/motion/runtime/owner acceptance absent"
+}

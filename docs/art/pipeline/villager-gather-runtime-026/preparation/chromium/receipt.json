@@ -1,0 +1,1072 @@
+{
+  "status": "REAL_UI_D1_GATHER_CONTACT_PREP_PASS",
+  "staging": {
+    "tick": 64,
+    "entity": {
+      "id": 7,
+      "owner": 0,
+      "type": "villager",
+      "kind": "unit",
+      "x": 3.5,
+      "y": 19.5,
+      "hp": 65,
+      "maxHp": 65,
+      "food": 39.67542399999989,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "idle",
+      "dir": 5,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "resuppliedTick": 15,
+      "starving": 0,
+      "lastMovedTick": 63,
+      "order": {
+        "type": "move",
+        "x": 3,
+        "y": 19
+      }
+    }
+  },
+  "patch": {
+    "id": 2,
+    "type": "wood",
+    "x": 5.5,
+    "y": 21.5,
+    "amount": 4200
+  },
+  "gathered": {
+    "tick": 88,
+    "entity": {
+      "id": 7,
+      "owner": 0,
+      "type": "villager",
+      "kind": "unit",
+      "x": 5.426309883354375,
+      "y": 20.426309883354374,
+      "hp": 65,
+      "maxHp": 65,
+      "food": 39.51644799999984,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "gather",
+      "dir": 1,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0.15000000000000002,
+        "iron": 0,
+        "units": []
+      },
+      "resuppliedTick": 15,
+      "starving": 0,
+      "lastMovedTick": 88,
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood",
+        "startedTick": 88
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    }
+  },
+  "samples": [
+    {
+      "tick": 10,
+      "x": 7.5,
+      "y": 21.5,
+      "state": "idle",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": null
+    },
+    {
+      "tick": 12,
+      "x": 7.5,
+      "y": 21.5,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "move",
+        "x": 3,
+        "y": 19
+      }
+    },
+    {
+      "tick": 13,
+      "x": 7.395,
+      "y": 21.5,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "move",
+        "x": 3,
+        "y": 19
+      }
+    },
+    {
+      "tick": 15,
+      "x": 7.184999999999999,
+      "y": 21.5,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "move",
+        "x": 3,
+        "y": 19
+      }
+    },
+    {
+      "tick": 16,
+      "x": 7.079999999999998,
+      "y": 21.5,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "move",
+        "x": 3,
+        "y": 19
+      }
+    },
+    {
+      "tick": 17,
+      "x": 6.974999999999998,
+      "y": 21.5,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "move",
+        "x": 3,
+        "y": 19
+      }
+    },
+    {
+      "tick": 19,
+      "x": 6.764999999999997,
+      "y": 21.5,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "move",
+        "x": 3,
+        "y": 19
+      }
+    },
+    {
+      "tick": 20,
+      "x": 6.659999999999997,
+      "y": 21.5,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "move",
+        "x": 3,
+        "y": 19
+      }
+    },
+    {
+      "tick": 21,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "move",
+        "x": 3,
+        "y": 19
+      }
+    },
+    {
+      "tick": 23,
+      "x": 6.344999999999995,
+      "y": 21.5,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "move",
+        "x": 3,
+        "y": 19
+      }
+    },
+    {
+      "tick": 24,
+      "x": 6.239999999999995,
+      "y": 21.5,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "move",
+        "x": 3,
+        "y": 19
+      }
+    },
+    {
+      "tick": 25,
+      "x": 6.1349999999999945,
+      "y": 21.5,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "move",
+        "x": 3,
+        "y": 19
+      }
+    },
+    {
+      "tick": 27,
+      "x": 5.924999999999994,
+      "y": 21.5,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "move",
+        "x": 3,
+        "y": 19
+      }
+    },
+    {
+      "tick": 28,
+      "x": 5.849399999999994,
+      "y": 21.5,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "move",
+        "x": 3,
+        "y": 19
+      }
+    },
+    {
+      "tick": 29,
+      "x": 5.773799999999994,
+      "y": 21.5,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "move",
+        "x": 3,
+        "y": 19
+      }
+    },
+    {
+      "tick": 31,
+      "x": 5.622599999999995,
+      "y": 21.5,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "move",
+        "x": 3,
+        "y": 19
+      }
+    },
+    {
+      "tick": 32,
+      "x": 5.546999999999995,
+      "y": 21.5,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "move",
+        "x": 3,
+        "y": 19
+      }
+    },
+    {
+      "tick": 33,
+      "x": 5.479776746058062,
+      "y": 21.47977674605806,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "move",
+        "x": 3,
+        "y": 19
+      }
+    },
+    {
+      "tick": 35,
+      "x": 5.372862200742655,
+      "y": 21.372862200742656,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "move",
+        "x": 3,
+        "y": 19
+      }
+    },
+    {
+      "tick": 36,
+      "x": 5.319404928084952,
+      "y": 21.319404928084953,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "move",
+        "x": 3,
+        "y": 19
+      }
+    },
+    {
+      "tick": 37,
+      "x": 5.265947655427249,
+      "y": 21.26594765542725,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "move",
+        "x": 3,
+        "y": 19
+      }
+    },
+    {
+      "tick": 39,
+      "x": 5.159033110111844,
+      "y": 21.159033110111846,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "move",
+        "x": 3,
+        "y": 19
+      }
+    },
+    {
+      "tick": 40,
+      "x": 5.105575837454142,
+      "y": 21.105575837454143,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "move",
+        "x": 3,
+        "y": 19
+      }
+    },
+    {
+      "tick": 41,
+      "x": 5.052118564796439,
+      "y": 21.05211856479644,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "move",
+        "x": 3,
+        "y": 19
+      }
+    },
+    {
+      "tick": 43,
+      "x": 4.924415080114149,
+      "y": 20.92441508011415,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "move",
+        "x": 3,
+        "y": 19
+      }
+    },
+    {
+      "tick": 44,
+      "x": 4.850168868089561,
+      "y": 20.850168868089565,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "move",
+        "x": 3,
+        "y": 19
+      }
+    },
+    {
+      "tick": 45,
+      "x": 4.775922656064974,
+      "y": 20.775922656064978,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "move",
+        "x": 3,
+        "y": 19
+      }
+    },
+    {
+      "tick": 47,
+      "x": 4.627430232015801,
+      "y": 20.627430232015804,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "move",
+        "x": 3,
+        "y": 19
+      }
+    },
+    {
+      "tick": 48,
+      "x": 4.553184019991214,
+      "y": 20.553184019991217,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "move",
+        "x": 3,
+        "y": 19
+      }
+    },
+    {
+      "tick": 49,
+      "x": 4.478937807966628,
+      "y": 20.478937807966627,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "move",
+        "x": 3,
+        "y": 19
+      }
+    },
+    {
+      "tick": 51,
+      "x": 4.330445383917453,
+      "y": 20.330445383917453,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "move",
+        "x": 3,
+        "y": 19
+      }
+    },
+    {
+      "tick": 52,
+      "x": 4.256199171892865,
+      "y": 20.256199171892867,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "move",
+        "x": 3,
+        "y": 19
+      }
+    },
+    {
+      "tick": 53,
+      "x": 4.181952959868277,
+      "y": 20.18195295986828,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "move",
+        "x": 3,
+        "y": 19
+      }
+    },
+    {
+      "tick": 55,
+      "x": 4.033460535819102,
+      "y": 20.033460535819106,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "move",
+        "x": 3,
+        "y": 19
+      }
+    },
+    {
+      "tick": 56,
+      "x": 3.9592143237945145,
+      "y": 19.95921432379452,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "move",
+        "x": 3,
+        "y": 19
+      }
+    },
+    {
+      "tick": 57,
+      "x": 3.8849681117699273,
+      "y": 19.884968111769933,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "move",
+        "x": 3,
+        "y": 19
+      }
+    },
+    {
+      "tick": 59,
+      "x": 3.7364756877207537,
+      "y": 19.73647568772076,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "move",
+        "x": 3,
+        "y": 19
+      }
+    },
+    {
+      "tick": 60,
+      "x": 3.662229475696167,
+      "y": 19.662229475696172,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "move",
+        "x": 3,
+        "y": 19
+      }
+    },
+    {
+      "tick": 61,
+      "x": 3.5879832636715805,
+      "y": 19.587983263671582,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "move",
+        "x": 3,
+        "y": 19
+      }
+    },
+    {
+      "tick": 63,
+      "x": 3.5,
+      "y": 19.5,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "move",
+        "x": 3,
+        "y": 19
+      }
+    },
+    {
+      "tick": 64,
+      "x": 3.5,
+      "y": 19.5,
+      "state": "idle",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "move",
+        "x": 3,
+        "y": 19
+      }
+    },
+    {
+      "tick": 66,
+      "x": 3.5,
+      "y": 19.5,
+      "state": "idle",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 67,
+      "x": 3.605,
+      "y": 19.5,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 68,
+      "x": 3.71,
+      "y": 19.5,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 69,
+      "x": 3.815,
+      "y": 19.5,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 71,
+      "x": 4.025,
+      "y": 19.5,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 72,
+      "x": 4.130000000000001,
+      "y": 19.5,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 73,
+      "x": 4.235000000000001,
+      "y": 19.5,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 75,
+      "x": 4.445000000000002,
+      "y": 19.5,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 76,
+      "x": 4.535355339059329,
+      "y": 19.53535533905933,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 77,
+      "x": 4.609601551083917,
+      "y": 19.609601551083916,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 79,
+      "x": 4.758093975133092,
+      "y": 19.75809397513309,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 80,
+      "x": 4.83234018715768,
+      "y": 19.832340187157676,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 81,
+      "x": 4.906586399182268,
+      "y": 19.906586399182263,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 82,
+      "x": 4.980832611206854,
+      "y": 19.98083261120685,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 84,
+      "x": 5.129325035256028,
+      "y": 20.129325035256024,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 85,
+      "x": 5.203571247280615,
+      "y": 20.20357124728061,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 86,
+      "x": 5.277817459305202,
+      "y": 20.277817459305197,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 88,
+      "x": 5.426309883354375,
+      "y": 20.426309883354374,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood",
+        "startedTick": 88
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 0.15000000000000002,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    }
+  ],
+  "errors": [],
+  "limits": "No gather art installed; route and true simulation direction/contact only."
+}

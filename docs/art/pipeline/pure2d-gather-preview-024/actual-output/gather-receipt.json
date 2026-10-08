@@ -1,0 +1,403 @@
+{
+  "status": "ACTUAL_GATHER8_TECHNICAL_PREVIEW_ONLY",
+  "jobSha256": "bb07a1b23b8cdea0e66b8fceb1affda1e5989fe6abf75b50c5438a5bd407d4f2",
+  "contractValidatorSha256": "a6661ea6c5f3cd3af86d0bf58df971bab6b0632d06e7821889cad0ecc2950646",
+  "packagingValidation": {
+    "manifest": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/pure2d-gather-preview-024/actual-output/manifest.json",
+    "packaging": "PASS",
+    "visualApprovalGranted": false,
+    "manifestStatus": "CANDIDATE",
+    "assets": [
+      {
+        "id": "villager-gather-wood-south-024",
+        "packaging": "PASS",
+        "visualReview": "CANDIDATE",
+        "candidate": true,
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-018/F00-call01/raw.png",
+          "sha256": "e6293fe86eaefc2c9f414241320ab178758cdd52ef09946344364b6a41e41117",
+          "rgbaSha256": "7f00697cb2bb32ee39436b83f2169894e7c78569c61faeb22816d4233f4ae7ac",
+          "dimensions": [
+            1254,
+            1254
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            0,
+            33,
+            1226,
+            1244
+          ],
+          "warnings": [
+            {
+              "status": "CANDIDATE_WARNING",
+              "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+              "borderMax": 1,
+              "threshold16BBox": [
+                432,
+                53,
+                1042,
+                1184
+              ]
+            }
+          ]
+        },
+        "runtime": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/pure2d-gather-preview-024/actual-output/atlas.png",
+          "sha256": "5db6455a859a823658e2297544ca739dd466509856f8c2534644a05903cd1092",
+          "rgbaSha256": "3d3808dac11252a5c250c08b6a79f3763fc30472be5badf557a7e79215617a50",
+          "dimensions": [
+            528,
+            264
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            33,
+            5,
+            509,
+            259
+          ],
+          "warnings": []
+        },
+        "frames": [
+          {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-018/F00-call01/raw.png",
+            "sha256": "e6293fe86eaefc2c9f414241320ab178758cdd52ef09946344364b6a41e41117",
+            "rgbaSha256": "7f00697cb2bb32ee39436b83f2169894e7c78569c61faeb22816d4233f4ae7ac",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "alphaExtrema": [
+              0,
+              255
+            ],
+            "bbox": [
+              0,
+              33,
+              1226,
+              1244
+            ],
+            "warnings": [
+              {
+                "status": "CANDIDATE_WARNING",
+                "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+                "borderMax": 1,
+                "threshold16BBox": [
+                  432,
+                  53,
+                  1042,
+                  1184
+                ]
+              }
+            ]
+          },
+          {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-025/F01-call01/raw.png",
+            "sha256": "ea3663e1df046818a7eeff363e2771d8e2fc76dcc8cb6e1e6ecaedf4e0c55cdf",
+            "rgbaSha256": "e79a51c9eaae1017b8636bd8e665668050e9849f2adfc35d758a8ee23218473a",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "alphaExtrema": [
+              0,
+              255
+            ],
+            "bbox": [
+              25,
+              31,
+              1236,
+              1199
+            ],
+            "warnings": []
+          },
+          {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-021/F02-call01/raw.png",
+            "sha256": "bb10c55f7f648e82b952ef955989ad1ffe38eb0332c9aa8d0381557a1867f4e9",
+            "rgbaSha256": "546afa09bd1b1eb36f788d1603aafd804330a16a0d0607f33a4e68ce96644309",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "alphaExtrema": [
+              0,
+              255
+            ],
+            "bbox": [
+              33,
+              26,
+              1232,
+              1236
+            ],
+            "warnings": []
+          },
+          {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-027/F03-call01/raw.png",
+            "sha256": "79fb1413141ffef016f04242e0f82ec1eb6f79b55e8f0f7665ea2fd933580725",
+            "rgbaSha256": "c1f2a4fb97d48f8a3d3536f97c9122c6e3e49deb1632df97f6de94db6659058d",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "alphaExtrema": [
+              0,
+              255
+            ],
+            "bbox": [
+              0,
+              21,
+              1218,
+              1218
+            ],
+            "warnings": [
+              {
+                "status": "CANDIDATE_WARNING",
+                "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+                "borderMax": 1,
+                "threshold16BBox": [
+                  344,
+                  59,
+                  1067,
+                  1189
+                ]
+              }
+            ]
+          },
+          {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-022/F04-call01/raw.png",
+            "sha256": "2c84045f4a17c7440fb2cc494e9a9ce4ac1c721ad851427140f5544a98ef0cdc",
+            "rgbaSha256": "d3bad7b278bd6e86503bb738ace6718d1f3fab3d0b8475c5daeeb7a32bd1ba8f",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "alphaExtrema": [
+              0,
+              255
+            ],
+            "bbox": [
+              27,
+              31,
+              1226,
+              1206
+            ],
+            "warnings": []
+          },
+          {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-025/F03-call01/raw.png",
+            "sha256": "232977b035b03bc70ba79c799b97e787c24fd92491aa80f3d32c0fe6a462625e",
+            "rgbaSha256": "e00a0fdcfb5ce3851cb4ea5d84b558a8dea5042767bd13e1258edc017acdcf7c",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "alphaExtrema": [
+              0,
+              255
+            ],
+            "bbox": [
+              25,
+              36,
+              1224,
+              1212
+            ],
+            "warnings": []
+          },
+          {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-023/raw.png",
+            "sha256": "d29a192ff4e83a492704f5c9b4c34d64bc283f1d0804380effae565c38feb9a3",
+            "rgbaSha256": "34dd13cf5a9fbc0ec1fa0c05fbe8bdc8d9b3aaeddbb0a5351671387767812367",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "alphaExtrema": [
+              0,
+              255
+            ],
+            "bbox": [
+              33,
+              32,
+              1216,
+              1236
+            ],
+            "warnings": []
+          },
+          {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-027/F07-call01/raw.png",
+            "sha256": "65293598567498d3c624dc2ce8098faed4b3a0f79d27b03b11c79a75fac0fb11",
+            "rgbaSha256": "cf4f52d40a3d0ee93b9c800b8ea09621c3382e548461920b741469a6c2a97073",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "alphaExtrema": [
+              0,
+              255
+            ],
+            "bbox": [
+              0,
+              32,
+              1230,
+              1222
+            ],
+            "warnings": [
+              {
+                "status": "CANDIDATE_WARNING",
+                "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+                "borderMax": 1,
+                "threshold16BBox": [
+                  381,
+                  34,
+                  1065,
+                  1204
+                ]
+              }
+            ]
+          }
+        ],
+        "fixedPivot": {
+          "x": 654,
+          "y": 1140,
+          "space": "source"
+        },
+        "logicalRender": {
+          "width": 89,
+          "height": 89
+        },
+        "warnings": [
+          {
+            "status": "CANDIDATE_WARNING",
+            "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+            "borderMax": 1,
+            "threshold16BBox": [
+              432,
+              53,
+              1042,
+              1184
+            ]
+          },
+          {
+            "status": "CANDIDATE_WARNING",
+            "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+            "borderMax": 1,
+            "threshold16BBox": [
+              432,
+              53,
+              1042,
+              1184
+            ]
+          },
+          {
+            "status": "CANDIDATE_WARNING",
+            "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+            "borderMax": 1,
+            "threshold16BBox": [
+              344,
+              59,
+              1067,
+              1189
+            ]
+          },
+          {
+            "status": "CANDIDATE_WARNING",
+            "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+            "borderMax": 1,
+            "threshold16BBox": [
+              381,
+              34,
+              1065,
+              1204
+            ]
+          }
+        ]
+      },
+      {
+        "id": "unit-contact-shadow",
+        "packaging": "PASS",
+        "visualReview": "CANDIDATE",
+        "candidate": true,
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/public/assets/art-v1/effects/unit-contact-shadow.png",
+          "sha256": "1572b3fd6dd84d36a423adbdbfca1975a071b07bd0c4043edd55688db0ed99bd",
+          "rgbaSha256": "242424c39edc2976292046eb766fcad9360a922b9c2b2f43d2ead0f5d6455d19",
+          "dimensions": [
+            1254,
+            1254
+          ],
+          "alphaExtrema": [
+            0,
+            168
+          ],
+          "bbox": [
+            103,
+            53,
+            1196,
+            1196
+          ],
+          "warnings": []
+        },
+        "runtime": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/pure2d-gather-preview-024/actual-output/unit-contact-shadow.webp",
+          "sha256": "274b81f26e3869e158b0ab1e5093cd8a899d5255f0239c25ec7ab07ec314a7ff",
+          "rgbaSha256": "d581fe0139344e7a72697d43abcfe00b332f5eea107bb9a4ed7acebfb79ab647",
+          "dimensions": [
+            256,
+            256
+          ],
+          "alphaExtrema": [
+            0,
+            167
+          ],
+          "bbox": [
+            66,
+            115,
+            200,
+            150
+          ],
+          "warnings": []
+        },
+        "frames": [],
+        "fixedPivot": {
+          "x": 658,
+          "y": 648,
+          "space": "source"
+        },
+        "logicalRender": {
+          "width": 42,
+          "height": 42
+        },
+        "warnings": []
+      }
+    ],
+    "errors": []
+  },
+  "runtimePivot": [
+    66.75598086124401,
+    116.36363636363636
+  ],
+  "uniformScale": 0.10207336523125997,
+  "gutter": 2,
+  "gutterPolicy": "transparent zero padding only; no extrusion/trim",
+  "cycleDurationMs": 1080,
+  "frames": 8,
+  "outputs": {
+    "manifest.json": "6c2a8dcd22ae5bda57871bb99c60c4dd977f2f9adc4e967b3acc587940c4f7d0",
+    "atlas.png": "5db6455a859a823658e2297544ca739dd466509856f8c2534644a05903cd1092",
+    "preview.json": "074f80d3bf47336154083c8bf30eff6b713daf0cc683bc56037888def50b195e",
+    "preview.html": "e71f0cebebf82f7ffcb61ac1579665f227dbb46cac53537873ea5953ac983e62",
+    "unit-contact-shadow.webp": "274b81f26e3869e158b0ab1e5093cd8a899d5255f0239c25ec7ab07ec314a7ff",
+    "contact-sheet.png": "30555f1e1b4d38c38246f2e970bbf448939c6f240c654bcedd43a15a9186e49b"
+  },
+  "limits": "No art/motion/gameplay contact/owner/runtime approval. Stationary local preview only.",
+  "frozen017ToolSha256": "f0e77975a8989b1ca5998807830cc1b9f89102f9cc6fec81947864a9a1372abe",
+  "apngSha256": "927bfbc99ddd6930175277038e14760b1704ccef9a6fe67b6ea21d1ff2cba422",
+  "cycleMs": 1080
+}

@@ -1,0 +1,31 @@
+{
+  "status": "LOCAL_GATHER8_TECHNICAL_RUNTIME_PASS_MOTION_OPEN",
+  "sourcePins": {
+    "client/raster-slice.js": "42d43adbb55a4ebb15e333d4c9cd2f93e829aaab8e7374d8f4665fdb04cfe03b",
+    "public/assets/art-v1/gather-026-manifest.json": "377d433dbdd2050564131f6ea7e67e14f65a749069cf2500bc46b54039e3471f",
+    "public/assets/art-v1/gather-026/atlas.png": "5db6455a859a823658e2297544ca739dd466509856f8c2534644a05903cd1092"
+  },
+  "testCommand": "node --test tests/action-presentation.test.js tests/gather-episode.test.js tests/visible-action.test.js tests/sprite-timing.test.js tests/visual-picking.test.js",
+  "testsPassed": 13,
+  "testsFailed": 0,
+  "temporaryProductionBuild": {
+    "path": "/tmp/rds-gather026-build",
+    "modules": 20,
+    "bundleSHA256": "48de160de21a0baa7d84b9ff447e28f162dba5573926efd98b01ee72afd1cc4b",
+    "bytes": 141864
+  },
+  "actualBrowser": "chromium/receipt.json",
+  "motionReview": "review.json",
+  "motionVerdict": "SAMPLES_ONLY",
+  "fullProject": "NOT_COMPLETE",
+  "deployment": "UNCHANGED",
+  "callCounts": {
+    "newCallsHeartbeat": 5,
+    "gatherCallsTotal018to027": 10,
+    "selectedSourceFrames": 8,
+    "heldOriginalCalls": 2,
+    "derived020Exports": 1,
+    "retries": 0
+  },
+  "noImageCallOpen": true
+}

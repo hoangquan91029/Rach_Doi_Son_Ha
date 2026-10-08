@@ -1,0 +1,54 @@
+{
+  "url": "http://127.0.0.1:36933",
+  "timestamp": "2026-10-08T18:53:08.846Z",
+  "browserVersions": {
+    "chromium": "151.0.7922.34",
+    "firefox": "153.0"
+  },
+  "servedBundles": [
+    "http://127.0.0.1:36933/assets/index-BQc6lscV.js"
+  ],
+  "bundlePins": [
+    {
+      "url": "http://127.0.0.1:36933/assets/index-BQc6lscV.js",
+      "bytes": 141864,
+      "sha256": "48de160de21a0baa7d84b9ff447e28f162dba5573926efd98b01ee72afd1cc4b"
+    },
+    {
+      "url": "http://127.0.0.1:36933/assets/index-BQc6lscV.js",
+      "bytes": 141864,
+      "sha256": "48de160de21a0baa7d84b9ff447e28f162dba5573926efd98b01ee72afd1cc4b"
+    },
+    {
+      "url": "http://127.0.0.1:36933/assets/index-BQc6lscV.js",
+      "bytes": 141864,
+      "sha256": "48de160de21a0baa7d84b9ff447e28f162dba5573926efd98b01ee72afd1cc4b"
+    }
+  ],
+  "websocketDelay": {
+    "enabled": false,
+    "configuredEachDirectionMs": 0,
+    "nominalAddedApplicationRoundtripMs": 0,
+    "method": "Playwright routeWebSocket connectToServer; ordered FIFO hold by arrival+configured delay. TLS/native connection establishment is not delayed; close is held in the same FIFO after prior messages. This is application-message delay, not WAN/network emulation. Forwarded counts denote send API calls; gameplay outcomes verify end-to-end use.",
+    "streams": []
+  },
+  "results": [
+    {
+      "browser": "chromium",
+      "map": "delta",
+      "mode": "online",
+      "passed": true,
+      "code": "2B8CB8",
+      "peerBrowser": "firefox",
+      "forcedPublicRelayIP": null,
+      "combatWinner": 0,
+      "combatWallSeconds": 54.904,
+      "reconnect": true,
+      "rematch": true,
+      "initialTickHost": 5,
+      "lastLoopSampleTickHost": 551,
+      "confirmedVictoryTickPeer": 555,
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#singleStart') to be visible\u001b[22m\n\u001b[2m    64 × locator resolved to hidden <button id=\"singleStart\" class=\"primary large\">…</button>\u001b[22m\n",
+  "snapshot": {
+    "mode": null,
+    "localPlayer": 0,
+    "roomCode": null,
+    "paused": false,
+    "camera": {
+      "x": 24,
+      "y": 24,
+      "zoom": 1
+    },
+    "selection": [],
+    "tick": null,
+    "pingMs": 0,
+    "frameMs": 0,
+    "bootUi": {
+      "declared": 12,
+      "ready": 12,
+      "failures": [],
+      "fontWarnings": []
+    },
+    "art": {
+      "enabled": true,
+      "phase": "CANDIDATE",
+      "quality": "PLACEHOLDER_ONLY",
+      "groundDraws": 0,
+      "propDraws": 0,
+      "entityDraws": 0,
+      "walkDraws": 0,
+      "idleDraws": 0,
+      "lastWalk": null,
+      "gatherDraws": 0,
+      "lastGather": null,
+      "missing": [],
+      "pipeline": {
+        "status": "PLACEHOLDER_ONLY",
+        "manifest": "ready",
+        "declared": 17,
+        "ready": 16,
+        "approved": 0,
+        "candidates": 16,
+        "failed": 1,
+        "skipped": 0,
+        "fallbacks": 0,
+        "failures": [
+          {
+            "id": "villager-gather-wood-south-024",
+            "message": "Runtime path must be manifest-relative"
+          }
+        ]
+      }
+    },
+    "terrainCache": {
+      "builds": 0,
+      "draws": 0,
+      "pixels": 0
+    },
+    "displayedState": null
+  },
+  "samples": [],
+  "errors": []
+}

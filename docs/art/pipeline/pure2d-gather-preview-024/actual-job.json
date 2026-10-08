@@ -1,0 +1,199 @@
+{
+  "id": "villager-gather-wood-south-024",
+  "family": "unit.villager",
+  "state": "gather_wood",
+  "sourceCanvas": [
+    1254,
+    1254
+  ],
+  "runtimeCell": [
+    128,
+    128
+  ],
+  "renderSize": [
+    89,
+    89
+  ],
+  "pivot": [
+    654,
+    1140
+  ],
+  "direction": 1,
+  "columns": 4,
+  "gutter": 2,
+  "camera": {
+    "projection": "dimetric",
+    "ratio": [
+      2,
+      1
+    ],
+    "tile": [
+      54,
+      27
+    ],
+    "elevation": 26.565
+  },
+  "contactShadow": {
+    "mode": "separate",
+    "assetId": "unit-contact-shadow"
+  },
+  "shadowDependency": {
+    "manifestPath": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/public/assets/art-v1/manifest.json",
+    "manifestSha256": "4fda8d2ec7f6bb4690a36644bacf2e222b722091905f9cfcc904295fa4e59814",
+    "assetSha256": "31052738f2593ba235a6e563005037460c52e2b095f462d2f9bf5b0f8c5e7c95",
+    "sourceReceipt": {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/terrain/unit-contact-shadow.json",
+      "sha256": "256cd896250af207e98e328b39d22b8a9c528a3d8b6ef55eab5e32bb19704b33"
+    }
+  },
+  "wholeCanvasTransform": "UNIFORM_LANCZOS_NO_CROP_SHIFT_FIT",
+  "sourceMethod": "FINISHED_WHOLE_2D_FRAMES",
+  "technicalFixture": false,
+  "frames": [
+    {
+      "index": 0,
+      "phase": "F0",
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-018/F00-call01/raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "e6293fe86eaefc2c9f414241320ab178758cdd52ef09946344364b6a41e41117",
+        "rgbaSha256": "7f00697cb2bb32ee39436b83f2169894e7c78569c61faeb22816d4233f4ae7ac"
+      },
+      "selectionStatus": "SELECTED_FRAME_CANDIDATE",
+      "selectionReceipt": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/pure2d-gather-preview-024/actual-selections/F0.json",
+        "sha256": "e51343f6c2d6ae4ef020f79656680d8ebd959c02f9f365b1f6373e7e2435cb05"
+      },
+      "durationMs": 170,
+      "events": []
+    },
+    {
+      "index": 1,
+      "phase": "F1",
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-025/F01-call01/raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "ea3663e1df046818a7eeff363e2771d8e2fc76dcc8cb6e1e6ecaedf4e0c55cdf",
+        "rgbaSha256": "e79a51c9eaae1017b8636bd8e665668050e9849f2adfc35d758a8ee23218473a"
+      },
+      "selectionStatus": "SELECTED_FRAME_CANDIDATE",
+      "selectionReceipt": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/pure2d-gather-preview-024/actual-selections/F1.json",
+        "sha256": "755237ce602e5b820546fbbf5f61b87d4e1f9525c69ca48b042b86e2f231070d"
+      },
+      "durationMs": 130,
+      "events": []
+    },
+    {
+      "index": 2,
+      "phase": "F2",
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-021/F02-call01/raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "bb10c55f7f648e82b952ef955989ad1ffe38eb0332c9aa8d0381557a1867f4e9",
+        "rgbaSha256": "546afa09bd1b1eb36f788d1603aafd804330a16a0d0607f33a4e68ce96644309"
+      },
+      "selectionStatus": "SELECTED_FRAME_CANDIDATE",
+      "selectionReceipt": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/pure2d-gather-preview-024/actual-selections/F2.json",
+        "sha256": "e3527f10d49676265625c3badd862de381fac3b9c3583500c1b0dd5be92ad71b"
+      },
+      "durationMs": 160,
+      "events": []
+    },
+    {
+      "index": 3,
+      "phase": "F3",
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-027/F03-call01/raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "79fb1413141ffef016f04242e0f82ec1eb6f79b55e8f0f7665ea2fd933580725",
+        "rgbaSha256": "c1f2a4fb97d48f8a3d3536f97c9122c6e3e49deb1632df97f6de94db6659058d"
+      },
+      "selectionStatus": "SELECTED_FRAME_CANDIDATE",
+      "selectionReceipt": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/pure2d-gather-preview-024/actual-selections/F3.json",
+        "sha256": "b3c311ace6135bd7b2ec91bb76c03f0fbcb7bf20de546fb5b1689b62c95cfc66"
+      },
+      "durationMs": 80,
+      "events": []
+    },
+    {
+      "index": 4,
+      "phase": "F4",
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-022/F04-call01/raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "2c84045f4a17c7440fb2cc494e9a9ce4ac1c721ad851427140f5544a98ef0cdc",
+        "rgbaSha256": "d3bad7b278bd6e86503bb738ace6718d1f3fab3d0b8475c5daeeb7a32bd1ba8f"
+      },
+      "selectionStatus": "SELECTED_FRAME_CANDIDATE",
+      "selectionReceipt": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/pure2d-gather-preview-024/actual-selections/F4.json",
+        "sha256": "3cf0862b5d2b64e89d813f414dcd9fc892cf9c25a3921922a1e50b5f6b24e9df"
+      },
+      "durationMs": 100,
+      "events": []
+    },
+    {
+      "index": 5,
+      "phase": "F5",
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-025/F03-call01/raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "232977b035b03bc70ba79c799b97e787c24fd92491aa80f3d32c0fe6a462625e",
+        "rgbaSha256": "e00a0fdcfb5ce3851cb4ea5d84b558a8dea5042767bd13e1258edc017acdcf7c"
+      },
+      "selectionStatus": "SELECTED_FRAME_CANDIDATE",
+      "selectionReceipt": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/pure2d-gather-preview-024/actual-selections/F5.json",
+        "sha256": "a386aadefd87e2d490d88e8399b67eb26e178fc5769599d9b08b051e9a40a551"
+      },
+      "durationMs": 110,
+      "events": []
+    },
+    {
+      "index": 6,
+      "phase": "F6",
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-023/raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "d29a192ff4e83a492704f5c9b4c34d64bc283f1d0804380effae565c38feb9a3",
+        "rgbaSha256": "34dd13cf5a9fbc0ec1fa0c05fbe8bdc8d9b3aaeddbb0a5351671387767812367"
+      },
+      "selectionStatus": "SELECTED_FRAME_CANDIDATE",
+      "selectionReceipt": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/pure2d-gather-preview-024/actual-selections/F6.json",
+        "sha256": "2ddfb09276f038957a1ee2f5974646908ccffd836bd70a8163fab2e2f00874b3"
+      },
+      "durationMs": 150,
+      "events": []
+    },
+    {
+      "index": 7,
+      "phase": "F7",
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-027/F07-call01/raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "65293598567498d3c624dc2ce8098faed4b3a0f79d27b03b11c79a75fac0fb11",
+        "rgbaSha256": "cf4f52d40a3d0ee93b9c800b8ea09621c3382e548461920b741469a6c2a97073"
+      },
+      "selectionStatus": "SELECTED_FRAME_CANDIDATE",
+      "selectionReceipt": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/pure2d-gather-preview-024/actual-selections/F7.json",
+        "sha256": "8641942fd64a8427dc61e38681e6f410d5d60f2442749ba4cda7102e99eee201"
+      },
+      "durationMs": 180,
+      "events": []
+    }
+  ],
+  "loop": true
+}

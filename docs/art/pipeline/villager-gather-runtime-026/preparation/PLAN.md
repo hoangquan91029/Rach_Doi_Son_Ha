@@ -1,0 +1,11 @@
+# Actual D1 gather integration preparation
+
+A real clean Chromium Delta easy match used villager7 and visible woodpatch2 at5.5,21.5. Ordinary UI move to integer3,19 reached idle3.5,19.5. Ordinary right-click on the woodpatch then reached actual gather contact at5.426309883354375,20.426309883354374 with true simulation dir1 and startedTick88. This passed in one bounded discovery flow, without state/command injection, speed change or direction relabel. Receipt and gameplay screenshot are in chromium/. No gather art is installed or qualified by this evidence.
+
+Gather preserves travel's last dir: gather() calls travel(resource,1.1), changes state to gather on contact and does not assign facing. Navigation's diagonal path therefore legitimately supplies D1. Existing direct nearestpatch route018/019 arrived dir4 and is unsuitable for D1 art; use the staged route above.
+
+Once root approves all8actualsource intake, use this same UI staging route. Require true entity state gather, dir1, visibleAction.resource wood and contact distance<=1.1. Collect rendered frames for at least3cycles before pausing; require all8frames, not inferred sampler indices. Pause must freeze tick, startedTick and drawnframe; resume retains episode anchor. Stop must remove gatherdescriptor and select matching D1 idle. Idle advance then reissue samepatch should yield new startedTick and actualgather frames. Finally allow normal fullwood return (roughly7seconds at3wood/sec) and verify mapping ['walk'], Cargo20wood, no alternatecarrypose.
+
+Current rtsDiagnostics.snapshot() exposes art.lastWalk only, with no generic rendered gather frame. sampleEntity() internally returns sample+visualState but is not exposed in diagnostics. Root integration should add a read-only status.lastGather (entityId,frame,direction,assetId,visualState,startedTick/elapsed) only after successful rasterAt drawing, analogous to lastWalk. This is a small actual-render observation, not a simulation mutation or synthetic qualification. No implementation edits were made by this preparation worker.
+
+Own Vite5175 exec23109 stopped normally and browserclosed. The standalone discovery script was executed with project dependency resolution before being moved into this external lease. No public/runtime/manifest/sourceart changes or commits.

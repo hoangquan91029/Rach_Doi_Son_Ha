@@ -9,11 +9,11 @@ const TW=TILE_WIDTH,TH=TILE_HEIGHT;
 const finite=n=>Number.isFinite(n);
 const normalState=entity=>entity.hp<=0?'death':entity.state;
 /** Optional candidate art over actual simulation. No substitute map, fake units, or sprite mirroring. */
-export function createRasterSlice({enabled=['pilot','walk'].includes(new URLSearchParams(globalThis.location?.search||'').get('art')),manifestUrl=new URLSearchParams(globalThis.location?.search||'').get('art')==='walk'?'/assets/art-v1/walk-014-manifest.json':'/assets/art-v1/manifest.json',onStatus=()=>{},materialWorldSize=8}={}) {
+export function createRasterSlice({enabled=['pilot','walk','work'].includes(new URLSearchParams(globalThis.location?.search||'').get('art')),manifestUrl=new URLSearchParams(globalThis.location?.search||'').get('art')==='work'?'/assets/art-v1/gather-026-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='walk'?'/assets/art-v1/walk-014-manifest.json':'/assets/art-v1/manifest.json',onStatus=()=>{},materialWorldSize=8}={}) {
  const pipeline=createArtAssetPipeline({manifestUrl,allowCandidates:true,onStatus});
  const locomotion=createLocomotionPhase();
  const cells=new Map(),patterns=new WeakMap(),missing=new Set();let ready=false;
- const status={enabled,phase:enabled?'CANDIDATE':'DISABLED',quality:'PLACEHOLDER_ONLY',groundDraws:0,propDraws:0,entityDraws:0,walkDraws:0,idleDraws:0,lastWalk:null,missing:[],pipeline:pipeline.stats};
+ const status={enabled,phase:enabled?'CANDIDATE':'DISABLED',quality:'PLACEHOLDER_ONLY',groundDraws:0,propDraws:0,entityDraws:0,walkDraws:0,idleDraws:0,lastWalk:null,gatherDraws:0,lastGather:null,missing:[],pipeline:pipeline.stats};
  const recordMissing=(key,reason)=>{if(!missing.has(key)){missing.add(key);status.missing.push({key,reason,status:'PLACEHOLDER_ONLY'});status.quality='PLACEHOLDER_ONLY';}};
  const select=({families,kind,state,direction,variant=0,timeMs=0})=>{
   if(!enabled||!ready)return null;
@@ -62,7 +62,7 @@ export function createRasterSlice({enabled=['pilot','walk'].includes(new URLSear
   onMissingBank:()=>recordMissing('shore:material:null','Dedicated authored bank material unavailable; bounded original-material blending remains a candidate')});
  return {
   status,pipeline,
-  observeEntities(entities,options){if(enabled)locomotion.observe(entities,options);},
+  observeEntities(entities,options){status.lastGather=null;if(enabled)locomotion.observe(entities,options);},
   drawTransitions(ctx,options){if(!enabled||!ready)return false;return transitions.draw(ctx,options);},
   async preload(){if(!enabled)return this;await pipeline.preload();ready=true;status.quality=pipeline.stats.status;return this;},
   /** project uses existing renderer logical pixels; camera zoom and DPR must not be applied twice. */
@@ -109,11 +109,11 @@ export function createRasterSlice({enabled=['pilot','walk'].includes(new URLSear
    else if(visualState==='attack'&&finite(entity.attackStartedTick??entity.lastAttack))elapsed=attackAnimationTime(asset,entity,timeMs);
    const sample=sampleSpriteAnimation(asset.frames,{timeMs:elapsed,loop:defaultAnimationLoop(asset)});
    const raster=pipeline.get(asset.id,{state:visualState,direction,timeMs:elapsed,frame:sample.frame});if(!raster.image){recordMissing(asset.id,raster.reason);return false;}
-   return {raster,visualState,walkPhase,sample,direction};
+   return {raster,visualState,walkPhase,sample,direction,elapsed};
   },
   drawEntity(ctx,entity,{project,zoom=1,tick=0,timeMs=tick*50}={}) {
-   if(typeof project!=='function')return false;const result=this.sampleEntity(entity,{tick,timeMs});if(!result)return false;const {raster,visualState,walkPhase,sample,direction}=result,asset=raster.asset;
-   if(rasterAt(ctx,raster,project(entity.x,entity.y),zoom)){status.entityDraws++;if(walkPhase){status.walkDraws++;status.lastWalk={entityId:entity.id,frame:sample.frame,distance:walkPhase.distance,distancePerCycle:asset.locomotion.distancePerCycle,direction};}else if(visualState==='idle'&&asset.family==='unit.villager')status.idleDraws++;return true;}return false;
+   if(typeof project!=='function')return false;const result=this.sampleEntity(entity,{tick,timeMs});if(!result)return false;const {raster,visualState,walkPhase,sample,direction,elapsed}=result,asset=raster.asset;
+   if(rasterAt(ctx,raster,project(entity.x,entity.y),zoom)){status.entityDraws++;if(visualState==='gather_wood'&&entity.type==='villager'){status.gatherDraws++;status.lastGather={entityId:entity.id,frame:sample.frame,direction,assetId:asset.id,visualState,startedTick:entity.visibleAction?.startedTick??null,elapsedMs:sample.elapsedMs,timeMs:elapsed,presentationTimeMs:timeMs};}if(walkPhase){status.walkDraws++;status.lastWalk={entityId:entity.id,frame:sample.frame,distance:walkPhase.distance,distancePerCycle:asset.locomotion.distancePerCycle,direction};}else if(visualState==='idle'&&asset.family==='unit.villager')status.idleDraws++;return true;}return false;
   },
   /** Deterministic existing forest density, sorted ready for a merged prop/entity depth queue. */
   propsForState(state,{onlyVisible=true}={}) {

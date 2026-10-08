@@ -1,0 +1,565 @@
+{
+  "status": "ACTUAL_UI_D1_GATHER8_PAUSE_STOP_RESTART_RETURN_PASS",
+  "url": "http://127.0.0.1:5175/?art=work",
+  "staging": {
+    "tick": 68,
+    "entity": {
+      "id": 7,
+      "owner": 0,
+      "type": "villager",
+      "kind": "unit",
+      "x": 3.5,
+      "y": 19.5,
+      "hp": 65,
+      "maxHp": 65,
+      "food": 39.67542399999989,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "idle",
+      "dir": 5,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "resuppliedTick": 19,
+      "starving": 0,
+      "lastMovedTick": 67,
+      "order": {
+        "type": "move",
+        "x": 3,
+        "y": 19
+      }
+    }
+  },
+  "patch": {
+    "id": 2,
+    "type": "wood",
+    "x": 5.5,
+    "y": 21.5,
+    "amount": 4200
+  },
+  "initial": {
+    "tick": 92,
+    "entity": {
+      "id": 7,
+      "owner": 0,
+      "type": "villager",
+      "kind": "unit",
+      "x": 5.426309883354375,
+      "y": 20.426309883354374,
+      "hp": 65,
+      "maxHp": 65,
+      "food": 39.51644799999984,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "gather",
+      "dir": 1,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0.15000000000000002,
+        "iron": 0,
+        "units": []
+      },
+      "resuppliedTick": 19,
+      "starving": 0,
+      "lastMovedTick": 92,
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood",
+        "startedTick": 92
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    "render": {
+      "entityId": 7,
+      "frame": 0,
+      "direction": 1,
+      "assetId": "villager-gather-wood-south-024",
+      "visualState": "gather_wood",
+      "startedTick": 92,
+      "elapsedMs": 0,
+      "timeMs": 0,
+      "presentationTimeMs": 4566.89999999851
+    }
+  },
+  "frames": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "renderSamples": [
+    {
+      "tick": 93,
+      "entityId": 7,
+      "frame": 0,
+      "direction": 1,
+      "assetId": "villager-gather-wood-south-024",
+      "visualState": "gather_wood",
+      "startedTick": 92,
+      "elapsedMs": 0.2999999985095201,
+      "timeMs": 0.2999999985095201,
+      "presentationTimeMs": 4600.2999999985095
+    },
+    {
+      "tick": 99,
+      "entityId": 7,
+      "frame": 2,
+      "direction": 1,
+      "assetId": "villager-gather-wood-south-024",
+      "visualState": "gather_wood",
+      "startedTick": 92,
+      "elapsedMs": 16.899999998509884,
+      "timeMs": 316.8999999985099,
+      "presentationTimeMs": 4916.89999999851
+    },
+    {
+      "tick": 105,
+      "entityId": 7,
+      "frame": 4,
+      "direction": 1,
+      "assetId": "villager-gather-wood-south-024",
+      "visualState": "gather_wood",
+      "startedTick": 92,
+      "elapsedMs": 60.199999998510066,
+      "timeMs": 600.1999999985101,
+      "presentationTimeMs": 5200.19999999851
+    },
+    {
+      "tick": 111,
+      "entityId": 7,
+      "frame": 7,
+      "direction": 1,
+      "assetId": "villager-gather-wood-south-024",
+      "visualState": "gather_wood",
+      "startedTick": 92,
+      "elapsedMs": 16.899999998509884,
+      "timeMs": 916.8999999985099,
+      "presentationTimeMs": 5516.89999999851
+    },
+    {
+      "tick": 117,
+      "entityId": 7,
+      "frame": 0,
+      "direction": 1,
+      "assetId": "villager-gather-wood-south-024",
+      "visualState": "gather_wood",
+      "startedTick": 92,
+      "elapsedMs": 136.89999999850988,
+      "timeMs": 1216.8999999985099,
+      "presentationTimeMs": 5816.89999999851
+    },
+    {
+      "tick": 118,
+      "entityId": 7,
+      "frame": 1,
+      "direction": 1,
+      "assetId": "villager-gather-wood-south-024",
+      "visualState": "gather_wood",
+      "startedTick": 92,
+      "elapsedMs": 33.49999999851025,
+      "timeMs": 1283.4999999985102,
+      "presentationTimeMs": 5883.49999999851
+    },
+    {
+      "tick": 124,
+      "entityId": 7,
+      "frame": 3,
+      "direction": 1,
+      "assetId": "villager-gather-wood-south-024",
+      "visualState": "gather_wood",
+      "startedTick": 92,
+      "elapsedMs": 43.5999999985097,
+      "timeMs": 1583.5999999985097,
+      "presentationTimeMs": 6183.59999999851
+    },
+    {
+      "tick": 130,
+      "entityId": 7,
+      "frame": 6,
+      "direction": 1,
+      "assetId": "villager-gather-wood-south-024",
+      "visualState": "gather_wood",
+      "startedTick": 92,
+      "elapsedMs": 53.49999999851025,
+      "timeMs": 1883.4999999985102,
+      "presentationTimeMs": 6483.49999999851
+    },
+    {
+      "tick": 137,
+      "entityId": 7,
+      "frame": 0,
+      "direction": 1,
+      "assetId": "villager-gather-wood-south-024",
+      "visualState": "gather_wood",
+      "startedTick": 92,
+      "elapsedMs": 56.899999998509884,
+      "timeMs": 2216.89999999851,
+      "presentationTimeMs": 6816.89999999851
+    },
+    {
+      "tick": 138,
+      "entityId": 7,
+      "frame": 0,
+      "direction": 1,
+      "assetId": "villager-gather-wood-south-024",
+      "visualState": "gather_wood",
+      "startedTick": 92,
+      "elapsedMs": 106.89999999850988,
+      "timeMs": 2266.89999999851,
+      "presentationTimeMs": 6866.89999999851
+    },
+    {
+      "tick": 139,
+      "entityId": 7,
+      "frame": 0,
+      "direction": 1,
+      "assetId": "villager-gather-wood-south-024",
+      "visualState": "gather_wood",
+      "startedTick": 92,
+      "elapsedMs": 156.79999999850952,
+      "timeMs": 2316.7999999985095,
+      "presentationTimeMs": 6916.7999999985095
+    },
+    {
+      "tick": 140,
+      "entityId": 7,
+      "frame": 1,
+      "direction": 1,
+      "assetId": "villager-gather-wood-south-024",
+      "visualState": "gather_wood",
+      "startedTick": 92,
+      "elapsedMs": 36.79999999850952,
+      "timeMs": 2366.7999999985095,
+      "presentationTimeMs": 6966.7999999985095
+    },
+    {
+      "tick": 141,
+      "entityId": 7,
+      "frame": 1,
+      "direction": 1,
+      "assetId": "villager-gather-wood-south-024",
+      "visualState": "gather_wood",
+      "startedTick": 92,
+      "elapsedMs": 86.79999999850952,
+      "timeMs": 2416.7999999985095,
+      "presentationTimeMs": 7016.7999999985095
+    },
+    {
+      "tick": 142,
+      "entityId": 7,
+      "frame": 2,
+      "direction": 1,
+      "assetId": "villager-gather-wood-south-024",
+      "visualState": "gather_wood",
+      "startedTick": 92,
+      "elapsedMs": 6.79999999850952,
+      "timeMs": 2466.7999999985095,
+      "presentationTimeMs": 7066.7999999985095
+    },
+    {
+      "tick": 143,
+      "entityId": 7,
+      "frame": 2,
+      "direction": 1,
+      "assetId": "villager-gather-wood-south-024",
+      "visualState": "gather_wood",
+      "startedTick": 92,
+      "elapsedMs": 56.899999998509884,
+      "timeMs": 2516.89999999851,
+      "presentationTimeMs": 7116.89999999851
+    },
+    {
+      "tick": 144,
+      "entityId": 7,
+      "frame": 2,
+      "direction": 1,
+      "assetId": "villager-gather-wood-south-024",
+      "visualState": "gather_wood",
+      "startedTick": 92,
+      "elapsedMs": 106.79999999850952,
+      "timeMs": 2566.7999999985095,
+      "presentationTimeMs": 7166.7999999985095
+    },
+    {
+      "tick": 145,
+      "entityId": 7,
+      "frame": 2,
+      "direction": 1,
+      "assetId": "villager-gather-wood-south-024",
+      "visualState": "gather_wood",
+      "startedTick": 92,
+      "elapsedMs": 156.79999999850952,
+      "timeMs": 2616.7999999985095,
+      "presentationTimeMs": 7216.7999999985095
+    },
+    {
+      "tick": 146,
+      "entityId": 7,
+      "frame": 3,
+      "direction": 1,
+      "assetId": "villager-gather-wood-south-024",
+      "visualState": "gather_wood",
+      "startedTick": 92,
+      "elapsedMs": 46.899999998509884,
+      "timeMs": 2666.89999999851,
+      "presentationTimeMs": 7266.89999999851
+    },
+    {
+      "tick": 147,
+      "entityId": 7,
+      "frame": 4,
+      "direction": 1,
+      "assetId": "villager-gather-wood-south-024",
+      "visualState": "gather_wood",
+      "startedTick": 92,
+      "elapsedMs": 16.79999999850952,
+      "timeMs": 2716.7999999985095,
+      "presentationTimeMs": 7316.7999999985095
+    },
+    {
+      "tick": 148,
+      "entityId": 7,
+      "frame": 4,
+      "direction": 1,
+      "assetId": "villager-gather-wood-south-024",
+      "visualState": "gather_wood",
+      "startedTick": 92,
+      "elapsedMs": 66.89999999850988,
+      "timeMs": 2766.89999999851,
+      "presentationTimeMs": 7366.89999999851
+    },
+    {
+      "tick": 149,
+      "entityId": 7,
+      "frame": 5,
+      "direction": 1,
+      "assetId": "villager-gather-wood-south-024",
+      "visualState": "gather_wood",
+      "startedTick": 92,
+      "elapsedMs": 16.79999999850952,
+      "timeMs": 2816.7999999985095,
+      "presentationTimeMs": 7416.7999999985095
+    },
+    {
+      "tick": 155,
+      "entityId": 7,
+      "frame": 7,
+      "direction": 1,
+      "assetId": "villager-gather-wood-south-024",
+      "visualState": "gather_wood",
+      "startedTick": 92,
+      "elapsedMs": 56.79999999850952,
+      "timeMs": 3116.7999999985095,
+      "presentationTimeMs": 7716.7999999985095
+    },
+    {
+      "tick": 157,
+      "entityId": 7,
+      "frame": 7,
+      "direction": 1,
+      "assetId": "villager-gather-wood-south-024",
+      "visualState": "gather_wood",
+      "startedTick": 92,
+      "elapsedMs": 140.19999999850916,
+      "timeMs": 3200.199999998509,
+      "presentationTimeMs": 7800.199999998509
+    }
+  ],
+  "videoGatherStartSeconds": 5.31,
+  "videoGatherObservationSeconds": 3.24,
+  "pause": {
+    "beforeTick": 164,
+    "afterTick": 164,
+    "renderBefore": {
+      "entityId": 7,
+      "frame": 2,
+      "direction": 1,
+      "assetId": "villager-gather-wood-south-024",
+      "visualState": "gather_wood",
+      "startedTick": 92,
+      "elapsedMs": 10.099999998510611,
+      "timeMs": 3550.0999999985106,
+      "presentationTimeMs": 8150.099999998511
+    },
+    "renderAfter": {
+      "entityId": 7,
+      "frame": 2,
+      "direction": 1,
+      "assetId": "villager-gather-wood-south-024",
+      "visualState": "gather_wood",
+      "startedTick": 92,
+      "elapsedMs": 10.099999998510611,
+      "timeMs": 3550.0999999985106,
+      "presentationTimeMs": 8150.099999998511
+    }
+  },
+  "restarted": {
+    "tick": 176,
+    "entity": {
+      "id": 7,
+      "owner": 0,
+      "type": "villager",
+      "kind": "unit",
+      "x": 5.426309883354375,
+      "y": 20.426309883354374,
+      "hp": 65,
+      "maxHp": 65,
+      "food": 38.96003199999966,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "gather",
+      "dir": 1,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 11.550000000000017,
+        "iron": 0,
+        "units": []
+      },
+      "resuppliedTick": 19,
+      "starving": 0,
+      "lastMovedTick": 92,
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood",
+        "startedTick": 175
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    "render": {
+      "entityId": 7,
+      "frame": 0,
+      "direction": 1,
+      "assetId": "villager-gather-wood-south-024",
+      "visualState": "gather_wood",
+      "startedTick": 175,
+      "elapsedMs": 16.699999998509156,
+      "timeMs": 16.699999998509156,
+      "presentationTimeMs": 8766.69999999851
+    }
+  },
+  "returned": {
+    "id": 7,
+    "owner": 0,
+    "type": "villager",
+    "kind": "unit",
+    "x": 5.440688898059519,
+    "y": 20.635817028664764,
+    "hp": 65,
+    "maxHp": 65,
+    "food": 38.56921599999953,
+    "foodMax": 40,
+    "morale": 95,
+    "state": "walk",
+    "dir": 2,
+    "cooldown": 0,
+    "queue": [],
+    "cargo": {
+      "food": 0,
+      "wood": 20,
+      "iron": 0,
+      "units": []
+    },
+    "resuppliedTick": 19,
+    "starving": 0,
+    "lastMovedTick": 235,
+    "visibleAction": {
+      "kind": "carry",
+      "load": "wood",
+      "moving": true
+    },
+    "order": {
+      "type": "gather",
+      "target": 2
+    }
+  },
+  "returnMapping": [
+    "walk"
+  ],
+  "errors": [],
+  "art": {
+    "enabled": true,
+    "phase": "CANDIDATE",
+    "quality": "PLACEHOLDER_ONLY",
+    "groundDraws": 3042,
+    "propDraws": 7854,
+    "entityDraws": 8361,
+    "walkDraws": 36,
+    "idleDraws": 26,
+    "lastWalk": {
+      "entityId": 7,
+      "frame": 4,
+      "distance": 7.020052673939557,
+      "distancePerCycle": 1.26,
+      "direction": 1
+    },
+    "gatherDraws": 410,
+    "lastGather": null,
+    "missing": [
+      {
+        "key": "ground:mountain",
+        "reason": "No authored material for this terrain",
+        "status": "PLACEHOLDER_ONLY"
+      },
+      {
+        "key": "villager:walk:4",
+        "reason": "No exact authored raster state/direction",
+        "status": "PLACEHOLDER_ONLY"
+      },
+      {
+        "key": "villager:walk:5",
+        "reason": "No exact authored raster state/direction",
+        "status": "PLACEHOLDER_ONLY"
+      },
+      {
+        "key": "villager:idle:5",
+        "reason": "No exact authored raster state/direction",
+        "status": "PLACEHOLDER_ONLY"
+      },
+      {
+        "key": "villager:walk:0",
+        "reason": "No exact authored raster state/direction",
+        "status": "PLACEHOLDER_ONLY"
+      },
+      {
+        "key": "villager:walk:2",
+        "reason": "No exact authored raster state/direction",
+        "status": "PLACEHOLDER_ONLY"
+      }
+    ],
+    "pipeline": {
+      "status": "CANDIDATE",
+      "manifest": "ready",
+      "declared": 17,
+      "ready": 17,
+      "approved": 0,
+      "candidates": 17,
+      "failed": 0,
+      "skipped": 0,
+      "fallbacks": 0,
+      "failures": []
+    }
+  },
+  "limits": "Actual17asset game candidate; no continuous visual/foot-lock/owner/fanout/production approval inferred from frames or timing.",
+  "videoFile": "page@d7587db31b4827edeaf5b30284f9d83c.webm",
+  "sampledPhaseSpanMs": 3199.8999999999996,
+  "sampleTimingLimit": "Observation window requested3240ms; successful actualrender samples span3199.9ms because screenshotcapture costs. All8frames observed; no continuous viewing claim."
+}

@@ -1,0 +1,15 @@
+{
+  "tool": "image_gen.imagegen",
+  "builtIn": true,
+  "prompt": "prompt.txt",
+  "references": [
+    "selected018F00",
+    "selected022F04",
+    "guide-F06.png MODEL_ONLY"
+  ],
+  "transparent_background": true,
+  "output_hint": "Generated images are saved to /home/kieu-hoang-quan/.codex/generated_images/01a11bf6-8c65-7352-b441-46d09ec3d4f7 as /home/kieu-hoang-quan/.codex/generated_images/01a11bf6-8c65-7352-b441-46d09ec3d4f7/exec-9d128b39-af2e-4226-8ba2-1a623196d2e0.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "calls": 1,
+  "retries": 0,
+  "noCallOpen": true
+}

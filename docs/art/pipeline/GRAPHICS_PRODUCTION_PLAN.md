@@ -46,3 +46,5 @@ Binding005 is terminalHELD and superseded: sampled clearance, continuity and tri
 Detailed standards and reusable asset/script inventory: PURE_2D_CHARACTER_PIPELINE.md. Full game remains NOT COMPLETE; no art or owner approval is inferred by this plan.
 
 VI: Quy trình đã đổi hoàn toàn sang minh họa2D có chiều sâu và hoạt ảnh từng frame. Giữ chất lượng asset gốc; kiểm tra hai contact, bốn key rồi vòng đi tám ảnh trước khi nhân rộng. Dừng dựng3D/Blender và giữ thử nghiệm cũ làm hồ sơ.
+
+Current026 addendum: first completeSouth/D1 gather_wood candidate uses8actualwholeillustrations,1080ms, fixedfamily1254→128/render89/pivot6541140. RealoptionalLOCAL ?art=work preload/draw/pause/stop/restart/return checks pass; motionreviewSAMPLES_ONLY, clip/APNG ready foronebriefcontinuouslook. No otherdirection/resource/unit fanout or visual/owner/publicapproval. Read newestNEXT_STEPS and actual024/026 receipts; old019/020 holds remainhistory, not instructions to repeat failedmethods.

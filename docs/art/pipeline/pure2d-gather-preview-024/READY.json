@@ -1,0 +1,31 @@
+{
+  "status": "PREPARED_AWAITING_ACTUAL_SELECTED_EIGHT",
+  "profile": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low"
+  },
+  "imageCalls": 0,
+  "actualExports": 0,
+  "sourceEdits": 0,
+  "frozen017ToolPin": "f0e77975a8989b1ca5998807830cc1b9f89102f9cc6fec81947864a9a1372abe",
+  "files": {
+    "README.md": "691fb716a312fe999bc67152e126fc2beeba83bdae1b84cd6ef18a3651ff669f",
+    "build.py": "22a9e29433f7d995b124d5438d63db0105083e8a59e73040b08360f11ac6dfa0",
+    "job-template.json": "b66b82b745c31e35cd9d14f28d7d0188c0fafc4e1770f2781fbade3878610dfe",
+    "known-sources.json": "42f3645b4a51f443f5be6cbd26bdbaf9772e4358332c5ae5cb73ea9e14c245c6",
+    "loader-preview.html": "10789b774058de9f70bbe0e2c14b870c739504c56f2f5b66148c98475eed9ff6"
+  },
+  "checks": "Python AST + browser module syntax only; actual build/browser pending",
+  "timingMs": [
+    170,
+    130,
+    160,
+    80,
+    100,
+    110,
+    150,
+    180
+  ],
+  "cycleMs": 1080,
+  "scope": "No slots filled/faked; F06/inbetweens not claimed. Realclientloader preview after actualcompletejob."
+}
