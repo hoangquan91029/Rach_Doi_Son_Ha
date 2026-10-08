@@ -10,9 +10,8 @@ export function pickVisibleEntity(renderer,screenX,screenY){
  const state=renderer.state;if(!state)return null;
  const z=renderer.camera.zoom,pipeline=renderer.raster.pipeline;
  const entities=state.entities.filter(e=>e.hp>0&&!e.embarked&&renderer.visible(e,state,renderer.localPlayer)).slice().sort((a,b)=>(b.x+b.y)-(a.x+a.y)||b.id-a.id);
- for(const e of entities){const p=renderer.project(e.x,e.y),family=e.kind==='building'?e.type:e.character||e.type,visualState=(e.hitUntil||0)>state.tick?'hit':e.state;
-  const asset=renderer.raster.status.enabled&&!e.construction&&pipeline.manifest?.assets.find(a=>a.family===family&&a.state===visualState&&a.direction===(e.kind==='building'?null:e.dir));
-  const raster=asset?pipeline.get(asset.id,{timeMs:state.tick*50}):null;
+ for(const e of entities){const p=renderer.project(e.x,e.y);
+  const raster=renderer.raster.sampleEntity(e,{tick:state.tick,timeMs:renderer.visualTimeMs??state.tick*50})?.raster;
   if(raster?.image){const width=raster.render.width*z,height=raster.render.height*z,left=p.x-raster.pivot.x/raster.sw*width,top=p.y-raster.pivot.y/raster.sh*height;
    if(screenX>=left&&screenX<left+width&&screenY>=top&&screenY<top+height&&alphaAt(raster.image,raster.sx+(screenX-left)/width*raster.sw,raster.sy+(screenY-top)/height*raster.sh)>=80)return e;
    continue;

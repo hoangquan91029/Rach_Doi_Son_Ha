@@ -67,11 +67,19 @@ function terrainPass(s,e,x,y){if(!bounds(s,x,y))return false;const t=tile(s,x,y)
 const navigationBuildings=new WeakMap();
 function blockers(s){const cached=navigationBuildings.get(s);if(cached?.version===s.navVersion)return cached.list;const list=s.entities.filter(e=>e.kind==='building'&&e.hp>0);navigationBuildings.set(s,{version:s.navVersion,list});return list;}
 function pass(s,e,x,y){if(!terrainPass(s,e,x,y))return false;return !blockers(s).some(b=>b.id!==e.id&&!(b.type==='gate'&&b.owner===e.owner)&&Math.abs(x-b.x)<BUILDINGS[b.type].radius+0.15&&Math.abs(y-b.y)<BUILDINGS[b.type].radius+0.15);}
+// Diagonal steps require both side cells, using the same terrain/building rules as destinations.
+function navigationStep(s,e,x,y,xx,yy){return pass(s,e,xx,yy)&&(x===xx||y===yy||pass(s,e,xx,y)&&pass(s,e,x,yy));}
 function path(s,e,target,range=0.4){
  const w=s.map.width,h=s.map.height,sx=Math.floor(e.x),sy=Math.floor(e.y),start=sy*w+sx;
- const parents=new Int32Array(w*h).fill(-2),queue=new Int32Array(w*h);let head=0,tail=1;queue[0]=start;parents[start]=-1;let found=-1,best=start,bestD=Infinity;
- while(head<tail){const i=queue[head++],x=i%w,y=Math.floor(i/w),dd=(x+0.5-target.x)**2+(y+0.5-target.y)**2;if(dd<bestD){bestD=dd;best=i;}if(dd<=range**2&&pass(s,e,x+0.5,y+0.5)){found=i;break;}
-  for(const [dx,dy] of [[1,0],[0,1],[-1,0],[0,-1]]){const xx=x+dx,yy=y+dy,j=yy*w+xx;if(xx<0||yy<0||xx>=w||yy>=h||parents[j]!==-2||!pass(s,e,xx+0.5,yy+0.5))continue;parents[j]=i;queue[tail++]=j;}
+ const parents=new Int32Array(w*h).fill(-2),costs=new Float64Array(w*h).fill(Infinity),heap=[];let serial=0;
+ const before=(a,b)=>a.cost<b.cost||a.cost===b.cost&&a.order<b.order;
+ const push=(i,cost)=>{const node={i,cost,order:serial++};let n=heap.length;heap.push(node);while(n){const p=(n-1)>>1;if(!before(node,heap[p]))break;heap[n]=heap[p];n=p;}heap[n]=node;};
+ const pop=()=>{const first=heap[0],last=heap.pop();if(heap.length){let n=0;while(n*2+1<heap.length){let c=n*2+1;if(c+1<heap.length&&before(heap[c+1],heap[c]))c++;if(!before(heap[c],last))break;heap[n]=heap[c];n=c;}heap[n]=last;}return first;};
+ costs[start]=0;parents[start]=-1;push(start,0);let found=-1,best=start,bestD=Infinity;
+ // Fixed neighbor order and insertion ties make equal-cost routes reproducible.
+ const neighbors=[[1,0],[0,1],[-1,0],[0,-1],[1,1],[-1,1],[-1,-1],[1,-1]];
+ while(heap.length){const {i,cost}=pop();if(cost!==costs[i])continue;const x=i%w,y=Math.floor(i/w),dd=(x+0.5-target.x)**2+(y+0.5-target.y)**2;if(dd<bestD){bestD=dd;best=i;}if(dd<=range**2&&pass(s,e,x+0.5,y+0.5)){found=i;break;}
+  for(const [dx,dy] of neighbors){const xx=x+dx,yy=y+dy,j=yy*w+xx;if(xx<0||yy<0||xx>=w||yy>=h||!navigationStep(s,e,x+0.5,y+0.5,xx+0.5,yy+0.5))continue;const nextCost=cost+(dx&&dy?Math.SQRT2:1);if(nextCost>=costs[j])continue;costs[j]=nextCost;parents[j]=i;push(j,nextCost);}
  }
  if(found<0)found=best;const result=[];for(let i=found;i!==start&&i>=0;i=parents[i])result.push({x:i%w+0.5,y:Math.floor(i/w)+0.5});result.reverse();return result;
 }
@@ -82,7 +90,7 @@ function travel(s,e,target,range=0.65){
  const key=`${Math.floor(target.x)},${Math.floor(target.y)},${range},${s.navVersion}`;
  if(!e.path.length||e.pathKey!==key){if(e.retryPath&&e.retryPath>s.tick)return false;e.path=path(s,e,target,range);e.pathKey=key;if(!e.path.length){e.retryPath=s.tick+20;return false;}}
  let remaining=speed(s,e)*DT;
- while(e.path.length&&remaining>0){const next=e.path[0];if(!pass(s,e,next.x,next.y)){e.path=[];e.retryPath=0;break;}const d=dist(e,next);if(d>0){e.dir=(Math.round(Math.atan2(next.y-e.y,next.x-e.x)/(Math.PI/4))+8)%8;}if(d<=remaining){e.x=next.x;e.y=next.y;e.path.shift();remaining-=d;}else{e.x+=(next.x-e.x)/d*remaining;e.y+=(next.y-e.y)/d*remaining;remaining=0;}}
+ while(e.path.length&&remaining>0){const next=e.path[0];if(!navigationStep(s,e,e.x,e.y,next.x,next.y)){e.path=[];e.retryPath=0;break;}const d=dist(e,next);if(d>0){e.dir=(Math.round(Math.atan2(next.y-e.y,next.x-e.x)/(Math.PI/4))+8)%8;}if(d<=remaining){e.x=next.x;e.y=next.y;e.path.shift();remaining-=d;}else{e.x+=(next.x-e.x)/d*remaining;e.y+=(next.y-e.y)/d*remaining;remaining=0;}}
  e.state='walk';return dist(e,target)<=range;
 }
 function updateFog(s){

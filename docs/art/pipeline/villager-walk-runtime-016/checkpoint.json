@@ -1,0 +1,65 @@
+{
+  "status": "LOCAL_RUNTIME_NAVIGATION_AND_SELECTION_PASS",
+  "previousGoalTurn": "no progress near-quota wait; live quota now permits action",
+  "thisGoalTurn": "progress: deterministic eight-direction navigation, same-sprite alpha picking and actual Chromium/Firefox UI evidence",
+  "profile": {
+    "workerModel": "gpt-6.1-sol",
+    "reasoning_effort": "low"
+  },
+  "tests": {
+    "command": "npm test",
+    "passed": 78,
+    "failed": 0,
+    "durationMs": 67891.088206
+  },
+  "build": {
+    "command": "npm run build -- --outDir /tmp/rach-doi-son-ha-navigation-check",
+    "status": "PASS",
+    "productionDistChanged": false
+  },
+  "browsers": {
+    "chromium": {
+      "status": "ACTUAL_LOCAL_GAME_WALK_PAUSE_STOP_CHECK",
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "phasePauseVerified": true,
+      "matchingD1IdleVerified": true,
+      "hatSelectionVerified": true,
+      "errors": [],
+      "normalZoom": 1.08
+    },
+    "firefox": {
+      "status": "ACTUAL_LOCAL_GAME_WALK_PAUSE_STOP_CHECK",
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "phasePauseVerified": true,
+      "matchingD1IdleVerified": true,
+      "hatSelectionVerified": true,
+      "errors": [],
+      "normalZoom": 1.08
+    }
+  },
+  "sourceAtlasSha256": "b2bdd86bd02f967bde9b070e5952e97dae257706b5d52730b787e32e9580fc13",
+  "navigation": "eight directions, costs1 and sqrt2, stable insertion ties, terrain/building side clearance in search and travel",
+  "distancePerCycle": 1.26,
+  "distancePerCycleStatus": "provisional; not visual foot-lock calibration",
+  "visualReview": "Independent samples-only: coherent recognizable villager, no new frame correction justified. Continuous naturalness/seam/foot lock not verified; actual recording delivered. New80px villager taller than old nearbyunits; future sharedscale question, not a request to revert target.",
+  "publicDeployment": false,
+  "fullGameComplete": false
+}

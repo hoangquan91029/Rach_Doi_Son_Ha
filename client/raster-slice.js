@@ -85,8 +85,8 @@ export function createRasterSlice({enabled=['pilot','walk'].includes(new URLSear
    const raster=select({families:['forest','prop.forest'],kind:'prop',state:'static',direction:null,variant,timeMs});if(!raster)return false;
    if(rasterAt(ctx,raster,project(x,y),zoom)){status.propDraws++;return true;}return false;
   },
-  drawEntity(ctx,entity,{project,zoom=1,tick=0,timeMs=tick*50}={}) {
-   if(!enabled||!ready||!entity||entity.embarked||typeof project!=='function'||!finite(entity.x)||!finite(entity.y))return false;
+  sampleEntity(entity,{tick=0,timeMs=tick*50}={}) {
+   if(!enabled||!ready||!entity||entity.embarked||!finite(entity.x)||!finite(entity.y))return false;
    if(entity.kind==='building'&&entity.construction){recordMissing(`${entity.type}:construction`,'No authored construction sequence');return false;}
    let families,kind,direction;
    if(entity.kind==='building'){if(!['residence','granary'].includes(entity.type))return false;families=[entity.type,`building.${entity.type}`];kind='building';direction=null;}
@@ -106,6 +106,10 @@ export function createRasterSlice({enabled=['pilot','walk'].includes(new URLSear
    else if(visualState==='attack'&&finite(entity.attackStartedTick??entity.lastAttack))elapsed=attackAnimationTime(asset,entity,timeMs);
    const sample=sampleSpriteAnimation(asset.frames,{timeMs:elapsed,loop:defaultAnimationLoop(asset)});
    const raster=pipeline.get(asset.id,{state:visualState,direction,timeMs:elapsed,frame:sample.frame});if(!raster.image){recordMissing(asset.id,raster.reason);return false;}
+   return {raster,visualState,walkPhase,sample,direction};
+  },
+  drawEntity(ctx,entity,{project,zoom=1,tick=0,timeMs=tick*50}={}) {
+   if(typeof project!=='function')return false;const result=this.sampleEntity(entity,{tick,timeMs});if(!result)return false;const {raster,visualState,walkPhase,sample,direction}=result,asset=raster.asset;
    if(rasterAt(ctx,raster,project(entity.x,entity.y),zoom)){status.entityDraws++;if(walkPhase){status.walkDraws++;status.lastWalk={entityId:entity.id,frame:sample.frame,distance:walkPhase.distance,distancePerCycle:asset.locomotion.distancePerCycle,direction};}else if(visualState==='idle'&&asset.family==='unit.villager')status.idleDraws++;return true;}return false;
   },
   /** Deterministic existing forest density, sorted ready for a merged prop/entity depth queue. */

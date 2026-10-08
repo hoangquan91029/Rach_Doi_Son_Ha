@@ -1,0 +1,28 @@
+{
+  "status": "ACTUAL_LOCAL_GAME_WALK_PAUSE_STOP_HAT_PASS",
+  "sourceCandidate": "pure2d-loop-preview-014",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "low",
+  "browsersRun": [
+    "chromium",
+    "firefox"
+  ],
+  "url": "http://127.0.0.1:5173/?art=walk",
+  "UIOnly": true,
+  "diagnostics": "read-only",
+  "normalZoom": 1.08,
+  "deviceScaleFactor": 1,
+  "fullEightD1Observed": true,
+  "pauseFrameDistanceVerified": true,
+  "matchingIdleVerified": true,
+  "hatSelectionVerified": true,
+  "capturedErrors": 0,
+  "preservedAttempts": [
+    "attempt-1-staging",
+    "attempt-2-resource",
+    "attempt-3-endpoint",
+    "attempt-4-corridor"
+  ],
+  "video": "Unedited full-session Playwright webm; receipts contain approximate walk start seconds. Screenshot or technical frames do not establish continuous perceived naturalness.",
+  "limits": "One authored direction; no simulation mutation, source art change, service restart, deployment, foot-lock or visual/fanout acceptance."
+}
