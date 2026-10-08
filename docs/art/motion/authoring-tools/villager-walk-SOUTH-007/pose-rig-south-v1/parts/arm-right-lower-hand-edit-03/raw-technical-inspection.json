@@ -1,0 +1,29 @@
+{
+  "schema": "south-raw-technical-inspection/v1",
+  "file": "raw.png",
+  "sha256": "71e3697c43ea87a7428a5f93716e14621e52be0dbf00e5a66352ac32d8b1e2e8",
+  "decodedRgbaSha256": "af768a07e369db9982920c02a594e0be11425db7764cb4e09926570b6c121e3e",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "mode": "RGBA",
+  "alphaNonzeroBounds": [
+    521,
+    203,
+    749,
+    1024
+  ],
+  "nonzeroAlphaPixels": 142622,
+  "visiblePixelsAlphaGreaterThan8": 137896,
+  "targetForearmComparison": {
+    "comparisonRegion": "x=480..789, y=190..649 (visible forearm region; same source pixel coordinates)",
+    "visibleMaskThresholdAlpha": 8,
+    "visibleMaskIoU": 0.9888580427502583,
+    "maskPixelCountChanged": 895,
+    "visiblePixelsInBoth": 79432,
+    "meanAbsoluteRGBDifferenceWhereBothVisible": 6.375,
+    "interpretation": "The upper forearm silhouette remains very close in this ROI, but the source is not pixel-identical: texture/color were regenerated and some contour pixels differ. Do not claim exact preservation."
+  },
+  "processing": "Exact byte copy of builtin output. No crop, rescale, warp, alpha cleanup, compositing, or repaint applied to raw."
+}

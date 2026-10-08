@@ -1,9 +1,9 @@
 {
   "schema": "south-persistent-component-live-ledger/v1",
-  "timestampUtc": "2026-10-08T08:02:12.316331+00:00",
-  "status": "TWO_CALIBRATED_PARTS_TWO_HELD_LOWER_SOURCES",
-  "partsGenerated": 4,
-  "componentImageCalls": 4,
+  "timestampUtc": "2026-10-08T09:19:08.745667+00:00",
+  "status": "TWO_CALIBRATED_SLOTS_THREE_HELD_INTEGRATED_LOWER_SOURCES",
+  "partsGenerated": 5,
+  "componentImageCalls": 5,
   "calibratedParts": 2,
   "selectedReadyParts": 2,
   "illustratedBakedKeys": 0,
@@ -45,16 +45,27 @@
           "status": "HELD_HAND_PROPORTIONS_AFTER_CUFF_REMOVAL",
           "calibrated": false,
           "selectedReady": false
+        },
+        {
+          "raw": "parts/arm-right-lower-hand-edit-03/raw.png",
+          "rawSha256": "71e3697c43ea87a7428a5f93716e14621e52be0dbf00e5a66352ac32d8b1e2e8",
+          "parentReviewSha256": "a10f3cc26aa4906c04b8d85b5a8182e602777678ca050c96aed510152220c7a6",
+          "status": "HELD_STOP_INTEGRATED_HAND_PROPORTION_EDITS",
+          "calibrated": false,
+          "selectedReady": false
         }
       ]
     }
   },
-  "next": "Finite wrist-and-hand-only builtin SOURCE EDIT of this bare original, preserving proximal forearm; inspect exact explicit target-space wrist680/desiredfinger~845 guide before one new order. Preserve held original and allsource/diagnosticbytes. No generic wholeforearm repetition or missing6 batch.",
+  "next": "Controlled internal topology amendment: independently authored bareforearm endingatwrist plus independently authoredRIGHT hand, eachoriginal/staticuniformcalibration; wristplane separatelycontrolled withoutsourcecrop/extraction/aniso/perposefit. Preserve9partv3/source/tool lane as supersededheld diagnostic. Draft/pin newscope+guide before each finiteoriginalcall; completebakedcells/atlas remain mandatory.",
   "motionQualified": false,
   "finalArtApproved": false,
-  "heldParts": 2,
+  "heldParts": 3,
   "missingOriginalParts": 6,
   "remainingOpenImageCalls": 0,
-  "checkpoint": "WRIST_HAND_TARGETED_CORRECTION_BOUNDARY",
-  "heldPartSlots": 1
+  "checkpoint": "STOP_INTEGRATED_HAND_PROPORTION_EDIT_LANE",
+  "heldPartSlots": 1,
+  "sourceVersions": 5,
+  "slotsWithAnyOriginal": 3,
+  "readyAuthoringSlots": 2
 }

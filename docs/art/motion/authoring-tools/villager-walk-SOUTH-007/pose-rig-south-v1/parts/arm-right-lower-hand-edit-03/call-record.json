@@ -1,0 +1,69 @@
+{
+  "schema": "south-single-builtin-targeted-source-edit-call-record/v1",
+  "status": "ONE_AUTHORIZED_CALL_COMPLETED_RAW_PENDING_PARENT_REVIEW",
+  "partId": "arm_right_lower_hand",
+  "attemptId": "01a11a79-66c7-73f1-94e0-7e606d8be8c3/exec-b6682dcf-b733-4bb0-b6ad-ee70b54e6b49.png",
+  "tool": "image_gen__imagegen",
+  "toolCallId": null,
+  "providerCallId": null,
+  "providerIdNote": "The image tool returned the generated file path but no call/provider identifier; null is retained and no identifier was inferred.",
+  "callsConsumed": 1,
+  "maximumCallsAuthorizedAcrossVersions": 1,
+  "retries": 0,
+  "authorization": {
+    "path": "parent-call-authorization.json",
+    "sha256": "b30104d4a1518195278746aa6bc2ab2968c0fe11e1558f10ce326934fa5e930d"
+  },
+  "prompt": {
+    "path": "prompt-used.txt",
+    "sha256": "d390d4cbbf0039ef6bc0d6e16f78f442d29227ac0193dff552c593e50e78d986"
+  },
+  "inputsExactOrder": [
+    {
+      "order": 1,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-lower-hand-edit-02/raw.png",
+      "sha256": "f95457f586608347dd0648abbf769f0c77092f62da425d65de88d1bd1ba36f0c",
+      "decodedRgbaSha256": "b2260baf913a9aa25c5a0740d13ec03d9ad7b898b6fd68412b33c01462aec748",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "role": "EDIT_TARGET"
+    },
+    {
+      "order": 2,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/south-neutral-reference/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "decodedRgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "role": "APPEARANCE_REFERENCE_ONLY"
+    },
+    {
+      "order": 3,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-hand-targeted-edit-draft-v1/guide.png",
+      "sha256": "bcf8b52682993df935e66fe79eae831288e7eab964a5d851f028800541d62723",
+      "decodedRgbaSha256": "c52244fb639ebf1f2015bcbaad5ad98655f47bac8d5564918dd3d8e2dd77e2ca",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "role": "TARGET_SPACE_GEOMETRY_ONLY"
+    }
+  ],
+  "transparentBackgroundRequested": true,
+  "output": {
+    "path": "raw.png",
+    "generatorOriginalPath": "/home/kieu-hoang-quan/.codex/generated_images/01a11a79-66c7-73f1-94e0-7e606d8be8c3/exec-b6682dcf-b733-4bb0-b6ad-ee70b54e6b49.png",
+    "sha256": "71e3697c43ea87a7428a5f93716e14621e52be0dbf00e5a66352ac32d8b1e2e8",
+    "decodedRgbaSha256": "af768a07e369db9982920c02a594e0be11425db7764cb4e09926570b6c121e3e",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "byteCopyVerified": true
+  },
+  "decision": "Await parent visual diagnostics. No further call, source cleanup, sidecar seal, acceptance, key/loop qualification, or runtime use."
+}

@@ -1,0 +1,27 @@
+{
+  "schema": "south-component-parent-original-review/v2",
+  "timestampUtc": "2026-10-08T09:19:08.745667+00:00",
+  "status": "HELD_STOP_INTEGRATED_HAND_PROPORTION_EDITS",
+  "partId": "arm_right_lower_hand",
+  "sourceByteSha256": "71e3697c43ea87a7428a5f93716e14621e52be0dbf00e5a66352ac32d8b1e2e8",
+  "sourceRgbaSha256": "af768a07e369db9982920c02a594e0be11425db7764cb4e09926570b6c121e3e",
+  "callRecordSha256": "792b96add8ccdc824874469440e58a13d78108dc38edf588146d3d7ef3a1c563",
+  "custodyVerified": true,
+  "callsConsumed": 1,
+  "retries": 0,
+  "actuallyViewed": [
+    "actualgeneratedraw",
+    "fourpose627sheet",
+    "fourposewhole38sheet",
+    "nativeF0assembly"
+  ],
+  "diagnosticReceiptSha256": "4b4521874bcbfb4886a59f015ab3f19d1c2d98992f9720b57c1c95a20ec0bc6b",
+  "decision": "Single wrist/hand-only edit slightlyshortenedhand butstillmissed controlledtarget: tip~1010-1025 vs840-855, width200-220vs160, provisionalfit extension~132localvs60-70. Hook remains heavy in nativeF0/halfpartial despite modestreduction atgame38. Forearm silhouette retained IoU.989 butpixelspainterlychanged meanRGBdelta6.375; no claimexactpixelpreservation. No sidecar/readyart. STOP furtherintegratedforearm-hand proportioneditcalls, avoid iterativeprompt repetition.",
+  "calibrationAccepted": false,
+  "sidecarSealed": false,
+  "finishedKey": false,
+  "motionQualified": false,
+  "finalArtApproved": false,
+  "additionalCallsAuthorized": 0,
+  "next": "Controlled internal topology amendment: independently authored bareforearm endingatwrist plus independently authoredRIGHT hand, eachoriginal/staticuniformcalibration; wristplane separatelycontrolled withoutsourcecrop/extraction/aniso/perposefit. Preserve9partv3/source/tool lane as supersededheld diagnostic. Draft/pin newscope+guide before each finiteoriginalcall; completebakedcells/atlas remain mandatory."
+}

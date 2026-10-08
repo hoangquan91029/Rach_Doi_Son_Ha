@@ -1,0 +1,45 @@
+{
+  "schema": "south-authorized-image-edit-input-locks/v1",
+  "exactReferencedImagePathsOrder": [
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-lower-hand-edit-02/raw.png",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/south-neutral-reference/raw.png",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-hand-targeted-edit-draft-v1/guide.png"
+  ],
+  "inputs": [
+    {
+      "order": 1,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-lower-hand-edit-02/raw.png",
+      "sha256": "f95457f586608347dd0648abbf769f0c77092f62da425d65de88d1bd1ba36f0c",
+      "decodedRgbaSha256": "b2260baf913a9aa25c5a0740d13ec03d9ad7b898b6fd68412b33c01462aec748",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "role": "EDIT_TARGET"
+    },
+    {
+      "order": 2,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/south-neutral-reference/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "decodedRgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "role": "APPEARANCE_REFERENCE_ONLY"
+    },
+    {
+      "order": 3,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-hand-targeted-edit-draft-v1/guide.png",
+      "sha256": "bcf8b52682993df935e66fe79eae831288e7eab964a5d851f028800541d62723",
+      "decodedRgbaSha256": "c52244fb639ebf1f2015bcbaad5ad98655f47bac8d5564918dd3d8e2dd77e2ca",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "role": "TARGET_SPACE_GEOMETRY_ONLY"
+    }
+  ],
+  "verifiedAgainstParentAuthorization": true,
+  "authorizationSha256": "b30104d4a1518195278746aa6bc2ab2968c0fe11e1558f10ce326934fa5e930d"
+}

@@ -1,0 +1,53 @@
+{
+  "schema": "south-lower-diagnostic-proposal/v2",
+  "status": "UNSEALED_DIAGNOSTIC",
+  "purpose": "ACTUAL_ORIGINAL",
+  "raw": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-lower-hand-edit-03/raw.png",
+    "sha256": "71e3697c43ea87a7428a5f93716e14621e52be0dbf00e5a66352ac32d8b1e2e8",
+    "rgbaSha256": "af768a07e369db9982920c02a594e0be11425db7764cb4e09926570b6c121e3e",
+    "width": 1254,
+    "height": 1254
+  },
+  "endpoints": {
+    "elbow": {
+      "xy": [
+        630,
+        235
+      ],
+      "method": "authored_hidden_hypothesis",
+      "uncertaintyPx": 35,
+      "evidence": "Parent inspected actualedit03 bareproximalcap~548..730,y200; hiddenattachment convention630235 with35raw uncertainty, notanatomicalelbow. Scope changedhand only but generatedsource notpixelidentical; point re-inspected.",
+      "anatomicalJointMeasured": false,
+      "observableAnatomicalEvidence": null
+    },
+    "wrist": {
+      "xy": [
+        611,
+        687
+      ],
+      "method": "observed_original",
+      "uncertaintyPx": 35,
+      "evidence": "Parent actualraw view andworker observed broadneck675..700 x544..678; approximate contour center611687, notanatomicaljoint orguideassertion.",
+      "anatomicalJointMeasured": false,
+      "observableAnatomicalEvidence": null
+    }
+  },
+  "calibration": {
+    "scale": 0.39787872282132114,
+    "rotationRad": -0.042010665950465764,
+    "translation": [
+      -254.36933525517313,
+      -82.89155449148605
+    ]
+  },
+  "layerOrderProposal": [
+    "arm_right_lower_hand",
+    "arm_right_upper",
+    "core_head_torso_pelvis"
+  ],
+  "ownershipClarification": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/component-ownership-clarification-v1.json",
+    "sha256": "9a874ebd63262f54a99df53c84fd4404c354ba0f9290e32ac4888d9dde363076"
+  }
+}

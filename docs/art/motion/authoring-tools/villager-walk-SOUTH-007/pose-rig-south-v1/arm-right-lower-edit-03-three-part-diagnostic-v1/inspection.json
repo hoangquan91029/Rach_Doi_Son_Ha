@@ -1,0 +1,402 @@
+{
+  "status": "UNSEALED_DIAGNOSTIC",
+  "purpose": "ACTUAL_ORIGINAL",
+  "purposeVerification": "Declaration only; parent separately verifies actual source call and raw review.",
+  "candidate": false,
+  "finishedKey": false,
+  "motionQualified": false,
+  "sealedSidecarCreated": false,
+  "partCount": 3,
+  "missingOriginalParts": 6,
+  "proposalSha256": "b49b335819b12a66d3cda9f41042cd06b85d2eb2e966e27e39c6bdd15ca9104c",
+  "ownershipClarification": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/component-ownership-clarification-v1.json",
+    "sha256": "9a874ebd63262f54a99df53c84fd4404c354ba0f9290e32ac4888d9dde363076"
+  },
+  "lowerComponent": "bare forearm and hand; upper sleeve owns cuff; additive clarification preserves sealed v3 geometry",
+  "sourceCustody": {
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-lower-hand-edit-03/landmark-fit-proposal-not-sidecar-v1.json": "b49b335819b12a66d3cda9f41042cd06b85d2eb2e966e27e39c6bdd15ca9104c",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-lower-hand-edit-03/raw.png": "71e3697c43ea87a7428a5f93716e14621e52be0dbf00e5a66352ac32d8b1e2e8",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/core-head-torso-pelvis-01/sidecar-v3.json": "1554ddbd9cf9a6d81ff4840d2dd941baebd5f387bd2ca598541f2fa0e1329b8d",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-upper-01/sidecar-v1.json": "7e60eb992fb5dfd24b6daa1332c09399cd20197741d5fdd96bc3c52e71bbac7a",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/component-ownership-clarification-v1.json": "9a874ebd63262f54a99df53c84fd4404c354ba0f9290e32ac4888d9dde363076",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/core-head-torso-pelvis-01/raw.png": "b5d8542917309bacf90dfd117d8d2da287d9b6eb9c63c4b358e8e5d09f250c6a",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-upper-01/raw.png": "ebeace7fb22057c786b56e00d8634832b5261d905d9fa91904f57bc413e37d46",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-upper-01/parent-calibration-review-v1.json": "93fd995c1cd84746d710735fd92c4e76bff81d9e55b8b820c26e69e4352e5663",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-upper-01/calibration-seal-receipt-v1.json": "a9547feb900a8874b85d33c5498cea8d0d03a1d354c222d6fb9b71696b00a6c5"
+  },
+  "immutableDeclaredEndpointUniformFit": {
+    "scale": 0.39787872282132114,
+    "rotationRad": -0.042010665950465764,
+    "translation": [
+      -254.36933525517313,
+      -82.89155449148605
+    ]
+  },
+  "endpointSemantics": {
+    "elbow": {
+      "xy": [
+        630,
+        235
+      ],
+      "method": "authored_hidden_hypothesis",
+      "uncertaintyPx": 35,
+      "evidence": "Parent inspected actualedit03 bareproximalcap~548..730,y200; hiddenattachment convention630235 with35raw uncertainty, notanatomicalelbow. Scope changedhand only but generatedsource notpixelidentical; point re-inspected.",
+      "anatomicalJointMeasured": false,
+      "observableAnatomicalEvidence": null
+    },
+    "wrist": {
+      "xy": [
+        611,
+        687
+      ],
+      "method": "observed_original",
+      "uncertaintyPx": 35,
+      "evidence": "Parent actualraw view andworker observed broadneck675..700 x544..678; approximate contour center611687, notanatomicaljoint orguideassertion.",
+      "anatomicalJointMeasured": false,
+      "observableAnatomicalEvidence": null
+    }
+  },
+  "numericFitToleranceIsAnatomicalPrecision": false,
+  "jointAndCameraReport": {
+    "rawInspectedEndpointNames": [
+      "elbow",
+      "wrist"
+    ],
+    "rawEndpointSpan": 452.39916003458717,
+    "directedUniformEndpointFitProposal": {
+      "scale": 0.39787872282132114,
+      "rotationRad": -0.042010665950465764,
+      "translation": [
+        -254.36933525517313,
+        -82.89155449148605
+      ]
+    },
+    "providedImmutableCalibration": {
+      "scale": 0.39787872282132114,
+      "rotationRad": -0.042010665950465764,
+      "translation": [
+        -254.36933525517313,
+        -82.89155449148605
+      ],
+      "tolerancePx": 1e-06
+    },
+    "providedEndpointRestResidualPx": [
+      0.0,
+      0.0
+    ],
+    "unforeshortenedBonePlaneLength": 180,
+    "neutralBodyRestScreenEndpoints": [
+      [
+        481.0089369823421,
+        514.8230498622925
+      ],
+      [
+        474.0,
+        685.0
+      ]
+    ],
+    "neutralBodyRestScreenLength": 170.32122461923012,
+    "neutralBodyScreenToBoneRatio": 0.9462290256623895,
+    "cameraRole": "Fixed2:1 affine camera projection applied ONCE after uniform raw-to-unforeshortened bone-plane calibration. Screen length is not a200px source-calibration target.",
+    "allFourJointRecords": [
+      {
+        "key": 0,
+        "proximalScreenXY": [
+          506.0089369823421,
+          514.8230498622925
+        ],
+        "distalScreenXY": [
+          499.0,
+          685.0
+        ],
+        "modelLength": 180.0,
+        "screenLength": 170.32122461923012,
+        "screenToModelRatio": 0.9462290256623895
+      },
+      {
+        "key": 2,
+        "proximalScreenXY": [
+          538.8288103772236,
+          417.55794095663305
+        ],
+        "distalScreenXY": [
+          529.0,
+          610.0
+        ],
+        "modelLength": 179.99999999999994,
+        "screenLength": 192.6928945298247,
+        "screenToModelRatio": 1.0705160807212484
+      },
+      {
+        "key": 4,
+        "proximalScreenXY": [
+          456.0089369823421,
+          558.603662799444
+        ],
+        "distalScreenXY": [
+          449.0,
+          575.0
+        ],
+        "modelLength": 180.0,
+        "screenLength": 17.83157511878239,
+        "screenToModelRatio": 0.09906430621545771
+      },
+      {
+        "key": 6,
+        "proximalScreenXY": [
+          428.82881037722353,
+          540.8055987180751
+        ],
+        "distalScreenXY": [
+          419.0,
+          610.0
+        ],
+        "modelLength": 179.99999999999997,
+        "screenLength": 69.88898827566092,
+        "screenToModelRatio": 0.38827215708700513
+      }
+    ]
+  },
+  "geometryBounds": {
+    "arm_right_lower_hand": {
+      "REST": [
+        230.0601895284595,
+        425.63813822140185,
+        730.5256601766157,
+        899.151065999647
+      ],
+      "poses": {
+        "F0": [
+          255.0601895284595,
+          425.63813822140185,
+          755.5256601766157,
+          899.151065999647
+        ],
+        "F2": [
+          283.0682731867028,
+          314.06471958547627,
+          788.2654115704624,
+          854.9893990470815
+        ],
+        "F4": [
+          205.0601895284595,
+          550.0108076373168,
+          705.5256601766157,
+          595.6331884967229
+        ],
+        "F6": [
+          173.0682731867028,
+          503.59361124967484,
+          678.2654115704624,
+          698.0883049773503
+        ]
+      }
+    },
+    "arm_right_upper": {
+      "REST": [
+        299.29472007391905,
+        287.37746716672245,
+        653.7160308912324,
+        594.2600645829486
+      ],
+      "poses": {
+        "F0": [
+          324.29472007391905,
+          287.37746716672245,
+          678.7160308912324,
+          594.2600645829486
+        ],
+        "F2": [
+          354.0085795364039,
+          291.10844612945357,
+          712.2275078590654,
+          462.3585994890068
+        ],
+        "F4": [
+          274.29472007391905,
+          273.50260737803046,
+          628.7160308912324,
+          658.1772683536949
+        ],
+        "F6": [
+          244.0085795364039,
+          251.07320839059503,
+          602.2275078590654,
+          643.4568738581625
+        ]
+      }
+    },
+    "core_head_torso_pelvis": {
+      "REST": [
+        253.28355901507285,
+        43.17156817270814,
+        1011.9181964294307,
+        840.1504021322111
+      ],
+      "poses": {
+        "F0": [
+          278.28355901507285,
+          43.17156817270814,
+          1036.9181964294307,
+          840.1504021322111
+        ],
+        "F2": [
+          308.28355901507285,
+          23.17156817270814,
+          1066.9181964294307,
+          820.1504021322111
+        ],
+        "F4": [
+          228.28355901507285,
+          43.17156817270814,
+          986.9181964294307,
+          840.1504021322111
+        ],
+        "F6": [
+          198.28355901507285,
+          23.17156817270814,
+          956.9181964294307,
+          820.1504021322111
+        ]
+      }
+    }
+  },
+  "sourceCoverage": "Full original canvas two-triangle quad retains all alpha; no crop, cleanup, mirror, anisotropic fit or per-pose source fit.",
+  "layerOrderProposal": [
+    "arm_right_lower_hand",
+    "arm_right_upper",
+    "core_head_torso_pelvis"
+  ],
+  "fullNinePartOrderingApproved": false,
+  "cameraRoot": [
+    654,
+    1140
+  ],
+  "wholeCanvasLogicalSize": 38,
+  "outputs": [
+    {
+      "path": "REST-UNSEALED_DIAGNOSTIC-THREEPARTS-MISSING6-1254.png",
+      "sha256": "cdafcf181b43948d382f1ed097594512040cc8b0cfb9da02affe0ce38a58c56a",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "path": "REST-UNSEALED_DIAGNOSTIC-THREEPARTS-MISSING6-627.png",
+      "sha256": "d45ac025799dab16cc1815980c4dd91644148ef724c7fb4321e7f11720f13d30",
+      "width": 627,
+      "height": 627
+    },
+    {
+      "path": "REST-UNSEALED_DIAGNOSTIC-THREEPARTS-MISSING6-38.png",
+      "sha256": "7d1b8a532281f3ef233592b8a93639faa93e3ae02f1207ebb98034f0b36ea1fb",
+      "width": 38,
+      "height": 38
+    },
+    {
+      "path": "REST-UNSEALED-THREEPARTS-MISSING6-QA.png",
+      "sha256": "1747a02712d182018ec8840421756a90bc36764fa73823aff655c2832f293adf"
+    },
+    {
+      "path": "F0-UNSEALED_DIAGNOSTIC-THREEPARTS-MISSING6-1254.png",
+      "sha256": "79908a572e311ac6c6db378f3a0b4c474088eb73f42678c598c63d5241dedcf9",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "path": "F0-UNSEALED_DIAGNOSTIC-THREEPARTS-MISSING6-627.png",
+      "sha256": "8958a672b87caca338353bc832cf482e4e7f7111639f0130e2c7ae9725cfea89",
+      "width": 627,
+      "height": 627
+    },
+    {
+      "path": "F0-UNSEALED_DIAGNOSTIC-THREEPARTS-MISSING6-38.png",
+      "sha256": "7c43de642eeccb21afe1d881f73613819d1c8da0fc520b88233c56a386d26fbe",
+      "width": 38,
+      "height": 38
+    },
+    {
+      "path": "F0-UNSEALED-THREEPARTS-MISSING6-QA.png",
+      "sha256": "8ddaaab5338d00f7642778a2b7e25c5a9a539f3cc6221daab72f3a6a2f5c6d6a"
+    },
+    {
+      "path": "F2-UNSEALED_DIAGNOSTIC-THREEPARTS-MISSING6-1254.png",
+      "sha256": "56ae0ddac2e57ebd2aa2da17c26ed391ce375a425dda5affc20e3b8e7568dc11",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "path": "F2-UNSEALED_DIAGNOSTIC-THREEPARTS-MISSING6-627.png",
+      "sha256": "6e8c58428836d8438adce6e54125b09d92e44cd4b764e5545e385b1fab8a9563",
+      "width": 627,
+      "height": 627
+    },
+    {
+      "path": "F2-UNSEALED_DIAGNOSTIC-THREEPARTS-MISSING6-38.png",
+      "sha256": "c4f2f2fabb91aff7b2635d8ed3ff16e25e5af2284c12aed5ed817c66e5d0360c",
+      "width": 38,
+      "height": 38
+    },
+    {
+      "path": "F2-UNSEALED-THREEPARTS-MISSING6-QA.png",
+      "sha256": "fad49b5e0f3898c442223cbbf9010d516a6e43c5ee556efdfb0e6edcfcb06336"
+    },
+    {
+      "path": "F4-UNSEALED_DIAGNOSTIC-THREEPARTS-MISSING6-1254.png",
+      "sha256": "19711030787d737080dc461886bfbd37d91db29e8c4320808caabbb460f9f971",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "path": "F4-UNSEALED_DIAGNOSTIC-THREEPARTS-MISSING6-627.png",
+      "sha256": "7fafb32a1b4efc999e0e5a69dba41c2748ad63c02925418d78be8d3dabd36614",
+      "width": 627,
+      "height": 627
+    },
+    {
+      "path": "F4-UNSEALED_DIAGNOSTIC-THREEPARTS-MISSING6-38.png",
+      "sha256": "1e6b276e4a737677514c98b81b909c634b84958875a03387ad0b4025e31a3994",
+      "width": 38,
+      "height": 38
+    },
+    {
+      "path": "F4-UNSEALED-THREEPARTS-MISSING6-QA.png",
+      "sha256": "123121429f441d04153797daedaa2fe67fa2bbe8d24e1b9c09c07a4892c705d4"
+    },
+    {
+      "path": "F6-UNSEALED_DIAGNOSTIC-THREEPARTS-MISSING6-1254.png",
+      "sha256": "e343666c1320cb6cb89f7d4e1d30a6e7b33e635701c87bd46c205019d7019cd5",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "path": "F6-UNSEALED_DIAGNOSTIC-THREEPARTS-MISSING6-627.png",
+      "sha256": "6804bb56c0841d32b35f5d03075535622972a936d6d6e464a55735fa6ff71996",
+      "width": 627,
+      "height": 627
+    },
+    {
+      "path": "F6-UNSEALED_DIAGNOSTIC-THREEPARTS-MISSING6-38.png",
+      "sha256": "c68ad53d792e997adc3b4d127d9b540932132cfbe2bfda8144d8594d45a95712",
+      "width": 38,
+      "height": 38
+    },
+    {
+      "path": "F6-UNSEALED-THREEPARTS-MISSING6-QA.png",
+      "sha256": "4ce4fa46fed4fc6e26b9d3f9aa37aecc4da1c35a489ed74a56138fb539eb41ff"
+    },
+    {
+      "path": "FOURPOSE-UNSEALED-THREEPARTS-MISSING6-627-sheet.png",
+      "sha256": "c99c14b1cd8846484d92d392629dd3967e08277654c99939b38e1f2ff1d70897",
+      "width": 2508,
+      "height": 682
+    },
+    {
+      "path": "FOURPOSE-UNSEALED-THREEPARTS-MISSING6-38-sheet.png",
+      "sha256": "c27d276a6554424f07ef732ebcaae8907c02a1a213060fe1625deda7b9671ba2",
+      "width": 420,
+      "height": 93
+    }
+  ],
+  "toolSha256": "89ed7bf8e268a29ad97729c128a4e55f6b107a4c03c88373d4550528b62d6f20"
+}

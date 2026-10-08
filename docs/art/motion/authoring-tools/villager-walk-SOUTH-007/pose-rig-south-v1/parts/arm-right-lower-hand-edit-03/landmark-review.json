@@ -1,0 +1,39 @@
+{
+  "schema": "south-rough-source-landmark-review/v1",
+  "status": "ROUGH_VISUAL_ESTIMATES_ONLY_NOT_SEALED",
+  "source": "raw.png",
+  "coordinateSpace": "1254x1254 raw target pixels; visual estimates from transparent source and gray side-by-side diagnostic",
+  "observations": {
+    "proximalCut": {
+      "approximate": "top cap y~200, x~548..730",
+      "confidence": "medium",
+      "note": "Visible cut edge is a model overlap convention, not a measured elbow."
+    },
+    "forearmAt650": {
+      "approximate": "x~546..670",
+      "confidence": "medium",
+      "note": "Forearm silhouette is visually close to edit-02 above y650, but color/texture and some contour pixels changed; not exact preservation."
+    },
+    "candidateWristNeck": {
+      "approximate": "y~675..700, x~544..678",
+      "confidence": "low-medium",
+      "note": "Natural wrist/hand transition is broad and lacks a crisp landmark; proposed anchor only."
+    },
+    "thumbTip": {
+      "approximate": "viewer-right, around x~700..715 y~950..965",
+      "confidence": "low",
+      "note": "Hand orientation is plausible but thumb contour is not a clean isolated relaxed-hand silhouette."
+    },
+    "lowestCurledFingerTip": {
+      "approximate": "around x~690..710 y~1010..1025",
+      "confidence": "medium",
+      "note": "About 330-350 px below candidate wrist y~680; materially longer than requested 150-175 px / target fingertip y~840-855."
+    },
+    "handMaximumWidth": {
+      "approximate": "about 200-220 px around y~830..930",
+      "confidence": "low-medium",
+      "note": "Still visibly heavy; does not satisfy target max width around 160 px."
+    }
+  },
+  "resultAssessment": "The forearm above y650 remains very similar in silhouette but is not pixel-identical. The redraw modestly shortens/narrows the hand versus edit-02, yet leaves a heavy hooked hand with the lowest fingertip near y1020; requested compact geometry was not achieved. Parent review required."
+}
