@@ -1,0 +1,130 @@
+{
+  "status": "SOURCE_REVIEW_ONLY_FIT_PROPOSAL_UNSEALED",
+  "source": {
+    "path": "raw.png",
+    "sha256": "1984793eb1fc2c57c1dafac2f454e0f57b6d48d03ead610958a333cf342ebf54",
+    "decodedRgbaSha256": "cdcc37631c109eb97f7d254cbd106873a3d454eeeb0f73bf00cb76de96591ecf",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "format": "RGBA",
+    "alphaBoundsGt128": [
+      430,
+      109,
+      795,
+      1119
+    ],
+    "note": "All points below are visual candidates from this immutable raw, not sealed anatomy or sidecar anchors."
+  },
+  "observations": {
+    "proximalSkinEmergence": {
+      "candidateCenterPx": [
+        608,
+        350
+      ],
+      "approxBoundaryExtentPx": [
+        [
+          500,
+          310
+        ],
+        [
+          715,
+          397
+        ]
+      ],
+      "uncertaintyPx": 35,
+      "interpretation": "Visible skin emerges beneath a large ivory cloth mass along a slanted, irregular boundary. This is a proximal attachment/skin-emergence candidate, not a measured anatomical elbow. The true elbow is hidden by cloth."
+    },
+    "wristNeck": {
+      "candidateCenterPx": [
+        604,
+        780
+      ],
+      "approxExtentPx": [
+        [
+          530,
+          745
+        ],
+        [
+          680,
+          811
+        ]
+      ],
+      "uncertaintyPx": 25,
+      "interpretation": "Visible narrow transition before the hand broadens; approximate wrist-neck candidate, not a measured crease or joint center."
+    },
+    "hand": {
+      "palmCenterCandidatePx": [
+        653,
+        960
+      ],
+      "uncertaintyPx": 35,
+      "observedPose": "Curled, strongly flexed fingers; closer to a loose fist than the canonical South relaxed hand."
+    },
+    "thumb": {
+      "rootCandidatePx": [
+        697,
+        914
+      ],
+      "tipCandidatePx": [
+        727,
+        1038
+      ],
+      "uncertaintyPx": 22,
+      "evidence": "Thumb is visually distinct along the viewer-right edge of the hand, consistent with actor RIGHT thumb ownership/body-interior hypothesis."
+    },
+    "fingertipExtent": {
+      "candidateBottomPx": 1118,
+      "uncertaintyPx": 10,
+      "evidence": "Lowest curled fingertip lies near the bottom of the opaque hand silhouette."
+    },
+    "proximalCloth": {
+      "approxExtentPx": [
+        [
+          429,
+          107
+        ],
+        [
+          796,
+          401
+        ]
+      ],
+      "uncertaintyPx": 12,
+      "evidence": "The source includes a broad, layered ivory cloth cuff/sleeve mass above the exposed skin. It appears as multiple thick folded rolls, not merely a small hidden skin underlap."
+    }
+  },
+  "singleUniformFitProposal": {
+    "status": "PROPOSAL_ONLY_NOT_SIDECAR",
+    "basis": "Use the visible proximal skin-emergence candidate center [608,350] and wrist-neck candidate [604,780] as provisional endpoint references. Their vertical separation is about 430 raw px; true elbow remains hidden.",
+    "uniformScale": 0.4186,
+    "rotationRadians": 0.0,
+    "sourceToRestFormula": {
+      "restX": "0.4186 * (sourceX - 608)",
+      "restY": "0.4186 * (sourceY - 350)"
+    },
+    "restAnchors": {
+      "proximalVisibleSkinBoundary": [
+        0,
+        0
+      ],
+      "wristNeck": [
+        0,
+        180
+      ]
+    },
+    "uncertainty": "Approximately \u00b10.04 scale from the \u00b135px proximal and \u00b125px wrist candidates; endpoint centers are uncertain and the upper joint is occluded.",
+    "handLengthConflict": "At this same uniform scale, the candidate wrist-to-lowest-fingertip distance is about 338 raw px, or about 141 local units, far beyond the 60\u201370 estimate. No alternate fit is proposed; the hand/forearm proportion mismatch remains unresolved.",
+    "translation": "Not sealed; any final translation must be anchored to the actual reviewed cuff opening in the accepted core+upper partial assembly, without per-frame fitting.",
+    "cameraProjection": "Apply the fixed South camera projection once after any separately accepted raw-to-rest calibration.",
+    "widthConflict": "At raw rows near y=500, the visible forearm span is roughly 185\u2013200px; at y=600 it is roughly 145\u2013155px. Under scale 0.4186 these become about 77\u201384 and 61\u201365 local units, respectively, wider than the 50/40 guide. This is approximate visual evidence and reinforces that one uniform mapping cannot simultaneously match the observed forearm length, width profile, and hand length."
+  },
+  "qualityReview": {
+    "identityMaterials": "Skin and ivory cloth rendering broadly match the style reference, but the component's cloth mass is oversized for the intended lowerarm-only ownership.",
+    "scopeIssue": "The generated component includes a large, multi-fold ivory sleeve/cuff that duplicates the upperarm's existing visible rolled cuff and violates the prompt's hidden-underlap/no-second-cuff constraint.",
+    "handIssue": "The hand is visibly more tightly curled than the canonical South relaxed hand; thumb side is correct, but relaxed pose does not pass as-is.",
+    "scaleIssue": "Direct 38/1254 full-canvas review shows the opaque component spanning about 31 game pixels vertically, nearly a full character height. The one provisional forearm fit maps its visible proximal boundary to wrist by length but leaves the hand about 141 local units and the forearm width about 61\u201384 local units; it cannot match all proposed proportions with one uniform scale.",
+    "alphaIssue": "Real transparency is present. Alpha>128 bbox is [430,109]-[795,1119], but low-alpha fringe pixels extend farther and bright edge artifacts are visible at reduced scale. Raw remains untouched.",
+    "decision": "Preserve as the sole authorized original and stop. This is an unsealed source candidate with material cuff ownership, hand-pose, and uniform-proportion concerns; no retry, cleanup, sidecar seal, key qualification or runtime use."
+  }
+}

@@ -1,9 +1,9 @@
 {
   "schema": "south-persistent-component-live-ledger/v1",
-  "timestampUtc": "2026-10-08T01:50:18.870780+00:00",
-  "status": "TWO_CALIBRATED_AUTHORING_PARTS",
-  "partsGenerated": 2,
-  "componentImageCalls": 2,
+  "timestampUtc": "2026-10-08T02:00:18.286683+00:00",
+  "status": "TWO_CALIBRATED_PARTS_ONE_HELD_LOWERARM",
+  "partsGenerated": 3,
+  "componentImageCalls": 3,
   "calibratedParts": 2,
   "selectedReadyParts": 2,
   "illustratedBakedKeys": 0,
@@ -29,9 +29,19 @@
       "sidecar": "parts/arm-right-upper-01/sidecar-v1.json",
       "sidecarSha256": "7e60eb992fb5dfd24b6daa1332c09399cd20197741d5fdd96bc3c52e71bbac7a",
       "calibrationParentReviewSha256": "93fd995c1cd84746d710735fd92c4e76bff81d9e55b8b820c26e69e4352e5663"
+    },
+    "arm_right_lower_hand": {
+      "raw": "parts/arm-right-lower-hand-01/raw.png",
+      "rawSha256": "1984793eb1fc2c57c1dafac2f454e0f57b6d48d03ead610958a333cf342ebf54",
+      "parentReviewSha256": "e496818b6c247e8eb7e4729cb0b8c8cb04ea8632d496a94aaaa9049e7bbc6c12",
+      "status": "HELD_DUPLICATE_CUFF_AND_SOURCE_PROPORTIONS",
+      "calibrated": false,
+      "selectedReady": false
     }
   },
-  "next": "Review corrected lowerarmguidev2 then one finite original call. No blind remaining-part batch.",
+  "next": "Prepare a bounded builtin original-edit correction with inspected target/identity/controlled bare-forearm guide and truthful source custody; remove duplicate visible cuff and restore usable hand-to-forearm proportions. Review exact finite inputs before opening one call; do not repeat the same generic generation or send all missing parts. No code alpha-cutting/tracing/crop/anisotropic/perposefit.",
   "motionQualified": false,
-  "finalArtApproved": false
+  "finalArtApproved": false,
+  "heldParts": 1,
+  "missingOriginalParts": 6
 }
