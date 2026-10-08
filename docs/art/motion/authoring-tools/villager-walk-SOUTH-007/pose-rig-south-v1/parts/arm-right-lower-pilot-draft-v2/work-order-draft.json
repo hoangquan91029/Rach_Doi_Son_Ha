@@ -1,0 +1,119 @@
+{
+  "schema": "south-lowerarm-hand-original-pilot-work-order-draft/v2",
+  "status": "DRAFT_CLOSED_NO_IMAGE_CALL_AUTHORIZED",
+  "calls_authorized_now": 0,
+  "retry_cap_if_separately_authorized": 0,
+  "scope": "One original actor RIGHT lowerarm+hand component only. No other parts, keys, animation, in-betweens, runtime/integration, atlas or loop approval.",
+  "gate": "Wait for parent final upperarm source-fit/partial review, then obtain a separate finite one-call authorization. This file is not authorization.",
+  "component": {
+    "id": "arm_right_lower_hand",
+    "canvas_px": [
+      1254,
+      1254
+    ],
+    "format": "transparent RGBA",
+    "ownership": "Actor RIGHT forearm, wrist and attached relaxed hand; viewer-left in front-facing South; anatomical RIGHT thumb on viewer-right/body-interior edge.",
+    "local_bone_plane": {
+      "elbow": [
+        0,
+        0
+      ],
+      "wrist": [
+        0,
+        180
+      ],
+      "bone_length": 180,
+      "axis": "straight unforeshortened local +Y",
+      "hand_extension_estimate": [
+        60,
+        70
+      ],
+      "preferred_hand_extension_for_model_guide": 65,
+      "approx_widths_local_px": {
+        "proximal_forearm": 50,
+        "distal_forearm_wrist": 40,
+        "maximum_palm": 65
+      },
+      "estimate_note": "Approximate guide targets visually estimated from canonical South, not measured anatomy. Forearm taper remains 50\u219240 through local wrist +Y=180; palm expansion starts after wrist. Actual source endpoints and hand landmarks remain unknown until raw exists.",
+      "wrist_boundary": "Forearm remains a tapered 50-to-40-width tube through the wrist at local +Y=180. Palm expansion begins strictly distal to the wrist; do not widen into the palm before the wrist landmark.",
+      "thumb_hypothesis": "MODEL_ONLY guide hypothesis: actor RIGHT thumb lobe lies on viewer-right/body-interior edge. This is a side/ownership hypothesis only; actual source thumb root/tip remain unmeasured until raw exists."
+    },
+    "proximal_overlap": {
+      "description": "A small bare-skin overlap goes beneath the existing ivory upper-arm sleeve and its already rolled cuff. Keep lower part behind the sleeve at proximal seam; no second visible rolled cuff or fabric band."
+    },
+    "rest_pose": "Neutral unbent forearm and naturally relaxed hand with gently curled fingers; no grip or clenched fist.",
+    "source_landmarks_pending": [
+      "elbow",
+      "wrist",
+      "hand_center",
+      "thumb_root",
+      "thumb_tip",
+      "fingertip_extent"
+    ],
+    "calibration": "After raw exists, inspect natural landmarks with evidence and uncertainty; one uniform raw-to-bone-rest calibration maps elbow/wrist to [0,0]/[0,180]. No guide-derived fake coordinates, anisotropic source calibration, crop, alpha cleanup, tracing, source edit or per-frame fit. Fixed South camera projection remains in v4 baker. Wrist boundary is distal forearm end at +Y=180; do not infer transition from silhouette flare. "
+  },
+  "contract": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/part-contract-v3.json",
+    "sha256": "e4715f935a88952a7f6d477d29879641fda6041bf4e783169c6664a386afa7bc",
+    "partId": "arm_right_lower_hand"
+  },
+  "tooling": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/tooling-v4/README.md",
+    "sha256": "e349a66ab8089ec2c125b480e0943ea07ef9dc94550300901b68382a180b59cd",
+    "schema": "south-bitmap-rig-sidecar/v3",
+    "note": "Internal bone plane is unforeshortened; camera projection is applied once after uniform static calibration."
+  },
+  "future_inputs_exact_order_if_authorized": [
+    {
+      "order": 1,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/south-neutral-reference/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "decoded_rgba_sha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6",
+      "role": "Canonical South identity, relaxed hand shape, actor RIGHT thumb ownership, neutral direction and body scale."
+    },
+    {
+      "order": 2,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+      "decoded_rgba_sha256": "c960d206222a191b903a8cc1a679e82bdce8d8c51df4010a935f444b3cacdb9c",
+      "role": "Established painterly skin/material rendering, palette and northwest light only; South controls direction and anatomy."
+    },
+    {
+      "order": 3,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/arm-right-upper-rest-proposal-v1/partial-rest.png",
+      "sha256": "7cb1daaa97911f145ffe1decee1122698810b62fdcce62dd5a4b0d2c65843b36",
+      "decoded_rgba_sha256": "deafda97236516791edcf7b84498228d185e2b83de3f254b734262a6e877e18a",
+      "role": "Actual calibrated core+upper-sleeve proposal preview for ivory cuff opening and hidden forearm overlap only. PROPOSAL_ONLY, not accepted motion/key/sidecar."
+    },
+    {
+      "order": 4,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-lower-pilot-draft-v2/guide.png",
+      "sha256": "7113ad75ca5f25411f6c52630aa2caa786d46796f5e1ea0b1ee59e4f85b4abd8",
+      "decoded_rgba_sha256": "0fa253b36c64e52feaacc6306bca252567cbe89841b7e88de81c1c5cc17e9cb0",
+      "role": "MODEL_ONLY geometry for actor RIGHT forearm+hand. Forearm taper continues through wrist at local +Y=180; palm expands only distal to wrist. No appearance authority."
+    }
+  ],
+  "geometry_guide": {
+    "clean_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-lower-pilot-draft-v2/guide.png",
+    "sha256": "7113ad75ca5f25411f6c52630aa2caa786d46796f5e1ea0b1ee59e4f85b4abd8",
+    "decoded_rgba_sha256": "0fa253b36c64e52feaacc6306bca252567cbe89841b7e88de81c1c5cc17e9cb0",
+    "qa_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-lower-pilot-draft-v2/guide-qa.png",
+    "qa_sha256": "0bac8d08e9147aa800adb9df3e7f6647239c88b04d32fe102582de9df1c1a579",
+    "note": "Geometry-only guide. QA explicitly marks wrist-before-palm transition and viewer-right actor-RIGHT thumb ownership hypothesis. No source landmarks asserted."
+  },
+  "prompt_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-lower-pilot-draft-v2/prompt-draft.txt",
+  "future_output_directory": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-lower-pilot-draft-v2/raw-output-if-authorized",
+  "review_constraints": [
+    "The two-part preview is a calibration proposal and cloth-opening reference only, not accepted movement or whole-character key art.",
+    "Upper sleeve owns the visible ivory cuff; the lowerarm starts hidden under it and shows skin below without a duplicated cuff.",
+    "No raw endpoints or grip/hand landmark locations are asserted before the original exists.",
+    "After any separately authorized call, preserve exact raw and report actual measured endpoints/widths with uncertainty before a sidecar is sealed."
+  ],
+  "approval_state": {
+    "guide": "corrected v2 draft for parent inspection",
+    "generation": "not authorized",
+    "part acceptance": "pending actual raw and source inspection",
+    "whole key/loop": "not authorized",
+    "runtime": "not authorized"
+  }
+}
