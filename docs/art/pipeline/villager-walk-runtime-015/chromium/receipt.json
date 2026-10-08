@@ -1,0 +1,61 @@
+{
+  "status": "LOCAL_GAME_NAVIGATION_HOLD",
+  "engine": "chromium",
+  "url": "http://127.0.0.1:5173/?art=walk",
+  "normalZoom": 1.08,
+  "commands": "UI only, no simulation mutation",
+  "entityId": 7,
+  "frames": [],
+  "samples": [],
+  "simulationPauseFrozen": true,
+  "phasePauseVerified": false,
+  "fullSouthLoopObserved": false,
+  "stoppedState": "idle",
+  "errors": [],
+  "art": {
+    "enabled": true,
+    "phase": "CANDIDATE",
+    "quality": "PLACEHOLDER_ONLY",
+    "groundDraws": 3042,
+    "propDraws": 3720,
+    "entityDraws": 4122,
+    "walkDraws": 0,
+    "idleDraws": 0,
+    "lastWalk": null,
+    "missing": [
+      {
+        "key": "ground:mountain",
+        "reason": "No authored material for this terrain",
+        "status": "PLACEHOLDER_ONLY"
+      },
+      {
+        "key": "villager:walk:0",
+        "reason": "No exact authored raster state/direction",
+        "status": "PLACEHOLDER_ONLY"
+      },
+      {
+        "key": "villager:walk:2",
+        "reason": "No exact authored raster state/direction",
+        "status": "PLACEHOLDER_ONLY"
+      },
+      {
+        "key": "villager:idle:2",
+        "reason": "No exact authored raster state/direction",
+        "status": "PLACEHOLDER_ONLY"
+      }
+    ],
+    "pipeline": {
+      "status": "CANDIDATE",
+      "manifest": "ready",
+      "declared": 16,
+      "ready": 16,
+      "approved": 0,
+      "candidates": 16,
+      "failed": 0,
+      "skipped": 0,
+      "fallbacks": 0,
+      "failures": []
+    }
+  },
+  "limits": "One authored direction only; existing four-neighbor navigation prevented South/D1 full-loop observation. Loader/UI checks do not grant motion/foot-lock/production approval."
+}

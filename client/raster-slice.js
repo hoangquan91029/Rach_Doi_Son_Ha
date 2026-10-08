@@ -1,16 +1,18 @@
 import {sampleSpriteAnimation,defaultAnimationLoop,attackAnimationTime} from './sprite-timing.js';
 import {createArtAssetPipeline} from './art-assets.js';
 import {createTerrainTransitions} from './terrain-transitions.js';
+import {createLocomotionPhase} from './locomotion-phase.js';
 import {TILE_WIDTH,TILE_HEIGHT} from './world-presentation.js';
 
 const TW=TILE_WIDTH,TH=TILE_HEIGHT;
 const finite=n=>Number.isFinite(n);
 const normalState=entity=>entity.hp<=0?'death':entity.state;
 /** Optional candidate art over actual simulation. No substitute map, fake units, or sprite mirroring. */
-export function createRasterSlice({enabled=new URLSearchParams(globalThis.location?.search||'').get('art')==='pilot',manifestUrl='/assets/art-v1/manifest.json',onStatus=()=>{},materialWorldSize=8}={}) {
+export function createRasterSlice({enabled=['pilot','walk'].includes(new URLSearchParams(globalThis.location?.search||'').get('art')),manifestUrl=new URLSearchParams(globalThis.location?.search||'').get('art')==='walk'?'/assets/art-v1/walk-014-manifest.json':'/assets/art-v1/manifest.json',onStatus=()=>{},materialWorldSize=8}={}) {
  const pipeline=createArtAssetPipeline({manifestUrl,allowCandidates:true,onStatus});
+ const locomotion=createLocomotionPhase();
  const cells=new Map(),patterns=new WeakMap(),missing=new Set();let ready=false;
- const status={enabled,phase:enabled?'CANDIDATE':'DISABLED',quality:'PLACEHOLDER_ONLY',groundDraws:0,propDraws:0,entityDraws:0,missing:[],pipeline:pipeline.stats};
+ const status={enabled,phase:enabled?'CANDIDATE':'DISABLED',quality:'PLACEHOLDER_ONLY',groundDraws:0,propDraws:0,entityDraws:0,walkDraws:0,idleDraws:0,lastWalk:null,missing:[],pipeline:pipeline.stats};
  const recordMissing=(key,reason)=>{if(!missing.has(key)){missing.add(key);status.missing.push({key,reason,status:'PLACEHOLDER_ONLY'});status.quality='PLACEHOLDER_ONLY';}};
  const select=({families,kind,state,direction,variant=0,timeMs=0})=>{
   if(!enabled||!ready)return null;
@@ -59,6 +61,7 @@ export function createRasterSlice({enabled=new URLSearchParams(globalThis.locati
   onMissingBank:()=>recordMissing('shore:material:null','Dedicated authored bank material unavailable; bounded original-material blending remains a candidate')});
  return {
   status,pipeline,
+  observeEntities(entities,options){if(enabled)locomotion.observe(entities,options);},
   drawTransitions(ctx,options){if(!enabled||!ready)return false;return transitions.draw(ctx,options);},
   async preload(){if(!enabled)return this;await pipeline.preload();ready=true;status.quality=pipeline.stats.status;return this;},
   /** project uses existing renderer logical pixels; camera zoom and DPR must not be applied twice. */
@@ -96,12 +99,14 @@ export function createRasterSlice({enabled=new URLSearchParams(globalThis.locati
    const candidates=(pipeline.manifest?.assets||[]).filter(a=>a.kind===kind&&families.includes(a.family||a.id)&&a.state===visualState&&a.direction===direction);
    if(!candidates.length){recordMissing(`${families[0]}:${visualState}:${direction}`,'No exact authored raster state/direction');return false;}
    const asset=candidates[0];let elapsed=timeMs;
-   if(visualState==='hit')elapsed=Math.max(0,timeMs-((entity.hitUntil||tick)-6)*50);
+   let walkPhase=null;
+   if(visualState==='walk'&&asset.locomotion){walkPhase=locomotion.sample(entity.id,{distancePerCycle:asset.locomotion.distancePerCycle,cycleDurationMs:asset.frames.reduce((sum,f)=>sum+f.durationMs,0)});elapsed=walkPhase.timeMs;}
+   else if(visualState==='hit')elapsed=Math.max(0,timeMs-((entity.hitUntil||tick)-6)*50);
    else if(visualState==='death')elapsed=Math.max(0,timeMs-(entity.deadTick??tick)*50);
    else if(visualState==='attack'&&finite(entity.attackStartedTick??entity.lastAttack))elapsed=attackAnimationTime(asset,entity,timeMs);
    const sample=sampleSpriteAnimation(asset.frames,{timeMs:elapsed,loop:defaultAnimationLoop(asset)});
    const raster=pipeline.get(asset.id,{state:visualState,direction,timeMs:elapsed,frame:sample.frame});if(!raster.image){recordMissing(asset.id,raster.reason);return false;}
-   if(rasterAt(ctx,raster,project(entity.x,entity.y),zoom)){status.entityDraws++;return true;}return false;
+   if(rasterAt(ctx,raster,project(entity.x,entity.y),zoom)){status.entityDraws++;if(walkPhase){status.walkDraws++;status.lastWalk={entityId:entity.id,frame:sample.frame,distance:walkPhase.distance,distancePerCycle:asset.locomotion.distancePerCycle,direction};}else if(visualState==='idle'&&asset.family==='unit.villager')status.idleDraws++;return true;}return false;
   },
   /** Deterministic existing forest density, sorted ready for a merged prop/entity depth queue. */
   propsForState(state,{onlyVisible=true}={}) {
@@ -110,6 +115,6 @@ export function createRasterSlice({enabled=new URLSearchParams(globalThis.locati
    for(let y=0;y<height;y++)for(let x=0;x<width;x++){const index=y*width+x,v=(x*17+y*31)%19;if(tiles[index]!=='forest'||v>=5||onlyVisible&&state.fog?.visible&&!state.fog.visible[index])continue;props.push({type:'forest',x:x+.5,y:y+.5,variant:v,key:`forest:${x}:${y}`,depth:x+y});}
    return props.sort((a,b)=>a.depth-b.depth||a.y-b.y||a.x-b.x);
   },
-  dispose(){transitions.dispose();transitionMaterials.clear();pipeline.dispose();cells.clear();ready=false;}
+  dispose(){locomotion.clear();transitions.dispose();transitionMaterials.clear();pipeline.dispose();cells.clear();ready=false;}
  };
 }

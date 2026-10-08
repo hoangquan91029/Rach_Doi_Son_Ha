@@ -4,6 +4,8 @@ Model routing (human instruction, 2026-10-08): use `model='gpt-6.1-sol'` and `re
 
 Current evidence: South009–011 provide four selected keys and four illustrated in-betweens; actual eight-frame atlas/APNG/browser playback is in `pure2d-loop-preview-012/`. Brief review identifies only F7 calf crossing; South013 completed one finite whole-frame correction; corrected loop014 has separated calves and fresh actual Chromium playback. No open call. Latest human instruction in `REVIEW_PRIORITY_20261008.md` prioritizes natural smooth gameplay-size motion and avoids exhaustive audits. Small cloth/pixel differences are nonblocking; preserved old South008 holds are historical, not instructions to repeat contact polishing.
 
+Runtime015: real ?art=walk loading and reusable distance phase implemented. Actual UI test is HELD_NAVIGATION because path() uses only cardinal neighbors; next implement deterministic corner-safe eight-direction routes, then observe actual South movement/pause/stop. No new art batch or production acceptance.
+
 Authority: PURE_2D_MASTER_DIRECTIVE_20261008.txt. No required3D geometry/model/Blender/UV/skin/clip/render steps. The final source is a complete illustrated2DPNG, not detached rotated limb textures. All gates begin pending.
 
 ## Canonical reference system

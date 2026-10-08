@@ -1,0 +1,82 @@
+{
+  "status": "RUNTIME_CANDIDATE_HELD_NAVIGATION",
+  "previousGoalTurn": "progress: d8ead83 added actual corrected8frame loop",
+  "thisGoalTurn": "progress: real runtime integration and distancephase implementation; browser evidence identified cardinal-only navigation as next action",
+  "profile": {
+    "workerModel": "gpt-6.1-sol",
+    "reasoning_effort": "low"
+  },
+  "browser": {
+    "status": "LOCAL_GAME_NAVIGATION_HOLD",
+    "engine": "chromium",
+    "url": "http://127.0.0.1:5173/?art=walk",
+    "normalZoom": 1.08,
+    "commands": "UI only, no simulation mutation",
+    "entityId": 7,
+    "frames": [],
+    "samples": [],
+    "simulationPauseFrozen": true,
+    "phasePauseVerified": false,
+    "fullSouthLoopObserved": false,
+    "stoppedState": "idle",
+    "errors": [],
+    "art": {
+      "enabled": true,
+      "phase": "CANDIDATE",
+      "quality": "PLACEHOLDER_ONLY",
+      "groundDraws": 3042,
+      "propDraws": 3720,
+      "entityDraws": 4122,
+      "walkDraws": 0,
+      "idleDraws": 0,
+      "lastWalk": null,
+      "missing": [
+        {
+          "key": "ground:mountain",
+          "reason": "No authored material for this terrain",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:0",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:2",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:idle:2",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        }
+      ],
+      "pipeline": {
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 16,
+        "ready": 16,
+        "approved": 0,
+        "candidates": 16,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "failures": []
+      }
+    },
+    "limits": "One authored direction only; existing four-neighbor navigation prevented South/D1 full-loop observation. Loader/UI checks do not grant motion/foot-lock/production approval.",
+    "validationScope": "Runtime16asset decode/hash loading, real UI movement, simulation pause and stop; fullSouthLoopObserved=false, phasePauseVerified=false."
+  },
+  "tests": {
+    "command": "node --test tests/locomotion-phase.test.js tests/sprite-timing.test.js tests/presentation.test.js",
+    "passed": 9,
+    "failed": 0
+  },
+  "build": "Producer reports temporary-output Vite build PASS; production dist unchanged",
+  "distancePerCycle": 1.26,
+  "distancePerCycleStatus": "provisional2.1worldunits_per_second*0.6seconds; not illustrated foot-lock calibration",
+  "next": "Implement real eight-direction navigation with terrain/building corner safety and deterministic cost/tie behavior; rerun UI South loop/pause/stop before fanout",
+  "deployment": false,
+  "fullGameComplete": false
+}
