@@ -19,3 +19,6 @@ export function authoredActionStates(entity,baseState){
  if(baseState==='gather'&&action?.kind==='gather'&&['wood','food','iron'].includes(action.resource))return [`gather_${action.resource}`,'gather'];
  return [baseState];
 }
+
+/** Existing bounded presentation clock, anchored only to authoritative current gather episode. */
+export function gatherAnimationTime(entity,timeMs){const start=entity.visibleAction?.startedTick;return Number.isInteger(start)&&start>=0&&entity.visibleAction?.kind==='gather'?Math.max(0,timeMs-start*50):timeMs;}

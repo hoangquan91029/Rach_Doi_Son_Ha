@@ -1,0 +1,54 @@
+{
+  "schema": "villager-finite-key-correction/v1",
+  "job": "South019-F02-placement",
+  "stage": "PREPARATION_ONLY_NO_CALL",
+  "modelRouting": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low"
+  },
+  "protectedHEAD": "51ddd8416bc494c9f8a9a22b18d9de677681631a",
+  "protectedStatusAtIntake": "clean",
+  "method": "individual whole-frame ImageGen edit using fullF00 with MODEL_ONLY whole2D guide;not rig-export",
+  "maxCalls": 1,
+  "callsConsumed": 0,
+  "maxRetries": 0,
+  "slot": "F02",
+  "canvas": [
+    1254,
+    1254
+  ],
+  "pivot": [
+    654,
+    1140
+  ],
+  "runtimeCanvas": 128,
+  "renderSize": 89,
+  "primaryEditTarget": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-018/F00-call01/raw.png",
+  "allowedAttachments": [
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-018/F00-call01/raw.png",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-gather-SOUTH-019/guide-F02-placement.png"
+  ],
+  "excludedAttachments": [
+    "held018F02",
+    "oldgenericmannequinguide"
+  ],
+  "custodyOnlyNotImageReferences": {
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/AGENTS.md": "d39442ede15ad2590f6d6a2a83dd7f50161db9fe9fc3a5ff984e998707ce0ad0",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/NEXT_STEPS.md": "4e6892defdd23e2bee0d18dfeff6edc9ad2867e1ed194a90aeb5cf364f84724b",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/REVIEW_PRIORITY_20261008.md": "cacc2b746cb7360d4d6c9dba0b94d55dea0530e43402d60a891b3711e3c1a525",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-018/CHECKPOINT.md": "83b9601bb0d2e05768cecdc3c3a201c94ad940414348c6513fc52c8336777303",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-018/selected-frame-ledger.json": "c426c8e970fc0036e8472727a42a76c7ec2e448f58fe0d09d1bac740ba398ebe",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-018/F00-call01/raw.png": "e6293fe86eaefc2c9f414241320ab178758cdd52ef09946344364b6a41e41117",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-018/F02-call01/raw.png": "ccb160b537d88e637d7459af905937feacd4ad090fd3ceb413546a1c89014e0e",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-018/F02-call01/tool-receipt.json": "627230c51c80101efff76ae8b38e7047535edcb9b31a015d4bbb88c32b17f887"
+  },
+  "next": "ParentGO required before one call; stop afterward for intake; no F04/inbetweens",
+  "gates": {
+    "sourceSelection": "PENDING",
+    "completeGatherLoop": "ABSENT",
+    "motionQualification": "NOT_CLAIMED",
+    "runtimeInstall": "CLOSED",
+    "fanout": "CLOSED",
+    "deployment": "CLOSED"
+  }
+}

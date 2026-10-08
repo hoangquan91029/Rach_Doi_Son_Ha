@@ -1,0 +1,509 @@
+{
+  "status": "ACTUAL_UI_GATHER_EPISODE_ANCHOR_PASS",
+  "url": "http://127.0.0.1:5173/?art=walk",
+  "engine": "chromium",
+  "normalZoom": 1.08,
+  "deviceScaleFactor": 1,
+  "commands": "Ordinary UI only; read-only diagnostics",
+  "workerId": 7,
+  "patch": {
+    "id": 2,
+    "type": "wood",
+    "x": 5.5,
+    "y": 21.5,
+    "amount": 4200
+  },
+  "initial": {
+    "tick": 20,
+    "entity": {
+      "id": 7,
+      "owner": 0,
+      "type": "villager",
+      "kind": "unit",
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "hp": 65,
+      "maxHp": 65,
+      "food": 39.96025599999999,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "gather",
+      "dir": 4,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0.15000000000000002,
+        "iron": 0,
+        "units": []
+      },
+      "resuppliedTick": 14,
+      "starving": 0,
+      "lastMovedTick": 20,
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood",
+        "startedTick": 20
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    }
+  },
+  "resumed": {
+    "tick": 31,
+    "entity": {
+      "id": 7,
+      "owner": 0,
+      "type": "villager",
+      "kind": "unit",
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "hp": 65,
+      "maxHp": 65,
+      "food": 39.88739199999996,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "gather",
+      "dir": 4,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 1.7999999999999998,
+        "iron": 0,
+        "units": []
+      },
+      "resuppliedTick": 14,
+      "starving": 0,
+      "lastMovedTick": 20,
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood",
+        "startedTick": 20
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    }
+  },
+  "stopped": {
+    "tick": 33,
+    "entity": {
+      "id": 7,
+      "owner": 0,
+      "type": "villager",
+      "kind": "unit",
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "hp": 65,
+      "maxHp": 65,
+      "food": 39.87414399999996,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "idle",
+      "dir": 4,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 1.9499999999999997,
+        "iron": 0,
+        "units": []
+      },
+      "resuppliedTick": 14,
+      "starving": 0,
+      "lastMovedTick": 20,
+      "order": null
+    }
+  },
+  "restarted": {
+    "tick": 40,
+    "entity": {
+      "id": 7,
+      "owner": 0,
+      "type": "villager",
+      "kind": "unit",
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "hp": 65,
+      "maxHp": 65,
+      "food": 39.82777599999994,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "gather",
+      "dir": 4,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 2.0999999999999996,
+        "iron": 0,
+        "units": []
+      },
+      "resuppliedTick": 14,
+      "starving": 0,
+      "lastMovedTick": 20,
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood",
+        "startedTick": 40
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    }
+  },
+  "pause": {
+    "beforeTick": 29,
+    "afterTick": 29,
+    "anchor": 20
+  },
+  "samples": [
+    {
+      "tick": 9,
+      "x": 7.5,
+      "y": 21.5,
+      "state": "idle",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": null
+    },
+    {
+      "tick": 11,
+      "x": 7.5,
+      "y": 21.5,
+      "state": "idle",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 12,
+      "x": 7.395,
+      "y": 21.5,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 13,
+      "x": 7.289999999999999,
+      "y": 21.5,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 15,
+      "x": 7.079999999999998,
+      "y": 21.5,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 16,
+      "x": 6.974999999999998,
+      "y": 21.5,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 17,
+      "x": 6.869999999999997,
+      "y": 21.5,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 19,
+      "x": 6.659999999999997,
+      "y": 21.5,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 20,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood",
+        "startedTick": 20
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 0.15000000000000002,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 29,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood",
+        "startedTick": 20
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 1.5,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 31,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood",
+        "startedTick": 20
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 1.7999999999999998,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 32,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood",
+        "startedTick": 20
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 1.9499999999999997,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 33,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "idle",
+      "cargo": {
+        "food": 0,
+        "wood": 1.9499999999999997,
+        "iron": 0,
+        "units": []
+      },
+      "order": null
+    },
+    {
+      "tick": 34,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "idle",
+      "cargo": {
+        "food": 0,
+        "wood": 1.9499999999999997,
+        "iron": 0,
+        "units": []
+      },
+      "order": null
+    },
+    {
+      "tick": 35,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "idle",
+      "cargo": {
+        "food": 0,
+        "wood": 1.9499999999999997,
+        "iron": 0,
+        "units": []
+      },
+      "order": null
+    },
+    {
+      "tick": 36,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "idle",
+      "cargo": {
+        "food": 0,
+        "wood": 1.9499999999999997,
+        "iron": 0,
+        "units": []
+      },
+      "order": null
+    },
+    {
+      "tick": 38,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "idle",
+      "cargo": {
+        "food": 0,
+        "wood": 1.9499999999999997,
+        "iron": 0,
+        "units": []
+      },
+      "order": null
+    },
+    {
+      "tick": 40,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood",
+        "startedTick": 40
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 2.0999999999999996,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    }
+  ],
+  "art": {
+    "enabled": true,
+    "phase": "CANDIDATE",
+    "quality": "PLACEHOLDER_ONLY",
+    "groundDraws": 3042,
+    "propDraws": 1290,
+    "entityDraws": 1450,
+    "walkDraws": 0,
+    "idleDraws": 0,
+    "lastWalk": null,
+    "missing": [
+      {
+        "key": "ground:mountain",
+        "reason": "No authored material for this terrain",
+        "status": "PLACEHOLDER_ONLY"
+      },
+      {
+        "key": "villager:walk:4",
+        "reason": "No exact authored raster state/direction",
+        "status": "PLACEHOLDER_ONLY"
+      },
+      {
+        "key": "villager:gather:4",
+        "reason": "No exact authored raster state/direction",
+        "status": "PLACEHOLDER_ONLY"
+      },
+      {
+        "key": "villager:idle:4",
+        "reason": "No exact authored raster state/direction",
+        "status": "PLACEHOLDER_ONLY"
+      }
+    ],
+    "pipeline": {
+      "status": "CANDIDATE",
+      "manifest": "ready",
+      "declared": 16,
+      "ready": 16,
+      "approved": 0,
+      "candidates": 16,
+      "failed": 0,
+      "skipped": 0,
+      "fallbacks": 0,
+      "failures": []
+    }
+  },
+  "errors": [],
+  "limits": "Actual contact episode metadata, pause/stop/reissue only. No authored gather animation frame, continuous naturalness, new art or production acceptance claimed."
+}

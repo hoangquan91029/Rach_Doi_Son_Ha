@@ -1,0 +1,2 @@
+const fs=require('fs');const {chromium}=require('/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/node_modules/playwright');
+(async()=>{const b=await chromium.launch({headless:true});const p=await b.newPage({viewport:{width:1254,height:1254},deviceScaleFactor:1});await p.setContent(fs.readFileSync(__dirname+'/guide-F02-placement.svg','utf8'));await p.locator('svg').screenshot({path:__dirname+'/guide-F02-placement.png'});await b.close()})();

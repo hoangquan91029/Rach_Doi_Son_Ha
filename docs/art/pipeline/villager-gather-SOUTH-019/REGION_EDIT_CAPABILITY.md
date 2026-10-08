@@ -1,0 +1,9 @@
+# Region-edit control capability — current evidence
+
+The built-in image_gen.imagegen schema exposes prompt, referenced_image_paths, num_last_images_to_include and transparent_background. It does not expose an executable pixel mask or locked-region parameter. A guide/reference is a model instruction, not deterministic untouched-pixel protection. Job019's exact fullF00 ghost/anchor guide still produced visible placement drift; the one call is held, no retry.
+
+Local imagegen skill documentation identifies explicit mask as a CLI/API fallback control. references/cli.md says masking is prompt-guided and does not promise exact pixel boundaries. Therefore merely switching to a masked API call would not prove fixed placement. The same skill requires explicit human selection before CLI/API fallback; no fallback call or credentials access occurred.
+
+Next contract must work on complete whole-frame images and preserve the source body's unchanged region by an actual authoring/editor operation, with coherent repainted boundaries inside the editable upper-body/tool area. This is distinct from separately generated/rotated limb textures and must not become visible puppet assembly. No per-frame recentering, bbox fitting, whole-sprite shift or concealed source repair. Verify that the selected permitted editor/control actually exists before a finite next source order. If a new CLI/API path is needed, prepare exact one-call inputs and request required authorization rather than silently substitute models/tools. Do not promise mask-perfect results or treat an internal fixture as final art.
+
+Active route remains pure2D illustrated PNGs and Sol6.1 Low project workers. Existing move/walk is used for returning goods. Three existing gather originals and all earlier source/receipt history stay preserved. No new image call is open.

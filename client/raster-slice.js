@@ -1,4 +1,4 @@
-import {authoredActionStates} from './action-presentation.js';
+import {authoredActionStates,gatherAnimationTime} from './action-presentation.js';
 import {sampleSpriteAnimation,defaultAnimationLoop,attackAnimationTime} from './sprite-timing.js';
 import {createArtAssetPipeline} from './art-assets.js';
 import {createTerrainTransitions} from './terrain-transitions.js';
@@ -103,6 +103,7 @@ export function createRasterSlice({enabled=['pilot','walk'].includes(new URLSear
    const asset=candidates[0];let elapsed=timeMs;
    let walkPhase=null;
    if(visualState==='walk'&&asset.locomotion){walkPhase=locomotion.sample(entity.id,{distancePerCycle:asset.locomotion.distancePerCycle,cycleDurationMs:asset.frames.reduce((sum,f)=>sum+f.durationMs,0)});elapsed=walkPhase.timeMs;}
+   else if(visualState==='gather'||visualState.startsWith('gather_'))elapsed=gatherAnimationTime(entity,timeMs);
    else if(visualState==='hit')elapsed=Math.max(0,timeMs-((entity.hitUntil||tick)-6)*50);
    else if(visualState==='death')elapsed=Math.max(0,timeMs-(entity.deadTick??tick)*50);
    else if(visualState==='attack'&&finite(entity.attackStartedTick??entity.lastAttack))elapsed=attackAnimationTime(asset,entity,timeMs);

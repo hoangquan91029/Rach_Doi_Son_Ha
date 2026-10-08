@@ -206,7 +206,7 @@ function gather(s,e,r){
   const m=s.players[e.owner].modifiers,bonus=active(s,e,'fiscal')?1.35:1;
   s.players[e.owner].resources.wood+=e.cargo.wood*bonus;s.players[e.owner].resources.iron+=e.cargo.iron*bonus;
   const n=Math.min(e.cargo.food,BUILDINGS[b.type].capacity-b.cargo.food);b.cargo.food+=n;e.cargo.food-=n;e.cargo.wood=0;e.cargo.iron=0;e.path=[];if(!r||r.amount<=0){e.order=null;event(s,'Resource patch exhausted',e.owner);}e.state='carry';}return;}
- if(travel(s,e,r,1.1)){const amount=Math.min(r.amount,BALANCE.carry-total,BALANCE.gatherPerSecond*DT*s.players[e.owner].modifiers.gather*(active(s,e,'inspection')?1.45:1));r.amount-=amount;e.cargo[r.type]+=amount;s.players[e.owner].stats.gathered+=amount;e.state='gather';}
+ if(travel(s,e,r,1.1)){if(e.gatherEpisode?.target!==r.id||e.gatherEpisode.lastTick!==s.tick-1)e.gatherEpisode={target:r.id,startedTick:s.tick,lastTick:s.tick};else e.gatherEpisode.lastTick=s.tick;const amount=Math.min(r.amount,BALANCE.carry-total,BALANCE.gatherPerSecond*DT*s.players[e.owner].modifiers.gather*(active(s,e,'inspection')?1.45:1));r.amount-=amount;e.cargo[r.type]+=amount;s.players[e.owner].stats.gathered+=amount;e.state='gather';}
 }
 function transfer(s,e,t,kind){
  if(e.type==='wagon'){
@@ -332,7 +332,7 @@ export function step(s){
 }
 export function view(s,p){
  if(p!==0&&p!==1)throw new Error('Invalid viewer');updateFog(s);const result={tick:s.tick,map:{id:s.map.id,name:s.map.name,width:s.map.width,height:s.map.height,tiles:[...s.map.tiles],resources:s.map.resources.map(r=>s.fog[p].resources[r.id]).filter(Boolean).map(clone)},players:s.players.map(player=>({id:player.id,name:player.name,king:player.king,general:player.general,resources:player.id===p?clone(player.resources):{wood:0,food:0,iron:0},population:player.id===p?player.population:0,populationCap:BALANCE.populationCap,synergies:player.synergies,stats:player.id===p||s.winner!==null?clone(player.stats):undefined})),entities:[],winner:s.winner,reason:s.reason,events:s.events.filter(e=>e.owner===null||e.owner===p).map(e=>e.text),fog:clone(s.fog[p]),effects:s.effects.filter(f=>f.owner===p||s.fog[p].visible[Math.floor(f.y)*s.map.width+Math.floor(f.x)]).map(clone)};
- for(const e of s.entities){if(e.owner!==p&&!visible(s,p,e))continue;const {path,pathKey,retryPath,order,pendingAttack,...publicEntity}=e;const v=clone(publicEntity);const visibleAction=visibleVillagerAction(s,e);if(visibleAction)v.visibleAction=visibleAction;if(e.owner===p)v.order=order?clone(order):null;else{v.queue=[];v.cargo={food:0,wood:0,iron:0,units:[]};delete v.abilityCooldown;delete v.construction;}result.entities.push(v);}
+ for(const e of s.entities){if(e.owner!==p&&!visible(s,p,e))continue;const {path,pathKey,retryPath,order,pendingAttack,gatherEpisode,...publicEntity}=e;const v=clone(publicEntity);const visibleAction=visibleVillagerAction(s,e);if(visibleAction)v.visibleAction=visibleAction;if(e.owner===p)v.order=order?clone(order):null;else{v.queue=[];v.cargo={food:0,wood:0,iron:0,units:[]};delete v.abilityCooldown;delete v.construction;}result.entities.push(v);}
  return result;
 }
 export function hashState(s){let hash=2166136261;const text=JSON.stringify(s);for(let i=0;i<text.length;i++){hash^=text.charCodeAt(i);hash=Math.imul(hash,16777619);}return (hash>>>0).toString(16).padStart(8,'0');}
