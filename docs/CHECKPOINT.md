@@ -11,3 +11,5 @@ Current public bundle index-ClW3IlNb.js SHAca8e6428…e08b;14unapproved candidat
 Near quota: finish only current atomic task, verify custody, update this checkpoint, commit cleanly and leave the full objective unfinished.
 
 Current atomic work is complete and preserved. Master37 stop boundary: primary90%/weekly73%, no more image calls or tool work open. Receipt: qa/checkpoint/south-007-20261008-authoring-receipt.json. Primary reset observed05:37:47UTC /12:37:47Asia-Ho-Chi-Minh. Existing5hour heartbeat remainsACTIVE with one bounded wait/recheck if it wakes within50seconds before reported reset; it remains a periodic check, not an exact reset webhook. No reset credit consumed.
+
+Follow-up section37 audit corrected the previously stale ARCHITECTURE.md: eight-view seal, nine-texture source/calibration/camera/bake pipeline, truthful partial diagnostics, held lowerarm, footroll/completeframe gates and unchanged crowd defect are now recorded. This completes the named-document checkpoint requirement without opening new production work. Live recheck92%primary/74%weekly at02:04:46UTC; next step remains blocked on sufficient reset quota under the user’s stop boundary.
