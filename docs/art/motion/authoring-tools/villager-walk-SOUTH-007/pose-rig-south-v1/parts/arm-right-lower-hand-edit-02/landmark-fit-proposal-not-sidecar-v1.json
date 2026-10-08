@@ -1,0 +1,53 @@
+{
+  "schema": "south-lower-diagnostic-proposal/v2",
+  "status": "UNSEALED_DIAGNOSTIC",
+  "purpose": "ACTUAL_ORIGINAL",
+  "raw": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-lower-hand-edit-02/raw.png",
+    "sha256": "f95457f586608347dd0648abbf769f0c77092f62da425d65de88d1bd1ba36f0c",
+    "rgbaSha256": "b2260baf913a9aa25c5a0740d13ec03d9ad7b898b6fd68412b33c01462aec748",
+    "width": 1254,
+    "height": 1254
+  },
+  "endpoints": {
+    "elbow": {
+      "xy": [
+        630,
+        235
+      ],
+      "method": "authored_hidden_hypothesis",
+      "uncertaintyPx": 35,
+      "evidence": "Parent inspected actual bare proximal contour center~630214; authored hidden joint convention21rawpx below that contour, intended beneath accepted sleeve cuff. Not measured anatomical elbow.",
+      "anatomicalJointMeasured": false,
+      "observableAnatomicalEvidence": null
+    },
+    "wrist": {
+      "xy": [
+        608,
+        680
+      ],
+      "method": "observed_original",
+      "uncertaintyPx": 30,
+      "evidence": "Parent inspected actual narrow skin neck/contour transition, approximatecenter608680 agrees worker nativealpha-row spans; not an exact anatomical wrist joint.",
+      "anatomicalJointMeasured": false,
+      "observableAnatomicalEvidence": null
+    }
+  },
+  "calibration": {
+    "scale": 0.4040009667106303,
+    "rotationRad": -0.04939798331703771,
+    "translation": [
+      -258.89808522535503,
+      -82.2567238764993
+    ]
+  },
+  "layerOrderProposal": [
+    "arm_right_lower_hand",
+    "arm_right_upper",
+    "core_head_torso_pelvis"
+  ],
+  "ownershipClarification": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/component-ownership-clarification-v1.json",
+    "sha256": "9a874ebd63262f54a99df53c84fd4404c354ba0f9290e32ac4888d9dde363076"
+  }
+}

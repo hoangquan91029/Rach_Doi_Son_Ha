@@ -1,0 +1,29 @@
+{
+  "schema": "south-source-edit-raw-inspection/v1",
+  "sourcePath": "raw.png",
+  "sourceByteSha256": "f95457f586608347dd0648abbf769f0c77092f62da425d65de88d1bd1ba36f0c",
+  "decodedRgbaSha256": "b2260baf913a9aa25c5a0740d13ec03d9ad7b898b6fd68412b33c01462aec748",
+  "dimensions": [1254, 1254],
+  "mode": "RGBA",
+  "alpha": {
+    "nonzeroPixelCount": 158720,
+    "gt128PixelCount": 151516,
+    "gt250PixelCount": 145569,
+    "boundsGt0": [520, 201, 771, 1096],
+    "boundsGt128": [523, 207, 768, 1093],
+    "note": "Low-alpha edge pixels remain in the immutable raw. No alpha cleanup, crop, or re-encode was applied."
+  },
+  "visualInspection": {
+    "viewedOn": ["light", "neutral gray", "dark"],
+    "notes": [
+      "Broad ivory cuff is absent; the proximal edge is bare skin.",
+      "Painterly skin material and correct viewer-right actor-RIGHT thumb side are visible.",
+      "The fingers remain strongly curled and the apparent hand extension remains longer than the 4x geometry-guide estimate; this is an unaccepted source candidate pending parent review."
+    ]
+  },
+  "preview": {
+    "path": "preview-neutral-gray.png",
+    "role": "inspection-only alpha composite over neutral gray",
+    "sourceBytesModified": false
+  }
+}

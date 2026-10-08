@@ -1,0 +1,58 @@
+{
+  "schema": "south-single-builtin-source-edit-call-record/v1",
+  "status": "ONE_CALL_COMPLETED_RAW_PENDING_PARENT_REVIEW",
+  "partId": "arm_right_lower_hand",
+  "attemptId": "01a11a79-66c7-73f1-94e0-7e606d8be8c3/exec-a3c7c215-adac-4cfc-9df9-d74cf9a368a8.png",
+  "tool": "builtin image_gen edit",
+  "toolCallId": null,
+  "providerCallId": null,
+  "providerIdNote": "The builtin tool response exposed a generated output path but no call/provider ID. Null is retained; no ID was inferred.",
+  "callsConsumed": 1,
+  "maximumCallsAcrossAuthorizations": 1,
+  "retries": 0,
+  "authorization": {
+    "path": "parent-call-authorization-v2.json",
+    "sha256": "940790023df771dd977c78f080df7136b0adcacce338c2d150a331c14b394f1a",
+    "status": "OPEN_EXACTLY_ONE_BUILTIN_SOURCE_EDIT",
+    "promptSha256": "e5b8a68114b789788644112929286a850cbdf7d162badab7bfb5e0cbf22e88f6"
+  },
+  "prompt": {
+    "path": "prompt-used.txt",
+    "sha256": "e5b8a68114b789788644112929286a850cbdf7d162badab7bfb5e0cbf22e88f6"
+  },
+  "inputsExactOrder": [
+    {
+      "order": 1,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-lower-hand-01/raw.png",
+      "sha256": "1984793eb1fc2c57c1dafac2f454e0f57b6d48d03ead610958a333cf342ebf54",
+      "rgbaSha256": "cdcc37631c109eb97f7d254cbd106873a3d454eeeb0f73bf00cb76de96591ecf",
+      "dimensions": [1254, 1254],
+      "role": "EDIT_TARGET"
+    },
+    {
+      "order": 2,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/south-neutral-reference/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "rgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6",
+      "dimensions": [1254, 1254],
+      "role": "APPEARANCE_REFERENCE_ONLY"
+    },
+    {
+      "order": 3,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-lower-source-edit-draft-v2/guide.png",
+      "sha256": "c364322b1ba422c96ac841b9d7d62c8a87071e98626602b2e5f003b0fc0035ae",
+      "rgbaSha256": "ce7480a41aa643946b21b99f5ed27465b914bd5e7164f937b67aaa14da203f76",
+      "dimensions": [1254, 1254],
+      "role": "GEOMETRY_ONLY"
+    }
+  ],
+  "output": {
+    "path": "raw.png",
+    "generatorOriginalPath": "/home/kieu-hoang-quan/.codex/generated_images/01a11a79-66c7-73f1-94e0-7e606d8be8c3/exec-a3c7c215-adac-4cfc-9df9-d74cf9a368a8.png",
+    "sha256": "f95457f586608347dd0648abbf769f0c77092f62da425d65de88d1bd1ba36f0c",
+    "rgbaSha256": "b2260baf913a9aa25c5a0740d13ec03d9ad7b898b6fd68412b33c01462aec748",
+    "dimensions": [1254, 1254],
+    "byteCopyVerified": true
+  },
+  "decision": "No retry, source cleanup, sidecar sealing, part acceptance, key/loop qualification, or runtime use. Await parent inspection."
+}

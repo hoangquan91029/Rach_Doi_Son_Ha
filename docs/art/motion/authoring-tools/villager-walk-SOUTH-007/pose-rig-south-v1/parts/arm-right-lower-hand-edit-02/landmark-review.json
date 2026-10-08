@@ -1,0 +1,53 @@
+{
+  "schema": "south-source-edit-rough-landmark-review/v1",
+  "status": "ROUGH_VISUAL_REVIEW_ONLY_NOT_SIDECAR",
+  "partId": "arm_right_lower_hand",
+  "source": {
+    "path": "raw.png",
+    "sha256": "f95457f586608347dd0648abbf769f0c77092f62da425d65de88d1bd1ba36f0c",
+    "decodedRgbaSha256": "b2260baf913a9aa25c5a0740d13ec03d9ad7b898b6fd68412b33c01462aec748",
+    "dimensions": [1254, 1254]
+  },
+  "method": "Manual visual review of original RGBA on light/neutral/dark backgrounds, with alpha-row spans checked at native pixels. Coordinates are rough contour candidates only; no source calibration or fit was applied.",
+  "observations": {
+    "proximalSkinBoundary": {
+      "candidateCenterPx": [630, 214],
+      "approxExtentPx": [[550, 207], [735, 245]],
+      "uncertaintyPx": 25,
+      "interpretation": "Bare-skin proximal edge after cuff removal. This is a part cut/overlap boundary, not an anatomical elbow. Intended hidden overlap under upper sleeve remains unverified in an assembly."
+    },
+    "wristNeck": {
+      "candidateCenterPx": [608, 680],
+      "approxExtentPx": [[547, 640], [676, 720]],
+      "uncertaintyPx": 30,
+      "evidence": "Alpha>128 row width is about 121px at y=650–660, then expands to about 139px by y=720 and 170px by y=780. The narrow-to-palm transition is a visual wrist-neck candidate only, not a sealed joint center."
+    },
+    "palmCenter": {
+      "candidateCenterPx": [645, 920],
+      "uncertaintyPx": 40,
+      "evidence": "Broad hand silhouette below the wrist-neck candidate."
+    },
+    "thumb": {
+      "rootCandidatePx": [700, 815],
+      "tipCandidatePx": [744, 995],
+      "uncertaintyPx": 30,
+      "evidence": "Distinct nail-bearing digit lies on viewer-right/body-interior edge, consistent with actor RIGHT thumb ownership. Points are not sealed landmarks."
+    },
+    "fingertipExtent": {
+      "candidateBottomPx": 1093,
+      "uncertaintyPx": 6,
+      "evidence": "Lowest opaque curled fingertip; alpha>128 bounding box ends at y=1092 inclusive."
+    },
+    "handLengthConcern": {
+      "visualWristToFingertipsPx": [380, 440],
+      "guideDisplayEstimatePx": [240, 280],
+      "note": "Using the rough wrist-neck contour only, the apparent hand extension remains about 1.4–1.8x the 4x guide estimate. No local-unit length or calibration is asserted."
+    }
+  },
+  "decision": "Cuff removal and bare-skin scope appear achieved. The output still has a strongly curled hand and a visibly long wrist-to-fingertip span relative to the approved geometry guide. Parent inspection is required; no retry is authorized.",
+  "calibration": "Not performed",
+  "sidecarSealed": false,
+  "partAccepted": false,
+  "motionQualified": false,
+  "runtimeUse": false
+}

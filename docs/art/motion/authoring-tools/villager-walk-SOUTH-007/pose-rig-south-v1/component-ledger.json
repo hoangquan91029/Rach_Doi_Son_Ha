@@ -1,9 +1,9 @@
 {
   "schema": "south-persistent-component-live-ledger/v1",
-  "timestampUtc": "2026-10-08T02:02:30.060767+00:00",
-  "status": "TWO_CALIBRATED_PARTS_ONE_HELD_LOWERARM",
-  "partsGenerated": 3,
-  "componentImageCalls": 3,
+  "timestampUtc": "2026-10-08T08:02:12.316331+00:00",
+  "status": "TWO_CALIBRATED_PARTS_TWO_HELD_LOWER_SOURCES",
+  "partsGenerated": 4,
+  "componentImageCalls": 4,
   "calibratedParts": 2,
   "selectedReadyParts": 2,
   "illustratedBakedKeys": 0,
@@ -36,14 +36,25 @@
       "parentReviewSha256": "e496818b6c247e8eb7e4729cb0b8c8cb04ea8632d496a94aaaa9049e7bbc6c12",
       "status": "HELD_DUPLICATE_CUFF_AND_SOURCE_PROPORTIONS",
       "calibrated": false,
-      "selectedReady": false
+      "selectedReady": false,
+      "heldSourceEdits": [
+        {
+          "raw": "parts/arm-right-lower-hand-edit-02/raw.png",
+          "rawSha256": "f95457f586608347dd0648abbf769f0c77092f62da425d65de88d1bd1ba36f0c",
+          "parentReviewSha256": "1005b4f93020f756591d4ca9787fb92508f2dc884a779111266a58dfd9c76d24",
+          "status": "HELD_HAND_PROPORTIONS_AFTER_CUFF_REMOVAL",
+          "calibrated": false,
+          "selectedReady": false
+        }
+      ]
     }
   },
-  "next": "Prepare a bounded builtin original-edit correction with inspected target/identity/controlled bare-forearm guide and truthful source custody; remove duplicate visible cuff and restore usable hand-to-forearm proportions. Review exact finite inputs before opening one call; do not repeat the same generic generation or send all missing parts. No code alpha-cutting/tracing/crop/anisotropic/perposefit.",
+  "next": "Finite wrist-and-hand-only builtin SOURCE EDIT of this bare original, preserving proximal forearm; inspect exact explicit target-space wrist680/desiredfinger~845 guide before one new order. Preserve held original and allsource/diagnosticbytes. No generic wholeforearm repetition or missing6 batch.",
   "motionQualified": false,
   "finalArtApproved": false,
-  "heldParts": 1,
+  "heldParts": 2,
   "missingOriginalParts": 6,
   "remainingOpenImageCalls": 0,
-  "checkpoint": "NEAR_QUOTA_SOURCE_CORRECTION_BOUNDARY"
+  "checkpoint": "WRIST_HAND_TARGETED_CORRECTION_BOUNDARY",
+  "heldPartSlots": 1
 }

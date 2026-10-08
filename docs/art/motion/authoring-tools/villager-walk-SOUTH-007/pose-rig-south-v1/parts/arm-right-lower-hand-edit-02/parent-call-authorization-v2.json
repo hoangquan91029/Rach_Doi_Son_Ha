@@ -1,0 +1,68 @@
+{
+  "schema": "south-finite-source-edit-authorization/v1",
+  "timestampUtc": "2026-10-08T07:53:27.649611+00:00",
+  "status": "OPEN_EXACTLY_ONE_BUILTIN_SOURCE_EDIT",
+  "callsAuthorized": 1,
+  "retryCap": 0,
+  "callsConsumedAtIssue": 0,
+  "partId": "arm_right_lower_hand",
+  "outputDirectory": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-lower-hand-edit-02",
+  "promptPath": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-lower-source-edit-draft-v2/prompt-draft.txt",
+  "promptSha256": "e5b8a68114b789788644112929286a850cbdf7d162badab7bfb5e0cbf22e88f6",
+  "draftSha256": "ffdef08d770e02e8792e98370e6771a3b78bb89327b1c24d20aed4d942f79015",
+  "parentReviewSha256": "b624a18378c1fb37232caa4f93129d20639c1034004d389ad7ebbf5ac5580745",
+  "ownershipClarification": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/component-ownership-clarification-v1.json",
+    "sha256": "9a874ebd63262f54a99df53c84fd4404c354ba0f9290e32ac4888d9dde363076"
+  },
+  "inputsExactOrder": [
+    {
+      "order": 1,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-lower-hand-01/raw.png",
+      "sha256": "1984793eb1fc2c57c1dafac2f454e0f57b6d48d03ead610958a333cf342ebf54",
+      "role": "EDIT_TARGET; actual inspected held source, one part only.",
+      "rgbaSha256": "cdcc37631c109eb97f7d254cbd106873a3d454eeeb0f73bf00cb76de96591ecf",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "actuallyViewedByParent": true
+    },
+    {
+      "order": 2,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/south-neutral-reference/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "decoded_rgba_sha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6",
+      "role": "APPEARANCE_REFERENCE_ONLY; South identity, skin appearance, relaxed hand, and actor RIGHT thumb ownership.",
+      "rgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "actuallyViewedByParent": true
+    },
+    {
+      "order": 3,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-lower-source-edit-draft-v2/guide.png",
+      "sha256": "c364322b1ba422c96ac841b9d7d62c8a87071e98626602b2e5f003b0fc0035ae",
+      "role": "GEOMETRY_ONLY; unforeshortened bone plane, forearm taper, wrist-before-palm transition, approximate hand extent. No appearance authority.",
+      "rgbaSha256": "ce7480a41aa643946b21b99f5ed27465b914bd5e7164f937b67aaa14da203f76",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "actuallyViewedByParent": true
+    }
+  ],
+  "referencedImagePaths": [
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-lower-hand-01/raw.png",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/south-neutral-reference/raw.png",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-lower-source-edit-draft-v2/guide.png"
+  ],
+  "transparentBackground": true,
+  "tool": "image_gen__imagegen",
+  "scope": "One targeted edit of held raw only. Preserve all original bytes and call custody. No retry/other part/sidecar seal/full key/loop/runtime or final acceptance.",
+  "supersedesUnusedAuthorizationSha256": "2e63500382746a69e8849ca433a4b72bdf920768e2f8f9810c68d8f567359b7d",
+  "maximumTotalCallsAcrossAuthorizations": 1,
+  "priorAuthorizationConsumed": false
+}

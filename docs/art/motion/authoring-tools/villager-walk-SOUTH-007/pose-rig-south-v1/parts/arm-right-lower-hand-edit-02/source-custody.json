@@ -1,0 +1,45 @@
+{
+  "schema": "south-source-edit-custody/v1",
+  "status": "RAW_PRESERVED_PENDING_PARENT_REVIEW",
+  "partId": "arm_right_lower_hand",
+  "heldOriginal": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-lower-hand-01/raw.png",
+    "sha256": "1984793eb1fc2c57c1dafac2f454e0f57b6d48d03ead610958a333cf342ebf54",
+    "rgbaSha256": "cdcc37631c109eb97f7d254cbd106873a3d454eeeb0f73bf00cb76de96591ecf",
+    "preservedUnchanged": true
+  },
+  "parentHeldReview": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-lower-hand-01/parent-review.json",
+    "sha256": "e496818b6c247e8eb7e4729cb0b8c8cb04ea8632d496a94aaaa9049e7bbc6c12"
+  },
+  "upperCuffOwnershipMetadataOnly": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/component-ownership-clarification-v1.json",
+    "sha256": "9a874ebd63262f54a99df53c84fd4404c354ba0f9290e32ac4888d9dde363076",
+    "upperPartParentReviewPath": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-upper-01/parent-review.json",
+    "upperPartParentReviewSha256": "9754de8105e77d7f446e90f8508cdc6bf86a76412777c8b903ec39d9a76f2e23",
+    "upperPartRawSha256": "ebeace7fb22057c786b56e00d8634832b5261d905d9fa91904f57bc413e37d46",
+    "upperImageAttached": false,
+    "lowerPartIvoryCloth": false
+  },
+  "generatedOriginal": {
+    "path": "/home/kieu-hoang-quan/.codex/generated_images/01a11a79-66c7-73f1-94e0-7e606d8be8c3/exec-a3c7c215-adac-4cfc-9df9-d74cf9a368a8.png",
+    "sha256": "f95457f586608347dd0648abbf769f0c77092f62da425d65de88d1bd1ba36f0c",
+    "preservationCopyPath": "raw.png",
+    "preservationCopySha256": "f95457f586608347dd0648abbf769f0c77092f62da425d65de88d1bd1ba36f0c",
+    "byteCopyVerified": true
+  },
+  "guideAssumptions": {
+    "localElbowToWrist": 180,
+    "guideDisplayScale": 4,
+    "proximalBareSkinOverlapHypothesis": "small hidden extension above model elbow convention; not a measured elbow",
+    "wristNeckCandidate": "to be reviewed from raw contour; no sealed coordinate",
+    "sourceCalibration": "not performed"
+  },
+  "reviewState": {
+    "parentArtReview": "pending",
+    "sidecar": "not sealed",
+    "partAcceptance": "not granted",
+    "motionQualification": "not granted",
+    "runtimeUse": "not granted"
+  }
+}
