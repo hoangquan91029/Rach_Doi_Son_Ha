@@ -1,0 +1,91 @@
+{
+  "schema": "south-core-source-self-review/v1",
+  "status": "CORE_ORIGINAL_REQUIRES_PARENT_REVIEW_SCALE_REST_TARGET_MISMATCH_PENDING",
+  "raw_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/core-head-torso-pelvis-01/raw.png",
+  "raw_sha256": "b5d8542917309bacf90dfd117d8d2da287d9b6eb9c63c4b358e8e5d09f250c6a",
+  "raw_rgba_sha256": "d7cd792b95e7ff329909b0fbd682e24b6f7e5beb4fa2eec3af427ea1916c6e52",
+  "native_and_fixed38_inspected": true,
+  "identity_observations": [
+    "Face, goatee, conical nón lá, ivory tunic, brown sash, and sash knot/tail on actor LEFT/viewer-right are consistent with the references.",
+    "One central illustrated core is present; no arms, hands, legs, feet, second body, floor, or background were generated.",
+    "Actual output has transparent RGBA outside the component; no alpha cleanup, crop, resize, or translation was applied to the raw."
+  ],
+  "measured_source_geometry": {
+    "alpha_threshold_16_bbox_exclusive": [
+      373,
+      44,
+      894,
+      1216
+    ],
+    "alpha_threshold_128_bbox_exclusive": [
+      374,
+      45,
+      893,
+      1215
+    ],
+    "visible_shoulder_cap_expansion_region_threshold_128_bbox_exclusive": [
+      384,
+      420,
+      867,
+      501
+    ],
+    "shoulder_cap_row_samples_threshold_128": [
+      {
+        "y": 420,
+        "horizontal_opaque_interval_exclusive": [
+          431,
+          814
+        ]
+      },
+      {
+        "y": 440,
+        "horizontal_opaque_interval_exclusive": [
+          397,
+          853
+        ]
+      },
+      {
+        "y": 450,
+        "horizontal_opaque_interval_exclusive": [
+          384,
+          867
+        ]
+      },
+      {
+        "y": 460,
+        "horizontal_opaque_interval_exclusive": [
+          387,
+          866
+        ]
+      },
+      {
+        "y": 480,
+        "horizontal_opaque_interval_exclusive": [
+          394,
+          857
+        ]
+      },
+      {
+        "y": 500,
+        "horizontal_opaque_interval_exclusive": [
+          401,
+          849
+        ]
+      }
+    ],
+    "interpretation": "These are alpha silhouette extents around the visible shoulder-cap expansion, not shoulder joint centers or calibration landmarks. Natural shoulder attachment points remain pending joint inspection."
+  },
+  "hidden_hip_hypotheses": {
+    "status": "NOT_AUTHORED_PENDING_PARENT_REVISED_REST_TARGETS",
+    "qualitative": "Likely one concealed leg-attachment pivot under each side of the tunic over the pelvis, near the lower-waist/upper-thigh overlap. Their locations are not visible in this isolated core and must be authored as hypotheses only after inspecting how the art covers the pelvis.",
+    "coordinates": null,
+    "instruction": "Do not infer hip pivots from the guide green patches. Do not invent raw coordinates to pass the inspector."
+  },
+  "rest_fit_analysis": {
+    "current_v3_targets": "actor_left_shoulder_cap [834,300], actor_right_shoulder_cap [474,300], actor_left_hip_under_hem [754,610], actor_right_hip_under_hem [554,610] are code-declared rest targets, not raw-source measurements.",
+    "finding": "The original is substantially larger than the intended core region at native canvas scale. Applying the approximate uniform ~0.67 rest calibration considered by parent appears plausible for hat/body scale, but the current horizontal shoulder target spacing (360px) is too broad for the South reference/core silhouette and may force hat clipping or distorted attachment interpretation. No calibration or sidecar was fabricated.",
+    "next_status": "Do not run v3 inspector on guessed values. Parent may authorize a single rest-target contract adjustment from inspected source geometry; raw remains immutable."
+  },
+  "fixed38_preview_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/core-head-torso-pelvis-01/preview-fixed-38px-fullcanvas.png",
+  "pivot": "Locked source pivot remains (654,1140). Lowest toe/contact estimates do not define or move the pivot; this core has no feet."
+}

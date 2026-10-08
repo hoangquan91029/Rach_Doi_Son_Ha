@@ -1,0 +1,31 @@
+{
+  "schema": "crowd-correction-parent-rejection/v1",
+  "status": "REJECTED_NAVIGATION_REGRESSION_BASELINE_RESTORED",
+  "timestampUtc": "2026-10-08T01:04:32.300658+00:00",
+  "sourceSha256": "0613dad6d4557c49a483a87deed918f8771ad6b8849c6dd1f4f80a4bb6bf7318",
+  "baselineSourceSha256": "0613dad6d4557c49a483a87deed918f8771ad6b8849c6dd1f4f80a4bb6bf7318",
+  "preservedFiles": {
+    "README.md": "9a993edb82549d0c5d1fbebdabc92ddecf4a172056a3b8ceb928114d801ce073",
+    "current-crowd-tests.log": "89132027def53ed0d961c6a06c2f1557d590ebd89d9f95695d183a7a212646ab",
+    "restored-full-suite.log": "3c67fcef768f27ed663cf5c063326011d4a4cbd98dcc8efe4e27b59677a0e54b",
+    "sim-proposal.js": "178d7978c902c140dff7235857895b047e08ded6bb83fa2b34fcbaaeb25a3abe",
+    "proposal.patch": "39a119742feb18afad5933777b416c39864bd90c223b3881b48bc9e1134a935f",
+    "crowd-proposal.test.js": "a88c9ed75e4f7a622649b0aec2a9112831ac6023f25a1bcd0eb1544c6e4d7827",
+    "current-easy-ai.log": "cf30d2446cd2c71ce30bfe3400e797fd4f9aebdf5e15e8f82d659a08aa0407b5",
+    "initial-sim-suite.log": "b12327b9e6e776cbd92213c6daf274af06ca99ff9ee6781def13018bb9f9476e"
+  },
+  "draftFailures": [
+    "all six240second AI victory checks",
+    "both naval sorties",
+    "focused deltaeasyAI still no winner after lookahead repair"
+  ],
+  "cause": "Stationary bodies occupy mandatory BFS waypoint centers; local steering circles them without bypassing the waypoint.",
+  "restoredFullSuite": {
+    "passed": 72,
+    "failed": 0,
+    "log": "docs/qa/checkpoint/crowd-fix-attempt-20261008/restored-full-suite.log"
+  },
+  "runtimeIntegrated": false,
+  "deployed": false,
+  "crowdIssueResolved": false
+}

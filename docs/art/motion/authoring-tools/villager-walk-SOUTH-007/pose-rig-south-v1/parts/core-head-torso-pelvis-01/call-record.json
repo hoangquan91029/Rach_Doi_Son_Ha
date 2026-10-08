@@ -1,0 +1,57 @@
+{
+  "schema": "south-core-original-call-record/v1",
+  "status": "ONE_AUTHORIZED_BUILTIN_IMAGEGEN_CALL_COMPLETED",
+  "provider": "built-in ImageGen",
+  "provider_call_id": null,
+  "provider_call_id_note": "Tool response supplied generated output directory and execution filename, but no separate provider call ID.",
+  "generated_output_directory_id": "01a116ce-195d-73e0-a579-e4e5e990575d",
+  "generated_execution_filename": "exec-7f85f9c9-7a2b-4eeb-8b22-2b6a8cb6e4b9.png",
+  "generated_source_path": "/home/kieu-hoang-quan/.codex/generated_images/01a116ce-195d-73e0-a579-e4e5e990575d/exec-7f85f9c9-7a2b-4eeb-8b22-2b6a8cb6e4b9.png",
+  "preserved_raw_path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/core-head-torso-pelvis-01/raw.png",
+  "transparent_background_requested": true,
+  "authorization": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/core-pilot-v2/parent-call-authorization.json",
+    "sha256": "6e03654909ec5888c6fa995b619eb08973874eaaf0d63a3b320a5242b1bcae62"
+  },
+  "work_order": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/core-pilot-v2/core-work-order.json",
+    "sha256": "9214b8ddb7feed120efd579242948005808aaee28b2081f1ab332cc955d07a32"
+  },
+  "prompt": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/core-pilot-v2/prompt.txt",
+    "sha256": "0056deacd872728fab788840d438ef81bac8ac12f0f1ee82eb57b6c5ef6c8481"
+  },
+  "input_locks": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/core-pilot-v2/input-locks.json",
+    "sha256": "f0a78788b76239fa26f372b0718ff756f941f2d4524f222f8a700c209ad47f5d"
+  },
+  "actual_attachments_in_order": [
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/south-neutral-reference/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "rgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6",
+      "role": "sealed South identity and neutral rest appearance/view authority"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+      "rgbaSha256": "c960d206222a191b903a8cc1a679e82bdce8d8c51df4010a935f444b3cacdb9c",
+      "role": "canonical D00 identity/material appearance only; ESE direction and pose explicitly excluded"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/guide-core-v2/guide.png",
+      "sha256": "2dc7ff117ff5e292ff5a97ea8ee41f5d17d9d16718002021a8c0a77fceca9e23",
+      "rgbaSha256": "5ba38cc8c721a9a824061d6cc0e69efd612311277faa102a58b798e1506fc518",
+      "role": "MODEL_ONLY guide v2 core geometry; conical hat, lower green zones are provisional hem/thigh overlaps, never hip-joint locations"
+    }
+  ],
+  "tool_override": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/tooling-v3/bake_keys.py",
+    "sha256": "004109df5ec2d7ccc78ad919438e1bb4ebf87515cfc077f66ff57e5b27787ce5",
+    "status": "used exact parent-authorized v3 inspector; not yet run because no truthful complete core sidecar is possible under current rest target contract"
+  },
+  "image_calls_for_this_component": 1,
+  "retries": 0,
+  "other_component_calls": 0,
+  "whole_body_calls": 0
+}

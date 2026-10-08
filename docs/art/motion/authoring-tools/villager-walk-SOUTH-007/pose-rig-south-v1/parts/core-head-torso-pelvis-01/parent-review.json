@@ -1,0 +1,36 @@
+{
+  "schema": "south-core-original-parent-review/v1",
+  "status": "PASS_IDENTITY_SOURCE_ONLY_REST_CALIBRATION_PENDING",
+  "timestampUtc": "2026-10-08T01:05:21.513269+00:00",
+  "reviewer": "root parent",
+  "rawSha256": "b5d8542917309bacf90dfd117d8d2da287d9b6eb9c63c4b358e8e5d09f250c6a",
+  "decodedRgbaSha256": "d7cd792b95e7ff329909b0fbd682e24b6f7e5beb4fa2eec3af427ea1916c6e52",
+  "callRecordSha256": "10ccf9b89ed8b64f4a2fd743e83bfadd980684270cff95058b19a8e2c1fc66ab",
+  "inspected": [
+    "actual native1254 core",
+    "fixedwholecanvas38 preview",
+    "sealed South native for direct comparison",
+    "exact three actual attachment paths/order/hashes"
+  ],
+  "findings": [
+    "Face/goatee, conical hat, ivory wrap tunic and asymmetric actorLEFT/viewerRIGHT sash remain consistent.",
+    "Single illustrated central core; no visible detached limbs, floor or background.",
+    "Source enlarged about1.5x canonical core. Hat width~500vs~330, shoulder y~448vs~312, hem~1215vs~846 are approximate visual observations, not joint coordinates.",
+    "A single measured static uniform calibration may recover canonical scale; current360px shoulder rest spacing appears overbroad. No source edits, bboxfitting or perpose normalization permitted.",
+    "Thin colored edge fringe remains a source candidate warning.",
+    "Hidden hip pivots require authored hypotheses; shoulder silhouette bounds are not measured joint centers."
+  ],
+  "sourceReusePermittedAfterCalibrationReview": true,
+  "rigCalibrationSealed": false,
+  "sidecarInspectorRun": false,
+  "keyBakingAuthorized": false,
+  "otherComponentCallsAuthorized": 0,
+  "retriesAuthorized": 0,
+  "actualComponents": 1,
+  "calibratedComponents": 0,
+  "illustratedKeys": 0,
+  "qualifiedLoops": 0,
+  "motionQualified": false,
+  "finalArtApproved": false,
+  "next": "Read-only measured uniform similarity fit and explicit model attachment diagnosis. Preserve/reuse good original through one reviewed target/model adjustment if needed; never regenerate to work around tooling."
+}
