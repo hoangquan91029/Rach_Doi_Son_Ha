@@ -92,6 +92,8 @@ One additional publicDelta mixed-engine flow passed with ordered90ms application
 
 Loading recovery and source-preserving Residence derivative, prior candidate smoke, AI win/lose and mixed-peer receipts remain in `docs/BROWSER_LOADING.md`, `BROWSER_AI_VICTORY.md`, `NETWORK_RECEIPT.md`, `docs/qa/checkpoint/` and local `artifacts/production-*`. Final accepted-art build must repeat acceptance.
 
+Local candidate checkpoints016–019:82 tests and actual browser playback/work timing checks passed; returning gathered goods uses existing walk. These changes are not yet deployed. Source experiment020 is held for a broken whole-frame region join, zero new image calls and no complete gatherloop. Runtime/art technical checks do not establish final visual acceptance.
+
 ## Historical art boundary before the8October scope correction
 
 Eight1254RGBA static villager identity views are sealed for South authoring only in `docs/art/VILLAGER_IDENTITY_LOCK_007.json` and byte-bound parent `VILLAGER_IDENTITY_REVIEW_007.json`. Every native/fixed38 image plus combined627/38 sheets was inspected. Fixed authored root6541140, whole-canvas38scale, screenSouth=D01/worldSE. HeldEast/RGBSE, alpha-repairedSE, originalwrong-labelv1 and correctedv2 guides remain preserved. No character mirroring or simulation-heading changes.
