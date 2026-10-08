@@ -1,0 +1,101 @@
+{
+  "status": "LOCAL_GATHER_MAPPING_LOADED_ORDINARY_WALK_CARGO_UI_PASS",
+  "timeUtc": "2026-10-08T14:52:53.583329+00:00",
+  "baseCommit": "96106e5",
+  "profile": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low"
+  },
+  "tests": {
+    "fullSuite": {
+      "tests": 80,
+      "pass": 80,
+      "fail": 0
+    },
+    "privacyStrengthening": {
+      "tests": 2,
+      "pass": 2,
+      "fail": 0
+    }
+  },
+  "temporaryBuild": {
+    "status": "PASS",
+    "path": "/tmp/rds-work018-build.pDkYI8",
+    "modules": 19
+  },
+  "browserBeforeCargoFix": {
+    "status": "ACTUAL_UI_GATHER_CARRY_SUBTYPE_PASS",
+    "engine": "chromium",
+    "normalZoom": 1.08,
+    "mappings": {
+      "gather": [
+        "gather_wood",
+        "gather"
+      ],
+      "carry": [
+        "carry_wood",
+        "carry",
+        "walk"
+      ]
+    },
+    "errors": []
+  },
+  "pins": {
+    "shared/visible-action.js": "6ec50daa3c79067029d134872ebe064336b6dec9c41d28e68f1eee2e1f7f5274",
+    "shared/sim.js": "29963f5865da0a63a723efcef7682ada685c84656acec03b13a67562941ac79c",
+    "client/action-presentation.js": "390987b938276ce59278a89a5888dffcb9b31de3fa4383ed4faa71436c8d608d",
+    "client/art-assets.js": "fe5e3c06e8b5292e004540134b2c32f3acd84b941b75b5bd61530ec0b511f280",
+    "client/raster-slice.js": "c73377c8c0997458e1d40db33bf3504c53c8d4bb319eb5886c89aa781cce8330",
+    "client/main.js": "e84749658c59a4f57405db15ac391c933c25dc1b3ea4ddf7e12766d425fdac6c",
+    "tests/visible-action.test.js": "7a90f0ed243ad6cc1b29b5ef8111399409c660c56d109b26a934a46d923e8fb7",
+    "chromium/receipt.json": "d3e7c19e17c3dc30e0d83ce4044216fc3d53ef1e9def038eb5e5222411fa1d21"
+  },
+  "limits": "Runtimevisibleactionselectiononly. Gather/carryillustrationloop not complete. No deploy, finalvisualapproval or fullRTScompletion.",
+  "browserAfterCargoFix": {
+    "status": "ACTUAL_UI_GATHER_CARRY_SUBTYPE_PASS",
+    "engine": "chromium",
+    "normalZoom": 1.08,
+    "carryPanelText": "Villager\n100% strength\ngather \u00b7 morale 95\nRations 39/40\nCargo 20 wood\nGrid 6, 21",
+    "mappings": {
+      "gather": [
+        "gather_wood",
+        "gather"
+      ],
+      "carry": [
+        "carry_wood",
+        "carry",
+        "walk"
+      ]
+    },
+    "errors": []
+  },
+  "latestHumanChoice": "Loaded returns use existing move/walk; no separatecarry frames required",
+  "finalAffectedTests": {
+    "tests": 8,
+    "pass": 8,
+    "fail": 0,
+    "scope": "Selection/privacy, sprite timing, travelled phase afterhumansteering; priorfull80suite preserved separately."
+  },
+  "browserAfterHumanSteering": {
+    "status": "ACTUAL_UI_GATHER_LOADED_ORDINARY_WALK_PASS",
+    "engine": "chromium",
+    "normalZoom": 1.08,
+    "carryPanelText": "Villager\n100% strength\nwalk \u00b7 morale 95\nRations 39/40\nCargo 20 wood\nGrid 6, 21",
+    "mappings": {
+      "gather": [
+        "gather_wood",
+        "gather"
+      ],
+      "carry": [
+        "walk"
+      ]
+    },
+    "errors": []
+  },
+  "finalTimeUtc": "2026-10-08T15:01:00.735718+00:00",
+  "finalTemporaryBuild": {
+    "status": "PASS",
+    "path": "/tmp/rds-work018-final.bvjFqB",
+    "modules": 19
+  }
+}

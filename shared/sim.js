@@ -1,3 +1,4 @@
+import {visibleVillagerAction} from './visible-action.js';
 import {UNITS,BUILDINGS,CHARACTERS,MAPS,TERRAIN,BALANCE,TICK_RATE,SYNERGIES} from './data.js';
 const DT=1/TICK_RATE, sq=(a,b)=>(a.x-b.x)**2+(a.y-b.y)**2, dist=(a,b)=>Math.sqrt(sq(a,b));
 const living=e=>e.hp>0&&!e.embarked;
@@ -331,7 +332,7 @@ export function step(s){
 }
 export function view(s,p){
  if(p!==0&&p!==1)throw new Error('Invalid viewer');updateFog(s);const result={tick:s.tick,map:{id:s.map.id,name:s.map.name,width:s.map.width,height:s.map.height,tiles:[...s.map.tiles],resources:s.map.resources.map(r=>s.fog[p].resources[r.id]).filter(Boolean).map(clone)},players:s.players.map(player=>({id:player.id,name:player.name,king:player.king,general:player.general,resources:player.id===p?clone(player.resources):{wood:0,food:0,iron:0},population:player.id===p?player.population:0,populationCap:BALANCE.populationCap,synergies:player.synergies,stats:player.id===p||s.winner!==null?clone(player.stats):undefined})),entities:[],winner:s.winner,reason:s.reason,events:s.events.filter(e=>e.owner===null||e.owner===p).map(e=>e.text),fog:clone(s.fog[p]),effects:s.effects.filter(f=>f.owner===p||s.fog[p].visible[Math.floor(f.y)*s.map.width+Math.floor(f.x)]).map(clone)};
- for(const e of s.entities){if(e.owner!==p&&!visible(s,p,e))continue;const {path,pathKey,retryPath,order,pendingAttack,...publicEntity}=e;const v=clone(publicEntity);if(e.owner===p)v.order=order?clone(order):null;else{v.queue=[];v.cargo={food:0,wood:0,iron:0,units:[]};delete v.abilityCooldown;delete v.construction;}result.entities.push(v);}
+ for(const e of s.entities){if(e.owner!==p&&!visible(s,p,e))continue;const {path,pathKey,retryPath,order,pendingAttack,...publicEntity}=e;const v=clone(publicEntity);const visibleAction=visibleVillagerAction(s,e);if(visibleAction)v.visibleAction=visibleAction;if(e.owner===p)v.order=order?clone(order):null;else{v.queue=[];v.cargo={food:0,wood:0,iron:0,units:[]};delete v.abilityCooldown;delete v.construction;}result.entities.push(v);}
  return result;
 }
 export function hashState(s){let hash=2166136261;const text=JSON.stringify(s);for(let i=0;i<text.length;i++){hash^=text.charCodeAt(i);hash=Math.imul(hash,16777619);}return (hash>>>0).toString(16).padStart(8,'0');}

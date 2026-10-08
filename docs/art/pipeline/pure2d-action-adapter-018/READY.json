@@ -1,0 +1,25 @@
+{
+  "status": "READY_ADDITIVE_CARRY_METADATA_ONLY",
+  "profile": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low"
+  },
+  "basePins": {
+    "docs/art/pipeline/pure2d-action-adapter-017/export-v3.py": "f0e77975a8989b1ca5998807830cc1b9f89102f9cc6fec81947864a9a1372abe",
+    "docs/art/pipeline/pure2d-action-adapter-017/preview-v3.html": "e71f0cebebf82f7ffcb61ac1579665f227dbb46cac53537873ea5953ac983e62",
+    "docs/art/pipeline/pure2d-action-adapter-017/READY.json": "348298bb39d61c7328af7d7c4e16fdbf3dfc3cae57bfac41de4b26997705248e"
+  },
+  "files": {
+    "narrow-diff.patch": "a9336a8ee1c3ec5afd8f16d238f49f9f5158971b21438463ac58f9e4bed8d63f",
+    "README.md": "2a07ea3397e2195486c31580fa00137e8cb8fa3c4ea138ea9c497a8ba953079f",
+    "preview-v4.html": "e71f0cebebf82f7ffcb61ac1579665f227dbb46cac53537873ea5953ac983e62",
+    "export-v4.py": "9aa1e138bd6320c9edfadf798922aa2184f031e66c13f4f463801238fb9f00a8",
+    "test-v4.py": "4236cd1eb4494838f82a232ff284f1aeaaef9fdc306f14cb58f823b69a77bec7"
+  },
+  "tests": "One bounded temporaryNON_ARTfixture group PASS; fixtures deleted",
+  "behaviorExtension": "Positive locomotion distance on walk/carry/carry_* only",
+  "preview": "Byte-identical017 generic preview, renamed v4",
+  "imageCalls": 0,
+  "actualArtExports": 0,
+  "sourceEdits": 0
+}

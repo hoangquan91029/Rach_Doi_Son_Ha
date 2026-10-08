@@ -1,0 +1,144 @@
+{
+  "schema": "villager-gather-pilot-plan/v1",
+  "stage": "PREPARED_NO_IMAGE_CALLS",
+  "modelRouting": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low"
+  },
+  "method": "pure2d whole-character identity edits with code-native controlled2D MODEL_ONLY geometry guides; not rig-export",
+  "view": "screen South / engine D01 / world SE",
+  "canvas": [
+    1254,
+    1254
+  ],
+  "pivot": [
+    654,
+    1140
+  ],
+  "runtimeCanvas": 128,
+  "renderSize": 89,
+  "characterHeightApprox": 80,
+  "frameCount": 8,
+  "loop": true,
+  "cycleMs": 1080,
+  "keyOrder": [
+    "F00",
+    "F02",
+    "F04",
+    "F06"
+  ],
+  "inbetweenOrder": [
+    "F01",
+    "F03",
+    "F05",
+    "F07"
+  ],
+  "maxCalls": 8,
+  "callsConsumed": 0,
+  "retryAllowance": 0,
+  "slots": [
+    {
+      "slot": "F00",
+      "phase": "ready low diagonal",
+      "durationMs": 170,
+      "predecessor": null,
+      "nextKey": null,
+      "prompt": "prompt-F00.txt",
+      "guide": "guide-F00.png",
+      "status": "PLANNED_NO_CALL"
+    },
+    {
+      "slot": "F01",
+      "phase": "early lift",
+      "durationMs": 140,
+      "predecessor": 0,
+      "nextKey": 2,
+      "prompt": "prompt-F01.txt",
+      "guide": "guide-F01.png",
+      "status": "PLANNED_NO_CALL"
+    },
+    {
+      "slot": "F02",
+      "phase": "high windup key",
+      "durationMs": 170,
+      "predecessor": 0,
+      "nextKey": null,
+      "prompt": "prompt-F02.txt",
+      "guide": "guide-F02.png",
+      "status": "PLANNED_NO_CALL"
+    },
+    {
+      "slot": "F03",
+      "phase": "fast downswing",
+      "durationMs": 70,
+      "predecessor": 2,
+      "nextKey": 4,
+      "prompt": "prompt-F03.txt",
+      "guide": "guide-F03.png",
+      "status": "PLANNED_NO_CALL"
+    },
+    {
+      "slot": "F04",
+      "phase": "low strike key",
+      "durationMs": 90,
+      "predecessor": 2,
+      "nextKey": null,
+      "prompt": "prompt-F04.txt",
+      "guide": "guide-F04.png",
+      "status": "PLANNED_NO_CALL"
+    },
+    {
+      "slot": "F05",
+      "phase": "small follow-through",
+      "durationMs": 110,
+      "predecessor": 4,
+      "nextKey": 6,
+      "prompt": "prompt-F05.txt",
+      "guide": "guide-F05.png",
+      "status": "PLANNED_NO_CALL"
+    },
+    {
+      "slot": "F06",
+      "phase": "recovery key",
+      "durationMs": 150,
+      "predecessor": 4,
+      "nextKey": 0,
+      "prompt": "prompt-F06.txt",
+      "guide": "guide-F06.png",
+      "status": "PLANNED_NO_CALL"
+    },
+    {
+      "slot": "F07",
+      "phase": "return toward ready",
+      "durationMs": 180,
+      "predecessor": 6,
+      "nextKey": 0,
+      "prompt": "prompt-F07.txt",
+      "guide": "guide-F07.png",
+      "status": "PLANNED_NO_CALL"
+    }
+  ],
+  "inputs": {
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/AGENTS.md": "f8cb68a5962f0610aec54c709418582d969ce5d12df42d67f972ad6e6fb25dee",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/NEXT_STEPS.md": "153d43a38dc815e9b94b6e6280dfbb453646a482cbff6bfac68059d68cb1e7c8",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/REVIEW_PRIORITY_20261008.md": "cacc2b746cb7360d4d6c9dba0b94d55dea0530e43402d60a891b3711e3c1a525",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/PURE_2D_MASTER_DIRECTIVE_20261008.txt": "8acf4a45029d6febb0797c53900ae207f16f4318ccdd4de07c1f298462a1d537",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-action-adapter-017/CHECKPOINT.md": "76d47776dc1fb7af9292ba21270141579c64c1eab49891169bf268097d67f2cf",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/action-production-017/RUNTIME_ACTION_MATRIX.md": "0e814fe64da4fd67a23a93637398f24b2563db197907e587dc90b49115684ef9",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-walk-runtime-016/README.md": "d80f3ec63f5a00f6d3ee88df13afe28506122e3bb52a2b9e6501b94e9c5b8d92",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/client/raster-slice.js": "bfd7f95b60e4304ff6fe43235408a7740d5541d807d4b80475b45572de55e7f9",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js": "29963f5865da0a63a723efcef7682ada685c84656acec03b13a67562941ac79c"
+  },
+  "gates": {
+    "parentGO": "REQUIRED before image calls",
+    "selectedKeys": "PENDING",
+    "completeLoop": "PENDING",
+    "briefActualSizeContinuousReview": "PENDING",
+    "independentMotion": "PENDING",
+    "ownerApproval": "NOT_CLAIMED",
+    "resourceSpecificRuntimeMapping": "PENDING; renderer currently selects generic gather",
+    "fanout": "CLOSED",
+    "deployment": "CLOSED"
+  }
+}

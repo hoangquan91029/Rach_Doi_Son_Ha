@@ -1,0 +1,2409 @@
+{
+  "status": "ACTUAL_UI_GATHER_CARRY_SUBTYPE_PASS",
+  "url": "http://127.0.0.1:5173/?art=walk",
+  "engine": "chromium",
+  "normalZoom": 1.08,
+  "deviceScaleFactor": 1,
+  "commands": "Ordinary UI only; read-only diagnostics",
+  "workerId": 7,
+  "patch": {
+    "id": 2,
+    "type": "wood",
+    "x": 5.5,
+    "y": 21.5,
+    "amount": 4200
+  },
+  "gather": {
+    "id": 7,
+    "owner": 0,
+    "type": "villager",
+    "kind": "unit",
+    "x": 6.554999999999996,
+    "y": 21.5,
+    "hp": 65,
+    "maxHp": 65,
+    "food": 39.96025599999999,
+    "foodMax": 40,
+    "morale": 95,
+    "state": "gather",
+    "dir": 4,
+    "cooldown": 0,
+    "queue": [],
+    "cargo": {
+      "food": 0,
+      "wood": 0.15000000000000002,
+      "iron": 0,
+      "units": []
+    },
+    "resuppliedTick": 13,
+    "starving": 0,
+    "lastMovedTick": 19,
+    "visibleAction": {
+      "kind": "gather",
+      "resource": "wood"
+    },
+    "order": {
+      "type": "gather",
+      "target": 2
+    }
+  },
+  "carry": {
+    "id": 7,
+    "owner": 0,
+    "type": "villager",
+    "kind": "unit",
+    "x": 6.543467429840998,
+    "y": 21.709683093799974,
+    "hp": 65,
+    "maxHp": 65,
+    "food": 39.06601599999969,
+    "foodMax": 40,
+    "morale": 95,
+    "state": "walk",
+    "dir": 2,
+    "cooldown": 0,
+    "queue": [],
+    "cargo": {
+      "food": 0,
+      "wood": 20,
+      "iron": 0,
+      "units": []
+    },
+    "resuppliedTick": 13,
+    "starving": 0,
+    "lastMovedTick": 154,
+    "visibleAction": {
+      "kind": "carry",
+      "load": "wood",
+      "moving": true
+    },
+    "order": {
+      "type": "gather",
+      "target": 2
+    }
+  },
+  "carryPanelText": "Villager\n100% strength\ngather · morale 95\nRations 39/40\nCargo 20 wood\nGrid 6, 21",
+  "mappings": {
+    "gather": [
+      "gather_wood",
+      "gather"
+    ],
+    "carry": [
+      "carry_wood",
+      "carry",
+      "walk"
+    ]
+  },
+  "samples": [
+    {
+      "tick": 8,
+      "x": 7.5,
+      "y": 21.5,
+      "state": "idle",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": null
+    },
+    {
+      "tick": 10,
+      "x": 7.5,
+      "y": 21.5,
+      "state": "idle",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": null
+    },
+    {
+      "tick": 12,
+      "x": 7.289999999999999,
+      "y": 21.5,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 12,
+      "x": 7.289999999999999,
+      "y": 21.5,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 14,
+      "x": 7.079999999999998,
+      "y": 21.5,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 15,
+      "x": 6.974999999999998,
+      "y": 21.5,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 16,
+      "x": 6.869999999999997,
+      "y": 21.5,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 17,
+      "x": 6.764999999999997,
+      "y": 21.5,
+      "state": "walk",
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 19,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 0.15000000000000002,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 24,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 0.9000000000000001,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 25,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 1.0500000000000003,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 26,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 1.2000000000000002,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 27,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 1.35,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 29,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 1.65,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 30,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 1.7999999999999998,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 31,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 1.9499999999999997,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 33,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 2.2499999999999996,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 34,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 2.3999999999999995,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 35,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 2.5499999999999994,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 36,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 2.6999999999999993,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 38,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 2.999999999999999,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 39,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 3.149999999999999,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 40,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 3.299999999999999,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 41,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 3.449999999999999,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 43,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 3.7499999999999987,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 44,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 3.8999999999999986,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 45,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 4.049999999999999,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 46,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 4.199999999999999,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 47,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 4.35,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 48,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 4.5,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 50,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 4.800000000000001,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 51,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 4.950000000000001,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 52,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 5.100000000000001,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 54,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 5.400000000000002,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 55,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 5.5500000000000025,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 56,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 5.700000000000003,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 58,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 6.0000000000000036,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 59,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 6.150000000000004,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 60,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 6.300000000000004,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 61,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 6.450000000000005,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 62,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 6.600000000000005,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 64,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 6.900000000000006,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 65,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 7.050000000000006,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 66,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 7.200000000000006,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 67,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 7.350000000000007,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 68,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 7.500000000000007,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 70,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 7.800000000000008,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 71,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 7.950000000000008,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 72,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 8.100000000000009,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 73,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 8.250000000000009,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 74,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 8.40000000000001,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 76,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 8.70000000000001,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 77,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 8.85000000000001,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 78,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 9.00000000000001,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 80,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 9.300000000000011,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 81,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 9.450000000000012,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 82,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 9.600000000000012,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 84,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 9.900000000000013,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 85,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 10.050000000000013,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 86,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 10.200000000000014,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 87,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 10.350000000000014,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 89,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 10.650000000000015,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 90,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 10.800000000000015,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 91,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 10.950000000000015,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 92,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 11.100000000000016,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 93,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 11.250000000000016,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 94,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 11.400000000000016,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 96,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 11.700000000000017,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 97,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 11.850000000000017,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 98,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 12.000000000000018,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 99,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 12.150000000000018,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 100,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 12.300000000000018,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 102,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 12.60000000000002,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 103,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 12.75000000000002,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 104,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 12.90000000000002,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 105,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 13.05000000000002,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 107,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 13.350000000000021,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 108,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 13.500000000000021,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 109,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 13.650000000000022,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 110,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 13.800000000000022,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 111,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 13.950000000000022,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 113,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 14.250000000000023,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 114,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 14.400000000000023,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 115,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 14.550000000000024,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 116,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 14.700000000000024,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 117,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 14.850000000000025,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 118,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 15.000000000000025,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 120,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 15.300000000000026,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 121,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 15.450000000000026,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 122,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 15.600000000000026,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 123,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 15.750000000000027,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 125,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 16.050000000000026,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 126,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 16.200000000000024,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 127,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 16.350000000000023,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 129,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 16.65000000000002,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 130,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 16.80000000000002,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 131,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 16.950000000000017,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 132,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 17.100000000000016,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 133,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 17.250000000000014,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 135,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 17.55000000000001,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 136,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 17.70000000000001,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 137,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 17.85000000000001,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 138,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 18.000000000000007,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 139,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 18.150000000000006,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 140,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 18.300000000000004,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 142,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 18.6,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 143,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 18.75,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 144,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 18.9,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 145,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 19.049999999999997,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 146,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 19.199999999999996,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 147,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 19.349999999999994,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 149,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 19.64999999999999,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 150,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 19.79999999999999,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 151,
+      "x": 6.554999999999996,
+      "y": 21.5,
+      "state": "gather",
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood"
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 19.94999999999999,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    {
+      "tick": 153,
+      "x": 6.549233714920497,
+      "y": 21.604841546899987,
+      "state": "walk",
+      "visibleAction": {
+        "kind": "carry",
+        "load": "wood",
+        "moving": true
+      },
+      "cargo": {
+        "food": 0,
+        "wood": 20,
+        "iron": 0,
+        "units": []
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    }
+  ],
+  "art": {
+    "enabled": true,
+    "phase": "CANDIDATE",
+    "quality": "PLACEHOLDER_ONLY",
+    "groundDraws": 3042,
+    "propDraws": 4580,
+    "entityDraws": 5066,
+    "walkDraws": 0,
+    "idleDraws": 0,
+    "lastWalk": null,
+    "missing": [
+      {
+        "key": "ground:mountain",
+        "reason": "No authored material for this terrain",
+        "status": "PLACEHOLDER_ONLY"
+      },
+      {
+        "key": "villager:walk:4",
+        "reason": "No exact authored raster state/direction",
+        "status": "PLACEHOLDER_ONLY"
+      },
+      {
+        "key": "villager:gather:4",
+        "reason": "No exact authored raster state/direction",
+        "status": "PLACEHOLDER_ONLY"
+      },
+      {
+        "key": "villager:walk:2",
+        "reason": "No exact authored raster state/direction",
+        "status": "PLACEHOLDER_ONLY"
+      }
+    ],
+    "pipeline": {
+      "status": "CANDIDATE",
+      "manifest": "ready",
+      "declared": 16,
+      "ready": 16,
+      "approved": 0,
+      "candidates": 16,
+      "failed": 0,
+      "skipped": 0,
+      "fallbacks": 0,
+      "failures": []
+    }
+  },
+  "errors": [],
+  "limits": "Visible subtype mapping and ordinary fallback only. No authored gather/carry frame exists or is claimed; no sourceart, simulation mutation, speed change or production acceptance."
+}

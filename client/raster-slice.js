@@ -1,3 +1,4 @@
+import {authoredActionStates} from './action-presentation.js';
 import {sampleSpriteAnimation,defaultAnimationLoop,attackAnimationTime} from './sprite-timing.js';
 import {createArtAssetPipeline} from './art-assets.js';
 import {createTerrainTransitions} from './terrain-transitions.js';
@@ -95,8 +96,9 @@ export function createRasterSlice({enabled=['pilot','walk'].includes(new URLSear
    else return false;
    const state=normalState(entity);if(typeof state!=='string'||!(direction===null||Number.isInteger(direction)&&direction>=0&&direction<=7))return false;
    // A hit frame must be authored too; an idle key never stands in for movement, combat or death.
-   const visualState=entity.hp>0&&(entity.hitUntil||0)>tick?'hit':state;
-   const candidates=(pipeline.manifest?.assets||[]).filter(a=>a.kind===kind&&families.includes(a.family||a.id)&&a.state===visualState&&a.direction===direction);
+   const baseVisualState=entity.hp>0&&(entity.hitUntil||0)>tick?'hit':state;
+   const states=authoredActionStates(entity,baseVisualState);let candidates=[],visualState=baseVisualState;
+   for(const requested of states){candidates=(pipeline.manifest?.assets||[]).filter(a=>a.kind===kind&&families.includes(a.family||a.id)&&a.state===requested&&a.direction===direction);if(candidates.length){visualState=requested;break;}}
    if(!candidates.length){recordMissing(`${families[0]}:${visualState}:${direction}`,'No exact authored raster state/direction');return false;}
    const asset=candidates[0];let elapsed=timeMs;
    let walkPhase=null;

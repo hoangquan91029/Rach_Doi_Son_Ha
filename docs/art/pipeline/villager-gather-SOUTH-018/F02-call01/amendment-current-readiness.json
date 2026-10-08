@@ -1,0 +1,29 @@
+{
+  "authorization": "exactly1 F02 highwindup call;zero retry;parent F00 selection KEY_CANDIDATE_ONLY",
+  "modelRouting": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low"
+  },
+  "cumulativeCallsBefore": 1,
+  "jobMaxCalls": 8,
+  "callsThisAuthorizationMax": 1,
+  "references": {
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-gather-SOUTH-018/F00-call01/raw.png": "e6293fe86eaefc2c9f414241320ab178758cdd52ef09946344364b6a41e41117",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-gather-SOUTH-018/guide-F02.png": "0d98ddb7da5d5964aae2ecb00e067cf91692cc299600c8df4fc2c0084c7b1cd3"
+  },
+  "referenceRoles": [
+    "identity/feet/canvas",
+    "selectedF00 predecessor and REAL axe authority",
+    "MODEL_ONLY highwindup intent"
+  ],
+  "promptSHA256": "888bade281150797c36c8ec0093b22c30ad41465077dcd7487e1b7686ed5cb0c",
+  "currentRuntimePins": {
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js": "29963f5865da0a63a723efcef7682ada685c84656acec03b13a67562941ac79c",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/visible-action.js": "6ec50daa3c79067029d134872ebe064336b6dec9c41d28e68f1eee2e1f7f5274",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/client/raster-slice.js": "bfd7f95b60e4304ff6fe43235408a7740d5541d807d4b80475b45572de55e7f9",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/client/action-presentation.js": "ea604d917622c74cc1af70bf74c11eb020c6b4df9b6ea9c4a25df1d3ff03df1c"
+  },
+  "status": "TERMINAL_NO_CALL_OPEN",
+  "callsCompleted": 1
+}

@@ -4,7 +4,7 @@ This matrix comes from current shared/sim.js, shared/data.js and client/raster-s
 
 | Group | Real current states | Artwork needed / reusable planning |
 | --- | --- | --- |
-| Villager | idle, walk, gather, carry, build, attack; hit overlay; death | Shared human walk/contact planning. Gathering needs distinct wood, food and iron tools/poses. Build includes repair. Carry currently appears at resource unload, while movement uses walk; meaningful carried-load presentation still needs a mapping. |
+| Villager | idle, walk, gather, carry, build, attack; hit overlay; death | Shared human walk/contact planning. Gathering needs distinct wood, food and iron tools/poses. Build includes repair. Latest human choice deliberately reuses existing walk while returning with goods; no separate carry-movement frames required. Legacy carry describes resource unload. |
 | King | idle, walk, build, attack; hit; death | Human timing/export tools; separate leader identity, historical outfit and abilities. Construction/repair appears as build. |
 | General and infantry/spearman/firearm | idle, walk, attack; hit; death | Human pose templates, separate weapons/outfits and attack contacts. Firearm reload is currently part of the attack/recovery timing, not a separate authoritative state. |
 | Cavalry | idle, walk, attack; hit; death | Own horse/rider anatomy and motion template; reuse export, timing, custody and preview tools. |
@@ -17,6 +17,8 @@ The renderer currently supports raster families for villager, infantry, cavalry 
 
 Actual illustrations currently available for the new pipeline: one South/D1 eight-frame villager walk014 and its matching single-frame canonical idle. Other states and directional animations remain open. The static eight-direction identity seal is a reference set, not eight animated directions.
 
-Upcoming resource-specific work mapping must use visible public action information consistent with authoritative simulation. Do not infer an enemy's private order target or make cosmetic markers decide resources, damage or victory. Current hit/death timing uses hitUntil/deadTick; attack contact uses authoritative start/impact/recovery ticks. Cosmetic markers stay cosmetic.
+Runtime018 now maps resource-specific work using visible public current-action information consistent with authoritative simulation. Do not infer an enemy's private order target or make cosmetic markers decide resources, damage or victory. Current hit/death timing uses hitUntil/deadTick; attack contact uses authoritative start/impact/recovery ticks. Cosmetic markers stay cosmetic.
 
 Frame count and timing are chosen for each action, rather than forcing every action into eight frames. Walk remains eight frames for the first pilot; death is nonlooping and holds its last pose. Do not relabel the existing walk as hit/death to invent finished actions. One brief gameplay-size loop look and a fix of visible problems are sufficient under the latest human review priority; tiny cloth/pixel differences do not block production.
+
+Latest human return-movement choice (8 October2026): use the existing move/walk pose for loaded returns. No new carry-movement artwork or carry locomotion export is required. Cargo UI shows actual private own-unit wood/food/iron load; public descriptors do not expose enemy amounts or future target. Experimental exporter018 is preserved as superseded history. Wood-gather018 has only selectedF00 and heldF02, not a complete workloop.

@@ -11,3 +11,11 @@ export function createImpactPulses(){const seen=new Map(),until=new Map();return
  update(entities,tick,now,{frozen=false}={}){const present=new Set();for(const e of entities){present.add(e.id);if(Number.isFinite(e.lastAttack)&&e.lastAttack<=tick&&seen.get(e.id)!==e.lastAttack){seen.set(e.id,e.lastAttack);if(!frozen&&e.hp>0&&!e.embarked&&tick-e.lastAttack<=10)until.set(e.id,now+90);}}for(const id of seen.keys())if(!present.has(id)){seen.delete(id);until.delete(id);}if(frozen)until.clear();},
  active(id,now){return now<(until.get(id)||0);}
 };}
+
+/** Resource-specific gathering; loaded return movement always uses the existing walk pose. */
+export function authoredActionStates(entity,baseState){
+ if(entity.type!=='villager'||['hit','death','attack'].includes(baseState))return [baseState];
+ const action=entity.visibleAction;
+ if(baseState==='gather'&&action?.kind==='gather'&&['wood','food','iron'].includes(action.resource))return [`gather_${action.resource}`,'gather'];
+ return [baseState];
+}

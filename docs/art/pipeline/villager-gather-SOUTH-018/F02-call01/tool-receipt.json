@@ -1,0 +1,15 @@
+{
+  "tool": "image_gen.imagegen",
+  "builtIn": true,
+  "transparent_background": true,
+  "referenceFiles": [
+    "canonical South raw.png",
+    "F00-call01/raw.png",
+    "guide-F02.png"
+  ],
+  "promptFile": "prompt.txt",
+  "output_hint": "Generated images are saved to /home/kieu-hoang-quan/.codex/generated_images/01a11bf6-8c65-7352-b441-46d09ec3d4f7 as /home/kieu-hoang-quan/.codex/generated_images/01a11bf6-8c65-7352-b441-46d09ec3d4f7/exec-dc503482-4425-4ad7-98d0-84d525759ec4.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "image_url": "raw preserved byte-identically instead of embedding data URL",
+  "calls": 1,
+  "retries": 0
+}

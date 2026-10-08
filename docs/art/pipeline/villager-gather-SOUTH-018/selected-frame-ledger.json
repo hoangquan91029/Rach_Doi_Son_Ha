@@ -1,0 +1,27 @@
+{
+  "status": "FINITE_JOB_STOPPED",
+  "callsConsumed": 2,
+  "retries": 0,
+  "noCallOpen": true,
+  "plannedFrames": 8,
+  "selectedFrames": [
+    0
+  ],
+  "heldFrames": [
+    2
+  ],
+  "uncalledFrames": [
+    1,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "completeLoops": 0,
+  "returnMovement": "EXISTING_WALK_PER_HUMAN",
+  "frames": {
+    "0": "F00-call01/parent-selection.json",
+    "2": "F02-call01/parent-hold.json"
+  }
+}
