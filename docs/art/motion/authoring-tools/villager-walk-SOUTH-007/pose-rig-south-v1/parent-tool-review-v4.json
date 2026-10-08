@@ -1,0 +1,44 @@
+{
+  "schema": "south-parent-core-tool-review/v4",
+  "timestampUtc": "2026-10-08T01:34:52.086240+00:00",
+  "status": "PASS_CORE_CALIBRATION_AND_TOOLING_AUTHORING_ONLY",
+  "parentActuallyViewed": [
+    "core-rest-inspection-v3/partial-rest-core-QA.png",
+    "core-rest-inspection-v3/partial-rest-core-whole38.png"
+  ],
+  "parentRead": [
+    "tooling-v4/bake_keys.py diff from v3",
+    "tooling-v4/build_adjustment.py",
+    "tooling-v4/inspect_core.py"
+  ],
+  "parentRerun": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest -q test_bake_keys.py",
+    "passed": 23,
+    "seconds": 7.941,
+    "nonArtChecks": 18,
+    "actualCoreOnlyChecks": 5
+  },
+  "pins": {
+    "tooling-v4/bake_keys.py": "b5ad84368a091cf1b2643e687fe7a98b7465906a52ede606a7eb89b791d29923",
+    "tooling-v4/tooling-receipt.json": "86ff62df241482639d5698846ecb0abe9b20e773140b5918bb377d3da2b4050a",
+    "part-contract-v3.json": "e4715f935a88952a7f6d477d29879641fda6041bf4e783169c6664a386afa7bc",
+    "parts/core-head-torso-pelvis-01/raw.png": "b5d8542917309bacf90dfd117d8d2da287d9b6eb9c63c4b358e8e5d09f250c6a",
+    "parts/core-head-torso-pelvis-01/sidecar-v3.json": "1554ddbd9cf9a6d81ff4840d2dd941baebd5f387bd2ca598541f2fa0e1329b8d",
+    "core-rest-inspection-v3/inspection.json": "f25ce0a91feb4d92004285b5b42c2d157f383b12a503eef1109b5afc02184be9",
+    "../pose-guides/walk-south-keys-v3/coordinate-plan.json": "dd685b2b444e8c1b1cdcab04be06d92651c81657cf265489c90cee56203abfcf"
+  },
+  "decision": "One immutable uniform source calibration preserves locked identity, rest scale and cloth attachment conventions; source-driven model attachment adjustment is accepted for internal authoring only. Shoulder caps are authored cloth conventions with14rawpx uncertainty; hidden hips are hypotheses with45rawpx uncertainty, not observed anatomy. Numerical2px correspondence does not replace measured visible-fit residual2.96\u20136.40px. Padded semantic mesh encloses every source alpha pixel and all four target meshes stay inside1254 canvas. Original bones, root, world feet, wrists and timing remain preserved.",
+  "partsGenerated": 1,
+  "calibratedParts": 1,
+  "selectedReadyParts": 1,
+  "missingOriginalParts": 8,
+  "finishedIllustratedKeys": 0,
+  "qualifiedLoops": 0,
+  "remainingFootGate": "F0/F4 trailing flat12px lift remains held: author actual toe-grounded heel-rise using real lower-sandal landmarks and rigid foot-plane roll BEFORE finished four-key acceptance.",
+  "next": "Review corrected upperarm bone-plane guide then issue separate finite one-original work order; do not reuse projected screen173.33 guide as unforeshortened200 rest texture.",
+  "sourceBytesUnmodified": true,
+  "motionQualified": false,
+  "finalArtApproved": false,
+  "runtimeChanges": false,
+  "additionalImageCallsAuthorized": 0
+}

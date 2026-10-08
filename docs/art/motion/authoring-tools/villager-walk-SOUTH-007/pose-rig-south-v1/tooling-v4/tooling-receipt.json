@@ -1,0 +1,194 @@
+{
+  "schema": "south-rig-tooling-checkpoint/v4",
+  "status": "PASS_SOURCE_DRIVEN_CORE_MODEL_ADJUSTMENT_TECHNICAL_INSPECTION_ONLY",
+  "timestampUtc": "2026-10-08T01:28:26.238064+00:00",
+  "candidate": false,
+  "actualOriginalParts": 1,
+  "actualBakedIllustratedWholeKeys": 0,
+  "qualifiedLoops": 0,
+  "agentImageCalls": 0,
+  "runtimeChanges": 0,
+  "priorSealedV3Preserved": {
+    "README.md": true,
+    "bake_keys.py": true,
+    "pending-originals.json": true,
+    "test_bake_keys.py": true
+  },
+  "priorV2ContractPlanAndAcceptedProposalPreserved": true,
+  "parentAuthorization": "ONE source-driven modelattachment adjustment from proposal66b568178639b52214da1e3514b161e85decdfe6e7429c631280c01df0840cdc; fixed sourcecalibration; no new calls",
+  "sourceByteSha256": "b5d8542917309bacf90dfd117d8d2da287d9b6eb9c63c4b358e8e5d09f250c6a",
+  "sourceRgbaSha256": "d7cd792b95e7ff329909b0fbd682e24b6f7e5beb4fa2eec3af427ea1916c6e52",
+  "sourceBytesUnmodified": true,
+  "sidecarSchema": "south-bitmap-rig-sidecar/v3",
+  "manifestSchema": "south-four-key-bake/v3",
+  "contractSha256": "e4715f935a88952a7f6d477d29879641fda6041bf4e783169c6664a386afa7bc",
+  "posePlanSha256": "dd685b2b444e8c1b1cdcab04be06d92651c81657cf265489c90cee56203abfcf",
+  "staticCoreCalibration": {
+    "scale": 0.672919808,
+    "rotationRad": -0.000318866,
+    "translation": [
+      206.170592,
+      16.511619
+    ],
+    "tolerancePx": 2
+  },
+  "mappingToleranceMeaning": "2px numerical correspondence only; not visiblefeaturefit residual or anatomical precision",
+  "visibleFeatureFitResidualPx": [
+    2.96,
+    6.4
+  ],
+  "sourceAttachmentUncertainty": {
+    "shoulderClothConventionRawPx": 14,
+    "hiddenHipHypothesisRawPx": 45
+  },
+  "sourceAlphaAtAll4AuthoredAnchors": 253,
+  "semanticCoverageQuadRaw": [
+    [
+      70,
+      40
+    ],
+    [
+      1197,
+      40
+    ],
+    [
+      1197,
+      1224
+    ],
+    [
+      70,
+      1224
+    ]
+  ],
+  "sourceAlphaOutsideMesh": 0,
+  "all4CorePoseGeometry": {
+    "F0": [
+      278.28355901507285,
+      43.17156817270814,
+      1036.9181964294307,
+      840.1504021322111
+    ],
+    "F2": [
+      308.28355901507285,
+      23.17156817270814,
+      1066.9181964294307,
+      820.1504021322111
+    ],
+    "F4": [
+      228.28355901507285,
+      43.17156817270814,
+      986.9181964294307,
+      840.1504021322111
+    ],
+    "F6": [
+      198.28355901507285,
+      23.17156817270814,
+      956.9181964294307,
+      820.1504021322111
+    ]
+  },
+  "reach": {
+    "checkedAll4Keys": true,
+    "legMaxReach": 500,
+    "armMaxReach": 380,
+    "maxActualHipAnkleDistance": 458.0245141334001,
+    "maxActualShoulderWristDistance": 317.47906530814765,
+    "records": [
+      {
+        "key": 0,
+        "side": "LEFT",
+        "hipAnkleDistance": 457.16607756787675,
+        "shoulderWristDistance": 317.47906530814765
+      },
+      {
+        "key": 0,
+        "side": "RIGHT",
+        "hipAnkleDistance": 446.3286998271256,
+        "shoulderWristDistance": 308.9450655429628
+      },
+      {
+        "key": 2,
+        "side": "LEFT",
+        "hipAnkleDistance": 449.62811812919904,
+        "shoulderWristDistance": 297.813627809298
+      },
+      {
+        "key": 2,
+        "side": "RIGHT",
+        "hipAnkleDistance": 371.6113009976247,
+        "shoulderWristDistance": 288.6988976829416
+      },
+      {
+        "key": 4,
+        "side": "LEFT",
+        "hipAnkleDistance": 448.1157155786356,
+        "shoulderWristDistance": 317.47906530814765
+      },
+      {
+        "key": 4,
+        "side": "RIGHT",
+        "hipAnkleDistance": 458.0245141334001,
+        "shoulderWristDistance": 308.9450655429628
+      },
+      {
+        "key": 6,
+        "side": "LEFT",
+        "hipAnkleDistance": 375.6580119019519,
+        "shoulderWristDistance": 297.813627809298
+      },
+      {
+        "key": 6,
+        "side": "RIGHT",
+        "hipAnkleDistance": 452.084039417119,
+        "shoulderWristDistance": 288.6988976829416
+      }
+    ],
+    "noStretch": true
+  },
+  "originalFeetWorldHeelToeWristsBobShiftClockAndRootPreserved": true,
+  "tests": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest -v test_bake_keys.py",
+    "passed": 23,
+    "durationSeconds": 7.53,
+    "originalNonArtChecks": 18,
+    "newActualCoreOnlyChecks": 5,
+    "qualification": false
+  },
+  "partialInspection": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/core-rest-inspection-v3/inspection.json",
+    "sha256": "f25ce0a91feb4d92004285b5b42c2d157f383b12a503eef1109b5afc02184be9",
+    "status": "PARTIAL_REST_INSPECTION_ONLY",
+    "nativeAndWhole38ActuallyViewed": true,
+    "wholeCharacter": false,
+    "animationKey": false
+  },
+  "missingOriginalsCheck": {
+    "originalsAbsent": 8,
+    "exitCode": 2,
+    "outputExists": false,
+    "reason": "missing or unknown original parts; all nine required"
+  },
+  "remainingBeforeFinishedFourKeyAcceptance": [
+    "Actual8remaining original parts and measured/calibrated sourcecustody under separate authorization",
+    "F0/F4 trailing flat12px lift is held geometry: actual toe-groundedheel-rise must be authored from actual lower_sandal landmarks and rigidfootplane roll then inspected BEFORE four finishedkey acceptance",
+    "Actual illustrated wholekey identity/anatomy/weighttransfer/limbocclusion/seam/contact/native38review"
+  ],
+  "noAll8AtlasOrRuntimeAuthorization": true,
+  "files": {
+    "README.md": "e349a66ab8089ec2c125b480e0943ea07ef9dc94550300901b68382a180b59cd",
+    "bake_keys.py": "b5ad84368a091cf1b2643e687fe7a98b7465906a52ede606a7eb89b791d29923",
+    "build_adjustment.py": "39878776bd04b6cf9c664b89e1c2cf834f95446060e201b8042b9af0f391c8e4",
+    "inspect_core.py": "e93f079df341489406e07bccd313d2645a40124a2dc6dbdfe87319164c523435",
+    "pending-originals.json": "f1e49abe4d249dbea6d064dd24a8173bab67b04c8053626ce5ea6fcdb0fb5980",
+    "test_bake_keys.py": "9513e3bc81b35d47c8bd15cc7dffc894cb046b4da20fae1657cc6c564d3805c6"
+  },
+  "adjustmentArtifacts": {
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/part-contract-v3.json": "e4715f935a88952a7f6d477d29879641fda6041bf4e783169c6664a386afa7bc",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-guides/walk-south-keys-v3/coordinate-plan.json": "dd685b2b444e8c1b1cdcab04be06d92651c81657cf265489c90cee56203abfcf",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/core-head-torso-pelvis-01/sidecar-v3.json": "1554ddbd9cf9a6d81ff4840d2dd941baebd5f387bd2ca598541f2fa0e1329b8d",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/core-rest-inspection-v3/inspection.json": "f25ce0a91feb4d92004285b5b42c2d157f383b12a503eef1109b5afc02184be9",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/core-rest-inspection-v3/partial-rest-core.png": "03998fdc1524d6d5216c80ae8620382cc3eca5d91d467b58c6bdfc4129f78f7a",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/core-rest-inspection-v3/partial-rest-core-QA.png": "c9d9743cccbcd5e7f3afe6c0534d0896f7bb4cc2e9ac81fee40a755da3779cfe",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/core-rest-inspection-v3/partial-rest-core-whole38.png": "d5673cc9193c64b615392d16ea185d072a2f1130d67d6b5f5d019599b8a24883"
+  }
+}

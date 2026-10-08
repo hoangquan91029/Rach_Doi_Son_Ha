@@ -1,11 +1,11 @@
 {
   "schema": "south-persistent-component-live-ledger/v1",
-  "timestampUtc": "2026-10-08T01:06:54.626895+00:00",
-  "status": "CORE_IDENTITY_CANDIDATE_REST_FIT_PENDING",
+  "timestampUtc": "2026-10-08T01:34:52.086240+00:00",
+  "status": "ONE_CALIBRATED_CORE_AUTHORING_ONLY",
   "partsGenerated": 1,
   "componentImageCalls": 1,
-  "calibratedParts": 0,
-  "selectedReadyParts": 0,
+  "calibratedParts": 1,
+  "selectedReadyParts": 1,
   "illustratedBakedKeys": 0,
   "qualifiedLoops": 0,
   "parts": {
@@ -13,10 +13,14 @@
       "raw": "parts/core-head-torso-pelvis-01/raw.png",
       "rawSha256": "b5d8542917309bacf90dfd117d8d2da287d9b6eb9c63c4b358e8e5d09f250c6a",
       "parentReviewSha256": "c9bf85d66298519865a65233d28eb5891135f5d8543a0d22dfeed9edc92d8936",
-      "status": "PASS_IDENTITY_SOURCE_ONLY_REST_CALIBRATION_PENDING"
+      "status": "PASS_CALIBRATED_AUTHORING_COMPONENT_ONLY",
+      "calibrationParentReview": "parent-tool-review-v4.json",
+      "calibrationParentReviewSha256": "f2d304415f809c4de3ae3e00ea901a6a0cbeecb69ac70051eaf90d144e6c2bca",
+      "sidecar": "parts/core-head-torso-pelvis-01/sidecar-v3.json",
+      "sidecarSha256": "1554ddbd9cf9a6d81ff4840d2dd941baebd5f387bd2ca598541f2fa0e1329b8d"
     }
   },
-  "next": "Read-only similarity fit and actual attachment diagnosis. Reuse original; no further call authorized.",
+  "next": "Review corrected upperarm bone-plane guide then issue separate finite one-original work order; do not reuse projected screen173.33 guide as unforeshortened200 rest texture.",
   "motionQualified": false,
   "finalArtApproved": false
 }

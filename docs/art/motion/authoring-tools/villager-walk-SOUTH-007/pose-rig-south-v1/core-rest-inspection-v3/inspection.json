@@ -1,0 +1,150 @@
+{
+  "status": "PARTIAL_REST_INSPECTION_ONLY",
+  "candidate": false,
+  "fullCharacter": false,
+  "animationKey": false,
+  "motionQualified": false,
+  "finalArtApproved": false,
+  "imageCalls": 0,
+  "sourceByteSha256": "b5d8542917309bacf90dfd117d8d2da287d9b6eb9c63c4b358e8e5d09f250c6a",
+  "sourceRgbaSha256": "d7cd792b95e7ff329909b0fbd682e24b6f7e5beb4fa2eec3af427ea1916c6e52",
+  "sidecarSha256": "1554ddbd9cf9a6d81ff4840d2dd941baebd5f387bd2ca598541f2fa0e1329b8d",
+  "contractSha256": "e4715f935a88952a7f6d477d29879641fda6041bf4e783169c6664a386afa7bc",
+  "posePlanSha256": "dd685b2b444e8c1b1cdcab04be06d92651c81657cf265489c90cee56203abfcf",
+  "staticCalibration": {
+    "scale": 0.672919808,
+    "rotationRad": -0.000318866,
+    "translation": [
+      206.170592,
+      16.511619
+    ],
+    "tolerancePx": 2
+  },
+  "attachmentTargets": {
+    "actor_right_shoulder_cap": {
+      "sourceRawXY": [
+        430,
+        484
+      ],
+      "restScreenXY": [
+        495.6299472118419,
+        342.1125238796266
+      ],
+      "modelRest3D": [
+        -158.3700527881581,
+        -100,
+        747.8874761203733
+      ],
+      "method": "authored_cloth_attachment_convention",
+      "uncertaintySourcePx": 14,
+      "sourceAlpha": 253
+    },
+    "actor_left_shoulder_cap": {
+      "sourceRawXY": [
+        820,
+        484
+      ],
+      "restScreenXY": [
+        758.0686589900442,
+        342.02884109452054
+      ],
+      "modelRest3D": [
+        104.06865899004424,
+        -100,
+        747.9711589054795
+      ],
+      "method": "authored_cloth_attachment_convention",
+      "uncertaintySourcePx": 14,
+      "sourceAlpha": 253
+    },
+    "actor_right_hip_under_hem": {
+      "sourceRawXY": [
+        510,
+        870
+      ],
+      "restScreenXY": [
+        549.5463536151935,
+        601.8423908631589
+      ],
+      "modelRest3D": [
+        -104.45364638480646,
+        -100,
+        488.1576091368411
+      ],
+      "method": "authored_hidden_hypothesis",
+      "uncertaintySourcePx": 45,
+      "sourceAlpha": 253
+    },
+    "actor_left_hip_under_hem": {
+      "sourceRawXY": [
+        785,
+        870
+      ],
+      "restScreenXY": [
+        734.5992914075157,
+        601.783383771097
+      ],
+      "modelRest3D": [
+        80.5992914075157,
+        -100,
+        488.21661622890304
+      ],
+      "method": "authored_hidden_hypothesis",
+      "uncertaintySourcePx": 45,
+      "sourceAlpha": 253
+    }
+  },
+  "allFourCorePoseGeometryChecked": true,
+  "projectedMeshBounds": {
+    "F0": [
+      278.28355901507285,
+      43.17156817270814,
+      1036.9181964294307,
+      840.1504021322111
+    ],
+    "F2": [
+      308.28355901507285,
+      23.17156817270814,
+      1066.9181964294307,
+      820.1504021322111
+    ],
+    "F4": [
+      228.28355901507285,
+      43.17156817270814,
+      986.9181964294307,
+      840.1504021322111
+    ],
+    "F6": [
+      198.28355901507285,
+      23.17156817270814,
+      956.9181964294307,
+      820.1504021322111
+    ]
+  },
+  "sourceAlphaOutsideMesh": 0,
+  "missingOriginalParts": 8,
+  "outputs": [
+    {
+      "path": "partial-rest-core.png",
+      "sha256": "03998fdc1524d6d5216c80ae8620382cc3eca5d91d467b58c6bdfc4129f78f7a",
+      "rgbaSha256": "cb09a045147832d877b42d0d051819c3f09d2fbf86f9281ae3189e4f2cb5fca5",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "path": "partial-rest-core-QA.png",
+      "sha256": "c9d9743cccbcd5e7f3afe6c0534d0896f7bb4cc2e9ac81fee40a755da3779cfe",
+      "rgbaSha256": "304dbd7a26317eb7a0abfcf9550e58ad6b3f3ea9a917c28f0d0530dbd191b4d8",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "path": "partial-rest-core-whole38.png",
+      "sha256": "d5673cc9193c64b615392d16ea185d072a2f1130d67d6b5f5d019599b8a24883",
+      "rgbaSha256": "6a23d5df60bf2a6175af57463df207785c04ffa1602259906b89b18a30c87b8d",
+      "width": 38,
+      "height": 38
+    }
+  ],
+  "remainingFootGate": "Preserved F0/F4 trailing flat12px-lift geometry is a held hypothesis. Actual toe-grounded/heel-rise rigid foot plane must be authored from real lower-sandal landmarks and reviewed BEFORE four finished-key acceptance; no contact qualification."
+}

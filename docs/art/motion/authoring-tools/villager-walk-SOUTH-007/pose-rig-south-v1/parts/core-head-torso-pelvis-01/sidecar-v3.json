@@ -1,0 +1,134 @@
+{
+  "schema": "south-bitmap-rig-sidecar/v3",
+  "partId": "core_head_torso_pelvis",
+  "status": "SEALED_ORIGINAL_CALIBRATION",
+  "raw": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/core-head-torso-pelvis-01/raw.png",
+    "sha256": "b5d8542917309bacf90dfd117d8d2da287d9b6eb9c63c4b358e8e5d09f250c6a",
+    "rgbaSha256": "d7cd792b95e7ff329909b0fbd682e24b6f7e5beb4fa2eec3af427ea1916c6e52",
+    "width": 1254,
+    "height": 1254
+  },
+  "calibration": {
+    "scale": 0.672919808,
+    "rotationRad": -0.000318866,
+    "translation": [
+      206.170592,
+      16.511619
+    ],
+    "tolerancePx": 2
+  },
+  "landmarks": {
+    "actor_right_shoulder_cap": {
+      "xy": [
+        430,
+        484
+      ],
+      "method": "authored_cloth_attachment_convention",
+      "uncertaintyPx": 14,
+      "evidence": "Point falls inside the broad ivory shoulder-cap cloth, inset from its visible outer corner and below the top shoulder slope. It is a practical arm-underlap seam convention, not a measured anatomical shoulder joint."
+    },
+    "actor_left_shoulder_cap": {
+      "xy": [
+        820,
+        484
+      ],
+      "method": "authored_cloth_attachment_convention",
+      "uncertaintyPx": 14,
+      "evidence": "Point falls inside the broad ivory shoulder-cap cloth, inset from its visible outer corner and below the top shoulder slope. It is a practical arm-underlap seam convention, not a measured anatomical shoulder joint."
+    },
+    "actor_right_hip_under_hem": {
+      "xy": [
+        510,
+        870
+      ],
+      "method": "authored_hidden_hypothesis",
+      "uncertaintyPx": 45,
+      "evidence": "The hip is occluded by the long tunic and sash. This is a provisional pivot hypothesis below the visible sash/waist mass where the actor-right upper-leg overlap could emerge; the cloth does not expose the joint."
+    },
+    "actor_left_hip_under_hem": {
+      "xy": [
+        785,
+        870
+      ],
+      "method": "authored_hidden_hypothesis",
+      "uncertaintyPx": 45,
+      "evidence": "The hip is occluded by the long tunic and sash, including the actor-left sash-tail region. This is a provisional pivot hypothesis under the waist/upper-thigh overlap, not a measured point and not inferred from a guide patch."
+    }
+  },
+  "mesh": {
+    "vertices": [
+      {
+        "rawXY": [
+          70,
+          40
+        ],
+        "binding": {
+          "frame": "core",
+          "local": [
+            253.28355901507285,
+            43.41338996454019
+          ]
+        }
+      },
+      {
+        "rawXY": [
+          1197,
+          40
+        ],
+        "binding": {
+          "frame": "core",
+          "local": [
+            1011.6641440766987,
+            43.17156817270814
+          ]
+        }
+      },
+      {
+        "rawXY": [
+          1197,
+          1224
+        ],
+        "binding": {
+          "frame": "core",
+          "local": [
+            1011.9181964294307,
+            839.908580340379
+          ]
+        }
+      },
+      {
+        "rawXY": [
+          70,
+          1224
+        ],
+        "binding": {
+          "frame": "core",
+          "local": [
+            253.537611367805,
+            840.1504021322111
+          ]
+        }
+      }
+    ],
+    "triangles": [
+      {
+        "indices": [
+          0,
+          1,
+          2
+        ],
+        "region": "core"
+      },
+      {
+        "indices": [
+          0,
+          2,
+          3
+        ],
+        "region": "core"
+      }
+    ],
+    "sharedAnkleSeam": []
+  }
+}

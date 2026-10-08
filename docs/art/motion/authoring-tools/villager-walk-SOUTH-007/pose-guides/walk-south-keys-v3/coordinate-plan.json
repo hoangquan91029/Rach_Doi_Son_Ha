@@ -1,0 +1,1180 @@
+{
+  "status": "MODEL_ONLY_NON_ART_NO_ANIMATION_QUALIFICATION",
+  "canvas": [
+    1254,
+    1254
+  ],
+  "root": [
+    654,
+    1140
+  ],
+  "wholeCanvasLogicalSize": 38,
+  "direction": {
+    "screen": "South",
+    "engine": 1,
+    "world": "SE",
+    "forwardLocal": [
+      0,
+      1
+    ],
+    "anatomicalLeftAxis": [
+      1,
+      0
+    ],
+    "anatomicalLeftViewer": "RIGHT"
+  },
+  "projection": "screen=(654+x,1140+0.5*depth-z); locked game2:1 affine ground;26.565deg ground-slope convention, not physically calibrated camera",
+  "sourceReference": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+    "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+    "usage": "inspected gross proportions only; no tracing/copied pixels/extraction"
+  },
+  "hiddenJoints": {
+    "status": "AUTHORED_HYPOTHESES_NOT_MEASURED_ANATOMY",
+    "lateralWeightShiftSourcePx": {
+      "F0": 25,
+      "F2": 55,
+      "F4": -25,
+      "F6": -55
+    },
+    "weightShiftMeaning": "Pelvis/torso/head actual skeleton shifts toward support; not a measured center of mass or verified balance model. Fixed sole endpoints unchanged from sealed v1.",
+    "hipSourceApprox": [
+      549.5463536151935,
+      601.8423908631589,
+      734.5992914075157,
+      601.783383771097
+    ],
+    "uncertaintySourcePx": 45,
+    "kneePole": "general3D forward-depth projected orthogonal to hip-ankle axis",
+    "segmentLengths3D": {
+      "thigh": 260,
+      "shin": 240,
+      "upperArm": 200,
+      "forearm": 180
+    },
+    "feet": {
+      "soleDepth": 160,
+      "soleWidth": 64,
+      "ankleToSoleHeight": 60
+    },
+    "hipSourceApproxMeaning": "Exact projected authored hidden-pivot conventions from accepted actual core; uncertainty45 RAWsource px, not measured anatomy.",
+    "coreAttachments": {
+      "actor_right_shoulder_cap": {
+        "sourceRawXY": [
+          430,
+          484
+        ],
+        "restScreenXY": [
+          495.6299472118419,
+          342.1125238796266
+        ],
+        "modelRest3D": [
+          -158.3700527881581,
+          -100,
+          747.8874761203733
+        ],
+        "method": "authored_cloth_attachment_convention",
+        "uncertaintySourcePx": 14,
+        "sourceAlpha": 253
+      },
+      "actor_left_shoulder_cap": {
+        "sourceRawXY": [
+          820,
+          484
+        ],
+        "restScreenXY": [
+          758.0686589900442,
+          342.02884109452054
+        ],
+        "modelRest3D": [
+          104.06865899004424,
+          -100,
+          747.9711589054795
+        ],
+        "method": "authored_cloth_attachment_convention",
+        "uncertaintySourcePx": 14,
+        "sourceAlpha": 253
+      },
+      "actor_right_hip_under_hem": {
+        "sourceRawXY": [
+          510,
+          870
+        ],
+        "restScreenXY": [
+          549.5463536151935,
+          601.8423908631589
+        ],
+        "modelRest3D": [
+          -104.45364638480646,
+          -100,
+          488.1576091368411
+        ],
+        "method": "authored_hidden_hypothesis",
+        "uncertaintySourcePx": 45,
+        "sourceAlpha": 253
+      },
+      "actor_left_hip_under_hem": {
+        "sourceRawXY": [
+          785,
+          870
+        ],
+        "restScreenXY": [
+          734.5992914075157,
+          601.783383771097
+        ],
+        "modelRest3D": [
+          80.5992914075157,
+          -100,
+          488.21661622890304
+        ],
+        "method": "authored_hidden_hypothesis",
+        "uncertaintySourcePx": 45,
+        "sourceAlpha": 253
+      }
+    }
+  },
+  "reach": {
+    "checkedAll4Keys": true,
+    "legMaxReach": 500,
+    "armMaxReach": 380,
+    "maxActualHipAnkleDistance": 458.0245141334001,
+    "maxActualShoulderWristDistance": 317.47906530814765,
+    "records": [
+      {
+        "key": 0,
+        "side": "LEFT",
+        "hipAnkleDistance": 457.16607756787675,
+        "shoulderWristDistance": 317.47906530814765
+      },
+      {
+        "key": 0,
+        "side": "RIGHT",
+        "hipAnkleDistance": 446.3286998271256,
+        "shoulderWristDistance": 308.9450655429628
+      },
+      {
+        "key": 2,
+        "side": "LEFT",
+        "hipAnkleDistance": 449.62811812919904,
+        "shoulderWristDistance": 297.813627809298
+      },
+      {
+        "key": 2,
+        "side": "RIGHT",
+        "hipAnkleDistance": 371.6113009976247,
+        "shoulderWristDistance": 288.6988976829416
+      },
+      {
+        "key": 4,
+        "side": "LEFT",
+        "hipAnkleDistance": 448.1157155786356,
+        "shoulderWristDistance": 317.47906530814765
+      },
+      {
+        "key": 4,
+        "side": "RIGHT",
+        "hipAnkleDistance": 458.0245141334001,
+        "shoulderWristDistance": 308.9450655429628
+      },
+      {
+        "key": 6,
+        "side": "LEFT",
+        "hipAnkleDistance": 375.6580119019519,
+        "shoulderWristDistance": 297.813627809298
+      },
+      {
+        "key": 6,
+        "side": "RIGHT",
+        "hipAnkleDistance": 452.084039417119,
+        "shoulderWristDistance": 288.6988976829416
+      }
+    ],
+    "noStretch": true
+  },
+  "strideHypothesis": {
+    "fullCycleModelDepth": 640,
+    "fullCycleSourceProjectedPixels": 320.0,
+    "fullCycleLogicalPixels": 9.696969696969697,
+    "euclideanWorldStride": 0.507910594791684,
+    "nominalReviewPeriodMs": 600,
+    "nominalReviewWorldSpeed": 0.84651765798614,
+    "baseVillagerWorldSpeed": 2.1,
+    "distanceLockedBasePeriodMs": 241.86218799603998,
+    "nominalPreviewDoesNotMatchBaseSpeed": true,
+    "modifiers": "eventual cycle rate uses actual traversed Euclidean distance including terrain/supply speed effects; no runtime integration",
+    "calibrationGate": "This reachable model stride is a hypothesis only; real illustrated contact tracks and grid playback must be judged before cadence is sealed."
+  },
+  "clothOcclusionHypothesis": "Front tunic/skirt covers pelvis and proximal upper thighs; knee/shin and both feet remain readable. Anatomical axes never swap behind cloth. Arm order can change by depth but not identity. No per-frame whole-image fit, body bob derives from support hip height.",
+  "frames": [
+    {
+      "frame": 0,
+      "timeMs": 0,
+      "support": "LEFT",
+      "swing": "RIGHT",
+      "passing": false,
+      "pelvisZ": 480,
+      "lateralWeightShift": 25,
+      "bodyCenterSourceX": 667.0728225113546,
+      "bodyTravelDepth": 0.0,
+      "points3D": {
+        "LEFT_hip": [
+          105.5992914075157,
+          -100,
+          488.21661622890304
+        ],
+        "LEFT_knee": [
+          103.12852029413403,
+          78.57533857588953,
+          299.25962709483656
+        ],
+        "LEFT_ankle": [
+          100,
+          60.0,
+          60
+        ],
+        "LEFT_heel": [
+          100,
+          10.0,
+          0
+        ],
+        "LEFT_toe": [
+          100,
+          170.0,
+          0
+        ],
+        "LEFT_shoulder": [
+          129.06865899004424,
+          -100,
+          747.9711589054795
+        ],
+        "LEFT_elbow": [
+          179.10234178827326,
+          -61.39766398705777,
+          558.217396782063
+        ],
+        "LEFT_wrist": [
+          205.0,
+          -210,
+          460
+        ],
+        "RIGHT_hip": [
+          -79.45364638480646,
+          -100,
+          488.1576091368411
+        ],
+        "RIGHT_knee": [
+          -92.23245648477868,
+          -78.92686651877118,
+          229.32827336187296
+        ],
+        "RIGHT_ankle": [
+          -100,
+          -260,
+          72
+        ],
+        "RIGHT_heel": [
+          -100,
+          -310,
+          12
+        ],
+        "RIGHT_toe": [
+          -100,
+          -150,
+          12
+        ],
+        "RIGHT_shoulder": [
+          -133.3700527881581,
+          -100,
+          747.8874761203733
+        ],
+        "RIGHT_elbow": [
+          -147.99106301765786,
+          -143.78061293715146,
+          553.2866436691318
+        ],
+        "RIGHT_wrist": [
+          -155.0,
+          10,
+          460
+        ]
+      },
+      "points2D": {
+        "LEFT_hip": [
+          759.5992914075157,
+          601.783383771097
+        ],
+        "LEFT_knee": [
+          757.128520294134,
+          880.0280421931081
+        ],
+        "LEFT_ankle": [
+          754,
+          1110.0
+        ],
+        "LEFT_heel": [
+          754,
+          1145.0
+        ],
+        "LEFT_toe": [
+          754,
+          1225.0
+        ],
+        "LEFT_shoulder": [
+          783.0686589900442,
+          342.02884109452054
+        ],
+        "LEFT_elbow": [
+          833.1023417882733,
+          551.083771224408
+        ],
+        "LEFT_wrist": [
+          859.0,
+          575.0
+        ],
+        "RIGHT_hip": [
+          574.5463536151935,
+          601.8423908631589
+        ],
+        "RIGHT_knee": [
+          561.7675435152213,
+          871.2082933787415
+        ],
+        "RIGHT_ankle": [
+          554,
+          938.0
+        ],
+        "RIGHT_heel": [
+          554,
+          973.0
+        ],
+        "RIGHT_toe": [
+          554,
+          1053.0
+        ],
+        "RIGHT_shoulder": [
+          520.6299472118419,
+          342.1125238796267
+        ],
+        "RIGHT_elbow": [
+          506.0089369823421,
+          514.8230498622925
+        ],
+        "RIGHT_wrist": [
+          499.0,
+          685.0
+        ]
+      },
+      "soles": {
+        "LEFT": {
+          "planted": true,
+          "heightAboveGround": 0,
+          "axis": [
+            0,
+            160,
+            0
+          ],
+          "worldHeel": [
+            100,
+            10.0,
+            0
+          ],
+          "worldToe": [
+            100,
+            170.0,
+            0
+          ]
+        },
+        "RIGHT": {
+          "planted": false,
+          "heightAboveGround": 12,
+          "axis": [
+            0,
+            160,
+            0
+          ],
+          "worldHeel": [
+            -100,
+            -310.0,
+            12
+          ],
+          "worldToe": [
+            -100,
+            -150.0,
+            12
+          ]
+        }
+      },
+      "lengths": {
+        "LEFT": {
+          "thigh": 260.00000000000006,
+          "shin": 239.99999999999997,
+          "upperArm": 200.00000000000003,
+          "forearm": 180.00000000000003
+        },
+        "RIGHT": {
+          "thigh": 260.00000000000006,
+          "shin": 239.99999999999997,
+          "upperArm": 200.0,
+          "forearm": 180.0
+        }
+      }
+    },
+    {
+      "frame": 2,
+      "timeMs": 150,
+      "support": "LEFT",
+      "swing": "RIGHT",
+      "passing": true,
+      "pelvisZ": 500,
+      "lateralWeightShift": 55,
+      "bodyCenterSourceX": 697.0728225113546,
+      "bodyTravelDepth": 160.0,
+      "points3D": {
+        "LEFT_hip": [
+          135.5992914075157,
+          -100,
+          508.21661622890304
+        ],
+        "LEFT_knee": [
+          116.91919624129488,
+          9.247323780241501,
+          273.02291671414986
+        ],
+        "LEFT_ankle": [
+          100,
+          -100.0,
+          60
+        ],
+        "LEFT_heel": [
+          100,
+          -150.0,
+          0
+        ],
+        "LEFT_toe": [
+          100,
+          10.0,
+          0
+        ],
+        "LEFT_shoulder": [
+          159.06865899004424,
+          -100,
+          767.9711589054795
+        ],
+        "LEFT_elbow": [
+          200.28756521850903,
+          17.74528399811031,
+          611.6476166428587
+        ],
+        "LEFT_wrist": [
+          235.0,
+          -100,
+          480
+        ],
+        "RIGHT_hip": [
+          -49.45364638480646,
+          -100,
+          508.1576091368411
+        ],
+        "RIGHT_knee": [
+          -76.55695348718557,
+          67.01863786450636,
+          310.7489331623566
+        ],
+        "RIGHT_ankle": [
+          -100,
+          -100,
+          140
+        ],
+        "RIGHT_heel": [
+          -100,
+          -150,
+          80
+        ],
+        "RIGHT_toe": [
+          -100,
+          10,
+          80
+        ],
+        "RIGHT_shoulder": [
+          -103.37005278815809,
+          -100,
+          767.8874761203733
+        ],
+        "RIGHT_elbow": [
+          -115.17118962277647,
+          -223.2476577614421,
+          610.8182301626459
+        ],
+        "RIGHT_wrist": [
+          -125.0,
+          -100,
+          480
+        ]
+      },
+      "points2D": {
+        "LEFT_hip": [
+          789.5992914075157,
+          581.783383771097
+        ],
+        "LEFT_knee": [
+          770.9191962412949,
+          871.6007451759708
+        ],
+        "LEFT_ankle": [
+          754,
+          1030.0
+        ],
+        "LEFT_heel": [
+          754,
+          1065.0
+        ],
+        "LEFT_toe": [
+          754,
+          1145.0
+        ],
+        "LEFT_shoulder": [
+          813.0686589900442,
+          322.02884109452054
+        ],
+        "LEFT_elbow": [
+          854.287565218509,
+          537.2250253561964
+        ],
+        "LEFT_wrist": [
+          889.0,
+          610.0
+        ],
+        "RIGHT_hip": [
+          604.5463536151935,
+          581.8423908631589
+        ],
+        "RIGHT_knee": [
+          577.4430465128145,
+          862.7603857698965
+        ],
+        "RIGHT_ankle": [
+          554,
+          950.0
+        ],
+        "RIGHT_heel": [
+          554,
+          985.0
+        ],
+        "RIGHT_toe": [
+          554,
+          1065.0
+        ],
+        "RIGHT_shoulder": [
+          550.6299472118419,
+          322.1125238796267
+        ],
+        "RIGHT_elbow": [
+          538.8288103772236,
+          417.55794095663305
+        ],
+        "RIGHT_wrist": [
+          529.0,
+          610.0
+        ]
+      },
+      "soles": {
+        "LEFT": {
+          "planted": true,
+          "heightAboveGround": 0,
+          "axis": [
+            0,
+            160,
+            0
+          ],
+          "worldHeel": [
+            100,
+            10.0,
+            0
+          ],
+          "worldToe": [
+            100,
+            170.0,
+            0
+          ]
+        },
+        "RIGHT": {
+          "planted": false,
+          "heightAboveGround": 80,
+          "axis": [
+            0,
+            160,
+            0
+          ],
+          "worldHeel": [
+            -100,
+            10.0,
+            80
+          ],
+          "worldToe": [
+            -100,
+            170.0,
+            80
+          ]
+        }
+      },
+      "lengths": {
+        "LEFT": {
+          "thigh": 260.0,
+          "shin": 240.0,
+          "upperArm": 200.00000000000003,
+          "forearm": 180.0
+        },
+        "RIGHT": {
+          "thigh": 260.0,
+          "shin": 240.00000000000003,
+          "upperArm": 200.00000000000003,
+          "forearm": 179.99999999999994
+        }
+      }
+    },
+    {
+      "frame": 4,
+      "timeMs": 300,
+      "support": "RIGHT",
+      "swing": "LEFT",
+      "passing": false,
+      "pelvisZ": 480,
+      "lateralWeightShift": -25,
+      "bodyCenterSourceX": 617.0728225113546,
+      "bodyTravelDepth": 320.0,
+      "points3D": {
+        "LEFT_hip": [
+          55.59929140751569,
+          -100,
+          488.21661622890304
+        ],
+        "LEFT_knee": [
+          83.10113350890371,
+          -80.50019252759974,
+          230.4116391831337
+        ],
+        "LEFT_ankle": [
+          100,
+          -260,
+          72
+        ],
+        "LEFT_heel": [
+          100,
+          -310,
+          12
+        ],
+        "LEFT_toe": [
+          100,
+          -150,
+          12
+        ],
+        "LEFT_shoulder": [
+          79.06865899004424,
+          -100,
+          747.9711589054795
+        ],
+        "LEFT_elbow": [
+          129.10234178827326,
+          -138.60233601294223,
+          558.217396782063
+        ],
+        "LEFT_wrist": [
+          155.0,
+          10,
+          460
+        ],
+        "RIGHT_hip": [
+          -129.45364638480646,
+          -100,
+          488.1576091368411
+        ],
+        "RIGHT_knee": [
+          -116.42633561583555,
+          77.67368769487037,
+          298.7840368649047
+        ],
+        "RIGHT_ankle": [
+          -100,
+          60.0,
+          60
+        ],
+        "RIGHT_heel": [
+          -100,
+          10.0,
+          0
+        ],
+        "RIGHT_toe": [
+          -100,
+          170.0,
+          0
+        ],
+        "RIGHT_shoulder": [
+          -183.3700527881581,
+          -100,
+          747.8874761203733
+        ],
+        "RIGHT_elbow": [
+          -197.99106301765786,
+          -56.21938706284854,
+          553.2866436691318
+        ],
+        "RIGHT_wrist": [
+          -205.0,
+          -210,
+          460
+        ]
+      },
+      "points2D": {
+        "LEFT_hip": [
+          709.5992914075157,
+          601.783383771097
+        ],
+        "LEFT_knee": [
+          737.1011335089037,
+          869.3382645530664
+        ],
+        "LEFT_ankle": [
+          754,
+          938.0
+        ],
+        "LEFT_heel": [
+          754,
+          973.0
+        ],
+        "LEFT_toe": [
+          754,
+          1053.0
+        ],
+        "LEFT_shoulder": [
+          733.0686589900442,
+          342.02884109452054
+        ],
+        "LEFT_elbow": [
+          783.1023417882733,
+          512.481435211466
+        ],
+        "LEFT_wrist": [
+          809.0,
+          685.0
+        ],
+        "RIGHT_hip": [
+          524.5463536151935,
+          601.8423908631589
+        ],
+        "RIGHT_knee": [
+          537.5736643841644,
+          880.0528069825305
+        ],
+        "RIGHT_ankle": [
+          554,
+          1110.0
+        ],
+        "RIGHT_heel": [
+          554,
+          1145.0
+        ],
+        "RIGHT_toe": [
+          554,
+          1225.0
+        ],
+        "RIGHT_shoulder": [
+          470.6299472118419,
+          342.1125238796267
+        ],
+        "RIGHT_elbow": [
+          456.0089369823421,
+          558.603662799444
+        ],
+        "RIGHT_wrist": [
+          449.0,
+          575.0
+        ]
+      },
+      "soles": {
+        "LEFT": {
+          "planted": false,
+          "heightAboveGround": 12,
+          "axis": [
+            0,
+            160,
+            0
+          ],
+          "worldHeel": [
+            100,
+            10.0,
+            12
+          ],
+          "worldToe": [
+            100,
+            170.0,
+            12
+          ]
+        },
+        "RIGHT": {
+          "planted": true,
+          "heightAboveGround": 0,
+          "axis": [
+            0,
+            160,
+            0
+          ],
+          "worldHeel": [
+            -100,
+            330.0,
+            0
+          ],
+          "worldToe": [
+            -100,
+            490.0,
+            0
+          ]
+        }
+      },
+      "lengths": {
+        "LEFT": {
+          "thigh": 260.0,
+          "shin": 240.0,
+          "upperArm": 200.00000000000003,
+          "forearm": 180.00000000000003
+        },
+        "RIGHT": {
+          "thigh": 259.99999999999994,
+          "shin": 240.00000000000009,
+          "upperArm": 200.0,
+          "forearm": 180.0
+        }
+      }
+    },
+    {
+      "frame": 6,
+      "timeMs": 450,
+      "support": "RIGHT",
+      "swing": "LEFT",
+      "passing": true,
+      "pelvisZ": 500,
+      "lateralWeightShift": -55,
+      "bodyCenterSourceX": 587.0728225113546,
+      "bodyTravelDepth": 480.0,
+      "points3D": {
+        "LEFT_hip": [
+          25.599291407515693,
+          -100,
+          508.21661622890304
+        ],
+        "LEFT_knee": [
+          65.43574499657907,
+          64.75165856577826,
+          311.0619866477755
+        ],
+        "LEFT_ankle": [
+          100,
+          -100,
+          140
+        ],
+        "LEFT_heel": [
+          100,
+          -150,
+          80
+        ],
+        "LEFT_toe": [
+          100,
+          10,
+          80
+        ],
+        "LEFT_shoulder": [
+          49.06865899004424,
+          -100,
+          767.9711589054795
+        ],
+        "LEFT_elbow": [
+          90.28756521850902,
+          -217.74528399811032,
+          611.6476166428587
+        ],
+        "LEFT_wrist": [
+          125.0,
+          -100,
+          480
+        ],
+        "RIGHT_hip": [
+          -159.45364638480646,
+          -100,
+          508.1576091368411
+        ],
+        "RIGHT_knee": [
+          -128.27233516563504,
+          6.689662792933888,
+          273.1149711245365
+        ],
+        "RIGHT_ankle": [
+          -100,
+          -100.0,
+          60
+        ],
+        "RIGHT_heel": [
+          -100,
+          -150.0,
+          0
+        ],
+        "RIGHT_toe": [
+          -100,
+          10.0,
+          0
+        ],
+        "RIGHT_shoulder": [
+          -213.3700527881581,
+          -100,
+          767.8874761203733
+        ],
+        "RIGHT_elbow": [
+          -225.17118962277647,
+          23.247657761442113,
+          610.8182301626459
+        ],
+        "RIGHT_wrist": [
+          -235.0,
+          -100,
+          480
+        ]
+      },
+      "points2D": {
+        "LEFT_hip": [
+          679.5992914075157,
+          581.783383771097
+        ],
+        "LEFT_knee": [
+          719.435744996579,
+          861.3138426351136
+        ],
+        "LEFT_ankle": [
+          754,
+          950.0
+        ],
+        "LEFT_heel": [
+          754,
+          985.0
+        ],
+        "LEFT_toe": [
+          754,
+          1065.0
+        ],
+        "LEFT_shoulder": [
+          703.0686589900442,
+          322.02884109452054
+        ],
+        "LEFT_elbow": [
+          744.287565218509,
+          419.47974135808624
+        ],
+        "LEFT_wrist": [
+          779.0,
+          610.0
+        ],
+        "RIGHT_hip": [
+          494.54635361519354,
+          581.8423908631589
+        ],
+        "RIGHT_knee": [
+          525.727664834365,
+          870.2298602719305
+        ],
+        "RIGHT_ankle": [
+          554,
+          1030.0
+        ],
+        "RIGHT_heel": [
+          554,
+          1065.0
+        ],
+        "RIGHT_toe": [
+          554,
+          1145.0
+        ],
+        "RIGHT_shoulder": [
+          440.6299472118419,
+          322.1125238796267
+        ],
+        "RIGHT_elbow": [
+          428.82881037722353,
+          540.8055987180751
+        ],
+        "RIGHT_wrist": [
+          419.0,
+          610.0
+        ]
+      },
+      "soles": {
+        "LEFT": {
+          "planted": false,
+          "heightAboveGround": 80,
+          "axis": [
+            0,
+            160,
+            0
+          ],
+          "worldHeel": [
+            100,
+            330.0,
+            80
+          ],
+          "worldToe": [
+            100,
+            490.0,
+            80
+          ]
+        },
+        "RIGHT": {
+          "planted": true,
+          "heightAboveGround": 0,
+          "axis": [
+            0,
+            160,
+            0
+          ],
+          "worldHeel": [
+            -100,
+            330.0,
+            0
+          ],
+          "worldToe": [
+            -100,
+            490.0,
+            0
+          ]
+        }
+      },
+      "lengths": {
+        "LEFT": {
+          "thigh": 260.0,
+          "shin": 240.0,
+          "upperArm": 200.00000000000003,
+          "forearm": 180.0
+        },
+        "RIGHT": {
+          "thigh": 260.0,
+          "shin": 239.99999999999994,
+          "upperArm": 200.00000000000003,
+          "forearm": 179.99999999999997
+        }
+      }
+    }
+  ],
+  "contactTable": [
+    {
+      "frame": 0,
+      "timeMs": 0,
+      "support": "LEFT",
+      "rootWorldDepth": 0.0,
+      "localAnkleDepth": 60.0,
+      "worldAnkleDepth": 60.0,
+      "contactZ": 0,
+      "expectedSupportWorldDepth": 60.0
+    },
+    {
+      "frame": 1,
+      "timeMs": 80,
+      "support": "LEFT",
+      "rootWorldDepth": 85.33333333333333,
+      "localAnkleDepth": -25.33333333333333,
+      "worldAnkleDepth": 60.0,
+      "contactZ": 0,
+      "expectedSupportWorldDepth": 60.0
+    },
+    {
+      "frame": 2,
+      "timeMs": 150,
+      "support": "LEFT",
+      "rootWorldDepth": 160.0,
+      "localAnkleDepth": -100.0,
+      "worldAnkleDepth": 60.0,
+      "contactZ": 0,
+      "expectedSupportWorldDepth": 60.0
+    },
+    {
+      "frame": 3,
+      "timeMs": 230,
+      "support": "LEFT",
+      "rootWorldDepth": 245.33333333333334,
+      "localAnkleDepth": -185.33333333333334,
+      "worldAnkleDepth": 60.0,
+      "contactZ": 0,
+      "expectedSupportWorldDepth": 60.0
+    },
+    {
+      "frame": 4,
+      "timeMs": 300,
+      "support": "RIGHT",
+      "rootWorldDepth": 320.0,
+      "localAnkleDepth": 60.0,
+      "worldAnkleDepth": 380.0,
+      "contactZ": 0,
+      "expectedSupportWorldDepth": 380.0
+    },
+    {
+      "frame": 5,
+      "timeMs": 380,
+      "support": "RIGHT",
+      "rootWorldDepth": 405.3333333333333,
+      "localAnkleDepth": -25.33333333333333,
+      "worldAnkleDepth": 380.0,
+      "contactZ": 0,
+      "expectedSupportWorldDepth": 380.0
+    },
+    {
+      "frame": 6,
+      "timeMs": 450,
+      "support": "RIGHT",
+      "rootWorldDepth": 480.0,
+      "localAnkleDepth": -100.0,
+      "worldAnkleDepth": 380.0,
+      "contactZ": 0,
+      "expectedSupportWorldDepth": 380.0
+    },
+    {
+      "frame": 7,
+      "timeMs": 530,
+      "support": "RIGHT",
+      "rootWorldDepth": 565.3333333333334,
+      "localAnkleDepth": -185.33333333333334,
+      "worldAnkleDepth": 380.0,
+      "contactZ": 0,
+      "expectedSupportWorldDepth": 380.0
+    },
+    {
+      "frame": "SEAM_F0",
+      "timeMs": 600,
+      "support": "LEFT",
+      "rootWorldDepth": 640.0,
+      "localAnkleDepth": 60.0,
+      "worldAnkleDepth": 700.0,
+      "contactZ": 0,
+      "expectedSupportWorldDepth": 700.0
+    }
+  ],
+  "eightStaticIdentityGate": "PASS_STATIC_IDENTITY_LOCK_FOR_SOUTH_AUTHORING_ONLY",
+  "imageCalls": 0,
+  "finishedArt": false,
+  "motionQualified": false,
+  "runtimeIntegrated": false,
+  "sourceDrivenAdjustment": {
+    "status": "ONE_AUTHORIZED_ATTACHMENT_ADJUSTMENT_NOT_ART_APPROVAL",
+    "proposalPath": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/core-rest-proposal-v1/proposal.json",
+    "proposalSha256": "66b568178639b52214da1e3514b161e85decdfe6e7429c631280c01df0840cdc",
+    "previousPlanSha256": "c6499aebde1287abe2066de1dfcc3f6fc74bae9b0952452a34024e3da27c87bf",
+    "staticCoreCalibration": {
+      "scale": 0.672919808,
+      "rotationRad": -0.000318866,
+      "translation": [
+        206.170592,
+        16.511619
+      ]
+    },
+    "frameRule": "Each core anchor translates by original lateral shift and bob; baseline depth\u2212100 is a model hypothesis. Constantbones solved by full3DIK; original wrist/ankle/heel/toe/contact/world tracks unchanged.",
+    "numericalMappingTolerancePx": 2,
+    "visibleFeatureFitResidualPx": [
+      2.96,
+      6.4
+    ],
+    "attachmentUncertaintyMeaning": "14px cloth seam /45px hidden hip uncertainty in RAWsource coordinates; not a2px measurement claim."
+  }
+}
