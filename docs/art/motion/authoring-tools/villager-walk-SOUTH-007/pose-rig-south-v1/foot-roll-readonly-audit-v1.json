@@ -1,0 +1,28 @@
+{
+  "schema": "south-foot-roll-readonly-audit/v1",
+  "timestampUtc": "2026-10-08T08:04:13.971795+00:00",
+  "status": "MODEL_PROPOSAL_ONLY_ACTUAL_SANDAL_PENDING",
+  "reviewer": "arm_tool; root checked immutable v4 foot projection branch and knownflat12px gate",
+  "pins": {
+    "tooling-v4/bake_keys.py": "b5ad84368a091cf1b2643e687fe7a98b7465906a52ede606a7eb89b791d29923",
+    "posePlanV3": "dd685b2b444e8c1b1cdcab04be06d92651c81657cf265489c90cee56203abfcf"
+  },
+  "finding": "Current v4 foot branch translates ankle+footlocal without rotation. V3 F0RIGHT/F4LEFT trailing heel AND toe are atZ12; not toe-grounded heelrise. Old planner checks fixedfootlength and supportlocks but no trailingtoecontact.",
+  "minimalFutureChange": "New reviewedplan+adapter perfoot contactMode/pitchRad/toeWorld3D and original-bound restlandmark/mesh refs. RigidP(q)=T+Rx(-theta)*(q-t) about actual observedtoe; positivepitchraisesheel for forwarddepth+Y. ToeZ0 heelZ>0 fortrailtoecontact. Derive ankleP(a_rest), re-solve kneeIK unchangedhip/thigh260/shin240/pole, reach20-500; preserve indexedankleseam and allalpha. Transform world to actorlocal then fixedcameraonce; root6541140 wholecanvas38 unchanged.",
+  "sourceConstraints": "Actual untouched lower-sandaloriginals, inspectedheel/toe solecontours+uncertainty, truthful hiddenankle hypothesis ifneeded; separate shin/rigidfoot region polygons sharedseam coverallalpha. No model-dimension substitution for measuredsourcepoints, preflexedsole, crop/stretch/cleanup.",
+  "validationRequired": [
+    "flat support toe/heel ground",
+    "trailing toe grounded heel rises",
+    "airborne swing",
+    "constant bone and foot distances",
+    "no triangle mirror/fold",
+    "continuous indexed ankle seam",
+    "actualkey native/half/game38 review",
+    "real8frame normal+grid loop before qualification"
+  ],
+  "filesChangedByAudit": false,
+  "actualFootSources": 0,
+  "contactAccepted": false,
+  "finishedKeys": 0,
+  "motionQualified": false
+}

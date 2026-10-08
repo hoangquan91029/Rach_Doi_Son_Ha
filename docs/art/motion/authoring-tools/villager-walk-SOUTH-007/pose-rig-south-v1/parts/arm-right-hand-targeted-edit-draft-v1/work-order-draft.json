@@ -1,0 +1,128 @@
+{
+  "schema": "south-lower-hand-targeted-edit-work-order-draft/v1",
+  "status": "READY_FOR_PARENT_INSPECTION",
+  "calls_authorized_now": 0,
+  "prospective_call_count": 1,
+  "retry_cap": 0,
+  "scope": "One targeted edit of the held edit-02 wrist+hand only. Preserve the usable bare forearm above the wrist. No whole-forearm regeneration, other parts, keys, motion, sidecar, runtime, or acceptance.",
+  "gate": "Do not call image_gen unless the parent inspects the READY draft and issues a separate finite authorization bound to its exact hashes. This work order authorizes zero calls.",
+  "target": {
+    "partId": "arm_right_lower_hand",
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-lower-hand-edit-02/raw.png",
+    "sha256": "f95457f586608347dd0648abbf769f0c77092f62da425d65de88d1bd1ba36f0c",
+    "decodedRgbaSha256": "b2260baf913a9aa25c5a0740d13ec03d9ad7b898b6fd68412b33c01462aec748",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "role": "EDIT_TARGET; prior held original preserved unchanged."
+  },
+  "inputsExactOrder": [
+    {
+      "order": 1,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-lower-hand-edit-02/raw.png",
+      "sha256": "f95457f586608347dd0648abbf769f0c77092f62da425d65de88d1bd1ba36f0c",
+      "decodedRgbaSha256": "b2260baf913a9aa25c5a0740d13ec03d9ad7b898b6fd68412b33c01462aec748",
+      "role": "EDIT_TARGET; exact bare source produced by the prior single authorized edit."
+    },
+    {
+      "order": 2,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/south-neutral-reference/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "decodedRgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6",
+      "role": "APPEARANCE_REFERENCE_ONLY; canonical South identity, relaxed hand, skin, and actor RIGHT thumb."
+    },
+    {
+      "order": 3,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-hand-targeted-edit-draft-v1/guide.png",
+      "sha256": "bcf8b52682993df935e66fe79eae831288e7eab964a5d851f028800541d62723",
+      "decodedRgbaSha256": "c52244fb639ebf1f2015bcbaad5ad98655f47bac8d5564918dd3d8e2dd77e2ca",
+      "role": "TARGET_SPACE_GEOMETRY_ONLY; wrist/hand proportions and pixel-space placement. No appearance authority."
+    }
+  ],
+  "excludedInputs": [
+    "No other source art or cloth/upper-sleeve image is attached.",
+    "guide-qa.png is QA only and is not an edit reference."
+  ],
+  "targetSpacePlan": {
+    "preserve": {
+      "region": "Keep the existing bare forearm and proximal contour; do not regenerate or change Image 1 pixels above y=650.",
+      "wristTransitionBandY": [
+        650,
+        710
+      ],
+      "transitionBandPurpose": "A narrow continuity blend around the observed wrist-neck contour only; no upper forearm redesign."
+    },
+    "wristNeckCandidate": {
+      "xyPx": [
+        608,
+        680
+      ],
+      "uncertaintyPx": 30,
+      "status": "observed contour candidate; not an anatomical joint measurement"
+    },
+    "newHandTarget": {
+      "fingertipYpx": [
+        840,
+        855
+      ],
+      "extensionBelowWristPx": [
+        150,
+        175
+      ],
+      "maxWidthPx": 160,
+      "thumbSide": "actor RIGHT; viewer-right/body-interior",
+      "pose": "relaxed, distinct gently curled fingers; no heavy curled hook"
+    },
+    "currentHeldComparison": {
+      "fingertipBottomYpx": 1093,
+      "approxMaxHandWidthPx": 245,
+      "parentReviewConclusion": "In assembled REST/F0 and native/game-size comparisons, the hand remains heavy and long. This draft narrows and shortens the hand only."
+    }
+  },
+  "unsealedFitContextOnly": {
+    "source": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-lower-hand-edit-02/landmark-fit-proposal-not-sidecar-v1.json",
+    "sha256": "c9a9af90a2731cad7d5ad507473472231f83af42d31d1b4a22e69fab3899e8e4",
+    "elbowConvention": {
+      "xyPx": [
+        630,
+        235
+      ],
+      "uncertaintyPx": 35,
+      "meaning": "Authored hidden-joint convention; not a measured anatomical elbow. Visible proximal boundary is near (630,214)."
+    },
+    "candidateUniformFit": {
+      "scale": 0.4040009667106303,
+      "rotationRad": -0.04939798331703771,
+      "use": "Proposal context only. Do not use to transform, warp, or calibrate the source image."
+    },
+    "parentReview": {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-lower-hand-edit-02/parent-review.json",
+      "sha256": "1005b4f93020f756591d4ca9787fb92508f2dc884a779111266a58dfd9c76d24"
+    }
+  },
+  "imagegenCallDraft": {
+    "tool": "builtin image_gen",
+    "intent": "edit",
+    "transparentBackground": true,
+    "outputs": 1,
+    "promptPath": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-hand-targeted-edit-draft-v1/prompt-draft.txt",
+    "referencedImagePaths": [
+      "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-lower-hand-edit-02/raw.png",
+      "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/south-neutral-reference/raw.png",
+      "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/arm-right-hand-targeted-edit-draft-v1/guide.png"
+    ],
+    "futureOutputDirectory": null,
+    "toolCallId": null,
+    "attemptId": null,
+    "promptSha256": "9df5ba31934375abb690e879ace0759d72bcb43599443b2e1045267e1934ab3b"
+  },
+  "qualification": {
+    "wholeKey": 0,
+    "motion": 0,
+    "sidecar": "not authorized",
+    "partAcceptance": "not authorized",
+    "runtimeUse": "not authorized"
+  },
+  "readyNote": "All draft files are frozen for parent inspection. Do not change them after READY. Calls authorized now remain zero."
+}
