@@ -1,5 +1,7 @@
 # Controlled2D character production specification
 
+Model routing (human instruction, 2026-10-08): use `model='gpt-6.1-sol'` and `reasoning_effort='low'` for every future code and art task in this project. Do not use Luna anywhere or silently fall back to another model. This supersedes the old master art Luna/HIGH split; preserve the original briefs, assets, directives and receipts as history. This is project routing policy, not a claim that the current chat UI model changed.
+
 Authority: PURE_2D_MASTER_DIRECTIVE_20261008.txt. No required3D geometry/model/Blender/UV/skin/clip/render steps. The final source is a complete illustrated2DPNG, not detached rotated limb textures. All gates begin pending.
 
 ## Canonical reference system

@@ -1,5 +1,7 @@
 # Graphics production plan — PURE 2D, 8 October2026
 
+Model routing (human instruction, 2026-10-08): use `model='gpt-6.1-sol'` and `reasoning_effort='low'` for every future code and art task in this project. Do not use Luna anywhere or silently fall back to another model. This supersedes the old master art Luna/HIGH split; preserve the original briefs, assets, directives and receipts as history. This is project routing policy, not a claim that the current chat UI model changed.
+
 Latest authority: PURE_2D_MASTER_DIRECTIVE_20261008.txt explicitly replaces the prior3D proposal. Character production is pure2D illustration and controlled frame-by-frame animation. The previous plan remains recoverable in Git219d1fe; no source asset or experiment is deleted.
 
 **Canonical2D Illustration →2D Character Consistency Specification →Controlled2D Key Poses →2D In-Between Frames →Finished Illustrated PNG Frames →Sprite Atlas →Web Game.**
