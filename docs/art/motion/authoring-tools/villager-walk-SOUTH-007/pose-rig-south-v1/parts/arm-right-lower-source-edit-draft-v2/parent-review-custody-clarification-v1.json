@@ -1,0 +1,16 @@
+{
+  "schema": "south-parent-draft-custody-clarification/v1",
+  "timestampUtc": "2026-10-08T07:54:30.540224+00:00",
+  "status": "CLARIFICATION_ONLY_NO_NEW_IMAGE_AUTHORIZATION",
+  "reason": "Parent inspected an in-progress no-overlap geometry guide59eb115c... before worker ready. Worker finalized guidec364... before first authorization script/staging, so first authorization and first committed guide already bind final c364. Parent conservatively stopped before call, then actually inspected finalc364 and issued v2 authorization. No source image call occurred under prior authorization.",
+  "snapshotFilenameWarning": "parent-reviewed-pre-overlap-snapshot is a misleading name: it is the actual committed14307ef snapshot, whose guide is finalc364 with30raw overlap, not the transient59eb guide. Do not infer59eb custody from that directory.",
+  "finalGuideSha256": "c364322b1ba422c96ac841b9d7d62c8a87071e98626602b2e5f003b0fc0035ae",
+  "snapshotGuideSha256": "c364322b1ba422c96ac841b9d7d62c8a87071e98626602b2e5f003b0fc0035ae",
+  "transientUnfinishedGuide": "59eb115c8da641e8d354e9bd753758b917ec15d5f052646376bdd91e80eef500 existed during worker draft edits and was viewed before readiness; exact bytes were not preserved before worker finalization. It was geometry-only authoring scratch, never source art/accepted original/called reference. This custody limit is disclosed rather than relabeled.",
+  "allActualArtOriginalsPreserved": true,
+  "priorCallConsumed": false,
+  "maximumTotalCallsAcrossAuthorizations": 1,
+  "authoritativeCallOrder": "parent-call-authorization-v2.json",
+  "authoritativeParentReview": "parent-guide-review-v2.json",
+  "parentActuallyViewedFinalBeforeNewAuthorization": true
+}
