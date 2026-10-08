@@ -1,0 +1,7 @@
+Rejected finite crowd experiment2; NOT integrated.
+
+Used attempt1 as external draft. Added only occupied intermediate-waypoint skipping within1.15worldunits with sweptpassability on every subsequent step; selectedgroup spacing max(.75, maxphysicaldiameter+.05) for naval compatibility; transport unload picks distinct occupancyclear passable landings and retains unlandable passengers/active unload order.
+
+Focused crowd invariant suite6/7pass. Navalheld-anchor progress nowpasses; original landheld/reserved-attacker fixture nowfails its progress assertion. Collisionclearance/speed/anchorposition checks stillpassed before thatfailure; exactstate determinism, recruitmentwait, waterford/subcellarrival, uniqueformation/embarked exclusion and opposingfordcombat checks passed. Per strict parent stopcap, no focusedAI, fullregression, browserrun, furtherrepair, build/deploy or commit was attempted. The new partialunload/navalspacing code did not receive dedicated tests because the prerequisite focusedgatefailed.
+
+Restored shared/sim.js from9dbd8bc byte-for-byte, SHA2560613dad6d4557c49a483a87deed918f8771ad6b8849c6dd1f4f80a4bb6bf7318; removed active proposal tests. Attempt1 restoredfullsuite72/72evidence remains valid because active source bytes are identical and no runtimechange remains. Proposedcode/tests/diff/focusedlog preserved here. Crowdstacking remains an open gameplay/visualgap; neither attempt accepted.

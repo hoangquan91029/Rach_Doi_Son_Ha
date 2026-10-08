@@ -1,0 +1,89 @@
+diff --git a/shared/sim.js b/shared/sim.js
+index 49fe04b..7a5359d 100644
+--- a/shared/sim.js
++++ b/shared/sim.js
+@@ -1,5 +1,8 @@
+ import {UNITS,BUILDINGS,CHARACTERS,MAPS,TERRAIN,BALANCE,TICK_RATE,SYNERGIES} from './data.js';
+ const DT=1/TICK_RATE, sq=(a,b)=>(a.x-b.x)**2+(a.y-b.y)**2, dist=(a,b)=>Math.sqrt(sq(a,b));
++// World-space physical footprints; rendering never participates in navigation.
++export const CROWD_RADII=Object.freeze({land:0.28,naval:0.4});
++const radius=e=>UNITS[e.type]?.naval?CROWD_RADII.naval:CROWD_RADII.land;
+ const living=e=>e.hp>0&&!e.embarked;
+ const stores=e=>['residence','granary','depot'].includes(e.type)&&e.hp>0&&!e.construction;
+ const combatant=e=>living(e)&&(UNITS[e.type]?.damage>0||BUILDINGS[e.type]?.damage>0);
+@@ -77,12 +80,39 @@ function path(s,e,target,range=0.4){
+ }
+ function active(s,e,kind){return s.effects.some(f=>f.owner===e.owner&&f.kind===kind&&f.until>s.tick&&(f.global||dist(e,f)<f.radius));}
+ function speed(s,e){const m=s.players[e.owner].modifiers,t=tile(s,e.x,e.y),r=e.food/e.foodMax;let v=UNITS[e.type].speed*m.speed*(TERRAIN[t]?.speed||1);if(UNITS[e.type].naval)v*=m.naval;if(e.type==='cavalry'&&t==='forest')v*=0.7;if(r<BALANCE.lowSupply)v*=r>0?0.85:0.6;if(active(s,e,'tempo')||active(s,e,'concentrate')||active(s,e,'deception'))v*=1.4;if(e.type==='wagon'&&active(s,e,'network'))v*=1.4;return v;}
++function unitClear(s,e,x,y,escape=false){
++ const naval=!!UNITS[e.type]?.naval;
++ return !s.entities.some(u=>u.id!==e.id&&u.kind==='unit'&&living(u)&&!!UNITS[u.type]?.naval===naval&&Math.hypot(x-u.x,y-u.y)<radius(e)+radius(u)-1e-8&&(!escape||Math.hypot(x-u.x,y-u.y)<=dist(e,u)+1e-8));
++}
++function sweptClear(s,e,x,y){
++ const distance=Math.hypot(x-e.x,y-e.y),parts=Math.max(1,Math.ceil(distance/0.08));
++ for(let i=1;i<=parts;i++){const q=i/parts,xx=e.x+(x-e.x)*q,yy=e.y+(y-e.y)*q;if(!pass(s,e,xx,yy)||!unitClear(s,e,xx,yy,true))return false;}return true;
++}
++function crowdStep(s,e,next,budget){
++ const dx=next.x-e.x,dy=next.y-e.y,d=Math.hypot(dx,dy);if(d<1e-8)return 0;
++ const amount=Math.min(d,budget),side=e.id%2?1:-1;
++ // A fixed handedness avoids per-frame random steering and preserves replay order.
++ for(const angle of [0,side*Math.PI/2,side*Math.PI/3,-side*Math.PI/2,-side*Math.PI/3]){
++  const ux=dx/d,uy=dy/d,c=Math.cos(angle),sn=Math.sin(angle),x=e.x+(ux*c-uy*sn)*amount,y=e.y+(ux*sn+uy*c)*amount;
++  // Look ahead before resuming the direct lane, avoiding repeated inward/outward jitter.
++  if(angle===0&&unitClear(s,e,e.x,e.y)&&!unitClear(s,e,e.x+ux*Math.min(d,0.75),e.y+uy*Math.min(d,0.75)))continue;
++  if(!sweptClear(s,e,x,y))continue;e.dir=(Math.round(Math.atan2(y-e.y,x-e.x)/(Math.PI/4))+8)%8;e.x=x;e.y=y;return amount;
++ }return 0;
++}
+ function travel(s,e,target,range=0.65){
+  if(dist(e,target)<=range){e.path=[];return true;}
+  const key=`${Math.floor(target.x)},${Math.floor(target.y)},${range},${s.navVersion}`;
+- if(!e.path.length||e.pathKey!==key){if(e.retryPath&&e.retryPath>s.tick)return false;e.path=path(s,e,target,range);e.pathKey=key;if(!e.path.length){e.retryPath=s.tick+20;return false;}}
++ if(!e.path.length||e.pathKey!==key){if(e.retryPath&&e.retryPath>s.tick)return false;e.path=path(s,e,target,range);e.pathKey=key;if(!e.path.length&&!(range<0.3&&dist(e,target)<1.5&&pass(s,e,target.x,target.y))){e.retryPath=s.tick+20;return false;}}
+  let remaining=speed(s,e)*DT;
+- while(e.path.length&&remaining>0){const next=e.path[0];if(!pass(s,e,next.x,next.y)){e.path=[];e.retryPath=0;break;}const d=dist(e,next);if(d>0){e.dir=(Math.round(Math.atan2(next.y-e.y,next.x-e.x)/(Math.PI/4))+8)%8;}if(d<=remaining){e.x=next.x;e.y=next.y;e.path.shift();remaining-=d;}else{e.x+=(next.x-e.x)/d*remaining;e.y+=(next.y-e.y)/d*remaining;remaining=0;}}
++ while(remaining>1e-8){
++  // An occupied intermediate grid center is advisory, not a required stopping point.
++  // Retain the next terrain-valid waypoint; every attempted shortcut is swept below.
++  while(e.path.length>1&&dist(e,e.path[0])<1.15&&!unitClear(s,e,e.path[0].x,e.path[0].y))e.path.shift();
++  const next=e.path[0]||(range<0.3&&dist(e,target)<1.5?target:null);if(!next)break;
++  if(!pass(s,e,next.x,next.y)){e.path=[];e.retryPath=0;break;}
++  if(dist(e,next)<1e-6){if(e.path.length){e.path.shift();continue;}break;}
++  const moved=crowdStep(s,e,next,remaining);if(!moved)break;remaining-=moved;if(dist(e,next)<1e-6&&e.path.length)e.path.shift();
++ }
+  e.state='walk';return dist(e,target)<=range;
+ }
+ function updateFog(s){
+@@ -112,7 +142,8 @@ export function command(s,p,c){
+  const ids=[...new Set(c.ids)],es=ids.map(id=>get(s,id));if(es.some(e=>!e||e.owner!==p||e.kind!=='unit'||e.embarked))return reject('Invalid unit ownership');
+  if(['move','attackMove'].includes(c.type)){
+   if(!bounds(s,c.x,c.y))return reject('Invalid destination');if(es.some(e=>active(s,e,'shock')))return reject('Assault commitment prevents retreat orders');
+-  for(const [i,e] of es.entries()){const offset=es.length>1?{x:(i%5-2)*0.45,y:(Math.floor(i/5)%5-2)*0.45}:{x:0,y:0};const target={x:Math.max(0.5,Math.min(s.map.width-0.5,c.x+offset.x)),y:Math.max(0.5,Math.min(s.map.height-0.5,c.y+offset.y))};cancelAttack(e);e.order={type:c.type,...target};e.path=[];e.retryPath=0;e.state='walk';}return {ok:true};
++  const spacing=Math.max(0.75,...es.map(e=>2*radius(e)+0.05));
++  for(const [i,e] of es.entries()){const offset=es.length>1?{x:(i%5-2)*spacing,y:(Math.floor(i/5)-(Math.ceil(es.length/5)-1)/2)*spacing}:{x:0,y:0};const target={x:Math.max(0.5,Math.min(s.map.width-0.5,c.x+offset.x)),y:Math.max(0.5,Math.min(s.map.height-0.5,c.y+offset.y))};cancelAttack(e);e.order={type:c.type,...target};e.path=[];e.retryPath=0;e.state='walk';}return {ok:true};
+  }
+  if(c.type==='stop'||c.type==='hold'){if(es.some(e=>active(s,e,'shock')))return reject('Assault commitment is active');for(const e of es){cancelAttack(e);e.order=c.type==='hold'?{type:'hold'}:null;e.path=[];e.state='idle';}return {ok:true};}
+  if(c.type==='attack'){
+@@ -210,10 +241,10 @@ function transfer(s,e,t,kind){
+   if(!t||t.embarked||t.kind!=='unit'||UNITS[t.type].naval){e.order=null;return;}if(travel(s,e,t,2.6)&&dist(e,t)<=2.6){if(e.cargo.units.length<UNITS.transport.capacity){cancelAttack(t);t.embarked=e.id;t.order=null;t.path=[];e.cargo.units.push(t.id);}e.order=null;}
+  }else{
+   const candidates=[];for(let y=Math.floor(e.y)-3;y<=Math.floor(e.y)+3;y++)for(let x=Math.floor(e.x)-3;x<=Math.floor(e.x)+3;x++)if(pass(s,{type:'villager',owner:e.owner},x+0.5,y+0.5)&&dist(e,{x:x+0.5,y:y+0.5})<=3)candidates.push({x:x+0.5,y:y+0.5});
+-  if(!candidates.length){travel(s,e,t,2.5);return;}for(const id of e.cargo.units){const u=get(s,id);if(u){const spot=candidates[0];u.x=spot.x;u.y=spot.y;u.embarked=null;u.state='idle';}}e.cargo.units=[];e.order=null;
++  if(!candidates.length){travel(s,e,t,2.5);return;}const remaining=[];for(const id of e.cargo.units){const u=get(s,id);if(!u)continue;const spot=candidates.find(q=>pass(s,u,q.x,q.y)&&unitClear(s,u,q.x,q.y));if(!spot){remaining.push(id);continue;}u.x=spot.x;u.y=spot.y;u.embarked=null;u.state='idle';}e.cargo.units=remaining;if(!remaining.length)e.order=null;
+  }
+ }
+-function spawnPoint(s,b,type){const e={type,owner:b.owner};let best=null;for(let r=1;r<=4&&!best;r++)for(let y=-r;y<=r&&!best;y++)for(let x=-r;x<=r&&!best;x++){if(Math.abs(x)!==r&&Math.abs(y)!==r)continue;const xx=Math.floor(b.x)+x+0.5,yy=Math.floor(b.y)+y+0.5;if(pass(s,e,xx,yy))best={x:xx,y:yy};}return best;}
++function spawnPoint(s,b,type){const e={type,owner:b.owner};let best=null;for(let r=1;r<=4&&!best;r++)for(let y=-r;y<=r&&!best;y++)for(let x=-r;x<=r&&!best;x++){if(Math.abs(x)!==r&&Math.abs(y)!==r)continue;const xx=Math.floor(b.x)+x+0.5,yy=Math.floor(b.y)+y+0.5;if(pass(s,e,xx,yy)&&unitClear(s,e,xx,yy))best={x:xx,y:yy};}return best;}
+ function tickBuilding(s,b){
+  if(b.construction){const u=get(s,b.construction.builder);if(u&&u.order?.type==='build'&&u.order.target===b.id&&dist(u,b)<=BUILDINGS[b.type].radius+1.4){const amount=DT*(active(s,u,'restore')?2:1);b.construction.remaining-=amount;b.hp=Math.min(b.maxHp,b.hp+b.maxHp*0.88/b.construction.total*amount);u.state='build';if(b.construction.remaining<=0){b.construction=null;b.hp=b.maxHp;u.order=null;event(s,`${BUILDINGS[b.type].name} completed`,b.owner);}}return;}
+  if(b.queue.length){const q=b.queue[0];q.remaining=Math.max(0,q.remaining-DT*(active(s,b,'mobilize')?2:1));if(q.remaining===0){const spot=spawnPoint(s,b,q.unit);if(spot){add(s,b.owner,q.unit,spot.x,spot.y);b.queue.shift();}}}
+@@ -233,8 +264,8 @@ function tickUnit(s,e){
+  else if(o?.type==='gather')gather(s,e,s.map.resources.find(r=>r.id===o.target));
+  else if(o?.type==='load'||o?.type==='unload'){const t=get(s,o.target);if(!t)e.order=null;else transfer(s,e,t,o.type);}
+  else if(o?.type==='attack'){const t=get(s,o.target);if(!t)e.order=null;else if(visible(s,e.owner,t)){o.lastX=t.x;o.lastY=t.y;attack(s,e,t);}else if(travel(s,e,{x:o.lastX,y:o.lastY},0.8))e.order=null;}
+- else if(o?.type==='move'){if(travel(s,e,o,0.7))e.order=null;}
+- else if(o?.type==='attackMove'){const t=d.damage?nearestEnemy(s,e,Math.min(d.vision,7)):null;if(t)attack(s,e,t);else if(travel(s,e,o,0.7))e.order=null;}
++ else if(o?.type==='move'){if(travel(s,e,o,0.12))e.order=null;}
++ else if(o?.type==='attackMove'){const t=d.damage?nearestEnemy(s,e,Math.min(d.vision,7)):null;if(t)attack(s,e,t);else if(travel(s,e,o,0.12))e.order=null;}
+  else if(d.damage>0&&e.type!=='villager'&&e.type!=='king'){const t=nearestEnemy(s,e,o?.type==='hold'||e.type==='general'?d.range:6);if(t)attack(s,e,t);}
+  if(e.x!==previous.x||e.y!==previous.y)e.lastMovedTick=s.tick;
+ }

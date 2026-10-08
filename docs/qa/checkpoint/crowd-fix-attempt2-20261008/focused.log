@@ -1,0 +1,33 @@
+✖ crowd movement preserves held and reserved attackers, clearance and fixed tick speed (26.686072ms)
+✔ same crowd ties and extra read-only views give identical complete state (279.049343ms)
+✔ recruits use distinct exits; a completed queue waits while every exit is occupied (788.428172ms)
+✔ swept steering cannot cross water, impassable terrain or building footprints (13.154844ms)
+✔ formation rows never wrap at twenty-five units and embarked bodies do not obstruct ground movement (3.902229ms)
+✔ opposing groups at a narrow ford retain clearance and produce combat rather than permanent blockage (195.977505ms)
+✔ naval units use their own physical radius and retain water-only navigation (13.870244ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 6
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1376.186486
+
+✖ failing tests:
+
+test at tests/crowd.test.js:9:1
+✖ crowd movement preserves held and reserved attackers, clearance and fixed tick speed (26.686072ms)
+  AssertionError [ERR_ASSERTION]: local steering progresses around anchor
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/crowd.test.js:9:722)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.start (node:internal/test_runner/test:1096:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:385:17) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

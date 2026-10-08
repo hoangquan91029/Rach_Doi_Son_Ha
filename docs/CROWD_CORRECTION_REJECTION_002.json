@@ -1,0 +1,26 @@
+{
+  "schema": "crowd-correction-parent-rejection/v1",
+  "status": "REJECTED_FOCUSED_LAND_PROGRESS_GATE_BASELINE_RESTORED",
+  "timestampUtc": "2026-10-08T01:11:58.334860+00:00",
+  "sourceSha256": "0613dad6d4557c49a483a87deed918f8771ad6b8849c6dd1f4f80a4bb6bf7318",
+  "preservedFiles": {
+    "focused.log": "220db1fce72a2dac6dbf16669b4969d3ee2a0f80fc566e72364200dea9d6e983",
+    "README.md": "1a496234a314eef1c102b29c09a2e25fe5442711ab12693ecaaa87c3bef08061",
+    "sim-proposal.js": "4bc2d4c011093c0910889d2f3bf0af5567350b5b121b48054faaff3e30f14337",
+    "proposal.patch": "381f60413afe68308e30434da8288512c255f32b8fb6d0f53e842a03c2042faf",
+    "crowd-proposal.test.js": "a88c9ed75e4f7a622649b0aec2a9112831ac6023f25a1bcd0eb1544c6e4d7827"
+  },
+  "focusedGate": {
+    "passed": 6,
+    "failed": 1,
+    "failure": "land movement around held/reserved-attacker anchor does not progress",
+    "improvement": "naval occupied waypoint progress passes"
+  },
+  "broaderAiTestsRun": false,
+  "fullSuiteRepeated": false,
+  "previous72PassAppliesToIdenticalRestoredBytes": true,
+  "runtimeIntegrated": false,
+  "deployed": false,
+  "crowdIssueResolved": false,
+  "remaining": "Local waypoint bypass alone does not resolve land crowd deadlock; no further navigation draft authorized."
+}

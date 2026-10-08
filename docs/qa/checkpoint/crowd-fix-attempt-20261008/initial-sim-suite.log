@@ -1,0 +1,211 @@
+✔ same seed and commands have identical complete state hashes (1748.915099ms)
+✔ unknown commands, malformed coordinates, prototype keys and ownership are rejected without spending (0.648367ms)
+✔ General combat death wins immediately and freezes progression (5.104076ms)
+✔ residence destruction never defeats player; only King replacement and construction reservation prevent duplicates (405.143231ms)
+✔ ration consumption, finite Granary resupply, empty inventory and residence healing (72.599073ms)
+✔ wagon loading conserves food, transport moves finite cargo, unloading transfers inventory (236.788066ms)
+✔ wood delivered to remote depot credits strategic pool (2.981188ms)
+✔ iron delivered to remote depot credits strategic pool (2.083529ms)
+✔ fog hides enemy General and private resources/queues; hidden targets cannot be attacked (2.057326ms)
+✔ delta: land routes cross fords and sea remains impassable (1387.063214ms)
+✔ coast: land routes cross fords and sea remains impassable (1365.20775ms)
+✔ transport passengers are removed from land navigation and can unload at coastline (221.755693ms)
+✔ training reserves population and spends costs once; leaders cannot be trained (100.0323ms)
+✔ 12 characters have distinct abilities; cooldown and terrain gating are authoritative (0.736116ms)
+✔ AI earns resources, produces an army and protects its General without cheats (22594.663904ms)
+✖ delta easy: AI completes normal combat victory (4159.123266ms)
+✖ delta normal: AI completes normal combat victory (46627.926096ms)
+✖ delta hard: AI completes normal combat victory (4528.582701ms)
+✖ coast easy: AI completes normal combat victory (4353.985483ms)
+✖ coast normal: AI completes normal combat victory (5083.187282ms)
+✖ coast hard: AI completes normal combat victory (4742.779822ms)
+✔ unfinished construction can be resumed by King and canceled with bounded refund (415.247178ms)
+✔ enemy death is visible while private orders never expose enemy movements (4.118144ms)
+✖ delta: AI trains, embarks, lands naval raiders and delivers physical frontline food (46548.266883ms)
+✖ coast: AI trains, embarks, lands naval raiders and delivers physical frontline food (5086.7663ms)
+✔ embarked General dies when enemy destroys transport and causes normal defeat (314.410239ms)
+✔ completed fort preserves the historical fortification HP modifier (402.45551ms)
+✔ repeated construction cancellation loses resources and cannot mint wood or iron (0.618323ms)
+✔ Granary and wagon resupply conserve finite food; exhausted stores cannot create rations (283.121219ms)
+✔ default unsupplied infantry enters low supply, starvation and delayed attrition in a prolonged match (3078.236567ms)
+✔ construction cannot trap its builder or other units inside the footprint (0.47822ms)
+✔ delta: terrain and resource opportunities are reflected equally for both seats (1.042889ms)
+✔ coast: terrain and resource opportunities are reflected equally for both seats (0.569328ms)
+✔ authoritative windup deals nothing before impact and hits exactly once with public late-snapshot timing (2.987683ms)
+✔ death, accepted move, stop, embark, hidden and out-of-range target cancel reserved attacks (4.759573ms)
+✔ same-target spam preserves windup; retarget and cancellation cannot accelerate recovery (2.416281ms)
+✔ read-only display snapshot rates cannot change complete authoritative combat hashes (568.810177ms)
+✔ changing targets consumes the original reservation and cannot produce an old-target impact (2.780848ms)
+✔ impact rejects dead or newly friendly targets and artillery splash waits for the same impact (2.748673ms)
+ℹ tests 39
+ℹ suites 0
+ℹ pass 31
+ℹ fail 8
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 154423.570314
+
+✖ failing tests:
+
+test at tests/sim.test.js:23:87
+✖ delta easy: AI completes normal combat victory (4159.123266ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  null !== 1
+  
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/sim.test.js:23:231)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: null,
+    expected: 1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/sim.test.js:23:87
+✖ delta normal: AI completes normal combat victory (46627.926096ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  null !== 1
+  
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/sim.test.js:23:231)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: null,
+    expected: 1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/sim.test.js:23:87
+✖ delta hard: AI completes normal combat victory (4528.582701ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  null !== 1
+  
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/sim.test.js:23:231)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: null,
+    expected: 1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/sim.test.js:23:87
+✖ coast easy: AI completes normal combat victory (4353.985483ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  null !== 1
+  
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/sim.test.js:23:231)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: null,
+    expected: 1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/sim.test.js:23:87
+✖ coast normal: AI completes normal combat victory (5083.187282ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  null !== 1
+  
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/sim.test.js:23:231)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: null,
+    expected: 1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/sim.test.js:23:87
+✖ coast hard: AI completes normal combat victory (4742.779822ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  null !== 1
+  
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/sim.test.js:23:231)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: null,
+    expected: 1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/sim.test.js:27:38
+✖ delta: AI trains, embarks, lands naval raiders and delivers physical frontline food (46548.266883ms)
+  AssertionError [ERR_ASSERTION]: actual transport passengers must embark
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/sim.test.js:39:9)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/sim.test.js:27:38
+✖ coast: AI trains, embarks, lands naval raiders and delivers physical frontline food (5086.7663ms)
+  AssertionError [ERR_ASSERTION]: actual transport passengers must embark
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/sim.test.js:39:9)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

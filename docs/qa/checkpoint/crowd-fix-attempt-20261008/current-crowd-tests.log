@@ -1,0 +1,38 @@
+✔ crowd movement preserves held and reserved attackers, clearance and fixed tick speed (23.801508ms)
+✔ same crowd ties and extra read-only views give identical complete state (292.034452ms)
+✔ recruits use distinct exits; a completed queue waits while every exit is occupied (800.363695ms)
+✔ swept steering cannot cross water, impassable terrain or building footprints (13.872514ms)
+✔ formation rows never wrap at twenty-five units and embarked bodies do not obstruct ground movement (3.444108ms)
+✔ opposing groups at a narrow ford retain clearance and produce combat rather than permanent blockage (215.110379ms)
+✖ naval units use their own physical radius and retain water-only navigation (19.71666ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 6
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1417.381189
+
+✖ failing tests:
+
+test at tests/crowd.test.js:17:1
+✖ naval units use their own physical radius and retain water-only navigation (19.71666ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(a.x>13)
+  
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/crowd.test.js:17:498)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

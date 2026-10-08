@@ -1,0 +1,73 @@
+{
+  "schema": "south-core-static-calibration-parent-review/v1",
+  "status": "PASS_ONE_STATIC_UNIFORM_CORE_AUTHORING_CALIBRATION_MODEL_ADJUSTMENT_PENDING",
+  "timestampUtc": "2026-10-08T01:14:31.528684+00:00",
+  "reviewer": "root parent",
+  "proposalSha256": "66b568178639b52214da1e3514b161e85decdfe6e7429c631280c01df0840cdc",
+  "rawSha256": "b5d8542917309bacf90dfd117d8d2da287d9b6eb9c63c4b358e8e5d09f250c6a",
+  "inspected": [
+    "sourcecloth-cap annotation with uncertainty and authoredhiphypotheses",
+    "native actualcore uniform-rest comparison against sealedSouth",
+    "fixedwholecanvas38 actualcomparison"
+  ],
+  "calibration": {
+    "scale": 0.672919808,
+    "rotationRad": -0.000318866,
+    "translation": [
+      206.170592,
+      16.511619
+    ],
+    "fixedForAllAuthoredKeys": true,
+    "visibleFeatureFitResidualPx": [
+      2.96,
+      6.4
+    ],
+    "sourceFeatureUncertaintyIsNotNumericalMappingTolerance": true
+  },
+  "landmarkMethods": {
+    "shoulders": "authored_cloth_attachment_convention on observed source garment, not measured anatomical joint",
+    "hips": "authored_hidden_hypothesis, not observed joint"
+  },
+  "uncertaintySourcePx": {
+    "shoulderCapAttachment": 14,
+    "hiddenHip": 45
+  },
+  "findings": [
+    "Uniform rest scale restores hat/head/tunic/hem near canonical placement at native and38 with no perpose or boundingboxfit.",
+    "Face/costume/sash remain coherent; fringe remains candidate warning.",
+    "Old shoulder anchors are outside actual core; adjust model using inspected attachment conventions.",
+    "Source attachment convention uncertainty and3D anatomical/motion validity require complete illustrated key review."
+  ],
+  "authorizedAdjustment": {
+    "newContract": "part-contract-v3.json",
+    "newTooling": "tooling-v4",
+    "newPosePlan": "walk-south-keys-v3",
+    "preserve": [
+      "all prior contracts/tooling/poseplans/raws"
+    ],
+    "constantBones": [
+      260,
+      240,
+      200,
+      180
+    ],
+    "fixedRoot": [
+      654,
+      1140
+    ],
+    "fixedCanvas": [
+      1254,
+      1254
+    ],
+    "wholeCanvasLogicalSize": 38,
+    "originalFootWorldTracksPreserved": true,
+    "coreSidecarInspectorRequired": true,
+    "imageCalls": 0,
+    "otherParts": 0,
+    "wholeKeysWithoutNineOriginals": 0
+  },
+  "calibratedComponentCountAfterInspectorOnly": 1,
+  "calibratedComponentCountNow": 0,
+  "motionQualified": false,
+  "finalArtApproved": false
+}

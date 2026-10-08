@@ -1,0 +1,244 @@
+{
+  "schema": "south-core-rest-proposal/v1",
+  "status": "MODEL_ONLY_PARTIAL_REST_INSPECTION_UNSEALED_PENDING_PARENT_REVIEW",
+  "purpose": "Read-only one-time uniform rest-space proposal for the existing core original; not a rig sidecar, not key art, not a completed character, not runtime acceptance.",
+  "sources": {
+    "core_raw": {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/pose-rig-south-v1/parts/core-head-torso-pelvis-01/raw.png",
+      "sha256": "b5d8542917309bacf90dfd117d8d2da287d9b6eb9c63c4b358e8e5d09f250c6a",
+      "decoded_rgba_sha256": "d7cd792b95e7ff329909b0fbd682e24b6f7e5beb4fa2eec3af427ea1916c6e52",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "canonical_south": {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-SOUTH-007/identity/south-neutral-reference/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "decoded_rgba_sha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    }
+  },
+  "calibration": {
+    "type": "one-time static uniform similarity transform raw core pixel coordinates to source-rest screen coordinates",
+    "scale": 0.672919808,
+    "rotation_rad": -0.000318866,
+    "translation_xy": [
+      206.170592,
+      16.511619
+    ],
+    "provenance": "Read-only four-visible-feature fit reported by the engineer; preparation cross-check uses approximate observed hat apex, left/right brim extrema and lower tunic hem correspondences listed here. Fit residuals reported as 2.96\u20136.40 source-rest px; proposal remains unsealed.",
+    "no_anisotropic_scaling": true,
+    "no_bbox_fit": true,
+    "no_per_frame_fit": true,
+    "no_raw_edit": true,
+    "root_pivot_xy": [
+      654,
+      1140
+    ],
+    "root_pivot_note": "Fixed full-character ground pivot; core part remains at its calibrated rest coordinates. A producer toe estimate is not substituted for the root."
+  },
+  "visible_feature_correspondences_approx": [
+    {
+      "feature": "hat apex",
+      "raw_xy_approx": [
+        621,
+        45
+      ],
+      "south_xy_approx": [
+        626,
+        52
+      ],
+      "fit_residual_px_reported_range": [
+        2.96,
+        6.4
+      ]
+    },
+    {
+      "feature": "hat left brim extremum",
+      "raw_xy_approx": [
+        374,
+        286
+      ],
+      "south_xy_approx": [
+        458,
+        205
+      ],
+      "fit_residual_px_reported_range": [
+        2.96,
+        6.4
+      ]
+    },
+    {
+      "feature": "hat right brim extremum",
+      "raw_xy_approx": [
+        879,
+        252
+      ],
+      "south_xy_approx": [
+        795,
+        182
+      ],
+      "fit_residual_px_reported_range": [
+        2.96,
+        6.4
+      ]
+    },
+    {
+      "feature": "lower tunic hem center",
+      "raw_xy_approx": [
+        634,
+        1214
+      ],
+      "south_xy_approx": [
+        634,
+        839
+      ],
+      "fit_residual_px_reported_range": [
+        2.96,
+        6.4
+      ]
+    }
+  ],
+  "attachment_proposals": [
+    {
+      "id": "actor_right_shoulder_cap",
+      "viewer_side": "left",
+      "source_raw_xy_approx": [
+        430,
+        484
+      ],
+      "proposed_rest_xy_approx": [
+        495.63,
+        342.11
+      ],
+      "kind": "authored cloth attachment convention on visible cap",
+      "uncertainty_source_px": 14,
+      "evidence": "Point falls inside the broad ivory shoulder-cap cloth, inset from its visible outer corner and below the top shoulder slope. It is a practical arm-underlap seam convention, not a measured anatomical shoulder joint."
+    },
+    {
+      "id": "actor_left_shoulder_cap",
+      "viewer_side": "right",
+      "source_raw_xy_approx": [
+        820,
+        484
+      ],
+      "proposed_rest_xy_approx": [
+        758.07,
+        342.03
+      ],
+      "kind": "authored cloth attachment convention on visible cap",
+      "uncertainty_source_px": 14,
+      "evidence": "Point falls inside the broad ivory shoulder-cap cloth, inset from its visible outer corner and below the top shoulder slope. It is a practical arm-underlap seam convention, not a measured anatomical shoulder joint."
+    }
+  ],
+  "hip_pivot_hypotheses": [
+    {
+      "id": "actor_right_hip_under_tunic",
+      "viewer_side": "left",
+      "source_raw_xy_hypothesis": [
+        510,
+        870
+      ],
+      "proposed_rest_xy_approx": [
+        549.55,
+        601.84
+      ],
+      "uncertainty_source_px": 45,
+      "status": "authored_hidden_hypothesis_not_measured",
+      "evidence": "The hip is occluded by the long tunic and sash. This is a provisional pivot hypothesis below the visible sash/waist mass where the actor-right upper-leg overlap could emerge; the cloth does not expose the joint."
+    },
+    {
+      "id": "actor_left_hip_under_tunic",
+      "viewer_side": "right",
+      "source_raw_xy_hypothesis": [
+        785,
+        870
+      ],
+      "proposed_rest_xy_approx": [
+        734.6,
+        601.78
+      ],
+      "uncertainty_source_px": 45,
+      "status": "authored_hidden_hypothesis_not_measured",
+      "evidence": "The hip is occluded by the long tunic and sash, including the actor-left sash-tail region. This is a provisional pivot hypothesis under the waist/upper-thigh overlap, not a measured point and not inferred from a guide patch."
+    }
+  ],
+  "visual_diagnosis": {
+    "observed": "Core has a broad sleeveless tunic shoulder cap on both sides; approximate alpha>128 outer contour around x397\u2013852 at y440, tapering with the shoulder slope. These bounds describe cloth silhouette, not joints.",
+    "scale": "Parent review estimated core hat width about500 vs canonical ~330, shoulder span about448 vs ~312, and lower hem about1215 vs ~846. A single uniform scale near0.673 brings overall hat/hem occupancy toward canonical proportions.",
+    "warnings": [
+      "Thin colored source fringe remains.",
+      "Four-feature fit residual exceeds the prior strict 2px target in some areas; this is a proposal, not sealed calibration.",
+      "Existing rest target shoulder anchors x834/474 overrun the visible core cap and are not retained.",
+      "Core only: no shoulders/arms beyond garment caps, pelvis limbs, feet or motion."
+    ]
+  },
+  "qa_outputs": {
+    "partial-rest-core-native.png": {
+      "sha256": "c2dfb7cdb444b65f5acfd078d43634d9e599c724bf78bbd8cdba1b4167843125",
+      "decoded_rgba_sha256": "44aeff66d28b23645ef319c9fd67f4bbf82653e72e44c8057bc565a5f20d0d3b",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "note": "QA preview only; source raw is unchanged."
+    },
+    "partial-rest-core-fixed-38px.png": {
+      "sha256": "31c668120c5691d85a0d466fa5fcab16fb5bb81b6df6ae9cee3f0ceae2f60f28",
+      "decoded_rgba_sha256": "e23daeeffff371eb34b678da77c32f4804b3f5f4c96dc40dd082ab1391fecec8",
+      "dimensions": [
+        38,
+        38
+      ],
+      "note": "QA preview only; source raw is unchanged."
+    },
+    "partial-rest-core-fixed-38px-3x.png": {
+      "sha256": "d4150f9e0d25557d198279088691b9903c757e81b7812cb125264509e27b0172",
+      "decoded_rgba_sha256": "73b3b2422bb91339b30fa49f0c132ce47a97ed1e6a584047bff84e22f687e8bb",
+      "dimensions": [
+        114,
+        114
+      ],
+      "note": "QA preview only; source raw is unchanged."
+    },
+    "partial-rest-comparison-south-native-QA.png": {
+      "sha256": "9bb66b2c95f744abbcc96ec420ccbae97d09502c4ea85d32238eed955ee31140",
+      "decoded_rgba_sha256": "952938e5295d2ed59cbcc840b51fe264702aaee4e9dfb4ff239d927be07abc9b",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "note": "QA preview only; source raw is unchanged."
+    },
+    "partial-rest-comparison-south-fixed-38px-QA.png": {
+      "sha256": "fcfdd7f9350dcd23bc0500249813cb685b14e20e3cbcfeb759d4cb8c3d49455c",
+      "decoded_rgba_sha256": "a02154787a0239c7d2b141235d77ea1ee222f3c1f5b7daae5b9c707c8adc4141",
+      "dimensions": [
+        38,
+        38
+      ],
+      "note": "QA preview only; source raw is unchanged."
+    },
+    "source-landmarks-QA-only.png": {
+      "sha256": "3a3550f31360684f4a27665c8d8e350b767ee012bbe44c7c8cfe34f8800e7cce",
+      "decoded_rgba_sha256": "82550e51f69e3a953a993d18e3665b8449bbcfc9d97248c6a57c6e9e6391abae",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "note": "QA preview only; source raw is unchanged."
+    }
+  },
+  "acceptance_state": {
+    "calibration_sealed": false,
+    "sidecar_inspector_run": false,
+    "key_baking_authorized": false,
+    "other_part_calls_authorized": 0,
+    "motion_qualified": false,
+    "final_art_approved": false
+  }
+}
