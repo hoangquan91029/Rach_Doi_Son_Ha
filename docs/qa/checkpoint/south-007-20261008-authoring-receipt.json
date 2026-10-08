@@ -1,0 +1,94 @@
+{
+  "schema": "south-authoring-near-quota-checkpoint/v1",
+  "timestampUtc": "2026-10-08T02:02:30.060767+00:00",
+  "sourceHeadBeforeCheckpointCommit": "6233b52f1bffec647e811b45503e8b7bc26a4c61",
+  "projectComplete": false,
+  "finalVisualGate": "FAIL",
+  "usageObserved": {
+    "primaryUsedPercent": 90,
+    "weeklyUsedPercent": 73,
+    "ordinaryUsageAllowed": true,
+    "primaryResetUnix": 1791437867,
+    "primaryResetUtc": "2026-10-08T05:37:47Z",
+    "freeResetCreditsUsed": 0
+  },
+  "originalParts": {
+    "core-head-torso-pelvis-01": {
+      "rawSha256": "b5d8542917309bacf90dfd117d8d2da287d9b6eb9c63c4b358e8e5d09f250c6a",
+      "rgbaSha256": "d7cd792b95e7ff329909b0fbd682e24b6f7e5beb4fa2eec3af427ea1916c6e52",
+      "repoCopyByteIdentical": true,
+      "calibrated": true,
+      "held": false
+    },
+    "arm-right-upper-01": {
+      "rawSha256": "ebeace7fb22057c786b56e00d8634832b5261d905d9fa91904f57bc413e37d46",
+      "rgbaSha256": "f9a382adb47cb2d8a3671c772849b6181086acd56b8b1710346cce8b15fc4bcf",
+      "repoCopyByteIdentical": true,
+      "calibrated": true,
+      "held": false
+    },
+    "arm-right-lower-hand-01": {
+      "rawSha256": "1984793eb1fc2c57c1dafac2f454e0f57b6d48d03ead610958a333cf342ebf54",
+      "rgbaSha256": "cdcc37631c109eb97f7d254cbd106873a3d454eeeb0f73bf00cb76de96591ecf",
+      "repoCopyByteIdentical": true,
+      "calibrated": false,
+      "held": true
+    }
+  },
+  "counts": {
+    "staticIdentityViewsSealed": 8,
+    "wholeCharacterWalkSources": 4,
+    "wholeWalkSelectedKeyCandidates": 1,
+    "wholeWalkHeldSources": 3,
+    "originalRigPartsGenerated": 3,
+    "componentImageCalls": 3,
+    "calibratedAuthoringParts": 2,
+    "heldComponents": 1,
+    "missingOriginalPartSlots": 6,
+    "finishedIllustratedBakedKeys": 0,
+    "qualifiedLoops": 0,
+    "remainingOpenImageCalls": 0
+  },
+  "authoringValidation": {
+    "v4ParentChecks": 23,
+    "v4NonArtChecks": 18,
+    "v4ActualCoreOnlyChecks": 5,
+    "v5NonArtParentChecks": 5,
+    "copiedV5Checks": {
+      "passed": 5,
+      "seconds": 2.236
+    },
+    "actualUpperarmSidecarReadOnlyInspection": "PASS all4bounds/allalpha/custody/fixeduniformfit",
+    "nativeHalf38PartialReview": "PASS authoring only; not finishedcharacter or motion",
+    "sourceCopiesVerified": true,
+    "static8SourceAndParentSealCustody": "PASS via v4locked_inputs"
+  },
+  "runtime": {
+    "changesThisWindow": false,
+    "simulationSha256": "0613dad6d4557c49a483a87deed918f8771ad6b8849c6dd1f4f80a4bb6bf7318",
+    "baselineNodeTests": 72,
+    "baselineTestsPassedThisWindowAfterDraft1Restoration": true,
+    "draft2RestoredIdenticalBytes": true,
+    "productionBundleSha256": "ca8e6428603c0033ccd9926fdb69daa5d78cee28fef4259607946530fe02e08b",
+    "buildOrServiceRestartOrDeploymentThisWindow": false,
+    "unapprovedRuntimeArtCandidates": 14,
+    "denseVisualAcceptance": false,
+    "crowdStacking": "OPEN; two attempted navigation fixes rejected/preserved"
+  },
+  "leadershipCustody": {
+    "originalsVerified": 148,
+    "rgbaDerivativesVerified": 96
+  },
+  "automation": {
+    "id": "continue-r-ch-i-s-n-h-after-reset",
+    "status": "ACTIVE",
+    "existingFiveHourSchedulePreserved": true,
+    "quietIntentPreserved": true,
+    "boundedResetRecheckSaved": true,
+    "isExactResetWebhook": false
+  },
+  "next": "After livequota/repo/docinspection, prepare a bounded builtin source-edit correction for HELD lowerarm (duplicatecuff/proportions), exact actualtarget/identity/controlledguide + finite new workorder. Preserve original and unsealed landmarkrecord; no samegenericretry/no crop/alpha-cutting/mirroring/aniso/perposefitting. Inspect complete actual3part arm atnative/half/fixed38 before accepting uniformcalibration. Then remaining6partslots under sequential finite review. Actualtoe-groundedheelroll BEFORE completefourkey review; onlythen inbetweens/full8loop+independentmotionreview.",
+  "noImageCallOpen": true,
+  "motionQualified": false,
+  "finalArtApproved": false
+}
