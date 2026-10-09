@@ -1,0 +1,9 @@
+# 235 whole fortification API candidate
+
+Local candidate only. No new asset, route, build or gameplay scene. Existing public230 remains exact, PID575363 unchanged.42 focused contracts PASS:8 new selection/validation/integration,20 topology,10 picker,3Fort,1 existing visual picker. Synthetic test fixtures exercise API behavior and do not grant artwork approval.
+
+Optional asset metadata: `fortification: {mask: 0..15, axis?: "X"|"Y"}`. It requires building wall/gate family and null direction. The mask bits match215 (+X1,-X2,+Y4,-Y8); declared gate axis must equal deterministic mask axis (ties/default X). A whole asset is selected for one exact visible mask/state; its ordinary existing fixed canvas/cell/pivot/render and source/runtime provenance contracts apply. No rotation, mirror, assembly or pixel splicing.
+
+Manifest validation rejects ambiguous duplicate family aliases/state/mask and changed fixed layout across whole variants. Runtime selection also returns a bounded reason on ambiguity/missing context/mask/state. Only optional fort route allows Wall/Gate. Renderer-visible same-owner completed topology map is passed by reference to render sample and alpha picking; authoritative dir unchanged. Construction/underConstruction/hit/death unsupported assets and missing variants retain existing procedural fallback. Existing unit/building manifests without metadata retain behavior.
+
+Input and final source hashes archived. No baseline test failure claimed: prior source visibly had no Wall/Gate raster eligibility, and new helper/API did not exist.42 tests were run against actual current code. No isolated build needed until a whole asset is selected for integration; current234 source can remain HELD independently. No public service/dist/sourceart or balance changes, no final visual/runtime acceptance.

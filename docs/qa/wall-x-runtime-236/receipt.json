@@ -1,0 +1,64 @@
+{
+  "status": "ACTUAL_X_WALL_TRIAL_PASS_ALIGNMENT_PROVISIONAL_ROOT_INTAKE",
+  "chunk": "/tmp/rds-wall236-build/assets/index-Crc_Aowm.js",
+  "bundleSHA256": "e430f20520c26cb20644fa51b84d3ef53cace995116a3df4fd0b0b73c24ae25c",
+  "simSHA256": "29233a059ec084bc8577d20a1bccfd28ddc3024b9cb9bf4d5598c22f220f748b",
+  "wallRuntimeSHA256": "58b99e4bd8bb4f6ecc3dcbb34d64a7999dbfef804aca9ba7e60e73fb508a100a",
+  "maskBindings": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "observedMasks": [
+    {
+      "id": 35,
+      "mask": 1,
+      "axis": "X",
+      "topology": "end",
+      "count": 1
+    },
+    {
+      "id": 43,
+      "mask": 3,
+      "axis": "X",
+      "topology": "straight",
+      "count": 2
+    },
+    {
+      "id": 51,
+      "mask": 2,
+      "axis": "X",
+      "topology": "end",
+      "count": 1
+    }
+  ],
+  "centerSelection": [
+    43
+  ],
+  "pausedTick": 836,
+  "resumedTick": 838,
+  "errors": [],
+  "clip": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/wall-x-runtime-236/clips/page@9c91cff656b1a03cd96854e437b7e847.webm",
+  "cleanup": {
+    "rooms": 0,
+    "serverListening": false,
+    "browserClosed": true
+  },
+  "public230Unchanged": true,
+  "productionPID": "575363",
+  "235Preservation": {
+    "preservedOriginal235Files": true,
+    "newRoot235Files": [
+      "root-intake.json"
+    ]
+  },
+  "tests": {
+    "pass": 2,
+    "fail": 0
+  },
+  "newVisualApproval": false,
+  "rootNarrowAppearance": "Root accepted continuous readable defaultzoom X joins, no visible gap; original234 geometry HOLD retained",
+  "cleanedCandidateManifest": "docs/qa/wall-x-runtime-236/cleaned-candidate-manifest.json",
+  "staleFortMetadataPreservedOnlyInHistoricalTestedManifest": true
+}

@@ -73,3 +73,7 @@ Full project **INCOMPLETE**. Public230 optionalfort28 hiện hành, chưa chứa
 ##7. Runtime232 — actualscope và nexttransition
 
 228 actualD0all8/64samples/Pausefreeze500ms/Resume đãđạt kỹ thuật trênfrozen225build. Engineordinaryarrival.7, không dùngQA.3 đểgọi navigationfail. Stop vềidleD7 sauendpointturn; matchingD0/menu chưađạt. Original219/225/226/228 failures/captures/clip retained; no furtherblindcampaignchain. Nextspecifictransition trial mustStopwhileactualD0segment remains, ordinaryUI only, no fakefacing/speed/phase/scale changes. Matchingidlebody/bakedshadow vàmixedlegacyfamily scale vẫnopen; no motion/owner/worldfootlock/fanout approval fromtests. Clip thật đãhiển thị. Public230chỉpromote acceptedWallGate/constructioncode, KHÔNGD0/foodCHAR;207historical.
+
+## 8. Runtime233 — dừng đúng D0
+
+[233 root intake](../../qa/villager-D0-runtime-233/root-intake.json) đóng bước kỹ thuật còn thiếu: cùng frozen225 build, ONE ordinary offline campaign/zero retries, living own villager đang đi D0 còn7.355 world units trước endpoint; ordinary Stop trả idle/order-null/dir0. Pause freeze500ms, Resume tăng distance, menu retainedDecodedBytes0, handles đóng/public230 giữ nguyên. Không đổi frame, speed hoặc facing. Clip thật đã hiển thị. LastWalk sau Stop là dữ liệu cũ, không chứng minh per-entity idle asset. Naturalness/owner/worldfootlock và mixed-family scale còn mở; không mở fanout từ technical PASS. Không cần thử lại Stop nếu không có vấn đề mới.

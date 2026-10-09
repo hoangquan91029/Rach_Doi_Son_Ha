@@ -1,3 +1,4 @@
+import {selectFortificationArt} from './fortification-art.js';
 import {artRoute} from './art-routes.js';
 import {mountainPropPlacements,hillGroundPlacements,foodResourceEligible,staticResourceEligible} from './terrain-props.js';
 import {authoredActionStates,gatherAnimationTime} from './action-presentation.js';
@@ -102,11 +103,11 @@ export function createRasterSlice({enabled=artRoute().enabled,manifestUrl=artRou
    const raster=select({families:[resource.type,`resource.${resource.type}`],kind:'prop',state:'static',direction:null,timeMs});if(!raster)return false;
    if(rasterAt(ctx,raster,project(resource.x,resource.y),zoom)){const key=resource.type==='iron'?'ironResourceDraws':'foodResourceDraws';status[key]=(status[key]||0)+1;return true;}return false;
   },
-  sampleEntity(entity,{tick=0,timeMs=tick*50}={}) {
+  sampleEntity(entity,{tick=0,timeMs=tick*50,fortificationTopology}={}) {
    if(!enabled||!ready||!entity||entity.embarked||!finite(entity.x)||!finite(entity.y))return false;
    if(entity.kind==='building'&&(entity.construction||entity.underConstruction===true)){recordMissing(`${entity.type}:construction`,'No authored construction sequence');return false;}
    let families,kind,direction;
-   if(entity.kind==='building'){if(!['residence','granary'].includes(entity.type)&&!(['barracks','depot','artilleryWorkshop','cavalryCamp'].includes(entity.type)&&worldArtEnabled())&&!(entity.type==='shipyard'&&['shipyard','fort'].includes(artRoute().name) )&&!(entity.type==='fort'&&artRoute().name==='fort'))return false;families=[entity.type,`building.${entity.type}`];kind='building';direction=null;}
+   if(entity.kind==='building'){if(['wall','gate'].includes(entity.type)&&artRoute().name!=='fort')return false;if(!['residence','granary','wall','gate'].includes(entity.type)&&!(['barracks','depot','artilleryWorkshop','cavalryCamp'].includes(entity.type)&&worldArtEnabled())&&!(entity.type==='shipyard'&&['shipyard','fort'].includes(artRoute().name) )&&!(entity.type==='fort'&&artRoute().name==='fort'))return false;families=[entity.type,`building.${entity.type}`];kind='building';direction=null;}
    else if(['villager','infantry','cavalry'].includes(entity.type)){families=[entity.type,`unit.${entity.type}`];kind='unit';direction=entity.dir;}
    else if(entity.type==='general'&&entity.character==='tran_hung_dao'){families=['tran_hung_dao','unit.tran_hung_dao'];kind='unit';direction=entity.dir;}
    else return false;
@@ -116,7 +117,7 @@ export function createRasterSlice({enabled=artRoute().enabled,manifestUrl=artRou
    const states=authoredActionStates(entity,baseVisualState);let candidates=[],visualState=baseVisualState;
    for(const requested of states){candidates=(pipeline.manifest?.assets||[]).filter(a=>a.kind===kind&&families.includes(a.family||a.id)&&a.state===requested&&a.direction===direction);if(candidates.length){visualState=requested;break;}}
    if(!candidates.length){recordMissing(`${families[0]}:${visualState}:${direction}`,'No exact authored raster state/direction');return false;}
-   const asset=candidates[0];let elapsed=timeMs;
+   let asset=candidates[0];if(kind==='building'&&['wall','gate'].includes(entity.type)){const chosen=selectFortificationArt(pipeline.manifest.assets,entity,fortificationTopology,visualState);if(!chosen.asset){recordMissing(`${entity.type}:${visualState}:topology`,chosen.reason);return false;}asset=chosen.asset;}let elapsed=timeMs;
    let walkPhase=null;
    if(visualState==='walk'&&asset.locomotion){walkPhase=locomotion.sample(entity.id,{distancePerCycle:asset.locomotion.distancePerCycle,cycleDurationMs:asset.frames.reduce((sum,f)=>sum+f.durationMs,0)});elapsed=walkPhase.timeMs;}
    else if(visualState==='gather'||visualState.startsWith('gather_'))elapsed=gatherAnimationTime(entity,timeMs);
@@ -127,8 +128,8 @@ export function createRasterSlice({enabled=artRoute().enabled,manifestUrl=artRou
    const raster=pipeline.get(asset.id,{state:visualState,direction,timeMs:elapsed,frame:sample.frame});if(!raster.image){recordMissing(asset.id,raster.reason);return false;}
    return {raster,visualState,walkPhase,sample,direction,elapsed};
   },
-  drawEntity(ctx,entity,{project,zoom=1,tick=0,timeMs=tick*50}={}) {
-   if(typeof project!=='function')return false;const result=this.sampleEntity(entity,{tick,timeMs});if(!result)return false;const {raster,visualState,walkPhase,sample,direction,elapsed}=result,asset=raster.asset;
+  drawEntity(ctx,entity,{project,zoom=1,tick=0,timeMs=tick*50,fortificationTopology}={}) {
+   if(typeof project!=='function')return false;const result=this.sampleEntity(entity,{tick,timeMs,fortificationTopology});if(!result)return false;const {raster,visualState,walkPhase,sample,direction,elapsed}=result,asset=raster.asset;
    if(rasterAt(ctx,raster,project(entity.x,entity.y),zoom)){status.entityDraws++;if(['gather_wood','gather_food','gather_iron'].includes(visualState)&&entity.type==='villager'){status.gatherDraws++;status.lastGather={entityId:entity.id,frame:sample.frame,direction,assetId:asset.id,visualState,startedTick:entity.visibleAction?.startedTick??null,elapsedMs:sample.elapsedMs,timeMs:elapsed,presentationTimeMs:timeMs};}if(walkPhase){status.walkDraws++;status.lastWalk={entityId:entity.id,frame:sample.frame,distance:walkPhase.distance,distancePerCycle:asset.locomotion.distancePerCycle,direction};}else if(visualState==='idle'&&asset.family==='unit.villager')status.idleDraws++;return true;}return false;
   },
   /** Deterministic existing forest density, sorted ready for a merged prop/entity depth queue. */

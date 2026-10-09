@@ -1,3 +1,4 @@
+import {validateFortificationArt,validateFortificationVariants} from './fortification-art.js';
 import {withLoadingDeadline} from './loading-deadline.js';
 import {sampleSpriteAnimation,validateFrameEvents} from './sprite-timing.js';
 import {TILE_WIDTH,TILE_HEIGHT,CAMERA_ELEVATION} from './world-presentation.js';
@@ -25,12 +26,14 @@ function validateAsset(asset) {
  if(asset.loop!==undefined&&typeof asset.loop!=='boolean')throw Error('Invalid animation loop declaration');
  if(asset.locomotion&&(!(Number.isFinite(asset.locomotion.distancePerCycle)&&asset.locomotion.distancePerCycle>0)||asset.state!=='walk'))throw Error('Invalid locomotion distance cycle');
  const derivation=asset.runtime.derivation;if(derivation?.method==='copy'&&(asset.frames.length!==1||asset.cell.width!==asset.source.width||asset.cell.height!==asset.source.height))throw Error('Copy must preserve original canvas');if(derivation?.method==='resize'&&asset.frames.length!==1)throw Error('Multi-frame derivative must declare atlas');if(derivation?.method!=='copy'&&derivation?.filter!=='lanczos')throw Error('Derived raster requires declared lanczos filter');if(!derivation||!['copy','resize','atlas'].includes(derivation.method)||derivation.sourceSha256!==asset.source.sha256)throw Error('Missing runtime derivation provenance');
+ validateFortificationArt(asset);
  return asset;
 }
 function validateManifest(manifest) {
  if(!manifest||manifest.schemaVersion!==1||!['CANDIDATE','APPROVED'].includes(manifest.status)||!Array.isArray(manifest.assets)||manifest.assets.length>4096)throw Error('Unsupported raster manifest');
  const c=manifest.camera;if(c?.projection!=='dimetric'||JSON.stringify(c.ratio)!=='[2,1]'||JSON.stringify(c.tile)!==JSON.stringify([TILE_WIDTH,TILE_HEIGHT])||(!Number.isFinite(c.elevation)||Math.abs(c.elevation-CAMERA_ELEVATION)>0.001))throw Error('Camera contract mismatch');
  const ids=new Set();for(const a of manifest.assets){if(ids.has(a.id))throw Error(`Duplicate asset ID: ${a.id}`);ids.add(a.id);}
+ validateFortificationVariants(manifest.assets);
  return manifest;
 }
 async function digest(buffer) {

@@ -2,7 +2,7 @@
 
 Cập nhật ngày 2026-10-10, múi giờ Asia/Ho_Chi_Minh. **Trạng thái: INCOMPLETE.** Đây là kế hoạch hiện hành cho toàn dự án; `NEXT_STEPS.md` chỉ giữ hàng đợi gần nhất. Hồ sơ cũ được giữ nguyên byte tại `docs/audit/2026-10-09/history/`.
 
-Latest execution232 ở mục22 và active movement plan thay các next-step lịch sử; source/receipt cũ giữ nguyên.
+Latest execution237 ở mục23 và active movement plan thay các next-step lịch sử; source/receipt cũ giữ nguyên.
 
 ## 1. Mục tiêu và cách đọc kết quả
 
@@ -212,3 +212,11 @@ G01/G02:226 guard.3 thất bại nhưng engineordinaryarrival.7; sourcecontractr
 R01/R02:227 frozenpair/rollback207 preparation,4scopecontracts;229 exactnewchunk479b…b4cf TWOjoinedWallGate/select/PauseResumeStop/menu0 plusfourcleanChromeFirefoxbare/disabledfoodboots PASS.230 rooms0guardedatomicdist+immutable runtime230/sim29233/PID575363 pairedpromotion,186files inclold207chunk; readonly extractedmode repair receiptpreserved. FoodCHAR/D0excluded; complete207rollback private23044a92…759f, older149archive preserved.
 
 [231publicTLS](qa/public-intake-231/root-intake.json) ONEChromium/Firefox room/Wallbuild, visibleenemyunderConstruction/privacy/ownjob/ordinary400HPcompletion/Stopactors/menus/expectedOpponentleft/errors0/healthrooms0 acceptednarrow. Exact28readycount/menuDecoded/optionalboots/pick not independentlyasserted; don'treplay forcleanreceipt. No finalart/WAN/fullmatch/defaultacceptedrelease claim. Public207nowhistory, neverrestart510490 ascurrent. Fullgoal INCOMPLETE; allownedhandlesclosed, production230intentionalruns. Bytearchive224entrypoints; activeAGENT/NEXT/status nowconcise232.
+
+## 23. Thực thi233–237 — D0 transition và whole-wall trial
+
+[233](qa/villager-D0-runtime-233/root-intake.json) đóng actual D0 Pause/Resume/Stop idle/order-null/dir0 và menu cache0 trên frozen225 build; ONE campaign/0retry/zero frame changes. Motion/owner/worldfootlock vẫn mở, clip đã hiển thị. Không replay chỉ để làm receipt đẹp hơn.
+
+[234](art/buildings/wall-x-idle-234/root-intake.json) ONE built-in whole-wall illustration/0retry, uniform128/fixed pivot627,900/logical42.3225. Root thấy hình đọc tốt ở gameplay size và cho phép finite actual join trial; worker geometryHOLD và214 giữ nguyên. [235](qa/fortification-art-235/root-intake.json) thêm exact visible mask/state whole-art selection, same topology context cho renderer và alpha picking;42 focused contracts PASS. Không xoay/ghép/mirror PNG. API chỉ dùng living completed wall/gate; finalconstruction/death vẫn thiếu.[236 actual scene](qa/wall-x-runtime-236/root-intake.json) đã đạt narrow X joins/selection/PauseResumeStop/menu0; [237](qa/wall-x-install-237/receipt.json) cài local cleaned32 manifest + unchanged PNG, all28old descriptors preserved và render-bearing fields bằng exacttested236. Public chưađổi, fullWallGate chưađạt. New finite release preparation/intake/rollback là next.
+
+Public230 không thay. Full realistic roster/directions/actions/12leaders/family scale/buildingstates/mapcomposition/densebrowser+rooms performance/defaultacceptedart/externaldesktopWAN/finalbothmapsSingle+1v1 vẫn INCOMPLETE.232 entrypoints được giữ nguyên byte trước cập nhật.

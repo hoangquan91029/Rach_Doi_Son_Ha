@@ -1,0 +1,759 @@
+{
+  "status": "PASS_NARROW233_OFFLINE_D0_PAUSE_RESUME_IMMEDIATE_STOP_IDLE_MENU_TECHNICAL",
+  "method": "ONE ordinary offline Delta campaign; online Pause intentionally continues field, no online room created",
+  "scope": "LOCAL233 UNAPPROVED; technical travel evidence only, not motion/owner/worldfootlock qualification",
+  "samples": [],
+  "errors": [],
+  "requestFailures": [],
+  "bundles": [
+    "b02e273ac24a7fbb4c703ebd8774a10ed4c2bc637943f5d234ae32e4bec5ac97"
+  ],
+  "deadlineMs": 160000,
+  "initial": {
+    "tick": 4,
+    "artBank": {
+      "phase": "match",
+      "epoch": 2,
+      "encodedBytes": 3925908,
+      "encodedBudgetBytes": 67108864,
+      "activeIds": [
+        "grass",
+        "water",
+        "forest",
+        "residence",
+        "infantry-idle-D00",
+        "cavalry-idle-D00",
+        "tran-hung-dao-idle-D00",
+        "unit-contact-shadow",
+        "ford",
+        "shore",
+        "forest-bamboo",
+        "forest-palm",
+        "granary",
+        "villager-walk-south-014",
+        "villager-idle-south-014",
+        "villager-gather-wood-south-024",
+        "mountain-outcrop-108",
+        "grassy-hill-111",
+        "food-resource-114",
+        "iron-resource-119",
+        "barracks-idle-121",
+        "supply-depot-idle-126",
+        "villager-gather-iron-south-136",
+        "artillery-workshop-idle-140",
+        "cavalry-camp-idle-147",
+        "shipyard-idle-164",
+        "fort-idle-198",
+        "villager-idle-D0-family-216",
+        "villager-walk-D0-pilot-213"
+      ],
+      "scope": {
+        "map": "delta",
+        "roster": [
+          "villager",
+          "king",
+          "general",
+          "infantry",
+          "spearman",
+          "firearm",
+          "cavalry",
+          "artillery",
+          "wagon",
+          "warship",
+          "transport"
+        ],
+        "buildings": [
+          "residence",
+          "barracks",
+          "cavalryCamp",
+          "artilleryWorkshop",
+          "shipyard",
+          "fort",
+          "wall",
+          "gate",
+          "depot",
+          "granary"
+        ],
+        "leaders": [
+          "tran_nhan_tong",
+          "tran_hung_dao",
+          "le_thanh_tong",
+          "ly_thuong_kiet"
+        ]
+      }
+    },
+    "mode": "offline",
+    "camera": {
+      "x": 9.5,
+      "y": 23.5,
+      "zoom": 1.08
+    }
+  },
+  "villager": 12,
+  "target": {
+    "id": 12,
+    "x": 16.5,
+    "y": 17.5,
+    "d": 8,
+    "stageDistance": 3.405877273185279
+  },
+  "preselection": {
+    "id": 12,
+    "owner": 0,
+    "type": "villager",
+    "kind": "unit",
+    "x": 8.7,
+    "y": 20.9,
+    "hp": 65,
+    "maxHp": 65,
+    "food": 40,
+    "foodMax": 40,
+    "morale": 95,
+    "state": "idle",
+    "dir": 0,
+    "cooldown": 0,
+    "queue": [],
+    "cargo": {
+      "food": 0,
+      "wood": 0,
+      "iron": 0,
+      "units": []
+    },
+    "resuppliedTick": 4,
+    "starving": 0,
+    "order": null
+  },
+  "staging": {
+    "id": 12,
+    "x": 16.5,
+    "y": 17.5,
+    "d": 8,
+    "stageDistance": 3.405877273185279
+  },
+  "actualArrival": {
+    "target": {
+      "x": 8.5,
+      "y": 17.5
+    },
+    "position": {
+      "x": 8.5,
+      "y": 18.184213562373102
+    },
+    "distance": 0.6842135623731025,
+    "state": "idle",
+    "order": null,
+    "selection": [
+      12
+    ]
+  },
+  "corridor": {
+    "stagingPosition": {
+      "x": 8.5,
+      "y": 18.184213562373102
+    },
+    "cells": [
+      {
+        "x": 8.5,
+        "y": 17.5,
+        "visible": true,
+        "terrain": "plain",
+        "terrainClear": true,
+        "entityClear": true
+      },
+      {
+        "x": 9.5,
+        "y": 17.5,
+        "visible": true,
+        "terrain": "plain",
+        "terrainClear": true,
+        "entityClear": true
+      },
+      {
+        "x": 10.5,
+        "y": 17.5,
+        "visible": true,
+        "terrain": "plain",
+        "terrainClear": true,
+        "entityClear": true
+      },
+      {
+        "x": 11.5,
+        "y": 17.5,
+        "visible": true,
+        "terrain": "plain",
+        "terrainClear": true,
+        "entityClear": true
+      },
+      {
+        "x": 12.5,
+        "y": 17.5,
+        "visible": true,
+        "terrain": "plain",
+        "terrainClear": true,
+        "entityClear": true
+      },
+      {
+        "x": 13.5,
+        "y": 17.5,
+        "visible": true,
+        "terrain": "plain",
+        "terrainClear": true,
+        "entityClear": true
+      },
+      {
+        "x": 14.5,
+        "y": 17.5,
+        "visible": true,
+        "terrain": "plain",
+        "terrainClear": true,
+        "entityClear": true
+      },
+      {
+        "x": 15.5,
+        "y": 17.5,
+        "visible": true,
+        "terrain": "plain",
+        "terrainClear": true,
+        "entityClear": true
+      },
+      {
+        "x": 16.5,
+        "y": 17.5,
+        "visible": true,
+        "terrain": "plain",
+        "terrainClear": true,
+        "entityClear": true
+      }
+    ],
+    "end": {
+      "x": 16.5,
+      "y": 17.5
+    },
+    "knownEntities": [
+      {
+        "id": 1,
+        "kind": "building",
+        "type": "residence",
+        "x": 9.5,
+        "y": 23.5,
+        "hp": 1100,
+        "owner": 0
+      },
+      {
+        "id": 2,
+        "kind": "building",
+        "type": "granary",
+        "x": 6.5,
+        "y": 26.5,
+        "hp": 450,
+        "owner": 0
+      },
+      {
+        "id": 3,
+        "kind": "building",
+        "type": "depot",
+        "x": 13.5,
+        "y": 28.5,
+        "hp": 480,
+        "owner": 0
+      },
+      {
+        "id": 4,
+        "kind": "building",
+        "type": "barracks",
+        "x": 13.5,
+        "y": 20.5,
+        "hp": 650,
+        "owner": 0
+      },
+      {
+        "id": 5,
+        "kind": "unit",
+        "type": "king",
+        "x": 7.5,
+        "y": 25,
+        "hp": 320,
+        "owner": 0
+      },
+      {
+        "id": 6,
+        "kind": "unit",
+        "type": "general",
+        "x": 11,
+        "y": 25.5,
+        "hp": 360,
+        "owner": 0
+      },
+      {
+        "id": 7,
+        "kind": "unit",
+        "type": "villager",
+        "x": 7.5,
+        "y": 21.5,
+        "hp": 65,
+        "owner": 0
+      },
+      {
+        "id": 8,
+        "kind": "unit",
+        "type": "villager",
+        "x": 8.1,
+        "y": 21.5,
+        "hp": 65,
+        "owner": 0
+      },
+      {
+        "id": 9,
+        "kind": "unit",
+        "type": "villager",
+        "x": 8.7,
+        "y": 21.5,
+        "hp": 65,
+        "owner": 0
+      },
+      {
+        "id": 10,
+        "kind": "unit",
+        "type": "villager",
+        "x": 7.5,
+        "y": 20.9,
+        "hp": 65,
+        "owner": 0
+      },
+      {
+        "id": 11,
+        "kind": "unit",
+        "type": "villager",
+        "x": 8.1,
+        "y": 20.9,
+        "hp": 65,
+        "owner": 0
+      },
+      {
+        "id": 12,
+        "kind": "unit",
+        "type": "villager",
+        "x": 8.5,
+        "y": 18.184213562373102,
+        "hp": 65,
+        "owner": 0
+      },
+      {
+        "id": 13,
+        "kind": "unit",
+        "type": "infantry",
+        "x": 15.5,
+        "y": 23.5,
+        "hp": 125,
+        "owner": 0
+      },
+      {
+        "id": 14,
+        "kind": "unit",
+        "type": "infantry",
+        "x": 15.5,
+        "y": 24.15,
+        "hp": 125,
+        "owner": 0
+      },
+      {
+        "id": 15,
+        "kind": "unit",
+        "type": "infantry",
+        "x": 15.5,
+        "y": 24.8,
+        "hp": 125,
+        "owner": 0
+      },
+      {
+        "id": 16,
+        "kind": "unit",
+        "type": "spearman",
+        "x": 15.5,
+        "y": 25.45,
+        "hp": 105,
+        "owner": 0
+      },
+      {
+        "id": 17,
+        "kind": "unit",
+        "type": "wagon",
+        "x": 12.5,
+        "y": 30.5,
+        "hp": 140,
+        "owner": 0
+      }
+    ]
+  },
+  "travelStart": {
+    "tick": 164,
+    "paused": false,
+    "position": {
+      "x": 8.60012626713028,
+      "y": 18.215832079583052
+    },
+    "state": "walk",
+    "dir": 0,
+    "hp": 65,
+    "selection": [
+      12
+    ],
+    "walk": {
+      "entityId": 12,
+      "frame": 1,
+      "distance": 2.8347368783583695,
+      "distancePerCycle": 1.26,
+      "direction": 0
+    },
+    "camera": {
+      "x": 12.497786458333334,
+      "y": 17.49857875279018,
+      "zoom": 1.08
+    }
+  },
+  "transitionStart": {
+    "tick": 165,
+    "paused": false,
+    "position": {
+      "x": 8.70025253426056,
+      "y": 18.247450596793
+    },
+    "state": "walk",
+    "dir": 0,
+    "hp": 65,
+    "selection": [
+      12
+    ],
+    "walk": {
+      "entityId": 12,
+      "frame": 2,
+      "distance": 2.93973687835837,
+      "distancePerCycle": 1.26,
+      "direction": 0
+    },
+    "camera": {
+      "x": 12.497786458333334,
+      "y": 17.49857875279018,
+      "zoom": 1.08
+    }
+  },
+  "pause": {
+    "before": {
+      "tick": 167,
+      "paused": true,
+      "position": {
+        "x": 8.90050506852112,
+        "y": 18.3106876312129
+      },
+      "state": "walk",
+      "dir": 0,
+      "hp": 65,
+      "selection": [
+        12
+      ],
+      "walk": {
+        "entityId": 12,
+        "frame": 3,
+        "distance": 3.149736878358371,
+        "distancePerCycle": 1.26,
+        "direction": 0
+      },
+      "camera": {
+        "x": 12.497786458333334,
+        "y": 17.49857875279018,
+        "zoom": 1.08
+      }
+    },
+    "after": {
+      "tick": 167,
+      "paused": true,
+      "position": {
+        "x": 8.90050506852112,
+        "y": 18.3106876312129
+      },
+      "state": "walk",
+      "dir": 0,
+      "hp": 65,
+      "selection": [
+        12
+      ],
+      "walk": {
+        "entityId": 12,
+        "frame": 3,
+        "distance": 3.149736878358371,
+        "distancePerCycle": 1.26,
+        "direction": 0
+      },
+      "camera": {
+        "x": 12.497786458333334,
+        "y": 17.49857875279018,
+        "zoom": 1.08
+      }
+    }
+  },
+  "resume": {
+    "tick": 169,
+    "paused": false,
+    "position": {
+      "x": 9.10075760278168,
+      "y": 18.3739246656328
+    },
+    "state": "walk",
+    "dir": 0,
+    "hp": 65,
+    "selection": [
+      12
+    ],
+    "walk": {
+      "entityId": 12,
+      "frame": 5,
+      "distance": 3.3597368783583716,
+      "distancePerCycle": 1.26,
+      "direction": 0
+    },
+    "camera": {
+      "x": 12.497786458333334,
+      "y": 17.49857875279018,
+      "zoom": 1.08
+    }
+  },
+  "preStop": {
+    "tick": 170,
+    "paused": false,
+    "position": {
+      "x": 9.200883869911959,
+      "y": 18.40554318284275
+    },
+    "state": "walk",
+    "dir": 0,
+    "hp": 65,
+    "selection": [
+      12
+    ],
+    "walk": {
+      "entityId": 12,
+      "frame": 5,
+      "distance": 3.4647368783583703,
+      "distancePerCycle": 1.26,
+      "direction": 0
+    },
+    "camera": {
+      "x": 12.497786458333334,
+      "y": 17.49857875279018,
+      "zoom": 1.08
+    },
+    "remainingDistance": 7.355073401163608
+  },
+  "stopHitCheck": {
+    "tag": "BUTTON",
+    "action": "stop",
+    "text": "Stop"
+  },
+  "stop": {
+    "tick": 174,
+    "paused": false,
+    "position": {
+      "x": 9.606324132923293,
+      "y": 18.5
+    },
+    "state": "idle",
+    "dir": 0,
+    "hp": 65,
+    "selection": [
+      12
+    ],
+    "walk": {
+      "entityId": 12,
+      "frame": 0,
+      "distance": 3.884676174269894,
+      "distancePerCycle": 1.26,
+      "direction": 0
+    },
+    "camera": {
+      "x": 12.497786458333334,
+      "y": 17.49857875279018,
+      "zoom": 1.08
+    },
+    "entity": {
+      "id": 12,
+      "owner": 0,
+      "type": "villager",
+      "kind": "unit",
+      "x": 9.606324132923293,
+      "y": 18.5,
+      "hp": 65,
+      "maxHp": 65,
+      "food": 39.377343999999795,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "idle",
+      "dir": 0,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "resuppliedTick": 80,
+      "starving": 0,
+      "lastMovedTick": 174,
+      "order": null
+    }
+  },
+  "idleDrawCount": 2937,
+  "idleDiagnostics": {
+    "enabled": true,
+    "phase": "CANDIDATE",
+    "quality": "PLACEHOLDER_ONLY",
+    "groundDraws": 3072,
+    "propDraws": 6283,
+    "entityDraws": 7316,
+    "walkDraws": 51,
+    "idleDraws": 2937,
+    "lastWalk": {
+      "entityId": 12,
+      "frame": 0,
+      "distance": 3.884676174269894,
+      "distancePerCycle": 1.26,
+      "direction": 0
+    },
+    "gatherDraws": 0,
+    "lastGather": null,
+    "missing": [
+      {
+        "key": "villager:walk:6",
+        "reason": "No exact authored raster state/direction",
+        "status": "PLACEHOLDER_ONLY"
+      },
+      {
+        "key": "villager:idle:6",
+        "reason": "No exact authored raster state/direction",
+        "status": "PLACEHOLDER_ONLY"
+      }
+    ],
+    "pipeline": {
+      "status": "CANDIDATE",
+      "manifest": "ready",
+      "declared": 29,
+      "ready": 29,
+      "approved": 0,
+      "candidates": 29,
+      "failed": 0,
+      "skipped": 0,
+      "fallbacks": 0,
+      "decodedBudgetBytes": 134217728,
+      "retainedDecodedBytes": 17008128,
+      "reservedDecodedBytes": 0,
+      "uniqueDecodedImages": 29,
+      "encodedReady": 0,
+      "retainedEncodedBytes": 3925908,
+      "encodedBudgetBytes": 67108864,
+      "selectedDeclared": 29,
+      "failures": []
+    },
+    "hillDraws": 0,
+    "foodResourceDraws": 1082,
+    "ironResourceDraws": 541
+  },
+  "menu": {
+    "mode": "offline",
+    "localPlayer": 0,
+    "roomCode": null,
+    "paused": false,
+    "artLoading": false,
+    "camera": {
+      "x": 12.497786458333334,
+      "y": 17.49857875279018,
+      "zoom": 1.08
+    },
+    "selection": [
+      12
+    ],
+    "tick": null,
+    "pingMs": null,
+    "frameMs": 3,
+    "bootUi": {
+      "declared": 12,
+      "ready": 12,
+      "failures": [],
+      "fontWarnings": []
+    },
+    "art": {
+      "enabled": true,
+      "phase": "CANDIDATE",
+      "quality": "PLACEHOLDER_ONLY",
+      "groundDraws": 0,
+      "propDraws": 0,
+      "entityDraws": 0,
+      "walkDraws": 0,
+      "idleDraws": 0,
+      "lastWalk": null,
+      "gatherDraws": 0,
+      "lastGather": null,
+      "missing": [],
+      "pipeline": {
+        "status": "PLACEHOLDER_ONLY",
+        "manifest": "not-loaded",
+        "declared": 0,
+        "ready": 0,
+        "approved": 0,
+        "candidates": 0,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 0,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 0,
+        "encodedReady": 0,
+        "retainedEncodedBytes": 0,
+        "encodedBudgetBytes": 67108864,
+        "selectedDeclared": 0,
+        "failures": []
+      }
+    },
+    "artBank": {
+      "phase": "menu",
+      "epoch": 3,
+      "encodedBytes": 3925908,
+      "encodedBudgetBytes": 67108864,
+      "activeIds": [],
+      "scope": null
+    },
+    "terrainCache": {
+      "builds": 1,
+      "draws": 572,
+      "pixels": 0
+    },
+    "displayedState": null
+  },
+  "cleanup": {
+    "rooms": 0,
+    "serverListening": false,
+    "browserClosed": true
+  },
+  "retry": 0,
+  "imageCalls": 0,
+  "rebuilds": 0,
+  "public230186ByteExact": true,
+  "publicPID575363Unchanged": true,
+  "original219225226228ByteExact": true,
+  "scopeResults": {
+    "actualD0BeforeStop": "PASS_TECHNICAL",
+    "PauseFreeze": "PASS_TECHNICAL_OFFLINE_ONLY",
+    "Resume": "PASS_TECHNICAL_D0",
+    "StopIdleOrderNullDir0": "PASS_TECHNICAL",
+    "menuRetainedDecoded0": "PASS_TECHNICAL"
+  },
+  "visualNotes": "One actual gameplay-size idle screenshot inspected; canonical idle retains proposed89 family appearance. Absolute size relative legacy neighboring units/buildings remains open. Static shot does not approve smooth motion; HUD may lag state.",
+  "diagnosticLimits": "lastWalk remains stale after Stop; no existing per-idle entity asset diagnostic, no exact idle asset/frame claim from lastWalk. Candidate manifest/hash and screenshot bind intended canonical216 idle.",
+  "motionApproval": false,
+  "worldFootlock": false,
+  "installedCanonical": false,
+  "videoFiles": [
+    "video/page@15000fa42b75603c300aca87c6e4885e.webm"
+  ],
+  "allEightSampling": "Not repeated; independent228 technical evidence preserved"
+}

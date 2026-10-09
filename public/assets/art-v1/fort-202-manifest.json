@@ -2759,6 +2759,282 @@
         "hit",
         "death"
       ]
+    },
+    {
+      "schema": "rds-whole-building-candidate/v1",
+      "id": "wall-whole-234-mask0",
+      "family": "building.wall",
+      "kind": "building",
+      "state": "idle",
+      "direction": null,
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "source": {
+        "path": "docs/art/buildings/wall-x-idle-234/raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "03da3ff197cb260fff4b6197a15255e472764fd61696a56e52d97fcf664eac55",
+        "rgbaSha256": "dfbbf9ccc8947df02ea1c7ce34ec395c3fb09d651b4446618177c6e6e05dbc8a"
+      },
+      "runtime": {
+        "path": "wall-234/idle.png",
+        "width": 128,
+        "height": 128,
+        "sha256": "58b99e4bd8bb4f6ecc3dcbb34d64a7999dbfef804aca9ba7e60e73fb508a100a",
+        "rgbaSha256": "51ef661119600a3e64fd52fd3c55a32e62cc871c360ae5ace21ada96d4b0fdb3",
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "03da3ff197cb260fff4b6197a15255e472764fd61696a56e52d97fcf664eac55"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 900,
+        "space": "source"
+      },
+      "render": {
+        "width": 42.3225,
+        "height": 42.3225
+      },
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "alphaPolicy": "transparent",
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 600
+        }
+      ],
+      "loop": true,
+      "layoutReason": "Unchanged whole1254 square source uniformly exported to128 runtime cell; fixed source pivot627,900 and logical42.3225 square. One whole panel per living completed X-wall mask0/1/2/3; no fitting or pixel assembly.",
+      "unresolvedStates": [
+        "construction",
+        "attack",
+        "hit",
+        "death"
+      ],
+      "fortification": {
+        "mask": 0
+      },
+      "unresolvedTopology": "Y/end-Y/corner/T/cross masks4..15 use fallback; no whole artwork available."
+    },
+    {
+      "schema": "rds-whole-building-candidate/v1",
+      "id": "wall-whole-234-mask1",
+      "family": "building.wall",
+      "kind": "building",
+      "state": "idle",
+      "direction": null,
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "source": {
+        "path": "docs/art/buildings/wall-x-idle-234/raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "03da3ff197cb260fff4b6197a15255e472764fd61696a56e52d97fcf664eac55",
+        "rgbaSha256": "dfbbf9ccc8947df02ea1c7ce34ec395c3fb09d651b4446618177c6e6e05dbc8a"
+      },
+      "runtime": {
+        "path": "wall-234/idle.png",
+        "width": 128,
+        "height": 128,
+        "sha256": "58b99e4bd8bb4f6ecc3dcbb34d64a7999dbfef804aca9ba7e60e73fb508a100a",
+        "rgbaSha256": "51ef661119600a3e64fd52fd3c55a32e62cc871c360ae5ace21ada96d4b0fdb3",
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "03da3ff197cb260fff4b6197a15255e472764fd61696a56e52d97fcf664eac55"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 900,
+        "space": "source"
+      },
+      "render": {
+        "width": 42.3225,
+        "height": 42.3225
+      },
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "alphaPolicy": "transparent",
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 600
+        }
+      ],
+      "loop": true,
+      "layoutReason": "Unchanged whole1254 square source uniformly exported to128 runtime cell; fixed source pivot627,900 and logical42.3225 square. One whole panel per living completed X-wall mask0/1/2/3; no fitting or pixel assembly.",
+      "unresolvedStates": [
+        "construction",
+        "attack",
+        "hit",
+        "death"
+      ],
+      "fortification": {
+        "mask": 1
+      },
+      "unresolvedTopology": "Y/end-Y/corner/T/cross masks4..15 use fallback; no whole artwork available."
+    },
+    {
+      "schema": "rds-whole-building-candidate/v1",
+      "id": "wall-whole-234-mask2",
+      "family": "building.wall",
+      "kind": "building",
+      "state": "idle",
+      "direction": null,
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "source": {
+        "path": "docs/art/buildings/wall-x-idle-234/raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "03da3ff197cb260fff4b6197a15255e472764fd61696a56e52d97fcf664eac55",
+        "rgbaSha256": "dfbbf9ccc8947df02ea1c7ce34ec395c3fb09d651b4446618177c6e6e05dbc8a"
+      },
+      "runtime": {
+        "path": "wall-234/idle.png",
+        "width": 128,
+        "height": 128,
+        "sha256": "58b99e4bd8bb4f6ecc3dcbb34d64a7999dbfef804aca9ba7e60e73fb508a100a",
+        "rgbaSha256": "51ef661119600a3e64fd52fd3c55a32e62cc871c360ae5ace21ada96d4b0fdb3",
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "03da3ff197cb260fff4b6197a15255e472764fd61696a56e52d97fcf664eac55"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 900,
+        "space": "source"
+      },
+      "render": {
+        "width": 42.3225,
+        "height": 42.3225
+      },
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "alphaPolicy": "transparent",
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 600
+        }
+      ],
+      "loop": true,
+      "layoutReason": "Unchanged whole1254 square source uniformly exported to128 runtime cell; fixed source pivot627,900 and logical42.3225 square. One whole panel per living completed X-wall mask0/1/2/3; no fitting or pixel assembly.",
+      "unresolvedStates": [
+        "construction",
+        "attack",
+        "hit",
+        "death"
+      ],
+      "fortification": {
+        "mask": 2
+      },
+      "unresolvedTopology": "Y/end-Y/corner/T/cross masks4..15 use fallback; no whole artwork available."
+    },
+    {
+      "schema": "rds-whole-building-candidate/v1",
+      "id": "wall-whole-234-mask3",
+      "family": "building.wall",
+      "kind": "building",
+      "state": "idle",
+      "direction": null,
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "source": {
+        "path": "docs/art/buildings/wall-x-idle-234/raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "03da3ff197cb260fff4b6197a15255e472764fd61696a56e52d97fcf664eac55",
+        "rgbaSha256": "dfbbf9ccc8947df02ea1c7ce34ec395c3fb09d651b4446618177c6e6e05dbc8a"
+      },
+      "runtime": {
+        "path": "wall-234/idle.png",
+        "width": 128,
+        "height": 128,
+        "sha256": "58b99e4bd8bb4f6ecc3dcbb34d64a7999dbfef804aca9ba7e60e73fb508a100a",
+        "rgbaSha256": "51ef661119600a3e64fd52fd3c55a32e62cc871c360ae5ace21ada96d4b0fdb3",
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "03da3ff197cb260fff4b6197a15255e472764fd61696a56e52d97fcf664eac55"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 900,
+        "space": "source"
+      },
+      "render": {
+        "width": 42.3225,
+        "height": 42.3225
+      },
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "alphaPolicy": "transparent",
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 600
+        }
+      ],
+      "loop": true,
+      "layoutReason": "Unchanged whole1254 square source uniformly exported to128 runtime cell; fixed source pivot627,900 and logical42.3225 square. One whole panel per living completed X-wall mask0/1/2/3; no fitting or pixel assembly.",
+      "unresolvedStates": [
+        "construction",
+        "attack",
+        "hit",
+        "death"
+      ],
+      "fortification": {
+        "mask": 3
+      },
+      "unresolvedTopology": "Y/end-Y/corner/T/cross masks4..15 use fallback; no whole artwork available."
     }
   ],
   "id": "fort-202",

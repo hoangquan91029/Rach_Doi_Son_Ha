@@ -12,7 +12,7 @@ export function pickVisibleEntity(renderer,screenX,screenY){
  const z=renderer.camera.zoom,pipeline=renderer.raster.pipeline;
  const entities=state.entities.filter(e=>e.hp>0&&!e.embarked&&renderer.visible(e,state,renderer.localPlayer)).slice().sort((a,b)=>(b.x+b.y)-(a.x+a.y)||b.id-a.id);
  for(const e of entities){const p=renderer.project(e.x,e.y);
-  const raster=renderer.raster.sampleEntity(e,{tick:state.tick,timeMs:renderer.visualTimeMs??state.tick*50})?.raster;
+  const raster=renderer.raster.sampleEntity(e,{tick:state.tick,timeMs:renderer.visualTimeMs??state.tick*50,...(renderer.fortificationTopology?{fortificationTopology:renderer.fortificationTopology}:{})})?.raster;
   if(raster?.image){const width=raster.render.width*z,height=raster.render.height*z,left=p.x-raster.pivot.x/raster.sw*width,top=p.y-raster.pivot.y/raster.sh*height;
    if(screenX>=left&&screenX<left+width&&screenY>=top&&screenY<top+height&&alphaAt(raster.image,raster.sx+(screenX-left)/width*raster.sw,raster.sy+(screenY-top)/height*raster.sh)>=80)return e;
    continue;
