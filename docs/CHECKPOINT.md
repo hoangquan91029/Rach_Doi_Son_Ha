@@ -1,14 +1,14 @@
-## Current checkpoint036 — owner-approved gather, D0 control held
+## Current checkpoint038/039 — D0 held, navigation arrival fix040
 
-Human feedback032 accepts the shown South/D1 wood-gather loop as natural and smooth and authorizes continuing the pure2D workflow. Its exact APNG and scope remain in owner-motion-review-032/review.json; no repeat naturalness questionnaire is needed for this loop.
+Owner032 accepts the shown South/D1 wood-gather loop as natural/smooth and authorizes continuing the pure2D workflow. Preserve the exact APNG-bound receipt and026 independent samples-only history; no repeated questionnaire for this accepted loop.
 
-D0 contact033 and guide-first035 are exhausted. F00 is selected, but both F04 outputs repeat its leading leg. Guide036 is also terminal HELD after exactly one whole-canvas warp and zero AI calls: lower trousers distort and near/far leg roles are unreadable at89px. Root's one brief gameplay-size comparison agrees. Preserve every original/guide/receipt; do not repeat these methods, choose the held guide as artwork, or open F2/F6/inbetweens without a usable opposite contact. Matching static idle034 remains ready for a future complete D0 walk. No image call is open.
+D0 contacts033, guide-first035 and whole-canvas guide036 are exhausted/held. New038 made exactlyONE actual illustrated SouthF4-to-D0 view-transfer builtin call/0retries. Identity and ESE view are coherent, but F04 again repeats selected033F00's leading leg; one brief parent89px look agrees with HELD. No usable opposite contact, no F2/F6/inbetweens/completeD0walk. Preserve all originals, inputs, outputs and receipts; no imagecall open. Do not repeat these methods or silently switch to CLI/API. Matching static D0 idle034 is ready for a future completed walk. South animations/export/runtime remain reusable.
 
-New038 is preparing one actual illustrated-key view transfer: selected South F4 provides opposite contact, sealed D0 provides camera/identity. It is distinct from abstract-guide retries; no call before root reference/order intake. MaxONE builtin call/0retries, noF2/F6/BIs until the opposite contact is usable. No3D, limb textures, mirroring or another abstract-guide retry. The builtin tool exposes no explicit mask control. Any CLI/API fallback needs explicit human selection under the imagegen skill; none is selected or called. Existing South animation/export/runtime tooling remains reusable.
+QA037/039 ordinaryUI guarded-artillery strategy attempts both stopped before combat.037 clicked within a resource hit radius;039 reached its tile center but failed the raw-coordinate arrival assertion. Original executed harnesses, failures and closed-server receipts are retained. Neither proves a completed match or human victory. Previous030/031 offline defeat/menu coverage remains valid on bothmaps.
 
-Independent finite QA037 is preparing one ordinary-UI Delta offline human-victory attempt with retained home defenders and an artillery/firearm offensive group. New opt-in QA strategy only, no game balance/resource/speed changes, max one360-second match, no Coast retry. Inspect live worker/receipts before resuming; do not duplicate. Previous029 timeout,030 Delta defeat and031 Coast defeat/menu coverage remain preserved. Production is untouched and the full game is NOT COMPLETE.
+Root identified a real navigation arrival edge case from039: grid paths finish at cell centers, while reachable integer target coordinates can lie outside travel completion radius. The unit stays idle with a move order and empty-path retries. New040 is diagnosing/fixing only the safe final approach to reachable coordinates, with deterministic collision rules, meaningful regression tests, temporary build and one actualUI movement check. Inspect live040 before duplicate. No AIretry, art fanout, speed/balance/resource change or production restart. Full game NOT COMPLETE.
 
-Earlier checkpoint paragraphs below are historical; this current boundary supersedes their live/pending descriptions.
+Older live/pending descriptions below are historical; this current boundary governs continuation.
 
 ---
 

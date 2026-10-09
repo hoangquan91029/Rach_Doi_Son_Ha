@@ -1,0 +1,45 @@
+{
+  "schema": "rds-pure2d-finite-work-order/v1",
+  "jobId": "villager-ESE-view-transfer-038",
+  "status": "READY_PREPARATION_ONLY_AWAIT_ROOT_INTAKE",
+  "model": "gpt-6.1-sol",
+  "reasoningEffort": "low",
+  "maxCalls": 1,
+  "retries": 0,
+  "maxAttemptsPerFrame": 1,
+  "callsMade": 0,
+  "callOpen": false,
+  "frame": 4,
+  "direction": {
+    "engine": 0,
+    "world": "E",
+    "screen": "ESE"
+  },
+  "canvas": [
+    1254,
+    1254
+  ],
+  "pivot": [
+    654,
+    1140
+  ],
+  "runtimeCanvas": 128,
+  "displayCanvas": 89,
+  "references": [
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-009/F4-trailing-contact-correction-01/raw.png",
+      "sha256": "929b9805f696abf341b8ea9b4df425a753da2c48b1be9ca13282bb5c72e0793f",
+      "role": "PRIMARY_EDIT_TARGET actual selected complete South/D1 F4 illustrated opposite contact; transfer its RIGHT-forward/LEFT-back action into new ESE view"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-Southeast-007/raw.png",
+      "sha256": "2d32f65fe0f4c8037e19aeb5ace9b1b29e70ecf45a158d101770e86f9aa9092f",
+      "role": "TARGET_VIEW_IDENTITY_REFERENCE sealed D0/worldE/screenESE camera, appearance, material scale and asymmetric sash; not neutral-pose target"
+    }
+  ],
+  "prompt": "F04-view-transfer-prompt.txt",
+  "gate": "ONE built-in call only after root intake. HOLD and stop if wrong leg/view or visible broken shape. F2/F6/BIs/fanout CLOSED",
+  "methodDifference": "Transfers actual illustrated opposite-contact phase; not abstractguide-primary035 or predecessor-conditioned033. Prior orders permanently exhausted.",
+  "review": "Brief fixed89 wholecanvas contact comparison after actual result; minor cloth/pixels nonblocking",
+  "head": "611319a6354f23eed7feb01244cb082dd85582c5"
+}

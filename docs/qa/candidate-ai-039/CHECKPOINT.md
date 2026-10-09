@@ -1,0 +1,7 @@
+#039 corrected ground click — arrival harness mismatch, STOPPED
+
+One actual Deltaeasy offline-after-load attempt only, exact026 bundle, no retry/Coast. Resource-free click precondition uses displayed filtered map resources and currentUI roundedtarget/radius1.6. First defender15 actualmove order verified tick20 to12,24. The failure capture shows it reached12.5,24.5 and remained nearGeneral. Harness wrongly demanded distance<.6 from raw12,24, so the legitimate cellcenter distance sqrt(.5²+.5²)=.707 failed at tick180. Bothdefenders/hold/economy/offense never completed; no fullmatch/humanvictory/resultmenu claim.
+
+Sharedsim path() enumerates navigation cellcenters x+.5/y+.5 and emits those waypoints. This is a QA arrival-contract mismatch, not established gameplay breakage. Source-only correction expects rounded requested tile's actual cellcenter within.15, then retains explicit holdorder and nearGeneral<4 assertions. Corrected source syntax/diff pass but was NOT executed; any further validation requires separate order. Original037 and actual039 executed files/receipts unchanged, hashes pinned.
+
+Failure art17/17+portraits12/12 ready; pageerrors0/networkfailures0, navigator false afterdisconnect. Ownedserver46089/browser closed, rooms0 before/after/close, listeningfalse, exit1. Exact buildpins in owned-server-receipt.json. Screenshot/error snapshot/console/sourcepins retained. No game/art/simulation/dist/production/topdoc changes or commit. Fullgame NOT COMPLETE; candidate humanvictory remains open.
