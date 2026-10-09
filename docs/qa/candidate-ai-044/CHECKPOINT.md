@@ -1,0 +1,9 @@
+#044 Delta candidate offline human victory PASS
+
+ExactlyONE Deltaeasy guarded-artillery actualChromium attempt completed ordinary enemyGeneralcombat victory: winner0, reasonEnemy General defeated, tick4835,241.75simulationseconds/242.546wallseconds under360secondbound. Actualresultscreen and returnmenu verified.17/17candidateart +12/12portraits ready beforedisconnect and atmatchend; navigatorfalse afterdisconnect/beforesetup,aftermatch,afterresultmenu. Pageerrors0/networkfailures0.
+
+Defenders15/16 received actualresource-free moveorders, nearGeneral arrival andhold before economicsetup; excluded from ordinaryF2+Shift/currentmilitaryoffensivegroups. NormalUI queuedfirearms/villagers, builtworkshop/fort, trainedartillery, selected/recalledControl2, suppliedwagon and advanced throughnormalcombat. Currentgroup safetyguards passed. No state/selectioninjection, syntheticcommands, changedresources/speed/difficulty or gameplaybalance. This is actualcandidate humanvictory onDeltaeasy only; no Coastvictory/public/fullvisual acceptance claim.
+
+Frozenexecutedharness/currentQA/runtime/sharedsim/build/sourcepins retained in source-build-pins.json; temporary043bundleindex-Doi9i9JT.js SHA33da4dd6348b742f8f83bb241c4e01c892dba850668160368a1dadfff047e548,142983bytes,HTMLSHA61f83b504855add9b845615ef99502ebddf1fb0bcf4e42dac9ad48e68c053246. Actualservedpins/completeactions/timeline/receipt/victoryscreenshot/console preserved. Chromium151.0.7922.34 closed; ownedserver37613exit0,healthrooms0before/after,rooms0afterclose/listeningfalse. No remainingownedrun.
+
+No source/runtimechange duringtask, no retry/Coast/image/APIcall/deployment/productiondist/service/topdocedit or commit. Original042/039/037 and earlierfailures remain untouched. All88tests/smallgroup043proof remain prerequisiteevidence. Atomicordercomplete; furtherwork needs nextorder. Fullgame NOT COMPLETE; othermap/fullproduction/visualscope remainsopen.

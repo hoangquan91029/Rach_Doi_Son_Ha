@@ -1,10 +1,14 @@
-## Current043 — valid military UI group proof,88tests PASS
+## Current044 Delta offline victory PASS /045 Coast preflight
 
-043 fixes stale selection/controlgroups at the current friendly state boundary and copies recalled groups instead of aliasing them. Regression covers death/embark/missing/ownership/offviewport/nonaliasing. Guarded-artillery QA now uses F2 then ordinaryShift-toggle for livinghelddefenders, validates CURRENTlivingownmilitary equality and save/recall safety; no forceclick/injectedselection/pauseoverlay workaround.
+044 completed ONE actualChromium Deltaeasy human-victory match on043candidate: enemyGeneral defeated, winner0/tick4835/241.75simseconds/242.546wallseconds. Actualresultscreen→menu verified with navigatorfalse throughout afterdisconnect,17art/12portraitsready/errors0/networkfailures0. Bothhelddefenders and ordinarycurrentmilitarygroup/economy/artillery/fort/supply/combat guards passed. Source frozen/no gameplaychanges. Ownedbrowser/server37613closedrooms0/listeningfalse. Parentintake verifies realreceipt/result/menu/pins and victoryscreenshot. See docs/qa/candidate-ai-044/.
 
-One actualChromium smallUI proof PASS: F2[13,14,15,16]→removeheld15/16→[13,14], Ctrl2save/F2/2recall returns[13,14], defender15 stayshold; errors0/ownedbrowser/serverclosedrooms0/listeningfalse. Temp043bundle index-Doi9i9JT.js SHA33da4dd6348b742f8f83bb241c4e01c892dba850668160368a1dadfff047e548,21modules. Existing040/042pins preserved. Required fullsuite88/88 PASS;043workerterminal. No fullAIattempt043 or publicdeployment. Next044 is one separatefinite Deltaeasy guarded-artillery offlinefullmatch on exact043build, max360seconds, no retry/Coast/gamechanges. Inspectliveworker/receipt before duplicate.
+045 is a new finite Coasteasy offlinecandidate UI match on same043bundle, max360seconds/no retries. First preflightactualCoast targets/spawns/resources; invalidfixeddestinations stoppreflight for a map-aware QA correction, never changegamebalance or blindrun. Inspect live045worker/session/receipt before duplicate. No Coastcompletion/production/finalartclaim yet.
 
-041 maskedAPIedit humanpermission stands, rootpresencecheck keyabsent/APIcalls0. No imagecall open, no D0sourcefanout. Existing owner032Southgather/whole2D framework intact. Old042failure remains unchanged. Livequota allows work on currentaccount; no resetcredit used. Full game NOT COMPLETE.
+043 clientselection/grouppruning, nonaliasrecall and guarded-artillery F2+defenderremoval remain verified by88tests +actualsmallUIgroup proof. Temporary043bundle33da4dd6348b742f8f83bb241c4e01c892dba850668160368a1dadfff047e548 only; productiondist/service/publicmanifest untouched.040navarrivalfix remainsinthiscandidate. Original042/039/037 failures remain unchanged;044PASS does not rewrite them.
+
+Owner032 accepts shownSouthgather natural/smooth; original026independentreview remainsSAMPLES_ONLY. Otherdirection/unit/action/fullvisualgates open. D0contact033/035/038 andguide036 exhausted/held, no imagecallopen/F2/F6/BIs/fanout.041 maskedCLIedit is explicitlyhumanAUTHORIZED once for gpt-image1.5, localkeymissing/dependenciesdryrunready/APIcalls0; do not repeatmodepermission or requestsecretinchat. Independent work cancontinue.
+
+Full game NOT COMPLETE: bothfinalacceptedmaps/roster/publicWAN/externaldevice/productioncompletion criteria remainopen. Older live/pending descriptions below are historical.
 
 ---
 
