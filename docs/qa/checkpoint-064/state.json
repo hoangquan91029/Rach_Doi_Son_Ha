@@ -1,0 +1,27 @@
+{
+  "status": "RESUMABLE_NOT_COMPLETE",
+  "parentCommit": "8f2f923a977bc5b81dcf2970991e2ff307b55026",
+  "publicRelease": "052",
+  "publicURL": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/",
+  "runtimeBundleSHA256": "33da4dd6348b742f8f83bb241c4e01c892dba850668160368a1dadfff047e548",
+  "qaHarnessSHA256": "0e6ea6b48246d2a621eb4d7c2ab2594e5608ee12c9e8cc26a7601165227272c9",
+  "apiCalls": 0,
+  "apiKeyPresent": false,
+  "artPilotBlocked": "D0 opposite contact awaiting single authorized masked edit credential",
+  "parallelAgentsAuthorized": true,
+  "requiredModel": "gpt-6.1-sol",
+  "requiredReasoning": "low",
+  "usage": {
+    "primaryUsedPercent": 73,
+    "weeklyUsedPercent": 27,
+    "ordinaryAllowed": true,
+    "resetCreditsUsed": 0
+  },
+  "rollbackLocalArchive": "docs/qa/development-deploy-052/rollback-before-052.tar.gz",
+  "rollbackArchiveSHA256": "acf14ddc3fbbdb270f7afcbb7a90b71557dce151ca07784615dc9146c1c8f96b",
+  "rollbackDirectory": "dist-before-052",
+  "apiPurposeReferences": [
+    "https://developers.openai.com/api/docs/quickstart",
+    "https://developers.openai.com/api/docs/guides/image-generation"
+  ]
+}

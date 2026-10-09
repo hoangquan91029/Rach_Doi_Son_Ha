@@ -1,0 +1,7 @@
+#050 Coast easy offline candidate human victory — terminal PASS
+
+ONE finite actual Chromium151.0.7922.34 normal UI guarded-artillery match, max360seconds, zero retries: winner0, Enemy General defeated, tick3847/192.35 simulation seconds/193.35 wall seconds. Actual victory result and Return to menu verified while offline. Screenshot visually confirms Victory. Normal defenders move/arrival/hold, economy/workshop/artillery/fort and acquired-living-military offensive grouping guards passed. No game/balance changes, injected commands or state mutation.
+
+17 candidate art assets and12 portraits loaded before disconnect; navigator.onLine remainedfalse afterdisconnect/match/resultmenu. Pageerrors0, networkfailures0. Same frozen043 bundle index-Doi9i9JT.js SHA33da4dd6348b742f8f83bb241c4e01c892dba850668160368a1dadfff047e548. Corrected047 QA harness frozen SHA7171b04499f5284653a3589676631bce54e705c5b58916d8be8b0651adf6d3ca.045 original map-preflight copied as preserved static input;045 race HOLD unchanged.044 Delta victory remains valid. All source/build/frozen pins verified after terminal execution.
+
+Owned localhost37277 browser/server closed, exit0, rooms0 before/after close, serverListeningAfterClosefalse. Raw receipt, console, exact executed harness/wrapper, source-build pins and victory screenshot retained here. Sol6.1Low. No production/public deployment, art approval, API call, topdocs edit or commit. This is candidate local Coast easy offline victory acceptance only; final visual/public/WAN/external-device/full-roster goals remain open.

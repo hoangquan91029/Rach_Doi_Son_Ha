@@ -1,0 +1,100 @@
+{
+  "method": "Offline analysis of unchanged actualUI rawreceipt. Consumption reconstructed from own visible selected leaders/synergy names and frozen shared/data.js; no hidden modifiers access or rerun.",
+  "originalRunStatus": "HOLD",
+  "originalError": "TypeError: Cannot read properties of undefined (reading 'consumption')\n    at file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/logistics-ui-053/run.mjs:27:338",
+  "consumptionModifier": 0.8280000000000001,
+  "beforeTotal": 1479.1388800000002,
+  "afterTotal": 1464.6720640000142,
+  "expectedConsumed": 14.466815999999998,
+  "residual": -1.3987033753437572e-11,
+  "tolerance": 0.00001,
+  "conservationPass": true,
+  "stores": [
+    {
+      "label": "beforeLoad",
+      "tick": 10,
+      "foodTransported": 0,
+      "entities": [
+        {
+          "id": 2,
+          "type": "granary",
+          "food": 260,
+          "x": 6.5,
+          "y": 26.5
+        },
+        {
+          "id": 3,
+          "type": "depot",
+          "food": 120,
+          "x": 13.5,
+          "y": 28.5
+        },
+        {
+          "id": 17,
+          "type": "wagon",
+          "food": 100,
+          "x": 12.5,
+          "y": 30.5
+        }
+      ]
+    },
+    {
+      "label": "loadStopped",
+      "tick": 100,
+      "foodTransported": 0,
+      "entities": [
+        {
+          "id": 2,
+          "type": "granary",
+          "food": 215.3376000000004,
+          "x": 6.5,
+          "y": 26.5
+        },
+        {
+          "id": 3,
+          "type": "depot",
+          "food": 120,
+          "x": 13.5,
+          "y": 28.5
+        },
+        {
+          "id": 17,
+          "type": "wagon",
+          "food": 144,
+          "x": 7.749354621184306,
+          "y": 27.749354621184306
+        }
+      ]
+    },
+    {
+      "label": "unloadStopped",
+      "tick": 178,
+      "foodTransported": 46,
+      "entities": [
+        {
+          "id": 2,
+          "type": "granary",
+          "food": 215.0726400000009,
+          "x": 6.5,
+          "y": 26.5
+        },
+        {
+          "id": 3,
+          "type": "depot",
+          "food": 166,
+          "x": 13.5,
+          "y": 28.5
+        },
+        {
+          "id": 17,
+          "type": "wagon",
+          "food": 98,
+          "x": 11.984021990290952,
+          "y": 27.5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "networkFailures": []
+}

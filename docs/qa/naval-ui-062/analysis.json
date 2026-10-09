@@ -1,0 +1,24 @@
+{
+  "status": "PASS_NARROW_ACTUAL_UI_NAVAL_CORE",
+  "originalRunStatus": "HOLD",
+  "originalError": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert.ok(Math.hypot(landed.x-destination.x,landed.y-destination.y)<=3)\n\n    at file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/naval-ui-062/run.mjs:4:5774",
+  "method": "Offline analysis of unchanged actualUI raw stages against actualcurrent ship, source transfer() radius3 and captured actualvisible shorepreflight. No rerun/assertion rewrite.",
+  "passenger": 10,
+  "transport": 51,
+  "shipPosition": {
+    "x": 12.58838834764832,
+    "y": 40.58838834764832
+  },
+  "landedPosition": {
+    "x": 10.5,
+    "y": 38.5
+  },
+  "actualDisembarkDistance": 2.953427124746191,
+  "actualSeaTravelDistance": 5.089155968968056,
+  "sourceContract": "shared/sim.js:228–230 chooses legal land within3 of actual ship; move uses0.7 arrival.",
+  "screenshotReview": "embarked.png visibly shows Cargo1aboard and no shore passenger; failure.png shows Cargoempty and villager on land. renderer.js34/248 excludes embarked units from battlefield/minimap.",
+  "cleanup": {
+    "rooms": 0,
+    "listening": false
+  }
+}

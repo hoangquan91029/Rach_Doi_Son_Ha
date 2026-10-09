@@ -1,0 +1,60 @@
+{
+  "status": "PASS_LOCAL_CANDIDATE_BOTH_MAPS",
+  "attemptsPerMap": 1,
+  "retries": 0,
+  "callsOpen": 0,
+  "workersTerminal": true,
+  "results": [
+    {
+      "map": "delta",
+      "result": {
+        "browser": "chromium",
+        "map": "delta",
+        "mode": "online",
+        "passed": true,
+        "code": "BBF540",
+        "peerBrowser": "firefox",
+        "forcedPublicRelayIP": null,
+        "combatWinner": 0,
+        "combatWallSeconds": 28.094,
+        "reconnect": true,
+        "rematch": true,
+        "initialTickHost": 4,
+        "lastLoopSampleTickHost": 550,
+        "confirmedVictoryTickPeer": 550,
+        "errors": []
+      },
+      "cleanup": {
+        "url": "http://127.0.0.1:45959",
+        "roomsAfterClose": 0,
+        "listening": false
+      }
+    },
+    {
+      "map": "coast",
+      "result": {
+        "browser": "chromium",
+        "map": "coast",
+        "mode": "online",
+        "passed": true,
+        "code": "8C9E81",
+        "peerBrowser": "firefox",
+        "forcedPublicRelayIP": null,
+        "combatWinner": 0,
+        "combatWallSeconds": 28.183,
+        "reconnect": true,
+        "rematch": true,
+        "initialTickHost": 4,
+        "lastLoopSampleTickHost": 602,
+        "confirmedVictoryTickPeer": 602,
+        "errors": []
+      },
+      "cleanup": {
+        "url": "http://127.0.0.1:45843",
+        "roomsAfterClose": 0,
+        "listening": false
+      }
+    }
+  ],
+  "productionChanged": false
+}

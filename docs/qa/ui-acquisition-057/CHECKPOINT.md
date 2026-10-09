@@ -1,0 +1,9 @@
+#057 exact villager rectangle acquisition — terminal PASS
+
+ONE actual Firefox153 mini UI proof on isolated043 Coast easy ?art=work. Selected initially idle own living villager8 through one8×8CSSpx ordinary pointer rectangle (11.31px drag exceeds7px threshold). Preflight inside ids[8] only; trace tick9→11 exactselection[8], owner0/unit/villager/hp65. Normal Ctrl3save→F2→3recall exact[8] at tick15.17art/12portraits ready, errors0. Screenshot visually reviewed. No gather/combat/fullmatch or result/menu claim.
+
+After this actual proof passed, narrowly integrated identical selectUniqueUnitRectangle helper into scripts/browser-ai-winning.mjs. Known cached groups and leaders keep existing paths; uncached own units attempt a unique in-canvas ground-anchor rectangle first, otherwise retain original point strategy. Geometry/eligible/inside/current exactidentity traces print UNIT_RECTANGLE_ACQUISITION; wrong postdrag selection fails immediately before saving/order. Hardguard validates one exact current own living nonembarked unit with unchanged type. No arbitraryselection acceptance, simulation state changes or gameplay changes. node syntax check passes; fullsuite not run for QA-only helper. Before/after/helper hashes and frozen before/after source retained.
+
+055 original hold/raw unchanged. This trace shows rectangle acquisition bypasses candidate sprite occlusion at a distinct initial tick; it does not reconstruct055 clicked coordinates or prove its exact rootcause.055 still permits overlap/helper fallback or timing explanations. Here ordinary entityPoint exists at(650.337,388.891), rectangle footanchor(646.017,405.091); exact055 fallback behavior remains unknown.
+
+Owned46077 browser/server closed, healthrooms0, roomsAfterClose0/listeningAfterClosefalse. One proof, zero retries, Sol6.1Low. No publicservice operation, topdocs edit, commit, API/art call or fullmatch. New finite match order required before fullmatch validation.

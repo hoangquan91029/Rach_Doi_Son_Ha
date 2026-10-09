@@ -1,0 +1,81 @@
+{
+  "url": "http://127.0.0.1:46077",
+  "attempts": 1,
+  "retries": 0,
+  "bundleSHA256": "33da4dd6348b742f8f83bb241c4e01c892dba850668160368a1dadfff047e548",
+  "browserVersion": "153.0",
+  "acquisition": {
+    "used": true,
+    "plan": {
+      "eligible": true,
+      "id": 8,
+      "tick": 9,
+      "type": "villager",
+      "state": "idle",
+      "point": {
+        "x": 646.017142857143,
+        "y": 405.09142857142854
+      },
+      "bounds": {
+        "x1": 642.017142857143,
+        "y1": 401.09142857142854,
+        "x2": 650.017142857143,
+        "y2": 409.09142857142854
+      },
+      "inside": [
+        8
+      ],
+      "priorSelection": [],
+      "ordinaryPoint": {
+        "x": 650.337142857143,
+        "y": 388.89142857142855
+      }
+    },
+    "after": {
+      "tick": 11,
+      "selection": [
+        8
+      ],
+      "current": {
+        "id": 8,
+        "owner": 0,
+        "kind": "unit",
+        "type": "villager",
+        "hp": 65
+      }
+    }
+  },
+  "groupRecall": [
+    8
+  ],
+  "final": {
+    "tick": 15,
+    "art": {
+      "status": "CANDIDATE",
+      "manifest": "ready",
+      "declared": 17,
+      "ready": 17,
+      "approved": 0,
+      "candidates": 17,
+      "failed": 0,
+      "skipped": 0,
+      "fallbacks": 0,
+      "failures": []
+    },
+    "portraits": {
+      "declared": 12,
+      "ready": 12,
+      "failures": [],
+      "fontWarnings": []
+    }
+  },
+  "status": "ACTUAL_FIREFOX_UNIQUE_RECTANGLE_EXACT_VILLAGER_SAVE_RECALL_PASS",
+  "browserClosed": true,
+  "healthAfter": {
+    "ok": true,
+    "rooms": 0
+  },
+  "roomsAfterClose": 0,
+  "listeningAfterClose": false,
+  "errors": []
+}

@@ -1,0 +1,41 @@
+{
+  "status": "TERMINAL_HOLD",
+  "timestamp": "2026-10-09T06:23:19.579030+00:00",
+  "exitCode": 1,
+  "attempts": 1,
+  "retries": 0,
+  "browser": "firefox",
+  "browserCleanup": "context/browser finally completed, node exited",
+  "serviceModified": false,
+  "publicHealthAfter": {
+    "ok": true,
+    "rooms": 0
+  },
+  "tick": 881,
+  "winner": null,
+  "errors": [],
+  "networkFailures": [],
+  "art": {
+    "status": "CANDIDATE",
+    "manifest": "ready",
+    "declared": 17,
+    "ready": 17,
+    "approved": 0,
+    "candidates": 17,
+    "failed": 0,
+    "skipped": 0,
+    "fallbacks": 0,
+    "failures": []
+  },
+  "portraits": {
+    "declared": 12,
+    "ready": 12,
+    "failures": [],
+    "fontWarnings": []
+  },
+  "offlineStatus": {
+    "beforeDisconnect": true,
+    "afterDisconnect": false
+  },
+  "resultMenuVerified": false
+}

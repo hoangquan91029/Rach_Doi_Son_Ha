@@ -1,0 +1,22 @@
+const snapshot=p=>p.evaluate(()=>window.rtsDiagnostics.snapshot());
+const alive=(s,owner=0)=>s.displayedState.entities.filter(e=>e.owner===owner&&e.hp>0);
+const groups=new WeakMap();
+const pause=ms=>new Promise(r=>setTimeout(r,ms));
+async function until(p,predicate,timeout=6000){const at=Date.now();let s;while(Date.now()-at<timeout){s=await snapshot(p);if(predicate(s))return s;await pause(50);}throw Error('UI action did not take effect');}
+async function center(p,x,y){const m=p.locator('#minimap'),box=await m.boundingBox(),s=await snapshot(p);if(s.displayedState.winner!==null)return;await m.click({position:{x:x/s.displayedState.map.width*box.width,y:y/s.displayedState.map.height*box.height}}).catch(async error=>{if((await snapshot(p)).displayedState.winner===null)throw error;});await pause(45);}
+async function selectUniqueUnitRectangle(p,id){
+ const plan=await p.evaluate(id=>{const s=window.rtsDiagnostics.snapshot(),e=s.displayedState?.entities.find(e=>e.id===id);if(!e||e.owner!==s.localPlayer||e.kind!=='unit'||e.hp<=0||e.embarked)return {eligible:false,id,tick:s.tick};const point=window.rtsDiagnostics.point(e.x,e.y),bounds={x1:point.x-4,y1:point.y-4,x2:point.x+4,y2:point.y+4};const inside=s.displayedState.entities.filter(u=>u.owner===s.localPlayer&&u.kind==='unit'&&u.hp>0&&!u.embarked).filter(u=>{const q=window.rtsDiagnostics.point(u.x,u.y);return q.x>=bounds.x1&&q.x<=bounds.x2&&q.y>=bounds.y1&&q.y<=bounds.y2;}).map(u=>u.id);return {eligible:true,id,tick:s.tick,type:e.type,state:e.state,point,bounds,inside,priorSelection:s.selection,ordinaryPoint:window.rtsDiagnostics.entityPoint(id)};},id);
+ if(!plan.eligible||plan.state!=='idle')return {used:false,plan};
+ const box=await p.locator('#world').boundingBox(),b=plan.bounds;
+ if(plan.inside.length!==1||plan.inside[0]!==id||b.x1<0||b.y1<0||b.x2>box.width||b.y2>box.height)return {used:false,plan};
+ if(Math.hypot(b.x2-b.x1,b.y2-b.y1)<=7)throw Error('Rectangle drag must exceed ordinary UI threshold');
+ await p.mouse.move(box.x+b.x1,box.y+b.y1);await p.mouse.down();await p.mouse.move(box.x+b.x2,box.y+b.y2,{steps:2});await p.mouse.up();
+ const after=await p.evaluate(()=>window.rtsDiagnostics.snapshot()),current=after.displayedState.entities.find(e=>e.id===id);
+ const trace={used:true,plan,after:{tick:after.tick,selection:after.selection,current:current&&{id:current.id,owner:current.owner,kind:current.kind,type:current.type,hp:current.hp,embarked:current.embarked}}};
+ if(after.selection.length!==1||after.selection[0]!==id||!current||current.owner!==after.localPlayer||current.kind!=='unit'||current.type!==plan.type||current.hp<=0||current.embarked){throw Error('Unique rectangle must acquire exact CURRENT living own unit '+JSON.stringify(trace));}
+ return trace;
+}
+
+async function select(p,entity){const selected=await snapshot(p),exact=selected.displayedState.entities.find(e=>e.id===entity.id);if(selected.selection.length===1&&selected.selection[0]===entity.id&&exact&&exact.owner===selected.localPlayer&&exact.hp>0&&!exact.embarked&&exact.kind===entity.kind&&exact.type===entity.type){console.log('EXACT_CURRENT_SELECTION_REUSE',JSON.stringify({tick:selected.tick,id:exact.id,type:exact.type,state:exact.state,selection:selected.selection}));return;}const group=groups.get(p)?.get(entity.id);if(group){await p.keyboard.press(group);await until(p,s=>s.selection.includes(entity.id),1000);return;}if(entity.type==='king'||entity.type==='general'){await p.locator(`[data-leader="${entity.type}"]`).click();await until(p,s=>s.selection.includes(entity.id));return;}const initial=await snapshot(p),unit=alive(initial).find(e=>e.id===entity.id&&e.kind==='unit');if(unit){await center(p,unit.x,unit.y);const trace=await selectUniqueUnitRectangle(p,unit.id);console.log('UNIT_RECTANGLE_ACQUISITION',JSON.stringify(trace));if(trace.used)return;}for(let attempt=0;attempt<5;attempt++){const current=alive(await snapshot(p)).find(e=>e.id===entity.id);if(!current)throw Error('Requested entity died '+entity.id);await center(p,current.x,current.y);const point=await p.evaluate(id=>{const e=window.rtsDiagnostics.snapshot().displayedState.entities.find(e=>e.id===id);return e&&(window.rtsDiagnostics.entityPoint?.(id)||window.rtsDiagnostics.point(e.x,e.y));},entity.id);await p.locator('#world').click({position:point});try{await until(p,s=>s.selection.includes(entity.id),500);return;}catch{}}throw Error('Cannot select moving/overlapping entity '+entity.id);}
+
+export {select,selectUniqueUnitRectangle};

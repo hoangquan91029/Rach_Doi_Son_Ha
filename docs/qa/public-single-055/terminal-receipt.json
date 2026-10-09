@@ -1,0 +1,46 @@
+{
+  "status": "TERMINAL_HOLD",
+  "timestamp": "2026-10-09T06:15:44.423342+00:00",
+  "attempts": 1,
+  "retries": 0,
+  "exitCode": 1,
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "low",
+  "browser": "firefox",
+  "publicURL": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/?art=work",
+  "tick": 245,
+  "winner": null,
+  "errors": [],
+  "networkFailures": [],
+  "art": {
+    "status": "CANDIDATE",
+    "manifest": "ready",
+    "declared": 17,
+    "ready": 17,
+    "approved": 0,
+    "candidates": 17,
+    "failed": 0,
+    "skipped": 0,
+    "fallbacks": 0,
+    "failures": []
+  },
+  "portraits": {
+    "declared": 12,
+    "ready": 12,
+    "failures": [],
+    "fontWarnings": []
+  },
+  "offlineStatus": {
+    "beforeDisconnect": true,
+    "afterDisconnect": false
+  },
+  "failure": "Error: Cannot select moving/overlapping entity 8\n    at select (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/public-single-055/harness-executed.mjs:44:895)\n    at async play (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/public-single-055/harness-executed.mjs:68:346)\n    at async file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/public-single-055/harness-executed.mjs:91:57",
+  "browserCleanup": "Harness context and browser finally blocks completed; node exit1",
+  "serviceModified": false,
+  "publicHealthAfter": {
+    "ok": true,
+    "rooms": 0
+  },
+  "resultMenuVerified": false,
+  "servedBundlePreflightSHA256": "33da4dd6348b742f8f83bb241c4e01c892dba850668160368a1dadfff047e548"
+}

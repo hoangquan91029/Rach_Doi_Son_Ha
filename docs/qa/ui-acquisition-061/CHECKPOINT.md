@@ -1,0 +1,7 @@
+#061 exact selection reuse / idle rectangle scope — terminal PASS
+
+ONE Firefox153 isolated043 Coast miniUI proof, zero retries/fullmatches. Idle ownvillager8 acquired through unique normal8×8rectangle. Ctrl3save then ordinaryrightclick move(12,24) produces actualwalk/moveorder. At tick15 exactselection[8], ownlivingvillager65hp; same select helper called whilewalking. At tick17 target advances8.205→8.415, remainswalk/currentownliving, selection[8], instrumented world pointer/mouse/clickevents[] (no reacquisitioninput). F2→3 normalrecall exact[8].17art/12portraitsready/errors0. Owned browser/server cleaned, rooms0/listeningfalse; raw actual receipt/console/screenshot retained.
+
+After actualproof, scripts/browser-ai-winning.mjs receives only narrowhelper changes: exactcurrent[target] alreadyselected with matching own/living/nonembarked/kind/type returns withoutclick ordrag; small unique rectangle restricted to stateidle. Moving uncached target retains existing honest bounded point strategy; no guessedmotionlookahead or arbitraryselection acceptance. Existingcachedgroups/leaders and exactpostrectangle guards preserved. Trace EXACT_CURRENT_SELECTION_REUSE shows matchingidentity/state/selection;057 rectangletrace retained. Syntax passes; no globaltests for QA-onlyhelper.
+
+Frozenbefore/after and sourcehashes retained.055/057/058originalraw/scope unchanged;058 moving reacquisitionhold remainshistorical. No game/servicechanges/stateinjection/modalbypass/fullmatch/topdocsedit/commit/API/artcall. Sol6.1Low. Fullmatch validation requires separate finite order.

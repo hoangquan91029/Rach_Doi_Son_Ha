@@ -1,0 +1,7 @@
+#063 public Firefox Coast easy human victory — terminal PASS
+
+ONE final finite publicHTTPS Firefox153 Coast easy ordinaryUI guarded-artillery match, max360seconds, zero retries. Winner0/Enemy General defeated, tick4012/200.6simulationseconds/201.246wallseconds. Real victory/result→Return to menu verified while offline; screenshot visually confirms Coast Victory. Initialclusteredworker and selectedwalkingworker acquisition now pass via miniUI-proved061QA. Normalraidretreat/combat occurs, ownGeneral77% at result; no state injection or gameplaychanges.
+
+17candidateart/12portraitsready beforedisconnect and at result; navigatorfalse afterdisconnect/match/resultmenu. Errors0/networkfailures0. Actualpublicbrowser receipt TLS1.3/normalcertificate verification/noresolveIP/noTLSbypass/HTTP200, exactservedbundle33da4dd6348b742f8f83bb241c4e01c892dba850668160368a1dadfff047e548. Frozen061harnessSHA0e6ea6b48246d2a621eb4d7c2ab2594e5608ee12c9e8cc26a7601165227272c9; executedcopy changesonlybrowserimport/launch toFirefox. Rawtrace/pins/receipt/resultimage preserved.
+
+Nodeexit0/browsercontextandbrowserfinallycleanup completed. Public052service untouched, postattempthealthok/rooms0.055/058holds and050localCoastPASS unchanged. Sol6.1Low. No newmatch afterthisorder, game/serviceedit/topdocsedit/commit/assertionweakening/API/artcall. This is same-host publicHTTPS client load followed by offlineSinglePlayer victory, notexternaldevice/WAN or finalvisual/fullroster acceptance. Fullgoal remains incomplete; stopmatchfanout forwindow.

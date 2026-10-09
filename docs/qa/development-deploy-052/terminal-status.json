@@ -1,0 +1,54 @@
+{
+  "status": "PASS_PUBLIC_DEVELOPMENT_MECHANICS",
+  "results": [
+    {
+      "browser": "chromium",
+      "map": "delta",
+      "mode": "online",
+      "passed": true,
+      "code": "C4A233",
+      "peerBrowser": "firefox",
+      "forcedPublicRelayIP": null,
+      "combatWinner": 0,
+      "combatWallSeconds": 27.744,
+      "reconnect": true,
+      "rematch": true,
+      "initialTickHost": 5,
+      "lastLoopSampleTickHost": 550,
+      "confirmedVictoryTickPeer": 550,
+      "errors": []
+    },
+    {
+      "browser": "chromium",
+      "map": "coast",
+      "mode": "online",
+      "passed": true,
+      "code": "6A7116",
+      "peerBrowser": "firefox",
+      "forcedPublicRelayIP": null,
+      "combatWinner": 0,
+      "combatWallSeconds": 57.194,
+      "reconnect": true,
+      "rematch": true,
+      "initialTickHost": 5,
+      "lastLoopSampleTickHost": 577,
+      "confirmedVictoryTickPeer": 583,
+      "errors": []
+    }
+  ],
+  "publicHealth": {
+    "ok": true,
+    "rooms": 0
+  },
+  "sessions": {
+    "92625": "exit0",
+    "4141": "exit0"
+  },
+  "attemptsPerMap": 1,
+  "retries": 0,
+  "ownedBrowsersClosed": true,
+  "productionServiceIntentionalRunning": true,
+  "rollbackRetained": true,
+  "rollbackUsed": false,
+  "finalVisualOrFullGameApproval": false
+}

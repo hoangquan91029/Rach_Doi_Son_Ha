@@ -1,0 +1,11 @@
+# 062 terminal — actual naval core proof PASS; original QA HOLD preserved
+
+ONE dock-footprint-aware actualChromium Coasteasy scenario48.017seconds/0retries. Frozen043bundle33da4dd6…7e548 and server/sharedpins retained. Actual ordinaryUI scout10→visiblelegalshipyard35→transport51→passengerembark→knownwatertravel→legalshoreunload all occurred. No injections/hiddenenemyqueries/gamecode/production/art/topdoc changes.
+
+Current geometry guard selected actual vacant revealed8/39, outside dock9.5/38.5 and within2.6 shipcontact. Actual arrived8.5/38.6058, orderclear. Transport51 loaded exact own passenger10/tick868; passenger.embarked51, cargo[10]. Actual screenshot shows Cargo1aboard and no separate shoreline passenger; renderer.js34/248 excludes embarked units/minimap. Ship traveled7.5/40.5→12.588388/40.588388/tick922, actual known sea, passenger retained on board. Before unload current visible legal land candidates were computed from actual ship/normalizeddock. After actual Unloadashore passenger10 appeared alivehp65 at10.5/38.5, embarkednull, shipcargoempty, one original identity only; screenshot shows visible landed villager.
+
+Original run is **HOLD**, unchanged: leftover assertion incorrectly tested landed distance≤3 from requested13/41 instead of actualship. Source shared/sim.js228–230 selects land within3 of current ship; actual ship-to-land distance2.953427124746191 passes. No game defect is established, and no browser rerun occurred. Separate analyze.mjs/analysis.json verifies all captured actual core conditions against actual ship and originalpreflight; **PASS_NARROW_ACTUAL_UI_NAVAL_CORE**. Actual sea travel5.089155968968056. This analysis does not relabel the original harness HOLD or claim broad naval/combat/production/finalart acceptance.
+
+Errors0/networkfailures0. Ownedbrowser/serverclosed, healthrooms0/roomsAfterClose0/listeningAfterClosefalse. Embarked/failure screenshots inspected once at normalgameplaysize. No repeat fullscenario is needed for the alreadycaptured narrow proof; future harness maintenance should anchor unload radius to actualcurrent ship, preserving ownership/living/fog/blocker/contact conditions.
+
+All054/056/059 holds remain intact. Files changed only docs/qa/naval-ui-062/.

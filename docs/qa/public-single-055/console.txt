@@ -1,0 +1,15 @@
+coast 26 Defender 15 actual move order verified to resource-free 12,24
+coast 51 Defender 15 arrival and hold near General verified
+coast 71 Defender 16 actual move order verified to resource-free 10,28
+coast 129 Defender 16 arrival and hold near General verified
+coast 130 Two initial combat defenders held near General; excluded from offense
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+Error: Cannot select moving/overlapping entity 8
+    at select (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/public-single-055/harness-executed.mjs:44:895)
+    at async play (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/public-single-055/harness-executed.mjs:68:346)
+    at async file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/public-single-055/harness-executed.mjs:91:57
+
+Node.js v24.15.0

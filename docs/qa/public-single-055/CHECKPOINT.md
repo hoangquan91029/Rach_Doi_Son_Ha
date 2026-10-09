@@ -1,0 +1,7 @@
+#055 public Firefox Coast offline-after-load — terminal HOLD
+
+ONE finite publicHTTPS Coast easy guarded-artillery actual Firefox attempt, max360seconds, zero match retries. HTTPS preflight verified served043 bundle SHA33da4dd6348b742f8f83bb241c4e01c892dba850668160368a1dadfff047e548 and current source pins. Frozen corrected047 harness SHA7171b04499f5284653a3589676631bce54e705c5b58916d8be8b0651adf6d3ca; executed copy changes only import and launch from Chromium to Firefox. Normal TLS, no certificate bypass, proxy or host resolver.
+
+Actual public load reaches17art/12portraits ready, failures0. Offline disconnect navigatorfalse. Both defenders move/arrival/hold guards pass at ticks51/129. Harness then stops on Cannot select moving/overlapping entity8 during normal economic setup (existing five picker attempts exhausted); captured snapshot tick245/winnernull. Pageerrors0/networkfailures0. Actual screenshot viewed: Coast game UI, a villager selected. This does not establish game combat failure or a complete public SinglePlayer victory/result/menu acceptance. No result/menu screenshot or successful final transport receipt exists because guard terminated first; original raw error/snapshot/console retained.
+
+Node exit1, finally context/browser cleanup completed; public052 service untouched, postattempt publichealth ok/rooms0. No retry, game/balance edit, injected command, state mutation, topdocs edit, API/art call or commit.050 local Coast and044 Delta victories remain unchanged. Sol6.1Low. Fullgoal incomplete.

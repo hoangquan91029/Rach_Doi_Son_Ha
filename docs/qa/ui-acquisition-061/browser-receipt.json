@@ -1,0 +1,156 @@
+{
+  "url": "http://127.0.0.1:42721",
+  "attempts": 1,
+  "retries": 0,
+  "bundleSHA256": "33da4dd6348b742f8f83bb241c4e01c892dba850668160368a1dadfff047e548",
+  "browserVersion": "153.0",
+  "acquisition": {
+    "used": true,
+    "plan": {
+      "eligible": true,
+      "id": 8,
+      "tick": 8,
+      "type": "villager",
+      "state": "idle",
+      "point": {
+        "x": 646.017142857143,
+        "y": 405.09142857142854
+      },
+      "bounds": {
+        "x1": 642.017142857143,
+        "y1": 401.09142857142854,
+        "x2": 650.017142857143,
+        "y2": 409.09142857142854
+      },
+      "inside": [
+        8
+      ],
+      "priorSelection": [],
+      "ordinaryPoint": {
+        "x": 650.337142857143,
+        "y": 388.89142857142855
+      }
+    },
+    "after": {
+      "tick": 10,
+      "selection": [
+        8
+      ],
+      "current": {
+        "id": 8,
+        "owner": 0,
+        "kind": "unit",
+        "type": "villager",
+        "hp": 65
+      }
+    }
+  },
+  "beforeReuse": {
+    "tick": 15,
+    "selection": [
+      8
+    ],
+    "target": {
+      "id": 8,
+      "owner": 0,
+      "type": "villager",
+      "kind": "unit",
+      "x": 8.205,
+      "y": 21.5,
+      "hp": 65,
+      "maxHp": 65,
+      "food": 40,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "walk",
+      "dir": 0,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "resuppliedTick": 15,
+      "starving": 0,
+      "lastMovedTick": 15,
+      "order": {
+        "type": "move",
+        "x": 12,
+        "y": 24
+      }
+    }
+  },
+  "afterReuse": {
+    "tick": 17,
+    "selection": [
+      8
+    ],
+    "target": {
+      "id": 8,
+      "owner": 0,
+      "type": "villager",
+      "kind": "unit",
+      "x": 8.415000000000001,
+      "y": 21.5,
+      "hp": 65,
+      "maxHp": 65,
+      "food": 40,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "walk",
+      "dir": 0,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "resuppliedTick": 17,
+      "starving": 0,
+      "lastMovedTick": 17,
+      "order": {
+        "type": "move",
+        "x": 12,
+        "y": 24
+      }
+    },
+    "mouseEvents": []
+  },
+  "groupRecall": [
+    8
+  ],
+  "final": {
+    "tick": 18,
+    "art": {
+      "status": "CANDIDATE",
+      "manifest": "ready",
+      "declared": 17,
+      "ready": 17,
+      "approved": 0,
+      "candidates": 17,
+      "failed": 0,
+      "skipped": 0,
+      "fallbacks": 0,
+      "failures": []
+    },
+    "portraits": {
+      "declared": 12,
+      "ready": 12,
+      "failures": [],
+      "fontWarnings": []
+    }
+  },
+  "status": "ACTUAL_FIREFOX_IDLE_RECTANGLE_MOVING_EXACT_REUSE_ZERO_MOUSE_RECALL_PASS",
+  "browserClosed": true,
+  "healthAfter": {
+    "ok": true,
+    "rooms": 0
+  },
+  "roomsAfterClose": 0,
+  "listeningAfterClose": false,
+  "errors": []
+}
