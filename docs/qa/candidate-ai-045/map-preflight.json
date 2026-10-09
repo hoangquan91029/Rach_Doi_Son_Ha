@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "method": "Static createMatch/view initial filtered map contract, no actualmatch/commands; no invisibleenemy entities inspected",
+  "map": "coast",
+  "checks": [
+    {
+      "role": "defender15",
+      "x": 12,
+      "y": 24,
+      "terrain": "plain",
+      "resourcesNear": [],
+      "buildingsNear": []
+    },
+    {
+      "role": "defender16",
+      "x": 10,
+      "y": 28,
+      "terrain": "plain",
+      "resourcesNear": [],
+      "buildingsNear": []
+    },
+    {
+      "role": "workshop",
+      "x": 4,
+      "y": 26,
+      "terrain": "plain",
+      "resourcesNear": [],
+      "buildingsNear": []
+    },
+    {
+      "role": "fort",
+      "x": 11,
+      "y": 27,
+      "terrain": "plain",
+      "resourcesNear": [],
+      "buildingsNear": []
+    },
+    {
+      "role": "fallback enemy-home known map position",
+      "x": 54.5,
+      "y": 23.5,
+      "terrain": "plain",
+      "resourcesNear": [],
+      "buildingsNear": []
+    }
+  ]
+}

@@ -45,13 +45,13 @@ async function select(p,entity){const group=groups.get(p)?.get(entity.id);if(gro
 async function saveGroup(p,id,key){await p.keyboard.press(`Control+${key}`);if(!groups.has(p))groups.set(p,new Map());groups.get(p).set(id,key);}
 
 async function offensiveGroup(p,defenderIds){
- await p.keyboard.press('F2');
+ await p.keyboard.press('F2');const acquired=await snapshot(p),cohort=[...acquired.selection];assert.ok(cohort.every(id=>army(acquired).some(e=>e.id===id)),'Acquired cohort must be current living own military');
  for(const id of defenderIds){let s=await snapshot(p);const current=army(s).find(e=>e.id===id);if(!current||!s.selection.includes(id))continue;
   await center(p,current.x,current.y);const point=await p.evaluate(id=>window.rtsDiagnostics.entityPoint(id),id);assert.ok(point,'Held defender must have a pick point');
   await p.keyboard.down('Shift');try{await p.locator('#world').click({position:point});}finally{await p.keyboard.up('Shift');}
   s=await until(p,s=>!s.selection.includes(id),1000);assert.ok(s.selection.every(value=>army(s).some(e=>e.id===value)&&!defenderIds.has(value)||defenderIds.has(value)&&value!==id),'Toggle must retain military-only selection');
  }
- let s=await snapshot(p);const expected=army(s).filter(e=>!defenderIds.has(e.id)).map(e=>e.id).sort((a,b)=>a-b);assert.deepEqual([...s.selection].sort((a,b)=>a-b),expected,'Offense must equal CURRENT living own military excluding held defenders');if(!expected.length)return false;
+ let s=await snapshot(p);const expected=cohort.filter(id=>!defenderIds.has(id)&&army(s).some(e=>e.id===id)).sort((a,b)=>a-b);assert.deepEqual([...s.selection].sort((a,b)=>a-b),expected,'Offense must equal CURRENT living acquired cohort excluding held defenders');if(!expected.length)return false;
  await p.keyboard.press('Control+2');await p.keyboard.press('2');s=await snapshot(p);assert.ok(s.selection.length>0&&s.selection.every(id=>army(s).some(e=>e.id===id)&&!defenderIds.has(id)),'Recalled offense must remain current safe military');return true;
 }
 

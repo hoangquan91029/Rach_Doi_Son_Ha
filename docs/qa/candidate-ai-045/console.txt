@@ -1,0 +1,77 @@
+OWNED_SERVER http://127.0.0.1:44171
+coast 22 Defender 15 actual move order verified to resource-free 12,24
+coast 48 Defender 15 arrival and hold near General verified
+coast 64 Defender 16 actual move order verified to resource-free 10,28
+coast 120 Defender 16 arrival and hold near General verified
+coast 120 Two initial combat defenders held near General; excluded from offense
+coast 234 Six firearms queued through barracks UI
+coast 253 Four economic reinforcements queued
+coast 258 General held at home; forts cover the position
+PROGRESS coast {"tick":266,"army":4,"general":360,"resources":{"wood":340,"food":350.150112000017,"iron":80},"forts":0,"front":15.5}
+coast 276 Artillery workshop requested through ordinary build UI
+PROGRESS coast {"tick":466,"army":5,"general":360,"resources":{"wood":170,"food":380.2339840000177,"iron":50},"forts":0,"front":15.5}
+coast 542 Idle builder returned to wood gathering
+coast 613 Idle builder returned to wood gathering
+coast 619 Idle builder returned to wood gathering
+coast 646 Artillery trained through workshop UI
+PROGRESS coast {"tick":667,"army":5,"general":360,"resources":{"wood":100,"food":350.3907200000181,"iron":0},"forts":0,"front":15.5}
+coast 678 Idle builder returned to wood gathering
+PROGRESS coast {"tick":867,"army":6,"general":360,"resources":{"wood":200,"food":377.5666560000179,"iron":80},"forts":0,"front":15.5}
+coast 972 Defensive fort reserved
+PROGRESS coast {"tick":1067,"army":7,"general":360,"resources":{"wood":120,"food":423.9013440000238,"iron":40},"forts":1,"front":15.5}
+coast 1248 Artillery trained through workshop UI
+PROGRESS coast {"tick":1272,"army":9,"general":360,"resources":{"wood":55,"food":364.600128000025,"iron":20},"forts":1,"front":15.5}
+PROGRESS coast {"tick":1475,"army":10,"general":360,"resources":{"wood":120,"food":346.2627040000274,"iron":70},"forts":1,"front":15.5}
+coast 1519 Artillery trained through workshop UI
+coast 1527 Idle builder returned to wood gathering
+PROGRESS coast {"tick":1675,"army":11,"general":360,"resources":{"wood":110,"food":313.5313760000301,"iron":80},"forts":1,"front":15.5}
+coast 1863 Artillery trained through workshop UI
+PROGRESS coast {"tick":1878,"army":12,"general":360,"resources":{"wood":65,"food":238.79097600001742,"iron":40},"forts":1,"front":15.5}
+PROGRESS coast {"tick":2083,"army":13,"general":360,"resources":{"wood":130,"food":227.59091200001626,"iron":110},"forts":1,"front":15.5}
+coast 2214 Artillery trained through workshop UI
+PROGRESS coast {"tick":2285,"army":15,"general":360,"resources":{"wood":105,"food":174.15193600001584,"iron":70},"forts":1,"front":17.895007771141863}
+coast 2402 Offensive group advance at120 simulation seconds; defenders stay home
+PROGRESS coast {"tick":2487,"army":15,"general":360,"resources":{"wood":170,"food":161.80592000001343,"iron":140},"forts":1,"front":19.568203023671803}
+PROGRESS coast {"tick":2693,"army":16,"general":360,"resources":{"wood":255,"food":146.37857600000373,"iron":190},"forts":1,"front":21.60783451022785}
+PROGRESS coast {"tick":2894,"army":16,"general":360,"resources":{"wood":395,"food":176.52537600000048,"iron":290},"forts":1,"front":21.722600000000003}
+PROGRESS coast {"tick":3099,"army":18,"general":360,"resources":{"wood":460,"food":165.06697599999836,"iron":340},"forts":1,"front":38.13859999999988}
+PROGRESS coast {"tick":3302,"army":17,"general":360,"resources":{"wood":545,"food":150.95235199999536,"iron":410},"forts":1,"front":39.16459999999984}
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Offense must equal CURRENT living own military excluding held defenders
++ actual - expected
+... Skipped lines
+
+  [
+    44,
+    59,
+    60,
+    62,
+...
+    85,
+-   89
+  ]
+
+    at offensiveGroup (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/candidate-ai-045/harness-executed.mjs:54:120)
+    at async play (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/candidate-ai-045/harness-executed.mjs:83:88)
+    at async file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/candidate-ai-045/harness-executed.mjs:91:57 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: [
+    44, 59, 60, 62, 64, 65,
+    66, 68, 70, 74, 77, 78,
+    81, 84, 85
+  ],
+  expected: [
+    44, 59, 60, 62, 64, 65,
+    66, 68, 70, 74, 77, 78,
+    81, 84, 85, 89
+  ],
+  operator: 'deepStrictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.15.0
+OWNED_SERVER_CLOSED {"started":"2026-10-09T04:38:36.197Z","buildPins":[{"path":"/tmp/rds-selection043-build/index.html","bytes":4441,"sha256":"61f83b504855add9b845615ef99502ebddf1fb0bcf4e42dac9ad48e68c053246"},{"path":"/tmp/rds-selection043-build/assets/index-Doi9i9JT.js","bytes":142983,"sha256":"33da4dd6348b742f8f83bb241c4e01c892dba850668160368a1dadfff047e548"}],"url":"http://127.0.0.1:44171","healthBefore":{"ok":true,"rooms":0},"signal":null,"exitCode":1,"healthAfterHarness":{"ok":true,"rooms":0},"roomsBeforeClose":0,"roomsAfterClose":0,"serverListeningAfterClose":false,"finished":"2026-10-09T04:41:26.414Z"}

@@ -1,0 +1,9 @@
+#045 Coast candidate attempt — live production grouping race HOLD
+
+ExactlyONE Coasteasy guarded-artillery actualChromiumoffline-after-load attempt,360secondmaximum, samefrozen043bundle/source as044. Static initialfilteredmap preflight PASS: spawn/resources and defender12,24/10,28,workshop4,26,fort11,27,targetknownenemyhome54.5,23.5 ground destinations valid. No mapQA/source/game correction or invisibleenemy intelligence. Original044DeltaPASS and allfailure receipts untouched.
+
+Bothdefender move/arrival/hold and normal economic/artillery/fort setup succeeded; normaloffense advanced. At failurecapture tick3351 strict `Offense must equal CURRENT living own military excluding held defenders` equality stopped: actual15validmilitary ids, expected16 includingnewlyproduced89. Production occurred afterF2/livegroup acquisition, so the currentexpectedarmy gained a newfirearm not in selectedgroup. Capturedselection contains no dead/building/defender ids. This is a QA liveproduction race, not established gamebug or combatstrategy defeat. No newinvalid offensive command afterguard failure; winnernull/General360hp, no completedmatch/humanvictory/resultmenu coverage.
+
+17candidateart/12portraits loaded beforedisconnect/setup; navigatorfalse afterdisconnect. Pageerrors0/networkfailures0. Exactexecutedharness/source/buildpins, console, error/snapshot and screenshot retained; no sourcechange or guardweakening. A future separatelyauthorized QA change needs handle newproduction during acquisition while preserving currentmilitary/defender safety, before anothermatch.
+
+Chromium151.0.7922.34 and ownedserver44171closed; exit1,healthrooms0before/after,rooms0afterclose/listeningfalse. Temporary043bundleSHA33da4dd6348b742f8f83bb241c4e01c892dba850668160368a1dadfff047e548 retained. No retry/Coastsecondattempt/public/art/API/stateinjection/production/topdocedit/commit. Fullgame NOT COMPLETE; Coast humanvictory remainsopen,044DeltaPASS remainsvalid.

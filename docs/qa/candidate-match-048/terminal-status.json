@@ -1,0 +1,19 @@
+{
+  "status": "TERMINAL_HARNESS_RELOAD_READINESS_HOLD",
+  "deltaAttempts": 1,
+  "retries": 0,
+  "coast": "UNCALLED",
+  "gameDefectEstablished": false,
+  "productionChanged": false,
+  "workerErrors": [
+    "Your access token could not be refreshed because your refresh token was revoked. Please log out and sign in again.",
+    "workspace routing discovery unauthorized (401)"
+  ],
+  "rootWork": "Executed unchanged Sol-prepared Delta harness and preserved checkpoint; no substitute worker implementation",
+  "usage": {
+    "primaryUsedPercent": 30,
+    "weeklyUsedPercent": 20,
+    "ordinaryUsageAllowed": true,
+    "resetCreditsUsed": 0
+  }
+}

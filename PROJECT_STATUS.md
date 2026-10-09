@@ -1,3 +1,21 @@
+## Current048 checkpoint — Delta victory retained; QA acquisition proof passes; online reload harness hold
+
+044 completed the actual Delta easy offline candidate human victory: winner0/tick4835, result screen and return to menu while offline,17art/12portraits, zero page errors/network failures.043 runtime fixes remain verified by88tests and real browser selection proof. No game/runtime changes after043; productiondist/service/publicmanifest untouched. Full game NOT COMPLETE.
+
+045 Coast stopped at tick3351 on a QA acquisition race: a newly trained unit appeared after F2, invalidating equality against all current military. Original attempt and guards preserved.047 now captures the acquired live military cohort, removes held defenders, and validates its still-living members exactly. Actual Chromium ordinary UI proves newfirearm39 produced after acquisition does not alter saved group[13,14], helddefenders15/16 stay held, and nextF2 includes the newunit; zero page errors, ownedcleanup rooms0/listeningfalse. Only QA harness changed; no new complete Coast match yet.
+
+046 stopped on initial Firefox diagnostics initialization.048 adds a bounded real diagnostics/17asset wait. One actual Delta Chromium151/Firefox153 attempt then loaded17assets/zero failures in BOTH clients and reached the real guest reload. It stopped at harness line42 because the post-reload predicate read window.rtsDiagnostics before initialization. Preserve raw failure and frozen harness. This is a harness synchronization hold, not an established reconnect game defect or full online lifecycle PASS. Coast048 UNCALLED; no retry. Owned39197 server closed, rooms1→0/listeningfalse.
+
+Next work after exact Sol6.1Low access is restored: fix only real diagnostics readiness after reload, retaining reconnect/tick/session/lifecycle assertions, before a separate finite online attempt; separately freeze corrected047 QA for one new finite Coast offline match (max360s, no gameplay changes). Check live receipt/handle state before any call. No duplicate/exhausted-order retry or model substitution.
+
+Both project workers are terminal with authentication failures: refresh token revoked (log out/sign in again), and workspace routing unauthorized401. Required model remains gpt-6.1-sol/reasoning low. Root verified already-prepared receipts and executed the frozen048 Delta harness; no substitute model implementation was started. Current sandbox requires explicit escalated permission for project writes/browser execution; this checkpoint preserves those boundaries.
+
+041 masked gpt-image1.5 edit remains humanAUTHORIZED once. OPENAI_API_KEY absent at presence-only check; APIcalls0, SDK/CLI dry-run ready. Await local key configuration, never request secret in chat or repeat mode permission. D0 opposite contact/art fanout remains held; owner032 South gather naturalness acceptance and return-with-walk remain valid. Preserve all original/held art and histories.
+
+Live limits observed30%primary/20%weekly, ordinaryUsageAllowed=true on accountf6592c9f-dbc0-4fa8-94bd-831f1356cd00; no resetcredit used. Five-hour quiet schedule retained. Public HTTPS final visuals, all required roster/actions/maps and external-device production acceptance remain open. Earlier pending/live entries below are history.
+
+---
+
 ## Current044 Delta offline victory PASS /045 Coast preflight
 
 044 completed ONE actualChromium Deltaeasy human-victory match on043candidate: enemyGeneral defeated, winner0/tick4835/241.75simseconds/242.546wallseconds. Actualresultscreen→menu verified with navigatorfalse throughout afterdisconnect,17art/12portraitsready/errors0/networkfailures0. Bothhelddefenders and ordinarycurrentmilitarygroup/economy/artillery/fort/supply/combat guards passed. Source frozen/no gameplaychanges. Ownedbrowser/server37613closedrooms0/listeningfalse. Parentintake verifies realreceipt/result/menu/pins and victoryscreenshot. See docs/qa/candidate-ai-044/.

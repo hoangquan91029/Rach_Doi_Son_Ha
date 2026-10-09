@@ -1,0 +1,13 @@
+{
+  "original": "scripts/browser-acceptance.mjs",
+  "originalSha256": "2bb04e60277b32a64b99c98605448af6550264eb60cbb2c7ab73a0f139b65df9",
+  "changes": [
+    "Host and join URLs preserve ?art=work",
+    "assert both peers17ready/0failed, retain candidateEvidence",
+    "ownedwrapper043build and manifestpins only"
+  ],
+  "unchanged": "ordinaryUI reload/combat/victory/rematch/menu assertions",
+  "attemptsPerMap": 1,
+  "retries": 0,
+  "noPerformanceClaim": true
+}
