@@ -1,0 +1,35 @@
+{
+  "started": "2026-10-09T06:45:03.339Z",
+  "buildPins": [
+    {
+      "path": "/tmp/rds-ping067-final-build/index.html",
+      "bytes": 4441,
+      "sha256": "f5dbf4a89b7c3efc0a68c73e36cda962dae1ec649688d0133dcaf07f1762a1bc"
+    },
+    {
+      "path": "/tmp/rds-ping067-final-build/assets/index-CtalOIcs.js",
+      "bytes": 143310,
+      "sha256": "9a7e0e1bd744063a86c065bcf1090c75dbc26c4ad6f0297ffade6fe9922ceff5"
+    },
+    {
+      "path": "/tmp/rds-ping067-final-build/assets/art-v1/gather-026-manifest.json",
+      "bytes": 50569,
+      "sha256": "377d433dbdd2050564131f6ea7e67e14f65a749069cf2500bc46b54039e3471f"
+    }
+  ],
+  "url": "http://127.0.0.1:34653",
+  "healthBefore": {
+    "ok": true,
+    "rooms": 0
+  },
+  "signal": null,
+  "exitCode": 0,
+  "healthAfterHarness": {
+    "ok": true,
+    "rooms": 1
+  },
+  "roomsBeforeClose": 1,
+  "roomsAfterClose": 0,
+  "serverListeningAfterClose": false,
+  "finished": "2026-10-09T06:45:24.309Z"
+}

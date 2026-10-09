@@ -1,0 +1,9 @@
+#065 terminal public application-message-delay PASS
+
+ONE actual publicHTTPS normalTLS Chromium151/Firefox153 Delta match,150ms application-message FIFO hold EACH direction (+300ms nominal applicationRTT),0retries. Exact052 bundle33da4dd6348b742f8f83bb241c4e01c892dba850668160368a1dadfff047e548/17candidateassets pinned. Actual Firefoxreload/reconnect, ordinaryGeneral victory tick560, consensusrematch/newmatch and bothmenus PASS/errors0/combat29.175wallseconds.
+
+Six actualstreams receive/forward450messages,0order violations. Measuredhold min150.056ms/max168.825ms; streammedians150.771..151.224ms. Fullstreamstats/raw diagnostics receipt.json. Read-only existing rendererwork frameMs at harnesssamplingpoints: host28samples p50/p953.9/4.4ms max65.3ms; guest21samples13/21ms max106ms. Tickmax560 in both. This is opportunistic workduration sampling, NOT FPS/continuousframeinterval/densebattle performance acceptance.
+
+Concrete diagnostic defect: pingMs~1.7915e12 is INVALID as RTT. client/main.js:51 stores requestAnimationFrame monotonic now in pingAt; line41 pong computes epoch Date.now()-pingAt. Raw values preserved, invalidity labeled terminal-status; no repair in065. A separate finite sourcefix may address the HUD/diagnostics clock.
+
+Same-machine public endpoint applicationdelay, NOT WAN/networkemulation/separatephysicaldevice. No Coast/retry/game/globalharness/deploy/source changes. Ownedbrowserpairs closed/session29478exit0. Rooms0 before; rooms1 afterclosure cleared naturally to0 in one5s observation interval06:38:17.316Z→06:38:22.323Z, consistent server/index.js10660s disconnectedseatgrace. Health exposes only aggregatecount; actualmatch identity30DDA9 is in receipt, no assertion about unrelatedrooms. No restart/deletion; service intentionally running. Cleanupsession29070exit0. Fullgame/finalvisual gates remain open.

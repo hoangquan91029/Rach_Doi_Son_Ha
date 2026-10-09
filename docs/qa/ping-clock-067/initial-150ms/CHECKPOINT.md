@@ -1,0 +1,7 @@
+#067 terminal local candidate ping-clock PASS
+
+client/main.js now measures sent/received ping with performance.now(), preserving1800ms cadence. Only actual open-socket sends set pending timestamp; pong requires current socket and issued pending ping. Newconnections/socketclose/menu clear measurement to null; oldsocketpong cannot publish a measurement. No server/protocol/sim/game changes. Original065 publicraw invalidping is preserved, not retrofitted.
+
+Fresh local Vite build /tmp/rds-ping067-build index-DAxgGsBt.js SHAd617d6b244faabcafbf28bfd73b2c1f836954efa72fa1aa09610e9a7568bfb93. ONE short actual Chromium151/Firefox153 Delta room9F13CF with150ms orderedFIFO eachdirection, actualFirefox reload/reconnect,17candidateassets, realtickprogress5→114, zeroerrors. At least3actualpongs perbrowser; sampled validRTT host329.8..408.3ms andguest305..307ms. Counter samples are harnessobservations, not a separateinstrumentedperpong timestamp. No epoch-sized values. Runtime14.325wallseconds includingsetup/cleanup; no fullcombat/AI/public/Coast/retry or fulltest repeats.
+
+Owned41567 rooms0/listeningfalse, browsersclosed, session3727exit0. Runner relativeimport preflight failed before creatingserver/browser/match, errorpreserved anddepthcorrected; oneactualattempt. Syntax/build PASS. Localcandidateonly: deployed052 remainsold33da4dd6…7e548 withinvalidping pendinglaterproductionbinding. Allsource/buildpins/receipts under067; topdocs/commit leftroot. Stopcode/matchwork thisquota window.

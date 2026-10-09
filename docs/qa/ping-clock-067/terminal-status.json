@@ -1,0 +1,66 @@
+{
+  "status": "PASS_FINAL_LOCAL_CANDIDATE_ONLY",
+  "finalSourcePin": {
+    "path": "client/main.js",
+    "sha256": "504528ad8ec8312d024b7756a2bd638ad64fdc37007d0f3b8b9441d84dfd05ba",
+    "bytes": 40239
+  },
+  "finalBuildPins": [
+    {
+      "path": "/tmp/rds-ping067-final-build/index.html",
+      "bytes": 4441,
+      "sha256": "f5dbf4a89b7c3efc0a68c73e36cda962dae1ec649688d0133dcaf07f1762a1bc"
+    },
+    {
+      "path": "/tmp/rds-ping067-final-build/assets/index-CtalOIcs.js",
+      "bytes": 143310,
+      "sha256": "9a7e0e1bd744063a86c065bcf1090c75dbc26c4ad6f0297ffade6fe9922ceff5"
+    },
+    {
+      "path": "/tmp/rds-ping067-final-build/assets/art-v1/gather-026-manifest.json",
+      "bytes": 50569,
+      "sha256": "377d433dbdd2050564131f6ea7e67e14f65a749069cf2500bc46b54039e3471f"
+    }
+  ],
+  "initial150msProof": "initial-150ms/ preserved executedsource/bundle/receipt",
+  "finalSlowRTTProof": "slow-rtt/ one1000ms eachdirection miniUI",
+  "finalResult": {
+    "browser": "chromium",
+    "peerBrowser": "firefox",
+    "map": "delta",
+    "passed": true,
+    "code": "C22A36",
+    "reconnect": true,
+    "initialTick": 3,
+    "measurements": [
+      {
+        "page": 0,
+        "pongs": 1,
+        "tick": 31,
+        "pingMs": 2029.300000000745
+      },
+      {
+        "page": 0,
+        "pongs": 2,
+        "tick": 39,
+        "pingMs": 2029.300000000745
+      },
+      {
+        "page": 1,
+        "pongs": 1,
+        "tick": 71,
+        "pingMs": 2069
+      }
+    ],
+    "errors": []
+  },
+  "cleanup": {
+    "roomsBeforeClose": 1,
+    "roomsAfterClose": 0,
+    "serverListening": false,
+    "session33011": "exit0"
+  },
+  "productionUnchanged": true,
+  "sourceConcern": "pending ping timestamp overwritten beyond1800ms; finalpending-null guard prevents overlap",
+  "actualOrders": "one initial150ms check plus one separate newconcern1000ms eachdirection check; no unchangedretry"
+}

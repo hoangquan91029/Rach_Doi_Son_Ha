@@ -1,0 +1,106 @@
+{
+  "status": "PASS_LOCAL_CANDIDATE_ONLY",
+  "sourcePin": {
+    "path": "client/main.js",
+    "sha256": "0dbc6081994a6162e8046d591385cab2a1c7835a4f5376fe0fd61d41d58e8fbf",
+    "bytes": 40216
+  },
+  "buildPins": [
+    {
+      "path": "/tmp/rds-ping067-build/index.html",
+      "bytes": 4441,
+      "sha256": "4d5399a0f0269b71e2c640ba6dd38f49fa02c94cb4afacd588cab6d183902e12"
+    },
+    {
+      "path": "/tmp/rds-ping067-build/assets/index-DAxgGsBt.js",
+      "bytes": 143289,
+      "sha256": "d617d6b244faabcafbf28bfd73b2c1f836954efa72fa1aa09610e9a7568bfb93"
+    },
+    {
+      "path": "/tmp/rds-ping067-build/assets/art-v1/gather-026-manifest.json",
+      "bytes": 50569,
+      "sha256": "377d433dbdd2050564131f6ea7e67e14f65a749069cf2500bc46b54039e3471f"
+    }
+  ],
+  "result": {
+    "browser": "chromium",
+    "peerBrowser": "firefox",
+    "map": "delta",
+    "passed": true,
+    "code": "9F13CF",
+    "reconnect": true,
+    "initialTick": 5,
+    "measurements": [
+      {
+        "page": 0,
+        "pongs": 1,
+        "tick": 18,
+        "pingMs": 329.7999999988824
+      },
+      {
+        "page": 0,
+        "pongs": 2,
+        "tick": 34,
+        "pingMs": 329.7999999988824
+      },
+      {
+        "page": 1,
+        "pongs": 2,
+        "tick": 46,
+        "pingMs": 305
+      },
+      {
+        "page": 0,
+        "pongs": 3,
+        "tick": 70,
+        "pingMs": 374.2000000011176
+      },
+      {
+        "page": 1,
+        "pongs": 3,
+        "tick": 78,
+        "pingMs": 305
+      },
+      {
+        "page": 0,
+        "pongs": 4,
+        "tick": 106,
+        "pingMs": 408.30000000074506
+      },
+      {
+        "page": 1,
+        "pongs": 4,
+        "tick": 114,
+        "pingMs": 307
+      }
+    ],
+    "errors": []
+  },
+  "actualPongStreamCounts": [
+    {
+      "page": "host-delta",
+      "stream": 2,
+      "pongs": 4
+    },
+    {
+      "page": "peer-delta",
+      "stream": 4,
+      "pongs": 1
+    },
+    {
+      "page": "peer-delta",
+      "stream": 6,
+      "pongs": 3
+    }
+  ],
+  "cleanup": {
+    "roomsAfter": 0,
+    "listening": false,
+    "session3727": "exit0"
+  },
+  "productionUnchanged": true,
+  "attempts": 1,
+  "retries": 0,
+  "preflightImportErrorPreserved": true,
+  "fullTests": false
+}

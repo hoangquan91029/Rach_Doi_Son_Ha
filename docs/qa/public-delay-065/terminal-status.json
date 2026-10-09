@@ -1,0 +1,114 @@
+{
+  "status": "PASS_NARROW_PUBLIC_APPLICATION_DELAY",
+  "result": {
+    "browser": "chromium",
+    "map": "delta",
+    "mode": "online",
+    "passed": true,
+    "code": "30DDA9",
+    "peerBrowser": "firefox",
+    "forcedPublicRelayIP": null,
+    "combatWinner": 0,
+    "combatWallSeconds": 29.175,
+    "reconnect": true,
+    "rematch": true,
+    "initialTickHost": 6,
+    "lastLoopSampleTickHost": 560,
+    "confirmedVictoryTickPeer": 560,
+    "errors": []
+  },
+  "delay": {
+    "configuredEachDirectionMs": 150,
+    "nominalAddedApplicationRoundtripMs": 300,
+    "streams": 6,
+    "received": 450,
+    "forwarded": 450,
+    "orderViolations": 0,
+    "streamHoldMs": [
+      {
+        "min": 150.2800909999969,
+        "p50": 150.8244310000009,
+        "p95": 151.43970400000035,
+        "max": 154.8374359999998
+      },
+      {
+        "min": 150.05622999999832,
+        "p50": 150.8215569999993,
+        "p95": 151.55461100000002,
+        "max": 163.29432199999974
+      },
+      {
+        "min": 151.00378199999977,
+        "p50": 151.2239529999997,
+        "p95": 151.2239529999997,
+        "max": 151.35609399999976
+      },
+      {
+        "min": 150.19911800000045,
+        "p50": 150.79748800000016,
+        "p95": 163.4530709999999,
+        "max": 168.82478300000002
+      },
+      {
+        "min": 150.23019199999908,
+        "p50": 150.7858610000003,
+        "p95": 151.3460369999957,
+        "max": 151.5542110000024
+      },
+      {
+        "min": 150.1063600000016,
+        "p50": 150.7707989999999,
+        "p95": 151.59422900000027,
+        "max": 163.2891070000005
+      }
+    ]
+  },
+  "performance": [
+    {
+      "page": 1,
+      "samples": 28,
+      "observedTickMin": 2,
+      "observedTickMax": 560,
+      "frameCostMs": {
+        "p50": 3.899999998509884,
+        "p95": 4.400000000372529,
+        "max": 65.30000000074506
+      },
+      "pingMs": {
+        "p50": 1791527801346.4,
+        "p95": 1791527801353.4,
+        "max": 1791527801435.478,
+        "valid": false
+      }
+    },
+    {
+      "page": 2,
+      "samples": 21,
+      "observedTickMin": 6,
+      "observedTickMax": 560,
+      "frameCostMs": {
+        "p50": 13,
+        "p95": 21,
+        "max": 106
+      },
+      "pingMs": {
+        "p50": 1791527806300.76,
+        "p95": 1791527806328.88,
+        "max": 1791527806333.64,
+        "valid": false
+      }
+    }
+  ],
+  "performanceScope": "Read-only existing diagnostics at harness-driven sampling points; frameCostMs is renderer work duration, not FPS/frame interval or a continuous profiler; excludes external-device and WAN claims",
+  "session29478": "exit0",
+  "browserCleanup": true,
+  "serviceKeptRunning": true,
+  "attempts": 1,
+  "retries": 0,
+  "roomsAfter": {
+    "ok": true,
+    "rooms": 0
+  },
+  "cleanupSession29070": "exit0; one5s observation interval",
+  "pingMeasurement": "INVALID_MIXED_CLOCK: pingAt from rAF monotonic time, pong subtracts from epoch Date.now; raw values preserved but not RTT"
+}
