@@ -70,3 +70,6 @@ Current088/089: humanignorequota/parallelSol6.1Low continues.084worldcontact/con
 
 
 Current089terminal: PUBLIC088 bothmap normalTLSChromeFirefox 1v1invite/reload/reconnect/ordinaryGeneralvictorysync/rematch/newmatch/menuPASS/errors0/ownedcleanuprooms0. Delta571/Coast587 receipts preserved; no repeats.090 ONEpublicFirefoxCoasteasyoffline-after-load guardedartilleryhumanmatch live/session81390, inspectactualprocess/receipt beforeduplicate.091 isolatedcommandactorliveness validation fix starts, no newpublicdeployment yet. RequiredSol6.1Low/ignorequotapoll/parallel/pure2D/custody remain.
+
+
+Current090: currentPUBLIC088 exactf85cdd…ea3e7/sharedsim28e37…609c/service157023 retained.089BOTHmapChromeFirefoxactualnormalTLS1v1reload/reconnect/victorysync/rematch/newmatch/menuPASS/errors0/cleanuprooms0.090ONEpublicFirefoxCoast easy offline-before-setuphumanvictory4454/resultmenuPASS/errors0/fails0/17art12portrait, exactbundle; nofullfinalvisual/device/perfclaim.091actorlivenesshypothesisDISPROVEN by gethp>0/fivebaselinecontracts; no runtimepatch/retestfanout. NEXTunfinishedpure2D041ONEhumanAUTHORIZEDmaskedAPIedit/keyabsentpresenceonly/APIcalls0, no duplicatepermissions/secrets/blindexhaustedD0methods/fanout. Southowner032stands, returngoodsordinarywalk. Ignorequotapoll/percentage stops; exactSol6.1Low/parallel/preservedcustody/fullgoalunfinished.

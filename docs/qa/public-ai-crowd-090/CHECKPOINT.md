@@ -1,0 +1,7 @@
+#090 terminal publicFirefoxCoast humanvictory PASS on088crowdsim
+
+ONE authorized publicHTTPSFirefox153Coasteasy ordinaryUI guarded-artillery match, max360s, zero retries. New088bundlef85cdd520aa1fc133fe98eb2542a917600206fa27fa9dd16ca1e591fef3ea3e7/canonicalsim28e37b…609c/servicePID157023 boundpreflight; actualresponsepinsmatch. TLS1.3/HTTP200/normalcertificateverification/noresolveIP/delay/perf/bypass. Unchanged061QA/source0e6ea6b4…272c9/finiteeconomy/currentacquiredcohort/uniqueidle/exactselection guards preserved.
+
+Actualhumanvictorywinner0/EnemyGeneraldefeated/tick4454/222.7simulationseconds/253.568wallseconds. Bothdefenders and ordinaryeconomic/artillery/fort/supply/combat UI guards pass. Actualresultscreen→menu whileoffline verified; screenshotviewedconfirmsVictory.17art/12portraitsreadybeforeoffline andresult/failures0/fallbacks0; navigatorfalseafterdisconnect/match/resultmenu. Pageerrors0/networkfailures0. OwnGeneral100% atresult. No injectedstate/resources/units/commands/speed-up, balancechanges orart/sourcepipelineedit.
+
+Actualsinglesessionbrowsercontext/browserfinallycleanup complete/nodeexit0; noownonline room/serveropened, publichealthok/rooms0after, noservice/Funnel/restart/canonical/topdocs/commit changes. Old063/044/050proofsunchanged. ThissamehostpublicHTTPSload/offlinehumanAIproofisnotexternaldevice/WAN/finalart/performance/fullgoalacceptance. Original086SAMPLES_ONLY/fordcenter visualoverlap/finalrostergates remainopen. NoDelta/fanout/secondmatch.

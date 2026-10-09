@@ -1,3 +1,19 @@
+## Current090 — public crowd release verified in both modes
+
+Work continues without quota polling or percentage-based stops, using parallel exact Sol6.1Low workers. Public development088 remains at https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/ (optional illustrated candidate ?art=work), index-ByZVQkbs.js SHAf85cdd520aa1fc133fe98eb2542a917600206fa27fa9dd16ca1e591fef3ea3e7, canonical sharedsim SHA28e37b63ee39bbe1440741fa0afed3d9f20797831f666c0ff03d8299a8eb609c/service157023. Commitc068aba binds current deployment and crowd regressions; rollback sources/build/archive and original raw clips remain preserved locally.
+
+089 actual normalTLS Chromium151/Firefox153 BOTH-map1v1 passes invitation/join/ready, real reload/reconnect, ordinary General victory synchronization, rematch/newmatch and menus, errors0. Delta victory571 and Coast587; both browser pairs closed/rooms0. No repeat needed.
+
+090 adds ONE current-public Firefox Coast easy human victory through ordinary guarded-artillery economy/logistics/combat UI. Winner0/Enemy General defeated/tick4454 (222.7simseconds,253.568wallseconds), errors0/networkfailures0. After17candidateassets/12portraits loaded, network was disabled before setup; whole match/result/menu stays offline with navigatorfalse. Exactnewbundle pinned. This is a same-host public build proof, not separate-device/WAN/final-art acceptance.
+
+085 original88 tests and087 ten durable crowd contracts pass, including six AI victories and two naval/logistics cases.086 actual defaultzoom45viewport/30s battle has improved physical separation, but ford-center projected overlap remains visible and review stays SAMPLES_ONLY. Final illustrated directions/actions/roster, terrain/map composition, dense graphical acceptance and remaining production/performance/device evidence are incomplete.
+
+091 actor-liveness concern is DISPROVEN: existing get() filters hp>0 before authoritative commands, and five bounded actual baseline contracts reject dead actor effects/spend/refund/queues/residence reservations. No redundant guard or runtime change. Keep proof; do not start an unsolicited broad security audit or repeat full tests for no change.
+
+NEXT graphics gate: ONE previously human-authorized masked gpt-image-1.5 edit of D0 opposite contact under041. Current local OPENAI_API_KEY is absent (presence-only check), APIcalls0, no call open. No repeated permission or secret request; inspect actual credential/call/output state before the single authorized logical edit. Exhausted033/035/036/038 methods remain held; no blind native retries, limb textures, 3D intermediates, F2/F6/inbetweens or roster fanout until a usable opposite contact exists. Owner032 South gathering acceptance and ordinary-walk resource returns stand. Preserve all originals, leadership assets and custody. Full game NOT COMPLETE; older snapshots below are history.
+
+---
+
 ## Current088/089 — crowd mechanics deployed; new public lifecycle validation
 
 Continue project work without quota polling or percentage-based stopping. Exact gpt-6.1-sol / low remains required for code/art workers; parallel work is authorized. Older snapshots below are historical.
