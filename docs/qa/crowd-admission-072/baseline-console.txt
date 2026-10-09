@@ -1,0 +1,46 @@
+{
+  "source": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+  "sourceSHA256": "b4257d74b1684efdd7a8fc7d2fbc273494f9fb63304e217a6ab8693ba240470d",
+  "radiiContract": {
+    "land": 0.28,
+    "naval": 0.4
+  },
+  "method": "Authoritative unit regression fixtures with deliberate fixture state; ordinary command/step API. Not browser or normal gameplay acceptance.",
+  "results": [
+    {
+      "name": "30 unique destinations and body clearance; selected ID input order cannot change identity assignment",
+      "status": "FAIL",
+      "error": "no five-row wrap\n\n25 !== 30\n"
+    },
+    {
+      "name": "naval group destination diameter and selected ID stability",
+      "status": "FAIL",
+      "error": "naval diameter plus margin"
+    },
+    {
+      "name": "blocked recruitment retains completed paid queue; one freed exit admits exactly once",
+      "status": "FAIL",
+      "error": "blocked completed queue retained\n\n0 !== 1\n"
+    },
+    {
+      "name": "one legal occupied-clear shore slot gives partial unload; remaining cargo pending then resumes after freed",
+      "status": "FAIL",
+      "error": "one legal slot must not stack two passengers\n\n2 !== 1\n"
+    },
+    {
+      "name": "initial canonical living own units explicitly satisfy proposed clearance, or report initial overlap policy hold",
+      "status": "PASS",
+      "evidence": {
+        "maps": [
+          "delta",
+          "coast"
+        ],
+        "overlaps": [],
+        "radii": {
+          "land": 0.28,
+          "naval": 0.4
+        }
+      }
+    }
+  ]
+}

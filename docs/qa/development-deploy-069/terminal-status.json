@@ -1,0 +1,70 @@
+{
+  "status": "PASS_PUBLIC_DEVELOPMENT_PINGFIX",
+  "result": {
+    "browser": "chromium",
+    "peerBrowser": "firefox",
+    "map": "delta",
+    "passed": true,
+    "code": "2D5C53",
+    "reconnect": true,
+    "initialTick": 4,
+    "measurements": [
+      {
+        "page": 0,
+        "pongs": 1,
+        "tick": 13,
+        "pingMs": 317.4000000022352
+      },
+      {
+        "page": 0,
+        "pongs": 2,
+        "tick": 33,
+        "pingMs": 317.4000000022352
+      },
+      {
+        "page": 1,
+        "pongs": 2,
+        "tick": 45,
+        "pingMs": 315
+      },
+      {
+        "page": 0,
+        "pongs": 3,
+        "tick": 69,
+        "pingMs": 310.9000000022352
+      },
+      {
+        "page": 1,
+        "pongs": 3,
+        "tick": 77,
+        "pingMs": 315
+      },
+      {
+        "page": 0,
+        "pongs": 4,
+        "tick": 109,
+        "pingMs": 377.19999999925494
+      },
+      {
+        "page": 1,
+        "pongs": 4,
+        "tick": 117,
+        "pingMs": 353
+      }
+    ],
+    "errors": []
+  },
+  "healthAfter": {
+    "ok": true,
+    "rooms": 0
+  },
+  "session5899": "exit0",
+  "browsersClosed": true,
+  "serviceIntentionalRunning": true,
+  "attempts": 1,
+  "retries": 0,
+  "rollbackUsed": false,
+  "normalTLS": true,
+  "fullCombat": false,
+  "externalDeviceWANClaim": false
+}

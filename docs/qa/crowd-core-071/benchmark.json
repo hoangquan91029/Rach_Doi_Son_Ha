@@ -1,0 +1,42 @@
+{
+  "method": "ONE Node deterministic dense240unit60tick prior070 vs071 isolateddraft comparison. Fixture performance only; no browserFPS/capacity or collisionprogress acceptance.",
+  "prior070": {
+    "units": 240,
+    "ticks": 60,
+    "totalMs": 930.4385419999996,
+    "p50Ms": 7.284182000000044,
+    "p95Ms": 81.48889900000006,
+    "maxMs": 85.46603999999996,
+    "counters": {
+      "tick": 60,
+      "plans": 0,
+      "edges": 48,
+      "expansions": 4635,
+      "waits": 282
+    }
+  },
+  "candidate071": {
+    "units": 240,
+    "ticks": 60,
+    "totalMs": 521.8806459999998,
+    "p50Ms": 7.087782999999945,
+    "p95Ms": 10.295288000000028,
+    "maxMs": 72.34114799999998,
+    "counters": {
+      "plans": 0,
+      "edges": 48,
+      "expansions": 1500,
+      "waits": 282,
+      "queries": 8825,
+      "bodyChecks": 20926,
+      "rebuilds": 60,
+      "tick": 60,
+      "eligible": [
+        95,
+        100,
+        105,
+        110
+      ]
+    }
+  }
+}

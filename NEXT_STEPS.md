@@ -1,3 +1,25 @@
+## Current072 — public ping fix deployed; crowd correction in isolated drafts
+
+Latest human instruction: continue project work without quota polling or percentage-based stopping. All project workers use gpt-6.1-sol / low; parallel work is authorized.
+
+069 is now the public development release at https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/ (optional illustrated candidate: ?art=work). Served index-CtalOIcs.js SHA256 9a7e0e1bd744063a86c065bcf1090c75dbc26c4ad6f0297ffade6fe9922ceff5 matches the verified067 final stage; servicePID137146 binds source after rooms0 promotion. ONE normal-TLS Chromium151/Firefox153 room/reload/tick check with150ms ordered application delay each way measured311–377ms, errors0, postcleanup rooms0. Rollback archive/source/dist-before-069 remain preserved locally. Earlier052 full both-map online and063 public Firefox AI evidence remains valid for unchanged simulation mechanics; this small client update does not establish external-device/WAN or final-art acceptance.
+
+070 isolated occupancy-aware patch detour passes the exact formerly failing held-attacker land/naval fixtures, two-obstacle route and corner safety.071 adds spatial buckets, deterministic rotating planner allowance, route privacy and current navigation/attack-timing guards; all targeted gates pass. One240-unit Node fixture benchmark improved930ms→522ms total, not browser FPS/capacity acceptance. Live shared/sim.js remains unchanged; crowd stacking is still unfixed in the public build.
+
+072 freezes meaningful admission fixtures: production baseline fails30-unit formation uniqueness, naval spacing, occupied recruitment exits and partial shoreline unloading; canonical seed72 starting clearances pass on both maps. Raw failures remain intact.073 is a separate bounded admission implementation in docs/qa/crowd-admission-core-073;074 prepares unchanged six-AI-victory/two-naval-sortie compatibility gates. Inspect actual handles/receipts before resuming. No live simulation promotion, gameplay-balance change or broad acceptance yet.
+
+041 single masked gpt-image-1.5 edit remains expressly authorized, APIcalls0, local key missing at last presence-only check. No repeated permission, secret request, exhausted D0 image order or fanout. Owner032 South gathering acceptance remains valid; full visual roster/directions/actions/map composition and dense production acceptance remain open. Full game NOT COMPLETE. Older entries below are historical snapshots.
+
+---
+
+## Latest human priority — continue project without quota polling
+
+Human instruction (2026-10-09): “bỏ phần quan tâm đến quota đi. tập trung làm project”. Do not poll usage limits or stop project work based on quota percentages. Continue implementation, art and deployment toward the full objective. Preserve prior quota receipts as historical records; this supersedes earlier near-quota stopping and reset-wait instructions. Required Sol6.1Low routing, pure2D art, parallel authorization and truthful acceptance gates remain unchanged.
+
+Current work:069 prepares the verified067 ping fix for public development deployment;070 implements an isolated occupancy-aware crowd-detour first-fixture pilot. Inspect actual handles and receipts before resuming either. No art API call has been made. Earlier quota-stop entries are history.
+
+---
+
 ## Current068 — delayed public match verified; local ping fix checkpoint
 
 Production remains DEVELOPMENT052, bundle33da4dd6348b742f8f83bb241c4e01c892dba850668160368a1dadfff047e548, at https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/ with optional ?art=work. Prior064 public both-map1v1 and Firefox AI victory evidence remains valid. No new deployment or gameplay/simulation/server change this window.

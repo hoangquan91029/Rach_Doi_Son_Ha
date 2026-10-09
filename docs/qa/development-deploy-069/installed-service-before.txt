@@ -1,0 +1,20 @@
+[Unit]
+Description=Rach Doi Son Ha browser RTS production-build playtest server
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha
+ExecStart=/home/kieu-hoang-quan/.nvm/versions/node/v24.15.0/bin/node server/index.js
+Environment=NODE_ENV=production
+Environment=HOST=127.0.0.1
+Environment=PORT=3000
+Environment=MAX_ROOMS=8
+Environment=MAX_CONNECTIONS=32
+Restart=on-failure
+RestartSec=3
+NoNewPrivileges=true
+
+[Install]
+WantedBy=default.target
