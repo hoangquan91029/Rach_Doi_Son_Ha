@@ -1,0 +1,65 @@
+{
+  "plannedOnly": true,
+  "id": "artillery-workshop-idle-140",
+  "family": "building.artilleryWorkshop",
+  "kind": "building",
+  "state": "idle",
+  "direction": null,
+  "candidate": true,
+  "alphaPolicy": "transparent",
+  "source": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/buildings/artillery-workshop-idle-140/raw.png",
+    "sha256": "96c275af48c1bb02bc43e4382d4329782fbc3d42a715e7f0c6f1dabd24a8ef32",
+    "width": 1254,
+    "height": 1254,
+    "rgbaSha256": "3d0994fbcba1e88eeda2ccdadd85c5bc84932ffdee5293542423fe064f90c1f3",
+    "bbox": [
+      0,
+      18,
+      1241,
+      1254
+    ]
+  },
+  "runtime": {
+    "path": "artillery-workshop-144/idle.webp",
+    "sha256": "c433803486dcf9fc954569741fa6d98e6cb5c0acdc1e65a284cbbc186ac95430",
+    "width": 256,
+    "height": 256,
+    "rgbaSha256": "46c313572460f04e762dfac4d85027cf0c376cd95dd08f581e4346b5047bd964",
+    "derivation": {
+      "method": "resize",
+      "filter": "lanczos",
+      "sourceSha256": "96c275af48c1bb02bc43e4382d4329782fbc3d42a715e7f0c6f1dabd24a8ef32"
+    }
+  },
+  "pivot": {
+    "x": 627,
+    "y": 1010,
+    "space": "source"
+  },
+  "render": {
+    "width": 112,
+    "height": 112
+  },
+  "frames": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 1000
+    }
+  ],
+  "loop": true,
+  "contactShadow": {
+    "mode": "baked"
+  },
+  "cell": {
+    "width": 256,
+    "height": 256
+  },
+  "review": {
+    "status": "CANDIDATE"
+  },
+  "notes": "Actual140completedlivingidle only; unsupportedstates fallback; sourceaccepted narrowstatic only. Remove plannedOnly whencreatingrealmanifestin authorizedstage."
+}

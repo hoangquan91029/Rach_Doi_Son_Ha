@@ -1,0 +1,35 @@
+{
+  "contracts": {
+    "passed": 7,
+    "files": [
+      "iron137.test.js",
+      "gather-episode.test.js",
+      "storage-hud132.test.js"
+    ]
+  },
+  "freshBuild": "PASS",
+  "sourceScopeDifferences": [
+    {
+      "path": "client/raster-slice.js",
+      "approvedSHA": "caf142c5d665fe1ef937f75eaa62d3bf36f8c7af659ecbcdc1916368b6beb8cb",
+      "publicStageSHA": "79a221ebb3198cd53b594727dd031d73374729f9037db41295dab0eeab8368e9"
+    },
+    {
+      "path": "public/assets/art-v1/food-099/atlas.png",
+      "approvedSHA": "66d641fee006cff56b42e88619bbf9c87900224faa104ac9054a9dd3aef0b73a",
+      "publicStageSHA": null
+    },
+    {
+      "path": "public/assets/art-v1/food-099-manifest.json",
+      "approvedSHA": "d4ae1b557334120604ee7e648804917a8cc50ec1ed1624b84ec833bbf5b44104",
+      "publicStageSHA": null
+    }
+  ],
+  "canonicalWrites": 0,
+  "gitWrites": 0,
+  "topDocsWrites": 0,
+  "imageCalls": 0,
+  "apiCalls": 0,
+  "simulationChanged": false,
+  "serviceRestart": false
+}

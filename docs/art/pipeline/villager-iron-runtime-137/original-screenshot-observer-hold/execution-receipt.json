@@ -1,0 +1,43 @@
+{
+  "status": "TERMINAL_HOLD_ACTUAL_UI_FRAME_ACQUISITION",
+  "failure": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n    0,\n    1,\n    2,\n    3,\n    4,\n    5,\n-   6,\n    7\n  ]\n",
+  "artPipeline": {
+    "status": "CANDIDATE",
+    "manifest": "ready",
+    "declared": 24,
+    "ready": 24,
+    "approved": 0,
+    "candidates": 24,
+    "failed": 0,
+    "skipped": 0,
+    "fallbacks": 0,
+    "decodedBudgetBytes": 134217728,
+    "retainedDecodedBytes": 16418304,
+    "reservedDecodedBytes": 0,
+    "uniqueDecodedImages": 24,
+    "failures": []
+  },
+  "lastGather": {
+    "entityId": 7,
+    "frame": 3,
+    "direction": 1,
+    "assetId": "villager-gather-iron-south-136",
+    "visualState": "gather_iron",
+    "startedTick": 148,
+    "elapsedMs": 64.20000000000073,
+    "timeMs": 3764.2000000000007,
+    "presentationTimeMs": 11164.2
+  },
+  "cleanup": {
+    "rooms": 0,
+    "listening": false,
+    "browserClosed": true
+  },
+  "stage": "/tmp/rdsh-iron137-lhqpqmfv",
+  "testsPassed": 15,
+  "buildPassed": true,
+  "imageCalls": 0,
+  "noRerun": true,
+  "sourceRuntimeNotPromoted": true,
+  "ownerMotion141Separate": true
+}

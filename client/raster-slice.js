@@ -10,7 +10,8 @@ const TW=TILE_WIDTH,TH=TILE_HEIGHT;
 const finite=n=>Number.isFinite(n);
 const normalState=entity=>entity.hp<=0?'death':entity.state;
 /** Optional candidate art over actual simulation. No substitute map, fake units, or sprite mirroring. */
-export function createRasterSlice({enabled=['pilot','walk','work','food','terrain'].includes(new URLSearchParams(globalThis.location?.search||'').get('art')),manifestUrl=new URLSearchParams(globalThis.location?.search||'').get('art')==='terrain'?'/assets/art-v1/terrain-127-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='food'?'/assets/art-v1/food-099-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='work'?'/assets/art-v1/gather-026-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='walk'?'/assets/art-v1/walk-014-manifest.json':'/assets/art-v1/manifest.json',onStatus=()=>{},materialWorldSize=8}={}) {
+export function createRasterSlice({enabled=['pilot','walk','work','food','terrain','iron'].includes(new URLSearchParams(globalThis.location?.search||'').get('art')),manifestUrl=new URLSearchParams(globalThis.location?.search||'').get('art')==='iron'?'/assets/art-v1/iron-137-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='terrain'?'/assets/art-v1/terrain-127-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='food'?'/assets/art-v1/food-099-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='work'?'/assets/art-v1/gather-026-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='walk'?'/assets/art-v1/walk-014-manifest.json':'/assets/art-v1/manifest.json',onStatus=()=>{},materialWorldSize=8}={}) {
+ const worldArtEnabled=()=>['terrain','iron'].includes(new URLSearchParams(globalThis.location?.search||'').get('art'));
  const pipeline=createArtAssetPipeline({manifestUrl,allowCandidates:true,onStatus});
  const locomotion=createLocomotionPhase();
  const cells=new Map(),patterns=new WeakMap(),missing=new Set();let ready=false;
@@ -23,7 +24,7 @@ export function createRasterSlice({enabled=['pilot','walk','work','food','terrai
   const candidate=candidates[((variant%candidates.length)+candidates.length)%candidates.length];
   const raster=pipeline.get(candidate.id,{state,direction,timeMs});if(!raster.image){recordMissing(candidate.id,raster.reason);return null;}return raster;
  };
- const mountainReady=()=>new URLSearchParams(globalThis.location?.search||'').get('art')==='terrain'&&Boolean(select({families:['mountain','prop.mountain'],kind:'prop',state:'static',direction:null,timeMs:0})?.image);
+ const mountainReady=()=>worldArtEnabled()&&Boolean(select({families:['mountain','prop.mountain'],kind:'prop',state:'static',direction:null,timeMs:0})?.image);
  const cellImage=raster=>{
   if(raster.sx===0&&raster.sy===0&&raster.sw===raster.image.width&&raster.sh===raster.image.height)return raster.image;
   const key=`${raster.id}:${raster.frame}`;if(!cells.has(key)){const canvas=typeof OffscreenCanvas==='function'?new OffscreenCanvas(raster.sw,raster.sh):globalThis.document?.createElement('canvas');if(!canvas)return null;canvas.width=raster.sw;canvas.height=raster.sh;const c=canvas.getContext('2d');c.drawImage(raster.image,raster.sx,raster.sy,raster.sw,raster.sh,0,0,raster.sw,raster.sh);cells.set(key,canvas);}return cells.get(key);
@@ -89,14 +90,14 @@ export function createRasterSlice({enabled=['pilot','walk','work','food','terrai
    if(rasterAt(ctx,raster,project(x,y),zoom)){status.propDraws++;return true;}return false;
   },
   drawHillGround(ctx,{state,project,zoom=1,timeMs=0}={}) {
-   if(!enabled||!ready||new URLSearchParams(globalThis.location?.search||'').get('art')!=='terrain'||typeof project!=='function')return 0;
+   if(!enabled||!ready||!worldArtEnabled()||typeof project!=='function')return 0;
    const raster=select({families:['hill'],kind:'prop',state:'static',direction:null,timeMs});
    const placements=hillGroundPlacements(state,Boolean(raster?.image));let drawn=0;
    for(const p of placements)if(rasterAt(ctx,raster,project(p.x,p.y),zoom))drawn++;
    status.hillDraws=(status.hillDraws||0)+drawn;return drawn;
   },
   drawResource(ctx,{resource,project,zoom=1,timeMs=0}={}) {
-   if(!enabled||!ready||new URLSearchParams(globalThis.location?.search||'').get('art')!=='terrain'||!staticResourceEligible(resource)||typeof project!=='function')return false;
+   if(!enabled||!ready||!worldArtEnabled()||!staticResourceEligible(resource)||typeof project!=='function')return false;
    const raster=select({families:[resource.type,`resource.${resource.type}`],kind:'prop',state:'static',direction:null,timeMs});if(!raster)return false;
    if(rasterAt(ctx,raster,project(resource.x,resource.y),zoom)){const key=resource.type==='iron'?'ironResourceDraws':'foodResourceDraws';status[key]=(status[key]||0)+1;return true;}return false;
   },
@@ -104,7 +105,7 @@ export function createRasterSlice({enabled=['pilot','walk','work','food','terrai
    if(!enabled||!ready||!entity||entity.embarked||!finite(entity.x)||!finite(entity.y))return false;
    if(entity.kind==='building'&&entity.construction){recordMissing(`${entity.type}:construction`,'No authored construction sequence');return false;}
    let families,kind,direction;
-   if(entity.kind==='building'){if(!['residence','granary'].includes(entity.type)&&!(['barracks','depot'].includes(entity.type)&&new URLSearchParams(globalThis.location?.search||'').get('art')==='terrain'))return false;families=[entity.type,`building.${entity.type}`];kind='building';direction=null;}
+   if(entity.kind==='building'){if(!['residence','granary'].includes(entity.type)&&!(['barracks','depot'].includes(entity.type)&&worldArtEnabled()))return false;families=[entity.type,`building.${entity.type}`];kind='building';direction=null;}
    else if(['villager','infantry','cavalry'].includes(entity.type)){families=[entity.type,`unit.${entity.type}`];kind='unit';direction=entity.dir;}
    else if(entity.type==='general'&&entity.character==='tran_hung_dao'){families=['tran_hung_dao','unit.tran_hung_dao'];kind='unit';direction=entity.dir;}
    else return false;
@@ -127,7 +128,7 @@ export function createRasterSlice({enabled=['pilot','walk','work','food','terrai
   },
   drawEntity(ctx,entity,{project,zoom=1,tick=0,timeMs=tick*50}={}) {
    if(typeof project!=='function')return false;const result=this.sampleEntity(entity,{tick,timeMs});if(!result)return false;const {raster,visualState,walkPhase,sample,direction,elapsed}=result,asset=raster.asset;
-   if(rasterAt(ctx,raster,project(entity.x,entity.y),zoom)){status.entityDraws++;if(['gather_wood','gather_food'].includes(visualState)&&entity.type==='villager'){status.gatherDraws++;status.lastGather={entityId:entity.id,frame:sample.frame,direction,assetId:asset.id,visualState,startedTick:entity.visibleAction?.startedTick??null,elapsedMs:sample.elapsedMs,timeMs:elapsed,presentationTimeMs:timeMs};}if(walkPhase){status.walkDraws++;status.lastWalk={entityId:entity.id,frame:sample.frame,distance:walkPhase.distance,distancePerCycle:asset.locomotion.distancePerCycle,direction};}else if(visualState==='idle'&&asset.family==='unit.villager')status.idleDraws++;return true;}return false;
+   if(rasterAt(ctx,raster,project(entity.x,entity.y),zoom)){status.entityDraws++;if(['gather_wood','gather_food','gather_iron'].includes(visualState)&&entity.type==='villager'){status.gatherDraws++;status.lastGather={entityId:entity.id,frame:sample.frame,direction,assetId:asset.id,visualState,startedTick:entity.visibleAction?.startedTick??null,elapsedMs:sample.elapsedMs,timeMs:elapsed,presentationTimeMs:timeMs};}if(walkPhase){status.walkDraws++;status.lastWalk={entityId:entity.id,frame:sample.frame,distance:walkPhase.distance,distancePerCycle:asset.locomotion.distancePerCycle,direction};}else if(visualState==='idle'&&asset.family==='unit.villager')status.idleDraws++;return true;}return false;
   },
   /** Deterministic existing forest density, sorted ready for a merged prop/entity depth queue. */
   propsForState(state,{onlyVisible=true}={}) {

@@ -1,0 +1,5 @@
+#142 PUBLIC terminal PASS narrow
+
+Exact terminal137 source frozen and root137/owner141/helper bindings verified. Stage excludes ONLY foodCHAR opt-in branch/manifest/atlas; three differences receipted. Seven route/episode/HUD contracts and fresh isolated build PASS. Atomic no-restart promotion serves index-CRkcHzq0.js SHA cf24119739dbdaecf470bb2dc3589c8d5b377c89a213ed7c8f38d6e8cc058532. PID157023/simulation unchanged/rooms0. Full readonly129 tree/archive and old chunks retained.
+
+ONE normalTLS Chromium and ONE Firefox actual ordinaryUI naturalD1 iron all8/24ready12portraits/episode pause-Resume-Stop-restart/full20iron ordinarywalk treasury deposit/menu PASS, errors0/rooms0/ownedbrowser cleanup. Decoded RGBA16,418,304 bytes under128MiB/reserved0. Actual cargo panel20iron proved; no extra Depot/storage construction trial. FoodCHAR absent; old default/work/terrain/pilot/walk preserved by exact source differences. Original137 heavy observer HOLD untouched. No canonical/Git/topdocs/image/API action. Human141 naturalness stands; footlock/otherdirections/roster/finalrelease remain open.

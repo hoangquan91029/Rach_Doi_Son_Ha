@@ -1,0 +1,72 @@
+{
+  "status": "ONE_FINITE_BUILTIN_SOURCE_AUTHORIZED",
+  "routing": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low"
+  },
+  "maxCalls": 1,
+  "retries": 0,
+  "canvas": [
+    1254,
+    1254
+  ],
+  "pivot": [
+    627,
+    1010
+  ],
+  "runtime": [
+    256,
+    256
+  ],
+  "render": [
+    112,
+    112
+  ],
+  "previewZoom": 1.08,
+  "refs": [
+    {
+      "path": "docs/art/residence/variant-02/raw.png",
+      "sha256": "f617c3540680cafff467358bab1adb01bf735417563f2cba86ab8af523b07dcc",
+      "role": "style/camera/materialfamily only"
+    },
+    {
+      "path": "docs/art/granary/variant-01/raw.png",
+      "sha256": "0d0c3963f3faed9341cd09f2ff118a753e9bd1ee431290b51635eebb17b61715",
+      "role": "style/camera/materialfamily only"
+    },
+    {
+      "path": "docs/art/buildings/barracks-idle-121/raw.png",
+      "sha256": "65235252a47fdf4e6b1c9db67a56a05db13b7e08dd93682a7226bc8a5cb76d00",
+      "role": "style/camera/materialfamily only"
+    },
+    {
+      "path": "docs/art/buildings/supply-depot-idle-126/raw.png",
+      "sha256": "44c96329f2fdc8b8dae9c589400d798ac3911c1118b21714114f872f9aa676e1",
+      "role": "style/camera/materialfamily only"
+    }
+  ],
+  "dataBinding": {
+    "source": "shared/data.js",
+    "sha256": "ffc3f45adc58f212066d3763c591377ce15b9f6ac78e4685a95fc3ac747818e1",
+    "buildingType": "artilleryWorkshop",
+    "name": "Artillery Workshop",
+    "hp": 550,
+    "wood": 190,
+    "iron": 70,
+    "radius": 0.75,
+    "buildTime": 15,
+    "trains": [
+      "artillery"
+    ],
+    "unitTrainTime": 22,
+    "unitCost": {
+      "wood": 110,
+      "food": 60,
+      "iron": 90
+    }
+  },
+  "sizeReason": "Same0.75 gameplayradius asBarracks; fixed112 familyrender appropriate. No gamebalance/footprint change.",
+  "HEAD": "2fd34bc831a1e4648ce4d164e79450bb5344dbae",
+  "scope": "Sourcecompletedidle only; no construction/hit/death/unitart/canonical/runtime/public/historiccertification",
+  "underlyingImageModel": "unexposed"
+}

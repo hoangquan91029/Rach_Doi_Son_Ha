@@ -1,0 +1,92 @@
+{
+  "status": "PLAN_ONLY_NO_STAGE_BUILD_CODE_BROWSER_CALLS",
+  "profile": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low"
+  },
+  "baseline": {
+    "stage": "/tmp/rdsh-iron137-lhqpqmfv",
+    "authority": "137 terminal frozenstage actual15contracts/Delta proof, not mutable142",
+    "manifest": "public/assets/art-v1/iron-137-manifest.json",
+    "manifestSHA256": "b8523b187fa0bfac4fd81ad79b05eb635b4b2a21451ec204d2b069387ee2b497",
+    "existingAssets": 24,
+    "sourceInventory": "frozen137-source-inventory.json",
+    "inventoryCount": 210,
+    "sourceBindingsVerified": true,
+    "matching143MayBeUsedOnlyAfterEqualityCheck": "/tmp/rdsh-canonical143-2eoah3p2"
+  },
+  "art140": {
+    "docs/art/buildings/artillery-workshop-idle-140/raw.png": "96c275af48c1bb02bc43e4382d4329782fbc3d42a715e7f0c6f1dabd24a8ef32",
+    "docs/art/buildings/artillery-workshop-idle-140/runtime-256.png": "38c7959575dc5f59cdbba1fcf36221304475729b45d9790df8d9e9a347087b1d",
+    "docs/art/buildings/artillery-workshop-idle-140/runtime-256.webp": "c433803486dcf9fc954569741fa6d98e6cb5c0acdc1e65a284cbbc186ac95430",
+    "docs/art/buildings/artillery-workshop-idle-140/order.json": "c3c94e7cc93a8e19cab05f672a61978fdcadc40c68e2338a4985a7c703629523",
+    "docs/art/buildings/artillery-workshop-idle-140/receipt.json": "27fe759bb0fff839297e26ababeeadfe0b048af9281b97248d8355941718a412",
+    "docs/art/buildings/artillery-workshop-idle-140/root-source-intake.json": "669a4e8b92075c24a330faede24a54e9a0a7be9efa7e242f68ccee5acf1325f6"
+  },
+  "actualSourceRGBA": {
+    "size": [
+      1254,
+      1254
+    ],
+    "rgbaSHA256": "3d0994fbcba1e88eeda2ccdadd85c5bc84932ffdee5293542423fe064f90c1f3",
+    "bboxDiagnosticOnly": [
+      0,
+      18,
+      1241,
+      1254
+    ]
+  },
+  "actualRuntimeRGBA": {
+    "size": [
+      256,
+      256
+    ],
+    "rgbaSHA256": "46c313572460f04e762dfac4d85027cf0c376cd95dd08f581e4346b5047bd964"
+  },
+  "fixedLayout": {
+    "sourcePivot": [
+      627,
+      1010
+    ],
+    "runtime": [
+      256,
+      256
+    ],
+    "render": [
+      112,
+      112
+    ],
+    "noPixelChanges": true
+  },
+  "dataBindings": {
+    "path": "/tmp/rdsh-iron137-lhqpqmfv/shared/data.js",
+    "sha256": "ffc3f45adc58f212066d3763c591377ce15b9f6ac78e4685a95fc3ac747818e1",
+    "buildingType": "artilleryWorkshop",
+    "radius": 0.75,
+    "hp": 550,
+    "cost": {
+      "wood": 190,
+      "food": 0,
+      "iron": 70
+    },
+    "buildTime": 15,
+    "trains": [
+      "artillery"
+    ],
+    "artilleryCost": {
+      "wood": 110,
+      "food": 60,
+      "iron": 90
+    },
+    "artilleryTrainTime": 22
+  },
+  "executionGate": "NEW finite implementationorderrequired; thisPLANauthorizes noexecution",
+  "plannedCalls": {
+    "image": 0,
+    "browserMatch": 1,
+    "map": "delta",
+    "fullMatch": false,
+    "retries": 0
+  },
+  "baselineHEADObserved": "2fd34bc831a1e4648ce4d164e79450bb5344dbae"
+}

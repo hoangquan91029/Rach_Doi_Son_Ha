@@ -1,3 +1,19 @@
+## Current142 PUBLIC /143 LOCAL — owner-accepted iron gathering
+
+The human141 accepted the actual136 South/D1 iron loop as “Đủ tự nhiên và mượt”. This binds the shown eight-frame1080ms APNG; original pose holds/reassignments and technical-only reviews remain preserved. No measured foot lock, other-direction or full-roster approval is inferred.
+
+137 actual Delta ordinary UI reaches natural D1 iron contact and observes all8 frames, pause freezes tick/episode/presentation, Resume retains episode146, Stop clears gathering, restart starts239, and full20 iron returns by ordinary walk with treasury delta20.24ready/12portraits/failed0/errors0/ownedcleanup rooms0. Original screenshot-heavy observer missedF6 HOLD is retained; one authorized lightweight25ms observer followup passed without runtime/art changes. Root actual-scene intake accepts the narrow runtime.
+
+143 canonical LOCAL installs only tested137 raster-slice, iron manifest/atlas and durable iron tests.15 contracts pass; ALL210 sourcefiles and168 freshTEMP outputfiles byteequal frozen137, bundle index-BqTeVg77.js SHA0d39dea4fbb9ce834afce3b81dccc92eab1562cc14404ec536151b2b7ec7edb7. Pending LOCAL food character remains preserved.
+
+142 PUBLIC DEVELOPMENT https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/?art=iron now serves terrain23 plus actual136 iron action,24 assets. Bundle index-CRkcHzq0.js SHAcf24119739dbdaecf470bb2dc3589c8d5b377c89a213ed7c8f38d6e8cc058532. NormalTLS Chromium+Firefox actual natural D1/all8/episode pause-resume-stop-restart/full20 ordinarywalk deposit/menu pass,24ready12portraits/errors0/rooms0/RGBA16,418,304. Seven relevant public contracts/freshbuild pass. ServicePID157023/sharedsim28e37…609c unchanged/no restart; full readonly129 rollback/archiveSHAd114f90ef73c2c2ce269e5750c55514915c8eb02aa2a27b33e49fb725488904c and oldchunks retained. Public excludes ONLY pending foodCHAR opt-in/manifest/atlas. Prior full AI/online matches were not repeated for client-only artwork.
+
+140 ONE built-in whole2D Artillery Workshop completed-idle source returned/zero retries, original1254RGBA/uniform256/render112/pivot6271010 preserved. Root onebrief112px preview accepts source readability through cannon/wheel and bench.144 NEW finite isolated LOCAL workshop25 runtime trial is authorized and active: actual construction→idle/alpha selection→ONEartillery queue/spawn→Pause actualResume Stop/menu, no simulation/economy/art changes.145 public promotion is PREP ONLY pending terminal144/root scene intake and NEW execution dispatch. Inspect actual live handles before duplicate calls.
+
+Full objective remains INCOMPLETE: illustrated unit directions/actions/roster, building construction/hit/death, food continuous-motion feedback, finished map composition and dense-unit/external-device/WAN/performance acceptance remain open. Southwood owner032 stands; loaded goods always ordinary walk. ExactSol6.1Low parallel workers/built-in-only/noAPI/noquota/purewhole2D/no3D/limbtextures/original leadership/raw/held custody continue.
+
+---
+
 ## Current139 /136 — complete actual eight-frame iron source loop; next137 actual gameplay
 
 139 separate2builtin calls returned/zero retries/noopen;135original4started/interrupted remains,138exactF3F5recovery preserved. Root selectedactualF1EARLY_WINDUP_SLIGHT_OVERSHOOT→F2settle (requestedmidpointHOLD unchanged), F3EARLY_NEAR_CONTACT, F6LATE_RETURN, F7quietsettle; no sourcepixelrepair/framefill/originalpose-success claims. All8actualwholePNG candidates bound139parent-selection.
