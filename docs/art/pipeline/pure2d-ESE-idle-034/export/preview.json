@@ -1,0 +1,129 @@
+{
+  "status": "CANDIDATE_TECHNICAL_CUSTODY_ONLY",
+  "render": {
+    "width": 89,
+    "height": 89
+  },
+  "cell": {
+    "width": 128,
+    "height": 128
+  },
+  "sourceCanvas": [
+    1254,
+    1254
+  ],
+  "sourcePivot": [
+    654,
+    1140
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "phase": "F0",
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 1000,
+      "events": [],
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-Southeast-007/raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "2d32f65fe0f4c8037e19aeb5ace9b1b29e70ecf45a158d101770e86f9aa9092f",
+        "rgbaSha256": "97ca8c426f2f102ca86aeeed5ad381b8272459a4905694904d17c937f78f8078"
+      },
+      "pivot": {
+        "x": 654,
+        "y": 1140,
+        "space": "source"
+      },
+      "timeMs": 0,
+      "selectionStatus": "SELECTED_FRAME_CANDIDATE",
+      "selectionReceipt": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-ESE-idle-034/idle-selection.json",
+        "sha256": "6a7255420fb53faa3b8f3d34aefc7b6e1e8d46dccbd39d07a12f16b94afce6dd"
+      }
+    }
+  ],
+  "loop": true,
+  "cycleDurationMs": 1000,
+  "shadow": {
+    "id": "unit-contact-shadow",
+    "family": "unit-contact-shadow",
+    "kind": "vfx",
+    "source": {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/public/assets/art-v1/effects/unit-contact-shadow.png",
+      "sha256": "1572b3fd6dd84d36a423adbdbfca1975a071b07bd0c4043edd55688db0ed99bd",
+      "rgbaSha256": "242424c39edc2976292046eb766fcad9360a922b9c2b2f43d2ead0f5d6455d19",
+      "width": 1254,
+      "height": 1254,
+      "bbox": [
+        103,
+        53,
+        1196,
+        1196
+      ],
+      "alphaExtrema": [
+        0,
+        168
+      ]
+    },
+    "runtime": {
+      "path": "unit-contact-shadow.webp",
+      "sha256": "274b81f26e3869e158b0ab1e5093cd8a899d5255f0239c25ec7ab07ec314a7ff",
+      "rgbaSha256": "d581fe0139344e7a72697d43abcfe00b332f5eea107bb9a4ed7acebfb79ab647",
+      "width": 256,
+      "height": 256,
+      "bbox": [
+        66,
+        115,
+        200,
+        150
+      ],
+      "alphaExtrema": [
+        0,
+        167
+      ],
+      "derivation": {
+        "method": "resize",
+        "sourceSha256": "1572b3fd6dd84d36a423adbdbfca1975a071b07bd0c4043edd55688db0ed99bd",
+        "filter": "lanczos"
+      }
+    },
+    "cell": {
+      "width": 256,
+      "height": 256
+    },
+    "pivot": {
+      "x": 658,
+      "y": 648,
+      "space": "source"
+    },
+    "render": {
+      "width": 42,
+      "height": 42
+    },
+    "state": "static",
+    "direction": null,
+    "loop": true,
+    "frames": [
+      {
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 256,
+        "durationMs": 1000
+      }
+    ],
+    "alphaPolicy": "transparent",
+    "contactShadow": {
+      "mode": "none"
+    },
+    "review": {
+      "status": "CANDIDATE"
+    },
+    "candidate": true,
+    "notes": "Independent translucent authored ground shadow; raw retained, candidate only."
+  }
+}

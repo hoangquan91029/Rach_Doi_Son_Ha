@@ -1,0 +1,9 @@
+# D0/ESE static candidate idle034
+
+One existing sealed whole D0/ESE identity source becomes one static candidate idle frame, loop1000ms. No AI calls, source edits, rig generation, bbox fitting, mirroring, repair or invented living animation. Original historical source custody is pinned separately; selection explicitly records static identity to candidate idle derivative, with no visual approval.
+
+Frozen017 exporter creates schemaVersion1 candidate manifest with D0 idle and the existing separate authored contact shadow. Source1254→runtime128 uniform whole-canvas Lanczos; display89; pivot[654,1140]→runtime[66.75598086124401, 116.36363636363636]; columns1/gutter0/frames1. Actual decoded output exactly equals that declared resize. Encoded atlas13944bytes, decoded65536RGBAbytes; SHAd6cfa027e88b8c0ce91961efd0cbe4219bc4da3b0f68383b6755f26489945d10. Manifest SHAfdee1dbb26f37b3034f47399f6112c6d4533ef291c4bf80f772bc37807ac8341. Source SHA2d32f65fe0f4c8037e19aeb5ace9b1b29e70ecf45a158d101770e86f9aa9092f. Exporter/source/job/selection/runtime custody pins are retained in derivation-check.json and source-custody.json.
+
+Existing packaging validator PASS, no visual approval. Actual Chromium through real client createArtAssetPipeline loads2/2 assets, failed0/errors0; expected idle/D0/oneframe/loop/display89 contract passes. Owned static server/browser closed, listeningfalse. Export output/receipt/preview and loader receipt retained here. No broad suite repeated.
+
+Static derivative only; no continuous idle motion, new visual acceptance, travel/foot-lock or production approval. Integration waits for the complete D0 walk pilot and parent choice. Frozen017, old assets, public manifests, runtime, dist and production service are unmodified. No direction/unit fanout or deployment authority is supplied. Full game remains NOT COMPLETE.

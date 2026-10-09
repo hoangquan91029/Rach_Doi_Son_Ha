@@ -1,0 +1,26 @@
+{
+  "schema": "rds-finite-attachment-allowlist/v1",
+  "orderedReferences": [
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-ESE-F04-035/F04-primary-pose-guide.png",
+      "sha256": "3ded8bc0d113831a4820dc71f588123bdce09ad4560abfe10d707a1df67085ec",
+      "role": "PRIMARY_EDIT_TARGET_MODEL_ONLY whole-pose geometry; render this opposite-contact pose as one whole finished illustration"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+      "role": "APPEARANCE_REFERENCE face, costume, historical materials, palette; do not copy its standing pose"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-Southeast-007/raw.png",
+      "sha256": "2d32f65fe0f4c8037e19aeb5ace9b1b29e70ecf45a158d101770e86f9aa9092f",
+      "role": "D0_DIRECTION_IDENTITY_REFERENCE ESE wholebody camera/scale/asymmetric LEFT sash; do not copy neutral pose"
+    }
+  ],
+  "excluded": [
+    "F00-raw.png",
+    "033F04 held original",
+    "all other held/rejected artwork"
+  ],
+  "methodDifference": "Guide first and primary edit target; no predecessor pose conditioning. Inference that predecessor promoted copying is unproven."
+}

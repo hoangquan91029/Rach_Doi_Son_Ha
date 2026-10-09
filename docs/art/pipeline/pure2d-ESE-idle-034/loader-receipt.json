@@ -1,0 +1,44 @@
+{
+  "load": {
+    "stats": {
+      "status": "CANDIDATE",
+      "manifest": "ready",
+      "declared": 2,
+      "ready": 2,
+      "approved": 0,
+      "candidates": 2,
+      "failed": 0,
+      "skipped": 0,
+      "fallbacks": 0,
+      "failures": []
+    },
+    "assets": [
+      {
+        "id": "villager-idle-ESE-034",
+        "state": "idle",
+        "direction": 0,
+        "frames": 1,
+        "loop": true,
+        "render": {
+          "width": 89,
+          "height": 89
+        }
+      },
+      {
+        "id": "unit-contact-shadow",
+        "state": "static",
+        "direction": null,
+        "frames": 1,
+        "loop": true,
+        "render": {
+          "width": 42,
+          "height": 42
+        }
+      }
+    ]
+  },
+  "status": "ACTUAL_STATIC_D0_CANDIDATE_LOADER_PASS",
+  "browserVersion": "151.0.7922.34",
+  "serverListeningAfterClose": false,
+  "errors": []
+}

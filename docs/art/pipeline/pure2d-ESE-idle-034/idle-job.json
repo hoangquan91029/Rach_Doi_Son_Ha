@@ -1,0 +1,73 @@
+{
+  "id": "villager-idle-ESE-034",
+  "family": "unit.villager",
+  "state": "idle",
+  "sourceCanvas": [
+    1254,
+    1254
+  ],
+  "runtimeCell": [
+    128,
+    128
+  ],
+  "renderSize": [
+    89,
+    89
+  ],
+  "pivot": [
+    654,
+    1140
+  ],
+  "direction": 0,
+  "columns": 1,
+  "gutter": 0,
+  "camera": {
+    "projection": "dimetric",
+    "ratio": [
+      2,
+      1
+    ],
+    "tile": [
+      54,
+      27
+    ],
+    "elevation": 26.565
+  },
+  "contactShadow": {
+    "mode": "separate",
+    "assetId": "unit-contact-shadow"
+  },
+  "shadowDependency": {
+    "manifestPath": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/public/assets/art-v1/manifest.json",
+    "manifestSha256": "4fda8d2ec7f6bb4690a36644bacf2e222b722091905f9cfcc904295fa4e59814",
+    "assetSha256": "31052738f2593ba235a6e563005037460c52e2b095f462d2f9bf5b0f8c5e7c95",
+    "sourceReceipt": {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/terrain/unit-contact-shadow.json",
+      "sha256": "256cd896250af207e98e328b39d22b8a9c528a3d8b6ef55eab5e32bb19704b33"
+    }
+  },
+  "wholeCanvasTransform": "UNIFORM_LANCZOS_NO_CROP_SHIFT_FIT",
+  "sourceMethod": "FINISHED_WHOLE_2D_FRAMES",
+  "technicalFixture": false,
+  "frames": [
+    {
+      "index": 0,
+      "phase": "F0",
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-Southeast-007/raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "2d32f65fe0f4c8037e19aeb5ace9b1b29e70ecf45a158d101770e86f9aa9092f",
+        "rgbaSha256": "97ca8c426f2f102ca86aeeed5ad381b8272459a4905694904d17c937f78f8078"
+      },
+      "selectionStatus": "SELECTED_FRAME_CANDIDATE",
+      "selectionReceipt": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-ESE-idle-034/idle-selection.json",
+        "sha256": "6a7255420fb53faa3b8f3d34aefc7b6e1e8d46dccbd39d07a12f16b94afce6dd"
+      },
+      "durationMs": 1000,
+      "events": []
+    }
+  ],
+  "loop": true
+}

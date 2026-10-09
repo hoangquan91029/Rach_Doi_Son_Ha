@@ -1,0 +1,56 @@
+{
+  "schema": "rds-pure2d-finite-work-order/v1",
+  "jobId": "villager-walk-ESE-F04-035",
+  "status": "READY_PREPARATION_ONLY_AWAIT_ROOT_SELECTION",
+  "model": "gpt-6.1-sol",
+  "reasoningEffort": "low",
+  "maxCalls": 1,
+  "maxAttemptsPerFrame": 1,
+  "retries": 0,
+  "callsMade": 0,
+  "callOpen": false,
+  "frame": 4,
+  "direction": {
+    "engine": 0,
+    "world": "E",
+    "screen": "ESE"
+  },
+  "canvas": [
+    1254,
+    1254
+  ],
+  "pivot": [
+    654,
+    1140
+  ],
+  "runtimeCanvas": 128,
+  "displayCanvas": 89,
+  "references": [
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-ESE-F04-035/F04-primary-pose-guide.png",
+      "sha256": "3ded8bc0d113831a4820dc71f588123bdce09ad4560abfe10d707a1df67085ec",
+      "role": "PRIMARY_EDIT_TARGET_MODEL_ONLY whole-pose geometry; render this opposite-contact pose as one whole finished illustration"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+      "role": "APPEARANCE_REFERENCE face, costume, historical materials, palette; do not copy its standing pose"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-Southeast-007/raw.png",
+      "sha256": "2d32f65fe0f4c8037e19aeb5ace9b1b29e70ecf45a158d101770e86f9aa9092f",
+      "role": "D0_DIRECTION_IDENTITY_REFERENCE ESE wholebody camera/scale/asymmetric LEFT sash; do not copy neutral pose"
+    }
+  ],
+  "prompt": "F04-guide-first-prompt.txt",
+  "method": "sketch-to-render builtin imagegen; target guide first, references appearance-only",
+  "priorOrder": "033 is permanently exhausted2calls0retries; original F04 HOLD remains unchanged",
+  "guideParent": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-ESE-033/F04-model-guide.png",
+    "sha256": "3ded8bc0d113831a4820dc71f588123bdce09ad4560abfe10d707a1df67085ec",
+    "type": "MODEL_ONLY unchanged plain2D geometry, not finished art"
+  },
+  "gate": "ONE call only after root prepared-order intake. If reversal fails, stop guide-first method. F2/F6/inbetweens remain CLOSED.",
+  "qualityGate": "Brief gameplay-size opposite-contact comparison only; no microscopic detail gate or motion approval",
+  "head": "3fbe71ca3a781355b51cefbab986c55659483629"
+}
