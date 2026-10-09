@@ -1,0 +1,22 @@
+# Nghiên cứu kỹ thuật cho kế hoạch 154
+
+Ngày đối chiếu: 2026-10-09. Nguồn bên ngoài hỗ trợ quyết định; bằng chứng code/receipt trong repo mới xác định trạng thái đã làm. Không cài thêm engine, plugin hay công cụ trả phí trong audit này.
+
+| Nguồn gốc | Kết luận tài liệu | Áp dụng cụ thể vào project |
+|---|---|---|
+| [MDN — Optimizing canvas](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Optimizing_canvas) | Có thể cache nội dung tĩnh và kích thước ảnh, giảm thao tác vẽ lặp và tách lớp theo tần suất cập nhật. | Giữ Canvas2D và terrain-cache hiện có. Profile trước; ưu tiên culling, cache ground/minimap và hạn chế HUD cập nhật trước khi nghĩ đến đổi renderer. Không làm tròn vị trí simulation để tối ưu vẽ. |
+| [MDN — requestAnimationFrame](https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame) | Tần suất màn hình khác nhau; callback thường dừng ở tab ẩn. Animation cần dùng thời gian thay vì đếm callback. | Tiếp tục tách tick20Hz và trình bày. Đo tab ẩn/hiện, reconnect và pause; animation không được tạo damage hay tài nguyên. |
+| [MDN — WebSocket API](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API) | WebSocket phổ biến nhưng không tự giải quyết backpressure. WebSocketStream chưa có độ phủ tương đương. | Giữ WebSocket; đo bytes/sec, hàng đợi gửi và tick time ở1/5/10rooms. Chỉ thêm skip/coalesce snapshot khi có chính sách rõ, tuyệt đối không bỏ command hoặc kết quả trận. |
+| [Glenn Fiedler — Fix Your Timestep](https://gafferongames.com/post/fix_your_timestep/) | Fixed timestep cần headroom và giới hạn catch-up; simulation chậm có thể tích lũy backlog. | Giữ shared/sim20Hz. Đo riêng step và serialize/network, không kết luận FPS từ benchmark simulation. Tránh đổi tốc độ gameplay để che thiếu hiệu năng. |
+| [Chrome DevTools — Performance](https://developer.chrome.com/docs/devtools/performance) | Trace giúp phân biệt scripting, rendering, painting và long task trong phiên thực tế. | Capture ngắn với asset cuối, camera/default zoom và hardware ghi rõ. Báo p50/p95/p99 frame interval, không dùng một FPS tức thời hoặc screenshot để kết luận mượt. |
+| [TexturePacker — Texture settings](https://www.codeandweb.com/texturepacker/documentation/texture-settings) | Trim có thể giữ anchor nếu metadata đúng; crop thay origin làm đổi vị trí. Padding/extrude giúp tránh bleeding; xoay atlas cần renderer hỗ trợ. | Giữ uniform cells/pivot hiện tại. Chỉ trim về sau nếu sourceSize/offset/pivot/picking cùng được hỗ trợ. Không bbox-fit từng frame. Padding được thử ở zoom thực, không mặc định mua TexturePacker hay chuyển sang WebGL. |
+| [Tailscale — Funnel](https://tailscale.com/docs/features/tailscale-funnel) | Funnel cho người ngoài tailnet truy cập qua TLS; có giới hạn băng thông không cấu hình. | Link ts.net có thể thật sự public, không đồng nghĩa người chơi cần Tailscale. Đo WAN từ thiết bị ngoài; Funnel không tự chứng minh uptime/performance. |
+| [Tailscale — Funnel vs sharing](https://tailscale.com/docs/reference/funnel-vs-sharing) | Truy cập dịch vụ phụ thuộc thiết bị, dịch vụ và Funnel đang chạy; mô hình phù hợp chia sẻ tạm thời. | Giữ playtest hiện có. Chuẩn bị gói deploy reproducible/rollback, rồi chọn always-on host khi cần phát hành ổn định; không tự mua hosting. |
+
+## Các quyết định rút ra
+
+1. Không có bằng chứng buộc phải đổi engine. Nút thắt đang là độ phủ artwork, tổ chức release và đo hiệu năng với nội dung thật.
+2. Atlas nén nhỏ trên đĩa vẫn chiếm bộ nhớ giải mã. Tính ngân sách tối thiểu `width × height × 4` riêng từng page, cộng các bản sao bitmap/canvas/alpha-picking khi đo thực tế. Ví dụ128² RGBA=64KiB/frame;64frame=4MiB trước padding và bản sao.2048²=16MiB/page. Đây là phép tính, không phải số đo heap của game.
+3. Pose guide + ảnh canonical + key lân cận là phương pháp hiện tại có tiến triển, không bảo đảm công cụ tạo ảnh sẽ giữ pose. Chưa có nguồn kỹ thuật nào chứng minh có thể tự động ra hàng nghìn frame đúng; cần đo tỷ lệ frame được chọn và thời gian cho một action hoàn chỉnh trước khi dự báo lịch.
+4. Giữ original1254px do công cụ trả về để bảo toàn custody.256px là đề xuất bản authoring/export chuẩn hóa, không được gọi là kích thước raw đã sinh. Rendercanvas89px cũng không tự chứng minh nhân vật hiển thị cao89px.
+5. Audit kỹ kế hoạch không có nghĩa duyệt ảnh khắt khe hơn: một vòng xem liên tục ở kích thước chơi + sửa lỗi nhìn thấy + kiểm tra provenance/runtime gọn vẫn là quy tắc.

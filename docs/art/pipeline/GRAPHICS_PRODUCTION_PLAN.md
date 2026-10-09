@@ -1,69 +1,63 @@
-Current145/146: actual140 completed-idle Workshop is LOCAL and PUBLIC optional?art=workshop25 with approved iron136 loop retained. NormalTLS ChromeFirefox actualbuild/select/trainONEartillery/pauseResume/F2guardedgroupStop/menu errors0. Original individual-click overlap HOLD remains; no gameplay patch/soloartillerypickclaim.146 exacttested144 source/build equality17contracts. Building construction/hit/death and fullroster/directions/actions/maps/final release stay open. NEXT one finite CavalryCamp idle whole2D source/runtime pilot; no exhaustedD0 method retry or character fanout. Allworkers/testhandles/imagecalls terminal, production runs.
+# Kế hoạch đồ họa — audit154, 9/10/2026
 
-Current142/143: human141 accepts shown136 iron eight-frame loop naturalness; actual137 game episode/20iron ordinarywalk deposit passes. Exact137 code/data installed LOCAL143 and PUBLIC142 optional?art=iron24, actual normalTLS ChromeFirefox lifecycle/errors0.140 whole2D Workshop idle source accepted narrow112px;144 isolated actualbuild/train trial live and145 public PREPONLY. Other directions/actions/roster/building destruction/maps/food-motion/final release remain open. No new image call is open; inspect live handles before duplication.
+Kế hoạch toàn game: [PROJECT_PLAN.md](../../PROJECT_PLAN.md). Phạm vi và bằng chứng chi tiết: [art-animation-audit.md](../../audit/2026-10-09/art-animation-audit.md). Bản kế hoạch trước audit được giữ [nguyên byte](../../audit/2026-10-09/history/docs/art/pipeline/GRAPHICS_PRODUCTION_PLAN.md).
 
-Current139/136:8actualwholeSouth/D1 gather_iron sources now produceactual1080msAPNG/atlas/manifest/uniform128render89; Chromiumall8/playpause/replay/error0 technicalPASS.1392successes separate135interrupted4/1382recovery; originalrequestedposeHOLDs andactualrole reassignments preserved. Continuousnaturalness/footlock/runtime/publiciron/fanout stillOPEN.137nextLOCAL24 realD1episode/20ironwalkdeposit gameplay trial requiresfiniteimplementationorder. Public129Depot23+storageHUD validated; fullgraphics/mastergoalunfinished.
+## Mục tiêu hình ảnh
 
-Current129/128: actualDepotidle126+food-stock/loadcapacityHUD nowPUBLICterrain23 withnormalTLSChromeFirefox realbuild/trainwagon/actualinventorylabels/lifecycle/error0 proof;LOCAL12820contracts/all166TEMPfilesexact132. IronactionSouth131F0+134threeactualkeys (F6late-returnreassignment/originalHOLD) exist;135fourBIs interrupted and138actualrecovery active, noduplicatecalls/missingframefill.136export137runtime PREPONLY. Fullroster/directions/actions/maps/foodmotion/finalvisual/performance remainOPEN. ReadnewestNEXT/138actualreceipt before artcalls.
+Minh họa lịch sử chân thực/bán chân thực, có khối và chiều sâu, chuyển động tự nhiên ở kích thước chơi RTS. Giữ mũ, trang phục, màu áo, dải thắt lưng (sash) và vật liệu theo mẫu nhân vật chuẩn (canonical). Không dùng nhân vật hình khối, 3D, cutout hay texture tay/chân riêng làm thành phẩm.
 
-Current124/123 (9 October): iron119 and completed-idle Barracks121 are PUBLIC in optionalterrain22, actualnormalTLSChromeFirefox construction→idle/select/trainONEInfantry/ironcontext/pauseResumeStopmenu PASS. Actual120BOTHmap iron20cargo ordinarywalkdeposit260→280 and122Delta build/train proofs bind rootnarrowactualscene acceptance. LOCAL123 exacttested122 code/data/164TEMPbuildfile equality,14contracts; public12415contracts excludes pendingfoodCHAR only.126 Supply Depot whole2D source/root96preview accepted after separate125tooltimeout;127 PLANONLY future finite runtime23. Building construction/hit/death artwork, foodmotion, D0, allroster/actions/maps/finalvisual/performance stillOPEN. Read latestNEXT_STEPS and terminal123/124 pins; all raw/holds/custody retained.
+Thứ tự đánh giá: chuyển động đúng và liền mạch → silhouette/readability → identity nhất quán → chi tiết bề mặt. Xem một vòng chuyển động ngắn ở kích thước chơi thật; chỉ sửa lỗi thấy rõ. Việc audit kỹ kế hoạch không thay đổi ưu tiên kiểm tra hình ảnh ngắn gọn này.
 
-Current117/118 (9 October): static terrain candidate20 is PUBLIC via?art=terrain — actual illustrated mountain108/hill111/foodNODE114 in bothmap presentation, with Chrome/Firefox short interaction/lifecycle proof. Originalworldillustrations onebuiltin call each/zero retries/runtime128, explicit globalrender56/72/48; originalauthor64/96/40 previews preserved. Local118 exact115code/data/build has10contracts/all160outputbyteequal. Published117 explicitly excludes pendingfood CHARACTER101 opt-in/data. Final terrain repetitions/hill-edgecoverage/mapcomposition, characterdirections/actions/roster and finalacceptance remain open. ReadcurrentNEXT_STEPS/117/118pins ratherthan historicalnextactions below.
+## Hiện tại có gì
 
-Current106/107 (9 October): actual eight-frame South/D1 food loop096+100 →101atlas/APNG →105actualgameplay →106LOCAL canonical optional?art=food. Eight builtin calls/zero retries, real all8/pause/stop/restart/20foodordinarywalkdeposit and15 relevanttests pass. F01/F03 are explicit dwells with original interpolationHOLD preserved. Human actual-size naturalness feedback is pending; no motion/fanout/publicfood approval.107 public promotes ONLY104M/Aground controls with originalwork17, exactnormalTLSChrome/Firefox proof. Read latestNEXT_STEPS and106/107receipts. NoAPIcredentialgate; installedbuiltin skills remain sufficient. Historical plan snapshots below are preserved, superseded where they contradict currenthuman reviewpriority/builtin route.
+| Hạng mục | Đã có | Còn thiếu |
+|---|---|---|
+| Villager D1 | Idle, walk 014, wood 026/owner 032, iron 136/owner 141; food 101 local | Build/repair, attack/hit/death và độ phủ hướng; food còn chờ phản hồi riêng |
+| Villager D0 | 033 F0 và 152 F4 là selected contact candidates; 153 có 2 guide | 6 frame thực, loop và actual travel/stop |
+| Quân đội | Một số identity idle D0 | Phần lớn hành động và hướng nhìn cho infantry, spear, firearm, cavalry, artillery, wagon và hai tàu |
+| Leaders | 12 portrait và nguồn identity gốc | Hoạt ảnh toàn thân, hành động theo vai trò và 8 hướng; chỉ một general có idle candidate |
+| Buildings | 6/10 completed-idle | Shipyard/Fort/Wall/Gate; construction/damage/destruction |
+| World | Ground/water/ford/shore candidates, forest, hill/mountain, food/iron nodes | Composition hai map, bờ/edge/repetition và scene đông quân |
+| Framework | Export017, preview098, timing, locomotion phase, gather episodes, alpha picking, manifest loader | Coverage registry, composition compiler, match banks, default release |
 
-Latest route update094 (9 October): the human has no API key and explicitly selects built-in generation. Read BUILTIN_IMAGE_ROUTE_20261009.md.041 stays historical/APIcalls0, not an active credential gate.094 ONE built-in visual-region-reference edit still repeats D0 contact and is HELD.096 is a new bounded South gather_food whole-illustration pilot; check latestNEXT_STEPS/actual receipts before source calls. All original methods/assets remain preserved.
+Public149 `?art=camp` có 26 asset entries / 47 frame rectangles. Đó không phải 26 animation hay bộ roster hoàn chỉnh. URL trần chưa dùng slice này mặc định.
 
-# Graphics production plan — PURE 2D, 8 October2026
+## Quy trình chuẩn cho một action
 
-Model routing (human instruction, 2026-10-08): use `model='gpt-6.1-sol'` and `reasoning_effort='low'` for every future code and art task in this project. Do not use Luna anywhere or silently fall back to another model. This supersedes the old master art Luna/HIGH split; preserve the original briefs, assets, directives and receipts as history. This is project routing policy, not a claim that the current chat UI model changed.
+1. **Chốt identity và runtime mapping.** Ghi `identity/action/engineDirection`, nguồn canonical, camera/light, equipment, cycle/terminal state và simulation event liên quan. Không tạo run/carry/deploy nếu gameplay không cần.
+2. **Chốt cả chu kỳ.** Dùng clothed 2D guides có near/far ownership, contact/passing phases, fixed pivot và timing. Walk 8 frame: F0/F2/F4/F6 trước, rồi inbetweens. Không dựa vào bốn prompt rời rạc.
+3. **Sinh whole illustrated keys.** Builtin imagegen, exact Sol 6.1 Low worker. Guide là primary pose; canonical và key lân cận là appearance/continuity references. Giữ raw và tool receipt. Key sai rõ ràng thì dừng slot, không đổi nhãn để che lỗi.
+4. **Hoàn thiện inbetweens.** Sau khi keys được chọn, mỗi frame bám hai key lân cận; số call hữu hạn. Không ghép nguồn pixel, xoay limb texture hoặc fit từng frame.
+5. **Compile và xem loop.** Một transform cho toàn family, alpha/cell/pivot/duration validation, atlas/manifest/contact sheet/loop tự sinh. Xem 10–15 giây tại kích thước chơi; sửa những lỗi nhìn thấy.
+6. **Trial thật và đưa vào catalog.** Đi/đứng/đổi hướng hoặc work/stop/pause trong game, đúng hướng do mô phỏng xác định. Ghi technical/visual/owner/public riêng. Chỉ mở đợt sản xuất tiếp sau khi pilot tương ứng đạt yêu cầu.
 
-Current evidence (checkpoint036): corrected South/D1 eight-frame walk014 loads through runtime016. Real Chromium/Firefox movement, pause, stop and sprite picking pass. South/D1 wood gathering now has eight whole illustrated frames,1080ms, real atlas/browser episode playback in024/026. The human viewed its actual gameplay-size loop and accepted it as natural/smooth in owner032. Preserve026 independent SAMPLES_ONLY history; owner feedback is the current evidence for this shown loop.
+Gộp công việc theo từng hành động, không tạo một dự án quản trị cho từng frame. Mỗi package có một ledger, một preview và một receipt gọn. Bản lỗi và original vẫn được giữ; build/rollback đầy đủ ở ranh giới release.
 
-Reusable exporter017, resource-specific state mapping018 and authoritative episode timing019 are implemented. Goods return with ordinary walk, per the human instruction. Whole source custody and family transforms remain fixed. No dedicated carry art is required. Current D0/ESE contact pilot033 selectedF00, but both033/035 F04 attempts repeated its leading leg. A finite whole-canvas guide warp036 produced visible distorted overlap and is HELD. New038 actual illustrated-key view transfer also repeats the wrong leading leg and is HELD afterONE builtin call/0retries. All these methods/orders are stopped, no call is open. Matching static D0 idle034 is exported and browser-loaded; it awaits a complete walk. No held output is a selected opposite contact.
+## Tái sử dụng và sản xuất hàng loạt
 
-Latest authority: PURE_2D_MASTER_DIRECTIVE_20261008.txt explicitly replaces the prior3D proposal. Character production is pure2D illustration and controlled frame-by-frame animation. The previous plan remains recoverable in Git219d1fe; no source asset or experiment is deleted.
+Tái sử dụng pose specification, guides, timing, camera, export, atlas schema, preview, asset banking và runtime API. Thành phẩm của mỗi nhân vật vẫn phải là một minh họa toàn thân riêng. Humanoid generic, spear, firearm, commander, cavalry, artillery crew, wagon và ship là các motion family khác nhau.
 
-**Canonical2D Illustration →2D Character Consistency Specification →Controlled2D Key Poses →2D In-Between Frames →Finished Illustrated PNG Frames →Sprite Atlas →Web Game.**
+- Bước 1: hoàn thiện D0 walk để chứng minh quy trình dùng guide có trang phục qua cả chu kỳ.
+- Bước 2: thống nhất visible scale của idle/walk/work trong một scene thật, rồi hoàn thành villager tám hướng và action cần thiết.
+- Bước 3: một infantry pilot trọn trạng thái; sau đó spear/firearm. Song song làm world/building, không mở cả roster ảnh.
+- Bước 4: từng complex family (horse/rider, wagon/animal, crew/gun, ships) có pilot riêng trước batch.
+- Bước 5: một premium leader pilot; chốt 12 identity dùng shared role family hay role-specific artwork trước khi ước tính/call hàng loạt.
+- Bước 6: accepted release manifest + match banks + final map composition + performance và public validation.
 
-## Why the3D proposal is abandoned
+Worker có thể chạy song song các package độc lập, tối đa 3 worker + root. Frame phụ thuộc phải đợi key đã được tạo và chọn thực tế. Không lật ảnh tự động: villager sash, tay cầm vũ khí, leaders và ánh sáng bất đối xứng cần hướng thật. Nếu một generic family đối xứng đủ để mirror, phải ghi mapping được duyệt và thêm hỗ trợ renderer trước; hiện vẫn dự trù đủ 8 hướng.
 
-The human explicitly rejects character modeling, Blender, skinning, UV maps,3D material/lighting scenes, skeletal clips and3D-to-sprite baking, including required internal intermediates. The current primitive renders also failed canonical realistic appearance at gameplay size. No argument about classic RTS production techniques overrides the chosen art direction. Do not install Blender or evolve binding005. Preserve001–005 as superseded experiments, not production dependencies. No engine migration follows from this authoring change.
+## Kích thước và bộ nhớ
 
-## Six stages
+Mục tiêu visible humanoid 64–96 logical px tại default zoom, không phải canvas cao 89 px. Scene hiện tại có idle cũ render 38/42/51 và action mới 89; đây là chênh lệch cần sửa bằng thang kích thước nhất quán cho từng nhóm nhân vật. Đo opaque height đủ để giải quyết khác biệt nhìn thấy, không audit từng pixel.
 
-| Stage | Deliverable | Acceptance gate |
-| --- | --- | --- |
-| 1. Qualify one2D villager | Existing full-body canonical artwork, consistency specification and opposite illustrated contactsF0/F4 | Identity, proportions, historical outfit/material richness, consistent lighting/camera and anatomical support exchange at gameplay size; no simplified substitute. |
-| 2. Complete one2D walk | ValidateF0/F2/F4/F6, then illustrateF1/F3/F5/F7 using neighboring keys; eight finished PNG frames and real loop preview | Correct contacts/weight transfer, no sliding, stable root/pivot, natural overlap/cloth, no texture flicker, smoothF7→F0 and convincing paused frames. Geometry alone is not evidence. |
-| 3. Complete villager animations | Eight true directional references/walks, then role-specific idle/gather/chop/iron/food/build/repair/hit/death and attack if actual gameplay uses it | Finite action/view pilots, same identity/light/camera, runtime state mapping and independent loop checks. Run only if gameplay requires a separate state. |
-| 4. Expand military | One additional humanoid and one complex cavalry pilot, then2D archetype templates for spear/firearm/commanders/artillery/wagon/ship | Proven reuse of pose planning, QA/export/runtime tooling; unique illustrated equipment/outfits/leader identities, dedicated complex anatomy. No full army batch before villager succeeds. |
-| 5. Finish battlefield art | Illustrated buildings/fortifications/trees/resources/forests/rivers/seas/hills/mountains plus UI/minimap/VFX on both maps | Coherent2.5D projection, light/shadow, scale/occlusion and readable routes/supply/units in dense gameplay; no crude final shapes. |
-| 6. Validate web game | Automated atlases/manifests, bounded/lazy match asset loading and final accepted-art public build | Chrome/practicalFirefox load/memory/performance, actual SP and authoritative online1v1/reconnect/rematch; full battles with accepted artwork. |
+Raw hiện tại 1254² được giữ nguyên. Bản working/export đề xuất 256², khoảng 224 px body; runtime 128², khoảng 112 px body trước scale xuống màn hình. Đây là baseline dự kiến cho output chuẩn hóa, không tuyên bố raw đã sinh 256 px. Dùng transform chung và pivot chuyển đổi đúng; horse/spear/ship có canvas riêng nếu cần. Không regenerate asset tốt chỉ để đổi độ phân giải.
 
-## Resolution and performance
+128² RGBA = 64 KiB/frame; 64 frame = 4 MiB trước padding/copies. Inventory tham khảo 5.600–6.024 frame có thể chiếm 350–376,5 MiB nếu nạp toàn bộ 128 cells, chưa gồm world/portrait/caches. Vì vậy cần selected-map/roster banks, giải phóng bank khi rời trận, dedup theo content hash. Guard 128 MiB hiện có chưa tính toàn bộ bộ nhớ trình duyệt.
 
-256² source canvas with224–233px character,112–116px runtime and roughly80px display is a baseline to validate, not immutable law. Use one brief loop review near80px; inspect another scale or paused frame only to resolve a visible problem. Preserve high-quality originals separately and never upscale to invent detail. Larger declared canvases are allowed for weapons, horses or animation extents; never clip artwork or fit each frame independently. Use one family-wide scale/pivot and an explicitly validated bounding-box policy.
+Không hứa ngày hoàn tất trước khi đo số frame được chấp nhận trên mỗi call và thời gian làm việc thực để hoàn thành ít nhất hai chu kỳ. Số lượng trong audit là giả định để lập kế hoạch; không phải lệnh tự động sinh hàng nghìn ảnh. Không ép tất cả hành động dùng 8 frame: hit/death/attack/idle theo thời lượng và độ mượt cần thiết.
 
-Eight walk frames are the first pilot. If real playback slides, first inspect2D foot tracks/cadence/travel calibration; additional controlled illustrated in-betweens require an explicit finite order. The superseded3D48-frame clip supplies no new2D key, timing acceptance or production dependency. Do not hide problems by changing gameplay speed, blur or per-frame pivot.
+## Gate tiếp theo cụ thể
 
-Keep editable PNG originals outside runtime atlases. Reuse current hash/alpha/frame/pivot validation, manifest schema and sprite sampling. Plan page banks/lazy loading based on selected map/roster, decoded-memory profiling, deduplication and optional visualLOD only after actual quality checks. Current loader preloads approved/candidate assets in bounded groups rather than true match-based lazy banks; that improvement remains open. Do not manually author thousands of rectangles. Renderer changes must address an actual runtime requirement, not the illustration method.
+G01 trong master plan: guide intake 153 → 2 calls F2/F6 → actual key intake → 4 inbetweens → 8 frame loop → actual D0 travel/stop. 152 chỉ là contact candidate; chưa qualified D0 workflow. Food đang chờ phản hồi không chặn các gói công việc độc lập. Wood 032 / iron 141 acceptance giữ nguyên. Các method 033/035/036/038/094/150 đã hết phạm vi lệnh, không thử lại mù.
 
-## Current next implementation
-
-1. Keep the accepted South wood-gather loop and existing walk/runtime integration. Reuse whole-frame custody, timing/export, atlases and simulation-authoritative presentation for subsequent pilots.
-2. Optional masked-edit proposal041 is prepared for stronger regional2D control of the D0 opposite contact. The human has explicitly selected one gpt-image-1.5 CLI/API edit. Dependencies/dry-run are ready; localkey is missing, no charge/call yet. Do not ask mode/model permission again.038 actual illustrated-key view transfer failed; preserve it and stop that method. Do not repeat exhausted033/035 guides or036 warp, use held art as a selected frame, or silently switch to CLI/API. Select a readable opposite contact before F2/F6 and inbetweens.
-3. Complete the D0 eight-frame walk, use matching idle034, then briefly view real-size looping and practical travel/stop. Correct visible problems only.
-4. Continue finite resource/action/direction pilots; keep returned goods on walk. Extend archetypes after target motion works, with unique whole illustrated equipment/identities.
-5. Finish battlefield artwork and validate accepted artwork on the final public build against all completion criteria. Local candidate QA is supporting evidence, not final release acceptance.
-
-Binding005 is terminalHELD and superseded: sampled clearance, continuity and triangle area failed;0 images/AI/runtime changes. Preserve its frozen evidence without further geometry work. The old hidden-joint/component rig is optional2D pose reference only; no new limb reconstruction art and no visible puppet assembly. Finished whole-body illustration quality takes precedence.
-
-Detailed standards and reusable asset/script inventory: PURE_2D_CHARACTER_PIPELINE.md. Full game remains NOT COMPLETE; no art or owner approval is inferred by this plan.
-
-VI: Quy trình đã đổi hoàn toàn sang minh họa2D có chiều sâu và hoạt ảnh từng frame. Giữ chất lượng asset gốc; kiểm tra hai contact, bốn key rồi vòng đi tám ảnh trước khi nhân rộng. Dừng dựng3D/Blender và giữ thử nghiệm cũ làm hồ sơ.
-
-Current026 addendum: first completeSouth/D1 gather_wood candidate uses8actualwholeillustrations,1080ms, fixedfamily1254→128/render89/pivot6541140. RealoptionalLOCAL ?art=work preload/draw/pause/stop/restart/return checks pass; motionreviewSAMPLES_ONLY, clip/APNG ready foronebriefcontinuouslook. No otherdirection/resource/unit fanout or visual/owner/publicapproval. Read newestNEXT_STEPS and actual024/026 receipts; old019/020 holds remainhistory, not instructions to repeat failedmethods.
-
-
-Current032 human feedback supersedes the unreviewed-naturalness hold for the shown South/D1 gather_wood loop: “Tự nhiên và đủ mượt, tiếp tục workflow này”. Exact APNG-bound scope is in owner-motion-review-032/review.json. Continue one bounded D0/ESE villager walk pilot from its existing locked whole illustration, with controlled contact/passing keys before inbetweens and a brief real-size loop look. No broad roster batch or production approval follows; original026 independent SAMPLES_ONLY receipt remains unchanged.
+Đưa asset mới vào default release sau coverage và actual-scene acceptance; không bật toàn bộ candidate rồi gọi finished. Full project vẫn **INCOMPLETE**.

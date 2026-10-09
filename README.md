@@ -1,8 +1,12 @@
 # Rạch Đôi Sơn Hà
 
-Original browser RTS about historical leadership, terrain and physical food logistics. **In development; NOT COMPLETE under sections 81–114. Visual quality gate failed.** Existing source art in `leadership/` is preserved read-only.
+Original browser RTS about historical leadership, terrain and physical food logistics. **In development; NOT COMPLETE under sections81–145 and later human requirements. Full visual coverage and release acceptance remain open.** Existing source art in `leadership/` is preserved read-only.
 
-Public desktop-browser playtest: https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/ — single player and online 1v1, no player installation. Hosting requires this machine to remain awake and connected. The optional `?art=pilot` preview uses original raster candidates over the actual match; missing art is explicitly PLACEHOLDER_ONLY. Neither preview nor default development art is final approved art.
+Public desktop-browser playtest: https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/ — single player and online 1v1, no player installation. Hosting requires this machine to remain awake and connected. The richest current illustrated development preview is [camp26](https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/?art=camp), public149; missing art is explicitly PLACEHOLDER_ONLY. Neither preview nor default development art is final approved art.
+
+## Current plan and audit
+
+Start with [detailed project plan](docs/PROJECT_PLAN.md), [current status](PROJECT_STATUS.md), [next tasks](NEXT_STEPS.md) and [audit154](docs/audit/2026-10-09/README.md). The plan separates implemented mechanics, technical evidence, visual acceptance and final public release. Earlier checkpoint documents are preserved under the audit history directory.
 
 ## Development
 Requires Node.js 22.12+ or 24.x for developers only. Players need only a desktop browser and the public HTTPS URL.

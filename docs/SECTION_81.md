@@ -1,3 +1,5 @@
+> Current evidence mapping and execution plan: [audit154](audit/2026-10-09/README.md) and [PROJECT_PLAN.md](PROJECT_PLAN.md). The original final acceptance checklist below remains open; individual proofs are recorded separately, not inferred from this audit.
+
 # Final completion criteria — user update, 2026-10-07
 
 The project is COMPLETE only when a normal user can receive a public HTTPS link, open it in a desktop browser, and play without installing anything. Both complete modes are required: local Single Player human vs AI and Online human vs human exactly 1v1.
