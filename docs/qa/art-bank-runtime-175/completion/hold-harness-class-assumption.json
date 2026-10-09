@@ -1,0 +1,539 @@
+{
+  "status": "HOLD",
+  "scope": "Narrow Chromium online decode-failure -> retry recovery -> reload decode-failure -> menu cancellation",
+  "faultInjection": "createImageBitmap throws only under an explicit QA decoder flag; no gameplay commands/state/facing/speed injection",
+  "errors": [],
+  "bundleSHA256": "007f24788752fe491d7fa00c65a6c0b685eacaecb94a120b5ff44d3fec0afdcd",
+  "failed": {
+    "tick": 0,
+    "mode": "online",
+    "localPlayer": 0,
+    "artLoading": true,
+    "bank": {
+      "phase": "error",
+      "epoch": 2,
+      "encodedBytes": 3821000,
+      "encodedBudgetBytes": 67108864,
+      "activeIds": [
+        "grass",
+        "water",
+        "forest",
+        "residence",
+        "infantry-idle-D00",
+        "cavalry-idle-D00",
+        "villager-idle-D00",
+        "tran-hung-dao-idle-D00",
+        "unit-contact-shadow",
+        "ford",
+        "shore",
+        "forest-bamboo",
+        "forest-palm",
+        "granary",
+        "villager-walk-south-014",
+        "villager-idle-south-014",
+        "villager-gather-wood-south-024",
+        "mountain-outcrop-108",
+        "grassy-hill-111",
+        "food-resource-114",
+        "iron-resource-119",
+        "barracks-idle-121",
+        "supply-depot-idle-126",
+        "villager-gather-iron-south-136",
+        "artillery-workshop-idle-140",
+        "cavalry-camp-idle-147",
+        "shipyard-idle-164"
+      ],
+      "scope": {
+        "map": "delta",
+        "roster": [
+          "villager",
+          "king",
+          "general",
+          "infantry",
+          "spearman",
+          "firearm",
+          "cavalry",
+          "artillery",
+          "wagon",
+          "warship",
+          "transport"
+        ],
+        "buildings": [
+          "residence",
+          "barracks",
+          "cavalryCamp",
+          "artilleryWorkshop",
+          "shipyard",
+          "fort",
+          "wall",
+          "gate",
+          "depot",
+          "granary"
+        ],
+        "leaders": [
+          "tran_nhan_tong",
+          "tran_hung_dao"
+        ]
+      }
+    },
+    "art": {
+      "status": "PLACEHOLDER_ONLY",
+      "manifest": "ready",
+      "declared": 27,
+      "ready": 0,
+      "approved": 0,
+      "candidates": 0,
+      "failed": 27,
+      "skipped": 0,
+      "fallbacks": 0,
+      "decodedBudgetBytes": 134217728,
+      "retainedDecodedBytes": 0,
+      "reservedDecodedBytes": 0,
+      "uniqueDecodedImages": 0,
+      "encodedReady": 0,
+      "retainedEncodedBytes": 3821000,
+      "encodedBudgetBytes": 67108864,
+      "selectedDeclared": 27,
+      "failures": [
+        {
+          "id": "grass",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "water",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "forest",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "residence",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "infantry-idle-D00",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "cavalry-idle-D00",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "villager-idle-D00",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "tran-hung-dao-idle-D00",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "unit-contact-shadow",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "ford",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "shore",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "forest-bamboo",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "forest-palm",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "granary",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "villager-walk-south-014",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "villager-idle-south-014",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "villager-gather-wood-south-024",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "mountain-outcrop-108",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "grassy-hill-111",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "food-resource-114",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "iron-resource-119",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "barracks-idle-121",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "supply-depot-idle-126",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "villager-gather-iron-south-136",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "artillery-workshop-idle-140",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "cavalry-camp-idle-147",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "shipyard-idle-164",
+          "message": "QA explicit raster decode failure"
+        }
+      ]
+    },
+    "leaders": [
+      {
+        "king": "tran_nhan_tong",
+        "general": "tran_hung_dao"
+      },
+      {
+        "king": "tran_nhan_tong",
+        "general": "tran_hung_dao"
+      }
+    ]
+  },
+  "buffered": {
+    "tick": 7,
+    "mode": "online",
+    "localPlayer": 0,
+    "artLoading": true,
+    "bank": {
+      "phase": "error",
+      "epoch": 2,
+      "encodedBytes": 3821000,
+      "encodedBudgetBytes": 67108864,
+      "activeIds": [
+        "grass",
+        "water",
+        "forest",
+        "residence",
+        "infantry-idle-D00",
+        "cavalry-idle-D00",
+        "villager-idle-D00",
+        "tran-hung-dao-idle-D00",
+        "unit-contact-shadow",
+        "ford",
+        "shore",
+        "forest-bamboo",
+        "forest-palm",
+        "granary",
+        "villager-walk-south-014",
+        "villager-idle-south-014",
+        "villager-gather-wood-south-024",
+        "mountain-outcrop-108",
+        "grassy-hill-111",
+        "food-resource-114",
+        "iron-resource-119",
+        "barracks-idle-121",
+        "supply-depot-idle-126",
+        "villager-gather-iron-south-136",
+        "artillery-workshop-idle-140",
+        "cavalry-camp-idle-147",
+        "shipyard-idle-164"
+      ],
+      "scope": {
+        "map": "delta",
+        "roster": [
+          "villager",
+          "king",
+          "general",
+          "infantry",
+          "spearman",
+          "firearm",
+          "cavalry",
+          "artillery",
+          "wagon",
+          "warship",
+          "transport"
+        ],
+        "buildings": [
+          "residence",
+          "barracks",
+          "cavalryCamp",
+          "artilleryWorkshop",
+          "shipyard",
+          "fort",
+          "wall",
+          "gate",
+          "depot",
+          "granary"
+        ],
+        "leaders": [
+          "tran_nhan_tong",
+          "tran_hung_dao"
+        ]
+      }
+    },
+    "art": {
+      "status": "PLACEHOLDER_ONLY",
+      "manifest": "ready",
+      "declared": 27,
+      "ready": 0,
+      "approved": 0,
+      "candidates": 0,
+      "failed": 27,
+      "skipped": 0,
+      "fallbacks": 0,
+      "decodedBudgetBytes": 134217728,
+      "retainedDecodedBytes": 0,
+      "reservedDecodedBytes": 0,
+      "uniqueDecodedImages": 0,
+      "encodedReady": 0,
+      "retainedEncodedBytes": 3821000,
+      "encodedBudgetBytes": 67108864,
+      "selectedDeclared": 27,
+      "failures": [
+        {
+          "id": "grass",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "water",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "forest",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "residence",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "infantry-idle-D00",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "cavalry-idle-D00",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "villager-idle-D00",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "tran-hung-dao-idle-D00",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "unit-contact-shadow",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "ford",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "shore",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "forest-bamboo",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "forest-palm",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "granary",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "villager-walk-south-014",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "villager-idle-south-014",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "villager-gather-wood-south-024",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "mountain-outcrop-108",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "grassy-hill-111",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "food-resource-114",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "iron-resource-119",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "barracks-idle-121",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "supply-depot-idle-126",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "villager-gather-iron-south-136",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "artillery-workshop-idle-140",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "cavalry-camp-idle-147",
+          "message": "QA explicit raster decode failure"
+        },
+        {
+          "id": "shipyard-idle-164",
+          "message": "QA explicit raster decode failure"
+        }
+      ]
+    },
+    "leaders": [
+      {
+        "king": "tran_nhan_tong",
+        "general": "tran_hung_dao"
+      },
+      {
+        "king": "tran_nhan_tong",
+        "general": "tran_hung_dao"
+      }
+    ]
+  },
+  "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ 'game-screen'\n- 'screen'\n\n    at file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/art-bank-runtime-175/completion/failure-browser.mjs:14:392",
+  "failure": {
+    "tick": 11,
+    "mode": "online",
+    "localPlayer": 0,
+    "artLoading": false,
+    "bank": {
+      "phase": "match",
+      "epoch": 3,
+      "encodedBytes": 3821000,
+      "encodedBudgetBytes": 67108864,
+      "activeIds": [
+        "grass",
+        "water",
+        "forest",
+        "residence",
+        "infantry-idle-D00",
+        "cavalry-idle-D00",
+        "villager-idle-D00",
+        "tran-hung-dao-idle-D00",
+        "unit-contact-shadow",
+        "ford",
+        "shore",
+        "forest-bamboo",
+        "forest-palm",
+        "granary",
+        "villager-walk-south-014",
+        "villager-idle-south-014",
+        "villager-gather-wood-south-024",
+        "mountain-outcrop-108",
+        "grassy-hill-111",
+        "food-resource-114",
+        "iron-resource-119",
+        "barracks-idle-121",
+        "supply-depot-idle-126",
+        "villager-gather-iron-south-136",
+        "artillery-workshop-idle-140",
+        "cavalry-camp-idle-147",
+        "shipyard-idle-164"
+      ],
+      "scope": {
+        "map": "delta",
+        "roster": [
+          "villager",
+          "king",
+          "general",
+          "infantry",
+          "spearman",
+          "firearm",
+          "cavalry",
+          "artillery",
+          "wagon",
+          "warship",
+          "transport"
+        ],
+        "buildings": [
+          "residence",
+          "barracks",
+          "cavalryCamp",
+          "artilleryWorkshop",
+          "shipyard",
+          "fort",
+          "wall",
+          "gate",
+          "depot",
+          "granary"
+        ],
+        "leaders": [
+          "tran_nhan_tong",
+          "tran_hung_dao"
+        ]
+      }
+    },
+    "art": {
+      "status": "CANDIDATE",
+      "manifest": "ready",
+      "declared": 27,
+      "ready": 27,
+      "approved": 0,
+      "candidates": 27,
+      "failed": 0,
+      "skipped": 0,
+      "fallbacks": 0,
+      "decodedBudgetBytes": 134217728,
+      "retainedDecodedBytes": 17204736,
+      "reservedDecodedBytes": 0,
+      "uniqueDecodedImages": 27,
+      "encodedReady": 0,
+      "retainedEncodedBytes": 3821000,
+      "encodedBudgetBytes": 67108864,
+      "selectedDeclared": 27,
+      "failures": []
+    },
+    "leaders": [
+      {
+        "king": "tran_nhan_tong",
+        "general": "tran_hung_dao"
+      },
+      {
+        "king": "tran_nhan_tong",
+        "general": "tran_hung_dao"
+      }
+    ]
+  },
+  "cleanup": {
+    "rooms": 0,
+    "listening": false
+  }
+}

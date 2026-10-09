@@ -1,4 +1,4 @@
-# Kế hoạch đồ họa — checkpoint173, 10/10/2026
+# Kế hoạch đồ họa — checkpoint181, 10/10/2026
 
 Kế hoạch toàn game: [PROJECT_PLAN.md](../../PROJECT_PLAN.md). Phạm vi và bằng chứng chi tiết: [art-animation-audit.md](../../audit/2026-10-09/art-animation-audit.md). Bản kế hoạch trước audit được giữ [nguyên byte](../../audit/2026-10-09/history/docs/art/pipeline/GRAPHICS_PRODUCTION_PLAN.md).
 
@@ -13,12 +13,12 @@ Thứ tự đánh giá: chuyển động đúng và liền mạch → silhouette
 | Hạng mục | Đã có | Còn thiếu |
 |---|---|---|
 | Villager D1 | Idle, walk 014, wood 026/owner 032, iron 136/owner 141; food 101 local | Build/repair, attack/hit/death và độ phủ hướng; food còn chờ phản hồi riêng |
-| Villager D0 | 033/152 contact candidates;155 F2/F6 đã bị người dùng bác bỏ,158 dừng0call | Rough162 đã có; capability166 HELD phase. Còn reconcile support/occlusion, final loop và actual travel/stop |
+| Villager D0 | 033/152 contact candidates;155 F2/F6 đã bị người dùng bác bỏ,158 dừng0call | 181 giữ realisticbody và chân gập nhưng footlift cao; candidate chưa finalkey. Còn low-amplitude correction, final loop và actual travel/stop |
 | Quân đội | Một số identity idle D0 | Phần lớn hành động và hướng nhìn cho infantry, spear, firearm, cavalry, artillery, wagon và hai tàu |
 | Leaders | 12 portrait và nguồn identity gốc | Hoạt ảnh toàn thân, hành động theo vai trò và 8 hướng; chỉ một general có idle candidate |
 | Buildings | Public6/10, local7/10 completed-idle | Fort/Wall/Gate; construction/damage/destruction |
 | World | Ground/water/ford/shore candidates, forest, hill/mountain, food/iron nodes | Composition hai map, bờ/edge/repetition và scene đông quân |
-| Framework | Export017, preview098, timing, locomotion phase, gather episodes, alpha picking, manifest loader | Coverage registry, composition compiler, match banks, default release |
+| Framework | Export017, preview098, timing, locomotion phase, gather episodes, alpha picking, manifest loader | 170catalog/compiler và175matchbanks đã có local; còn acceptedcoverage/default release, completedcombatrematch và mergedcandidate |
 
 Public149 `?art=camp` có 26 asset entries / 47 frame rectangles. Đó không phải 26 animation hay bộ roster hoàn chỉnh. URL trần chưa dùng slice này mặc định.
 
@@ -67,3 +67,15 @@ G01 hiện theo [movement research161](movement-research-161/README.md): một c
 [162 rough](villager-walk-D0-rough-cycle-162/root-intake.json) đã hoàn thành reference trọn vòng; không final art. [166 illustration](villager-walk-D0-capability-166/root-intake.json) cải thiện khối người nhưng HELD support phase;1call/0retry/exhausted. [Hướng tiếp](movement-research-161/FOLLOWUP_162_166.md) là reconcile ownership/occlusion,0call, không mở F6/inbetween.165 Shipyard idle accepted narrow actual Coast scene, local27assets; public149 vẫn26. Code163/merged167 không cấp motion acceptance.
 
 169/172/173 bổ sung: trailingankle trong originalrough đã sửa; newillustration giữbody nhưng phaseHELD, không finalsource selected. [173](movement-pose-research-173/README.md) chuyển đề xuất sang verifiedwholeaction/tonalwholepose authority; photo metadata chưa phải visuallyqualifiedreference.170 catalog/compiler đã triển khai và validatednarrowUI, dynamicmatchbanks/defaultrelease còn mở. Không dùng các tool đó để mởfanout khi movement chưađạt.
+
+## Movement hiện hành sau180/181
+
+Root đã bỏ155 deformedframes và chưa chọn166/172/181 làm finalwalk key.174/178 không lấy được photographicsequence; không dùng mô tả catalog làm bằng chứng chuyển động. Nguồn nguyên lý: [Toon Boom Walk Analysis](https://learn.toonboom.com/modules/walk-cycle-animation/topic/walk-analysis1), dùng contact/down/passing/up và quan hệ toàn thân, không chỉ hướng bàn chân. Directpage403; primary searchtext retrieved, không photo observation claim.
+
+Sửa quan trọng ở180: tại passing, đùi có thể tiến trong khi chân dưới gập về sau; không ép sandal phải vượt idlex. Guide169/179 từng thiên về đặt ankle và rút ngắn chân, dễ dẫn tới chân gần duỗi chuẩn bị contact hoặc sai khối.180 vẽ lại wholepants/body contours, không limbtexture hay recolor-only.
+
+181 thử1builtincall/0retry với solecanonical +180wholeF6 guide. [Actual89 comparison](villager-walk-D0-capability-181/comparison89.png) giữ broadrealisticidentity và tạo chân gập rõ; liftedfoot còn cao/back nên vẫn candidate. Tiếp theo là **ONE correction toàn thân có mục tiêu hạ biên độ bước**, dùng actual181 như edit target và canonical như appearance authority, giữ support/hip/knee/arm progression. Không mở một dự án guide mới hoặc auditmicrofoot; thay control cụ thể cho visibledefect, không prompt nguyên trạng.
+
+Sau correction có pose đúng rõ: hoàn thiện bốnkey cùng một identity/camera/family scale → bốninbetween dựa neighbor thực → export/600ms preview → một brief real-size look → actualD0travel/Stop/pause. Nếu loop còn lỗi nhìn thấy thì sửa đúng lỗi đó. Technicalhash/still không cấp naturalness; chỉ mở directions/units khi pilot hoàn chỉnh đạt. Không bắt buộc giữ contacts033/152 nếu chúng lệch hình thể mới.
+
+175 đã cài actualmenu/match encoded/decoded ownership, budget/cache/release/retry; không accepteddefaultrelease.177 giảm repeatedcell checks trong path mà không đổi motion/path contracts. Hai gói không thay sourceanimation hoặc đóng movement gate. Fullgoal INCOMPLETE.

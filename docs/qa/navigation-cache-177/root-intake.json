@@ -1,0 +1,17 @@
+{
+  "verdict": "LOCAL_QUERY_MEMO_ACCEPTED_NOT_PUBLIC_CAPACITY_APPROVAL",
+  "candidateSimSHA256": "c95e26d9c7e77d1e1f196b53833fdc38bc871f2fa5a9ade044e56829e118bb27",
+  "baselineSimSHA256": "a266e0de5a6719579e48fd8a57888f09509f6af745190cb09b47c5641bab7796",
+  "review": "Query-local exact cell-center predicate memo only; original terrain/owner/gate/building checks still run on first query visit. Diagonal side-cell logic, deterministic heap/ties, final fractional ground/crowd safety, retry cadence and speeds unchanged. No inter-query invalidation burden or authoritative state field added.",
+  "correctnessTests": 82,
+  "pairedUnprofiledDelta5": {
+    "stepP95Ms": [52.934, 11.924],
+    "stepP99Ms": [62.163, 61.056],
+    "stepMaxMs": [63.407, 63.678],
+    "snapshotP95Ms": [8.130, 8.312],
+    "naturalLivingUnitsPerWorld": [39, 38]
+  },
+  "limits": "Matched authoritative state hashes and byte counts support unchanged workload, not ordinary UI acceptance. Single sequential nonexclusive run is an observed improvement, not timing guarantee; rare tails remain about64ms. No dense browser/network/production capacity acceptance.",
+  "public149": "unchanged; no build or service restart",
+  "next": "Merged175/177 candidate intake before any later public promotion; no additional optimization from this receipt alone."
+}

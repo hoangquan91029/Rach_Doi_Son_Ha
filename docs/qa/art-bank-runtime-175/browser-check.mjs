@@ -1,0 +1,21 @@
+import {chromium,firefox} from 'playwright';
+import {createGameServer} from '/tmp/art-bank-runtime-175/server/index.js';
+import {writeFile,mkdir} from 'node:fs/promises';
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+const engine=process.env.QA_BROWSER||'chromium',out=new URL(`./${engine}/`,import.meta.url);await mkdir(out,{recursive:true});
+const game=await createGameServer({port:0,distDir:'/tmp/art-bank-runtime-175/build'}),browser=await ({chromium,firefox}[engine]).launch({headless:true}),context=await browser.newContext({viewport:{width:1280,height:800}}),p=await context.newPage();
+const receipt={status:'RUNNING',engine,errors:[],maps:[],method:'Ordinary UI; network offline after menu; read-only diagnostics; no gameplay injection'};
+p.on('pageerror',e=>receipt.errors.push(e.message));p.on('response',async r=>{if(/\/assets\/index-.*\.js$/.test(r.url()))receipt.bundleSHA256=createHash('sha256').update(await r.body()).digest('hex');});
+const snap=()=>p.evaluate(()=>rtsDiagnostics.snapshot());
+const compact=s=>({tick:s.tick,map:s.displayedState?.map.id,leaders:s.displayedState?.players.map(p=>({king:p.king,general:p.general})),art:s.art.pipeline,bank:s.artBank,terrain:s.terrainCache});
+try{
+ await p.goto(`http://127.0.0.1:${game.server.address().port}/?art=shipyard`);await p.locator('#singleStart').waitFor();const menu=await snap();assert.equal(menu.art.pipeline.ready,0);assert.equal(menu.art.pipeline.retainedDecodedBytes,0);assert.ok(menu.artBank.encodedBytes>0);receipt.startMenu=compact(menu);await context.setOffline(true);
+ for(const [map,king,general] of [['delta','tran_nhan_tong','tran_hung_dao'],['coast','napoleon_bonaparte','le_thanh_tong']]){
+  await p.locator('#singleStart').click();await p.locator(`[data-map=${map}]`).click();await p.locator(`[data-character=${king}][data-role=king]`).click();await p.locator(`[data-character=${general}][data-role=general]`).click();await p.locator('#launchSingle').click();await p.waitForFunction(()=>rtsDiagnostics.snapshot().tick>2&&rtsDiagnostics.snapshot().artBank.phase==='match');let s=await snap();assert.equal(s.displayedState.map.id,map);assert.equal(s.displayedState.players[0].king,king);assert.equal(s.displayedState.players[0].general,general);assert.equal(s.art.pipeline.failed,0);assert.ok(s.art.pipeline.retainedDecodedBytes>0);assert.equal(s.artBank.scope.roster.length,11);assert.equal(s.artBank.scope.buildings.length,10);assert.ok(s.artBank.scope.leaders.includes('ly_thuong_kiet'));
+  const worker=s.displayedState.entities.find(e=>e.owner===0&&e.type==='villager'&&e.hp>0);const pt=await p.evaluate(id=>rtsDiagnostics.entityPoint(id),worker.id);await p.locator('#world').click({position:pt});await p.waitForFunction(id=>rtsDiagnostics.snapshot().selection.includes(id),worker.id);const dest={x:worker.x+2,y:worker.y+1};const target=await p.evaluate(d=>rtsDiagnostics.point(d.x,d.y),dest);await p.locator('#world').click({position:target,button:'right'});await p.waitForFunction(id=>rtsDiagnostics.snapshot().displayedState.entities.some(e=>e.id===id&&e.state==='walk'),worker.id);s=await snap();await p.screenshot({path:new URL(`${map}-walk.png`,out).pathname});const record={map,match:compact(s),worker: s.displayedState.entities.find(e=>e.id===worker.id)};
+  await p.locator('#pauseBtn').click();await p.locator('#toMenu').click();await p.locator('#singleStart').waitFor();s=await snap();assert.equal(s.art.pipeline.retainedDecodedBytes,0);assert.equal(s.art.pipeline.uniqueDecodedImages,0);assert.equal(s.artBank.phase,'menu');assert.deepEqual(s.artBank.activeIds,[]);assert.equal(s.artBank.encodedBytes,menu.artBank.encodedBytes);record.menu=compact(s);receipt.maps.push(record);
+ }
+ assert.deepEqual(receipt.errors,[]);receipt.status='PASS_OFFLINE175_BOTH_MAPS_MENU_RELEASE_RELAUNCH';
+}catch(error){receipt.status='HOLD';receipt.error=error.stack;receipt.failure=compact(await snap());process.exitCode=1;}
+finally{await context.close();await browser.close();await game.close();receipt.cleanup={rooms:game.rooms.size,listening:game.server.listening};await writeFile(new URL('receipt.json',out),JSON.stringify(receipt,null,2));console.log(JSON.stringify({status:receipt.status,error:receipt.error}));}

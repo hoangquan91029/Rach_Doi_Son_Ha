@@ -1,0 +1,36 @@
+{
+  "status": "READY_FOR_ROOT_INTAKE_LOCAL_ART_BANK175",
+  "baseHEAD": "509903bafe02e5a5c960f3413f42c0c549a13d65",
+  "buildPath": "/tmp/art-bank-runtime-175/build/assets/index-JglGG4N9.js",
+  "bundleSHA256": "1fc4aa0665a93399c33ae8fd66ad5e94fbbd093994d744bf4f55ada31dd3260f",
+  "tests": {
+    "passed": 27,
+    "failed": 0,
+    "receipt": "focused-tests.txt"
+  },
+  "browserReceipts": [
+    "chromium/receipt.json",
+    "firefox/receipt.json",
+    "online-receipt.json"
+  ],
+  "selection": "All 11 legal units and 10 buildings on both maps; both actual players selected leader families; conservative existing shared world; separate shadows; shared compiler/runtime policy",
+  "ownership": "Menu releases decoded raster/terrain/private caches; verified encoded bank survives. Encoded64MiB and decoded128MiB budgets; expired decode closed; stale epoch cannot activate",
+  "rematch": "Not exercised through completed combat; fresh room epoch and reload/reconnect proven; no full-match acceptance claim",
+  "public149": {
+    "filesExact": 179,
+    "unchanged": true
+  },
+  "cleanup": {
+    "rooms": 0,
+    "ownedServersClosed": true,
+    "stageRetained": true
+  },
+  "imageCalls": 0,
+  "deploy": false,
+  "runtimeAssetEdits": false,
+  "finalVisualAcceptance": false,
+  "loadingGuard": "Gameplay orders/keys/Pause blocked until selected decode completes; retry/menu controls remain available",
+  "baselineSimSHA256": "a266e0de5a6719579e48fd8a57888f09509f6af745190cb09b47c5641bab7796",
+  "independent177Excluded": true,
+  "bootRecovery": "Validated manifest retained on partial encoded failure; selected launch retries missing bytes without hash bypass. Missing manifest explicitly reprimes. Encoded boot counts truthful."
+}

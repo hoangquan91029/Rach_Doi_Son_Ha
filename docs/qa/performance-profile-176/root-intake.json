@@ -1,0 +1,15 @@
+{
+  "verdict": "DIAGNOSTIC_ACCEPTED_NAVIGATION_TAIL_IDENTIFIED",
+  "sourceCheckpoint": "509903bafe02e5a5c960f3413f42c0c549a13d65",
+  "simSHA256": "a266e0de5a6719579e48fd8a57888f09509f6af745190cb09b47c5641bab7796",
+  "samples": 2024,
+  "normalStepP95Ms": 55.162,
+  "periodicAIBatchMaxMs": 19.386,
+  "actualAIInclusivePercent": 1.68,
+  "normalTailSamples": 700,
+  "normalTailTravelInclusivePercent": 88.57,
+  "normalTailPathInclusivePercent": 47.71,
+  "interpretation": "Inclusive stacks overlap. Navigation, rather than periodic AI alone or fog removal, is the bounded next target. Twenty-tick retries are a source-based hypothesis, not instrumented entity causality.",
+  "next": "Separate177 query-local exact cell pass memo with differential path/state contracts and one matched unprofiled comparison. No retry cadence, speed, guard or balance change.",
+  "notEstablished": ["production capacity", "dense army performance", "network/browser performance", "full objective completion"]
+}

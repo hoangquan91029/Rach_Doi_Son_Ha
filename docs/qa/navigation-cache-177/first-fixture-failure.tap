@@ -1,0 +1,55 @@
+✔ crowd movement preserves held and reserved attackers, clearance and fixed tick speed (39.813937ms)
+✔ 30 unique destinations and body clearance; selected ID input order cannot change identity assignment (1.851265ms)
+✔ naval group destination diameter and selected ID stability (1.245889ms)
+✔ blocked recruitment retains completed paid queue; one freed exit admits exactly once (9.044322ms)
+✔ one legal occupied-clear shore slot gives partial unload; remaining cargo pending then resumes after freed (2.076051ms)
+✔ actual worker outside gather radius despite qualifying start tile reaches food contact (9.286186ms)
+✔ visible enemy internal detour route does not leak through filtered view (1.753299ms)
+✔ planner budget exhaustion cannot prevent independent unobstructed movement (1.652704ms)
+✔ persistent blocked requesters all receive actual planner admission (477.986933ms)
+✔ whole edge formations retain slots and original arrival range (895.390923ms)
+✔ delta: cell-query memo preserves diagonal, fractional and unreachable complete paths (389.758257ms)
+✔ coast: cell-query memo preserves diagonal, fractional and unreachable complete paths (353.746093ms)
+✔ per-query owner-gate and building predicates retain exact routes without cross-query staleness (272.663272ms)
+✔ delta: legally trained naval unit keeps water/land and final fractional constraints (1207.803912ms)
+✔ coast: legally trained naval unit keeps water/land and final fractional constraints (1187.906502ms)
+✖ legal same-tick build and authoritative combat death invalidate next-query behavior identically (6.234497ms)
+✔ delta: unchanged normal AI authoritative state, orders and paths through mature tick2000 (9849.410423ms)
+✔ coast: unchanged normal AI authoritative state, orders and paths through mature tick2000 (9966.279926ms)
+✔ open diagonal uses distance-optimal sustained D1 and repeatable authoritative states (92.179963ms)
+✔ terrain side cells prevent diagonal corner cutting even when destination is legal (1.862456ms)
+✔ building side cells and changed dynamic blockers prevent corner cutting (2.09408ms)
+✔ reachable integer and fractional ground moves complete within unchanged arrival range (234.419665ms)
+✔ unreachable final ground point cannot cut a blocked terrain corner or building interior (71.585401ms)
+✔ ground attack-move without an acquired enemy completes at an integer target (21.181924ms)
+ℹ tests 24
+ℹ suites 0
+ℹ pass 23
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 23305.73579
+
+✖ failing tests:
+
+test at tests/navigation-cache177.test.js:23:1
+✖ legal same-tick build and authoritative combat death invalidate next-query behavior identically (6.234497ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  false !== true
+  
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/navigation-cache177.test.js:25:241)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

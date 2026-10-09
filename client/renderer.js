@@ -1,3 +1,4 @@
+import {createArtBank} from './art-bank.js';
 import {drawTerrainPropFallback} from './terrain-props.js';
 import {createImpactPulses} from './action-presentation.js';
 import { BUILDINGS, UNITS, TICK_RATE } from '../shared/data.js';
@@ -24,8 +25,10 @@ const LEADER_STYLE={
  trinh_cuong:{kind:'robe',coat:'#4f344e',armor:'#674864',trim:'#c3aa80',hat:'official',weapon:'staff'}
 };
 export class IsoRenderer{
- constructor(canvas,minimap){this.canvas=canvas;this.ctx=canvas.getContext('2d');this.minimap=minimap;this.mctx=minimap.getContext('2d');this.camera={x:24,y:24,zoom:1};this.state=null;this.localPlayer=0;this.selected=[];this.dpr=1;this.raster=createRasterSlice();this.terrainCache=createTerrainCache();this.impactPulses=createImpactPulses();this.resize();window.addEventListener('resize',()=>this.resize());}
- async preloadArt(){await this.raster.preload();}
+ constructor(canvas,minimap){this.canvas=canvas;this.ctx=canvas.getContext('2d');this.minimap=minimap;this.mctx=minimap.getContext('2d');this.camera={x:24,y:24,zoom:1};this.state=null;this.localPlayer=0;this.selected=[];this.dpr=1;this.artBank=createArtBank();this.raster=createRasterSlice();this.artBank.attach(this.raster.pipeline);this.terrainCache=createTerrainCache();this.impactPulses=createImpactPulses();this.resize();window.addEventListener('resize',()=>this.resize());}
+ async preloadArt(){if(this.raster.status.enabled)await this.artBank.prime(this.raster.pipeline);}
+ releaseArt(){this.artBank.release();this.raster.dispose();this.terrainCache.dispose();this.state=null;this.selected=[];this.raster=createRasterSlice();this.artBank.attach(this.raster.pipeline);}
+ async activateArt(state){this.raster.dispose();this.terrainCache.dispose();this.raster=createRasterSlice();this.artBank.attach(this.raster.pipeline);if(!this.raster.status.enabled)return true;const raster=this.raster;const active=await this.artBank.activate(raster.pipeline,state);if(active&&this.raster===raster)await raster.preload();return active&&this.raster===raster;}
  resize(){const r=this.canvas.getBoundingClientRect();this.dpr=Math.min(2,window.devicePixelRatio||1);this.canvas.width=Math.max(1,Math.floor(r.width*this.dpr));this.canvas.height=Math.max(1,Math.floor(r.height*this.dpr));}
  project(x,y){const w=this.canvas.width/this.dpr,h=this.canvas.height/this.dpr,z=this.camera.zoom;return {x:w/2+(x-y)*TW*z/2-(this.camera.x-this.camera.y)*TW*z/2,y:h/2+(x+y-this.camera.x-this.camera.y)*TH*z/2};}
  unproject(px,py){const w=this.canvas.width/this.dpr,h=this.canvas.height/this.dpr,z=this.camera.zoom;const dx=(px-w/2+(this.camera.x-this.camera.y)*TW*z/2)/(TW*z/2),dy=(py-h/2+(this.camera.x+this.camera.y)*TH*z/2)/(TH*z/2);return {x:(dx+dy)/2,y:(dy-dx)/2};}

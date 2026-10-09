@@ -1,0 +1,36 @@
+✔ both maps include every legal unit/building and both actual player leaders (1.283953ms)
+✔ encoded startup has zero decoded ownership; offline both-map relaunch releases real images (81.700755ms)
+✔ menu cancellation closes late decoded image and prevents epoch resurrection (15.229762ms)
+✔ encoded aggregate budget and hash mismatch fail without caching unverified bytes (3.543159ms)
+✔ Continue after partial encoded boot failure retries selected missing bytes on recovery (31.097348ms)
+✔ unavailable boot manifest is explicitly primed again before recovered match decoding (38.106649ms)
+✔ actual launch failure keeps gameplay/Pause gate until explicit retry or menu (2.326597ms)
+✔ legacy pilot compilation preserves exact header/order/whole entries (6.285849ms)
+✔ legacy walk compilation preserves exact header/order/whole entries (3.346712ms)
+✔ legacy work compilation preserves exact header/order/whole entries (3.528683ms)
+✔ legacy food compilation preserves exact header/order/whole entries (3.605536ms)
+✔ legacy terrain compilation preserves exact header/order/whole entries (4.432782ms)
+✔ legacy iron compilation preserves exact header/order/whole entries (4.812975ms)
+✔ legacy workshop compilation preserves exact header/order/whole entries (4.351294ms)
+✔ legacy camp compilation preserves exact header/order/whole entries (4.613356ms)
+✔ legacy shipyard compilation preserves exact header/order/whole entries (4.548795ms)
+✔ shared route registry keeps default and unknown disabled and exact world opt-ins (0.433519ms)
+✔ scoped bank retains world, desired building/body/portrait and separate-shadow dependency only (4.444388ms)
+✔ catalog deduplicates definitions, recipes deduplicate bank IDs, runtime variants stay distinct (1.105378ms)
+✔ missing requested family remains explicit fallback and cannot be a release scope (1.317326ms)
+✔ invalid scopes and recipe/dependency corruption are rejected (1.078483ms)
+✔ conflicting IDs, unsafe runtime/source paths and missing hashes fail before compilation (4.109714ms)
+✔ owner naturalness evidence remains shown-loop evidence and cannot approve release (4.483243ms)
+✔ release evidence must bind exact entry and runtime hashes even for synthetic approved metadata (1.523999ms)
+✔ CLI emits a loader-ready standalone manifest and requires its route (103.790601ms)
+✔ stalled resource aborts and rejects with truthful deadline status (11.706319ms)
+✔ decoded bitmap arriving after deadline is closed rather than becoming approved art (12.289991ms)
+✔ manifest deadline completes pipeline with missing-art failure rather than stranding boot (11.856366ms)
+ℹ tests 28
+ℹ suites 0
+ℹ pass 28
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 249.589653

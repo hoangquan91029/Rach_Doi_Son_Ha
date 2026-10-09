@@ -1,0 +1,24 @@
+{
+  "status": "READY_FOR_ROOT_INTAKE_175_NARROW_COMPLETION",
+  "change": "Decode failure retains artLoading gameplay gate until successful retry or explicit menu cancellation; loading diagnostic is read-only",
+  "buildPath": "/tmp/art-bank-runtime-175/build-completion/assets/index-Bbqij8Yc.js",
+  "bundleSHA256": "007f24788752fe491d7fa00c65a6c0b685eacaecb94a120b5ff44d3fec0afdcd",
+  "baselineSimSHA256": "a266e0de5a6719579e48fd8a57888f09509f6af745190cb09b47c5641bab7796",
+  "focusedTests": {
+    "passed": 28,
+    "failed": 0,
+    "receipt": "focused-tests.txt"
+  },
+  "actualBrowser": "Chromium two ordinary online peers; explicit raster decoder fault only; failure gate/Escape/Stop, actual latest snapshot buffering, successful retry, reload failure and menu cancellation",
+  "browserReceipt": "browser-receipt.json",
+  "previousBuildAndReceiptsPreserved": true,
+  "scopeLimit": "Previous offline both-map/Firefox/new-room normal flows bind previous175chunk, not this completion chunk. No repeated broad flows or completed-combat rematch proof.",
+  "public149FilesUnchanged": 179,
+  "cleanup": {
+    "rooms": 0,
+    "listening": false
+  },
+  "deploy": false,
+  "imageCalls": 0,
+  "commit": false
+}

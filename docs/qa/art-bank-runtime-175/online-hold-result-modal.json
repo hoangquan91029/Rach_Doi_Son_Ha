@@ -1,0 +1,153 @@
+{
+  "status": "HOLD",
+  "peerCount": 2,
+  "errors": [],
+  "method": "Ordinary room/ready UI and page reload; read-only diagnostics; no commands/state injection",
+  "epochs": [],
+  "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#pauseBtn')\u001b[22m\n\u001b[2m    - locator resolved to <button id=\"pauseBtn\" title=\"Pause\" class=\"icon-btn\">Ⅱ</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div id=\"modalLayer\" class=\"modal-layer\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div id=\"modalLayer\" class=\"modal-layer\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    54 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div id=\"modalLayer\" class=\"modal-layer\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at menu (/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/art-bank-runtime-175/online-check.mjs:9:51)\n    at /home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/art-bank-runtime-175/online-check.mjs:17:30",
+  "failure": [
+    {
+      "tick": null,
+      "mode": "online",
+      "localPlayer": 0,
+      "room": null,
+      "bank": {
+        "phase": "menu",
+        "epoch": 3,
+        "encodedBytes": 3821000,
+        "encodedBudgetBytes": 67108864,
+        "activeIds": [],
+        "scope": null
+      },
+      "art": {
+        "status": "PLACEHOLDER_ONLY",
+        "manifest": "not-loaded",
+        "declared": 0,
+        "ready": 0,
+        "approved": 0,
+        "candidates": 0,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 0,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 0,
+        "encodedReady": 0,
+        "retainedEncodedBytes": 0,
+        "encodedBudgetBytes": 67108864,
+        "selectedDeclared": 0,
+        "failures": []
+      }
+    },
+    {
+      "tick": 22,
+      "mode": "online",
+      "localPlayer": 1,
+      "room": "204BA0",
+      "map": "delta",
+      "leaders": [
+        {
+          "king": "tran_nhan_tong",
+          "general": "tran_hung_dao"
+        },
+        {
+          "king": "tran_nhan_tong",
+          "general": "han_xin"
+        }
+      ],
+      "bank": {
+        "phase": "match",
+        "epoch": 2,
+        "encodedBytes": 3821000,
+        "encodedBudgetBytes": 67108864,
+        "activeIds": [
+          "grass",
+          "water",
+          "forest",
+          "residence",
+          "infantry-idle-D00",
+          "cavalry-idle-D00",
+          "villager-idle-D00",
+          "tran-hung-dao-idle-D00",
+          "unit-contact-shadow",
+          "ford",
+          "shore",
+          "forest-bamboo",
+          "forest-palm",
+          "granary",
+          "villager-walk-south-014",
+          "villager-idle-south-014",
+          "villager-gather-wood-south-024",
+          "mountain-outcrop-108",
+          "grassy-hill-111",
+          "food-resource-114",
+          "iron-resource-119",
+          "barracks-idle-121",
+          "supply-depot-idle-126",
+          "villager-gather-iron-south-136",
+          "artillery-workshop-idle-140",
+          "cavalry-camp-idle-147",
+          "shipyard-idle-164"
+        ],
+        "scope": {
+          "map": "delta",
+          "roster": [
+            "villager",
+            "king",
+            "general",
+            "infantry",
+            "spearman",
+            "firearm",
+            "cavalry",
+            "artillery",
+            "wagon",
+            "warship",
+            "transport"
+          ],
+          "buildings": [
+            "residence",
+            "barracks",
+            "cavalryCamp",
+            "artilleryWorkshop",
+            "shipyard",
+            "fort",
+            "wall",
+            "gate",
+            "depot",
+            "granary"
+          ],
+          "leaders": [
+            "tran_nhan_tong",
+            "tran_hung_dao",
+            "han_xin"
+          ]
+        }
+      },
+      "art": {
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 27,
+        "ready": 27,
+        "approved": 0,
+        "candidates": 27,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 17204736,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 27,
+        "encodedReady": 0,
+        "retainedEncodedBytes": 3821000,
+        "encodedBudgetBytes": 67108864,
+        "selectedDeclared": 27,
+        "failures": []
+      }
+    }
+  ],
+  "cleanup": {
+    "rooms": 0,
+    "listening": false
+  }
+}

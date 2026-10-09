@@ -1,0 +1,177 @@
+{
+  "canvas": 256,
+  "pivot": [
+    133.51,
+    232.73
+  ],
+  "presentation": 89,
+  "frame_ms": 75,
+  "cycle_ms": 600,
+  "near": "anatomical RIGHT foreground",
+  "far": "anatomical LEFT background",
+  "phases": [
+    "contact A",
+    "down A",
+    "passing A",
+    "up A",
+    "contact B",
+    "down B",
+    "passing B",
+    "up B"
+  ],
+  "plans": [
+    [
+      0,
+      -1,
+      [
+        139,
+        184,
+        149,
+        224
+      ],
+      [
+        118,
+        184,
+        111,
+        215
+      ],
+      -9,
+      8
+    ],
+    [
+      4,
+      2,
+      [
+        137,
+        186,
+        143,
+        221
+      ],
+      [
+        111,
+        183,
+        103,
+        209
+      ],
+      -5,
+      5
+    ],
+    [
+      0,
+      3,
+      [
+        129,
+        187,
+        136,
+        217
+      ],
+      [
+        139,
+        177,
+        145,
+        198
+      ],
+      2,
+      -2
+    ],
+    [
+      -3,
+      1,
+      [
+        122,
+        183,
+        129,
+        213
+      ],
+      [
+        144,
+        184,
+        155,
+        213
+      ],
+      8,
+      -7
+    ],
+    [
+      0,
+      1,
+      [
+        115,
+        187,
+        119,
+        220
+      ],
+      [
+        151,
+        188,
+        160,
+        229
+      ],
+      9,
+      -8
+    ],
+    [
+      4,
+      -2,
+      [
+        114,
+        188,
+        112,
+        216
+      ],
+      [
+        149,
+        187,
+        154,
+        226
+      ],
+      5,
+      -5
+    ],
+    [
+      0,
+      -3,
+      [
+        132,
+        173,
+        137,
+        193
+      ],
+      [
+        140,
+        190,
+        147,
+        222
+      ],
+      -2,
+      2
+    ],
+    [
+      -3,
+      -1,
+      [
+        142,
+        181,
+        151,
+        211
+      ],
+      [
+        131,
+        187,
+        140,
+        218
+      ],
+      -8,
+      7
+    ]
+  ],
+  "calls": 0,
+  "network": 0,
+  "authoring": "Original whole clothed tonal SVG contours and new 2D pose plans; no162/169 paths or coordinates copied",
+  "limitations": [
+    "rough only",
+    "camera/mass likeness approximate",
+    "world footlock and scalar stride pending",
+    "continuous motion acceptance pending root intake"
+  ]
+}

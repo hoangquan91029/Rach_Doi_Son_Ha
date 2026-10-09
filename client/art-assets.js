@@ -45,13 +45,24 @@ async function decodeImage(bytes,url) {
 /** Renderer calls get(id,{state,direction,timeMs}) and draws its image/cell at returned fixed pivot. */
 export function createArtAssetPipeline({manifestUrl='/assets/art-v1/manifest.json',allowCandidates=false,fetchImpl=globalThis.fetch,onStatus=()=>{},maxImageBytes=32*1024*1024,maxDecodedBytes=128*1024*1024,resourceTimeoutMs=30000,preloadTimeoutMs=60000}={}) {
  if(!Number.isSafeInteger(maxDecodedBytes)||maxDecodedBytes<1)throw Error('Invalid decoded RGBA byte budget');
+ let encodedStore={records:new Map(),manifests:new Map(),bytes:0,maxBytes:64*1024*1024},selectedIds=null;
  const loaded=new Map(),cache=new Map(),fallbacks=new Set(),familyLayouts=new Map();let manifest=null,disposed=false,preloadPromise=null,deadlineAt=Infinity;
- const stats={status:'PLACEHOLDER_ONLY',manifest:'not-loaded',declared:0,ready:0,approved:0,candidates:0,failed:0,skipped:0,fallbacks:0,decodedBudgetBytes:maxDecodedBytes,retainedDecodedBytes:0,reservedDecodedBytes:0,uniqueDecodedImages:0,failures:[]};
+ const stats={status:'PLACEHOLDER_ONLY',manifest:'not-loaded',declared:0,ready:0,approved:0,candidates:0,failed:0,skipped:0,fallbacks:0,decodedBudgetBytes:maxDecodedBytes,retainedDecodedBytes:0,reservedDecodedBytes:0,uniqueDecodedImages:0,encodedReady:0,retainedEncodedBytes:0,encodedBudgetBytes:64*1024*1024,selectedDeclared:0,failures:[]};
  const notify=()=>{stats.fallbacks=fallbacks.size;try{onStatus({...stats,failures:[...stats.failures]});}catch{}};
  const baseUrl=new URL(manifestUrl,globalThis.location?.href||'http://localhost/');
  const runtimeUrl=a=>{if(a.runtime.path.startsWith('/')||a.runtime.path.includes('\\')||a.runtime.path.split('/').includes('..')||/^[a-z]+:/i.test(a.runtime.path))throw Error('Runtime path must be manifest-relative');const url=new URL(a.runtime.path,baseUrl);const directory=new URL('.',baseUrl).pathname;if(url.origin!==baseUrl.origin||!url.pathname.startsWith(directory)||url.search||url.hash)throw Error('Runtime raster must remain within manifest directory');return url.href;};
  const bounded=(label,action)=>withLoadingDeadline(action,{label,timeoutMs:Math.min(resourceTimeoutMs,Math.max(1,deadlineAt-Date.now()))});
  const release=record=>{if(record.reserved){stats.reservedDecodedBytes-=record.bytes;record.reserved=false;}if(record.image){record.image.close?.();record.image=null;stats.retainedDecodedBytes-=record.bytes;stats.uniqueDecodedImages--;}};
+ const encoded=async(a,signal)=>{
+  const url=runtimeUrl(a),key=`${url}|${a.runtime.sha256.toLowerCase()}`;
+  if(!encodedStore.records.has(key)){
+   const record={promise:null};record.promise=(async()=>{try{const response=await fetchImpl(url,{credentials:'same-origin',signal});if(!response.ok)throw Error(`Raster HTTP ${response.status}`);const bytes=await response.arrayBuffer();if(bytes.byteLength>maxImageBytes)throw Error('Raster exceeds byte budget');if(await digest(bytes)!==a.runtime.sha256.toLowerCase())throw Error('Runtime encoded SHA256 mismatch');if(signal?.aborted||disposed)throw Error('Art pipeline disposed or loading expired');if(bytes.byteLength>encodedStore.maxBytes-encodedStore.bytes)throw Error('Encoded bank byte budget exceeded');encodedStore.bytes+=bytes.byteLength;return bytes;}catch(error){if(encodedStore.records.get(key)===record)encodedStore.records.delete(key);throw error;}})();encodedStore.records.set(key,record);
+  }
+  const bytes=await encodedStore.records.get(key).promise;stats.retainedEncodedBytes=encodedStore.bytes;return bytes;
+ };
+ const prepare=async()=>{
+  if(!manifest){let text=encodedStore.manifests.get(baseUrl.href);if(!text){text=await bounded('Manifest',async signal=>{const response=await fetchImpl(baseUrl.href,{credentials:'same-origin',cache:'no-cache',signal});if(!response.ok)throw Error(`Manifest HTTP ${response.status}`);return response.text();});if(text.length>2*1024*1024)throw Error('Manifest exceeds byte budget');validateManifest(JSON.parse(text));encodedStore.manifests.set(baseUrl.href,text);}manifest=validateManifest(JSON.parse(text));stats.declared=manifest.assets.length;stats.manifest='ready';}
+ };
  const fetchImage=async a=>{
   if(disposed)throw Error('Art pipeline disposed');
   const url=runtimeUrl(a),key=`${url}|${a.runtime.sha256.toLowerCase()}`;
@@ -59,8 +70,7 @@ export function createArtAssetPipeline({manifestUrl='/assets/art-v1/manifest.jso
    const record={bytes:a.runtime.width*a.runtime.height*4,reserved:false,image:null,promise:null};
    record.promise=bounded(a.id,async signal=>{
     try{
-     const response=await fetchImpl(url,{credentials:'same-origin',signal});if(!response.ok)throw Error(`Raster HTTP ${response.status}`);
-     const bytes=await response.arrayBuffer();if(bytes.byteLength>maxImageBytes)throw Error('Raster exceeds byte budget');if(await digest(bytes)!==a.runtime.sha256.toLowerCase())throw Error('Runtime encoded SHA256 mismatch');
+     const bytes=await encoded(a,signal);
      if(disposed||signal.aborted)throw Error('Art pipeline disposed or loading expired');
      const used=stats.retainedDecodedBytes+stats.reservedDecodedBytes;
      if(record.bytes>maxDecodedBytes-used)throw Error(`Decoded RGBA budget exceeded: ${a.id} needs ${record.bytes} bytes; ${used} retained/reserved of ${maxDecodedBytes}`);
@@ -75,8 +85,11 @@ export function createArtAssetPipeline({manifestUrl='/assets/art-v1/manifest.jso
   const image=await cache.get(key).promise;if(disposed)throw Error('Art pipeline disposed');if(image.width!==a.runtime.width||image.height!==a.runtime.height)throw Error('Cached runtime dimensions mismatch');return image;
  };
  const pipeline={stats,get manifest(){return manifest;},
-  preload(){if(preloadPromise)return preloadPromise;preloadPromise=(async()=>{deadlineAt=Date.now()+preloadTimeoutMs;stats.manifest='loading';notify();try{const text=await bounded('Manifest',async signal=>{const response=await fetchImpl(baseUrl.href,{credentials:'same-origin',cache:'no-cache',signal});if(!response.ok)throw Error(`Manifest HTTP ${response.status}`);return response.text();});if(text.length>2*1024*1024)throw Error('Manifest exceeds byte budget');manifest=validateManifest(JSON.parse(text));stats.declared=manifest.assets.length;stats.manifest='ready';notify();
-    for(let index=0;index<manifest.assets.length;index+=4)await Promise.all(manifest.assets.slice(index,index+4).map(async raw=>{try{const a=validateAsset(raw);if(a.family){const layout=JSON.stringify([a.source.width,a.source.height,a.cell.width,a.cell.height,a.pivot,a.render]);if(familyLayouts.has(a.family)&&familyLayouts.get(a.family)!==layout)throw Error('Family changes fixed canvas/pivot/logical scale');familyLayouts.set(a.family,layout);}if(a.contactShadow.mode==='separate'&&!manifest.assets.some(x=>x.id===a.contactShadow.assetId))throw Error('Missing separate shadow asset');const approved=a.review.status==='APPROVED'&&!a.candidate&&manifest.status==='APPROVED';if(!approved&&!(allowCandidates&&a.candidate&&a.review.status==='CANDIDATE')){stats.skipped++;return;}const image=await fetchImage(a);if(disposed)return;loaded.set(a.id,{asset:a,image,approved});stats.ready++;stats[approved?'approved':'candidates']++;}catch(error){stats.failed++;stats.failures.push({id:raw?.id||'unknown',message:error.message});}finally{notify();}}));
+  attachEncodedStore(store){if(preloadPromise||manifest)throw Error('Cache must attach before loading');encodedStore=store;stats.encodedBudgetBytes=store.maxBytes;return pipeline;},
+  selectAssets(ids){if(preloadPromise)throw Error('Selection must precede decoding');selectedIds=new Set(ids);return pipeline;},
+  async cacheEncoded(){deadlineAt=Date.now()+preloadTimeoutMs;stats.manifest='loading';notify();await prepare();for(const a of manifest.assets){validateAsset(a);const approved=a.review.status==='APPROVED'&&!a.candidate&&manifest.status==='APPROVED';if(!approved&&!(allowCandidates&&a.candidate&&a.review.status==='CANDIDATE')){stats.skipped++;continue;}await bounded(a.id,signal=>encoded(a,signal));stats.encodedReady++;notify();}return pipeline;},
+  preload(){if(preloadPromise)return preloadPromise;preloadPromise=(async()=>{deadlineAt=Date.now()+preloadTimeoutMs;stats.manifest='loading';notify();try{await prepare();const active=selectedIds?manifest.assets.filter(a=>selectedIds.has(a.id)):manifest.assets;stats.selectedDeclared=active.length;notify();
+    for(let index=0;index<active.length;index+=4)await Promise.all(active.slice(index,index+4).map(async raw=>{try{const a=validateAsset(raw);if(a.family){const layout=JSON.stringify([a.source.width,a.source.height,a.cell.width,a.cell.height,a.pivot,a.render]);if(familyLayouts.has(a.family)&&familyLayouts.get(a.family)!==layout)throw Error('Family changes fixed canvas/pivot/logical scale');familyLayouts.set(a.family,layout);}if(a.contactShadow.mode==='separate'&&!manifest.assets.some(x=>x.id===a.contactShadow.assetId))throw Error('Missing separate shadow asset');const approved=a.review.status==='APPROVED'&&!a.candidate&&manifest.status==='APPROVED';if(!approved&&!(allowCandidates&&a.candidate&&a.review.status==='CANDIDATE')){stats.skipped++;return;}const image=await fetchImage(a);if(disposed)return;loaded.set(a.id,{asset:a,image,approved});stats.ready++;stats[approved?'approved':'candidates']++;}catch(error){stats.failed++;stats.failures.push({id:raw?.id||'unknown',message:error.message});}finally{notify();}}));
     stats.status=stats.failed||stats.skipped||!stats.ready?'PLACEHOLDER_ONLY':stats.approved===stats.ready&&manifest.status==='APPROVED'?'APPROVED':'CANDIDATE';
    }catch(error){stats.manifest='error';stats.failures.push({id:'manifest',message:error.message});stats.failed++;stats.status='PLACEHOLDER_ONLY';}notify();return pipeline;})();return preloadPromise;},
   get(id,{state,direction,timeMs=0,frame:frameIndex}={}){let entry=loaded.get(id);if(!entry||state!==undefined&&entry.asset.state!==state||direction!==undefined&&entry.asset.direction!==direction)entry=[...loaded.values()].find(e=>e.asset.family===id&&(state===undefined||e.asset.state===state)&&(direction===undefined||e.asset.direction===direction));
@@ -84,7 +97,7 @@ export function createArtAssetPipeline({manifestUrl='/assets/art-v1/manifest.jso
    const {asset:a,image,approved}=entry;const timing=sampleSpriteAnimation(a.frames,{timeMs,loop:a.loop??a.state!=='death',frame:frameIndex}),index=timing.frame;
    const f=a.frames[index],scaleX=a.cell.width/a.source.width,scaleY=a.cell.height/a.source.height;
    return {status:approved?'APPROVED':'CANDIDATE',candidate:!approved,approved,id:a.id,family:a.family,image,sx:f.x,sy:f.y,sw:f.width,sh:f.height,frame:index,frameElapsedMs:timing.elapsedMs,animationDurationMs:timing.durationMs,events:timing.events,pivot:{x:a.pivot.x*scaleX,y:a.pivot.y*scaleY},render:{...a.render},contactShadow:{...a.contactShadow},asset:a};},
-  dispose(){disposed=true;for(const record of cache.values())if(record.image)release(record);loaded.clear();cache.clear();stats.ready=0;stats.approved=0;stats.candidates=0;notify();}
+  dispose(){disposed=true;for(const record of cache.values())release(record);loaded.clear();cache.clear();stats.ready=0;stats.approved=0;stats.candidates=0;notify();}
  };
  return pipeline;
 }

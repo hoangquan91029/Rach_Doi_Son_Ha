@@ -1,0 +1,2211 @@
+{
+  "kind": "mature-shared-simulation-cpu-profile",
+  "date": "2026-10-09T17:45:40.053Z",
+  "config": {
+    "map": "delta",
+    "worlds": 5,
+    "seed": 171,
+    "aiPlayer": 1,
+    "difficulty": "normal",
+    "evolveSeconds": 90,
+    "warmupTicks": 20,
+    "measurementTicks": 200,
+    "samplingIntervalUs": 1000,
+    "snapshotEveryTicks": 4,
+    "wallLimitSeconds": 90
+  },
+  "gitCommit": "509903bafe02e5a5c960f3413f42c0c549a13d65",
+  "sourceHashes": {
+    "shared/sim.js": "a266e0de5a6719579e48fd8a57888f09509f6af745190cb09b47c5641bab7796",
+    "shared/data.js": "ffc3f45adc58f212066d3763c591377ce15b9f6ac78e4685a95fc3ac747818e1",
+    "shared/visible-action.js": "380d1d29e76b004fdde29713cd2e6e87ea3cfba5f9c454fb3554a471f4a60063",
+    "server/index.js": "4e6a7e82f02d1d856f4ea788863c4836930bc00250be6a5b020ba2bdd8884198",
+    "scripts/benchmark-simulation.mjs": "206c765aedab2fdcb55f5b8db50ad219688d39fa4fcaee7d35086d163b8f13ed",
+    "scripts/profile-simulation.mjs": "096a95f1e12ceba664166555d082cd2b32ca9b59549a26a3c3d2dec99eef5f15"
+  },
+  "sourceHashesAfter": {
+    "shared/sim.js": "a266e0de5a6719579e48fd8a57888f09509f6af745190cb09b47c5641bab7796",
+    "shared/data.js": "ffc3f45adc58f212066d3763c591377ce15b9f6ac78e4685a95fc3ac747818e1",
+    "shared/visible-action.js": "380d1d29e76b004fdde29713cd2e6e87ea3cfba5f9c454fb3554a471f4a60063",
+    "server/index.js": "4e6a7e82f02d1d856f4ea788863c4836930bc00250be6a5b020ba2bdd8884198",
+    "scripts/benchmark-simulation.mjs": "206c765aedab2fdcb55f5b8db50ad219688d39fa4fcaee7d35086d163b8f13ed",
+    "scripts/profile-simulation.mjs": "096a95f1e12ceba664166555d082cd2b32ca9b59549a26a3c3d2dec99eef5f15"
+  },
+  "sourcesUnchanged": true,
+  "hardware": {
+    "cpu": "12th Gen Intel(R) Core(TM) i5-12450HX",
+    "logicalCpus": 12,
+    "totalMemoryBytes": 28578357248,
+    "platform": "linux",
+    "release": "7.0.0-38-generic",
+    "loadAverageAfter": [
+      1.45,
+      0.74,
+      0.58
+    ],
+    "exclusiveCpu": false
+  },
+  "runtime": {
+    "node": "v24.15.0",
+    "v8": "13.6.233.17-node.48"
+  },
+  "initial": [
+    {
+      "tick": 0,
+      "winner": null,
+      "livingUnits": 26,
+      "unitsByOwner": [
+        13,
+        13
+      ],
+      "entities": 34
+    },
+    {
+      "tick": 0,
+      "winner": null,
+      "livingUnits": 26,
+      "unitsByOwner": [
+        13,
+        13
+      ],
+      "entities": 34
+    },
+    {
+      "tick": 0,
+      "winner": null,
+      "livingUnits": 26,
+      "unitsByOwner": [
+        13,
+        13
+      ],
+      "entities": 34
+    },
+    {
+      "tick": 0,
+      "winner": null,
+      "livingUnits": 26,
+      "unitsByOwner": [
+        13,
+        13
+      ],
+      "entities": 34
+    },
+    {
+      "tick": 0,
+      "winner": null,
+      "livingUnits": 26,
+      "unitsByOwner": [
+        13,
+        13
+      ],
+      "entities": 34
+    }
+  ],
+  "evolved": [
+    {
+      "tick": 1800,
+      "winner": null,
+      "livingUnits": 39,
+      "unitsByOwner": [
+        9,
+        30
+      ],
+      "entities": 51
+    },
+    {
+      "tick": 1800,
+      "winner": null,
+      "livingUnits": 39,
+      "unitsByOwner": [
+        9,
+        30
+      ],
+      "entities": 51
+    },
+    {
+      "tick": 1800,
+      "winner": null,
+      "livingUnits": 39,
+      "unitsByOwner": [
+        9,
+        30
+      ],
+      "entities": 51
+    },
+    {
+      "tick": 1800,
+      "winner": null,
+      "livingUnits": 39,
+      "unitsByOwner": [
+        9,
+        30
+      ],
+      "entities": 51
+    },
+    {
+      "tick": 1800,
+      "winner": null,
+      "livingUnits": 39,
+      "unitsByOwner": [
+        9,
+        30
+      ],
+      "entities": 51
+    }
+  ],
+  "checkpoint": [
+    {
+      "tick": 1820,
+      "winner": null,
+      "livingUnits": 39,
+      "unitsByOwner": [
+        9,
+        30
+      ],
+      "entities": 50
+    },
+    {
+      "tick": 1820,
+      "winner": null,
+      "livingUnits": 39,
+      "unitsByOwner": [
+        9,
+        30
+      ],
+      "entities": 50
+    },
+    {
+      "tick": 1820,
+      "winner": null,
+      "livingUnits": 39,
+      "unitsByOwner": [
+        9,
+        30
+      ],
+      "entities": 50
+    },
+    {
+      "tick": 1820,
+      "winner": null,
+      "livingUnits": 39,
+      "unitsByOwner": [
+        9,
+        30
+      ],
+      "entities": 50
+    },
+    {
+      "tick": 1820,
+      "winner": null,
+      "livingUnits": 39,
+      "unitsByOwner": [
+        9,
+        30
+      ],
+      "entities": 50
+    }
+  ],
+  "final": [
+    {
+      "tick": 2020,
+      "winner": null,
+      "livingUnits": 38,
+      "unitsByOwner": [
+        9,
+        29
+      ],
+      "entities": 49
+    },
+    {
+      "tick": 2020,
+      "winner": null,
+      "livingUnits": 38,
+      "unitsByOwner": [
+        9,
+        29
+      ],
+      "entities": 49
+    },
+    {
+      "tick": 2020,
+      "winner": null,
+      "livingUnits": 38,
+      "unitsByOwner": [
+        9,
+        29
+      ],
+      "entities": 49
+    },
+    {
+      "tick": 2020,
+      "winner": null,
+      "livingUnits": 38,
+      "unitsByOwner": [
+        9,
+        29
+      ],
+      "entities": 49
+    },
+    {
+      "tick": 2020,
+      "winner": null,
+      "livingUnits": 38,
+      "unitsByOwner": [
+        9,
+        29
+      ],
+      "entities": 49
+    }
+  ],
+  "preparationMs": 14844.259489,
+  "elapsedMs": 17085.394732,
+  "measuredEpochs": 200,
+  "stepMs": {
+    "samples": 200,
+    "p50": 4.757,
+    "p95": 54.851,
+    "p99": 59.219,
+    "max": 68.917
+  },
+  "periodicAIStepMs": {
+    "samples": 4,
+    "p50": 14.291,
+    "p95": 19.386,
+    "p99": 19.386,
+    "max": 19.386
+  },
+  "normalStepMs": {
+    "samples": 196,
+    "p50": 4.738,
+    "p95": 55.162,
+    "p99": 60.264,
+    "max": 68.917
+  },
+  "snapshotEpochMs": {
+    "samples": 50,
+    "p50": 7.242,
+    "p95": 7.83,
+    "p99": 7.987,
+    "max": 7.987
+  },
+  "summary": {
+    "totalSamples": 2024,
+    "profileDurationUs": 2211905,
+    "samplePhases": {
+      "inspector-or-other": 5,
+      "step-normal": 1616,
+      "snapshot-view-json": 342,
+      "step-periodic-ai": 61
+    },
+    "gcSamples": 24,
+    "inclusiveDefinition": "Each function is counted once per sampled stack, deduplicating recursive frames; inclusive totals overlap.",
+    "topSelf": [
+      {
+        "functionName": "updateFog",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 147,
+        "column": 19,
+        "selfSamples": 476,
+        "inclusiveSamples": 511,
+        "selfByPhase": {
+          "step-normal": 404,
+          "snapshot-view-json": 62,
+          "step-periodic-ai": 10
+        },
+        "inclusiveByPhase": {
+          "step-normal": 435,
+          "snapshot-view-json": 65,
+          "step-periodic-ai": 11
+        },
+        "selfPercent": 23.51778656126482,
+        "inclusivePercent": 25.24703557312253
+      },
+      {
+        "functionName": "step",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 385,
+        "column": 21,
+        "selfSamples": 257,
+        "inclusiveSamples": 1638,
+        "selfByPhase": {
+          "step-normal": 255,
+          "step-periodic-ai": 2
+        },
+        "inclusiveByPhase": {
+          "step-normal": 1577,
+          "step-periodic-ai": 61
+        },
+        "selfPercent": 12.697628458498023,
+        "inclusivePercent": 80.92885375494072
+      },
+      {
+        "functionName": "view",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 395,
+        "column": 21,
+        "selfSamples": 192,
+        "inclusiveSamples": 264,
+        "selfByPhase": {
+          "snapshot-view-json": 192
+        },
+        "inclusiveByPhase": {
+          "snapshot-view-json": 264
+        },
+        "selfPercent": 9.486166007905139,
+        "inclusivePercent": 13.043478260869565
+      },
+      {
+        "functionName": "navigationStep",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 72,
+        "column": 24,
+        "selfSamples": 144,
+        "inclusiveSamples": 286,
+        "selfByPhase": {
+          "step-normal": 129,
+          "step-periodic-ai": 15
+        },
+        "inclusiveByPhase": {
+          "step-normal": 263,
+          "step-periodic-ai": 23
+        },
+        "selfPercent": 7.1146245059288535,
+        "inclusivePercent": 14.130434782608695
+      },
+      {
+        "functionName": "travel",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 132,
+        "column": 16,
+        "selfSamples": 139,
+        "inclusiveSamples": 795,
+        "selfByPhase": {
+          "step-normal": 138,
+          "step-periodic-ai": 1
+        },
+        "inclusiveByPhase": {
+          "step-normal": 787,
+          "step-periodic-ai": 8
+        },
+        "selfPercent": 6.867588932806324,
+        "inclusivePercent": 39.27865612648221
+      },
+      {
+        "functionName": "crowdSweep",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 106,
+        "column": 20,
+        "selfSamples": 134,
+        "inclusiveSamples": 205,
+        "selfByPhase": {
+          "step-normal": 131,
+          "step-periodic-ai": 3
+        },
+        "inclusiveByPhase": {
+          "step-normal": 201,
+          "step-periodic-ai": 4
+        },
+        "selfPercent": 6.620553359683795,
+        "inclusivePercent": 10.128458498023715
+      },
+      {
+        "functionName": "path",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 81,
+        "column": 14,
+        "selfSamples": 98,
+        "inclusiveSamples": 367,
+        "selfByPhase": {
+          "step-normal": 94,
+          "step-periodic-ai": 4
+        },
+        "inclusiveByPhase": {
+          "step-normal": 340,
+          "step-periodic-ai": 27
+        },
+        "selfPercent": 4.841897233201581,
+        "inclusivePercent": 18.132411067193676
+      },
+      {
+        "functionName": "pass",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 70,
+        "column": 14,
+        "selfSamples": 98,
+        "inclusiveSamples": 152,
+        "selfByPhase": {
+          "step-normal": 93,
+          "step-periodic-ai": 5
+        },
+        "inclusiveByPhase": {
+          "step-normal": 144,
+          "step-periodic-ai": 8
+        },
+        "selfPercent": 4.841897233201581,
+        "inclusivePercent": 7.509881422924901
+      },
+      {
+        "functionName": "main",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/profile-simulation.mjs",
+        "line": 27,
+        "column": 20,
+        "selfSamples": 89,
+        "inclusiveSamples": 1997,
+        "selfByPhase": {
+          "snapshot-view-json": 73,
+          "step-normal": 15,
+          "inspector-or-other": 1
+        },
+        "inclusiveByPhase": {
+          "inspector-or-other": 4,
+          "step-normal": 1592,
+          "snapshot-view-json": 340,
+          "step-periodic-ai": 61
+        },
+        "selfPercent": 4.397233201581027,
+        "inclusivePercent": 98.66600790513834
+      },
+      {
+        "functionName": "(anonymous)",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 121,
+        "column": 256,
+        "selfSamples": 67,
+        "inclusiveSamples": 163,
+        "selfByPhase": {
+          "step-normal": 67
+        },
+        "inclusiveByPhase": {
+          "step-normal": 163
+        },
+        "selfPercent": 3.3102766798418974,
+        "inclusivePercent": 8.053359683794467
+      },
+      {
+        "functionName": "tickUnit",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 292,
+        "column": 18,
+        "selfSamples": 59,
+        "inclusiveSamples": 897,
+        "selfByPhase": {
+          "step-normal": 55,
+          "step-periodic-ai": 4
+        },
+        "inclusiveByPhase": {
+          "step-normal": 883,
+          "step-periodic-ai": 14
+        },
+        "selfPercent": 2.9150197628458496,
+        "inclusivePercent": 44.31818181818182
+      },
+      {
+        "functionName": "clone",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 10,
+        "column": 13,
+        "selfSamples": 37,
+        "inclusiveSamples": 37,
+        "selfByPhase": {
+          "step-normal": 29,
+          "snapshot-view-json": 7,
+          "step-periodic-ai": 1
+        },
+        "inclusiveByPhase": {
+          "step-normal": 29,
+          "snapshot-view-json": 7,
+          "step-periodic-ai": 1
+        },
+        "selfPercent": 1.8280632411067195,
+        "inclusivePercent": 1.8280632411067195
+      },
+      {
+        "functionName": "terrainPass",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 67,
+        "column": 21,
+        "selfSamples": 28,
+        "inclusiveSamples": 28,
+        "selfByPhase": {
+          "step-normal": 25,
+          "step-periodic-ai": 3
+        },
+        "inclusiveByPhase": {
+          "step-normal": 25,
+          "step-periodic-ai": 3
+        },
+        "selfPercent": 1.383399209486166,
+        "inclusivePercent": 1.383399209486166
+      },
+      {
+        "functionName": "(garbage collector)",
+        "url": "",
+        "line": null,
+        "column": null,
+        "selfSamples": 24,
+        "inclusiveSamples": 24,
+        "selfByPhase": {
+          "step-normal": 22,
+          "snapshot-view-json": 2
+        },
+        "inclusiveByPhase": {
+          "step-normal": 22,
+          "snapshot-view-json": 2
+        },
+        "selfPercent": 1.1857707509881423,
+        "inclusivePercent": 1.1857707509881423
+      },
+      {
+        "functionName": "crowdPatch",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 116,
+        "column": 20,
+        "selfSamples": 24,
+        "inclusiveSamples": 277,
+        "selfByPhase": {
+          "step-normal": 24
+        },
+        "inclusiveByPhase": {
+          "step-normal": 274,
+          "step-periodic-ai": 3
+        },
+        "selfPercent": 1.1857707509881423,
+        "inclusivePercent": 13.685770750988143
+      },
+      {
+        "functionName": "(anonymous)",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 70,
+        "column": 87,
+        "selfSamples": 21,
+        "inclusiveSamples": 21,
+        "selfByPhase": {
+          "step-normal": 21
+        },
+        "inclusiveByPhase": {
+          "step-normal": 21
+        },
+        "selfPercent": 1.0375494071146245,
+        "inclusivePercent": 1.0375494071146245
+      },
+      {
+        "functionName": "resupply",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 258,
+        "column": 18,
+        "selfSamples": 21,
+        "inclusiveSamples": 22,
+        "selfByPhase": {
+          "step-periodic-ai": 2,
+          "step-normal": 19
+        },
+        "inclusiveByPhase": {
+          "step-periodic-ai": 2,
+          "step-normal": 20
+        },
+        "selfPercent": 1.0375494071146245,
+        "inclusivePercent": 1.0869565217391304
+      },
+      {
+        "functionName": "(anonymous)",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 123,
+        "column": 77,
+        "selfSamples": 15,
+        "inclusiveSamples": 42,
+        "selfByPhase": {
+          "step-normal": 15
+        },
+        "inclusiveByPhase": {
+          "step-normal": 42
+        },
+        "selfPercent": 0.741106719367589,
+        "inclusivePercent": 2.075098814229249
+      },
+      {
+        "functionName": "crowdPrepare",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 99,
+        "column": 22,
+        "selfSamples": 13,
+        "inclusiveSamples": 13,
+        "selfByPhase": {
+          "step-normal": 13
+        },
+        "inclusiveByPhase": {
+          "step-normal": 13
+        },
+        "selfPercent": 0.642292490118577,
+        "inclusivePercent": 0.642292490118577
+      },
+      {
+        "functionName": "pop",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 86,
+        "column": 12,
+        "selfSamples": 13,
+        "inclusiveSamples": 13,
+        "selfByPhase": {
+          "step-normal": 13
+        },
+        "inclusiveByPhase": {
+          "step-normal": 13
+        },
+        "selfPercent": 0.642292490118577,
+        "inclusivePercent": 0.642292490118577
+      },
+      {
+        "functionName": "(anonymous)",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 76,
+        "column": 27,
+        "selfSamples": 12,
+        "inclusiveSamples": 12,
+        "selfByPhase": {
+          "step-normal": 11,
+          "step-periodic-ai": 1
+        },
+        "inclusiveByPhase": {
+          "step-normal": 11,
+          "step-periodic-ai": 1
+        },
+        "selfPercent": 0.5928853754940712,
+        "inclusivePercent": 0.5928853754940712
+      },
+      {
+        "functionName": "gather",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 261,
+        "column": 16,
+        "selfSamples": 7,
+        "inclusiveSamples": 238,
+        "selfByPhase": {
+          "step-normal": 7
+        },
+        "inclusiveByPhase": {
+          "step-normal": 233,
+          "step-periodic-ai": 5
+        },
+        "selfPercent": 0.3458498023715415,
+        "inclusivePercent": 11.75889328063241
+      },
+      {
+        "functionName": "groundSegment",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 74,
+        "column": 23,
+        "selfSamples": 6,
+        "inclusiveSamples": 48,
+        "selfByPhase": {
+          "step-normal": 6
+        },
+        "inclusiveByPhase": {
+          "step-normal": 47,
+          "step-periodic-ai": 1
+        },
+        "selfPercent": 0.2964426877470356,
+        "inclusivePercent": 2.3715415019762847
+      },
+      {
+        "functionName": "living",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 4,
+        "column": 14,
+        "selfSamples": 6,
+        "inclusiveSamples": 6,
+        "selfByPhase": {
+          "step-normal": 6
+        },
+        "inclusiveByPhase": {
+          "step-normal": 6
+        },
+        "selfPercent": 0.2964426877470356,
+        "inclusivePercent": 0.2964426877470356
+      },
+      {
+        "functionName": "nearestEnemy",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 257,
+        "column": 22,
+        "selfSamples": 6,
+        "inclusiveSamples": 9,
+        "selfByPhase": {
+          "step-normal": 6
+        },
+        "inclusiveByPhase": {
+          "step-normal": 9
+        },
+        "selfPercent": 0.2964426877470356,
+        "inclusivePercent": 0.44466403162055335
+      },
+      {
+        "functionName": "command",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 159,
+        "column": 24,
+        "selfSamples": 6,
+        "inclusiveSamples": 32,
+        "selfByPhase": {
+          "step-periodic-ai": 6
+        },
+        "inclusiveByPhase": {
+          "step-periodic-ai": 32
+        },
+        "selfPercent": 0.2964426877470356,
+        "inclusivePercent": 1.5810276679841897
+      },
+      {
+        "functionName": "blockers",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 69,
+        "column": 18,
+        "selfSamples": 5,
+        "inclusiveSamples": 5,
+        "selfByPhase": {
+          "step-normal": 5
+        },
+        "inclusiveByPhase": {
+          "step-normal": 5
+        },
+        "selfPercent": 0.24703557312252963,
+        "inclusivePercent": 0.24703557312252963
+      },
+      {
+        "functionName": "(program)",
+        "url": "",
+        "line": null,
+        "column": null,
+        "selfSamples": 3,
+        "inclusiveSamples": 3,
+        "selfByPhase": {
+          "step-normal": 2,
+          "inspector-or-other": 1
+        },
+        "inclusiveByPhase": {
+          "step-normal": 2,
+          "inspector-or-other": 1
+        },
+        "selfPercent": 0.1482213438735178,
+        "inclusivePercent": 0.1482213438735178
+      },
+      {
+        "functionName": "dist",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 3,
+        "column": 65,
+        "selfSamples": 3,
+        "inclusiveSamples": 5,
+        "selfByPhase": {
+          "step-normal": 3
+        },
+        "inclusiveByPhase": {
+          "step-normal": 5
+        },
+        "selfPercent": 0.1482213438735178,
+        "inclusivePercent": 0.24703557312252963
+      },
+      {
+        "functionName": "snapshotView",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/server/index.js",
+        "line": 16,
+        "column": 29,
+        "selfSamples": 2,
+        "inclusiveSamples": 266,
+        "selfByPhase": {
+          "snapshot-view-json": 2
+        },
+        "inclusiveByPhase": {
+          "snapshot-view-json": 266
+        },
+        "selfPercent": 0.09881422924901186,
+        "inclusivePercent": 13.142292490118576
+      }
+    ],
+    "topInclusive": [
+      {
+        "functionName": "(root)",
+        "url": "",
+        "line": null,
+        "column": null,
+        "selfSamples": 0,
+        "inclusiveSamples": 2024,
+        "selfByPhase": {},
+        "inclusiveByPhase": {
+          "inspector-or-other": 5,
+          "step-normal": 1616,
+          "snapshot-view-json": 342,
+          "step-periodic-ai": 61
+        },
+        "selfPercent": 0,
+        "inclusivePercent": 100
+      },
+      {
+        "functionName": "main",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/profile-simulation.mjs",
+        "line": 27,
+        "column": 20,
+        "selfSamples": 89,
+        "inclusiveSamples": 1997,
+        "selfByPhase": {
+          "snapshot-view-json": 73,
+          "step-normal": 15,
+          "inspector-or-other": 1
+        },
+        "inclusiveByPhase": {
+          "inspector-or-other": 4,
+          "step-normal": 1592,
+          "snapshot-view-json": 340,
+          "step-periodic-ai": 61
+        },
+        "selfPercent": 4.397233201581027,
+        "inclusivePercent": 98.66600790513834
+      },
+      {
+        "functionName": "step",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 385,
+        "column": 21,
+        "selfSamples": 257,
+        "inclusiveSamples": 1638,
+        "selfByPhase": {
+          "step-normal": 255,
+          "step-periodic-ai": 2
+        },
+        "inclusiveByPhase": {
+          "step-normal": 1577,
+          "step-periodic-ai": 61
+        },
+        "selfPercent": 12.697628458498023,
+        "inclusivePercent": 80.92885375494072
+      },
+      {
+        "functionName": "tickUnit",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 292,
+        "column": 18,
+        "selfSamples": 59,
+        "inclusiveSamples": 897,
+        "selfByPhase": {
+          "step-normal": 55,
+          "step-periodic-ai": 4
+        },
+        "inclusiveByPhase": {
+          "step-normal": 883,
+          "step-periodic-ai": 14
+        },
+        "selfPercent": 2.9150197628458496,
+        "inclusivePercent": 44.31818181818182
+      },
+      {
+        "functionName": "travel",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 132,
+        "column": 16,
+        "selfSamples": 139,
+        "inclusiveSamples": 795,
+        "selfByPhase": {
+          "step-normal": 138,
+          "step-periodic-ai": 1
+        },
+        "inclusiveByPhase": {
+          "step-normal": 787,
+          "step-periodic-ai": 8
+        },
+        "selfPercent": 6.867588932806324,
+        "inclusivePercent": 39.27865612648221
+      },
+      {
+        "functionName": "updateFog",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 147,
+        "column": 19,
+        "selfSamples": 476,
+        "inclusiveSamples": 511,
+        "selfByPhase": {
+          "step-normal": 404,
+          "snapshot-view-json": 62,
+          "step-periodic-ai": 10
+        },
+        "inclusiveByPhase": {
+          "step-normal": 435,
+          "snapshot-view-json": 65,
+          "step-periodic-ai": 11
+        },
+        "selfPercent": 23.51778656126482,
+        "inclusivePercent": 25.24703557312253
+      },
+      {
+        "functionName": "path",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 81,
+        "column": 14,
+        "selfSamples": 98,
+        "inclusiveSamples": 367,
+        "selfByPhase": {
+          "step-normal": 94,
+          "step-periodic-ai": 4
+        },
+        "inclusiveByPhase": {
+          "step-normal": 340,
+          "step-periodic-ai": 27
+        },
+        "selfPercent": 4.841897233201581,
+        "inclusivePercent": 18.132411067193676
+      },
+      {
+        "functionName": "navigationStep",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 72,
+        "column": 24,
+        "selfSamples": 144,
+        "inclusiveSamples": 286,
+        "selfByPhase": {
+          "step-normal": 129,
+          "step-periodic-ai": 15
+        },
+        "inclusiveByPhase": {
+          "step-normal": 263,
+          "step-periodic-ai": 23
+        },
+        "selfPercent": 7.1146245059288535,
+        "inclusivePercent": 14.130434782608695
+      },
+      {
+        "functionName": "crowdPatch",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 116,
+        "column": 20,
+        "selfSamples": 24,
+        "inclusiveSamples": 277,
+        "selfByPhase": {
+          "step-normal": 24
+        },
+        "inclusiveByPhase": {
+          "step-normal": 274,
+          "step-periodic-ai": 3
+        },
+        "selfPercent": 1.1857707509881423,
+        "inclusivePercent": 13.685770750988143
+      },
+      {
+        "functionName": "snapshotView",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/server/index.js",
+        "line": 16,
+        "column": 29,
+        "selfSamples": 2,
+        "inclusiveSamples": 266,
+        "selfByPhase": {
+          "snapshot-view-json": 2
+        },
+        "inclusiveByPhase": {
+          "snapshot-view-json": 266
+        },
+        "selfPercent": 0.09881422924901186,
+        "inclusivePercent": 13.142292490118576
+      },
+      {
+        "functionName": "view",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 395,
+        "column": 21,
+        "selfSamples": 192,
+        "inclusiveSamples": 264,
+        "selfByPhase": {
+          "snapshot-view-json": 192
+        },
+        "inclusiveByPhase": {
+          "snapshot-view-json": 264
+        },
+        "selfPercent": 9.486166007905139,
+        "inclusivePercent": 13.043478260869565
+      },
+      {
+        "functionName": "gather",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 261,
+        "column": 16,
+        "selfSamples": 7,
+        "inclusiveSamples": 238,
+        "selfByPhase": {
+          "step-normal": 7
+        },
+        "inclusiveByPhase": {
+          "step-normal": 233,
+          "step-periodic-ai": 5
+        },
+        "selfPercent": 0.3458498023715415,
+        "inclusivePercent": 11.75889328063241
+      },
+      {
+        "functionName": "crowdSweep",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 106,
+        "column": 20,
+        "selfSamples": 134,
+        "inclusiveSamples": 205,
+        "selfByPhase": {
+          "step-normal": 131,
+          "step-periodic-ai": 3
+        },
+        "inclusiveByPhase": {
+          "step-normal": 201,
+          "step-periodic-ai": 4
+        },
+        "selfPercent": 6.620553359683795,
+        "inclusivePercent": 10.128458498023715
+      },
+      {
+        "functionName": "(anonymous)",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 121,
+        "column": 256,
+        "selfSamples": 67,
+        "inclusiveSamples": 163,
+        "selfByPhase": {
+          "step-normal": 67
+        },
+        "inclusiveByPhase": {
+          "step-normal": 163
+        },
+        "selfPercent": 3.3102766798418974,
+        "inclusivePercent": 8.053359683794467
+      },
+      {
+        "functionName": "pass",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 70,
+        "column": 14,
+        "selfSamples": 98,
+        "inclusiveSamples": 152,
+        "selfByPhase": {
+          "step-normal": 93,
+          "step-periodic-ai": 5
+        },
+        "inclusiveByPhase": {
+          "step-normal": 144,
+          "step-periodic-ai": 8
+        },
+        "selfPercent": 4.841897233201581,
+        "inclusivePercent": 7.509881422924901
+      },
+      {
+        "functionName": "transfer",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 269,
+        "column": 18,
+        "selfSamples": 0,
+        "inclusiveSamples": 71,
+        "selfByPhase": {},
+        "inclusiveByPhase": {
+          "step-normal": 71
+        },
+        "selfPercent": 0,
+        "inclusivePercent": 3.507905138339921
+      },
+      {
+        "functionName": "groundSegment",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 74,
+        "column": 23,
+        "selfSamples": 6,
+        "inclusiveSamples": 48,
+        "selfByPhase": {
+          "step-normal": 6
+        },
+        "inclusiveByPhase": {
+          "step-normal": 47,
+          "step-periodic-ai": 1
+        },
+        "selfPercent": 0.2964426877470356,
+        "inclusivePercent": 2.3715415019762847
+      },
+      {
+        "functionName": "(anonymous)",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 123,
+        "column": 77,
+        "selfSamples": 15,
+        "inclusiveSamples": 42,
+        "selfByPhase": {
+          "step-normal": 15
+        },
+        "inclusiveByPhase": {
+          "step-normal": 42
+        },
+        "selfPercent": 0.741106719367589,
+        "inclusivePercent": 2.075098814229249
+      },
+      {
+        "functionName": "clone",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 10,
+        "column": 13,
+        "selfSamples": 37,
+        "inclusiveSamples": 37,
+        "selfByPhase": {
+          "step-normal": 29,
+          "snapshot-view-json": 7,
+          "step-periodic-ai": 1
+        },
+        "inclusiveByPhase": {
+          "step-normal": 29,
+          "snapshot-view-json": 7,
+          "step-periodic-ai": 1
+        },
+        "selfPercent": 1.8280632411067195,
+        "inclusivePercent": 1.8280632411067195
+      },
+      {
+        "functionName": "ai",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 351,
+        "column": 12,
+        "selfSamples": 0,
+        "inclusiveSamples": 34,
+        "selfByPhase": {},
+        "inclusiveByPhase": {
+          "step-periodic-ai": 34
+        },
+        "selfPercent": 0,
+        "inclusivePercent": 1.6798418972332017
+      },
+      {
+        "functionName": "command",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 159,
+        "column": 24,
+        "selfSamples": 6,
+        "inclusiveSamples": 32,
+        "selfByPhase": {
+          "step-periodic-ai": 6
+        },
+        "inclusiveByPhase": {
+          "step-periodic-ai": 32
+        },
+        "selfPercent": 0.2964426877470356,
+        "inclusivePercent": 1.5810276679841897
+      },
+      {
+        "functionName": "terrainPass",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 67,
+        "column": 21,
+        "selfSamples": 28,
+        "inclusiveSamples": 28,
+        "selfByPhase": {
+          "step-normal": 25,
+          "step-periodic-ai": 3
+        },
+        "inclusiveByPhase": {
+          "step-normal": 25,
+          "step-periodic-ai": 3
+        },
+        "selfPercent": 1.383399209486166,
+        "inclusivePercent": 1.383399209486166
+      },
+      {
+        "functionName": "attack",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 225,
+        "column": 16,
+        "selfSamples": 0,
+        "inclusiveSamples": 26,
+        "selfByPhase": {},
+        "inclusiveByPhase": {
+          "step-normal": 26
+        },
+        "selfPercent": 0,
+        "inclusivePercent": 1.284584980237154
+      },
+      {
+        "functionName": "(garbage collector)",
+        "url": "",
+        "line": null,
+        "column": null,
+        "selfSamples": 24,
+        "inclusiveSamples": 24,
+        "selfByPhase": {
+          "step-normal": 22,
+          "snapshot-view-json": 2
+        },
+        "inclusiveByPhase": {
+          "step-normal": 22,
+          "snapshot-view-json": 2
+        },
+        "selfPercent": 1.1857707509881423,
+        "inclusivePercent": 1.1857707509881423
+      },
+      {
+        "functionName": "resupply",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 258,
+        "column": 18,
+        "selfSamples": 21,
+        "inclusiveSamples": 22,
+        "selfByPhase": {
+          "step-periodic-ai": 2,
+          "step-normal": 19
+        },
+        "inclusiveByPhase": {
+          "step-periodic-ai": 2,
+          "step-normal": 20
+        },
+        "selfPercent": 1.0375494071146245,
+        "inclusivePercent": 1.0869565217391304
+      },
+      {
+        "functionName": "(anonymous)",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 70,
+        "column": 87,
+        "selfSamples": 21,
+        "inclusiveSamples": 21,
+        "selfByPhase": {
+          "step-normal": 21
+        },
+        "inclusiveByPhase": {
+          "step-normal": 21
+        },
+        "selfPercent": 1.0375494071146245,
+        "inclusivePercent": 1.0375494071146245
+      },
+      {
+        "functionName": "crowdPrepare",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 99,
+        "column": 22,
+        "selfSamples": 13,
+        "inclusiveSamples": 13,
+        "selfByPhase": {
+          "step-normal": 13
+        },
+        "inclusiveByPhase": {
+          "step-normal": 13
+        },
+        "selfPercent": 0.642292490118577,
+        "inclusivePercent": 0.642292490118577
+      },
+      {
+        "functionName": "pop",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 86,
+        "column": 12,
+        "selfSamples": 13,
+        "inclusiveSamples": 13,
+        "selfByPhase": {
+          "step-normal": 13
+        },
+        "inclusiveByPhase": {
+          "step-normal": 13
+        },
+        "selfPercent": 0.642292490118577,
+        "inclusivePercent": 0.642292490118577
+      },
+      {
+        "functionName": "(anonymous)",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 76,
+        "column": 27,
+        "selfSamples": 12,
+        "inclusiveSamples": 12,
+        "selfByPhase": {
+          "step-normal": 11,
+          "step-periodic-ai": 1
+        },
+        "inclusiveByPhase": {
+          "step-normal": 11,
+          "step-periodic-ai": 1
+        },
+        "selfPercent": 0.5928853754940712,
+        "inclusivePercent": 0.5928853754940712
+      },
+      {
+        "functionName": "nearestEnemy",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 257,
+        "column": 22,
+        "selfSamples": 6,
+        "inclusiveSamples": 9,
+        "selfByPhase": {
+          "step-normal": 6
+        },
+        "inclusiveByPhase": {
+          "step-normal": 9
+        },
+        "selfPercent": 0.2964426877470356,
+        "inclusivePercent": 0.44466403162055335
+      }
+    ],
+    "allFunctions": [
+      {
+        "functionName": "updateFog",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 147,
+        "column": 19,
+        "selfSamples": 476,
+        "inclusiveSamples": 511,
+        "selfByPhase": {
+          "step-normal": 404,
+          "snapshot-view-json": 62,
+          "step-periodic-ai": 10
+        },
+        "inclusiveByPhase": {
+          "step-normal": 435,
+          "snapshot-view-json": 65,
+          "step-periodic-ai": 11
+        },
+        "selfPercent": 23.51778656126482,
+        "inclusivePercent": 25.24703557312253
+      },
+      {
+        "functionName": "step",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 385,
+        "column": 21,
+        "selfSamples": 257,
+        "inclusiveSamples": 1638,
+        "selfByPhase": {
+          "step-normal": 255,
+          "step-periodic-ai": 2
+        },
+        "inclusiveByPhase": {
+          "step-normal": 1577,
+          "step-periodic-ai": 61
+        },
+        "selfPercent": 12.697628458498023,
+        "inclusivePercent": 80.92885375494072
+      },
+      {
+        "functionName": "view",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 395,
+        "column": 21,
+        "selfSamples": 192,
+        "inclusiveSamples": 264,
+        "selfByPhase": {
+          "snapshot-view-json": 192
+        },
+        "inclusiveByPhase": {
+          "snapshot-view-json": 264
+        },
+        "selfPercent": 9.486166007905139,
+        "inclusivePercent": 13.043478260869565
+      },
+      {
+        "functionName": "navigationStep",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 72,
+        "column": 24,
+        "selfSamples": 144,
+        "inclusiveSamples": 286,
+        "selfByPhase": {
+          "step-normal": 129,
+          "step-periodic-ai": 15
+        },
+        "inclusiveByPhase": {
+          "step-normal": 263,
+          "step-periodic-ai": 23
+        },
+        "selfPercent": 7.1146245059288535,
+        "inclusivePercent": 14.130434782608695
+      },
+      {
+        "functionName": "travel",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 132,
+        "column": 16,
+        "selfSamples": 139,
+        "inclusiveSamples": 795,
+        "selfByPhase": {
+          "step-normal": 138,
+          "step-periodic-ai": 1
+        },
+        "inclusiveByPhase": {
+          "step-normal": 787,
+          "step-periodic-ai": 8
+        },
+        "selfPercent": 6.867588932806324,
+        "inclusivePercent": 39.27865612648221
+      },
+      {
+        "functionName": "crowdSweep",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 106,
+        "column": 20,
+        "selfSamples": 134,
+        "inclusiveSamples": 205,
+        "selfByPhase": {
+          "step-normal": 131,
+          "step-periodic-ai": 3
+        },
+        "inclusiveByPhase": {
+          "step-normal": 201,
+          "step-periodic-ai": 4
+        },
+        "selfPercent": 6.620553359683795,
+        "inclusivePercent": 10.128458498023715
+      },
+      {
+        "functionName": "path",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 81,
+        "column": 14,
+        "selfSamples": 98,
+        "inclusiveSamples": 367,
+        "selfByPhase": {
+          "step-normal": 94,
+          "step-periodic-ai": 4
+        },
+        "inclusiveByPhase": {
+          "step-normal": 340,
+          "step-periodic-ai": 27
+        },
+        "selfPercent": 4.841897233201581,
+        "inclusivePercent": 18.132411067193676
+      },
+      {
+        "functionName": "pass",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 70,
+        "column": 14,
+        "selfSamples": 98,
+        "inclusiveSamples": 152,
+        "selfByPhase": {
+          "step-normal": 93,
+          "step-periodic-ai": 5
+        },
+        "inclusiveByPhase": {
+          "step-normal": 144,
+          "step-periodic-ai": 8
+        },
+        "selfPercent": 4.841897233201581,
+        "inclusivePercent": 7.509881422924901
+      },
+      {
+        "functionName": "main",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/profile-simulation.mjs",
+        "line": 27,
+        "column": 20,
+        "selfSamples": 89,
+        "inclusiveSamples": 1997,
+        "selfByPhase": {
+          "snapshot-view-json": 73,
+          "step-normal": 15,
+          "inspector-or-other": 1
+        },
+        "inclusiveByPhase": {
+          "inspector-or-other": 4,
+          "step-normal": 1592,
+          "snapshot-view-json": 340,
+          "step-periodic-ai": 61
+        },
+        "selfPercent": 4.397233201581027,
+        "inclusivePercent": 98.66600790513834
+      },
+      {
+        "functionName": "(anonymous)",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 121,
+        "column": 256,
+        "selfSamples": 67,
+        "inclusiveSamples": 163,
+        "selfByPhase": {
+          "step-normal": 67
+        },
+        "inclusiveByPhase": {
+          "step-normal": 163
+        },
+        "selfPercent": 3.3102766798418974,
+        "inclusivePercent": 8.053359683794467
+      },
+      {
+        "functionName": "tickUnit",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 292,
+        "column": 18,
+        "selfSamples": 59,
+        "inclusiveSamples": 897,
+        "selfByPhase": {
+          "step-normal": 55,
+          "step-periodic-ai": 4
+        },
+        "inclusiveByPhase": {
+          "step-normal": 883,
+          "step-periodic-ai": 14
+        },
+        "selfPercent": 2.9150197628458496,
+        "inclusivePercent": 44.31818181818182
+      },
+      {
+        "functionName": "clone",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 10,
+        "column": 13,
+        "selfSamples": 37,
+        "inclusiveSamples": 37,
+        "selfByPhase": {
+          "step-normal": 29,
+          "snapshot-view-json": 7,
+          "step-periodic-ai": 1
+        },
+        "inclusiveByPhase": {
+          "step-normal": 29,
+          "snapshot-view-json": 7,
+          "step-periodic-ai": 1
+        },
+        "selfPercent": 1.8280632411067195,
+        "inclusivePercent": 1.8280632411067195
+      },
+      {
+        "functionName": "terrainPass",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 67,
+        "column": 21,
+        "selfSamples": 28,
+        "inclusiveSamples": 28,
+        "selfByPhase": {
+          "step-normal": 25,
+          "step-periodic-ai": 3
+        },
+        "inclusiveByPhase": {
+          "step-normal": 25,
+          "step-periodic-ai": 3
+        },
+        "selfPercent": 1.383399209486166,
+        "inclusivePercent": 1.383399209486166
+      },
+      {
+        "functionName": "(garbage collector)",
+        "url": "",
+        "line": null,
+        "column": null,
+        "selfSamples": 24,
+        "inclusiveSamples": 24,
+        "selfByPhase": {
+          "step-normal": 22,
+          "snapshot-view-json": 2
+        },
+        "inclusiveByPhase": {
+          "step-normal": 22,
+          "snapshot-view-json": 2
+        },
+        "selfPercent": 1.1857707509881423,
+        "inclusivePercent": 1.1857707509881423
+      },
+      {
+        "functionName": "crowdPatch",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 116,
+        "column": 20,
+        "selfSamples": 24,
+        "inclusiveSamples": 277,
+        "selfByPhase": {
+          "step-normal": 24
+        },
+        "inclusiveByPhase": {
+          "step-normal": 274,
+          "step-periodic-ai": 3
+        },
+        "selfPercent": 1.1857707509881423,
+        "inclusivePercent": 13.685770750988143
+      },
+      {
+        "functionName": "(anonymous)",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 70,
+        "column": 87,
+        "selfSamples": 21,
+        "inclusiveSamples": 21,
+        "selfByPhase": {
+          "step-normal": 21
+        },
+        "inclusiveByPhase": {
+          "step-normal": 21
+        },
+        "selfPercent": 1.0375494071146245,
+        "inclusivePercent": 1.0375494071146245
+      },
+      {
+        "functionName": "resupply",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 258,
+        "column": 18,
+        "selfSamples": 21,
+        "inclusiveSamples": 22,
+        "selfByPhase": {
+          "step-periodic-ai": 2,
+          "step-normal": 19
+        },
+        "inclusiveByPhase": {
+          "step-periodic-ai": 2,
+          "step-normal": 20
+        },
+        "selfPercent": 1.0375494071146245,
+        "inclusivePercent": 1.0869565217391304
+      },
+      {
+        "functionName": "(anonymous)",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 123,
+        "column": 77,
+        "selfSamples": 15,
+        "inclusiveSamples": 42,
+        "selfByPhase": {
+          "step-normal": 15
+        },
+        "inclusiveByPhase": {
+          "step-normal": 42
+        },
+        "selfPercent": 0.741106719367589,
+        "inclusivePercent": 2.075098814229249
+      },
+      {
+        "functionName": "crowdPrepare",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 99,
+        "column": 22,
+        "selfSamples": 13,
+        "inclusiveSamples": 13,
+        "selfByPhase": {
+          "step-normal": 13
+        },
+        "inclusiveByPhase": {
+          "step-normal": 13
+        },
+        "selfPercent": 0.642292490118577,
+        "inclusivePercent": 0.642292490118577
+      },
+      {
+        "functionName": "pop",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 86,
+        "column": 12,
+        "selfSamples": 13,
+        "inclusiveSamples": 13,
+        "selfByPhase": {
+          "step-normal": 13
+        },
+        "inclusiveByPhase": {
+          "step-normal": 13
+        },
+        "selfPercent": 0.642292490118577,
+        "inclusivePercent": 0.642292490118577
+      },
+      {
+        "functionName": "(anonymous)",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 76,
+        "column": 27,
+        "selfSamples": 12,
+        "inclusiveSamples": 12,
+        "selfByPhase": {
+          "step-normal": 11,
+          "step-periodic-ai": 1
+        },
+        "inclusiveByPhase": {
+          "step-normal": 11,
+          "step-periodic-ai": 1
+        },
+        "selfPercent": 0.5928853754940712,
+        "inclusivePercent": 0.5928853754940712
+      },
+      {
+        "functionName": "gather",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 261,
+        "column": 16,
+        "selfSamples": 7,
+        "inclusiveSamples": 238,
+        "selfByPhase": {
+          "step-normal": 7
+        },
+        "inclusiveByPhase": {
+          "step-normal": 233,
+          "step-periodic-ai": 5
+        },
+        "selfPercent": 0.3458498023715415,
+        "inclusivePercent": 11.75889328063241
+      },
+      {
+        "functionName": "groundSegment",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 74,
+        "column": 23,
+        "selfSamples": 6,
+        "inclusiveSamples": 48,
+        "selfByPhase": {
+          "step-normal": 6
+        },
+        "inclusiveByPhase": {
+          "step-normal": 47,
+          "step-periodic-ai": 1
+        },
+        "selfPercent": 0.2964426877470356,
+        "inclusivePercent": 2.3715415019762847
+      },
+      {
+        "functionName": "living",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 4,
+        "column": 14,
+        "selfSamples": 6,
+        "inclusiveSamples": 6,
+        "selfByPhase": {
+          "step-normal": 6
+        },
+        "inclusiveByPhase": {
+          "step-normal": 6
+        },
+        "selfPercent": 0.2964426877470356,
+        "inclusivePercent": 0.2964426877470356
+      },
+      {
+        "functionName": "nearestEnemy",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 257,
+        "column": 22,
+        "selfSamples": 6,
+        "inclusiveSamples": 9,
+        "selfByPhase": {
+          "step-normal": 6
+        },
+        "inclusiveByPhase": {
+          "step-normal": 9
+        },
+        "selfPercent": 0.2964426877470356,
+        "inclusivePercent": 0.44466403162055335
+      },
+      {
+        "functionName": "command",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 159,
+        "column": 24,
+        "selfSamples": 6,
+        "inclusiveSamples": 32,
+        "selfByPhase": {
+          "step-periodic-ai": 6
+        },
+        "inclusiveByPhase": {
+          "step-periodic-ai": 32
+        },
+        "selfPercent": 0.2964426877470356,
+        "inclusivePercent": 1.5810276679841897
+      },
+      {
+        "functionName": "blockers",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 69,
+        "column": 18,
+        "selfSamples": 5,
+        "inclusiveSamples": 5,
+        "selfByPhase": {
+          "step-normal": 5
+        },
+        "inclusiveByPhase": {
+          "step-normal": 5
+        },
+        "selfPercent": 0.24703557312252963,
+        "inclusivePercent": 0.24703557312252963
+      },
+      {
+        "functionName": "(program)",
+        "url": "",
+        "line": null,
+        "column": null,
+        "selfSamples": 3,
+        "inclusiveSamples": 3,
+        "selfByPhase": {
+          "step-normal": 2,
+          "inspector-or-other": 1
+        },
+        "inclusiveByPhase": {
+          "step-normal": 2,
+          "inspector-or-other": 1
+        },
+        "selfPercent": 0.1482213438735178,
+        "inclusivePercent": 0.1482213438735178
+      },
+      {
+        "functionName": "dist",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 3,
+        "column": 65,
+        "selfSamples": 3,
+        "inclusiveSamples": 5,
+        "selfByPhase": {
+          "step-normal": 3
+        },
+        "inclusiveByPhase": {
+          "step-normal": 5
+        },
+        "selfPercent": 0.1482213438735178,
+        "inclusivePercent": 0.24703557312252963
+      },
+      {
+        "functionName": "snapshotView",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/server/index.js",
+        "line": 16,
+        "column": 29,
+        "selfSamples": 2,
+        "inclusiveSamples": 266,
+        "selfByPhase": {
+          "snapshot-view-json": 2
+        },
+        "inclusiveByPhase": {
+          "snapshot-view-json": 266
+        },
+        "selfPercent": 0.09881422924901186,
+        "inclusivePercent": 13.142292490118576
+      },
+      {
+        "functionName": "contactCandidates",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 115,
+        "column": 27,
+        "selfSamples": 2,
+        "inclusiveSamples": 5,
+        "selfByPhase": {
+          "step-normal": 1,
+          "step-periodic-ai": 1
+        },
+        "inclusiveByPhase": {
+          "step-normal": 4,
+          "step-periodic-ai": 1
+        },
+        "selfPercent": 0.09881422924901186,
+        "inclusivePercent": 0.24703557312252963
+      },
+      {
+        "functionName": "resolveAttack",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 246,
+        "column": 23,
+        "selfSamples": 2,
+        "inclusiveSamples": 3,
+        "selfByPhase": {
+          "step-normal": 2
+        },
+        "inclusiveByPhase": {
+          "step-normal": 3
+        },
+        "selfPercent": 0.09881422924901186,
+        "inclusivePercent": 0.1482213438735178
+      },
+      {
+        "functionName": "navalSortie",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 312,
+        "column": 21,
+        "selfSamples": 2,
+        "inclusiveSamples": 2,
+        "selfByPhase": {
+          "step-periodic-ai": 2
+        },
+        "inclusiveByPhase": {
+          "step-periodic-ai": 2
+        },
+        "selfPercent": 0.09881422924901186,
+        "inclusivePercent": 0.09881422924901186
+      },
+      {
+        "functionName": "visibleVillagerAction",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/visible-action.js",
+        "line": 2,
+        "column": 38,
+        "selfSamples": 2,
+        "inclusiveSamples": 3,
+        "selfByPhase": {
+          "snapshot-view-json": 2
+        },
+        "inclusiveByPhase": {
+          "snapshot-view-json": 3
+        },
+        "selfPercent": 0.09881422924901186,
+        "inclusivePercent": 0.1482213438735178
+      },
+      {
+        "functionName": "sq",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 3,
+        "column": 26,
+        "selfSamples": 2,
+        "inclusiveSamples": 2,
+        "selfByPhase": {
+          "step-normal": 2
+        },
+        "inclusiveByPhase": {
+          "step-normal": 2
+        },
+        "selfPercent": 0.09881422924901186,
+        "inclusivePercent": 0.09881422924901186
+      },
+      {
+        "functionName": "post",
+        "url": "node:inspector",
+        "line": 115,
+        "column": 7,
+        "selfSamples": 1,
+        "inclusiveSamples": 1,
+        "selfByPhase": {
+          "inspector-or-other": 1
+        },
+        "inclusiveByPhase": {
+          "inspector-or-other": 1
+        },
+        "selfPercent": 0.04940711462450593,
+        "inclusivePercent": 0.04940711462450593
+      },
+      {
+        "functionName": "us",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/profile-simulation.mjs",
+        "line": 13,
+        "column": 74,
+        "selfSamples": 1,
+        "inclusiveSamples": 2,
+        "selfByPhase": {
+          "snapshot-view-json": 1
+        },
+        "inclusiveByPhase": {
+          "snapshot-view-json": 1,
+          "inspector-or-other": 1
+        },
+        "selfPercent": 0.04940711462450593,
+        "inclusivePercent": 0.09881422924901186
+      },
+      {
+        "functionName": "now",
+        "url": "node:internal/perf/performance",
+        "line": 137,
+        "column": 6,
+        "selfSamples": 1,
+        "inclusiveSamples": 1,
+        "selfByPhase": {
+          "inspector-or-other": 1
+        },
+        "inclusiveByPhase": {
+          "inspector-or-other": 1
+        },
+        "selfPercent": 0.04940711462450593,
+        "inclusivePercent": 0.04940711462450593
+      },
+      {
+        "functionName": "(anonymous)",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 126,
+        "column": 39,
+        "selfSamples": 1,
+        "inclusiveSamples": 1,
+        "selfByPhase": {
+          "step-normal": 1
+        },
+        "inclusiveByPhase": {
+          "step-normal": 1
+        },
+        "selfPercent": 0.04940711462450593,
+        "inclusivePercent": 0.04940711462450593
+      },
+      {
+        "functionName": "(anonymous)",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/visible-action.js",
+        "line": 8,
+        "column": 95,
+        "selfSamples": 1,
+        "inclusiveSamples": 1,
+        "selfByPhase": {
+          "snapshot-view-json": 1
+        },
+        "inclusiveByPhase": {
+          "snapshot-view-json": 1
+        },
+        "selfPercent": 0.04940711462450593,
+        "inclusivePercent": 0.04940711462450593
+      },
+      {
+        "functionName": "tickBuilding",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 286,
+        "column": 22,
+        "selfSamples": 1,
+        "inclusiveSamples": 1,
+        "selfByPhase": {
+          "step-normal": 1
+        },
+        "inclusiveByPhase": {
+          "step-normal": 1
+        },
+        "selfPercent": 0.04940711462450593,
+        "inclusivePercent": 0.04940711462450593
+      },
+      {
+        "functionName": "(anonymous)",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 296,
+        "column": 209,
+        "selfSamples": 1,
+        "inclusiveSamples": 5,
+        "selfByPhase": {
+          "step-normal": 1
+        },
+        "inclusiveByPhase": {
+          "step-normal": 5
+        },
+        "selfPercent": 0.04940711462450593,
+        "inclusivePercent": 0.24703557312252963
+      },
+      {
+        "functionName": "placement",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 154,
+        "column": 19,
+        "selfSamples": 1,
+        "inclusiveSamples": 1,
+        "selfByPhase": {
+          "step-periodic-ai": 1
+        },
+        "inclusiveByPhase": {
+          "step-periodic-ai": 1
+        },
+        "selfPercent": 0.04940711462450593,
+        "inclusivePercent": 0.04940711462450593
+      },
+      {
+        "functionName": "hrtimeBigInt",
+        "url": "",
+        "line": null,
+        "column": null,
+        "selfSamples": 1,
+        "inclusiveSamples": 1,
+        "selfByPhase": {
+          "inspector-or-other": 1
+        },
+        "inclusiveByPhase": {
+          "inspector-or-other": 1
+        },
+        "selfPercent": 0.04940711462450593,
+        "inclusivePercent": 0.04940711462450593
+      },
+      {
+        "functionName": "(anonymous)",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/profile-simulation.mjs",
+        "line": 34,
+        "column": 171,
+        "selfSamples": 0,
+        "inclusiveSamples": 1,
+        "selfByPhase": {},
+        "inclusiveByPhase": {
+          "inspector-or-other": 1
+        },
+        "selfPercent": 0,
+        "inclusivePercent": 0.04940711462450593
+      },
+      {
+        "functionName": "post",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/profile-simulation.mjs",
+        "line": 34,
+        "column": 139,
+        "selfSamples": 0,
+        "inclusiveSamples": 1,
+        "selfByPhase": {},
+        "inclusiveByPhase": {
+          "inspector-or-other": 1
+        },
+        "selfPercent": 0,
+        "inclusivePercent": 0.04940711462450593
+      },
+      {
+        "functionName": "(root)",
+        "url": "",
+        "line": null,
+        "column": null,
+        "selfSamples": 0,
+        "inclusiveSamples": 2024,
+        "selfByPhase": {},
+        "inclusiveByPhase": {
+          "inspector-or-other": 5,
+          "step-normal": 1616,
+          "snapshot-view-json": 342,
+          "step-periodic-ai": 61
+        },
+        "selfPercent": 0,
+        "inclusivePercent": 100
+      },
+      {
+        "functionName": "attack",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 225,
+        "column": 16,
+        "selfSamples": 0,
+        "inclusiveSamples": 26,
+        "selfByPhase": {},
+        "inclusiveByPhase": {
+          "step-normal": 26
+        },
+        "selfPercent": 0,
+        "inclusivePercent": 1.284584980237154
+      },
+      {
+        "functionName": "transfer",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 269,
+        "column": 18,
+        "selfSamples": 0,
+        "inclusiveSamples": 71,
+        "selfByPhase": {},
+        "inclusiveByPhase": {
+          "step-normal": 71
+        },
+        "selfPercent": 0,
+        "inclusivePercent": 3.507905138339921
+      },
+      {
+        "functionName": "ai",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 351,
+        "column": 12,
+        "selfSamples": 0,
+        "inclusiveSamples": 34,
+        "selfByPhase": {},
+        "inclusiveByPhase": {
+          "step-periodic-ai": 34
+        },
+        "selfPercent": 0,
+        "inclusivePercent": 1.6798418972332017
+      },
+      {
+        "functionName": "check",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/profile-simulation.mjs",
+        "line": 31,
+        "column": 63,
+        "selfSamples": 0,
+        "inclusiveSamples": 1,
+        "selfByPhase": {},
+        "inclusiveByPhase": {
+          "inspector-or-other": 1
+        },
+        "selfPercent": 0,
+        "inclusivePercent": 0.04940711462450593
+      },
+      {
+        "functionName": "(anonymous)",
+        "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+        "line": 396,
+        "column": 294,
+        "selfSamples": 0,
+        "inclusiveSamples": 1,
+        "selfByPhase": {},
+        "inclusiveByPhase": {
+          "snapshot-view-json": 1
+        },
+        "selfPercent": 0,
+        "inclusivePercent": 0.04940711462450593
+      }
+    ]
+  },
+  "limitations": [
+    "Profiler is OFF during all90-second preparation and warmup.",
+    "Nonexclusive CPU, synchronized world phases, sampler overhead and short finite workload; not online headroom failure/PASS.",
+    "Only built-in player1 AI; online human-vs-human has no AI.",
+    "No minted resources/units, external gameplay commands, service/network/compression/send queues, browser, build or optimization.",
+    "step-periodic-ai labels epochs due for normal AI cadence45; they include the whole step, not only ai(). Inclusive stack samples identify actual ai() ancestry."
+  ]
+}

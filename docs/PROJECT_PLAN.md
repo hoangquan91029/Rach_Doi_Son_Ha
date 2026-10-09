@@ -2,6 +2,8 @@
 
 Cập nhật ngày 2026-10-10, múi giờ Asia/Ho_Chi_Minh. **Trạng thái: INCOMPLETE.** Đây là kế hoạch hiện hành cho toàn dự án; `NEXT_STEPS.md` chỉ giữ hàng đợi gần nhất. Hồ sơ cũ được giữ nguyên byte tại `docs/audit/2026-10-09/history/`.
 
+Latest execution181 ở mục15 thay các next-step lịch sử169–173; source/receipt cũ giữ nguyên.
+
 ## 1. Mục tiêu và cách đọc kết quả
 
 Người dùng nhận **một URL HTTPS**, mở trình duyệt desktop mà không cần cài đặt, rồi chơi trọn Single Player với AI hoặc Online đúng 1v1 trên cả hai map. Tất cả yêu cầu master, web, lịch sử, visual và các section 81–145 vẫn áp dụng, theo những điều chỉnh mới nhất của người dùng.
@@ -150,3 +152,13 @@ G01:169 sửa own-depthlane ankle trajectory bằng completeoriginal rough drawi
 T01:170 có sharedruntime route registry,9legacyrecipes/28deduplicated definitions và deterministiccompiler ra standalone manifests/bankdependencies.33focused/18Nodefollowup và stagedChrome/Firefox UI scope PASS; runtime vẫn dùng full legacyroute manifests, dynamicbank lifecycle và default acceptedrelease còn mở. Không dùng compiledcandidate thay acceptance hoặc fullcoverage.
 
 Q01:171 baseline bounded đo actualstep/normalAI và exactserver compactview+JSON,1/5/8world trên2map sau90simseconds normalgrowth.39units/world; step/AI tail lớn hơn serialization,5/8world workload có tickcost đáng profile. Không exclusiveCPU/liveonline/sendqueues/browser/densearmy test; đây là bottleneck direction, không headroom verdict hoặc balancechange. Profile trước optimization và đo actualbrowser/roomworkloads tiếp.
+
+## 15. Cập nhật174–181 hiện hành
+
+G01:174/178 externalreference retrievals fail, không visuallyqualifiedphoto.179 originalwholetonal rough vẫn chưaqualifiedpassing;180 sửa hai completeposes, bỏ quy tắc ép ankleahead-idle và làm rõ lowerlegfold/weight-bearing support.181 ONEbuiltin/0retry giữ realisticcanonical body và chân gập rõ nhưng footlift cao/back: candidate, chưafinalF6/loop/runtime. Next là finitewholeposecorrection của visibledefect rồi completekeys/inbetweens/briefloop/actualD0travel; không auditmicroanatomy/retryunchangedprompt hoặc fanout. [181rootintake](art/pipeline/villager-walk-D0-capability-181/root-intake.json) và activegraphicsplan govern.
+
+T01/R01:175dynamicmenu/match banks cài local, uses shared170selection/alllegalroster+buildings/bothleaderfamilies/shadowclosure. Encodedhashbytes giữ offline; decoded/private/terrain refs giải phóng khi menu. Prior1fc4… build có27contracts +normalChrome/Firefoxofflinebothmaps/online2peerreload/newroom; final007f… completion có28contracts +actualChromium decoderfaultfailuregate/Retry/lateststate/menu. Không gọi broadproof của chunk cũ là proof chunk mới. Completedcombatrematch/defaultacceptedrelease/fullcoverage còn mở;175builds loại177.
+
+Q01:1762024samples phân biệt actualAI1.68% với navigationnormalstep tail.177 query-local exactcell-pass memo preservesterrain/owner/gate/corners/fractionalground/crowd/ties/range/retry/speed;82contractsPASS inclpairedstatehash/AI/naval. One matchedunprofiledDelta5 diagnostic p95step52.934→11.924ms nhưngmax≈64ms còn, nonexclusive/order caveats. Localoptimization accepted; không productioncapacity hoặc mergedbrowseracceptance. Nextmerged175/177 exactstagedsource/build/relevantUI intake trước promotion, không repeatbaseline/profile.
+
+Public149179files/service157023 giữ nguyên. Broadcompletedmatch089/090 evidence scope vẫn giữ; currentlocalchanges không public. Allworkers/calls terminal tại checkpoint, history173entrypoints riêng; futureworker inspect live receipts, do not duplicate calls. Fullmaster/web/historical/visual/81–145 vẫn INCOMPLETE.

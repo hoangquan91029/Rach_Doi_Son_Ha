@@ -1,0 +1,307 @@
+{
+  "preparationMs": 14844.259489,
+  "measuredEpochs": 200,
+  "totalSamples": 2024,
+  "samplePhases": {
+    "inspector-or-other": 5,
+    "step-normal": 1616,
+    "snapshot-view-json": 342,
+    "step-periodic-ai": 61
+  },
+  "topSelf": [
+    {
+      "functionName": "updateFog",
+      "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+      "line": 147,
+      "column": 19,
+      "selfSamples": 476,
+      "inclusiveSamples": 511,
+      "selfByPhase": {
+        "step-normal": 404,
+        "snapshot-view-json": 62,
+        "step-periodic-ai": 10
+      },
+      "inclusiveByPhase": {
+        "step-normal": 435,
+        "snapshot-view-json": 65,
+        "step-periodic-ai": 11
+      },
+      "selfPercent": 23.51778656126482,
+      "inclusivePercent": 25.24703557312253
+    },
+    {
+      "functionName": "step",
+      "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+      "line": 385,
+      "column": 21,
+      "selfSamples": 257,
+      "inclusiveSamples": 1638,
+      "selfByPhase": {
+        "step-normal": 255,
+        "step-periodic-ai": 2
+      },
+      "inclusiveByPhase": {
+        "step-normal": 1577,
+        "step-periodic-ai": 61
+      },
+      "selfPercent": 12.697628458498023,
+      "inclusivePercent": 80.92885375494072
+    },
+    {
+      "functionName": "view",
+      "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+      "line": 395,
+      "column": 21,
+      "selfSamples": 192,
+      "inclusiveSamples": 264,
+      "selfByPhase": {
+        "snapshot-view-json": 192
+      },
+      "inclusiveByPhase": {
+        "snapshot-view-json": 264
+      },
+      "selfPercent": 9.486166007905139,
+      "inclusivePercent": 13.043478260869565
+    },
+    {
+      "functionName": "navigationStep",
+      "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+      "line": 72,
+      "column": 24,
+      "selfSamples": 144,
+      "inclusiveSamples": 286,
+      "selfByPhase": {
+        "step-normal": 129,
+        "step-periodic-ai": 15
+      },
+      "inclusiveByPhase": {
+        "step-normal": 263,
+        "step-periodic-ai": 23
+      },
+      "selfPercent": 7.1146245059288535,
+      "inclusivePercent": 14.130434782608695
+    },
+    {
+      "functionName": "travel",
+      "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+      "line": 132,
+      "column": 16,
+      "selfSamples": 139,
+      "inclusiveSamples": 795,
+      "selfByPhase": {
+        "step-normal": 138,
+        "step-periodic-ai": 1
+      },
+      "inclusiveByPhase": {
+        "step-normal": 787,
+        "step-periodic-ai": 8
+      },
+      "selfPercent": 6.867588932806324,
+      "inclusivePercent": 39.27865612648221
+    },
+    {
+      "functionName": "crowdSweep",
+      "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+      "line": 106,
+      "column": 20,
+      "selfSamples": 134,
+      "inclusiveSamples": 205,
+      "selfByPhase": {
+        "step-normal": 131,
+        "step-periodic-ai": 3
+      },
+      "inclusiveByPhase": {
+        "step-normal": 201,
+        "step-periodic-ai": 4
+      },
+      "selfPercent": 6.620553359683795,
+      "inclusivePercent": 10.128458498023715
+    },
+    {
+      "functionName": "path",
+      "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+      "line": 81,
+      "column": 14,
+      "selfSamples": 98,
+      "inclusiveSamples": 367,
+      "selfByPhase": {
+        "step-normal": 94,
+        "step-periodic-ai": 4
+      },
+      "inclusiveByPhase": {
+        "step-normal": 340,
+        "step-periodic-ai": 27
+      },
+      "selfPercent": 4.841897233201581,
+      "inclusivePercent": 18.132411067193676
+    },
+    {
+      "functionName": "pass",
+      "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+      "line": 70,
+      "column": 14,
+      "selfSamples": 98,
+      "inclusiveSamples": 152,
+      "selfByPhase": {
+        "step-normal": 93,
+        "step-periodic-ai": 5
+      },
+      "inclusiveByPhase": {
+        "step-normal": 144,
+        "step-periodic-ai": 8
+      },
+      "selfPercent": 4.841897233201581,
+      "inclusivePercent": 7.509881422924901
+    }
+  ],
+  "topInclusive": [
+    {
+      "functionName": "(root)",
+      "url": "",
+      "line": null,
+      "column": null,
+      "selfSamples": 0,
+      "inclusiveSamples": 2024,
+      "selfByPhase": {},
+      "inclusiveByPhase": {
+        "inspector-or-other": 5,
+        "step-normal": 1616,
+        "snapshot-view-json": 342,
+        "step-periodic-ai": 61
+      },
+      "selfPercent": 0,
+      "inclusivePercent": 100
+    },
+    {
+      "functionName": "main",
+      "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/profile-simulation.mjs",
+      "line": 27,
+      "column": 20,
+      "selfSamples": 89,
+      "inclusiveSamples": 1997,
+      "selfByPhase": {
+        "snapshot-view-json": 73,
+        "step-normal": 15,
+        "inspector-or-other": 1
+      },
+      "inclusiveByPhase": {
+        "inspector-or-other": 4,
+        "step-normal": 1592,
+        "snapshot-view-json": 340,
+        "step-periodic-ai": 61
+      },
+      "selfPercent": 4.397233201581027,
+      "inclusivePercent": 98.66600790513834
+    },
+    {
+      "functionName": "step",
+      "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+      "line": 385,
+      "column": 21,
+      "selfSamples": 257,
+      "inclusiveSamples": 1638,
+      "selfByPhase": {
+        "step-normal": 255,
+        "step-periodic-ai": 2
+      },
+      "inclusiveByPhase": {
+        "step-normal": 1577,
+        "step-periodic-ai": 61
+      },
+      "selfPercent": 12.697628458498023,
+      "inclusivePercent": 80.92885375494072
+    },
+    {
+      "functionName": "tickUnit",
+      "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+      "line": 292,
+      "column": 18,
+      "selfSamples": 59,
+      "inclusiveSamples": 897,
+      "selfByPhase": {
+        "step-normal": 55,
+        "step-periodic-ai": 4
+      },
+      "inclusiveByPhase": {
+        "step-normal": 883,
+        "step-periodic-ai": 14
+      },
+      "selfPercent": 2.9150197628458496,
+      "inclusivePercent": 44.31818181818182
+    },
+    {
+      "functionName": "travel",
+      "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+      "line": 132,
+      "column": 16,
+      "selfSamples": 139,
+      "inclusiveSamples": 795,
+      "selfByPhase": {
+        "step-normal": 138,
+        "step-periodic-ai": 1
+      },
+      "inclusiveByPhase": {
+        "step-normal": 787,
+        "step-periodic-ai": 8
+      },
+      "selfPercent": 6.867588932806324,
+      "inclusivePercent": 39.27865612648221
+    },
+    {
+      "functionName": "updateFog",
+      "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+      "line": 147,
+      "column": 19,
+      "selfSamples": 476,
+      "inclusiveSamples": 511,
+      "selfByPhase": {
+        "step-normal": 404,
+        "snapshot-view-json": 62,
+        "step-periodic-ai": 10
+      },
+      "inclusiveByPhase": {
+        "step-normal": 435,
+        "snapshot-view-json": 65,
+        "step-periodic-ai": 11
+      },
+      "selfPercent": 23.51778656126482,
+      "inclusivePercent": 25.24703557312253
+    },
+    {
+      "functionName": "path",
+      "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+      "line": 81,
+      "column": 14,
+      "selfSamples": 98,
+      "inclusiveSamples": 367,
+      "selfByPhase": {
+        "step-normal": 94,
+        "step-periodic-ai": 4
+      },
+      "inclusiveByPhase": {
+        "step-normal": 340,
+        "step-periodic-ai": 27
+      },
+      "selfPercent": 4.841897233201581,
+      "inclusivePercent": 18.132411067193676
+    },
+    {
+      "functionName": "navigationStep",
+      "url": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+      "line": 72,
+      "column": 24,
+      "selfSamples": 144,
+      "inclusiveSamples": 286,
+      "selfByPhase": {
+        "step-normal": 129,
+        "step-periodic-ai": 15
+      },
+      "inclusiveByPhase": {
+        "step-normal": 263,
+        "step-periodic-ai": 23
+      },
+      "selfPercent": 7.1146245059288535,
+      "inclusivePercent": 14.130434782608695
+    }
+  ]
+}

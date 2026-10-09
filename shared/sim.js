@@ -81,14 +81,16 @@ function groundSegment(s,e,from,to){
 function path(s,e,target,range=0.4,finalGround=false){
  const w=s.map.width,h=s.map.height,sx=Math.floor(e.x),sy=Math.floor(e.y),start=sy*w+sx;
  const parents=new Int32Array(w*h).fill(-2),costs=new Float64Array(w*h).fill(Infinity),heap=[];let serial=0;
+ // Per-query memo preserves exact cell-center predicates; fractional guards remain uncached.
+ const passMemo=new Uint8Array(w*h),cellPass=(x,y)=>{if(x<0||y<0||x>=w||y>=h)return false;const i=y*w+x;if(!passMemo[i])passMemo[i]=pass(s,e,x+0.5,y+0.5)?2:1;return passMemo[i]===2;};
  const before=(a,b)=>a.cost<b.cost||a.cost===b.cost&&a.order<b.order;
  const push=(i,cost)=>{const node={i,cost,order:serial++};let n=heap.length;heap.push(node);while(n){const p=(n-1)>>1;if(!before(node,heap[p]))break;heap[n]=heap[p];n=p;}heap[n]=node;};
  const pop=()=>{const first=heap[0],last=heap.pop();if(heap.length){let n=0;while(n*2+1<heap.length){let c=n*2+1;if(c+1<heap.length&&before(heap[c+1],heap[c]))c++;if(!before(heap[c],last))break;heap[n]=heap[c];n=c;}heap[n]=last;}return first;};
  costs[start]=0;parents[start]=-1;push(start,0);let found=-1,best=start,bestD=Infinity;
  // Fixed neighbor order and insertion ties make equal-cost routes reproducible.
  const neighbors=[[1,0],[0,1],[-1,0],[0,-1],[1,1],[-1,1],[-1,-1],[1,-1]];
- while(heap.length){const {i,cost}=pop();if(cost!==costs[i])continue;const x=i%w,y=Math.floor(i/w),dd=(x+0.5-target.x)**2+(y+0.5-target.y)**2;if(dd<bestD){bestD=dd;best=i;}if((dd<=range**2&&pass(s,e,x+0.5,y+0.5))||(finalGround&&x===Math.floor(target.x)&&y===Math.floor(target.y)&&groundSegment(s,e,{x:x+0.5,y:y+0.5},target))){found=i;break;}
-  for(const [dx,dy] of neighbors){const xx=x+dx,yy=y+dy,j=yy*w+xx;if(xx<0||yy<0||xx>=w||yy>=h||!navigationStep(s,e,x+0.5,y+0.5,xx+0.5,yy+0.5))continue;const nextCost=cost+(dx&&dy?Math.SQRT2:1);if(nextCost>=costs[j])continue;costs[j]=nextCost;parents[j]=i;push(j,nextCost);}
+ while(heap.length){const {i,cost}=pop();if(cost!==costs[i])continue;const x=i%w,y=Math.floor(i/w),dd=(x+0.5-target.x)**2+(y+0.5-target.y)**2;if(dd<bestD){bestD=dd;best=i;}if((dd<=range**2&&cellPass(x,y))||(finalGround&&x===Math.floor(target.x)&&y===Math.floor(target.y)&&groundSegment(s,e,{x:x+0.5,y:y+0.5},target))){found=i;break;}
+  for(const [dx,dy] of neighbors){const xx=x+dx,yy=y+dy,j=yy*w+xx;if(xx<0||yy<0||xx>=w||yy>=h||!(cellPass(xx,yy)&&(!dx||!dy||cellPass(xx,y)&&cellPass(x,yy))))continue;const nextCost=cost+(dx&&dy?Math.SQRT2:1);if(nextCost>=costs[j])continue;costs[j]=nextCost;parents[j]=i;push(j,nextCost);}
  }
  if(found<0)found=best;const result=[];for(let i=found;i!==start&&i>=0;i=parents[i])result.push({x:i%w+0.5,y:Math.floor(i/w)+0.5});result.reverse();if(finalGround){const end={x:found%w+0.5,y:Math.floor(found/w)+0.5};if(dist(end,target)>range&&Math.floor(end.x)===Math.floor(target.x)&&Math.floor(end.y)===Math.floor(target.y)&&groundSegment(s,e,end,target))result.push({x:target.x,y:target.y,finalGround:true});}return result;
 }

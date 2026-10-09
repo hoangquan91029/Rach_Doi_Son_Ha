@@ -1,0 +1,26 @@
+✔ legacy pilot compilation preserves exact header/order/whole entries (5.998663ms)
+✔ legacy walk compilation preserves exact header/order/whole entries (3.46199ms)
+✔ legacy work compilation preserves exact header/order/whole entries (3.703688ms)
+✔ legacy food compilation preserves exact header/order/whole entries (3.68454ms)
+✔ legacy terrain compilation preserves exact header/order/whole entries (4.398449ms)
+✔ legacy iron compilation preserves exact header/order/whole entries (4.632328ms)
+✔ legacy workshop compilation preserves exact header/order/whole entries (4.540962ms)
+✔ legacy camp compilation preserves exact header/order/whole entries (4.857641ms)
+✔ legacy shipyard compilation preserves exact header/order/whole entries (4.95053ms)
+✔ shared route registry keeps default and unknown disabled and exact world opt-ins (0.44839ms)
+✔ scoped bank retains world, desired building/body/portrait and separate-shadow dependency only (1.175324ms)
+✔ catalog deduplicates definitions, recipes deduplicate bank IDs, runtime variants stay distinct (1.077765ms)
+✔ missing requested family remains explicit fallback and cannot be a release scope (1.300962ms)
+✔ invalid scopes and recipe/dependency corruption are rejected (1.051185ms)
+✔ conflicting IDs, unsafe runtime/source paths and missing hashes fail before compilation (4.155416ms)
+✔ owner naturalness evidence remains shown-loop evidence and cannot approve release (4.247947ms)
+✔ release evidence must bind exact entry and runtime hashes even for synthetic approved metadata (1.450093ms)
+✔ CLI emits a loader-ready standalone manifest and requires its route (99.595131ms)
+ℹ tests 18
+ℹ suites 0
+ℹ pass 18
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 230.581095
