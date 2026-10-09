@@ -1,0 +1,9 @@
+# 103 — actual UI prerequisite HOLD; no repeated attempt
+
+Root authorized one new ordinaryUI contact approach under exactSol6.1Low, preserving099. Exact corrected099isolatedstage/bundle/manifest/assets reused; no source/art/simulation/build/canonical/public/service/topdoc/commit changes. Parent sourcecandidate intake only; continuousmotion/ownerfeedback remains open.
+
+ONE actualChrome offline-before-setup Delta session loads18unique/12portraits/RGBA15,631,872/reserved0/failed0/errors0/networkerrors0. Exactownlivevillager7 normalNWstaging then second intendedgroundcontact rightclick. Required actualMOVE guard fails: UI submitted gather, never accepted as imaginarymovement. Workeractual10.4690307/19.5309693,dir7,foodgatherepisode282/cargo6.9 atfailure. Noall8/anchor/pause/resume/stop/restart/ordinaryloadedreturn PASS; stop/cleanup rooms0/listeningfalse/browserclosed. ActualfailurePNG/privateview/rawsamples/video retained.
+
+Confirmed source blocker `client/main.js:77`: issueAt roundscoordinates, handles enemy/repair/resource before app.orderMode; resource within1.6 of roundedtarget becomes gather. Requested10.25/18.25 becomes10/18 and isnearfood10.5/18.5, so it cannot issue an explicitMOVE using existingUI. Parent warned after attemptalreadyrunning; it was terminal/cleaned when warning read. No retry/injectedcommand/heading/phase/assertionweakening. Previous099failedapproach remains preserved.
+
+Next root-delegated feature is actual explicitMoveUI (M/button) that overrides proximitycontext, with attackMove priority corrected similarly. No such feature implemented here. Future ordinaryUI action must verify actualissuedendpoint and legalcontact/trueD1; Math.round also invalidates distance guarantees derived from unroundedrequestedpoint. Keep originalnormalMOVE0.7 andfood1.1 ranges, actualbody/terrain checks. This is a real missing UI order contract, not art/simulation failure. Wait separately tested candidate and newfinite runtime order.

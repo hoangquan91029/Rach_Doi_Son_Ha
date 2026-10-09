@@ -1,0 +1,179 @@
+{
+  "publicJS": {
+    "path": "/assets/index-BLdPSJwj.js",
+    "sha256": "583464ffd814c3fe8650d1247a5c4df93562421ca819fb4bf54926a28a9b180a"
+  },
+  "old097StillServed": "e2645a906c9bcceaf0a0882afe9701f6bffaf225d38375e45ebdb7965f3e9d63",
+  "old088StillServed": "f85cdd520aa1fc133fe98eb2542a917600206fa27fa9dd16ca1e591fef3ea3e7",
+  "workManifestSHA": "377d433dbdd2050564131f6ea7e67e14f65a749069cf2500bc46b54039e3471f",
+  "defaultManifestSHA": "4fda8d2ec7f6bb4690a36644bacf2e222b722091905f9cfcc904295fa4e59814",
+  "files": {
+    "dist097-pins.json": "14caa4626875fe01730cac827ae8b0f60c3a03faf1efc21c40a22352582efacd",
+    "chromium-receipt.json": "73c853d3065a43e9a5064b04dc6952095e9e0800bf9441c8a92cc06588c66ac7",
+    "firefox-check.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "service-after.txt": "d34366c9a965d5a5e13bbfbf3e4c61c0631eb6226900aa99dd5a375ac43bbb6f",
+    "service-before.txt": "d34366c9a965d5a5e13bbfbf3e4c61c0631eb6226900aa99dd5a375ac43bbb6f",
+    "source-bindings.json": "ee8515daf5d7105513c349e7ce7c955b251cbef6c418a9ca61d190cfbef358ec",
+    "chromium-check.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "promote.py": "0d7e9cc565342be417a27084c5fccd648c690fb70e106792aee36c487fa1dd70",
+    "firefox-paused.png": "2d4457d342bcf503c96e1abc10e43877f1dc6bf9c10c02db6278f1372555eb32",
+    "promotion.log": "2d7c4b73fdb43f80fb6e5ca1567bc72b524ed4576ec7ff0d8bbc116518009ef2",
+    "verify.mjs": "488634bfda2d03b2ca2707a94c4c5fa5796e32499e96bd589cb0001d0133d74d",
+    "chromium-paused.png": "c7426e1664a26aaf5fbd772ada7328515aa51bb2ddf763652d08a927a3c3a806",
+    "firefox-receipt.json": "d1d1efbad29c8d20d00e492e97946644d679ab8c478f75d859a0f35fcc7a37b9",
+    "promotion-receipt.json": "36cb91c57b263a6d1ddd7568a8d57c558d47a3fee5e929042f9df1f203606981",
+    "__pycache__/promote.cpython-314.pyc": "66024c982d9dcac50106ee9ef7d605b3e80bef73e0a0f0f7b30842acaf54ea8d"
+  },
+  "testedStageSource": {
+    "rows": [
+      {
+        "path": "client/action-presentation.js",
+        "104stage": "8fc0e29f24a4fab4ce9746b75079bc4523a246498d6b2426b1b5cba673e5c3fb",
+        "097stage": "8fc0e29f24a4fab4ce9746b75079bc4523a246498d6b2426b1b5cba673e5c3fb",
+        "change": "unchanged"
+      },
+      {
+        "path": "client/art-assets.js",
+        "104stage": "a4bc6132fe8f3ab7fbba5f9c0d4519e1d50f545e7ff1d66e8ab43cccd6df34a2",
+        "097stage": "a4bc6132fe8f3ab7fbba5f9c0d4519e1d50f545e7ff1d66e8ab43cccd6df34a2",
+        "change": "unchanged"
+      },
+      {
+        "path": "client/boot-ui-assets.js",
+        "104stage": "c8c064a2fda4fe344b16d4ba9305757b1f4adcd1079d490322b4eb345c15ee83",
+        "097stage": "c8c064a2fda4fe344b16d4ba9305757b1f4adcd1079d490322b4eb345c15ee83",
+        "change": "unchanged"
+      },
+      {
+        "path": "client/loading-deadline.js",
+        "104stage": "028833cf2f591a9065c24bbf3ac956a16293fa37231d84cc782f074b4c1e4228",
+        "097stage": "028833cf2f591a9065c24bbf3ac956a16293fa37231d84cc782f074b4c1e4228",
+        "change": "unchanged"
+      },
+      {
+        "path": "client/locomotion-phase.js",
+        "104stage": "ce0d164b1b044f2621068943c26556ef8f5d2228ab0bc4570f12d02cd99cf39a",
+        "097stage": "ce0d164b1b044f2621068943c26556ef8f5d2228ab0bc4570f12d02cd99cf39a",
+        "change": "unchanged"
+      },
+      {
+        "path": "client/main.js",
+        "104stage": "10a7332f5de111efd668230277b39ed63308dafb75556b26b71f0b9dd13fc122",
+        "097stage": "504528ad8ec8312d024b7756a2bd638ad64fdc37007d0f3b8b9441d84dfd05ba",
+        "change": "explicit-ground-ui"
+      },
+      {
+        "path": "client/presentation.js",
+        "104stage": "cbcb6c79ec4d830b39fb8d0ba3110fe10bcffb23937659fe4634f96950aa80b5",
+        "097stage": "cbcb6c79ec4d830b39fb8d0ba3110fe10bcffb23937659fe4634f96950aa80b5",
+        "change": "unchanged"
+      },
+      {
+        "path": "client/raster-slice.js",
+        "104stage": "42d43adbb55a4ebb15e333d4c9cd2f93e829aaab8e7374d8f4665fdb04cfe03b",
+        "097stage": "42d43adbb55a4ebb15e333d4c9cd2f93e829aaab8e7374d8f4665fdb04cfe03b",
+        "change": "unchanged"
+      },
+      {
+        "path": "client/renderer.js",
+        "104stage": "18ec0bc5b3c343f79a5b46585cf9b944fa4739eb3a52b4290d91bd78cca2b423",
+        "097stage": "18ec0bc5b3c343f79a5b46585cf9b944fa4739eb3a52b4290d91bd78cca2b423",
+        "change": "unchanged"
+      },
+      {
+        "path": "client/selection-state.js",
+        "104stage": "fcb99bac916ec6f0bbba3543e0236ffdd24f0cbd6bf5f9a81d004340b9c788ca",
+        "097stage": "fcb99bac916ec6f0bbba3543e0236ffdd24f0cbd6bf5f9a81d004340b9c788ca",
+        "change": "unchanged"
+      },
+      {
+        "path": "client/sprite-timing.js",
+        "104stage": "d567ca4060bd9a0689ed9aae1ba00b6a776c8699c2c0c2b168b09ef951a6aad9",
+        "097stage": "d567ca4060bd9a0689ed9aae1ba00b6a776c8699c2c0c2b168b09ef951a6aad9",
+        "change": "unchanged"
+      },
+      {
+        "path": "client/style.css",
+        "104stage": "1eedc34ad172648d57801577254bf40fe1600f2d0c3250160674797b87b7f7bc",
+        "097stage": "1eedc34ad172648d57801577254bf40fe1600f2d0c3250160674797b87b7f7bc",
+        "change": "unchanged"
+      },
+      {
+        "path": "client/terrain-cache.js",
+        "104stage": "782b2d94f167ddf6040085d0e9ebd40915e39ea4a429d5c9b9ff80582fe5eb52",
+        "097stage": "782b2d94f167ddf6040085d0e9ebd40915e39ea4a429d5c9b9ff80582fe5eb52",
+        "change": "unchanged"
+      },
+      {
+        "path": "client/terrain-transitions.js",
+        "104stage": "34b249f8032f97190f6c1a28373404558394b4ddc7de7bdfbc5321a056ee7bc9",
+        "097stage": "34b249f8032f97190f6c1a28373404558394b4ddc7de7bdfbc5321a056ee7bc9",
+        "change": "unchanged"
+      },
+      {
+        "path": "client/visual-picking.js",
+        "104stage": "e5b319895010fc17b25eb95244f0de2f53bd3c3d7260110e051b129cf5690bd3",
+        "097stage": "e5b319895010fc17b25eb95244f0de2f53bd3c3d7260110e051b129cf5690bd3",
+        "change": "unchanged"
+      },
+      {
+        "path": "client/world-presentation.js",
+        "104stage": "9faac9d2b673571555afa17bbf608dba7179c4e7a299fc46654f05ab3b52a05e",
+        "097stage": "9faac9d2b673571555afa17bbf608dba7179c4e7a299fc46654f05ab3b52a05e",
+        "change": "unchanged"
+      },
+      {
+        "path": "shared/data.js",
+        "104stage": "ffc3f45adc58f212066d3763c591377ce15b9f6ac78e4685a95fc3ac747818e1",
+        "097stage": "ffc3f45adc58f212066d3763c591377ce15b9f6ac78e4685a95fc3ac747818e1",
+        "change": "unchanged"
+      },
+      {
+        "path": "shared/sim.js",
+        "104stage": "28e37b63ee39bbe1440741fa0afed3d9f20797831f666c0ff03d8299a8eb609c",
+        "097stage": "28e37b63ee39bbe1440741fa0afed3d9f20797831f666c0ff03d8299a8eb609c",
+        "change": "unchanged"
+      },
+      {
+        "path": "shared/visible-action.js",
+        "104stage": "380d1d29e76b004fdde29713cd2e6e87ea3cfba5f9c454fb3554a471f4a60063",
+        "097stage": "380d1d29e76b004fdde29713cd2e6e87ea3cfba5f9c454fb3554a471f4a60063",
+        "change": "unchanged"
+      },
+      {
+        "path": "server/DEPLOY.md",
+        "104stage": "a5224eb65e088eca0404ef53cc4fcc71f3334ec1696c39586546817bbae508c5",
+        "097stage": "a5224eb65e088eca0404ef53cc4fcc71f3334ec1696c39586546817bbae508c5",
+        "change": "unchanged"
+      },
+      {
+        "path": "server/Dockerfile",
+        "104stage": "5f334ec874ae18f3f9e68880bb3905841933e7f7f13cd8ee94fe7614103af59d",
+        "097stage": "5f334ec874ae18f3f9e68880bb3905841933e7f7f13cd8ee94fe7614103af59d",
+        "change": "unchanged"
+      },
+      {
+        "path": "server/benchmark-network.js",
+        "104stage": "8e6c79667f1c3a46990148c00476d202555809b2d6b117d11a3a7cbc272ea455",
+        "097stage": "8e6c79667f1c3a46990148c00476d202555809b2d6b117d11a3a7cbc272ea455",
+        "change": "unchanged"
+      },
+      {
+        "path": "server/index.js",
+        "104stage": "4e6a7e82f02d1d856f4ea788863c4836930bc00250be6a5b020ba2bdd8884198",
+        "097stage": "4e6a7e82f02d1d856f4ea788863c4836930bc00250be6a5b020ba2bdd8884198",
+        "change": "unchanged"
+      }
+    ],
+    "index104": "3621e1cd40170bd1e89b5248f6496ff3b92c760b438e592720214ea95670fcf0",
+    "bundle": {
+      "index-BLdPSJwj.js": "583464ffd814c3fe8650d1247a5c4df93562421ca819fb4bf54926a28a9b180a",
+      "index-Ct9S0o8d.css": "609eea0ea9a685c321e374d7eae66500d78b961479c48ad7889afe09a5b60bcb"
+    },
+    "stage": "/tmp/rdsh-ground104-pp32a5ji",
+    "canonicalMayIncludeConcurrentLocalFood": true
+  },
+  "localCanonicalRasterNowFood": "dad2f7c815c127b49a6833e0707d3d62f11d825335f23e071a35ffd3b3baddbd",
+  "deployed104Raster": "42d43adbb55a4ebb15e333d4c9cd2f93e829aaab8e7374d8f4665fdb04cfe03b",
+  "localCanonicalIsNotDeploymentSource": true
+}

@@ -1,0 +1,87 @@
+{
+  "status": "CANDIDATES_READY_FOR_EXPORT",
+  "frames": [
+    {
+      "frame": 0,
+      "phase": "ready",
+      "durationMs": 150,
+      "rawSha256": "fef6e2aed186dc0cc72f0e927d1c983ee92c9ffcacb7e9972b7dfa2ec40de907",
+      "rgbaSha256": "1d3dfd7fc438d93840c2bdddbd1d64fdecef6919b765e1c48dbbbfe43d1d43fd"
+    },
+    {
+      "frame": 1,
+      "phase": "lowreach dwell (parent functional reassignment; original interpolation held)",
+      "durationMs": 80,
+      "rawSha256": "c2f5c1c69771597c7e99dc839047d77c373da11856e033af11e968efe25511dc",
+      "rgbaSha256": "9bc56f7f9074cf1c4f2cf915cfab8d3e5bbed8f8133f670473cc36093af91560"
+    },
+    {
+      "frame": 2,
+      "phase": "lowreach/pick",
+      "durationMs": 180,
+      "rawSha256": "67f2a8b03a66f9b93304c670cad8e9cf998233dd06604283e20320d30d8fea81",
+      "rgbaSha256": "7476dbff600cb7ceac7ce8040d6aa3ed71e1839c30cdca9bc0a17669d2a36dd0"
+    },
+    {
+      "frame": 3,
+      "phase": "depositapproach short nearbasket dwell",
+      "durationMs": 100,
+      "rawSha256": "fac779aa26a9ce11a4c2e4ec5f4c8b8cf56948254cec6a00ba2146c7130fe83d",
+      "rgbaSha256": "76bb7c9b6f171416f2ee6f29f21f0d975d74e3ee9c6fa68af2b0f74f32af55b2"
+    },
+    {
+      "frame": 4,
+      "phase": "deposit",
+      "durationMs": 180,
+      "rawSha256": "9d181881ce4020758ca077f3a3c656ba165fc6729ceb9166d6888bd25a931329",
+      "rgbaSha256": "dacbab9b18a3456a936633a20f93bc9ab35f7ac77ff54c0aecc200ef16bc7533"
+    },
+    {
+      "frame": 5,
+      "phase": "withdraw",
+      "durationMs": 100,
+      "rawSha256": "2cd6a9475da0dce479e2f23218d8b4053de9de48ea2bd974acab61384e036dbc",
+      "rgbaSha256": "70c96947b8af8fd61fc2e4863238f020bbe9edeee72c1b9d9e11b6f0cca68756"
+    },
+    {
+      "frame": 6,
+      "phase": "recover",
+      "durationMs": 130,
+      "rawSha256": "e6c49b3ee9eb17ffabad47e5dddecee5e24d1e24a1e5e9e831fc9989ae49f460",
+      "rgbaSha256": "cf25eaf410682c6fb4c3edd1346854dd46100d3d1c7165b03fb9b176644f980d"
+    },
+    {
+      "frame": 7,
+      "phase": "closingready",
+      "durationMs": 160,
+      "rawSha256": "d572ddd54e39e3d471ca5e8f4255fe2526b502c861a4ff93c0157060af05a36b",
+      "rgbaSha256": "927a71d75476a46c5e0ef05e0d83501096c2eda5ed58ead3528381af7a9b77ba"
+    }
+  ],
+  "cycleMs": 1080,
+  "callsIssuedBy096Worker": 7,
+  "callsIssuedBy100Worker": 1,
+  "delegatedF07Binding": {
+    "delegatedWorker": "food_f07_sol100",
+    "rawPath": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-food-F07-100/F07-raw.png",
+    "receiptPath": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-food-F07-100/receipt.json",
+    "promptPath": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-food-F07-100/prompt.txt",
+    "intakePath": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-food-F07-100/receipt.json",
+    "orderPath": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-food-F07-100/order.json",
+    "rawSha256": "d572ddd54e39e3d471ca5e8f4255fe2526b502c861a4ff93c0157060af05a36b",
+    "parentGate": "full8 review pending"
+  },
+  "callsIssuedTotal": 8,
+  "manualRetries": 0,
+  "callOpen": false,
+  "originalF01holdPreserved": true,
+  "dwellReassignment": "parent-dwell-selection.json",
+  "sourceMethod": "FINISHED_WHOLE_2D_FRAMES",
+  "notEstablished": [
+    "natural continuous motion",
+    "footlock",
+    "runtime",
+    "owner approval"
+  ],
+  "parentSelection": "parent-eight-selection.json"
+}

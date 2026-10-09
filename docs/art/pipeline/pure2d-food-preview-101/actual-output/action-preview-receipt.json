@@ -1,0 +1,408 @@
+{
+  "status": "ACTUAL_ACTION_TECHNICAL_PREVIEW_ONLY",
+  "jobSha256": "c839eb8253da89865ae5a1e3740dfdb26706c0ab462283caf6e96b833e7b601f",
+  "contractValidatorSha256": "a6661ea6c5f3cd3af86d0bf58df971bab6b0632d06e7821889cad0ecc2950646",
+  "packagingValidation": {
+    "manifest": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-food-preview-101/actual-output/manifest.json",
+    "packaging": "PASS",
+    "visualApprovalGranted": false,
+    "manifestStatus": "CANDIDATE",
+    "assets": [
+      {
+        "id": "villager-gather-food-south-096",
+        "packaging": "PASS",
+        "visualReview": "CANDIDATE",
+        "candidate": true,
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-food-SOUTH-096/F00-raw.png",
+          "sha256": "fef6e2aed186dc0cc72f0e927d1c983ee92c9ffcacb7e9972b7dfa2ec40de907",
+          "rgbaSha256": "1d3dfd7fc438d93840c2bdddbd1d64fdecef6919b765e1c48dbbbfe43d1d43fd",
+          "dimensions": [
+            1254,
+            1254
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            0,
+            21,
+            1238,
+            1230
+          ],
+          "warnings": [
+            {
+              "status": "CANDIDATE_WARNING",
+              "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+              "borderMax": 1,
+              "threshold16BBox": [
+                379,
+                35,
+                942,
+                1187
+              ]
+            }
+          ]
+        },
+        "runtime": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-food-preview-101/actual-output/atlas.png",
+          "sha256": "66d641fee006cff56b42e88619bbf9c87900224faa104ac9054a9dd3aef0b73a",
+          "rgbaSha256": "358fd14187e06bb4bc6f3cd1951216ddde9bd315822df14c1825086ea13b6e36",
+          "dimensions": [
+            528,
+            264
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            38,
+            3,
+            498,
+            258
+          ],
+          "warnings": []
+        },
+        "frames": [
+          {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-food-SOUTH-096/F00-raw.png",
+            "sha256": "fef6e2aed186dc0cc72f0e927d1c983ee92c9ffcacb7e9972b7dfa2ec40de907",
+            "rgbaSha256": "1d3dfd7fc438d93840c2bdddbd1d64fdecef6919b765e1c48dbbbfe43d1d43fd",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "alphaExtrema": [
+              0,
+              255
+            ],
+            "bbox": [
+              0,
+              21,
+              1238,
+              1230
+            ],
+            "warnings": [
+              {
+                "status": "CANDIDATE_WARNING",
+                "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+                "borderMax": 1,
+                "threshold16BBox": [
+                  379,
+                  35,
+                  942,
+                  1187
+                ]
+              }
+            ]
+          },
+          {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-food-SOUTH-096/F01-raw.png",
+            "sha256": "c2f5c1c69771597c7e99dc839047d77c373da11856e033af11e968efe25511dc",
+            "rgbaSha256": "9bc56f7f9074cf1c4f2cf915cfab8d3e5bbed8f8133f670473cc36093af91560",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "alphaExtrema": [
+              0,
+              255
+            ],
+            "bbox": [
+              25,
+              17,
+              1220,
+              1204
+            ],
+            "warnings": []
+          },
+          {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-food-SOUTH-096/F02-raw.png",
+            "sha256": "67f2a8b03a66f9b93304c670cad8e9cf998233dd06604283e20320d30d8fea81",
+            "rgbaSha256": "7476dbff600cb7ceac7ce8040d6aa3ed71e1839c30cdca9bc0a17669d2a36dd0",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "alphaExtrema": [
+              0,
+              255
+            ],
+            "bbox": [
+              29,
+              45,
+              1230,
+              1222
+            ],
+            "warnings": []
+          },
+          {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-food-SOUTH-096/F03-raw.png",
+            "sha256": "fac779aa26a9ce11a4c2e4ec5f4c8b8cf56948254cec6a00ba2146c7130fe83d",
+            "rgbaSha256": "76bb7c9b6f171416f2ee6f29f21f0d975d74e3ee9c6fa68af2b0f74f32af55b2",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "alphaExtrema": [
+              0,
+              255
+            ],
+            "bbox": [
+              0,
+              34,
+              1238,
+              1254
+            ],
+            "warnings": [
+              {
+                "status": "CANDIDATE_WARNING",
+                "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+                "borderMax": 1,
+                "threshold16BBox": [
+                  429,
+                  37,
+                  957,
+                  1192
+                ]
+              }
+            ]
+          },
+          {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-food-SOUTH-096/F04-raw.png",
+            "sha256": "9d181881ce4020758ca077f3a3c656ba165fc6729ceb9166d6888bd25a931329",
+            "rgbaSha256": "dacbab9b18a3456a936633a20f93bc9ab35f7ac77ff54c0aecc200ef16bc7533",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "alphaExtrema": [
+              0,
+              255
+            ],
+            "bbox": [
+              65,
+              23,
+              1240,
+              1193
+            ],
+            "warnings": []
+          },
+          {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-food-SOUTH-096/F05-raw.png",
+            "sha256": "2cd6a9475da0dce479e2f23218d8b4053de9de48ea2bd974acab61384e036dbc",
+            "rgbaSha256": "70c96947b8af8fd61fc2e4863238f020bbe9edeee72c1b9d9e11b6f0cca68756",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "alphaExtrema": [
+              0,
+              255
+            ],
+            "bbox": [
+              33,
+              21,
+              1226,
+              1230
+            ],
+            "warnings": []
+          },
+          {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-food-SOUTH-096/F06-raw.png",
+            "sha256": "e6c49b3ee9eb17ffabad47e5dddecee5e24d1e24a1e5e9e831fc9989ae49f460",
+            "rgbaSha256": "cf25eaf410682c6fb4c3edd1346854dd46100d3d1c7165b03fb9b176644f980d",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "alphaExtrema": [
+              0,
+              255
+            ],
+            "bbox": [
+              31,
+              20,
+              1238,
+              1236
+            ],
+            "warnings": []
+          },
+          {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-food-F07-100/F07-raw.png",
+            "sha256": "d572ddd54e39e3d471ca5e8f4255fe2526b502c861a4ff93c0157060af05a36b",
+            "rgbaSha256": "927a71d75476a46c5e0ef05e0d83501096c2eda5ed58ead3528381af7a9b77ba",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "alphaExtrema": [
+              0,
+              255
+            ],
+            "bbox": [
+              0,
+              36,
+              1184,
+              1198
+            ],
+            "warnings": [
+              {
+                "status": "CANDIDATE_WARNING",
+                "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+                "borderMax": 1,
+                "threshold16BBox": [
+                  402,
+                  41,
+                  940,
+                  1192
+                ]
+              }
+            ]
+          }
+        ],
+        "fixedPivot": {
+          "x": 654,
+          "y": 1140,
+          "space": "source"
+        },
+        "logicalRender": {
+          "width": 89,
+          "height": 89
+        },
+        "warnings": [
+          {
+            "status": "CANDIDATE_WARNING",
+            "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+            "borderMax": 1,
+            "threshold16BBox": [
+              379,
+              35,
+              942,
+              1187
+            ]
+          },
+          {
+            "status": "CANDIDATE_WARNING",
+            "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+            "borderMax": 1,
+            "threshold16BBox": [
+              379,
+              35,
+              942,
+              1187
+            ]
+          },
+          {
+            "status": "CANDIDATE_WARNING",
+            "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+            "borderMax": 1,
+            "threshold16BBox": [
+              429,
+              37,
+              957,
+              1192
+            ]
+          },
+          {
+            "status": "CANDIDATE_WARNING",
+            "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+            "borderMax": 1,
+            "threshold16BBox": [
+              402,
+              41,
+              940,
+              1192
+            ]
+          }
+        ]
+      },
+      {
+        "id": "unit-contact-shadow",
+        "packaging": "PASS",
+        "visualReview": "CANDIDATE",
+        "candidate": true,
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/public/assets/art-v1/effects/unit-contact-shadow.png",
+          "sha256": "1572b3fd6dd84d36a423adbdbfca1975a071b07bd0c4043edd55688db0ed99bd",
+          "rgbaSha256": "242424c39edc2976292046eb766fcad9360a922b9c2b2f43d2ead0f5d6455d19",
+          "dimensions": [
+            1254,
+            1254
+          ],
+          "alphaExtrema": [
+            0,
+            168
+          ],
+          "bbox": [
+            103,
+            53,
+            1196,
+            1196
+          ],
+          "warnings": []
+        },
+        "runtime": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-food-preview-101/actual-output/unit-contact-shadow.webp",
+          "sha256": "274b81f26e3869e158b0ab1e5093cd8a899d5255f0239c25ec7ab07ec314a7ff",
+          "rgbaSha256": "d581fe0139344e7a72697d43abcfe00b332f5eea107bb9a4ed7acebfb79ab647",
+          "dimensions": [
+            256,
+            256
+          ],
+          "alphaExtrema": [
+            0,
+            167
+          ],
+          "bbox": [
+            66,
+            115,
+            200,
+            150
+          ],
+          "warnings": []
+        },
+        "frames": [],
+        "fixedPivot": {
+          "x": 658,
+          "y": 648,
+          "space": "source"
+        },
+        "logicalRender": {
+          "width": 42,
+          "height": 42
+        },
+        "warnings": []
+      }
+    ],
+    "errors": []
+  },
+  "runtimePivot": [
+    66.75598086124401,
+    116.36363636363636
+  ],
+  "uniformScale": 0.10207336523125997,
+  "gutter": 2,
+  "gutterPolicy": "transparent zero padding only; no extrusion/trim",
+  "cycleDurationMs": 1080,
+  "frames": 8,
+  "outputs": {
+    "actual-action.png": "96af75dda388f65e081eee1d4d164c6d1b25c07bd9c0b8e695d206c76f5b1589",
+    "manifest.json": "c9b26f805969daa0c9597871c4f6bb28c659f4c19548b6d370c7e5dcb5777af3",
+    "atlas.png": "66d641fee006cff56b42e88619bbf9c87900224faa104ac9054a9dd3aef0b73a",
+    "preview.json": "23bf561bdbc606b61ec31ff10402c1ef8e975a90351df124cf2b06a9e7eb20bf",
+    "preview.html": "e71f0cebebf82f7ffcb61ac1579665f227dbb46cac53537873ea5953ac983e62",
+    "unit-contact-shadow.webp": "274b81f26e3869e158b0ab1e5093cd8a899d5255f0239c25ec7ab07ec314a7ff",
+    "contact-sheet.png": "9ee5321736f094b3896cbe34b93a8d5944f99dea0524054af42e83e34350a03c",
+    "preview-layout.json": "9172d8c3c191ce5ce8f78a572ac3f9359966619894da2faed379b8df778f7ea6",
+    "loader-preview.html": "57d726c2f74f0129dd5c38ce34d6defd1c633a3f51c18d1e83bc52ab2d11b169"
+  },
+  "limits": "Whole actual selected frames only. No generated slots, gameplay event invention, visual/motion/foot-lock/owner/runtime approval. Nonloop APNG plays once; real loader holds terminal frame.",
+  "state": "gather_food",
+  "direction": 1,
+  "loop": true,
+  "frozen017ToolSha256": "f0e77975a8989b1ca5998807830cc1b9f89102f9cc6fec81947864a9a1372abe",
+  "helperSha256": "bf92c709032d9f31dce20244415a8738c67b5e4e53282eb719a8e7f03fae42a7"
+}

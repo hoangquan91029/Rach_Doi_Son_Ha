@@ -9,7 +9,7 @@ const TW=TILE_WIDTH,TH=TILE_HEIGHT;
 const finite=n=>Number.isFinite(n);
 const normalState=entity=>entity.hp<=0?'death':entity.state;
 /** Optional candidate art over actual simulation. No substitute map, fake units, or sprite mirroring. */
-export function createRasterSlice({enabled=['pilot','walk','work'].includes(new URLSearchParams(globalThis.location?.search||'').get('art')),manifestUrl=new URLSearchParams(globalThis.location?.search||'').get('art')==='work'?'/assets/art-v1/gather-026-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='walk'?'/assets/art-v1/walk-014-manifest.json':'/assets/art-v1/manifest.json',onStatus=()=>{},materialWorldSize=8}={}) {
+export function createRasterSlice({enabled=['pilot','walk','work','food'].includes(new URLSearchParams(globalThis.location?.search||'').get('art')),manifestUrl=new URLSearchParams(globalThis.location?.search||'').get('art')==='food'?'/assets/art-v1/food-099-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='work'?'/assets/art-v1/gather-026-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='walk'?'/assets/art-v1/walk-014-manifest.json':'/assets/art-v1/manifest.json',onStatus=()=>{},materialWorldSize=8}={}) {
  const pipeline=createArtAssetPipeline({manifestUrl,allowCandidates:true,onStatus});
  const locomotion=createLocomotionPhase();
  const cells=new Map(),patterns=new WeakMap(),missing=new Set();let ready=false;
@@ -113,7 +113,7 @@ export function createRasterSlice({enabled=['pilot','walk','work'].includes(new 
   },
   drawEntity(ctx,entity,{project,zoom=1,tick=0,timeMs=tick*50}={}) {
    if(typeof project!=='function')return false;const result=this.sampleEntity(entity,{tick,timeMs});if(!result)return false;const {raster,visualState,walkPhase,sample,direction,elapsed}=result,asset=raster.asset;
-   if(rasterAt(ctx,raster,project(entity.x,entity.y),zoom)){status.entityDraws++;if(visualState==='gather_wood'&&entity.type==='villager'){status.gatherDraws++;status.lastGather={entityId:entity.id,frame:sample.frame,direction,assetId:asset.id,visualState,startedTick:entity.visibleAction?.startedTick??null,elapsedMs:sample.elapsedMs,timeMs:elapsed,presentationTimeMs:timeMs};}if(walkPhase){status.walkDraws++;status.lastWalk={entityId:entity.id,frame:sample.frame,distance:walkPhase.distance,distancePerCycle:asset.locomotion.distancePerCycle,direction};}else if(visualState==='idle'&&asset.family==='unit.villager')status.idleDraws++;return true;}return false;
+   if(rasterAt(ctx,raster,project(entity.x,entity.y),zoom)){status.entityDraws++;if(['gather_wood','gather_food'].includes(visualState)&&entity.type==='villager'){status.gatherDraws++;status.lastGather={entityId:entity.id,frame:sample.frame,direction,assetId:asset.id,visualState,startedTick:entity.visibleAction?.startedTick??null,elapsedMs:sample.elapsedMs,timeMs:elapsed,presentationTimeMs:timeMs};}if(walkPhase){status.walkDraws++;status.lastWalk={entityId:entity.id,frame:sample.frame,distance:walkPhase.distance,distancePerCycle:asset.locomotion.distancePerCycle,direction};}else if(visualState==='idle'&&asset.family==='unit.villager')status.idleDraws++;return true;}return false;
   },
   /** Deterministic existing forest density, sorted ready for a merged prop/entity depth queue. */
   propsForState(state,{onlyVisible=true}={}) {

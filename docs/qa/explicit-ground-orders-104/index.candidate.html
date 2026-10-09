@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#132d27" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Rạch Đôi Sơn Hà — A realm in balance</title>
+  </head>
+  <body>
+    <div id="app">
+      <div id="boot" class="boot-screen"><div class="seal">雙</div><span id="bootStatus" role="status" aria-live="polite">Preparing the riverlands…</span><button id="bootRetry" hidden type="button">Retry loading</button><button id="bootContinue" hidden type="button">Continue with development placeholders</button></div>
+      <main id="menu" class="screen hidden">
+        <div class="menu-backdrop"></div>
+        <header class="brand"><div class="brand-mark">山</div><div><p class="eyebrow">A HISTORICAL REAL-TIME STRATEGY</p><h1>Rạch Đôi <em>Sơn Hà</em></h1></div></header>
+        <section class="menu-card">
+          <div class="menu-intro"><p class="eyebrow">THE RIVERLANDS AWAIT</p><h2>Shape the course<br/>of a kingdom.</h2><p>Command armies, protect your supply lines, and lead your people through a changing land.</p></div>
+          <div class="menu-actions"><button class="primary large" id="singleStart">Single player <span>→</span></button><button class="secondary large" id="onlineStart">Online 1 vs 1 <span>↗</span></button><button class="text-button" id="howToPlay">Field guide <span>⌘</span></button></div>
+          <div class="menu-foot"><span><i class="dot"></i> Browser strategy · 1–2 commanders</span><span>Development · PLACEHOLDER_ONLY art</span></div>
+        </section>
+        <div class="menu-motto">“The people are the roots; the country is the tree.” <small>— A principle of statecraft</small></div>
+      </main>
+      <main id="setup" class="screen hidden"><header class="topbar"><button class="back" data-back>← <span>Return</span></button><div class="brand-small"><b>山</b> RẠCH ĐÔI SƠN HÀ</div><span class="top-note">FIELD PREPARATION</span></header><div id="setupContent" class="setup-wrap"></div></main>
+      <main id="game" class="game-screen hidden">
+        <canvas id="world" aria-label="Isometric battlefield"></canvas>
+        <div class="game-vignette"></div>
+        <div class="hud-top"><div class="match-brand"><span class="brand-mark tiny">山</span><span>RẠCH ĐÔI <b>·</b> SƠN HÀ</span></div><div class="match-status"><i class="dot"></i><span id="matchLabel">THE DELTA</span><span class="divider">/</span><span id="matchClock">00:00</span></div><div class="top-tools"><button class="icon-btn" id="helpBtn" title="Controls">?</button><button class="icon-btn" id="pauseBtn" title="Pause">Ⅱ</button><button class="icon-btn" id="exitBtn" title="Leave match">×</button></div></div>
+        <div class="resource-bar" id="resourceBar"></div>
+        <div class="leader-status" id="leaderStatus"></div>
+        <div class="minimap-frame"><canvas id="minimap" width="180" height="112"></canvas><div class="map-label">FIELD MAP <span>⌖</span></div></div>
+        <div class="command-hints"><kbd>RMB</kbd> order <kbd>M</kbd> move <kbd>A</kbd> attack move <kbd>H</kbd> hold <kbd>CTRL+1–9</kbd> groups</div>
+        <aside class="selection-panel" id="selectionPanel"></aside>
+        <div class="action-panel" id="actionPanel"></div>
+        <div class="event-log" id="eventLog"></div>
+        <div class="connection-banner hidden" id="connectionBanner"></div>
+        <div class="modal-layer hidden" id="modalLayer"><section class="modal-card" id="modalContent"></section></div>
+      </main>
+      <div id="toast" class="toast hidden"></div>
+      <div id="mobileNotice" class="mobile-notice hidden"><b>Rạch Đôi Sơn Hà is a desktop strategy game.</b><span>Open this page on a larger screen to command the field.</span></div>
+    </div>
+    <script>
+      document.getElementById('bootRetry').onclick=()=>location.reload();
+      window.rdshBootWatchdog=setTimeout(()=>{if(document.getElementById('boot').dataset.started)return;document.getElementById('bootStatus').textContent='The game is taking too long to arrive. Check your connection and retry.';document.getElementById('bootRetry').hidden=false;},20000);
+    </script>
+    <script type="module" src="/client/main.js"></script>
+  </body>
+</html>

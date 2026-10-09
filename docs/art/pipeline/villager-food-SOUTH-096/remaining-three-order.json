@@ -1,0 +1,15 @@
+{
+  "id": "096_REMAINING_THREE_WITH_DECLARED_DWELL",
+  "maxCalls": 3,
+  "retries": 0,
+  "slots": [
+    3,
+    5,
+    7
+  ],
+  "model": "gpt-6.1-sol",
+  "reasoningEffort": "low",
+  "largeJumpStop": true,
+  "endpointSimilarity": "declare truthful short dwell only after actualreview",
+  "noExport": "parent full8 gate"
+}

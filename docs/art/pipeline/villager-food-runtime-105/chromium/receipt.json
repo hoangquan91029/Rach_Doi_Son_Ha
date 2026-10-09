@@ -1,0 +1,610 @@
+{
+  "status": "ACTUAL_UI_D1_FOOD8_PAUSE_STOP_RESTART_RETURN_PASS",
+  "url": "http://127.0.0.1:38041/?art=food",
+  "staging": {
+    "tick": 73,
+    "entity": {
+      "id": 7,
+      "owner": 0,
+      "type": "villager",
+      "kind": "unit",
+      "x": 9.153696244091984,
+      "y": 17.846303755908018,
+      "hp": 65,
+      "maxHp": 65,
+      "food": 39.66879999999989,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "idle",
+      "dir": 7,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "resuppliedTick": 23,
+      "starving": 0,
+      "lastMovedTick": 72,
+      "order": null
+    }
+  },
+  "contact": {
+    "x": 10.25,
+    "y": 18.25
+  },
+  "contactOrder": {
+    "type": "move",
+    "x": 10.249817857362933,
+    "y": 18.249875459814923
+  },
+  "contactEntity": {
+    "id": 7,
+    "owner": 0,
+    "type": "villager",
+    "kind": "unit",
+    "x": 9.625968727884581,
+    "y": 18.075615118584118,
+    "hp": 65,
+    "maxHp": 65,
+    "food": 39.589311999999865,
+    "foodMax": 40,
+    "morale": 95,
+    "state": "idle",
+    "dir": 1,
+    "cooldown": 0,
+    "queue": [],
+    "cargo": {
+      "food": 0,
+      "wood": 0,
+      "iron": 0,
+      "units": []
+    },
+    "resuppliedTick": 23,
+    "starving": 0,
+    "lastMovedTick": 83,
+    "order": null
+  },
+  "patch": {
+    "id": 1,
+    "type": "food",
+    "x": 10.5,
+    "y": 18.5,
+    "amount": 4200
+  },
+  "initial": {
+    "tick": 89,
+    "entity": {
+      "id": 7,
+      "owner": 0,
+      "type": "villager",
+      "kind": "unit",
+      "x": 9.625968727884581,
+      "y": 18.075615118584118,
+      "hp": 65,
+      "maxHp": 65,
+      "food": 39.562815999999856,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "gather",
+      "dir": 1,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0.30000000000000004,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "resuppliedTick": 23,
+      "starving": 0,
+      "lastMovedTick": 83,
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "food",
+        "startedTick": 88
+      },
+      "order": {
+        "type": "gather",
+        "target": 1
+      }
+    },
+    "render": {
+      "entityId": 7,
+      "frame": 0,
+      "direction": 1,
+      "assetId": "villager-gather-food-south-096",
+      "visualState": "gather_food",
+      "startedTick": 88,
+      "elapsedMs": 4.39999999925476,
+      "timeMs": 4.39999999925476,
+      "presentationTimeMs": 4404.399999999255
+    }
+  },
+  "frames": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "renderSamples": [
+    {
+      "tick": 89,
+      "entityId": 7,
+      "frame": 0,
+      "direction": 1,
+      "assetId": "villager-gather-food-south-096",
+      "visualState": "gather_food",
+      "startedTick": 88,
+      "elapsedMs": 37.69999999925494,
+      "timeMs": 37.69999999925494,
+      "presentationTimeMs": 4437.699999999255
+    },
+    {
+      "tick": 97,
+      "entityId": 7,
+      "frame": 3,
+      "direction": 1,
+      "assetId": "villager-gather-food-south-096",
+      "visualState": "gather_food",
+      "startedTick": 88,
+      "elapsedMs": 11.099999999254578,
+      "timeMs": 421.0999999992546,
+      "presentationTimeMs": 4821.099999999255
+    },
+    {
+      "tick": 104,
+      "entityId": 7,
+      "frame": 5,
+      "direction": 1,
+      "assetId": "villager-gather-food-south-096",
+      "visualState": "gather_food",
+      "startedTick": 88,
+      "elapsedMs": 97.69999999925494,
+      "timeMs": 787.6999999992549,
+      "presentationTimeMs": 5187.699999999255
+    },
+    {
+      "tick": 111,
+      "entityId": 7,
+      "frame": 0,
+      "direction": 1,
+      "assetId": "villager-gather-food-south-096",
+      "visualState": "gather_food",
+      "startedTick": 88,
+      "elapsedMs": 40.999999999255124,
+      "timeMs": 1120.9999999992551,
+      "presentationTimeMs": 5520.999999999255
+    },
+    {
+      "tick": 112,
+      "entityId": 7,
+      "frame": 0,
+      "direction": 1,
+      "assetId": "villager-gather-food-south-096",
+      "visualState": "gather_food",
+      "startedTick": 88,
+      "elapsedMs": 90.99999999925512,
+      "timeMs": 1170.9999999992551,
+      "presentationTimeMs": 5570.999999999255
+    },
+    {
+      "tick": 113,
+      "entityId": 7,
+      "frame": 1,
+      "direction": 1,
+      "assetId": "villager-gather-food-south-096",
+      "visualState": "gather_food",
+      "startedTick": 88,
+      "elapsedMs": 7.699999999254942,
+      "timeMs": 1237.699999999255,
+      "presentationTimeMs": 5637.699999999255
+    },
+    {
+      "tick": 120,
+      "entityId": 7,
+      "frame": 3,
+      "direction": 1,
+      "assetId": "villager-gather-food-south-096",
+      "visualState": "gather_food",
+      "startedTick": 88,
+      "elapsedMs": 81.09999999925458,
+      "timeMs": 1571.0999999992546,
+      "presentationTimeMs": 5971.099999999255
+    },
+    {
+      "tick": 121,
+      "entityId": 7,
+      "frame": 4,
+      "direction": 1,
+      "assetId": "villager-gather-food-south-096",
+      "visualState": "gather_food",
+      "startedTick": 88,
+      "elapsedMs": 30.999999999255124,
+      "timeMs": 1620.9999999992551,
+      "presentationTimeMs": 6020.999999999255
+    },
+    {
+      "tick": 128,
+      "entityId": 7,
+      "frame": 6,
+      "direction": 1,
+      "assetId": "villager-gather-food-south-096",
+      "visualState": "gather_food",
+      "startedTick": 88,
+      "elapsedMs": 84.2999999992553,
+      "timeMs": 1954.2999999992553,
+      "presentationTimeMs": 6354.299999999255
+    },
+    {
+      "tick": 135,
+      "entityId": 7,
+      "frame": 0,
+      "direction": 1,
+      "assetId": "villager-gather-food-south-096",
+      "visualState": "gather_food",
+      "startedTick": 88,
+      "elapsedMs": 144.2999999992553,
+      "timeMs": 2304.2999999992553,
+      "presentationTimeMs": 6704.299999999255
+    },
+    {
+      "tick": 136,
+      "entityId": 7,
+      "frame": 1,
+      "direction": 1,
+      "assetId": "villager-gather-food-south-096",
+      "visualState": "gather_food",
+      "startedTick": 88,
+      "elapsedMs": 60.999999999255124,
+      "timeMs": 2370.999999999255,
+      "presentationTimeMs": 6770.999999999255
+    },
+    {
+      "tick": 137,
+      "entityId": 7,
+      "frame": 2,
+      "direction": 1,
+      "assetId": "villager-gather-food-south-096",
+      "visualState": "gather_food",
+      "startedTick": 88,
+      "elapsedMs": 47.69999999925494,
+      "timeMs": 2437.699999999255,
+      "presentationTimeMs": 6837.699999999255
+    },
+    {
+      "tick": 144,
+      "entityId": 7,
+      "frame": 4,
+      "direction": 1,
+      "assetId": "villager-gather-food-south-096",
+      "visualState": "gather_food",
+      "startedTick": 88,
+      "elapsedMs": 117.59999999925458,
+      "timeMs": 2787.5999999992546,
+      "presentationTimeMs": 7187.599999999255
+    },
+    {
+      "tick": 146,
+      "entityId": 7,
+      "frame": 5,
+      "direction": 1,
+      "assetId": "villager-gather-food-south-096",
+      "visualState": "gather_food",
+      "startedTick": 88,
+      "elapsedMs": 4.299999999255306,
+      "timeMs": 2854.2999999992553,
+      "presentationTimeMs": 7254.299999999255
+    },
+    {
+      "tick": 147,
+      "entityId": 7,
+      "frame": 5,
+      "direction": 1,
+      "assetId": "villager-gather-food-south-096",
+      "visualState": "gather_food",
+      "startedTick": 88,
+      "elapsedMs": 70.99999999925421,
+      "timeMs": 2920.999999999254,
+      "presentationTimeMs": 7320.999999999254
+    },
+    {
+      "tick": 148,
+      "entityId": 7,
+      "frame": 6,
+      "direction": 1,
+      "assetId": "villager-gather-food-south-096",
+      "visualState": "gather_food",
+      "startedTick": 88,
+      "elapsedMs": 20.999999999254214,
+      "timeMs": 2970.999999999254,
+      "presentationTimeMs": 7370.999999999254
+    },
+    {
+      "tick": 149,
+      "entityId": 7,
+      "frame": 6,
+      "direction": 1,
+      "assetId": "villager-gather-food-south-096",
+      "visualState": "gather_food",
+      "startedTick": 88,
+      "elapsedMs": 87.59999999925458,
+      "timeMs": 3037.5999999992546,
+      "presentationTimeMs": 7437.599999999255
+    },
+    {
+      "tick": 150,
+      "entityId": 7,
+      "frame": 7,
+      "direction": 1,
+      "assetId": "villager-gather-food-south-096",
+      "visualState": "gather_food",
+      "startedTick": 88,
+      "elapsedMs": 7.699999999254942,
+      "timeMs": 3087.699999999255,
+      "presentationTimeMs": 7487.699999999255
+    }
+  ],
+  "videoGatherStartSeconds": 5.765,
+  "videoGatherObservationSeconds": 3.24,
+  "pause": {
+    "beforeTick": 164,
+    "afterTick": 164,
+    "renderBefore": {
+      "entityId": 7,
+      "frame": 4,
+      "direction": 1,
+      "assetId": "villager-gather-food-south-096",
+      "visualState": "gather_food",
+      "startedTick": 88,
+      "elapsedMs": 37.59999999925458,
+      "timeMs": 3787.5999999992546,
+      "presentationTimeMs": 8187.599999999255
+    },
+    "renderAfter": {
+      "entityId": 7,
+      "frame": 4,
+      "direction": 1,
+      "assetId": "villager-gather-food-south-096",
+      "visualState": "gather_food",
+      "startedTick": 88,
+      "elapsedMs": 37.59999999925458,
+      "timeMs": 3787.5999999992546,
+      "presentationTimeMs": 8187.599999999255
+    }
+  },
+  "restarted": {
+    "tick": 177,
+    "entity": {
+      "id": 7,
+      "owner": 0,
+      "type": "villager",
+      "kind": "unit",
+      "x": 9.625968727884581,
+      "y": 18.075615118584118,
+      "hp": 65,
+      "maxHp": 65,
+      "food": 38.979903999999664,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "gather",
+      "dir": 1,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 12.150000000000018,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "resuppliedTick": 23,
+      "starving": 0,
+      "lastMovedTick": 83,
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "food",
+        "startedTick": 177
+      },
+      "order": {
+        "type": "gather",
+        "target": 1
+      }
+    },
+    "render": {
+      "entityId": 7,
+      "frame": 0,
+      "direction": 1,
+      "assetId": "villager-gather-food-south-096",
+      "visualState": "gather_food",
+      "startedTick": 177,
+      "elapsedMs": 0,
+      "timeMs": 0,
+      "presentationTimeMs": 8804.199999999253
+    }
+  },
+  "returned": {
+    "id": 7,
+    "owner": 0,
+    "type": "villager",
+    "kind": "unit",
+    "x": 9.607469101896664,
+    "y": 18.284798683517664,
+    "hp": 65,
+    "maxHp": 65,
+    "food": 38.615583999999544,
+    "foodMax": 40,
+    "morale": 95,
+    "state": "walk",
+    "dir": 2,
+    "cooldown": 0,
+    "queue": [],
+    "cargo": {
+      "food": 20,
+      "wood": 0,
+      "iron": 0,
+      "units": []
+    },
+    "resuppliedTick": 23,
+    "starving": 0,
+    "lastMovedTick": 232,
+    "visibleAction": {
+      "kind": "carry",
+      "load": "food",
+      "moving": true
+    },
+    "order": {
+      "type": "gather",
+      "target": 1
+    }
+  },
+  "returnMapping": {
+    "actualState": "walk",
+    "visibleAction": {
+      "kind": "carry",
+      "load": "food",
+      "moving": true
+    }
+  },
+  "errors": [],
+  "boot": {
+    "mode": null,
+    "localPlayer": 0,
+    "roomCode": null,
+    "paused": false,
+    "camera": {
+      "x": 24,
+      "y": 24,
+      "zoom": 1
+    },
+    "selection": [],
+    "tick": null,
+    "pingMs": null,
+    "frameMs": 0,
+    "bootUi": {
+      "declared": 12,
+      "ready": 12,
+      "failures": [],
+      "fontWarnings": []
+    },
+    "art": {
+      "enabled": true,
+      "phase": "CANDIDATE",
+      "quality": "CANDIDATE",
+      "groundDraws": 0,
+      "propDraws": 0,
+      "entityDraws": 0,
+      "walkDraws": 0,
+      "idleDraws": 0,
+      "lastWalk": null,
+      "gatherDraws": 0,
+      "lastGather": null,
+      "missing": [],
+      "pipeline": {
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 18,
+        "ready": 18,
+        "approved": 0,
+        "candidates": 18,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 15631872,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 18,
+        "failures": []
+      }
+    },
+    "terrainCache": {
+      "builds": 0,
+      "draws": 0,
+      "pixels": 0
+    },
+    "displayedState": null
+  },
+  "art": {
+    "enabled": true,
+    "phase": "CANDIDATE",
+    "quality": "PLACEHOLDER_ONLY",
+    "groundDraws": 3042,
+    "propDraws": 8731,
+    "entityDraws": 8151,
+    "walkDraws": 12,
+    "idleDraws": 41,
+    "lastWalk": {
+      "entityId": 7,
+      "frame": 5,
+      "distance": 5.93389088874148,
+      "distancePerCycle": 1.26,
+      "direction": 1
+    },
+    "gatherDraws": 412,
+    "lastGather": null,
+    "missing": [
+      {
+        "key": "ground:mountain",
+        "reason": "No authored material for this terrain",
+        "status": "PLACEHOLDER_ONLY"
+      },
+      {
+        "key": "villager:walk:0",
+        "reason": "No exact authored raster state/direction",
+        "status": "PLACEHOLDER_ONLY"
+      },
+      {
+        "key": "villager:walk:4",
+        "reason": "No exact authored raster state/direction",
+        "status": "PLACEHOLDER_ONLY"
+      },
+      {
+        "key": "villager:walk:5",
+        "reason": "No exact authored raster state/direction",
+        "status": "PLACEHOLDER_ONLY"
+      },
+      {
+        "key": "villager:walk:7",
+        "reason": "No exact authored raster state/direction",
+        "status": "PLACEHOLDER_ONLY"
+      },
+      {
+        "key": "villager:walk:6",
+        "reason": "No exact authored raster state/direction",
+        "status": "PLACEHOLDER_ONLY"
+      },
+      {
+        "key": "villager:idle:7",
+        "reason": "No exact authored raster state/direction",
+        "status": "PLACEHOLDER_ONLY"
+      },
+      {
+        "key": "villager:walk:2",
+        "reason": "No exact authored raster state/direction",
+        "status": "PLACEHOLDER_ONLY"
+      }
+    ],
+    "pipeline": {
+      "status": "CANDIDATE",
+      "manifest": "ready",
+      "declared": 18,
+      "ready": 18,
+      "approved": 0,
+      "candidates": 18,
+      "failed": 0,
+      "skipped": 0,
+      "fallbacks": 0,
+      "decodedBudgetBytes": 134217728,
+      "retainedDecodedBytes": 15631872,
+      "reservedDecodedBytes": 0,
+      "uniqueDecodedImages": 18,
+      "failures": []
+    }
+  },
+  "limits": "Actual18asset game candidate; no continuous visual/foot-lock/owner/fanout/production approval inferred from frames or timing."
+}

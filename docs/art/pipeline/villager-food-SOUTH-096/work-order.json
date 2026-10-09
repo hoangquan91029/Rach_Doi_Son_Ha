@@ -1,0 +1,151 @@
+{
+  "jobId": "villager-food-SOUTH-096",
+  "stage": "PARENT_APPROVED_ONE_F00",
+  "model": "gpt-6.1-sol",
+  "reasoningEffort": "low",
+  "method": "BUILTIN wholeillustrated identity edits",
+  "direction": {
+    "engine": 1,
+    "world": "SE",
+    "screen": "South"
+  },
+  "canvas": [
+    1254,
+    1254
+  ],
+  "pivot": [
+    654,
+    1140
+  ],
+  "runtimeCanvas": 128,
+  "displayCanvas": 89,
+  "fixedWholeCanvasTransform": true,
+  "resource": "food generic ochre round produce/greenstalk icon; no crop species claim",
+  "toolReference": {
+    "existingProperReference": null,
+    "inventoryFinding": "No existing food-tool/carrybasket reference found;018 has axe guides only",
+    "proposal": "Handpicking produce with small plain woven basket supported in actorLEFT hand at left hip; actorRIGHT reaches and collects",
+    "historicalClaim": "Unverified; plausible simple authored visual choice only",
+    "firstKeyRole": "F00 new complete basket-bearing illustration reference, pending actual parent intake"
+  },
+  "slots": [
+    {
+      "frame": 0,
+      "phase": "ready",
+      "durationMs": 135,
+      "status": "UNCALLED"
+    },
+    {
+      "frame": 1,
+      "phase": "beginreach",
+      "durationMs": 135,
+      "status": "UNCALLED"
+    },
+    {
+      "frame": 2,
+      "phase": "reachlow",
+      "durationMs": 135,
+      "status": "UNCALLED"
+    },
+    {
+      "frame": 3,
+      "phase": "drawhandback",
+      "durationMs": 135,
+      "status": "UNCALLED"
+    },
+    {
+      "frame": 4,
+      "phase": "collectintobasket",
+      "durationMs": 135,
+      "status": "UNCALLED"
+    },
+    {
+      "frame": 5,
+      "phase": "releasepick",
+      "durationMs": 135,
+      "status": "UNCALLED"
+    },
+    {
+      "frame": 6,
+      "phase": "recover",
+      "durationMs": 135,
+      "status": "UNCALLED"
+    },
+    {
+      "frame": 7,
+      "phase": "settletoF00",
+      "durationMs": 135,
+      "status": "UNCALLED"
+    }
+  ],
+  "keyOrder": [
+    0,
+    2,
+    4,
+    6
+  ],
+  "inbetweenOrder": [
+    1,
+    3,
+    5,
+    7
+  ],
+  "cycleMs": 1080,
+  "finiteCallCap": 1,
+  "retries": 0,
+  "initialCallGate": "NO call until parent validates source/toolproposal; then F00 only until intake",
+  "callsIssued": 0,
+  "callOpen": false,
+  "returnGoods": "ordinary existing walk",
+  "noClaims": [
+    "historically verified tool",
+    "accepted food loop",
+    "other directions",
+    "runtime integration",
+    "public approval"
+  ],
+  "references": [
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "role": "SouthD1 complete identity/view/edit source"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/VILLAGER_IDENTITY_LOCK_007.json",
+      "sha256": "567d1844595d07a274ad2da885a298dc16925bafd5fe11a4d9c49ee33783828a",
+      "role": "identity authority historical"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/owner-motion-review-032/review.json",
+      "sha256": "67691fc79f1e3a8f6c59472a6cf03273de2fef10a77b417f14eebb115c2c4d30",
+      "role": "human accepted Southwood motion workflow; not food approval"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/sim.js",
+      "sha256": "28e37b63ee39bbe1440741fa0afed3d9f20797831f666c0ff03d8299a8eb609c",
+      "role": "food resource and gather authority"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/shared/visible-action.js",
+      "sha256": "380d1d29e76b004fdde29713cd2e6e87ea3cfba5f9c454fb3554a471f4a60063",
+      "role": "public resource action descriptor"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/client/renderer.js",
+      "sha256": "18ec0bc5b3c343f79a5b46585cf9b944fa4739eb3a52b4290d91bd78cca2b423",
+      "role": "actual food map symbol drawResource"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/client/raster-slice.js",
+      "sha256": "42d43adbb55a4ebb15e333d4c9cd2f93e829aaab8e7374d8f4665fdb04cfe03b",
+      "role": "resource-specific action/time selection"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/action-production-017/RUNTIME_ACTION_MATRIX.md",
+      "sha256": "833f5da49cbaf45cc9f604662f3dfa5d258226529a0e2fbdda8310b4f7bf730c",
+      "role": "018 action mapping ordinarywalk return"
+    }
+  ],
+  "head": "07b16e75cdfd8d68b0ba7acf3f91b6bfa44225e2",
+  "laterSlots": "CLOSED pending actual F00 intake and new bounded order"
+}

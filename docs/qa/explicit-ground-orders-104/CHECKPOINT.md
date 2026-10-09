@@ -1,0 +1,13 @@
+# Explicit ground orders104 — locally installed PASS
+
+ExactSol6.1Low, canonicalHEAD5cb5bf3. Parent reviewed and authorized exact tested104 installation into canonical client/main.js and index.html. Original isolated stage `/tmp/rdsh-ground104-pp32a5ji` preserved. Only these two client files changed. No shared/server/simulation/speed/range/art/manifest/budget change or public deployment.
+
+Selected movable units get Move(M) and Attack move(A) buttons. Arming either clears build/logistics modes; selecting build/logistics clears ground intent. Toast/help/hint explains destination and Escape cancellation. Armed MOVE/ATTACKMOVE resolves before enemy/resource/repair context and retains clamped fractional clicked ground coordinates. Left/right destination clicks both work. Mode consumed after valid selected-unit destination. Escape cancels any armedtarget before pause; Stop/Hold, selection/pruning/group/leader changes, launch/menu reset modes. Default context orders/building coordinates unchanged.
+
+Server accepts finite fractional move/attackMove coordinates; simulation formation bounds remain .5..width-.5 and existing move-arrival range.7. UI retains previous outer0..width-1 clamp before server/sim. No facing override or art-specific command behavior.
+
+Fresh staged build PASS; relevant existing navigation/selection tests7PASS. ONE bounded actual productioncandidate Chromium151 successful sequence: M near food emits actual move with9.769843718184692/18.12993823213482 fractiontarget, normal arrival within existing.7 range; Move button nearfood remainsmove; A overfood remainsattackMove; M thenEscape doesnotpause and next contextclick stillgather; ordinarypause/menu/errors0. Readonlydiagnostics/normal mousekeys only. No hiddenstate/commands injection, enemy-scene setup/fullmatch or visualmotion acceptance.105 owns trueSE contact/food proof.
+
+Original failures preserved: harness first searched resource.kind rather than actualtype; second mistakenly demanded exact<.15 arrival despite unchanged.7contract. Corrected only harness schema/expected existingsemantics. Raw snapshots/screens retained; no logic weakened. No sourcechange after passingbuild/browserproof.
+
+candidate.diff/main.candidate.js/index.candidate.html and pins.json bind sources, stagebundle/assets/harness. Owned preview39404/browser closed. Public097 untouched. Installed canonical source matches exact tested candidate SHA before/after copy; pins.json installedCanonical binds both files. Existing7 tests already passed; no repeat or canonical build/deploy.105 foodstage can merge exact installed files for actual D1 food proof.
