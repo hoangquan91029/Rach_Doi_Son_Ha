@@ -1,0 +1,5 @@
+#222 wall/gate selection follows visible geometry
+
+The generic building box extended29px sideways/38px upward for walls drawn12px high and gates16px high. That ghost area intercepted villagers and the open passage. Picking now uses the same world spans/projection as fallback drawing: wall faces/rails, center post, gate header/posts. Shadows and passage remain click-through. Authored raster alpha picking still comes first; other unit/building picking, ownership, liveness and fog filters remain unchanged.
+
+Baseline5fail/5pass demonstrates actual ghost-area contracts; candidate10new +20topology +6construction contracts PASS. Initial test fixture expected empty ground while a real unit occupied it; original failure retained, corrected fixture removes that unit for the empty-ground assertion. No implementation change to satisfy that fixture. Source hashes in source-pins.json. This concrete picker defect does not prove the cause of historical215/220 UI holds. Actual changed-code UI proof is separately scoped223, not inferred from tests. Local only; public207 unchanged.

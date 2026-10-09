@@ -1,6 +1,14 @@
-# Trạng thái — checkpoint213 / public207
+# Trạng thái — checkpoint224 / public207
 
 **INCOMPLETE.** [Movement plan](docs/art/pipeline/MOVEMENT_PRODUCTION_PLAN_20261010.md) · [Toàn dự án](docs/PROJECT_PLAN.md) · [Next steps](NEXT_STEPS.md).
+
+## Local214–224: topology, picking và construction visibility
+
+[223 actual scene](docs/qa/fortification-picking-browser-223/root-intake.json) chấp nhận phần **fallback** Wall/Gate nối theo X/Y, góc và passage: năm công trình hoàn thành, chọn corner52, Pause1437/Resume1439, villager qua cổng, Stop/menu decoded0/errors0. Chunk40a1acbc…ab2a2 bind215/217/222;36 focused contracts PASS. [222 picker](docs/qa/fortification-picking-222/root-intake.json) bỏ vùng chọn hộp lớn vô hình ở tường/cổng, giữ alpha picking cho authored art. Original215/220 selection holds giữ nguyên; không suy nguyên nhân từ lần223 đạt.
+
+[217 visibility](docs/qa/construction-visibility-217/root-intake.json) thêm public boolean sau fogfilter, giữ job địch riêng tư; raster không hiện idle hoàn chỉnh khi công trình địch đang xây.221 actualtwopeer xác nhận flag/redaction/ownjob và completion1250HP. Overall221 vẫn HOLD vì scout biến mất khi quay về; không fogreturn/menu proof. Root thấy cả screenshot Fort vẫn procedural, không claim authored completion. Localcanonicalsim29233a…748b; public207sim4aa không đổi.
+
+[214 wholeWallX](docs/art/buildings/wall-x-idle-214/root-intake.json) ONEbuiltin/0retry, đẹp/readable42px nhưng span vượt guide; HOLDworldalignment, không cài. [216 idle export](docs/art/pipeline/villager-D0-idle-family-216/root-intake.json) wholecanonical uniform128/89, zeroimagecalls; cùng pivot chưa xóa khác bodyvolume/bakedshadow với walk.219 runtime HOLDboot do hai runtimepathrootabsolute, chưa travel.225 là newfinite isolatedcopy sửaONLYhai pathrelative và ONEofflineUI trial; đọc actual225receipt, không fanout hay suy motionapproval.
 
 ## Movement sau phản hồi dị dạng
 
@@ -14,7 +22,7 @@ D0idle family vẫn cần khớp walk tránh old38→89pop, rồi actualUI D0tra
 
 [Rootintake210](docs/qa/fortification-placement-210/root-intake.json): trướcfix16adjacencypairsFAIL vì cảwall/gate radius0.45 cộngsetback0.4 chặn ôcách1. Nay bỏONLYextra0.4 khi BOTHbuildingtypeswall/gate. Otherpairs/terrain/ford/coastal/unitoccupancy/owner/cost/role giữ nguyên. King vẫn chỉ replacementResidence; UI builder là livingownvillager.
 
-27newcontracts+6nav/arrival+3existingconstructionPASS. ONEactualChromeDelta buildsWall35(2.5,23.5)–Gate43(3.5,23.5)–Wall52(4.5,23.5); samevillager crossesownGate tick1019, Stop/menu decoded0/errors0, ownedhandlesclosed. Canonicalsim b9f903f6fbab7374caaf4a6e23dd400604eb8b9cea798576c20663e8fa735f48; isolatedcandidatechunk2a9ad6…ba2d. **Localonly**, public207 remains4aa, wallrendererhorizontalprocedural/topologyunfinished. No finalvisual/public/fullbattleclaim.
+27newcontracts+6nav/arrival+3existingconstructionPASS. ONEactualChromeDelta buildsWall35(2.5,23.5)–Gate43(3.5,23.5)–Wall52(4.5,23.5); samevillager crossesownGate tick1019, Stop/menu decoded0/errors0, ownedhandlesclosed. Canonicalsim b9f903f6fbab7374caaf4a6e23dd400604eb8b9cea798576c20663e8fa735f48; isolatedcandidatechunk2a9ad6…ba2d. **Localonly**, public207 remains4aa, placement210 đã được nối tiếp bởi local215/222/223 fallbacktopology/picking; finishedillustratedWallGate vẫn thiếu. No finalvisual/public/fullbattleclaim.
 
 ## Public development207
 
@@ -27,3 +35,5 @@ D0idle family vẫn cần khớp walk tránh old38→89pop, rồi actualUI D0tra
 ## Remaining full goal
 
 Realistic roster/eightdirections/actions/12leaders/familyscale, buildingconstruction-hit-death-attack/wall-gateconnectors, bothmapcomposition/shores/forest/mountainrepetition, densebrowser/live-roomperformance, accepteddefaultart, externaldesktop/WAN and finalpublic SinglePlayer/Online1v1 bothmaps remainopen. Current207 is development, notfinalacceptance. Allcustody/leadership/originals preserved; fivehourscontinuation/quietpolicy remains. Sol6.1Low/builtin/pure2D, noAPI/key/quota/3D/cutouts. Independentorder ownership and stagedbuild guards apply.
+
+Current runtime update225/226:225 actualloader29PASS, livingownD0travel observed but town detour/D1 and partial samples causedHOLD; PauseResumeStop/menu unperformed. This is not proof of skipped renderer frames or bad motion.226 NEWsamefrozen225build uses an actualclear outside-towncorridor and25ms observations, ONEofflineUI/160s/no retry. Inspect actual226receipt; no approval/installation/fanout or perframefit/scale/speedchanges.227 release preparation-only for accepted215/217/222/210 code; public207 still unchanged.

@@ -2,7 +2,7 @@
 
 Cập nhật ngày 2026-10-10, múi giờ Asia/Ho_Chi_Minh. **Trạng thái: INCOMPLETE.** Đây là kế hoạch hiện hành cho toàn dự án; `NEXT_STEPS.md` chỉ giữ hàng đợi gần nhất. Hồ sơ cũ được giữ nguyên byte tại `docs/audit/2026-10-09/history/`.
 
-Latest execution213 ở mục20 và active movement plan thay các next-step lịch sử; source/receipt cũ giữ nguyên.
+Latest execution224 ở mục21 và active movement plan thay các next-step lịch sử; source/receipt cũ giữ nguyên.
 
 ## 1. Mục tiêu và cách đọc kết quả
 
@@ -194,3 +194,13 @@ R01:204 source/service/rollback audit found202 pendingfoodrecipe/bytes.206 deriv
 [Movementplan](art/pipeline/MOVEMENT_PRODUCTION_PLAN_20261010.md) đã viết lại gắn canonical/actualsources/research212. Wholebodyvolume/camera/neighborcontinuity là lỗi chính, khôngmicrodetail.211 ONEwholeF4edit/0retry phục hồi torso/arms;213 exact208eight ONLYF4replacement, zeroimagecalls/8×75ms600ms/128atlas/89preview. ActualChromium8/3cycles/PausePlay/errors0, rootbriefsheet và actualAPNGdisplayed; motion/owner/worldfootlock/runtime/fanoutOPEN. Pendingquestion195 khôngapprove213. Nextbrieflooplook→samefamilyidle→actualD0travel/PauseResumeStop; no blindcalls/batchclaims.
 
 210 fixeslocalorthogonalWall/Gate adjacency by removingonlytheirpairsetback0.4.33focused+3existingcontracts andONEactualvillagerUI line/friendlyGatecrossPASS; KingreplacementResidence role/otherguards unchanged. Localcanonicalsim b9f903…35f48 differspublicimmutable2074aa. Rendererhorizontalprocedural/topology remainsunfinished, no publicpromotion. Existing207/209 production/evidence/rollback stand; no repeatedfullmatches orprooftests withoutnewconcern. All210–213 handlesclosed atcheckpoint; checkactualstate before work. Fullgoal INCOMPLETE; history209 entrypoints bytepreserved.
+
+## 21. Hiện hành214–224 — integration topology/picking/construction
+
+W01:215 procedural fallback dùng visible-only sameowner completed four-neighbors, exactprojectedhalfcell joins/X/Y/corner/T/cross.222 picking theo đúng faces/rails/posts/header, không chặn khoảng trống cổng.36 focusedcontracts và223 ONEordinaryDeltaUI five completed structures/twoaxes/corner/exactselection/PauseResume/friendlyGatecross/Stop/menu decoded0/errors0 acceptednarrow. [Root223](qa/fortification-picking-browser-223/root-intake.json). FinishedillustratedWall/Gate art chưađạt:214 ONEbuiltin raw/candidate HOLD endpointalignment, không pixelrepair/install. Original215/220 holds bytepreserved.
+
+217 visible publicconstructionboolean saufogfilter không lộ job; ownjob và enemyredaction giữ nguyên.9focusedcontracts và221 actualtwopeer visibleunderConstruction/completion/privacy accepted.221overallHOLD scoutreturn; nofogreturn/menu/authoredcompletionscreenshotclaim. Localcanonicalsim29233a…748b khácpublicimmutable4aa; không deploy.
+
+G01/G02:216 zero-call wholecanonical uniform128/89/pivot6541140 prepared; Stop/bodyvolume transition chưaverified.219 HOLDboot rootabsolutepaths;225 NEWfinite isolatedcopy sửaONLYtwo relativepaths→ONEoffline actualD0 trial, kết quả riêng trước nextorder.213 candidate không tựqualified từ technicaltests. Fullgoal INCOMPLETE. Public207 optionalfort28/185/PID510490 và pairedrollback giữ nguyên; không replaycompletedmatches hoặcblindcalls. Currententrypoints213 bytepreserved trong checkpoint213-entrypoints.
+
+Current runtime update225/226:225 actualloader29PASS, livingownD0travel observed but town detour/D1 and partial samples causedHOLD; PauseResumeStop/menu unperformed. This is not proof of skipped renderer frames or bad motion.226 NEWsamefrozen225build uses an actualclear outside-towncorridor and25ms observations, ONEofflineUI/160s/no retry. Inspect actual226receipt; no approval/installation/fanout or perframefit/scale/speedchanges.227 release preparation-only for accepted215/217/222/210 code; public207 still unchanged.

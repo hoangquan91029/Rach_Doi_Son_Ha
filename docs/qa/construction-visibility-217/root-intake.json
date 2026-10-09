@@ -1,0 +1,26 @@
+{
+  "status": "LOCAL_VIEW_AND_RASTER_CONTRACT_ACCEPTED",
+  "baseline": {
+    "pass": 2,
+    "fail": 4
+  },
+  "candidate": {
+    "pass": 9,
+    "fail": 0
+  },
+  "actualBrowser": "../construction-visible-browser-221/receipt.json",
+  "acceptedBrowserScope": [
+    "visible enemy underConstruction true at461",
+    "enemy construction/order omitted and queue/cargo redacted",
+    "owner remaining24.8/total25/builder24",
+    "ordinary completion flagfalse/1250HP at957"
+  ],
+  "excluded": [
+    "fog return after scout disappearance",
+    "guarded menu cleanup",
+    "completed authored Fort screenshot acceptance",
+    "final construction artwork",
+    "public deployment"
+  ],
+  "sourceSimSHA256": "29233a059ec084bc8577d20a1bccfd28ddc3024b9cb9bf4d5598c22f220f748b"
+}

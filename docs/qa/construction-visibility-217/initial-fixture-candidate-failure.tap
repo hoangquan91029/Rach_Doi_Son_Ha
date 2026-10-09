@@ -1,0 +1,127 @@
+✖ visible enemy construction has a visual flag without private job, queue, cargo or orders (4.996616ms)
+✖ owner retains actual construction progress and builder alongside same visual flag (1.764985ms)
+✖ hidden enemy site is omitted entirely, even when previously seen (1.334231ms)
+✖ ordinary construction completion clears visual flag; damage never means under construction (1.453242ms)
+✖ visual flag adds no construction semantics to units (0.493203ms)
+✔ authored completed building art is withheld for enemy construction flag, with idle retained after completion (1.682536ms)
+✔ fort28 extends exactshipyard27 with hashbound wholeFortidle (2.936992ms)
+✔ Fort onlyfort idle; Shipyard shipyard+fort; unsupportedstates fallback (1.747979ms)
+✔ dynamicFort bank includes exactidle onlyfortroute; legacyshipyard missesFort (34.461161ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 4
+ℹ fail 5
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 100.856095
+
+✖ failing tests:
+
+test at tests/construction-visibility217.test.js:13:1
+✖ visible enemy construction has a visual flag without private job, queue, cargo or orders (4.996616ms)
+  AssertionError [ERR_ASSERTION]: Construction site must be visible
+  
+  false !== true
+  
+      at site (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/construction-visibility217.test.js:10:93)
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/construction-visibility217.test.js:14:21)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.start (node:internal/test_runner/test:1096:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:385:17) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/construction-visibility217.test.js:18:1
+✖ owner retains actual construction progress and builder alongside same visual flag (1.764985ms)
+  AssertionError [ERR_ASSERTION]: Construction site must be visible
+  
+  false !== true
+  
+      at site (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/construction-visibility217.test.js:10:93)
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/construction-visibility217.test.js:19:21)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/construction-visibility217.test.js:22:1
+✖ hidden enemy site is omitted entirely, even when previously seen (1.334231ms)
+  AssertionError [ERR_ASSERTION]: Construction site must be visible
+  
+  false !== true
+  
+      at site (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/construction-visibility217.test.js:10:93)
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/construction-visibility217.test.js:23:30)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/construction-visibility217.test.js:26:1
+✖ ordinary construction completion clears visual flag; damage never means under construction (1.453242ms)
+  AssertionError [ERR_ASSERTION]: Construction site must be visible
+  
+  false !== true
+  
+      at site (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/construction-visibility217.test.js:10:93)
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/construction-visibility217.test.js:27:21)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/construction-visibility217.test.js:31:1
+✖ visual flag adds no construction semantics to units (0.493203ms)
+  AssertionError [ERR_ASSERTION]: Construction site must be visible
+  
+  false !== true
+  
+      at site (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/construction-visibility217.test.js:10:93)
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/construction-visibility217.test.js:32:21)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

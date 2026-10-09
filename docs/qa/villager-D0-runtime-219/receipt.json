@@ -1,0 +1,100 @@
+{
+  "status": "HOLD_FAILED_ACTUAL_GUARD_NO_RETRY",
+  "method": "ONE ordinary offline Delta campaign; online Pause intentionally continues field, no online room created",
+  "scope": "LOCAL219 UNAPPROVED; technical travel evidence only, not motion/owner/worldfootlock qualification",
+  "samples": [],
+  "errors": [],
+  "requestFailures": [],
+  "bundles": [
+    "b02e273ac24a7fbb4c703ebd8774a10ed4c2bc637943f5d234ae32e4bec5ac97"
+  ],
+  "deadlineMs": 160000,
+  "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#singleStart')\u001b[22m\n\u001b[2m    - locator resolved to <button id=\"singleStart\" class=\"primary large\">\u2026</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 \u00d7 waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 \u00d7 waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    56 \u00d7 waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at /home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/villager-D0-runtime-219/browser.mjs:16:111",
+  "failure": {
+    "state": {
+      "mode": null,
+      "localPlayer": 0,
+      "roomCode": null,
+      "paused": false,
+      "artLoading": false,
+      "camera": {
+        "x": 24,
+        "y": 24,
+        "zoom": 1
+      },
+      "selection": [],
+      "tick": null,
+      "pingMs": null,
+      "frameMs": 0,
+      "bootUi": {
+        "declared": 12,
+        "ready": 12,
+        "failures": [],
+        "fontWarnings": []
+      },
+      "art": {
+        "enabled": true,
+        "phase": "CANDIDATE",
+        "quality": "PLACEHOLDER_ONLY",
+        "groundDraws": 0,
+        "propDraws": 0,
+        "entityDraws": 0,
+        "walkDraws": 0,
+        "idleDraws": 0,
+        "lastWalk": null,
+        "gatherDraws": 0,
+        "lastGather": null,
+        "missing": [],
+        "pipeline": {
+          "status": "PLACEHOLDER_ONLY",
+          "manifest": "ready",
+          "declared": 29,
+          "ready": 0,
+          "approved": 0,
+          "candidates": 0,
+          "failed": 0,
+          "skipped": 0,
+          "fallbacks": 0,
+          "decodedBudgetBytes": 134217728,
+          "retainedDecodedBytes": 0,
+          "reservedDecodedBytes": 0,
+          "uniqueDecodedImages": 0,
+          "encodedReady": 27,
+          "retainedEncodedBytes": 3795664,
+          "encodedBudgetBytes": 67108864,
+          "selectedDeclared": 0,
+          "failures": []
+        }
+      },
+      "artBank": {
+        "phase": "empty",
+        "epoch": 0,
+        "encodedBytes": 3795664,
+        "encodedBudgetBytes": 67108864,
+        "activeIds": [],
+        "scope": null
+      },
+      "terrainCache": {
+        "builds": 0,
+        "draws": 0,
+        "pixels": 0
+      },
+      "displayedState": null
+    },
+    "toast": ""
+  },
+  "cleanup": {
+    "rooms": 0,
+    "serverListening": false,
+    "browserClosed": true
+  },
+  "rootCause": "Candidate runtime.path must be manifest-relative; rooted /assets/art-v1/d0-219/ paths rejected by existing loader",
+  "actualScope": "Boot failure before campaign; no D0 travel, pause/resume/stop evidence",
+  "retry": 0,
+  "public185ByteExact": true,
+  "naturalnessApproval": false,
+  "installedCanonical": false,
+  "videoFiles": [
+    "video/page@24c84334c934bf96f5800df3c6b056f9.webm"
+  ]
+}

@@ -1,0 +1,226 @@
+TAP version 13
+# Subtest: visible enemy construction has a visual flag without private job, queue, cargo or orders
+ok 1 - visible enemy construction has a visual flag without private job, queue, cargo or orders
+  ---
+  duration_ms: 7.033301
+  type: 'test'
+  ...
+# Subtest: owner retains actual construction progress and builder alongside same visual flag
+ok 2 - owner retains actual construction progress and builder alongside same visual flag
+  ---
+  duration_ms: 3.063292
+  type: 'test'
+  ...
+# Subtest: hidden enemy site is omitted entirely, even when previously seen
+ok 3 - hidden enemy site is omitted entirely, even when previously seen
+  ---
+  duration_ms: 1.415124
+  type: 'test'
+  ...
+# Subtest: ordinary construction completion clears visual flag; damage never means under construction
+ok 4 - ordinary construction completion clears visual flag; damage never means under construction
+  ---
+  duration_ms: 22.661716
+  type: 'test'
+  ...
+# Subtest: visual flag adds no construction semantics to units
+ok 5 - visual flag adds no construction semantics to units
+  ---
+  duration_ms: 1.181367
+  type: 'test'
+  ...
+# Subtest: authored completed building art is withheld for enemy construction flag, with idle retained after completion
+ok 6 - authored completed building art is withheld for enemy construction flag, with idle retained after completion
+  ---
+  duration_ms: 1.623036
+  type: 'test'
+  ...
+# Subtest: wall ghost area does not intercept unit pick at zoom0.55
+ok 7 - wall ghost area does not intercept unit pick at zoom0.55
+  ---
+  duration_ms: 1.833207
+  type: 'test'
+  ...
+# Subtest: wall ghost area does not intercept unit pick at zoom1.08
+ok 8 - wall ghost area does not intercept unit pick at zoom1.08
+  ---
+  duration_ms: 0.196062
+  type: 'test'
+  ...
+# Subtest: wall ghost area does not intercept unit pick at zoom1.8
+ok 9 - wall ghost area does not intercept unit pick at zoom1.8
+  ---
+  duration_ms: 0.16643
+  type: 'test'
+  ...
+# Subtest: actual wall face remains selectable for topology3
+ok 10 - actual wall face remains selectable for topology3
+  ---
+  duration_ms: 0.118004
+  type: 'test'
+  ...
+# Subtest: actual wall face remains selectable for topology12
+ok 11 - actual wall face remains selectable for topology12
+  ---
+  duration_ms: 0.084014
+  type: 'test'
+  ...
+# Subtest: actual wall face remains selectable for topology5
+ok 12 - actual wall face remains selectable for topology5
+  ---
+  duration_ms: 0.081569
+  type: 'test'
+  ...
+# Subtest: actual wall face remains selectable for topology15
+ok 13 - actual wall face remains selectable for topology15
+  ---
+  duration_ms: 0.081625
+  type: 'test'
+  ...
+# Subtest: X gate open passage does not intercept clicks, header and posts remain selectable
+ok 14 - X gate open passage does not intercept clicks, header and posts remain selectable
+  ---
+  duration_ms: 0.195632
+  type: 'test'
+  ...
+# Subtest: Y gate open passage remains clear and oriented header is selectable
+ok 15 - Y gate open passage remains clear and oriented header is selectable
+  ---
+  duration_ms: 0.173816
+  type: 'test'
+  ...
+# Subtest: ordinary building picking and liveness/visibility guards remain unchanged
+ok 16 - ordinary building picking and liveness/visibility guards remain unchanged
+  ---
+  duration_ms: 0.22721
+  type: 'test'
+  ...
+# Subtest: mask0 identifies actual orthogonal cells and projected boundary spans
+ok 17 - mask0 identifies actual orthogonal cells and projected boundary spans
+  ---
+  duration_ms: 2.185103
+  type: 'test'
+  ...
+# Subtest: mask1 identifies actual orthogonal cells and projected boundary spans
+ok 18 - mask1 identifies actual orthogonal cells and projected boundary spans
+  ---
+  duration_ms: 0.315763
+  type: 'test'
+  ...
+# Subtest: mask2 identifies actual orthogonal cells and projected boundary spans
+ok 19 - mask2 identifies actual orthogonal cells and projected boundary spans
+  ---
+  duration_ms: 0.157819
+  type: 'test'
+  ...
+# Subtest: mask3 identifies actual orthogonal cells and projected boundary spans
+ok 20 - mask3 identifies actual orthogonal cells and projected boundary spans
+  ---
+  duration_ms: 0.148744
+  type: 'test'
+  ...
+# Subtest: mask4 identifies actual orthogonal cells and projected boundary spans
+ok 21 - mask4 identifies actual orthogonal cells and projected boundary spans
+  ---
+  duration_ms: 0.125244
+  type: 'test'
+  ...
+# Subtest: mask5 identifies actual orthogonal cells and projected boundary spans
+ok 22 - mask5 identifies actual orthogonal cells and projected boundary spans
+  ---
+  duration_ms: 0.13008
+  type: 'test'
+  ...
+# Subtest: mask6 identifies actual orthogonal cells and projected boundary spans
+ok 23 - mask6 identifies actual orthogonal cells and projected boundary spans
+  ---
+  duration_ms: 0.151396
+  type: 'test'
+  ...
+# Subtest: mask7 identifies actual orthogonal cells and projected boundary spans
+ok 24 - mask7 identifies actual orthogonal cells and projected boundary spans
+  ---
+  duration_ms: 0.133868
+  type: 'test'
+  ...
+# Subtest: mask8 identifies actual orthogonal cells and projected boundary spans
+ok 25 - mask8 identifies actual orthogonal cells and projected boundary spans
+  ---
+  duration_ms: 0.110824
+  type: 'test'
+  ...
+# Subtest: mask9 identifies actual orthogonal cells and projected boundary spans
+ok 26 - mask9 identifies actual orthogonal cells and projected boundary spans
+  ---
+  duration_ms: 0.193783
+  type: 'test'
+  ...
+# Subtest: mask10 identifies actual orthogonal cells and projected boundary spans
+ok 27 - mask10 identifies actual orthogonal cells and projected boundary spans
+  ---
+  duration_ms: 0.12279
+  type: 'test'
+  ...
+# Subtest: mask11 identifies actual orthogonal cells and projected boundary spans
+ok 28 - mask11 identifies actual orthogonal cells and projected boundary spans
+  ---
+  duration_ms: 0.104448
+  type: 'test'
+  ...
+# Subtest: mask12 identifies actual orthogonal cells and projected boundary spans
+ok 29 - mask12 identifies actual orthogonal cells and projected boundary spans
+  ---
+  duration_ms: 0.71466
+  type: 'test'
+  ...
+# Subtest: mask13 identifies actual orthogonal cells and projected boundary spans
+ok 30 - mask13 identifies actual orthogonal cells and projected boundary spans
+  ---
+  duration_ms: 0.093411
+  type: 'test'
+  ...
+# Subtest: mask14 identifies actual orthogonal cells and projected boundary spans
+ok 31 - mask14 identifies actual orthogonal cells and projected boundary spans
+  ---
+  duration_ms: 0.124836
+  type: 'test'
+  ...
+# Subtest: mask15 identifies actual orthogonal cells and projected boundary spans
+ok 32 - mask15 identifies actual orthogonal cells and projected boundary spans
+  ---
+  duration_ms: 0.082081
+  type: 'test'
+  ...
+# Subtest: visible-list scope, owner, grid, completed living neighbor guards exclude false connectors
+ok 33 - visible-list scope, owner, grid, completed living neighbor guards exclude false connectors
+  ---
+  duration_ms: 0.213308
+  type: 'test'
+  ...
+# Subtest: unfinished/dead/off-grid self provides no topology, visible enemy completion marker respected
+ok 34 - unfinished/dead/off-grid self provides no topology, visible enemy completion marker respected
+  ---
+  duration_ms: 0.097767
+  type: 'test'
+  ...
+# Subtest: gate axes use actual neighbor counts, stable X ties/default and immutable dir
+ok 35 - gate axes use actual neighbor counts, stable X ties/default and immutable dir
+  ---
+  duration_ms: 0.205099
+  type: 'test'
+  ...
+# Subtest: opposite neighboring segments meet at exact world half-cell boundary on both axes
+ok 36 - opposite neighboring segments meet at exact world half-cell boundary on both axes
+  ---
+  duration_ms: 0.133501
+  type: 'test'
+  ...
+1..36
+# tests 36
+# suites 0
+# pass 36
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 91.073341

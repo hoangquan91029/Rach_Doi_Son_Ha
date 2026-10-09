@@ -1,0 +1,54 @@
+{
+  "status": "HOLD_EXACT_ENTITY_PICK_AFTER_VALID_EMPTY_SELECTION",
+  "frozenBuild": "/tmp/rds-topology215/build/assets/index-Bg-WjlC4.js",
+  "bundleSHA256": "2f42ffffc97809c4bd321c91288fca68e15db345770620c96738690f5ce406eb",
+  "sim217SHA256": "29233a059ec084bc8577d20a1bccfd28ddc3024b9cb9bf4d5598c22f220f748b",
+  "selectionMethod": "Ordinary9 unusedgroup recall; assertempty then actualentityPoint click/exactlivingownID; no scriptgroup/appstate writes",
+  "actualCompleted": [
+    {
+      "id": 35,
+      "type": "wall",
+      "x": 2.5,
+      "y": 23.5,
+      "completedTick": 310
+    },
+    {
+      "id": 43,
+      "type": "gate",
+      "x": 3.5,
+      "y": 23.5,
+      "completedTick": 606
+    },
+    {
+      "id": 52,
+      "type": "wall",
+      "x": 4.5,
+      "y": 23.5,
+      "completedTick": 864
+    },
+    {
+      "id": 53,
+      "type": "wall",
+      "x": 4.5,
+      "y": 24.5,
+      "completedTick": 1126
+    }
+  ],
+  "failureScope": "Empty assertion passed; finalexact-ID assertion failed beforefifth construction",
+  "remainingUnperformed": [
+    "fifthWall",
+    "completedtopologyscreenshot",
+    "cornerselect/Pause/Resume",
+    "ownGatecross",
+    "Stop/menu"
+  ],
+  "215AllFilesByteUnchanged": true,
+  "public207185ByteUnchanged": true,
+  "publicService": "ActiveState=active\nMainPID=510490\n",
+  "cleanup": {
+    "rooms": 0,
+    "serverListening": false,
+    "browserClosed": true
+  },
+  "limits": "ONE220scene only; noretry/newmatch/runtime/source/build/test/imagegeneration/service/status/commit changes"
+}

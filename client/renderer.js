@@ -1,3 +1,4 @@
+import {buildFortificationTopology,fortificationSpans} from './fortification-topology.js';
 import {createArtBank} from './art-bank.js';
 import {drawTerrainPropFallback} from './terrain-props.js';
 import {createImpactPulses} from './action-presentation.js';
@@ -27,7 +28,7 @@ const LEADER_STYLE={
 export class IsoRenderer{
  constructor(canvas,minimap){this.canvas=canvas;this.ctx=canvas.getContext('2d');this.minimap=minimap;this.mctx=minimap.getContext('2d');this.camera={x:24,y:24,zoom:1};this.state=null;this.localPlayer=0;this.selected=[];this.dpr=1;this.artBank=createArtBank();this.raster=createRasterSlice();this.artBank.attach(this.raster.pipeline);this.terrainCache=createTerrainCache();this.impactPulses=createImpactPulses();this.resize();window.addEventListener('resize',()=>this.resize());}
  async preloadArt(){if(this.raster.status.enabled)await this.artBank.prime(this.raster.pipeline);}
- releaseArt(){this.artBank.release();this.raster.dispose();this.terrainCache.dispose();this.state=null;this.selected=[];this.raster=createRasterSlice();this.artBank.attach(this.raster.pipeline);}
+ releaseArt(){this.fortificationTopology=null;this.artBank.release();this.raster.dispose();this.terrainCache.dispose();this.state=null;this.selected=[];this.raster=createRasterSlice();this.artBank.attach(this.raster.pipeline);}
  async activateArt(state){this.raster.dispose();this.terrainCache.dispose();this.raster=createRasterSlice();this.artBank.attach(this.raster.pipeline);if(!this.raster.status.enabled)return true;const raster=this.raster;const active=await this.artBank.activate(raster.pipeline,state);if(active&&this.raster===raster)await raster.preload();return active&&this.raster===raster;}
  resize(){const r=this.canvas.getBoundingClientRect();this.dpr=Math.min(2,window.devicePixelRatio||1);this.canvas.width=Math.max(1,Math.floor(r.width*this.dpr));this.canvas.height=Math.max(1,Math.floor(r.height*this.dpr));}
  project(x,y){const w=this.canvas.width/this.dpr,h=this.canvas.height/this.dpr,z=this.camera.zoom;return {x:w/2+(x-y)*TW*z/2-(this.camera.x-this.camera.y)*TW*z/2,y:h/2+(x+y-this.camera.x-this.camera.y)*TH*z/2};}
@@ -37,6 +38,7 @@ export class IsoRenderer{
  this.raster.drawHillGround(ctx,{state,project:(x,y)=>this.project(x,y),zoom:z,timeMs:state.tick*50});
  const resources=(state.map.resources||[]).filter(r=>r.amount>0&&this.visible(xy(r),state,player));
  const entities=(state.entities||[]).filter(e=>!e.embarked&&this.visible(e,state,player));
+ this.fortificationTopology=buildFortificationTopology(entities);
  const props=this.raster.propsForState(state).filter(e=>{const p=this.project(e.x,e.y);return p.x>-90*z&&p.x<w+90*z&&p.y>-90*z&&p.y<h+90*z;});
  const depthQueue=[...entities.map(e=>({entity:e,x:e.x,y:e.y})),...props.map(e=>({prop:e,x:e.x,y:e.y})),...resources.map(e=>({resource:e,x:e.x,y:e.y}))].sort((a,b)=>(a.x+a.y)-(b.x+b.y));
  for(const item of depthQueue){if(item.entity)this.drawEntity(ctx,item.entity,delta);else if(item.resource)this.drawResource(ctx,item.resource);else if(!this.raster.drawProp(ctx,{...item.prop,project:(x,y)=>this.project(x,y),zoom:z,timeMs:state.tick*50})){drawTerrainPropFallback(this,ctx,item.prop,z);}}
@@ -182,21 +184,24 @@ export class IsoRenderer{
   c.strokeStyle='#6c5035';c.lineWidth=2*z;c.beginPath();c.moveTo(-8*z,-16*z);c.lineTo(-13*z,-18*z);c.lineTo(-15*z,-13*z);c.stroke();
   c.fillStyle='#877149';c.beginPath();c.moveTo(11*z,-2*z);c.lineTo(18*z,-7*z);c.lineTo(17*z,-1*z);c.closePath();c.fill();
  }
+ drawFortification(c,e,z,color,trim){
+  const parts=fortificationSpans(e,this.fortificationTopology?.get(e.id));
+  // World half-cell endpoints share the same projection; no building scale distorts joins.
+  const beam=(from,to,height=12,base=0)=>{const a=this.project(from.x,from.y),b=this.project(to.x,to.y);c.fillStyle='#5c5442';c.beginPath();c.moveTo(a.x,a.y-base*z);c.lineTo(b.x,b.y-base*z);c.lineTo(b.x,b.y-height*z);c.lineTo(a.x,a.y-height*z);c.closePath();c.fill();c.strokeStyle=color;c.lineWidth=3*z;c.beginPath();c.moveTo(a.x,a.y-(height-3)*z);c.lineTo(b.x,b.y-(height-3)*z);c.stroke();c.strokeStyle=trim;c.lineWidth=1.5*z;c.beginPath();c.moveTo(a.x,a.y-height*z);c.lineTo(b.x,b.y-height*z);c.stroke();};
+  c.save();c.lineCap='round';
+  for(const span of parts.spans){const a=this.project(span.from.x,span.from.y),b=this.project(span.to.x,span.to.y);c.strokeStyle='rgba(20,27,22,.4)';c.lineWidth=5*z;c.beginPath();c.moveTo(a.x,a.y+2*z);c.lineTo(b.x,b.y+2*z);c.stroke();beam(span.from,span.to);}
+  if(e.type==='gate'){beam(parts.posts[0],parts.posts[1],16,12);for(const post of parts.posts){const p=this.project(post.x,post.y);c.strokeStyle=trim;c.lineWidth=3*z;c.beginPath();c.moveTo(p.x,p.y);c.lineTo(p.x,p.y-16*z);c.stroke();}}
+  else{const p=this.project(e.x,e.y);c.strokeStyle=color;c.lineWidth=3*z;c.beginPath();c.moveTo(p.x,p.y);c.lineTo(p.x,p.y-13*z);c.stroke();}
+  c.restore();
+ }
  drawBuilding(c,e,p,z){
   const key=e.type,color=e.owner===this.localPlayer?'#b69d64':'#9d5947',trim=e.owner===this.localPlayer?'#ddc98e':'#c78569';
-  const w=key==='wall'||key==='gate'?11:21,h=key==='residence'?16:13;
+  if(key==='wall'||key==='gate'){this.drawFortification(c,e,z,color,trim);return;}
+  const w=21,h=key==='residence'?16:13;
   c.save();c.translate(p.x,p.y);c.scale(1.35,1.25);c.translate(-p.x,-p.y);
   // A dark cast shadow and separately shaded wall faces give every footprint a readable plinth.
   c.fillStyle='rgba(20,27,22,.48)';c.beginPath();c.ellipse(p.x,p.y+3*z,w*1.1*z,h*.52*z,0,0,Math.PI*2);c.fill();
   this.diamond(c,p.x,p.y+z,w*z,h*.45*z);
-  if(key==='wall'||key==='gate'){
-   c.fillStyle='#5c5442';c.fillRect(p.x-11*z,p.y-7*z,22*z,7*z);
-   c.fillStyle=color;c.fillRect(p.x-11*z,p.y-9*z,22*z,4*z);
-   c.fillStyle=trim;for(let i=-10;i<=8;i+=6)c.fillRect(p.x+i*z,p.y-11*z,3*z,3*z);
-   c.fillStyle='#55472f';c.fillRect(p.x-10*z,p.y-3*z,20*z,2*z);
-   if(key==='gate'){c.fillStyle='#283b30';c.fillRect(p.x-4.5*z,p.y-9*z,9*z,9*z);c.strokeStyle=trim;c.lineWidth=z;c.beginPath();c.moveTo(p.x-4*z,p.y-1*z);c.lineTo(p.x-4*z,p.y-7*z);c.lineTo(p.x,p.y-9*z);c.lineTo(p.x+4*z,p.y-7*z);c.lineTo(p.x+4*z,p.y-1*z);c.stroke();}
-   c.restore();return;
-  }
   // Raised stone/wood walls and a highlighted top edge make the roof sit above the ground plane.
   c.fillStyle='#514b3a';c.beginPath();c.moveTo(p.x-w*z,p.y-h*z*.45);c.lineTo(p.x,p.y);c.lineTo(p.x,p.y+6*z);c.lineTo(p.x-w*z,p.y-h*z*.45+4*z);c.closePath();c.fill();
   c.fillStyle='#726448';c.beginPath();c.moveTo(p.x+w*z,p.y-h*z*.45);c.lineTo(p.x,p.y);c.lineTo(p.x,p.y+6*z);c.lineTo(p.x+w*z,p.y-h*z*.45+4*z);c.closePath();c.fill();

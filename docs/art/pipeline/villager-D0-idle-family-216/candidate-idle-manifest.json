@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "status": "CANDIDATE",
+  "camera": {
+    "projection": "dimetric",
+    "ratio": [
+      2,
+      1
+    ],
+    "tile": [
+      54,
+      27
+    ],
+    "elevation": 26.565
+  },
+  "notes": "CANDIDATE_TECHNICAL_CUSTODY_ONLY; no visual/motion/owner/runtime/production approval",
+  "assets": [
+    {
+      "id": "villager-idle-D0-family-216",
+      "family": "unit.villager",
+      "kind": "unit",
+      "state": "idle",
+      "direction": 0,
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+        "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+        "rgbaSha256": "c960d206222a191b903a8cc1a679e82bdce8d8c51df4010a935f444b3cacdb9c",
+        "width": 1254,
+        "height": 1254
+      },
+      "runtime": {
+        "path": "idle-128.png",
+        "sha256": "e7b052f40406c6c416df6d1b2684c7d54d750390cac420370857a19347d9ebe9",
+        "rgbaSha256": "f2a4a1487a6a913d5544eb883ecdccffd7596ff8becc50ce9c14fca244bd6f71",
+        "width": 128,
+        "height": 128,
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "render": {
+        "width": 89,
+        "height": 89
+      },
+      "pivot": {
+        "x": 654,
+        "y": 1140,
+        "space": "source"
+      },
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "loop": true,
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 1000
+        }
+      ],
+      "notes": "Candidate preparation only: canonical wholecanvas uniform mapping; no idle/walk transition or family motion acceptance"
+    }
+  ]
+}

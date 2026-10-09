@@ -1,0 +1,57 @@
+{
+  "status": "LOCAL_HELPER_CONTRACTS_PASS_ORIGINAL_UI_HOLD_PARTIAL_FOUR_COMPLETED",
+  "helperSHA256": "80049674ec4907421f22498615c3ed09131d12476609d5d568caf67f0e822f18",
+  "rendererSHA256": "18928bb8d29cfd3ddda93a11e98a69e9ab1f5a0392d80e2441217d5751ff4942",
+  "testsSHA256": "d35ca065f53f004edf571ffd2c4507c5fc8132f7d2c27c673b97178023e12ebb",
+  "testsPassed": 20,
+  "buildPath": "/tmp/rds-topology215/build/assets/index-Bg-WjlC4.js",
+  "bundleSHA256": "2f42ffffc97809c4bd321c91288fca68e15db345770620c96738690f5ce406eb",
+  "stageSim217SHA256": "29233a059ec084bc8577d20a1bccfd28ddc3024b9cb9bf4d5598c22f220f748b",
+  "actualFourCompleted": [
+    {
+      "id": 35,
+      "type": "wall",
+      "x": 2.5,
+      "y": 23.5,
+      "completedTick": 309
+    },
+    {
+      "id": 43,
+      "type": "gate",
+      "x": 3.5,
+      "y": 23.5,
+      "completedTick": 612
+    },
+    {
+      "id": 52,
+      "type": "wall",
+      "x": 4.5,
+      "y": 23.5,
+      "completedTick": 871
+    },
+    {
+      "id": 53,
+      "type": "wall",
+      "x": 4.5,
+      "y": 24.5,
+      "completedTick": 1137
+    }
+  ],
+  "originalUIStatus": "HOLD_LIVE",
+  "originalUIError": "Error: Actual UI/state timeout\n    at wait (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/fortification-topology-215/browser.mjs:5:177)\n    at async select (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/fortification-topology-215/browser.mjs:9:593)\n    at async move (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/fortification-topology-215/browser.mjs:10:25)\n    at async file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/fortification-topology-215/browser.mjs:14:97",
+  "actualScopeLimits": [
+    "Fifth placement notperformed",
+    "Completed twoaxis/corner screenshot notcaptured",
+    "Pause/Resume/select/throughGate/Stop/menu finalsteps unperformed",
+    "Four completed structures recorded only; fullscene notPASS"
+  ],
+  "cleanup": {
+    "rooms": 0,
+    "serverListening": false,
+    "browserClosed": true
+  },
+  "public185Exact": true,
+  "construction217Scope": "Helper excludes construction OR underConstruction; no enemyconstruction browserprivacy proof from215; independent218 stagehandoff",
+  "presentation": "Procedural fallback only, no finalillustratedart or authoritative direction changes",
+  "publicPromotion": false
+}

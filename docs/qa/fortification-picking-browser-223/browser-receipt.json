@@ -1,0 +1,255 @@
+{
+  "status": "PASS_ACTUAL_PROJECTED_X_Y_CORNER_GATE_SELECT_PAUSE_RESUME_TRAVEL_STOP_MENU",
+  "method": "One223 ordinary Delta scene after222actualpicking change; keyboard unusedgroup9 clear and exactlivingown pick; fresh222215217 build; no group/appstate/commands injection; read-only diagnostics; no injected gameplay/state/facing/speed",
+  "errors": [],
+  "structures": [
+    {
+      "id": 35,
+      "type": "wall",
+      "x": 2.5,
+      "y": 23.5,
+      "completedTick": 310
+    },
+    {
+      "id": 43,
+      "type": "gate",
+      "x": 3.5,
+      "y": 23.5,
+      "completedTick": 613
+    },
+    {
+      "id": 52,
+      "type": "wall",
+      "x": 4.5,
+      "y": 23.5,
+      "completedTick": 870
+    },
+    {
+      "id": 53,
+      "type": "wall",
+      "x": 4.5,
+      "y": 24.5,
+      "completedTick": 1132
+    },
+    {
+      "id": 54,
+      "type": "wall",
+      "x": 4.5,
+      "y": 25.5,
+      "completedTick": 1417
+    }
+  ],
+  "movement": [
+    {
+      "tick": 1593,
+      "x": 3.4999791286874284,
+      "y": 22.62502612061017,
+      "dir": 6,
+      "state": "idle"
+    },
+    {
+      "tick": 1595,
+      "x": 3.4999841379519814,
+      "y": 22.835026120550427,
+      "dir": 2,
+      "state": "walk"
+    },
+    {
+      "tick": 1598,
+      "x": 3.499991651848811,
+      "y": 23.150026120460815,
+      "dir": 2,
+      "state": "walk"
+    },
+    {
+      "tick": 1600,
+      "x": 3.499996661113364,
+      "y": 23.360026120401074,
+      "dir": 2,
+      "state": "walk"
+    },
+    {
+      "tick": 1602,
+      "x": 3.5,
+      "y": 23.570026120361252,
+      "dir": 2,
+      "state": "walk"
+    },
+    {
+      "tick": 1605,
+      "x": 3.5,
+      "y": 23.885026120361253,
+      "dir": 2,
+      "state": "walk"
+    },
+    {
+      "tick": 1607,
+      "x": 3.5,
+      "y": 24.095026120361254,
+      "dir": 2,
+      "state": "walk"
+    },
+    {
+      "tick": 1609,
+      "x": 3.5,
+      "y": 24.305026120361255,
+      "dir": 2,
+      "state": "walk"
+    },
+    {
+      "tick": 1612,
+      "x": 3.5,
+      "y": 24.620026120361256,
+      "dir": 2,
+      "state": "walk"
+    },
+    {
+      "tick": 1614,
+      "x": 3.5,
+      "y": 24.830026120361257,
+      "dir": 2,
+      "state": "walk"
+    },
+    {
+      "tick": 1616,
+      "x": 3.5,
+      "y": 25.040026120361258,
+      "dir": 2,
+      "state": "walk"
+    },
+    {
+      "tick": 1619,
+      "x": 3.5,
+      "y": 25.35502612036126,
+      "dir": 2,
+      "state": "walk"
+    },
+    {
+      "tick": 1621,
+      "x": 3.5,
+      "y": 25.35502612036126,
+      "dir": 2,
+      "state": "idle"
+    }
+  ],
+  "bundleSHA256": "40a1acbcfd731841b45e629361f4076b81abb6ab069e2fadb51b871a0bfab2a2",
+  "workerId": 7,
+  "line": {
+    "x": 3.5,
+    "y": 23.5,
+    "staging": {
+      "x": 3.5,
+      "y": 21.5
+    },
+    "d": 4
+  },
+  "topology": [
+    {
+      "id": 35,
+      "mask": 1,
+      "axis": "X",
+      "topology": "end",
+      "count": 1
+    },
+    {
+      "id": 43,
+      "mask": 3,
+      "axis": "X",
+      "topology": "straight",
+      "count": 2
+    },
+    {
+      "id": 52,
+      "mask": 6,
+      "axis": "X",
+      "topology": "corner",
+      "count": 2
+    },
+    {
+      "id": 53,
+      "mask": 12,
+      "axis": "Y",
+      "topology": "straight",
+      "count": 2
+    },
+    {
+      "id": 54,
+      "mask": 8,
+      "axis": "Y",
+      "topology": "end",
+      "count": 1
+    }
+  ],
+  "fiveStructuresCompleted": true,
+  "cornerSelection": [
+    52
+  ],
+  "pausedTick": 1437,
+  "resumedTick": 1439,
+  "beforeCrossing": {
+    "tick": 1522,
+    "worker": {
+      "id": 7,
+      "owner": 0,
+      "type": "villager",
+      "kind": "unit",
+      "x": 3.4999791286874284,
+      "y": 22.62502612061017,
+      "hp": 65,
+      "maxHp": 65,
+      "food": 39.91388799999997,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "idle",
+      "dir": 6,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "resuppliedTick": 1509,
+      "starving": 0,
+      "lastMovedTick": 1520,
+      "order": null
+    }
+  },
+  "ownGateTravelPassed": true,
+  "menu": {
+    "bank": {
+      "phase": "menu",
+      "epoch": 3,
+      "encodedBytes": 3904788,
+      "encodedBudgetBytes": 67108864,
+      "activeIds": [],
+      "scope": null
+    },
+    "art": {
+      "status": "PLACEHOLDER_ONLY",
+      "manifest": "not-loaded",
+      "declared": 0,
+      "ready": 0,
+      "approved": 0,
+      "candidates": 0,
+      "failed": 0,
+      "skipped": 0,
+      "fallbacks": 0,
+      "decodedBudgetBytes": 134217728,
+      "retainedDecodedBytes": 0,
+      "reservedDecodedBytes": 0,
+      "uniqueDecodedImages": 0,
+      "encodedReady": 0,
+      "retainedEncodedBytes": 0,
+      "encodedBudgetBytes": 67108864,
+      "selectedDeclared": 0,
+      "failures": []
+    }
+  },
+  "cleanup": {
+    "rooms": 0,
+    "serverListening": false,
+    "browserClosed": true
+  }
+}

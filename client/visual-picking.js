@@ -1,4 +1,5 @@
 // Invisible selection masks follow the artwork; they never draw replacement art.
+import {fortificationContains} from './fortification-picking.js';
 const alphaCache=new WeakMap();
 function alphaAt(image,x,y){
  let pixels=alphaCache.get(image);
@@ -14,6 +15,10 @@ export function pickVisibleEntity(renderer,screenX,screenY){
   const raster=renderer.raster.sampleEntity(e,{tick:state.tick,timeMs:renderer.visualTimeMs??state.tick*50})?.raster;
   if(raster?.image){const width=raster.render.width*z,height=raster.render.height*z,left=p.x-raster.pivot.x/raster.sw*width,top=p.y-raster.pivot.y/raster.sh*height;
    if(screenX>=left&&screenX<left+width&&screenY>=top&&screenY<top+height&&alphaAt(raster.image,raster.sx+(screenX-left)/width*raster.sw,raster.sy+(screenY-top)/height*raster.sh)>=80)return e;
+   continue;
+  }
+  if(e.kind==='building'&&['wall','gate'].includes(e.type)){
+   if(fortificationContains(renderer,e,screenX,screenY))return e;
    continue;
   }
   const building=e.kind==='building',vehicle=['wagon','artillery','warship','transport'].includes(e.type),horse=e.type==='cavalry';

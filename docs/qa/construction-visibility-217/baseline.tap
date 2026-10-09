@@ -1,0 +1,432 @@
+TAP version 13
+# Subtest: visible enemy construction has a visual flag without private job, queue, cargo or orders
+not ok 1 - visible enemy construction has a visual flag without private job, queue, cargo or orders
+  ---
+  duration_ms: 6.940395
+  type: 'test'
+  location: '/tmp/rds-construction217-baseline/tests/construction-visibility217.test.js:13:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + undefined
+    - true
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///tmp/rds-construction217-baseline/tests/construction-visibility217.test.js:15:83)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1201:25)
+    Test.start (node:internal/test_runner/test:1096:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:385:17)
+  ...
+# Subtest: owner retains actual construction progress and builder alongside same visual flag
+not ok 2 - owner retains actual construction progress and builder alongside same visual flag
+  ---
+  duration_ms: 2.943185
+  type: 'test'
+  location: '/tmp/rds-construction217-baseline/tests/construction-visibility217.test.js:18:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + undefined
+    - true
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///tmp/rds-construction217-baseline/tests/construction-visibility217.test.js:19:86)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1201:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+    Test.postRun (node:internal/test_runner/test:1330:19)
+    Test.run (node:internal/test_runner/test:1258:12)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3)
+  ...
+# Subtest: hidden enemy site is omitted entirely, even when previously seen
+ok 3 - hidden enemy site is omitted entirely, even when previously seen
+  ---
+  duration_ms: 1.495824
+  type: 'test'
+  ...
+# Subtest: ordinary construction completion clears visual flag; damage never means under construction
+not ok 4 - ordinary construction completion clears visual flag; damage never means under construction
+  ---
+  duration_ms: 21.423362
+  type: 'test'
+  location: '/tmp/rds-construction217-baseline/tests/construction-visibility217.test.js:26:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + undefined
+    - false
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: false
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///tmp/rds-construction217-baseline/tests/construction-visibility217.test.js:28:9)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1201:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+    Test.postRun (node:internal/test_runner/test:1330:19)
+    Test.run (node:internal/test_runner/test:1258:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:831:7)
+  ...
+# Subtest: visual flag adds no construction semantics to units
+ok 5 - visual flag adds no construction semantics to units
+  ---
+  duration_ms: 1.005501
+  type: 'test'
+  ...
+# Subtest: authored completed building art is withheld for enemy construction flag, with idle retained after completion
+not ok 6 - authored completed building art is withheld for enemy construction flag, with idle retained after completion
+  ---
+  duration_ms: 3.155852
+  type: 'test'
+  location: '/tmp/rds-construction217-baseline/tests/construction-visibility217.test.js:34:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + {
+    +   direction: null,
+    +   elapsed: 5000,
+    +   raster: {
+    +     asset: {
+    +       alphaPolicy: 'transparent',
+    +       candidate: true,
+    +       cell: {
+    +         height: 256,
+    +         width: 256
+    +       },
+    +       contactShadow: {
+    +         mode: 'baked'
+    +       },
+    +       direction: null,
+    +       family: 'building.fort',
+    +       frames: [
+    +         {
+    +           durationMs: 1000,
+    +           height: 256,
+    +           width: 256,
+    +           x: 0,
+    +           y: 0
+    +         }
+    +       ],
+    +       id: 'fort-idle-198',
+    +       kind: 'building',
+    +       layoutReason: 'Whole compact defensive fort candidate; same whole1254family transform512working/256runtime/112logicalcell. Idle only, otherstates unresolved.',
+    +       loop: true,
+    +       pivot: {
+    +         space: 'source',
+    +         status: 'PROVISIONAL_REFERENCE_FAMILY_BASE_CENTER_NEEDS_ACTUAL_SCENE_INTAKE',
+    +         x: 627,
+    +         y: 1010
+    +       },
+    +       preview: [
+    +         {
+    +           alphaExtrema: [
+    +             0,
+    +             255
+    +           ],
+    +           bbox: [
+    +             0,
+    +             13,
+    +             112,
+    +             101
+    +           ],
+    +           height: 112,
+    +           path: 'preview-112.png',
+    +           rgbaSha256: '104a354046b44a159940180bf877c943f06e15eefefde47f61759a717b2f54b9',
+    +           sha256: '20e0575d0ff30bafdb29869114ddb79785ac2842f0902609a56d324b1889be55',
+    +           width: 112
+    +         },
+    +         {
+    +           alphaExtrema: [
+    +             0,
+    +             255
+    +           ],
+    +           bbox: [
+    +             0,
+    +             14,
+    +             121,
+    +             109
+    +           ],
+    +           height: 121,
+    +           path: 'preview-default-121.png',
+    +           rgbaSha256: 'a74f710b39d8281d43a47945330b03ebb77e896cb2cd50f800dc3b1a8026afcb',
+    +           sha256: 'fcbdc818b9adad3b61a34c602311edb6cecc139a54f965fd666a69831a3c5516',
+    +           width: 121
+    +         }
+    +       ],
+    +       render: {
+    +         height: 112,
+    +         width: 112
+    +       },
+    +       review: {
+    +         installed: false,
+    +         receipt: 'docs/art/buildings/fort-idle-198/receipt.json',
+    +         sceneAccepted: false,
+    +         status: 'CANDIDATE',
+    +         visualAccepted: true
+    +       },
+    +       runtime: {
+    +         alphaExtrema: [
+    +           0,
+    +           255
+    +         ],
+    +         bbox: [
+    +           3,
+    +           19,
+    +           256,
+    +           228
+    +         ],
+    +         derivation: {
+    +           crop: false,
+    +           filter: 'lanczos',
+    +           fit: false,
+    +           method: 'resize',
+    +           sourceSha256: 'e23437fe75e865a0df1a1f1c26d61a01f03b6d236c4f41fd2daf9fc3435d67f9',
+    +           wholeCanvas: true
+    +         },
+    +         height: 256,
+    +         path: 'fort-idle-198-runtime.png',
+    +         rgbaSha256: '0bd54325f539bcc86f8c64291d210438d27b87ddd7198226536a94b3736aa57d',
+    +         sha256: '8e4080facf13d77879d03e88336e8817c657d7a40b220e2b94a53e47a7bdf7b3',
+    +         width: 256
+    +       },
+    +       runtimeWebp: {
+    +         lossless: true,
+    +         path: 'runtime.webp',
+    +         rgbaIdenticalToRuntimePNG: true,
+    +         sha256: '4eeb89fa9edb880de8909cdc2ed653506334928b950c6f024d230a8555978ef9'
+    +       },
+    +       schema: 'rds-whole-building-candidate/v1',
+    +       source: {
+    +         alphaExtrema: [
+    +           0,
+    +           255
+    +         ],
+    +         bbox: [
+    +           0,
+    +           0,
+    +           1254,
+    +           1254
+    +         ],
+    +         height: 1254,
+    +         path: '../../../docs/art/buildings/fort-idle-198/raw.png',
+    +         rgbaSha256: '701662766689f5f44722bd96465b1f5c6957e82ce704b20b5eb3bd25da17b809',
+    +         sha256: 'e23437fe75e865a0df1a1f1c26d61a01f03b6d236c4f41fd2daf9fc3435d67f9',
+    +         width: 1254
+    +       },
+    +       state: 'idle',
+    +       unresolvedStates: [
+    +         'construction',
+    +         'attack',
+    +         'hit',
+    +         'death'
+    +       ],
+    +       working: {
+    +         alphaExtrema: [
+    +           0,
+    +           255
+    +         ],
+    +         bbox: [
+    +           0,
+    +           21,
+    +           512,
+    +           504
+    +         ],
+    +         height: 512,
+    +         path: 'working.png',
+    +         rgbaSha256: '6835d90e3dc4a28f44c5a7010b94e4f08c5196b3f7b3b5847cff0a4835b87002',
+    +         sha256: '3364ee681825eade11e980c35218a4d11560dc5d9a31a46abde7263edb1bfc76',
+    +         width: 512
+    +       }
+    +     },
+    +     image: {
+    +       height: 256,
+    +       width: 256
+    +     }
+    +   },
+    +   sample: {
+    +     durationMs: 1000,
+    +     elapsedMs: 0,
+    +     events: [],
+    +     frame: 0
+    +   },
+    +   visualState: 'idle',
+    +   walkPhase: null
+    + }
+    - false
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: false
+  actual:
+    raster:
+      image:
+        width: 256
+        height: 256
+      asset:
+        schema: 'rds-whole-building-candidate/v1'
+        id: 'fort-idle-198'
+        family: 'building.fort'
+        kind: 'building'
+        state: 'idle'
+        direction: ~
+        candidate: true
+        review:
+          status: 'CANDIDATE'
+          visualAccepted: true
+          installed: false
+          sceneAccepted: false
+          receipt: 'docs/art/buildings/fort-idle-198/receipt.json'
+        source:
+          path: '../../../docs/art/buildings/fort-idle-198/raw.png'
+          sha256: 'e23437fe75e865a0df1a1f1c26d61a01f03b6d236c4f41fd2daf9fc3435d67f9'
+          rgbaSha256: '701662766689f5f44722bd96465b1f5c6957e82ce704b20b5eb3bd25da17b809'
+          width: 1254
+          height: 1254
+          bbox:
+            0: 0
+            1: 0
+            2: 1254
+            3: 1254
+          alphaExtrema:
+            0: 0
+            1: 255
+        working:
+          path: 'working.png'
+          sha256: '3364ee681825eade11e980c35218a4d11560dc5d9a31a46abde7263edb1bfc76'
+          rgbaSha256: '6835d90e3dc4a28f44c5a7010b94e4f08c5196b3f7b3b5847cff0a4835b87002'
+          width: 512
+          height: 512
+          bbox:
+            0: 0
+            1: 21
+            2: 512
+            3: 504
+          alphaExtrema:
+            0: 0
+            1: 255
+        runtime:
+          path: 'fort-idle-198-runtime.png'
+          sha256: '8e4080facf13d77879d03e88336e8817c657d7a40b220e2b94a53e47a7bdf7b3'
+          rgbaSha256: '0bd54325f539bcc86f8c64291d210438d27b87ddd7198226536a94b3736aa57d'
+          width: 256
+          height: 256
+          bbox:
+            0: 3
+            1: 19
+            2: 256
+            3: 228
+          alphaExtrema:
+            0: 0
+            1: 255
+          derivation:
+            method: 'resize'
+            filter: 'lanczos'
+            sourceSha256: 'e23437fe75e865a0df1a1f1c26d61a01f03b6d236c4f41fd2daf9fc3435d67f9'
+            wholeCanvas: true
+            crop: false
+            fit: false
+        cell:
+          width: 256
+          height: 256
+        pivot:
+          x: 627
+          y: 1010
+          space: 'source'
+          status: 'PROVISIONAL_REFERENCE_FAMILY_BASE_CENTER_NEEDS_ACTUAL_SCENE_INTAKE'
+        render:
+          width: 112
+          height: 112
+        contactShadow:
+          mode: 'baked'
+        alphaPolicy: 'transparent'
+        frames:
+          0:
+            x: 0
+            y: 0
+            width: 256
+            height: 256
+            durationMs: 1000
+        loop: true
+        preview:
+          0:
+            path: 'preview-112.png'
+            sha256: '20e0575d0ff30bafdb29869114ddb79785ac2842f0902609a56d324b1889be55'
+            rgbaSha256: '104a354046b44a159940180bf877c943f06e15eefefde47f61759a717b2f54b9'
+            width: 112
+            height: 112
+            bbox:
+              0: 0
+              1: 13
+              2: 112
+              3: 101
+            alphaExtrema:
+              0: 0
+              1: 255
+          1:
+            path: 'preview-default-121.png'
+            sha256: 'fcbdc818b9adad3b61a34c602311edb6cecc139a54f965fd666a69831a3c5516'
+            rgbaSha256: 'a74f710b39d8281d43a47945330b03ebb77e896cb2cd50f800dc3b1a8026afcb'
+            width: 121
+            height: 121
+            bbox:
+              0: 0
+              1: 14
+              2: 121
+              3: 109
+            alphaExtrema:
+              0: 0
+              1: 255
+        layoutReason: 'Whole compact defensive fort candidate; same whole1254family transform512working/256runtime/112logicalcell. Idle only, otherstates unresolved.'
+        runtimeWebp:
+          path: 'runtime.webp'
+          sha256: '4eeb89fa9edb880de8909cdc2ed653506334928b950c6f024d230a8555978ef9'
+          lossless: true
+          rgbaIdenticalToRuntimePNG: true
+        unresolvedStates:
+          0: 'construction'
+          1: 'attack'
+          2: 'hit'
+          3: 'death'
+    visualState: 'idle'
+    walkPhase: ~
+    sample:
+      frame: 0
+      elapsedMs: 0
+      durationMs: 1000
+      events:
+    direction: ~
+    elapsed: 5000
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///tmp/rds-construction217-baseline/tests/construction-visibility217.test.js:40:10)
+    async Test.run (node:internal/test_runner/test:1208:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:831:7)
+  ...
+1..6
+# tests 6
+# suites 0
+# pass 2
+# fail 4
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 89.435857

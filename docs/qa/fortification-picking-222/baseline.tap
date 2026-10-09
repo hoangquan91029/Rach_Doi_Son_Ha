@@ -1,0 +1,202 @@
+TAP version 13
+# Subtest: wall ghost area does not intercept unit pick at zoom0.55
+not ok 1 - wall ghost area does not intercept unit pick at zoom0.55
+  ---
+  duration_ms: 1.31821
+  type: 'test'
+  location: '/tmp/rds-picking222-baseline/tests/fortification-picking222.test.js:5:31'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    1 !== 2
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 2
+  actual: 1
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///tmp/rds-picking222-baseline/tests/fortification-picking222.test.js:5:251)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1201:25)
+    Test.start (node:internal/test_runner/test:1096:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:385:17)
+  ...
+# Subtest: wall ghost area does not intercept unit pick at zoom1.08
+not ok 2 - wall ghost area does not intercept unit pick at zoom1.08
+  ---
+  duration_ms: 0.1817
+  type: 'test'
+  location: '/tmp/rds-picking222-baseline/tests/fortification-picking222.test.js:5:31'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    1 !== 2
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 2
+  actual: 1
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///tmp/rds-picking222-baseline/tests/fortification-picking222.test.js:5:251)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1201:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+    Test.postRun (node:internal/test_runner/test:1330:19)
+    Test.run (node:internal/test_runner/test:1258:12)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3)
+  ...
+# Subtest: wall ghost area does not intercept unit pick at zoom1.8
+not ok 3 - wall ghost area does not intercept unit pick at zoom1.8
+  ---
+  duration_ms: 0.195196
+  type: 'test'
+  location: '/tmp/rds-picking222-baseline/tests/fortification-picking222.test.js:5:31'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    1 !== 2
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 2
+  actual: 1
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///tmp/rds-picking222-baseline/tests/fortification-picking222.test.js:5:251)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1201:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+    Test.postRun (node:internal/test_runner/test:1330:19)
+    Test.run (node:internal/test_runner/test:1258:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:831:7)
+  ...
+# Subtest: actual wall face remains selectable for topology3
+ok 4 - actual wall face remains selectable for topology3
+  ---
+  duration_ms: 0.207681
+  type: 'test'
+  ...
+# Subtest: actual wall face remains selectable for topology12
+ok 5 - actual wall face remains selectable for topology12
+  ---
+  duration_ms: 0.09209
+  type: 'test'
+  ...
+# Subtest: actual wall face remains selectable for topology5
+ok 6 - actual wall face remains selectable for topology5
+  ---
+  duration_ms: 0.075242
+  type: 'test'
+  ...
+# Subtest: actual wall face remains selectable for topology15
+ok 7 - actual wall face remains selectable for topology15
+  ---
+  duration_ms: 0.068096
+  type: 'test'
+  ...
+# Subtest: X gate open passage does not intercept clicks, header and posts remain selectable
+not ok 8 - X gate open passage does not intercept clicks, header and posts remain selectable
+  ---
+  duration_ms: 0.541332
+  type: 'test'
+  location: '/tmp/rds-picking222-baseline/tests/fortification-picking222.test.js:7:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + {
+    +   hp: 400,
+    +   id: 1,
+    +   kind: 'building',
+    +   owner: 0,
+    +   type: 'gate',
+    +   x: 10.5,
+    +   y: 10.5
+    + }
+    - null
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: ~
+  actual:
+    id: 1
+    owner: 0
+    kind: 'building'
+    type: 'gate'
+    x: 10.5
+    y: 10.5
+    hp: 400
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///tmp/rds-picking222-baseline/tests/fortification-picking222.test.js:7:141)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1201:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+    Test.postRun (node:internal/test_runner/test:1330:19)
+    Test.run (node:internal/test_runner/test:1258:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:831:7)
+  ...
+# Subtest: Y gate open passage remains clear and oriented header is selectable
+not ok 9 - Y gate open passage remains clear and oriented header is selectable
+  ---
+  duration_ms: 0.256571
+  type: 'test'
+  location: '/tmp/rds-picking222-baseline/tests/fortification-picking222.test.js:8:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + {
+    +   hp: 400,
+    +   id: 1,
+    +   kind: 'building',
+    +   owner: 0,
+    +   type: 'gate',
+    +   x: 10.5,
+    +   y: 10.5
+    + }
+    - null
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: ~
+  actual:
+    id: 1
+    owner: 0
+    kind: 'building'
+    type: 'gate'
+    x: 10.5
+    y: 10.5
+    hp: 400
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///tmp/rds-picking222-baseline/tests/fortification-picking222.test.js:8:128)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1201:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+    Test.postRun (node:internal/test_runner/test:1330:19)
+    Test.run (node:internal/test_runner/test:1258:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:831:7)
+  ...
+# Subtest: ordinary building picking and liveness/visibility guards remain unchanged
+ok 10 - ordinary building picking and liveness/visibility guards remain unchanged
+  ---
+  duration_ms: 0.231459
+  type: 'test'
+  ...
+1..10
+# tests 10
+# suites 0
+# pass 5
+# fail 5
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 53.585109

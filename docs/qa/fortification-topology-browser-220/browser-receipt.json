@@ -1,0 +1,53 @@
+{
+  "status": "HOLD_LIVE",
+  "method": "One corrected220 ordinary Delta scene; keyboard unusedgroup9 clear and exactlivingown pick; frozen215217 build; no group/appstate/commands injection; read-only diagnostics; no injected gameplay/state/facing/speed",
+  "errors": [],
+  "structures": [
+    {
+      "id": 35,
+      "type": "wall",
+      "x": 2.5,
+      "y": 23.5,
+      "completedTick": 310
+    },
+    {
+      "id": 43,
+      "type": "gate",
+      "x": 3.5,
+      "y": 23.5,
+      "completedTick": 606
+    },
+    {
+      "id": 52,
+      "type": "wall",
+      "x": 4.5,
+      "y": 23.5,
+      "completedTick": 864
+    },
+    {
+      "id": 53,
+      "type": "wall",
+      "x": 4.5,
+      "y": 24.5,
+      "completedTick": 1126
+    }
+  ],
+  "movement": [],
+  "bundleSHA256": "2f42ffffc97809c4bd321c91288fca68e15db345770620c96738690f5ce406eb",
+  "workerId": 7,
+  "line": {
+    "x": 3.5,
+    "y": 23.5,
+    "staging": {
+      "x": 3.5,
+      "y": 21.5
+    },
+    "d": 4
+  },
+  "error": "Error: Actual UI/state timeout\n    at wait (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/fortification-topology-browser-220/browser.mjs:5:177)\n    at async select (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/fortification-topology-browser-220/browser.mjs:9:385)\n    at async move (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/fortification-topology-browser-220/browser.mjs:10:25)\n    at async file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/fortification-topology-browser-220/browser.mjs:14:97",
+  "cleanup": {
+    "rooms": 0,
+    "serverListening": false,
+    "browserClosed": true
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "status": "LOCAL_GEOMETRY_PICKING_CONTRACT_AND_ACTUAL223_ACCEPTED",
+  "baseline": {
+    "pass": 5,
+    "fail": 5
+  },
+  "candidateCombined": {
+    "pass": 36,
+    "fail": 0
+  },
+  "scope": [
+    "fallback wall faces and rails",
+    "gate header/posts and open passage",
+    "three zoom levels",
+    "actual unit behind former ghost area",
+    "other building/liveness/visibility unchanged"
+  ],
+  "historicalFailureCause": "215/220 selection failure cause not established; original receipts retained",
+  "productionChanged": false,
+  "browserReceipt": "../fortification-picking-browser-223/browser-receipt.json"
+}

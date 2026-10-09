@@ -1,0 +1,29 @@
+{
+  "status": "HOLD_FAILED_GUARD_NO_RETRY",
+  "method": "One ordinary UI twoChrome contexts room; scout/builder move and Fort construction; read-only diagnostics, no commands/state/fog injection",
+  "errors": [],
+  "networkErrors": [],
+  "bundles": [
+    {
+      "peer": 0,
+      "sha256": "2f42ffffc97809c4bd321c91288fca68e15db345770620c96738690f5ce406eb"
+    },
+    {
+      "peer": 1,
+      "sha256": "2f42ffffc97809c4bd321c91288fca68e15db345770620c96738690f5ce406eb"
+    }
+  ],
+  "samples": [],
+  "room": "7027CB",
+  "invite": "http://127.0.0.1:43179/join/7027CB",
+  "roles": [
+    7,
+    24
+  ],
+  "error": "Error: Actual UI guard timeout\n    at wait (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/construction-visible-browser-218/browser.mjs:6:178)\n    at async file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/construction-visible-browser-218/browser.mjs:11:1407",
+  "cleanup": {
+    "rooms": 0,
+    "serverListening": false,
+    "browserClosed": true
+  }
+}

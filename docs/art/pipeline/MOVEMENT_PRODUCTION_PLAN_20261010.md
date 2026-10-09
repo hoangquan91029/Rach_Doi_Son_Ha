@@ -52,6 +52,10 @@ Krita mô tả keyframes trước rồi inbetween, dùng onion-skin của frame 
 
 Pending human question cũ scoped195; không tự suy reply ấy chấp nhận213 và không hỏi lại liên tục. Owner032wood và141iron chỉ áp dụng đúng các D1 loop đã xem. Food101 pending riêng. Loadedgoods luôn ordinarywalk.
 
+### Thực thi216/219/225
+
+216 export nguyên wholecanonical qua uniform128/89, zeroimagecalls. Sharedpivot giúp anchor nhưng idlebody hẹp hơnwalk/bakedshadow khác, chưatransitionapproval.219 runtimecandidate có29asset vàdistancePerCycle1.26 nhưng boot bịrejecthai rootabsolutepaths; zeroactualtravel.225 là NEWfiniteorder sửaONLYhai relativepaths trong isolatedcopy, validateactual loader vàONEofflineDeltaUI trial. OnlinePause intentionallycontinuesfield nên dùngoffline đểkiểmfreeze, khôngđổi hànhvi pause. Đọc receipt225actual trướcnextorder; failedguards phải lưu state/toast/screens/cleanup, không blindrepeat hoặc fakefacing.
+
 ## 5. Foot contact và runtime: hai gate khác nhau
 
 Stationary loop phát hiện shape/seam, không chứng minh chân bám đất khi nhân vật tiến. D0 là world+X chiếu xuống/phải màn hình. Runtime root tiến trong khi chân trụ trong hình phải lùi tương ứng; chân cố định trong cell sẽ trượt ngoài world. Existing distancePerCycle1.26 là metadata provisional, không phải số đã được hình ảnh chứng minh.
@@ -65,3 +69,5 @@ Tái sử dụng model specification, phase/ownership conventions, timing/stride
 Khả năng giữ anatomy/volume qua nhiều image calls chưa được bảo đảm. Skill/tool reference chỉ giúp tổ chức và hướng dẫn, không ràng buộc hình học tuyệt đối. Nếu một finite method vẫn trả pose lặp/dị dạng, ghi HOLD và thay cách điều khiển whole drawing; không hứa sản xuất hàng nghìn frame bằng workflow chưa qualified. Đo throughput từ action hoàn chỉnh được chấp nhận, không từ số calls/files.
 
 Full project **INCOMPLETE**. Public207 optionalfort28 giữ nguyên, chưa chứa D0. Previous active plan byte-preserved tại `docs/checkpoints/checkpoint209-entrypoints/`; mọi source/rejection/custody tiếp tục bảo toàn. Builtin imagegen/Sol6.1Low/pure2D, không API/key/quota/3D/cutouts.
+
+Current runtime update225/226:225 actualloader29PASS, livingownD0travel observed but town detour/D1 and partial samples causedHOLD; PauseResumeStop/menu unperformed. This is not proof of skipped renderer frames or bad motion.226 NEWsamefrozen225build uses an actualclear outside-towncorridor and25ms observations, ONEofflineUI/160s/no retry. Inspect actual226receipt; no approval/installation/fanout or perframefit/scale/speedchanges.227 release preparation-only for accepted215/217/222/210 code; public207 still unchanged.

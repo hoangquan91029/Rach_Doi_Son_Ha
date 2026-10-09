@@ -1,0 +1,9 @@
+#218 finite two-peer construction browser check — HOLD
+
+One logical local room7027CB, two clean Chromium contexts. Exact frozen215 stage /tmp/rds-topology215/build, JS Bg-WjlC4 SHA2f42ffffc97809c4bd321c91288fca68e15db345770620c96738690f5ce406eb.217 sharedsim29233a…748b/rasterd4069…ed9d8 asserted before launch; source-build-pins.json binds actual server/sim/raster/renderer/build and217/215 inventories. No source/art/build/deploy/dist/status/commit changes; no duplicate215 build.
+
+Ordinary host create, guest actual invite link join, Delta ready, role/live selection; host villager7 scouted ford32.5/23.5 and guest villager24 moved to37.5/25.5. Both move destination and ownership/liveness guards passed. Guest selected Fort build, ordinary minimap framing and placement click intended36.5/26.5. Guard awaiting actual owner snapshot exactsite with underConstruction=true timed out. No second room/run or weakened assertion. Receipt retains failure stack and exact served bundle for both peers; zero page/network errors.
+
+No unfinished enemy building snapshot or image was captured, so218 does NOT prove public construction flag/privacy/render/completion/fog-hidden behavior.217 targeted mechanics tests remain separate evidence. Failure-state snapshot/toast was not preserved by the helper; placement rejection versus another visible state cannot be inferred from this receipt. A later authorized diagnostic should preserve the current state/toast at a failed guard before cleanup; no runtime fix is justified by this harness timeout alone.
+
+Both contexts/browser and owned ephemeral server closed normally in finally; rooms0,serverListening false. No production service restart. No209 replay/fullmatch/WAN/final multiplayer or visual acceptance claim.216 idle remains preparation-only;213 unchanged.

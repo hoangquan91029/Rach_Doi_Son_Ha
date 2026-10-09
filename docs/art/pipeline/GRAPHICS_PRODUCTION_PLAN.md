@@ -4,6 +4,12 @@ Kế hoạch toàn game: [PROJECT_PLAN.md](../../PROJECT_PLAN.md). Phạm vi và
 
 **Movement hiện hành:** [plan213](MOVEMENT_PRODUCTION_PLAN_20261010.md), [research212](movement-research-212/README.md), [actual213loop](pure2d-walk-D0-preview-213/actual-output/playback/actual-eight-frame-loop.png).213 giữ208 chỉ sửaF4=211wholebody/arms; technicalplaybackPASS, motion/owner/worldfootlock/runtime/fanoutOPEN. Các mục181/195 phía dưới là lịch sử nguồn, không currentNEXT. Public207fort28/185files thay149; fullgoal INCOMPLETE. Local210 wall/gateadjacencyfixed, renderer/topologyartunfinished. No moreblindcalls; briefwholeloop→samefamilyidle→actualD0travel, thenqualifiedfanout. Previousplanbytearchive209.
 
+## Integration224
+
+Local215/222/223 đã sửa projectedWallGate fallbacktopology và vùng chọn, actualfivebuild/X/Y/corner/Gatetravel/PauseStopmenu acceptednarrow.214 wholeWallX ONEbuiltin candidate vẫn HOLDspan/worldalignment, khôngcài; finishedbuildingart còn thiếu.217 visibleconstructionboolean giữprivatejob/fogfilter, actual221 flag/redaction/completion verified nhưng overallscoutreturnHOLD; khôngclaim authoredcompletionscreenshot. Public207khôngđổi.
+
+216 wholecanonicalD0idle uniform128/89/pivot cùng213 prepared; bodyvolume/bakedshadow/Stoptransition cònopen.219 sealedHOLDboot hai pathrootabsolute;225 NEWfinite isolatedcopy sửaONLYruntimepathrelative trướcONEofflineD0travel/PauseResumeStop. Xem actual225receipt để chọnnextorder, khôngfanout hoặc suy motionapproval từtechnicaltests. Khôngcallảnhthêmtrongmovementtrial.
+
 ## Mục tiêu hình ảnh
 
 Minh họa lịch sử chân thực/bán chân thực, có khối và chiều sâu, chuyển động tự nhiên ở kích thước chơi RTS. Giữ mũ, trang phục, màu áo, dải thắt lưng (sash) và vật liệu theo mẫu nhân vật chuẩn (canonical). Không dùng nhân vật hình khối, 3D, cutout hay texture tay/chân riêng làm thành phẩm.
@@ -94,3 +100,5 @@ Sau actualoppositecontactintake mới mở fourwholeillustratedinbetweens theo a
 F0=188 explicitreassignment; F2=185; F4=192 whole correction giữ actual opposite legpaths; F6=182. F1/F5/F7 là actual193/194. F3=197 sau sole whole guide196, provisional với appearance/phase warning; original193F3 wrongcanvas/bodyjump loại. [Ledger](villager-walk-D0-contact-192/pilot-sequence-195.json) bind tất cả raw/tool receipts,1254wholecanvas/pivot và uniform128cell, không fit/mirror/pixelsplice.195 exporter tái dùng017/014, atlas1024×128 và APNG89cell/600ms. Actual Chromium támframes/ba vòng/zeroerrors là technical playback only.
 
 Root đã hiển thị actual APNG và hỏi một lần về chuyển động; chưa trả lời, chưa motion PASS. F3/F4 body khác neighbors cần continuous judgment; không xử lý bằng repeated still scoring hoặc đổi playback/game speed. Khi đủ tốt, D0 candidate runtime và same-family idle + ordinary UI movement/Pause/Stop kiểm tra practical contact/transition. Stationary preview không chứng minh world footlock. No fanout/defaultrelease/publicpromotion trong gói này.
+
+Current runtime update225/226:225 actualloader29PASS, livingownD0travel observed but town detour/D1 and partial samples causedHOLD; PauseResumeStop/menu unperformed. This is not proof of skipped renderer frames or bad motion.226 NEWsamefrozen225build uses an actualclear outside-towncorridor and25ms observations, ONEofflineUI/160s/no retry. Inspect actual226receipt; no approval/installation/fanout or perframefit/scale/speedchanges.227 release preparation-only for accepted215/217/222/210 code; public207 still unchanged.

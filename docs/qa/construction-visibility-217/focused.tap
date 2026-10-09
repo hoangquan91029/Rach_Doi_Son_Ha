@@ -1,0 +1,64 @@
+TAP version 13
+# Subtest: visible enemy construction has a visual flag without private job, queue, cargo or orders
+ok 1 - visible enemy construction has a visual flag without private job, queue, cargo or orders
+  ---
+  duration_ms: 6.746279
+  type: 'test'
+  ...
+# Subtest: owner retains actual construction progress and builder alongside same visual flag
+ok 2 - owner retains actual construction progress and builder alongside same visual flag
+  ---
+  duration_ms: 2.928346
+  type: 'test'
+  ...
+# Subtest: hidden enemy site is omitted entirely, even when previously seen
+ok 3 - hidden enemy site is omitted entirely, even when previously seen
+  ---
+  duration_ms: 1.389383
+  type: 'test'
+  ...
+# Subtest: ordinary construction completion clears visual flag; damage never means under construction
+ok 4 - ordinary construction completion clears visual flag; damage never means under construction
+  ---
+  duration_ms: 22.500337
+  type: 'test'
+  ...
+# Subtest: visual flag adds no construction semantics to units
+ok 5 - visual flag adds no construction semantics to units
+  ---
+  duration_ms: 1.239161
+  type: 'test'
+  ...
+# Subtest: authored completed building art is withheld for enemy construction flag, with idle retained after completion
+ok 6 - authored completed building art is withheld for enemy construction flag, with idle retained after completion
+  ---
+  duration_ms: 1.695699
+  type: 'test'
+  ...
+# Subtest: fort28 extends exactshipyard27 with hashbound wholeFortidle
+ok 7 - fort28 extends exactshipyard27 with hashbound wholeFortidle
+  ---
+  duration_ms: 2.967875
+  type: 'test'
+  ...
+# Subtest: Fort onlyfort idle; Shipyard shipyard+fort; unsupportedstates fallback
+ok 8 - Fort onlyfort idle; Shipyard shipyard+fort; unsupportedstates fallback
+  ---
+  duration_ms: 1.721326
+  type: 'test'
+  ...
+# Subtest: dynamicFort bank includes exactidle onlyfortroute; legacyshipyard missesFort
+ok 9 - dynamicFort bank includes exactidle onlyfortroute; legacyshipyard missesFort
+  ---
+  duration_ms: 36.378981
+  type: 'test'
+  ...
+1..9
+# tests 9
+# suites 0
+# pass 9
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 95.648333

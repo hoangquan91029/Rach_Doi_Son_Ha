@@ -1,0 +1,21 @@
+--- /home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/client/art-routes.js	2026-10-10 02:18:18.072081792 +0700
++++ /tmp/rds-D0-runtime219/source/client/art-routes.js	2026-10-10 05:41:26.131500550 +0700
+@@ -9,6 +9,7 @@
+  workshop:Object.freeze({manifestUrl:'/assets/art-v1/workshop-144-manifest.json',world:true}),
+  camp:Object.freeze({manifestUrl:'/assets/art-v1/camp-148-manifest.json',world:true}),
+  shipyard:Object.freeze({manifestUrl:'/assets/art-v1/shipyard-165-manifest.json',world:true}),
++ d0:Object.freeze({manifestUrl:'/assets/art-v1/d0-219-manifest.json',world:true}),
+  fort:Object.freeze({manifestUrl:'/assets/art-v1/fort-202-manifest.json',world:true})
+ });
+ export function artRoute(search=globalThis.location?.search||''){
+--- /home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/client/raster-slice.js	2026-10-10 03:04:22.846863593 +0700
++++ /tmp/rds-D0-runtime219/source/client/raster-slice.js	2026-10-10 05:41:26.131555161 +0700
+@@ -106,7 +106,7 @@
+    if(!enabled||!ready||!entity||entity.embarked||!finite(entity.x)||!finite(entity.y))return false;
+    if(entity.kind==='building'&&(entity.construction||entity.underConstruction===true)){recordMissing(`${entity.type}:construction`,'No authored construction sequence');return false;}
+    let families,kind,direction;
+-   if(entity.kind==='building'){if(!['residence','granary'].includes(entity.type)&&!(['barracks','depot','artilleryWorkshop','cavalryCamp'].includes(entity.type)&&worldArtEnabled())&&!(entity.type==='shipyard'&&['shipyard','fort'].includes(artRoute().name) )&&!(entity.type==='fort'&&artRoute().name==='fort'))return false;families=[entity.type,`building.${entity.type}`];kind='building';direction=null;}
++   if(entity.kind==='building'){if(!['residence','granary'].includes(entity.type)&&!(['barracks','depot','artilleryWorkshop','cavalryCamp'].includes(entity.type)&&worldArtEnabled())&&!(entity.type==='shipyard'&&['shipyard','fort','d0'].includes(artRoute().name) )&&!(entity.type==='fort'&&['fort','d0'].includes(artRoute().name)))return false;families=[entity.type,`building.${entity.type}`];kind='building';direction=null;}
+    else if(['villager','infantry','cavalry'].includes(entity.type)){families=[entity.type,`unit.${entity.type}`];kind='unit';direction=entity.dir;}
+    else if(entity.type==='general'&&entity.character==='tran_hung_dao'){families=['tran_hung_dao','unit.tran_hung_dao'];kind='unit';direction=entity.dir;}
+    else return false;
