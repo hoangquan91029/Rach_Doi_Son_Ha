@@ -1,3 +1,13 @@
+## Current139 /136 — complete actual eight-frame iron source loop; next137 actual gameplay
+
+139 separate2builtin calls returned/zero retries/noopen;135original4started/interrupted remains,138exactF3F5recovery preserved. Root selectedactualF1EARLY_WINDUP_SLIGHT_OVERSHOOT→F2settle (requestedmidpointHOLD unchanged), F3EARLY_NEAR_CONTACT, F6LATE_RETURN, F7quietsettle; no sourcepixelrepair/framefill/originalpose-success claims. All8actualwholePNG candidates bound139parent-selection.
+
+136 actual017/098 export COMPLETE_TECHNICAL: eight-source128atlas/manifest/89sheet/1080ms APNG actual-output/actual-action.png; source1254/pivot6541140/uniform128/render89/timings17013016080100110150180. Chromium all8/play/pause240ms frame+clockhold/replay PASS ready2/failed0/errors0/owned81278 HTTP39436+browserclosed. ActualAPNG showninline. Continuousnaturalness/worldfootlock/owner/publiciron/fanout remains OPEN; technicalproof/stills do not substitute motionreview.139source receipts/136EXECUTION_CHECKPOINT override olderprep wording without rewriting it.
+
+NEXT137 PLANONLY requires NEW finite LOCAL runtime implementation order from currentcanonical128/FROZEN132, actual136atlas+manifestpins: optional?art=iron24=terrain23+gather_ironD1 atlas, sameworldartguard sharing andauthgatherEpisode existingAPI; oldroutes/source/sim/economy preserved. ONErealDelta ordinaryUI D1ironcontact/all8/pause-resume-stop-restart/full20ordinarywalkdeposit/treasurydelta/storage/lifecycle/24+12/errors0, nofakefacing/state/fog/commands. KeepironLOCAL untilactualmotionreview; no newimages/blindheldretries/directionunitfanout. Allcurrentworkers/imagecalls/testhandles terminal; public129intentionallyruns23worldart+HUD. Fullgoal NOT COMPLETE.
+
+---
+
 ## Current138 recovered partial135 / new139 finite source order
 
 138 confirms exactreturnedF03/F05 rawPNG+completedtoolreceipts, bytesmatchworkerimagepayload. Original135four-call records remainhashidentical; F01/F07 have no completedresult/returnedpath beforeworkerturn_aborted14:32:20Z andpriorlivehandle is missing. Backend outcomeunknown; staleOPEN alone notlive/completion. Zero138newcalls. Rootbrief89sheet selectsactualF3EARLY_NEAR_CONTACT/briefdwell (notrequestedmidpointsuccess) andF5MID_LIFT, with originalphaseprompts preserved. New139separate finiteTWOslot sourceorder F01/F07 authorized, zero retries; inspectitsactualhandle before calls.135doesnotresume.136export137runtime remainPREPONLY until all8actualsourcesselected. No motion/footlock/fanout/publiciron acceptance.

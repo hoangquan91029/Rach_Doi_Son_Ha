@@ -1,0 +1,63 @@
+{
+  "status": "SEPARATE_FINITE_TWO_SLOT_AUTHORIZED",
+  "maxCalls": 2,
+  "retries": 0,
+  "slots": {
+    "F01": {
+      "references": [
+        {
+          "path": "docs/art/motion/villager-gather-iron-SOUTH-131/F00-raw.png",
+          "sha256": "7912b5c550a8deab4718551d7fb2052fa3148b736afb5c69a7308da81e91ee0d"
+        },
+        {
+          "path": "docs/art/motion/villager-gather-iron-SOUTH-134/F02/raw.png",
+          "sha256": "be76be63911be3c42f7d95e35662c544b4d964b76f95230f225883622f8a4196"
+        }
+      ],
+      "roles": "Image1 selectedF00 is PRIMARYidentity AND predecessorREADY. Image2 selectedF02 nextmodestwindup.",
+      "maxCalls": 1,
+      "retries": 0
+    },
+    "F07": {
+      "references": [
+        {
+          "path": "docs/art/motion/villager-gather-iron-SOUTH-131/F00-raw.png",
+          "sha256": "7912b5c550a8deab4718551d7fb2052fa3148b736afb5c69a7308da81e91ee0d"
+        },
+        {
+          "path": "docs/art/motion/villager-gather-iron-SOUTH-134/F06/raw.png",
+          "sha256": "b6ec5d1f518d325c5ed1a0b99d95d805ded3b248b901774c2d0705822ce97195"
+        }
+      ],
+      "roles": "Image1 selectedF00 PRIMARYidentity/root/grip AND nextREADY seamtarget. Image2 selectedF06 predecessorLATE_RETURN_TO_READY selectedviaexplicitrootphase reassignment.",
+      "maxCalls": 1,
+      "retries": 0
+    }
+  },
+  "canvas": [
+    1254,
+    1254
+  ],
+  "pivot": [
+    654,
+    1140
+  ],
+  "runtime": [
+    128,
+    128
+  ],
+  "render": [
+    89,
+    89
+  ],
+  "routing": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low"
+  },
+  "phaseAuthority": "docs/art/motion/villager-gather-iron-SOUTH-134/parent-selection.json",
+  "motionApproval": false,
+  "history": "135fourstarted attempts interrupted, F03/F05recovered138.139is newseparate2callorder, no backendfailurecertainty or retry135.",
+  "parentIntake": "docs/art/motion/villager-gather-iron-SOUTH-135/recovery-138/parent-intake.json",
+  "HEAD": "2dcadb434672b8a5185d2255ef5faf8800385da0",
+  "underlyingImageModel": "not exposed by builtintool"
+}

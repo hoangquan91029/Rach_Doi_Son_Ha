@@ -1,0 +1,377 @@
+{
+  "status": "CANDIDATE_TECHNICAL_CUSTODY_ONLY",
+  "jobSha256": "0ba2989dce8eb601f71eb28973445f5f069961bbb7dc65018696913c5dcca383",
+  "contractValidatorSha256": "a6661ea6c5f3cd3af86d0bf58df971bab6b0632d06e7821889cad0ecc2950646",
+  "packagingValidation": {
+    "manifest": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-iron-preview-136/actual-output/manifest.json",
+    "packaging": "PASS",
+    "visualApprovalGranted": false,
+    "manifestStatus": "CANDIDATE",
+    "assets": [
+      {
+        "id": "villager-gather-iron-south-136",
+        "packaging": "PASS",
+        "visualReview": "CANDIDATE",
+        "candidate": true,
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/villager-gather-iron-SOUTH-131/F00-raw.png",
+          "sha256": "7912b5c550a8deab4718551d7fb2052fa3148b736afb5c69a7308da81e91ee0d",
+          "rgbaSha256": "691739c9d6c0b997d701d7bce811d21c1bb4978442581650a8629a07c5bb8a31",
+          "dimensions": [
+            1254,
+            1254
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            27,
+            26,
+            1232,
+            1237
+          ],
+          "warnings": []
+        },
+        "runtime": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-iron-preview-136/actual-output/atlas.png",
+          "sha256": "0f53648dd459d91a93b35dbf113c12fe753017b0971ec0ed8a55ad7647aab7cc",
+          "rgbaSha256": "7962e78ebe5afc46d4a53d4d4d4d52641b6299f5caca944f4344cc4a0c406adf",
+          "dimensions": [
+            528,
+            264
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            29,
+            4,
+            523,
+            260
+          ],
+          "warnings": []
+        },
+        "frames": [
+          {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/villager-gather-iron-SOUTH-131/F00-raw.png",
+            "sha256": "7912b5c550a8deab4718551d7fb2052fa3148b736afb5c69a7308da81e91ee0d",
+            "rgbaSha256": "691739c9d6c0b997d701d7bce811d21c1bb4978442581650a8629a07c5bb8a31",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "alphaExtrema": [
+              0,
+              255
+            ],
+            "bbox": [
+              27,
+              26,
+              1232,
+              1237
+            ],
+            "warnings": []
+          },
+          {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/villager-gather-iron-SOUTH-139/F01/raw.png",
+            "sha256": "414313372d2a13f241951d4d2c5373d695fe12d4d0656ddec4c6642ecde52529",
+            "rgbaSha256": "7535d5bc71f1aa5ca61a61ff65be93d0637ce5b6267b2fd4d33ddd6f8abd819f",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "alphaExtrema": [
+              0,
+              255
+            ],
+            "bbox": [
+              0,
+              17,
+              1232,
+              1214
+            ],
+            "warnings": [
+              {
+                "status": "CANDIDATE_WARNING",
+                "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+                "borderMax": 1,
+                "threshold16BBox": [
+                  413,
+                  55,
+                  1117,
+                  1209
+                ]
+              }
+            ]
+          },
+          {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/villager-gather-iron-SOUTH-134/F02/raw.png",
+            "sha256": "be76be63911be3c42f7d95e35662c544b4d964b76f95230f225883622f8a4196",
+            "rgbaSha256": "ca98edd9ba9658f04bf6ce186019545f2b0237bb39f4cc644ed8b005f5522c25",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "alphaExtrema": [
+              0,
+              255
+            ],
+            "bbox": [
+              33,
+              45,
+              1224,
+              1220
+            ],
+            "warnings": []
+          },
+          {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/villager-gather-iron-SOUTH-135/recovery-138/F03/raw.png",
+            "sha256": "4f7cb2e00395151fce3ecf5947f6c81057d83adcf62f15eb931d62f2d1489bac",
+            "rgbaSha256": "3213f644bc834d0b50675b35fecdfa42a9ecf2397822f8c55607f56c475a1180",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "alphaExtrema": [
+              0,
+              255
+            ],
+            "bbox": [
+              0,
+              23,
+              1240,
+              1254
+            ],
+            "warnings": [
+              {
+                "status": "CANDIDATE_WARNING",
+                "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+                "borderMax": 1,
+                "threshold16BBox": [
+                  284,
+                  58,
+                  1204,
+                  1192
+                ]
+              }
+            ]
+          },
+          {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/villager-gather-iron-SOUTH-134/F04/raw.png",
+            "sha256": "167687c7e870cfada2004233577d3d94367d9a6bbb3e152322996493e11205f0",
+            "rgbaSha256": "c47d11c8e11befbddf0dc1296934289d6620ecd0b11a6685a9af639314bf3ee6",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "alphaExtrema": [
+              0,
+              255
+            ],
+            "bbox": [
+              19,
+              21,
+              1235,
+              1228
+            ],
+            "warnings": []
+          },
+          {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/villager-gather-iron-SOUTH-135/recovery-138/F05/raw.png",
+            "sha256": "2c508b1f6a6ebc234156fd495aab3f9874cc792c762123b2826c703834d0d44d",
+            "rgbaSha256": "316eb67dfda090e318dd53b0686a115ec10173a78e1b2e18c838c3d8c219726a",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "alphaExtrema": [
+              0,
+              255
+            ],
+            "bbox": [
+              0,
+              29,
+              1234,
+              1254
+            ],
+            "warnings": [
+              {
+                "status": "CANDIDATE_WARNING",
+                "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+                "borderMax": 1,
+                "threshold16BBox": [
+                  359,
+                  59,
+                  1099,
+                  1196
+                ]
+              }
+            ]
+          },
+          {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/villager-gather-iron-SOUTH-134/F06/raw.png",
+            "sha256": "b6ec5d1f518d325c5ed1a0b99d95d805ded3b248b901774c2d0705822ce97195",
+            "rgbaSha256": "4de4a293a144143cd5d876bb5cd29fb1c07791a49ecfd65c1c2d458f894e5184",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "alphaExtrema": [
+              0,
+              255
+            ],
+            "bbox": [
+              41,
+              41,
+              1246,
+              1214
+            ],
+            "warnings": []
+          },
+          {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/villager-gather-iron-SOUTH-139/F07/raw.png",
+            "sha256": "198c2e62823375ec1f53ccf035c82a33b073e78e5d02fd7e983d13e5f654de9a",
+            "rgbaSha256": "03a9e21327026d57f697359661a8890618f06683b2e492f0f63e3c0f80e3cde2",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "alphaExtrema": [
+              0,
+              255
+            ],
+            "bbox": [
+              33,
+              21,
+              1200,
+              1215
+            ],
+            "warnings": []
+          }
+        ],
+        "fixedPivot": {
+          "x": 654,
+          "y": 1140,
+          "space": "source"
+        },
+        "logicalRender": {
+          "width": 89,
+          "height": 89
+        },
+        "warnings": [
+          {
+            "status": "CANDIDATE_WARNING",
+            "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+            "borderMax": 1,
+            "threshold16BBox": [
+              413,
+              55,
+              1117,
+              1209
+            ]
+          },
+          {
+            "status": "CANDIDATE_WARNING",
+            "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+            "borderMax": 1,
+            "threshold16BBox": [
+              284,
+              58,
+              1204,
+              1192
+            ]
+          },
+          {
+            "status": "CANDIDATE_WARNING",
+            "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+            "borderMax": 1,
+            "threshold16BBox": [
+              359,
+              59,
+              1099,
+              1196
+            ]
+          }
+        ]
+      },
+      {
+        "id": "unit-contact-shadow",
+        "packaging": "PASS",
+        "visualReview": "CANDIDATE",
+        "candidate": true,
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/public/assets/art-v1/effects/unit-contact-shadow.png",
+          "sha256": "1572b3fd6dd84d36a423adbdbfca1975a071b07bd0c4043edd55688db0ed99bd",
+          "rgbaSha256": "242424c39edc2976292046eb766fcad9360a922b9c2b2f43d2ead0f5d6455d19",
+          "dimensions": [
+            1254,
+            1254
+          ],
+          "alphaExtrema": [
+            0,
+            168
+          ],
+          "bbox": [
+            103,
+            53,
+            1196,
+            1196
+          ],
+          "warnings": []
+        },
+        "runtime": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-iron-preview-136/actual-output/unit-contact-shadow.webp",
+          "sha256": "274b81f26e3869e158b0ab1e5093cd8a899d5255f0239c25ec7ab07ec314a7ff",
+          "rgbaSha256": "d581fe0139344e7a72697d43abcfe00b332f5eea107bb9a4ed7acebfb79ab647",
+          "dimensions": [
+            256,
+            256
+          ],
+          "alphaExtrema": [
+            0,
+            167
+          ],
+          "bbox": [
+            66,
+            115,
+            200,
+            150
+          ],
+          "warnings": []
+        },
+        "frames": [],
+        "fixedPivot": {
+          "x": 658,
+          "y": 648,
+          "space": "source"
+        },
+        "logicalRender": {
+          "width": 42,
+          "height": 42
+        },
+        "warnings": []
+      }
+    ],
+    "errors": []
+  },
+  "runtimePivot": [
+    66.75598086124401,
+    116.36363636363636
+  ],
+  "uniformScale": 0.10207336523125997,
+  "gutter": 2,
+  "gutterPolicy": "transparent zero padding only; no extrusion/trim",
+  "cycleDurationMs": 1080,
+  "frames": 8,
+  "outputs": {
+    "manifest.json": "9074bfb874c00db3318e9bfa3553c876bf67701b9932aa12bd5eddb9325271af",
+    "atlas.png": "0f53648dd459d91a93b35dbf113c12fe753017b0971ec0ed8a55ad7647aab7cc",
+    "preview.json": "0593192207d7699736482c0ca9750e6676c9d1ae0ee9aaf2e3741046a0644320",
+    "preview.html": "e71f0cebebf82f7ffcb61ac1579665f227dbb46cac53537873ea5953ac983e62",
+    "unit-contact-shadow.webp": "274b81f26e3869e158b0ab1e5093cd8a899d5255f0239c25ec7ab07ec314a7ff",
+    "contact-sheet.png": "42a69f114cf4c3fb5aeb9a63d77da940e5e9ec1c2f4e0789da5e283136a981fc"
+  },
+  "limits": "Technical packaging only. Preview is actual declared-frame local playback; no travel/foot-lock/cadence/identity/owner/runtime approval."
+}

@@ -1,0 +1,81 @@
+{
+  "status": "ROOT_SELECTED_8_ACTUAL_SOURCE_CANDIDATES_FOR_FINITE136_PREVIEW",
+  "frames": [
+    {
+      "index": 0,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/villager-gather-iron-SOUTH-131/F00-raw.png",
+      "sha256": "7912b5c550a8deab4718551d7fb2052fa3148b736afb5c69a7308da81e91ee0d",
+      "selected": "SOURCE_CANDIDATE",
+      "actualRole": "ready"
+    },
+    {
+      "index": 1,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/villager-gather-iron-SOUTH-139/F01/raw.png",
+      "sha256": "414313372d2a13f241951d4d2c5373d695fe12d4d0656ddec4c6642ecde52529",
+      "selected": "SOURCE_CANDIDATE",
+      "actualRole": "early windup with slight overshoot"
+    },
+    {
+      "index": 2,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/villager-gather-iron-SOUTH-134/F02/raw.png",
+      "sha256": "be76be63911be3c42f7d95e35662c544b4d964b76f95230f225883622f8a4196",
+      "selected": "SOURCE_CANDIDATE",
+      "actualRole": "windup settle"
+    },
+    {
+      "index": 3,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/villager-gather-iron-SOUTH-135/recovery-138/F03/raw.png",
+      "sha256": "4f7cb2e00395151fce3ecf5947f6c81057d83adcf62f15eb931d62f2d1489bac",
+      "selected": "SOURCE_CANDIDATE",
+      "actualRole": "early near contact"
+    },
+    {
+      "index": 4,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/villager-gather-iron-SOUTH-134/F04/raw.png",
+      "sha256": "167687c7e870cfada2004233577d3d94367d9a6bbb3e152322996493e11205f0",
+      "selected": "SOURCE_CANDIDATE",
+      "actualRole": "low contact"
+    },
+    {
+      "index": 5,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/villager-gather-iron-SOUTH-135/recovery-138/F05/raw.png",
+      "sha256": "2c508b1f6a6ebc234156fd495aab3f9874cc792c762123b2826c703834d0d44d",
+      "selected": "SOURCE_CANDIDATE",
+      "actualRole": "mid lift recovery"
+    },
+    {
+      "index": 6,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/villager-gather-iron-SOUTH-134/F06/raw.png",
+      "sha256": "b6ec5d1f518d325c5ed1a0b99d95d805ded3b248b901774c2d0705822ce97195",
+      "selected": "SOURCE_CANDIDATE",
+      "actualRole": "late return toward ready"
+    },
+    {
+      "index": 7,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/villager-gather-iron-SOUTH-139/F07/raw.png",
+      "sha256": "198c2e62823375ec1f53ccf035c82a33b073e78e5d02fd7e983d13e5f654de9a",
+      "selected": "SOURCE_CANDIDATE",
+      "actualRole": "quiet settle to ready"
+    }
+  ],
+  "durationMs": [
+    170,
+    130,
+    160,
+    80,
+    100,
+    110,
+    150,
+    180
+  ],
+  "pivot": [
+    654,
+    1140
+  ],
+  "runtimeCell": 128,
+  "globalRender": 89,
+  "F01OriginalVerdict": "HOLD_NEAR_NEXT_KEY originalrequestedmidpointnotpassed; preserved",
+  "F01ActualUse": "Earlywindup slightovershoot\u2192F02settle, actualwholeframeunchanged; no duplicatefilling",
+  "previousReassignments": "F03earlynearcontact andF06lateready/originalHOLD preserved",
+  "motionAcceptance": "OPEN until actualreal-size loop review"
+}
