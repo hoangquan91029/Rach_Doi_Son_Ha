@@ -1,0 +1,9 @@
+#150 PREP ONLY — paired relational contacts
+
+Zero image calls/retries; no call open. Parent requested ONE new whole illustrated paired-contact sheet method, replacing independent F04 pose editing with a directly contrasted pair. Both physical leg trajectories are present in one visual context: RIGHT/near forward in A, LEFT/far forward in B. Same camera/root, separate parallel perspective foot tracks and opposite arm swing. The diagram is MODEL_ONLY; no artwork, parts, textures, TPS, warp, mirror, 3D or source pixel repair was created.
+
+Canonical appearance145b976f…6e94 and proper D0 view2d32f65f…092f are pinned in work-order. No selected033F00 or failedF04 is proposed as a pose attachment. Historical033/035/036/038/094 methods remain stopped and originals untouched. Their concise checkpoints establish the shared same-leading-leg failure; no new detailed old-art audit occurred.
+
+Parent must briefly read actual paired-contact-guide.png/SVG and work-order before any call. One built-in call/zero retries maximum after new execution dispatch, transparently preserving actual original/tool request/receipt. The tool exposes no declared aspect-ratio/pixel-lock controls here;2508x1254 is a requested layout, not promised output. Equal half-cell extraction and common uniform128 transform/padding/pivot formula are declared before generation. Complete character cell cutting is expressly parent-scoped for this trial, overriding skill default no-sheet-cutting; never limb assembly or per-frame fitting. If returned layout/clipping prevents this fixed derivation, HOLD rather than repair.
+
+One gameplay-size pair look should determine obvious leg alternation and coherent direction/identity. Even a selected pair would be contact-key candidates only; F2/F6/inbetweens/fanout/runtime/public remain closed pending parent actual intake. No full-loop naturalness, measured foot lock or owner approval follows from this preparation.

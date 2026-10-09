@@ -1,0 +1,57 @@
+{
+  "jobId": "villager-walk-D0-passing-keys-153",
+  "status": "PREP_ONLY_ROOT_GUIDE_INTAKE_AND_NEW_DISPATCH_REQUIRED",
+  "model": "gpt-6.1-sol",
+  "reasoningEffort": "low",
+  "callsMade": 0,
+  "callOpen": false,
+  "maxCalls": 2,
+  "retries": 0,
+  "slots": [
+    {
+      "frame": "F02",
+      "primaryTarget": "F02-clothed-guide.png",
+      "status": "UNCALLED",
+      "primaryTargetSha256": "a522b91f3531cc731f5cedca8ec78c00ccc050dd5cbe7ccaff9846ce6b1ae7ba"
+    },
+    {
+      "frame": "F06",
+      "primaryTarget": "F06-clothed-guide.png",
+      "status": "UNCALLED",
+      "primaryTargetSha256": "44d8f82f7441043f11637b14c1b92b32285541124d2a2d712509b96f6213913b"
+    }
+  ],
+  "secondaryReferences": [
+    {
+      "path": "docs/art/pipeline/villager-walk-ESE-033/F00-raw.png",
+      "sha256": "4a7d287bc844b02d00b38074f1b59e3ce41e109b30891c20b3026a8965c6041c",
+      "role": "selected contact identity/camera continuity ONLY, not passing pose target"
+    },
+    {
+      "path": "docs/art/pipeline/villager-walk-D0-clothed-guide-152/F04-raw.png",
+      "sha256": "7ff8328a69a3e666b8509e3f85bedd4c97a1be42cf99de74802f6124ea162ef0",
+      "role": "selected contact identity/camera continuity ONLY, not passing pose target"
+    }
+  ],
+  "canvas": [
+    1254,
+    1254
+  ],
+  "pivot": [
+    654,
+    1140
+  ],
+  "transform": "whole1254\u2192128 uniform Lanczos, game89 wholecanvas; no fitting/shift/mirror",
+  "pose": {
+    "F02": "nearRIGHT stance underbody; farLEFT flexed knee swing passes, raised sandal",
+    "F06": "farLEFT stance underbody; nearRIGHT flexed knee swing passes, raised sandal"
+  },
+  "laterGate": "No F1/F3/F5/F7/export/runtime/fanout until parent actual F2/F6 intake/new finite order",
+  "toolControl": "whole clothed PNG visual primary edit target; no guaranteed pose/pixel-lock control",
+  "note": "contact body proportions vary slightly; eventual actual whole loop look decides visible issues, no perframefit/footpolish",
+  "guideCoordinatePlanning": {
+    "mapping": "same original vector coordinate mapping yNew=1.08*y-74.4727272727 for BOTH guides, x unchanged; fixed ground root y1140/1254*1024",
+    "purpose": "bring whole drawn body/top closer to actual selected033F0/152F4 scale; modest passing rise",
+    "notSourceWarp": "original SVG guide authoring coordinates only, not pixel warp or per-frame-fit; future original PNG wholefamily export remains128/1254"
+  }
+}

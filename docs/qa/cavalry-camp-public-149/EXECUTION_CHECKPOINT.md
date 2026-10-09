@@ -1,0 +1,5 @@
+#149 PUBLIC terminal PASS narrow
+
+Frozen terminal148 source/helper/rootintake/actualreceipt bound. Exactly foodCHAR3exclusions receipted; Workshop25/iron24/terrain23/oldroutes retained.4smallcontracts/freshbuild PASS. Atomicpromotion index-05PkH4eu.js SHA 70808200c04fa3547aa4204a0baa6e04546f6d9206c93667ee4c3edf7556883b; normalTLS/PID157023/rooms0/noRestart/simulation unchanged/fullreadonly145rollbackarchive+oldchunks retained.
+
+ONEChromium+ONEFirefox26ready12portraits actualnewCamp construction→livingidle→Camp selection→ONEcavalryqueue/spawn→Pause/actualResume→F2 exactlivingownunembarkedmilitarycohort containingnewcavalry→ordinarygroupStop/newcavalryidle/menu PASS/errors0/network0/ownedcleanuprooms0. Camp-specific queue/spawn/TrainingCavalry predicates checked beforelaunch; militaryenumartillery staysvalid. Compact receipts contain no giantworld/fogarrays. Original148 Artillery-observerHOLD preserved. No isolatedcavalryclickclaim. No canonical/Git/topdocs/sourceart/image/API writes. FoodCHAR remains excluded. Public development scope only, finalrelease/roster/otherstates OPEN.

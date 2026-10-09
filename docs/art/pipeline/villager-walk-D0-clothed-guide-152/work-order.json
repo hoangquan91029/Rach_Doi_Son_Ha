@@ -1,0 +1,43 @@
+{
+  "status": "PREP_ONLY_ROOT_GUIDE_INTAKE_AND_NEW_EXECUTION_REQUIRED",
+  "jobId": "villager-walk-D0-clothed-guide-152",
+  "model": "gpt-6.1-sol",
+  "reasoningEffort": "low",
+  "method": "complete original clothed SVG pose as PRIMARY repaint/edit target",
+  "maxCalls": 1,
+  "callsMade": 0,
+  "callOpen": false,
+  "retries": 0,
+  "canvas": [
+    1254,
+    1254
+  ],
+  "pivot": [
+    654,
+    1140
+  ],
+  "runtimeCanvas": 128,
+  "gameCanvas": 89,
+  "transform": "one whole-canvas uniform128/1254; no bboxfit/shift/mirror/parts",
+  "primaryTarget": {
+    "path": "docs/art/pipeline/villager-walk-D0-clothed-guide-152/clothed-F04-guide.png",
+    "sha256": "171588eb03bf5a9fbb3cbcfd6d2b880e41156807022f8e9447a33278866c87a1",
+    "role": "complete clothed opposite-contact pose target, preserve pose/silhouette, repaint into finished identity"
+  },
+  "secondaryReferences": [
+    {
+      "path": "docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+      "role": "identity/style ONLY; do not preserve static leg pose"
+    },
+    {
+      "path": "docs/art/characters/villager-neutral-D00-screen-Southeast-007/raw.png",
+      "sha256": "2d32f65fe0f4c8037e19aeb5ace9b1b29e70ecf45a158d101770e86f9aa9092f",
+      "role": "identity/style ONLY; do not preserve static leg pose"
+    }
+  ],
+  "pose": "F4 LEFT/far at viewer-right hip leads and receives support; RIGHT/near at viewer-left hip trails with elevated heel/rear toe contact; RIGHT/near arm forward, LEFT/far arm back",
+  "toolControl": "No guaranteed pose/pixel-lock controls; SVG raster is visual target only, imagegen may ignore pose",
+  "intake": "one brief gameplay89 complete character look; HOLD same-phase/clipping/obvious anatomy/identity issue, zero retry",
+  "scope": "guide internal MODEL_ONLY, not selected/production/runtime character; no F2/F6/BIs/fanout/canonical/public/Git/topdocs"
+}

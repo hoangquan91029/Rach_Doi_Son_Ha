@@ -1,0 +1,5 @@
+#148 terminal PASS narrow
+
+Actual147wholeidle source/rootintake and213-sourcebaseline bound. Isolatedcamp26 exactWorkshop25prefix+147relativeWebP/scopedcampguard/Campidle eligibility only.11contractsPASS/freshbuild. Firsttrial queueobserverstaleartillery HOLD untouched underoriginal-queue-observer-hold. RootauthorizedONEQAonly followup fixesCampqueueunit/TrainingCavalry labels, sameexactsource/build/art.
+
+ActualDelta newCamp35 construction→idle→opaqueSelect→ONEcavalryqueue/spawn→PauseactualResume→F2EXACTcurrentliveownunembarkedmilitary containsnewcavalry/excludesbuildings/general/dead→ordinarygroupStop/newcavalryidle/menuPASS.26ready12portraits/errors0/failures0/ownedclosedrooms0. Conciseactualreceipt/screens/video retained. No gameplay/sim/canonical/public/newart changes; rootsceneintakerequired beforepromotion.

@@ -1,0 +1,39 @@
+{
+  "status": "SELECTED_OPPOSITE_CONTACT_KEY_CANDIDATES_NOT_LOOP",
+  "direction": 0,
+  "sourceCanvas": [
+    1254,
+    1254
+  ],
+  "sourcePivot": [
+    654,
+    1140
+  ],
+  "runtimeCell": [
+    128,
+    128
+  ],
+  "gameCanvas": 89,
+  "sources": [
+    {
+      "frame": 0,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-walk-ESE-033/F00-raw.png",
+      "sha256": "4a7d287bc844b02d00b38074f1b59e3ce41e109b30891c20b3026a8965c6041c"
+    },
+    {
+      "frame": 4,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-walk-D0-clothed-guide-152/F04-raw.png",
+      "sha256": "7ff8328a69a3e666b8509e3f85bedd4c97a1be42cf99de74802f6124ea162ef0"
+    }
+  ],
+  "actualPreview": "F00-F04-fixed89.png",
+  "finding": "Brief actual89px comparison shows033 front trouser crossing from nearer hip with near arm behind, versus152 front trouser connected to far hip and near arm forward. Thus choose152 as opposite-contact key candidate. Both forward boots being screen-right is expected for same ESE travel and not a rejection criterion. Materials/hat/clothing remain realistic and readable.",
+  "next": "Controlled whole-clothed passing-key guides F2/F6 then finite source order. Evaluate natural continuous loop after all8 actual frames; no perframefit/shift.",
+  "notEstablished": [
+    "natural full loop",
+    "measured world foot lock",
+    "runtime integration",
+    "direction or unit fanout",
+    "complete roster"
+  ]
+}

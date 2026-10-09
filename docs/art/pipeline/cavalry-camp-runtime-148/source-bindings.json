@@ -1,0 +1,57 @@
+{
+  "status": "PREP_ONLY_AWAIT147_TERMINAL_ROOT_SOURCE_INTAKE_AND_NEW_EXECUTION_ORDER",
+  "profile": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low"
+  },
+  "baseline": {
+    "stage": "/tmp/rdsh-workshop144-b1jo4_zy",
+    "canonical": "146",
+    "sourceFiles": 213,
+    "canonicalEquivalent": true,
+    "manifest": "/tmp/rdsh-workshop144-b1jo4_zy/public/assets/art-v1/workshop-144-manifest.json",
+    "manifestSha256": "27b5c45011e28c92da215a192189c381bfc44253e5a92ecc5db399001da26197",
+    "assets": 25
+  },
+  "reusedHelper": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/artillery-workshop-runtime-144/browser-group-stop-followup.mjs",
+    "sha256": "e58bc7c86fa857760dbe36c8239be68c56b652bed5ea932b044c45a0acbf55b4"
+  },
+  "source147": {
+    "rawPath": null,
+    "rawSha256": null,
+    "runtimePath": null,
+    "runtimeSha256": null,
+    "sourceCanvas": null,
+    "runtimeCell": null,
+    "render": null,
+    "pivot": null,
+    "rootIntake": null
+  },
+  "actualData": {
+    "building": "cavalryCamp",
+    "hp": 600,
+    "cost": {
+      "wood": 170,
+      "food": 0,
+      "iron": 35
+    },
+    "radius": 0.75,
+    "buildTimeSeconds": 15,
+    "trains": [
+      "cavalry"
+    ],
+    "cavalryCost": {
+      "wood": 45,
+      "food": 75,
+      "iron": 40
+    },
+    "cavalryTrainSeconds": 16
+  },
+  "futureResourcePreflight": {
+    "wood": 215,
+    "food": 75,
+    "iron": 75
+  },
+  "noExecution": true
+}

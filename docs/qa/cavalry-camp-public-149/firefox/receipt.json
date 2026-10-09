@@ -1,0 +1,1299 @@
+{
+  "status": "PASS_NARROW_ACTUAL_BUILD_IDLE_SELECT_TRAIN_PAUSE_RESUME_F2_GROUP_STOP_MENU",
+  "errors": [],
+  "failures": [],
+  "bundleSHA": "70808200c04fa3547aa4204a0baa6e04546f6d9206c93667ee4c3edf7556883b",
+  "boot": {
+    "mode": null,
+    "localPlayer": 0,
+    "roomCode": null,
+    "paused": false,
+    "camera": {
+      "x": 24,
+      "y": 24,
+      "zoom": 1
+    },
+    "selection": [],
+    "tick": null,
+    "pingMs": null,
+    "frameMs": 0,
+    "bootUi": {
+      "declared": 12,
+      "ready": 12,
+      "failures": [],
+      "fontWarnings": []
+    },
+    "art": {
+      "enabled": true,
+      "phase": "CANDIDATE",
+      "quality": "CANDIDATE",
+      "groundDraws": 0,
+      "propDraws": 0,
+      "entityDraws": 0,
+      "walkDraws": 0,
+      "idleDraws": 0,
+      "lastWalk": null,
+      "gatherDraws": 0,
+      "lastGather": null,
+      "missing": [],
+      "pipeline": {
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 26,
+        "ready": 26,
+        "approved": 0,
+        "candidates": 26,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 16942592,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 26,
+        "failures": []
+      }
+    },
+    "terrainCache": {
+      "builds": 0,
+      "draws": 0,
+      "pixels": 0
+    },
+    "displayedState": null
+  },
+  "worker": {
+    "id": 7,
+    "owner": 0,
+    "type": "villager",
+    "kind": "unit",
+    "x": 7.5,
+    "y": 21.5,
+    "hp": 65,
+    "maxHp": 65,
+    "food": 40,
+    "foodMax": 40,
+    "morale": 95,
+    "state": "idle",
+    "dir": 0,
+    "cooldown": 0,
+    "queue": [],
+    "cargo": {
+      "food": 0,
+      "wood": 0,
+      "iron": 0,
+      "units": []
+    },
+    "resuppliedTick": 4,
+    "starving": 0,
+    "order": null
+  },
+  "preflightResources": {
+    "wood": 550,
+    "food": 809.8145280000003,
+    "iron": 260
+  },
+  "site": {
+    "x": 5.5,
+    "y": 19.5,
+    "d": 2.8284271247461903
+  },
+  "construction": {
+    "tick": 13,
+    "mode": "offline",
+    "paused": false,
+    "localPlayer": 0,
+    "selection": [
+      7
+    ],
+    "camera": {
+      "x": 6.4,
+      "y": 20.142857142857142,
+      "zoom": 1.08
+    },
+    "art": {
+      "enabled": true,
+      "phase": "CANDIDATE",
+      "quality": "PLACEHOLDER_ONLY",
+      "groundDraws": 3072,
+      "propDraws": 375,
+      "entityDraws": 518,
+      "walkDraws": 0,
+      "idleDraws": 0,
+      "lastWalk": null,
+      "gatherDraws": 0,
+      "lastGather": null,
+      "missing": [
+        {
+          "key": "cavalryCamp:construction",
+          "reason": "No authored construction sequence",
+          "status": "PLACEHOLDER_ONLY"
+        }
+      ],
+      "pipeline": {
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 26,
+        "ready": 26,
+        "approved": 0,
+        "candidates": 26,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 16942592,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 26,
+        "failures": []
+      },
+      "hillDraws": 0,
+      "foodResourceDraws": 74,
+      "ironResourceDraws": 37
+    },
+    "bootUi": {
+      "declared": 12,
+      "ready": 12,
+      "failures": [],
+      "fontWarnings": []
+    },
+    "resources": {
+      "wood": 380,
+      "food": 809.3972160000011,
+      "iron": 225
+    },
+    "entities": [
+      {
+        "id": 7,
+        "owner": 0,
+        "type": "villager",
+        "kind": "unit",
+        "hp": 65,
+        "x": 7.5,
+        "y": 21.5,
+        "state": "idle",
+        "queue": [],
+        "order": {
+          "type": "build",
+          "target": 35
+        }
+      },
+      {
+        "id": 35,
+        "owner": 0,
+        "type": "cavalryCamp",
+        "kind": "building",
+        "hp": 72,
+        "x": 5.5,
+        "y": 19.5,
+        "state": "idle",
+        "construction": {
+          "remaining": 15,
+          "total": 15,
+          "builder": 7
+        },
+        "queue": [],
+        "order": null
+      }
+    ]
+  },
+  "idle": {
+    "tick": 324,
+    "mode": "offline",
+    "paused": false,
+    "localPlayer": 0,
+    "selection": [
+      7
+    ],
+    "camera": {
+      "x": 6.4,
+      "y": 20.142857142857142,
+      "zoom": 1.08
+    },
+    "art": {
+      "enabled": true,
+      "phase": "CANDIDATE",
+      "quality": "PLACEHOLDER_ONLY",
+      "groundDraws": 3072,
+      "propDraws": 14295,
+      "entityDraws": 12585,
+      "walkDraws": 0,
+      "idleDraws": 0,
+      "lastWalk": null,
+      "gatherDraws": 0,
+      "lastGather": null,
+      "missing": [
+        {
+          "key": "cavalryCamp:construction",
+          "reason": "No authored construction sequence",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:2",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:5",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:build:5",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        }
+      ],
+      "pipeline": {
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 26,
+        "ready": 26,
+        "approved": 0,
+        "candidates": 26,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 16942592,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 26,
+        "failures": []
+      },
+      "hillDraws": 0,
+      "foodResourceDraws": 1930,
+      "ironResourceDraws": 965
+    },
+    "bootUi": {
+      "declared": 12,
+      "ready": 12,
+      "failures": [],
+      "fontWarnings": []
+    },
+    "resources": {
+      "wood": 380,
+      "food": 796.9904640000236,
+      "iron": 225
+    },
+    "entities": [
+      {
+        "id": 7,
+        "owner": 0,
+        "type": "villager",
+        "kind": "unit",
+        "hp": 65,
+        "x": 6.611140410482181,
+        "y": 21.16293914145813,
+        "state": "build",
+        "queue": [],
+        "order": null
+      },
+      {
+        "id": 35,
+        "owner": 0,
+        "type": "cavalryCamp",
+        "kind": "building",
+        "hp": 600,
+        "x": 5.5,
+        "y": 19.5,
+        "state": "idle",
+        "construction": null,
+        "queue": [],
+        "order": null
+      }
+    ]
+  },
+  "idleArtDraws": 12585,
+  "selectionPoint": {
+    "x": 632.5017142857143,
+    "y": 361.3051428571429
+  },
+  "campAnchor": {
+    "x": 632.5017142857143,
+    "y": 377.5051428571429
+  },
+  "selected": {
+    "tick": 332,
+    "mode": "offline",
+    "paused": false,
+    "localPlayer": 0,
+    "selection": [
+      35
+    ],
+    "camera": {
+      "x": 6.4,
+      "y": 20.142857142857142,
+      "zoom": 1.08
+    },
+    "art": {
+      "enabled": true,
+      "phase": "CANDIDATE",
+      "quality": "PLACEHOLDER_ONLY",
+      "groundDraws": 3072,
+      "propDraws": 14610,
+      "entityDraws": 12879,
+      "walkDraws": 0,
+      "idleDraws": 0,
+      "lastWalk": null,
+      "gatherDraws": 0,
+      "lastGather": null,
+      "missing": [
+        {
+          "key": "cavalryCamp:construction",
+          "reason": "No authored construction sequence",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:2",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:5",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:build:5",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:idle:5",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        }
+      ],
+      "pipeline": {
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 26,
+        "ready": 26,
+        "approved": 0,
+        "candidates": 26,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 16942592,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 26,
+        "failures": []
+      },
+      "hillDraws": 0,
+      "foodResourceDraws": 1972,
+      "ironResourceDraws": 986
+    },
+    "bootUi": {
+      "declared": 12,
+      "ready": 12,
+      "failures": [],
+      "fontWarnings": []
+    },
+    "resources": {
+      "wood": 380,
+      "food": 796.6725120000242,
+      "iron": 225
+    },
+    "entities": [
+      {
+        "id": 7,
+        "owner": 0,
+        "type": "villager",
+        "kind": "unit",
+        "hp": 65,
+        "x": 6.611140410482181,
+        "y": 21.16293914145813,
+        "state": "idle",
+        "queue": [],
+        "order": null
+      },
+      {
+        "id": 35,
+        "owner": 0,
+        "type": "cavalryCamp",
+        "kind": "building",
+        "hp": 600,
+        "x": 5.5,
+        "y": 19.5,
+        "state": "idle",
+        "construction": null,
+        "queue": [],
+        "order": null
+      }
+    ]
+  },
+  "storageHUD": "Cavalry Camp\n100% strength\nidle · morale 95\nCargo empty\nGrid 5, 19",
+  "campId": 35,
+  "queued": {
+    "tick": 339,
+    "mode": "offline",
+    "paused": false,
+    "localPlayer": 0,
+    "selection": [
+      35
+    ],
+    "camera": {
+      "x": 6.4,
+      "y": 20.142857142857142,
+      "zoom": 1.08
+    },
+    "art": {
+      "enabled": true,
+      "phase": "CANDIDATE",
+      "quality": "PLACEHOLDER_ONLY",
+      "groundDraws": 3072,
+      "propDraws": 14940,
+      "entityDraws": 13187,
+      "walkDraws": 0,
+      "idleDraws": 0,
+      "lastWalk": null,
+      "gatherDraws": 0,
+      "lastGather": null,
+      "missing": [
+        {
+          "key": "cavalryCamp:construction",
+          "reason": "No authored construction sequence",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:2",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:5",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:build:5",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:idle:5",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        }
+      ],
+      "pipeline": {
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 26,
+        "ready": 26,
+        "approved": 0,
+        "candidates": 26,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 16942592,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 26,
+        "failures": []
+      },
+      "hillDraws": 0,
+      "foodResourceDraws": 2016,
+      "ironResourceDraws": 1008
+    },
+    "bootUi": {
+      "declared": 12,
+      "ready": 12,
+      "failures": [],
+      "fontWarnings": []
+    },
+    "resources": {
+      "wood": 335,
+      "food": 721.3943040000247,
+      "iron": 185
+    },
+    "entities": [
+      {
+        "id": 7,
+        "owner": 0,
+        "type": "villager",
+        "kind": "unit",
+        "hp": 65,
+        "x": 6.611140410482181,
+        "y": 21.16293914145813,
+        "state": "idle",
+        "queue": [],
+        "order": null
+      },
+      {
+        "id": 35,
+        "owner": 0,
+        "type": "cavalryCamp",
+        "kind": "building",
+        "hp": 600,
+        "x": 5.5,
+        "y": 19.5,
+        "state": "idle",
+        "construction": null,
+        "queue": [
+          {
+            "unit": "cavalry",
+            "remaining": 15.899999999999999
+          }
+        ],
+        "order": null
+      }
+    ]
+  },
+  "spawned": {
+    "tick": 657,
+    "mode": "offline",
+    "paused": false,
+    "localPlayer": 0,
+    "selection": [
+      35
+    ],
+    "camera": {
+      "x": 6.4,
+      "y": 20.142857142857142,
+      "zoom": 1.08
+    },
+    "art": {
+      "enabled": true,
+      "phase": "CANDIDATE",
+      "quality": "PLACEHOLDER_ONLY",
+      "groundDraws": 3072,
+      "propDraws": 29190,
+      "entityDraws": 26490,
+      "walkDraws": 0,
+      "idleDraws": 0,
+      "lastWalk": null,
+      "gatherDraws": 0,
+      "lastGather": null,
+      "missing": [
+        {
+          "key": "cavalryCamp:construction",
+          "reason": "No authored construction sequence",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:2",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:5",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:build:5",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:idle:5",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        }
+      ],
+      "pipeline": {
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 26,
+        "ready": 26,
+        "approved": 0,
+        "candidates": 26,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 16942592,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 26,
+        "failures": []
+      },
+      "hillDraws": 0,
+      "foodResourceDraws": 3916,
+      "ironResourceDraws": 1958
+    },
+    "bootUi": {
+      "declared": 12,
+      "ready": 12,
+      "failures": [],
+      "fontWarnings": []
+    },
+    "resources": {
+      "wood": 335,
+      "food": 708.7557120000477,
+      "iron": 185
+    },
+    "entities": [
+      {
+        "id": 7,
+        "owner": 0,
+        "type": "villager",
+        "kind": "unit",
+        "hp": 65,
+        "x": 6.611140410482181,
+        "y": 21.16293914145813,
+        "state": "idle",
+        "queue": [],
+        "order": null
+      },
+      {
+        "id": 35,
+        "owner": 0,
+        "type": "cavalryCamp",
+        "kind": "building",
+        "hp": 600,
+        "x": 5.5,
+        "y": 19.5,
+        "state": "idle",
+        "construction": null,
+        "queue": [],
+        "order": null
+      },
+      {
+        "id": 50,
+        "owner": 0,
+        "type": "cavalry",
+        "kind": "unit",
+        "hp": 190,
+        "x": 4.5,
+        "y": 18.5,
+        "state": "idle",
+        "queue": [],
+        "order": null
+      }
+    ]
+  },
+  "paused": {
+    "tick": 663,
+    "mode": "offline",
+    "paused": true,
+    "localPlayer": 0,
+    "selection": [
+      35
+    ],
+    "camera": {
+      "x": 6.4,
+      "y": 20.142857142857142,
+      "zoom": 1.08
+    },
+    "art": {
+      "enabled": true,
+      "phase": "CANDIDATE",
+      "quality": "PLACEHOLDER_ONLY",
+      "groundDraws": 3072,
+      "propDraws": 29475,
+      "entityDraws": 26775,
+      "walkDraws": 0,
+      "idleDraws": 0,
+      "lastWalk": null,
+      "gatherDraws": 0,
+      "lastGather": null,
+      "missing": [
+        {
+          "key": "cavalryCamp:construction",
+          "reason": "No authored construction sequence",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:2",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:5",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:build:5",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:idle:5",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        }
+      ],
+      "pipeline": {
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 26,
+        "ready": 26,
+        "approved": 0,
+        "candidates": 26,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 16942592,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 26,
+        "failures": []
+      },
+      "hillDraws": 0,
+      "foodResourceDraws": 3954,
+      "ironResourceDraws": 1977
+    },
+    "bootUi": {
+      "declared": 12,
+      "ready": 12,
+      "failures": [],
+      "fontWarnings": []
+    },
+    "resources": {
+      "wood": 335,
+      "food": 708.5172480000481,
+      "iron": 185
+    },
+    "entities": [
+      {
+        "id": 7,
+        "owner": 0,
+        "type": "villager",
+        "kind": "unit",
+        "hp": 65,
+        "x": 6.611140410482181,
+        "y": 21.16293914145813,
+        "state": "idle",
+        "queue": [],
+        "order": null
+      },
+      {
+        "id": 35,
+        "owner": 0,
+        "type": "cavalryCamp",
+        "kind": "building",
+        "hp": 600,
+        "x": 5.5,
+        "y": 19.5,
+        "state": "idle",
+        "construction": null,
+        "queue": [],
+        "order": null
+      },
+      {
+        "id": 50,
+        "owner": 0,
+        "type": "cavalry",
+        "kind": "unit",
+        "hp": 190,
+        "x": 4.5,
+        "y": 18.5,
+        "state": "idle",
+        "queue": [],
+        "order": null
+      }
+    ]
+  },
+  "resumed": {
+    "tick": 666,
+    "mode": "offline",
+    "paused": false,
+    "localPlayer": 0,
+    "selection": [
+      35
+    ],
+    "camera": {
+      "x": 6.4,
+      "y": 20.142857142857142,
+      "zoom": 1.08
+    },
+    "art": {
+      "enabled": true,
+      "phase": "CANDIDATE",
+      "quality": "PLACEHOLDER_ONLY",
+      "groundDraws": 3072,
+      "propDraws": 29745,
+      "entityDraws": 27045,
+      "walkDraws": 0,
+      "idleDraws": 0,
+      "lastWalk": null,
+      "gatherDraws": 0,
+      "lastGather": null,
+      "missing": [
+        {
+          "key": "cavalryCamp:construction",
+          "reason": "No authored construction sequence",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:2",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:5",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:build:5",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:idle:5",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        }
+      ],
+      "pipeline": {
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 26,
+        "ready": 26,
+        "approved": 0,
+        "candidates": 26,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 16942592,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 26,
+        "failures": []
+      },
+      "hillDraws": 0,
+      "foodResourceDraws": 3990,
+      "ironResourceDraws": 1995
+    },
+    "bootUi": {
+      "declared": 12,
+      "ready": 12,
+      "failures": [],
+      "fontWarnings": []
+    },
+    "resources": {
+      "wood": 335,
+      "food": 708.3980160000483,
+      "iron": 185
+    },
+    "entities": [
+      {
+        "id": 7,
+        "owner": 0,
+        "type": "villager",
+        "kind": "unit",
+        "hp": 65,
+        "x": 6.611140410482181,
+        "y": 21.16293914145813,
+        "state": "idle",
+        "queue": [],
+        "order": null
+      },
+      {
+        "id": 35,
+        "owner": 0,
+        "type": "cavalryCamp",
+        "kind": "building",
+        "hp": 600,
+        "x": 5.5,
+        "y": 19.5,
+        "state": "idle",
+        "construction": null,
+        "queue": [],
+        "order": null
+      },
+      {
+        "id": 50,
+        "owner": 0,
+        "type": "cavalry",
+        "kind": "unit",
+        "hp": 190,
+        "x": 4.5,
+        "y": 18.5,
+        "state": "idle",
+        "queue": [],
+        "order": null
+      }
+    ]
+  },
+  "spawnedCavalry": {
+    "id": 50,
+    "owner": 0,
+    "type": "cavalry",
+    "kind": "unit",
+    "x": 4.5,
+    "y": 18.5,
+    "hp": 190,
+    "maxHp": 190,
+    "food": 65,
+    "foodMax": 65,
+    "morale": 95,
+    "state": "idle",
+    "dir": 0,
+    "cooldown": 0,
+    "queue": [],
+    "cargo": {
+      "food": 0,
+      "wood": 0,
+      "iron": 0,
+      "units": []
+    },
+    "order": null
+  },
+  "militarySelected": {
+    "tick": 667,
+    "mode": "offline",
+    "paused": false,
+    "localPlayer": 0,
+    "selection": [
+      13,
+      14,
+      15,
+      16,
+      50
+    ],
+    "camera": {
+      "x": 6.4,
+      "y": 20.142857142857142,
+      "zoom": 1.08
+    },
+    "art": {
+      "enabled": true,
+      "phase": "CANDIDATE",
+      "quality": "PLACEHOLDER_ONLY",
+      "groundDraws": 3072,
+      "propDraws": 29790,
+      "entityDraws": 27090,
+      "walkDraws": 0,
+      "idleDraws": 0,
+      "lastWalk": null,
+      "gatherDraws": 0,
+      "lastGather": null,
+      "missing": [
+        {
+          "key": "cavalryCamp:construction",
+          "reason": "No authored construction sequence",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:2",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:5",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:build:5",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:idle:5",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        }
+      ],
+      "pipeline": {
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 26,
+        "ready": 26,
+        "approved": 0,
+        "candidates": 26,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 16942592,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 26,
+        "failures": []
+      },
+      "hillDraws": 0,
+      "foodResourceDraws": 3996,
+      "ironResourceDraws": 1998
+    },
+    "bootUi": {
+      "declared": 12,
+      "ready": 12,
+      "failures": [],
+      "fontWarnings": []
+    },
+    "resources": {
+      "wood": 335,
+      "food": 708.3582720000484,
+      "iron": 185
+    },
+    "entities": [
+      {
+        "id": 7,
+        "owner": 0,
+        "type": "villager",
+        "kind": "unit",
+        "hp": 65,
+        "x": 6.611140410482181,
+        "y": 21.16293914145813,
+        "state": "idle",
+        "queue": [],
+        "order": null
+      },
+      {
+        "id": 13,
+        "owner": 0,
+        "type": "infantry",
+        "kind": "unit",
+        "hp": 125,
+        "x": 15.5,
+        "y": 23.5,
+        "state": "idle",
+        "queue": [],
+        "order": null
+      },
+      {
+        "id": 14,
+        "owner": 0,
+        "type": "infantry",
+        "kind": "unit",
+        "hp": 125,
+        "x": 15.5,
+        "y": 24.15,
+        "state": "idle",
+        "queue": [],
+        "order": null
+      },
+      {
+        "id": 15,
+        "owner": 0,
+        "type": "infantry",
+        "kind": "unit",
+        "hp": 125,
+        "x": 15.5,
+        "y": 24.8,
+        "state": "idle",
+        "queue": [],
+        "order": null
+      },
+      {
+        "id": 16,
+        "owner": 0,
+        "type": "spearman",
+        "kind": "unit",
+        "hp": 105,
+        "x": 15.5,
+        "y": 25.45,
+        "state": "idle",
+        "queue": [],
+        "order": null
+      },
+      {
+        "id": 35,
+        "owner": 0,
+        "type": "cavalryCamp",
+        "kind": "building",
+        "hp": 600,
+        "x": 5.5,
+        "y": 19.5,
+        "state": "idle",
+        "construction": null,
+        "queue": [],
+        "order": null
+      },
+      {
+        "id": 50,
+        "owner": 0,
+        "type": "cavalry",
+        "kind": "unit",
+        "hp": 190,
+        "x": 4.5,
+        "y": 18.5,
+        "state": "idle",
+        "queue": [],
+        "order": null
+      }
+    ]
+  },
+  "expectedMilitaryIds": [
+    13,
+    14,
+    15,
+    16,
+    50
+  ],
+  "stopScope": "ordinary F2 current living own unembarked military cohort",
+  "stopped": {
+    "tick": 672,
+    "mode": "offline",
+    "paused": false,
+    "localPlayer": 0,
+    "selection": [
+      13,
+      14,
+      15,
+      16,
+      50
+    ],
+    "camera": {
+      "x": 6.4,
+      "y": 20.142857142857142,
+      "zoom": 1.08
+    },
+    "art": {
+      "enabled": true,
+      "phase": "CANDIDATE",
+      "quality": "PLACEHOLDER_ONLY",
+      "groundDraws": 3072,
+      "propDraws": 30030,
+      "entityDraws": 27330,
+      "walkDraws": 0,
+      "idleDraws": 0,
+      "lastWalk": null,
+      "gatherDraws": 0,
+      "lastGather": null,
+      "missing": [
+        {
+          "key": "cavalryCamp:construction",
+          "reason": "No authored construction sequence",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:2",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:5",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:build:5",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:idle:5",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        }
+      ],
+      "pipeline": {
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 26,
+        "ready": 26,
+        "approved": 0,
+        "candidates": 26,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 16942592,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 26,
+        "failures": []
+      },
+      "hillDraws": 0,
+      "foodResourceDraws": 4028,
+      "ironResourceDraws": 2014
+    },
+    "bootUi": {
+      "declared": 12,
+      "ready": 12,
+      "failures": [],
+      "fontWarnings": []
+    },
+    "resources": {
+      "wood": 335,
+      "food": 708.1595520000487,
+      "iron": 185
+    },
+    "entities": [
+      {
+        "id": 7,
+        "owner": 0,
+        "type": "villager",
+        "kind": "unit",
+        "hp": 65,
+        "x": 6.611140410482181,
+        "y": 21.16293914145813,
+        "state": "idle",
+        "queue": [],
+        "order": null
+      },
+      {
+        "id": 13,
+        "owner": 0,
+        "type": "infantry",
+        "kind": "unit",
+        "hp": 125,
+        "x": 15.5,
+        "y": 23.5,
+        "state": "idle",
+        "queue": [],
+        "order": null
+      },
+      {
+        "id": 14,
+        "owner": 0,
+        "type": "infantry",
+        "kind": "unit",
+        "hp": 125,
+        "x": 15.5,
+        "y": 24.15,
+        "state": "idle",
+        "queue": [],
+        "order": null
+      },
+      {
+        "id": 15,
+        "owner": 0,
+        "type": "infantry",
+        "kind": "unit",
+        "hp": 125,
+        "x": 15.5,
+        "y": 24.8,
+        "state": "idle",
+        "queue": [],
+        "order": null
+      },
+      {
+        "id": 16,
+        "owner": 0,
+        "type": "spearman",
+        "kind": "unit",
+        "hp": 105,
+        "x": 15.5,
+        "y": 25.45,
+        "state": "idle",
+        "queue": [],
+        "order": null
+      },
+      {
+        "id": 35,
+        "owner": 0,
+        "type": "cavalryCamp",
+        "kind": "building",
+        "hp": 600,
+        "x": 5.5,
+        "y": 19.5,
+        "state": "idle",
+        "construction": null,
+        "queue": [],
+        "order": null
+      },
+      {
+        "id": 50,
+        "owner": 0,
+        "type": "cavalry",
+        "kind": "unit",
+        "hp": 190,
+        "x": 4.5,
+        "y": 18.5,
+        "state": "idle",
+        "queue": [],
+        "order": null
+      }
+    ]
+  },
+  "cleanup": {
+    "publicHealth": {
+      "ok": true,
+      "rooms": 0
+    },
+    "browserClosed": true
+  }
+}

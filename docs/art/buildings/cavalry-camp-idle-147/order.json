@@ -1,0 +1,77 @@
+{
+  "status": "ONE_FINITE_BUILTIN_SOURCE_AUTHORIZED",
+  "routing": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low"
+  },
+  "maxCalls": 1,
+  "retries": 0,
+  "canvas": [
+    1254,
+    1254
+  ],
+  "pivot": [
+    627,
+    1010
+  ],
+  "runtime": [
+    256,
+    256
+  ],
+  "render": [
+    112,
+    112
+  ],
+  "previewZoom": 1.08,
+  "refs": [
+    {
+      "path": "docs/art/residence/variant-02/raw.png",
+      "sha256": "f617c3540680cafff467358bab1adb01bf735417563f2cba86ab8af523b07dcc",
+      "role": "style/camera/material only; inspected"
+    },
+    {
+      "path": "docs/art/granary/variant-01/raw.png",
+      "sha256": "0d0c3963f3faed9341cd09f2ff118a753e9bd1ee431290b51635eebb17b61715",
+      "role": "style/camera/material only; inspected"
+    },
+    {
+      "path": "docs/art/buildings/barracks-idle-121/raw.png",
+      "sha256": "65235252a47fdf4e6b1c9db67a56a05db13b7e08dd93682a7226bc8a5cb76d00",
+      "role": "style/camera/material only; inspected"
+    },
+    {
+      "path": "docs/art/buildings/supply-depot-idle-126/raw.png",
+      "sha256": "44c96329f2fdc8b8dae9c589400d798ac3911c1118b21714114f872f9aa676e1",
+      "role": "style/camera/material only; inspected"
+    },
+    {
+      "path": "docs/art/buildings/artillery-workshop-idle-140/raw.png",
+      "sha256": "96c275af48c1bb02bc43e4382d4329782fbc3d42a715e7f0c6f1dabd24a8ef32",
+      "role": "style/camera/material only; inspected"
+    }
+  ],
+  "dataBinding": {
+    "source": "shared/data.js",
+    "sha256": "ffc3f45adc58f212066d3763c591377ce15b9f6ac78e4685a95fc3ac747818e1",
+    "type": "cavalryCamp",
+    "hp": 600,
+    "wood": 170,
+    "food": 0,
+    "iron": 35,
+    "radius": 0.75,
+    "buildTime": 15,
+    "trains": [
+      "cavalry"
+    ],
+    "unitTrainTime": 16,
+    "unitCost": {
+      "wood": 45,
+      "food": 75,
+      "iron": 40
+    }
+  },
+  "sizeReason": "Same0.75 footprint as Barracks/Workshop; fixed112 familyrender; no balance change",
+  "scope": "Source completedidle only; parent intake pending; no runtime/canonical/public",
+  "underlyingImageModel": "unexposed",
+  "promptSHA256": "386f1f70f43cdae80f036c31edfb762ca8e87d70353f585c4b399aee27682bf1"
+}

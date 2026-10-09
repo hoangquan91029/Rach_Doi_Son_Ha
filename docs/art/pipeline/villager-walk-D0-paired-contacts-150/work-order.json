@@ -1,0 +1,54 @@
+{
+  "schema": "rds-pure2d-finite-work-order/v1",
+  "jobId": "villager-walk-D0-paired-contacts-150",
+  "status": "PREP_ONLY_PARENT_GUIDE_INTAKE_REQUIRED",
+  "model": "gpt-6.1-sol",
+  "reasoningEffort": "low",
+  "callsMade": 0,
+  "callOpen": false,
+  "maxCalls": 1,
+  "retries": 0,
+  "method": "one complete paired-contact illustration; relational opposite-contact control",
+  "attachments": [
+    {
+      "path": "docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+      "role": "canonical appearance only"
+    },
+    {
+      "path": "docs/art/characters/villager-neutral-D00-screen-Southeast-007/raw.png",
+      "sha256": "2d32f65fe0f4c8037e19aeb5ace9b1b29e70ecf45a158d101770e86f9aa9092f",
+      "role": "D0 camera / identity / sash authority"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-walk-D0-paired-contacts-150/paired-contact-guide.svg",
+      "role": "internal pose planning; render to PNG before any authorized call"
+    }
+  ],
+  "excludedReferences": "all held F04 and selected033 F00: no pose inertia reference attached",
+  "direction": {
+    "engine": 0,
+    "world": "E",
+    "screen": "ESE"
+  },
+  "requestedSheet": [
+    2508,
+    1254
+  ],
+  "equalCells": 2,
+  "cellPivotNormalized": [
+    0.5215311004784688,
+    0.9090909090909091
+  ],
+  "fixedExtraction": {
+    "regions": "left [0,W/2) x [0,H), right [W/2,W) x [0,H); require even W",
+    "scale": "s=128/max(W/2,H), same s for BOTH complete cells",
+    "padding": "center both resized cells in 128x128 using same offsets; no bbox fit",
+    "pivot": "[offsetX+s*(W/2)*(654/1254), offsetY+s*H*(1140/1254)] for BOTH",
+    "presentation": "whole 128 canvas displayed89; no per-frame fit/shift/rotation/mirror"
+  },
+  "toolCapability": "aspect ratio is a prompt request only; actual builtin dimensions/control unknown, no pixel-lock guarantee",
+  "intake": "one brief fixed89 pair look: genuine opposite forward/support legs, same direction and coherent whole identity; hold if neither pair reverses or clipping/pivot/scale failure is visible",
+  "laterGate": "F2/F6/inbetweens/all directions/units/runtime/public remain CLOSED until parent actual pair intake",
+  "scope": "no AI/API/key/Git/tests/runtime/topdocs/canonical edits in preparation"
+}
