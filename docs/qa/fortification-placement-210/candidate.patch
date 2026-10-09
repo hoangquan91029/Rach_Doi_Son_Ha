@@ -1,0 +1,13 @@
+diff --git a/shared/sim.js b/shared/sim.js
+index 54617a4..35e995a 100644
+--- a/shared/sim.js
++++ b/shared/sim.js
+@@ -155,7 +155,7 @@ function affordable(s,p,cost){economy(s);return ['wood','food','iron'].every(k=>
+ function spend(s,p,cost,origin){s.players[p].resources.wood-=cost.wood||0;s.players[p].resources.iron-=cost.iron||0;let remaining=cost.food||0;const nodes=s.entities.filter(e=>e.owner===p&&stores(e)).sort((a,b)=>dist(a,origin)-dist(b,origin)||a.id-b.id);for(const e of nodes){const n=Math.min(e.cargo.food,remaining);e.cargo.food-=n;remaining-=n;}economy(s);}
+ function placement(s,p,type,x,y){const d=BUILDINGS[type];if(!bounds(s,x,y)||!terrainPass(s,{type:'villager'},x,y)||tile(s,x,y)==='ford')return false;
+  if(d.coastal&&!s.map.tiles.some((t,i)=>TERRAIN[t]?.water&&Math.abs(i%s.map.width+0.5-x)<=3&&Math.abs(Math.floor(i/s.map.width)+0.5-y)<=3))return false;
+- return !s.entities.some(e=>e.hp>0&&!e.embarked&&(e.kind==='building'?Math.abs(e.x-x)<BUILDINGS[e.type].radius+d.radius+0.4&&Math.abs(e.y-y)<BUILDINGS[e.type].radius+d.radius+0.4:Math.abs(e.x-x)<d.radius+0.2&&Math.abs(e.y-y)<d.radius+0.2));
++ return !s.entities.some(e=>e.hp>0&&!e.embarked&&(e.kind==='building'?Math.abs(e.x-x)<BUILDINGS[e.type].radius+d.radius+(['wall','gate'].includes(type)&&['wall','gate'].includes(e.type)?0:0.4)&&Math.abs(e.y-y)<BUILDINGS[e.type].radius+d.radius+(['wall','gate'].includes(type)&&['wall','gate'].includes(e.type)?0:0.4):Math.abs(e.x-x)<d.radius+0.2&&Math.abs(e.y-y)<d.radius+0.2));
+ }
+ const reject=error=>({ok:false,error});
+ export function command(s,p,c){

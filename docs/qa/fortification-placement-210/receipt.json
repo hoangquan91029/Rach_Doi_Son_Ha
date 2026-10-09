@@ -1,0 +1,72 @@
+{
+  "status": "READY_FOR_ROOT_INTAKE_LOCAL_ADJACENCY_AND_GATE_UI_PASS",
+  "scope": "ONLY both wall/gate building pair collisionpadding; no role/footprint/unit/terrain/coastal/ownership/economy/nav/speed/art changes",
+  "baseline": {
+    "simSHA256": "4aa2bfbdb499371cd18adc4306b3ae313fe8c7410e3d4e2957a46b40e67c85a5",
+    "adjacencyFailures": 16,
+    "unchangedGuardPasses": 11
+  },
+  "candidateSimSHA256": "b9f903f6fbab7374caaf4a6e23dd400604eb8b9cea798576c20663e8fa735f48",
+  "testSHA256": "c374db0ac6426b64f82fecabdb2e8feb18814df049f477a704514edc0d367e94",
+  "patchSHA256": "de86321baf76446e4b3dca1b322d02e8deddf6c3a70f9e8378b45fdf9674fff6",
+  "focused": {
+    "placementAndGateTests": 27,
+    "existingNavigationCornersAndArrival": 6,
+    "totalPass": 33,
+    "selectedExistingConstructionContracts": 3
+  },
+  "build": {
+    "path": "/tmp/rds-fortification210/build/assets/index-1bOPiwvX.js",
+    "sha256": "2a9ad6c0a9b1ac339d3c947ab49574edd61f54131b97b632a6c517256b21ba2d",
+    "stageSimSHA256": "b9f903f6fbab7374caaf4a6e23dd400604eb8b9cea798576c20663e8fa735f48"
+  },
+  "actualUI": {
+    "map": "delta",
+    "builderCorrection": "Root corrected King request to existing living own villager; King replacementResidence role preserved",
+    "workerId": 7,
+    "structures": [
+      {
+        "id": 35,
+        "type": "wall",
+        "x": 2.5,
+        "y": 23.5,
+        "completedTick": 308
+      },
+      {
+        "id": 43,
+        "type": "gate",
+        "x": 3.5,
+        "y": 23.5,
+        "completedTick": 613
+      },
+      {
+        "id": 52,
+        "type": "wall",
+        "x": 4.5,
+        "y": 23.5,
+        "completedTick": 868
+      }
+    ],
+    "observedGateTransit": {
+      "tick": 1019,
+      "x": 3.5,
+      "y": 23.569025136401287,
+      "dir": 2,
+      "state": "walk"
+    },
+    "menuDecodedRelease": true,
+    "errors": [],
+    "cleanup": {
+      "rooms": 0,
+      "serverListening": false,
+      "browserClosed": true
+    }
+  },
+  "public207": {
+    "files185Exact": true,
+    "servicePIDUnchanged": 510490,
+    "runtimeSimUnchanged": "4aa2bfbdb499371cd18adc4306b3ae313fe8c7410e3d4e2957a46b40e67c85a5",
+    "rooms": 0
+  },
+  "limits": "Local210 only; renderer isolatedhorizontal unchanged; no hostilebrowser/fullbattle/visualfinalapproval/publicpromotion/defaultrelease claim; existingpublicfoodexclusion must persist in any laterderivedbuild"
+}

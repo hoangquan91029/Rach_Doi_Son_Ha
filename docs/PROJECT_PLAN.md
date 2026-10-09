@@ -2,7 +2,7 @@
 
 Cập nhật ngày 2026-10-10, múi giờ Asia/Ho_Chi_Minh. **Trạng thái: INCOMPLETE.** Đây là kế hoạch hiện hành cho toàn dự án; `NEXT_STEPS.md` chỉ giữ hàng đợi gần nhất. Hồ sơ cũ được giữ nguyên byte tại `docs/audit/2026-10-09/history/`.
 
-Latest execution181 ở mục15 thay các next-step lịch sử169–173; source/receipt cũ giữ nguyên.
+Latest execution213 ở mục20 và active movement plan thay các next-step lịch sử; source/receipt cũ giữ nguyên.
 
 ## 1. Mục tiêu và cách đọc kết quả
 
@@ -188,3 +188,9 @@ G01 không thay: actual195loop/human continuous feedback pending, F3/F4 bodywarn
 G01:205 ONE whole F3body correction,208 exacteightloop changingONLYF3,195bytepreserved. Face/upperbody closerfamily; F4quietarms/bodydifference remains. New APNG displayed, technical8frames/3loopsPASS but motion/owner/worldfootlock/runtime/fanout remainopen. Olderpendingquestion scoped195, no inference for208.
 
 R01:204 source/service/rollback audit found202 pendingfoodrecipe/bytes.206 derivedpublicstage removesonlyrecipe+099manifest/atlas,4scopecontracts,newchunk74eb…c873.207 pairedimmutable server4aa/runtime206 and185dist atomicpromotion, originalunit/env/Funnel preserved; complete179old149+oldserver28e+currentfrozenws archive208entries verified, canonicalunchanged. [209 actualTLS](qa/public-intake-209/root-intake.json) Chrome/Firefox firststrike + ONE DeltaFortflow/menu cache0/defaultunknownfoodboot acceptednarrow. GuestordinaryresultMenu NOTperformed; expectedOpponentleftresult and originalcleanupHOLD retained, ownedroomexistinggrace cleanup. No fullmatch/rematch/performance/externaldesktop/WAN/defaultart/motion approval. Fullgoal INCOMPLETE, allownedhandlesclosed; production207 runs intentionally. Next realunfinishedgraphics/buildingstates/maps/denseperformance work uses newfiniteorders; don't repeat completed suites/matches or resume historical149/202promotionorders.
+
+## 20. Hiện hành210–213 — movement nghiên cứu lại và adjacencylocal
+
+[Movementplan](art/pipeline/MOVEMENT_PRODUCTION_PLAN_20261010.md) đã viết lại gắn canonical/actualsources/research212. Wholebodyvolume/camera/neighborcontinuity là lỗi chính, khôngmicrodetail.211 ONEwholeF4edit/0retry phục hồi torso/arms;213 exact208eight ONLYF4replacement, zeroimagecalls/8×75ms600ms/128atlas/89preview. ActualChromium8/3cycles/PausePlay/errors0, rootbriefsheet và actualAPNGdisplayed; motion/owner/worldfootlock/runtime/fanoutOPEN. Pendingquestion195 khôngapprove213. Nextbrieflooplook→samefamilyidle→actualD0travel/PauseResumeStop; no blindcalls/batchclaims.
+
+210 fixeslocalorthogonalWall/Gate adjacency by removingonlytheirpairsetback0.4.33focused+3existingcontracts andONEactualvillagerUI line/friendlyGatecrossPASS; KingreplacementResidence role/otherguards unchanged. Localcanonicalsim b9f903…35f48 differspublicimmutable2074aa. Rendererhorizontalprocedural/topology remainsunfinished, no publicpromotion. Existing207/209 production/evidence/rollback stand; no repeatedfullmatches orprooftests withoutnewconcern. All210–213 handlesclosed atcheckpoint; checkactualstate before work. Fullgoal INCOMPLETE; history209 entrypoints bytepreserved.

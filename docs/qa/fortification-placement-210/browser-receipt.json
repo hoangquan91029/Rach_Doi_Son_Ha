@@ -1,0 +1,181 @@
+{
+  "status": "PASS_ACTUAL_ADJACENT_WALL_GATE_WALL_AND_FRIENDLY_GATE_TRAVEL",
+  "method": "One ordinary Delta villager Wall/Gate/Wall and ownGate travel; read-only diagnostics; no injected gameplay/state/facing/speed",
+  "errors": [],
+  "structures": [
+    {
+      "id": 35,
+      "type": "wall",
+      "x": 2.5,
+      "y": 23.5,
+      "completedTick": 308
+    },
+    {
+      "id": 43,
+      "type": "gate",
+      "x": 3.5,
+      "y": 23.5,
+      "completedTick": 613
+    },
+    {
+      "id": 52,
+      "type": "wall",
+      "x": 4.5,
+      "y": 23.5,
+      "completedTick": 868
+    }
+  ],
+  "movement": [
+    {
+      "tick": 1005,
+      "x": 3.585234893398984,
+      "y": 22.101620372937774,
+      "dir": 6,
+      "state": "idle"
+    },
+    {
+      "tick": 1007,
+      "x": 3.5724585559507815,
+      "y": 22.31123135834028,
+      "dir": 2,
+      "state": "walk"
+    },
+    {
+      "tick": 1010,
+      "x": 3.553294049778478,
+      "y": 22.62564783644404,
+      "dir": 2,
+      "state": "walk"
+    },
+    {
+      "tick": 1012,
+      "x": 3.5405177123302756,
+      "y": 22.835258821846544,
+      "dir": 2,
+      "state": "walk"
+    },
+    {
+      "tick": 1014,
+      "x": 3.527741374882073,
+      "y": 23.04486980724905,
+      "dir": 2,
+      "state": "walk"
+    },
+    {
+      "tick": 1016,
+      "x": 3.5149650374338703,
+      "y": 23.254480792651556,
+      "dir": 2,
+      "state": "walk"
+    },
+    {
+      "tick": 1019,
+      "x": 3.5,
+      "y": 23.569025136401287,
+      "dir": 2,
+      "state": "walk"
+    },
+    {
+      "tick": 1021,
+      "x": 3.5,
+      "y": 23.779025136401287,
+      "dir": 2,
+      "state": "walk"
+    },
+    {
+      "tick": 1023,
+      "x": 3.5,
+      "y": 23.98902513640129,
+      "dir": 2,
+      "state": "walk"
+    },
+    {
+      "tick": 1025,
+      "x": 3.5,
+      "y": 24.19902513640129,
+      "dir": 2,
+      "state": "walk"
+    },
+    {
+      "tick": 1028,
+      "x": 3.5,
+      "y": 24.51402513640129,
+      "dir": 2,
+      "state": "walk"
+    },
+    {
+      "tick": 1030,
+      "x": 3.5,
+      "y": 24.72402513640129,
+      "dir": 2,
+      "state": "walk"
+    },
+    {
+      "tick": 1032,
+      "x": 3.5,
+      "y": 24.934025136401292,
+      "dir": 2,
+      "state": "walk"
+    },
+    {
+      "tick": 1034,
+      "x": 3.5,
+      "y": 25.144025136401293,
+      "dir": 2,
+      "state": "walk"
+    },
+    {
+      "tick": 1037,
+      "x": 3.5,
+      "y": 25.354025136401294,
+      "dir": 2,
+      "state": "idle"
+    }
+  ],
+  "bundleSHA256": "2a9ad6c0a9b1ac339d3c947ab49574edd61f54131b97b632a6c517256b21ba2d",
+  "workerId": 7,
+  "line": {
+    "x": 3.5,
+    "y": 23.5,
+    "staging": {
+      "x": 3.5,
+      "y": 21.5
+    },
+    "d": 4
+  },
+  "beforeCrossing": {
+    "tick": 938,
+    "worker": {
+      "id": 7,
+      "owner": 0,
+      "type": "villager",
+      "kind": "unit",
+      "x": 3.585234893398984,
+      "y": 22.101620372937774,
+      "hp": 65,
+      "maxHp": 65,
+      "food": 34.309983999998124,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "idle",
+      "dir": 6,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "resuppliedTick": 79,
+      "starving": 0,
+      "lastMovedTick": 378,
+      "order": null
+    }
+  },
+  "cleanup": {
+    "rooms": 0,
+    "serverListening": false,
+    "browserClosed": true
+  }
+}

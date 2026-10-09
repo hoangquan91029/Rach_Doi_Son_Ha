@@ -1,0 +1,41 @@
+✔ wall/wall accepts orthogonal adjacent cell 1,0 without footprint overlap (9.722513ms)
+✔ wall/wall accepts orthogonal adjacent cell -1,0 without footprint overlap (2.476307ms)
+✔ wall/wall accepts orthogonal adjacent cell 0,1 without footprint overlap (1.630175ms)
+✔ wall/wall accepts orthogonal adjacent cell 0,-1 without footprint overlap (0.841283ms)
+✔ wall/gate accepts orthogonal adjacent cell 1,0 without footprint overlap (1.096055ms)
+✔ wall/gate accepts orthogonal adjacent cell -1,0 without footprint overlap (0.798093ms)
+✔ wall/gate accepts orthogonal adjacent cell 0,1 without footprint overlap (0.776789ms)
+✔ wall/gate accepts orthogonal adjacent cell 0,-1 without footprint overlap (0.762597ms)
+✔ gate/wall accepts orthogonal adjacent cell 1,0 without footprint overlap (1.008878ms)
+✔ gate/wall accepts orthogonal adjacent cell -1,0 without footprint overlap (0.846125ms)
+✔ gate/wall accepts orthogonal adjacent cell 0,1 without footprint overlap (0.791161ms)
+✔ gate/wall accepts orthogonal adjacent cell 0,-1 without footprint overlap (0.835554ms)
+✔ gate/gate accepts orthogonal adjacent cell 1,0 without footprint overlap (0.954162ms)
+✔ gate/gate accepts orthogonal adjacent cell -1,0 without footprint overlap (0.699276ms)
+✔ gate/gate accepts orthogonal adjacent cell 0,1 without footprint overlap (0.698191ms)
+✔ gate/gate accepts orthogonal adjacent cell 0,-1 without footprint overlap (0.640434ms)
+✔ wall/wall same-cell overlap rejected without spending (1.535676ms)
+✔ wall/gate same-cell overlap rejected without spending (0.657546ms)
+✔ gate/wall same-cell overlap rejected without spending (0.608382ms)
+✔ gate/gate same-cell overlap rejected without spending (0.599221ms)
+✔ barracks/wall retains other-building setback (1.243429ms)
+✔ wall/barracks retains other-building setback (0.913178ms)
+✔ gate/barracks retains other-building setback (1.127102ms)
+✔ barracks/gate retains other-building setback (1.296808ms)
+✔ unit footprint, impassable terrain, ford, coastal, ownership and King role guards remain (3.144831ms)
+✔ friendly gate permits passage in a wall/gate/wall corridor (28.625688ms)
+✔ hostile gate blocks passage in a wall/gate/wall corridor (18.853517ms)
+✔ open diagonal uses distance-optimal sustained D1 and repeatable authoritative states (93.930383ms)
+✔ terrain side cells prevent diagonal corner cutting even when destination is legal (1.955003ms)
+✔ building side cells and changed dynamic blockers prevent corner cutting (2.097197ms)
+✔ reachable integer and fractional ground moves complete within unchanged arrival range (238.117204ms)
+✔ unreachable final ground point cannot cut a blocked terrain corner or building interior (71.324148ms)
+✔ ground attack-move without an acquired enemy completes at an integer target (21.204833ms)
+ℹ tests 33
+ℹ suites 0
+ℹ pass 33
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 481.910576

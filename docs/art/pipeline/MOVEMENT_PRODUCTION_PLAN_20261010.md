@@ -1,57 +1,67 @@
-# Kế hoạch movement — 10 October 2026
+# Movement production — kế hoạch hiện hành sau nghiên cứu212 / preview213
 
-Mục tiêu trước mắt là **một vòng đi D0 tám frame thực sự tự nhiên**, giữ phong cách minh họa chân thực hiện có. Chưa mở thêm hướng hoặc unit. Kế hoạch này dựa trên ảnh đã trả về; các bản giữ lại không được tính là thành phẩm.
+Ngày 10/10/2026. **D0 vẫn là candidate, chưa đủ điều kiện sản xuất hàng loạt.** Mục tiêu là một người dân có vóc dáng nhất quán, bước tự nhiên và mượt ở kích thước chơi; giữ phong cách minh họa chân thực của canonical.
 
-## Kết luận nghiên cứu trên asset của project
+## 1. Chẩn đoán gắn với asset thực tế
 
-Có hai vấn đề riêng.155 làm lệch hình thể và bị người dùng bác bỏ. Ở các thử nghiệm sau, camera/thân đã cải thiện nhưng bước đối diện vẫn không xuất hiện: ảnh152 được gắn nhãn đối diện trong khi đường chân nhìn thấy vẫn giống033.188 sửa camera rồi tiếp tục sao chép bố cục chân đó. [Đối chiếu đường chân](villager-walk-D0-contact-188/POST_INTAKE_PATHS.md) và [phân tích](movement-research-161/CONTACT_OWNERSHIP_188.md) giữ nguyên bằng chứng.
+Human bác bỏ hai passing frame155 vì dị dạng. [Research161](movement-research-161/README.md) chỉ ra guide153 đã có thân gầy/cứng và call155 không đính kèm canonical trực tiếp. Guide bị dùng làm authority hình thể trong khi contact chỉ giữ vật liệu. Vai/ngực/hông đổi khối, chân thẳng dài và chân nâng cuộn lại. Đây là lỗi ngay trong whole PNG, không phải renderer bóp méo ảnh. Suy luận từ input/output không bảo đảm biết cơ chế bên trong model.
 
-189 dùng hai hình nháp **toàn thân có trang phục**, phân biệt chân A/B bằng đường nối hông–gối–sandal và thứ tự che khuất, thay tên trái/phải không được xác minh. Guide không phải asset hiển thị và không phải limb texture.
+Có lỗi điều khiển pose riêng:152 được gọi là contact đối diện nhưng actual legpaths giống033;188 cũng lặp bố cục đó. Không dùng tên file/prompt thay quan sát pose. Whole clothed guides189 → guide illustration191 → whole identity correction192 mới tạo được contact khác. Cách này có ích cho một pose khó, chưa đủ chứng minh batch.
 
-190 đính kèm guide cùng ảnh toàn thân cũ vẫn lặp pose.191 chỉ đính kèm guide: đường chân thay đổi nhưng nón che mặt và camera/hình thể lệch.192 dùng chính191 làm **ảnh đích toàn thân**, canonical làm nguồn diện mạo; bản trả về giữ đường chân mới và khôi phục mặt/nón. Root chọn192 làm key thử F4. Đây là bằng chứng một bước sửa có ích, **chưa chứng minh workflow sản xuất hàng loạt hoặc chuyển động mượt**.
+Sau đó F3 và F4 khác khối thân/tay so với neighbors.205 sửa F3 whole-body;211 sửa F4 whole-body. Root thấy211 có thân rộng hơn và tay đối trọng rõ hơn192 ở89px. **Không suy motion PASS từ ảnh so sánh.** [Research212](movement-research-212/README.md) nối nguyên tắc animation với nguồn thực tế, không mở thêm image calls.
 
-## Nguồn hiện hành
+## 2. Chu kỳ thực tế hiện hành
 
-| Vị trí | Whole PNG thực tế | Quyết định |
+[Preview213](pure2d-walk-D0-preview-213/actual-output/playback/actual-eight-frame-loop.png) giữ208 và thay ONLY F4 bằng211.208 đã thay ONLY F3 của195 bằng205. Các original/held và preview cũ giữ nguyên byte.
+
+| Phase | Whole source | Vai trò trong vòng thử |
 |---|---|---|
-| F0 contact |188 |Requested F4 thất bại; explicit reassignment chỉ sang F0 giữ nguyên raw, thay033 để đồng bộ dáng thân.|
-| F2 passing |185 |Chọn cho vòng pilot; không suy motion PASS từ ảnh tĩnh.|
-| F4 contact đối diện |192 |Root thấy đường chân khác188 và mặt/nón được khôi phục; chọn cho vòng pilot.|
-| F6 passing |182 |Bản hạ footlift từ181; chọn cho vòng pilot.|
-| F1 |193 |Root chọn cho vòng thử; down subtle, original worker warning giữ nguyên.|
-| F3 |197 sau guide196 |Root chọn provisional để xem đủ vòng; body/head/phase warnings giữ nguyên.193F3 nonfamily không dùng.|
-| F5/F7 |194 |Hai whole PNG được chọn cho vòng thử, chưa motion approval.|
+| F0 contact A |188 raw |Requested F4 thất bại; được reassign công khai chỉ sang F0 |
+| F1 down A |193 F01 |Nhận tải, down còn subtle |
+| F2 passing A |185 raw |Passing candidate, không standalone motion approval |
+| F3 up A |205 raw |Whole correction phục hồi face/upperbody, giữ closefoot pose |
+| F4 contact B |211 raw |Whole correction từ192, giữ opposite-contact layout và sửa torso/arms |
+| F5 down B |194 F05 |Inbetween candidate |
+| F6 passing B |182 raw |Passing candidate đã hạ footlift |
+| F7 up B |194 F07 |Chuẩn bị nối F0 |
 
-[Ledger bốn key](villager-walk-D0-contact-192/current-keys.json) bind raw/hash/slot. Các raw155/152/188-requestedF4/190/191 và mọi hold giữ nguyên.191 chỉ là edit target, không approved continuity source. Không lật ảnh hoặc lấy nhãn prompt thay đường chân thực tế.
+Actual whole source1254² được giữ vì custody/output của builtin tool. Working256², runtime128² và preview89² dùng cùng phép scale toàn canvas, sourcepivot654,1140. **Không fit/shift/warp từng frame.** Tám hold75ms =600ms cho preview; playback thật dùng distance clock theo entity, không đồng hồ chung hoặc đổi simulation speed.
 
-## Quy trình thực thi ngắn
+## 3. Quy trình sửa để tránh tiếp tục đổi hình thể
 
-1. **Giữ identity và camera:** canonical hiện có là nguồn diện mạo/tỷ lệ; không tạo limb textures hoặc model3D. Guide toàn thân chỉ xác định pose/ownership.
-2. **Khi tham chiếu ảnh cũ kéo pose về sai:** tách bước render guide thành whole illustration và bước sửa diện mạo trên chính ảnh đó. Không ghép pixel/parts; cả hai đầu ra đều là PNG minh họa toàn thân. Đây là cách vừa kiểm chứng ở191/192, chưa mặc định cần hai call cho mọi frame.
-3. **Bốn inbetween:** mỗi frame dùng predecessor và next key thực tế, với vai trò rõ. F1 chịu tải sau F0; F3 chuyển sang contact đối diện; F5 chịu tải sau F4; F7 chuẩn bị trở lại F0.193/194 chạy song song vì ownership file độc lập. Không retry một slot lỗi bằng prompt nguyên trạng.
-4. **Export195:** chỉ nhận đủ tám source thực tế được root chọn, đúng hash. Tái sử dụng exporter atlas/APNG hiện có; thiếu/held input phải dừng, không lặp key để giả đủ tám frame.
-5. **Một vòng xem ngắn:** đúng600ms (8×75ms), cell89 ở preview và cùng transform cả family. Xem chuyển động liên tục, F7→F0, đổi chân trụ, dáng người và silhouette. Chỉ sửa lỗi nhìn thấy ở kích thước gameplay; không anatomy/cloth/pixel scoring lặp.
-6. **Tích hợp candidate:** atlas D0 walk qua API state/direction hiện có; phase theo quãng đường entity, không can thiệp simulation speed. Actual UI đi đúngD0, Pause/Resume/Stop và idle transition. Preview đứng yên không chứng minh world foot lock.
-7. **Mở rộng sau pilot:** thống nhất idle/walk/work family scale; hoàn thành villager directions/actions, rồi một infantry pilot và một complex family. Tái sử dụng pose plans/timing/export/atlases/runtime, nhưng mỗi frame cuối vẫn là minh họa riêng. Không mở toàn roster bằng checksum hoặc technical PASS.
+**Một canonical → complete rough cycle cùng hình thể → illustrated keys → illustrated inbetweens → một loop → actual travel.**
 
-## Kích thước và kiểm tra vừa đủ
+1. **Một nguồn hình thể.** Canonical D0 `docs/art/characters/villager-neutral-D00-screen-ESE/raw.png` (SHA145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94) giữ mặt, nón, vai/ngực/hông, chiều dài áo, camera và ánh sáng. Poseguide giữ contact/near-far/đường chi. Không cho guide generic thay vóc dáng. Không cần vẽ texture tay/chân riêng.
+2. **Chốt cả chuyển động nháp trước chi tiết.** Tám hình có trang phục dùng cùng model drawing; contact/down/passing/up và đối trọng tay–thân–chân. Xem rough loop một lần để sửa volume/phase rõ. Guide là authoring reference, không asset runtime hoặc giấy chứng nhận motion.
+3. **Minh họa key có điều kiện.** Canonical trực tiếp làm appearance authority; target whole drawing làm pose authority. Nếu tham chiếu whole pose cũ kéo chân trở lại sai, dùng guide-only rồi whole appearance edit như191/192, chỉ khi cần. Không mặc định hai call cho mọi frame. Mỗi order hữu hạn; pose lặp hoặc biến dạng rõ phải HOLD, không cùng prompt retry vô hạn.
+4. **Inbetween nối hai nguồn thật.** Attach selected predecessor và next key với vai trò tách bạch, cộng canonical khi cần. Không tự sinh tám ảnh độc lập; không dùng held source làm authority hoặc đổi nhãn để giả đạt. Swing đi theo cung và occlusion; không tuyến tính nối đầu gối giữa hai contact.
+5. **Tie-down trước material polish.** Giữ silhouette/volume và identity trước. Biến đổi pose có thể làm áo che chân khác nhau nhưng không làm thân trở thành người khác. Whole-frame edit sửa lỗi thấy rõ; không cutout/limb rotation/source-pixel splice/3D.
+6. **Compile và xem sớm.** Tái dùng017 atlas adapter,012 APNG exporter, actual browser preview và một ledger tám nguồn. Một contact sheet +10–15 giây loop ở gameplay size đủ để lập danh sách ngắn các lỗi nhìn thấy. Không xét cloth/pixel li ti hoặc tạo nhiều tốc độ/nền để audit.
 
-Working/export whole canvas256; runtime128; preview cell89 tương ứng body nhỏ hơn cell, gần mục tiêu unit64–96px khi trình bày đúng. Raw builtin1254 bắt buộc bởi đầu ra tool được lưu custody, không nạp vào game. Dùng một transform toàn canvas/pivot source654,1140 cho cả chu kỳ, không fit/shift từng frame. Atlas tám128cell chứa512KiB RGBA trước padding/copies; chỉ bank cần dùng được decode. Kiểm tra hash/alpha/đủ frame/atlas, browser load và lỗi cơ bản; không lấy chúng thay visual acceptance.
+Krita mô tả keyframes trước rồi inbetween, dùng onion-skin của frame trước/sau để kiểm quan hệ và xem rough trước khi mở rộng. Áp dụng cách tổ chức này bằng tooling hiện có; không cần cài hoặc rewrite engine. [Nguồn primary](https://docs.krita.org/en/user_manual/animation.html), [onion-skin](https://docs.krita.org/en/reference_manual/dockers/onion_skin.html). Toon Boom nhấn mạnh contact/down/passing/up và rough torso/legs; primary search hỗ trợ nội dung nhưng một số full page403/404, xem retrieval notes212. Không chép sample art vào project.
 
-Family idle/walk/work scaleG02 vẫn cần scene thật. Pose sở hữu chân đúng là điều kiện để làm vòng thử, không phải footlock/motion approval. Nếu loop có lỗi rõ thì sửa một danh sách ngắn trước directions/units. Không thay tốc độ game, dùng blur hoặc thu nhỏ để che lỗi.
+## 4. Việc gần nhất, theo phụ thuộc
 
-## Trạng thái tổng thể
+| Gói | Việc cụ thể | Kết quả cần có |
+|---|---|---|
+|213, không imagecall |Actual atlas/APNG thay ONLY F4, bảo toàn208/211; technical browser8frames/Pause/Play |Root intake và vòng thật hiển thị, không tự gán naturalness |
+|Brief loop look |Xem cả người ở89cell/600ms, chỉ lưu lỗi nhảy thân/phase/seam thấy rõ |Nếu lỗi rõ, finite whole-frame correction đúng slot; không blind call tiếp |
+|D0 idle family |Dùng whole canonical với một family transform khớp walk; tránh oldidle38→walk89 pop |Candidate scale/anchor, không fit từng frame |
+|D0 runtime trial |Reuse atlas/state/direction API và distance phase; actual UI D0 travel → Pause/Resume → Stop/idle/menu |Cùng người, transition hợp lý và practical foot contact; actual sim direction |
+|Villager expansion |Sau pilot đủ tốt: hoàn thành direction references/walk/actions theo finite matrix |Không fanout từ riêng211contact hoặc checksum |
 
-Full game **INCOMPLETE**. Public149 chưa nhận các frame này. Root giữ các receipt gameplay186 và merged browser183/187 riêng; chúng không chứng minh animation. Builtin imagegen, Sol6.1Low; không API key, quota polling, Blender, cutout, limb textures hay source-pixel splicing. Đồ mang về dùng walk thường.
+Pending human question cũ scoped195; không tự suy reply ấy chấp nhận213 và không hỏi lại liên tục. Owner032wood và141iron chỉ áp dụng đúng các D1 loop đã xem. Food101 pending riêng. Loadedgoods luôn ordinarywalk.
 
-## Kết quả preview195 và việc tiếp theo
+## 5. Foot contact và runtime: hai gate khác nhau
 
-[APNG thực tế](pure2d-walk-D0-preview-195/actual-output/playback/actual-eight-frame-loop.png) và [receipt](pure2d-walk-D0-preview-195/root-intake.json) đã xuất từ đúng tám nguồn. Browser chạy F0–F7 qua ba vòng600ms,zeroerrors; all source/output hashes được bind. Gói195 không tạo ảnh mới và không cài runtime.
+Stationary loop phát hiện shape/seam, không chứng minh chân bám đất khi nhân vật tiến. D0 là world+X chiếu xuống/phải màn hình. Runtime root tiến trong khi chân trụ trong hình phải lùi tương ứng; chân cố định trong cell sẽ trượt ngoài world. Existing distancePerCycle1.26 là metadata provisional, không phải số đã được hình ảnh chứng minh.
 
-Root đã hiển thị vòng thật và hỏi một lần về naturalness/mượt; chưa có câu trả lời. F3/F4 torso/arms khác neighbors là cảnh báo rõ, không bị technical PASS che đi. Nếu continuous look cho thấy giật thì sửa đúng các frame đó, giữ phần đã tốt và bảo toàn loop195. Nếu đủ tốt thì candidate D0 runtime với canonical idle cùng scale, rồi actual UI travel/Pause/Stop. Không mở thêm directions/units trước pilot runtime intake.
+Sau trial thật, nếu thấy trượt rõ thì dùng một vài contact/position samples để hiệu chỉnh stride metadata của **cả action**, giữ simulation speed/collision/pathing. Không đòi zero pixel sliding từ tám static frames; không biến bài test hình học thành motion acceptance. [Contract hiện có](movement-research-161/runtime-motion-contract.md) giữ công thức và source mapping.
 
-Hai-stage guide render → whole identity edit vừa giúp tạo contact192, nhưng chưa chứng minh sản xuất hàng loạt. Không mặc định thêm hai call cho từng frame; chỉ dùng khi thực sự cần kiểm soát pose/diện mạo. Chỉ đo throughput/qualified output sau ít nhất hai cycle được chấp nhận, không dự báo ngày hoàn thành từ số file.
+## 6. Tái sử dụng và giới hạn thực tế
 
-## Cập nhật205/208 — candidate hiện hành
+Tái sử dụng model specification, phase/ownership conventions, timing/stride metadata, exporter/manifest, preview, atlas banking và runtime controller. Whole illustration của mỗi unit vẫn riêng; spear/firearm/commander/horses/wagons/ships có silhouette và motion family tương ứng. Không reuse chân hoặc tay PNG.
 
-Root sửa lỗi bodypop rõ ở F3 bằng ONE whole edit205/0retry:197 F3 là whole-target poseauthority, canonical chỉ appearance. Mặt/nón và upperbodybulk gần family hơn, giữ closefoot layout. Root chọn provisional, không gán motion PASS. [208 APNG](pure2d-walk-D0-preview-208/actual-output/playback/actual-eight-frame-loop.png) thay ONLY F3=205raw8cde…ebf6, giữ mọi195bytes. Atlasb5cf89e7…7f604/APNG1ddf3f47…77cad cùng1254/pivot6541140→128/89/600ms. Browserall8/3cycles/zeroerrors technicalonly; root89sheet betterF3head/body, F4quietarms/tunicdifference remains.208 đã hiển thị, pendingquestion195 không tự approve208. Không runtime/fanout/worldfootlock. Next là briefcontinuousgame-size look/specificvisiblefix, rồi same-familyidle+actualD0travel. Không tạo cả bộ lại hoặc auditsmicroanatomy.207publicfort28 không chứaD0 hoặc foodCHAR; ability/building browser209 không chứng minh animation.
+Khả năng giữ anatomy/volume qua nhiều image calls chưa được bảo đảm. Skill/tool reference chỉ giúp tổ chức và hướng dẫn, không ràng buộc hình học tuyệt đối. Nếu một finite method vẫn trả pose lặp/dị dạng, ghi HOLD và thay cách điều khiển whole drawing; không hứa sản xuất hàng nghìn frame bằng workflow chưa qualified. Đo throughput từ action hoàn chỉnh được chấp nhận, không từ số calls/files.
+
+Full project **INCOMPLETE**. Public207 optionalfort28 giữ nguyên, chưa chứa D0. Previous active plan byte-preserved tại `docs/checkpoints/checkpoint209-entrypoints/`; mọi source/rejection/custody tiếp tục bảo toàn. Builtin imagegen/Sol6.1Low/pure2D, không API/key/quota/3D/cutouts.

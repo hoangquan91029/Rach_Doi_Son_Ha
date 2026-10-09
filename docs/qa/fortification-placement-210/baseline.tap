@@ -1,0 +1,371 @@
+✖ wall/wall accepts orthogonal adjacent cell 1,0 without footprint overlap (9.670692ms)
+✖ wall/wall accepts orthogonal adjacent cell -1,0 without footprint overlap (1.74071ms)
+✖ wall/wall accepts orthogonal adjacent cell 0,1 without footprint overlap (1.514511ms)
+✖ wall/wall accepts orthogonal adjacent cell 0,-1 without footprint overlap (1.193186ms)
+✖ wall/gate accepts orthogonal adjacent cell 1,0 without footprint overlap (0.859079ms)
+✖ wall/gate accepts orthogonal adjacent cell -1,0 without footprint overlap (0.863966ms)
+✖ wall/gate accepts orthogonal adjacent cell 0,1 without footprint overlap (1.030264ms)
+✖ wall/gate accepts orthogonal adjacent cell 0,-1 without footprint overlap (0.720658ms)
+✖ gate/wall accepts orthogonal adjacent cell 1,0 without footprint overlap (0.740212ms)
+✖ gate/wall accepts orthogonal adjacent cell -1,0 without footprint overlap (0.787132ms)
+✖ gate/wall accepts orthogonal adjacent cell 0,1 without footprint overlap (0.66831ms)
+✖ gate/wall accepts orthogonal adjacent cell 0,-1 without footprint overlap (0.889585ms)
+✖ gate/gate accepts orthogonal adjacent cell 1,0 without footprint overlap (0.666705ms)
+✖ gate/gate accepts orthogonal adjacent cell -1,0 without footprint overlap (0.63029ms)
+✖ gate/gate accepts orthogonal adjacent cell 0,1 without footprint overlap (0.748003ms)
+✖ gate/gate accepts orthogonal adjacent cell 0,-1 without footprint overlap (0.909414ms)
+✔ wall/wall same-cell overlap rejected without spending (1.237421ms)
+✔ wall/gate same-cell overlap rejected without spending (0.649878ms)
+✔ gate/wall same-cell overlap rejected without spending (0.621664ms)
+✔ gate/gate same-cell overlap rejected without spending (0.58169ms)
+✔ barracks/wall retains other-building setback (1.780626ms)
+✔ wall/barracks retains other-building setback (2.411689ms)
+✔ gate/barracks retains other-building setback (2.120074ms)
+✔ barracks/gate retains other-building setback (2.183616ms)
+✔ unit footprint, impassable terrain, ford, coastal, ownership and King role guards remain (5.664382ms)
+✔ friendly gate permits passage in a wall/gate/wall corridor (27.132634ms)
+✔ hostile gate blocks passage in a wall/gate/wall corridor (18.747288ms)
+ℹ tests 27
+ℹ suites 0
+ℹ pass 11
+ℹ fail 16
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 142.364664
+
+✖ failing tests:
+
+test at tests/fortification-placement210.test.js:6:122
+✖ wall/wall accepts orthogonal adjacent cell 1,0 without footprint overlap (9.670692ms)
+  AssertionError [ERR_ASSERTION]: Construction site blocked or shipyard is inland
+  
+  false !== true
+  
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/fortification-placement210.test.js:6:323)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.start (node:internal/test_runner/test:1096:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:385:17) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/fortification-placement210.test.js:6:122
+✖ wall/wall accepts orthogonal adjacent cell -1,0 without footprint overlap (1.74071ms)
+  AssertionError [ERR_ASSERTION]: Construction site blocked or shipyard is inland
+  
+  false !== true
+  
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/fortification-placement210.test.js:6:323)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/fortification-placement210.test.js:6:122
+✖ wall/wall accepts orthogonal adjacent cell 0,1 without footprint overlap (1.514511ms)
+  AssertionError [ERR_ASSERTION]: Construction site blocked or shipyard is inland
+  
+  false !== true
+  
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/fortification-placement210.test.js:6:323)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/fortification-placement210.test.js:6:122
+✖ wall/wall accepts orthogonal adjacent cell 0,-1 without footprint overlap (1.193186ms)
+  AssertionError [ERR_ASSERTION]: Construction site blocked or shipyard is inland
+  
+  false !== true
+  
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/fortification-placement210.test.js:6:323)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/fortification-placement210.test.js:6:122
+✖ wall/gate accepts orthogonal adjacent cell 1,0 without footprint overlap (0.859079ms)
+  AssertionError [ERR_ASSERTION]: Construction site blocked or shipyard is inland
+  
+  false !== true
+  
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/fortification-placement210.test.js:6:323)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/fortification-placement210.test.js:6:122
+✖ wall/gate accepts orthogonal adjacent cell -1,0 without footprint overlap (0.863966ms)
+  AssertionError [ERR_ASSERTION]: Construction site blocked or shipyard is inland
+  
+  false !== true
+  
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/fortification-placement210.test.js:6:323)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/fortification-placement210.test.js:6:122
+✖ wall/gate accepts orthogonal adjacent cell 0,1 without footprint overlap (1.030264ms)
+  AssertionError [ERR_ASSERTION]: Construction site blocked or shipyard is inland
+  
+  false !== true
+  
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/fortification-placement210.test.js:6:323)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/fortification-placement210.test.js:6:122
+✖ wall/gate accepts orthogonal adjacent cell 0,-1 without footprint overlap (0.720658ms)
+  AssertionError [ERR_ASSERTION]: Construction site blocked or shipyard is inland
+  
+  false !== true
+  
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/fortification-placement210.test.js:6:323)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/fortification-placement210.test.js:6:122
+✖ gate/wall accepts orthogonal adjacent cell 1,0 without footprint overlap (0.740212ms)
+  AssertionError [ERR_ASSERTION]: Construction site blocked or shipyard is inland
+  
+  false !== true
+  
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/fortification-placement210.test.js:6:323)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/fortification-placement210.test.js:6:122
+✖ gate/wall accepts orthogonal adjacent cell -1,0 without footprint overlap (0.787132ms)
+  AssertionError [ERR_ASSERTION]: Construction site blocked or shipyard is inland
+  
+  false !== true
+  
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/fortification-placement210.test.js:6:323)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/fortification-placement210.test.js:6:122
+✖ gate/wall accepts orthogonal adjacent cell 0,1 without footprint overlap (0.66831ms)
+  AssertionError [ERR_ASSERTION]: Construction site blocked or shipyard is inland
+  
+  false !== true
+  
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/fortification-placement210.test.js:6:323)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/fortification-placement210.test.js:6:122
+✖ gate/wall accepts orthogonal adjacent cell 0,-1 without footprint overlap (0.889585ms)
+  AssertionError [ERR_ASSERTION]: Construction site blocked or shipyard is inland
+  
+  false !== true
+  
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/fortification-placement210.test.js:6:323)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/fortification-placement210.test.js:6:122
+✖ gate/gate accepts orthogonal adjacent cell 1,0 without footprint overlap (0.666705ms)
+  AssertionError [ERR_ASSERTION]: Construction site blocked or shipyard is inland
+  
+  false !== true
+  
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/fortification-placement210.test.js:6:323)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/fortification-placement210.test.js:6:122
+✖ gate/gate accepts orthogonal adjacent cell -1,0 without footprint overlap (0.63029ms)
+  AssertionError [ERR_ASSERTION]: Construction site blocked or shipyard is inland
+  
+  false !== true
+  
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/fortification-placement210.test.js:6:323)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/fortification-placement210.test.js:6:122
+✖ gate/gate accepts orthogonal adjacent cell 0,1 without footprint overlap (0.748003ms)
+  AssertionError [ERR_ASSERTION]: Construction site blocked or shipyard is inland
+  
+  false !== true
+  
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/fortification-placement210.test.js:6:323)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/fortification-placement210.test.js:6:122
+✖ gate/gate accepts orthogonal adjacent cell 0,-1 without footprint overlap (0.909414ms)
+  AssertionError [ERR_ASSERTION]: Construction site blocked or shipyard is inland
+  
+  false !== true
+  
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/fortification-placement210.test.js:6:323)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

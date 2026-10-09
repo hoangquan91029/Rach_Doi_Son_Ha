@@ -1,6 +1,8 @@
-# Kế hoạch đồ họa — checkpoint181, 10/10/2026
+# Kế hoạch đồ họa — movement213, 10/10/2026
 
 Kế hoạch toàn game: [PROJECT_PLAN.md](../../PROJECT_PLAN.md). Phạm vi và bằng chứng chi tiết: [art-animation-audit.md](../../audit/2026-10-09/art-animation-audit.md). Bản kế hoạch trước audit được giữ [nguyên byte](../../audit/2026-10-09/history/docs/art/pipeline/GRAPHICS_PRODUCTION_PLAN.md).
+
+**Movement hiện hành:** [plan213](MOVEMENT_PRODUCTION_PLAN_20261010.md), [research212](movement-research-212/README.md), [actual213loop](pure2d-walk-D0-preview-213/actual-output/playback/actual-eight-frame-loop.png).213 giữ208 chỉ sửaF4=211wholebody/arms; technicalplaybackPASS, motion/owner/worldfootlock/runtime/fanoutOPEN. Các mục181/195 phía dưới là lịch sử nguồn, không currentNEXT. Public207fort28/185files thay149; fullgoal INCOMPLETE. Local210 wall/gateadjacencyfixed, renderer/topologyartunfinished. No moreblindcalls; briefwholeloop→samefamilyidle→actualD0travel, thenqualifiedfanout. Previousplanbytearchive209.
 
 ## Mục tiêu hình ảnh
 
@@ -13,14 +15,14 @@ Thứ tự đánh giá: chuyển động đúng và liền mạch → silhouette
 | Hạng mục | Đã có | Còn thiếu |
 |---|---|---|
 | Villager D1 | Idle, walk 014, wood 026/owner 032, iron 136/owner 141; food 101 local | Build/repair, attack/hit/death và độ phủ hướng; food còn chờ phản hồi riêng |
-| Villager D0 | 033/152 contact candidates;155 F2/F6 đã bị người dùng bác bỏ,158 dừng0call | 181 giữ realisticbody và chân gập nhưng footlift cao; candidate chưa finalkey. Còn low-amplitude correction, final loop và actual travel/stop |
+| Villager D0 | Whole eight-frame candidate213, corrected F3/F4;155 rejected originals retained | Brief continuous intake, same-family idle and actualtravel/Stop; no batch qualification |
 | Quân đội | Một số identity idle D0 | Phần lớn hành động và hướng nhìn cho infantry, spear, firearm, cavalry, artillery, wagon và hai tàu |
 | Leaders | 12 portrait và nguồn identity gốc | Hoạt ảnh toàn thân, hành động theo vai trò và 8 hướng; chỉ một general có idle candidate |
-| Buildings | Public6/10, local7/10 completed-idle | Fort/Wall/Gate; construction/damage/destruction |
+| Buildings | Public207 includes8/10 completed-idle families; local210 wall/gate placementfix | Wall/Gate finishedart/topology; all construction/damage/destruction and applicable attackstates |
 | World | Ground/water/ford/shore candidates, forest, hill/mountain, food/iron nodes | Composition hai map, bờ/edge/repetition và scene đông quân |
-| Framework | Export017, preview098, timing, locomotion phase, gather episodes, alpha picking, manifest loader | 170catalog/compiler và175matchbanks đã có local; còn acceptedcoverage/default release, completedcombatrematch và mergedcandidate |
+| Framework | Export017/APNG012, distance phase, alpha picking,170catalog/compiler,175matchbanks and bounded browser receipts | Accepted fullcoverage/default release and final visual/performance validation |
 
-Public149 `?art=camp` có 26 asset entries / 47 frame rectangles. Đó không phải 26 animation hay bộ roster hoàn chỉnh. URL trần chưa dùng slice này mặc định.
+Public207 `?art=fort` có28 asset entries; đây không phải28animation hoặc roster hoàn chỉnh. URL trần vẫn fallback. Public149 scope chỉ là lịch sử, không bản đang chạy.
 
 ## Quy trình chuẩn cho một action
 
