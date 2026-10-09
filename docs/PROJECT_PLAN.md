@@ -40,7 +40,7 @@ Mỗi gói chỉ cần một `job.json` hoặc ledger liên kết original/refer
 | ID | Ưu tiên / gói | Phạm vi cụ thể | Đầu ra / tiêu chí hoàn thành | Phụ thuộc |
 |---|---|---|---|---|
 | P00 | P0 — hợp nhất trạng thái | Ghi đúng public 149, local 151, key 152 và prep 153; bảo toàn phần chưa commit và receipt; giữ tài liệu hiện hành ngắn | Audit 154, kế hoạch và history nguyên byte; không mất source | Audit hiện tại |
-| G01 | P0 — hoàn tất walk D0 | Dùng F0 của 033 và F4 của 152; review nhanh guide 153; tối đa 2 call F2/F6 trước, rồi 4 inbetween khi key đúng | 8 frame toàn thân, atlas, loop tự nhiên ở size thật và di chuyển/Stop thực tế ở D0; không giả heading | P00; intake source mỗi phase |
+| G01 | P0 — làm lại movement đúng mẫu | Theo [research161](art/pipeline/movement-research-161/README.md):155 bị bác bỏ,158 dừng0call; một master D0 → tám rough drawings đúng hình thể → brief loop → một repaint trial hữu hạn trước khi hoàn thiện key/inbetween | 8 frame toàn thân, atlas, loop tự nhiên ở size thật và di chuyển/Stop thực tế ở D0; không giả heading | P00; intake source mỗi phase |
 | G02 | P0 — thống nhất scale và action registry | Đo chiều cao body opaque của idle/walk/work ở cùng camera/zoom mặc định; khai báo một scale mỗi family; bảng mapping thực tế | Không đổi size đột ngột giữa idle và walk/gather; chốt working 256/runtime 128 hoặc ngoại lệ có lý do; giữ runtime hiện tại đến khi xác minh | Có thể bắt đầu từ frame hiện có khi G01 đang làm; nghiệm thu scene hỗn hợp cuối sau G01 |
 | C01 | P0 — sửa lỗi gameplay đã xác nhận | Finding có reproduction trong gameplay audit; mỗi patch sửa một invariant | Repro trước/sau và test tập trung; chạy regression shared sim nếu đổi mechanics | Bằng chứng audit; mục 5 |
 | G03 | P1 — villager đủ 8 hướng | Khóa identity 8 view; dùng D1/D0 làm mẫu; mở từng cặp direction sau khi đủ pilot | Idle/walk đủ 8 hướng; build/repair/gather/attack/hit/death theo hành vi thật | G01, G02 và cầu nối runtime |
@@ -128,3 +128,9 @@ Audit và lập kế hoạch không tự cấp visual PASS, sửa gameplay, tri�
 Báo cáo con là snapshot tại `77c0ae1` cộng phần 151 chưa commit, trước khi tài liệu được rút gọn. Nhận xét “NEXT_STEPS còn 145/146” mô tả thời điểm audit, không phải chỉ dẫn hiện hành.
 
 Ngân sách ở mục 6 là baseline của kế hoạch. Con số khác trong báo cáo release là phương án tham khảo chưa áp dụng; không yêu cầu đạt cả hai bộ threshold. Host luôn hoạt động là lựa chọn để tăng độ tin cậy, không có nghĩa §81 bắt buộc mua cloud hosting. Một thiết bị/mạng ngoài là gate bằng chứng thận trọng cho final release; kết quả hai browser trên cùng máy hiện có vẫn được giữ nguyên.
+
+## 12. Cập nhật thực thi 156–161
+
+Human rejection của155 F2/F6 thay selection cũ;158 không được chạy. Nguyên nhân nhìn thấy là đổi hình thể toàn thân, guide generic và các authority tỷ lệ không thống nhất. [Research161](art/pipeline/movement-research-161/README.md) là đặc tả movement hiện hành: gói162 zero-call authoring một chu kỳ nháp đúng canonical trước một single-call capability test. Thứ tự key trước final inbetween còn giữ, nhưng rough breakdown được hoạch định trọn vòng trước finish. Không ép giữ033/152 nếu chúng không hợp canonical/rough mới.
+
+156/159 đã sửa local GP1/GP2; exact staged suite140/140 PASS có repro baseline, AI/naval và full source binding.157 coverage/read-only đã có,160 cập nhật route tests giữ eligibility/fog/custody. Không có build/deploy hoặc trận browser mới từ các gói này. Public149 còn nguyên. GP3/GP4/T01, đồ họa đủ roster/map và các gate release vẫn mở. Không đọc phần mô tả snapshot154 phía trên như một lệnh mở lại155/158.

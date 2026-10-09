@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1254" height="1254" viewBox="0 0 1024 1024">
+<defs>
+ <linearGradient id="cream" x1="0" x2="1"><stop stop-color="#c7b58f"/><stop offset=".45" stop-color="#e8dcc1"/><stop offset="1" stop-color="#f2e8d4"/></linearGradient>
+ <linearGradient id="brown" x1="0" x2="1"><stop stop-color="#493b2c"/><stop offset=".6" stop-color="#6c5740"/><stop offset="1" stop-color="#816b50"/></linearGradient>
+ <linearGradient id="hat" x1="0" x2="1"><stop stop-color="#90704b"/><stop offset=".65" stop-color="#d6b482"/><stop offset="1" stop-color="#e3c593"/></linearGradient>
+</defs>
+<!-- Complete original clothed 2D guide, not source pixels or final unit artwork. FAR arm is behind shirt. -->
+<g transform="translate(0 -74.4727272727) scale(1 1.08)" stroke="#4a3b2e" stroke-width="3" stroke-linejoin="round">
+ <path d="M580 318Q630 333 638 380L632 434L625 490Q624 507 610 508L598 491L604 429L576 367Z" fill="#b88b5f"/>
+ <path d="M577 315Q613 315 638 351L642 394Q620 414 592 402L572 363Z" fill="url(#cream)"/>
+<!-- farLEFT rear push-off; nearRIGHT swing advances and lowers toward F00 -->
+<path d="M504 595Q491 693 500 748L467 848Q491 867 516 848L558 748Q565 683 573 595Z" fill="url(#brown)"/><path d="M467 848Q491 862 516 848L515 910Q491 920 469 910Z" fill="url(#cream)"/><path d="M468 907L508 907Q536 922 571 942Q581 955 563 960L505 958L462 917Z" fill="#b5865d"/><path d="M462 917L505 958L568 955L575 962Q541 972 499 965L459 926Z" fill="#6b4b30"/><path d="M486 915L533 955M508 915L551 950" stroke="#493626" stroke-width="8" fill="none"/><path d="M430 595Q501 661 510 716L559 800Q583 819 608 800L568 716Q575 651 499 595Z" fill="url(#brown)"/><path d="M559 800Q583 814 608 800L607 862Q583 872 561 862Z" fill="url(#cream)"/><path d="M560 884L600 859Q628 874 663 882Q673 895 655 900L597 898L554 894Z" fill="#b5865d"/><path d="M554 894L597 898L660 895L667 902Q633 912 591 905L551 903Z" fill="#6b4b30"/><path d="M578 867L625 895M600 867L643 890" stroke="#493626" stroke-width="8" fill="none"/> <!-- One whole tunic silhouette, natural hem overlapping both hip roots. -->
+ <path d="M440 292Q490 278 536 291L582 315Q607 352 606 399L582 460L600 562L618 629Q585 657 553 650L507 632L469 649Q427 640 395 615L418 559L430 474L416 399L390 351Z" fill="url(#cream)"/>
+ <path d="M529 299L440 422L459 456L566 324M451 456L470 585M556 467L577 607M430 527L415 590" fill="none" stroke="#aa9774" stroke-width="6"/>
+ <path d="M426 465Q500 484 581 459L588 491Q509 514 424 493Z" fill="#594332"/>
+ <!-- Actor LEFT/far sash remains on viewer-right hip. Rust cue is internal guide identity hint only. -->
+ <path d="M576 470Q599 483 580 500L596 560L591 623L565 603L566 520L550 492Z" fill="#9a593d"/>
+<!-- NEAR arm neutral passing swing, small anti-phase offset. -->
+<path d="M407 330Q439 345 447 388L435 435L416 453L386 438L383 376Z" fill="url(#cream)"/>
+<path d="M388 430L418 438L385 491L397 543Q398 559 383 561L372 548L368 519L386 473Z" fill="#b98a5c"/>
+<path d="M384 423L420 435L414 457L383 445Z" fill="#ddd0b4"/>
+ <!-- Same ESE head and conical hat, simple coherent illustrated volumes. -->
+ <path d="M474 203Q515 187 550 211L571 246L557 275L544 291L533 325L494 313L489 277Q462 261 460 236Z" fill="#b8895e"/>
+ <path d="M518 202Q552 214 562 241L585 251L570 261L567 275L550 286L535 278" fill="#d0a174"/>
+ <path d="M525 279L548 290L553 309L536 321L522 303Z" fill="#342b25" stroke="none"/>
+ <path d="M550 235L562 239M556 267L570 269" fill="none" stroke="#3d3026" stroke-width="4"/>
+ <path d="M457 221Q482 181 531 182L566 212L553 225Q519 209 489 230L478 252Z" fill="#2d2923"/>
+ <path d="M378 210Q445 195 495 117Q540 138 597 173L653 205Q618 237 554 240L449 246Q402 244 378 224Z" fill="#755b3c"/>
+ <path d="M376 209L495 117L651 204Q602 220 551 224L441 235Z" fill="url(#hat)"/>
+ <path d="M495 117L442 232M495 117L504 230M495 117L568 220M495 117L622 210M410 184L591 184M394 202L625 201" fill="none" stroke="#a17f53" stroke-width="2"/>
+ <path d="M475 235Q478 269 516 281" fill="none" stroke="#514331" stroke-width="3"/>
+</g>
+</svg>

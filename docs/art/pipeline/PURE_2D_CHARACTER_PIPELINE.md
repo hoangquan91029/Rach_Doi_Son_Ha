@@ -47,4 +47,4 @@ Số frame theo từng hành động (idle 4–8, walk 8–12, hit 3–6, death 
 
 Một contact sheet, một vòng chuyển động ngắn ở kích thước thật và một kiểm tra di chuyển/hành động thực tế. Sửa phase sai, loop jump, scale/pivot jump, sliding rõ, identity/tool flicker; không chặn bằng cloth pixel nhỏ. Technical pass / visual intake / owner feedback / public release là bốn trường riêng.
 
-Nguồn current: walk 014/D1, wood 026/owner 032, iron 136/owner 141; food 101 local pending; D0 selected 033 F0 + 152 F4 / 153 guide prep. Không mở call sinh ảnh trong audit 154. Tiếp theo theo [NEXT_STEPS.md](../../../NEXT_STEPS.md).
+Nguồn current: walk014/D1, wood026/owner032, iron136/owner141; food101 local pending. Human rejects155 F2/F6;158 STOPPED0call.033/152 là contact candidates cho đối chiếu, chưa có D0 loop. Movement authoring phải theo [research161](movement-research-161/README.md), rough cả chu kỳ đúng mẫu trước một trial hữu hạn. Không chạy lại153/155/158 như order mới. Tiếp theo theo [NEXT_STEPS.md](../../../NEXT_STEPS.md).

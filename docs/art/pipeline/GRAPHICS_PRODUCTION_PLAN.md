@@ -13,7 +13,7 @@ Thứ tự đánh giá: chuyển động đúng và liền mạch → silhouette
 | Hạng mục | Đã có | Còn thiếu |
 |---|---|---|
 | Villager D1 | Idle, walk 014, wood 026/owner 032, iron 136/owner 141; food 101 local | Build/repair, attack/hit/death và độ phủ hướng; food còn chờ phản hồi riêng |
-| Villager D0 | 033 F0 và 152 F4 là selected contact candidates; 153 có 2 guide | 6 frame thực, loop và actual travel/stop |
+| Villager D0 | 033/152 contact candidates;155 F2/F6 đã bị người dùng bác bỏ,158 dừng0call | Chu kỳ nháp đúng canonical theo161, capability trial, final loop và actual travel/stop |
 | Quân đội | Một số identity idle D0 | Phần lớn hành động và hướng nhìn cho infantry, spear, firearm, cavalry, artillery, wagon và hai tàu |
 | Leaders | 12 portrait và nguồn identity gốc | Hoạt ảnh toàn thân, hành động theo vai trò và 8 hướng; chỉ một general có idle candidate |
 | Buildings | 6/10 completed-idle | Shipyard/Fort/Wall/Gate; construction/damage/destruction |
@@ -58,6 +58,6 @@ Không hứa ngày hoàn tất trước khi đo số frame được chấp nhậ
 
 ## Gate tiếp theo cụ thể
 
-G01 trong master plan: guide intake 153 → 2 calls F2/F6 → actual key intake → 4 inbetweens → 8 frame loop → actual D0 travel/stop. 152 chỉ là contact candidate; chưa qualified D0 workflow. Food đang chờ phản hồi không chặn các gói công việc độc lập. Wood 032 / iron 141 acceptance giữ nguyên. Các method 033/035/036/038/094/150 đã hết phạm vi lệnh, không thử lại mù.
+G01 hiện theo [movement research161](movement-research-161/README.md): một canonical master → complete on-model rough cycle162 (0call) → brief look → một whole-illustration capability trial (order mới,0retry) → key/inbetween thật → loop → actual D0 travel/Stop. Guide153/158 và key155 không được dùng làm parent production. Không giữ hai contact cũ bằng mọi giá khi lệch hình thể. Hình nháp là công cụ authoring, không final art. Wood032/iron141 acceptance đứng riêng; food pending không chặn lane độc lập. Các phương pháp exhausted/held không thử lại mù.
 
 Đưa asset mới vào default release sau coverage và actual-scene acceptance; không bật toàn bộ candidate rồi gọi finished. Full project vẫn **INCOMPLETE**.

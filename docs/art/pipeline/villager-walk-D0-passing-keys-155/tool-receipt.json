@@ -1,0 +1,26 @@
+{
+  "job": "155",
+  "model": "gpt-6.1-sol",
+  "reasoningEffort": "low",
+  "builtinCalls": 2,
+  "retries": 0,
+  "noOpenCall": true,
+  "calls": [
+    {
+      "frame": "F02",
+      "request": "F02-call-request.json",
+      "exactResult": "F02-tool-result-exact.json",
+      "raw": "F02-raw.png",
+      "execution": "exec-04cb48c0-234b-47c4-8851-afd73b4d6d48",
+      "handle": "await completed within initial call; no yielded cell handle"
+    },
+    {
+      "frame": "F06",
+      "request": "F06-call-request.json",
+      "exactResult": "F06-tool-result-exact.json",
+      "raw": "F06-raw.png",
+      "execution": "exec-142d24fa-4146-4897-b132-0b3bbdcba3f3",
+      "handle": "await completed within initial call; no yielded cell handle"
+    }
+  ]
+}

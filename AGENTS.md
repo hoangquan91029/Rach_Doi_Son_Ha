@@ -1,4 +1,4 @@
-# Project task profile — current after audit154
+# Project task profile — current after movement research161
 
 ## Mandatory routing and human choices
 
@@ -19,9 +19,10 @@ Final character production is pure2D whole illustration. Read `docs/art/pipeline
 
 Read `NEXT_STEPS.md`, `PROJECT_STATUS.md` and `docs/PROJECT_PLAN.md` before work. Inspect Git, relevant actual receipts and live worker/call handles. Never duplicate an open call or resume an exhausted order. Preparation files do not prove returned images; technical checks do not prove visual acceptance.
 
-Audit154 is documentation and planning only. Public149 serves optionalcamp26; local151 installation and147–153 art/receipts were dirty before the audit. Preserve them. Current D0 selected contacts are033F0+152F4;153F2/F6 are guides with zero calls.150 is HELD. No broad direction/unit fanout from a contact candidate. Owner032wood and141iron accept only the shownD1loops; food101feedback pending.
+Current checkpoint64f7090 preserves Camp151 and147–153 sources. Public149 still serves optionalcamp26. Human rejects actual155 F2/F6 as deformed: `docs/art/pipeline/villager-walk-D0-passing-keys-155/human-rejection.json` supersedes the earlier selection.158 is STOPPED with zero calls; never execute its prepared requests. Read `docs/art/pipeline/movement-research-161/README.md` before movement authoring. Next is a complete on-model eight-frame original2D rough cycle (162, zero image calls), not another isolated guide repaint. A new finite one-call repaint trial follows only after actual rough-cycle intake.033/152 contacts remain candidates for comparison, not a qualified cycle. Owner032wood and141iron cover only shownD1loops; food101 remains pending.
 
-Confirmed gameplay findings and their reproductions are in `docs/audit/2026-10-09/gameplay-audit.md`; they are not fixed merely by this plan. Current world/sim fixes already deployed must not be undone based on historical docs.
+Local156 passenger physiology and159 per-victim splash fixes are installed with exact staged full suite140/140 (including157coverage and160 route-test maintenance). Their receipts are in docs/qa/. These are source/test acceptances, not new production/browser/full-match proofs. Public149 simulation remains unchanged; promotion is a separate package.
+Confirmed gameplay findings and their reproductions are in `docs/audit/2026-10-09/gameplay-audit.md`; GP1/GP2 now have local fixes described above; other findings are not fixed merely by the plan. Current world/sim fixes already deployed must not be undone based on historical docs.
 
 ## Scope, evidence and safety
 

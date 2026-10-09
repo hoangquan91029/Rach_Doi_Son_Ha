@@ -1,0 +1,22 @@
+{
+  "verdict": "HUMAN_REJECTED_F02_F06",
+  "humanMessage": "nghiên cứu lại phần movement animations. tôi thấy hai frames mới tạo nó dị dạng, không ra thể thống gì hết",
+  "supersedes": "docs/art/pipeline/villager-walk-D0-passing-keys-155/parent-selection.json",
+  "priorReceiptSha256": "1e28e93836178d3c1078e8b842c83defb83147910a779d1b35225dccc0073fc2",
+  "rejectedFrames": [
+    {
+      "path": "docs/art/pipeline/villager-walk-D0-passing-keys-155/F02-raw.png",
+      "sha256": "40a30c5918d9c3948c7bf653af08b106864b63c8bc66371d8c14f60e366083f7"
+    },
+    {
+      "path": "docs/art/pipeline/villager-walk-D0-passing-keys-155/F06-raw.png",
+      "sha256": "392c79f1a5c3a5d77884f98b07ad9c115451435e068b33a1d7758951fb52c8e1"
+    }
+  ],
+  "reason": "Human rejects the two new whole illustrations as deformed. Root selected them prematurely; contact/passing body proportions visibly differ. No complete cycle is accepted.",
+  "custody": "Original source, request, tool output and previous receipt are preserved unchanged.",
+  "dependentJob158": "STOPPED_INVALID_PARENTS_ZERO_CALLS",
+  "callsOpen": false,
+  "runtimeInstall": false,
+  "next": "Research and revise whole-cycle 2D pose/identity workflow before any new finite authoring order. No blind retry or fanout."
+}
