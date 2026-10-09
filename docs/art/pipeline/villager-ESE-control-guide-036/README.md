@@ -1,0 +1,9 @@
+#036 whole-canvas pose control guide — HELD
+
+Exactly one full1254RGBA image warp from selected033F00, zero AI calls, one fixed89 comparison. Source hash4a7d287bc844b02d00b38074f1b59e3ce41e109b30891c20b3026a8965c6041c remains unchanged. Actual source clothed hip/knee/ankle/toe estimates and033F04 MODEL_ONLY target are explicit in prepare-guide.py/control-receipt.json. RIGHT remains near viewer-left hip root, LEFT remains far viewer-right sash root. Head/torso upper730 rows remain byte-identical; source pivot6541140 and canvas/family/camera metadata unchanged.
+
+MODEL_ONLY / NOT_FINAL_ART / NOT_SELECTED_FRAME. The inverse thin-plate spline resamples one whole bitmap with premultiplied-alpha bilinear interpolation, stable canvas anchors and upperbody fade. No limbs were extracted, no cutout assembly/donor splice/mirror/global fit/source overwrite or skin/detail repair. §5 authorizes 2D image warping for authoring only; a future final frame requires coherent whole illustration redraw and a separately authorized call.
+
+Brief89px result HELD: lower trousers fan sideways and the two legs merge into distorted overlap. NearRIGHT-forward/farLEFT-back contact ownership is not coherent. The source's overlapping cloth limbs cannot simply exchange positions with this single continuous planar deformation without folds. No further mask search, candidate export, repair, repeated comparison, rig rebuild or call was attempted. Original033/035 receipts and exhausted orders remain intact.
+
+The preserved guide demonstrates a materially different whole-image control experiment, but is unsuitable as a coherent F04 pose guide in its present form. No selected opposite contact, animation, motion/foot-lock/visual approval, public/runtime modification or fanout authority. Counts and output/source/control-script hashes are retained. No commit.

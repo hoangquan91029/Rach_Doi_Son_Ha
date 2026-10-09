@@ -1,3 +1,17 @@
+## Current checkpoint036 — owner-approved gather, D0 control held
+
+Human feedback032 accepts the shown South/D1 wood-gather loop as natural and smooth and authorizes continuing the pure2D workflow. Its exact APNG and scope remain in owner-motion-review-032/review.json; no repeat naturalness questionnaire is needed for this loop.
+
+D0 contact033 and guide-first035 are exhausted. F00 is selected, but both F04 outputs repeat its leading leg. Guide036 is also terminal HELD after exactly one whole-canvas warp and zero AI calls: lower trousers distort and near/far leg roles are unreadable at89px. Root's one brief gameplay-size comparison agrees. Preserve every original/guide/receipt; do not repeat these methods, choose the held guide as artwork, or open F2/F6/inbetweens without a usable opposite contact. Matching static idle034 remains ready for a future complete D0 walk. No image call is open.
+
+New038 is preparing one actual illustrated-key view transfer: selected South F4 provides opposite contact, sealed D0 provides camera/identity. It is distinct from abstract-guide retries; no call before root reference/order intake. MaxONE builtin call/0retries, noF2/F6/BIs until the opposite contact is usable. No3D, limb textures, mirroring or another abstract-guide retry. The builtin tool exposes no explicit mask control. Any CLI/API fallback needs explicit human selection under the imagegen skill; none is selected or called. Existing South animation/export/runtime tooling remains reusable.
+
+Independent finite QA037 is preparing one ordinary-UI Delta offline human-victory attempt with retained home defenders and an artillery/firearm offensive group. New opt-in QA strategy only, no game balance/resource/speed changes, max one360-second match, no Coast retry. Inspect live worker/receipts before resuming; do not duplicate. Previous029 timeout,030 Delta defeat and031 Coast defeat/menu coverage remain preserved. Production is untouched and the full game is NOT COMPLETE.
+
+Earlier checkpoint paragraphs below are historical; this current boundary supersedes their live/pending descriptions.
+
+---
+
 ## Current direction: pure 2D illustrated animation
 
 Use `model='gpt-6.1-sol'` and `reasoning_effort='low'` for every future project worker. No Luna or silent fallback. This records project routing, not a change to the root chat UI model.

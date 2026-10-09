@@ -1,0 +1,229 @@
+{
+  "status": "MODEL_ONLY_NOT_FINAL_ART_NOT_SELECTED_FRAME",
+  "source": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-walk-ESE-033/F00-raw.png",
+    "sha256": "4a7d287bc844b02d00b38074f1b59e3ce41e109b30891c20b3026a8965c6041c"
+  },
+  "targetReference": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-walk-ESE-033/F04-model-guide.png",
+    "sha256": "3ded8bc0d113831a4820dc71f588123bdce09ad4560abfe10d707a1df67085ec",
+    "role": "MODEL_ONLY approximate target"
+  },
+  "method": "One full-canvas inverse TPS premultiplied RGBA resample; exact upper730 anchor, lower transition; no extracted parts",
+  "controls": [
+    {
+      "ownership": "RIGHT_NEAR_hip",
+      "source": [
+        550,
+        750
+      ],
+      "target": [
+        550,
+        750
+      ]
+    },
+    {
+      "ownership": "RIGHT_NEAR_knee",
+      "source": [
+        510,
+        870
+      ],
+      "target": [
+        640,
+        950
+      ]
+    },
+    {
+      "ownership": "RIGHT_NEAR_ankle",
+      "source": [
+        450,
+        1000
+      ],
+      "target": [
+        675,
+        1140
+      ]
+    },
+    {
+      "ownership": "RIGHT_NEAR_toe",
+      "source": [
+        485,
+        1080
+      ],
+      "target": [
+        725,
+        1190
+      ]
+    },
+    {
+      "ownership": "LEFT_FAR_hip",
+      "source": [
+        690,
+        750
+      ],
+      "target": [
+        690,
+        750
+      ]
+    },
+    {
+      "ownership": "LEFT_FAR_knee",
+      "source": [
+        680,
+        930
+      ],
+      "target": [
+        645,
+        880
+      ]
+    },
+    {
+      "ownership": "LEFT_FAR_ankle",
+      "source": [
+        740,
+        1080
+      ],
+      "target": [
+        580,
+        1020
+      ]
+    },
+    {
+      "ownership": "LEFT_FAR_toe",
+      "source": [
+        830,
+        1130
+      ],
+      "target": [
+        625,
+        1080
+      ]
+    }
+  ],
+  "identityAnchors": [
+    [
+      0,
+      0
+    ],
+    [
+      300,
+      0
+    ],
+    [
+      600,
+      0
+    ],
+    [
+      900,
+      0
+    ],
+    [
+      1253,
+      0
+    ],
+    [
+      0,
+      300
+    ],
+    [
+      300,
+      300
+    ],
+    [
+      600,
+      300
+    ],
+    [
+      900,
+      300
+    ],
+    [
+      1253,
+      300
+    ],
+    [
+      0,
+      600
+    ],
+    [
+      300,
+      600
+    ],
+    [
+      600,
+      600
+    ],
+    [
+      900,
+      600
+    ],
+    [
+      1253,
+      600
+    ],
+    [
+      0,
+      720
+    ],
+    [
+      300,
+      720
+    ],
+    [
+      600,
+      720
+    ],
+    [
+      900,
+      720
+    ],
+    [
+      1253,
+      720
+    ],
+    [
+      0,
+      950
+    ],
+    [
+      1253,
+      950
+    ],
+    [
+      0,
+      1253
+    ],
+    [
+      1253,
+      1253
+    ],
+    [
+      654,
+      1140
+    ]
+  ],
+  "pivot": [
+    654,
+    1140
+  ],
+  "canvas": [
+    1254,
+    1254
+  ],
+  "counts": {
+    "aiCalls": 0,
+    "candidateGuideExports": 1,
+    "fixed89Comparisons": 1
+  },
+  "outputs": {
+    "F04-wholecanvas-warp-MODEL_ONLY.png": "9821e6e91bd2adac8894db076ff1be9928835a4804eff6a0cb6f6019dc1099b8",
+    "fixed89-comparison.png": "f34b6d4084d011da356ecdb807de0a97b9b0d275138034eb2376f1a7cdc965e4"
+  },
+  "sourceUnmodified": true,
+  "upper730ByteIdentical": true,
+  "limits": "Guide deformation artifacts accepted as guide only. No selected art, animation, cadence, foot lock or visual approval.",
+  "briefFixed89Review": {
+    "status": "HELD_GUIDE_NO_COHERENT_LEGPHASE",
+    "finding": "Upper identity remains stable, but lower trousers fan sideways and far/near legs merge into distorted overlap. Opposite contact ownership is not readable at89px. One continuous full-canvas TPS warp cannot simply exchange overlapping cloth/foot roles without folds; no final-frame suitability."
+  }
+}
