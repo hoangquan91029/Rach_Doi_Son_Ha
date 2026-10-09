@@ -1,14 +1,10 @@
-# Kế hoạch đồ họa — movement213, 10/10/2026
+# Kế hoạch đồ họa — checkpoint232 / public230, 10/10/2026
 
-Kế hoạch toàn game: [PROJECT_PLAN.md](../../PROJECT_PLAN.md). Phạm vi và bằng chứng chi tiết: [art-animation-audit.md](../../audit/2026-10-09/art-animation-audit.md). Bản kế hoạch trước audit được giữ [nguyên byte](../../audit/2026-10-09/history/docs/art/pipeline/GRAPHICS_PRODUCTION_PLAN.md).
+Kế hoạch toàn game: [PROJECT_PLAN.md](../../PROJECT_PLAN.md), [currentstatus](../../../PROJECT_STATUS.md), [movementplan](MOVEMENT_PRODUCTION_PLAN_20261010.md). Previous224entrypoints giữ nguyên byte trong docs/checkpoints/checkpoint224-entrypoints/.
 
-**Movement hiện hành:** [plan213](MOVEMENT_PRODUCTION_PLAN_20261010.md), [research212](movement-research-212/README.md), [actual213loop](pure2d-walk-D0-preview-213/actual-output/playback/actual-eight-frame-loop.png).213 giữ208 chỉ sửaF4=211wholebody/arms; technicalplaybackPASS, motion/owner/worldfootlock/runtime/fanoutOPEN. Các mục181/195 phía dưới là lịch sử nguồn, không currentNEXT. Public207fort28/185files thay149; fullgoal INCOMPLETE. Local210 wall/gateadjacencyfixed, renderer/topologyartunfinished. No moreblindcalls; briefwholeloop→samefamilyidle→actualD0travel, thenqualifiedfanout. Previousplanbytearchive209.
+213 wholeD0candidate unchanged.216 canonicalidle uniform128/89 prepared;228 actualD0/all8/Pausefreeze/Resume PASStechnical nhưng StopidleD7 sauendpointturn, matchingD0/menu/motion/owner/worldfootlock/fanout OPEN. Actualclipdisplayed; no repeatedstillaudits/blindcalls. Nextspecifictransition trial Stop trongactualD0segment, ordinaryUI, khôngfakefacing/speed/scale/phase. Mixedlegacyfamily scale cònthiếu.
 
-## Integration224
-
-Local215/222/223 đã sửa projectedWallGate fallbacktopology và vùng chọn, actualfivebuild/X/Y/corner/Gatetravel/PauseStopmenu acceptednarrow.214 wholeWallX ONEbuiltin candidate vẫn HOLDspan/worldalignment, khôngcài; finishedbuildingart còn thiếu.217 visibleconstructionboolean giữprivatejob/fogfilter, actual221 flag/redaction/completion verified nhưng overallscoutreturnHOLD; khôngclaim authoredcompletionscreenshot. Public207khôngđổi.
-
-216 wholecanonicalD0idle uniform128/89/pivot cùng213 prepared; bodyvolume/bakedshadow/Stoptransition cònopen.219 sealedHOLDboot hai pathrootabsolute;225 NEWfinite isolatedcopy sửaONLYruntimepathrelative trướcONEofflineD0travel/PauseResumeStop. Xem actual225receipt để chọnnextorder, khôngfanout hoặc suy motionapproval từtechnicaltests. Khôngcallảnhthêmtrongmovementtrial.
+215/217/222/223 proceduralWallGate topology/picking/constructionflag nowpairedpublic230.229 exactnewbuild scopedscene/cleanboots;231 normalTLS actualenemyWallflag/privacy/completion/menu/errors0 acceptednarrow. These are functionalfallback fixes, not finishedWallGateart.214 ONEwholeWallX HOLDworldalignment/uninstalled; finalbuildingstates/maps/roster remainunfinished. Public230optionalfort28/186files/chunk479b…b4cf/PID575363 immutable29233, barefallback/foodCHAR+D0absent. Fullgoal INCOMPLETE.
 
 ## Mục tiêu hình ảnh
 
@@ -24,11 +20,11 @@ Thứ tự đánh giá: chuyển động đúng và liền mạch → silhouette
 | Villager D0 | Whole eight-frame candidate213, corrected F3/F4;155 rejected originals retained | Brief continuous intake, same-family idle and actualtravel/Stop; no batch qualification |
 | Quân đội | Một số identity idle D0 | Phần lớn hành động và hướng nhìn cho infantry, spear, firearm, cavalry, artillery, wagon và hai tàu |
 | Leaders | 12 portrait và nguồn identity gốc | Hoạt ảnh toàn thân, hành động theo vai trò và 8 hướng; chỉ một general có idle candidate |
-| Buildings | Public207 includes8/10 completed-idle families; local210 wall/gate placementfix | Wall/Gate finishedart/topology; all construction/damage/destruction and applicable attackstates |
+| Buildings | Public230 includes8/10 completed-idle families; local210 wall/gate placementfix | Wall/Gate finishedart/topology; all construction/damage/destruction and applicable attackstates |
 | World | Ground/water/ford/shore candidates, forest, hill/mountain, food/iron nodes | Composition hai map, bờ/edge/repetition và scene đông quân |
 | Framework | Export017/APNG012, distance phase, alpha picking,170catalog/compiler,175matchbanks and bounded browser receipts | Accepted fullcoverage/default release and final visual/performance validation |
 
-Public207 `?art=fort` có28 asset entries; đây không phải28animation hoặc roster hoàn chỉnh. URL trần vẫn fallback. Public149 scope chỉ là lịch sử, không bản đang chạy.
+Public230 `?art=fort` có28 asset entries; đây không phải28animation hoặc roster hoàn chỉnh. URL trần vẫn fallback. Public149 scope chỉ là lịch sử, không bản đang chạy.
 
 ## Quy trình chuẩn cho một action
 
@@ -100,5 +96,3 @@ Sau actualoppositecontactintake mới mở fourwholeillustratedinbetweens theo a
 F0=188 explicitreassignment; F2=185; F4=192 whole correction giữ actual opposite legpaths; F6=182. F1/F5/F7 là actual193/194. F3=197 sau sole whole guide196, provisional với appearance/phase warning; original193F3 wrongcanvas/bodyjump loại. [Ledger](villager-walk-D0-contact-192/pilot-sequence-195.json) bind tất cả raw/tool receipts,1254wholecanvas/pivot và uniform128cell, không fit/mirror/pixelsplice.195 exporter tái dùng017/014, atlas1024×128 và APNG89cell/600ms. Actual Chromium támframes/ba vòng/zeroerrors là technical playback only.
 
 Root đã hiển thị actual APNG và hỏi một lần về chuyển động; chưa trả lời, chưa motion PASS. F3/F4 body khác neighbors cần continuous judgment; không xử lý bằng repeated still scoring hoặc đổi playback/game speed. Khi đủ tốt, D0 candidate runtime và same-family idle + ordinary UI movement/Pause/Stop kiểm tra practical contact/transition. Stationary preview không chứng minh world footlock. No fanout/defaultrelease/publicpromotion trong gói này.
-
-Current runtime update225/226:225 actualloader29PASS, livingownD0travel observed but town detour/D1 and partial samples causedHOLD; PauseResumeStop/menu unperformed. This is not proof of skipped renderer frames or bad motion.226 NEWsamefrozen225build uses an actualclear outside-towncorridor and25ms observations, ONEofflineUI/160s/no retry. Inspect actual226receipt; no approval/installation/fanout or perframefit/scale/speedchanges.227 release preparation-only for accepted215/217/222/210 code; public207 still unchanged.

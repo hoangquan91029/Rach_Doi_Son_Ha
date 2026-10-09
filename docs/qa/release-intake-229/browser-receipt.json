@@ -1,0 +1,74 @@
+{
+  "status": "PASS_TWO_JOINED_WALL_GATE_SELECT_PAUSE_RESUME_STOP_MENU",
+  "method": "One229 exact public candidate ordinary Delta Wall/Gate scene; keyboard unusedgroup9 clear and exactlivingown pick; frozen227 public candidate build; no group/appstate/commands injection; read-only diagnostics; no injected gameplay/state/facing/speed",
+  "errors": [],
+  "structures": [
+    {
+      "id": 35,
+      "type": "wall",
+      "x": 2.5,
+      "y": 23.5,
+      "completedTick": 302
+    },
+    {
+      "id": 43,
+      "type": "gate",
+      "x": 3.5,
+      "y": 23.5,
+      "completedTick": 614
+    }
+  ],
+  "movement": [],
+  "bundleSHA256": "479b4ad8b2806e6ed14f13e4b7c1314648faccd915a37be3cd6e744657dbb4cf",
+  "workerId": 7,
+  "line": {
+    "x": 3.5,
+    "y": 23.5,
+    "staging": {
+      "x": 3.5,
+      "y": 21.5
+    },
+    "d": 4
+  },
+  "twoJoinedStructures": true,
+  "gateSelection": [
+    43
+  ],
+  "pausedTick": 632,
+  "resumedTick": 635,
+  "menu": {
+    "bank": {
+      "phase": "menu",
+      "epoch": 3,
+      "encodedBytes": 3904788,
+      "encodedBudgetBytes": 67108864,
+      "activeIds": [],
+      "scope": null
+    },
+    "art": {
+      "status": "PLACEHOLDER_ONLY",
+      "manifest": "not-loaded",
+      "declared": 0,
+      "ready": 0,
+      "approved": 0,
+      "candidates": 0,
+      "failed": 0,
+      "skipped": 0,
+      "fallbacks": 0,
+      "decodedBudgetBytes": 134217728,
+      "retainedDecodedBytes": 0,
+      "reservedDecodedBytes": 0,
+      "uniqueDecodedImages": 0,
+      "encodedReady": 0,
+      "retainedEncodedBytes": 0,
+      "encodedBudgetBytes": 67108864,
+      "selectedDeclared": 0,
+      "failures": []
+    }
+  },
+  "cleanup": {
+    "rooms": 0,
+    "serverListening": false,
+    "browserClosed": true
+  }
+}

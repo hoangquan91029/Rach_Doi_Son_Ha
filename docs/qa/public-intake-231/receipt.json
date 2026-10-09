@@ -1,0 +1,616 @@
+{
+  "status": "PASS_NARROW_TLS_WALL_CONSTRUCTION_PRIVACY_COMPLETION",
+  "healthBefore": {
+    "ok": true,
+    "rooms": 0
+  },
+  "buildCommands": [
+    {
+      "peer": 1,
+      "type": "build",
+      "ids": [
+        24
+      ],
+      "building": "wall",
+      "x": 36,
+      "y": 25
+    }
+  ],
+  "errors": [],
+  "networkErrors": [],
+  "bundles": [
+    {
+      "peer": 0,
+      "sha256": "479b4ad8b2806e6ed14f13e4b7c1314648faccd915a37be3cd6e744657dbb4cf"
+    },
+    {
+      "peer": 1,
+      "sha256": "479b4ad8b2806e6ed14f13e4b7c1314648faccd915a37be3cd6e744657dbb4cf"
+    }
+  ],
+  "samples": [],
+  "tlsIgnoreErrors": false,
+  "room": "0F7FEC",
+  "roles": [
+    7,
+    24
+  ],
+  "preplacement": {
+    "hostTick": 368,
+    "guestTick": 368,
+    "builder": {
+      "id": 24,
+      "owner": 1,
+      "type": "villager",
+      "kind": "unit",
+      "x": 37.98113541973529,
+      "y": 25.018864580264705,
+      "hp": 65,
+      "maxHp": 65,
+      "food": 38.42348799999948,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "idle",
+      "dir": 3,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "resuppliedTick": 130,
+      "starving": 0,
+      "lastMovedTick": 280,
+      "order": null
+    },
+    "scout": {
+      "id": 7,
+      "owner": 0,
+      "type": "villager",
+      "kind": "unit",
+      "x": 32.01982654534442,
+      "y": 23.01982654534442,
+      "hp": 65,
+      "maxHp": 65,
+      "food": 38.59571199999954,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "walk",
+      "dir": 1,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "resuppliedTick": 156,
+      "starving": 0,
+      "lastMovedTick": 368,
+      "order": null
+    },
+    "site": {
+      "x": 36.5,
+      "y": 25.5,
+      "distance": 1.5573225175660588
+    },
+    "fortRadius": 0.45,
+    "unitThreshold": 0.65,
+    "buildingMargin": 0.4,
+    "guestResources": {
+      "wood": 550,
+      "food": 804.2636160000104,
+      "iron": 260
+    },
+    "guestVisible": true,
+    "hostVisible": true,
+    "terrain": "plain",
+    "knownPositions": [
+      {
+        "id": 7,
+        "owner": 0,
+        "type": "villager",
+        "kind": "unit",
+        "x": 32.01982654534442,
+        "y": 23.01982654534442,
+        "hp": 65
+      },
+      {
+        "id": 18,
+        "owner": 1,
+        "type": "residence",
+        "kind": "building",
+        "x": 54.5,
+        "y": 23.5,
+        "hp": 1100
+      },
+      {
+        "id": 19,
+        "owner": 1,
+        "type": "granary",
+        "kind": "building",
+        "x": 57.5,
+        "y": 26.5,
+        "hp": 450
+      },
+      {
+        "id": 20,
+        "owner": 1,
+        "type": "depot",
+        "kind": "building",
+        "x": 50.5,
+        "y": 28.5,
+        "hp": 480
+      },
+      {
+        "id": 21,
+        "owner": 1,
+        "type": "barracks",
+        "kind": "building",
+        "x": 50.5,
+        "y": 20.5,
+        "hp": 650
+      },
+      {
+        "id": 22,
+        "owner": 1,
+        "type": "king",
+        "kind": "unit",
+        "x": 56.5,
+        "y": 25,
+        "hp": 320
+      },
+      {
+        "id": 23,
+        "owner": 1,
+        "type": "general",
+        "kind": "unit",
+        "x": 53,
+        "y": 25.5,
+        "hp": 360
+      },
+      {
+        "id": 24,
+        "owner": 1,
+        "type": "villager",
+        "kind": "unit",
+        "x": 37.98113541973529,
+        "y": 25.018864580264705,
+        "hp": 65
+      },
+      {
+        "id": 25,
+        "owner": 1,
+        "type": "villager",
+        "kind": "unit",
+        "x": 57.1,
+        "y": 21.5,
+        "hp": 65
+      },
+      {
+        "id": 26,
+        "owner": 1,
+        "type": "villager",
+        "kind": "unit",
+        "x": 57.7,
+        "y": 21.5,
+        "hp": 65
+      },
+      {
+        "id": 27,
+        "owner": 1,
+        "type": "villager",
+        "kind": "unit",
+        "x": 56.5,
+        "y": 20.9,
+        "hp": 65
+      },
+      {
+        "id": 28,
+        "owner": 1,
+        "type": "villager",
+        "kind": "unit",
+        "x": 57.1,
+        "y": 20.9,
+        "hp": 65
+      },
+      {
+        "id": 29,
+        "owner": 1,
+        "type": "villager",
+        "kind": "unit",
+        "x": 57.7,
+        "y": 20.9,
+        "hp": 65
+      },
+      {
+        "id": 30,
+        "owner": 1,
+        "type": "infantry",
+        "kind": "unit",
+        "x": 48.5,
+        "y": 23.5,
+        "hp": 125
+      },
+      {
+        "id": 31,
+        "owner": 1,
+        "type": "infantry",
+        "kind": "unit",
+        "x": 48.5,
+        "y": 24.15,
+        "hp": 125
+      },
+      {
+        "id": 32,
+        "owner": 1,
+        "type": "infantry",
+        "kind": "unit",
+        "x": 48.5,
+        "y": 24.8,
+        "hp": 125
+      },
+      {
+        "id": 33,
+        "owner": 1,
+        "type": "spearman",
+        "kind": "unit",
+        "x": 48.5,
+        "y": 25.45,
+        "hp": 105
+      },
+      {
+        "id": 34,
+        "owner": 1,
+        "type": "wagon",
+        "kind": "unit",
+        "x": 51.5,
+        "y": 30.5,
+        "hp": 140
+      },
+      {
+        "id": 1,
+        "owner": 0,
+        "type": "residence",
+        "kind": "building",
+        "x": 9.5,
+        "y": 23.5,
+        "hp": 1100
+      },
+      {
+        "id": 2,
+        "owner": 0,
+        "type": "granary",
+        "kind": "building",
+        "x": 6.5,
+        "y": 26.5,
+        "hp": 450
+      },
+      {
+        "id": 3,
+        "owner": 0,
+        "type": "depot",
+        "kind": "building",
+        "x": 13.5,
+        "y": 28.5,
+        "hp": 480
+      },
+      {
+        "id": 4,
+        "owner": 0,
+        "type": "barracks",
+        "kind": "building",
+        "x": 13.5,
+        "y": 20.5,
+        "hp": 650
+      },
+      {
+        "id": 5,
+        "owner": 0,
+        "type": "king",
+        "kind": "unit",
+        "x": 7.5,
+        "y": 25,
+        "hp": 320
+      },
+      {
+        "id": 6,
+        "owner": 0,
+        "type": "general",
+        "kind": "unit",
+        "x": 11,
+        "y": 25.5,
+        "hp": 360
+      },
+      {
+        "id": 8,
+        "owner": 0,
+        "type": "villager",
+        "kind": "unit",
+        "x": 8.1,
+        "y": 21.5,
+        "hp": 65
+      },
+      {
+        "id": 9,
+        "owner": 0,
+        "type": "villager",
+        "kind": "unit",
+        "x": 8.7,
+        "y": 21.5,
+        "hp": 65
+      },
+      {
+        "id": 10,
+        "owner": 0,
+        "type": "villager",
+        "kind": "unit",
+        "x": 7.5,
+        "y": 20.9,
+        "hp": 65
+      },
+      {
+        "id": 11,
+        "owner": 0,
+        "type": "villager",
+        "kind": "unit",
+        "x": 8.1,
+        "y": 20.9,
+        "hp": 65
+      },
+      {
+        "id": 12,
+        "owner": 0,
+        "type": "villager",
+        "kind": "unit",
+        "x": 8.7,
+        "y": 20.9,
+        "hp": 65
+      },
+      {
+        "id": 13,
+        "owner": 0,
+        "type": "infantry",
+        "kind": "unit",
+        "x": 15.5,
+        "y": 23.5,
+        "hp": 125
+      },
+      {
+        "id": 14,
+        "owner": 0,
+        "type": "infantry",
+        "kind": "unit",
+        "x": 15.5,
+        "y": 24.15,
+        "hp": 125
+      },
+      {
+        "id": 15,
+        "owner": 0,
+        "type": "infantry",
+        "kind": "unit",
+        "x": 15.5,
+        "y": 24.8,
+        "hp": 125
+      },
+      {
+        "id": 16,
+        "owner": 0,
+        "type": "spearman",
+        "kind": "unit",
+        "x": 15.5,
+        "y": 25.45,
+        "hp": 105
+      },
+      {
+        "id": 17,
+        "owner": 0,
+        "type": "wagon",
+        "kind": "unit",
+        "x": 12.5,
+        "y": 30.5,
+        "hp": 140
+      }
+    ]
+  },
+  "fort": 35,
+  "unfinished": {
+    "hostTick": 452,
+    "guestTick": 452,
+    "enemy": {
+      "id": 35,
+      "owner": 1,
+      "type": "wall",
+      "kind": "building",
+      "x": 36.5,
+      "y": 25.5,
+      "hp": 62.666666666666686,
+      "maxHp": 400,
+      "food": 0,
+      "foodMax": 0,
+      "morale": 95,
+      "state": "idle",
+      "dir": 4,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "spentCost": {
+        "wood": 30,
+        "food": 0,
+        "iron": 5
+      },
+      "underConstruction": true
+    },
+    "own": {
+      "id": 35,
+      "owner": 1,
+      "type": "wall",
+      "kind": "building",
+      "x": 36.5,
+      "y": 25.5,
+      "hp": 62.666666666666686,
+      "maxHp": 400,
+      "food": 0,
+      "foodMax": 0,
+      "morale": 95,
+      "state": "idle",
+      "dir": 4,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "spentCost": {
+        "wood": 30,
+        "food": 0,
+        "iron": 5
+      },
+      "construction": {
+        "remaining": 5.750000000000001,
+        "total": 6,
+        "builder": 24
+      },
+      "underConstruction": true,
+      "order": null
+    },
+    "scout": {
+      "id": 7,
+      "owner": 0,
+      "type": "villager",
+      "kind": "unit",
+      "x": 32.01982654534442,
+      "y": 23.01982654534442,
+      "hp": 65,
+      "maxHp": 65,
+      "food": 38.039295999999354,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "idle",
+      "dir": 1,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "resuppliedTick": 156,
+      "starving": 0,
+      "lastMovedTick": 368,
+      "order": null
+    },
+    "camera": {
+      "x": 32.49778645833333,
+      "y": 23.49857875279018,
+      "zoom": 1.08
+    },
+    "rendererMissing": [
+      {
+        "key": "wall:construction",
+        "reason": "No authored construction sequence",
+        "status": "PLACEHOLDER_ONLY"
+      }
+    ]
+  },
+  "completed": {
+    "guestTick": 568,
+    "hostTick": 568,
+    "enemy": {
+      "id": 35,
+      "owner": 1,
+      "type": "wall",
+      "kind": "building",
+      "x": 36.5,
+      "y": 25.5,
+      "hp": 400,
+      "maxHp": 400,
+      "food": 0,
+      "foodMax": 0,
+      "morale": 95,
+      "state": "idle",
+      "dir": 4,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "spentCost": {
+        "wood": 30,
+        "food": 0,
+        "iron": 5
+      },
+      "underConstruction": false
+    },
+    "own": {
+      "id": 35,
+      "owner": 1,
+      "type": "wall",
+      "kind": "building",
+      "x": 36.5,
+      "y": 25.5,
+      "hp": 400,
+      "maxHp": 400,
+      "food": 0,
+      "foodMax": 0,
+      "morale": 95,
+      "state": "idle",
+      "dir": 4,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "spentCost": {
+        "wood": 30,
+        "food": 0,
+        "iron": 5
+      },
+      "construction": null,
+      "underConstruction": false,
+      "order": null
+    }
+  },
+  "opponentLeft": {
+    "winner": 1,
+    "reason": "Opponent left"
+  },
+  "cleanup": {
+    "health": {
+      "ok": true,
+      "rooms": 0
+    },
+    "browsersClosed": true
+  },
+  "scope": {
+    "rooms": 1,
+    "wallClicks": 1,
+    "retries": 0,
+    "normalTLS": true,
+    "host": "Chromium",
+    "guest": "Firefox",
+    "portraitReadyAsserted": 12,
+    "assetCount28": "Art match-ready awaited; exact28 readiness count not retained/asserted",
+    "menuPipelineRetention": "Menu reached on both peers; retainedDecodedBytes not separately captured/asserted",
+    "optionalBareFoodBoots": "not run",
+    "visual": "normalzoom1.08 procedural unfinished wall visible; no authored completed-art claim"
+  }
+}

@@ -1,0 +1,9 @@
+#232 resumable checkpoint — public230 and movement228
+
+Parent f7c8c26 committed214–225 acceptedcode/custody.226 stagingguardHOLD;228 actualD0/all8/Pausefreeze/Resume acceptedtechnical, matchingD0Stop/menu/motion/owner/worldfootlock/fanout OPEN. Same213frames/noimagecalls/runtimeuninstalled; actualclipdisplayed. No blindcampaignchain; nextStoptransition finiteorder withinactualD0segment. [228root](../../qa/villager-D0-runtime-228/root-intake.json).
+
+227 exactderivedpublic candidate/source/pairedrollback prepared;229 changedbuild joinedWallGate/selection/PauseResumeStop/menu0 +cleanChromeFirefoxbare/disabledfoodboots PASS.230 guardedrooms0 pairedpromotion nowserves479b…b4cf/186files/PID575363 immutable230/sim29233, originalserver/ws/env/Funnel preserved. Readonly extractedmode repair receipt retained. CompleteCURRENT207rollback44a92…759f private230, older149archivepreserved. [230promotion](../../qa/public-release-230/promotion.json).
+
+[231TLS](../../qa/public-intake-231/root-intake.json) ONEordinaryChromium/Firefox room/Wallbuild enemyflag+privacy/ownjob/completion400HP/Stopactors/menu/expectedOpponentleft-resultMenu/errors0/rooms0 acceptednarrow. Exact28ready/menuDecoded/optionalboots/pick not independentlyasserted; no replay/fullmatch/finalart/WAN/defaultrelease inference. Public207nowhistory, nevercurrent510490restart. Canonicalsource hashes unchanged afterf7c8c26; candidate/runtimeD0stagingdistinct. Allownedworkers/calls/testhandlesterminal; production230runsintentionally. Inspect actualstate beforecontinuation.
+
+Fullmaster/web/historical/visual/81–145/latergoal INCOMPLETE. Next realunfinished transition/buildingwholeart/mapcomposition/denseperformance package withfiniteownership; no proof-onlybusywork. Sol6.1Low/builtin/pure2D/noAPI/key/quota/3D/cutouts; custodyretained. Currententrypoints224 bytearchive. Fivehourquietcontinuation remainsactive untilfullgoalachieved/humancancels.

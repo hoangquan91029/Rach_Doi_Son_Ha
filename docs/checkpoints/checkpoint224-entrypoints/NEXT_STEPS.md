@@ -1,0 +1,12 @@
+# Bước tiếp theo — checkpoint224 / public207
+
+Đọc [status](PROJECT_STATUS.md), [projectplan](docs/PROJECT_PLAN.md), [movementplan](docs/art/pipeline/MOVEMENT_PRODUCTION_PLAN_20261010.md), actual receipts và livehandles.
+
+1. **D0 movement:**213 eightwholecandidate còn motion/owner/worldfootlock/fanout OPEN.216 wholecanonical idle uniform128/89 đã chuẩn bị, bodyvolume/bakedshadow khác walk.219 HOLDboot (hai pathrootabsolute);225 NEWfinite isolatedcopy sửaONLYrelativepaths rồi ONEofflineUI travel/PauseResumeStop; đọc actual225receipt trước nextorder, không duplicate hoặc coi technicalPASS là motionapproval. Pendingquestion195 khôngapprove213; không hỏi lại/stillmicroaudit/blindcalls. Goodsreturn ordinarywalk.
+2. **Localcode accepted:**215/222/223 fallbackWallGate X/Y/corner/precisepicking/openpassage;36focusedcontracts + actualfivebuild/select/PauseResume/Gatetravel/Stop/menu PASS.217 enemyconstructionflag/privatejobredaction verified actual221; overall221HOLD scoutreturn, không replay cho sạch receipt. Local29233…748b khác2074aa. [223root](docs/qa/fortification-picking-browser-223/root-intake.json) · [217root](docs/qa/construction-visibility-217/root-intake.json).
+3. **Building art:**214 wholeWallX HOLD exactspan/worldalignment; preservedONEbuiltin/0retry. Chỉ mở finitewholeendpoint-controlled method nếu cần, không fit/pixelsplice/blindretry. Final wall/gate illustration, construction/hit/death/attack còn thiếu.
+4. **Release:**public207 optionalfort28/185/chunk74eb…c873/PID510490 immutable4aa giữ nguyên. Future pairedrelease cần derive pendingfood/D0 exclusions, exactsource/build/changedscene/rollback. Không overwriteactive dist trong tests hoặc dùng old149/currentclaim. Không repeat completedfullmatches; finaldefaultart/WAN/performance/fullgame gates vẫn OPEN.
+
+Sol6.1Low/builtin/pure2D; noAPI/key/quota/3D/cutouts. Parallel independentownership; literal isolatedbuildcwd/absoluteoutdir/exactviteconfig. Fullgoal INCOMPLETE. Previousentrypoints213 bytearchive retained.
+
+Current runtime update225/226:225 actualloader29PASS, livingownD0travel observed but town detour/D1 and partial samples causedHOLD; PauseResumeStop/menu unperformed. This is not proof of skipped renderer frames or bad motion.226 NEWsamefrozen225build uses an actualclear outside-towncorridor and25ms observations, ONEofflineUI/160s/no retry. Inspect actual226receipt; no approval/installation/fanout or perframefit/scale/speedchanges.227 release preparation-only for accepted215/217/222/210 code; public207 still unchanged.

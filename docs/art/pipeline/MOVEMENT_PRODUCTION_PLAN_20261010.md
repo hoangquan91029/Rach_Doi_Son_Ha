@@ -1,4 +1,4 @@
-# Movement production — kế hoạch hiện hành sau nghiên cứu212 / preview213
+# Movement production — kế hoạch hiện hành232, nghiên cứu212 / preview213
 
 Ngày 10/10/2026. **D0 vẫn là candidate, chưa đủ điều kiện sản xuất hàng loạt.** Mục tiêu là một người dân có vóc dáng nhất quán, bước tự nhiên và mượt ở kích thước chơi; giữ phong cách minh họa chân thực của canonical.
 
@@ -68,6 +68,8 @@ Tái sử dụng model specification, phase/ownership conventions, timing/stride
 
 Khả năng giữ anatomy/volume qua nhiều image calls chưa được bảo đảm. Skill/tool reference chỉ giúp tổ chức và hướng dẫn, không ràng buộc hình học tuyệt đối. Nếu một finite method vẫn trả pose lặp/dị dạng, ghi HOLD và thay cách điều khiển whole drawing; không hứa sản xuất hàng nghìn frame bằng workflow chưa qualified. Đo throughput từ action hoàn chỉnh được chấp nhận, không từ số calls/files.
 
-Full project **INCOMPLETE**. Public207 optionalfort28 giữ nguyên, chưa chứa D0. Previous active plan byte-preserved tại `docs/checkpoints/checkpoint209-entrypoints/`; mọi source/rejection/custody tiếp tục bảo toàn. Builtin imagegen/Sol6.1Low/pure2D, không API/key/quota/3D/cutouts.
+Full project **INCOMPLETE**. Public230 optionalfort28 hiện hành, chưa chứa D0;207 là lịch sử. Previous active plan byte-preserved tại `docs/checkpoints/checkpoint209-entrypoints/`; mọi source/rejection/custody tiếp tục bảo toàn. Builtin imagegen/Sol6.1Low/pure2D, không API/key/quota/3D/cutouts.
 
-Current runtime update225/226:225 actualloader29PASS, livingownD0travel observed but town detour/D1 and partial samples causedHOLD; PauseResumeStop/menu unperformed. This is not proof of skipped renderer frames or bad motion.226 NEWsamefrozen225build uses an actualclear outside-towncorridor and25ms observations, ONEofflineUI/160s/no retry. Inspect actual226receipt; no approval/installation/fanout or perframefit/scale/speedchanges.227 release preparation-only for accepted215/217/222/210 code; public207 still unchanged.
+##7. Runtime232 — actualscope và nexttransition
+
+228 actualD0all8/64samples/Pausefreeze500ms/Resume đãđạt kỹ thuật trênfrozen225build. Engineordinaryarrival.7, không dùngQA.3 đểgọi navigationfail. Stop vềidleD7 sauendpointturn; matchingD0/menu chưađạt. Original219/225/226/228 failures/captures/clip retained; no furtherblindcampaignchain. Nextspecifictransition trial mustStopwhileactualD0segment remains, ordinaryUI only, no fakefacing/speed/phase/scale changes. Matchingidlebody/bakedshadow vàmixedlegacyfamily scale vẫnopen; no motion/owner/worldfootlock/fanout approval fromtests. Clip thật đãhiển thị. Public230chỉpromote acceptedWallGate/constructioncode, KHÔNGD0/foodCHAR;207historical.

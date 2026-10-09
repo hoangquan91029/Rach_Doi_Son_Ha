@@ -1,0 +1,30 @@
+{
+  "status": "PASS_LOCAL_EXACT_PUBLIC_CANDIDATE_NOT_PROMOTED",
+  "chunk": "/tmp/rds-release227/build/assets/index-D5hSY7R3.js",
+  "sha256": "479b4ad8b2806e6ed14f13e4b7c1314648faccd915a37be3cd6e744657dbb4cf",
+  "simSHA256": "29233a059ec084bc8577d20a1bccfd28ddc3024b9cb9bf4d5598c22f220f748b",
+  "preservation": {
+    "release-prepare-227": true,
+    "fortification-picking-browser-223": true,
+    "public207": true
+  },
+  "productionPID": "510490",
+  "health": {
+    "ok": true,
+    "rooms": 0
+  },
+  "sceneStatus": "PASS_TWO_JOINED_WALL_GATE_SELECT_PAUSE_RESUME_STOP_MENU",
+  "bootChecks": 4,
+  "ownedCleanup": [
+    {
+      "rooms": 0,
+      "serverListening": false,
+      "browserClosed": true
+    },
+    {
+      "rooms": 0,
+      "serverListening": false
+    }
+  ],
+  "scope": "Two joined structures only;223 five/topology proof separate; no new gate transit proof/fullmatch/public approval"
+}

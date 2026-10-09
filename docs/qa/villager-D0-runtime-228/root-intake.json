@@ -1,0 +1,24 @@
+{
+  "status": "ACTUAL_D0_TRAVEL_EIGHTFRAMES_PAUSE_RESUME_ACCEPTED_STOP_D0_OPEN",
+  "sourceBuild": "frozen225 b02e273ac24a7fbb4c703ebd8774a10ed4c2bc637943f5d234ae32e4bec5ac97",
+  "observedFrames": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "sampleCount": 64,
+  "pause": "tick232/frame5/distance8.504676/positionunchanged500ms",
+  "resume": "actualdir0/frame7/distance8.714676",
+  "stopScope": "actualordinaryStop reachesidleD7 after pathturn; matchingD0 and menu notperformed. OriginaloverallHOLD retained, no game/render defect inferred.",
+  "rootReview": "One gameplay-size travel image: selectedfullillustration visible atdefault1.08; mixedlegacyfamilyscale open. Actualsessionclip displayed; continuousnaturalness/owner/worldfootlock notclaimed.",
+  "imageCalls": 0,
+  "runtimeInstalled": false,
+  "fanoutApproved": false,
+  "cleanup": "allownedhandlesclosed/rooms0",
+  "next": "No blindcampaignchain. Future finite transition trial must Stop while actualD0 segment remains, before endpoint, using ordinaryUI and documented pause/menu diagnostics; no direction/speed/phase/scale manipulation."
+}

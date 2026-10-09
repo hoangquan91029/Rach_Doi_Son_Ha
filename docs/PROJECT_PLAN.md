@@ -2,7 +2,7 @@
 
 Cập nhật ngày 2026-10-10, múi giờ Asia/Ho_Chi_Minh. **Trạng thái: INCOMPLETE.** Đây là kế hoạch hiện hành cho toàn dự án; `NEXT_STEPS.md` chỉ giữ hàng đợi gần nhất. Hồ sơ cũ được giữ nguyên byte tại `docs/audit/2026-10-09/history/`.
 
-Latest execution224 ở mục21 và active movement plan thay các next-step lịch sử; source/receipt cũ giữ nguyên.
+Latest execution232 ở mục22 và active movement plan thay các next-step lịch sử; source/receipt cũ giữ nguyên.
 
 ## 1. Mục tiêu và cách đọc kết quả
 
@@ -204,3 +204,11 @@ W01:215 procedural fallback dùng visible-only sameowner completed four-neighbor
 G01/G02:216 zero-call wholecanonical uniform128/89/pivot6541140 prepared; Stop/bodyvolume transition chưaverified.219 HOLDboot rootabsolutepaths;225 NEWfinite isolatedcopy sửaONLYtwo relativepaths→ONEoffline actualD0 trial, kết quả riêng trước nextorder.213 candidate không tựqualified từ technicaltests. Fullgoal INCOMPLETE. Public207 optionalfort28/185/PID510490 và pairedrollback giữ nguyên; không replaycompletedmatches hoặcblindcalls. Currententrypoints213 bytepreserved trong checkpoint213-entrypoints.
 
 Current runtime update225/226:225 actualloader29PASS, livingownD0travel observed but town detour/D1 and partial samples causedHOLD; PauseResumeStop/menu unperformed. This is not proof of skipped renderer frames or bad motion.226 NEWsamefrozen225build uses an actualclear outside-towncorridor and25ms observations, ONEofflineUI/160s/no retry. Inspect actual226receipt; no approval/installation/fanout or perframefit/scale/speedchanges.227 release preparation-only for accepted215/217/222/210 code; public207 still unchanged.
+
+## 22. Hiện hành226–232 — actual movement và paired public230
+
+G01/G02:226 guard.3 thất bại nhưng engineordinaryarrival.7; sourcecontractread→228 actualD0 đủ8/64samples/Pausefreeze500ms/Resume PASStechnical. StopidleD7 afterendpointturn nên matchingD0/menu OPEN, actualclipdisplayed, no naturalness/owner/worldfootlock/fanout approval.213frames/canonical/originals unchanged, zeroimagecalls. No blindcampaignchain; nextspecificStoptransition order stopswhileactualD0segment remains withoutfakefacing/speed/scale/phase changes. Mixedlegacyfamily scale remainsopen.
+
+R01/R02:227 frozenpair/rollback207 preparation,4scopecontracts;229 exactnewchunk479b…b4cf TWOjoinedWallGate/select/PauseResumeStop/menu0 plusfourcleanChromeFirefoxbare/disabledfoodboots PASS.230 rooms0guardedatomicdist+immutable runtime230/sim29233/PID575363 pairedpromotion,186files inclold207chunk; readonly extractedmode repair receiptpreserved. FoodCHAR/D0excluded; complete207rollback private23044a92…759f, older149archive preserved.
+
+[231publicTLS](qa/public-intake-231/root-intake.json) ONEChromium/Firefox room/Wallbuild, visibleenemyunderConstruction/privacy/ownjob/ordinary400HPcompletion/Stopactors/menus/expectedOpponentleft/errors0/healthrooms0 acceptednarrow. Exact28readycount/menuDecoded/optionalboots/pick not independentlyasserted; don'treplay forcleanreceipt. No finalart/WAN/fullmatch/defaultacceptedrelease claim. Public207nowhistory, neverrestart510490 ascurrent. Fullgoal INCOMPLETE; allownedhandlesclosed, production230intentionalruns. Bytearchive224entrypoints; activeAGENT/NEXT/status nowconcise232.

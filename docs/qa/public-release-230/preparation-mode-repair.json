@@ -1,0 +1,4 @@
+{
+  "issue": "tar data extraction filter restored writable owner file modes; postpromotion validation caught mode mismatch, bytes unchanged",
+  "repair": "restore exact archive modes to private extracted trees only; no process restart or deployed source byte changes"
+}
