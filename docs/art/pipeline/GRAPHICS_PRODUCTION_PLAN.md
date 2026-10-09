@@ -1,3 +1,5 @@
+Latest route update094 (9 October): the human has no API key and explicitly selects built-in generation. Read BUILTIN_IMAGE_ROUTE_20261009.md.041 stays historical/APIcalls0, not an active credential gate.094 ONE built-in visual-region-reference edit still repeats D0 contact and is HELD.096 is a new bounded South gather_food whole-illustration pilot; check latestNEXT_STEPS/actual receipts before source calls. All original methods/assets remain preserved.
+
 # Graphics production plan — PURE 2D, 8 October2026
 
 Model routing (human instruction, 2026-10-08): use `model='gpt-6.1-sol'` and `reasoning_effort='low'` for every future code and art task in this project. Do not use Luna anywhere or silently fall back to another model. This supersedes the old master art Luna/HIGH split; preserve the original briefs, assets, directives and receipts as history. This is project routing policy, not a claim that the current chat UI model changed.

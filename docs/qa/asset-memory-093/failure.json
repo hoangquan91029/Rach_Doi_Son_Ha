@@ -1,0 +1,116 @@
+{
+  "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n0 !== 14\n\n    at file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/asset-memory-093/verify.mjs:17:319",
+  "results": [
+    {
+      "test": "actual decode alias dedup",
+      "stats": {
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 2,
+        "ready": 2,
+        "approved": 0,
+        "candidates": 2,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 1048576,
+        "retainedDecodedBytes": 1048576,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 1,
+        "failures": []
+      }
+    },
+    {
+      "test": "dispose release",
+      "stats": {
+        "status": "PLACEHOLDER_ONLY",
+        "manifest": "ready",
+        "declared": 2,
+        "ready": 0,
+        "approved": 0,
+        "candidates": 0,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 1,
+        "decodedBudgetBytes": 1048576,
+        "retainedDecodedBytes": 0,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 0,
+        "failures": []
+      }
+    },
+    {
+      "test": "concurrent overbudget actual decode",
+      "stats": {
+        "status": "PLACEHOLDER_ONLY",
+        "manifest": "ready",
+        "declared": 2,
+        "ready": 1,
+        "approved": 0,
+        "candidates": 1,
+        "failed": 1,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 1048576,
+        "retainedDecodedBytes": 1048576,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 1,
+        "failures": [
+          {
+            "id": "grass",
+            "message": "Decoded RGBA budget exceeded: grass needs 1048576 bytes; 1048576 retained/reserved of 1048576"
+          }
+        ]
+      }
+    },
+    {
+      "test": "decode rejection release",
+      "stats": {
+        "status": "PLACEHOLDER_ONLY",
+        "manifest": "ready",
+        "declared": 1,
+        "ready": 0,
+        "approved": 0,
+        "candidates": 0,
+        "failed": 1,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 1048576,
+        "retainedDecodedBytes": 0,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 0,
+        "failures": [
+          {
+            "id": "grass",
+            "message": "controlled decode rejection"
+          }
+        ]
+      }
+    },
+    {
+      "test": "dispose during decode releases late bitmap",
+      "stats": {
+        "status": "PLACEHOLDER_ONLY",
+        "manifest": "ready",
+        "declared": 1,
+        "ready": 0,
+        "approved": 0,
+        "candidates": 0,
+        "failed": 1,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 1048576,
+        "retainedDecodedBytes": 0,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 0,
+        "failures": [
+          {
+            "id": "grass",
+            "message": "Art pipeline disposed or loading expired"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

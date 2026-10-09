@@ -1,0 +1,30 @@
+--- current/client/terrain-transitions.js
++++ isolated092/terrain-transitions.js
+@@ -30,6 +30,9 @@
+  const nx=-ty/length,ny=tx/length,distance=(c.x-a.x)*nx+(c.y-a.y)*ny;
+  return {points:[a,b,point(1,depth),c],start:a,end:{x:a.x+nx*distance,y:a.y+ny*distance}};
+ }
++/** Shared world vertices make coverage independent of camera and edge enumeration. */
++export function shorelineDepth(edge,along){if(edge.receiver==='ford')return .09;const vertex=(x,y)=>.26+.055*Math.sin(x*1.73+y*2.19);const a=vertex(edge.x,edge.y),b=vertex(edge.x+(edge.axis==='x'?1:0),edge.y+(edge.axis==='y'?1:0));return a+(b-a)*along+.08*Math.sin(Math.PI*along)**2;}
++export function shorelineContour(edge,project,fraction=1){const points=[];for(let i=0;i<=16;i++){const t=i/16,d=shorelineDepth(edge,t)*fraction;points.push(edge.axis==='y'?project(edge.x+edge.sign*d,edge.y+t):project(edge.x+t,edge.y+edge.sign*d));}return points;}
+ export function createTerrainTransitions({paintMaterial,materialKey=()=>'',hasBank=()=>false,onMissingBank=()=>{},createCanvas=(w,h)=>{
+  const canvas=typeof OffscreenCanvas==='function'?new OffscreenCanvas(w,h):globalThis.document?.createElement('canvas');if(canvas){canvas.width=w;canvas.height=h;}return canvas;
+ }}) {
+@@ -37,7 +40,7 @@
+  const clear=()=>{patches.clear();pixels=0;};
+  const build=(edge,zoom,timeMs,bank)=>{
+   const stableProject=(x,y)=>({x:(x-y)*TILE_WIDTH*zoom/2,y:(x+y)*TILE_HEIGHT*zoom/2});
+-  const shape=transitionGradient(edge,stableProject,edge.receiver==='ford'?.09:.22);
++  const shape=transitionGradient(edge,stableProject,edge.receiver==='ford'?.09:.40);if(land(edge.receiver))shape.points=[...shorelineContour(edge,stableProject,0),...shorelineContour(edge,stableProject).reverse()];
+   const left=Math.floor(Math.min(...shape.points.map(p=>p.x)))-1,top=Math.floor(Math.min(...shape.points.map(p=>p.y)))-1;
+   const width=Math.ceil(Math.max(...shape.points.map(p=>p.x)))-left+1,height=Math.ceil(Math.max(...shape.points.map(p=>p.y)))-top+1;
+   if(width*height>maxPixels||width<1||height<1)return null;
+@@ -49,7 +52,7 @@
+    if(painted){const gradient=c.createLinearGradient(shape.start.x-left,shape.start.y-top,shape.end.x-left,shape.end.y-top);
+     if(detail){gradient.addColorStop(0,'rgba(0,0,0,0)');gradient.addColorStop(.5,'rgba(0,0,0,.5)');gradient.addColorStop(1,'rgba(0,0,0,0)');}
+     else {gradient.addColorStop(0,'rgba(0,0,0,1)');gradient.addColorStop(1,'rgba(0,0,0,0)');}
+-    c.globalCompositeOperation='destination-in';c.fillStyle=gradient;c.fillRect(0,0,width,height);
++    c.globalCompositeOperation='destination-in';if(land(edge.receiver)){const mask=createCanvas(width,height),m=mask?.getContext('2d');if(m){for(let band=0;band<24;band++){const lo=band/24,hi=(band+1)/24,alpha=detail?Math.sin(Math.PI*(lo+hi)/2)*.5:1-(lo+hi)/2;const polygon=[...shorelineContour(edge,localProject,lo),...shorelineContour(edge,localProject,hi).reverse()];m.fillStyle=`rgba(255,255,255,${alpha})`;m.beginPath();polygon.forEach((p,i)=>i?m.lineTo(p.x,p.y):m.moveTo(p.x,p.y));m.closePath();m.fill();}c.drawImage(mask,0,0);}else{c.fillStyle=gradient;c.fillRect(0,0,width,height);}}else{c.fillStyle=gradient;c.fillRect(0,0,width,height);}
+    }c.restore();if(painted)out.drawImage(layer,0,0);return painted;
+   };
+   if(!paint(edge.source,false))return null;

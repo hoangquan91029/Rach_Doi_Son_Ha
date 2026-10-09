@@ -1,0 +1,39 @@
+{
+  "jobId": "villager-ESE-builtin-region-094",
+  "model": "gpt-6.1-sol",
+  "reasoningEffort": "low",
+  "mode": "BUILTIN_IMAGEGEN_VISUAL_REGION_REFERENCES",
+  "humanInstruction": "cứ tiếp tục dùng tạo ảnh có sẵn vì tôi không có api key. hay tìm kiếm tải skills gì về tạo ảnh nếu bạn thấy phù hợp",
+  "references": [
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-walk-ESE-033/F00-raw.png",
+      "sha256": "4a7d287bc844b02d00b38074f1b59e3ce41e109b30891c20b3026a8965c6041c",
+      "role": "selected033F00 whole-character source/identity"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/masked-contact-proposal-041/F04-lowerbody-mask.png",
+      "sha256": "04a3b75e1621256b77c1d0f0ee4cd58c2f74d9c222f9477d46b68bfae74ad6de",
+      "role": "visual lower-body region reference only; NOT applied mask"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/masked-contact-proposal-041/mask-fixed89-overlay.png",
+      "sha256": "f4cca687f9aebc2bd7d2c6bed63f4d70230b0e873e018696a2a67107cf56b7e2",
+      "role": "visual overlay only"
+    }
+  ],
+  "maxLogicalCalls": 1,
+  "retries": 0,
+  "slots": {
+    "F04": "READY",
+    "F02": "CLOSED",
+    "F06": "CLOSED",
+    "inbetweens": "CLOSED"
+  },
+  "transparentBackground": true,
+  "limitations": [
+    "No actual mask parameter or pixel-lock guarantee",
+    "No loop/foot-lock/runtime approval"
+  ],
+  "promptSha256": "ee913d6373ee3350a31617153563d4597a413bed72978ba29edc704d63a2d417",
+  "head": "07b16e75cdfd8d68b0ba7acf3f91b6bfa44225e2"
+}

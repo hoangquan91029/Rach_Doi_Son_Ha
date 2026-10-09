@@ -1,0 +1,239 @@
+{
+  "status": "PASS",
+  "browser": "151.0.7922.34",
+  "results": [
+    {
+      "test": "actual decode alias dedup",
+      "stats": {
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 2,
+        "ready": 2,
+        "approved": 0,
+        "candidates": 2,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 1048576,
+        "retainedDecodedBytes": 1048576,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 1,
+        "failures": []
+      }
+    },
+    {
+      "test": "dispose release",
+      "stats": {
+        "status": "PLACEHOLDER_ONLY",
+        "manifest": "ready",
+        "declared": 2,
+        "ready": 0,
+        "approved": 0,
+        "candidates": 0,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 1,
+        "decodedBudgetBytes": 1048576,
+        "retainedDecodedBytes": 0,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 0,
+        "failures": []
+      }
+    },
+    {
+      "test": "concurrent overbudget actual decode",
+      "stats": {
+        "status": "PLACEHOLDER_ONLY",
+        "manifest": "ready",
+        "declared": 2,
+        "ready": 1,
+        "approved": 0,
+        "candidates": 1,
+        "failed": 1,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 1048576,
+        "retainedDecodedBytes": 1048576,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 1,
+        "failures": [
+          {
+            "id": "grass",
+            "message": "Decoded RGBA budget exceeded: grass needs 1048576 bytes; 1048576 retained/reserved of 1048576"
+          }
+        ]
+      }
+    },
+    {
+      "test": "decode rejection release",
+      "stats": {
+        "status": "PLACEHOLDER_ONLY",
+        "manifest": "ready",
+        "declared": 1,
+        "ready": 0,
+        "approved": 0,
+        "candidates": 0,
+        "failed": 1,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 1048576,
+        "retainedDecodedBytes": 0,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 0,
+        "failures": [
+          {
+            "id": "grass",
+            "message": "controlled decode rejection"
+          }
+        ]
+      }
+    },
+    {
+      "test": "dispose during decode releases late bitmap",
+      "stats": {
+        "status": "PLACEHOLDER_ONLY",
+        "manifest": "ready",
+        "declared": 1,
+        "ready": 0,
+        "approved": 0,
+        "candidates": 0,
+        "failed": 1,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 1048576,
+        "retainedDecodedBytes": 0,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 0,
+        "failures": [
+          {
+            "id": "grass",
+            "message": "Art pipeline disposed or loading expired"
+          }
+        ]
+      }
+    },
+    {
+      "test": "fresh production UI boot/offline setup/pause/menu",
+      "mode": "default",
+      "boot": {
+        "mode": null,
+        "localPlayer": 0,
+        "roomCode": null,
+        "paused": false,
+        "camera": {
+          "x": 24,
+          "y": 24,
+          "zoom": 1
+        },
+        "selection": [],
+        "tick": null,
+        "pingMs": null,
+        "frameMs": 0,
+        "bootUi": {
+          "declared": 12,
+          "ready": 12,
+          "failures": [],
+          "fontWarnings": []
+        },
+        "art": {
+          "enabled": false,
+          "phase": "DISABLED",
+          "quality": "PLACEHOLDER_ONLY",
+          "groundDraws": 0,
+          "propDraws": 0,
+          "entityDraws": 0,
+          "walkDraws": 0,
+          "idleDraws": 0,
+          "lastWalk": null,
+          "gatherDraws": 0,
+          "lastGather": null,
+          "missing": [],
+          "pipeline": {
+            "status": "PLACEHOLDER_ONLY",
+            "manifest": "not-loaded",
+            "declared": 0,
+            "ready": 0,
+            "approved": 0,
+            "candidates": 0,
+            "failed": 0,
+            "skipped": 0,
+            "fallbacks": 0,
+            "decodedBudgetBytes": 134217728,
+            "retainedDecodedBytes": 0,
+            "reservedDecodedBytes": 0,
+            "uniqueDecodedImages": 0,
+            "failures": []
+          }
+        },
+        "terrainCache": {
+          "builds": 0,
+          "draws": 0,
+          "pixels": 0
+        },
+        "displayedState": null
+      }
+    },
+    {
+      "test": "fresh production UI boot/offline setup/pause/menu",
+      "mode": "?art=work",
+      "boot": {
+        "mode": null,
+        "localPlayer": 0,
+        "roomCode": null,
+        "paused": false,
+        "camera": {
+          "x": 24,
+          "y": 24,
+          "zoom": 1
+        },
+        "selection": [],
+        "tick": null,
+        "pingMs": null,
+        "frameMs": 0,
+        "bootUi": {
+          "declared": 12,
+          "ready": 12,
+          "failures": [],
+          "fontWarnings": []
+        },
+        "art": {
+          "enabled": true,
+          "phase": "CANDIDATE",
+          "quality": "CANDIDATE",
+          "groundDraws": 0,
+          "propDraws": 0,
+          "entityDraws": 0,
+          "walkDraws": 0,
+          "idleDraws": 0,
+          "lastWalk": null,
+          "gatherDraws": 0,
+          "lastGather": null,
+          "missing": [],
+          "pipeline": {
+            "status": "CANDIDATE",
+            "manifest": "ready",
+            "declared": 17,
+            "ready": 17,
+            "approved": 0,
+            "candidates": 17,
+            "failed": 0,
+            "skipped": 0,
+            "fallbacks": 0,
+            "decodedBudgetBytes": 134217728,
+            "retainedDecodedBytes": 15074304,
+            "reservedDecodedBytes": 0,
+            "uniqueDecodedImages": 17,
+            "failures": []
+          }
+        },
+        "terrainCache": {
+          "builds": 0,
+          "draws": 0,
+          "pixels": 0
+        },
+        "displayedState": null
+      }
+    }
+  ],
+  "errors": []
+}

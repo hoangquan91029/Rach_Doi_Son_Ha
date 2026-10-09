@@ -1,0 +1,15 @@
+# Asset memory093 — terminal PASS, installed locally
+
+Exact gpt-6.1-sol/low; no image/API calls. Parent reviewed and authorized installation of the exact tested loader into canonical `client/art-assets.js`. Tests, deployment and artwork remain unchanged. Initial isolated stage: `/tmp/rdsh-asset-memory-093-hkxkUR`; its frozen `art-assets.candidate.js` and `candidate.diff` preserve the implementation reviewed before installation. `pins.json` binds installed/candidate source, test, fresh staged production bundle and all raster files.
+
+Unique decoded RGBA budget defaults to128MiB, configurable positive safe integer `maxDecodedBytes`. Current optional work17 raster inventory totals15,074,304bytes (14.38MiB), leaving ample headroom while bounded. Budget covers manifest runtime images, not renderer derived cell canvases, portraits, compressed fetch buffers, browser overhead or GPU memory. No page-bank/lazy loading added. All17 optional assets still preload before menu, maintaining offline-before-setup availability. Default remains intentionally raster-disabled/ready0; its14-entry manifest inventory is not actual decoded memory.
+
+Cache key remains URL+encodedSHA with normalized digest case. Aliases count once. Reservations happen synchronously before decode and count together with retained bytes so parallel resources cannot overcommit. Pending decode keeps its reservation across dispose/deadline until returned image is closed; completed images close and release on dispose. Dimension/SHA/review/family/path guards, exact state/direction API and deadlines retained. Failures include asset ID, required/used/budget bytes.
+
+Actual Chromium151 tests PASS: real PNG decode and alias dedup, concurrent two-distinct budget rejection, controlled decode rejection releasing reservation, completed dispose, dispose during pending real decode closing late bitmap. Existing3 deadline tests PASS in stage; fresh build PASS. `receipt.json` holds raw results. Short fresh production UI default/work boots PASS:12portraits both, default0/work17 ready, failures0/errors0, offline before setup then ordinary launch/pause/menu. This was not a full match or performance/visual approval.
+
+Preserved `failure.json`: initial harness mistakenly expected default14 rather than existing disabled0 and held before gameplay; corrected harness expectation without changing runtime. Initial pin writer mistakenly included a directory; corrected only file enumeration. Canonical deadline test was accidentally run before staged execution; its3PASS output was informational and then tests were correctly rerun in stage.
+
+Owned Vite39393 and preview39394 stopped; Chromium closed. No production restart/deploy or workers left running. Visual roster/pagebanks/full goal remain unfinished.
+
+Parent-authorized exact tested candidate installed into canonical `client/art-assets.js`; installed SHA matches candidate in pins.json. Existing3 relevant deadline tests PASS against canonical after copy. Actual decoder regression harness retained in093; no redundant mocked test added. No canonical dist build/deploy or simulation rerun.
