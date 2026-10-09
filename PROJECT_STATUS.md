@@ -1,4 +1,4 @@
-# Trạng thái dự án — checkpoint168, ngày 2026-10-10
+# Trạng thái dự án — checkpoint173, ngày 2026-10-10
 
 **INCOMPLETE.** Kế hoạch hiện hành: [docs/PROJECT_PLAN.md](docs/PROJECT_PLAN.md). Hàng đợi: [NEXT_STEPS.md](NEXT_STEPS.md). Báo cáo: [audit 154](docs/audit/2026-10-09/README.md).
 
@@ -41,3 +41,10 @@ Lịch sử trước audit được giữ nguyên byte: [history inventory](docs
 - Incident167: candidate build vô tình ghi vào active dist. [Restoration](docs/qa/merged-candidate-167/public149-restoration.json) đã khôi phục đúng179 file public149, giữ accident output riêng. [168](docs/qa/public149-restoration-168/receipt.json) kiểm normalTLS fresh Chrome/Firefox, exact old149 chunk,26art/12portraits/0errors. Service157023 không restart. Public không nhận local163/165 hoặc pending food.
 
 Code/art/QA mới là candidate local; public149 và full goal vẫn INCOMPLETE. Không dùng bảng snapshot154 để mở lại155/158 hoặc báo các finding đã sửa là chưa sửa.
+
+## Cập nhật169–173
+
+- [169](docs/art/pipeline/villager-walk-D0-reconcile-169/root-intake.json) sửa hai whole rough passing drawings,0call; ankle từng trailing so với own depthlane, không chỉ screenx giữa hai chân. [172](docs/art/pipeline/villager-walk-D0-capability-172/root-intake.json)1call/0retry cải thiện forwardfoot nhưng phaseHELD. [173](docs/art/pipeline/movement-pose-research-173/README.md) nghiên cứu authority mới; photo sequence chưa được visually intake, không activeguide. Không finalD0loop/runtime/fanout.
+- [170](docs/qa/art-catalog-170/root-intake.json):9sharedlegacyrecipes/28deduplicatedexactdefinitions, deterministicselectedmanifest compiler, portrait/shadow dependencies, pendingrelease refusal và missingfamilies. Standalone loader-format output giữ relativepaths nên serve cùng asset layout.33focused tests +18Nodefollowup; actualstaged Chrome/Firefox Coast build/select/menu27art12portrait0errors. Dynamicmatch loading/defaultrelease vẫn mở.
+- [171](docs/qa/performance-baseline-171/root-intake.json):bothmaps1/5/8world normalAI, realstep +exactcompactview/JSON;39naturalunits/world. Delta stepcohortp95≈11.8/54.6/87.0ms; Coast≈6.5/32.0/53.0ms. AIphase đồng bộ và CPU không độc quyền; online không cóAI. Không productionheadroom/dense200/network/browser PASS, chưa optimization. Cần profile các tick đắt rồi đo đúng workload.
+- Public149 vẫn nguyên179files/oldchunk/service; tất cả worker, imagecalls và testhandles terminal. Full goal vẫn INCOMPLETE.

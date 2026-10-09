@@ -1,0 +1,85 @@
+{
+  "status": "READY_FOR_ROOT_INTAKE_LOCAL_ART_CATALOG170",
+  "dateUTC": "2026-10-09T17:30:47.193645+00:00",
+  "stage": "/tmp/art-catalog-170",
+  "buildDirectory": "/tmp/art-catalog-170/build",
+  "baseHEAD": "79c5b5b076b08762652d13da02b3bad2b9302339",
+  "bundlePath": "assets/index-BRH9cIgs.js",
+  "bundleSHA256": "7a76991abe61a1c0146fb3895f618e87fa90fbfb56ba3c43a96f34c457aca593",
+  "sourcePins": "source-pins.json",
+  "buildPins": "build-pins.json",
+  "focusedTests": {
+    "passed": 33,
+    "failed": 0,
+    "receipt": "focused-tests.txt",
+    "sourceCanonicalStageExact": true
+  },
+  "catalogDefinitions": 28,
+  "legacyRecipes": 9,
+  "legacyManifestHeaderOrderWholeEntryEquivalence": true,
+  "outputs": [
+    "catalog.json",
+    "compiled-shipyard.json",
+    "scoped-bank.json",
+    "coverage.json"
+  ],
+  "compilerScope": "Deterministic selected-bank artifact compiler only; runtime continues original legacy manifest loading. No dynamic match/roster banks installed; R01 remains open.",
+  "releaseCompilation": "Current pending/candidate entries refused; shown-loop owner evidence is not runtime equivalence or release acceptance",
+  "browsers": [
+    {
+      "browser": "chromium",
+      "receipt": "chromium/receipt.json",
+      "shipyardId": 36,
+      "actualSelection": [
+        36
+      ],
+      "actualHUD": "Shipyard\n100% strength\nidle \u00b7 morale 80\nCargo empty\nGrid 7, 39",
+      "artReady": 27,
+      "portraitReady": 12,
+      "cleanup": {
+        "rooms": 0,
+        "listening": false,
+        "browserClosed": true
+      }
+    },
+    {
+      "browser": "firefox",
+      "receipt": "firefox/receipt.json",
+      "shipyardId": 36,
+      "actualSelection": [
+        36
+      ],
+      "actualHUD": "Shipyard\n100% strength\nidle \u00b7 morale 80\nCargo empty\nGrid 7, 39",
+      "artReady": 27,
+      "portraitReady": 12,
+      "cleanup": {
+        "rooms": 0,
+        "listening": false,
+        "browserClosed": true
+      }
+    }
+  ],
+  "normalZoom": 1.08,
+  "viewport": [
+    1280,
+    800
+  ],
+  "DPR": 1,
+  "public149All179FilesUnchanged": true,
+  "cleanup": {
+    "allOwnedBrowserServersClosed": true,
+    "rooms": 0,
+    "stageRetainedForRootIntake": true
+  },
+  "imageCalls": 0,
+  "publicPromotion": false,
+  "runtimeAssetEdits": false,
+  "visualFinalApproval": false,
+  "compilerOutputFollowup": {
+    "standaloneManifest": "shipyard-loader-manifest.json",
+    "validation": "Real validateManifest plus exact original shipyard header/order/whole-entry equivalence",
+    "tests": "compiler-output-tests.txt",
+    "sourcePins": "compiler-output-source-pins.json",
+    "runtimeBuildUnchanged": true
+  }
+}

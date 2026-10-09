@@ -1,4 +1,4 @@
-# Pure2D character pipeline — chuẩn thực thi checkpoint168
+# Pure2D character pipeline — chuẩn thực thi checkpoint173
 
 Đọc [graphics plan](GRAPHICS_PRODUCTION_PLAN.md), [master directive](PURE_2D_MASTER_DIRECTIVE_20261008.txt) và [review priority](REVIEW_PRIORITY_20261008.md). Bản spec trước audit được giữ [nguyên byte](../../audit/2026-10-09/history/docs/art/pipeline/PURE_2D_CHARACTER_PIPELINE.md).
 
@@ -50,3 +50,5 @@ Một contact sheet, một vòng chuyển động ngắn ở kích thước th�
 Nguồn current: walk014/D1, wood026/owner032, iron136/owner141; food101 local pending. Human rejects155 F2/F6;158 STOPPED0call.033/152 là contact candidates cho đối chiếu, chưa có D0 loop. Movement authoring phải theo [research161](movement-research-161/README.md), rough cả chu kỳ đúng mẫu trước một trial hữu hạn. Không chạy lại153/155/158 như order mới. Tiếp theo theo [NEXT_STEPS.md](../../../NEXT_STEPS.md).
 
 Cập nhật162/166: rough cycle tám whole drawings đã có, capability1call/0retry kết thúc. Body improved nhưng phaseHELD/notselectedF02. Đọc [follow-up](movement-research-161/FOLLOWUP_162_166.md), không tự tạo F6/inbetween hoặc gọi lại cùng method. Không dùng flat rough thành final unit.
+
+169 revisedwholeguides và172onecall exhausted còn giữ phaseHELD.173 không chuẩn bị autoexecution; referencepixels chưaviewed, khôngposeauthority.170 compiler sinh wholeassetmanifest/dependencies, không manufacture missingframes; registry bảo toàn9previewroutes. Dynamicbanks và qualifiedmotionproduction vẫn chưa hoàn tất.

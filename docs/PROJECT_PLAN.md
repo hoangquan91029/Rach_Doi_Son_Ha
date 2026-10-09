@@ -142,3 +142,11 @@ G01 đã có rough cycle162 (0call) và capability166 (1call/0retry).166 giữ b
 GP3 triển khai local163: actual total training duration và cảnh báo quân thiếu ration dùng threshold hiện hành.22 focused contracts/ordinary Chromium resupply flow; không đổi economics. W01 có Shipyard idle164/165, optionalLOCAL27; actual Coast narrow idle/picking/transport flow. Merged167 có27 focused contracts và Chrome/Firefox ordinary scene; public promotion vẫn riêng. Local7/10 building idle không có nghĩa construction/hit/death hoàn chỉnh.
 
 Incident167 overwrite dist đã được khôi phục đúng179file public149;168 kiểm normalTLS boot trên exact149 hash, service không restart. Build guard hiện hành yêu cầu literal isolatedworkdir, absoluteoutdir, viteconfig đúng và root intake. Các receipt giữ nguyên failure và accident output local. Không lấy smoke restoration làm full-match proof hoặc lấy staged build làm public release.
+
+## 14. Cập nhật169–173
+
+G01:169 sửa own-depthlane ankle trajectory bằng completeoriginal rough drawings.172 onecall/0retry giữ realisticbody và forwardfoot nhưng phaseHELD;173 yêu cầu wholeaction authority được nhìn thật và newtonal wholebody authoring trước order khác. Source/licensing metadata không đủ để dùng photo chưa xem làm poseguide. Không qualifiedD0batch/runtime/fanout.
+
+T01:170 có sharedruntime route registry,9legacyrecipes/28deduplicated definitions và deterministiccompiler ra standalone manifests/bankdependencies.33focused/18Nodefollowup và stagedChrome/Firefox UI scope PASS; runtime vẫn dùng full legacyroute manifests, dynamicbank lifecycle và default acceptedrelease còn mở. Không dùng compiledcandidate thay acceptance hoặc fullcoverage.
+
+Q01:171 baseline bounded đo actualstep/normalAI và exactserver compactview+JSON,1/5/8world trên2map sau90simseconds normalgrowth.39units/world; step/AI tail lớn hơn serialization,5/8world workload có tickcost đáng profile. Không exclusiveCPU/liveonline/sendqueues/browser/densearmy test; đây là bottleneck direction, không headroom verdict hoặc balancechange. Profile trước optimization và đo actualbrowser/roomworkloads tiếp.

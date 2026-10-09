@@ -1,0 +1,79 @@
+--- /dev/null
++++ b/scripts/benchmark-simulation.mjs
+@@ -0,0 +1,70 @@
++import {performance} from 'node:perf_hooks';
++import os from 'node:os';
++import path from 'node:path';
++import {fileURLToPath} from 'node:url';
++import {readFile,writeFile,mkdir} from 'node:fs/promises';
++import {createHash} from 'node:crypto';
++import {execFileSync} from 'node:child_process';
++import {createMatch,step} from '../shared/sim.js';
++import {TICK_RATE} from '../shared/data.js';
++import {snapshotView,serverOptionsFromEnv} from '../server/index.js';
++
++export function statistics(values){
++ if(!values.length)return {samples:0,p50:null,p95:null,p99:null,max:null};
++ if(values.some(v=>!Number.isFinite(v)||v<0))throw Error('Statistics require finite nonnegative samples');
++ const sorted=[...values].sort((a,b)=>a-b),q=p=>sorted[Math.max(0,Math.ceil(p*sorted.length)-1)];
++ return {samples:sorted.length,p50:q(.5),p95:q(.95),p99:q(.99),max:sorted.at(-1)};
++}
++export function parseConfig(args){
++ const config={maps:['delta','coast'],worlds:[1,5,8],evolveSeconds:90,warmupTicks:20,measureTicks:100,seed:171,wallSeconds:180,out:null};
++ const integer=(v,min,max)=>{if(!/^\d+$/.test(v??''))throw Error('Expected integer');const n=Number(v);if(!Number.isSafeInteger(n)||n<min||n>max)throw Error(`Value outside ${min}..${max}`);return n;};
++ for(let i=0;i<args.length;i++){
++  const key=args[i],value=args[++i];if(value===undefined)throw Error(`Missing value for ${key}`);
++  if(key==='--maps'){config.maps=value.split(',');if(!config.maps.length||config.maps.some(x=>!['delta','coast'].includes(x))||new Set(config.maps).size!==config.maps.length)throw Error('Unique delta/coast maps required');}
++  else if(key==='--worlds'){config.worlds=value.split(',').map(x=>integer(x,1,8));if(new Set(config.worlds).size!==config.worlds.length)throw Error('Unique world counts required');}
++  else if(key==='--evolve-seconds')config.evolveSeconds=integer(value,1,120);
++  else if(key==='--warmup-ticks')config.warmupTicks=integer(value,0,100);
++  else if(key==='--measure-ticks')config.measureTicks=integer(value,20,400);
++  else if(key==='--seed')config.seed=integer(value,0,0xffffffff);
++  else if(key==='--wall-seconds')config.wallSeconds=integer(value,10,300);
++  else if(key==='--out')config.out=path.resolve(value);
++  else throw Error(`Unknown option ${key}`);
++ }
++ const work=config.maps.length*config.worlds.reduce((a,b)=>a+b,0)*(config.evolveSeconds*TICK_RATE+config.warmupTicks+config.measureTicks);
++ if(work>100000)throw Error('Requested workload exceeds100000 world ticks');
++ return config;
++}
++const root=path.dirname(path.dirname(fileURLToPath(import.meta.url)));
++const counts=s=>({tick:s.tick,winner:s.winner,entities:s.entities.length,livingEntities:s.entities.filter(e=>e.hp>0).length,livingUnits:s.entities.filter(e=>e.hp>0&&e.kind==='unit').length,unitsByOwner:[0,1].map(owner=>s.entities.filter(e=>e.owner===owner&&e.hp>0&&e.kind==='unit').length),combatUnits:s.entities.filter(e=>e.hp>0&&e.kind==='unit'&&!['king','general','villager','wagon','transport'].includes(e.type)).length});
++export async function benchmark(config){
++ const started=performance.now(),checkTime=()=>{if(performance.now()-started>config.wallSeconds*1000)throw Error('Bounded benchmark wall-time exceeded');};
++ const sourceFiles=['shared/sim.js','shared/data.js','shared/visible-action.js','server/index.js','scripts/benchmark-simulation.mjs'];
++ const sources=Object.fromEntries(await Promise.all(sourceFiles.map(async file=>[file,createHash('sha256').update(await readFile(path.join(root,file))).digest('hex')])));
++ const report={kind:'diagnostic-shared-simulation-baseline',date:new Date().toISOString(),config,tickRate:TICK_RATE,snapshotEveryTicks:4,configuredServerDefaultRoomCap:serverOptionsFromEnv({}).maxRooms,gitCommit:execFileSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8'}).trim(),sources,hardware:{platform:os.platform(),release:os.release(),architecture:os.arch(),cpuModel:os.cpus()[0]?.model,logicalCpus:os.cpus().length,availableParallelism:os.availableParallelism(),totalMemoryBytes:os.totalmem(),freeMemoryBeforeBytes:os.freemem(),loadAverageBefore:os.loadavg()},runtime:{node:process.version,v8:process.versions.v8,execArgv:process.execArgv},memoryBefore:process.memoryUsage(),rows:[],limitations:['No HTTP/WebSocket service, compression, send queues, real clients, browser rendering or network work measured.','Normal built-in single-player AI runs only for player1; this differs from two-human online command traffic.','Worlds are isolated simulations stepped sequentially; not live rooms or dense-army acceptance.','Only naturally reached unit counts are reported. No resources or units minted; no external gameplay commands.','Wall-clock distributions include host scheduling/GC noise; short finite samples are a baseline, not final release headroom acceptance.']};
++ for(const mapId of config.maps)for(const worldCount of config.worlds){
++  process.stderr.write(`Preparing ${mapId}/${worldCount} worlds\n`);checkTime();
++  const worlds=Array.from({length:worldCount},(_,i)=>createMatch({mapId,seed:(config.seed+i)>>>0,aiPlayer:1,difficulty:'normal'}));
++  const initial=worlds.map(counts),preparationStarted=performance.now();
++  for(const s of worlds)for(let tick=0;tick<config.evolveSeconds*TICK_RATE&&s.winner===null;tick++){step(s);if(tick%20===0)checkTime();}
++  const evolved=worlds.map(counts),evolutionMs=performance.now()-preparationStarted;
++  const advanceBatch=()=>{for(const s of worlds)if(s.winner===null)step(s);};
++  const serializeBatch=()=>{for(const s of worlds)for(const player of [0,1])JSON.stringify({type:'state',state:snapshotView(s,player),paused:false});};
++  for(let tick=0;tick<config.warmupTicks;tick++){advanceBatch();if(tick%4===0)serializeBatch();checkTime();}
++  const checkpoint=worlds.map(counts),stepMs=[],cohortStepMs=[],viewMs=[],jsonMs=[],snapshotBytes=[],snapshotEpochMs=[],cohortTickMs=[],activeWorldsBySample=[],samples=[];
++  for(let tick=0;tick<config.measureTicks;tick++){
++   checkTime();const active=worlds.filter(s=>s.winner===null);if(!active.length)break;activeWorldsBySample.push(active.length);
++   const batchStarted=performance.now();for(const s of active){const t=performance.now();step(s);stepMs.push(performance.now()-t);}const batchStepMs=performance.now()-batchStarted;cohortStepMs.push(batchStepMs);
++   let serializationMs=0,bytes=0;
++   if(tick%4===0){const snapshotStarted=performance.now();for(const s of worlds)for(const player of [0,1]){const t=performance.now(),v=snapshotView(s,player),afterView=performance.now(),json=JSON.stringify({type:'state',state:v,paused:false}),afterJson=performance.now();viewMs.push(afterView-t);jsonMs.push(afterJson-afterView);const n=Buffer.byteLength(json);snapshotBytes.push(n);bytes+=n;}serializationMs=performance.now()-snapshotStarted;snapshotEpochMs.push(serializationMs);}
++   cohortTickMs.push(batchStepMs+serializationMs);if(tick%4===0)samples.push({sample:tick,activeWorlds:active.length,totalLivingUnits:worlds.reduce((n,s)=>n+counts(s).livingUnits,0),stepMs:batchStepMs,serializationMs,snapshotBytes:bytes});
++  }
++  const row={mapId,worldCount,initial,evolved,evolutionMs,checkpoint,final:worlds.map(counts),actualMeasuredTicks:cohortStepMs.length,activeWorlds:statistics(activeWorldsBySample),stepPerWorldMs:statistics(stepMs),stepCohortMs:statistics(cohortStepMs),viewPerPlayerMs:statistics(viewMs),jsonPerPlayerMs:statistics(jsonMs),snapshotPerPlayerBytes:statistics(snapshotBytes),snapshotEpochCohortMs:statistics(snapshotEpochMs),cohortTickWithSnapshotMs:statistics(cohortTickMs),snapshotSamples:samples};report.rows.push(row);process.stderr.write(`Measured ${mapId}/${worldCount}: step p95=${row.stepCohortMs.p95?.toFixed(3)}ms, snapshot p95=${row.snapshotEpochCohortMs.p95?.toFixed(3)}ms\n`);
++ }
++ report.elapsedMs=performance.now()-started;report.memoryAfter=process.memoryUsage();report.hardware.freeMemoryAfterBytes=os.freemem();report.hardware.loadAverageAfter=os.loadavg();
++ return report;
++}
++if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)){
++ try{if(process.argv.includes('--help')){console.log('Usage: node scripts/benchmark-simulation.mjs [--maps delta,coast] [--worlds1,5,8] [--evolve-seconds90] [--warmup-ticks20] [--measure-ticks100] [--seed171] [--wall-seconds180] [--out FILE] (flags require separate values)');}
++ else{const config=parseConfig(process.argv.slice(2)),report=await benchmark(config);if(config.out){await mkdir(path.dirname(config.out),{recursive:true});await writeFile(config.out,JSON.stringify(report,null,2)+'\n');}else console.log(JSON.stringify(report,null,2));}}
++ catch(error){console.error(error.stack);process.exitCode=1;}
++}
+--- /dev/null
++++ b/tests/benchmark171.test.js
+@@ -0,0 +1,3 @@
++import test from 'node:test';import assert from 'node:assert/strict';import {statistics,parseConfig} from '../scripts/benchmark-simulation.mjs';
++test('nearest-rank tails expose rare spikes without sorting caller samples',()=>{const values=Array.from({length:100},(_,i)=>i+1).reverse(),copy=[...values];assert.deepEqual(statistics(values),{samples:100,p50:50,p95:95,p99:99,max:100});assert.deepEqual(values,copy);assert.deepEqual(statistics([1,1,100]),{samples:3,p50:1,p95:100,p99:100,max:100});assert.equal(statistics([]).p95,null);assert.throws(()=>statistics([NaN]));});
++test('bounded CLI rejects cap overflow, runaway total work and malformed configuration',()=>{for(const args of [['--worlds','10'],['--worlds','8,8'],['--maps','delta,delta'],['--maps','missing'],['--measure-ticks','0'],['--seed','-1'],['--evolve-seconds','121'],['--wall-seconds','999'],['--unknown','1'],['--maps'],['--worlds','1,2,3,4,5,6,7,8','--evolve-seconds','120','--measure-ticks','400']])assert.throws(()=>parseConfig(args));const c=parseConfig(['--maps','coast','--worlds','1,8','--evolve-seconds','60','--measure-ticks','40','--seed','7']);assert.equal(c.maps[0],'coast');assert.deepEqual(c.worlds,[1,8]);assert.equal(c.evolveSeconds,60);assert.equal(c.seed,7);});

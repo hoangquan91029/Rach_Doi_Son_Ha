@@ -1,0 +1,30 @@
+<!doctype html><meta charset="utf-8"><title>169 ownership reconciliation — authoring only</title>
+<style>
+body{font:15px system-ui;color:#eee;background:#414643;margin:24px;max-width:1000px}p{line-height:1.5}
+.row{display:flex;gap:28px}.stage{width:89px;height:89px;position:relative}.stage img{position:absolute;inset:0;width:89px;height:89px}.ghost{opacity:.15}
+figure{margin:0}figcaption{font-size:12px;margin-top:8px;width:140px}button,input{margin:12px 8px 12px 0}
+</style>
+<h1>169 — leg ownership and passing reconciliation</h1>
+<p>Original rough authoring only, 0 image calls. Eight75ms phases /600ms. F02/F06 revised; other six complete drawings are bound actual162 sources. No final illustration or motion approval.</p>
+<div class="row">
+<figure><div class="stage"><img id="previous" class="ghost"><img id="following" class="ghost"><img id="rough"></div><figcaption id="phase"></figcaption></figure>
+<figure><div class="stage"><img id="control"></div><figcaption>Whole clothed control<br>Blue: near anatomical RIGHT<br>Ochre: far anatomical LEFT</figcaption></figure>
+<figure><img src="../../characters/villager-neutral-D00-screen-ESE/raw.png" width="89" height="89"><figcaption>Sole canonical<br>reference separately displayed</figcaption></figure>
+<figure><img src="../villager-walk-D0-capability-166/F02-game89.png" width="89" height="89"><figcaption>166 HELD<br>not selected passing A</figcaption></figure>
+</div>
+<button id="toggle">Pause</button><button id="step">Next frame</button><label><input id="onion" type="checkbox">Neighbor ghosts</label>
+<p>D0 world+X projects screen(+1,+0.5). "Far" means depth behind the near leg, not backward along travel. Revised swing heels reach their own longitudinal foot lane with relaxed lift. Colored controls are authoring labels, never final textures.</p>
+<img src="reconciled-sheet89.png" width="712" height="110" alt="Reconciled rough sequence"><br>
+<img src="ownership-sheet89.png" width="712" height="110" alt="Colored whole-body ownership control sequence">
+<script>
+const names=Array.from({length:8},(_,i)=>'F'+String(i).padStart(2,'0'));
+const paths=names.map((n,i)=>[2,6].includes(i)?n+'-revised-rough.png':'../villager-walk-D0-rough-cycle-162/'+n+'-rough.png');
+const phases=['contact A','down A','passing A','up A','contact B','down B','passing B','up B'];
+let frame=0,playing=true,start=performance.now(),last=-1;
+function show(i){frame=i;document.getElementById('rough').src=paths[i];document.getElementById('control').src=names[i]+'-ownership-control.png';document.getElementById('previous').src=paths[(i+7)%8];document.getElementById('following').src=paths[(i+1)%8];document.getElementById('phase').textContent=names[i]+' '+phases[i];document.getElementById('previous').hidden=document.getElementById('following').hidden=!document.getElementById('onion').checked}
+function tick(now){if(playing){const i=Math.floor((now-start)/75)%8;if(i!==last){show(i);last=i}}requestAnimationFrame(tick)}
+document.getElementById('toggle').onclick=()=>{playing=!playing;if(playing)start=performance.now()-frame*75;document.getElementById('toggle').textContent=playing?'Pause':'Play'};
+document.getElementById('step').onclick=()=>{playing=false;document.getElementById('toggle').textContent='Play';show((frame+1)%8)};
+document.getElementById('onion').onchange=()=>show(frame);
+show(0);requestAnimationFrame(tick);
+</script>

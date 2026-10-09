@@ -1,4 +1,4 @@
-# Kế hoạch đồ họa — checkpoint168, 10/10/2026
+# Kế hoạch đồ họa — checkpoint173, 10/10/2026
 
 Kế hoạch toàn game: [PROJECT_PLAN.md](../../PROJECT_PLAN.md). Phạm vi và bằng chứng chi tiết: [art-animation-audit.md](../../audit/2026-10-09/art-animation-audit.md). Bản kế hoạch trước audit được giữ [nguyên byte](../../audit/2026-10-09/history/docs/art/pipeline/GRAPHICS_PRODUCTION_PLAN.md).
 
@@ -65,3 +65,5 @@ G01 hiện theo [movement research161](movement-research-161/README.md): một c
 ## Follow-up162–168
 
 [162 rough](villager-walk-D0-rough-cycle-162/root-intake.json) đã hoàn thành reference trọn vòng; không final art. [166 illustration](villager-walk-D0-capability-166/root-intake.json) cải thiện khối người nhưng HELD support phase;1call/0retry/exhausted. [Hướng tiếp](movement-research-161/FOLLOWUP_162_166.md) là reconcile ownership/occlusion,0call, không mở F6/inbetween.165 Shipyard idle accepted narrow actual Coast scene, local27assets; public149 vẫn26. Code163/merged167 không cấp motion acceptance.
+
+169/172/173 bổ sung: trailingankle trong originalrough đã sửa; newillustration giữbody nhưng phaseHELD, không finalsource selected. [173](movement-pose-research-173/README.md) chuyển đề xuất sang verifiedwholeaction/tonalwholepose authority; photo metadata chưa phải visuallyqualifiedreference.170 catalog/compiler đã triển khai và validatednarrowUI, dynamicmatchbanks/defaultrelease còn mở. Không dùng các tool đó để mởfanout khi movement chưađạt.

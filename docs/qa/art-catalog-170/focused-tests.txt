@@ -1,0 +1,41 @@
+✔ legacy pilot compilation preserves exact header/order/whole entries (6.817152ms)
+✔ legacy walk compilation preserves exact header/order/whole entries (3.442941ms)
+✔ legacy work compilation preserves exact header/order/whole entries (3.689501ms)
+✔ legacy food compilation preserves exact header/order/whole entries (3.828114ms)
+✔ legacy terrain compilation preserves exact header/order/whole entries (4.603287ms)
+✔ legacy iron compilation preserves exact header/order/whole entries (4.922311ms)
+✔ legacy workshop compilation preserves exact header/order/whole entries (4.452822ms)
+✔ legacy camp compilation preserves exact header/order/whole entries (4.79606ms)
+✔ legacy shipyard compilation preserves exact header/order/whole entries (4.931395ms)
+✔ shared route registry keeps default and unknown disabled and exact world opt-ins (0.472998ms)
+✔ scoped bank retains world, desired building/body/portrait and separate-shadow dependency only (1.230035ms)
+✔ catalog deduplicates definitions, recipes deduplicate bank IDs, runtime variants stay distinct (1.175549ms)
+✔ missing requested family remains explicit fallback and cannot be a release scope (1.383227ms)
+✔ invalid scopes and recipe/dependency corruption are rejected (1.10758ms)
+✔ conflicting IDs, unsafe runtime/source paths and missing hashes fail before compilation (4.080139ms)
+✔ owner naturalness evidence remains shown-loop evidence and cannot approve release (4.869572ms)
+✔ release evidence must bind exact entry and runtime hashes even for synthetic approved metadata (1.191771ms)
+✔ static facing does not satisfy locomotion and absent directions stay missing (1.356413ms)
+✔ same image across route aliases is budgeted once; different hash remains separate (0.462766ms)
+✔ hash failures and rejected entries do not satisfy required animation (0.169406ms)
+✔ roster comes from actual data with leader role choice explicit (0.275365ms)
+✔ missing selected route is surfaced and cannot manufacture coverage (10.333232ms)
+✔ noncombatants explicitly exempt attack rather than inventing production work (0.318405ms)
+✔ only live finite food resources select illustrated node (0.721211ms)
+✔ empty resource suppression and ordinary fallback remain after raster attempt (0.608599ms)
+✔ food static schema relative loader path and exact wholecanvas custody (1.696545ms)
+✔ world route contract permits terrain/iron/workshop/camp and excludes character-only routes (16.871412ms)
+✔ hill blocks aligned complete currently visible ready and immutable (1.268593ms)
+✔ mountains strict current knowledge with explicit authoring bypass (0.205427ms)
+✔ hill render order and exact optional asset contract (1.581617ms)
+✔ shipyard27 preserves camp26 exact assets and static wholecanvas custody (4.364948ms)
+✔ completed living idle only; construction hit death unsupported states stay procedural (1.61064ms)
+✔ coverage discovers actual shipyard route and exact new family without treating idle as animation (96.05551ms)
+ℹ tests 33
+ℹ suites 0
+ℹ pass 33
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 165.400093

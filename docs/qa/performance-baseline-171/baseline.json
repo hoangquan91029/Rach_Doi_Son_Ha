@@ -1,0 +1,3063 @@
+{
+  "kind": "diagnostic-shared-simulation-baseline",
+  "date": "2026-10-09T17:22:03.500Z",
+  "config": {
+    "maps": [
+      "delta",
+      "coast"
+    ],
+    "worlds": [
+      1,
+      5,
+      8
+    ],
+    "evolveSeconds": 90,
+    "warmupTicks": 20,
+    "measureTicks": 100,
+    "seed": 171,
+    "wallSeconds": 180,
+    "out": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/performance-baseline-171/baseline.json"
+  },
+  "tickRate": 20,
+  "snapshotEveryTicks": 4,
+  "configuredServerDefaultRoomCap": 8,
+  "gitCommit": "79c5b5b076b08762652d13da02b3bad2b9302339",
+  "sources": {
+    "shared/sim.js": "a266e0de5a6719579e48fd8a57888f09509f6af745190cb09b47c5641bab7796",
+    "shared/data.js": "ffc3f45adc58f212066d3763c591377ce15b9f6ac78e4685a95fc3ac747818e1",
+    "shared/visible-action.js": "380d1d29e76b004fdde29713cd2e6e87ea3cfba5f9c454fb3554a471f4a60063",
+    "server/index.js": "4e6a7e82f02d1d856f4ea788863c4836930bc00250be6a5b020ba2bdd8884198",
+    "scripts/benchmark-simulation.mjs": "206c765aedab2fdcb55f5b8db50ad219688d39fa4fcaee7d35086d163b8f13ed"
+  },
+  "hardware": {
+    "platform": "linux",
+    "release": "7.0.0-38-generic",
+    "architecture": "x64",
+    "cpuModel": "12th Gen Intel(R) Core(TM) i5-12450HX",
+    "logicalCpus": 12,
+    "availableParallelism": 12,
+    "totalMemoryBytes": 28578357248,
+    "freeMemoryBeforeBytes": 11954860032,
+    "loadAverageBefore": [
+      0.24,
+      0.42,
+      0.64
+    ],
+    "freeMemoryAfterBytes": 11617214464,
+    "loadAverageAfter": [
+      0.95,
+      0.63,
+      0.69
+    ]
+  },
+  "runtime": {
+    "node": "v24.15.0",
+    "v8": "13.6.233.17-node.48",
+    "execArgv": []
+  },
+  "memoryBefore": {
+    "rss": 63545344,
+    "heapTotal": 13045760,
+    "heapUsed": 8657256,
+    "external": 3792694,
+    "arrayBuffers": 114990
+  },
+  "rows": [
+    {
+      "mapId": "delta",
+      "worldCount": 1,
+      "initial": [
+        {
+          "tick": 0,
+          "winner": null,
+          "entities": 34,
+          "livingEntities": 34,
+          "livingUnits": 26,
+          "unitsByOwner": [
+            13,
+            13
+          ],
+          "combatUnits": 8
+        }
+      ],
+      "evolved": [
+        {
+          "tick": 1800,
+          "winner": null,
+          "entities": 51,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        }
+      ],
+      "evolutionMs": 3078.606979,
+      "checkpoint": [
+        {
+          "tick": 1820,
+          "winner": null,
+          "entities": 50,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        }
+      ],
+      "final": [
+        {
+          "tick": 1920,
+          "winner": null,
+          "entities": 50,
+          "livingEntities": 49,
+          "livingUnits": 38,
+          "unitsByOwner": [
+            9,
+            29
+          ],
+          "combatUnits": 10
+        }
+      ],
+      "actualMeasuredTicks": 100,
+      "activeWorlds": {
+        "samples": 100,
+        "p50": 1,
+        "p95": 1,
+        "p99": 1,
+        "max": 1
+      },
+      "stepPerWorldMs": {
+        "samples": 100,
+        "p50": 0.983538999999837,
+        "p95": 11.787605999999869,
+        "p99": 12.800700000000234,
+        "max": 12.957018000000062
+      },
+      "stepCohortMs": {
+        "samples": 100,
+        "p50": 0.9843999999998232,
+        "p95": 11.788421000000199,
+        "p99": 12.802597999999762,
+        "max": 12.957995999999639
+      },
+      "viewPerPlayerMs": {
+        "samples": 50,
+        "p50": 0.6000540000000001,
+        "p95": 0.7383279999999104,
+        "p99": 0.8627680000004148,
+        "max": 0.8627680000004148
+      },
+      "jsonPerPlayerMs": {
+        "samples": 50,
+        "p50": 0.1456129999996847,
+        "p95": 0.17156500000010055,
+        "p99": 0.17702300000019022,
+        "max": 0.17702300000019022
+      },
+      "snapshotPerPlayerBytes": {
+        "samples": 50,
+        "p50": 44633,
+        "p95": 54268,
+        "p99": 54278,
+        "max": 54278
+      },
+      "snapshotEpochCohortMs": {
+        "samples": 25,
+        "p50": 1.559414000000288,
+        "p95": 1.6814049999998133,
+        "p99": 1.7507759999998598,
+        "max": 1.7507759999998598
+      },
+      "cohortTickWithSnapshotMs": {
+        "samples": 100,
+        "p50": 1.1456250000001091,
+        "p95": 11.788421000000199,
+        "p99": 12.802597999999762,
+        "max": 12.957995999999639
+      },
+      "snapshotSamples": [
+        {
+          "sample": 0,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 0.9697500000002037,
+          "serializationMs": 1.5861660000000484,
+          "snapshotBytes": 98233
+        },
+        {
+          "sample": 4,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 0.986315999999988,
+          "serializationMs": 1.7507759999998598,
+          "snapshotBytes": 98240
+        },
+        {
+          "sample": 8,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 2.5394740000001548,
+          "serializationMs": 1.5767860000000837,
+          "snapshotBytes": 98238
+        },
+        {
+          "sample": 12,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 1.229848999999831,
+          "serializationMs": 1.583987999999863,
+          "snapshotBytes": 98243
+        },
+        {
+          "sample": 16,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 1.7329170000002705,
+          "serializationMs": 1.5892340000000331,
+          "snapshotBytes": 98474
+        },
+        {
+          "sample": 20,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 0.9970539999999346,
+          "serializationMs": 1.57706700000017,
+          "snapshotBytes": 98442
+        },
+        {
+          "sample": 24,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 4.3233680000003005,
+          "serializationMs": 1.558183999999983,
+          "snapshotBytes": 98485
+        },
+        {
+          "sample": 28,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 0.9499019999998382,
+          "serializationMs": 1.561091000000033,
+          "snapshotBytes": 98450
+        },
+        {
+          "sample": 32,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 0.9850339999998141,
+          "serializationMs": 1.5956460000002153,
+          "snapshotBytes": 98706
+        },
+        {
+          "sample": 36,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 0.9224420000000464,
+          "serializationMs": 1.5428030000002764,
+          "snapshotBytes": 98757
+        },
+        {
+          "sample": 40,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 0.9183219999999892,
+          "serializationMs": 1.6814049999998133,
+          "snapshotBytes": 98884
+        },
+        {
+          "sample": 44,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 0.9007299999998395,
+          "serializationMs": 1.5439910000000054,
+          "snapshotBytes": 98880
+        },
+        {
+          "sample": 48,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 0.9529930000003333,
+          "serializationMs": 1.559414000000288,
+          "snapshotBytes": 98899
+        },
+        {
+          "sample": 52,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 1.1999000000000706,
+          "serializationMs": 1.5477820000000975,
+          "snapshotBytes": 98892
+        },
+        {
+          "sample": 56,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 0.9015110000000277,
+          "serializationMs": 1.4996399999999994,
+          "snapshotBytes": 98796
+        },
+        {
+          "sample": 60,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 1.2244339999997464,
+          "serializationMs": 1.5193910000002688,
+          "snapshotBytes": 98680
+        },
+        {
+          "sample": 64,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 0.9074359999999615,
+          "serializationMs": 1.5867980000002717,
+          "snapshotBytes": 98734
+        },
+        {
+          "sample": 68,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 0.9682850000003782,
+          "serializationMs": 1.532676000000265,
+          "snapshotBytes": 98769
+        },
+        {
+          "sample": 72,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 0.9851459999999861,
+          "serializationMs": 1.581442000000152,
+          "snapshotBytes": 98733
+        },
+        {
+          "sample": 76,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 1.1124700000000303,
+          "serializationMs": 1.5244579999998678,
+          "snapshotBytes": 98744
+        },
+        {
+          "sample": 80,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 0.9272009999999682,
+          "serializationMs": 1.5049950000002354,
+          "snapshotBytes": 98746
+        },
+        {
+          "sample": 84,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 1.2701889999998457,
+          "serializationMs": 1.521099999999933,
+          "snapshotBytes": 98602
+        },
+        {
+          "sample": 88,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 0.9329470000002402,
+          "serializationMs": 1.5291259999999056,
+          "snapshotBytes": 98743
+        },
+        {
+          "sample": 92,
+          "activeWorlds": 1,
+          "totalLivingUnits": 38,
+          "stepMs": 0.9475929999998698,
+          "serializationMs": 1.5732699999998658,
+          "snapshotBytes": 98461
+        },
+        {
+          "sample": 96,
+          "activeWorlds": 1,
+          "totalLivingUnits": 38,
+          "stepMs": 1.0064979999997377,
+          "serializationMs": 1.5360999999998057,
+          "snapshotBytes": 98548
+        }
+      ]
+    },
+    {
+      "mapId": "delta",
+      "worldCount": 5,
+      "initial": [
+        {
+          "tick": 0,
+          "winner": null,
+          "entities": 34,
+          "livingEntities": 34,
+          "livingUnits": 26,
+          "unitsByOwner": [
+            13,
+            13
+          ],
+          "combatUnits": 8
+        },
+        {
+          "tick": 0,
+          "winner": null,
+          "entities": 34,
+          "livingEntities": 34,
+          "livingUnits": 26,
+          "unitsByOwner": [
+            13,
+            13
+          ],
+          "combatUnits": 8
+        },
+        {
+          "tick": 0,
+          "winner": null,
+          "entities": 34,
+          "livingEntities": 34,
+          "livingUnits": 26,
+          "unitsByOwner": [
+            13,
+            13
+          ],
+          "combatUnits": 8
+        },
+        {
+          "tick": 0,
+          "winner": null,
+          "entities": 34,
+          "livingEntities": 34,
+          "livingUnits": 26,
+          "unitsByOwner": [
+            13,
+            13
+          ],
+          "combatUnits": 8
+        },
+        {
+          "tick": 0,
+          "winner": null,
+          "entities": 34,
+          "livingEntities": 34,
+          "livingUnits": 26,
+          "unitsByOwner": [
+            13,
+            13
+          ],
+          "combatUnits": 8
+        }
+      ],
+      "evolved": [
+        {
+          "tick": 1800,
+          "winner": null,
+          "entities": 51,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1800,
+          "winner": null,
+          "entities": 51,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1800,
+          "winner": null,
+          "entities": 51,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1800,
+          "winner": null,
+          "entities": 51,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1800,
+          "winner": null,
+          "entities": 51,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        }
+      ],
+      "evolutionMs": 14364.892453999999,
+      "checkpoint": [
+        {
+          "tick": 1820,
+          "winner": null,
+          "entities": 50,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1820,
+          "winner": null,
+          "entities": 50,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1820,
+          "winner": null,
+          "entities": 50,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1820,
+          "winner": null,
+          "entities": 50,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1820,
+          "winner": null,
+          "entities": 50,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        }
+      ],
+      "final": [
+        {
+          "tick": 1920,
+          "winner": null,
+          "entities": 50,
+          "livingEntities": 49,
+          "livingUnits": 38,
+          "unitsByOwner": [
+            9,
+            29
+          ],
+          "combatUnits": 10
+        },
+        {
+          "tick": 1920,
+          "winner": null,
+          "entities": 50,
+          "livingEntities": 49,
+          "livingUnits": 38,
+          "unitsByOwner": [
+            9,
+            29
+          ],
+          "combatUnits": 10
+        },
+        {
+          "tick": 1920,
+          "winner": null,
+          "entities": 50,
+          "livingEntities": 49,
+          "livingUnits": 38,
+          "unitsByOwner": [
+            9,
+            29
+          ],
+          "combatUnits": 10
+        },
+        {
+          "tick": 1920,
+          "winner": null,
+          "entities": 50,
+          "livingEntities": 49,
+          "livingUnits": 38,
+          "unitsByOwner": [
+            9,
+            29
+          ],
+          "combatUnits": 10
+        },
+        {
+          "tick": 1920,
+          "winner": null,
+          "entities": 50,
+          "livingEntities": 49,
+          "livingUnits": 38,
+          "unitsByOwner": [
+            9,
+            29
+          ],
+          "combatUnits": 10
+        }
+      ],
+      "actualMeasuredTicks": 100,
+      "activeWorlds": {
+        "samples": 100,
+        "p50": 5,
+        "p95": 5,
+        "p99": 5,
+        "max": 5
+      },
+      "stepPerWorldMs": {
+        "samples": 500,
+        "p50": 0.9212440000010247,
+        "p95": 10.784499000001233,
+        "p99": 12.199217000001227,
+        "max": 12.607842999997956
+      },
+      "stepCohortMs": {
+        "samples": 100,
+        "p50": 4.699168999999529,
+        "p95": 54.630284999999276,
+        "p99": 61.133663000000524,
+        "max": 61.26192099999753
+      },
+      "viewPerPlayerMs": {
+        "samples": 250,
+        "p50": 0.6082969999988563,
+        "p95": 0.6689050000022689,
+        "p99": 0.8632810000017344,
+        "max": 0.9040319999985513
+      },
+      "jsonPerPlayerMs": {
+        "samples": 250,
+        "p50": 0.1497990000025311,
+        "p95": 0.16713199999867356,
+        "p99": 0.17379799999980605,
+        "max": 0.3685089999999036
+      },
+      "snapshotPerPlayerBytes": {
+        "samples": 250,
+        "p50": 44633,
+        "p95": 54268,
+        "p99": 54278,
+        "max": 54278
+      },
+      "snapshotEpochCohortMs": {
+        "samples": 25,
+        "p50": 7.359446000002208,
+        "p95": 7.623656000003393,
+        "p99": 7.662398000000394,
+        "max": 7.662398000000394
+      },
+      "cohortTickWithSnapshotMs": {
+        "samples": 100,
+        "p50": 4.947834000002331,
+        "p95": 54.630284999999276,
+        "p99": 61.133663000000524,
+        "max": 61.26192099999753
+      },
+      "snapshotSamples": [
+        {
+          "sample": 0,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 4.652618000000075,
+          "serializationMs": 7.602613000002748,
+          "snapshotBytes": 491165
+        },
+        {
+          "sample": 4,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 4.702565999999933,
+          "serializationMs": 7.251729999999952,
+          "snapshotBytes": 491200
+        },
+        {
+          "sample": 8,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 12.277434999999969,
+          "serializationMs": 7.334514999998646,
+          "snapshotBytes": 491190
+        },
+        {
+          "sample": 12,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 4.712380000000849,
+          "serializationMs": 7.662398000000394,
+          "snapshotBytes": 491215
+        },
+        {
+          "sample": 16,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 8.39480900000126,
+          "serializationMs": 7.2904859999980545,
+          "snapshotBytes": 492370
+        },
+        {
+          "sample": 20,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 4.536327999998321,
+          "serializationMs": 7.262039999997796,
+          "snapshotBytes": 492210
+        },
+        {
+          "sample": 24,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 19.373689000000013,
+          "serializationMs": 7.359446000002208,
+          "snapshotBytes": 492425
+        },
+        {
+          "sample": 28,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 4.691716000001179,
+          "serializationMs": 7.298139999998966,
+          "snapshotBytes": 492250
+        },
+        {
+          "sample": 32,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 4.5709679999999935,
+          "serializationMs": 7.623656000003393,
+          "snapshotBytes": 493530
+        },
+        {
+          "sample": 36,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 4.463002000000415,
+          "serializationMs": 7.528343999998469,
+          "snapshotBytes": 493785
+        },
+        {
+          "sample": 40,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 4.482396999999764,
+          "serializationMs": 7.3308150000011665,
+          "snapshotBytes": 494420
+        },
+        {
+          "sample": 44,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 4.527726999996958,
+          "serializationMs": 7.411098000000493,
+          "snapshotBytes": 494400
+        },
+        {
+          "sample": 48,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 4.617620999997598,
+          "serializationMs": 7.358671999998478,
+          "snapshotBytes": 494495
+        },
+        {
+          "sample": 52,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 4.761494999998831,
+          "serializationMs": 7.380080999999336,
+          "snapshotBytes": 494460
+        },
+        {
+          "sample": 56,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 4.440542000000278,
+          "serializationMs": 7.384710999998788,
+          "snapshotBytes": 493980
+        },
+        {
+          "sample": 60,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 5.4466580000007525,
+          "serializationMs": 7.33582799999931,
+          "snapshotBytes": 493400
+        },
+        {
+          "sample": 64,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 4.483389000000898,
+          "serializationMs": 7.269419999996899,
+          "snapshotBytes": 493670
+        },
+        {
+          "sample": 68,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 4.564586999997118,
+          "serializationMs": 7.3125919999984035,
+          "snapshotBytes": 493845
+        },
+        {
+          "sample": 72,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 4.792201000000205,
+          "serializationMs": 7.344667000001209,
+          "snapshotBytes": 493665
+        },
+        {
+          "sample": 76,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 4.529099999999744,
+          "serializationMs": 7.25510000000213,
+          "snapshotBytes": 493720
+        },
+        {
+          "sample": 80,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 4.56514000000243,
+          "serializationMs": 7.392089000000851,
+          "snapshotBytes": 493730
+        },
+        {
+          "sample": 84,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 5.101165000000037,
+          "serializationMs": 7.542610000000423,
+          "snapshotBytes": 493010
+        },
+        {
+          "sample": 88,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 4.509208000003127,
+          "serializationMs": 7.362403000002814,
+          "snapshotBytes": 493715
+        },
+        {
+          "sample": 92,
+          "activeWorlds": 5,
+          "totalLivingUnits": 190,
+          "stepMs": 4.645291000000725,
+          "serializationMs": 7.515167999998084,
+          "snapshotBytes": 492305
+        },
+        {
+          "sample": 96,
+          "activeWorlds": 5,
+          "totalLivingUnits": 190,
+          "stepMs": 4.938872000002448,
+          "serializationMs": 7.576302999998006,
+          "snapshotBytes": 492740
+        }
+      ]
+    },
+    {
+      "mapId": "delta",
+      "worldCount": 8,
+      "initial": [
+        {
+          "tick": 0,
+          "winner": null,
+          "entities": 34,
+          "livingEntities": 34,
+          "livingUnits": 26,
+          "unitsByOwner": [
+            13,
+            13
+          ],
+          "combatUnits": 8
+        },
+        {
+          "tick": 0,
+          "winner": null,
+          "entities": 34,
+          "livingEntities": 34,
+          "livingUnits": 26,
+          "unitsByOwner": [
+            13,
+            13
+          ],
+          "combatUnits": 8
+        },
+        {
+          "tick": 0,
+          "winner": null,
+          "entities": 34,
+          "livingEntities": 34,
+          "livingUnits": 26,
+          "unitsByOwner": [
+            13,
+            13
+          ],
+          "combatUnits": 8
+        },
+        {
+          "tick": 0,
+          "winner": null,
+          "entities": 34,
+          "livingEntities": 34,
+          "livingUnits": 26,
+          "unitsByOwner": [
+            13,
+            13
+          ],
+          "combatUnits": 8
+        },
+        {
+          "tick": 0,
+          "winner": null,
+          "entities": 34,
+          "livingEntities": 34,
+          "livingUnits": 26,
+          "unitsByOwner": [
+            13,
+            13
+          ],
+          "combatUnits": 8
+        },
+        {
+          "tick": 0,
+          "winner": null,
+          "entities": 34,
+          "livingEntities": 34,
+          "livingUnits": 26,
+          "unitsByOwner": [
+            13,
+            13
+          ],
+          "combatUnits": 8
+        },
+        {
+          "tick": 0,
+          "winner": null,
+          "entities": 34,
+          "livingEntities": 34,
+          "livingUnits": 26,
+          "unitsByOwner": [
+            13,
+            13
+          ],
+          "combatUnits": 8
+        },
+        {
+          "tick": 0,
+          "winner": null,
+          "entities": 34,
+          "livingEntities": 34,
+          "livingUnits": 26,
+          "unitsByOwner": [
+            13,
+            13
+          ],
+          "combatUnits": 8
+        }
+      ],
+      "evolved": [
+        {
+          "tick": 1800,
+          "winner": null,
+          "entities": 51,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1800,
+          "winner": null,
+          "entities": 51,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1800,
+          "winner": null,
+          "entities": 51,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1800,
+          "winner": null,
+          "entities": 51,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1800,
+          "winner": null,
+          "entities": 51,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1800,
+          "winner": null,
+          "entities": 51,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1800,
+          "winner": null,
+          "entities": 51,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1800,
+          "winner": null,
+          "entities": 51,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        }
+      ],
+      "evolutionMs": 22917.430683,
+      "checkpoint": [
+        {
+          "tick": 1820,
+          "winner": null,
+          "entities": 50,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1820,
+          "winner": null,
+          "entities": 50,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1820,
+          "winner": null,
+          "entities": 50,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1820,
+          "winner": null,
+          "entities": 50,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1820,
+          "winner": null,
+          "entities": 50,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1820,
+          "winner": null,
+          "entities": 50,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1820,
+          "winner": null,
+          "entities": 50,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1820,
+          "winner": null,
+          "entities": 50,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        }
+      ],
+      "final": [
+        {
+          "tick": 1920,
+          "winner": null,
+          "entities": 50,
+          "livingEntities": 49,
+          "livingUnits": 38,
+          "unitsByOwner": [
+            9,
+            29
+          ],
+          "combatUnits": 10
+        },
+        {
+          "tick": 1920,
+          "winner": null,
+          "entities": 50,
+          "livingEntities": 49,
+          "livingUnits": 38,
+          "unitsByOwner": [
+            9,
+            29
+          ],
+          "combatUnits": 10
+        },
+        {
+          "tick": 1920,
+          "winner": null,
+          "entities": 50,
+          "livingEntities": 49,
+          "livingUnits": 38,
+          "unitsByOwner": [
+            9,
+            29
+          ],
+          "combatUnits": 10
+        },
+        {
+          "tick": 1920,
+          "winner": null,
+          "entities": 50,
+          "livingEntities": 49,
+          "livingUnits": 38,
+          "unitsByOwner": [
+            9,
+            29
+          ],
+          "combatUnits": 10
+        },
+        {
+          "tick": 1920,
+          "winner": null,
+          "entities": 50,
+          "livingEntities": 49,
+          "livingUnits": 38,
+          "unitsByOwner": [
+            9,
+            29
+          ],
+          "combatUnits": 10
+        },
+        {
+          "tick": 1920,
+          "winner": null,
+          "entities": 50,
+          "livingEntities": 49,
+          "livingUnits": 38,
+          "unitsByOwner": [
+            9,
+            29
+          ],
+          "combatUnits": 10
+        },
+        {
+          "tick": 1920,
+          "winner": null,
+          "entities": 50,
+          "livingEntities": 49,
+          "livingUnits": 38,
+          "unitsByOwner": [
+            9,
+            29
+          ],
+          "combatUnits": 10
+        },
+        {
+          "tick": 1920,
+          "winner": null,
+          "entities": 50,
+          "livingEntities": 49,
+          "livingUnits": 38,
+          "unitsByOwner": [
+            9,
+            29
+          ],
+          "combatUnits": 10
+        }
+      ],
+      "actualMeasuredTicks": 100,
+      "activeWorlds": {
+        "samples": 100,
+        "p50": 8,
+        "p95": 8,
+        "p99": 8,
+        "max": 8
+      },
+      "stepPerWorldMs": {
+        "samples": 800,
+        "p50": 0.9542010000004666,
+        "p95": 10.787200999999186,
+        "p99": 16.190867999997863,
+        "max": 18.56653300000471
+      },
+      "stepCohortMs": {
+        "samples": 100,
+        "p50": 7.810615000002144,
+        "p95": 86.96726399999898,
+        "p99": 125.25073500000144,
+        "max": 139.77757800000109
+      },
+      "viewPerPlayerMs": {
+        "samples": 400,
+        "p50": 0.6221730000033858,
+        "p95": 0.8850769999990007,
+        "p99": 0.9469690000041737,
+        "max": 1.3580959999962943
+      },
+      "jsonPerPlayerMs": {
+        "samples": 400,
+        "p50": 0.15616199999931268,
+        "p95": 0.22128599999996368,
+        "p99": 0.23617800000647549,
+        "max": 0.2416319999974803
+      },
+      "snapshotPerPlayerBytes": {
+        "samples": 400,
+        "p50": 44633,
+        "p95": 54268,
+        "p99": 54278,
+        "max": 54278
+      },
+      "snapshotEpochCohortMs": {
+        "samples": 25,
+        "p50": 11.802104000002146,
+        "p95": 16.51003700000001,
+        "p99": 16.876257999996596,
+        "max": 16.876257999996596
+      },
+      "cohortTickWithSnapshotMs": {
+        "samples": 100,
+        "p50": 10.746311000002606,
+        "p95": 86.96726399999898,
+        "p99": 125.25073500000144,
+        "max": 139.77757800000109
+      },
+      "snapshotSamples": [
+        {
+          "sample": 0,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 9.589157999995223,
+          "serializationMs": 16.39245200000005,
+          "snapshotBytes": 785864
+        },
+        {
+          "sample": 4,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 10.146697000003769,
+          "serializationMs": 16.26351099999738,
+          "snapshotBytes": 785920
+        },
+        {
+          "sample": 8,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 27.369109999999637,
+          "serializationMs": 16.876257999996596,
+          "snapshotBytes": 785904
+        },
+        {
+          "sample": 12,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 10.467885999998543,
+          "serializationMs": 16.51003700000001,
+          "snapshotBytes": 785944
+        },
+        {
+          "sample": 16,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 18.52558300000237,
+          "serializationMs": 16.441286000001128,
+          "snapshotBytes": 787792
+        },
+        {
+          "sample": 20,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 10.248318999998446,
+          "serializationMs": 16.485407000000123,
+          "snapshotBytes": 787536
+        },
+        {
+          "sample": 24,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 43.49080900000263,
+          "serializationMs": 13.297301999999036,
+          "snapshotBytes": 787880
+        },
+        {
+          "sample": 28,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 7.719151999997848,
+          "serializationMs": 11.581373000000895,
+          "snapshotBytes": 787600
+        },
+        {
+          "sample": 32,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 7.302572000000509,
+          "serializationMs": 11.73218800000177,
+          "snapshotBytes": 789648
+        },
+        {
+          "sample": 36,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 7.171227999999246,
+          "serializationMs": 13.304174000004423,
+          "snapshotBytes": 790056
+        },
+        {
+          "sample": 40,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 7.304369000004954,
+          "serializationMs": 11.686087000001862,
+          "snapshotBytes": 791072
+        },
+        {
+          "sample": 44,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 7.199882000000798,
+          "serializationMs": 11.655406999998377,
+          "snapshotBytes": 791040
+        },
+        {
+          "sample": 48,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 7.366817000001902,
+          "serializationMs": 11.79689800000051,
+          "snapshotBytes": 791192
+        },
+        {
+          "sample": 52,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 7.431448999996064,
+          "serializationMs": 12.079011000001628,
+          "snapshotBytes": 791136
+        },
+        {
+          "sample": 56,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 7.237124999999651,
+          "serializationMs": 11.634994000000006,
+          "snapshotBytes": 790368
+        },
+        {
+          "sample": 60,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 8.254765999998199,
+          "serializationMs": 11.802104000002146,
+          "snapshotBytes": 789440
+        },
+        {
+          "sample": 64,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 7.225050999993982,
+          "serializationMs": 11.577649999999267,
+          "snapshotBytes": 789872
+        },
+        {
+          "sample": 68,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 7.3213919999980135,
+          "serializationMs": 11.60546500000055,
+          "snapshotBytes": 790152
+        },
+        {
+          "sample": 72,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 7.590172999996867,
+          "serializationMs": 11.865203000001202,
+          "snapshotBytes": 789864
+        },
+        {
+          "sample": 76,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 7.675088000003598,
+          "serializationMs": 11.814549999995506,
+          "snapshotBytes": 789952
+        },
+        {
+          "sample": 80,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 7.923369999996794,
+          "serializationMs": 11.895135999999184,
+          "snapshotBytes": 789968
+        },
+        {
+          "sample": 84,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 8.578346000002057,
+          "serializationMs": 11.67963299999974,
+          "snapshotBytes": 788816
+        },
+        {
+          "sample": 88,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 7.201497000001837,
+          "serializationMs": 11.778739000001224,
+          "snapshotBytes": 789944
+        },
+        {
+          "sample": 92,
+          "activeWorlds": 8,
+          "totalLivingUnits": 304,
+          "stepMs": 7.293846000000485,
+          "serializationMs": 11.506150999994134,
+          "snapshotBytes": 787688
+        },
+        {
+          "sample": 96,
+          "activeWorlds": 8,
+          "totalLivingUnits": 304,
+          "stepMs": 7.755899999996473,
+          "serializationMs": 11.595785999998043,
+          "snapshotBytes": 788384
+        }
+      ]
+    },
+    {
+      "mapId": "coast",
+      "worldCount": 1,
+      "initial": [
+        {
+          "tick": 0,
+          "winner": null,
+          "entities": 34,
+          "livingEntities": 34,
+          "livingUnits": 26,
+          "unitsByOwner": [
+            13,
+            13
+          ],
+          "combatUnits": 8
+        }
+      ],
+      "evolved": [
+        {
+          "tick": 1800,
+          "winner": null,
+          "entities": 52,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        }
+      ],
+      "evolutionMs": 2883.109070999999,
+      "checkpoint": [
+        {
+          "tick": 1820,
+          "winner": null,
+          "entities": 51,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        }
+      ],
+      "final": [
+        {
+          "tick": 1920,
+          "winner": null,
+          "entities": 50,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        }
+      ],
+      "actualMeasuredTicks": 100,
+      "activeWorlds": {
+        "samples": 100,
+        "p50": 1,
+        "p95": 1,
+        "p99": 1,
+        "max": 1
+      },
+      "stepPerWorldMs": {
+        "samples": 100,
+        "p50": 0.9724449999994249,
+        "p95": 6.457606999996642,
+        "p99": 12.348838999998407,
+        "max": 12.438313999999082
+      },
+      "stepCohortMs": {
+        "samples": 100,
+        "p50": 0.9733290000003763,
+        "p95": 6.4583480000001146,
+        "p99": 12.350017999997362,
+        "max": 12.439431999999215
+      },
+      "viewPerPlayerMs": {
+        "samples": 50,
+        "p50": 0.5578549999991083,
+        "p95": 0.6752619999970193,
+        "p99": 0.7087829999945825,
+        "max": 0.7087829999945825
+      },
+      "jsonPerPlayerMs": {
+        "samples": 50,
+        "p50": 0.14737500000046566,
+        "p95": 0.17209899999579648,
+        "p99": 0.197770999999193,
+        "max": 0.197770999999193
+      },
+      "snapshotPerPlayerBytes": {
+        "samples": 50,
+        "p50": 44592,
+        "p95": 54556,
+        "p99": 54571,
+        "max": 54571
+      },
+      "snapshotEpochCohortMs": {
+        "samples": 25,
+        "p50": 1.5086640000008629,
+        "p95": 1.5632229999973788,
+        "p99": 1.6533499999932246,
+        "max": 1.6533499999932246
+      },
+      "cohortTickWithSnapshotMs": {
+        "samples": 100,
+        "p50": 1.020293000001402,
+        "p95": 6.4583480000001146,
+        "p99": 12.350017999997362,
+        "max": 12.439431999999215
+      },
+      "snapshotSamples": [
+        {
+          "sample": 0,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 0.974049999997078,
+          "serializationMs": 1.462664999999106,
+          "snapshotBytes": 96118
+        },
+        {
+          "sample": 4,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 6.832448000001023,
+          "serializationMs": 1.492351000000781,
+          "snapshotBytes": 96187
+        },
+        {
+          "sample": 8,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 1.555002000000968,
+          "serializationMs": 1.5086640000008629,
+          "snapshotBytes": 97032
+        },
+        {
+          "sample": 12,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 0.9701659999991534,
+          "serializationMs": 1.5299269999959506,
+          "snapshotBytes": 97171
+        },
+        {
+          "sample": 16,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 1.6500470000028145,
+          "serializationMs": 1.5218190000014147,
+          "snapshotBytes": 97431
+        },
+        {
+          "sample": 20,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 1.3561069999996107,
+          "serializationMs": 1.5504570000048261,
+          "snapshotBytes": 97399
+        },
+        {
+          "sample": 24,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 4.663125999999465,
+          "serializationMs": 1.5632229999973788,
+          "snapshotBytes": 97820
+        },
+        {
+          "sample": 28,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 0.9504220000017085,
+          "serializationMs": 1.511106000005384,
+          "snapshotBytes": 98126
+        },
+        {
+          "sample": 32,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 2.30727100000513,
+          "serializationMs": 1.5557820000030915,
+          "snapshotBytes": 98847
+        },
+        {
+          "sample": 36,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 0.9340529999972205,
+          "serializationMs": 1.506429000000935,
+          "snapshotBytes": 99163
+        },
+        {
+          "sample": 40,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 0.9510389999995823,
+          "serializationMs": 1.5376959999994142,
+          "snapshotBytes": 99144
+        },
+        {
+          "sample": 44,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 0.9360799999994924,
+          "serializationMs": 1.5290440000026138,
+          "snapshotBytes": 99099
+        },
+        {
+          "sample": 48,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 0.9576500000039232,
+          "serializationMs": 1.5365980000060517,
+          "snapshotBytes": 98298
+        },
+        {
+          "sample": 52,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 0.9523389999958454,
+          "serializationMs": 1.5047340000019176,
+          "snapshotBytes": 98454
+        },
+        {
+          "sample": 56,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 0.897661999995762,
+          "serializationMs": 1.4697769999984303,
+          "snapshotBytes": 98131
+        },
+        {
+          "sample": 60,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 1.0507670000006328,
+          "serializationMs": 1.5011349999986123,
+          "snapshotBytes": 98281
+        },
+        {
+          "sample": 64,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 0.9207939999978407,
+          "serializationMs": 1.505274000002828,
+          "snapshotBytes": 98353
+        },
+        {
+          "sample": 68,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 0.9294609999997192,
+          "serializationMs": 1.490085999997973,
+          "snapshotBytes": 98375
+        },
+        {
+          "sample": 72,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 0.9236690000034287,
+          "serializationMs": 1.5077110000056564,
+          "snapshotBytes": 98381
+        },
+        {
+          "sample": 76,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 0.9810490000018035,
+          "serializationMs": 1.6533499999932246,
+          "snapshotBytes": 98290
+        },
+        {
+          "sample": 80,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 0.9143810000023223,
+          "serializationMs": 1.5306770000024699,
+          "snapshotBytes": 98327
+        },
+        {
+          "sample": 84,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 1.037808999994013,
+          "serializationMs": 1.5007120000009309,
+          "snapshotBytes": 98276
+        },
+        {
+          "sample": 88,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 0.9189709999991464,
+          "serializationMs": 1.559480000003532,
+          "snapshotBytes": 98308
+        },
+        {
+          "sample": 92,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 0.9236239999954705,
+          "serializationMs": 1.5000900000013644,
+          "snapshotBytes": 98297
+        },
+        {
+          "sample": 96,
+          "activeWorlds": 1,
+          "totalLivingUnits": 39,
+          "stepMs": 1.0287230000030831,
+          "serializationMs": 1.5005899999960093,
+          "snapshotBytes": 98171
+        }
+      ]
+    },
+    {
+      "mapId": "coast",
+      "worldCount": 5,
+      "initial": [
+        {
+          "tick": 0,
+          "winner": null,
+          "entities": 34,
+          "livingEntities": 34,
+          "livingUnits": 26,
+          "unitsByOwner": [
+            13,
+            13
+          ],
+          "combatUnits": 8
+        },
+        {
+          "tick": 0,
+          "winner": null,
+          "entities": 34,
+          "livingEntities": 34,
+          "livingUnits": 26,
+          "unitsByOwner": [
+            13,
+            13
+          ],
+          "combatUnits": 8
+        },
+        {
+          "tick": 0,
+          "winner": null,
+          "entities": 34,
+          "livingEntities": 34,
+          "livingUnits": 26,
+          "unitsByOwner": [
+            13,
+            13
+          ],
+          "combatUnits": 8
+        },
+        {
+          "tick": 0,
+          "winner": null,
+          "entities": 34,
+          "livingEntities": 34,
+          "livingUnits": 26,
+          "unitsByOwner": [
+            13,
+            13
+          ],
+          "combatUnits": 8
+        },
+        {
+          "tick": 0,
+          "winner": null,
+          "entities": 34,
+          "livingEntities": 34,
+          "livingUnits": 26,
+          "unitsByOwner": [
+            13,
+            13
+          ],
+          "combatUnits": 8
+        }
+      ],
+      "evolved": [
+        {
+          "tick": 1800,
+          "winner": null,
+          "entities": 52,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1800,
+          "winner": null,
+          "entities": 52,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1800,
+          "winner": null,
+          "entities": 52,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1800,
+          "winner": null,
+          "entities": 52,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1800,
+          "winner": null,
+          "entities": 52,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        }
+      ],
+      "evolutionMs": 14565.761007000001,
+      "checkpoint": [
+        {
+          "tick": 1820,
+          "winner": null,
+          "entities": 51,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1820,
+          "winner": null,
+          "entities": 51,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1820,
+          "winner": null,
+          "entities": 51,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1820,
+          "winner": null,
+          "entities": 51,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1820,
+          "winner": null,
+          "entities": 51,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        }
+      ],
+      "final": [
+        {
+          "tick": 1920,
+          "winner": null,
+          "entities": 50,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1920,
+          "winner": null,
+          "entities": 50,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1920,
+          "winner": null,
+          "entities": 50,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1920,
+          "winner": null,
+          "entities": 50,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1920,
+          "winner": null,
+          "entities": 50,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        }
+      ],
+      "actualMeasuredTicks": 100,
+      "activeWorlds": {
+        "samples": 100,
+        "p50": 5,
+        "p95": 5,
+        "p99": 5,
+        "max": 5
+      },
+      "stepPerWorldMs": {
+        "samples": 500,
+        "p50": 0.9650209999963408,
+        "p95": 6.460669000000053,
+        "p99": 12.26779499999975,
+        "max": 12.57515599999897
+      },
+      "stepCohortMs": {
+        "samples": 100,
+        "p50": 4.950106000003871,
+        "p95": 32.02201100000093,
+        "p99": 61.356392000001506,
+        "max": 61.60927999999694
+      },
+      "viewPerPlayerMs": {
+        "samples": 250,
+        "p50": 0.6152940000029048,
+        "p95": 0.684041000000434,
+        "p99": 0.9499750000031781,
+        "max": 1.1354879999998957
+      },
+      "jsonPerPlayerMs": {
+        "samples": 250,
+        "p50": 0.153295000003709,
+        "p95": 0.18049700000119628,
+        "p99": 0.27627799999754643,
+        "max": 0.46454200000152923
+      },
+      "snapshotPerPlayerBytes": {
+        "samples": 250,
+        "p50": 44592,
+        "p95": 54556,
+        "p99": 54571,
+        "max": 54571
+      },
+      "snapshotEpochCohortMs": {
+        "samples": 25,
+        "p50": 7.458199000000604,
+        "p95": 8.465229000001273,
+        "p99": 8.693824000001769,
+        "max": 8.693824000001769
+      },
+      "cohortTickWithSnapshotMs": {
+        "samples": 100,
+        "p50": 5.278722999995807,
+        "p95": 32.02201100000093,
+        "p99": 61.356392000001506,
+        "max": 61.60927999999694
+      },
+      "snapshotSamples": [
+        {
+          "sample": 0,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 4.854925999999978,
+          "serializationMs": 7.160527000000002,
+          "snapshotBytes": 480590
+        },
+        {
+          "sample": 4,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 34.67432900000131,
+          "serializationMs": 7.2575549999965006,
+          "snapshotBytes": 480935
+        },
+        {
+          "sample": 8,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 7.854072000001906,
+          "serializationMs": 7.284908000001451,
+          "snapshotBytes": 485160
+        },
+        {
+          "sample": 12,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 6.3187159999943106,
+          "serializationMs": 8.465229000001273,
+          "snapshotBytes": 485855
+        },
+        {
+          "sample": 16,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 9.235493000000133,
+          "serializationMs": 7.694719999999506,
+          "snapshotBytes": 487155
+        },
+        {
+          "sample": 20,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 6.902177999996638,
+          "serializationMs": 7.283654000006209,
+          "snapshotBytes": 486995
+        },
+        {
+          "sample": 24,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 22.273709000000963,
+          "serializationMs": 7.500495000000228,
+          "snapshotBytes": 489100
+        },
+        {
+          "sample": 28,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 4.723330000000715,
+          "serializationMs": 7.368986000001314,
+          "snapshotBytes": 490630
+        },
+        {
+          "sample": 32,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 11.70334699999512,
+          "serializationMs": 7.472588999997242,
+          "snapshotBytes": 494235
+        },
+        {
+          "sample": 36,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 4.652483999998367,
+          "serializationMs": 7.425748000001477,
+          "snapshotBytes": 495815
+        },
+        {
+          "sample": 40,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 5.149710999998206,
+          "serializationMs": 7.532929999993939,
+          "snapshotBytes": 495720
+        },
+        {
+          "sample": 44,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 4.663100000005215,
+          "serializationMs": 7.819651999998314,
+          "snapshotBytes": 495495
+        },
+        {
+          "sample": 48,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 4.678475000000617,
+          "serializationMs": 7.406770000001416,
+          "snapshotBytes": 491490
+        },
+        {
+          "sample": 52,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 4.646187999998801,
+          "serializationMs": 7.266755999997258,
+          "snapshotBytes": 492270
+        },
+        {
+          "sample": 56,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 5.1931839999961085,
+          "serializationMs": 7.360139000003983,
+          "snapshotBytes": 490655
+        },
+        {
+          "sample": 60,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 5.256171000000904,
+          "serializationMs": 7.4807679999939865,
+          "snapshotBytes": 491405
+        },
+        {
+          "sample": 64,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 4.616228999999294,
+          "serializationMs": 8.693824000001769,
+          "snapshotBytes": 491765
+        },
+        {
+          "sample": 68,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 5.102102000004379,
+          "serializationMs": 7.458199000000604,
+          "snapshotBytes": 491875
+        },
+        {
+          "sample": 72,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 4.726133999996819,
+          "serializationMs": 7.571607999998378,
+          "snapshotBytes": 491905
+        },
+        {
+          "sample": 76,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 5.535724999994272,
+          "serializationMs": 7.463123999994423,
+          "snapshotBytes": 491450
+        },
+        {
+          "sample": 80,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 5.050923000002513,
+          "serializationMs": 7.384731999998621,
+          "snapshotBytes": 491635
+        },
+        {
+          "sample": 84,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 5.217275000002701,
+          "serializationMs": 7.393849000000046,
+          "snapshotBytes": 491380
+        },
+        {
+          "sample": 88,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 4.5751320000053965,
+          "serializationMs": 7.399602999998024,
+          "snapshotBytes": 491540
+        },
+        {
+          "sample": 92,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 4.6624529999971855,
+          "serializationMs": 7.817745000000286,
+          "snapshotBytes": 491485
+        },
+        {
+          "sample": 96,
+          "activeWorlds": 5,
+          "totalLivingUnits": 195,
+          "stepMs": 5.012956999999005,
+          "serializationMs": 7.458296999997401,
+          "snapshotBytes": 490855
+        }
+      ]
+    },
+    {
+      "mapId": "coast",
+      "worldCount": 8,
+      "initial": [
+        {
+          "tick": 0,
+          "winner": null,
+          "entities": 34,
+          "livingEntities": 34,
+          "livingUnits": 26,
+          "unitsByOwner": [
+            13,
+            13
+          ],
+          "combatUnits": 8
+        },
+        {
+          "tick": 0,
+          "winner": null,
+          "entities": 34,
+          "livingEntities": 34,
+          "livingUnits": 26,
+          "unitsByOwner": [
+            13,
+            13
+          ],
+          "combatUnits": 8
+        },
+        {
+          "tick": 0,
+          "winner": null,
+          "entities": 34,
+          "livingEntities": 34,
+          "livingUnits": 26,
+          "unitsByOwner": [
+            13,
+            13
+          ],
+          "combatUnits": 8
+        },
+        {
+          "tick": 0,
+          "winner": null,
+          "entities": 34,
+          "livingEntities": 34,
+          "livingUnits": 26,
+          "unitsByOwner": [
+            13,
+            13
+          ],
+          "combatUnits": 8
+        },
+        {
+          "tick": 0,
+          "winner": null,
+          "entities": 34,
+          "livingEntities": 34,
+          "livingUnits": 26,
+          "unitsByOwner": [
+            13,
+            13
+          ],
+          "combatUnits": 8
+        },
+        {
+          "tick": 0,
+          "winner": null,
+          "entities": 34,
+          "livingEntities": 34,
+          "livingUnits": 26,
+          "unitsByOwner": [
+            13,
+            13
+          ],
+          "combatUnits": 8
+        },
+        {
+          "tick": 0,
+          "winner": null,
+          "entities": 34,
+          "livingEntities": 34,
+          "livingUnits": 26,
+          "unitsByOwner": [
+            13,
+            13
+          ],
+          "combatUnits": 8
+        },
+        {
+          "tick": 0,
+          "winner": null,
+          "entities": 34,
+          "livingEntities": 34,
+          "livingUnits": 26,
+          "unitsByOwner": [
+            13,
+            13
+          ],
+          "combatUnits": 8
+        }
+      ],
+      "evolved": [
+        {
+          "tick": 1800,
+          "winner": null,
+          "entities": 52,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1800,
+          "winner": null,
+          "entities": 52,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1800,
+          "winner": null,
+          "entities": 52,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1800,
+          "winner": null,
+          "entities": 52,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1800,
+          "winner": null,
+          "entities": 52,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1800,
+          "winner": null,
+          "entities": 52,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1800,
+          "winner": null,
+          "entities": 52,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1800,
+          "winner": null,
+          "entities": 52,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        }
+      ],
+      "evolutionMs": 23708.628049000006,
+      "checkpoint": [
+        {
+          "tick": 1820,
+          "winner": null,
+          "entities": 51,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1820,
+          "winner": null,
+          "entities": 51,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1820,
+          "winner": null,
+          "entities": 51,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1820,
+          "winner": null,
+          "entities": 51,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1820,
+          "winner": null,
+          "entities": 51,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1820,
+          "winner": null,
+          "entities": 51,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1820,
+          "winner": null,
+          "entities": 51,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1820,
+          "winner": null,
+          "entities": 51,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        }
+      ],
+      "final": [
+        {
+          "tick": 1920,
+          "winner": null,
+          "entities": 50,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1920,
+          "winner": null,
+          "entities": 50,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1920,
+          "winner": null,
+          "entities": 50,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1920,
+          "winner": null,
+          "entities": 50,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1920,
+          "winner": null,
+          "entities": 50,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1920,
+          "winner": null,
+          "entities": 50,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1920,
+          "winner": null,
+          "entities": 50,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        },
+        {
+          "tick": 1920,
+          "winner": null,
+          "entities": 50,
+          "livingEntities": 50,
+          "livingUnits": 39,
+          "unitsByOwner": [
+            9,
+            30
+          ],
+          "combatUnits": 11
+        }
+      ],
+      "actualMeasuredTicks": 100,
+      "activeWorlds": {
+        "samples": 100,
+        "p50": 8,
+        "p95": 8,
+        "p99": 8,
+        "max": 8
+      },
+      "stepPerWorldMs": {
+        "samples": 800,
+        "p50": 0.9446619999944232,
+        "p95": 6.854424999997718,
+        "p99": 12.358913000003668,
+        "max": 12.754799999995157
+      },
+      "stepCohortMs": {
+        "samples": 100,
+        "p50": 7.587990999993053,
+        "p95": 52.949769000013475,
+        "p99": 97.8977670000022,
+        "max": 99.04738100001123
+      },
+      "viewPerPlayerMs": {
+        "samples": 400,
+        "p50": 0.6078600000037113,
+        "p95": 0.6696450000017649,
+        "p99": 0.7128550000052201,
+        "max": 1.037121000001207
+      },
+      "jsonPerPlayerMs": {
+        "samples": 400,
+        "p50": 0.14884300000267103,
+        "p95": 0.17093600000953302,
+        "p99": 0.19079199999396224,
+        "max": 0.549566000001505
+      },
+      "snapshotPerPlayerBytes": {
+        "samples": 400,
+        "p50": 44592,
+        "p95": 54556,
+        "p99": 54571,
+        "max": 54571
+      },
+      "snapshotEpochCohortMs": {
+        "samples": 25,
+        "p50": 11.705686999994214,
+        "p95": 12.063655999998446,
+        "p99": 12.233387999993283,
+        "max": 12.233387999993283
+      },
+      "cohortTickWithSnapshotMs": {
+        "samples": 100,
+        "p50": 8.039366000011796,
+        "p95": 52.949769000013475,
+        "p99": 97.8977670000022,
+        "max": 99.04738100001123
+      },
+      "snapshotSamples": [
+        {
+          "sample": 0,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 7.88099499999953,
+          "serializationMs": 11.23599300000933,
+          "snapshotBytes": 768944
+        },
+        {
+          "sample": 4,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 55.40204000000085,
+          "serializationMs": 11.369674000001396,
+          "snapshotBytes": 769496
+        },
+        {
+          "sample": 8,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 12.544386000008672,
+          "serializationMs": 11.895025999998325,
+          "snapshotBytes": 776256
+        },
+        {
+          "sample": 12,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 7.539497000005213,
+          "serializationMs": 11.862634999997681,
+          "snapshotBytes": 777368
+        },
+        {
+          "sample": 16,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 13.873852999997325,
+          "serializationMs": 11.491294999999809,
+          "snapshotBytes": 779448
+        },
+        {
+          "sample": 20,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 11.406240999989677,
+          "serializationMs": 11.471881999998004,
+          "snapshotBytes": 779192
+        },
+        {
+          "sample": 24,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 36.18406299999333,
+          "serializationMs": 11.705686999994214,
+          "snapshotBytes": 782560
+        },
+        {
+          "sample": 28,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 7.502108999993652,
+          "serializationMs": 12.233387999993283,
+          "snapshotBytes": 785008
+        },
+        {
+          "sample": 32,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 18.786544999995385,
+          "serializationMs": 11.691695000001346,
+          "snapshotBytes": 790776
+        },
+        {
+          "sample": 36,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 7.857065999996848,
+          "serializationMs": 11.699655999997049,
+          "snapshotBytes": 793304
+        },
+        {
+          "sample": 40,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 7.515830999996979,
+          "serializationMs": 11.815415000004577,
+          "snapshotBytes": 793152
+        },
+        {
+          "sample": 44,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 7.4862819999980275,
+          "serializationMs": 11.925685000009253,
+          "snapshotBytes": 792792
+        },
+        {
+          "sample": 48,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 7.5601670000032755,
+          "serializationMs": 11.785310999999638,
+          "snapshotBytes": 786384
+        },
+        {
+          "sample": 52,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 7.443142000003718,
+          "serializationMs": 11.771421999990707,
+          "snapshotBytes": 787632
+        },
+        {
+          "sample": 56,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 7.315824000004795,
+          "serializationMs": 11.53310300000885,
+          "snapshotBytes": 785048
+        },
+        {
+          "sample": 60,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 8.326423000005889,
+          "serializationMs": 12.063655999998446,
+          "snapshotBytes": 786248
+        },
+        {
+          "sample": 64,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 7.254681999998866,
+          "serializationMs": 11.645856000002823,
+          "snapshotBytes": 786824
+        },
+        {
+          "sample": 68,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 7.308820000005653,
+          "serializationMs": 11.946952999991481,
+          "snapshotBytes": 787000
+        },
+        {
+          "sample": 72,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 7.9764889999933075,
+          "serializationMs": 11.897354999993695,
+          "snapshotBytes": 787048
+        },
+        {
+          "sample": 76,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 7.173607000004267,
+          "serializationMs": 11.978722999992897,
+          "snapshotBytes": 786320
+        },
+        {
+          "sample": 80,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 7.72272599999269,
+          "serializationMs": 11.606692000001203,
+          "snapshotBytes": 786616
+        },
+        {
+          "sample": 84,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 8.545508000010159,
+          "serializationMs": 11.548790000000736,
+          "snapshotBytes": 786208
+        },
+        {
+          "sample": 88,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 7.2480780000041705,
+          "serializationMs": 11.86461399999098,
+          "snapshotBytes": 786464
+        },
+        {
+          "sample": 92,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 7.351325999989058,
+          "serializationMs": 11.60927499999525,
+          "snapshotBytes": 786376
+        },
+        {
+          "sample": 96,
+          "activeWorlds": 8,
+          "totalLivingUnits": 312,
+          "stepMs": 8.085495999999694,
+          "serializationMs": 11.63336999999592,
+          "snapshotBytes": 785368
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "No HTTP/WebSocket service, compression, send queues, real clients, browser rendering or network work measured.",
+    "Normal built-in single-player AI runs only for player1; this differs from two-human online command traffic.",
+    "Worlds are isolated simulations stepped sequentially; not live rooms or dense-army acceptance.",
+    "Only naturally reached unit counts are reported. No resources or units minted; no external gameplay commands.",
+    "Wall-clock distributions include host scheduling/GC noise; short finite samples are a baseline, not final release headroom acceptance."
+  ],
+  "elapsedMs": 89291.522521,
+  "memoryAfter": {
+    "rss": 237621248,
+    "heapTotal": 168497152,
+    "heapUsed": 54891584,
+    "external": 3737781,
+    "arrayBuffers": 60037
+  },
+  "executionContext": {
+    "exclusiveCpu": false,
+    "concurrentProjectWorkers": true,
+    "note": "Root confirms concurrent project workers/build tasks on shared machine; timings are not an isolated production-capacity test."
+  }
+}
