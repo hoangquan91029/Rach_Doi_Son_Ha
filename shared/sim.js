@@ -70,7 +70,15 @@ function blockers(s){const cached=navigationBuildings.get(s);if(cached?.version=
 function pass(s,e,x,y){if(!terrainPass(s,e,x,y))return false;return !blockers(s).some(b=>b.id!==e.id&&!(b.type==='gate'&&b.owner===e.owner)&&Math.abs(x-b.x)<BUILDINGS[b.type].radius+0.15&&Math.abs(y-b.y)<BUILDINGS[b.type].radius+0.15);}
 // Diagonal steps require both side cells, using the same terrain/building rules as destinations.
 function navigationStep(s,e,x,y,xx,yy){return pass(s,e,xx,yy)&&(x===xx||y===yy||pass(s,e,xx,y)&&pass(s,e,x,yy));}
-function path(s,e,target,range=0.4){
+// Final ground segments remain inside a reachable cell and cannot cross building interiors.
+function groundSegment(s,e,from,to){
+ if(!navigationStep(s,e,from.x,from.y,to.x,to.y))return false;
+ return !blockers(s).some(b=>{if(b.id===e.id||b.type==='gate'&&b.owner===e.owner)return false;const r=BUILDINGS[b.type].radius+0.15;let lo=0,hi=1;
+  for(const axis of ['x','y']){const delta=to[axis]-from[axis],min=b[axis]-r,max=b[axis]+r;if(delta===0){if(from[axis]<=min||from[axis]>=max)return false;}else{const a=(min-from[axis])/delta,z=(max-from[axis])/delta;lo=Math.max(lo,Math.min(a,z));hi=Math.min(hi,Math.max(a,z));if(lo>=hi)return false;}}
+  return lo<hi;
+ });
+}
+function path(s,e,target,range=0.4,finalGround=false){
  const w=s.map.width,h=s.map.height,sx=Math.floor(e.x),sy=Math.floor(e.y),start=sy*w+sx;
  const parents=new Int32Array(w*h).fill(-2),costs=new Float64Array(w*h).fill(Infinity),heap=[];let serial=0;
  const before=(a,b)=>a.cost<b.cost||a.cost===b.cost&&a.order<b.order;
@@ -79,20 +87,20 @@ function path(s,e,target,range=0.4){
  costs[start]=0;parents[start]=-1;push(start,0);let found=-1,best=start,bestD=Infinity;
  // Fixed neighbor order and insertion ties make equal-cost routes reproducible.
  const neighbors=[[1,0],[0,1],[-1,0],[0,-1],[1,1],[-1,1],[-1,-1],[1,-1]];
- while(heap.length){const {i,cost}=pop();if(cost!==costs[i])continue;const x=i%w,y=Math.floor(i/w),dd=(x+0.5-target.x)**2+(y+0.5-target.y)**2;if(dd<bestD){bestD=dd;best=i;}if(dd<=range**2&&pass(s,e,x+0.5,y+0.5)){found=i;break;}
+ while(heap.length){const {i,cost}=pop();if(cost!==costs[i])continue;const x=i%w,y=Math.floor(i/w),dd=(x+0.5-target.x)**2+(y+0.5-target.y)**2;if(dd<bestD){bestD=dd;best=i;}if((dd<=range**2&&pass(s,e,x+0.5,y+0.5))||(finalGround&&x===Math.floor(target.x)&&y===Math.floor(target.y)&&groundSegment(s,e,{x:x+0.5,y:y+0.5},target))){found=i;break;}
   for(const [dx,dy] of neighbors){const xx=x+dx,yy=y+dy,j=yy*w+xx;if(xx<0||yy<0||xx>=w||yy>=h||!navigationStep(s,e,x+0.5,y+0.5,xx+0.5,yy+0.5))continue;const nextCost=cost+(dx&&dy?Math.SQRT2:1);if(nextCost>=costs[j])continue;costs[j]=nextCost;parents[j]=i;push(j,nextCost);}
  }
- if(found<0)found=best;const result=[];for(let i=found;i!==start&&i>=0;i=parents[i])result.push({x:i%w+0.5,y:Math.floor(i/w)+0.5});result.reverse();return result;
+ if(found<0)found=best;const result=[];for(let i=found;i!==start&&i>=0;i=parents[i])result.push({x:i%w+0.5,y:Math.floor(i/w)+0.5});result.reverse();if(finalGround){const end={x:found%w+0.5,y:Math.floor(found/w)+0.5};if(dist(end,target)>range&&Math.floor(end.x)===Math.floor(target.x)&&Math.floor(end.y)===Math.floor(target.y)&&groundSegment(s,e,end,target))result.push({x:target.x,y:target.y,finalGround:true});}return result;
 }
 function active(s,e,kind){return s.effects.some(f=>f.owner===e.owner&&f.kind===kind&&f.until>s.tick&&(f.global||dist(e,f)<f.radius));}
 function speed(s,e){const m=s.players[e.owner].modifiers,t=tile(s,e.x,e.y),r=e.food/e.foodMax;let v=UNITS[e.type].speed*m.speed*(TERRAIN[t]?.speed||1);if(UNITS[e.type].naval)v*=m.naval;if(e.type==='cavalry'&&t==='forest')v*=0.7;if(r<BALANCE.lowSupply)v*=r>0?0.85:0.6;if(active(s,e,'tempo')||active(s,e,'concentrate')||active(s,e,'deception'))v*=1.4;if(e.type==='wagon'&&active(s,e,'network'))v*=1.4;return v;}
-function travel(s,e,target,range=0.65){
+function travel(s,e,target,range=0.65,finalGround=false){
  if(dist(e,target)<=range){e.path=[];return true;}
  const key=`${Math.floor(target.x)},${Math.floor(target.y)},${range},${s.navVersion}`;
- if(!e.path.length||e.pathKey!==key){if(e.retryPath&&e.retryPath>s.tick)return false;e.path=path(s,e,target,range);e.pathKey=key;if(!e.path.length){e.retryPath=s.tick+20;return false;}}
+ if(!e.path.length||e.pathKey!==key){if(e.retryPath&&e.retryPath>s.tick)return false;e.path=path(s,e,target,range,finalGround);e.pathKey=key;if(!e.path.length){e.retryPath=s.tick+20;return false;}}
  let remaining=speed(s,e)*DT;
- while(e.path.length&&remaining>0){const next=e.path[0];if(!navigationStep(s,e,e.x,e.y,next.x,next.y)){e.path=[];e.retryPath=0;break;}const d=dist(e,next);if(d>0){e.dir=(Math.round(Math.atan2(next.y-e.y,next.x-e.x)/(Math.PI/4))+8)%8;}if(d<=remaining){e.x=next.x;e.y=next.y;e.path.shift();remaining-=d;}else{e.x+=(next.x-e.x)/d*remaining;e.y+=(next.y-e.y)/d*remaining;remaining=0;}}
- e.state='walk';return dist(e,target)<=range;
+ while(e.path.length&&remaining>0){const next=e.path[0];if(!navigationStep(s,e,e.x,e.y,next.x,next.y)||next.finalGround&&!groundSegment(s,e,e,next)){e.path=[];e.retryPath=0;break;}const d=dist(e,next);if(d>0){e.dir=(Math.round(Math.atan2(next.y-e.y,next.x-e.x)/(Math.PI/4))+8)%8;}if(d<=remaining){e.x=next.x;e.y=next.y;e.path.shift();remaining-=d;}else{e.x+=(next.x-e.x)/d*remaining;e.y+=(next.y-e.y)/d*remaining;remaining=0;}}
+ e.state='walk';const arrived=dist(e,target)<=range;if(finalGround&&arrived)e.path=[];return arrived;
 }
 function updateFog(s){
  const {width:w,height:h}=s.map;
@@ -242,8 +250,8 @@ function tickUnit(s,e){
  else if(o?.type==='gather')gather(s,e,s.map.resources.find(r=>r.id===o.target));
  else if(o?.type==='load'||o?.type==='unload'){const t=get(s,o.target);if(!t)e.order=null;else transfer(s,e,t,o.type);}
  else if(o?.type==='attack'){const t=get(s,o.target);if(!t)e.order=null;else if(visible(s,e.owner,t)){o.lastX=t.x;o.lastY=t.y;attack(s,e,t);}else if(travel(s,e,{x:o.lastX,y:o.lastY},0.8))e.order=null;}
- else if(o?.type==='move'){if(travel(s,e,o,0.7))e.order=null;}
- else if(o?.type==='attackMove'){const t=d.damage?nearestEnemy(s,e,Math.min(d.vision,7)):null;if(t)attack(s,e,t);else if(travel(s,e,o,0.7))e.order=null;}
+ else if(o?.type==='move'){if(travel(s,e,o,0.7,true))e.order=null;}
+ else if(o?.type==='attackMove'){const t=d.damage?nearestEnemy(s,e,Math.min(d.vision,7)):null;if(t)attack(s,e,t);else if(travel(s,e,o,0.7,true))e.order=null;}
  else if(d.damage>0&&e.type!=='villager'&&e.type!=='king'){const t=nearestEnemy(s,e,o?.type==='hold'||e.type==='general'?d.range:6);if(t)attack(s,e,t);}
  if(e.x!==previous.x||e.y!==previous.y)e.lastMovedTick=s.tick;
 }

@@ -16,3 +16,17 @@ test('building side cells and changed dynamic blockers prevent corner cutting',(
  s.entities.push({id:s.nextId++,type:'wall',kind:'building',owner:1,hp:200,maxHp:200,x:11.5,y:10.5,queue:[],cargo:{food:0},cooldown:0});s.navVersion++;
  const before={x:u.x,y:u.y};step(s);assert.ok(u.x<=before.x||u.y<=before.y,'blocked diagonal cannot continue through building corner');
 });
+test('reachable integer and fractional ground moves complete within unchanged arrival range',()=>{
+ for(const target of [{x:12,y:12},{x:12.03,y:12.02}]){const a=arena(),b=arena();for(const {s,u} of [a,b])move(s,u,target.x,target.y);
+  for(let i=0;i<100;i++){step(a.s);step(b.s);assert.equal(hashState(a.s),hashState(b.s));}
+  assert.equal(a.u.order,null);assert.ok(Math.hypot(a.u.x-target.x,a.u.y-target.y)<=.7);assert.equal(a.u.path.length,0);
+ }
+});
+test('unreachable final ground point cannot cut a blocked terrain corner or building interior',()=>{
+ const {s,u}=arena();s.map.tiles[12*s.map.width+12]='mountain';move(s,u,12,12);for(let i=0;i<120;i++)step(s);assert.ok(u.order,'unreachable destination retains fallback semantics');assert.notEqual(Math.floor(u.x)+Math.floor(u.y)*s.map.width,12+12*s.map.width);
+ const a=arena();a.s.entities.push({id:a.s.nextId++,type:'wall',kind:'building',owner:1,hp:200,maxHp:200,x:12,y:12,queue:[],cargo:{food:0},cooldown:0});a.s.navVersion++;move(a.s,a.u,12.05,12.05);
+ for(let i=0;i<120;i++){step(a.s);assert.ok(Math.abs(a.u.x-12)>=.6||Math.abs(a.u.y-12)>=.6,'never enters wall footprint');}assert.ok(a.u.order);
+});
+test('ground attack-move without an acquired enemy completes at an integer target',()=>{
+ const {s,u}=arena();assert.equal(command(s,0,{type:'attackMove',ids:[u.id],x:12,y:12}).ok,true);for(let i=0;i<100;i++)step(s);assert.equal(u.order,null);assert.ok(Math.hypot(u.x-12,u.y-12)<=.7);assert.equal(u.path.length,0);
+});

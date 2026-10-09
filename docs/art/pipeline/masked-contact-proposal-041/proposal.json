@@ -1,0 +1,54 @@
+{
+  "schema": "rds-masked-contact-proposal/v1",
+  "status": "OPTIONAL_PREPARATION_ONLY_REQUIRES_HUMAN_API_MODEL_SELECTION",
+  "callsMade": 0,
+  "apiCallsMade": 0,
+  "keyInspected": false,
+  "maxFutureCalls": 1,
+  "maxRetries": "0 manual art retries; SDK network retry count outside exposed CLI control",
+  "workerModel": "gpt-6.1-sol",
+  "workerReasoning": "low",
+  "futureImageModel": "gpt-image-1.5 ONLY IF explicitly human selected; not silently selected",
+  "source": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-walk-ESE-033/F00-raw.png",
+    "sha256": "4a7d287bc844b02d00b38074f1b59e3ce41e109b30891c20b3026a8965c6041c",
+    "role": "FIRST_IMAGE complete unchanged selected033F00"
+  },
+  "mask": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/masked-contact-proposal-041/F04-lowerbody-mask.png",
+    "sha256": "04a3b75e1621256b77c1d0f0ee4cd58c2f74d9c222f9477d46b68bfae74ad6de",
+    "canvas": [
+      1254,
+      1254
+    ],
+    "alpha": {
+      "y0to679": 255,
+      "y680to1253": 0
+    },
+    "type": "AUTHORING_MASK whole lowerbody; not selectedart/not limb extraction"
+  },
+  "overlay": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/masked-contact-proposal-041/mask-fixed89-overlay.png",
+    "sha256": "f4cca687f9aebc2bd7d2c6bed63f4d70230b0e873e018696a2a67107cf56b7e2",
+    "scale": "one fullcanvas89/1254; no bboxfit"
+  },
+  "cli": {
+    "path": "/home/kieu-hoang-quan/.codex/skills/.system/imagegen/scripts/image_gen.py",
+    "sha256": "b4345cf835e5b593b97df6bb2b70bda493b8a97eee4cabbc99b2fa57dba9b448",
+    "modified": false,
+    "executed": false
+  },
+  "requirements": [
+    "Explicit human CLI/API/image-model selection before charge",
+    "Local OPENAI_API_KEY configured only after human selection; no key checked",
+    "One logical CLI edit invocation/0manual art retries. SDK network retries outside exposed control; totalHTTPattempts/charges not guaranteed.",
+    "Preserve native output first; candidate held pending existing uniform wholecanvas normalization feasibility, no bboxfit/perframeadjust/pixelrepair"
+  ],
+  "guarantees": [],
+  "limitations": [
+    "Mask is prompt guidance, no exact untouchedpixel/boundary guarantee",
+    "Mask does not establish naturalmotion/contact/footlock",
+    "Upperarms unchanged may not reverse counter-swing; proposed lowerbody pilot only",
+    "No new artwork/generated frame yet"
+  ]
+}

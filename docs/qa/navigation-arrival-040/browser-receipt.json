@@ -1,0 +1,58 @@
+{
+  "url": "http://127.0.0.1:33487",
+  "healthBefore": {
+    "ok": true,
+    "rooms": 0
+  },
+  "arrival": {
+    "id": 15,
+    "tick": 36,
+    "x": 12.456888159800531,
+    "y": 24.45688815980053,
+    "order": null,
+    "requested": [
+      12,
+      24
+    ],
+    "range": 0.7
+  },
+  "pauseTick": 11,
+  "stop": {
+    "tick": 41,
+    "unit": {
+      "id": 15,
+      "owner": 0,
+      "type": "infantry",
+      "kind": "unit",
+      "x": 12.571790065615275,
+      "y": 24.461637058634956,
+      "hp": 125,
+      "maxHp": 125,
+      "food": 39.72841599999991,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "idle",
+      "dir": 0,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "starving": 0,
+      "lastMovedTick": 39,
+      "order": null
+    }
+  },
+  "status": "ACTUAL_GROUND_MOVE_ARRIVAL_PAUSE_RESUME_STOP_PASS",
+  "browserVersion": "151.0.7922.34",
+  "healthAfter": {
+    "ok": true,
+    "rooms": 0
+  },
+  "roomsAfterClose": 0,
+  "listeningAfterClose": false,
+  "errors": []
+}

@@ -1,0 +1,14 @@
+✔ open diagonal uses distance-optimal sustained D1 and repeatable authoritative states (98.922876ms)
+✔ terrain side cells prevent diagonal corner cutting even when destination is legal (2.140846ms)
+✔ building side cells and changed dynamic blockers prevent corner cutting (3.662695ms)
+✔ reachable integer and fractional ground moves complete within unchanged arrival range (232.298193ms)
+✔ unreachable final ground point cannot cut a blocked terrain corner or building interior (95.966363ms)
+✔ ground attack-move without an acquired enemy completes at an integer target (20.583189ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 504.297566
