@@ -1,0 +1,55 @@
+{
+  "status": "PASS_PUBLIC_NEW_CROWD_BOTH_MAPS",
+  "results": [
+    {
+      "browser": "chromium",
+      "map": "delta",
+      "mode": "online",
+      "passed": true,
+      "code": "603E6D",
+      "peerBrowser": "firefox",
+      "forcedPublicRelayIP": null,
+      "combatWinner": 0,
+      "combatWallSeconds": 27.146,
+      "reconnect": true,
+      "rematch": true,
+      "initialTickHost": 3,
+      "lastLoopSampleTickHost": 571,
+      "confirmedVictoryTickPeer": 571,
+      "errors": []
+    },
+    {
+      "browser": "chromium",
+      "map": "coast",
+      "mode": "online",
+      "passed": true,
+      "code": "6EB823",
+      "peerBrowser": "firefox",
+      "forcedPublicRelayIP": null,
+      "combatWinner": 0,
+      "combatWallSeconds": 56.957,
+      "reconnect": true,
+      "rematch": true,
+      "initialTickHost": 6,
+      "lastLoopSampleTickHost": 578,
+      "confirmedVictoryTickPeer": 587,
+      "errors": []
+    }
+  ],
+  "expectedBundleSHA256": "f85cdd520aa1fc133fe98eb2542a917600206fa27fa9dd16ca1e591fef3ea3e7",
+  "normalTLS": true,
+  "attemptsPerMap": 1,
+  "retries": 0,
+  "healthAfter": {
+    "ok": true,
+    "rooms": 0
+  },
+  "service": "ActiveState=active\nMainPID=157023\n",
+  "sessions": {
+    "10737": "terminal existingDelta receipt",
+    "28228": "exit0 Coast"
+  },
+  "browsersClosed": true,
+  "productionChangedBy089": false,
+  "externalDeviceWANFinalArtClaim": false
+}

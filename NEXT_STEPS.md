@@ -1,3 +1,19 @@
+## Current088/089 — crowd mechanics deployed; new public lifecycle validation
+
+Continue project work without quota polling or percentage-based stopping. Exact gpt-6.1-sol / low remains required for code/art workers; parallel work is authorized. Older snapshots below are historical.
+
+084 resolves confirmed planner starvation, actual-position gathering contact and four border-arrival cases while preserving speeds, interaction ranges, attack anchors, food costs and tick rate.085 matched staged build passes all88 original tests, including six AI victories and both naval logistics regressions.087 adds ten durable crowd regressions;088 executes the readable module10/10 before installation. The tests are meaningful functional evidence, not final graphical acceptance.
+
+086 actual ordinary UI two-browser economy produces22 soldiers each, rallies45 viewport military at defaultzoom1.08 and records30seconds of combat, errors0. RAF sample p50/p95=16.7/33.4ms and renderer-work p50/p95=6.4/9.8ms are same-host observed samples, not a general performance guarantee. Screenshots show better separated bodies/rings at the sides while the ford center still has heavy projected overlap. Review remains SAMPLES_ONLY; original recordings and custody hashes are preserved locally, with final dense visual acceptance open.
+
+088 is now PUBLIC DEVELOPMENT at https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/ (optional illustrated candidate ?art=work). Exact tested index-ByZVQkbs.js SHAf85cdd520aa1fc133fe98eb2542a917600206fa27fa9dd16ca1e591fef3ea3e7 matches canonical sharedsim SHA28e37b63ee39bbe1440741fa0afed3d9f20797831f666c0ff03d8299a8eb609c. Rooms0 install/restart binds source to newPID157023/start14:55:37+07; matching old069 source/build/archive remains preserved for rollback. Default placeholders and optional CANDIDATE labels remain unchanged.
+
+089 actual public normalTLS Chromium151/Firefox153 Delta 1v1 already passes invitation/ready/reload-reconnect/ordinary General combat victory tick571/rematch/newmatch/menus/errors0 on the exact new bundle. Coast now also passes: confirmed victory tick587, real reload/reconnect/rematch/newmatch/menus/errors0, exact bundle. Both browser pairs are closed and public health shows rooms0. Do not repeat either completed order.090 ONE current-public Firefox Coast easy human-vs-AI offline-after-load match is live through the unchanged ordinary UI guarded-artillery harness; inspect its actual process/receipt before resuming. No090 AI result is claimed before its actual receipt.091 independently investigates demonstrated missing command-actor liveness guards in an isolated candidate; no further public source update yet.
+
+041 single masked gpt-image-1.5 edit remains authorized, APIcalls0, OPENAI_API_KEY absent at current presence-only check; no secret requests or repeated mode approval. Owner032 South gathering acceptance stands. D0 walk and full realistic illustrated roster/actions/maps remain unfinished, with no blind held-art retries, limb textures, 3D intermediates or broad fanout. Full game NOT COMPLETE.
+
+---
+
 ## Current083 — fair detours fixed; real contact defect being corrected
 
 Latest human instruction removes quota polling and percentage stopping; continue the project with parallel exact Sol6.1Low workers. Public development069 ping fix remains verified and running (9a7e…ceff5); live shared simulation is unchanged and still permits stacking.

@@ -1,0 +1,61 @@
+{
+  "status": "PASS_NARROW_ACTUAL_DENSE_GATE_VISUAL_SAMPLES_HELD",
+  "attempts": 1,
+  "retries": 0,
+  "bundleSHA256": "f85cdd520aa1fc133fe98eb2542a917600206fa27fa9dd16ca1e591fef3ea3e7",
+  "density": {
+    "player": 0,
+    "tick": 3949,
+    "camera": {
+      "x": 32,
+      "y": 24,
+      "zoom": 1.08
+    },
+    "visibility": "visible",
+    "rafIntervalsMs": [],
+    "frameCostMs": 7.699999999254942,
+    "snapshotCloneMs": 1.1000000014901161,
+    "observedEntities": 52,
+    "observedMilitary": 40,
+    "viewportEntities": 47,
+    "viewportMilitary": 40,
+    "viewportAttackingMilitary": 6,
+    "terrainCache": {
+      "builds": 1,
+      "draws": 8526,
+      "pixels": 5169280
+    },
+    "art": 17,
+    "resources": {
+      "wood": 940,
+      "food": 767.8378560001031,
+      "iron": 1070
+    },
+    "ownMilitary": 23,
+    "winner": null
+  },
+  "peaks": {
+    "viewportMilitary": 45,
+    "viewportAttackingMilitary": 6
+  },
+  "raf": {
+    "count": 19439,
+    "p50": 16.70000000001164,
+    "p95": 33.400000000001455
+  },
+  "frameCost": {
+    "count": 458,
+    "p50": 6.399999998509884,
+    "p95": 9.800000000745058
+  },
+  "finalTick": 4593,
+  "cleanup": {
+    "roomsBeforeClose": 1,
+    "roomsAfterClose": 0,
+    "listening": false,
+    "session95341": "exit0"
+  },
+  "visual": "SAMPLES_ONLY: fordcenter remains visuallydense/overlapped despite separated bodies/rings at front and sides; no continuousmotion/finalart/clearance measurement approval",
+  "public069Unchanged": true,
+  "candidateLiveSimulationInjected": false
+}

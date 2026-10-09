@@ -1,0 +1,18 @@
+✔ crowd movement preserves held and reserved attackers, clearance and fixed tick speed (31.995027ms)
+✔ 30 unique destinations and body clearance; selected ID input order cannot change identity assignment (1.821574ms)
+✔ naval group destination diameter and selected ID stability (1.267522ms)
+✔ blocked recruitment retains completed paid queue; one freed exit admits exactly once (7.795612ms)
+✔ one legal occupied-clear shore slot gives partial unload; remaining cargo pending then resumes after freed (1.436978ms)
+✔ actual worker outside gather radius despite qualifying start tile reaches food contact (7.11111ms)
+✔ visible enemy internal detour route does not leak through filtered view (1.87217ms)
+✔ planner budget exhaustion cannot prevent independent unobstructed movement (1.847429ms)
+✔ persistent blocked requesters all receive actual planner admission (448.307388ms)
+✔ whole edge formations retain slots and original arrival range (931.885493ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1487.163564

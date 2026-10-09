@@ -1,0 +1,53 @@
+--- frozen077/sim-draft.js
++++ isolated083/sim-draft.js
+@@ -112,29 +112,31 @@
+  const dx=to.x-from.x,dy=to.y-from.y,dd=dx*dx+dy*dy;
+  for(const id of [...ids].sort((a,b)=>a-b)){if(id===e.id)continue;const u=s.entities[s.crowdIndex.positions[id]];if(!u||!living(u)||!!UNITS[u.type]?.naval!==!!UNITS[e.type]?.naval)continue;stats.bodyChecks++;const q=dd?Math.max(0,Math.min(1,((u.x-from.x)*dx+(u.y-from.y)*dy)/dd)):0;if(Math.hypot(from.x+q*dx-u.x,from.y+q*dy-u.y)<crowdRadius(e)+crowdRadius(u)-1e-8)return false;}return true;
+ }
+-function crowdPatch(s,e,goal){
++function contactCandidates(s,e,target,range){const r=range-1e-7,angles=[Math.atan2(e.y-target.y,e.x-target.x)];for(let i=0;i<32;i++)angles.push(i*Math.PI/16);for(const u of s.entities){if(u.id===e.id||u.kind!=='unit'||!living(u))continue;const d=dist(u,target),R=crowdRadius(e)+crowdRadius(u)+1e-7;if(d>0&&Math.abs(r-R)<=d&&d<=r+R){const angle=Math.atan2(u.y-target.y,u.x-target.x),delta=Math.acos(Math.max(-1,Math.min(1,(d*d+r*r-R*R)/(2*d*r))));angles.push(angle+delta,angle-delta);}}const candidates=[{x:target.x,y:target.y},...angles.map(a=>({x:target.x+r*Math.cos(a),y:target.y+r*Math.sin(a)}))];return candidates.filter(q=>crowdSweep(s,e,q,q,true)).sort((a,b)=>dist(e,a)-dist(e,b)||a.x-b.x||a.y-b.y);}
++function crowdPatch(s,e,goal,terminal=null){
+  const stats=s.crowdStats;s.crowdQueue??=[];if(!s.crowdQueue.some(q=>q.id===e.id))s.crowdQueue.push({id:e.id,requestedTick:s.tick,signature:JSON.stringify(e.order)});s.crowdQueue.sort((a,b)=>a.requestedTick-b.requestedTick||a.id-b.id);if(stats.plans>=4||stats.plannerEdges>=4096||s.crowdQueue[0]?.id!==e.id){stats.waits++;return null;}s.crowdQueue.shift();stats.plans++;stats.eligible.push(e.id);stats.admissions.push({id:e.id,tick:s.tick});e.crowdRetry=s.tick+10;
++ const contacts=terminal?contactCandidates(s,e,terminal.target,terminal.range):null;let connector=null;
+  const ox=Math.round(e.x*2)/2-4.5,oy=Math.round(e.y*2)/2-4.5,nodes=[];
+  for(let y=0;y<19;y++)for(let x=0;x<19;x++)nodes.push({x:ox+x*.5,y:oy+y*.5});
+  const cost=new Float64Array(361).fill(Infinity),parent=new Int32Array(361).fill(-2),open=[];
+  for(let i=0;i<nodes.length;i++)if(dist(e,nodes[i])<=.72&&crowdSweep(s,e,e,nodes[i],true)){cost[i]=dist(e,nodes[i]);parent[i]=-1;open.push(i);}
+  let found=-1;const done=new Uint8Array(361);
+  while(open.length){open.sort((a,b)=>(cost[a]+dist(nodes[a],goal))-(cost[b]+dist(nodes[b],goal))||a-b);const i=open.shift();if(done[i])continue;done[i]=1;stats.expansions++;
+- if(dist(nodes[i],goal)<=.72&&crowdSweep(s,e,nodes[i],goal,true)){found=i;break;}
++ if(terminal){connector=contacts.find(q=>dist(nodes[i],q)<=.72&&crowdSweep(s,e,nodes[i],q,true));if(connector){found=i;break;}}else if(dist(nodes[i],goal)<=.72&&crowdSweep(s,e,nodes[i],goal,true)){found=i;break;}
+  const x=i%19,y=Math.floor(i/19);
+  for(const [dx,dy] of [[1,0],[0,1],[-1,0],[0,-1],[1,1],[-1,1],[-1,-1],[1,-1]]){const xx=x+dx,yy=y+dy,j=yy*19+xx;if(xx<0||yy<0||xx>=19||yy>=19||done[j]||!crowdSweep(s,e,nodes[i],nodes[j],true))continue;const c=cost[i]+dist(nodes[i],nodes[j]);if(c>=cost[j])continue;cost[j]=c;parent[j]=i;open.push(j);}
+  }
+- if(found<0){stats.waits++;return null;}const route=[{...goal}];for(let i=found;i>=0;i=parent[i])route.push(nodes[i]);route.reverse();return route;
++ if(found<0){stats.waits++;return null;}const route=[{...(connector||goal)}];for(let i=found;i>=0;i=parent[i])route.push(nodes[i]);route.reverse();return route;
+ }
+ function travel(s,e,target,range=0.65,finalGround=false){
+  if(dist(e,target)<=range){e.path=[];e.crowdRoute=[];return true;}
+  const key=`${Math.floor(target.x)},${Math.floor(target.y)},${range},${s.navVersion}`;
+- if(!e.path.length||e.pathKey!==key){if(e.retryPath&&e.retryPath>s.tick)return false;e.path=path(s,e,target,range,finalGround);e.pathKey=key;e.crowdRoute=[];if(!e.path.length){e.retryPath=s.tick+20;return false;}}
++ if(!e.path.length||e.pathKey!==key){if(e.retryPath&&e.retryPath>s.tick)return false;e.path=path(s,e,target,range,finalGround);e.pathKey=key;e.crowdRoute=[];if(!e.path.length){const contacts=contactCandidates(s,e,target,range),direct=contacts.find(q=>crowdSweep(s,e,e,q));if(direct)e.path=[direct];else{e.path=[{x:target.x,y:target.y}];}}}
+  let remaining=speed(s,e)*DT;
+  while(e.path.length&&remaining>1e-8){let next=e.crowdRoute?.[0]||e.path[0];const d=dist(e,next),amount=Math.min(d,remaining),to=d?{x:e.x+(next.x-e.x)*amount/d,y:e.y+(next.y-e.y)*amount/d}:next;
+  if(!crowdSweep(s,e,e,to)){
+   e.crowdRoute=[];if((e.crowdRetry??0)>s.tick)break;
+-  const goal=[...e.path].reverse().find(q=>dist(e,q)<=4&&dist(e,q)>1)||e.path[0];const route=crowdPatch(s,e,goal);if(!route)break;e.crowdRoute=route;e.crowdGoal={...goal};continue;
++  const goal=[...e.path].reverse().find(q=>dist(e,q)<=4&&dist(e,q)>1)||e.path[0];const terminal=goal===e.path.at(-1)?{target,range}:null;const route=crowdPatch(s,e,goal,terminal);if(!route)break;e.crowdRoute=route;e.crowdGoal={...goal};continue;
+  }
+  if(d>0)e.dir=(Math.round(Math.atan2(to.y-e.y,to.x-e.x)/(Math.PI/4))+8)%8;const old={x:e.x,y:e.y};e.x=to.x;e.y=to.y;crowdUpdate(s,e,old);remaining-=amount;
+  if(d<=amount+1e-8){if(e.crowdRoute?.length){e.crowdRoute.shift();if(!e.crowdRoute.length){const i=e.path.findIndex(q=>q.x===e.crowdGoal.x&&q.y===e.crowdGoal.y);if(i>=0)e.path.splice(0,i+1);}}else e.path.shift();}
+@@ -168,7 +170,12 @@
+  const ids=[...new Set(c.ids)].sort((a,b)=>a-b),es=ids.map(id=>get(s,id));if(es.some(e=>!e||e.owner!==p||e.kind!=='unit'||e.embarked))return reject('Invalid unit ownership');
+  if(['move','attackMove'].includes(c.type)){
+   if(!bounds(s,c.x,c.y))return reject('Invalid destination');if(es.some(e=>active(s,e,'shock')))return reject('Assault commitment prevents retreat orders');
+-  const spacing=Math.max(.75,...es.map(e=>2*crowdRadius(e)+.05)),rows=Math.ceil(es.length/5);for(const [i,e] of es.entries()){const offset=es.length>1?{x:(i%5-2)*spacing,y:(Math.floor(i/5)-(rows-1)/2)*spacing}:{x:0,y:0};const target={x:Math.max(0.5,Math.min(s.map.width-0.5,c.x+offset.x)),y:Math.max(0.5,Math.min(s.map.height-0.5,c.y+offset.y))};cancelAttack(e);e.order={type:c.type,...target};e.path=[];e.retryPath=0;e.state='walk';}return {ok:true};
++  const spacing=Math.max(.75,...es.map(e=>2*crowdRadius(e)+.05)),rows=Math.ceil(es.length/5);
++  const offsets=es.map((e,i)=>es.length>1?{x:(i%5-2)*spacing,y:(Math.floor(i/5)-(rows-1)/2)*spacing}:{x:0,y:0});
++  const minX=Math.min(...offsets.map(o=>o.x)),maxX=Math.max(...offsets.map(o=>o.x)),minY=Math.min(...offsets.map(o=>o.y)),maxY=Math.max(...offsets.map(o=>o.y));
++  if(maxX-minX>s.map.width-1||maxY-minY>s.map.height-1)return reject('Formation cannot fit map');
++  const center={x:Math.max(.5-minX,Math.min(s.map.width-.5-maxX,c.x)),y:Math.max(.5-minY,Math.min(s.map.height-.5-maxY,c.y))};
++  for(const [i,e] of es.entries()){const target={x:center.x+offsets[i].x,y:center.y+offsets[i].y};cancelAttack(e);e.order={type:c.type,...target};e.path=[];e.retryPath=0;e.state='walk';}return {ok:true};
+  }
+  if(c.type==='stop'||c.type==='hold'){if(es.some(e=>active(s,e,'shock')))return reject('Assault commitment is active');for(const e of es){cancelAttack(e);e.order=c.type==='hold'?{type:'hold'}:null;e.path=[];e.state='idle';}return {ok:true};}
+  if(c.type==='attack'){

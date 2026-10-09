@@ -1,0 +1,10 @@
+import {readFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+const dir=new URL('./',import.meta.url),meta=JSON.parse(await readFile(new URL('prepared.json',dir))),pins=JSON.parse(await readFile(new URL('live-before-pins.json',dir))),sha=async p=>createHash('sha256').update(await readFile(p)).digest('hex');
+for(const pin of pins)if(await sha(pin.path)!==pin.sha256)throw Error('Live disk drift requires new review '+pin.path);
+if(await sha(meta.rollbackArchive)!==meta.rollbackSHA256)throw Error('Rollback archive drift');
+if(await sha(meta.stage+'/sim.js')!==meta.candidateSimSHA256)throw Error('Candidate sim drift');
+if(await sha(meta.stage+'/dist/assets/index-ByZVQkbs.js')!==meta.candidateBundleSHA256)throw Error('Candidate bundle drift');
+for(const pin of JSON.parse(await readFile(new URL('candidate-stage-pins.json',dir))))if(await sha(pin.path)!==pin.sha256)throw Error('Candidate fulltree drift '+pin.path);
+const h=await(await fetch('http://127.0.0.1:3000/health')).json();if(!h.ok||h.rooms!==0)throw Error('Active rooms prohibit promotion/restart');
+console.log(JSON.stringify({status:'READ_ONLY_PREFLIGHT_PASS',health:h,candidateStage:meta.stage,approvalRequiredFromRootIntake:true}));

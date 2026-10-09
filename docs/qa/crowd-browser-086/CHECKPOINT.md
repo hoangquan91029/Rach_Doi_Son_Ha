@@ -1,0 +1,9 @@
+#086 terminal actual dense ordinaryUI narrow gate PASS / visual samples HELD
+
+Root085PASS authorized ONEactualrun,0retries. Exactisolatedstage /tmp/rds-crowd085-4o9zom4b/server imported withfrozen084candidate; exactindex-ByZVQkbs.js SHA f85cdd520aa1fc133fe98eb2542a917600206fa27fa9dd16ca1e591fef3ea3e7 pinned. No livegame/production069/deployment/sourcechanges orstate/resources/unit/command injection.
+
+TwoactualChromium peers1440×900/deviceScale1 pass17candidateassets/12portraits; sixvillagers2eachfood/wood/iron ordinarygathering/training build22nonGeneral military each. AcquiredF2cohorts livingownmilitaryonly/Ctrl2 recall exactsurvivingcohort. Ordinaryrally/attackmove atcentralford; defaultzoom1.08 unchanged. Actualdensity40military at tick3949; peak45/peakattacking6.30seconds opposingbattle captured to finaltick4593, no winnerclaim/errors0. RAF19439intervals p50/p9516.7/33.4ms; synchronousframecost458samples6.4/9.8ms. Observer/diagnosticclone overhead included; this is headlesssamehost candidateevidence, notexternaldevice/WAN/performancebudget acceptance.
+
+Normalzoom screenshots andtwooriginalWebM videos~51MiB retained actual/video; derived8s GIF brief-actual.gif preserves200..208seconds at8fps/720wide, original is1440wide. Onebriefactual-size screenshot +205s originalframe look is SAMPLES_ONLY: side/frontbodies andrings separable butfordcenter stillheavyoverlap; motion smoothness/continuousnaturalness cannot be established fromthose samples. Clipavailable forrootcontinuouslook. No finalart/unitanimation acceptance or measuredphysicalclearance claimed fromprojectedcounts.
+
+Harnessexecutionwall233.162s, ownedrunnerincludingvideoencodecleanup267.988s. Bothbrowsercontexts/videos finalized; owned44307 rooms1→0/listeningfalse/session95341exit0. Allprepared/executedSHA/order/rawtelemetry/screens/video/custody retained. Actualoneattempt terminal; no blindretry. Rootownscheckpoint/commit, productionservice unchanged.

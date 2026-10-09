@@ -1,0 +1,22 @@
+{
+  "status": "PREP_ONLY_NO_PROMOTION",
+  "timestamp": "2026-10-09T07:49:35.071562+00:00",
+  "stage": "/tmp/rds-crowd088-7ykc1g7o",
+  "tested085stage": "/tmp/rds-crowd085-4o9zom4b",
+  "candidateBundleSHA256": "f85cdd520aa1fc133fe98eb2542a917600206fa27fa9dd16ca1e591fef3ea3e7",
+  "candidateSimSHA256": "28e37b63ee39bbe1440741fa0afed3d9f20797831f666c0ff03d8299a8eb609c",
+  "parent084SHA256": "a9bd795003f34e1882ff8454b4177f2b3ad6b90b5da695f22dd4c0e9e459821f",
+  "publicURL": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net",
+  "publicAsset": "/assets/index-CtalOIcs.js",
+  "publicBundleSHA256": "9a7e0e1bd744063a86c065bcf1090c75dbc26c4ad6f0297ffade6fe9922ceff5",
+  "publicHealth": {
+    "ok": true,
+    "rooms": 0
+  },
+  "rollbackArchive": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/development-crowd-088/rollback-before-088.tar.gz",
+  "rollbackSHA256": "abb20bd32fa889ad5cd764d871923b99a1d9b29ef05ab4b57cf4841fa92667c8",
+  "service": "ActiveState=active\nActiveEnterTimestamp=Fri 2026-10-09 14:18:36 +07\nMainPID=137146\nExecStart={ path=/home/kieu-hoang-quan/.nvm/versions/node/v24.15.0/bin/node ; argv[]=/home/kieu-hoang-quan/.nvm/versions/node/v24.15.0/bin/node server/index.js ; ignore_errors=no ; start_time=[Fri 2026-10-09 14:18:36 +07] ; stop_time=[n/a] ; pid=137146 ; code=(null) ; status=0/0 }\n",
+  "inMemoryBinding": "PID137146/start matches069verifiedrestart; process-loadedsource cannot be directly rehashed. Currentdisk pins preserved; no new runtimeverification orrestart.",
+  "testedCandidateInputsVerified": true,
+  "promotionPending": "086actualdense and087durabletestintake/rootapproval"
+}

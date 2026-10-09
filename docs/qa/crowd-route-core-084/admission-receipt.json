@@ -1,0 +1,362 @@
+{
+  "source": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/crowd-route-core-084/sim-draft.js",
+  "sourceSHA256": "a9bd795003f34e1882ff8454b4177f2b3ad6b90b5da695f22dd4c0e9e459821f",
+  "radiiContract": {
+    "land": 0.28,
+    "naval": 0.4
+  },
+  "method": "Authoritative unit regression fixtures with deliberate fixture state; ordinary command/step API. Not browser or normal gameplay acceptance.",
+  "results": [
+    {
+      "name": "30 unique destinations and body clearance; selected ID input order cannot change identity assignment",
+      "status": "PASS",
+      "evidence": {
+        "dest": [
+          {
+            "id": 35,
+            "x": 28.5,
+            "y": 18.125
+          },
+          {
+            "id": 36,
+            "x": 29.25,
+            "y": 18.125
+          },
+          {
+            "id": 37,
+            "x": 30,
+            "y": 18.125
+          },
+          {
+            "id": 38,
+            "x": 30.75,
+            "y": 18.125
+          },
+          {
+            "id": 39,
+            "x": 31.5,
+            "y": 18.125
+          },
+          {
+            "id": 40,
+            "x": 28.5,
+            "y": 18.875
+          },
+          {
+            "id": 41,
+            "x": 29.25,
+            "y": 18.875
+          },
+          {
+            "id": 42,
+            "x": 30,
+            "y": 18.875
+          },
+          {
+            "id": 43,
+            "x": 30.75,
+            "y": 18.875
+          },
+          {
+            "id": 44,
+            "x": 31.5,
+            "y": 18.875
+          },
+          {
+            "id": 45,
+            "x": 28.5,
+            "y": 19.625
+          },
+          {
+            "id": 46,
+            "x": 29.25,
+            "y": 19.625
+          },
+          {
+            "id": 47,
+            "x": 30,
+            "y": 19.625
+          },
+          {
+            "id": 48,
+            "x": 30.75,
+            "y": 19.625
+          },
+          {
+            "id": 49,
+            "x": 31.5,
+            "y": 19.625
+          },
+          {
+            "id": 50,
+            "x": 28.5,
+            "y": 20.375
+          },
+          {
+            "id": 51,
+            "x": 29.25,
+            "y": 20.375
+          },
+          {
+            "id": 52,
+            "x": 30,
+            "y": 20.375
+          },
+          {
+            "id": 53,
+            "x": 30.75,
+            "y": 20.375
+          },
+          {
+            "id": 54,
+            "x": 31.5,
+            "y": 20.375
+          },
+          {
+            "id": 55,
+            "x": 28.5,
+            "y": 21.125
+          },
+          {
+            "id": 56,
+            "x": 29.25,
+            "y": 21.125
+          },
+          {
+            "id": 57,
+            "x": 30,
+            "y": 21.125
+          },
+          {
+            "id": 58,
+            "x": 30.75,
+            "y": 21.125
+          },
+          {
+            "id": 59,
+            "x": 31.5,
+            "y": 21.125
+          },
+          {
+            "id": 60,
+            "x": 28.5,
+            "y": 21.875
+          },
+          {
+            "id": 61,
+            "x": 29.25,
+            "y": 21.875
+          },
+          {
+            "id": 62,
+            "x": 30,
+            "y": 21.875
+          },
+          {
+            "id": 63,
+            "x": 30.75,
+            "y": 21.875
+          },
+          {
+            "id": 64,
+            "x": 31.5,
+            "y": 21.875
+          }
+        ]
+      }
+    },
+    {
+      "name": "naval group destination diameter and selected ID stability",
+      "status": "PASS",
+      "evidence": {
+        "destinations": [
+          {
+            "id": 35,
+            "x": 28.3,
+            "y": 17.875
+          },
+          {
+            "id": 36,
+            "x": 29.15,
+            "y": 17.875
+          },
+          {
+            "id": 37,
+            "x": 30,
+            "y": 17.875
+          },
+          {
+            "id": 38,
+            "x": 30.85,
+            "y": 17.875
+          },
+          {
+            "id": 39,
+            "x": 31.7,
+            "y": 17.875
+          },
+          {
+            "id": 40,
+            "x": 28.3,
+            "y": 18.725
+          },
+          {
+            "id": 41,
+            "x": 29.15,
+            "y": 18.725
+          },
+          {
+            "id": 42,
+            "x": 30,
+            "y": 18.725
+          },
+          {
+            "id": 43,
+            "x": 30.85,
+            "y": 18.725
+          },
+          {
+            "id": 44,
+            "x": 31.7,
+            "y": 18.725
+          },
+          {
+            "id": 45,
+            "x": 28.3,
+            "y": 19.575
+          },
+          {
+            "id": 46,
+            "x": 29.15,
+            "y": 19.575
+          },
+          {
+            "id": 47,
+            "x": 30,
+            "y": 19.575
+          },
+          {
+            "id": 48,
+            "x": 30.85,
+            "y": 19.575
+          },
+          {
+            "id": 49,
+            "x": 31.7,
+            "y": 19.575
+          },
+          {
+            "id": 50,
+            "x": 28.3,
+            "y": 20.425
+          },
+          {
+            "id": 51,
+            "x": 29.15,
+            "y": 20.425
+          },
+          {
+            "id": 52,
+            "x": 30,
+            "y": 20.425
+          },
+          {
+            "id": 53,
+            "x": 30.85,
+            "y": 20.425
+          },
+          {
+            "id": 54,
+            "x": 31.7,
+            "y": 20.425
+          },
+          {
+            "id": 55,
+            "x": 28.3,
+            "y": 21.275
+          },
+          {
+            "id": 56,
+            "x": 29.15,
+            "y": 21.275
+          },
+          {
+            "id": 57,
+            "x": 30,
+            "y": 21.275
+          },
+          {
+            "id": 58,
+            "x": 30.85,
+            "y": 21.275
+          },
+          {
+            "id": 59,
+            "x": 31.7,
+            "y": 21.275
+          },
+          {
+            "id": 60,
+            "x": 28.3,
+            "y": 22.125
+          },
+          {
+            "id": 61,
+            "x": 29.15,
+            "y": 22.125
+          },
+          {
+            "id": 62,
+            "x": 30,
+            "y": 22.125
+          },
+          {
+            "id": 63,
+            "x": 30.85,
+            "y": 22.125
+          },
+          {
+            "id": 64,
+            "x": 31.7,
+            "y": 22.125
+          }
+        ]
+      }
+    },
+    {
+      "name": "blocked recruitment retains completed paid queue; one freed exit admits exactly once",
+      "status": "PASS",
+      "evidence": {
+        "paid": {
+          "wood": 525,
+          "food": 960,
+          "iron": 245
+        },
+        "recruit": 118
+      }
+    },
+    {
+      "name": "one legal occupied-clear shore slot gives partial unload; remaining cargo pending then resumes after freed",
+      "status": "PASS",
+      "evidence": {
+        "first": 36,
+        "second": 37
+      }
+    },
+    {
+      "name": "initial canonical living own units explicitly satisfy proposed clearance, or report initial overlap policy hold",
+      "status": "PASS",
+      "evidence": {
+        "maps": [
+          "delta",
+          "coast"
+        ],
+        "overlaps": [],
+        "radii": {
+          "land": 0.28,
+          "naval": 0.4
+        }
+      }
+    }
+  ]
+}

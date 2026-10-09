@@ -1,0 +1,114 @@
+{
+  "url": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net",
+  "timestamp": "2026-10-09T09:30:30.916Z",
+  "browserVersions": {
+    "chromium": "151.0.7922.34",
+    "firefox": "153.0"
+  },
+  "candidateEvidence": [
+    {
+      "url": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/?art=work",
+      "art": {
+        "enabled": true,
+        "phase": "CANDIDATE",
+        "quality": "CANDIDATE",
+        "groundDraws": 0,
+        "propDraws": 0,
+        "entityDraws": 0,
+        "walkDraws": 0,
+        "idleDraws": 0,
+        "lastWalk": null,
+        "gatherDraws": 0,
+        "lastGather": null,
+        "missing": [],
+        "pipeline": {
+          "status": "CANDIDATE",
+          "manifest": "ready",
+          "declared": 17,
+          "ready": 17,
+          "approved": 0,
+          "candidates": 17,
+          "failed": 0,
+          "skipped": 0,
+          "fallbacks": 0,
+          "failures": []
+        }
+      }
+    },
+    {
+      "url": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/join/6EB823?art=work",
+      "art": {
+        "enabled": true,
+        "phase": "CANDIDATE",
+        "quality": "CANDIDATE",
+        "groundDraws": 0,
+        "propDraws": 0,
+        "entityDraws": 0,
+        "walkDraws": 0,
+        "idleDraws": 0,
+        "lastWalk": null,
+        "gatherDraws": 0,
+        "lastGather": null,
+        "missing": [],
+        "pipeline": {
+          "status": "CANDIDATE",
+          "manifest": "ready",
+          "declared": 17,
+          "ready": 17,
+          "approved": 0,
+          "candidates": 17,
+          "failed": 0,
+          "skipped": 0,
+          "fallbacks": 0,
+          "failures": []
+        }
+      }
+    }
+  ],
+  "servedBundles": [
+    "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/assets/index-ByZVQkbs.js"
+  ],
+  "bundlePins": [
+    {
+      "url": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/assets/index-ByZVQkbs.js",
+      "bytes": 148758,
+      "sha256": "f85cdd520aa1fc133fe98eb2542a917600206fa27fa9dd16ca1e591fef3ea3e7"
+    },
+    {
+      "url": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/assets/index-ByZVQkbs.js",
+      "bytes": 148758,
+      "sha256": "f85cdd520aa1fc133fe98eb2542a917600206fa27fa9dd16ca1e591fef3ea3e7"
+    },
+    {
+      "url": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/assets/index-ByZVQkbs.js",
+      "bytes": 148758,
+      "sha256": "f85cdd520aa1fc133fe98eb2542a917600206fa27fa9dd16ca1e591fef3ea3e7"
+    }
+  ],
+  "websocketDelay": {
+    "enabled": false,
+    "configuredEachDirectionMs": 0,
+    "nominalAddedApplicationRoundtripMs": 0,
+    "method": "Playwright routeWebSocket connectToServer; ordered FIFO hold by arrival+configured delay. TLS/native connection establishment is not delayed; close is held in the same FIFO after prior messages. This is application-message delay, not WAN/network emulation. Forwarded counts denote send API calls; gameplay outcomes verify end-to-end use.",
+    "streams": []
+  },
+  "results": [
+    {
+      "browser": "chromium",
+      "map": "coast",
+      "mode": "online",
+      "passed": true,
+      "code": "6EB823",
+      "peerBrowser": "firefox",
+      "forcedPublicRelayIP": null,
+      "combatWinner": 0,
+      "combatWallSeconds": 56.957,
+      "reconnect": true,
+      "rematch": true,
+      "initialTickHost": 6,
+      "lastLoopSampleTickHost": 578,
+      "confirmedVictoryTickPeer": 587,
+      "errors": []
+    }
+  ]
+}

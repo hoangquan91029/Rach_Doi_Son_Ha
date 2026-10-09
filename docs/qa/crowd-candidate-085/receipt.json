@@ -1,0 +1,36 @@
+{
+  "status": "TERMINAL_TARGETED_COMPATIBILITY_FULL88_BUILD_PASS",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "low",
+  "stage": "/tmp/rds-crowd085-4o9zom4b",
+  "candidateDist": "/tmp/rds-crowd085-4o9zom4b/dist",
+  "parentSHA256": "a9bd795003f34e1882ff8454b4177f2b3ad6b90b5da695f22dd4c0e9e459821f",
+  "normalizedSHA256": "28e37b63ee39bbe1440741fa0afed3d9f20797831f666c0ff03d8299a8eb609c",
+  "firstCoast": {
+    "pass": 1,
+    "fail": 0,
+    "exitCode": 0
+  },
+  "fullSuite": {
+    "tests": 88,
+    "pass": 88,
+    "fail": 0,
+    "exitCode": 0,
+    "milliseconds": 82978.459679
+  },
+  "sixAI": "ALL_PASS_UNCHANGED240s",
+  "twoNaval": "BOTH_PASS_UNCHANGED240s_FOOD_LANDING",
+  "build": {
+    "exitCode": 0,
+    "bundle": [
+      {
+        "path": "/tmp/rds-crowd085-4o9zom4b/dist/assets/index-ByZVQkbs.js",
+        "bytes": 148758,
+        "sha256": "f85cdd520aa1fc133fe98eb2542a917600206fa27fa9dd16ca1e591fef3ea3e7"
+      }
+    ]
+  },
+  "sourcePinsReverified": true,
+  "ownedCleanup": "Node processes finished; no browser/server opened; staged tree retained for root nextstage",
+  "publicPromotion": false
+}

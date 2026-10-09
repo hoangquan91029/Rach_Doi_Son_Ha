@@ -1,0 +1,28 @@
+--- frozen083/sim-draft.js
++++ isolated084/sim-draft.js
+@@ -118,20 +118,21 @@
+  const contacts=terminal?contactCandidates(s,e,terminal.target,terminal.range):null;let connector=null;
+  const ox=Math.round(e.x*2)/2-4.5,oy=Math.round(e.y*2)/2-4.5,nodes=[];
+  for(let y=0;y<19;y++)for(let x=0;x<19;x++)nodes.push({x:ox+x*.5,y:oy+y*.5});
+- const cost=new Float64Array(361).fill(Infinity),parent=new Int32Array(361).fill(-2),open=[];
+- for(let i=0;i<nodes.length;i++)if(dist(e,nodes[i])<=.72&&crowdSweep(s,e,e,nodes[i],true)){cost[i]=dist(e,nodes[i]);parent[i]=-1;open.push(i);}
++ const escapes=[];for(const length of [.25,.5])for(let i=0;i<32;i++){const a=i*Math.PI/16,q={x:e.x+length*Math.cos(a),y:e.y+length*Math.sin(a)};if(crowdSweep(s,e,e,q,true))escapes.push(q);}if(contacts){for(const q of escapes){const endpoint=contacts.find(c=>crowdSweep(s,e,q,c,true));if(endpoint)return [q,endpoint];}}
++ const seeds={},cost=new Float64Array(361).fill(Infinity),parent=new Int32Array(361).fill(-2),open=[];
++ for(let i=0;i<nodes.length;i++){const from=[{x:e.x,y:e.y},...escapes].find(q=>dist(q,nodes[i])<=.72&&crowdSweep(s,e,q,nodes[i],true));if(from){cost[i]=dist(e,from)+dist(from,nodes[i]);parent[i]=-1;seeds[i]=from;open.push(i);}}
+  let found=-1;const done=new Uint8Array(361);
+  while(open.length){open.sort((a,b)=>(cost[a]+dist(nodes[a],goal))-(cost[b]+dist(nodes[b],goal))||a-b);const i=open.shift();if(done[i])continue;done[i]=1;stats.expansions++;
+  if(terminal){connector=contacts.find(q=>dist(nodes[i],q)<=.72&&crowdSweep(s,e,nodes[i],q,true));if(connector){found=i;break;}}else if(dist(nodes[i],goal)<=.72&&crowdSweep(s,e,nodes[i],goal,true)){found=i;break;}
+  const x=i%19,y=Math.floor(i/19);
+  for(const [dx,dy] of [[1,0],[0,1],[-1,0],[0,-1],[1,1],[-1,1],[-1,-1],[1,-1]]){const xx=x+dx,yy=y+dy,j=yy*19+xx;if(xx<0||yy<0||xx>=19||yy>=19||done[j]||!crowdSweep(s,e,nodes[i],nodes[j],true))continue;const c=cost[i]+dist(nodes[i],nodes[j]);if(c>=cost[j])continue;cost[j]=c;parent[j]=i;open.push(j);}
+  }
+- if(found<0){stats.waits++;return null;}const route=[{...(connector||goal)}];for(let i=found;i>=0;i=parent[i])route.push(nodes[i]);route.reverse();return route;
++ if(found<0){stats.waits++;return null;}const route=[{...(connector||goal)}];for(let i=found;i>=0;i=parent[i]){route.push(nodes[i]);if(parent[i]===-1&&dist(e,seeds[i])>1e-8)route.push(seeds[i]);}route.reverse();return route;
+ }
+ function travel(s,e,target,range=0.65,finalGround=false){
+  if(dist(e,target)<=range){e.path=[];e.crowdRoute=[];return true;}
+  const key=`${Math.floor(target.x)},${Math.floor(target.y)},${range},${s.navVersion}`;
+- if(!e.path.length||e.pathKey!==key){if(e.retryPath&&e.retryPath>s.tick)return false;e.path=path(s,e,target,range,finalGround);e.pathKey=key;e.crowdRoute=[];if(!e.path.length){const contacts=contactCandidates(s,e,target,range),direct=contacts.find(q=>crowdSweep(s,e,e,q));if(direct)e.path=[direct];else{e.path=[{x:target.x,y:target.y}];}}}
++ if(!e.path.length||e.pathKey!==key){if(e.retryPath&&e.retryPath>s.tick)return false;e.path=path(s,e,target,range,finalGround);e.pathKey=key;e.crowdRoute=[];if(!e.path.length){const center={x:Math.floor(e.x)+.5,y:Math.floor(e.y)+.5};if(dist(center,target)<=range&&pass(s,e,center.x,center.y))e.path=[{x:target.x,y:target.y}];else{e.retryPath=s.tick+20;return false;}}}
+  let remaining=speed(s,e)*DT;
+  while(e.path.length&&remaining>1e-8){let next=e.crowdRoute?.[0]||e.path[0];const d=dist(e,next),amount=Math.min(d,remaining),to=d?{x:e.x+(next.x-e.x)*amount/d,y:e.y+(next.y-e.y)*amount/d}:next;
+  if(!crowdSweep(s,e,e,to)){

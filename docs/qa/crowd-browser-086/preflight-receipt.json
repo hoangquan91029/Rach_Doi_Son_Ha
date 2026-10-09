@@ -1,0 +1,16 @@
+{
+  "status": "PREPARED_UNCALLED",
+  "syntaxChecks": "PASS harness-prepared.mjs and run-owned-server.mjs",
+  "actualBrowser": false,
+  "build": false,
+  "ownedServer": false,
+  "rootExecutionRequired": true,
+  "sourceRecipe": {
+    "path": "scripts/browser-dense-baseline.mjs",
+    "sha256": "03c749fae45ad2c2b08e973183eb823ee7d9707a0cff1f331c0ffd772c918c4d"
+  },
+  "selectionSource": {
+    "path": "scripts/browser-ai-winning.mjs",
+    "sha256": "0e6ea6b48246d2a621eb4d7c2ab2594e5608ee12c9e8cc26a7601165227272c9"
+  }
+}

@@ -1,0 +1,11 @@
+# 083 terminal HOLD — actual-start contact regression passes; second edge fails
+
+ExactSol6.1Low, ONE coherent isolatedbatch/0retries/no tuning. Parent077+rootapproved078groupfit;080/082failure sources not reused. Live sources unchanged, parent/finalpins retained. No quota lookup/fullAI/browser/build/deploy/art/topdoc/commit.
+
+Actualworldstart correction: when coarse path returns[] but actualbody remains outside originalactionrange, form a physicalsafe terminalconnector rather than repeat zero-waypoint retry. New legitimateCoastworker fixture uses actual081worker28position53.866097/19.983426,node7food53.5/18.5: actualoutside1.1/currentcellcenterinside1.1.80normalsteps now move into ORIGINAL1.1 and gather realcargo/decrement resource. No strength/range/speed/food/timecap modification. Narrow actual-start contract PASS, not counterfactualAIvictory.
+
+Continuousgoal routing uses target itself,32bounded angle samples of originalrange boundary and analytic intersections between targetarrivalcircle and actualbody exclusioncircles; candidates are justinside range and individually physicalclear. Graphnode→candidate connector must be exactbodysweptclear and currentterrain/building/corner safe. Actualmovement consumes ordinaryremainingtickdistance. This differs from080halfcell-goal acceptance and082rejectedneareststraight segment; no graphresolutiontuning, teleport, heldbodymotion orrangeenlargement.
+
+Unchanged078edge sequence: first(.1,.1) corner completes, includingpreviousID43failure; second(63.9,47.9) fails after1800steps. ID41 at60.89491509166039/46.89491509166039,target61.25/47.5,pendingmove/coarse61.5/47.5. Actualdistance remains marginallyoutside.7; originalassertion retained. Rawedge-receipt recordsfirstPASS/secondFAIL/fullstate/stats. This is a meaningfulcontinuousroutinggate failure, so batchSTOPPED withoutrepair/retry. Remainingedgecases/076fordfairness/073admission070four/privacy/nav/timing/budget UNCAlLED.
+
+Important debt: terminalcandidate generation can occur on emptycoarsepath without a new fairplanneradmission; count/budgetsemantics need review beforeintegration. Candidateboundarynearheldbodies and secondedge feasibility remain unqualified; no broad contact/AI/crowdPASS. Preserve081/079baseline/candidate receipts and080/082 originals. Separate design/diagnosticorder required for next failure, not blindtuning.
