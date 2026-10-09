@@ -1,0 +1,51 @@
+OWNED_SERVER http://127.0.0.1:46827
+delta 18 Defender 15 actual move order verified to resource-free 12,24
+delta 44 Defender 15 arrival and hold near General verified
+delta 58 Defender 16 actual move order verified to resource-free 10,28
+delta 117 Defender 16 arrival and hold near General verified
+delta 117 Two initial combat defenders held near General; excluded from offense
+delta 213 Six firearms queued through barracks UI
+delta 234 Four economic reinforcements queued
+delta 237 General held at home; forts cover the position
+PROGRESS delta {"tick":245,"army":4,"general":360,"resources":{"wood":340,"food":350.8522560000157,"iron":80},"forts":0,"front":15.5}
+delta 256 Artillery workshop requested through ordinary build UI
+delta 378 Idle builder returned to wood gathering
+PROGRESS delta {"tick":447,"army":5,"general":360,"resources":{"wood":170,"food":381.11497600001655,"iron":50},"forts":0,"front":15.5}
+delta 593 Idle builder returned to wood gathering
+delta 599 Idle builder returned to wood gathering
+delta 616 Artillery trained through workshop UI
+PROGRESS delta {"tick":648,"army":5,"general":360,"resources":{"wood":100,"food":351.6255680000171,"iron":0},"forts":0,"front":15.5}
+PROGRESS delta {"tick":849,"army":6,"general":360,"resources":{"wood":200,"food":378.9406080000149,"iron":80},"forts":0,"front":15.5}
+delta 954 Defensive fort reserved
+PROGRESS delta {"tick":1055,"army":7,"general":360,"resources":{"wood":120,"food":463.70262400001997,"iron":40},"forts":1,"front":15.5}
+delta 1219 Artillery trained through workshop UI
+PROGRESS delta {"tick":1256,"army":9,"general":360,"resources":{"wood":35,"food":425.2691520000202,"iron":20},"forts":1,"front":15.5}
+PROGRESS delta {"tick":1461,"army":10,"general":360,"resources":{"wood":115,"food":471.85886400002283,"iron":100},"forts":1,"front":15.5}
+delta 1485 Artillery trained through workshop UI
+delta 1518 Idle builder returned to wood gathering
+PROGRESS delta {"tick":1665,"army":12,"general":360,"resources":{"wood":50,"food":413.5247520000255,"iron":80},"forts":1,"front":15.5}
+PROGRESS delta {"tick":1867,"army":12,"general":360,"resources":{"wood":95,"food":413.342544000027,"iron":130},"forts":1,"front":15.5}
+PROGRESS delta {"tick":2070,"army":13,"general":360,"resources":{"wood":140,"food":400.38400000002304,"iron":200},"forts":1,"front":15.5}
+delta 2082 Artillery trained through workshop UI
+PROGRESS delta {"tick":2275,"army":15,"general":360,"resources":{"wood":75,"food":347.82601600002994,"iron":160},"forts":1,"front":18.604999999999965}
+delta 2336 Artillery trained through workshop UI
+delta 2404 Offensive group advance at120 simulation seconds; defenders stay home
+PROGRESS delta {"tick":2475,"army":14,"general":360,"resources":{"wood":10,"food":295.4137600000366,"iron":140},"forts":1,"front":18.660518994979114}
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Offense must exclude initial defenders
+    at offensiveGroup (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/candidate-ai-042/harness-executed.mjs:54:29)
+    at async play (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/candidate-ai-042/harness-executed.mjs:83:88)
+    at async file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/candidate-ai-042/harness-executed.mjs:91:57 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v24.15.0
+OWNED_SERVER_CLOSED {"started":"2026-10-09T03:24:11.547Z","buildPins":[{"path":"/tmp/rds-arrival040-build/index.html","bytes":4441,"sha256":"dc0a5b2d8c6cb09e5c8c8add88971fec23b61098edeec10fd02c10ad9400f765"},{"path":"/tmp/rds-arrival040-build/assets/index-CBZGtKwb.js","bytes":142583,"sha256":"f00ed3abae83a34bb14f868bdb9520daeb55b9dac7cf3227d3b9e432485a1583"}],"url":"http://127.0.0.1:46827","healthBefore":{"ok":true,"rooms":0},"signal":null,"exitCode":1,"healthAfterHarness":{"ok":true,"rooms":0},"roomsBeforeClose":0,"roomsAfterClose":0,"serverListeningAfterClose":false,"finished":"2026-10-09T03:26:23.651Z"}
