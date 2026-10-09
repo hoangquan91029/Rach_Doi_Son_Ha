@@ -1,0 +1,123 @@
+{
+  "id": "grassy-hill-111",
+  "status": "CANDIDATE_PENDING_PARENT_GAMEPLAY_LOOK",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "low",
+  "source": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/terrain/grassy-hill-111/raw.png",
+    "sha256": "80fb4fbaa6fe48406d8b48513bb5c5f3117a04f38e6f6db13df5f590cfdfcc42",
+    "rgbaSha256": "4a7c2610dbe177e72ecdf3c555142decb780879666a5f66460f2d8593fbbf283",
+    "width": 1254,
+    "height": 1254,
+    "alphaRange": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      19,
+      1238,
+      1254
+    ]
+  },
+  "runtime": {
+    "path": "runtime-128.png",
+    "sha256": "c4871587aaf5c68d111c492138ee1813771ec8246d02a326f4f62726a5dc3ed0",
+    "rgbaSha256": "4309a51cc30c9cec6e46606b5342f8db67b0104c925669aa8674f30e9b9d56e4",
+    "width": 128,
+    "height": 128,
+    "derivation": {
+      "method": "resize",
+      "filter": "lanczos",
+      "sourceSha256": "80fb4fbaa6fe48406d8b48513bb5c5f3117a04f38e6f6db13df5f590cfdfcc42"
+    }
+  },
+  "pivot": {
+    "x": 627.0,
+    "y": 777.48,
+    "space": "source"
+  },
+  "cell": {
+    "width": 128,
+    "height": 128
+  },
+  "render": {
+    "width": 96,
+    "height": 96
+  },
+  "contactShadow": {
+    "mode": "baked"
+  },
+  "actualVisibleLogicalExtent": [
+    94.775,
+    94.545
+  ],
+  "plannedTargetVisibleLogicalExtent": [
+    72,
+    32
+  ],
+  "preview": {
+    "path": "gameplay-size-preview.png",
+    "sha256": "ab908fd5266ade39158245d1294e1592a46e4352bfb12cfd69e03d444ac5d5a2",
+    "zoom": 1.08,
+    "renderRoundedPixels": [
+      104,
+      104
+    ],
+    "anchor": [
+      128,
+      104
+    ],
+    "hillPlacement": [
+      76,
+      40
+    ],
+    "backgroundReference": "public/assets/art-v1/terrain/grass-b.png"
+  },
+  "tool": "builtin imagegen",
+  "callID": "exec-cc35b9c3-5b3c-480e-98a5-0459170dcefc",
+  "originalToolPath": "/home/kieu-hoang-quan/.codex/generated_images/01a1200c-3186-7cd0-b56e-de67d740a363/exec-cc35b9c3-5b3c-480e-98a5-0459170dcefc.png",
+  "calls": 1,
+  "retries": 0,
+  "transform": "UNIFORM_WHOLECANVAS_LANCZOS_NO_CROP_SHIFT_FIT",
+  "initialBriefLook": "Low rounded grassy rise and warm earth slope; actual mound is wider/taller than requested canvas percentage. Dark front/right contact rim remains visible; parent must decide whether ground-layer composition works. No repair/retry or fitting. Alpha>0 bounds include faint canvas residuals; threshold bboxes are diagnostic only, no alpha cleaning or trim performed.",
+  "scope": "One source candidate only; no runtime/map/passability/owner/public approval.",
+  "alphaThresholdDiagnostic": {
+    "8": {
+      "bbox": [
+        49,
+        450,
+        1215,
+        912
+      ],
+      "logicalExtent": [
+        89.263,
+        35.368
+      ]
+    },
+    "32": {
+      "bbox": [
+        52,
+        450,
+        1200,
+        905
+      ],
+      "logicalExtent": [
+        87.885,
+        34.833
+      ]
+    },
+    "128": {
+      "bbox": [
+        58,
+        453,
+        1176,
+        903
+      ],
+      "logicalExtent": [
+        85.589,
+        34.45
+      ]
+    }
+  }
+}

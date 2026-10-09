@@ -1,3 +1,47 @@
+## Current117 PUBLIC / local118 — illustrated terrain and food world nodes
+
+117 PUBLIC DEVELOPMENT now serves optional https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/?art=terrain with20candidate assets: originalwork17 + mountain108 + hill111 + staticfood114. Bundleindex-BSDEdwS3.js SHA9670fe5292e9028ceac9b50a018303696891fabb4671b2f68cbb64a465996a82. Frozen115 testedsource is bound; publicsource explicitly excludes ONLY pending101/106 food CHARACTER opt-in route and food-099 manifest/atlas. Default/work/pilot/walk remain, sharedsimulation28e37b63…609c unchanged. Do not confuse published static FOOD NODE with pending food character animation.
+
+Ten relevant contracts and freshpublicscopebuild pass. ONE actual normalTLS Chromium151 andFirefox153 short resource interaction/groundorder/firstpause tickhold/realmodalResume/Stop/menu each pass;20ready/12portraits/RGBA15,270,912/reserved0/failed0/errors0/networkfailures0. Publicrooms0/servicePID157023 unchanged/no restart. Fullreadonly107 rollbacktree/archive (SHA6b99e462…c4e61), old107/097/088 chunks and originalleadership/assets remain preserved locally. Exactstage/prepared/rollbackcopies are Gitignored through localexplicitpaths; custodyreceipts tracked. No fullAI/online match repeat because authoritative mechanics unchanged.
+
+118 CANONICAL LOCAL includes exact115foodnodecode/data alongside116terrain;10tests pass, all160 freshTEMPoutputfiles andclient/shared/publicsource matchactual115 byte-for-byte. Localbundleindex-DLnTy0Df.js SHA0ad432242e78bc2d515a50db5b04c434b76a6d3c19c2c115c9531383f6e5b73f differs intentionally frompublic117 because pendingfoodCHARroute/data remain local. 109/113actualbothmap terrainlooks and115 actual20foodgather/ordinarywalkreturn/deposit/lifecycle receipts retained.113secondpausemodal harnessHOLD staysoriginal, no historicalfailure rewritten. Original108/111/114 whole2D raw/alpha/authorpreview/prompt/custody all preserved (onebuiltin call each/zero retries). No imagecall/worker/testhandle remains live; production intentionally runs.
+
+NEXT independent unfinished graphical target: one bounded illustrated iron/ore RESOURCE source/runtime pilot, matching current actualpositive iron nodes and unchanged gathering/transport/depletion/visibility; readactualrenderer/node contracts and usebuiltin whole2D with frozenpivot/size before one sourcecall. Do not begin broad roster/direction/action fanout or retry exhaustedD0 methods. Food101loop APNG optionalhuman naturalness feedback remains pending; onebriefcontinuousgameplay-size look/actualreply needed before foodcharacter motion acceptance/publicpromotion. Southwood owner032 stands, all loadedgoods useordinarywalk.
+
+Full terrain/map acceptance remains OPEN: repeated mountainoutcrop pattern, partialhill-edgecoverage, shores/forests/resourceharveststates/mapcomposition and denseunitreadability need continued work. Fullillustratedroster/directions/actions/externaldevice/WAN/performance/master/web/historical/visual/sections81–145 objective NOT COMPLETE. Continue concreteproduction with exactSol6.1Low parallelworkers, builtinonly/noAPIkey/noquotapoll/purewhole2D/no3D/limbtextures and originals/leadership custody. Older snapshots below are history.
+
+---
+
+## Current116 / new115–117 — terrain installed locally; world-food pilot next
+
+116 installs exact113 tested mountain/hill terrain source/data and two durable tests in canonical LOCAL optional?art=terrain. Seven meaningful tests pass; fresh temporary JS bundle index-De8V9N8E.js SHA4932e400…cf821 matches actual113 served build. Full tree equality is FALSE solely because unused historical terrain-109-manifest.json is absent locally; all other output files equal. No public change. Root accepted actualbothmap hills-underunit walk readability;113 secondpausebutton/modal harnessHOLD remains preserved, no resume/menu claim. Mountain repetition, partial hill-edge grass and finalmaps remain unfinished.
+
+114 ONE built-in whole2D generic food-node source is terminal, zero retries; raw1254RGBA and uniform128runtime preserved. Root brief40logical preview supports finite115 actual-world trial, with one explicit48logical runtime size while original40authorpreview stays intact.115 isolated optionalterrain20candidate binds node onlyto actualpositive food resource draw/depth/fog context, preserving originalfallback/empty depletion/simulation. A new bounded ordinaryUI resource gather/return plus actualPause→Resume→Stop/menu scenario is authorized; no characterfoodmotion/harveststates/fanout approval.
+
+117 only prepares safepublicterrain candidate promotion/harness while115runs; NOpublish until rootactualsceneintake and a separate finiteorder. Public107 remains work17/M/A. Pendingcharacterfood101/106 route/data must stay LOCAL; any laterpublicterrain20sourcehistory explicitly excludes that route/data instead of pretendingcanonicalbyteequivalence. Preservefullrollback/oldchunks/rooms0 guards, simulation/service unchanged. Checkliveworker/tool handles beforeduplicate. Builtin/noAPI/pure2D/exactSol6.1Low/noquotapoll/custody/fullobjectiveactive remain.
+
+---
+
+## Current109 intake / new113 — terrain candidate moves into gameplay
+
+109 is terminal: exact isolated mountain runtime passes four relevant tests and ONE actual ordinaryUI scout look on BOTH maps. Each view reveals15 actual mountaincells at defaultzoom1.08;18assets/12portraits/zeroerrors/ownedcleanup. Root brief live Delta/Coast screenshots accept narrowcandidate readability: rock/scrub clusters and nearby ownunit/open routes are readable. Per-cell repetition remains visible, so no final formation/maps acceptance. Original108whole2D raw/runtime/64authorpreview and109 explicit56runtime scale remain preserved.
+
+113 now implements the separate112 hill ground-layer plan in an isolated copy of terminal109. Actual111runtime128/sourcepivot627/777.48, one global72render, deterministic fullyhill2×2 visible patches, under actual troops/resources with no authoritative elevation/position changes. Optionalterrain route becomes19candidateassets; default/work/food/public unchanged. New mountain placement must also omit missing visiblefog entries;109original receipt remains unchanged. Meaningful small tests/tempbuild plus ONE real bothmap hill movement/scout look are authorized; no duplicate while worker/handle live, no simulation/gamebalance changes.
+
+114 separately prepares ONE builtin whole2D genericfood-node illustration replacing the current crop circle/greenstem in a future candidate only. It is world resource artwork, not pendingfood character fanout or a verified historic crop claim. Actual grass/tree/residence and basket reference/pivot/scale must be declared before onecall; preserve raw and alpha. No114runtime binding until actual brief sourceintake. NoAPI/key/quota polling.
+
+Public107 and canonicalfood106 remain current. Fullmaster/web/historical/visual completion remains unproven and objective active.
+
+---
+
+## Current108–112 — independent terrain art pilot in progress
+
+Previous goal turn made concrete progress: committed e9810a4 with actual food8-frame source/runtime integration and publicM/A controls. Full objective remains active; foodmotion feedback is still open. Independent terrain work now targets visible placeholder debt rather than repeating completed match proofs.108 produces ONE actual built-in whole2D transparent weathered outcrop (zero retries), uniform128runtime. Root brief64logical preview accepts source for finite109 actualruntime trial; one explicit109global56logical transform fits its wider actual silhouette to~54.57px, retaining raw and108 frozen64author preview.109 is isolated work17+actualmountain candidate18assets, no shared simulation/topology change;4 relevant tests/build pass and actualbothmap defaultzoom/scout/camera look is live. Inspect actual handle/receipt before any duplicate.
+
+111 produces ONE built-in whole2D transparent lowgrassyhill (zero retries), uniform128runtime, frozen96logicalpreview and originalalpha retained. Root briefgrasspreview accepts a separate112 ground-layer PLANONLY; no hillruntime approval/copy/build/public call yet.112 awaits109terminalintake and a separate finite implementation order. Hills must remain passable and drawn under troops; no fake elevation/positions or percell/artpixelrepair.108/111 noimagecallopen; all original references and prompt/custody records remain preserved. Public107 and canonicalfood106 remain unchanged.
+
+---
+
 ## Current107 / local106 — public ground controls and complete food candidate
 
 107 PUBLIC DEVELOPMENT now serves exact frozen104 index-BLdPSJwj.js SHA583464ffd814c3fe8650d1247a5c4df93562421ca819fb4bf54926a28a9b180a at https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/. M/Move sends fractional ground movement near resources; A/Attackmove retains explicit ground intent; Escape cancels an armed order before pause. One actual normalTLS Chromium151 andFirefox153 scenario each passes these controls, default resource context, arrival, pause/menu, work17/12portraits/errors0. Public rooms0/servicePID157023 unchanged, no restart. Full097 rollback tree/archive and previous097/088 chunks are preserved. Shared simulation remains28e37b63…609c; earlier full AI/online proofs need no repeat for this client-only change.

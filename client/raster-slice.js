@@ -1,3 +1,4 @@
+import {mountainPropPlacements,hillGroundPlacements,foodResourceEligible} from './terrain-props.js';
 import {authoredActionStates,gatherAnimationTime} from './action-presentation.js';
 import {sampleSpriteAnimation,defaultAnimationLoop,attackAnimationTime} from './sprite-timing.js';
 import {createArtAssetPipeline} from './art-assets.js';
@@ -9,7 +10,7 @@ const TW=TILE_WIDTH,TH=TILE_HEIGHT;
 const finite=n=>Number.isFinite(n);
 const normalState=entity=>entity.hp<=0?'death':entity.state;
 /** Optional candidate art over actual simulation. No substitute map, fake units, or sprite mirroring. */
-export function createRasterSlice({enabled=['pilot','walk','work','food'].includes(new URLSearchParams(globalThis.location?.search||'').get('art')),manifestUrl=new URLSearchParams(globalThis.location?.search||'').get('art')==='food'?'/assets/art-v1/food-099-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='work'?'/assets/art-v1/gather-026-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='walk'?'/assets/art-v1/walk-014-manifest.json':'/assets/art-v1/manifest.json',onStatus=()=>{},materialWorldSize=8}={}) {
+export function createRasterSlice({enabled=['pilot','walk','work','food','terrain'].includes(new URLSearchParams(globalThis.location?.search||'').get('art')),manifestUrl=new URLSearchParams(globalThis.location?.search||'').get('art')==='terrain'?'/assets/art-v1/terrain-115-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='food'?'/assets/art-v1/food-099-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='work'?'/assets/art-v1/gather-026-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='walk'?'/assets/art-v1/walk-014-manifest.json':'/assets/art-v1/manifest.json',onStatus=()=>{},materialWorldSize=8}={}) {
  const pipeline=createArtAssetPipeline({manifestUrl,allowCandidates:true,onStatus});
  const locomotion=createLocomotionPhase();
  const cells=new Map(),patterns=new WeakMap(),missing=new Set();let ready=false;
@@ -22,6 +23,7 @@ export function createRasterSlice({enabled=['pilot','walk','work','food'].includ
   const candidate=candidates[((variant%candidates.length)+candidates.length)%candidates.length];
   const raster=pipeline.get(candidate.id,{state,direction,timeMs});if(!raster.image){recordMissing(candidate.id,raster.reason);return null;}return raster;
  };
+ const mountainReady=()=>new URLSearchParams(globalThis.location?.search||'').get('art')==='terrain'&&Boolean(select({families:['mountain','prop.mountain'],kind:'prop',state:'static',direction:null,timeMs:0})?.image);
  const cellImage=raster=>{
   if(raster.sx===0&&raster.sy===0&&raster.sw===raster.image.width&&raster.sh===raster.image.height)return raster.image;
   const key=`${raster.id}:${raster.frame}`;if(!cells.has(key)){const canvas=typeof OffscreenCanvas==='function'?new OffscreenCanvas(raster.sw,raster.sh):globalThis.document?.createElement('canvas');if(!canvas)return null;canvas.width=raster.sw;canvas.height=raster.sh;const c=canvas.getContext('2d');c.drawImage(raster.image,raster.sx,raster.sy,raster.sw,raster.sh,0,0,raster.sw,raster.sh);cells.set(key,canvas);}return cells.get(key);
@@ -68,7 +70,7 @@ export function createRasterSlice({enabled=['pilot','walk','work','food'].includ
   /** project uses existing renderer logical pixels; camera zoom and DPR must not be applied twice. */
   drawGround(ctx,{x,y,terrain,project,zoom=1,timeMs=0}={}) {
    if(!enabled||!ready||!finite(x)||!finite(y)||typeof project!=='function'||!finite(zoom)||zoom<=0)return false;
-   const water=['river','sea'].includes(terrain),ford=terrain==='ford';if(!water&&!ford&&!['plain','forest','hill'].includes(terrain)){recordMissing(`ground:${terrain}`,'No authored material for this terrain');return false;}
+   const water=['river','sea'].includes(terrain),ford=terrain==='ford';if(!water&&!ford&&!['plain','forest','hill'].includes(terrain)&&!(terrain==='mountain'&&mountainReady())){recordMissing(`ground:${terrain}`,'No authored material for this terrain');return false;}
    const raster=select({families:ford?['ford','terrain.ford']:water?['water','terrain.water']:['grass','terrain.grass'],kind:'terrain',state:'material',direction:null,timeMs});if(!raster)return false;
    const image=cellImage(raster);if(!image)return false;
    let byRaster=patterns.get(ctx);if(!byRaster){byRaster=new Map();patterns.set(ctx,byRaster);}const key=`${raster.id}:${raster.frame}`;if(!byRaster.has(key))byRaster.set(key,{pattern:ctx.createPattern(image,'repeat'),last:null});const cached=byRaster.get(key),pattern=cached.pattern;
@@ -82,9 +84,21 @@ export function createRasterSlice({enabled=['pilot','walk','work','food'].includ
   },
   /** World props can share x+y depth sorting with entities. Coordinates remain simulation coordinates. */
   drawProp(ctx,{x,y,type='forest',project,zoom=1,timeMs=0,variant=0}={}) {
-   if(!enabled||!ready||type!=='forest'||typeof project!=='function'||!finite(x)||!finite(y))return false;
-   const raster=select({families:['forest','prop.forest'],kind:'prop',state:'static',direction:null,variant,timeMs});if(!raster)return false;
+   if(!enabled||!ready||!['forest','mountain'].includes(type)||typeof project!=='function'||!finite(x)||!finite(y))return false;
+   const raster=select({families:type==='mountain'?['mountain','prop.mountain']:['forest','prop.forest'],kind:'prop',state:'static',direction:null,variant,timeMs});if(!raster)return false;
    if(rasterAt(ctx,raster,project(x,y),zoom)){status.propDraws++;return true;}return false;
+  },
+  drawHillGround(ctx,{state,project,zoom=1,timeMs=0}={}) {
+   if(!enabled||!ready||new URLSearchParams(globalThis.location?.search||'').get('art')!=='terrain'||typeof project!=='function')return 0;
+   const raster=select({families:['hill'],kind:'prop',state:'static',direction:null,timeMs});
+   const placements=hillGroundPlacements(state,Boolean(raster?.image));let drawn=0;
+   for(const p of placements)if(rasterAt(ctx,raster,project(p.x,p.y),zoom))drawn++;
+   status.hillDraws=(status.hillDraws||0)+drawn;return drawn;
+  },
+  drawResource(ctx,{resource,project,zoom=1,timeMs=0}={}) {
+   if(!enabled||!ready||new URLSearchParams(globalThis.location?.search||'').get('art')!=='terrain'||!foodResourceEligible(resource)||typeof project!=='function')return false;
+   const raster=select({families:['food','resource.food'],kind:'prop',state:'static',direction:null,timeMs});if(!raster)return false;
+   if(rasterAt(ctx,raster,project(resource.x,resource.y),zoom)){status.foodResourceDraws=(status.foodResourceDraws||0)+1;return true;}return false;
   },
   sampleEntity(entity,{tick=0,timeMs=tick*50}={}) {
    if(!enabled||!ready||!entity||entity.embarked||!finite(entity.x)||!finite(entity.y))return false;
@@ -120,7 +134,7 @@ export function createRasterSlice({enabled=['pilot','walk','work','food'].includ
    if(!enabled||!state?.map?.tiles)return [];
    const {width,height,tiles}=state.map,props=[];
    for(let y=0;y<height;y++)for(let x=0;x<width;x++){const index=y*width+x,v=(x*17+y*31)%19;if(tiles[index]!=='forest'||v>=5||onlyVisible&&state.fog?.visible&&!state.fog.visible[index])continue;props.push({type:'forest',x:x+.5,y:y+.5,variant:v,key:`forest:${x}:${y}`,depth:x+y});}
-   return props.sort((a,b)=>a.depth-b.depth||a.y-b.y||a.x-b.x);
+   props.push(...mountainPropPlacements(state,mountainReady(),{onlyVisible}));return props.sort((a,b)=>a.depth-b.depth||a.y-b.y||a.x-b.x);
   },
   dispose(){locomotion.clear();transitions.dispose();transitionMaterials.clear();pipeline.dispose();cells.clear();ready=false;}
  };

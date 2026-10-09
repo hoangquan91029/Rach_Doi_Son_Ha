@@ -1,0 +1,13 @@
+/** Actual terrain props: anchors never create knowledge or change passability. */
+export function mountainPropPlacements(state,ready,{onlyVisible=true}={}){if(!ready||!state?.map?.tiles)return [];const {width,height,tiles}=state.map,props=[];for(let y=0;y<height;y++)for(let x=0;x<width;x++){const i=y*width+x;if(tiles[i]!=='mountain'||onlyVisible&&!state.fog?.visible?.[i])continue;props.push({type:'mountain',x:x+.5,y:y+.5,key:`mountain:${x}:${y}`,depth:x+y});}return props;}
+export function drawTerrainPropFallback(renderer,ctx,prop,zoom){const p=renderer.project(prop.x,prop.y);if(prop.type==='forest')renderer.tree(ctx,p.x,p.y,zoom,prop.variant);else if(prop.type==='mountain')renderer.rock(ctx,p.x,p.y,zoom,0);}
+
+/** Visible passable rises are ground overlays, never depth props. */
+export function hillGroundPlacements(state,ready){
+ if(!ready||!state?.map?.tiles||!state.fog?.visible)return [];
+ const {width,height,tiles}=state.map,visible=state.fog.visible,out=[];
+ for(let y=0;y+1<height;y+=2)for(let x=0;x+1<width;x+=2){const indices=[y*width+x,y*width+x+1,(y+1)*width+x,(y+1)*width+x+1];if(indices.every(i=>tiles[i]==='hill'&&Boolean(visible[i])))out.push({type:'hill',x:x+1,y:y+1,key:`hill:${x}:${y}`});}
+ return out;
+}
+
+export function foodResourceEligible(r){return r?.type==='food'&&Number.isFinite(r.amount)&&r.amount>0&&Number.isFinite(r.x)&&Number.isFinite(r.y);}

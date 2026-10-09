@@ -1,3 +1,7 @@
+Current117 published update: optional?art=terrain now includes original illustrated mountain/hill/staticfoodnode candidates; canonical118 andactual115bindings are current. Chrome/Firefox20asset interaction/lifecycle proof is narrowtechnical acceptance. Entire rows below remain unresolved for defaultdevelopmentart/finalcomposition/repetition/iron/harveststates/fullroster. Pendingfood CHARACTERloop101 remainsLOCAL, distinctfrompublishedstaticfoodNODE114.
+
+Current terrain candidate update (9 October2026):108/111 original illustrated mountain/hill assets now have actual bothmap narrow runtime looks in109/113 and canonicalLOCAL optionalterrain integration116.114 original genericfood-node illustration has actual ordinaryfoodgather/return/lifecycle proof115;118 local integration and117 publiccandidate promotion are in progress. Check latest receipts before claiming deployed state. These trials reduce optional raster placeholder debt, but do not resolve the whole rows below: default remains development geometry, mountain repetition/hill edges/iron/harveststates/map composition/final acceptance remain open.113 original pause-harnessHOLD is preserved. Food CHARACTER loop101/106 remains a separate pending motion/public gate.
+
 # Visible placeholder debt — 7 October 2026
 
 **Release gate: FAIL.** Every unresolved item below remains **PLACEHOLDER_ONLY**. Release requires zero unresolved gameplay-visible placeholders.

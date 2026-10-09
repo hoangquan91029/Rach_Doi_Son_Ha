@@ -1,0 +1,226 @@
+{
+  "status": "PASS",
+  "engine": "chromium",
+  "normalTLS": true,
+  "artAssets": 20,
+  "portraits": 12,
+  "browser": "151.0.7922.34",
+  "actions": [
+    {
+      "worker": {
+        "id": 7,
+        "owner": 0,
+        "type": "villager",
+        "kind": "unit",
+        "x": 7.5,
+        "y": 21.5,
+        "hp": 65,
+        "maxHp": 65,
+        "food": 40,
+        "foodMax": 40,
+        "morale": 95,
+        "state": "idle",
+        "dir": 0,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "resuppliedTick": 5,
+        "starving": 0,
+        "order": null
+      },
+      "food": {
+        "id": 1,
+        "type": "food",
+        "x": 10.5,
+        "y": 18.5,
+        "amount": 4200
+      }
+    },
+    {
+      "test": "M near food fractional MOVE",
+      "clicked": {
+        "requested": {
+          "x": 9.77,
+          "y": 18.13
+        },
+        "screen": {
+          "x": 720.0427340541295,
+          "y": 450.0631767229352
+        }
+      },
+      "entity": {
+        "id": 7,
+        "owner": 0,
+        "type": "villager",
+        "kind": "unit",
+        "x": 7.5,
+        "y": 21.5,
+        "hp": 65,
+        "maxHp": 65,
+        "food": 40,
+        "foodMax": 40,
+        "morale": 95,
+        "state": "walk",
+        "dir": 0,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "resuppliedTick": 24,
+        "starving": 0,
+        "order": {
+          "type": "move",
+          "x": 9.769843718184692,
+          "y": 18.12993823213482
+        }
+      }
+    },
+    {
+      "test": "arrival",
+      "entity": {
+        "id": 7,
+        "owner": 0,
+        "type": "villager",
+        "kind": "unit",
+        "x": 9.378798585720606,
+        "y": 18.710527212719324,
+        "hp": 65,
+        "maxHp": 65,
+        "food": 39.6886719999999,
+        "foodMax": 40,
+        "morale": 95,
+        "state": "walk",
+        "dir": 1,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "resuppliedTick": 27,
+        "starving": 0,
+        "lastMovedTick": 74,
+        "order": null
+      }
+    },
+    {
+      "test": "button MOVE near food",
+      "entity": {
+        "id": 7,
+        "owner": 0,
+        "type": "villager",
+        "kind": "unit",
+        "x": 9.481995127912628,
+        "y": 18.69115006949308,
+        "hp": 65,
+        "maxHp": 65,
+        "food": 39.622431999999876,
+        "foodMax": 40,
+        "morale": 95,
+        "state": "walk",
+        "dir": 0,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "resuppliedTick": 27,
+        "starving": 0,
+        "lastMovedTick": 84,
+        "order": {
+          "type": "move",
+          "x": 10.80958306374046,
+          "y": 18.07988274193221
+        }
+      }
+    },
+    {
+      "test": "A resource ground intent",
+      "entity": {
+        "id": 7,
+        "owner": 0,
+        "type": "villager",
+        "kind": "unit",
+        "x": 9.481995127912628,
+        "y": 18.69115006949308,
+        "hp": 65,
+        "maxHp": 65,
+        "food": 39.556191999999854,
+        "foodMax": 40,
+        "morale": 95,
+        "state": "walk",
+        "dir": 0,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "resuppliedTick": 27,
+        "starving": 0,
+        "lastMovedTick": 84,
+        "order": {
+          "type": "attackMove",
+          "x": 10.499565972222221,
+          "y": 18.499875417952673
+        }
+      }
+    },
+    {
+      "test": "Escape cancelled then context GATHER",
+      "entity": {
+        "id": 7,
+        "owner": 0,
+        "type": "villager",
+        "kind": "unit",
+        "x": 9.58519167010465,
+        "y": 18.671772926266836,
+        "hp": 65,
+        "maxHp": 65,
+        "food": 39.470079999999825,
+        "foodMax": 40,
+        "morale": 95,
+        "state": "gather",
+        "dir": 0,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0.15000000000000002,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "resuppliedTick": 27,
+        "starving": 0,
+        "lastMovedTick": 95,
+        "visibleAction": {
+          "kind": "gather",
+          "resource": "food",
+          "startedTick": 107
+        },
+        "order": {
+          "type": "gather",
+          "target": 1
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "networkFailures": []
+}

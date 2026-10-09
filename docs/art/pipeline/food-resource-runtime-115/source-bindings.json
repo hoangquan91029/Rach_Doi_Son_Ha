@@ -1,0 +1,77 @@
+{
+  "stage": "/tmp/rdsh-foodnode115-dh5im50y",
+  "asset": {
+    "id": "food-resource-114",
+    "family": "food",
+    "kind": "prop",
+    "source": {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/terrain/food-resource-114/raw.png",
+      "sha256": "45a28a78419cd8c3f3d9b3f6ed36b3ce25127fbe34d2b2353c4226ca7e68218b",
+      "rgbaSha256": "23ab90a5d175736f5b92506535bbcb8eebaa11a0307e24f88ec1d9965d357de4",
+      "width": 1254,
+      "height": 1254,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "bbox": [
+        0,
+        19,
+        1238,
+        1254
+      ]
+    },
+    "runtime": {
+      "path": "food-resource-115/food.png",
+      "sha256": "bf51cb7b25174a866bd86506a94dede5348bd30f0eae5c4a365aec0ef7b68801",
+      "rgbaSha256": "3ff5f02d3a870a41a6e2ea0d4e802daacedb492ae9bdbd4c5e2932c8e9a5ed78",
+      "width": 128,
+      "height": 128,
+      "derivation": {
+        "method": "resize",
+        "filter": "lanczos",
+        "sourceSha256": "45a28a78419cd8c3f3d9b3f6ed36b3ce25127fbe34d2b2353c4226ca7e68218b"
+      }
+    },
+    "cell": {
+      "width": 128,
+      "height": 128
+    },
+    "pivot": {
+      "x": 627,
+      "y": 902.88,
+      "space": "source"
+    },
+    "render": {
+      "width": 48,
+      "height": 48
+    },
+    "state": "static",
+    "direction": null,
+    "loop": true,
+    "frames": [
+      {
+        "x": 0,
+        "y": 0,
+        "width": 128,
+        "height": 128,
+        "durationMs": 1000
+      }
+    ],
+    "alphaPolicy": "transparent",
+    "contactShadow": {
+      "mode": "baked"
+    },
+    "review": {
+      "status": "CANDIDATE"
+    },
+    "candidate": true,
+    "notes": "114 wholecanvas original frozenauthor40 preserved;115global48worldresource"
+  },
+  "original114Render": 40,
+  "global115Render": 48,
+  "runtimePivot": [
+    64,
+    92.16
+  ]
+}

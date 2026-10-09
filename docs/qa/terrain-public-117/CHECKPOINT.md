@@ -1,0 +1,9 @@
+#117 — public optional terrain20 PASS_NARROW
+
+Finite root-authorized promotion from exact115 tested stage, not concurrent118 canonical changes. Root115 actual food-node scene intake narrow accepted. Source-stage strips ONLY pending101 character-food opt-in route plus food-099 manifest/atlas. source-bindings.json explicitly records3 exclusions; no full canonical byte equality claim. Default/work/pilot/walk preserved, sharedsim unchanged.10 relevant tests and ONE fresh22-modulebuild PASS.
+
+Public optional ?art=terrain now20 assets: work17 + mountain108 + hill111 + staticfood114. Exact index-BSDEdwS3.js SHA9670fe5292e9028ceac9b50a018303696891fabb4671b2f68cbb64a465996a82. NormalTLS Chromium151/Firefox153 ONE short actualordinaryUI launch/Mfractionalarrival/contextgather/pause tickhold/modal#resume/Stop/menu each PASS;20ready/12portraits/RGBA15,270,912/reserved0/failed0/errors0/networkfailures0. Ownedbrowsers closed, finalrooms0, servicePID157023 unchanged/no restart. Exact served bundle/manifest/staticfood pins verified; original old107 bundle remains HTTP-served.
+
+Full107 readonly archive + complete readonly rollbacktree retained. Exact local Gitexclude entries cover source-stage/,dist-prepared/,dist107-rollback/,rollback-dist107.tar.gz only. No broad ignores/canonical/Git/topdocs/newart edits. Atomic Linux renameat2 exchange; no rollback needed. Recovery: rooms0/service guard, atomic exchange dist with dist107-rollback (readonly directory contents preserved), confirm old107 servedSHA583464…b180a; keep failed117 tree/receipts.
+
+Static resource node publication only. Pending food character animation101 stays LOCAL.113 original modalHOLD untouched. No fullmatch/roster/mapcomposition/foodcontinuousmotion/finalvisual/performance/externaldevice/fullgame acceptance. Production service intentionally running.

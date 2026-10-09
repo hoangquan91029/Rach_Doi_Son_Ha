@@ -1,0 +1,1 @@
+Root115 actualnormalUIfoodnode screenshot ACCEPT_NARROW_CANDIDATE; actual gather/cargo20deposit/pauseResumeStop/menu20assets12portraits/errors0 PASS. FinitePUBLIC117 authorized. Exact115 source frozen; no concurrent118 reads. Staticresource acceptance only;101CHARfood remainsLOCAL.

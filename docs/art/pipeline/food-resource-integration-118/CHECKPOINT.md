@@ -1,0 +1,9 @@
+# 118 — canonical LOCAL food world node integration PASS_NARROW
+
+Exact gpt-6.1-sol/low. Rootactual115normalUI scene intake accepts narrow realworldfoodnode: leaf/ochre patch distinctfromgrass and readable, actualgather/cargo20deposit/lifecycle proof. Exact frozen115stage `/tmp/rdsh-foodnode115-dh5im50y` bytes installed canonical: client/renderer.js, client/raster-slice.js, client/terrain-props.js, public/assets/art-v1/terrain-115-manifest.json, public/assets/art-v1/food-resource-115/food.png, tests/food-resource115.test.js. installed-pins.json binds before/after and all6exactcopiedbytes. No frozen115stage mutation.
+
+Canonical10relevant tests PASS0fail61.187681ms. FreshTEMPbuild `/tmp/rdsh-food118-build-xlsv9f6n` PASS22modules. ALL160productionfiles byte-equalactual115candidate; client/shared/public source trees exactequal115, no unusedmanifestdifference in118. Bundleindex-DLnTy0Df.js SHA0ad432242e78bc2d515a50db5b04c434b76a6d3c19c2c115c9531383f6e5b73f equalsactual115servedbundle. receipt.json binds source/production comparison.
+
+Optionalterrain20 route only; original116terrain113manifest remains unused historical data. Default/work/LOCALfood101characterroute/assets,104M/093memory/sharedsim unchanged. Original114raw/runtime/frozen40author preserved; explicit115global48 and staticpositivefoodnode beforeordinaryfallback retained. Originals108/111/heldshore and113secondpauseHOLD preserved. Rootnarrowworldnode acceptance does not establish characterfoodcontinuousmotion/footlock/finalmaps/roster/fullvisualproduction.
+
+No publicdist/service/deployment/Git/topdocs/imagecalls/duplicatebrowser/fulltests/fullmatch. Parallel117publicworker readsFROZEN115 separately;118doesnotclaimits pendingresult. Rootwillcommitafter117terminal. Localintegration terminal, fullgame remainsunfinished.

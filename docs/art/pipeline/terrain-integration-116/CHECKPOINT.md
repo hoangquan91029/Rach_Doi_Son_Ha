@@ -1,0 +1,9 @@
+# 116 — canonical LOCAL optional terrain integration PASS_NARROW
+
+Exact gpt-6.1-sol/low; atomic installation authorized by root actual113 both-map hill walk/readability intake. Exact113 tested client/raster-slice.js, client/renderer.js, newclient/terrain-props.js copied canonical; exact113 terrain-113-manifest.json, mountain109 outcrop runtime, hill113 runtime and durabletests/mountain109.test.js+hill113.test.js installed. installed-pins.json records before/after bytes and candidate provenance. All8installed files byte-equal113. Canonical106food route/data,104Mcontrols,093decodedmemory and default/work remain preserved by exactcandidate source binding. No food114 binding.
+
+Canonical7targeted+mountain+cache tests PASS0fail57.501378ms. Fresh TEMPbuild /tmp/rdsh-terrain116-build-78d7s5z9 PASS22modules; bundleindex-De8V9N8E.js SHA4932e4003a6d062e66e26332127086cbfdf7472ab5e44011ae23b8853e2cf821 byte-equalactual113servedcandidate.
+
+Fullproductiontree equality113 is FALSE honestly:116158files versus113159files; sole difference is absent unused assets/art-v1/terrain-109-manifest.json (113 historicalmanifestSHA97106d…eeeb). Current route uses terrain-113-manifest.json. All otherproductionfiles exactequal, client/shared/publicsource trees otherwiseequal. No copying unused109manifest or silentfalsepass. See receipt.json.
+
+No duplicatebrowser/fullsimtests/fullmatches/newart/Git/topdocs/publicdist/service/deployment. Original108/111 raw/authorrender, heldshore,109custody and113HOLD untouched. Rootaccepts narrow actualbothmaphillgroundwalk/readability: slopesunderfoot/unitcontactlegible; partialedgesretainoldgrass, repeatedmountainclustersunfinished.113firstpause and19readyactualchecks valid; secondpausemodal harnessHOLD preserved, no resume/stop/menu lifecycleclaim. Finalmaps/roster/foodcontinuousmotion/publicvisualacceptance remain OPEN.
