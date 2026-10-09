@@ -1,0 +1,15 @@
+✔ General combat death wins immediately and freezes progression (20.858741ms)
+✔ fog hides enemy General and private resources/queues; hidden targets cannot be attacked (2.612532ms)
+✔ authoritative windup deals nothing before impact and hits exactly once with public late-snapshot timing (7.777019ms)
+✔ death, accepted move, stop, embark, hidden and out-of-range target cancel reserved attacks (9.998377ms)
+✔ same-target spam preserves windup; retarget and cancellation cannot accelerate recovery (3.959607ms)
+✔ changing targets consumes the original reservation and cannot produce an old-target impact (4.651017ms)
+✔ impact rejects dead or newly friendly targets and artillery splash waits for the same impact (3.746262ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 105.884773

@@ -1,0 +1,1411 @@
+{
+  "method": "ONE read-only diagnostic reproduction same originalseed/map/difficulty/4800tickcap; no acceptance retry or changes",
+  "samples": [
+    {
+      "tick": 3600,
+      "winner": null,
+      "players": [
+        {
+          "id": 0,
+          "resources": {
+            "wood": 550,
+            "food": 587.4336000004041,
+            "iron": 260
+          },
+          "ai": {
+            "phase": 0,
+            "scout": 0
+          }
+        },
+        {
+          "id": 1,
+          "resources": {
+            "wood": 110,
+            "food": 424.186176000002,
+            "iron": 2035
+          },
+          "ai": {
+            "phase": 0,
+            "scout": 0,
+            "builder": 24,
+            "building": "artilleryWorkshop",
+            "naval": null,
+            "navalLandings": 1,
+            "nextNaval": 5120
+          }
+        }
+      ],
+      "stats": {
+        "plans": 0,
+        "edges": 7,
+        "expansions": 186946,
+        "waits": 2733,
+        "queries": 735405,
+        "bodyChecks": 392270,
+        "rebuilds": 4722,
+        "tick": 4800,
+        "plannerEdges": 0,
+        "eligible": [
+          24,
+          25,
+          26,
+          27
+        ]
+      },
+      "units": [
+        {
+          "id": 6,
+          "owner": 0,
+          "type": "general",
+          "hp": 110.10399599999549,
+          "x": 11,
+          "y": 25.5,
+          "state": "idle",
+          "order": null,
+          "food": 65,
+          "path": [],
+          "contacts": []
+        },
+        {
+          "id": 15,
+          "owner": 0,
+          "type": "infantry",
+          "hp": 36.09822851328785,
+          "x": 11.789126408625481,
+          "y": 27.653632330576336,
+          "state": "attack",
+          "order": null,
+          "food": 16.15360000000064,
+          "path": [
+            {
+              "x": 11.5,
+              "y": 27.5
+            }
+          ],
+          "crowdRoute": [],
+          "crowdRetry": 3001,
+          "lastMovedTick": 3596,
+          "contacts": []
+        },
+        {
+          "id": 16,
+          "owner": 0,
+          "type": "spearman",
+          "hp": 83.16,
+          "x": 11.00657308918816,
+          "y": 38.99342691081185,
+          "state": "attack",
+          "order": null,
+          "food": 16.15360000000064,
+          "path": [
+            {
+              "x": 10.5,
+              "y": 39.5
+            }
+          ],
+          "crowdRoute": [],
+          "crowdRetry": 2998,
+          "lastMovedTick": 3481,
+          "contacts": []
+        },
+        {
+          "id": 23,
+          "owner": 1,
+          "type": "general",
+          "hp": 360,
+          "x": 50.934314575050735,
+          "y": 25.934314575050735,
+          "state": "idle",
+          "order": null,
+          "food": 53.10329599999608,
+          "path": [],
+          "crowdRoute": [],
+          "crowdGoal": {
+            "x": 50.5,
+            "y": 25.5
+          },
+          "retryPath": 0,
+          "crowdRetry": 730,
+          "lastMovedTick": 739,
+          "contacts": [
+            {
+              "id": 48,
+              "owner": 1,
+              "type": "villager",
+              "x": 50.5,
+              "y": 25.548085946036437,
+              "state": "walk",
+              "order": {
+                "type": "gather",
+                "target": 9
+              },
+              "distance": 0.5812071093609955
+            }
+          ]
+        },
+        {
+          "id": 30,
+          "owner": 1,
+          "type": "infantry",
+          "hp": 125,
+          "x": 48.5,
+          "y": 23.5,
+          "state": "idle",
+          "order": null,
+          "food": 16.15360000000064,
+          "path": [],
+          "contacts": [
+            {
+              "id": 31,
+              "owner": 1,
+              "type": "infantry",
+              "x": 48.5,
+              "y": 24.15,
+              "state": "idle",
+              "order": null,
+              "distance": 0.6499999999999986
+            }
+          ]
+        },
+        {
+          "id": 31,
+          "owner": 1,
+          "type": "infantry",
+          "hp": 125,
+          "x": 48.5,
+          "y": 24.15,
+          "state": "idle",
+          "order": null,
+          "food": 16.15360000000064,
+          "path": [],
+          "contacts": [
+            {
+              "id": 30,
+              "owner": 1,
+              "type": "infantry",
+              "x": 48.5,
+              "y": 23.5,
+              "state": "idle",
+              "order": null,
+              "distance": 0.6499999999999986
+            }
+          ]
+        },
+        {
+          "id": 36,
+          "owner": 1,
+          "type": "spearman",
+          "hp": 105,
+          "x": 10.5,
+          "y": 27.166224121062754,
+          "state": "attack",
+          "order": {
+            "type": "attackMove",
+            "x": 5.5,
+            "y": 28.5
+          },
+          "food": 38.072415999999365,
+          "path": [
+            {
+              "x": 10.5,
+              "y": 26.5
+            }
+          ],
+          "crowdRoute": [],
+          "crowdGoal": {
+            "x": 51.5,
+            "y": 29.5
+          },
+          "retryPath": 0,
+          "crowdRetry": 2757,
+          "lastMovedTick": 2794,
+          "contacts": []
+        }
+      ],
+      "queues": [
+        {
+          "id": 1,
+          "owner": 0,
+          "type": "residence",
+          "x": 9.5,
+          "y": 23.5,
+          "queue": [],
+          "cargo": {
+            "food": 207.4336000004041,
+            "wood": 0,
+            "iron": 0,
+            "units": []
+          }
+        },
+        {
+          "id": 2,
+          "owner": 0,
+          "type": "granary",
+          "x": 6.5,
+          "y": 26.5,
+          "queue": [],
+          "cargo": {
+            "food": 260,
+            "wood": 0,
+            "iron": 0,
+            "units": []
+          }
+        },
+        {
+          "id": 3,
+          "owner": 0,
+          "type": "depot",
+          "x": 13.5,
+          "y": 28.5,
+          "queue": [],
+          "cargo": {
+            "food": 120,
+            "wood": 0,
+            "iron": 0,
+            "units": []
+          }
+        },
+        {
+          "id": 4,
+          "owner": 0,
+          "type": "barracks",
+          "x": 13.5,
+          "y": 20.5,
+          "queue": [],
+          "cargo": {
+            "food": 0,
+            "wood": 0,
+            "iron": 0,
+            "units": []
+          }
+        },
+        {
+          "id": 18,
+          "owner": 1,
+          "type": "residence",
+          "x": 54.5,
+          "y": 23.5,
+          "queue": [],
+          "cargo": {
+            "food": 164.18617600000198,
+            "wood": 0,
+            "iron": 0,
+            "units": []
+          }
+        },
+        {
+          "id": 19,
+          "owner": 1,
+          "type": "granary",
+          "x": 57.5,
+          "y": 26.5,
+          "queue": [],
+          "cargo": {
+            "food": 0,
+            "wood": 0,
+            "iron": 0,
+            "units": []
+          }
+        },
+        {
+          "id": 20,
+          "owner": 1,
+          "type": "depot",
+          "x": 50.5,
+          "y": 28.5,
+          "queue": [],
+          "cargo": {
+            "food": 260,
+            "wood": 0,
+            "iron": 0,
+            "units": []
+          }
+        },
+        {
+          "id": 21,
+          "owner": 1,
+          "type": "barracks",
+          "x": 50.5,
+          "y": 20.5,
+          "queue": [],
+          "cargo": {
+            "food": 0,
+            "wood": 0,
+            "iron": 0,
+            "units": []
+          }
+        },
+        {
+          "id": 39,
+          "owner": 1,
+          "type": "cavalryCamp",
+          "x": 47.5,
+          "y": 30.5,
+          "queue": [],
+          "cargo": {
+            "food": 0,
+            "wood": 0,
+            "iron": 0,
+            "units": []
+          }
+        },
+        {
+          "id": 47,
+          "owner": 1,
+          "type": "shipyard",
+          "x": 52.5,
+          "y": 38.5,
+          "queue": [],
+          "cargo": {
+            "food": 0,
+            "wood": 0,
+            "iron": 0,
+            "units": []
+          }
+        }
+      ]
+    },
+    {
+      "tick": 4000,
+      "winner": null,
+      "players": [
+        {
+          "id": 0,
+          "resources": {
+            "wood": 550,
+            "food": 587.4336000004041,
+            "iron": 260
+          },
+          "ai": {
+            "phase": 0,
+            "scout": 0
+          }
+        },
+        {
+          "id": 1,
+          "resources": {
+            "wood": 110,
+            "food": 424.186176000002,
+            "iron": 2035
+          },
+          "ai": {
+            "phase": 0,
+            "scout": 0,
+            "builder": 24,
+            "building": "artilleryWorkshop",
+            "naval": null,
+            "navalLandings": 1,
+            "nextNaval": 5120
+          }
+        }
+      ],
+      "stats": {
+        "plans": 0,
+        "edges": 7,
+        "expansions": 186946,
+        "waits": 2733,
+        "queries": 735405,
+        "bodyChecks": 392270,
+        "rebuilds": 4722,
+        "tick": 4800,
+        "plannerEdges": 0,
+        "eligible": [
+          24,
+          25,
+          26,
+          27
+        ]
+      },
+      "units": [
+        {
+          "id": 6,
+          "owner": 0,
+          "type": "general",
+          "hp": 109.7010455999975,
+          "x": 11,
+          "y": 25.5,
+          "state": "idle",
+          "order": null,
+          "food": 65,
+          "path": [],
+          "contacts": []
+        },
+        {
+          "id": 15,
+          "owner": 0,
+          "type": "infantry",
+          "hp": 96.0982285132888,
+          "x": 11.789126408625481,
+          "y": 27.653632330576336,
+          "state": "idle",
+          "order": null,
+          "food": 13.504000000000518,
+          "path": [
+            {
+              "x": 11.5,
+              "y": 27.5
+            }
+          ],
+          "crowdRoute": [],
+          "crowdRetry": 3001,
+          "lastMovedTick": 3596,
+          "contacts": []
+        },
+        {
+          "id": 16,
+          "owner": 0,
+          "type": "spearman",
+          "hp": 83.16,
+          "x": 26.646609371785196,
+          "y": 39.5,
+          "state": "walk",
+          "order": null,
+          "food": 13.504000000000518,
+          "path": [
+            {
+              "x": 27.5,
+              "y": 39.5
+            },
+            {
+              "x": 28.5,
+              "y": 39.5
+            },
+            {
+              "x": 29.5,
+              "y": 39.5
+            }
+          ],
+          "crowdRoute": [],
+          "crowdRetry": 2998,
+          "lastMovedTick": 4000,
+          "contacts": []
+        },
+        {
+          "id": 23,
+          "owner": 1,
+          "type": "general",
+          "hp": 360,
+          "x": 50.934314575050735,
+          "y": 25.934314575050735,
+          "state": "idle",
+          "order": null,
+          "food": 50.453695999995205,
+          "path": [],
+          "crowdRoute": [],
+          "crowdGoal": {
+            "x": 50.5,
+            "y": 25.5
+          },
+          "retryPath": 0,
+          "crowdRetry": 730,
+          "lastMovedTick": 739,
+          "contacts": [
+            {
+              "id": 48,
+              "owner": 1,
+              "type": "villager",
+              "x": 50.5,
+              "y": 25.548085946036437,
+              "state": "walk",
+              "order": {
+                "type": "gather",
+                "target": 9
+              },
+              "distance": 0.5812071093609955
+            }
+          ]
+        },
+        {
+          "id": 30,
+          "owner": 1,
+          "type": "infantry",
+          "hp": 125,
+          "x": 48.5,
+          "y": 23.5,
+          "state": "idle",
+          "order": null,
+          "food": 13.504000000000518,
+          "path": [],
+          "contacts": [
+            {
+              "id": 31,
+              "owner": 1,
+              "type": "infantry",
+              "x": 48.5,
+              "y": 24.15,
+              "state": "idle",
+              "order": null,
+              "distance": 0.6499999999999986
+            }
+          ]
+        },
+        {
+          "id": 31,
+          "owner": 1,
+          "type": "infantry",
+          "hp": 125,
+          "x": 48.5,
+          "y": 24.15,
+          "state": "idle",
+          "order": null,
+          "food": 13.504000000000518,
+          "path": [],
+          "contacts": [
+            {
+              "id": 30,
+              "owner": 1,
+              "type": "infantry",
+              "x": 48.5,
+              "y": 23.5,
+              "state": "idle",
+              "order": null,
+              "distance": 0.6499999999999986
+            }
+          ]
+        }
+      ],
+      "queues": [
+        {
+          "id": 1,
+          "owner": 0,
+          "type": "residence",
+          "x": 9.5,
+          "y": 23.5,
+          "queue": [],
+          "cargo": {
+            "food": 207.4336000004041,
+            "wood": 0,
+            "iron": 0,
+            "units": []
+          }
+        },
+        {
+          "id": 2,
+          "owner": 0,
+          "type": "granary",
+          "x": 6.5,
+          "y": 26.5,
+          "queue": [],
+          "cargo": {
+            "food": 260,
+            "wood": 0,
+            "iron": 0,
+            "units": []
+          }
+        },
+        {
+          "id": 3,
+          "owner": 0,
+          "type": "depot",
+          "x": 13.5,
+          "y": 28.5,
+          "queue": [],
+          "cargo": {
+            "food": 120,
+            "wood": 0,
+            "iron": 0,
+            "units": []
+          }
+        },
+        {
+          "id": 4,
+          "owner": 0,
+          "type": "barracks",
+          "x": 13.5,
+          "y": 20.5,
+          "queue": [],
+          "cargo": {
+            "food": 0,
+            "wood": 0,
+            "iron": 0,
+            "units": []
+          }
+        },
+        {
+          "id": 18,
+          "owner": 1,
+          "type": "residence",
+          "x": 54.5,
+          "y": 23.5,
+          "queue": [],
+          "cargo": {
+            "food": 164.18617600000198,
+            "wood": 0,
+            "iron": 0,
+            "units": []
+          }
+        },
+        {
+          "id": 19,
+          "owner": 1,
+          "type": "granary",
+          "x": 57.5,
+          "y": 26.5,
+          "queue": [],
+          "cargo": {
+            "food": 0,
+            "wood": 0,
+            "iron": 0,
+            "units": []
+          }
+        },
+        {
+          "id": 20,
+          "owner": 1,
+          "type": "depot",
+          "x": 50.5,
+          "y": 28.5,
+          "queue": [],
+          "cargo": {
+            "food": 260,
+            "wood": 0,
+            "iron": 0,
+            "units": []
+          }
+        },
+        {
+          "id": 21,
+          "owner": 1,
+          "type": "barracks",
+          "x": 50.5,
+          "y": 20.5,
+          "queue": [],
+          "cargo": {
+            "food": 0,
+            "wood": 0,
+            "iron": 0,
+            "units": []
+          }
+        },
+        {
+          "id": 39,
+          "owner": 1,
+          "type": "cavalryCamp",
+          "x": 47.5,
+          "y": 30.5,
+          "queue": [],
+          "cargo": {
+            "food": 0,
+            "wood": 0,
+            "iron": 0,
+            "units": []
+          }
+        },
+        {
+          "id": 47,
+          "owner": 1,
+          "type": "shipyard",
+          "x": 52.5,
+          "y": 38.5,
+          "queue": [],
+          "cargo": {
+            "food": 0,
+            "wood": 0,
+            "iron": 0,
+            "units": []
+          }
+        }
+      ]
+    },
+    {
+      "tick": 4400,
+      "winner": null,
+      "players": [
+        {
+          "id": 0,
+          "resources": {
+            "wood": 550,
+            "food": 587.4336000004041,
+            "iron": 260
+          },
+          "ai": {
+            "phase": 0,
+            "scout": 0
+          }
+        },
+        {
+          "id": 1,
+          "resources": {
+            "wood": 110,
+            "food": 424.186176000002,
+            "iron": 2035
+          },
+          "ai": {
+            "phase": 0,
+            "scout": 0,
+            "builder": 24,
+            "building": "artilleryWorkshop",
+            "naval": null,
+            "navalLandings": 1,
+            "nextNaval": 5120
+          }
+        }
+      ],
+      "stats": {
+        "plans": 0,
+        "edges": 7,
+        "expansions": 186946,
+        "waits": 2733,
+        "queries": 735405,
+        "bodyChecks": 392270,
+        "rebuilds": 4722,
+        "tick": 4800,
+        "plannerEdges": 0,
+        "eligible": [
+          24,
+          25,
+          26,
+          27
+        ]
+      },
+      "units": [
+        {
+          "id": 6,
+          "owner": 0,
+          "type": "general",
+          "hp": 169.70104559999976,
+          "x": 11,
+          "y": 25.5,
+          "state": "idle",
+          "order": null,
+          "food": 65,
+          "path": [],
+          "contacts": []
+        },
+        {
+          "id": 15,
+          "owner": 0,
+          "type": "infantry",
+          "hp": 125,
+          "x": 11.789126408625481,
+          "y": 27.653632330576336,
+          "state": "idle",
+          "order": null,
+          "food": 10.854400000000355,
+          "path": [
+            {
+              "x": 11.5,
+              "y": 27.5
+            }
+          ],
+          "crowdRoute": [],
+          "crowdRetry": 3001,
+          "lastMovedTick": 3596,
+          "contacts": []
+        },
+        {
+          "id": 16,
+          "owner": 0,
+          "type": "spearman",
+          "hp": 83.16,
+          "x": 43.69660937178511,
+          "y": 39.5,
+          "state": "idle",
+          "order": null,
+          "food": 10.854400000000355,
+          "path": [
+            {
+              "x": 44.5,
+              "y": 39.5
+            },
+            {
+              "x": 45.5,
+              "y": 39.5
+            },
+            {
+              "x": 46.5,
+              "y": 39.5
+            },
+            {
+              "x": 47.5,
+              "y": 39.5
+            },
+            {
+              "x": 48.5,
+              "y": 39.5
+            }
+          ],
+          "crowdRoute": [],
+          "crowdRetry": 2998,
+          "lastMovedTick": 4155,
+          "contacts": []
+        },
+        {
+          "id": 23,
+          "owner": 1,
+          "type": "general",
+          "hp": 360,
+          "x": 50.934314575050735,
+          "y": 25.934314575050735,
+          "state": "idle",
+          "order": null,
+          "food": 47.80409599999433,
+          "path": [],
+          "crowdRoute": [],
+          "crowdGoal": {
+            "x": 50.5,
+            "y": 25.5
+          },
+          "retryPath": 0,
+          "crowdRetry": 730,
+          "lastMovedTick": 739,
+          "contacts": [
+            {
+              "id": 48,
+              "owner": 1,
+              "type": "villager",
+              "x": 50.5,
+              "y": 25.548085946036437,
+              "state": "walk",
+              "order": {
+                "type": "gather",
+                "target": 9
+              },
+              "distance": 0.5812071093609955
+            }
+          ]
+        },
+        {
+          "id": 30,
+          "owner": 1,
+          "type": "infantry",
+          "hp": 125,
+          "x": 48.5,
+          "y": 23.5,
+          "state": "idle",
+          "order": null,
+          "food": 10.854400000000355,
+          "path": [],
+          "contacts": [
+            {
+              "id": 31,
+              "owner": 1,
+              "type": "infantry",
+              "x": 48.5,
+              "y": 24.15,
+              "state": "idle",
+              "order": null,
+              "distance": 0.6499999999999986
+            }
+          ]
+        },
+        {
+          "id": 31,
+          "owner": 1,
+          "type": "infantry",
+          "hp": 125,
+          "x": 48.5,
+          "y": 24.15,
+          "state": "idle",
+          "order": null,
+          "food": 10.854400000000355,
+          "path": [],
+          "contacts": [
+            {
+              "id": 30,
+              "owner": 1,
+              "type": "infantry",
+              "x": 48.5,
+              "y": 23.5,
+              "state": "idle",
+              "order": null,
+              "distance": 0.6499999999999986
+            }
+          ]
+        }
+      ],
+      "queues": [
+        {
+          "id": 1,
+          "owner": 0,
+          "type": "residence",
+          "x": 9.5,
+          "y": 23.5,
+          "queue": [],
+          "cargo": {
+            "food": 207.4336000004041,
+            "wood": 0,
+            "iron": 0,
+            "units": []
+          }
+        },
+        {
+          "id": 2,
+          "owner": 0,
+          "type": "granary",
+          "x": 6.5,
+          "y": 26.5,
+          "queue": [],
+          "cargo": {
+            "food": 260,
+            "wood": 0,
+            "iron": 0,
+            "units": []
+          }
+        },
+        {
+          "id": 3,
+          "owner": 0,
+          "type": "depot",
+          "x": 13.5,
+          "y": 28.5,
+          "queue": [],
+          "cargo": {
+            "food": 120,
+            "wood": 0,
+            "iron": 0,
+            "units": []
+          }
+        },
+        {
+          "id": 4,
+          "owner": 0,
+          "type": "barracks",
+          "x": 13.5,
+          "y": 20.5,
+          "queue": [],
+          "cargo": {
+            "food": 0,
+            "wood": 0,
+            "iron": 0,
+            "units": []
+          }
+        },
+        {
+          "id": 18,
+          "owner": 1,
+          "type": "residence",
+          "x": 54.5,
+          "y": 23.5,
+          "queue": [],
+          "cargo": {
+            "food": 164.18617600000198,
+            "wood": 0,
+            "iron": 0,
+            "units": []
+          }
+        },
+        {
+          "id": 19,
+          "owner": 1,
+          "type": "granary",
+          "x": 57.5,
+          "y": 26.5,
+          "queue": [],
+          "cargo": {
+            "food": 0,
+            "wood": 0,
+            "iron": 0,
+            "units": []
+          }
+        },
+        {
+          "id": 20,
+          "owner": 1,
+          "type": "depot",
+          "x": 50.5,
+          "y": 28.5,
+          "queue": [],
+          "cargo": {
+            "food": 260,
+            "wood": 0,
+            "iron": 0,
+            "units": []
+          }
+        },
+        {
+          "id": 21,
+          "owner": 1,
+          "type": "barracks",
+          "x": 50.5,
+          "y": 20.5,
+          "queue": [],
+          "cargo": {
+            "food": 0,
+            "wood": 0,
+            "iron": 0,
+            "units": []
+          }
+        },
+        {
+          "id": 39,
+          "owner": 1,
+          "type": "cavalryCamp",
+          "x": 47.5,
+          "y": 30.5,
+          "queue": [],
+          "cargo": {
+            "food": 0,
+            "wood": 0,
+            "iron": 0,
+            "units": []
+          }
+        },
+        {
+          "id": 47,
+          "owner": 1,
+          "type": "shipyard",
+          "x": 52.5,
+          "y": 38.5,
+          "queue": [],
+          "cargo": {
+            "food": 0,
+            "wood": 0,
+            "iron": 0,
+            "units": []
+          }
+        }
+      ]
+    },
+    {
+      "tick": 4800,
+      "winner": null,
+      "players": [
+        {
+          "id": 0,
+          "resources": {
+            "wood": 550,
+            "food": 587.4336000004041,
+            "iron": 260
+          },
+          "ai": {
+            "phase": 0,
+            "scout": 0
+          }
+        },
+        {
+          "id": 1,
+          "resources": {
+            "wood": 110,
+            "food": 424.186176000002,
+            "iron": 2035
+          },
+          "ai": {
+            "phase": 0,
+            "scout": 0,
+            "builder": 24,
+            "building": "artilleryWorkshop",
+            "naval": null,
+            "navalLandings": 1,
+            "nextNaval": 5120
+          }
+        }
+      ],
+      "stats": {
+        "plans": 0,
+        "edges": 7,
+        "expansions": 186946,
+        "waits": 2733,
+        "queries": 735405,
+        "bodyChecks": 392270,
+        "rebuilds": 4722,
+        "tick": 4800,
+        "plannerEdges": 0,
+        "eligible": [
+          24,
+          25,
+          26,
+          27
+        ]
+      },
+      "units": [
+        {
+          "id": 6,
+          "owner": 0,
+          "type": "general",
+          "hp": 229.70104560000203,
+          "x": 11,
+          "y": 25.5,
+          "state": "idle",
+          "order": null,
+          "food": 65,
+          "path": [],
+          "contacts": []
+        },
+        {
+          "id": 15,
+          "owner": 0,
+          "type": "infantry",
+          "hp": 125,
+          "x": 11.789126408625481,
+          "y": 27.653632330576336,
+          "state": "idle",
+          "order": null,
+          "food": 8.204800000000192,
+          "path": [
+            {
+              "x": 11.5,
+              "y": 27.5
+            }
+          ],
+          "crowdRoute": [],
+          "crowdRetry": 3001,
+          "lastMovedTick": 3596,
+          "contacts": []
+        },
+        {
+          "id": 16,
+          "owner": 0,
+          "type": "spearman",
+          "hp": 83.16,
+          "x": 43.69660937178511,
+          "y": 39.5,
+          "state": "idle",
+          "order": null,
+          "food": 8.204800000000192,
+          "path": [
+            {
+              "x": 44.5,
+              "y": 39.5
+            },
+            {
+              "x": 45.5,
+              "y": 39.5
+            },
+            {
+              "x": 46.5,
+              "y": 39.5
+            },
+            {
+              "x": 47.5,
+              "y": 39.5
+            },
+            {
+              "x": 48.5,
+              "y": 39.5
+            }
+          ],
+          "crowdRoute": [],
+          "crowdRetry": 2998,
+          "lastMovedTick": 4155,
+          "contacts": []
+        },
+        {
+          "id": 23,
+          "owner": 1,
+          "type": "general",
+          "hp": 360,
+          "x": 50.934314575050735,
+          "y": 25.934314575050735,
+          "state": "idle",
+          "order": null,
+          "food": 45.15449599999346,
+          "path": [],
+          "crowdRoute": [],
+          "crowdGoal": {
+            "x": 50.5,
+            "y": 25.5
+          },
+          "retryPath": 0,
+          "crowdRetry": 730,
+          "lastMovedTick": 739,
+          "contacts": [
+            {
+              "id": 48,
+              "owner": 1,
+              "type": "villager",
+              "x": 50.5,
+              "y": 25.548085946036437,
+              "state": "walk",
+              "order": {
+                "type": "gather",
+                "target": 9
+              },
+              "distance": 0.5812071093609955
+            }
+          ]
+        },
+        {
+          "id": 30,
+          "owner": 1,
+          "type": "infantry",
+          "hp": 125,
+          "x": 48.5,
+          "y": 23.5,
+          "state": "idle",
+          "order": null,
+          "food": 8.204800000000192,
+          "path": [],
+          "contacts": [
+            {
+              "id": 31,
+              "owner": 1,
+              "type": "infantry",
+              "x": 48.5,
+              "y": 24.15,
+              "state": "idle",
+              "order": null,
+              "distance": 0.6499999999999986
+            }
+          ]
+        },
+        {
+          "id": 31,
+          "owner": 1,
+          "type": "infantry",
+          "hp": 125,
+          "x": 48.5,
+          "y": 24.15,
+          "state": "idle",
+          "order": null,
+          "food": 8.204800000000192,
+          "path": [],
+          "contacts": [
+            {
+              "id": 30,
+              "owner": 1,
+              "type": "infantry",
+              "x": 48.5,
+              "y": 23.5,
+              "state": "idle",
+              "order": null,
+              "distance": 0.6499999999999986
+            }
+          ]
+        }
+      ],
+      "queues": [
+        {
+          "id": 1,
+          "owner": 0,
+          "type": "residence",
+          "x": 9.5,
+          "y": 23.5,
+          "queue": [],
+          "cargo": {
+            "food": 207.4336000004041,
+            "wood": 0,
+            "iron": 0,
+            "units": []
+          }
+        },
+        {
+          "id": 2,
+          "owner": 0,
+          "type": "granary",
+          "x": 6.5,
+          "y": 26.5,
+          "queue": [],
+          "cargo": {
+            "food": 260,
+            "wood": 0,
+            "iron": 0,
+            "units": []
+          }
+        },
+        {
+          "id": 3,
+          "owner": 0,
+          "type": "depot",
+          "x": 13.5,
+          "y": 28.5,
+          "queue": [],
+          "cargo": {
+            "food": 120,
+            "wood": 0,
+            "iron": 0,
+            "units": []
+          }
+        },
+        {
+          "id": 4,
+          "owner": 0,
+          "type": "barracks",
+          "x": 13.5,
+          "y": 20.5,
+          "queue": [],
+          "cargo": {
+            "food": 0,
+            "wood": 0,
+            "iron": 0,
+            "units": []
+          }
+        },
+        {
+          "id": 18,
+          "owner": 1,
+          "type": "residence",
+          "x": 54.5,
+          "y": 23.5,
+          "queue": [],
+          "cargo": {
+            "food": 164.18617600000198,
+            "wood": 0,
+            "iron": 0,
+            "units": []
+          }
+        },
+        {
+          "id": 19,
+          "owner": 1,
+          "type": "granary",
+          "x": 57.5,
+          "y": 26.5,
+          "queue": [],
+          "cargo": {
+            "food": 0,
+            "wood": 0,
+            "iron": 0,
+            "units": []
+          }
+        },
+        {
+          "id": 20,
+          "owner": 1,
+          "type": "depot",
+          "x": 50.5,
+          "y": 28.5,
+          "queue": [],
+          "cargo": {
+            "food": 260,
+            "wood": 0,
+            "iron": 0,
+            "units": []
+          }
+        },
+        {
+          "id": 21,
+          "owner": 1,
+          "type": "barracks",
+          "x": 50.5,
+          "y": 20.5,
+          "queue": [],
+          "cargo": {
+            "food": 0,
+            "wood": 0,
+            "iron": 0,
+            "units": []
+          }
+        },
+        {
+          "id": 39,
+          "owner": 1,
+          "type": "cavalryCamp",
+          "x": 47.5,
+          "y": 30.5,
+          "queue": [],
+          "cargo": {
+            "food": 0,
+            "wood": 0,
+            "iron": 0,
+            "units": []
+          }
+        },
+        {
+          "id": 47,
+          "owner": 1,
+          "type": "shipyard",
+          "x": 52.5,
+          "y": 38.5,
+          "queue": [],
+          "cargo": {
+            "food": 0,
+            "wood": 0,
+            "iron": 0,
+            "units": []
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,3 +1,19 @@
+## Current083 — fair detours fixed; real contact defect being corrected
+
+Latest human instruction removes quota polling and percentage stopping; continue the project with parallel exact Sol6.1Low workers. Public development069 ping fix remains verified and running (9a7e…ceff5); live shared simulation is unchanged and still permits stacking.
+
+073 isolated admission contracts pass.076 then proves real planner starvation (six of ten blocked requesters never served);077 persistent FIFO corrects it, all ten now receive20 actual admissions each, with the existing targeted guards passing.076 opposing-ford900tick clearance/combat progress passes. Original failure receipts remain preserved.
+
+075 original six240s AI gates yield5PASS/Coast easy FAIL;079 on fair077 still fails the exact Coast easy deadline, with remaining gates uncalled.081 comparative diagnostics identify an actual contact defect: food workers28/38 remain outside original gathering range while their tile centers satisfy the path goal, repeatedly producing empty paths and no food. Baseline wins at3051; this is evidence for world-position arrival correction, not permission to strengthen AI or weaken victory assertions.
+
+078 whole-group translation repairs border destination collapse, but one unit remains blocked outside its original arrival range.080 half-cell terminal sampling fails that same movement gate.082 nearest straight connector is physically blocked by a held unit and is rejected before implementation. All failures and parent sources remain preserved; these methods are not silently retried.
+
+NEXT live083 is one coherent actual-world-start/action-contact correction with bounded continuous terminal candidates and exact swept terrain/building/body clearance, retaining movement speeds, action ranges, combat anchors and economy. First meaningful contact/edge and current regression gates, then a separate exact AI/naval order if qualified. Inspect actual083 handle/source/receipt before resuming. No crowd code has entered live shared/sim.js or public deployment; no broad visual/performance acceptance.
+
+041 one masked gpt-image-1.5 edit remains authorized/key missing at last presence check/APIcalls0. Owner032 South gathering acceptance stands; no blind D0 art retry, new limb textures, 3D intermediate or roster fanout. Full game NOT COMPLETE. Older entries below are history.
+
+---
+
 ## Current072 — public ping fix deployed; crowd correction in isolated drafts
 
 Latest human instruction: continue project work without quota polling or percentage-based stopping. All project workers use gpt-6.1-sol / low; parallel work is authorized.

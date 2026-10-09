@@ -1,0 +1,16 @@
+--- 073/sim-draft.js
++++ 078/sim-draft.js
+@@ -169,7 +169,12 @@
+  const ids=[...new Set(c.ids)].sort((a,b)=>a-b),es=ids.map(id=>get(s,id));if(es.some(e=>!e||e.owner!==p||e.kind!=='unit'||e.embarked))return reject('Invalid unit ownership');
+  if(['move','attackMove'].includes(c.type)){
+   if(!bounds(s,c.x,c.y))return reject('Invalid destination');if(es.some(e=>active(s,e,'shock')))return reject('Assault commitment prevents retreat orders');
+-  const spacing=Math.max(.75,...es.map(e=>2*crowdRadius(e)+.05)),rows=Math.ceil(es.length/5);for(const [i,e] of es.entries()){const offset=es.length>1?{x:(i%5-2)*spacing,y:(Math.floor(i/5)-(rows-1)/2)*spacing}:{x:0,y:0};const target={x:Math.max(0.5,Math.min(s.map.width-0.5,c.x+offset.x)),y:Math.max(0.5,Math.min(s.map.height-0.5,c.y+offset.y))};cancelAttack(e);e.order={type:c.type,...target};e.path=[];e.retryPath=0;e.state='walk';}return {ok:true};
++  const spacing=Math.max(.75,...es.map(e=>2*crowdRadius(e)+.05)),rows=Math.ceil(es.length/5);
++  const offsets=es.map((e,i)=>es.length>1?{x:(i%5-2)*spacing,y:(Math.floor(i/5)-(rows-1)/2)*spacing}:{x:0,y:0});
++  const minX=Math.min(...offsets.map(o=>o.x)),maxX=Math.max(...offsets.map(o=>o.x)),minY=Math.min(...offsets.map(o=>o.y)),maxY=Math.max(...offsets.map(o=>o.y));
++  if(maxX-minX>s.map.width-1||maxY-minY>s.map.height-1)return reject('Formation cannot fit map');
++  const center={x:Math.max(.5-minX,Math.min(s.map.width-.5-maxX,c.x)),y:Math.max(.5-minY,Math.min(s.map.height-.5-maxY,c.y))};
++  for(const [i,e] of es.entries()){const target={x:center.x+offsets[i].x,y:center.y+offsets[i].y};cancelAttack(e);e.order={type:c.type,...target};e.path=[];e.retryPath=0;e.state='walk';}return {ok:true};
+  }
+  if(c.type==='stop'||c.type==='hold'){if(es.some(e=>active(s,e,'shock')))return reject('Assault commitment is active');for(const e of es){cancelAttack(e);e.order=c.type==='hold'?{type:'hold'}:null;e.path=[];e.state='idle';}return {ok:true};}
+  if(c.type==='attack'){

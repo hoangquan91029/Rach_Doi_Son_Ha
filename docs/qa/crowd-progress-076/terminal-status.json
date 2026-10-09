@@ -1,0 +1,30 @@
+{
+  "status": "HOLD_PLANNER_FAIRNESS_STARVATION",
+  "ford": "900ticks PASS5attackers",
+  "fairness": {
+    "ticks": 200,
+    "actualAdmissionsById": {
+      "35": 0,
+      "36": 20,
+      "37": 20,
+      "38": 20,
+      "39": 20,
+      "40": 0,
+      "41": 0,
+      "42": 0,
+      "43": 0,
+      "44": 0
+    },
+    "zeroAdmissionIds": [
+      "35",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44"
+    ]
+  },
+  "mapEdgeFormation": "UNCALLED_STOP_FIRST_FAILURE",
+  "noRuntimeOrProductionChanges": true,
+  "fixtureScope": "Static eightbody rings intentionally block local exit. Ringbody-to-ringbody overlaps are initial fixture geometry; no physicalclearance acceptance fromfairnessfixture. Movers remainclear ofstaticbodies. Fairness requiresservice even when no route possible, notsuccessfulescape."
+}

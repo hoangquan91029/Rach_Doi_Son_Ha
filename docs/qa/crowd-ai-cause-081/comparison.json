@@ -1,0 +1,370 @@
+{
+  "baselineFinal": {
+    "tick": 3051,
+    "winner": 1
+  },
+  "candidateFinal": {
+    "tick": 4800,
+    "winner": null
+  },
+  "likeIntervalRows": [
+    {
+      "tick": 1600,
+      "baseline": {
+        "resources": {
+          "wood": 105,
+          "food": 184.17523199998936,
+          "iron": 635
+        },
+        "general0HP": 360,
+        "livingAImilitary": 8,
+        "foodWorkers": [
+          {
+            "id": 28,
+            "x": 53.54369104263771,
+            "y": 19.543691042637715,
+            "state": "gather",
+            "cargo": {
+              "food": 10.050000000000013,
+              "wood": 0,
+              "iron": 0,
+              "units": []
+            },
+            "path": [],
+            "retryPath": 0,
+            "distanceToNode7": 1.0446051405621983
+          },
+          {
+            "id": 38,
+            "x": 53.54384000031688,
+            "y": 19.54384000031688,
+            "state": "gather",
+            "cargo": {
+              "food": 17.70000000000001,
+              "wood": 0,
+              "iron": 0,
+              "units": []
+            },
+            "path": [],
+            "retryPath": 0,
+            "distanceToNode7": 1.0447602078416502
+          }
+        ]
+      },
+      "candidate077": {
+        "resources": {
+          "wood": 170,
+          "food": 20,
+          "iron": 525
+        },
+        "general0HP": 360,
+        "livingAImilitary": 7,
+        "foodWorkers": [
+          {
+            "id": 28,
+            "x": 53.86609725649461,
+            "y": 19.98342574073483,
+            "state": "idle",
+            "cargo": {
+              "food": 0,
+              "wood": 0,
+              "iron": 0,
+              "units": []
+            },
+            "path": [],
+            "retryPath": 1620,
+            "distanceToNode7": 1.527932959749073
+          },
+          {
+            "id": 38,
+            "x": 53.35206367132979,
+            "y": 19.647936328670212,
+            "state": "idle",
+            "cargo": {
+              "food": 0,
+              "wood": 0,
+              "iron": 0,
+              "units": []
+            },
+            "path": [],
+            "retryPath": 1620,
+            "distanceToNode7": 1.1574294674066612
+          }
+        ]
+      }
+    },
+    {
+      "tick": 2000,
+      "baseline": {
+        "resources": {
+          "wood": 0,
+          "food": 184.6609279999921,
+          "iron": 630
+        },
+        "general0HP": 360,
+        "livingAImilitary": 8,
+        "foodWorkers": [
+          {
+            "id": 28,
+            "x": 53.54360109688774,
+            "y": 19.543601096887745,
+            "state": "gather",
+            "cargo": {
+              "food": 16.950000000000017,
+              "wood": 0,
+              "iron": 0,
+              "units": []
+            },
+            "path": [],
+            "retryPath": 0,
+            "distanceToNode7": 1.0445115150514703
+          },
+          {
+            "id": 38,
+            "x": 54.494658849341064,
+            "y": 20.617327902378005,
+            "state": "walk",
+            "cargo": {
+              "food": 0,
+              "wood": 0,
+              "iron": 0,
+              "units": []
+            },
+            "path": [
+              {
+                "x": 54.5,
+                "y": 20.5
+              },
+              {
+                "x": 53.5,
+                "y": 19.5
+              }
+            ],
+            "retryPath": 0,
+            "distanceToNode7": 2.3393211991432326
+          }
+        ]
+      },
+      "candidate077": {
+        "resources": {
+          "wood": 20,
+          "food": 20,
+          "iron": 575
+        },
+        "general0HP": 360,
+        "livingAImilitary": 7,
+        "foodWorkers": [
+          {
+            "id": 28,
+            "x": 53.86609725649461,
+            "y": 19.98342574073483,
+            "state": "idle",
+            "cargo": {
+              "food": 0,
+              "wood": 0,
+              "iron": 0,
+              "units": []
+            },
+            "path": [],
+            "retryPath": 2020,
+            "distanceToNode7": 1.527932959749073
+          },
+          {
+            "id": 38,
+            "x": 53.35206367132979,
+            "y": 19.647936328670212,
+            "state": "idle",
+            "cargo": {
+              "food": 0,
+              "wood": 0,
+              "iron": 0,
+              "units": []
+            },
+            "path": [],
+            "retryPath": 2020,
+            "distanceToNode7": 1.1574294674066612
+          }
+        ]
+      }
+    },
+    {
+      "tick": 2400,
+      "baseline": {
+        "resources": {
+          "wood": 40,
+          "food": 132.58537599999187,
+          "iron": 710
+        },
+        "general0HP": 360,
+        "livingAImilitary": 10,
+        "foodWorkers": [
+          {
+            "id": 28,
+            "x": 54.4707620041131,
+            "y": 21.14175199762144,
+            "state": "walk",
+            "cargo": {
+              "food": 0,
+              "wood": 0,
+              "iron": 0,
+              "units": []
+            },
+            "path": [
+              {
+                "x": 54.5,
+                "y": 20.5
+              },
+              {
+                "x": 53.5,
+                "y": 19.5
+              }
+            ],
+            "retryPath": 0,
+            "distanceToNode7": 2.8144684197138456
+          },
+          {
+            "id": 38,
+            "x": 53.543582765131156,
+            "y": 19.54358276513116,
+            "state": "gather",
+            "cargo": {
+              "food": 4.950000000000001,
+              "wood": 0,
+              "iron": 0,
+              "units": []
+            },
+            "path": [],
+            "retryPath": 0,
+            "distanceToNode7": 1.0444924341972388
+          }
+        ]
+      },
+      "candidate077": {
+        "resources": {
+          "wood": 20,
+          "food": 20,
+          "iron": 685
+        },
+        "general0HP": 360,
+        "livingAImilitary": 6,
+        "foodWorkers": [
+          {
+            "id": 28,
+            "x": 53.86609725649461,
+            "y": 19.98342574073483,
+            "state": "idle",
+            "cargo": {
+              "food": 0,
+              "wood": 0,
+              "iron": 0,
+              "units": []
+            },
+            "path": [],
+            "retryPath": 2420,
+            "distanceToNode7": 1.527932959749073
+          },
+          {
+            "id": 38,
+            "x": 53.35206367132979,
+            "y": 19.647936328670212,
+            "state": "idle",
+            "cargo": {
+              "food": 0,
+              "wood": 0,
+              "iron": 0,
+              "units": []
+            },
+            "path": [],
+            "retryPath": 2420,
+            "distanceToNode7": 1.1574294674066612
+          }
+        ]
+      }
+    },
+    {
+      "tick": 2800,
+      "baseline": {
+        "resources": {
+          "wood": 0,
+          "food": 92.84147199998935,
+          "iron": 820
+        },
+        "general0HP": 325.4899999999945,
+        "livingAImilitary": 11,
+        "foodWorkers": [
+          {
+            "id": 28,
+            "x": 53.54357813069088,
+            "y": 19.543578130690886,
+            "state": "gather",
+            "cargo": {
+              "food": 4.199999999999999,
+              "wood": 0,
+              "iron": 0,
+              "units": []
+            },
+            "path": [],
+            "retryPath": 0,
+            "distanceToNode7": 1.0444876104247456
+          },
+          {
+            "id": 38,
+            "x": 53.543578727658215,
+            "y": 19.54357872765822,
+            "state": "gather",
+            "cargo": {
+              "food": 11.850000000000017,
+              "wood": 0,
+              "iron": 0,
+              "units": []
+            },
+            "path": [],
+            "retryPath": 0,
+            "distanceToNode7": 1.0444882317791113
+          }
+        ]
+      },
+      "candidate077": {
+        "resources": {
+          "wood": 80,
+          "food": 20,
+          "iron": 805
+        },
+        "general0HP": 341.9699999999965,
+        "livingAImilitary": 5,
+        "foodWorkers": [
+          {
+            "id": 28,
+            "x": 53.86609725649461,
+            "y": 19.98342574073483,
+            "state": "idle",
+            "cargo": {
+              "food": 0,
+              "wood": 0,
+              "iron": 0,
+              "units": []
+            },
+            "path": [],
+            "retryPath": 2820,
+            "distanceToNode7": 1.527932959749073
+          },
+          {
+            "id": 38,
+            "x": 53.35206367132979,
+            "y": 19.647936328670212,
+            "state": "idle",
+            "cargo": {
+              "food": 0,
+              "wood": 0,
+              "iron": 0,
+              "units": []
+            },
+            "path": [],
+            "retryPath": 2820,
+            "distanceToNode7": 1.1574294674066612
+          }
+        ]
+      }
+    }
+  ]
+}

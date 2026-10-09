@@ -1,0 +1,9 @@
+# 080 terminal HOLD — first edge arrival correction fails unchanged gate
+
+ExactSol6.1Low; ONE coherent isolatedimplementationbatch,0retries/no tuning. Frozen077parent plus root-approved078whole-group fit section copied; parent/live/finalcandidatepins retained. No live sharedsim/build/backend/frontend/deploy/fullAI, quota lookup, topdocs or commit.079independent077source untouched.
+
+Observed078 blocker: ID43 target2.75/1.25 stops2.991260646/1.991260646, remainingcoarsepoint2.5/1.5 occupied by arrivedneighbors. Existingrange.7 excludesactualdistance≈.7795. New patchplanner permits clear graphnodes anywhere inside original target/range disk when rejoin goal is terminal, rather than requiring exact coarsepoint. Every node/edge still terrain/building/sweptbody clear; normal actualmovement/speed/heldanchors remain unchanged. Nonterminalcoarserejoin contract untouched, fairFIFO/plannerbudget retained. No positions teleported or arrival/range relabeled.
+
+FIRST unchanged078edge fixture stillFAIL after1800steps at first(.1,.1) corner. Ninearrived; ID43 sameposition/pendingmove/pathsingle2.5/1.5.177failedpatchwaits/34516expansions/132410queries show actual attemptedplanning, not starvation. No route succeeded. Rawedge-receipt contains fullstate/targets; source/code/logs/pins preserved. Stopfirstmeaningfulalgorithmfailure: otheredgecases,076ford/fairness,073admission/070four/privacy/navigation/timing/budget UNCAlLED.
+
+Likely limit, explicitly unproven: half-cell graph samples maymiss an actual continuousclear portion of the original.7terminaldisk amongheldarrivedneighbors. Do not call this a provenlegalroute or enlarge arrivalrange. A later finite design order should geometrically inspect actual neighboringbodydisks against targetdisk and distinguish trulyinfeasiblecleararrival from sample-resolutionfailure before another implementation; retain failed080 without tuning. No fullAI/victory/visual or deployment claim.

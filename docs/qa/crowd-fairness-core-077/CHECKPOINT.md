@@ -1,0 +1,11 @@
+# 077 terminal — actual requester starvation fixed narrowly
+
+ExactSol6.1Low; only isolated077 directory changed. Frozen073/livepins retained, original075/076 failures unchanged. No quota lookup, livegame source/frontend/backend/deploy, fullAI/browser/balance/mapedge changes.
+
+ONE fairness-only implementationbatch: persistent authoritative crowdQueue stores actual blockedrequest IDs/requestedTick/orderSignature; oldest request then stableID service,4actualplans and4096planneredges cap. Denied requests do not receive10tick retry. Actual admission alone sets retry and records admittedIDs/tick. Dead/embarked/missing/canceled/changed-order requests pruned on preparation. Existing acceptedphysical movement/combatiteration/speed/economy unchanged; same-tick membership rebuild preserves budgets; ordinarymoves retain separate checks. Queue covered by completehash and omitted from filteredview.
+
+Actual unchanged076tenblockedrequester200tick fixture PASS: IDs35–44 each receive20actualplanneradmissions, replacing original4IDs20/6IDs0. Predicate requires due request to receiveactualadmission and retry=tick+10, not stats-only counters; raw fullstate/countedservice/replay preserved. Requests deliberately unrouteable; this is fairservice proof, NOT movementescape or CoastAI victory. Admissionevents retained peractualtick.
+
+Five073admission invariants PASS; four070fixtures PASS; queue/routeprivacy guard PASS;6navigation and6authoritativeattacktiming/viewhash PASS; plannerbudgetindependentmovement guard PASS.23existingtargetedcontracts plusfairness. No meaningfulalgorithmfailure/tuning/assertionweakening. No fullAI replay under077; Coast easy075 winnernull still unresolved until separate exactfrozen diagnostic/fullAI order afterrootreview.
+
+Limit: strictFIFO requests are serviced during existing entityiteration; if theoldest request’s entity updateslate, earlier requests waitnexttick. This bounds throughput differently from a separate schedulerphase; no productioncapacity claim. Cleanup cancels servicedroute via existingtravel/order code; queue does not hold enemyhiddenroute. Spatialadmission/initialgeometry/edgeformation limits from073 remainopen. Review isolateddiff/service evidence before integration or broaderorder.

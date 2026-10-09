@@ -1,0 +1,7 @@
+#076 terminal HOLD planner fairness starvation
+
+Frozen073sim source pinned; no liveimplementation/browser/deploy change. ONE sequentialbatch: opposingford900tick then blockedrequesterfairness200tick, stopfirstalgorithmfailure. Ford actualcommand/step replay passes retainedterrain, fixedspeed bound, livingpairclearance, pendingwindup anchors and5soldiers completingimpacts; realdamage/combat progresses. Artificialfixture requires no winner. Raw30tick snapshots ford-replay.json.
+
+Fairness uses10 persistentlegitimate movecommands once, eachwithin staticblocked body ring, then200ordinary steps withnoorder/state mutation. IDs36–39 receive20 actualplanneradmissions each; IDs35/40–44 receiveZERO. At retries ticks1/11/21/etc eligible remains36–39. stats.plans=4 agrees withdue eligible admittedrequesters. Routesfail duecages bydesign; service itself must be fair, no claimescapepossible. The tick%10 rotation plus deniedrequests receiving retry=tick+10 phase-locks exclusion, contradicting boundedplannerfairness. SeriousHOLD; map-edge formation remainsUNCALLED.
+
+Cage ringbody-to-ringbody overlaps are initialfixturegeometry; fairness test makes no physicalclearance acceptance claim for those staticbodies. Eachrequester isclear ofringbodies. Staticunrouteable rings keepcohortconstant andlegitimatelyrequest plannerwork; zeroadmission isdistinctfromnomovement due blockedroute. Fullstate/retry/eligible/countreplay fairness-receipt.json allows exact replay. No tuning/assertionweakening/retry or broaderaudit. Root notified before expansion.

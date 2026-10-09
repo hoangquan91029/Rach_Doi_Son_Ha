@@ -1,0 +1,19 @@
+{
+  "gate": "ai",
+  "source": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/crowd-admission-core-073/sim-draft.js",
+  "sourceSHA256": "61b1a9fe38c1786e3755d3e094ead2b892a52899a298ca291add3a2fa0161df9",
+  "method": "Frozen exact tests; import URLs only changed. No assertions/seeds/economy/timecaps edited.",
+  "preparedFiles": [
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/crowd-compatibility-074/075-ai/sim.test.js",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/crowd-compatibility-074/075-ai/navigation.test.js"
+  ],
+  "command": [
+    "/home/kieu-hoang-quan/.nvm/versions/node/v24.15.0/bin/node",
+    "--test",
+    "--test-concurrency=1",
+    "--test-name-pattern=AI completes normal combat victory",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/crowd-compatibility-074/075-ai/sim.test.js"
+  ],
+  "exitCode": 1,
+  "signal": null
+}

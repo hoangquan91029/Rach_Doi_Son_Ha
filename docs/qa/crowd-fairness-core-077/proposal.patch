@@ -1,0 +1,32 @@
+--- frozen073/sim-draft.js
++++ isolated077/sim-draft.js
+@@ -99,9 +99,8 @@
+ function crowdPrepare(s){
+  if(s.crowdIndex?.tick===s.tick)return;
+  const positions=Object.fromEntries(s.entities.map((u,i)=>[u.id,i])),buckets={};for(const u of [...s.entities].sort((a,b)=>a.id-b.id)){if(u.kind!=='unit'||!living(u))continue;const key=`${Math.floor(u.x)},${Math.floor(u.y)}`;(buckets[key]??=[]).push(u.id);}
+- const ids=s.entities.filter(u=>u.kind==='unit'&&living(u)&&u.order&& !u.pendingAttack&&u.order.type!=='hold').map(u=>u.id).sort((a,b)=>a-b);
+- const offset=ids.length?s.tick%ids.length:0,eligible=ids.slice(offset).concat(ids.slice(0,offset)).slice(0,4);
+- s.crowdIndex={tick:s.tick,buckets,positions};s.crowdStats??={plans:0,edges:0,expansions:0,waits:0,queries:0,bodyChecks:0,rebuilds:0};if(s.crowdStats.tick!==s.tick)Object.assign(s.crowdStats,{tick:s.tick,plans:0,edges:0,plannerEdges:0,eligible});s.crowdStats.rebuilds++;
++ s.crowdQueue??=[];s.crowdQueue=s.crowdQueue.filter(q=>{const u=s.entities[positions[q.id]];return u&&living(u)&&u.order&&u.order.type!=='hold'&&JSON.stringify(u.order)===q.signature;});
++ s.crowdIndex={tick:s.tick,buckets,positions};s.crowdStats??={plans:0,edges:0,expansions:0,waits:0,queries:0,bodyChecks:0,rebuilds:0};if(s.crowdStats.tick!==s.tick)Object.assign(s.crowdStats,{tick:s.tick,plans:0,edges:0,plannerEdges:0,eligible:[],admissions:[]});s.crowdStats.rebuilds++;
+ }
+ function crowdUpdate(s,e,old){const buckets=s.crowdIndex.buckets,from=`${Math.floor(old.x)},${Math.floor(old.y)}`,to=`${Math.floor(e.x)},${Math.floor(e.y)}`;if(from===to)return;buckets[from]=(buckets[from]||[]).filter(id=>id!==e.id);(buckets[to]??=[]).push(e.id);buckets[to].sort((a,b)=>a-b);}
+ function crowdSweep(s,e,from,to,planning=false){
+@@ -114,7 +113,7 @@
+  for(const id of [...ids].sort((a,b)=>a-b)){if(id===e.id)continue;const u=s.entities[s.crowdIndex.positions[id]];if(!u||!living(u)||!!UNITS[u.type]?.naval!==!!UNITS[e.type]?.naval)continue;stats.bodyChecks++;const q=dd?Math.max(0,Math.min(1,((u.x-from.x)*dx+(u.y-from.y)*dy)/dd)):0;if(Math.hypot(from.x+q*dx-u.x,from.y+q*dy-u.y)<crowdRadius(e)+crowdRadius(u)-1e-8)return false;}return true;
+ }
+ function crowdPatch(s,e,goal){
+- const stats=s.crowdStats;if(stats.plans>=4||!stats.eligible.includes(e.id)){stats.waits++;return null;}stats.plans++;
++ const stats=s.crowdStats;s.crowdQueue??=[];if(!s.crowdQueue.some(q=>q.id===e.id))s.crowdQueue.push({id:e.id,requestedTick:s.tick,signature:JSON.stringify(e.order)});s.crowdQueue.sort((a,b)=>a.requestedTick-b.requestedTick||a.id-b.id);if(stats.plans>=4||stats.plannerEdges>=4096||s.crowdQueue[0]?.id!==e.id){stats.waits++;return null;}s.crowdQueue.shift();stats.plans++;stats.eligible.push(e.id);stats.admissions.push({id:e.id,tick:s.tick});e.crowdRetry=s.tick+10;
+  const ox=Math.round(e.x*2)/2-4.5,oy=Math.round(e.y*2)/2-4.5,nodes=[];
+  for(let y=0;y<19;y++)for(let x=0;x<19;x++)nodes.push({x:ox+x*.5,y:oy+y*.5});
+  const cost=new Float64Array(361).fill(Infinity),parent=new Int32Array(361).fill(-2),open=[];
+@@ -135,7 +134,7 @@
+  while(e.path.length&&remaining>1e-8){let next=e.crowdRoute?.[0]||e.path[0];const d=dist(e,next),amount=Math.min(d,remaining),to=d?{x:e.x+(next.x-e.x)*amount/d,y:e.y+(next.y-e.y)*amount/d}:next;
+  if(!crowdSweep(s,e,e,to)){
+   e.crowdRoute=[];if((e.crowdRetry??0)>s.tick)break;
+-  const goal=[...e.path].reverse().find(q=>dist(e,q)<=4&&dist(e,q)>1)||e.path[0];const route=crowdPatch(s,e,goal);e.crowdRetry=s.tick+10;if(!route)break;e.crowdRoute=route;e.crowdGoal={...goal};continue;
++  const goal=[...e.path].reverse().find(q=>dist(e,q)<=4&&dist(e,q)>1)||e.path[0];const route=crowdPatch(s,e,goal);if(!route)break;e.crowdRoute=route;e.crowdGoal={...goal};continue;
+  }
+  if(d>0)e.dir=(Math.round(Math.atan2(to.y-e.y,to.x-e.x)/(Math.PI/4))+8)%8;const old={x:e.x,y:e.y};e.x=to.x;e.y=to.y;crowdUpdate(s,e,old);remaining-=amount;
+  if(d<=amount+1e-8){if(e.crowdRoute?.length){e.crowdRoute.shift();if(!e.crowdRoute.length){const i=e.path.findIndex(q=>q.x===e.crowdGoal.x&&q.y===e.crowdGoal.y);if(i>=0)e.path.splice(0,i+1);}}else e.path.shift();}
