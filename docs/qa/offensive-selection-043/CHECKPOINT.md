@@ -1,0 +1,11 @@
+#043 ordinary military offensive selection proof
+
+042 selectionguard failure preserved unchanged. Opt-in guarded-artillery acquisition now uses ordinaryF2 to replace stale/overlapping selection with military-only ids, then Shiftclick toggles each stillliving helddefender at its actualentityPoint. Each toggle must remove its defender while retaining military-only membership. Finalassertion compares exact CURRENTlivingownmilitary minusdefenders, not initiallist; saveControl2/recall2 rechecks current safety. No offensive command is issued by this helper. Legacy/adaptive branches remain unchanged.
+
+Pause panel covers the world and has no UI affordance for selecting behind it while paused; paused forceclick or DOM hiding would not be a valid ordinaryUI proof. The selected alternative uses live keyboard/mouse selection and currentstate assertions, stopping on any mismatch. No simulation speed/selection/state injection or syntheticcommands.
+
+Real client also retained dead/embarked/missing/ownership-changed selection and aliased recalledgroup arrays. Scoped selection-state helper prunes active selection and savedgroups using current displayedstate membership at frameboundary; no viewport filter, so live distantunits remain. Recall returns a fresh currentvalid array. Regression covers death,embark,ownership,missing,distantentity and recall alias. Targeted1/1 and requiredfullsuite88/88PASS,70.76seconds; syntax/diffpass.
+
+One small actualChromium151.0.7922.34 DeltaUI proof: ordinaryselectedinfantry15 moved12,24 thenheld; F2 returned13/14/15/16. Shiftclick15/16 removed onlydefenders, exactmilitarygroup13/14 savedControl2; F2 then2 recalled13/14 with defender15stillhold. Errors0, ownedbrowser/server37571closedrooms0/listeningfalse. This proves the selected UI group/save/recall route in actualsmallscene; it does not prove fullbattle underlosses/overlap or humanvictory. No fullAIattempt/Coast/retry.
+
+Newtemporarycandidate/tmp/rds-selection043-build bundleindex-Doi9i9JT.js SHA33da4dd6348b742f8f83bb241c4e01c892dba850668160368a1dadfff047e548. Exactsource/buildpins/browserreceipt/tests retained.040temporarybuild and042/037/039originals untouched. No art/image/APIcall, productiondist/service/deploy/topdocs change or commit. A separate finitefullmatch order is needed before further browser work; humanvictory gate remains open.

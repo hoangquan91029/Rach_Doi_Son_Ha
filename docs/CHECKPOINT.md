@@ -1,3 +1,13 @@
+## Current043 — valid military UI group proof,88tests PASS
+
+043 fixes stale selection/controlgroups at the current friendly state boundary and copies recalled groups instead of aliasing them. Regression covers death/embark/missing/ownership/offviewport/nonaliasing. Guarded-artillery QA now uses F2 then ordinaryShift-toggle for livinghelddefenders, validates CURRENTlivingownmilitary equality and save/recall safety; no forceclick/injectedselection/pauseoverlay workaround.
+
+One actualChromium smallUI proof PASS: F2[13,14,15,16]→removeheld15/16→[13,14], Ctrl2save/F2/2recall returns[13,14], defender15 stayshold; errors0/ownedbrowser/serverclosedrooms0/listeningfalse. Temp043bundle index-Doi9i9JT.js SHA33da4dd6348b742f8f83bb241c4e01c892dba850668160368a1dadfff047e548,21modules. Existing040/042pins preserved. Required fullsuite88/88 PASS;043workerterminal. No fullAIattempt043 or publicdeployment. Next044 is one separatefinite Deltaeasy guarded-artillery offlinefullmatch on exact043build, max360seconds, no retry/Coast/gamechanges. Inspectliveworker/receipt before duplicate.
+
+041 maskedAPIedit humanpermission stands, rootpresencecheck keyabsent/APIcalls0. No imagecall open, no D0sourcefanout. Existing owner032Southgather/whole2D framework intact. Old042failure remains unchanged. Livequota allows work on currentaccount; no resetcredit used. Full game NOT COMPLETE.
+
+---
+
 ## Current checkpoint042 — UI-selection hold, near-quota checkpoint
 
 ONE post-arrival-fix Deltaeasy offline ordinaryUI guarded-artillery attempt042 is terminal HOLD. Both defenders moved/arrived/held (ticks44/117); economicUI queued units, built workshop/fort and trained artillery. Launch began2404, but selection guard stopped at2604 with deadinfantry14 +workshop37 +firearm73. No invalid offensive group/order was issued. Winnernull/General360hp/errors0/networkfailures0.17art/12portraits were loaded beforedisconnect; source/executedharness/040bundle pins unchanged. Browser/server46827closedrooms0/listeningfalse. No complete match, victory, combat-strategy defeat or result/menu claim. Preserve docs/qa/candidate-ai-042/ and earlier037/039 failures; no retry/Coast/gamecodechange.
