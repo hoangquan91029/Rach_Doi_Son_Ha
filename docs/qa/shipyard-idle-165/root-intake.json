@@ -1,0 +1,17 @@
+{
+  "verdict": "ACCEPTED_LOCAL_IDLE_TRIAL_AND_EXACT_OWNED_FILES",
+  "finding": "ActualCoast default1.08 scene: boatbuilding hull/slip/gantry/tiled roof sit coherently at shore; opaque selection and Shipyard HUD match36. Narrow idle scene accepted.",
+  "assetSHA256": "e895835dbf0e10189c1e16216c8b40bcf1839ccd4d9b07db291d6b87c8f47dba",
+  "focusedPass": 18,
+  "ordinaryUI": "Shipyard36 construct\u2192idle/select\u2192Transport51 queue/spawn\u2192Pause/actualResume/Stop/menu;27art12portraits/errors0.",
+  "ownedInstalled": [
+    "client/raster-slice.js",
+    "scripts/art-coverage.mjs",
+    "tests/shipyard165.test.js",
+    "public/assets/art-v1/shipyard-165-manifest.json",
+    "public/assets/art-v1/shipyard-165/idle.png"
+  ],
+  "frozenProofMainSHA256": "c7b9e2726ea7666c7ae0f74a266a28c0e4347baf47fcd12641b3afc409bc2d74",
+  "frozenProofSimSHA256": "8f0ef62fea99b72d6a6f3ec40461e00b26ef0f08bc3bdfb34acbdc20a427a62a",
+  "limits": "163 main/sim retained, not replaced by older165 stage. Final merged build/browser/source binding is new167 work, not this frozenproof. Construction/hit/death retain procedural fallback, finalpublicart/map remainsopen."
+}

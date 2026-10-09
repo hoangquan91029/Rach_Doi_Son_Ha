@@ -1,4 +1,4 @@
-# Trạng thái dự án — movement research 161, ngày 2026-10-09
+# Trạng thái dự án — checkpoint168, ngày 2026-10-10
 
 **INCOMPLETE.** Kế hoạch hiện hành: [docs/PROJECT_PLAN.md](docs/PROJECT_PLAN.md). Hàng đợi: [NEXT_STEPS.md](NEXT_STEPS.md). Báo cáo: [audit 154](docs/audit/2026-10-09/README.md).
 
@@ -17,9 +17,9 @@
 | Nhóm | Trạng thái |
 |---|---|
 | Core Single Player, online, kinh tế và hậu cần | Đã triển khai, có contract và trận thật; hai lỗi xác nhận đã sửa local156/159, chưa promote public |
-| Lỗi và thiếu sót đã xác nhận | Passenger starvation và splash đã có fix local; còn thiếu cảnh báo food thấp và progress huấn luyện đúng duration modifier; policy/ability contracts còn mở |
+| Lỗi và thiếu sót đã xác nhận | Passenger starvation và splash đã có fix local; GP3 đã sửa local163; policy/ability contracts còn mở |
 | Đồ họa unit | Camp manifest có 26 asset entry và 47 frame rectangle; chỉ villager D1 có loop walk/wood/iron. Phần lớn 11 loại unit và 12 leader còn thiếu action hoặc direction |
-| Building và map | Có idle cho 6/10 building; còn thiếu 4 idle và các trạng thái construction/hit/death. Hai map chơi được nhưng chưa đạt composition cuối cùng |
+| Building và map | Public có idle cho6/10; local165 có7/10, còn thiếu3 idle và các trạng thái construction/hit/death. Hai map chơi được nhưng chưa đạt composition cuối cùng |
 | Scale | Canvas render 89 px không có nghĩa body cao 89 px. Unit cũ và mới khác scale; cần thống nhất trong scene thực có cả hai |
 | Public release | Còn mở: đồ họa mặc định, asset bank theo match, cache/version, hiệu năng bản hiện tại khi đông quân, thiết bị/mạng ngoài và nghiệm thu cuối cùng |
 
@@ -30,3 +30,14 @@ Ba audit con tách riêng tình trạng triển khai, bằng chứng test, chấ
 Dùng frame toàn thân pure 2D, imagegen tích hợp và đúng `gpt-6.1-sol`/`low` cho worker code/art. Được phép làm song song. Không theo dõi quota, không dùng API key, 3D hoặc texture chân tay rời. Đồ mang về dùng walk thường. Tất cả source, bản held/rejected và receipt vẫn được giữ nguyên.
 
 Lịch sử trước audit được giữ nguyên byte: [history inventory](docs/audit/2026-10-09/history/inventory.json). Tài liệu lịch sử không phải lệnh để tiếp tục task cũ. Chỉ ghi COMPLETE khi mọi tiêu chí quan trọng đã được đóng trên bản release cuối cùng.
+
+## Cập nhật162–168
+
+- [162](docs/art/pipeline/villager-walk-D0-rough-cycle-162/root-intake.json): tám original whole-clothed rough drawings, fixed family transform và authoring loop;0 image call. Chưa phải minh họa final/motion acceptance.
+- [166](docs/art/pipeline/villager-walk-D0-capability-166/root-intake.json):1 built-in call,0retry. Body/identity gần canonical hơn nhưng support/passing phase chưa được xác lập; **HELD**, không selectedF02, không F6/inbetween/runtime/fanout. [Follow-up](docs/art/pipeline/movement-research-161/FOLLOWUP_162_166.md) ghi hướng tiếp theo.
+- [163](docs/qa/logistics-ui-163/root-intake.json): lưu actual total duration sau modifiers; HUD progress đúng, persistent own-army low-ration warning bao gồm embarked.22 focused tests và ordinary Chromium training/pause/resupply UI PASS. Không đổi food/speed/balance.
+- [164/165](docs/qa/shipyard-idle-165/root-intake.json):1 whole illustrated Shipyard idle; optionalLOCAL `?art=shipyard`27assets. Actual Coast xây→idle/chọn→transport queue/spawn→Pause/Resume/Stop/menu;18 focused contracts. Construction/hit/death vẫn fallback, không completed building animation.
+- [167](docs/qa/merged-candidate-167/README.md): merged source/build binding;27 focused contracts và ordinary Chromium/Firefox Coast flow. Không full-match/public promotion claim.
+- Incident167: candidate build vô tình ghi vào active dist. [Restoration](docs/qa/merged-candidate-167/public149-restoration.json) đã khôi phục đúng179 file public149, giữ accident output riêng. [168](docs/qa/public149-restoration-168/receipt.json) kiểm normalTLS fresh Chrome/Firefox, exact old149 chunk,26art/12portraits/0errors. Service157023 không restart. Public không nhận local163/165 hoặc pending food.
+
+Code/art/QA mới là candidate local; public149 và full goal vẫn INCOMPLETE. Không dùng bảng snapshot154 để mở lại155/158 hoặc báo các finding đã sửa là chưa sửa.

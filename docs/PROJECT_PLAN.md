@@ -1,6 +1,6 @@
 # Rạch Đôi Sơn Hà — kế hoạch thực thi sau audit 154
 
-Cập nhật ngày 2026-10-09, múi giờ Asia/Ho_Chi_Minh. **Trạng thái: INCOMPLETE.** Đây là kế hoạch hiện hành cho toàn dự án; `NEXT_STEPS.md` chỉ giữ hàng đợi gần nhất. Hồ sơ cũ được giữ nguyên byte tại `docs/audit/2026-10-09/history/`.
+Cập nhật ngày 2026-10-10, múi giờ Asia/Ho_Chi_Minh. **Trạng thái: INCOMPLETE.** Đây là kế hoạch hiện hành cho toàn dự án; `NEXT_STEPS.md` chỉ giữ hàng đợi gần nhất. Hồ sơ cũ được giữ nguyên byte tại `docs/audit/2026-10-09/history/`.
 
 ## 1. Mục tiêu và cách đọc kết quả
 
@@ -134,3 +134,11 @@ Ngân sách ở mục 6 là baseline của kế hoạch. Con số khác trong b�
 Human rejection của155 F2/F6 thay selection cũ;158 không được chạy. Nguyên nhân nhìn thấy là đổi hình thể toàn thân, guide generic và các authority tỷ lệ không thống nhất. [Research161](art/pipeline/movement-research-161/README.md) là đặc tả movement hiện hành: gói162 zero-call authoring một chu kỳ nháp đúng canonical trước một single-call capability test. Thứ tự key trước final inbetween còn giữ, nhưng rough breakdown được hoạch định trọn vòng trước finish. Không ép giữ033/152 nếu chúng không hợp canonical/rough mới.
 
 156/159 đã sửa local GP1/GP2; exact staged suite140/140 PASS có repro baseline, AI/naval và full source binding.157 coverage/read-only đã có,160 cập nhật route tests giữ eligibility/fog/custody. Không có build/deploy hoặc trận browser mới từ các gói này. Public149 còn nguyên. GP3/GP4/T01, đồ họa đủ roster/map và các gate release vẫn mở. Không đọc phần mô tả snapshot154 phía trên như một lệnh mở lại155/158.
+
+## 13. Cập nhật162–168
+
+G01 đã có rough cycle162 (0call) và capability166 (1call/0retry).166 giữ body tốt hơn155 nhưng support/passing relationship chưa đúng rõ; không được chọn F02. [Follow-up](art/pipeline/movement-research-161/FOLLOWUP_162_166.md) yêu cầu reconcile whole-cycle ownership/occlusion trước một phương pháp điều khiển khác; không retry/fanout. Đây là vấn đề motion chính, không cloth/pixel gate.
+
+GP3 triển khai local163: actual total training duration và cảnh báo quân thiếu ration dùng threshold hiện hành.22 focused contracts/ordinary Chromium resupply flow; không đổi economics. W01 có Shipyard idle164/165, optionalLOCAL27; actual Coast narrow idle/picking/transport flow. Merged167 có27 focused contracts và Chrome/Firefox ordinary scene; public promotion vẫn riêng. Local7/10 building idle không có nghĩa construction/hit/death hoàn chỉnh.
+
+Incident167 overwrite dist đã được khôi phục đúng179file public149;168 kiểm normalTLS boot trên exact149 hash, service không restart. Build guard hiện hành yêu cầu literal isolatedworkdir, absoluteoutdir, viteconfig đúng và root intake. Các receipt giữ nguyên failure và accident output local. Không lấy smoke restoration làm full-match proof hoặc lấy staged build làm public release.

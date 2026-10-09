@@ -1,0 +1,151 @@
+{
+  "date": "2026-10-09T17:07:27.811Z",
+  "url": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/?art=camp",
+  "purpose": "Restoration smoke only; no match, commands, promotion or final-art acceptance",
+  "results": [
+    {
+      "browser": "chromium",
+      "version": "151.0.7922.34",
+      "freshContext": true,
+      "normalTLS": true,
+      "healthBefore": {
+        "ok": true,
+        "rooms": 0
+      },
+      "menuVisible": true,
+      "singleStartVisible": true,
+      "snapshot": {
+        "mode": null,
+        "tick": null,
+        "art": {
+          "enabled": true,
+          "phase": "CANDIDATE",
+          "quality": "CANDIDATE",
+          "groundDraws": 0,
+          "propDraws": 0,
+          "entityDraws": 0,
+          "walkDraws": 0,
+          "idleDraws": 0,
+          "lastWalk": null,
+          "gatherDraws": 0,
+          "lastGather": null,
+          "missing": [],
+          "pipeline": {
+            "status": "CANDIDATE",
+            "manifest": "ready",
+            "declared": 26,
+            "ready": 26,
+            "approved": 0,
+            "candidates": 26,
+            "failed": 0,
+            "skipped": 0,
+            "fallbacks": 0,
+            "decodedBudgetBytes": 134217728,
+            "retainedDecodedBytes": 16942592,
+            "reservedDecodedBytes": 0,
+            "uniqueDecodedImages": 26,
+            "failures": []
+          }
+        },
+        "bootUi": {
+          "declared": 12,
+          "ready": 12,
+          "failures": [],
+          "fontWarnings": []
+        }
+      },
+      "bundles": [
+        {
+          "url": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/assets/index-05PkH4eu.js",
+          "status": 200,
+          "sha256": "70808200c04fa3547aa4204a0baa6e04546f6d9206c93667ee4c3edf7556883b"
+        }
+      ],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "assetFailures": [],
+      "requestFailures": [],
+      "healthAfter": {
+        "ok": true,
+        "rooms": 0
+      },
+      "status": "PASS",
+      "browsersClosed": true
+    },
+    {
+      "browser": "firefox",
+      "version": "153.0",
+      "freshContext": true,
+      "normalTLS": true,
+      "healthBefore": {
+        "ok": true,
+        "rooms": 0
+      },
+      "menuVisible": true,
+      "singleStartVisible": true,
+      "snapshot": {
+        "mode": null,
+        "tick": null,
+        "art": {
+          "enabled": true,
+          "phase": "CANDIDATE",
+          "quality": "CANDIDATE",
+          "groundDraws": 0,
+          "propDraws": 0,
+          "entityDraws": 0,
+          "walkDraws": 0,
+          "idleDraws": 0,
+          "lastWalk": null,
+          "gatherDraws": 0,
+          "lastGather": null,
+          "missing": [],
+          "pipeline": {
+            "status": "CANDIDATE",
+            "manifest": "ready",
+            "declared": 26,
+            "ready": 26,
+            "approved": 0,
+            "candidates": 26,
+            "failed": 0,
+            "skipped": 0,
+            "fallbacks": 0,
+            "decodedBudgetBytes": 134217728,
+            "retainedDecodedBytes": 16942592,
+            "reservedDecodedBytes": 0,
+            "uniqueDecodedImages": 26,
+            "failures": []
+          }
+        },
+        "bootUi": {
+          "declared": 12,
+          "ready": 12,
+          "failures": [],
+          "fontWarnings": []
+        }
+      },
+      "bundles": [
+        {
+          "url": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/assets/index-05PkH4eu.js",
+          "status": 200,
+          "sha256": "70808200c04fa3547aa4204a0baa6e04546f6d9206c93667ee4c3edf7556883b"
+        }
+      ],
+      "pageErrors": [],
+      "consoleErrors": [],
+      "assetFailures": [],
+      "requestFailures": [],
+      "healthAfter": {
+        "ok": true,
+        "rooms": 0
+      },
+      "status": "PASS",
+      "browsersClosed": true
+    }
+  ],
+  "serviceVerifiedAfter": {
+    "pid": 157023,
+    "running": true,
+    "process": "node server/index.js",
+    "restartPerformed": false
+  }
+}

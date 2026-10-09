@@ -1,4 +1,4 @@
-# Pure2D character pipeline — chuẩn thực thi 154
+# Pure2D character pipeline — chuẩn thực thi checkpoint168
 
 Đọc [graphics plan](GRAPHICS_PRODUCTION_PLAN.md), [master directive](PURE_2D_MASTER_DIRECTIVE_20261008.txt) và [review priority](REVIEW_PRIORITY_20261008.md). Bản spec trước audit được giữ [nguyên byte](../../audit/2026-10-09/history/docs/art/pipeline/PURE_2D_CHARACTER_PIPELINE.md).
 
@@ -48,3 +48,5 @@ Số frame theo từng hành động (idle 4–8, walk 8–12, hit 3–6, death 
 Một contact sheet, một vòng chuyển động ngắn ở kích thước thật và một kiểm tra di chuyển/hành động thực tế. Sửa phase sai, loop jump, scale/pivot jump, sliding rõ, identity/tool flicker; không chặn bằng cloth pixel nhỏ. Technical pass / visual intake / owner feedback / public release là bốn trường riêng.
 
 Nguồn current: walk014/D1, wood026/owner032, iron136/owner141; food101 local pending. Human rejects155 F2/F6;158 STOPPED0call.033/152 là contact candidates cho đối chiếu, chưa có D0 loop. Movement authoring phải theo [research161](movement-research-161/README.md), rough cả chu kỳ đúng mẫu trước một trial hữu hạn. Không chạy lại153/155/158 như order mới. Tiếp theo theo [NEXT_STEPS.md](../../../NEXT_STEPS.md).
+
+Cập nhật162/166: rough cycle tám whole drawings đã có, capability1call/0retry kết thúc. Body improved nhưng phaseHELD/notselectedF02. Đọc [follow-up](movement-research-161/FOLLOWUP_162_166.md), không tự tạo F6/inbetween hoặc gọi lại cùng method. Không dùng flat rough thành final unit.

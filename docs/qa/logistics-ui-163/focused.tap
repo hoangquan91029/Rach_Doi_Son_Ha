@@ -1,0 +1,30 @@
+✔ saved actual duration starts at zero and advances for tran_nhan_tong/tran_hung_dao (76.476508ms)
+✔ saved actual duration starts at zero and advances for le_thanh_tong/napoleon_bonaparte (97.583799ms)
+✔ saved actual duration starts at zero and advances for le_thanh_tong/le_thanh_tong (72.845191ms)
+✔ mobilization advances actual training work twice as fast without changing saved total (18.234832ms)
+✔ progress clamps stale legacy data and cannot show100 before work completion (0.172417ms)
+✔ warning derives own finite troop rations, not rich/empty global pools or enemy/support cargo (4.027535ms)
+✔ warning aggregates own naval/leadership rations and clears on finite recovery (1.486826ms)
+✔ ordinary finite-store resupply clears warning without creating rations (26.615662ms)
+✔ ordinary embarked zero-food passenger shares land grace, morale and 30-second attrition (514.421921ms)
+✔ fed passenger consumes finite own rations without ship, wagon or store resupply (314.535823ms)
+✔ starving boarded General dies through authoritative defeat and freezes simulation (586.594052ms)
+✔ unloading hungry passenger preserves accrued physiology and restores ordinary land handling (571.749873ms)
+✔ transport death still kills hungry embarked passenger through ordinary enemy attack (837.841649ms)
+✔ secondary damage is independent of primary armor and primary remains unchanged (20.30928ms)
+✔ each secondary uses own armor, hill/ford terrain, fortification and river defense (8.444909ms)
+✔ mixed unit/building bonuses and supply-denial bonus apply per victim (5.538884ms)
+✔ authoritative impact deals nothing early, skips friendly/dead/embarked and floors mitigated splash at one (5.975726ms)
+✔ identical seed/commands produce deterministic complete combat state (10.717381ms)
+✔ attacker supply, morale, forest, shock and tempo factors are shared across victims (4.456087ms)
+✔ own food inventory exposes actual zero and defined capacities (1.853129ms)
+✔ private absent unknown inventory does not invent zero (0.332724ms)
+✔ nonfood resources and passengers remain visible (0.420417ms)
+ℹ tests 22
+ℹ suites 0
+ℹ pass 22
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2890.922706

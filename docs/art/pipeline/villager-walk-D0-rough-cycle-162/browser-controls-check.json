@@ -1,0 +1,60 @@
+{
+  "scope": "localauthoringUI only, notgameplay",
+  "canonical": {
+    "src": "file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+    "complete": true,
+    "naturalWidth": 1254,
+    "naturalHeight": 1254
+  },
+  "loopSamples": [
+    "F0 Contact A",
+    "F1 Down A",
+    "F2 Passing A",
+    "F3 Up A",
+    "F4 Contact B",
+    "F5 Down B",
+    "F6 Passing B",
+    "F7 Up B"
+  ],
+  "pauseStable": true,
+  "stepSamples": [
+    {
+      "phase": "F0 Contact A",
+      "src": "F00-rough.png"
+    },
+    {
+      "phase": "F1 Down A",
+      "src": "F01-rough.png"
+    },
+    {
+      "phase": "F2 Passing A",
+      "src": "F02-rough.png"
+    },
+    {
+      "phase": "F3 Up A",
+      "src": "F03-rough.png"
+    },
+    {
+      "phase": "F4 Contact B",
+      "src": "F04-rough.png"
+    },
+    {
+      "phase": "F5 Down B",
+      "src": "F05-rough.png"
+    },
+    {
+      "phase": "F6 Passing B",
+      "src": "F06-rough.png"
+    },
+    {
+      "phase": "F7 Up B",
+      "src": "F07-rough.png"
+    }
+  ],
+  "onion": {
+    "shown": true,
+    "src": "F06-rough.png"
+  },
+  "errors": [],
+  "visualAcceptance": false
+}

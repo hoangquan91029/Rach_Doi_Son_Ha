@@ -165,7 +165,7 @@ export function command(s,p,c){
  if(c.type==='train'){
   const b=get(s,c.building),u=typeof c.unit==='string'&&Object.hasOwn(UNITS,c.unit)?UNITS[c.unit]:null;if(!b||b.owner!==p||b.kind!=='building'||b.construction||!u||!BUILDINGS[b.type].trains?.includes(c.unit))return reject('Invalid production order');
   economy(s);if(b.queue.length>=BALANCE.queueCap)return reject('Production queue full');if(s.players[p].population+s.players[p].populationQueued>=BALANCE.populationCap)return reject('Population limit');if(!affordable(s,p,u.cost))return reject('Not enough resources');
-  spend(s,p,u.cost,b);b.queue.push({unit:c.unit,remaining:u.trainTime*s.players[p].modifiers.train});return {ok:true};
+  spend(s,p,u.cost,b);const total=u.trainTime*s.players[p].modifiers.train;b.queue.push({unit:c.unit,remaining:total,total});return {ok:true};
  }
  if(!Array.isArray(c.ids)||c.ids.length<1||c.ids.length>BALANCE.commandUnits||c.ids.some(id=>!Number.isSafeInteger(id)))return reject('Select units');
  const ids=[...new Set(c.ids)].sort((a,b)=>a-b),es=ids.map(id=>get(s,id));if(es.some(e=>!e||e.owner!==p||e.kind!=='unit'||e.embarked))return reject('Invalid unit ownership');

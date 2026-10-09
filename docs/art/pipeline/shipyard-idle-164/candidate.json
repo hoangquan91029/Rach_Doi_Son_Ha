@@ -1,0 +1,139 @@
+{
+  "schema": "rds-whole-building-candidate/v1",
+  "id": "shipyard-idle-164",
+  "family": "building.shipyard",
+  "kind": "building",
+  "state": "idle",
+  "direction": null,
+  "candidate": true,
+  "review": {
+    "status": "CANDIDATE",
+    "visualAccepted": false,
+    "installed": false,
+    "sceneAccepted": false
+  },
+  "source": {
+    "path": "raw.png",
+    "sha256": "cd462aee9a832ea6437a28605ba60119c0133e588078ce8b862c5016b99dbd25",
+    "rgbaSha256": "93cfe83bd72d71c44185d4170066380c3287bea7e9331490e62bf4458b98e695",
+    "width": 1254,
+    "height": 1254,
+    "bbox": [
+      0,
+      25,
+      1254,
+      1234
+    ],
+    "alphaExtrema": [
+      0,
+      255
+    ]
+  },
+  "working": {
+    "path": "working.png",
+    "sha256": "f966bf728f0b6057d6ea57afd4eaf83690b5618529623cd3fab5a4ea12591855",
+    "rgbaSha256": "eb8e0b8835ec0e94e3ab2a5e44beab653dfc48c51234c6c1913348dee1bb1b76",
+    "width": 512,
+    "height": 512,
+    "bbox": [
+      4,
+      41,
+      512,
+      476
+    ],
+    "alphaExtrema": [
+      0,
+      255
+    ]
+  },
+  "runtime": {
+    "path": "runtime.png",
+    "sha256": "e895835dbf0e10189c1e16216c8b40bcf1839ccd4d9b07db291d6b87c8f47dba",
+    "rgbaSha256": "821b524744f7041c6915fd96c917f9a0175504e7f31923bc17a98fe1b2e00f0b",
+    "width": 256,
+    "height": 256,
+    "bbox": [
+      1,
+      33,
+      256,
+      224
+    ],
+    "alphaExtrema": [
+      0,
+      255
+    ],
+    "derivation": {
+      "method": "resize",
+      "filter": "lanczos",
+      "sourceSha256": "cd462aee9a832ea6437a28605ba60119c0133e588078ce8b862c5016b99dbd25",
+      "wholeCanvas": true,
+      "crop": false,
+      "fit": false
+    }
+  },
+  "cell": {
+    "width": 256,
+    "height": 256
+  },
+  "pivot": {
+    "x": 627,
+    "y": 1010,
+    "space": "source",
+    "status": "PROVISIONAL_REFERENCE_FAMILY_BASE_CENTER_NEEDS_ACTUAL_SCENE_INTAKE"
+  },
+  "render": {
+    "width": 112,
+    "height": 112
+  },
+  "contactShadow": {
+    "mode": "baked"
+  },
+  "alphaPolicy": "transparent",
+  "frames": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 1000
+    }
+  ],
+  "loop": true,
+  "preview": [
+    {
+      "path": "preview-112.png",
+      "sha256": "204a6763b72a79bc7552fa45b31172844c5b572b760c5d404d49413386133c23",
+      "rgbaSha256": "cc3a68b1cd13c9ed81a3e72c019264e5a361d6a5d9af6082fe17e5c67fa64103",
+      "width": 112,
+      "height": 112,
+      "bbox": [
+        0,
+        14,
+        112,
+        100
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "preview-default-121.png",
+      "sha256": "09e77e615dde37c8349a0c4aacd0220cfc231034de7286b97390bb68b0056ab5",
+      "rgbaSha256": "307628ff9ca51c0ddfdd12939daaf4b9fb067a15851040f57850375b638ff30f",
+      "width": 121,
+      "height": 121,
+      "bbox": [
+        0,
+        15,
+        121,
+        107
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    }
+  ],
+  "layoutReason": "Compact boatbuilding shed plus forecourt slipway fits existing square building topology.512working/256runtime preserve full1254square canvas;112logical render matches camp/workshop family. No rectangular exception needed for this returned source."
+}

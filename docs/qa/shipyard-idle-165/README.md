@@ -1,0 +1,15 @@
+# Shipyard165 — isolated local scene ready for root intake
+
+Candidate stage `/tmp/shipyard-idle-165` copies actual7827d9c source, including local passenger/splash sim SHA8f0ef62f…a62a. Main is frozen SHA c7b9e272…c2d74, with no163 overlay. Canonical files, shared mechanics, active dist and production service were not modified. Relevant hashes are in source/build pin receipts; frozen owned files are under `source/` for exact root installation after intake.
+
+New optional `?art=shipyard` manifest preserves all26 camp entries byte-for-byte and adds only164 completed-idle `building.shipyard`. Raw source and runtime SHA match root164 selection. Fixed1254source/256cell/render112/pivot627,1010 is unchanged; unsupported construction/hit/death/move/attack states return existing fallback. Shipyard is gated to its optional route; existing terrain/iron/workshop/camp behavior stays intact. World props also remain enabled on the new route.
+
+Small ownership extension: staged `scripts/art-coverage.mjs` adds shipyard to documented runtime family/world-route mapping. Its existing dynamic route parser already discovers the new route. A targeted test verifies exact newroute/asset/framecount/staticidle; six original coverage contracts pass. Public149 source/chunk/exclusion behavior is untouched.
+
+Validation: **18 focused contracts pass**, isolated Vite build passes. Browser received JS SHA160ce0542151ff954f7ef42fcbdfb217190b21faf44e255bf33170593032735b. Newbank27entries/48rectangles/17,204,736 decodedRGBA bytes. No full suite or full match was repeated.
+
+Actual Coast ordinary UI flow passed: villager coastal scout → build shipyard36 at visible land(7.5,39.5) → completed idle → actual selection and Shipyard HUD → queue/spawn transport51 → Pause freezes tick → real Resume advances tick → ordinary transport Stop → menu. Defaults:1280×800/DPR1/zoom1.08,27 art and12 portraits ready,0 page errors/request failures. `coast/receipt.json` retains selection point and ticks; actual gameplay screenshots show the shoreline placement/readability. One brief actual-size source-worker look finds roof/hull/slip coherent at the shore; root visual intake remains pending, not automatic approval.
+
+Two diagnosed observer/input holds are preserved. First clicked planned half-coordinate; client Math.round before simulation floor+half moved it onto sea. Corrected ordinary integer click targets the intended legal actual center. Second actual building selection was correct but immediate HUD read preceded250ms update; added the existing148-style displayedHUD wait, preserving selection assertion. No state/command/facing/speed injection or guard changes.
+
+Candidate server closed, browser closed,0 rooms and no listening staged server. Stage retained for root exact installation of only: `client/raster-slice.js`, `scripts/art-coverage.mjs`, `tests/shipyard165.test.js`, new manifest and `shipyard-165/idle.png`. Pending local food stays present; no main replacement/public promotion/image call/Git action. All other building states and final world acceptance remain open.

@@ -1,0 +1,1620 @@
+{
+  "status": "PASS_NARROW_COAST_UI_BUILD_IDLE_SELECT_TRANSPORT_PAUSE_RESUME_STOP_MENU",
+  "engine": "chromium",
+  "method": "Ordinary UI mouse/keyboard only; diagnostics read-only; no command/state/facing/speed injection",
+  "errors": [],
+  "failures": [],
+  "bundleSHA": "414263066f26c5665cdf2239f3c3c1da52040c1c1436cdb0334de9a1e5adba4c",
+  "boot": {
+    "mode": null,
+    "localPlayer": 0,
+    "roomCode": null,
+    "paused": false,
+    "camera": {
+      "x": 24,
+      "y": 24,
+      "zoom": 1
+    },
+    "selection": [],
+    "tick": null,
+    "pingMs": null,
+    "frameMs": 0,
+    "bootUi": {
+      "declared": 12,
+      "ready": 12,
+      "failures": [],
+      "fontWarnings": []
+    },
+    "art": {
+      "enabled": true,
+      "phase": "CANDIDATE",
+      "quality": "CANDIDATE",
+      "groundDraws": 0,
+      "propDraws": 0,
+      "entityDraws": 0,
+      "walkDraws": 0,
+      "idleDraws": 0,
+      "lastWalk": null,
+      "gatherDraws": 0,
+      "lastGather": null,
+      "missing": [],
+      "pipeline": {
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 27,
+        "ready": 27,
+        "approved": 0,
+        "candidates": 27,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 17204736,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 27,
+        "failures": []
+      }
+    },
+    "terrainCache": {
+      "builds": 0,
+      "draws": 0,
+      "pixels": 0
+    },
+    "displayedState": null
+  },
+  "map": "coast",
+  "actualLeaders": {
+    "king": "le_thanh_tong",
+    "general": "napoleon_bonaparte"
+  },
+  "trainingModifierExpectedFromSelectedConfiguration": 0.67896,
+  "expectedActualJobTotal": 10.86336,
+  "newHelperBannerPresent": true,
+  "workerId": 7,
+  "scouting": {
+    "tick": 21,
+    "mode": "offline",
+    "paused": false,
+    "localPlayer": 0,
+    "selection": [
+      7
+    ],
+    "camera": {
+      "x": 7.498654513888889,
+      "y": 37.5,
+      "zoom": 1.08
+    },
+    "art": {
+      "enabled": true,
+      "phase": "CANDIDATE",
+      "quality": "PLACEHOLDER_ONLY",
+      "groundDraws": 3072,
+      "propDraws": 636,
+      "entityDraws": 797,
+      "walkDraws": 0,
+      "idleDraws": 0,
+      "lastWalk": null,
+      "gatherDraws": 0,
+      "lastGather": null,
+      "missing": [
+        {
+          "key": "villager:walk:2",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        }
+      ],
+      "pipeline": {
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 27,
+        "ready": 27,
+        "approved": 0,
+        "candidates": 27,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 17204736,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 27,
+        "failures": []
+      },
+      "hillDraws": 0,
+      "foodResourceDraws": 124,
+      "ironResourceDraws": 62
+    },
+    "bootUi": {
+      "declared": 12,
+      "ready": 12,
+      "failures": [],
+      "fontWarnings": []
+    },
+    "resources": {
+      "wood": 550,
+      "food": 808.8240000000028,
+      "iron": 260
+    },
+    "entities": [
+      {
+        "id": 7,
+        "owner": 0,
+        "type": "villager",
+        "kind": "unit",
+        "x": 7.5,
+        "y": 21.815,
+        "hp": 65,
+        "maxHp": 65,
+        "food": 40,
+        "foodMax": 40,
+        "morale": 80,
+        "state": "walk",
+        "dir": 2,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "resuppliedTick": 21,
+        "starving": 0,
+        "lastMovedTick": 21,
+        "order": {
+          "type": "move",
+          "x": 7,
+          "y": 37
+        }
+      }
+    ]
+  },
+  "scouted": {
+    "tick": 182,
+    "mode": "offline",
+    "paused": false,
+    "localPlayer": 0,
+    "selection": [
+      7
+    ],
+    "camera": {
+      "x": 7.498654513888889,
+      "y": 37.5,
+      "zoom": 1.08
+    },
+    "art": {
+      "enabled": true,
+      "phase": "CANDIDATE",
+      "quality": "PLACEHOLDER_ONLY",
+      "groundDraws": 3072,
+      "propDraws": 3528,
+      "entityDraws": 6581,
+      "walkDraws": 0,
+      "idleDraws": 0,
+      "lastWalk": null,
+      "gatherDraws": 0,
+      "lastGather": null,
+      "missing": [
+        {
+          "key": "villager:walk:2",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:4",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:3",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:0",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        }
+      ],
+      "pipeline": {
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 27,
+        "ready": 27,
+        "approved": 0,
+        "candidates": 27,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 17204736,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 27,
+        "failures": []
+      },
+      "hillDraws": 0,
+      "foodResourceDraws": 1088,
+      "ironResourceDraws": 544
+    },
+    "bootUi": {
+      "declared": 12,
+      "ready": 12,
+      "failures": [],
+      "fontWarnings": []
+    },
+    "resources": {
+      "wood": 550,
+      "food": 800.1840000000229,
+      "iron": 260
+    },
+    "entities": [
+      {
+        "id": 7,
+        "owner": 0,
+        "type": "villager",
+        "kind": "unit",
+        "x": 7.5,
+        "y": 35.36219930514627,
+        "hp": 65,
+        "maxHp": 65,
+        "food": 39.623999999999874,
+        "foodMax": 40,
+        "morale": 80,
+        "state": "walk",
+        "dir": 2,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "resuppliedTick": 135,
+        "starving": 0,
+        "lastMovedTick": 182,
+        "order": {
+          "type": "move",
+          "x": 7,
+          "y": 37
+        }
+      }
+    ]
+  },
+  "site": {
+    "x": 7.5,
+    "y": 39.5,
+    "d": 4.242800694853727,
+    "tile": "plain",
+    "visible": true,
+    "nearWater": true
+  },
+  "preflightResources": {
+    "wood": 550,
+    "food": 800.2320000000227,
+    "iron": 260
+  },
+  "placementClick": {
+    "x": 7,
+    "y": 39,
+    "reason": "UI rounds before simulation floor+half; integer click targets planned actualcenter"
+  },
+  "construction": {
+    "tick": 198,
+    "mode": "offline",
+    "paused": false,
+    "localPlayer": 0,
+    "selection": [
+      7
+    ],
+    "camera": {
+      "x": 7.498654513888889,
+      "y": 39.49713134765625,
+      "zoom": 1.08
+    },
+    "art": {
+      "enabled": true,
+      "phase": "CANDIDATE",
+      "quality": "PLACEHOLDER_ONLY",
+      "groundDraws": 3072,
+      "propDraws": 3793,
+      "entityDraws": 7145,
+      "walkDraws": 0,
+      "idleDraws": 0,
+      "lastWalk": null,
+      "gatherDraws": 0,
+      "lastGather": null,
+      "missing": [
+        {
+          "key": "villager:walk:2",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:4",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:3",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:0",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:idle:2",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "shipyard:construction",
+          "reason": "No authored construction sequence",
+          "status": "PLACEHOLDER_ONLY"
+        }
+      ],
+      "pipeline": {
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 27,
+        "ready": 27,
+        "approved": 0,
+        "candidates": 27,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 17204736,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 27,
+        "failures": []
+      },
+      "hillDraws": 0,
+      "foodResourceDraws": 1182,
+      "ironResourceDraws": 591
+    },
+    "bootUi": {
+      "declared": 12,
+      "ready": 12,
+      "failures": [],
+      "fontWarnings": []
+    },
+    "resources": {
+      "wood": 380,
+      "food": 799.4160000000247,
+      "iron": 230
+    },
+    "entities": [
+      {
+        "id": 7,
+        "owner": 0,
+        "type": "villager",
+        "kind": "unit",
+        "x": 7.5,
+        "y": 36.832199305146226,
+        "hp": 65,
+        "maxHp": 65,
+        "food": 39.49599999999983,
+        "foodMax": 40,
+        "morale": 80,
+        "state": "walk",
+        "dir": 2,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "resuppliedTick": 135,
+        "starving": 0,
+        "lastMovedTick": 198,
+        "order": {
+          "type": "build",
+          "target": 36
+        }
+      },
+      {
+        "id": 36,
+        "owner": 0,
+        "type": "shipyard",
+        "kind": "building",
+        "x": 7.5,
+        "y": 39.5,
+        "hp": 78,
+        "maxHp": 650,
+        "food": 0,
+        "foodMax": 0,
+        "morale": 80,
+        "state": "idle",
+        "dir": 0,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "spentCost": {
+          "wood": 170,
+          "food": 0,
+          "iron": 30
+        },
+        "construction": {
+          "remaining": 15,
+          "total": 15,
+          "builder": 7
+        },
+        "order": null
+      }
+    ]
+  },
+  "idle": {
+    "tick": 503,
+    "mode": "offline",
+    "paused": false,
+    "localPlayer": 0,
+    "selection": [
+      7
+    ],
+    "camera": {
+      "x": 7.498654513888889,
+      "y": 39.49713134765625,
+      "zoom": 1.08
+    },
+    "art": {
+      "enabled": true,
+      "phase": "CANDIDATE",
+      "quality": "PLACEHOLDER_ONLY",
+      "groundDraws": 3072,
+      "propDraws": 7457,
+      "entityDraws": 18142,
+      "walkDraws": 0,
+      "idleDraws": 0,
+      "lastWalk": null,
+      "gatherDraws": 0,
+      "lastGather": null,
+      "missing": [
+        {
+          "key": "villager:walk:2",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:4",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:3",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:0",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:idle:2",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "shipyard:construction",
+          "reason": "No authored construction sequence",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:build:2",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        }
+      ],
+      "pipeline": {
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 27,
+        "ready": 27,
+        "approved": 0,
+        "candidates": 27,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 17204736,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 27,
+        "failures": []
+      },
+      "hillDraws": 0,
+      "foodResourceDraws": 3014,
+      "ironResourceDraws": 1507
+    },
+    "bootUi": {
+      "declared": 12,
+      "ready": 12,
+      "failures": [],
+      "fontWarnings": []
+    },
+    "resources": {
+      "wood": 380,
+      "food": 784.7760000000587,
+      "iron": 230
+    },
+    "entities": [
+      {
+        "id": 7,
+        "owner": 0,
+        "type": "villager",
+        "kind": "unit",
+        "x": 7.5,
+        "y": 37.5,
+        "hp": 65,
+        "maxHp": 65,
+        "food": 37.05599999999902,
+        "foodMax": 40,
+        "morale": 80,
+        "state": "idle",
+        "dir": 2,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "resuppliedTick": 135,
+        "starving": 0,
+        "lastMovedTick": 205,
+        "order": null
+      },
+      {
+        "id": 36,
+        "owner": 0,
+        "type": "shipyard",
+        "kind": "building",
+        "x": 7.5,
+        "y": 39.5,
+        "hp": 650,
+        "maxHp": 650,
+        "food": 0,
+        "foodMax": 0,
+        "morale": 80,
+        "state": "idle",
+        "dir": 0,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "spentCost": {
+          "wood": 170,
+          "food": 0,
+          "iron": 30
+        },
+        "construction": null,
+        "order": null
+      }
+    ]
+  },
+  "selectionPoint": {
+    "x": 639.9555844726563,
+    "y": 383.8614421386719
+  },
+  "selected": {
+    "tick": 518,
+    "mode": "offline",
+    "paused": false,
+    "localPlayer": 0,
+    "selection": [
+      36
+    ],
+    "camera": {
+      "x": 7.498654513888889,
+      "y": 39.49713134765625,
+      "zoom": 1.08
+    },
+    "art": {
+      "enabled": true,
+      "phase": "CANDIDATE",
+      "quality": "PLACEHOLDER_ONLY",
+      "groundDraws": 3072,
+      "propDraws": 7633,
+      "entityDraws": 18714,
+      "walkDraws": 0,
+      "idleDraws": 0,
+      "lastWalk": null,
+      "gatherDraws": 0,
+      "lastGather": null,
+      "missing": [
+        {
+          "key": "villager:walk:2",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:4",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:3",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:0",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:idle:2",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "shipyard:construction",
+          "reason": "No authored construction sequence",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:build:2",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        }
+      ],
+      "pipeline": {
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 27,
+        "ready": 27,
+        "approved": 0,
+        "candidates": 27,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 17204736,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 27,
+        "failures": []
+      },
+      "hillDraws": 0,
+      "foodResourceDraws": 3102,
+      "ironResourceDraws": 1551
+    },
+    "bootUi": {
+      "declared": 12,
+      "ready": 12,
+      "failures": [],
+      "fontWarnings": []
+    },
+    "resources": {
+      "wood": 380,
+      "food": 784.0560000000605,
+      "iron": 230
+    },
+    "entities": [
+      {
+        "id": 7,
+        "owner": 0,
+        "type": "villager",
+        "kind": "unit",
+        "x": 7.5,
+        "y": 37.5,
+        "hp": 65,
+        "maxHp": 65,
+        "food": 36.93599999999898,
+        "foodMax": 40,
+        "morale": 80,
+        "state": "idle",
+        "dir": 2,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "resuppliedTick": 135,
+        "starving": 0,
+        "lastMovedTick": 205,
+        "order": null
+      },
+      {
+        "id": 36,
+        "owner": 0,
+        "type": "shipyard",
+        "kind": "building",
+        "x": 7.5,
+        "y": 39.5,
+        "hp": 650,
+        "maxHp": 650,
+        "food": 0,
+        "foodMax": 0,
+        "morale": 80,
+        "state": "idle",
+        "dir": 0,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "spentCost": {
+          "wood": 170,
+          "food": 0,
+          "iron": 30
+        },
+        "construction": null,
+        "order": null
+      }
+    ]
+  },
+  "selectionHUD": "Shipyard\n100% strength\nidle · morale 80\nCargo empty\nGrid 7, 39",
+  "queued": {
+    "tick": 525,
+    "mode": "offline",
+    "paused": false,
+    "localPlayer": 0,
+    "selection": [
+      36
+    ],
+    "camera": {
+      "x": 7.498654513888889,
+      "y": 39.49713134765625,
+      "zoom": 1.08
+    },
+    "art": {
+      "enabled": true,
+      "phase": "CANDIDATE",
+      "quality": "PLACEHOLDER_ONLY",
+      "groundDraws": 3072,
+      "propDraws": 7721,
+      "entityDraws": 19000,
+      "walkDraws": 0,
+      "idleDraws": 0,
+      "lastWalk": null,
+      "gatherDraws": 0,
+      "lastGather": null,
+      "missing": [
+        {
+          "key": "villager:walk:2",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:4",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:3",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:0",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:idle:2",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "shipyard:construction",
+          "reason": "No authored construction sequence",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:build:2",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        }
+      ],
+      "pipeline": {
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 27,
+        "ready": 27,
+        "approved": 0,
+        "candidates": 27,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 17204736,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 27,
+        "failures": []
+      },
+      "hillDraws": 0,
+      "foodResourceDraws": 3146,
+      "ironResourceDraws": 1573
+    },
+    "bootUi": {
+      "declared": 12,
+      "ready": 12,
+      "failures": [],
+      "fontWarnings": []
+    },
+    "resources": {
+      "wood": 280,
+      "food": 743.7200000000612,
+      "iron": 220
+    },
+    "entities": [
+      {
+        "id": 7,
+        "owner": 0,
+        "type": "villager",
+        "kind": "unit",
+        "x": 7.5,
+        "y": 37.5,
+        "hp": 65,
+        "maxHp": 65,
+        "food": 36.87999999999896,
+        "foodMax": 40,
+        "morale": 80,
+        "state": "idle",
+        "dir": 2,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "resuppliedTick": 135,
+        "starving": 0,
+        "lastMovedTick": 205,
+        "order": null
+      },
+      {
+        "id": 36,
+        "owner": 0,
+        "type": "shipyard",
+        "kind": "building",
+        "x": 7.5,
+        "y": 39.5,
+        "hp": 650,
+        "maxHp": 650,
+        "food": 0,
+        "foodMax": 0,
+        "morale": 80,
+        "state": "idle",
+        "dir": 0,
+        "cooldown": 0,
+        "queue": [
+          {
+            "unit": "transport",
+            "remaining": 10.713359999999998,
+            "total": 10.86336
+          }
+        ],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "spentCost": {
+          "wood": 170,
+          "food": 0,
+          "iron": 30
+        },
+        "construction": null,
+        "order": null
+      }
+    ]
+  },
+  "paused": {
+    "tick": 548,
+    "mode": "offline",
+    "paused": true,
+    "localPlayer": 0,
+    "selection": [
+      36
+    ],
+    "camera": {
+      "x": 7.498654513888889,
+      "y": 39.49713134765625,
+      "zoom": 1.08
+    },
+    "art": {
+      "enabled": true,
+      "phase": "CANDIDATE",
+      "quality": "PLACEHOLDER_ONLY",
+      "groundDraws": 3072,
+      "propDraws": 7993,
+      "entityDraws": 19884,
+      "walkDraws": 0,
+      "idleDraws": 0,
+      "lastWalk": null,
+      "gatherDraws": 0,
+      "lastGather": null,
+      "missing": [
+        {
+          "key": "villager:walk:2",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:4",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:3",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:0",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:idle:2",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "shipyard:construction",
+          "reason": "No authored construction sequence",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:build:2",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        }
+      ],
+      "pipeline": {
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 27,
+        "ready": 27,
+        "approved": 0,
+        "candidates": 27,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 17204736,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 27,
+        "failures": []
+      },
+      "hillDraws": 0,
+      "foodResourceDraws": 3282,
+      "ironResourceDraws": 1641
+    },
+    "bootUi": {
+      "declared": 12,
+      "ready": 12,
+      "failures": [],
+      "fontWarnings": []
+    },
+    "resources": {
+      "wood": 280,
+      "food": 742.6160000000639,
+      "iron": 220
+    },
+    "entities": [
+      {
+        "id": 7,
+        "owner": 0,
+        "type": "villager",
+        "kind": "unit",
+        "x": 7.5,
+        "y": 37.5,
+        "hp": 65,
+        "maxHp": 65,
+        "food": 36.6959999999989,
+        "foodMax": 40,
+        "morale": 80,
+        "state": "idle",
+        "dir": 2,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "resuppliedTick": 135,
+        "starving": 0,
+        "lastMovedTick": 205,
+        "order": null
+      },
+      {
+        "id": 36,
+        "owner": 0,
+        "type": "shipyard",
+        "kind": "building",
+        "x": 7.5,
+        "y": 39.5,
+        "hp": 650,
+        "maxHp": 650,
+        "food": 0,
+        "foodMax": 0,
+        "morale": 80,
+        "state": "idle",
+        "dir": 0,
+        "cooldown": 0,
+        "queue": [
+          {
+            "unit": "transport",
+            "remaining": 9.563359999999982,
+            "total": 10.86336
+          }
+        ],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "spentCost": {
+          "wood": 170,
+          "food": 0,
+          "iron": 30
+        },
+        "construction": null,
+        "order": null
+      }
+    ]
+  },
+  "pausedTrainingHUD": "Shipyard\n100% strength\nidle · morale 80\nCargo empty\nTraining Transport · 11% · 10s\nGrid 7, 39",
+  "pausedJob": {
+    "unit": "transport",
+    "remaining": 9.563359999999982,
+    "total": 10.86336
+  },
+  "HUDPercent": 11,
+  "expectedHUDPercent": 11,
+  "actualSavedDurationHUDVerified": true,
+  "exactEnqueueEqualityScope": "Proven in163 source enqueue contracts; browser verifies saved modified total and stable paused progress after elapsed work",
+  "resumed": {
+    "tick": 551,
+    "mode": "offline",
+    "paused": false,
+    "localPlayer": 0,
+    "selection": [
+      36
+    ],
+    "camera": {
+      "x": 7.498654513888889,
+      "y": 39.49713134765625,
+      "zoom": 1.08
+    },
+    "art": {
+      "enabled": true,
+      "phase": "CANDIDATE",
+      "quality": "PLACEHOLDER_ONLY",
+      "groundDraws": 3072,
+      "propDraws": 8113,
+      "entityDraws": 20274,
+      "walkDraws": 0,
+      "idleDraws": 0,
+      "lastWalk": null,
+      "gatherDraws": 0,
+      "lastGather": null,
+      "missing": [
+        {
+          "key": "villager:walk:2",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:4",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:3",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:0",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:idle:2",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "shipyard:construction",
+          "reason": "No authored construction sequence",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:build:2",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        }
+      ],
+      "pipeline": {
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 27,
+        "ready": 27,
+        "approved": 0,
+        "candidates": 27,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 17204736,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 27,
+        "failures": []
+      },
+      "hillDraws": 0,
+      "foodResourceDraws": 3342,
+      "ironResourceDraws": 1671
+    },
+    "bootUi": {
+      "declared": 12,
+      "ready": 12,
+      "failures": [],
+      "fontWarnings": []
+    },
+    "resources": {
+      "wood": 280,
+      "food": 742.4720000000641,
+      "iron": 220
+    },
+    "entities": [
+      {
+        "id": 7,
+        "owner": 0,
+        "type": "villager",
+        "kind": "unit",
+        "x": 7.5,
+        "y": 37.5,
+        "hp": 65,
+        "maxHp": 65,
+        "food": 36.67199999999889,
+        "foodMax": 40,
+        "morale": 80,
+        "state": "idle",
+        "dir": 2,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "resuppliedTick": 135,
+        "starving": 0,
+        "lastMovedTick": 205,
+        "order": null
+      },
+      {
+        "id": 36,
+        "owner": 0,
+        "type": "shipyard",
+        "kind": "building",
+        "x": 7.5,
+        "y": 39.5,
+        "hp": 650,
+        "maxHp": 650,
+        "food": 0,
+        "foodMax": 0,
+        "morale": 80,
+        "state": "idle",
+        "dir": 0,
+        "cooldown": 0,
+        "queue": [
+          {
+            "unit": "transport",
+            "remaining": 9.41335999999998,
+            "total": 10.86336
+          }
+        ],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "spentCost": {
+          "wood": 170,
+          "food": 0,
+          "iron": 30
+        },
+        "construction": null,
+        "order": null
+      }
+    ]
+  },
+  "spawned": {
+    "tick": 741,
+    "mode": "offline",
+    "paused": false,
+    "localPlayer": 0,
+    "selection": [
+      36
+    ],
+    "camera": {
+      "x": 7.498654513888889,
+      "y": 39.49713134765625,
+      "zoom": 1.08
+    },
+    "art": {
+      "enabled": true,
+      "phase": "CANDIDATE",
+      "quality": "PLACEHOLDER_ONLY",
+      "groundDraws": 3072,
+      "propDraws": 10397,
+      "entityDraws": 27697,
+      "walkDraws": 0,
+      "idleDraws": 0,
+      "lastWalk": null,
+      "gatherDraws": 0,
+      "lastGather": null,
+      "missing": [
+        {
+          "key": "villager:walk:2",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:4",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:3",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:0",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:idle:2",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "shipyard:construction",
+          "reason": "No authored construction sequence",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:build:2",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        }
+      ],
+      "pipeline": {
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 27,
+        "ready": 27,
+        "approved": 0,
+        "candidates": 27,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 17204736,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 27,
+        "failures": []
+      },
+      "hillDraws": 0,
+      "foodResourceDraws": 4484,
+      "ironResourceDraws": 2242
+    },
+    "bootUi": {
+      "declared": 12,
+      "ready": 12,
+      "failures": [],
+      "fontWarnings": []
+    },
+    "resources": {
+      "wood": 280,
+      "food": 733.3520000000854,
+      "iron": 220
+    },
+    "entities": [
+      {
+        "id": 7,
+        "owner": 0,
+        "type": "villager",
+        "kind": "unit",
+        "x": 7.5,
+        "y": 37.5,
+        "hp": 65,
+        "maxHp": 65,
+        "food": 35.15199999999838,
+        "foodMax": 40,
+        "morale": 80,
+        "state": "idle",
+        "dir": 2,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "resuppliedTick": 135,
+        "starving": 0,
+        "lastMovedTick": 205,
+        "order": null
+      },
+      {
+        "id": 36,
+        "owner": 0,
+        "type": "shipyard",
+        "kind": "building",
+        "x": 7.5,
+        "y": 39.5,
+        "hp": 650,
+        "maxHp": 650,
+        "food": 0,
+        "foodMax": 0,
+        "morale": 80,
+        "state": "idle",
+        "dir": 0,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "spentCost": {
+          "wood": 170,
+          "food": 0,
+          "iron": 30
+        },
+        "construction": null,
+        "order": null
+      },
+      {
+        "id": 51,
+        "owner": 0,
+        "type": "transport",
+        "kind": "unit",
+        "x": 6.5,
+        "y": 40.5,
+        "hp": 260,
+        "maxHp": 260,
+        "food": 64.988,
+        "foodMax": 65,
+        "morale": 80,
+        "state": "idle",
+        "dir": 0,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "starving": 0,
+        "order": null
+      }
+    ]
+  },
+  "stopped": {
+    "tick": 752,
+    "mode": "offline",
+    "paused": false,
+    "localPlayer": 0,
+    "selection": [
+      51
+    ],
+    "camera": {
+      "x": 6.499565972222222,
+      "y": 40.5,
+      "zoom": 1.08
+    },
+    "art": {
+      "enabled": true,
+      "phase": "CANDIDATE",
+      "quality": "PLACEHOLDER_ONLY",
+      "groundDraws": 3072,
+      "propDraws": 10516,
+      "entityDraws": 28126,
+      "walkDraws": 0,
+      "idleDraws": 0,
+      "lastWalk": null,
+      "gatherDraws": 0,
+      "lastGather": null,
+      "missing": [
+        {
+          "key": "villager:walk:2",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:4",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:3",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:0",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:idle:2",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "shipyard:construction",
+          "reason": "No authored construction sequence",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:build:2",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        }
+      ],
+      "pipeline": {
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 27,
+        "ready": 27,
+        "approved": 0,
+        "candidates": 27,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 17204736,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 27,
+        "failures": []
+      },
+      "hillDraws": 0,
+      "foodResourceDraws": 4550,
+      "ironResourceDraws": 2275
+    },
+    "bootUi": {
+      "declared": 12,
+      "ready": 12,
+      "failures": [],
+      "fontWarnings": []
+    },
+    "resources": {
+      "wood": 280,
+      "food": 732.8240000000867,
+      "iron": 220
+    },
+    "entities": [
+      {
+        "id": 7,
+        "owner": 0,
+        "type": "villager",
+        "kind": "unit",
+        "x": 7.5,
+        "y": 37.5,
+        "hp": 65,
+        "maxHp": 65,
+        "food": 35.06399999999835,
+        "foodMax": 40,
+        "morale": 80,
+        "state": "idle",
+        "dir": 2,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "resuppliedTick": 135,
+        "starving": 0,
+        "lastMovedTick": 205,
+        "order": null
+      },
+      {
+        "id": 36,
+        "owner": 0,
+        "type": "shipyard",
+        "kind": "building",
+        "x": 7.5,
+        "y": 39.5,
+        "hp": 650,
+        "maxHp": 650,
+        "food": 0,
+        "foodMax": 0,
+        "morale": 80,
+        "state": "idle",
+        "dir": 0,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "spentCost": {
+          "wood": 170,
+          "food": 0,
+          "iron": 30
+        },
+        "construction": null,
+        "order": null
+      },
+      {
+        "id": 51,
+        "owner": 0,
+        "type": "transport",
+        "kind": "unit",
+        "x": 6.5,
+        "y": 40.5,
+        "hp": 260,
+        "maxHp": 260,
+        "food": 64.856,
+        "foodMax": 65,
+        "morale": 80,
+        "state": "idle",
+        "dir": 0,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "starving": 0,
+        "order": null
+      }
+    ]
+  },
+  "menuReturned": true,
+  "cleanup": {
+    "rooms": 0,
+    "listening": false,
+    "browserClosed": true
+  },
+  "shipyardId": 36,
+  "transportId": 51,
+  "actualSceneVisualAccepted": false,
+  "publicReleaseApproved": false
+}

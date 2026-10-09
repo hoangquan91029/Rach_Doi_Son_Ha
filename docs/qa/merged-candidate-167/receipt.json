@@ -1,0 +1,118 @@
+{
+  "status": "READY_FOR_FINAL_MERGED_LOCAL_ROOT_INTAKE_167",
+  "dateUTC": "2026-10-09T17:15:08.433518+00:00",
+  "buildDirectory": "/tmp/merged-candidate-167/build",
+  "stageDirectory": "/tmp/merged-candidate-167",
+  "sourceHEADAtFreeze": "7827d9c2038031c03ffa1a76df8f1c96f76c6ff6",
+  "sourceInventory": "source-inventory.json",
+  "buildInventory": "isolated-build-inventory.json",
+  "bundlePath": "assets/index-DC9UWDWw.js",
+  "bundleSHA256": "414263066f26c5665cdf2239f3c3c1da52040c1c1436cdb0334de9a1e5adba4c",
+  "mainSHA256": "562952c60aa1bdacdd3833a61f56165152917c7868bcc7003a2eeab5df80dd50",
+  "simSHA256": "a266e0de5a6719579e48fd8a57888f09509f6af745190cb09b47c5641bab7796",
+  "rasterSHA256": "bbedc2de1d496cedd75291db39ec47e109c42dda760abd64744dd60f884511ad",
+  "logisticsHelperSHA256": "fb3a726d4e63ea65bdd66a3fe435c43f7a33f0c389e9df3952e5e96ea1c47d7d",
+  "viteConfigSHA256": "18fc6a1c5544b54f954ce0779837c23695e29ca485f5c8de5a1cf03dddeb046d",
+  "sourceAndBuildReverifiedExact": true,
+  "focusedContracts": {
+    "passed": 27,
+    "failed": 0,
+    "ranOnceIn": "canonical source before accidental build",
+    "equivalentFrozenStageSource": true,
+    "binding": "focused-contract-binding.json"
+  },
+  "browsers": [
+    {
+      "browser": "chromium",
+      "receipt": "chromium/receipt.json",
+      "shipyardId": 36,
+      "transportId": 51,
+      "savedJobTotal": 10.86336,
+      "pausedRemaining": 9.563359999999982,
+      "HUDPercent": 11,
+      "expectedHUDPercent": 11,
+      "helperBannerPresent": true,
+      "actualLeaders": {
+        "king": "le_thanh_tong",
+        "general": "napoleon_bonaparte"
+      },
+      "readyArt": 27,
+      "readyPortraits": 12,
+      "ticks": {
+        "construction": 198,
+        "idle": 503,
+        "selected": 518,
+        "queued": 525,
+        "paused": 548,
+        "resumed": 551,
+        "spawned": 741,
+        "stopped": 752
+      },
+      "cleanup": {
+        "rooms": 0,
+        "listening": false,
+        "browserClosed": true
+      }
+    },
+    {
+      "browser": "firefox",
+      "receipt": "firefox/receipt.json",
+      "shipyardId": 36,
+      "transportId": 51,
+      "savedJobTotal": 10.86336,
+      "pausedRemaining": 9.613359999999982,
+      "HUDPercent": 11,
+      "expectedHUDPercent": 11,
+      "helperBannerPresent": true,
+      "actualLeaders": {
+        "king": "le_thanh_tong",
+        "general": "napoleon_bonaparte"
+      },
+      "readyArt": 27,
+      "readyPortraits": 12,
+      "ticks": {
+        "construction": 208,
+        "idle": 513,
+        "selected": 529,
+        "queued": 533,
+        "paused": 558,
+        "resumed": 561,
+        "spawned": 753,
+        "stopped": 766
+      },
+      "cleanup": {
+        "rooms": 0,
+        "listening": false,
+        "browserClosed": true
+      }
+    }
+  ],
+  "viewport": [
+    1280,
+    800
+  ],
+  "DPR": 1,
+  "normalZoom": 1.08,
+  "observationScope": "Stable ordinary pause checks saved modified total and actual helper HUD. Exact remaining=total at enqueue is163 contract evidence, not a browser instant-click claim. No observers, clock alignment, injected commands/state or speed changes in final harness.",
+  "preservedHolds": [
+    "initial-observer-hold: modifiers omitted from player view and initialstage omittedViteconfig",
+    "enqueue-view-observer-hold: instantclick observer preceded view refresh",
+    "instant-equality-observer-hold: actualfirstview had one normal50ms worktick; unnecessary equality assertion removed per rootinstruction"
+  ],
+  "accidentalCanonicalBuild": {
+    "record": "accidental-command.txt",
+    "output": "build.txt",
+    "restoration": "public149-restoration.json",
+    "restored179FilesReverifiedAfterAllBrowserRuns": true,
+    "serviceRestart": false
+  },
+  "cleanup": {
+    "allOwnedBrowserServersClosed": true,
+    "rooms": 0,
+    "stagedBuildRetainedForRootIntake": true
+  },
+  "newImageCalls": 0,
+  "newFullMatches": 0,
+  "publicPromotionApproved": false,
+  "visualFinalAcceptance": "ROOT_INTAKE_PENDING"
+}

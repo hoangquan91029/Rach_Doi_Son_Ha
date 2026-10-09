@@ -1,4 +1,4 @@
-# Kế hoạch đồ họa — audit154, 9/10/2026
+# Kế hoạch đồ họa — checkpoint168, 10/10/2026
 
 Kế hoạch toàn game: [PROJECT_PLAN.md](../../PROJECT_PLAN.md). Phạm vi và bằng chứng chi tiết: [art-animation-audit.md](../../audit/2026-10-09/art-animation-audit.md). Bản kế hoạch trước audit được giữ [nguyên byte](../../audit/2026-10-09/history/docs/art/pipeline/GRAPHICS_PRODUCTION_PLAN.md).
 
@@ -13,10 +13,10 @@ Thứ tự đánh giá: chuyển động đúng và liền mạch → silhouette
 | Hạng mục | Đã có | Còn thiếu |
 |---|---|---|
 | Villager D1 | Idle, walk 014, wood 026/owner 032, iron 136/owner 141; food 101 local | Build/repair, attack/hit/death và độ phủ hướng; food còn chờ phản hồi riêng |
-| Villager D0 | 033/152 contact candidates;155 F2/F6 đã bị người dùng bác bỏ,158 dừng0call | Chu kỳ nháp đúng canonical theo161, capability trial, final loop và actual travel/stop |
+| Villager D0 | 033/152 contact candidates;155 F2/F6 đã bị người dùng bác bỏ,158 dừng0call | Rough162 đã có; capability166 HELD phase. Còn reconcile support/occlusion, final loop và actual travel/stop |
 | Quân đội | Một số identity idle D0 | Phần lớn hành động và hướng nhìn cho infantry, spear, firearm, cavalry, artillery, wagon và hai tàu |
 | Leaders | 12 portrait và nguồn identity gốc | Hoạt ảnh toàn thân, hành động theo vai trò và 8 hướng; chỉ một general có idle candidate |
-| Buildings | 6/10 completed-idle | Shipyard/Fort/Wall/Gate; construction/damage/destruction |
+| Buildings | Public6/10, local7/10 completed-idle | Fort/Wall/Gate; construction/damage/destruction |
 | World | Ground/water/ford/shore candidates, forest, hill/mountain, food/iron nodes | Composition hai map, bờ/edge/repetition và scene đông quân |
 | Framework | Export017, preview098, timing, locomotion phase, gather episodes, alpha picking, manifest loader | Coverage registry, composition compiler, match banks, default release |
 
@@ -26,7 +26,7 @@ Public149 `?art=camp` có 26 asset entries / 47 frame rectangles. Đó không ph
 
 1. **Chốt identity và runtime mapping.** Ghi `identity/action/engineDirection`, nguồn canonical, camera/light, equipment, cycle/terminal state và simulation event liên quan. Không tạo run/carry/deploy nếu gameplay không cần.
 2. **Chốt cả chu kỳ.** Dùng clothed 2D guides có near/far ownership, contact/passing phases, fixed pivot và timing. Walk 8 frame: F0/F2/F4/F6 trước, rồi inbetweens. Không dựa vào bốn prompt rời rạc.
-3. **Sinh whole illustrated keys.** Builtin imagegen, exact Sol 6.1 Low worker. Guide là primary pose; canonical và key lân cận là appearance/continuity references. Giữ raw và tool receipt. Key sai rõ ràng thì dừng slot, không đổi nhãn để che lỗi.
+3. **Sinh whole illustrated keys.** Builtin imagegen, exact Sol 6.1 Low worker. Canonical duy nhất giữ authority về hình thể/camera/identity; whole-body guide điều khiển pose, strip cả chu kỳ cho temporal context. Không để generic guide thay tỷ lệ canonical. Giữ raw và tool receipt. Key sai rõ ràng thì dừng slot, không đổi nhãn để che lỗi.
 4. **Hoàn thiện inbetweens.** Sau khi keys được chọn, mỗi frame bám hai key lân cận; số call hữu hạn. Không ghép nguồn pixel, xoay limb texture hoặc fit từng frame.
 5. **Compile và xem loop.** Một transform cho toàn family, alpha/cell/pivot/duration validation, atlas/manifest/contact sheet/loop tự sinh. Xem 10–15 giây tại kích thước chơi; sửa những lỗi nhìn thấy.
 6. **Trial thật và đưa vào catalog.** Đi/đứng/đổi hướng hoặc work/stop/pause trong game, đúng hướng do mô phỏng xác định. Ghi technical/visual/owner/public riêng. Chỉ mở đợt sản xuất tiếp sau khi pilot tương ứng đạt yêu cầu.
@@ -61,3 +61,7 @@ Không hứa ngày hoàn tất trước khi đo số frame được chấp nhậ
 G01 hiện theo [movement research161](movement-research-161/README.md): một canonical master → complete on-model rough cycle162 (0call) → brief look → một whole-illustration capability trial (order mới,0retry) → key/inbetween thật → loop → actual D0 travel/Stop. Guide153/158 và key155 không được dùng làm parent production. Không giữ hai contact cũ bằng mọi giá khi lệch hình thể. Hình nháp là công cụ authoring, không final art. Wood032/iron141 acceptance đứng riêng; food pending không chặn lane độc lập. Các phương pháp exhausted/held không thử lại mù.
 
 Đưa asset mới vào default release sau coverage và actual-scene acceptance; không bật toàn bộ candidate rồi gọi finished. Full project vẫn **INCOMPLETE**.
+
+## Follow-up162–168
+
+[162 rough](villager-walk-D0-rough-cycle-162/root-intake.json) đã hoàn thành reference trọn vòng; không final art. [166 illustration](villager-walk-D0-capability-166/root-intake.json) cải thiện khối người nhưng HELD support phase;1call/0retry/exhausted. [Hướng tiếp](movement-research-161/FOLLOWUP_162_166.md) là reconcile ownership/occlusion,0call, không mở F6/inbetween.165 Shipyard idle accepted narrow actual Coast scene, local27assets; public149 vẫn26. Code163/merged167 không cấp motion acceptance.

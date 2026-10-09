@@ -1,0 +1,83 @@
+{
+  "status": "READY_FOR_ROOT_INTAKE_NARROW_LOCAL165",
+  "stage": "/tmp/shipyard-idle-165",
+  "baseHEAD": "7827d9c",
+  "sourceBinding": "source-binding.json",
+  "sourcePins": "source-pins.json",
+  "buildPins": "build-pins.json",
+  "bundleSHA256": "160ce0542151ff954f7ef42fcbdfb217190b21faf44e255bf33170593032735b",
+  "simSHA256": "8f0ef62fea99b72d6a6f3ec40461e00b26ef0f08bc3bdfb34acbdc20a427a62a",
+  "mainSHA256": "c7b9e2726ea7666c7ae0f74a266a28c0e4347baf47fcd12641b3afc409bc2d74",
+  "canonicalComparisonAtReceipt": [
+    {
+      "path": "client/main.js",
+      "stagedSHA256": "c7b9e2726ea7666c7ae0f74a266a28c0e4347baf47fcd12641b3afc409bc2d74",
+      "currentCanonicalSHA256": "562952c60aa1bdacdd3833a61f56165152917c7868bcc7003a2eeab5df80dd50"
+    },
+    {
+      "path": "shared/sim.js",
+      "stagedSHA256": "8f0ef62fea99b72d6a6f3ec40461e00b26ef0f08bc3bdfb34acbdc20a427a62a",
+      "currentCanonicalSHA256": "a266e0de5a6719579e48fd8a57888f09509f6af745190cb09b47c5641bab7796"
+    },
+    {
+      "path": "client/art-assets.js",
+      "stagedSHA256": "a4bc6132fe8f3ab7fbba5f9c0d4519e1d50f545e7ff1d66e8ab43cccd6df34a2",
+      "currentCanonicalSHA256": "a4bc6132fe8f3ab7fbba5f9c0d4519e1d50f545e7ff1d66e8ab43cccd6df34a2"
+    },
+    {
+      "path": "client/renderer.js",
+      "stagedSHA256": "76d11959d67b997c728540185101d848400f83a348db1e0d22e8ecc843abcfb9",
+      "currentCanonicalSHA256": "76d11959d67b997c728540185101d848400f83a348db1e0d22e8ecc843abcfb9"
+    },
+    {
+      "path": "public/assets/art-v1/camp-148-manifest.json",
+      "stagedSHA256": "b9ccd2b7bb68e11bdc9bacfdd31d56dcc05579c2950c01e650f0827ef1cbc134",
+      "currentCanonicalSHA256": "b9ccd2b7bb68e11bdc9bacfdd31d56dcc05579c2950c01e650f0827ef1cbc134"
+    }
+  ],
+  "note": "Stage stays frozen even when other authorized root/worker changes canonical main concurrently",
+  "contractsPassed": 18,
+  "buildPassed": true,
+  "artEntries": 27,
+  "frameRectangles": 48,
+  "decodedRGBABytes": 17204736,
+  "UIReceipt": "coast/receipt.json",
+  "actualMap": "coast",
+  "normalZoom": 1.08,
+  "viewport": [
+    1280,
+    800
+  ],
+  "DPR": 1,
+  "shipyardId": 36,
+  "transportId": 51,
+  "sceneFlow": [
+    "ordinary worker coastal scout",
+    "visible legal shipyard construction",
+    "completed idle",
+    "actual opaque selection and Shipyard HUD",
+    "one transport queue and spawn",
+    "Pause freezes tick",
+    "actual Resume advances tick",
+    "transport ordinary Stop",
+    "menu return"
+  ],
+  "preservedHolds": [
+    "first-placement-hold/receipt.json: diagnosed half-coordinate UI rounding onto water",
+    "selection-hud-observer-hold/receipt.json: actual selection36 correct, HUD observer sampled before refresh; corrected with waitForFunction"
+  ],
+  "errors": [],
+  "failures": [],
+  "cleanup": {
+    "rooms": 0,
+    "listening": false,
+    "browserClosed": true,
+    "isolatedStageRetainedForExactRootInstall": true,
+    "canonicalMutationsByThisWorker": false,
+    "productionServiceTouched": false
+  },
+  "visualAcceptance": "ROOT_ACTUAL_SCENE_INTAKE_PENDING",
+  "publicReleaseApproval": false,
+  "imageCalls": 0,
+  "completedUTC": "2026-10-09T17:01:16.120159+00:00"
+}

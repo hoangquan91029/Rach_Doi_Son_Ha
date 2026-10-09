@@ -1,0 +1,54 @@
+✔ saved actual duration starts at zero and advances for tran_nhan_tong/tran_hung_dao (56.569693ms)
+✔ saved actual duration starts at zero and advances for le_thanh_tong/napoleon_bonaparte (85.483198ms)
+✔ saved actual duration starts at zero and advances for le_thanh_tong/le_thanh_tong (65.446186ms)
+✔ mobilization advances actual training work twice as fast without changing saved total (16.175964ms)
+✔ progress clamps stale legacy data and cannot show100 before work completion (0.138555ms)
+✖ warning derives own finite troop rations, not rich/empty global pools or enemy/support cargo (2.632925ms)
+✔ warning aggregates own naval/leadership rations and clears on finite recovery (1.330615ms)
+✔ ordinary embarked zero-food passenger shares land grace, morale and 30-second attrition (468.660483ms)
+✔ fed passenger consumes finite own rations without ship, wagon or store resupply (296.786108ms)
+✔ starving boarded General dies through authoritative defeat and freezes simulation (528.433047ms)
+✔ unloading hungry passenger preserves accrued physiology and restores ordinary land handling (526.767069ms)
+✔ transport death still kills hungry embarked passenger through ordinary enemy attack (801.703651ms)
+✔ secondary damage is independent of primary armor and primary remains unchanged (23.96876ms)
+✔ each secondary uses own armor, hill/ford terrain, fortification and river defense (9.340969ms)
+✔ mixed unit/building bonuses and supply-denial bonus apply per victim (5.361953ms)
+✔ authoritative impact deals nothing early, skips friendly/dead/embarked and floors mitigated splash at one (5.145311ms)
+✔ identical seed/commands produce deterministic complete combat state (9.453637ms)
+✔ attacker supply, morale, forest, shock and tempo factors are shared across victims (5.754771ms)
+✔ own food inventory exposes actual zero and defined capacities (1.130881ms)
+✔ private absent unknown inventory does not invent zero (0.204122ms)
+✔ nonfood resources and passengers remain visible (0.140844ms)
+ℹ tests 21
+ℹ suites 0
+ℹ pass 20
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2679.115459
+
+✖ failing tests:
+
+test at tests/logistics-ui163.test.js:24:1
+✖ warning derives own finite troop rations, not rich/empty global pools or enemy/support cargo (2.632925ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + '585bba41'
+  - 'df0ee0f2'
+  
+      at TestContext.<anonymous> (file:///tmp/logistics-ui-163/tests/logistics-ui163.test.js:27:181)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '585bba41',
+    expected: 'df0ee0f2',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

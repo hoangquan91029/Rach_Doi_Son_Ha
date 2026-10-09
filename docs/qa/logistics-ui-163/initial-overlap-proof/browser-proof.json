@@ -1,0 +1,86 @@
+{
+  "method": "ordinary UI clicks and legal abilities; read-only existing diagnostics; no state/command injection",
+  "browser": "151.0.7922.34",
+  "training": {
+    "tick": 20,
+    "job": {
+      "unit": "infantry",
+      "remaining": 5.7106400000000015,
+      "total": 6.11064
+    },
+    "panel": "Barracks\n100% strength\nidle · morale 80\nCargo empty\nTraining Infantry · 6% · 6s\nGrid 13, 20",
+    "pausedProgress": 6,
+    "stablePause": true,
+    "completed": true
+  },
+  "warning": {
+    "firstAbilityTick": 10,
+    "initialTroopRations": [
+      {
+        "id": 13,
+        "food": 23.899648000000013,
+        "foodMax": 40
+      },
+      {
+        "id": 14,
+        "food": 23.899648000000013,
+        "foodMax": 40
+      },
+      {
+        "id": 15,
+        "food": 23.899648000000013,
+        "foodMax": 40
+      },
+      {
+        "id": 16,
+        "food": 23.899648000000013,
+        "foodMax": 40
+      }
+    ],
+    "trigger": {
+      "tick": 1325,
+      "banner": "ARMY LOW ON FOOD · 4 units need resupply",
+      "troops": [
+        {
+          "id": 10,
+          "type": "villager",
+          "food": 0,
+          "foodMax": 40
+        },
+        {
+          "id": 13,
+          "type": "infantry",
+          "food": 0,
+          "foodMax": 40
+        },
+        {
+          "id": 14,
+          "type": "infantry",
+          "food": 0,
+          "foodMax": 40
+        },
+        {
+          "id": 15,
+          "type": "infantry",
+          "food": 0,
+          "foodMax": 40
+        },
+        {
+          "id": 16,
+          "type": "spearman",
+          "food": 0,
+          "foodMax": 40
+        },
+        {
+          "id": 17,
+          "type": "wagon",
+          "food": 0,
+          "foodMax": 40
+        }
+      ],
+      "pool": 552.8962303999576
+    },
+    "stablePause": true
+  },
+  "errors": []
+}

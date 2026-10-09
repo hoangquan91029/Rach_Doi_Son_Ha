@@ -1,0 +1,17 @@
+{
+  "verdict": "ACCEPTED_LOCAL_SOURCE",
+  "sourceHashes": {
+    "shared/sim.js": "a266e0de5a6719579e48fd8a57888f09509f6af745190cb09b47c5641bab7796",
+    "client/main.js": "562952c60aa1bdacdd3833a61f56165152917c7868bcc7003a2eeab5df80dd50",
+    "client/logistics-hud.js": "fb3a726d4e63ea65bdd66a3fe435c43f7a33f0c389e9df3952e5e96ea1c47d7d",
+    "tests/logistics-ui163.test.js": "7fcbc0285d69e90e4f94171ea515702538854bb976d6013d0c9b3cd5e16c02ee"
+  },
+  "scope": "Saved actual job duration for HUD progress; persistent own-army low-ration warning using existing threshold, including embarked. No ration/speed/balance changes.",
+  "focusedTests": {
+    "pass": 22,
+    "fail": 0
+  },
+  "ordinaryChromiumUI": "Modified training0.5s/8percent, pause/completion; four low-ration units despite storedfood; warning clears after legal resupply. Screenshot banner readable without covering leader cards.",
+  "exactStageBuildSHA256": "53b10adf0957aa47134123a2f26b9eeb8a811c6e2de9f914543a47d41d26bb98",
+  "limits": "Exact owned sources installed; no full suite or public deploy claimed. Public149 unchanged; final release scene pending."
+}
