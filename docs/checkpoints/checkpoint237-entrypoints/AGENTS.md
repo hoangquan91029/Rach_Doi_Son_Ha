@@ -1,0 +1,31 @@
+# Project task profile — checkpoint237 / public230
+
+## Mandatory routing and human choices
+
+Every code/art worker uses exactly `model='gpt-6.1-sol'`, `reasoning_effort='low'`. No Luna/substitution. If unavailable, report before dependent work. Parallel workers explicitly authorized, independent file ownership, up to available slots. This routes workers, not root UI model.
+
+Built-in imagegen ONLY; human has no API key. No API/CLI/key requests, quota polling or reset/percentage stops. Pure2D whole illustrated character frames; read PURE_2D_MASTER_DIRECTIVE_20261008.txt and REVIEW_PRIORITY_20261008.md. No3D/Blender/limbtextures/cutouts/pixelsplices/warps/mirroring/perframefit/visiblepuppetseams. Wholeclothed guides authoring-only. Brief actualgame-size loop look/visiblefixes, not microaudits. Loadedgoods ordinarywalk. Preserve leadership/canonical/raw/held/rejected/history/custody.
+
+## Read first and current work
+
+Read NEXT_STEPS.md, PROJECT_STATUS.md, docs/PROJECT_PLAN.md, graphics/movementplan, actual receipts, Git and live worker/image/test handles. Never duplicate an open call or resume exhausted orders. Preparation does not prove returned art; tests do not prove visual acceptance.
+
+Movement213 whole candidate sources188/193/185/205/211/194/182/194 unchanged,1254/pivot6541140→128/89/600ms.216 uniformwhole canonicalidle prepared, body/shadow transitionopen.219 loaderpathHOLD→225 relativepathfix/loader29PASS but town-detour samplespartial→226 stagingguardHOLD (incorrect.3 vs engine.7)→228 actualD0/all8/64samples/Pausefreeze/Resume technicalPASS. 233 now proves actualD0 Pausefreeze/Resume/ordinaryStop idle+order-null+dir0 and menu decoded0 on frozen225 build, ONEcampaign/0retry. Original228 StopD7 retained. Motion/owner/worldfootlock/fanout remain OPEN; actual233clip displayed. No blindcampaignchain or further technicalStop replays without concern. Do not infer213 approval from pending195question. Owner032wood/141iron onlyshownD1, food101separate. Read228rootintake and MOVEMENT_PRODUCTION_PLAN_20261010.md.
+
+Code215/217/222/223 accepted: visible-only sameowner completedWallGate four-neighbor projectedtopology; precisefallbackpicking leaves gatepassage open; visibleunderConstructionboolean afterfogfilter preservesenemyprivatejob and gatesunfinishedraster.36focused +ONEactualfivebuild/X/Ycorner/select/PauseResume/Gatetravel/Stop/menu0/errors0.221 coreenemyflag/privacy/completion PASS but scoutreturnHOLD, nofogreturn/menu/completedauthoredscreenshotclaim. Original215/218/220 holds retained.214 originalWallX HOLD retained.234 ONEwholeWallX/0retry is appearanceaccepted for a finite actual join trial; originalgeometryHOLD retained, no canonicalasset install.235 local exactwhole mask/state API passes42focused tests, sharedrender/alphapick context. Wall metadata maskonly; optionalaxis is gateonly. Livingcompleted-only; authoredconstruction/death still require API work. 236 ONEactual threejoinedXwalls/defaultzoom/pick/PauseResumeStop/menu0 acceptednarrow.237 local cleanedfort32/unchanged234PNG installed,28old descriptors preserved/runtime-render fields equaltested236; public230 unchanged. Read234/235/236rootintakes and237receipt before new releaseprep. Other topology/gate/finalstates remainunfinished. Finalillustratedwall/gate/construction-hit-death-attack remainunfinished.210 adjacentWallGate setbackfix deployed with230; allotherpair/terrain/role/economyguards unchanged, KingreplacementResidenceonly.
+
+## Current public release
+
+PUBLIC230 development optional `?art=fort`,28assets/186files inclretained207chunk. `/assets/index-D5hSY7R3.js` SHA479b4ad8b2806e6ed14f13e4b7c1314648faccd915a37be3cd6e744657dbb4cf. PID575363 uses immutable `/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/releases/230/runtime230`, sim29233a059ec084bc8577d20a1bccfd28ddc3024b9cb9bf4d5598c22f220f748b/server4e6a…4198/frozenws8.22.0. BareURLfallback, foodCHAR/D0absent. Canonical edits do not change runningbackend.
+
+227 preparation +229 exactnewbuild twojoinedWallGate/select/PauseResumeStop/menu0 andChromeFirefoxbare/disabledfoodboots PASS.230 guardedpair switch rooms0, immutablebackend+atomicdist, health/TLSbindings verified. Read230actualreceipts;231 normalTLS Chromium/Firefox enemyWallflag/privacy/ownjob/completion/ordinarymenus/errors0/rooms0 acceptednarrow. Exact28ready/menuDecoded/optionalboots/pick not independentlyasserted, no replay forcleanreceipt. Read-only extractedmode repair receipt retained. No fullmatch/defaultart/WAN/finalacceptance inference.
+
+CompleteCURRENT207 rollback44a92cf6dd290446eeec5458545431d6cacca3756a9c4de396573349337a759f is private230; older149archive f6f4c291…7251 preserved. Any rollback must switch BOTH207185dist and runtime206/dropin, preservingcanonicalsource.207PID510490/4aa and149/157023 are HISTORY, never currentrestart targets. Originalunit/env/Funnel policy retained. Check actual currentPID/health/rooms before deployment; no kicking rooms. Production intentionally running.
+
+## Scope and safety
+
+Candidate builds MUST use literal isolatedworkdir, absoluteoutDir outsideactivecheckout, exactviteconfig and pathassertions. No unqualified build fromcanonical, active dist overwrite or production restart duringimplementation/tests. Incident167/restoration receipts retained. Newpromotion needs exactsource/build/relevantchangedscene/pairedrollback; broadhuman authorization stands.
+
+Actual UI/state/direction for proofs, read-only diagnostics. No injectedcommands/facing/outcome, weakenedownership/liveness/selection/visibilityguards, or speed/balance changes to hide failures. Use documented simulation contracts and actualdiagnostic fields, not invented strictarrival thresholds/menu fields. Preserve failed guard state/toast/screens beforecleanup. Do not repeat completedfullmatches/tests absent changed concern.
+
+Update currentstatus/backlog briefly, keep history outside activeinstructions. Previous232entrypoints bytearchived checkpoint232-entrypoints;224 and older archives retained; older213/209/history remain custody, not job orders. Fullmaster/web/historical/visual/81–145/later goal INCOMPLETE until finalpublictwo-mode/bothmap/art/performance/externaldevice acceptance. Preservefivehourquietautomation, stop only fullgoalachieved or human cancels.

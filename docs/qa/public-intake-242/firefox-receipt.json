@@ -1,0 +1,192 @@
+{
+  "errors": [],
+  "requestFailures": [],
+  "bundleSHA256": "add2b4e819d43aff69360158ef7d0b867a078730a4c53135d1a5f5d8ced49e64",
+  "setup": "",
+  "launch": {
+    "art": {
+      "enabled": true,
+      "phase": "CANDIDATE",
+      "quality": "CANDIDATE",
+      "groundDraws": 3072,
+      "propDraws": 60,
+      "entityDraws": 78,
+      "walkDraws": 0,
+      "idleDraws": 0,
+      "lastWalk": null,
+      "gatherDraws": 0,
+      "lastGather": null,
+      "missing": [],
+      "pipeline": {
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 32,
+        "ready": 31,
+        "approved": 0,
+        "candidates": 31,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 16483840,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 28,
+        "encodedReady": 0,
+        "retainedEncodedBytes": 3920186,
+        "encodedBudgetBytes": 67108864,
+        "selectedDeclared": 31,
+        "failures": []
+      },
+      "hillDraws": 0,
+      "foodResourceDraws": 12,
+      "ironResourceDraws": 6
+    },
+    "boot": {
+      "declared": 12,
+      "ready": 12,
+      "failures": [],
+      "fontWarnings": []
+    },
+    "bank": {
+      "phase": "match",
+      "epoch": 2,
+      "encodedBytes": 3920186,
+      "encodedBudgetBytes": 67108864,
+      "activeIds": [
+        "grass",
+        "water",
+        "forest",
+        "residence",
+        "infantry-idle-D00",
+        "cavalry-idle-D00",
+        "villager-idle-D00",
+        "unit-contact-shadow",
+        "ford",
+        "shore",
+        "forest-bamboo",
+        "forest-palm",
+        "granary",
+        "villager-walk-south-014",
+        "villager-idle-south-014",
+        "villager-gather-wood-south-024",
+        "mountain-outcrop-108",
+        "grassy-hill-111",
+        "food-resource-114",
+        "iron-resource-119",
+        "barracks-idle-121",
+        "supply-depot-idle-126",
+        "villager-gather-iron-south-136",
+        "artillery-workshop-idle-140",
+        "cavalry-camp-idle-147",
+        "shipyard-idle-164",
+        "fort-idle-198",
+        "wall-whole-234-mask0",
+        "wall-whole-234-mask1",
+        "wall-whole-234-mask2",
+        "wall-whole-234-mask3"
+      ],
+      "scope": {
+        "map": "delta",
+        "roster": [
+          "villager",
+          "king",
+          "general",
+          "infantry",
+          "spearman",
+          "firearm",
+          "cavalry",
+          "artillery",
+          "wagon",
+          "warship",
+          "transport"
+        ],
+        "buildings": [
+          "residence",
+          "barracks",
+          "cavalryCamp",
+          "artilleryWorkshop",
+          "shipyard",
+          "fort",
+          "wall",
+          "gate",
+          "depot",
+          "granary"
+        ],
+        "leaders": [
+          "tran_nhan_tong",
+          "nguyen_hue",
+          "le_thanh_tong",
+          "ly_thuong_kiet"
+        ]
+      }
+    },
+    "players": [
+      {
+        "id": 0,
+        "name": "Commander",
+        "king": "tran_nhan_tong",
+        "general": "nguyen_hue",
+        "resources": {
+          "wood": 550,
+          "food": 809.8320000000003,
+          "iron": 260
+        },
+        "population": 13,
+        "populationCap": 120,
+        "synergies": [
+          "Rapid Columns"
+        ],
+        "stats": {
+          "kills": 0,
+          "lost": 0,
+          "gathered": 0,
+          "foodTransported": 0,
+          "buildingsDestroyed": 0,
+          "wagonsDestroyed": 0,
+          "abilities": 0
+        }
+      },
+      {
+        "id": 1,
+        "name": "Riverland AI",
+        "king": "le_thanh_tong",
+        "general": "ly_thuong_kiet",
+        "resources": {
+          "wood": 0,
+          "food": 0,
+          "iron": 0
+        },
+        "population": 0,
+        "populationCap": 120,
+        "synergies": [
+          "Organized Levy"
+        ]
+      }
+    ]
+  },
+  "menu": {
+    "status": "PLACEHOLDER_ONLY",
+    "manifest": "not-loaded",
+    "declared": 0,
+    "ready": 0,
+    "approved": 0,
+    "candidates": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fallbacks": 0,
+    "decodedBudgetBytes": 134217728,
+    "retainedDecodedBytes": 0,
+    "reservedDecodedBytes": 0,
+    "uniqueDecodedImages": 0,
+    "encodedReady": 0,
+    "retainedEncodedBytes": 0,
+    "encodedBudgetBytes": 67108864,
+    "selectedDeclared": 0,
+    "failures": []
+  },
+  "status": "PASS_NORMAL_TLS_FIREFOX_SETUP_LAUNCH_MENU",
+  "cleanup": {
+    "contextClosed": true,
+    "browserClosed": true
+  }
+}

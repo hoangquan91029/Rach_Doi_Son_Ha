@@ -1,0 +1,38 @@
+{
+  "status": "PASS_NORMAL_TLS241A_ISOLATED_MASK0_AND_FIREFOX_SETUP",
+  "bundleSHA256": "add2b4e819d43aff69360158ef7d0b867a078730a4c53135d1a5f5d8ced49e64",
+  "sameBundleBothBrowsers": true,
+  "chromeMask": {
+    "mask": 0,
+    "axis": "X",
+    "topology": "isolated",
+    "count": 0
+  },
+  "chromeSelection": [
+    35
+  ],
+  "chromeManifestReady": 32,
+  "chromePauseResume": [
+    313,
+    315
+  ],
+  "firefoxManifestDeclared": 32,
+  "firefoxSelectedReady": 31,
+  "portraitsReady": 12,
+  "networkErrors": 0,
+  "pageErrors": 0,
+  "menuDecodedBytes": [
+    0,
+    0
+  ],
+  "health": {
+    "ok": true,
+    "rooms": 0
+  },
+  "productionPID": "575363",
+  "backendUnchanged": true,
+  "ownedBrowserHandlesClosed": true,
+  "scope": "Chromium isolated mask0 only;Firefox setup/launch/menu only;no fullmatch/allmaps/default/motion/WAN approval",
+  "firefoxSelectionNote": "31ready==31selectedDeclared, declared32; NguyenHue selection leaves THD-only asset unselected, not a decode failure.",
+  "public188ByteExactAfter": true
+}

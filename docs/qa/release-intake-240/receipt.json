@@ -1,0 +1,50 @@
+{
+  "status": "PASS_EXACT238_FIREFOX_LOCAL_INTAKE_NOT_PROMOTED",
+  "bundleSHA256": "add2b4e819d43aff69360158ef7d0b867a078730a4c53135d1a5f5d8ced49e64",
+  "simSHA256": "29233a059ec084bc8577d20a1bccfd28ddc3024b9cb9bf4d5598c22f220f748b",
+  "manifestDeclaredAtScene": 32,
+  "selectedDecodedReadyAtScene": 32,
+  "observedMasks": [
+    {
+      "id": 36,
+      "mask": 1,
+      "axis": "X",
+      "topology": "end",
+      "count": 1
+    },
+    {
+      "id": 43,
+      "mask": 3,
+      "axis": "X",
+      "topology": "straight",
+      "count": 2
+    },
+    {
+      "id": 52,
+      "mask": 2,
+      "axis": "X",
+      "topology": "end",
+      "count": 1
+    }
+  ],
+  "centerSelection": [
+    43
+  ],
+  "pausedTick": 870,
+  "resumedTick": 872,
+  "errors": [],
+  "clip": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/release-intake-240/clips/page@f99108d4c392dc830af578584f6b2772.webm",
+  "cleanup": {
+    "rooms": 0,
+    "serverListening": false,
+    "browserClosed": true
+  },
+  "stagePinsExact238": true,
+  "public230Exact": true,
+  "productionPID": "575363",
+  "health": {
+    "ok": true,
+    "rooms": 0
+  },
+  "methodLabelCorrection": "Inherited fresh236 wording is stale; actual paths/sourcepins/bundle bind frozen238. No rebuild."
+}

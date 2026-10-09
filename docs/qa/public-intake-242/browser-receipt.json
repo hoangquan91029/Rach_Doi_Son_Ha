@@ -1,0 +1,151 @@
+{
+  "status": "PASS_NORMAL_TLS_ISOLATED_WALL_SELECT_PAUSE_RESUME_STOP_MENU",
+  "method": "One242 normalTLS isolated wholewall scene; keyboard unusedgroup9 clear and exactlivingown pick; actual241A frontend; no group/appstate/commands injection; read-only diagnostics; no injected gameplay/state/facing/speed",
+  "errors": [],
+  "structures": [
+    {
+      "id": 35,
+      "type": "wall",
+      "x": 3.5,
+      "y": 23.5,
+      "completedTick": 297
+    }
+  ],
+  "movement": [],
+  "requestFailures": [],
+  "bundleSHA256": "add2b4e819d43aff69360158ef7d0b867a078730a4c53135d1a5f5d8ced49e64",
+  "workerId": 7,
+  "line": {
+    "x": 3.5,
+    "y": 23.5,
+    "staging": {
+      "x": 3.5,
+      "y": 21.5
+    },
+    "d": 4
+  },
+  "oneIsolatedWall": true,
+  "artAtWall": {
+    "enabled": true,
+    "phase": "CANDIDATE",
+    "quality": "PLACEHOLDER_ONLY",
+    "groundDraws": 3072,
+    "propDraws": 8910,
+    "entityDraws": 11804,
+    "walkDraws": 0,
+    "idleDraws": 0,
+    "lastWalk": null,
+    "gatherDraws": 0,
+    "lastGather": null,
+    "missing": [
+      {
+        "key": "villager:walk:0",
+        "reason": "No exact authored raster state/direction",
+        "status": "PLACEHOLDER_ONLY"
+      },
+      {
+        "key": "villager:walk:4",
+        "reason": "No exact authored raster state/direction",
+        "status": "PLACEHOLDER_ONLY"
+      },
+      {
+        "key": "villager:idle:4",
+        "reason": "No exact authored raster state/direction",
+        "status": "PLACEHOLDER_ONLY"
+      },
+      {
+        "key": "villager:walk:2",
+        "reason": "No exact authored raster state/direction",
+        "status": "PLACEHOLDER_ONLY"
+      },
+      {
+        "key": "wall:construction",
+        "reason": "No authored construction sequence",
+        "status": "PLACEHOLDER_ONLY"
+      },
+      {
+        "key": "villager:build:2",
+        "reason": "No exact authored raster state/direction",
+        "status": "PLACEHOLDER_ONLY"
+      },
+      {
+        "key": "villager:idle:2",
+        "reason": "No exact authored raster state/direction",
+        "status": "PLACEHOLDER_ONLY"
+      }
+    ],
+    "pipeline": {
+      "status": "CANDIDATE",
+      "manifest": "ready",
+      "declared": 32,
+      "ready": 32,
+      "approved": 0,
+      "candidates": 32,
+      "failed": 0,
+      "skipped": 0,
+      "fallbacks": 0,
+      "decodedBudgetBytes": 134217728,
+      "retainedDecodedBytes": 17532416,
+      "reservedDecodedBytes": 0,
+      "uniqueDecodedImages": 29,
+      "encodedReady": 0,
+      "retainedEncodedBytes": 3920186,
+      "encodedBudgetBytes": 67108864,
+      "selectedDeclared": 32,
+      "failures": []
+    },
+    "hillDraws": 0,
+    "foodResourceDraws": 1782,
+    "ironResourceDraws": 891
+  },
+  "bootAtWall": {
+    "declared": 12,
+    "ready": 12,
+    "failures": [],
+    "fontWarnings": []
+  },
+  "observedTopology": {
+    "mask": 0,
+    "axis": "X",
+    "topology": "isolated",
+    "count": 0
+  },
+  "wallSelection": [
+    35
+  ],
+  "pausedTick": 313,
+  "resumedTick": 315,
+  "menu": {
+    "bank": {
+      "phase": "menu",
+      "epoch": 3,
+      "encodedBytes": 3920186,
+      "encodedBudgetBytes": 67108864,
+      "activeIds": [],
+      "scope": null
+    },
+    "art": {
+      "status": "PLACEHOLDER_ONLY",
+      "manifest": "not-loaded",
+      "declared": 0,
+      "ready": 0,
+      "approved": 0,
+      "candidates": 0,
+      "failed": 0,
+      "skipped": 0,
+      "fallbacks": 0,
+      "decodedBudgetBytes": 134217728,
+      "retainedDecodedBytes": 0,
+      "reservedDecodedBytes": 0,
+      "uniqueDecodedImages": 0,
+      "encodedReady": 0,
+      "retainedEncodedBytes": 0,
+      "encodedBudgetBytes": 67108864,
+      "selectedDeclared": 0,
+      "failures": []
+    }
+  },
+  "cleanup": {
+    "browserClosed": true
+  }
+}

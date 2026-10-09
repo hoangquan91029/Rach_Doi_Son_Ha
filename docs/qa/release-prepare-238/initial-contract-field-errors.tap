@@ -1,0 +1,39 @@
+✔ publication disables bare/unknown/pendingfood/D0, retains fortworld (0.668612ms)
+✖ fort32 exact installed bytes, old28 preserved and wholePNG shared (5.978867ms)
+✖ all publication recipes validate source/runtime bytes unchanged fromstage (31.590558ms)
+✔ immutable backend matches canonical and prior230, oldchunks retained (2.033264ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 2
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 88.190816
+
+✖ failing tests:
+
+test at docs/qa/release-prepare-238/scope-contracts.test.mjs:4:1
+✖ fort32 exact installed bytes, old28 preserved and wholePNG shared (5.978867ms)
+  TypeError: Cannot read properties of undefined (reading 'mask')
+      at file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/release-prepare-238/scope-contracts.test.mjs:4:530
+      at Array.map (<anonymous>)
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/release-prepare-238/scope-contracts.test.mjs:4:512)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3)
+
+test at docs/qa/release-prepare-238/scope-contracts.test.mjs:5:1
+✖ all publication recipes validate source/runtime bytes unchanged fromstage (31.590558ms)
+  TypeError: Cannot convert undefined or null to object
+      at Object.entries (<anonymous>)
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/release-prepare-238/scope-contracts.test.mjs:5:365)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7)

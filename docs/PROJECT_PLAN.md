@@ -2,7 +2,7 @@
 
 Cập nhật ngày 2026-10-10, múi giờ Asia/Ho_Chi_Minh. **Trạng thái: INCOMPLETE.** Đây là kế hoạch hiện hành cho toàn dự án; `NEXT_STEPS.md` chỉ giữ hàng đợi gần nhất. Hồ sơ cũ được giữ nguyên byte tại `docs/audit/2026-10-09/history/`.
 
-Latest execution237 ở mục23 và active movement plan thay các next-step lịch sử; source/receipt cũ giữ nguyên.
+Latest execution243 ở mục24 và active movement plan thay các next-step lịch sử; source/receipt cũ giữ nguyên.
 
 ## 1. Mục tiêu và cách đọc kết quả
 
@@ -220,3 +220,11 @@ R01/R02:227 frozenpair/rollback207 preparation,4scopecontracts;229 exactnewchunk
 [234](art/buildings/wall-x-idle-234/root-intake.json) ONE built-in whole-wall illustration/0retry, uniform128/fixed pivot627,900/logical42.3225. Root thấy hình đọc tốt ở gameplay size và cho phép finite actual join trial; worker geometryHOLD và214 giữ nguyên. [235](qa/fortification-art-235/root-intake.json) thêm exact visible mask/state whole-art selection, same topology context cho renderer và alpha picking;42 focused contracts PASS. Không xoay/ghép/mirror PNG. API chỉ dùng living completed wall/gate; finalconstruction/death vẫn thiếu.[236 actual scene](qa/wall-x-runtime-236/root-intake.json) đã đạt narrow X joins/selection/PauseResumeStop/menu0; [237](qa/wall-x-install-237/receipt.json) cài local cleaned32 manifest + unchanged PNG, all28old descriptors preserved và render-bearing fields bằng exacttested236. Public chưađổi, fullWallGate chưađạt. New finite release preparation/intake/rollback là next.
 
 Public230 không thay. Full realistic roster/directions/actions/12leaders/family scale/buildingstates/mapcomposition/densebrowser+rooms performance/defaultacceptedart/externaldesktopWAN/finalbothmapsSingle+1v1 vẫn INCOMPLETE.232 entrypoints được giữ nguyên byte trước cập nhật.
+
+## 24. Hiện hành238–243 — publicXwall và candidateY
+
+[238](qa/release-prepare-238/root-intake.json) build publication derivative exact237source/fort32:188files/chunkadd2…9e64/4scope contracts, chỉ loại pendingfoodCHAR như policy cũ; D0/Y239 vắng mặt. Completecurrent230 pairedrollback/archive byte-mode-safe extraction đã verify. [240](qa/release-intake-240/root-intake.json) ONE actualFirefox threeXwalls/defaultzoom/masks1,3,2/exactcenterpick/PauseResumeStop/menu0/errors0/32ready acceptednarrow. Runtime source không đổi sau scene.
+
+[241](qa/public-release-241/promotion.json) client-only public promotion: original atomicexchange EACCES before mutation preserved;241A ONLY ownednextclone root555→755/ONE new atomicexchange/188tree + normalTLSbytes verified. Backend immutable230/PID575363/sim29233/server4e6/ws8.22 giữ nguyên, không restart. [242](qa/public-intake-242/root-intake.json) clean normalTLS Chrome actualisolatedmask0/selection/PauseResumeStop/menu0/32ready và Firefox setup/launch31selectedready (32declared, THD-only unselected)/12portraits/menu0, botherrors0/network0/rooms0 đạt narrow. Không fullmatch/defaultart/WAN/finalart/motion inference. Current230 rollbacka466…962f và old186tree retained; historical207/149 không là current.
+
+[239](art/buildings/wall-y-idle-239/root-intake.json) ONE built-in wholeguide-only illustratedYpanel/0retry,42px appearance readable, compatiblematerial. Fixed1254/pivot627900→128/logical42.3225, không fit/mirror/sourcepixeltransform. Chưa cài hoặc nằm trong238/241. Next finite actualYwall join trial giữ X bindings, chỉ thêm exactY masks4/8/12; finalcorners/gate/states còn thiếu.233 D0Stop technical closure giữ nguyên, chưa motion/fanout approval. Fullgoal INCOMPLETE;237 entrypoints bytepreserved.
