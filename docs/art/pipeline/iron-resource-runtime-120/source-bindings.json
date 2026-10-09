@@ -1,0 +1,51 @@
+{
+  "status": "PREP_ONLY_NO_ART_BINDING",
+  "stage": "/tmp/rdsh-iron120-prep-zg7763ny",
+  "canonicalHEAD": "9c4288dd592016a781dd5cfb6547fa785abaab24",
+  "basePins": [
+    {
+      "path": "client/raster-slice.js",
+      "sha256": "4cd12d88489dae0c59f5541601590c76b8ca3668e7aaca06996275fdcffc6450"
+    },
+    {
+      "path": "client/renderer.js",
+      "sha256": "76d11959d67b997c728540185101d848400f83a348db1e0d22e8ecc843abcfb9"
+    },
+    {
+      "path": "client/terrain-props.js",
+      "sha256": "2e7f37a65b74b535461a417c7648f046b8f0f5186050f7f9997e3db87e098053"
+    },
+    {
+      "path": "client/main.js",
+      "sha256": "10a7332f5de111efd668230277b39ed63308dafb75556b26b71f0b9dd13fc122"
+    },
+    {
+      "path": "shared/sim.js",
+      "sha256": "28e37b63ee39bbe1440741fa0afed3d9f20797831f666c0ff03d8299a8eb609c"
+    },
+    {
+      "path": "public/assets/art-v1/terrain-115-manifest.json",
+      "sha256": "143d37b91fc680b2665852ae652d8797ba0322cb8a068e182ab6b4bb05f03026"
+    },
+    {
+      "path": "tests/food-resource115.test.js",
+      "sha256": "565cc79ba3ff980e18da86bc3c07561f92de8ef57c1c701dd8371ff492b8dbac"
+    },
+    {
+      "path": "tests/hill113.test.js",
+      "sha256": "42e1f8a4af6f4a0d7920294ea9207a65f2e67a5cf44278979bd6c47ac532a37b"
+    },
+    {
+      "path": "tests/mountain109.test.js",
+      "sha256": "a42d2b3f28bbaa5b83767fdfa29aebf55eeedcf9fa73f2aaee0838b468c096f1"
+    },
+    {
+      "path": "tests/terrain-cache.test.js",
+      "sha256": "dc2b67b878bf2ef6a5bcae516e00eb9ed7e74a91ff2dad6987c6338fe354e3bf"
+    }
+  ],
+  "119Source": null,
+  "runtimeScale": null,
+  "runtimePivot": null,
+  "baselineTests": "118receipt10pass0fail; notrerun120"
+}

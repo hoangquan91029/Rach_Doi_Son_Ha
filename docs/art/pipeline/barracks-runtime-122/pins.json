@@ -1,0 +1,55 @@
+{
+  "status": "PASS_NARROW_ACTUAL_BUILD_IDLE_SELECT_TRAIN_PAUSE_RESUME_STOP_MENU",
+  "stage": "/tmp/rdsh-barracks122-ha6v5w3j",
+  "baseStage": "/tmp/rdsh-iron120-prep-zg7763ny",
+  "verifiedAll120Pins": true,
+  "tests": {
+    "pass": 14,
+    "fail": 0
+  },
+  "build": "PASS",
+  "files": [
+    {
+      "path": "/tmp/rdsh-barracks122-ha6v5w3j/client/raster-slice.js",
+      "sha256": "f8668ac48c6d43046b1770c3a712c281d09356ecafbd20903f794416cf98c1da"
+    },
+    {
+      "path": "/tmp/rdsh-barracks122-ha6v5w3j/client/terrain-props.js",
+      "sha256": "f7107f21924d85499dda02096eec712683cb4ee1ac45c13febbfbe1226640b43"
+    },
+    {
+      "path": "/tmp/rdsh-barracks122-ha6v5w3j/client/renderer.js",
+      "sha256": "76d11959d67b997c728540185101d848400f83a348db1e0d22e8ecc843abcfb9"
+    },
+    {
+      "path": "/tmp/rdsh-barracks122-ha6v5w3j/shared/sim.js",
+      "sha256": "28e37b63ee39bbe1440741fa0afed3d9f20797831f666c0ff03d8299a8eb609c"
+    },
+    {
+      "path": "/tmp/rdsh-barracks122-ha6v5w3j/client/main.js",
+      "sha256": "10a7332f5de111efd668230277b39ed63308dafb75556b26b71f0b9dd13fc122"
+    },
+    {
+      "path": "/tmp/rdsh-barracks122-ha6v5w3j/public/assets/art-v1/terrain-122-manifest.json",
+      "sha256": "93bb8ec2a417e6bb0c70a2911b8d894fa4edc4f187e40a2a8336d4b228165ffb"
+    },
+    {
+      "path": "/tmp/rdsh-barracks122-ha6v5w3j/public/assets/art-v1/barracks-122/idle.webp",
+      "sha256": "c67536163440591c3675f4b72639c3c184e12eba6015d7a461bfde2953aec4c4"
+    },
+    {
+      "path": "/tmp/rdsh-barracks122-ha6v5w3j/tests/barracks122.test.js",
+      "sha256": "bb3ae696b31d74225b6bc629167c7cbbba4a8f0a0b273b837fb6b4352da39370"
+    },
+    {
+      "path": "/tmp/rdsh-barracks122-ha6v5w3j/dist/assets/index-7UcZ6zH-.js",
+      "sha256": "44b48cbad6beced88a9fd83f1a60075eb0881bbbf01e37c600f5dc2bffb18f6e"
+    }
+  ],
+  "actualBundleSHA": "44b48cbad6beced88a9fd83f1a60075eb0881bbbf01e37c600f5dc2bffb18f6e",
+  "cleanup": {
+    "rooms": 0,
+    "listening": false,
+    "browserClosed": true
+  }
+}

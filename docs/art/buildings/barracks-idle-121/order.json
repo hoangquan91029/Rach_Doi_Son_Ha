@@ -1,0 +1,39 @@
+{
+  "status": "CALL_AUTHORIZED_NOT_YET_OPEN",
+  "modelRouting": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low"
+  },
+  "builtinUnderlyingModel": "not exposed by tool",
+  "calls": 0,
+  "retries": 0,
+  "maxCalls": 1,
+  "pivotRequested": [
+    627,
+    1010
+  ],
+  "requestedCanvas": [
+    1254,
+    1254
+  ],
+  "render": [
+    112,
+    112
+  ],
+  "runtime": [
+    256,
+    256
+  ],
+  "references": [
+    {
+      "path": "docs/art/residence/variant-02/raw.png",
+      "sha256": "f617c3540680cafff467358bab1adb01bf735417563f2cba86ab8af523b07dcc"
+    },
+    {
+      "path": "docs/art/granary/variant-01/raw.png",
+      "sha256": "0d0c3963f3faed9341cd09f2ff118a753e9bd1ee431290b51635eebb17b61715"
+    }
+  ],
+  "rootApproval": "121 frozen112 render/pivot627,1010 normalizeactualcanvasdims accepted ONEbuiltin wholeassetcall/0retry",
+  "scope": "Idle source candidate only. Construction/hit/death and runtime/public integration OPEN."
+}

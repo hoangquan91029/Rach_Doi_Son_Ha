@@ -1,0 +1,124 @@
+{
+  "status": "ROOT_SOURCE_ACCEPTED_FOR_ONE_FINITE_RUNTIME",
+  "stage": "/tmp/rdsh-iron120-prep-zg7763ny",
+  "canonicalHEAD": "9c4288dd592016a781dd5cfb6547fa785abaab24",
+  "basePins": [
+    {
+      "path": "client/raster-slice.js",
+      "sha256": "4cd12d88489dae0c59f5541601590c76b8ca3668e7aaca06996275fdcffc6450"
+    },
+    {
+      "path": "client/renderer.js",
+      "sha256": "76d11959d67b997c728540185101d848400f83a348db1e0d22e8ecc843abcfb9"
+    },
+    {
+      "path": "client/terrain-props.js",
+      "sha256": "2e7f37a65b74b535461a417c7648f046b8f0f5186050f7f9997e3db87e098053"
+    },
+    {
+      "path": "client/main.js",
+      "sha256": "10a7332f5de111efd668230277b39ed63308dafb75556b26b71f0b9dd13fc122"
+    },
+    {
+      "path": "shared/sim.js",
+      "sha256": "28e37b63ee39bbe1440741fa0afed3d9f20797831f666c0ff03d8299a8eb609c"
+    },
+    {
+      "path": "public/assets/art-v1/terrain-115-manifest.json",
+      "sha256": "143d37b91fc680b2665852ae652d8797ba0322cb8a068e182ab6b4bb05f03026"
+    },
+    {
+      "path": "tests/food-resource115.test.js",
+      "sha256": "565cc79ba3ff980e18da86bc3c07561f92de8ef57c1c701dd8371ff492b8dbac"
+    },
+    {
+      "path": "tests/hill113.test.js",
+      "sha256": "42e1f8a4af6f4a0d7920294ea9207a65f2e67a5cf44278979bd6c47ac532a37b"
+    },
+    {
+      "path": "tests/mountain109.test.js",
+      "sha256": "a42d2b3f28bbaa5b83767fdfa29aebf55eeedcf9fa73f2aaee0838b468c096f1"
+    },
+    {
+      "path": "tests/terrain-cache.test.js",
+      "sha256": "dc2b67b878bf2ef6a5bcae516e00eb9ed7e74a91ff2dad6987c6338fe354e3bf"
+    }
+  ],
+  "119Source": null,
+  "runtimeScale": null,
+  "runtimePivot": [
+    64,
+    99.84
+  ],
+  "baselineTests": "118receipt10pass0fail; notrerun120",
+  "asset": {
+    "id": "iron-resource-119",
+    "family": "iron",
+    "kind": "prop",
+    "source": {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/terrain/iron-resource-119/raw.png",
+      "sha256": "57a5a4a1cb09760c46ec41deefb011a7f3dd0858aafce1c39b2da85a111888e5",
+      "rgbaSha256": "eb4386a2a1a4bf01645f4b492060c8cd9bc6315482c346ae487eb892088e596e",
+      "width": 1254,
+      "height": 1254,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "bbox": [
+        0,
+        19,
+        1238,
+        1254
+      ]
+    },
+    "runtime": {
+      "path": "iron-resource-120/iron.png",
+      "sha256": "1c2348701544814250d6da1bc8dc71eb236bcdaa2376a0aa584c4bde6aa312c0",
+      "rgbaSha256": "18b37c38c07c12a2ad1cd0a1e5be0b3654d90fa8fb7ce9826367d5bdaaaa8b01",
+      "width": 128,
+      "height": 128,
+      "derivation": {
+        "method": "resize",
+        "filter": "lanczos",
+        "sourceSha256": "57a5a4a1cb09760c46ec41deefb011a7f3dd0858aafce1c39b2da85a111888e5"
+      }
+    },
+    "cell": {
+      "width": 128,
+      "height": 128
+    },
+    "pivot": {
+      "x": 627,
+      "y": 978.12,
+      "space": "source"
+    },
+    "render": {
+      "width": 48,
+      "height": 48
+    },
+    "state": "static",
+    "direction": null,
+    "loop": true,
+    "frames": [
+      {
+        "x": 0,
+        "y": 0,
+        "width": 128,
+        "height": 128,
+        "durationMs": 1000
+      }
+    ],
+    "alphaPolicy": "transparent",
+    "contactShadow": {
+      "mode": "baked"
+    },
+    "review": {
+      "status": "CANDIDATE"
+    },
+    "candidate": true,
+    "notes": "119originalwholecanvas author56preserved;120ONEglobal48runtime"
+  },
+  "original119Render": 56,
+  "global120Render": 48
+}

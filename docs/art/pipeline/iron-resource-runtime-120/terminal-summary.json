@@ -1,0 +1,518 @@
+{
+  "status": "PASS_NARROW_ACTUAL_BOTHMAP_IRON_WORLD_NODE_AWAIT_PARENT_SCENE_INTAKE",
+  "stage": "/tmp/rdsh-iron120-prep-zg7763ny",
+  "bundle": {
+    "path": "/tmp/rdsh-iron120-prep-zg7763ny/dist/assets/index-B4yQsG0e.js",
+    "sha256": "1e40c8d69368e5e8e2c4f848b40e5d661c6c8ecf3ea88f66a2608ce2bc5a8b9e"
+  },
+  "records": {
+    "delta": {
+      "status": "PASS_NARROW_ACTUAL_IRON_NODE_GATHER_20_RETURN_PAUSE_RESUME_STOP_MENU",
+      "ledger": {
+        "beforeGather": {
+          "tick": 4,
+          "playerIron": 260,
+          "worker": {
+            "id": 7,
+            "owner": 0,
+            "type": "villager",
+            "kind": "unit",
+            "x": 7.5,
+            "y": 21.5,
+            "hp": 65,
+            "maxHp": 65,
+            "food": 40,
+            "foodMax": 40,
+            "morale": 95,
+            "state": "idle",
+            "dir": 0,
+            "cooldown": 0,
+            "queue": [],
+            "cargo": {
+              "food": 0,
+              "wood": 0,
+              "iron": 0,
+              "units": []
+            },
+            "resuppliedTick": 4,
+            "starving": 0,
+            "order": null
+          },
+          "node": {
+            "id": 3,
+            "type": "iron",
+            "x": 13.5,
+            "y": 26.5,
+            "amount": 3200
+          },
+          "stores": [
+            {
+              "id": 1,
+              "type": "residence",
+              "x": 9.5,
+              "y": 23.5,
+              "cargo": {
+                "food": 429.81452800000034,
+                "wood": 0,
+                "iron": 0,
+                "units": []
+              }
+            },
+            {
+              "id": 2,
+              "type": "granary",
+              "x": 6.5,
+              "y": 26.5,
+              "cargo": {
+                "food": 260,
+                "wood": 0,
+                "iron": 0,
+                "units": []
+              }
+            },
+            {
+              "id": 3,
+              "type": "depot",
+              "x": 13.5,
+              "y": 28.5,
+              "cargo": {
+                "food": 120,
+                "wood": 0,
+                "iron": 0,
+                "units": []
+              }
+            }
+          ],
+          "events": []
+        },
+        "loadedBeforeDeposit": {
+          "tick": 266,
+          "playerIron": 260,
+          "worker": {
+            "id": 7,
+            "owner": 0,
+            "type": "villager",
+            "kind": "unit",
+            "x": 13.435522137550723,
+            "y": 25.533301481285466,
+            "hp": 65,
+            "maxHp": 65,
+            "food": 39.00639999999967,
+            "foodMax": 40,
+            "morale": 95,
+            "state": "walk",
+            "dir": 2,
+            "cooldown": 0,
+            "queue": [],
+            "cargo": {
+              "food": 0,
+              "wood": 0,
+              "iron": 20,
+              "units": []
+            },
+            "resuppliedTick": 116,
+            "starving": 0,
+            "lastMovedTick": 266,
+            "visibleAction": {
+              "kind": "carry",
+              "load": "iron",
+              "moving": true
+            },
+            "order": {
+              "type": "gather",
+              "target": 3
+            }
+          },
+          "node": {
+            "id": 3,
+            "type": "iron",
+            "x": 13.5,
+            "y": 26.5,
+            "amount": 3179.9999999999877
+          },
+          "stores": [
+            {
+              "id": 1,
+              "type": "residence",
+              "x": 9.5,
+              "y": 23.5,
+              "cargo": {
+                "food": 418.65971200001997,
+                "wood": 0,
+                "iron": 0,
+                "units": []
+              }
+            },
+            {
+              "id": 2,
+              "type": "granary",
+              "x": 6.5,
+              "y": 26.5,
+              "cargo": {
+                "food": 260,
+                "wood": 0,
+                "iron": 0,
+                "units": []
+              }
+            },
+            {
+              "id": 3,
+              "type": "depot",
+              "x": 13.5,
+              "y": 28.5,
+              "cargo": {
+                "food": 120,
+                "wood": 0,
+                "iron": 0,
+                "units": []
+              }
+            }
+          ],
+          "events": []
+        },
+        "afterDeposit": {
+          "tick": 278,
+          "playerIron": 280,
+          "worker": {
+            "id": 7,
+            "owner": 0,
+            "type": "villager",
+            "kind": "unit",
+            "x": 13.5,
+            "y": 26.791153561790665,
+            "hp": 65,
+            "maxHp": 65,
+            "food": 38.926911999999646,
+            "foodMax": 40,
+            "morale": 95,
+            "state": "carry",
+            "dir": 2,
+            "cooldown": 0,
+            "queue": [],
+            "cargo": {
+              "food": 0,
+              "wood": 0,
+              "iron": 0,
+              "units": []
+            },
+            "resuppliedTick": 116,
+            "starving": 0,
+            "lastMovedTick": 278,
+            "order": {
+              "type": "gather",
+              "target": 3
+            }
+          },
+          "node": {
+            "id": 3,
+            "type": "iron",
+            "x": 13.5,
+            "y": 26.5,
+            "amount": 3179.9999999999877
+          },
+          "stores": [
+            {
+              "id": 1,
+              "type": "residence",
+              "x": 9.5,
+              "y": 23.5,
+              "cargo": {
+                "food": 418.18278400002083,
+                "wood": 0,
+                "iron": 0,
+                "units": []
+              }
+            },
+            {
+              "id": 2,
+              "type": "granary",
+              "x": 6.5,
+              "y": 26.5,
+              "cargo": {
+                "food": 260,
+                "wood": 0,
+                "iron": 0,
+                "units": []
+              }
+            },
+            {
+              "id": 3,
+              "type": "depot",
+              "x": 13.5,
+              "y": 28.5,
+              "cargo": {
+                "food": 120,
+                "wood": 0,
+                "iron": 0,
+                "units": []
+              }
+            }
+          ],
+          "events": []
+        },
+        "playerIronDelta": 20
+      },
+      "cleanup": {
+        "rooms": 0,
+        "listening": false,
+        "browserClosed": true
+      },
+      "errors": [],
+      "failures": []
+    },
+    "coast": {
+      "status": "PASS_NARROW_ACTUAL_IRON_NODE_GATHER_20_RETURN_PAUSE_RESUME_STOP_MENU",
+      "ledger": {
+        "beforeGather": {
+          "tick": 5,
+          "playerIron": 260,
+          "worker": {
+            "id": 7,
+            "owner": 0,
+            "type": "villager",
+            "kind": "unit",
+            "x": 7.5,
+            "y": 21.5,
+            "hp": 65,
+            "maxHp": 65,
+            "food": 40,
+            "foodMax": 40,
+            "morale": 95,
+            "state": "idle",
+            "dir": 0,
+            "cooldown": 0,
+            "queue": [],
+            "cargo": {
+              "food": 0,
+              "wood": 0,
+              "iron": 0,
+              "units": []
+            },
+            "resuppliedTick": 5,
+            "starving": 0,
+            "order": null
+          },
+          "node": {
+            "id": 3,
+            "type": "iron",
+            "x": 13.5,
+            "y": 26.5,
+            "amount": 3200
+          },
+          "stores": [
+            {
+              "id": 1,
+              "type": "residence",
+              "x": 9.5,
+              "y": 23.5,
+              "cargo": {
+                "food": 429.7681600000004,
+                "wood": 0,
+                "iron": 0,
+                "units": []
+              }
+            },
+            {
+              "id": 2,
+              "type": "granary",
+              "x": 6.5,
+              "y": 26.5,
+              "cargo": {
+                "food": 260,
+                "wood": 0,
+                "iron": 0,
+                "units": []
+              }
+            },
+            {
+              "id": 3,
+              "type": "depot",
+              "x": 13.5,
+              "y": 28.5,
+              "cargo": {
+                "food": 120,
+                "wood": 0,
+                "iron": 0,
+                "units": []
+              }
+            }
+          ],
+          "events": []
+        },
+        "loadedBeforeDeposit": {
+          "tick": 268,
+          "playerIron": 260,
+          "worker": {
+            "id": 7,
+            "owner": 0,
+            "type": "villager",
+            "kind": "unit",
+            "x": 13.435522137550723,
+            "y": 25.533301481285466,
+            "hp": 65,
+            "maxHp": 65,
+            "food": 39.00639999999967,
+            "foodMax": 40,
+            "morale": 95,
+            "state": "walk",
+            "dir": 2,
+            "cooldown": 0,
+            "queue": [],
+            "cargo": {
+              "food": 0,
+              "wood": 0,
+              "iron": 20,
+              "units": []
+            },
+            "resuppliedTick": 118,
+            "starving": 0,
+            "lastMovedTick": 268,
+            "visibleAction": {
+              "kind": "carry",
+              "load": "iron",
+              "moving": true
+            },
+            "order": {
+              "type": "gather",
+              "target": 3
+            }
+          },
+          "node": {
+            "id": 3,
+            "type": "iron",
+            "x": 13.5,
+            "y": 26.5,
+            "amount": 3179.9999999999877
+          },
+          "stores": [
+            {
+              "id": 1,
+              "type": "residence",
+              "x": 9.5,
+              "y": 23.5,
+              "cargo": {
+                "food": 418.56697600002013,
+                "wood": 0,
+                "iron": 0,
+                "units": []
+              }
+            },
+            {
+              "id": 2,
+              "type": "granary",
+              "x": 6.5,
+              "y": 26.5,
+              "cargo": {
+                "food": 260,
+                "wood": 0,
+                "iron": 0,
+                "units": []
+              }
+            },
+            {
+              "id": 3,
+              "type": "depot",
+              "x": 13.5,
+              "y": 28.5,
+              "cargo": {
+                "food": 120,
+                "wood": 0,
+                "iron": 0,
+                "units": []
+              }
+            }
+          ],
+          "events": []
+        },
+        "afterDeposit": {
+          "tick": 280,
+          "playerIron": 280,
+          "worker": {
+            "id": 7,
+            "owner": 0,
+            "type": "villager",
+            "kind": "unit",
+            "x": 13.5,
+            "y": 26.791153561790665,
+            "hp": 65,
+            "maxHp": 65,
+            "food": 38.926911999999646,
+            "foodMax": 40,
+            "morale": 95,
+            "state": "carry",
+            "dir": 2,
+            "cooldown": 0,
+            "queue": [],
+            "cargo": {
+              "food": 0,
+              "wood": 0,
+              "iron": 0,
+              "units": []
+            },
+            "resuppliedTick": 118,
+            "starving": 0,
+            "lastMovedTick": 280,
+            "order": {
+              "type": "gather",
+              "target": 3
+            }
+          },
+          "node": {
+            "id": 3,
+            "type": "iron",
+            "x": 13.5,
+            "y": 26.5,
+            "amount": 3179.9999999999877
+          },
+          "stores": [
+            {
+              "id": 1,
+              "type": "residence",
+              "x": 9.5,
+              "y": 23.5,
+              "cargo": {
+                "food": 418.090048000021,
+                "wood": 0,
+                "iron": 0,
+                "units": []
+              }
+            },
+            {
+              "id": 2,
+              "type": "granary",
+              "x": 6.5,
+              "y": 26.5,
+              "cargo": {
+                "food": 260,
+                "wood": 0,
+                "iron": 0,
+                "units": []
+              }
+            },
+            {
+              "id": 3,
+              "type": "depot",
+              "x": 13.5,
+              "y": 28.5,
+              "cargo": {
+                "food": 120,
+                "wood": 0,
+                "iron": 0,
+                "units": []
+              }
+            }
+          ],
+          "events": []
+        },
+        "playerIronDelta": 20
+      },
+      "cleanup": {
+        "rooms": 0,
+        "listening": false,
+        "browserClosed": true
+      },
+      "errors": [],
+      "failures": []
+    }
+  }
+}

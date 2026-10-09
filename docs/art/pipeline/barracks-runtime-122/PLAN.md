@@ -1,0 +1,9 @@
+# Barracks122 — PLAN ONLY
+
+Await root dispatch of terminal120 exact frozen iron terrain21 stage. Do not copy canonical118 or bind a manifest/build/browser yet: doing so could drop ore. Owned scope is this plan directory plus a later isolated stage only. No canonical/public/Git/topdocs changes.
+
+Proposed optionalterrain22: retain all actual120 terrain21 assets and add exact121 whole-canvas256 lossless WebP building.barracks idle/static-direction-null. Fixed112logical square/pivot627,1010 source1254. Source intake accepted by root, actual runtime remains open.
+
+Client raster sampleEntity already rejects construction, chooses exact normal/hit/death authored states and falls back procedurally if absent. Extend supported building family only in terrain route; completed living idle barracks uses candidate. No idle substitution for construction/hit/death. Existing visual-picking sampleEntity API follows same raster rectangle/pivot with alpha>=80; retain fallback picking for unsupported states. No private entity state/type spoofing or economic/train changes. Existing UI villager build action issues normal build command, and Barracks trains infantry/spearman/firearm through existing actions.
+
+Future bounded validation after explicit root dispatch: relevant schema/exact-state/alpha-selection contracts; one actual Delta ordinaryUI own-villager Build Barracks placement, observe real construction→idle (nominal15s), alpha-pick actual finished building, train ONE infantry and observe queue→spawn if normal food-store accounting permits. Capture actual22ready/12portraits/error0/defaultzoom1.08; Pause→actualResume→Stop/menu. No full match/exhaustive review, assertion weakening, simulation/economy changes, motion approval or public deployment. Preserve original121raw/prompt/receipts and120 historical failures.

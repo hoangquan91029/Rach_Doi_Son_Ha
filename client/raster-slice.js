@@ -1,4 +1,4 @@
-import {mountainPropPlacements,hillGroundPlacements,foodResourceEligible} from './terrain-props.js';
+import {mountainPropPlacements,hillGroundPlacements,foodResourceEligible,staticResourceEligible} from './terrain-props.js';
 import {authoredActionStates,gatherAnimationTime} from './action-presentation.js';
 import {sampleSpriteAnimation,defaultAnimationLoop,attackAnimationTime} from './sprite-timing.js';
 import {createArtAssetPipeline} from './art-assets.js';
@@ -10,7 +10,7 @@ const TW=TILE_WIDTH,TH=TILE_HEIGHT;
 const finite=n=>Number.isFinite(n);
 const normalState=entity=>entity.hp<=0?'death':entity.state;
 /** Optional candidate art over actual simulation. No substitute map, fake units, or sprite mirroring. */
-export function createRasterSlice({enabled=['pilot','walk','work','food','terrain'].includes(new URLSearchParams(globalThis.location?.search||'').get('art')),manifestUrl=new URLSearchParams(globalThis.location?.search||'').get('art')==='terrain'?'/assets/art-v1/terrain-115-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='food'?'/assets/art-v1/food-099-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='work'?'/assets/art-v1/gather-026-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='walk'?'/assets/art-v1/walk-014-manifest.json':'/assets/art-v1/manifest.json',onStatus=()=>{},materialWorldSize=8}={}) {
+export function createRasterSlice({enabled=['pilot','walk','work','food','terrain'].includes(new URLSearchParams(globalThis.location?.search||'').get('art')),manifestUrl=new URLSearchParams(globalThis.location?.search||'').get('art')==='terrain'?'/assets/art-v1/terrain-122-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='food'?'/assets/art-v1/food-099-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='work'?'/assets/art-v1/gather-026-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='walk'?'/assets/art-v1/walk-014-manifest.json':'/assets/art-v1/manifest.json',onStatus=()=>{},materialWorldSize=8}={}) {
  const pipeline=createArtAssetPipeline({manifestUrl,allowCandidates:true,onStatus});
  const locomotion=createLocomotionPhase();
  const cells=new Map(),patterns=new WeakMap(),missing=new Set();let ready=false;
@@ -96,15 +96,15 @@ export function createRasterSlice({enabled=['pilot','walk','work','food','terrai
    status.hillDraws=(status.hillDraws||0)+drawn;return drawn;
   },
   drawResource(ctx,{resource,project,zoom=1,timeMs=0}={}) {
-   if(!enabled||!ready||new URLSearchParams(globalThis.location?.search||'').get('art')!=='terrain'||!foodResourceEligible(resource)||typeof project!=='function')return false;
-   const raster=select({families:['food','resource.food'],kind:'prop',state:'static',direction:null,timeMs});if(!raster)return false;
-   if(rasterAt(ctx,raster,project(resource.x,resource.y),zoom)){status.foodResourceDraws=(status.foodResourceDraws||0)+1;return true;}return false;
+   if(!enabled||!ready||new URLSearchParams(globalThis.location?.search||'').get('art')!=='terrain'||!staticResourceEligible(resource)||typeof project!=='function')return false;
+   const raster=select({families:[resource.type,`resource.${resource.type}`],kind:'prop',state:'static',direction:null,timeMs});if(!raster)return false;
+   if(rasterAt(ctx,raster,project(resource.x,resource.y),zoom)){const key=resource.type==='iron'?'ironResourceDraws':'foodResourceDraws';status[key]=(status[key]||0)+1;return true;}return false;
   },
   sampleEntity(entity,{tick=0,timeMs=tick*50}={}) {
    if(!enabled||!ready||!entity||entity.embarked||!finite(entity.x)||!finite(entity.y))return false;
    if(entity.kind==='building'&&entity.construction){recordMissing(`${entity.type}:construction`,'No authored construction sequence');return false;}
    let families,kind,direction;
-   if(entity.kind==='building'){if(!['residence','granary'].includes(entity.type))return false;families=[entity.type,`building.${entity.type}`];kind='building';direction=null;}
+   if(entity.kind==='building'){if(!['residence','granary'].includes(entity.type)&&!(entity.type==='barracks'&&new URLSearchParams(globalThis.location?.search||'').get('art')==='terrain'))return false;families=[entity.type,`building.${entity.type}`];kind='building';direction=null;}
    else if(['villager','infantry','cavalry'].includes(entity.type)){families=[entity.type,`unit.${entity.type}`];kind='unit';direction=entity.dir;}
    else if(entity.type==='general'&&entity.character==='tran_hung_dao'){families=['tran_hung_dao','unit.tran_hung_dao'];kind='unit';direction=entity.dir;}
    else return false;

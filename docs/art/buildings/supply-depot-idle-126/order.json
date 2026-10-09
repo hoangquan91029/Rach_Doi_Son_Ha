@@ -1,0 +1,47 @@
+{
+  "status": "NEW_SEPARATE_126_ONE_CALL_AUTHORIZED",
+  "profile": "gpt-6.1-sol/low",
+  "calls": 0,
+  "retries": 0,
+  "maxCalls": 1,
+  "references": [
+    {
+      "path": "docs/art/residence/variant-02/raw.png",
+      "sha256": "f617c3540680cafff467358bab1adb01bf735417563f2cba86ab8af523b07dcc"
+    },
+    {
+      "path": "docs/art/granary/variant-01/raw.png",
+      "sha256": "0d0c3963f3faed9341cd09f2ff118a753e9bd1ee431290b51635eebb17b61715"
+    },
+    {
+      "path": "docs/art/buildings/barracks-idle-121/raw.png",
+      "sha256": "65235252a47fdf4e6b1c9db67a56a05db13b7e08dd93682a7226bc8a5cb76d00"
+    }
+  ],
+  "requestedCanvas": [
+    1254,
+    1254
+  ],
+  "normalizedPivot": [
+    0.5,
+    0.8054226475279107
+  ],
+  "runtime": [
+    256,
+    256
+  ],
+  "render": [
+    96,
+    96
+  ],
+  "previewZoom": 1.08,
+  "scope": "SOURCE_ONLY no runtime/canonical/public/characterfanout",
+  "spriteSkill": "read scope excludes buildings; not applied",
+  "parent125": {
+    "status": "TERMINAL_HOLD_BUILTIN_TIMEOUT_NO_OUTPUT",
+    "calls": 1,
+    "retries": 0,
+    "callOpen": false
+  },
+  "order126": "Separate human/root authorized recovery order, not125 retry/resume"
+}

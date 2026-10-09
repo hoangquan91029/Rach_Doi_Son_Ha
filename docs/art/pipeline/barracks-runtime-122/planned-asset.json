@@ -1,0 +1,46 @@
+{
+  "status": "PLAN_ONLY_WAITING_ROOT120_TERMINAL_STAGE",
+  "id": "barracks-idle-121",
+  "family": "building.barracks",
+  "kind": "building",
+  "state": "idle",
+  "direction": null,
+  "candidate": true,
+  "alphaPolicy": "transparent",
+  "source": {
+    "path": "docs/art/buildings/barracks-idle-121/raw.png",
+    "sha256": "65235252a47fdf4e6b1c9db67a56a05db13b7e08dd93682a7226bc8a5cb76d00",
+    "width": 1254,
+    "height": 1254
+  },
+  "runtime": {
+    "path": "docs/art/buildings/barracks-idle-121/runtime-256.webp",
+    "sha256": "c67536163440591c3675f4b72639c3c184e12eba6015d7a461bfde2953aec4c4",
+    "width": 256,
+    "height": 256
+  },
+  "pivot": {
+    "x": 627,
+    "y": 1010,
+    "space": "source"
+  },
+  "render": {
+    "width": 112,
+    "height": 112
+  },
+  "frames": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 1000
+    }
+  ],
+  "loop": true,
+  "contactShadow": {
+    "mode": "baked"
+  },
+  "parentSourceIntake": "SOURCE_FOR_FINITE122_IDLE_RUNTIME",
+  "runtimeApproved": false
+}

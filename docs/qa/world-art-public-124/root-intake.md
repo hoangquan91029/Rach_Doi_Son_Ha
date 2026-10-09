@@ -1,0 +1,1 @@
+Root actual120 both iron scenes and122 finishedBarracks narrow accepted, finitePUBLIC22 dispatch. Use frozen122 source exclusively; unsupported building states keep originalguard/fallback, foodCHARroute remainslocal.

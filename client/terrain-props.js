@@ -10,4 +10,5 @@ export function hillGroundPlacements(state,ready){
  return out;
 }
 
-export function foodResourceEligible(r){return r?.type==='food'&&Number.isFinite(r.amount)&&r.amount>0&&Number.isFinite(r.x)&&Number.isFinite(r.y);}
+export function staticResourceEligible(r){return ['food','iron'].includes(r?.type)&&Number.isFinite(r.amount)&&r.amount>0&&Number.isFinite(r.x)&&Number.isFinite(r.y);}
+export function foodResourceEligible(r){return r?.type==='food'&&staticResourceEligible(r);}

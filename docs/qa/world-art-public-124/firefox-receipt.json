@@ -1,0 +1,200 @@
+{
+  "status": "PASS",
+  "engine": "firefox",
+  "normalTLS": true,
+  "artAssets": 22,
+  "portraits": 12,
+  "browser": "153.0",
+  "actions": [
+    {
+      "test": "visible unoccupied construction site",
+      "site": {
+        "x": 5.5,
+        "y": 19.5,
+        "d": 2.8284271247461903
+      }
+    },
+    {
+      "test": "actual Barracks construction reserved",
+      "entity": {
+        "id": 35,
+        "owner": 0,
+        "type": "barracks",
+        "kind": "building",
+        "x": 5.5,
+        "y": 19.5,
+        "hp": 78,
+        "maxHp": 650,
+        "food": 0,
+        "foodMax": 0,
+        "morale": 95,
+        "state": "idle",
+        "dir": 0,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "spentCost": {
+          "wood": 140,
+          "food": 0,
+          "iron": 20
+        },
+        "construction": {
+          "remaining": 15,
+          "total": 15,
+          "builder": 7
+        },
+        "order": null
+      }
+    },
+    {
+      "test": "completed idle Barracks opaque-pixel selection",
+      "entity": {
+        "id": 35,
+        "owner": 0,
+        "type": "barracks",
+        "kind": "building",
+        "x": 5.5,
+        "y": 19.5,
+        "hp": 650,
+        "maxHp": 650,
+        "food": 0,
+        "foodMax": 0,
+        "morale": 95,
+        "state": "idle",
+        "dir": 0,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "spentCost": {
+          "wood": 140,
+          "food": 0,
+          "iron": 20
+        },
+        "construction": null,
+        "order": null
+      },
+      "pick": {
+        "x": 718.6114285714286,
+        "y": 439.35428571428577
+      }
+    },
+    {
+      "test": "one Infantry queued by ordinary UI",
+      "queue": [
+        {
+          "unit": "infantry",
+          "remaining": 8.899999999999999
+        }
+      ]
+    },
+    {
+      "test": "one Infantry spawned",
+      "entity": {
+        "id": 46,
+        "owner": 0,
+        "type": "infantry",
+        "kind": "unit",
+        "x": 4.5,
+        "y": 18.5,
+        "hp": 125,
+        "maxHp": 125,
+        "food": 39.993376,
+        "foodMax": 40,
+        "morale": 95,
+        "state": "idle",
+        "dir": 0,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "starving": 0,
+        "order": null
+      }
+    },
+    {
+      "worker": {
+        "id": 7,
+        "owner": 0,
+        "type": "villager",
+        "kind": "unit",
+        "x": 6.611140410482181,
+        "y": 21.16293914145813,
+        "hp": 65,
+        "maxHp": 65,
+        "food": 36.6615039999989,
+        "foodMax": 40,
+        "morale": 95,
+        "state": "idle",
+        "dir": 5,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "resuppliedTick": 39,
+        "starving": 0,
+        "lastMovedTick": 45,
+        "order": null
+      },
+      "food": {
+        "id": 3,
+        "type": "iron",
+        "x": 13.5,
+        "y": 26.5,
+        "amount": 3200
+      }
+    },
+    {
+      "test": "Escape cancelled then context GATHER",
+      "entity": {
+        "id": 7,
+        "owner": 0,
+        "type": "villager",
+        "kind": "unit",
+        "x": 6.709318548515996,
+        "y": 21.20016887704963,
+        "hp": 65,
+        "maxHp": 65,
+        "food": 36.522399999998854,
+        "foodMax": 40,
+        "morale": 95,
+        "state": "walk",
+        "dir": 0,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "resuppliedTick": 39,
+        "starving": 0,
+        "lastMovedTick": 564,
+        "order": {
+          "type": "gather",
+          "target": 3
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "networkFailures": []
+}

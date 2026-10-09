@@ -1,0 +1,43 @@
+{
+  "status": "FROZEN_ONE_CALL",
+  "profile": "gpt-6.1-sol/low",
+  "backend": "builtinimagegen underlyingmodelnotexposed",
+  "calls": 1,
+  "retries": 0,
+  "transform": {
+    "pivotNormalized": [
+      0.5,
+      0.78
+    ],
+    "renderLogical": [
+      56,
+      56
+    ],
+    "defaultZoom": 1.08,
+    "runtime": [
+      128,
+      128
+    ],
+    "wholecanvas": true,
+    "crop": false,
+    "fit": false,
+    "alphaClean": false
+  },
+  "references": [
+    {
+      "path": "docs/art/terrain/mountain-outcrop-108/mountain-outcrop-108.raw.png",
+      "sha256": "034583e5c722641a13ef80582a1a30307409fe73605cb077360ef4c29f4456b6",
+      "role": "styleonly"
+    },
+    {
+      "path": "docs/art/terrain/food-resource-114/raw.png",
+      "sha256": "45a28a78419cd8c3f3d9b3f6ed36b3ce25127fbe34d2b2353c4226ca7e68218b",
+      "role": "styleonly"
+    },
+    {
+      "path": "public/assets/art-v1/terrain/grass-a.png",
+      "sha256": "e38ceebf5c8e7c9033214e00be3172f2f4a5afe06e213f212f762bebf349624c",
+      "role": "styleonly"
+    }
+  ]
+}
