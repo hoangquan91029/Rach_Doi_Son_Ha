@@ -1,0 +1,52 @@
+{
+  "candidate": "/tmp/rdsh-storage132-7n1uqqei",
+  "verified132Pins": 211,
+  "verifiedUnchanged127": [
+    "client/raster-slice.js",
+    "client/renderer.js",
+    "client/terrain-props.js",
+    "tests/depot127.test.js",
+    "public/assets/art-v1/terrain-127-manifest.json",
+    "public/assets/art-v1/supply-depot-127/depot.webp",
+    "shared/sim.js",
+    "shared/data.js"
+  ],
+  "installed": [
+    {
+      "path": "client/raster-slice.js",
+      "beforeSHA256": "f8668ac48c6d43046b1770c3a712c281d09356ecafbd20903f794416cf98c1da",
+      "afterSHA256": "a7845203a036c865ecd4222577131188654c07a7e334a86488b7cbf4b2bc7eac"
+    },
+    {
+      "path": "client/main.js",
+      "beforeSHA256": "10a7332f5de111efd668230277b39ed63308dafb75556b26b71f0b9dd13fc122",
+      "afterSHA256": "c7b9e2726ea7666c7ae0f74a266a28c0e4347baf47fcd12641b3afc409bc2d74"
+    },
+    {
+      "path": "client/storage-hud.js",
+      "beforeSHA256": null,
+      "afterSHA256": "c806dc3f8f26c25e660f222b5373b7ffd1d11c4ac97cadf6adcfaeeffa4d5c46"
+    },
+    {
+      "path": "public/assets/art-v1/terrain-127-manifest.json",
+      "beforeSHA256": null,
+      "afterSHA256": "bd2221e8cceeea0edda3351644292af00e0c9e5afaeecceab3ce51097e5c0556"
+    },
+    {
+      "path": "public/assets/art-v1/supply-depot-127/depot.webp",
+      "beforeSHA256": null,
+      "afterSHA256": "fc6626d6b88cfaf3e240cdf6f2a0df33d4f34122133742c3f3c2e836cddda462"
+    },
+    {
+      "path": "tests/depot127.test.js",
+      "beforeSHA256": null,
+      "afterSHA256": "160daadf6c52ccfff62caab58c3d3945ea7e37d6c84f9262b4c350e175527423"
+    },
+    {
+      "path": "tests/storage-hud132.test.js",
+      "beforeSHA256": null,
+      "afterSHA256": "3f23c8163b378e285822369b89e78c35a04cc27c45b9bfd2809569e289bb6fda"
+    }
+  ],
+  "parentIntake": "ROOT_ACCEPT_NARROW_ACTUAL127DEPOT132STORAGE_UI"
+}

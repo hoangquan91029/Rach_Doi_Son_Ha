@@ -1,0 +1,9 @@
+# 128 — canonicalLOCAL combined Depot/storage HUD integration PASS_NARROW
+
+Exactgpt-6.1-sol/low. Rootaccepted127actualDepotbuild/idle/selection/wagontrain scene and132actualstorageHUD scene binds atomicinstall from FROZEN `/tmp/rdsh-storage132-7n1uqqei` only. All211declared132source/build/testpins verified;8unchanged127source/asset/controlpins verified (compiled127bundle andmain.js intentionally differby132HUD). Exact7canonicalpaths copied: client/raster-slice.js, client/main.js, newclient/storage-hud.js, newpublic/assets/art-v1/terrain-127-manifest.json, newpublic/assets/art-v1/supply-depot-127/depot.webp, tests/depot127.test.js, tests/storage-hud132.test.js. Before/afterSHA andcandidatebyteequality savedinstalled-pins.json.
+
+20targetcontractsPASS0fail84.662696ms. FreshTEMPbuild `/tmp/rdsh-storage128-build-snxrg7fi` PASS23modules; ALL166outputfiles equalactualterminal132, client18/shared3/public163sourceinventories exactequal132 with differences[]. JSindex-BD4DAhgD.js SHAd502c6ba2d9ca4bfb1008e2b72a1be09ae4cc962c8fdb182909ed1822d9f9cd6 byteequalsactual132candidate. Canonicaldist unchanged. See receipt.json.
+
+Optionalterrain23 exact126completedlivingidleDepot plusprior22assets; unsupportedstatesfallbackpreserved. Ownactualfinitefoodinventory labels stock/loadX/definedcapacity, includingzero; privateunknowninventory notinvented. Sharedsim/data/economy/logistics/rations/nonfoodcargo/passengers unchanged. CanonicalLOCALpendingfood101route/data/oldmanifests/leadership/originals retained. Original125timeout/113modalHOLD/126source/127Cargoemptyproof/132rawpausedcaptures remain.
+
+No duplicatebrowser/fullmatches/newimage/publicdist/service/Git/topdocs changes. Parallel129publicworker readsFROZEN132 independently;128doesnotclaimits pendingpublicresult. Rootownscommitafterterminalreview. Rootnarrowsceneacceptance doesnotapprovebuildingconstruction-hit-death/wagonanimation/foodcontinuousmotion/roster/maps/performance/finalvisual/fullgoal.

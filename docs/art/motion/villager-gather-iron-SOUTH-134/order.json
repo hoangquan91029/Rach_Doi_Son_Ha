@@ -1,0 +1,48 @@
+{
+  "status": "THREE_INDEPENDENT_CALLS_AUTHORIZED",
+  "maxCalls": 3,
+  "perSlotMax": 1,
+  "retries": 0,
+  "slots": [
+    "F02",
+    "F04",
+    "F06"
+  ],
+  "routing": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low"
+  },
+  "builtinUnderlyingModel": "not exposed",
+  "refs": [
+    {
+      "path": "docs/art/motion/villager-gather-iron-SOUTH-131/F00-raw.png",
+      "sha256": "7912b5c550a8deab4718551d7fb2052fa3148b736afb5c69a7308da81e91ee0d"
+    },
+    {
+      "path": "docs/art/equipment/iron-pickaxe-130/raw.png",
+      "sha256": "931d5d3d01f62c31db9ffb26b504627afbadeb74cd0b01f2503c27995209dec1"
+    }
+  ],
+  "keySpec": {
+    "path": "docs/art/pipeline/villager-iron-keyplan-133/KEY_SPECIFICATIONS.md",
+    "sha256": "ca8933abe18c2adabe9df302c32e5ea3c65d6b47087383f67a99cafab7994033"
+  },
+  "canvas": [
+    1254,
+    1254
+  ],
+  "pivot": [
+    654,
+    1140
+  ],
+  "runtime": [
+    128,
+    128
+  ],
+  "render": [
+    89,
+    89
+  ],
+  "inbetweens": "UNCALLED_CLOSED",
+  "motionApproval": false
+}

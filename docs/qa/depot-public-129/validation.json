@@ -1,0 +1,26 @@
+{
+  "status": "PASS_PUBLIC_SCOPE_BUILD",
+  "tests": 20,
+  "failures": 0,
+  "builds": 1,
+  "all132SourcePinsVerified": true,
+  "all127PublicAssetPinsVerified": true,
+  "sourceExclusions": [
+    {
+      "path": "client/raster-slice.js",
+      "approvedSHA": "a7845203a036c865ecd4222577131188654c07a7e334a86488b7cbf4b2bc7eac",
+      "publicStageSHA": "9d7f8b8f075c43276bd1426d3ab29066ed089c0c69ed1bd4137ffa2879140d0c"
+    },
+    {
+      "path": "public/assets/art-v1/food-099/atlas.png",
+      "approvedSHA": "66d641fee006cff56b42e88619bbf9c87900224faa104ac9054a9dd3aef0b73a",
+      "publicStageSHA": null
+    },
+    {
+      "path": "public/assets/art-v1/food-099-manifest.json",
+      "approvedSHA": "d4ae1b557334120604ee7e648804917a8cc50ec1ed1624b84ec833bbf5b44104",
+      "publicStageSHA": null
+    }
+  ],
+  "sharedSimSHA": "28e37b63ee39bbe1440741fa0afed3d9f20797831f666c0ff03d8299a8eb609c"
+}

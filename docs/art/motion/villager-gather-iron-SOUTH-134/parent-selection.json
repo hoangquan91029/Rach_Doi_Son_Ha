@@ -1,0 +1,51 @@
+{
+  "authority": "Root actual89contactsheet intake",
+  "keys": [
+    {
+      "phase": "F00",
+      "source": "docs/art/motion/villager-gather-iron-SOUTH-131/F00-raw.png",
+      "sha256": "7912b5c550a8deab4718551d7fb2052fa3148b736afb5c69a7308da81e91ee0d",
+      "selection": "SELECTED_KEY_CANDIDATE",
+      "actualRole": "ready"
+    },
+    {
+      "phase": "F02",
+      "source": "docs/art/motion/villager-gather-iron-SOUTH-134/F02/raw.png",
+      "sha256": "be76be63911be3c42f7d95e35662c544b4d964b76f95230f225883622f8a4196",
+      "selection": "SELECTED_KEY_CANDIDATE",
+      "actualRole": "modest windup"
+    },
+    {
+      "phase": "F04",
+      "source": "docs/art/motion/villager-gather-iron-SOUTH-134/F04/raw.png",
+      "sha256": "167687c7e870cfada2004233577d3d94367d9a6bbb3e152322996493e11205f0",
+      "selection": "SELECTED_KEY_CANDIDATE",
+      "actualRole": "low contact"
+    },
+    {
+      "phase": "F06",
+      "source": "docs/art/motion/villager-gather-iron-SOUTH-134/F06/raw.png",
+      "sha256": "b6ec5d1f518d325c5ed1a0b99d95d805ded3b248b901774c2d0705822ce97195",
+      "selection": "SELECTED_KEY_CANDIDATE",
+      "actualRole": "late return to ready"
+    }
+  ],
+  "F06OriginalVerdict": "HELD_READYLIKE_RECOVERY preserved: requested low waist recovery did not occur",
+  "F06RootDecision": "Select actual whole F06 as LATE_RETURN_TO_READY, not requested low-recovery success. Work cycle may settle near ready by t750; F05 must bridge real low-contact to this actual raised pose. F07 settles towardF00. No pixel edits/source duplication/footlock or motion approval.",
+  "timingMs": [
+    170,
+    130,
+    160,
+    80,
+    100,
+    110,
+    150,
+    180
+  ],
+  "runtimeCell": 128,
+  "globalRender": 89,
+  "pivot": [
+    654,
+    1140
+  ]
+}

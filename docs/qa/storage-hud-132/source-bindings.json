@@ -1,0 +1,39 @@
+{
+  "stage": "/tmp/rdsh-storage132-7n1uqqei",
+  "base127": "/tmp/rdsh-depot127-uabuz2nq",
+  "changes": [
+    "client/main.js"
+  ],
+  "newSource": "client/storage-hud.js",
+  "sharedSimSHA": "28e37b63ee39bbe1440741fa0afed3d9f20797831f666c0ff03d8299a8eb609c",
+  "files": [
+    {
+      "path": "/tmp/rdsh-storage132-7n1uqqei/client/main.js",
+      "sha256": "c7b9e2726ea7666c7ae0f74a266a28c0e4347baf47fcd12641b3afc409bc2d74"
+    },
+    {
+      "path": "/tmp/rdsh-storage132-7n1uqqei/client/storage-hud.js",
+      "sha256": "c806dc3f8f26c25e660f222b5373b7ffd1d11c4ac97cadf6adcfaeeffa4d5c46"
+    },
+    {
+      "path": "/tmp/rdsh-storage132-7n1uqqei/tests/storage-hud132.test.js",
+      "sha256": "3f23c8163b378e285822369b89e78c35a04cc27c45b9bfd2809569e289bb6fda"
+    },
+    {
+      "path": "/tmp/rdsh-storage132-7n1uqqei/shared/sim.js",
+      "sha256": "28e37b63ee39bbe1440741fa0afed3d9f20797831f666c0ff03d8299a8eb609c"
+    },
+    {
+      "path": "/tmp/rdsh-storage132-7n1uqqei/dist/assets/index-BD4DAhgD.js",
+      "sha256": "d502c6ba2d9ca4bfb1008e2b72a1be09ae4cc962c8fdb182909ed1822d9f9cd6"
+    }
+  ],
+  "allOther127SourcePinsEqual": true,
+  "tests": {
+    "pass": 20,
+    "fail": 0,
+    "existing": 17,
+    "HUD": 3
+  },
+  "build": "PASS"
+}

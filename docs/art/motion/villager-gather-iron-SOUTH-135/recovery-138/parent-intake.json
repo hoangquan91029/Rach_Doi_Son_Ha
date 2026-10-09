@@ -1,0 +1,27 @@
+{
+  "authority": "rootactual89recoveredcontactsheet",
+  "sources": [
+    {
+      "phase": "F03",
+      "path": "docs/art/motion/villager-gather-iron-SOUTH-135/recovery-138/F03/raw.png",
+      "sha256": "4f7cb2e00395151fce3ecf5947f6c81057d83adcf62f15eb931d62f2d1489bac",
+      "verdict": "SELECTED_SOURCE_CANDIDATE",
+      "actualRole": "early near-contact descent"
+    },
+    {
+      "phase": "F05",
+      "path": "docs/art/motion/villager-gather-iron-SOUTH-135/recovery-138/F05/raw.png",
+      "sha256": "2c508b1f6a6ebc234156fd495aab3f9874cc792c762123b2826c703834d0d44d",
+      "verdict": "SELECTED_SOURCE_CANDIDATE",
+      "actualRole": "mid lift recovery"
+    }
+  ],
+  "remainingUnreturned": [
+    "F01",
+    "F07"
+  ],
+  "motionAcceptance": "OPEN",
+  "F03": "Actual head already near low-contact; root accepts earlycontact/briefdwell role, not original midpoint-success. Keep original requestedpose/toolreceipt unchanged.",
+  "F05": "Distinct waist-height midlift towards late-returnF06 is readable.",
+  "next": "Separate finite139 may author ONLY unreturnedF01/F07;135 never resumed; backend outcome unknown/no livehandle."
+}

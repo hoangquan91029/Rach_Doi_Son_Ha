@@ -1,0 +1,44 @@
+{
+  "status": "AUTHORIZED_FINITE_SOURCE_ONLY",
+  "maxCalls": 1,
+  "retries": 0,
+  "routing": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low"
+  },
+  "underlyingImageModel": "not exposed",
+  "references": [
+    {
+      "path": "docs/art/pipeline/villager-gather-SOUTH-018/F00-call01/raw.png",
+      "sha256": "e6293fe86eaefc2c9f414241320ab178758cdd52ef09946344364b6a41e41117",
+      "role": "style/material/camera only"
+    },
+    {
+      "path": "docs/art/terrain/iron-resource-119/raw.png",
+      "sha256": "57a5a4a1cb09760c46ec41deefb011a7f3dd0858aafce1c39b2da85a111888e5",
+      "role": "palette/worldstyle only"
+    }
+  ],
+  "inspectedIdentityOnly": {
+    "path": "docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+    "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+  },
+  "canvasRequested": [
+    1254,
+    1254
+  ],
+  "render": [
+    48,
+    48
+  ],
+  "runtime": [
+    256,
+    256
+  ],
+  "referenceCenter": [
+    627,
+    627
+  ],
+  "runtimeIntegration": false,
+  "futureWholeVillagerPose": "requires terminal source intake"
+}

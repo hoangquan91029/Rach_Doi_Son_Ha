@@ -1,0 +1,53 @@
+{
+  "status": "FINITE_ONE_F00_AUTHORIZED",
+  "routing": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low"
+  },
+  "mode": "identity-frame",
+  "maxCalls": 1,
+  "retries": 0,
+  "slots": {
+    "F00": "OPEN",
+    "F02": "UNCALLED_CLOSED",
+    "F04": "UNCALLED_CLOSED",
+    "F06": "UNCALLED_CLOSED",
+    "inbetweens": "UNCALLED_CLOSED"
+  },
+  "referenceRoles": [
+    {
+      "path": "docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "role": "identity/camera",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+    },
+    {
+      "path": "docs/art/pipeline/villager-gather-SOUTH-018/F00-call01/raw.png",
+      "role": "selectedwoodF0 framing/light/feet only; not iron predecessor",
+      "sha256": "e6293fe86eaefc2c9f414241320ab178758cdd52ef09946344364b6a41e41117"
+    },
+    {
+      "path": "docs/art/equipment/iron-pickaxe-130/raw.png",
+      "role": "TOOLONLY wholeillustration; not rigtexture",
+      "sha256": "931d5d3d01f62c31db9ffb26b504627afbadeb74cd0b01f2503c27995209dec1"
+    }
+  ],
+  "requestedCanvas": [
+    1254,
+    1254
+  ],
+  "sourcePivot": [
+    654,
+    1140
+  ],
+  "runtime": [
+    128,
+    128
+  ],
+  "render": [
+    89,
+    89
+  ],
+  "scope": "One readykey only. No animation/runtime approval.",
+  "headAtStart": "2dcadb434672b8a5185d2255ef5faf8800385da0",
+  "builtinUnderlyingModel": "not exposed"
+}

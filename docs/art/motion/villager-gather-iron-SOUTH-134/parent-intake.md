@@ -1,0 +1,5 @@
+# Root practical key intake134
+
+Root viewed one actual89contactsheet. F00 ready, F02 modest windup and F04 low pick contact are coherent and visibly different. F06 reads as a late return toward the ready position; root selects it with that explicit actual role for the work-cycle candidate. Its original requested waist/lower-chest recovery failed, and the worker HOLD remains preserved without rewriting receipts. This is a phase-plan adjustment based on actual work movement, not a claim that the original requested pose passed.
+
+At t750 the tool can already be back near ready; new F05 must depict the actual lift between F04 contact and this selected F06, while F07 settles toward F00. Existing whole F06 illustration stays unchanged. No missing frame is duplicated, fitted or repaired. Stable pivot/family1254→128/render89, identity and tool retained. Finished8-frame loop and practical real-size viewing remain necessary; no naturalness/footlock/runtime/public approval or fanout granted by this static intake. F01/F03/F05/F07 require a new finite order.

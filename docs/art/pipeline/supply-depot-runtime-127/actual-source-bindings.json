@@ -1,0 +1,71 @@
+{
+  "stage": "/tmp/rdsh-depot127-uabuz2nq",
+  "HEAD": "2dcadb434672b8a5185d2255ef5faf8800385da0",
+  "asset": {
+    "id": "supply-depot-idle-126",
+    "family": "building.depot",
+    "kind": "building",
+    "state": "idle",
+    "direction": null,
+    "candidate": true,
+    "alphaPolicy": "transparent",
+    "source": {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/buildings/supply-depot-idle-126/raw.png",
+      "sha256": "44c96329f2fdc8b8dae9c589400d798ac3911c1118b21714114f872f9aa676e1",
+      "width": 1254,
+      "height": 1254,
+      "rgbaSha256": "6218c329b70738ba0032c15b8a8cb5f034195962d9c98b4775c8c998f18192ca",
+      "bbox": [
+        33,
+        20,
+        1232,
+        1168
+      ]
+    },
+    "runtime": {
+      "path": "supply-depot-127/depot.webp",
+      "sha256": "fc6626d6b88cfaf3e240cdf6f2a0df33d4f34122133742c3f3c2e836cddda462",
+      "width": 256,
+      "height": 256,
+      "rgbaSha256": "cf4e0d3057417c9ae30a39e896d729523eef87ba9713e05d135653e5b8716d64",
+      "derivation": {
+        "method": "resize",
+        "filter": "lanczos",
+        "sourceSha256": "44c96329f2fdc8b8dae9c589400d798ac3911c1118b21714114f872f9aa676e1"
+      }
+    },
+    "pivot": {
+      "x": 627,
+      "y": 1010,
+      "space": "source"
+    },
+    "render": {
+      "width": 96,
+      "height": 96
+    },
+    "frames": [
+      {
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 256,
+        "durationMs": 1000
+      }
+    ],
+    "loop": true,
+    "contactShadow": {
+      "mode": "baked"
+    },
+    "cell": {
+      "width": 256,
+      "height": 256
+    },
+    "review": {
+      "status": "CANDIDATE"
+    },
+    "notes": "126originalwholecanvas frozen96sourceidle;127 optional completedlivingidle only"
+  },
+  "parent123SourceEquality": "verifiedsourcepins currentcanonicalaccepted",
+  "parent126RuntimeSHA256": "fc6626d6b88cfaf3e240cdf6f2a0df33d4f34122133742c3f3c2e836cddda462",
+  "noPixelsChanged": true
+}

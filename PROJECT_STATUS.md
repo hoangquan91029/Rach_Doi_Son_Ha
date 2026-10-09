@@ -1,3 +1,33 @@
+## Current138 recovered partial135 / new139 finite source order
+
+138 confirms exactreturnedF03/F05 rawPNG+completedtoolreceipts, bytesmatchworkerimagepayload. Original135four-call records remainhashidentical; F01/F07 have no completedresult/returnedpath beforeworkerturn_aborted14:32:20Z andpriorlivehandle is missing. Backend outcomeunknown; staleOPEN alone notlive/completion. Zero138newcalls. Rootbrief89sheet selectsactualF3EARLY_NEAR_CONTACT/briefdwell (notrequestedmidpointsuccess) andF5MID_LIFT, with originalphaseprompts preserved. New139separate finiteTWOslot sourceorder F01/F07 authorized, zero retries; inspectitsactualhandle before calls.135doesnotresume.136export137runtime remainPREPONLY until all8actualsourcesselected. No motion/footlock/fanout/publiciron acceptance.
+
+---
+
+## Current129 PUBLIC / local128 — Supply Depot and food inventory HUD installed
+
+The previous interrupted goal turn made concrete progress:129 now PUBLIC DEVELOPMENT optional?art=terrain serves23assets including actual126 completed-idle Depot. Bundleindex-CLF1gZiY.js SHAe101219382588201783f2a7afef1a83a0286a66cb22a80b360a92c9e7abcf518; currentnormalTLS directSHA confirms. Chrome151+Firefox153 actual newDepotconstruction→idle/alpha-select/trainONEwagon and actualpausedlabels Granary260/800/Depot0/650/Wagon0/180/PauseactualResume/selectwagonStop/menu PASS23ready12portraits/RGBA15,860,736/reserved0/errors0/network0/ownedcleanuprooms0.20contracts/buildpass. ServicePID157023/sharedsim28e37…609c unchanged, fullreadonly124rollbackarchiveSHA bfd8c9f59992a968fc3dc9c49c9cdaf0561670d66db9e42a9d40337cb756f4cf/oldchunks retained; no fullmatches repeated.
+
+LOCAL128 exact frozen132Depot+food-stockHUD installs7targetpaths, verified211sourcepins and8unchanged127pins.20contracts/ALL166TEMPoutputfiles/client18shared3public163inventories byteequal132, localJSd502c6ba2d9ca4bfb1008e2b72a1be09ae4cc962c8fdb182909ed1822d9f9cd6. Root7currentcanonicalSHA recheck matches installedreceipt. Labels use actualown finitecargo.food anddefined1200/800/650/180capacity, unknown/privatecargo notinvented; nonfood/passengers/rations preserved. PendingfoodCHARroute/data stayLOCAL; public129explicitly excludes ONLYfoodCHARoptin+manifest+atlas. Original127Cargoempty and132paused/unblurredscenes/ledgers preserved.
+
+130ONEbuiltinpickaxereference and131ONEwholevillagerreadyF00 selected;134THREEactualwholekeys generated/0retry. Root134actual89sheet acceptsF2windup/F4lowcontact and explicitlyreassigns actualF6 to LATE_RETURN_TO_READY (requestedlowrecoveryHOLD preserved), not claimedoriginalposePASS. Family1254/pivot6541140/uniform128/render89.135 FOURBIcalls started beforeinterrupt; currentagentinventory hasNOpriorworkerhandle and targetoutputs absent atfirstinspection. New138 recovery inspects actualtool/output evidence withoutnewgeneration; staleOPENcallstate alone is not proof of livecall or completion. Neverduplicate135 calls orinventmissingframes.
+
+136preview/export and137LOCALironruntime are PREPONLY, no atlas/APNG/export/build/browser yet. Both await actual8selectedsourceintake andnewfiniteexecutionorder.136 exact1080ms[170,130,160,80,100,110,150,180];137wouldadd?art=iron24assets/sameworldart/gather_ironD1 episode/playpause-stop-restart/20ironordinarywalkdeposit onrealD1orders, noheadingfake. Irondeposit is strategicplayeriron, Foodstock isfoodonly. Follow138actualrecovery before choosing nextsourcework, neverfillmissingframes/duplicatecalls.
+
+Fullgoal remains INCOMPLETE: foodcontinuousmotionhumanfeedback, D0directions, realisticroster/actions/buildingconstruction-hit-death, finalmaps/shoreforest/mountainrepeat/hillpartialedges/denseunits/externaldevice/WAN/performance allOPEN. Owner032Southwood stands; goodsreturnordinarywalk. ExactSol6.1Low parallel/builtin/noAPI/noquota/purewhole2D/no3D/limbtextures/originalleadership/raw/heldcustody remain. Production intentionallyruns; inspect currenthandle/receipts beforework.
+
+---
+
+## Current127 / 130 — Depot runtime and iron-animation equipment pilot in progress
+
+Previous goal turn was concrete progress: clean committed2dcadb4 publishes124 iron/Barracks22 with actualChromeFirefox proof and installsLOCAL123;126 Depot whole2D source/rootbrief96preview is accepted. New finite127 implementation is authorized in isolated exact123 copy: actual126 completedidleDepot optionalterrain23, unsupportedstates fallback, meaningfulasset/state contracts/freshTEMPbuild/ONEactualDelta build→select/storage→ONEwagon queue/spawn/PauseResumeStop/menu. Inspect worker/runtime handle before duplicate; no canonical/publicpromotion until actualscene intake.
+
+130 parallel ONE builtin pickaxe TOOLREFERENCE is authorized as preparation for one bounded South/D1 villager gather_iron action pilot, continuing owner032's accepted pure2D workflow. Wholeillustratedequipment, no limb textures/3D/characterfanout; actualwood018 tool material/camera and iron119 palette refs bound, no historicalcertification. Onecall/zero retries/sourceonly; proper tool/source intake required before any131wholevillager F0 call. Food101motion feedback remains pending, no food/public/fanout approval. D0 exhaustedmethods remain stopped.
+
+129 publicDepot23 is PREPONLY fromfutureterminal127, currentpublic124oldSHA4ce312…82a3a/PID157023 guarded; no stage/build/browser/public call before rootactualscene acceptance+newfiniteexecutionorder. Canonical123/public124 remain until later authorized promotion. Required exactSol6.1Low parallel/builtin/noAPI/noquota/pure2D/custody/fullgoalunfinished continue.
+
+---
+
 ## Current124 PUBLIC / local123 — illustrated iron node and Barracks
 
 PUBLIC DEVELOPMENT optional https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/?art=terrain now serves22 candidate assets, adding actual119 iron node and121 completed-idle Barracks to117 terrain20. Bundleindex-BMWX7K9H.js SHA4ce3127451d77e7fb12a7cba023ab8a58603125207244bf2395d31c493582a3a. Explicit public source exclusions still remove ONLY pending101/106 food CHARACTER opt-in route/manifest/atlas; static food/iron nodes are separate. Sharedsim28e37b63…609c/servicePID157023 unchanged/no restart. NormalTLS Chrome151+Firefox153 actual ordinaryUI newBarracks construction→idle/opaque-pixel selection/ONEinfantry queue→spawn, positiveiron context, PauseactualResumeStop/menu PASS22ready12portraits/errors0/network0/ownedcleanuprooms0. Fifteen public-scope relevant contracts and freshbuild pass. Fullreadonly117 rollback archive SHA5d2d15b22568d3d44883557c2031231771d6e10e7de7e50c6024f7003a271640, old117/107/097/088 chunks and custody retained locally. No fullmatches repeated for client-only artwork.

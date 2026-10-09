@@ -1,0 +1,88 @@
+{
+  "status": "PARTIAL_RECOVERY_INTERRUPTION_HOLD",
+  "routing": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low"
+  },
+  "newImageCalls": 0,
+  "retries": 0,
+  "workerHandle": "Missing per root live agent inventory; not resumed",
+  "interruptedUTC": "2026-10-09T14:32:20.520Z",
+  "workerSession": "01a120ce-c3ad-74d0-909e-9883be96eea4",
+  "execCell": "62",
+  "callDispatchEvidence": {
+    "line": 803,
+    "callId": "call_a9d55d0419cd41b997773b110b068ce2",
+    "fourSlots": [
+      "F01",
+      "F03",
+      "F05",
+      "F07"
+    ]
+  },
+  "recovered": [
+    {
+      "phase": "F03",
+      "status": "RECOVERED_RETURNED_SOURCE_AWAIT_PARENT_INTAKE",
+      "generationId": "exec-f1041246-7a17-4e95-943d-0725328ef2cd",
+      "completedUTC": "2026-10-09T14:29:30.631Z",
+      "workerLog": "/home/kieu-hoang-quan/.codex/sessions/2026/10/09/rollout-2026-10-09T20-16-23-01a120ce-c3ad-74d0-909e-9883be96eea4.jsonl",
+      "line": 856,
+      "source": "/home/kieu-hoang-quan/.codex/generated_images/01a120ce-c3ad-74d0-909e-9883be96eea4/exec-f1041246-7a17-4e95-943d-0725328ef2cd.png",
+      "recovered": "docs/art/motion/villager-gather-iron-SOUTH-135/recovery-138/F03/raw.png",
+      "sha256": "4f7cb2e00395151fce3ecf5947f6c81057d83adcf62f15eb931d62f2d1489bac",
+      "bytes": 1099396,
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "originalPromptMatch": true
+    },
+    {
+      "phase": "F05",
+      "status": "RECOVERED_RETURNED_SOURCE_AWAIT_PARENT_INTAKE",
+      "generationId": "exec-4ce89d33-3821-4179-a534-2ea50be2683f",
+      "completedUTC": "2026-10-09T14:31:26.138Z",
+      "workerLog": "/home/kieu-hoang-quan/.codex/sessions/2026/10/09/rollout-2026-10-09T20-16-23-01a120ce-c3ad-74d0-909e-9883be96eea4.jsonl",
+      "line": 895,
+      "source": "/home/kieu-hoang-quan/.codex/generated_images/01a120ce-c3ad-74d0-909e-9883be96eea4/exec-4ce89d33-3821-4179-a534-2ea50be2683f.png",
+      "recovered": "docs/art/motion/villager-gather-iron-SOUTH-135/recovery-138/F05/raw.png",
+      "sha256": "2c508b1f6a6ebc234156fd495aab3f9874cc792c762123b2826c703834d0d44d",
+      "bytes": 1013673,
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "originalPromptMatch": true
+    }
+  ],
+  "unresolved": {
+    "F01": "No completion/output event in worker log before terminal turn_aborted; original call-state remains OPEN, no live handle. Backend terminal state unknown.",
+    "F07": "No completion/output event in worker log before terminal turn_aborted; original call-state remains OPEN, no live handle. Backend terminal state unknown."
+  },
+  "custody": {
+    "originalFilesSHA256": {
+      "docs/art/motion/villager-gather-iron-SOUTH-135/order.json": "4fadfe0353d1b3eadc1f9083cb86f9189b93f7c3ee46b6f70a8cf2d7036cdacb",
+      "docs/art/motion/villager-gather-iron-SOUTH-135/F05/call-state.json": "99e50f85226ad6762140294544fbd794ed750ef9ed60638a96c5ed13cfc9f326",
+      "docs/art/motion/villager-gather-iron-SOUTH-135/F05/order.json": "895d35949e12d703100ccfc28e86f13f4e0119ee4b4f2d1dd93b6e03aaa5fef4",
+      "docs/art/motion/villager-gather-iron-SOUTH-135/F05/prompt.txt": "2a12175ced4bc6477d1621366bdb36ad4e05bc0698900da543c877343bb9b3ea",
+      "docs/art/motion/villager-gather-iron-SOUTH-135/F03/call-state.json": "99e50f85226ad6762140294544fbd794ed750ef9ed60638a96c5ed13cfc9f326",
+      "docs/art/motion/villager-gather-iron-SOUTH-135/F03/order.json": "98f4403f537ff349e89b45ab6bc9333508f90f31306112c75666ed9ead57ef40",
+      "docs/art/motion/villager-gather-iron-SOUTH-135/F03/prompt.txt": "2e23af5718496ae3cafcf8b28b605fdda371a5480809cae52a3a8f8fecd319ad",
+      "docs/art/motion/villager-gather-iron-SOUTH-135/F01/call-state.json": "99e50f85226ad6762140294544fbd794ed750ef9ed60638a96c5ed13cfc9f326",
+      "docs/art/motion/villager-gather-iron-SOUTH-135/F01/order.json": "48f3f3023f1bb482ca80b03e23576adb92b9246b0c5738f55892b119eb8ab0f4",
+      "docs/art/motion/villager-gather-iron-SOUTH-135/F01/prompt.txt": "c939a7bea30e1a7ca479d9e9b2bd033d0144971122ec7d241df1f906e627bbff",
+      "docs/art/motion/villager-gather-iron-SOUTH-135/F07/call-state.json": "99e50f85226ad6762140294544fbd794ed750ef9ed60638a96c5ed13cfc9f326",
+      "docs/art/motion/villager-gather-iron-SOUTH-135/F07/order.json": "cdb73cba26ff9cd37e7e756ed27b34372b2b2470496cf13c7b7951ab84f7ccdf",
+      "docs/art/motion/villager-gather-iron-SOUTH-135/F07/prompt.txt": "3493f75db0939bf5e3b1cbbf39bb85c67ae12a6326798a9beac4ae7f74cbf8b4"
+    },
+    "originalsUnchanged": true,
+    "sourcePixelsUnchanged": true,
+    "sheet": "Fixed whole1254canvas ->89 selected131F00/134F02,F04,F06 and recoveredF03,F05; unresolvedslots explicitlyblank.",
+    "motionApproval": false,
+    "loopComplete": false
+  },
+  "searchScope": "135 receipts; Oct9 session filenames matching exact135/taskname; relevant worker01a120ce final turn; generated_images for same worker and recent folder inventory. No secrets/key reads."
+}
