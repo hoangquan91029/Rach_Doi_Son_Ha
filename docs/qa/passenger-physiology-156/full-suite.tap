@@ -1,0 +1,355 @@
+
+> rach-doi-son-ha@0.1.0 test
+> node --test tests/*.test.js
+
+✔ online visual clock is continuous, bounded, frozen and reset across reconnect/maps (1.527964ms)
+✔ visual poses agree at shared times at 30,60,120Hz without mutating snapshot (0.419587ms)
+✔ authored marker offset aligns exactly to authoritative impact and late confirmed impact skips anticipation (0.742177ms)
+✔ cosmetic pulse dedupes late known impact, refuses pending/future/stale impacts and resets on reconnect (0.569565ms)
+✔ barracks22 preserves iron21 exact assets and static wholecanvas custody (7.451798ms)
+✔ completed living idle only; construction hit death unsupported states stay procedural (2.839298ms)
+✔ failed portrait decode is recoverable; successful decoded portraits retained; hanging fonts bounded (23.591475ms)
+✔ portrait deadline cannot hang boot or install a late decode (7.820855ms)
+✔ camp26 preserves workshop25 exact assets and static wholecanvas custody (12.009457ms)
+✔ completed living idle only; construction hit death unsupported states stay procedural (2.872253ms)
+✔ crowd movement preserves held and reserved attackers, clearance and fixed tick speed (59.239844ms)
+✔ 30 unique destinations and body clearance; selected ID input order cannot change identity assignment (3.414632ms)
+✔ naval group destination diameter and selected ID stability (4.967118ms)
+✔ blocked recruitment retains completed paid queue; one freed exit admits exactly once (17.977915ms)
+✔ one legal occupied-clear shore slot gives partial unload; remaining cargo pending then resumes after freed (2.481469ms)
+✔ actual worker outside gather radius despite qualifying start tile reaches food contact (46.528959ms)
+✔ visible enemy internal detour route does not leak through filtered view (8.250861ms)
+✔ planner budget exhaustion cannot prevent independent unobstructed movement (4.63338ms)
+✔ persistent blocked requesters all receive actual planner admission (567.753283ms)
+✔ whole edge formations retain slots and original arrival range (991.291131ms)
+✔ depot23 preserves barracks22 exact assets and static wholecanvas custody (7.484316ms)
+✔ completed living idle only; construction hit death unsupported states stay procedural (2.373525ms)
+✔ only live finite food resources select illustrated node (1.100743ms)
+✖ empty resource suppression and ordinary fallback remain after raster attempt (3.77124ms)
+✔ food static schema relative loader path and exact wholecanvas custody (1.883865ms)
+✔ actual gather episode continues, target change or interrupted work starts a new episode without leaking target (85.792933ms)
+✔ actual presentation pause preserves gather frame and resumes current episode without rewind (0.769234ms)
+✔ hill blocks aligned complete currently visible ready and immutable (1.723219ms)
+✔ mountains strict current knowledge with explicit authoring bypass (0.222286ms)
+✖ hill render order and exact optional asset contract (4.438161ms)
+✔ positive iron and food only while old food API stays food only (0.983113ms)
+✔ exact matched static family and route/readiness fallback (0.617516ms)
+✔ 21 schema original iron custody relativepath and declared global48 (2.195617ms)
+✔ iron24 adds only actual D1 iron action to exact terrain23 (5.932708ms)
+✔ iron uses resource-specific episode clock and distinct new start (0.735498ms)
+✔ stalled resource aborts and rejects with truthful deadline status (11.83837ms)
+✔ decoded bitmap arriving after deadline is closed rather than becoming approved art (13.378417ms)
+✔ manifest deadline completes pipeline with missing-art failure rather than stranding boot (12.309398ms)
+✔ distance rather than elapsed clock drives terrain cadence; pause and stop retain phase (1.251447ms)
+✔ rewind, teleport and removed/reused entities reset without mutating simulation (0.305873ms)
+✔ visible ready mountain anchors exclude route cells and unknown/explored-only terrain (2.052581ms)
+✔ typed failed mountain prop uses existing rock, never forest tree (0.350549ms)
+✔ open diagonal uses distance-optimal sustained D1 and repeatable authoritative states (202.634932ms)
+✔ terrain side cells prevent diagonal corner cutting even when destination is legal (2.905675ms)
+✔ building side cells and changed dynamic blockers prevent corner cutting (5.515685ms)
+✔ reachable integer and fractional ground moves complete within unchanged arrival range (262.888233ms)
+✔ unreachable final ground point cannot cut a blocked terrain corner or building interior (142.310386ms)
+✔ ground attack-move without an acquired enemy completes at an integer target (22.702261ms)
+✔ ordinary embarked zero-food passenger shares land grace, morale and 30-second attrition (570.495146ms)
+✔ fed passenger consumes finite own rations without ship, wagon or store resupply (341.282446ms)
+✔ starving boarded General dies through authoritative defeat and freezes simulation (545.519303ms)
+✔ unloading hungry passenger preserves accrued physiology and restores ordinary land handling (556.165967ms)
+✔ transport death still kills hungry embarked passenger through ordinary enemy attack (832.280705ms)
+✔ render smoothing preserves current fog membership and never changes authoritative coordinates (3.578614ms)
+✔ death, embarkation, victory and reconnect jumps appear from current state without delayed travel (0.574548ms)
+✔ new maps and completed interpolation retain the current view (0.203376ms)
+✔ current state prunes dead embarked missing and no-longer-owned ids without viewport filtering or aliasing (1.975009ms)
+✔ two seats, readiness, authority, reconnect rotation and consensual rematch (456.481796ms)
+✔ disconnect timeout awards opponent and malformed packets remain harmless (312.265719ms)
+✔ HTTP health, static MIME and traversal protection (21.465319ms)
+✔ both connections can resume within grace; repeated ready starts only once (292.036594ms)
+✔ message rate cap closes abusive client (5.645934ms)
+✔ authoritative combat General death completes online match (269.813736ms)
+✔ unseen enemy target is rejected by authoritative fog and cross-origin upgrade fails (80.333757ms)
+✔ oversized payload is closed and fully disconnected room expires without winner (236.685596ms)
+✔ compact snapshot hydration equals full view at same tick without state mutation (14.09332ms)
+✔ public repair resumes construction; only owner can cancel reservation (134.627933ms)
+✔ deployment capacity environment is finite and bounded (0.258018ms)
+✔ Firefox bare permessage-deflate offer upgrades successfully with bounded compression (2.75602ms)
+✔ compact online snapshots strip private pending attack targets for both seats (2.088091ms)
+✔ same seed and commands have identical complete state hashes (3458.040877ms)
+✔ unknown commands, malformed coordinates, prototype keys and ownership are rejected without spending (1.047669ms)
+✔ General combat death wins immediately and freezes progression (9.892049ms)
+✔ residence destruction never defeats player; only King replacement and construction reservation prevent duplicates (458.928154ms)
+✔ ration consumption, finite Granary resupply, empty inventory and residence healing (79.907665ms)
+✔ wagon loading conserves food, transport moves finite cargo, unloading transfers inventory (286.827683ms)
+✔ wood delivered to remote depot credits strategic pool (3.341159ms)
+✔ iron delivered to remote depot credits strategic pool (2.516439ms)
+✔ fog hides enemy General and private resources/queues; hidden targets cannot be attacked (2.960154ms)
+✔ delta: land routes cross fords and sea remains impassable (2290.981704ms)
+✔ coast: land routes cross fords and sea remains impassable (2065.343433ms)
+✔ transport passengers are removed from land navigation and can unload at coastline (270.843964ms)
+✔ training reserves population and spends costs once; leaders cannot be trained (117.534388ms)
+✔ 12 characters have distinct abilities; cooldown and terrain gating are authoritative (0.845234ms)
+✔ AI earns resources, produces an army and protects its General without cheats (3962.65239ms)
+✔ delta easy: AI completes normal combat victory (7534.070388ms)
+✔ delta normal: AI completes normal combat victory (3987.844764ms)
+✔ delta hard: AI completes normal combat victory (6435.519269ms)
+✔ coast easy: AI completes normal combat victory (7636.658636ms)
+✔ coast normal: AI completes normal combat victory (4264.268739ms)
+✔ coast hard: AI completes normal combat victory (6088.076906ms)
+✔ unfinished construction can be resumed by King and canceled with bounded refund (460.955184ms)
+✔ enemy death is visible while private orders never expose enemy movements (4.77826ms)
+✔ delta: AI trains, embarks, lands naval raiders and delivers physical frontline food (15514.80947ms)
+✔ coast: AI trains, embarks, lands naval raiders and delivers physical frontline food (14002.807306ms)
+✔ embarked General dies when enemy destroys transport and causes normal defeat (356.234699ms)
+✔ completed fort preserves the historical fortification HP modifier (456.716866ms)
+✔ repeated construction cancellation loses resources and cannot mint wood or iron (0.722866ms)
+✔ Granary and wagon resupply conserve finite food; exhausted stores cannot create rations (321.874527ms)
+✔ default unsupplied infantry enters low supply, starvation and delayed attrition in a prolonged match (3473.550832ms)
+✔ construction cannot trap its builder or other units inside the footprint (0.532531ms)
+✔ delta: terrain and resource opportunities are reflected equally for both seats (0.895608ms)
+✔ coast: terrain and resource opportunities are reflected equally for both seats (0.640204ms)
+✔ authoritative windup deals nothing before impact and hits exactly once with public late-snapshot timing (3.381214ms)
+✔ death, accepted move, stop, embark, hidden and out-of-range target cancel reserved attacks (5.872174ms)
+✔ same-target spam preserves windup; retarget and cancellation cannot accelerate recovery (2.623138ms)
+✔ read-only display snapshot rates cannot change complete authoritative combat hashes (651.577115ms)
+✔ changing targets consumes the original reservation and cannot produce an old-target impact (3.226891ms)
+✔ impact rejects dead or newly friendly targets and artillery splash waits for the same impact (3.431077ms)
+✔ South walk keeps its unequal holds, switches support at 300ms and loops at 600ms (1.701022ms)
+✔ presentation sampling gives the same pose at shared times across 30,60,120Hz (0.754075ms)
+✔ nonlooping death holds the last pose after completion; markers are detached data (0.228592ms)
+✔ event markers reject out-of-frame timing, invalid names and oversized lists (1.286671ms)
+✔ own food inventory exposes actual zero and defined capacities (1.85126ms)
+✔ private absent unknown inventory does not invent zero (0.308431ms)
+✔ nonfood resources and passengers remain visible (1.495881ms)
+✔ pan and zoom reuse immutable ground; content and art readiness invalidate same map ID (2.022023ms)
+✔ DPR quality invalidates while full 64x48 backing storage remains bounded (6.718316ms)
+✔ shore blending only receives into land or ford and preserves authoritative terrain (1.836068ms)
+✔ unobserved cell boundaries do not contribute transition coverage (0.977313ms)
+✔ alpha gradient normal is perpendicular to either dimetric edge tangent (0.611643ms)
+✔ original-material patches reuse on pan and invalidate for zoom, terrain and actual material revision (3.775876ms)
+✔ own and visible enemy action exposes resource only, never target or future intent (19.559051ms)
+✔ subtype preference retains generic fallback and carried motion uses travelled phase (0.648373ms)
+✔ picker uses current rendered sample for tall hat and excludes transparent areas (1.952393ms)
+✔ workshop25 preserves iron24 exact assets and static wholecanvas custody (6.11584ms)
+✔ completed living idle only; construction hit death unsupported states stay procedural (2.050038ms)
+ℹ tests 127
+ℹ suites 0
+ℹ pass 125
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 84434.860224
+
+✖ failing tests:
+
+test at tests/food-resource115.test.js:3:1
+✖ empty resource suppression and ordinary fallback remain after raster attempt (3.77124ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /get\('art'\)!=='terrain'\|\|!staticResourceEligible/. Input:
+  
+  "import {mountainPropPlacements,hillGroundPlacements,foodResourceEligible,staticResourceEligible} from './terrain-props.js';\n" +
+    "import {authoredActionStates,gatherAnimationTime} from './action-presentation.js';\n" +
+    "import {sampleSpriteAnimation,defaultAnimationLoop,attackAnimationTime} from './sprite-timing.js';\n" +
+    "import {createArtAssetPipeline} from './art-assets.js';\n" +
+    "import {createTerrainTransitions} from './terrain-transitions.js';\n" +
+    "import {createLocomotionPhase} from './locomotion-phase.js';\n" +
+    "import {TILE_WIDTH,TILE_HEIGHT} from './world-presentation.js';\n" +
+    '\n' +
+    'const TW=TILE_WIDTH,TH=TILE_HEIGHT;\n' +
+    'const finite=n=>Number.isFinite(n);\n' +
+    "const normalState=entity=>entity.hp<=0?'death':entity.state;\n" +
+    '/** Optional candidate art over actual simulation. No substitute map, fake units, or sprite mirroring. */\n' +
+    "export function createRasterSlice({enabled=['pilot','walk','work','food','terrain','iron','workshop','camp'].includes(new URLSearchParams(globalThis.location?.search||'').get('art')),manifestUrl=new URLSearchParams(globalThis.location?.search||'').get('art')==='camp'?'/assets/art-v1/camp-148-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='workshop'?'/assets/art-v1/workshop-144-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='iron'?'/assets/art-v1/iron-137-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='terrain'?'/assets/art-v1/terrain-127-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='food'?'/assets/art-v1/food-099-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='work'?'/assets/art-v1/gather-026-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='walk'?'/assets/art-v1/walk-014-manifest.json':'/assets/art-v1/manifest.json',onStatus=()=>{},materialWorldSize=8}={}) {\n" +
+    " const worldArtEnabled=()=>['terrain','iron','workshop','camp'].includes(new URLSearchParams(globalThis.location?.search||'').get('art'));\n" +
+    ' const pipeline=createArtAssetPipeline({manifestUrl,allowCandidates:true,onStatus});\n' +
+    ' const locomotion=createLocomotionPhase();\n' +
+    ' const cells=new Map(),patterns=new WeakMap(),missing=new Set();let ready=false;\n' +
+    " const status={enabled,phase:enabled?'CANDIDATE':'DISABLED',quality:'PLACEHOLDER_ONLY',groundDraws:0,propDraws:0,entityDraws:0,walkDraws:0,idleDraws:0,lastWalk:null,gatherDraws:0,lastGather:null,missing:[],pipeline:pipeline.stats};\n" +
+    " const recordMissing=(key,reason)=>{if(!missing.has(key)){missing.add(key);status.missing.push({key,reason,status:'PLACEHOLDER_ONLY'});status.quality='PLACEHOLDER_ONLY';}};\n" +
+    ' const select=({families,kind,state,direction,variant=0,timeMs=0})=>{\n' +
+    '  if(!enabled||!ready)return null;\n' +
+    '  const candidates=(pipeline.manifest?.assets||[]).filter(asset=>asset.kind===kind&&families.includes(asset.family||asset.id)&&asset.state===state&&asset.direction===direction);\n' +
+    "  if(!candidates.length){recordMissing(`${families[0]}:${state}:${direction}`,'No exact authored raster state/direction');return null;}\n" +
+    '  const candidate=candidates[((variant%candidates.length)+candidates.length)%candidates.length];\n' +
+    '  const raster=pipeline.get(candidate.id,{state,direction,timeMs});if(!raster.image){recordMissing(candidate.id,raster.reason);return null;}return raster;\n' +
+    ' };\n' +
+    " const mountainReady=()=>worldArtEnabled()&&Boolean(select({families:['mountain','prop.mountain'],kind:'prop',state:'static',direction:null,timeMs:0})?.image);\n" +
+    ' const cellImage=raster=>{\n' +
+    '  if(raster.sx===0&&raster.sy===0&&raster.sw===raster.image.width&&raster.sh===raster.image.height)return raster.image;\n' +
+    "  const key=`${raster.id}:${raster.frame}`;if(!cells.has(key)){const canvas=typeof OffscreenCanvas==='function'?new OffscreenCanvas(raster.sw,raster.sh):globalThis.document?.createElement('canvas');if(!canvas)return null;canvas.width=raster.sw;canvas.height=raster.sh;const c=canvas.getContext('2d');c.drawImage(raster.image,raster.sx,raster.sy,raster.sw,raster.sh,0,0,raster.sw,raster.sh);cells.set(key,canvas);}return cells.get(key);\n" +
+    ' };\n' +
+    ' const drawAt=(ctx,raster,point,zoom)=>{\n' +
+    '  if(!raster?.image||!finite(point?.x)||!finite(point?.y)||!finite(zoom)||zoom<=0)return false;\n' +
+    '  const width=raster.render.width*zoom,height=raster.render.height*zoom;\n' +
+    '  const x=point.x-raster.pivot.x/raster.sw*width,y=point.y-raster.pivot.y/raster.sh*height;\n' +
+    '  ctx.drawImage(raster.image,raster.sx,raster.sy,raster.sw,raster.sh,x,y,width,height);return true;\n' +
+    ' };\n' +
+    ' const shadowAt=(ctx,raster,point,zoom)=>{\n' +
+    "  if(raster.contactShadow.mode!=='separate')return true;\n" +
+    "  const shadow=pipeline.get(raster.contactShadow.assetId);if(!shadow.image){recordMissing(raster.contactShadow.assetId,'Separate authored contact shadow unavailable');return false;}\n" +
+    '  return drawAt(ctx,shadow,point,zoom);\n' +
+    ' };\n' +
+    ' const rasterAt=(ctx,raster,point,zoom)=>{if(!shadowAt(ctx,raster,point,zoom))return false;return drawAt(ctx,raster,point,zoom);};\n' +
+    ' const transitionMaterials=new Map();\n' +
+    ' const transitionRaster=(terrain,timeMs)=>{\n' +
+    '  const cached=transitionMaterials.get(terrain);if(cached?.timeMs===timeMs)return cached.raster;\n' +
+    "  const families=terrain==='shore'?['shore']:terrain==='ford'?['ford','terrain.ford']:['water','terrain.water'];\n" +
+    "  const raster=select({families,kind:'terrain',state:'material',direction:null,timeMs});if(!raster)return false;\n" +
+    '  transitionMaterials.set(terrain,{timeMs,raster});return raster;\n' +
+    ' };\n' +
+    ' const paintMaterial=(ctx,terrain,{project,zoom,timeMs,bounds})=>{\n' +
+    '  const raster=transitionRaster(terrain,timeMs);if(!raster)return false;\n' +
+    '  const image=cellImage(raster);if(!image)return false;\n' +
+    '  let byRaster=patterns.get(ctx);if(!byRaster){byRaster=new Map();patterns.set(ctx,byRaster);}\n' +
+    "  const key=`${raster.id}:${raster.frame}`;if(!byRaster.has(key))byRaster.set(key,{pattern:ctx.createPattern(image,'repeat'),last:null});\n" +
+    "  const cached=byRaster.get(key),pattern=cached.pattern;if(!pattern?.setTransform){recordMissing(raster.id,'World-anchored CanvasPattern transform unsupported');return false;}\n" +
+    '  const repeat=raster.asset.materialWorldSize,wx=finite(repeat?.width)&&repeat.width>0?repeat.width:materialWorldSize,wy=finite(repeat?.height)&&repeat.height>0?repeat.height:materialWorldSize,origin=project(0,0);\n' +
+    '  if(!finite(wx)||!finite(wy)||wx<=0||wy<=0||!finite(origin?.x)||!finite(origin?.y))return false;\n' +
+    '  pattern.setTransform({a:TW*zoom/2*wx/raster.sw,b:TH*zoom/2*wx/raster.sw,c:-TW*zoom/2*wy/raster.sh,d:TH*zoom/2*wy/raster.sh,e:origin.x,f:origin.y});cached.last=null;\n' +
+    '  ctx.fillStyle=pattern;ctx.fillRect(bounds.x,bounds.y,bounds.width,bounds.height);return true;\n' +
+    ' };\n' +
+    ' const transitions=createTerrainTransitions({paintMaterial,\n' +
+    '  materialKey:(terrain,timeMs)=>{const r=transitionRaster(terrain,timeMs);return r?JSON.stringify([r.id,r.frame,r.asset.runtime?.sha256,r.asset.source?.sha256,r.asset.materialWorldSize]):null;},\n' +
+    "  hasBank:()=>Boolean(pipeline.manifest?.assets?.some(a=>a.kind==='terrain'&&a.family==='shore'&&a.state==='material'&&a.direction===null)),\n" +
+    "  onMissingBank:()=>recordMissing('shore:material:null','Dedicated authored bank material unavailable; bounded original-material blending remains a candidate')});\n" +
+    ' return {\n' +
+    '  status,pipeline,\n' +
+    '  observeEntities(entities,options){status.lastGather=null;if(enabled)locomotion.observe(entities,options);},\n' +
+    '  drawTransitions(ctx,options){if(!enabled||!ready)return false;return transitions.draw(ctx,options);},\n' +
+    '  async preload(){if(!enabled)return this;await pipeline.preload();ready=true;status.quality=pipeline.stats.status;return this;},\n' +
+    '  /** project uses existing renderer logical pixels; camera zoom and DPR must not be applied twice. */\n' +
+    '  drawGround(ctx,{x,y,terrain,project,zoom=1,timeMs=0}={}) {\n' +
+    "   if(!enabled||!ready||!finite(x)||!finite(y)||typeof project!=='function'||!finite(zoom)||zoom<=0)return false;\n" +
+    "   const water=['river','sea'].includes(terrain),ford=terrain==='ford';if(!water&&!ford&&!['plain','forest','hill'].includes(terrain)&&!(terrain==='mountain'&&mountainReady())){recordMissing(`ground:${terrain}`,'No authored material for this terrain');return false;}\n" +
+    "   const raster=select({families:ford?['ford','terrain.ford']:water?['water','terrain.water']:['grass','terrain.grass'],kind:'terrain',state:'material',direction:null,timeMs});if(!raster)return false;\n" +
+    '   const image=cellImage(raster);if(!image)return false;\n' +
+    "   let byRaster=patterns.get(ctx);if(!byRaster){byRaster=new Map();patterns.set(ctx,byRaster);}const key=`${raster.id}:${raster.frame}`;if(!byRaster.has(key))byRaster.set(key,{pattern:ctx.createPattern(image,'repeat'),last:null});const cached=byRaster.get(key),pattern=cached.pattern;\n" +
+    "   if(!pattern?.setTransform){recordMissing(raster.id,'World-anchored CanvasPattern transform unsupported');return false;}\n" +
+    '   const repeat=raster.asset.materialWorldSize;const wx=finite(repeat?.width)&&repeat.width>0?repeat.width:materialWorldSize,wy=finite(repeat?.height)&&repeat.height>0?repeat.height:materialWorldSize;\n' +
+    '   if(!finite(wx)||!finite(wy)||wx<=0||wy<=0)return false;\n' +
+    '   const origin=project(0,0),point=project(x,y);if(!finite(origin.x)||!finite(origin.y)||!finite(point.x)||!finite(point.y))return false;\n' +
+    '   // One continuous world plane. Clip masks are invisible coverage; no tile strokes or procedural detail.\n' +
+    '   const last=cached.last;if(!last||last.zoom!==zoom||last.x!==origin.x||last.y!==origin.y||last.wx!==wx||last.wy!==wy){pattern.setTransform({a:TW*zoom/2*wx/raster.sw,b:TH*zoom/2*wx/raster.sw,c:-TW*zoom/2*wy/raster.sh,d:TH*zoom/2*wy/raster.sh,e:origin.x,f:origin.y});cached.last={zoom,x:origin.x,y:origin.y,wx,wy};}\n' +
+    '   ctx.save();ctx.beginPath();const rx=TW*zoom/2+.25,ry=TH*zoom/2+.125;ctx.moveTo(point.x,point.y-ry);ctx.lineTo(point.x+rx,point.y);ctx.lineTo(point.x,point.y+ry);ctx.lineTo(point.x-rx,point.y);ctx.closePath();ctx.clip();ctx.fillStyle=pattern;ctx.fillRect(point.x-rx,point.y-ry,rx*2,ry*2);ctx.restore();status.groundDraws++;return true;\n' +
+    '  },\n' +
+    '  /** World props can share x+y depth sorting with entities. Coordinates remain simulation coordinates. */\n' +
+    '  drawProp(ctx,{x,y'... 6098 more characters
+  
+      at TestContext.<anonymous> (file:///tmp/passenger-physiology-156/tests/food-resource115.test.js:3:500)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: "import {mountainPropPlacements,hillGroundPlacements,foodResourceEligible,staticResourceEligible} from './terrain-props.js';\nimport {authoredActionStates,gatherAnimationTime} from './action-presentation.js';\nimport {sampleSpriteAnimation,defaultAnimationLoop,attackAnimationTime} from './sprite-timing.js';\nimport {createArtAssetPipeline} from './art-assets.js';\nimport {createTerrainTransitions} from './terrain-transitions.js';\nimport {createLocomotionPhase} from './locomotion-phase.js';\nimport {TILE_WIDTH,TILE_HEIGHT} from './world-presentation.js';\n\nconst TW=TILE_WIDTH,TH=TILE_HEIGHT;\nconst finite=n=>Number.isFinite(n);\nconst normalState=entity=>entity.hp<=0?'death':entity.state;\n/** Optional candidate art over actual simulation. No substitute map, fake units, or sprite mirroring. */\nexport function createRasterSlice({enabled=['pilot','walk','work','food','terrain','iron','workshop','camp'].includes(new URLSearchParams(globalThis.location?.search||'').get('art')),manifestUrl=new URLSearchParams(globalThis.location?.search||'').get('art')==='camp'?'/assets/art-v1/camp-148-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='workshop'?'/assets/art-v1/workshop-144-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='iron'?'/assets/art-v1/iron-137-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='terrain'?'/assets/art-v1/terrain-127-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='food'?'/assets/art-v1/food-099-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='work'?'/assets/art-v1/gather-026-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='walk'?'/assets/art-v1/walk-014-manifest.json':'/assets/art-v1/manifest.json',onStatus=()=>{},materialWorldSize=8}={}) {\n const worldArtEnabled=()=>['terrain','iron','workshop','camp'].includes(new URLSearchParams(globalThis.location?.search||'').get('art'));\n const pipeline=createArtAssetPipeline({manifestUrl,allowCandidates:true,onStatus});\n const locomotion=createLocomotionPhase();\n const cells=new Map(),patterns=new WeakMap(),missing=new Set();let ready=false;\n const status={enabled,phase:enabled?'CANDIDATE':'DISABLED',quality:'PLACEHOLDER_ONLY',groundDraws:0,propDraws:0,entityDraws:0,walkDraws:0,idleDraws:0,lastWalk:null,gatherDraws:0,lastGather:null,missing:[],pipeline:pipeline.stats};\n const recordMissing=(key,reason)=>{if(!missing.has(key)){missing.add(key);status.missing.push({key,reason,status:'PLACEHOLDER_ONLY'});status.quality='PLACEHOLDER_ONLY';}};\n const select=({families,kind,state,direction,variant=0,timeMs=0})=>{\n  if(!enabled||!ready)return null;\n  const candidates=(pipeline.manifest?.assets||[]).filter(asset=>asset.kind===kind&&families.includes(asset.family||asset.id)&&asset.state===state&&asset.direction===direction);\n  if(!candidates.length){recordMissing(`${families[0]}:${state}:${direction}`,'No exact authored raster state/direction');return null;}\n  const candidate=candidates[((variant%candidates.length)+candidates.length)%candidates.length];\n  const raster=pipeline.get(candidate.id,{state,direction,timeMs});if(!raster.image){recordMissing(candidate.id,raster.reason);return null;}return raster;\n };\n const mountainReady=()=>worldArtEnabled()&&Boolean(select({families:['mountain','prop.mountain'],kind:'prop',state:'static',direction:null,timeMs:0})?.image);\n const cellImage=raster=>{\n  if(raster.sx===0&&raster.sy===0&&raster.sw===raster.image.width&&raster.sh===raster.image.height)return raster.image;\n  const key=`${raster.id}:${raster.frame}`;if(!cells.has(key)){const canvas=typeof OffscreenCanvas==='function'?new OffscreenCanvas(raster.sw,raster.sh):globalThis.document?.createElement('canvas');if(!canvas)return null;canvas.width=raster.sw;canvas.height=raster.sh;const c=canvas.getContext('2d');c.drawImage(raster.image,raster.sx,raster.sy,raster.sw,raster.sh,0,0,raster.sw,raster.sh);cells.set(key,canvas);}return cells.get(key);\n };\n const drawAt=(ctx,raster,point,zoom)=>{\n  if(!raster?.image||!finite(point?.x)||!finite(point?.y)||!finite(zoom)||zoom<=0)return false;\n  const width=raster.render.width*zoom,height=raster.render.height*zoom;\n  const x=point.x-raster.pivot.x/raster.sw*width,y=point.y-raster.pivot.y/raster.sh*height;\n  ctx.drawImage(raster.image,raster.sx,raster.sy,raster.sw,raster.sh,x,y,width,height);return true;\n };\n const shadowAt=(ctx,raster,point,zoom)=>{\n  if(raster.contactShadow.mode!=='separate')return true;\n  const shadow=pipeline.get(raster.contactShadow.assetId);if(!shadow.image){recordMissing(raster.contactShadow.assetId,'Separate authored contact shadow unavailable');return false;}\n  return drawAt(ctx,shadow,point,zoom);\n };\n const rasterAt=(ctx,raster,point,zoom)=>{if(!shadowAt(ctx,raster,point,zoom))return false;return drawAt(ctx,raster,point,zoom);};\n const transitionMaterials=new Map();\n const transitionRaster=(terrain,timeMs)=>{\n  const cached=transitionMaterials.get(terrain);if(cached?.timeMs===timeMs)return cached.raster;\n  const families=terrain==='shore'?['shore']:terrain==='ford'?['ford','terrain.ford']:['water','terrain.water'];\n  const raster=select({families,kind:'terrain',state:'material',direction:null,timeMs});if(!raster)return false;\n  transitionMaterials.set(terrain,{timeMs,raster});return raster;\n };\n const paintMaterial=(ctx,terrain,{project,zoom,timeMs,bounds})=>{\n  const raster=transitionRaster(terrain,timeMs);if(!raster)return false;\n  const image=cellImage(raster);if(!image)return false;\n  let byRaster=patterns.get(ctx);if(!byRaster){byRaster=new Map();patterns.set(ctx,byRaster);}\n  const key=`${raster.id}:${raster.frame}`;if(!byRaster.has(key))byRaster.set(key,{pattern:ctx.createPattern(image,'repeat'),last:null});\n  const cached=byRaster.get(key),pattern=cached.pattern;if(!pattern?.setTransform){recordMissing(raster.id,'World-anchored CanvasPattern transform unsupported');return false;}\n  const repeat=raster.asset.materialWorldSize,wx=finite(repeat?.width)&&repeat.width>0?repeat.width:materialWorldSize,wy=finite(repeat?.height)&&repeat.height>0?repeat.height:materialWorldSize,origin=project(0,0);\n  if(!finite(wx)||!finite(wy)||wx<=0||wy<=0||!finite(origin?.x)||!finite(origin?.y))return false;\n  pattern.setTransform({a:TW*zoom/2*wx/raster.sw,b:TH*zoom/2*wx/raster.sw,c:-TW*zoom/2*wy/raster.sh,d:TH*zoom/2*wy/raster.sh,e:origin.x,f:origin.y});cached.last=null;\n  ctx.fillStyle=pattern;ctx.fillRect(bounds.x,bounds.y,bounds.width,bounds.height);return true;\n };\n const transitions=createTerrainTransitions({paintMaterial,\n  materialKey:(terrain,timeMs)=>{const r=transitionRaster(terrain,timeMs);return r?JSON.stringify([r.id,r.frame,r.asset.runtime?.sha256,r.asset.source?.sha256,r.asset.materialWorldSize]):null;},\n  hasBank:()=>Boolean(pipeline.manifest?.assets?.some(a=>a.kind==='terrain'&&a.family==='shore'&&a.state==='material'&&a.direction===null)),\n  onMissingBank:()=>recordMissing('shore:material:null','Dedicated authored bank material unavailable; bounded original-material blending remains a candidate')});\n return {\n  status,pipeline,\n  observeEntities(entities,options){status.lastGather=null;if(enabled)locomotion.observe(entities,options);},\n  drawTransitions(ctx,options){if(!enabled||!ready)return false;return transitions.draw(ctx,options);},\n  async preload(){if(!enabled)return this;await pipeline.preload();ready=true;status.quality=pipeline.stats.status;return this;},\n  /** project uses existing renderer logical pixels; camera zoom and DPR must not be applied twice. */\n  drawGround(ctx,{x,y,terrain,project,zoom=1,timeMs=0}={}) {\n   if(!enabled||!ready||!finite(x)||!finite(y)||typeof project!=='function'||!finite(zoom)||zoom<=0)return false;\n   const water=['river','sea'].includes(terrain),ford=terrain==='ford';if(!water&&!ford&&!['plain','forest','hill'].includes(terrain)&&!(terrain==='mountain'&&mountainReady())){recordMissing(`ground:${terrain}`,'No authored material for this terrain');return false;}\n   const raster=select({families:ford?['ford','terrain.ford']:water?['water','terrain.water']:['grass','terrain.grass'],kind:'terrain',state:'material',direction:null,timeMs});if(!raster)return false;\n   const image=cellImage(raster);if(!image)return false;\n   let byRaster=patterns.get(ctx);if(!byRaster){byRaster=new Map();patterns.set(ctx,byRaster);}const key=`${raster.id}:${raster.frame}`;if(!byRaster.has(key))byRaster.set(key,{pattern:ctx.createPattern(image,'repeat'),last:null});const cached=byRaster.get(key),pattern=cached.pattern;\n   if(!pattern?.setTransform){recordMissing(raster.id,'World-anchored CanvasPattern transform unsupported');return false;}\n   const repeat=raster.asset.materialWorldSize;const wx=finite(repeat?.width)&&repeat.width>0?repeat.width:materialWorldSize,wy=finite(repeat?.height)&&repeat.height>0?repeat.height:materialWorldSize;\n   if(!finite(wx)||!finite(wy)||wx<=0||wy<=0)return false;\n   const origin=project(0,0),point=project(x,y);if(!finite(origin.x)||!finite(origin.y)||!finite(point.x)||!finite(point.y))return false;\n   // One continuous world plane. Clip masks are invisible coverage; no tile strokes or procedural detail.\n   const last=cached.last;if(!last||last.zoom!==zoom||last.x!==origin.x||last.y!==origin.y||last.wx!==wx||last.wy!==wy){pattern.setTransform({a:TW*zoom/2*wx/raster.sw,b:TH*zoom/2*wx/raster.sw,c:-TW*zoom/2*wy/raster.sh,d:TH*zoom/2*wy/raster.sh,e:origin.x,f:origin.y});cached.last={zoom,x:origin.x,y:origin.y,wx,wy};}\n   ctx.save();ctx.beginPath();const rx=TW*zoom/2+.25,ry=TH*zoom/2+.125;ctx.moveTo(point.x,point.y-ry);ctx.lineTo(point.x+rx,point.y);ctx.lineTo(point.x,point.y+ry);ctx.lineTo(point.x-rx,point.y);ctx.closePath();ctx.clip();ctx.fillStyle=pattern;ctx.fillRect(point.x-rx,point.y-ry,rx*2,ry*2);ctx.restore();status.groundDraws++;return true;\n  },\n  /** World props can share x+y depth sorting with entities. Coordinates remain simulation coordinates. */\n  drawProp(ctx,{x,y"... 6098 more characters,
+    expected: /get\('art'\)!=='terrain'\|\|!staticResourceEligible/,
+    operator: 'match',
+    diff: 'simple'
+  }
+
+test at tests/hill113.test.js:4:1
+✖ hill render order and exact optional asset contract (4.438161ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /get\('art'\)!=='terrain'/. Input:
+  
+  "import {mountainPropPlacements,hillGroundPlacements,foodResourceEligible,staticResourceEligible} from './terrain-props.js';\n" +
+    "import {authoredActionStates,gatherAnimationTime} from './action-presentation.js';\n" +
+    "import {sampleSpriteAnimation,defaultAnimationLoop,attackAnimationTime} from './sprite-timing.js';\n" +
+    "import {createArtAssetPipeline} from './art-assets.js';\n" +
+    "import {createTerrainTransitions} from './terrain-transitions.js';\n" +
+    "import {createLocomotionPhase} from './locomotion-phase.js';\n" +
+    "import {TILE_WIDTH,TILE_HEIGHT} from './world-presentation.js';\n" +
+    '\n' +
+    'const TW=TILE_WIDTH,TH=TILE_HEIGHT;\n' +
+    'const finite=n=>Number.isFinite(n);\n' +
+    "const normalState=entity=>entity.hp<=0?'death':entity.state;\n" +
+    '/** Optional candidate art over actual simulation. No substitute map, fake units, or sprite mirroring. */\n' +
+    "export function createRasterSlice({enabled=['pilot','walk','work','food','terrain','iron','workshop','camp'].includes(new URLSearchParams(globalThis.location?.search||'').get('art')),manifestUrl=new URLSearchParams(globalThis.location?.search||'').get('art')==='camp'?'/assets/art-v1/camp-148-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='workshop'?'/assets/art-v1/workshop-144-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='iron'?'/assets/art-v1/iron-137-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='terrain'?'/assets/art-v1/terrain-127-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='food'?'/assets/art-v1/food-099-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='work'?'/assets/art-v1/gather-026-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='walk'?'/assets/art-v1/walk-014-manifest.json':'/assets/art-v1/manifest.json',onStatus=()=>{},materialWorldSize=8}={}) {\n" +
+    " const worldArtEnabled=()=>['terrain','iron','workshop','camp'].includes(new URLSearchParams(globalThis.location?.search||'').get('art'));\n" +
+    ' const pipeline=createArtAssetPipeline({manifestUrl,allowCandidates:true,onStatus});\n' +
+    ' const locomotion=createLocomotionPhase();\n' +
+    ' const cells=new Map(),patterns=new WeakMap(),missing=new Set();let ready=false;\n' +
+    " const status={enabled,phase:enabled?'CANDIDATE':'DISABLED',quality:'PLACEHOLDER_ONLY',groundDraws:0,propDraws:0,entityDraws:0,walkDraws:0,idleDraws:0,lastWalk:null,gatherDraws:0,lastGather:null,missing:[],pipeline:pipeline.stats};\n" +
+    " const recordMissing=(key,reason)=>{if(!missing.has(key)){missing.add(key);status.missing.push({key,reason,status:'PLACEHOLDER_ONLY'});status.quality='PLACEHOLDER_ONLY';}};\n" +
+    ' const select=({families,kind,state,direction,variant=0,timeMs=0})=>{\n' +
+    '  if(!enabled||!ready)return null;\n' +
+    '  const candidates=(pipeline.manifest?.assets||[]).filter(asset=>asset.kind===kind&&families.includes(asset.family||asset.id)&&asset.state===state&&asset.direction===direction);\n' +
+    "  if(!candidates.length){recordMissing(`${families[0]}:${state}:${direction}`,'No exact authored raster state/direction');return null;}\n" +
+    '  const candidate=candidates[((variant%candidates.length)+candidates.length)%candidates.length];\n' +
+    '  const raster=pipeline.get(candidate.id,{state,direction,timeMs});if(!raster.image){recordMissing(candidate.id,raster.reason);return null;}return raster;\n' +
+    ' };\n' +
+    " const mountainReady=()=>worldArtEnabled()&&Boolean(select({families:['mountain','prop.mountain'],kind:'prop',state:'static',direction:null,timeMs:0})?.image);\n" +
+    ' const cellImage=raster=>{\n' +
+    '  if(raster.sx===0&&raster.sy===0&&raster.sw===raster.image.width&&raster.sh===raster.image.height)return raster.image;\n' +
+    "  const key=`${raster.id}:${raster.frame}`;if(!cells.has(key)){const canvas=typeof OffscreenCanvas==='function'?new OffscreenCanvas(raster.sw,raster.sh):globalThis.document?.createElement('canvas');if(!canvas)return null;canvas.width=raster.sw;canvas.height=raster.sh;const c=canvas.getContext('2d');c.drawImage(raster.image,raster.sx,raster.sy,raster.sw,raster.sh,0,0,raster.sw,raster.sh);cells.set(key,canvas);}return cells.get(key);\n" +
+    ' };\n' +
+    ' const drawAt=(ctx,raster,point,zoom)=>{\n' +
+    '  if(!raster?.image||!finite(point?.x)||!finite(point?.y)||!finite(zoom)||zoom<=0)return false;\n' +
+    '  const width=raster.render.width*zoom,height=raster.render.height*zoom;\n' +
+    '  const x=point.x-raster.pivot.x/raster.sw*width,y=point.y-raster.pivot.y/raster.sh*height;\n' +
+    '  ctx.drawImage(raster.image,raster.sx,raster.sy,raster.sw,raster.sh,x,y,width,height);return true;\n' +
+    ' };\n' +
+    ' const shadowAt=(ctx,raster,point,zoom)=>{\n' +
+    "  if(raster.contactShadow.mode!=='separate')return true;\n" +
+    "  const shadow=pipeline.get(raster.contactShadow.assetId);if(!shadow.image){recordMissing(raster.contactShadow.assetId,'Separate authored contact shadow unavailable');return false;}\n" +
+    '  return drawAt(ctx,shadow,point,zoom);\n' +
+    ' };\n' +
+    ' const rasterAt=(ctx,raster,point,zoom)=>{if(!shadowAt(ctx,raster,point,zoom))return false;return drawAt(ctx,raster,point,zoom);};\n' +
+    ' const transitionMaterials=new Map();\n' +
+    ' const transitionRaster=(terrain,timeMs)=>{\n' +
+    '  const cached=transitionMaterials.get(terrain);if(cached?.timeMs===timeMs)return cached.raster;\n' +
+    "  const families=terrain==='shore'?['shore']:terrain==='ford'?['ford','terrain.ford']:['water','terrain.water'];\n" +
+    "  const raster=select({families,kind:'terrain',state:'material',direction:null,timeMs});if(!raster)return false;\n" +
+    '  transitionMaterials.set(terrain,{timeMs,raster});return raster;\n' +
+    ' };\n' +
+    ' const paintMaterial=(ctx,terrain,{project,zoom,timeMs,bounds})=>{\n' +
+    '  const raster=transitionRaster(terrain,timeMs);if(!raster)return false;\n' +
+    '  const image=cellImage(raster);if(!image)return false;\n' +
+    '  let byRaster=patterns.get(ctx);if(!byRaster){byRaster=new Map();patterns.set(ctx,byRaster);}\n' +
+    "  const key=`${raster.id}:${raster.frame}`;if(!byRaster.has(key))byRaster.set(key,{pattern:ctx.createPattern(image,'repeat'),last:null});\n" +
+    "  const cached=byRaster.get(key),pattern=cached.pattern;if(!pattern?.setTransform){recordMissing(raster.id,'World-anchored CanvasPattern transform unsupported');return false;}\n" +
+    '  const repeat=raster.asset.materialWorldSize,wx=finite(repeat?.width)&&repeat.width>0?repeat.width:materialWorldSize,wy=finite(repeat?.height)&&repeat.height>0?repeat.height:materialWorldSize,origin=project(0,0);\n' +
+    '  if(!finite(wx)||!finite(wy)||wx<=0||wy<=0||!finite(origin?.x)||!finite(origin?.y))return false;\n' +
+    '  pattern.setTransform({a:TW*zoom/2*wx/raster.sw,b:TH*zoom/2*wx/raster.sw,c:-TW*zoom/2*wy/raster.sh,d:TH*zoom/2*wy/raster.sh,e:origin.x,f:origin.y});cached.last=null;\n' +
+    '  ctx.fillStyle=pattern;ctx.fillRect(bounds.x,bounds.y,bounds.width,bounds.height);return true;\n' +
+    ' };\n' +
+    ' const transitions=createTerrainTransitions({paintMaterial,\n' +
+    '  materialKey:(terrain,timeMs)=>{const r=transitionRaster(terrain,timeMs);return r?JSON.stringify([r.id,r.frame,r.asset.runtime?.sha256,r.asset.source?.sha256,r.asset.materialWorldSize]):null;},\n' +
+    "  hasBank:()=>Boolean(pipeline.manifest?.assets?.some(a=>a.kind==='terrain'&&a.family==='shore'&&a.state==='material'&&a.direction===null)),\n" +
+    "  onMissingBank:()=>recordMissing('shore:material:null','Dedicated authored bank material unavailable; bounded original-material blending remains a candidate')});\n" +
+    ' return {\n' +
+    '  status,pipeline,\n' +
+    '  observeEntities(entities,options){status.lastGather=null;if(enabled)locomotion.observe(entities,options);},\n' +
+    '  drawTransitions(ctx,options){if(!enabled||!ready)return false;return transitions.draw(ctx,options);},\n' +
+    '  async preload(){if(!enabled)return this;await pipeline.preload();ready=true;status.quality=pipeline.stats.status;return this;},\n' +
+    '  /** project uses existing renderer logical pixels; camera zoom and DPR must not be applied twice. */\n' +
+    '  drawGround(ctx,{x,y,terrain,project,zoom=1,timeMs=0}={}) {\n' +
+    "   if(!enabled||!ready||!finite(x)||!finite(y)||typeof project!=='function'||!finite(zoom)||zoom<=0)return false;\n" +
+    "   const water=['river','sea'].includes(terrain),ford=terrain==='ford';if(!water&&!ford&&!['plain','forest','hill'].includes(terrain)&&!(terrain==='mountain'&&mountainReady())){recordMissing(`ground:${terrain}`,'No authored material for this terrain');return false;}\n" +
+    "   const raster=select({families:ford?['ford','terrain.ford']:water?['water','terrain.water']:['grass','terrain.grass'],kind:'terrain',state:'material',direction:null,timeMs});if(!raster)return false;\n" +
+    '   const image=cellImage(raster);if(!image)return false;\n' +
+    "   let byRaster=patterns.get(ctx);if(!byRaster){byRaster=new Map();patterns.set(ctx,byRaster);}const key=`${raster.id}:${raster.frame}`;if(!byRaster.has(key))byRaster.set(key,{pattern:ctx.createPattern(image,'repeat'),last:null});const cached=byRaster.get(key),pattern=cached.pattern;\n" +
+    "   if(!pattern?.setTransform){recordMissing(raster.id,'World-anchored CanvasPattern transform unsupported');return false;}\n" +
+    '   const repeat=raster.asset.materialWorldSize;const wx=finite(repeat?.width)&&repeat.width>0?repeat.width:materialWorldSize,wy=finite(repeat?.height)&&repeat.height>0?repeat.height:materialWorldSize;\n' +
+    '   if(!finite(wx)||!finite(wy)||wx<=0||wy<=0)return false;\n' +
+    '   const origin=project(0,0),point=project(x,y);if(!finite(origin.x)||!finite(origin.y)||!finite(point.x)||!finite(point.y))return false;\n' +
+    '   // One continuous world plane. Clip masks are invisible coverage; no tile strokes or procedural detail.\n' +
+    '   const last=cached.last;if(!last||last.zoom!==zoom||last.x!==origin.x||last.y!==origin.y||last.wx!==wx||last.wy!==wy){pattern.setTransform({a:TW*zoom/2*wx/raster.sw,b:TH*zoom/2*wx/raster.sw,c:-TW*zoom/2*wy/raster.sh,d:TH*zoom/2*wy/raster.sh,e:origin.x,f:origin.y});cached.last={zoom,x:origin.x,y:origin.y,wx,wy};}\n' +
+    '   ctx.save();ctx.beginPath();const rx=TW*zoom/2+.25,ry=TH*zoom/2+.125;ctx.moveTo(point.x,point.y-ry);ctx.lineTo(point.x+rx,point.y);ctx.lineTo(point.x,point.y+ry);ctx.lineTo(point.x-rx,point.y);ctx.closePath();ctx.clip();ctx.fillStyle=pattern;ctx.fillRect(point.x-rx,point.y-ry,rx*2,ry*2);ctx.restore();status.groundDraws++;return true;\n' +
+    '  },\n' +
+    '  /** World props can share x+y depth sorting with entities. Coordinates remain simulation coordinates. */\n' +
+    '  drawProp(ctx,{x,y'... 6098 more characters
+  
+      at TestContext.<anonymous> (file:///tmp/passenger-physiology-156/tests/hill113.test.js:4:740)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: "import {mountainPropPlacements,hillGroundPlacements,foodResourceEligible,staticResourceEligible} from './terrain-props.js';\nimport {authoredActionStates,gatherAnimationTime} from './action-presentation.js';\nimport {sampleSpriteAnimation,defaultAnimationLoop,attackAnimationTime} from './sprite-timing.js';\nimport {createArtAssetPipeline} from './art-assets.js';\nimport {createTerrainTransitions} from './terrain-transitions.js';\nimport {createLocomotionPhase} from './locomotion-phase.js';\nimport {TILE_WIDTH,TILE_HEIGHT} from './world-presentation.js';\n\nconst TW=TILE_WIDTH,TH=TILE_HEIGHT;\nconst finite=n=>Number.isFinite(n);\nconst normalState=entity=>entity.hp<=0?'death':entity.state;\n/** Optional candidate art over actual simulation. No substitute map, fake units, or sprite mirroring. */\nexport function createRasterSlice({enabled=['pilot','walk','work','food','terrain','iron','workshop','camp'].includes(new URLSearchParams(globalThis.location?.search||'').get('art')),manifestUrl=new URLSearchParams(globalThis.location?.search||'').get('art')==='camp'?'/assets/art-v1/camp-148-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='workshop'?'/assets/art-v1/workshop-144-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='iron'?'/assets/art-v1/iron-137-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='terrain'?'/assets/art-v1/terrain-127-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='food'?'/assets/art-v1/food-099-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='work'?'/assets/art-v1/gather-026-manifest.json':new URLSearchParams(globalThis.location?.search||'').get('art')==='walk'?'/assets/art-v1/walk-014-manifest.json':'/assets/art-v1/manifest.json',onStatus=()=>{},materialWorldSize=8}={}) {\n const worldArtEnabled=()=>['terrain','iron','workshop','camp'].includes(new URLSearchParams(globalThis.location?.search||'').get('art'));\n const pipeline=createArtAssetPipeline({manifestUrl,allowCandidates:true,onStatus});\n const locomotion=createLocomotionPhase();\n const cells=new Map(),patterns=new WeakMap(),missing=new Set();let ready=false;\n const status={enabled,phase:enabled?'CANDIDATE':'DISABLED',quality:'PLACEHOLDER_ONLY',groundDraws:0,propDraws:0,entityDraws:0,walkDraws:0,idleDraws:0,lastWalk:null,gatherDraws:0,lastGather:null,missing:[],pipeline:pipeline.stats};\n const recordMissing=(key,reason)=>{if(!missing.has(key)){missing.add(key);status.missing.push({key,reason,status:'PLACEHOLDER_ONLY'});status.quality='PLACEHOLDER_ONLY';}};\n const select=({families,kind,state,direction,variant=0,timeMs=0})=>{\n  if(!enabled||!ready)return null;\n  const candidates=(pipeline.manifest?.assets||[]).filter(asset=>asset.kind===kind&&families.includes(asset.family||asset.id)&&asset.state===state&&asset.direction===direction);\n  if(!candidates.length){recordMissing(`${families[0]}:${state}:${direction}`,'No exact authored raster state/direction');return null;}\n  const candidate=candidates[((variant%candidates.length)+candidates.length)%candidates.length];\n  const raster=pipeline.get(candidate.id,{state,direction,timeMs});if(!raster.image){recordMissing(candidate.id,raster.reason);return null;}return raster;\n };\n const mountainReady=()=>worldArtEnabled()&&Boolean(select({families:['mountain','prop.mountain'],kind:'prop',state:'static',direction:null,timeMs:0})?.image);\n const cellImage=raster=>{\n  if(raster.sx===0&&raster.sy===0&&raster.sw===raster.image.width&&raster.sh===raster.image.height)return raster.image;\n  const key=`${raster.id}:${raster.frame}`;if(!cells.has(key)){const canvas=typeof OffscreenCanvas==='function'?new OffscreenCanvas(raster.sw,raster.sh):globalThis.document?.createElement('canvas');if(!canvas)return null;canvas.width=raster.sw;canvas.height=raster.sh;const c=canvas.getContext('2d');c.drawImage(raster.image,raster.sx,raster.sy,raster.sw,raster.sh,0,0,raster.sw,raster.sh);cells.set(key,canvas);}return cells.get(key);\n };\n const drawAt=(ctx,raster,point,zoom)=>{\n  if(!raster?.image||!finite(point?.x)||!finite(point?.y)||!finite(zoom)||zoom<=0)return false;\n  const width=raster.render.width*zoom,height=raster.render.height*zoom;\n  const x=point.x-raster.pivot.x/raster.sw*width,y=point.y-raster.pivot.y/raster.sh*height;\n  ctx.drawImage(raster.image,raster.sx,raster.sy,raster.sw,raster.sh,x,y,width,height);return true;\n };\n const shadowAt=(ctx,raster,point,zoom)=>{\n  if(raster.contactShadow.mode!=='separate')return true;\n  const shadow=pipeline.get(raster.contactShadow.assetId);if(!shadow.image){recordMissing(raster.contactShadow.assetId,'Separate authored contact shadow unavailable');return false;}\n  return drawAt(ctx,shadow,point,zoom);\n };\n const rasterAt=(ctx,raster,point,zoom)=>{if(!shadowAt(ctx,raster,point,zoom))return false;return drawAt(ctx,raster,point,zoom);};\n const transitionMaterials=new Map();\n const transitionRaster=(terrain,timeMs)=>{\n  const cached=transitionMaterials.get(terrain);if(cached?.timeMs===timeMs)return cached.raster;\n  const families=terrain==='shore'?['shore']:terrain==='ford'?['ford','terrain.ford']:['water','terrain.water'];\n  const raster=select({families,kind:'terrain',state:'material',direction:null,timeMs});if(!raster)return false;\n  transitionMaterials.set(terrain,{timeMs,raster});return raster;\n };\n const paintMaterial=(ctx,terrain,{project,zoom,timeMs,bounds})=>{\n  const raster=transitionRaster(terrain,timeMs);if(!raster)return false;\n  const image=cellImage(raster);if(!image)return false;\n  let byRaster=patterns.get(ctx);if(!byRaster){byRaster=new Map();patterns.set(ctx,byRaster);}\n  const key=`${raster.id}:${raster.frame}`;if(!byRaster.has(key))byRaster.set(key,{pattern:ctx.createPattern(image,'repeat'),last:null});\n  const cached=byRaster.get(key),pattern=cached.pattern;if(!pattern?.setTransform){recordMissing(raster.id,'World-anchored CanvasPattern transform unsupported');return false;}\n  const repeat=raster.asset.materialWorldSize,wx=finite(repeat?.width)&&repeat.width>0?repeat.width:materialWorldSize,wy=finite(repeat?.height)&&repeat.height>0?repeat.height:materialWorldSize,origin=project(0,0);\n  if(!finite(wx)||!finite(wy)||wx<=0||wy<=0||!finite(origin?.x)||!finite(origin?.y))return false;\n  pattern.setTransform({a:TW*zoom/2*wx/raster.sw,b:TH*zoom/2*wx/raster.sw,c:-TW*zoom/2*wy/raster.sh,d:TH*zoom/2*wy/raster.sh,e:origin.x,f:origin.y});cached.last=null;\n  ctx.fillStyle=pattern;ctx.fillRect(bounds.x,bounds.y,bounds.width,bounds.height);return true;\n };\n const transitions=createTerrainTransitions({paintMaterial,\n  materialKey:(terrain,timeMs)=>{const r=transitionRaster(terrain,timeMs);return r?JSON.stringify([r.id,r.frame,r.asset.runtime?.sha256,r.asset.source?.sha256,r.asset.materialWorldSize]):null;},\n  hasBank:()=>Boolean(pipeline.manifest?.assets?.some(a=>a.kind==='terrain'&&a.family==='shore'&&a.state==='material'&&a.direction===null)),\n  onMissingBank:()=>recordMissing('shore:material:null','Dedicated authored bank material unavailable; bounded original-material blending remains a candidate')});\n return {\n  status,pipeline,\n  observeEntities(entities,options){status.lastGather=null;if(enabled)locomotion.observe(entities,options);},\n  drawTransitions(ctx,options){if(!enabled||!ready)return false;return transitions.draw(ctx,options);},\n  async preload(){if(!enabled)return this;await pipeline.preload();ready=true;status.quality=pipeline.stats.status;return this;},\n  /** project uses existing renderer logical pixels; camera zoom and DPR must not be applied twice. */\n  drawGround(ctx,{x,y,terrain,project,zoom=1,timeMs=0}={}) {\n   if(!enabled||!ready||!finite(x)||!finite(y)||typeof project!=='function'||!finite(zoom)||zoom<=0)return false;\n   const water=['river','sea'].includes(terrain),ford=terrain==='ford';if(!water&&!ford&&!['plain','forest','hill'].includes(terrain)&&!(terrain==='mountain'&&mountainReady())){recordMissing(`ground:${terrain}`,'No authored material for this terrain');return false;}\n   const raster=select({families:ford?['ford','terrain.ford']:water?['water','terrain.water']:['grass','terrain.grass'],kind:'terrain',state:'material',direction:null,timeMs});if(!raster)return false;\n   const image=cellImage(raster);if(!image)return false;\n   let byRaster=patterns.get(ctx);if(!byRaster){byRaster=new Map();patterns.set(ctx,byRaster);}const key=`${raster.id}:${raster.frame}`;if(!byRaster.has(key))byRaster.set(key,{pattern:ctx.createPattern(image,'repeat'),last:null});const cached=byRaster.get(key),pattern=cached.pattern;\n   if(!pattern?.setTransform){recordMissing(raster.id,'World-anchored CanvasPattern transform unsupported');return false;}\n   const repeat=raster.asset.materialWorldSize;const wx=finite(repeat?.width)&&repeat.width>0?repeat.width:materialWorldSize,wy=finite(repeat?.height)&&repeat.height>0?repeat.height:materialWorldSize;\n   if(!finite(wx)||!finite(wy)||wx<=0||wy<=0)return false;\n   const origin=project(0,0),point=project(x,y);if(!finite(origin.x)||!finite(origin.y)||!finite(point.x)||!finite(point.y))return false;\n   // One continuous world plane. Clip masks are invisible coverage; no tile strokes or procedural detail.\n   const last=cached.last;if(!last||last.zoom!==zoom||last.x!==origin.x||last.y!==origin.y||last.wx!==wx||last.wy!==wy){pattern.setTransform({a:TW*zoom/2*wx/raster.sw,b:TH*zoom/2*wx/raster.sw,c:-TW*zoom/2*wy/raster.sh,d:TH*zoom/2*wy/raster.sh,e:origin.x,f:origin.y});cached.last={zoom,x:origin.x,y:origin.y,wx,wy};}\n   ctx.save();ctx.beginPath();const rx=TW*zoom/2+.25,ry=TH*zoom/2+.125;ctx.moveTo(point.x,point.y-ry);ctx.lineTo(point.x+rx,point.y);ctx.lineTo(point.x,point.y+ry);ctx.lineTo(point.x-rx,point.y);ctx.closePath();ctx.clip();ctx.fillStyle=pattern;ctx.fillRect(point.x-rx,point.y-ry,rx*2,ry*2);ctx.restore();status.groundDraws++;return true;\n  },\n  /** World props can share x+y depth sorting with entities. Coordinates remain simulation coordinates. */\n  drawProp(ctx,{x,y"... 6098 more characters,
+    expected: /get\('art'\)!=='terrain'/,
+    operator: 'match',
+    diff: 'simple'
+  }

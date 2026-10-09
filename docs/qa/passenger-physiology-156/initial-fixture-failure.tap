@@ -1,0 +1,57 @@
+✖ ordinary embarked zero-food passenger shares land grace, morale and 30-second attrition (473.622873ms)
+✖ fed passenger consumes finite own rations without ship, wagon or store resupply (372.669857ms)
+✔ starving boarded General dies through authoritative defeat and freezes simulation (560.305949ms)
+✔ unloading hungry passenger preserves accrued physiology and restores ordinary land handling (557.126942ms)
+✔ transport death still kills hungry embarked passenger through ordinary enemy attack (797.407362ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 3
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2816.728426
+
+✖ failing tests:
+
+test at tests/passenger-physiology156.test.js:14:1
+✖ ordinary embarked zero-food passenger shares land grace, morale and 30-second attrition (473.622873ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(!view(s,0).entities.some(e=>e.id===u.id))
+  
+      at TestContext.<anonymous> (file:///tmp/passenger-physiology-156/tests/passenger-physiology156.test.js:19:59)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.start (node:internal/test_runner/test:1096:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:385:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/passenger-physiology156.test.js:22:1
+✖ fed passenger consumes finite own rations without ship, wagon or store resupply (372.669857ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 48.509599999999864
+  - 50
+  
+      at TestContext.<anonymous> (file:///tmp/passenger-physiology-156/tests/passenger-physiology156.test.js:27:45)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 48.509599999999864,
+    expected: 50,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

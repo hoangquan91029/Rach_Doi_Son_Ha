@@ -1,0 +1,14 @@
+✔ secondary damage is independent of primary armor and primary remains unchanged (19.32056ms)
+✔ each secondary uses own armor, hill/ford terrain, fortification and river defense (5.90228ms)
+✔ mixed unit/building bonuses and supply-denial bonus apply per victim (2.969872ms)
+✔ authoritative impact deals nothing early, skips friendly/dead/embarked and floors mitigated splash at one (3.242153ms)
+✔ identical seed/commands produce deterministic complete combat state (6.504786ms)
+✔ attacker supply, morale, forest, shock and tempo factors are shared across victims (4.147632ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 95.610589

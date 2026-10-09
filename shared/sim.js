@@ -233,6 +233,16 @@ function attack(s,e,t){
  e.attackReadyTick=e.attackImpactTick+recovery;e.cooldown=(windup+recovery)/TICK_RATE;
  e.pendingAttack={target:t.id,x:e.x,y:e.y,orderType:e.order?.type||null};return true;
 }
+function mitigatedAttackDamage(s,e,t,d,terrain){
+ const m=s.players[e.owner].modifiers,targetTerrain=tile(s,t.x,t.y);
+ let damage=d.damage*m.damage*(d.bonus?.[t.type]||d.bonus?.[t.kind]||1);
+ if(e.foodMax&&e.food/e.foodMax<BALANCE.lowSupply)damage*=e.food>0?0.85:0.55;damage*=0.7+e.morale/250;
+ if(terrain==='forest'&&!e.lastAttack||terrain==='forest'&&s.tick-e.lastAttack>100)damage*=1.25;
+ if(active(s,e,'shock'))damage*=1.45;if(active(s,e,'tempo')&&e.lastMovedTick>s.tick-40)damage*=1.3;
+ if(s.players[e.owner].tags.includes('SUPPLY_DENIAL')&&['wagon','granary','depot','transport'].includes(t.type))damage*=1.2;
+ let armor=(UNITS[t.type]||BUILDINGS[t.type]).armor*(['fort','wall','gate'].includes(t.type)?s.players[t.owner].modifiers.fortification:1)+(TERRAIN[targetTerrain]?.armor||0)+s.players[t.owner].modifiers.armor;if(active(s,t,'riverDefense')&&(targetTerrain==='ford'||s.entities.some(b=>b.owner===t.owner&&b.kind==='building'&&b.hp>0&&dist(b,t)<5)))armor+=6;
+ return damage-armor;
+}
 function resolveAttack(s,e){
  const pending=e.pendingAttack;if(!pending)return;
  const sameOrder=pending.orderType===(e.order?.type||null)&&(pending.orderType!=='attack'||e.order.target===pending.target);
@@ -241,14 +251,7 @@ function resolveAttack(s,e){
  delete e.pendingAttack;
  const t=get(s,pending.target),d=UNITS[e.type]||BUILDINGS[e.type],terrain=tile(s,e.x,e.y),range=d.range+(TERRAIN[terrain]?.range||0);
  if(!t||!living(t)||t.owner===e.owner||!visible(s,e.owner,t)||dist(e,t)>range+.25){cancelAttack(e);e.state='idle';return;}
- const m=s.players[e.owner].modifiers,targetTerrain=tile(s,t.x,t.y);
- let damage=d.damage*m.damage*(d.bonus?.[t.type]||d.bonus?.[t.kind]||1);
- if(e.foodMax&&e.food/e.foodMax<BALANCE.lowSupply)damage*=e.food>0?0.85:0.55;damage*=0.7+e.morale/250;
- if(terrain==='forest'&&!e.lastAttack||terrain==='forest'&&s.tick-e.lastAttack>100)damage*=1.25;
- if(active(s,e,'shock'))damage*=1.45;if(active(s,e,'tempo')&&e.lastMovedTick>s.tick-40)damage*=1.3;
- if(s.players[e.owner].tags.includes('SUPPLY_DENIAL')&&['wagon','granary','depot','transport'].includes(t.type))damage*=1.2;
- let armor=(UNITS[t.type]||BUILDINGS[t.type]).armor*(['fort','wall','gate'].includes(t.type)?s.players[t.owner].modifiers.fortification:1)+(TERRAIN[targetTerrain]?.armor||0)+s.players[t.owner].modifiers.armor;if(active(s,t,'riverDefense')&&(targetTerrain==='ford'||s.entities.some(b=>b.owner===t.owner&&b.kind==='building'&&b.hp>0&&dist(b,t)<5)))armor+=6;
- hurt(s,t,Math.max(1,damage-armor),e);if(d.splash)for(const other of s.entities)if(other.owner!==e.owner&&other.id!==t.id&&living(other)&&dist(other,t)<d.splash)hurt(s,other,Math.max(1,(damage-armor)*0.35),e);
+ hurt(s,t,Math.max(1,mitigatedAttackDamage(s,e,t,d,terrain)),e);if(d.splash)for(const other of s.entities)if(other.owner!==e.owner&&other.id!==t.id&&living(other)&&dist(other,t)<d.splash)hurt(s,other,Math.max(1,mitigatedAttackDamage(s,e,other,d,terrain)*0.35),e);
  e.lastAttack=s.tick;
 }
 function nearestEnemy(s,e,r){let best=null,bestScore=Infinity;for(const t of s.entities){if(!living(t)||t.owner===e.owner||!visible(s,e.owner,t)||dist(e,t)>r)continue;if(UNITS[e.type]?.naval&&UNITS[t.type]?.naval===false&&dist(e,t)>UNITS[e.type].range)continue;const score=dist(e,t)+(t.type==='general'?-2:0)+(t.kind==='building'?2:0);if(score<bestScore){best=t;bestScore=score;}}return best;}
@@ -289,8 +292,10 @@ function tickBuilding(s,b){
 function tickUnit(s,e){
  const d=UNITS[e.type],m=s.players[e.owner].modifiers;e.food=Math.max(0,e.food-d.consumption*m.consumption*DT);
  if(['han_xin','napoleon_bonaparte'].some(id=>[s.players[e.owner].king,s.players[e.owner].general].includes(id))&&!s.entities.some(b=>b.owner===e.owner&&stores(b)&&dist(b,e)<12))e.food=Math.max(0,e.food-d.consumption*0.2*DT);
- if(!e.embarked)resupply(s,e);else{const ship=get(s,e.embarked);if(ship){e.x=ship.x;e.y=ship.y;}return;}
+ if(!e.embarked)resupply(s,e);
  if(e.food<=0){e.starving=(e.starving||0)+DT;e.morale=Math.max(15,e.morale-0.5*DT);if(e.starving>BALANCE.starveGrace)hurt(s,e,BALANCE.starveDamage*DT,null);}else{e.starving=0;const nearLeader=s.entities.some(u=>u.owner===e.owner&&u.character&&living(u)&&dist(u,e)<7);e.morale=Math.min(Math.min(100,80+m.morale),e.morale+(nearLeader?3:0.5)*DT);}
+ if(e.hp<=0)return;
+ if(e.embarked){const ship=get(s,e.embarked);if(ship){e.x=ship.x;e.y=ship.y;}return;}
  if(!living(e))return;if(active(s,e,'consensus')||active(s,e,'restore')){e.hp=Math.min(e.maxHp,e.hp+2*DT);e.morale=Math.min(100,e.morale+8*DT);}
  for(const f of s.effects)if(f.kind==='riverTrap'&&f.owner!==e.owner&&f.until>s.tick&&dist(e,f)<f.radius&&TERRAIN[tile(s,e.x,e.y)]?.water)hurt(s,e,7*DT,{owner:f.owner});
  if(!living(e))return;if(e.pendingAttack){e.state='attack';return;}const previous={x:e.x,y:e.y},o=e.order;e.state='idle';

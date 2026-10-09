@@ -1,0 +1,90 @@
+✖ secondary damage is independent of primary armor and primary remains unchanged (18.508813ms)
+✖ each secondary uses own armor, hill/ford terrain, fortification and river defense (6.204456ms)
+✖ mixed unit/building bonuses and supply-denial bonus apply per victim (3.018232ms)
+✔ authoritative impact deals nothing early, skips friendly/dead/embarked and floors mitigated splash at one (3.115157ms)
+✔ identical seed/commands produce deterministic complete combat state (6.610629ms)
+✖ attacker supply, morale, forest, shock and tempo factors are shared across victims (3.876996ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 2
+ℹ fail 4
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 94.551153
+
+✖ failing tests:
+
+test at ../per-victim-splash-159-before/tests/per-victim-splash159.test.js:18:1
+✖ secondary damage is independent of primary armor and primary remains unchanged (18.508813ms)
+  AssertionError [ERR_ASSERTION]: 21.44309999999996 != 20.043100000000095
+      at close (file:///tmp/per-victim-splash-159-before/tests/per-victim-splash159.test.js:5:27)
+      at TestContext.<anonymous> (file:///tmp/per-victim-splash-159-before/tests/per-victim-splash159.test.js:20:2)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.start (node:internal/test_runner/test:1096:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:385:17) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at ../per-victim-splash-159-before/tests/per-victim-splash159.test.js:22:1
+✖ each secondary uses own armor, hill/ford terrain, fortification and river defense (6.204456ms)
+  AssertionError [ERR_ASSERTION]: 20.393100000000004 != 21.4431
+      at close (file:///tmp/per-victim-splash-159-before/tests/per-victim-splash159.test.js:5:27)
+      at TestContext.<anonymous> (file:///tmp/per-victim-splash-159-before/tests/per-victim-splash159.test.js:26:24)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at ../per-victim-splash-159-before/tests/per-victim-splash159.test.js:30:1
+✖ mixed unit/building bonuses and supply-denial bonus apply per victim (3.018232ms)
+  AssertionError [ERR_ASSERTION]: 39.38619999999992 != 21.4431
+      at close (file:///tmp/per-victim-splash-159-before/tests/per-victim-splash159.test.js:5:27)
+      at TestContext.<anonymous> (file:///tmp/per-victim-splash-159-before/tests/per-victim-splash159.test.js:32:24)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at ../per-victim-splash-159-before/tests/per-victim-splash159.test.js:40:1
+✖ attacker supply, morale, forest, shock and tempo factors are shared across victims (3.876996ms)
+  AssertionError [ERR_ASSERTION]: 26.684488031249884 != 27.734488031249988
+      at close (file:///tmp/per-victim-splash-159-before/tests/per-victim-splash159.test.js:5:27)
+      at TestContext.<anonymous> (file:///tmp/per-victim-splash-159-before/tests/per-victim-splash159.test.js:44:44)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

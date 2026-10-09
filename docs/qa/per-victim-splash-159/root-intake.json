@@ -1,0 +1,15 @@
+{
+  "verdict": "ACCEPTED_LOCAL_SOURCE",
+  "changes": "Per-victim splash damage/mitigation; retains156 passenger physiology. Primary damage arithmetic and attack timing unchanged.",
+  "candidateSimSha256": "8f0ef62fea99b72d6a6f3ec40461e00b26ef0f08bc3bdfb34acbdc20a427a62a",
+  "targetedTests": {
+    "pass": 6,
+    "fail": 0
+  },
+  "fullStagedSuite": {
+    "pass": 140,
+    "fail": 0
+  },
+  "sourceEquivalence": "All stage full-suite source inputs verified against canonical; exact candidate sim/test copied. No additional full suite claimed.",
+  "production": "Public149 remains unchanged; no build/deploy/restart or new ordinary-UI match proof."
+}

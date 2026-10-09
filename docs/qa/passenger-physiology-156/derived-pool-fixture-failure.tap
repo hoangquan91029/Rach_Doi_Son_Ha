@@ -1,0 +1,42 @@
+✔ ordinary embarked zero-food passenger shares land grace, morale and 30-second attrition (484.498589ms)
+✖ fed passenger consumes finite own rations without ship, wagon or store resupply (345.807953ms)
+✔ starving boarded General dies through authoritative defeat and freezes simulation (584.25772ms)
+✔ unloading hungry passenger preserves accrued physiology and restores ordinary land handling (554.592812ms)
+✔ transport death still kills hungry embarked passenger through ordinary enemy attack (931.508033ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 4
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2952.789328
+
+✖ failing tests:
+
+test at tests/passenger-physiology156.test.js:22:1
+✖ fed passenger consumes finite own rations without ship, wagon or store resupply (345.807953ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    {
+  +   food: 50,
+  -   food: 750.5254400000354,
+      iron: 250,
+      wood: 450
+    }
+  
+      at TestContext.<anonymous> (file:///tmp/passenger-physiology-156/tests/passenger-physiology156.test.js:27:75)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: { wood: 450, food: 50, iron: 250 },
+    expected: { wood: 450, food: 750.5254400000354, iron: 250 },
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

@@ -1,0 +1,97 @@
+✖ ordinary embarked zero-food passenger shares land grace, morale and 30-second attrition (407.05264ms)
+✖ fed passenger consumes finite own rations without ship, wagon or store resupply (338.500648ms)
+✖ starving boarded General dies through authoritative defeat and freezes simulation (614.62051ms)
+✖ unloading hungry passenger preserves accrued physiology and restores ordinary land handling (587.44657ms)
+✔ transport death still kills hungry embarked passenger through ordinary enemy attack (871.028429ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 1
+ℹ fail 4
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2869.156928
+
+✖ failing tests:
+
+test at ../passenger-physiology-156-before/tests/passenger-physiology156.test.js:14:1
+✖ ordinary embarked zero-food passenger shares land grace, morale and 30-second attrition (407.05264ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(Math.abs(u.starving-24)<1e-8)
+  
+      at TestContext.<anonymous> (file:///tmp/passenger-physiology-156-before/tests/passenger-physiology156.test.js:17:74)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.start (node:internal/test_runner/test:1096:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:385:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at ../passenger-physiology-156-before/tests/passenger-physiology156.test.js:22:1
+✖ fed passenger consumes finite own rations without ship, wagon or store resupply (338.500648ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  9 !== 0
+  
+      at TestContext.<anonymous> (file:///tmp/passenger-physiology-156-before/tests/passenger-physiology156.test.js:26:67)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 9,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at ../passenger-physiology-156-before/tests/passenger-physiology156.test.js:29:1
+✖ starving boarded General dies through authoritative defeat and freezes simulation (614.62051ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0.5 !== 0
+  
+      at TestContext.<anonymous> (file:///tmp/passenger-physiology-156-before/tests/passenger-physiology156.test.js:31:9)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0.5,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at ../passenger-physiology-156-before/tests/passenger-physiology156.test.js:34:1
+✖ unloading hungry passenger preserves accrued physiology and restores ordinary land handling (587.44657ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(u.hp<hp)
+  
+      at TestContext.<anonymous> (file:///tmp/passenger-physiology-156-before/tests/passenger-physiology156.test.js:37:70)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

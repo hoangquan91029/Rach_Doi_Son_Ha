@@ -1,0 +1,14 @@
+{
+  "verdict": "ACCEPT_NARROW_CANONICAL_FIX",
+  "changedPaths": [
+    "shared/sim.js",
+    "tests/passenger-physiology156.test.js"
+  ],
+  "simSha256": "df4326ca874a0f935034d05bcad434b93fa5d14b1dca1655548cceb983f75d5b",
+  "focused": "5/5 PASS; baseline4/5FAIL",
+  "full": "125/127PASS;2preexistingclientstaticrouteassertionFAILbaselineconfirmed",
+  "existingAIandNaval": "sixAIvictories/twonavalPASS",
+  "reason": "Minimal ordering correction shares hunger/grace/morale/attrition before embarked earlyreturn; no automaticresupply added; deadpassengerreturn before shipfollow; transportloss/unload rules retained.",
+  "public": "UNCHANGED149; serviceoldmodule not restarted",
+  "next": "160 correct outdated source-route checks;159 pervictim splash separate order"
+}
