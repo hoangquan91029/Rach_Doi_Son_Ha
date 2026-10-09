@@ -1,0 +1,29 @@
+{
+  "schema": "rds-owner-motion-feedback/v1",
+  "recordedAt": "2026-10-09T02:33:34.163044+00:00",
+  "source": "Direct human reply in this chat",
+  "question": "Sau khi xem vòng chặt gỗ ở kích thước gameplay phía trên, bạn thấy chuyển động thế nào?",
+  "answer": "Tự nhiên và đủ mượt, tiếp tục workflow này",
+  "subject": {
+    "path": "docs/art/pipeline/pure2d-gather-preview-024/actual-output/actual-gather-loop.png",
+    "sha256": "927bfbc99ddd6930175277038e14760b1704ccef9a6fe67b6ea21d1ff2cba422",
+    "action": "gather_wood",
+    "engineDirection": 1,
+    "frames": 8,
+    "durationMs": 1080,
+    "presentationCharacterHeight": "approximately80px"
+  },
+  "verdict": "OWNER_ACCEPTED_NATURALNESS_AT_SHOWN_GAMEPLAY_SIZE",
+  "scope": [
+    "Current South/D1 wood-gather loop naturalness",
+    "Continue the pure2D whole-illustration workflow with bounded target pilots"
+  ],
+  "notEstablished": [
+    "Other actions/directions/units",
+    "Measured world foot lock",
+    "Public production accepted-art build",
+    "Complete visual roster"
+  ],
+  "priorIndependentReview": "026 SAMPLES_ONLY preserved, not retrospectively rewritten",
+  "next": "One D0/ESE villager walk pilot from its locked identity, controlled keys before inbetweens; no unrestricted roster fanout."
+}

@@ -1,0 +1,17 @@
+node:internal/fs/promises:640
+  return new FileHandle(await PromisePrototypeThen(
+                        ^
+
+Error: ENOENT: no such file or directory, open '/tmp/rds-gather026-build/index.html'
+    at async open (node:internal/fs/promises:640:25)
+    at async readFile (node:internal/fs/promises:1287:14)
+    at async pin (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/candidate-ai-031/attempt-2/run-owned-server.mjs:6:36)
+    at async Promise.all (index 0)
+    at async file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/candidate-ai-031/attempt-2/run-owned-server.mjs:7:59 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/tmp/rds-gather026-build/index.html'
+}
+
+Node.js v24.15.0

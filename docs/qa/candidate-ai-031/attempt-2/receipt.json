@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-07",
+  "url": "http://127.0.0.1:36987/?art=work",
+  "method": "actual UI orders; read-only filtered diagnostics; no simulation injection",
+  "results": [
+    {
+      "map": "coast",
+      "goal": "lose",
+      "winner": 1,
+      "reason": "Enemy General defeated",
+      "tick": 3652,
+      "seconds": 182.6,
+      "resources": {
+        "wood": 550,
+        "food": 520.6640640003075,
+        "iron": 260
+      },
+      "stats": {
+        "kills": 6,
+        "lost": 4,
+        "gathered": 0,
+        "foodTransported": 0,
+        "buildingsDestroyed": 0,
+        "wagonsDestroyed": 3,
+        "abilities": 0
+      },
+      "errors": [],
+      "networkFailures": [],
+      "pins": [
+        {
+          "url": "http://127.0.0.1:36987/assets/index-BQc6lscV.js",
+          "bytes": 141864,
+          "sha256": "48de160de21a0baa7d84b9ff447e28f162dba5573926efd98b01ee72afd1cc4b"
+        },
+        {
+          "url": "http://127.0.0.1:36987/assets/art-v1/gather-026-manifest.json",
+          "bytes": 50569,
+          "sha256": "377d433dbdd2050564131f6ea7e67e14f65a749069cf2500bc46b54039e3471f"
+        },
+        {
+          "url": "http://127.0.0.1:36987/assets/art-v1/gather-026/atlas.png",
+          "bytes": 123493,
+          "sha256": "5db6455a859a823658e2297544ca739dd466509856f8c2534644a05903cd1092"
+        }
+      ],
+      "browserVersion": "151.0.7922.34",
+      "offlineAfterLoad": true,
+      "offlineStatus": {
+        "beforeDisconnect": true,
+        "afterDisconnect": false,
+        "afterMatch": false,
+        "finalAssets": {
+          "art": {
+            "status": "CANDIDATE",
+            "manifest": "ready",
+            "declared": 17,
+            "ready": 17,
+            "approved": 0,
+            "candidates": 17,
+            "failed": 0,
+            "skipped": 0,
+            "fallbacks": 0,
+            "failures": []
+          },
+          "portraits": {
+            "declared": 12,
+            "ready": 12,
+            "failures": [],
+            "fontWarnings": []
+          }
+        },
+        "afterResultMenu": false
+      },
+      "resultScreenAndMenuVerified": true
+    }
+  ],
+  "failures": []
+}

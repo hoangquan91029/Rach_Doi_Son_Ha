@@ -48,3 +48,6 @@ Detailed standards and reusable asset/script inventory: PURE_2D_CHARACTER_PIPELI
 VI: Quy trình đã đổi hoàn toàn sang minh họa2D có chiều sâu và hoạt ảnh từng frame. Giữ chất lượng asset gốc; kiểm tra hai contact, bốn key rồi vòng đi tám ảnh trước khi nhân rộng. Dừng dựng3D/Blender và giữ thử nghiệm cũ làm hồ sơ.
 
 Current026 addendum: first completeSouth/D1 gather_wood candidate uses8actualwholeillustrations,1080ms, fixedfamily1254→128/render89/pivot6541140. RealoptionalLOCAL ?art=work preload/draw/pause/stop/restart/return checks pass; motionreviewSAMPLES_ONLY, clip/APNG ready foronebriefcontinuouslook. No otherdirection/resource/unit fanout or visual/owner/publicapproval. Read newestNEXT_STEPS and actual024/026 receipts; old019/020 holds remainhistory, not instructions to repeat failedmethods.
+
+
+Current032 human feedback supersedes the unreviewed-naturalness hold for the shown South/D1 gather_wood loop: “Tự nhiên và đủ mượt, tiếp tục workflow này”. Exact APNG-bound scope is in owner-motion-review-032/review.json. Continue one bounded D0/ESE villager walk pilot from its existing locked whole illustration, with controlled contact/passing keys before inbetweens and a brief real-size loop look. No broad roster batch or production approval follows; original026 independent SAMPLES_ONLY receipt remains unchanged.

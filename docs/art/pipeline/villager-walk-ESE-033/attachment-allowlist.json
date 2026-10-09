@@ -1,0 +1,28 @@
+{
+  "schema": "rds-finite-attachment-allowlist/v1",
+  "staticReferences": [
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+      "role": "APPEARANCE_MASTER inspected original; identity/material palette only"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-Southeast-007/raw.png",
+      "sha256": "2d32f65fe0f4c8037e19aeb5ace9b1b29e70ecf45a158d101770e86f9aa9092f",
+      "role": "D0_DIRECTION_IDENTITY inspected sealed whole illustration; edit target, view/placement authority"
+    }
+  ],
+  "guides": [
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-ESE-033/F00-model-guide.png",
+      "sha256": "9c8f828d49340201cb8b98b3a3caacac351b56f38be485d93c14fecae9c6d25c",
+      "role": "MODEL_ONLY F00 whole-pose geometry, not art"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-ESE-033/F04-model-guide.png",
+      "sha256": "3ded8bc0d113831a4820dc71f588123bdce09ad4560abfe10d707a1df67085ec",
+      "role": "MODEL_ONLY F04 whole-pose geometry, not art"
+    }
+  ],
+  "conditionalContinuity": "F04 may attach selected current-job F00 only after actual intake; append exact raw path/hash before call. No legacy/rejected animations."
+}

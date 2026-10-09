@@ -1,0 +1,179 @@
+{
+  "schema": "rds-pure2d-finite-work-order/v1",
+  "jobId": "villager-walk-ESE-033",
+  "status": "READY_PREPARATION_ONLY_AWAIT_ROOT_SELECTION",
+  "model": "gpt-6.1-sol",
+  "reasoningEffort": "low",
+  "mode": "identity-frame",
+  "lease": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/villager-walk-ESE-033",
+  "target": "Rach_Doi_Son_Ha/villager",
+  "direction": {
+    "engine": 0,
+    "world": "E",
+    "screen": "ESE"
+  },
+  "canvas": [
+    1254,
+    1254
+  ],
+  "pivot": [
+    654,
+    1140
+  ],
+  "runtimeCanvas": 128,
+  "displayCanvas": 89,
+  "wholeFamilyTransform": true,
+  "maxCalls": 2,
+  "maxAttemptsPerFrame": 1,
+  "retries": 0,
+  "callsMade": 0,
+  "callOpen": false,
+  "slots": [
+    {
+      "frame": 0,
+      "status": "UNCALLED",
+      "prompt": "F00-prompt.txt",
+      "guide": "F00-model-guide.png"
+    },
+    {
+      "frame": 4,
+      "status": "UNCALLED",
+      "prompt": "F04-prompt.txt",
+      "guide": "F04-model-guide.png"
+    }
+  ],
+  "laterGate": "F2/F6 and inbetweens closed until actual opposite contact intake; no automatic fanout",
+  "provisionalTimingMs": [
+    75,
+    75,
+    75,
+    75,
+    75,
+    75,
+    75,
+    75
+  ],
+  "ownership": "RIGHT near viewer-left root; LEFT far viewer-right root, actor LEFT sash. Corrected static-southeast-v2 authority; old D00 guide labels superseded.",
+  "posePlan": {
+    "0": {
+      "RIGHT": [
+        [
+          560,
+          755
+        ],
+        [
+          470,
+          895
+        ],
+        [
+          410,
+          1050
+        ],
+        [
+          435,
+          1100
+        ]
+      ],
+      "LEFT": [
+        [
+          710,
+          735
+        ],
+        [
+          765,
+          900
+        ],
+        [
+          815,
+          1080
+        ],
+        [
+          855,
+          1135
+        ]
+      ]
+    },
+    "4": {
+      "RIGHT": [
+        [
+          560,
+          755
+        ],
+        [
+          640,
+          950
+        ],
+        [
+          675,
+          1140
+        ],
+        [
+          725,
+          1190
+        ]
+      ],
+      "LEFT": [
+        [
+          710,
+          735
+        ],
+        [
+          645,
+          880
+        ],
+        [
+          580,
+          1020
+        ],
+        [
+          625,
+          1080
+        ]
+      ]
+    }
+  },
+  "qualityGate": "brief actual-size contact comparison, then full loop normal speed; correct only visible problems. No measured foot lock claim.",
+  "references": [
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+      "role": "APPEARANCE_MASTER inspected original; identity/material palette only"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-Southeast-007/raw.png",
+      "sha256": "2d32f65fe0f4c8037e19aeb5ace9b1b29e70ecf45a158d101770e86f9aa9092f",
+      "role": "D0_DIRECTION_IDENTITY inspected sealed whole illustration; edit target, view/placement authority"
+    }
+  ],
+  "protectedHead": "fa4aa0576426b923c9dfb0dc2a0ce020deb314b1",
+  "inputPins": [
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/AGENTS.md",
+      "sha256": "0e6ded65289fa907453cf45f0fbe4375f5ab5065aea8dd067b0c30a6636b21c0"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/NEXT_STEPS.md",
+      "sha256": "45868a872df5ffc03ba5cef5e98599ddbfd1b7d80bb6a6d9076c695b91a0732b"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/VILLAGER_IDENTITY_LOCK_007.json",
+      "sha256": "567d1844595d07a274ad2da885a298dc16925bafd5fe11a4d9c49ee33783828a"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/owner-motion-review-032/review.json",
+      "sha256": "67691fc79f1e3a8f6c59472a6cf03273de2fef10a77b417f14eebb115c2c4d30"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/PURE_2D_MASTER_DIRECTIVE_20261008.txt",
+      "sha256": "8acf4a45029d6febb0797c53900ae207f16f4318ccdd4de07c1f298462a1d537"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/REVIEW_PRIORITY_20261008.md",
+      "sha256": "cacc2b746cb7360d4d6c9dba0b94d55dea0530e43402d60a891b3711e3c1a525"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/authoring-tools/villager-walk-SOUTH-007/pose-guides/static-southeast-v2/guide-qa.png",
+      "sha256": "703ee06d8eef0399da8d947e0cefd7d8dbabba16823f19fe45db3638271db6aa"
+    }
+  ]
+}

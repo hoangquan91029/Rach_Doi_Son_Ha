@@ -104,6 +104,16 @@ Current local026: first complete South/D1 eight-frame illustrated gather_wood ca
 Candidate online028 now completes local authoritative1v1 on BOTHDelta andCoast, actual Chromium151.0.7922.34 host+Firefox153.0 guest, ordinaryGeneralcombatdefeat, guestreload/reconnect, synchronizedvictory, consensusrematch andbothmenus; errors0. Servedcurrent20modulebundle index-BQc6lscV.js SHA48de160de21a0baa7d84b9ff447e28f162dba5573926efd98b01ee72afd1cc4b/141864bytes matches temporaryproductionbuild. Delta combat54.904s/peer victorytick555; Coast27.899s/tick592. Each ownedisolatedserver healthyrooms0 before/after, closedlisteningfalse, no productionservice restart. See docs/qa/candidate-match-028/ and coast/ receipts. This is localmechanicalcandidatecoverage, not publicHTTPS/WAN/externaldevice/finalacceptedart certification. No retry/gameplay changes.
 
 
+## Current human motion feedback032 and next direction pilot
+
+The human viewed the actual South/D1 wood-gather APNG and replied: “Tự nhiên và đủ mượt, tiếp tục workflow này”. Exact subject hash and bounded scope are recorded in `docs/art/pipeline/owner-motion-review-032/review.json`. Naturalness at the shown gameplay size is accepted for this loop;026's original SAMPLES_ONLY independent receipt remains unchanged. No measured world foot lock, full roster or public production approval is claimed.
+
+Next033 is one bounded D0/worldE/screenESE villager walk pilot using its already locked realistic illustration, the same fixed family pivot/export framework, controlled contact/passing keys before inbetweens. Guides and the two-contact-key finite order are prepared and briefly parent-selected in `villager-walk-ESE-033/parent-selection.json`; image calls remain UNCALLED. No broader directions/units or new limb textures/3D. Inspect the live033 worker and lease before starting a call.
+
+Coast offline lifecycle031 now PASSES: normal AI defeated the idle human General at tick3652/182.6 seconds, result screen and return menu worked with navigator offline throughout,17/17 art and12/12 portraits ready, zero page errors/failed requests. Together with Delta030 this proves local offline completed-loss/menu flows on both maps; it does not prove candidate human victories or public final-art acceptance. Exact temporary bundle/HTML/manifest/atlas pins match026/030. Interrupted first attempt and missing-temp-build preflight remain preserved; actual attempt-2 browser/server closed, rooms0/listeningfalse. See `docs/qa/candidate-ai-031/CHECKPOINT.md`. 033 preparation is terminal READY, no image call open. Production service is untouched. Full game NOT COMPLETE.
+
+---
+
 ## Current offline match checkpoint029
 
 The optional local `?art=work` candidate ran Delta against easy AI after Chromium disconnected before Single Player setup. All17 art assets and12 portraits were ready. The240-second attempt ended at tick4802 with no winner, zero page errors and zero network failures. This is a preserved strategy timeout, not a completed offline match or established runtime defect. Wood20/iron1640 and army attrition motivate a bounded adaptive-resource QA strategy; gameplay remains unchanged. Coast was not run. The original receipt lacks a final navigator sample because there was no result menu; future runs now sample it at match end too. Owned browser/server closed, rooms0. See `docs/qa/candidate-ai-029/`.
