@@ -1,0 +1,97 @@
+{
+  "status": "READY_FOR_ROOT_PUBLIC_INTAKE_ABILITY_FORT_SCOPE_PASS_WITH_GUEST_MENU_LIMIT",
+  "url": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/?art=fort",
+  "normalTLS": true,
+  "bundleSHA256": "74ebc358c14c9ea770584597e9fd5edc20c7321699acd5f5215cabfc95c5c873",
+  "runtime": "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/releases/207/runtime206",
+  "simSHA256": "4aa2bfbdb499371cd18adc4306b3ae313fe8c7410e3d4e2957a46b40e67c85a5",
+  "service": "ActiveState=active\nMainPID=510490\nWorkingDirectory=/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/releases/207/runtime206\n",
+  "online": {
+    "room": "046A16",
+    "peerBrowsers": [
+      "Chromium",
+      "Firefox"
+    ],
+    "sameExactBundleBoth": true,
+    "abilityStatus": "PASS_ACTUAL_FIRST_SECOND_LIVE_CAST",
+    "source": 6,
+    "castTick": 521,
+    "effectUntil": 799,
+    "cooldownAfterStop": 1070,
+    "impacts": [
+      {
+        "tick": 576,
+        "snapshotTick": 577,
+        "damage": 13.108174239999983,
+        "hpBefore": 360,
+        "hpAfter": 346.89182576,
+        "lastMove": 571,
+        "food": 35.38399999999846,
+        "snapshotMorale": 93.0224,
+        "terrain": {
+          "attacker": "plain",
+          "target": "plain"
+        }
+      },
+      {
+        "tick": 604,
+        "snapshotTick": 605,
+        "damage": 8.929364799999973,
+        "hpBefore": 346.89182576,
+        "hpAfter": 337.96246096000004,
+        "lastMove": 571,
+        "food": 35.159999999998384,
+        "snapshotMorale": 93.0224,
+        "terrain": {
+          "attacker": "plain",
+          "target": "plain"
+        }
+      }
+    ],
+    "mitigation": {
+      "unchangedArmor": 5,
+      "basis": "General4 + actual UnitedResistance1; plain terrain, no defense effect",
+      "beforeArmorRatio": 1.3000000000000012,
+      "secondRecentMoveTicks": 33,
+      "limit": "Post-impact snapshot morale; ratio inferred from actual hpdelts/unchanged mitigation"
+    },
+    "hostOrdinaryStopMenuDecoded0": true,
+    "guestResult": {
+      "tick": 657,
+      "winner": 1,
+      "reason": "Opponent left",
+      "ordinaryResultMenuPerformed": false
+    },
+    "originalHarnessStatus": "HOLD_LIVE_FOR_OBSERVATION_RECOVERY",
+    "errors": [],
+    "networkLimit": "Online harness pins served bundles/pageerrors; does not claim exhaustive request-failure count"
+  },
+  "fort": {
+    "status": "PASS_NARROW_DELTA_UI_FORT_BUILD_IDLE_SELECT_PAUSE_RESUME_STOP_MENU",
+    "fortId": 35,
+    "map": "delta",
+    "bundleSHA256": "74ebc358c14c9ea770584597e9fd5edc20c7321699acd5f5215cabfc95c5c873",
+    "bootPortraits": 12,
+    "menuDecodedBytes": 0,
+    "menuDecodedImages": 0,
+    "errors": [],
+    "requestFailures": []
+  },
+  "bootScope": "PASS_NORMAL_TLS_DEFAULT_AND_FOOD_UNKNOWN_DISABLED",
+  "cleanup": {
+    "rooms": 0,
+    "ownedBrowsersContextsClosed": true,
+    "productionPIDUnchanged": 510490,
+    "public185Exact": true
+  },
+  "screenshots": {
+    "actual-second-impact.png": "2d5e8767018a0a800f53cc9ffc22395185e57b6933ea859c25de63ed60066c6c",
+    "actual-ability-cooldown.png": "e7eff201a596d37769ddf38d6b13b00725cbf0a6a7deb8e8751c89e779b09876",
+    "fort/actual-stopped.png": "41a9fc2bf4e949683e075368c3c11d45388da0bdd401da21d546dcb3da00128f",
+    "fort/actual-selected-fort.png": "657caf56c17acd51f5e771b95c62eaf46e3c84e21d9e0cba46c597793cc248cb",
+    "fort/actual-paused.png": "cebc8ca6df917ad52c809a09e4180e5df9d0c29b604195ed64388f2aec679647",
+    "fort/actual-construction.png": "d05484c5305c0d27012ba9b73b8291a2f5544442f6f1e68edcbab62bc20bb38e",
+    "fort/actual-idle.png": "7dd54832031910e163480cd78b1b8499f9d5d4e04b073a6307b4af6d6cb53cba"
+  },
+  "limits": "Guest ordinaryresultMenu notperformed; originalonlineHOLD preserved; existinggrace cleanup. No fullmatch/rematch/performance/visual/motion/defaultart/fullgoal approval; no source/dist/service/build/tests/imagesgeneration/commit."
+}

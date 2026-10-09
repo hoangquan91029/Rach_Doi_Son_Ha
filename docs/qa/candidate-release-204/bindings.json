@@ -1,0 +1,167 @@
+{
+  "status": "HOLD_EXACT202_NOT_PUBLIC_PROMOTABLE_PENDING206_SOURCE_RECIPE_FILTER",
+  "head": "e740f5fb32cd8a4927096c73c75adf44027b3e64",
+  "sourceComparison": {
+    "client": {
+      "canonical": {
+        "fileCount": 21,
+        "sortedPathHashSHA256": "9f91461cdbc795943d36bc9491841ff9703ec5268b781db6ee1cdef31f7f86f3"
+      },
+      "frozen202": {
+        "fileCount": 21,
+        "sortedPathHashSHA256": "9f91461cdbc795943d36bc9491841ff9703ec5268b781db6ee1cdef31f7f86f3"
+      },
+      "exact": true
+    },
+    "shared": {
+      "canonical": {
+        "fileCount": 4,
+        "sortedPathHashSHA256": "19e466068ecdbde3a91ea66e3c87043cc36308c86275bc67ff92b762781394fd"
+      },
+      "frozen202": {
+        "fileCount": 4,
+        "sortedPathHashSHA256": "19e466068ecdbde3a91ea66e3c87043cc36308c86275bc67ff92b762781394fd"
+      },
+      "exact": true
+    },
+    "server": {
+      "canonical": {
+        "fileCount": 4,
+        "sortedPathHashSHA256": "fc2eb0f09928651c348d7d30f167068c11bc2a122b08e82831063f36d5930dab"
+      },
+      "frozen202": {
+        "fileCount": 4,
+        "sortedPathHashSHA256": "fc2eb0f09928651c348d7d30f167068c11bc2a122b08e82831063f36d5930dab"
+      },
+      "exact": true
+    },
+    "public": {
+      "canonical": {
+        "fileCount": 174,
+        "sortedPathHashSHA256": "5c07a90ba33035432273a776de9a87fd5572ab94aa3cf8b6ffcef7dd0003a104"
+      },
+      "frozen202": {
+        "fileCount": 174,
+        "sortedPathHashSHA256": "5c07a90ba33035432273a776de9a87fd5572ab94aa3cf8b6ffcef7dd0003a104"
+      },
+      "exact": true
+    }
+  },
+  "rootFiles": {
+    "package.json": "3536014301bfcbdb4855f35168be9b27827b443945d10aec6573d822db15d907",
+    "package-lock.json": "1cab4a7dfd369b1b1efcb9db23d8d47b5c665fada1bc6d0e6d28f12baec28a5d",
+    "vite.config.js": "18fc6a1c5544b54f954ce0779837c23695e29ca485f5c8de5a1cf03dddeb046d",
+    "index.html": "3621e1cd40170bd1e89b5248f6496ff3b92c760b438e592720214ea95670fcf0"
+  },
+  "candidate": {
+    "stage": "/tmp/rds-fort202",
+    "dist": "/tmp/rds-fort202/candidate-dist",
+    "build": {
+      "fileCount": 177,
+      "sortedPathHashSHA256": "85f7687e3e7b7cfb757979e18f57d46a0a17f17a6bbe2e0d20ce33b24bce975a"
+    },
+    "bundle": "assets/index-iQCXjwRZ.js",
+    "bundleSHA256": "796ff1233753271368472ebda6c88cc1f39965ddf9df37bb64983a377e7d83f5",
+    "mainSHA256": "a207956423016123ec2e6b12c32918dc9685fd226fb4d901fe10a6e32169cc82",
+    "simSHA256": "4aa2bfbdb499371cd18adc4306b3ae313fe8c7410e3d4e2957a46b40e67c85a5",
+    "serverSHA256": "4e6a7e82f02d1d856f4ea788863c4836930bc00250be6a5b020ba2bdd8884198",
+    "publicationExclusions": {
+      "assets/art-v1/food-099-manifest.json": "d4ae1b557334120604ee7e648804917a8cc50ec1ed1624b84ec833bbf5b44104",
+      "assets/art-v1/food-099/atlas.png": "66d641fee006cff56b42e88619bbf9c87900224faa104ac9054a9dd3aef0b73a"
+    },
+    "derivedPublishInventory": {
+      "fileCount": 175,
+      "sortedPathHashSHA256": "933e56013c874f9323652d249a25bfcc16dcde836a94ba16b6e6657673049f33",
+      "status": "ANALYSIS_ONLY_INSUFFICIENT_DO_NOT_PROMOTE"
+    },
+    "defaultDisabled": true,
+    "D0pilot195Absent": true,
+    "publicRouteBlocker": "202 art-routes still registers pending food recipe; byte deletion alone leaves broken enabled route.206 must remove only food recipe in isolated public-stage source and build fresh;202 bundle cannot be claimed finalpublic bundle."
+  },
+  "active": {
+    "service": "rach-doi-son-ha.service",
+    "pid": 157023,
+    "workingDirectory": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+    "node": "/home/kieu-hoang-quan/.nvm/versions/node/v24.15.0/bin/node",
+    "env": {
+      "NODE_ENV": "production",
+      "HOST": "127.0.0.1",
+      "PORT": "3000",
+      "MAX_ROOMS": "8",
+      "MAX_CONNECTIONS": "32"
+    },
+    "unitSHA256": "04ce22ebb38727aa3ee82e3314cdf421c9b90ccadb339bafa2e7838f19cddca5",
+    "public149": {
+      "fileCount": 179,
+      "sortedPathHashSHA256": "8cd6a69a7c52c80bb2cfacba5ec0a768d99b74f438afd3148673703338b07852"
+    },
+    "TLS": {
+      "normalCertificateVerification": true,
+      "indexSHA256": "caa893338db5c86cb7cdd99c75fb80bfe39e70baf9958a7e3a626e9ed153fae1",
+      "chunk": "/assets/index-05PkH4eu.js",
+      "bundleSHA256": "70808200c04fa3547aa4204a0baa6e04546f6d9206c93667ee4c3edf7556883b",
+      "health": {
+        "ok": true,
+        "rooms": 0
+      }
+    },
+    "loadedSimEvidence": "149 preserved source custody + unchanged process since149; process memory module bytes are not independently recoverable from /proc",
+    "loadedSimSHA256": "28e37b63ee39bbe1440741fa0afed3d9f20797831f666c0ff03d8299a8eb609c",
+    "dropInPaths": [],
+    "environmentFiles": [],
+    "wsVersion": "8.22.0"
+  },
+  "rollback": {
+    "complete179ArchiveExists": false,
+    "exactReconstruction": {
+      "base": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/cavalry-camp-public-149/source-stage/dist",
+      "baseInventory": {
+        "fileCount": 170,
+        "sortedPathHashSHA256": "9d8b975833eb375cd1e3d5a86dd45f358c2310b48658c50a99e1ba09a8490641"
+      },
+      "retainedFrom": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/cavalry-camp-public-149/dist145-rollback",
+      "retainedFiles": {
+        "assets/index-CLF1gZiY.js": "e101219382588201783f2a7afef1a83a0286a66cb22a80b360a92c9e7abcf518",
+        "assets/index-BMWX7K9H.js": "4ce3127451d77e7fb12a7cba023ab8a58603125207244bf2395d31c493582a3a",
+        "assets/index-BLdPSJwj.js": "583464ffd814c3fe8650d1247a5c4df93562421ca819fb4bf54926a28a9b180a",
+        "assets/index-DjXL80h8.js": "7f85447da25868ab62a0a473e73d6f9a857c4faa0677c877738a7b2e20425676",
+        "assets/index-BSDEdwS3.js": "9670fe5292e9028ceac9b50a018303696891fabb4671b2f68cbb64a465996a82",
+        "assets/index-CRkcHzq0.js": "cf24119739dbdaecf470bb2dc3589c8d5b377c89a213ed7c8f38d6e8cc058532",
+        "assets/index-Ct9S0o8d.css": "609eea0ea9a685c321e374d7eae66500d78b961479c48ad7889afe09a5b60bcb",
+        "assets/index-B95VwaEY.js": "e2645a906c9bcceaf0a0882afe9701f6bffaf225d38375e45ebdb7965f3e9d63",
+        "assets/index-ByZVQkbs.js": "f85cdd520aa1fc133fe98eb2542a917600206fa27fa9dd16ca1e591fef3ea3e7"
+      }
+    },
+    "oldRunnableSource": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/cavalry-camp-public-149/source-stage",
+    "moduleHashes": {
+      "shared/sim.js": "28e37b63ee39bbe1440741fa0afed3d9f20797831f666c0ff03d8299a8eb609c",
+      "shared/visible-action.js": "380d1d29e76b004fdde29713cd2e6e87ea3cfba5f9c454fb3554a471f4a60063",
+      "shared/data.js": "ffc3f45adc58f212066d3763c591377ce15b9f6ac78e4685a95fc3ac747818e1",
+      "server/Dockerfile": "5f334ec874ae18f3f9e68880bb3905841933e7f7f13cd8ee94fe7614103af59d",
+      "server/DEPLOY.md": "a5224eb65e088eca0404ef53cc4fcc71f3334ec1696c39586546817bbae508c5",
+      "server/index.js": "4e6a7e82f02d1d856f4ea788863c4836930bc00250be6a5b020ba2bdd8884198",
+      "server/benchmark-network.js": "8e6c79667f1c3a46990148c00476d202555809b2d6b117d11a3a7cbc272ea455"
+    },
+    "wsResolution": "Existing repo node_modules/ws via parent module resolution; package-lock pinned",
+    "old145Archive": {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/cavalry-camp-public-149/rollback-dist145.tar.gz",
+      "sha256": "0a582bf2cd41ad8745012fcc8c32ad63b7fe53c25771eb557e4b2e6982ca1941",
+      "is179Rollback": false
+    },
+    "sourceDependencyClosure": [
+      "server/index.js",
+      "shared/sim.js",
+      "shared/data.js",
+      "shared/visible-action.js",
+      "package.json"
+    ],
+    "dependencyCaution": "Current node_modules/ws is8.22.0; symlink is runtime dependency, not immutable custody. Freeze/pin dependency bytes in207; historical loaded dependency bytes not proven from process memory."
+  },
+  "requiredBeforeMutation": [
+    "NEW206 source-derived publicstage must omit food recipe AND pending bytes, fresh isolated build and exact bindings/relevant checks; canonical stays unchanged",
+    "Materialize/freeze complete179 olddist plus old shared/server/package source into one runnable rollback release; verify hash inventory before any stop/exchange",
+    "Prepare derived202 publish tree excluding pending food0992files; verify unchanged bundle and all remaining exact202 bytes",
+    "Recheck health rooms0 immediately before stop/restart; stop if rooms>0 or source/build/publicpins changed"
+  ],
+  "limits": "No deployment/restart/browser/tests/images/commit; original202 inventory retained, derived publication tree not created; no graphics/default release/fullgoal acceptance"
+}

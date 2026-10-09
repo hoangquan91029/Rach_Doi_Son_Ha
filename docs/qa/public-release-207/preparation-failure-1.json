@@ -1,0 +1,5 @@
+{
+  "status": "STOPPED_BEFORE_PREPARATION_MUTATIONS",
+  "cause": "206 oldinventorykeys repo-relative dist/ prefix vs207 dist-relative keys; equalityguard stopped, no source/service/dist mutation",
+  "fix": "Explicitly require and remove dist/ prefix before comparing complete179 inventory; guards retained"
+}
