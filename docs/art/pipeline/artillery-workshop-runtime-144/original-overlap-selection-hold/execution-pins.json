@@ -1,0 +1,34 @@
+{
+  "status": "HOLD_SPAWNED_ARTILLERY_SELECTION_OVERLAP",
+  "stage": "/tmp/rdsh-workshop144-b1jo4_zy",
+  "baselineFiles": 210,
+  "baselineChanges": {
+    "client/raster-slice.js": {
+      "baseline": "caf142c5d665fe1ef937f75eaa62d3bf36f8c7af659ecbcdc1916368b6beb8cb",
+      "candidate": "fbea843b6740ebc880e5df7d66084ae4f42e972bf5dbb9d8c970a11b42b4c191"
+    }
+  },
+  "changedAndAddedPins": {
+    "client/raster-slice.js": "fbea843b6740ebc880e5df7d66084ae4f42e972bf5dbb9d8c970a11b42b4c191",
+    "tests/workshop144.test.js": "40276059fd34acce0bf0d62ee2bfcbdea1079f2deba34f6de3b3af00ad5e2645",
+    "public/assets/art-v1/workshop-144-manifest.json": "27b5c45011e28c92da215a192189c381bfc44253e5a92ecc5db399001da26197",
+    "public/assets/art-v1/artillery-workshop-144/idle.webp": "c433803486dcf9fc954569741fa6d98e6cb5c0acdc1e65a284cbbc186ac95430"
+  },
+  "unchangedBaselineCount": 209,
+  "sharedDataSHA": "ffc3f45adc58f212066d3763c591377ce15b9f6ac78e4685a95fc3ac747818e1",
+  "sharedSimSHA": "28e37b63ee39bbe1440741fa0afed3d9f20797831f666c0ff03d8299a8eb609c",
+  "contracts": {
+    "pass": 11,
+    "fail": 0
+  },
+  "bundle": {
+    "index-DeHmolNa.js": "294979ae084a57a072606c3c0c23df3480e86db4ea2720d2e6449bff3af0165e"
+  },
+  "profile": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low"
+  },
+  "imageCalls": 0,
+  "browserTrials": 1,
+  "retries": 0
+}

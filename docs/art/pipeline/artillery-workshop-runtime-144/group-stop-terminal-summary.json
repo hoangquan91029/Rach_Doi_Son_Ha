@@ -1,0 +1,62 @@
+{
+  "status": "PASS_NARROW_ACTUAL_BUILD_IDLE_SELECT_TRAIN_PAUSE_RESUME_F2_GROUP_STOP_MENU",
+  "stage": "/tmp/rdsh-workshop144-b1jo4_zy",
+  "originalIndividualClickHoldPreserved": "original-overlap-selection-hold/",
+  "originalHoldUnchanged": true,
+  "newAuthorization": "ONE separate QA-only F2 groupStop proof",
+  "imageCalls": 0,
+  "runtimeChangesFromFrozenCandidate": 0,
+  "passed": {
+    "ready": 25,
+    "portraits": 12,
+    "constructionTick": 14,
+    "idleTick": 325,
+    "workshopId": 35,
+    "exactWorkshopSelection": [
+      35
+    ],
+    "opaqueClickRuntimePixel": [
+      128,
+      171
+    ],
+    "opaqueClickAlpha": 253,
+    "queueTick": 342,
+    "spawnTick": 780,
+    "spawnedArtilleryId": 51,
+    "pausedTick": 785,
+    "resumedTick": 787,
+    "F2CurrentLiveMilitaryIds": [
+      13,
+      14,
+      15,
+      16,
+      51
+    ],
+    "actualSelection": [
+      13,
+      14,
+      15,
+      16,
+      51
+    ],
+    "groupStopTick": 794,
+    "spawnedArtilleryIdle": "idle",
+    "menu": true
+  },
+  "cleanup": {
+    "rooms": 0,
+    "listening": false,
+    "browserClosed": true
+  },
+  "errors": [],
+  "networkFailures": [],
+  "scope": "Narrow Workshop completed-idle runtime and ordinary current military groupStop",
+  "notApproval": [
+    "soloArtilleryAlphaPicking",
+    "constructionArtwork",
+    "otherStates",
+    "unitArtwork",
+    "publicPromotion",
+    "fullMatch"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "smallContractsPassed": 4,
+  "contracts": [
+    "workshop144.test.js",
+    "iron137.test.js"
+  ],
+  "freshBuild": "PASS",
+  "explicitScopeDifferences": [
+    {
+      "path": "client/raster-slice.js",
+      "approvedSHA": "fbea843b6740ebc880e5df7d66084ae4f42e972bf5dbb9d8c970a11b42b4c191",
+      "publicStageSHA": "d6a5770f97579a9d053bac973b0323f0bf0c3860a2b588aa970fc3e9895e47e1"
+    },
+    {
+      "path": "public/assets/art-v1/food-099/atlas.png",
+      "approvedSHA": "66d641fee006cff56b42e88619bbf9c87900224faa104ac9054a9dd3aef0b73a",
+      "publicStageSHA": null
+    },
+    {
+      "path": "public/assets/art-v1/food-099-manifest.json",
+      "approvedSHA": "d4ae1b557334120604ee7e648804917a8cc50ec1ed1624b84ec833bbf5b44104",
+      "publicStageSHA": null
+    }
+  ],
+  "canonicalWrites": 0,
+  "gitWrites": 0,
+  "topDocsWrites": 0,
+  "imageCalls": 0,
+  "apiCalls": 0,
+  "serviceRestart": false,
+  "original144OverlapHoldPreserved": true
+}

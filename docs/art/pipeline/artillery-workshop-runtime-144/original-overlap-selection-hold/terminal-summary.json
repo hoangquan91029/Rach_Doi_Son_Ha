@@ -1,0 +1,54 @@
+{
+  "status": "HOLD_SPAWNED_ARTILLERY_SELECTION_OVERLAP",
+  "stage": "/tmp/rdsh-workshop144-b1jo4_zy",
+  "oneTrial": true,
+  "retries": 0,
+  "imageCalls": 0,
+  "runtimeChangedOnly": "client/raster-slice.js",
+  "contractsPass": 11,
+  "passed": {
+    "ready": 25,
+    "portraits": 12,
+    "constructionTick": 14,
+    "idleTick": 325,
+    "workshopId": 35,
+    "exactWorkshopSelection": [
+      35
+    ],
+    "opaqueClickRuntimePixel": [
+      128,
+      171
+    ],
+    "opaqueClickAlpha": 253,
+    "queueTick": 340,
+    "spawnTick": 778,
+    "spawnedArtilleryId": 51,
+    "pausedTick": 783,
+    "resumedTick": 785
+  },
+  "hold": {
+    "expectedSelection": [
+      51
+    ],
+    "actualSelection": [
+      35
+    ],
+    "StopUncalled": true,
+    "MenuUncalled": true,
+    "failure": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n+   35\n-   51\n  ]\n\n    at file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/artillery-workshop-runtime-144/browser-check.mjs:4:4249\n    at runNextTicks (node:internal/process/task_queues:65:5)\n    at process.processImmediate (node:internal/timers:472:9)"
+  },
+  "cleanup": {
+    "rooms": 0,
+    "listening": false,
+    "browserClosed": true
+  },
+  "errors": [],
+  "networkFailures": [],
+  "notApproval": [
+    "fullLifecycle",
+    "publicPromotion",
+    "constructionArtwork",
+    "otherStates",
+    "unitArtwork"
+  ]
+}
