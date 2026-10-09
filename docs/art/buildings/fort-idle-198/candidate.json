@@ -1,0 +1,151 @@
+{
+  "schema": "rds-whole-building-candidate/v1",
+  "id": "fort-idle-198",
+  "family": "building.fort",
+  "kind": "building",
+  "state": "idle",
+  "direction": null,
+  "candidate": true,
+  "review": {
+    "status": "IDLE_SOURCE_GAME_SIZE_INTAKE_ACCEPTED",
+    "visualAccepted": true,
+    "installed": false,
+    "sceneAccepted": false
+  },
+  "source": {
+    "path": "raw.png",
+    "sha256": "e23437fe75e865a0df1a1f1c26d61a01f03b6d236c4f41fd2daf9fc3435d67f9",
+    "rgbaSha256": "701662766689f5f44722bd96465b1f5c6957e82ce704b20b5eb3bd25da17b809",
+    "width": 1254,
+    "height": 1254,
+    "bbox": [
+      0,
+      0,
+      1254,
+      1254
+    ],
+    "alphaExtrema": [
+      0,
+      255
+    ]
+  },
+  "working": {
+    "path": "working.png",
+    "sha256": "3364ee681825eade11e980c35218a4d11560dc5d9a31a46abde7263edb1bfc76",
+    "rgbaSha256": "6835d90e3dc4a28f44c5a7010b94e4f08c5196b3f7b3b5847cff0a4835b87002",
+    "width": 512,
+    "height": 512,
+    "bbox": [
+      0,
+      21,
+      512,
+      504
+    ],
+    "alphaExtrema": [
+      0,
+      255
+    ]
+  },
+  "runtime": {
+    "path": "runtime.png",
+    "sha256": "8e4080facf13d77879d03e88336e8817c657d7a40b220e2b94a53e47a7bdf7b3",
+    "rgbaSha256": "0bd54325f539bcc86f8c64291d210438d27b87ddd7198226536a94b3736aa57d",
+    "width": 256,
+    "height": 256,
+    "bbox": [
+      3,
+      19,
+      256,
+      228
+    ],
+    "alphaExtrema": [
+      0,
+      255
+    ],
+    "derivation": {
+      "method": "resize",
+      "filter": "lanczos",
+      "sourceSha256": "e23437fe75e865a0df1a1f1c26d61a01f03b6d236c4f41fd2daf9fc3435d67f9",
+      "wholeCanvas": true,
+      "crop": false,
+      "fit": false
+    }
+  },
+  "cell": {
+    "width": 256,
+    "height": 256
+  },
+  "pivot": {
+    "x": 627,
+    "y": 1010,
+    "space": "source",
+    "status": "PROVISIONAL_REFERENCE_FAMILY_BASE_CENTER_NEEDS_ACTUAL_SCENE_INTAKE"
+  },
+  "render": {
+    "width": 112,
+    "height": 112
+  },
+  "contactShadow": {
+    "mode": "baked"
+  },
+  "alphaPolicy": "transparent",
+  "frames": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 1000
+    }
+  ],
+  "loop": true,
+  "preview": [
+    {
+      "path": "preview-112.png",
+      "sha256": "20e0575d0ff30bafdb29869114ddb79785ac2842f0902609a56d324b1889be55",
+      "rgbaSha256": "104a354046b44a159940180bf877c943f06e15eefefde47f61759a717b2f54b9",
+      "width": 112,
+      "height": 112,
+      "bbox": [
+        0,
+        13,
+        112,
+        101
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "preview-default-121.png",
+      "sha256": "fcbdc818b9adad3b61a34c602311edb6cecc139a54f965fd666a69831a3c5516",
+      "rgbaSha256": "a74f710b39d8281d43a47945330b03ebb77e896cb2cd50f800dc3b1a8026afcb",
+      "width": 121,
+      "height": 121,
+      "bbox": [
+        0,
+        14,
+        121,
+        109
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    }
+  ],
+  "layoutReason": "Whole compact defensive fort candidate; same whole1254family transform512working/256runtime/112logicalcell. Idle only, otherstates unresolved.",
+  "runtimeWebp": {
+    "path": "runtime.webp",
+    "sha256": "4eeb89fa9edb880de8909cdc2ed653506334928b950c6f024d230a8555978ef9",
+    "lossless": true,
+    "rgbaIdenticalToRuntimePNG": true
+  },
+  "unresolvedStates": [
+    "construction",
+    "attack",
+    "hit",
+    "death"
+  ]
+}

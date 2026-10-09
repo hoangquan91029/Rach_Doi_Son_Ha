@@ -6,7 +6,7 @@ export function drawTerrainPropFallback(renderer,ctx,prop,zoom){const p=renderer
 export function hillGroundPlacements(state,ready){
  if(!ready||!state?.map?.tiles||!state.fog?.visible)return [];
  const {width,height,tiles}=state.map,visible=state.fog.visible,out=[];
- for(let y=0;y+1<height;y+=2)for(let x=0;x+1<width;x+=2){const indices=[y*width+x,y*width+x+1,(y+1)*width+x,(y+1)*width+x+1];if(indices.every(i=>tiles[i]==='hill'&&Boolean(visible[i])))out.push({type:'hill',x:x+1,y:y+1,key:`hill:${x}:${y}`});}
+ for(let y=0;y<height;y+=2)for(let x=0;x<width;x+=2){const cells=[];for(let yy=y;yy<Math.min(y+2,height);yy++)for(let xx=x;xx<Math.min(x+2,width);xx++){const i=yy*width+xx;if(tiles[i]==='hill'&&Boolean(visible[i]))cells.push({x:xx,y:yy});}if(cells.length)out.push({type:'hill',x:x+1,y:y+1,key:`hill:${x}:${y}`,cells});}
  return out;
 }
 

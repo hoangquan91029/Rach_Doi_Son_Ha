@@ -1,0 +1,7 @@
+#203 actual first-strike scene
+
+Reused199 exact bundle8b64ce9220fae97d5e488a33263adf1144742e2dddd67712395a8f6c658662f1 and186 sim4aa2…85a5. Both Chromium/Firefox ordinary online peers loaded this bundle. Nguyễn Huệ selected in lobby; ordinary movement/Hold, visible living opponent General, real Tết Thunderbolt button, one infantry ordinary attack, two impacts, ordinary Stop. Empty-ground clear/selection0/fresh living owner/exactID guards resolved200 harness mismatch.199/200 failures remain preserved. One203 room only, no recovery/replay required.
+
+Cast source6 observed tick528, cooldown1198 and live effect until806. First infantry13 impact579 after lastMove574 changed General23 HP360→346.89182576 (13.10817424). Stationary second607 changed HP→337.96246096 (8.92936480), same lastMove574, same live cast. Both attacker/target plain, normal rations, identical snapshot morale93.0224 and unchanged target armor5 (General4 + actual UnitedResistance1). Adding unchanged armor to both actual health deltas gives ratio1.3 exactly. Second is still33 ticks since movement, within40, so its normal damage demonstrates no repeat boost from the same cast. Post-impact snapshot morale is not claimed exact-impact capture.
+
+Receipt/source/build pins and actual-ability-cooldown.png/actual-second-impact.png bind actual scene. Errors0, cooldown remained1078. Both contexts/browsers/server closed, rooms0, all179 public149 files exact. No new build/test/image/source/service/commit action. No fullmatch, rematch, visual/motion/default-art/public release claim.

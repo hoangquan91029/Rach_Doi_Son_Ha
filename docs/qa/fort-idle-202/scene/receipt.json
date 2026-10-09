@@ -1,0 +1,983 @@
+{
+  "status": "PASS_NARROW_DELTA_UI_FORT_BUILD_IDLE_SELECT_PAUSE_RESUME_STOP_MENU",
+  "method": "Ordinary UI mouse/keyboard only; diagnostics read-only; no command/state/facing/speed injection",
+  "errors": [],
+  "failures": [],
+  "bundleSHA": "796ff1233753271368472ebda6c88cc1f39965ddf9df37bb64983a377e7d83f5",
+  "boot": {
+    "mode": null,
+    "localPlayer": 0,
+    "roomCode": null,
+    "paused": false,
+    "artLoading": false,
+    "camera": {
+      "x": 24,
+      "y": 24,
+      "zoom": 1
+    },
+    "selection": [],
+    "tick": null,
+    "pingMs": null,
+    "frameMs": 0,
+    "bootUi": {
+      "declared": 12,
+      "ready": 12,
+      "failures": [],
+      "fontWarnings": []
+    },
+    "art": {
+      "enabled": true,
+      "phase": "CANDIDATE",
+      "quality": "PLACEHOLDER_ONLY",
+      "groundDraws": 0,
+      "propDraws": 0,
+      "entityDraws": 0,
+      "walkDraws": 0,
+      "idleDraws": 0,
+      "lastWalk": null,
+      "gatherDraws": 0,
+      "lastGather": null,
+      "missing": [],
+      "pipeline": {
+        "status": "PLACEHOLDER_ONLY",
+        "manifest": "not-loaded",
+        "declared": 0,
+        "ready": 0,
+        "approved": 0,
+        "candidates": 0,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 0,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 0,
+        "encodedReady": 0,
+        "retainedEncodedBytes": 0,
+        "encodedBudgetBytes": 67108864,
+        "selectedDeclared": 0,
+        "failures": []
+      }
+    },
+    "artBank": {
+      "phase": "menu",
+      "epoch": 1,
+      "encodedBytes": 3904788,
+      "encodedBudgetBytes": 67108864,
+      "activeIds": [],
+      "scope": null
+    },
+    "terrainCache": {
+      "builds": 0,
+      "draws": 0,
+      "pixels": 0
+    },
+    "displayedState": null
+  },
+  "map": "delta",
+  "workerId": 7,
+  "site": {
+    "x": 5.5,
+    "y": 19.5,
+    "d": 2.8284271247461903,
+    "tile": "plain",
+    "visible": true
+  },
+  "preflightResources": {
+    "wood": 550,
+    "food": 809.7681600000004,
+    "iron": 260
+  },
+  "placementClick": {
+    "x": 5,
+    "y": 19,
+    "reason": "UI rounds before simulation floor+half; integer click targets planned actualcenter"
+  },
+  "construction": {
+    "tick": 29,
+    "mode": "offline",
+    "paused": false,
+    "localPlayer": 0,
+    "selection": [
+      7
+    ],
+    "camera": {
+      "x": 5.496875,
+      "y": 19.5,
+      "zoom": 1.08
+    },
+    "art": {
+      "enabled": true,
+      "phase": "CANDIDATE",
+      "quality": "PLACEHOLDER_ONLY",
+      "groundDraws": 3072,
+      "propDraws": 885,
+      "entityDraws": 1169,
+      "walkDraws": 0,
+      "idleDraws": 0,
+      "lastWalk": null,
+      "gatherDraws": 0,
+      "lastGather": null,
+      "missing": [
+        {
+          "key": "fort:construction",
+          "reason": "No authored construction sequence",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:2",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:5",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        }
+      ],
+      "pipeline": {
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 28,
+        "ready": 28,
+        "approved": 0,
+        "candidates": 28,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 17466880,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 28,
+        "encodedReady": 0,
+        "retainedEncodedBytes": 3904788,
+        "encodedBudgetBytes": 67108864,
+        "selectedDeclared": 28,
+        "failures": []
+      },
+      "hillDraws": 0,
+      "foodResourceDraws": 168,
+      "ironResourceDraws": 84
+    },
+    "bootUi": {
+      "declared": 12,
+      "ready": 12,
+      "failures": [],
+      "fontWarnings": []
+    },
+    "resources": {
+      "wood": 370,
+      "food": 808.6553280000024,
+      "iron": 160
+    },
+    "entities": [
+      {
+        "id": 7,
+        "owner": 0,
+        "type": "villager",
+        "kind": "unit",
+        "x": 7.493553322348588,
+        "y": 21.71090589098767,
+        "hp": 65,
+        "maxHp": 65,
+        "food": 40,
+        "foodMax": 40,
+        "morale": 95,
+        "state": "walk",
+        "dir": 5,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "resuppliedTick": 29,
+        "starving": 0,
+        "lastMovedTick": 29,
+        "order": {
+          "type": "build",
+          "target": 35
+        }
+      },
+      {
+        "id": 35,
+        "owner": 0,
+        "type": "fort",
+        "kind": "building",
+        "x": 5.5,
+        "y": 19.5,
+        "hp": 150,
+        "maxHp": 1250,
+        "food": 0,
+        "foodMax": 0,
+        "morale": 95,
+        "state": "idle",
+        "dir": 0,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "spentCost": {
+          "wood": 180,
+          "food": 0,
+          "iron": 100
+        },
+        "construction": {
+          "remaining": 25,
+          "total": 25,
+          "builder": 7
+        },
+        "order": null
+      }
+    ]
+  },
+  "idle": {
+    "tick": 537,
+    "mode": "offline",
+    "paused": false,
+    "localPlayer": 0,
+    "selection": [
+      7
+    ],
+    "camera": {
+      "x": 5.496875,
+      "y": 19.5,
+      "zoom": 1.08
+    },
+    "art": {
+      "enabled": true,
+      "phase": "CANDIDATE",
+      "quality": "PLACEHOLDER_ONLY",
+      "groundDraws": 3072,
+      "propDraws": 23730,
+      "entityDraws": 20970,
+      "walkDraws": 0,
+      "idleDraws": 0,
+      "lastWalk": null,
+      "gatherDraws": 0,
+      "lastGather": null,
+      "missing": [
+        {
+          "key": "fort:construction",
+          "reason": "No authored construction sequence",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:2",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:5",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:build:5",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        }
+      ],
+      "pipeline": {
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 28,
+        "ready": 28,
+        "approved": 0,
+        "candidates": 28,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 17466880,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 28,
+        "encodedReady": 0,
+        "retainedEncodedBytes": 3904788,
+        "encodedBudgetBytes": 67108864,
+        "selectedDeclared": 28,
+        "failures": []
+      },
+      "hillDraws": 0,
+      "foodResourceDraws": 3214,
+      "ironResourceDraws": 1607
+    },
+    "bootUi": {
+      "declared": 12,
+      "ready": 12,
+      "failures": [],
+      "fontWarnings": []
+    },
+    "resources": {
+      "wood": 370,
+      "food": 788.4388800000391,
+      "iron": 160
+    },
+    "entities": [
+      {
+        "id": 7,
+        "owner": 0,
+        "type": "villager",
+        "kind": "unit",
+        "x": 6.611140410482181,
+        "y": 21.16293914145813,
+        "hp": 65,
+        "maxHp": 65,
+        "food": 36.6615039999989,
+        "foodMax": 40,
+        "morale": 95,
+        "state": "build",
+        "dir": 5,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "resuppliedTick": 33,
+        "starving": 0,
+        "lastMovedTick": 39,
+        "order": null
+      },
+      {
+        "id": 35,
+        "owner": 0,
+        "type": "fort",
+        "kind": "building",
+        "x": 5.5,
+        "y": 19.5,
+        "hp": 1250,
+        "maxHp": 1250,
+        "food": 0,
+        "foodMax": 0,
+        "morale": 95,
+        "state": "idle",
+        "dir": 0,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "spentCost": {
+          "wood": 180,
+          "food": 0,
+          "iron": 100
+        },
+        "construction": null,
+        "order": null
+      }
+    ]
+  },
+  "selectionPoint": {
+    "x": 640.091125,
+    "y": 383.8455625
+  },
+  "selected": {
+    "tick": 551,
+    "mode": "offline",
+    "paused": false,
+    "localPlayer": 0,
+    "selection": [
+      35
+    ],
+    "camera": {
+      "x": 5.496875,
+      "y": 19.5,
+      "zoom": 1.08
+    },
+    "art": {
+      "enabled": true,
+      "phase": "CANDIDATE",
+      "quality": "PLACEHOLDER_ONLY",
+      "groundDraws": 3072,
+      "propDraws": 24375,
+      "entityDraws": 21572,
+      "walkDraws": 0,
+      "idleDraws": 0,
+      "lastWalk": null,
+      "gatherDraws": 0,
+      "lastGather": null,
+      "missing": [
+        {
+          "key": "fort:construction",
+          "reason": "No authored construction sequence",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:2",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:5",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:build:5",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:idle:5",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        }
+      ],
+      "pipeline": {
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 28,
+        "ready": 28,
+        "approved": 0,
+        "candidates": 28,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 17466880,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 28,
+        "encodedReady": 0,
+        "retainedEncodedBytes": 3904788,
+        "encodedBudgetBytes": 67108864,
+        "selectedDeclared": 28,
+        "failures": []
+      },
+      "hillDraws": 0,
+      "foodResourceDraws": 3300,
+      "ironResourceDraws": 1650
+    },
+    "bootUi": {
+      "declared": 12,
+      "ready": 12,
+      "failures": [],
+      "fontWarnings": []
+    },
+    "resources": {
+      "wood": 370,
+      "food": 787.8824640000402,
+      "iron": 160
+    },
+    "entities": [
+      {
+        "id": 7,
+        "owner": 0,
+        "type": "villager",
+        "kind": "unit",
+        "x": 6.611140410482181,
+        "y": 21.16293914145813,
+        "hp": 65,
+        "maxHp": 65,
+        "food": 36.56876799999887,
+        "foodMax": 40,
+        "morale": 95,
+        "state": "idle",
+        "dir": 5,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "resuppliedTick": 33,
+        "starving": 0,
+        "lastMovedTick": 39,
+        "order": null
+      },
+      {
+        "id": 35,
+        "owner": 0,
+        "type": "fort",
+        "kind": "building",
+        "x": 5.5,
+        "y": 19.5,
+        "hp": 1250,
+        "maxHp": 1250,
+        "food": 0,
+        "foodMax": 0,
+        "morale": 95,
+        "state": "idle",
+        "dir": 0,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "spentCost": {
+          "wood": 180,
+          "food": 0,
+          "iron": 100
+        },
+        "construction": null,
+        "order": null
+      }
+    ]
+  },
+  "selectionHUD": "Fort\n100% strength\nidle · morale 95\nCargo empty\nGrid 5, 19",
+  "paused": {
+    "tick": 557,
+    "mode": "offline",
+    "paused": true,
+    "localPlayer": 0,
+    "selection": [
+      35
+    ],
+    "camera": {
+      "x": 5.496875,
+      "y": 19.5,
+      "zoom": 1.08
+    },
+    "art": {
+      "enabled": true,
+      "phase": "CANDIDATE",
+      "quality": "PLACEHOLDER_ONLY",
+      "groundDraws": 3072,
+      "propDraws": 24630,
+      "entityDraws": 21810,
+      "walkDraws": 0,
+      "idleDraws": 0,
+      "lastWalk": null,
+      "gatherDraws": 0,
+      "lastGather": null,
+      "missing": [
+        {
+          "key": "fort:construction",
+          "reason": "No authored construction sequence",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:2",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:5",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:build:5",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:idle:5",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        }
+      ],
+      "pipeline": {
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 28,
+        "ready": 28,
+        "approved": 0,
+        "candidates": 28,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 17466880,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 28,
+        "encodedReady": 0,
+        "retainedEncodedBytes": 3904788,
+        "encodedBudgetBytes": 67108864,
+        "selectedDeclared": 28,
+        "failures": []
+      },
+      "hillDraws": 0,
+      "foodResourceDraws": 3334,
+      "ironResourceDraws": 1667
+    },
+    "bootUi": {
+      "declared": 12,
+      "ready": 12,
+      "failures": [],
+      "fontWarnings": []
+    },
+    "resources": {
+      "wood": 370,
+      "food": 787.6440000000406,
+      "iron": 160
+    },
+    "entities": [
+      {
+        "id": 7,
+        "owner": 0,
+        "type": "villager",
+        "kind": "unit",
+        "x": 6.611140410482181,
+        "y": 21.16293914145813,
+        "hp": 65,
+        "maxHp": 65,
+        "food": 36.529023999998856,
+        "foodMax": 40,
+        "morale": 95,
+        "state": "idle",
+        "dir": 5,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "resuppliedTick": 33,
+        "starving": 0,
+        "lastMovedTick": 39,
+        "order": null
+      },
+      {
+        "id": 35,
+        "owner": 0,
+        "type": "fort",
+        "kind": "building",
+        "x": 5.5,
+        "y": 19.5,
+        "hp": 1250,
+        "maxHp": 1250,
+        "food": 0,
+        "foodMax": 0,
+        "morale": 95,
+        "state": "idle",
+        "dir": 0,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "spentCost": {
+          "wood": 180,
+          "food": 0,
+          "iron": 100
+        },
+        "construction": null,
+        "order": null
+      }
+    ]
+  },
+  "resumed": {
+    "tick": 560,
+    "mode": "offline",
+    "paused": false,
+    "localPlayer": 0,
+    "selection": [
+      35
+    ],
+    "camera": {
+      "x": 5.496875,
+      "y": 19.5,
+      "zoom": 1.08
+    },
+    "art": {
+      "enabled": true,
+      "phase": "CANDIDATE",
+      "quality": "PLACEHOLDER_ONLY",
+      "groundDraws": 3072,
+      "propDraws": 24990,
+      "entityDraws": 22146,
+      "walkDraws": 0,
+      "idleDraws": 0,
+      "lastWalk": null,
+      "gatherDraws": 0,
+      "lastGather": null,
+      "missing": [
+        {
+          "key": "fort:construction",
+          "reason": "No authored construction sequence",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:2",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:5",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:build:5",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:idle:5",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        }
+      ],
+      "pipeline": {
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 28,
+        "ready": 28,
+        "approved": 0,
+        "candidates": 28,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 17466880,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 28,
+        "encodedReady": 0,
+        "retainedEncodedBytes": 3904788,
+        "encodedBudgetBytes": 67108864,
+        "selectedDeclared": 28,
+        "failures": []
+      },
+      "hillDraws": 0,
+      "foodResourceDraws": 3382,
+      "ironResourceDraws": 1691
+    },
+    "bootUi": {
+      "declared": 12,
+      "ready": 12,
+      "failures": [],
+      "fontWarnings": []
+    },
+    "resources": {
+      "wood": 370,
+      "food": 787.5247680000408,
+      "iron": 160
+    },
+    "entities": [
+      {
+        "id": 7,
+        "owner": 0,
+        "type": "villager",
+        "kind": "unit",
+        "x": 6.611140410482181,
+        "y": 21.16293914145813,
+        "hp": 65,
+        "maxHp": 65,
+        "food": 36.50915199999885,
+        "foodMax": 40,
+        "morale": 95,
+        "state": "idle",
+        "dir": 5,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "resuppliedTick": 33,
+        "starving": 0,
+        "lastMovedTick": 39,
+        "order": null
+      },
+      {
+        "id": 35,
+        "owner": 0,
+        "type": "fort",
+        "kind": "building",
+        "x": 5.5,
+        "y": 19.5,
+        "hp": 1250,
+        "maxHp": 1250,
+        "food": 0,
+        "foodMax": 0,
+        "morale": 95,
+        "state": "idle",
+        "dir": 0,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "spentCost": {
+          "wood": 180,
+          "food": 0,
+          "iron": 100
+        },
+        "construction": null,
+        "order": null
+      }
+    ]
+  },
+  "stopped": {
+    "tick": 568,
+    "mode": "offline",
+    "paused": false,
+    "localPlayer": 0,
+    "selection": [
+      7
+    ],
+    "camera": {
+      "x": 6.609765625,
+      "y": 21.16285923549107,
+      "zoom": 1.08
+    },
+    "art": {
+      "enabled": true,
+      "phase": "CANDIDATE",
+      "quality": "PLACEHOLDER_ONLY",
+      "groundDraws": 3072,
+      "propDraws": 25365,
+      "entityDraws": 22496,
+      "walkDraws": 0,
+      "idleDraws": 0,
+      "lastWalk": null,
+      "gatherDraws": 0,
+      "lastGather": null,
+      "missing": [
+        {
+          "key": "fort:construction",
+          "reason": "No authored construction sequence",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:2",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:5",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:build:5",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:idle:5",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        }
+      ],
+      "pipeline": {
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 28,
+        "ready": 28,
+        "approved": 0,
+        "candidates": 28,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 17466880,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 28,
+        "encodedReady": 0,
+        "retainedEncodedBytes": 3904788,
+        "encodedBudgetBytes": 67108864,
+        "selectedDeclared": 28,
+        "failures": []
+      },
+      "hillDraws": 0,
+      "foodResourceDraws": 3432,
+      "ironResourceDraws": 1716
+    },
+    "bootUi": {
+      "declared": 12,
+      "ready": 12,
+      "failures": [],
+      "fontWarnings": []
+    },
+    "resources": {
+      "wood": 370,
+      "food": 787.2068160000414,
+      "iron": 160
+    },
+    "entities": [
+      {
+        "id": 7,
+        "owner": 0,
+        "type": "villager",
+        "kind": "unit",
+        "x": 6.611140410482181,
+        "y": 21.16293914145813,
+        "hp": 65,
+        "maxHp": 65,
+        "food": 36.45615999999883,
+        "foodMax": 40,
+        "morale": 95,
+        "state": "idle",
+        "dir": 5,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "resuppliedTick": 33,
+        "starving": 0,
+        "lastMovedTick": 39,
+        "order": null
+      },
+      {
+        "id": 35,
+        "owner": 0,
+        "type": "fort",
+        "kind": "building",
+        "x": 5.5,
+        "y": 19.5,
+        "hp": 1250,
+        "maxHp": 1250,
+        "food": 0,
+        "foodMax": 0,
+        "morale": 95,
+        "state": "idle",
+        "dir": 0,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "spentCost": {
+          "wood": 180,
+          "food": 0,
+          "iron": 100
+        },
+        "construction": null,
+        "order": null
+      }
+    ]
+  },
+  "menuReturned": true,
+  "cleanup": {
+    "rooms": 0,
+    "listening": false,
+    "browserClosed": true
+  },
+  "fortId": 35,
+  "actualSceneVisualAccepted": false
+}

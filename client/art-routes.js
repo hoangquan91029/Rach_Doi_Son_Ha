@@ -8,7 +8,8 @@ export const ART_ROUTES = Object.freeze({
  iron:Object.freeze({manifestUrl:'/assets/art-v1/iron-137-manifest.json',world:true}),
  workshop:Object.freeze({manifestUrl:'/assets/art-v1/workshop-144-manifest.json',world:true}),
  camp:Object.freeze({manifestUrl:'/assets/art-v1/camp-148-manifest.json',world:true}),
- shipyard:Object.freeze({manifestUrl:'/assets/art-v1/shipyard-165-manifest.json',world:true})
+ shipyard:Object.freeze({manifestUrl:'/assets/art-v1/shipyard-165-manifest.json',world:true}),
+ fort:Object.freeze({manifestUrl:'/assets/art-v1/fort-202-manifest.json',world:true})
 });
 export function artRoute(search=globalThis.location?.search||''){
  const name=new URLSearchParams(search).get('art');

@@ -1,0 +1,491 @@
+{
+  "status": "PASS_ACTUAL_UI_FIRST_AND_SECOND_IMPACT_LIVE_CAST",
+  "method": "One ordinary two-peer UI first-strike scene; read-only player diagnostics; no injected commands/state/facing/speed",
+  "errors": [],
+  "servedBundles": [
+    {
+      "peer": 0,
+      "url": "http://127.0.0.1:40655/assets/index-nZ74FFpq.js",
+      "sha256": "8b64ce9220fae97d5e488a33263adf1144742e2dddd67712395a8f6c658662f1"
+    },
+    {
+      "peer": 1,
+      "url": "http://127.0.0.1:40655/assets/index-nZ74FFpq.js",
+      "sha256": "8b64ce9220fae97d5e488a33263adf1144742e2dddd67712395a8f6c658662f1"
+    }
+  ],
+  "impacts": [
+    {
+      "ordinal": 1,
+      "impactTick": 579,
+      "targetHpBefore": 360,
+      "targetHpAfter": 346.89182576,
+      "observedDamage": 13.108174239999983,
+      "attacker": {
+        "id": 13,
+        "owner": 0,
+        "type": "infantry",
+        "kind": "unit",
+        "x": 22.843641594753628,
+        "y": 24.5,
+        "hp": 107.47999999999999,
+        "maxHp": 125,
+        "food": 35.35999999999845,
+        "foodMax": 40,
+        "morale": 93.0224,
+        "state": "attack",
+        "dir": 0,
+        "cooldown": 1.15,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "starving": 0,
+        "lastMovedTick": 574,
+        "attackStartedTick": 575,
+        "attackImpactTick": 579,
+        "attackCueKind": "melee",
+        "attackReadyTick": 603,
+        "hitUntil": 583,
+        "lastAttack": 579,
+        "order": {
+          "type": "attack",
+          "target": 23,
+          "lastX": 24.110095897592057,
+          "lastY": 24.5
+        }
+      },
+      "effects": [
+        {
+          "owner": 0,
+          "source": 6,
+          "kind": "tempo",
+          "x": 19.02990041677519,
+          "y": 20.97009958322481,
+          "radius": 9,
+          "until": 806,
+          "global": false
+        }
+      ],
+      "terrain": {
+        "attacker": "plain",
+        "target": "plain"
+      },
+      "snapshotTick": 580
+    },
+    {
+      "ordinal": 2,
+      "impactTick": 607,
+      "targetHpBefore": 346.89182576,
+      "targetHpAfter": 337.96246096000004,
+      "observedDamage": 8.929364799999973,
+      "attacker": {
+        "id": 13,
+        "owner": 0,
+        "type": "infantry",
+        "kind": "unit",
+        "x": 22.843641594753628,
+        "y": 24.5,
+        "hp": 89.95999999999998,
+        "maxHp": 125,
+        "food": 35.135999999998376,
+        "foodMax": 40,
+        "morale": 93.0224,
+        "state": "attack",
+        "dir": 0,
+        "cooldown": 1.15,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "starving": 0,
+        "lastMovedTick": 574,
+        "attackStartedTick": 603,
+        "attackImpactTick": 607,
+        "attackCueKind": "melee",
+        "attackReadyTick": 631,
+        "hitUntil": 611,
+        "lastAttack": 607,
+        "order": {
+          "type": "attack",
+          "target": 23,
+          "lastX": 24.110095897592057,
+          "lastY": 24.5
+        }
+      },
+      "effects": [
+        {
+          "owner": 0,
+          "source": 6,
+          "kind": "tempo",
+          "x": 19.02990041677519,
+          "y": 20.97009958322481,
+          "radius": 9,
+          "until": 806,
+          "global": false
+        }
+      ],
+      "terrain": {
+        "attacker": "plain",
+        "target": "plain"
+      },
+      "snapshotTick": 608
+    }
+  ],
+  "orders": [
+    {
+      "type": "ordinary move button and world click",
+      "id": 23,
+      "x": 23.5,
+      "y": 24.5,
+      "tick": 184
+    },
+    {
+      "type": "ordinary move button and world click",
+      "id": 13,
+      "x": 20.5,
+      "y": 24.5,
+      "tick": 268
+    },
+    {
+      "type": "ordinary move button and world click",
+      "id": 6,
+      "x": 19.5,
+      "y": 20.5,
+      "tick": 400
+    }
+  ],
+  "room": "29740D",
+  "initial": {
+    "leaders": [
+      {
+        "king": "tran_nhan_tong",
+        "general": "nguyen_hue"
+      },
+      {
+        "king": "tran_nhan_tong",
+        "general": "tran_hung_dao"
+      }
+    ],
+    "bank": {
+      "phase": "match",
+      "epoch": 2,
+      "encodedBytes": 3821000,
+      "encodedBudgetBytes": 67108864,
+      "activeIds": [
+        "grass",
+        "water",
+        "forest",
+        "residence",
+        "infantry-idle-D00",
+        "cavalry-idle-D00",
+        "villager-idle-D00",
+        "tran-hung-dao-idle-D00",
+        "unit-contact-shadow",
+        "ford",
+        "shore",
+        "forest-bamboo",
+        "forest-palm",
+        "granary",
+        "villager-walk-south-014",
+        "villager-idle-south-014",
+        "villager-gather-wood-south-024",
+        "mountain-outcrop-108",
+        "grassy-hill-111",
+        "food-resource-114",
+        "iron-resource-119",
+        "barracks-idle-121",
+        "supply-depot-idle-126",
+        "villager-gather-iron-south-136",
+        "artillery-workshop-idle-140",
+        "cavalry-camp-idle-147",
+        "shipyard-idle-164"
+      ],
+      "scope": {
+        "map": "delta",
+        "roster": [
+          "villager",
+          "king",
+          "general",
+          "infantry",
+          "spearman",
+          "firearm",
+          "cavalry",
+          "artillery",
+          "wagon",
+          "warship",
+          "transport"
+        ],
+        "buildings": [
+          "residence",
+          "barracks",
+          "cavalryCamp",
+          "artilleryWorkshop",
+          "shipyard",
+          "fort",
+          "wall",
+          "gate",
+          "depot",
+          "granary"
+        ],
+        "leaders": [
+          "tran_nhan_tong",
+          "nguyen_hue",
+          "tran_hung_dao"
+        ]
+      }
+    },
+    "art": {
+      "status": "CANDIDATE",
+      "manifest": "ready",
+      "declared": 27,
+      "ready": 27,
+      "approved": 0,
+      "candidates": 27,
+      "failed": 0,
+      "skipped": 0,
+      "fallbacks": 0,
+      "decodedBudgetBytes": 134217728,
+      "retainedDecodedBytes": 17204736,
+      "reservedDecodedBytes": 0,
+      "uniqueDecodedImages": 27,
+      "encodedReady": 0,
+      "retainedEncodedBytes": 3821000,
+      "encodedBudgetBytes": 67108864,
+      "selectedDeclared": 27,
+      "failures": []
+    }
+  },
+  "ids": {
+    "attacker": 13,
+    "caster": 6,
+    "target": 23
+  },
+  "stage": 9,
+  "stageName": "finish",
+  "precastReadiness": {
+    "tick": 516,
+    "attacker": {
+      "id": 13,
+      "owner": 0,
+      "type": "infantry",
+      "kind": "unit",
+      "x": 20.086117982498433,
+      "y": 24.086117982498433,
+      "hp": 125,
+      "maxHp": 125,
+      "food": 35.87199999999862,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "idle",
+      "dir": 1,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "starving": 0,
+      "lastMovedTick": 303,
+      "order": {
+        "type": "hold"
+      }
+    },
+    "caster": {
+      "id": 6,
+      "owner": 0,
+      "type": "general",
+      "kind": "unit",
+      "x": 19.02990041677519,
+      "y": 20.97009958322481,
+      "hp": 360,
+      "maxHp": 360,
+      "food": 64.12800000000048,
+      "foodMax": 65,
+      "morale": 95,
+      "state": "idle",
+      "dir": 7,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "character": "nguyen_hue",
+      "abilityCooldown": 0,
+      "resuppliedTick": 407,
+      "starving": 0,
+      "lastMovedTick": 484,
+      "order": {
+        "type": "hold"
+      }
+    },
+    "target": {
+      "id": 23,
+      "owner": 1,
+      "type": "general",
+      "kind": "unit",
+      "x": 24.110095897592057,
+      "y": 24.5,
+      "hp": 360,
+      "maxHp": 360,
+      "food": 62.8670719999993,
+      "foodMax": 65,
+      "morale": 95,
+      "state": "idle",
+      "dir": 4,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "character": "tran_hung_dao",
+      "resuppliedTick": 194,
+      "starving": 0,
+      "lastMovedTick": 474
+    },
+    "selection": [
+      6
+    ],
+    "visible": true
+  },
+  "cast": {
+    "tick": 528,
+    "source": {
+      "id": 6,
+      "owner": 0,
+      "type": "general",
+      "kind": "unit",
+      "x": 19.02990041677519,
+      "y": 20.97009958322481,
+      "hp": 360,
+      "maxHp": 360,
+      "food": 64.03200000000054,
+      "foodMax": 65,
+      "morale": 95,
+      "state": "idle",
+      "dir": 7,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "character": "nguyen_hue",
+      "abilityCooldown": 1198,
+      "resuppliedTick": 407,
+      "starving": 0,
+      "lastMovedTick": 484,
+      "order": {
+        "type": "hold"
+      }
+    },
+    "effect": {
+      "owner": 0,
+      "source": 6,
+      "kind": "tempo",
+      "x": 19.02990041677519,
+      "y": 20.97009958322481,
+      "radius": 9,
+      "until": 806,
+      "global": false
+    },
+    "event": "Tết Thunderbolt activated"
+  },
+  "beforeAttack": {
+    "tick": 552,
+    "attacker": {
+      "id": 13,
+      "owner": 0,
+      "type": "infantry",
+      "kind": "unit",
+      "x": 20.086117982498433,
+      "y": 24.086117982498433,
+      "hp": 125,
+      "maxHp": 125,
+      "food": 35.583999999998525,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "idle",
+      "dir": 1,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "starving": 0,
+      "lastMovedTick": 303,
+      "order": {
+        "type": "hold"
+      }
+    },
+    "target": {
+      "id": 23,
+      "owner": 1,
+      "type": "general",
+      "kind": "unit",
+      "x": 24.110095897592057,
+      "y": 24.5,
+      "hp": 360,
+      "maxHp": 360,
+      "food": 62.62860799999922,
+      "foodMax": 65,
+      "morale": 95,
+      "state": "idle",
+      "dir": 4,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "character": "tran_hung_dao",
+      "resuppliedTick": 194,
+      "starving": 0,
+      "lastMovedTick": 474
+    },
+    "effects": [
+      {
+        "owner": 0,
+        "source": 6,
+        "kind": "tempo",
+        "x": 19.02990041677519,
+        "y": 20.97009958322481,
+        "radius": 9,
+        "until": 806,
+        "global": false
+      }
+    ],
+    "terrain": {
+      "attacker": "plain",
+      "target": "plain"
+    }
+  },
+  "damageConclusion": "Observed first impact exceeds subsequent stationary impact under same live cast and terrain; exact mitigation comparison recorded separately.",
+  "finalCooldown": 1078,
+  "cleanup": {
+    "rooms": 0,
+    "listening": false,
+    "browsersClosed": true
+  }
+}

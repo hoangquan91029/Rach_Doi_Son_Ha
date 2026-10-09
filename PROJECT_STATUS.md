@@ -1,4 +1,4 @@
-# Trạng thái — checkpoint197 / movement preview195
+# Trạng thái — checkpoint203 / movement preview195
 
 **INCOMPLETE.** [Kế hoạch movement](docs/art/pipeline/MOVEMENT_PRODUCTION_PLAN_20261010.md) · [Kế hoạch toàn dự án](docs/PROJECT_PLAN.md) · [Next steps](NEXT_STEPS.md).
 
@@ -12,7 +12,7 @@ Actual Chromium chạy đủ tám frame/ba vòng,zeroerrors; output/hash/call cu
 
 ## Gameplay và candidate browser
 
-[186](docs/qa/tempo-first-strike-186/root-intake.json) sửa đúng first-strike Nguyễn Huệ: một valid impact mỗi unit/cast, shared splash bonus, overlapping casts cùng tiêu thụ, private serialized state không gửi player view.29 focused/82 regressions PASS; mô tả/speed/duration/cooldown giữ nguyên. Sim local SHA4aa2bfbdb499371cd18adc4306b3ae313fe8c7410e3d4e2957a46b40e67c85a5.184 mismatch/fixture failure receipts được giữ nguyên; local root intake accepted, chưa browser/public binding.
+[186](docs/qa/tempo-first-strike-186/root-intake.json) sửa đúng first-strike Nguyễn Huệ: một valid impact mỗi unit/cast, shared splash bonus, overlapping casts cùng tiêu thụ, private serialized state không gửi player view.29 focused/82 regressions PASS; mô tả/speed/duration/cooldown giữ nguyên. Sim local SHA4aa2bfbdb499371cd18adc4306b3ae313fe8c7410e3d4e2957a46b40e67c85a5.184 mismatch/fixture failure receipts được giữ nguyên; local root intake accepted. [203](docs/qa/tempo-browser-203/root-intake.json) now binds exact186 through ordinary Chromium/Firefox ability scene: first579 damage13.10817424, stationary second607 damage8.92936480 under same cast, unchanged armor5 gives multiplier1.3. No repeat boost despite second33ticks since movement. Original199 toast/200 group-selection harness failures preserved. Public binding remains open.
 
 [183](docs/qa/merged-banks-navigation-183/root-intake.json) và [187](docs/qa/rematch-bank-completion-187/root-intake.json) bind merged175 bank/177 navigation, chunk80a85a8266465dd57c0475f08507d4a9c04f6c8e62a0ed2e460e0b6cd3f5fba8/simc95e…bb27. Actual Chrome/Firefox offline-before-setup hai map, movement/menu/cache, synchronized General defeat và một corrected actual Delta rematch samecode/newtick/newbankepoch/menu decoded0.183 original result-modal race bảo toàn;187 đóng rematch gap. These frozen proofs **exclude186**, không chứng minh capacity/final visual/default release.
 
@@ -22,4 +22,10 @@ Actual Chromium chạy đủ tám frame/ba vòng,zeroerrors; output/hash/call cu
 
 Realistic roster/directions/actions/12leaders, idle-walk-work scale, building states/maps, dense browser/live-room capacity, accepted default release, external desktop/WAN và final public two-mode validation còn mở. Candidate builds phải isolated; promotion cần exact source/build/relevant scene/rollback. Full master/web/historical/visual/81–145 và later requirements chưa hoàn tất.
 
-Mọi owned browser/server/imagecall/worker handle trong gói đã đóng; production cố ý chạy. Sol6.1Low/builtin/pure2D, noquota/API/key/3D/cutouts/limbtextures/pixelsplicing. Leadership/canonical/raw/held/rejected custody giữ nguyên. [History181](docs/checkpoints/checkpoint181-entrypoints/README.md) byte-preserved từ b3b125d.
+## Gói độc lập198–203
+
+[198 source](docs/art/buildings/fort-idle-198/root-intake.json) ONE builtin/0retry gives compact timber/earth Fort idle; whole1254→256runtime, fixed112logical/sourcepivot627,1010. [202 optionalLOCALfort28](docs/qa/fort-idle-202/root-intake.json) preserves exactshipyard27, adds only completed living Fort idle and retains unsupported-state fallback.32 focused catalog/bank/route/state contracts and actualDelta construction→idle/select/Pause/Resume/Stop/menu PASS. Root inspected normalzoom1.08 scene. Bundle796ff1233753271368472ebda6c88cc1f39965ddf9df37bb64983a377e7d83f5 binds merged201hill+186sim4aa source. Construction/attack/hit/death art remain unfinished.
+
+[201](docs/qa/hill-edges-201/root-intake.json) now draws partial/odd map hill edges, clipping to exact visible hill tile diamonds; no simulation change.7 focusedPASS, one ordinaryDelta edge screenshot; separate nativeCanvas diagnostic483painted/0leak is synthetic, not gameplay acceptance. Root narrow scene intake does not close mapcomposition/fullmap gate.
+
+No new D0 imagecall/runtime install/approval or public promotion. Public149179files and service remain exact. Mọi owned browser/server/imagecall/worker handle trong gói đã đóng; production cố ý chạy. Sol6.1Low/builtin/pure2D, noquota/API/key/3D/cutouts/limbtextures/pixelsplicing. Leadership/canonical/raw/held/rejected custody giữ nguyên. [History181](docs/checkpoints/checkpoint181-entrypoints/README.md) byte-preserved từ b3b125d.

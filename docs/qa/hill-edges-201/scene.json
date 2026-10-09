@@ -1,0 +1,28 @@
+{
+  "errors": [],
+  "method": "Ordinary setup/select/right-click move; read-only diagnostics, unchanged normal zoom. Separate synthetic native-canvas clipping probe.",
+  "bundleSHA256": "d79215a908c784e6e89b7c588b1a699e59e9158d70825336dacd161873544f33",
+  "scene": {
+    "tick": 12,
+    "camera": {
+      "x": 9.5,
+      "y": 23.5,
+      "zoom": 1.08
+    },
+    "hillDraws": 1,
+    "failed": 0,
+    "visibleHillCells": [
+      {
+        "x": 22,
+        "y": 20
+      }
+    ]
+  },
+  "nativeCanvas": {
+    "count": 1,
+    "painted": 483,
+    "leaked": 0,
+    "scope": "synthetic state rendered by actual raster slice into native browser Canvas2D; excluded hidden/nonhill diamonds"
+  },
+  "status": "PASS"
+}

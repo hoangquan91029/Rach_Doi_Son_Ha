@@ -19,7 +19,7 @@ for(const [route,recipe] of Object.entries(ART_ROUTES))test(`legacy ${route} com
 });
 test('shared route registry keeps default and unknown disabled and exact world opt-ins',()=>{
  for(const search of ['', '?art=unknown','?art=constructor','?art=__proto__'])assert.deepEqual(artRoute(search),{name:new URLSearchParams(search).get('art'),enabled:false,manifestUrl:ART_ROUTES.pilot.manifestUrl,world:false});
- for(const [route,recipe] of Object.entries(ART_ROUTES)){const selected=artRoute('?art='+route);assert.equal(selected.enabled,true);assert.equal(selected.manifestUrl,recipe.manifestUrl);assert.equal(selected.world,['terrain','iron','workshop','camp','shipyard'].includes(route));}
+ for(const [route,recipe] of Object.entries(ART_ROUTES)){const selected=artRoute('?art='+route);assert.equal(selected.enabled,true);assert.equal(selected.manifestUrl,recipe.manifestUrl);assert.equal(selected.world,['terrain','iron','workshop','camp','shipyard','fort'].includes(route));}
 });
 test('scoped bank retains world, desired building/body/portrait and separate-shadow dependency only',()=>{
  const scope={map:'coast',roster:['infantry'],buildings:['shipyard'],leaders:['tran_hung_dao']};const bank=selectBank(catalog,{route:'shipyard',scope});
@@ -30,7 +30,7 @@ test('scoped bank retains world, desired building/body/portrait and separate-sha
  const result=compileManifest(catalog,{route:'shipyard',scope});assert.deepEqual(result.manifest.assets.map(a=>a.id),bank.assetIds);assert.ok(!result.manifest.assets.some(a=>a.kind==='portrait'));
 });
 test('catalog deduplicates definitions, recipes deduplicate bank IDs, runtime variants stay distinct',()=>{
- assert.equal(Object.keys(catalog.definitions).length,28);const c=copy(catalog);c.recipes.pilot.assetIds.push(c.recipes.pilot.assetIds[0]);const bank=selectBank(c,{route:'pilot'});assert.equal(bank.assetIds.filter(id=>id==='grass').length,1);
+ assert.equal(Object.keys(catalog.definitions).length,29);const c=copy(catalog);c.recipes.pilot.assetIds.push(c.recipes.pilot.assetIds[0]);const bank=selectBank(c,{route:'pilot'});assert.equal(bank.assetIds.filter(id=>id==='grass').length,1);
  const original=catalog.definitions['villager-walk-south-014'];assert.equal(original.mappingKey,JSON.stringify(['unit','unit.villager','walk',1,original.asset.runtime.sha256]));assert.equal(compileManifest(c,{route:'pilot'}).manifest.assets.length,catalog.recipes.pilot.assetIds.length);
 });
 test('missing requested family remains explicit fallback and cannot be a release scope',()=>{

@@ -20,14 +20,15 @@ test('world route contract permits terrain/iron/workshop/camp and excludes chara
    // Use one exact bank for all routes so gate failures cannot be masked by missing assets.
    const slice=createRasterSlice({manifestUrl:'/assets/art-v1/camp-148-manifest.json'});await slice.preload();
    if(route)assert.equal(slice.pipeline.stats.ready,2);
-   const draws=[],ctx={drawImage(...args){draws.push(args);}},project=(x,y)=>({x,y});
+   const draws=[],clips=[];let path=[];const ctx={save(){},restore(){},beginPath(){path=[];},moveTo(x,y){path.push([x,y]);},lineTo(x,y){path.push([x,y]);},closePath(){},clip(){clips.push(path);},drawImage(...args){draws.push(args);}},project=(x,y)=>({x,y});
    const allowed=['terrain','iron','workshop','camp'].includes(route);
    assert.equal(slice.drawResource(ctx,{resource:{type:'food',amount:1,x:4,y:8},project}),allowed,route);
    assert.equal(slice.drawResource(ctx,{resource:{type:'food',amount:0,x:4,y:8},project}),false,`${route}: depleted`);
    const state={map:{width:2,height:2,tiles:Array(4).fill('hill')},fog:{visible:Array(4).fill(true)}};
    assert.equal(slice.drawHillGround(ctx,{state,project}),allowed?1:0,`${route}: hill`);
-   state.fog.visible[0]=false;assert.equal(slice.drawHillGround(ctx,{state,project}),0,`${route}: hidden hill`);
-   assert.equal(draws.length,allowed?2:0,`${route}: no extra drawing`);
+   state.fog.visible[0]=false;assert.equal(slice.drawHillGround(ctx,{state,project}),allowed?1:0,`${route}: partial visible hill`);
+   assert.equal(draws.length,allowed?3:0,`${route}: no extra drawing`);
+   if(allowed){assert.equal(clips[0].length,16);assert.equal(clips[1].length,12);assert.deepEqual(clips[1].slice(0,4),[[1.5,-13],[28.5,.5],[1.5,14],[-25.5,.5]]);assert.deepEqual(draws[1],draws[2],"partial footprint retains fullblock scale/pivot");}else assert.equal(clips.length,0);
    slice.dispose();
   }
  }finally{for(const [key,descriptor] of Object.entries(saved)){if(descriptor)Object.defineProperty(globalThis,key,descriptor);else delete globalThis[key];}}

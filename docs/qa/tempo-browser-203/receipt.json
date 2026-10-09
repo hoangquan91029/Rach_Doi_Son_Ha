@@ -1,0 +1,80 @@
+{
+  "status": "READY_FOR_ROOT_INTAKE_ACTUAL_FIRST_STRIKE_PASS",
+  "bindings": {
+    "stage": "/tmp/rds-candidate199",
+    "buildPath": "/tmp/rds-candidate199/build/assets/index-nZ74FFpq.js",
+    "bundleSHA256": "8b64ce9220fae97d5e488a33263adf1144742e2dddd67712395a8f6c658662f1",
+    "simSHA256": "4aa2bfbdb499371cd18adc4306b3ae313fe8c7410e3d4e2957a46b40e67c85a5",
+    "mainSHA256": "a207956423016123ec2e6b12c32918dc9685fd226fb4d901fe10a6e32169cc82",
+    "harnessSHA256": "32eb80a630c0d7cb78cd61e00f52748f190c69d3e36b193f26983b078d561afc",
+    "newBuilds": 0
+  },
+  "room": "29740D",
+  "peers": [
+    "Chromium",
+    "Firefox"
+  ],
+  "ability": {
+    "name": "T\u1ebft Thunderbolt",
+    "sourceId": 6,
+    "owner": 0,
+    "effectUntil": 806,
+    "observedCastTick": 528,
+    "observedInitialCooldown": 1198,
+    "finalCooldown": 1078
+  },
+  "impacts": [
+    {
+      "ordinal": 1,
+      "impactTick": 579,
+      "snapshotTick": 580,
+      "damage": 13.108174239999983,
+      "targetHpBefore": 360,
+      "targetHpAfter": 346.89182576,
+      "lastMovedTick": 574,
+      "food": 35.35999999999845,
+      "moraleAtSnapshot": 93.0224,
+      "terrain": {
+        "attacker": "plain",
+        "target": "plain"
+      }
+    },
+    {
+      "ordinal": 2,
+      "impactTick": 607,
+      "snapshotTick": 608,
+      "damage": 8.929364799999973,
+      "targetHpBefore": 346.89182576,
+      "targetHpAfter": 337.96246096000004,
+      "lastMovedTick": 574,
+      "food": 35.135999999998376,
+      "moraleAtSnapshot": 93.0224,
+      "terrain": {
+        "attacker": "plain",
+        "target": "plain"
+      }
+    }
+  ],
+  "mitigationComparison": {
+    "targetArmor": 5,
+    "armorBasis": "General base4 + actual TranNhanTong/TranHungDao UnitedResistance armor1; plain target terrain0; no defense effect",
+    "sameLiveCast": true,
+    "sameAttackerPosition": true,
+    "sameTargetPosition": true,
+    "rationAboveLowSupply": true,
+    "snapshotMoraleEqual": true,
+    "damageBeforeSameArmorRatio": 1.3000000000000012,
+    "conclusion": "Observed health deltas plus unchanged5 armor give exact1.3 first/second ratio; second still recent movement (33ticks) so repeat boost absent under live cast",
+    "limit": "Snapshots are after impacts, not injected exact-impact morale capture; infer multiplier from actual hp deltas and unchanged mitigation"
+  },
+  "errors": [],
+  "cleanup": {
+    "rooms": 0,
+    "listening": false,
+    "browsersClosed": true
+  },
+  "public179Exact": true,
+  "newBuilds": 0,
+  "imageCalls": 0,
+  "limits": "No fullmatch/rematch/performance/default-art/motion/public release acceptance"
+}

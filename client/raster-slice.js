@@ -94,7 +94,7 @@ export function createRasterSlice({enabled=artRoute().enabled,manifestUrl=artRou
    if(!enabled||!ready||!worldArtEnabled()||typeof project!=='function')return 0;
    const raster=select({families:['hill'],kind:'prop',state:'static',direction:null,timeMs});
    const placements=hillGroundPlacements(state,Boolean(raster?.image));let drawn=0;
-   for(const p of placements)if(rasterAt(ctx,raster,project(p.x,p.y),zoom))drawn++;
+   for(const p of placements){ctx.save();ctx.beginPath();for(const cell of p.cells){const q=project(cell.x+.5,cell.y+.5),rx=TW*zoom/2,ry=TH*zoom/2;ctx.moveTo(q.x,q.y-ry);ctx.lineTo(q.x+rx,q.y);ctx.lineTo(q.x,q.y+ry);ctx.lineTo(q.x-rx,q.y);ctx.closePath();}ctx.clip();if(rasterAt(ctx,raster,project(p.x,p.y),zoom))drawn++;ctx.restore();}
    status.hillDraws=(status.hillDraws||0)+drawn;return drawn;
   },
   drawResource(ctx,{resource,project,zoom=1,timeMs=0}={}) {
@@ -106,7 +106,7 @@ export function createRasterSlice({enabled=artRoute().enabled,manifestUrl=artRou
    if(!enabled||!ready||!entity||entity.embarked||!finite(entity.x)||!finite(entity.y))return false;
    if(entity.kind==='building'&&entity.construction){recordMissing(`${entity.type}:construction`,'No authored construction sequence');return false;}
    let families,kind,direction;
-   if(entity.kind==='building'){if(!['residence','granary'].includes(entity.type)&&!(['barracks','depot','artilleryWorkshop','cavalryCamp'].includes(entity.type)&&worldArtEnabled())&&!(entity.type==='shipyard'&&artRoute().name==='shipyard'))return false;families=[entity.type,`building.${entity.type}`];kind='building';direction=null;}
+   if(entity.kind==='building'){if(!['residence','granary'].includes(entity.type)&&!(['barracks','depot','artilleryWorkshop','cavalryCamp'].includes(entity.type)&&worldArtEnabled())&&!(entity.type==='shipyard'&&['shipyard','fort'].includes(artRoute().name) )&&!(entity.type==='fort'&&artRoute().name==='fort'))return false;families=[entity.type,`building.${entity.type}`];kind='building';direction=null;}
    else if(['villager','infantry','cavalry'].includes(entity.type)){families=[entity.type,`unit.${entity.type}`];kind='unit';direction=entity.dir;}
    else if(entity.type==='general'&&entity.character==='tran_hung_dao'){families=['tran_hung_dao','unit.tran_hung_dao'];kind='unit';direction=entity.dir;}
    else return false;
