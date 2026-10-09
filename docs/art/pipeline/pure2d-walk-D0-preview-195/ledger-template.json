@@ -1,0 +1,35 @@
+{
+  "status": "PREPARATION_ONLY_NOT_ROOT_SELECTED",
+  "selectedBy": null,
+  "sourceCanvas": [
+    1254,
+    1254
+  ],
+  "pivotSource": [
+    654,
+    1140
+  ],
+  "runtimeCell": [
+    128,
+    128
+  ],
+  "previewCell": [
+    89,
+    89
+  ],
+  "durationMs": 600,
+  "frameMs": [
+    75,
+    75,
+    75,
+    75,
+    75,
+    75,
+    75,
+    75
+  ],
+  "frames": [],
+  "requiredFinalStatus": "ROOT_SELECTED_ACTUAL_EIGHT_SOURCES_FOR_PREVIEW_ONLY",
+  "requiredFinalSelectedBy": "root",
+  "frameFields": "frame(0..7),source,sha256,selection(non-held positive root selection); optional selectionStatus SELECTED_KEY_CANDIDATE even / SELECTED_INBETWEEN_CANDIDATE odd; toolReceipts when per-call filenames differ from parent/tool-request.json,call-state.json,receipt.json; each receipt path +sha256+role(normalized filename)"
+}

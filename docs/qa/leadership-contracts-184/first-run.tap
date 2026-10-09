@@ -1,0 +1,111 @@
+✔ han_xin: nearby movement accelerates, remote ally does not, cooldown and expiry recover (56.367377ms)
+✔ napoleon_bonaparte: nearby movement accelerates, remote ally does not, cooldown and expiry recover (87.773219ms)
+✔ nguyen_hue: nearby movement accelerates, remote ally does not, cooldown and expiry recover (74.36815ms)
+✔ Han Xin concealment hides long-range ally but close reconnaissance reveals it (2.058086ms)
+✔ Xiang Yu damage burst consumes finite rations and locks retreat commands (23.062425ms)
+✔ Ly Thuong Kiet defense protects at ford and expires; plain unsupported troops gain no armor (6.022792ms)
+✔ Tran Hung Dao trap rejects dry terrain and damages enemy water occupants only (37.89341ms)
+✖ Le Thanh Tong mobilization accelerates distant friendly production only (1.985126ms)
+✖ Minh Menh inspection increases nearby gathering and repairs nearby buildings (3.79197ms)
+✔ nguyen_anh: wounded nearby ally heals and morale recovers; distant ally unaffected (8.574559ms)
+✔ tran_nhan_tong: wounded nearby ally heals and morale recovers; distant ally unaffected (4.372962ms)
+✖ Nguyen Phuc Chu network extends finite resupply to distant recipient (1.530762ms)
+✖ Trinh Cuong fiscal edict adds wood/iron delivery value without adding food (2.461007ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 9
+ℹ fail 4
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 360.165669
+
+✖ failing tests:
+
+test at tests/leadership-contracts184.test.js:15:1
+✖ Le Thanh Tong mobilization accelerates distant friendly production only (1.985126ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  false !== true
+  
+      at activate (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/leadership-contracts184.test.js:8:26)
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/leadership-contracts184.test.js:15:398)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/leadership-contracts184.test.js:16:1
+✖ Minh Menh inspection increases nearby gathering and repairs nearby buildings (3.79197ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  false !== true
+  
+      at activate (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/leadership-contracts184.test.js:8:26)
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/leadership-contracts184.test.js:16:579)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/leadership-contracts184.test.js:18:1
+✖ Nguyen Phuc Chu network extends finite resupply to distant recipient (1.530762ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  false !== true
+  
+      at activate (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/leadership-contracts184.test.js:8:26)
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/leadership-contracts184.test.js:18:471)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/leadership-contracts184.test.js:19:1
+✖ Trinh Cuong fiscal edict adds wood/iron delivery value without adding food (2.461007ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  false !== true
+  
+      at activate (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/leadership-contracts184.test.js:8:26)
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/leadership-contracts184.test.js:19:470)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

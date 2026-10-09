@@ -153,7 +153,7 @@ T01:170 có sharedruntime route registry,9legacyrecipes/28deduplicated definitio
 
 Q01:171 baseline bounded đo actualstep/normalAI và exactserver compactview+JSON,1/5/8world trên2map sau90simseconds normalgrowth.39units/world; step/AI tail lớn hơn serialization,5/8world workload có tickcost đáng profile. Không exclusiveCPU/liveonline/sendqueues/browser/densearmy test; đây là bottleneck direction, không headroom verdict hoặc balancechange. Profile trước optimization và đo actualbrowser/roomworkloads tiếp.
 
-## 15. Cập nhật174–181 hiện hành
+## 15. Cập nhật174–181 — lịch sử thực thi
 
 G01:174/178 externalreference retrievals fail, không visuallyqualifiedphoto.179 originalwholetonal rough vẫn chưaqualifiedpassing;180 sửa hai completeposes, bỏ quy tắc ép ankleahead-idle và làm rõ lowerlegfold/weight-bearing support.181 ONEbuiltin/0retry giữ realisticcanonical body và chân gập rõ nhưng footlift cao/back: candidate, chưafinalF6/loop/runtime. Next là finitewholeposecorrection của visibledefect rồi completekeys/inbetweens/briefloop/actualD0travel; không auditmicroanatomy/retryunchangedprompt hoặc fanout. [181rootintake](art/pipeline/villager-walk-D0-capability-181/root-intake.json) và activegraphicsplan govern.
 
@@ -162,3 +162,17 @@ T01/R01:175dynamicmenu/match banks cài local, uses shared170selection/alllegalr
 Q01:1762024samples phân biệt actualAI1.68% với navigationnormalstep tail.177 query-local exactcell-pass memo preservesterrain/owner/gate/corners/fractionalground/crowd/ties/range/retry/speed;82contractsPASS inclpairedstatehash/AI/naval. One matchedunprofiledDelta5 diagnostic p95step52.934→11.924ms nhưngmax≈64ms còn, nonexclusive/order caveats. Localoptimization accepted; không productioncapacity hoặc mergedbrowseracceptance. Nextmerged175/177 exactstagedsource/build/relevantUI intake trước promotion, không repeatbaseline/profile.
 
 Public149179files/service157023 giữ nguyên. Broadcompletedmatch089/090 evidence scope vẫn giữ; currentlocalchanges không public. Allworkers/calls terminal tại checkpoint, history173entrypoints riêng; futureworker inspect live receipts, do not duplicate calls. Fullmaster/web/historical/visual/81–145 vẫn INCOMPLETE.
+
+## 16. Cập nhật182–189 — lịch sử thực thi
+
+G01 hiện theo [actualcontact research](art/pipeline/movement-research-161/CONTACT_OWNERSHIP_188.md).182/185 giữ realisticbody nhưng không motionapproved.188 bodycamera tốt hơn152, vẫn lặp033 legpaths.152 labelopposite không established; không tiếp tục coi đó là poseauthority.188 originalF4HOLD giữ nguyên, raw được explicitreassignF0candidate.189 đúnghai originalwholeclothed guides/0calls cố định A/Bhip/depth và đổi vai; chỉ authoring.190 finiteONEwholeillustration đang chạy, actualintake trước key/inbetween. Hoàn thiện một loop thật sớm, xem briefgame-size, sửa lỗi nhìn thấy; không microscopic scoring, fanout hoặc claim smoothness từstill.
+
+183/187 đã bind merged175/177 exactstage/chunk80a85…5fba8/simc95e… và actual relevant offlinebothmaps/combatresult/rematch banklifecycle. Không lặp fullmatches/tests đã xong.186 local first-strike runtime closure dùng serializedprivateunitmarkers/oneimpact splashboolean,29focused/82regressions PASS; current sim4aa2… khác frozen183, cần binding riêng khi promotion.186 không đổi mô tả/speed/duration/cooldown;184 mismatchhistorical giữ nguyên.
+
+Public149 vẫn optionalcamp26, chưa deploycandidate. Fullart/fullcoverage/defaultrelease/performancecapacity/externaldesktop/WAN/finalrelease gate mở. Các receipt/read-only audits hoặc guide counts không thay final acceptance.
+
+## 17. Hiện hành: movement pilot195 / checkpoint197
+
+[Kế hoạch movement gắn asset thực tế](art/pipeline/MOVEMENT_PRODUCTION_PLAN_20261010.md) thay các next-order lịch sử. Root phát hiện nguồn152 labelledopposite sai; guide-only191 và whole correction192 cho actual opposing contact.195 đã có tám illustrated sources, atlas/APNG600ms và technical Chromium playback; original193F3 nonfamily canvas bị loại,197 là source thay thế provisional. F3/F4 body/arms còn warning. Actual APNG đã hiển thị, một human continuous-look question pending; chưa motion/runtime/worldfootlock/fanout approval. Sửa lỗi nhìn thấy ở full-loop/gameplay size, không quay lại exhaustive static anatomy audit. Next candidates: specific loop fix nếu cần, rồi D0 runtime + same-family idle/travel/Pause/Stop.
+
+186 first-strike mechanics local accepted29/82 tests;183/187 merged bank/navigation offline/combat/rematch proof hoàn tất nhưng bind c95, không include1864aa source. Candidate release needs exact newbuild/relevant ability scene/rollback; không repeat completed full matches absent concern. Public149 vẫn unchanged, full objective INCOMPLETE.

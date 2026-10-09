@@ -1,0 +1,19 @@
+✔ both maps include every legal unit/building and both actual player leaders (1.058255ms)
+✔ encoded startup has zero decoded ownership; offline both-map relaunch releases real images (80.419883ms)
+✔ menu cancellation closes late decoded image and prevents epoch resurrection (16.991484ms)
+✔ encoded aggregate budget and hash mismatch fail without caching unverified bytes (4.235461ms)
+✔ Continue after partial encoded boot failure retries selected missing bytes on recovery (30.812115ms)
+✔ unavailable boot manifest is explicitly primed again before recovered match decoding (45.524365ms)
+✔ actual launch failure keeps gameplay/Pause gate until explicit retry or menu (2.541933ms)
+✔ delta: cell-query memo preserves diagonal, fractional and unreachable complete paths (382.161507ms)
+✔ coast: cell-query memo preserves diagonal, fractional and unreachable complete paths (339.647529ms)
+✔ per-query owner-gate and building predicates retain exact routes without cross-query staleness (264.764394ms)
+✔ legal same-tick build and authoritative combat death invalidate next-query behavior identically (266.265199ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1314.382302

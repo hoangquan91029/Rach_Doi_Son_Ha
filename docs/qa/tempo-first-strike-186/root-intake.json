@@ -1,0 +1,8 @@
+{
+  "status": "ACCEPTED_LOCAL_FIRST_STRIKE_FIX",
+  "source_sha256": "4aa2bfbdb499371cd18adc4306b3ae313fe8c7410e3d4e2957a46b40e67c85a5",
+  "review": "Reviewed patch and focused contracts. Bonus chosen after valid target/range/visibility validation; one impact boolean shared by splash victims; all eligible overlapping casts consumed together; private serialized markers omitted from both views. Existing description fulfilled without changing speed, duration or cooldown.",
+  "validation": "29 focused and82 regressions passed; original184 mismatch/fixture failure retained. Bindings verified by root.",
+  "browser_scope": "183/187 frozen candidate excludes186; no browser or public acceptance inferred.",
+  "production": "PUBLIC149 unchanged; deployment remains separate."
+}

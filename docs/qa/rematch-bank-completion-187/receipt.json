@@ -1,0 +1,53 @@
+{
+  "status": "READY_FOR_ROOT_INTAKE187_REMATCH_COMPLETION_PASS",
+  "frozenStage": "/tmp/rds-merged183",
+  "buildPath": "/tmp/rds-merged183/build/assets/index-C_GKc-TG.js",
+  "bundleSHA256": "80a85a8266465dd57c0475f08507d4a9c04f6c8e62a0ed2e460e0b6cd3f5fba8",
+  "mainSHA256": "a207956423016123ec2e6b12c32918dc9685fd226fb4d901fe10a6e32169cc82",
+  "simSHA256": "c95e26d9c7e77d1e1f196b53833fdc38bc871f2fa5a9ade044e56829e118bb27",
+  "canonical186Excluded": true,
+  "room": "08354C",
+  "combatWallSeconds": 31.958,
+  "realResult": {
+    "tick": 604,
+    "winner": 0,
+    "reason": "Enemy General defeated",
+    "bothPeers": true
+  },
+  "rematch": {
+    "sameRoom": true,
+    "newTick": 5,
+    "newBankEpochs": [
+      4,
+      4
+    ],
+    "selectedImageCounts": [
+      26,
+      26
+    ],
+    "bothRequestsAndReady": true,
+    "ordinaryMoveOnlinePausePanelStopMenu": true
+  },
+  "menuRelease": {
+    "decodedImages": 0,
+    "decodedBytes": 0,
+    "encodedBytesEach": 3821000
+  },
+  "cleanup": {
+    "rooms": 0,
+    "listening": false,
+    "browsersClosed": true,
+    "processCompletedExit0": true
+  },
+  "public149AllFilesExact": 179,
+  "screenshots": {
+    "result": "actual-combat-result.png",
+    "rematch": "NOT_CAPTURED; actual rematch diagnostics/ordinary UI assertions in online-receipt.json; no synthetic replacement"
+  },
+  "prior183HoldPreserved": true,
+  "scope": "One authorized corrected ordinary match, no builds/test/offline repeats; frozen183 excludes186; no full-release/visual/performance claim",
+  "deploy": false,
+  "commit": false,
+  "canonicalRuntimeEdits": false,
+  "imageCalls": 0
+}

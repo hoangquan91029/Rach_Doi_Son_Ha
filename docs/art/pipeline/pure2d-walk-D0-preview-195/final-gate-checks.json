@@ -1,0 +1,58 @@
+{
+  "status": "PREPARATION_GATE_CONTRACTS_PASS_NO_LOOP_OUTPUT",
+  "checks": [
+    {
+      "contract": "actual current four keys cannot become eight-frame output",
+      "result": "REJECTED_AS_REQUIRED",
+      "reason": "Exactly8 ordered actual root-selected sources required; no partial preview"
+    },
+    {
+      "contract": "selected actual F0 custody read-only",
+      "result": "PINNED_ONLY_NOT_EXPORTED"
+    },
+    {
+      "contract": "held selection",
+      "result": "REJECTED_AS_REQUIRED",
+      "reason": "Missing/held/unselected frame selection: F0"
+    },
+    {
+      "contract": "unselected status",
+      "result": "REJECTED_AS_REQUIRED",
+      "reason": "Unselected/held slot status: F0"
+    },
+    {
+      "contract": "changed raw hash",
+      "result": "REJECTED_AS_REQUIRED",
+      "reason": "Changed custody hash: /home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-walk-D0-contact-188/raw.png"
+    },
+    {
+      "contract": "per-frame shift metadata",
+      "result": "REJECTED_AS_REQUIRED",
+      "reason": "Per-frame fitting forbidden"
+    },
+    {
+      "contract": "actual custom receipt roles F1",
+      "result": "VALIDATED_CLOSED_HASH_BOUND"
+    },
+    {
+      "contract": "actual custom receipt roles F5",
+      "result": "VALIDATED_CLOSED_HASH_BOUND"
+    },
+    {
+      "contract": "actual custom receipt roles F7",
+      "result": "VALIDATED_CLOSED_HASH_BOUND"
+    },
+    {
+      "contract": "explicit open custom call overrides closed state",
+      "result": "REJECTED_AS_REQUIRED",
+      "reason": "Open/unfinished tool call forbidden"
+    },
+    {
+      "contract": "custom slot receipt wrong raw hash",
+      "result": "REJECTED_AS_REQUIRED",
+      "reason": "Tool receipt raw SHA mismatch"
+    }
+  ],
+  "framesExported": 0,
+  "imageCalls": 0
+}

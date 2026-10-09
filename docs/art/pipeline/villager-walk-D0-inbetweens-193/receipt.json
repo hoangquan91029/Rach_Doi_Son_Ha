@@ -1,0 +1,44 @@
+{
+  "package": 193,
+  "status": "TWO_RETURNED_SLOTS_HELD_ROOT_INTAKE_PENDING",
+  "calls": 2,
+  "max_calls": 2,
+  "retry": 0,
+  "all_handles_closed": true,
+  "frames": [
+    {
+      "frame": 1,
+      "status": "HELD_DOWN_PHASE_NOT_CLEAR",
+      "calls": 1,
+      "retry": 0,
+      "call_open": false,
+      "raw_sha256": "5fc272f6d25d27f31146239272bfa835ab761f367ad2966a3574b9438191e206",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "actual_look": "89neighbors:F1bodyreadable but verycloseF0contact; slightlegchange notclearweighttransfer/down",
+      "selected": false
+    },
+    {
+      "frame": 3,
+      "status": "HELD_PHASE_AND_NONFAMILY_CANVAS",
+      "calls": 1,
+      "retry": 0,
+      "call_open": false,
+      "raw_sha256": "1852ab18148b2da22fb3a4ff48236fe69a70b54297be6e79b5cd7b70316bde0a",
+      "size": [
+        1133,
+        1388
+      ],
+      "mode": "RGBA",
+      "actual_look": "89neighbors:F3widecontactlikelegs ratherthancloseknees late-swing; torso/arms broader than192nextkey",
+      "selected": false
+    }
+  ],
+  "transform": "F1whole1254uniform256/128/89. F3returned1133x1388: uniform1254source-unit scaling only, no stretch/fit/pad/shift; familycanvas/pivot unqualified",
+  "wholeloop_approval": false,
+  "runtime": false,
+  "next_order": false
+}

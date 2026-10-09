@@ -1,0 +1,60 @@
+{
+  "wallSeconds": 20,
+  "hostTick": 398,
+  "guestTick": 402,
+  "guestGeneral": [
+    {
+      "id": 23,
+      "x": 16.43340916570672,
+      "y": 25.754194993876546,
+      "hp": 325.99999999999994,
+      "state": "walk",
+      "dir": 5
+    }
+  ],
+  "hostGeneral": {
+    "id": 6,
+    "x": 11,
+    "y": 25.5,
+    "hp": 360,
+    "state": "idle"
+  },
+  "visible": true,
+  "hostMilitary": [
+    {
+      "id": 6,
+      "type": "general",
+      "hp": 360,
+      "state": "idle",
+      "dir": 0
+    },
+    {
+      "id": 13,
+      "type": "infantry",
+      "hp": 125,
+      "state": "walk",
+      "dir": 4
+    },
+    {
+      "id": 14,
+      "type": "infantry",
+      "hp": 125,
+      "state": "walk",
+      "dir": 4
+    },
+    {
+      "id": 15,
+      "type": "infantry",
+      "hp": 125,
+      "state": "attack",
+      "dir": 2
+    },
+    {
+      "id": 35,
+      "type": "infantry",
+      "hp": 125,
+      "state": "walk",
+      "dir": 2
+    }
+  ]
+}

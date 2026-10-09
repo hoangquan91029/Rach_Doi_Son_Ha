@@ -1,0 +1,37 @@
+✔ han_xin: nearby movement accelerates, remote ally does not, cooldown and expiry recover (58.59795ms)
+✔ napoleon_bonaparte: nearby movement accelerates, remote ally does not, cooldown and expiry recover (90.023813ms)
+✔ nguyen_hue: nearby movement accelerates, remote ally does not, cooldown and expiry recover (74.232466ms)
+✔ Han Xin concealment hides long-range ally but close reconnaissance reveals it (2.129635ms)
+✔ Xiang Yu damage burst consumes finite rations and locks retreat commands (25.066162ms)
+✔ Ly Thuong Kiet defense protects at ford; plain unsupported troops gain no armor (6.349407ms)
+✔ Tran Hung Dao trap rejects dry terrain and damages enemy water occupants only (39.146785ms)
+✔ Le Thanh Tong mobilization accelerates distant friendly production only (36.241499ms)
+✔ Minh Menh inspection increases nearby gathering and repairs nearby buildings (44.068824ms)
+✔ nguyen_anh: wounded nearby ally heals and morale recovers; distant ally unaffected (8.683595ms)
+✔ tran_nhan_tong: wounded nearby ally heals and morale recovers; distant ally unaffected (7.688434ms)
+✔ Nguyen Phuc Chu network extends finite resupply to distant recipient (10.952535ms)
+✔ Trinh Cuong fiscal edict adds wood/iron delivery value without adding food (3.813239ms)
+✔ Napoleon concentration produces earlier second artillery impact (16.509922ms)
+✔ Nguyen Anh restoration doubles construction work near builder (28.551426ms)
+✔ Nguyen Phuc Chu network accelerates distant wagon globally (2.651392ms)
+✔ same-character choices currently stack passives and synergy once; duplicate active heals do not multiply (5.371063ms)
+✔ ability command rejects enemy ownership and dead source (0.440287ms)
+✔ Nguyen Hue advertised first strike does not amplify a second hit after the same advance (5.83388ms)
+✔ Han Xin concealment ends at duration boundary before cooldown is ready (24.535058ms)
+✔ first advancing hit boosts once; stationary follow-up and re-advance cannot renew same cast (35.255316ms)
+✔ same-character simultaneous casts give one boosted hit and consume both cast tokens (9.584385ms)
+✔ nonadvancing impact preserves token until a later advance (8.585988ms)
+✔ cancelled windup and dead-target rejection preserve first strike (10.283523ms)
+✔ expired or outside-radius effects do not consume; return into live radius permits bonus (47.174917ms)
+✔ a later natural cooldown cast renews token and prunes old marker at impact (111.900225ms)
+✔ one artillery impact shares first-strike bonus with differently armored splash victims (5.044062ms)
+✔ consumption survives serialized state; views omit markers for both owner and opponent (15.445316ms)
+✔ enemy tempo activation cannot boost or consume the attacking owner token (4.133411ms)
+ℹ tests 29
+ℹ suites 0
+ℹ pass 29
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 549.213089

@@ -1,0 +1,53 @@
+✔ han_xin: nearby movement accelerates, remote ally does not, cooldown and expiry recover (59.325773ms)
+✔ napoleon_bonaparte: nearby movement accelerates, remote ally does not, cooldown and expiry recover (89.718208ms)
+✔ nguyen_hue: nearby movement accelerates, remote ally does not, cooldown and expiry recover (73.609807ms)
+✔ Han Xin concealment hides long-range ally but close reconnaissance reveals it (2.255711ms)
+✔ Xiang Yu damage burst consumes finite rations and locks retreat commands (24.943813ms)
+✔ Ly Thuong Kiet defense protects at ford; plain unsupported troops gain no armor (6.173739ms)
+✔ Tran Hung Dao trap rejects dry terrain and damages enemy water occupants only (38.106085ms)
+✔ Le Thanh Tong mobilization accelerates distant friendly production only (35.073278ms)
+✔ Minh Menh inspection increases nearby gathering and repairs nearby buildings (46.541009ms)
+✔ nguyen_anh: wounded nearby ally heals and morale recovers; distant ally unaffected (7.668321ms)
+✔ tran_nhan_tong: wounded nearby ally heals and morale recovers; distant ally unaffected (4.332712ms)
+✔ Nguyen Phuc Chu network extends finite resupply to distant recipient (8.449239ms)
+✔ Trinh Cuong fiscal edict adds wood/iron delivery value without adding food (4.984644ms)
+✔ Napoleon concentration produces earlier second artillery impact (16.832877ms)
+✔ Nguyen Anh restoration doubles construction work near builder (28.079603ms)
+✔ Nguyen Phuc Chu network accelerates distant wagon globally (2.564224ms)
+✔ same-character choices currently stack passives and synergy once; duplicate active heals do not multiply (5.87086ms)
+✔ ability command rejects enemy ownership and dead source (0.496845ms)
+✖ Nguyen Hue advertised first strike does not amplify a second hit after the same advance (6.702029ms)
+✔ Han Xin concealment ends at duration boundary before cooldown is ready (23.05437ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 19
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 546.750456
+
+✖ failing tests:
+
+test at tests/leadership-contracts184.test.js:26:1
+✖ Nguyen Hue advertised first strike does not amplify a second hit after the same advance (6.702029ms)
+  AssertionError [ERR_ASSERTION]: first-strike description suggests second stationary hit should not gain boost
+  + actual - expected
+  
+  + 15.238000000000056
+  - 11.259999999999991
+  
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/leadership-contracts184.test.js:26:520)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 15.238000000000056,
+    expected: 11.259999999999991,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

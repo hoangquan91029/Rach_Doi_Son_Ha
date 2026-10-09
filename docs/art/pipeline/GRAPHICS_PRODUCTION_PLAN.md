@@ -58,8 +58,7 @@ Không hứa ngày hoàn tất trước khi đo số frame được chấp nhậ
 
 ## Gate tiếp theo cụ thể
 
-G01 hiện theo [movement research161](movement-research-161/README.md): một canonical master → complete on-model rough cycle162 (0call) → brief look → một whole-illustration capability trial (order mới,0retry) → key/inbetween thật → loop → actual D0 travel/Stop. Guide153/158 và key155 không được dùng làm parent production. Không giữ hai contact cũ bằng mọi giá khi lệch hình thể. Hình nháp là công cụ authoring, không final art. Wood032/iron141 acceptance đứng riêng; food pending không chặn lane độc lập. Các phương pháp exhausted/held không thử lại mù.
-
+G01 hiện theo [kế hoạch movement20261010](MOVEMENT_PRODUCTION_PLAN_20261010.md) và [preview195](pure2d-walk-D0-preview-195/root-intake.json). Có tám whole illustrated PNG và technical playback, chưa continuous naturalness/runtime acceptance. Một brief actual-size loop look đã được yêu cầu; F3/F4 body warning giữ nguyên. Sửa visible issue nếu cần, rồi candidate D0 travel/Pause/Stop và canonical idle cùng family scale. Không mở directions/units hoặc dùng historical162/173/181 order như current instructions. Original guides chỉ authoring, các failed/held/source labels giữ nguyên trong custody.
 Đưa asset mới vào default release sau coverage và actual-scene acceptance; không bật toàn bộ candidate rồi gọi finished. Full project vẫn **INCOMPLETE**.
 
 ## Follow-up162–168
@@ -68,7 +67,7 @@ G01 hiện theo [movement research161](movement-research-161/README.md): một c
 
 169/172/173 bổ sung: trailingankle trong originalrough đã sửa; newillustration giữbody nhưng phaseHELD, không finalsource selected. [173](movement-pose-research-173/README.md) chuyển đề xuất sang verifiedwholeaction/tonalwholepose authority; photo metadata chưa phải visuallyqualifiedreference.170 catalog/compiler đã triển khai và validatednarrowUI, dynamicmatchbanks/defaultrelease còn mở. Không dùng các tool đó để mởfanout khi movement chưađạt.
 
-## Movement hiện hành sau180/181
+## Movement sau180/181 — lịch sử thực thi
 
 Root đã bỏ155 deformedframes và chưa chọn166/172/181 làm finalwalk key.174/178 không lấy được photographicsequence; không dùng mô tả catalog làm bằng chứng chuyển động. Nguồn nguyên lý: [Toon Boom Walk Analysis](https://learn.toonboom.com/modules/walk-cycle-animation/topic/walk-analysis1), dùng contact/down/passing/up và quan hệ toàn thân, không chỉ hướng bàn chân. Directpage403; primary searchtext retrieved, không photo observation claim.
 
@@ -79,3 +78,17 @@ Sửa quan trọng ở180: tại passing, đùi có thể tiến trong khi chân
 Sau correction có pose đúng rõ: hoàn thiện bốnkey cùng một identity/camera/family scale → bốninbetween dựa neighbor thực → export/600ms preview → một brief real-size look → actualD0travel/Stop/pause. Nếu loop còn lỗi nhìn thấy thì sửa đúng lỗi đó. Technicalhash/still không cấp naturalness; chỉ mở directions/units khi pilot hoàn chỉnh đạt. Không bắt buộc giữ contacts033/152 nếu chúng lệch hình thể mới.
 
 175 đã cài actualmenu/match encoded/decoded ownership, budget/cache/release/retry; không accepteddefaultrelease.177 giảm repeatedcell checks trong path mà không đổi motion/path contracts. Hai gói không thay sourceanimation hoặc đóng movement gate. Fullgoal INCOMPLETE.
+
+## Movement182–190 — lịch sử thực thi
+
+[Nghiên cứu actual paths](movement-research-161/CONTACT_OWNERSHIP_188.md) xác định nguồn lỗi concrete:152 labelledopposite nhưng exposedhip→knee→sandal vẫn cùngphase033.188 sửa camera/thân rồi lặpđúng nguồnpose sai. Giữ requestedF4HOLD; **reassign actual188 wholePNG chỉ F0candidate** thay old033, không sửa pixel/giả phase.182/185 chỉ currentpassing candidates, chưa qualifiedloop.
+
+189 đúnghai completeclothed tonal drawings/0calls, cố định legA outerhip/foreground và legB innerhip/background. F4 Aback/Bfront ngược actual188. Tones/labels chỉ guide; finishedillustration giữ canonicalrealisticidentity/proportions, không angularvector/shortleg surfaces.190 NEW ONEbuiltin/0retry đang chạy với guideFIRST pose-only, canonical appearanceauthority và188F0bodycontinuity; bỏ anatomicalleft/right ambiguity và152control. Inspect live call trước tiếp tục, không duplicate/retryblind.
+
+Sau actualoppositecontactintake mới mở fourwholeillustratedinbetweens theo actualneighbors, existingatlas/APNG600ms và onebriefcontinuouslook ở game size; actualD0travel/Pause/Stop sau integration. Không thêm direction/unit khi chưa pilot. Source/guide hoặc stillhash không cấp support/footlock/motionapproval. Family scaleG02 vẫn open.
+
+## Movement hiện hành: complete-source pilot195
+
+F0=188 explicitreassignment; F2=185; F4=192 whole correction giữ actual opposite legpaths; F6=182. F1/F5/F7 là actual193/194. F3=197 sau sole whole guide196, provisional với appearance/phase warning; original193F3 wrongcanvas/bodyjump loại. [Ledger](villager-walk-D0-contact-192/pilot-sequence-195.json) bind tất cả raw/tool receipts,1254wholecanvas/pivot và uniform128cell, không fit/mirror/pixelsplice.195 exporter tái dùng017/014, atlas1024×128 và APNG89cell/600ms. Actual Chromium támframes/ba vòng/zeroerrors là technical playback only.
+
+Root đã hiển thị actual APNG và hỏi một lần về chuyển động; chưa trả lời, chưa motion PASS. F3/F4 body khác neighbors cần continuous judgment; không xử lý bằng repeated still scoring hoặc đổi playback/game speed. Khi đủ tốt, D0 candidate runtime và same-family idle + ordinary UI movement/Pause/Stop kiểm tra practical contact/transition. Stationary preview không chứng minh world footlock. No fanout/defaultrelease/publicpromotion trong gói này.

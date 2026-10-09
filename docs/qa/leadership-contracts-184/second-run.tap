@@ -1,0 +1,49 @@
+✔ han_xin: nearby movement accelerates, remote ally does not, cooldown and expiry recover (60.825507ms)
+✔ napoleon_bonaparte: nearby movement accelerates, remote ally does not, cooldown and expiry recover (87.804803ms)
+✔ nguyen_hue: nearby movement accelerates, remote ally does not, cooldown and expiry recover (73.803688ms)
+✔ Han Xin concealment hides long-range ally but close reconnaissance reveals it (2.244594ms)
+✔ Xiang Yu damage burst consumes finite rations and locks retreat commands (23.773328ms)
+✔ Ly Thuong Kiet defense protects at ford; plain unsupported troops gain no armor (5.997055ms)
+✔ Tran Hung Dao trap rejects dry terrain and damages enemy water occupants only (38.213769ms)
+✔ Le Thanh Tong mobilization accelerates distant friendly production only (36.933291ms)
+✔ Minh Menh inspection increases nearby gathering and repairs nearby buildings (47.404537ms)
+✔ nguyen_anh: wounded nearby ally heals and morale recovers; distant ally unaffected (13.512053ms)
+✔ tran_nhan_tong: wounded nearby ally heals and morale recovers; distant ally unaffected (8.344633ms)
+✔ Nguyen Phuc Chu network extends finite resupply to distant recipient (11.793536ms)
+✔ Trinh Cuong fiscal edict adds wood/iron delivery value without adding food (7.447354ms)
+✔ Napoleon concentration produces earlier second artillery impact (24.68139ms)
+✖ Nguyen Anh restoration doubles construction work near builder (1.373686ms)
+✔ Nguyen Phuc Chu network accelerates distant wagon globally (2.467651ms)
+✔ same-character choices currently stack passives and synergy once; duplicate active heals do not multiply (6.090361ms)
+✔ ability command rejects enemy ownership and dead source (0.510054ms)
+ℹ tests 18
+ℹ suites 0
+ℹ pass 17
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 509.56773
+
+✖ failing tests:
+
+test at tests/leadership-contracts184.test.js:21:1
+✖ Nguyen Anh restoration doubles construction work near builder (1.373686ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  false !== true
+  
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/leadership-contracts184.test.js:21:454)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

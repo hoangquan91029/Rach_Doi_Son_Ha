@@ -1,0 +1,1104 @@
+{
+  "status": "PASS_MERGED183_OFFLINE_BOTH_MAPS_DIAGONAL_PAUSE_RESUME_STOP_MENU_RELAUNCH",
+  "engine": "chromium",
+  "errors": [],
+  "maps": [
+    {
+      "map": "delta",
+      "match": {
+        "tick": 14,
+        "map": "delta",
+        "leaders": [
+          {
+            "king": "tran_nhan_tong",
+            "general": "tran_hung_dao"
+          },
+          {
+            "king": "le_thanh_tong",
+            "general": "ly_thuong_kiet"
+          }
+        ],
+        "art": {
+          "status": "CANDIDATE",
+          "manifest": "ready",
+          "declared": 27,
+          "ready": 27,
+          "approved": 0,
+          "candidates": 27,
+          "failed": 0,
+          "skipped": 0,
+          "fallbacks": 0,
+          "decodedBudgetBytes": 134217728,
+          "retainedDecodedBytes": 17204736,
+          "reservedDecodedBytes": 0,
+          "uniqueDecodedImages": 27,
+          "encodedReady": 0,
+          "retainedEncodedBytes": 3821000,
+          "encodedBudgetBytes": 67108864,
+          "selectedDeclared": 27,
+          "failures": []
+        },
+        "bank": {
+          "phase": "match",
+          "epoch": 2,
+          "encodedBytes": 3821000,
+          "encodedBudgetBytes": 67108864,
+          "activeIds": [
+            "grass",
+            "water",
+            "forest",
+            "residence",
+            "infantry-idle-D00",
+            "cavalry-idle-D00",
+            "villager-idle-D00",
+            "tran-hung-dao-idle-D00",
+            "unit-contact-shadow",
+            "ford",
+            "shore",
+            "forest-bamboo",
+            "forest-palm",
+            "granary",
+            "villager-walk-south-014",
+            "villager-idle-south-014",
+            "villager-gather-wood-south-024",
+            "mountain-outcrop-108",
+            "grassy-hill-111",
+            "food-resource-114",
+            "iron-resource-119",
+            "barracks-idle-121",
+            "supply-depot-idle-126",
+            "villager-gather-iron-south-136",
+            "artillery-workshop-idle-140",
+            "cavalry-camp-idle-147",
+            "shipyard-idle-164"
+          ],
+          "scope": {
+            "map": "delta",
+            "roster": [
+              "villager",
+              "king",
+              "general",
+              "infantry",
+              "spearman",
+              "firearm",
+              "cavalry",
+              "artillery",
+              "wagon",
+              "warship",
+              "transport"
+            ],
+            "buildings": [
+              "residence",
+              "barracks",
+              "cavalryCamp",
+              "artilleryWorkshop",
+              "shipyard",
+              "fort",
+              "wall",
+              "gate",
+              "depot",
+              "granary"
+            ],
+            "leaders": [
+              "tran_nhan_tong",
+              "tran_hung_dao",
+              "le_thanh_tong",
+              "ly_thuong_kiet"
+            ]
+          }
+        },
+        "terrain": {
+          "builds": 1,
+          "draws": 39,
+          "pixels": 5169280
+        }
+      },
+      "worker": {
+        "id": 7,
+        "owner": 0,
+        "type": "villager",
+        "kind": "unit",
+        "x": 6.83382990642116,
+        "y": 21.333829906421162,
+        "hp": 65,
+        "maxHp": 65,
+        "food": 39.97350399999999,
+        "foodMax": 40,
+        "morale": 95,
+        "state": "walk",
+        "dir": 5,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "resuppliedTick": 10,
+        "starving": 0,
+        "lastMovedTick": 14,
+        "order": {
+          "type": "gather",
+          "target": 3
+        }
+      },
+      "destination": {
+        "x": 11.5,
+        "y": 25.5
+      },
+      "directions": [
+        {
+          "tick": 8,
+          "x": 7.395,
+          "y": 21.5,
+          "state": "walk",
+          "dir": 4
+        },
+        {
+          "tick": 11,
+          "x": 7.079999999999998,
+          "y": 21.5,
+          "state": "walk",
+          "dir": 4
+        },
+        {
+          "tick": 14,
+          "x": 6.83382990642116,
+          "y": 21.333829906421162,
+          "state": "walk",
+          "dir": 5
+        }
+      ],
+      "paused": {
+        "tick": 20,
+        "map": "delta",
+        "leaders": [
+          {
+            "king": "tran_nhan_tong",
+            "general": "tran_hung_dao"
+          },
+          {
+            "king": "le_thanh_tong",
+            "general": "ly_thuong_kiet"
+          }
+        ],
+        "art": {
+          "status": "CANDIDATE",
+          "manifest": "ready",
+          "declared": 27,
+          "ready": 27,
+          "approved": 0,
+          "candidates": 27,
+          "failed": 0,
+          "skipped": 0,
+          "fallbacks": 0,
+          "decodedBudgetBytes": 134217728,
+          "retainedDecodedBytes": 17204736,
+          "reservedDecodedBytes": 0,
+          "uniqueDecodedImages": 27,
+          "encodedReady": 0,
+          "retainedEncodedBytes": 3821000,
+          "encodedBudgetBytes": 67108864,
+          "selectedDeclared": 27,
+          "failures": []
+        },
+        "bank": {
+          "phase": "match",
+          "epoch": 2,
+          "encodedBytes": 3821000,
+          "encodedBudgetBytes": 67108864,
+          "activeIds": [
+            "grass",
+            "water",
+            "forest",
+            "residence",
+            "infantry-idle-D00",
+            "cavalry-idle-D00",
+            "villager-idle-D00",
+            "tran-hung-dao-idle-D00",
+            "unit-contact-shadow",
+            "ford",
+            "shore",
+            "forest-bamboo",
+            "forest-palm",
+            "granary",
+            "villager-walk-south-014",
+            "villager-idle-south-014",
+            "villager-gather-wood-south-024",
+            "mountain-outcrop-108",
+            "grassy-hill-111",
+            "food-resource-114",
+            "iron-resource-119",
+            "barracks-idle-121",
+            "supply-depot-idle-126",
+            "villager-gather-iron-south-136",
+            "artillery-workshop-idle-140",
+            "cavalry-camp-idle-147",
+            "shipyard-idle-164"
+          ],
+          "scope": {
+            "map": "delta",
+            "roster": [
+              "villager",
+              "king",
+              "general",
+              "infantry",
+              "spearman",
+              "firearm",
+              "cavalry",
+              "artillery",
+              "wagon",
+              "warship",
+              "transport"
+            ],
+            "buildings": [
+              "residence",
+              "barracks",
+              "cavalryCamp",
+              "artilleryWorkshop",
+              "shipyard",
+              "fort",
+              "wall",
+              "gate",
+              "depot",
+              "granary"
+            ],
+            "leaders": [
+              "tran_nhan_tong",
+              "tran_hung_dao",
+              "le_thanh_tong",
+              "ly_thuong_kiet"
+            ]
+          }
+        },
+        "terrain": {
+          "builds": 1,
+          "draws": 61,
+          "pixels": 5169280
+        }
+      },
+      "resumed": {
+        "tick": 23,
+        "map": "delta",
+        "leaders": [
+          {
+            "king": "tran_nhan_tong",
+            "general": "tran_hung_dao"
+          },
+          {
+            "king": "le_thanh_tong",
+            "general": "ly_thuong_kiet"
+          }
+        ],
+        "art": {
+          "status": "CANDIDATE",
+          "manifest": "ready",
+          "declared": 27,
+          "ready": 27,
+          "approved": 0,
+          "candidates": 27,
+          "failed": 0,
+          "skipped": 0,
+          "fallbacks": 0,
+          "decodedBudgetBytes": 134217728,
+          "retainedDecodedBytes": 17204736,
+          "reservedDecodedBytes": 0,
+          "uniqueDecodedImages": 27,
+          "encodedReady": 0,
+          "retainedEncodedBytes": 3821000,
+          "encodedBudgetBytes": 67108864,
+          "selectedDeclared": 27,
+          "failures": []
+        },
+        "bank": {
+          "phase": "match",
+          "epoch": 2,
+          "encodedBytes": 3821000,
+          "encodedBudgetBytes": 67108864,
+          "activeIds": [
+            "grass",
+            "water",
+            "forest",
+            "residence",
+            "infantry-idle-D00",
+            "cavalry-idle-D00",
+            "villager-idle-D00",
+            "tran-hung-dao-idle-D00",
+            "unit-contact-shadow",
+            "ford",
+            "shore",
+            "forest-bamboo",
+            "forest-palm",
+            "granary",
+            "villager-walk-south-014",
+            "villager-idle-south-014",
+            "villager-gather-wood-south-024",
+            "mountain-outcrop-108",
+            "grassy-hill-111",
+            "food-resource-114",
+            "iron-resource-119",
+            "barracks-idle-121",
+            "supply-depot-idle-126",
+            "villager-gather-iron-south-136",
+            "artillery-workshop-idle-140",
+            "cavalry-camp-idle-147",
+            "shipyard-idle-164"
+          ],
+          "scope": {
+            "map": "delta",
+            "roster": [
+              "villager",
+              "king",
+              "general",
+              "infantry",
+              "spearman",
+              "firearm",
+              "cavalry",
+              "artillery",
+              "wagon",
+              "warship",
+              "transport"
+            ],
+            "buildings": [
+              "residence",
+              "barracks",
+              "cavalryCamp",
+              "artilleryWorkshop",
+              "shipyard",
+              "fort",
+              "wall",
+              "gate",
+              "depot",
+              "granary"
+            ],
+            "leaders": [
+              "tran_nhan_tong",
+              "tran_hung_dao",
+              "le_thanh_tong",
+              "ly_thuong_kiet"
+            ]
+          }
+        },
+        "terrain": {
+          "builds": 1,
+          "draws": 82,
+          "pixels": 5169280
+        }
+      },
+      "stopped": {
+        "tick": 24,
+        "map": "delta",
+        "leaders": [
+          {
+            "king": "tran_nhan_tong",
+            "general": "tran_hung_dao"
+          },
+          {
+            "king": "le_thanh_tong",
+            "general": "ly_thuong_kiet"
+          }
+        ],
+        "art": {
+          "status": "CANDIDATE",
+          "manifest": "ready",
+          "declared": 27,
+          "ready": 27,
+          "approved": 0,
+          "candidates": 27,
+          "failed": 0,
+          "skipped": 0,
+          "fallbacks": 0,
+          "decodedBudgetBytes": 134217728,
+          "retainedDecodedBytes": 17204736,
+          "reservedDecodedBytes": 0,
+          "uniqueDecodedImages": 27,
+          "encodedReady": 0,
+          "retainedEncodedBytes": 3821000,
+          "encodedBudgetBytes": 67108864,
+          "selectedDeclared": 27,
+          "failures": []
+        },
+        "bank": {
+          "phase": "match",
+          "epoch": 2,
+          "encodedBytes": 3821000,
+          "encodedBudgetBytes": 67108864,
+          "activeIds": [
+            "grass",
+            "water",
+            "forest",
+            "residence",
+            "infantry-idle-D00",
+            "cavalry-idle-D00",
+            "villager-idle-D00",
+            "tran-hung-dao-idle-D00",
+            "unit-contact-shadow",
+            "ford",
+            "shore",
+            "forest-bamboo",
+            "forest-palm",
+            "granary",
+            "villager-walk-south-014",
+            "villager-idle-south-014",
+            "villager-gather-wood-south-024",
+            "mountain-outcrop-108",
+            "grassy-hill-111",
+            "food-resource-114",
+            "iron-resource-119",
+            "barracks-idle-121",
+            "supply-depot-idle-126",
+            "villager-gather-iron-south-136",
+            "artillery-workshop-idle-140",
+            "cavalry-camp-idle-147",
+            "shipyard-idle-164"
+          ],
+          "scope": {
+            "map": "delta",
+            "roster": [
+              "villager",
+              "king",
+              "general",
+              "infantry",
+              "spearman",
+              "firearm",
+              "cavalry",
+              "artillery",
+              "wagon",
+              "warship",
+              "transport"
+            ],
+            "buildings": [
+              "residence",
+              "barracks",
+              "cavalryCamp",
+              "artilleryWorkshop",
+              "shipyard",
+              "fort",
+              "wall",
+              "gate",
+              "depot",
+              "granary"
+            ],
+            "leaders": [
+              "tran_nhan_tong",
+              "tran_hung_dao",
+              "le_thanh_tong",
+              "ly_thuong_kiet"
+            ]
+          }
+        },
+        "terrain": {
+          "builds": 1,
+          "draws": 87,
+          "pixels": 5169280
+        }
+      },
+      "menu": {
+        "tick": null,
+        "art": {
+          "status": "PLACEHOLDER_ONLY",
+          "manifest": "not-loaded",
+          "declared": 0,
+          "ready": 0,
+          "approved": 0,
+          "candidates": 0,
+          "failed": 0,
+          "skipped": 0,
+          "fallbacks": 0,
+          "decodedBudgetBytes": 134217728,
+          "retainedDecodedBytes": 0,
+          "reservedDecodedBytes": 0,
+          "uniqueDecodedImages": 0,
+          "encodedReady": 0,
+          "retainedEncodedBytes": 0,
+          "encodedBudgetBytes": 67108864,
+          "selectedDeclared": 0,
+          "failures": []
+        },
+        "bank": {
+          "phase": "menu",
+          "epoch": 3,
+          "encodedBytes": 3821000,
+          "encodedBudgetBytes": 67108864,
+          "activeIds": [],
+          "scope": null
+        },
+        "terrain": {
+          "builds": 1,
+          "draws": 94,
+          "pixels": 0
+        }
+      }
+    },
+    {
+      "map": "coast",
+      "match": {
+        "tick": 15,
+        "map": "coast",
+        "leaders": [
+          {
+            "king": "napoleon_bonaparte",
+            "general": "le_thanh_tong"
+          },
+          {
+            "king": "le_thanh_tong",
+            "general": "ly_thuong_kiet"
+          }
+        ],
+        "art": {
+          "status": "CANDIDATE",
+          "manifest": "ready",
+          "declared": 27,
+          "ready": 26,
+          "approved": 0,
+          "candidates": 26,
+          "failed": 0,
+          "skipped": 0,
+          "fallbacks": 0,
+          "decodedBudgetBytes": 134217728,
+          "retainedDecodedBytes": 16156160,
+          "reservedDecodedBytes": 0,
+          "uniqueDecodedImages": 26,
+          "encodedReady": 0,
+          "retainedEncodedBytes": 3821000,
+          "encodedBudgetBytes": 67108864,
+          "selectedDeclared": 26,
+          "failures": []
+        },
+        "bank": {
+          "phase": "match",
+          "epoch": 4,
+          "encodedBytes": 3821000,
+          "encodedBudgetBytes": 67108864,
+          "activeIds": [
+            "grass",
+            "water",
+            "forest",
+            "residence",
+            "infantry-idle-D00",
+            "cavalry-idle-D00",
+            "villager-idle-D00",
+            "unit-contact-shadow",
+            "ford",
+            "shore",
+            "forest-bamboo",
+            "forest-palm",
+            "granary",
+            "villager-walk-south-014",
+            "villager-idle-south-014",
+            "villager-gather-wood-south-024",
+            "mountain-outcrop-108",
+            "grassy-hill-111",
+            "food-resource-114",
+            "iron-resource-119",
+            "barracks-idle-121",
+            "supply-depot-idle-126",
+            "villager-gather-iron-south-136",
+            "artillery-workshop-idle-140",
+            "cavalry-camp-idle-147",
+            "shipyard-idle-164"
+          ],
+          "scope": {
+            "map": "coast",
+            "roster": [
+              "villager",
+              "king",
+              "general",
+              "infantry",
+              "spearman",
+              "firearm",
+              "cavalry",
+              "artillery",
+              "wagon",
+              "warship",
+              "transport"
+            ],
+            "buildings": [
+              "residence",
+              "barracks",
+              "cavalryCamp",
+              "artilleryWorkshop",
+              "shipyard",
+              "fort",
+              "wall",
+              "gate",
+              "depot",
+              "granary"
+            ],
+            "leaders": [
+              "napoleon_bonaparte",
+              "le_thanh_tong",
+              "ly_thuong_kiet"
+            ]
+          }
+        },
+        "terrain": {
+          "builds": 2,
+          "draws": 138,
+          "pixels": 5169280
+        }
+      },
+      "worker": {
+        "id": 7,
+        "owner": 0,
+        "type": "villager",
+        "kind": "unit",
+        "x": 6.6853374823719856,
+        "y": 21.185337482371988,
+        "hp": 65,
+        "maxHp": 65,
+        "food": 39.951999999999984,
+        "foodMax": 40,
+        "morale": 80,
+        "state": "walk",
+        "dir": 5,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "resuppliedTick": 9,
+        "starving": 0,
+        "lastMovedTick": 15,
+        "order": {
+          "type": "gather",
+          "target": 3
+        }
+      },
+      "destination": {
+        "x": 11.5,
+        "y": 25.5
+      },
+      "directions": [
+        {
+          "tick": 7,
+          "x": 7.395,
+          "y": 21.5,
+          "state": "walk",
+          "dir": 4
+        },
+        {
+          "tick": 10,
+          "x": 7.079999999999998,
+          "y": 21.5,
+          "state": "walk",
+          "dir": 4
+        },
+        {
+          "tick": 12,
+          "x": 6.908076118445748,
+          "y": 21.40807611844575,
+          "state": "walk",
+          "dir": 5
+        },
+        {
+          "tick": 15,
+          "x": 6.6853374823719856,
+          "y": 21.185337482371988,
+          "state": "walk",
+          "dir": 5
+        }
+      ],
+      "paused": {
+        "tick": 21,
+        "map": "coast",
+        "leaders": [
+          {
+            "king": "napoleon_bonaparte",
+            "general": "le_thanh_tong"
+          },
+          {
+            "king": "le_thanh_tong",
+            "general": "ly_thuong_kiet"
+          }
+        ],
+        "art": {
+          "status": "CANDIDATE",
+          "manifest": "ready",
+          "declared": 27,
+          "ready": 26,
+          "approved": 0,
+          "candidates": 26,
+          "failed": 0,
+          "skipped": 0,
+          "fallbacks": 0,
+          "decodedBudgetBytes": 134217728,
+          "retainedDecodedBytes": 16156160,
+          "reservedDecodedBytes": 0,
+          "uniqueDecodedImages": 26,
+          "encodedReady": 0,
+          "retainedEncodedBytes": 3821000,
+          "encodedBudgetBytes": 67108864,
+          "selectedDeclared": 26,
+          "failures": []
+        },
+        "bank": {
+          "phase": "match",
+          "epoch": 4,
+          "encodedBytes": 3821000,
+          "encodedBudgetBytes": 67108864,
+          "activeIds": [
+            "grass",
+            "water",
+            "forest",
+            "residence",
+            "infantry-idle-D00",
+            "cavalry-idle-D00",
+            "villager-idle-D00",
+            "unit-contact-shadow",
+            "ford",
+            "shore",
+            "forest-bamboo",
+            "forest-palm",
+            "granary",
+            "villager-walk-south-014",
+            "villager-idle-south-014",
+            "villager-gather-wood-south-024",
+            "mountain-outcrop-108",
+            "grassy-hill-111",
+            "food-resource-114",
+            "iron-resource-119",
+            "barracks-idle-121",
+            "supply-depot-idle-126",
+            "villager-gather-iron-south-136",
+            "artillery-workshop-idle-140",
+            "cavalry-camp-idle-147",
+            "shipyard-idle-164"
+          ],
+          "scope": {
+            "map": "coast",
+            "roster": [
+              "villager",
+              "king",
+              "general",
+              "infantry",
+              "spearman",
+              "firearm",
+              "cavalry",
+              "artillery",
+              "wagon",
+              "warship",
+              "transport"
+            ],
+            "buildings": [
+              "residence",
+              "barracks",
+              "cavalryCamp",
+              "artilleryWorkshop",
+              "shipyard",
+              "fort",
+              "wall",
+              "gate",
+              "depot",
+              "granary"
+            ],
+            "leaders": [
+              "napoleon_bonaparte",
+              "le_thanh_tong",
+              "ly_thuong_kiet"
+            ]
+          }
+        },
+        "terrain": {
+          "builds": 2,
+          "draws": 158,
+          "pixels": 5169280
+        }
+      },
+      "resumed": {
+        "tick": 24,
+        "map": "coast",
+        "leaders": [
+          {
+            "king": "napoleon_bonaparte",
+            "general": "le_thanh_tong"
+          },
+          {
+            "king": "le_thanh_tong",
+            "general": "ly_thuong_kiet"
+          }
+        ],
+        "art": {
+          "status": "CANDIDATE",
+          "manifest": "ready",
+          "declared": 27,
+          "ready": 26,
+          "approved": 0,
+          "candidates": 26,
+          "failed": 0,
+          "skipped": 0,
+          "fallbacks": 0,
+          "decodedBudgetBytes": 134217728,
+          "retainedDecodedBytes": 16156160,
+          "reservedDecodedBytes": 0,
+          "uniqueDecodedImages": 26,
+          "encodedReady": 0,
+          "retainedEncodedBytes": 3821000,
+          "encodedBudgetBytes": 67108864,
+          "selectedDeclared": 26,
+          "failures": []
+        },
+        "bank": {
+          "phase": "match",
+          "epoch": 4,
+          "encodedBytes": 3821000,
+          "encodedBudgetBytes": 67108864,
+          "activeIds": [
+            "grass",
+            "water",
+            "forest",
+            "residence",
+            "infantry-idle-D00",
+            "cavalry-idle-D00",
+            "villager-idle-D00",
+            "unit-contact-shadow",
+            "ford",
+            "shore",
+            "forest-bamboo",
+            "forest-palm",
+            "granary",
+            "villager-walk-south-014",
+            "villager-idle-south-014",
+            "villager-gather-wood-south-024",
+            "mountain-outcrop-108",
+            "grassy-hill-111",
+            "food-resource-114",
+            "iron-resource-119",
+            "barracks-idle-121",
+            "supply-depot-idle-126",
+            "villager-gather-iron-south-136",
+            "artillery-workshop-idle-140",
+            "cavalry-camp-idle-147",
+            "shipyard-idle-164"
+          ],
+          "scope": {
+            "map": "coast",
+            "roster": [
+              "villager",
+              "king",
+              "general",
+              "infantry",
+              "spearman",
+              "firearm",
+              "cavalry",
+              "artillery",
+              "wagon",
+              "warship",
+              "transport"
+            ],
+            "buildings": [
+              "residence",
+              "barracks",
+              "cavalryCamp",
+              "artilleryWorkshop",
+              "shipyard",
+              "fort",
+              "wall",
+              "gate",
+              "depot",
+              "granary"
+            ],
+            "leaders": [
+              "napoleon_bonaparte",
+              "le_thanh_tong",
+              "ly_thuong_kiet"
+            ]
+          }
+        },
+        "terrain": {
+          "builds": 2,
+          "draws": 180,
+          "pixels": 5169280
+        }
+      },
+      "stopped": {
+        "tick": 25,
+        "map": "coast",
+        "leaders": [
+          {
+            "king": "napoleon_bonaparte",
+            "general": "le_thanh_tong"
+          },
+          {
+            "king": "le_thanh_tong",
+            "general": "ly_thuong_kiet"
+          }
+        ],
+        "art": {
+          "status": "CANDIDATE",
+          "manifest": "ready",
+          "declared": 27,
+          "ready": 26,
+          "approved": 0,
+          "candidates": 26,
+          "failed": 0,
+          "skipped": 0,
+          "fallbacks": 0,
+          "decodedBudgetBytes": 134217728,
+          "retainedDecodedBytes": 16156160,
+          "reservedDecodedBytes": 0,
+          "uniqueDecodedImages": 26,
+          "encodedReady": 0,
+          "retainedEncodedBytes": 3821000,
+          "encodedBudgetBytes": 67108864,
+          "selectedDeclared": 26,
+          "failures": []
+        },
+        "bank": {
+          "phase": "match",
+          "epoch": 4,
+          "encodedBytes": 3821000,
+          "encodedBudgetBytes": 67108864,
+          "activeIds": [
+            "grass",
+            "water",
+            "forest",
+            "residence",
+            "infantry-idle-D00",
+            "cavalry-idle-D00",
+            "villager-idle-D00",
+            "unit-contact-shadow",
+            "ford",
+            "shore",
+            "forest-bamboo",
+            "forest-palm",
+            "granary",
+            "villager-walk-south-014",
+            "villager-idle-south-014",
+            "villager-gather-wood-south-024",
+            "mountain-outcrop-108",
+            "grassy-hill-111",
+            "food-resource-114",
+            "iron-resource-119",
+            "barracks-idle-121",
+            "supply-depot-idle-126",
+            "villager-gather-iron-south-136",
+            "artillery-workshop-idle-140",
+            "cavalry-camp-idle-147",
+            "shipyard-idle-164"
+          ],
+          "scope": {
+            "map": "coast",
+            "roster": [
+              "villager",
+              "king",
+              "general",
+              "infantry",
+              "spearman",
+              "firearm",
+              "cavalry",
+              "artillery",
+              "wagon",
+              "warship",
+              "transport"
+            ],
+            "buildings": [
+              "residence",
+              "barracks",
+              "cavalryCamp",
+              "artilleryWorkshop",
+              "shipyard",
+              "fort",
+              "wall",
+              "gate",
+              "depot",
+              "granary"
+            ],
+            "leaders": [
+              "napoleon_bonaparte",
+              "le_thanh_tong",
+              "ly_thuong_kiet"
+            ]
+          }
+        },
+        "terrain": {
+          "builds": 2,
+          "draws": 185,
+          "pixels": 5169280
+        }
+      },
+      "menu": {
+        "tick": null,
+        "art": {
+          "status": "PLACEHOLDER_ONLY",
+          "manifest": "not-loaded",
+          "declared": 0,
+          "ready": 0,
+          "approved": 0,
+          "candidates": 0,
+          "failed": 0,
+          "skipped": 0,
+          "fallbacks": 0,
+          "decodedBudgetBytes": 134217728,
+          "retainedDecodedBytes": 0,
+          "reservedDecodedBytes": 0,
+          "uniqueDecodedImages": 0,
+          "encodedReady": 0,
+          "retainedEncodedBytes": 0,
+          "encodedBudgetBytes": 67108864,
+          "selectedDeclared": 0,
+          "failures": []
+        },
+        "bank": {
+          "phase": "menu",
+          "epoch": 5,
+          "encodedBytes": 3821000,
+          "encodedBudgetBytes": 67108864,
+          "activeIds": [],
+          "scope": null
+        },
+        "terrain": {
+          "builds": 2,
+          "draws": 192,
+          "pixels": 0
+        }
+      }
+    }
+  ],
+  "method": "Ordinary UI; network offline after menu; read-only diagnostics; no gameplay injection",
+  "bundleSHA256": "80a85a8266465dd57c0475f08507d4a9c04f6c8e62a0ed2e460e0b6cd3f5fba8",
+  "startMenu": {
+    "tick": null,
+    "art": {
+      "status": "PLACEHOLDER_ONLY",
+      "manifest": "not-loaded",
+      "declared": 0,
+      "ready": 0,
+      "approved": 0,
+      "candidates": 0,
+      "failed": 0,
+      "skipped": 0,
+      "fallbacks": 0,
+      "decodedBudgetBytes": 134217728,
+      "retainedDecodedBytes": 0,
+      "reservedDecodedBytes": 0,
+      "uniqueDecodedImages": 0,
+      "encodedReady": 0,
+      "retainedEncodedBytes": 0,
+      "encodedBudgetBytes": 67108864,
+      "selectedDeclared": 0,
+      "failures": []
+    },
+    "bank": {
+      "phase": "menu",
+      "epoch": 1,
+      "encodedBytes": 3821000,
+      "encodedBudgetBytes": 67108864,
+      "activeIds": [],
+      "scope": null
+    },
+    "terrain": {
+      "builds": 0,
+      "draws": 0,
+      "pixels": 0
+    }
+  },
+  "cleanup": {
+    "rooms": 0,
+    "listening": false
+  }
+}

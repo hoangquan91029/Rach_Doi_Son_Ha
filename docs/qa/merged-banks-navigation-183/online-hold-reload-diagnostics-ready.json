@@ -1,0 +1,249 @@
+{
+  "status": "HOLD",
+  "map": "delta",
+  "peerBrowsers": [
+    "chromium",
+    "firefox"
+  ],
+  "method": "One finite ordinary UI combat; no gameplay command/state/facing/outcome/speed injection; read-only diagnostics",
+  "errors": [],
+  "servedBundles": [
+    {
+      "peer": 0,
+      "sha256": "80a85a8266465dd57c0475f08507d4a9c04f6c8e62a0ed2e460e0b6cd3f5fba8"
+    },
+    {
+      "peer": 1,
+      "sha256": "80a85a8266465dd57c0475f08507d4a9c04f6c8e62a0ed2e460e0b6cd3f5fba8"
+    },
+    {
+      "peer": 1,
+      "sha256": "80a85a8266465dd57c0475f08507d4a9c04f6c8e62a0ed2e460e0b6cd3f5fba8"
+    }
+  ],
+  "combatSamples": [],
+  "orders": [],
+  "initial": [
+    {
+      "tick": 5,
+      "mode": "online",
+      "player": 0,
+      "room": "D90E69",
+      "paused": false,
+      "artLoading": false,
+      "selection": [],
+      "bank": {
+        "phase": "match",
+        "epoch": 2,
+        "encodedBytes": 3821000,
+        "encodedBudgetBytes": 67108864,
+        "activeIds": [
+          "grass",
+          "water",
+          "forest",
+          "residence",
+          "infantry-idle-D00",
+          "cavalry-idle-D00",
+          "villager-idle-D00",
+          "tran-hung-dao-idle-D00",
+          "unit-contact-shadow",
+          "ford",
+          "shore",
+          "forest-bamboo",
+          "forest-palm",
+          "granary",
+          "villager-walk-south-014",
+          "villager-idle-south-014",
+          "villager-gather-wood-south-024",
+          "mountain-outcrop-108",
+          "grassy-hill-111",
+          "food-resource-114",
+          "iron-resource-119",
+          "barracks-idle-121",
+          "supply-depot-idle-126",
+          "villager-gather-iron-south-136",
+          "artillery-workshop-idle-140",
+          "cavalry-camp-idle-147",
+          "shipyard-idle-164"
+        ],
+        "scope": {
+          "map": "delta",
+          "roster": [
+            "villager",
+            "king",
+            "general",
+            "infantry",
+            "spearman",
+            "firearm",
+            "cavalry",
+            "artillery",
+            "wagon",
+            "warship",
+            "transport"
+          ],
+          "buildings": [
+            "residence",
+            "barracks",
+            "cavalryCamp",
+            "artilleryWorkshop",
+            "shipyard",
+            "fort",
+            "wall",
+            "gate",
+            "depot",
+            "granary"
+          ],
+          "leaders": [
+            "tran_nhan_tong",
+            "tran_hung_dao"
+          ]
+        }
+      },
+      "art": {
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 27,
+        "ready": 27,
+        "approved": 0,
+        "candidates": 27,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 17204736,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 27,
+        "encodedReady": 0,
+        "retainedEncodedBytes": 3821000,
+        "encodedBudgetBytes": 67108864,
+        "selectedDeclared": 27,
+        "failures": []
+      },
+      "winner": null,
+      "reason": "",
+      "leaders": [
+        {
+          "king": "tran_nhan_tong",
+          "general": "tran_hung_dao"
+        },
+        {
+          "king": "tran_nhan_tong",
+          "general": "tran_hung_dao"
+        }
+      ]
+    },
+    {
+      "tick": 5,
+      "mode": "online",
+      "player": 1,
+      "room": "D90E69",
+      "paused": false,
+      "artLoading": false,
+      "selection": [],
+      "bank": {
+        "phase": "match",
+        "epoch": 2,
+        "encodedBytes": 3821000,
+        "encodedBudgetBytes": 67108864,
+        "activeIds": [
+          "grass",
+          "water",
+          "forest",
+          "residence",
+          "infantry-idle-D00",
+          "cavalry-idle-D00",
+          "villager-idle-D00",
+          "tran-hung-dao-idle-D00",
+          "unit-contact-shadow",
+          "ford",
+          "shore",
+          "forest-bamboo",
+          "forest-palm",
+          "granary",
+          "villager-walk-south-014",
+          "villager-idle-south-014",
+          "villager-gather-wood-south-024",
+          "mountain-outcrop-108",
+          "grassy-hill-111",
+          "food-resource-114",
+          "iron-resource-119",
+          "barracks-idle-121",
+          "supply-depot-idle-126",
+          "villager-gather-iron-south-136",
+          "artillery-workshop-idle-140",
+          "cavalry-camp-idle-147",
+          "shipyard-idle-164"
+        ],
+        "scope": {
+          "map": "delta",
+          "roster": [
+            "villager",
+            "king",
+            "general",
+            "infantry",
+            "spearman",
+            "firearm",
+            "cavalry",
+            "artillery",
+            "wagon",
+            "warship",
+            "transport"
+          ],
+          "buildings": [
+            "residence",
+            "barracks",
+            "cavalryCamp",
+            "artilleryWorkshop",
+            "shipyard",
+            "fort",
+            "wall",
+            "gate",
+            "depot",
+            "granary"
+          ],
+          "leaders": [
+            "tran_nhan_tong",
+            "tran_hung_dao"
+          ]
+        }
+      },
+      "art": {
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 27,
+        "ready": 27,
+        "approved": 0,
+        "candidates": 27,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 17204736,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 27,
+        "encodedReady": 0,
+        "retainedEncodedBytes": 3821000,
+        "encodedBudgetBytes": 67108864,
+        "selectedDeclared": 27,
+        "failures": []
+      },
+      "winner": null,
+      "reason": "",
+      "leaders": [
+        {
+          "king": "tran_nhan_tong",
+          "general": "tran_hung_dao"
+        },
+        {
+          "king": "tran_nhan_tong",
+          "general": "tran_hung_dao"
+        }
+      ]
+    }
+  ],
+  "error": "page.evaluate: rtsDiagnostics is not defined\n@debugger eval code line 311 > eval:1:5\nevaluate@debugger eval code:313:16\n@debugger eval code:1:44\n@debugger eval code:1:62\n\n    at snap (/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/merged-banks-navigation-183/online-combat-rematch.mjs:8:17)\n    at wait (/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/merged-banks-navigation-183/online-combat-rematch.mjs:10:98)\n    at bankReady (/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/merged-banks-navigation-183/online-combat-rematch.mjs:14:41)\n    at /home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/merged-banks-navigation-183/online-combat-rematch.mjs:18:75",
+  "cleanup": {
+    "rooms": 0,
+    "listening": false
+  }
+}

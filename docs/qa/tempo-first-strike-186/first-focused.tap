@@ -1,0 +1,59 @@
+✔ han_xin: nearby movement accelerates, remote ally does not, cooldown and expiry recover (60.097111ms)
+✔ napoleon_bonaparte: nearby movement accelerates, remote ally does not, cooldown and expiry recover (91.29774ms)
+✔ nguyen_hue: nearby movement accelerates, remote ally does not, cooldown and expiry recover (74.761987ms)
+✔ Han Xin concealment hides long-range ally but close reconnaissance reveals it (2.163199ms)
+✔ Xiang Yu damage burst consumes finite rations and locks retreat commands (24.682086ms)
+✔ Ly Thuong Kiet defense protects at ford; plain unsupported troops gain no armor (6.311982ms)
+✔ Tran Hung Dao trap rejects dry terrain and damages enemy water occupants only (40.240049ms)
+✔ Le Thanh Tong mobilization accelerates distant friendly production only (34.633659ms)
+✔ Minh Menh inspection increases nearby gathering and repairs nearby buildings (42.678953ms)
+✔ nguyen_anh: wounded nearby ally heals and morale recovers; distant ally unaffected (8.535746ms)
+✔ tran_nhan_tong: wounded nearby ally heals and morale recovers; distant ally unaffected (4.359645ms)
+✔ Nguyen Phuc Chu network extends finite resupply to distant recipient (8.958344ms)
+✔ Trinh Cuong fiscal edict adds wood/iron delivery value without adding food (4.303162ms)
+✔ Napoleon concentration produces earlier second artillery impact (16.508813ms)
+✔ Nguyen Anh restoration doubles construction work near builder (28.564138ms)
+✔ Nguyen Phuc Chu network accelerates distant wagon globally (2.323329ms)
+✔ same-character choices currently stack passives and synergy once; duplicate active heals do not multiply (5.664978ms)
+✔ ability command rejects enemy ownership and dead source (0.484505ms)
+✔ Nguyen Hue advertised first strike does not amplify a second hit after the same advance (5.810808ms)
+✔ Han Xin concealment ends at duration boundary before cooldown is ready (22.997044ms)
+✔ first advancing hit boosts once; stationary follow-up and re-advance cannot renew same cast (33.135249ms)
+✔ same-character simultaneous casts give one boosted hit and consume both cast tokens (9.271731ms)
+✔ nonadvancing impact preserves token until a later advance (8.468633ms)
+✔ cancelled windup and dead-target rejection preserve first strike (9.618409ms)
+✖ expired or outside-radius effects do not consume; return into live radius permits bonus (56.888034ms)
+✔ a later natural cooldown cast renews token and prunes old marker at impact (109.140399ms)
+✔ one artillery impact shares first-strike bonus with differently armored splash victims (5.100418ms)
+✔ consumption survives serialized state; views omit markers for both owner and opponent (17.214631ms)
+ℹ tests 28
+ℹ suites 0
+ℹ pass 27
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 538.192062
+
+✖ failing tests:
+
+test at tests/tempo-first-strike186.test.js:14:1
+✖ expired or outside-radius effects do not consume; return into live radius permits bonus (56.888034ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  [] !== undefined
+  
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/tempo-first-strike186.test.js:14:272)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [],
+    expected: undefined,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

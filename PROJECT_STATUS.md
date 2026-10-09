@@ -1,32 +1,25 @@
-# Trạng thái dự án — checkpoint181, 2026-10-10
+# Trạng thái — checkpoint197 / movement preview195
 
-**INCOMPLETE.** [Kế hoạch](docs/PROJECT_PLAN.md) · [Hàng đợi](NEXT_STEPS.md) · [Đồ họa](docs/art/pipeline/GRAPHICS_PRODUCTION_PLAN.md). Trạng thái173 cũ được giữ nguyên byte tại [history](docs/checkpoints/checkpoint173-entrypoints/README.md); audit154 là snapshot, không phải lệnh hiện hành.
-
-## Public và local
-
-- **PUBLIC149 giữ nguyên:** [development art26](https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/?art=camp), `index-05PkH4eu.js`, SHA `70808200c04fa3547aa4204a0baa6e04546f6d9206c93667ee4c3edf7556883b`, service157023.175 kiểm đúng179distfiles; không deploy/restart. URL trần vẫn procedural fallback. Funnel443/8443 được cấu hình public; chưa có bằng chứng final match từ desktop/mạng ngoài.
-- Public089 online hai map và090 offlineAI victory đứng trong phạm vi cũ. Incident167 overwrite/restoration và168 normalTLS proof được bảo toàn; không dùng smoke restoration làm full-match evidence.
-- **LOCAL:**156 passenger starvation,159 per-victim splash,163 actual training duration/ration warning,165 Shipyard idle27,170 registry/compiler,175 match-bank lifecycle và177 navigation cache. Food character099/101 vẫn local/pending; chưa đưa vào publicscope.
+**INCOMPLETE.** [Kế hoạch movement](docs/art/pipeline/MOVEMENT_PRODUCTION_PLAN_20261010.md) · [Kế hoạch toàn dự án](docs/PROJECT_PLAN.md) · [Next steps](NEXT_STEPS.md).
 
 ## Movement sau phản hồi dị dạng
 
-155F2/F6 bị người dùng bác bỏ;158 dừng0call.166/172 đều HELD, không approved continuity.174/178 external photo retrieval thất bại; không nhìn thấy sequence nên không pose authority.
+Đã xác định old152 được gắn nhãn bước đối diện nhưng đường chân thực tế giống033.188 sửa camera rồi lặp pose sai; original F4 HOLD giữ nguyên, raw được reassign rõ chỉ sang F0 candidate.189 dùng hai whole clothed guides cố định A/B hip-to-foot.190 guide+ảnh cũ vẫn lặp;191 sole-guide đổi pose nhưng lệch diện mạo;192 whole edit giữ pose và khôi phục mặt/nón. [Phân tích trên ảnh thật](docs/art/pipeline/movement-research-161/CONTACT_OWNERSHIP_188.md) ghi đầy đủ.
 
-[179](docs/art/pipeline/villager-walk-D0-tonal-179/root-intake.json) có8whole tonal rough drawings; chưa tự nhiên/final. [180](docs/art/pipeline/villager-walk-D0-passing-180/root-intake.json) sửa đúng2passing drawings: đùi tiến, chân dưới gập về sau, chân trụ chịu tải. Quy tắc ép ankle vượt idlex không chứng minh passing và không được tiếp tục dùng.
+[195](docs/art/pipeline/pure2d-walk-D0-preview-195/root-intake.json) hiện có tám whole illustrated PNG,128 atlas và89cell APNG600ms. Sources:188/193/185/197/192/194/182/194 theo F0–F7.193F3 nonfamily canvas bị loại;196 guide/197 whole source thay slot này. Root chỉ chọn197 cho complete-pilot review, giữ body/head/phase warnings.11 builtin calls trong các gói182–197,0manual retries;8 selected whole source PNGs. Không vector/cutout/3D/source-pixel repair trong thành phẩm.
 
-[181](docs/art/pipeline/villager-walk-D0-capability-181/root-intake.json):1 builtin call/0retry, raw1254RGBA giữ nguyên; uniform256/128/89, không fit/warp/splice. Realistic body/hat/clothes được giữ; chân gập rõ nhưng sandal còn nhấc cao/tụt sau gần gối. **Candidate chưa chọn finalF6**, chưa completeD0loop/runtime/motion approval. NEXT sửa visiblewholepose trước khi mở key/inbetween khác. Nguồn033/152 chỉ contact candidates, không bắt buộc giữ nếu lệch cycle mới.
+Actual Chromium chạy đủ tám frame/ba vòng,zeroerrors; output/hash/call custody verified. **Chưa motion accepted:** F3/F4 thân/arms khác neighbors, F1 down subtle. Root hiển thị APNG và hỏi một lần về naturalness tại gameplay size; feedback pending, không suy PASS. Chưa D0 runtime install, world footlock, direction/unit fanout hoặc public promotion. Owner032wood/141iron chỉ shownD1 loops; food101 riêng.
 
-Owner032wood/141iron chỉ chấp nhận các D1loop đã xem. Food101 còn chờ phản hồi; walk014 có actual playback nhưng không thừa hưởng gather approval. Loadedgoods dùng ordinarywalk.
+## Gameplay và candidate browser
 
-## Framework và hiệu năng
+[186](docs/qa/tempo-first-strike-186/root-intake.json) sửa đúng first-strike Nguyễn Huệ: một valid impact mỗi unit/cast, shared splash bonus, overlapping casts cùng tiêu thụ, private serialized state không gửi player view.29 focused/82 regressions PASS; mô tả/speed/duration/cooldown giữ nguyên. Sim local SHA4aa2bfbdb499371cd18adc4306b3ae313fe8c7410e3d4e2957a46b40e67c85a5.184 mismatch/fixture failure receipts được giữ nguyên; local root intake accepted, chưa browser/public binding.
 
-- [170](docs/qa/art-catalog-170/root-intake.json):9legacyrecipes/28definitions, deterministic manifest compiler/sharedroute registry, pendingrelease refusal và missingfamilies.
-- [175](docs/qa/art-bank-runtime-175/root-intake.json): boot giữ≈3.82MB encoded hash-verified; match decode đúng scope/all11units/all10buildings/selectedleaders hai bên; menu decodedimages/bytes0, encoded giữ để offline reentry.27 normal-flow contracts + actualChrome/Firefox hai map offline/online2peer reload/new epoch bind1fc4…; correction28 contracts + actualChromium art-decoder fault/retry/menu bind007f…. Giữ original failure receipts. Completed-combat rematch/bản defaultaccepted/merged177 vẫn mở.
-- [176](docs/qa/performance-profile-176/root-intake.json):2024samples, costly normal epochs chủ yếu travel/path; actualAI ancestry1.68%, không được gọi AI là nguyên nhân duy nhất.
-- [177](docs/qa/navigation-cache-177/root-intake.json): query-local exactcellpass memo, fractional/corner/owner/gate/path tie/retry/speed giữ nguyên.82 contracts gồm pairedstatehash/AI/naval PASS. Một pairedDelta5 diagnostic39→38naturalunits/world: p95step52.934→11.924ms, max≈64ms còn; không exclusiveCPU hoặc production-headroom guarantee.175 builds dùng sim cũa266…; currentlocal simc95e… chưa có mergedbrowserbuild.
+[183](docs/qa/merged-banks-navigation-183/root-intake.json) và [187](docs/qa/rematch-bank-completion-187/root-intake.json) bind merged175 bank/177 navigation, chunk80a85a8266465dd57c0475f08507d4a9c04f6c8e62a0ed2e460e0b6cd3f5fba8/simc95e…bb27. Actual Chrome/Firefox offline-before-setup hai map, movement/menu/cache, synchronized General defeat và một corrected actual Delta rematch samecode/newtick/newbankepoch/menu decoded0.183 original result-modal race bảo toàn;187 đóng rematch gap. These frozen proofs **exclude186**, không chứng minh capacity/final visual/default release.
 
-## Khoảng thiếu để hoàn thành
+## Public và gates còn mở
 
-Realistic units/12leaders đủ direction/action, family scale thống nhất; building3idle còn thiếu và mọi construction/hit/death; hai map composition cuối; GP4/ability policy; dense-browser/liveonline performance; accepted art mặc định, release vận hành/rollback và final cả2mode/2map/externaldesktop/WAN. Local test không chứng minh public đã nhận fix. Full master/web/historical/visual/81–145 vẫn mở.
+[Public149 development art26](https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/?art=camp) giữ nguyên179files, index-05PkH4eu.js SHA70808200c04fa3547aa4204a0baa6e04546f6d9206c93667ee4c3edf7556883b, service157023. No build/deploy/restart trên production. Public089/090 evidence đứng trong scope cũ; local changes không tự thành public proof. Incident167/restoration168 được giữ nguyên.
 
-Worker Sol6.1Low, builtin whole2D, không quota/API/key/3D/cutouts/limb textures/pixelsplicing. Giữ original/leadership/raw/held/rejected custody. Tại checkpoint mọi worker/imagecall/testhandle đã terminal; production cố ý chạy. Inspect live state trước việc mới.
+Realistic roster/directions/actions/12leaders, idle-walk-work scale, building states/maps, dense browser/live-room capacity, accepted default release, external desktop/WAN và final public two-mode validation còn mở. Candidate builds phải isolated; promotion cần exact source/build/relevant scene/rollback. Full master/web/historical/visual/81–145 và later requirements chưa hoàn tất.
+
+Mọi owned browser/server/imagecall/worker handle trong gói đã đóng; production cố ý chạy. Sol6.1Low/builtin/pure2D, noquota/API/key/3D/cutouts/limbtextures/pixelsplicing. Leadership/canonical/raw/held/rejected custody giữ nguyên. [History181](docs/checkpoints/checkpoint181-entrypoints/README.md) byte-preserved từ b3b125d.
