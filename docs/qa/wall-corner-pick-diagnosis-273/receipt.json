@@ -1,0 +1,226 @@
+{
+  "status": "READONLY273_FRACTIONAL_DIAGNOSTIC_FIREFOX_FLOORING_FALLBACK_MISMATCH_RECONSTRUCTED",
+  "campaigns": 0,
+  "builds": 0,
+  "imageCalls": 0,
+  "gameCommands": 0,
+  "mutations": "owned diagnosis273 files only",
+  "sourceHEAD": "02174111547b3a8d9f910537cec7511419261581",
+  "recorded267": {
+    "targetId": 51,
+    "mask": 9,
+    "selection": [
+      37
+    ],
+    "camera": {
+      "x": 4.266666666666667,
+      "y": 24.428571428571427,
+      "zoom": 1.08
+    },
+    "fourMasks": [
+      5,
+      6,
+      9,
+      10
+    ],
+    "attemptedThirdPointRecorded": false,
+    "actualPointerClientCoordinatesRecorded": false
+  },
+  "evidence": {
+    "diagnosticFractionalPoint": {
+      "x": 644.7211428571428,
+      "y": 388.24342857142864
+    },
+    "fractionalExactVisualPick": 51,
+    "PlaywrightHundredthPoint": {
+      "x": 644.72,
+      "y": 388.24
+    },
+    "hundredthVisualPick": 51,
+    "FirefoxDispatchFloorPoint": {
+      "x": 644,
+      "y": 388
+    },
+    "floorVisualPick": null,
+    "fractionalTargetAlpha": 248,
+    "floorTargetAlpha": 2,
+    "alphaThreshold": 80,
+    "eventUnprojectedWorldTile": {
+      "x": 3.9237311385459517,
+      "y": 23.948461689202425
+    },
+    "fallbackDistances": [
+      {
+        "id": 1,
+        "distance": 5.594273170118199
+      },
+      {
+        "id": 2,
+        "distance": 3.6259493926371174
+      },
+      {
+        "id": 3,
+        "distance": 10.602897071155244
+      },
+      {
+        "id": 4,
+        "distance": 10.178251978053563
+      },
+      {
+        "id": 37,
+        "distance": 0.7302079754178514
+      },
+      {
+        "id": 42,
+        "distance": 1.6388231784643315
+      },
+      {
+        "id": 51,
+        "distance": 0.7976718052927454
+      },
+      {
+        "id": 53,
+        "distance": 1.6699754584625144
+      },
+      {
+        "id": 7,
+        "distance": 1.578457573970203
+      }
+    ],
+    "fallbackFinalHit": 37,
+    "representableExistingProbe": {
+      "dx": 4,
+      "dy": -15,
+      "point": {
+        "x": 649.0411428571429,
+        "y": 388.24342857142864
+      },
+      "pick": 51,
+      "floorPick": 51
+    },
+    "nearestIntegerProofAllFourAtRecordedCamera": [
+      {
+        "id": 37,
+        "point": {
+          "x": 673.8811428571428,
+          "y": 373.6634285714286
+        },
+        "rounded": {
+          "x": 674,
+          "y": 374
+        },
+        "pick": 37
+      },
+      {
+        "id": 42,
+        "point": {
+          "x": 703.0411428571429,
+          "y": 388.24342857142864
+        },
+        "rounded": {
+          "x": 703,
+          "y": 388
+        },
+        "pick": 42
+      },
+      {
+        "id": 51,
+        "point": {
+          "x": 644.7211428571428,
+          "y": 388.24342857142864
+        },
+        "rounded": {
+          "x": 645,
+          "y": 388
+        },
+        "pick": 51
+      },
+      {
+        "id": 53,
+        "point": {
+          "x": 669.5611428571427,
+          "y": 402.8234285714286
+        },
+        "rounded": {
+          "x": 670,
+          "y": 403
+        },
+        "pick": 53
+      }
+    ],
+    "firstTwoCameraReconstructionMatchingActualPoints": [
+      {
+        "id": 37,
+        "camera": {
+          "x": 4.266666666666667,
+          "y": 23.142857142857142,
+          "zoom": 1.08
+        },
+        "recordedPoint": {
+          "x": 636.3897142857143,
+          "y": 392.4091428571429
+        },
+        "helperPoint": {
+          "x": 636.3897142857143,
+          "y": 392.4091428571429
+        },
+        "recordedPointMatches": true,
+        "rounded": {
+          "x": 636,
+          "y": 392
+        },
+        "pick": 37
+      },
+      {
+        "id": 42,
+        "camera": {
+          "x": 5.333333333333333,
+          "y": 23.142857142857142,
+          "zoom": 1.08
+        },
+        "recordedPoint": {
+          "x": 634.4457142857144,
+          "y": 391.4371428571429
+        },
+        "helperPoint": {
+          "x": 634.4457142857144,
+          "y": 391.4371428571429
+        },
+        "recordedPointMatches": true,
+        "rounded": {
+          "x": 634,
+          "y": 391
+        },
+        "pick": 42
+      }
+    ]
+  },
+  "finding": "Exact installed rendering/picking code plus pinned alpha at recorded camera reproduces fractional51 -> Firefoxfloor transparent -> ordinary mainhitEntity nearest37. No wrong-axis, sourcealpha change or depth bug needed to explain observed selection.",
+  "rendererLag": "Not demonstrated or needed by reconstruction; no click-time frame persisted, so cannot exclude independently. Buildings completed beforeattempt and remain static in recordedgeometry.",
+  "overlap": "Existing alpha/depth ordering used unchanged. Flooredpoint has no recordedbuildingalpha>=80, then legacynearestfallback picks37, not alpha-overlap selection.",
+  "recommendation": {
+    "scope": "Prefer minimal QA-only click quantization; unchanged frozen266 build",
+    "minimalChange": "Convert diagnostic fractionalcanvaspoint to absolute viewport coordinate using realcanvasbbox; Math.round nearestintegerx/y then convert back to locatorposition. This is representableeventpixel verification, not hardcodedoffset or desiredID forcing. Preserve exactselection assertions and HOLD on mismatch.",
+    "proof": "Exact realpickVisibleEntity with pinnedalpha +actual fourcornergeometry at recorded267 camera selects all4 correctIDs at nearestintegerpixels. Target51 changesfloored644388(null+nearest37) to nearest645388(visual51). Firsttwo recordedpoints also match reconstructedcamera/helper and nearestintegercorrect37/42.",
+    "QA": "Beforeclick persist intendedID, diagnosticpoint, nearestintegerdeliveredpoint, bbox,camera,tick. Passiveeventclientcoordinatesafterclick verify delivery; exactowned/living/visible selection guards remain. No source/rebuild needed for finite267B.",
+    "fallbackIfNewTrialFails": "HOLD and retainreceipt; onlythen consider diagnostichelper representablepixel verification using samepicker. No blindadditionalclicks.",
+    "avoid": "No alpha/art shift/ownership/fallback changes or gamecommand/state injection. No hardcoded645388/649388.",
+    "implementationAuthorized": false,
+    "next": "Separate finite root-authorized267B unchangedbuild with nearestintegerQA click;268installation gate remainsOPEN"
+  },
+  "limits": [
+    "267 omitted attempted thirdpoint/eventcoordinates; reconstructs explainable path consistent with observed result rather than proving exact historical event byte-for-byte",
+    "Failure record has allownbuildings+builder but lacks remainingunit snapshot and click-time rendererframe; otherunits unseen at candidatepoint cannot be fullyexcluded",
+    "Canvas1280x800 assumed from viewport+screenshot+full-insetCSS; bbox/dpr not separately captured",
+    "Pillow alpha reconstruction and JavaScript imported frozen code agree; no actual browser replay",
+    "Fourthcorner target-camera not captured historically; all4 tested at actual failurecamera, and first2 owncameras reconstructed to exactlymatchrecordedhelperpoints. NewfiniteUItrial still required."
+  ],
+  "preserved": [
+    "Original266HOLD",
+    "Original267HOLD",
+    "Prepared268installer",
+    "Canonical/public260/backend230",
+    "Frozen266stage/build"
+  ],
+  "installedPlaywrightVersion": "1.62.1"
+}

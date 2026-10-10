@@ -1,0 +1,10 @@
+{
+  "status": "PREPARATION_ONLY_NOT_RUN",
+  "references": "Original266 HOLD: owned builder occupied third requested footprint after prior build; ordinary placement guard failure, not demonstrated gameplay bug.",
+  "correction": "Before every wall placement check living non-embarked unit occupancy on both axes at .45+.2=.65. If exactly owned builder blocks, await actual idle/null then ordinary UI move to visible plain clear staging outside all unbuilt footprints; capture actual target delta<=.7 and idle/null engine arrival<=.7; recheck occupancy. No move when clear. Other blockers HOLD.",
+  "sameFrozenStage": "/tmp/rds-corners266-stage",
+  "sameFrozenBuild": "/tmp/rds-corners266-build",
+  "campaigns": 0,
+  "retries": 0,
+  "launch": "Explicit root signal only after fresh266B accepted"
+}

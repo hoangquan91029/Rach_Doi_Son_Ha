@@ -1,0 +1,65 @@
+{
+  "status": "CANDIDATE_WHOLE_CORNER6_ACTUAL42_READABLE_ROOT_PENDING",
+  "calls": 1,
+  "retries": 0,
+  "callState": "returned_closed",
+  "source": {
+    "path": "raw.png",
+    "sha256": "578bee5713f7ffd15fc53ce21d82ac4bdeaf0520a522d5030987f5589dc8ab83",
+    "rgbaSha256": "1cf0140b1e85e200f753609b41411b158ba79bf7e856585cc67d09e52b061de4",
+    "width": 1254,
+    "height": 1254
+  },
+  "runtime": {
+    "path": "runtime.png",
+    "sha256": "621d0ae0ba411a15944732d3fba6570bba8a6b3775e5eef5b67a9cc172cb6825",
+    "rgbaSha256": "8e0b0ea600c827ed6b3b668ed98f0f3c570ab59a6af3763d24d6aed04dc465aa",
+    "width": 128,
+    "height": 128
+  },
+  "working": {
+    "path": "working.png",
+    "sha256": "0f5ef8c4459733183d21cb9c59b62387a7d22f2050b18e0c58d96035b4d2c48f",
+    "rgbaSha256": "b732c33d2e0ffa337776ad0feff1bd00e237dcc721408abc470cfe9463fcebb0",
+    "width": 256,
+    "height": 256
+  },
+  "preview": {
+    "path": "preview42.png",
+    "sha256": "64949e5d637b4b20db668b83fc0d1972084e0a9c04900689b2f0e61bd23128e3",
+    "rgbaSha256": "3eb26a52d126b7e8edcabd2b8d505f3bd1a7f6d3bebd0d69dc24fef1507461d5",
+    "width": 42,
+    "height": 42
+  },
+  "alphaExtrema": [
+    0,
+    255
+  ],
+  "fixedLayout": {
+    "source": [
+      1254,
+      1254
+    ],
+    "pivot": [
+      627,
+      900
+    ],
+    "cell": [
+      128,
+      128
+    ],
+    "logicalRender": 42.3225,
+    "fit": false,
+    "shift": false,
+    "mirror": false
+  },
+  "briefActual42Look": "Two connected timber wings form V opening screen left, rightmost central post; no obvious missing wing or extra branch. Actual cell joins and alpha selection unverified.",
+  "fortification": {
+    "mask": 6
+  },
+  "runtimeInstalled": false,
+  "publicPromoted": false,
+  "networkAPIcalls": 0,
+  "next": "Root intake and separate finite actual UI corner6 joins/picking trial",
+  "toolOutputHandlingIssue": "Initial exec printed full result inadvertently; subsequent tool receipt stores native path only. No repeated image call."
+}

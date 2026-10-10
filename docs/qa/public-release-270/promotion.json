@@ -1,0 +1,43 @@
+{
+  "status": "PROMOTED_CLIENT270_195_FORT46_UNCHANGED_BACKEND230",
+  "deploymentUTC": "2026-10-10T00:29:31.529420+00:00",
+  "sourceHEAD": "02174111547b3a8d9f910537cec7511419261581",
+  "preparedSourceHEAD": "02174111547b3a8d9f910537cec7511419261581",
+  "sourceInventoryBinding": "prepared.json canonical + frozen266 stageInventories",
+  "distFiles": 195,
+  "manifestAssets": 46,
+  "bundleSHA256": "add2b4e819d43aff69360158ef7d0b867a078730a4c53135d1a5f5d8ced49e64",
+  "manifestSHA256": "2600c650eb4a87b848dfac2f073a87f94d25296800434d32fc7c8b557fc855d0",
+  "newWholePNGs": {
+    "assets/art-v1/corner-263/idle.png": "621d0ae0ba411a15944732d3fba6570bba8a6b3775e5eef5b67a9cc172cb6825",
+    "assets/art-v1/corner-264/idle.png": "6cb298c8033a9d880fef54cf93b1f0b39e9bda1749fcc2a69813e5d5b558b4df",
+    "assets/art-v1/corner-265/idle.png": "16697e3c43d00bcff43a421a26c74e6625cf92314a21f4c43e37ad4eeaa9a110"
+  },
+  "normalTLSBytesVerified": [
+    "index",
+    "assets/index-z82FayZ6.js",
+    "assets/art-v1/fort-202-manifest.json",
+    "assets/art-v1/corner-263/idle.png",
+    "assets/art-v1/corner-264/idle.png",
+    "assets/art-v1/corner-265/idle.png"
+  ],
+  "backendRuntime": "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/releases/230/runtime230",
+  "PID": 575363,
+  "backendRestarted": false,
+  "backendByteIdentical": true,
+  "old192Public260Tree": "/home/kieu-hoang-quan/Videos/rds-public270-next-dist",
+  "pairedRollback": "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/releases/269/rollback260.tar.gz",
+  "rollbackSHA256": "84e116f6adb9340ade2e9a17b2d8f2c33e015392da839e75e3ee77137cf6f4a6",
+  "unitEnvironmentFunnelUnchanged": true,
+  "canonicalSourceUnchanged": true,
+  "health": {
+    "ok": true,
+    "rooms": 0
+  },
+  "method": "ONE renameat2 RENAME_EXCHANGE",
+  "promotions": 1,
+  "builds": 0,
+  "browserRuns": 0,
+  "imageCalls": 0,
+  "pending": "Separate finite normalTLS root intake; no character/defaultart/fullmatch/WAN/final acceptance"
+}

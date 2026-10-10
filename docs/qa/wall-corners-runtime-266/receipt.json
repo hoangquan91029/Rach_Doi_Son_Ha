@@ -1,0 +1,91 @@
+{
+  "status": "HOLD266_THIRD_FOOTPRINT_BUILDER_OCCUPANCY",
+  "campaigns": 1,
+  "retries": 0,
+  "candidateBuild": "/tmp/rds-corners266-build",
+  "candidateStage": "/tmp/rds-corners266-stage",
+  "manifestAssets": 46,
+  "buildFiles": 195,
+  "contracts": "PASS3",
+  "bundleSHA256": "add2b4e819d43aff69360158ef7d0b867a078730a4c53135d1a5f5d8ced49e64",
+  "actualUI": {
+    "twoCompletedWalls": [
+      {
+        "id": 36,
+        "type": "wall",
+        "x": 4.5,
+        "y": 23.5,
+        "completedTick": 312
+      },
+      {
+        "id": 40,
+        "type": "wall",
+        "x": 5.5,
+        "y": 23.5,
+        "completedTick": 516
+      }
+    ],
+    "ready": 46,
+    "failed": 0,
+    "errors": [],
+    "network": [],
+    "toast": "Construction site blocked or shipyard is inland",
+    "thirdTarget": {
+      "x": 4.5,
+      "y": 24.5
+    },
+    "builder": {
+      "id": 7,
+      "owner": 0,
+      "type": "villager",
+      "kind": "unit",
+      "x": 4.150382881797576,
+      "y": 24.5,
+      "hp": 65,
+      "maxHp": 65,
+      "food": 40,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "idle",
+      "dir": 0,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "resuppliedTick": 1184,
+      "starving": 0,
+      "lastMovedTick": 397,
+      "order": null
+    },
+    "occupancyDelta": {
+      "x": 0.34961711820242414,
+      "y": 0.0
+    },
+    "placementUnitGuard": ".45 wall radius+.2: unit within .65 on both axes rejects ordinary build",
+    "knownLimit": "Initial clear-site guard passed, but builder occupied third site after prior completed wall. Dynamic prebuild unit occupancy was not rechecked. No gameplay change or retry."
+  },
+  "open": [
+    "Four-wall topology5/6/9/10",
+    "joins at1.08",
+    "allfour opaque exactpicks",
+    "Pausefreeze/Resume",
+    "ordinaryStop/menuDecoded0",
+    "visual square intake"
+  ],
+  "cleanup": {
+    "rooms": 0,
+    "serverListening": false,
+    "browserClosed": true
+  },
+  "preservation": {
+    "canonicalExact": true,
+    "public260192Exact": true,
+    "backend230PID575363Exact": true,
+    "rooms": 0
+  },
+  "next": "Independent267 campaign result remains separate; root may plan a new finite trial only with concrete builder-safe placement order or meaningful normal UI correction."
+}

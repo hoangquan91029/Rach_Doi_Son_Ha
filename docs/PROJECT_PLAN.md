@@ -2,7 +2,7 @@
 
 Cập nhật ngày 2026-10-10, múi giờ Asia/Ho_Chi_Minh. **Trạng thái: INCOMPLETE.** Đây là kế hoạch hiện hành cho toàn dự án; `NEXT_STEPS.md` chỉ giữ hàng đợi gần nhất. Hồ sơ cũ được giữ nguyên byte tại `docs/audit/2026-10-09/history/`.
 
-Latest execution262 ở mục25 và active movement plan thay các next-step lịch sử; source/receipt cũ giữ nguyên.
+Latest execution272 ở mục26 và active movement plan thay các next-step lịch sử; source/receipt cũ giữ nguyên.
 
 ## 1. Mục tiêu và cách đọc kết quả
 
@@ -236,3 +236,11 @@ Public230 không thay. Full realistic roster/directions/actions/12leaders/family
 258 fresh publicscope192 build/43manifest e26c/JSadd2 unchanged, four focusedcontracts and exact source/rollback/archive binding.259A exactFirefox scene43ready/joins/pick/transit/PauseResumeStop/menu0/errors0/network0 accepted narrow.260 ONE atomic client-only promotion, normalTLSnew4PNGs verified; backend immutable230/PID575363/sim29233 remains unchanged. CURRENT pairedrollback241 private258 SHA21f41cf…bb250 + old188tree retained; historical230/207/149 releases are not current targets.261 actualnormalTLS Chrome Ygatejoin/pick/PauseResume/transit/Stop/menu0 plus Firefox43ready/12portraits/setup/menu0 acceptednarrow, errors/network/HTTP0/rooms0/handlesclosed.260 sourceHEAD legacyliteral corrected separately with actualpreparedHEAD0519e87 + exactinventory, originalrawrecord preserved; deploymentunchanged.
 
 Next unfinished W01: whole corners6/9/10 first, then T7/11/13/14/cross15 and mixedGate topology, authoredbuildingconstruction/hit/death/attack API/frames. Each new artorder finite/wholeguide/ONEbuiltin0retry, parallel Sol6.1Low ownership allowed; actual relevant join/pick/game-size intake before installation/promotion. G01 unchanged213/216/233: motion/owner/worldfootcontact/bodyshadow/family-scale/runtimeinstall/fanout remain open; no more Stop replay or blindimagecalls. Fullgoal remains INCOMPLETE including realistic fullroster/actions/directions/12leaders/maps/performance/defaultart/externaldesktopWAN/finalbothmapsSingle+1v1.243 entrypoints exactGit0519e87 archived beforeupdates.
+
+## 26. Hiện hành263–273 — four-corner family public270
+
+263/264/265 ONE whole image mỗi corner6/9/10, fixed1254/pivot627900→128/logical42.3225.266 originalbuilder-occupancyHOLD preserved;266B ordinaryclearancemove+dynamicguard actualChrome4square/all4picks/PauseResumeStop/menu0 accepted.267 originalFirefoxfractionalpickHOLD preserved;273 exactpicker/alpha reconstruction explainsflooring,267B nearestintegerQAonly+actualevent receipts all4picks/joins/PauseResumeStop/menu0/46ready12portraits accepted.268 exactinstall46manifest/3PNG preservesold43. No game/picking/source/balance change.
+
+269 SAME tested frozen266195 build boundfinalcanonical46 PUBLICscope, no rebuild, current260pairedrollback84e116…cf6f4a6 verified.270 ONE clientatomicexchange/new3PNG normalTLSbytes verified, JSadd2 unchanged/manifest2600c6…55d0.271 actualpublicChrome square/all4picks/PauseResumeStop/menu0 +Firefox46ready12portraits/setup/menu0 acceptednarrow, errorsnetwork0/rooms0/ownedhandlesclosed; no fullmatch/defaultart/WAN/motion inference. Backend codeimmutable230 unchanged; historicalPID575363 nowcurrent3229 observedafterstartup, rootcode/public/rooms0 revalidation storedseparately. No agentrestart.262 entrypoints archivedbeforeupdates.
+
+NextW01: wholeT7/11/13/14/cross15/mixedGate and buildingconstruction-hit-death-attackAPI+frames, actualscenebeforeinstall. G01 motion213/216/233 remainsopen fornaturalness/owner/worldfootcontact/bodyshadow/familyscale/runtime/fanout. Fullgoal/defaultart/roster/12leaders/maps/performance/externaldesktopWAN/finaltwomodesbothmaps INCOMPLETE.

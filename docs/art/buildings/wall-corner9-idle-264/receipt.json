@@ -1,0 +1,70 @@
+{
+  "status": "CANDIDATE_WHOLE_CORNER9_ACTUAL42_READABLE_ROOT_PENDING",
+  "calls": 1,
+  "retries": 0,
+  "callState": "returned_closed",
+  "source": {
+    "path": "raw.png",
+    "sha256": "365123be7847472fb0a9dc7754133d166e624d0d191e09fd48a935976e2fc435",
+    "rgbaSha256": "941647488dbe82a7bddb1c1fef9ae6f75d5452fa346b6dce52d604edfadd441f",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA"
+  },
+  "runtime": {
+    "path": "runtime.png",
+    "sha256": "6cb298c8033a9d880fef54cf93b1f0b39e9bda1749fcc2a69813e5d5b558b4df",
+    "rgbaSha256": "0fa93bc40e5d9517b7e2d6864fcec3f384a63aec14869b45886c1f8b55d95a85",
+    "width": 128,
+    "height": 128,
+    "mode": "RGBA"
+  },
+  "working": {
+    "path": "working.png",
+    "sha256": "abaf9cf527b5a1bf1105afcb20d5d07af4c728654100f3be455d07ca8a15aa69",
+    "rgbaSha256": "bffbb136bfacca59dc019441c2c87b26245b93bbda974b318f97b02959f8d07b",
+    "width": 256,
+    "height": 256,
+    "mode": "RGBA"
+  },
+  "preview": {
+    "path": "preview42.png",
+    "sha256": "f1e482597d158b1bf98a23426c2616f0c2a4f90d7831cb97cb695c4db2d277ac",
+    "rgbaSha256": "fcfeb300df905e753e17938780b97e04c0ac61b7b3ffc6369d1dc74709047592",
+    "width": 42,
+    "height": 42,
+    "mode": "RGBA"
+  },
+  "alphaExtrema": [
+    0,
+    255
+  ],
+  "fixedLayout": {
+    "source": [
+      1254,
+      1254
+    ],
+    "pivot": [
+      627,
+      900
+    ],
+    "cell": [
+      128,
+      128
+    ],
+    "logicalRender": 42.3225,
+    "fit": false,
+    "shift": false,
+    "mirror": false
+  },
+  "briefActual42Look": "Connected two-wing timber corner opens SCREEN RIGHT; both wings present, no visible extra branch or malformed silhouette. Actual UI joins and alpha picking remain untested.",
+  "fortification": {
+    "mask": 9
+  },
+  "runtimeInstalled": false,
+  "publicPromoted": false,
+  "networkAPIcalls": 0,
+  "scope": "only owned corner9-264 directory changed",
+  "next": "Root intake then finite actual UI joins/pick/game-size intake before installation",
+  "toolOutputHandlingNote": "Initial result print inadvertently included base64; preserved native original and metadata; no duplicate call."
+}

@@ -1,0 +1,9 @@
+{
+  "status": "HARNESS_REFERENCE_CORRECTED_BEFORE_ANY_PROMOTION_ATTEMPT",
+  "promotionsAtCorrection": 0,
+  "error": "269 build-binding buildPinsSHA256 names original266 pinfile; initial harness incorrectly compared reserialized269 file.",
+  "original266SHA256": "cbd23280b4118c895689966212232e9433bda0216a66268039c6ceb2f1e0bfa6",
+  "reserialized269SHA256": "d963bbb619abc9285d3792a9c0a15ed413d9345a676017b385aac5a8ec7c9fae",
+  "exact195InventoryEqual": true,
+  "change": "Verify original266 raw pins digest plus exact269 inventory equality; no weakened candidate/source/policy/rooms guards"
+}

@@ -3737,6 +3737,191 @@
         "axis": "Y"
       },
       "notes": "Whole GateY candidate only; actualjoins/opaque selection/friendlytransit pending; no per-imagefit/transforms/pixelassembly."
+    },
+    {
+      "id": "wall-whole-263-mask6",
+      "family": "building.wall",
+      "kind": "building",
+      "state": "idle",
+      "direction": null,
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "source": {
+        "path": "docs/art/buildings/wall-corner6-idle-263/raw.png",
+        "sha256": "578bee5713f7ffd15fc53ce21d82ac4bdeaf0520a522d5030987f5589dc8ab83",
+        "rgbaSha256": "1cf0140b1e85e200f753609b41411b158ba79bf7e856585cc67d09e52b061de4",
+        "width": 1254,
+        "height": 1254
+      },
+      "runtime": {
+        "path": "corner-263/idle.png",
+        "sha256": "621d0ae0ba411a15944732d3fba6570bba8a6b3775e5eef5b67a9cc172cb6825",
+        "rgbaSha256": "8e0b0ea600c827ed6b3b668ed98f0f3c570ab59a6af3763d24d6aed04dc465aa",
+        "width": 128,
+        "height": 128,
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "578bee5713f7ffd15fc53ce21d82ac4bdeaf0520a522d5030987f5589dc8ab83"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 900,
+        "space": "source"
+      },
+      "render": {
+        "width": 42.3225,
+        "height": 42.3225
+      },
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 1000
+        }
+      ],
+      "loop": true,
+      "fortification": {
+        "mask": 6
+      },
+      "notes": "Whole -X/+Y corner candidate; no wallaxis. Only mask6 living completed idle authored. Actual joins and alpha picking unverified."
+    },
+    {
+      "id": "wall-whole-264-mask9",
+      "family": "building.wall",
+      "kind": "building",
+      "state": "idle",
+      "direction": null,
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "source": {
+        "path": "docs/art/buildings/wall-corner9-idle-264/raw.png",
+        "sha256": "365123be7847472fb0a9dc7754133d166e624d0d191e09fd48a935976e2fc435",
+        "rgbaSha256": "941647488dbe82a7bddb1c1fef9ae6f75d5452fa346b6dce52d604edfadd441f",
+        "width": 1254,
+        "height": 1254,
+        "mode": "RGBA"
+      },
+      "runtime": {
+        "path": "corner-264/idle.png",
+        "sha256": "6cb298c8033a9d880fef54cf93b1f0b39e9bda1749fcc2a69813e5d5b558b4df",
+        "rgbaSha256": "0fa93bc40e5d9517b7e2d6864fcec3f384a63aec14869b45886c1f8b55d95a85",
+        "width": 128,
+        "height": 128,
+        "mode": "RGBA",
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "365123be7847472fb0a9dc7754133d166e624d0d191e09fd48a935976e2fc435"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 900,
+        "space": "source"
+      },
+      "render": {
+        "width": 42.3225,
+        "height": 42.3225
+      },
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 1000
+        }
+      ],
+      "loop": true,
+      "fortification": {
+        "mask": 9
+      },
+      "notes": "Whole +X/-Y corner candidate only; no wallaxis. Actual joins/alpha picking pending."
+    },
+    {
+      "id": "wall-whole-265-mask10",
+      "family": "building.wall",
+      "kind": "building",
+      "state": "idle",
+      "direction": null,
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "source": {
+        "path": "docs/art/buildings/wall-corner10-idle-265/raw.png",
+        "sha256": "427926626c058f8a1570518ba6b60aed64d76314de279abfcccb0251d3b91017",
+        "rgbaSha256": "cd385b138ed7deef87c22a8f6ef515bab7b0ba0a0aab77fa4a6034b3c3c90a8b",
+        "width": 1254,
+        "height": 1254
+      },
+      "runtime": {
+        "path": "corner-265/idle.png",
+        "sha256": "16697e3c43d00bcff43a421a26c74e6625cf92314a21f4c43e37ad4eeaa9a110",
+        "rgbaSha256": "1d36eb987bb2510107162a6f030cef4ce9bd770b0f9eaa9feb9ae811cf53e8bf",
+        "width": 128,
+        "height": 128,
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "427926626c058f8a1570518ba6b60aed64d76314de279abfcccb0251d3b91017"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 900,
+        "space": "source"
+      },
+      "render": {
+        "width": 42.3225,
+        "height": 42.3225
+      },
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 1000
+        }
+      ],
+      "loop": true,
+      "fortification": {
+        "mask": 10
+      },
+      "notes": "Whole -X/-Y corner candidate only; living completed idle; root intake and actual joins/picking pending."
     }
   ],
   "id": "fort-202",

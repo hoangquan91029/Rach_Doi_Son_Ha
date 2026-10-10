@@ -1,0 +1,79 @@
+{
+  "status": "HOLD267_THIRD_EXACT_PICK_MISMATCH",
+  "campaigns": 1,
+  "retries": 0,
+  "build": "/tmp/rds-corners266-build",
+  "frozenBuildFiles": 195,
+  "artReady": 46,
+  "portraitsReady": 12,
+  "topology": [
+    {
+      "id": 37,
+      "mask": 5,
+      "axis": "X",
+      "topology": "corner",
+      "count": 2
+    },
+    {
+      "id": 42,
+      "mask": 6,
+      "axis": "X",
+      "topology": "corner",
+      "count": 2
+    },
+    {
+      "id": 51,
+      "mask": 9,
+      "axis": "X",
+      "topology": "corner",
+      "count": 2
+    },
+    {
+      "id": 53,
+      "mask": 10,
+      "axis": "X",
+      "topology": "corner",
+      "count": 2
+    }
+  ],
+  "picksPassed": [
+    {
+      "id": 37,
+      "mask": 5,
+      "selection": [
+        37
+      ],
+      "point": {
+        "x": 636.3897142857143,
+        "y": 392.4091428571429
+      },
+      "tick": 1015
+    },
+    {
+      "id": 42,
+      "mask": 6,
+      "selection": [
+        42
+      ],
+      "point": {
+        "x": 634.4457142857144,
+        "y": 391.4371428571429
+      },
+      "tick": 1027
+    }
+  ],
+  "fourWallsCompleted": true,
+  "defaultPNG": "actual-four-corners-default.png",
+  "failure": "Mask9 target51 entityPoint click selected37; timeout. PauseResumeStop/menu untested in267.",
+  "errors": [],
+  "requestFailures": [],
+  "httpFailures": [],
+  "cleanup": {
+    "rooms": 0,
+    "serverListening": false,
+    "browserClosed": true
+  },
+  "buildStageUnchanged": true,
+  "rootIntake": "pending",
+  "clip": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/wall-corners-firefox-267/clips/page@5ef8f6f25603f0dad70662da818a6d96.webm"
+}

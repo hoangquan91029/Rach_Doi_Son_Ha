@@ -1,0 +1,158 @@
+{
+  "status": "PASS266B_CHROME_WHOLE_CORNERS_SQUARE_JOINS_EXACT_PICKS_PAUSE_RESUME_STOP_MENU",
+  "campaigns": 1,
+  "retries": 0,
+  "newOrder": "266B dynamic actual prebuild occupancy correction +ordinaryUI move; original266 terminalHOLD preserved",
+  "candidateStage": "/tmp/rds-corners266-stage",
+  "candidateBuild": "/tmp/rds-corners266-build",
+  "buildPinsSHA256": "cbd23280b4118c895689966212232e9433bda0216a66268039c6ceb2f1e0bfa6",
+  "bindingSHA256": "91ac5d74b430aeaf1952de19cc43bcfe9a9839aebb01204915e2b670d6f0a992",
+  "assets": 46,
+  "files": 195,
+  "bundleSHA256": "add2b4e819d43aff69360158ef7d0b867a078730a4c53135d1a5f5d8ced49e64",
+  "site": {
+    "x": 4.5,
+    "y": 23.5,
+    "staging": {
+      "x": 2.5,
+      "y": 23.5
+    },
+    "away": {
+      "x": 1.5,
+      "y": 21.5
+    },
+    "d": 5.385164807134505
+  },
+  "topology": [
+    {
+      "id": 36,
+      "mask": 5,
+      "axis": "X",
+      "topology": "corner",
+      "count": 2
+    },
+    {
+      "id": 40,
+      "mask": 6,
+      "axis": "X",
+      "topology": "corner",
+      "count": 2
+    },
+    {
+      "id": 51,
+      "mask": 9,
+      "axis": "X",
+      "topology": "corner",
+      "count": 2
+    },
+    {
+      "id": 53,
+      "mask": 10,
+      "axis": "X",
+      "topology": "corner",
+      "count": 2
+    }
+  ],
+  "picks": [
+    {
+      "id": 36,
+      "selection": [
+        36
+      ],
+      "point": {
+        "x": 640.0231033063616,
+        "y": 383.8529952218192
+      },
+      "topology": {
+        "mask": 5,
+        "axis": "X",
+        "topology": "corner",
+        "count": 2
+      }
+    },
+    {
+      "id": 40,
+      "selection": [
+        40
+      ],
+      "point": {
+        "x": 640.0496814313617,
+        "y": 383.8662842843192
+      },
+      "topology": {
+        "mask": 6,
+        "axis": "X",
+        "topology": "corner",
+        "count": 2
+      }
+    },
+    {
+      "id": 51,
+      "selection": [
+        51
+      ],
+      "point": {
+        "x": 639.9808969726562,
+        "y": 383.8740983886719
+      },
+      "topology": {
+        "mask": 9,
+        "axis": "X",
+        "topology": "corner",
+        "count": 2
+      }
+    },
+    {
+      "id": 53,
+      "selection": [
+        53
+      ],
+      "point": {
+        "x": 635.6874750976561,
+        "y": 383.8873874511719
+      },
+      "topology": {
+        "mask": 10,
+        "axis": "X",
+        "topology": "corner",
+        "count": 2
+      }
+    }
+  ],
+  "dynamicGuard": {
+    "checks": 4,
+    "ordinaryMovesForBlockedBuilder": 1,
+    "allPostMoveFootprintsClear": true
+  },
+  "pause": {
+    "frozenTick": 1183,
+    "resumedTick": 1184
+  },
+  "stop": {
+    "state": "idle",
+    "order": null
+  },
+  "menuDecodedBytes": 0,
+  "menuDecodedImages": 0,
+  "ready": 46,
+  "failed": 0,
+  "errors": [],
+  "networkFailures": [],
+  "clip": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/wall-corners-runtime-266b/clips/page@86d21128502a8d6458d816b22a3a7656.webm",
+  "defaultScreenshot": "actual-square-default.png",
+  "briefDefaultLook": "Whole four-wall square reads connected at actual zoom1.08. Root independent visual intake pending; no fullWallGate/defaultart/public acceptance.",
+  "cleanup": {
+    "rooms": 0,
+    "serverListening": false,
+    "browserClosed": true
+  },
+  "preservation": {
+    "canonicalExact": true,
+    "public260192Exact": true,
+    "backend230PID575363Exact": true,
+    "frozenStageBuildExact": true,
+    "rooms": 0
+  },
+  "runtimeInstalled": false,
+  "publicPromoted": false
+}

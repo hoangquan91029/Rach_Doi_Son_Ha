@@ -1,0 +1,102 @@
+{
+  "status": "ACCEPTED_NARROW_PUBLIC271_FORT46_CORNERS_UI_AND_FIREFOX_SETUP",
+  "chromeStatus": "PASS271_NORMAL_TLS_CHROME_WHOLE_CORNERS_SQUARE_JOINS_EXACT_PICKS_PAUSE_RESUME_STOP_MENU",
+  "firefoxStatus": "PASS271_NORMAL_TLS_FIREFOX_SETUP_LAUNCH_MENU",
+  "chromeCampaigns": 1,
+  "firefoxCampaigns": 1,
+  "retries": 0,
+  "builds": 0,
+  "imageCalls": 0,
+  "localServers": 0,
+  "productionMutations": 0,
+  "currentPID": 3229,
+  "historical270PID": 575363,
+  "backendRestartCalls": 0,
+  "runtime": "immutable230",
+  "publicFiles": 195,
+  "fortReady": 46,
+  "portraitsReady": 12,
+  "masks": [
+    5,
+    6,
+    9,
+    10
+  ],
+  "exactPicks": [
+    {
+      "id": 36,
+      "selection": [
+        36
+      ],
+      "mask": 5
+    },
+    {
+      "id": 42,
+      "selection": [
+        42
+      ],
+      "mask": 6
+    },
+    {
+      "id": 51,
+      "selection": [
+        51
+      ],
+      "mask": 9
+    },
+    {
+      "id": 53,
+      "selection": [
+        53
+      ],
+      "mask": 10
+    }
+  ],
+  "pauseFrozenTick": 1227,
+  "resumedTick": 1229,
+  "stop": {
+    "state": "idle",
+    "order": null
+  },
+  "menuDecodedBytes": 0,
+  "errors": {
+    "chrome": 0,
+    "firefox": 0
+  },
+  "networkFailures": {
+    "chrome": 0,
+    "firefox": 0
+  },
+  "httpFailures": {
+    "chrome": 0,
+    "firefox": 0
+  },
+  "healthAfter": {
+    "ok": true,
+    "rooms": 0
+  },
+  "cleanup": {
+    "ownedContextsClosed": true,
+    "ownedBrowsersClosed": true,
+    "rooms": 0
+  },
+  "promotionReceiptSHA256": "8f428040feff3f035f9a7d22be435f91ab60f10b790989e8c2da01acaf5a3cce",
+  "candidate269BuildPinsSHA256": "d963bbb619abc9285d3792a9c0a15ed413d9345a676017b385aac5a8ec7c9fae",
+  "screenshots": [
+    "actual-square-default.png",
+    "actual-selected-mask5.png",
+    "actual-selected-mask6.png",
+    "actual-selected-mask9.png",
+    "actual-selected-mask10.png",
+    "actual-selected-corner-paused.png"
+  ],
+  "clipPath": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/public-intake-271/clips/page@1c02cd79da6c0493104b39bbd963d402.webm",
+  "visualLook": "Actual square and selected9 screenshots inspected at1280x800/defaultzoom1.08; connected four-wall square visible with consistent timber corner joins, narrow static scene only",
+  "preserved": [
+    "Original271preparation",
+    "270historicalpromotion",
+    "266/267HOLD",
+    "273diagnosis"
+  ],
+  "limits": "No full match/default art/character motion/WAN/finalWallGate/full-goal acceptance"
+}

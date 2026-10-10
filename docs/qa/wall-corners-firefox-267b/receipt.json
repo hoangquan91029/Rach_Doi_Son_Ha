@@ -1,0 +1,163 @@
+{
+  "status": "PASS267B_FIREFOX_FOUR_CORNER_JOINS_EXACT_PICKS_PAUSE_RESUME_STOP_MENU",
+  "campaigns": 1,
+  "retries": 0,
+  "build": "/tmp/rds-corners266-build",
+  "frozenBuildFiles": 195,
+  "artReady": 46,
+  "portraitsReady": 12,
+  "topology": [
+    {
+      "id": 36,
+      "mask": 5,
+      "axis": "X",
+      "topology": "corner",
+      "count": 2
+    },
+    {
+      "id": 42,
+      "mask": 6,
+      "axis": "X",
+      "topology": "corner",
+      "count": 2
+    },
+    {
+      "id": 49,
+      "mask": 9,
+      "axis": "X",
+      "topology": "corner",
+      "count": 2
+    },
+    {
+      "id": 53,
+      "mask": 10,
+      "axis": "X",
+      "topology": "corner",
+      "count": 2
+    }
+  ],
+  "picksPassed": [
+    {
+      "id": 36,
+      "mask": 5,
+      "selection": [
+        36
+      ],
+      "point": {
+        "x": 636.3897142857143,
+        "y": 392.4091428571429
+      },
+      "tick": 1008
+    },
+    {
+      "id": 42,
+      "mask": 6,
+      "selection": [
+        42
+      ],
+      "point": {
+        "x": 634.4457142857144,
+        "y": 391.4371428571429
+      },
+      "tick": 1021
+    },
+    {
+      "id": 49,
+      "mask": 9,
+      "selection": [
+        49
+      ],
+      "point": {
+        "x": 644.7211428571428,
+        "y": 388.24342857142864
+      },
+      "tick": 1034
+    },
+    {
+      "id": 53,
+      "mask": 10,
+      "selection": [
+        53
+      ],
+      "point": {
+        "x": 638.4571428571428,
+        "y": 387.2714285714286
+      },
+      "tick": 1049
+    }
+  ],
+  "fourWallsCompleted": true,
+  "defaultPNG": "actual-four-corners-default.png",
+  "eventReceipt": "pointer-event-receipt.json",
+  "pausedTick": 1053,
+  "resumedTick": 1054,
+  "stop": {
+    "id": 7,
+    "owner": 0,
+    "type": "villager",
+    "kind": "unit",
+    "x": 4.214002017125436,
+    "y": 25.5,
+    "hp": 65,
+    "maxHp": 65,
+    "food": 40,
+    "foodMax": 40,
+    "morale": 95,
+    "state": "idle",
+    "dir": 0,
+    "cooldown": 0,
+    "queue": [],
+    "cargo": {
+      "food": 0,
+      "wood": 0,
+      "iron": 0,
+      "units": []
+    },
+    "resuppliedTick": 1076,
+    "starving": 0,
+    "lastMovedTick": 867,
+    "order": null
+  },
+  "menu": {
+    "bank": {
+      "phase": "menu",
+      "epoch": 3,
+      "encodedBytes": 4019334,
+      "encodedBudgetBytes": 67108864,
+      "activeIds": [],
+      "scope": null
+    },
+    "art": {
+      "status": "PLACEHOLDER_ONLY",
+      "manifest": "not-loaded",
+      "declared": 0,
+      "ready": 0,
+      "approved": 0,
+      "candidates": 0,
+      "failed": 0,
+      "skipped": 0,
+      "fallbacks": 0,
+      "decodedBudgetBytes": 134217728,
+      "retainedDecodedBytes": 0,
+      "reservedDecodedBytes": 0,
+      "uniqueDecodedImages": 0,
+      "encodedReady": 0,
+      "retainedEncodedBytes": 0,
+      "encodedBudgetBytes": 67108864,
+      "selectedDeclared": 0,
+      "failures": []
+    }
+  },
+  "errors": [],
+  "requestFailures": [],
+  "httpFailures": [],
+  "cleanup": {
+    "rooms": 0,
+    "serverListening": false,
+    "browserClosed": true
+  },
+  "buildStageUnchanged": true,
+  "original267HoldUnchanged": true,
+  "rootIntake": "pending",
+  "clip": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/wall-corners-firefox-267b/clips/page@c999fc6acdbbdc38eab005017a1d8b1e.webm"
+}

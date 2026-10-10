@@ -1,0 +1,61 @@
+{
+  "id": "wall-whole-263-mask6",
+  "family": "building.wall",
+  "kind": "building",
+  "state": "idle",
+  "direction": null,
+  "candidate": true,
+  "review": {
+    "status": "CANDIDATE"
+  },
+  "source": {
+    "path": "raw.png",
+    "sha256": "578bee5713f7ffd15fc53ce21d82ac4bdeaf0520a522d5030987f5589dc8ab83",
+    "rgbaSha256": "1cf0140b1e85e200f753609b41411b158ba79bf7e856585cc67d09e52b061de4",
+    "width": 1254,
+    "height": 1254
+  },
+  "runtime": {
+    "path": "runtime.png",
+    "sha256": "621d0ae0ba411a15944732d3fba6570bba8a6b3775e5eef5b67a9cc172cb6825",
+    "rgbaSha256": "8e0b0ea600c827ed6b3b668ed98f0f3c570ab59a6af3763d24d6aed04dc465aa",
+    "width": 128,
+    "height": 128,
+    "derivation": {
+      "method": "resize",
+      "filter": "lanczos",
+      "sourceSha256": "578bee5713f7ffd15fc53ce21d82ac4bdeaf0520a522d5030987f5589dc8ab83"
+    }
+  },
+  "cell": {
+    "width": 128,
+    "height": 128
+  },
+  "pivot": {
+    "x": 627,
+    "y": 900,
+    "space": "source"
+  },
+  "render": {
+    "width": 42.3225,
+    "height": 42.3225
+  },
+  "alphaPolicy": "transparent",
+  "contactShadow": {
+    "mode": "baked"
+  },
+  "frames": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 1000
+    }
+  ],
+  "loop": true,
+  "fortification": {
+    "mask": 6
+  },
+  "notes": "Whole -X/+Y corner candidate; no wallaxis. Only mask6 living completed idle authored. Actual joins and alpha picking unverified."
+}
