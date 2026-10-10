@@ -1,0 +1,1 @@
+Installed three exacttested GateY completedidle descriptors and unchanged252 wholePNG into fort43 after actual255A join/select/friendlytransit intake. All40 prior descriptors preserved. Original255 asyncassignmentHOLD retained. Othertopologies/states/finalart remain unfinished. Public241 unchanged.

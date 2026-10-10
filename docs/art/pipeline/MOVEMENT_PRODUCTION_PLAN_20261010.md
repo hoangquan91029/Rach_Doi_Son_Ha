@@ -68,7 +68,7 @@ Tái sử dụng model specification, phase/ownership conventions, timing/stride
 
 Khả năng giữ anatomy/volume qua nhiều image calls chưa được bảo đảm. Skill/tool reference chỉ giúp tổ chức và hướng dẫn, không ràng buộc hình học tuyệt đối. Nếu một finite method vẫn trả pose lặp/dị dạng, ghi HOLD và thay cách điều khiển whole drawing; không hứa sản xuất hàng nghìn frame bằng workflow chưa qualified. Đo throughput từ action hoàn chỉnh được chấp nhận, không từ số calls/files.
 
-Full project **INCOMPLETE**. Public230 optionalfort28 hiện hành, chưa chứa D0;207 là lịch sử. Previous active plan byte-preserved tại `docs/checkpoints/checkpoint209-entrypoints/`; mọi source/rejection/custody tiếp tục bảo toàn. Builtin imagegen/Sol6.1Low/pure2D, không API/key/quota/3D/cutouts.
+Full project **INCOMPLETE**. Public260 optionalfort43 hiện hành, chưa chứa D0;230/207 frontend là lịch sử, backend vẫn immutable230. Previous active plan byte-preserved tại `docs/checkpoints/checkpoint209-entrypoints/`; mọi source/rejection/custody tiếp tục bảo toàn. Builtin imagegen/Sol6.1Low/pure2D, không API/key/quota/3D/cutouts.
 
 ##7. Runtime232 — actualscope và nexttransition
 

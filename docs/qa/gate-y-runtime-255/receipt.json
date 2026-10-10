@@ -1,0 +1,124 @@
+{
+  "status": "HOLD_ORDER_OBSERVATION_RACE_AFTER_JOIN_SELECT_PAUSE_RESUME",
+  "campaigns": 1,
+  "retries": 0,
+  "descriptors": 42,
+  "old39Exact": true,
+  "gateBindings": [
+    4,
+    8,
+    12
+  ],
+  "axis": "Y",
+  "chunk": "/tmp/rds-gate255-build/assets/index-Crc_Aowm.js",
+  "bundleSHA256": "e430f20520c26cb20644fa51b84d3ef53cace995116a3df4fd0b0b73c24ae25c",
+  "manifestSHA256": "5233081e3c858d5447f17ddd9c0536fd1cb83ec2ed81c40a6451cc732fdbf207",
+  "runtimeSHA256": "867ba2b2e8e15f4d1c2011defebeb2c5fd3cd704722ba10bf2a6b637b765fbd1",
+  "structures": [
+    {
+      "id": 36,
+      "type": "wall",
+      "x": 12.5,
+      "y": 15.5,
+      "completedTick": 345
+    },
+    {
+      "id": 42,
+      "type": "gate",
+      "x": 12.5,
+      "y": 16.5,
+      "completedTick": 575
+    },
+    {
+      "id": 51,
+      "type": "wall",
+      "x": 12.5,
+      "y": 17.5,
+      "completedTick": 763
+    }
+  ],
+  "topology": [
+    {
+      "id": 36,
+      "mask": 4,
+      "axis": "Y",
+      "topology": "end",
+      "count": 1
+    },
+    {
+      "id": 42,
+      "mask": 12,
+      "axis": "Y",
+      "topology": "straight",
+      "count": 2
+    },
+    {
+      "id": 51,
+      "mask": 8,
+      "axis": "Y",
+      "topology": "end",
+      "count": 1
+    }
+  ],
+  "gateSelection": [
+    42
+  ],
+  "pausedTick": 783,
+  "resumedTick": 785,
+  "stageOrder": {
+    "type": "move",
+    "x": 9.499790705509472,
+    "y": 16.49982836478695
+  },
+  "failure": "Immediate read after ordinaryUI precrossing click observed old null order before asynchronous command appeared; TypeError from order.type assertion. Preservedfailure snapshot later shows liveworker walking actualmoveorder. No retry.",
+  "actualFailureActor": {
+    "id": 7,
+    "owner": 0,
+    "hp": 65,
+    "x": 11.069949852336336,
+    "y": 16.5,
+    "state": "walk",
+    "dir": 4,
+    "order": {
+      "type": "move",
+      "x": 9.999763109916193,
+      "y": 16.49982836478695
+    }
+  },
+  "friendlyTransit": "UNVERIFIED",
+  "StopMenu": "UNVERIFIED",
+  "errors": [],
+  "artPipeline": {
+    "status": "CANDIDATE",
+    "manifest": "ready",
+    "declared": 42,
+    "ready": 42,
+    "approved": 0,
+    "candidates": 42,
+    "failed": 0,
+    "skipped": 0,
+    "fallbacks": 0,
+    "decodedBudgetBytes": 134217728,
+    "retainedDecodedBytes": 17729024,
+    "reservedDecodedBytes": 0,
+    "uniqueDecodedImages": 32,
+    "encodedReady": 0,
+    "retainedEncodedBytes": 3968127,
+    "encodedBudgetBytes": 67108864,
+    "selectedDeclared": 42,
+    "failures": []
+  },
+  "cleanup": {
+    "rooms": 0,
+    "serverListening": false,
+    "browserClosed": true
+  },
+  "defaultScreenshot": "actual-wall-gate-wall-default.png",
+  "clip": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/gate-y-runtime-255/clips/page@6ba1b239c8114ee9c7da17ad980c0cbf.webm",
+  "public241188Exact": true,
+  "canonicalWritesBy255": 0,
+  "rootConcurrentChange": "Root256 adds onecorner248 to prior39; frozen25542 unaffected",
+  "imageCalls": 0,
+  "rootSceneIntake": "PENDING",
+  "nextFiniteConcern": "Observe fresh actual moveorder via boundedwait before comparing arrival .7; sufficientcrossing distance; do not resume255 exhaustedcampaign"
+}

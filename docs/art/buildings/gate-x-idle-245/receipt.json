@@ -1,0 +1,68 @@
+{
+  "status": "CANDIDATE_ACTUAL42_READABLE_OPEN_GATE_ROOT_INTAKE_PENDING",
+  "calls": 1,
+  "retries": 0,
+  "callState": "returned_closed",
+  "source": {
+    "path": "raw.png",
+    "sha256": "8a44cd1880468345e556f6aefaa02930be2072e9bfeed52ff8311f51ba635e98",
+    "rgbaSha256": "f9d9278641a9729a7d26095229ce3afd89e7e4805de79d11359e9b9d314552a0",
+    "width": 1254,
+    "height": 1254
+  },
+  "alphaExtrema": [
+    0,
+    255
+  ],
+  "working": {
+    "path": "working.png",
+    "sha256": "1dc301bf7c3288f0e76de90eed68534fdf582f507cc5fc21ef653e2851487c21",
+    "rgbaSha256": "25fa02f6e365bff346eefa690e6a1b46602c43e60dee0f3d1b3c36427a703026",
+    "width": 256,
+    "height": 256
+  },
+  "runtime": {
+    "path": "runtime.png",
+    "sha256": "89f18963d6d66452d584071e5158320c4168a6fb0d908c2ca06375759aaa6579",
+    "rgbaSha256": "84f80429a67e81015561d1922f33cc3540d252743d33b1cf13ea035c5a56448c",
+    "width": 128,
+    "height": 128,
+    "derivation": {
+      "method": "resize",
+      "filter": "lanczos",
+      "sourceSha256": "8a44cd1880468345e556f6aefaa02930be2072e9bfeed52ff8311f51ba635e98"
+    }
+  },
+  "preview": {
+    "path": "preview42.png",
+    "sha256": "92dfc7444e99d2422d6f7e72d99d07f4a78a6108fd79dd522a990083fb237d22",
+    "rgbaSha256": "4afc1c5b4e8d19d2950f7b0b14987727530938667b84e28875e403c07b1848ac",
+    "width": 42,
+    "height": 42
+  },
+  "fixedLayout": {
+    "source": [
+      1254,
+      1254
+    ],
+    "pivot": [
+      627,
+      900
+    ],
+    "cell": [
+      128,
+      128
+    ],
+    "logicalRender": 42.3225,
+    "fit": false,
+    "shift": false,
+    "mirror": false
+  },
+  "briefActual42Look": "Down-right connected timber gate/post/header reads; central passage visibly open and stone feet localized to posts, no island floor. Exact world clearance/alpha selection and joins untested.",
+  "networkAPIcalls": 0,
+  "runtimeInstalled": false,
+  "publicPromoted": false,
+  "original234239Preserved": true,
+  "public241188Preserved": true,
+  "next": "Root intake then separate finite actual wallGatewall friendly transit/alpha selection trial"
+}

@@ -1,0 +1,88 @@
+{
+  "status": "HOLD_INITIAL_MOVE_CAPTURE_COORDINATE_GUARD_NO_RETRY",
+  "campaigns": 1,
+  "retries": 0,
+  "imageCalls": 0,
+  "rebuilds": 0,
+  "binding": {
+    "rootAuthorized": true,
+    "stage": "/tmp/rds-release258-stage",
+    "build": "/tmp/rds-release258-build",
+    "bundleSHA256": "add2b4e819d43aff69360158ef7d0b867a078730a4c53135d1a5f5d8ced49e64",
+    "manifestSHA256": "e26c747a58ca9262edc45b7f87c93b7f6cf8b48d9236fe3a44f909b6bc1434b6"
+  },
+  "actualReady": {
+    "status": "CANDIDATE",
+    "manifest": "ready",
+    "declared": 43,
+    "ready": 43,
+    "approved": 0,
+    "candidates": 43,
+    "failed": 0,
+    "skipped": 0,
+    "fallbacks": 0,
+    "decodedBudgetBytes": 134217728,
+    "retainedDecodedBytes": 17794560,
+    "reservedDecodedBytes": 0,
+    "uniqueDecodedImages": 33,
+    "encodedReady": 0,
+    "retainedEncodedBytes": 3983161,
+    "encodedBudgetBytes": 67108864,
+    "selectedDeclared": 43,
+    "failures": []
+  },
+  "structuresBuilt": 0,
+  "unperformed": [
+    "wallGateYwall joins",
+    "exactGatepick",
+    "friendlyXtransit",
+    "PauseResumeStop/menu"
+  ],
+  "error": "Error: Actual UI/state timeout\n    at wait (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/release-intake-259/browser.mjs:7:177)\n    at async move (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/release-intake-259/browser.mjs:13:10)\n    at async file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/release-intake-259/browser.mjs:18:2",
+  "failureActor": {
+    "id": 7,
+    "owner": 0,
+    "type": "villager",
+    "kind": "unit",
+    "x": 9.040559159102136,
+    "y": 16.959440840897862,
+    "hp": 65,
+    "maxHp": 65,
+    "food": 39.61580799999987,
+    "foodMax": 40,
+    "morale": 95,
+    "state": "idle",
+    "dir": 7,
+    "cooldown": 0,
+    "queue": [],
+    "cargo": {
+      "food": 0,
+      "wood": 0,
+      "iron": 0,
+      "units": []
+    },
+    "resuppliedTick": 78,
+    "starving": 0,
+    "lastMovedTick": 135,
+    "order": null
+  },
+  "errors": [],
+  "requestFailures": [],
+  "cleanup": {
+    "rooms": 0,
+    "serverListening": false,
+    "browserClosed": true
+  },
+  "clipPath": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/release-intake-259/clips/page@1d00d52d22947a1f343d5a43b7cdbee2.webm",
+  "preservation": {
+    "canonical": true,
+    "stage": true,
+    "build": true,
+    "public241": true,
+    "255": true,
+    "255A": true,
+    "254": true
+  },
+  "diagnosis": "Initial UI click moved living own villager7 and later finished idle/order-null. Capture required actual moving target within .02 of requested point; actual target was not captured. Firefox pointer coordinate rounding is plausible, unproven; cannot assert actual arrival against uncaptured target. Source pointerup unprojects actual event client coords. No game failure established.",
+  "publicPromoted": false
+}

@@ -1,0 +1,15 @@
+{
+  "status": "EXACT258_FIREFOX_CHANGED_GATE_Y_SCENE_ACCEPTED_NARROW",
+  "promotion260Authorized": true,
+  "sourceStage": "/tmp/rds-release258-stage",
+  "build": "/tmp/rds-release258-build",
+  "bundleSHA256": "add2b4e819d43aff69360158ef7d0b867a078730a4c53135d1a5f5d8ced49e64",
+  "manifestSHA256": "e26c747a58ca9262edc45b7f87c93b7f6cf8b48d9236fe3a44f909b6bc1434b6",
+  "briefActualSceneLook": "Default1.08 Firefox scene has continuous Ywall/GateY/wall with readable timber panels/central passage and stone feet. No visible gaps in this scene.",
+  "technicalScope": "Actual masks4/12/8, opaqueGatepick, friendlyXtransit, PauseResumeStop/menu0,43ready/errors0/network0/rooms0; wholecorner5 previously254accepted",
+  "limits": [
+    "No finaldefault/roster/motion/maps/WAN/performance/fullmatch acceptance",
+    "Other wallcorners/T/cross/buildingstates remain fallback"
+  ],
+  "allows": "ONE rooms0 guardedclient260 promotion exact192tree pairedUNCHANGED230backend/current241rollback; no backendrestart"
+}

@@ -1,0 +1,83 @@
+{
+  "status": "HOLD_STAGING_ARRIVAL_GUARD_BEFORE_ANY_CORNER_BUILD_NO_RETRY",
+  "campaigns": 1,
+  "retry": 0,
+  "imageCalls": 0,
+  "builds": 1,
+  "source": {
+    "cwd": "/tmp/rds-corner250-stage",
+    "outDir": "/tmp/rds-corner250-build",
+    "config": "/tmp/rds-corner250-stage/vite.config.js",
+    "command": "./node_modules/.bin/vite build --config /tmp/rds-corner250-stage/vite.config.js --outDir /tmp/rds-corner250-build",
+    "bundle": {
+      "/tmp/rds-corner250-build/assets/index-Crc_Aowm.js": "e430f20520c26cb20644fa51b84d3ef53cace995116a3df4fd0b0b73c24ae25c"
+    }
+  },
+  "candidateAssets": 40,
+  "old39DescriptorsExact": true,
+  "contracts": "PASS_SCHEMA_VARIANTS_PATH_BYTES_SHA_ENCODED40",
+  "actualBankReady": 40,
+  "actualBankFailed": 0,
+  "staging": {
+    "requestedTarget": {
+      "x": 11.5,
+      "y": 21.5
+    },
+    "actualActor": {
+      "id": 7,
+      "owner": 0,
+      "type": "villager",
+      "kind": "unit",
+      "x": 10.799855013870356,
+      "y": 21.500037955161986,
+      "hp": 65,
+      "maxHp": 65,
+      "food": 40,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "idle",
+      "dir": 1,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "resuppliedTick": 675,
+      "starving": 0,
+      "lastMovedTick": 137,
+      "order": null
+    },
+    "distanceToRequested": 0.7001449871584264,
+    "guard": ".7+1e-6 against requested target; actual UI ordertarget not captured",
+    "interpretation": "Small click-projection coordinate difference makes requested-target guard overly strict; no navigation/art defect established"
+  },
+  "structuresBuilt": 0,
+  "unperformed": [
+    "actualcornermask5/masks2,8 joins",
+    "exactopaquecornerpick",
+    "PauseResumeStop/menu"
+  ],
+  "failureEvidence": [
+    "browser-receipt.json",
+    "actual-failed-guard.png",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/wall-corner5-runtime-250/clips/page@12bf3356a06d0e0ba58def03022301e3.webm"
+  ],
+  "original248Preserved": true,
+  "source249Old39Preserved": true,
+  "public241188PID575363Preserved": true,
+  "runtimeInstalled": false,
+  "publicPromoted": false,
+  "healthSnapshot": {
+    "ok": true,
+    "rooms": 0
+  },
+  "cleanup": {
+    "rooms": 0,
+    "serverListening": false,
+    "browserClosed": true
+  },
+  "rootIntake": "pending; no artwork selection/install fromthistrial"
+}

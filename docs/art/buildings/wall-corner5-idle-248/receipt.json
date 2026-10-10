@@ -1,0 +1,70 @@
+{
+  "status": "CANDIDATE_WHOLE_CORNER5_ACTUAL42_READABLE_ROOT_PENDING",
+  "calls": 1,
+  "retries": 0,
+  "callState": "returned_closed",
+  "source": {
+    "path": "raw.png",
+    "sha256": "6669a4209aec90aba2ea1f2318d931b00d30161df58caac69f8536944d25a971",
+    "rgbaSha256": "b7e9915c97ff158f85375b492098b10c4d86f0d2a0f27db195533679890ad574",
+    "width": 1254,
+    "height": 1254
+  },
+  "runtime": {
+    "path": "runtime.png",
+    "sha256": "a2836750eb5efa33567996d664de57a1c5b3fad4dcf2c44dd25069bfc4cd84ea",
+    "rgbaSha256": "001c70c4c5562cf7dc6c81c60fda4ef8f76befc782ed31cbb06c76cd19b17ea7",
+    "width": 128,
+    "height": 128,
+    "derivation": {
+      "method": "resize",
+      "filter": "lanczos",
+      "sourceSha256": "6669a4209aec90aba2ea1f2318d931b00d30161df58caac69f8536944d25a971"
+    }
+  },
+  "working": {
+    "path": "working.png",
+    "sha256": "e114fdf9100d92d93522241628369cb6c5d714326452e134af941e5dd27e8569",
+    "rgbaSha256": "64e765b0679415144716cb97215bfbe588d31bd3b820a8c1168b05136f322a67",
+    "width": 256,
+    "height": 256
+  },
+  "preview": {
+    "path": "preview42.png",
+    "sha256": "c4ba389f943b7bc1d930b5da4017dead6140bd6011582508ac2a2ad32dd98f01",
+    "rgbaSha256": "fe4a2f9dbf7b5e76905f069c43bc0489a2a8d31f66b07686eeb7d8961723bc02",
+    "width": 42,
+    "height": 42
+  },
+  "alphaExtrema": [
+    0,
+    255
+  ],
+  "fixedLayout": {
+    "source": [
+      1254,
+      1254
+    ],
+    "pivot": [
+      627,
+      900
+    ],
+    "cell": [
+      128,
+      128
+    ],
+    "logicalRender": 42.3225,
+    "fit": false,
+    "shift": false,
+    "mirror": false
+  },
+  "briefActual42Look": "Two-wing V open toward bottom reads as connected realistic timber corner; modest center/end posts, no visible missing wing/rear branch/solid floor island or obvious gap. Exact cell joins/alpha picking untested.",
+  "fortification": {
+    "mask": 5
+  },
+  "runtimeInstalled": false,
+  "publicPromoted": false,
+  "networkAPIcalls": 0,
+  "preserved245Source246Public241": true,
+  "next": "Root intake then separate finite actual corner UI trial"
+}

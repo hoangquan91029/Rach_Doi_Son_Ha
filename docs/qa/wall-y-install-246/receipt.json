@@ -1,0 +1,41 @@
+{
+  "status": "LOCAL_FORT35_Y_INSTALLED_NOT_PUBLIC",
+  "manifestSHA256": "5da3d1ee22eb2faa86369f675586ddfa9c42cea72fa59baf4d96672628e1d21b",
+  "prior32ManifestSHA256": "c2a6eb5791e6d2d70aecc3197b02ac33a7f205153891200aecec6abe777487a7",
+  "runtimeSHA256": "ae4e72aa88092e311cbbf598870e984d603481149f575487296221283915f72d",
+  "all32OldDescriptorsExact": true,
+  "threeYRuntimeRenderFieldsExact244": true,
+  "advisoryOnlyChanges": [
+    {
+      "id": "wall-whole-239-mask4",
+      "unresolvedTopology": {
+        "tested": "Corners/T/cross/gate and other masks use fallback.",
+        "installed": "ExistingX bindings remain; unsupported mixed corners/T/cross/gate fallback"
+      }
+    },
+    {
+      "id": "wall-whole-239-mask8",
+      "unresolvedTopology": {
+        "tested": "Corners/T/cross/gate and other masks use fallback.",
+        "installed": "ExistingX bindings remain; unsupported mixed corners/T/cross/gate fallback"
+      }
+    },
+    {
+      "id": "wall-whole-239-mask12",
+      "unresolvedTopology": {
+        "tested": "Corners/T/cross/gate and other masks use fallback.",
+        "installed": "ExistingX bindings remain; unsupported mixed corners/T/cross/gate fallback"
+      }
+    }
+  ],
+  "source239Exact": true,
+  "public241188Unchanged": true,
+  "productionPID": "575363",
+  "health": {
+    "ok": true,
+    "rooms": 0
+  },
+  "builds": 0,
+  "browserRuns": 0,
+  "imageCalls": 0
+}

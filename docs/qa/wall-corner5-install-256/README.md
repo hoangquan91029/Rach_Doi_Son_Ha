@@ -1,0 +1,1 @@
+Local installation of exact40 manifest and unchanged248 whole corner PNG after actual254 scene intake. All39 prior descriptors preserved. Mask5 completedidle only; othercorners/T/cross/states remain fallback. Public241 unchanged.

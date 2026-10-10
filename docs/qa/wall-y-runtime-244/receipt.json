@@ -1,0 +1,59 @@
+{
+  "status": "ACTUAL_Y_WALL_TRIAL_PASS_PENDING_ROOT_JOIN_INTAKE",
+  "chunk": "/tmp/rds-wall244-build/assets/index-Crc_Aowm.js",
+  "bundleSHA256": "e430f20520c26cb20644fa51b84d3ef53cace995116a3df4fd0b0b73c24ae25c",
+  "simSHA256": "29233a059ec084bc8577d20a1bccfd28ddc3024b9cb9bf4d5598c22f220f748b",
+  "manifestSHA256": "84e0f7c58148d3c35fb5168aa48c85a01054c414359f879cc353bdb17cd623e5",
+  "manifestDescriptors": 35,
+  "newMaskBindings": [
+    4,
+    8,
+    12
+  ],
+  "whole239RuntimeSHA256": "ae4e72aa88092e311cbbf598870e984d603481149f575487296221283915f72d",
+  "observedMasks": [
+    {
+      "id": 37,
+      "mask": 4,
+      "axis": "Y",
+      "topology": "end",
+      "count": 1
+    },
+    {
+      "id": 44,
+      "mask": 12,
+      "axis": "Y",
+      "topology": "straight",
+      "count": 2
+    },
+    {
+      "id": 52,
+      "mask": 8,
+      "axis": "Y",
+      "topology": "end",
+      "count": 1
+    }
+  ],
+  "centerSelection": [
+    44
+  ],
+  "pausedTick": 892,
+  "resumedTick": 894,
+  "errors": [],
+  "clip": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/wall-y-runtime-244/clips/page@5e4850a31d95ba047c3c9136d3e12edd.webm",
+  "cleanup": {
+    "rooms": 0,
+    "serverListening": false,
+    "browserClosed": true
+  },
+  "old32Preserved": true,
+  "source239Preserved": true,
+  "public241188Exact": true,
+  "productionPID": "575363",
+  "health": {
+    "ok": true,
+    "rooms": 0
+  },
+  "methodLabelCorrection": "Raw harness retained fresh236 label; actual stage/build/manifest bindings are244",
+  "finalVisualApproval": false
+}

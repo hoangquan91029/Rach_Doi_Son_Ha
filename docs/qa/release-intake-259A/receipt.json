@@ -1,0 +1,335 @@
+{
+  "status": "PASS259A_FIREFOX_WHOLE_GATE_Y_LINE_SELECT_PAUSE_RESUME_FRIENDLY_TRANSIT_STOP_MENU",
+  "campaigns": 1,
+  "retries": 0,
+  "imageCalls": 0,
+  "rebuilds": 0,
+  "binding": {
+    "rootAuthorized": true,
+    "stage": "/tmp/rds-release258-stage",
+    "build": "/tmp/rds-release258-build",
+    "bundleSHA256": "add2b4e819d43aff69360158ef7d0b867a078730a4c53135d1a5f5d8ced49e64",
+    "manifestSHA256": "e26c747a58ca9262edc45b7f87c93b7f6cf8b48d9236fe3a44f909b6bc1434b6"
+  },
+  "actualBundleSHA256": "add2b4e819d43aff69360158ef7d0b867a078730a4c53135d1a5f5d8ced49e64",
+  "actualReady": {
+    "status": "CANDIDATE",
+    "manifest": "ready",
+    "declared": 43,
+    "ready": 43,
+    "approved": 0,
+    "candidates": 43,
+    "failed": 0,
+    "skipped": 0,
+    "fallbacks": 0,
+    "decodedBudgetBytes": 134217728,
+    "retainedDecodedBytes": 17794560,
+    "reservedDecodedBytes": 0,
+    "uniqueDecodedImages": 33,
+    "encodedReady": 0,
+    "retainedEncodedBytes": 3983161,
+    "encodedBudgetBytes": 67108864,
+    "selectedDeclared": 43,
+    "failures": []
+  },
+  "structures": [
+    {
+      "id": 37,
+      "type": "wall",
+      "x": 12.5,
+      "y": 15.5,
+      "completedTick": 355
+    },
+    {
+      "id": 42,
+      "type": "gate",
+      "x": 12.5,
+      "y": 16.5,
+      "completedTick": 593
+    },
+    {
+      "id": 51,
+      "type": "wall",
+      "x": 12.5,
+      "y": 17.5,
+      "completedTick": 787
+    }
+  ],
+  "topology": [
+    {
+      "id": 37,
+      "mask": 4,
+      "axis": "Y",
+      "topology": "end",
+      "count": 1
+    },
+    {
+      "id": 42,
+      "mask": 12,
+      "axis": "Y",
+      "topology": "straight",
+      "count": 2
+    },
+    {
+      "id": 51,
+      "mask": 8,
+      "axis": "Y",
+      "topology": "end",
+      "count": 1
+    }
+  ],
+  "gateSelection": [
+    42
+  ],
+  "moves": [
+    {
+      "prior": {
+        "state": "idle",
+        "order": null,
+        "x": 7.5,
+        "y": 21.5
+      },
+      "requested": {
+        "x": 9.5,
+        "y": 16.5
+      },
+      "actualOrder": {
+        "type": "move",
+        "x": 9.467352537722908,
+        "y": 16.474328826180678
+      },
+      "projectionDelta": 0.041531505611957,
+      "observedTick": 78,
+      "arrival": {
+        "tick": 137,
+        "x": 9.040559159102136,
+        "y": 16.959440840897862,
+        "distance": 0.6461317627678582,
+        "state": "idle",
+        "order": null
+      }
+    },
+    {
+      "prior": {
+        "state": "idle",
+        "order": null,
+        "x": 11.174949852336336,
+        "y": 16.5
+      },
+      "requested": {
+        "x": 10,
+        "y": 16.5
+      },
+      "actualOrder": {
+        "type": "move",
+        "x": 9.972702331961592,
+        "y": 16.474328826180678
+      },
+      "projectionDelta": 0.03747228103007567,
+      "observedTick": 884,
+      "arrival": {
+        "tick": 889,
+        "x": 10.649949852336334,
+        "y": 16.5,
+        "distance": 0.6777338806781009,
+        "state": "idle",
+        "order": null
+      }
+    },
+    {
+      "prior": {
+        "state": "idle",
+        "order": null,
+        "x": 10.649949852336334,
+        "y": 16.5
+      },
+      "requested": {
+        "x": 16,
+        "y": 16.5
+      },
+      "actualOrder": {
+        "type": "move",
+        "x": 15.982853223593963,
+        "y": 16.508622378992747
+      },
+      "projectionDelta": 0.019192638187940352,
+      "observedTick": 962
+    }
+  ],
+  "pause": {
+    "tick": 807,
+    "durationMs": 200,
+    "resumedTick": 808
+  },
+  "friendlyTransit": {
+    "passed": true,
+    "actualOrder": {
+      "type": "move",
+      "x": 15.982853223593963,
+      "y": 16.508622378992747
+    },
+    "observedFootprintSamples": [
+      {
+        "tick": 976,
+        "x": 12.11994985233634,
+        "y": 16.5,
+        "dir": 0,
+        "state": "walk",
+        "order": {
+          "type": "move",
+          "x": 15.982853223593963,
+          "y": 16.508622378992747
+        }
+      },
+      {
+        "tick": 977,
+        "x": 12.22494985233634,
+        "y": 16.5,
+        "dir": 0,
+        "state": "walk",
+        "order": {
+          "type": "move",
+          "x": 15.982853223593963,
+          "y": 16.508622378992747
+        }
+      },
+      {
+        "tick": 978,
+        "x": 12.329949852336341,
+        "y": 16.5,
+        "dir": 0,
+        "state": "walk",
+        "order": {
+          "type": "move",
+          "x": 15.982853223593963,
+          "y": 16.508622378992747
+        }
+      },
+      {
+        "tick": 979,
+        "x": 12.434949852336342,
+        "y": 16.5,
+        "dir": 0,
+        "state": "walk",
+        "order": {
+          "type": "move",
+          "x": 15.982853223593963,
+          "y": 16.508622378992747
+        }
+      },
+      {
+        "tick": 981,
+        "x": 12.644949852336342,
+        "y": 16.5,
+        "dir": 0,
+        "state": "walk",
+        "order": {
+          "type": "move",
+          "x": 15.982853223593963,
+          "y": 16.508622378992747
+        }
+      },
+      {
+        "tick": 982,
+        "x": 12.749949852336343,
+        "y": 16.5,
+        "dir": 0,
+        "state": "walk",
+        "order": {
+          "type": "move",
+          "x": 15.982853223593963,
+          "y": 16.508622378992747
+        }
+      },
+      {
+        "tick": 983,
+        "x": 12.854949852336343,
+        "y": 16.5,
+        "dir": 0,
+        "state": "walk",
+        "order": {
+          "type": "move",
+          "x": 15.982853223593963,
+          "y": 16.508622378992747
+        }
+      }
+    ],
+    "arrival": {
+      "tick": 1008,
+      "x": 15.374949852336353,
+      "y": 16.5,
+      "dir": 0,
+      "state": "idle",
+      "order": null
+    }
+  },
+  "stop": {
+    "id": 7,
+    "owner": 0,
+    "type": "villager",
+    "kind": "unit",
+    "x": 15.374949852336353,
+    "y": 16.5,
+    "hp": 65,
+    "maxHp": 65,
+    "food": 33.707199999997925,
+    "foodMax": 40,
+    "morale": 95,
+    "state": "idle",
+    "dir": 0,
+    "cooldown": 0,
+    "queue": [],
+    "cargo": {
+      "food": 0,
+      "wood": 0,
+      "iron": 0,
+      "units": []
+    },
+    "resuppliedTick": 79,
+    "starving": 0,
+    "lastMovedTick": 1007,
+    "order": null
+  },
+  "menu": {
+    "status": "PLACEHOLDER_ONLY",
+    "manifest": "not-loaded",
+    "declared": 0,
+    "ready": 0,
+    "approved": 0,
+    "candidates": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fallbacks": 0,
+    "decodedBudgetBytes": 134217728,
+    "retainedDecodedBytes": 0,
+    "reservedDecodedBytes": 0,
+    "uniqueDecodedImages": 0,
+    "encodedReady": 0,
+    "retainedEncodedBytes": 0,
+    "encodedBudgetBytes": 67108864,
+    "selectedDeclared": 0,
+    "failures": []
+  },
+  "errors": [],
+  "requestFailures": [],
+  "cleanup": {
+    "rooms": 0,
+    "serverListening": false,
+    "browserClosed": true
+  },
+  "preservation": {
+    "canonical": true,
+    "stage": true,
+    "build": true,
+    "public241": true,
+    "255": true,
+    "255A": true,
+    "254": true,
+    "259": true
+  },
+  "original259Diagnosis": "259A real initial target9.4673525,16.4743288 differs from requested9.5,16.5 by.0415315; old259 .02 acquisition guard would discard it. No projection code defect asserted. Actual-first capture saved evidence before .7 local-destination guard and .7 actual-arrival verification.",
+  "actualScene": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/release-intake-259A/actual-wall-gate-wall-default.png",
+  "clipPath": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/release-intake-259A/clips/page@c3ebb0096eae8f0916126c750710825d.webm",
+  "visualScope": "Gameplay-size default1.08 scene inspected: two straightY endwalls join authoredYgate. Narrow root scene intake pending; no other topology/state or fullmatch inference.",
+  "publicPromoted": false
+}

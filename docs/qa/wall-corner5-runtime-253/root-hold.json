@@ -1,0 +1,32 @@
+{
+  "status": "TERMINAL_HOLD_REDUNDANT_SHORT_MOVE_OBSERVATION_TIMEOUT",
+  "original253Preserved": true,
+  "firstActualOrderArrival": {
+    "tick": 149,
+    "x": 10.799855013870356,
+    "y": 21.500037955161986,
+    "distance": 0.6999998999999997,
+    "state": "idle",
+    "order": null
+  },
+  "completedStructures": [
+    {
+      "id": 37,
+      "type": "wall",
+      "x": 12.5,
+      "y": 22.5,
+      "completedTick": 337
+    }
+  ],
+  "diagnosis": "First arrival bound to actual UI move target passed; repeated short staging move after firstbuild completed before walk-order capture. Timeout does not establish navigation/art defect. New254 stagesonce and builds remaining adjacentstructures fromcurrentlivingownbuilder.",
+  "unperformed": [
+    "Threecompletedcornerjoins",
+    "Exactcornerpick/PauseResumeStop/menu"
+  ],
+  "cleanup": {
+    "rooms": 0,
+    "serverListening": false,
+    "browserClosed": true
+  },
+  "publicChanged": false
+}

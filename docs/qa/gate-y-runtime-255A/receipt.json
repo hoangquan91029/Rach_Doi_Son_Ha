@@ -1,0 +1,167 @@
+{
+  "status": "ACTUAL_GATE_Y_TRIAL_PASS_PENDING_ROOT_SCENE_INTAKE",
+  "campaigns": 1,
+  "retries": 0,
+  "newBuilds": 0,
+  "imageCalls": 0,
+  "binding": {
+    "priorCampaign": "255 capturedHOLD",
+    "newFiniteConcern": "ASYNC_ASSIGNMENT_RACE methodcorrection",
+    "rebuilds": 0,
+    "stage": "/tmp/rds-gate255-stage",
+    "build": "/tmp/rds-gate255-build",
+    "descriptors": 42,
+    "all39Exact": true,
+    "manifestSHA256": "5233081e3c858d5447f17ddd9c0536fd1cb83ec2ed81c40a6451cc732fdbf207",
+    "bundleSHA256": "e430f20520c26cb20644fa51b84d3ef53cace995116a3df4fd0b0b73c24ae25c",
+    "runtimeSHA256": "867ba2b2e8e15f4d1c2011defebeb2c5fd3cd704722ba10bf2a6b637b765fbd1"
+  },
+  "structures": [
+    {
+      "id": 36,
+      "type": "wall",
+      "x": 12.5,
+      "y": 15.5,
+      "completedTick": 342
+    },
+    {
+      "id": 42,
+      "type": "gate",
+      "x": 12.5,
+      "y": 16.5,
+      "completedTick": 568
+    },
+    {
+      "id": 51,
+      "type": "wall",
+      "x": 12.5,
+      "y": 17.5,
+      "completedTick": 760
+    }
+  ],
+  "topology": [
+    {
+      "id": 36,
+      "mask": 4,
+      "axis": "Y",
+      "topology": "end",
+      "count": 1
+    },
+    {
+      "id": 42,
+      "mask": 12,
+      "axis": "Y",
+      "topology": "straight",
+      "count": 2
+    },
+    {
+      "id": 51,
+      "mask": 8,
+      "axis": "Y",
+      "topology": "end",
+      "count": 1
+    }
+  ],
+  "gateSelection": [
+    42
+  ],
+  "pausedTick": 780,
+  "resumedTick": 783,
+  "actualOrderObservation": "Boundedwait for exactselected ownliving/unembarked villager walk and actualmoveorder within.02projectiondelta; then captures target before .7+1e-6 arrivalguard",
+  "initialStagingOrder": {
+    "type": "move",
+    "x": 9.499790705509472,
+    "y": 16.49982836478695
+  },
+  "beforeCrossingOrder": {
+    "type": "move",
+    "x": 9.999763109916193,
+    "y": 16.49982836478695
+  },
+  "crossingOrder": {
+    "type": "move",
+    "x": 16,
+    "y": 16.5
+  },
+  "observedFootprintSamples": [
+    {
+      "tick": 939,
+      "x": 12.329949852336341,
+      "y": 16.5,
+      "dir": 0,
+      "state": "walk"
+    },
+    {
+      "tick": 941,
+      "x": 12.539949852336342,
+      "y": 16.5,
+      "dir": 0,
+      "state": "walk"
+    }
+  ],
+  "arrival": {
+    "sample": {
+      "tick": 970,
+      "x": 15.374949852336353,
+      "y": 16.5,
+      "dir": 0,
+      "state": "idle"
+    },
+    "distanceFromCapturedOrder": 0.6250501476636465,
+    "engineGuard": 0.7
+  },
+  "ownGateTravelPassed": true,
+  "stoppedActor": {
+    "id": 7,
+    "owner": 0,
+    "hp": 65,
+    "state": "idle",
+    "order": null,
+    "dir": 0
+  },
+  "menu": {
+    "bank": {
+      "phase": "menu",
+      "epoch": 3,
+      "encodedBytes": 3968127,
+      "encodedBudgetBytes": 67108864,
+      "activeIds": [],
+      "scope": null
+    },
+    "art": {
+      "status": "PLACEHOLDER_ONLY",
+      "manifest": "not-loaded",
+      "declared": 0,
+      "ready": 0,
+      "approved": 0,
+      "candidates": 0,
+      "failed": 0,
+      "skipped": 0,
+      "fallbacks": 0,
+      "decodedBudgetBytes": 134217728,
+      "retainedDecodedBytes": 0,
+      "reservedDecodedBytes": 0,
+      "uniqueDecodedImages": 0,
+      "encodedReady": 0,
+      "retainedEncodedBytes": 0,
+      "encodedBudgetBytes": 67108864,
+      "selectedDeclared": 0,
+      "failures": []
+    }
+  },
+  "errors": [],
+  "cleanup": {
+    "rooms": 0,
+    "serverListening": false,
+    "browserClosed": true
+  },
+  "clip": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/gate-y-runtime-255A/clips/page@f5727a7e898033ad52349adba922237d.webm",
+  "public241188Exact": true,
+  "original252SourceRuntimeExact": true,
+  "original255AllBytesPreserved": true,
+  "canonicalOld39Exact": true,
+  "canonicalNow": 40,
+  "rootConcurrentChange": "Root256 onecorner248 addition; worker owns no canonical install/promotion",
+  "productionPID": "575363 verified immutable230 command",
+  "finalArtApproval": false
+}

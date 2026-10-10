@@ -1,0 +1,62 @@
+{
+  "id": "gate-whole-252-Y-mask12",
+  "family": "building.gate",
+  "kind": "building",
+  "state": "idle",
+  "direction": null,
+  "candidate": true,
+  "review": {
+    "status": "CANDIDATE"
+  },
+  "source": {
+    "path": "raw.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "1a11271507f99e69ea2840ca3a400a10fb463767ceea6d29f479b68f5245efcc",
+    "rgbaSha256": "cba03533bf44dcefa6d4edbecffd78f937bc2667bd4abf292e2b2044b1cfc8e0"
+  },
+  "runtime": {
+    "path": "runtime.png",
+    "width": 128,
+    "height": 128,
+    "sha256": "867ba2b2e8e15f4d1c2011defebeb2c5fd3cd704722ba10bf2a6b637b765fbd1",
+    "rgbaSha256": "4b9985e32c70e976aed4c8204629fc51bc99bf6ebf2e495cd264a5d12045d93e",
+    "derivation": {
+      "method": "resize",
+      "filter": "lanczos",
+      "sourceSha256": "1a11271507f99e69ea2840ca3a400a10fb463767ceea6d29f479b68f5245efcc"
+    }
+  },
+  "cell": {
+    "width": 128,
+    "height": 128
+  },
+  "pivot": {
+    "x": 627,
+    "y": 900,
+    "space": "source"
+  },
+  "render": {
+    "width": 42.3225,
+    "height": 42.3225
+  },
+  "alphaPolicy": "transparent",
+  "contactShadow": {
+    "mode": "baked"
+  },
+  "frames": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 1000
+    }
+  ],
+  "loop": true,
+  "fortification": {
+    "mask": 12,
+    "axis": "Y"
+  },
+  "notes": "Whole GateY candidate only; actualjoins/opaque selection/friendlytransit pending; no per-imagefit/transforms/pixelassembly."
+}

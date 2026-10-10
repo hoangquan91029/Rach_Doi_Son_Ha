@@ -1,0 +1,62 @@
+{
+  "id": "gate-whole-245-X-mask3",
+  "family": "building.gate",
+  "kind": "building",
+  "state": "idle",
+  "direction": null,
+  "candidate": true,
+  "review": {
+    "status": "CANDIDATE"
+  },
+  "source": {
+    "path": "raw.png",
+    "sha256": "8a44cd1880468345e556f6aefaa02930be2072e9bfeed52ff8311f51ba635e98",
+    "rgbaSha256": "f9d9278641a9729a7d26095229ce3afd89e7e4805de79d11359e9b9d314552a0",
+    "width": 1254,
+    "height": 1254
+  },
+  "runtime": {
+    "path": "runtime.png",
+    "sha256": "89f18963d6d66452d584071e5158320c4168a6fb0d908c2ca06375759aaa6579",
+    "rgbaSha256": "84f80429a67e81015561d1922f33cc3540d252743d33b1cf13ea035c5a56448c",
+    "width": 128,
+    "height": 128,
+    "derivation": {
+      "method": "resize",
+      "filter": "lanczos",
+      "sourceSha256": "8a44cd1880468345e556f6aefaa02930be2072e9bfeed52ff8311f51ba635e98"
+    }
+  },
+  "cell": {
+    "width": 128,
+    "height": 128
+  },
+  "pivot": {
+    "x": 627,
+    "y": 900,
+    "space": "source"
+  },
+  "render": {
+    "width": 42.3225,
+    "height": 42.3225
+  },
+  "alphaPolicy": "transparent",
+  "contactShadow": {
+    "mode": "baked"
+  },
+  "frames": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 1000
+    }
+  ],
+  "loop": true,
+  "fortification": {
+    "mask": 3,
+    "axis": "X"
+  },
+  "notes": "Provisional complete GateX for straight X wall-gate-wall context only; root intake/actual friendly transit/alpha selection pending. Not all masks/states. No closed leaf/floor added."
+}

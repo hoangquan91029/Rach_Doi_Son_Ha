@@ -1,0 +1,61 @@
+{
+  "id": "wall-whole-248-mask5",
+  "family": "building.wall",
+  "kind": "building",
+  "state": "idle",
+  "direction": null,
+  "candidate": true,
+  "review": {
+    "status": "CANDIDATE"
+  },
+  "source": {
+    "path": "raw.png",
+    "sha256": "6669a4209aec90aba2ea1f2318d931b00d30161df58caac69f8536944d25a971",
+    "rgbaSha256": "b7e9915c97ff158f85375b492098b10c4d86f0d2a0f27db195533679890ad574",
+    "width": 1254,
+    "height": 1254
+  },
+  "runtime": {
+    "path": "runtime.png",
+    "sha256": "a2836750eb5efa33567996d664de57a1c5b3fad4dcf2c44dd25069bfc4cd84ea",
+    "rgbaSha256": "001c70c4c5562cf7dc6c81c60fda4ef8f76befc782ed31cbb06c76cd19b17ea7",
+    "width": 128,
+    "height": 128,
+    "derivation": {
+      "method": "resize",
+      "filter": "lanczos",
+      "sourceSha256": "6669a4209aec90aba2ea1f2318d931b00d30161df58caac69f8536944d25a971"
+    }
+  },
+  "cell": {
+    "width": 128,
+    "height": 128
+  },
+  "pivot": {
+    "x": 627,
+    "y": 900,
+    "space": "source"
+  },
+  "render": {
+    "width": 42.3225,
+    "height": 42.3225
+  },
+  "alphaPolicy": "transparent",
+  "contactShadow": {
+    "mode": "baked"
+  },
+  "frames": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 1000
+    }
+  ],
+  "loop": true,
+  "fortification": {
+    "mask": 5
+  },
+  "notes": "Whole +X/+Y corner candidate; no wallaxis. Only mask5 living completed idle authored. Joins/alpha selection pending actual finite trial."
+}

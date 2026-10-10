@@ -1,0 +1,357 @@
+{
+  "status": "PASS_WHOLE_GATE_Y_LINE_SELECT_PAUSE_RESUME_FRIENDLY_TRANSIT_STOP_MENU",
+  "method": "One255A wholeGateY ordinaryDelta trial; keyboard unusedgroup9 clear and exactlivingown pick; fresh255 isolated42manifest; no group/appstate/commands injection; read-only diagnostics; no injected gameplay/state/facing/speed",
+  "errors": [],
+  "structures": [
+    {
+      "id": 36,
+      "type": "wall",
+      "x": 12.5,
+      "y": 15.5,
+      "completedTick": 342
+    },
+    {
+      "id": 42,
+      "type": "gate",
+      "x": 12.5,
+      "y": 16.5,
+      "completedTick": 568
+    },
+    {
+      "id": 51,
+      "type": "wall",
+      "x": 12.5,
+      "y": 17.5,
+      "completedTick": 760
+    }
+  ],
+  "movement": [
+    {
+      "tick": 925,
+      "x": 10.859949852336335,
+      "y": 16.5,
+      "dir": 0,
+      "state": "walk"
+    },
+    {
+      "tick": 927,
+      "x": 11.069949852336336,
+      "y": 16.5,
+      "dir": 0,
+      "state": "walk"
+    },
+    {
+      "tick": 929,
+      "x": 11.279949852336337,
+      "y": 16.5,
+      "dir": 0,
+      "state": "walk"
+    },
+    {
+      "tick": 932,
+      "x": 11.594949852336338,
+      "y": 16.5,
+      "dir": 0,
+      "state": "walk"
+    },
+    {
+      "tick": 934,
+      "x": 11.804949852336339,
+      "y": 16.5,
+      "dir": 0,
+      "state": "walk"
+    },
+    {
+      "tick": 936,
+      "x": 12.01494985233634,
+      "y": 16.5,
+      "dir": 0,
+      "state": "walk"
+    },
+    {
+      "tick": 939,
+      "x": 12.329949852336341,
+      "y": 16.5,
+      "dir": 0,
+      "state": "walk"
+    },
+    {
+      "tick": 941,
+      "x": 12.539949852336342,
+      "y": 16.5,
+      "dir": 0,
+      "state": "walk"
+    },
+    {
+      "tick": 944,
+      "x": 12.854949852336343,
+      "y": 16.5,
+      "dir": 0,
+      "state": "walk"
+    },
+    {
+      "tick": 946,
+      "x": 13.064949852336344,
+      "y": 16.5,
+      "dir": 0,
+      "state": "walk"
+    },
+    {
+      "tick": 948,
+      "x": 13.274949852336345,
+      "y": 16.5,
+      "dir": 0,
+      "state": "walk"
+    },
+    {
+      "tick": 951,
+      "x": 13.589949852336346,
+      "y": 16.5,
+      "dir": 0,
+      "state": "walk"
+    },
+    {
+      "tick": 953,
+      "x": 13.799949852336347,
+      "y": 16.5,
+      "dir": 0,
+      "state": "walk"
+    },
+    {
+      "tick": 956,
+      "x": 14.114949852336348,
+      "y": 16.5,
+      "dir": 0,
+      "state": "walk"
+    },
+    {
+      "tick": 958,
+      "x": 14.32494985233635,
+      "y": 16.5,
+      "dir": 0,
+      "state": "walk"
+    },
+    {
+      "tick": 961,
+      "x": 14.63994985233635,
+      "y": 16.5,
+      "dir": 0,
+      "state": "walk"
+    },
+    {
+      "tick": 963,
+      "x": 14.849949852336351,
+      "y": 16.5,
+      "dir": 0,
+      "state": "walk"
+    },
+    {
+      "tick": 965,
+      "x": 15.059949852336352,
+      "y": 16.5,
+      "dir": 0,
+      "state": "walk"
+    },
+    {
+      "tick": 967,
+      "x": 15.269949852336353,
+      "y": 16.5,
+      "dir": 0,
+      "state": "walk"
+    },
+    {
+      "tick": 970,
+      "x": 15.374949852336353,
+      "y": 16.5,
+      "dir": 0,
+      "state": "idle"
+    }
+  ],
+  "bundleSHA256": "e430f20520c26cb20644fa51b84d3ef53cace995116a3df4fd0b0b73c24ae25c",
+  "workerId": 7,
+  "line": {
+    "x": 12.5,
+    "y": 16.5,
+    "staging": {
+      "x": 9.5,
+      "y": 16.5
+    },
+    "d": 5.385164807134505
+  },
+  "lastMoveObserved": {
+    "tick": 924,
+    "worker": {
+      "id": 7,
+      "owner": 0,
+      "type": "villager",
+      "kind": "unit",
+      "x": 10.754949852336335,
+      "y": 16.5,
+      "hp": 65,
+      "maxHp": 65,
+      "food": 34.369599999998144,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "walk",
+      "dir": 0,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "resuppliedTick": 74,
+      "starving": 0,
+      "lastMovedTick": 924,
+      "order": {
+        "type": "move",
+        "x": 16,
+        "y": 16.5
+      }
+    },
+    "requested": {
+      "x": 16,
+      "y": 16.5
+    }
+  },
+  "initialStagingOrder": {
+    "type": "move",
+    "x": 9.499790705509472,
+    "y": 16.49982836478695
+  },
+  "topology": [
+    {
+      "id": 36,
+      "mask": 4,
+      "axis": "Y",
+      "topology": "end",
+      "count": 1
+    },
+    {
+      "id": 42,
+      "mask": 12,
+      "axis": "Y",
+      "topology": "straight",
+      "count": 2
+    },
+    {
+      "id": 51,
+      "mask": 8,
+      "axis": "Y",
+      "topology": "end",
+      "count": 1
+    }
+  ],
+  "threeStructuresCompleted": true,
+  "gateSelection": [
+    42
+  ],
+  "pausedTick": 780,
+  "resumedTick": 783,
+  "beforeCrossingOrder": {
+    "type": "move",
+    "x": 9.999763109916193,
+    "y": 16.49982836478695
+  },
+  "beforeCrossing": {
+    "tick": 856,
+    "worker": {
+      "id": 7,
+      "owner": 0,
+      "type": "villager",
+      "kind": "unit",
+      "x": 10.649949852336334,
+      "y": 16.5,
+      "hp": 65,
+      "maxHp": 65,
+      "food": 34.82003199999829,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "idle",
+      "dir": 4,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "resuppliedTick": 74,
+      "starving": 0,
+      "lastMovedTick": 853,
+      "order": null
+    }
+  },
+  "crossingOrder": {
+    "type": "move",
+    "x": 16,
+    "y": 16.5
+  },
+  "ownGateTravelPassed": true,
+  "stoppedActor": {
+    "id": 7,
+    "owner": 0,
+    "type": "villager",
+    "kind": "unit",
+    "x": 15.374949852336353,
+    "y": 16.5,
+    "hp": 65,
+    "maxHp": 65,
+    "food": 33.89929599999799,
+    "foodMax": 40,
+    "morale": 95,
+    "state": "idle",
+    "dir": 0,
+    "cooldown": 0,
+    "queue": [],
+    "cargo": {
+      "food": 0,
+      "wood": 0,
+      "iron": 0,
+      "units": []
+    },
+    "resuppliedTick": 74,
+    "starving": 0,
+    "lastMovedTick": 968,
+    "order": null
+  },
+  "menu": {
+    "bank": {
+      "phase": "menu",
+      "epoch": 3,
+      "encodedBytes": 3968127,
+      "encodedBudgetBytes": 67108864,
+      "activeIds": [],
+      "scope": null
+    },
+    "art": {
+      "status": "PLACEHOLDER_ONLY",
+      "manifest": "not-loaded",
+      "declared": 0,
+      "ready": 0,
+      "approved": 0,
+      "candidates": 0,
+      "failed": 0,
+      "skipped": 0,
+      "fallbacks": 0,
+      "decodedBudgetBytes": 134217728,
+      "retainedDecodedBytes": 0,
+      "reservedDecodedBytes": 0,
+      "uniqueDecodedImages": 0,
+      "encodedReady": 0,
+      "retainedEncodedBytes": 0,
+      "encodedBudgetBytes": 67108864,
+      "selectedDeclared": 0,
+      "failures": []
+    }
+  },
+  "clipPath": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/gate-y-runtime-255A/clips/page@f5727a7e898033ad52349adba922237d.webm",
+  "cleanup": {
+    "rooms": 0,
+    "serverListening": false,
+    "browserClosed": true
+  }
+}

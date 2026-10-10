@@ -3035,6 +3035,708 @@
         "mask": 3
       },
       "unresolvedTopology": "Y/end-Y/corner/T/cross masks4..15 use fallback; no whole artwork available."
+    },
+    {
+      "schema": "rds-whole-building-candidate/v1",
+      "id": "wall-whole-239-mask4",
+      "family": "building.wall",
+      "kind": "building",
+      "state": "idle",
+      "direction": null,
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "source": {
+        "path": "docs/art/buildings/wall-y-idle-239/raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "f66c5e98761c03c0d66d7af2fb04d7ffa5d7eefd0a17b8257ad0034e21473d51",
+        "rgbaSha256": "5383ebf3cfde2f93af59f46e3ac7540ae9a92af2b7619d3b95de2ea0ee2a7d53"
+      },
+      "runtime": {
+        "path": "wall-239/idle.png",
+        "width": 128,
+        "height": 128,
+        "sha256": "ae4e72aa88092e311cbbf598870e984d603481149f575487296221283915f72d",
+        "rgbaSha256": "c2d9488c5f00731ad461f2a95fc960972cf4052d10d058c60f2fd70e070abacc",
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "f66c5e98761c03c0d66d7af2fb04d7ffa5d7eefd0a17b8257ad0034e21473d51"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 900,
+        "space": "source"
+      },
+      "render": {
+        "width": 42.3225,
+        "height": 42.3225
+      },
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "alphaPolicy": "transparent",
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 600
+        }
+      ],
+      "loop": true,
+      "layoutReason": "Unchanged whole2391254 Y-wall source uniformly exported128; fixedpivot627900/logical42.3225; one whole panel per livingcompletedYmask4/8/12, no fitting/transforms/assembly.",
+      "unresolvedStates": [
+        "construction",
+        "attack",
+        "hit",
+        "death"
+      ],
+      "fortification": {
+        "mask": 4
+      },
+      "unresolvedTopology": "ExistingX bindings remain; unsupported mixed corners/T/cross/gate fallback"
+    },
+    {
+      "schema": "rds-whole-building-candidate/v1",
+      "id": "wall-whole-239-mask8",
+      "family": "building.wall",
+      "kind": "building",
+      "state": "idle",
+      "direction": null,
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "source": {
+        "path": "docs/art/buildings/wall-y-idle-239/raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "f66c5e98761c03c0d66d7af2fb04d7ffa5d7eefd0a17b8257ad0034e21473d51",
+        "rgbaSha256": "5383ebf3cfde2f93af59f46e3ac7540ae9a92af2b7619d3b95de2ea0ee2a7d53"
+      },
+      "runtime": {
+        "path": "wall-239/idle.png",
+        "width": 128,
+        "height": 128,
+        "sha256": "ae4e72aa88092e311cbbf598870e984d603481149f575487296221283915f72d",
+        "rgbaSha256": "c2d9488c5f00731ad461f2a95fc960972cf4052d10d058c60f2fd70e070abacc",
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "f66c5e98761c03c0d66d7af2fb04d7ffa5d7eefd0a17b8257ad0034e21473d51"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 900,
+        "space": "source"
+      },
+      "render": {
+        "width": 42.3225,
+        "height": 42.3225
+      },
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "alphaPolicy": "transparent",
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 600
+        }
+      ],
+      "loop": true,
+      "layoutReason": "Unchanged whole2391254 Y-wall source uniformly exported128; fixedpivot627900/logical42.3225; one whole panel per livingcompletedYmask4/8/12, no fitting/transforms/assembly.",
+      "unresolvedStates": [
+        "construction",
+        "attack",
+        "hit",
+        "death"
+      ],
+      "fortification": {
+        "mask": 8
+      },
+      "unresolvedTopology": "ExistingX bindings remain; unsupported mixed corners/T/cross/gate fallback"
+    },
+    {
+      "schema": "rds-whole-building-candidate/v1",
+      "id": "wall-whole-239-mask12",
+      "family": "building.wall",
+      "kind": "building",
+      "state": "idle",
+      "direction": null,
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "source": {
+        "path": "docs/art/buildings/wall-y-idle-239/raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "f66c5e98761c03c0d66d7af2fb04d7ffa5d7eefd0a17b8257ad0034e21473d51",
+        "rgbaSha256": "5383ebf3cfde2f93af59f46e3ac7540ae9a92af2b7619d3b95de2ea0ee2a7d53"
+      },
+      "runtime": {
+        "path": "wall-239/idle.png",
+        "width": 128,
+        "height": 128,
+        "sha256": "ae4e72aa88092e311cbbf598870e984d603481149f575487296221283915f72d",
+        "rgbaSha256": "c2d9488c5f00731ad461f2a95fc960972cf4052d10d058c60f2fd70e070abacc",
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "f66c5e98761c03c0d66d7af2fb04d7ffa5d7eefd0a17b8257ad0034e21473d51"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 900,
+        "space": "source"
+      },
+      "render": {
+        "width": 42.3225,
+        "height": 42.3225
+      },
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "alphaPolicy": "transparent",
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 600
+        }
+      ],
+      "loop": true,
+      "layoutReason": "Unchanged whole2391254 Y-wall source uniformly exported128; fixedpivot627900/logical42.3225; one whole panel per livingcompletedYmask4/8/12, no fitting/transforms/assembly.",
+      "unresolvedStates": [
+        "construction",
+        "attack",
+        "hit",
+        "death"
+      ],
+      "fortification": {
+        "mask": 12
+      },
+      "unresolvedTopology": "ExistingX bindings remain; unsupported mixed corners/T/cross/gate fallback"
+    },
+    {
+      "id": "gate-whole-245-X-mask0",
+      "family": "building.gate",
+      "kind": "building",
+      "state": "idle",
+      "direction": null,
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "source": {
+        "path": "docs/art/buildings/gate-x-idle-245/raw.png",
+        "sha256": "8a44cd1880468345e556f6aefaa02930be2072e9bfeed52ff8311f51ba635e98",
+        "rgbaSha256": "f9d9278641a9729a7d26095229ce3afd89e7e4805de79d11359e9b9d314552a0",
+        "width": 1254,
+        "height": 1254
+      },
+      "runtime": {
+        "path": "gate-245/idle.png",
+        "sha256": "89f18963d6d66452d584071e5158320c4168a6fb0d908c2ca06375759aaa6579",
+        "rgbaSha256": "84f80429a67e81015561d1922f33cc3540d252743d33b1cf13ea035c5a56448c",
+        "width": 128,
+        "height": 128,
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "8a44cd1880468345e556f6aefaa02930be2072e9bfeed52ff8311f51ba635e98"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 900,
+        "space": "source"
+      },
+      "render": {
+        "width": 42.3225,
+        "height": 42.3225
+      },
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 1000
+        }
+      ],
+      "loop": true,
+      "fortification": {
+        "mask": 0,
+        "axis": "X"
+      },
+      "notes": "Whole245 GateX livingcompletedidle masks0/1/2/3 only; other gate axes/topologies/states fallback; no fitting/transforms/assembly."
+    },
+    {
+      "id": "gate-whole-245-X-mask1",
+      "family": "building.gate",
+      "kind": "building",
+      "state": "idle",
+      "direction": null,
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "source": {
+        "path": "docs/art/buildings/gate-x-idle-245/raw.png",
+        "sha256": "8a44cd1880468345e556f6aefaa02930be2072e9bfeed52ff8311f51ba635e98",
+        "rgbaSha256": "f9d9278641a9729a7d26095229ce3afd89e7e4805de79d11359e9b9d314552a0",
+        "width": 1254,
+        "height": 1254
+      },
+      "runtime": {
+        "path": "gate-245/idle.png",
+        "sha256": "89f18963d6d66452d584071e5158320c4168a6fb0d908c2ca06375759aaa6579",
+        "rgbaSha256": "84f80429a67e81015561d1922f33cc3540d252743d33b1cf13ea035c5a56448c",
+        "width": 128,
+        "height": 128,
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "8a44cd1880468345e556f6aefaa02930be2072e9bfeed52ff8311f51ba635e98"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 900,
+        "space": "source"
+      },
+      "render": {
+        "width": 42.3225,
+        "height": 42.3225
+      },
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 1000
+        }
+      ],
+      "loop": true,
+      "fortification": {
+        "mask": 1,
+        "axis": "X"
+      },
+      "notes": "Whole245 GateX livingcompletedidle masks0/1/2/3 only; other gate axes/topologies/states fallback; no fitting/transforms/assembly."
+    },
+    {
+      "id": "gate-whole-245-X-mask2",
+      "family": "building.gate",
+      "kind": "building",
+      "state": "idle",
+      "direction": null,
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "source": {
+        "path": "docs/art/buildings/gate-x-idle-245/raw.png",
+        "sha256": "8a44cd1880468345e556f6aefaa02930be2072e9bfeed52ff8311f51ba635e98",
+        "rgbaSha256": "f9d9278641a9729a7d26095229ce3afd89e7e4805de79d11359e9b9d314552a0",
+        "width": 1254,
+        "height": 1254
+      },
+      "runtime": {
+        "path": "gate-245/idle.png",
+        "sha256": "89f18963d6d66452d584071e5158320c4168a6fb0d908c2ca06375759aaa6579",
+        "rgbaSha256": "84f80429a67e81015561d1922f33cc3540d252743d33b1cf13ea035c5a56448c",
+        "width": 128,
+        "height": 128,
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "8a44cd1880468345e556f6aefaa02930be2072e9bfeed52ff8311f51ba635e98"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 900,
+        "space": "source"
+      },
+      "render": {
+        "width": 42.3225,
+        "height": 42.3225
+      },
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 1000
+        }
+      ],
+      "loop": true,
+      "fortification": {
+        "mask": 2,
+        "axis": "X"
+      },
+      "notes": "Whole245 GateX livingcompletedidle masks0/1/2/3 only; other gate axes/topologies/states fallback; no fitting/transforms/assembly."
+    },
+    {
+      "id": "gate-whole-245-X-mask3",
+      "family": "building.gate",
+      "kind": "building",
+      "state": "idle",
+      "direction": null,
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "source": {
+        "path": "docs/art/buildings/gate-x-idle-245/raw.png",
+        "sha256": "8a44cd1880468345e556f6aefaa02930be2072e9bfeed52ff8311f51ba635e98",
+        "rgbaSha256": "f9d9278641a9729a7d26095229ce3afd89e7e4805de79d11359e9b9d314552a0",
+        "width": 1254,
+        "height": 1254
+      },
+      "runtime": {
+        "path": "gate-245/idle.png",
+        "sha256": "89f18963d6d66452d584071e5158320c4168a6fb0d908c2ca06375759aaa6579",
+        "rgbaSha256": "84f80429a67e81015561d1922f33cc3540d252743d33b1cf13ea035c5a56448c",
+        "width": 128,
+        "height": 128,
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "8a44cd1880468345e556f6aefaa02930be2072e9bfeed52ff8311f51ba635e98"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 900,
+        "space": "source"
+      },
+      "render": {
+        "width": 42.3225,
+        "height": 42.3225
+      },
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 1000
+        }
+      ],
+      "loop": true,
+      "fortification": {
+        "mask": 3,
+        "axis": "X"
+      },
+      "notes": "Whole245 GateX livingcompletedidle masks0/1/2/3 only; other gate axes/topologies/states fallback; no fitting/transforms/assembly."
+    },
+    {
+      "id": "wall-whole-248-mask5",
+      "family": "building.wall",
+      "kind": "building",
+      "state": "idle",
+      "direction": null,
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "source": {
+        "path": "raw.png",
+        "sha256": "6669a4209aec90aba2ea1f2318d931b00d30161df58caac69f8536944d25a971",
+        "rgbaSha256": "b7e9915c97ff158f85375b492098b10c4d86f0d2a0f27db195533679890ad574",
+        "width": 1254,
+        "height": 1254
+      },
+      "runtime": {
+        "path": "corner-248/idle.png",
+        "sha256": "a2836750eb5efa33567996d664de57a1c5b3fad4dcf2c44dd25069bfc4cd84ea",
+        "rgbaSha256": "001c70c4c5562cf7dc6c81c60fda4ef8f76befc782ed31cbb06c76cd19b17ea7",
+        "width": 128,
+        "height": 128,
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "6669a4209aec90aba2ea1f2318d931b00d30161df58caac69f8536944d25a971"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 900,
+        "space": "source"
+      },
+      "render": {
+        "width": 42.3225,
+        "height": 42.3225
+      },
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 1000
+        }
+      ],
+      "loop": true,
+      "fortification": {
+        "mask": 5
+      },
+      "notes": "Whole +X/+Y corner candidate; no wallaxis. Only mask5 living completed idle authored. Joins/alpha selection pending actual finite trial."
+    },
+    {
+      "id": "gate-whole-252-Y-mask4",
+      "family": "building.gate",
+      "kind": "building",
+      "state": "idle",
+      "direction": null,
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "source": {
+        "path": "docs/art/buildings/gate-y-idle-252/raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "1a11271507f99e69ea2840ca3a400a10fb463767ceea6d29f479b68f5245efcc",
+        "rgbaSha256": "cba03533bf44dcefa6d4edbecffd78f937bc2667bd4abf292e2b2044b1cfc8e0"
+      },
+      "runtime": {
+        "path": "gate-252/idle.png",
+        "width": 128,
+        "height": 128,
+        "sha256": "867ba2b2e8e15f4d1c2011defebeb2c5fd3cd704722ba10bf2a6b637b765fbd1",
+        "rgbaSha256": "4b9985e32c70e976aed4c8204629fc51bc99bf6ebf2e495cd264a5d12045d93e",
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "1a11271507f99e69ea2840ca3a400a10fb463767ceea6d29f479b68f5245efcc"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 900,
+        "space": "source"
+      },
+      "render": {
+        "width": 42.3225,
+        "height": 42.3225
+      },
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 1000
+        }
+      ],
+      "loop": true,
+      "fortification": {
+        "mask": 4,
+        "axis": "Y"
+      },
+      "notes": "Whole GateY candidate only; actualjoins/opaque selection/friendlytransit pending; no per-imagefit/transforms/pixelassembly."
+    },
+    {
+      "id": "gate-whole-252-Y-mask8",
+      "family": "building.gate",
+      "kind": "building",
+      "state": "idle",
+      "direction": null,
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "source": {
+        "path": "docs/art/buildings/gate-y-idle-252/raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "1a11271507f99e69ea2840ca3a400a10fb463767ceea6d29f479b68f5245efcc",
+        "rgbaSha256": "cba03533bf44dcefa6d4edbecffd78f937bc2667bd4abf292e2b2044b1cfc8e0"
+      },
+      "runtime": {
+        "path": "gate-252/idle.png",
+        "width": 128,
+        "height": 128,
+        "sha256": "867ba2b2e8e15f4d1c2011defebeb2c5fd3cd704722ba10bf2a6b637b765fbd1",
+        "rgbaSha256": "4b9985e32c70e976aed4c8204629fc51bc99bf6ebf2e495cd264a5d12045d93e",
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "1a11271507f99e69ea2840ca3a400a10fb463767ceea6d29f479b68f5245efcc"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 900,
+        "space": "source"
+      },
+      "render": {
+        "width": 42.3225,
+        "height": 42.3225
+      },
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 1000
+        }
+      ],
+      "loop": true,
+      "fortification": {
+        "mask": 8,
+        "axis": "Y"
+      },
+      "notes": "Whole GateY candidate only; actualjoins/opaque selection/friendlytransit pending; no per-imagefit/transforms/pixelassembly."
+    },
+    {
+      "id": "gate-whole-252-Y-mask12",
+      "family": "building.gate",
+      "kind": "building",
+      "state": "idle",
+      "direction": null,
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "source": {
+        "path": "docs/art/buildings/gate-y-idle-252/raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "1a11271507f99e69ea2840ca3a400a10fb463767ceea6d29f479b68f5245efcc",
+        "rgbaSha256": "cba03533bf44dcefa6d4edbecffd78f937bc2667bd4abf292e2b2044b1cfc8e0"
+      },
+      "runtime": {
+        "path": "gate-252/idle.png",
+        "width": 128,
+        "height": 128,
+        "sha256": "867ba2b2e8e15f4d1c2011defebeb2c5fd3cd704722ba10bf2a6b637b765fbd1",
+        "rgbaSha256": "4b9985e32c70e976aed4c8204629fc51bc99bf6ebf2e495cd264a5d12045d93e",
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "1a11271507f99e69ea2840ca3a400a10fb463767ceea6d29f479b68f5245efcc"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 900,
+        "space": "source"
+      },
+      "render": {
+        "width": 42.3225,
+        "height": 42.3225
+      },
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 1000
+        }
+      ],
+      "loop": true,
+      "fortification": {
+        "mask": 12,
+        "axis": "Y"
+      },
+      "notes": "Whole GateY candidate only; actualjoins/opaque selection/friendlytransit pending; no per-imagefit/transforms/pixelassembly."
     }
   ],
   "id": "fort-202",

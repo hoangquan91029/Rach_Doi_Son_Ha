@@ -1,0 +1,105 @@
+{
+  "status": "PASS_THREE_Y_WALLS_SELECT_PAUSE_RESUME_STOP_MENU",
+  "method": "One244 whole illustrated YWall trial; keyboard unusedgroup9 clear and exactlivingown pick; fresh236 isolated trial build; no group/appstate/commands injection; read-only diagnostics; no injected gameplay/state/facing/speed",
+  "errors": [],
+  "structures": [
+    {
+      "id": 37,
+      "type": "wall",
+      "x": 13.5,
+      "y": 22.5,
+      "completedTick": 351
+    },
+    {
+      "id": 44,
+      "type": "wall",
+      "x": 13.5,
+      "y": 23.5,
+      "completedTick": 611
+    },
+    {
+      "id": 52,
+      "type": "wall",
+      "x": 13.5,
+      "y": 24.5,
+      "completedTick": 875
+    }
+  ],
+  "movement": [],
+  "bundleSHA256": "e430f20520c26cb20644fa51b84d3ef53cace995116a3df4fd0b0b73c24ae25c",
+  "workerId": 7,
+  "line": {
+    "x": 13.5,
+    "y": 23.5,
+    "staging": {
+      "x": 11.5,
+      "y": 23.5
+    },
+    "d": 4.47213595499958
+  },
+  "threeWalls": true,
+  "observedMasks": [
+    {
+      "id": 37,
+      "mask": 4,
+      "axis": "Y",
+      "topology": "end",
+      "count": 1
+    },
+    {
+      "id": 44,
+      "mask": 12,
+      "axis": "Y",
+      "topology": "straight",
+      "count": 2
+    },
+    {
+      "id": 52,
+      "mask": 8,
+      "axis": "Y",
+      "topology": "end",
+      "count": 1
+    }
+  ],
+  "centerWallSelection": [
+    44
+  ],
+  "pausedTick": 892,
+  "resumedTick": 894,
+  "menu": {
+    "bank": {
+      "phase": "menu",
+      "epoch": 3,
+      "encodedBytes": 3937475,
+      "encodedBudgetBytes": 67108864,
+      "activeIds": [],
+      "scope": null
+    },
+    "art": {
+      "status": "PLACEHOLDER_ONLY",
+      "manifest": "not-loaded",
+      "declared": 0,
+      "ready": 0,
+      "approved": 0,
+      "candidates": 0,
+      "failed": 0,
+      "skipped": 0,
+      "fallbacks": 0,
+      "decodedBudgetBytes": 134217728,
+      "retainedDecodedBytes": 0,
+      "reservedDecodedBytes": 0,
+      "uniqueDecodedImages": 0,
+      "encodedReady": 0,
+      "retainedEncodedBytes": 0,
+      "encodedBudgetBytes": 67108864,
+      "selectedDeclared": 0,
+      "failures": []
+    }
+  },
+  "clipPath": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/wall-y-runtime-244/clips/page@5e4850a31d95ba047c3c9136d3e12edd.webm",
+  "cleanup": {
+    "rooms": 0,
+    "serverListening": false,
+    "browserClosed": true
+  }
+}

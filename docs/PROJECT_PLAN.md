@@ -2,7 +2,7 @@
 
 Cập nhật ngày 2026-10-10, múi giờ Asia/Ho_Chi_Minh. **Trạng thái: INCOMPLETE.** Đây là kế hoạch hiện hành cho toàn dự án; `NEXT_STEPS.md` chỉ giữ hàng đợi gần nhất. Hồ sơ cũ được giữ nguyên byte tại `docs/audit/2026-10-09/history/`.
 
-Latest execution243 ở mục24 và active movement plan thay các next-step lịch sử; source/receipt cũ giữ nguyên.
+Latest execution262 ở mục25 và active movement plan thay các next-step lịch sử; source/receipt cũ giữ nguyên.
 
 ## 1. Mục tiêu và cách đọc kết quả
 
@@ -228,3 +228,11 @@ Public230 không thay. Full realistic roster/directions/actions/12leaders/family
 [241](qa/public-release-241/promotion.json) client-only public promotion: original atomicexchange EACCES before mutation preserved;241A ONLY ownednextclone root555→755/ONE new atomicexchange/188tree + normalTLSbytes verified. Backend immutable230/PID575363/sim29233/server4e6/ws8.22 giữ nguyên, không restart. [242](qa/public-intake-242/root-intake.json) clean normalTLS Chrome actualisolatedmask0/selection/PauseResumeStop/menu0/32ready và Firefox setup/launch31selectedready (32declared, THD-only unselected)/12portraits/menu0, botherrors0/network0/rooms0 đạt narrow. Không fullmatch/defaultart/WAN/finalart/motion inference. Current230 rollbacka466…962f và old186tree retained; historical207/149 không là current.
 
 [239](art/buildings/wall-y-idle-239/root-intake.json) ONE built-in wholeguide-only illustratedYpanel/0retry,42px appearance readable, compatiblematerial. Fixed1254/pivot627900→128/logical42.3225, không fit/mirror/sourcepixeltransform. Chưa cài hoặc nằm trong238/241. Next finite actualYwall join trial giữ X bindings, chỉ thêm exactY masks4/8/12; finalcorners/gate/states còn thiếu.233 D0Stop technical closure giữ nguyên, chưa motion/fanout approval. Fullgoal INCOMPLETE;237 entrypoints bytepreserved.
+
+## 25. Hiện hành244–262 — whole Y walls, corner và gates public260
+
+244/246 Ywhole239 actualthreejoin→install35;247/249 wholeGateX245 actualjoin/pick/friendlypassage→39.248 ONEwholecorner5 và254 actualcorner/+X/+Y joins masks5/2/8 accepted→256install40.252 ONEwholeGateY và255A actualY joins/pick/friendlyXtransit/PauseResumeStop/menu0 accepted→257install43. All prior descriptors/render fields/raw bytes preserved; fixed family1254/pivot627900→128/logical42.3225, no mirror/assembly/fit. Original250/253/255/259 QA observation failures retained; corrections use actual assigned order/actualtarget/engine.7 without changing game.
+
+258 fresh publicscope192 build/43manifest e26c/JSadd2 unchanged, four focusedcontracts and exact source/rollback/archive binding.259A exactFirefox scene43ready/joins/pick/transit/PauseResumeStop/menu0/errors0/network0 accepted narrow.260 ONE atomic client-only promotion, normalTLSnew4PNGs verified; backend immutable230/PID575363/sim29233 remains unchanged. CURRENT pairedrollback241 private258 SHA21f41cf…bb250 + old188tree retained; historical230/207/149 releases are not current targets.261 actualnormalTLS Chrome Ygatejoin/pick/PauseResume/transit/Stop/menu0 plus Firefox43ready/12portraits/setup/menu0 acceptednarrow, errors/network/HTTP0/rooms0/handlesclosed.260 sourceHEAD legacyliteral corrected separately with actualpreparedHEAD0519e87 + exactinventory, originalrawrecord preserved; deploymentunchanged.
+
+Next unfinished W01: whole corners6/9/10 first, then T7/11/13/14/cross15 and mixedGate topology, authoredbuildingconstruction/hit/death/attack API/frames. Each new artorder finite/wholeguide/ONEbuiltin0retry, parallel Sol6.1Low ownership allowed; actual relevant join/pick/game-size intake before installation/promotion. G01 unchanged213/216/233: motion/owner/worldfootcontact/bodyshadow/family-scale/runtimeinstall/fanout remain open; no more Stop replay or blindimagecalls. Fullgoal remains INCOMPLETE including realistic fullroster/actions/directions/12leaders/maps/performance/defaultart/externaldesktopWAN/finalbothmapsSingle+1v1.243 entrypoints exactGit0519e87 archived beforeupdates.

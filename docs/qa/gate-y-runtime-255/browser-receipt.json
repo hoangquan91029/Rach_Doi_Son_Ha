@@ -1,0 +1,488 @@
+{
+  "status": "HOLD_CAPTURED_BEFORE_CLEANUP",
+  "method": "One255 wholeGateY ordinaryDelta trial; keyboard unusedgroup9 clear and exactlivingown pick; fresh255 isolated42manifest; no group/appstate/commands injection; read-only diagnostics; no injected gameplay/state/facing/speed",
+  "errors": [],
+  "structures": [
+    {
+      "id": 36,
+      "type": "wall",
+      "x": 12.5,
+      "y": 15.5,
+      "completedTick": 345
+    },
+    {
+      "id": 42,
+      "type": "gate",
+      "x": 12.5,
+      "y": 16.5,
+      "completedTick": 575
+    },
+    {
+      "id": 51,
+      "type": "wall",
+      "x": 12.5,
+      "y": 17.5,
+      "completedTick": 763
+    }
+  ],
+  "movement": [],
+  "bundleSHA256": "e430f20520c26cb20644fa51b84d3ef53cace995116a3df4fd0b0b73c24ae25c",
+  "workerId": 7,
+  "line": {
+    "x": 12.5,
+    "y": 16.5,
+    "staging": {
+      "x": 9.5,
+      "y": 16.5
+    },
+    "d": 5.385164807134505
+  },
+  "initialStagingOrder": {
+    "type": "move",
+    "x": 9.499790705509472,
+    "y": 16.49982836478695
+  },
+  "topology": [
+    {
+      "id": 36,
+      "mask": 4,
+      "axis": "Y",
+      "topology": "end",
+      "count": 1
+    },
+    {
+      "id": 42,
+      "mask": 12,
+      "axis": "Y",
+      "topology": "straight",
+      "count": 2
+    },
+    {
+      "id": 51,
+      "mask": 8,
+      "axis": "Y",
+      "topology": "end",
+      "count": 1
+    }
+  ],
+  "threeStructuresCompleted": true,
+  "gateSelection": [
+    42
+  ],
+  "pausedTick": 783,
+  "resumedTick": 785,
+  "beforeCrossingOrder": null,
+  "error": "TypeError: Cannot read properties of null (reading 'type')\n    at file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/gate-y-runtime-255/browser.mjs:16:1010\n    at runNextTicks (node:internal/process/task_queues:65:5)\n    at process.processImmediate (node:internal/timers:472:9)",
+  "failure": {
+    "tick": 854,
+    "selection": [
+      7
+    ],
+    "camera": {
+      "x": 9.99822048611111,
+      "y": 16.5,
+      "zoom": 1.08
+    },
+    "actor": {
+      "id": 7,
+      "owner": 0,
+      "type": "villager",
+      "kind": "unit",
+      "x": 11.069949852336336,
+      "y": 16.5,
+      "hp": 65,
+      "maxHp": 65,
+      "food": 34.8531519999983,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "walk",
+      "dir": 4,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "resuppliedTick": 77,
+      "starving": 0,
+      "lastMovedTick": 854,
+      "order": {
+        "type": "move",
+        "x": 9.999763109916193,
+        "y": 16.49982836478695
+      }
+    },
+    "visibleBuildings": [
+      {
+        "id": 1,
+        "owner": 0,
+        "type": "residence",
+        "kind": "building",
+        "x": 9.5,
+        "y": 23.5,
+        "hp": 1100,
+        "maxHp": 1100,
+        "food": 0,
+        "foodMax": 0,
+        "morale": 95,
+        "state": "idle",
+        "dir": 0,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 395.54857600006255,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "underConstruction": false,
+        "order": null
+      },
+      {
+        "id": 2,
+        "owner": 0,
+        "type": "granary",
+        "kind": "building",
+        "x": 6.5,
+        "y": 26.5,
+        "hp": 450,
+        "maxHp": 450,
+        "food": 0,
+        "foodMax": 0,
+        "morale": 95,
+        "state": "idle",
+        "dir": 0,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 260,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "underConstruction": false,
+        "order": null
+      },
+      {
+        "id": 3,
+        "owner": 0,
+        "type": "depot",
+        "kind": "building",
+        "x": 13.5,
+        "y": 28.5,
+        "hp": 480,
+        "maxHp": 480,
+        "food": 0,
+        "foodMax": 0,
+        "morale": 95,
+        "state": "idle",
+        "dir": 0,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 120,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "underConstruction": false,
+        "order": null
+      },
+      {
+        "id": 4,
+        "owner": 0,
+        "type": "barracks",
+        "kind": "building",
+        "x": 13.5,
+        "y": 20.5,
+        "hp": 650,
+        "maxHp": 650,
+        "food": 0,
+        "foodMax": 0,
+        "morale": 95,
+        "state": "idle",
+        "dir": 0,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "underConstruction": false,
+        "order": null
+      },
+      {
+        "id": 36,
+        "owner": 0,
+        "type": "wall",
+        "kind": "building",
+        "x": 12.5,
+        "y": 15.5,
+        "hp": 400,
+        "maxHp": 400,
+        "food": 0,
+        "foodMax": 0,
+        "morale": 95,
+        "state": "idle",
+        "dir": 0,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "spentCost": {
+          "wood": 30,
+          "food": 0,
+          "iron": 5
+        },
+        "construction": null,
+        "underConstruction": false,
+        "order": null
+      },
+      {
+        "id": 42,
+        "owner": 0,
+        "type": "gate",
+        "kind": "building",
+        "x": 12.5,
+        "y": 16.5,
+        "hp": 500,
+        "maxHp": 500,
+        "food": 0,
+        "foodMax": 0,
+        "morale": 95,
+        "state": "idle",
+        "dir": 0,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "spentCost": {
+          "wood": 45,
+          "food": 0,
+          "iron": 10
+        },
+        "construction": null,
+        "underConstruction": false,
+        "order": null
+      },
+      {
+        "id": 51,
+        "owner": 0,
+        "type": "wall",
+        "kind": "building",
+        "x": 12.5,
+        "y": 17.5,
+        "hp": 400,
+        "maxHp": 400,
+        "food": 0,
+        "foodMax": 0,
+        "morale": 95,
+        "state": "idle",
+        "dir": 0,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "spentCost": {
+          "wood": 30,
+          "food": 0,
+          "iron": 5
+        },
+        "construction": null,
+        "underConstruction": false,
+        "order": null
+      }
+    ],
+    "winner": null,
+    "art": {
+      "enabled": true,
+      "phase": "CANDIDATE",
+      "quality": "PLACEHOLDER_ONLY",
+      "groundDraws": 3072,
+      "propDraws": 42687,
+      "entityDraws": 37028,
+      "walkDraws": 0,
+      "idleDraws": 0,
+      "lastWalk": null,
+      "gatherDraws": 0,
+      "lastGather": null,
+      "missing": [
+        {
+          "key": "villager:walk:0",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:4",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:5",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:6",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:walk:7",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:idle:7",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "wall:construction",
+          "reason": "No authored construction sequence",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:build:0",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "gate:construction",
+          "reason": "No authored construction sequence",
+          "status": "PLACEHOLDER_ONLY"
+        }
+      ],
+      "pipeline": {
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 42,
+        "ready": 42,
+        "approved": 0,
+        "candidates": 42,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 17729024,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 32,
+        "encodedReady": 0,
+        "retainedEncodedBytes": 3968127,
+        "encodedBudgetBytes": 67108864,
+        "selectedDeclared": 42,
+        "failures": []
+      },
+      "hillDraws": 0,
+      "foodResourceDraws": 5142,
+      "ironResourceDraws": 2571
+    },
+    "bank": {
+      "phase": "match",
+      "epoch": 2,
+      "encodedBytes": 3968127,
+      "encodedBudgetBytes": 67108864,
+      "activeIds": [
+        "grass",
+        "water",
+        "forest",
+        "residence",
+        "infantry-idle-D00",
+        "cavalry-idle-D00",
+        "villager-idle-D00",
+        "tran-hung-dao-idle-D00",
+        "unit-contact-shadow",
+        "ford",
+        "shore",
+        "forest-bamboo",
+        "forest-palm",
+        "granary",
+        "villager-walk-south-014",
+        "villager-idle-south-014",
+        "villager-gather-wood-south-024",
+        "mountain-outcrop-108",
+        "grassy-hill-111",
+        "food-resource-114",
+        "iron-resource-119",
+        "barracks-idle-121",
+        "supply-depot-idle-126",
+        "villager-gather-iron-south-136",
+        "artillery-workshop-idle-140",
+        "cavalry-camp-idle-147",
+        "shipyard-idle-164",
+        "fort-idle-198",
+        "wall-whole-234-mask0",
+        "wall-whole-234-mask1",
+        "wall-whole-234-mask2",
+        "wall-whole-234-mask3",
+        "wall-whole-239-mask4",
+        "wall-whole-239-mask8",
+        "wall-whole-239-mask12",
+        "gate-whole-245-X-mask0",
+        "gate-whole-245-X-mask1",
+        "gate-whole-245-X-mask2",
+        "gate-whole-245-X-mask3",
+        "gate-whole-252-Y-mask4",
+        "gate-whole-252-Y-mask8",
+        "gate-whole-252-Y-mask12"
+      ],
+      "scope": {
+        "map": "delta",
+        "roster": [
+          "villager",
+          "king",
+          "general",
+          "infantry",
+          "spearman",
+          "firearm",
+          "cavalry",
+          "artillery",
+          "wagon",
+          "warship",
+          "transport"
+        ],
+        "buildings": [
+          "residence",
+          "barracks",
+          "cavalryCamp",
+          "artilleryWorkshop",
+          "shipyard",
+          "fort",
+          "wall",
+          "gate",
+          "depot",
+          "granary"
+        ],
+        "leaders": [
+          "tran_nhan_tong",
+          "tran_hung_dao",
+          "le_thanh_tong",
+          "ly_thuong_kiet"
+        ]
+      }
+    }
+  },
+  "failureToast": "Move armed · click or right-click the destination. Escape cancels.",
+  "clipPath": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/gate-y-runtime-255/clips/page@6ba1b239c8114ee9c7da17ad980c0cbf.webm",
+  "cleanup": {
+    "rooms": 0,
+    "serverListening": false,
+    "browserClosed": true
+  }
+}

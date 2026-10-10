@@ -1,0 +1,148 @@
+{
+  "status": "PASS254_WHOLE_CORNER5_JOINS_EXACT_PICK_PAUSE_RESUME_STOP_MENU",
+  "campaigns": 1,
+  "retries": 0,
+  "imageCalls": 0,
+  "rebuilds": 0,
+  "source": "/tmp/rds-corner250-stage",
+  "outDir": "/tmp/rds-corner250-build",
+  "bundleSHA256": "e430f20520c26cb20644fa51b84d3ef53cace995116a3df4fd0b0b73c24ae25c",
+  "candidateAssets": 40,
+  "topology": [
+    {
+      "id": 36,
+      "mask": 5,
+      "axis": "X",
+      "topology": "corner",
+      "count": 2
+    },
+    {
+      "id": 42,
+      "mask": 2,
+      "axis": "X",
+      "topology": "end",
+      "count": 1
+    },
+    {
+      "id": 49,
+      "mask": 8,
+      "axis": "Y",
+      "topology": "end",
+      "count": 1
+    }
+  ],
+  "ordinaryMoves": [
+    {
+      "requested": {
+        "x": 11.5,
+        "y": 21.5
+      },
+      "actualOrder": {
+        "type": "move",
+        "x": 11.499854913824052,
+        "y": 21.500046006609544
+      },
+      "arrival": {
+        "tick": 139,
+        "x": 10.799855013870356,
+        "y": 21.500037955161986,
+        "distance": 0.6999998999999997,
+        "state": "idle",
+        "order": null
+      }
+    },
+    {
+      "requested": {
+        "x": 8.5,
+        "y": 18.5
+      },
+      "actualOrder": {
+        "type": "move",
+        "x": 8.499843987777563,
+        "y": 18.499875417952673
+      },
+      "arrival": {
+        "tick": 843,
+        "x": 8.95098257497297,
+        "y": 18.950982574972972,
+        "distance": 0.6379840844187299,
+        "state": "idle",
+        "order": null
+      }
+    }
+  ],
+  "cornerSelection": [
+    36
+  ],
+  "pause": {
+    "tick": 866,
+    "durationMs": 200,
+    "resumeTick": 869
+  },
+  "stop": {
+    "id": 7,
+    "owner": 0,
+    "type": "villager",
+    "kind": "unit",
+    "x": 8.95098257497297,
+    "y": 18.950982574972972,
+    "hp": 65,
+    "maxHp": 65,
+    "food": 39.56943999999986,
+    "foodMax": 40,
+    "morale": 95,
+    "state": "idle",
+    "dir": 5,
+    "cooldown": 0,
+    "queue": [],
+    "cargo": {
+      "food": 0,
+      "wood": 0,
+      "iron": 0,
+      "units": []
+    },
+    "resuppliedTick": 816,
+    "starving": 0,
+    "lastMovedTick": 840,
+    "order": null
+  },
+  "menu": {
+    "status": "PLACEHOLDER_ONLY",
+    "manifest": "not-loaded",
+    "declared": 0,
+    "ready": 0,
+    "approved": 0,
+    "candidates": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fallbacks": 0,
+    "decodedBudgetBytes": 134217728,
+    "retainedDecodedBytes": 0,
+    "reservedDecodedBytes": 0,
+    "uniqueDecodedImages": 0,
+    "encodedReady": 0,
+    "retainedEncodedBytes": 0,
+    "encodedBudgetBytes": 67108864,
+    "selectedDeclared": 0,
+    "failures": []
+  },
+  "errors": [],
+  "cleanup": {
+    "rooms": 0,
+    "serverListening": false,
+    "browserClosed": true
+  },
+  "preservation": {
+    "source": true,
+    "public241": true,
+    "stage": true,
+    "build": true,
+    "253": true
+  },
+  "253Diagnosis": "First actual-order arrival .6999999 succeeded; after first wall completed, redundant short staging move ended before walk/order-only polling caught it. Removed redundant moves; stage once and build from current living own builder.253 bytes untouched.",
+  "visualScope": "Default1.08 gameplay screenshot inspected: continuous corner arms join X/Y ends with no visible separation. Technical PASS supports only mask5 plus endmasks2/8; root intake pending.",
+  "actualScene": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/wall-corner5-runtime-254/actual-corner5-default.png",
+  "clipPath": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/wall-corner5-runtime-254/clips/page@c297bca87e3649f5bc7e09d4ab344982.webm",
+  "installed": false,
+  "publicPromoted": false
+}
