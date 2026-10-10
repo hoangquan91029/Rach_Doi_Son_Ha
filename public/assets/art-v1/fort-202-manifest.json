@@ -4105,6 +4105,250 @@
         "mask": 11
       },
       "notes": "Whole +X/-X/-Y T junction candidate. No wallaxis. Actual joins and alpha picking unverified; no visual acceptance."
+    },
+    {
+      "id": "wall-whole-280-mask13",
+      "family": "building.wall",
+      "kind": "building",
+      "state": "idle",
+      "direction": null,
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "source": {
+        "path": "docs/art/buildings/wall-t13-idle-280/raw.png",
+        "sha256": "8a8b5a74dae1f4cf37f329aa87c4433ac85a17f03415a24e6f674f0bc5fb84df",
+        "rgbaSha256": "d70a80f84369b0bf4335561cad81b709ca212c1a5c59eb3c4b5ef2cca7667388",
+        "width": 1254,
+        "height": 1254
+      },
+      "runtime": {
+        "path": "wall-13-280/idle.png",
+        "sha256": "3bf44c6ce79a9c0a42bf32bcbedee86605e866e8ac6ae020f7399d28085c6f2f",
+        "rgbaSha256": "89a5b44730a3cd3229d447443cb5a6a8d3b3e6be8dc4ec69590dfce7e6c49ab2",
+        "width": 128,
+        "height": 128,
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "8a8b5a74dae1f4cf37f329aa87c4433ac85a17f03415a24e6f674f0bc5fb84df"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 900,
+        "space": "source"
+      },
+      "render": {
+        "width": 42.3225,
+        "height": 42.3225
+      },
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 1000
+        }
+      ],
+      "loop": true,
+      "fortification": {
+        "mask": 13
+      },
+      "notes": "Whole +X/+Y/-Y T13 candidate. No wallaxis. Three branches readable; returned extent expanded despite prompt. Actual joins/picking/root acceptance pending."
+    },
+    {
+      "id": "wall-whole-282-mask14",
+      "family": "building.wall",
+      "kind": "building",
+      "state": "idle",
+      "direction": null,
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "source": {
+        "path": "docs/art/buildings/wall-t14-idle-282/raw.png",
+        "sha256": "2d1231105ba2230abc1175c5cb8bd8c0a038eef0e84cb434ea3e17317e31788e",
+        "rgbaSha256": "475e523eedc5e0d31a86a7ee42659ab5dea1a80ca49d3cf97cb912550b9baddc",
+        "width": 1254,
+        "height": 1254
+      },
+      "runtime": {
+        "path": "wall-14-282/idle.png",
+        "sha256": "833944e0e26ef6c20117d1eab468dc985c847336da85dbd8eb3869f1a9fd00e6",
+        "rgbaSha256": "7e969a91ba42cc1a9edbd2f1cbbd466334945c9683d0c695a92ef026cea1b1a7",
+        "width": 128,
+        "height": 128,
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "2d1231105ba2230abc1175c5cb8bd8c0a038eef0e84cb434ea3e17317e31788e"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 900,
+        "space": "source"
+      },
+      "render": {
+        "width": 42.3225,
+        "height": 42.3225
+      },
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 1000
+        }
+      ],
+      "loop": true,
+      "fortification": {
+        "mask": 14
+      },
+      "notes": "Whole -X/+Y/-Y T14 candidate. No wallaxis. Root appearance and actual joins/picking pending."
+    },
+    {
+      "id": "wall-whole-288-mask15",
+      "family": "building.wall",
+      "kind": "building",
+      "state": "idle",
+      "direction": null,
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "source": {
+        "path": "docs/art/buildings/wall-cross-idle-288/raw.png",
+        "sha256": "5cd56f75c0521fa2dc4b5e99db7420410d61fe12cb5151e3e872289e028bc1af",
+        "rgbaSha256": "b3ce3c14af98a794ed481c12f8962f415373b5a5b907684fabb4130f2d1ebaf3",
+        "width": 1254,
+        "height": 1254
+      },
+      "runtime": {
+        "path": "wall-15-288/idle.png",
+        "sha256": "a522781ca99d618f6f8860ea57eee918678e8b2a43c1c9b8f2ac47f8084bafbd",
+        "rgbaSha256": "f348142fda99dbce089ad3f53e88e876fe4752f2f4e4fbbc8cc75d34e0de4ff3",
+        "width": 128,
+        "height": 128,
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "5cd56f75c0521fa2dc4b5e99db7420410d61fe12cb5151e3e872289e028bc1af"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 900,
+        "space": "source"
+      },
+      "render": {
+        "width": 42.3225,
+        "height": 42.3225
+      },
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 1000
+        }
+      ],
+      "loop": true,
+      "fortification": {
+        "mask": 15
+      },
+      "notes": "Whole fourbranch cross15 candidate. No wallaxis. Root appearance and actual joins/picking pending."
+    },
+    {
+      "id": "wall-whole-wreck-key-292-mask0",
+      "family": "building.wall",
+      "kind": "building",
+      "state": "death",
+      "direction": null,
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "source": {
+        "path": "docs/art/buildings/wall-wreck-key-292/raw.png",
+        "sha256": "57c63e5a37296c0687d98f760387243471b8c07a16429c0dd6c90a467dfcd276",
+        "rgbaSha256": "1e2eefe72a2e4ba1451ccdb1be37a1da58ad6ddea1412dcb3878ef7ec4c5520f",
+        "width": 1254,
+        "height": 1254
+      },
+      "runtime": {
+        "path": "wall-wreck-292/runtime.png",
+        "sha256": "2bdfe6c5f6c6c15fc9746a80b4676767f52cbb292bb899ed0a689b1183641068",
+        "rgbaSha256": "d915751e388f1081762828aa8c9dbaacbf179b1530dec328ebff994f001b4582",
+        "width": 128,
+        "height": 128,
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "57c63e5a37296c0687d98f760387243471b8c07a16429c0dd6c90a467dfcd276"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 900,
+        "space": "source"
+      },
+      "render": {
+        "width": 42.3225,
+        "height": 42.3225
+      },
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 1000
+        }
+      ],
+      "loop": false,
+      "fortification": {
+        "mask": 0
+      },
+      "notes": "ONE static terminal wreck key only; NOT complete collapse animation. Root appearance/code291/actual UI death transition required before install."
     }
   ],
   "id": "fort-202",

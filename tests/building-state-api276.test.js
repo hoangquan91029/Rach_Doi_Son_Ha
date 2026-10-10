@@ -16,7 +16,7 @@ test('all existing building families select construction for public boolean and 
 }));
 test('missing construction never substitutes idle; completed never selects construction; death precedes site flag',()=>fortRun(async()=>{
  const r=await raster([asset('fort','idle'),asset('fort','construction'),asset('fort','death')]);assert.equal(r.sampleEntity(entity('fort',{hp:0,underConstruction:true})).visualState,'death');assert.equal(r.sampleEntity(entity('fort')).visualState,'idle');const missing=await raster([asset('fort','idle')]);assert.equal(missing.sampleEntity(entity('fort',{underConstruction:true})),false);
- const wall=await raster([asset('wall','construction'),asset('wall','death')]);assert.equal(wall.sampleEntity(entity('wall',{hp:0,underConstruction:true})),false,'fortification death remains held without eligible completed topology');
+ const wall=await raster([asset('wall','construction'),asset('wall','death')]);assert.equal(wall.sampleEntity(entity('wall',{hp:0,underConstruction:true})).visualState,'death','death uses standalone authored rubble despite stale construction flag');
 }));
 test('construction fixed ticks respect default/true loops and explicit false holds last frame without completion',()=>fortRun(async()=>{
  const e=entity('fort',{underConstruction:true});

@@ -1,0 +1,22 @@
+{
+  "status": "PREP_ONLY_UNCALLED_NO_BROWSER",
+  "campaigns": 0,
+  "retries": 0,
+  "builds": 0,
+  "imageCalls": 0,
+  "ownership": "docs/qa/public-intake-300 only",
+  "source294": "docs/qa/wall-wreck-runtime-294/browser.mjs",
+  "source297Receipt": "docs/qa/wall-wreck-firefox-297/receipt.json",
+  "freshBinding": true,
+  "normalTLS": true,
+  "syntaxChecks": "3 modules pass",
+  "productionPIDObserved": 3229,
+  "rootGORequiredAfter299": true,
+  "preparedFilesSHA256": {
+    "README.md": "e42588ba94b6f21311b5ef5adad6cf5923cfbda839c44c611db32ed7e6f6c947",
+    "chrome.prepared.mjs": "b2a5ee73933559123554bb5101e3771a66ffee4a31de888b90280cae1140d25a",
+    "response-pins.mjs": "f56d51d65c48e0d4293c553851473d6a2f8302f34f4a0732b1b2bb3284ee930b",
+    "binding.json": "2e256023e8a2fba75c18e7075fdee8b7506de54c68a92bf757181c9ebefe8f51",
+    "firefox.prepared.mjs": "390ff4fa22d96b59337f60d56f0646ab96bbe663efadb13e1a916963f801b4a8"
+  }
+}

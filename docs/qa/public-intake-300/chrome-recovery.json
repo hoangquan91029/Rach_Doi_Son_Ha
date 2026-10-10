@@ -1,0 +1,83 @@
+{
+  "status": "UI_SEQUENCE_COMPLETED_VERIFIER_FAILED_POST_RECOVERED_PINS",
+  "campaigns": 1,
+  "retries": 0,
+  "originalHOLDPreserved": true,
+  "actualUI": {
+    "cancelled": 318,
+    "removal": {
+      "tick": 397,
+      "deadTick": 317,
+      "ageTicks": 80
+    },
+    "stop": {
+      "id": 7,
+      "owner": 0,
+      "type": "villager",
+      "kind": "unit",
+      "x": 2.956527318026008,
+      "y": 23.043472681973988,
+      "hp": 65,
+      "maxHp": 65,
+      "food": 38.09891199999937,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "idle",
+      "dir": 3,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "resuppliedTick": 123,
+      "starving": 0,
+      "lastMovedTick": 173,
+      "order": null
+    },
+    "menu": {
+      "bank": {
+        "phase": "menu",
+        "epoch": 3,
+        "encodedBytes": 4134214,
+        "encodedBudgetBytes": 67108864,
+        "activeIds": [],
+        "scope": null
+      },
+      "art": {
+        "status": "PLACEHOLDER_ONLY",
+        "manifest": "not-loaded",
+        "declared": 0,
+        "ready": 0,
+        "approved": 0,
+        "candidates": 0,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 0,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 0,
+        "encodedReady": 0,
+        "retainedEncodedBytes": 0,
+        "encodedBudgetBytes": 67108864,
+        "selectedDeclared": 0,
+        "failures": []
+      }
+    }
+  },
+  "responsePins7ExactRecovered": true,
+  "postPreservationPASS": true,
+  "cleanup": {
+    "browserClosed": true,
+    "contextClosed": true,
+    "productionServerOwned": false
+  },
+  "failure": "Post-sequence verifier mistakenly called captured string url as function; no gameplay failure inferred",
+  "Firefox": "UNCALLED_ROOT_REVIEW_REQUIRED",
+  "recoveredAtUTC": "2026-10-10T07:19:04.191050+00:00",
+  "timingScope": "Response verification and preservation after browser cleanup; not contemporaneous terminal PASS",
+  "rootAuthorization": "NEW finite300A read-only recovery; Firefox requires separate300B GO"
+}

@@ -1,0 +1,320 @@
+{
+  "status": "PASS289_CHROME_GRID52_T13_T14_CROSS15_JOINS_EXACT_PICKS_PAUSE_RESUME_STOP_MENU",
+  "campaigns": 1,
+  "retries": 0,
+  "sourceHEAD": "1534f996c27a6a1de531cd26d01744250df917ad",
+  "files": 202,
+  "manifestDescriptors": 52,
+  "bundleSHA256": "bcf457f726555696e73ee476c801c1b0930e00f07f569155ba3c6a7aa98a36bf",
+  "manifestSHA256": "958f10080a7f9489a5f574c48a7f6405f4a9e6ce260a070afca271a378bbbf88",
+  "site": {
+    "x": 12.5,
+    "y": 16.5,
+    "staging": {
+      "x": 10.5,
+      "y": 15.5
+    },
+    "d": 6.708203932499369
+  },
+  "topology": [
+    {
+      "id": 38,
+      "mask": 5,
+      "axis": "X",
+      "topology": "corner",
+      "count": 2
+    },
+    {
+      "id": 43,
+      "mask": 7,
+      "axis": "X",
+      "topology": "T",
+      "count": 3
+    },
+    {
+      "id": 51,
+      "mask": 6,
+      "axis": "X",
+      "topology": "corner",
+      "count": 2
+    },
+    {
+      "id": 53,
+      "mask": 13,
+      "axis": "Y",
+      "topology": "T",
+      "count": 3
+    },
+    {
+      "id": 54,
+      "mask": 15,
+      "axis": "X",
+      "topology": "cross",
+      "count": 4
+    },
+    {
+      "id": 55,
+      "mask": 14,
+      "axis": "Y",
+      "topology": "T",
+      "count": 3
+    },
+    {
+      "id": 58,
+      "mask": 9,
+      "axis": "X",
+      "topology": "corner",
+      "count": 2
+    },
+    {
+      "id": 59,
+      "mask": 11,
+      "axis": "X",
+      "topology": "T",
+      "count": 3
+    },
+    {
+      "id": 61,
+      "mask": 10,
+      "axis": "X",
+      "topology": "corner",
+      "count": 2
+    }
+  ],
+  "picks": [
+    {
+      "id": 38,
+      "mask": 5,
+      "selection": [
+        38
+      ],
+      "point": {
+        "x": 640.064546875,
+        "y": 383.8322734375
+      },
+      "tick": 2183
+    },
+    {
+      "id": 43,
+      "mask": 7,
+      "selection": [
+        43
+      ],
+      "point": {
+        "x": 640.091125,
+        "y": 383.8455625
+      },
+      "tick": 2199
+    },
+    {
+      "id": 51,
+      "mask": 6,
+      "selection": [
+        51
+      ],
+      "point": {
+        "x": 640.01265625,
+        "y": 383.80632812500005
+      },
+      "tick": 2219
+    },
+    {
+      "id": 53,
+      "mask": 13,
+      "selection": [
+        53
+      ],
+      "point": {
+        "x": 640.0231033063617,
+        "y": 383.8529952218192
+      },
+      "tick": 2237
+    },
+    {
+      "id": 54,
+      "mask": 15,
+      "selection": [
+        54
+      ],
+      "point": {
+        "x": 640.0496814313617,
+        "y": 383.8662842843192
+      },
+      "tick": 2252
+    },
+    {
+      "id": 55,
+      "mask": 14,
+      "selection": [
+        55
+      ],
+      "point": {
+        "x": 639.9712126813616,
+        "y": 383.8270499093192
+      },
+      "tick": 2267
+    },
+    {
+      "id": 58,
+      "mask": 9,
+      "selection": [
+        58
+      ],
+      "point": {
+        "x": 639.9808969726562,
+        "y": 383.8740983886719
+      },
+      "tick": 2283
+    },
+    {
+      "id": 59,
+      "mask": 11,
+      "selection": [
+        59
+      ],
+      "point": {
+        "x": 640.0074750976563,
+        "y": 383.8873874511719
+      },
+      "tick": 2301
+    },
+    {
+      "id": 61,
+      "mask": 10,
+      "selection": [
+        61
+      ],
+      "point": {
+        "x": 635.6090063476562,
+        "y": 383.8481530761719
+      },
+      "tick": 2318
+    }
+  ],
+  "defaultZoom": 1.08,
+  "savedBuilderGroup": {
+    "id": 7,
+    "tick": 19,
+    "selection": [
+      7
+    ],
+    "key": "Ctrl+8"
+  },
+  "builderRecall": {
+    "key": "8",
+    "tick": 2326,
+    "selection": [
+      7
+    ],
+    "actor": {
+      "id": 7,
+      "owner": 0,
+      "type": "villager",
+      "kind": "unit",
+      "x": 13.149605989471464,
+      "y": 19.5,
+      "hp": 65,
+      "maxHp": 65,
+      "food": 25.420575999998725,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "idle",
+      "dir": 0,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "resuppliedTick": 125,
+      "starving": 0,
+      "lastMovedTick": 2032,
+      "order": null
+    }
+  },
+  "stop": {
+    "id": 7,
+    "owner": 0,
+    "type": "villager",
+    "kind": "unit",
+    "x": 13.149605989471464,
+    "y": 19.5,
+    "hp": 65,
+    "maxHp": 65,
+    "food": 25.39407999999873,
+    "foodMax": 40,
+    "morale": 95,
+    "state": "idle",
+    "dir": 0,
+    "cooldown": 0,
+    "queue": [],
+    "cargo": {
+      "food": 0,
+      "wood": 0,
+      "iron": 0,
+      "units": []
+    },
+    "resuppliedTick": 125,
+    "starving": 0,
+    "lastMovedTick": 2032,
+    "order": null
+  },
+  "pausedTick": 2323,
+  "resumedTick": 2324,
+  "ready": 52,
+  "portraits": 12,
+  "menu": {
+    "bank": {
+      "phase": "menu",
+      "epoch": 3,
+      "encodedBytes": 4129177,
+      "encodedBudgetBytes": 67108864,
+      "activeIds": [],
+      "scope": null
+    },
+    "art": {
+      "status": "PLACEHOLDER_ONLY",
+      "manifest": "not-loaded",
+      "declared": 0,
+      "ready": 0,
+      "approved": 0,
+      "candidates": 0,
+      "failed": 0,
+      "skipped": 0,
+      "fallbacks": 0,
+      "decodedBudgetBytes": 134217728,
+      "retainedDecodedBytes": 0,
+      "reservedDecodedBytes": 0,
+      "uniqueDecodedImages": 0,
+      "encodedReady": 0,
+      "retainedEncodedBytes": 0,
+      "encodedBudgetBytes": 67108864,
+      "selectedDeclared": 0,
+      "failures": []
+    }
+  },
+  "cleanup": {
+    "rooms": 0,
+    "serverListening": false,
+    "browserClosed": true
+  },
+  "errors": [],
+  "networkFailures": [],
+  "httpFailures": [],
+  "actualResponsePinsExactSealedBuild": true,
+  "sourceBuildCanonicalPublicUnchangedAfter": true,
+  "serviceUnchanged": true,
+  "health": {
+    "ok": true,
+    "rooms": 0
+  },
+  "rootVisualIntakePending": true,
+  "runtimeInstalled": false,
+  "publicPromoted": false,
+  "limits": [
+    "ONE nine-wall scene, not finalWallGate/mixedgate/allstates/defaultart/WAN/fullmatch",
+    "Technical checks do not grant visual acceptance"
+  ]
+}

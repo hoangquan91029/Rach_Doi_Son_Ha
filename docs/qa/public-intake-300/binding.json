@@ -1,0 +1,58 @@
+{
+  "status": "ROOT_GO300_AFTER_EXACT_PROMOTION299",
+  "rootAuthorized": true,
+  "runGO": true,
+  "local293Complete": true,
+  "stage": "/tmp/rds-wall-wreck294-stage",
+  "build": "/tmp/rds-wall-wreck294-build",
+  "descriptors": 53,
+  "deathAssetId": "wall-whole-wreck-key-292-mask0",
+  "constructionAssetId": "wall-whole-construction-278-mask0",
+  "completedAssetId": "wall-whole-234-mask0",
+  "candidate292TerminalSHA256": "091c0a291e96a093ded55155672dbb87e51deaae81d5278d78df5f6ca4c3e93e",
+  "runtime292SHA256": "2bdfe6c5f6c6c15fc9746a80b4676767f52cbb292bb899ed0a689b1183641068",
+  "api291PatchSHA256": "3d8169547a020bbc054571f01e9c53f3aa6f3659810eecceba5371f10cd4d4d9",
+  "bundleSHA256": "7da48cba0210023ca9d2737d123e878cbc2fd510a8f5520531bd221dbdf05308",
+  "manifestSHA256": "f835505f6fd76c51264af43061d0cc1e109c0c82e0a186a2073d1c0c12ac671f",
+  "sourceHEAD": "1534f996c27a6a1de531cd26d01744250df917ad",
+  "sourceScope": "Exact current workingtree with intentional dirty293 runtime + isolated291 API; not cleancommit source",
+  "api291Files": {
+    "client/fortification-art.js": {
+      "beforeSHA256": "d37d5a75fb2b4e2929c7338b1574709d8fb0fcdc9232e9020dad32292e768695",
+      "afterSHA256": "f4aeed257e1d718facbbfb1e5d953aa71913cf82f2e27806c1368533e2c024c7"
+    },
+    "client/raster-slice.js": {
+      "beforeSHA256": "95ee7060372d39138708202ee865869d9200b8f67a2fc71274834871d9b38f6e",
+      "afterSHA256": "bf2b034c7a0607c476178316cf8b60dfa2c0960ad3303c3a9cc55688fea76ce9"
+    },
+    "tests/building-state-api276.test.js": {
+      "beforeSHA256": "c7c9872cb8132707bca1deb01d32e9e36250339cb32179b5da8218ccea5607c6",
+      "afterSHA256": "a7e5e95bf6a1f2c9560286238ccec18c2e6c203ed4fdf7ea1aee9e9b80528855"
+    },
+    "tests/building-death-api291.test.js": {
+      "beforeSHA256": null,
+      "afterSHA256": "d87775f5ccea62cf3aeafa52c2810e3580ca3902a84840e43dae696ceb519a07"
+    }
+  },
+  "bundlePath": "assets/index-mANisKtK.js",
+  "oldChunksRetained": true,
+  "publicFoodExclusionsVerified": true,
+  "promotion299Verified": true,
+  "publicURL": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/?art=fort",
+  "expectedResponseSHA256": {
+    "index.html": "f4c24b9d6758d50381a682680853975aa4cb00f28bc02bd3799864d1b8168577",
+    "assets/index-mANisKtK.js": "7da48cba0210023ca9d2737d123e878cbc2fd510a8f5520531bd221dbdf05308",
+    "assets/art-v1/fort-202-manifest.json": "f835505f6fd76c51264af43061d0cc1e109c0c82e0a186a2073d1c0c12ac671f",
+    "assets/art-v1/wall-13-280/idle.png": "3bf44c6ce79a9c0a42bf32bcbedee86605e866e8ac6ae020f7399d28085c6f2f",
+    "assets/art-v1/wall-14-282/idle.png": "833944e0e26ef6c20117d1eab468dc985c847336da85dbd8eb3869f1a9fd00e6",
+    "assets/art-v1/wall-15-288/idle.png": "a522781ca99d618f6f8860ea57eee918678e8b2a43c1c9b8f2ac47f8084bafbd",
+    "assets/art-v1/wall-wreck-292/runtime.png": "2bdfe6c5f6c6c15fc9746a80b4676767f52cbb292bb899ed0a689b1183641068"
+  },
+  "limits": [
+    "Cancelled unfinished site only, no completed wall combat/collapse proof",
+    "One static terminal key, no collapse animation",
+    "No ninewall/fullmatch replay; screenshots and actual selection snapshots have separate scope"
+  ],
+  "promotionReceiptSHA256": "d9d2f4fd05b8bb0214c6da2c9d7bec701ddbf126d889fe7c756c4b281c5e1ada",
+  "currentPairedRollbackSHA256": "67945e20e411864af6efa918f6263d6a9a83cb642f9bd842900ea843de45179e"
+}

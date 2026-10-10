@@ -1,4 +1,4 @@
-# Project task profile — checkpoint290 / public286
+# Project task profile — checkpoint301 / public299
 
 ## Routing and production
 
@@ -8,7 +8,7 @@ Built-in imagegen only. No API/CLI/key requests, quota polling/reset/percentage 
 
 ## Read first
 
-Read NEXT_STEPS.md, PROJECT_STATUS.md, docs/PROJECT_PLAN.md, active movementplan, Git and actual relevant worker/image/test receipts/handles. Never duplicate open calls/resume exhausted orders. Preparation is not returned art, tests are not visualacceptance. Prior272 entrypoints exactGit6c5b488 byte-preserved in docs/checkpoints/checkpoint272-entrypoints/; previous archives remain history.
+Read NEXT_STEPS.md, PROJECT_STATUS.md, docs/PROJECT_PLAN.md, active movementplan, Git and actual relevant worker/image/test receipts/handles. Never duplicate open calls/resume exhausted orders. Preparation is not returned art, tests are not visualacceptance. Prior290 entrypoints exactGit1534f99 byte-preserved in docs/checkpoints/checkpoint290-entrypoints/; previous archives remain history.
 
 ## Movement unchanged
 
@@ -16,23 +16,21 @@ Read NEXT_STEPS.md, PROJECT_STATUS.md, docs/PROJECT_PLAN.md, active movementplan
 
 ## Buildings/current actual work
 
-276 construction API installed281: death precedence, exactconstruction state for privatejob/visibleboolean, no idle/hit substitution; fixed tick clock independentprivateprogress, manifest loop:false respected. Unfinished Wall/Gate use only authored standalone mask0; completed visible sameowner topology unchanged; fortificationdeath unsupported/fallback.23focused contracts pass. ONEstatic wholewall278, not completeconstructionanimation. Sharedsimulation/server/217privacy/210adjacency/222selection guards unchanged.
+289 ONE actual Chrome 3x3 ninewall masks5/7/6,13/15/14,9/11/10/all9picks/defaultzoom/PauseResume/savedbuilderStop/menu0 accepted narrow;293 exactT13/280,T14/282,cross15/288 localinstall52. Whole completedidleWall masks0–15 now available, not allGate/buildingstates. Fixed1254/pivot627900→128/render42.3225; nofit/transform/assembly. All olddescriptors/raw/held preserved.
 
-274T7 and275T11 installed283→49, old47 exact.279Chrome static site→idle/picks/PauseResumeStop/menu0 and277BChrome sixwall masks5/7/6/9/11/10/all6picks/groupRecallStop/menu0 acceptednarrow.284 ONEcombinedFirefox exact49 actualsite/6wallmasks/allpicks/Stop/menu0/49ready12portraits/errorsnetworkHTTP0 accepted; source/build/currentcanonicalruntime and public unchanged after, matchingactualresponses captured. Rootactualgame-sizeintakes define scope; no finalWallGate/animatedconstruction claim.
+291 exactfortificationdeath API installed295 with ONE static terminal wholewreck292mask0→53. Death precedes staleconstruction; dead/unfinished standalone mask0; building death clock fixedtick/nonloopterminal; livingcompletedvisibleowner topology and simulation/privacy/selection guards unchanged.28focusedtestsPASS. 294 ONEChrome and297 ONEFirefox actual unfinishednearcompleteSite Cancel→deathwreck/PauseResume/nonpick/80tickremoval/builderStop/menu0/53ready12portraits/errorsnetworkHTTP0. 297 outercall interrupted afterbrowserterminal; originalstalecallstate retained, recoverypostpreservation explicitly notcontemporaneous. No replay. Root briefactualgame-size appearance accepted cancelledSITE/staticwreck only, not completedwallcombat/fullcollapseanimation.
 
-Original277builderclickHOLD and midcampaignchunkcopy preserved.277B isolatedstage/build197 exactbeforeafter/publicunchanged; canonicalpreservationassertion failed because rootauthorized281 localcopy then sent WAIT too late. Keep exactdelta/failure/orderingincident, neverrestore/replay toconceal. Serialize canonicalmutation against live preservationguards. Ctrl8 savedexactlivingownvisiblebuilder→8guardedrecall avoidsroofocclusion without gamechange.
+Original277builderclick/midcampaigncopy and277B canonicalpreservationfailure due root281copy-before-WAIT retained. Serializecanonicalmutations against live preservationguards. Current289/294/297/300 exactreceipts govern scope; no oldscene replay.
 
-Next finite289 PLANONLY/UNCALLED: wholeT13/280,T14/282,cross15/288 eachONEbuiltin0retry returnedclosed, root42px appearanceaccepted butactualjoins/pick/install/publicOPEN. ExistingPNGbytes/fixed1254/pivot627900→128/render42.3225, no mirror/rotate/fit/assembly. Newcandidate52 from49 thenONEactual9wall3x3 masks5/7/6,13/15/14,9/11/10/all9picks/PauseResume/groupStop/menu0, rootgame-size intake beforeinstall. No newimagecalls needed or historicalorderresume. MixedGate/topologies/buildingconstructionanimation/hit/death/attack remainunfinished.
+296 isolated rendererfamily registry supports current9nonleader types and12historical IDs in real sampleEntity,14focusedtests. Durablepatch/sourcecopies; NOTcanonicalinstalled/NOTinpublic299. Exactidentity/state/direction/alias and291death retained; missingasset fallback. NEXT finite302: install exact296delta only after all300handles/preservationguards CLOSED, isolatedfreshbuild and relevantactualexistingfamily scene (including KingTHD newlyeligible), then separatepromotion ifaccepted. Registry does not create rosterart or authorize movementfanout. MixedGate topology, animatedconstruction/collapse, hit/attack/otherbuildingstates remainunfinished.
 
-## Public286 / rollback
+## Public299 / rollback
 
-PUBLIC286 development optional ?art=fort49/199files, index-CeTSGUOz.js SHAbcf457f726555696e73ee476c801c1b0930e00f07f569155ba3c6a7aa98a36bf; manifest5b247f7c0fc34a4fc53b2f31a0ef3df1772f2483142a0f9e444d2b19926d8098. Old46 exact, plus278staticconstruction/274T7/275T11. BareURLfallback/D0/foodCHARabsent.
+PUBLIC299 development optional ?art=fort53/204files, index-mANisKtK.js SHA7da48cba0210023ca9d2737d123e878cbc2fd510a8f5520531bd221dbdf05308; manifestf835505f6fd76c51264af43061d0cc1e109c0c82e0a186a2073d1c0c12ac671f. Old49 exact plus T13/T14/cross15/staticwreck292, oldchunks retained. BareURLfallback/D0/foodCHARabsent. 298 reused SAME sealed294 withoutrebuild; actualpreparedHEAD1534f99+intentionallydirtyruntimeinventories notcleancommit; food-onlyexclusions/4publicationcontracts/archivebytesmodes-safeextraction. Initialcontractfieldfailure retained.299 ONEatomicclientexchange normalTLSindex/chunk/manifest/4newPNGs exact, ownednextroot755. 300 recoveredChromeUI/staticwreck+firstFirefox53setup/12portraits/menu0 acceptednarrow; originalChromepost-verifierHOLD and recoverytiming retained,7pinsverifiedaftercleanup; actualreceipt/rootintake governs scope; no fullmatch/defaultart/WAN/character motion inference.
 
-285 SAME tested frozen284 PUBLICderivative199 reused withoutrebuild, exactpreparedHEAD6c5b488+dirtyworkingtreeinventories (notcleancommit), food-onlyexclusions,4publicationcontracts and archivebyte/mode/datafilter verification.286ONEatomicclientexchange, normalTLSindex/chunk/49manifest/3PNGexact; ownednextroot755beforeexchange. 287 actualnormalTLSChrome newsite/PauseResume/completion/exactpicks/groupStop/menu0 +Firefoxexplicitsetup49/menu0 acceptednarrow, requiredresponsepins exactboth/errorsnetworkHTTP0/rooms0/ownedhandlesclosed. Exactselection snapshots separate fromunselectedscreenshotpanels; no replay/fullmatch/defaultart/WAN/motion inference.
+Backend intentionallysameimmutable230 ~/.local/share/rach-doi-son-ha/releases/230/runtime230, sim29233a059ec084bc8577d20a1bccfd28ddc3024b9cb9bf4d5598c22f220f748b/server4e6a7e82f02d1d856f4ea788863c4836930bc00250be6a5b020ba2bdd8884198/ws8.22.0/actualPID3229 at299. Inspectlive; no restart/node/ws/unit/env/Funnel change. Canonical edits neverchangeimmutablebackend automatically.
 
-Backend intentionallysameimmutable230 ~/.local/share/rach-doi-son-ha/releases/230/runtime230, sim29233a059ec084bc8577d20a1bccfd28ddc3024b9cb9bf4d5598c22f220f748b/server4e6a7e82f02d1d856f4ea788863c4836930bc00250be6a5b020ba2bdd8884198/ws8.22.0. ActualPID3229 at286, inspectlive ratherthanhistoricalPID575363. No restart/node/ws/unit/env/Funnel change. Canonicaledits neverchangeimmutablebackend automatically.
-
-CURRENTpairedrollback270 private releases/285/rollback270.tar.gz SHA64d6d01bc7dfd4b5a7ea65296e9115bb9e60ffa370536eb3a832a2523dd9830a verifiedbytes/modes/safeextraction. Old195tree Videos/rds-public286-next-dist retained. Restore270front+assert/restore paired230runtime/policy whenneeded; identicalbackend neednotrestart. Older269rollback260/258rollback241/207/149 remaincustody, notcurrenttargets. Neverkickrooms/resumehistoricalpromotion.
+CURRENTpairedrollback286 private releases/298/rollback286.tar.gz SHA67945e20e411864af6efa918f6263d6a9a83cb642f9bd842900ea843de45179e verifiedbytes/modes/safeextraction. Old199tree Videos/rds-public299-next-dist retained. Restore286front+assert/restore paired230runtime/policy ifneeded; identicalbackend neednotrestart. Candidate298archiveSHA67c5eb2fd88bdd49c9f3325e6c47e99bb3d40b22187eb591620301bf37fa1b49 retained. Older285rollback270/269rollback260/history custody notcurrenttargets. Neverkickrooms/resumehistoricalpromotion.
 
 ## Build/evidence safety/full goal
 

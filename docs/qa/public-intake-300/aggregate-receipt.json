@@ -1,0 +1,37 @@
+{
+  "status": "RECOVERED_CHROME_NARROW_UI_PLUS_TERMINAL_FIREFOX53_PUBLIC299",
+  "Chrome": {
+    "campaigns": 1,
+    "retries": 0,
+    "originalStatus": "HOLD_CAPTURED_BEFORE_CLEANUP",
+    "originalReceiptSHA256": "524a87d445b7a21069193b9a5be9a576c10fbc3d1569b49f45e6e7cf93abb14d",
+    "recoveryReceiptSHA256": "6f71970ffa1ceecced2a273acbb1a226de13d93d5f43fec14cca7c773b25cbe9",
+    "actualUISequenceCompleted": true,
+    "actual7ResponsePinsExactRecovered": true,
+    "timingScope": "Verification recovered after browser cleanup; not contemporaneous terminalPASS"
+  },
+  "Firefox": {
+    "campaigns": 1,
+    "retries": 0,
+    "status": "PASS300_NORMALTLS_FIREFOX_EXPLICIT_SETUP53_MENU",
+    "receiptSHA256": "a99102a5e14b778a40c9519f3677a60afcb0683e04648f4fdebf251756b42160",
+    "actual7ResponsePinsExact": true,
+    "ready": 53,
+    "portraits": 12,
+    "menuDecodedBytes": 0,
+    "cleanup": {
+      "browserClosed": true,
+      "contextClosed": true
+    }
+  },
+  "publicManifestSHA256": "f835505f6fd76c51264af43061d0cc1e109c0c82e0a186a2073d1c0c12ac671f",
+  "postPreservation": "exact canonical/public/backend/service/policy/Funnel unchanged; rooms0",
+  "builds": 0,
+  "imageCalls": 0,
+  "limits": [
+    "Cancelled unfinished site only, one static wreck key; no completed wall destruction or collapse animation",
+    "Chrome original post-sequence verifier failure retained",
+    "No ninewall/fullmatch/defaultart/WAN/motion inference",
+    "Root visual intake of actual game-size images remains separate"
+  ]
+}

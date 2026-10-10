@@ -1,0 +1,18 @@
+--- a/client/raster-slice.js
++++ b/client/raster-slice.js
+@@ -1,3 +1,4 @@
++import {unitArtFamilies} from '../shared/unit-art.js';
+ import {selectFortificationArt} from './fortification-art.js';
+ import {artRoute} from './art-routes.js';
+ import {mountainPropPlacements,hillGroundPlacements,foodResourceEligible,staticResourceEligible} from './terrain-props.js';
+@@ -107,9 +108,7 @@
+    if(!enabled||!ready||!entity||entity.embarked||!finite(entity.x)||!finite(entity.y))return false;
+    let families,kind,direction;
+    if(entity.kind==='building'){if(['wall','gate'].includes(entity.type)&&artRoute().name!=='fort')return false;if(!['residence','granary','wall','gate'].includes(entity.type)&&!(['barracks','depot','artilleryWorkshop','cavalryCamp'].includes(entity.type)&&worldArtEnabled())&&!(entity.type==='shipyard'&&['shipyard','fort'].includes(artRoute().name) )&&!(entity.type==='fort'&&artRoute().name==='fort'))return false;families=[entity.type,`building.${entity.type}`];kind='building';direction=null;}
+-   else if(['villager','infantry','cavalry'].includes(entity.type)){families=[entity.type,`unit.${entity.type}`];kind='unit';direction=entity.dir;}
+-   else if(entity.type==='general'&&entity.character==='tran_hung_dao'){families=['tran_hung_dao','unit.tran_hung_dao'];kind='unit';direction=entity.dir;}
+-   else return false;
++   else {families=unitArtFamilies(entity);if(!families)return false;kind='unit';direction=entity.dir;}
+    const state=normalState(entity);if(typeof state!=='string'||!(direction===null||Number.isInteger(direction)&&direction>=0&&direction<=7))return false;
+    // A hit frame must be authored too; an idle key never stands in for movement, combat or death.
+    const baseVisualState=state!=='construction'&&entity.hp>0&&(entity.hitUntil||0)>tick?'hit':state;

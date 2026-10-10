@@ -1,0 +1,51 @@
+{
+  "status": "LOCAL_INSTALL295_CANONICAL53_EXACT_TESTED_DEATH_API_TERMINAL_WRECK",
+  "installPins": {
+    "client/fortification-art.js": {
+      "beforeSHA256": "d37d5a75fb2b4e2929c7338b1574709d8fb0fcdc9232e9020dad32292e768695",
+      "afterSHA256": "f4aeed257e1d718facbbfb1e5d953aa71913cf82f2e27806c1368533e2c024c7"
+    },
+    "client/raster-slice.js": {
+      "beforeSHA256": "95ee7060372d39138708202ee865869d9200b8f67a2fc71274834871d9b38f6e",
+      "afterSHA256": "bf2b034c7a0607c476178316cf8b60dfa2c0960ad3303c3a9cc55688fea76ce9"
+    },
+    "tests/building-state-api276.test.js": {
+      "beforeSHA256": "c7c9872cb8132707bca1deb01d32e9e36250339cb32179b5da8218ccea5607c6",
+      "afterSHA256": "a7e5e95bf6a1f2c9560286238ccec18c2e6c203ed4fdf7ea1aee9e9b80528855"
+    },
+    "tests/building-death-api291.test.js": {
+      "beforeSHA256": null,
+      "afterSHA256": "d87775f5ccea62cf3aeafa52c2810e3580ca3902a84840e43dae696ceb519a07"
+    },
+    "public/assets/art-v1/fort-202-manifest.json": {
+      "beforeSHA256": "958f10080a7f9489a5f574c48a7f6405f4a9e6ce260a070afca271a378bbbf88",
+      "afterSHA256": "f835505f6fd76c51264af43061d0cc1e109c0c82e0a186a2073d1c0c12ac671f"
+    },
+    "public/assets/art-v1/wall-wreck-292/runtime.png": {
+      "beforeSHA256": null,
+      "afterSHA256": "2bdfe6c5f6c6c15fc9746a80b4676767f52cbb292bb899ed0a689b1183641068"
+    }
+  },
+  "installPinsSHA256": "d52947f1538d5ecf758db707a1af532dc161ad8ca6e20b75a1ec808cb0801b4d",
+  "sourceBindingSHA256": "e8c544440727a329c5120d46ddbd04c7c8d1a41e5927a59e03fde21287c47433",
+  "tests": {
+    "pass": 28,
+    "fail": 0,
+    "runsAfterCopy": 1,
+    "logSHA256": "e9240e8c45d9f0e467f686cb9724ffa0406c4a488343bfc1fb01c792a45ce159",
+    "command": "node --test tests/building-death-api291.test.js tests/building-state-api276.test.js tests/construction-visibility217.test.js tests/fortification-art235.test.js tests/sprite-timing.test.js"
+  },
+  "preservation": {
+    "old52DescriptorsExact": true,
+    "outsideAuthorizedPathsExact": true,
+    "canonicalPendingFood099Exact": true,
+    "sharedServerDistPublic286199Exact": true
+  },
+  "scope": "Exact sealed294 two clientfiles +276/291 tests +53manifest +292terminalPNG; local only",
+  "limits": [
+    "Static terminal wreck key and CANCELLED SITE death actual294 only; no completedwall/enemycombat/fullcollapseanimation acceptance",
+    "No build/browser/image/public/service changes"
+  ],
+  "ownedOperationsClosed": true,
+  "publicPromoted": false
+}

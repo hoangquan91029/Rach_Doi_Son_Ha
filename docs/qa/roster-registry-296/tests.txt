@@ -1,0 +1,22 @@
+✔ dead Wall/Gate chooses only standalone authored death despite construction/hit/state and completed neighbors (2.301407ms)
+✔ missing rubble/ambiguous or ineligible variants never paint a live state; living never paints death (0.515352ms)
+✔ building death anchors fixed simulation tick and holds terminal pose by default/explicit false (0.642308ms)
+✔ dead entity remains unpickable and fog/visibility filtering remains authoritative (0.291949ms)
+✔ ordinary cancellation exposes death with stale construction truth then removes corpse at80 ticks (66.065631ms)
+✔ all existing building families select construction for public boolean and private job, with hit suppressed (2.883728ms)
+✔ missing construction never substitutes idle; completed never selects construction; death precedes site flag (0.444126ms)
+✔ construction fixed ticks respect default/true loops and explicit false holds last frame without completion (0.386775ms)
+✔ unfinished fortifications use only standalone mask0 and never completed neighbor links (0.398562ms)
+✔ ordinary build view supplies owner and redacted enemy construction eligibility; fog omits site (6.931841ms)
+✔ registry covers legal nonleader units and every historical identity, preserving prior aliases (1.164982ms)
+✔ real raster selector resolves every roster type and every leader role only to its exact authored identity (1.777543ms)
+✔ wrong leader, generic role, missing state/direction or unavailable decode remain procedural fallback (2.838638ms)
+✔ selected leader bank and raster registry agree without pulling another leader identity (1.301934ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 14
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 121.585197

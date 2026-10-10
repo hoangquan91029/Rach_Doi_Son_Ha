@@ -1,0 +1,141 @@
+{
+  "status": "LOCAL_INSTALL293_EXACT_T13_T14_CROSS15_52_VERIFIED",
+  "sourceHEAD": "1534f996c27a6a1de531cd26d01744250df917ad",
+  "assets": 52,
+  "changedFiles": {
+    "public/assets/art-v1/fort-202-manifest.json": "958f10080a7f9489a5f574c48a7f6405f4a9e6ce260a070afca271a378bbbf88",
+    "public/assets/art-v1/wall-13-280/idle.png": "3bf44c6ce79a9c0a42bf32bcbedee86605e866e8ac6ae020f7399d28085c6f2f",
+    "public/assets/art-v1/wall-14-282/idle.png": "833944e0e26ef6c20117d1eab468dc985c847336da85dbd8eb3869f1a9fd00e6",
+    "public/assets/art-v1/wall-15-288/idle.png": "a522781ca99d618f6f8860ea57eee918678e8b2a43c1c9b8f2ac47f8084bafbd"
+  },
+  "old49Exact": true,
+  "allOutsideAuthorizedFilesExact": true,
+  "clientSharedServerTestsDistPendingFoodExact": true,
+  "servicePID": 3229,
+  "backendRestarted": false,
+  "production28619949Preserved": true,
+  "validator": {
+    "status": "PASS_STRUCTURAL_ONLY",
+    "runs": 1,
+    "assets": 52,
+    "validator": "client/art-assets.js validateManifest"
+  },
+  "trialBindings": {
+    "receipt.json": "8ac1cfa5185b1d427f9d1d08deeda4350a2ed10b4fbf65cf6356a89ace59ca81",
+    "root-intake.json": "81c589cd9bfe0c1a6dc8cdb16f7cf343b7baa09649ce9c8f5ad1d55d73d952e8",
+    "preflight-seal.json": "3a8dae8a5639ab0a026a91f6bc946b1eeae632a951411c6c65b7c3c4ff48e446",
+    "actual-response-pins.json": "ba5f67b98d66b4b07c16a7c744f3247818b8622d997679e7fdeeffbc00640ed8"
+  },
+  "newRawRuntimeCustody": [
+    {
+      "id": "wall-whole-280-mask13",
+      "fortification": {
+        "mask": 13
+      },
+      "source": {
+        "path": "docs/art/buildings/wall-t13-idle-280/raw.png",
+        "sha256": "8a8b5a74dae1f4cf37f329aa87c4433ac85a17f03415a24e6f674f0bc5fb84df",
+        "rgbaSha256": "d70a80f84369b0bf4335561cad81b709ca212c1a5c59eb3c4b5ef2cca7667388",
+        "width": 1254,
+        "height": 1254
+      },
+      "runtime": {
+        "path": "wall-13-280/idle.png",
+        "sha256": "3bf44c6ce79a9c0a42bf32bcbedee86605e866e8ac6ae020f7399d28085c6f2f",
+        "rgbaSha256": "89a5b44730a3cd3229d447443cb5a6a8d3b3e6be8dc4ec69590dfce7e6c49ab2",
+        "width": 128,
+        "height": 128,
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "8a8b5a74dae1f4cf37f329aa87c4433ac85a17f03415a24e6f674f0bc5fb84df"
+        }
+      },
+      "pivot": {
+        "x": 627,
+        "y": 900,
+        "space": "source"
+      },
+      "render": {
+        "width": 42.3225,
+        "height": 42.3225
+      }
+    },
+    {
+      "id": "wall-whole-282-mask14",
+      "fortification": {
+        "mask": 14
+      },
+      "source": {
+        "path": "docs/art/buildings/wall-t14-idle-282/raw.png",
+        "sha256": "2d1231105ba2230abc1175c5cb8bd8c0a038eef0e84cb434ea3e17317e31788e",
+        "rgbaSha256": "475e523eedc5e0d31a86a7ee42659ab5dea1a80ca49d3cf97cb912550b9baddc",
+        "width": 1254,
+        "height": 1254
+      },
+      "runtime": {
+        "path": "wall-14-282/idle.png",
+        "sha256": "833944e0e26ef6c20117d1eab468dc985c847336da85dbd8eb3869f1a9fd00e6",
+        "rgbaSha256": "7e969a91ba42cc1a9edbd2f1cbbd466334945c9683d0c695a92ef026cea1b1a7",
+        "width": 128,
+        "height": 128,
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "2d1231105ba2230abc1175c5cb8bd8c0a038eef0e84cb434ea3e17317e31788e"
+        }
+      },
+      "pivot": {
+        "x": 627,
+        "y": 900,
+        "space": "source"
+      },
+      "render": {
+        "width": 42.3225,
+        "height": 42.3225
+      }
+    },
+    {
+      "id": "wall-whole-288-mask15",
+      "fortification": {
+        "mask": 15
+      },
+      "source": {
+        "path": "docs/art/buildings/wall-cross-idle-288/raw.png",
+        "sha256": "5cd56f75c0521fa2dc4b5e99db7420410d61fe12cb5151e3e872289e028bc1af",
+        "rgbaSha256": "b3ce3c14af98a794ed481c12f8962f415373b5a5b907684fabb4130f2d1ebaf3",
+        "width": 1254,
+        "height": 1254
+      },
+      "runtime": {
+        "path": "wall-15-288/idle.png",
+        "sha256": "a522781ca99d618f6f8860ea57eee918678e8b2a43c1c9b8f2ac47f8084bafbd",
+        "rgbaSha256": "f348142fda99dbce089ad3f53e88e876fe4752f2f4e4fbbc8cc75d34e0de4ff3",
+        "width": 128,
+        "height": 128,
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "5cd56f75c0521fa2dc4b5e99db7420410d61fe12cb5151e3e872289e028bc1af"
+        }
+      },
+      "pivot": {
+        "x": 627,
+        "y": 900,
+        "space": "source"
+      },
+      "render": {
+        "width": 42.3225,
+        "height": 42.3225
+      }
+    }
+  ],
+  "builds": 0,
+  "browserCalls": 0,
+  "imageCalls": 0,
+  "publicPromoted": false,
+  "limits": [
+    "Living completed idle topology13/14/15 only; no deathAPI/mixedgate/allstates/fullWallGate",
+    "Local manifest52 exact tested289 candidate; public unchanged28649"
+  ]
+}

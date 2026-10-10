@@ -1,0 +1,48 @@
+{
+  "status": "ISOLATED291_DEATH_SELECTION_CONTRACT_TESTED_NO_INSTALL",
+  "sourceHEAD": "1534f996c27a6a1de531cd26d01744250df917ad",
+  "stage": "/tmp/rds-building-death291-stage",
+  "pins": {
+    "client/fortification-art.js": {
+      "beforeSHA256": "d37d5a75fb2b4e2929c7338b1574709d8fb0fcdc9232e9020dad32292e768695",
+      "afterSHA256": "f4aeed257e1d718facbbfb1e5d953aa71913cf82f2e27806c1368533e2c024c7"
+    },
+    "client/raster-slice.js": {
+      "beforeSHA256": "95ee7060372d39138708202ee865869d9200b8f67a2fc71274834871d9b38f6e",
+      "afterSHA256": "bf2b034c7a0607c476178316cf8b60dfa2c0960ad3303c3a9cc55688fea76ce9"
+    },
+    "tests/building-state-api276.test.js": {
+      "beforeSHA256": "c7c9872cb8132707bca1deb01d32e9e36250339cb32179b5da8218ccea5607c6",
+      "afterSHA256": "a7e5e95bf6a1f2c9560286238ccec18c2e6c203ed4fdf7ea1aee9e9b80528855"
+    },
+    "tests/building-death-api291.test.js": {
+      "beforeSHA256": null,
+      "afterSHA256": "d87775f5ccea62cf3aeafa52c2810e3580ca3902a84840e43dae696ceb519a07"
+    }
+  },
+  "patchSHA256": "3d8169547a020bbc054571f01e9c53f3aa6f3659810eecceba5371f10cd4d4d9",
+  "tests": {
+    "pass": 28,
+    "fail": 0,
+    "logSHA256": "072c64007c374e27b27a71a17462a77da7da4e4cdf40ebf20ed7886614f9a94f",
+    "command": "node --test tests/building-death-api291.test.js tests/building-state-api276.test.js tests/construction-visibility217.test.js tests/fortification-art235.test.js tests/sprite-timing.test.js"
+  },
+  "contract": [
+    "hp<=0 normalized death precedes staleconstruction/hit/state",
+    "exact authored Wall/Gate death mask0 only; no completedneighbors, no state substitute, living cannot paint death",
+    "building death time=(tick-deadTick)*50 fixedsimulation clock; default nonloop and explicitfalse holdterminal",
+    "existing visibility, privacy, ownership, picking and completed topology unchanged"
+  ],
+  "lifecycleFinding": {
+    "ordinaryCancel": "hp0/death/deadTick with retained construction job and public underConstruction:true",
+    "corpseRemoval": "shared/sim.js step removes after80ticks=4sec",
+    "renderer": "renders fogvisible nonembarked deadentity; picker excludesdead",
+    "fade": "No change. Existing authored raster/building fallback nofade; fallback unitcorpse fades. Engine4sec removal applies; no extra behavior invented."
+  },
+  "limits": [
+    "No death assets added/generated; current49manifest authored Wall/Gate death absent, fallback until art",
+    "Unitfixtures are contract evidence, no actualbrowser/deathappearance approval",
+    "No build/browser/canonical/public/server/sim mutation"
+  ],
+  "failureCustody": "history/initial-fixture-command-failure.log wrong cancelBuild fixture command; corrected to actual cancel before28PASS"
+}

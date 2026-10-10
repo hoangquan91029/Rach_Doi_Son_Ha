@@ -1,0 +1,28 @@
+{
+  "order": 296,
+  "status": "ISOLATED_IMPLEMENTATION_TESTED_NOT_INSTALLED",
+  "stage": "/tmp/rds-roster-registry296-stage",
+  "routing": "gpt-6.1-sol low",
+  "recoveredExistingInterruptedWork": true,
+  "gitHead": "1534f996c27a6a1de531cd26d01744250df917ad",
+  "delta": "Declarative UNITS and CHARACTERS registry wired to real sampleEntity; aliases retained; missing leader identity and exact state/direction fall back.",
+  "tests": {
+    "command": "node --test tests/roster-registry296.test.js tests/building-death-api291.test.js tests/building-state-api276.test.js",
+    "passed": 14,
+    "failed": 0,
+    "logSha256": "56c68e2000c399864bdce31e09937fdada5d700f1c7f84ea855a6c2908357ba5"
+  },
+  "sources": {
+    "client/raster-slice.js": "8d1c953306229adf8226dbeb7c207078cdac55387d8466cf80e0e6ae7b98389b",
+    "shared/unit-art.js": "ad4adbfd61311c7f14cf4786f3a7467003e526e56f1bbd6c4a1f0f333719ccd3",
+    "shared/data.js": "ffc3f45adc58f212066d3763c591377ce15b9f6ac78e4685a95fc3ac747818e1",
+    "tests/roster-registry296.test.js": "4e84f9f8ac3c648be307d1a701a6655e0613b6fbaae3da199953d7caad1d888a"
+  },
+  "patchSha256": "8ba623090788da7f3c205152e9065d078e4b56ee992dc2c5e5ba65e62adf3575",
+  "death291Preserved": true,
+  "limits": [
+    "No canonical install, public mutation, service change, build, browser, image generation or visual acceptance.",
+    "Synthetic manifest/decode fixtures exercise real sampleEntity; registry does not create authored assets."
+  ],
+  "handles": "Test process exited; no owned browser/build/image/service handles."
+}
