@@ -1,0 +1,56 @@
+{
+  "status": "LOCAL_INSTALL281_EXACT_CONSTRUCTION_API_STATIC_WALL47_VERIFIED",
+  "sourceHEAD": "6c5b4885608a402b652d84be347ac88fccf9bfc9",
+  "changedFiles": {
+    "client/raster-slice.js": {
+      "beforeSHA256": "bdc7a5e662021d197db6e76c5d5ee3d62ba9db1cf2633cf1e6301631c5e47736",
+      "afterSHA256": "95ee7060372d39138708202ee865869d9200b8f67a2fc71274834871d9b38f6e"
+    },
+    "client/fortification-art.js": {
+      "beforeSHA256": "4716f84b0dbd355f540484c3fff98acfc48c6664021d3bac008563c3a2da56d1",
+      "afterSHA256": "d37d5a75fb2b4e2929c7338b1574709d8fb0fcdc9232e9020dad32292e768695"
+    },
+    "client/sprite-timing.js": {
+      "beforeSHA256": "d567ca4060bd9a0689ed9aae1ba00b6a776c8699c2c0c2b168b09ef951a6aad9",
+      "afterSHA256": "4dd177318d7e44e806672af3785b1ca2e3733c6798a47d3ec2f5965b6f1bef36"
+    },
+    "tests/building-state-api276.test.js": {
+      "beforeSHA256": null,
+      "afterSHA256": "c7c9872cb8132707bca1deb01d32e9e36250339cb32179b5da8218ccea5607c6"
+    },
+    "public/assets/art-v1/fort-202-manifest.json": {
+      "beforeSHA256": "2600c650eb4a87b848dfac2f073a87f94d25296800434d32fc7c8b557fc855d0",
+      "afterSHA256": "2a9697d4ba7a4664404c8dd73fd4a4d7f7d5e96f8cc475f44b475aee25568c16"
+    },
+    "public/assets/art-v1/wall-construction-278/runtime.png": {
+      "beforeSHA256": null,
+      "afterSHA256": "4afd6d3a4c41ee31dfbdcf723b2526a20f8f6cffac8bbf80a0e21d894c571805"
+    }
+  },
+  "installPinsSHA256": "b97963314298223ea812d0f4edf15dce862d6725705d2bb69efc688efef658cb",
+  "tests": {
+    "command": "node --test tests/building-state-api276.test.js tests/construction-visibility217.test.js tests/fortification-art235.test.js tests/sprite-timing.test.js",
+    "runs": 1,
+    "pass": 23,
+    "fail": 0,
+    "logSHA256": "8c6e1e626bc210d1112632e951a9bf6d67e67de684ddd97487a329b4cce87d38"
+  },
+  "preservation": {
+    "old46DescriptorsExact": true,
+    "outsideAuthorizedFilesExact": true,
+    "canonicalPendingFoodRoute099Exact": true,
+    "sharedServerDistExact": true
+  },
+  "acceptedTrialBinding": {
+    "receiptSHA256": "5530125295a30e267e088c6761bd99dcea5198c8def6a94c30daf1aebef2460b",
+    "rootIntakeSHA256": "636ef0f68fd8f905a2e4cb8a8b3e362bc3e762ffcd6122a673eea19734a0f539",
+    "assetBindingSHA256": "25c7a88680d956a75f08468d18929640663d0e17b0a537f030e1c06ccfdec4ed",
+    "sealedSourceInventorySHA256": "ec8bd4d81c6d911fd7c7227740ce339ee40038f198fb12721cd1f932a9193461"
+  },
+  "sequencingIncident": "Root initially authorized281 local install while277B canonical-preservation guard was live. Local files were copied before later wait correction arrived. Mutation promptly reported; root directed no restore/conceal. 277B closed with actualflow passed and canonical-preservation failure retained; root then authorized this single verification run. Before originals preserved.",
+  "limits": [
+    "ONE static Wall construction mask0 state, not animated construction or all building states",
+    "No build/public/deployment/runtime restart",
+    "Fortification death remains held; other missing construction art fallback"
+  ]
+}

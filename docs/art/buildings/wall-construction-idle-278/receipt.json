@@ -1,0 +1,65 @@
+{
+  "status": "CANDIDATE_ONE_STATIC_CONSTRUCTION_STAGE_ROOT_PENDING",
+  "calls": 1,
+  "retries": 0,
+  "callState": "returned_closed",
+  "source": {
+    "path": "raw.png",
+    "sha256": "8076d8ad46925e9569441f2e021caede18050eab9be38489024e474104706b12",
+    "rgbaSha256": "f00136e71e776b5b0193418b1513137e9bd5998571e31d7901dd75f744412850",
+    "width": 1254,
+    "height": 1254
+  },
+  "runtime": {
+    "path": "runtime.png",
+    "sha256": "4afd6d3a4c41ee31dfbdcf723b2526a20f8f6cffac8bbf80a0e21d894c571805",
+    "rgbaSha256": "04a9874cf160cc7bb4ae6e572359876678241d8f215291f2cd04f8325efd7b43",
+    "width": 128,
+    "height": 128
+  },
+  "working": {
+    "path": "working.png",
+    "sha256": "84d729b0fc0976446ddecbbc8afabc91283c4fd9dbd185cb0707a2ec60a4dc2e",
+    "rgbaSha256": "275f4873cdc4f1143e11293ba4119306aab86b5fdda9f02e748c90d5b8d322a8",
+    "width": 256,
+    "height": 256
+  },
+  "preview": {
+    "path": "preview42.png",
+    "sha256": "161a787a4c1538ac2f58a8316f3eec3a8e36cca3219151cad0ec75b9827a4a96",
+    "rgbaSha256": "208395992688a92efafe2598da154e5ff2a10c0b23f4c852de5b0d9072b770d5",
+    "width": 42,
+    "height": 42
+  },
+  "alphaExtrema": [
+    0,
+    255
+  ],
+  "fixedLayout": {
+    "source": [
+      1254,
+      1254
+    ],
+    "pivot": [
+      627,
+      900
+    ],
+    "cell": [
+      128,
+      128
+    ],
+    "logicalRender": 42.3225,
+    "fit": false,
+    "shift": false,
+    "mirror": false
+  },
+  "briefActual42Look": "Small open timber frame with three posts, crossrails/brace, low stonefoundation and stackedlogs; visibly unfinished, no full solid wall. Warm timber fits family. Returned site slightly expands relative to guide, actual pivot/transition should be assessed in scene.",
+  "limits": "ONE static construction stage only; not animation, elapsed progress, full construction coverage or acceptance. No completedlinks implied.",
+  "fortification": {
+    "mask": 0
+  },
+  "runtimeInstalled": false,
+  "publicPromoted": false,
+  "networkAPIcalls": 0,
+  "next": "Root appearance intake and new actual UI wall construction-to-completedidle transition before installation."
+}

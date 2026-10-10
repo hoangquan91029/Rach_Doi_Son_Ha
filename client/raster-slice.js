@@ -10,7 +10,7 @@ import {TILE_WIDTH,TILE_HEIGHT} from './world-presentation.js';
 
 const TW=TILE_WIDTH,TH=TILE_HEIGHT;
 const finite=n=>Number.isFinite(n);
-const normalState=entity=>entity.hp<=0?'death':entity.state;
+const normalState=entity=>entity.hp<=0?'death':entity.kind==='building'&&(entity.construction||entity.underConstruction===true)?'construction':entity.state;
 /** Optional candidate art over actual simulation. No substitute map, fake units, or sprite mirroring. */
 export function createRasterSlice({enabled=artRoute().enabled,manifestUrl=artRoute().manifestUrl,onStatus=()=>{},materialWorldSize=8}={}) {
  const worldArtEnabled=()=>artRoute().world;
@@ -105,7 +105,6 @@ export function createRasterSlice({enabled=artRoute().enabled,manifestUrl=artRou
   },
   sampleEntity(entity,{tick=0,timeMs=tick*50,fortificationTopology}={}) {
    if(!enabled||!ready||!entity||entity.embarked||!finite(entity.x)||!finite(entity.y))return false;
-   if(entity.kind==='building'&&(entity.construction||entity.underConstruction===true)){recordMissing(`${entity.type}:construction`,'No authored construction sequence');return false;}
    let families,kind,direction;
    if(entity.kind==='building'){if(['wall','gate'].includes(entity.type)&&artRoute().name!=='fort')return false;if(!['residence','granary','wall','gate'].includes(entity.type)&&!(['barracks','depot','artilleryWorkshop','cavalryCamp'].includes(entity.type)&&worldArtEnabled())&&!(entity.type==='shipyard'&&['shipyard','fort'].includes(artRoute().name) )&&!(entity.type==='fort'&&artRoute().name==='fort'))return false;families=[entity.type,`building.${entity.type}`];kind='building';direction=null;}
    else if(['villager','infantry','cavalry'].includes(entity.type)){families=[entity.type,`unit.${entity.type}`];kind='unit';direction=entity.dir;}
@@ -113,13 +112,15 @@ export function createRasterSlice({enabled=artRoute().enabled,manifestUrl=artRou
    else return false;
    const state=normalState(entity);if(typeof state!=='string'||!(direction===null||Number.isInteger(direction)&&direction>=0&&direction<=7))return false;
    // A hit frame must be authored too; an idle key never stands in for movement, combat or death.
-   const baseVisualState=entity.hp>0&&(entity.hitUntil||0)>tick?'hit':state;
+   const baseVisualState=state!=='construction'&&entity.hp>0&&(entity.hitUntil||0)>tick?'hit':state;
    const states=authoredActionStates(entity,baseVisualState);let candidates=[],visualState=baseVisualState;
    for(const requested of states){candidates=(pipeline.manifest?.assets||[]).filter(a=>a.kind===kind&&families.includes(a.family||a.id)&&a.state===requested&&a.direction===direction);if(candidates.length){visualState=requested;break;}}
    if(!candidates.length){recordMissing(`${families[0]}:${visualState}:${direction}`,'No exact authored raster state/direction');return false;}
    let asset=candidates[0];if(kind==='building'&&['wall','gate'].includes(entity.type)){const chosen=selectFortificationArt(pipeline.manifest.assets,entity,fortificationTopology,visualState);if(!chosen.asset){recordMissing(`${entity.type}:${visualState}:topology`,chosen.reason);return false;}asset=chosen.asset;}let elapsed=timeMs;
    let walkPhase=null;
-   if(visualState==='walk'&&asset.locomotion){walkPhase=locomotion.sample(entity.id,{distancePerCycle:asset.locomotion.distancePerCycle,cycleDurationMs:asset.frames.reduce((sum,f)=>sum+f.durationMs,0)});elapsed=walkPhase.timeMs;}
+   // Construction loops describe visible activity, never private completion progress.
+   if(visualState==='construction')elapsed=Math.max(0,tick*50);
+   else if(visualState==='walk'&&asset.locomotion){walkPhase=locomotion.sample(entity.id,{distancePerCycle:asset.locomotion.distancePerCycle,cycleDurationMs:asset.frames.reduce((sum,f)=>sum+f.durationMs,0)});elapsed=walkPhase.timeMs;}
    else if(visualState==='gather'||visualState.startsWith('gather_'))elapsed=gatherAnimationTime(entity,timeMs);
    else if(visualState==='hit')elapsed=Math.max(0,timeMs-((entity.hitUntil||tick)-6)*50);
    else if(visualState==='death')elapsed=Math.max(0,timeMs-(entity.deadTick??tick)*50);

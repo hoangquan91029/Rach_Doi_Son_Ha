@@ -1,0 +1,92 @@
+{
+  "status": "READ_ONLY_DIAGNOSIS_NO_REPLAY",
+  "directEvidence": {
+    "failureSelection": [
+      4
+    ],
+    "expectedBuilderId": 7,
+    "builder": {
+      "id": 7,
+      "owner": 0,
+      "type": "villager",
+      "kind": "unit",
+      "x": 13.158906094960305,
+      "y": 19.5,
+      "hp": 65,
+      "maxHp": 65,
+      "food": 26.182335999998568,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "idle",
+      "dir": 0,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "resuppliedTick": 82,
+      "starving": 0,
+      "lastMovedTick": 1332,
+      "order": null
+    },
+    "selectedBarracks": {
+      "id": 4,
+      "owner": 0,
+      "type": "barracks",
+      "kind": "building",
+      "x": 13.5,
+      "y": 20.5,
+      "hp": 650,
+      "maxHp": 650,
+      "food": 0,
+      "foodMax": 0,
+      "morale": 95,
+      "state": "idle",
+      "dir": 0,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "underConstruction": false,
+      "order": null
+    },
+    "lastDeliveredWorldPointerUp": {
+      "clientX": 640.0900268554688,
+      "clientY": 400.0400085449219,
+      "targetId": "world",
+      "pointerType": "mouse",
+      "isTrusted": true,
+      "timeStamp": 79951.09999999963
+    },
+    "failureScreenshot": "actual-failed-guard.png",
+    "harnessError": "Error: Actual UI/state timeout\n    at wait (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/wall-t-runtime-277/browser.mjs:8:177)\n    at async select (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/wall-t-runtime-277/browser.mjs:15:68)\n    at async file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/wall-t-runtime-277/browser.mjs:44:2",
+    "stopAndMenuNotReached": true
+  },
+  "codeEvidence": {
+    "renderer.selectionPoint": "client/renderer.js:51 scans15 offsets and falls back to projected ground center if none picks target",
+    "visualPicking": "client/visual-picking.js:12-29 sorts frontmost by descending x+y/id; opaque raster alpha>=80 returns first entity",
+    "actualClick": "client/main.js:79-81 uses visible artwork picker then nearest fallback only if no visible hit",
+    "rectangle": "client/main.js:82 selects owned living nonembarked units by projected ground center; excludes buildings; drag distance >7 invokes rectangle"
+  },
+  "inference": {
+    "likelyCause": "Barracks4 frontmost artwork obscured builder7 at tested selectionPoint offsets; selectionPoint fallback ground click then selected barracks. Barracks depth34 exceeds builder32.6589, consistent with frontmost sort.",
+    "limits": "No pre-click diagnosticPoint/opaque-hit trace or full pre-click snapshot captured for this builder attempt; exact alpha at delivered pixel not reconstructed, so obstruction cause is strongly consistent inference rather than exact event proof. Failure snapshot was later after30s wait; builder unchanged position/order can be observed but not assumed same render at click."
+  },
+  "nextFiniteTrialRecommendation": {
+    "scope": "Separate root-authorized one finite trial; retain277 failure; no repeat without new order",
+    "ordinaryUI": "Clear unused group9; assert living owned visible nonembarked exact builder; center camera; obtain diagnostic ground point; choose small bounded rectangle around projected ground point containing exactly builder among eligible owned units; recheck visibility and state; drag via trusted ordinary pointer mouse movement with diagonal >7px; require selection exactly[builderId] before Stop",
+    "rectangleGuard": "Read current displayedState entities and point() only; evaluate every eligible unit projected center in bounds, require sole desiredId; if none safe rectangle exists HOLD rather than enlarge blindly. Require actor visible/in viewport independently because selectRect itself lacks fog predicate. Use integer viewport corners and passive pointer receipt.",
+    "verification": "Then ordinary Stop and exact livingown idle/order-null; Pause/menu decoded0/errorsnetwork0/owned cleanup, no injection/selection-state write/game patch/artfit",
+    "acceptance": "No success outcome invented; root chooses new finite trial and custody binding first."
+  },
+  "noBrowserCalls": true,
+  "noBuilds": true,
+  "noGameEdits": true
+}

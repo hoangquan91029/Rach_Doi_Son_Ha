@@ -1,0 +1,48 @@
+{
+  "status": "PASS279_CHROME_STATIC_CONSTRUCTION_TO_IDLE_EXACT_PICKS_PAUSE_RESUME_STOP_MENU",
+  "campaigns": 1,
+  "retries": 0,
+  "sourceHEAD": "6c5b4885608a402b652d84be347ac88fccf9bfc9",
+  "api276SHA256": "c74cbc64faa6e9cdc6d6843c28adc8ac9001c3e5a622d8ea80c64985c1957ce4",
+  "manifestSHA256": "2a9697d4ba7a4664404c8dd73fd4a4d7f7d5e96f8cc475f44b475aee25568c16",
+  "bundleSHA256": "bcf457f726555696e73ee476c801c1b0930e00f07f569155ba3c6a7aa98a36bf",
+  "staticConstructionAssetId": "wall-whole-construction-278-mask0",
+  "buildingId": 37,
+  "unfinishedTick": 245,
+  "completedTick": 351,
+  "frozenTick": 234,
+  "completedMask": 0,
+  "exactPicks": [
+    [
+      37
+    ],
+    [
+      37
+    ]
+  ],
+  "ready": 47,
+  "portraits": 12,
+  "menuDecodedBytes": 0,
+  "errors": [],
+  "networkFailures": [],
+  "cleanup": {
+    "rooms": 0,
+    "serverListening": false,
+    "browserClosed": true
+  },
+  "sealedCandidateUnchangedAfter": true,
+  "canonicalInstalled": false,
+  "publicPromoted": false,
+  "limits": [
+    "Static construction state only; no animated construction/private progress/all building state approval",
+    "Asset identity inferred from deterministic sealed selector and unique matching PNG, not instrumented per-entity report",
+    "Completed screenshot shows completed wall but panel is unselected at screenshot time despite earlier exact selected snapshot37; snapshot proves exact pick, screenshot alone does not",
+    "PNG/manifest browser responses not separately hashed; sealed disk inventory and 47ready are scope of proof"
+  ],
+  "screenshots": [
+    "actual-construction-paused.png",
+    "actual-selected-construction.png",
+    "actual-selected-completed-idle.png"
+  ],
+  "clip": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/wall-construction-runtime-279/clips/page@e57592ac1ad340d773e94268f859b095.webm"
+}

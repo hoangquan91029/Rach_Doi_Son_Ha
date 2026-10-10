@@ -2,7 +2,7 @@
 
 Cập nhật ngày 2026-10-10, múi giờ Asia/Ho_Chi_Minh. **Trạng thái: INCOMPLETE.** Đây là kế hoạch hiện hành cho toàn dự án; `NEXT_STEPS.md` chỉ giữ hàng đợi gần nhất. Hồ sơ cũ được giữ nguyên byte tại `docs/audit/2026-10-09/history/`.
 
-Latest execution272 ở mục26 và active movement plan thay các next-step lịch sử; source/receipt cũ giữ nguyên.
+Latest execution290 ở mục27 và active movement plan thay các next-step lịch sử; source/receipt cũ giữ nguyên.
 
 ## 1. Mục tiêu và cách đọc kết quả
 
@@ -244,3 +244,13 @@ Next unfinished W01: whole corners6/9/10 first, then T7/11/13/14/cross15 and mix
 269 SAME tested frozen266195 build boundfinalcanonical46 PUBLICscope, no rebuild, current260pairedrollback84e116…cf6f4a6 verified.270 ONE clientatomicexchange/new3PNG normalTLSbytes verified, JSadd2 unchanged/manifest2600c6…55d0.271 actualpublicChrome square/all4picks/PauseResumeStop/menu0 +Firefox46ready12portraits/setup/menu0 acceptednarrow, errorsnetwork0/rooms0/ownedhandlesclosed; no fullmatch/defaultart/WAN/motion inference. Backend codeimmutable230 unchanged; historicalPID575363 nowcurrent3229 observedafterstartup, rootcode/public/rooms0 revalidation storedseparately. No agentrestart.262 entrypoints archivedbeforeupdates.
 
 NextW01: wholeT7/11/13/14/cross15/mixedGate and buildingconstruction-hit-death-attackAPI+frames, actualscenebeforeinstall. G01 motion213/216/233 remainsopen fornaturalness/owner/worldfootcontact/bodyshadow/familyscale/runtime/fanout. Fullgoal/defaultart/roster/12leaders/maps/performance/externaldesktopWAN/finaltwomodesbothmaps INCOMPLETE.
+
+## 27. Thực thi274–290 — construction state và T family
+
+Sáu wholebuilding sources274/275/278/280/282/288 mỗi mẫu ONEbuiltin/0retry; fixed1254/pivot627900→128/logical42.3225 và raw/toolcustody preserved.276 API exactconstruction/visibleboolean/tickclock/loop respectsmanifest, no idle/hit substitution;281 cài3clientfiles/newtest/staticwall278→47,23focusedcontracts pass.283 thêmexactT7/T11→49, old47 và outsidefiles preserved. Construction hiện có ONEstaticstage, không phải animation/progress/allstates.
+
+279Chrome ordinarysite→completion/picks/PauseResumeStop/menu0 accepted.277 originalHOLD builderclick+midcampaignretention retained;277B frozen197/48 Chrome all6masks/allpicks/grouprecallStop/menu0 passed nhưng canonicalpreservationassertion failed do root281authorization/WAIT ordering mistake. Exactdelta và originalfailure giữ nguyên, no conceal/retry.284 freshcombined49 Firefox site/completion/6masks/allpicks/Stop/menu0/49ready12portraits/errorsnetworkHTTP0, exactresponsepins/beforeaftersourcebuild/currentcanonicalpublic acceptednarrow. Đây là scope combinedcandidate thực tế.
+
+285 binds SAME frozen284/public19949, actualpreparedHEAD6c5b488+dirtyworkingtreeinventories, food-onlyexclusion/oldchunks/APIselectedrawpins/current230policy; candidate753901…e5b7 và pairedCURRENTrollback27064d6…9830a byte/mode/datafilter verified,4publicationcontracts pass (initialcustodypathfailure preserved).286 ONEclient-only atomicpromotion index-CeTSGUOz.js bcf457…a36bf/manifest5b247…d8098/new3PNGnormalTLSexact; immutablebackend230/PID3229/unit/env/Funnelunchanged. 287 actualnormalTLSChrome siteflow/Stop/menu0 +Firefoxexplicitsetup49/menu0 acceptednarrow, exactrequiredresponsepins/errorsnetworkHTTP0/rooms0/ownedhandlesclosed; unselectedscreenshotpanels limit separate fromexactselection snapshots retained. No fullmatch/defaultart/WAN/motion claim.
+
+Next289 planONLY/UNCALLED: T13/280,T14/282,cross15/288 sourceappearanceaccepted, pendingactual3x3ninewall masks5/7/6,13/15/14,9/11/10; newfinitecandidate52/oneordinaryUIjoin/pick/PauseResume/groupStop/menu0 beforeinstall/public. No newimagecall needed. MixedGate/buildinganimatedconstruction/hit/death/attack remainunfinished. Movement213/216/233/ownerpending unchanged; fullroster/8directions/actions/12leaders/maps/performance/defaultacceptedart/externaldesktopWAN/finaltwomodesbothmaps INCOMPLETE. Prior272entrypoints exactGit6c5b488 archived beforeupdates.

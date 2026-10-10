@@ -1,0 +1,97 @@
+--- a/client/raster-slice.js
++++ b/client/raster-slice.js
+@@ -10,7 +10,7 @@
+ 
+ const TW=TILE_WIDTH,TH=TILE_HEIGHT;
+ const finite=n=>Number.isFinite(n);
+-const normalState=entity=>entity.hp<=0?'death':entity.state;
++const normalState=entity=>entity.hp<=0?'death':entity.kind==='building'&&(entity.construction||entity.underConstruction===true)?'construction':entity.state;
+ /** Optional candidate art over actual simulation. No substitute map, fake units, or sprite mirroring. */
+ export function createRasterSlice({enabled=artRoute().enabled,manifestUrl=artRoute().manifestUrl,onStatus=()=>{},materialWorldSize=8}={}) {
+  const worldArtEnabled=()=>artRoute().world;
+@@ -105,7 +105,6 @@
+   },
+   sampleEntity(entity,{tick=0,timeMs=tick*50,fortificationTopology}={}) {
+    if(!enabled||!ready||!entity||entity.embarked||!finite(entity.x)||!finite(entity.y))return false;
+-   if(entity.kind==='building'&&(entity.construction||entity.underConstruction===true)){recordMissing(`${entity.type}:construction`,'No authored construction sequence');return false;}
+    let families,kind,direction;
+    if(entity.kind==='building'){if(['wall','gate'].includes(entity.type)&&artRoute().name!=='fort')return false;if(!['residence','granary','wall','gate'].includes(entity.type)&&!(['barracks','depot','artilleryWorkshop','cavalryCamp'].includes(entity.type)&&worldArtEnabled())&&!(entity.type==='shipyard'&&['shipyard','fort'].includes(artRoute().name) )&&!(entity.type==='fort'&&artRoute().name==='fort'))return false;families=[entity.type,`building.${entity.type}`];kind='building';direction=null;}
+    else if(['villager','infantry','cavalry'].includes(entity.type)){families=[entity.type,`unit.${entity.type}`];kind='unit';direction=entity.dir;}
+@@ -113,13 +112,15 @@
+    else return false;
+    const state=normalState(entity);if(typeof state!=='string'||!(direction===null||Number.isInteger(direction)&&direction>=0&&direction<=7))return false;
+    // A hit frame must be authored too; an idle key never stands in for movement, combat or death.
+-   const baseVisualState=entity.hp>0&&(entity.hitUntil||0)>tick?'hit':state;
++   const baseVisualState=state!=='construction'&&entity.hp>0&&(entity.hitUntil||0)>tick?'hit':state;
+    const states=authoredActionStates(entity,baseVisualState);let candidates=[],visualState=baseVisualState;
+    for(const requested of states){candidates=(pipeline.manifest?.assets||[]).filter(a=>a.kind===kind&&families.includes(a.family||a.id)&&a.state===requested&&a.direction===direction);if(candidates.length){visualState=requested;break;}}
+    if(!candidates.length){recordMissing(`${families[0]}:${visualState}:${direction}`,'No exact authored raster state/direction');return false;}
+    let asset=candidates[0];if(kind==='building'&&['wall','gate'].includes(entity.type)){const chosen=selectFortificationArt(pipeline.manifest.assets,entity,fortificationTopology,visualState);if(!chosen.asset){recordMissing(`${entity.type}:${visualState}:topology`,chosen.reason);return false;}asset=chosen.asset;}let elapsed=timeMs;
+    let walkPhase=null;
+-   if(visualState==='walk'&&asset.locomotion){walkPhase=locomotion.sample(entity.id,{distancePerCycle:asset.locomotion.distancePerCycle,cycleDurationMs:asset.frames.reduce((sum,f)=>sum+f.durationMs,0)});elapsed=walkPhase.timeMs;}
++   // Construction loops describe visible activity, never private completion progress.
++   if(visualState==='construction')elapsed=Math.max(0,tick*50);
++   else if(visualState==='walk'&&asset.locomotion){walkPhase=locomotion.sample(entity.id,{distancePerCycle:asset.locomotion.distancePerCycle,cycleDurationMs:asset.frames.reduce((sum,f)=>sum+f.durationMs,0)});elapsed=walkPhase.timeMs;}
+    else if(visualState==='gather'||visualState.startsWith('gather_'))elapsed=gatherAnimationTime(entity,timeMs);
+    else if(visualState==='hit')elapsed=Math.max(0,timeMs-((entity.hitUntil||tick)-6)*50);
+    else if(visualState==='death')elapsed=Math.max(0,timeMs-(entity.deadTick??tick)*50);
+--- a/client/fortification-art.js
++++ b/client/fortification-art.js
+@@ -14,8 +14,11 @@
+  const layout=JSON.stringify([a.source.width,a.source.height,a.cell.width,a.cell.height,a.pivot,a.render]);if(layouts.has(type)&&layouts.get(type)!==layout)throw Error('Fortification variants change fixed layout');layouts.set(type,layout);}
+ }
+ export function selectFortificationArt(assets,entity,context,state){
+- if(!entity||entity.kind!=='building'||!['wall','gate'].includes(entity.type)||entity.hp<=0||entity.embarked||entity.construction||entity.underConstruction===true)return {asset:null,reason:'Incomplete or ineligible fortification'};
+- const t=context?.get(entity.id);if(!t||!Number.isInteger(t.mask)||t.mask<0||t.mask>15||t.axis!==topologyForMask(t.mask).axis)return {asset:null,reason:'No exact visible topology context'};
++ if(!entity||entity.kind!=='building'||!['wall','gate'].includes(entity.type)||entity.hp<=0||entity.embarked)return {asset:null,reason:'Incomplete or ineligible fortification'};
++ const unfinished=Boolean(entity.construction||entity.underConstruction===true);
++ if(unfinished!==(state==='construction'))return {asset:null,reason:'Construction requires exact authored construction state'};
++ // Unfinished sites have no completed links: only standalone mask0 scaffolding.
++ const t=unfinished?topologyForMask(0):context?.get(entity.id);if(!t||!Number.isInteger(t.mask)||t.mask<0||t.mask>15||t.axis!==topologyForMask(t.mask).axis)return {asset:null,reason:'No exact visible topology context'};
+  const matches=assets.filter(a=>a.kind==='building'&&[entity.type,`building.${entity.type}`].includes(a.family)&&a.state===state&&a.direction===null&&a.fortification?.mask===t.mask&&(a.fortification.axis===undefined||a.fortification.axis===t.axis));
+  return matches.length===1?{asset:matches[0],reason:null}:{asset:null,reason:matches.length?'Ambiguous whole fortification variant':'No whole illustration for exact topology/state'};
+ }
+--- a/client/sprite-timing.js
++++ b/client/sprite-timing.js
+@@ -20,7 +20,7 @@
+  return {frame,elapsedMs,durationMs,events:(frames[frame].events||[]).map(event=>({...event}))};
+ }
+ 
+-export function defaultAnimationLoop(asset){return asset.loop??['idle','walk'].includes(asset.state);}
++export function defaultAnimationLoop(asset){return asset.loop??['idle','walk','construction'].includes(asset.state);}
+ /** Map an authored contact marker onto authoritative impact; no gameplay dispatch. */
+ export function attackAnimationTime(asset,entity,visualTimeMs){
+  const start=entity.attackStartedTick*50,impact=entity.attackImpactTick*50,ready=entity.attackReadyTick*50;
+--- a/tests/building-state-api276.test.js
++++ b/tests/building-state-api276.test.js
+@@ -0,0 +1,30 @@
++import test from 'node:test';
++import assert from 'node:assert/strict';
++import {readFileSync} from 'node:fs';
++import {BUILDINGS} from '../shared/data.js';
++import {createMatch,command,view} from '../shared/sim.js';
++import {createRasterSlice} from '../client/raster-slice.js';
++import {buildFortificationTopology} from '../client/fortification-topology.js';
++import {selectFortificationArt} from '../client/fortification-art.js';
++const manifest=JSON.parse(readFileSync(new URL('../public/assets/art-v1/fort-202-manifest.json',import.meta.url))),original=manifest.assets.find(a=>a.kind==='building');
++const asset=(type,state,mask=0)=>({...structuredClone(original),id:`fixture-${type}-${state}-${mask}`,family:`building.${type}`,state,direction:null,frames:[{...original.frames[0],durationMs:75},{...original.frames[0],durationMs:75}],loop:false,...(['wall','gate'].includes(type)?{fortification:{mask}}:{})});
++const entity=(type,extra={})=>({id:55,owner:0,kind:'building',type,x:10.5,y:10.5,hp:100,state:'idle',...extra});
++async function raster(assets){const r=createRasterSlice({enabled:true});r.pipeline.preload=async()=>{};Object.defineProperty(r.pipeline,'manifest',{value:{...manifest,assets}});r.pipeline.get=(id,opts)=>({image:{width:256,height:256},asset:assets.find(a=>a.id===id),frame:opts.frame});await r.preload();return r;}
++async function fortRun(fn){const old=globalThis.location;globalThis.location={search:'?art=fort'};try{await fn();}finally{globalThis.location=old;}}
++test('all existing building families select construction for public boolean and private job, with hit suppressed',()=>fortRun(async()=>{
++ for(const type of Object.keys(BUILDINGS)){const r=await raster([asset(type,'idle'),asset(type,'hit'),asset(type,'construction')]);for(const flag of[{underConstruction:true},{construction:{remaining:1,total:5}}]){const got=r.sampleEntity(entity(type,{...flag,hitUntil:200}),{tick:100});assert.equal(got.visualState,'construction');assert.equal(got.raster.asset.state,'construction');}}
++}));
++test('missing construction never substitutes idle; completed never selects construction; death precedes site flag',()=>fortRun(async()=>{
++ const r=await raster([asset('fort','idle'),asset('fort','construction'),asset('fort','death')]);assert.equal(r.sampleEntity(entity('fort',{hp:0,underConstruction:true})).visualState,'death');assert.equal(r.sampleEntity(entity('fort')).visualState,'idle');const missing=await raster([asset('fort','idle')]);assert.equal(missing.sampleEntity(entity('fort',{underConstruction:true})),false);
++ const wall=await raster([asset('wall','construction'),asset('wall','death')]);assert.equal(wall.sampleEntity(entity('wall',{hp:0,underConstruction:true})),false,'fortification death remains held without eligible completed topology');
++}));
++test('construction fixed ticks respect default/true loops and explicit false holds last frame without completion',()=>fortRun(async()=>{
++ const e=entity('fort',{underConstruction:true});
++ for(const loop of [undefined,true,false]){const descriptor=asset('fort','construction');if(loop===undefined)delete descriptor.loop;else descriptor.loop=loop;const r=await raster([descriptor]);const a=r.sampleEntity(e,{tick:7,timeMs:0}),b=r.sampleEntity({...e,construction:{remaining:999,total:1000}},{tick:7,timeMs:9000});assert.equal(a.elapsed,350);assert.equal(a.sample.frame,b.sample.frame);assert.equal(a.sample.frame,loop===false?1:0);assert.equal(a.visualState,'construction');assert.equal(r.sampleEntity(e,{tick:8}).sample.frame,1);assert.equal(r.sampleEntity(e,{tick:900}).visualState,'construction','sequence end does not imply completion');}
++}));
++test('unfinished fortifications use only standalone mask0 and never completed neighbor links',()=>fortRun(async()=>{
++ for(const type of ['wall','gate']){const e=entity(type,{underConstruction:true}),neighbor=entity('wall',{id:56,x:11.5});const context=buildFortificationTopology([e,neighbor]);assert.equal(context.has(e.id),false);assert.equal(context.get(neighbor.id).mask,0);const all=[asset(type,'construction',0),asset(type,'construction',1),asset(type,'idle',1)];assert.equal(selectFortificationArt(all,e,context,'construction').asset.fortification.mask,0);assert.equal(selectFortificationArt(all.slice(1),e,context,'construction').asset,null);assert.equal(selectFortificationArt(all,e,context,'idle').asset,null);assert.equal(selectFortificationArt(all,entity(type),context,'construction').asset,null);}
++}));
++test('ordinary build view supplies owner and redacted enemy construction eligibility; fog omits site',()=>fortRun(async()=>{
++ const s=createMatch(),observer=s.entities.find(e=>e.owner===0&&e.type==='villager'),builder=s.entities.find(e=>e.owner===1&&e.type==='villager');s.entities=[observer,builder];s.aiPlayer=null;s.map.tiles.fill('plain');s.map.resources=[];s.navVersion++;s.crowdIndex=null;observer.x=12.5;observer.y=10.5;builder.x=14.5;builder.y=11.5;view(s,1);const result=command(s,1,{type:'build',ids:[builder.id],building:'wall',x:14,y:13});assert.equal(result.ok,true,result.error);const own=view(s,1).entities.find(e=>e.id===result.entity),enemy=view(s,0).entities.find(e=>e.id===result.entity);assert.ok(own.construction);assert.equal(enemy.construction,undefined);assert.equal(enemy.underConstruction,true);const r=await raster([asset('wall','construction')]);assert.equal(r.sampleEntity(own,{tick:s.tick}).visualState,'construction');assert.equal(r.sampleEntity(enemy,{tick:s.tick}).visualState,'construction');observer.x=45.5;observer.y=30.5;assert.equal(view(s,0).entities.some(e=>e.id===result.entity),false);
++}));

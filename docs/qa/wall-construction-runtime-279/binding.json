@@ -1,0 +1,39 @@
+{
+  "status": "ROOT_GO_278_STATIC_CONSTRUCTION_TRIAL",
+  "rootAuthorized": true,
+  "stage": "/tmp/rds-wall-construction279-stage",
+  "build": "/tmp/rds-wall-construction279-build",
+  "canonicalSourceHEAD": "6c5b4885608a402b652d84be347ac88fccf9bfc9",
+  "baseManifestSHA256": "2600c650eb4a87b848dfac2f073a87f94d25296800434d32fc7c8b557fc855d0",
+  "expectedDescriptors": 47,
+  "baseDescriptors": 46,
+  "api276PatchSHA256": "c74cbc64faa6e9cdc6d6843c28adc8ac9001c3e5a622d8ea80c64985c1957ce4",
+  "api276FilesSHA256": {
+    "client/raster-slice.js": "95ee7060372d39138708202ee865869d9200b8f67a2fc71274834871d9b38f6e",
+    "client/fortification-art.js": "d37d5a75fb2b4e2929c7338b1574709d8fb0fcdc9232e9020dad32292e768695",
+    "client/sprite-timing.js": "4dd177318d7e44e806672af3785b1ca2e3733c6798a47d3ec2f5965b6f1bef36",
+    "tests/building-state-api276.test.js": "c7c9872cb8132707bca1deb01d32e9e36250339cb32179b5da8218ccea5607c6"
+  },
+  "asset278": null,
+  "bundleSHA256": "bcf457f726555696e73ee476c801c1b0930e00f07f569155ba3c6a7aa98a36bf",
+  "candidateInventory": "sealed-source-inventory.json",
+  "buildInventory": "sealed-build-inventory.json",
+  "unresolvedExcluded": [
+    "T274",
+    "T275",
+    "T277"
+  ],
+  "requiredPublicScopeExclusions": [
+    "pending food recipe",
+    "099 manifest",
+    "099 atlas"
+  ],
+  "diagnosticDecision": "No new API: asset identity inferred from sealed deterministic selector + unique matching PNG, actual snapshots and screenshots; not direct instrumented measurement",
+  "runLimit": "ONE Chrome ordinary Delta campaign, zero retries",
+  "constructionAssetId": "wall-whole-construction-278-mask0",
+  "completedAssetId": "wall-whole-234-mask0",
+  "manifestSHA256": "2a9697d4ba7a4664404c8dd73fd4a4d7f7d5e96f8cc475f44b475aee25568c16",
+  "bundlePath": "assets/index-CeTSGUOz.js",
+  "oldChunksRetained": true,
+  "publicFoodExclusionsVerified": true
+}

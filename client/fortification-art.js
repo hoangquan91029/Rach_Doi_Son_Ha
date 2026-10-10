@@ -14,8 +14,11 @@ export function validateFortificationVariants(assets){
  const layout=JSON.stringify([a.source.width,a.source.height,a.cell.width,a.cell.height,a.pivot,a.render]);if(layouts.has(type)&&layouts.get(type)!==layout)throw Error('Fortification variants change fixed layout');layouts.set(type,layout);}
 }
 export function selectFortificationArt(assets,entity,context,state){
- if(!entity||entity.kind!=='building'||!['wall','gate'].includes(entity.type)||entity.hp<=0||entity.embarked||entity.construction||entity.underConstruction===true)return {asset:null,reason:'Incomplete or ineligible fortification'};
- const t=context?.get(entity.id);if(!t||!Number.isInteger(t.mask)||t.mask<0||t.mask>15||t.axis!==topologyForMask(t.mask).axis)return {asset:null,reason:'No exact visible topology context'};
+ if(!entity||entity.kind!=='building'||!['wall','gate'].includes(entity.type)||entity.hp<=0||entity.embarked)return {asset:null,reason:'Incomplete or ineligible fortification'};
+ const unfinished=Boolean(entity.construction||entity.underConstruction===true);
+ if(unfinished!==(state==='construction'))return {asset:null,reason:'Construction requires exact authored construction state'};
+ // Unfinished sites have no completed links: only standalone mask0 scaffolding.
+ const t=unfinished?topologyForMask(0):context?.get(entity.id);if(!t||!Number.isInteger(t.mask)||t.mask<0||t.mask>15||t.axis!==topologyForMask(t.mask).axis)return {asset:null,reason:'No exact visible topology context'};
  const matches=assets.filter(a=>a.kind==='building'&&[entity.type,`building.${entity.type}`].includes(a.family)&&a.state===state&&a.direction===null&&a.fortification?.mask===t.mask&&(a.fortification.axis===undefined||a.fortification.axis===t.axis));
  return matches.length===1?{asset:matches[0],reason:null}:{asset:null,reason:matches.length?'Ambiguous whole fortification variant':'No whole illustration for exact topology/state'};
 }

@@ -1,0 +1,42 @@
+{
+  "status": "LOCAL_INSTALL283_EXACT_T7_T11_APPEND49_STRUCTURAL_VERIFIED",
+  "assets": 49,
+  "changedFiles": {
+    "public/assets/art-v1/fort-202-manifest.json": "5b247f7c0fc34a4fc53b2f31a0ef3df1772f2483142a0f9e444d2b19926d8098",
+    "public/assets/art-v1/wall-t11-275/idle.png": "4be719a0405b51cbbb4fc8a603e45da1877ac0f2476b58592246370234caedf0",
+    "public/assets/art-v1/wall-t7-274/idle.png": "b744d2cd3bf0ea0b91a2c04c7ee15705baf2f23435e8655fae92eaebaca1344b"
+  },
+  "validator": {
+    "status": "PASS_STRUCTURAL_ONLY",
+    "runs": 1,
+    "assets": 49,
+    "validator": "client/art-assets.js validateManifest"
+  },
+  "acceptanceUnionBindings": {
+    "279": {
+      "receipt.json": "5530125295a30e267e088c6761bd99dcea5198c8def6a94c30daf1aebef2460b",
+      "root-intake.json": "636ef0f68fd8f905a2e4cb8a8b3e362bc3e762ffcd6122a673eea19734a0f539"
+    },
+    "277B": {
+      "receipt.json": "6858f6b848656960ff9bd0bfea3e843e6732053fc288686602002310a6ed61d9",
+      "root-intake.json": "f6df74a53c699d0ff1ddb60f5a1dc9ea5ad375d6d06e6e14de7a05be4333135e"
+    }
+  },
+  "prior281ReceiptSHA256": "54ef1cb9ab362bcb3fb71a4d6bf14ab0aad6af43e55e04f81e0f67de5d892890",
+  "testedTBuildManifestSHA256": "2fbc148864e9d4aa494ccbcdd889517253ae9588a95180886e59426f7988001c",
+  "preservation": {
+    "old47DescriptorsAndRenderFieldsExact": true,
+    "allOutsideAuthorizedFilesExact": true,
+    "api276ThreeClientFilesUntouched": true,
+    "pendingFoodUntouched": true,
+    "distPublic195Untouched": true
+  },
+  "limits": [
+    "Combined49 canonical not browser-verified;279 construction47 and277B T48 separately tested and narrowly root accepted",
+    "Construction is ONE static mask0 image, not animation/fullstates",
+    "T7/T11 living completedidle only; no fullWallGateclaim",
+    "No build/browser/publicpromotion/service restart/imagecall"
+  ],
+  "canonicalRuntimeInstalled": true,
+  "publicPromoted": false
+}

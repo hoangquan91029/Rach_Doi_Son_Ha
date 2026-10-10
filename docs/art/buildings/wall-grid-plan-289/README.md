@@ -1,0 +1,9 @@
+#289 next atomic task — plan only
+
+Selected whole T13/280, T14/282 and cross15/288 are returned closed and accepted for a brief source appearance only. They are NOT installed or public. No new image call is needed. Issue a new finite implementation GO only after inspecting current Git and live handles.
+
+Copy the current49 source to a literal isolated stage, append the three byte-exact whole PNG descriptors to reach52; preserve existing49, fixed1254/pivot627900→128/logical42.3225, no transform/fit/assembly. Use the actual source HEAD plus workingtree inventories, exact Vite config and absolute external outDir. Finish old-chunk retention, food-only PUBLIC exclusions, structural validation and source/build sealing before browser. Stop on any failed preflight.
+
+One ordinary Chrome Delta campaign: save initial exact living own visible builder via Ctrl+8. Find actual clear visible3x3 plain cells with resource/building/unit/footprint guards. Move only by ordinary UI if necessary, capture first actual assigned move before normal.7 arrival checks. Recheck each footprint and use ordinary staging moves when the builder occupies it. Build9 walls; require actual completed topology rows5/7/6,13/15/14,9/11/10. Use nearest-integer opaque clicks and passive input records with exact selected ID guards. Review joins once at default zoom, Pause/Resume, recall8 exact living builder before Stop, require idle/order-null and menu decoded0. Preserve failures and close owned handles/rooms. No state, direction, command or outcome injection, guard weakening or speed/balance changes.
+
+Before/after candidate and current public must remain exact. No production mutation in this task. Root actual scene intake precedes any local install; public promotion is a separate task with current paired rollback. Construction remains one static stage; mixed gates/hit/death/other building states and full goal remain unfinished.

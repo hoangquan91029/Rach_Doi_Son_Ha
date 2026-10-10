@@ -1,0 +1,33 @@
+✔ PUBLIC food-only route and two payload exclusions preserve canonical custody (1.350267ms)
+✔ both legal map bank scopes retain full roster/buildings/leaders for PUBLIC fort49 (3.262519ms)
+✖ art source49 keeps old46 and exact accepted static construction/T7/T11 payloads (1.665741ms)
+✔ changed API/art scene root acceptance binds same frozen49 build and returned bytes (0.591473ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 3
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 61.726254
+
+✖ failing tests:
+
+test at docs/qa/release-prepare-285/publication-contracts.mjs:5:1
+✖ art source49 keeps old46 and exact accepted static construction/T7/T11 payloads (1.665741ms)
+  Error: ENOENT: no such file or directory, open '/tmp/rds-wall-family284-stage/docs/art/buildings/wall-construction-idle-278/raw.png'
+      at Object.openSync (node:fs:561:18)
+      at readFileSync (node:fs:445:35)
+      at read (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/release-prepare-285/publication-contracts.mjs:2:138)
+      at hash (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/release-prepare-285/publication-contracts.mjs:2:218)
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/release-prepare-285/publication-contracts.mjs:5:359)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: '/tmp/rds-wall-family284-stage/docs/art/buildings/wall-construction-idle-278/raw.png'
+  }

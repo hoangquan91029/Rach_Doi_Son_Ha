@@ -1,0 +1,40 @@
+{
+  "scope": "isolated construction authored-selection API only",
+  "stage": "/tmp/rds-building-state276-stage",
+  "sourceHEAD": "6c5b4885608a402b652d84be347ac88fccf9bfc9",
+  "pins": {
+    "client/raster-slice.js": {
+      "beforeSHA256": "bdc7a5e662021d197db6e76c5d5ee3d62ba9db1cf2633cf1e6301631c5e47736",
+      "afterSHA256": "71da18b6fe249a665256674bf53f97684a04e9331971271755e87c87fcd7aa24"
+    },
+    "client/fortification-art.js": {
+      "beforeSHA256": "4716f84b0dbd355f540484c3fff98acfc48c6664021d3bac008563c3a2da56d1",
+      "afterSHA256": "d37d5a75fb2b4e2929c7338b1574709d8fb0fcdc9232e9020dad32292e768695"
+    },
+    "tests/building-state-api276.test.js": {
+      "beforeSHA256": null,
+      "afterSHA256": "d5097bc48f4d4e53e529e360dbd15ea02c7447c61fae6558f5c41155356fd8ef"
+    }
+  },
+  "patchSHA256": "85252d038ec81bdb7631a3c5e53abdb29dd15d2ee7ed3150cceec5385e7adbbd",
+  "tests": {
+    "command": "node --test tests/building-state-api276.test.js tests/construction-visibility217.test.js tests/fortification-art235.test.js",
+    "passed": 19,
+    "failed": 0,
+    "logSHA256": "2594d4ea2c3aecc28949331ac363c9d4012e5db474a4acd6a8225e98a58c5076"
+  },
+  "contract": [
+    "death before construction flag/job; live construction before hit/state",
+    "construction fixed tick*50 global ambient loop, never progress; forces looping even loop:false",
+    "wall/gate construction selects only exact authored mask0 without completed topology; unfinished excluded from completed neighbors",
+    "same sampleEntity API used by draw/picking; existing 235 shared-context regression passes",
+    "no simulation, private job serialization, route, topology calculation, art, public build or live change"
+  ],
+  "limits": [
+    "No construction art present: production remains fallback until authored validated assets exist",
+    "Synthetic descriptors are contract fixtures only, not generated art/browser or visual acceptance",
+    "Fortification death still fallback because completed topology excludes dead buildings; death API/art unresolved",
+    "No build or actual browser trial performed"
+  ],
+  "constructionAssetsInCurrentManifest": 0
+}

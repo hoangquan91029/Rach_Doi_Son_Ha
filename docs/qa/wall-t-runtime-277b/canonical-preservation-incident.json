@@ -1,0 +1,10 @@
+{
+  "status": "HOLD_CANONICAL_PRESERVATION_KNOWN_ROOT_AUTHORIZED_CONCURRENT281",
+  "originalPostflightAssertion": "AssertionError: canonical at close-receipt.py line4; observed before receipt completion",
+  "rootConfirmedCause": "Root authorized281 then sent WAIT; install completed before WAIT arrival",
+  "canonicalDeltaReceipt": "preservation-after.json",
+  "noRestoreConcealOrReplay": true,
+  "isolatedStageBuildSealBeforeAfterExact": true,
+  "publicDistExact": true,
+  "actualUIFlowPassedSeparately": true
+}

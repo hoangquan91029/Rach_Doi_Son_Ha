@@ -1,0 +1,174 @@
+{
+  "status": "PASS277B_CHROME_T7_T11_LADDER_JOINS_EXACT_PICKS_PAUSE_RESUME_STOP_MENU",
+  "calls": 1,
+  "retries": 0,
+  "browser": "Chrome",
+  "frozenBeforeAfter": true,
+  "files": 197,
+  "descriptors": 48,
+  "masks": [
+    5,
+    7,
+    6,
+    9,
+    11,
+    10
+  ],
+  "picks": [
+    5,
+    7,
+    6,
+    9,
+    11,
+    10
+  ],
+  "portraits": 12,
+  "ready": 48,
+  "savedBuilderGroup": {
+    "id": 7,
+    "tick": 19,
+    "selection": [
+      7
+    ],
+    "key": "Ctrl+8"
+  },
+  "builderRecall": {
+    "key": "8",
+    "tick": 1630,
+    "selection": [
+      7
+    ],
+    "actor": {
+      "id": 7,
+      "owner": 0,
+      "type": "villager",
+      "kind": "unit",
+      "x": 13.158906094960305,
+      "y": 19.5,
+      "hp": 65,
+      "maxHp": 65,
+      "food": 30.09711999999776,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "idle",
+      "dir": 0,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "resuppliedTick": 135,
+      "starving": 0,
+      "lastMovedTick": 1392,
+      "order": null
+    }
+  },
+  "stop": {
+    "id": 7,
+    "owner": 0,
+    "type": "villager",
+    "kind": "unit",
+    "x": 13.158906094960305,
+    "y": 19.5,
+    "hp": 65,
+    "maxHp": 65,
+    "food": 30.063999999997765,
+    "foodMax": 40,
+    "morale": 95,
+    "state": "idle",
+    "dir": 0,
+    "cooldown": 0,
+    "queue": [],
+    "cargo": {
+      "food": 0,
+      "wood": 0,
+      "iron": 0,
+      "units": []
+    },
+    "resuppliedTick": 135,
+    "starving": 0,
+    "lastMovedTick": 1392,
+    "order": null
+  },
+  "pausedTick": 1626,
+  "resumedTick": 1628,
+  "menu": {
+    "bank": {
+      "phase": "menu",
+      "epoch": 3,
+      "encodedBytes": 4058962,
+      "encodedBudgetBytes": 67108864,
+      "activeIds": [],
+      "scope": null
+    },
+    "art": {
+      "status": "PLACEHOLDER_ONLY",
+      "manifest": "not-loaded",
+      "declared": 0,
+      "ready": 0,
+      "approved": 0,
+      "candidates": 0,
+      "failed": 0,
+      "skipped": 0,
+      "fallbacks": 0,
+      "decodedBudgetBytes": 134217728,
+      "retainedDecodedBytes": 0,
+      "reservedDecodedBytes": 0,
+      "uniqueDecodedImages": 0,
+      "encodedReady": 0,
+      "retainedEncodedBytes": 0,
+      "encodedBudgetBytes": 67108864,
+      "selectedDeclared": 0,
+      "failures": []
+    }
+  },
+  "cleanup": {
+    "rooms": 0,
+    "serverListening": false,
+    "browserClosed": true
+  },
+  "errors": [],
+  "requestFailures": [],
+  "httpFailures": [],
+  "actualResponseCount": 54,
+  "actualResponsePinsVerified": true,
+  "noRebuild": true,
+  "noStageBuildMutations": true,
+  "publicDistPreserved": true,
+  "canonicalPreserved": false,
+  "canonicalDelta": {
+    "client": {
+      "sprite-timing.js": {
+        "before": "d567ca4060bd9a0689ed9aae1ba00b6a776c8699c2c0c2b168b09ef951a6aad9",
+        "after": "4dd177318d7e44e806672af3785b1ca2e3733c6798a47d3ec2f5965b6f1bef36"
+      },
+      "raster-slice.js": {
+        "before": "bdc7a5e662021d197db6e76c5d5ee3d62ba9db1cf2633cf1e6301631c5e47736",
+        "after": "95ee7060372d39138708202ee865869d9200b8f67a2fc71274834871d9b38f6e"
+      },
+      "fortification-art.js": {
+        "before": "4716f84b0dbd355f540484c3fff98acfc48c6664021d3bac008563c3a2da56d1",
+        "after": "d37d5a75fb2b4e2929c7338b1574709d8fb0fcdc9232e9020dad32292e768695"
+      }
+    },
+    "shared": {},
+    "server": {},
+    "public": {
+      "assets/art-v1/fort-202-manifest.json": {
+        "before": "2600c650eb4a87b848dfac2f073a87f94d25296800434d32fc7c8b557fc855d0",
+        "after": "2a9697d4ba7a4664404c8dd73fd4a4d7f7d5e96f8cc475f44b475aee25568c16"
+      },
+      "assets/art-v1/wall-construction-278/runtime.png": {
+        "before": null,
+        "after": "4afd6d3a4c41ee31dfbdcf723b2526a20f8f6cffac8bbf80a0e21d894c571805"
+      }
+    }
+  },
+  "rootVisualIntakePending": true,
+  "runtimeInstalled": false,
+  "publicPromoted": false,
+  "historical277Held": true
+}

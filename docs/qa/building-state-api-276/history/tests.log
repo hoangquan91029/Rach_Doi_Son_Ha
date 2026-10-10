@@ -1,0 +1,27 @@
+✔ all existing building families select construction for public boolean and private job, with hit suppressed (3.049079ms)
+✔ missing construction never substitutes idle; completed never selects construction; death precedes site flag (0.436618ms)
+✔ construction clock follows fixed ticks and loops, independent of timeMs and private progress (0.239168ms)
+✔ unfinished fortifications use only standalone mask0 and never completed neighbor links (0.38987ms)
+✔ ordinary build view supplies owner and redacted enemy construction eligibility; fog omits site (7.722364ms)
+✔ visible enemy construction has a visual flag without private job, queue, cargo or orders (10.634419ms)
+✔ owner retains actual construction progress and builder alongside same visual flag (2.978813ms)
+✔ hidden enemy site is omitted entirely, even when previously seen (1.69813ms)
+✔ ordinary construction completion clears visual flag; damage never means under construction (25.065024ms)
+✔ visual flag adds no construction semantics to units (1.036645ms)
+✔ authored completed building art is withheld for enemy construction flag, with idle retained after completion (2.044338ms)
+✔ whole metadata requires exact bounded mask/null direction/building family (2.264298ms)
+✔ gate axis derives from real mask and rejects mismatched declaration (0.265027ms)
+✔ all16 masks select only exact whole source; corner has no straight substitution (0.91269ms)
+✔ owner and visible-only neighbor context drive selection; hidden neighbor not included (0.168169ms)
+✔ unknown context/unfinished/hit/death preserve bounded fallback (0.238248ms)
+✔ duplicate/alias ambiguous wholevariants and changing fixed layout reject (0.503792ms)
+✔ legacymanifest and assets without metadata retain contract (0.793758ms)
+✔ real raster sample chooses exact whole variant only on fort; draw and alpha picking receive same context (1.615372ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 19
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 98.448517

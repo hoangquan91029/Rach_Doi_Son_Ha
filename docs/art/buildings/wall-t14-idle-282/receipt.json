@@ -1,0 +1,64 @@
+{
+  "status": "CANDIDATE_WHOLE_T14_RETURNED_ROOT_PENDING",
+  "calls": 1,
+  "retries": 0,
+  "callState": "returned_closed",
+  "source": {
+    "path": "raw.png",
+    "sha256": "2d1231105ba2230abc1175c5cb8bd8c0a038eef0e84cb434ea3e17317e31788e",
+    "rgbaSha256": "475e523eedc5e0d31a86a7ee42659ab5dea1a80ca49d3cf97cb912550b9baddc",
+    "width": 1254,
+    "height": 1254
+  },
+  "runtime": {
+    "path": "runtime.png",
+    "sha256": "833944e0e26ef6c20117d1eab468dc985c847336da85dbd8eb3869f1a9fd00e6",
+    "rgbaSha256": "7e969a91ba42cc1a9edbd2f1cbbd466334945c9683d0c695a92ef026cea1b1a7",
+    "width": 128,
+    "height": 128
+  },
+  "working": {
+    "path": "working.png",
+    "sha256": "4933bc62d8562ef275e5f1e48f7c231f4ff81b945019904cafe79f0b1cba88f5",
+    "rgbaSha256": "baa99d42259f054d79f62ecd99c005adc2a3294f8dd74c22f88bdbe905855ebb",
+    "width": 256,
+    "height": 256
+  },
+  "preview": {
+    "path": "preview42.png",
+    "sha256": "b2bf8562b6023b667ad615342d0bcef5f03ade70cb0e93cd0a484700c6f24c56",
+    "rgbaSha256": "999821845148cc1de1c678c3d4aabdbfffb87ed8cbbef3cdf5e06529c5ced9ac",
+    "width": 42,
+    "height": 42
+  },
+  "alphaExtrema": [
+    0,
+    255
+  ],
+  "fixedLayout": {
+    "source": [
+      1254,
+      1254
+    ],
+    "pivot": [
+      627,
+      900
+    ],
+    "cell": [
+      128,
+      128
+    ],
+    "logicalRender": 42.3225,
+    "fit": false,
+    "shift": false,
+    "mirror": false
+  },
+  "briefActual42Look": "Three connected timber wings visible: continuous lower-left to upper-right wall plus upper-left branch, no lower-right fourth wing. Timber/rails/stonefeet readable. Returned extent is closer to guide than275/280 but modest expansion and centralfoot placement still need actual alignment review.",
+  "fortification": {
+    "mask": 14
+  },
+  "runtimeInstalled": false,
+  "publicPromoted": false,
+  "networkAPIcalls": 0,
+  "next": "Root42px appearance intake and separate finite actual joins/alpha-picking trial before installation. No retry under this order."
+}

@@ -1,0 +1,61 @@
+{
+  "id": "wall-whole-288-mask15",
+  "family": "building.wall",
+  "kind": "building",
+  "state": "idle",
+  "direction": null,
+  "candidate": true,
+  "review": {
+    "status": "CANDIDATE"
+  },
+  "source": {
+    "path": "raw.png",
+    "sha256": "5cd56f75c0521fa2dc4b5e99db7420410d61fe12cb5151e3e872289e028bc1af",
+    "rgbaSha256": "b3ce3c14af98a794ed481c12f8962f415373b5a5b907684fabb4130f2d1ebaf3",
+    "width": 1254,
+    "height": 1254
+  },
+  "runtime": {
+    "path": "runtime.png",
+    "sha256": "a522781ca99d618f6f8860ea57eee918678e8b2a43c1c9b8f2ac47f8084bafbd",
+    "rgbaSha256": "f348142fda99dbce089ad3f53e88e876fe4752f2f4e4fbbc8cc75d34e0de4ff3",
+    "width": 128,
+    "height": 128,
+    "derivation": {
+      "method": "resize",
+      "filter": "lanczos",
+      "sourceSha256": "5cd56f75c0521fa2dc4b5e99db7420410d61fe12cb5151e3e872289e028bc1af"
+    }
+  },
+  "cell": {
+    "width": 128,
+    "height": 128
+  },
+  "pivot": {
+    "x": 627,
+    "y": 900,
+    "space": "source"
+  },
+  "render": {
+    "width": 42.3225,
+    "height": 42.3225
+  },
+  "alphaPolicy": "transparent",
+  "contactShadow": {
+    "mode": "baked"
+  },
+  "frames": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 1000
+    }
+  ],
+  "loop": true,
+  "fortification": {
+    "mask": 15
+  },
+  "notes": "Whole fourbranch cross15 candidate. No wallaxis. Root appearance and actual joins/picking pending."
+}

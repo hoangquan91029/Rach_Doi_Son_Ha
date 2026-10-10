@@ -1,0 +1,61 @@
+{
+  "id": "wall-whole-280-mask13",
+  "family": "building.wall",
+  "kind": "building",
+  "state": "idle",
+  "direction": null,
+  "candidate": true,
+  "review": {
+    "status": "CANDIDATE"
+  },
+  "source": {
+    "path": "raw.png",
+    "sha256": "8a8b5a74dae1f4cf37f329aa87c4433ac85a17f03415a24e6f674f0bc5fb84df",
+    "rgbaSha256": "d70a80f84369b0bf4335561cad81b709ca212c1a5c59eb3c4b5ef2cca7667388",
+    "width": 1254,
+    "height": 1254
+  },
+  "runtime": {
+    "path": "runtime.png",
+    "sha256": "3bf44c6ce79a9c0a42bf32bcbedee86605e866e8ac6ae020f7399d28085c6f2f",
+    "rgbaSha256": "89a5b44730a3cd3229d447443cb5a6a8d3b3e6be8dc4ec69590dfce7e6c49ab2",
+    "width": 128,
+    "height": 128,
+    "derivation": {
+      "method": "resize",
+      "filter": "lanczos",
+      "sourceSha256": "8a8b5a74dae1f4cf37f329aa87c4433ac85a17f03415a24e6f674f0bc5fb84df"
+    }
+  },
+  "cell": {
+    "width": 128,
+    "height": 128
+  },
+  "pivot": {
+    "x": 627,
+    "y": 900,
+    "space": "source"
+  },
+  "render": {
+    "width": 42.3225,
+    "height": 42.3225
+  },
+  "alphaPolicy": "transparent",
+  "contactShadow": {
+    "mode": "baked"
+  },
+  "frames": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 1000
+    }
+  ],
+  "loop": true,
+  "fortification": {
+    "mask": 13
+  },
+  "notes": "Whole +X/+Y/-Y T13 candidate. No wallaxis. Three branches readable; returned extent expanded despite prompt. Actual joins/picking/root acceptance pending."
+}

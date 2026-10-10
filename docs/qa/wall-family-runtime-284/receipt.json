@@ -1,0 +1,194 @@
+{
+  "status": "PASS284_FIREFOX_COMBINED49_T7_T11_LADDER_JOINS_EXACT_PICKS_PAUSE_RESUME_STOP_MENU",
+  "campaigns": 1,
+  "retries": 0,
+  "sourceHEAD": "6c5b4885608a402b652d84be347ac88fccf9bfc9",
+  "sourceScope": "exact frozen workingtree including intentional281/283 local runtime changes; not cleancommit source",
+  "manifestDescriptors": 49,
+  "bundleSHA256": "bcf457f726555696e73ee476c801c1b0930e00f07f569155ba3c6a7aa98a36bf",
+  "firstConstruction": {
+    "id": 38,
+    "freezeTick": 268,
+    "unfinishedPick": [
+      38
+    ],
+    "completedStandaloneMask": 0
+  },
+  "topology": [
+    {
+      "id": 38,
+      "mask": 5,
+      "axis": "X",
+      "topology": "corner",
+      "count": 2
+    },
+    {
+      "id": 44,
+      "mask": 7,
+      "axis": "X",
+      "topology": "T",
+      "count": 3
+    },
+    {
+      "id": 51,
+      "mask": 6,
+      "axis": "X",
+      "topology": "corner",
+      "count": 2
+    },
+    {
+      "id": 53,
+      "mask": 9,
+      "axis": "X",
+      "topology": "corner",
+      "count": 2
+    },
+    {
+      "id": 54,
+      "mask": 11,
+      "axis": "X",
+      "topology": "T",
+      "count": 3
+    },
+    {
+      "id": 55,
+      "mask": 10,
+      "axis": "X",
+      "topology": "corner",
+      "count": 2
+    }
+  ],
+  "picks": [
+    {
+      "id": 38,
+      "mask": 5,
+      "selection": [
+        38
+      ],
+      "point": {
+        "x": 631.2057142857143,
+        "y": 389.8171428571429
+      },
+      "tick": 1479
+    },
+    {
+      "id": 44,
+      "mask": 7,
+      "selection": [
+        44
+      ],
+      "point": {
+        "x": 639.6297142857143,
+        "y": 394.02914285714286
+      },
+      "tick": 1498
+    },
+    {
+      "id": 51,
+      "mask": 6,
+      "selection": [
+        51
+      ],
+      "point": {
+        "x": 637.6857142857143,
+        "y": 393.0571428571429
+      },
+      "tick": 1516
+    },
+    {
+      "id": 53,
+      "mask": 9,
+      "selection": [
+        53
+      ],
+      "point": {
+        "x": 639.5371428571428,
+        "y": 385.6514285714286
+      },
+      "tick": 1534
+    },
+    {
+      "id": 54,
+      "mask": 11,
+      "selection": [
+        54
+      ],
+      "point": {
+        "x": 647.9611428571429,
+        "y": 389.8634285714286
+      },
+      "tick": 1555
+    },
+    {
+      "id": 55,
+      "mask": 10,
+      "selection": [
+        55
+      ],
+      "point": {
+        "x": 641.6971428571429,
+        "y": 388.89142857142855
+      },
+      "tick": 1572
+    }
+  ],
+  "builderRecall": {
+    "key": "8",
+    "tick": 1584,
+    "selection": [
+      7
+    ],
+    "actor": {
+      "id": 7,
+      "owner": 0,
+      "type": "villager",
+      "kind": "unit",
+      "x": 13.158906094960305,
+      "y": 19.5,
+      "hp": 65,
+      "maxHp": 65,
+      "food": 30.3753279999977,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "idle",
+      "dir": 0,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "resuppliedTick": 131,
+      "starving": 0,
+      "lastMovedTick": 1329,
+      "order": null
+    }
+  },
+  "stop": {
+    "state": "idle",
+    "order": null
+  },
+  "ready": 49,
+  "portraits": 12,
+  "menuDecodedBytes": 0,
+  "errors": [],
+  "networkFailures": [],
+  "httpFailures": [],
+  "actualResponsesExactSealedBuild": true,
+  "sourceBuildUnchangedAfter": true,
+  "canonicalWorkingtreeRuntimePublicDistUnchangedAfter": true,
+  "cleanup": {
+    "rooms": 0,
+    "serverListening": false,
+    "browserClosed": true
+  },
+  "clip": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/wall-family-runtime-284/clips/page@bf9961043ab3702959e0572b84dab4f9.webm",
+  "limits": [
+    "Static construction stage only; no animation/privateprogress/fullbuildingstate/finalWallGate/defaultart/fullmatch acceptance",
+    "Perentityasset identity inferred from sealed deterministic selector; actual matching PNG/manifest/JS responses verified",
+    "Initial zero-sideeffect prep Python parse failure preserved; ONE actual campaign/no retry"
+  ],
+  "publicPromoted": false
+}

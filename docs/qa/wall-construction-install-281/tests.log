@@ -1,0 +1,31 @@
+✔ all existing building families select construction for public boolean and private job, with hit suppressed (3.283378ms)
+✔ missing construction never substitutes idle; completed never selects construction; death precedes site flag (0.435548ms)
+✔ construction fixed ticks respect default/true loops and explicit false holds last frame without completion (0.410331ms)
+✔ unfinished fortifications use only standalone mask0 and never completed neighbor links (0.467665ms)
+✔ ordinary build view supplies owner and redacted enemy construction eligibility; fog omits site (7.144409ms)
+✔ visible enemy construction has a visual flag without private job, queue, cargo or orders (6.846522ms)
+✔ owner retains actual construction progress and builder alongside same visual flag (2.978334ms)
+✔ hidden enemy site is omitted entirely, even when previously seen (2.334868ms)
+✔ ordinary construction completion clears visual flag; damage never means under construction (22.58542ms)
+✔ visual flag adds no construction semantics to units (1.172586ms)
+✔ authored completed building art is withheld for enemy construction flag, with idle retained after completion (1.739802ms)
+✔ whole metadata requires exact bounded mask/null direction/building family (2.706618ms)
+✔ gate axis derives from real mask and rejects mismatched declaration (0.278878ms)
+✔ all16 masks select only exact whole source; corner has no straight substitution (0.996986ms)
+✔ owner and visible-only neighbor context drive selection; hidden neighbor not included (0.190432ms)
+✔ unknown context/unfinished/hit/death preserve bounded fallback (0.239857ms)
+✔ duplicate/alias ambiguous wholevariants and changing fixed layout reject (0.610716ms)
+✔ legacymanifest and assets without metadata retain contract (0.852672ms)
+✔ real raster sample chooses exact whole variant only on fort; draw and alpha picking receive same context (2.086664ms)
+✔ South walk keeps its unequal holds, switches support at 300ms and loops at 600ms (1.125826ms)
+✔ presentation sampling gives the same pose at shared times across 30,60,120Hz (0.471807ms)
+✔ nonlooping death holds the last pose after completion; markers are detached data (0.167955ms)
+✔ event markers reject out-of-frame timing, invalid names and oversized lists (1.133001ms)
+ℹ tests 23
+ℹ suites 0
+ℹ pass 23
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 90.423993

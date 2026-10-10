@@ -1,0 +1,61 @@
+{
+  "id": "wall-whole-274-mask7",
+  "family": "building.wall",
+  "kind": "building",
+  "state": "idle",
+  "direction": null,
+  "candidate": true,
+  "review": {
+    "status": "CANDIDATE"
+  },
+  "source": {
+    "path": "raw.png",
+    "sha256": "d285e0f21456395b10e55ca4bf2e5744b209af021e9bc3172422b9c1a6749118",
+    "rgbaSha256": "28164bda96035775ccc52148833d4804939fc51cff44cd5e29c311dd937bc0e8",
+    "width": 1254,
+    "height": 1254
+  },
+  "runtime": {
+    "path": "runtime.png",
+    "sha256": "b744d2cd3bf0ea0b91a2c04c7ee15705baf2f23435e8655fae92eaebaca1344b",
+    "rgbaSha256": "b3c05a308224a3f4d46d64dc33183ea76df921443679add2883bdad57c473858",
+    "width": 128,
+    "height": 128,
+    "derivation": {
+      "method": "resize",
+      "filter": "lanczos",
+      "sourceSha256": "d285e0f21456395b10e55ca4bf2e5744b209af021e9bc3172422b9c1a6749118"
+    }
+  },
+  "cell": {
+    "width": 128,
+    "height": 128
+  },
+  "pivot": {
+    "x": 627,
+    "y": 900,
+    "space": "source"
+  },
+  "render": {
+    "width": 42.3225,
+    "height": 42.3225
+  },
+  "alphaPolicy": "transparent",
+  "contactShadow": {
+    "mode": "baked"
+  },
+  "frames": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 1000
+    }
+  ],
+  "loop": true,
+  "fortification": {
+    "mask": 7
+  },
+  "notes": "Whole +X/-X/+Y T junction candidate; mask only, no wallaxis. Living completed idle only. Actual joins and alpha picking unverified."
+}

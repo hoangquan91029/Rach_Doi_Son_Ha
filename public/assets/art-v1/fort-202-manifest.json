@@ -3922,6 +3922,189 @@
         "mask": 10
       },
       "notes": "Whole -X/-Y corner candidate only; living completed idle; root intake and actual joins/picking pending."
+    },
+    {
+      "id": "wall-whole-construction-278-mask0",
+      "family": "building.wall",
+      "kind": "building",
+      "state": "construction",
+      "direction": null,
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "source": {
+        "path": "docs/art/buildings/wall-construction-idle-278/raw.png",
+        "sha256": "8076d8ad46925e9569441f2e021caede18050eab9be38489024e474104706b12",
+        "rgbaSha256": "f00136e71e776b5b0193418b1513137e9bd5998571e31d7901dd75f744412850",
+        "width": 1254,
+        "height": 1254
+      },
+      "runtime": {
+        "path": "wall-construction-278/runtime.png",
+        "sha256": "4afd6d3a4c41ee31dfbdcf723b2526a20f8f6cffac8bbf80a0e21d894c571805",
+        "rgbaSha256": "04a9874cf160cc7bb4ae6e572359876678241d8f215291f2cd04f8325efd7b43",
+        "width": 128,
+        "height": 128,
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "8076d8ad46925e9569441f2e021caede18050eab9be38489024e474104706b12"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 900,
+        "space": "source"
+      },
+      "render": {
+        "width": 42.3225,
+        "height": 42.3225
+      },
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 1000
+        }
+      ],
+      "loop": true,
+      "fortification": {
+        "mask": 0
+      },
+      "notes": "ONE static unfinished standalone construction-stage candidate. Not complete construction animation, no private progress or completed neighbor links. Actual transition/picking unverified."
+    },
+    {
+      "id": "wall-whole-274-mask7",
+      "family": "building.wall",
+      "kind": "building",
+      "state": "idle",
+      "direction": null,
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "source": {
+        "path": "docs/art/buildings/wall-t7-idle-274/raw.png",
+        "sha256": "d285e0f21456395b10e55ca4bf2e5744b209af021e9bc3172422b9c1a6749118",
+        "rgbaSha256": "28164bda96035775ccc52148833d4804939fc51cff44cd5e29c311dd937bc0e8",
+        "width": 1254,
+        "height": 1254
+      },
+      "runtime": {
+        "path": "wall-t7-274/idle.png",
+        "sha256": "b744d2cd3bf0ea0b91a2c04c7ee15705baf2f23435e8655fae92eaebaca1344b",
+        "rgbaSha256": "b3c05a308224a3f4d46d64dc33183ea76df921443679add2883bdad57c473858",
+        "width": 128,
+        "height": 128,
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "d285e0f21456395b10e55ca4bf2e5744b209af021e9bc3172422b9c1a6749118"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 900,
+        "space": "source"
+      },
+      "render": {
+        "width": 42.3225,
+        "height": 42.3225
+      },
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 1000
+        }
+      ],
+      "loop": true,
+      "fortification": {
+        "mask": 7
+      },
+      "notes": "Whole +X/-X/+Y T junction candidate; mask only, no wallaxis. Living completed idle only. Actual joins and alpha picking unverified."
+    },
+    {
+      "id": "wall-whole-275-mask11",
+      "family": "building.wall",
+      "kind": "building",
+      "state": "idle",
+      "direction": null,
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "source": {
+        "path": "docs/art/buildings/wall-t11-idle-275/raw.png",
+        "sha256": "7063ca876bf77c85eeeca91013f574cabf7939e485c37a4ab3779e43c330f011",
+        "rgbaSha256": "3ebbca550967e256e98a955389750ad82c1e682d6656eba99d2902c53cdcc241",
+        "width": 1254,
+        "height": 1254
+      },
+      "runtime": {
+        "path": "wall-t11-275/idle.png",
+        "sha256": "4be719a0405b51cbbb4fc8a603e45da1877ac0f2476b58592246370234caedf0",
+        "rgbaSha256": "8ceacad1009f6e2c82f965d2b4d9d3ad32572bc18971161b4b6e05980b12ef65",
+        "width": 128,
+        "height": 128,
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "7063ca876bf77c85eeeca91013f574cabf7939e485c37a4ab3779e43c330f011"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 900,
+        "space": "source"
+      },
+      "render": {
+        "width": 42.3225,
+        "height": 42.3225
+      },
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 1000
+        }
+      ],
+      "loop": true,
+      "fortification": {
+        "mask": 11
+      },
+      "notes": "Whole +X/-X/-Y T junction candidate. No wallaxis. Actual joins and alpha picking unverified; no visual acceptance."
     }
   ],
   "id": "fort-202",

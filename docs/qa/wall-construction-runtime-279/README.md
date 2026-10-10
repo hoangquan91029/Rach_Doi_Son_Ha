@@ -1,0 +1,13 @@
+#279 preparation only
+
+No candidate copy/build/browser/art call has been performed. Root278 appearance intake and explicit GO are required before dependent work. `planned-binding.json` binds current6c5b488 source, canonical46 manifest and corrected276 patch/three client files/test. The candidate adds exactly one root-accepted278 whole construction Wall mask0 descriptor and PNG to reach47; unresolved T274/275/277 are excluded.
+
+Finite actual trial: one ordinary Chrome offline Delta campaign. Check47 ready/declared,12 portraits, exact sealed JS. Choose a living own villager and visible plain standalone Wall target with resource/building/unit guards. If needed move by actual UI from prior idle/order-null; capture first actual walk/move order before ordinary .7 arrival checks. Recheck target footprint after arrival. Build once by UI; acquire actual living own unfinished wall. Pause immediately, confirm unchanged tick/site and screenshot authored whole construction. Resume via UI, clear selection and select its opaque point exactly while it remains unfinished; capture selected site. Await actual completion, check standalone completed topology mask0 and whole234 idle; select exact opaque point and screenshot. Stop actual living own builder, confirm idle/order-null; return menu, assert decoded retention0, errors/network/HTTP0 and owned room/handles cleanup.
+
+A static278 construction illustration proves state presentation only. It does not prove animated construction, private completion progress or all building states. Construction fixed ticks/privacy/mask0/death precedence follow276. No command/state/facing/outcome injection, weakened visibility/ownership/selection checks or live service mutation.
+
+Before browser: literal candidate copy, exact276 files, exact278 asset append; remove and verify public food exclusions and preserve old chunks; exact Vite config/path assertions; build from literal isolated cwd to absolute isolated outDir; check every sequential exit; seal candidate/build inventories and exact JS/assets/47 manifest. Do not change the sealed candidate during trial.
+
+Existing diagnostics reports snapshot/point/entityPoint. Root selected no new diagnostic API. Source+snapshot+manifest deterministically binds asset selection; report asset identity as inference, not direct renderer measurement. No diagnostic helper or source expansion.
+
+`browser.prepared.mjs` parses successfully but is unlaunched and deliberately requires absent `binding.json` with rootAuthorized true. The Pause modal prevents field picking; prepared order captures freeze first, then Resume and exact unfinished pick with a strict unfinished guard. Actual failure is retained without retry. Root may refine this before finite launch.

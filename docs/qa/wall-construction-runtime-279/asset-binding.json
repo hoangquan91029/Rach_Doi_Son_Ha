@@ -1,0 +1,75 @@
+{
+  "timing": "DERIVED_POST_TRIAL_FROM_PRELAUNCH_SEALED_SOURCE_BUILD_INVENTORIES; original binding.json unchanged",
+  "descriptor": {
+    "id": "wall-whole-construction-278-mask0",
+    "family": "building.wall",
+    "kind": "building",
+    "state": "construction",
+    "direction": null,
+    "candidate": true,
+    "review": {
+      "status": "CANDIDATE"
+    },
+    "source": {
+      "path": "docs/art/buildings/wall-construction-idle-278/raw.png",
+      "sha256": "8076d8ad46925e9569441f2e021caede18050eab9be38489024e474104706b12",
+      "rgbaSha256": "f00136e71e776b5b0193418b1513137e9bd5998571e31d7901dd75f744412850",
+      "width": 1254,
+      "height": 1254
+    },
+    "runtime": {
+      "path": "wall-construction-278/runtime.png",
+      "sha256": "4afd6d3a4c41ee31dfbdcf723b2526a20f8f6cffac8bbf80a0e21d894c571805",
+      "rgbaSha256": "04a9874cf160cc7bb4ae6e572359876678241d8f215291f2cd04f8325efd7b43",
+      "width": 128,
+      "height": 128,
+      "derivation": {
+        "method": "resize",
+        "filter": "lanczos",
+        "sourceSha256": "8076d8ad46925e9569441f2e021caede18050eab9be38489024e474104706b12"
+      }
+    },
+    "cell": {
+      "width": 128,
+      "height": 128
+    },
+    "pivot": {
+      "x": 627,
+      "y": 900,
+      "space": "source"
+    },
+    "render": {
+      "width": 42.3225,
+      "height": 42.3225
+    },
+    "alphaPolicy": "transparent",
+    "contactShadow": {
+      "mode": "baked"
+    },
+    "frames": [
+      {
+        "x": 0,
+        "y": 0,
+        "width": 128,
+        "height": 128,
+        "durationMs": 1000
+      }
+    ],
+    "loop": true,
+    "fortification": {
+      "mask": 0
+    },
+    "notes": "ONE static unfinished standalone construction-stage candidate. Not complete construction animation, no private progress or completed neighbor links. Actual transition/picking unverified."
+  },
+  "manifestSHA256": "2a9697d4ba7a4664404c8dd73fd4a4d7f7d5e96f8cc475f44b475aee25568c16",
+  "runtimeSHA256": "4afd6d3a4c41ee31dfbdcf723b2526a20f8f6cffac8bbf80a0e21d894c571805",
+  "sourceSHA256": "8076d8ad46925e9569441f2e021caede18050eab9be38489024e474104706b12",
+  "sourceInventorySHA256": "ec8bd4d81c6d911fd7c7227740ce339ee40038f198fb12721cd1f932a9193461",
+  "buildInventorySHA256": "c5171b8f84a2b4d6ae133bcaf8d9573c51b799f5cd84f0122378b4f2787acaa0",
+  "originalBindingSHA256": "30ca64839ac7121b538558a7d2e74a0dca4e5a16717719e6977a58cd7b650f5f",
+  "responseProof": {
+    "jsBundleSHA256": "bcf457f726555696e73ee476c801c1b0930e00f07f569155ba3c6a7aa98a36bf",
+    "constructionPNG": "not separately captured; exact on-disk sealed inventory +47ready only, not per-response hash proof",
+    "manifest": "not separately captured; sealed inventory exact, not per-response hash proof"
+  }
+}

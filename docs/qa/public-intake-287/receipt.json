@@ -1,0 +1,62 @@
+{
+  "status": "PASS287_NORMALTLS_PUBLIC286_CHROME_STATIC_CONSTRUCTION_FIREFOX_SETUP49",
+  "bindingSHA256": "64977dcf4fd14a9dcf93ae611ab674f3c9b70eee3ef455df6cb3ff40eb8a49a9",
+  "promotion286SHA256": "ec56fb3bd28af6161b467f846351e01254bad252d2a88599ad8ca9f6bc4333a3",
+  "campaigns": {
+    "chrome": 1,
+    "firefox": 1
+  },
+  "retries": 0,
+  "normalTLS": true,
+  "ignoreHTTPSErrors": false,
+  "chrome": {
+    "status": "PASS287_NORMALTLS_CHROME_STATIC_CONSTRUCTION_TO_IDLE_EXACT_PICKS_PAUSE_RESUME_STOP_MENU",
+    "buildingId": 37,
+    "frozenTick": 234,
+    "unfinishedPick": [
+      37
+    ],
+    "completedPick": [
+      37
+    ],
+    "completedMask": 0,
+    "stop": {
+      "state": "idle",
+      "order": null
+    },
+    "menuDecodedBytes": 0,
+    "errors": [],
+    "networkFailures": [],
+    "httpFailures": [],
+    "cleanup": {
+      "browserClosed": true,
+      "contextClosed": true
+    },
+    "clip": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/public-intake-287/clips/page@044e21b7a132898109829c3a4bb1a209.webm"
+  },
+  "firefox": {
+    "status": "PASS287_NORMALTLS_FIREFOX_EXPLICIT_SETUP49_MENU",
+    "ready": 49,
+    "portraits": 12,
+    "menuDecodedBytes": 0,
+    "errors": [],
+    "networkFailures": [],
+    "httpFailures": [],
+    "cleanup": {
+      "browserClosed": true,
+      "contextClosed": true
+    }
+  },
+  "actualRequiredResponsePinsExactBoth": true,
+  "healthAfter": {
+    "ok": true,
+    "rooms": 0
+  },
+  "backendMutations": 0,
+  "sourceMutations": 0,
+  "limits": [
+    "ONE static wall construction state; no construction animation/fullbuildingstate/finalWallGate/defaultart/fullmatch/WAN acceptance",
+    "Perentityasset identities inferred from deterministic source/manifests; actual network bytes independently hashed",
+    "Both exact picks proven by actual snapshots; construction/completed screenshots show distinct world assets but panels are unselected at capture, so screenshot alone does not prove selection. No repeat trial."
+  ]
+}

@@ -1,0 +1,7 @@
+# Builder reselection diagnosis277
+
+Actual failure selected own barracks4, while required own builder7 remained living, nonembarked, idle/order-null at13.1589,19.5. Delivered final world click was640.0900,400.0400. Stop and menu were never reached. Screenshot shows barracks selected.
+
+Likely obstruction: frontmost opaque artwork is checked before nearest ground fallback. Barracks depth34 exceeds builder depth32.6589. `selectionPoint` tries15 small offsets and returns the ground point if no offset hits the requested entity. Clicking this fallback can select the covering barracks. Exact alpha/event causality remains inference: no builder pre-click diagnostic point/hit trace was retained, and failure snapshot follows the30s timeout.
+
+For a separately authorized finite trial, use ordinary small selection drag around the visible builder projected ground center. Existing rectangle selection includes only owned living nonembarked units, excluding buildings. Before the drag, independently require fog visibility, viewport inclusion and exactly one eligible unit center in the bounds, with that unit the intended builder. Use integer viewport corners, >7px diagonal and trusted passive event receipt; require exact selection[builderId] before ordinary Stop. HOLD if no safe rectangle exists. This changes QA input only. No browser replay, build, gameplay edits or outcome injection occurred in this diagnosis.

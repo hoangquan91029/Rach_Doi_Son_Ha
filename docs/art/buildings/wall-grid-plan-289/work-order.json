@@ -1,0 +1,47 @@
+{
+  "status": "NEW_FINITE_PLAN_ONLY_UNCALLED",
+  "base": "canonical49/API276 after281/283; public286 if actual promotion accepted",
+  "assets": {
+    "T13": {
+      "folder": "wall-t13-idle-280",
+      "mask": 13,
+      "runtimeSHA256": "3bf44c6ce79a9c0a42bf32bcbedee86605e866e8ac6ae020f7399d28085c6f2f"
+    },
+    "T14": {
+      "folder": "wall-t14-idle-282",
+      "mask": 14,
+      "runtimeSHA256": "833944e0e26ef6c20117d1eab468dc985c847336da85dbd8eb3869f1a9fd00e6"
+    },
+    "Cross": {
+      "folder": "wall-cross-idle-288",
+      "mask": 15,
+      "runtimeSHA256": "a522781ca99d618f6f8860ea57eee918678e8b2a43c1c9b8f2ac47f8084bafbd"
+    }
+  },
+  "candidateDescriptors": 52,
+  "layout": {
+    "rowsExpectedMasks": [
+      [
+        5,
+        7,
+        6
+      ],
+      [
+        13,
+        15,
+        14
+      ],
+      [
+        9,
+        11,
+        10
+      ]
+    ],
+    "target": "Actual visible clear 3x3 cells chosen under terrain/resource/building/unit guards; no entity/map coordinate mutation or game-state injection"
+  },
+  "scope": "ONE new finite ordinary Chrome nine-wall scene, zero retries, actual joins/all9exactopaque picks/PauseResume/savedbuilderRecallStop/menu0; brief gameplay-size look before localinstallation",
+  "launchAuthorized": false,
+  "imageCalls": 0,
+  "browserCalls": 0,
+  "builds": 0
+}

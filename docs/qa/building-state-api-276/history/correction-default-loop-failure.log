@@ -1,0 +1,47 @@
+✔ all existing building families select construction for public boolean and private job, with hit suppressed (2.887652ms)
+✔ missing construction never substitutes idle; completed never selects construction; death precedes site flag (0.379178ms)
+✖ construction fixed ticks respect default/true loops and explicit false holds last frame without completion (0.808766ms)
+✔ unfinished fortifications use only standalone mask0 and never completed neighbor links (0.409638ms)
+✔ ordinary build view supplies owner and redacted enemy construction eligibility; fog omits site (6.646414ms)
+✔ visible enemy construction has a visual flag without private job, queue, cargo or orders (10.202135ms)
+✔ owner retains actual construction progress and builder alongside same visual flag (4.555105ms)
+✔ hidden enemy site is omitted entirely, even when previously seen (1.231613ms)
+✔ ordinary construction completion clears visual flag; damage never means under construction (21.506016ms)
+✔ visual flag adds no construction semantics to units (1.169129ms)
+✔ authored completed building art is withheld for enemy construction flag, with idle retained after completion (1.748662ms)
+✔ whole metadata requires exact bounded mask/null direction/building family (2.336982ms)
+✔ gate axis derives from real mask and rejects mismatched declaration (0.319893ms)
+✔ all16 masks select only exact whole source; corner has no straight substitution (1.017063ms)
+✔ owner and visible-only neighbor context drive selection; hidden neighbor not included (0.183499ms)
+✔ unknown context/unfinished/hit/death preserve bounded fallback (0.23819ms)
+✔ duplicate/alias ambiguous wholevariants and changing fixed layout reject (0.527587ms)
+✔ legacymanifest and assets without metadata retain contract (0.826864ms)
+✔ real raster sample chooses exact whole variant only on fort; draw and alpha picking receive same context (1.730954ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 18
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 97.237252
+
+✖ failing tests:
+
+test at ../../../../tmp/rds-building-state276-stage/tests/building-state-api276.test.js:21:1
+✖ construction fixed ticks respect default/true loops and explicit false holds last frame without completion (0.808766ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  1 !== 0
+  
+      at file:///tmp/rds-building-state276-stage/tests/building-state-api276.test.js:23:403
+      at async fortRun (file:///tmp/rds-building-state276-stage/tests/building-state-api276.test.js:13:103)
+      at async Test.run (node:internal/test_runner/test:1208:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
