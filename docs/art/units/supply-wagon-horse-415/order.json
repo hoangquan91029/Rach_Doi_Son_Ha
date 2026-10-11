@@ -1,0 +1,21 @@
+{
+  "status": "FINITE_ORDER_RECORDED_BEFORE_CALL",
+  "profile": "gpt-6.1-sol/low",
+  "callsAuthorized": 1,
+  "retriesAuthorized": 0,
+  "tool": "builtin image_gen",
+  "prompt": "Use case: identity-preserve. Edit target image 1: existing loaded supply wagon identity, its warm aged timber two-wheel cart, wooden spokes, sacks, rope and crates. Supporting image 2: horse anatomy, brown coat and realistic painted RTS material style REFERENCE ONLY, do not include its rider, saddle, armor or ornaments. Reillustrate the WHOLE horse and cart ensemble as one coherent whole 2D painted RTS sprite on genuine transparent alpha. Preserve the wagon cargo/material identity, add exactly ONE healthy compact brown pulling horse in front, toward lower-right, D0 world East / screen ESE. Horse is between the cart shafts; functional plain bridle, padded pulling collar and leather traces connect physically to the cart on both sides. Cart behind upper-left, horse head ahead lower-right; natural relative horse/cart scale, resting idle horse with correct four-leg grounded stance and all hooves visible. Raised 54x27 dimetric game camera, light upper-left, realistic painted depth and readable game silhouette. Compose the full ensemble within square 1254x1254 canvas with transparent margins around ALL horse ears/head/hooves/tail, cart wheels/cargo and shafts. Ground pivot normalized (654/1254,1140/1254), about (52.153%,90.909%) of canvas for the ensemble. Soft restrained baked ground shadow only, no ground plane or environment. One horse, one loaded cart; no rider, driver, second horse, flags, armor, scenery, text or watermark. Whole pure 2D, no 3D render, no geometric placeholder, no cutout, pasted pixels, part assembly, mirroring or warping. This is a new whole illustration preserving the cart identity, not a sprite sheet. Fixed D0 idle, no motion effects.",
+  "references": [
+    {
+      "path": "docs/art/units/supply-wagon-idle-398/raw.png",
+      "sha256": "9bcee91326bdbae820bcdfe9bf246f1afdf4ef41911365f90354bcf022e0e29b"
+    },
+    {
+      "path": "docs/art/units/sources/cavalry-neutral-se-imagegen-raw.png",
+      "sha256": "552c4fcdf8ce6bdb802c6faae1bc139416393d53cb30caa95a1d22309b77b091"
+    }
+  ],
+  "head": "7994fb044b7811d12bb498627c7d28cce8fa2fe7",
+  "scope": "whole horse-cart D0 idle static candidate only",
+  "install": false
+}

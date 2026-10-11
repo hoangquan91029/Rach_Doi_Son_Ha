@@ -1,0 +1,29 @@
+{
+  "order": 412,
+  "status": "HOLD412_ARTILLERY_PICK_OVERLAPPED_WORKSHOP",
+  "ready": 50,
+  "portraits": 12,
+  "build206Sealed": true,
+  "unchangedJS352a": true,
+  "actualProof": [
+    "ordinary firearm queue/spawn/selection/staticMove/PauseResume/arrival/Stop",
+    "ordinary villager workshopconstruction/idle/artilleryqueue/spawn"
+  ],
+  "notProven": [
+    "artillerysingleworldselection/movement",
+    "menu cleanup"
+  ],
+  "failure": "Error: Actual UI/state timeout\n    at wait (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/firepower-runtime-412/browser.mjs:8:294)\n    at async select (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/firepower-runtime-412/browser.mjs:13:350)\n    at async file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/firepower-runtime-412/browser.mjs:21:39",
+  "actualSelection": [
+    35
+  ],
+  "wantedArtilleryId": 52,
+  "selectedWorkshopId": 35,
+  "errors": [],
+  "requestFailures": [],
+  "httpErrors": [],
+  "canonicalPublicBackendHEADPolicyPreserved": true,
+  "sourceBuildUnchanged": true,
+  "handles": "CLOSED",
+  "retry": false
+}

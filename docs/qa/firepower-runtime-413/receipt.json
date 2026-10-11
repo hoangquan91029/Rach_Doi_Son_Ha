@@ -1,0 +1,37 @@
+{
+  "order": 413,
+  "status": "HOLD413_GLOBAL_LAST_DRAW_GUARD_AFTER_SUCCESSFUL_ARTILLERY_PICK",
+  "ready": 50,
+  "portraits": 12,
+  "actualProof": [
+    "exactlivingownF2militarycohort",
+    "ordinarygroupMove assignedartilleryorder/statewalk",
+    "naturalartilleryarrival/orderclear/groupStop",
+    "exactsingleworldartillerypick afterclearance"
+  ],
+  "failure": "Error: Actual UI/state timeout\n    at wait (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/firepower-runtime-413/browser.mjs:8:294)\n    at async file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/firepower-runtime-413/browser.mjs:24:839",
+  "selectedArtilleryId": 52,
+  "actualSelection": [
+    52
+  ],
+  "lastStaticDiagnostic": {
+    "entityId": 16,
+    "assetId": "spearman-idle-d0-400",
+    "requestedState": "idle",
+    "requestedDirection": 5,
+    "illustrationDirection": 0,
+    "presentation": "STATIC_ILLUSTRATION"
+  },
+  "cause": "Global art.lastStaticIllustration records last drawn actor, here spearman16; guard requiring cannon52 as global last draw timedout. Selected cannon moved during wait and ended idle/orderclear at newcoordinates, but transient per-actor staticdraw was not captured. No artfailure proved by global lastdraw mismatch.",
+  "notProven": [
+    "individualcannonSTATICdiagnostic/travelpause/resume/Stop",
+    "menucleanup"
+  ],
+  "errors": [],
+  "requestFailures": [],
+  "httpErrors": [],
+  "sourceBuildCanonicalPublicBackendHEADPolicyPreserved": true,
+  "handles": "CLOSED",
+  "retry": false,
+  "humanNewSteering": "Horse-drawn supplywagon next after current issue; no horsechanges in413"
+}

@@ -1,0 +1,63 @@
+{
+  "status": "CLOSED_SOURCE_CANDIDATE_PENDING_ROOT_ACTUAL_SCENE",
+  "profile": "gpt-6.1-sol/low",
+  "calls": 1,
+  "retries": 0,
+  "callOpen": false,
+  "toolReturnedClosed": true,
+  "generatedOriginal": "/home/kieu-hoang-quan/.codex/generated_images/01a12b5f-60be-78c1-96b0-45b9ee008783/exec-e9e63e13-32ec-46d3-b58e-af63b5af4151.png",
+  "raw": {
+    "path": "docs/art/units/supply-wagon-horse-415/raw.png",
+    "sha256": "93124b0a4959072880579ba0fd88f0a31ee227c4eb7369bde80880828d8a8030",
+    "rgbaSha256": "c784870b18b90558d510a909346855c03b4923575073f790e6bed8c92c5d30b6",
+    "width": 1254,
+    "height": 1254
+  },
+  "actualCanvas": [
+    1254,
+    1254
+  ],
+  "alphaExtrema": [
+    0,
+    255
+  ],
+  "alphaBBox": [
+    43,
+    49,
+    1250,
+    1254
+  ],
+  "normalizedPivot": [
+    0.5215311004784688,
+    0.9090909090909091
+  ],
+  "transform": "uniform whole canvas Lanczos only",
+  "scaleAcceptance": "PROVISIONAL",
+  "installation": false,
+  "motionCoverage": false,
+  "descriptor": "descriptor.json",
+  "schemaValidation": "PASS actual production client/art-assets.js validateAsset",
+  "briefRead": "One brief 256 source and 112px look: one healthy brown horse before warm spoked timber cart loaded with sacks/crates. D0 screen ESE, visible collar/bridle/traces and shafts beside horse, four grounded hooves visible, no rider/driver/second horse/environment. Readable whole horse+cart silhouette. Tight right margin and low-opacity alpha/shadow reaches bottom; margin remains provisional. Actual scene/contact and 112 logical family scale pending root check, family calibration next; static idle only.",
+  "sourceMarginAcceptance": "PROVISIONAL alpha bbox bottom1254/right1250; no retries or pixel edits",
+  "protectedInputs": [
+    {
+      "path": "docs/art/units/supply-wagon-idle-398/raw.png",
+      "beforeSha256": "9bcee91326bdbae820bcdfe9bf246f1afdf4ef41911365f90354bcf022e0e29b",
+      "afterSha256": "9bcee91326bdbae820bcdfe9bf246f1afdf4ef41911365f90354bcf022e0e29b",
+      "unchanged": true
+    },
+    {
+      "path": "docs/art/units/sources/cavalry-neutral-se-imagegen-raw.png",
+      "beforeSha256": "552c4fcdf8ce6bdb802c6faae1bc139416393d53cb30caa95a1d22309b77b091",
+      "afterSha256": "552c4fcdf8ce6bdb802c6faae1bc139416393d53cb30caa95a1d22309b77b091",
+      "unchanged": true
+    }
+  ],
+  "headAfter": "7994fb044b7811d12bb498627c7d28cce8fa2fe7",
+  "logicalRender": [
+    112,
+    112
+  ],
+  "toolCustody": "Original generated file and exact copied raw PNG retained; tool-result metadata retained",
+  "ownCoreWrites": false
+}

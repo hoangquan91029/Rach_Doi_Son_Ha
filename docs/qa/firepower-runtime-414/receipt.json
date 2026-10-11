@@ -1,0 +1,97 @@
+{
+  "order": 414,
+  "status": "PASS414_ACTUAL_ARTILLERY_CLEARANCE_PICK_MOVE_PAUSE_RESUME_ARRIVAL_STOP_MENU",
+  "ready": 50,
+  "portraits": 12,
+  "responsePins": 56,
+  "newPNGPins": [
+    {
+      "file": "assets/art-v1/firepower-410/firearm408.png",
+      "sha256": "748b340589830bba77ac51ac22fb077e517acff9889ff02060190cb85218d0a6"
+    },
+    {
+      "file": "assets/art-v1/firepower-410/artillery409.png",
+      "sha256": "8703d237a0de79e0da69edbca52b01880ab369616f4d525eace7cabd4f2812b6"
+    }
+  ],
+  "artilleryId": 52,
+  "actualOwnSelectedTravel": {
+    "id": 52,
+    "owner": 0,
+    "type": "artillery",
+    "kind": "unit",
+    "x": 6.3659133741950855,
+    "y": 15.634086625804912,
+    "hp": 125,
+    "maxHp": 125,
+    "food": 37.32721599999912,
+    "foodMax": 40,
+    "morale": 95,
+    "state": "walk",
+    "dir": 7,
+    "cooldown": 0,
+    "queue": [],
+    "cargo": {
+      "food": 0,
+      "wood": 0,
+      "iron": 0,
+      "units": []
+    },
+    "starving": 0,
+    "lastMovedTick": 1140,
+    "order": {
+      "type": "move",
+      "x": 8.499703029219177,
+      "y": 13.499933092168515
+    }
+  },
+  "globalLastDraw": {
+    "entityId": 16,
+    "assetId": "spearman-idle-d0-400",
+    "requestedState": "idle",
+    "requestedDirection": 5,
+    "illustrationDirection": 0,
+    "presentation": "STATIC_ILLUSTRATION"
+  },
+  "globalDiagnosticScope": "AS_SCOPE_LIMIT: global last actor diagnostic may name another drawn entity; no peractor trace claim",
+  "pauseTick": 1148,
+  "resumeTick": 1150,
+  "pausePositionVerified": true,
+  "arrival": {
+    "tick": 1201,
+    "entity": {
+      "id": 52,
+      "owner": 0,
+      "type": "artillery",
+      "kind": "unit",
+      "x": 8.017997657759318,
+      "y": 13.982002342240687,
+      "hp": 125,
+      "maxHp": 125,
+      "food": 36.72111999999892,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "idle",
+      "dir": 7,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "starving": 0,
+      "lastMovedTick": 1199,
+      "order": null
+    }
+  },
+  "stopTick": 1206,
+  "menuDecodedBytes": 0,
+  "errors": [],
+  "requestFailures": [],
+  "httpErrors": [],
+  "sealed412CanonicalPublicBackendHEADPolicyPreserved": true,
+  "handles": "CLOSED",
+  "scope": "Actual loadedselected artillery illustration with realMove state/position and schema/responsepins/screenshot. No peractor drawtrace/authoredmotion/eightdirection/finalscale proof. Existing412firearmtravel proof retained, not repeated."
+}

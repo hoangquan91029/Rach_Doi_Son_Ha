@@ -1,0 +1,20 @@
+{
+  "status": "FINITE_ORDER_RECORDED_BEFORE_CALL",
+  "profile": "gpt-6.1-sol/low",
+  "callsAuthorized": 1,
+  "retriesAuthorized": 0,
+  "tool": "builtin image_gen",
+  "prompt": "Use case: historical-scene. Single RTS artillery idle D0 sprite: world East / screen ESE lower-right. Generate ONE new whole 2D painted illustration. Wagon reference supplies timber, spoked wheels and raised camera; infantry reference supplies painterly realistic material depth only. Compact historical cast-metal smoothbore cannon on sturdy timber two-wheel field carriage: short dark aged bronze/iron barrel with visible round open muzzle pointing lower-right, two substantial wooden spoked wheels and timber trail extending back upper-left. One complete coherent cannon; no crew, animals, buildings, flags, ammunition extras, machine gun or modern artillery. Realistic painted depth, warm aged timber and dark metal, crisp readable silhouette at 55px. Whole 2D illustration, no 3D render or geometric placeholder. Raised 54x27 dimetric game ground axes camera, soft light upper-left. Square canvas with genuinely transparent alpha, no environment/backdrop. Restrained soft baked contact shadow. Fixed family ground pivot normalized (654/1254,1140/1254), about (52.153%,90.909%) of canvas below wheel contact footprint. Keep entire barrel, wheels and trail inside generous transparent margins including bottom; no clipping. Idle resting cannon without firing effects, no text/watermark. Whole composition will be uniformly downsized; no sprite sheet.",
+  "references": [
+    {
+      "path": "docs/art/units/supply-wagon-idle-398/raw.png",
+      "sha256": "9bcee91326bdbae820bcdfe9bf246f1afdf4ef41911365f90354bcf022e0e29b"
+    },
+    {
+      "path": "docs/art/units/sources/infantry-neutral-se-refine-01-imagegen-raw.png",
+      "sha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f"
+    }
+  ],
+  "scope": "artillery D0 idle static candidate only",
+  "install": false
+}

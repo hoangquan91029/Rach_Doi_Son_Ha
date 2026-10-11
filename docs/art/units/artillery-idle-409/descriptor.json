@@ -1,0 +1,58 @@
+{
+  "id": "artillery-idle-d0-409",
+  "family": "unit.artillery",
+  "kind": "unit",
+  "state": "idle",
+  "direction": 0,
+  "candidate": true,
+  "review": {
+    "status": "CANDIDATE"
+  },
+  "source": {
+    "path": "docs/art/units/artillery-idle-409/working-256.png",
+    "sha256": "98fbeb9b2a92ec276beac293ec62c5562f07bdecb96d8e4f293753b4c18fba9d",
+    "rgbaSha256": "628b93a4d30501424d83d0960fb7da1fabf4e3d9e2fd3b540a0f5969eca6b281",
+    "width": 256,
+    "height": 256
+  },
+  "runtime": {
+    "path": "firepower-410/artillery409.png",
+    "sha256": "8703d237a0de79e0da69edbca52b01880ab369616f4d525eace7cabd4f2812b6",
+    "rgbaSha256": "4299787ef991b9630b9f9af27da6c28e3ded87affdf7c0d5233e2901eda7560e",
+    "width": 128,
+    "height": 128,
+    "derivation": {
+      "method": "resize",
+      "filter": "lanczos",
+      "sourceSha256": "98fbeb9b2a92ec276beac293ec62c5562f07bdecb96d8e4f293753b4c18fba9d"
+    }
+  },
+  "cell": {
+    "width": 128,
+    "height": 128
+  },
+  "pivot": {
+    "x": 133.51196172248802,
+    "y": 232.72727272727272,
+    "space": "source"
+  },
+  "render": {
+    "width": 55,
+    "height": 55
+  },
+  "alphaPolicy": "transparent",
+  "contactShadow": {
+    "mode": "baked"
+  },
+  "frames": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 1000
+    }
+  ],
+  "loop": true,
+  "notes": "Whole built-in 2D idle D0 static candidate. Logical scale PROVISIONAL; root actual scene required. No motion or eight-direction acceptance."
+}

@@ -1,0 +1,16 @@
+{
+  "order": 410,
+  "status": "HOLD410_WRONG_BUILD_CWD_BEFORE_BROWSER",
+  "cause": "ONE Vite execution command used canonical cwd instead of required isolated stage cwd. Absolute config/outDir correct, but new bundle index-OgWGKAlX.js includes canonical code variant. Cannot qualify intended data-only candidate.",
+  "actualCWD": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+  "requiredCWD": "/tmp/rds-firepower410-stage",
+  "actualOutDir": "/tmp/rds-firepower410-build",
+  "buildCalls": 1,
+  "browserCalls": 0,
+  "canonicalPublicBackendHEADPreserved": true,
+  "sourceStageUnchanged": true,
+  "failedBuildPreserved": true,
+  "sealedRepair": false,
+  "handles": "CLOSED",
+  "next": "Fresh finite successor required; no secondbuild/retry in410"
+}

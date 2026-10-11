@@ -1,5 +1,8 @@
 # Rạch Đôi Sơn Hà — kế hoạch thực thi sau audit 154
 
+> **Current checkpoint419 / public417:** firearm408/artillery409 wholeD0idle publicfort50, actual412/414 controls and418HTTPSFirefox passed; originalwrongcwd/occlusion/globaldiagnosticHOLD receipts preserved. Latesthuman priority: horsepullingwagon, then consistent unit scale, then missing authored animations. Horse415 wholeillustration created ONEbuiltin/0retry but pending420actualscene/install. VillagerD0~37.5px vsD1~87–89px mismatch confirmed; currentgraphicsplan proposes onefamily42 +uniformworldzoom1.68, notinstalled. Backend230 unchanged/currentrollback405+230private411.407entrypoints archived419/source7994fb0; all418/415guards closed. Fullgoal INCOMPLETE; older notices below are historical.
+
+
 > **Current checkpoint407 / public405 (11 October 2026):** bareURL fort/worldtrue48assets restores old illustrated world and adds whole2D TNN396/spearman400/wagon398 living static identities.403actualChrome and406publicHTTPSFirefox ordinaryselection/wagonMove/PauseResumeStop/menu passed, zero errors; rootbriefactualscene accepts this narrow coverage only.405204files/unchangedJS352a…de61/manifest7bd215…60504/76HTTPSpins, immutablebackend230PID3229 unchanged. Currentpairedrollback393+230/private401, old393tree rds-public404-next-dist.399schemaHOLD/402unqualified custody retained. Highest NEXT priority is remaining firearm/artillery/naval/10leader coverage, then authored actions/directions/family scale. Stonewalls/woodgates unchanged. Allguards closed before rootupdates; exact395entrypoints archived checkpoint407. See AGENTS/status/next; older current notices below are historical. Fullgoal INCOMPLETE.
 
 

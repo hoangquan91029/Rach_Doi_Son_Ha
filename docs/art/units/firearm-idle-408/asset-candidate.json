@@ -1,0 +1,57 @@
+{
+  "id": "unit-firearm-idle-d0-408",
+  "kind": "unit",
+  "family": "unit.firearm",
+  "state": "idle",
+  "direction": 0,
+  "source": {
+    "path": "docs/art/units/firearm-idle-408/firearm-idle-d0-256.png",
+    "width": 256,
+    "height": 256,
+    "sha256": "d5c899c901ce7bb8c31adfabe31472dc32ffe5fbf4904a212cba1236731571e8",
+    "rgbaSha256": "4924cee1e89f22fa707e5377444f98e51138def48f44112aa38828360734e7c3"
+  },
+  "runtime": {
+    "path": "assets/art-v1/firepower-410/firearm408.png",
+    "width": 128,
+    "height": 128,
+    "sha256": "748b340589830bba77ac51ac22fb077e517acff9889ff02060190cb85218d0a6",
+    "rgbaSha256": "798bced5d625e7fb134950b26abd3ef2c8f93c0e807b1f293f5875240162796c",
+    "derivation": {
+      "method": "resize",
+      "filter": "lanczos",
+      "sourceSha256": "d5c899c901ce7bb8c31adfabe31472dc32ffe5fbf4904a212cba1236731571e8"
+    }
+  },
+  "cell": {
+    "width": 128,
+    "height": 128
+  },
+  "pivot": {
+    "x": 133.51196172248802,
+    "y": 232.72727272727272,
+    "space": "source"
+  },
+  "render": {
+    "width": 42,
+    "height": 42
+  },
+  "alphaPolicy": "transparent",
+  "contactShadow": {
+    "mode": "baked"
+  },
+  "review": {
+    "status": "CANDIDATE"
+  },
+  "candidate": true,
+  "loop": false,
+  "frames": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 1000
+    }
+  ]
+}

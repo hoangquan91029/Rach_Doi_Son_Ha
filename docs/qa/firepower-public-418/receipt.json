@@ -1,0 +1,64 @@
+{
+  "order": 418,
+  "status": "PASS418_NORMAL_TLS_FIREFOX_PUBLIC50_ACTUAL_FIREARM_TRAIN_PICK_PAUSE_RESUME_STOP_MENU",
+  "normalTLS": true,
+  "ready": 50,
+  "portraits": 12,
+  "responsePins": 57,
+  "changedPayloadPins": [
+    {
+      "file": "assets/art-v1/fort-202-manifest.json",
+      "sha256": "8268a22fd077afc715f58b73e29e28d5bc389e18c08cdb613cbf8ce9a044ea9b"
+    },
+    {
+      "file": "assets/art-v1/firepower-410/firearm408.png",
+      "sha256": "748b340589830bba77ac51ac22fb077e517acff9889ff02060190cb85218d0a6"
+    },
+    {
+      "file": "assets/art-v1/firepower-410/artillery409.png",
+      "sha256": "8703d237a0de79e0da69edbca52b01880ab369616f4d525eace7cabd4f2812b6"
+    }
+  ],
+  "actualSpawnedFirearmId": 38,
+  "exactSingleWorldSelection": [
+    38
+  ],
+  "pauseTick": 288,
+  "resumeTick": 289,
+  "positionFrozen": true,
+  "stop": {
+    "tick": 294,
+    "entity": {
+      "id": 38,
+      "owner": 0,
+      "type": "firearm",
+      "kind": "unit",
+      "x": 12.5,
+      "y": 19.5,
+      "hp": 80,
+      "maxHp": 80,
+      "food": 39.81452799999994,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "idle",
+      "dir": 0,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "starving": 0,
+      "order": null
+    }
+  },
+  "menuDecodedBytes": 0,
+  "errors": [],
+  "requestFailures": [],
+  "httpErrors": [],
+  "sealed412Canonical50Public206Backend230HEADPolicyPreserved": true,
+  "handles": "CLOSED",
+  "scope": "Narrow actual newlytrained firearm illustratedcoverage; artillerytraining/control proofs remain412/414; no authoredmotion/fullroster/eightdirection/finalscale claim"
+}
