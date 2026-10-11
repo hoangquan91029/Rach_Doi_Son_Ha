@@ -1,0 +1,15 @@
+{
+  "status": "FULL_FROZEN_FIXTURE_LOCAL_CUSTODY",
+  "baselineGit": "f55e9deaeb9f5d00b6e951a5093a9846db786e94",
+  "fullSourceLocallyRetained": true,
+  "trackedRelevantFiles": [
+    "source/client/fortification-art.js",
+    "source/tests/building-collapse-scope324.test.js",
+    "source/public/assets/art-v1/fort-202-manifest.json"
+  ],
+  "durableCanonicalTests": [
+    "tests/building-collapse-scope324.test.js",
+    "tests/building-collapse-clock329.test.js"
+  ],
+  "reason": "Avoid duplicating 41MB existing artwork for one isolated API patch; all originals already canonical/history, no files deleted."
+}

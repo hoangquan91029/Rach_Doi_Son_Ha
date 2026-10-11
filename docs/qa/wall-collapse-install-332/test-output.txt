@@ -1,0 +1,29 @@
+✔ 200ms authoritative snapshots preserve all short death phases via bounded presentation clock (8.617232ms)
+✔ qualified death cannot run ahead of authoritative tick and freezes on paused clock (0.315848ms)
+✔ unfinished death retains generic292 exact tick clock regardless cosmetic clock (0.33384ms)
+✔ owned and enemy unfinished retain exact292 with either or both markers (2.401777ms)
+✔ completed prioritizes qualified, missing qualified uses generic (0.415877ms)
+✔ qualifier identity rejects duplicates and fixed layout drift (0.905569ms)
+✔ invalid values states masks types rejected (1.108008ms)
+✔ real raster selects qualified tick death clock and generic site terminal (1.973719ms)
+✔ dead Wall/Gate chooses only standalone authored death despite construction/hit/state and completed neighbors (2.364427ms)
+✔ missing rubble/ambiguous or ineligible variants never paint a live state; living never paints death (0.669728ms)
+✔ building death anchors fixed simulation tick and holds terminal pose by default/explicit false (0.755431ms)
+✔ dead entity remains unpickable and fog/visibility filtering remains authoritative (0.310284ms)
+✔ ordinary cancellation exposes death with stale construction truth then removes corpse at80 ticks (67.049379ms)
+✔ whole metadata requires exact bounded mask/null direction/building family (1.505219ms)
+✔ gate axis derives from real mask and rejects mismatched declaration (0.299974ms)
+✔ all16 masks select only exact whole source; corner has no straight substitution (1.040959ms)
+✔ owner and visible-only neighbor context drive selection; hidden neighbor not included (0.180104ms)
+✔ unknown context/unfinished/hit/death preserve bounded fallback (0.243301ms)
+✔ duplicate/alias ambiguous wholevariants and changing fixed layout reject (0.616449ms)
+✔ legacymanifest and assets without metadata retain contract (1.011253ms)
+✔ real raster sample chooses exact whole variant only on fort; draw and alpha picking receive same context (2.036475ms)
+ℹ tests 21
+ℹ suites 0
+ℹ pass 21
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 130.104739

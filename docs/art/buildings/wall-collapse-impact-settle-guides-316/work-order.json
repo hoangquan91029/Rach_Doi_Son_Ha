@@ -1,0 +1,36 @@
+{
+  "state": "PREP_ONLY",
+  "calls": 0,
+  "futureOrders": {
+    "F2": {
+      "calls": 1,
+      "retries": 0,
+      "state": "UNCALLED"
+    },
+    "F3": {
+      "calls": 1,
+      "retries": 0,
+      "state": "UNCALLED"
+    }
+  },
+  "binding": "PENDING actual root-selected315 neighbor path/hash and root intake; F3 additionally requires selectedF2",
+  "pivot": [
+    627,
+    900
+  ],
+  "canvas": [
+    1254,
+    1254
+  ],
+  "axis": [
+    [
+      227,
+      700
+    ],
+    [
+      1027,
+      1100
+    ]
+  ],
+  "guidesAuthoringOnly": true
+}

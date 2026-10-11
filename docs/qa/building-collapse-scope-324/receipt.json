@@ -1,0 +1,28 @@
+{
+  "state": "PASS_TERMINAL",
+  "targetedTests": 18,
+  "pass": 18,
+  "fail": 0,
+  "newTests": 5,
+  "regressions": [
+    "building-death-api291",
+    "fortification-art235"
+  ],
+  "canonicalBaselineUnchanged": true,
+  "generic292Unmodified": true,
+  "delta": "Optional deathSite completed only death mask0 wall/gate; qualified completeddead priority, generic unfinisheddead/fallback; qualifier-aware ambiguity key; fixedlayouts retained",
+  "pythonValidatorChangeNeeded": false,
+  "initialFailuresRetained": "test-output-initial-failure.txt records invalid multi-frame fixture repair; first heredoc cwd path failure no testcreated",
+  "pins": {
+    "source/client/fortification-art.js": "17455ed06ef4ff03246a37773edc6de841f0ed7d69a7ebe5184028b1affa3ff2",
+    "source/tests/building-collapse-scope324.test.js": "2a4387f25d3ca89edb3ed6300afdcbc7b45c3ff6b17f23a7ce7fe5c77721c58f",
+    "exact.patch": "928d870f06693f7afd56506f109b7e99d36642701cc59e7a3fc8a35c5b540978",
+    "test-output.txt": "89383236ea787a955c42d7789b9d1beee5f20daea07be46c1ac47316151e975c",
+    "python-loader-check.json": "2fbb72e6d9e0634faf67813ae503445d5d9db6ef85297758a20522f3434e599b"
+  },
+  "builds": 0,
+  "browserTrials": 0,
+  "installs": 0,
+  "publicServiceChanges": false,
+  "artCalls": 0
+}

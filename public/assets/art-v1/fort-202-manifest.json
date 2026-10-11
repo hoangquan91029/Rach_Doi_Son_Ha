@@ -4349,6 +4349,120 @@
         "mask": 0
       },
       "notes": "ONE static terminal wreck key only; NOT complete collapse animation. Root appearance/code291/actual UI death transition required before install."
+    },
+    {
+      "id": "building-wall-death-collapse-321",
+      "family": "building.wall",
+      "kind": "building",
+      "state": "death",
+      "direction": null,
+      "fortification": {
+        "mask": 0,
+        "deathSite": "completed"
+      },
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/buildings/wall-collapse-preview-321/export/sources/F0.png",
+        "sha256": "3ac8c092da13925e4d6502ced372eccb53021f6a2e78f3bd4fc221f3de1a3c6b",
+        "rgbaSha256": "b540c0667bbeff288f0415319a467e9500e13bd826214bf55e1f3c1d93cb91f0",
+        "width": 1254,
+        "height": 1254
+      },
+      "runtime": {
+        "path": "runtime/wall-collapse-321-atlas.png",
+        "sha256": "fa0a0e65ad9d7960cca7ae48080582cda87f2ab3738b8f03d58b260906f99720",
+        "rgbaSha256": "60663a0882981f2eadfdbb6664efd981555adfc703c77747b4c492e2daf4db54",
+        "width": 512,
+        "height": 128,
+        "derivation": {
+          "method": "atlas",
+          "filter": "lanczos",
+          "sourceSha256": "3ac8c092da13925e4d6502ced372eccb53021f6a2e78f3bd4fc221f3de1a3c6b"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 900,
+        "space": "source"
+      },
+      "render": {
+        "width": 42.3225,
+        "height": 42.3225
+      },
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 120,
+          "source": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/buildings/wall-collapse-preview-321/export/sources/F0.png",
+            "sha256": "3ac8c092da13925e4d6502ced372eccb53021f6a2e78f3bd4fc221f3de1a3c6b",
+            "rgbaSha256": "b540c0667bbeff288f0415319a467e9500e13bd826214bf55e1f3c1d93cb91f0",
+            "width": 1254,
+            "height": 1254
+          },
+          "events": []
+        },
+        {
+          "x": 128,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 150,
+          "source": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/buildings/wall-collapse-preview-321/export/sources/F1.png",
+            "sha256": "971ea9c8ed9d67cd19ed58b860cb72e0243470b0183c91e1192434fe144df32b",
+            "rgbaSha256": "b192b742409688985b60ab41dabffd559c64a1631d8eb81690674e614e45440e",
+            "width": 1254,
+            "height": 1254
+          },
+          "events": []
+        },
+        {
+          "x": 256,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 180,
+          "source": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/buildings/wall-collapse-preview-321/export/sources/F2.png",
+            "sha256": "6f78c43c0268afa6ec640695aa1bd0577cee923011e16ac83276ef068a9a0fc0",
+            "rgbaSha256": "e518c956c2f7e8f91447885f5b93c75d3b24dfd0e6c5a4d04b631fe70edea1a3",
+            "width": 1254,
+            "height": 1254
+          },
+          "events": []
+        },
+        {
+          "x": 384,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 1000,
+          "source": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/buildings/wall-collapse-preview-321/export/sources/F3.png",
+            "sha256": "4dc53f83cbfaf8093b8d8e916363bf20262dab7725a55e0e7973a5388bcb2ae1",
+            "rgbaSha256": "ab38f6f1dc8aca2e3d99c4f2a88dfd6b5398ca84e6511e2c5507d3699c03c4bb",
+            "width": 1254,
+            "height": 1254
+          },
+          "events": []
+        }
+      ],
+      "loop": false
     }
   ],
   "id": "fort-202",

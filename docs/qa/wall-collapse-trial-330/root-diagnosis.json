@@ -1,0 +1,21 @@
+{
+  "status": "ACTUAL_DRAW_PHASE2_PRESENT_BUT_PHASE1_NOT_SAMPLED_CAPTURE_STALL_HOLD",
+  "actualFramesSampled": [
+    0,
+    2,
+    3
+  ],
+  "earliestElapsedGapMs": [
+    100.9,
+    316.5
+  ],
+  "screenshot0CaptureSpanTicks": [
+    1961,
+    1973
+  ],
+  "actualCompletedEnemyCombat": true,
+  "actualDeadTick": 1960,
+  "phase1UnknownNoAcceptance": true,
+  "causeInference": "Concurrent short-phase screenshot0 spans600ms and can blocksampling/render; frame1 unknown rather than pass. New331 identicalcode/art timing, removeintrusive shortphase captures; actualvideo+drawsamples remain.",
+  "originalFailurePreserved": true
+}

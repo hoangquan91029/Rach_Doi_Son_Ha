@@ -1,0 +1,13 @@
+{
+  "status": "TOOLS_READY_NO_ART_EXPORT",
+  "scope": "docs/qa/wall-collapse-adapter-313 only",
+  "actualSources": "F0 Root312 call owned elsewhere; F1/F2/F3 not generated or selected",
+  "tests": "python3 docs/qa/wall-collapse-adapter-313/test_export.py: 2 passed, including rejection table and real JS loader/timing contract",
+  "proposedTimingMs": [120, 150, 180, 1000],
+  "visualAcceptance": false,
+  "runtimeInstalled": false,
+  "publicChanged": false,
+  "canonicalChanged": false,
+  "imageCalls": 0,
+  "browserCalls": 0
+}

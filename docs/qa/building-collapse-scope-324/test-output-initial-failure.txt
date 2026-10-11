@@ -1,0 +1,41 @@
+✔ owned and enemy unfinished retain exact292 with either or both markers (1.448665ms)
+✔ completed prioritizes qualified, missing qualified uses generic (0.256361ms)
+✔ qualifier identity rejects duplicates and fixed layout drift (0.684089ms)
+✖ invalid values states masks types rejected (0.823121ms)
+✔ real raster selects qualified tick death clock and generic site terminal (1.530589ms)
+✔ dead Wall/Gate chooses only standalone authored death despite construction/hit/state and completed neighbors (2.341925ms)
+✔ missing rubble/ambiguous or ineligible variants never paint a live state; living never paints death (0.511437ms)
+✔ building death anchors fixed simulation tick and holds terminal pose by default/explicit false (0.679182ms)
+✔ dead entity remains unpickable and fog/visibility filtering remains authoritative (0.279771ms)
+✔ ordinary cancellation exposes death with stale construction truth then removes corpse at80 ticks (67.587558ms)
+✔ whole metadata requires exact bounded mask/null direction/building family (1.524923ms)
+✔ gate axis derives from real mask and rejects mismatched declaration (0.274342ms)
+✔ all16 masks select only exact whole source; corner has no straight substitution (0.963478ms)
+✔ owner and visible-only neighbor context drive selection; hidden neighbor not included (0.178255ms)
+✔ unknown context/unfinished/hit/death preserve bounded fallback (0.237631ms)
+✔ duplicate/alias ambiguous wholevariants and changing fixed layout reject (0.516941ms)
+✔ legacymanifest and assets without metadata retain contract (0.923516ms)
+✔ real raster sample chooses exact whole variant only on fort; draw and alpha picking receive same context (1.651131ms)
+ℹ tests 18
+ℹ suites 0
+ℹ pass 17
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 131.975091
+
+✖ failing tests:
+
+test at tests/building-collapse-scope324.test.js:7:1
+✖ invalid values states masks types rejected (0.823121ms)
+  Error: frame source: invalid dimensions
+      at dimensions (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/building-collapse-scope-324/source/client/art-assets.js:9:192)
+      at validateAsset (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/building-collapse-scope-324/source/client/art-assets.js:25:731)
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/building-collapse-scope-324/source/tests/building-collapse-scope324.test.js:7:381)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7)

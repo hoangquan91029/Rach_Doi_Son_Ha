@@ -2,7 +2,7 @@
 
 Cập nhật ngày 2026-10-10, múi giờ Asia/Ho_Chi_Minh. **Trạng thái: INCOMPLETE.** Đây là kế hoạch hiện hành cho toàn dự án; `NEXT_STEPS.md` chỉ giữ hàng đợi gần nhất. Hồ sơ cũ được giữ nguyên byte tại `docs/audit/2026-10-09/history/`.
 
-Latest execution290 ở mục27 và active movement plan thay các next-step lịch sử; source/receipt cũ giữ nguyên.
+Latest execution333 ở mục30 và active movement plan thay các next-step lịch sử; source/receipt cũ giữ nguyên.
 
 ## 1. Mục tiêu và cách đọc kết quả
 
@@ -274,3 +274,11 @@ Exact296 rendererfamily registry cài302:9nonleader types+12historical IDs trong
 308 SAME tested305 build archive8fd5fca2acd74da2d4cc7e79f0f81ae0b4161164f4bb15f1c133dc2ed9489bdf/byte-mode-safeextract; current299pairedrollback private304 SHA2a88dcd0a9315a7b7b1f27ad4e7643943918ced61ef131f784e0a6e168a7ec5a độc lập reverify.309 ONEatomicclientexchange public205/53/newJS71e48…006c5/index5f876…383b/manifestf835…671f,4normalTLS pins exact, old204tree retained. Backend230/PID3229/policy không đổi.310 ONEnormalTLSChrome correctedpublic ordinaryidleTHDroles/picks/PauseResumeStop/menu0/53+12/errors0/4pins/fooddisabled đạt narrow; root briefactualgame-size appearance accepted only shown idle.307 là candidateFirefox, không giả publicFirefox trial. Allhandles/guards closed.
 
 Next W01: finite whole2D standaloneWall collapse pilot dựa291deathclock/nonloopAPI và canonical234/terminal292; keys/whole illustrated sources/briefloop/actualscene trướcinstall. ONEstaticwreck không chứng minh fullcollapse. MixedGate/animatedconstruction/hit/attack/otherbuildingstates vẫn thiếu. Movement213/216/233 unchanged/open owner-naturalness/worldcontact/familyscale/runtime/fanout; không mở batch từ registry. Fullgoal/defaultart/realistroster/directions/actions/12leaders/maps/performance/externalWAN/finaltwomodesbothmaps INCOMPLETE. Prior301entrypoints exactGit4cf65327 archived trướcupdate311; five-hourquietcontinuation giữ nguyên.
+
+## 30. Hiện hành312–333 — whole collapse và actual online playback
+
+Four whole2D returned phases312/315/319/320, zero retries per finite call; original guides314/316, raw/tool/selection/custody retained.321 compiler packs four actualPNGs, uniform128 cells, fixed1254/pivot627900/render42.3225, holds120/150/180/1000ms/nonloop. Old292 remains smaller-footprint style reference/generic cancelledSITE terminal, never substituted as F3.324 optional completed-only qualifier preserves generic292 for unfinisheddeath;18 focused isolatedtests.329 fixes real discrete200ms online buildingdeath clock phase skip via existing continuous presentationclock bounded to receivedtick/deadTick;3 meaningfulclocktests. Exactlocal332 installs54 descriptor, old53 untouched,21focusedchecks PASS.
+
+331 ONE ordinaryChromehost+Firefoxguest builtcompletedWall400HP/threeinfantryATTACK/death and actualrenderer0/1/2/3/terminalhold/unpick/removal82ticks/onlinePausecontinues/Stopboth/menu0/54+12/errors0/cleanuprooms0. Real sessionclips/13sec excerpt retained; technicalphase proof does not close continuousnaturalness/finalbuildingart. Original318scopeHOLD unlaunched,322fordsite guard,326autoaggro builderdeath,327phase2snapshotclock skip,330shortscreenshot phase1sampling gap preserved.331 uses ordinary HOLD then ATTACK and capture-free shortphase sampling; no weakenedguards/speed/artpixel changes.
+
+Public309/backend230/currentrollback299 unchanged. Preparedprivate325 pairedrollback309 SHA62c1e5356c8f71fd4f4a76cfa76fa53c2754d9f3d0ec4ad7ffbb1b6c88da10b3 safeentries/bytes/modes/extraction verified; preparationonly/no nextclone. Prior311 entrypoints exactGitf55e9dea archived. Next release boundary requires actualgame-size intake/exactsource/build/currentpairedrollback; no newcollapse imagecalls needed. Movement213/216/233 and allfullgoal gates remain open; fullroster/directions/actions/leaders/construction/buildingstates/maps/performance/defaultart/externalWAN/finalbothmodesbothmaps INCOMPLETE. Automation311 missing-native-schedule humanchoice stillpending, no recreatedschedule claim.

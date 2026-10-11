@@ -1,0 +1,9 @@
+{
+  "id": 331,
+  "status": "ROOT_GO_ONE_ACTUAL_PLAYBACK_WITHOUT_SHORT_PHASE_SCREENSHOT_STALLS",
+  "parent330HeldOriginalPreserved": true,
+  "exact329BuildReusedNoRebuild": true,
+  "newConcern": "330 screenshot0 spans12ticks/600ms and screenshotrequests overlap actualshortphase. Actualdraw samples elapsed100.9\u2192316.5ms skipframe1 despite qualifiedclock advancing between snapshots. Remove all shortphase screenshots; retain automaticvideo+20msactualdrawsamples and afterremoval screenshot. No art/clock/simulation change.",
+  "retries": 0,
+  "harnessSHA256": "c6ec418c0824926eb9979d80523d6b241042db61ce7ee3ecdad8aa068c8ab1e4"
+}

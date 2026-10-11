@@ -1,4 +1,4 @@
-# Project task profile — checkpoint311 / public309
+# Project task profile — checkpoint333 / local332 / public309
 
 ## Routing and production
 
@@ -8,9 +8,9 @@ Built-in imagegen only. No API/CLI/key requests, quota polling/reset/percentage 
 
 ## Read first and live state
 
-Read NEXT_STEPS.md, PROJECT_STATUS.md, docs/PROJECT_PLAN.md, active movement plan, Git and relevant live worker/image/test receipts. Never duplicate open calls or resume exhausted orders. Preparation is not returned art; tests are not visual acceptance. Prior301 entrypoints exactGit4cf65327 byte-preserved in docs/checkpoints/checkpoint301-entrypoints/. Earlier archives remain history.
+Read NEXT_STEPS.md, PROJECT_STATUS.md, docs/PROJECT_PLAN.md, active movement plan, Git and relevant live worker/image/test receipts. Never duplicate open calls or resume exhausted orders. Preparation is not returned art; tests are not visual acceptance. Prior311 entrypoints exactGitf55e9dea byte-preserved in docs/checkpoints/checkpoint311-entrypoints/. Earlier archives remain history.
 
-All302–310 workers, image/test/browser handles and preservation guards CLOSED at311; production intentionally runs. Inspect live before new work. Serialize canonical mutations against preservation guards. Original277/277B copy-before-WAIT incident and all later failures remain retained.
+All312–332 workers/image/test/browser handles and preservation guards terminal/CLOSED at333; production intentionally runs. Inspect live before new work. Serialize canonical mutations against preservation guards. Original277/277B copy-before-WAIT incident and all later failures remain retained.
 
 ## Movement unchanged
 
@@ -24,7 +24,11 @@ Exact296 registry installed302: shared/unit-art.js and real sampleEntity lookup 
 
 302/304 candidate publication HOLD: retained food recipe with excluded payloads; root rejected relaxed contracts. NO302/304 promotion.305 fresh sealed stage/build excludes ONLY exact food recipe and099 manifest/atlas, strict4 contracts, same53 unchanged assets.307 original foodPayloadAbsent false aggregation retained: approved staticfood115 was incorrectly matched by broad food-name filter; additive correction from retained requests proves pending099 absent, no browser replay.306 old public preparation UNCALLED and superseded by310.
 
-Next concrete W01: controlled whole2D standalone Wall collapse pilot using current291 nonloop death API and selected292 terminal reference. Read canonical234/278/292/source bindings and define a NEW finite work order before calls; whole illustrated keys, one brief actual-size loop, actual relevant scene before install. MixedGate topology, animated construction, hit/attack and other building states remain unfinished. Do not claim static wreck equals collapse animation.
+Local332 whole Wall collapse321 installed: four selectedwhole312/315/319/320,1254/pivot627900→128/render42.3225,512×128 atlas,120/150/180/1000ms/loopfalse. Append54 completed-only fortification.deathSite metadata; old53/genericwreck292 unchanged.324 completeddead chooses qualified; staleunfinisheddead uses292.329 qualifiedbuildingdeath uses continuous presentationclock clamped to receivedtick/deadTick; no simulation/speed change. Generic291 death behavior unchanged.21focusedtests pass after exact332install.
+
+331 ONE capture-free ordinaryChromehost/Firefoxguest: completedWall400HP→exactthreeinfantryATTACK→death, actualrenderer frames0/1/2/3/terminalhold/nonpick/removal82ticks/onlinePausecontinues/Stopboth/menu0/54art12portraits/errors0/rooms0. Actualdraw diagnostic is permanentread-only; no gameplay/facing injection. Actualclips/excerpt retained. Brief42 phaseappearance narrow; continuousnaturalness/finalbuilding acceptance open. Do not repeat completed331 absent new concern. Original318 unlaunchedscopeHOLD,322fordsiteHOLD,326autoaggrobuilderdeath,327tickclock F2skip,330snapshotcapturestall F1unobserved all preserved; noresume/cleanreceipt replay.
+
+NEXT boundary: brief actual331 game-size video intake, visiblefix only, then separate exactsource/build promotion if accepted. No new collapse calls required. Currentsealed329 build sourcepins/actualbundle in333receipt; sourceclientfood exclusion only305public derivative, localroute preserved. MixedGate, animatedconstruction, hit/attack and otherbuilding states remain unfinished. NEW325 preparedpairedrollback309 SHA62c1e5356c8f71fd4f4a76cfa76fa53c2754d9f3d0ec4ad7ffbb1b6c88da10b3 is preparationonly; no clone/exchange. Public309/currentrollback299/backend230 unchanged.
 
 ## Public309 / rollback
 

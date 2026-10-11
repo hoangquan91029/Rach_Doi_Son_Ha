@@ -1,6 +1,14 @@
-# Trạng thái — checkpoint311 / public309
+# Trạng thái — checkpoint333 / local332 / public309
 
-**INCOMPLETE.** [Full plan](docs/PROJECT_PLAN.md) · [Next](NEXT_STEPS.md) · [Movement](docs/art/pipeline/MOVEMENT_PRODUCTION_PLAN_20261010.md). Prior301 entrypoints exactGit4cf65327 byte-preserved; leadership/canonical/raw/tool/held/rejected/history giữ nguyên.
+**INCOMPLETE.** [Full plan](docs/PROJECT_PLAN.md) · [Next](NEXT_STEPS.md) · [Movement](docs/art/pipeline/MOVEMENT_PRODUCTION_PLAN_20261010.md). Prior311 entrypoints exactGitf55e9dea byte-preserved; leadership/canonical/raw/tool/held/rejected/history giữ nguyên.
+
+## Local332 — whole Wall collapse
+
+Four returned whole2D phases312/315/319/320 packed321 at fixed1254/pivot627900→128/render42.3225; atlas512×128, holds120/150/180/1000ms, nonloop.54 descriptor adds completed-only death, old53/generic292 unchanged.324 keeps cancelledunfinished sites on292.329 fixes a real online cadence issue: qualifieddeath now uses existing continuous presentationclock bounded by receivedtick/deadTick; generic292 fixedtick unchanged. Actualdraw diagnostic is read-only.21 focused contracts PASS after exactlocal332 install; production not changed.
+
+[331 actual playback](docs/qa/wall-collapse-trial-331/root-intake.json): ordinaryChromehost+Firefoxguest builtWall400HP, threeinfantry attack/death, allfour actualdrawframes, terminalhold/unpick/removal82ticks, onlinePause continues, Stopboth/menu0/54+12/errorsnetworkHTTP0/cleanuprooms0. Realclips and actual13sec excerpt retained. Brief42px phaseappearance accepted narrow; technical checks do not establish continuousnaturalness/finalbuilding acceptance. Original318/322/326/327/330 holds remain. [332 receipt](docs/qa/wall-collapse-install-332/receipt.json), [333 source boundary](docs/checkpoints/checkpoint333/receipt.json).
+
+NEW325 private pairedrollback309 archive62c1e5356c8f71fd4f4a76cfa76fa53c2754d9f3d0ec4ad7ffbb1b6c88da10b3 verified bytes/modes/safeextract; preparation only. Currentpublic309/currentrollback299/backend230 unchanged. Allworker/image/browser/test handles terminal/closed; production intentionallyruns. Next: briefactual331 clip intake then separate exactrelease boundary ifaccepted, or concrete unfinished construction/mixedGate implementation.
 
 ## Public development
 
@@ -20,6 +28,6 @@ Original302/304 publication scope HOLD giữ nguyên: retained foodrecipe khi pa
 
 Movement213/216/233 vẫn candidate technicalclosure: naturalness/owner/worldfootcontact/bodyvolume/bakedshadow/familyscale/runtimeinstall/fanout OPEN; pending195 khôngapprove213. Owner032wood/141iron chỉ shownD1; food101 riêng; loadedgoods ordinarywalk. Không blindcalls/repeatedmicroaudits/Stop replay.
 
-Next W01 controlled whole2D standaloneWall collapse pilot trên291 deathAPI;292 mới ONEstaticwreck. MixedGate, animatedconstruction/collapse/hit/attack/allbuildingstates, realisticfullroster/8directions/actions/12leaders/maps/densebrowser+roomsperformance/defaultacceptedart/externaldesktopWAN/finalpublictwomodesbothmaps còn thiếu. Five-hour quiet continuation giữ nguyên.
+Local standalonecollapse is implemented and technically tested at332; finalvisual/release boundary remains open. MixedGate, animatedconstruction/collapse/hit/attack/allbuildingstates, realisticfullroster/8directions/actions/12leaders/maps/densebrowser+roomsperformance/defaultacceptedart/externaldesktopWAN/finalpublictwomodesbothmaps còn thiếu. Five-hour quiet continuation giữ nguyên.
 
 Lịch tự tiếp tục: native update báo automation cũ không tồn tại. Chưa tạo lại vì có thể đã được người dùng xóa; câu hỏi chọn tạo lại mỗi5giờ hay chạy theo yêu cầu đang chờ trả lời. Xem [receipt](docs/checkpoints/checkpoint311-automation-status.json). Chính sách thông báo ít vẫn giữ, không coi lịch đang ACTIVE khi chưa xác nhận.
