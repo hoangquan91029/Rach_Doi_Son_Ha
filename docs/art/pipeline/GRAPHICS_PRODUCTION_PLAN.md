@@ -1,5 +1,8 @@
 # Kế hoạch đồ họa — checkpoint376 / local375 / public367, 11/10/2026
 
+> **Current checkpoint384 / public382 (11 October 2026):** latest human requirement is STONE walls X/Y/corner and WOOD gates. Exact original245/252 gate art/native presentation restored; default16/fort45 public200files, actual379 Chrome bothaxes and383 HTTPSFirefox Xjoins/picks/transit/PauseResumeStop accepted narrowly. Static373 construction mask0 is public; allstates/animation/fullgoal remain incomplete. Current pairedrollback367+230 is private380, not345/353. Entry-point history archived at docs/checkpoints/checkpoint384-entrypoints/. See PROJECT_STATUS.md/AGENTS.md for current state; older execution sections below are history, not resumable work orders. No new woodwall production or expanded topology library.
+
+
 [Full project plan](../../PROJECT_PLAN.md) · [Status](../../../PROJECT_STATUS.md) · [Movement plan](MOVEMENT_PRODUCTION_PLAN_20261010.md). Bản kế hoạch cũ checkpoint232 được lưu nguyên byte tại `docs/checkpoints/checkpoint371-entrypoints/docs/art/pipeline/GRAPHICS_PRODUCTION_PLAN.md`. Chỉ phần hiện hành này điều khiển công việc tiếp theo; không tiếp tục order lịch sử.
 
 ## Tường thành hiện hành: đá chân thực, chỉ ba mẫu

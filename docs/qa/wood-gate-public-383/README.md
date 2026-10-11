@@ -1,0 +1,1 @@
+Finite383 prepared normalTLSFirefox ONE Xgate adjoiningSTONEwalls campaign. No build/image/server/public mutation. Browser launch requires root-go.json PUBLIC382_PROMOTED_ROOT383_LIVE_GO. Stage/build selector pins reuse closed379; preservation binding must capture local382/public382 after promotion. Ordinary UI only.

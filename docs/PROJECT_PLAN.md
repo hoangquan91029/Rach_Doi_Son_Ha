@@ -1,5 +1,8 @@
 # Rạch Đôi Sơn Hà — kế hoạch thực thi sau audit 154
 
+> **Current checkpoint384 / public382 (11 October 2026):** latest human requirement is STONE walls X/Y/corner and WOOD gates. Exact original245/252 gate art/native presentation restored; default16/fort45 public200files, actual379 Chrome bothaxes and383 HTTPSFirefox Xjoins/picks/transit/PauseResumeStop accepted narrowly. Static373 construction mask0 is public; allstates/animation/fullgoal remain incomplete. Current pairedrollback367+230 is private380, not345/353. Entry-point history archived at docs/checkpoints/checkpoint384-entrypoints/. See PROJECT_STATUS.md/AGENTS.md for current state; older execution sections below are history, not resumable work orders. No new woodwall production or expanded topology library.
+
+
 Cập nhật ngày 2026-10-10, múi giờ Asia/Ho_Chi_Minh. **Trạng thái: INCOMPLETE.** Đây là kế hoạch hiện hành cho toàn dự án; `NEXT_STEPS.md` chỉ giữ hàng đợi gần nhất. Hồ sơ cũ được giữ nguyên byte tại `docs/audit/2026-10-09/history/`.
 
 Latest execution347 ở mục32 và active movement plan thay các next-step lịch sử; source/receipt cũ giữ nguyên.

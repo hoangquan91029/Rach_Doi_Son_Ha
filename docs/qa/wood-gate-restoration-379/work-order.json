@@ -1,0 +1,24 @@
+{
+  "order": 379,
+  "status": "GO_NEW_CORRECTED_FRESH_SOURCE_BUILD_AND_ONE_CHROME_TRIAL",
+  "scope": "STONEwall/WOODgate; restoreexisting7gate descriptors/2PNGs/nativegategeometry, allotherassets/economy/sim unchanged",
+  "reuse": "Exactcommon378gate-only source copies; do not mutate378 source/build/receipt",
+  "knownCauseCorrected": "ActualLOCALfoodmanifest runtime.path food-099/atlas.png; sourcepreflight must complete in separate tool call and exit0 before build",
+  "stage": "/tmp/rds-gates379-stage",
+  "outDir": "/tmp/rds-gates379-build",
+  "calls": {
+    "build": 1,
+    "browser": 1,
+    "image": 0
+  },
+  "publicPolicyExclusions": [
+    "client/art-routes.js ONLY food recipe",
+    "public/assets/art-v1/food-099-manifest.json",
+    "public/assets/art-v1/food-099/atlas.png"
+  ],
+  "retention": "AllCURRENT367 oldJS/currentCSS/assets not intentionallychanged; preflight before build/seal",
+  "trial": "ordinaryUI X/Y gatewithSTONEwalljoins/opaquegatepicks/friendlytransit/PauseResume/builderStop/menu0",
+  "canonicalAndPublicReadOnly": true,
+  "pairedRollbackPrepared": "private380 rollback367 SHA71653bffd2497de433fcebae4faf9a9e325d0f69fd0f80a671b04642e90f091e",
+  "noPublication": true
+}

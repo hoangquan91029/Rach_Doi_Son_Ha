@@ -3,7 +3,7 @@ import {fortificationSpans} from './fortification-topology.js';
 export const STONE_WALL_HEIGHT=18.5625;
 export const STONE_GATE_HEIGHT=STONE_WALL_HEIGHT+4;
 export const STONE_FORTIFICATION_COLORS=Object.freeze({face:'#8b8d82',side:'#73776f',cap:'#c8c4b2',mortar:'#60675f',joint:'#b4b3a3',rubble:'#93958a'});
-export function stoneFortificationAssetAllowed(asset){return !['building.wall','building.gate'].includes(asset?.family)||asset.material==='stone';}
+export function stoneFortificationAssetAllowed(asset){return asset?.family==='building.wall'?asset.material==='stone':asset?.family==='building.gate'?asset.material==='wood':true;}
 export function stoneFortificationPresentation(entity,topology){
  const dead=entity.hp<=0||entity.state==='death',unfinished=!dead&&Boolean(entity.construction||entity.underConstruction===true);
  return {dead,unfinished,parts:fortificationSpans(entity,dead||unfinished?undefined:topology),height:dead?3:STONE_WALL_HEIGHT,material:'stone'};

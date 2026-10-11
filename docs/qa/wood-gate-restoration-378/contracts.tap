@@ -1,0 +1,24 @@
+✔ wall ghost area does not intercept unit pick at zoom0.55 (1.813981ms)
+✔ wall ghost area does not intercept unit pick at zoom1.08 (0.201336ms)
+✔ wall ghost area does not intercept unit pick at zoom1.8 (0.174027ms)
+✔ actual wall face remains selectable for topology3 (0.151131ms)
+✔ actual wall face remains selectable for topology12 (0.091988ms)
+✔ actual wall face remains selectable for topology5 (0.088315ms)
+✔ actual wall face remains selectable for topology15 (0.078128ms)
+✔ X gate open passage does not intercept clicks, header and posts remain selectable (0.203078ms)
+✔ Y gate open passage remains clear and oriented header is selectable (0.157269ms)
+✔ ordinary building picking and liveness/visibility guards remain unchanged (0.234963ms)
+✔ wholeSTONE construction373 exact raster public/private site, staticframe and state eligibility (4.044386ms)
+✔ bare game chooses stone walls without promoting world art; explicit unknown remains disabled (0.631878ms)
+✔ real raster route draws all three stone shapes on bareURL, rather than loading unused PNGs (2.45289ms)
+✔ real raster wood gates + stone walls stone-361-manifest.json (4.045545ms)
+✔ real raster wood gates + stone walls fort-202-manifest.json (2.203551ms)
+✔ original native gate wood colors and12/16geometry render (0.548589ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 71.739918

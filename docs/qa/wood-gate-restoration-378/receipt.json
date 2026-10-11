@@ -1,0 +1,22 @@
+{
+  "order": 378,
+  "status": "CLOSED_HOLD_PREBUILD_PREFLIGHT_FAILED_BUILD_UNQUALIFIED",
+  "reason": "Shell continued after preflight assertion due separate newline command; ONE Vite build ran without completed preflight. Wrong planned food atlas path; actual exact path public/assets/art-v1/food-099/atlas.png. No browser launched.",
+  "builds": 1,
+  "browserTrials": 0,
+  "imageCalls": 0,
+  "canonicalPreserved": true,
+  "runtimePreserved": true,
+  "HEADPreserved": true,
+  "handlesClosed": true,
+  "tests": 16,
+  "sourceBuildFrozen": true,
+  "promotionQualified": false,
+  "newFiniteOrderRequired": true,
+  "publicPolicyPartialExclusion": [
+    "client/art-routes.js food recipe removed",
+    "food-099-manifest.json removed"
+  ],
+  "atlasStillPresent": "public/assets/art-v1/food-099/atlas.png",
+  "noRetainedChunkCopyCompleted": true
+}

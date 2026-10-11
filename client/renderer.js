@@ -1,4 +1,5 @@
 import {artRoute} from './art-routes.js';
+import {drawWoodGate} from './wood-gate.js';
 import {drawStoneFortification} from './stone-fortification.js';
 import {buildFortificationTopology} from './fortification-topology.js';
 import {createArtBank} from './art-bank.js';
@@ -186,7 +187,7 @@ export class IsoRenderer{
   c.strokeStyle='#6c5035';c.lineWidth=2*z;c.beginPath();c.moveTo(-8*z,-16*z);c.lineTo(-13*z,-18*z);c.lineTo(-15*z,-13*z);c.stroke();
   c.fillStyle='#877149';c.beginPath();c.moveTo(11*z,-2*z);c.lineTo(18*z,-7*z);c.lineTo(17*z,-1*z);c.closePath();c.fill();
  }
- drawFortification(c,e,z,color,trim){drawStoneFortification(this,c,e,z);}
+ drawFortification(c,e,z,color,trim){if(e.type==='gate')drawWoodGate(this,c,e,z,color,trim);else drawStoneFortification(this,c,e,z);}
  drawBuilding(c,e,p,z){
   const key=e.type,color=e.owner===this.localPlayer?'#b69d64':'#9d5947',trim=e.owner===this.localPlayer?'#ddc98e':'#c78569';
   if(key==='wall'||key==='gate'){this.drawFortification(c,e,z,color,trim);return;}

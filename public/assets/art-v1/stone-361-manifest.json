@@ -572,6 +572,447 @@
         "mask": 0
       },
       "notes": "Whole stone construction site, standalone mask0. One static source; no animated progression or runtime/scene acceptance yet. No wood, no PNG transforms."
+    },
+    {
+      "id": "gate-whole-245-X-mask0",
+      "family": "building.gate",
+      "kind": "building",
+      "state": "idle",
+      "direction": null,
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "source": {
+        "path": "docs/art/buildings/gate-x-idle-245/raw.png",
+        "sha256": "8a44cd1880468345e556f6aefaa02930be2072e9bfeed52ff8311f51ba635e98",
+        "rgbaSha256": "f9d9278641a9729a7d26095229ce3afd89e7e4805de79d11359e9b9d314552a0",
+        "width": 1254,
+        "height": 1254
+      },
+      "runtime": {
+        "path": "gate-245/idle.png",
+        "sha256": "89f18963d6d66452d584071e5158320c4168a6fb0d908c2ca06375759aaa6579",
+        "rgbaSha256": "84f80429a67e81015561d1922f33cc3540d252743d33b1cf13ea035c5a56448c",
+        "width": 128,
+        "height": 128,
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "8a44cd1880468345e556f6aefaa02930be2072e9bfeed52ff8311f51ba635e98"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 900,
+        "space": "source"
+      },
+      "render": {
+        "width": 42.3225,
+        "height": 42.3225
+      },
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 1000
+        }
+      ],
+      "loop": true,
+      "fortification": {
+        "mask": 0,
+        "axis": "X"
+      },
+      "notes": "Whole245 GateX livingcompletedidle masks0/1/2/3 only; other gate axes/topologies/states fallback; no fitting/transforms/assembly.",
+      "material": "wood"
+    },
+    {
+      "id": "gate-whole-245-X-mask1",
+      "family": "building.gate",
+      "kind": "building",
+      "state": "idle",
+      "direction": null,
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "source": {
+        "path": "docs/art/buildings/gate-x-idle-245/raw.png",
+        "sha256": "8a44cd1880468345e556f6aefaa02930be2072e9bfeed52ff8311f51ba635e98",
+        "rgbaSha256": "f9d9278641a9729a7d26095229ce3afd89e7e4805de79d11359e9b9d314552a0",
+        "width": 1254,
+        "height": 1254
+      },
+      "runtime": {
+        "path": "gate-245/idle.png",
+        "sha256": "89f18963d6d66452d584071e5158320c4168a6fb0d908c2ca06375759aaa6579",
+        "rgbaSha256": "84f80429a67e81015561d1922f33cc3540d252743d33b1cf13ea035c5a56448c",
+        "width": 128,
+        "height": 128,
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "8a44cd1880468345e556f6aefaa02930be2072e9bfeed52ff8311f51ba635e98"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 900,
+        "space": "source"
+      },
+      "render": {
+        "width": 42.3225,
+        "height": 42.3225
+      },
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 1000
+        }
+      ],
+      "loop": true,
+      "fortification": {
+        "mask": 1,
+        "axis": "X"
+      },
+      "notes": "Whole245 GateX livingcompletedidle masks0/1/2/3 only; other gate axes/topologies/states fallback; no fitting/transforms/assembly.",
+      "material": "wood"
+    },
+    {
+      "id": "gate-whole-245-X-mask2",
+      "family": "building.gate",
+      "kind": "building",
+      "state": "idle",
+      "direction": null,
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "source": {
+        "path": "docs/art/buildings/gate-x-idle-245/raw.png",
+        "sha256": "8a44cd1880468345e556f6aefaa02930be2072e9bfeed52ff8311f51ba635e98",
+        "rgbaSha256": "f9d9278641a9729a7d26095229ce3afd89e7e4805de79d11359e9b9d314552a0",
+        "width": 1254,
+        "height": 1254
+      },
+      "runtime": {
+        "path": "gate-245/idle.png",
+        "sha256": "89f18963d6d66452d584071e5158320c4168a6fb0d908c2ca06375759aaa6579",
+        "rgbaSha256": "84f80429a67e81015561d1922f33cc3540d252743d33b1cf13ea035c5a56448c",
+        "width": 128,
+        "height": 128,
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "8a44cd1880468345e556f6aefaa02930be2072e9bfeed52ff8311f51ba635e98"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 900,
+        "space": "source"
+      },
+      "render": {
+        "width": 42.3225,
+        "height": 42.3225
+      },
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 1000
+        }
+      ],
+      "loop": true,
+      "fortification": {
+        "mask": 2,
+        "axis": "X"
+      },
+      "notes": "Whole245 GateX livingcompletedidle masks0/1/2/3 only; other gate axes/topologies/states fallback; no fitting/transforms/assembly.",
+      "material": "wood"
+    },
+    {
+      "id": "gate-whole-245-X-mask3",
+      "family": "building.gate",
+      "kind": "building",
+      "state": "idle",
+      "direction": null,
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "source": {
+        "path": "docs/art/buildings/gate-x-idle-245/raw.png",
+        "sha256": "8a44cd1880468345e556f6aefaa02930be2072e9bfeed52ff8311f51ba635e98",
+        "rgbaSha256": "f9d9278641a9729a7d26095229ce3afd89e7e4805de79d11359e9b9d314552a0",
+        "width": 1254,
+        "height": 1254
+      },
+      "runtime": {
+        "path": "gate-245/idle.png",
+        "sha256": "89f18963d6d66452d584071e5158320c4168a6fb0d908c2ca06375759aaa6579",
+        "rgbaSha256": "84f80429a67e81015561d1922f33cc3540d252743d33b1cf13ea035c5a56448c",
+        "width": 128,
+        "height": 128,
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "8a44cd1880468345e556f6aefaa02930be2072e9bfeed52ff8311f51ba635e98"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 900,
+        "space": "source"
+      },
+      "render": {
+        "width": 42.3225,
+        "height": 42.3225
+      },
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 1000
+        }
+      ],
+      "loop": true,
+      "fortification": {
+        "mask": 3,
+        "axis": "X"
+      },
+      "notes": "Whole245 GateX livingcompletedidle masks0/1/2/3 only; other gate axes/topologies/states fallback; no fitting/transforms/assembly.",
+      "material": "wood"
+    },
+    {
+      "id": "gate-whole-252-Y-mask4",
+      "family": "building.gate",
+      "kind": "building",
+      "state": "idle",
+      "direction": null,
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "source": {
+        "path": "docs/art/buildings/gate-y-idle-252/raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "1a11271507f99e69ea2840ca3a400a10fb463767ceea6d29f479b68f5245efcc",
+        "rgbaSha256": "cba03533bf44dcefa6d4edbecffd78f937bc2667bd4abf292e2b2044b1cfc8e0"
+      },
+      "runtime": {
+        "path": "gate-252/idle.png",
+        "width": 128,
+        "height": 128,
+        "sha256": "867ba2b2e8e15f4d1c2011defebeb2c5fd3cd704722ba10bf2a6b637b765fbd1",
+        "rgbaSha256": "4b9985e32c70e976aed4c8204629fc51bc99bf6ebf2e495cd264a5d12045d93e",
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "1a11271507f99e69ea2840ca3a400a10fb463767ceea6d29f479b68f5245efcc"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 900,
+        "space": "source"
+      },
+      "render": {
+        "width": 42.3225,
+        "height": 42.3225
+      },
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 1000
+        }
+      ],
+      "loop": true,
+      "fortification": {
+        "mask": 4,
+        "axis": "Y"
+      },
+      "notes": "Whole GateY candidate only; actualjoins/opaque selection/friendlytransit pending; no per-imagefit/transforms/pixelassembly.",
+      "material": "wood"
+    },
+    {
+      "id": "gate-whole-252-Y-mask8",
+      "family": "building.gate",
+      "kind": "building",
+      "state": "idle",
+      "direction": null,
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "source": {
+        "path": "docs/art/buildings/gate-y-idle-252/raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "1a11271507f99e69ea2840ca3a400a10fb463767ceea6d29f479b68f5245efcc",
+        "rgbaSha256": "cba03533bf44dcefa6d4edbecffd78f937bc2667bd4abf292e2b2044b1cfc8e0"
+      },
+      "runtime": {
+        "path": "gate-252/idle.png",
+        "width": 128,
+        "height": 128,
+        "sha256": "867ba2b2e8e15f4d1c2011defebeb2c5fd3cd704722ba10bf2a6b637b765fbd1",
+        "rgbaSha256": "4b9985e32c70e976aed4c8204629fc51bc99bf6ebf2e495cd264a5d12045d93e",
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "1a11271507f99e69ea2840ca3a400a10fb463767ceea6d29f479b68f5245efcc"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 900,
+        "space": "source"
+      },
+      "render": {
+        "width": 42.3225,
+        "height": 42.3225
+      },
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 1000
+        }
+      ],
+      "loop": true,
+      "fortification": {
+        "mask": 8,
+        "axis": "Y"
+      },
+      "notes": "Whole GateY candidate only; actualjoins/opaque selection/friendlytransit pending; no per-imagefit/transforms/pixelassembly.",
+      "material": "wood"
+    },
+    {
+      "id": "gate-whole-252-Y-mask12",
+      "family": "building.gate",
+      "kind": "building",
+      "state": "idle",
+      "direction": null,
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "source": {
+        "path": "docs/art/buildings/gate-y-idle-252/raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "1a11271507f99e69ea2840ca3a400a10fb463767ceea6d29f479b68f5245efcc",
+        "rgbaSha256": "cba03533bf44dcefa6d4edbecffd78f937bc2667bd4abf292e2b2044b1cfc8e0"
+      },
+      "runtime": {
+        "path": "gate-252/idle.png",
+        "width": 128,
+        "height": 128,
+        "sha256": "867ba2b2e8e15f4d1c2011defebeb2c5fd3cd704722ba10bf2a6b637b765fbd1",
+        "rgbaSha256": "4b9985e32c70e976aed4c8204629fc51bc99bf6ebf2e495cd264a5d12045d93e",
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "1a11271507f99e69ea2840ca3a400a10fb463767ceea6d29f479b68f5245efcc"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 900,
+        "space": "source"
+      },
+      "render": {
+        "width": 42.3225,
+        "height": 42.3225
+      },
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 1000
+        }
+      ],
+      "loop": true,
+      "fortification": {
+        "mask": 12,
+        "axis": "Y"
+      },
+      "notes": "Whole GateY candidate only; actualjoins/opaque selection/friendlytransit pending; no per-imagefit/transforms/pixelassembly.",
+      "material": "wood"
     }
   ],
   "id": "fort-202",

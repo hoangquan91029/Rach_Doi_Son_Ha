@@ -1,0 +1,13 @@
+from pathlib import Path
+Q=Path('docs/qa/wood-gate-public-383');t=Path('docs/qa/wood-gate-restoration-379/browser.mjs').read_text().replace('{chromium}','{firefox}').replace('chromium.launch','firefox.launch').replace('binding.order,379','binding.order,383').replace('One379 Chrome','One383 normalTLS Firefox').replace('sealed379 LOCAL default16','public382 default16').replace('PASS379_CHROME_XY','PASS383_FIREFOX_TLS_X').replace("for(const axis of ['X','Y'])","for(const axis of ['X'])")
+t=t.replace("const {createGameServer}=await import(pathToFileURL('/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/releases/230/runtime230/server/index.js'));",'')
+t=t.replace('const game=await createGameServer({port:0,distDir:binding.build}),browser=', 'const browser=')
+t=t.replace('await p.goto(`http://127.0.0.1:${game.server.address().port}/`);',"await p.goto('https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/');")
+t=t.replace('await game.close();r.cleanup={rooms:game.rooms.size,serverListening:game.server.listening,browserClosed:true};',"r.cleanup={browserClosed:true,ownedServerStarted:false};")
+t=t.replace("const binding=JSON.parse(await readFile(new URL('./binding.json',import.meta.url),'utf8'));", "const authorization=JSON.parse(await readFile(new URL('./root-go.json',import.meta.url),'utf8'));assert.equal(authorization.order,383);assert.equal(authorization.status,'PUBLIC382_PROMOTED_ROOT383_LIVE_GO');const binding=JSON.parse(await readFile(new URL('./binding.json',import.meta.url),'utf8'));")
+# Existing seals remain exact. New installation/public preservation is captured only after promotion GO.
+t=t.replace("const game=",'const game=')
+t=t.replace("for(const [rel,sha]of Object.entries(binding.stagePins))", "const preserve=()=>{for(const item of binding.preservationPins)assert.equal(createHash('sha256').update(fs.readFileSync(item.path)).digest('hex'),item.sha256,item.path);};preserve();for(const [rel,sha]of Object.entries(binding.stagePins))")
+t=t.replace("assert.ok(r.responsePins.some(x=>x.file.endsWith('gate-252/idle.png')));", "assert.ok(r.responsePins.some(x=>x.file.endsWith('stone-wall-construction-373/runtime.png')));assert.ok(r.responsePins.some(x=>x.file==='assets/art-v1/stone-361-manifest.json'));assert.equal((await snap()).bootUi.ready,12);preserve();")
+(Q/'browser.mjs').write_text(t);(Q/'README.md').write_text('Finite383 prepared normalTLSFirefox ONE Xgate adjoiningSTONEwalls campaign. No build/image/server/public mutation. Browser launch requires root-go.json PUBLIC382_PROMOTED_ROOT383_LIVE_GO. Stage/build selector pins reuse closed379; preservation binding must capture local382/public382 after promotion. Ordinary UI only.\n')
+print('PREPARED383_BROWSER_NOT_STARTED')

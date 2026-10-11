@@ -1,0 +1,94 @@
+{
+  "testedStage": "/tmp/rds-gates379-stage",
+  "testedBuild": "/tmp/rds-gates379-build",
+  "seal379SHA256": "7478191f8926ab4767182af8085dd581d3192968099dead6bdf8e5876dde2337",
+  "archive381SHA256": "98efafe5c029df4112147a61f094da15f079f3635aa025c570c64594488d9670",
+  "rootAuthorizedCanonicalDeltaObserved": {
+    "client/fortification-picking.js": {
+      "before": {
+        "type": "file",
+        "mode": 436,
+        "size": 1865,
+        "sha256": "221a82c4506147ec5caf9ae6db195fc21937f14f68a150be69ce326a9373cda5"
+      },
+      "after": {
+        "type": "file",
+        "mode": 436,
+        "size": 1848,
+        "sha256": "d22cc510f0a89697948a37addde572070eaf9116a694f973eb6d54f4dca95d68"
+      }
+    },
+    "client/renderer.js": {
+      "before": {
+        "type": "file",
+        "mode": 436,
+        "size": 41772,
+        "sha256": "616553ab8bac2c1c809cf080ee4bd43dc1dc27ca19d39ccf0269c41c4c12a9f1"
+      },
+      "after": {
+        "type": "file",
+        "mode": 436,
+        "size": 41877,
+        "sha256": "9b0a6f56ab7b15761942188afc35ac027403f5e6e6b2c1b6d1a0101dae03a3d8"
+      }
+    },
+    "client/stone-fortification.js": {
+      "before": {
+        "type": "file",
+        "mode": 436,
+        "size": 3196,
+        "sha256": "7d4da2f741a928db2ffb0e07569809262aeb0f9b906419b025f066b3d7cdfa68"
+      },
+      "after": {
+        "type": "file",
+        "mode": 436,
+        "size": 3229,
+        "sha256": "ea102032bcda8b7520163a1bbd6aad58162eac9e69f45e92c0ebe2a07d06893b"
+      }
+    },
+    "public/assets/art-v1/fort-202-manifest.json": {
+      "before": {
+        "type": "file",
+        "mode": 436,
+        "size": 99566,
+        "sha256": "3e92e9c095471cc14c40f1d0b9b5b45aefe07062d40ac1aee17048282565296d"
+      },
+      "after": {
+        "type": "file",
+        "mode": 436,
+        "size": 112024,
+        "sha256": "4485087fb50a6633c943fbbba96f6cced6a009e70f68451b97f6ecdff385a048"
+      }
+    },
+    "public/assets/art-v1/stone-361-manifest.json": {
+      "before": {
+        "type": "file",
+        "mode": 436,
+        "size": 17053,
+        "sha256": "88139cff8700443342d1856d0f35d7e83aa7847152bb0cb024253610f1204418"
+      },
+      "after": {
+        "type": "file",
+        "mode": 436,
+        "size": 29511,
+        "sha256": "a028bc8c2e100d28b5bf3c572038117c09cefacc1c9ce4d8ccbf14fec3bca627"
+      }
+    }
+  },
+  "rootInstallationReceiptSHA256": "918827a753725a024bda9b4be6294f4667c125444ef15d8524183797cdc7ab23",
+  "rootActualIntakeSHA256": "ccd39cda7c9d0fcd925e0f717be9190996aa36e475dcbe13275a2bad2884891c",
+  "authoritativeInstallationDelta": {
+    "client/wood-gate.js": "bccc8752be32b62b0ec1909d6eb0cffda39000c63008b15a176847da38178a83",
+    "client/renderer.js": "9b0a6f56ab7b15761942188afc35ac027403f5e6e6b2c1b6d1a0101dae03a3d8",
+    "client/fortification-picking.js": "d22cc510f0a89697948a37addde572070eaf9116a694f973eb6d54f4dca95d68",
+    "client/stone-fortification.js": "ea102032bcda8b7520163a1bbd6aad58162eac9e69f45e92c0ebe2a07d06893b",
+    "tests/fortification-picking222.test.js": "f2fe16313558bddc3af5b692eed0757a87e58fc1f8ce0d88b866512c0ff98ec7",
+    "tests/wood-gate378.test.js": "a0324af202a38942e6cf857505af2a64c1103929bd683439c6573ae97688b532",
+    "public/assets/art-v1/stone-361-manifest.json": "a028bc8c2e100d28b5bf3c572038117c09cefacc1c9ce4d8ccbf14fec3bca627",
+    "public/assets/art-v1/fort-202-manifest.json": "4485087fb50a6633c943fbbba96f6cced6a009e70f68451b97f6ecdff385a048",
+    "public/assets/art-v1/gate-245/idle.png": "89f18963d6d66452d584071e5158320c4168a6fb0d908c2ca06375759aaa6579",
+    "public/assets/art-v1/gate-252/idle.png": "867ba2b2e8e15f4d1c2011defebeb2c5fd3cd704722ba10bf2a6b637b765fbd1"
+  },
+  "sourceHEAD": "e042f0e97e9066c2c25ef7828657631963db593f",
+  "rootActualIntake": "Root explicitly accepts actual379 X/Y default gameplay-size completedidle wooden gate + stone wall scenes, pick/transit/PauseResumeStop; separate383 public actual browser pending"
+}

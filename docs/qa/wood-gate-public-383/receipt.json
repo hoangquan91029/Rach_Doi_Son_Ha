@@ -1,0 +1,139 @@
+{
+  "order": 383,
+  "status": "CLOSED_PASS383_NORMALTLS_FIREFOX_PUBLIC382_WOOD_GATE_STONE_WALLS",
+  "URL": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/",
+  "sourceHEAD": "e042f0e97e9066c2c25ef7828657631963db593f",
+  "installationReceiptSHA256": "918827a753725a024bda9b4be6294f4667c125444ef15d8524183797cdc7ab23",
+  "browserTrials": 1,
+  "builds": 0,
+  "imageCalls": 0,
+  "masks": [
+    1,
+    3,
+    2
+  ],
+  "bindings": [
+    {
+      "id": 37,
+      "assetId": "stone-wall-X-362-mask1",
+      "material": "stone",
+      "runtimeSHA256": "3be7413c376dfd334a7c81bad66de3ad847207636095222f630907ce6c856a06"
+    },
+    {
+      "id": 43,
+      "assetId": "gate-whole-245-X-mask3",
+      "material": "wood",
+      "runtimeSHA256": "89f18963d6d66452d584071e5158320c4168a6fb0d908c2ca06375759aaa6579"
+    },
+    {
+      "id": 51,
+      "assetId": "stone-wall-X-362-mask2",
+      "material": "stone",
+      "runtimeSHA256": "3be7413c376dfd334a7c81bad66de3ad847207636095222f630907ce6c856a06"
+    }
+  ],
+  "actualRasterEntityDraws": 2579,
+  "gatePick": {
+    "tick": 815,
+    "selection": [
+      43
+    ],
+    "point": {
+      "x": 636.2354285714285,
+      "y": 390.32628571428575
+    }
+  },
+  "friendlyTransit": true,
+  "arrival": {
+    "tick": 1009,
+    "x": 4.5,
+    "y": 31.332767186681068,
+    "distance": 0.6564462448112474,
+    "state": "idle",
+    "order": null
+  },
+  "pauseFrozenTick": 822,
+  "resumeTick": 823,
+  "stop": {
+    "id": 7,
+    "owner": 0,
+    "type": "villager",
+    "kind": "unit",
+    "x": 4.5,
+    "y": 31.332767186681068,
+    "hp": 65,
+    "maxHp": 65,
+    "food": 39.84102399999995,
+    "foodMax": 40,
+    "morale": 95,
+    "state": "idle",
+    "dir": 2,
+    "cooldown": 0,
+    "queue": [],
+    "cargo": {
+      "food": 0,
+      "wood": 0,
+      "iron": 0,
+      "units": []
+    },
+    "resuppliedTick": 995,
+    "starving": 0,
+    "lastMovedTick": 1008,
+    "order": null
+  },
+  "menu": {
+    "bank": {
+      "phase": "menu",
+      "epoch": 3,
+      "encodedBytes": 115034,
+      "encodedBudgetBytes": 67108864,
+      "activeIds": [],
+      "scope": null
+    },
+    "art": {
+      "status": "PLACEHOLDER_ONLY",
+      "manifest": "not-loaded",
+      "declared": 0,
+      "ready": 0,
+      "approved": 0,
+      "candidates": 0,
+      "failed": 0,
+      "skipped": 0,
+      "fallbacks": 0,
+      "decodedBudgetBytes": 134217728,
+      "retainedDecodedBytes": 0,
+      "reservedDecodedBytes": 0,
+      "uniqueDecodedImages": 0,
+      "encodedReady": 0,
+      "retainedEncodedBytes": 0,
+      "encodedBudgetBytes": 67108864,
+      "selectedDeclared": 0,
+      "failures": []
+    }
+  },
+  "defaultReady": 16,
+  "portraitsReady": 12,
+  "requiredNormalTLSPins": {
+    "index.html": "25989d90338592982414f6efb87ec7e4408323724d9e7cf5f113c7d7a6d8a313",
+    "assets/index-DLWMD8Y7.js": "773152beb73437dc5ea8f8addf383701f5289b10ad9550cede28c2012464a729",
+    "assets/art-v1/stone-361-manifest.json": "a028bc8c2e100d28b5bf3c572038117c09cefacc1c9ce4d8ccbf14fec3bca627",
+    "assets/art-v1/gate-245/idle.png": "89f18963d6d66452d584071e5158320c4168a6fb0d908c2ca06375759aaa6579",
+    "assets/art-v1/stone-wall-construction-373/runtime.png": "8e928eb683effa0d10180cd0f6cc77664862fe950143964c98478c73bae8f9d6"
+  },
+  "responsePins": 23,
+  "errors": [],
+  "networkErrors": [],
+  "httpErrors": [],
+  "preservationPins": 422,
+  "preservationPASS": true,
+  "cleanup": {
+    "browserClosed": true,
+    "ownedServerStarted": false
+  },
+  "productionHealth": {
+    "ok": true,
+    "rooms": 0
+  },
+  "clipPath": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/wood-gate-public-383/clips/page@cf346c2a76554d5492b8c28530c3e926.webm",
+  "rootBriefSceneIntakeRequired": true
+}

@@ -1,0 +1,149 @@
+{
+  "order": 379,
+  "status": "CLOSED_PASS379_RESTORED_WOOD_GATES_STONE_WALLS",
+  "builds": 1,
+  "browserTrials": 1,
+  "imageCalls": 0,
+  "tests": 16,
+  "stage": "/tmp/rds-gates379-stage",
+  "build": "/tmp/rds-gates379-build",
+  "defaultCount": 16,
+  "fortCount": 45,
+  "gateDescriptors": 7,
+  "wholePNGs": 2,
+  "gateMaterials": "wood",
+  "wallMaterial": "stone",
+  "actualUI": [
+    {
+      "axis": "X",
+      "masks": [
+        1,
+        3,
+        2
+      ],
+      "gatePick": {
+        "tick": 778,
+        "selection": [
+          42
+        ],
+        "point": {
+          "x": 635.744546875,
+          "y": 383.8322734375
+        }
+      },
+      "rasterEntityDraws": 2515,
+      "friendlyTransit": true,
+      "arrival": {
+        "tick": 957,
+        "x": 4.5,
+        "y": 31.332767186681068,
+        "distance": 0.6671082495143821,
+        "state": "idle",
+        "order": null
+      },
+      "bindings": [
+        {
+          "id": 37,
+          "assetId": "stone-wall-X-362-mask1",
+          "material": "stone",
+          "runtimeSHA256": "3be7413c376dfd334a7c81bad66de3ad847207636095222f630907ce6c856a06"
+        },
+        {
+          "id": 42,
+          "assetId": "gate-whole-245-X-mask3",
+          "material": "wood",
+          "runtimeSHA256": "89f18963d6d66452d584071e5158320c4168a6fb0d908c2ca06375759aaa6579"
+        },
+        {
+          "id": 51,
+          "assetId": "stone-wall-X-362-mask2",
+          "material": "stone",
+          "runtimeSHA256": "3be7413c376dfd334a7c81bad66de3ad847207636095222f630907ce6c856a06"
+        }
+      ]
+    },
+    {
+      "axis": "Y",
+      "masks": [
+        4,
+        12,
+        8
+      ],
+      "gatePick": {
+        "tick": 1637,
+        "selection": [
+          54
+        ],
+        "point": {
+          "x": 635.6090063476562,
+          "y": 383.8481530761719
+        }
+      },
+      "rasterEntityDraws": 12776,
+      "friendlyTransit": true,
+      "arrival": {
+        "tick": 1816,
+        "x": 9.357600360858875,
+        "y": 33.5,
+        "distance": 0.6419921726922958,
+        "state": "idle",
+        "order": null
+      },
+      "bindings": [
+        {
+          "id": 53,
+          "assetId": "stone-wall-Y-364-mask4",
+          "material": "stone",
+          "runtimeSHA256": "910bd2d840909bde361c92150c62eb0d02dbb6a60f19ed5cb40994a0a0bfb923"
+        },
+        {
+          "id": 54,
+          "assetId": "gate-whole-252-Y-mask12",
+          "material": "wood",
+          "runtimeSHA256": "867ba2b2e8e15f4d1c2011defebeb2c5fd3cd704722ba10bf2a6b637b765fbd1"
+        },
+        {
+          "id": 56,
+          "assetId": "stone-wall-Y-364-mask8",
+          "material": "stone",
+          "runtimeSHA256": "910bd2d840909bde361c92150c62eb0d02dbb6a60f19ed5cb40994a0a0bfb923"
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "networkErrors": [],
+  "httpErrors": [],
+  "responsePins": 22,
+  "cleanup": {
+    "rooms": 0,
+    "serverListening": false,
+    "browserClosed": true
+  },
+  "canonicalLocalFoodPreserved": true,
+  "publicPolicyOnlyDifference": [
+    {
+      "path": "public/assets/art-v1/food-099-manifest.json",
+      "sha256": "d4ae1b557334120604ee7e648804917a8cc50ec1ed1624b84ec833bbf5b44104"
+    },
+    {
+      "path": "public/assets/art-v1/food-099/atlas.png",
+      "sha256": "66d641fee006cff56b42e88619bbf9c87900224faa104ac9054a9dd3aef0b73a"
+    }
+  ],
+  "localInstallCommonDelta": {
+    "client/wood-gate.js": "bccc8752be32b62b0ec1909d6eb0cffda39000c63008b15a176847da38178a83",
+    "client/renderer.js": "9b0a6f56ab7b15761942188afc35ac027403f5e6e6b2c1b6d1a0101dae03a3d8",
+    "client/fortification-picking.js": "d22cc510f0a89697948a37addde572070eaf9116a694f973eb6d54f4dca95d68",
+    "client/stone-fortification.js": "ea102032bcda8b7520163a1bbd6aad58162eac9e69f45e92c0ebe2a07d06893b",
+    "tests/fortification-picking222.test.js": "f2fe16313558bddc3af5b692eed0757a87e58fc1f8ce0d88b866512c0ff98ec7",
+    "tests/wood-gate378.test.js": "a0324af202a38942e6cf857505af2a64c1103929bd683439c6573ae97688b532",
+    "public/assets/art-v1/stone-361-manifest.json": "a028bc8c2e100d28b5bf3c572038117c09cefacc1c9ce4d8ccbf14fec3bca627",
+    "public/assets/art-v1/fort-202-manifest.json": "4485087fb50a6633c943fbbba96f6cced6a009e70f68451b97f6ecdff385a048",
+    "public/assets/art-v1/gate-245/idle.png": "89f18963d6d66452d584071e5158320c4168a6fb0d908c2ca06375759aaa6579",
+    "public/assets/art-v1/gate-252/idle.png": "867ba2b2e8e15f4d1c2011defebeb2c5fd3cd704722ba10bf2a6b637b765fbd1"
+  },
+  "publicPromotion": false,
+  "rootBriefSceneIntakeRequired": true,
+  "previous378HOLDPreserved": true
+}
