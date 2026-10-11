@@ -1,0 +1,45 @@
+{
+  "status": "CLOSED357_ORIGINAL_HOLD_ALL_OWNED_HANDLES",
+  "files": {
+    "README.md": "cb7917af0eb62e02d09a6bc1d44b8faca2fe8a660afcc4cde6fe205b31334c7e",
+    "actual-failed-guard.png": "abbec910790b24ed41fdb6ded38303f0e135b7280cf53a8c34240214d59ef55e",
+    "actual-mixed-gate-default.png": "2eddcac3a7466a80f94de5ec5380dba7552fc3cb31c1fad1f5c41c8fefc2afcd",
+    "actual-selected-gate-paused.png": "e1ceb7f6d87636e9fe4db472b45ff506578e1a8ac2cc4ce00e0bf739e206e9ab",
+    "actual-transit-excerpt.webm": "bc844a1570d7f9cb7093bde2758a6929a2f3cac9e0c2a0e9c195a9f64d791f08",
+    "browser-receipt.json": "954a89eb0f34d663e48caac7c1d5acb2ebd71fb3756da80ea9923e73cbc63b93",
+    "browser.mjs": "cf51f458d2737c5f2f8513667d067e481ede30ad6758444867fdc8d29ebc66ab",
+    "clips/page@784cca39f7f23f9459239a9a54dcf25d.webm": "ec85f0d3960f6da7f6a7afad7a87d398a16f3137906ee476bd50cb7b3ba9906c",
+    "contracts-result.txt": "bceac4293c7253c78aaaedf0968f391e5ea67f6c3dee80cb7acb199fbf1d242c",
+    "contracts.mjs": "c7742347ac20c50378aeca58163577f323d141cdc0b13363bb5cabbd71c79bef",
+    "preflight.json": "f77d55897b136049e53c7c2ddc95fb5e42d389d63bd37def736c08fece27d8a9",
+    "preparation.json": "226f10cc79304fe511d3bae49f597ea1d4ee09c4b85fc31da2c1d14871fc677b",
+    "prepare-harness.py": "8e404a3dad936bff581bd3bea4c2ba2bf8a72a7d5a9c90c2ab8cc2986db7a127",
+    "preservation-after.json": "7e1d2518da323ba391d17b35611f670ca326d252a1dc4e529f28976d0c2d2a5d",
+    "preservation-before.json": "b6e099a04bfaade96b0c081b111dafa2ebeea684bbebd363e2b03e6a93b9744e",
+    "receipt.json": "c8f2d87673a71170b3672ce36e0424320a2411605b6f854ed4d029fc6a9cde2c",
+    "root-go.json": "0729a2b33685b19948d504dc7abb3fc54be11dc2eeb1a4e7f3bdfc1eb750a42e",
+    "seal.json": "2c770584c4b1afe17fedbe11e528969cbddecdb5f41e8b9a241fe4171f01eb8e",
+    "seal.py": "2b101474549e35bae088204aa6c0c5ab1a7f42ead854b45fbdd9ea696ec42659",
+    "selected356.json": "d50c496b51e059bd8c0d07efcdd05abfb36af7b32f264461349f9c8a59b6658f",
+    "source-inventory.json": "05a993a81a325d84b304d0e799730c76d6a38e49194d41f0a889d336ddca13a9",
+    "trace-recovery-analysis.json": "31396d30bf7df21edef455f962f6aad0bd691e7699d46fd9d4dfa583e871472c",
+    "work-order.json": "c606a16a6e6b20ab43cb32634cdbd8be280e210e50de5a0f6f65a2034a623340"
+  },
+  "video": {
+    "source": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/mixed-gate-runtime-357/clips/page@784cca39f7f23f9459239a9a54dcf25d.webm",
+    "excerpt": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/mixed-gate-runtime-357/actual-transit-excerpt.webm",
+    "method": "ffmpeg retainedsourceonly last7seconds at67.24s; no gameplay/screenshot recomposition",
+    "timingLimit": "excerpt provenance does not prove missed actualtick crossing"
+  },
+  "cleanup": {
+    "rooms": 0,
+    "serverListening": false,
+    "browserClosed": true
+  },
+  "productionHealth": {
+    "ok": true,
+    "rooms": 0
+  },
+  "sealedStageBuildRetained": true,
+  "sourcePublicRuntimePreservationPASS": true
+}

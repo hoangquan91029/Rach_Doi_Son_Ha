@@ -1,0 +1,20 @@
+..E
+======================================================================
+ERROR: test_real356_static_candidate_wholepixels_and_custody (__main__.RealPackaging.test_real356_static_candidate_wholepixels_and_custody)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/whole-building-exporter-358/test_export.py", line 25, in test_real356_static_candidate_wholepixels_and_custody
+    j=job356();out=STAGE/'real356';ledger=adapter.export(self.write(j,'job356'),out,ROOT);a=json.loads((out/'manifest.json').read_text())['assets'][0]
+                                          ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/whole-building-exporter-358/export-whole2d-building-atlas.py", line 89, in export
+    validation=contract.validate_manifest(tmp/'manifest.json');require(validation['packaging']=='PASS','Authoritative raster validator failed')
+                                                               ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/whole-building-exporter-358/export-whole2d-building-atlas.py", line 12, in require
+    if not ok: raise ValueError(message)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Authoritative raster validator failed
+
+----------------------------------------------------------------------
+Ran 3 tests in 1.140s
+
+FAILED (errors=1)

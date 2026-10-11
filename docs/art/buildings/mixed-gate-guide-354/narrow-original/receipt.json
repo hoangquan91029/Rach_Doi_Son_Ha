@@ -1,0 +1,138 @@
+{
+  "order": 354,
+  "status": "CLOSED_COMPLETE_ORIGINAL_STRUCTURAL_GUIDE_ONLY_AWAIT_ROOT_INTAKE",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "low",
+  "candidate": "Gate completedidle mask5 axisX, original NW corner portal",
+  "canvas": [
+    1254,
+    1254
+  ],
+  "pivot": [
+    627,
+    900
+  ],
+  "runtimeCell": 128,
+  "logicalRender": 42.3225,
+  "projection": "sourceX=627+800*worldX-800*worldY; sourceY=900+400*worldX+400*worldY",
+  "jambs": [
+    {
+      "world": [
+        0,
+        -0.17
+      ],
+      "source": [
+        763,
+        832
+      ]
+    },
+    {
+      "world": [
+        -0.17,
+        0
+      ],
+      "source": [
+        491,
+        832
+      ]
+    }
+  ],
+  "neighborEndpoints": {
+    "+X": {
+      "world": [
+        0.5,
+        0
+      ],
+      "source": [
+        1027,
+        1100
+      ]
+    },
+    "+Y": {
+      "world": [
+        0,
+        0.5
+      ],
+      "source": [
+        227,
+        1100
+      ]
+    }
+  },
+  "wingPolylines": {
+    "left": [
+      [
+        491,
+        832
+      ],
+      [
+        91,
+        1032
+      ],
+      [
+        227,
+        1100
+      ]
+    ],
+    "right": [
+      [
+        763,
+        832
+      ],
+      [
+        1163,
+        1032
+      ],
+      [
+        1027,
+        1100
+      ]
+    ]
+  },
+  "wingWorldPolylines": {
+    "left": [
+      [
+        -0.17,
+        0
+      ],
+      [
+        -0.17,
+        0.5
+      ],
+      [
+        0,
+        0.5
+      ]
+    ],
+    "right": [
+      [
+        0,
+        -0.17
+      ],
+      [
+        0.5,
+        -0.17
+      ],
+      [
+        0.5,
+        0
+      ]
+    ]
+  },
+  "portalPlane": "worldX+worldY=-.17, midpoint(-.085,-.085)\u2192source627832; screenhorizontal overhead beam; no ground crosspiece",
+  "clearCorridorProposal": "North approach offset slightly west crosses NW portal away from jamb; center(0,0) lies behind portal inside open U; exit to West offset slightly north crosses same NW portal away from jamb. Exact North axis hits right jamb, exact West axis hits left jamb, so offset/angled waypoints are necessary. This guide does not certify engine trajectory.",
+  "geometryRationale": "Both wings follow dimetric X/Y directions with450px panel height, fullheight elbow/endpoint posts and stone feet. Shortreturns preserve exactneighbor registration; no missingneighbor -X fullwing or center spur. All ground geometry stays inside world[-.5,.5]^2.",
+  "occlusion": "Longwings drawn first; nearer outer shortreturns occlude wing endpoints. Portal posts and their stonefeet drawn together at matching depth; lintel above entire aperture. Interior belowportal and pivot627900 remains unpainted alpha.",
+  "renderer": "bundled sharp0.35.5 native SVG wholecanvas1254PNG; single fixed fullcanvas42px preview, no crop/fit/shift/assembly",
+  "imageCalls": 0,
+  "retries": 0,
+  "runtimeChanges": false,
+  "history": "349/351/352 retained unchanged.352 transitHOLD motivates reconsidering topology; does not infer351 art failure.",
+  "limits": [
+    "original complete vector authoring reference only, not finishedart",
+    "root brief42 guide intake pending",
+    "future builtin illustration requires separate rootGO",
+    "actual joins/picking/North-to-West aperture trajectory unproven",
+    "no build/test/browser/server/canonical/public mutation"
+  ]
+}

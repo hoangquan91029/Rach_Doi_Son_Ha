@@ -1,0 +1,32 @@
+{
+  "order": 364,
+  "status": "RETURNED_CLOSED",
+  "maxCalls": 1,
+  "retries": 0,
+  "method": "builtin_imagegen_whole2D",
+  "references": [
+    {
+      "path": "docs/art/buildings/stone-wall-guides-360/guide-Y.png",
+      "role": "Exact wholeY geometry",
+      "sha256": "41cd624b19387f47efcd20f01ffcf702a7f07da0376c102a8b4aec3391bae269"
+    },
+    {
+      "path": "docs/art/buildings/stone-wall-X-362/raw.png",
+      "role": "Stone material/style only",
+      "sha256": "687248f3c9c8d3a675dfa580d7c1f6c26e30114fb9f1f0450c9186df3dde773f"
+    }
+  ],
+  "canvas": [
+    1254,
+    1254
+  ],
+  "pivot": [
+    627,
+    900
+  ],
+  "runtimeCell": 128,
+  "logicalRender": 42.3225,
+  "prompt": "Use case: sketch-to-render. ONE finished whole painted 2D STONE fortification wall sprite for a realistic historical RTS. Input image1 is the EXACT Y-axis silhouette, geometry, placement and camera guide. Input image2 is material, stone color and illustrated realism reference ONLY; do not rotate or mirror it, do not use its X-axis geometry. Paint a new whole wall in the Y direction from image1, with the same convincingly real grey-beige cut limestone, recessed mortar, subtle worn block faces and lighter flat cap as image2. Soft light upper left. Long wall rises from lower-left toward upper-right, visible long face toward lower-right; preserve image1 dimensions and flush butt ends exactly. Wall foot-ground center (627,900), endpoints (1027,700) and (227,1100), source height550, uniform thickness, 1254-square equivalent with transparent margin ALL sides. Crucially keep guide ground-bottom line and height; do not extend bottom toward canvas edge. Do not enlarge/recenter/fit/crop, change camera, add taller posts or redesign cap. Realistic painterly historic RTS asset, professionally illustrated stone volume, NOT flat vector or 3D render. This is one continuous complete standalone illustration, not assembled parts. No wood/timber/fence/rails/beams, gate, towers, battlements, vegetation, ground tile or external shadow. No text/logo/watermark/outline. Genuine transparent background. Same family scale and anchors as input1; surface quality and material match input2. Readable tiny-gameplay masonry, no microscopic-detail obsession.",
+  "callsStarted": 1,
+  "callsCompleted": 1
+}

@@ -1,0 +1,62 @@
+{
+  "id": "stone-wall-X-362",
+  "family": "building.wall",
+  "kind": "building",
+  "state": "idle",
+  "direction": null,
+  "material": "stone",
+  "candidate": true,
+  "review": {
+    "status": "CANDIDATE"
+  },
+  "source": {
+    "path": "raw.png",
+    "sha256": "687248f3c9c8d3a675dfa580d7c1f6c26e30114fb9f1f0450c9186df3dde773f",
+    "rgbaSha256": "0e4d662bddd63eb90446dbf2c6bf5d71102a69ef017b91358812bf66215d4c76",
+    "width": 1254,
+    "height": 1254
+  },
+  "runtime": {
+    "path": "runtime.png",
+    "sha256": "3be7413c376dfd334a7c81bad66de3ad847207636095222f630907ce6c856a06",
+    "rgbaSha256": "46468503462e5e2dfa6e209d4f0bbf35aafa79aecf1f8c8b753fc75b122a2dad",
+    "width": 128,
+    "height": 128,
+    "derivation": {
+      "method": "resize",
+      "filter": "lanczos",
+      "sourceSha256": "687248f3c9c8d3a675dfa580d7c1f6c26e30114fb9f1f0450c9186df3dde773f"
+    }
+  },
+  "cell": {
+    "width": 128,
+    "height": 128
+  },
+  "pivot": {
+    "x": 627,
+    "y": 900,
+    "space": "source"
+  },
+  "render": {
+    "width": 42.3225,
+    "height": 42.3225
+  },
+  "alphaPolicy": "transparent",
+  "contactShadow": {
+    "mode": "baked"
+  },
+  "frames": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 1000
+    }
+  ],
+  "loop": true,
+  "fortification": {
+    "mask": 0
+  },
+  "notes": "Whole realistic cut stone X illustration. Selected source appearance only; actual joins not yet validated. No wood."
+}

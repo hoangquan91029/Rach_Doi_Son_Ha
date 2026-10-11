@@ -2761,1710 +2761,6 @@
       ]
     },
     {
-      "schema": "rds-whole-building-candidate/v1",
-      "id": "wall-whole-234-mask0",
-      "family": "building.wall",
-      "kind": "building",
-      "state": "idle",
-      "direction": null,
-      "candidate": true,
-      "review": {
-        "status": "CANDIDATE"
-      },
-      "source": {
-        "path": "docs/art/buildings/wall-x-idle-234/raw.png",
-        "width": 1254,
-        "height": 1254,
-        "sha256": "03da3ff197cb260fff4b6197a15255e472764fd61696a56e52d97fcf664eac55",
-        "rgbaSha256": "dfbbf9ccc8947df02ea1c7ce34ec395c3fb09d651b4446618177c6e6e05dbc8a"
-      },
-      "runtime": {
-        "path": "wall-234/idle.png",
-        "width": 128,
-        "height": 128,
-        "sha256": "58b99e4bd8bb4f6ecc3dcbb34d64a7999dbfef804aca9ba7e60e73fb508a100a",
-        "rgbaSha256": "51ef661119600a3e64fd52fd3c55a32e62cc871c360ae5ace21ada96d4b0fdb3",
-        "derivation": {
-          "method": "resize",
-          "filter": "lanczos",
-          "sourceSha256": "03da3ff197cb260fff4b6197a15255e472764fd61696a56e52d97fcf664eac55"
-        }
-      },
-      "cell": {
-        "width": 128,
-        "height": 128
-      },
-      "pivot": {
-        "x": 627,
-        "y": 900,
-        "space": "source"
-      },
-      "render": {
-        "width": 42.3225,
-        "height": 42.3225
-      },
-      "contactShadow": {
-        "mode": "baked"
-      },
-      "alphaPolicy": "transparent",
-      "frames": [
-        {
-          "x": 0,
-          "y": 0,
-          "width": 128,
-          "height": 128,
-          "durationMs": 600
-        }
-      ],
-      "loop": true,
-      "layoutReason": "Unchanged whole1254 square source uniformly exported to128 runtime cell; fixed source pivot627,900 and logical42.3225 square. One whole panel per living completed X-wall mask0/1/2/3; no fitting or pixel assembly.",
-      "unresolvedStates": [
-        "construction",
-        "attack",
-        "hit",
-        "death"
-      ],
-      "fortification": {
-        "mask": 0
-      },
-      "unresolvedTopology": "Y/end-Y/corner/T/cross masks4..15 use fallback; no whole artwork available."
-    },
-    {
-      "schema": "rds-whole-building-candidate/v1",
-      "id": "wall-whole-234-mask1",
-      "family": "building.wall",
-      "kind": "building",
-      "state": "idle",
-      "direction": null,
-      "candidate": true,
-      "review": {
-        "status": "CANDIDATE"
-      },
-      "source": {
-        "path": "docs/art/buildings/wall-x-idle-234/raw.png",
-        "width": 1254,
-        "height": 1254,
-        "sha256": "03da3ff197cb260fff4b6197a15255e472764fd61696a56e52d97fcf664eac55",
-        "rgbaSha256": "dfbbf9ccc8947df02ea1c7ce34ec395c3fb09d651b4446618177c6e6e05dbc8a"
-      },
-      "runtime": {
-        "path": "wall-234/idle.png",
-        "width": 128,
-        "height": 128,
-        "sha256": "58b99e4bd8bb4f6ecc3dcbb34d64a7999dbfef804aca9ba7e60e73fb508a100a",
-        "rgbaSha256": "51ef661119600a3e64fd52fd3c55a32e62cc871c360ae5ace21ada96d4b0fdb3",
-        "derivation": {
-          "method": "resize",
-          "filter": "lanczos",
-          "sourceSha256": "03da3ff197cb260fff4b6197a15255e472764fd61696a56e52d97fcf664eac55"
-        }
-      },
-      "cell": {
-        "width": 128,
-        "height": 128
-      },
-      "pivot": {
-        "x": 627,
-        "y": 900,
-        "space": "source"
-      },
-      "render": {
-        "width": 42.3225,
-        "height": 42.3225
-      },
-      "contactShadow": {
-        "mode": "baked"
-      },
-      "alphaPolicy": "transparent",
-      "frames": [
-        {
-          "x": 0,
-          "y": 0,
-          "width": 128,
-          "height": 128,
-          "durationMs": 600
-        }
-      ],
-      "loop": true,
-      "layoutReason": "Unchanged whole1254 square source uniformly exported to128 runtime cell; fixed source pivot627,900 and logical42.3225 square. One whole panel per living completed X-wall mask0/1/2/3; no fitting or pixel assembly.",
-      "unresolvedStates": [
-        "construction",
-        "attack",
-        "hit",
-        "death"
-      ],
-      "fortification": {
-        "mask": 1
-      },
-      "unresolvedTopology": "Y/end-Y/corner/T/cross masks4..15 use fallback; no whole artwork available."
-    },
-    {
-      "schema": "rds-whole-building-candidate/v1",
-      "id": "wall-whole-234-mask2",
-      "family": "building.wall",
-      "kind": "building",
-      "state": "idle",
-      "direction": null,
-      "candidate": true,
-      "review": {
-        "status": "CANDIDATE"
-      },
-      "source": {
-        "path": "docs/art/buildings/wall-x-idle-234/raw.png",
-        "width": 1254,
-        "height": 1254,
-        "sha256": "03da3ff197cb260fff4b6197a15255e472764fd61696a56e52d97fcf664eac55",
-        "rgbaSha256": "dfbbf9ccc8947df02ea1c7ce34ec395c3fb09d651b4446618177c6e6e05dbc8a"
-      },
-      "runtime": {
-        "path": "wall-234/idle.png",
-        "width": 128,
-        "height": 128,
-        "sha256": "58b99e4bd8bb4f6ecc3dcbb34d64a7999dbfef804aca9ba7e60e73fb508a100a",
-        "rgbaSha256": "51ef661119600a3e64fd52fd3c55a32e62cc871c360ae5ace21ada96d4b0fdb3",
-        "derivation": {
-          "method": "resize",
-          "filter": "lanczos",
-          "sourceSha256": "03da3ff197cb260fff4b6197a15255e472764fd61696a56e52d97fcf664eac55"
-        }
-      },
-      "cell": {
-        "width": 128,
-        "height": 128
-      },
-      "pivot": {
-        "x": 627,
-        "y": 900,
-        "space": "source"
-      },
-      "render": {
-        "width": 42.3225,
-        "height": 42.3225
-      },
-      "contactShadow": {
-        "mode": "baked"
-      },
-      "alphaPolicy": "transparent",
-      "frames": [
-        {
-          "x": 0,
-          "y": 0,
-          "width": 128,
-          "height": 128,
-          "durationMs": 600
-        }
-      ],
-      "loop": true,
-      "layoutReason": "Unchanged whole1254 square source uniformly exported to128 runtime cell; fixed source pivot627,900 and logical42.3225 square. One whole panel per living completed X-wall mask0/1/2/3; no fitting or pixel assembly.",
-      "unresolvedStates": [
-        "construction",
-        "attack",
-        "hit",
-        "death"
-      ],
-      "fortification": {
-        "mask": 2
-      },
-      "unresolvedTopology": "Y/end-Y/corner/T/cross masks4..15 use fallback; no whole artwork available."
-    },
-    {
-      "schema": "rds-whole-building-candidate/v1",
-      "id": "wall-whole-234-mask3",
-      "family": "building.wall",
-      "kind": "building",
-      "state": "idle",
-      "direction": null,
-      "candidate": true,
-      "review": {
-        "status": "CANDIDATE"
-      },
-      "source": {
-        "path": "docs/art/buildings/wall-x-idle-234/raw.png",
-        "width": 1254,
-        "height": 1254,
-        "sha256": "03da3ff197cb260fff4b6197a15255e472764fd61696a56e52d97fcf664eac55",
-        "rgbaSha256": "dfbbf9ccc8947df02ea1c7ce34ec395c3fb09d651b4446618177c6e6e05dbc8a"
-      },
-      "runtime": {
-        "path": "wall-234/idle.png",
-        "width": 128,
-        "height": 128,
-        "sha256": "58b99e4bd8bb4f6ecc3dcbb34d64a7999dbfef804aca9ba7e60e73fb508a100a",
-        "rgbaSha256": "51ef661119600a3e64fd52fd3c55a32e62cc871c360ae5ace21ada96d4b0fdb3",
-        "derivation": {
-          "method": "resize",
-          "filter": "lanczos",
-          "sourceSha256": "03da3ff197cb260fff4b6197a15255e472764fd61696a56e52d97fcf664eac55"
-        }
-      },
-      "cell": {
-        "width": 128,
-        "height": 128
-      },
-      "pivot": {
-        "x": 627,
-        "y": 900,
-        "space": "source"
-      },
-      "render": {
-        "width": 42.3225,
-        "height": 42.3225
-      },
-      "contactShadow": {
-        "mode": "baked"
-      },
-      "alphaPolicy": "transparent",
-      "frames": [
-        {
-          "x": 0,
-          "y": 0,
-          "width": 128,
-          "height": 128,
-          "durationMs": 600
-        }
-      ],
-      "loop": true,
-      "layoutReason": "Unchanged whole1254 square source uniformly exported to128 runtime cell; fixed source pivot627,900 and logical42.3225 square. One whole panel per living completed X-wall mask0/1/2/3; no fitting or pixel assembly.",
-      "unresolvedStates": [
-        "construction",
-        "attack",
-        "hit",
-        "death"
-      ],
-      "fortification": {
-        "mask": 3
-      },
-      "unresolvedTopology": "Y/end-Y/corner/T/cross masks4..15 use fallback; no whole artwork available."
-    },
-    {
-      "schema": "rds-whole-building-candidate/v1",
-      "id": "wall-whole-239-mask4",
-      "family": "building.wall",
-      "kind": "building",
-      "state": "idle",
-      "direction": null,
-      "candidate": true,
-      "review": {
-        "status": "CANDIDATE"
-      },
-      "source": {
-        "path": "docs/art/buildings/wall-y-idle-239/raw.png",
-        "width": 1254,
-        "height": 1254,
-        "sha256": "f66c5e98761c03c0d66d7af2fb04d7ffa5d7eefd0a17b8257ad0034e21473d51",
-        "rgbaSha256": "5383ebf3cfde2f93af59f46e3ac7540ae9a92af2b7619d3b95de2ea0ee2a7d53"
-      },
-      "runtime": {
-        "path": "wall-239/idle.png",
-        "width": 128,
-        "height": 128,
-        "sha256": "ae4e72aa88092e311cbbf598870e984d603481149f575487296221283915f72d",
-        "rgbaSha256": "c2d9488c5f00731ad461f2a95fc960972cf4052d10d058c60f2fd70e070abacc",
-        "derivation": {
-          "method": "resize",
-          "filter": "lanczos",
-          "sourceSha256": "f66c5e98761c03c0d66d7af2fb04d7ffa5d7eefd0a17b8257ad0034e21473d51"
-        }
-      },
-      "cell": {
-        "width": 128,
-        "height": 128
-      },
-      "pivot": {
-        "x": 627,
-        "y": 900,
-        "space": "source"
-      },
-      "render": {
-        "width": 42.3225,
-        "height": 42.3225
-      },
-      "contactShadow": {
-        "mode": "baked"
-      },
-      "alphaPolicy": "transparent",
-      "frames": [
-        {
-          "x": 0,
-          "y": 0,
-          "width": 128,
-          "height": 128,
-          "durationMs": 600
-        }
-      ],
-      "loop": true,
-      "layoutReason": "Unchanged whole2391254 Y-wall source uniformly exported128; fixedpivot627900/logical42.3225; one whole panel per livingcompletedYmask4/8/12, no fitting/transforms/assembly.",
-      "unresolvedStates": [
-        "construction",
-        "attack",
-        "hit",
-        "death"
-      ],
-      "fortification": {
-        "mask": 4
-      },
-      "unresolvedTopology": "ExistingX bindings remain; unsupported mixed corners/T/cross/gate fallback"
-    },
-    {
-      "schema": "rds-whole-building-candidate/v1",
-      "id": "wall-whole-239-mask8",
-      "family": "building.wall",
-      "kind": "building",
-      "state": "idle",
-      "direction": null,
-      "candidate": true,
-      "review": {
-        "status": "CANDIDATE"
-      },
-      "source": {
-        "path": "docs/art/buildings/wall-y-idle-239/raw.png",
-        "width": 1254,
-        "height": 1254,
-        "sha256": "f66c5e98761c03c0d66d7af2fb04d7ffa5d7eefd0a17b8257ad0034e21473d51",
-        "rgbaSha256": "5383ebf3cfde2f93af59f46e3ac7540ae9a92af2b7619d3b95de2ea0ee2a7d53"
-      },
-      "runtime": {
-        "path": "wall-239/idle.png",
-        "width": 128,
-        "height": 128,
-        "sha256": "ae4e72aa88092e311cbbf598870e984d603481149f575487296221283915f72d",
-        "rgbaSha256": "c2d9488c5f00731ad461f2a95fc960972cf4052d10d058c60f2fd70e070abacc",
-        "derivation": {
-          "method": "resize",
-          "filter": "lanczos",
-          "sourceSha256": "f66c5e98761c03c0d66d7af2fb04d7ffa5d7eefd0a17b8257ad0034e21473d51"
-        }
-      },
-      "cell": {
-        "width": 128,
-        "height": 128
-      },
-      "pivot": {
-        "x": 627,
-        "y": 900,
-        "space": "source"
-      },
-      "render": {
-        "width": 42.3225,
-        "height": 42.3225
-      },
-      "contactShadow": {
-        "mode": "baked"
-      },
-      "alphaPolicy": "transparent",
-      "frames": [
-        {
-          "x": 0,
-          "y": 0,
-          "width": 128,
-          "height": 128,
-          "durationMs": 600
-        }
-      ],
-      "loop": true,
-      "layoutReason": "Unchanged whole2391254 Y-wall source uniformly exported128; fixedpivot627900/logical42.3225; one whole panel per livingcompletedYmask4/8/12, no fitting/transforms/assembly.",
-      "unresolvedStates": [
-        "construction",
-        "attack",
-        "hit",
-        "death"
-      ],
-      "fortification": {
-        "mask": 8
-      },
-      "unresolvedTopology": "ExistingX bindings remain; unsupported mixed corners/T/cross/gate fallback"
-    },
-    {
-      "schema": "rds-whole-building-candidate/v1",
-      "id": "wall-whole-239-mask12",
-      "family": "building.wall",
-      "kind": "building",
-      "state": "idle",
-      "direction": null,
-      "candidate": true,
-      "review": {
-        "status": "CANDIDATE"
-      },
-      "source": {
-        "path": "docs/art/buildings/wall-y-idle-239/raw.png",
-        "width": 1254,
-        "height": 1254,
-        "sha256": "f66c5e98761c03c0d66d7af2fb04d7ffa5d7eefd0a17b8257ad0034e21473d51",
-        "rgbaSha256": "5383ebf3cfde2f93af59f46e3ac7540ae9a92af2b7619d3b95de2ea0ee2a7d53"
-      },
-      "runtime": {
-        "path": "wall-239/idle.png",
-        "width": 128,
-        "height": 128,
-        "sha256": "ae4e72aa88092e311cbbf598870e984d603481149f575487296221283915f72d",
-        "rgbaSha256": "c2d9488c5f00731ad461f2a95fc960972cf4052d10d058c60f2fd70e070abacc",
-        "derivation": {
-          "method": "resize",
-          "filter": "lanczos",
-          "sourceSha256": "f66c5e98761c03c0d66d7af2fb04d7ffa5d7eefd0a17b8257ad0034e21473d51"
-        }
-      },
-      "cell": {
-        "width": 128,
-        "height": 128
-      },
-      "pivot": {
-        "x": 627,
-        "y": 900,
-        "space": "source"
-      },
-      "render": {
-        "width": 42.3225,
-        "height": 42.3225
-      },
-      "contactShadow": {
-        "mode": "baked"
-      },
-      "alphaPolicy": "transparent",
-      "frames": [
-        {
-          "x": 0,
-          "y": 0,
-          "width": 128,
-          "height": 128,
-          "durationMs": 600
-        }
-      ],
-      "loop": true,
-      "layoutReason": "Unchanged whole2391254 Y-wall source uniformly exported128; fixedpivot627900/logical42.3225; one whole panel per livingcompletedYmask4/8/12, no fitting/transforms/assembly.",
-      "unresolvedStates": [
-        "construction",
-        "attack",
-        "hit",
-        "death"
-      ],
-      "fortification": {
-        "mask": 12
-      },
-      "unresolvedTopology": "ExistingX bindings remain; unsupported mixed corners/T/cross/gate fallback"
-    },
-    {
-      "id": "gate-whole-245-X-mask0",
-      "family": "building.gate",
-      "kind": "building",
-      "state": "idle",
-      "direction": null,
-      "candidate": true,
-      "review": {
-        "status": "CANDIDATE"
-      },
-      "source": {
-        "path": "docs/art/buildings/gate-x-idle-245/raw.png",
-        "sha256": "8a44cd1880468345e556f6aefaa02930be2072e9bfeed52ff8311f51ba635e98",
-        "rgbaSha256": "f9d9278641a9729a7d26095229ce3afd89e7e4805de79d11359e9b9d314552a0",
-        "width": 1254,
-        "height": 1254
-      },
-      "runtime": {
-        "path": "gate-245/idle.png",
-        "sha256": "89f18963d6d66452d584071e5158320c4168a6fb0d908c2ca06375759aaa6579",
-        "rgbaSha256": "84f80429a67e81015561d1922f33cc3540d252743d33b1cf13ea035c5a56448c",
-        "width": 128,
-        "height": 128,
-        "derivation": {
-          "method": "resize",
-          "filter": "lanczos",
-          "sourceSha256": "8a44cd1880468345e556f6aefaa02930be2072e9bfeed52ff8311f51ba635e98"
-        }
-      },
-      "cell": {
-        "width": 128,
-        "height": 128
-      },
-      "pivot": {
-        "x": 627,
-        "y": 900,
-        "space": "source"
-      },
-      "render": {
-        "width": 42.3225,
-        "height": 42.3225
-      },
-      "alphaPolicy": "transparent",
-      "contactShadow": {
-        "mode": "baked"
-      },
-      "frames": [
-        {
-          "x": 0,
-          "y": 0,
-          "width": 128,
-          "height": 128,
-          "durationMs": 1000
-        }
-      ],
-      "loop": true,
-      "fortification": {
-        "mask": 0,
-        "axis": "X"
-      },
-      "notes": "Whole245 GateX livingcompletedidle masks0/1/2/3 only; other gate axes/topologies/states fallback; no fitting/transforms/assembly."
-    },
-    {
-      "id": "gate-whole-245-X-mask1",
-      "family": "building.gate",
-      "kind": "building",
-      "state": "idle",
-      "direction": null,
-      "candidate": true,
-      "review": {
-        "status": "CANDIDATE"
-      },
-      "source": {
-        "path": "docs/art/buildings/gate-x-idle-245/raw.png",
-        "sha256": "8a44cd1880468345e556f6aefaa02930be2072e9bfeed52ff8311f51ba635e98",
-        "rgbaSha256": "f9d9278641a9729a7d26095229ce3afd89e7e4805de79d11359e9b9d314552a0",
-        "width": 1254,
-        "height": 1254
-      },
-      "runtime": {
-        "path": "gate-245/idle.png",
-        "sha256": "89f18963d6d66452d584071e5158320c4168a6fb0d908c2ca06375759aaa6579",
-        "rgbaSha256": "84f80429a67e81015561d1922f33cc3540d252743d33b1cf13ea035c5a56448c",
-        "width": 128,
-        "height": 128,
-        "derivation": {
-          "method": "resize",
-          "filter": "lanczos",
-          "sourceSha256": "8a44cd1880468345e556f6aefaa02930be2072e9bfeed52ff8311f51ba635e98"
-        }
-      },
-      "cell": {
-        "width": 128,
-        "height": 128
-      },
-      "pivot": {
-        "x": 627,
-        "y": 900,
-        "space": "source"
-      },
-      "render": {
-        "width": 42.3225,
-        "height": 42.3225
-      },
-      "alphaPolicy": "transparent",
-      "contactShadow": {
-        "mode": "baked"
-      },
-      "frames": [
-        {
-          "x": 0,
-          "y": 0,
-          "width": 128,
-          "height": 128,
-          "durationMs": 1000
-        }
-      ],
-      "loop": true,
-      "fortification": {
-        "mask": 1,
-        "axis": "X"
-      },
-      "notes": "Whole245 GateX livingcompletedidle masks0/1/2/3 only; other gate axes/topologies/states fallback; no fitting/transforms/assembly."
-    },
-    {
-      "id": "gate-whole-245-X-mask2",
-      "family": "building.gate",
-      "kind": "building",
-      "state": "idle",
-      "direction": null,
-      "candidate": true,
-      "review": {
-        "status": "CANDIDATE"
-      },
-      "source": {
-        "path": "docs/art/buildings/gate-x-idle-245/raw.png",
-        "sha256": "8a44cd1880468345e556f6aefaa02930be2072e9bfeed52ff8311f51ba635e98",
-        "rgbaSha256": "f9d9278641a9729a7d26095229ce3afd89e7e4805de79d11359e9b9d314552a0",
-        "width": 1254,
-        "height": 1254
-      },
-      "runtime": {
-        "path": "gate-245/idle.png",
-        "sha256": "89f18963d6d66452d584071e5158320c4168a6fb0d908c2ca06375759aaa6579",
-        "rgbaSha256": "84f80429a67e81015561d1922f33cc3540d252743d33b1cf13ea035c5a56448c",
-        "width": 128,
-        "height": 128,
-        "derivation": {
-          "method": "resize",
-          "filter": "lanczos",
-          "sourceSha256": "8a44cd1880468345e556f6aefaa02930be2072e9bfeed52ff8311f51ba635e98"
-        }
-      },
-      "cell": {
-        "width": 128,
-        "height": 128
-      },
-      "pivot": {
-        "x": 627,
-        "y": 900,
-        "space": "source"
-      },
-      "render": {
-        "width": 42.3225,
-        "height": 42.3225
-      },
-      "alphaPolicy": "transparent",
-      "contactShadow": {
-        "mode": "baked"
-      },
-      "frames": [
-        {
-          "x": 0,
-          "y": 0,
-          "width": 128,
-          "height": 128,
-          "durationMs": 1000
-        }
-      ],
-      "loop": true,
-      "fortification": {
-        "mask": 2,
-        "axis": "X"
-      },
-      "notes": "Whole245 GateX livingcompletedidle masks0/1/2/3 only; other gate axes/topologies/states fallback; no fitting/transforms/assembly."
-    },
-    {
-      "id": "gate-whole-245-X-mask3",
-      "family": "building.gate",
-      "kind": "building",
-      "state": "idle",
-      "direction": null,
-      "candidate": true,
-      "review": {
-        "status": "CANDIDATE"
-      },
-      "source": {
-        "path": "docs/art/buildings/gate-x-idle-245/raw.png",
-        "sha256": "8a44cd1880468345e556f6aefaa02930be2072e9bfeed52ff8311f51ba635e98",
-        "rgbaSha256": "f9d9278641a9729a7d26095229ce3afd89e7e4805de79d11359e9b9d314552a0",
-        "width": 1254,
-        "height": 1254
-      },
-      "runtime": {
-        "path": "gate-245/idle.png",
-        "sha256": "89f18963d6d66452d584071e5158320c4168a6fb0d908c2ca06375759aaa6579",
-        "rgbaSha256": "84f80429a67e81015561d1922f33cc3540d252743d33b1cf13ea035c5a56448c",
-        "width": 128,
-        "height": 128,
-        "derivation": {
-          "method": "resize",
-          "filter": "lanczos",
-          "sourceSha256": "8a44cd1880468345e556f6aefaa02930be2072e9bfeed52ff8311f51ba635e98"
-        }
-      },
-      "cell": {
-        "width": 128,
-        "height": 128
-      },
-      "pivot": {
-        "x": 627,
-        "y": 900,
-        "space": "source"
-      },
-      "render": {
-        "width": 42.3225,
-        "height": 42.3225
-      },
-      "alphaPolicy": "transparent",
-      "contactShadow": {
-        "mode": "baked"
-      },
-      "frames": [
-        {
-          "x": 0,
-          "y": 0,
-          "width": 128,
-          "height": 128,
-          "durationMs": 1000
-        }
-      ],
-      "loop": true,
-      "fortification": {
-        "mask": 3,
-        "axis": "X"
-      },
-      "notes": "Whole245 GateX livingcompletedidle masks0/1/2/3 only; other gate axes/topologies/states fallback; no fitting/transforms/assembly."
-    },
-    {
-      "id": "wall-whole-248-mask5",
-      "family": "building.wall",
-      "kind": "building",
-      "state": "idle",
-      "direction": null,
-      "candidate": true,
-      "review": {
-        "status": "CANDIDATE"
-      },
-      "source": {
-        "path": "raw.png",
-        "sha256": "6669a4209aec90aba2ea1f2318d931b00d30161df58caac69f8536944d25a971",
-        "rgbaSha256": "b7e9915c97ff158f85375b492098b10c4d86f0d2a0f27db195533679890ad574",
-        "width": 1254,
-        "height": 1254
-      },
-      "runtime": {
-        "path": "corner-248/idle.png",
-        "sha256": "a2836750eb5efa33567996d664de57a1c5b3fad4dcf2c44dd25069bfc4cd84ea",
-        "rgbaSha256": "001c70c4c5562cf7dc6c81c60fda4ef8f76befc782ed31cbb06c76cd19b17ea7",
-        "width": 128,
-        "height": 128,
-        "derivation": {
-          "method": "resize",
-          "filter": "lanczos",
-          "sourceSha256": "6669a4209aec90aba2ea1f2318d931b00d30161df58caac69f8536944d25a971"
-        }
-      },
-      "cell": {
-        "width": 128,
-        "height": 128
-      },
-      "pivot": {
-        "x": 627,
-        "y": 900,
-        "space": "source"
-      },
-      "render": {
-        "width": 42.3225,
-        "height": 42.3225
-      },
-      "alphaPolicy": "transparent",
-      "contactShadow": {
-        "mode": "baked"
-      },
-      "frames": [
-        {
-          "x": 0,
-          "y": 0,
-          "width": 128,
-          "height": 128,
-          "durationMs": 1000
-        }
-      ],
-      "loop": true,
-      "fortification": {
-        "mask": 5
-      },
-      "notes": "Whole +X/+Y corner candidate; no wallaxis. Only mask5 living completed idle authored. Joins/alpha selection pending actual finite trial."
-    },
-    {
-      "id": "gate-whole-252-Y-mask4",
-      "family": "building.gate",
-      "kind": "building",
-      "state": "idle",
-      "direction": null,
-      "candidate": true,
-      "review": {
-        "status": "CANDIDATE"
-      },
-      "source": {
-        "path": "docs/art/buildings/gate-y-idle-252/raw.png",
-        "width": 1254,
-        "height": 1254,
-        "sha256": "1a11271507f99e69ea2840ca3a400a10fb463767ceea6d29f479b68f5245efcc",
-        "rgbaSha256": "cba03533bf44dcefa6d4edbecffd78f937bc2667bd4abf292e2b2044b1cfc8e0"
-      },
-      "runtime": {
-        "path": "gate-252/idle.png",
-        "width": 128,
-        "height": 128,
-        "sha256": "867ba2b2e8e15f4d1c2011defebeb2c5fd3cd704722ba10bf2a6b637b765fbd1",
-        "rgbaSha256": "4b9985e32c70e976aed4c8204629fc51bc99bf6ebf2e495cd264a5d12045d93e",
-        "derivation": {
-          "method": "resize",
-          "filter": "lanczos",
-          "sourceSha256": "1a11271507f99e69ea2840ca3a400a10fb463767ceea6d29f479b68f5245efcc"
-        }
-      },
-      "cell": {
-        "width": 128,
-        "height": 128
-      },
-      "pivot": {
-        "x": 627,
-        "y": 900,
-        "space": "source"
-      },
-      "render": {
-        "width": 42.3225,
-        "height": 42.3225
-      },
-      "alphaPolicy": "transparent",
-      "contactShadow": {
-        "mode": "baked"
-      },
-      "frames": [
-        {
-          "x": 0,
-          "y": 0,
-          "width": 128,
-          "height": 128,
-          "durationMs": 1000
-        }
-      ],
-      "loop": true,
-      "fortification": {
-        "mask": 4,
-        "axis": "Y"
-      },
-      "notes": "Whole GateY candidate only; actualjoins/opaque selection/friendlytransit pending; no per-imagefit/transforms/pixelassembly."
-    },
-    {
-      "id": "gate-whole-252-Y-mask8",
-      "family": "building.gate",
-      "kind": "building",
-      "state": "idle",
-      "direction": null,
-      "candidate": true,
-      "review": {
-        "status": "CANDIDATE"
-      },
-      "source": {
-        "path": "docs/art/buildings/gate-y-idle-252/raw.png",
-        "width": 1254,
-        "height": 1254,
-        "sha256": "1a11271507f99e69ea2840ca3a400a10fb463767ceea6d29f479b68f5245efcc",
-        "rgbaSha256": "cba03533bf44dcefa6d4edbecffd78f937bc2667bd4abf292e2b2044b1cfc8e0"
-      },
-      "runtime": {
-        "path": "gate-252/idle.png",
-        "width": 128,
-        "height": 128,
-        "sha256": "867ba2b2e8e15f4d1c2011defebeb2c5fd3cd704722ba10bf2a6b637b765fbd1",
-        "rgbaSha256": "4b9985e32c70e976aed4c8204629fc51bc99bf6ebf2e495cd264a5d12045d93e",
-        "derivation": {
-          "method": "resize",
-          "filter": "lanczos",
-          "sourceSha256": "1a11271507f99e69ea2840ca3a400a10fb463767ceea6d29f479b68f5245efcc"
-        }
-      },
-      "cell": {
-        "width": 128,
-        "height": 128
-      },
-      "pivot": {
-        "x": 627,
-        "y": 900,
-        "space": "source"
-      },
-      "render": {
-        "width": 42.3225,
-        "height": 42.3225
-      },
-      "alphaPolicy": "transparent",
-      "contactShadow": {
-        "mode": "baked"
-      },
-      "frames": [
-        {
-          "x": 0,
-          "y": 0,
-          "width": 128,
-          "height": 128,
-          "durationMs": 1000
-        }
-      ],
-      "loop": true,
-      "fortification": {
-        "mask": 8,
-        "axis": "Y"
-      },
-      "notes": "Whole GateY candidate only; actualjoins/opaque selection/friendlytransit pending; no per-imagefit/transforms/pixelassembly."
-    },
-    {
-      "id": "gate-whole-252-Y-mask12",
-      "family": "building.gate",
-      "kind": "building",
-      "state": "idle",
-      "direction": null,
-      "candidate": true,
-      "review": {
-        "status": "CANDIDATE"
-      },
-      "source": {
-        "path": "docs/art/buildings/gate-y-idle-252/raw.png",
-        "width": 1254,
-        "height": 1254,
-        "sha256": "1a11271507f99e69ea2840ca3a400a10fb463767ceea6d29f479b68f5245efcc",
-        "rgbaSha256": "cba03533bf44dcefa6d4edbecffd78f937bc2667bd4abf292e2b2044b1cfc8e0"
-      },
-      "runtime": {
-        "path": "gate-252/idle.png",
-        "width": 128,
-        "height": 128,
-        "sha256": "867ba2b2e8e15f4d1c2011defebeb2c5fd3cd704722ba10bf2a6b637b765fbd1",
-        "rgbaSha256": "4b9985e32c70e976aed4c8204629fc51bc99bf6ebf2e495cd264a5d12045d93e",
-        "derivation": {
-          "method": "resize",
-          "filter": "lanczos",
-          "sourceSha256": "1a11271507f99e69ea2840ca3a400a10fb463767ceea6d29f479b68f5245efcc"
-        }
-      },
-      "cell": {
-        "width": 128,
-        "height": 128
-      },
-      "pivot": {
-        "x": 627,
-        "y": 900,
-        "space": "source"
-      },
-      "render": {
-        "width": 42.3225,
-        "height": 42.3225
-      },
-      "alphaPolicy": "transparent",
-      "contactShadow": {
-        "mode": "baked"
-      },
-      "frames": [
-        {
-          "x": 0,
-          "y": 0,
-          "width": 128,
-          "height": 128,
-          "durationMs": 1000
-        }
-      ],
-      "loop": true,
-      "fortification": {
-        "mask": 12,
-        "axis": "Y"
-      },
-      "notes": "Whole GateY candidate only; actualjoins/opaque selection/friendlytransit pending; no per-imagefit/transforms/pixelassembly."
-    },
-    {
-      "id": "wall-whole-263-mask6",
-      "family": "building.wall",
-      "kind": "building",
-      "state": "idle",
-      "direction": null,
-      "candidate": true,
-      "review": {
-        "status": "CANDIDATE"
-      },
-      "source": {
-        "path": "docs/art/buildings/wall-corner6-idle-263/raw.png",
-        "sha256": "578bee5713f7ffd15fc53ce21d82ac4bdeaf0520a522d5030987f5589dc8ab83",
-        "rgbaSha256": "1cf0140b1e85e200f753609b41411b158ba79bf7e856585cc67d09e52b061de4",
-        "width": 1254,
-        "height": 1254
-      },
-      "runtime": {
-        "path": "corner-263/idle.png",
-        "sha256": "621d0ae0ba411a15944732d3fba6570bba8a6b3775e5eef5b67a9cc172cb6825",
-        "rgbaSha256": "8e0b0ea600c827ed6b3b668ed98f0f3c570ab59a6af3763d24d6aed04dc465aa",
-        "width": 128,
-        "height": 128,
-        "derivation": {
-          "method": "resize",
-          "filter": "lanczos",
-          "sourceSha256": "578bee5713f7ffd15fc53ce21d82ac4bdeaf0520a522d5030987f5589dc8ab83"
-        }
-      },
-      "cell": {
-        "width": 128,
-        "height": 128
-      },
-      "pivot": {
-        "x": 627,
-        "y": 900,
-        "space": "source"
-      },
-      "render": {
-        "width": 42.3225,
-        "height": 42.3225
-      },
-      "alphaPolicy": "transparent",
-      "contactShadow": {
-        "mode": "baked"
-      },
-      "frames": [
-        {
-          "x": 0,
-          "y": 0,
-          "width": 128,
-          "height": 128,
-          "durationMs": 1000
-        }
-      ],
-      "loop": true,
-      "fortification": {
-        "mask": 6
-      },
-      "notes": "Whole -X/+Y corner candidate; no wallaxis. Only mask6 living completed idle authored. Actual joins and alpha picking unverified."
-    },
-    {
-      "id": "wall-whole-264-mask9",
-      "family": "building.wall",
-      "kind": "building",
-      "state": "idle",
-      "direction": null,
-      "candidate": true,
-      "review": {
-        "status": "CANDIDATE"
-      },
-      "source": {
-        "path": "docs/art/buildings/wall-corner9-idle-264/raw.png",
-        "sha256": "365123be7847472fb0a9dc7754133d166e624d0d191e09fd48a935976e2fc435",
-        "rgbaSha256": "941647488dbe82a7bddb1c1fef9ae6f75d5452fa346b6dce52d604edfadd441f",
-        "width": 1254,
-        "height": 1254,
-        "mode": "RGBA"
-      },
-      "runtime": {
-        "path": "corner-264/idle.png",
-        "sha256": "6cb298c8033a9d880fef54cf93b1f0b39e9bda1749fcc2a69813e5d5b558b4df",
-        "rgbaSha256": "0fa93bc40e5d9517b7e2d6864fcec3f384a63aec14869b45886c1f8b55d95a85",
-        "width": 128,
-        "height": 128,
-        "mode": "RGBA",
-        "derivation": {
-          "method": "resize",
-          "filter": "lanczos",
-          "sourceSha256": "365123be7847472fb0a9dc7754133d166e624d0d191e09fd48a935976e2fc435"
-        }
-      },
-      "cell": {
-        "width": 128,
-        "height": 128
-      },
-      "pivot": {
-        "x": 627,
-        "y": 900,
-        "space": "source"
-      },
-      "render": {
-        "width": 42.3225,
-        "height": 42.3225
-      },
-      "alphaPolicy": "transparent",
-      "contactShadow": {
-        "mode": "baked"
-      },
-      "frames": [
-        {
-          "x": 0,
-          "y": 0,
-          "width": 128,
-          "height": 128,
-          "durationMs": 1000
-        }
-      ],
-      "loop": true,
-      "fortification": {
-        "mask": 9
-      },
-      "notes": "Whole +X/-Y corner candidate only; no wallaxis. Actual joins/alpha picking pending."
-    },
-    {
-      "id": "wall-whole-265-mask10",
-      "family": "building.wall",
-      "kind": "building",
-      "state": "idle",
-      "direction": null,
-      "candidate": true,
-      "review": {
-        "status": "CANDIDATE"
-      },
-      "source": {
-        "path": "docs/art/buildings/wall-corner10-idle-265/raw.png",
-        "sha256": "427926626c058f8a1570518ba6b60aed64d76314de279abfcccb0251d3b91017",
-        "rgbaSha256": "cd385b138ed7deef87c22a8f6ef515bab7b0ba0a0aab77fa4a6034b3c3c90a8b",
-        "width": 1254,
-        "height": 1254
-      },
-      "runtime": {
-        "path": "corner-265/idle.png",
-        "sha256": "16697e3c43d00bcff43a421a26c74e6625cf92314a21f4c43e37ad4eeaa9a110",
-        "rgbaSha256": "1d36eb987bb2510107162a6f030cef4ce9bd770b0f9eaa9feb9ae811cf53e8bf",
-        "width": 128,
-        "height": 128,
-        "derivation": {
-          "method": "resize",
-          "filter": "lanczos",
-          "sourceSha256": "427926626c058f8a1570518ba6b60aed64d76314de279abfcccb0251d3b91017"
-        }
-      },
-      "cell": {
-        "width": 128,
-        "height": 128
-      },
-      "pivot": {
-        "x": 627,
-        "y": 900,
-        "space": "source"
-      },
-      "render": {
-        "width": 42.3225,
-        "height": 42.3225
-      },
-      "alphaPolicy": "transparent",
-      "contactShadow": {
-        "mode": "baked"
-      },
-      "frames": [
-        {
-          "x": 0,
-          "y": 0,
-          "width": 128,
-          "height": 128,
-          "durationMs": 1000
-        }
-      ],
-      "loop": true,
-      "fortification": {
-        "mask": 10
-      },
-      "notes": "Whole -X/-Y corner candidate only; living completed idle; root intake and actual joins/picking pending."
-    },
-    {
-      "id": "wall-whole-construction-278-mask0",
-      "family": "building.wall",
-      "kind": "building",
-      "state": "construction",
-      "direction": null,
-      "candidate": true,
-      "review": {
-        "status": "CANDIDATE"
-      },
-      "source": {
-        "path": "docs/art/buildings/wall-construction-idle-278/raw.png",
-        "sha256": "8076d8ad46925e9569441f2e021caede18050eab9be38489024e474104706b12",
-        "rgbaSha256": "f00136e71e776b5b0193418b1513137e9bd5998571e31d7901dd75f744412850",
-        "width": 1254,
-        "height": 1254
-      },
-      "runtime": {
-        "path": "wall-construction-278/runtime.png",
-        "sha256": "4afd6d3a4c41ee31dfbdcf723b2526a20f8f6cffac8bbf80a0e21d894c571805",
-        "rgbaSha256": "04a9874cf160cc7bb4ae6e572359876678241d8f215291f2cd04f8325efd7b43",
-        "width": 128,
-        "height": 128,
-        "derivation": {
-          "method": "resize",
-          "filter": "lanczos",
-          "sourceSha256": "8076d8ad46925e9569441f2e021caede18050eab9be38489024e474104706b12"
-        }
-      },
-      "cell": {
-        "width": 128,
-        "height": 128
-      },
-      "pivot": {
-        "x": 627,
-        "y": 900,
-        "space": "source"
-      },
-      "render": {
-        "width": 42.3225,
-        "height": 42.3225
-      },
-      "alphaPolicy": "transparent",
-      "contactShadow": {
-        "mode": "baked"
-      },
-      "frames": [
-        {
-          "x": 0,
-          "y": 0,
-          "width": 128,
-          "height": 128,
-          "durationMs": 1000
-        }
-      ],
-      "loop": true,
-      "fortification": {
-        "mask": 0
-      },
-      "notes": "ONE static unfinished standalone construction-stage candidate. Not complete construction animation, no private progress or completed neighbor links. Actual transition/picking unverified."
-    },
-    {
-      "id": "wall-whole-274-mask7",
-      "family": "building.wall",
-      "kind": "building",
-      "state": "idle",
-      "direction": null,
-      "candidate": true,
-      "review": {
-        "status": "CANDIDATE"
-      },
-      "source": {
-        "path": "docs/art/buildings/wall-t7-idle-274/raw.png",
-        "sha256": "d285e0f21456395b10e55ca4bf2e5744b209af021e9bc3172422b9c1a6749118",
-        "rgbaSha256": "28164bda96035775ccc52148833d4804939fc51cff44cd5e29c311dd937bc0e8",
-        "width": 1254,
-        "height": 1254
-      },
-      "runtime": {
-        "path": "wall-t7-274/idle.png",
-        "sha256": "b744d2cd3bf0ea0b91a2c04c7ee15705baf2f23435e8655fae92eaebaca1344b",
-        "rgbaSha256": "b3c05a308224a3f4d46d64dc33183ea76df921443679add2883bdad57c473858",
-        "width": 128,
-        "height": 128,
-        "derivation": {
-          "method": "resize",
-          "filter": "lanczos",
-          "sourceSha256": "d285e0f21456395b10e55ca4bf2e5744b209af021e9bc3172422b9c1a6749118"
-        }
-      },
-      "cell": {
-        "width": 128,
-        "height": 128
-      },
-      "pivot": {
-        "x": 627,
-        "y": 900,
-        "space": "source"
-      },
-      "render": {
-        "width": 42.3225,
-        "height": 42.3225
-      },
-      "alphaPolicy": "transparent",
-      "contactShadow": {
-        "mode": "baked"
-      },
-      "frames": [
-        {
-          "x": 0,
-          "y": 0,
-          "width": 128,
-          "height": 128,
-          "durationMs": 1000
-        }
-      ],
-      "loop": true,
-      "fortification": {
-        "mask": 7
-      },
-      "notes": "Whole +X/-X/+Y T junction candidate; mask only, no wallaxis. Living completed idle only. Actual joins and alpha picking unverified."
-    },
-    {
-      "id": "wall-whole-275-mask11",
-      "family": "building.wall",
-      "kind": "building",
-      "state": "idle",
-      "direction": null,
-      "candidate": true,
-      "review": {
-        "status": "CANDIDATE"
-      },
-      "source": {
-        "path": "docs/art/buildings/wall-t11-idle-275/raw.png",
-        "sha256": "7063ca876bf77c85eeeca91013f574cabf7939e485c37a4ab3779e43c330f011",
-        "rgbaSha256": "3ebbca550967e256e98a955389750ad82c1e682d6656eba99d2902c53cdcc241",
-        "width": 1254,
-        "height": 1254
-      },
-      "runtime": {
-        "path": "wall-t11-275/idle.png",
-        "sha256": "4be719a0405b51cbbb4fc8a603e45da1877ac0f2476b58592246370234caedf0",
-        "rgbaSha256": "8ceacad1009f6e2c82f965d2b4d9d3ad32572bc18971161b4b6e05980b12ef65",
-        "width": 128,
-        "height": 128,
-        "derivation": {
-          "method": "resize",
-          "filter": "lanczos",
-          "sourceSha256": "7063ca876bf77c85eeeca91013f574cabf7939e485c37a4ab3779e43c330f011"
-        }
-      },
-      "cell": {
-        "width": 128,
-        "height": 128
-      },
-      "pivot": {
-        "x": 627,
-        "y": 900,
-        "space": "source"
-      },
-      "render": {
-        "width": 42.3225,
-        "height": 42.3225
-      },
-      "alphaPolicy": "transparent",
-      "contactShadow": {
-        "mode": "baked"
-      },
-      "frames": [
-        {
-          "x": 0,
-          "y": 0,
-          "width": 128,
-          "height": 128,
-          "durationMs": 1000
-        }
-      ],
-      "loop": true,
-      "fortification": {
-        "mask": 11
-      },
-      "notes": "Whole +X/-X/-Y T junction candidate. No wallaxis. Actual joins and alpha picking unverified; no visual acceptance."
-    },
-    {
-      "id": "wall-whole-280-mask13",
-      "family": "building.wall",
-      "kind": "building",
-      "state": "idle",
-      "direction": null,
-      "candidate": true,
-      "review": {
-        "status": "CANDIDATE"
-      },
-      "source": {
-        "path": "docs/art/buildings/wall-t13-idle-280/raw.png",
-        "sha256": "8a8b5a74dae1f4cf37f329aa87c4433ac85a17f03415a24e6f674f0bc5fb84df",
-        "rgbaSha256": "d70a80f84369b0bf4335561cad81b709ca212c1a5c59eb3c4b5ef2cca7667388",
-        "width": 1254,
-        "height": 1254
-      },
-      "runtime": {
-        "path": "wall-13-280/idle.png",
-        "sha256": "3bf44c6ce79a9c0a42bf32bcbedee86605e866e8ac6ae020f7399d28085c6f2f",
-        "rgbaSha256": "89a5b44730a3cd3229d447443cb5a6a8d3b3e6be8dc4ec69590dfce7e6c49ab2",
-        "width": 128,
-        "height": 128,
-        "derivation": {
-          "method": "resize",
-          "filter": "lanczos",
-          "sourceSha256": "8a8b5a74dae1f4cf37f329aa87c4433ac85a17f03415a24e6f674f0bc5fb84df"
-        }
-      },
-      "cell": {
-        "width": 128,
-        "height": 128
-      },
-      "pivot": {
-        "x": 627,
-        "y": 900,
-        "space": "source"
-      },
-      "render": {
-        "width": 42.3225,
-        "height": 42.3225
-      },
-      "alphaPolicy": "transparent",
-      "contactShadow": {
-        "mode": "baked"
-      },
-      "frames": [
-        {
-          "x": 0,
-          "y": 0,
-          "width": 128,
-          "height": 128,
-          "durationMs": 1000
-        }
-      ],
-      "loop": true,
-      "fortification": {
-        "mask": 13
-      },
-      "notes": "Whole +X/+Y/-Y T13 candidate. No wallaxis. Three branches readable; returned extent expanded despite prompt. Actual joins/picking/root acceptance pending."
-    },
-    {
-      "id": "wall-whole-282-mask14",
-      "family": "building.wall",
-      "kind": "building",
-      "state": "idle",
-      "direction": null,
-      "candidate": true,
-      "review": {
-        "status": "CANDIDATE"
-      },
-      "source": {
-        "path": "docs/art/buildings/wall-t14-idle-282/raw.png",
-        "sha256": "2d1231105ba2230abc1175c5cb8bd8c0a038eef0e84cb434ea3e17317e31788e",
-        "rgbaSha256": "475e523eedc5e0d31a86a7ee42659ab5dea1a80ca49d3cf97cb912550b9baddc",
-        "width": 1254,
-        "height": 1254
-      },
-      "runtime": {
-        "path": "wall-14-282/idle.png",
-        "sha256": "833944e0e26ef6c20117d1eab468dc985c847336da85dbd8eb3869f1a9fd00e6",
-        "rgbaSha256": "7e969a91ba42cc1a9edbd2f1cbbd466334945c9683d0c695a92ef026cea1b1a7",
-        "width": 128,
-        "height": 128,
-        "derivation": {
-          "method": "resize",
-          "filter": "lanczos",
-          "sourceSha256": "2d1231105ba2230abc1175c5cb8bd8c0a038eef0e84cb434ea3e17317e31788e"
-        }
-      },
-      "cell": {
-        "width": 128,
-        "height": 128
-      },
-      "pivot": {
-        "x": 627,
-        "y": 900,
-        "space": "source"
-      },
-      "render": {
-        "width": 42.3225,
-        "height": 42.3225
-      },
-      "alphaPolicy": "transparent",
-      "contactShadow": {
-        "mode": "baked"
-      },
-      "frames": [
-        {
-          "x": 0,
-          "y": 0,
-          "width": 128,
-          "height": 128,
-          "durationMs": 1000
-        }
-      ],
-      "loop": true,
-      "fortification": {
-        "mask": 14
-      },
-      "notes": "Whole -X/+Y/-Y T14 candidate. No wallaxis. Root appearance and actual joins/picking pending."
-    },
-    {
-      "id": "wall-whole-288-mask15",
-      "family": "building.wall",
-      "kind": "building",
-      "state": "idle",
-      "direction": null,
-      "candidate": true,
-      "review": {
-        "status": "CANDIDATE"
-      },
-      "source": {
-        "path": "docs/art/buildings/wall-cross-idle-288/raw.png",
-        "sha256": "5cd56f75c0521fa2dc4b5e99db7420410d61fe12cb5151e3e872289e028bc1af",
-        "rgbaSha256": "b3ce3c14af98a794ed481c12f8962f415373b5a5b907684fabb4130f2d1ebaf3",
-        "width": 1254,
-        "height": 1254
-      },
-      "runtime": {
-        "path": "wall-15-288/idle.png",
-        "sha256": "a522781ca99d618f6f8860ea57eee918678e8b2a43c1c9b8f2ac47f8084bafbd",
-        "rgbaSha256": "f348142fda99dbce089ad3f53e88e876fe4752f2f4e4fbbc8cc75d34e0de4ff3",
-        "width": 128,
-        "height": 128,
-        "derivation": {
-          "method": "resize",
-          "filter": "lanczos",
-          "sourceSha256": "5cd56f75c0521fa2dc4b5e99db7420410d61fe12cb5151e3e872289e028bc1af"
-        }
-      },
-      "cell": {
-        "width": 128,
-        "height": 128
-      },
-      "pivot": {
-        "x": 627,
-        "y": 900,
-        "space": "source"
-      },
-      "render": {
-        "width": 42.3225,
-        "height": 42.3225
-      },
-      "alphaPolicy": "transparent",
-      "contactShadow": {
-        "mode": "baked"
-      },
-      "frames": [
-        {
-          "x": 0,
-          "y": 0,
-          "width": 128,
-          "height": 128,
-          "durationMs": 1000
-        }
-      ],
-      "loop": true,
-      "fortification": {
-        "mask": 15
-      },
-      "notes": "Whole fourbranch cross15 candidate. No wallaxis. Root appearance and actual joins/picking pending."
-    },
-    {
-      "id": "wall-whole-wreck-key-292-mask0",
-      "family": "building.wall",
-      "kind": "building",
-      "state": "death",
-      "direction": null,
-      "candidate": true,
-      "review": {
-        "status": "CANDIDATE"
-      },
-      "source": {
-        "path": "docs/art/buildings/wall-wreck-key-292/raw.png",
-        "sha256": "57c63e5a37296c0687d98f760387243471b8c07a16429c0dd6c90a467dfcd276",
-        "rgbaSha256": "1e2eefe72a2e4ba1451ccdb1be37a1da58ad6ddea1412dcb3878ef7ec4c5520f",
-        "width": 1254,
-        "height": 1254
-      },
-      "runtime": {
-        "path": "wall-wreck-292/runtime.png",
-        "sha256": "2bdfe6c5f6c6c15fc9746a80b4676767f52cbb292bb899ed0a689b1183641068",
-        "rgbaSha256": "d915751e388f1081762828aa8c9dbaacbf179b1530dec328ebff994f001b4582",
-        "width": 128,
-        "height": 128,
-        "derivation": {
-          "method": "resize",
-          "filter": "lanczos",
-          "sourceSha256": "57c63e5a37296c0687d98f760387243471b8c07a16429c0dd6c90a467dfcd276"
-        }
-      },
-      "cell": {
-        "width": 128,
-        "height": 128
-      },
-      "pivot": {
-        "x": 627,
-        "y": 900,
-        "space": "source"
-      },
-      "render": {
-        "width": 42.3225,
-        "height": 42.3225
-      },
-      "alphaPolicy": "transparent",
-      "contactShadow": {
-        "mode": "baked"
-      },
-      "frames": [
-        {
-          "x": 0,
-          "y": 0,
-          "width": 128,
-          "height": 128,
-          "durationMs": 1000
-        }
-      ],
-      "loop": false,
-      "fortification": {
-        "mask": 0
-      },
-      "notes": "ONE static terminal wreck key only; NOT complete collapse animation. Root appearance/code291/actual UI death transition required before install."
-    },
-    {
-      "id": "building-wall-death-collapse-321",
-      "family": "building.wall",
-      "kind": "building",
-      "state": "death",
-      "direction": null,
-      "fortification": {
-        "mask": 0,
-        "deathSite": "completed"
-      },
-      "source": {
-        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/buildings/wall-collapse-preview-321/export/sources/F0.png",
-        "sha256": "3ac8c092da13925e4d6502ced372eccb53021f6a2e78f3bd4fc221f3de1a3c6b",
-        "rgbaSha256": "b540c0667bbeff288f0415319a467e9500e13bd826214bf55e1f3c1d93cb91f0",
-        "width": 1254,
-        "height": 1254
-      },
-      "runtime": {
-        "path": "runtime/wall-collapse-321-atlas.png",
-        "sha256": "fa0a0e65ad9d7960cca7ae48080582cda87f2ab3738b8f03d58b260906f99720",
-        "rgbaSha256": "60663a0882981f2eadfdbb6664efd981555adfc703c77747b4c492e2daf4db54",
-        "width": 512,
-        "height": 128,
-        "derivation": {
-          "method": "atlas",
-          "filter": "lanczos",
-          "sourceSha256": "3ac8c092da13925e4d6502ced372eccb53021f6a2e78f3bd4fc221f3de1a3c6b"
-        }
-      },
-      "cell": {
-        "width": 128,
-        "height": 128
-      },
-      "pivot": {
-        "x": 627,
-        "y": 900,
-        "space": "source"
-      },
-      "render": {
-        "width": 42.3225,
-        "height": 42.3225
-      },
-      "alphaPolicy": "transparent",
-      "contactShadow": {
-        "mode": "baked"
-      },
-      "candidate": true,
-      "review": {
-        "status": "CANDIDATE"
-      },
-      "frames": [
-        {
-          "x": 0,
-          "y": 0,
-          "width": 128,
-          "height": 128,
-          "durationMs": 120,
-          "source": {
-            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/buildings/wall-collapse-preview-321/export/sources/F0.png",
-            "sha256": "3ac8c092da13925e4d6502ced372eccb53021f6a2e78f3bd4fc221f3de1a3c6b",
-            "rgbaSha256": "b540c0667bbeff288f0415319a467e9500e13bd826214bf55e1f3c1d93cb91f0",
-            "width": 1254,
-            "height": 1254
-          },
-          "events": []
-        },
-        {
-          "x": 128,
-          "y": 0,
-          "width": 128,
-          "height": 128,
-          "durationMs": 150,
-          "source": {
-            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/buildings/wall-collapse-preview-321/export/sources/F1.png",
-            "sha256": "971ea9c8ed9d67cd19ed58b860cb72e0243470b0183c91e1192434fe144df32b",
-            "rgbaSha256": "b192b742409688985b60ab41dabffd559c64a1631d8eb81690674e614e45440e",
-            "width": 1254,
-            "height": 1254
-          },
-          "events": []
-        },
-        {
-          "x": 256,
-          "y": 0,
-          "width": 128,
-          "height": 128,
-          "durationMs": 180,
-          "source": {
-            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/buildings/wall-collapse-preview-321/export/sources/F2.png",
-            "sha256": "6f78c43c0268afa6ec640695aa1bd0577cee923011e16ac83276ef068a9a0fc0",
-            "rgbaSha256": "e518c956c2f7e8f91447885f5b93c75d3b24dfd0e6c5a4d04b631fe70edea1a3",
-            "width": 1254,
-            "height": 1254
-          },
-          "events": []
-        },
-        {
-          "x": 384,
-          "y": 0,
-          "width": 128,
-          "height": 128,
-          "durationMs": 1000,
-          "source": {
-            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/buildings/wall-collapse-preview-321/export/sources/F3.png",
-            "sha256": "4dc53f83cbfaf8093b8d8e916363bf20262dab7725a55e0e7973a5388bcb2ae1",
-            "rgbaSha256": "ab38f6f1dc8aca2e3d99c4f2a88dfd6b5398ca84e6511e2c5507d3699c03c4bb",
-            "width": 1254,
-            "height": 1254
-          },
-          "events": []
-        }
-      ],
-      "loop": false
-    },
-    {
       "id": "rocky-ground-338",
       "family": "mountain-ground",
       "kind": "terrain",
@@ -4545,6 +2841,502 @@
       },
       "candidate": true,
       "notes": "ONE original whole2D material338, uniform512 export, world-anchored 8x8 terrain plane. Only actual mountain cells; no map/passability change. Clustered peaks require decoded material; original dense fallback otherwise."
+    },
+    {
+      "id": "stone-wall-X-362-mask0",
+      "family": "building.wall",
+      "kind": "building",
+      "state": "idle",
+      "direction": null,
+      "material": "stone",
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "source": {
+        "path": "docs/art/buildings/stone-wall-X-362/raw.png",
+        "sha256": "687248f3c9c8d3a675dfa580d7c1f6c26e30114fb9f1f0450c9186df3dde773f",
+        "rgbaSha256": "0e4d662bddd63eb90446dbf2c6bf5d71102a69ef017b91358812bf66215d4c76",
+        "width": 1254,
+        "height": 1254
+      },
+      "runtime": {
+        "path": "stone-wall-X-362/runtime.png",
+        "sha256": "3be7413c376dfd334a7c81bad66de3ad847207636095222f630907ce6c856a06",
+        "rgbaSha256": "46468503462e5e2dfa6e209d4f0bbf35aafa79aecf1f8c8b753fc75b122a2dad",
+        "width": 128,
+        "height": 128,
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "687248f3c9c8d3a675dfa580d7c1f6c26e30114fb9f1f0450c9186df3dde773f"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 900,
+        "space": "source"
+      },
+      "render": {
+        "width": 42.3225,
+        "height": 42.3225
+      },
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 1000
+        }
+      ],
+      "loop": true,
+      "fortification": {
+        "mask": 0
+      },
+      "notes": "Whole realistic cut stone X illustration. Selected source appearance only; actual joins not yet validated. No wood."
+    },
+    {
+      "id": "stone-wall-X-362-mask1",
+      "family": "building.wall",
+      "kind": "building",
+      "state": "idle",
+      "direction": null,
+      "material": "stone",
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "source": {
+        "path": "docs/art/buildings/stone-wall-X-362/raw.png",
+        "sha256": "687248f3c9c8d3a675dfa580d7c1f6c26e30114fb9f1f0450c9186df3dde773f",
+        "rgbaSha256": "0e4d662bddd63eb90446dbf2c6bf5d71102a69ef017b91358812bf66215d4c76",
+        "width": 1254,
+        "height": 1254
+      },
+      "runtime": {
+        "path": "stone-wall-X-362/runtime.png",
+        "sha256": "3be7413c376dfd334a7c81bad66de3ad847207636095222f630907ce6c856a06",
+        "rgbaSha256": "46468503462e5e2dfa6e209d4f0bbf35aafa79aecf1f8c8b753fc75b122a2dad",
+        "width": 128,
+        "height": 128,
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "687248f3c9c8d3a675dfa580d7c1f6c26e30114fb9f1f0450c9186df3dde773f"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 900,
+        "space": "source"
+      },
+      "render": {
+        "width": 42.3225,
+        "height": 42.3225
+      },
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 1000
+        }
+      ],
+      "loop": true,
+      "fortification": {
+        "mask": 1
+      },
+      "notes": "Whole realistic cut stone X illustration. Selected source appearance only; actual joins not yet validated. No wood."
+    },
+    {
+      "id": "stone-wall-X-362-mask2",
+      "family": "building.wall",
+      "kind": "building",
+      "state": "idle",
+      "direction": null,
+      "material": "stone",
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "source": {
+        "path": "docs/art/buildings/stone-wall-X-362/raw.png",
+        "sha256": "687248f3c9c8d3a675dfa580d7c1f6c26e30114fb9f1f0450c9186df3dde773f",
+        "rgbaSha256": "0e4d662bddd63eb90446dbf2c6bf5d71102a69ef017b91358812bf66215d4c76",
+        "width": 1254,
+        "height": 1254
+      },
+      "runtime": {
+        "path": "stone-wall-X-362/runtime.png",
+        "sha256": "3be7413c376dfd334a7c81bad66de3ad847207636095222f630907ce6c856a06",
+        "rgbaSha256": "46468503462e5e2dfa6e209d4f0bbf35aafa79aecf1f8c8b753fc75b122a2dad",
+        "width": 128,
+        "height": 128,
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "687248f3c9c8d3a675dfa580d7c1f6c26e30114fb9f1f0450c9186df3dde773f"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 900,
+        "space": "source"
+      },
+      "render": {
+        "width": 42.3225,
+        "height": 42.3225
+      },
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 1000
+        }
+      ],
+      "loop": true,
+      "fortification": {
+        "mask": 2
+      },
+      "notes": "Whole realistic cut stone X illustration. Selected source appearance only; actual joins not yet validated. No wood."
+    },
+    {
+      "id": "stone-wall-X-362-mask3",
+      "family": "building.wall",
+      "kind": "building",
+      "state": "idle",
+      "direction": null,
+      "material": "stone",
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "source": {
+        "path": "docs/art/buildings/stone-wall-X-362/raw.png",
+        "sha256": "687248f3c9c8d3a675dfa580d7c1f6c26e30114fb9f1f0450c9186df3dde773f",
+        "rgbaSha256": "0e4d662bddd63eb90446dbf2c6bf5d71102a69ef017b91358812bf66215d4c76",
+        "width": 1254,
+        "height": 1254
+      },
+      "runtime": {
+        "path": "stone-wall-X-362/runtime.png",
+        "sha256": "3be7413c376dfd334a7c81bad66de3ad847207636095222f630907ce6c856a06",
+        "rgbaSha256": "46468503462e5e2dfa6e209d4f0bbf35aafa79aecf1f8c8b753fc75b122a2dad",
+        "width": 128,
+        "height": 128,
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "687248f3c9c8d3a675dfa580d7c1f6c26e30114fb9f1f0450c9186df3dde773f"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 900,
+        "space": "source"
+      },
+      "render": {
+        "width": 42.3225,
+        "height": 42.3225
+      },
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 1000
+        }
+      ],
+      "loop": true,
+      "fortification": {
+        "mask": 3
+      },
+      "notes": "Whole realistic cut stone X illustration. Selected source appearance only; actual joins not yet validated. No wood."
+    },
+    {
+      "id": "stone-wall-Y-364-mask4",
+      "family": "building.wall",
+      "kind": "building",
+      "state": "idle",
+      "direction": null,
+      "material": "stone",
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "source": {
+        "path": "docs/art/buildings/stone-wall-Y-364/raw.png",
+        "sha256": "5b5b56e8bba808f9143bb3811d79f439cd5ea121be49b5f7f9f101d7bbe02746",
+        "rgbaSha256": "f052d2e89b65fe4313cc89f9eb6f6665400a2045bfcdf5315f7fa1e0ac5e88a1",
+        "width": 1254,
+        "height": 1254
+      },
+      "runtime": {
+        "path": "stone-wall-Y-364/runtime.png",
+        "sha256": "910bd2d840909bde361c92150c62eb0d02dbb6a60f19ed5cb40994a0a0bfb923",
+        "rgbaSha256": "5dd4e78f355f77c49bcbc39f5e44b141383375995a49458b2cb236e78806aa7c",
+        "width": 128,
+        "height": 128,
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "5b5b56e8bba808f9143bb3811d79f439cd5ea121be49b5f7f9f101d7bbe02746"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 900,
+        "space": "source"
+      },
+      "render": {
+        "width": 42.3225,
+        "height": 42.3225
+      },
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 1000
+        }
+      ],
+      "loop": true,
+      "fortification": {
+        "mask": 4
+      },
+      "notes": "Whole realistic cutstone illustration, no wood. Only source appearance selected; actual joins trial pending."
+    },
+    {
+      "id": "stone-wall-Y-364-mask8",
+      "family": "building.wall",
+      "kind": "building",
+      "state": "idle",
+      "direction": null,
+      "material": "stone",
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "source": {
+        "path": "docs/art/buildings/stone-wall-Y-364/raw.png",
+        "sha256": "5b5b56e8bba808f9143bb3811d79f439cd5ea121be49b5f7f9f101d7bbe02746",
+        "rgbaSha256": "f052d2e89b65fe4313cc89f9eb6f6665400a2045bfcdf5315f7fa1e0ac5e88a1",
+        "width": 1254,
+        "height": 1254
+      },
+      "runtime": {
+        "path": "stone-wall-Y-364/runtime.png",
+        "sha256": "910bd2d840909bde361c92150c62eb0d02dbb6a60f19ed5cb40994a0a0bfb923",
+        "rgbaSha256": "5dd4e78f355f77c49bcbc39f5e44b141383375995a49458b2cb236e78806aa7c",
+        "width": 128,
+        "height": 128,
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "5b5b56e8bba808f9143bb3811d79f439cd5ea121be49b5f7f9f101d7bbe02746"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 900,
+        "space": "source"
+      },
+      "render": {
+        "width": 42.3225,
+        "height": 42.3225
+      },
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 1000
+        }
+      ],
+      "loop": true,
+      "fortification": {
+        "mask": 8
+      },
+      "notes": "Whole realistic cutstone illustration, no wood. Only source appearance selected; actual joins trial pending."
+    },
+    {
+      "id": "stone-wall-Y-364-mask12",
+      "family": "building.wall",
+      "kind": "building",
+      "state": "idle",
+      "direction": null,
+      "material": "stone",
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "source": {
+        "path": "docs/art/buildings/stone-wall-Y-364/raw.png",
+        "sha256": "5b5b56e8bba808f9143bb3811d79f439cd5ea121be49b5f7f9f101d7bbe02746",
+        "rgbaSha256": "f052d2e89b65fe4313cc89f9eb6f6665400a2045bfcdf5315f7fa1e0ac5e88a1",
+        "width": 1254,
+        "height": 1254
+      },
+      "runtime": {
+        "path": "stone-wall-Y-364/runtime.png",
+        "sha256": "910bd2d840909bde361c92150c62eb0d02dbb6a60f19ed5cb40994a0a0bfb923",
+        "rgbaSha256": "5dd4e78f355f77c49bcbc39f5e44b141383375995a49458b2cb236e78806aa7c",
+        "width": 128,
+        "height": 128,
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "5b5b56e8bba808f9143bb3811d79f439cd5ea121be49b5f7f9f101d7bbe02746"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 900,
+        "space": "source"
+      },
+      "render": {
+        "width": 42.3225,
+        "height": 42.3225
+      },
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 1000
+        }
+      ],
+      "loop": true,
+      "fortification": {
+        "mask": 12
+      },
+      "notes": "Whole realistic cutstone illustration, no wood. Only source appearance selected; actual joins trial pending."
+    },
+    {
+      "id": "stone-wall-corner-365-mask5",
+      "family": "building.wall",
+      "kind": "building",
+      "state": "idle",
+      "direction": null,
+      "material": "stone",
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "source": {
+        "path": "docs/art/buildings/stone-wall-corner-365/raw.png",
+        "sha256": "69bc79ec3296b47bb564e24af6434c806341e25f28a15db63b3d1498cbe95003",
+        "rgbaSha256": "24b4e284b38440e70ae4177aab356b9874644fe20cb2e69f29c858c7dc2a6e23",
+        "width": 1254,
+        "height": 1254
+      },
+      "runtime": {
+        "path": "stone-wall-corner-365/runtime.png",
+        "sha256": "4f915623b9b60d592d5541aa69b30420ccb588c84b9a66edf62823a63f18ff87",
+        "rgbaSha256": "d23c72fc9052f5ef17f5064e00ad98fb962904268077c221f94a7c4bfafca6ac",
+        "width": 128,
+        "height": 128,
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "69bc79ec3296b47bb564e24af6434c806341e25f28a15db63b3d1498cbe95003"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 900,
+        "space": "source"
+      },
+      "render": {
+        "width": 42.3225,
+        "height": 42.3225
+      },
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 1000
+        }
+      ],
+      "loop": true,
+      "fortification": {
+        "mask": 5
+      },
+      "notes": "Whole realistic cutstone illustration, no wood. Only source appearance selected; actual joins trial pending."
     }
   ],
   "id": "fort-202",

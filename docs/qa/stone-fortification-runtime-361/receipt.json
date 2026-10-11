@@ -1,0 +1,90 @@
+{
+  "status": "CLOSED361_MATERIAL_RUNTIME_HOLD_REAL_RASTER_DEFAULT_ROUTE_REJECTS_STONE",
+  "originalBrowserStatus": "HOLD_CAPTURED_BEFORE_CLEANUP",
+  "originalReceiptSHA256": "a859dd77f57abed95513747aaf21f4e2474add0483158a638237c2de37d2d39c",
+  "originalOptionalFailure": "page.waitForFunction: Timeout 30000ms exceeded.\n    at /home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/stone-fortification-runtime-361/browser.mjs:25:1890",
+  "requiredScene": "ONEbareURLDeltaordinary3stoneWallconstruction/join/pick/defaultzoom/PausefreezeResume/Stop/menu0 completed",
+  "defaultDescriptors": 8,
+  "portraitsReady": 12,
+  "fullFortDescriptors": 37,
+  "fort37MenuArtworkVerified": false,
+  "fort37Limitation": "Menu raster status intentionallynot-loaded; encodedReady37 cannot be asserted withoutmatch. Optionalmenu probe failure doesnotinvalidate retained requiredscene evidence. No replay or secondmatch.",
+  "topology": [
+    {
+      "id": 37,
+      "mask": 5,
+      "axis": "X",
+      "topology": "corner",
+      "count": 2
+    },
+    {
+      "id": 43,
+      "mask": 2,
+      "axis": "X",
+      "topology": "end",
+      "count": 1
+    },
+    {
+      "id": 51,
+      "mask": 8,
+      "axis": "Y",
+      "topology": "end",
+      "count": 1
+    }
+  ],
+  "actualBindings": [
+    {
+      "entityId": 37,
+      "assetId": "stone-wall-corner-365-mask5",
+      "runtimePath": "stone-wall-corner-365/runtime.png",
+      "runtimeSHA256": "4f915623b9b60d592d5541aa69b30420ccb588c84b9a66edf62823a63f18ff87",
+      "method": "read-only actualentity/topology using same realraster selector; actual scene retained"
+    },
+    {
+      "entityId": 43,
+      "assetId": "stone-wall-X-362-mask2",
+      "runtimePath": "stone-wall-X-362/runtime.png",
+      "runtimeSHA256": "3be7413c376dfd334a7c81bad66de3ad847207636095222f630907ce6c856a06",
+      "method": "read-only actualentity/topology using same realraster selector; actual scene retained"
+    },
+    {
+      "entityId": 51,
+      "assetId": "stone-wall-Y-364-mask8",
+      "runtimePath": "stone-wall-Y-364/runtime.png",
+      "runtimeSHA256": "910bd2d840909bde361c92150c62eb0d02dbb6a60f19ed5cb40994a0a0bfb923",
+      "method": "read-only actualentity/topology using same realraster selector; actual scene retained"
+    }
+  ],
+  "responsePins": 67,
+  "bundle": {
+    "path": "assets/index-CNlH452t.js",
+    "sha256": "72e6e7191ace258654578d6e42c2061e5d05cf52c2bb9106e967bed296b9a5ec"
+  },
+  "defaultManifestSHA256": "3fe5989a4affbb3dbb49f16245a3d248509ff6d4c1fff19440ea142d0065ebfa",
+  "fortManifestSHA256": "38dd6bdaf55d927c2a0cddee3e3b6ba5b7127efd2dc01a9095e09b8e09aa6bfb",
+  "buildFiles": 180,
+  "builds": 1,
+  "browserCampaigns": 1,
+  "imageCalls": 0,
+  "retries": 0,
+  "retiredWoodDescriptors": 25,
+  "retiredWoodPayloads": 15,
+  "activeWoodFortificationPayloads": 0,
+  "canonicalMutations": false,
+  "errors": {
+    "page": [],
+    "network": [],
+    "HTTP": []
+  },
+  "cleanup": {
+    "rooms": 0,
+    "serverListening": false,
+    "browserClosed": true
+  },
+  "preservationPASS": true,
+  "visualAcceptance": "HOLD. Sourceappearance acceptance andUImechanics only; screenshotshowsnativegreyfallback ratherthan3wholePNGs. New368bugfixtask needed; no361replay/install/promotion.",
+  "installPromotionAuthorized": false,
+  "criticalRenderBug": "realraster.sampleEntity refuses Wall/Gate whenartRoute.name!='fort'; defaultStone8PNGload+directselectorbinding isnotactualPNGdraw",
+  "actualBindingsMethodLimitation": "directselectFortificationArt bypassedrealrasterroutegate. Retainedbindings indicateexpectedselectiononly, notactualdraw.",
+  "actualWholeStoneDrawVerified": false
+}

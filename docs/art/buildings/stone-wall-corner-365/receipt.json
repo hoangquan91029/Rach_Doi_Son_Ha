@@ -1,0 +1,58 @@
+{
+  "status": "RETURNED_CANDIDATE_AWAIT_SCENE",
+  "builtinCalls": 1,
+  "manualRetries": 0,
+  "toolState": "RETURNED_CLOSED",
+  "originalToolPath": "/home/kieu-hoang-quan/.codex/generated_images/01a1159b-f20c-75d2-8030-3f4d27119543/exec-0a1a713b-c3c7-47b3-a127-263a84c0c458.png",
+  "source": {
+    "path": "raw.png",
+    "sha256": "69bc79ec3296b47bb564e24af6434c806341e25f28a15db63b3d1498cbe95003",
+    "rgbaSha256": "24b4e284b38440e70ae4177aab356b9874644fe20cb2e69f29c858c7dc2a6e23",
+    "width": 1254,
+    "height": 1254
+  },
+  "runtime": {
+    "path": "runtime.png",
+    "sha256": "4f915623b9b60d592d5541aa69b30420ccb588c84b9a66edf62823a63f18ff87",
+    "rgbaSha256": "d23c72fc9052f5ef17f5064e00ad98fb962904268077c221f94a7c4bfafca6ac",
+    "width": 128,
+    "height": 128,
+    "derivation": {
+      "method": "resize",
+      "filter": "lanczos",
+      "sourceSha256": "69bc79ec3296b47bb564e24af6434c806341e25f28a15db63b3d1498cbe95003"
+    }
+  },
+  "working": {
+    "path": "working.png",
+    "sha256": "7e1caba34d8dd810dea5ec58f43d7415e3d4357a5fd6614cab32e7a2cd0c967f",
+    "rgbaSha256": "fc826723d8966e8fada3e96356e6ef8ce0e30276f8dba24dce7950be7a9f31f2",
+    "width": 256,
+    "height": 256
+  },
+  "preview": {
+    "path": "preview42.png",
+    "sha256": "1b7b292594a555709f59cd402f20bba4f195f2e6809b827c8c8fc1d1cb2fe0a2",
+    "rgbaSha256": "f8fc34c46b8a69871741d09c6b58fba66089df80b60304f0d2fdc37cdea941ff",
+    "width": 42,
+    "height": 42
+  },
+  "alphaExtrema": [
+    0,
+    255
+  ],
+  "edgeAlphaMax": 1,
+  "fixedLayout": {
+    "canvas": [
+      1254,
+      1254
+    ],
+    "pivot": [
+      627,
+      900
+    ],
+    "runtimeCell": 128,
+    "logicalRender": 42.3225
+  },
+  "derivation": "Whole uniform resize only; no fit/crop/shift/warp/mirror/sourcepixelrepair"
+}

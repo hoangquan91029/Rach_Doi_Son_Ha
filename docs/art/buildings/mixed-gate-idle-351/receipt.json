@@ -1,0 +1,65 @@
+{
+  "status": "RETURNED_SOURCE_CANDIDATE_ACTUAL_SCENE_PENDING",
+  "builtinCalls": 1,
+  "manualRetries": 0,
+  "toolState": "RETURNED_CLOSED",
+  "originalToolPath": "/home/kieu-hoang-quan/.codex/generated_images/01a1159b-f20c-75d2-8030-3f4d27119543/exec-b95cc7af-5eb4-4b2a-a833-c7b1d38ca30f.png",
+  "source": {
+    "path": "raw.png",
+    "sha256": "f5d50c4352eeb8a2d85d33aae435e91980fc8a224d2578022cfd87a5d7c7e6ab",
+    "rgbaSha256": "61f8a11af9c4114bae641b71c188bd0f89293102cdd9d9a1a109d4e7670c8f6a",
+    "width": 1254,
+    "height": 1254
+  },
+  "runtime": {
+    "path": "runtime.png",
+    "sha256": "4ad5b5a725679cfad39c68bb17cecfe616677ecf302d697224879dad67efa355",
+    "rgbaSha256": "786b1aa4b0733056208a825d494bcb113f9fca16daded40e2f2cc16a795be463",
+    "width": 128,
+    "height": 128,
+    "derivation": {
+      "method": "resize",
+      "filter": "lanczos",
+      "sourceSha256": "f5d50c4352eeb8a2d85d33aae435e91980fc8a224d2578022cfd87a5d7c7e6ab"
+    }
+  },
+  "working": {
+    "path": "working.png",
+    "sha256": "bfdb2c20e7841f4e7a855179a53228fae41f26d238035e08b183a03bd8a00e3a",
+    "rgbaSha256": "0124ea5fb791934c90e2e5f0d08bfc51fc2bdd6229f717ae9cf096264eb4fc0b",
+    "width": 256,
+    "height": 256
+  },
+  "preview": {
+    "path": "preview42.png",
+    "sha256": "e9e90109359de6380f83dedd2f9cd4ee3e0f73ec1b362da543b9441a50964019",
+    "rgbaSha256": "a9db10538f31324f63819e7b0f231284f3b2996bef48af3aa99f90c9d4601293",
+    "width": 42,
+    "height": 42
+  },
+  "alphaExtrema": [
+    0,
+    255
+  ],
+  "fixedLayout": {
+    "source": [
+      1254,
+      1254
+    ],
+    "pivot": [
+      627,
+      900
+    ],
+    "cell": [
+      128,
+      128
+    ],
+    "logicalRender": 42.3225,
+    "fit": false,
+    "shift": false,
+    "mirror": false
+  },
+  "briefSourceLook": "Matches original timber material, whole structure and clear doorway; gameplay-size/source look and actual joins/transit still pending.",
+  "runtimeInstalled": false,
+  "publicPromoted": false
+}

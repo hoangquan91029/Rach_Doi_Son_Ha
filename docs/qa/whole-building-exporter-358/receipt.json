@@ -1,0 +1,76 @@
+{
+  "order": 358,
+  "status": "CLOSED_REUSABLE_EXPORTER_CANDIDATE_TECHNICAL_TESTS_PASS_REAL356_PACKAGING_HOLD",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "low",
+  "existing313Gap": "Hardcodes Wall/death/mask0/exact4frames/fixed512atlas/loopfalse; no genericexporter exists in scripts.",
+  "candidate": "export-whole2d-building-atlas.py",
+  "destinationOnlyAfterRootInstall": "scripts/export-whole2d-building-atlas.py",
+  "features": [
+    "buildingfamily/state idle construction hit attack death;1\u201316 explicitlydeclaredphasebindings",
+    "explicitloop boolean;deathnonloop; lastframe terminalmetadata",
+    "uniform wholecanvas Lanczos, fixedonecanvas/cell/pivot/render, no perframefitting",
+    "exact original/source/tool/selection/provenance pins with preservedcopies; reject held/rejected/missing/duplicatewholephase",
+    "reuse authoritative Python pixelvalidator and current JSmanifest/fortificationvalidator; atomic nooverwrite output"
+  ],
+  "real321": {
+    "status": "PASS_REAL4FRAME_WHOLEPIXEL_PARITY",
+    "decodedAtlasSHA256": "60663a0882981f2eadfdbb6664efd981555adfc703c77747b4c492e2daf4db54",
+    "originalAtlasSHA256": "60663a0882981f2eadfdbb6664efd981555adfc703c77747b4c492e2daf4db54",
+    "encodedNewAtlasSHA256": "fa0a0e65ad9d7960cca7ae48080582cda87f2ab3738b8f03d58b260906f99720",
+    "cellWholePixelParity": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "durationsMs": [
+      120,
+      150,
+      180,
+      1000
+    ],
+    "terminalFrame": 3,
+    "validators": {
+      "pythonPackaging": "PASS",
+      "existingRuntimeManifest": "PASS"
+    }
+  },
+  "real356": {
+    "status": "HOLD_REAL_SELECTED_STATIC_RUNTIME_MARGIN",
+    "sourceSHA256": "e300eb64398a93b35b260bca376498bc716a7a595f6e3d80a65f8946082d20a8",
+    "whole128PixelParityWithExisting356": true,
+    "runtimeDecodedSHA256": "8e35559037657390477c6444fc88284f223df197bf2816ca16fbe9a71e0de5d4",
+    "reason": "Existing authoritative runtime margin rejects edge alpha111/165. No crop/fit/shift or contract relaxation.",
+    "destinationCreated": false,
+    "visualAcceptance": false,
+    "runtimeInstalled": false
+  },
+  "focusedTests": "Real321 fourframe exactpixelparityPASS; selected245 singleidle exactruntimepixelparityPASS;356 unchangededgeHOLD retained and expectedfailclosed; badcustody casesPASS; actual invalidWallaxis rejected by existingJSvalidator. No broad/full tests.",
+  "preservation": "PASS original313/321/356 +scripts/client/shared/server/public/dist/immutable230 unchanged",
+  "imageCalls": 0,
+  "browserCalls": 0,
+  "viteBuilds": 0,
+  "installed": false,
+  "limits": [
+    "Technical packaging only, no art generation or visualacceptance",
+    "Real356 cannot export under unchanged strict runtimeedgecontract; no sourcecrop/fit/shift/contract relaxation",
+    "357 live trial unaffected; rootowns canonicaltoolinstallation only afterclosed",
+    "Tooldoesnot create missingstates/actions/directions/roster"
+  ],
+  "real245": {
+    "status": "PASS_REAL_SELECTED_SINGLE_IDLE_WHOLEPIXEL_PARITY",
+    "sourceSHA256": "8a44cd1880468345e556f6aefaa02930be2072e9bfeed52ff8311f51ba635e98",
+    "runtimeDecodedSHA256": "84f80429a67e81015561d1922f33cc3540d252743d33b1cf13ea035c5a56448c",
+    "existingRuntimeDecodedSHA256": "84f80429a67e81015561d1922f33cc3540d252743d33b1cf13ea035c5a56448c",
+    "wholeRuntimePixelParity": true,
+    "durationMs": 1000,
+    "loop": true,
+    "validators": {
+      "pythonPackaging": "PASS",
+      "existingRuntimeManifest": "PASS"
+    },
+    "visualApprovalGranted": false
+  },
+  "staticSelectionFormats": "Exact pinned indexedrootselection, accepted narrowtrial selectedSourceSha256, or legacy WHOLE appearanceaccepted finiteRuntimeTrial rawSHA256/sourceSHA256; staticformats only oneframeidle."
+}

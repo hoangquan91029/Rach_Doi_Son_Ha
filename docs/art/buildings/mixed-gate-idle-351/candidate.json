@@ -1,0 +1,62 @@
+{
+  "id": "gate-whole-351-X-mask5",
+  "family": "building.gate",
+  "kind": "building",
+  "state": "idle",
+  "direction": null,
+  "candidate": true,
+  "review": {
+    "status": "CANDIDATE"
+  },
+  "source": {
+    "path": "raw.png",
+    "sha256": "f5d50c4352eeb8a2d85d33aae435e91980fc8a224d2578022cfd87a5d7c7e6ab",
+    "rgbaSha256": "61f8a11af9c4114bae641b71c188bd0f89293102cdd9d9a1a109d4e7670c8f6a",
+    "width": 1254,
+    "height": 1254
+  },
+  "runtime": {
+    "path": "runtime.png",
+    "sha256": "4ad5b5a725679cfad39c68bb17cecfe616677ecf302d697224879dad67efa355",
+    "rgbaSha256": "786b1aa4b0733056208a825d494bcb113f9fca16daded40e2f2cc16a795be463",
+    "width": 128,
+    "height": 128,
+    "derivation": {
+      "method": "resize",
+      "filter": "lanczos",
+      "sourceSha256": "f5d50c4352eeb8a2d85d33aae435e91980fc8a224d2578022cfd87a5d7c7e6ab"
+    }
+  },
+  "cell": {
+    "width": 128,
+    "height": 128
+  },
+  "pivot": {
+    "x": 627,
+    "y": 900,
+    "space": "source"
+  },
+  "render": {
+    "width": 42.3225,
+    "height": 42.3225
+  },
+  "alphaPolicy": "transparent",
+  "contactShadow": {
+    "mode": "baked"
+  },
+  "frames": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 1000
+    }
+  ],
+  "loop": true,
+  "fortification": {
+    "mask": 5,
+    "axis": "X"
+  },
+  "notes": "Whole illustrated mixed corner Gate mask5 only. Structural guide349; original245 material appearance. Actual joins/picking/friendly transit pending. No transformed or assembled source pixels."
+}

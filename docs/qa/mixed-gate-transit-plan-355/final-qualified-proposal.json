@@ -1,0 +1,85 @@
+{
+  "status": "FINAL_ROOT_QUALIFIED_GUIDE_PROPOSAL_READY_WITH_NARROW_SURFACE_MARGIN_UNVERIFIED",
+  "priorFilesSHA256": {
+    "README.md": "03ea97c5d7f6bd2352417b7a1a3a1efa1c8946b1aea5b7d084c9091841fa4921",
+    "work-order.json": "d61e7c8e93fd00faf61519864c43c4144baf1aecd9f3789cdee8365dbee19925",
+    "wide-portal-revision.json": "18e27d646ae04d33963bd61040034a9608e0c7ef9a76b2dd6f6bc5fdb1cae443",
+    "custody.json": "9fe96fb453ec9139bc8c7f342ff8b5ef321d6980c0bb0f854b01822fb7393033",
+    "README-wide-portal-note.md": "964cd00dee985cc5ebb536312885413ccac50f8cba2af79d445537d0bbce1105"
+  },
+  "jambA": [
+    0.33,
+    -0.4
+  ],
+  "jambB": [
+    -0.4,
+    0.33
+  ],
+  "portalLine": "x+y=-.07",
+  "rightWing": [
+    [
+      0.33,
+      -0.4
+    ],
+    [
+      0.33,
+      0
+    ],
+    [
+      0.5,
+      0
+    ]
+  ],
+  "leftWing": [
+    [
+      -0.4,
+      0.33
+    ],
+    [
+      0,
+      0.33
+    ],
+    [
+      0,
+      0.5
+    ]
+  ],
+  "sourceJambsRootSupplied": [
+    [
+      1211,
+      872
+    ],
+    [
+      43,
+      872
+    ]
+  ],
+  "apertureLength": 1.0323759005323594,
+  "closestJambAtAxisCrossing": 0.46669047558312143,
+  "minimumJambClearanceAcrossEntireRoute": 0.33,
+  "minimumWingCenterlineClearanceAcrossRoute": 0.33,
+  "referenceBodyRadius": 0.28,
+  "worldMarginBeforeThickness": 0.05,
+  "projectionInference": {
+    "x": "627+800*(worldX-worldY)",
+    "y": "900+400*(worldX+worldY)",
+    "basis": "inferred from supplied jambs/pivot, not measured returned artwork",
+    "wingNormalPixelScalePerWorld": 715.5417527999327,
+    "minimumSingularPixelScalePerWorld": 565.685424949238
+  },
+  "panelNormalHalfwidthCheck": {
+    "remainingPixelsBeforeTimber": 35.77708763999664,
+    "halfwidth20ResidualPixels": 15.777087639996637,
+    "halfwidth30ResidualPixels": 5.777087639996637,
+    "halfwidth20ResidualWorld": 0.022049150281252632,
+    "halfwidth30ResidualWorld": 0.008073725421878945,
+    "condition": "20\u201330px must be actual perpendicular ground-panel thickness. Actor ground body bounded by.28world reference, not full upperbody silhouette."
+  },
+  "arbitraryPostRadiusConcern": {
+    "30pxWorstWorldExtent": 0.053033008588991064,
+    "residualWorld": -0.003033008588991061,
+    "limitation": "Arbitrary radial screen halfwidth can consume all.05world margin; define actual grounded post foot faces before asserting clearance."
+  },
+  "decision": "Finite guide proposal plausibly fits axis corridor with tightly controlled normal thickness. Actual rendering/body contact remains unverified. No syntheticPASS or live call.",
+  "calls": 0
+}

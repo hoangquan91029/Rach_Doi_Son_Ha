@@ -1,0 +1,162 @@
+{
+  "order": 354,
+  "status": "CLOSED_QUALIFIED_WIDEPORTAL_REVISION_GUIDE_ONLY_AWAIT_ROOT_INTAKE",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "low",
+  "candidate": "Gate completedidle mask5 axisX, original NW corner portal",
+  "canvas": [
+    1254,
+    1254
+  ],
+  "pivot": [
+    627,
+    900
+  ],
+  "runtimeCell": 128,
+  "logicalRender": 42.3225,
+  "projection": "sourceX=627+800*worldX-800*worldY; sourceY=900+400*worldX+400*worldY",
+  "jambs": [
+    {
+      "world": [
+        0.26,
+        -0.43
+      ],
+      "source": [
+        1179,
+        832
+      ]
+    },
+    {
+      "world": [
+        -0.43,
+        0.26
+      ],
+      "source": [
+        75,
+        832
+      ]
+    }
+  ],
+  "neighborEndpoints": {
+    "+X": {
+      "world": [
+        0.5,
+        0
+      ],
+      "source": [
+        1027,
+        1100
+      ]
+    },
+    "+Y": {
+      "world": [
+        0,
+        0.5
+      ],
+      "source": [
+        227,
+        1100
+      ]
+    }
+  },
+  "wingPolylines": {
+    "left": [
+      [
+        75,
+        832
+      ],
+      [
+        419,
+        1004
+      ],
+      [
+        227,
+        1100
+      ]
+    ],
+    "right": [
+      [
+        1179,
+        832
+      ],
+      [
+        835,
+        1004
+      ],
+      [
+        1027,
+        1100
+      ]
+    ]
+  },
+  "wingWorldPolylines": {
+    "left": [
+      [
+        -0.43,
+        0.26
+      ],
+      [
+        0,
+        0.26
+      ],
+      [
+        0,
+        0.5
+      ]
+    ],
+    "right": [
+      [
+        0.26,
+        -0.43
+      ],
+      [
+        0.26,
+        0
+      ],
+      [
+        0.5,
+        0
+      ]
+    ]
+  },
+  "portalPlane": "worldX+worldY=-.17, midpoint(-.085,-.085)\u2192627832; screenhorizontal raisedbeam spans broadNWportal",
+  "clearCorridorProposal": "North\u2192center\u2192West centerlines cross the interior of diagonalNWportal rather than itsjambs. Each crossing has .3677world nearest-jamb clearance compared with nominal .28landradius. Hookedwings lie behindopening and preserve exactpositive-axis endpoints. This is geometricproposal; actual path/body/wallcontact/joins unproven.",
+  "geometryRationale": "Exact rootwidejambs have portalwidth .9758world. Bothhookedreturnwings follow existingdimetric X/Ydirections at450px panelheight with fullheight elbow/endpointposts and stonefeet. No negativeX fullwing or centerspur. Everygroundpoint lies inside [-.5,.5] owncellfootprint.",
+  "occlusion": "Longwings drawn first behindopening; nearer shortreturns conceal lowerrear surfaces. Matching-depth portalposts/stonefeet support continuousraisedlintel; interior belowbeam and pivot627900 remains unpaintedalpha.",
+  "renderer": "bundled sharp0.35.5 native SVG wholecanvas1254PNG; single fixed fullcanvas42px preview, no crop/fit/shift/assembly",
+  "imageCalls": 0,
+  "retries": 0,
+  "runtimeChanges": false,
+  "history": "349/351/352 retained unchanged.352 transitHOLD motivates reconsidering topology; does not infer351 art failure.",
+  "limits": [
+    "original complete vector authoring reference only, not finishedart",
+    "root brief42 guide intake pending",
+    "future builtin illustration requires separate rootGO",
+    "actual joins/picking/North-to-West aperture trajectory unproven",
+    "no build/test/browser/server/canonical/public mutation"
+  ],
+  "revision": "Original narrowguide retained byte-for-byte in narrow-original; root355 geometry rejects narrowportal, zeroimagecalls bothversions",
+  "portalCenterlineWidthWorld": 0.9758073580374355,
+  "northCrossing": {
+    "world": [
+      0,
+      -0.17
+    ],
+    "source": [
+      763,
+      832
+    ],
+    "nearestJambDistanceWorld": 0.36769552621700474
+  },
+  "westCrossing": {
+    "world": [
+      -0.17,
+      0
+    ],
+    "source": [
+      491,
+      832
+    ],
+    "nearestJambDistanceWorld": 0.36769552621700474
+  }
+}

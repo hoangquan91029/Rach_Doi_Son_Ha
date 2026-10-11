@@ -1,0 +1,123 @@
+{
+  "order": 352,
+  "status": "CLOSED_TECHNICAL_CHECKS_PASS_TRANSPARENT_APERTURE_TRANSIT_HOLD",
+  "browserOriginalStatus": "PASS352_MASK5_THREE_PICKS_OBSERVED_FOOTPRINT_NEGATIVEX_EXIT_PAUSE_RESUME_STOP_MENU",
+  "preservation": "PASS public/canonical/immutable230/baseline342/sealedstage/sealedbuild unchanged",
+  "source351SHA256": "f5d50c4352eeb8a2d85d33aae435e91980fc8a224d2578022cfd87a5d7c7e6ab",
+  "runtime351SHA256": "4ad5b5a725679cfad39c68bb17cecfe616677ecf302d697224879dad67efa355",
+  "manifestSHA256": "edc8490497f73597bdd864ca054d2c37de8b8e6151850bda6b8f5ecfea976999",
+  "bundleSHA256": "3495642c3c9ab988878659d0185cb7d5abac321dd350d1b7d3f1268c178695af",
+  "structures": [
+    {
+      "id": 37,
+      "type": "gate",
+      "x": 8.5,
+      "y": 30.5,
+      "completedTick": 419
+    },
+    {
+      "id": 44,
+      "type": "wall",
+      "x": 9.5,
+      "y": 30.5,
+      "completedTick": 617
+    },
+    {
+      "id": 51,
+      "type": "wall",
+      "x": 8.5,
+      "y": 31.5,
+      "completedTick": 811
+    }
+  ],
+  "topology": [
+    {
+      "id": 37,
+      "mask": 5,
+      "axis": "X",
+      "topology": "corner",
+      "count": 2
+    },
+    {
+      "id": 44,
+      "mask": 2,
+      "axis": "X",
+      "topology": "end",
+      "count": 1
+    },
+    {
+      "id": 51,
+      "mask": 8,
+      "axis": "Y",
+      "topology": "end",
+      "count": 1
+    }
+  ],
+  "opaqueSelections": [
+    {
+      "id": 37,
+      "selection": [
+        37
+      ]
+    },
+    {
+      "id": 44,
+      "selection": [
+        44
+      ]
+    },
+    {
+      "id": 51,
+      "selection": [
+        51
+      ]
+    }
+  ],
+  "pauseResume": {
+    "pausedTick": 969,
+    "resumedTick": 971
+  },
+  "stoppedSavedBuilder": {
+    "id": 7,
+    "state": "idle",
+    "order": null
+  },
+  "menuDecodedBytes": 0,
+  "menuImages": 0,
+  "errors": [],
+  "networkErrors": [],
+  "httpErrors": [],
+  "cleanup": {
+    "rooms": 0,
+    "serverListening": false,
+    "browserClosed": true
+  },
+  "clip": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/mixed-gate-runtime-352/clips/page@57b79fc9ab7f14d8cd723e61230d44bc.webm",
+  "transitInterpretation": {
+    "status": "HOLD_NOT_PROVEN_THROUGH_TRANSPARENT_APERTURE",
+    "gateCenter": [
+      8.5,
+      30.5
+    ],
+    "guideJambXRange": [
+      8.33,
+      8.67
+    ],
+    "northArrival": [
+      8.167843069568322,
+      30.167843069568317
+    ],
+    "worldPlaneTouchOutsideFootprint": [
+      7.405883765746539,
+      30.5
+    ],
+    "worldPlanePositiveCrossOutsideFootprint": [
+      6.558980935576896,
+      30.60477285400164
+    ],
+    "reason": "Generic footprint assertion passed, but observed center samples never occupy the transparentopening jamb range or cross Gate Yplane there; footprint entry/negativeX exit is not a through-aperture proof."
+  },
+  "harnessLimit": "Sealed move acquisition additionally required actualtarget within .02 of idealclickedpoint; actualChrome orders passed this filter but this must not be generalized to future Firefox trials. Harness kept unchanged once browser OPEN. Actual .7 arrival bound to captured order.",
+  "visualStatus": "Actual defaultsize joins screenshot retained for root intake; no worker acceptance/install/promotion",
+  "pendingCalls": 0
+}

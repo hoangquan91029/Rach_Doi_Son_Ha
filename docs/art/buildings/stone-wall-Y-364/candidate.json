@@ -1,0 +1,62 @@
+{
+  "id": "stone-wall-Y-364",
+  "family": "building.wall",
+  "kind": "building",
+  "state": "idle",
+  "direction": null,
+  "material": "stone",
+  "candidate": true,
+  "review": {
+    "status": "CANDIDATE"
+  },
+  "source": {
+    "path": "raw.png",
+    "sha256": "5b5b56e8bba808f9143bb3811d79f439cd5ea121be49b5f7f9f101d7bbe02746",
+    "rgbaSha256": "f052d2e89b65fe4313cc89f9eb6f6665400a2045bfcdf5315f7fa1e0ac5e88a1",
+    "width": 1254,
+    "height": 1254
+  },
+  "runtime": {
+    "path": "runtime.png",
+    "sha256": "910bd2d840909bde361c92150c62eb0d02dbb6a60f19ed5cb40994a0a0bfb923",
+    "rgbaSha256": "5dd4e78f355f77c49bcbc39f5e44b141383375995a49458b2cb236e78806aa7c",
+    "width": 128,
+    "height": 128,
+    "derivation": {
+      "method": "resize",
+      "filter": "lanczos",
+      "sourceSha256": "5b5b56e8bba808f9143bb3811d79f439cd5ea121be49b5f7f9f101d7bbe02746"
+    }
+  },
+  "cell": {
+    "width": 128,
+    "height": 128
+  },
+  "pivot": {
+    "x": 627,
+    "y": 900,
+    "space": "source"
+  },
+  "render": {
+    "width": 42.3225,
+    "height": 42.3225
+  },
+  "alphaPolicy": "transparent",
+  "contactShadow": {
+    "mode": "baked"
+  },
+  "frames": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 1000
+    }
+  ],
+  "loop": true,
+  "fortification": {
+    "mask": 12
+  },
+  "notes": "Whole realistic cutstone illustration, no wood. Only source appearance selected; actual joins trial pending."
+}

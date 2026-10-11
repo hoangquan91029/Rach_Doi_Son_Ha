@@ -1,0 +1,22 @@
+{
+  "id": 350,
+  "scope": "Q01 ordinary online idle initial armies baseline",
+  "phases": [
+    1,
+    5,
+    8
+  ],
+  "steadySeconds": 25,
+  "serverOptions": {
+    "port": 0,
+    "distDir": "/tmp/rds-room-load350-build"
+  },
+  "connectionsPerRoom": 2,
+  "retries": 0,
+  "commandsAllowed": "ordinary room create/join/ready and teardown menus only",
+  "limitations": [
+    "same process server and Playwright coordinator",
+    "idle initial armies, no combat or final dense performance inference",
+    "headless Chromium tabs visibility recorded"
+  ]
+}

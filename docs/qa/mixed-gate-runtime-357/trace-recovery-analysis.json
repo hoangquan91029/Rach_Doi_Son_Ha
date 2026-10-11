@@ -1,0 +1,334 @@
+{
+  "status": "ADDITIVE357_RETAINED_TRACE_ANALYSIS_ONLY_ORIGINAL_BROWSER_HOLD_UNCHANGED",
+  "reason": "snapshotView excludes path. Originalverifier failed after actualtransit beforeStop/menu; no browserreplay. Gatecenter route observed fromactualpositions ratherthan unsupported pathfield.",
+  "originalReceiptSHA256": "954a89eb0f34d663e48caac7c1d5acb2ebd71fb3756da80ea9923e73cbc63b93",
+  "actualAssigned": {
+    "tick": 1412,
+    "actor": {
+      "id": 7,
+      "owner": 0,
+      "type": "villager",
+      "kind": "unit",
+      "x": 8.5,
+      "y": 30.090867478237772,
+      "hp": 65,
+      "maxHp": 65,
+      "food": 39.993376,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "walk",
+      "dir": 2,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "resuppliedTick": 1411,
+      "starving": 0,
+      "lastMovedTick": 1412,
+      "order": {
+        "type": "move",
+        "x": 5.999844197088802,
+        "y": 30.499874371396498
+      }
+    },
+    "requested": {
+      "x": 6,
+      "y": 30.5
+    }
+  },
+  "traceSamples": 57,
+  "firstTick": 1359,
+  "lastTick": 1434,
+  "crossings": [],
+  "relevantActiveTickGaps": [
+    {
+      "before": 1409,
+      "after": 1411,
+      "p0": {
+        "x": 0.0,
+        "y": -0.6191325217622285
+      },
+      "p1": {
+        "x": 0.0,
+        "y": -0.5141325217622281
+      },
+      "near": true,
+      "movementObserved": true
+    },
+    {
+      "before": 1411,
+      "after": 1413,
+      "p0": {
+        "x": 0.0,
+        "y": -0.5141325217622281
+      },
+      "p1": {
+        "x": 0.0,
+        "y": -0.30413252176222727
+      },
+      "near": true,
+      "movementObserved": true
+    },
+    {
+      "before": 1413,
+      "after": 1415,
+      "p0": {
+        "x": 0.0,
+        "y": -0.30413252176222727
+      },
+      "p1": {
+        "x": 0.0,
+        "y": -0.09413252176222642
+      },
+      "near": true,
+      "movementObserved": true
+    },
+    {
+      "before": 1415,
+      "after": 1417,
+      "p0": {
+        "x": 0.0,
+        "y": -0.09413252176222642
+      },
+      "p1": {
+        "x": -0.11586747823777444,
+        "y": 0.0
+      },
+      "near": true,
+      "movementObserved": true
+    },
+    {
+      "before": 1417,
+      "after": 1419,
+      "p0": {
+        "x": -0.11586747823777444,
+        "y": 0.0
+      },
+      "p1": {
+        "x": -0.3258674782377753,
+        "y": 0.0
+      },
+      "near": true,
+      "movementObserved": true
+    },
+    {
+      "before": 1421,
+      "after": 1423,
+      "p0": {
+        "x": -0.5358674782377761,
+        "y": 0.0
+      },
+      "p1": {
+        "x": -0.745867478237777,
+        "y": 0.0
+      },
+      "near": true,
+      "movementObserved": true
+    },
+    {
+      "before": 1424,
+      "after": 1426,
+      "p0": {
+        "x": -0.8508674782377774,
+        "y": 0.0
+      },
+      "p1": {
+        "x": -1.0608674782377783,
+        "y": 0.0
+      },
+      "near": true,
+      "movementObserved": true
+    },
+    {
+      "before": 1426,
+      "after": 1428,
+      "p0": {
+        "x": -1.0608674782377783,
+        "y": 0.0
+      },
+      "p1": {
+        "x": -1.2708674782377791,
+        "y": 0.0
+      },
+      "near": true,
+      "movementObserved": true
+    }
+  ],
+  "otherIdleOrOutsideGaps": [
+    {
+      "before": 1359,
+      "after": 1361,
+      "p0": {
+        "x": 0.0,
+        "y": -0.6191325217622285
+      },
+      "p1": {
+        "x": 0.0,
+        "y": -0.6191325217622285
+      },
+      "near": true,
+      "movementObserved": false
+    },
+    {
+      "before": 1367,
+      "after": 1369,
+      "p0": {
+        "x": 0.0,
+        "y": -0.6191325217622285
+      },
+      "p1": {
+        "x": 0.0,
+        "y": -0.6191325217622285
+      },
+      "near": true,
+      "movementObserved": false
+    },
+    {
+      "before": 1372,
+      "after": 1374,
+      "p0": {
+        "x": 0.0,
+        "y": -0.6191325217622285
+      },
+      "p1": {
+        "x": 0.0,
+        "y": -0.6191325217622285
+      },
+      "near": true,
+      "movementObserved": false
+    },
+    {
+      "before": 1378,
+      "after": 1380,
+      "p0": {
+        "x": 0.0,
+        "y": -0.6191325217622285
+      },
+      "p1": {
+        "x": 0.0,
+        "y": -0.6191325217622285
+      },
+      "near": true,
+      "movementObserved": false
+    },
+    {
+      "before": 1384,
+      "after": 1386,
+      "p0": {
+        "x": 0.0,
+        "y": -0.6191325217622285
+      },
+      "p1": {
+        "x": 0.0,
+        "y": -0.6191325217622285
+      },
+      "near": true,
+      "movementObserved": false
+    },
+    {
+      "before": 1391,
+      "after": 1393,
+      "p0": {
+        "x": 0.0,
+        "y": -0.6191325217622285
+      },
+      "p1": {
+        "x": 0.0,
+        "y": -0.6191325217622285
+      },
+      "near": true,
+      "movementObserved": false
+    },
+    {
+      "before": 1395,
+      "after": 1397,
+      "p0": {
+        "x": 0.0,
+        "y": -0.6191325217622285
+      },
+      "p1": {
+        "x": 0.0,
+        "y": -0.6191325217622285
+      },
+      "near": true,
+      "movementObserved": false
+    },
+    {
+      "before": 1400,
+      "after": 1402,
+      "p0": {
+        "x": 0.0,
+        "y": -0.6191325217622285
+      },
+      "p1": {
+        "x": 0.0,
+        "y": -0.6191325217622285
+      },
+      "near": true,
+      "movementObserved": false
+    },
+    {
+      "before": 1405,
+      "after": 1407,
+      "p0": {
+        "x": 0.0,
+        "y": -0.6191325217622285
+      },
+      "p1": {
+        "x": 0.0,
+        "y": -0.6191325217622285
+      },
+      "near": true,
+      "movementObserved": false
+    },
+    {
+      "before": 1428,
+      "after": 1430,
+      "p0": {
+        "x": -1.2708674782377791,
+        "y": 0.0
+      },
+      "p1": {
+        "x": -1.48086747823778,
+        "y": 0.0
+      },
+      "near": false,
+      "movementObserved": true
+    },
+    {
+      "before": 1431,
+      "after": 1433,
+      "p0": {
+        "x": -1.5858674782377804,
+        "y": 0.0
+      },
+      "p1": {
+        "x": -1.7958674782377813,
+        "y": 0.0
+      },
+      "near": false,
+      "movementObserved": true
+    }
+  ],
+  "closestGateCenter": {
+    "tick": 1415,
+    "x": 8.5,
+    "y": 30.405867478237774,
+    "distance": 0.09413252176222642
+  },
+  "lastArrivalDistance": 0.5992883378411568,
+  "lastOrder": null,
+  "actualTechnicalPortalObserved": false,
+  "builderStopVerified": false,
+  "menu0Verified": false,
+  "scope": "Sourcebound realclip anddefaultzoom screenshot/retained actualtransit support narrow intake only; full357 closure remains HOLD; physicalbody acceptance pendingroot",
+  "cleanup": {
+    "rooms": 0,
+    "serverListening": false,
+    "browserClosed": true
+  }
+}

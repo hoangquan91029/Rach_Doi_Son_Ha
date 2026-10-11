@@ -1,0 +1,182 @@
+{
+  "status": "PASS350_IDLE_1_5_8_ORDINARY_ONLINE_BASELINE",
+  "phases": [
+    {
+      "rooms": 1,
+      "connections": 2,
+      "livingEntities": 34,
+      "perRoomLiving": [
+        34
+      ],
+      "seconds": 25.865123388,
+      "tickRateMin": 19.949643860558414,
+      "tickRateMax": 19.949643860558414,
+      "tickAdvance": [
+        516
+      ],
+      "frameCostMs": {
+        "samples": 54,
+        "median": 3.3999999910593033,
+        "p95": 5.4000000059604645,
+        "max": 5.700000002980232
+      },
+      "pingMs": {
+        "median": 8.700000002980232,
+        "p95": 12.600000008940697,
+        "max": 20.099999994039536
+      },
+      "visibilityStates": [
+        "visible"
+      ],
+      "diagnosticReadMs": {
+        "median": 7.117833000000246,
+        "max": 17.44769499999893
+      },
+      "eventLoopDelayMs": {
+        "mean": 10.110049676309616,
+        "max": 13.975551,
+        "p50": 10.092543,
+        "p95": 10.600447,
+        "p99": 11.001855
+      },
+      "eventLoopUtilization": 0.025004186958852904,
+      "rssMiB": 224.0390625,
+      "cpuSeconds": 0.944698
+    },
+    {
+      "rooms": 5,
+      "connections": 10,
+      "livingEntities": 170,
+      "perRoomLiving": [
+        34,
+        34,
+        34,
+        34,
+        34
+      ],
+      "seconds": 25.465421672999998,
+      "tickRateMin": 19.87008134000358,
+      "tickRateMax": 19.87008134000358,
+      "tickAdvance": [
+        506,
+        506,
+        506,
+        506,
+        506
+      ],
+      "frameCostMs": {
+        "samples": 260,
+        "median": 4.799999997019768,
+        "p95": 8.799999997019768,
+        "max": 15.200000002980232
+      },
+      "pingMs": {
+        "median": 15.0,
+        "p95": 50.70000000298023,
+        "max": 125.29999999701977
+      },
+      "visibilityStates": [
+        "visible"
+      ],
+      "diagnosticReadMs": {
+        "median": 24.40074850000383,
+        "max": 64.43272299999808
+      },
+      "eventLoopDelayMs": {
+        "mean": 11.150566770039422,
+        "max": 50.626559,
+        "p50": 10.108927,
+        "p95": 18.153471,
+        "p99": 27.148287
+      },
+      "eventLoopUtilization": 0.21856459787445068,
+      "rssMiB": 341.3359375,
+      "cpuSeconds": 5.021961
+    },
+    {
+      "rooms": 8,
+      "connections": 16,
+      "livingEntities": 272,
+      "perRoomLiving": [
+        34,
+        34,
+        34,
+        34,
+        34,
+        34,
+        34,
+        34
+      ],
+      "seconds": 25.61378293500001,
+      "tickRateMin": 19.911154915860138,
+      "tickRateMax": 19.911154915860138,
+      "tickAdvance": [
+        510,
+        510,
+        510,
+        510,
+        510,
+        510,
+        510,
+        510
+      ],
+      "frameCostMs": {
+        "samples": 416,
+        "median": 4.700000002980232,
+        "p95": 8,
+        "max": 15.400000005960464
+      },
+      "pingMs": {
+        "median": 13.399999991059303,
+        "p95": 24.5,
+        "max": 63.099999994039536
+      },
+      "visibilityStates": [
+        "visible"
+      ],
+      "diagnosticReadMs": {
+        "median": 28.061728499997116,
+        "max": 47.72925699999905
+      },
+      "eventLoopDelayMs": {
+        "mean": 11.452234256042972,
+        "max": 90.046463,
+        "p50": 10.100735,
+        "p95": 23.314431,
+        "p99": 34.996223
+      },
+      "eventLoopUtilization": 0.28243223701923836,
+      "rssMiB": 380.9296875,
+      "cpuSeconds": 7.319267
+    }
+  ],
+  "limitations": [
+    "Server and Playwright coordinator share process: CPU, memory and event-loop figures are combined.",
+    "Initial armies idle, no combat or dense army measurement.",
+    "Headless Chromium on one host, not WAN or external desktop evidence.",
+    "frameMs is sampled renderer execution cost, not RAF interval or FPS; sampling does not establish missed frame rate.",
+    "Sequential increasing load; older rooms run longer. Both maps are present beyond one-room phase.",
+    "Read-only diagnostics snapshot clones displayed state, contributing measurement overhead."
+  ],
+  "errors": [],
+  "networkErrors": [],
+  "httpErrors": [],
+  "commands": [],
+  "cleanup": {
+    "rooms": 0,
+    "connections": 0,
+    "serverListening": false,
+    "contextsClosed": 16,
+    "pagesClosed": 16,
+    "browserClosed": true,
+    "productionTouched": false
+  },
+  "afterMenus": {
+    "rooms": 0,
+    "connections": 0
+  },
+  "preservation": "PASS_EXACT_PUBLIC_RUNTIME_SOURCE_BUILD_BYTES",
+  "menuCleanupErrors": null,
+  "responsePinsCount": 952,
+  "conclusion": "No concrete simulation bottleneck demonstrated within these idle baseline windows. Measurements do not close final room/dense/browser performance."
+}

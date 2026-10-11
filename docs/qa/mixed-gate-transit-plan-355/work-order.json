@@ -1,0 +1,69 @@
+{
+  "id": 355,
+  "status": "PLAN_PREP_ONLY_UNCALLED_GEOMETRY_CONCERN",
+  "sourceHEAD": "5c528389ceb00a0c484776775d8fe96418bf8f45",
+  "sourcePins": {
+    "shared/sim.js": "29233a059ec084bc8577d20a1bccfd28ddc3024b9cb9bf4d5598c22f220f748b",
+    "shared/data.js": "ffc3f45adc58f212066d3763c591377ce15b9f6ac78e4685a95fc3ac747818e1",
+    "client/fortification-topology.js": "80049674ec4907421f22498615c3ed09131d12476609d5d568caf67f0e822f18",
+    "client/fortification-art.js": "17455ed06ef4ff03246a37773edc6de841f0ed7d69a7ebe5184028b1affa3ff2"
+  },
+  "layoutRelativeToGate": {
+    "gate": [
+      0,
+      0
+    ],
+    "wallEast": [
+      1,
+      0
+    ],
+    "wallSouth": [
+      0,
+      1
+    ],
+    "wallNW": [
+      -1,
+      -1
+    ],
+    "northStartCell": [
+      0,
+      -1
+    ],
+    "westDestinationCell": [
+      -1,
+      0
+    ]
+  },
+  "gateMask": 5,
+  "gateAxis": "X",
+  "portal": {
+    "line": "x+y=-.17",
+    "jambA": [
+      0,
+      -0.17
+    ],
+    "jambB": [
+      -0.17,
+      0
+    ],
+    "crossingPredicate": "strict interior aperture0<u<.17sqrt2; record every crossing and jamb clearance",
+    "knownIssue": "centered North\u2192Gate\u2192West route crosses jamb endpoints, not aperture interior"
+  },
+  "finiteFutureScene": {
+    "campaigns": 1,
+    "retries": 0,
+    "transitMoves": 1,
+    "sourceBuildBindingRequired": true,
+    "launchAuthorized": false,
+    "ordinaryUIOnly": true
+  },
+  "performed": {
+    "browserCalls": 0,
+    "serverCalls": 0,
+    "tests": 0,
+    "builds": 0,
+    "imageCalls": 0,
+    "simulationCalls": 0
+  },
+  "outcome": "Cannot honestly guarantee physical diagonal portal transit from proposed four-structure grid fixture alone"
+}

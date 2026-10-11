@@ -1,0 +1,110 @@
+--- /dev/null
++++ b/scripts/export-whole2d-building-atlas.py
+@@ -0,0 +1,107 @@
++#!/usr/bin/env python3
++"""Candidate compiler for selected whole illustrated building frames; no visual approval."""
++import argparse, hashlib, importlib.util, json, re, shutil, subprocess, sys, tempfile
++from pathlib import Path
++from PIL import Image
++sys.dont_write_bytecode = True
++CAMERA={'projection':'dimetric','ratio':[2,1],'tile':[54,27],'elevation':26.565}
++STATES={'idle','construction','hit','attack','death'}
++ADJUSTMENTS={'crop','trim','scale','transform','offset','pivot','runtimeCell','renderSize','mirror','warp','fit','shift'}
++def sha(data): return hashlib.sha256(data).hexdigest()
++def require(ok,message):
++    if not ok: raise ValueError(message)
++def validator(root):
++    spec=importlib.util.spec_from_file_location('building_packaging_contract',Path(root)/'scripts/validate-art-assets.py')
++    module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module);return module
++
++def pinned(record,base):
++    require(isinstance(record,dict) and isinstance(record.get('path'),str),'Missing custody record')
++    p=Path(record['path']);p=p.resolve() if p.is_absolute() else (base/p).resolve()
++    require(p.is_file(),'Missing custody file: '+str(p));require(record.get('sha256')==sha(p.read_bytes()),'Custody hash mismatch: '+str(p));return p
++
++def preflight(job_path,project_root):
++    path=Path(job_path).resolve();job=json.loads(path.read_text());base=path.parent;contract=validator(project_root)
++    require(job.get('kind','building')=='building' and re.fullmatch(r'building\.[A-Za-z0-9_-]+',job.get('family','')),'Whole building family/kind required')
++    require(job.get('state') in STATES and job.get('direction','missing') is None,'Explicit building state and null direction required')
++    require(type(job.get('loop')) is bool,'Explicit loop boolean required')
++    require(job['state']!='death' or job['loop'] is False,'Death requires nonloop terminal hold')
++    require(job.get('sourceMethod')=='FINISHED_WHOLE_2D_FRAMES' and job.get('wholeCanvasTransform')=='UNIFORM_LANCZOS_NO_CROP_SHIFT_FIT','Finished whole frames/common uniform transform required')
++    require(not ADJUSTMENTS.intersection(set(job)-{'pivot','runtimeCell','renderSize'}),'Undeclared whole transform forbidden')
++    require(isinstance(job.get('id'),str) and re.fullmatch(r'[A-Za-z0-9_.-]{1,120}',job['id']),'Invalid asset ID')
++    for key in ['sourceCanvas','runtimeCell','pivot','renderSize']:
++        require(isinstance(job.get(key),list) and len(job[key])==2,'Explicit fixed '+key+' required')
++    contract.dimensions(dict(zip(('width','height'),job['sourceCanvas'])),'sourceCanvas');contract.dimensions(dict(zip(('width','height'),job['runtimeCell'])),'runtimeCell')
++    require(job['runtimeCell'][0]/job['sourceCanvas'][0]==job['runtimeCell'][1]/job['sourceCanvas'][1],'Uniform whole canvas scale required')
++    frames=job.get('frames');require(isinstance(frames,list) and 1<=len(frames)<=16,'1–16 selected whole frames required')
++    require(type(job.get('expectedFrameCount')) is int and job['expectedFrameCount']==len(frames),'Missing declared phase binding/count')
++    contract.dimensions({'width':job['runtimeCell'][0]*len(frames),'height':job['runtimeCell'][1]},'runtimeAtlas')
++    images=[];records=[];seen=set()
++    for i,f in enumerate(frames):
++        require(isinstance(f,dict) and type(f.get('index')) is int and f.get('index')==i and f.get('phase')==f'F{i}' and f.get('selectionStatus')=='SELECTED_FRAME_CANDIDATE','Missing/held/rejected or duplicate phase binding')
++        require(not ADJUSTMENTS.intersection(f),'Per-frame adjustment forbidden')
++        duration=f.get('durationMs');require(type(duration) is int and 0<duration<=60000,'Positive finite integer duration required')
++        source=dict(f['source']);require(not ADJUSTMENTS.intersection(source),'Nested source adjustment forbidden')
++        require([source.get('width'),source.get('height')]==job['sourceCanvas'],'Fixed source canvas drift')
++        raw=pinned(source,base);require(raw.suffix.lower()=='.png','Whole returned PNG required');source['path']=str(raw)
++        im,_=contract.image_file(source,base,f'F{i}','transparent',True)
++        require(source['rgbaSha256'] not in seen,'Duplicate whole pixels cannot supply missing phase');seen.add(source['rgbaSha256'])
++        original=pinned(f['originalRaw'],base);require(original==raw and f['originalRaw']['sha256']==source['sha256'],'Original raw must bind exact selected bytes')
++        tool=pinned(f['toolReceipt'],base);selected=pinned(f['selectionReceipt'],base);selection=json.loads(selected.read_text())
++        indexed=selection.get('status')=='SELECTED_FRAME_CANDIDATE' and selection.get('frameIndex')==i and selection.get('sourceSha256')==source['sha256'] and selection.get('rgbaSha256')==source['rgbaSha256']
++        static_intake=re.fullmatch(r'ACCEPTED_NARROW_SOURCE_APPEARANCE_FOR\d+_TRIAL',selection.get('status','')) and selection.get('selectedSourceSha256')==source['sha256']
++        legacy_static=re.fullmatch(r'WHOLE_[A-Z0-9_]+_APPEARANCE_ACCEPTED_FOR_FINITE_RUNTIME_TRIAL',selection.get('status','')) and selection.get('rawSHA256',selection.get('sourceSHA256'))==source['sha256']
++        static=job['state']=='idle' and len(frames)==1 and i==0 and (static_intake or legacy_static)
++        require(indexed or static,'Selection receipt must bind exact selected phase/source; held/rejected cannot export')
++        custody={key:{'path':str(value),'sha256':sha(value.read_bytes())} for key,value in [('originalRaw',original),('toolReceipt',tool),('selectionReceipt',selected)]}
++        provenance=f.get('provenance',[]);require(isinstance(provenance,list),'Provenance records must be a list')
++        custody['provenance']=[{'path':str(pinned(record,base)),'sha256':record['sha256']} for record in provenance]
++        records.append({'source':source,**custody});images.append(im)
++    return job,images,records,contract
++
++def export(job_path,output,project_root):
++    output=Path(output).resolve();require(not output.exists(),'Refusing existing output')
++    job,images,records,contract=preflight(job_path,project_root)
++    inputs=[Path(job_path).resolve()]+[Path(rec[key]['path']) for rec in records for key in ['source','originalRaw','toolReceipt','selectionReceipt']]+[Path(v['path']) for rec in records for v in rec['provenance']]
++    require(not any(output==p or output in p.parents for p in inputs),'Output overlaps source custody')
++    w,h=job['runtimeCell'];atlas=Image.new('RGBA',(w*len(images),h));frames=[]
++    output.parent.mkdir(parents=True,exist_ok=True)
++    with tempfile.TemporaryDirectory(prefix='.whole-building-',dir=output.parent) as temporary:
++        tmp=Path(temporary);(tmp/'sources').mkdir();(tmp/'custody').mkdir()
++        copied=[]
++        for i,(image,record) in enumerate(zip(images,records)):
++            shutil.copyfile(record['source']['path'],tmp/'sources'/f'F{i}.png')
++            source=dict(record['source'],path=str(output/'sources'/f'F{i}.png'))
++            atlas.paste(image.resize((w,h),Image.Resampling.LANCZOS),(i*w,0))
++            frames.append(dict(x=i*w,y=0,width=w,height=h,durationMs=job['frames'][i]['durationMs'],source=source,events=[]))
++            keys=['originalRaw','toolReceipt','selectionReceipt'];copies={}
++            for key in keys:
++                target=tmp/'custody'/f'F{i}-{key}{Path(record[key]["path"]).suffix}';shutil.copyfile(record[key]['path'],target);copies[key]={'path':str(output/'custody'/target.name),'sha256':record[key]['sha256']}
++            copies['provenance']=[]
++            for n,rec in enumerate(record['provenance']):
++                target=tmp/'custody'/f'F{i}-provenance{n}{Path(rec["path"]).suffix}';shutil.copyfile(rec['path'],target);copies['provenance'].append({'path':str(output/'custody'/target.name),'sha256':rec['sha256']})
++            copied.append(copies)
++        atlas.save(tmp/'atlas.png');method='atlas' if len(frames)>1 else 'resize'
++        asset=dict(id=job['id'],family=job['family'],kind='building',state=job['state'],direction=None,source=frames[0]['source'],runtime=dict(path='atlas.png',sha256=sha((tmp/'atlas.png').read_bytes()),rgbaSha256=sha(atlas.tobytes()),width=atlas.width,height=atlas.height,derivation=dict(method=method,filter='lanczos',sourceSha256=frames[0]['source']['sha256'])),cell=dict(width=w,height=h),pivot=dict(x=job['pivot'][0],y=job['pivot'][1],space='source'),render=dict(width=job['renderSize'][0],height=job['renderSize'][1]),alphaPolicy='transparent',contactShadow={'mode':'baked'},candidate=True,review={'status':'CANDIDATE'},frames=frames,loop=job['loop'])
++        if 'fortification' in job:asset['fortification']=job['fortification']
++        manifest=dict(schemaVersion=1,status='CANDIDATE',camera=CAMERA,assets=[asset],notes='Technical custody only; no visual/scene/install approval')
++        # Validators read the temporary whole raster and originals before atomic publication.
++        validation_manifest=json.loads(json.dumps(manifest))
++        validation_manifest['assets'][0]['source']['path']=str(tmp/'sources/F0.png')
++        for i,f in enumerate(validation_manifest['assets'][0]['frames']):f['source']['path']=str(tmp/'sources'/f'F{i}.png')
++        (tmp/'manifest.json').write_text(json.dumps(validation_manifest,indent=2)+'\n')
++        validation=contract.validate_manifest(tmp/'manifest.json');require(validation['packaging']=='PASS','Authoritative raster validator failed: '+json.dumps(validation))
++        subprocess.run(['node','--input-type=module','-e',"import fs from 'node:fs';import {pathToFileURL} from 'node:url';const {validateManifest}=await import(pathToFileURL(process.argv[1]+'/client/art-assets.js'));validateManifest(JSON.parse(fs.readFileSync(process.argv[2])));",str(Path(project_root).resolve()),str(tmp/'manifest.json')],check=True,capture_output=True,text=True)
++        (tmp/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
++        shutil.copyfile(job_path,tmp/'selected-job.json')
++        ledger=dict(status='CANDIDATE_TECHNICAL_CUSTODY_ONLY',jobSha256=sha(Path(job_path).read_bytes()),frames=records,copiedCustody=copied,timingMs=[f['durationMs'] for f in frames],totalDurationMs=sum(f['durationMs'] for f in frames),terminal={'frame':len(frames)-1,'loop':False,'hold':'Last frame clamps until ordinary state lifetime ends'} if not job['loop'] else None,validators={'pythonPackaging':'PASS','existingRuntimeManifest':'PASS'},validatorPins={'scripts/validate-art-assets.py':sha((Path(project_root)/'scripts/validate-art-assets.py').read_bytes()),'client/art-assets.js':sha((Path(project_root)/'client/art-assets.js').read_bytes())},limits='No missingphase substitution, art generation, visual acceptance or runtime installation')
++        (tmp/'frame-source-ledger.json').write_text(json.dumps(ledger,indent=2)+'\n')
++        for i,rec in enumerate(records):
++            require(sha((tmp/'sources'/f'F{i}.png').read_bytes())==rec['source']['sha256'],'Source changed during export')
++            for key in ['originalRaw','toolReceipt','selectionReceipt']:
++                require(sha((tmp/'custody'/Path(copied[i][key]['path']).name).read_bytes())==rec[key]['sha256'],'Custody changed during export')
++            for n,record in enumerate(rec['provenance']):
++                require(sha((tmp/'custody'/Path(copied[i]['provenance'][n]['path']).name).read_bytes())==record['sha256'],'Provenance changed during export')
++        require(not output.exists(),'Output appeared during export');tmp.rename(output)
++    return ledger
++if __name__=='__main__':
++    parser=argparse.ArgumentParser();parser.add_argument('job',type=Path);parser.add_argument('output',type=Path);parser.add_argument('--project-root',type=Path,default=Path(__file__).resolve().parent.parent);args=parser.parse_args();print(json.dumps(export(args.job,args.output,args.project_root),indent=2))

@@ -1,0 +1,128 @@
+{
+  "status": "PASS361_ALL_NINE_ENABLED_ROUTES_WOOD_WALL_GATE_ABSENT_PREP_ONLY",
+  "routes": [
+    {
+      "route": "pilot",
+      "manifestURL": "/assets/art-v1/manifest.json",
+      "manifestSHA256": "4fda8d2ec7f6bb4690a36644bacf2e222b722091905f9cfcc904295fa4e59814",
+      "activeDescriptors": 14,
+      "activeWoodWallGateRows": 0,
+      "excludedLegacyRows": [],
+      "retainedRowsByteEqual": true
+    },
+    {
+      "route": "walk",
+      "manifestURL": "/assets/art-v1/walk-014-manifest.json",
+      "manifestSHA256": "f7299407cfd600f8c309f6bb78251c63d757e00ad4fdca1a1925810518f33be6",
+      "activeDescriptors": 16,
+      "activeWoodWallGateRows": 0,
+      "excludedLegacyRows": [],
+      "retainedRowsByteEqual": true
+    },
+    {
+      "route": "work",
+      "manifestURL": "/assets/art-v1/gather-026-manifest.json",
+      "manifestSHA256": "377d433dbdd2050564131f6ea7e67e14f65a749069cf2500bc46b54039e3471f",
+      "activeDescriptors": 17,
+      "activeWoodWallGateRows": 0,
+      "excludedLegacyRows": [],
+      "retainedRowsByteEqual": true
+    },
+    {
+      "route": "terrain",
+      "manifestURL": "/assets/art-v1/terrain-127-manifest.json",
+      "manifestSHA256": "bd2221e8cceeea0edda3351644292af00e0c9e5afaeecceab3ce51097e5c0556",
+      "activeDescriptors": 23,
+      "activeWoodWallGateRows": 0,
+      "excludedLegacyRows": [],
+      "retainedRowsByteEqual": true
+    },
+    {
+      "route": "iron",
+      "manifestURL": "/assets/art-v1/iron-137-manifest.json",
+      "manifestSHA256": "b8523b187fa0bfac4fd81ad79b05eb635b4b2a21451ec204d2b069387ee2b497",
+      "activeDescriptors": 24,
+      "activeWoodWallGateRows": 0,
+      "excludedLegacyRows": [],
+      "retainedRowsByteEqual": true
+    },
+    {
+      "route": "workshop",
+      "manifestURL": "/assets/art-v1/workshop-144-manifest.json",
+      "manifestSHA256": "27b5c45011e28c92da215a192189c381bfc44253e5a92ecc5db399001da26197",
+      "activeDescriptors": 25,
+      "activeWoodWallGateRows": 0,
+      "excludedLegacyRows": [],
+      "retainedRowsByteEqual": true
+    },
+    {
+      "route": "camp",
+      "manifestURL": "/assets/art-v1/camp-148-manifest.json",
+      "manifestSHA256": "b9ccd2b7bb68e11bdc9bacfdd31d56dcc05579c2950c01e650f0827ef1cbc134",
+      "activeDescriptors": 26,
+      "activeWoodWallGateRows": 0,
+      "excludedLegacyRows": [],
+      "retainedRowsByteEqual": true
+    },
+    {
+      "route": "shipyard",
+      "manifestURL": "/assets/art-v1/shipyard-165-manifest.json",
+      "manifestSHA256": "c3001cc1d2ee7fcc8db3cb5c1cec236e40ebbd2a3714297e4488f5d4fdf4e7b5",
+      "activeDescriptors": 27,
+      "activeWoodWallGateRows": 0,
+      "excludedLegacyRows": [],
+      "retainedRowsByteEqual": true
+    },
+    {
+      "route": "fort",
+      "manifestURL": "/assets/art-v1/fort-202-manifest.json",
+      "manifestSHA256": "3ef13da7fac2f8e16ba6a7beedc8f7baa24965a375a7e063fb6a41c77bca5e74",
+      "activeDescriptors": 29,
+      "activeWoodWallGateRows": 0,
+      "excludedLegacyRows": [
+        "wall-whole-234-mask0",
+        "wall-whole-234-mask1",
+        "wall-whole-234-mask2",
+        "wall-whole-234-mask3",
+        "wall-whole-239-mask4",
+        "wall-whole-239-mask8",
+        "wall-whole-239-mask12",
+        "gate-whole-245-X-mask0",
+        "gate-whole-245-X-mask1",
+        "gate-whole-245-X-mask2",
+        "gate-whole-245-X-mask3",
+        "wall-whole-248-mask5",
+        "gate-whole-252-Y-mask4",
+        "gate-whole-252-Y-mask8",
+        "gate-whole-252-Y-mask12",
+        "wall-whole-263-mask6",
+        "wall-whole-264-mask9",
+        "wall-whole-265-mask10",
+        "wall-whole-construction-278-mask0",
+        "wall-whole-274-mask7",
+        "wall-whole-275-mask11",
+        "wall-whole-280-mask13",
+        "wall-whole-282-mask14",
+        "wall-whole-288-mask15",
+        "wall-whole-wreck-key-292-mask0"
+      ],
+      "retainedRowsByteEqual": true
+    }
+  ],
+  "bareURL": {
+    "routeEnabled": false,
+    "renderer": "unconditional native2D stoneWall/Gate fallback",
+    "rendererSHA256": "f2b1626ea016c3120f734ff337bdf3f236a320b8dd306bb61d9ccd10e2a23320",
+    "nativeStoneModuleSHA256": "7d4da2f741a928db2ffb0e07569809262aeb0f9b906419b025f066b3d7cdfa68"
+  },
+  "legacyPayloadsDeleted": 15,
+  "historyScope": "Raw/PNG/manifests/receipts/custody/currentrollback outsideisolatedstage remain untouched",
+  "authoredPlan": "ONLY rootselected realisticStoneX362/StoneY/ONEcorner5; allothermasks/states use nativeSTONEfallback, no further authoredvariants/assembly/rotation/mirror",
+  "sourceBindings": "WAIT_ALL_THREE_EXACT_SOURCE_BINDINGS",
+  "builds": 0,
+  "browserCalls": 0,
+  "imageCalls": 0,
+  "canonicalEdits": 0,
+  "retirementScope": "ONLY exact15unreferencedruntimefiles inisolatedstage aftercopy+pinretired-wood-custody; canonical/history preserved",
+  "retirementInventorySHA256": "eff24152ac3edff747476512004eb74b854f18598f43a219b4792fa3a1e4dd22"
+}

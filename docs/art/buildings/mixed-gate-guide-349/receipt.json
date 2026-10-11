@@ -1,0 +1,68 @@
+{
+  "order": 349,
+  "status": "COMPLETE_STRUCTURAL_GUIDE_ONLY_AWAIT_ROOT_INTAKE",
+  "sourceHead": "5c528389ceb00a0c484776775d8fe96418bf8f45",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "low",
+  "candidate": "Gate completedidle mask5 axisX",
+  "canvas": [
+    1254,
+    1254
+  ],
+  "pivot": [
+    627,
+    900
+  ],
+  "runtimeCell": 128,
+  "logicalRender": 42.3225,
+  "imageCalls": 0,
+  "retries": 0,
+  "guideRenderer": "bundled sharp0.35.5 SVG to PNG, native vector rasterization only",
+  "groundEndpoints": {
+    "Xnegative": [
+      227,
+      700
+    ],
+    "Xpositive": [
+      1027,
+      1100
+    ],
+    "Ypositive": [
+      227,
+      1100
+    ]
+  },
+  "jambs": [
+    [
+      491,
+      832
+    ],
+    [
+      763,
+      968
+    ]
+  ],
+  "branchPolyline": [
+    [
+      491,
+      832
+    ],
+    [
+      91,
+      1032
+    ],
+    [
+      227,
+      1100
+    ]
+  ],
+  "branchDesign": "+Y cheek offset to left jamb at worldX-.17, then short +X return at worldY+.5 to exact +Y endpoint; no wall anchored at center627900",
+  "height": "all wall panels450; gate posts475, header spans above clear passage",
+  "occlusion": "Original far X-left wing and its endpost drawn first; near +Y cheek obscures lower far endpost. Offset return drawn in front; jambs then header maintain coherent overlap. No cheek surface enters x>519 passage region below header.",
+  "transparentPassage": "No ground crosspiece or central post; aperture remains alpha between inner jambs below header. Render has alpha; actual game transit/picking unproven.",
+  "limits": [
+    "authoring vector only, not returned illustration or runtime asset",
+    "no imagegen/browser/test/build/server/runtime/canonical/public mutation",
+    "exact joins, gameplay scale appearance, friendly transit, pick and final illustration need future finite call plus isolated actual UI trial"
+  ]
+}

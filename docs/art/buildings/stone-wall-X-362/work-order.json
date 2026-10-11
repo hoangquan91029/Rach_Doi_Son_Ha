@@ -1,0 +1,26 @@
+{
+  "order": 362,
+  "status": "RETURNED_CLOSED",
+  "method": "builtin_imagegen_whole2D",
+  "maxCalls": 1,
+  "retries": 0,
+  "guide": "docs/art/buildings/stone-wall-guides-360/guide-X.png",
+  "guideSHA": "fac6ecd9e1530b90de6ad39c05b56813e959ff01a43e6ea92974334c6bd4ea6c",
+  "scope": "Latest human: stone only, exactly X/Y/corner authoring; remove active wood fortification. X pilot only here.",
+  "rootGuideIntake": "Brief whole X/Y geometry look accepts shared thickness/height/flat joins as authoring guide, not finished art.",
+  "canvas": [
+    1254,
+    1254
+  ],
+  "pivot": [
+    627,
+    900
+  ],
+  "runtimeCell": 128,
+  "logicalRender": 42.3225,
+  "prompt": "Use case: sketch-to-render. Asset: ONE finished whole painted 2D stone fortification wall sprite for the historical RTS Rạch Đôi Sơn Hà. Input image 1 is the exact whole geometry/camera/composition reference, not final surface quality. Repaint the entire wall as convincingly realistic hand-painted cut-stone masonry, with three-dimensional depth, warm grey limestone blocks, subtle uneven stone faces, recessed mortar, gentle weathering and a slightly lighter flat stone cap. The finished image must look like professionally illustrated classic historical RTS artwork, not a flat vector diagram. Realistic readable block volumes and lighting are more important than microscopic texture. Soft light from upper left; restrained grey-beige stone palette. Keep EXACTLY the silhouette, camera, wall length, wall height, butt-end cross-sections and placement of the supplied X-axis guide: long wall slopes from upper-left to lower-right, flat continuous top, uniform thickness, plain flush ends. Full square 1254 canvas equivalent, ample transparent margin all sides, ground center fixed at (627,900), endpoints (227,700) and (1027,1100), height550. Do not enlarge, recenter, crop, fit or redesign the wall. Transparent background, no ground tile, no cast shadow outside wall footprint, no text. This must be a single complete standalone wall illustration. NO wood, timber, fence, beams, rails, posts, spikes, battlements, towers, gate, flags, grass, vegetation, soldiers, logos or additional structures. No stylized outline, toy look, flat vector finish, or 3D model/render. Make the masonry convincingly real and readable at tiny gameplay scale.",
+  "noRuntimeOrPublicChanges": true,
+  "callsStarted": 1,
+  "execCell": "256",
+  "callsCompleted": 1
+}

@@ -1,0 +1,131 @@
+{
+  "order": 360,
+  "status": "CLOSED_TWO_ORIGINAL_WHOLE2D_STONE_GUIDES_AWAIT_ROOT_INTAKE",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "low",
+  "latestHumanScope": "Allwalls stone material; simple X/Y joins. Supersedes active woodwall production; history retained.",
+  "canvas": [
+    1254,
+    1254
+  ],
+  "pivot": [
+    627,
+    900
+  ],
+  "runtimeCell": 128,
+  "logicalRender": 42.3225,
+  "projection": "groundSourceX=627+800*(worldX-worldY); groundSourceY=900+400*(worldX+worldY); subtract sourceHeight pixels only for wallrise",
+  "sourceHeight": 550,
+  "worldThickness": 0.18,
+  "halfThickness": 0.09,
+  "endpointCenters": {
+    "X": [
+      [
+        227,
+        700
+      ],
+      [
+        1027,
+        1100
+      ]
+    ],
+    "Y": [
+      [
+        1027,
+        700
+      ],
+      [
+        227,
+        1100
+      ]
+    ]
+  },
+  "groundWorldFootprints": {
+    "X": [
+      [
+        -0.5,
+        -0.09
+      ],
+      [
+        0.5,
+        -0.09
+      ],
+      [
+        0.5,
+        0.09
+      ],
+      [
+        -0.5,
+        0.09
+      ]
+    ],
+    "Y": [
+      [
+        -0.09,
+        -0.5
+      ],
+      [
+        0.09,
+        -0.5
+      ],
+      [
+        0.09,
+        0.5
+      ],
+      [
+        -0.09,
+        0.5
+      ]
+    ]
+  },
+  "geometrySourceBoundsBeforeStroke": [
+    155,
+    114,
+    1099,
+    1136
+  ],
+  "actualNativeMargins": {
+    "X": {
+      "nativeAlphaBBox": [
+        152,
+        111,
+        1102,
+        1139
+      ],
+      "nativeBorderMax": 0,
+      "minSourceMargin": 111
+    },
+    "Y": {
+      "nativeAlphaBBox": [
+        152,
+        111,
+        1102,
+        1139
+      ],
+      "nativeBorderMax": 0,
+      "minSourceMargin": 111
+    }
+  },
+  "courseHeightsSource": [
+    100,
+    100,
+    100,
+    100,
+    95,
+    55
+  ],
+  "cap": "Flat cutstone top and55px capcourse; uniformwidth, flushbuttends, no flaredfeet or separateposts",
+  "joinsRationale": "AxisX endpoint crosssection atworldX\u00b1.5 aligns with next Xwall\u00b1.5; AxisY endpoint crosssection atworldY\u00b1.5 aligns with nextYwall. Identical .18thickness/550height/flatcap acrossdirections, nopostmass to collide orhide seams. Future actualjoins still unproven.",
+  "authoringMethod": "Each whole X/Y geometry computed independently from statedworldfootprint and common2Dprojection. Native SVG filledtop/side/buttfaces plus staggeredcourse placeholders; no sourcePNG/SVG ingestion, mirrored/rasterrotated artwork, textures or3D rendering.",
+  "renderer": "BundledSharp native wholeSVG1254RGBA and uniformwholecanvas42px intakepreviews",
+  "imageCalls": 0,
+  "browserCalls": 0,
+  "runtimeChanges": false,
+  "limits": [
+    "Structuralauthoringreferences only, no finishedart",
+    "OnefutureStoneX wholeillustration/zeroRetry afterrootguideintake; Y separatefinitecall later",
+    "No corner/T/cross/Gate/animation/rosterfanout",
+    "Actual scene joins/picking/finalnaturalappearance unproven",
+    "Woodoriginals/history notdeleted; no canonical/public mutation"
+  ]
+}

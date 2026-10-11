@@ -1,0 +1,11 @@
+# Original whole corner Gate354 — final qualified guide
+
+CLOSED authoring only; root brief42px intake pending. Zero imagecalls across allversions. Original narrow354 remains in narrow-original/; .26hook wideproposal remains in wide-026-original/. Root355 math caught exactaxis jambcrossings in narrowportal and .26hookclearance below .28landradius; neither proposal was accepted for generation. Prior349/351/352 unchanged;352 transitHOLD does not establish351 artfailure.
+
+Finalgeometry follows rootqualification: jambs world(+.33,-.40)→source1211,872 and(-.40,+.33)→43,872, portalplaneX+Y=-.07. Jambseparation1.0324world. North(0,-.07) crosses at683,872; West(-.07,0) crosses at571,872. Bothinsideportal, nearestjambdistance .4667world. Raised screenhorizontal beam joins matching-height uprighttops, leaving alpha below with no groundcrosspiece.
+
+Rightwing(.33,-.40)→(.33,0)→(.5,0) projects1211,872→891,1032→1027,1100. Leftwing(-.40,.33)→(0,.33)→(0,.5) projects43,872→363,1032→227,1100. Coherent orthogonal hookedreturns meet exact +X/+Yneighbor endpoints.450px panels and fullheight elbow/endpointposts,475px portaluprights, stonefeet. Hookcenterlines are .33world from actoraxes, nominalmargin .05 over .28landradius before timberthickness. This addresses geometry only, not actual bodycontact/passability certification.
+
+Fixed1254²/pivot627900/runtime128/logical42.3225, projection sourceX=627+800(X−Y), sourceY=900+400(X+Y). Allgroundpoints remain ownhalfcell. Jambstonefeet reach15..1239 horizontally; overheadbeam25..1237, withincanvas. No fit/crop/shift. Rearlongwings drawn first, nearsmallreturns occlude lowerrear surfaces; stonefeet/portalposts and raisedlintel remain coherent. Opencenter627900 is alpha. No missing-neighbor -X fullwing or proceduralcenterspur.
+
+245 remains materialappearance reference and248 projection/endpointreference. Complete originalSVG is directly authored without priorPNG/SVG ingestion, mirroring, rotation, pixelassembly or3D. BundledSharp renders onewhole1254PNG and uniformfullcanvas42px intakepreview. Exactinput/outputpins plus receipt retain geometry and history. No tests, browser, build, server, runtime/canonical/public mutations; future imagecall requires rootguideintakeGO.

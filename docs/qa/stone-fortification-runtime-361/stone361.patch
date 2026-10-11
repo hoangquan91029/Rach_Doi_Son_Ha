@@ -1,0 +1,117 @@
+--- a/client/renderer.js
++++ b/client/renderer.js
+@@ -1,4 +1,6 @@
+-import {buildFortificationTopology,fortificationSpans} from './fortification-topology.js';
++import {artRoute} from './art-routes.js';
++import {drawStoneFortification} from './stone-fortification.js';
++import {buildFortificationTopology} from './fortification-topology.js';
+ import {createArtBank} from './art-bank.js';
+ import {drawTerrainPropFallback} from './terrain-props.js';
+ import {createImpactPulses} from './action-presentation.js';
+@@ -51,7 +53,7 @@
+  selectionPoint(e){const p=this.project(e.x,e.y),z=this.camera.zoom;for(const dy of [-15,-24,-8,-32,0])for(const dx of [0,-4,4]){const point={x:p.x+dx*z,y:p.y+dy*z};if(pickVisibleEntity(this,point.x,point.y)?.id===e.id)return point;}return p;}
+  pickEntity(x,y){const p=this.project(x,y);return pickVisibleEntity(this,p.x,p.y);}
+  visible(e,s,p){if(e.owner===p||!s.fog?.visible)return true;const i=Math.floor(e.y)*s.map.width+Math.floor(e.x);return !!s.fog.visible[i];}
+- drawTile(c,x,y,p,t,{zoom=this.camera.zoom,project=(x,y)=>this.project(x,y)}={}){const z=zoom,half=TW*z/2,hh=TH*z/2;if(this.raster.drawGround(c,{x:x+.5,y:y+.5,terrain:t,project,zoom:z,timeMs:(this.state?.tick||0)*50}))return;c.fillStyle=palette[t]||palette.plain;this.diamond(c,p.x,p.y,half,hh);c.strokeStyle='rgba(212,208,164,.075)';c.lineWidth=.65;this.diamondStroke(c,p.x,p.y,half,hh);const v=(x*17+y*31)%19;if(t==='forest'&&v<5&&!this.raster.status.enabled){this.tree(c,p.x,p.y,z,v);}else if(t==='hill'&&v<4){c.fillStyle='#a6a07755';this.diamond(c,p.x-2*z,p.y-1*z,half*.55,hh*.45);}else if(t==='mountain'){this.rock(c,p.x,p.y,z,v);}else if(t==='river'||t==='sea'){if(v<5){c.strokeStyle='rgba(190,213,183,.22)';c.lineWidth=z;c.beginPath();c.moveTo(p.x-5*z,p.y-1*z);c.lineTo(p.x+4*z,p.y+1*z);c.stroke();}}}
++ drawTile(c,x,y,p,t,{zoom=this.camera.zoom,project=(x,y)=>this.project(x,y)}={}){const z=zoom,half=TW*z/2,hh=TH*z/2;if(this.raster.drawGround(c,{x:x+.5,y:y+.5,terrain:t,project,zoom:z,timeMs:(this.state?.tick||0)*50}))return;c.fillStyle=palette[t]||palette.plain;this.diamond(c,p.x,p.y,half,hh);c.strokeStyle='rgba(212,208,164,.075)';c.lineWidth=.65;this.diamondStroke(c,p.x,p.y,half,hh);const v=(x*17+y*31)%19;if(t==='forest'&&v<5&&(!this.raster.status.enabled||!artRoute().world)){this.tree(c,p.x,p.y,z,v);}else if(t==='hill'&&v<4){c.fillStyle='#a6a07755';this.diamond(c,p.x-2*z,p.y-1*z,half*.55,hh*.45);}else if(t==='mountain'){this.rock(c,p.x,p.y,z,v);}else if(t==='river'||t==='sea'){if(v<5){c.strokeStyle='rgba(190,213,183,.22)';c.lineWidth=z;c.beginPath();c.moveTo(p.x-5*z,p.y-1*z);c.lineTo(p.x+4*z,p.y+1*z);c.stroke();}}}
+  rock(c,x,y,z,v){c.fillStyle='#4d594e';c.beginPath();c.moveTo(x-8*z,y);c.lineTo(x-6*z,y-8*z);c.lineTo(x-2*z,y-12*z);c.lineTo(x+2*z,y-7*z);c.lineTo(x+6*z,y-9*z);c.lineTo(x+10*z,y-1*z);c.closePath();c.fill();c.fillStyle='#9c9985';c.beginPath();c.moveTo(x-6*z,y-8*z);c.lineTo(x-2*z,y-12*z);c.lineTo(x+1*z,y-7*z);c.lineTo(x-2*z,y-5*z);c.fill();c.fillStyle='#626b59';c.beginPath();c.moveTo(x+2*z,y-7*z);c.lineTo(x+6*z,y-9*z);c.lineTo(x+10*z,y-1*z);c.lineTo(x+2*z,y+1*z);c.fill();}
+  diamond(c,x,y,rx,ry){c.beginPath();c.moveTo(x,y-ry);c.lineTo(x+rx,y);c.lineTo(x,y+ry);c.lineTo(x-rx,y);c.closePath();c.fill();}
+  diamondStroke(c,x,y,rx,ry){c.beginPath();c.moveTo(x,y-ry);c.lineTo(x+rx,y);c.lineTo(x,y+ry);c.lineTo(x-rx,y);c.closePath();c.stroke();}
+@@ -184,16 +186,7 @@
+   c.strokeStyle='#6c5035';c.lineWidth=2*z;c.beginPath();c.moveTo(-8*z,-16*z);c.lineTo(-13*z,-18*z);c.lineTo(-15*z,-13*z);c.stroke();
+   c.fillStyle='#877149';c.beginPath();c.moveTo(11*z,-2*z);c.lineTo(18*z,-7*z);c.lineTo(17*z,-1*z);c.closePath();c.fill();
+  }
+- drawFortification(c,e,z,color,trim){
+-  const parts=fortificationSpans(e,this.fortificationTopology?.get(e.id));
+-  // World half-cell endpoints share the same projection; no building scale distorts joins.
+-  const beam=(from,to,height=12,base=0)=>{const a=this.project(from.x,from.y),b=this.project(to.x,to.y);c.fillStyle='#5c5442';c.beginPath();c.moveTo(a.x,a.y-base*z);c.lineTo(b.x,b.y-base*z);c.lineTo(b.x,b.y-height*z);c.lineTo(a.x,a.y-height*z);c.closePath();c.fill();c.strokeStyle=color;c.lineWidth=3*z;c.beginPath();c.moveTo(a.x,a.y-(height-3)*z);c.lineTo(b.x,b.y-(height-3)*z);c.stroke();c.strokeStyle=trim;c.lineWidth=1.5*z;c.beginPath();c.moveTo(a.x,a.y-height*z);c.lineTo(b.x,b.y-height*z);c.stroke();};
+-  c.save();c.lineCap='round';
+-  for(const span of parts.spans){const a=this.project(span.from.x,span.from.y),b=this.project(span.to.x,span.to.y);c.strokeStyle='rgba(20,27,22,.4)';c.lineWidth=5*z;c.beginPath();c.moveTo(a.x,a.y+2*z);c.lineTo(b.x,b.y+2*z);c.stroke();beam(span.from,span.to);}
+-  if(e.type==='gate'){beam(parts.posts[0],parts.posts[1],16,12);for(const post of parts.posts){const p=this.project(post.x,post.y);c.strokeStyle=trim;c.lineWidth=3*z;c.beginPath();c.moveTo(p.x,p.y);c.lineTo(p.x,p.y-16*z);c.stroke();}}
+-  else{const p=this.project(e.x,e.y);c.strokeStyle=color;c.lineWidth=3*z;c.beginPath();c.moveTo(p.x,p.y);c.lineTo(p.x,p.y-13*z);c.stroke();}
+-  c.restore();
+- }
++ drawFortification(c,e,z,color,trim){drawStoneFortification(this,c,e,z);}
+  drawBuilding(c,e,p,z){
+   const key=e.type,color=e.owner===this.localPlayer?'#b69d64':'#9d5947',trim=e.owner===this.localPlayer?'#ddc98e':'#c78569';
+   if(key==='wall'||key==='gate'){this.drawFortification(c,e,z,color,trim);return;}
+--- a/client/stone-fortification.js
++++ b/client/stone-fortification.js
+@@ -0,0 +1,26 @@
++import {fortificationSpans} from './fortification-topology.js';
++/** Native 2D baseline only. Authored whole stone illustrations can replace exact states later. */
++export const STONE_WALL_HEIGHT=18.5625;
++export const STONE_GATE_HEIGHT=STONE_WALL_HEIGHT+4;
++export const STONE_FORTIFICATION_COLORS=Object.freeze({face:'#8b8d82',side:'#73776f',cap:'#c8c4b2',mortar:'#60675f',joint:'#b4b3a3',rubble:'#93958a'});
++export function stoneFortificationAssetAllowed(asset){return !['building.wall','building.gate'].includes(asset?.family)||asset.material==='stone';}
++export function stoneFortificationPresentation(entity,topology){
++ const dead=entity.hp<=0||entity.state==='death',unfinished=!dead&&Boolean(entity.construction||entity.underConstruction===true);
++ return {dead,unfinished,parts:fortificationSpans(entity,dead||unfinished?undefined:topology),height:dead?3:STONE_WALL_HEIGHT,material:'stone'};
++}
++export function drawStoneFortification(renderer,c,e,z){
++ const view=stoneFortificationPresentation(e,renderer.fortificationTopology?.get(e.id)),col=STONE_FORTIFICATION_COLORS;
++ const face=(from,to,height=STONE_WALL_HEIGHT,base=0)=>{const a=renderer.project(from.x,from.y),b=renderer.project(to.x,to.y);const at=(t,lift)=>({x:a.x+(b.x-a.x)*t,y:a.y+(b.y-a.y)*t-lift*z});
++  c.fillStyle=view.dead?col.rubble:col.face;c.beginPath();for(const [t,h]of [[0,base],[1,base],[1,height],[0,height]]){const p=at(t,h);if(t===0&&h===base)c.moveTo(p.x,p.y);else c.lineTo(p.x,p.y);}c.closePath();c.fill();
++  // Quiet staggered masonry joints, shared level caps for both axes; no timber posts or rails.
++  c.strokeStyle=col.mortar;c.lineWidth=.6*z;
++  for(let h=base+4;h<height;h+=4){const p=at(0,h),q=at(1,h);c.beginPath();c.moveTo(p.x,p.y);c.lineTo(q.x,q.y);c.stroke();}
++  for(let row=0,h=base;h<height;h+=4,row++){for(const t of row%2?[.25,.75]:[.5]){const p=at(t,h),q=at(t,Math.min(h+4,height));c.beginPath();c.moveTo(p.x,p.y);c.lineTo(q.x,q.y);c.stroke();}}
++  c.strokeStyle=col.cap;c.lineWidth=1.5*z;const p=at(0,height),q=at(1,height);c.beginPath();c.moveTo(p.x,p.y);c.lineTo(q.x,q.y);c.stroke();
++  if(view.unfinished){c.strokeStyle=col.joint;c.setLineDash([2*z,2*z]);c.lineWidth=.65*z;c.beginPath();c.moveTo(p.x,p.y+2*z);c.lineTo(q.x,q.y+2*z);c.stroke();c.setLineDash([]);}
++ };
++ const pier=(post,height)=>{const p=renderer.project(post.x,post.y);c.fillStyle=col.side;c.fillRect(p.x-1.5*z,p.y-height*z,3*z,height*z);c.strokeStyle=col.cap;c.lineWidth=.65*z;for(let h=4;h<height;h+=4){c.beginPath();c.moveTo(p.x-1.5*z,p.y-h*z);c.lineTo(p.x+1.5*z,p.y-h*z);c.stroke();}c.fillStyle=col.cap;c.fillRect(p.x-1.5*z,p.y-height*z,3*z,z);};
++ c.save();c.lineCap='butt';c.lineJoin='miter';for(const span of view.parts.spans){const a=renderer.project(span.from.x,span.from.y),b=renderer.project(span.to.x,span.to.y);c.strokeStyle='rgba(20,27,22,.32)';c.lineWidth=5*z;c.beginPath();c.moveTo(a.x,a.y+2*z);c.lineTo(b.x,b.y+2*z);c.stroke();face(span.from,span.to,view.height);}
++ if(e.type==='gate'&&!view.dead){face(view.parts.posts[0],view.parts.posts[1],STONE_GATE_HEIGHT,STONE_WALL_HEIGHT);for(const post of view.parts.posts)pier(post,STONE_GATE_HEIGHT);}else if(!view.dead)pier({x:e.x,y:e.y},STONE_WALL_HEIGHT);
++ c.restore();
++}
+--- a/client/fortification-picking.js
++++ b/client/fortification-picking.js
+@@ -1,3 +1,4 @@
++import {STONE_WALL_HEIGHT,STONE_GATE_HEIGHT} from './stone-fortification.js';
+ import {fortificationSpans} from './fortification-topology.js';
+ 
+ function segmentDistance(x,y,a,b){
+@@ -14,7 +15,7 @@
+  }
+  return result;
+ }
+-/** Invisible hit mask for the actual procedural wall faces, rails and gate posts.
++/** Invisible hit mask for the actual procedural stone wall faces, caps and gate piers.
+  * Shadows and the open gate passage do not intercept clicks. No gameplay changes. */
+ export function fortificationContains(renderer,entity,x,y){
+  const z=renderer.camera.zoom;
+@@ -26,11 +27,11 @@
+   const face=[{x:a.x,y:a.y-base*z},{x:b.x,y:b.y-base*z},{x:b.x,y:b.y-height*z},{x:a.x,y:a.y-height*z}];
+   return inside(x,y,face)||segmentDistance(x,y,{x:a.x,y:a.y-(height-3)*z},{x:b.x,y:b.y-(height-3)*z})<=1.5*z||segmentDistance(x,y,face[2],face[3])<=.75*z;
+  };
+- if(parts.spans.some(span=>beam(span.from,span.to,12)))return true;
++ if(parts.spans.some(span=>beam(span.from,span.to,STONE_WALL_HEIGHT)))return true;
+  if(entity.type==='gate'){
+-  if(beam(parts.posts[0],parts.posts[1],16,12))return true;
+-  return parts.posts.some(post=>{const p=project(post);return segmentDistance(x,y,p,{x:p.x,y:p.y-16*z})<=1.5*z;});
++  if(beam(parts.posts[0],parts.posts[1],STONE_GATE_HEIGHT,STONE_WALL_HEIGHT))return true;
++  return parts.posts.some(post=>{const p=project(post);return segmentDistance(x,y,p,{x:p.x,y:p.y-STONE_GATE_HEIGHT*z})<=1.5*z;});
+  }
+  const p=project(entity);
+- return segmentDistance(x,y,p,{x:p.x,y:p.y-13*z})<=1.5*z;
++ return segmentDistance(x,y,p,{x:p.x,y:p.y-STONE_WALL_HEIGHT*z})<=1.5*z;
+ }
+--- a/client/art-routes.js
++++ b/client/art-routes.js
+@@ -1,5 +1,6 @@
+-/** Existing opt-in preview recipes only. The unqueried/unknown default stays disabled. */
++/** BareURL selects only realistic stone fortifications. Unknown explicit art routes stay disabled. */
+ export const ART_ROUTES = Object.freeze({
++ stone:Object.freeze({manifestUrl:'/assets/art-v1/stone-361-manifest.json',world:false}),
+  pilot:Object.freeze({manifestUrl:'/assets/art-v1/manifest.json',world:false}),
+  walk:Object.freeze({manifestUrl:'/assets/art-v1/walk-014-manifest.json',world:false}),
+  work:Object.freeze({manifestUrl:'/assets/art-v1/gather-026-manifest.json',world:false}),
+@@ -11,7 +12,7 @@
+  fort:Object.freeze({manifestUrl:'/assets/art-v1/fort-202-manifest.json',world:true})
+ });
+ export function artRoute(search=globalThis.location?.search||''){
+- const name=new URLSearchParams(search).get('art');
++ const params=new URLSearchParams(search),name=params.has('art')?params.get('art'):'stone';
+  const recipe=Object.hasOwn(ART_ROUTES,name)?ART_ROUTES[name]:null;
+  return {name,enabled:Boolean(recipe),manifestUrl:recipe?.manifestUrl||ART_ROUTES.pilot.manifestUrl,world:recipe?.world||false};
+ }

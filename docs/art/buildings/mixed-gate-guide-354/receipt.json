@@ -1,0 +1,167 @@
+{
+  "order": 354,
+  "status": "CLOSED_QUALIFIED_WIDEPORTAL_REVISION_GUIDE_ONLY_AWAIT_ROOT_INTAKE",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "low",
+  "candidate": "Gate completedidle mask5 axisX, original NW corner portal",
+  "canvas": [
+    1254,
+    1254
+  ],
+  "pivot": [
+    627,
+    900
+  ],
+  "runtimeCell": 128,
+  "logicalRender": 42.3225,
+  "projection": "sourceX=627+800*worldX-800*worldY; sourceY=900+400*worldX+400*worldY",
+  "jambs": [
+    {
+      "world": [
+        0.33,
+        -0.4
+      ],
+      "source": [
+        1211,
+        872
+      ]
+    },
+    {
+      "world": [
+        -0.4,
+        0.33
+      ],
+      "source": [
+        43,
+        872
+      ]
+    }
+  ],
+  "neighborEndpoints": {
+    "+X": {
+      "world": [
+        0.5,
+        0
+      ],
+      "source": [
+        1027,
+        1100
+      ]
+    },
+    "+Y": {
+      "world": [
+        0,
+        0.5
+      ],
+      "source": [
+        227,
+        1100
+      ]
+    }
+  },
+  "wingPolylines": {
+    "left": [
+      [
+        43,
+        872
+      ],
+      [
+        363,
+        1032
+      ],
+      [
+        227,
+        1100
+      ]
+    ],
+    "right": [
+      [
+        1211,
+        872
+      ],
+      [
+        891,
+        1032
+      ],
+      [
+        1027,
+        1100
+      ]
+    ]
+  },
+  "wingWorldPolylines": {
+    "left": [
+      [
+        -0.4,
+        0.33
+      ],
+      [
+        0,
+        0.33
+      ],
+      [
+        0,
+        0.5
+      ]
+    ],
+    "right": [
+      [
+        0.33,
+        -0.4
+      ],
+      [
+        0.33,
+        0
+      ],
+      [
+        0.5,
+        0
+      ]
+    ]
+  },
+  "portalPlane": "worldX+worldY=-.07, midpoint(-.035,-.035)\u2192627872; screenhorizontal raisedbeam spans broadNWportal",
+  "clearCorridorProposal": "North\u2192center\u2192West axes cross diagonalportal insidejambs. Eachportal axis crossing nearest-jamb distance .4667world. Orthogonalhook centerlines .33world from axes give .05 nominalmargin over .28landradius before timber thickness. Actual body/wallcontact/trajectory remains unproven.",
+  "geometryRationale": "Exact final rootjambs give1.0324world opening; hookedwings followdimetric X/Y and exact+X/+Y endpoints.450px panels/fullheight elbow/endposts;475px portalposts. No -X fullwing/centerspur. Groundpoints remain ownhalfcell; sourceedgejamb43 and1211 leave15px canvasmargin beyond28px stonehalfwidth.",
+  "occlusion": "Longwings drawn first behindopening; nearer shortreturns conceal lowerrear surfaces. Matching-depth portalposts/stonefeet support continuousraisedlintel; interior belowbeam and pivot627900 remains unpaintedalpha.",
+  "renderer": "bundled sharp0.35.5 native SVG wholecanvas1254PNG; single fixed fullcanvas42px preview, no crop/fit/shift/assembly",
+  "imageCalls": 0,
+  "retries": 0,
+  "runtimeChanges": false,
+  "history": "349/351/352 retained unchanged.352 transitHOLD motivates reconsidering topology; does not infer351 art failure.",
+  "limits": [
+    "original complete vector authoring reference only, not finishedart",
+    "root brief42 guide intake pending",
+    "future builtin illustration requires separate rootGO",
+    "actual joins/picking/North-to-West aperture trajectory unproven",
+    "no build/test/browser/server/canonical/public mutation"
+  ],
+  "revision": "Final rootqualified .33hook/- .07portal proposal; original narrow and .26hook guides retained byte-for-byte in narrow-original/ and wide-026-original/; zeroimagecalls allversions",
+  "portalCenterlineWidthWorld": 1.0323759005323594,
+  "northCrossing": {
+    "world": [
+      0,
+      -0.07
+    ],
+    "source": [
+      683,
+      872
+    ],
+    "nearestJambDistanceWorld": 0.4666904755831214
+  },
+  "westCrossing": {
+    "world": [
+      -0.07,
+      0
+    ],
+    "source": [
+      571,
+      872
+    ],
+    "nearestJambDistanceWorld": 0.4666904755831214
+  },
+  "hookCenterlineClearanceWorld": 0.33,
+  "nominalLandBodyRadiusWorld": 0.28,
+  "centerlineMarginBeforeTimberThicknessWorld": 0.05,
+  "canvasBounds": "left stone reaches15; rightstone reaches1239; portalbeam spans25..1237; all within0..1254. Upperliney354, groundfeet<=1132. No fit/clip/shift.",
+  "materialClearanceLimitation": "355 finalmath considers20\u201330px truegroundnormal timberextent plausible within35.78px nominalresidualmargin, notphysicalPASS. Arbitraryradialpost/stoneextent can consume thatmargin; actualnaturaltraversal/briefscene governs. No furthermicroaudit/revisions."
+}

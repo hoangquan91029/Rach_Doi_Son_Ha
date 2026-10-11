@@ -1,3 +1,4 @@
+import {STONE_WALL_HEIGHT,STONE_GATE_HEIGHT} from './stone-fortification.js';
 import {fortificationSpans} from './fortification-topology.js';
 
 function segmentDistance(x,y,a,b){
@@ -14,7 +15,7 @@ function inside(x,y,points){
  }
  return result;
 }
-/** Invisible hit mask for the actual procedural wall faces, rails and gate posts.
+/** Invisible hit mask for the actual procedural stone wall faces, caps and gate piers.
  * Shadows and the open gate passage do not intercept clicks. No gameplay changes. */
 export function fortificationContains(renderer,entity,x,y){
  const z=renderer.camera.zoom;
@@ -26,11 +27,11 @@ export function fortificationContains(renderer,entity,x,y){
   const face=[{x:a.x,y:a.y-base*z},{x:b.x,y:b.y-base*z},{x:b.x,y:b.y-height*z},{x:a.x,y:a.y-height*z}];
   return inside(x,y,face)||segmentDistance(x,y,{x:a.x,y:a.y-(height-3)*z},{x:b.x,y:b.y-(height-3)*z})<=1.5*z||segmentDistance(x,y,face[2],face[3])<=.75*z;
  };
- if(parts.spans.some(span=>beam(span.from,span.to,12)))return true;
+ if(parts.spans.some(span=>beam(span.from,span.to,STONE_WALL_HEIGHT)))return true;
  if(entity.type==='gate'){
-  if(beam(parts.posts[0],parts.posts[1],16,12))return true;
-  return parts.posts.some(post=>{const p=project(post);return segmentDistance(x,y,p,{x:p.x,y:p.y-16*z})<=1.5*z;});
+  if(beam(parts.posts[0],parts.posts[1],STONE_GATE_HEIGHT,STONE_WALL_HEIGHT))return true;
+  return parts.posts.some(post=>{const p=project(post);return segmentDistance(x,y,p,{x:p.x,y:p.y-STONE_GATE_HEIGHT*z})<=1.5*z;});
  }
  const p=project(entity);
- return segmentDistance(x,y,p,{x:p.x,y:p.y-13*z})<=1.5*z;
+ return segmentDistance(x,y,p,{x:p.x,y:p.y-STONE_WALL_HEIGHT*z})<=1.5*z;
 }

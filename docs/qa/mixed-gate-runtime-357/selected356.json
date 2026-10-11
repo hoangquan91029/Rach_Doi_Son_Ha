@@ -1,0 +1,68 @@
+{
+  "descriptor": {
+    "id": "gate-whole-356-X-mask5",
+    "family": "building.gate",
+    "kind": "building",
+    "state": "idle",
+    "direction": null,
+    "candidate": true,
+    "review": {
+      "status": "CANDIDATE"
+    },
+    "source": {
+      "path": "gate-356/raw.png",
+      "sha256": "e300eb64398a93b35b260bca376498bc716a7a595f6e3d80a65f8946082d20a8",
+      "rgbaSha256": "4c2433af112dfdaf11b1d44415819e9e419d55384147873bfe5ac73454dfb114",
+      "width": 1254,
+      "height": 1254
+    },
+    "runtime": {
+      "path": "gate-356/runtime.png",
+      "sha256": "d15d0567e44ad7646578c8b4ea4d85d25feaede85685b328e04d3b3952ddbac5",
+      "rgbaSha256": "8e35559037657390477c6444fc88284f223df197bf2816ca16fbe9a71e0de5d4",
+      "width": 128,
+      "height": 128,
+      "derivation": {
+        "method": "resize",
+        "filter": "lanczos",
+        "sourceSha256": "e300eb64398a93b35b260bca376498bc716a7a595f6e3d80a65f8946082d20a8"
+      }
+    },
+    "cell": {
+      "width": 128,
+      "height": 128
+    },
+    "pivot": {
+      "x": 627,
+      "y": 900,
+      "space": "source"
+    },
+    "render": {
+      "width": 42.3225,
+      "height": 42.3225
+    },
+    "alphaPolicy": "transparent",
+    "contactShadow": {
+      "mode": "baked"
+    },
+    "frames": [
+      {
+        "x": 0,
+        "y": 0,
+        "width": 128,
+        "height": 128,
+        "durationMs": 1000
+      }
+    ],
+    "loop": true,
+    "fortification": {
+      "mask": 5,
+      "axis": "X"
+    },
+    "notes": "Whole original NWcornerportal mask5.354 completegeometry/245material references; no351pixels/assembly/fit/warp. Actualcontrolled4structureUI transit357 pending."
+  },
+  "rootIntakeSHA256": "92bae93ccbc40f17913b74fdba611bc670b55ba7995a343ca04a62f1e8e054cd",
+  "candidateSHA256": "ae169e38f039ddcd99a37c04d06f6f81626d1322cdcbfad019eaa5e408706442",
+  "rawSHA256": "e300eb64398a93b35b260bca376498bc716a7a595f6e3d80a65f8946082d20a8",
+  "runtimeSHA256": "d15d0567e44ad7646578c8b4ea4d85d25feaede85685b328e04d3b3952ddbac5"
+}

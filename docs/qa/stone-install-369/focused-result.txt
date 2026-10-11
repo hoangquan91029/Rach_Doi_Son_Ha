@@ -1,0 +1,478 @@
+TAP version 13
+# Subtest: dead Wall/Gate chooses only standalone authored death despite construction/hit/state and completed neighbors
+ok 1 - dead Wall/Gate chooses only standalone authored death despite construction/hit/state and completed neighbors
+  ---
+  duration_ms: 2.487107
+  type: 'test'
+  ...
+# Subtest: missing rubble/ambiguous or ineligible variants never paint a live state; living never paints death
+ok 2 - missing rubble/ambiguous or ineligible variants never paint a live state; living never paints death
+  ---
+  duration_ms: 0.574806
+  type: 'test'
+  ...
+# Subtest: building death anchors fixed simulation tick and holds terminal pose by default/explicit false
+ok 3 - building death anchors fixed simulation tick and holds terminal pose by default/explicit false
+  ---
+  duration_ms: 0.92014
+  type: 'test'
+  ...
+# Subtest: dead entity remains unpickable and fog/visibility filtering remains authoritative
+ok 4 - dead entity remains unpickable and fog/visibility filtering remains authoritative
+  ---
+  duration_ms: 0.431468
+  type: 'test'
+  ...
+# Subtest: ordinary cancellation exposes death with stale construction truth then removes corpse at80 ticks
+ok 5 - ordinary cancellation exposes death with stale construction truth then removes corpse at80 ticks
+  ---
+  duration_ms: 79.302996
+  type: 'test'
+  ...
+# Subtest: all existing building families select construction for public boolean and private job, with hit suppressed
+ok 6 - all existing building families select construction for public boolean and private job, with hit suppressed
+  ---
+  duration_ms: 6.221301
+  type: 'test'
+  ...
+# Subtest: missing construction never substitutes idle; completed never selects construction; death precedes site flag
+ok 7 - missing construction never substitutes idle; completed never selects construction; death precedes site flag
+  ---
+  duration_ms: 0.869619
+  type: 'test'
+  ...
+# Subtest: construction fixed ticks respect default/true loops and explicit false holds last frame without completion
+ok 8 - construction fixed ticks respect default/true loops and explicit false holds last frame without completion
+  ---
+  duration_ms: 0.804062
+  type: 'test'
+  ...
+# Subtest: unfinished fortifications use only standalone mask0 and never completed neighbor links
+ok 9 - unfinished fortifications use only standalone mask0 and never completed neighbor links
+  ---
+  duration_ms: 0.754106
+  type: 'test'
+  ...
+# Subtest: ordinary build view supplies owner and redacted enemy construction eligibility; fog omits site
+ok 10 - ordinary build view supplies owner and redacted enemy construction eligibility; fog omits site
+  ---
+  duration_ms: 10.783178
+  type: 'test'
+  ...
+# Subtest: whole metadata requires exact bounded mask/null direction/building family
+ok 11 - whole metadata requires exact bounded mask/null direction/building family
+  ---
+  duration_ms: 1.606673
+  type: 'test'
+  ...
+# Subtest: gate axis derives from real mask and rejects mismatched declaration
+ok 12 - gate axis derives from real mask and rejects mismatched declaration
+  ---
+  duration_ms: 0.33848
+  type: 'test'
+  ...
+# Subtest: all16 masks select only exact whole source; corner has no straight substitution
+ok 13 - all16 masks select only exact whole source; corner has no straight substitution
+  ---
+  duration_ms: 1.144513
+  type: 'test'
+  ...
+# Subtest: owner and visible-only neighbor context drive selection; hidden neighbor not included
+ok 14 - owner and visible-only neighbor context drive selection; hidden neighbor not included
+  ---
+  duration_ms: 0.180931
+  type: 'test'
+  ...
+# Subtest: unknown context/unfinished/hit/death preserve bounded fallback
+ok 15 - unknown context/unfinished/hit/death preserve bounded fallback
+  ---
+  duration_ms: 0.302493
+  type: 'test'
+  ...
+# Subtest: duplicate/alias ambiguous wholevariants and changing fixed layout reject
+ok 16 - duplicate/alias ambiguous wholevariants and changing fixed layout reject
+  ---
+  duration_ms: 0.601018
+  type: 'test'
+  ...
+# Subtest: legacymanifest and assets without metadata retain contract
+ok 17 - legacymanifest and assets without metadata retain contract
+  ---
+  duration_ms: 1.048566
+  type: 'test'
+  ...
+# Subtest: real raster sample chooses exact whole variant only on fort; draw and alpha picking receive same context
+ok 18 - real raster sample chooses exact whole variant only on fort; draw and alpha picking receive same context
+  ---
+  duration_ms: 2.505045
+  type: 'test'
+  ...
+# Subtest: wall ghost area does not intercept unit pick at zoom0.55
+ok 19 - wall ghost area does not intercept unit pick at zoom0.55
+  ---
+  duration_ms: 3.979549
+  type: 'test'
+  ...
+# Subtest: wall ghost area does not intercept unit pick at zoom1.08
+ok 20 - wall ghost area does not intercept unit pick at zoom1.08
+  ---
+  duration_ms: 0.397265
+  type: 'test'
+  ...
+# Subtest: wall ghost area does not intercept unit pick at zoom1.8
+ok 21 - wall ghost area does not intercept unit pick at zoom1.8
+  ---
+  duration_ms: 0.395137
+  type: 'test'
+  ...
+# Subtest: actual wall face remains selectable for topology3
+ok 22 - actual wall face remains selectable for topology3
+  ---
+  duration_ms: 0.264332
+  type: 'test'
+  ...
+# Subtest: actual wall face remains selectable for topology12
+ok 23 - actual wall face remains selectable for topology12
+  ---
+  duration_ms: 0.218993
+  type: 'test'
+  ...
+# Subtest: actual wall face remains selectable for topology5
+ok 24 - actual wall face remains selectable for topology5
+  ---
+  duration_ms: 0.325566
+  type: 'test'
+  ...
+# Subtest: actual wall face remains selectable for topology15
+ok 25 - actual wall face remains selectable for topology15
+  ---
+  duration_ms: 0.309834
+  type: 'test'
+  ...
+# Subtest: X gate open passage does not intercept clicks, header and posts remain selectable
+ok 26 - X gate open passage does not intercept clicks, header and posts remain selectable
+  ---
+  duration_ms: 0.436153
+  type: 'test'
+  ...
+# Subtest: Y gate open passage remains clear and oriented header is selectable
+ok 27 - Y gate open passage remains clear and oriented header is selectable
+  ---
+  duration_ms: 0.587077
+  type: 'test'
+  ...
+# Subtest: ordinary building picking and liveness/visibility guards remain unchanged
+ok 28 - ordinary building picking and liveness/visibility guards remain unchanged
+  ---
+  duration_ms: 0.433113
+  type: 'test'
+  ...
+# Subtest: wall/wall accepts orthogonal adjacent cell 1,0 without footprint overlap
+ok 29 - wall/wall accepts orthogonal adjacent cell 1,0 without footprint overlap
+  ---
+  duration_ms: 10.448113
+  type: 'test'
+  ...
+# Subtest: wall/wall accepts orthogonal adjacent cell -1,0 without footprint overlap
+ok 30 - wall/wall accepts orthogonal adjacent cell -1,0 without footprint overlap
+  ---
+  duration_ms: 6.065339
+  type: 'test'
+  ...
+# Subtest: wall/wall accepts orthogonal adjacent cell 0,1 without footprint overlap
+ok 31 - wall/wall accepts orthogonal adjacent cell 0,1 without footprint overlap
+  ---
+  duration_ms: 2.176439
+  type: 'test'
+  ...
+# Subtest: wall/wall accepts orthogonal adjacent cell 0,-1 without footprint overlap
+ok 32 - wall/wall accepts orthogonal adjacent cell 0,-1 without footprint overlap
+  ---
+  duration_ms: 1.83355
+  type: 'test'
+  ...
+# Subtest: wall/gate accepts orthogonal adjacent cell 1,0 without footprint overlap
+ok 33 - wall/gate accepts orthogonal adjacent cell 1,0 without footprint overlap
+  ---
+  duration_ms: 1.772896
+  type: 'test'
+  ...
+# Subtest: wall/gate accepts orthogonal adjacent cell -1,0 without footprint overlap
+ok 34 - wall/gate accepts orthogonal adjacent cell -1,0 without footprint overlap
+  ---
+  duration_ms: 2.025631
+  type: 'test'
+  ...
+# Subtest: wall/gate accepts orthogonal adjacent cell 0,1 without footprint overlap
+ok 35 - wall/gate accepts orthogonal adjacent cell 0,1 without footprint overlap
+  ---
+  duration_ms: 1.686134
+  type: 'test'
+  ...
+# Subtest: wall/gate accepts orthogonal adjacent cell 0,-1 without footprint overlap
+ok 36 - wall/gate accepts orthogonal adjacent cell 0,-1 without footprint overlap
+  ---
+  duration_ms: 1.014407
+  type: 'test'
+  ...
+# Subtest: gate/wall accepts orthogonal adjacent cell 1,0 without footprint overlap
+ok 37 - gate/wall accepts orthogonal adjacent cell 1,0 without footprint overlap
+  ---
+  duration_ms: 1.365264
+  type: 'test'
+  ...
+# Subtest: gate/wall accepts orthogonal adjacent cell -1,0 without footprint overlap
+ok 38 - gate/wall accepts orthogonal adjacent cell -1,0 without footprint overlap
+  ---
+  duration_ms: 1.474027
+  type: 'test'
+  ...
+# Subtest: gate/wall accepts orthogonal adjacent cell 0,1 without footprint overlap
+ok 39 - gate/wall accepts orthogonal adjacent cell 0,1 without footprint overlap
+  ---
+  duration_ms: 1.43055
+  type: 'test'
+  ...
+# Subtest: gate/wall accepts orthogonal adjacent cell 0,-1 without footprint overlap
+ok 40 - gate/wall accepts orthogonal adjacent cell 0,-1 without footprint overlap
+  ---
+  duration_ms: 1.686624
+  type: 'test'
+  ...
+# Subtest: gate/gate accepts orthogonal adjacent cell 1,0 without footprint overlap
+ok 41 - gate/gate accepts orthogonal adjacent cell 1,0 without footprint overlap
+  ---
+  duration_ms: 1.40728
+  type: 'test'
+  ...
+# Subtest: gate/gate accepts orthogonal adjacent cell -1,0 without footprint overlap
+ok 42 - gate/gate accepts orthogonal adjacent cell -1,0 without footprint overlap
+  ---
+  duration_ms: 1.661978
+  type: 'test'
+  ...
+# Subtest: gate/gate accepts orthogonal adjacent cell 0,1 without footprint overlap
+ok 43 - gate/gate accepts orthogonal adjacent cell 0,1 without footprint overlap
+  ---
+  duration_ms: 1.404952
+  type: 'test'
+  ...
+# Subtest: gate/gate accepts orthogonal adjacent cell 0,-1 without footprint overlap
+ok 44 - gate/gate accepts orthogonal adjacent cell 0,-1 without footprint overlap
+  ---
+  duration_ms: 1.34217
+  type: 'test'
+  ...
+# Subtest: wall/wall same-cell overlap rejected without spending
+ok 45 - wall/wall same-cell overlap rejected without spending
+  ---
+  duration_ms: 2.103539
+  type: 'test'
+  ...
+# Subtest: wall/gate same-cell overlap rejected without spending
+ok 46 - wall/gate same-cell overlap rejected without spending
+  ---
+  duration_ms: 1.181176
+  type: 'test'
+  ...
+# Subtest: gate/wall same-cell overlap rejected without spending
+ok 47 - gate/wall same-cell overlap rejected without spending
+  ---
+  duration_ms: 0.697296
+  type: 'test'
+  ...
+# Subtest: gate/gate same-cell overlap rejected without spending
+ok 48 - gate/gate same-cell overlap rejected without spending
+  ---
+  duration_ms: 0.655901
+  type: 'test'
+  ...
+# Subtest: barracks/wall retains other-building setback
+ok 49 - barracks/wall retains other-building setback
+  ---
+  duration_ms: 1.199699
+  type: 'test'
+  ...
+# Subtest: wall/barracks retains other-building setback
+ok 50 - wall/barracks retains other-building setback
+  ---
+  duration_ms: 1.126091
+  type: 'test'
+  ...
+# Subtest: gate/barracks retains other-building setback
+ok 51 - gate/barracks retains other-building setback
+  ---
+  duration_ms: 0.798207
+  type: 'test'
+  ...
+# Subtest: barracks/gate retains other-building setback
+ok 52 - barracks/gate retains other-building setback
+  ---
+  duration_ms: 0.785271
+  type: 'test'
+  ...
+# Subtest: unit footprint, impassable terrain, ford, coastal, ownership and King role guards remain
+ok 53 - unit footprint, impassable terrain, ford, coastal, ownership and King role guards remain
+  ---
+  duration_ms: 3.11778
+  type: 'test'
+  ...
+# Subtest: friendly gate permits passage in a wall/gate/wall corridor
+ok 54 - friendly gate permits passage in a wall/gate/wall corridor
+  ---
+  duration_ms: 26.98096
+  type: 'test'
+  ...
+# Subtest: hostile gate blocks passage in a wall/gate/wall corridor
+ok 55 - hostile gate blocks passage in a wall/gate/wall corridor
+  ---
+  duration_ms: 18.74526
+  type: 'test'
+  ...
+# Subtest: mask0 identifies actual orthogonal cells and projected boundary spans
+ok 56 - mask0 identifies actual orthogonal cells and projected boundary spans
+  ---
+  duration_ms: 2.538448
+  type: 'test'
+  ...
+# Subtest: mask1 identifies actual orthogonal cells and projected boundary spans
+ok 57 - mask1 identifies actual orthogonal cells and projected boundary spans
+  ---
+  duration_ms: 0.353164
+  type: 'test'
+  ...
+# Subtest: mask2 identifies actual orthogonal cells and projected boundary spans
+ok 58 - mask2 identifies actual orthogonal cells and projected boundary spans
+  ---
+  duration_ms: 0.214457
+  type: 'test'
+  ...
+# Subtest: mask3 identifies actual orthogonal cells and projected boundary spans
+ok 59 - mask3 identifies actual orthogonal cells and projected boundary spans
+  ---
+  duration_ms: 0.183349
+  type: 'test'
+  ...
+# Subtest: mask4 identifies actual orthogonal cells and projected boundary spans
+ok 60 - mask4 identifies actual orthogonal cells and projected boundary spans
+  ---
+  duration_ms: 0.152276
+  type: 'test'
+  ...
+# Subtest: mask5 identifies actual orthogonal cells and projected boundary spans
+ok 61 - mask5 identifies actual orthogonal cells and projected boundary spans
+  ---
+  duration_ms: 0.149561
+  type: 'test'
+  ...
+# Subtest: mask6 identifies actual orthogonal cells and projected boundary spans
+ok 62 - mask6 identifies actual orthogonal cells and projected boundary spans
+  ---
+  duration_ms: 0.312624
+  type: 'test'
+  ...
+# Subtest: mask7 identifies actual orthogonal cells and projected boundary spans
+ok 63 - mask7 identifies actual orthogonal cells and projected boundary spans
+  ---
+  duration_ms: 0.181025
+  type: 'test'
+  ...
+# Subtest: mask8 identifies actual orthogonal cells and projected boundary spans
+ok 64 - mask8 identifies actual orthogonal cells and projected boundary spans
+  ---
+  duration_ms: 0.192008
+  type: 'test'
+  ...
+# Subtest: mask9 identifies actual orthogonal cells and projected boundary spans
+ok 65 - mask9 identifies actual orthogonal cells and projected boundary spans
+  ---
+  duration_ms: 0.775258
+  type: 'test'
+  ...
+# Subtest: mask10 identifies actual orthogonal cells and projected boundary spans
+ok 66 - mask10 identifies actual orthogonal cells and projected boundary spans
+  ---
+  duration_ms: 0.26398
+  type: 'test'
+  ...
+# Subtest: mask11 identifies actual orthogonal cells and projected boundary spans
+ok 67 - mask11 identifies actual orthogonal cells and projected boundary spans
+  ---
+  duration_ms: 0.20017
+  type: 'test'
+  ...
+# Subtest: mask12 identifies actual orthogonal cells and projected boundary spans
+ok 68 - mask12 identifies actual orthogonal cells and projected boundary spans
+  ---
+  duration_ms: 1.005994
+  type: 'test'
+  ...
+# Subtest: mask13 identifies actual orthogonal cells and projected boundary spans
+ok 69 - mask13 identifies actual orthogonal cells and projected boundary spans
+  ---
+  duration_ms: 0.159716
+  type: 'test'
+  ...
+# Subtest: mask14 identifies actual orthogonal cells and projected boundary spans
+ok 70 - mask14 identifies actual orthogonal cells and projected boundary spans
+  ---
+  duration_ms: 0.407679
+  type: 'test'
+  ...
+# Subtest: mask15 identifies actual orthogonal cells and projected boundary spans
+ok 71 - mask15 identifies actual orthogonal cells and projected boundary spans
+  ---
+  duration_ms: 0.106616
+  type: 'test'
+  ...
+# Subtest: visible-list scope, owner, grid, completed living neighbor guards exclude false connectors
+ok 72 - visible-list scope, owner, grid, completed living neighbor guards exclude false connectors
+  ---
+  duration_ms: 0.215894
+  type: 'test'
+  ...
+# Subtest: unfinished/dead/off-grid self provides no topology, visible enemy completion marker respected
+ok 73 - unfinished/dead/off-grid self provides no topology, visible enemy completion marker respected
+  ---
+  duration_ms: 0.107086
+  type: 'test'
+  ...
+# Subtest: gate axes use actual neighbor counts, stable X ties/default and immutable dir
+ok 74 - gate axes use actual neighbor counts, stable X ties/default and immutable dir
+  ---
+  duration_ms: 0.202449
+  type: 'test'
+  ...
+# Subtest: opposite neighboring segments meet at exact world half-cell boundary on both axes
+ok 75 - opposite neighboring segments meet at exact world half-cell boundary on both axes
+  ---
+  duration_ms: 0.154666
+  type: 'test'
+  ...
+# Subtest: bare game chooses stone walls without promoting world art; explicit unknown remains disabled
+ok 76 - bare game chooses stone walls without promoting world art; explicit unknown remains disabled
+  ---
+  duration_ms: 1.195203
+  type: 'test'
+  ...
+# Subtest: real raster route draws all three stone shapes on bareURL, rather than loading unused PNGs
+ok 77 - real raster route draws all three stone shapes on bareURL, rather than loading unused PNGs
+  ---
+  duration_ms: 3.39281
+  type: 'test'
+  ...
+# Subtest: picker uses current rendered sample for tall hat and excludes transparent areas
+ok 78 - picker uses current rendered sample for tall hat and excludes transparent areas
+  ---
+  duration_ms: 2.358228
+  type: 'test'
+  ...
+1..78
+# tests 78
+# suites 0
+# pass 78
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 173.844495

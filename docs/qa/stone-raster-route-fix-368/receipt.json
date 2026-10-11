@@ -1,0 +1,128 @@
+{
+  "status": "CLOSED368_REAL_RASTER_STONE_DEFAULT_RUNTIME_PASS_ROOT_VISUAL_PENDING",
+  "originalBrowserStatus": "PASS368_BARE_DEFAULT_STONE8_THREE_SOURCE_WALLS_THREE_PICKS_PAUSE_RESUME_STOP_MENU",
+  "originalReceiptSHA256": "d2baf9238d418da4c82ff84f3a0e532e6a6b4dae6a352f886a800e17bfd22f27",
+  "bugFixed": "realraster.sampleEntity allowsstone route alongsidefort; source-onlydirectselector evidence no longer substitutedforactualdraw",
+  "defaultDescriptors": 8,
+  "fortDescriptors": 37,
+  "portraitsReady": 12,
+  "actualRasterEntityDraws": 1824,
+  "uniqueDecodedPNGs": 3,
+  "actualPNGDrawEvidence": {
+    "entityDraws": 1824,
+    "defaultBankOnlyFamily": "building.wall",
+    "method": "permanent actualdraw diagnostic counter, not directselector alone"
+  },
+  "sceneTopology": [
+    {
+      "id": 37,
+      "mask": 5,
+      "axis": "X",
+      "topology": "corner",
+      "count": 2
+    },
+    {
+      "id": 43,
+      "mask": 2,
+      "axis": "X",
+      "topology": "end",
+      "count": 1
+    },
+    {
+      "id": 51,
+      "mask": 8,
+      "axis": "Y",
+      "topology": "end",
+      "count": 1
+    }
+  ],
+  "opaqueSelections": [
+    {
+      "id": 37,
+      "selection": [
+        37
+      ]
+    },
+    {
+      "id": 43,
+      "selection": [
+        43
+      ]
+    },
+    {
+      "id": 51,
+      "selection": [
+        51
+      ]
+    }
+  ],
+  "expectedSourceBindings": [
+    {
+      "entityId": 37,
+      "assetId": "stone-wall-corner-365-mask5",
+      "runtimePath": "stone-wall-corner-365/runtime.png",
+      "runtimeSHA256": "4f915623b9b60d592d5541aa69b30420ccb588c84b9a66edf62823a63f18ff87",
+      "method": "read-only actualentity/topology using same realraster selector; actual scene retained"
+    },
+    {
+      "entityId": 43,
+      "assetId": "stone-wall-X-362-mask2",
+      "runtimePath": "stone-wall-X-362/runtime.png",
+      "runtimeSHA256": "3be7413c376dfd334a7c81bad66de3ad847207636095222f630907ce6c856a06",
+      "method": "read-only actualentity/topology using same realraster selector; actual scene retained"
+    },
+    {
+      "entityId": 51,
+      "assetId": "stone-wall-Y-364-mask8",
+      "runtimePath": "stone-wall-Y-364/runtime.png",
+      "runtimeSHA256": "910bd2d840909bde361c92150c62eb0d02dbb6a60f19ed5cb40994a0a0bfb923",
+      "method": "read-only actualentity/topology using same realraster selector; actual scene retained"
+    }
+  ],
+  "errors": {
+    "page": [],
+    "network": [],
+    "HTTP": []
+  },
+  "responsePins": 19,
+  "bundle": {
+    "path": "assets/index-eaEH6Li-.js",
+    "sha256": "1dd1e2694658bcb797e17dccdd5686cdf68ccd75adc07f780ec580c92bebd2e0"
+  },
+  "defaultManifestSHA256": "3fe5989a4affbb3dbb49f16245a3d248509ff6d4c1fff19440ea142d0065ebfa",
+  "fortManifestSHA256": "38dd6bdaf55d927c2a0cddee3e3b6ba5b7127efd2dc01a9095e09b8e09aa6bfb",
+  "buildFiles": 196,
+  "retainedPublic345JS": "3495642c3c9ab988878659d0185cb7d5abac321dd350d1b7d3f1268c178695af",
+  "oldWoodDescriptors": 0,
+  "oldWoodRuntimePayloads": 0,
+  "retiredExactWoodPayloads": 15,
+  "newWholePNGs": 3,
+  "PauseResume": {
+    "pausedTick": 916,
+    "resumedTick": 918
+  },
+  "builderStop": {
+    "state": "idle",
+    "order": null,
+    "hp": 65
+  },
+  "menu0": {
+    "decodedBytes": 0,
+    "decodedImages": 0
+  },
+  "cleanup": {
+    "rooms": 0,
+    "serverListening": false,
+    "browserClosed": true
+  },
+  "preservationPASS": true,
+  "builds": 1,
+  "browserCampaigns": 1,
+  "imageCalls": 0,
+  "retries": 0,
+  "canonicalEdits": 0,
+  "optionalFortMenuProbe": false,
+  "prior361MaterialHOLDRetained": true,
+  "visualAcceptance": "PendingrootONEbriefactualdefault-size3Wallscene; no finishedallmasks/buildingstates/fullgoal claim",
+  "installPromotionAuthorized": false
+}

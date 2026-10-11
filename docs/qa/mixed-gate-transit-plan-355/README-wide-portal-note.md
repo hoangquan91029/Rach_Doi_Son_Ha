@@ -1,0 +1,9 @@
+# Additive wide-portal revision355
+
+Original355 README/work-order/custody remain byte-identical, including the narrow aperture concern. This note evaluates the root's new wider proposal without replacing that history.
+
+Jambs(+.26,-.43)/(-.43,+.26) have aperture length.9758world. Centered North→Gate→West crossing points now lie.3677 from the nearest jamb, giving.0877 margin over land reference radius.28 before jamb thickness. However, the right hooked vertical panelx=.26 is only.26 from the North→Gate axis, and the left horizontal panely=.26 is only.26 from the Gate→West axis. That is−.02 relative to the reference radius, before thickness. The full wings create a material body-clearance concern despite the improved aperture.
+
+A quantified alternative preserves the portal plane and exactneighbor endpoints: jambs(+.32,-.49)/(-.49,+.32); rightwing(.32,-.49)→(.32,0)→(.5,0); leftwing(-.49,.32)→(0,.32)→(0,.5). Nearest-jamb crossing distance.4525, aperture length1.1455, and wing centerline clearance.32 give.04 margin before panel thickness. This is a proposal, not physical proof: panel/post halfwidth≥.04 or an actor ground body extent greater than.28 consumes that margin. Clearance must be measured against complete authoring ground surfaces and actual game-size body appearance. Fixed1254/pivot627900 does not alone prove projection remains inbounds.
+
+Friendly Gate is ignored by simulation collision, and crowd radius is a unit crowd reference rather than an art-jamb collision contract. FourthNWwall retains the shortest centered grid hop argument; ordinary.7 arrival/currentcell/crowd behavior still requires the actual assigned Move trace. No synthetic route/bodyPASS, artcall, livebrowser/server/simulation/test/build was performed. Root and354 guideworker received this concern before art.

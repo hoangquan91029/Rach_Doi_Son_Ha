@@ -1,0 +1,11 @@
+# Original whole corner Gate354 — qualified wideportal revision
+
+CLOSED authoring guide only; root brief42px intake pending. Zero imagecalls, no finishedart or actualpassability acceptance. Original narrow354 preparation is retained byte-for-byte in narrow-original/. Root355 geometry rejected its .2404world opening because exactNorth/West centerlines hitjambs and nominal landdiameter is .56. The narrowversion was never accepted or used for imagegeneration.349/351/352 remain intact;352 transitHOLD does not imply351 artfailure.
+
+Fixed1254² /pivot627,900 /runtime128 /logical42.3225. Projection sourceX=627+800(X−Y), sourceY=900+400(X+Y). Qualifiedjambs world(+.26,-.43)→1179,832 and(-.43,+.26)→75,832 lie on NWportalplane X+Y=-.17. Jambseparation .9758world; raised horizontal-in-screen beam connects matching-height uprights with no groundcrosspiece.
+
+Rightwing(.26,-.43)→(.26,0)→(.5,0) projects1179,832→835,1004→1027,1100. Leftwing(-.43,.26)→(0,.26)→(0,.5) projects75,832→419,1004→227,1100. These originalorthogonal hookedreturnwings remain inside ownhalfcell square and connect exact +X/+Y neighborendpoints. Fullheight elbow/endposts and stonefeet support coherent joints. Panels450px, portalposts475px; no unused-X fullwing or proceduralcenterspur. Nearshortreturns occlude rearlongwings, with portalposts and overheadbeam finishing the wholestructure.
+
+North centerline crosses portal atworld(0,-.17)→763,832; West centerline at(-.17,0)→491,832. Both crossings are inside aperture, each .3677world from closestjamb, exceeding nominal .28landradius. Center(0,0) remains unpainted interior. This addresses jambclearance only; it does not certify actualengine trajectory, wallcontact, alpha picking or worldjoins.
+
+245 is materialappearance reference;248 is projection/endpointreference. Directoriginal vector geometry in author-guide.py does not ingest priorPNG/SVG or perform any copy/mirror/rotate/assembly/3D. BundledSharp natively rasterizes onecompleteSVG to guide.png; preview42.png uniformly reduces wholecanvas without crop/fit/shift. Input/outputpins and receipt preserve both preparationversions and limitations. No tests, browser, build, server, runtime, canonical or public mutations.

@@ -1,0 +1,37 @@
+{
+  "status": "ACCEPTED_NARROW_IDLE_ROOM_BASELINE",
+  "summarySource": "summary.json",
+  "conclusion": "At default cap8, ordinary online 1v1 idle initial armies retained19.87\u201319.95 ticks/sec over three25s windows. No concrete simulation bottleneck demonstrated; no performance code change justified from this sample.",
+  "scope": {
+    "rooms": [
+      1,
+      5,
+      8
+    ],
+    "connections": [
+      2,
+      10,
+      16
+    ],
+    "livingEntities": [
+      34,
+      170,
+      272
+    ],
+    "art": 54,
+    "portraits": 12,
+    "pageNetworkHTTPErrors": 0,
+    "ownedCleanupRooms": 0,
+    "ownedConnections": 0,
+    "productionPID": 3229,
+    "productionTouched": false
+  },
+  "limits": [
+    "Headless browsers on onehost, not WAN/externaldevice",
+    "Initial armies idle, not dense combat",
+    "Server and coordinator share process: CPU/memory/eventloop combined",
+    "frameMs is render executioncost, not FPS or RAFinterval",
+    "Sequential increasingload and readonly diagnostics contribute overhead"
+  ],
+  "next": "Future finite ordinaryUI dense battle measurement needed before final performance acceptance; no repeat idle campaign absentnewconcern."
+}

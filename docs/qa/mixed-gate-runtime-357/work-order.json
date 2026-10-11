@@ -1,0 +1,52 @@
+{
+  "order": 357,
+  "status": "ROOT357_FINITE_GO_SOURCE356_SELECTED_PREBUILD",
+  "source356Required": true,
+  "selectedDescriptorRequired": {
+    "family": "building.gate",
+    "kind": "building",
+    "state": "idle",
+    "direction": null,
+    "fortification": {
+      "mask": 5,
+      "axis": "X"
+    }
+  },
+  "scene": "OneChromeDelta ordinary4structure construction/picks/North\u2192Gatecenter\u2192West/briefactualscene/PauseResume/Stop/menu0",
+  "geometry": {
+    "jambA": [
+      0.33,
+      -0.4
+    ],
+    "jambB": [
+      -0.4,
+      0.33
+    ],
+    "portalPlane": "x+y=-.07",
+    "neighborWallEast": [
+      1,
+      0
+    ],
+    "neighborWallSouth": [
+      0,
+      1
+    ],
+    "blockerWallNW": [
+      -1,
+      -1
+    ],
+    "expectedTopologyMasks": [
+      5,
+      2,
+      8,
+      0
+    ]
+  },
+  "retries": 0,
+  "launchAuthorized": false,
+  "mutation": "append only rootselected356 descriptor/payload afterGO; old54 unchanged; no canonical changes",
+  "sourceBuildRules": "Literalstage/absoluteoutDir/exactViteconfig/path assertions, relevant54+schema pins, seal BEFORE livecall; no seal mutations midtrial",
+  "trace": "readonlysnapshot every20ms,dedupeactualtick,rejectskipped relevantturn; no sparsechord inference",
+  "approvalLimits": "technicaltransit plus ONE briefgame-size look; no physicalbodyPASS from guides/math",
+  "viteConfigSHA256": "18fc6a1c5544b54f954ce0779837c23695e29ca485f5c8de5a1cf03dddeb046d"
+}

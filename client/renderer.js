@@ -1,4 +1,6 @@
-import {buildFortificationTopology,fortificationSpans} from './fortification-topology.js';
+import {artRoute} from './art-routes.js';
+import {drawStoneFortification} from './stone-fortification.js';
+import {buildFortificationTopology} from './fortification-topology.js';
 import {createArtBank} from './art-bank.js';
 import {drawTerrainPropFallback} from './terrain-props.js';
 import {createImpactPulses} from './action-presentation.js';
@@ -51,7 +53,7 @@ export class IsoRenderer{
  selectionPoint(e){const p=this.project(e.x,e.y),z=this.camera.zoom;for(const dy of [-15,-24,-8,-32,0])for(const dx of [0,-4,4]){const point={x:p.x+dx*z,y:p.y+dy*z};if(pickVisibleEntity(this,point.x,point.y)?.id===e.id)return point;}return p;}
  pickEntity(x,y){const p=this.project(x,y);return pickVisibleEntity(this,p.x,p.y);}
  visible(e,s,p){if(e.owner===p||!s.fog?.visible)return true;const i=Math.floor(e.y)*s.map.width+Math.floor(e.x);return !!s.fog.visible[i];}
- drawTile(c,x,y,p,t,{zoom=this.camera.zoom,project=(x,y)=>this.project(x,y)}={}){const z=zoom,half=TW*z/2,hh=TH*z/2;if(this.raster.drawGround(c,{x:x+.5,y:y+.5,terrain:t,project,zoom:z,timeMs:(this.state?.tick||0)*50}))return;c.fillStyle=palette[t]||palette.plain;this.diamond(c,p.x,p.y,half,hh);c.strokeStyle='rgba(212,208,164,.075)';c.lineWidth=.65;this.diamondStroke(c,p.x,p.y,half,hh);const v=(x*17+y*31)%19;if(t==='forest'&&v<5&&!this.raster.status.enabled){this.tree(c,p.x,p.y,z,v);}else if(t==='hill'&&v<4){c.fillStyle='#a6a07755';this.diamond(c,p.x-2*z,p.y-1*z,half*.55,hh*.45);}else if(t==='mountain'){this.rock(c,p.x,p.y,z,v);}else if(t==='river'||t==='sea'){if(v<5){c.strokeStyle='rgba(190,213,183,.22)';c.lineWidth=z;c.beginPath();c.moveTo(p.x-5*z,p.y-1*z);c.lineTo(p.x+4*z,p.y+1*z);c.stroke();}}}
+ drawTile(c,x,y,p,t,{zoom=this.camera.zoom,project=(x,y)=>this.project(x,y)}={}){const z=zoom,half=TW*z/2,hh=TH*z/2;if(this.raster.drawGround(c,{x:x+.5,y:y+.5,terrain:t,project,zoom:z,timeMs:(this.state?.tick||0)*50}))return;c.fillStyle=palette[t]||palette.plain;this.diamond(c,p.x,p.y,half,hh);c.strokeStyle='rgba(212,208,164,.075)';c.lineWidth=.65;this.diamondStroke(c,p.x,p.y,half,hh);const v=(x*17+y*31)%19;if(t==='forest'&&v<5&&(!this.raster.status.enabled||!artRoute().world)){this.tree(c,p.x,p.y,z,v);}else if(t==='hill'&&v<4){c.fillStyle='#a6a07755';this.diamond(c,p.x-2*z,p.y-1*z,half*.55,hh*.45);}else if(t==='mountain'){this.rock(c,p.x,p.y,z,v);}else if(t==='river'||t==='sea'){if(v<5){c.strokeStyle='rgba(190,213,183,.22)';c.lineWidth=z;c.beginPath();c.moveTo(p.x-5*z,p.y-1*z);c.lineTo(p.x+4*z,p.y+1*z);c.stroke();}}}
  rock(c,x,y,z,v){c.fillStyle='#4d594e';c.beginPath();c.moveTo(x-8*z,y);c.lineTo(x-6*z,y-8*z);c.lineTo(x-2*z,y-12*z);c.lineTo(x+2*z,y-7*z);c.lineTo(x+6*z,y-9*z);c.lineTo(x+10*z,y-1*z);c.closePath();c.fill();c.fillStyle='#9c9985';c.beginPath();c.moveTo(x-6*z,y-8*z);c.lineTo(x-2*z,y-12*z);c.lineTo(x+1*z,y-7*z);c.lineTo(x-2*z,y-5*z);c.fill();c.fillStyle='#626b59';c.beginPath();c.moveTo(x+2*z,y-7*z);c.lineTo(x+6*z,y-9*z);c.lineTo(x+10*z,y-1*z);c.lineTo(x+2*z,y+1*z);c.fill();}
  diamond(c,x,y,rx,ry){c.beginPath();c.moveTo(x,y-ry);c.lineTo(x+rx,y);c.lineTo(x,y+ry);c.lineTo(x-rx,y);c.closePath();c.fill();}
  diamondStroke(c,x,y,rx,ry){c.beginPath();c.moveTo(x,y-ry);c.lineTo(x+rx,y);c.lineTo(x,y+ry);c.lineTo(x-rx,y);c.closePath();c.stroke();}
@@ -184,16 +186,7 @@ export class IsoRenderer{
   c.strokeStyle='#6c5035';c.lineWidth=2*z;c.beginPath();c.moveTo(-8*z,-16*z);c.lineTo(-13*z,-18*z);c.lineTo(-15*z,-13*z);c.stroke();
   c.fillStyle='#877149';c.beginPath();c.moveTo(11*z,-2*z);c.lineTo(18*z,-7*z);c.lineTo(17*z,-1*z);c.closePath();c.fill();
  }
- drawFortification(c,e,z,color,trim){
-  const parts=fortificationSpans(e,this.fortificationTopology?.get(e.id));
-  // World half-cell endpoints share the same projection; no building scale distorts joins.
-  const beam=(from,to,height=12,base=0)=>{const a=this.project(from.x,from.y),b=this.project(to.x,to.y);c.fillStyle='#5c5442';c.beginPath();c.moveTo(a.x,a.y-base*z);c.lineTo(b.x,b.y-base*z);c.lineTo(b.x,b.y-height*z);c.lineTo(a.x,a.y-height*z);c.closePath();c.fill();c.strokeStyle=color;c.lineWidth=3*z;c.beginPath();c.moveTo(a.x,a.y-(height-3)*z);c.lineTo(b.x,b.y-(height-3)*z);c.stroke();c.strokeStyle=trim;c.lineWidth=1.5*z;c.beginPath();c.moveTo(a.x,a.y-height*z);c.lineTo(b.x,b.y-height*z);c.stroke();};
-  c.save();c.lineCap='round';
-  for(const span of parts.spans){const a=this.project(span.from.x,span.from.y),b=this.project(span.to.x,span.to.y);c.strokeStyle='rgba(20,27,22,.4)';c.lineWidth=5*z;c.beginPath();c.moveTo(a.x,a.y+2*z);c.lineTo(b.x,b.y+2*z);c.stroke();beam(span.from,span.to);}
-  if(e.type==='gate'){beam(parts.posts[0],parts.posts[1],16,12);for(const post of parts.posts){const p=this.project(post.x,post.y);c.strokeStyle=trim;c.lineWidth=3*z;c.beginPath();c.moveTo(p.x,p.y);c.lineTo(p.x,p.y-16*z);c.stroke();}}
-  else{const p=this.project(e.x,e.y);c.strokeStyle=color;c.lineWidth=3*z;c.beginPath();c.moveTo(p.x,p.y);c.lineTo(p.x,p.y-13*z);c.stroke();}
-  c.restore();
- }
+ drawFortification(c,e,z,color,trim){drawStoneFortification(this,c,e,z);}
  drawBuilding(c,e,p,z){
   const key=e.type,color=e.owner===this.localPlayer?'#b69d64':'#9d5947',trim=e.owner===this.localPlayer?'#ddc98e':'#c78569';
   if(key==='wall'||key==='gate'){this.drawFortification(c,e,z,color,trim);return;}

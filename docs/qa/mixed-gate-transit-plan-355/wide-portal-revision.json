@@ -1,0 +1,133 @@
+{
+  "id": "355-wide-portal-revision",
+  "status": "PLAN_ONLY_BODY_WING_CLEARANCE_CONCERN_NO_ART_OR_RUNTIME_PROOF",
+  "timeUTC": "2026-10-11T08:08:13.427321+00:00",
+  "original355FilesPinnedPreserved": {
+    "README.md": "03ea97c5d7f6bd2352417b7a1a3a1efa1c8946b1aea5b7d084c9091841fa4921",
+    "work-order.json": "d61e7c8e93fd00faf61519864c43c4144baf1aecd9f3789cdee8365dbee19925",
+    "custody.json": "9fe96fb453ec9139bc8c7f342ff8b5ef321d6980c0bb0f854b01822fb7393033"
+  },
+  "reference": {
+    "landCrowdRadius": 0.28,
+    "limitation": "Unit crowd reference only. Friendly Gate ignored in collision; no physical art jamb/panel collision contract. Full actor art body extent and panel/post thickness remain to be reviewed at game size."
+  },
+  "wideProposal": {
+    "portalLine": "x+y=-.17",
+    "jambA": [
+      0.26,
+      -0.43000000000000005
+    ],
+    "jambB": [
+      -0.43000000000000005,
+      0.26
+    ],
+    "rightWing": [
+      [
+        0.26,
+        -0.43000000000000005
+      ],
+      [
+        0.26,
+        0
+      ],
+      [
+        0.5,
+        0
+      ]
+    ],
+    "leftWing": [
+      [
+        -0.43000000000000005,
+        0.26
+      ],
+      [
+        0,
+        0.26
+      ],
+      [
+        0,
+        0.5
+      ]
+    ],
+    "apertureLength": 0.9758073580374357,
+    "centeredCrossings": [
+      [
+        0,
+        -0.17
+      ],
+      [
+        -0.17,
+        0
+      ]
+    ],
+    "nearestJambAtCrossing": 0.36769552621700474,
+    "jambMarginBeforeThickness": 0.08769552621700472,
+    "northToGateVerticalWingClearance": 0.26,
+    "gateToWestHorizontalWingClearance": 0.26,
+    "wingMarginBeforeThickness": -0.020000000000000018,
+    "materialConcern": "Wider aperture itself clears reference circle at the crossing, but hooked wings are only.26 from route axes, below.28 reference by.02, before thickness."
+  },
+  "alternate032": {
+    "portalLine": "x+y=-.17",
+    "jambA": [
+      0.32,
+      -0.49
+    ],
+    "jambB": [
+      -0.49,
+      0.32
+    ],
+    "rightWing": [
+      [
+        0.32,
+        -0.49
+      ],
+      [
+        0.32,
+        0
+      ],
+      [
+        0.5,
+        0
+      ]
+    ],
+    "leftWing": [
+      [
+        -0.49,
+        0.32
+      ],
+      [
+        0,
+        0.32
+      ],
+      [
+        0,
+        0.5
+      ]
+    ],
+    "apertureLength": 1.145512985522207,
+    "nearestJambAtCrossing": 0.4525483399593905,
+    "jambMarginBeforeThickness": 0.17254833995939045,
+    "minimumWingCenterlineClearance": 0.32,
+    "wingMarginBeforeThickness": 0.03999999999999998,
+    "surfaceMarginFormula": "hookOffset minus panel half thickness minus actualactor body extent",
+    "limitation": "Only.04world margin before thickness. If panel/post halfwidth >=.04 or actor body extent>.28, no positive strict clearance follows. Need full authored ground surfaces, not centerline proof."
+  },
+  "route": {
+    "fourthNWwall": "Retained shortest grid hop rationale. Does not guarantee actor exactcenter or prevent crowd reroute.",
+    "firstHopArrival": ".7 tolerance remains; no centerstand inference",
+    "observation": "Require actual assigned singleMove/order, consecutive observed simulationtick route, aperture interior crossings, visible body clearance against full hooked wings/jambs, brief game-size scene. Sparse interpolated chords cannot establish route clearance."
+  },
+  "projection": "Fixed1254/pivot627900 authoringguide only; world proposal within +/-0.5 endpoints does not independently verify projected bitmap/source clipping. No asset/source pixel transformation.",
+  "performed": {
+    "liveCalls": 0,
+    "browserCalls": 0,
+    "serverCalls": 0,
+    "simulationCalls": 0,
+    "tests": 0,
+    "builds": 0,
+    "imageCalls": 0,
+    "originalFileMutations": 0
+  },
+  "decision": "Report concern to root and354 guideworker beforeart; root chooses fullgroundsurface geometry. No syntheticPASS."
+}

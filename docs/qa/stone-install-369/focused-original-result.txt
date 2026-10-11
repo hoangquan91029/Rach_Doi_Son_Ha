@@ -1,0 +1,128 @@
+✔ dead Wall/Gate chooses only standalone authored death despite construction/hit/state and completed neighbors (4.631992ms)
+✔ missing rubble/ambiguous or ineligible variants never paint a live state; living never paints death (1.112917ms)
+✔ building death anchors fixed simulation tick and holds terminal pose by default/explicit false (1.596364ms)
+✔ dead entity remains unpickable and fog/visibility filtering remains authoritative (0.515632ms)
+✔ ordinary cancellation exposes death with stale construction truth then removes corpse at80 ticks (141.81564ms)
+✔ all existing building families select construction for public boolean and private job, with hit suppressed (9.302466ms)
+✔ missing construction never substitutes idle; completed never selects construction; death precedes site flag (1.247326ms)
+✔ construction fixed ticks respect default/true loops and explicit false holds last frame without completion (0.928982ms)
+✔ unfinished fortifications use only standalone mask0 and never completed neighbor links (3.599142ms)
+✔ ordinary build view supplies owner and redacted enemy construction eligibility; fog omits site (19.828915ms)
+✔ whole metadata requires exact bounded mask/null direction/building family (2.778548ms)
+✔ gate axis derives from real mask and rejects mismatched declaration (0.421585ms)
+✔ all16 masks select only exact whole source; corner has no straight substitution (1.33338ms)
+✔ owner and visible-only neighbor context drive selection; hidden neighbor not included (0.206423ms)
+✔ unknown context/unfinished/hit/death preserve bounded fallback (0.271502ms)
+✔ duplicate/alias ambiguous wholevariants and changing fixed layout reject (0.595164ms)
+✔ legacymanifest and assets without metadata retain contract (1.072469ms)
+✔ real raster sample chooses exact whole variant only on fort; draw and alpha picking receive same context (1.98832ms)
+✔ wall ghost area does not intercept unit pick at zoom0.55 (3.240135ms)
+✔ wall ghost area does not intercept unit pick at zoom1.08 (0.340682ms)
+✔ wall ghost area does not intercept unit pick at zoom1.8 (0.308719ms)
+✔ actual wall face remains selectable for topology3 (0.244103ms)
+✔ actual wall face remains selectable for topology12 (0.172037ms)
+✔ actual wall face remains selectable for topology5 (0.158833ms)
+✔ actual wall face remains selectable for topology15 (0.684823ms)
+✖ X gate open passage does not intercept clicks, header and posts remain selectable (1.297026ms)
+✖ Y gate open passage remains clear and oriented header is selectable (0.957848ms)
+✔ ordinary building picking and liveness/visibility guards remain unchanged (0.723452ms)
+✔ wall/wall accepts orthogonal adjacent cell 1,0 without footprint overlap (17.948579ms)
+✔ wall/wall accepts orthogonal adjacent cell -1,0 without footprint overlap (9.73402ms)
+✔ wall/wall accepts orthogonal adjacent cell 0,1 without footprint overlap (6.679174ms)
+✔ wall/wall accepts orthogonal adjacent cell 0,-1 without footprint overlap (2.958661ms)
+✔ wall/gate accepts orthogonal adjacent cell 1,0 without footprint overlap (2.426683ms)
+✔ wall/gate accepts orthogonal adjacent cell -1,0 without footprint overlap (1.745986ms)
+✔ wall/gate accepts orthogonal adjacent cell 0,1 without footprint overlap (2.987937ms)
+✔ wall/gate accepts orthogonal adjacent cell 0,-1 without footprint overlap (2.094746ms)
+✔ gate/wall accepts orthogonal adjacent cell 1,0 without footprint overlap (3.23945ms)
+✔ gate/wall accepts orthogonal adjacent cell -1,0 without footprint overlap (1.758004ms)
+✔ gate/wall accepts orthogonal adjacent cell 0,1 without footprint overlap (4.142723ms)
+✔ gate/wall accepts orthogonal adjacent cell 0,-1 without footprint overlap (1.426863ms)
+✔ gate/gate accepts orthogonal adjacent cell 1,0 without footprint overlap (1.384127ms)
+✔ gate/gate accepts orthogonal adjacent cell -1,0 without footprint overlap (1.372681ms)
+✔ gate/gate accepts orthogonal adjacent cell 0,1 without footprint overlap (1.743484ms)
+✔ gate/gate accepts orthogonal adjacent cell 0,-1 without footprint overlap (1.362765ms)
+✔ wall/wall same-cell overlap rejected without spending (2.400851ms)
+✔ wall/gate same-cell overlap rejected without spending (1.266205ms)
+✔ gate/wall same-cell overlap rejected without spending (1.679697ms)
+✔ gate/gate same-cell overlap rejected without spending (1.061495ms)
+✔ barracks/wall retains other-building setback (1.571349ms)
+✔ wall/barracks retains other-building setback (1.541341ms)
+✔ gate/barracks retains other-building setback (1.420655ms)
+✔ barracks/gate retains other-building setback (1.334184ms)
+✔ unit footprint, impassable terrain, ford, coastal, ownership and King role guards remain (4.776503ms)
+✔ friendly gate permits passage in a wall/gate/wall corridor (34.044732ms)
+✔ hostile gate blocks passage in a wall/gate/wall corridor (21.557222ms)
+✔ mask0 identifies actual orthogonal cells and projected boundary spans (5.370103ms)
+✔ mask1 identifies actual orthogonal cells and projected boundary spans (0.737418ms)
+✔ mask2 identifies actual orthogonal cells and projected boundary spans (0.429325ms)
+✔ mask3 identifies actual orthogonal cells and projected boundary spans (0.424097ms)
+✔ mask4 identifies actual orthogonal cells and projected boundary spans (0.359622ms)
+✔ mask5 identifies actual orthogonal cells and projected boundary spans (2.83628ms)
+✔ mask6 identifies actual orthogonal cells and projected boundary spans (1.385786ms)
+✔ mask7 identifies actual orthogonal cells and projected boundary spans (0.489953ms)
+✔ mask8 identifies actual orthogonal cells and projected boundary spans (0.389138ms)
+✔ mask9 identifies actual orthogonal cells and projected boundary spans (0.518595ms)
+✔ mask10 identifies actual orthogonal cells and projected boundary spans (1.366814ms)
+✔ mask11 identifies actual orthogonal cells and projected boundary spans (0.28203ms)
+✔ mask12 identifies actual orthogonal cells and projected boundary spans (1.145638ms)
+✔ mask13 identifies actual orthogonal cells and projected boundary spans (0.244055ms)
+✔ mask14 identifies actual orthogonal cells and projected boundary spans (1.233503ms)
+✔ mask15 identifies actual orthogonal cells and projected boundary spans (0.257569ms)
+✔ visible-list scope, owner, grid, completed living neighbor guards exclude false connectors (0.339213ms)
+✔ unfinished/dead/off-grid self provides no topology, visible enemy completion marker respected (0.159616ms)
+✔ gate axes use actual neighbor counts, stable X ties/default and immutable dir (0.358234ms)
+✔ opposite neighboring segments meet at exact world half-cell boundary on both axes (0.241336ms)
+✔ picker uses current rendered sample for tall hat and excludes transparent areas (2.393938ms)
+ℹ tests 76
+ℹ suites 0
+ℹ pass 74
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 297.779608
+
+✖ failing tests:
+
+test at tests/fortification-picking222.test.js:7:1
+✖ X gate open passage does not intercept clicks, header and posts remain selectable (1.297026ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  undefined !== 1
+  
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/fortification-picking222.test.js:7:198)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: 1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/fortification-picking222.test.js:8:1
+✖ Y gate open passage remains clear and oriented header is selectable (0.957848ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  undefined !== 1
+  
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/fortification-picking222.test.js:8:185)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: 1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
