@@ -1,98 +1,54 @@
-# Kế hoạch đồ họa — checkpoint232 / public230, 10/10/2026
+# Kế hoạch đồ họa — checkpoint372 / public367, 11/10/2026
 
-Kế hoạch toàn game: [PROJECT_PLAN.md](../../PROJECT_PLAN.md), [currentstatus](../../../PROJECT_STATUS.md), [movementplan](MOVEMENT_PRODUCTION_PLAN_20261010.md). Previous224entrypoints giữ nguyên byte trong docs/checkpoints/checkpoint224-entrypoints/.
+[Full project plan](../../PROJECT_PLAN.md) · [Status](../../../PROJECT_STATUS.md) · [Movement plan](MOVEMENT_PRODUCTION_PLAN_20261010.md). Bản kế hoạch cũ checkpoint232 được lưu nguyên byte tại `docs/checkpoints/checkpoint371-entrypoints/docs/art/pipeline/GRAPHICS_PRODUCTION_PLAN.md`. Chỉ phần hiện hành này điều khiển công việc tiếp theo; không tiếp tục order lịch sử.
 
-213 wholeD0candidate unchanged.216 canonicalidle uniform128/89 prepared;228 actualD0/all8/Pausefreeze/Resume PASStechnical nhưng StopidleD7 sauendpointturn, matchingD0/menu/motion/owner/worldfootlock/fanout OPEN. Actualclipdisplayed; no repeatedstillaudits/blindcalls. Nextspecifictransition trial Stop trongactualD0segment, ordinaryUI, khôngfakefacing/speed/scale/phase. Mixedlegacyfamily scale cònthiếu.
+## Tường thành hiện hành: đá chân thực, chỉ ba mẫu
 
-215/217/222/223 proceduralWallGate topology/picking/constructionflag nowpairedpublic230.229 exactnewbuild scopedscene/cleanboots;231 normalTLS actualenemyWallflag/privacy/completion/menu/errors0 acceptednarrow. These are functionalfallback fixes, not finishedWallGateart.214 ONEwholeWallX HOLDworldalignment/uninstalled; finalbuildingstates/maps/roster remainunfinished. Public230optionalfort28/186files/chunk479b…b4cf/PID575363 immutable29233, barefallback/foodCHAR+D0absent. Fullgoal INCOMPLETE.
+Yêu cầu người dùng: bỏ toàn bộ hình tường/cổng gỗ khỏi game đang chơi; chỉ làm tường đá ngang X, dọc Y và góc, không mở thư viện biến thể lớn. Tài nguyên gỗ, cây và các công trình khác không thuộc thay đổi vật liệu tường thành.
 
-## Mục tiêu hình ảnh
+- Whole painted X362 dùng masks0/1/2/3, Y364 dùng4/8/12, corner365 dùng5. Ba PNG riêng, không quay/lật/ghép ảnh để tạo hướng khác.
+- Mỗi ảnh được tạo bằng đúng một builtin imagegen call, không retry; raw1254/pivot627900, uniform runtime128/render42.3225. Đây là ba ảnh hoàn chỉnh cho completed-idle, không phải ba animation.
+- Mask khác, cổng và state chưa có tranh dùng nativeSTONE fallback. Không sinh thêm bộ T/cross/mixedGate bằng gỗ hoặc một thư viện góc đồ sộ.
+- 15 public wooden payloads/25 descriptors và extraLOCAL woodcollapse321 đã được lưu byte-custody rồi gỡ khỏi active bank. Original/raw/held/rejected/rollback vẫn giữ.
 
-Minh họa lịch sử chân thực/bán chân thực, có khối và chiều sâu, chuyển động tự nhiên ở kích thước chơi RTS. Giữ mũ, trang phục, màu áo, dải thắt lưng (sash) và vật liệu theo mẫu nhân vật chuẩn (canonical). Không dùng nhân vật hình khối, 3D, cutout hay texture tay/chân riêng làm thành phẩm.
+[Selected sources366](../buildings/stone-wall-production-366/README.md), [actual Chrome368](../../qa/stone-raster-route-fix-368/root-intake.json), [actual public Firefox370](../../qa/stone-public-runtime-370/root-intake.json) bind đúng ba mẫu. Root xem một scene ở defaultzoom1.08 và chấp nhận hẹp vật liệu đá, độ đọc và các mối nối X/Y/corner completed-idle. Không suy ra allbuilding/animation acceptance.
 
-Thứ tự đánh giá: chuyển động đúng và liền mạch → silhouette/readability → identity nhất quán → chi tiết bề mặt. Xem một vòng chuyển động ngắn ở kích thước chơi thật; chỉ sửa lỗi thấy rõ. Việc audit kỹ kế hoạch không thay đổi ưu tiên kiểm tra hình ảnh ngắn gọn này.
+## Bản web hiện tại
 
-## Hiện tại có gì
+PUBLIC367 URL trần nạp stone8/worldfalse; optional `?art=fort` nạp37 descriptors gồm29 non-wall/gate giữ nguyên và8 stone mappings dùng3 PNG. Bản196 files/newJS `index-eaEH6Li-.js` đã triển khai từ SAMEsealed368. Backend230 giữ nguyên, không restart. LOCAL pendingfood recipe còn riêng, PUBLIC không có foodCHAR/D0/woodcollapse321.
 
-| Hạng mục | Đã có | Còn thiếu |
+370 Firefox normalHTTPS ordinary three-wall scene đạt8ready/3decodedPNGs/12portraits,1884actualrasterdraws, masks5/2/8 và cả3opaque picks; Pause/Resume/Stop/menu,7 responsepins và errorsnetworkHTTP0. Toàn bộ handle đóng;522byte-mode preservation pins/public196/backend230 giữ nguyên. Không replay scene đã đạt chỉ để có thêm receipt. Paired rollback hiện hành là public345/private353 + immutable230; xem PROJECT_STATUS trước promotion.
+
+## Những gate vẫn mở
+
+| Hạng mục | Nguồn/evidence hiện hành | Việc còn thiếu |
 |---|---|---|
-| Villager D1 | Idle, walk 014, wood 026/owner 032, iron 136/owner 141; food 101 local | Build/repair, attack/hit/death và độ phủ hướng; food còn chờ phản hồi riêng |
-| Villager D0 | Whole eight-frame candidate213, corrected F3/F4;155 rejected originals retained | Brief continuous intake, same-family idle and actualtravel/Stop; no batch qualification |
-| Quân đội | Một số identity idle D0 | Phần lớn hành động và hướng nhìn cho infantry, spear, firearm, cavalry, artillery, wagon và hai tàu |
-| Leaders | 12 portrait và nguồn identity gốc | Hoạt ảnh toàn thân, hành động theo vai trò và 8 hướng; chỉ một general có idle candidate |
-| Buildings | Public230 includes8/10 completed-idle families; local210 wall/gate placementfix | Wall/Gate finishedart/topology; all construction/damage/destruction and applicable attackstates |
-| World | Ground/water/ford/shore candidates, forest, hill/mountain, food/iron nodes | Composition hai map, bờ/edge/repetition và scene đông quân |
-| Framework | Export017/APNG012, distance phase, alpha picking,170catalog/compiler,175matchbanks and bounded browser receipts | Accepted fullcoverage/default release and final visual/performance validation |
+| Villager D1 | Walk014/runtime016; wood032 và iron141 owner accepted đúng vòng đã xem | Hướng khác và action theo gameplay; food101 chờ riêng |
+| Villager D0 | Eight whole frames213 + idle216; actual travel/Pause/Resume/Stop233 technical closure | Owner naturalness, worldcontact, bodyvolume/shadow và family scale; runtime install/fanout còn mở |
+| Roster và leaders | Registry302 có9 types và12 historical IDs; portrait/source custody giữ nguyên | Finished realistic whole sprites,8 hướng và actions; registry không phải artwork |
+| Stone fortifications | Ba completed-idle whole images và nativeSTONE fallback | Construction/hit/destruction phù hợp ba-shape scope; cổng vẫn fallback |
+| Other buildings | Các completed-idle tranh đã qualified hẹp; wholebuilding compiler359 | Construction/hit/death/attack artwork cần thiết, không thay bằng idle để che thiếu |
+| World | Terrain340/345 receipts; original forest/shore/hill/mountain sources | Composition hai map, shore/forest/mountain repetition và dense-unit scene |
+| Production | Defaultstone public367 và nhiều proof gameplay/network trước đó | Accepted full art/default coverage, densecombat+rooms performance, external-device WAN và finalbothmaps/twomodes |
 
-Public230 `?art=fort` có28 asset entries; đây không phải28animation hoặc roster hoàn chỉnh. URL trần vẫn fallback. Public149 scope chỉ là lịch sử, không bản đang chạy.
+Pending question195 không phê duyệt213. Không replay Stop233, gọi character blind hoặc audit still/anatomy nhiều lần. Hàng mang về dùng ordinarywalk; không cần thêm carry cycle. Old wooden collapse331/332 là lịch sử, không đưa trở lại active production.
 
-## Quy trình chuẩn cho một action
+## Quy trình sản xuất và thứ tự tiếp theo
 
-1. **Chốt identity và runtime mapping.** Ghi `identity/action/engineDirection`, nguồn canonical, camera/light, equipment, cycle/terminal state và simulation event liên quan. Không tạo run/carry/deploy nếu gameplay không cần.
-2. **Chốt cả chu kỳ.** Dùng clothed 2D guides có near/far ownership, contact/passing phases, fixed pivot và timing. Walk 8 frame: F0/F2/F4/F6 trước, rồi inbetweens. Không dựa vào bốn prompt rời rạc.
-3. **Sinh whole illustrated keys.** Builtin imagegen, exact Sol 6.1 Low worker. Canonical duy nhất giữ authority về hình thể/camera/identity; whole-body guide điều khiển pose, strip cả chu kỳ cho temporal context. Không để generic guide thay tỷ lệ canonical. Giữ raw và tool receipt. Key sai rõ ràng thì dừng slot, không đổi nhãn để che lỗi.
-4. **Hoàn thiện inbetweens.** Sau khi keys được chọn, mỗi frame bám hai key lân cận; số call hữu hạn. Không ghép nguồn pixel, xoay limb texture hoặc fit từng frame.
-5. **Compile và xem loop.** Một transform cho toàn family, alpha/cell/pivot/duration validation, atlas/manifest/contact sheet/loop tự sinh. Xem 10–15 giây tại kích thước chơi; sửa những lỗi nhìn thấy.
-6. **Trial thật và đưa vào catalog.** Đi/đứng/đổi hướng hoặc work/stop/pause trong game, đúng hướng do mô phỏng xác định. Ghi technical/visual/owner/public riêng. Chỉ mở đợt sản xuất tiếp sau khi pilot tương ứng đạt yêu cầu.
+1. **Tường đá:** giữ đúng ba mẫu đã có. Tiếp theo chỉ một pilot state thực sự còn thiếu, bắt đầu từ canonical stone source, work order hữu hạn và whole illustration. Không mở topology library mới. State/event phải nối với simulation-authoritative API, death precedence và fallback giữ đúng.
+2. **Movement:** một brief actual-size continuous look cho candidate hiện hành và sửa lỗi thấy rõ nếu cần. Whole clothed rough action → keys → neighbor illustrated inbetweens → atlas/loop → same-family idle → actualUI movement/stop. Không coi technical playback là owner naturalness.
+3. **Family scale:** thống nhất visible height idle/walk/work trong scene thật trước character fanout. Sau pilot đạt mới mở villager directions/actions rồi infantry, spear/firearm; horse/rider, wagon, crew/gun và ships có pilot family riêng.
+4. **Maps và buildings độc lập:** có thể làm song song các package không dùng chung file/guard. Mỗi package có selected-source ledger, one actual-size preview và receipt; không biến mỗi frame thành dự án quản trị riêng.
+5. **Release:** relevant actual scene + exact source/build + current paired rollback trước promotion. Không bật toàn bộ pending candidate rồi gọi full art finished.
 
-Gộp công việc theo từng hành động, không tạo một dự án quản trị cho từng frame. Mỗi package có một ledger, một preview và một receipt gọn. Bản lỗi và original vẫn được giữ; build/rollback đầy đủ ở ranh giới release.
+Reuse camera, pose specifications, timing, export/compiler, atlas schema, alpha picking, banks và runtime API. Mỗi final frame vẫn là whole illustration; không xoay texture tay/chân, cắt ghép nguồn pixel hoặc fit từng frame. Không mirror tự động. Builtin imagegen only; mọi code/art worker exactSol6.1Low, tối đa3worker+root với ownership độc lập.
 
-## Tái sử dụng và sản xuất hàng loạt
+## Kích thước, bộ nhớ và kiểm tra
 
-Tái sử dụng pose specification, guides, timing, camera, export, atlas schema, preview, asset banking và runtime API. Thành phẩm của mỗi nhân vật vẫn phải là một minh họa toàn thân riêng. Humanoid generic, spear, firearm, commander, cavalry, artillery crew, wagon và ship là các motion family khác nhau.
+Humanoid mục tiêu visible64–96px ở default zoom. Raw1254 originals giữ nguyên; working/export khoảng256 và runtime128, dùng một transform/pivot cho toàn family. Những action hiện tại render89 không tự chứng minh cùng visible scale với idle cũ. Stone runtime128/render42.3225 là footprint công trình đã kiểm tra thực tế, không áp humanoid scale cho tường.
 
-- Bước 1: hoàn thiện D0 walk để chứng minh quy trình dùng guide có trang phục qua cả chu kỳ.
-- Bước 2: thống nhất visible scale của idle/walk/work trong một scene thật, rồi hoàn thành villager tám hướng và action cần thiết.
-- Bước 3: một infantry pilot trọn trạng thái; sau đó spear/firearm. Song song làm world/building, không mở cả roster ảnh.
-- Bước 4: từng complex family (horse/rider, wagon/animal, crew/gun, ships) có pilot riêng trước batch.
-- Bước 5: một premium leader pilot; chốt 12 identity dùng shared role family hay role-specific artwork trước khi ước tính/call hàng loạt.
-- Bước 6: accepted release manifest + match banks + final map composition + performance và public validation.
+128²RGBA là64KiB/frame;64 frames là4MiB trước padding/copies. Dùng selected-map/roster banks, dedup và release khi rời trận; không nạp toàn roster khi chưa cần. Baseline350 ordinary1/5/8rooms/~20ticks/sec không phải densecombat/WAN/finalperformance; không tối ưu suy đoán khi chưa có concern đo được.
 
-Worker có thể chạy song song các package độc lập, tối đa 3 worker + root. Frame phụ thuộc phải đợi key đã được tạo và chọn thực tế. Không lật ảnh tự động: villager sash, tay cầm vũ khí, leaders và ánh sáng bất đối xứng cần hướng thật. Nếu một generic family đối xứng đủ để mirror, phải ghi mapping được duyệt và thêm hỗ trợ renderer trước; hiện vẫn dự trù đủ 8 hướng.
+Một brief gameplay-size look và sửa visible issues; không microanatomy/cloth/pixel audit. Giữ provenance và lightweight browser/state checks. Candidate build phải isolatedcwd/absoluteoutDir/exactViteconfig, source retention/preflight trước seal; không thay nguồn giữa trial. Chờ mọi preservationguard đóng rồi mới sửa canonical/HEAD. Public service intentionallyrunning, không ghi đè active dist/restart khi test.
 
-## Kích thước và bộ nhớ
-
-Mục tiêu visible humanoid 64–96 logical px tại default zoom, không phải canvas cao 89 px. Scene hiện tại có idle cũ render 38/42/51 và action mới 89; đây là chênh lệch cần sửa bằng thang kích thước nhất quán cho từng nhóm nhân vật. Đo opaque height đủ để giải quyết khác biệt nhìn thấy, không audit từng pixel.
-
-Raw hiện tại 1254² được giữ nguyên. Bản working/export đề xuất 256², khoảng 224 px body; runtime 128², khoảng 112 px body trước scale xuống màn hình. Đây là baseline dự kiến cho output chuẩn hóa, không tuyên bố raw đã sinh 256 px. Dùng transform chung và pivot chuyển đổi đúng; horse/spear/ship có canvas riêng nếu cần. Không regenerate asset tốt chỉ để đổi độ phân giải.
-
-128² RGBA = 64 KiB/frame; 64 frame = 4 MiB trước padding/copies. Inventory tham khảo 5.600–6.024 frame có thể chiếm 350–376,5 MiB nếu nạp toàn bộ 128 cells, chưa gồm world/portrait/caches. Vì vậy cần selected-map/roster banks, giải phóng bank khi rời trận, dedup theo content hash. Guard 128 MiB hiện có chưa tính toàn bộ bộ nhớ trình duyệt.
-
-Không hứa ngày hoàn tất trước khi đo số frame được chấp nhận trên mỗi call và thời gian làm việc thực để hoàn thành ít nhất hai chu kỳ. Số lượng trong audit là giả định để lập kế hoạch; không phải lệnh tự động sinh hàng nghìn ảnh. Không ép tất cả hành động dùng 8 frame: hit/death/attack/idle theo thời lượng và độ mượt cần thiết.
-
-## Gate tiếp theo cụ thể
-
-G01 hiện theo [kế hoạch movement20261010](MOVEMENT_PRODUCTION_PLAN_20261010.md) và [preview195](pure2d-walk-D0-preview-195/root-intake.json). Có tám whole illustrated PNG và technical playback, chưa continuous naturalness/runtime acceptance. Một brief actual-size loop look đã được yêu cầu; F3/F4 body warning giữ nguyên. Sửa visible issue nếu cần, rồi candidate D0 travel/Pause/Stop và canonical idle cùng family scale. Không mở directions/units hoặc dùng historical162/173/181 order như current instructions. Original guides chỉ authoring, các failed/held/source labels giữ nguyên trong custody.
-Đưa asset mới vào default release sau coverage và actual-scene acceptance; không bật toàn bộ candidate rồi gọi finished. Full project vẫn **INCOMPLETE**.
-
-## Follow-up162–168
-
-[162 rough](villager-walk-D0-rough-cycle-162/root-intake.json) đã hoàn thành reference trọn vòng; không final art. [166 illustration](villager-walk-D0-capability-166/root-intake.json) cải thiện khối người nhưng HELD support phase;1call/0retry/exhausted. [Hướng tiếp](movement-research-161/FOLLOWUP_162_166.md) là reconcile ownership/occlusion,0call, không mở F6/inbetween.165 Shipyard idle accepted narrow actual Coast scene, local27assets; public149 vẫn26. Code163/merged167 không cấp motion acceptance.
-
-169/172/173 bổ sung: trailingankle trong originalrough đã sửa; newillustration giữbody nhưng phaseHELD, không finalsource selected. [173](movement-pose-research-173/README.md) chuyển đề xuất sang verifiedwholeaction/tonalwholepose authority; photo metadata chưa phải visuallyqualifiedreference.170 catalog/compiler đã triển khai và validatednarrowUI, dynamicmatchbanks/defaultrelease còn mở. Không dùng các tool đó để mởfanout khi movement chưađạt.
-
-## Movement sau180/181 — lịch sử thực thi
-
-Root đã bỏ155 deformedframes và chưa chọn166/172/181 làm finalwalk key.174/178 không lấy được photographicsequence; không dùng mô tả catalog làm bằng chứng chuyển động. Nguồn nguyên lý: [Toon Boom Walk Analysis](https://learn.toonboom.com/modules/walk-cycle-animation/topic/walk-analysis1), dùng contact/down/passing/up và quan hệ toàn thân, không chỉ hướng bàn chân. Directpage403; primary searchtext retrieved, không photo observation claim.
-
-Sửa quan trọng ở180: tại passing, đùi có thể tiến trong khi chân dưới gập về sau; không ép sandal phải vượt idlex. Guide169/179 từng thiên về đặt ankle và rút ngắn chân, dễ dẫn tới chân gần duỗi chuẩn bị contact hoặc sai khối.180 vẽ lại wholepants/body contours, không limbtexture hay recolor-only.
-
-181 thử1builtincall/0retry với solecanonical +180wholeF6 guide. [Actual89 comparison](villager-walk-D0-capability-181/comparison89.png) giữ broadrealisticidentity và tạo chân gập rõ; liftedfoot còn cao/back nên vẫn candidate. Tiếp theo là **ONE correction toàn thân có mục tiêu hạ biên độ bước**, dùng actual181 như edit target và canonical như appearance authority, giữ support/hip/knee/arm progression. Không mở một dự án guide mới hoặc auditmicrofoot; thay control cụ thể cho visibledefect, không prompt nguyên trạng.
-
-Sau correction có pose đúng rõ: hoàn thiện bốnkey cùng một identity/camera/family scale → bốninbetween dựa neighbor thực → export/600ms preview → một brief real-size look → actualD0travel/Stop/pause. Nếu loop còn lỗi nhìn thấy thì sửa đúng lỗi đó. Technicalhash/still không cấp naturalness; chỉ mở directions/units khi pilot hoàn chỉnh đạt. Không bắt buộc giữ contacts033/152 nếu chúng lệch hình thể mới.
-
-175 đã cài actualmenu/match encoded/decoded ownership, budget/cache/release/retry; không accepteddefaultrelease.177 giảm repeatedcell checks trong path mà không đổi motion/path contracts. Hai gói không thay sourceanimation hoặc đóng movement gate. Fullgoal INCOMPLETE.
-
-## Movement182–190 — lịch sử thực thi
-
-[Nghiên cứu actual paths](movement-research-161/CONTACT_OWNERSHIP_188.md) xác định nguồn lỗi concrete:152 labelledopposite nhưng exposedhip→knee→sandal vẫn cùngphase033.188 sửa camera/thân rồi lặpđúng nguồnpose sai. Giữ requestedF4HOLD; **reassign actual188 wholePNG chỉ F0candidate** thay old033, không sửa pixel/giả phase.182/185 chỉ currentpassing candidates, chưa qualifiedloop.
-
-189 đúnghai completeclothed tonal drawings/0calls, cố định legA outerhip/foreground và legB innerhip/background. F4 Aback/Bfront ngược actual188. Tones/labels chỉ guide; finishedillustration giữ canonicalrealisticidentity/proportions, không angularvector/shortleg surfaces.190 NEW ONEbuiltin/0retry đang chạy với guideFIRST pose-only, canonical appearanceauthority và188F0bodycontinuity; bỏ anatomicalleft/right ambiguity và152control. Inspect live call trước tiếp tục, không duplicate/retryblind.
-
-Sau actualoppositecontactintake mới mở fourwholeillustratedinbetweens theo actualneighbors, existingatlas/APNG600ms và onebriefcontinuouslook ở game size; actualD0travel/Pause/Stop sau integration. Không thêm direction/unit khi chưa pilot. Source/guide hoặc stillhash không cấp support/footlock/motionapproval. Family scaleG02 vẫn open.
-
-## Movement hiện hành: complete-source pilot195
-
-F0=188 explicitreassignment; F2=185; F4=192 whole correction giữ actual opposite legpaths; F6=182. F1/F5/F7 là actual193/194. F3=197 sau sole whole guide196, provisional với appearance/phase warning; original193F3 wrongcanvas/bodyjump loại. [Ledger](villager-walk-D0-contact-192/pilot-sequence-195.json) bind tất cả raw/tool receipts,1254wholecanvas/pivot và uniform128cell, không fit/mirror/pixelsplice.195 exporter tái dùng017/014, atlas1024×128 và APNG89cell/600ms. Actual Chromium támframes/ba vòng/zeroerrors là technical playback only.
-
-Root đã hiển thị actual APNG và hỏi một lần về chuyển động; chưa trả lời, chưa motion PASS. F3/F4 body khác neighbors cần continuous judgment; không xử lý bằng repeated still scoring hoặc đổi playback/game speed. Khi đủ tốt, D0 candidate runtime và same-family idle + ordinary UI movement/Pause/Stop kiểm tra practical contact/transition. Stationary preview không chứng minh world footlock. No fanout/defaultrelease/publicpromotion trong gói này.
+Full master/web/historical/visual81–145 và later goal vẫn **INCOMPLETE**. Không tuyên bố lịch5hACTIVE khi automation311 native schedule còn thiếu; quiet continuation intent giữ nguyên.

@@ -1,7 +1,1 @@
-# Public Stone370 — preparation ready, waiting root LIVEGO
-
-PreparedONE normalTLSbareURL Firefox offlineDelta compact3Wall scene after367promotion, from successful368ordinaryUI harness. No browser before rootpostcommitGO; freshactualpublic/canonicalHEAD/service/runtime/candidatearchive pins requiredatGO. No serverstart, room creation, TLSignore, gameplay/state/facing/outcome injection or source/stage/public writes.
-
-Expecteddefault8ready/3decodedPNGs/12portraits andrealrasterentityDraws>0; actual3masks5/2/8/all3opaquepicks/defaultzoom1.08/PausefreezeResume/builderStop/menu0. ExactnormalHTTPSresponsepins:index,newindex-eaEH6Li-bundle,defaultmanifest,3wholePNGs andfort37manifestviaordinaryGET only. Nooptionalfortmenu encodedReady assertion, fullmatch orroomreplay. Unknownsupply/art routes remainoutside active scene.
-
-Allsource/body/preservation binding completesbeforeONElivecall; rootwillfreezeactualcanonicalHEAD whileguardsLIVE. Original361HOLD/368successfulactual receipts remainretained.
+370 CLOSED: one normal TLS public367 Firefox offline Delta scene passed with actual raster entityDraws 1884, default stone8 / three decoded PNGs / 12 portraits, masks5/2/8 and all three picks, default zoom1.08, Pause/Resume, living builder Stop and menu zero decoded retention. Seven required HTTP pins matched. All owned handles closed; 522 preservation files bytes/modes, HEAD5e8629a, public196 and backend230/PID3229/rooms0 unchanged. No build, server start, room, image call or replay. Scope is completed-idle StoneX/corner5/Y only; root brief screenshot intake remains separate. Original browser receipt, screenshots and source-bound video are retained.
