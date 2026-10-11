@@ -1,0 +1,229 @@
+{
+  "status": "PASS346_NORMAL_TLS_CHROME_COAST_FIREFOX_DELTA_STATIC_TERRAIN",
+  "errors": [],
+  "networkErrors": [],
+  "httpErrors": [],
+  "pendingRequests": [],
+  "responsePins": [
+    {
+      "map": "coast",
+      "path": "index.html",
+      "sha256": "469f3bf2e74f8bf7fd771a4cb118563e31f3eaac7b8722c0173c57b3920bf24d"
+    },
+    {
+      "map": "coast",
+      "path": "assets/index-Cz2oiMds.js",
+      "sha256": "3495642c3c9ab988878659d0185cb7d5abac321dd350d1b7d3f1268c178695af"
+    },
+    {
+      "map": "coast",
+      "path": "assets/art-v1/fort-202-manifest.json",
+      "sha256": "77363dfc5ace6c43682f1459743eeda16f269c32e62afdb2a39d639e092cf6da"
+    },
+    {
+      "map": "coast",
+      "path": "assets/art-v1/rocky-ground-338/ground.webp",
+      "sha256": "9bd74bcf17b31a1de0668fed51ea6f99948b702ac4640e640c68c867d4e45bcf"
+    },
+    {
+      "map": "delta",
+      "path": "index.html",
+      "sha256": "469f3bf2e74f8bf7fd771a4cb118563e31f3eaac7b8722c0173c57b3920bf24d"
+    },
+    {
+      "map": "delta",
+      "path": "assets/index-Cz2oiMds.js",
+      "sha256": "3495642c3c9ab988878659d0185cb7d5abac321dd350d1b7d3f1268c178695af"
+    },
+    {
+      "map": "delta",
+      "path": "assets/art-v1/fort-202-manifest.json",
+      "sha256": "77363dfc5ace6c43682f1459743eeda16f269c32e62afdb2a39d639e092cf6da"
+    },
+    {
+      "map": "delta",
+      "path": "assets/art-v1/rocky-ground-338/ground.webp",
+      "sha256": "9bd74bcf17b31a1de0668fed51ea6f99948b702ac4640e640c68c867d4e45bcf"
+    }
+  ],
+  "scenes": [
+    {
+      "map": "coast",
+      "browser": "Chromium",
+      "tick": 219,
+      "unitId": 13,
+      "assignedMoveTick": 72,
+      "arrivalTick": 209,
+      "zoom": 1.08,
+      "artReady": 54,
+      "portraits": 12,
+      "visibleTerrainType": "hill",
+      "visibleTerrainCells": [
+        {
+          "x": 26,
+          "y": 24
+        },
+        {
+          "x": 27,
+          "y": 24
+        },
+        {
+          "x": 28,
+          "y": 24
+        },
+        {
+          "x": 35,
+          "y": 24
+        },
+        {
+          "x": 26,
+          "y": 25
+        },
+        {
+          "x": 27,
+          "y": 25
+        },
+        {
+          "x": 28,
+          "y": 25
+        },
+        {
+          "x": 35,
+          "y": 25
+        },
+        {
+          "x": 26,
+          "y": 26
+        },
+        {
+          "x": 27,
+          "y": 26
+        },
+        {
+          "x": 28,
+          "y": 26
+        },
+        {
+          "x": 35,
+          "y": 26
+        },
+        {
+          "x": 26,
+          "y": 27
+        },
+        {
+          "x": 27,
+          "y": 27
+        },
+        {
+          "x": 28,
+          "y": 27
+        },
+        {
+          "x": 35,
+          "y": 27
+        },
+        {
+          "x": 26,
+          "y": 28
+        },
+        {
+          "x": 27,
+          "y": 28
+        },
+        {
+          "x": 28,
+          "y": 28
+        },
+        {
+          "x": 35,
+          "y": 28
+        }
+      ],
+      "errors": 0,
+      "menuDecodedBytes": 0
+    },
+    {
+      "map": "delta",
+      "browser": "Firefox",
+      "tick": 265,
+      "unitId": 13,
+      "assignedMoveTick": 71,
+      "arrivalTick": 260,
+      "zoom": 1.08,
+      "artReady": 54,
+      "portraits": 12,
+      "visibleTerrainType": "mountain",
+      "visibleTerrainCells": [
+        {
+          "x": 1,
+          "y": 2
+        },
+        {
+          "x": 2,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 1,
+          "y": 3
+        },
+        {
+          "x": 2,
+          "y": 3
+        },
+        {
+          "x": 3,
+          "y": 3
+        },
+        {
+          "x": 1,
+          "y": 4
+        },
+        {
+          "x": 2,
+          "y": 4
+        },
+        {
+          "x": 3,
+          "y": 4
+        },
+        {
+          "x": 1,
+          "y": 5
+        },
+        {
+          "x": 2,
+          "y": 5
+        },
+        {
+          "x": 3,
+          "y": 5
+        },
+        {
+          "x": 1,
+          "y": 6
+        },
+        {
+          "x": 2,
+          "y": 6
+        },
+        {
+          "x": 3,
+          "y": 6
+        }
+      ],
+      "errors": 0,
+      "menuDecodedBytes": 0
+    }
+  ],
+  "scope": "Public345 optionalfort54, actualChromeCoast/FirefoxDelta. No state/camera/fog/commands injection.",
+  "cleanup": {
+    "ownedBrowsersClosed": true,
+    "ownedServers": 0,
+    "productionIntentionallyRunning": true
+  }
+}

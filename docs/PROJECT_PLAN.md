@@ -2,7 +2,7 @@
 
 Cập nhật ngày 2026-10-10, múi giờ Asia/Ho_Chi_Minh. **Trạng thái: INCOMPLETE.** Đây là kế hoạch hiện hành cho toàn dự án; `NEXT_STEPS.md` chỉ giữ hàng đợi gần nhất. Hồ sơ cũ được giữ nguyên byte tại `docs/audit/2026-10-09/history/`.
 
-Latest execution341 ở mục31 và active movement plan thay các next-step lịch sử; source/receipt cũ giữ nguyên.
+Latest execution347 ở mục32 và active movement plan thay các next-step lịch sử; source/receipt cũ giữ nguyên.
 
 ## 1. Mục tiêu và cách đọc kết quả
 
@@ -291,3 +291,12 @@ Public309/backend230/currentrollback299 unchanged. Preparedprivate325 pairedroll
 338 ONEbuiltin/0retry vẽ whole rockyground mới theo palette108, opaque1254→uniform512losslessWebP/world8×8.339 chỉ cluster3/4connectedcells khi ground decode; missing/failed asset hoặc olderroute giữ denseoriginalanchors. Old54rows/PNGscale/pivot/terrain/resources/fog/navigation unchanged. ONEactualChrome campaign so baseline329/candidate339 trên cả hai map bằng ordinaryinfantryMove/arrival/PauseResume/Stop/menu0,55+12/errorsnetworkHTTP0/closedguards. Root brief1280×800/zoom1.08 intake accepts modest static composition/readability improvement, no finalmap/denseperformance/motion inference.340 exactinstall/22focusedtestsPASS.333 entrypoints exactGita634c6b archived; originals/holds/custody preserved.
 
 PUBLIC30953/currentrollback299/immutable230PID3229 unchanged. Next finite terrain-only derivative: currentpublic53 +rocky338→54; exclude pendinglocalcollapse321 descriptor/payload and food099 recipe/payload, keep oldchunks; isolatedfreshbuild/sourcebinding/relevantactualscene/currentpairedrollback before separatepromotion. LOCAL339 full55 is not a public artifact. Collapse331 continuousnaturalness/finalintake, movement213 owner/worldcontact/familyscale, complete roster/directions/actions/leaders, allbuildingstates/mixedGate/shoreforest/fullmaps/performance/defaultart/externalWAN/finaltwomodesbothmaps remain INCOMPLETE. No exhaustedorders/replay or model fallback.
+
+
+## 32. Hiện hành342–347 — public terrain54
+
+342 derivative từ committed341/5b0ba1c giữ exactpublic53 và adds rocky338→54; removes ONLY pendinglocalcollapse321 descriptor/payload + food099 recipe/payload. No other source/art substitution. ONEfreshisolatedbuild,4strictpublicationcontracts và all54encoded/RGBA pinsPASS, retainsoldchunks.343 ONEactualFirefox bothmap baseline309/candidate342 ordinaryMove/arrival/PauseResume/Stop/menu0/54+12/errorsnetworkHTTP0/exactresponsepins/closedguards; rootstaticnormalzoomintake accepts narrowcomposition.344 archives SAMEsealedbuild (no rebuild) candidate289ce999…3282 bytes/modes/datafilterextractverified; currentpairedrollback309 fromprivate32562c1e535…da10b3 reverified currentfront/runtime/policy/archiveentries/bytes/modes/extractedtree.
+
+345 ONEatomicclientexchange ownednextROOT755, public207files/fort54/index-Cz2oiMds.js3495642c…695af/manifest77363dfc…cf6da/rock9bd74bcf…45bcf normalTLSexact.346 ONEactualHTTPSChromeCoast+FirefoxDelta ordinaryUI Move/arrival/PausefreezeResume/Stop/menu0,54art12portraits/errorsnetworkHTTP0/8responsepins/321099requests0. Allownedhandlesclosed; publicbackend immutable230/PID3229 untouched, rooms0. CURRENTrollback309 front205+paired230, old205tree rds-public345-next-dist retained. Prior341entrypoints exactGit5b0ba1c archived beforeupdate.
+
+Next348 PLANONLY/UNCALLED: wholeGate completedidle mask5 axisX +X/+Y, pinned originals245/248 and whole2D guides. NEWfinite structuralguide order before ONEbuiltinwholeillustration/0retry; ensure addedbranch/postjoint keeps genuinepassage, not blindlycopyproceduralcenter-spur. ActualUI joins/pick/friendlytransit/defaultzoomscene beforeinstall/separatepromotion. No characterfanout/finalallGateclaim. Public345 bareURLfallback and no pending321/099; local34055/collapse331continuousintake/movement213owner/worldcontact/fullroster/directions/actions/12leaders/allbuildingstates/maps/performance/defaultacceptedart/externaldesktopWAN/finalbothmapsbothmodes remain INCOMPLETE.

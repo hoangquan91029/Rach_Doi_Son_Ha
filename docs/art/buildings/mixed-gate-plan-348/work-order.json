@@ -1,0 +1,40 @@
+{
+  "order": 348,
+  "status": "PLAN_ONLY_UNCALLED",
+  "next": "New finite complete2D structural guide work order before ONE builtin illustration call",
+  "candidate": "Gate completedidle mask5 axisX (+X/+Y visible sameowner neighbors)",
+  "sourcePins": {
+    "docs/art/buildings/gate-x-idle-245/raw.png": "8a44cd1880468345e556f6aefaa02930be2072e9bfeed52ff8311f51ba635e98",
+    "docs/art/buildings/gate-x-idle-245/guide.svg": "1d1010db450725e73de68273a88041a0e9769e290bb432047369cea4099c3f89",
+    "docs/art/buildings/wall-corner5-idle-248/raw.png": "6669a4209aec90aba2ea1f2318d931b00d30161df58caac69f8536944d25a971",
+    "docs/art/buildings/wall-corner5-idle-248/guide.svg": "ba65d2b21e13da080ba49420488227f209a7dbdc409a8ce10afc2d4758eab545",
+    "client/fortification-topology.js": "80049674ec4907421f22498615c3ed09131d12476609d5d568caf67f0e822f18",
+    "client/fortification-art.js": "17455ed06ef4ff03246a37773edc6de841f0ed7d69a7ebe5184028b1affa3ff2"
+  },
+  "camera": {
+    "projection": "dimetric2to1",
+    "wholeCanvas": 1254,
+    "fixedPivot": [
+      627,
+      900
+    ],
+    "runtimeCell": 128,
+    "logicalRender": 42.3225
+  },
+  "guideConstraints": [
+    "Preserve original245 gate identity and genuinely transparent passage, whole new geometry guide only; no source PNG assembly/mirror/rotation/fit.",
+    "Use existingX footprint endpoints227700 and10271100, plusY connection endpoint2271100; review branch/post junction so the added wall does not paint over the opening. Do not assume procedural center-spur is a finished physical gate.",
+    "Final art whole original2D illustration, no guide surfaces/cutout/pixelsplice/3D."
+  ],
+  "imageCalls": 0,
+  "maxFutureBuiltinCalls": 1,
+  "retries": 0,
+  "trial": "New isolated exactmask5 candidate, ONE actualownlivingvillager +X/+Y wall/Gate construction/completion, actualvisiblemask5/pick/friendlytransit/PauseResume/Stop/menu. Use existingarrival.7/ownership/liveness/terrainguards; no commands/facing/state injection.",
+  "public": "Separate only after actual gameplay-size scene intake; unsupportedmasks/states retain fallback.",
+  "notAuthorizedByPlan": [
+    "blind imagecall before complete guide",
+    "allmixedGate claims",
+    "character motion fanout",
+    "productionmutation duringtests"
+  ]
+}
