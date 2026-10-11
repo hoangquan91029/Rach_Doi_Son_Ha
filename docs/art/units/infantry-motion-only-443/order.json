@@ -1,0 +1,22 @@
+{
+  "status": "FINITE_ONE_CALL_OPEN",
+  "headBefore": "ed6142e59c6a836868e6e74d78e84004cc305fcd",
+  "profile": "gpt-6.1-sol/low",
+  "callCap": 1,
+  "retryCap": 0,
+  "inputs": [
+    {
+      "path": "docs/art/units/sources/infantry-neutral-se-refine-01-imagegen-raw.png",
+      "sha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+      "role": "SOLE_CANONICAL_PRIMARY_EDIT_TARGET"
+    }
+  ],
+  "prompt": "Edit this exact original illustrated soldier into just the next small walking DOWN pose F1. Keep the same person and original illustration: mature mustached face, brass helmet/red cloth, green LAMELLAR armor/red lacing/gold medallion, cream shirt, red sash, dark trousers, cream wraps, brown boots. No redesign or new armor.\nMake only a modest motion change: the leading shield-side boot on screen RIGHT draws slightly back under the body carrying weight; the trailing sword-side heel on screen LEFT lifts slightly before passing; knees flex mildly, body settles about2px at256px canvas scale. Preserve head, upper-body silhouette, sword LEFT/far hand and shield RIGHT/near hand almost exactly. Same camera, body volume, composition and1254square whole canvas with fixed pivot653,1057. Do not regenerate a different unit or repaint its identity. Entire coherent2D soldier, genuine transparent alpha, no scene/shadow/text. No3D/cutouts/part textures/mirror/splice/warp/per-frame fitting. Sole supplied image is PRIMARY EDIT TARGET and identity authority.",
+  "scope": "SOURCE_CANDIDATE_ONLY; root selection before more frames",
+  "pivot": [
+    653,
+    1057
+  ],
+  "canvas": 1254,
+  "logicalSize": 42
+}

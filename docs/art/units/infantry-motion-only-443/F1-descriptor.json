@@ -1,0 +1,59 @@
+{
+  "id": "infantry-motion-only-F1-443",
+  "family": "unit.infantry.pilot443",
+  "kind": "unit",
+  "state": "walk",
+  "direction": 0,
+  "source": {
+    "path": "docs/art/units/infantry-motion-only-443/F1-working-256.png",
+    "sha256": "506186f130150c210931c992865d7d99f8bca0a8fc3122df2d50a1b16aeb0db4",
+    "rgbaSha256": "2d3c9616da54e7803be3a1e94931964d5492f9b2861e64aa3622224d99d89082",
+    "width": 256,
+    "height": 256
+  },
+  "runtime": {
+    "path": "docs/art/units/infantry-motion-only-443/F1-runtime-128.png",
+    "sha256": "5833739114faafb8d1176ada937f027d38c32a07af9c6f42560c64eaee1db796",
+    "rgbaSha256": "d55573f5dd17a7387c6cb91b1c43b22ac0daf5b7228f9b4cbf843a65a67df136",
+    "width": 128,
+    "height": 128,
+    "derivation": {
+      "method": "resize",
+      "filter": "lanczos",
+      "sourceSha256": "506186f130150c210931c992865d7d99f8bca0a8fc3122df2d50a1b16aeb0db4"
+    }
+  },
+  "cell": {
+    "width": 128,
+    "height": 128
+  },
+  "pivot": {
+    "x": 133.30781499202553,
+    "y": 215.78309409888357,
+    "space": "source"
+  },
+  "render": {
+    "width": 42,
+    "height": 42
+  },
+  "alphaPolicy": "transparent",
+  "contactShadow": {
+    "mode": "separate",
+    "assetId": "unit-contact-shadow"
+  },
+  "candidate": true,
+  "review": {
+    "status": "CANDIDATE"
+  },
+  "frames": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 75
+    }
+  ],
+  "loop": false,
+  "notes": "ONE builtin whole-frame canonical-only motion edit; fixed wholecanvas Lanczos only; no installation or qualified motion."
+}

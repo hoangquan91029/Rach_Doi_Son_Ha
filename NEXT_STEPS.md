@@ -1,9 +1,9 @@
-# Bước tiếp theo — checkpoint442 / public433
+# Bước tiếp theo — checkpoint443 / public433
 
 **Full goal INCOMPLETE.**
 
 1. Xe lương có ngựa kéo đã lên web; scale42/defaultzoom1.68/horse84 đã cài và được thử Chrome/Firefox. Không chạy lại420–434.
-2. HUMAN bác bỏ các frame biến thành unit khác. Dừng guide-only→newcharacter→appearance repaint; 429/436/439/440 held, không làm continuity reference. NEXT443 finite ONE adjacent-pose edit từ ORIGINAL infantry canonical, chỉ chuyển động nhỏ, giữ nguyên identity/camera/equipment. Chưa gọi443; không lặp blind F4.
+2. HUMAN bác bỏ các frame biến thành unit khác. Dừng guide-only→newcharacter→appearance repaint; 429/436/439/440 held, không làm continuity reference. 443 đã thực hiện đúng ONE builtin edit/0 retries từ original infantry084845…0517f, không dùng guide hoặc unit ngoại lai. Root xem một comparison70px và giữ HOLD_VISIBLE_COMPOSITION_DRIFT: kiếm vươn xa hơn và silhouette thân/gear đổi quá nhiều. Output chỉ giữ custody, NOT_INSTALLED/NOT_QUALIFIED; toàn bộ handles CLOSED. Không thử lại prompt này hoặc mở keys/inbetweens/fanout. Các bước tiếp theo phải giải quyết khả năng giữ đúng mẫu gốc trước khi sản xuất animation; không xem lời hứa trong prompt là bảo đảm của công cụ.
 3. Sau khi pose thật giữ được người gốc: hoàn thiện keys/inbetweens rồi một loop gameplay-size và actualtravel/stop. Không nhận guide/static/PASS technical là animation hoàn chỉnh. Wagon441 guides history only; animation tương lai sửa trực tiếp415 whole horse+cart, không tạo ngựa/xe mới.
 4. Full goal INCOMPLETE: realistic fullroster/eightdirections/actions/12leaders, buildingstates/mapcomposition, densecombat+roomsperformance, accepted defaultfullart/externaldesktopWAN/finalpublicbothmapsbothmodes. Movement213/216/233 owner/worldcontact/runtime/fanout remains open; wood032/iron141 accepted only shownD1, food101 separate. Initial residence scene unit/building projected overlap remains a composition/depth concern; scale intake does not close it. Naval and10leader identities still missing. Automation311 missing native schedule/human choice pending; no recreated or ACTIVE5h claim. Goal stays active.
 

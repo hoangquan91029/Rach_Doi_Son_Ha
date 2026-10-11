@@ -82,3 +82,10 @@ Full project **INCOMPLETE**. Public260 optionalfort43 hiện hành, chưa chứa
 ## 9. Human correction442 — chỉ chuyển động, không đổi unit
 
 Latest human: “chỉ cần tạo chuyển động … tạo ra thành unit mới khác hoàn toàn”. Các outputinfantry429/436/439/440 không được chọn; guide-only generation và repaintunitngoại lai dừng. Sourceoriginal infantry084845…0517f là identity và edit target trực tiếp. Nextfinite443 một adjacentpose nhỏ với canonical là soleimage, giữcamera/body/face/equipment/materials; không calllại exhaustedF4 method. Nếu model vẫn đổiidentity thì giữheld, không ship hoặc fanout. 427/438/441 guides chỉ authoringhistory. Scale442/public433 đã42+world1.68, không dùng old89 numbers đểinstallaction mới. Támframe action và actualworldtravel vẫn cần hoàn thiện; một key đúng không đóngmotiongate.
+
+
+## 10. Terminal443 — motion-only trial still held
+
+443 đã thực hiện đúng ONE builtin edit/0 retries từ original infantry084845…0517f, không dùng guide hoặc unit ngoại lai. Root xem một comparison70px và giữ HOLD_VISIBLE_COMPOSITION_DRIFT: kiếm vươn xa hơn và silhouette thân/gear đổi quá nhiều. Output chỉ giữ custody, NOT_INSTALLED/NOT_QUALIFIED; toàn bộ handles CLOSED. Không thử lại prompt này hoặc mở keys/inbetweens/fanout. Các bước tiếp theo phải giải quyết khả năng giữ đúng mẫu gốc trước khi sản xuất animation; không xem lời hứa trong prompt là bảo đảm của công cụ.
+
+Original face/helmet/armor/body/equipment and their ownership remain the fixed design. Pose is the only requested variable. A missing action remains unfinished; it must not be filled with a redesigned actor or a falsely labelled static pose. Existing runtime clocks and export framework are reusable, but do not solve image identity preservation. No runtime/public changes in443.
