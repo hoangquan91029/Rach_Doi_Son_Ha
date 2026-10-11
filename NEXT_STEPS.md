@@ -12,3 +12,5 @@
 8. **Full goal còn thiếu:** realisticroster/8directions/actions/12leaders/familyscale, allbuildingstates/maps/shoreforestmountain/denseperformance/defaultacceptedart/externaldesktopWAN/finalpublicbothmapsSingle+1v1. Registry không thay artwork. Tiếp tục concrete unfinished work theo docs/PROJECT_PLAN.md, giữ gates trung thực.
 
 ExactSol6.1Low workers, parallel ownership, built-in wholepure2D only; no API/key/CLI/quota/3D/cutout/limbtextures/pixelsplice/warp/mirror/perframefit. Isolatedliteralcwd/absoluteoutDir/exactViteconfig; retention/preflight BEFORE seal/browser. Serialize canonical mutations against live guards. New promotion là task riêng exactsource/build/scene/rollback/rooms0/nextcloneROOT755; không kicks/service restarts/currentdist permission repair. Five-hour quiet continuation giữ nguyên.
+
+Automation actual state: native update không tìm thấy lịch cũ; chưa recreate, human choice đang pending. Không tự suy deleted lịch là lỗi hoặc xác nhận5h scheduler hoạt động. Receipt docs/checkpoints/checkpoint311-automation-status.json.

@@ -21,3 +21,5 @@ Original302/304 publication scope HOLD giữ nguyên: retained foodrecipe khi pa
 Movement213/216/233 vẫn candidate technicalclosure: naturalness/owner/worldfootcontact/bodyvolume/bakedshadow/familyscale/runtimeinstall/fanout OPEN; pending195 khôngapprove213. Owner032wood/141iron chỉ shownD1; food101 riêng; loadedgoods ordinarywalk. Không blindcalls/repeatedmicroaudits/Stop replay.
 
 Next W01 controlled whole2D standaloneWall collapse pilot trên291 deathAPI;292 mới ONEstaticwreck. MixedGate, animatedconstruction/collapse/hit/attack/allbuildingstates, realisticfullroster/8directions/actions/12leaders/maps/densebrowser+roomsperformance/defaultacceptedart/externaldesktopWAN/finalpublictwomodesbothmaps còn thiếu. Five-hour quiet continuation giữ nguyên.
+
+Lịch tự tiếp tục: native update báo automation cũ không tồn tại. Chưa tạo lại vì có thể đã được người dùng xóa; câu hỏi chọn tạo lại mỗi5giờ hay chạy theo yêu cầu đang chờ trả lời. Xem [receipt](docs/checkpoints/checkpoint311-automation-status.json). Chính sách thông báo ít vẫn giữ, không coi lịch đang ACTIVE khi chưa xác nhận.
