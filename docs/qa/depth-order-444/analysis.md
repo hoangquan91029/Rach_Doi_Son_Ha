@@ -1,0 +1,15 @@
+# Read-only depth investigation444
+
+No concrete incorrect ordinary initial-state draw or entity-pick ordering was established. Do not change footprint depth or hide rear units on the strength of visual overlap alone.
+
+Current renderer.js:46 sorts merged entities/props/resources ascending x+y. visual-picking.js:13 sorts living visible entities descending x+y, then descending id. Source raster drawing and picking share the same projected anchor, source-fixed pivot and render dimensions; picking uses alpha>=80.
+
+Actual createMatch(delta,seed1) -> view(player0) gives residence1 at(9.5,23.5), depth33. Rear villagers7–12 have depths28.4–30.2 and projected anchors relative to residence from(0,-54) to(48.6,-45.9). Every one is painted before residence1; residence is tested before every one by picker. Alpha sampling of real residence-512.webp and villager-idle-D00.webp confirms opaque intersections where residence must win, and substantial uncovered unit pixels. This is static source geometry evidence, not a browser scene claim. Legs above the roof can remain where the residence PNG has no opaque coverage; moving the residence later cannot fix that because it already paints later.
+
+Residence1 and granary2 have exact equal depth33. Villager7 and villager11 tie at29. Existing simulation add() assigns increasing ids and pushes, removal uses order-preserving filter, view() loops and pushes in the same order. Therefore stable render ties are ascending ids and reverse picker ties are descending ids for actual snapshots. No observed tie mismatch. A hypothetical reordered snapshot would expose divergent tie contracts, but that is not a confirmed current simulation defect.
+
+Smallest defensive shared ordering proposal, if wanted: one helper compareEntities(a,b)=(a.x+a.y)-(b.x+b.y)||a.id-b.id; render entity ties use it and picker negates it. Retain existing world depth and existing entity/prop/resource equal-depth kind order. This removes implicit insertion-order dependency with O(NlogN) sorting and O(1) comparison cost. A stronger visual contract is to retain the exact sorted entity order from each rendered frame and scan it backwards for picks, invalidating when the displayed state changes. That avoids a second sort on each click and reflects what was actually drawn. Do not add all-pairs footprint constraints or topological sorting without a demonstrated counterexample; dense scenes would add pair work/cycles and incorrectly generalized footprint depth may hurt walls/large objects.
+
+Nonentity props/resources and corpses are drawn but omitted by picker. Whether they should block selection is a product policy question, not evidence of this residence ordering bug. Current alpha threshold intentionally ignores weak fringes. No proposed change to that policy.
+
+Limits: current HEAD source/static geometry only; no browser/build/tests, no public deployment verification, no dense-scene performance benchmark. No runtime/canonical/source edits. Static alpha observations do not establish ideal artwork alignment or physically correct all-direction occlusion.

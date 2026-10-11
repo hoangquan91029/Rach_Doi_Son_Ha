@@ -1,0 +1,162 @@
+{
+  "order": 445,
+  "profile": "gpt-6.1-sol/low",
+  "status": "CLOSED_NO_USABLE_STANDALONE_NAVAL_ORIGINAL_FOUND",
+  "head": "80fb4c284f63c94662627197a5d4afee92777ba7",
+  "scope": "Read-only current local public manifests, original170 catalog, units source/custody inventory, art filename search including ignored files, renderer fallback. No live network or gameplay coverage claim.",
+  "currentManifests": [
+    {
+      "path": "public/assets/art-v1/camp-148-manifest.json",
+      "sha256": "c0fb6d96289194a3cae28505f5a030804da8133e674035a0c5651e0ff5b13af7",
+      "assetCount": 26,
+      "navalUnitEntries": [],
+      "shipyardEntries": []
+    },
+    {
+      "path": "public/assets/art-v1/food-099-manifest.json",
+      "sha256": "bbd8a144bc4bbf008cbf46838c65ca2cdcaebef5182aef291fa7c2d4e0f9c549",
+      "assetCount": 18,
+      "navalUnitEntries": [],
+      "shipyardEntries": []
+    },
+    {
+      "path": "public/assets/art-v1/fort-202-manifest.json",
+      "sha256": "42425c68d448f89047ea15fe6e108ec2b25393d34312ae0adb37ff1d9be282fa",
+      "assetCount": 50,
+      "navalUnitEntries": [],
+      "shipyardEntries": [
+        "shipyard-idle-164"
+      ]
+    },
+    {
+      "path": "public/assets/art-v1/gather-026-manifest.json",
+      "sha256": "b988356d60a75b7e28042791627bafb381f15f473e1d9ef67d6874fe61b8e52b",
+      "assetCount": 17,
+      "navalUnitEntries": [],
+      "shipyardEntries": []
+    },
+    {
+      "path": "public/assets/art-v1/iron-137-manifest.json",
+      "sha256": "4aab2d852311c9614a399a71017c37ca985cd8da456cf59cc2d4e82eb875d951",
+      "assetCount": 24,
+      "navalUnitEntries": [],
+      "shipyardEntries": []
+    },
+    {
+      "path": "public/assets/art-v1/manifest.json",
+      "sha256": "01745b177cb45e37fca762fabd5b13bc98093feafcd44daddb91c48918f82dc0",
+      "assetCount": 14,
+      "navalUnitEntries": [],
+      "shipyardEntries": []
+    },
+    {
+      "path": "public/assets/art-v1/shipyard-165-manifest.json",
+      "sha256": "172b4b63961829230720ebf346dc6baf9c49f042659fa413357711beca65e621",
+      "assetCount": 27,
+      "navalUnitEntries": [],
+      "shipyardEntries": [
+        "shipyard-idle-164"
+      ]
+    },
+    {
+      "path": "public/assets/art-v1/stone-361-manifest.json",
+      "sha256": "a028bc8c2e100d28b5bf3c572038117c09cefacc1c9ce4d8ccbf14fec3bca627",
+      "assetCount": 16,
+      "navalUnitEntries": [],
+      "shipyardEntries": []
+    },
+    {
+      "path": "public/assets/art-v1/terrain-113-manifest.json",
+      "sha256": "b8d9c3e6c0ab5e924091c9592aa8a841abac1a61ae4d45839bc81e340de49fd4",
+      "assetCount": 19,
+      "navalUnitEntries": [],
+      "shipyardEntries": []
+    },
+    {
+      "path": "public/assets/art-v1/terrain-115-manifest.json",
+      "sha256": "143d37b91fc680b2665852ae652d8797ba0322cb8a068e182ab6b4bb05f03026",
+      "assetCount": 20,
+      "navalUnitEntries": [],
+      "shipyardEntries": []
+    },
+    {
+      "path": "public/assets/art-v1/terrain-120-manifest.json",
+      "sha256": "efab9eb6fedc553e3b6f285d14e1ae2fbc87ad54a101828211ff5cfcc8efa26e",
+      "assetCount": 21,
+      "navalUnitEntries": [],
+      "shipyardEntries": []
+    },
+    {
+      "path": "public/assets/art-v1/terrain-122-manifest.json",
+      "sha256": "93bb8ec2a417e6bb0c70a2911b8d894fa4edc4f187e40a2a8336d4b228165ffb",
+      "assetCount": 22,
+      "navalUnitEntries": [],
+      "shipyardEntries": []
+    },
+    {
+      "path": "public/assets/art-v1/terrain-127-manifest.json",
+      "sha256": "bad2ae9f133315f3dd264ca3d1e662f6fd4799464995f9bb53f7e5d9c111bcab",
+      "assetCount": 23,
+      "navalUnitEntries": [],
+      "shipyardEntries": []
+    },
+    {
+      "path": "public/assets/art-v1/walk-014-manifest.json",
+      "sha256": "d0a2f7e9f5509a6613d488ab98cf76ac1bc567003831bea41621d6507219b626",
+      "assetCount": 16,
+      "navalUnitEntries": [],
+      "shipyardEntries": []
+    },
+    {
+      "path": "public/assets/art-v1/workshop-144-manifest.json",
+      "sha256": "1443f7004ed8ea27ab77406c0c804a804866b6798d7d49fa8a75c9a8d5910148",
+      "assetCount": 25,
+      "navalUnitEntries": [],
+      "shipyardEntries": []
+    }
+  ],
+  "catalog170NavalEntries": [],
+  "unitRasterFileCount": 64,
+  "sourceInventory": "unit-raster-inventory.json",
+  "sourcePins": {
+    "client/renderer.js": "9b0a6f56ab7b15761942188afc35ac027403f5e6e6b2c1b6d1a0101dae03a3d8",
+    "client/raster-slice.js": "2283a7a99ad3be9474254a06fe7b6b20e667dd903bd48ba8cfd708288c98b981",
+    "client/art-routes.js": "391dfa62aed1aefb559463b6da789f714521aa075742afbea222bb99f7daf9b4",
+    "scripts/art-catalog.mjs": "6d3cb50a30928ced1aacafcd34f2259e6e39d428fe67c17339ca9853b93b253b",
+    "docs/qa/art-catalog-170/catalog.json": "a5c4fb52a1b6ac31d138b5805e0042c56825b793822e17d12eb44718d28b53dd",
+    "docs/qa/art-catalog-170/coverage-summary.txt": "d428273ad0e9f4ae0fda716fafe53c3029c57b7cc86c43b1d9eb7e0cc3f562bd",
+    "docs/art/units/GENERATION_LOG.md": "00b2147ab43ff10a537c3894642b64cb4493ba43d176dc8cfea6d37b54ef219d",
+    "docs/art/pipeline/shipyard-idle-164/raw.png": "cd462aee9a832ea6437a28605ba60119c0133e588078ce8b862c5016b99dbd25",
+    "docs/art/pipeline/shipyard-idle-164/working.png": "f966bf728f0b6057d6ea57afd4eaf83690b5618529623cd3fab5a4ea12591855",
+    "docs/art/pipeline/shipyard-idle-164/receipt.json": "1ad9603ec4c0746a3eb182da34c2dff0664958fec54268d071dcfdc149258c99",
+    "public/assets/art-v1/shipyard-165/idle.png": "e895835dbf0e10189c1e16216c8b40bcf1839ccd4d9b07db291d6b87c8f47dba"
+  },
+  "coverage": {
+    "transport": {
+      "authoredStatesDirectionsFrames": 0,
+      "standaloneWholeOriginalFound": false
+    },
+    "warship": {
+      "authoredStatesDirectionsFrames": 0,
+      "standaloneWholeOriginalFound": false
+    },
+    "currentRenderer": "Procedural drawShip and drawShipWreck fallback in client/renderer.js. Current default route fort/world true has no naval unit entries.",
+    "historical170": "Original catalog/coverage lists transport0/32 and warship0/40; historical matrix only, current no-entry finding verified directly from current manifests."
+  },
+  "sourceCaveats": [
+    "Shipyard164 working image inspected: complete building scene contains unfinished boat hull on scaffolding; it is not a separate whole naval unit identity or a ship action asset.",
+    "No extraction/cutout/source-pixel splice of the embedded hull is authorized.",
+    "Naval UI screenshots and preserved procedural rendering are gameplay evidence, not original whole illustrated ship art.",
+    "Search covers repository art and ignored unit custody paths; opaque external/generated-store filenames were not treated as a known ship identity. No arbitrary external assets used."
+  ],
+  "calls": {
+    "image": 0,
+    "edit": 0,
+    "guide": 0,
+    "build": 0,
+    "browser": 0
+  },
+  "handles": "CLOSED",
+  "canonicalPublicRuntimeRootdocsHEADWrites": false,
+  "nextTask": "Root must resolve a genuine whole original ship identity or explicit identity-creation scope before naval illustration production. No existing usable ship can honestly be installed from this intake."
+}

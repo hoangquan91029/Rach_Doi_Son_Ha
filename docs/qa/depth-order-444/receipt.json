@@ -1,0 +1,18 @@
+{
+  "status": "READ_ONLY_CLOSED_NO_INITIAL_ORDER_BUG_ESTABLISHED",
+  "headBefore": "80fb4c284f63c94662627197a5d4afee92777ba7",
+  "headAfter": "80fb4c284f63c94662627197a5d4afee92777ba7",
+  "guards": "CLOSED",
+  "imageCalls": 0,
+  "browsers": 0,
+  "builds": 0,
+  "tests": 0,
+  "sourceMutations": 0,
+  "ownedOutputs": [
+    "analysis.md",
+    "receipt.json",
+    "initial-geometry.json",
+    "alpha-geometry-evidence.json"
+  ],
+  "result": "Expected rear-unit occlusion and real source alpha uncovered pixels; actual sim ordering agrees with picker ties. Optional defensive shared comparator only, no footprint redesign justified."
+}

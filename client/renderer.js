@@ -1,4 +1,5 @@
 import {artRoute} from './art-routes.js';
+import {cameraGroundCorners} from './camera-viewport.js';
 import {drawWoodGate} from './wood-gate.js';
 import {drawStoneFortification} from './stone-fortification.js';
 import {buildFortificationTopology} from './fortification-topology.js';
@@ -249,6 +250,6 @@ export class IsoRenderer{
   }
   c.restore();
  }
- drawMinimap(s,player){const c=this.mctx,cv=this.minimap,w=cv.width,h=cv.height;c.clearRect(0,0,w,h);c.fillStyle='#263d32';c.fillRect(0,0,w,h);const sx=w/s.map.width,sy=h/s.map.height,fog=s.fog;for(let y=0;y<s.map.height;y++)for(let x=0;x<s.map.width;x++){const i=y*s.map.width+x,t=s.map.tiles[i];c.fillStyle=palette[t]||palette.plain;c.fillRect(x*sx,y*sy,Math.ceil(sx),Math.ceil(sy));if(fog?.explored&&!fog.explored[i]){c.fillStyle='#091b17';c.fillRect(x*sx,y*sy,Math.ceil(sx),Math.ceil(sy));}else if(fog?.visible&&!fog.visible[i]){c.fillStyle='rgba(9,24,20,.56)';c.fillRect(x*sx,y*sy,Math.ceil(sx),Math.ceil(sy));}}for(const e of s.entities||[]){if(e.embarked||!this.visible(e,s,player))continue;c.fillStyle=e.owner===player?'#ead276':'#da765f';c.fillRect(e.x*sx-1,e.y*sy-1,e.kind==='building'?4:2,e.kind==='building'?4:2);}c.strokeStyle='#ead28d';c.lineWidth=1;c.strokeRect((this.camera.x-7)*sx,(this.camera.y-5)*sy,14*sx,10*sy);}
+ drawMinimap(s,player){const c=this.mctx,cv=this.minimap,w=cv.width,h=cv.height;c.clearRect(0,0,w,h);c.fillStyle='#263d32';c.fillRect(0,0,w,h);const sx=w/s.map.width,sy=h/s.map.height,fog=s.fog;for(let y=0;y<s.map.height;y++)for(let x=0;x<s.map.width;x++){const i=y*s.map.width+x,t=s.map.tiles[i];c.fillStyle=palette[t]||palette.plain;c.fillRect(x*sx,y*sy,Math.ceil(sx),Math.ceil(sy));if(fog?.explored&&!fog.explored[i]){c.fillStyle='#091b17';c.fillRect(x*sx,y*sy,Math.ceil(sx),Math.ceil(sy));}else if(fog?.visible&&!fog.visible[i]){c.fillStyle='rgba(9,24,20,.56)';c.fillRect(x*sx,y*sy,Math.ceil(sx),Math.ceil(sy));}}for(const e of s.entities||[]){if(e.embarked||!this.visible(e,s,player))continue;c.fillStyle=e.owner===player?'#ead276':'#da765f';c.fillRect(e.x*sx-1,e.y*sy-1,e.kind==='building'?4:2,e.kind==='building'?4:2);}c.strokeStyle='#ead28d';c.lineWidth=1;const corners=cameraGroundCorners(this.camera,this.canvas.width/this.dpr,this.canvas.height/this.dpr);c.beginPath();corners.forEach((p,i)=>{if(i===0)c.moveTo(p.x*sx,p.y*sy);else c.lineTo(p.x*sx,p.y*sy);});c.closePath();c.stroke();}
 }
 function xy(e){return{x:e.x,y:e.y}}

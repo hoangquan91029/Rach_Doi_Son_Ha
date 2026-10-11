@@ -1,4 +1,6 @@
-# Project status — checkpoint443 / public433
+# Project status — checkpoint446 / public433
+
+446 local candidate sửa minimap: outline theo footprint camera thật, zoom/viewport CSS/pan; 2 projection contracts và SAMEsealed209build ordinaryChromium446B setup/zoom/resize/pan/menu PASS50ready/errorsnetworkHTTP0. Harness446A wrong BrowserContext viewport API được giữ, sửa riêng harness. Artwork/sim/source-pixels/public433/immutable230 giữ nguyên; code chưa public. 444 không tìm thấy lỗi thứ tự draw/pick ở initial scene nên không đổi depthsort. 445 không có whole original naval unit asset để khôi phục (shipyard embedded hull không được cắt ra). Animation443 vẫn HOLD, identity preservation chưa giải quyết; không gọi lại exhausted method/fanout.
 
 443 đã thực hiện đúng ONE builtin edit/0 retries từ original infantry084845…0517f, không dùng guide hoặc unit ngoại lai. Root xem một comparison70px và giữ HOLD_VISIBLE_COMPOSITION_DRIFT: kiếm vươn xa hơn và silhouette thân/gear đổi quá nhiều. Output chỉ giữ custody, NOT_INSTALLED/NOT_QUALIFIED; toàn bộ handles CLOSED. Không thử lại prompt này hoặc mở keys/inbetweens/fanout. Các bước tiếp theo phải giải quyết khả năng giữ đúng mẫu gốc trước khi sản xuất animation; không xem lời hứa trong prompt là bảo đảm của công cụ.
 
