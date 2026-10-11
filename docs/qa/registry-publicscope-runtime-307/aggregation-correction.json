@@ -1,0 +1,17 @@
+{
+  "status": "ADDITIVE_CORRECTION_FROM_RETAINED_EVIDENCE_NO_BROWSER",
+  "originalReceiptSHA256": "b29547ebb40364dd9b93cfaf395ba89255509021bad4c058a0c316dcbc6979ab",
+  "browserReceiptSHA256": "540dc1b8f904d33c0d854120d4aaed85b101a8e9490a775f9495a7bb8ac9de35",
+  "rootCause": "not any(food in path) overbroad across entire food+fort session; approved world-resource115 PNG from fort53 legitimately requested",
+  "excludedPayloadPaths": [
+    "/assets/art-v1/food-099-manifest.json",
+    "/assets/art-v1/food-099/atlas.png"
+  ],
+  "actualExcludedPayloadRequests": [],
+  "actualFoodNamedPaths": [
+    "/assets/art-v1/food-resource-115/food.png"
+  ],
+  "actualFoodRouteEnabled": false,
+  "priorFalseFieldPreserved": "receipt.original-aggregation.json",
+  "browserOrTestCalls": 0
+}

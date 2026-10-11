@@ -52,3 +52,5 @@ Nguồn current: walk014/D1, wood026/owner032, iron136/owner141; food101 local p
 Cập nhật162/166: rough cycle tám whole drawings đã có, capability1call/0retry kết thúc. Body improved nhưng phaseHELD/notselectedF02. Đọc [follow-up](movement-research-161/FOLLOWUP_162_166.md), không tự tạo F6/inbetween hoặc gọi lại cùng method. Không dùng flat rough thành final unit.
 
 169 revisedwholeguides và172onecall exhausted còn giữ phaseHELD.173 không chuẩn bị autoexecution; referencepixels chưaviewed, khôngposeauthority.170 compiler sinh wholeassetmanifest/dependencies, không manufacture missingframes; registry bảo toàn9previewroutes. Dynamicbanks và qualifiedmotionproduction vẫn chưa hoàn tất.
+
+Cập nhật311: exact296 declarative registry đã cài302 và public309 trong real `sampleEntity`, hỗ trợ eligibility9nonleader types +12character IDs, giữ exactstate/direction/identity/fallback. Existing THD idleD0 đã chạy ở King/General qua303/307/310. Registry không tạo thêm sprite hoặc qualify movement213/fanout; artwork còn thiếu vẫn proceduralfallback. Xem NEXT_STEPS hiện hành; các giới hạn source/motion ở trên giữ nguyên.

@@ -1,0 +1,506 @@
+{
+  "status": "PASS303_ACTUAL_KING_GENERAL_THD_IDLE_D0_PICK_PAUSE_RESUME_STOP_MENU",
+  "method": "ONE303 ordinary Chrome offlineDelta actual KingTHD and GeneralTHD initial idleD0 registry scene; no movement pilot, injected entities/commands/state/facing",
+  "errors": [],
+  "networkFailures": [],
+  "httpFailures": [],
+  "responses": {
+    "index.html": {
+      "url": "http://127.0.0.1:37867/?art=fort",
+      "status": 200,
+      "sha256": "2a4c7d5596698da97921a573b6ddbf1bc3982adb1b43790eda25b31372112584"
+    },
+    "assets/index-BPw3ZQys.js": {
+      "url": "http://127.0.0.1:37867/assets/index-BPw3ZQys.js",
+      "status": 200,
+      "sha256": "093b0b70cdc1de5948ee7d46857a9f48501cfec1e04818325982cb062ca607fe"
+    },
+    "assets/art-v1/fort-202-manifest.json": {
+      "url": "http://127.0.0.1:37867/assets/art-v1/fort-202-manifest.json",
+      "status": 200,
+      "sha256": "f835505f6fd76c51264af43061d0cc1e109c0c82e0a186a2073d1c0c12ac671f"
+    },
+    "assets/art-v1/runtime/tran-hung-dao-idle-D00.webp": {
+      "url": "http://127.0.0.1:37867/assets/art-v1/runtime/tran-hung-dao-idle-D00.webp",
+      "status": 200,
+      "sha256": "f1f6b64cd4241120c821f392937dcef2fdaa02df18de0f234291589cd847b04c"
+    }
+  },
+  "launch": {
+    "tick": 3,
+    "art": {
+      "enabled": true,
+      "phase": "CANDIDATE",
+      "quality": "PLACEHOLDER_ONLY",
+      "groundDraws": 3072,
+      "propDraws": 50,
+      "entityDraws": 75,
+      "walkDraws": 0,
+      "idleDraws": 0,
+      "lastWalk": null,
+      "gatherDraws": 0,
+      "lastGather": null,
+      "missing": [
+        {
+          "key": "spearman:idle:0",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "wagon:idle:0",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        }
+      ],
+      "pipeline": {
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 53,
+        "ready": 53,
+        "approved": 0,
+        "candidates": 53,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 18449920,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 43,
+        "encodedReady": 0,
+        "retainedEncodedBytes": 4134214,
+        "encodedBudgetBytes": 67108864,
+        "selectedDeclared": 53,
+        "failures": []
+      },
+      "hillDraws": 0,
+      "foodResourceDraws": 10,
+      "ironResourceDraws": 5
+    },
+    "artBank": {
+      "phase": "match",
+      "epoch": 2,
+      "encodedBytes": 4134214,
+      "encodedBudgetBytes": 67108864,
+      "activeIds": [
+        "grass",
+        "water",
+        "forest",
+        "residence",
+        "infantry-idle-D00",
+        "cavalry-idle-D00",
+        "villager-idle-D00",
+        "tran-hung-dao-idle-D00",
+        "unit-contact-shadow",
+        "ford",
+        "shore",
+        "forest-bamboo",
+        "forest-palm",
+        "granary",
+        "villager-walk-south-014",
+        "villager-idle-south-014",
+        "villager-gather-wood-south-024",
+        "mountain-outcrop-108",
+        "grassy-hill-111",
+        "food-resource-114",
+        "iron-resource-119",
+        "barracks-idle-121",
+        "supply-depot-idle-126",
+        "villager-gather-iron-south-136",
+        "artillery-workshop-idle-140",
+        "cavalry-camp-idle-147",
+        "shipyard-idle-164",
+        "fort-idle-198",
+        "wall-whole-234-mask0",
+        "wall-whole-234-mask1",
+        "wall-whole-234-mask2",
+        "wall-whole-234-mask3",
+        "wall-whole-239-mask4",
+        "wall-whole-239-mask8",
+        "wall-whole-239-mask12",
+        "gate-whole-245-X-mask0",
+        "gate-whole-245-X-mask1",
+        "gate-whole-245-X-mask2",
+        "gate-whole-245-X-mask3",
+        "wall-whole-248-mask5",
+        "gate-whole-252-Y-mask4",
+        "gate-whole-252-Y-mask8",
+        "gate-whole-252-Y-mask12",
+        "wall-whole-263-mask6",
+        "wall-whole-264-mask9",
+        "wall-whole-265-mask10",
+        "wall-whole-construction-278-mask0",
+        "wall-whole-274-mask7",
+        "wall-whole-275-mask11",
+        "wall-whole-280-mask13",
+        "wall-whole-282-mask14",
+        "wall-whole-288-mask15",
+        "wall-whole-wreck-key-292-mask0"
+      ],
+      "scope": {
+        "map": "delta",
+        "roster": [
+          "villager",
+          "king",
+          "general",
+          "infantry",
+          "spearman",
+          "firearm",
+          "cavalry",
+          "artillery",
+          "wagon",
+          "warship",
+          "transport"
+        ],
+        "buildings": [
+          "residence",
+          "barracks",
+          "cavalryCamp",
+          "artilleryWorkshop",
+          "shipyard",
+          "fort",
+          "wall",
+          "gate",
+          "depot",
+          "granary"
+        ],
+        "leaders": [
+          "tran_hung_dao",
+          "le_thanh_tong",
+          "ly_thuong_kiet"
+        ]
+      }
+    },
+    "bootUi": {
+      "declared": 12,
+      "ready": 12,
+      "failures": [],
+      "fontWarnings": []
+    }
+  },
+  "initialLeaders": [
+    {
+      "tick": 3,
+      "entity": {
+        "id": 5,
+        "owner": 0,
+        "type": "king",
+        "kind": "unit",
+        "x": 7.5,
+        "y": 25,
+        "hp": 320,
+        "maxHp": 320,
+        "food": 65,
+        "foodMax": 65,
+        "morale": 80,
+        "state": "idle",
+        "dir": 0,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "character": "tran_hung_dao",
+        "abilityCooldown": 0,
+        "resuppliedTick": 3,
+        "starving": 0,
+        "order": null
+      }
+    },
+    {
+      "tick": 3,
+      "entity": {
+        "id": 6,
+        "owner": 0,
+        "type": "general",
+        "kind": "unit",
+        "x": 11,
+        "y": 25.5,
+        "hp": 360,
+        "maxHp": 360,
+        "food": 65,
+        "foodMax": 65,
+        "morale": 80,
+        "state": "idle",
+        "dir": 0,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "character": "tran_hung_dao",
+        "abilityCooldown": 0,
+        "resuppliedTick": 3,
+        "starving": 0,
+        "order": null
+      }
+    }
+  ],
+  "leaders": [
+    {
+      "tick": 18,
+      "entity": {
+        "id": 5,
+        "owner": 0,
+        "type": "king",
+        "kind": "unit",
+        "x": 7.5,
+        "y": 25,
+        "hp": 320,
+        "maxHp": 320,
+        "food": 65,
+        "foodMax": 65,
+        "morale": 80,
+        "state": "idle",
+        "dir": 0,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "character": "tran_hung_dao",
+        "abilityCooldown": 0,
+        "resuppliedTick": 18,
+        "starving": 0,
+        "order": null
+      },
+      "selection": [
+        5
+      ],
+      "point": {
+        "x": 640,
+        "y": 384
+      },
+      "camera": {
+        "x": 7.498654513888889,
+        "y": 24.998578752790177,
+        "zoom": 1.08
+      },
+      "inferredAssetId": "tran-hung-dao-idle-D00",
+      "inference": "Actual own living visible idleD0 entity plus sealed sampleEntity registry and unique exactTHD idleD0 descriptor; served PNG pinned; renderer identity inferred, no injected renderer diagnostic"
+    },
+    {
+      "tick": 31,
+      "entity": {
+        "id": 6,
+        "owner": 0,
+        "type": "general",
+        "kind": "unit",
+        "x": 11,
+        "y": 25.5,
+        "hp": 360,
+        "maxHp": 360,
+        "food": 65,
+        "foodMax": 65,
+        "morale": 80,
+        "state": "idle",
+        "dir": 0,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "character": "tran_hung_dao",
+        "abilityCooldown": 0,
+        "resuppliedTick": 31,
+        "starving": 0,
+        "order": null
+      },
+      "selection": [
+        6
+      ],
+      "point": {
+        "x": 640,
+        "y": 384
+      },
+      "camera": {
+        "x": 10.997352430555555,
+        "y": 25.5,
+        "zoom": 1.08
+      },
+      "inferredAssetId": "tran-hung-dao-idle-D00",
+      "inference": "Actual own living visible idleD0 entity plus sealed sampleEntity registry and unique exactTHD idleD0 descriptor; served PNG pinned; renderer identity inferred, no injected renderer diagnostic"
+    }
+  ],
+  "pause": {
+    "tick": 40,
+    "leaders": [
+      {
+        "id": 5,
+        "owner": 0,
+        "type": "king",
+        "kind": "unit",
+        "x": 7.5,
+        "y": 25,
+        "hp": 320,
+        "maxHp": 320,
+        "food": 65,
+        "foodMax": 65,
+        "morale": 80,
+        "state": "idle",
+        "dir": 0,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "character": "tran_hung_dao",
+        "abilityCooldown": 0,
+        "resuppliedTick": 40,
+        "starving": 0,
+        "order": null
+      },
+      {
+        "id": 6,
+        "owner": 0,
+        "type": "general",
+        "kind": "unit",
+        "x": 11,
+        "y": 25.5,
+        "hp": 360,
+        "maxHp": 360,
+        "food": 65,
+        "foodMax": 65,
+        "morale": 80,
+        "state": "idle",
+        "dir": 0,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "character": "tran_hung_dao",
+        "abilityCooldown": 0,
+        "resuppliedTick": 40,
+        "starving": 0,
+        "order": null
+      }
+    ]
+  },
+  "resume": {
+    "tick": 41
+  },
+  "stops": [
+    {
+      "tick": 55,
+      "entity": {
+        "id": 5,
+        "owner": 0,
+        "type": "king",
+        "kind": "unit",
+        "x": 7.5,
+        "y": 25,
+        "hp": 320,
+        "maxHp": 320,
+        "food": 65,
+        "foodMax": 65,
+        "morale": 80,
+        "state": "idle",
+        "dir": 0,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "character": "tran_hung_dao",
+        "abilityCooldown": 0,
+        "resuppliedTick": 55,
+        "starving": 0,
+        "order": null
+      },
+      "selection": [
+        5
+      ]
+    },
+    {
+      "tick": 66,
+      "entity": {
+        "id": 6,
+        "owner": 0,
+        "type": "general",
+        "kind": "unit",
+        "x": 11,
+        "y": 25.5,
+        "hp": 360,
+        "maxHp": 360,
+        "food": 65,
+        "foodMax": 65,
+        "morale": 80,
+        "state": "idle",
+        "dir": 0,
+        "cooldown": 0,
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "character": "tran_hung_dao",
+        "abilityCooldown": 0,
+        "resuppliedTick": 66,
+        "starving": 0,
+        "order": null
+      },
+      "selection": [
+        6
+      ]
+    }
+  ],
+  "menu": {
+    "art": {
+      "status": "PLACEHOLDER_ONLY",
+      "manifest": "not-loaded",
+      "declared": 0,
+      "ready": 0,
+      "approved": 0,
+      "candidates": 0,
+      "failed": 0,
+      "skipped": 0,
+      "fallbacks": 0,
+      "decodedBudgetBytes": 134217728,
+      "retainedDecodedBytes": 0,
+      "reservedDecodedBytes": 0,
+      "uniqueDecodedImages": 0,
+      "encodedReady": 0,
+      "retainedEncodedBytes": 0,
+      "encodedBudgetBytes": 67108864,
+      "selectedDeclared": 0,
+      "failures": []
+    },
+    "artBank": {
+      "phase": "menu",
+      "epoch": 3,
+      "encodedBytes": 4134214,
+      "encodedBudgetBytes": 67108864,
+      "activeIds": [],
+      "scope": null
+    }
+  },
+  "clipPath": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/roster-runtime-303/clips/page@fe219454c0f8258ed25f6002831fd5a0.webm",
+  "cleanup": {
+    "rooms": 0,
+    "serverListening": false,
+    "browserClosed": true
+  }
+}
