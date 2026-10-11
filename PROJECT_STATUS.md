@@ -1,27 +1,23 @@
-# Trạng thái — checkpoint384 / local382 / public382
+# Trạng thái — checkpoint395 / public393
 
-**INCOMPLETE.** [Full plan](docs/PROJECT_PLAN.md) · [Next](NEXT_STEPS.md) · [Movement](docs/art/pipeline/MOVEMENT_PRODUCTION_PLAN_20261010.md). Các entrypoint cũ từ e042 giữ byte nguyên tại docs/checkpoints/checkpoint384-entrypoints/.
+**INCOMPLETE.** [Full plan](docs/PROJECT_PLAN.md) · [Next](NEXT_STEPS.md) · [Movement](docs/art/pipeline/MOVEMENT_PRODUCTION_PLAN_20261010.md). Prior384 entrypoints bytecustody: docs/checkpoints/checkpoint395-entrypoints/.
 
-## Tường đá, cổng gỗ — đã có trên link mặc định
+## Ảnh cũ đã được khôi phục trên link mặc định
 
-[Game HTTPS](https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/) hiện dùng ba mẫu tường đá chân thực X362/Y364/corner365 và cổng gỗ original X245/Y252. Bảy descriptor cổng dùng hai ảnh gốc, không quay/lật/ghép ảnh; unsupported wall states dùng nativeSTONE, unsupported gate states dùng nativeWOOD. Cây, resourcewood, nhà, economy/simulation không đổi. Static construction373 mask0 cũng được phát hành; không phải animatedconstruction hay allbuilding states.
+[Game HTTPS](https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/) hiện nạp toàn bộ45assetfort/worldtrue ngay trên bareURL. Lỗi trước đây là defaultstone chỉ bật tường/cổng vàworldfalse; thêm exactstate/direction-onlyselector làm unit mấtảnh khiđổiaction/hướng.387 sửa default;388 giữsameidentity staticillustration khi thiếuaction/direction, taggedSTATIC_ILLUSTRATION, exactD1animations giữ ưu tiên. Không đổientitydir/state/coordinate/sim/ảnh/pivot/scale; không suystaticdrawthànhmotionapproval. Tường đáX/Y/corner và cổng gỗ giữ nguyên.
 
-[379 actual candidate](docs/qa/wood-gate-restoration-379/receipt.json) kiểm tra Chrome cả hai trục: xây wall-gate-wall/chọn đúng cổng/dân làng đi qua/PauseResumeStop/menu,16assets/12portraits/zeroerrors. Root brief gameplay-size scenes chấp nhận narrow completedidle joins. [Local382](docs/qa/wood-gate-install-382/installation.json) cài exact10common files;13 focusedcanonicaltestsPASS. LOCAL food recipe/payload vẫn giữ riêng; PUBLIC food099 excluded. Original raw, oldwall/gate art, failures và leadership custody giữ nguyên.
+[389 build](docs/qa/default-full-art-runtime-389/seal.json) freshisolated/explicitpreflight/10focusedcontractsPASS;201files/index-8telBS7h.js SHA352a4aa4ae36f2a6d44c5d073298a4056438a050414f9703e045d5317c39de61. Initial389HOLD doQA sai kỳ vọngcavalryđầutrận, originalguard/screenshot retained. [392 correctedactualChrome](docs/qa/default-full-art-runtime-392/receipt.json) SAMEsealed389/45ready/draworld/sourceidentity/ordinarynonD1staticMove/arrival/PauseResumeStop/menu0/errors0/CLOSEDpreservation, khôngfakecavalry.
 
-[Public382 release](docs/qa/wall-stone-gate-wood-release-382/receipt.json) phát hành đúng frozen379/381200files/default16/fort45: index-DLWMD8Y7.js SHA773152beb73437dc5ea8f8addf383701f5289b10ad9550cede28c2012464a729, defaultmanifest a028bc8c2e100d28b5bf3c572038117c09cefacc1c9ce4d8ccbf14fec3bca627, fortmanifest4485087fb50a6633c943fbbba96f6cced6a009e70f68451b97f6ecdff385a048. ONEatomic frontendexchange/8normalTLS pins exact;oldJS/currentCSS/unrelatedpayload retained. No build/backend restart during publication.
+[393 release](docs/qa/default-full-art-release-393/receipt.json): SAMEsealed389/391201files, ONEfrontendatomicexchange/14exactHTTPS pins. [394 publicFirefox](docs/qa/default-full-art-public-394/receipt.json): bareURL45ready12portraits/52pins/16PNGresponses/ground3072/props110/entities154draws/nonD1staticMove/Stop/PauseResume/menu0/errorsnetworkHTTP0/rooms0/CLOSEDpreservation. [Rootbriefscene](docs/qa/default-full-art-public-394/root-intake.json) chấp nhậnảnhcũterrain/buildings/units hiển thị lại, không phải fullroster/finalmotionapproval.
 
-[383 actual publicFirefox](docs/qa/wood-gate-public-383/receipt.json): bareURL Xwoodgate+stonewalls masks1/3/2,2579actualrasterdraws/16ready/12portraits/exactopaquegatepick/ordinaryfriendlytransit/enginearrival<=.7/PausefreezeResume/Stop/menu0/23responsepins/errorsnetworkHTTP0. [Root brief scene intake](docs/qa/wood-gate-public-383/root-intake.json) accepts these completedidle joins.422preservationpins PASS; all ownedhandles closed/productionrooms0. Y source and actual joins qualified379Chrome. No fullmatch/WAN/allstate/defaultfullart inference.
+## Coverage còn thiếu
+
+Initialscene còn thiếuactor **Trần Nhân Tông, lính giáo, xe tiếp tế**. Manifest hiện chỉ có actorvillager/infantry/cavalry/TrầnHưngĐạo; cácleaderkhác/firearms/artillery/navalactors vàstates/directions cònthiếu. Nativefallback còn hiện ở những thiếucoverage này là unfinisheddefect, không đồhọafinalaccepted. Ưu tiên bổ sungactorwhole2D trước khi làmthêmwallstates. Leadershipsourceoriginals và8viewreferences giữởleadership/Gitignoredcustody; TNNsource cópaintedbackground/neutralcamera, khôngnhầm vớireadyalphaRTSsprite. Không giảidentityhoặc dùngportraitrectanglelàworldunit.
+
+Fullgoal cònOPEN: fullroster/8directions/actions/12leaders/familyscale/animatedbuildingstates/mapcomposition/densecombat+roomsperf/externaldesktopWAN/finalpublicbothmodesbothmaps. Movement213owner-naturalness/worldcontact/runtime/fanout chưaapprove; wood032/iron141 chỉshownD1, food101riêng, goodsreturnwalk.350idleinitialroomproof không phải densecombat/WAN. Không lặpbaseline/auditmicroanatomy/blindimagecall.
 
 ## Backend và rollback
 
-Backend230 giữ nguyên immutable releases/230/runtime230, sim29233a059ec084bc8577d20a1bccfd28ddc3024b9cb9bf4d5598c22f220f748b/server4e6a7e82f02d1d856f4ea788863c4836930bc00250be6a5b020ba2bdd8884198/ws8.22/node/PID3229/unit/env/Funnel unchanged. Canonical source edits không thay running backend.
+Immutable230/runtime230/PID3229/sim29233a…748b/server4e6a…4198/ws8.22/node/unit/env/Funnel unchanged; no restart. Currentpairedrollback382front+230backend private390/rollback382.tar.gz SHA897f3408b0b442e369deafc1c3fe9a0f8a7ddf7dda85f59ecc695d260c626295; old382tree rds-public391-next-dist retained. Prior380rollback367/353rollback345/failed377/history notcurrenttarget. All387–394ownedhandlesCLOSED, productionintentionallyruns. LOCALfood099recipe/payloadpreserved; PUBLICexcluded. No newimagecalls.
 
-Rollback hiện hành là367frontend +230backend: private380/rollback367.tar.gz SHA71653bffd2497de433fcebae4faf9a9e325d0f69fd0f80a671b04642e90f091e, old367tree rds-public382-next-dist.380/381 safeentries/exactbytes/modes verified. Prior353rollback345 và failed377partials chỉ là history; không dùng làm currenttarget.378 wrongatlas/preflight failure/unqualified build và382 preexchange allowlist failure retained; corrections applied before qualified379build/382exchange.
-
-## Phần chưa hoàn tất
-
-Stone wall hit/destruction, construction motion và các trạng thái khác; wooden gate unsupported states; fullroster/eightdirections/actions/12leaders/familyscale/mapcomposition/densecombat+roomsperformance/defaultacceptedfullart/externaldesktopWAN/finalpublicbothmapsbothmodes vẫn OPEN.350 samehost idle room baseline không phải densecombat/WAN; không có căn cứ tối ưu suy đoán hoặc lặp baseline.
-
-Movement213/216/233 owner naturalness/worldcontact/bodyvolume/shadow/familyscale/runtime/fanout OPEN; pending195 không approve213. Owner032wood/141iron chỉ shownD1, food101 riêng, loadedgoods ordinarywalk. Terrain340/registry302 retained. Strict purewhole2D/builtinimagegen/Sol6.1Low remains; no API/key/CLI/quota/3D/limbtextures/cutouts/pixelsplices/warp/mirror/perframefit. Không repeated motion audits/blind calls.
-
-Automation311 native schedule missing/human choice pending; không claim5hACTIVE/recreation. Full goal active; quiet continuation intent preserved.
+StrictSol6.1Low/builtinwhole2D/preservecustody/noquota/noAPI/no3D remains. Latesthuman ban roughgeometry overrides prioroptional-onlyartpolicy. Automation311native schedulemissing/humanchoicepending; noACTIVE5hclaim. Fullgoalactive/quietcontinuationintentpreserved.

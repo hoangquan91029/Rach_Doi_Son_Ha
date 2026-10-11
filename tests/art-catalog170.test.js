@@ -17,8 +17,9 @@ for(const [route,recipe] of Object.entries(ART_ROUTES))test(`legacy ${route} com
  assert.deepEqual(compiled.bank.assetIds,original.assets.map(a=>a.id));
  assert.equal(JSON.stringify(compileManifest(catalog,{route})),JSON.stringify(compiled));
 });
-test('shared route registry keeps default and unknown disabled and exact world opt-ins',()=>{
- for(const search of ['', '?art=unknown','?art=constructor','?art=__proto__'])assert.deepEqual(artRoute(search),{name:new URLSearchParams(search).get('art'),enabled:false,manifestUrl:ART_ROUTES.pilot.manifestUrl,world:false});
+test('shared route registry restores illustrated default and keeps unknown disabled and exact world opt-ins',()=>{
+ assert.deepEqual(artRoute(''),{name:'fort',enabled:true,...ART_ROUTES.fort});
+ for(const search of ['?art=unknown','?art=constructor','?art=__proto__'])assert.deepEqual(artRoute(search),{name:new URLSearchParams(search).get('art'),enabled:false,manifestUrl:ART_ROUTES.pilot.manifestUrl,world:false});
  for(const [route,recipe] of Object.entries(ART_ROUTES)){const selected=artRoute('?art='+route);assert.equal(selected.enabled,true);assert.equal(selected.manifestUrl,recipe.manifestUrl);assert.equal(selected.world,['terrain','iron','workshop','camp','shipyard','fort'].includes(route));}
 });
 test('scoped bank retains world, desired building/body/portrait and separate-shadow dependency only',()=>{

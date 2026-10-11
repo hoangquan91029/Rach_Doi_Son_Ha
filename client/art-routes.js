@@ -1,4 +1,4 @@
-/** BareURL selects only realistic stone fortifications. Unknown explicit art routes stay disabled. */
+/** BareURL selects existing illustrated fort/world art. Unknown explicit art routes stay disabled. */
 export const ART_ROUTES = Object.freeze({
  stone:Object.freeze({manifestUrl:'/assets/art-v1/stone-361-manifest.json',world:false}),
  pilot:Object.freeze({manifestUrl:'/assets/art-v1/manifest.json',world:false}),
@@ -13,7 +13,7 @@ export const ART_ROUTES = Object.freeze({
  fort:Object.freeze({manifestUrl:'/assets/art-v1/fort-202-manifest.json',world:true})
 });
 export function artRoute(search=globalThis.location?.search||''){
- const params=new URLSearchParams(search),name=params.has('art')?params.get('art'):'stone';
+ const params=new URLSearchParams(search),name=params.has('art')?params.get('art'):'fort';
  const recipe=Object.hasOwn(ART_ROUTES,name)?ART_ROUTES[name]:null;
  return {name,enabled:Boolean(recipe),manifestUrl:recipe?.manifestUrl||ART_ROUTES.pilot.manifestUrl,world:recipe?.world||false};
 }

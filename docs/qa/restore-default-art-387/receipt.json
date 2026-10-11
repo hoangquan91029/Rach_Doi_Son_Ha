@@ -1,0 +1,37 @@
+{
+  "order": 387,
+  "scope": "default route restoration only",
+  "baseHead": "2b16979393716bc056e205f8fc50eaea07db0593",
+  "before": {
+    "name": "stone",
+    "world": false,
+    "assets": 16
+  },
+  "after": {
+    "name": "fort",
+    "world": true,
+    "assets": 45,
+    "manifestUrl": "/assets/art-v1/fort-202-manifest.json"
+  },
+  "unchanged": [
+    "all explicit named routes including stone and local food",
+    "unknown explicit routes disabled",
+    "manifest/assets",
+    "stone wall material and wood gate material",
+    "simulation/backend"
+  ],
+  "files": {
+    "client/art-routes.js": "391dfa62aed1aefb559463b6da789f714521aa075742afbea222bb99f7daf9b4",
+    "tests/art-default387.test.js": "e6ddfaf2d0c8ac78dd3fa3d24eb6083060c9b64c44a46ba043f3b58b670afdb6",
+    "tests/stone-fortification369.test.js": "e7bce841754cbff19e2b1c4de6d1b99fb6acc37048617e7f0f45526996e7a1eb",
+    "tests/art-catalog170.test.js": "dd240871f012970692d36b0c2861ae0af0a6e7aeb3a988ff840bc6b90df9b548"
+  },
+  "manifestSHA256": "4485087fb50a6633c943fbbba96f6cced6a009e70f68451b97f6ecdff385a048",
+  "tests": {
+    "focusedContracts": 7,
+    "sharedRouteRegistry": 1,
+    "failed": 0
+  },
+  "buildBrowserPublication": "not performed; root separate stage",
+  "status": "CLOSED_SOURCE_ONLY"
+}

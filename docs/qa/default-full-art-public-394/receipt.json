@@ -1,0 +1,167 @@
+{
+  "order": 394,
+  "status": "PASS394_NORMAL_TLS_FIREFOX_EXISTING_WORLD45_NON_D1_STATIC_TRAVEL_PAUSE_RESUME_STOP_MENU_CLOSED",
+  "normalTLS": true,
+  "bareURL": true,
+  "bundleSHA256": "352a4aa4ae36f2a6d44c5d073298a4056438a050414f9703e045d5317c39de61",
+  "readyAssets": 45,
+  "portraits": 12,
+  "responsePins": 52,
+  "pngResponses": 16,
+  "actualRasterDraws": {
+    "groundDraws": 3072,
+    "propDraws": 110,
+    "entityDraws": 154,
+    "foodResourceDraws": 22,
+    "ironResourceDraws": 11
+  },
+  "travel": {
+    "tick": 80,
+    "entity": {
+      "id": 7,
+      "owner": 0,
+      "type": "villager",
+      "kind": "unit",
+      "x": 7.395,
+      "y": 21.5,
+      "hp": 65,
+      "maxHp": 65,
+      "food": 40,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "walk",
+      "dir": 4,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "resuppliedTick": 80,
+      "starving": 0,
+      "lastMovedTick": 80,
+      "order": {
+        "type": "move",
+        "x": 10.484499314128943,
+        "y": 21.497158534195574
+      }
+    },
+    "actualRendererDiagnostic": {
+      "entityId": 7,
+      "assetId": "villager-idle-D00",
+      "requestedState": "walk",
+      "requestedDirection": 4,
+      "illustrationDirection": 0,
+      "presentation": "STATIC_ILLUSTRATION"
+    },
+    "staticIllustrationDraws": 3,
+    "walkDraws": 0
+  },
+  "arrival": {
+    "tick": 133,
+    "entity": {
+      "id": 7,
+      "owner": 0,
+      "type": "villager",
+      "kind": "unit",
+      "x": 9.989524638009037,
+      "y": 21.002183858075668,
+      "hp": 65,
+      "maxHp": 65,
+      "food": 40,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "idle",
+      "dir": 1,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "resuppliedTick": 133,
+      "starving": 0,
+      "lastMovedTick": 132,
+      "order": null
+    },
+    "distance": 0.699999900000001
+  },
+  "stop": {
+    "tick": 138,
+    "entity": {
+      "id": 7,
+      "owner": 0,
+      "type": "villager",
+      "kind": "unit",
+      "x": 9.989524638009037,
+      "y": 21.002183858075668,
+      "hp": 65,
+      "maxHp": 65,
+      "food": 40,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "idle",
+      "dir": 1,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "resuppliedTick": 138,
+      "starving": 0,
+      "lastMovedTick": 132,
+      "order": null
+    }
+  },
+  "pauseTick": 87,
+  "resumeTick": 89,
+  "menu": {
+    "art": {
+      "status": "PLACEHOLDER_ONLY",
+      "manifest": "not-loaded",
+      "declared": 0,
+      "ready": 0,
+      "approved": 0,
+      "candidates": 0,
+      "failed": 0,
+      "skipped": 0,
+      "fallbacks": 0,
+      "decodedBudgetBytes": 134217728,
+      "retainedDecodedBytes": 0,
+      "reservedDecodedBytes": 0,
+      "uniqueDecodedImages": 0,
+      "encodedReady": 0,
+      "retainedEncodedBytes": 0,
+      "encodedBudgetBytes": 67108864,
+      "selectedDeclared": 0,
+      "failures": []
+    },
+    "bank": {
+      "phase": "menu",
+      "epoch": 3,
+      "encodedBytes": 4510284,
+      "encodedBudgetBytes": 67108864,
+      "activeIds": [],
+      "scope": null
+    }
+  },
+  "initialMissingIdentities": [
+    "tran_nhan_tong:idle:0",
+    "spearman:idle:0",
+    "wagon:idle:0"
+  ],
+  "cavalryAbsentInitialOnlyLoadedAssetProof": true,
+  "preservationAllExact": true,
+  "cleanup": {
+    "browserClosed": true,
+    "ownedServerStarted": false
+  },
+  "allRosterAllActionsIncomplete": true
+}

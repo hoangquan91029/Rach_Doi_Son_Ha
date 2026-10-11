@@ -1,0 +1,94 @@
+{
+  "order": 392,
+  "status": "PASS392_CHROME_EXISTING_WORLD45_NON_D1_STATIC_TRAVEL_PAUSE_RESUME_STOP_MENU_CLOSED",
+  "sameSealedBuild389": "352a4aa4ae36f2a6d44c5d073298a4056438a050414f9703e045d5317c39de61",
+  "canonicalPublicBackendHEADPreserved": true,
+  "cleanup": {
+    "rooms": 0,
+    "serverListening": false,
+    "browserClosed": true
+  },
+  "liveMissingIdentities": [
+    "tran_nhan_tong:idle:0",
+    "spearman:idle:0",
+    "wagon:idle:0"
+  ],
+  "travel": {
+    "tick": 78,
+    "entity": {
+      "id": 7,
+      "owner": 0,
+      "type": "villager",
+      "kind": "unit",
+      "x": 7.5,
+      "y": 21.5,
+      "hp": 65,
+      "maxHp": 65,
+      "food": 40,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "walk",
+      "dir": 0,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "resuppliedTick": 78,
+      "starving": 0,
+      "order": {
+        "type": "move",
+        "x": 10.4998542440281,
+        "y": 21.500046006609544
+      }
+    },
+    "actualRendererDiagnostic": {
+      "entityId": 7,
+      "assetId": "villager-idle-D00",
+      "requestedState": "walk",
+      "requestedDirection": 0,
+      "illustrationDirection": 0,
+      "presentation": "STATIC_ILLUSTRATION"
+    },
+    "staticIllustrationDraws": 1,
+    "walkDraws": 0
+  },
+  "arrival": {
+    "tick": 132,
+    "entity": {
+      "id": 7,
+      "owner": 0,
+      "type": "villager",
+      "kind": "unit",
+      "x": 10.004879567908194,
+      "y": 21.00507133048964,
+      "hp": 65,
+      "maxHp": 65,
+      "food": 40,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "idle",
+      "dir": 1,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "resuppliedTick": 132,
+      "starving": 0,
+      "lastMovedTick": 131,
+      "order": null
+    },
+    "distance": 0.699999900000001
+  },
+  "actualPNGResponses": 16,
+  "responsePins": 51,
+  "cavalryAbsentNotLiveUnitProof": true,
+  "allRosterActionsIncomplete": true
+}

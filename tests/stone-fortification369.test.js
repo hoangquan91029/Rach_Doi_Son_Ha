@@ -5,12 +5,12 @@ import {artRoute} from '../client/art-routes.js';
 import {createRasterSlice} from '../client/raster-slice.js';
 import {buildFortificationTopology} from '../client/fortification-topology.js';
 const manifest=JSON.parse(readFileSync(new URL('../public/assets/art-v1/stone-361-manifest.json',import.meta.url)));
-test('bare game chooses stone walls without promoting world art; explicit unknown remains disabled',()=>{
- assert.equal(artRoute('').name,'stone');assert.equal(artRoute('').enabled,true);assert.equal(artRoute('').world,false);
+test('explicit stone route retains stone walls without world art; explicit unknown remains disabled',()=>{
+ assert.equal(artRoute('?art=stone').name,'stone');assert.equal(artRoute('?art=stone').enabled,true);assert.equal(artRoute('?art=stone').world,false);
  assert.equal(artRoute('?art=unknown').enabled,false);
 });
-test('real raster route draws all three stone shapes on bareURL, rather than loading unused PNGs',async()=>{
- const prior=globalThis.location;globalThis.location={search:''};
+test('real raster route draws all three stone shapes on explicit stone route, rather than loading unused PNGs',async()=>{
+ const prior=globalThis.location;globalThis.location={search:'?art=stone'};
  try{
   const r=createRasterSlice();r.pipeline.preload=async()=>{};Object.defineProperty(r.pipeline,'manifest',{value:manifest});
   r.pipeline.get=id=>{const a=manifest.assets.find(a=>a.id===id);return {image:{width:128,height:128},asset:a,contactShadow:a.contactShadow,render:a.render,pivot:{x:a.pivot.x/1254*128,y:a.pivot.y/1254*128},sw:128,sh:128,sx:0,sy:0};};

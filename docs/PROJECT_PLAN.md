@@ -1,5 +1,8 @@
 # Rạch Đôi Sơn Hà — kế hoạch thực thi sau audit 154
 
+> **Current395 / public393 — 11 October 2026:** user forbids coarse block graphics and requires earlier illustrations restored. BareURL now uses fullfort45/worldtrue; exact authored animations first, sameidentity living staticillustration when actions/directions missing (diagnosed, not motion acceptance).393 published SAMEsealed389201files;392Chrome/394publicFirefox realworld/ordinarytravel passed. Stonewalls/woodgates unchanged. Highest NEXT priority: missing initial actorTrầnNhânTông/spearman/wagon and remaining roster/leader art, before morewallstates. Originals preserved; no geometric placeholder production or fakeidentity. Currentpairedrollback382+230/private390. See AGENTS/status/next; older notices below are historical, not current orders.
+
+
 > **Current checkpoint384 / public382 (11 October 2026):** latest human requirement is STONE walls X/Y/corner and WOOD gates. Exact original245/252 gate art/native presentation restored; default16/fort45 public200files, actual379 Chrome bothaxes and383 HTTPSFirefox Xjoins/picks/transit/PauseResumeStop accepted narrowly. Static373 construction mask0 is public; allstates/animation/fullgoal remain incomplete. Current pairedrollback367+230 is private380, not345/353. Entry-point history archived at docs/checkpoints/checkpoint384-entrypoints/. See PROJECT_STATUS.md/AGENTS.md for current state; older execution sections below are history, not resumable work orders. No new woodwall production or expanded topology library.
 
 
