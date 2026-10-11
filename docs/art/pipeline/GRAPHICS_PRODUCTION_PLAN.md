@@ -56,3 +56,7 @@ Full master/web/historical/visual81–145 và later goal vẫn **INCOMPLETE**. K
 ## Local375 update
 
 ONE static whole construction373 source now connects to actualWall build→idle via374 ordinaryChrome trial; realdrawdelta14/frame0/PauseResume/opaque picks/Stop/menu0 andonebriefgame-size look.375 exactlocal default9/fort38+8focusedcontractsPASS; source/camera/family preserved. This is one state of the existingX shape, not a new topologyshape or animatedconstruction acceptance. Public367 stilldefault8/fort37 until separatecurrent367/230 source-bound data release. No newcharacterfanout or wood art.
+
+## Latesthuman correction: stonewalls / woodgates
+
+Chỉ tường thành thay bằng đá. Cổng dùng gỗ: restoreapproved245X/252Y wholeart/nativewoodgate/picking; không làm ảnh cổng mới hoặc nhiều variants. Các phần khác giữ nguyên. Prior367 stonegate fallback là trạng thái triển khai lịch sử, không còn mục tiêu.378 isolatedcandidate/actualUI trướclocalinstall/publicrelease;377 data-only preparation closed/superseded, unqualifiedbackup/failedmodecheck retained.

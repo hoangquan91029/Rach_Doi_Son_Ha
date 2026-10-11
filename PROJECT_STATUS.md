@@ -31,3 +31,7 @@ Backend230 remains immutable in ~/.local/share/rach-doi-son-ha/releases/230/runt
 Movement213/216/233 owner-naturalness/worldcontact/bodyvolume/shadow/familyscale/runtime/fanout OPEN; pending195 notapprove213. Owner032wood/141iron shownD1 accepted, food101 separate, loadedgoods ordinarywalk. Realisticfullroster/8directions/actions/12leaders/buildingstates/maps/densecombat+roomsperformance/accepteddefaultfullart/externaldesktopWAN/finalpublicbothmapsbothmodes remain INCOMPLETE. No blindartcalls/exhaustedorders/oldtests replay.
 
 Automation311 oldnative schedule missing, humanchoice pending; no recreated/ACTIVE5h claim. Fullgoal active, quietcontinuation intent preserved.
+
+## Latest scope correction — wallsSTONE / gatesWOOD
+
+Người dùng xác nhận chỉ thay tường gỗ bằng đá, cổng giữ gỗ; cây/resourcewood/nhà và các phần khác giữ nguyên. Currentpublic367 vẫn nativeSTONEgate, cần khôi phục gate245/252 artwork và nativewoodgate có custody cũ.378 sẽ cài candidate thực tế trước release; không tạo ảnh mới hoặc đưa tường gỗ trở lại.377 data-only preparation đã đóng/superseded, chưa gọi browser/build/image/publication; archiveextractmodefailure nguyên bản và partials retained/unqualified. Allpreservationpins/HEAD/backend intact.
