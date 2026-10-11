@@ -1,0 +1,440 @@
+{
+  "order": 433,
+  "status": "PROMOTED_PUBLIC433_SAME_SEALED426_BACKEND230_UNCHANGED",
+  "files": 208,
+  "assets": 50,
+  "default": "fort",
+  "world": true,
+  "candidateArchive432SHA256": "95dfd9a82eb66846b17fbd8a5924a56fc8dc665b03eeafe3d548075fe6bf1ed9",
+  "pairedRollback428SHA256": "fe37d0f1d339ae5ef3219ef7d2ddb68b5a2093f388a235b3f905e7e4600173fb",
+  "rollbackStatus": "VERIFIED423_PLUS230_READY",
+  "old423Tree": "/home/kieu-hoang-quan/Videos/rds-public432-next-dist",
+  "normalTLSPins": {
+    "assets/art-v1/artillery-workshop-144/idle.webp": {
+      "status": 200,
+      "sha256": "c433803486dcf9fc954569741fa6d98e6cb5c0acdc1e65a284cbbc186ac95430",
+      "bytes": 65618
+    },
+    "assets/art-v1/barracks-122/idle.webp": {
+      "status": 200,
+      "sha256": "c67536163440591c3675f4b72639c3c184e12eba6015d7a461bfde2953aec4c4",
+      "bytes": 55502
+    },
+    "assets/art-v1/camp-148-manifest.json": {
+      "status": 200,
+      "sha256": "c0fb6d96289194a3cae28505f5a030804da8133e674035a0c5651e0ff5b13af7",
+      "bytes": 75011
+    },
+    "assets/art-v1/cavalry-camp-148/idle.webp": {
+      "status": 200,
+      "sha256": "ca7633f8da8f9a4193fc05736a24192ce6f191a975a4986b79ef7ba3979deba2",
+      "bytes": 66462
+    },
+    "assets/art-v1/characters/tran-hung-dao-general-neutral-D00-screen-ESE.png": {
+      "status": 200,
+      "sha256": "fdb08322c2a0019e8f06c6a983099ee4cc64f682f6eb0e9bd84bf995f1001762",
+      "bytes": 683627
+    },
+    "assets/art-v1/characters/villager-neutral-D00-screen-ESE.png": {
+      "status": 200,
+      "sha256": "3a1515cb0065d91b8c12147a88f5c0b345b23a24076df84692b1c50e07edfbea",
+      "bytes": 486778
+    },
+    "assets/art-v1/effects/unit-contact-shadow.png": {
+      "status": 200,
+      "sha256": "1572b3fd6dd84d36a423adbdbfca1975a071b07bd0c4043edd55688db0ed99bd",
+      "bytes": 148666
+    },
+    "assets/art-v1/firepower-410/artillery409.png": {
+      "status": 200,
+      "sha256": "8703d237a0de79e0da69edbca52b01880ab369616f4d525eace7cabd4f2812b6",
+      "bytes": 17651
+    },
+    "assets/art-v1/firepower-410/firearm408.png": {
+      "status": 200,
+      "sha256": "748b340589830bba77ac51ac22fb077e517acff9889ff02060190cb85218d0a6",
+      "bytes": 15539
+    },
+    "assets/art-v1/food-resource-115/food.png": {
+      "status": 200,
+      "sha256": "bf51cb7b25174a866bd86506a94dede5348bd30f0eae5c4a365aec0ef7b68801",
+      "bytes": 17954
+    },
+    "assets/art-v1/fort-202-manifest.json": {
+      "status": 200,
+      "sha256": "42425c68d448f89047ea15fe6e108ec2b25393d34312ae0adb37ff1d9be282fa",
+      "bytes": 120636
+    },
+    "assets/art-v1/fort-idle-198-runtime.png": {
+      "status": 200,
+      "sha256": "8e4080facf13d77879d03e88336e8817c657d7a40b220e2b94a53e47a7bdf7b3",
+      "bytes": 83788
+    },
+    "assets/art-v1/fort-idle-198-runtime.webp": {
+      "status": 200,
+      "sha256": "4eeb89fa9edb880de8909cdc2ed653506334928b950c6f024d230a8555978ef9",
+      "bytes": 61496
+    },
+    "assets/art-v1/gate-245/idle.png": {
+      "status": 200,
+      "sha256": "89f18963d6d66452d584071e5158320c4168a6fb0d908c2ca06375759aaa6579",
+      "bytes": 14044
+    },
+    "assets/art-v1/gate-252/idle.png": {
+      "status": 200,
+      "sha256": "867ba2b2e8e15f4d1c2011defebeb2c5fd3cd704722ba10bf2a6b637b765fbd1",
+      "bytes": 16608
+    },
+    "assets/art-v1/gather-026/atlas.png": {
+      "status": 200,
+      "sha256": "5db6455a859a823658e2297544ca739dd466509856f8c2534644a05903cd1092",
+      "bytes": 123493
+    },
+    "assets/art-v1/gather-026-manifest.json": {
+      "status": 200,
+      "sha256": "b988356d60a75b7e28042791627bafb381f15f473e1d9ef67d6874fe61b8e52b",
+      "bytes": 50569
+    },
+    "assets/art-v1/hill-113/hill.png": {
+      "status": 200,
+      "sha256": "c4871587aaf5c68d111c492138ee1813771ec8246d02a326f4f62726a5dc3ed0",
+      "bytes": 10898
+    },
+    "assets/art-v1/initial-actors-403/king396.png": {
+      "status": 200,
+      "sha256": "c9f8e63899ffd7481b5bcae463741b369b52ced789139235c77cf58f6948c833",
+      "bytes": 12774
+    },
+    "assets/art-v1/initial-actors-403/spearman400.png": {
+      "status": 200,
+      "sha256": "323e16a80b8f503c1f9dcd63010b7c0614ac0ae7462dc498a12e332380dd0ac9",
+      "bytes": 13702
+    },
+    "assets/art-v1/initial-actors-403/wagon398.png": {
+      "status": 200,
+      "sha256": "6a1b99e46aa02db223dbd7cded3572141cd41e347118fbfeaaf4264d2143e640",
+      "bytes": 14531
+    },
+    "assets/art-v1/iron-137/atlas.png": {
+      "status": 200,
+      "sha256": "0f53648dd459d91a93b35dbf113c12fe753017b0971ec0ed8a55ad7647aab7cc",
+      "bytes": 131658
+    },
+    "assets/art-v1/iron-137-manifest.json": {
+      "status": 200,
+      "sha256": "4aab2d852311c9614a399a71017c37ca985cd8da456cf59cc2d4e82eb875d951",
+      "bytes": 71212
+    },
+    "assets/art-v1/iron-resource-120/iron.png": {
+      "status": 200,
+      "sha256": "1c2348701544814250d6da1bc8dc71eb236bcdaa2376a0aa584c4bde6aa312c0",
+      "bytes": 14447
+    },
+    "assets/art-v1/manifest.json": {
+      "status": 200,
+      "sha256": "01745b177cb45e37fca762fabd5b13bc98093feafcd44daddb91c48918f82dc0",
+      "bytes": 27812
+    },
+    "assets/art-v1/mountain-109/outcrop.png": {
+      "status": 200,
+      "sha256": "ac40ed9d28766e22aa561f00903dec3cd90308f110fb373f998acf551456ee2f",
+      "bytes": 23454
+    },
+    "assets/art-v1/residence/candidate-01.png": {
+      "status": 200,
+      "sha256": "4a3cff9b5aa5cefd027f94535e694e4950570eff3391d7d4762adceef4f768fa",
+      "bytes": 2210299
+    },
+    "assets/art-v1/residence/candidate-02.png": {
+      "status": 200,
+      "sha256": "f617c3540680cafff467358bab1adb01bf735417563f2cba86ab8af523b07dcc",
+      "bytes": 1927949
+    },
+    "assets/art-v1/rocky-ground-338/ground.webp": {
+      "status": 200,
+      "sha256": "9bd74bcf17b31a1de0668fed51ea6f99948b702ac4640e640c68c867d4e45bcf",
+      "bytes": 490462
+    },
+    "assets/art-v1/runtime/cavalry-idle-D00.webp": {
+      "status": 200,
+      "sha256": "8571f53f2260947f758e796806a8552b96ba221b004b47d4fcdb2c4c2d549709",
+      "bytes": 165364
+    },
+    "assets/art-v1/runtime/ford.webp": {
+      "status": 200,
+      "sha256": "6085208b5a3eaa97c8bb070da9faae489bf401b02e9da2213665e3925f567ad2",
+      "bytes": 403234
+    },
+    "assets/art-v1/runtime/forest-512.webp": {
+      "status": 200,
+      "sha256": "3b9b78cce37b89d73e55ca6da35e71e553723af397406fec6eafec9380232453",
+      "bytes": 310890
+    },
+    "assets/art-v1/runtime/forest-bamboo-512.webp": {
+      "status": 200,
+      "sha256": "aadff088ffc55a9cf12597ab501f6524405a7c00634ed3017637ac77539bdcb7",
+      "bytes": 190234
+    },
+    "assets/art-v1/runtime/forest-palm-512.webp": {
+      "status": 200,
+      "sha256": "ab540fc3ef9eec050518c0a74bf2ad94743ea2bf429f03bfe5b114d2fc3c239a",
+      "bytes": 142364
+    },
+    "assets/art-v1/runtime/forest.webp": {
+      "status": 200,
+      "sha256": "fc53047062715920790b109d741844e79a52a3e67e2ad655c3c894001993dd63",
+      "bytes": 1614060
+    },
+    "assets/art-v1/runtime/granary-idle.webp": {
+      "status": 200,
+      "sha256": "b663d289fe8fbe44e778b586d8e5aa85aa14401badafcfabe12b4aae963f4cca",
+      "bytes": 228484
+    },
+    "assets/art-v1/runtime/grass.webp": {
+      "status": 200,
+      "sha256": "8c7f2d6fd9da7ef7be4abad5f1b3e3d1b4968e9d30180c80bcde0dd97ae9bb5a",
+      "bytes": 380746
+    },
+    "assets/art-v1/runtime/infantry-idle-D00.webp": {
+      "status": 200,
+      "sha256": "de7a865b865ee6ac8b9ff7ba3df07825c01106e1e7ac691cb0924a187f145c51",
+      "bytes": 130582
+    },
+    "assets/art-v1/runtime/residence-512.webp": {
+      "status": 200,
+      "sha256": "225bbbae5f3f72695bbddf91270743b96f08488e09f23db2b5339ace78d091ea",
+      "bytes": 229022
+    },
+    "assets/art-v1/runtime/residence.webp": {
+      "status": 200,
+      "sha256": "28921964375e24793ec6785be94dc3ba33a9e76649d342b0f50523cafc968db5",
+      "bytes": 1250654
+    },
+    "assets/art-v1/runtime/shore-b.webp": {
+      "status": 200,
+      "sha256": "e8fd3695183ed37a726da4fa52ea57e026431ac99bb6e9508cbde85f364bd646",
+      "bytes": 361994
+    },
+    "assets/art-v1/runtime/tran-hung-dao-idle-D00.webp": {
+      "status": 200,
+      "sha256": "f1f6b64cd4241120c821f392937dcef2fdaa02df18de0f234291589cd847b04c",
+      "bytes": 156540
+    },
+    "assets/art-v1/runtime/unit-contact-shadow.webp": {
+      "status": 200,
+      "sha256": "274b81f26e3869e158b0ab1e5093cd8a899d5255f0239c25ec7ab07ec314a7ff",
+      "bytes": 5134
+    },
+    "assets/art-v1/runtime/villager-idle-D00.webp": {
+      "status": 200,
+      "sha256": "17aade7d14ecdc4655b5fd88778ed1a73540a2d2123fe18c9ac7482c1fc9762e",
+      "bytes": 109124
+    },
+    "assets/art-v1/runtime/water.webp": {
+      "status": 200,
+      "sha256": "3e790526414f3b6188f1438e8996da620bf940a42ae2ca257305430592cf204d",
+      "bytes": 224482
+    },
+    "assets/art-v1/shipyard-165/idle.png": {
+      "status": 200,
+      "sha256": "e895835dbf0e10189c1e16216c8b40bcf1839ccd4d9b07db291d6b87c8f47dba",
+      "bytes": 89900
+    },
+    "assets/art-v1/shipyard-165-manifest.json": {
+      "status": 200,
+      "sha256": "172b4b63961829230720ebf346dc6baf9c49f042659fa413357711beca65e621",
+      "bytes": 77295
+    },
+    "assets/art-v1/stone-361-manifest.json": {
+      "status": 200,
+      "sha256": "a028bc8c2e100d28b5bf3c572038117c09cefacc1c9ce4d8ccbf14fec3bca627",
+      "bytes": 29511
+    },
+    "assets/art-v1/stone-wall-X-362/runtime.png": {
+      "status": 200,
+      "sha256": "3be7413c376dfd334a7c81bad66de3ad847207636095222f630907ce6c856a06",
+      "bytes": 23115
+    },
+    "assets/art-v1/stone-wall-Y-364/runtime.png": {
+      "status": 200,
+      "sha256": "910bd2d840909bde361c92150c62eb0d02dbb6a60f19ed5cb40994a0a0bfb923",
+      "bytes": 21801
+    },
+    "assets/art-v1/stone-wall-construction-373/runtime.png": {
+      "status": 200,
+      "sha256": "8e928eb683effa0d10180cd0f6cc77664862fe950143964c98478c73bae8f9d6",
+      "bytes": 17416
+    },
+    "assets/art-v1/stone-wall-corner-365/runtime.png": {
+      "status": 200,
+      "sha256": "4f915623b9b60d592d5541aa69b30420ccb588c84b9a66edf62823a63f18ff87",
+      "bytes": 22050
+    },
+    "assets/art-v1/supply-depot-127/depot.webp": {
+      "status": 200,
+      "sha256": "fc6626d6b88cfaf3e240cdf6f2a0df33d4f34122133742c3f3c2e836cddda462",
+      "bytes": 55856
+    },
+    "assets/art-v1/terrain/ford-a.png": {
+      "status": 200,
+      "sha256": "34d9d5f50cf1840277cfd0bf67e9c4909425a3eb8ff9ec3c1032783169b6f2ae",
+      "bytes": 3214154
+    },
+    "assets/art-v1/terrain/forest-bamboo-a.png": {
+      "status": 200,
+      "sha256": "bb9b5088b37356b6c640fbc6d287460ac0f1605c41181fd77d17348b18f9b7c8",
+      "bytes": 1258913
+    },
+    "assets/art-v1/terrain/forest-palm-a.png": {
+      "status": 200,
+      "sha256": "1a249128658e798e18a0e4c7d28e1479fdb0ac24e83f45615177ca45f2cac359",
+      "bytes": 1070403
+    },
+    "assets/art-v1/terrain/grass-a.png": {
+      "status": 200,
+      "sha256": "e38ceebf5c8e7c9033214e00be3172f2f4a5afe06e213f212f762bebf349624c",
+      "bytes": 3968316
+    },
+    "assets/art-v1/terrain/grass-b.png": {
+      "status": 200,
+      "sha256": "73442cfce6444daedc03e13c250f7c0fe6d93fb6e28f8c956816dfb2ac976b19",
+      "bytes": 3643080
+    },
+    "assets/art-v1/terrain/shore-a.png": {
+      "status": 200,
+      "sha256": "21b442044d6699684f29898b9584948200ed912dd85f396434ea9a95d1ba49cd",
+      "bytes": 3037081
+    },
+    "assets/art-v1/terrain/shore-b.png": {
+      "status": 200,
+      "sha256": "977c09ab6cdcbe48fd244c416dafd9f9353360bf41e1ac125edc55a460793fd3",
+      "bytes": 3487316
+    },
+    "assets/art-v1/terrain/tree-broadleaf-a.png": {
+      "status": 200,
+      "sha256": "7cb5f28c907e3a1b93cbc0c2cbdd773f5974a0d270bf79742379f7fcc0ecfac7",
+      "bytes": 2245849
+    },
+    "assets/art-v1/terrain/water-a.png": {
+      "status": 200,
+      "sha256": "67db8859a407b896c7d77cafe3b6fbddbec3f3e6269056ca923834f98b537e99",
+      "bytes": 2349942
+    },
+    "assets/art-v1/terrain/water-b.png": {
+      "status": 200,
+      "sha256": "bd8df19179b803c6c5a292d275fc28b8cd1b35439de225b536968148524227d4",
+      "bytes": 1730183
+    },
+    "assets/art-v1/terrain-113-manifest.json": {
+      "status": 200,
+      "sha256": "b8d9c3e6c0ab5e924091c9592aa8a841abac1a61ae4d45839bc81e340de49fd4",
+      "bytes": 54199
+    },
+    "assets/art-v1/terrain-115-manifest.json": {
+      "status": 200,
+      "sha256": "143d37b91fc680b2665852ae652d8797ba0322cb8a068e182ab6b4bb05f03026",
+      "bytes": 56007
+    },
+    "assets/art-v1/terrain-120-manifest.json": {
+      "status": 200,
+      "sha256": "efab9eb6fedc553e3b6f285d14e1ae2fbc87ad54a101828211ff5cfcc8efa26e",
+      "bytes": 57803
+    },
+    "assets/art-v1/terrain-122-manifest.json": {
+      "status": 200,
+      "sha256": "93bb8ec2a417e6bb0c70a2911b8d894fa4edc4f187e40a2a8336d4b228165ffb",
+      "bytes": 59346
+    },
+    "assets/art-v1/terrain-127-manifest.json": {
+      "status": 200,
+      "sha256": "bad2ae9f133315f3dd264ca3d1e662f6fd4799464995f9bb53f7e5d9c111bcab",
+      "bytes": 61120
+    },
+    "assets/art-v1/units/cavalry-neutral-se.png": {
+      "status": 200,
+      "sha256": "dbc3258a77385a7aa7f71b72e32f2e26f907e68cd89e3acac77ddd07ff354c79",
+      "bytes": 875442
+    },
+    "assets/art-v1/units/infantry-neutral-se-refine-01.png": {
+      "status": 200,
+      "sha256": "8aa55413911336cff21d97307c9f78db05318824cf51d8393194817dc0c5cece",
+      "bytes": 619687
+    },
+    "assets/art-v1/units/infantry-neutral-se.png": {
+      "status": 200,
+      "sha256": "f93740e8f1b6b90ff754c7bc3f6e488f60eb3456850c95985425db57629a7e84",
+      "bytes": 657499
+    },
+    "assets/art-v1/wagon-horse-420/idle.png": {
+      "status": 200,
+      "sha256": "d43507d1d590e0f0c5f2461d8a70d858bb600e8233902e08a1dfbe9b3748838a",
+      "bytes": 20880
+    },
+    "assets/art-v1/walk-014/atlas.png": {
+      "status": 200,
+      "sha256": "b2bdd86bd02f967bde9b070e5952e97dae257706b5d52730b787e32e9580fc13",
+      "bytes": 113120
+    },
+    "assets/art-v1/walk-014/idle.png": {
+      "status": 200,
+      "sha256": "17962707943bb616362271cdde1abbfc17a05b0bad950dc714dd3586954b95ab",
+      "bytes": 14444
+    },
+    "assets/art-v1/walk-014-manifest.json": {
+      "status": 200,
+      "sha256": "d0a2f7e9f5509a6613d488ab98cf76ac1bc567003831bea41621d6507219b626",
+      "bytes": 40351
+    },
+    "assets/art-v1/workshop-144-manifest.json": {
+      "status": 200,
+      "sha256": "1443f7004ed8ea27ab77406c0c804a804866b6798d7d49fa8a75c9a8d5910148",
+      "bytes": 73204
+    },
+    "assets/index-8telBS7h.js": {
+      "status": 200,
+      "sha256": "352a4aa4ae36f2a6d44c5d073298a4056438a050414f9703e045d5317c39de61",
+      "bytes": 173421
+    },
+    "assets/index-DOrSNC3u.js": {
+      "status": 200,
+      "sha256": "c64cd58ef1b6c7e9fe56f5e988579b6ee79828f61b29c285f4890fb9afc2d2a5",
+      "bytes": 173421
+    },
+    "assets/index-Dx0ueiQl.css": {
+      "status": 200,
+      "sha256": "b5a28e062b20446a0d96f4ca389e4a45838d993c17d5f5804f1c50801f871cc5",
+      "bytes": 15562
+    },
+    "index.html": {
+      "status": 200,
+      "sha256": "7c06f8172dbb187d0746fda6b8187fe627d1ef5c2005f8c1a5fa528c2f522826",
+      "bytes": 4459
+    }
+  },
+  "backend": {
+    "service": "ActiveState=active\nFragmentPath=/home/kieu-hoang-quan/.config/systemd/user/rach-doi-son-ha.service\nDropInPaths=/home/kieu-hoang-quan/.config/systemd/user/rach-doi-son-ha.service.d/207-release.conf\nMainPID=3229\nWorkingDirectory=/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/releases/230/runtime230\n",
+    "health": {
+      "ok": true,
+      "rooms": 0
+    },
+    "funnel": "{\n  \"TCP\": {\n    \"443\": {\n      \"HTTPS\": true\n    },\n    \"8443\": {\n      \"HTTPS\": true\n    }\n  },\n  \"Web\": {\n    \"kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net:443\": {\n      \"Handlers\": {\n        \"/\": {\n          \"Proxy\": \"http://127.0.0.1:3000\"\n        }\n      }\n    },\n    \"kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net:8443\": {\n      \"Handlers\": {\n        \"/\": {\n          \"Proxy\": \"http://127.0.0.1:3000\"\n        }\n      }\n    }\n  },\n  \"AllowFunnel\": {\n    \"kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net:443\": true,\n    \"kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net:8443\": true\n  }\n}\n",
+    "exe": "/home/kieu-hoang-quan/.nvm/versions/node/v24.15.0/bin/node",
+    "cwd": "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/releases/230/runtime230",
+    "cmdline": "64219d26cb2c512365907eebd2c4fea6f3288c15cba178fd1ab04cfdaab71853",
+    "environment": "4f0cf090bb237c3e795918129655b5613b762b5d3533de046e929ef603d697f0",
+    "distlink": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/dist",
+    "runtimePins": {
+      "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/releases/230/runtime230/shared/sim.js": "29233a059ec084bc8577d20a1bccfd28ddc3024b9cb9bf4d5598c22f220f748b",
+      "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/releases/230/runtime230/server/index.js": "4e6a7e82f02d1d856f4ea788863c4836930bc00250be6a5b020ba2bdd8884198",
+      "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/releases/230/runtime230/node_modules/ws/package.json": "c1ef91ca04eb4754c011c5f0e7638b5078ff71104fada400c44ac761cf93e0b1",
+      "/home/kieu-hoang-quan/.nvm/versions/node/v24.15.0/bin/node": "d1de76d8edf2fededf6f8b30d244e2c0529ac607923a018283b77e9c74bd932c"
+    }
+  },
+  "sourceHEAD": "3a2ab48917d7fb7f3b50858e983037f4dbd44d5f",
+  "canonicalNewBaselinePreserved": true,
+  "exchanges": 1,
+  "buildBrowserImageRestartCalls": 0,
+  "preservationPASS": true,
+  "handles": "CLOSED",
+  "pending": "Separate434 actual Firefox; narrow static identities only, full goal remains open"
+}

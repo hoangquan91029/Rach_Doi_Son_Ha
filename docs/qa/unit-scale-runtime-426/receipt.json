@@ -1,0 +1,182 @@
+{
+  "order": 426,
+  "status": "PASS426_CANDIDATE_SCALE_ZOOM_D1_WALK_PAUSE_RESUME_STOP_WOOD_IDLE_MENU",
+  "ready": 50,
+  "portraits": 12,
+  "defaultZoom": 1.68,
+  "buildFiles": 208,
+  "responsePins": 56,
+  "villagerLogicalScale": 42,
+  "horseLogicalScale": 84,
+  "actualD1Travel": {
+    "tick": 201,
+    "entity": {
+      "id": 7,
+      "owner": 0,
+      "type": "villager",
+      "kind": "unit",
+      "x": 4.10770674784369,
+      "y": 20.107706747843693,
+      "hp": 65,
+      "maxHp": 65,
+      "food": 39.33097599999978,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "walk",
+      "dir": 1,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "resuppliedTick": 100,
+      "starving": 0,
+      "lastMovedTick": 201,
+      "order": {
+        "type": "move",
+        "x": 5.249767517412781,
+        "y": 21.249901450290043
+      }
+    },
+    "lastWalk": {
+      "entityId": 7,
+      "frame": 3,
+      "distance": 4.383599329559055,
+      "distancePerCycle": 1.26,
+      "direction": 1
+    },
+    "globalLastDraw": {
+      "entityId": 7,
+      "assetId": "villager-idle-D00",
+      "requestedState": "walk",
+      "requestedDirection": 5,
+      "illustrationDirection": 0,
+      "presentation": "STATIC_ILLUSTRATION"
+    },
+    "scope": "ActualD1state and authoredasset contract; global counters are not perentity acceptance"
+  },
+  "pauseTick": 209,
+  "resumeTick": 211,
+  "pausePositionVerified": true,
+  "walkStop": {
+    "tick": 215,
+    "entity": {
+      "id": 7,
+      "owner": 0,
+      "type": "villager",
+      "kind": "unit",
+      "x": 4.775922656064978,
+      "y": 20.775922656064974,
+      "hp": 65,
+      "maxHp": 65,
+      "food": 39.23823999999975,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "idle",
+      "dir": 1,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "resuppliedTick": 100,
+      "starving": 0,
+      "lastMovedTick": 210,
+      "order": null
+    }
+  },
+  "actualD1WoodGather": {
+    "tick": 220,
+    "entity": {
+      "id": 7,
+      "owner": 0,
+      "type": "villager",
+      "kind": "unit",
+      "x": 4.775922656064978,
+      "y": 20.775922656064974,
+      "hp": 65,
+      "maxHp": 65,
+      "food": 39.20511999999974,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "gather",
+      "dir": 1,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0.15000000000000002,
+        "iron": 0,
+        "units": []
+      },
+      "resuppliedTick": 100,
+      "starving": 0,
+      "lastMovedTick": 210,
+      "visibleAction": {
+        "kind": "gather",
+        "resource": "wood",
+        "startedTick": 220
+      },
+      "order": {
+        "type": "gather",
+        "target": 2
+      }
+    },
+    "lastGather": {
+      "entityId": 7,
+      "frame": 0,
+      "direction": 1,
+      "assetId": "villager-gather-wood-south-024",
+      "visualState": "gather_wood",
+      "startedTick": 220,
+      "elapsedMs": 0,
+      "timeMs": 0,
+      "presentationTimeMs": 10991.49999999106
+    },
+    "globalScope": "Read-only observed diagnostics; no globalentityidentity equality gate"
+  },
+  "woodIdleStop": {
+    "tick": 230,
+    "entity": {
+      "id": 7,
+      "owner": 0,
+      "type": "villager",
+      "kind": "unit",
+      "x": 4.775922656064978,
+      "y": 20.775922656064974,
+      "hp": 65,
+      "maxHp": 65,
+      "food": 39.138879999999716,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "idle",
+      "dir": 1,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 1.35,
+        "iron": 0,
+        "units": []
+      },
+      "resuppliedTick": 100,
+      "starving": 0,
+      "lastMovedTick": 210,
+      "order": null
+    }
+  },
+  "menuDecodedBytes": 0,
+  "errors": [],
+  "requestFailures": [],
+  "httpErrors": [],
+  "sealedSourceBuildCanonicalPublicHEADBackendPolicyPreserved": true,
+  "handles": "CLOSED",
+  "rootSceneIntake": "PENDING",
+  "scope": "Candidate wholefamily render scale/defaultzoom only. D1actualwalk/wood/idle technicalcontrols prove targetedtransitions, not finalscale/naturalness/allstates/eightdirections/movement213ownerapproval."
+}

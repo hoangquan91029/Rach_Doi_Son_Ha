@@ -1,0 +1,63 @@
+{
+  "assets": [
+    {
+      "id": "supply-wagon-horse-idle-d0-415",
+      "family": "unit.wagon",
+      "kind": "unit",
+      "state": "idle",
+      "direction": 0,
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "source": {
+        "path": "docs/art/units/supply-wagon-horse-415/working-256.png",
+        "sha256": "39a2aa11091214de4ad1236d3be65f77b1e5668d2e9054b19c0613770003436c",
+        "rgbaSha256": "f152f2eb87d6011d56fcacb2b03b6305a27dd9c9c7ed802f36fc42bc85b88200",
+        "width": 256,
+        "height": 256
+      },
+      "runtime": {
+        "path": "wagon-horse-420/idle.png",
+        "sha256": "d43507d1d590e0f0c5f2461d8a70d858bb600e8233902e08a1dfbe9b3748838a",
+        "rgbaSha256": "8778e9ebc985bfd1ea27ac5af5b48a26a4d05a4ce83cda77d25e10c8175ff603",
+        "width": 128,
+        "height": 128,
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "39a2aa11091214de4ad1236d3be65f77b1e5668d2e9054b19c0613770003436c"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 133.51196172248802,
+        "y": 232.72727272727272,
+        "space": "source"
+      },
+      "render": {
+        "width": 112,
+        "height": 112
+      },
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 1000
+        }
+      ],
+      "loop": true,
+      "notes": "Whole built-in 2D horse+cart idle D0 static candidate. Logical scale PROVISIONAL; root actual scene required. No motion or eight-direction acceptance."
+    }
+  ],
+  "staticOnly": true
+}

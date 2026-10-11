@@ -1,0 +1,43 @@
+{
+  "status": "CLOSED_RETURNED_HELD",
+  "profile": "gpt-6.1-sol/low",
+  "callsAuthorized": 1,
+  "retriesAuthorized": 0,
+  "headBefore": "3a2ab48917d7fb7f3b50858e983037f4dbd44d5f",
+  "inputs": [
+    {
+      "path": "docs/art/units/infantry-walk-keys-429/F4-raw.png",
+      "sha256": "9e9b9a16c5cb7610d8bf17458afacf512c1bd9dcbfbc5e51973f1dead69eee2c"
+    },
+    {
+      "path": "docs/art/units/sources/infantry-neutral-se-refine-01-imagegen-raw.png",
+      "sha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f"
+    },
+    {
+      "path": "docs/art/units/infantry-walk-plan-427/preview/F4.png",
+      "sha256": "a8202c48a2225836d655df483ecdbd076a1cc78e91cfd4b360adfc9ffe970a9e"
+    },
+    {
+      "path": "docs/art/units/infantry-walk-keys-429/root-intake.json",
+      "sha256": "a9a3929334a3839121d61c93dd2b24f539aff9a0bca5b25111835d62e623f642"
+    }
+  ],
+  "prompt": "Use case: precise whole-object identity correction. Image1 is the COMPLETE held F4 opposite-contact infantry edit target. Its leg action is useful, but its equipment sides and front-facing torso are WRONG and must be corrected. Image2 is canonical whole infantry PRIMARY appearance, camera, body/armor volume and equipment-side authority. Image3 is a whole original F4 pose guide ONLY, not flat painting style. Reillustrate ONE complete whole clothed realistic painted RTS F4 frame on genuine transparent alpha. Restore canonical elevated ESE three-quarter body/head view and substantial shoulder/chest/hip/armor mass, preserving canonical face, helmet/red cloth, green lamellar armor, cream clothes, red sash, dark trousers/wraps and brown boots. CRITICAL viewer-screen ownership: the curved sword must be in the SAME SCREEN-LEFT HAND as canonical image2; heavy ROUND WOODEN SHIELD must be in the SAME SCREEN-RIGHT near hand as canonical image2. Target image1 has shield screen-left and sword screen-right: DO NOT preserve its wrong arms. Never mirror the character or swap equipment. Restore the entire proper shoulder\u2192arm\u2192hand relationships as a whole frame while retaining useful opposite-contact legs: shield-side near hip connects to trailing upper-left boot/toe, sword-side far hip connects to forward lower-right supporting heel/foot. Modest ordinary walk stride, one coherent body/exactly two arms/two legs; no attack, no new weapon. Preserve stable heavy shield/sword grip. Canonical camera/body mass PRIMARY, guide only leg action; do not turn torso front-facing. Fixed square canvas, normalized ground pivot (653/1254,1057/1254), entire helmet/shield/sword/boots inside transparent margins. Genuine alpha, no scenery/ground plane/added shadow, original runtime uses separate shadow. Whole finished realistic painted2D, no masks, limb textures, cutouts, pasted pixels, warping, mirror, global fitting or3D. No sheet/text/watermark.",
+  "target": "complete held429F4 opposite legs useful; equipment/camera correction required",
+  "sourceCanvas": [
+    256,
+    256
+  ],
+  "runtimeCell": [
+    128,
+    128
+  ],
+  "logicalRender": [
+    42,
+    42
+  ],
+  "pivot": [
+    133.30781499202553,
+    215.78309409888357
+  ]
+}

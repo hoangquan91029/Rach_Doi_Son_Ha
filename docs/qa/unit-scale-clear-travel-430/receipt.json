@@ -1,0 +1,101 @@
+{
+  "order": 430,
+  "status": "PASS430_CLEAR_PLAIN_D1_WALK42_PAUSE_RESUME_STOP_IDLE_MENU",
+  "sameSealed426": true,
+  "defaultZoom": 1.68,
+  "ready": 50,
+  "responsePins": 56,
+  "clearPlainPath": {
+    "start": {
+      "x": 15.5,
+      "y": 23.5
+    },
+    "end": {
+      "x": 18.5,
+      "y": 26.5
+    },
+    "d": 7.088018058667742
+  },
+  "actualD1Travel": {
+    "tick": 210,
+    "entity": {
+      "id": 9,
+      "owner": 0,
+      "type": "villager",
+      "kind": "unit",
+      "x": 15.456452426181935,
+      "y": 22.737695700454132,
+      "hp": 65,
+      "maxHp": 65,
+      "food": 39.317727999999775,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "walk",
+      "dir": 1,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "resuppliedTick": 107,
+      "starving": 0,
+      "lastMovedTick": 210,
+      "order": {
+        "type": "move",
+        "x": 18.499903145711052,
+        "y": 26.500011975592827
+      }
+    },
+    "lastWalk": {
+      "entityId": 9,
+      "frame": 7,
+      "distance": 7.539864257081003,
+      "distancePerCycle": 1.26,
+      "direction": 1
+    },
+    "globalScope": "No peractor global diagnostic identity assertion"
+  },
+  "pauseTick": 220,
+  "resumeTick": 222,
+  "pausePositionFrozen": true,
+  "sameD1StopIdle": {
+    "tick": 226,
+    "entity": {
+      "id": 9,
+      "owner": 0,
+      "type": "villager",
+      "kind": "unit",
+      "x": 16.7611797934599,
+      "y": 23.7611797934599,
+      "hp": 65,
+      "maxHp": 65,
+      "food": 39.21174399999974,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "idle",
+      "dir": 1,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "resuppliedTick": 107,
+      "starving": 0,
+      "lastMovedTick": 226,
+      "order": null
+    }
+  },
+  "menuDecodedBytes": 0,
+  "errors": [],
+  "requestFailures": [],
+  "httpErrors": [],
+  "sealedSourceBuildCanonicalPublicHEADBackendPolicyPreserved": true,
+  "handles": "CLOSED",
+  "scope": "Visible clearplain current42 D1walk+idle evidence only; original426woodtechnicalproof untouched. Root actualscene intake pending/finalscale/naturalness/eightdirections remainopen."
+}

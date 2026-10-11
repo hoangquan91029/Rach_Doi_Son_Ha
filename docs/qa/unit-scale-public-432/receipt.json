@@ -1,0 +1,1798 @@
+{
+  "order": 432,
+  "status": "CANDIDATE_PREPARED_CLOSED",
+  "archive": "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/releases/432/candidate426.tar.gz",
+  "archiveSHA256": "95dfd9a82eb66846b17fbd8a5924a56fc8dc665b03eeafe3d548075fe6bf1ed9",
+  "ownedNextClone": "/home/kieu-hoang-quan/Videos/rds-public432-next-dist",
+  "cloneRootMode": 755,
+  "files": 208,
+  "retainedPublicFiles": 207,
+  "modified": [
+    "assets/art-v1/camp-148-manifest.json",
+    "assets/art-v1/fort-202-manifest.json",
+    "assets/art-v1/gather-026-manifest.json",
+    "assets/art-v1/iron-137-manifest.json",
+    "assets/art-v1/manifest.json",
+    "assets/art-v1/shipyard-165-manifest.json",
+    "assets/art-v1/terrain-127-manifest.json",
+    "assets/art-v1/walk-014-manifest.json",
+    "assets/art-v1/workshop-144-manifest.json",
+    "index.html"
+  ],
+  "added": [
+    "assets/index-DOrSNC3u.js"
+  ],
+  "TLSRequiredPins": {
+    "assets/art-v1/camp-148-manifest.json": {
+      "type": "file",
+      "mode": 436,
+      "size": 75011,
+      "sha256": "c0fb6d96289194a3cae28505f5a030804da8133e674035a0c5651e0ff5b13af7"
+    },
+    "assets/art-v1/fort-202-manifest.json": {
+      "type": "file",
+      "mode": 436,
+      "size": 120636,
+      "sha256": "42425c68d448f89047ea15fe6e108ec2b25393d34312ae0adb37ff1d9be282fa"
+    },
+    "assets/art-v1/gather-026-manifest.json": {
+      "type": "file",
+      "mode": 436,
+      "size": 50569,
+      "sha256": "b988356d60a75b7e28042791627bafb381f15f473e1d9ef67d6874fe61b8e52b"
+    },
+    "assets/art-v1/iron-137-manifest.json": {
+      "type": "file",
+      "mode": 436,
+      "size": 71212,
+      "sha256": "4aab2d852311c9614a399a71017c37ca985cd8da456cf59cc2d4e82eb875d951"
+    },
+    "assets/art-v1/manifest.json": {
+      "type": "file",
+      "mode": 436,
+      "size": 27812,
+      "sha256": "01745b177cb45e37fca762fabd5b13bc98093feafcd44daddb91c48918f82dc0"
+    },
+    "assets/art-v1/shipyard-165-manifest.json": {
+      "type": "file",
+      "mode": 436,
+      "size": 77295,
+      "sha256": "172b4b63961829230720ebf346dc6baf9c49f042659fa413357711beca65e621"
+    },
+    "assets/art-v1/terrain-127-manifest.json": {
+      "type": "file",
+      "mode": 436,
+      "size": 61120,
+      "sha256": "bad2ae9f133315f3dd264ca3d1e662f6fd4799464995f9bb53f7e5d9c111bcab"
+    },
+    "assets/art-v1/walk-014-manifest.json": {
+      "type": "file",
+      "mode": 436,
+      "size": 40351,
+      "sha256": "d0a2f7e9f5509a6613d488ab98cf76ac1bc567003831bea41621d6507219b626"
+    },
+    "assets/art-v1/workshop-144-manifest.json": {
+      "type": "file",
+      "mode": 436,
+      "size": 73204,
+      "sha256": "1443f7004ed8ea27ab77406c0c804a804866b6798d7d49fa8a75c9a8d5910148"
+    },
+    "assets/index-8telBS7h.js": {
+      "type": "file",
+      "mode": 436,
+      "size": 173421,
+      "sha256": "352a4aa4ae36f2a6d44c5d073298a4056438a050414f9703e045d5317c39de61"
+    },
+    "assets/index-DOrSNC3u.js": {
+      "type": "file",
+      "mode": 436,
+      "size": 173421,
+      "sha256": "c64cd58ef1b6c7e9fe56f5e988579b6ee79828f61b29c285f4890fb9afc2d2a5"
+    },
+    "assets/index-Dx0ueiQl.css": {
+      "type": "file",
+      "mode": 436,
+      "size": 15562,
+      "sha256": "b5a28e062b20446a0d96f4ca389e4a45838d993c17d5f5804f1c50801f871cc5"
+    },
+    "index.html": {
+      "type": "file",
+      "mode": 436,
+      "size": 4459,
+      "sha256": "7c06f8172dbb187d0746fda6b8187fe627d1ef5c2005f8c1a5fa528c2f522826"
+    }
+  },
+  "sourceHEAD": "3a2ab48917d7fb7f3b50858e983037f4dbd44d5f",
+  "policyBeforeAfter": {
+    "service": "ActiveState=active\nFragmentPath=/home/kieu-hoang-quan/.config/systemd/user/rach-doi-son-ha.service\nDropInPaths=/home/kieu-hoang-quan/.config/systemd/user/rach-doi-son-ha.service.d/207-release.conf\nMainPID=3229\nWorkingDirectory=/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/releases/230/runtime230\n",
+    "health": {
+      "ok": true,
+      "rooms": 0
+    },
+    "funnel": "{\n  \"TCP\": {\n    \"443\": {\n      \"HTTPS\": true\n    },\n    \"8443\": {\n      \"HTTPS\": true\n    }\n  },\n  \"Web\": {\n    \"kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net:443\": {\n      \"Handlers\": {\n        \"/\": {\n          \"Proxy\": \"http://127.0.0.1:3000\"\n        }\n      }\n    },\n    \"kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net:8443\": {\n      \"Handlers\": {\n        \"/\": {\n          \"Proxy\": \"http://127.0.0.1:3000\"\n        }\n      }\n    }\n  },\n  \"AllowFunnel\": {\n    \"kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net:443\": true,\n    \"kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net:8443\": true\n  }\n}\n",
+    "exe": "/home/kieu-hoang-quan/.nvm/versions/node/v24.15.0/bin/node",
+    "cwd": "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/releases/230/runtime230",
+    "cmdline": "64219d26cb2c512365907eebd2c4fea6f3288c15cba178fd1ab04cfdaab71853",
+    "environment": "4f0cf090bb237c3e795918129655b5613b762b5d3533de046e929ef603d697f0",
+    "distlink": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/dist",
+    "runtimePins": {
+      "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/releases/230/runtime230/shared/sim.js": "29233a059ec084bc8577d20a1bccfd28ddc3024b9cb9bf4d5598c22f220f748b",
+      "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/releases/230/runtime230/server/index.js": "4e6a7e82f02d1d856f4ea788863c4836930bc00250be6a5b020ba2bdd8884198",
+      "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/releases/230/runtime230/node_modules/ws/package.json": "c1ef91ca04eb4754c011c5f0e7638b5078ff71104fada400c44ac761cf93e0b1",
+      "/home/kieu-hoang-quan/.nvm/versions/node/v24.15.0/bin/node": "d1de76d8edf2fededf6f8b30d244e2c0529ac607923a018283b77e9c74bd932c"
+    }
+  },
+  "rollback": "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/releases/428/rollback423.tar.gz",
+  "rollbackSHA256": "fe37d0f1d339ae5ef3219ef7d2ddb68b5a2093f388a235b3f905e7e4600173fb",
+  "safeExactByteModeExtractionPASS": true,
+  "modeProof": [
+    {
+      "name": "dist426",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/artillery-workshop-144",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/artillery-workshop-144/idle.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/barracks-122",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/barracks-122/idle.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/camp-148-manifest.json",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/cavalry-camp-148",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/cavalry-camp-148/idle.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/characters",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/characters/tran-hung-dao-general-neutral-D00-screen-ESE.png",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/characters/villager-neutral-D00-screen-ESE.png",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/corner-248",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/corner-263",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/corner-264",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/corner-265",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/effects",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/effects/unit-contact-shadow.png",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/firepower-410",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/firepower-410/artillery409.png",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/firepower-410/firearm408.png",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/food-099",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/food-resource-115",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/food-resource-115/food.png",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/fort-202-manifest.json",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/fort-idle-198-runtime.png",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/fort-idle-198-runtime.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/gate-245",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/gate-245/idle.png",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/gate-252",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/gate-252/idle.png",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/gather-026",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/gather-026/atlas.png",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/gather-026-manifest.json",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/hill-113",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/hill-113/hill.png",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/initial-actors-403",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/initial-actors-403/king396.png",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/initial-actors-403/spearman400.png",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/initial-actors-403/wagon398.png",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/iron-137",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/iron-137/atlas.png",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/iron-137-manifest.json",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/iron-resource-120",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/iron-resource-120/iron.png",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/manifest.json",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/mountain-109",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/mountain-109/outcrop.png",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/residence",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/residence/candidate-01.png",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/residence/candidate-02.png",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/rocky-ground-338",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/rocky-ground-338/ground.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/runtime",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/runtime/cavalry-idle-D00.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/runtime/ford.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/runtime/forest-512.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/runtime/forest-bamboo-512.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/runtime/forest-palm-512.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/runtime/forest.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/runtime/granary-idle.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/runtime/grass.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/runtime/infantry-idle-D00.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/runtime/residence-512.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/runtime/residence.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/runtime/shore-b.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/runtime/tran-hung-dao-idle-D00.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/runtime/unit-contact-shadow.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/runtime/villager-idle-D00.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/runtime/water.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/shipyard-165",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/shipyard-165/idle.png",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/shipyard-165-manifest.json",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/stone-361-manifest.json",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/stone-wall-X-362",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/stone-wall-X-362/runtime.png",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/stone-wall-Y-364",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/stone-wall-Y-364/runtime.png",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/stone-wall-construction-373",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/stone-wall-construction-373/runtime.png",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/stone-wall-corner-365",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/stone-wall-corner-365/runtime.png",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/supply-depot-127",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/supply-depot-127/depot.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/terrain",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/terrain/ford-a.png",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/terrain/forest-bamboo-a.png",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/terrain/forest-palm-a.png",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/terrain/grass-a.png",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/terrain/grass-b.png",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/terrain/shore-a.png",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/terrain/shore-b.png",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/terrain/tree-broadleaf-a.png",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/terrain/water-a.png",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/terrain/water-b.png",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/terrain-113-manifest.json",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/terrain-115-manifest.json",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/terrain-120-manifest.json",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/terrain-122-manifest.json",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/terrain-127-manifest.json",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/units",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/units/cavalry-neutral-se.png",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/units/infantry-neutral-se-refine-01.png",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/units/infantry-neutral-se.png",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/wagon-horse-420",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/wagon-horse-420/idle.png",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/walk-014",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/walk-014/atlas.png",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/walk-014/idle.png",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/walk-014-manifest.json",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/art-v1/wall-13-280",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/wall-14-282",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/wall-15-288",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/wall-234",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/wall-239",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/wall-construction-278",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/wall-t11-275",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/wall-t7-274",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/wall-wreck-292",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/workshop-144-manifest.json",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/index-05PkH4eu.js",
+      "stored": 292,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/index-8telBS7h.js",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/index-B95VwaEY.js",
+      "stored": 292,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/index-BLdPSJwj.js",
+      "stored": 292,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/index-BMWX7K9H.js",
+      "stored": 292,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/index-BSDEdwS3.js",
+      "stored": 292,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/index-ByZVQkbs.js",
+      "stored": 292,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/index-CLF1gZiY.js",
+      "stored": 292,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/index-CRkcHzq0.js",
+      "stored": 292,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/index-Cd-5PWlV.js",
+      "stored": 292,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/index-CeTSGUOz.js",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/index-Cz2oiMds.js",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/index-D5hSY7R3.js",
+      "stored": 292,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/index-D9Wg5MdV.js",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/index-DLWMD8Y7.js",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/index-DOrSNC3u.js",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/index-DjXL80h8.js",
+      "stored": 292,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/index-Dx0ueiQl.css",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/index-eaEH6Li-.js",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/index-mANisKtK.js",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/index-z82FayZ6.js",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/leadership/han_xin",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/leadership/han_xin/D00.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/han_xin/D01.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/han_xin/D02.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/han_xin/D03.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/han_xin/D04.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/han_xin/D05.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/han_xin/D06.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/han_xin/D07.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/han_xin/portrait.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/le_thanh_tong",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/leadership/le_thanh_tong/D00.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/le_thanh_tong/D01.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/le_thanh_tong/D02.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/le_thanh_tong/D03.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/le_thanh_tong/D04.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/le_thanh_tong/D05.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/le_thanh_tong/D06.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/le_thanh_tong/D07.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/le_thanh_tong/portrait.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/ly_thuong_kiet",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/leadership/ly_thuong_kiet/D00.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/ly_thuong_kiet/D01.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/ly_thuong_kiet/D02.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/ly_thuong_kiet/D03.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/ly_thuong_kiet/D04.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/ly_thuong_kiet/D05.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/ly_thuong_kiet/D06.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/ly_thuong_kiet/D07.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/ly_thuong_kiet/portrait.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/manifest.json",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/minh_menh",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/leadership/minh_menh/D00.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/minh_menh/D01.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/minh_menh/D02.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/minh_menh/D03.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/minh_menh/D04.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/minh_menh/D05.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/minh_menh/D06.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/minh_menh/D07.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/minh_menh/portrait.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/napoleon_bonaparte",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/leadership/napoleon_bonaparte/D00.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/napoleon_bonaparte/D01.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/napoleon_bonaparte/D02.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/napoleon_bonaparte/D03.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/napoleon_bonaparte/D04.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/napoleon_bonaparte/D05.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/napoleon_bonaparte/D06.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/napoleon_bonaparte/D07.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/napoleon_bonaparte/portrait.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/nguyen_anh",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/leadership/nguyen_anh/D00.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/nguyen_anh/D01.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/nguyen_anh/D02.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/nguyen_anh/D03.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/nguyen_anh/D04.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/nguyen_anh/D05.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/nguyen_anh/D06.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/nguyen_anh/D07.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/nguyen_anh/portrait.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/nguyen_hue",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/leadership/nguyen_hue/D00.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/nguyen_hue/D01.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/nguyen_hue/D02.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/nguyen_hue/D03.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/nguyen_hue/D04.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/nguyen_hue/D05.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/nguyen_hue/D06.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/nguyen_hue/D07.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/nguyen_hue/portrait.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/nguyen_phuc_chu",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/leadership/nguyen_phuc_chu/D00.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/nguyen_phuc_chu/D01.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/nguyen_phuc_chu/D02.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/nguyen_phuc_chu/D03.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/nguyen_phuc_chu/D04.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/nguyen_phuc_chu/D05.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/nguyen_phuc_chu/D06.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/nguyen_phuc_chu/D07.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/nguyen_phuc_chu/portrait.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/tran_hung_dao",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/leadership/tran_hung_dao/D00.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/tran_hung_dao/D01.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/tran_hung_dao/D02.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/tran_hung_dao/D03.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/tran_hung_dao/D04.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/tran_hung_dao/D05.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/tran_hung_dao/D06.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/tran_hung_dao/D07.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/tran_hung_dao/portrait.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/tran_nhan_tong",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/leadership/tran_nhan_tong/D00.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/tran_nhan_tong/D01.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/tran_nhan_tong/D02.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/tran_nhan_tong/D03.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/tran_nhan_tong/D04.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/tran_nhan_tong/D05.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/tran_nhan_tong/D06.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/tran_nhan_tong/D07.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/tran_nhan_tong/portrait.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/trinh_cuong",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/leadership/trinh_cuong/D00.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/trinh_cuong/D01.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/trinh_cuong/D02.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/trinh_cuong/D03.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/trinh_cuong/D04.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/trinh_cuong/D05.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/trinh_cuong/D06.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/trinh_cuong/D07.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/trinh_cuong/portrait.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/xiang_yu",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/leadership/xiang_yu/D00.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/xiang_yu/D01.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/xiang_yu/D02.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/xiang_yu/D03.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/xiang_yu/D04.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/xiang_yu/D05.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/xiang_yu/D06.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/xiang_yu/D07.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/xiang_yu/portrait.webp",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/favicon.svg",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/index.html",
+      "stored": 436,
+      "filtered": 420
+    },
+    {
+      "name": "dist426/assets/leadership/xiang_yu",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/leadership/trinh_cuong",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/leadership/tran_nhan_tong",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/leadership/tran_hung_dao",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/leadership/nguyen_phuc_chu",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/leadership/nguyen_hue",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/leadership/nguyen_anh",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/leadership/napoleon_bonaparte",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/leadership/minh_menh",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/leadership/ly_thuong_kiet",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/leadership/le_thanh_tong",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/leadership/han_xin",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/leadership",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/wall-wreck-292",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/wall-t7-274",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/wall-t11-275",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/wall-construction-278",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/wall-239",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/wall-234",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/wall-15-288",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/wall-14-282",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/wall-13-280",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/walk-014",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/wagon-horse-420",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/units",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/terrain",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/supply-depot-127",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/stone-wall-corner-365",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/stone-wall-construction-373",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/stone-wall-Y-364",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/stone-wall-X-362",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/shipyard-165",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/runtime",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/rocky-ground-338",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/residence",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/mountain-109",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/iron-resource-120",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/iron-137",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/initial-actors-403",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/hill-113",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/gather-026",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/gate-252",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/gate-245",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/food-resource-115",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/food-099",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/firepower-410",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/effects",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/corner-265",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/corner-264",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/corner-263",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/corner-248",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/characters",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/cavalry-camp-148",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/barracks-122",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1/artillery-workshop-144",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets/art-v1",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426/assets",
+      "stored": 509,
+      "filtered": null
+    },
+    {
+      "name": "dist426",
+      "stored": 509,
+      "filtered": null
+    }
+  ],
+  "publicationApproval": false,
+  "rootActualSceneIntake": {
+    "status": "ACCEPTED_SCOPED_FAMILY_SCALE_AND_DEFAULT_WORLD_ZOOM",
+    "looks": [
+      "426/actual-initial-mixed-scale.png",
+      "actual-clear-D1-walk42.png",
+      "actual-clear-D1-idle42.png"
+    ],
+    "accepted": {
+      "villagerAllActionsLogicalRender": 42,
+      "horseWagonWholeRender": 84,
+      "defaultWorldZoom": 1.68
+    },
+    "observed": "On clearplain D1 villager walk and same-direction idle now comparable to infantry/spearman/leaders. Mixedscene horse-cart is better proportioned to people and buildings. Authored wholeframes and pivots unchanged.",
+    "limits": [
+      "Brief visible scale/identity intake, not continuous naturalness or worldfootlock proof.",
+      "Original426 woodwork actor is partly tree-occluded; technical action proved, no unobscured wood-loop visual claim.",
+      "Existing building/unit overlap in initialresidence scene remains separate composition/depth coverage concern.",
+      "Movement213 owner/runtime approval and missinganimations remain open."
+    ]
+  },
+  "rootSeparatePromotionGORequired": true,
+  "buildBrowserImageRestartPublicationCalls": 0,
+  "guards": "CLOSED",
+  "preservationPASS": true,
+  "actualProductionSchemaPASS": true,
+  "validatedManifests": 9,
+  "current423NormalTLSPrechecks": {
+    "index.html": {
+      "status": 200,
+      "sha256": "4540406d0174eade399c571968be51c489031075b3ad8a6bdeb070f96c71a938"
+    },
+    "assets/index-8telBS7h.js": {
+      "status": 200,
+      "sha256": "352a4aa4ae36f2a6d44c5d073298a4056438a050414f9703e045d5317c39de61"
+    },
+    "assets/index-Dx0ueiQl.css": {
+      "status": 200,
+      "sha256": "b5a28e062b20446a0d96f4ca389e4a45838d993c17d5f5804f1c50801f871cc5"
+    },
+    "assets/art-v1/fort-202-manifest.json": {
+      "status": 200,
+      "sha256": "937dac2c1a210bf031eabbc7dbd97b0ca3ef95a46ab4ddce56eee85c24cc5558"
+    }
+  },
+  "allPixelPivotFrameTimingStrideUnchanged": true,
+  "rootActualSceneIntakePath": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/unit-scale-clear-travel-430/root-intake.json",
+  "rootActualSceneIntakeSHA256": "103c21a4cc26d864f36b0069b261ec3fafecb1598acbb3594094d7f86f859190"
+}

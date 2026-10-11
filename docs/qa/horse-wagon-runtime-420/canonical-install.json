@@ -1,0 +1,124 @@
+{
+  "status": "INSTALLED_EXACT420_AFTER422_CLOSED",
+  "oldRowPreserved": {
+    "id": "wagon-idle-d0-398",
+    "family": "unit.wagon",
+    "kind": "unit",
+    "state": "idle",
+    "direction": 0,
+    "source": {
+      "path": "docs/art/units/supply-wagon-idle-398/working-256.png",
+      "sha256": "3953e30bc9736b668673760d85190bdd5457269de42e338abc9d4d7640a7827b",
+      "rgbaSha256": "4bd36a60a24bb0948f46d8511187e2210f75c9518b67c02ba33955dc68dcaf95",
+      "width": 256,
+      "height": 256
+    },
+    "runtime": {
+      "path": "initial-actors-403/wagon398.png",
+      "sha256": "6a1b99e46aa02db223dbd7cded3572141cd41e347118fbfeaaf4264d2143e640",
+      "rgbaSha256": "9d1a96e723c349ee5906292699d685868f2881b9ddf5fc1f508ce0f5df7afc8b",
+      "width": 128,
+      "height": 128,
+      "derivation": {
+        "method": "resize",
+        "filter": "lanczos",
+        "sourceSha256": "3953e30bc9736b668673760d85190bdd5457269de42e338abc9d4d7640a7827b"
+      }
+    },
+    "candidate": true,
+    "review": {
+      "status": "CANDIDATE"
+    },
+    "cell": {
+      "width": 128,
+      "height": 128
+    },
+    "pivot": {
+      "x": 133.51196172248802,
+      "y": 232.72727272727272,
+      "space": "source"
+    },
+    "render": {
+      "width": 55,
+      "height": 55
+    },
+    "alphaPolicy": "transparent",
+    "contactShadow": {
+      "mode": "baked"
+    },
+    "frames": [
+      {
+        "x": 0,
+        "y": 0,
+        "width": 128,
+        "height": 128,
+        "durationMs": 1000
+      }
+    ],
+    "loop": true
+  },
+  "newRow": {
+    "id": "supply-wagon-horse-idle-d0-415",
+    "family": "unit.wagon",
+    "kind": "unit",
+    "state": "idle",
+    "direction": 0,
+    "candidate": true,
+    "review": {
+      "status": "CANDIDATE"
+    },
+    "source": {
+      "path": "docs/art/units/supply-wagon-horse-415/working-256.png",
+      "sha256": "39a2aa11091214de4ad1236d3be65f77b1e5668d2e9054b19c0613770003436c",
+      "rgbaSha256": "f152f2eb87d6011d56fcacb2b03b6305a27dd9c9c7ed802f36fc42bc85b88200",
+      "width": 256,
+      "height": 256
+    },
+    "runtime": {
+      "path": "wagon-horse-420/idle.png",
+      "sha256": "d43507d1d590e0f0c5f2461d8a70d858bb600e8233902e08a1dfbe9b3748838a",
+      "rgbaSha256": "8778e9ebc985bfd1ea27ac5af5b48a26a4d05a4ce83cda77d25e10c8175ff603",
+      "width": 128,
+      "height": 128,
+      "derivation": {
+        "method": "resize",
+        "filter": "lanczos",
+        "sourceSha256": "39a2aa11091214de4ad1236d3be65f77b1e5668d2e9054b19c0613770003436c"
+      }
+    },
+    "cell": {
+      "width": 128,
+      "height": 128
+    },
+    "pivot": {
+      "x": 133.51196172248802,
+      "y": 232.72727272727272,
+      "space": "source"
+    },
+    "render": {
+      "width": 112,
+      "height": 112
+    },
+    "alphaPolicy": "transparent",
+    "contactShadow": {
+      "mode": "baked"
+    },
+    "frames": [
+      {
+        "x": 0,
+        "y": 0,
+        "width": 128,
+        "height": 128,
+        "durationMs": 1000
+      }
+    ],
+    "loop": true,
+    "notes": "Whole built-in 2D horse+cart idle D0 static candidate. Logical scale PROVISIONAL; root actual scene required. No motion or eight-direction acceptance."
+  },
+  "manifestSHA": "937dac2c1a210bf031eabbc7dbd97b0ca3ef95a46ab4ddce56eee85c24cc5558",
+  "runtimeSHA": "d43507d1d590e0f0c5f2461d8a70d858bb600e8233902e08a1dfbe9b3748838a",
+  "other49Verbatim": true,
+  "old398PNGRetained": true,
+  "scale": "112 provisional; next scale task",
+  "simulationChanged": false
+}

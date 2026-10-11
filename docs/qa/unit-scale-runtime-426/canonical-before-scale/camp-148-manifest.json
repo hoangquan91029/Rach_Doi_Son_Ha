@@ -1,0 +1,2530 @@
+{
+  "schemaVersion": 1,
+  "status": "CANDIDATE",
+  "camera": {
+    "projection": "dimetric",
+    "ratio": [
+      2,
+      1
+    ],
+    "tile": [
+      54,
+      27
+    ],
+    "elevation": 26.565
+  },
+  "notes": "Optional art=pilot development preview only. Only known static/idle D00 trial poses; no motion or eight-direction acceptance. Filename SE was art screen-heading description, explicitly trial-mapped D00 by parent based ESE projection. Pivots provisional until browser footprint QA. Optional art=walk adds South/D1 walk+canonical idle only; original14 retained. No animated claims for other directions/actions. Optional art=work adds only actual South/D1 gather_wood eight-frame1080ms candidate. F5 explicitphase reassignment retained in custody. No otherwork resources/directions or visualapproval. Optional LOCAL art=workshop adds actual140 completed-idle Workshop only; unsupported states retain fallback.",
+  "assets": [
+    {
+      "id": "grass",
+      "family": "grass",
+      "kind": "terrain",
+      "source": {
+        "path": "terrain/grass-b.png",
+        "sha256": "73442cfce6444daedc03e13c250f7c0fe6d93fb6e28f8c956816dfb2ac976b19",
+        "rgbaSha256": "b03da1502b4512a726b4b2c6121c15946b34e31ac9bfaa6a885e81c4a1090dbe",
+        "width": 1254,
+        "height": 1254,
+        "bbox": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "alphaExtrema": [
+          255,
+          255
+        ]
+      },
+      "runtime": {
+        "path": "runtime/grass.webp",
+        "sha256": "8c7f2d6fd9da7ef7be4abad5f1b3e3d1b4968e9d30180c80bcde0dd97ae9bb5a",
+        "rgbaSha256": "b8c7a3128f57e484b202fed4deb99aa0ae0eff29c8bc8780ed5d8c38db3dbefb",
+        "width": 512,
+        "height": 512,
+        "bbox": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "derivation": {
+          "method": "resize",
+          "sourceSha256": "73442cfce6444daedc03e13c250f7c0fe6d93fb6e28f8c956816dfb2ac976b19",
+          "filter": "lanczos"
+        }
+      },
+      "cell": {
+        "width": 512,
+        "height": 512
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0,
+        "space": "source"
+      },
+      "render": {
+        "width": 256,
+        "height": 256
+      },
+      "state": "material",
+      "direction": null,
+      "loop": true,
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 512,
+          "height": 512,
+          "durationMs": 1000
+        }
+      ],
+      "alphaPolicy": "opaque",
+      "contactShadow": {
+        "mode": "none"
+      },
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "candidate": true,
+      "notes": "Second quieter grass candidate; grass-a retained as rejected noisy trial. Parent browser repeat review pending."
+    },
+    {
+      "id": "water",
+      "family": "water",
+      "kind": "terrain",
+      "source": {
+        "path": "terrain/water-b.png",
+        "sha256": "bd8df19179b803c6c5a292d275fc28b8cd1b35439de225b536968148524227d4",
+        "rgbaSha256": "926df89700e284b7661f58f60d2c5558382544bb343870dc91cd69d1d8edc5be",
+        "width": 1254,
+        "height": 1254,
+        "bbox": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "alphaExtrema": [
+          255,
+          255
+        ]
+      },
+      "runtime": {
+        "path": "runtime/water.webp",
+        "sha256": "3e790526414f3b6188f1438e8996da620bf940a42ae2ca257305430592cf204d",
+        "rgbaSha256": "2fa7a257fa5f6e7af920cfdac69d90bd9fc4a64c5c909fea9a360691d1774196",
+        "width": 512,
+        "height": 512,
+        "bbox": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "derivation": {
+          "method": "resize",
+          "sourceSha256": "bd8df19179b803c6c5a292d275fc28b8cd1b35439de225b536968148524227d4",
+          "filter": "lanczos"
+        }
+      },
+      "cell": {
+        "width": 512,
+        "height": 512
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0,
+        "space": "source"
+      },
+      "render": {
+        "width": 256,
+        "height": 256
+      },
+      "state": "material",
+      "direction": null,
+      "loop": true,
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 512,
+          "height": 512,
+          "durationMs": 1000
+        }
+      ],
+      "alphaPolicy": "opaque",
+      "contactShadow": {
+        "mode": "none"
+      },
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "candidate": true,
+      "notes": "Quieter broad painted-ripple trial. Prior bright water-a retained. No shoreline or finalwater approval."
+    },
+    {
+      "id": "forest",
+      "family": "forest",
+      "kind": "prop",
+      "source": {
+        "path": "terrain/tree-broadleaf-a.png",
+        "sha256": "7cb5f28c907e3a1b93cbc0c2cbdd773f5974a0d270bf79742379f7fcc0ecfac7",
+        "rgbaSha256": "b625eedc2e880eaaa62477c7ba7797b86110013b9f0695e6ea06418c701da73a",
+        "width": 1254,
+        "height": 1254,
+        "bbox": [
+          0,
+          21,
+          1240,
+          1254
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ]
+      },
+      "runtime": {
+        "path": "runtime/forest-512.webp",
+        "sha256": "3b9b78cce37b89d73e55ca6da35e71e553723af397406fec6eafec9380232453",
+        "rgbaSha256": "fcc3b8690305d7faf824916479fc84e7b928800099d77856ddd510aa8e759e9e",
+        "width": 512,
+        "height": 512,
+        "bbox": [
+          23,
+          13,
+          505,
+          501
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "derivation": {
+          "method": "resize",
+          "sourceSha256": "7cb5f28c907e3a1b93cbc0c2cbdd773f5974a0d270bf79742379f7fcc0ecfac7",
+          "filter": "lanczos"
+        }
+      },
+      "cell": {
+        "width": 512,
+        "height": 512
+      },
+      "pivot": {
+        "x": 645,
+        "y": 1140,
+        "space": "source"
+      },
+      "render": {
+        "width": 75,
+        "height": 75
+      },
+      "state": "static",
+      "direction": null,
+      "loop": true,
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 512,
+          "height": 512,
+          "durationMs": 1000
+        }
+      ],
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "candidate": true,
+      "notes": "Common whole-canvas512px forest packaging at unchanged75px render andfixed645/1140pivot. Previous1254runtime/forest.webp preserved. Candidatefringe/visual review remainsopen."
+    },
+    {
+      "id": "residence",
+      "family": "residence",
+      "kind": "building",
+      "source": {
+        "path": "../../../docs/art/residence/variant-02/raw.png",
+        "sha256": "f617c3540680cafff467358bab1adb01bf735417563f2cba86ab8af523b07dcc",
+        "rgbaSha256": "51fd1193e644b8c444fd9daa23a6febbc1b79a26c96a430273d7715645baaed2",
+        "width": 1254,
+        "height": 1254,
+        "bbox": [
+          17,
+          21,
+          1254,
+          1254
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ]
+      },
+      "runtime": {
+        "path": "runtime/residence-512.webp",
+        "sha256": "225bbbae5f3f72695bbddf91270743b96f08488e09f23db2b5339ace78d091ea",
+        "rgbaSha256": "09ec25135fabdde428f5406afe325029f8d7d4927c7df53adb145bebb9e63a8e",
+        "width": 512,
+        "height": 512,
+        "bbox": [
+          6,
+          35,
+          512,
+          483
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "derivation": {
+          "method": "resize",
+          "sourceSha256": "f617c3540680cafff467358bab1adb01bf735417563f2cba86ab8af523b07dcc",
+          "filter": "lanczos"
+        }
+      },
+      "cell": {
+        "width": 512,
+        "height": 512
+      },
+      "pivot": {
+        "x": 640,
+        "y": 970,
+        "space": "source"
+      },
+      "render": {
+        "width": 130,
+        "height": 130
+      },
+      "state": "idle",
+      "direction": null,
+      "loop": true,
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 512,
+          "height": 512,
+          "durationMs": 1000
+        }
+      ],
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "candidate": true
+    },
+    {
+      "id": "infantry-idle-D00",
+      "family": "infantry",
+      "kind": "unit",
+      "source": {
+        "path": "../../../docs/art/units/sources/infantry-neutral-se-refine-01-imagegen-raw.png",
+        "sha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+        "rgbaSha256": "0fdc9a92dab8aa2c420c764ff0808977daec9f4133eda860cdebc18e67463179",
+        "width": 1254,
+        "height": 1254,
+        "bbox": [
+          97,
+          48,
+          1208,
+          1222
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ]
+      },
+      "runtime": {
+        "path": "runtime/infantry-idle-D00.webp",
+        "sha256": "de7a865b865ee6ac8b9ff7ba3df07825c01106e1e7ac691cb0924a187f145c51",
+        "rgbaSha256": "2d82cb1b8dca4004fbf424c1ca0f079682ac7df3f6c78ae8bb30fecb38c86e94",
+        "width": 512,
+        "height": 512,
+        "bbox": [
+          40,
+          19,
+          409,
+          488
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "derivation": {
+          "method": "resize",
+          "sourceSha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+          "filter": "lanczos"
+        }
+      },
+      "cell": {
+        "width": 512,
+        "height": 512
+      },
+      "pivot": {
+        "x": 653,
+        "y": 1057,
+        "space": "source"
+      },
+      "render": {
+        "width": 42,
+        "height": 42
+      },
+      "state": "idle",
+      "direction": 0,
+      "loop": true,
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 512,
+          "height": 512,
+          "durationMs": 1000
+        }
+      ],
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "separate",
+        "assetId": "unit-contact-shadow"
+      },
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "candidate": true,
+      "notes": "Elevated-camera refinement neutral only. Fixed foot-midpoint anchor measured from this new basis; this basis would be held for any future frames. No motion, contact-shadow or final visual approval."
+    },
+    {
+      "id": "cavalry-idle-D00",
+      "family": "cavalry",
+      "kind": "unit",
+      "source": {
+        "path": "../../../docs/art/units/sources/cavalry-neutral-se-imagegen-raw.png",
+        "sha256": "552c4fcdf8ce6bdb802c6faae1bc139416393d53cb30caa95a1d22309b77b091",
+        "rgbaSha256": "3c4a110747c50488d420b70d45f564b93c740a31227a5c278b7af190fe0d3caf",
+        "width": 1254,
+        "height": 1254,
+        "bbox": [
+          33,
+          17,
+          1224,
+          1226
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ]
+      },
+      "runtime": {
+        "path": "runtime/cavalry-idle-D00.webp",
+        "sha256": "8571f53f2260947f758e796806a8552b96ba221b004b47d4fcdb2c4c2d549709",
+        "rgbaSha256": "285eb7fc4be508b48bde261013e9520aaaf39ce96726f2adc472f2e90ccda3e0",
+        "width": 512,
+        "height": 512,
+        "bbox": [
+          29,
+          7,
+          455,
+          500
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "derivation": {
+          "method": "resize",
+          "sourceSha256": "552c4fcdf8ce6bdb802c6faae1bc139416393d53cb30caa95a1d22309b77b091",
+          "filter": "lanczos"
+        }
+      },
+      "cell": {
+        "width": 512,
+        "height": 512
+      },
+      "pivot": {
+        "x": 655,
+        "y": 1110,
+        "space": "source"
+      },
+      "render": {
+        "width": 51,
+        "height": 51
+      },
+      "state": "idle",
+      "direction": 0,
+      "loop": true,
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 512,
+          "height": 512,
+          "durationMs": 1000
+        }
+      ],
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "candidate": true
+    },
+    {
+      "id": "villager-idle-D00",
+      "family": "villager",
+      "kind": "unit",
+      "source": {
+        "path": "../../../docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+        "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+        "rgbaSha256": "c960d206222a191b903a8cc1a679e82bdce8d8c51df4010a935f444b3cacdb9c",
+        "width": 1254,
+        "height": 1254,
+        "bbox": [
+          65,
+          21,
+          1214,
+          1254
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ]
+      },
+      "runtime": {
+        "path": "runtime/villager-idle-D00.webp",
+        "sha256": "17aade7d14ecdc4655b5fd88778ed1a73540a2d2123fe18c9ac7482c1fc9762e",
+        "rgbaSha256": "a55d23f10428ca3a64b32b8baf216d145107f2fda04cfe2d6c584ba35e3270ac",
+        "width": 512,
+        "height": 512,
+        "bbox": [
+          40,
+          19,
+          465,
+          505
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "derivation": {
+          "method": "resize",
+          "sourceSha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+          "filter": "lanczos"
+        }
+      },
+      "cell": {
+        "width": 512,
+        "height": 512
+      },
+      "pivot": {
+        "x": 654,
+        "y": 1140,
+        "space": "source"
+      },
+      "render": {
+        "width": 38,
+        "height": 38
+      },
+      "state": "idle",
+      "direction": 0,
+      "loop": true,
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 512,
+          "height": 512,
+          "durationMs": 1000
+        }
+      ],
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "candidate": true,
+      "notes": "RAW fullcanvas candidate; separate artist-padded convenience derivative is not integrated. One neutral D00 view only, no motion or final approval."
+    },
+    {
+      "id": "tran-hung-dao-idle-D00",
+      "family": "tran_hung_dao",
+      "kind": "unit",
+      "source": {
+        "path": "../../../docs/art/characters/tran-hung-dao-neutral-D00-screen-ESE/raw.png",
+        "sha256": "21e7d7c160fc27b52f8e9475702914e73a628752a5c2b5a4c290d9c7b466d553",
+        "rgbaSha256": "0e609a27dcfb1998b55df073e7f084f35a7b19123c218376ac2cdced3db0e017",
+        "width": 1254,
+        "height": 1254,
+        "bbox": [
+          0,
+          16,
+          1230,
+          1254
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ]
+      },
+      "runtime": {
+        "path": "runtime/tran-hung-dao-idle-D00.webp",
+        "sha256": "f1f6b64cd4241120c821f392937dcef2fdaa02df18de0f234291589cd847b04c",
+        "rgbaSha256": "bd6a709084edeb73a33803ef01fbc40808431314c4b0f89b274c2ab5c3e53a92",
+        "width": 512,
+        "height": 512,
+        "bbox": [
+          36,
+          5,
+          494,
+          512
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "derivation": {
+          "method": "resize",
+          "sourceSha256": "21e7d7c160fc27b52f8e9475702914e73a628752a5c2b5a4c290d9c7b466d553",
+          "filter": "lanczos"
+        }
+      },
+      "cell": {
+        "width": 512,
+        "height": 512
+      },
+      "pivot": {
+        "x": 701,
+        "y": 1164,
+        "space": "source"
+      },
+      "render": {
+        "width": 42,
+        "height": 42
+      },
+      "state": "idle",
+      "direction": 0,
+      "loop": true,
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 512,
+          "height": 512,
+          "durationMs": 1000
+        }
+      ],
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "candidate": true,
+      "notes": "RAW fullcanvas candidate; separate artist-padded convenience derivative is not integrated. One neutral D00 view only, no motion or final approval."
+    },
+    {
+      "id": "unit-contact-shadow",
+      "family": "unit-contact-shadow",
+      "kind": "vfx",
+      "source": {
+        "path": "effects/unit-contact-shadow.png",
+        "sha256": "1572b3fd6dd84d36a423adbdbfca1975a071b07bd0c4043edd55688db0ed99bd",
+        "rgbaSha256": "242424c39edc2976292046eb766fcad9360a922b9c2b2f43d2ead0f5d6455d19",
+        "width": 1254,
+        "height": 1254,
+        "bbox": [
+          103,
+          53,
+          1196,
+          1196
+        ],
+        "alphaExtrema": [
+          0,
+          168
+        ]
+      },
+      "runtime": {
+        "path": "runtime/unit-contact-shadow.webp",
+        "sha256": "274b81f26e3869e158b0ab1e5093cd8a899d5255f0239c25ec7ab07ec314a7ff",
+        "rgbaSha256": "d581fe0139344e7a72697d43abcfe00b332f5eea107bb9a4ed7acebfb79ab647",
+        "width": 256,
+        "height": 256,
+        "bbox": [
+          66,
+          115,
+          200,
+          150
+        ],
+        "alphaExtrema": [
+          0,
+          167
+        ],
+        "derivation": {
+          "method": "resize",
+          "sourceSha256": "1572b3fd6dd84d36a423adbdbfca1975a071b07bd0c4043edd55688db0ed99bd",
+          "filter": "lanczos"
+        }
+      },
+      "cell": {
+        "width": 256,
+        "height": 256
+      },
+      "pivot": {
+        "x": 658,
+        "y": 648,
+        "space": "source"
+      },
+      "render": {
+        "width": 42,
+        "height": 42
+      },
+      "state": "static",
+      "direction": null,
+      "loop": true,
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 256,
+          "height": 256,
+          "durationMs": 1000
+        }
+      ],
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "none"
+      },
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "candidate": true,
+      "notes": "Independent translucent authored ground shadow; raw retained, candidate only."
+    },
+    {
+      "id": "ford",
+      "family": "ford",
+      "kind": "terrain",
+      "source": {
+        "path": "terrain/ford-a.png",
+        "sha256": "34d9d5f50cf1840277cfd0bf67e9c4909425a3eb8ff9ec3c1032783169b6f2ae",
+        "rgbaSha256": "88b0e2b4c4f9cf7caa5d19973fa9511aeb1d62b0b7bae556d1767006b891cd6e",
+        "width": 1254,
+        "height": 1254,
+        "bbox": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "alphaExtrema": [
+          255,
+          255
+        ]
+      },
+      "runtime": {
+        "path": "runtime/ford.webp",
+        "sha256": "6085208b5a3eaa97c8bb070da9faae489bf401b02e9da2213665e3925f567ad2",
+        "rgbaSha256": "c0b0f37850608b600ddc0152fef12a659095223f856b47e329ccba0e7e4bc336",
+        "width": 512,
+        "height": 512,
+        "bbox": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "derivation": {
+          "method": "resize",
+          "sourceSha256": "34d9d5f50cf1840277cfd0bf67e9c4909425a3eb8ff9ec3c1032783169b6f2ae",
+          "filter": "lanczos"
+        }
+      },
+      "cell": {
+        "width": 512,
+        "height": 512
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0,
+        "space": "source"
+      },
+      "render": {
+        "width": 256,
+        "height": 256
+      },
+      "state": "material",
+      "direction": null,
+      "loop": true,
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 512,
+          "height": 512,
+          "durationMs": 1000
+        }
+      ],
+      "alphaPolicy": "opaque",
+      "contactShadow": {
+        "mode": "none"
+      },
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "candidate": true,
+      "notes": "First shallow pebbled ford candidate, distinct from river/sea water. Hard tile-boundary shore transitions and material style review remain open; no approval."
+    },
+    {
+      "id": "shore",
+      "family": "shore",
+      "kind": "terrain",
+      "source": {
+        "path": "terrain/shore-b.png",
+        "sha256": "977c09ab6cdcbe48fd244c416dafd9f9353360bf41e1ac125edc55a460793fd3",
+        "rgbaSha256": "aa77e27379cd735ba083103e87e8d427c54ca95461484b932adc04bcdf902736",
+        "width": 1254,
+        "height": 1254,
+        "bbox": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "alphaExtrema": [
+          255,
+          255
+        ]
+      },
+      "runtime": {
+        "path": "runtime/shore-b.webp",
+        "sha256": "e8fd3695183ed37a726da4fa52ea57e026431ac99bb6e9508cbde85f364bd646",
+        "rgbaSha256": "d294c57b1d1cbf912ff9dc8e6b956dd78513b20bb7d465243e0e1d0fd9291c9a",
+        "width": 512,
+        "height": 512,
+        "bbox": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "derivation": {
+          "method": "resize",
+          "sourceSha256": "977c09ab6cdcbe48fd244c416dafd9f9353360bf41e1ac125edc55a460793fd3",
+          "filter": "lanczos"
+        }
+      },
+      "cell": {
+        "width": 512,
+        "height": 512
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0,
+        "space": "source"
+      },
+      "render": {
+        "width": 256,
+        "height": 256
+      },
+      "state": "material",
+      "direction": null,
+      "loop": true,
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 512,
+          "height": 512,
+          "durationMs": 1000
+        }
+      ],
+      "alphaPolicy": "opaque",
+      "contactShadow": {
+        "mode": "none"
+      },
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "candidate": true,
+      "notes": "Homogeneous wet ochre shoreB candidate for narrow real-map transition masks. Native/3x3 review retains faint seams and fine grain concern; browser approval not granted. ShoreA retained as rejected macro-patch/seam trial."
+    },
+    {
+      "id": "forest-bamboo",
+      "family": "forest",
+      "kind": "prop",
+      "source": {
+        "path": "terrain/forest-bamboo-a.png",
+        "sha256": "bb9b5088b37356b6c640fbc6d287460ac0f1605c41181fd77d17348b18f9b7c8",
+        "rgbaSha256": "d019aec99229a059eb25d54a4c7a7a7386b2b070e34f978e8b47c2572e9023d1",
+        "width": 1254,
+        "height": 1254,
+        "bbox": [
+          0,
+          7,
+          1248,
+          1254
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ]
+      },
+      "runtime": {
+        "path": "runtime/forest-bamboo-512.webp",
+        "sha256": "aadff088ffc55a9cf12597ab501f6524405a7c00634ed3017637ac77539bdcb7",
+        "rgbaSha256": "02e40d9dbb4ed73553df8344e6b03dd74b6ebadc70f4047d48c62d7bbea510a2",
+        "width": 512,
+        "height": 512,
+        "bbox": [
+          30,
+          12,
+          500,
+          496
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "derivation": {
+          "method": "resize",
+          "sourceSha256": "bb9b5088b37356b6c640fbc6d287460ac0f1605c41181fd77d17348b18f9b7c8",
+          "filter": "lanczos"
+        }
+      },
+      "cell": {
+        "width": 512,
+        "height": 512
+      },
+      "pivot": {
+        "x": 645,
+        "y": 1140,
+        "space": "source"
+      },
+      "render": {
+        "width": 75,
+        "height": 75
+      },
+      "state": "static",
+      "direction": null,
+      "loop": true,
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 512,
+          "height": 512,
+          "durationMs": 1000
+        }
+      ],
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "candidate": true,
+      "notes": "Original bamboo forestprofile candidate with samefixedfamilycanvas/pivot/render. Nativebrightfringe warning andfinalapproval remainopen; no sourcepixel repairs."
+    },
+    {
+      "id": "forest-palm",
+      "family": "forest",
+      "kind": "prop",
+      "source": {
+        "path": "terrain/forest-palm-a.png",
+        "sha256": "1a249128658e798e18a0e4c7d28e1479fdb0ac24e83f45615177ca45f2cac359",
+        "rgbaSha256": "b6aca15d7b50386a364f2ca96161bf37a2749b892316ad4f4883bd20d09ceb94",
+        "width": 1254,
+        "height": 1254,
+        "bbox": [
+          31,
+          9,
+          1216,
+          1254
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ]
+      },
+      "runtime": {
+        "path": "runtime/forest-palm-512.webp",
+        "sha256": "ab540fc3ef9eec050518c0a74bf2ad94743ea2bf429f03bfe5b114d2fc3c239a",
+        "rgbaSha256": "7a148323dd6b2fa014f9f26f061dd1c67e86f5a5959c818966f9ad431ac506a4",
+        "width": 512,
+        "height": 512,
+        "bbox": [
+          35,
+          4,
+          494,
+          495
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "derivation": {
+          "method": "resize",
+          "sourceSha256": "1a249128658e798e18a0e4c7d28e1479fdb0ac24e83f45615177ca45f2cac359",
+          "filter": "lanczos"
+        }
+      },
+      "cell": {
+        "width": 512,
+        "height": 512
+      },
+      "pivot": {
+        "x": 645,
+        "y": 1140,
+        "space": "source"
+      },
+      "render": {
+        "width": 75,
+        "height": 75
+      },
+      "state": "static",
+      "direction": null,
+      "loop": true,
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 512,
+          "height": 512,
+          "durationMs": 1000
+        }
+      ],
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "candidate": true,
+      "notes": "Original palm forestprofile candidate with samefixedfamilycanvas/pivot/render. Nativebrightfringe warning andfinalapproval remainopen; no sourcepixel repairs."
+    },
+    {
+      "id": "granary",
+      "family": "granary",
+      "kind": "building",
+      "source": {
+        "path": "../../../docs/art/granary/variant-01/raw.png",
+        "sha256": "0d0c3963f3faed9341cd09f2ff118a753e9bd1ee431290b51635eebb17b61715",
+        "rgbaSha256": "c581948e880937a356ffe68c0be47f2ba26802327eba482356b7a8057d67d3d9",
+        "width": 1254,
+        "height": 1254,
+        "bbox": [
+          41,
+          21,
+          1230,
+          1254
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ]
+      },
+      "runtime": {
+        "path": "runtime/granary-idle.webp",
+        "sha256": "b663d289fe8fbe44e778b586d8e5aa85aa14401badafcfabe12b4aae963f4cca",
+        "rgbaSha256": "df3e2e6bbc7c4cb6632012228ae1a308ece43325d79053accef479dcf3331cb3",
+        "width": 512,
+        "height": 512,
+        "bbox": [
+          16,
+          42,
+          504,
+          495
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "0d0c3963f3faed9341cd09f2ff118a753e9bd1ee431290b51635eebb17b61715"
+        }
+      },
+      "cell": {
+        "width": 512,
+        "height": 512
+      },
+      "pivot": {
+        "x": 640,
+        "y": 1050,
+        "space": "source"
+      },
+      "render": {
+        "width": 85,
+        "height": 85
+      },
+      "state": "idle",
+      "direction": null,
+      "loop": true,
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 512,
+          "height": 512,
+          "durationMs": 1000
+        }
+      ],
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "candidate": true
+    },
+    {
+      "id": "villager-walk-south-014",
+      "family": "unit.villager",
+      "kind": "unit",
+      "state": "walk",
+      "direction": 1,
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/authoring-tools/villager-walk-SOUTH-007/walk/keys/F00-left-contact-01/raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001",
+        "rgbaSha256": "07bc362e869f40e8a3d5ba0b6fabdd7845f6132c0aa4656a17f762ee46609410"
+      },
+      "runtime": {
+        "path": "walk-014/atlas.png",
+        "sha256": "b2bdd86bd02f967bde9b070e5952e97dae257706b5d52730b787e32e9580fc13",
+        "rgbaSha256": "44c8454d0663c6c9823138633596a46af50efe5b42530f2ef1ab210d2c6790eb",
+        "width": 528,
+        "height": 264,
+        "derivation": {
+          "method": "atlas",
+          "filter": "lanczos",
+          "sourceSha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "render": {
+        "width": 89,
+        "height": 89
+      },
+      "pivot": {
+        "x": 654,
+        "y": 1140,
+        "space": "source"
+      },
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "separate",
+        "assetId": "unit-contact-shadow"
+      },
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "loop": true,
+      "frames": [
+        {
+          "index": 0,
+          "phase": "F0",
+          "x": 2,
+          "y": 2,
+          "width": 128,
+          "height": 128,
+          "durationMs": 75,
+          "events": [
+            {
+              "name": "FOOT_CONTACT_LEFT",
+              "offsetMs": 0
+            }
+          ],
+          "source": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/authoring-tools/villager-walk-SOUTH-007/walk/keys/F00-left-contact-01/raw.png",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001",
+            "rgbaSha256": "07bc362e869f40e8a3d5ba0b6fabdd7845f6132c0aa4656a17f762ee46609410"
+          },
+          "pivot": {
+            "x": 654,
+            "y": 1140,
+            "space": "source"
+          },
+          "timeMs": 0,
+          "selectionStatus": "SELECTED_KEY_CANDIDATE",
+          "selectionReceipt": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-loop-preview-014/selection/F0.json",
+            "sha256": "844feb9222f8c4e6d9c24e04116f26f5c370a9446434ed52809b744b16e98ce6"
+          }
+        },
+        {
+          "index": 1,
+          "phase": "F1",
+          "x": 134,
+          "y": 2,
+          "width": 128,
+          "height": 128,
+          "durationMs": 75,
+          "events": [],
+          "source": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-011/F1-inbetween-01/raw.png",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "1306a28e6424d6f9c1d547ee3c68bff22a93e544bd9264117514b3cc10b96356",
+            "rgbaSha256": "623ec4c6991fe775a328a7e90e5ada0ddaa9c7c6007c3627191a98d2afa7a6b8"
+          },
+          "pivot": {
+            "x": 654,
+            "y": 1140,
+            "space": "source"
+          },
+          "timeMs": 75,
+          "selectionStatus": "SELECTED_INBETWEEN_CANDIDATE",
+          "selectionReceipt": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-loop-preview-014/selection/F1.json",
+            "sha256": "1a906047c09937aada8355489ccd3cfe140eaeb144f677c39eb3475939ad2684"
+          }
+        },
+        {
+          "index": 2,
+          "phase": "F2",
+          "x": 266,
+          "y": 2,
+          "width": 128,
+          "height": 128,
+          "durationMs": 75,
+          "events": [],
+          "source": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-010/F2-right-passing-01/raw.png",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "bd2679353741d51575a99ccd0ded835281d0688abb1018146ed60d3077cc2b1c",
+            "rgbaSha256": "1a9f899a98ff1daea6c4e8a32ae9a507b8098a5e65ea9541c1757f5432e3208c"
+          },
+          "pivot": {
+            "x": 654,
+            "y": 1140,
+            "space": "source"
+          },
+          "timeMs": 150,
+          "selectionStatus": "SELECTED_KEY_CANDIDATE",
+          "selectionReceipt": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-loop-preview-014/selection/F2.json",
+            "sha256": "41bc7d8b1fde752ec05e65aa6a416a6aa89b11456548967bf6635cc5f685a0d3"
+          }
+        },
+        {
+          "index": 3,
+          "phase": "F3",
+          "x": 398,
+          "y": 2,
+          "width": 128,
+          "height": 128,
+          "durationMs": 75,
+          "events": [],
+          "source": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-011/F3-inbetween-01/raw.png",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "b7201ddf0e9e791b708835fd52a278af5c9487a2ee1a9c9592fa42d6b3e12687",
+            "rgbaSha256": "ed7d1f5900e1793eac8f0aa84c0a8a98e9f5c02a03c979fec898fe43b13f1805"
+          },
+          "pivot": {
+            "x": 654,
+            "y": 1140,
+            "space": "source"
+          },
+          "timeMs": 225,
+          "selectionStatus": "SELECTED_INBETWEEN_CANDIDATE",
+          "selectionReceipt": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-loop-preview-014/selection/F3.json",
+            "sha256": "1edebaf970f00cae9ffa7ada070478a87d2400cbbb4510439541eaf0a85db2a2"
+          }
+        },
+        {
+          "index": 4,
+          "phase": "F4",
+          "x": 2,
+          "y": 134,
+          "width": 128,
+          "height": 128,
+          "durationMs": 75,
+          "events": [
+            {
+              "name": "FOOT_CONTACT_RIGHT",
+              "offsetMs": 0
+            }
+          ],
+          "source": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-009/F4-trailing-contact-correction-01/raw.png",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "929b9805f696abf341b8ea9b4df425a753da2c48b1be9ca13282bb5c72e0793f",
+            "rgbaSha256": "12a430a74fe4a945971a0821b6a0c7548cf6db9b84f40aedaeccfd40b28b75d8"
+          },
+          "pivot": {
+            "x": 654,
+            "y": 1140,
+            "space": "source"
+          },
+          "timeMs": 300,
+          "selectionStatus": "SELECTED_KEY_CANDIDATE",
+          "selectionReceipt": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-loop-preview-014/selection/F4.json",
+            "sha256": "5c5f91abb5909541414562f8862e81e740132340f79656092323df3b58c9a46f"
+          }
+        },
+        {
+          "index": 5,
+          "phase": "F5",
+          "x": 134,
+          "y": 134,
+          "width": 128,
+          "height": 128,
+          "durationMs": 75,
+          "events": [],
+          "source": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-011/F5-inbetween-01/raw.png",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "9db20e4f44a57dfe0c801673b6e18c41350b44c88d486933d03d7dd359f90b36",
+            "rgbaSha256": "13b06b25f91d66e1022c3e84b534669d678cb2da05aee6850e38ca0cf1db06de"
+          },
+          "pivot": {
+            "x": 654,
+            "y": 1140,
+            "space": "source"
+          },
+          "timeMs": 375,
+          "selectionStatus": "SELECTED_INBETWEEN_CANDIDATE",
+          "selectionReceipt": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-loop-preview-014/selection/F5.json",
+            "sha256": "eec7435476fbd1cb381348b0e47ff8888ecc85cde30b68dc01beeaa8984c14b1"
+          }
+        },
+        {
+          "index": 6,
+          "phase": "F6",
+          "x": 266,
+          "y": 134,
+          "width": 128,
+          "height": 128,
+          "durationMs": 75,
+          "events": [],
+          "source": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-010/F6-left-passing-01/raw.png",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "6ed3e9b8f0693441c457038e748789496421cefe3e02c696b6956fa074f34822",
+            "rgbaSha256": "7e13e010294f7013a3b871a67b9a9c390f4559e68fa2eb6b27546538b576d41b"
+          },
+          "pivot": {
+            "x": 654,
+            "y": 1140,
+            "space": "source"
+          },
+          "timeMs": 450,
+          "selectionStatus": "SELECTED_KEY_CANDIDATE",
+          "selectionReceipt": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-loop-preview-014/selection/F6.json",
+            "sha256": "2d4efbb987ba1c7e1c4bdb96af3fb68338b0e5eaaf17cd96b8ab40a4f5445499"
+          }
+        },
+        {
+          "index": 7,
+          "phase": "F7",
+          "x": 398,
+          "y": 134,
+          "width": 128,
+          "height": 128,
+          "durationMs": 75,
+          "events": [],
+          "source": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-013/F7-spacing-correction-01/raw.png",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "716902cbeeb96793da81583548b736bd0c9ab735922398ac5728c574d680f479",
+            "rgbaSha256": "962762d41e745f8b0f238668105af0488da16307c19a096eea01c0273904b92a"
+          },
+          "pivot": {
+            "x": 654,
+            "y": 1140,
+            "space": "source"
+          },
+          "timeMs": 525,
+          "selectionStatus": "SELECTED_INBETWEEN_CANDIDATE",
+          "selectionReceipt": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-loop-preview-014/selection/F7.json",
+            "sha256": "adeb963b4cabff6e71846c5f6f23a3d66e354856758181a4cd87bc231daa07f0"
+          }
+        }
+      ],
+      "locomotion": {
+        "distancePerCycle": 1.26,
+        "status": "PROVISIONAL_2_1_WORLD_SPEED_TIMES_0_6_SECONDS_NOT_FOOTLOCK_PROOF"
+      },
+      "notes": "Optional local art=walk: actual illustrated South walk014 candidate; distance phase is provisional, no motion/runtime/owner approval."
+    },
+    {
+      "id": "villager-idle-south-014",
+      "family": "unit.villager",
+      "kind": "unit",
+      "state": "idle",
+      "direction": 1,
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+        "rgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6"
+      },
+      "runtime": {
+        "path": "walk-014/idle.png",
+        "width": 128,
+        "height": 128,
+        "sha256": "17962707943bb616362271cdde1abbfc17a05b0bad950dc714dd3586954b95ab",
+        "rgbaSha256": "701143131c71470bf01612220cb870f0f47abda08a1089e9407c4505f1ac8721",
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "render": {
+        "width": 89,
+        "height": 89
+      },
+      "pivot": {
+        "x": 654,
+        "y": 1140,
+        "space": "source"
+      },
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "separate",
+        "assetId": "unit-contact-shadow"
+      },
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "loop": true,
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 1000,
+          "events": []
+        }
+      ],
+      "notes": "Canonical South idle, uniform complete-canvas derivative; candidate only."
+    },
+    {
+      "id": "villager-gather-wood-south-024",
+      "family": "unit.villager",
+      "kind": "unit",
+      "state": "gather_wood",
+      "direction": 1,
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-018/F00-call01/raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "e6293fe86eaefc2c9f414241320ab178758cdd52ef09946344364b6a41e41117",
+        "rgbaSha256": "7f00697cb2bb32ee39436b83f2169894e7c78569c61faeb22816d4233f4ae7ac"
+      },
+      "runtime": {
+        "path": "gather-026/atlas.png",
+        "sha256": "5db6455a859a823658e2297544ca739dd466509856f8c2534644a05903cd1092",
+        "rgbaSha256": "3d3808dac11252a5c250c08b6a79f3763fc30472be5badf557a7e79215617a50",
+        "width": 528,
+        "height": 264,
+        "derivation": {
+          "method": "atlas",
+          "filter": "lanczos",
+          "sourceSha256": "e6293fe86eaefc2c9f414241320ab178758cdd52ef09946344364b6a41e41117"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "render": {
+        "width": 89,
+        "height": 89
+      },
+      "pivot": {
+        "x": 654,
+        "y": 1140,
+        "space": "source"
+      },
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "separate",
+        "assetId": "unit-contact-shadow"
+      },
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "loop": true,
+      "frames": [
+        {
+          "index": 0,
+          "phase": "F0",
+          "x": 2,
+          "y": 2,
+          "width": 128,
+          "height": 128,
+          "durationMs": 170,
+          "events": [],
+          "source": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-018/F00-call01/raw.png",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "e6293fe86eaefc2c9f414241320ab178758cdd52ef09946344364b6a41e41117",
+            "rgbaSha256": "7f00697cb2bb32ee39436b83f2169894e7c78569c61faeb22816d4233f4ae7ac"
+          },
+          "pivot": {
+            "x": 654,
+            "y": 1140,
+            "space": "source"
+          },
+          "timeMs": 0,
+          "selectionStatus": "SELECTED_FRAME_CANDIDATE",
+          "selectionReceipt": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/pure2d-gather-preview-024/actual-selections/F0.json",
+            "sha256": "e51343f6c2d6ae4ef020f79656680d8ebd959c02f9f365b1f6373e7e2435cb05"
+          }
+        },
+        {
+          "index": 1,
+          "phase": "F1",
+          "x": 134,
+          "y": 2,
+          "width": 128,
+          "height": 128,
+          "durationMs": 130,
+          "events": [],
+          "source": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-025/F01-call01/raw.png",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "ea3663e1df046818a7eeff363e2771d8e2fc76dcc8cb6e1e6ecaedf4e0c55cdf",
+            "rgbaSha256": "e79a51c9eaae1017b8636bd8e665668050e9849f2adfc35d758a8ee23218473a"
+          },
+          "pivot": {
+            "x": 654,
+            "y": 1140,
+            "space": "source"
+          },
+          "timeMs": 170,
+          "selectionStatus": "SELECTED_FRAME_CANDIDATE",
+          "selectionReceipt": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/pure2d-gather-preview-024/actual-selections/F1.json",
+            "sha256": "755237ce602e5b820546fbbf5f61b87d4e1f9525c69ca48b042b86e2f231070d"
+          }
+        },
+        {
+          "index": 2,
+          "phase": "F2",
+          "x": 266,
+          "y": 2,
+          "width": 128,
+          "height": 128,
+          "durationMs": 160,
+          "events": [],
+          "source": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-021/F02-call01/raw.png",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "bb10c55f7f648e82b952ef955989ad1ffe38eb0332c9aa8d0381557a1867f4e9",
+            "rgbaSha256": "546afa09bd1b1eb36f788d1603aafd804330a16a0d0607f33a4e68ce96644309"
+          },
+          "pivot": {
+            "x": 654,
+            "y": 1140,
+            "space": "source"
+          },
+          "timeMs": 300,
+          "selectionStatus": "SELECTED_FRAME_CANDIDATE",
+          "selectionReceipt": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/pure2d-gather-preview-024/actual-selections/F2.json",
+            "sha256": "e3527f10d49676265625c3badd862de381fac3b9c3583500c1b0dd5be92ad71b"
+          }
+        },
+        {
+          "index": 3,
+          "phase": "F3",
+          "x": 398,
+          "y": 2,
+          "width": 128,
+          "height": 128,
+          "durationMs": 80,
+          "events": [],
+          "source": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-027/F03-call01/raw.png",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "79fb1413141ffef016f04242e0f82ec1eb6f79b55e8f0f7665ea2fd933580725",
+            "rgbaSha256": "c1f2a4fb97d48f8a3d3536f97c9122c6e3e49deb1632df97f6de94db6659058d"
+          },
+          "pivot": {
+            "x": 654,
+            "y": 1140,
+            "space": "source"
+          },
+          "timeMs": 460,
+          "selectionStatus": "SELECTED_FRAME_CANDIDATE",
+          "selectionReceipt": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/pure2d-gather-preview-024/actual-selections/F3.json",
+            "sha256": "b3c311ace6135bd7b2ec91bb76c03f0fbcb7bf20de546fb5b1689b62c95cfc66"
+          }
+        },
+        {
+          "index": 4,
+          "phase": "F4",
+          "x": 2,
+          "y": 134,
+          "width": 128,
+          "height": 128,
+          "durationMs": 100,
+          "events": [],
+          "source": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-022/F04-call01/raw.png",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "2c84045f4a17c7440fb2cc494e9a9ce4ac1c721ad851427140f5544a98ef0cdc",
+            "rgbaSha256": "d3bad7b278bd6e86503bb738ace6718d1f3fab3d0b8475c5daeeb7a32bd1ba8f"
+          },
+          "pivot": {
+            "x": 654,
+            "y": 1140,
+            "space": "source"
+          },
+          "timeMs": 540,
+          "selectionStatus": "SELECTED_FRAME_CANDIDATE",
+          "selectionReceipt": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/pure2d-gather-preview-024/actual-selections/F4.json",
+            "sha256": "3cf0862b5d2b64e89d813f414dcd9fc892cf9c25a3921922a1e50b5f6b24e9df"
+          }
+        },
+        {
+          "index": 5,
+          "phase": "F5",
+          "x": 134,
+          "y": 134,
+          "width": 128,
+          "height": 128,
+          "durationMs": 110,
+          "events": [],
+          "source": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-025/F03-call01/raw.png",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "232977b035b03bc70ba79c799b97e787c24fd92491aa80f3d32c0fe6a462625e",
+            "rgbaSha256": "e00a0fdcfb5ce3851cb4ea5d84b558a8dea5042767bd13e1258edc017acdcf7c"
+          },
+          "pivot": {
+            "x": 654,
+            "y": 1140,
+            "space": "source"
+          },
+          "timeMs": 640,
+          "selectionStatus": "SELECTED_FRAME_CANDIDATE",
+          "selectionReceipt": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/pure2d-gather-preview-024/actual-selections/F5.json",
+            "sha256": "a386aadefd87e2d490d88e8399b67eb26e178fc5769599d9b08b051e9a40a551"
+          }
+        },
+        {
+          "index": 6,
+          "phase": "F6",
+          "x": 266,
+          "y": 134,
+          "width": 128,
+          "height": 128,
+          "durationMs": 150,
+          "events": [],
+          "source": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-023/raw.png",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "d29a192ff4e83a492704f5c9b4c34d64bc283f1d0804380effae565c38feb9a3",
+            "rgbaSha256": "34dd13cf5a9fbc0ec1fa0c05fbe8bdc8d9b3aaeddbb0a5351671387767812367"
+          },
+          "pivot": {
+            "x": 654,
+            "y": 1140,
+            "space": "source"
+          },
+          "timeMs": 750,
+          "selectionStatus": "SELECTED_FRAME_CANDIDATE",
+          "selectionReceipt": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/pure2d-gather-preview-024/actual-selections/F6.json",
+            "sha256": "2ddfb09276f038957a1ee2f5974646908ccffd836bd70a8163fab2e2f00874b3"
+          }
+        },
+        {
+          "index": 7,
+          "phase": "F7",
+          "x": 398,
+          "y": 134,
+          "width": 128,
+          "height": 128,
+          "durationMs": 180,
+          "events": [],
+          "source": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-027/F07-call01/raw.png",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "65293598567498d3c624dc2ce8098faed4b3a0f79d27b03b11c79a75fac0fb11",
+            "rgbaSha256": "cf4f52d40a3d0ee93b9c800b8ea09621c3382e548461920b741469a6c2a97073"
+          },
+          "pivot": {
+            "x": 654,
+            "y": 1140,
+            "space": "source"
+          },
+          "timeMs": 900,
+          "selectionStatus": "SELECTED_FRAME_CANDIDATE",
+          "selectionReceipt": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha-art-lease/pure2d-gather-preview-024/actual-selections/F7.json",
+            "sha256": "8641942fd64a8427dc61e38681e6f410d5d60f2442749ba4cda7102e99eee201"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mountain-outcrop-108",
+      "family": "mountain",
+      "kind": "prop",
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/terrain/mountain-outcrop-108/mountain-outcrop-108.raw.png",
+        "sha256": "034583e5c722641a13ef80582a1a30307409fe73605cb077360ef4c29f4456b6",
+        "rgbaSha256": "cace87e921fa8ad319c5a3397ae9200b2c2e795ccd5427e37d906802f46e1db1",
+        "width": 1254,
+        "height": 1254,
+        "bbox": [
+          19,
+          149,
+          1241,
+          1072
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ]
+      },
+      "runtime": {
+        "path": "mountain-109/outcrop.png",
+        "sha256": "ac40ed9d28766e22aa561f00903dec3cd90308f110fb373f998acf551456ee2f",
+        "rgbaSha256": "10e71d812d1ce594743d647ca49c9ae84877ca83b1314da514a59412d8a068f7",
+        "width": 128,
+        "height": 128,
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "034583e5c722641a13ef80582a1a30307409fe73605cb077360ef4c29f4456b6"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 1070,
+        "space": "source"
+      },
+      "render": {
+        "width": 56,
+        "height": 56
+      },
+      "state": "static",
+      "direction": null,
+      "loop": true,
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 1000
+        }
+      ],
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "candidate": true,
+      "notes": "108wholecanvas original;109parent authorized uniform56render;sourcecandidate intake only"
+    },
+    {
+      "id": "grassy-hill-111",
+      "family": "hill",
+      "kind": "prop",
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/terrain/grassy-hill-111/raw.png",
+        "sha256": "80fb4fbaa6fe48406d8b48513bb5c5f3117a04f38e6f6db13df5f590cfdfcc42",
+        "rgbaSha256": "4a7c2610dbe177e72ecdf3c555142decb780879666a5f66460f2d8593fbbf283",
+        "width": 1254,
+        "height": 1254,
+        "alphaRange": [
+          0,
+          255
+        ],
+        "bbox": [
+          0,
+          19,
+          1238,
+          1254
+        ]
+      },
+      "runtime": {
+        "path": "hill-113/hill.png",
+        "sha256": "c4871587aaf5c68d111c492138ee1813771ec8246d02a326f4f62726a5dc3ed0",
+        "rgbaSha256": "4309a51cc30c9cec6e46606b5342f8db67b0104c925669aa8674f30e9b9d56e4",
+        "width": 128,
+        "height": 128,
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "80fb4fbaa6fe48406d8b48513bb5c5f3117a04f38e6f6db13df5f590cfdfcc42"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 777.48,
+        "space": "source"
+      },
+      "render": {
+        "width": 72,
+        "height": 72
+      },
+      "state": "static",
+      "direction": null,
+      "loop": true,
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 1000
+        }
+      ],
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "candidate": true,
+      "notes": "111 original whole canvas;113 one global72 ground overlay"
+    },
+    {
+      "id": "food-resource-114",
+      "family": "food",
+      "kind": "prop",
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/terrain/food-resource-114/raw.png",
+        "sha256": "45a28a78419cd8c3f3d9b3f6ed36b3ce25127fbe34d2b2353c4226ca7e68218b",
+        "rgbaSha256": "23ab90a5d175736f5b92506535bbcb8eebaa11a0307e24f88ec1d9965d357de4",
+        "width": 1254,
+        "height": 1254,
+        "alphaRange": [
+          0,
+          255
+        ],
+        "bbox": [
+          0,
+          19,
+          1238,
+          1254
+        ]
+      },
+      "runtime": {
+        "path": "food-resource-115/food.png",
+        "sha256": "bf51cb7b25174a866bd86506a94dede5348bd30f0eae5c4a365aec0ef7b68801",
+        "rgbaSha256": "3ff5f02d3a870a41a6e2ea0d4e802daacedb492ae9bdbd4c5e2932c8e9a5ed78",
+        "width": 128,
+        "height": 128,
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "45a28a78419cd8c3f3d9b3f6ed36b3ce25127fbe34d2b2353c4226ca7e68218b"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 902.88,
+        "space": "source"
+      },
+      "render": {
+        "width": 48,
+        "height": 48
+      },
+      "state": "static",
+      "direction": null,
+      "loop": true,
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 1000
+        }
+      ],
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "candidate": true,
+      "notes": "114 wholecanvas original frozenauthor40 preserved;115global48worldresource"
+    },
+    {
+      "id": "iron-resource-119",
+      "family": "iron",
+      "kind": "prop",
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/terrain/iron-resource-119/raw.png",
+        "sha256": "57a5a4a1cb09760c46ec41deefb011a7f3dd0858aafce1c39b2da85a111888e5",
+        "rgbaSha256": "eb4386a2a1a4bf01645f4b492060c8cd9bc6315482c346ae487eb892088e596e",
+        "width": 1254,
+        "height": 1254,
+        "alphaRange": [
+          0,
+          255
+        ],
+        "bbox": [
+          0,
+          19,
+          1238,
+          1254
+        ]
+      },
+      "runtime": {
+        "path": "iron-resource-120/iron.png",
+        "sha256": "1c2348701544814250d6da1bc8dc71eb236bcdaa2376a0aa584c4bde6aa312c0",
+        "rgbaSha256": "18b37c38c07c12a2ad1cd0a1e5be0b3654d90fa8fb7ce9826367d5bdaaaa8b01",
+        "width": 128,
+        "height": 128,
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "57a5a4a1cb09760c46ec41deefb011a7f3dd0858aafce1c39b2da85a111888e5"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 978.12,
+        "space": "source"
+      },
+      "render": {
+        "width": 48,
+        "height": 48
+      },
+      "state": "static",
+      "direction": null,
+      "loop": true,
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 1000
+        }
+      ],
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "candidate": true,
+      "notes": "119originalwholecanvas author56preserved;120ONEglobal48runtime"
+    },
+    {
+      "id": "barracks-idle-121",
+      "family": "building.barracks",
+      "kind": "building",
+      "state": "idle",
+      "direction": null,
+      "candidate": true,
+      "alphaPolicy": "transparent",
+      "source": {
+        "path": "../../../docs/art/buildings/barracks-idle-121/raw.png",
+        "sha256": "65235252a47fdf4e6b1c9db67a56a05db13b7e08dd93682a7226bc8a5cb76d00",
+        "width": 1254,
+        "height": 1254,
+        "rgbaSha256": "085443b8e0ccd7ee7bdf0eff77917473b167098a9fb6f23c4a39ad494b13459d"
+      },
+      "runtime": {
+        "path": "barracks-122/idle.webp",
+        "sha256": "c67536163440591c3675f4b72639c3c184e12eba6015d7a461bfde2953aec4c4",
+        "width": 256,
+        "height": 256,
+        "rgbaSha256": "7c4b8cf957f6ccfcc5ae645daf10eeb05a94da96be854af230632edbb871cb7c",
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "65235252a47fdf4e6b1c9db67a56a05db13b7e08dd93682a7226bc8a5cb76d00"
+        }
+      },
+      "pivot": {
+        "x": 627,
+        "y": 1010,
+        "space": "source"
+      },
+      "render": {
+        "width": 112,
+        "height": 112
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 256,
+          "height": 256,
+          "durationMs": 1000
+        }
+      ],
+      "loop": true,
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "cell": {
+        "width": 256,
+        "height": 256
+      },
+      "review": {
+        "status": "CANDIDATE"
+      }
+    },
+    {
+      "id": "supply-depot-idle-126",
+      "family": "building.depot",
+      "kind": "building",
+      "state": "idle",
+      "direction": null,
+      "candidate": true,
+      "alphaPolicy": "transparent",
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/buildings/supply-depot-idle-126/raw.png",
+        "sha256": "44c96329f2fdc8b8dae9c589400d798ac3911c1118b21714114f872f9aa676e1",
+        "width": 1254,
+        "height": 1254,
+        "rgbaSha256": "6218c329b70738ba0032c15b8a8cb5f034195962d9c98b4775c8c998f18192ca",
+        "bbox": [
+          33,
+          20,
+          1232,
+          1168
+        ]
+      },
+      "runtime": {
+        "path": "supply-depot-127/depot.webp",
+        "sha256": "fc6626d6b88cfaf3e240cdf6f2a0df33d4f34122133742c3f3c2e836cddda462",
+        "width": 256,
+        "height": 256,
+        "rgbaSha256": "cf4e0d3057417c9ae30a39e896d729523eef87ba9713e05d135653e5b8716d64",
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "44c96329f2fdc8b8dae9c589400d798ac3911c1118b21714114f872f9aa676e1"
+        }
+      },
+      "pivot": {
+        "x": 627,
+        "y": 1010,
+        "space": "source"
+      },
+      "render": {
+        "width": 96,
+        "height": 96
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 256,
+          "height": 256,
+          "durationMs": 1000
+        }
+      ],
+      "loop": true,
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "cell": {
+        "width": 256,
+        "height": 256
+      },
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "notes": "126originalwholecanvas frozen96sourceidle;127 optional completedlivingidle only"
+    },
+    {
+      "id": "villager-gather-iron-south-136",
+      "family": "unit.villager",
+      "kind": "unit",
+      "state": "gather_iron",
+      "direction": 1,
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/villager-gather-iron-SOUTH-131/F00-raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "7912b5c550a8deab4718551d7fb2052fa3148b736afb5c69a7308da81e91ee0d",
+        "rgbaSha256": "691739c9d6c0b997d701d7bce811d21c1bb4978442581650a8629a07c5bb8a31"
+      },
+      "runtime": {
+        "path": "iron-137/atlas.png",
+        "sha256": "0f53648dd459d91a93b35dbf113c12fe753017b0971ec0ed8a55ad7647aab7cc",
+        "rgbaSha256": "7962e78ebe5afc46d4a53d4d4d4d52641b6299f5caca944f4344cc4a0c406adf",
+        "width": 528,
+        "height": 264,
+        "derivation": {
+          "method": "atlas",
+          "filter": "lanczos",
+          "sourceSha256": "7912b5c550a8deab4718551d7fb2052fa3148b736afb5c69a7308da81e91ee0d"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "render": {
+        "width": 89,
+        "height": 89
+      },
+      "pivot": {
+        "x": 654,
+        "y": 1140,
+        "space": "source"
+      },
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "separate",
+        "assetId": "unit-contact-shadow"
+      },
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "loop": true,
+      "frames": [
+        {
+          "index": 0,
+          "phase": "F0",
+          "x": 2,
+          "y": 2,
+          "width": 128,
+          "height": 128,
+          "durationMs": 170,
+          "events": [],
+          "source": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/villager-gather-iron-SOUTH-131/F00-raw.png",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "7912b5c550a8deab4718551d7fb2052fa3148b736afb5c69a7308da81e91ee0d",
+            "rgbaSha256": "691739c9d6c0b997d701d7bce811d21c1bb4978442581650a8629a07c5bb8a31"
+          },
+          "pivot": {
+            "x": 654,
+            "y": 1140,
+            "space": "source"
+          },
+          "timeMs": 0,
+          "selectionStatus": "SELECTED_FRAME_CANDIDATE",
+          "selectionReceipt": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-iron-preview-136/selection-adapters/F00.json",
+            "sha256": "f1158bd335ad606c214348381cf336bd57acdc89472c20ffe42e42fbd590241f"
+          }
+        },
+        {
+          "index": 1,
+          "phase": "F1",
+          "x": 134,
+          "y": 2,
+          "width": 128,
+          "height": 128,
+          "durationMs": 130,
+          "events": [],
+          "source": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/villager-gather-iron-SOUTH-139/F01/raw.png",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "414313372d2a13f241951d4d2c5373d695fe12d4d0656ddec4c6642ecde52529",
+            "rgbaSha256": "7535d5bc71f1aa5ca61a61ff65be93d0637ce5b6267b2fd4d33ddd6f8abd819f"
+          },
+          "pivot": {
+            "x": 654,
+            "y": 1140,
+            "space": "source"
+          },
+          "timeMs": 170,
+          "selectionStatus": "SELECTED_FRAME_CANDIDATE",
+          "selectionReceipt": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-iron-preview-136/selection-adapters/F01.json",
+            "sha256": "21993ba4b119d9a40be32fd29db41f228cb4cd855b6eb244a4677a31f68e8c89"
+          }
+        },
+        {
+          "index": 2,
+          "phase": "F2",
+          "x": 266,
+          "y": 2,
+          "width": 128,
+          "height": 128,
+          "durationMs": 160,
+          "events": [],
+          "source": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/villager-gather-iron-SOUTH-134/F02/raw.png",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "be76be63911be3c42f7d95e35662c544b4d964b76f95230f225883622f8a4196",
+            "rgbaSha256": "ca98edd9ba9658f04bf6ce186019545f2b0237bb39f4cc644ed8b005f5522c25"
+          },
+          "pivot": {
+            "x": 654,
+            "y": 1140,
+            "space": "source"
+          },
+          "timeMs": 300,
+          "selectionStatus": "SELECTED_FRAME_CANDIDATE",
+          "selectionReceipt": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-iron-preview-136/selection-adapters/F02.json",
+            "sha256": "97225eff93ba94f1317986a75f6f97d617291888e4a05713abde292f4545e419"
+          }
+        },
+        {
+          "index": 3,
+          "phase": "F3",
+          "x": 398,
+          "y": 2,
+          "width": 128,
+          "height": 128,
+          "durationMs": 80,
+          "events": [],
+          "source": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/villager-gather-iron-SOUTH-135/recovery-138/F03/raw.png",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "4f7cb2e00395151fce3ecf5947f6c81057d83adcf62f15eb931d62f2d1489bac",
+            "rgbaSha256": "3213f644bc834d0b50675b35fecdfa42a9ecf2397822f8c55607f56c475a1180"
+          },
+          "pivot": {
+            "x": 654,
+            "y": 1140,
+            "space": "source"
+          },
+          "timeMs": 460,
+          "selectionStatus": "SELECTED_FRAME_CANDIDATE",
+          "selectionReceipt": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-iron-preview-136/selection-adapters/F03.json",
+            "sha256": "2941f5e3671cd988592b9dfbaf9cc1713c6c8237f5c6f69bceb035e16d0668a3"
+          }
+        },
+        {
+          "index": 4,
+          "phase": "F4",
+          "x": 2,
+          "y": 134,
+          "width": 128,
+          "height": 128,
+          "durationMs": 100,
+          "events": [],
+          "source": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/villager-gather-iron-SOUTH-134/F04/raw.png",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "167687c7e870cfada2004233577d3d94367d9a6bbb3e152322996493e11205f0",
+            "rgbaSha256": "c47d11c8e11befbddf0dc1296934289d6620ecd0b11a6685a9af639314bf3ee6"
+          },
+          "pivot": {
+            "x": 654,
+            "y": 1140,
+            "space": "source"
+          },
+          "timeMs": 540,
+          "selectionStatus": "SELECTED_FRAME_CANDIDATE",
+          "selectionReceipt": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-iron-preview-136/selection-adapters/F04.json",
+            "sha256": "62e563dc827f8e57e852dc7236aa7359b6dd2915c85b233c2990c79e6429c72f"
+          }
+        },
+        {
+          "index": 5,
+          "phase": "F5",
+          "x": 134,
+          "y": 134,
+          "width": 128,
+          "height": 128,
+          "durationMs": 110,
+          "events": [],
+          "source": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/villager-gather-iron-SOUTH-135/recovery-138/F05/raw.png",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "2c508b1f6a6ebc234156fd495aab3f9874cc792c762123b2826c703834d0d44d",
+            "rgbaSha256": "316eb67dfda090e318dd53b0686a115ec10173a78e1b2e18c838c3d8c219726a"
+          },
+          "pivot": {
+            "x": 654,
+            "y": 1140,
+            "space": "source"
+          },
+          "timeMs": 640,
+          "selectionStatus": "SELECTED_FRAME_CANDIDATE",
+          "selectionReceipt": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-iron-preview-136/selection-adapters/F05.json",
+            "sha256": "dd437a09effc495f0ba6b0fc195fd90a585435a9903bb85bfd8a7feeb208a88a"
+          }
+        },
+        {
+          "index": 6,
+          "phase": "F6",
+          "x": 266,
+          "y": 134,
+          "width": 128,
+          "height": 128,
+          "durationMs": 150,
+          "events": [],
+          "source": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/villager-gather-iron-SOUTH-134/F06/raw.png",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "b6ec5d1f518d325c5ed1a0b99d95d805ded3b248b901774c2d0705822ce97195",
+            "rgbaSha256": "4de4a293a144143cd5d876bb5cd29fb1c07791a49ecfd65c1c2d458f894e5184"
+          },
+          "pivot": {
+            "x": 654,
+            "y": 1140,
+            "space": "source"
+          },
+          "timeMs": 750,
+          "selectionStatus": "SELECTED_FRAME_CANDIDATE",
+          "selectionReceipt": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-iron-preview-136/selection-adapters/F06.json",
+            "sha256": "9b17d7ebca4f9fe5189910cfb89345a854a30165c392e365c969c490bf5965ea"
+          }
+        },
+        {
+          "index": 7,
+          "phase": "F7",
+          "x": 398,
+          "y": 134,
+          "width": 128,
+          "height": 128,
+          "durationMs": 180,
+          "events": [],
+          "source": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/villager-gather-iron-SOUTH-139/F07/raw.png",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "198c2e62823375ec1f53ccf035c82a33b073e78e5d02fd7e983d13e5f654de9a",
+            "rgbaSha256": "03a9e21327026d57f697359661a8890618f06683b2e492f0f63e3c0f80e3cde2"
+          },
+          "pivot": {
+            "x": 654,
+            "y": 1140,
+            "space": "source"
+          },
+          "timeMs": 900,
+          "selectionStatus": "SELECTED_FRAME_CANDIDATE",
+          "selectionReceipt": {
+            "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-iron-preview-136/selection-adapters/F07.json",
+            "sha256": "22c162532c9a9f4032e0523284cf43e812ca155113aabd63a4728f4991140bcb"
+          }
+        }
+      ]
+    },
+    {
+      "id": "artillery-workshop-idle-140",
+      "family": "building.artilleryWorkshop",
+      "kind": "building",
+      "state": "idle",
+      "direction": null,
+      "candidate": true,
+      "alphaPolicy": "transparent",
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/buildings/artillery-workshop-idle-140/raw.png",
+        "sha256": "96c275af48c1bb02bc43e4382d4329782fbc3d42a715e7f0c6f1dabd24a8ef32",
+        "width": 1254,
+        "height": 1254,
+        "rgbaSha256": "3d0994fbcba1e88eeda2ccdadd85c5bc84932ffdee5293542423fe064f90c1f3",
+        "bbox": [
+          0,
+          18,
+          1241,
+          1254
+        ]
+      },
+      "runtime": {
+        "path": "artillery-workshop-144/idle.webp",
+        "sha256": "c433803486dcf9fc954569741fa6d98e6cb5c0acdc1e65a284cbbc186ac95430",
+        "width": 256,
+        "height": 256,
+        "rgbaSha256": "46c313572460f04e762dfac4d85027cf0c376cd95dd08f581e4346b5047bd964",
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "96c275af48c1bb02bc43e4382d4329782fbc3d42a715e7f0c6f1dabd24a8ef32"
+        }
+      },
+      "pivot": {
+        "x": 627,
+        "y": 1010,
+        "space": "source"
+      },
+      "render": {
+        "width": 112,
+        "height": 112
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 256,
+          "height": 256,
+          "durationMs": 1000
+        }
+      ],
+      "loop": true,
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "cell": {
+        "width": 256,
+        "height": 256
+      },
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "notes": "Actual140completedlivingidle only; unsupportedstates fallback; sourceaccepted narrowstatic only. Remove plannedOnly whencreatingrealmanifestin authorizedstage."
+    },
+    {
+      "id": "cavalry-camp-idle-147",
+      "family": "building.cavalryCamp",
+      "kind": "building",
+      "state": "idle",
+      "direction": null,
+      "candidate": true,
+      "alphaPolicy": "transparent",
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/buildings/cavalry-camp-idle-147/raw.png",
+        "sha256": "b9984fc3d42bfbdaed6677250772731e1047684bffa2858f601b1f29e08ccbaa",
+        "width": 1254,
+        "height": 1254,
+        "rgbaSha256": "6c59d7388835a62b641e4be7971b07e5644b5e3292ae94ebfaa13d8171404441",
+        "bbox": [
+          0,
+          57,
+          1254,
+          1236
+        ]
+      },
+      "runtime": {
+        "path": "cavalry-camp-148/idle.webp",
+        "sha256": "ca7633f8da8f9a4193fc05736a24192ce6f191a975a4986b79ef7ba3979deba2",
+        "width": 256,
+        "height": 256,
+        "rgbaSha256": "e3a8634db4a10abc07820ff4abbcf13f6aa00ade2fdccce8892f3255b6c9a4cd",
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "b9984fc3d42bfbdaed6677250772731e1047684bffa2858f601b1f29e08ccbaa"
+        }
+      },
+      "pivot": {
+        "x": 627,
+        "y": 1010,
+        "space": "source"
+      },
+      "render": {
+        "width": 112,
+        "height": 112
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 256,
+          "height": 256,
+          "durationMs": 1000
+        }
+      ],
+      "loop": true,
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "cell": {
+        "width": 256,
+        "height": 256
+      },
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "notes": "Actual147 completed living idle only; unsupported states fallback; root source accepted narrow static only."
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+exec(open('/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/unit-scale-runtime-426/prepare.py').read().split('p=preserve();')[0]);assert inv(S)==json.loads((O/'stage-inventory.json').read_text());before=json.loads((O/'preservation-before.json').read_text());assert preserve()==before;bp=inv(B);pre=json.loads((O/'preflight.json').read_text());allowed=set(pre['modifiedPublicManifests'])|{'index.html'}
+for rel,pin in before['public'].items():
+ if rel not in allowed:assert bp[rel]==pin,rel
+assert len(bp)==208;new=[k for k in bp if k not in before['public']];assert new==['assets/index-DOrSNC3u.js'];binding={'stage':str(S),'build':str(B),'sourcePins':{k:{'sha256':v} for k,v in inv(S).items()},'buildPins':{k:{'sha256':v} for k,v in bp.items()},'immutableSealed':True,'newBundle':new[0]};(O/'binding.json').write_text(json.dumps(binding,indent=2));print('SEALED426208 exactretention/newindex-DOrSNC3u.js')

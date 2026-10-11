@@ -1,0 +1,21 @@
+{
+  "status": "PROPOSAL_UNCALLED_ROOT438_INTAKE_REQUIRED",
+  "profile": "gpt-6.1-sol/low",
+  "439": {
+    "calls": 1,
+    "retries": 0,
+    "inputsOnly": [
+      {
+        "path": "docs/art/units/infantry-F4-controlled-guide-438/F4-whole-guide.png",
+        "sha256": "2c17eb61e4e5e7ffed5cfd0de9d8f24a8a386db6f64dba18a0469d6cdad38c06"
+      }
+    ],
+    "purpose": "ONE structural whole painted F4 from actual438 whole guide ONLY; exclude canonical as structural input and exclude wrongarm429/436",
+    "prompt": "Render this COMPLETE clothed F4 authoring guide as ONE coherent realistic painted2D RTS infantry with genuinealpha. Keep whole silhouette/camera and exact pose: broadhelmet/chest/nearshoulder, shield screenRIGHT in nearhand, curved sword screenLEFT in farhand, nearshieldside leg trailingupperleft and farswordside leg forwardlower-right. Guide controls all structure, do not swap hands/mirror/frontturn. Greenarmor/creamclothes/redbelt/darktrousers/brownboots, completeonebody/twoarms/twolegs. Fixedcanvas/pivot133.307814992,215.783094099 relative256, no globalfit/cutout/3D. No scenery/text."
+  },
+  "440": {
+    "status": "CONDITIONAL_SEPARATE_ORDER_AFTER439_ACTUAL_SELECTION",
+    "purpose": "Only after439 actualgear/pose chosen, whole canonical appearance edit preserving439 selectedbody/limbs/gear geometry; canonical appearance PRIMARY, selected439 structure posePRIMARY. No calls authorized by this proposal."
+  },
+  "reason": "Distinct pose-first\u2192identity-second control method; previouswrongtarget method exhausted. Historical191\u2192192 lesson is workflow inspiration, not guaranteed success."
+}

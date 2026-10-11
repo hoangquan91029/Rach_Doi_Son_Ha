@@ -1,0 +1,83 @@
+{
+  "status": "READY_CLOSED_AUTHORING_GUIDE_ROOT_INTAKE_PENDING",
+  "imageCalls": 0,
+  "openCalls": 0,
+  "runtimeInstalled": false,
+  "motionApproved": false,
+  "fanout": false,
+  "headBefore": "3a2ab48917d7fb7f3b50858e983037f4dbd44d5f",
+  "headAfter": "3a2ab48917d7fb7f3b50858e983037f4dbd44d5f",
+  "inputChecks": [
+    {
+      "path": "docs/art/units/sources/infantry-neutral-se-refine-01-imagegen-raw.png",
+      "sha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+      "unchanged": true
+    },
+    {
+      "path": "docs/art/units/infantry-walk-keys-429/F0-identity-reuse-256.png",
+      "sha256": "520c9d0feeffa7bf4ffd30d80eb3f425803975d8c1209fc016f2d382424c257f",
+      "unchanged": true
+    },
+    {
+      "path": "docs/art/units/infantry-walk-keys-429/F4-raw.png",
+      "sha256": "9e9b9a16c5cb7610d8bf17458afacf512c1bd9dcbfbc5e51973f1dead69eee2c",
+      "unchanged": true
+    },
+    {
+      "path": "docs/art/units/infantry-walk-F4-correction-436/F4-raw.png",
+      "sha256": "6fdd4b88f9a0b5d8b515b2c378a253d5a6423f37dab1d1dd89c995486d2170c0",
+      "unchanged": true
+    }
+  ],
+  "briefCheck": "Rendered70/256comparison inspected. Guide now has broadhelmet/redcloth, broadnearshoulder/chest/greenarmorskirt and ESE head profile; shield visiblyscreenRIGHT and curvedswordscreenLEFT. Nearshieldsidewholeleg trailsupperleft, farwholeleg extendsforwardlower-right. Wholevector still simplified face/paint/cloth geometry; only structural authoring, no actualart/motion/bodylikeness approval.",
+  "pivot": [
+    133.30781499202553,
+    215.78309409888357
+  ],
+  "groundReference": "Fixedcanonicalmidfootanchor215.783; whole guide reauthored neartrailing bootsole197/farforward bootsole235 (mean216), distinctdimetricdepth, guideonly reference notworldfootlock. No source raster transform.",
+  "browser": "Two wholeSVG Chromium renders after visible guide legdepth correction; errors0/browser+serverCLOSED; final70comparison inspected",
+  "preserve": "429436heldfiles andcanonicalsource unchanged",
+  "next": "Root438guideintake before439singlecall;440 conditional appearance order only after439selectedstructure",
+  "outputs": [
+    {
+      "path": "docs/art/units/infantry-F4-controlled-guide-438/F4-whole-guide.png",
+      "sha256": "2c17eb61e4e5e7ffed5cfd0de9d8f24a8a386db6f64dba18a0469d6cdad38c06"
+    },
+    {
+      "path": "docs/art/units/infantry-F4-controlled-guide-438/F4-whole-guide.svg",
+      "sha256": "a0815c6846785cb7022099775b8626e52ebfeec7500b2b097b07b1ee7299e008"
+    },
+    {
+      "path": "docs/art/units/infantry-F4-controlled-guide-438/canonical-guide-comparison.png",
+      "sha256": "ffc471c6436eaa0470b9b7af736a769f4fffecceac729987a6acef4258fcef79"
+    },
+    {
+      "path": "docs/art/units/infantry-F4-controlled-guide-438/canonical-whole-256.png",
+      "sha256": "520c9d0feeffa7bf4ffd30d80eb3f425803975d8c1209fc016f2d382424c257f"
+    },
+    {
+      "path": "docs/art/units/infantry-F4-controlled-guide-438/comparison-70.png",
+      "sha256": "d2a3675d3437032679683017fcc937a7997709cd8e14fb0279dc4532b64d4fcd"
+    },
+    {
+      "path": "docs/art/units/infantry-F4-controlled-guide-438/comparison.html",
+      "sha256": "d005838471998fc20ec9640adcd6dd4dae36deb529c619ff1153a0c67cdf5ede"
+    },
+    {
+      "path": "docs/art/units/infantry-F4-controlled-guide-438/inputs.json",
+      "sha256": "1b726420cb82323e5db0869d392f5835ac2d2d15a90479de0ac86f8d6623384e"
+    },
+    {
+      "path": "docs/art/units/infantry-F4-controlled-guide-438/next-order-proposal.json",
+      "sha256": "5ca31a7c9d27b6431874dc2ff4ef70cc9aa32a07e887a9312ab0f03d5056daed"
+    },
+    {
+      "path": "docs/art/units/infantry-F4-controlled-guide-438/render-receipt.json",
+      "sha256": "783d1c1f428970c4bf50b7165c603f47d2901e34af5be1978b4a855155310a27"
+    },
+    {
+      "path": "docs/art/units/infantry-F4-controlled-guide-438/render.mjs",
+      "sha256": "8c409646d3e959d0c5252db3fdfe24332879357a554c7c2a7907b0c325ee6b6f"
+    }
+  ]
+}

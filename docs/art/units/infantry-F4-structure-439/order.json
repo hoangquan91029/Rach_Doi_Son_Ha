@@ -1,0 +1,25 @@
+{
+  "status": "FINITE_ONE_CALL_OPEN",
+  "profile": "gpt-6.1-sol/low",
+  "callCap": 1,
+  "retryCap": 0,
+  "headBefore": "3a2ab48917d7fb7f3b50858e983037f4dbd44d5f",
+  "inputs": [
+    {
+      "path": "docs/art/units/infantry-F4-controlled-guide-438/F4-whole-guide.png",
+      "sha256": "2c17eb61e4e5e7ffed5cfd0de9d8f24a8a386db6f64dba18a0469d6cdad38c06"
+    },
+    {
+      "path": "docs/art/units/infantry-F4-controlled-guide-438/root-intake.json",
+      "sha256": "56a4857a8116ea01b55749e37d40424652908e58d186855bd6caa329eb6daf88"
+    }
+  ],
+  "attachmentsOnly": [
+    {
+      "path": "docs/art/units/infantry-F4-controlled-guide-438/F4-whole-guide.png",
+      "sha256": "2c17eb61e4e5e7ffed5cfd0de9d8f24a8a386db6f64dba18a0469d6cdad38c06"
+    }
+  ],
+  "prompt": "Render this COMPLETE clothed F4 authoring guide as ONE coherent realistic painted2D RTS infantry with genuinealpha. Keep whole silhouette/camera and exact pose: broadhelmet/chest/nearshoulder, shield screenRIGHT in nearhand, curved sword screenLEFT in farhand, nearshieldside leg trailingupperleft and farswordside leg forwardlower-right. Guide controls all structure, do not swap hands/mirror/frontturn. Greenarmor/creamclothes/redbelt/darktrousers/brownboots, completeonebody/twoarms/twolegs. Fixedcanvas/pivot133.307814992,215.783094099 relative256, no globalfit/cutout/3D. No scenery/text. Authoringguide poseONLY becomes realisticpainted finishedwhole2D structurecandidate; retain exact illustratedguide gearownership and correct wholethigh/knee/shin linkages. Allshield/sword/boots/helmetinsidecanvas; natural fullvolume, no geometricplaceholder. Omit pivotcrosshair fromoutput. Noaddedshadow, runtime separatelyshadows. Renderoneimage on genuinelytransparentalpha.",
+  "scope": "Structureonly F4,440appearanceUNCALLED"
+}

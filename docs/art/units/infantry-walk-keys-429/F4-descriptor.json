@@ -1,0 +1,59 @@
+{
+  "id": "infantry-F4-opposite-contact-429",
+  "family": "unit.infantry.pilot429",
+  "kind": "unit",
+  "state": "walk",
+  "direction": 0,
+  "source": {
+    "path": "docs/art/units/infantry-walk-keys-429/F4-working-256.png",
+    "sha256": "8905382a52592238fb837a5635fee58719d8a0c053868b55b9ea82aa11073741",
+    "rgbaSha256": "7398a6d81ee407b374ad25c53f09f22309439d52aba4526c75e080b416c558c4",
+    "width": 256,
+    "height": 256
+  },
+  "runtime": {
+    "path": "docs/art/units/infantry-walk-keys-429/F4-runtime-128.png",
+    "sha256": "9fbc8614b8763dd9e5db7ddcf4d642f521a374b5352b43e97db7454bdc5242d6",
+    "rgbaSha256": "82a95a54f05871686996ad09d2b601a508475bf25fded0fe9ec13f3619f0917c",
+    "width": 128,
+    "height": 128,
+    "derivation": {
+      "method": "resize",
+      "filter": "lanczos",
+      "sourceSha256": "8905382a52592238fb837a5635fee58719d8a0c053868b55b9ea82aa11073741"
+    }
+  },
+  "cell": {
+    "width": 128,
+    "height": 128
+  },
+  "pivot": {
+    "x": 133.30781499202553,
+    "y": 215.78309409888357,
+    "space": "source"
+  },
+  "render": {
+    "width": 42,
+    "height": 42
+  },
+  "alphaPolicy": "transparent",
+  "contactShadow": {
+    "mode": "separate",
+    "assetId": "unit-contact-shadow"
+  },
+  "candidate": true,
+  "review": {
+    "status": "CANDIDATE"
+  },
+  "frames": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 75
+    }
+  ],
+  "loop": false,
+  "notes": "ONE built-in whole2D F4 edit; candidate single-frame source only. Source1254\u2192working256/runtime128 wholeuniformLanczos, no fit/warp/mirror. Motion/root selection pending."
+}

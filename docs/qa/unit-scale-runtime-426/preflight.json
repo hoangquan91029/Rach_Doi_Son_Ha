@@ -1,0 +1,636 @@
+{
+  "status": "PASS_PREBUILD426_WAIT_ROOT_BUILD",
+  "cwd": "/tmp/rds-unit-scale426-stage",
+  "outDir": "/tmp/rds-unit-scale426-build",
+  "config": "/tmp/rds-unit-scale426-stage/vite.config.js",
+  "configSHA": "18fc6a1c5544b54f954ce0779837c23695e29ca485f5c8de5a1cf03dddeb046d",
+  "activeManifestRenderChanges": [
+    {
+      "manifest": "/assets/art-v1/manifest.json",
+      "updates": [
+        {
+          "id": "villager-idle-D00",
+          "family": "villager",
+          "state": "idle",
+          "before": {
+            "width": 38,
+            "height": 38
+          },
+          "after": {
+            "width": 42,
+            "height": 42
+          }
+        }
+      ]
+    },
+    {
+      "manifest": "/assets/art-v1/walk-014-manifest.json",
+      "updates": [
+        {
+          "id": "villager-idle-D00",
+          "family": "villager",
+          "state": "idle",
+          "before": {
+            "width": 38,
+            "height": 38
+          },
+          "after": {
+            "width": 42,
+            "height": 42
+          }
+        },
+        {
+          "id": "villager-walk-south-014",
+          "family": "unit.villager",
+          "state": "walk",
+          "before": {
+            "width": 89,
+            "height": 89
+          },
+          "after": {
+            "width": 42,
+            "height": 42
+          }
+        },
+        {
+          "id": "villager-idle-south-014",
+          "family": "unit.villager",
+          "state": "idle",
+          "before": {
+            "width": 89,
+            "height": 89
+          },
+          "after": {
+            "width": 42,
+            "height": 42
+          }
+        }
+      ]
+    },
+    {
+      "manifest": "/assets/art-v1/food-099-manifest.json",
+      "updates": [
+        {
+          "id": "villager-idle-D00",
+          "family": "villager",
+          "state": "idle",
+          "before": {
+            "width": 38,
+            "height": 38
+          },
+          "after": {
+            "width": 42,
+            "height": 42
+          }
+        },
+        {
+          "id": "villager-walk-south-014",
+          "family": "unit.villager",
+          "state": "walk",
+          "before": {
+            "width": 89,
+            "height": 89
+          },
+          "after": {
+            "width": 42,
+            "height": 42
+          }
+        },
+        {
+          "id": "villager-idle-south-014",
+          "family": "unit.villager",
+          "state": "idle",
+          "before": {
+            "width": 89,
+            "height": 89
+          },
+          "after": {
+            "width": 42,
+            "height": 42
+          }
+        },
+        {
+          "id": "villager-gather-wood-south-024",
+          "family": "unit.villager",
+          "state": "gather_wood",
+          "before": {
+            "width": 89,
+            "height": 89
+          },
+          "after": {
+            "width": 42,
+            "height": 42
+          }
+        },
+        {
+          "id": "villager-gather-food-south-096",
+          "family": "unit.villager",
+          "state": "gather_food",
+          "before": {
+            "width": 89,
+            "height": 89
+          },
+          "after": {
+            "width": 42,
+            "height": 42
+          }
+        }
+      ]
+    },
+    {
+      "manifest": "/assets/art-v1/gather-026-manifest.json",
+      "updates": [
+        {
+          "id": "villager-idle-D00",
+          "family": "villager",
+          "state": "idle",
+          "before": {
+            "width": 38,
+            "height": 38
+          },
+          "after": {
+            "width": 42,
+            "height": 42
+          }
+        },
+        {
+          "id": "villager-walk-south-014",
+          "family": "unit.villager",
+          "state": "walk",
+          "before": {
+            "width": 89,
+            "height": 89
+          },
+          "after": {
+            "width": 42,
+            "height": 42
+          }
+        },
+        {
+          "id": "villager-idle-south-014",
+          "family": "unit.villager",
+          "state": "idle",
+          "before": {
+            "width": 89,
+            "height": 89
+          },
+          "after": {
+            "width": 42,
+            "height": 42
+          }
+        },
+        {
+          "id": "villager-gather-wood-south-024",
+          "family": "unit.villager",
+          "state": "gather_wood",
+          "before": {
+            "width": 89,
+            "height": 89
+          },
+          "after": {
+            "width": 42,
+            "height": 42
+          }
+        }
+      ]
+    },
+    {
+      "manifest": "/assets/art-v1/terrain-127-manifest.json",
+      "updates": [
+        {
+          "id": "villager-idle-D00",
+          "family": "villager",
+          "state": "idle",
+          "before": {
+            "width": 38,
+            "height": 38
+          },
+          "after": {
+            "width": 42,
+            "height": 42
+          }
+        },
+        {
+          "id": "villager-walk-south-014",
+          "family": "unit.villager",
+          "state": "walk",
+          "before": {
+            "width": 89,
+            "height": 89
+          },
+          "after": {
+            "width": 42,
+            "height": 42
+          }
+        },
+        {
+          "id": "villager-idle-south-014",
+          "family": "unit.villager",
+          "state": "idle",
+          "before": {
+            "width": 89,
+            "height": 89
+          },
+          "after": {
+            "width": 42,
+            "height": 42
+          }
+        },
+        {
+          "id": "villager-gather-wood-south-024",
+          "family": "unit.villager",
+          "state": "gather_wood",
+          "before": {
+            "width": 89,
+            "height": 89
+          },
+          "after": {
+            "width": 42,
+            "height": 42
+          }
+        }
+      ]
+    },
+    {
+      "manifest": "/assets/art-v1/iron-137-manifest.json",
+      "updates": [
+        {
+          "id": "villager-idle-D00",
+          "family": "villager",
+          "state": "idle",
+          "before": {
+            "width": 38,
+            "height": 38
+          },
+          "after": {
+            "width": 42,
+            "height": 42
+          }
+        },
+        {
+          "id": "villager-walk-south-014",
+          "family": "unit.villager",
+          "state": "walk",
+          "before": {
+            "width": 89,
+            "height": 89
+          },
+          "after": {
+            "width": 42,
+            "height": 42
+          }
+        },
+        {
+          "id": "villager-idle-south-014",
+          "family": "unit.villager",
+          "state": "idle",
+          "before": {
+            "width": 89,
+            "height": 89
+          },
+          "after": {
+            "width": 42,
+            "height": 42
+          }
+        },
+        {
+          "id": "villager-gather-wood-south-024",
+          "family": "unit.villager",
+          "state": "gather_wood",
+          "before": {
+            "width": 89,
+            "height": 89
+          },
+          "after": {
+            "width": 42,
+            "height": 42
+          }
+        },
+        {
+          "id": "villager-gather-iron-south-136",
+          "family": "unit.villager",
+          "state": "gather_iron",
+          "before": {
+            "width": 89,
+            "height": 89
+          },
+          "after": {
+            "width": 42,
+            "height": 42
+          }
+        }
+      ]
+    },
+    {
+      "manifest": "/assets/art-v1/workshop-144-manifest.json",
+      "updates": [
+        {
+          "id": "villager-idle-D00",
+          "family": "villager",
+          "state": "idle",
+          "before": {
+            "width": 38,
+            "height": 38
+          },
+          "after": {
+            "width": 42,
+            "height": 42
+          }
+        },
+        {
+          "id": "villager-walk-south-014",
+          "family": "unit.villager",
+          "state": "walk",
+          "before": {
+            "width": 89,
+            "height": 89
+          },
+          "after": {
+            "width": 42,
+            "height": 42
+          }
+        },
+        {
+          "id": "villager-idle-south-014",
+          "family": "unit.villager",
+          "state": "idle",
+          "before": {
+            "width": 89,
+            "height": 89
+          },
+          "after": {
+            "width": 42,
+            "height": 42
+          }
+        },
+        {
+          "id": "villager-gather-wood-south-024",
+          "family": "unit.villager",
+          "state": "gather_wood",
+          "before": {
+            "width": 89,
+            "height": 89
+          },
+          "after": {
+            "width": 42,
+            "height": 42
+          }
+        },
+        {
+          "id": "villager-gather-iron-south-136",
+          "family": "unit.villager",
+          "state": "gather_iron",
+          "before": {
+            "width": 89,
+            "height": 89
+          },
+          "after": {
+            "width": 42,
+            "height": 42
+          }
+        }
+      ]
+    },
+    {
+      "manifest": "/assets/art-v1/camp-148-manifest.json",
+      "updates": [
+        {
+          "id": "villager-idle-D00",
+          "family": "villager",
+          "state": "idle",
+          "before": {
+            "width": 38,
+            "height": 38
+          },
+          "after": {
+            "width": 42,
+            "height": 42
+          }
+        },
+        {
+          "id": "villager-walk-south-014",
+          "family": "unit.villager",
+          "state": "walk",
+          "before": {
+            "width": 89,
+            "height": 89
+          },
+          "after": {
+            "width": 42,
+            "height": 42
+          }
+        },
+        {
+          "id": "villager-idle-south-014",
+          "family": "unit.villager",
+          "state": "idle",
+          "before": {
+            "width": 89,
+            "height": 89
+          },
+          "after": {
+            "width": 42,
+            "height": 42
+          }
+        },
+        {
+          "id": "villager-gather-wood-south-024",
+          "family": "unit.villager",
+          "state": "gather_wood",
+          "before": {
+            "width": 89,
+            "height": 89
+          },
+          "after": {
+            "width": 42,
+            "height": 42
+          }
+        },
+        {
+          "id": "villager-gather-iron-south-136",
+          "family": "unit.villager",
+          "state": "gather_iron",
+          "before": {
+            "width": 89,
+            "height": 89
+          },
+          "after": {
+            "width": 42,
+            "height": 42
+          }
+        }
+      ]
+    },
+    {
+      "manifest": "/assets/art-v1/shipyard-165-manifest.json",
+      "updates": [
+        {
+          "id": "villager-idle-D00",
+          "family": "villager",
+          "state": "idle",
+          "before": {
+            "width": 38,
+            "height": 38
+          },
+          "after": {
+            "width": 42,
+            "height": 42
+          }
+        },
+        {
+          "id": "villager-walk-south-014",
+          "family": "unit.villager",
+          "state": "walk",
+          "before": {
+            "width": 89,
+            "height": 89
+          },
+          "after": {
+            "width": 42,
+            "height": 42
+          }
+        },
+        {
+          "id": "villager-idle-south-014",
+          "family": "unit.villager",
+          "state": "idle",
+          "before": {
+            "width": 89,
+            "height": 89
+          },
+          "after": {
+            "width": 42,
+            "height": 42
+          }
+        },
+        {
+          "id": "villager-gather-wood-south-024",
+          "family": "unit.villager",
+          "state": "gather_wood",
+          "before": {
+            "width": 89,
+            "height": 89
+          },
+          "after": {
+            "width": 42,
+            "height": 42
+          }
+        },
+        {
+          "id": "villager-gather-iron-south-136",
+          "family": "unit.villager",
+          "state": "gather_iron",
+          "before": {
+            "width": 89,
+            "height": 89
+          },
+          "after": {
+            "width": 42,
+            "height": 42
+          }
+        }
+      ]
+    },
+    {
+      "manifest": "/assets/art-v1/fort-202-manifest.json",
+      "updates": [
+        {
+          "id": "villager-idle-D00",
+          "family": "villager",
+          "state": "idle",
+          "before": {
+            "width": 38,
+            "height": 38
+          },
+          "after": {
+            "width": 42,
+            "height": 42
+          }
+        },
+        {
+          "id": "villager-walk-south-014",
+          "family": "unit.villager",
+          "state": "walk",
+          "before": {
+            "width": 89,
+            "height": 89
+          },
+          "after": {
+            "width": 42,
+            "height": 42
+          }
+        },
+        {
+          "id": "villager-idle-south-014",
+          "family": "unit.villager",
+          "state": "idle",
+          "before": {
+            "width": 89,
+            "height": 89
+          },
+          "after": {
+            "width": 42,
+            "height": 42
+          }
+        },
+        {
+          "id": "villager-gather-wood-south-024",
+          "family": "unit.villager",
+          "state": "gather_wood",
+          "before": {
+            "width": 89,
+            "height": 89
+          },
+          "after": {
+            "width": 42,
+            "height": 42
+          }
+        },
+        {
+          "id": "villager-gather-iron-south-136",
+          "family": "unit.villager",
+          "state": "gather_iron",
+          "before": {
+            "width": 89,
+            "height": 89
+          },
+          "after": {
+            "width": 42,
+            "height": 42
+          }
+        },
+        {
+          "id": "supply-wagon-horse-idle-d0-415",
+          "family": "unit.wagon",
+          "state": "idle",
+          "before": {
+            "width": 112,
+            "height": 112
+          },
+          "after": {
+            "width": 84,
+            "height": 84
+          }
+        }
+      ]
+    }
+  ],
+  "solePresentationCodeChange": "NORMAL_ZOOM1.08\u21921.68",
+  "retainedPublic207": true,
+  "expectedBuild208NewJS": true,
+  "allPixelSourceRuntimePivotsTimingStrideUnchanged": true,
+  "simulationUnchanged": true,
+  "food099": "Patchedlocalmetadata retainedQA custody; publicrecipe/manifest/atlas excludedstageonly",
+  "modifiedPublicManifests": [
+    "assets/art-v1/manifest.json",
+    "assets/art-v1/walk-014-manifest.json",
+    "assets/art-v1/food-099-manifest.json",
+    "assets/art-v1/gather-026-manifest.json",
+    "assets/art-v1/terrain-127-manifest.json",
+    "assets/art-v1/iron-137-manifest.json",
+    "assets/art-v1/workshop-144-manifest.json",
+    "assets/art-v1/camp-148-manifest.json",
+    "assets/art-v1/shipyard-165-manifest.json",
+    "assets/art-v1/fort-202-manifest.json"
+  ]
+}

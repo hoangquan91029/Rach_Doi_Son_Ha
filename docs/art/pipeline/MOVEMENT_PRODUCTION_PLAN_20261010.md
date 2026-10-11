@@ -77,3 +77,8 @@ Full project **INCOMPLETE**. Public260 optionalfort43 hiện hành, chưa chứa
 ## 8. Runtime233 — dừng đúng D0
 
 [233 root intake](../../qa/villager-D0-runtime-233/root-intake.json) đóng bước kỹ thuật còn thiếu: cùng frozen225 build, ONE ordinary offline campaign/zero retries, living own villager đang đi D0 còn7.355 world units trước endpoint; ordinary Stop trả idle/order-null/dir0. Pause freeze500ms, Resume tăng distance, menu retainedDecodedBytes0, handles đóng/public230 giữ nguyên. Không đổi frame, speed hoặc facing. Clip thật đã hiển thị. LastWalk sau Stop là dữ liệu cũ, không chứng minh per-entity idle asset. Naturalness/owner/worldfootlock và mixed-family scale còn mở; không mở fanout từ technical PASS. Không cần thử lại Stop nếu không có vấn đề mới.
+
+
+## 9. Human correction442 — chỉ chuyển động, không đổi unit
+
+Latest human: “chỉ cần tạo chuyển động … tạo ra thành unit mới khác hoàn toàn”. Các outputinfantry429/436/439/440 không được chọn; guide-only generation và repaintunitngoại lai dừng. Sourceoriginal infantry084845…0517f là identity và edit target trực tiếp. Nextfinite443 một adjacentpose nhỏ với canonical là soleimage, giữcamera/body/face/equipment/materials; không calllại exhaustedF4 method. Nếu model vẫn đổiidentity thì giữheld, không ship hoặc fanout. 427/438/441 guides chỉ authoringhistory. Scale442/public433 đã42+world1.68, không dùng old89 numbers đểinstallaction mới. Támframe action và actualworldtravel vẫn cần hoàn thiện; một key đúng không đóngmotiongate.

@@ -1,0 +1,84 @@
+{
+  "status": "CLOSED_HELD_EQUIPMENT_SIDES_STILL_WRONG",
+  "profile": "gpt-6.1-sol/low",
+  "imageCalls": 1,
+  "retries": 0,
+  "openCalls": 0,
+  "sourceCustody": {
+    "generatedOriginal": "/home/kieu-hoang-quan/.codex/generated_images/01a12b5f-60be-78c1-96b0-45b9ee008783/exec-8f60c699-2339-42b7-96d0-d980f7985daf.png",
+    "raw": {
+      "path": "docs/art/units/infantry-walk-F4-correction-436/F4-raw.png",
+      "sha256": "6fdd4b88f9a0b5d8b515b2c378a253d5a6423f37dab1d1dd89c995486d2170c0",
+      "rgbaSha256": "2e0e7aff26092e4848298a548e4b32e1c1532525a483688996692fbf0f9b8be6",
+      "width": 1254,
+      "height": 1254
+    },
+    "actualCanvas": [
+      1254,
+      1254
+    ],
+    "alphaExtrema": [
+      0,
+      255
+    ],
+    "alphaBBox": [
+      79,
+      29,
+      1236,
+      1218
+    ],
+    "workingDerivation": {
+      "method": "resize",
+      "filter": "lanczos",
+      "sourceSha256": "6fdd4b88f9a0b5d8b515b2c378a253d5a6423f37dab1d1dd89c995486d2170c0"
+    },
+    "runtime": {
+      "path": "docs/art/units/infantry-walk-F4-correction-436/F4-runtime-128.png",
+      "sha256": "a5c473584ce1f3809fec13f90ecbd8aff403b72413938d96941190e25bf108f1",
+      "rgbaSha256": "e21c98ade9169cb31678754fffd5286087a8dcbd39396010727ca2478be64015",
+      "width": 128,
+      "height": 128,
+      "derivation": {
+        "method": "resize",
+        "filter": "lanczos",
+        "sourceSha256": "d7e4639ea9c66c2cff9b31c2a9c61922e7015f27370700d10e5aa0ce69c1f0f3"
+      }
+    }
+  },
+  "brief70pxComparison": "F0 left image has sword screen-left/shield screen-right. Generated436 right image still has round shield screen-left and curved sword screen-right, so required complete arm/equipment correction failed. Opposite boot action differs but equipment alone holds frame. Torso remains more front-facing than F0. No anatomy/cloth microaudit.",
+  "selected": false,
+  "rootSelection": "HELD",
+  "protectedInputs": [
+    {
+      "path": "docs/art/units/infantry-walk-keys-429/F4-raw.png",
+      "sha256": "9e9b9a16c5cb7610d8bf17458afacf512c1bd9dcbfbc5e51973f1dead69eee2c",
+      "afterSha256": "9e9b9a16c5cb7610d8bf17458afacf512c1bd9dcbfbc5e51973f1dead69eee2c",
+      "unchanged": true
+    },
+    {
+      "path": "docs/art/units/sources/infantry-neutral-se-refine-01-imagegen-raw.png",
+      "sha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+      "afterSha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+      "unchanged": true
+    },
+    {
+      "path": "docs/art/units/infantry-walk-plan-427/preview/F4.png",
+      "sha256": "a8202c48a2225836d655df483ecdbd076a1cc78e91cfd4b360adfc9ffe970a9e",
+      "afterSha256": "a8202c48a2225836d655df483ecdbd076a1cc78e91cfd4b360adfc9ffe970a9e",
+      "unchanged": true
+    },
+    {
+      "path": "docs/art/units/infantry-walk-keys-429/root-intake.json",
+      "sha256": "a9a3929334a3839121d61c93dd2b24f539aff9a0bca5b25111835d62e623f642",
+      "afterSha256": "a9a3929334a3839121d61c93dd2b24f539aff9a0bca5b25111835d62e623f642",
+      "unchanged": true
+    }
+  ],
+  "headBefore": "3a2ab48917d7fb7f3b50858e983037f4dbd44d5f",
+  "headAfter": "3a2ab48917d7fb7f3b50858e983037f4dbd44d5f",
+  "headUnchanged": true,
+  "runtimeInstalled": false,
+  "motionApproved": false,
+  "fanout": false,
+  "next": "No retries/F2/F6/inbetweens. Root must decide new method/order; preserve held429 and436 originals."
+}

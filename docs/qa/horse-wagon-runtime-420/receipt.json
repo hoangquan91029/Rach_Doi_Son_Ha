@@ -1,0 +1,105 @@
+{
+  "order": 420,
+  "status": "PASS420_HORSE_WAGON_ACTUAL_LOAD_ORDINARY_WALK_PAUSE_RESUME_ARRIVAL_STOP_MENU",
+  "ready": 50,
+  "portraits": 12,
+  "buildFiles": 207,
+  "responsePins": 56,
+  "horsePNGResponsePins": [
+    {
+      "file": "assets/art-v1/wagon-horse-420/idle.png",
+      "sha256": "d43507d1d590e0f0c5f2461d8a70d858bb600e8233902e08a1dfbe9b3748838a"
+    }
+  ],
+  "wagonId": 17,
+  "loadTargetGranary": 2,
+  "cargoBefore": 100,
+  "cargoLoaded": 106,
+  "storeFoodBefore": 260,
+  "storeFoodAfter": 252.999776,
+  "travel": {
+    "tick": 231,
+    "entity": {
+      "id": 17,
+      "owner": 0,
+      "type": "wagon",
+      "kind": "unit",
+      "x": 7.929666362123147,
+      "y": 27.689457408564646,
+      "hp": 140,
+      "maxHp": 140,
+      "food": 40,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "walk",
+      "dir": 0,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 122,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "starving": 0,
+      "lastMovedTick": 231,
+      "resuppliedTick": 231,
+      "order": {
+        "type": "move",
+        "x": 10.499767103574566,
+        "y": 29.499790658862967
+      }
+    },
+    "globalLastDraw": {
+      "entityId": 17,
+      "assetId": "supply-wagon-horse-idle-d0-415",
+      "requestedState": "walk",
+      "requestedDirection": 0,
+      "illustrationDirection": 0,
+      "presentation": "STATIC_ILLUSTRATION"
+    },
+    "globalScope": "AS_SCOPE_LIMIT global diagnostic may name another actor; static415source only, no horsewalk claim"
+  },
+  "pauseTick": 240,
+  "resumeTick": 242,
+  "pausePositionVerified": true,
+  "arrival": {
+    "tick": 261,
+    "entity": {
+      "id": 17,
+      "owner": 0,
+      "type": "wagon",
+      "kind": "unit",
+      "x": 10.023123556159668,
+      "y": 29.023123556159668,
+      "hp": 140,
+      "maxHp": 140,
+      "food": 39.97350399999999,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "idle",
+      "dir": 1,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 122,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "starving": 0,
+      "lastMovedTick": 260,
+      "resuppliedTick": 257,
+      "order": null
+    }
+  },
+  "stopTick": 264,
+  "menuDecodedBytes": 0,
+  "errors": [],
+  "requestFailures": [],
+  "httpErrors": [],
+  "sourceBuildCanonicalPublicBackendHEADPolicyPreserved": true,
+  "handles": "CLOSED",
+  "rootSceneIntake": "PENDING",
+  "scope": "Wholehorse+cart idle415static illustration only/provisional112scale; loadedgoods uses ordinary actualwalk. No horsewalkanimation/fullroster/eightdirection/finalscale claim."
+}

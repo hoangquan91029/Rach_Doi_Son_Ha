@@ -1,0 +1,23 @@
+{
+  "status": "HELD_HUMAN_IDENTITY_DRIFT",
+  "calls": 1,
+  "retries": 0,
+  "additionalCallsAfterCorrection": 0,
+  "openCalls": 0,
+  "guards": "CLOSED",
+  "handleState": "INTERRUPTED_TOOL_RESPONSE_UNAVAILABLE",
+  "rawCustody": "RECOVERED_FILESYSTEM_OUTPUT",
+  "externalServiceState": "UNKNOWN; no live handle or local process observed",
+  "reason": "Human requests movement only; generated identities drifted. Guide-body plus appearance repaint lane rejected, irrespective of returned output.",
+  "generatedOriginal": "/home/kieu-hoang-quan/.codex/generated_images/01a12d55-6878-7dc0-87ec-64c6441f25c0/exec-618237d4-218e-4ab5-a399-bcb866661bc4.png",
+  "rawPath": "docs/art/units/infantry-F4-appearance-440/F4-raw.png",
+  "rawSha256": "1322d3f95e231568b5fc71dcedd6633836a548427ce6f9fad6671a2b5e85cffe",
+  "outputMtimeUTC": "2026-10-11T23:40:22.837288+00:00",
+  "provenance": "Filesystem output recovered after interrupted exec cell5; wait reports cell5 not found. Actual image inspected and matches the two-reference440 structure+appearance request. Original tool result unavailable; no fabricated response/call-id/link metadata.",
+  "technical": "RAW_CUSTODY_ONLY; no working/runtime resize/descriptor created after human correction",
+  "motion": "NOT_QUALIFIED",
+  "owner": "REJECTED_LANE_IDENTITY_DRIFT",
+  "runtime": "UNCHANGED",
+  "production": "NOT_INSTALLED",
+  "headAfter": "3a2ab48917d7fb7f3b50858e983037f4dbd44d5f"
+}

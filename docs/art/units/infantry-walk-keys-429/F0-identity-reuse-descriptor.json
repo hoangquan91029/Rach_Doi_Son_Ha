@@ -1,0 +1,59 @@
+{
+  "id": "infantry-F0-contact-identity-reuse-429",
+  "family": "unit.infantry.pilot429",
+  "kind": "unit",
+  "state": "walk",
+  "direction": 0,
+  "source": {
+    "path": "docs/art/units/infantry-walk-keys-429/F0-identity-reuse-256.png",
+    "sha256": "520c9d0feeffa7bf4ffd30d80eb3f425803975d8c1209fc016f2d382424c257f",
+    "rgbaSha256": "105864305629a7c5952eb4bc1a497057b52396f983ec1feec1bb709aea51f1d9",
+    "width": 256,
+    "height": 256
+  },
+  "runtime": {
+    "path": "docs/art/units/infantry-walk-keys-429/F0-identity-reuse-128.png",
+    "sha256": "5e98e885067ab620434023425c29465ec42c5da8ab0b9ad11a2bb69e74fb2827",
+    "rgbaSha256": "ab962347a9df4b146751fb083b0fa827bb21b94fa68d8768f1b8a8548a6e8877",
+    "width": 128,
+    "height": 128,
+    "derivation": {
+      "method": "resize",
+      "filter": "lanczos",
+      "sourceSha256": "520c9d0feeffa7bf4ffd30d80eb3f425803975d8c1209fc016f2d382424c257f"
+    }
+  },
+  "cell": {
+    "width": 128,
+    "height": 128
+  },
+  "pivot": {
+    "x": 133.30781499202553,
+    "y": 215.78309409888357,
+    "space": "source"
+  },
+  "render": {
+    "width": 42,
+    "height": 42
+  },
+  "alphaPolicy": "transparent",
+  "contactShadow": {
+    "mode": "separate",
+    "assetId": "unit-contact-shadow"
+  },
+  "candidate": true,
+  "review": {
+    "status": "CANDIDATE"
+  },
+  "frames": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 75
+    }
+  ],
+  "loop": false,
+  "notes": "Entire original canonical identity reused as F0 contact CANDIDATE. No generated or new authored motion; whole uniform resize only. Pilot-only descriptor, not installed. Shadow authority unchanged canonical separate unit-contact-shadow."
+}

@@ -1,0 +1,114 @@
+{
+  "order": 424,
+  "status": "PASS424_NORMAL_TLS_FIREFOX_HORSE_WAGON_ACTUAL_LOAD_ORDINARY_WALK_PAUSE_RESUME_ARRIVAL_STOP_MENU",
+  "normalTLS": true,
+  "ready": 50,
+  "portraits": 12,
+  "publicFiles": 207,
+  "responsePins": 57,
+  "changedPayloadPins": [
+    {
+      "file": "assets/index-8telBS7h.js",
+      "sha256": "352a4aa4ae36f2a6d44c5d073298a4056438a050414f9703e045d5317c39de61"
+    },
+    {
+      "file": "assets/art-v1/fort-202-manifest.json",
+      "sha256": "937dac2c1a210bf031eabbc7dbd97b0ca3ef95a46ab4ddce56eee85c24cc5558"
+    },
+    {
+      "file": "assets/art-v1/wagon-horse-420/idle.png",
+      "sha256": "d43507d1d590e0f0c5f2461d8a70d858bb600e8233902e08a1dfbe9b3748838a"
+    }
+  ],
+  "exactSelectedWagon": [
+    17
+  ],
+  "cargoBefore": 100,
+  "cargoLoaded": 106,
+  "storeFoodBefore": 260,
+  "storeFoodAfter": 253.01302399999997,
+  "travel": {
+    "tick": 236,
+    "entity": {
+      "id": 17,
+      "owner": 0,
+      "type": "wagon",
+      "kind": "unit",
+      "x": 7.839510491653726,
+      "y": 27.719406014874476,
+      "hp": 140,
+      "maxHp": 140,
+      "food": 40,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "walk",
+      "dir": 0,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 120,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "starving": 0,
+      "lastMovedTick": 236,
+      "resuppliedTick": 236,
+      "order": {
+        "type": "move",
+        "x": 10.483539094650208,
+        "y": 29.503135410542814
+      }
+    },
+    "globalLastDraw": {
+      "entityId": 17,
+      "assetId": "supply-wagon-horse-idle-d0-415",
+      "requestedState": "walk",
+      "requestedDirection": 0,
+      "illustrationDirection": 0,
+      "presentation": "STATIC_ILLUSTRATION"
+    },
+    "globalScope": "AS_SCOPE_LIMIT global diagnostic may name another actor; static415source only, no horsewalk claim"
+  },
+  "pauseTick": 244,
+  "resumeTick": 245,
+  "pausePositionVerified": true,
+  "arrival": {
+    "tick": 267,
+    "entity": {
+      "id": 17,
+      "owner": 0,
+      "type": "wagon",
+      "kind": "unit",
+      "x": 10.023123556159668,
+      "y": 29.023123556159668,
+      "hp": 140,
+      "maxHp": 140,
+      "food": 39.97350399999999,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "idle",
+      "dir": 1,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 120,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "starving": 0,
+      "lastMovedTick": 266,
+      "resuppliedTick": 263,
+      "order": null
+    }
+  },
+  "stopTick": 272,
+  "menuDecodedBytes": 0,
+  "errors": [],
+  "requestFailures": [],
+  "httpErrors": [],
+  "sealed420Canonical50Public423207Backend230HEADPolicyPreserved": true,
+  "handles": "CLOSED",
+  "scope": "Static wholehorse+cart only/provisional112scale; actualloadedgoods ordinarywalk controls. No authoredhorsewalking/eightdirections/finalscale claim."
+}

@@ -1,0 +1,59 @@
+{
+  "id": "infantry-F4-opposite-contact-correction-436",
+  "family": "unit.infantry.pilot429",
+  "kind": "unit",
+  "state": "walk",
+  "direction": 0,
+  "source": {
+    "path": "docs/art/units/infantry-walk-F4-correction-436/F4-working-256.png",
+    "sha256": "d7e4639ea9c66c2cff9b31c2a9c61922e7015f27370700d10e5aa0ce69c1f0f3",
+    "rgbaSha256": "a578d044797d760807d9eed267efaef2d93a59b374cc5e77eb85323b1eedf98c",
+    "width": 256,
+    "height": 256
+  },
+  "runtime": {
+    "path": "docs/art/units/infantry-walk-F4-correction-436/F4-runtime-128.png",
+    "sha256": "a5c473584ce1f3809fec13f90ecbd8aff403b72413938d96941190e25bf108f1",
+    "rgbaSha256": "e21c98ade9169cb31678754fffd5286087a8dcbd39396010727ca2478be64015",
+    "width": 128,
+    "height": 128,
+    "derivation": {
+      "method": "resize",
+      "filter": "lanczos",
+      "sourceSha256": "d7e4639ea9c66c2cff9b31c2a9c61922e7015f27370700d10e5aa0ce69c1f0f3"
+    }
+  },
+  "cell": {
+    "width": 128,
+    "height": 128
+  },
+  "pivot": {
+    "x": 133.30781499202553,
+    "y": 215.78309409888357,
+    "space": "source"
+  },
+  "render": {
+    "width": 42,
+    "height": 42
+  },
+  "alphaPolicy": "transparent",
+  "contactShadow": {
+    "mode": "separate",
+    "assetId": "unit-contact-shadow"
+  },
+  "candidate": true,
+  "review": {
+    "status": "REJECTED"
+  },
+  "frames": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 75
+    }
+  ],
+  "loop": false,
+  "notes": "ONE built-in whole2D F4 correction436; candidate single-frame source only. Source1254\u2192working256/runtime128 wholeuniformLanczos, no fit/warp/mirror. Motion/root selection pending. HELD436: generated shield screen-left and sword screen-right remain wrong; no selection/runtime promotion."
+}

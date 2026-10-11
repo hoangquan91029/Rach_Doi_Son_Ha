@@ -1,0 +1,67 @@
+{
+  "status": "CLOSED_ONE_CALL_RETURNED",
+  "profile": "gpt-6.1-sol/low",
+  "tool": "builtin image_gen",
+  "finiteCallCap": 1,
+  "retryCap": 0,
+  "callsUsed": 1,
+  "frameSlot": "F4",
+  "attachments": [
+    {
+      "path": "docs/art/units/sources/infantry-neutral-se-refine-01-imagegen-raw.png",
+      "sha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f"
+    },
+    {
+      "path": "docs/art/units/infantry-walk-plan-427/preview/F4.png",
+      "sha256": "a8202c48a2225836d655df483ecdbd076a1cc78e91cfd4b360adfc9ffe970a9e"
+    }
+  ],
+  "references": [
+    {
+      "path": "docs/art/units/sources/infantry-neutral-se-refine-01-imagegen-raw.png",
+      "sha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f"
+    },
+    {
+      "path": "docs/art/units/infantry-walk-plan-427/preview/F4.png",
+      "sha256": "a8202c48a2225836d655df483ecdbd076a1cc78e91cfd4b360adfc9ffe970a9e"
+    },
+    {
+      "path": "docs/art/units/infantry-walk-plan-427/root-guide-intake.json",
+      "sha256": "dd4948753ac281229c95eae4bff38020518cdede55d791039e1205d5c92ce0b1"
+    }
+  ],
+  "head": "3a2ab48917d7fb7f3b50858e983037f4dbd44d5f",
+  "prompt": "Use case: identity-preserve. Create ONE whole-frame transparent realistic painted RTS infantry walk F4 opposite contact. Image1 actual canonical infantry is PRIMARY authority for face, identity, realistic painted material style, ESE raised 54x27 camera, body mass and equipment. Image2 original whole vector F4 authoring guide specifies ONLY pose, never its flat style or simplified anatomy. Preserve canonical conical metal helmet/red cloth, moustache/dark hair, cream clothing, green lamellar armor, red sash, dark trousers, wrapped shins/brown boots; curved sword in screen-left hand and heavy round wooden shield in screen-right hand. Entire single clothed body, exactly two arms/two legs. Make a real modest opposite contact walk pose: near shield-side hip connects naturally through thigh/knee/shin to the trailing upper-left boot on toe; far sword-side hip connects naturally to the forward lower-right foot taking support/heel contact. Canonical F0 has shield-side forward contact; F4 must visibly exchange support and swing leg positions without mirroring identity or changing view. Preserve shoulder/chest/hip volume and stable heavy shield/sword grip; small physical shoulder counterpose only. No attack, no broad stride or sprint. Camera, body scale and framing remain fixed; pivot normalized (653/1254,1057/1254) as canonical ground reference, distinguish projected depth of two foot contacts. Keep complete helmet, shield, sword and boots within square transparent canvas with margins. Whole realistic painted illustration with genuine alpha, no environment/ground plane, no added shadow (canonical uses separate runtime shadow). Do not paste source pixels or part textures, cut out limbs, warp/mirror/globalshift/resize the original pose, use3D, or duplicate neutral stance. One coherent fully redrawn frame, no sprite sheet/text/watermark.",
+  "sourceFamilyLayout": {
+    "working": [
+      256,
+      256
+    ],
+    "runtimeCell": [
+      128,
+      128
+    ],
+    "logicalRender": [
+      42,
+      42
+    ],
+    "pivot": [
+      133.30781499202553,
+      215.78309409888357
+    ]
+  },
+  "existingF0": "F0-identity-reuse-descriptor.json",
+  "F0Provenance": "identityreuse entire canonical original; NOT generated motion",
+  "closedGates": [
+    "F2",
+    "F6",
+    "inbetweens",
+    "fanout",
+    "runtimeinstall",
+    "build",
+    "publication"
+  ],
+  "next": "Root GO required; ONE F4 full edit then selection/hold. No other calls.",
+  "headBeforeCall": "3a2ab48917d7fb7f3b50858e983037f4dbd44d5f",
+  "rootGO": true
+}

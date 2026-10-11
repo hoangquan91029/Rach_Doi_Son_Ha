@@ -1,0 +1,113 @@
+{
+  "status": "AUTHORING_ONLY_ROOT_REVIEW_PENDING_ZERO_CALLS",
+  "profile": "gpt-6.1-sol/low",
+  "identityInputs": [
+    {
+      "path": "docs/art/units/sources/infantry-neutral-se-refine-01-imagegen-raw.png",
+      "sha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f"
+    },
+    {
+      "path": "public/assets/art-v1/runtime/infantry-idle-D00.webp",
+      "sha256": "de7a865b865ee6ac8b9ff7ba3df07825c01106e1e7ac691cb0924a187f145c51"
+    },
+    {
+      "path": "public/assets/art-v1/fort-202-manifest.json",
+      "sha256": "937dac2c1a210bf031eabbc7dbd97b0ca3ef95a46ab4ddce56eee85c24cc5558"
+    }
+  ],
+  "head": "3a2ab48917d7fb7f3b50858e983037f4dbd44d5f",
+  "sourceCanvas": [
+    256,
+    256
+  ],
+  "runtimeCell": [
+    128,
+    128
+  ],
+  "fixedPivot": {
+    "space": "source",
+    "x": 133.30781499202553,
+    "y": 215.78309409888357,
+    "authority": "canonical infantry653/1254,1057/1254; not worker654/1140"
+  },
+  "logicalRender": [
+    42,
+    42
+  ],
+  "scale": "CANDIDATE_NOT_APPROVED",
+  "direction": 0,
+  "screenFacing": "ESE",
+  "frames": [
+    {
+      "slot": "F0",
+      "phase": "near-contact",
+      "durationMs": 75,
+      "guide": "F0.svg",
+      "support": "near shield-side"
+    },
+    {
+      "slot": "F1",
+      "phase": "near-down",
+      "durationMs": 75,
+      "guide": "F1.svg",
+      "support": "near shield-side"
+    },
+    {
+      "slot": "F2",
+      "phase": "far-passing",
+      "durationMs": 75,
+      "guide": "F2.svg",
+      "support": "near shield-side"
+    },
+    {
+      "slot": "F3",
+      "phase": "near-up",
+      "durationMs": 75,
+      "guide": "F3.svg",
+      "support": "near shield-side"
+    },
+    {
+      "slot": "F4",
+      "phase": "far-contact",
+      "durationMs": 75,
+      "guide": "F4.svg",
+      "support": "far sword-side"
+    },
+    {
+      "slot": "F5",
+      "phase": "far-down",
+      "durationMs": 75,
+      "guide": "F5.svg",
+      "support": "far sword-side"
+    },
+    {
+      "slot": "F6",
+      "phase": "near-passing",
+      "durationMs": 75,
+      "guide": "F6.svg",
+      "support": "far sword-side"
+    },
+    {
+      "slot": "F7",
+      "phase": "far-up",
+      "durationMs": 75,
+      "guide": "F7.svg",
+      "support": "far sword-side"
+    }
+  ],
+  "cycleMs": 600,
+  "imageCalls": 0,
+  "nextFiniteProposal": {
+    "keys": [
+      "F0",
+      "F4",
+      "F2",
+      "F6"
+    ],
+    "calls": 4,
+    "retries": 0,
+    "authorization": "ROOT_REVIEW_REQUIRED_NOT_OPEN",
+    "attachments": "actual canonical master + inspected target guide; current selected predecessor/next key only when actually existing"
+  },
+  "guideProvenance": "Original whole vector clothed drawings. No raster pixels loaded, no limb assets, transforms only contact-sheet presentation. Each source drawing is full character; not runtime."
+}

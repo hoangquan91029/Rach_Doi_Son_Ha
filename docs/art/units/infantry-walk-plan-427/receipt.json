@@ -1,0 +1,148 @@
+{
+  "status": "CLOSED_AUTHORING_GUIDES_RENDERED_ROOT_INTAKE_PENDING",
+  "profile": "gpt-6.1-sol/low",
+  "imageCalls": 0,
+  "runtimeChanges": 0,
+  "builds": 0,
+  "browserRuns": 1,
+  "sourceReferences": [
+    {
+      "path": "docs/art/units/sources/infantry-neutral-se-refine-01-imagegen-raw.png",
+      "sha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+      "afterSha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/art-v1/runtime/infantry-idle-D00.webp",
+      "sha256": "de7a865b865ee6ac8b9ff7ba3df07825c01106e1e7ac691cb0924a187f145c51",
+      "afterSha256": "de7a865b865ee6ac8b9ff7ba3df07825c01106e1e7ac691cb0924a187f145c51",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/art-v1/fort-202-manifest.json",
+      "sha256": "937dac2c1a210bf031eabbc7dbd97b0ca3ef95a46ab4ddce56eee85c24cc5558",
+      "afterSha256": "937dac2c1a210bf031eabbc7dbd97b0ca3ef95a46ab4ddce56eee85c24cc5558",
+      "unchanged": true
+    }
+  ],
+  "headBefore": "3a2ab48917d7fb7f3b50858e983037f4dbd44d5f",
+  "headAfter": "3a2ab48917d7fb7f3b50858e983037f4dbd44d5f",
+  "wholeGuideCount": 8,
+  "guidesAuthoringOnly": true,
+  "provisionalCycleMs": 600,
+  "motionApproved": false,
+  "ownerApproved": false,
+  "fanout": false,
+  "scaleApproved": false,
+  "outputs": [
+    {
+      "path": "docs/art/units/infantry-walk-plan-427/F0.svg",
+      "sha256": "65a6109dc285adb0f00bf86ee36c17ad92d0843985f9563d296d1122afba55ea"
+    },
+    {
+      "path": "docs/art/units/infantry-walk-plan-427/F1.svg",
+      "sha256": "98a21211d02829d997c0e7520098a213df5b16e549355798ebc4d70badc55c69"
+    },
+    {
+      "path": "docs/art/units/infantry-walk-plan-427/F2.svg",
+      "sha256": "8154b19dfa8f4bd91bd568465d545d1ab80bfe0b71f07e6fee1fe11cb42122c6"
+    },
+    {
+      "path": "docs/art/units/infantry-walk-plan-427/F3.svg",
+      "sha256": "a315e1d6fed8b05e4838424b517e42847de608a3a3b46be2a043fac4aeef7ba2"
+    },
+    {
+      "path": "docs/art/units/infantry-walk-plan-427/F4.svg",
+      "sha256": "9b6ea03f6db6762b94c150af44785498de3d765ffec1a3205dc543f2dafece45"
+    },
+    {
+      "path": "docs/art/units/infantry-walk-plan-427/F5.svg",
+      "sha256": "7577fb10b91d2e2717ca5b563addcd35d5fc27333602f4f8468ae271f60b5eac"
+    },
+    {
+      "path": "docs/art/units/infantry-walk-plan-427/F6.svg",
+      "sha256": "9c8931a23db7e7627474aba013096ac1b6a523fc9ce7d19090b168c89a679bf1"
+    },
+    {
+      "path": "docs/art/units/infantry-walk-plan-427/F7.svg",
+      "sha256": "99dd26912ff35697871abba99518d51cde07b49fd1e03a0f5d9e55e39f177448"
+    },
+    {
+      "path": "docs/art/units/infantry-walk-plan-427/README.md",
+      "sha256": "7418cdfe07f148a7976e37d9db41e73e2fa01122def86bc1513ab94843b4e2f0"
+    },
+    {
+      "path": "docs/art/units/infantry-walk-plan-427/author-guides.py",
+      "sha256": "29e61851d3077127c6fe44dda6ee3c30347e901e099502cbba3c23ec62ec6e6f"
+    },
+    {
+      "path": "docs/art/units/infantry-walk-plan-427/plan.json",
+      "sha256": "e640176b4ae55e25f6f31644dab99ccfdd58e847c521d2f9ea11c1798fd120e2"
+    },
+    {
+      "path": "docs/art/units/infantry-walk-plan-427/rough-contact-sheet.svg",
+      "sha256": "3dbcacbebb2337f56a2f31fdef9151579574196dd48497d1c5b0dc133e86c501"
+    },
+    {
+      "path": "docs/art/units/infantry-walk-plan-427/rough-loop.html",
+      "sha256": "5d1c34dd825e6a8533db67dd13bec5650df31f22c1bfa0fdfb775dc1067054ed"
+    }
+  ],
+  "next": "Root review of rough guides before separate finite whole-key image order; no calls open.",
+  "previewOnly": true,
+  "threeBriefChecks": {
+    "F0_F4": "Whole rendered sheet: near screen-right foot ahead inF0; far screen-left foot ahead inF4. Screen ordering changes, no mirror. Clothed thigh/knee paths differ; rough contact depiction only.",
+    "F2_F6": "Whole rendered sheet: far leg bends/passes inF2; near leg bends/passes inF6, with low toe clearance. Shield/tunic occlude portions; root should judge readability at70.56px before calls.",
+    "cameraBodyIdentity": "All8 use same ESE head/helmet/torso/hip envelope, slight authored vertical compression/rise. Screen-left curved sword/screen-right round shield and clothing palette match role of canonical. Simplified guide anatomy/material detail is not canonical painted likeness or full motion approval."
+  },
+  "groundReconciliation": {
+    "canonicalPivot256": [
+      133.30781499202553,
+      215.78309409888357
+    ],
+    "oldGuideFootBaseline": 216,
+    "newAuthoredFootBaseline": 207.28309409888357,
+    "contactSoleReference": "F0/F4 two projected footsole centers average canonicalpivoty215.783094099: near/far depth offsets+9/-8 plus8sole offset. Individual sole y differs because dimetric depth. Passing supporting foot approximately215.283; no claim worldfootlock.",
+    "method": "Reauthored complete guide lower-leg paths and knee reference; no whole-image shift/resize or source raster transform.",
+    "sourceChanges": 0
+  },
+  "inputsUnchanged": true,
+  "previewArtifacts": [
+    {
+      "path": "docs/art/units/infantry-walk-plan-427/preview/F0.png",
+      "sha256": "1c6001c0eab393930176322bf1c70a378babc6043ff808dcaad033a984ad11e7"
+    },
+    {
+      "path": "docs/art/units/infantry-walk-plan-427/preview/F2.png",
+      "sha256": "410eb28a10c956c679e826a85e3e31a46ba9ac3c9463c7ac14c58f389a33c50e"
+    },
+    {
+      "path": "docs/art/units/infantry-walk-plan-427/preview/F4.png",
+      "sha256": "a8202c48a2225836d655df483ecdbd076a1cc78e91cfd4b360adfc9ffe970a9e"
+    },
+    {
+      "path": "docs/art/units/infantry-walk-plan-427/preview/F6.png",
+      "sha256": "4f2a04c4b2644f423262c6705bd568bce4851113eb6ac1519509cf1870dcd96c"
+    },
+    {
+      "path": "docs/art/units/infantry-walk-plan-427/preview/authored-loop-view.png",
+      "sha256": "5b67fdceae544b103b4c9e238b0038ecc4318cd96b6c72ddcd20619f49231ed5"
+    },
+    {
+      "path": "docs/art/units/infantry-walk-plan-427/preview/page@90553b34fa8d3d2a965b56ca5fbd1063.webm",
+      "sha256": "ebb7b10e43386d5cb616650b1fd921e8ed17d87f014f655c0d0c205b194e60dc"
+    },
+    {
+      "path": "docs/art/units/infantry-walk-plan-427/preview/render-receipt.json",
+      "sha256": "a52a058cca1da3c8e2ce6cde4b89fedf2401ce00b301169e7676ba2db0565aa1"
+    },
+    {
+      "path": "docs/art/units/infantry-walk-plan-427/preview/render.mjs",
+      "sha256": "58ed04a87f9392788db05ddc3d39925dd4679ee8c68c914201a8b64642961632"
+    },
+    {
+      "path": "docs/art/units/infantry-walk-plan-427/preview/rough-contact-sheet.png",
+      "sha256": "208b3d8bf45f32f68314f1d520dfc655a6ce14390ad1a086ad05113751e463cb"
+    }
+  ]
+}

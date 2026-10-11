@@ -1,0 +1,114 @@
+{
+  "order": 434,
+  "status": "PASS434_NORMAL_TLS_FIREFOX_CLEAR_PLAIN_D1_WALK42_PAUSE_RESUME_STOP_IDLE_MENU",
+  "normalTLS": true,
+  "sameSealed426": true,
+  "publicFiles": 208,
+  "defaultZoom": 1.68,
+  "ready": 50,
+  "portraits": 12,
+  "responsePins": 57,
+  "newBundleFortPins": [
+    {
+      "file": "assets/index-DOrSNC3u.js",
+      "sha256": "c64cd58ef1b6c7e9fe56f5e988579b6ee79828f61b29c285f4890fb9afc2d2a5"
+    },
+    {
+      "file": "assets/art-v1/fort-202-manifest.json",
+      "sha256": "42425c68d448f89047ea15fe6e108ec2b25393d34312ae0adb37ff1d9be282fa"
+    }
+  ],
+  "clearPlainPath": {
+    "start": {
+      "x": 15.5,
+      "y": 23.5
+    },
+    "end": {
+      "x": 18.5,
+      "y": 26.5
+    },
+    "d": 7.088018058667742
+  },
+  "actualD1Travel": {
+    "tick": 218,
+    "entity": {
+      "id": 9,
+      "owner": 0,
+      "type": "villager",
+      "kind": "unit",
+      "x": 15.456452426181935,
+      "y": 22.737695700454132,
+      "hp": 65,
+      "maxHp": 65,
+      "food": 39.284607999999764,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "walk",
+      "dir": 1,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "resuppliedTick": 110,
+      "starving": 0,
+      "lastMovedTick": 218,
+      "order": {
+        "type": "move",
+        "x": 18.47477954144621,
+        "y": 26.488536155202823
+      }
+    },
+    "lastWalk": {
+      "entityId": 9,
+      "frame": 7,
+      "distance": 7.539864257081003,
+      "distancePerCycle": 1.26,
+      "direction": 1
+    },
+    "globalScope": "No peractor global diagnostic identity assertion"
+  },
+  "pauseTick": 226,
+  "resumeTick": 228,
+  "pausePositionFrozen": true,
+  "sameD1StopIdle": {
+    "tick": 233,
+    "entity": {
+      "id": 9,
+      "owner": 0,
+      "type": "villager",
+      "kind": "unit",
+      "x": 16.686933581435312,
+      "y": 23.686933581435312,
+      "hp": 65,
+      "maxHp": 65,
+      "food": 39.18524799999973,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "idle",
+      "dir": 1,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "resuppliedTick": 110,
+      "starving": 0,
+      "lastMovedTick": 233,
+      "order": null
+    }
+  },
+  "menuDecodedBytes": 0,
+  "errors": [],
+  "requestFailures": [],
+  "httpErrors": [],
+  "sealedSourceBuildCanonicalPublicHEADBackendPolicyPreserved": true,
+  "handles": "CLOSED",
+  "scope": "PublicFirefox candidatefamily42/horse84/zoom1.68 clear D1walk+idle technicalbrowserproof; no allstates/fullroster/eightdirections/finalscale or movement213ownerapproval claim."
+}

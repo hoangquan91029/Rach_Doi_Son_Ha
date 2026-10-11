@@ -1,5 +1,7 @@
 # Rạch Đôi Sơn Hà — kế hoạch thực thi sau audit 154
 
+> **Current checkpoint442 / public433:** horse415 installed, render84; allvillager42/defaultzoom1.68 installed andChrome426/430/publicFirefox434 verified. Same426sealed208/public433/newJSc64cd…d2a5/backend230/currentrollback423+230private428. Latesthuman rejects identity drift:429/436/439/440 held, no generatedforeignunit runtime; stop guide-only→newunit→repaint. Nextfinite443 one modest adjacent motion edit directly onoriginalinfantry, no newidentity. 439440 recovered outputs documented asfilesystemcustody withtoolresponse missing; no duplicatecalls. Fullgoal INCOMPLETE. Priorcurrentnotices below are history.
+
 > **Current checkpoint419 / public417:** firearm408/artillery409 wholeD0idle publicfort50, actual412/414 controls and418HTTPSFirefox passed; originalwrongcwd/occlusion/globaldiagnosticHOLD receipts preserved. Latesthuman priority: horsepullingwagon, then consistent unit scale, then missing authored animations. Horse415 wholeillustration created ONEbuiltin/0retry but pending420actualscene/install. VillagerD0~37.5px vsD1~87–89px mismatch confirmed; currentgraphicsplan proposes onefamily42 +uniformworldzoom1.68, notinstalled. Backend230 unchanged/currentrollback405+230private411.407entrypoints archived419/source7994fb0; all418/415guards closed. Fullgoal INCOMPLETE; older notices below are historical.
 
 
