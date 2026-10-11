@@ -4463,6 +4463,88 @@
         }
       ],
       "loop": false
+    },
+    {
+      "id": "rocky-ground-338",
+      "family": "mountain-ground",
+      "kind": "terrain",
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/terrain/rocky-ground-338/raw.png",
+        "sha256": "83dac8e2a46e1d59cc072bb9579875763e4d5709ea5c550a1976efcf98242705",
+        "rgbaSha256": "e7fac2ea54db9ed38f5980c58b36cecc6e18b8a7b78a8c6d780c3426e776e748",
+        "width": 1254,
+        "height": 1254,
+        "bbox": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "alphaExtrema": [
+          255,
+          255
+        ]
+      },
+      "runtime": {
+        "path": "rocky-ground-338/ground.webp",
+        "sha256": "9bd74bcf17b31a1de0668fed51ea6f99948b702ac4640e640c68c867d4e45bcf",
+        "rgbaSha256": "0f5f7a57bf4d312d269e4a782c881283dd4612b107facaee9deef6eb78fdfb70",
+        "width": 512,
+        "height": 512,
+        "bbox": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "derivation": {
+          "method": "resize",
+          "sourceSha256": "83dac8e2a46e1d59cc072bb9579875763e4d5709ea5c550a1976efcf98242705",
+          "filter": "lanczos"
+        }
+      },
+      "cell": {
+        "width": 512,
+        "height": 512
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0,
+        "space": "source"
+      },
+      "render": {
+        "width": 256,
+        "height": 256
+      },
+      "materialWorldSize": {
+        "width": 8,
+        "height": 8
+      },
+      "state": "material",
+      "direction": null,
+      "loop": false,
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 512,
+          "height": 512,
+          "durationMs": 1000
+        }
+      ],
+      "alphaPolicy": "opaque",
+      "contactShadow": {
+        "mode": "none"
+      },
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "candidate": true,
+      "notes": "ONE original whole2D material338, uniform512 export, world-anchored 8x8 terrain plane. Only actual mountain cells; no map/passability change. Clustered peaks require decoded material; original dense fallback otherwise."
     }
   ],
   "id": "fort-202",

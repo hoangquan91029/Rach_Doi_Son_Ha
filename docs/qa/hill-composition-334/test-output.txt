@@ -1,0 +1,32 @@
+✖ connected hills have bounded stable irregular anchors and some open ground (4.838859ms)
+✔ fog expansion never relocates known decoration or creates hidden clip cells (1.016845ms)
+✔ single rise and odd partial boundaries retain overlays, nonhill cells excluded (0.200265ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 2
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 53.037396
+
+✖ failing tests:
+
+test at docs/qa/hill-composition-334/test.mjs:3:1
+✖ connected hills have bounded stable irregular anchors and some open ground (4.838859ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(Math.abs(a.artX-a.x)<=.35&&Math.abs(a.artY-a.y)<=.35)
+  
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/hill-composition-334/test.mjs:3:309)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.start (node:internal/test_runner/test:1096:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:385:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

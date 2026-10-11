@@ -2,7 +2,7 @@
 
 Cập nhật ngày 2026-10-10, múi giờ Asia/Ho_Chi_Minh. **Trạng thái: INCOMPLETE.** Đây là kế hoạch hiện hành cho toàn dự án; `NEXT_STEPS.md` chỉ giữ hàng đợi gần nhất. Hồ sơ cũ được giữ nguyên byte tại `docs/audit/2026-10-09/history/`.
 
-Latest execution333 ở mục30 và active movement plan thay các next-step lịch sử; source/receipt cũ giữ nguyên.
+Latest execution341 ở mục31 và active movement plan thay các next-step lịch sử; source/receipt cũ giữ nguyên.
 
 ## 1. Mục tiêu và cách đọc kết quả
 
@@ -282,3 +282,12 @@ Four whole2D returned phases312/315/319/320, zero retries per finite call; origi
 331 ONE ordinaryChromehost+Firefoxguest builtcompletedWall400HP/threeinfantryATTACK/death and actualrenderer0/1/2/3/terminalhold/unpick/removal82ticks/onlinePausecontinues/Stopboth/menu0/54+12/errors0/cleanuprooms0. Real sessionclips/13sec excerpt retained; technicalphase proof does not close continuousnaturalness/finalbuildingart. Original318scopeHOLD unlaunched,322fordsite guard,326autoaggro builderdeath,327phase2snapshotclock skip,330shortscreenshot phase1sampling gap preserved.331 uses ordinary HOLD then ATTACK and capture-free shortphase sampling; no weakenedguards/speed/artpixel changes.
 
 Public309/backend230/currentrollback299 unchanged. Preparedprivate325 pairedrollback309 SHA62c1e5356c8f71fd4f4a76cfa76fa53c2754d9f3d0ec4ad7ffbb1b6c88da10b3 safeentries/bytes/modes/extraction verified; preparationonly/no nextclone. Prior311 entrypoints exactGitf55e9dea archived. Next release boundary requires actualgame-size intake/exactsource/build/currentpairedrollback; no newcollapse imagecalls needed. Movement213/216/233 and allfullgoal gates remain open; fullroster/directions/actions/leaders/construction/buildingstates/maps/performance/defaultart/externalWAN/finalbothmodesbothmaps INCOMPLETE. Automation311 missing-native-schedule humanchoice stillpending, no recreatedschedule claim.
+
+
+## 31. Hiện hành334–341 — composition đồi/núi
+
+334/335 giữ toàn bộ hình hill111 và clip ô hill thật, thêm world-stable jitter≤.35tile và sparsity trong vùng nối nhau, không đổi terrain/pathfinding.334 firstcapture bịPausemodalblur, giữHOLD;335 ordinaryResume chụp lại cảnh cả hai map ở normalzoom.337 thử 2×2 mountainclustering giảm peak lặp nhưng rootHOLD vì nền cỏ giữa núi impassable dễ hiểu nhầm là đường. Không cài337 riêng.
+
+338 ONEbuiltin/0retry vẽ whole rockyground mới theo palette108, opaque1254→uniform512losslessWebP/world8×8.339 chỉ cluster3/4connectedcells khi ground decode; missing/failed asset hoặc olderroute giữ denseoriginalanchors. Old54rows/PNGscale/pivot/terrain/resources/fog/navigation unchanged. ONEactualChrome campaign so baseline329/candidate339 trên cả hai map bằng ordinaryinfantryMove/arrival/PauseResume/Stop/menu0,55+12/errorsnetworkHTTP0/closedguards. Root brief1280×800/zoom1.08 intake accepts modest static composition/readability improvement, no finalmap/denseperformance/motion inference.340 exactinstall/22focusedtestsPASS.333 entrypoints exactGita634c6b archived; originals/holds/custody preserved.
+
+PUBLIC30953/currentrollback299/immutable230PID3229 unchanged. Next finite terrain-only derivative: currentpublic53 +rocky338→54; exclude pendinglocalcollapse321 descriptor/payload and food099 recipe/payload, keep oldchunks; isolatedfreshbuild/sourcebinding/relevantactualscene/currentpairedrollback before separatepromotion. LOCAL339 full55 is not a public artifact. Collapse331 continuousnaturalness/finalintake, movement213 owner/worldcontact/familyscale, complete roster/directions/actions/leaders, allbuildingstates/mixedGate/shoreforest/fullmaps/performance/defaultart/externalWAN/finaltwomodesbothmaps remain INCOMPLETE. No exhaustedorders/replay or model fallback.

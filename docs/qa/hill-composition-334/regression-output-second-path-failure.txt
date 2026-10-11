@@ -1,0 +1,35 @@
+✔ hill blocks retain aligned anchors and cover partial odd edges without hidden or nonhill cells (1.432512ms)
+✔ mountains strict current knowledge with explicit authoring bypass (0.195034ms)
+✖ hill render order and exact optional asset contract (1.314921ms)
+✔ visible ready mountain anchors exclude route cells and unknown/explored-only terrain (1.842971ms)
+✔ typed failed mountain prop uses existing rock, never forest tree (0.349287ms)
+✔ connected hills have bounded stable irregular anchors and some open ground (2.317683ms)
+✔ fog expansion never relocates known decoration or creates hidden clip cells (0.396688ms)
+✔ single rise and odd partial boundaries retain overlays, nonhill cells excluded (0.162539ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 7
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 62.865977
+
+✖ failing tests:
+
+test at docs/qa/hill-composition-334/hill113-regression.mjs:4:1
+✖ hill render order and exact optional asset contract (1.314921ms)
+  Error: ENOENT: no such file or directory, open '/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/client/raster-slice.js'
+      at readFileSync (node:fs:441:20)
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/hill-composition-334/hill113-regression.mjs:4:705)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: '/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/client/raster-slice.js'
+  }

@@ -1,4 +1,4 @@
-# Project task profile — checkpoint333 / local332 / public309
+# Project task profile — checkpoint341 / local340 / public309
 
 ## Routing and production
 
@@ -8,9 +8,9 @@ Built-in imagegen only. No API/CLI/key requests, quota polling/reset/percentage 
 
 ## Read first and live state
 
-Read NEXT_STEPS.md, PROJECT_STATUS.md, docs/PROJECT_PLAN.md, active movement plan, Git and relevant live worker/image/test receipts. Never duplicate open calls or resume exhausted orders. Preparation is not returned art; tests are not visual acceptance. Prior311 entrypoints exactGitf55e9dea byte-preserved in docs/checkpoints/checkpoint311-entrypoints/. Earlier archives remain history.
+Read NEXT_STEPS.md, PROJECT_STATUS.md, docs/PROJECT_PLAN.md, active movement plan, Git and relevant live worker/image/test receipts. Never duplicate open calls or resume exhausted orders. Preparation is not returned art; tests are not visual acceptance. Prior333 entrypoints exactGita634c6b byte-preserved in docs/checkpoints/checkpoint333-entrypoints/. Earlier archives remain history.
 
-All312–332 workers/image/test/browser handles and preservation guards terminal/CLOSED at333; production intentionally runs. Inspect live before new work. Serialize canonical mutations against preservation guards. Original277/277B copy-before-WAIT incident and all later failures remain retained.
+All334/335/337/339 test/browser/server handles CLOSED; image338 RETURNED/closed at341; prior workers terminal/errored (no model fallback); production intentionally runs. Inspect live before new work. Serialize canonical mutations against preservation guards. Original277/277B copy-before-WAIT incident and all later failures remain retained.
 
 ## Movement unchanged
 
@@ -28,7 +28,9 @@ Local332 whole Wall collapse321 installed: four selectedwhole312/315/319/320,125
 
 331 ONE capture-free ordinaryChromehost/Firefoxguest: completedWall400HP→exactthreeinfantryATTACK→death, actualrenderer frames0/1/2/3/terminalhold/nonpick/removal82ticks/onlinePausecontinues/Stopboth/menu0/54art12portraits/errors0/rooms0. Actualdraw diagnostic is permanentread-only; no gameplay/facing injection. Actualclips/excerpt retained. Brief42 phaseappearance narrow; continuousnaturalness/finalbuilding acceptance open. Do not repeat completed331 absent new concern. Original318 unlaunchedscopeHOLD,322fordsiteHOLD,326autoaggrobuilderdeath,327tickclock F2skip,330snapshotcapturestall F1unobserved all preserved; noresume/cleanreceipt replay.
 
-NEXT boundary: brief actual331 game-size video intake, visiblefix only, then separate exactsource/build promotion if accepted. No new collapse calls required. Currentsealed329 build sourcepins/actualbundle in333receipt; sourceclientfood exclusion only305public derivative, localroute preserved. MixedGate, animatedconstruction, hit/attack and otherbuilding states remain unfinished. NEW325 preparedpairedrollback309 SHA62c1e5356c8f71fd4f4a76cfa76fa53c2754d9f3d0ec4ad7ffbb1b6c88da10b3 is preparationonly; no clone/exchange. Public309/currentrollback299/backend230 unchanged.
+Local340 terrain installed from exact339: stable hill overlay jitter/sparsity; connected 3/4 mountain cells use one whole peak cluster ONLY with decoded rocky-ground338. Missing/failed material or older routes retain dense original anchors/grass. ONEbuiltin338/0retry whole1254 opaque painting → uniform512 losslessWebP, world8×8; old54 descriptors/scale/pivots/terrain/passability unchanged.339 ONEactual ordinaryChrome bothmaps baseline/candidate Move/arrival/PauseResume/Stop/menu0,55art12portraits/errorsnetworkHTTP0/closedguards. Root briefnormalzoom1.08 staticscene accepts modest composition/readability improvement only, not wholemapfinal/denseperformance/motion.22focusedtests pass after340install.334 blurredPausecapture HOLD and337 green-gap rootHOLD preserved; no replay.
+
+NEXT boundary: separate finite terrain-only public derivative should retain exact currentpublic53 plus rocky338 (54); exclude pendinglocalcollapse321 descriptor/payload and pendingfood099 recipe/payload, preserve all oldassets/chunks. Fresh isolatedsource/build/relevant actual scene/currentpairedrollback before separate promotion. Do not use local339 full55 as a public artifact. Collapse331 technical closure remains; continuousnaturalness/finalbuilding intake open, no new imagecalls/replay absentvisibleconcern. MixedGate, animatedconstruction/hit/attack, shore/forest/map composition remain unfinished.325 preparedpairedrollback309 remains preparationonly; currentpublic309/currentrollback299/backend230 unchanged.
 
 ## Public309 / rollback
 

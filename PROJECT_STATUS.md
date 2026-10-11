@@ -1,6 +1,12 @@
-# Trạng thái — checkpoint333 / local332 / public309
+# Trạng thái — checkpoint341 / local340 / public309
 
-**INCOMPLETE.** [Full plan](docs/PROJECT_PLAN.md) · [Next](NEXT_STEPS.md) · [Movement](docs/art/pipeline/MOVEMENT_PRODUCTION_PLAN_20261010.md). Prior311 entrypoints exactGitf55e9dea byte-preserved; leadership/canonical/raw/tool/held/rejected/history giữ nguyên.
+**INCOMPLETE.** [Full plan](docs/PROJECT_PLAN.md) · [Next](NEXT_STEPS.md) · [Movement](docs/art/pipeline/MOVEMENT_PRODUCTION_PLAN_20261010.md). Prior333 entrypoints exactGita634c6b byte-preserved; leadership/canonical/raw/tool/held/rejected/history giữ nguyên.
+
+## Local340 — đồi và núi
+
+[339 actual scenes](docs/qa/rocky-mountain-339/root-intake.json) đã kiểm tra ordinary gameplay trên cả hai map ở zoom1.08: đồi có offset ổn định và khoảng nghỉ; các ô núi nối nhau dùng ít cụm wholePNG hơn, phủ nền đá338 để không gợi đường đi qua vùng impassable. Source núi/hill cũ, kích thước/pivot và simulation/map/pathfinding giữ nguyên. Khi nền đá thiếu hoặc decodefail, giữ dense original mountain anchors. Một builtin call338/0retry, whole1254→uniform512 losslessWebP/world8×8; local55 giữ nguyên old54. [340 install](docs/qa/terrain-install-340/receipt.json) có22focusedtestsPASS. Both-map actualUI Move/arrival/PauseResume/Stop/menu0/55art12portraits/errorsnetworkHTTP0, allhandlesclosed. Đây là cải thiện static composition/readability nhỏ, chưa phải finalmap hoặc denseperformance acceptance.
+
+Original334 blurredPause screenshots và337 green-gap visualHOLD giữ nguyên. Public309/rollback299/backend230 chưa đổi. Next riêng: terrain-only public derivative53+338→54, exclude pendingcollapse321/food099, fresh isolatedbuild/relevantscene before separatepromotion. Không publish local55 trực tiếp.
 
 ## Local332 — whole Wall collapse
 
@@ -8,7 +14,7 @@ Four returned whole2D phases312/315/319/320 packed321 at fixed1254/pivot627900�
 
 [331 actual playback](docs/qa/wall-collapse-trial-331/root-intake.json): ordinaryChromehost+Firefoxguest builtWall400HP, threeinfantry attack/death, allfour actualdrawframes, terminalhold/unpick/removal82ticks, onlinePause continues, Stopboth/menu0/54+12/errorsnetworkHTTP0/cleanuprooms0. Realclips and actual13sec excerpt retained. Brief42px phaseappearance accepted narrow; technical checks do not establish continuousnaturalness/finalbuilding acceptance. Original318/322/326/327/330 holds remain. [332 receipt](docs/qa/wall-collapse-install-332/receipt.json), [333 source boundary](docs/checkpoints/checkpoint333/receipt.json).
 
-NEW325 private pairedrollback309 archive62c1e5356c8f71fd4f4a76cfa76fa53c2754d9f3d0ec4ad7ffbb1b6c88da10b3 verified bytes/modes/safeextract; preparation only. Currentpublic309/currentrollback299/backend230 unchanged. Allworker/image/browser/test handles terminal/closed; production intentionallyruns. Next: briefactual331 clip intake then separate exactrelease boundary ifaccepted, or concrete unfinished construction/mixedGate implementation.
+NEW325 private pairedrollback309 archive62c1e5356c8f71fd4f4a76cfa76fa53c2754d9f3d0ec4ad7ffbb1b6c88da10b3 verified bytes/modes/safeextract; preparation only. Currentpublic309/currentrollback299/backend230 unchanged. Allworker/image/browser/test handles terminal/closed; production intentionallyruns. Collapse331 continuousnaturalness intake remains open. Current next terrain-only release boundary is described above; mixedGate/animatedconstruction/other world composition remain unfinished.
 
 ## Public development
 
