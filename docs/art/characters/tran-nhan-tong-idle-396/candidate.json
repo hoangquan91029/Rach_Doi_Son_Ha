@@ -1,0 +1,58 @@
+{
+  "id": "tran-nhan-tong-idle-396-D0",
+  "family": "unit.tran_nhan_tong",
+  "kind": "unit",
+  "state": "idle",
+  "direction": 0,
+  "candidate": true,
+  "review": {
+    "status": "CANDIDATE"
+  },
+  "source": {
+    "path": "docs/art/characters/tran-nhan-tong-idle-396/working256.png",
+    "sha256": "0f54a83aada804661ef826183d417b1ba027eff4d86ca785ab2845f69165f7e6",
+    "rgbaSha256": "4c5a991438ebffb94d0b8786bcba5944a22d44ce39fe0523ba5de676c4b2ddbf",
+    "width": 256,
+    "height": 256
+  },
+  "runtime": {
+    "path": "characters-396/tran-nhan-tong-idle.png",
+    "sha256": "c9f8e63899ffd7481b5bcae463741b369b52ced789139235c77cf58f6948c833",
+    "rgbaSha256": "e756e2960c11c0ecd6a13a33a09c702a2369922d4d5516248cf706fa82b38fbc",
+    "width": 128,
+    "height": 128,
+    "derivation": {
+      "method": "uniform-full-canvas-resize",
+      "filter": "lanczos",
+      "sourceSha256": "0f54a83aada804661ef826183d417b1ba027eff4d86ca785ab2845f69165f7e6"
+    }
+  },
+  "cell": {
+    "width": 128,
+    "height": 128
+  },
+  "pivot": {
+    "x": 133.51196172248802,
+    "y": 232.72727272727272,
+    "space": "source"
+  },
+  "render": {
+    "width": 42,
+    "height": 42
+  },
+  "alphaPolicy": "transparent",
+  "contactShadow": {
+    "mode": "baked"
+  },
+  "frames": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 1000
+    }
+  ],
+  "loop": true,
+  "notes": "Whole builtin2D King identity396; one D0 idle only. All original leadership references preserved. Provisional current-general scale; no animation/8direction/finalfamily scale acceptance."
+}

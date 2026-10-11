@@ -1,0 +1,15 @@
+{
+  "status": "HOLD399_SCHEMA_PROVENANCE_DEFECT_BEFORE_GAMEPLAY",
+  "sourceBuildSealed": true,
+  "sourceBuildUnchanged": true,
+  "canonicalPublicBackendHEADPreserved": true,
+  "cause": "Three new runtime descriptors missing required derivation method resize/filter lanczos/sourceSha256; boot encoded45 of48, menu unavailable. Original sources preserved.",
+  "retry": false,
+  "handles": {
+    "browser": "CLOSED",
+    "server": "CLOSED",
+    "test": "CLOSED",
+    "production": "UNCHANGED_INTENTIONALLY_RUNNING"
+  },
+  "newStageRequired": true
+}

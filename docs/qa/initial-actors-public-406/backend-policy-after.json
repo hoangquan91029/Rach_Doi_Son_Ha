@@ -1,0 +1,22 @@
+{
+  "status": "EXACT405_BACKEND_POLICY_PRESERVED",
+  "actual": {
+    "service": "ActiveState=active\nFragmentPath=/home/kieu-hoang-quan/.config/systemd/user/rach-doi-son-ha.service\nDropInPaths=/home/kieu-hoang-quan/.config/systemd/user/rach-doi-son-ha.service.d/207-release.conf\nMainPID=3229\nWorkingDirectory=/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/releases/230/runtime230\n",
+    "health": {
+      "ok": true,
+      "rooms": 0
+    },
+    "funnel": "{\n  \"TCP\": {\n    \"443\": {\n      \"HTTPS\": true\n    },\n    \"8443\": {\n      \"HTTPS\": true\n    }\n  },\n  \"Web\": {\n    \"kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net:443\": {\n      \"Handlers\": {\n        \"/\": {\n          \"Proxy\": \"http://127.0.0.1:3000\"\n        }\n      }\n    },\n    \"kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net:8443\": {\n      \"Handlers\": {\n        \"/\": {\n          \"Proxy\": \"http://127.0.0.1:3000\"\n        }\n      }\n    }\n  },\n  \"AllowFunnel\": {\n    \"kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net:443\": true,\n    \"kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net:8443\": true\n  }\n}\n",
+    "exe": "/home/kieu-hoang-quan/.nvm/versions/node/v24.15.0/bin/node",
+    "cwd": "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/releases/230/runtime230",
+    "cmdline": "64219d26cb2c512365907eebd2c4fea6f3288c15cba178fd1ab04cfdaab71853",
+    "environment": "4f0cf090bb237c3e795918129655b5613b762b5d3533de046e929ef603d697f0",
+    "distlink": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/dist",
+    "runtimePins": {
+      "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/releases/230/runtime230/shared/sim.js": "29233a059ec084bc8577d20a1bccfd28ddc3024b9cb9bf4d5598c22f220f748b",
+      "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/releases/230/runtime230/server/index.js": "4e6a7e82f02d1d856f4ea788863c4836930bc00250be6a5b020ba2bdd8884198",
+      "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/releases/230/runtime230/node_modules/ws/package.json": "c1ef91ca04eb4754c011c5f0e7638b5078ff71104fada400c44ac761cf93e0b1",
+      "/home/kieu-hoang-quan/.nvm/versions/node/v24.15.0/bin/node": "d1de76d8edf2fededf6f8b30d244e2c0529ac607923a018283b77e9c74bd932c"
+    }
+  }
+}

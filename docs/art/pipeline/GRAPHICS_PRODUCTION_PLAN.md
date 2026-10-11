@@ -1,5 +1,8 @@
 # Kế hoạch đồ họa — checkpoint376 / local375 / public367, 11/10/2026
 
+> **Current checkpoint407 / public405 (11 October 2026):** bareURL fort/worldtrue48assets restores old illustrated world and adds whole2D TNN396/spearman400/wagon398 living static identities.403actualChrome and406publicHTTPSFirefox ordinaryselection/wagonMove/PauseResumeStop/menu passed, zero errors; rootbriefactualscene accepts this narrow coverage only.405204files/unchangedJS352a…de61/manifest7bd215…60504/76HTTPSpins, immutablebackend230PID3229 unchanged. Currentpairedrollback393+230/private401, old393tree rds-public404-next-dist.399schemaHOLD/402unqualified custody retained. Highest NEXT priority is remaining firearm/artillery/naval/10leader coverage, then authored actions/directions/family scale. Stonewalls/woodgates unchanged. Allguards closed before rootupdates; exact395entrypoints archived checkpoint407. See AGENTS/status/next; older current notices below are historical. Fullgoal INCOMPLETE.
+
+
 > **Current395 / public393 — 11 October 2026:** user forbids coarse block graphics and requires earlier illustrations restored. BareURL now uses fullfort45/worldtrue; exact authored animations first, sameidentity living staticillustration when actions/directions missing (diagnosed, not motion acceptance).393 published SAMEsealed389201files;392Chrome/394publicFirefox realworld/ordinarytravel passed. Stonewalls/woodgates unchanged. Highest NEXT priority: missing initial actorTrầnNhânTông/spearman/wagon and remaining roster/leader art, before morewallstates. Originals preserved; no geometric placeholder production or fakeidentity. Currentpairedrollback382+230/private390. See AGENTS/status/next; older notices below are historical, not current orders.
 
 

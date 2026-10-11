@@ -1,0 +1,45 @@
+{
+  "order": 406,
+  "status": "PASS406_NORMAL_TLS_FIREFOX_WORLD48_THREE_NEW_IDENTITIES_WAGON_STATIC_TRAVEL_PAUSE_RESUME_STOP_MENU",
+  "normalTLS": true,
+  "ready": 48,
+  "portraits": 12,
+  "responsePins": 55,
+  "threeNewPNGResponsePins": [
+    {
+      "file": "assets/art-v1/initial-actors-403/king396.png",
+      "sha256": "c9f8e63899ffd7481b5bcae463741b369b52ced789139235c77cf58f6948c833"
+    },
+    {
+      "file": "assets/art-v1/initial-actors-403/spearman400.png",
+      "sha256": "323e16a80b8f503c1f9dcd63010b7c0614ac0ae7462dc498a12e332380dd0ac9"
+    },
+    {
+      "file": "assets/art-v1/initial-actors-403/wagon398.png",
+      "sha256": "6a1b99e46aa02db223dbd7cded3572141cd41e347118fbfeaaf4264d2143e640"
+    }
+  ],
+  "selectedActors": [
+    "king",
+    "spearman",
+    "wagon"
+  ],
+  "travel": {
+    "entityId": 17,
+    "assetId": "wagon-idle-d0-398",
+    "requestedState": "walk",
+    "requestedDirection": 0,
+    "illustrationDirection": 0,
+    "presentation": "STATIC_ILLUSTRATION"
+  },
+  "arrivalDistance": 0.6997094235411042,
+  "pauseResumeStopMenu": true,
+  "errors": [],
+  "requestFailures": [],
+  "httpErrors": [],
+  "canonicalPublicBackendHEADPreserved": true,
+  "backendPolicyMatches405": true,
+  "handles": "CLOSED",
+  "scope": "Static D0 illustrations only; no motion/fullroster/eightdirection/finalfamilyacceptance",
+  "actualScene": "actual-initial-restored-world.png"
+}

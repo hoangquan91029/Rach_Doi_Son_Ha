@@ -1,0 +1,165 @@
+{
+  "assets": [
+    {
+      "id": "tran-nhan-tong-idle-396-D0",
+      "family": "unit.tran_nhan_tong",
+      "kind": "unit",
+      "state": "idle",
+      "direction": 0,
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "source": {
+        "path": "docs/art/characters/tran-nhan-tong-idle-396/working256.png",
+        "sha256": "0f54a83aada804661ef826183d417b1ba027eff4d86ca785ab2845f69165f7e6",
+        "rgbaSha256": "4c5a991438ebffb94d0b8786bcba5944a22d44ce39fe0523ba5de676c4b2ddbf",
+        "width": 256,
+        "height": 256
+      },
+      "runtime": {
+        "path": "initial-actors-399/king396.png",
+        "sha256": "c9f8e63899ffd7481b5bcae463741b369b52ced789139235c77cf58f6948c833",
+        "rgbaSha256": "e756e2960c11c0ecd6a13a33a09c702a2369922d4d5516248cf706fa82b38fbc",
+        "width": 128,
+        "height": 128
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 133.51196172248802,
+        "y": 232.72727272727272,
+        "space": "source"
+      },
+      "render": {
+        "width": 42,
+        "height": 42
+      },
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 1000
+        }
+      ],
+      "loop": true,
+      "notes": "Whole builtin2D King identity396; one D0 idle only. All original leadership references preserved. Provisional current-general scale; no animation/8direction/finalfamily scale acceptance."
+    },
+    {
+      "id": "spearman-idle-d0-400",
+      "family": "unit.spearman",
+      "kind": "unit",
+      "state": "idle",
+      "direction": 0,
+      "source": {
+        "path": "docs/art/units/spearman-margin-400/spearman-idle-d0-256.png",
+        "sha256": "e82c30d4613b8ffaee04d639739ecb262d203b27d151d785e9204e16a0ac6c6c",
+        "rgbaSha256": "56651603cefcca86421784405c05b017b5f99b7192f7fa0022ac6b37454b23be",
+        "width": 256,
+        "height": 256
+      },
+      "runtime": {
+        "path": "initial-actors-399/spearman400.png",
+        "sha256": "323e16a80b8f503c1f9dcd63010b7c0614ac0ae7462dc498a12e332380dd0ac9",
+        "rgbaSha256": "3001e7882bc45753fab4c1dcd69a0e5f9d089cc41fece43a5601a2f0a0d1e483",
+        "width": 128,
+        "height": 128
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "render": {
+        "width": 42,
+        "height": 42
+      },
+      "pivot": {
+        "x": 133.51196172248802,
+        "y": 232.72727272727272,
+        "space": "source"
+      },
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "separate",
+        "assetId": "unit-contact-shadow"
+      },
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "notes": "ONEwhole2D redraw400 margin correction after held397; fixed family layout; static only; no authored motion/eightdirection/final family scale claim.",
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 1000
+        }
+      ],
+      "loop": true
+    },
+    {
+      "id": "wagon-idle-d0-398",
+      "family": "unit.wagon",
+      "kind": "unit",
+      "state": "idle",
+      "direction": 0,
+      "source": {
+        "path": "docs/art/units/supply-wagon-idle-398/working-256.png",
+        "sha256": "3953e30bc9736b668673760d85190bdd5457269de42e338abc9d4d7640a7827b",
+        "rgbaSha256": "4bd36a60a24bb0948f46d8511187e2210f75c9518b67c02ba33955dc68dcaf95",
+        "width": 256,
+        "height": 256
+      },
+      "runtime": {
+        "path": "initial-actors-399/wagon398.png",
+        "sha256": "6a1b99e46aa02db223dbd7cded3572141cd41e347118fbfeaaf4264d2143e640",
+        "rgbaSha256": "9d1a96e723c349ee5906292699d685868f2881b9ddf5fc1f508ce0f5df7afc8b",
+        "width": 128,
+        "height": 128
+      },
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 133.51196172248802,
+        "y": 232.72727272727272,
+        "space": "source"
+      },
+      "render": {
+        "width": 55,
+        "height": 55
+      },
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 1000
+        }
+      ],
+      "loop": true
+    }
+  ],
+  "held397Selected": false,
+  "staticOnly": true
+}

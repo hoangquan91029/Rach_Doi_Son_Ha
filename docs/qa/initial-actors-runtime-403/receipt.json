@@ -1,0 +1,32 @@
+{
+  "status": "PASS403_THREE_INITIAL_ACTOR_ILLUSTRATIONS_WAGON_STATIC_MOVE",
+  "sourceBuildSealed": true,
+  "sourceBuildUnchanged": true,
+  "canonicalPublicBackendHEADPreserved": true,
+  "ready": 48,
+  "portraits": 12,
+  "selectedOwnActors": [
+    "king",
+    "spearman",
+    "wagon"
+  ],
+  "movementPresentation": {
+    "entityId": 17,
+    "assetId": "wagon-idle-d0-398",
+    "requestedState": "walk",
+    "requestedDirection": 0,
+    "illustrationDirection": 0,
+    "presentation": "STATIC_ILLUSTRATION"
+  },
+  "errors": [],
+  "requestFailures": [],
+  "httpErrors": [],
+  "scope": "D0 living idle illustrations with diagnosed static fallback; no authoredmotion/fullroster/eightdirections/finalfamilyapproval",
+  "handles": {
+    "browser": "CLOSED",
+    "server": "CLOSED",
+    "test": "CLOSED",
+    "production": "UNCHANGED_INTENTIONALLY_RUNNING"
+  },
+  "rootGameplaySceneIntake": "PENDING"
+}

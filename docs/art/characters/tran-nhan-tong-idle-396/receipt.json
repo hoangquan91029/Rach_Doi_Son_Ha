@@ -1,0 +1,46 @@
+{
+  "status": "RETURNED_CLOSED_CANDIDATE_AWAIT_ACTUAL_SCENE",
+  "builtinCalls": 1,
+  "retries": 0,
+  "toolOriginal": "/home/kieu-hoang-quan/.codex/generated_images/01a1159b-f20c-75d2-8030-3f4d27119543/exec-2ace1f7c-b802-4bd9-bd9f-13470a53aa68.png",
+  "raw": {
+    "path": "raw.png",
+    "sha256": "b7628ac5d3671cd6307dd04c622e719b2dcbf1aaf976317abfb0236835366d4c",
+    "rgbaSha256": "cbcfde731abc9b21364c386ab3e4f2a548176988b3be1d067e5de037015e454c",
+    "width": 1254,
+    "height": 1254
+  },
+  "source": {
+    "path": "docs/art/characters/tran-nhan-tong-idle-396/working256.png",
+    "sha256": "0f54a83aada804661ef826183d417b1ba027eff4d86ca785ab2845f69165f7e6",
+    "rgbaSha256": "4c5a991438ebffb94d0b8786bcba5944a22d44ce39fe0523ba5de676c4b2ddbf",
+    "width": 256,
+    "height": 256
+  },
+  "runtime": {
+    "path": "characters-396/tran-nhan-tong-idle.png",
+    "sha256": "c9f8e63899ffd7481b5bcae463741b369b52ced789139235c77cf58f6948c833",
+    "rgbaSha256": "e756e2960c11c0ecd6a13a33a09c702a2369922d4d5516248cf706fa82b38fbc",
+    "width": 128,
+    "height": 128,
+    "derivation": {
+      "method": "uniform-full-canvas-resize",
+      "filter": "lanczos",
+      "sourceSha256": "0f54a83aada804661ef826183d417b1ba027eff4d86ca785ab2845f69165f7e6"
+    }
+  },
+  "preview": {
+    "path": "preview42.png",
+    "sha256": "e3604b8de466939e3be57f263f2a95f5d11dd864ce130e5fca648e6474f9dac7",
+    "rgbaSha256": "323ae1d6ba2c427a8ab0ec39a7f9c3cf1ca04b628f2edd9f19dcddbfbd079d14",
+    "width": 42,
+    "height": 42
+  },
+  "alphaExtrema": [
+    0,
+    255
+  ],
+  "edgeAlphaMax": 1,
+  "derivation": "Whole uniform resizes only; no crop/fit/shift/alpha repair/mirror/warp/source splicing",
+  "resolutionReason": "Production source256 and runtime128 preserve useful detail without large browser sprites; larger built-in raw retained as original custody. Provisional logical42 matches existing same-scene general; final 64–96px family-scale target remains open."
+}

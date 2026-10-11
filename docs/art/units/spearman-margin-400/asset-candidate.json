@@ -1,0 +1,45 @@
+{
+  "id": "spearman-idle-d0-400",
+  "family": "unit.spearman",
+  "kind": "unit",
+  "state": "idle",
+  "direction": 0,
+  "source": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/units/spearman-margin-400/spearman-idle-d0-256.png",
+    "width": 256,
+    "height": 256,
+    "sha256": "e82c30d4613b8ffaee04d639739ecb262d203b27d151d785e9204e16a0ac6c6c",
+    "rgbaSha256": "56651603cefcca86421784405c05b017b5f99b7192f7fa0022ac6b37454b23be"
+  },
+  "runtime": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/units/spearman-margin-400/spearman-idle-d0-128.png",
+    "width": 128,
+    "height": 128,
+    "sha256": "323e16a80b8f503c1f9dcd63010b7c0614ac0ae7462dc498a12e332380dd0ac9",
+    "rgbaSha256": "3001e7882bc45753fab4c1dcd69a0e5f9d089cc41fece43a5601a2f0a0d1e483"
+  },
+  "cell": {
+    "width": 128,
+    "height": 128
+  },
+  "render": {
+    "width": 42,
+    "height": 42
+  },
+  "pivot": {
+    "x": 133.51196172248802,
+    "y": 232.72727272727272,
+    "space": "source"
+  },
+  "alphaPolicy": "transparent",
+  "contactShadow": {
+    "mode": "separate",
+    "assetId": "unit-contact-shadow"
+  },
+  "candidate": true,
+  "review": {
+    "status": "CANDIDATE_ROOT_BRIEF_INTAKE_REQUIRED",
+    "notes": "One42px brief: long spear readable;256px upper blade complete now visible with space; lower cap now visible, still near lower/right body. Strict5percent margin not proven: original alpha bbox0,0,1218,1238. No pixel/crop/shift correction performed."
+  },
+  "notes": "ONEwhole2D redraw400 margin correction after held397; fixed family layout; static only; no authored motion/eightdirection/final family scale claim."
+}
