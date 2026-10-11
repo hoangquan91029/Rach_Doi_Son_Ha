@@ -1,0 +1,15 @@
+✔ all existing building families select construction for public boolean and private job, with hit suppressed (2.960186ms)
+✔ missing construction never substitutes idle; completed never selects construction; death precedes site flag (0.396353ms)
+✔ construction fixed ticks respect default/true loops and explicit false holds last frame without completion (0.340743ms)
+✔ unfinished fortifications use only standalone mask0 and never completed neighbor links (0.379054ms)
+✔ ordinary build view supplies owner and redacted enemy construction eligibility; fog omits site (10.018319ms)
+✔ bare game chooses stone walls without promoting world art; explicit unknown remains disabled (0.585301ms)
+✔ real raster route draws all three stone shapes on bareURL, rather than loading unused PNGs (2.00544ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 67.641964

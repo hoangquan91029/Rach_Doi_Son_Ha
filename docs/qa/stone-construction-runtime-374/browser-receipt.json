@@ -1,0 +1,1172 @@
+{
+  "status": "PASS374_CHROME_STATIC_STONE_CONSTRUCTION_TO_IDLE_EXACT_PICKS_PAUSE_RESUME_STOP_MENU",
+  "method": "One374 Chrome actual standalone STONE construction-to-idle trial; keyboard unusedgroup9 clear and exactlivingown pick; sealed374 LOCAL defaultstone9; no group/appstate/commands injection; read-only diagnostics; no injected gameplay/state/facing/speed",
+  "errors": [],
+  "requestFailures": [],
+  "structures": [],
+  "movement": [],
+  "responsePins": [
+    {
+      "file": "index.html",
+      "sha256": "00ac594dd08a74a8f529cfd9c323ff0f7e6aea075cd205a5f418ff22faa75088"
+    },
+    {
+      "file": "assets/index-Dx0ueiQl.css",
+      "sha256": "b5a28e062b20446a0d96f4ca389e4a45838d993c17d5f5804f1c50801f871cc5"
+    },
+    {
+      "file": "assets/index-BpgTjXyS.js",
+      "sha256": "8749f79dadb534ba3e714f5e00a23f2c38102cadf1ab1efc94f9cb61c51f8e2c"
+    },
+    {
+      "file": "assets/leadership/han_xin/portrait.webp",
+      "sha256": "fa43c181204667c3679d2bdfb13752c43e1ac4efb2aef21099c10716923e3873"
+    },
+    {
+      "file": "assets/leadership/napoleon_bonaparte/portrait.webp",
+      "sha256": "0acbc1969a423d2aa0f717d4921f0626216b9b576c78f78eca00af84a0b3ecea"
+    },
+    {
+      "file": "assets/leadership/ly_thuong_kiet/portrait.webp",
+      "sha256": "8af8f006bcd8d81c234cb06d05b43c53bf2e3a36de16ac4b1bb8f534f5732ba9"
+    },
+    {
+      "file": "assets/leadership/tran_hung_dao/portrait.webp",
+      "sha256": "78c1fa70b751da5bc9400f51d004e1bd35dd62a978a8360e08ffab29d4411200"
+    },
+    {
+      "file": "assets/leadership/xiang_yu/portrait.webp",
+      "sha256": "ac86c49284149595457991d98864c1eafb706b78c60c5ceb9ecf7988ba96810b"
+    },
+    {
+      "file": "assets/art-v1/stone-361-manifest.json",
+      "sha256": "88139cff8700443342d1856d0f35d7e83aa7847152bb0cb024253610f1204418"
+    },
+    {
+      "file": "assets/leadership/nguyen_hue/portrait.webp",
+      "sha256": "56ed32a2a09d8b8a34215c774df80b78697d1cbf113cf987b12f727c5fbba549"
+    },
+    {
+      "file": "assets/leadership/nguyen_anh/portrait.webp",
+      "sha256": "8c4961cf92cce73adfccc0eab74c29d6f09c230909ead0ea321f7b3388bd8730"
+    },
+    {
+      "file": "assets/leadership/le_thanh_tong/portrait.webp",
+      "sha256": "6aa90bf3f7911ddd2f7e95feca59741e79968cc1ee5ccf8a3b53f2969c18e409"
+    },
+    {
+      "file": "assets/leadership/minh_menh/portrait.webp",
+      "sha256": "79e31aadff6d0a5a285ee7cfde3c8c406fc18381c934c413fee51b2932c1c3a3"
+    },
+    {
+      "file": "assets/leadership/tran_nhan_tong/portrait.webp",
+      "sha256": "bbb8ae749ae1bcf3a740f54c0a82ea1050248fa16313ca486520e789c44d7280"
+    },
+    {
+      "file": "assets/leadership/nguyen_phuc_chu/portrait.webp",
+      "sha256": "4d2e00cb942510903f7ca3a7ee3dfd555d35f62d31302851c5ca45fe1e92992c"
+    },
+    {
+      "file": "assets/leadership/trinh_cuong/portrait.webp",
+      "sha256": "de6a588b42967f23333beb145f1447f84b06dc958b0a9f0fee4569cfbfacd12f"
+    },
+    {
+      "file": "assets/art-v1/stone-wall-X-362/runtime.png",
+      "sha256": "3be7413c376dfd334a7c81bad66de3ad847207636095222f630907ce6c856a06"
+    },
+    {
+      "file": "assets/art-v1/stone-wall-Y-364/runtime.png",
+      "sha256": "910bd2d840909bde361c92150c62eb0d02dbb6a60f19ed5cb40994a0a0bfb923"
+    },
+    {
+      "file": "assets/art-v1/stone-wall-corner-365/runtime.png",
+      "sha256": "4f915623b9b60d592d5541aa69b30420ccb588c84b9a66edf62823a63f18ff87"
+    },
+    {
+      "file": "assets/art-v1/stone-wall-construction-373/runtime.png",
+      "sha256": "8e928eb683effa0d10180cd0f6cc77664862fe950143964c98478c73bae8f9d6"
+    }
+  ],
+  "bundleSHA256": "8749f79dadb534ba3e714f5e00a23f2c38102cadf1ab1efc94f9cb61c51f8e2c",
+  "prebuildDrawCounter": 0,
+  "workerId": 7,
+  "launch": {
+    "art": {
+      "enabled": true,
+      "phase": "CANDIDATE",
+      "quality": "PLACEHOLDER_ONLY",
+      "groundDraws": 0,
+      "propDraws": 0,
+      "entityDraws": 0,
+      "walkDraws": 0,
+      "idleDraws": 0,
+      "lastWalk": null,
+      "gatherDraws": 0,
+      "lastGather": null,
+      "buildingDeathDraws": 0,
+      "lastBuildingDeath": null,
+      "missing": [
+        {
+          "key": "grass:material:null",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "water:material:null",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "ground:mountain",
+          "reason": "No authored material for this terrain",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "ford:material:null",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "forest:static:null",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "villager:idle:0",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "tran_nhan_tong:idle:0",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "residence:idle:null",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "granary:idle:null",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "tran_hung_dao:idle:0",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "infantry:idle:0",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "spearman:idle:0",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        },
+        {
+          "key": "wagon:idle:0",
+          "reason": "No exact authored raster state/direction",
+          "status": "PLACEHOLDER_ONLY"
+        }
+      ],
+      "pipeline": {
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 9,
+        "ready": 9,
+        "approved": 0,
+        "candidates": 9,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 262144,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 4,
+        "encodedReady": 0,
+        "retainedEncodedBytes": 84382,
+        "encodedBudgetBytes": 67108864,
+        "selectedDeclared": 9,
+        "failures": []
+      }
+    },
+    "bank": {
+      "phase": "match",
+      "epoch": 2,
+      "encodedBytes": 84382,
+      "encodedBudgetBytes": 67108864,
+      "activeIds": [
+        "stone-wall-X-362-mask0",
+        "stone-wall-X-362-mask1",
+        "stone-wall-X-362-mask2",
+        "stone-wall-X-362-mask3",
+        "stone-wall-Y-364-mask4",
+        "stone-wall-Y-364-mask8",
+        "stone-wall-Y-364-mask12",
+        "stone-wall-corner-365-mask5",
+        "stone-wall-construction-373"
+      ],
+      "scope": {
+        "map": "delta",
+        "roster": [
+          "villager",
+          "king",
+          "general",
+          "infantry",
+          "spearman",
+          "firearm",
+          "cavalry",
+          "artillery",
+          "wagon",
+          "warship",
+          "transport"
+        ],
+        "buildings": [
+          "residence",
+          "barracks",
+          "cavalryCamp",
+          "artilleryWorkshop",
+          "shipyard",
+          "fort",
+          "wall",
+          "gate",
+          "depot",
+          "granary"
+        ],
+        "leaders": [
+          "tran_nhan_tong",
+          "tran_hung_dao",
+          "le_thanh_tong",
+          "ly_thuong_kiet"
+        ]
+      }
+    },
+    "boot": {
+      "declared": 12,
+      "ready": 12,
+      "failures": [],
+      "fontWarnings": []
+    }
+  },
+  "stockBefore": {
+    "wood": 550,
+    "food": 809.8608960000003,
+    "iron": 260
+  },
+  "line": {
+    "x": 4.5,
+    "y": 23.5,
+    "staging": {
+      "x": 2.5,
+      "y": 23.5
+    },
+    "away": {
+      "x": 1.5,
+      "y": 21.5
+    },
+    "d": 5.385164807134505
+  },
+  "moves": [
+    {
+      "requested": {
+        "x": 2.5,
+        "y": 23.5
+      },
+      "actualOrder": {
+        "type": "move",
+        "x": 2.499736560879091,
+        "y": 23.499779152725345
+      },
+      "projectionDelta": 0.00034376400211130113,
+      "observedTick": 118,
+      "position": {
+        "x": 7.395,
+        "y": 21.5
+      },
+      "prior": {
+        "state": "idle",
+        "order": null,
+        "x": 7.5,
+        "y": 21.5
+      },
+      "samples": [
+        {
+          "tick": 118,
+          "x": 7.395,
+          "y": 21.5,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 119,
+          "x": 7.289999999999999,
+          "y": 21.5,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 120,
+          "x": 7.184999999999999,
+          "y": 21.5,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 121,
+          "x": 7.079999999999998,
+          "y": 21.5,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 122,
+          "x": 6.974999999999998,
+          "y": 21.5,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 123,
+          "x": 6.869999999999997,
+          "y": 21.5,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 124,
+          "x": 6.764999999999997,
+          "y": 21.5,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 125,
+          "x": 6.659999999999997,
+          "y": 21.5,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 126,
+          "x": 6.554999999999996,
+          "y": 21.5,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 127,
+          "x": 6.449999999999996,
+          "y": 21.5,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 128,
+          "x": 6.344999999999995,
+          "y": 21.5,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 130,
+          "x": 6.1349999999999945,
+          "y": 21.5,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 131,
+          "x": 6.029999999999994,
+          "y": 21.5,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 132,
+          "x": 5.924999999999994,
+          "y": 21.5,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 133,
+          "x": 5.849399999999994,
+          "y": 21.5,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 134,
+          "x": 5.773799999999994,
+          "y": 21.5,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 135,
+          "x": 5.698199999999995,
+          "y": 21.5,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 136,
+          "x": 5.622599999999995,
+          "y": 21.5,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 137,
+          "x": 5.546999999999995,
+          "y": 21.5,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 138,
+          "x": 5.471399999999996,
+          "y": 21.5,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 139,
+          "x": 5.395799999999996,
+          "y": 21.5,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 140,
+          "x": 5.320199999999996,
+          "y": 21.5,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 141,
+          "x": 5.244599999999997,
+          "y": 21.5,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 142,
+          "x": 5.168999999999997,
+          "y": 21.5,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 143,
+          "x": 5.093399999999997,
+          "y": 21.5,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 144,
+          "x": 5.017799999999998,
+          "y": 21.5,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 145,
+          "x": 4.942199999999998,
+          "y": 21.5,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 146,
+          "x": 4.8371999999999975,
+          "y": 21.5,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 147,
+          "x": 4.732199999999997,
+          "y": 21.5,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 148,
+          "x": 4.627199999999997,
+          "y": 21.5,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 149,
+          "x": 4.522199999999996,
+          "y": 21.5,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 150,
+          "x": 4.441451558517751,
+          "y": 21.558548441482248,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 151,
+          "x": 4.367205346493163,
+          "y": 21.632794653506835,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 152,
+          "x": 4.292959134468576,
+          "y": 21.70704086553142,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 153,
+          "x": 4.218712922443988,
+          "y": 21.78128707755601,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 154,
+          "x": 4.1444667104194,
+          "y": 21.855533289580595,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 155,
+          "x": 4.070220498394813,
+          "y": 21.929779501605182,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 156,
+          "x": 3.995974286370226,
+          "y": 22.00402571362977,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 157,
+          "x": 3.921728074345639,
+          "y": 22.078271925654356,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 158,
+          "x": 3.847481862321052,
+          "y": 22.152518137678943,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 159,
+          "x": 3.7732356502964652,
+          "y": 22.22676434970353,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 160,
+          "x": 3.6989894382718784,
+          "y": 22.301010561728116,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 161,
+          "x": 3.624743226247292,
+          "y": 22.375256773752703,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 162,
+          "x": 3.550497014222706,
+          "y": 22.449502985777293,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 163,
+          "x": 3.476250802198119,
+          "y": 22.52374919780188,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 164,
+          "x": 3.4020045901735316,
+          "y": 22.597995409826467,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 165,
+          "x": 3.3277583781489444,
+          "y": 22.672241621851054,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 166,
+          "x": 3.253512166124357,
+          "y": 22.74648783387564,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 167,
+          "x": 3.17926595409977,
+          "y": 22.820734045900227,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 168,
+          "x": 3.1050197420751826,
+          "y": 22.894980257924814,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 169,
+          "x": 3.0307735300505954,
+          "y": 22.9692264699494,
+          "state": "walk",
+          "order": {
+            "type": "move",
+            "x": 2.499736560879091,
+            "y": 23.499779152725345
+          }
+        },
+        {
+          "tick": 170,
+          "x": 2.956527318026008,
+          "y": 23.043472681973988,
+          "state": "walk",
+          "order": null
+        },
+        {
+          "tick": 171,
+          "x": 2.956527318026008,
+          "y": 23.043472681973988,
+          "state": "idle",
+          "order": null
+        }
+      ],
+      "arrival": {
+        "tick": 171,
+        "x": 2.956527318026008,
+        "y": 23.043472681973988,
+        "distance": 0.6456573325413514,
+        "state": "idle",
+        "order": null
+      }
+    }
+  ],
+  "prebuildGuard": {
+    "tick": 174,
+    "target": {
+      "x": 4.5,
+      "y": 23.5
+    },
+    "blockers": []
+  },
+  "buildingId": 37,
+  "acquiredConstruction": {
+    "tick": 228,
+    "entity": {
+      "id": 37,
+      "owner": 0,
+      "type": "wall",
+      "kind": "building",
+      "x": 4.5,
+      "y": 23.5,
+      "hp": 50.93333333333334,
+      "maxHp": 400,
+      "food": 0,
+      "foodMax": 0,
+      "morale": 95,
+      "state": "idle",
+      "dir": 0,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "spentCost": {
+        "wood": 30,
+        "food": 0,
+        "iron": 5
+      },
+      "construction": {
+        "remaining": 5.95,
+        "total": 6,
+        "builder": 7
+      },
+      "underConstruction": true,
+      "order": null
+    }
+  },
+  "constructionDrawDelta": 14,
+  "actualConstructionBinding": {
+    "entityId": 37,
+    "tick": 231,
+    "visualState": "construction",
+    "frame": 0,
+    "assetId": "stone-wall-construction-373",
+    "runtimeSHA256": "8e928eb683effa0d10180cd0f6cc77664862fe950143964c98478c73bae8f9d6"
+  },
+  "pausedConstruction": {
+    "actualRasterEntityDraws": 31,
+    "tick": 231,
+    "entity": {
+      "id": 37,
+      "owner": 0,
+      "type": "wall",
+      "kind": "building",
+      "x": 4.5,
+      "y": 23.5,
+      "hp": 59.73333333333335,
+      "maxHp": 400,
+      "food": 0,
+      "foodMax": 0,
+      "morale": 95,
+      "state": "idle",
+      "dir": 0,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "spentCost": {
+        "wood": 30,
+        "food": 0,
+        "iron": 5
+      },
+      "construction": {
+        "remaining": 5.800000000000001,
+        "total": 6,
+        "builder": 7
+      },
+      "underConstruction": true,
+      "order": null
+    },
+    "completedTopology": null,
+    "inferredAssetId": "stone-wall-construction-373",
+    "inference": "actual soleWall construction entity plus positive raster entityDraws delta; exact manifest staticframe0 binding"
+  },
+  "unfinishedPick": {
+    "tick": 241,
+    "selection": [
+      37
+    ],
+    "entity": {
+      "id": 37,
+      "owner": 0,
+      "type": "wall",
+      "kind": "building",
+      "x": 4.5,
+      "y": 23.5,
+      "hp": 89.06666666666672,
+      "maxHp": 400,
+      "food": 0,
+      "foodMax": 0,
+      "morale": 95,
+      "state": "idle",
+      "dir": 0,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "spentCost": {
+        "wood": 30,
+        "food": 0,
+        "iron": 5
+      },
+      "construction": {
+        "remaining": 5.3000000000000025,
+        "total": 6,
+        "builder": 7
+      },
+      "underConstruction": true,
+      "order": null
+    },
+    "point": {
+      "x": 635.7031033063615,
+      "y": 383.8529952218192
+    }
+  },
+  "completed": {
+    "actualRasterEntityDraws": 386,
+    "tick": 348,
+    "entity": {
+      "id": 37,
+      "owner": 0,
+      "type": "wall",
+      "kind": "building",
+      "x": 4.5,
+      "y": 23.5,
+      "hp": 400,
+      "maxHp": 400,
+      "food": 0,
+      "foodMax": 0,
+      "morale": 95,
+      "state": "idle",
+      "dir": 0,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "spentCost": {
+        "wood": 30,
+        "food": 0,
+        "iron": 5
+      },
+      "construction": null,
+      "underConstruction": false,
+      "order": null
+    },
+    "topology": {
+      "mask": 0,
+      "axis": "X",
+      "topology": "isolated",
+      "count": 0
+    },
+    "inferredAssetId": "stone-wall-X-362-mask0",
+    "inference": "sealed selector + exact completed mask0 descriptor; not direct renderer measurement"
+  },
+  "completedPick": {
+    "tick": 359,
+    "selection": [
+      37
+    ],
+    "entity": {
+      "id": 37,
+      "owner": 0,
+      "type": "wall",
+      "kind": "building",
+      "x": 4.5,
+      "y": 23.5,
+      "hp": 400,
+      "maxHp": 400,
+      "food": 0,
+      "foodMax": 0,
+      "morale": 95,
+      "state": "idle",
+      "dir": 0,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "spentCost": {
+        "wood": 30,
+        "food": 0,
+        "iron": 5
+      },
+      "construction": null,
+      "underConstruction": false,
+      "order": null
+    },
+    "point": {
+      "x": 640.0231033063616,
+      "y": 383.8529952218192
+    }
+  },
+  "stop": {
+    "id": 7,
+    "owner": 0,
+    "type": "villager",
+    "kind": "unit",
+    "x": 2.956527318026008,
+    "y": 23.043472681973988,
+    "hp": 65,
+    "maxHp": 65,
+    "food": 38.36387199999946,
+    "foodMax": 40,
+    "morale": 95,
+    "state": "idle",
+    "dir": 3,
+    "cooldown": 0,
+    "queue": [],
+    "cargo": {
+      "food": 0,
+      "wood": 0,
+      "iron": 0,
+      "units": []
+    },
+    "resuppliedTick": 120,
+    "starving": 0,
+    "lastMovedTick": 170,
+    "order": null
+  },
+  "menu": {
+    "bank": {
+      "phase": "menu",
+      "epoch": 3,
+      "encodedBytes": 84382,
+      "encodedBudgetBytes": 67108864,
+      "activeIds": [],
+      "scope": null
+    },
+    "art": {
+      "status": "PLACEHOLDER_ONLY",
+      "manifest": "not-loaded",
+      "declared": 0,
+      "ready": 0,
+      "approved": 0,
+      "candidates": 0,
+      "failed": 0,
+      "skipped": 0,
+      "fallbacks": 0,
+      "decodedBudgetBytes": 134217728,
+      "retainedDecodedBytes": 0,
+      "reservedDecodedBytes": 0,
+      "uniqueDecodedImages": 0,
+      "encodedReady": 0,
+      "retainedEncodedBytes": 0,
+      "encodedBudgetBytes": 67108864,
+      "selectedDeclared": 0,
+      "failures": []
+    }
+  },
+  "clipPath": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/stone-construction-runtime-374/clips/page@7d56724dfa4d15e9cd2ce454e47db1be.webm",
+  "cleanup": {
+    "rooms": 0,
+    "serverListening": false,
+    "browserClosed": true
+  }
+}

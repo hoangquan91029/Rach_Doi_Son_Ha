@@ -1,4 +1,4 @@
-# Trạng thái — checkpoint372 / local369 / public367
+# Trạng thái — checkpoint376 / local375 / public367
 
 **INCOMPLETE.** [Full plan](docs/PROJECT_PLAN.md) · [Next](NEXT_STEPS.md) · [Movement](docs/art/pipeline/MOVEMENT_PRODUCTION_PLAN_20261010.md). Prior347 entrypoints exactGit5c52838 byte-preserved; allleadership/raw/tool/held/rejected/history retained.
 
@@ -17,6 +17,10 @@ Yêu cầu mới nhất: bỏ tường gỗ trong game, chỉ tập trung ba m�
 Backend230 remains immutable in ~/.local/share/rach-doi-son-ha/releases/230/runtime230, sim29233a059ec084bc8577d20a1bccfd28ddc3024b9cb9bf4d5598c22f220f748b/server4e6a7e82f02d1d856f4ea788863c4836930bc00250be6a5b020ba2bdd8884198/ws8.22/node/PID3229/rooms0/unit/env/Funnel unchanged. Currentpairedrollback345 private353/rollback345.tar.gz SHAc0d2133d8559b8115f7160621db4290b015fcfac789ac97d3350746539c62552; old345 tree rds-public367-next-dist retained. Prior325rollback309/344/history retained, not currenttargets.
 
 [370 actual public Firefox](docs/qa/stone-public-runtime-370/root-intake.json): normalTLS bareURL ordinary Delta threeSTONE masks5/2/8,1884realrasterdraws/8ready/3decodedPNGs/12portraits/all3opaque picks/PauseResumeStop/menu0/errorsnetworkHTTP0/sevenresponsepins exact. Rootbriefactualscene accepts realistic stone surfaces and these three completedidle shapes/joins. All522byte-modepins/HEAD/public196/backend230 preserved, allownedhandles CLOSED. No productionrestart or fullmatch replay; external-device WAN/finalfullgoal gates remain open.
+
+## Local375 — tường đá đang xây
+
+[373 whole image](docs/art/buildings/stone-wall-construction-373/raw.png) và [prompt builtin](docs/art/buildings/stone-wall-construction-373/prompt.txt): ONEwhole edit ofX362/zeroRetry, originaltool/raw preserved, uniform128cell/render42.3225. [374 actual scene](docs/qa/stone-construction-runtime-374/root-intake.json) proves ordinarysite construction/frame0/drawdelta14/PauseResume/opaque picks/transitioncompletedidle/Stop/menu0/20pins/errorsnetworkHTTP0, rootbriefactualgame-size look accepted narrowly. [375 localinstall](docs/qa/stone-install-375/receipt.json) has9default/38fort descriptors and8focusedtestsPASS, client/shared/public inventories equal sealed374. No engine/API/client change. PUBLIC367 remains8default/37fort/3PNGs; thisnewstaticconstruction source is LOCALonly. Animatedconstruction/hit/destruction/allbuildingstates remainunfinished. All373–375ownedhandles CLOSED.
 
 ## Prior terrain/registry/motion and unfinished goal
 

@@ -510,6 +510,68 @@
         "mask": 5
       },
       "notes": "Whole realistic cutstone illustration, no wood. Only source appearance selected; actual joins trial pending."
+    },
+    {
+      "id": "stone-wall-construction-373",
+      "family": "building.wall",
+      "kind": "building",
+      "state": "construction",
+      "direction": null,
+      "material": "stone",
+      "candidate": true,
+      "review": {
+        "status": "CANDIDATE"
+      },
+      "source": {
+        "path": "docs/art/buildings/stone-wall-construction-373/raw.png",
+        "sha256": "52595805542e39f6bf7ddaf5c2089d77a51c756e4e45d4ecc854858f430b7c2a",
+        "rgbaSha256": "da38db9d2b8c3710c937946a6077457df77e4c9de4cb0bad2ec065b4c0d9bb47",
+        "width": 1254,
+        "height": 1254
+      },
+      "runtime": {
+        "path": "stone-wall-construction-373/runtime.png",
+        "sha256": "8e928eb683effa0d10180cd0f6cc77664862fe950143964c98478c73bae8f9d6",
+        "rgbaSha256": "5077e722666d7a37e379652df4d8b451dfae5852ec27f520a2e77ee90b676d14",
+        "width": 128,
+        "height": 128,
+        "derivation": {
+          "method": "resize",
+          "filter": "lanczos",
+          "sourceSha256": "52595805542e39f6bf7ddaf5c2089d77a51c756e4e45d4ecc854858f430b7c2a"
+        }
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "x": 627,
+        "y": 900,
+        "space": "source"
+      },
+      "render": {
+        "width": 42.3225,
+        "height": 42.3225
+      },
+      "alphaPolicy": "transparent",
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128,
+          "durationMs": 1000
+        }
+      ],
+      "loop": false,
+      "fortification": {
+        "mask": 0
+      },
+      "notes": "Whole stone construction site, standalone mask0. One static source; no animated progression or runtime/scene acceptance yet. No wood, no PNG transforms."
     }
   ],
   "id": "fort-202",

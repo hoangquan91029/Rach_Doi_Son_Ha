@@ -1,4 +1,4 @@
-# Kế hoạch đồ họa — checkpoint372 / public367, 11/10/2026
+# Kế hoạch đồ họa — checkpoint376 / local375 / public367, 11/10/2026
 
 [Full project plan](../../PROJECT_PLAN.md) · [Status](../../../PROJECT_STATUS.md) · [Movement plan](MOVEMENT_PRODUCTION_PLAN_20261010.md). Bản kế hoạch cũ checkpoint232 được lưu nguyên byte tại `docs/checkpoints/checkpoint371-entrypoints/docs/art/pipeline/GRAPHICS_PRODUCTION_PLAN.md`. Chỉ phần hiện hành này điều khiển công việc tiếp theo; không tiếp tục order lịch sử.
 
@@ -26,7 +26,7 @@ PUBLIC367 URL trần nạp stone8/worldfalse; optional `?art=fort` nạp37 descr
 | Villager D1 | Walk014/runtime016; wood032 và iron141 owner accepted đúng vòng đã xem | Hướng khác và action theo gameplay; food101 chờ riêng |
 | Villager D0 | Eight whole frames213 + idle216; actual travel/Pause/Resume/Stop233 technical closure | Owner naturalness, worldcontact, bodyvolume/shadow và family scale; runtime install/fanout còn mở |
 | Roster và leaders | Registry302 có9 types và12 historical IDs; portrait/source custody giữ nguyên | Finished realistic whole sprites,8 hướng và actions; registry không phải artwork |
-| Stone fortifications | Ba completed-idle whole images và nativeSTONE fallback | Construction/hit/destruction phù hợp ba-shape scope; cổng vẫn fallback |
+| Stone fortifications | Ba completed-idle whole images và nativeSTONE fallback | Staticconstruction373/374 accepted and installedLOCAL375; animatedconstruction/hit/destruction remainopen, cổng vẫn fallback |
 | Other buildings | Các completed-idle tranh đã qualified hẹp; wholebuilding compiler359 | Construction/hit/death/attack artwork cần thiết, không thay bằng idle để che thiếu |
 | World | Terrain340/345 receipts; original forest/shore/hill/mountain sources | Composition hai map, shore/forest/mountain repetition và dense-unit scene |
 | Production | Defaultstone public367 và nhiều proof gameplay/network trước đó | Accepted full art/default coverage, densecombat+rooms performance, external-device WAN và finalbothmaps/twomodes |
@@ -52,3 +52,7 @@ Humanoid mục tiêu visible64–96px ở default zoom. Raw1254 originals giữ 
 Một brief gameplay-size look và sửa visible issues; không microanatomy/cloth/pixel audit. Giữ provenance và lightweight browser/state checks. Candidate build phải isolatedcwd/absoluteoutDir/exactViteconfig, source retention/preflight trước seal; không thay nguồn giữa trial. Chờ mọi preservationguard đóng rồi mới sửa canonical/HEAD. Public service intentionallyrunning, không ghi đè active dist/restart khi test.
 
 Full master/web/historical/visual81–145 và later goal vẫn **INCOMPLETE**. Không tuyên bố lịch5hACTIVE khi automation311 native schedule còn thiếu; quiet continuation intent giữ nguyên.
+
+## Local375 update
+
+ONE static whole construction373 source now connects to actualWall build→idle via374 ordinaryChrome trial; realdrawdelta14/frame0/PauseResume/opaque picks/Stop/menu0 andonebriefgame-size look.375 exactlocal default9/fort38+8focusedcontractsPASS; source/camera/family preserved. This is one state of the existingX shape, not a new topologyshape or animatedconstruction acceptance. Public367 stilldefault8/fort37 until separatecurrent367/230 source-bound data release. No newcharacterfanout or wood art.

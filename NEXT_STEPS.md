@@ -1,4 +1,4 @@
-# Bước tiếp theo — checkpoint372 / local369 / public367
+# Bước tiếp theo — checkpoint376 / local375 / public367
 
 **Full goal INCOMPLETE.** Đọc trạng thái, full plan, movement/pure2D/review directives, Git và live handles. Prior347 entrypoints exactGit5c52838 giữ byte nguyên trong docs/checkpoints/checkpoint347-entrypoints/.
 
@@ -13,3 +13,9 @@
 EveryworkerexactSol6.1Low/independentownership. Built-inwhole2D only; no API/key/CLI/quota/3D/limbtextures/cutout/pixelsplice/warp/mirror/perframefit. All349–370image/test/ownedbrowserhandles CLOSED; production intentionallyrunning. Serializecanonical/HEADmutations againstlivepreservationguards. Literal isolatedcwd/absoluteoutDir/exactViteconfig/preflight/retention BEFOREseal; no sealedmidtrial mutation. Newpublicrelease separate exactsource/build/actualscene/currentpairedrollback/rooms0/ownednextROOT755.
 
 Automation311 missing-native-schedule humanchoice pending; no claim5hACTIVE or recreation. Quietcontinuation/fullgoal remainsactive.
+
+## Current local375 — stone construction pilot
+
+373 ONEbuiltin whole edit/0retry ofX362 creates a readable unfinishedstone site.374 ONEactualChrome soleWall construction→idle: actualdrawdelta14/frame0, PauseResume/opaque site+completed picks/Stop/menu0/20pins/errors0, allpreservationCLOSED. Rootbriefgame-size look accepts onlythis static state.375 installs exact2manifests/runtime +durable realrastertest; defaultLOCAL9/fort38,8targetedcontractsPASS, client/shared/public inventories byteequal374. PUBLIC367 default8/fort37 staysunchanged. All373–375handlesCLOSED, no imagecallopen.
+
+Next concrete task: separate source-bound publicDATA release of this acceptedstaticconstruction state. Clone exactcurrent367; append only2manifests+373PNG, keep client/currentchunk/CSS/otherpayloads/backend unchanged and pendingfood excluded. Verify fresh pairedCURRENT367/230 backup and one ordinary actualscene underpublicationpolicy before separateexchange. No replaycompleted3walljoins/fullmatches. Then realisticstone hit/destruction and remainingbuildingstates; constructionanimation remainsopen.
