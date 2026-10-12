@@ -1,4 +1,4 @@
-# Project status — workflow481 / public451
+# Project status — workflow484 / public451
 
 **INCOMPLETE.** Full action×eight-direction roster is not finished; framework implementation is complete for the scope recorded below.
 
@@ -22,3 +22,7 @@ Source navigation455 remainsqualified locally;478adds sharedcosmeticmetadata, so
 Next gate: practicalmotion/contact/stride qualification oforiginalinfantryD0, thencomplete5actions×8directions. Wholehorsewagon415 preserved; stonewalls/woodgates/otherwood preserved; historicalleadership/raw/held custody preserved. King/General ability andwagon/shiploadunload have requiredseparateposes. Missingmasters/views/art, buildingstates/mapcomposition/densebrowser+roomperformance/externalWAN/finalpublictwomodesbothmaps remainopen.
 
 Currentplan and work queue: `docs/PROJECT_PLAN.md`, `NEXT_STEPS.md`; implementationreceipts471/478/479/480 and coverage472. Historicalentrypoints preserved in `docs/checkpoints/checkpoint476-entrypoints/`. No motion/finalvisual/fullgoal acceptance inferred from technicalPASS.
+
+Continuation482/483 (12October): projectedcontact repair used3actual builtin calls (482initial+1correction;483completewholeclothedguide initial). All retain originalidentity but failphysicallegexchange, independentlyHELD. BothordersCLOSED/methodfailure,0newselectedframes,0dependentcalls; no stridefix/install/fanout. Currentselectedreferencejob remains470. Need a usable wholeoppositecontact source or demonstrably different pure2Dpose control; do not create equivalentorders/resetcaps. Sevenprompt/finiteguardtestsPASS; public451/backend230/sealed479/480 preserved. Evidence: docs/art/pipeline/infantry-projected-contact-482 and infantry-whole-pose-483.
+
+Continuation484: local offline tick interpolation and bounded deferred encoded LRU implemented;32focused tests PASS, SAMEsealed candidate actualChrome+Firefox ordinaryMove/PauseResume/assignedarrival/Stop/menu PASS with sub-tick positions/errornetwork0/allpins preserved/ownedhandlesCLOSED. First protocol-sampling HOLD preserved; corrected read-only in-page rAF observation proves sub-tick movement. Public451/immutable230 unchanged. NO newimagecall, no newselectedframe, no pilot/fanout/motionapproval. Stride0.15 remains unqualified;482/483 CLOSED_HELD. Next art prerequisite is a usable whole same-original ContactB or demonstrated different pure2D control, not equivalent prompt retries. Evidence: docs/art/pipeline/offline-smoothing-484/CHECKPOINT.json and art-encoded-cache-484/receipt.json.

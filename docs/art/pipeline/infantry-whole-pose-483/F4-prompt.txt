@@ -1,0 +1,17 @@
+key: identity: infantry
+master: 084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f
+direction: 0
+camera: dimetric 2:1 ground projection; fixed whole original elevated camera; no independent camera fit
+screenFacing: ESE
+weaponOwnership: Physical sword hand and shield hand remain those of original084845; D0 sword screenleft and shield screenright only; screen sides change with view
+referenceRoles: originalmaster,guide
+invariants: Image1original084845 isSOLEappearance authority: realisticface/helmet/armor/sash/weapons/camera/scale. Image2 ONLYcompleteconnectedwholeclothedCONTACTB posecontrol; doNOTcopycartoonstyle orsimplematerials. Whole1254canvas/pivot6531057andoriginalscale. Nooutputarrows labels colorovals orbackground.
+action: walk
+phase: 0.5
+support: ContactB: original sword-side FAR leg steps forward/down-right and acceptsweight; original shield-side NEAR leg ends stanceback/up-left. Opposite support of original contactA.
+movingParts: Follow COMPLETELEGPOSEinImage2: FARphysicalSWORD-SIDE legfromswordhip is leading DOWNRIGHTtoYELLOWboot7841141source; NEARphysicalSHIELD-SIDE legfromshieldhip crossesbehind andtrailsUPLEFTtoCYANboot534994source. Fullconnectedthigh/knee/calfgeometry and correctoverlap fromguide. Bothbootsgrounded. The2Dguide alreadydepicts thedestinationpose; reconstruct itasfinishedrealisticoriginalillustration, neverdetachedpieces.
+bodyMotion: Retain head/torso/camera and scale from original; subtleweight transfer overforward farleg, naturalknees andbalanced uprightbody. Pelvisroot remainsoriginal; nojump. Feettravel screen-diagonally, notmainlyvertical.
+equipmentMotion: Swordremainssamephysicalhand onscreenleft; shieldremainssamephysicalhand onscreenright. Keepmetaloutline and shieldsize, firmgrip withslight naturalarmswing only.
+nextKey: AfterContactB phase0.5 nearleg releasesandpasses forward; farlegstance travelsup-left towardContactA atphase1.0. Firstvalidate projectedcontact beforedependentframes.
+Edit the same whole original identity. Keep the verified elevated camera and screen-facing direction. Physical equipment hands persist while screen sides change across views. Concrete body, moving parts and equipment changes must lead toward the stated next key; selected phase neighbors define continuity. No redesign, mirror, warp, crop, per-frame fit, limb cutout or source pixel splice. Built-in image generation only. Candidate output; review, world contact, runtime and release remain separate. Ability, load and unload require distinct action poses.
+

@@ -5,7 +5,7 @@ fs.mkdirSync(out,{recursive:true});const r={status:'RUNNING',scope:'Isolated can
 const {createGameServer}=await import(pathToFileURL(path.join(config.stage,'server/index.js')));let game,browser,context,page;const deadline=Date.now()+90000;
 const snap=()=>page.evaluate(()=>rtsDiagnostics.snapshot()),actor=s=>s.displayedState?.entities.find(e=>e.id===r.actorId);
 const wait=async(fn,ms=8000)=>{const end=Math.min(deadline,Date.now()+ms);while(Date.now()<end){const s=await snap();if(fn(s))return s;await page.waitForTimeout(25);}throw Error('Ordinary UI guard timed out');};
-const sample=s=>({tick:s.tick,paused:s.paused,selection:s.selection,actor:actor(s),walk:s.art.lastWalk,camera:s.camera});
+const sample=s=>({tick:s.tick,paused:s.paused,selection:s.selection,actor:actor(s),walk:s.art.lastWalk,camera:s.camera,presentation:s.presentation});
 const center=async(x,y)=>{const s=await snap(),box=await page.locator('#minimap').boundingBox();await page.locator('#minimap').click({position:{x:x/s.displayedState.map.width*box.width,y:y/s.displayedState.map.height*box.height}});};
 const move=async(x,y)=>{let s=await snap();assert.equal(s.displayedState.winner,null);assert.ok(actor(s)?.hp>0&&actor(s).owner===s.localPlayer);assert.deepEqual(s.selection,[r.actorId]);await page.locator('[data-act=move]').click();await page.locator('#world').click({position:await page.evaluate(([x,y])=>rtsDiagnostics.point(x,y),[x,y])});s=await wait(s=>actor(s)?.order?.type==='move'&&actor(s)?.state==='walk');const a=actor(s);return {x:a.order.x,y:a.order.y};};
 try{
@@ -20,7 +20,15 @@ try{
  if(config.coldAssetPath){const cold=await wait(s=>s.art.lastStaticIllustration?.entityId===r.actorId&&s.art.lastStaticIllustration.requestedState==='walk');r.coldFallback={tick:cold.tick,illustration:cold.art.lastStaticIllustration,pipeline:cold.art.pipeline};assert.equal(cold.art.lastStaticIllustration.assetId,config.idleId);assert.ok(cold.art.pipeline.pending>0);}
  s=await wait(s=>actor(s)?.dir===0&&s.art.lastWalk?.entityId===r.actorId&&s.art.lastWalk.distancePerCycle===config.distancePerCycle);r.move=sample(s);if(config.coldAssetPath){assert.ok(r.coldRequestAt);assert.equal(s.art.pipeline.pending,0);assert.equal(s.art.pipeline.pageErrors.length,0);}
  const begun=Date.now();while(Date.now()-begun<800){s=await snap();if(s.art.lastWalk?.entityId===r.actorId)r.samples.push(sample(s));await page.waitForTimeout(15);}
+ if(config.requireSubtickSmoothness){
+  // Observe real render frames in-page; protocol polling can miss a whole 50ms tick.
+  r.renderFrameSamples=await page.evaluate(async id=>{const samples=[];for(let i=0;i<18;i++){await new Promise(requestAnimationFrame);const s=rtsDiagnostics.snapshot();samples.push({tick:s.tick,actor:s.displayedState?.entities.find(e=>e.id===id),presentation:s.presentation});}return samples;},r.actorId);
+  const seen=new Map();r.subtickMoves=0;
+  for(const sample of r.renderFrameSamples){const p=sample.presentation?.entities.find(e=>e.id===r.actorId);assert.ok(p,'Read-only rendered actor');const prior=seen.get(sample.tick);if(prior&&Math.hypot(p.x-prior.x,p.y-prior.y)>1e-7)r.subtickMoves++;seen.set(sample.tick,p);assert.ok(Math.hypot(p.x-sample.actor.x,p.y-sample.actor.y)<=.116,'At most one completed infantry tick behind');}
+  assert.ok(r.subtickMoves>=3,'Actual world position advances between simulation ticks');
+ }
  await page.locator('#pauseBtn').click();await page.locator('#resume').waitFor();s=await snap();r.pause={before:sample(s)};await page.waitForTimeout(350);r.pause.after=sample(await snap());assert.equal(r.pause.before.tick,r.pause.after.tick);assert.deepEqual([r.pause.before.actor.x,r.pause.before.actor.y],[r.pause.after.actor.x,r.pause.after.actor.y]);assert.equal(r.pause.before.walk.frame,r.pause.after.walk.frame);
+ if(config.requireSubtickSmoothness)assert.deepEqual(r.pause.before.presentation,r.pause.after.presentation,'Pause freezes actual shown position/time');
  await page.locator('#resume').click();s=await wait(s=>!s.paused&&s.art.lastWalk?.entityId===r.actorId&&s.art.lastWalk.distance>r.pause.after.walk.distance);r.resume=sample(s);await page.screenshot({path:path.join(out,'actual-travel.png')});
  s=await wait(s=>actor(s)?.state==='idle'&&actor(s)?.order===null&&Math.hypot(actor(s).x-r.target.x,actor(s).y-r.target.y)<=.700001,16000);r.arrival=sample(s);
  const stoppedStart=actor(s);await center(stoppedStart.x+1.5,stoppedStart.y);r.secondTarget=await move(stoppedStart.x+3,stoppedStart.y);await wait(s=>actor(s)?.state==='walk'&&actor(s)?.dir===0);await page.locator('[data-act=stop]').click();s=await wait(s=>actor(s)?.state==='idle'&&actor(s)?.order===null&&actor(s)?.dir===0);r.stop=sample(s);await page.screenshot({path:path.join(out,'actual-stop.png')});

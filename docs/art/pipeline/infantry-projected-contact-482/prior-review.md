@@ -1,0 +1,15 @@
+Independent review482 — retained infantry479
+
+Scope: one brief retained actual UI moving interval1.80–2.16s, 9 chronological frames at25fps, original1280×800 capture, unscaled crop360×230; original actual-travel screenshot and selected8frame contact sheet. Temporal samples support visible observations, not continuous playback PASS. No browser or new runtime launched.
+
+Game-size conversion: fixed1254canvas/pivot(653,1057), render42logical pixels; 42/1254 source→logical. Camera1.68 means70.56CSS pixels whole sourcecanvas. Working256→logical42/256. Video1280×800 matches declared viewport; CSS/backing DPR not independently measured in retained clip. Source identity084845…0517f retained.
+
+Visible game-size defect: selected actor travels down-right while boots change quickly between high/low poses and body stays comparatively stable. The support exchange is not readable as a normal two-step travel cycle in these samples. The current sheet shows contact separation chiefly vertical. No magnifiedcloth/anatomy rejection added; no precise footslide/footlock claim.
+
+Geometry: D0 positiveworldX projects(27,13.5)logical/world. Approximate479 F0→F4 farboot(100,203)→(100,232) = (0,29); nearboot(169,233)→(163,210)=(-6,-23), in256working. Projection times42/256, doubled, divided by |(27,13.5)| gives far0.141 and near0.170 world/cycle. Orthogonal component is material: this cannot describe D0 grounded support. At speed2.3 and stride.15, 15.333cycles/s; cycle65.2ms; each8frame phase8.15ms. At20Hz simulation displacement.115/tick=0.7667cycle/tick, explaining phase jumps. Legacy720ms source-preview durations are not actual distance-drivenruntime cadence.
+
+Smallest NEW control gate: one new whole F4 opposite-contact key attached to original F0, with unchanged identity/canvas/pivot/scale/camera/props. Author stance trail up-left alongscreenD0, not downward or isolatedboot shift; swingfoot reaches down-right. Suggested measured-space first test near(169,233)→(109,203), far(100,203)→(160,233), opposing±(60,30)working; raw±(293.9,147.0). This yields geometrically .729world/cycle and3.15cycles/s at2.3, a review-only hypothesis, not normalcadence approval. Root may choose±(74.06,37.03)working/.9worldcycle/.45halfcycle; raw±(362.8,181.4), giving2.56cycles/s, provided original body proportions permit it. Do not choose metadata first and force limbs to fit it: measure actual newboots before selectingstride.
+
+Only if contactkey visibly agrees withD0 andmaster: replace dependent F1downA,F2passingB,F3reachB,F5downB,F6passingA,F7reachA as NEW finiteposeplan; heldoldF3 remainscustody, exhausted2/2corrections not renewed. Support moves progressively opposite actor travel during stance, swing lifts then reaches, pelvis weighttransfer modest; fullillustrations only/no mirror/warp/perframefit/splicing. Proposedkey is not qualified art and subsequent wholeloop requires independentbriefnormal-size review.
+
+Verdicts: sourcecustody confirmed8/8 SHA; geometry currentunqualified; independentmotion SAMPLES_ONLY; ownerPENDING; fanoutCLOSED; no artworkPASS/no runtimeinstall/no productionmutation.

@@ -1,4 +1,4 @@
-# Bước tiếp theo — workflow481 / public451
+# Bước tiếp theo — workflow484 / public451
 
 Full RTS goal **INCOMPLETE**. Latest active scope: `docs/PROJECT_PLAN.md`. Preserve old receipt/order history; do not resume exhausted calls.
 
@@ -11,3 +11,7 @@ Implemented: sharedcompiler471 schema2/explicitloop/padding2/fixed128/2048cap, e
 5. Fullroster/actions/eightdirections/10missingleaderworldsprites/warship/buildingstates/maps/denseperformance/externaldesktopWAN/finalpublictwo-modesbothmaps remainopen. Useracceptedwood032/iron141onlyshownD1; food101separate; resource returnordinarywalk. Automation311 schedule unresolved; no ACTIVE5h claim/recreation.
 
 Models ONLYgpt-6.1-sol/low; builtinimagegenonly; noAPI/key/Luna/quota polling. Purewhole2D/no3D/Blender/cutout/limbtextures/sourcepixelsplice/warp/mirror/perframefit. Preserve realisticoriginals/leadership/raw/held/rejected/toolcustody. Onebrief actualnormal-size loop, visiblefixesonly. Technicalchecks are notmotionacceptance. Threeworkers+root/disjointownership; rootmanifestintegration and canonicalwrites onlyafterlivepreservationguardsCLOSED.
+
+Continuation482/483 (12October): projectedcontact repair used3actual builtin calls (482initial+1correction;483completewholeclothedguide initial). All retain originalidentity but failphysicallegexchange, independentlyHELD. BothordersCLOSED/methodfailure,0newselectedframes,0dependentcalls; no stridefix/install/fanout. Currentselectedreferencejob remains470. Need a usable wholeoppositecontact source or demonstrably different pure2Dpose control; do not create equivalentorders/resetcaps. Sevenprompt/finiteguardtestsPASS; public451/backend230/sealed479/480 preserved. Evidence: docs/art/pipeline/infantry-projected-contact-482 and infantry-whole-pose-483.
+
+Continuation484: local offline tick interpolation and bounded deferred encoded LRU implemented;32focused tests PASS, SAMEsealed candidate actualChrome+Firefox ordinaryMove/PauseResume/assignedarrival/Stop/menu PASS with sub-tick positions/errornetwork0/allpins preserved/ownedhandlesCLOSED. First protocol-sampling HOLD preserved; corrected read-only in-page rAF observation proves sub-tick movement. Public451/immutable230 unchanged. NO newimagecall, no newselectedframe, no pilot/fanout/motionapproval. Stride0.15 remains unqualified;482/483 CLOSED_HELD. Next art prerequisite is a usable whole same-original ContactB or demonstrated different pure2D control, not equivalent prompt retries. Evidence: docs/art/pipeline/offline-smoothing-484/CHECKPOINT.json and art-encoded-cache-484/receipt.json.

@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 2,
+  "id": "infantry-original-D0-whole-pose-walk-483",
+  "family": "infantry",
+  "action": "walk",
+  "direction": 0,
+  "master": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/units/sources/infantry-neutral-se-refine-01-imagegen-raw.png",
+    "sha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+    "rgbaSha256": "0fdc9a92dab8aa2c420c764ff0808977daec9f4133eda860cdebc18e67463179"
+  },
+  "masterSHA": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+  "fixedCanvas": {
+    "width": 1254,
+    "height": 1254
+  },
+  "pivot": {
+    "x": 653,
+    "y": 1057,
+    "space": "source"
+  },
+  "render": {
+    "width": 42,
+    "height": 42
+  },
+  "cell": {
+    "width": 128,
+    "height": 128
+  },
+  "contactShadow": {
+    "mode": "separate",
+    "assetId": "unit-contact-shadow"
+  },
+  "layout": {
+    "columns": 4
+  },
+  "frameCount": 8,
+  "loop": true,
+  "frames": [
+    {
+      "phase": 0.0,
+      "durationMs": 40,
+      "status": "selected",
+      "input": {
+        "assetId": "infantry-idle-D00",
+        "direction": 0,
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/units/sources/infantry-neutral-se-refine-01-imagegen-raw.png",
+        "sha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+        "rgbaSha256": "0fdc9a92dab8aa2c420c764ff0808977daec9f4133eda860cdebc18e67463179",
+        "status": "existing source custody; no new view or motion approval"
+      },
+      "custody": "Retained original084845 ascontactA/appearance; no newcall",
+      "events": []
+    },
+    {
+      "phase": 0.125,
+      "durationMs": 40,
+      "status": "pending",
+      "input": null,
+      "custody": "pending",
+      "events": []
+    },
+    {
+      "phase": 0.25,
+      "durationMs": 40,
+      "status": "pending",
+      "input": null,
+      "custody": "pending",
+      "events": []
+    },
+    {
+      "phase": 0.375,
+      "durationMs": 40,
+      "status": "pending",
+      "input": null,
+      "custody": "pending",
+      "events": []
+    },
+    {
+      "phase": 0.5,
+      "durationMs": 40,
+      "status": "held",
+      "input": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/infantry-whole-pose-483/F4-raw.png",
+        "sha256": "1e53c8d01538af63d8ee2a7349421eef9456c3d5469056b18a19355fab6ac871",
+        "rgbaSha256": "6812d2fd8d967db17823fe6c754c646a099d8db75d2c285920d496a3d825a48d"
+      },
+      "custody": "Actualbuiltin response retained asHELD_WRONG_CONTACT; notselected",
+      "events": []
+    },
+    {
+      "phase": 0.625,
+      "durationMs": 40,
+      "status": "pending",
+      "input": null,
+      "custody": "pending",
+      "events": []
+    },
+    {
+      "phase": 0.75,
+      "durationMs": 40,
+      "status": "pending",
+      "input": null,
+      "custody": "pending",
+      "events": []
+    },
+    {
+      "phase": 0.875,
+      "durationMs": 40,
+      "status": "pending",
+      "input": null,
+      "custody": "pending",
+      "events": []
+    }
+  ],
+  "callBudget": {
+    "limit": 7,
+    "used": 1
+  },
+  "output": {
+    "directory": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/infantry-whole-pose-483/compiled",
+    "runtimePath": "atlas.png"
+  },
+  "qualificationScope": "HELD incompleteauthoringjob; onlyoriginalF0selected; F4failedcontact; dependentsuncalled; cannotcompile orinstall",
+  "locomotion": {
+    "distancePerCycle": 0.7291666666666666,
+    "status": "AUTHORED_TARGET_REVIEW_ONLY"
+  }
+}

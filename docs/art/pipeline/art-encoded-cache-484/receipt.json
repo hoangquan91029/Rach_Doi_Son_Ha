@@ -1,0 +1,30 @@
+{
+  "status": "IMPLEMENTED_FOCUSED_TESTS_PASS",
+  "scope": "Encoded opt-in deferred page deterministic LRU; no artwork/runtime policy/public changes",
+  "budgets": {
+    "encodedDefault": 67108864,
+    "decodedDefault": 134217728
+  },
+  "protected": [
+    "eager/required verified records",
+    "fetches still loading",
+    "current decode users",
+    "current draw pins",
+    "this pipeline pending page keys"
+  ],
+  "behavior": "Evicted encoded pages refetch and hash verify normally; decoded cache may continue rendering independently. Offline re-decode only works while encoded bytes remain cached.",
+  "verification": {
+    "command": "node --test tests/art-encoded-cache484.test.js tests/art-streaming480.test.js tests/art-bank175.test.js",
+    "passed": 19,
+    "failed": 0
+  },
+  "sha256": {
+    "client/art-assets.js": "e1794922f93f3bbf4857c2c5bfee1dee79c6f99904b151169d99004c6419853c",
+    "tests/art-encoded-cache484.test.js": "b80d5ed1abeb1ab7e40a8cd600cf1ea4bc9afa2022c84bde8b7b0578c06ed760"
+  },
+  "limitations": [
+    "No browser/dense-roster/performance qualification",
+    "No owner motion/contact approval"
+  ],
+  "handles": "No browser/server handles created"
+}

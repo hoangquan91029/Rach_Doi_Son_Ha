@@ -1,0 +1,9 @@
+Independent F4 contact gate482
+
+HOLD_WRONG_CONTACT. Actual new F4 shows near shield-side leg still forward/down-right, foot extended toscreenright; far sword-side foot remains backward/screenleft and is lifted. This preserves original support ordering rather than making oppositecontact. Visible on one constantwholecanvas71pxpreview (render42×zoom1.68 rounded71), beside originalmaster; nativeimage only locates ownership. Outfit/wholebody remains recognizablyoriginal; no broadcloth/anatomyaudit. A still cannot establish motion/cadence/footlock. Dependent6 remainCLOSED.
+
+A whole ORIGINAL master with clearly labeled circles/arrows can specify the desired switch if annotations identify PHYSICAL leg by shield-side and sword-side, not screenleft/right alone. Near shield-side boot originalnormalized256≈(169,233): arrow up-left to(109,203), label TRAILING near/shield leg, grounded backwardcontact. Far sword-side boot≈(100,203): arrow down-right to(160,233), label LEADING far/sword leg, forwardcontact. Add D0travelarrow down-right(2,1), connect eachtargettoitsown leg ownership label, and preserve crossing/occlusion explicitly. Root targetcircles are contactanchors rather than shoesize or permissionto pasteboots. Redraw whole naturally articulated legs throughhips/knees/ankles, preserve geargrips/identity/pivot/scale. Footlanes n=y-.5x stay148.5near/153far. Arrows are authoringannotations only, mustnotappearoutput. Do not use failedF4 as soleposecue.
+
+This guide is clearer than coordinate prose because screenleft/right swaps between contactphases and failedoutput followed prior silhouette. It remains untestedcontrol; no futureartPASS. One bounded NEW correction may test it under existingorder; original2/2F3 correctionhistory never reopened.
+
+Read-only ownlease; no calls/canonicalwrites/browser/process/ports. GuardCLOSED.

@@ -34,6 +34,203 @@
       "runtimeInstall": false,
       "fanoutAuthorized": false,
       "scope": "Retained eight whole frame candidate; corrected F3from475; technical playback only"
+    },
+    {
+      "id": "infantry-D0-projected-walk-482",
+      "identity": "infantry",
+      "action": "walk",
+      "direction": 0,
+      "compilerJob": "infantry-original-D0-projected-walk-482",
+      "status": "HELD_METHOD_FAILURE_NO_MORE_CALLS",
+      "callLimit": 9,
+      "callsUsed": 2,
+      "correctionCap": 2,
+      "correctionsUsed": 1,
+      "slots": [
+        {
+          "frame": 0,
+          "phase": 0.0,
+          "status": "selected",
+          "kind": "initial",
+          "template": "key"
+        },
+        {
+          "frame": 1,
+          "phase": 0.125,
+          "status": "pending",
+          "kind": "initial",
+          "template": "inbetween"
+        },
+        {
+          "frame": 2,
+          "phase": 0.25,
+          "status": "pending",
+          "kind": "initial",
+          "template": "key"
+        },
+        {
+          "frame": 3,
+          "phase": 0.375,
+          "status": "pending",
+          "kind": "initial",
+          "template": "inbetween"
+        },
+        {
+          "frame": 4,
+          "phase": 0.5,
+          "status": "held",
+          "kind": "correction",
+          "template": "correction"
+        },
+        {
+          "frame": 5,
+          "phase": 0.625,
+          "status": "pending",
+          "kind": "initial",
+          "template": "inbetween"
+        },
+        {
+          "frame": 6,
+          "phase": 0.75,
+          "status": "pending",
+          "kind": "initial",
+          "template": "key"
+        },
+        {
+          "frame": 7,
+          "phase": 0.875,
+          "status": "pending",
+          "kind": "initial",
+          "template": "inbetween"
+        }
+      ],
+      "executionSequence": [
+        4,
+        2,
+        6,
+        1,
+        3,
+        5,
+        7
+      ],
+      "dependencyGate": "F4actualwholecontact mustenactD0 beforedependent6",
+      "reason": "Differentposecontrolafter482projectedgeometryreview; old4772/2cap staysclosed",
+      "motionApproval": false,
+      "worldContactApproval": false,
+      "fanoutAuthorized": false,
+      "calls": [
+        {
+          "frame": 4,
+          "kind": "initial",
+          "status": "HELD_WRONG_CONTACT",
+          "receipt": "docs/art/pipeline/infantry-projected-contact-482/F4-initial-call.json",
+          "sha256": "803d7fd4896f70bb99457f6c0ca9bb80c62f5d6726622e0b4e3b72aab20ea1d4"
+        },
+        {
+          "frame": 4,
+          "kind": "correction",
+          "status": "HELD_REPEATED_WRONG_SUPPORT",
+          "receipt": "docs/art/pipeline/infantry-projected-contact-482/F4-correction1-call.json",
+          "sha256": "0fd7f1efca6aba50807907e2dbcbe9daf53c47b7dbdf76d1ed823e4ca2ee09f9"
+        }
+      ],
+      "callsRemaining": 0,
+      "stopReason": "Two successivewholeoutputsfailedphysicalsupportexchange, includingwholeoriginalarrowguide. No remainingcorrection retry. Dependent6notcalled."
+    },
+    {
+      "id": "infantry-D0-whole-pose-walk-483",
+      "identity": "infantry",
+      "action": "walk",
+      "direction": 0,
+      "compilerJob": "infantry-original-D0-whole-pose-walk-483",
+      "status": "HELD_TOOL_METHOD_FAILURE_NO_MORE_CALLS",
+      "callLimit": 7,
+      "callsUsed": 1,
+      "correctionCap": 0,
+      "correctionsUsed": 0,
+      "slots": [
+        {
+          "frame": 0,
+          "phase": 0.0,
+          "status": "selected",
+          "kind": "initial",
+          "template": "key"
+        },
+        {
+          "frame": 1,
+          "phase": 0.125,
+          "status": "pending",
+          "kind": "initial",
+          "template": "inbetween"
+        },
+        {
+          "frame": 2,
+          "phase": 0.25,
+          "status": "pending",
+          "kind": "initial",
+          "template": "key"
+        },
+        {
+          "frame": 3,
+          "phase": 0.375,
+          "status": "pending",
+          "kind": "initial",
+          "template": "inbetween"
+        },
+        {
+          "frame": 4,
+          "phase": 0.5,
+          "status": "held",
+          "kind": "initial",
+          "template": "key"
+        },
+        {
+          "frame": 5,
+          "phase": 0.625,
+          "status": "pending",
+          "kind": "initial",
+          "template": "inbetween"
+        },
+        {
+          "frame": 6,
+          "phase": 0.75,
+          "status": "pending",
+          "kind": "initial",
+          "template": "key"
+        },
+        {
+          "frame": 7,
+          "phase": 0.875,
+          "status": "pending",
+          "kind": "initial",
+          "template": "inbetween"
+        }
+      ],
+      "executionSequence": [
+        4,
+        2,
+        6,
+        1,
+        3,
+        5,
+        7
+      ],
+      "dependencyGate": "F4wholeguidecontact mustenactlegexchange; sixdependentscloseduntilindependentstillgate",
+      "reason": "Substantiallydifferentposecontrol: completewholeclothedposeguide withconnectedlegs andocclusion. Prior482closed2calls. No correctionretryonfirstcontact; ifF4fails closemethod.",
+      "motionApproval": false,
+      "worldContactApproval": false,
+      "fanoutAuthorized": false,
+      "calls": [
+        {
+          "frame": 4,
+          "kind": "initial",
+          "status": "HELD_TOOL_METHOD_FAILURE",
+          "receipt": "docs/art/pipeline/infantry-whole-pose-483/F4-call.json",
+          "sha256": "af2fd558489151d7c5f4b191daf6501cf70323734125ea3ecde7afdf5653a26a"
+        }
+      ],
+      "callsRemaining": 0,
+      "stopReason": "Completewholeclothedposeguideignored; zero-correctionpolicyclosesfirstfailure. Threeactualcalls across482/483 failedlegexchange. No equivalentneworders."
     }
   ],
   "nextDependencies": [

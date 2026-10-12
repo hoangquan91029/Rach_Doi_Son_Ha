@@ -1,0 +1,45 @@
+{
+  "orderId": "infantry-D0-projected-walk-482",
+  "slotIndex": 4,
+  "kind": "correction",
+  "values": {
+    "identity": "infantry",
+    "master": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+    "direction": "0",
+    "camera": "dimetric 2:1 ground projection; fixed whole original elevated camera; no independent camera fit",
+    "screenFacing": "ESE",
+    "weaponOwnership": "Physical sword hand and shield hand remain those of original084845; D0 sword screenleft and shield screenright only; screen sides change with view",
+    "referenceRoles": "originalmaster,guide",
+    "invariants": "Same original face helmet armor sash sword and shield; full1254square transparent canvas, pivot6531057, fixedwholebody scale. Original headtopnear50sourcepx; no globalshift or fit. 256normalized footlanes n=y-.5x remain148.5shieldnear and153swordfar. No anatomy redesign.",
+    "action": "walk",
+    "phase": "0.5",
+    "movingParts": "Make ORIGINALSWORD-SIDE thigh andknee extendobliquelyacross towardlowerRIGHT, with its FARboot reachingYELLOWoval at160233normalized256. Make ORIGINALSHIELD-SIDE thighandkneeflexback/upLEFT, its NEARboot endingCYANoval109203. Thephysicallegs mustexchangerolesfromimage1. Bothboottoesdownonplane, notraisedpassingpose. Preservecorrectthighkneecalfcontinuity inonefinishedillustration.",
+    "bodyMotion": "Retain head/torso/camera and scale from original; subtleweight transfer overforward farleg, naturalknees andbalanced uprightbody. Pelvisroot remainsoriginal; nojump. Feettravel screen-diagonally, notmainlyvertical.",
+    "equipmentMotion": "Swordremainssamephysicalhand onscreenleft; shieldremainssamephysicalhand onscreenright. Keepmetaloutline and shieldsize, firmgrip withslight naturalarmswing only.",
+    "nextKey": "AfterContactB phase0.5 nearleg releasesandpasses forward; farlegstance travelsup-left towardContactA atphase1.0. Firstvalidate projectedcontact beforedependentframes.",
+    "defect": "Initialcallleftshieldsidelegforwardandfarbootsuspendedbehind; thisiswrongcontactAagain. SWAP physicallegroles. FollowguideCYANnear/shieldbootbackleftandYELLOWfar/swordbootforwardright. Thisisanewwholelegpose, nottexturechange orrenaming.",
+    "neighbors": "No newcontactB selected. Image1 isoriginalmasterappearance andcontactA. Image2 isWHOLEoriginalderived annotationguideMODEL_ONLY; arrows/ovalslabel physicallegdestinations, notpaintedpose. Failedinitialraw isHELD andNOTattached."
+  },
+  "references": [
+    {
+      "assetId": "infantry-idle-D00",
+      "direction": 0,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/units/sources/infantry-neutral-se-refine-01-imagegen-raw.png",
+      "sha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+      "rgbaSha256": "0fdc9a92dab8aa2c420c764ff0808977daec9f4133eda860cdebc18e67463179",
+      "status": "existing source custody; no new view or motion approval",
+      "role": "originalmaster"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/infantry-projected-contact-482/F4-guide.png",
+      "sha256": "0d5dd3ee36877ed15874312fdbd191dee555e84fb03c01c0e6408e9cba5ca124",
+      "role": "guide",
+      "status": "MODEL_ONLY",
+      "derivedFromSHA": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+      "provenance": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/infantry-projected-contact-482/F4-guide-provenance.json",
+        "sha256": "5301d4bc5c174c92327eaad2149f9021301b03197e5fb7a72989be97f829a260"
+      }
+    }
+  ]
+}

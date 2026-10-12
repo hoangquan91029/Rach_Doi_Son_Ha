@@ -1,0 +1,67 @@
+{
+  "status": "IMPLEMENTED_LOCAL_CANDIDATE",
+  "scope": "Offline completed-tick position interpolation plus encoded deferred-page LRU; no artwork or public release",
+  "tests": {
+    "focusedPass": 32,
+    "failed": 0,
+    "groups": [
+      "offline presentation / online presentation / locomotion / action clocks:13",
+      "encoded LRU / streaming / legacy bank:19"
+    ],
+    "fullSuiteNotRepeated": true
+  },
+  "actualScenes": [
+    {
+      "receipt": "actual-chrome/receipt.json",
+      "status": "HOLD_ACTUAL_UI",
+      "browser": "151.0.7922.34",
+      "subtickMoves": 0,
+      "errors": 0,
+      "networkFailures": 0,
+      "preservation": true,
+      "handles": {
+        "browserClosed": true,
+        "serverListening": false,
+        "rooms": 0
+      }
+    },
+    {
+      "receipt": "actual-chrome-2/receipt.json",
+      "status": "PASS_ACTUAL_UI_TECHNICAL_ONLY",
+      "browser": "151.0.7922.34",
+      "subtickMoves": 11,
+      "errors": 0,
+      "networkFailures": 0,
+      "preservation": true,
+      "handles": {
+        "browserClosed": true,
+        "serverListening": false,
+        "rooms": 0
+      }
+    },
+    {
+      "receipt": "actual-firefox/receipt.json",
+      "status": "PASS_ACTUAL_UI_TECHNICAL_ONLY",
+      "browser": "153.0",
+      "subtickMoves": 12,
+      "errors": 0,
+      "networkFailures": 0,
+      "preservation": true,
+      "handles": {
+        "browserClosed": true,
+        "serverListening": false,
+        "rooms": 0
+      }
+    }
+  ],
+  "sourcePins": {
+    "client/main.js": "44a02215c854e94f331aa29b8b4f60c9421a335db1f464223d9038cab7c3c453",
+    "client/presentation.js": "e633db008c94ac9feca3ab5365417e1b811730f0e8c7f0927ab82cc29ed0632f",
+    "client/art-assets.js": "e1794922f93f3bbf4857c2c5bfee1dee79c6f99904b151169d99004c6419853c",
+    "tests/offline-presentation484.test.js": "c3239b10df7161dfcbd88f49a8e350d3e0bf48797b6cc22138443d8b705e0f3d",
+    "scripts/qa/unit-walk-scene.mjs": "e6c1d2433d98f97cdd335b381a366a2ceb4127e2075c2edb716d0557a28f02c0"
+  },
+  "artGate": "Infantry ContactB/stride/naturalness remains OPEN; 482/483 CLOSED_HELD, no new image calls or fanout",
+  "public": "451 and immutable230 PID3408 unchanged; all browser preservation checks passed",
+  "next": "Usable same-original whole ContactB source is required before a new demonstrated pose-control method and dependent frames; do not retry closed methods."
+}
