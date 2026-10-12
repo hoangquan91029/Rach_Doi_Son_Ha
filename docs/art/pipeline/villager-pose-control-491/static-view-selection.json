@@ -1,0 +1,33 @@
+{
+  "schema": "rds-static-view-selection/v1",
+  "status": "SOURCE_SELECTED_STATIC_ONLY",
+  "identity": "villager",
+  "direction": 1,
+  "master": {
+    "assetId": "villager-idle-D00",
+    "direction": 0,
+    "path": "docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+    "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+    "rgbaSha256": "c960d206222a191b903a8cc1a679e82bdce8d8c51df4010a935f444b3cacdb9c",
+    "status": "existing source custody; no new view or motion approval"
+  },
+  "source": {
+    "assetId": "villager-idle-south-014",
+    "direction": 1,
+    "path": "docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+    "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+    "rgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6",
+    "status": "existing source custody; no new view or motion approval"
+  },
+  "method": "Root actual rawmasterD0 + rawSouthD1 view inspection; canonical256 whole-canvas intake for same hat/face/outfit/equipment/camera, no redesign or new artwork",
+  "observation": "Existing originalSouth neutral view retains same whole Villager identity, beige crossover tunic, dark sash/baggy trousers, calfwraps and open sandals. Selection allows existing source as appearance anchor, not finished eight-direction animation.",
+  "motionApproval": false,
+  "ownerMotionApproval": false,
+  "runtimeInstall": false,
+  "release": false,
+  "limitations": [
+    "No new view generated",
+    "Old owner490 walk rejection remains unchanged",
+    "Static appearance selection cannot close idle4/walk8/action coverage or identify exact actual foot stance"
+  ]
+}

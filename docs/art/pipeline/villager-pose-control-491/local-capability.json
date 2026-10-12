@@ -1,0 +1,141 @@
+{
+  "schema": "rds-local-capability/v1",
+  "purpose": "Bounded existing-userspace GPU and deterministic whole-authored SVG guide rendering investigation",
+  "exclusiveOutput": "docs/art/pipeline/villager-pose-control-491/local-capability.json",
+  "inputHEAD": "a39e341639f3401b949a0df5a7d48e7d039c617e",
+  "preflight": {
+    "schema": "rds-agent-preflight/v1",
+    "task": "audit",
+    "head": "a39e341639f3401b949a0df5a7d48e7d039c617e",
+    "status": "?? docs/art/pipeline/villager-pose-control-491/",
+    "readFiles": [
+      {
+        "path": "docs/agent-read-contract.json",
+        "sha256": "5e85c1c9a649aa6d71d03f6dd2b69a4e54f6b77c80f157a26e648a07f8ec3f99",
+        "bytes": 986
+      },
+      {
+        "path": "AGENTS.md",
+        "sha256": "f157cd34b996be9b37e4a7d26f6417592dad55129d077c2524d57b7170aeda88",
+        "bytes": 7405
+      },
+      {
+        "path": "docs/PROJECT_STATE.md",
+        "sha256": "9e54ee82cb4d581f9407c7118d5440a41dec9ac4f23bf45046080c8a8a4a3d4d",
+        "bytes": 4654
+      },
+      {
+        "path": "docs/NEXT_STEPS.md",
+        "sha256": "18e6a9aeba3cb6fa93d51af475f3c0e7d1a64d7d94f00fed36f3e0bdaaeba8b2",
+        "bytes": 2192
+      },
+      {
+        "path": "docs/ARCHITECTURE_DECISIONS.md",
+        "sha256": "0b2b348bff0b0ffa6305e1aebf9d713faca7b9b10fb913df81640758ce1389c8",
+        "bytes": 2157
+      },
+      {
+        "path": "docs/PROJECT_ROADMAP.md",
+        "sha256": "45876b3c879a460be5f42a8705fad244cf4f7d79ba929d10b0e82e6ac619a8e6",
+        "bytes": 4190
+      },
+      {
+        "path": "docs/art/pipeline/ANIMATION_RESEARCH.md",
+        "sha256": "b6a1abb8c76d416a29a3c7bee95e3ea05502be71c2c02002a43bfbd9c43808d9",
+        "bytes": 5913
+      }
+    ],
+    "sources": [
+      {
+        "path": "docs/art/pipeline/reusable-jobs-489/local-2d-capability.json",
+        "sha256": "48c03521fe1398b4b2e47b49dd15564d3bfd64674d5abf86b594c56c404d2c59",
+        "bytes": 1190
+      }
+    ],
+    "ledger": {
+      "path": "docs/art/pipeline/unit-production/order-ledger.json",
+      "sha256": "bb52f26cab9a83322af001dbb6876e875d693ba562577c034f38dd0592a16e5c",
+      "locked": false,
+      "unresolvedClaims": []
+    },
+    "limits": [
+      "Existence and byte hashes do not establish understanding, permission, approval or tool availability.",
+      "Explicit invocation only; this helper is not a mandatory global hook.",
+      "Externally verify tools and actual live handles/preservation guards; no guards are declared closed."
+    ]
+  },
+  "status": "VERIFIED_GUIDE_RENDER_UNKNOWN_INFERENCE",
+  "findings": {
+    "kernelDriver": "DOCUMENTED_ONLY prior489; current /proc information independently shows RTX2050 GPU firmware595.99.02",
+    "nvml": "FAILED_LOAD",
+    "cudaDriver": "FAILED_LOAD",
+    "cudaRuntime": "FAILED_LOAD",
+    "OpenCL": {
+      "status": "VERIFIED_NO_PLATFORMS",
+      "returnCode": -1001,
+      "platformCount": 0
+    },
+    "VRAM": null,
+    "availableInferenceVRAM": null,
+    "inference": "NOT_TESTED",
+    "poseConditioning": null,
+    "authoring": {
+      "status": "VERIFIED_RENDER_ONLY",
+      "route": "Python3 PyGObject Rsvg.Handle.render_document to pycairo ImageSurface",
+      "dimensions": [
+        128,
+        128
+      ],
+      "nonzeroBytes": 11624,
+      "Pillow": "12.1.1",
+      "pycairo": "1.27.0",
+      "cairo": "1.18.4",
+      "PyGObject": "3.56.2",
+      "librsvg": "2.61.3+dfsg-3ubuntu0.1",
+      "CairoSVG": null,
+      "sharp": null
+    }
+  },
+  "evidence": [
+    {
+      "argv": [
+        "python3",
+        "-c",
+        "import importlib.util,ctypes,glob,gi,cairo\nfrom PIL import __version__ as pv\nprint('versions',pv,cairo.version,cairo.cairo_version_string(),gi.__version__)\nfor m in ['cairosvg','torch','diffusers']: print(m, bool(importlib.util.find_spec(m)))\nfor n in ['libnvidia-ml.so.1','libcuda.so.1','libcudart.so','libOpenCL.so.1']:\n try: ctypes.CDLL(n); print(n,'LOAD_OK')\n except OSError as e: print(n,str(e))\nfor p in ['/usr/local/cuda*','/opt/cuda*','/usr/lib/nvidia/*','/usr/lib/x86_64-linux-gnu/*nvidia-ml*','/usr/bin/nvidia*','/etc/OpenCL/vendors/*']: print(p,glob.glob(p))\ncl=ctypes.CDLL('libOpenCL.so.1'); n=ctypes.c_uint(); print('clGetPlatformIDs',cl.clGetPlatformIDs(0,None,ctypes.byref(n)),'platformCount',n.value)\ngi.require_version('Rsvg','2.0'); from gi.repository import Rsvg\nsvg=b'<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"128\" height=\"128\"><path d=\"M48 28 L80 28 L88 80 L72 80 L68 112 L58 112 L56 80 L40 80 Z\" fill=\"#804c36\"/><circle cx=\"64\" cy=\"20\" r=\"10\" fill=\"#e9bd88\"/></svg>'\nh=Rsvg.Handle.new_from_data(svg); s=cairo.ImageSurface(cairo.FORMAT_ARGB32,128,128); r=Rsvg.Rectangle(); r.x=0; r.y=0; r.width=128; r.height=128\nprint('AUTHORED_SVG_MEMORY_RENDER',h.render_document(cairo.Context(s),r),'dimensions',s.get_width(),s.get_height(),'nonzeroBytes',sum(b!=0 for b in bytes(s.get_data())))"
+      ],
+      "exitCode": 0,
+      "stdout": "versions 12.1.1 1.27.0 1.18.4 3.56.2\ncairosvg False\ntorch False\ndiffusers False\nlibnvidia-ml.so.1 libnvidia-ml.so.1: cannot open shared object file: No such file or directory\nlibcuda.so.1 libcuda.so.1: cannot open shared object file: No such file or directory\nlibcudart.so libcudart.so: cannot open shared object file: No such file or directory\nlibOpenCL.so.1 LOAD_OK\n/usr/local/cuda* []\n/opt/cuda* []\n/usr/lib/nvidia/* ['/usr/lib/nvidia/alternate-install-available']\n/usr/lib/x86_64-linux-gnu/*nvidia-ml* []\n/usr/bin/nvidia* ['/usr/bin/nvidia-sleep.sh', '/usr/bin/nvidia-powerd', '/usr/bin/nvidia-settings']\n/etc/OpenCL/vendors/* []\nclGetPlatformIDs -1001 platformCount 0\nAUTHORED_SVG_MEMORY_RENDER True dimensions 128 128 nonzeroBytes 11624\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "dpkg-query",
+        "-W",
+        "-f=${db:Status-Abbrev} ${binary:Package} ${Version}\n",
+        "*nvidia*",
+        "*cuda*",
+        "*rsvg*"
+      ],
+      "exitCode": 0,
+      "stdout": "ii  cuda-keyring 1.1-1\nii  gir1.2-rsvg-2.0:amd64 2.61.3+dfsg-3ubuntu0.1\nun  libcuda1 \nun  libgldispatch0-nvidia \nii  libnvidia-egl-wayland1:amd64 1:1.1.21-1ubuntu1\nun  libnvidia-encode1 \nii  librsvg2-2:amd64 2.61.3+dfsg-3ubuntu0.1\nun  librsvg2-bin \nii  librsvg2-common:amd64 2.61.3+dfsg-3ubuntu0.1\nii  linux-firmware-nvidia-graphics 20260319.git217ca6e4-0ubuntu1.1\nrc  linux-modules-nvidia-595-open-6.17.0-29-generic 6.17.0-29.29~24.04.1+1\nrc  linux-modules-nvidia-595-open-6.17.0-35-generic 6.17.0-35.35~24.04.1\nrc  linux-modules-nvidia-595-open-6.17.0-40-generic 6.17.0-40.40~24.04.1+1\nrc  linux-modules-nvidia-595-open-7.0.0-28-generic 7.0.0-28.28~24.04.1+3\nrc  linux-modules-nvidia-595-open-7.0.0-30-generic 7.0.0-30.30~24.04.1\nii  linux-modules-nvidia-595-open-7.0.0-38-generic 7.0.0-38.38+2\nun  nvidia-egl-wayland-common \nii  nvidia-firmware-595-595.99.02 595.99.02-0ubuntu0.26.04.1\nun  nvidia-firmware-595-server-595.99.02 \nun  nvidia-kernel-common \nii  nvidia-kernel-common-595 595.99.02-0ubuntu0.26.04.1\nun  nvidia-kernel-common-595-595.99.02 \nun  nvidia-libopencl1-dev \nii  nvidia-settings 615.71.09-2ubuntu1\nun  nvidia-settings-binary \n",
+      "stderr": ""
+    }
+  ],
+  "retainedFailures": [
+    "First in-memory render attempted Rsvg.Rectangle keyword constructor; TypeError. Corrected to zero-argument constructor and assigned fields; successful rerun.",
+    "sharp require from repository: MODULE_NOT_FOUND.",
+    "zsh standard-location glob command failed no matches; corrected with Python glob without changing environment."
+  ],
+  "limitations": [
+    "Simple wholly authored schematic tests deterministic vector rasterization only; not original-identity accuracy, natural clothing/pose authoring, production sprites, motion quality or owner approval.",
+    "Missing libraries in loader and inspected standard locations do not prove absence in every host directory.",
+    "cuda-keyring is repository metadata, not CUDA runtime; dpkg un means not installed and rc means removed with configuration.",
+    "No GPU inference or model inspected/downloaded/run; no backend qualified."
+  ],
+  "nextDependency": "Use existing librsvg/pycairo to rasterize original-bound wholly authored temporary SVG guides if separately authorized. Keep local diffusion branch blocked on accessible userspace GPU runtime, actual VRAM and a separately selected bounded backend; no installation implied.",
+  "installedOrDownloaded": false,
+  "imageCalls": 0,
+  "inferenceRuns": 0,
+  "productionWrites": false,
+  "handles": "All synchronous command processes exited; no server/browser/worker/model handles opened."
+}

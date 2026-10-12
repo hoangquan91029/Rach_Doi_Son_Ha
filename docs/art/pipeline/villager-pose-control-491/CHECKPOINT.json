@@ -1,0 +1,105 @@
+{
+  "schema": "rds-clothed-control-checkpoint/v1",
+  "status": "HELD_ILLUSTRATION_POSE; VERIFIED_AUTHORING_CONTROL",
+  "inputHEAD": "a39e341639f3401b949a0df5a7d48e7d039c617e",
+  "purpose": "Repair rejectedVillager D1 movement using materially changed complete whole-clothed2D control before any fanout",
+  "exclusiveOutputs": [
+    "scripts/whole-clothed-walk-guide.mjs",
+    "scripts/render-clothed-guide.py",
+    "tests/whole-clothed-walk-guide.test.js",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pose-control-491"
+  ],
+  "rootMetadataChanges": [
+    "Villager originalD1 static appearance view selection ONLY",
+    "trial-job pin/guide provenance and trustedONE order",
+    "heldraw excluded; oldorders unchanged"
+  ],
+  "actualTools": [
+    "Node ES modules andnode:test",
+    "existing Python/PyGObject/librsvg/pycairo/Pillow",
+    "builtin image_gen.imagegen ONE logicalcall"
+  ],
+  "workerProfile": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low",
+    "producers": [
+      "clothed_guide491"
+    ],
+    "independentReview": [
+      "guide_review491"
+    ],
+    "capability": [
+      "local2d491"
+    ]
+  },
+  "outcomes": {
+    "source": "8original490 inputs preserved; newF2 HELD,0newselected",
+    "technical": "22/22 relevant guide arithmetic/reference/finite guard/equipment tests PASS;8whole SVG+PNG guides rendered withoutcanvas touches. No finished-motion claim.",
+    "motion": "FAILED owner490 unchanged; no new loop/runtime/owner/worldcontact approval",
+    "runtime": "UNCHANGED; no isolatedgamebuild orscene replay for held output",
+    "release": "UNCHANGED PUBLIC451/frontend+immutable230backend"
+  },
+  "sequence": [
+    "wholeclothedguide v0 independently NO_TRIAL due bodyvolume",
+    "ONE bounded guide contour revision, originalv0 preserved",
+    "A/B guide identities aligned to existing F0right/F4left contact-intent; actual stance unknown",
+    "independentrevision1 recommends ONE trial only",
+    "prepareOrder then durableclaim; actualtarget-first input order retained",
+    "ONEbuiltin returned originalidentity with nearly unchanged splitfoot silhouette",
+    "durablesettle andindependentHELD; order closed zero retries/descendants"
+  ],
+  "guideMath": {
+    "status": "VERIFIED_ARITHMETIC_ONLY",
+    "localStanceCompensationPxPerCycle": 124,
+    "authoredSoleSpan": 62,
+    "impliedWorldDistancePerCycle": 1.0655706355380614,
+    "impliedCadenceAtHistoricalSpeed2_1": 1.9707750288554096,
+    "limitation": "These numbers belong to authored guide, never adopted as real illustrated stride or gameplay speed. Actual source foot contacts remain unmeasured."
+  },
+  "preservation": {
+    "oldOrdersUnchanged": true,
+    "protectedPins": 435,
+    "currentTurnProtectedGameSourceChanges": 0,
+    "baseline489Difference": "raster-slice authorized prior490, byteequal current HEAD",
+    "rawOriginalsLeadershipPublicServerShared": "UNCHANGED"
+  },
+  "budget": {
+    "historical009013CorrectionsAtLeast": 2,
+    "oldCapsReset": false,
+    "changedControlMaterialDifference": "Original-bound complete authored clothing and controlled sole paths for whole cycle, not oldgraycontour/legoutline",
+    "newMethodTrial": 1,
+    "retries": 0,
+    "remaining": 0,
+    "Infantry482483486": "CLOSED UNTOUCHED"
+  },
+  "localInference": "UNKNOWN/NOT_AVAILABLE; accessible guide raster only, no install/download/inference/model adoption",
+  "handles": {
+    "workers": "terminal",
+    "imageCall": "returned and settled",
+    "browserServerTestProcesses": "none opened by task; synchronous tests exited",
+    "ledgerLock": false,
+    "unresolvedClaims": [],
+    "production": "intentionallyrunning immutable230, not restarted"
+  },
+  "nextDependency": "Source-bound guide-first whole-frame illustration route (PROPOSED, UNCALLED) with explicit distinct template/reference role and finite guard; not another current-frame-first edit, not held-target bypass or cap reset. Current runner has no legal guide-target role, so no new order exists. Wholeclothedguide remains only authoring aid; final source must be finished original-identity illustration.",
+  "retainedFailures": [
+    "Initial guidevolume NO_TRIAL receipt retained",
+    "Initial21/22 tests: old allviews-static snapshot failed after explicitD1 appearance selection. Test now demands pinned SOURCE_SELECTED_STATIC_ONLY evidence and false motion/owner/runtime/release flags; corrected22/22. Original output retained.",
+    "Actual wholeF2 output HELD for unchanged splitfoot motion silhouette"
+  ],
+  "testEvidence": {
+    "path": "docs/art/pipeline/villager-pose-control-491/test-output-corrected.txt",
+    "sha256": "994da28e52bea33ccdd0e91b039bb4565c628d312e181183490d4a878cc398f4"
+  },
+  "staticViewEvidence": {
+    "path": "docs/art/pipeline/villager-pose-control-491/static-view-selection.json",
+    "sha256": "1199d74b86f5a8e805090f17ccb6af8d7e0c7bd209cb7773ac3024b4ecb18514"
+  },
+  "retainedTestFailure": {
+    "path": "docs/art/pipeline/villager-pose-control-491/test-output.txt.gz",
+    "rawSHA256": "a562703e2efaf66d6428dcbbfe117d75c98fa98fd2c7b15c6d51d4aa88efbc09",
+    "storedSHA256": "6f97e45a057230d5a2c99ff87434654bd525929eeb23d7a95f5f4eff351aec68",
+    "custody": "Losslessgzip; raw test log retainedlocally, no whitespace/content editing"
+  },
+  "finiteGuardRecheck": "VERIFIED actual closed491 order refuses redispatch, no unresolved claim/lock"
+}

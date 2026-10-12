@@ -1,0 +1,17 @@
+# Whole clothed authoring guide491
+
+Status: AUTHORING_ONLY_UNQUALIFIED. The guide is a hand-authored whole clothed illustration proposal, not finished sprite art or an image order.
+
+`guidePose(config, phase)` returns persistent A/B physical-lane sole lines, stance/swing state, ground path, lift, calf tops, depth order, body bob/sway, arm swing and cloth lag. `renderGuide(config, phase)` redraws complete garment contours and headwear at each phase. `exportGuide` writes eight SVGs, landmarks and a plain looping browser preview. CLI: `node scripts/whole-clothed-walk-guide.mjs CONFIG_JSON OUTPUT_DIRECTORY`.
+
+Inputs: exact D1 source and original identity pins in parent control.json. D1 master was visually inspected once. Broad costume features are authored: conical woven hat, crossover beige tunic, dark sash/tails, baggy dark trousers, cream calf wraps, open brown sandals and visible toes. SVG contains authored path fills/strokes only; no source raster pixels, image fragments, masks, visible geometric joints, mirroring or 3D. SVG paths are temporary2D clothing contours, never final art.
+
+Stance compensates root travel linearly. Swing uses cubic Hermite ground travel with endpoint derivatives matched to stance, plus sin² vertical lift with zero endpoint derivative. Local sole is the exact horizontal sandal bottom landmark; sandal/toe shapes lie above it. In this control the implied projected root advance is124 authoring pixels/cycle. This is an authored constraint, not observed source contact or qualified runtime stride. No actual gameplay or continuous visual acceptance has been performed by this producer.
+
+Same canvas/pivot and clothing widths remain fixed. Phase changes redraw trousers/wraps/sandals from persistent landmarks and redraw arm contours, torso/hat position and tunic/sash folds. Camera is a visual estimate from the inspected South master. Detailed facial likeness/material texture is intentionally not reconstructed, and the drawing's broad likeness still needs independent inspection. Leg depth order follows rendered sole depth, which is an authoring choice requiring review around passing phases.
+
+Clipping: no raster inspection by this producer; actual alpha bounds/clipping remain UNKNOWN pending root rasterization. Topmost authored hat coordinate is6 plus body bob (at most1.4px upward). Front sole is249; Hermite swing may briefly exceed its endpoint before contact, so actual rendered alpha margin must be checked. No per-frame fit or crop is applied. Source art, runtime, manifests, prior budgets and public release are untouched. Image calls0; tests0 (root owns meaningful arithmetic checks).
+
+Actual tools: Node filesystem/SVG authoring; shell reads; view_image one D1 master inspection; agent-preflight output retained in preflight.json. No browser/server/test handles were opened by this worker. Parent owns rasterization and independent review.
+
+One bounded contour revision: first outputs/script preserved under revision0. Canonical256 and guideF2 were inspected together once. Authored head/shoulder/waist/rolled-cuff anchors moved to canonical broad vertical proportions, while tunic hem remains near original. Forearms retain their broad contour and longer canonical length. Trousers use authored knee180 support/knee174 swing bounds and phase-specific projected calf33/22px; this is explicit estimated foreshortening, not a physical anatomical measurement. Root owns rerasterization and single independent resulting-sheet review. No further guide revision is authorized by this note.

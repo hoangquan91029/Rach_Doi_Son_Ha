@@ -1,4 +1,4 @@
-# Project state — pipeline489 / qualification490, 12 October 2026
+# Project state — clothed pose control491, 12 October 2026
 
 Full goal: **INCOMPLETE**. Baseline HEAD `d26cf75` had uncommitted486; preserved in [baseline](audits/audit-488/baseline.json). Audit486/488 was sealed at `7f8cd34`; actual Git governs over this dated snapshot.
 
@@ -28,3 +28,9 @@ Implemented P1: explicit finite `view`/`action` jobs, immutable identity/action/
 490 adds bounded current-render successful-draw observations (max1024 IDs, cleared each render) so exact idle can be distinguished from stale fallback data. This is diagnostic metadata, not new art or mechanics. First no-corridor HOLD and later stale-fallback Stop HOLD are retained; final fresh sealed scene used ordinary clearance/UI and exact actor trace. Only canonical game-source delta is `client/raster-slice.js`; public/dist/shared/server remain unchanged. [490receipt](art/pipeline/villager-qualification-490/CHECKPOINT.json).
 
 No new image call, selected frame, movement approval or release. A similar passing-guide retry is not authorized: existing009/013 already record at least two corrections. Repair priority F2/F6 is a still-based inference, not continuous review; prepare different whole-clothed2D pose control and verified projection before another finite trial. [Owner review](art/pipeline/villager-qualification-490/owner-review.json), [budget](art/pipeline/villager-qualification-490/budget-intake.json).
+
+491 implemented a complete authored clothed D1 guide with persistent cuff/sandal lanes, stance compensation, counter-swing and fixed source layout. Existing librsvg/pycairo renders it without installation. VERIFIED22/22 scoped guide/guard tests; no guide clipping. One independent silhouette revision was required, retained with original bytes. These are authoring controls, not finished sprites or foot-lock evidence.
+
+Root selected the existing neutralSouth view as a **static appearance anchor only** with pinned scope; no eight-direction or animation approval. ONE new materially different controlled method trial used actual target-first wholeF2 + originalSouth + F0/F4 + clothedguide after prepareOrder/durableclaim. Built-in output preserved original identity but repeated the old split-foot silhouette: **HELD**,0newselected,0retries. Order CLOSED and raw excluded. Old009/013 and Infantry482/483/486 budgets unchanged. Public451/230, all original art and game source unchanged this task. [491checkpoint](art/pipeline/villager-pose-control-491/CHECKPOINT.json).
+
+Next proposed mechanism is source-bound **guide-first whole-frame illustration**, giving the authored clothed pose the primary role and original artwork appearance authority. Current guard has no legal guide-target role; no new order/call exists. Implement an explicit bounded reference contract before any trial; do not treat held output as selected or simply retry target-first. Local GPU inference remains UNKNOWN/unavailable; no framework/model installed or backend adopted.

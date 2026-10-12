@@ -1,0 +1,87 @@
+{
+  "schema": "rds-whole-clothed-control/v1",
+  "status": "AUTHORING_ONLY_UNQUALIFIED",
+  "identity": "villager",
+  "action": "walk",
+  "direction": 1,
+  "identityMaster": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+    "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+    "rgbaSha256": "c960d206222a191b903a8cc1a679e82bdce8d8c51df4010a935f444b3cacdb9c"
+  },
+  "view": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+    "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+    "rgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6"
+  },
+  "layout": {
+    "canvas": [
+      256,
+      256
+    ],
+    "sourcePivot": [
+      654,
+      1140
+    ],
+    "workingPivot": [
+      133.51196172248802,
+      232.72727272727272
+    ],
+    "presentationCanvasPx": 70.56,
+    "scale": "Uniform whole-canvas only; no runtime/layout selection changed"
+  },
+  "physicalLegs": {
+    "A": {
+      "landmark": "Linen calf wrap and sandal of image-right trouser leg in fixed South view",
+      "laneX": 146,
+      "anatomicalSide": null
+    },
+    "B": {
+      "landmark": "Linen calf wrap and sandal of image-left trouser leg in fixed South view",
+      "laneX": 116,
+      "anatomicalSide": null
+    }
+  },
+  "geometryBasis": "Hand-authored full clothing contour at original camera based on inspected D1 master; coordinates are AUTHORING estimates, not measurements of old walk or proof of anatomy/foot lock; bounded contour revision requested after independent loss-of-volume concern; no final pixels",
+  "motion": {
+    "cycleMs": 600,
+    "receivingContacts": {
+      "A": 0,
+      "B": 0.5
+    },
+    "stanceFraction": 0.5,
+    "frontSoleY": 249,
+    "rearSoleY": 187,
+    "swingLiftPx": 22,
+    "bodyBobPx": 1.4,
+    "bodySwayPx": 1.0,
+    "armSwingPx": 8,
+    "clothLagPx": 1.5,
+    "projection": "D1 is vertical South; planted sole localY must decrease linearly against projected root travel; persistent lanes never swap",
+    "guideDistancePerCycle": null,
+    "strideQualification": "Not inherited1.26. Compute authoring implied stride from defined sole path, then actual illustrated sole samples must fit before runtime adoption."
+  },
+  "controlDifference": [
+    "Redraw a complete clothed whole figure every frame from owned contour primitives; no copied or transformed source body pixels",
+    "Explicit sole paths and physical cuff lanes for entire cycle, with stance compensation and swing height",
+    "Neighbor phases generated together before any provider call; upper body/arms/cloth counter-move",
+    "Keep original hat, beige cross-over tunic, dark sash and baggy trousers, cream calf wraps, brown sandals and visible toes; no boots or new tools"
+  ],
+  "sourceRasterUse": "Reference inspection only; never embedded as guide pixels or final transformed sprites",
+  "imageCall": {
+    "status": "NO_ORDER",
+    "count": 0
+  },
+  "validationLimits": [
+    "Guide motion is an authoring proposal, not realistic finished art",
+    "Deterministic guide sole arithmetic does not validate illustrated frames or actual gameplay",
+    "Old490 owner rejection stands; old009013/Infantry482483486 budgets remain consumed",
+    "No runtime, manifest, view selection, art approval or release"
+  ],
+  "sourcePhaseAlignment": {
+    "method": "ONE whole256 F0/F4 source comparison, no native anatomy scoring",
+    "observation": "Historical F0 lower/reaching sandal belongs to image-right cuff, while F4 lower/reaching sandal belongs to image-left cuff. The earlier proposed A=image-left was not aligned to these existing endpoints.",
+    "status": "INFERRED_CONTACT_INTENT_NOT_OBSERVED_WORLD_STANCE",
+    "decision": "Author physical A as image-right cuff and B as image-left cuff, without anatomical side assertion. Phase contacts remain A0/B.5. Historical marker names not rewritten."
+  }
+}

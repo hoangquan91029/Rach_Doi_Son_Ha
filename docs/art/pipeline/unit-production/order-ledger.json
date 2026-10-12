@@ -328,6 +328,114 @@
       "fanoutAuthorized": false,
       "closed": true,
       "closure": "ONE human-authorized actual builtin edit of465 returned F0physicallegownership. Zero retries; no replacement/dependent call authorized. Target-first role support added after trial, not re-dispatched."
+    },
+    {
+      "id": "villager-D1-whole-clothed-control-491-F2-ONE",
+      "jobKind": "action",
+      "identity": "villager",
+      "action": "walk",
+      "direction": 1,
+      "job": {
+        "id": "villager-D1-whole-clothed-control-491",
+        "action": "walk",
+        "direction": 1,
+        "variant": "whole-contour-stance-method-trial",
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pose-control-491/trial-job.json",
+        "sha256": "9b99a994661159072381da0b1f944cc0b0fb1824e1581d6bef771668f072c10f"
+      },
+      "status": "HELD_METHOD_CONTROL_NOT_FOLLOWED",
+      "callLimit": 1,
+      "callsUsed": 1,
+      "correctionCap": 0,
+      "correctionsUsed": 0,
+      "slots": [
+        {
+          "frame": 0,
+          "phase": 0,
+          "status": "selected",
+          "kind": "initial",
+          "template": "key"
+        },
+        {
+          "frame": 1,
+          "phase": 0.125,
+          "status": "selected",
+          "kind": "initial",
+          "template": "key"
+        },
+        {
+          "frame": 2,
+          "phase": 0.25,
+          "status": "held",
+          "kind": "initial",
+          "template": "key",
+          "claim": {
+            "token": "85ab9283-3eb4-4de6-a64b-99cd93f4ba25",
+            "requestSHA": "963ae342c88ce82a4eeecf793d62ed32a4ce6c8a2b623bbce4b05bd9626d641a",
+            "claimedAt": "2026-10-12T15:05:01.160Z"
+          },
+          "settlement": {
+            "token": "85ab9283-3eb4-4de6-a64b-99cd93f4ba25",
+            "settledAt": "2026-10-12T15:07:57.735Z",
+            "output": {
+              "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pose-control-491/trial-F2-raw.png",
+              "sha256": "e3bfb1a2863d8304df51017bb04e3d4354207a999e97573c446185036ab66ba6"
+            },
+            "approval": false
+          }
+        },
+        {
+          "frame": 3,
+          "phase": 0.375,
+          "status": "selected",
+          "kind": "initial",
+          "template": "key"
+        },
+        {
+          "frame": 4,
+          "phase": 0.5,
+          "status": "selected",
+          "kind": "initial",
+          "template": "key"
+        },
+        {
+          "frame": 5,
+          "phase": 0.625,
+          "status": "selected",
+          "kind": "initial",
+          "template": "key"
+        },
+        {
+          "frame": 6,
+          "phase": 0.75,
+          "status": "selected",
+          "kind": "initial",
+          "template": "key"
+        },
+        {
+          "frame": 7,
+          "phase": 0.875,
+          "status": "selected",
+          "kind": "initial",
+          "template": "key"
+        }
+      ],
+      "executionSequence": [
+        2
+      ],
+      "method": "Complete hand-authored clothed silhouette with explicit continuous stance-compensated sole paths; source-pixel-free guide, allphases preauthored before request",
+      "budgetDecision": {
+        "basis": "Latest human rejectedVillager490 and requestedcontinue; workflow permits demonstrably different2D control with finite order. Independent491revision1 recommendsONE methodtrial, root grantsONE initial methodprobe zero corrections/descendants.",
+        "historicalCorrectionsUsedAtLeast": 2,
+        "historicalCorrectionReset": false,
+        "oldMethods": "009013/010 andInfantry482483486 remain consumed/closed; no edits to original ledger records"
+      },
+      "motionApproval": false,
+      "runtimeInstall": false,
+      "fanoutAuthorized": false,
+      "callsRemaining": 0,
+      "closed": true,
+      "closure": "ONE call consumed; illustration retained old split-foot pose rather than whole-clothed passing control. Independent trial-review HELD, zero retries, no dependent calls, no source selection/install."
     }
   ],
   "nextDependencies": [

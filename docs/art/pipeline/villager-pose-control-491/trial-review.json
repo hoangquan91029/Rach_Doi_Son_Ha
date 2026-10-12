@@ -1,0 +1,72 @@
+{
+  "schema": "rds-independent-trial-review/v1",
+  "status": "HELD",
+  "reviewer": "guide_review491",
+  "exclusiveOutput": "docs/art/pipeline/villager-pose-control-491/trial-review.json",
+  "scope": "Single returnedF2 method trial; visible pose-change review only",
+  "inputSha256": {
+    "trial-F2-compare.png": "4e4d448bc68ca82b40b9dd7533a4fd1f44ee5b88facdd6acb5babea69d045575",
+    "trial-F2-working256.png": "d937b3ebfef47b3427e00533d2f641843dd7574e8605b98fe73fbcee5e167a48",
+    "trial-F2-raw.png": "e3bfb1a2863d8304df51017bb04e3d4354207a999e97573c446185036ab66ba6",
+    "guide/F2.png": "cad740daf00c33a47a41ef41e0509ab817db4cd8dc8a5c3e485d7502c3568c1c",
+    "claimed.json": "984bad9ec8aad78efabee1dffde2353419e0483b299bfde1db41b46e665aaa08"
+  },
+  "actualTools": [
+    "view_image: trial-F2-compare.png71px and returnedF2-working256.png",
+    "exec_command: claimed ordered-input read, input hash and exclusive receipt write"
+  ],
+  "observations": [
+    {
+      "status": "VERIFIED",
+      "evidence": "trial-F2-compare.png",
+      "method": "One actual-size old/new/guide comparison",
+      "observation": "NewF2 retains the old split-foot silhouette: image-right sandal remains low and forward, image-left lifted foot remains farther back. At71px there is no meaningful change toward the guide passing-foot relationship or support-under-body pose."
+    },
+    {
+      "status": "VERIFIED",
+      "evidence": "trial-F2-working256.png",
+      "method": "One necessary working256 inspection",
+      "observation": "Whole identity and costume broadly persist, but the low image-right supporting leg remains extended toward the bottom of the canvas. The guide demanded its sole at218 and a much closer passing relationship; returned pose visibly stays near the old silhouette."
+    },
+    {
+      "status": "DOCUMENTED_ONLY",
+      "evidence": "Parent task measurement",
+      "observation": "Parent reports returned supporting sole near workingY240 versus guide218; reviewer did not independently measure exact PNG sole coordinates."
+    },
+    {
+      "status": "VERIFIED",
+      "evidence": "claimed.json prepared.referenced_image_paths",
+      "method": "Read durable prepared record",
+      "observation": "Recorded order is target, canonicalSouth, F0 contact, F4 contact, F2 guide. Prompt explicitly asks foot pose change and guide sole relationship; returned image did not visibly follow this changed control."
+    }
+  ],
+  "decision": {
+    "availability": "HELD",
+    "methodOutcome": "FAILED_POSE_CONTROL_FOR_THIS_ONE_TRIAL",
+    "reason": "Appearance preservation alone cannot select a motion repair. Desired passing-pose change was not visibly achieved.",
+    "additionalCallsAuthorized": 0,
+    "descendantsAuthorized": 0,
+    "nextDependency": "Root records finite one-call result and closes this trial. Any further backend/control decision requires explicit changed-method scope; do not retry equivalent guide/target prompt or reset consumed caps."
+  },
+  "claimsNotMade": [
+    "continuous motion",
+    "owner approval",
+    "world foot lock",
+    "stride qualification",
+    "runtime qualification",
+    "finished bank acceptance"
+  ],
+  "handles": {
+    "reviewImageCalls": 0,
+    "parentReportedTrialCalls": 1,
+    "parentReportedRetries": 0,
+    "browserHandlesOpened": 0,
+    "serverHandlesOpened": 0,
+    "testsRun": 0
+  },
+  "limitations": [
+    "Still-based comparison only",
+    "No loop/build needed for heldframe",
+    "Raw technical custody settled by root; this receipt is visual outcome only"
+  ]
+}

@@ -1,0 +1,611 @@
+{
+  "schema": "rds-clothed-guide-landmarks/v1",
+  "status": "AUTHORING_ONLY_UNQUALIFIED",
+  "inputPins": {
+    "identityMaster": {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+      "rgbaSha256": "c960d206222a191b903a8cc1a679e82bdce8d8c51df4010a935f444b3cacdb9c"
+    },
+    "view": {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "rgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6"
+    }
+  },
+  "canvas": [
+    256,
+    256
+  ],
+  "pivot": [
+    133.51196172248802,
+    232.72727272727272
+  ],
+  "cycleMs": 600,
+  "solePathSpan": 62,
+  "projectedRootTravelPerCycle": 124,
+  "limitations": [
+    "Guide motion is an authoring proposal, not realistic finished art",
+    "Deterministic guide sole arithmetic does not validate illustrated frames or actual gameplay",
+    "Old490 owner rejection stands; old009013/Infantry482483486 budgets remain consumed",
+    "No runtime, manifest, view selection, art approval or release"
+  ],
+  "frames": [
+    {
+      "phase": 0,
+      "body": {
+        "sway": 0,
+        "bob": 0
+      },
+      "armSwing": 8,
+      "clothLag": -0.6524,
+      "feet": {
+        "A": {
+          "id": "A",
+          "laneX": 146,
+          "cyclePhase": 0,
+          "stance": true,
+          "swingT": null,
+          "groundY": 249,
+          "lift": 0,
+          "sole": [
+            146,
+            249
+          ],
+          "soleLine": [
+            [
+              136,
+              249
+            ],
+            [
+              156,
+              249
+            ]
+          ],
+          "calfTopY": 216,
+          "projectedCalfLength": 33,
+          "foreshortening": 1
+        },
+        "B": {
+          "id": "B",
+          "laneX": 116,
+          "cyclePhase": 0.5,
+          "stance": false,
+          "swingT": 0,
+          "groundY": 187,
+          "lift": 0,
+          "sole": [
+            116,
+            187
+          ],
+          "soleLine": [
+            [
+              106,
+              187
+            ],
+            [
+              126,
+              187
+            ]
+          ],
+          "calfTopY": 165,
+          "projectedCalfLength": 22,
+          "foreshortening": 0.6666666666666666
+        }
+      },
+      "depthOrder": [
+        "B",
+        "A"
+      ],
+      "pivot": [
+        133.51196172248802,
+        232.72727272727272
+      ],
+      "authoringOnly": true
+    },
+    {
+      "phase": 0.125,
+      "body": {
+        "sway": 0.7071,
+        "bob": -0.7
+      },
+      "armSwing": 5.6569,
+      "clothLag": 0.4937,
+      "feet": {
+        "A": {
+          "id": "A",
+          "laneX": 146,
+          "cyclePhase": 0.125,
+          "stance": true,
+          "swingT": null,
+          "groundY": 233.5,
+          "lift": 0,
+          "sole": [
+            146,
+            233.5
+          ],
+          "soleLine": [
+            [
+              136,
+              233.5
+            ],
+            [
+              156,
+              233.5
+            ]
+          ],
+          "calfTopY": 200.5,
+          "projectedCalfLength": 33,
+          "foreshortening": 1
+        },
+        "B": {
+          "id": "B",
+          "laneX": 116,
+          "cyclePhase": 0.625,
+          "stance": false,
+          "swingT": 0.25,
+          "groundY": 190.875,
+          "lift": 11,
+          "sole": [
+            116,
+            179.875
+          ],
+          "soleLine": [
+            [
+              106,
+              179.875
+            ],
+            [
+              126,
+              179.875
+            ]
+          ],
+          "calfTopY": 157.875,
+          "projectedCalfLength": 22,
+          "foreshortening": 0.6666666666666666
+        }
+      },
+      "depthOrder": [
+        "B",
+        "A"
+      ],
+      "pivot": [
+        133.51196172248802,
+        232.72727272727272
+      ],
+      "authoringOnly": true
+    },
+    {
+      "phase": 0.25,
+      "body": {
+        "sway": 1,
+        "bob": -1.4
+      },
+      "armSwing": 0,
+      "clothLag": 1.3507,
+      "feet": {
+        "A": {
+          "id": "A",
+          "laneX": 146,
+          "cyclePhase": 0.25,
+          "stance": true,
+          "swingT": null,
+          "groundY": 218,
+          "lift": 0,
+          "sole": [
+            146,
+            218
+          ],
+          "soleLine": [
+            [
+              136,
+              218
+            ],
+            [
+              156,
+              218
+            ]
+          ],
+          "calfTopY": 185,
+          "projectedCalfLength": 33,
+          "foreshortening": 1
+        },
+        "B": {
+          "id": "B",
+          "laneX": 116,
+          "cyclePhase": 0.75,
+          "stance": false,
+          "swingT": 0.5,
+          "groundY": 218,
+          "lift": 22,
+          "sole": [
+            116,
+            196
+          ],
+          "soleLine": [
+            [
+              106,
+              196
+            ],
+            [
+              126,
+              196
+            ]
+          ],
+          "calfTopY": 174,
+          "projectedCalfLength": 22,
+          "foreshortening": 0.6666666666666666
+        }
+      },
+      "depthOrder": [
+        "B",
+        "A"
+      ],
+      "pivot": [
+        133.51196172248802,
+        232.72727272727272
+      ],
+      "authoringOnly": true
+    },
+    {
+      "phase": 0.375,
+      "body": {
+        "sway": 0.7071,
+        "bob": -0.7
+      },
+      "armSwing": -5.6569,
+      "clothLag": 1.4164,
+      "feet": {
+        "A": {
+          "id": "A",
+          "laneX": 146,
+          "cyclePhase": 0.375,
+          "stance": true,
+          "swingT": null,
+          "groundY": 202.5,
+          "lift": 0,
+          "sole": [
+            146,
+            202.5
+          ],
+          "soleLine": [
+            [
+              136,
+              202.5
+            ],
+            [
+              156,
+              202.5
+            ]
+          ],
+          "calfTopY": 169.5,
+          "projectedCalfLength": 33,
+          "foreshortening": 1
+        },
+        "B": {
+          "id": "B",
+          "laneX": 116,
+          "cyclePhase": 0.875,
+          "stance": false,
+          "swingT": 0.75,
+          "groundY": 245.125,
+          "lift": 11,
+          "sole": [
+            116,
+            234.125
+          ],
+          "soleLine": [
+            [
+              106,
+              234.125
+            ],
+            [
+              126,
+              234.125
+            ]
+          ],
+          "calfTopY": 212.125,
+          "projectedCalfLength": 22,
+          "foreshortening": 0.6666666666666666
+        }
+      },
+      "depthOrder": [
+        "A",
+        "B"
+      ],
+      "pivot": [
+        133.51196172248802,
+        232.72727272727272
+      ],
+      "authoringOnly": true
+    },
+    {
+      "phase": 0.5,
+      "body": {
+        "sway": 0,
+        "bob": 0
+      },
+      "armSwing": -8,
+      "clothLag": 0.6524,
+      "feet": {
+        "A": {
+          "id": "A",
+          "laneX": 146,
+          "cyclePhase": 0.5,
+          "stance": false,
+          "swingT": 0,
+          "groundY": 187,
+          "lift": 0,
+          "sole": [
+            146,
+            187
+          ],
+          "soleLine": [
+            [
+              136,
+              187
+            ],
+            [
+              156,
+              187
+            ]
+          ],
+          "calfTopY": 165,
+          "projectedCalfLength": 22,
+          "foreshortening": 0.6666666666666666
+        },
+        "B": {
+          "id": "B",
+          "laneX": 116,
+          "cyclePhase": 0,
+          "stance": true,
+          "swingT": null,
+          "groundY": 249,
+          "lift": 0,
+          "sole": [
+            116,
+            249
+          ],
+          "soleLine": [
+            [
+              106,
+              249
+            ],
+            [
+              126,
+              249
+            ]
+          ],
+          "calfTopY": 216,
+          "projectedCalfLength": 33,
+          "foreshortening": 1
+        }
+      },
+      "depthOrder": [
+        "A",
+        "B"
+      ],
+      "pivot": [
+        133.51196172248802,
+        232.72727272727272
+      ],
+      "authoringOnly": true
+    },
+    {
+      "phase": 0.625,
+      "body": {
+        "sway": -0.7071,
+        "bob": -0.7
+      },
+      "armSwing": -5.6569,
+      "clothLag": -0.4937,
+      "feet": {
+        "A": {
+          "id": "A",
+          "laneX": 146,
+          "cyclePhase": 0.625,
+          "stance": false,
+          "swingT": 0.25,
+          "groundY": 190.875,
+          "lift": 11,
+          "sole": [
+            146,
+            179.875
+          ],
+          "soleLine": [
+            [
+              136,
+              179.875
+            ],
+            [
+              156,
+              179.875
+            ]
+          ],
+          "calfTopY": 157.875,
+          "projectedCalfLength": 22,
+          "foreshortening": 0.6666666666666666
+        },
+        "B": {
+          "id": "B",
+          "laneX": 116,
+          "cyclePhase": 0.125,
+          "stance": true,
+          "swingT": null,
+          "groundY": 233.5,
+          "lift": 0,
+          "sole": [
+            116,
+            233.5
+          ],
+          "soleLine": [
+            [
+              106,
+              233.5
+            ],
+            [
+              126,
+              233.5
+            ]
+          ],
+          "calfTopY": 200.5,
+          "projectedCalfLength": 33,
+          "foreshortening": 1
+        }
+      },
+      "depthOrder": [
+        "A",
+        "B"
+      ],
+      "pivot": [
+        133.51196172248802,
+        232.72727272727272
+      ],
+      "authoringOnly": true
+    },
+    {
+      "phase": 0.75,
+      "body": {
+        "sway": -1,
+        "bob": -1.4
+      },
+      "armSwing": 0,
+      "clothLag": -1.3507,
+      "feet": {
+        "A": {
+          "id": "A",
+          "laneX": 146,
+          "cyclePhase": 0.75,
+          "stance": false,
+          "swingT": 0.5,
+          "groundY": 218,
+          "lift": 22,
+          "sole": [
+            146,
+            196
+          ],
+          "soleLine": [
+            [
+              136,
+              196
+            ],
+            [
+              156,
+              196
+            ]
+          ],
+          "calfTopY": 174,
+          "projectedCalfLength": 22,
+          "foreshortening": 0.6666666666666666
+        },
+        "B": {
+          "id": "B",
+          "laneX": 116,
+          "cyclePhase": 0.25,
+          "stance": true,
+          "swingT": null,
+          "groundY": 218,
+          "lift": 0,
+          "sole": [
+            116,
+            218
+          ],
+          "soleLine": [
+            [
+              106,
+              218
+            ],
+            [
+              126,
+              218
+            ]
+          ],
+          "calfTopY": 185,
+          "projectedCalfLength": 33,
+          "foreshortening": 1
+        }
+      },
+      "depthOrder": [
+        "A",
+        "B"
+      ],
+      "pivot": [
+        133.51196172248802,
+        232.72727272727272
+      ],
+      "authoringOnly": true
+    },
+    {
+      "phase": 0.875,
+      "body": {
+        "sway": -0.7071,
+        "bob": -0.7
+      },
+      "armSwing": 5.6569,
+      "clothLag": -1.4164,
+      "feet": {
+        "A": {
+          "id": "A",
+          "laneX": 146,
+          "cyclePhase": 0.875,
+          "stance": false,
+          "swingT": 0.75,
+          "groundY": 245.125,
+          "lift": 11,
+          "sole": [
+            146,
+            234.125
+          ],
+          "soleLine": [
+            [
+              136,
+              234.125
+            ],
+            [
+              156,
+              234.125
+            ]
+          ],
+          "calfTopY": 212.125,
+          "projectedCalfLength": 22,
+          "foreshortening": 0.6666666666666666
+        },
+        "B": {
+          "id": "B",
+          "laneX": 116,
+          "cyclePhase": 0.375,
+          "stance": true,
+          "swingT": null,
+          "groundY": 202.5,
+          "lift": 0,
+          "sole": [
+            116,
+            202.5
+          ],
+          "soleLine": [
+            [
+              106,
+              202.5
+            ],
+            [
+              126,
+              202.5
+            ]
+          ],
+          "calfTopY": 169.5,
+          "projectedCalfLength": 33,
+          "foreshortening": 1
+        }
+      },
+      "depthOrder": [
+        "B",
+        "A"
+      ],
+      "pivot": [
+        133.51196172248802,
+        232.72727272727272
+      ],
+      "authoringOnly": true
+    }
+  ]
+}

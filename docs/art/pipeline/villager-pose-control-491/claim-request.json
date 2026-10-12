@@ -1,0 +1,66 @@
+{
+  "expectedLedgerSHA": "0c0a1e2d649639d1bbb7eebe59250a13a02017285c65d9bc2bc380512ef892f3",
+  "orderId": "villager-D1-whole-clothed-control-491-F2-ONE",
+  "slotIndex": 2,
+  "kind": "key",
+  "values": {
+    "identity": "villager",
+    "master": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+    "direction": "1",
+    "camera": "dimetric 2:1 ground projection; fixed whole original elevated camera; no independent camera fit",
+    "screenFacing": "South",
+    "weaponOwnership": "No held tool or weapon is visible in this idle master; preserve empty visible hands. Separate work-action tools require their own existing source pins and grips.",
+    "referenceRoles": "edittarget,directionalview,neighbor,neighbor,guide",
+    "invariants": "Usecase identity-preserve. One whole realistic illustrated transparent PNG, same complete Villager person, conical straw hat, face, beige cross-over tunic, dark sash and baggy trousers, cream calf wraps, brown open sandals with toes. First image EDIT TARGET, second originalSouth APPEARANCE, third and fourth contact-neighbor identities, fifth POSE GUIDE only. Keep original1254square canvas, pivot654,1140 and full-body family scale, camera and material rendering. Guide is rough clothing/pose control only: preserve realistic appearance of first/second images, never copy its cartoon face or vector style. No ground, labels, lines, source splices, new unit or equipment.",
+    "action": "walk",
+    "phase": "0.25",
+    "support": "PhysicalA is the image-right linen calf wrap and sandal in this fixedSouth view, receiving inF0 and supporting throughF2. Keep that physical leg on same side. PhysicalB is image-left cuff/sandal and swings forward. Anatomicalleft/right is deliberately not asserted.",
+    "movingParts": "Pose from fifth whole-clothed F2 guide: image-right support sandal under advancing pelvis at working256 sole146,218; image-left swing sole116,196, knee bent beneath hem, visibly lifted above support sole. Preserve a coherent full-sized bent clothed leg, broad baggy trouser volume and connected calf; do not shrink anatomy or leave a split-foot contact silhouette. At1254 source the fixed256whole-guide scales uniformly; no whole-image shift or fit. Move foot pose, not just clothing folds.",
+    "bodyMotion": "Natural small pelvis weight transfer and counter-swing of torso/arms, face/hat/body proportions intact. Do not lock torso rigid or redesign it. Preserve broad original shoulder and garment volumes, allowing bent swing leg foreshortening under the tunic.",
+    "equipmentMotion": "Empty hands as existing walking identity, no new tools. Sash/tunic follows body lightly; sandals remain sandals, never boots.",
+    "nextKey": "F4 second contact neighbor receives opposite image-left physicalB. This frame passes between actual F0 and F4, not a duplicate of either. Neighbor frames are appearance and phase context; fifth guide controls this passing pose."
+  },
+  "references": [
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-010/F2-right-passing-01/raw.png",
+      "sha256": "bd2679353741d51575a99ccd0ded835281d0688abb1018146ed60d3077cc2b1c",
+      "rgbaSha256": "1a9f899a98ff1daea6c4e8a32ae9a507b8098a5e65ea9541c1757f5432e3208c",
+      "role": "edittarget",
+      "frame": 2,
+      "phase": 0.25,
+      "jobId": "villager-D1-whole-clothed-control-491",
+      "status": "selected"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "rgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6",
+      "role": "directionalview"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/authoring-tools/villager-walk-SOUTH-007/walk/keys/F00-left-contact-01/raw.png",
+      "sha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001",
+      "rgbaSha256": "07bc362e869f40e8a3d5ba0b6fabdd7845f6132c0aa4656a17f762ee46609410",
+      "role": "neighbor",
+      "frame": 0,
+      "phase": 0,
+      "jobId": "villager-D1-whole-clothed-control-491",
+      "status": "selected"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-009/F4-trailing-contact-correction-01/raw.png",
+      "sha256": "929b9805f696abf341b8ea9b4df425a753da2c48b1be9ca13282bb5c72e0793f",
+      "rgbaSha256": "12a430a74fe4a945971a0821b6a0c7548cf6db9b84f40aedaeccfd40b28b75d8",
+      "role": "neighbor",
+      "frame": 4,
+      "phase": 0.5,
+      "jobId": "villager-D1-whole-clothed-control-491",
+      "status": "selected"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pose-control-491/guide/F2.png",
+      "sha256": "cad740daf00c33a47a41ef41e0509ab817db4cd8dc8a5c3e485d7502c3568c1c",
+      "role": "guide"
+    }
+  ]
+}

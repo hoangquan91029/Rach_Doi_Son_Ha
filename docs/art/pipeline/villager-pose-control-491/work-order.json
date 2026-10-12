@@ -1,0 +1,91 @@
+{
+  "id": "villager-D1-whole-clothed-control-491-F2-ONE",
+  "jobKind": "action",
+  "identity": "villager",
+  "action": "walk",
+  "direction": 1,
+  "job": {
+    "id": "villager-D1-whole-clothed-control-491",
+    "action": "walk",
+    "direction": 1,
+    "variant": "whole-contour-stance-method-trial",
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pose-control-491/trial-job.json",
+    "sha256": "9b99a994661159072381da0b1f944cc0b0fb1824e1581d6bef771668f072c10f"
+  },
+  "status": "OPEN",
+  "callLimit": 1,
+  "callsUsed": 0,
+  "correctionCap": 0,
+  "correctionsUsed": 0,
+  "slots": [
+    {
+      "frame": 0,
+      "phase": 0.0,
+      "status": "selected",
+      "kind": "initial",
+      "template": "key"
+    },
+    {
+      "frame": 1,
+      "phase": 0.125,
+      "status": "selected",
+      "kind": "initial",
+      "template": "key"
+    },
+    {
+      "frame": 2,
+      "phase": 0.25,
+      "status": "pending",
+      "kind": "initial",
+      "template": "key"
+    },
+    {
+      "frame": 3,
+      "phase": 0.375,
+      "status": "selected",
+      "kind": "initial",
+      "template": "key"
+    },
+    {
+      "frame": 4,
+      "phase": 0.5,
+      "status": "selected",
+      "kind": "initial",
+      "template": "key"
+    },
+    {
+      "frame": 5,
+      "phase": 0.625,
+      "status": "selected",
+      "kind": "initial",
+      "template": "key"
+    },
+    {
+      "frame": 6,
+      "phase": 0.75,
+      "status": "selected",
+      "kind": "initial",
+      "template": "key"
+    },
+    {
+      "frame": 7,
+      "phase": 0.875,
+      "status": "selected",
+      "kind": "initial",
+      "template": "key"
+    }
+  ],
+  "executionSequence": [
+    2
+  ],
+  "method": "Complete hand-authored clothed silhouette with explicit continuous stance-compensated sole paths; source-pixel-free guide, allphases preauthored before request",
+  "budgetDecision": {
+    "basis": "Latest human rejectedVillager490 and requestedcontinue; workflow permits demonstrably different2D control with finite order. Independent491revision1 recommendsONE methodtrial, root grantsONE initial methodprobe zero corrections/descendants.",
+    "historicalCorrectionsUsedAtLeast": 2,
+    "historicalCorrectionReset": false,
+    "oldMethods": "009013/010 andInfantry482483486 remain consumed/closed; no edits to original ledger records"
+  },
+  "motionApproval": false,
+  "runtimeInstall": false,
+  "fanoutAuthorized": false
+}

@@ -1,0 +1,73 @@
+{
+  "schema": "rds-independent-authoring-review/v1",
+  "status": "ONE_METHOD_TRIAL_RECOMMENDED",
+  "reviewer": "guide_review491",
+  "producer": "clothed_guide491",
+  "scope": "ONE brief re-intake of specific silhouette and phase-lane revision; still samples only",
+  "inputSha256": {
+    "control.json": "dfa57aad048e5fcf299d15f2d49e4153fb1d84e2035b88847a442b439c7479ea",
+    "guide/F2.png": "cad740daf00c33a47a41ef41e0509ab817db4cd8dc8a5c3e485d7502c3568c1c",
+    "guide/guide-sheet.png": "6ba44d0d3faf74d85ba149c0a02275919bb39ab3118f2cc6f85f1e3545708357",
+    "canonical-256.png": "78d86e984f3d5b8a3c097624956530f62b3f8a86e10a70432170ce4c7481d277",
+    "independent-review.json": "7a88f50733659e333bfcdbdb3d852ecc4efcc5e0e1f1e3501c9f538e39dc8cae"
+  },
+  "preservedInitialDecision": "independent-review.json remains NO_TRIAL for its earlier byte pins; not current input review",
+  "actualTools": [
+    "view_image: revised guide-sheet.png at70.56px, F2.png256px, canonical-256.png",
+    "exec_command: current control read, input hashing and exclusive receipt write"
+  ],
+  "observations": [
+    {
+      "status": "VERIFIED",
+      "subject": "Specific visible volume revision",
+      "evidence": "guide/guide-sheet.png, guide/F2.png and canonical-256.png",
+      "observation": "Revised F2 has a broader upper torso and thighs, higher sash and coherent longer tunic silhouette. At71px support sandal is clearly below the other cuff; the shorter swing cuff is visible beside the hem without the previous narrow upright-body emphasis. Broad costume silhouette is sufficiently restored for a temporary pose guide, while canonical original must remain appearance authority."
+    },
+    {
+      "status": "VERIFIED",
+      "subject": "Persistent lane definition",
+      "evidence": "control.json physicalLegs and sourcePhaseAlignment",
+      "observation": "Current A is image-right lane146, B image-left lane116; anatomicalSide remains null. CurrentF2 lower sole is image-right. Parent F0/F4 alignment observation is DOCUMENTED_ONLY to this reviewer, not observed world stance."
+    },
+    {
+      "status": "PROPOSED",
+      "subject": "Remaining visible concern",
+      "evidence": "guide/F2.png at256px",
+      "observation": "The compressed image-left swing cuff and thigh connection under the tunic must become a plausible bent clothed leg in the whole illustrated edit, rather than a short attached calf. Do not copy the flat guide face, simplified hat or contour material into final art."
+    }
+  ],
+  "recommendation": {
+    "decision": "YES_ONE_METHOD_TRIAL",
+    "illustrationCallsRecommended": 1,
+    "slot": "Villager walk D1 F2 only",
+    "purpose": "Test whether whole-clothed contour guidance changes the passing silhouette while retaining original appearance and volume",
+    "conditions": [
+      "Root establishes an explicitly finite changed-method order and durable claim; this receipt grants no call authorization or old-budget reset",
+      "Original D1 master remains appearance authority; revised guide provides pose intent only",
+      "No descendants, inbetweens, F6 trial or automatic correction authorized by this review",
+      "Inspect returned wholeF2 at71px once for visible passing-pose improvement and original volume; hold if cuff remains disconnected/compressed or original silhouette changes"
+    ]
+  },
+  "unknowns": [
+    "Actual PNG sole landmarks and contact residuals",
+    "Illustrated response to guide",
+    "Natural continuous motion, seam, cadence, runtime stride and world contact",
+    "Parent arithmetic rerun after alignment not inspected in this receipt"
+  ],
+  "approval": {
+    "authoringControl": "READY_FOR_ONE_METHOD_TRIAL_ONLY",
+    "finishedArt": "UNKNOWN",
+    "motion": "UNKNOWN",
+    "owner": "UNKNOWN",
+    "worldContact": "UNKNOWN",
+    "fanout": "NOT_APPROVED",
+    "release": "NOT_APPROVED"
+  },
+  "handles": {
+    "imageCalls": 0,
+    "browserHandlesOpened": 0,
+    "serverHandlesOpened": 0,
+    "testHandlesOpened": 0
+  },
+  "exclusiveOutput": "docs/art/pipeline/villager-pose-control-491/independent-revision1.json"
+}

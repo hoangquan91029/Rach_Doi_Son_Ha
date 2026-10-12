@@ -65,11 +65,21 @@ test('actual job bindings are unique typed pins to retained job content',()=>{
  assert.ok(seen>0,'Retained real action jobs must remain registered');
 });
 
-test('static source intake does not upgrade view, motion, owner or release approval',()=>{
+test('static intake cannot silently upgrade a view or imply motion, owner or release approval',()=>{
  for(const r of records()){
   assert.match(r.review,/No new approval/);assert.match(r.release,/No promotion authorization/);
   assert.equal(r.views.length,8);
-  for(const v of r.views)assert.equal(v.status,v.source?'existing static source':'missing',`${r.identity} D${v.direction}`);
+  for(const v of r.views){
+   if(v.status!=='selected'){assert.equal(v.status,v.source?'existing static source':'missing',`${r.identity} D${v.direction}`);continue;}
+   // A later explicit appearance selection is distinct from the original equipment intake.
+   assert.ok(v.selectionReceipt,`${r.identity} D${v.direction} needs scoped selection evidence`);
+   validateMaster(v.selectionReceipt);
+   const selection=JSON.parse(fs.readFileSync(v.selectionReceipt.path));
+   assert.equal(selection.identity,r.identity);assert.equal(selection.direction,v.direction);
+   assert.equal(selection.source.sha256,v.source.sha256);assert.equal(selection.master.sha256,r.master.sha256);
+   assert.equal(selection.status,'SOURCE_SELECTED_STATIC_ONLY');
+   for(const flag of ['motionApproval','ownerMotionApproval','runtimeInstall','release'])assert.equal(selection[flag],false);
+  }
   if(r.layoutLock)assert.equal(r.layoutLock.visualApproval,false);
   if(r.sourceCustody)assert.equal(r.sourceCustody.motionApproval,false);
  }

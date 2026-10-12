@@ -1,0 +1,39 @@
+{
+  "schema": "rds-clothed-guide-provenance/v1",
+  "status": "AUTHORING_ONLY_UNQUALIFIED",
+  "identityMaster": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+    "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+    "rgbaSha256": "c960d206222a191b903a8cc1a679e82bdce8d8c51df4010a935f444b3cacdb9c"
+  },
+  "directionalAppearance": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+    "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+    "rgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6"
+  },
+  "control": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pose-control-491/control.json",
+    "sha256": "dfa57aad048e5fcf299d15f2d49e4153fb1d84e2035b88847a442b439c7479ea"
+  },
+  "authoringScript": {
+    "path": "scripts/whole-clothed-walk-guide.mjs",
+    "sha256": "e5067daa7920fbb62b5eb085b3bcfd4c2499a954aeeaf6acb65549f2f1b4261a"
+  },
+  "renderScript": {
+    "path": "scripts/render-clothed-guide.py",
+    "sha256": "dd5f1ef77b6cc153a2dcf8248422a0ed9fe15fbd1614d37d68633b5f0a1c6b35"
+  },
+  "output": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pose-control-491/guide/F2.png",
+    "sha256": "cad740daf00c33a47a41ef41e0509ab817db4cd8dc8a5c3e485d7502c3568c1c"
+  },
+  "sourcePixelUse": false,
+  "basis": "Original and matchingSouth view inspected; hand-authored complete clothed contour and persistent cuffs, sole trajectories; no source raster transformed or assembled. A/B labels aligned to historical source contact-intent via one whole256 comparison, actual stance UNKNOWN.",
+  "review": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pose-control-491/independent-revision1.json",
+    "sha256": "102bdb41118dddeb6d26e6b4e2830d77bf537ee78de83dee807cd8d638677d03"
+  },
+  "limits": [
+    "Guide is not finished art, guaranteed provider control, observed foot contact, or release/motion approval"
+  ]
+}
