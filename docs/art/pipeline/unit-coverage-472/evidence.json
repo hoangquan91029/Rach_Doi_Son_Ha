@@ -1,0 +1,101 @@
+[
+  {
+    "identity": "villager",
+    "action": "gather_wood",
+    "direction": 1,
+    "assetId": "villager-gather-wood-south-024",
+    "dimension": "motion",
+    "status": "owner-accepted-shown-naturalness-only",
+    "receipt": "docs/art/pipeline/owner-motion-review-032/review.json",
+    "receiptSha256": "67691fc79f1e3a8f6c59472a6cf03273de2fef10a77b417f14eebb115c2c4d30",
+    "runtimeSha256": "5db6455a859a823658e2297544ca739dd466509856f8c2534644a05903cd1092"
+  },
+  {
+    "identity": "villager",
+    "action": "gather_iron",
+    "direction": 1,
+    "assetId": "villager-gather-iron-south-136",
+    "dimension": "motion",
+    "status": "owner-accepted-shown-naturalness-only",
+    "receipt": "docs/art/pipeline/owner-iron-motion-review-141/review.json",
+    "receiptSha256": "5cb4f050d2769a0aa8c5208e786c731ed4cb8e4b3b5bf93bbcf37112f1ef5730",
+    "runtimeSha256": "0f53648dd459d91a93b35dbf113c12fe753017b0971ec0ed8a55ad7647aab7cc"
+  },
+  {
+    "identity": "villager",
+    "action": "walk",
+    "direction": 1,
+    "assetId": "villager-walk-south-014",
+    "dimension": "runtime",
+    "status": "historical-local-walk-pause-stop; not continuous seam or foot-lock approval",
+    "receipt": "docs/art/pipeline/villager-walk-runtime-016/checkpoint.json",
+    "receiptSha256": "e664ad2d9244bcb15528071237691b2f36c87cc36d83a3a6f8237c521a6a07bb",
+    "runtimeSha256": "b2bdd86bd02f967bde9b070e5952e97dae257706b5d52730b787e32e9580fc13"
+  },
+  {
+    "identity": "transport",
+    "action": "idle",
+    "direction": 0,
+    "assetId": "transport-idle-d0-447",
+    "dimension": "staticAppearance",
+    "status": "source-static-intake-only; not animation approval",
+    "receipt": "docs/art/units/transport-identity-447/receipt.json",
+    "receiptSha256": "0b909ca8e8d81b27560908dc89398c09b747a27efcc170771b3ee5954ce5e2b1",
+    "runtimeSha256": "d3cbc022df157c74d9d6cad5051cdc2836fa1b68bac3a65764b443e4d2755eba"
+  },
+  {
+    "identity": "tran_nhan_tong",
+    "action": "idle",
+    "direction": 0,
+    "assetId": "tran-nhan-tong-idle-396-D0",
+    "dimension": "staticAppearance",
+    "status": "source-static-intake-only; not animation approval",
+    "receipt": "docs/art/characters/tran-nhan-tong-idle-396/receipt.json",
+    "receiptSha256": "460774ba86bdcc721ed5ceef249f240d2927f674ac6dd4f0808930233638c410",
+    "runtimeSha256": "c9f8e63899ffd7481b5bcae463741b369b52ced789139235c77cf58f6948c833"
+  },
+  {
+    "identity": "spearman",
+    "action": "idle",
+    "direction": 0,
+    "assetId": "spearman-idle-d0-400",
+    "dimension": "staticAppearance",
+    "status": "source-static-intake-only; not animation approval",
+    "receipt": "docs/art/units/spearman-margin-400/receipt.json",
+    "receiptSha256": "d2e93d9ee3f94a440a5cb28a5d9f70ce43d13ec4a7c11b1e0cdebe193e6ffe24",
+    "runtimeSha256": "323e16a80b8f503c1f9dcd63010b7c0614ac0ae7462dc498a12e332380dd0ac9"
+  },
+  {
+    "identity": "firearm",
+    "action": "idle",
+    "direction": 0,
+    "assetId": "unit-firearm-idle-d0-408",
+    "dimension": "staticAppearance",
+    "status": "source-static-intake-only; not animation approval",
+    "receipt": "docs/art/units/firearm-idle-408/receipt.json",
+    "receiptSha256": "877699807b1292d38814ee286cf8ecbeec33c2afec5ee9164686870c75527b1a",
+    "runtimeSha256": "748b340589830bba77ac51ac22fb077e517acff9889ff02060190cb85218d0a6"
+  },
+  {
+    "identity": "artillery",
+    "action": "idle",
+    "direction": 0,
+    "assetId": "artillery-idle-d0-409",
+    "dimension": "staticAppearance",
+    "status": "source-static-intake-only; not animation approval",
+    "receipt": "docs/art/units/artillery-idle-409/receipt.json",
+    "receiptSha256": "eeedfa7290bb348c394863b05b8da345774877651af2b589a2a97314973067d9",
+    "runtimeSha256": "8703d237a0de79e0da69edbca52b01880ab369616f4d525eace7cabd4f2812b6"
+  },
+  {
+    "identity": "wagon",
+    "action": "idle",
+    "direction": 0,
+    "assetId": "supply-wagon-horse-idle-d0-415",
+    "dimension": "staticAppearance",
+    "status": "source-static-intake-only; not animation approval",
+    "receipt": "docs/art/units/supply-wagon-horse-415/receipt.json",
+    "receiptSha256": "f9000cd08ebe8250f5d202b38eb09c265615ab46f7be1b0befde52024367c5bb",
+    "runtimeSha256": "d43507d1d590e0f0c5f2461d8a70d858bb600e8233902e08a1dfbe9b3748838a"
+  }
+]

@@ -1,0 +1,145 @@
+{
+  "schema": "rds-unit-identity/v1",
+  "identity": "spearman",
+  "families": [
+    "spearman",
+    "unit.spearman"
+  ],
+  "roles": [
+    "spearman"
+  ],
+  "master": {
+    "assetId": "spearman-idle-d0-400",
+    "direction": 0,
+    "path": "docs/art/units/spearman-margin-400/spearman-idle-d0-256.png",
+    "sha256": "e82c30d4613b8ffaee04d639739ecb262d203b27d151d785e9204e16a0ac6c6c",
+    "rgbaSha256": "56651603cefcca86421784405c05b017b5f99b7192f7fa0022ac6b37454b23be",
+    "status": "existing source custody; no new view or motion approval"
+  },
+  "views": [
+    {
+      "direction": 0,
+      "source": {
+        "assetId": "spearman-idle-d0-400",
+        "direction": 0,
+        "path": "docs/art/units/spearman-margin-400/spearman-idle-d0-256.png",
+        "sha256": "e82c30d4613b8ffaee04d639739ecb262d203b27d151d785e9204e16a0ac6c6c",
+        "rgbaSha256": "56651603cefcca86421784405c05b017b5f99b7192f7fa0022ac6b37454b23be",
+        "status": "existing source custody; no new view or motion approval"
+      },
+      "status": "existing static source"
+    },
+    {
+      "direction": 1,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 2,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 3,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 4,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 5,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 6,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 7,
+      "source": null,
+      "status": "missing"
+    }
+  ],
+  "actions": [
+    {
+      "action": "idle",
+      "alias": false,
+      "applicable": true,
+      "frames": 4,
+      "roles": [
+        "spearman"
+      ],
+      "requiresSeparatePoses": false
+    },
+    {
+      "action": "walk",
+      "alias": false,
+      "applicable": true,
+      "frames": 8,
+      "roles": [
+        "spearman"
+      ],
+      "requiresSeparatePoses": false
+    },
+    {
+      "action": "attack",
+      "alias": false,
+      "applicable": true,
+      "frames": 8,
+      "roles": [
+        "spearman"
+      ],
+      "requiresSeparatePoses": false
+    },
+    {
+      "action": "hit",
+      "alias": false,
+      "applicable": true,
+      "frames": 4,
+      "roles": [
+        "spearman"
+      ],
+      "requiresSeparatePoses": false
+    },
+    {
+      "action": "death",
+      "alias": false,
+      "applicable": true,
+      "frames": 8,
+      "roles": [
+        "spearman"
+      ],
+      "requiresSeparatePoses": false
+    }
+  ],
+  "invariants": [
+    "Preserve whole original identity; no role art substitution"
+  ],
+  "excludedReferences": [],
+  "review": "No new approval inferred from registry",
+  "runtime": "Active manifest presence only",
+  "release": "No promotion authorization",
+  "camera": {
+    "label": "dimetric 2:1 ground projection; fixed whole original elevated camera; no independent camera fit",
+    "screenFacing": [
+      "ESE",
+      "South",
+      "WSW",
+      "West",
+      "WNW",
+      "North",
+      "ENE",
+      "East"
+    ],
+    "basis": "shared/sim.js atan2 eight world octants; screen x=(worldX-worldY), y=(worldX+worldY)/2; labels describe projected vector"
+  },
+  "weaponOwnership": null,
+  "allowedReferences": [],
+  "excludedReferencePaths": [],
+  "masterAuthority": "retained derived source; original master verification pending"
+}

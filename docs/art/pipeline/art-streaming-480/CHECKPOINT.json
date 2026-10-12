@@ -1,0 +1,148 @@
+{
+  "status": "OPT_IN_PAGING_ACTUAL_BROWSER_NARROW",
+  "tests": "63focusedPASS; no fullmatchrerun",
+  "receipts": [
+    {
+      "path": "docs/art/pipeline/art-streaming-480/actual-ui/receipt.json",
+      "sha256": "121da571910bd2efea94a55b5e2448c10c368d627efd1c26d8efaf2f1246e7f5",
+      "status": "PASS_ACTUAL_UI_TECHNICAL_ONLY",
+      "browser": "Chrome",
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "coldFallback": {
+        "tick": 16,
+        "illustration": {
+          "entityId": 13,
+          "assetId": "infantry-original-D0-idle-479",
+          "requestedState": "walk",
+          "requestedDirection": 0,
+          "illustrationDirection": 0,
+          "presentation": "STATIC_ILLUSTRATION"
+        },
+        "pipeline": {
+          "status": "PLACEHOLDER_ONLY",
+          "manifest": "ready",
+          "declared": 52,
+          "ready": 51,
+          "approved": 0,
+          "candidates": 51,
+          "failed": 0,
+          "skipped": 0,
+          "fallbacks": 1,
+          "decodedBudgetBytes": 134217728,
+          "retainedDecodedBytes": 18532096,
+          "reservedDecodedBytes": 0,
+          "uniqueDecodedImages": 41,
+          "encodedReady": 0,
+          "retainedEncodedBytes": 4494597,
+          "encodedBudgetBytes": 67108864,
+          "selectedDeclared": 52,
+          "eagerDeclared": 51,
+          "deferredDeclared": 1,
+          "pending": 1,
+          "pageErrors": [],
+          "evictedPages": 0,
+          "failures": []
+        }
+      },
+      "preserved": true,
+      "handles": {
+        "browserClosed": true,
+        "serverListening": false,
+        "rooms": 0
+      }
+    },
+    {
+      "path": "docs/art/pipeline/art-streaming-480/actual-firefox/receipt.json",
+      "sha256": "f1a3bf70bd8b23000ce67472bf61883656f31c4518cc792daed51bcf12951085",
+      "status": "PASS_ACTUAL_UI_TECHNICAL_ONLY",
+      "browser": "153.0",
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "coldFallback": {
+        "tick": 21,
+        "illustration": {
+          "entityId": 13,
+          "assetId": "infantry-original-D0-idle-479",
+          "requestedState": "walk",
+          "requestedDirection": 0,
+          "illustrationDirection": 0,
+          "presentation": "STATIC_ILLUSTRATION"
+        },
+        "pipeline": {
+          "status": "PLACEHOLDER_ONLY",
+          "manifest": "ready",
+          "declared": 52,
+          "ready": 51,
+          "approved": 0,
+          "candidates": 51,
+          "failed": 0,
+          "skipped": 0,
+          "fallbacks": 1,
+          "decodedBudgetBytes": 134217728,
+          "retainedDecodedBytes": 18532096,
+          "reservedDecodedBytes": 0,
+          "uniqueDecodedImages": 41,
+          "encodedReady": 0,
+          "retainedEncodedBytes": 4494597,
+          "encodedBudgetBytes": 67108864,
+          "selectedDeclared": 52,
+          "eagerDeclared": 51,
+          "deferredDeclared": 1,
+          "pending": 1,
+          "pageErrors": [],
+          "evictedPages": 0,
+          "failures": []
+        }
+      },
+      "preserved": true,
+      "handles": {
+        "browserClosed": true,
+        "serverListening": false,
+        "rooms": 0
+      }
+    }
+  ],
+  "clips": [
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/art-streaming-480/actual-ui/video/page@0857d7821585ad8593c647362871a93e.webm",
+      "sha256": "077d704c3722c88cdbaaf0d6cc04e487da1bb1fe0c88abd81b35ba542821982c",
+      "bytes": 1114941
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/art-streaming-480/actual-firefox/video/page@2e72ea6c81c7269acef1b00abcc806d9.webm",
+      "sha256": "688d971c7489bdd4f2481bbc1963714ff0e8a6176292619caa1cf189a53496df",
+      "bytes": 1246656
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/infantry-runtime-479/actual-ui-2/video/page@707db22a01f035ae95ba839e7bc06948.webm",
+      "sha256": "baa79df24f2b13efc4fc04ab9970eb798abafff2eb4a7150b5e563cb9be30ee9",
+      "bytes": 1102675
+    }
+  ],
+  "limits": {
+    "decodedMiB": 128,
+    "encodedMiB": 64,
+    "encodedEviction": false,
+    "fullRosterDenseQualification": false,
+    "existingCanonicalAssetsDeferred": false
+  },
+  "public": "PUBLIC451/backend230 preserved; source-only implementation",
+  "scope": "Real Chrome+Firefox cold exact unit walk page, sameoriginal idle during500ms wait, all8frames/Move/PauseResume/assignedarrival/Stop/menu; technicalonly, stride stillunqualified"
+}

@@ -1,0 +1,145 @@
+{
+  "schema": "rds-unit-identity/v1",
+  "identity": "cavalry",
+  "families": [
+    "cavalry",
+    "unit.cavalry"
+  ],
+  "roles": [
+    "cavalry"
+  ],
+  "master": {
+    "assetId": "cavalry-idle-D00",
+    "direction": 0,
+    "path": "docs/art/units/sources/cavalry-neutral-se-imagegen-raw.png",
+    "sha256": "552c4fcdf8ce6bdb802c6faae1bc139416393d53cb30caa95a1d22309b77b091",
+    "rgbaSha256": "3c4a110747c50488d420b70d45f564b93c740a31227a5c278b7af190fe0d3caf",
+    "status": "existing source custody; no new view or motion approval"
+  },
+  "views": [
+    {
+      "direction": 0,
+      "source": {
+        "assetId": "cavalry-idle-D00",
+        "direction": 0,
+        "path": "docs/art/units/sources/cavalry-neutral-se-imagegen-raw.png",
+        "sha256": "552c4fcdf8ce6bdb802c6faae1bc139416393d53cb30caa95a1d22309b77b091",
+        "rgbaSha256": "3c4a110747c50488d420b70d45f564b93c740a31227a5c278b7af190fe0d3caf",
+        "status": "existing source custody; no new view or motion approval"
+      },
+      "status": "existing static source"
+    },
+    {
+      "direction": 1,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 2,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 3,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 4,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 5,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 6,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 7,
+      "source": null,
+      "status": "missing"
+    }
+  ],
+  "actions": [
+    {
+      "action": "idle",
+      "alias": false,
+      "applicable": true,
+      "frames": 4,
+      "roles": [
+        "cavalry"
+      ],
+      "requiresSeparatePoses": false
+    },
+    {
+      "action": "walk",
+      "alias": false,
+      "applicable": true,
+      "frames": 8,
+      "roles": [
+        "cavalry"
+      ],
+      "requiresSeparatePoses": false
+    },
+    {
+      "action": "attack",
+      "alias": false,
+      "applicable": true,
+      "frames": 8,
+      "roles": [
+        "cavalry"
+      ],
+      "requiresSeparatePoses": false
+    },
+    {
+      "action": "hit",
+      "alias": false,
+      "applicable": true,
+      "frames": 4,
+      "roles": [
+        "cavalry"
+      ],
+      "requiresSeparatePoses": false
+    },
+    {
+      "action": "death",
+      "alias": false,
+      "applicable": true,
+      "frames": 8,
+      "roles": [
+        "cavalry"
+      ],
+      "requiresSeparatePoses": false
+    }
+  ],
+  "invariants": [
+    "Preserve whole original identity; no role art substitution"
+  ],
+  "excludedReferences": [],
+  "review": "No new approval inferred from registry",
+  "runtime": "Active manifest presence only",
+  "release": "No promotion authorization",
+  "camera": {
+    "label": "dimetric 2:1 ground projection; fixed whole original elevated camera; no independent camera fit",
+    "screenFacing": [
+      "ESE",
+      "South",
+      "WSW",
+      "West",
+      "WNW",
+      "North",
+      "ENE",
+      "East"
+    ],
+    "basis": "shared/sim.js atan2 eight world octants; screen x=(worldX-worldY), y=(worldX+worldY)/2; labels describe projected vector"
+  },
+  "weaponOwnership": null,
+  "allowedReferences": [],
+  "excludedReferencePaths": [],
+  "masterAuthority": "original"
+}

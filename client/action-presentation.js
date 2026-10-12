@@ -14,11 +14,21 @@ export function createImpactPulses(){const seen=new Map(),until=new Map();return
 
 /** Resource-specific gathering; loaded return movement always uses the existing walk pose. */
 export function authoredActionStates(entity,baseState){
- if(entity.type!=='villager'||['hit','death','attack'].includes(baseState))return [baseState];
+ if(['hit','death','attack','walk'].includes(baseState))return [baseState];
  const action=entity.visibleAction;
+ if(['ability','load','unload','build'].includes(action?.kind))return [action.kind];
+ if(baseState==='repair')return ['build'];
+ if(entity.type!=='villager')return [baseState];
  if(baseState==='gather'&&action?.kind==='gather'&&['wood','food','iron'].includes(action.resource))return [`gather_${action.resource}`,'gather'];
  return [baseState];
 }
 
 /** Existing bounded presentation clock, anchored only to authoritative current gather episode. */
 export function gatherAnimationTime(entity,timeMs){const start=entity.visibleAction?.startedTick;return Number.isInteger(start)&&start>=0&&entity.visibleAction?.kind==='gather'?Math.max(0,timeMs-start*50):timeMs;}
+
+/** Finite/action-work clocks use only sanitized authoritative episode ticks. */
+export function episodeAnimationTime(entity,timeMs,clipDurationMs){
+ const action=entity.visibleAction;if(!['ability','load','unload','build'].includes(action?.kind)||!Number.isInteger(action.startedTick))return timeMs;
+ const elapsed=Math.max(0,Math.min(timeMs,action.endTick*50)-action.startedTick*50),duration=(action.endTick-action.startedTick)*50;
+ return action.loop!==true&&Number.isFinite(clipDurationMs)&&clipDurationMs>0&&duration>0?elapsed/duration*clipDurationMs:elapsed;
+}

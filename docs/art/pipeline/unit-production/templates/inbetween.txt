@@ -1,0 +1,17 @@
+inbetween: identity: {{identity}}
+master: {{master}}
+direction: {{direction}}
+camera: {{camera}}
+screenFacing: {{screenFacing}}
+weaponOwnership: {{weaponOwnership}}
+referenceRoles: {{referenceRoles}}
+invariants: {{invariants}}
+action: {{action}}
+phase: {{phase}}
+neighbors: {{neighbors}}
+support: {{support}}
+movingParts: {{movingParts}}
+bodyMotion: {{bodyMotion}}
+equipmentMotion: {{equipmentMotion}}
+nextKey: {{nextKey}}
+Edit the same whole original identity. Keep the verified elevated camera and screen-facing direction. Physical equipment hands persist while screen sides change across views. Concrete body, moving parts and equipment changes must lead toward the stated next key; selected phase neighbors define continuity. No redesign, mirror, warp, crop, per-frame fit, limb cutout or source pixel splice. Built-in image generation only. Candidate output; review, world contact, runtime and release remain separate. Ability, load and unload require distinct action poses.

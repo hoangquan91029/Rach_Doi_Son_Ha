@@ -1,0 +1,38 @@
+{
+  "status": "CANDIDATE_RUNTIME_TECHNICAL_CLOSED_STRIDE_UNQUALIFIED",
+  "sources": "470 selected eight wholeframes, 475 correctedF3; source bytes preserved",
+  "motionReview": "SAMPLES_ONLY; no temporal inspection available in review worker; owner477 reply pending",
+  "actualUI": {
+    "receipt": "actual-ui-2/receipt.json",
+    "status": "PASS_ACTUAL_UI_TECHNICAL_ONLY",
+    "frames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "errors": [],
+    "network": [],
+    "handles": {
+      "browserClosed": true,
+      "serverListening": false,
+      "rooms": 0
+    },
+    "preservationUnchanged": true
+  },
+  "locomotion": {
+    "distancePerCycle": 0.15,
+    "qualification": "PROVISIONAL",
+    "normalInfantryWorldSpeed": 2.3,
+    "impliedCyclesPerSecond": 15.333333333333332,
+    "previewCycleMs": 720,
+    "previewCyclesPerSecond": 1.3888888888888888,
+    "conclusion": "Experimental projected foot-travel estimate is unsuitable for production cadence/contact. Do not approve or fanout from technical successful playback."
+  },
+  "public": "451 unchanged; backend230 unchanged; canonical manifest51 unchanged",
+  "next": "Review actual clip at game size, establish D0 projected contact geometry and measured plausible stride before new qualified pilot. No duplicate historical image calls. Existing F3 correction cap exhausted."
+}

@@ -1,0 +1,67 @@
+{
+  "identityMasterSHA": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+  "id": "infantry-original-D0-idle-479",
+  "family": "infantry",
+  "kind": "unit",
+  "state": "idle",
+  "direction": 0,
+  "source": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/units/sources/infantry-neutral-se-refine-01-imagegen-raw.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+    "rgbaSha256": "0fdc9a92dab8aa2c420c764ff0808977daec9f4133eda860cdebc18e67463179"
+  },
+  "runtime": {
+    "path": "atlas.png",
+    "width": 528,
+    "height": 132,
+    "sha256": "606214ea7cdad243bc877911dab2f0477794ed0cdaef950e5d5cb3eeb779a977",
+    "rgbaSha256": "ff258c6cd3537b0fe276a1d7a89894ec2702e3344508e4d41ffea4260d6a70c6",
+    "derivation": {
+      "method": "atlas",
+      "filter": "lanczos",
+      "sourceSha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f"
+    }
+  },
+  "cell": {
+    "width": 128,
+    "height": 128
+  },
+  "pivot": {
+    "x": 653,
+    "y": 1057,
+    "space": "source"
+  },
+  "render": {
+    "width": 42,
+    "height": 42
+  },
+  "contactShadow": {
+    "mode": "separate",
+    "assetId": "unit-contact-shadow"
+  },
+  "alphaPolicy": "transparent",
+  "frames": [
+    {
+      "x": 2,
+      "y": 2,
+      "width": 128,
+      "height": 128,
+      "durationMs": 720,
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/units/sources/infantry-neutral-se-refine-01-imagegen-raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+        "rgbaSha256": "0fdc9a92dab8aa2c420c764ff0808977daec9f4133eda860cdebc18e67463179"
+      },
+      "events": []
+    }
+  ],
+  "candidate": true,
+  "review": {
+    "status": "CANDIDATE"
+  },
+  "loop": true
+}

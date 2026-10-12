@@ -1,0 +1,11 @@
+# Infantry runtime pilot 479
+
+The existing eight whole illustrated sources were reused without image calls. Shared compiler produced a fixed128-cell walk atlas and a matching single-frame idle from the same original master. Source, pivot `[653,1057]`, render42 and gameplay zoom1.68 are unchanged. The original sealed470 and477 outputs remain untouched.
+
+The new generic preview shows eight direction slots honestly: D0 is present; seven missing directions are labeled missing. Actual Chromium saw all eight frames, three preview cycles and working Pause/Play at70.56px wholecanvas. This is technical evidence.
+
+An isolated candidate52-asset stage/build used ordinary offline Delta UI to select original own infantry13, move D0, pause/resume, reach the exact assigned destination within engine0.7, issue a new move, Stop to idle, and return to menu with zero retained decoded bytes. All eight frames were observed; page/network errors0;269source/runtime protection pins plus build pins unchanged; owned browser/server closed and rooms0. The first attempt rejected an8-unit corridor beyond7-unit vision before moving. Its receipt/harness is preserved; the second used6 units with unchanged safety guards and the same sealed candidate.
+
+**Stride remains unqualified.** Independent review could inspect only still samples. Approximate foot displacement projected onto D0 yielded0.15worldunits/cycle. At normal infantry speed2.3 this implies15.33cycles/second versus the stationary preview1.39cycles/second, so this estimate is a diagnostic value, not a usable production stride. The source boot travel is mainly vertical while D0 projects down/right. Do not solve that by changing gameplay speed or claiming footlock from playback counters. The actual travel clip is retained for practical motion review; owner477 feedback has not arrived. No production install, direction fanout or motion approval.
+
+The shared compiler/preview, coverage/action contracts and authoritative action episodes are independent useful implementation. Actual51-asset canonical/public451 artwork remains unchanged. Further art calls need a new finite pose-control order after resolving this contact/cadence issue; the two F3 corrections474/475 are exhausted and must not be retried.

@@ -8,6 +8,9 @@ const KINDS=new Set(['unit','building','prop','vfx','terrain','ui','portrait']);
 const finitePositive=n=>Number.isFinite(n)&&n>0;
 const dimensions=(v,label)=>{if(!v||!Number.isSafeInteger(v.width)||!Number.isSafeInteger(v.height)||v.width<1||v.height<1||v.width>16384||v.height>16384||v.width*v.height>32*1024*1024)throw Error(`${label}: invalid dimensions`);};
 const samePivot=(a,b)=>a.x===b.x&&a.y===b.y&&a.space===b.space;
+// Legacy aliases can have different export resolutions, but cannot change world geometry.
+export function familyLayoutIdentity(asset){return `${asset.kind}:${asset.family.replace(new RegExp(`^${asset.kind}\\.`),'')}`;}
+export function logicalFamilyLayout(asset){return JSON.stringify([asset.source.width,asset.source.height,asset.pivot,asset.render,asset.cell.width/asset.cell.height]);}
 function validateAsset(asset) {
  if(!asset||typeof asset.id!=='string'||!/^[a-zA-Z0-9_.-]{1,120}$/.test(asset.id)||!KINDS.has(asset.kind))throw Error('Invalid asset ID or kind');
  for(const [label,file] of [['source',asset.source],['runtime',asset.runtime]]){dimensions(file,label);if(typeof file.path!=='string'||!SHA256.test(file.sha256)||!SHA256.test(file.rgbaSha256))throw Error(`${label}: missing path or SHA256 custody`);}
@@ -23,6 +26,7 @@ function validateAsset(asset) {
  if(typeof asset.state!=='string'||!(asset.direction===null||Number.isInteger(asset.direction)&&asset.direction>=0&&asset.direction<=7))throw Error('Explicit state/direction required');
  if(!Array.isArray(asset.frames)||asset.frames.length<1||asset.frames.length>256)throw Error('Missing frames');
  const occupied=[];for(const frame of asset.frames){if(![frame.x,frame.y,frame.width,frame.height].every(Number.isSafeInteger)||frame.x<0||frame.y<0||frame.width!==asset.cell.width||frame.height!==asset.cell.height||frame.x+frame.width>asset.runtime.width||frame.y+frame.height>asset.runtime.height||(!finitePositive(frame.durationMs)||frame.durationMs>60000))throw Error('Invalid runtime frame cell');if(occupied.some(r=>frame.x<r.x+r.width&&frame.x+frame.width>r.x&&frame.y<r.y+r.height&&frame.y+frame.height>r.y))throw Error('Overlapping frame cells');occupied.push(frame);validateFrameEvents(frame);if(frame.pivot&&!samePivot(frame.pivot,asset.pivot))throw Error('Per-frame pivot fitting forbidden');if(asset.frames.length>1){dimensions(frame.source,'frame source');if(typeof frame.source.path!=='string'||!frame.source.path||frame.source.width!==asset.source.width||frame.source.height!==asset.source.height||!SHA256.test(frame.source.sha256)||!SHA256.test(frame.source.rgbaSha256))throw Error('Frame source must retain locked canvas/custody');}}
+ if(asset.loadPolicy!==undefined&&!['eager','on-demand'].includes(asset.loadPolicy))throw Error('Invalid raster load policy');
  if(asset.loop!==undefined&&typeof asset.loop!=='boolean')throw Error('Invalid animation loop declaration');
  if(asset.locomotion&&(!(Number.isFinite(asset.locomotion.distancePerCycle)&&asset.locomotion.distancePerCycle>0)||asset.state!=='walk'))throw Error('Invalid locomotion distance cycle');
  const derivation=asset.runtime.derivation;if(derivation?.method==='copy'&&(asset.frames.length!==1||asset.cell.width!==asset.source.width||asset.cell.height!==asset.source.height))throw Error('Copy must preserve original canvas');if(derivation?.method==='resize'&&asset.frames.length!==1)throw Error('Multi-frame derivative must declare atlas');if(derivation?.method!=='copy'&&derivation?.filter!=='lanczos')throw Error('Derived raster requires declared lanczos filter');if(!derivation||!['copy','resize','atlas'].includes(derivation.method)||derivation.sourceSha256!==asset.source.sha256)throw Error('Missing runtime derivation provenance');
@@ -49,12 +53,28 @@ async function decodeImage(bytes,url) {
 export function createArtAssetPipeline({manifestUrl='/assets/art-v1/manifest.json',allowCandidates=false,fetchImpl=globalThis.fetch,onStatus=()=>{},maxImageBytes=32*1024*1024,maxDecodedBytes=128*1024*1024,resourceTimeoutMs=30000,preloadTimeoutMs=60000}={}) {
  if(!Number.isSafeInteger(maxDecodedBytes)||maxDecodedBytes<1)throw Error('Invalid decoded RGBA byte budget');
  let encodedStore={records:new Map(),manifests:new Map(),bytes:0,maxBytes:64*1024*1024},selectedIds=null;
- const loaded=new Map(),cache=new Map(),fallbacks=new Set(),familyLayouts=new Map();let manifest=null,disposed=false,preloadPromise=null,deadlineAt=Infinity;
- const stats={status:'PLACEHOLDER_ONLY',manifest:'not-loaded',declared:0,ready:0,approved:0,candidates:0,failed:0,skipped:0,fallbacks:0,decodedBudgetBytes:maxDecodedBytes,retainedDecodedBytes:0,reservedDecodedBytes:0,uniqueDecodedImages:0,encodedReady:0,retainedEncodedBytes:0,encodedBudgetBytes:64*1024*1024,selectedDeclared:0,failures:[]};
+ const available=new Map(),eagerIds=new Set(),eagerKeys=new Set(),pending=new Map(),controllers=new Set(),pinTimers=new Set();let access=0,queue=Promise.resolve();
+ const loaded=new Map(),cache=new Map(),fallbacks=new Set(),familyLayouts=new Map(),logicalLayouts=new Map();let manifest=null,disposed=false,preloadPromise=null,deadlineAt=Infinity;
+ const stats={status:'PLACEHOLDER_ONLY',manifest:'not-loaded',declared:0,ready:0,approved:0,candidates:0,failed:0,skipped:0,fallbacks:0,decodedBudgetBytes:maxDecodedBytes,retainedDecodedBytes:0,reservedDecodedBytes:0,uniqueDecodedImages:0,encodedReady:0,retainedEncodedBytes:0,encodedBudgetBytes:64*1024*1024,selectedDeclared:0,eagerDeclared:0,deferredDeclared:0,pending:0,pageErrors:[],evictedPages:0,failures:[]};
  const notify=()=>{stats.fallbacks=fallbacks.size;try{onStatus({...stats,failures:[...stats.failures]});}catch{}};
  const baseUrl=new URL(manifestUrl,globalThis.location?.href||'http://localhost/');
  const runtimeUrl=a=>{if(a.runtime.path.startsWith('/')||a.runtime.path.includes('\\')||a.runtime.path.split('/').includes('..')||/^[a-z]+:/i.test(a.runtime.path))throw Error('Runtime path must be manifest-relative');const url=new URL(a.runtime.path,baseUrl);const directory=new URL('.',baseUrl).pathname;if(url.origin!==baseUrl.origin||!url.pathname.startsWith(directory)||url.search||url.hash)throw Error('Runtime raster must remain within manifest directory');return url.href;};
- const bounded=(label,action)=>withLoadingDeadline(action,{label,timeoutMs:Math.min(resourceTimeoutMs,Math.max(1,deadlineAt-Date.now()))});
+ const bounded=(label,action,{paging=false}={})=>withLoadingDeadline(async signal=>{
+  const controller=new AbortController();controllers.add(controller);const abort=()=>controller.abort();signal.addEventListener('abort',abort,{once:true});if(disposed||signal.aborted)controller.abort();
+  try{return await action(controller.signal);}finally{controllers.delete(controller);signal.removeEventListener('abort',abort);}
+ },{label,timeoutMs:paging?resourceTimeoutMs:Math.min(resourceTimeoutMs,Math.max(1,deadlineAt-Date.now()))});
+ const pageKey=a=>`${runtimeUrl(a)}|${a.runtime.sha256.toLowerCase()}`;
+ const configure=active=>{available.clear();eagerIds.clear();eagerKeys.clear();for(const a of active)available.set(a.id,a);
+  for(const a of active)if(a.loadPolicy!=='on-demand'||a.state==='idle'||a.kind==='terrain'||a.kind==='ui'||a.kind==='portrait')eagerIds.add(a.id);
+  for(const a of available.values())if(a.contactShadow?.mode==='separate'){const shadow=manifest.assets.find(x=>x.id===a.contactShadow.assetId);if(!shadow)throw Error('Missing separate shadow asset');available.set(shadow.id,shadow);eagerIds.add(shadow.id);}
+  for(const id of eagerIds)eagerKeys.add(pageKey(available.get(id)));stats.eagerDeclared=eagerIds.size;stats.deferredDeclared=available.size-eagerIds.size;
+ };
+ const evictFor=bytes=>{for(const [key,record] of [...cache].sort((a,b)=>a[1].lastUsed-b[1].lastUsed)){
+  if(bytes<=maxDecodedBytes-stats.retainedDecodedBytes-stats.reservedDecodedBytes)break;
+  if(eagerKeys.has(key)||!record.image||record.pinned)continue;
+  for(const [id,entry] of loaded)if(pageKey(entry.asset)===key){loaded.delete(id);stats.ready--;stats[entry.approved?'approved':'candidates']--;}
+  release(record);cache.delete(key);stats.evictedPages++;
+ }};
  const release=record=>{if(record.reserved){stats.reservedDecodedBytes-=record.bytes;record.reserved=false;}if(record.image){record.image.close?.();record.image=null;stats.retainedDecodedBytes-=record.bytes;stats.uniqueDecodedImages--;}};
  const encoded=async(a,signal)=>{
   const url=runtimeUrl(a),key=`${url}|${a.runtime.sha256.toLowerCase()}`;
@@ -64,43 +84,52 @@ export function createArtAssetPipeline({manifestUrl='/assets/art-v1/manifest.jso
   const bytes=await encodedStore.records.get(key).promise;stats.retainedEncodedBytes=encodedStore.bytes;return bytes;
  };
  const prepare=async()=>{
-  if(!manifest){let text=encodedStore.manifests.get(baseUrl.href);if(!text){text=await bounded('Manifest',async signal=>{const response=await fetchImpl(baseUrl.href,{credentials:'same-origin',cache:'no-cache',signal});if(!response.ok)throw Error(`Manifest HTTP ${response.status}`);return response.text();});if(text.length>2*1024*1024)throw Error('Manifest exceeds byte budget');validateManifest(JSON.parse(text));encodedStore.manifests.set(baseUrl.href,text);}manifest=validateManifest(JSON.parse(text));stats.declared=manifest.assets.length;stats.manifest='ready';}
+  if(disposed)throw Error('Art pipeline disposed');
+  if(!manifest){let text=encodedStore.manifests.get(baseUrl.href);if(!text){text=await bounded('Manifest',async signal=>{const response=await fetchImpl(baseUrl.href,{credentials:'same-origin',cache:'no-cache',signal});if(!response.ok)throw Error(`Manifest HTTP ${response.status}`);return response.text();});if(text.length>2*1024*1024)throw Error('Manifest exceeds byte budget');validateManifest(JSON.parse(text));encodedStore.manifests.set(baseUrl.href,text);}if(disposed)throw Error('Art pipeline disposed');manifest=validateManifest(JSON.parse(text));stats.declared=manifest.assets.length;stats.manifest='ready';}
  };
- const fetchImage=async a=>{
+ const fetchImage=async (a,{paging=false}={})=>{
   if(disposed)throw Error('Art pipeline disposed');
   const url=runtimeUrl(a),key=`${url}|${a.runtime.sha256.toLowerCase()}`;
   if(!cache.has(key)){
-   const record={bytes:a.runtime.width*a.runtime.height*4,reserved:false,image:null,promise:null};
+   const record={bytes:a.runtime.width*a.runtime.height*4,reserved:false,image:null,promise:null,lastUsed:++access,pinned:false};
    record.promise=bounded(a.id,async signal=>{
     try{
      const bytes=await encoded(a,signal);
      if(disposed||signal.aborted)throw Error('Art pipeline disposed or loading expired');
+     if(paging)evictFor(record.bytes);
      const used=stats.retainedDecodedBytes+stats.reservedDecodedBytes;
      if(record.bytes>maxDecodedBytes-used)throw Error(`Decoded RGBA budget exceeded: ${a.id} needs ${record.bytes} bytes; ${used} retained/reserved of ${maxDecodedBytes}`);
      stats.reservedDecodedBytes+=record.bytes;record.reserved=true;notify();
      const image=await decodeImage(bytes,url);
      if(disposed||signal.aborted||image.width!==a.runtime.width||image.height!==a.runtime.height){image.close?.();throw Error(disposed||signal.aborted?'Art pipeline disposed or loading expired':'Decoded runtime dimensions mismatch');}
      stats.reservedDecodedBytes-=record.bytes;record.reserved=false;record.image=image;stats.retainedDecodedBytes+=record.bytes;stats.uniqueDecodedImages++;notify();return image;
-    }catch(error){release(record);notify();throw error;}
-   });
+    }catch(error){release(record);if(cache.get(key)===record)cache.delete(key);notify();throw error;}
+   },{paging});
    cache.set(key,record);
   }
   const image=await cache.get(key).promise;if(disposed)throw Error('Art pipeline disposed');if(image.width!==a.runtime.width||image.height!==a.runtime.height)throw Error('Cached runtime dimensions mismatch');return image;
  };
- const pipeline={stats,get manifest(){return manifest;},
+ const approvedAsset=a=>a.review.status==='APPROVED'&&!a.candidate&&manifest.status==='APPROVED';
+ const queuePage=a=>{if(disposed||!available.has(a.id)||pending.has(a.id)||stats.pageErrors.some(e=>e.id===a.id))return;
+  const task=queue.then(async()=>{if(disposed)return;validateAsset(a);const approved=approvedAsset(a);if(!approved&&!(allowCandidates&&a.candidate&&a.review.status==='CANDIDATE'))throw Error('Raster lacks permitted review status');const image=await fetchImage(a,{paging:true});if(disposed)return;loaded.set(a.id,{asset:a,image,approved});stats.ready++;stats[approved?'approved':'candidates']++;});
+  pending.set(a.id,task);stats.pending=pending.size;notify();queue=task.catch(error=>{if(!disposed)stats.pageErrors.push({id:a.id,message:error.message});}).finally(()=>{pending.delete(a.id);stats.pending=pending.size;notify();});
+ };
+ const pipeline={stats,get availableIds(){return [...available.keys()];},whenIdle(){return queue;},retry(id){stats.pageErrors=stats.pageErrors.filter(e=>e.id!==id);const a=available.get(id);if(a&&!loaded.has(id))queuePage(a);return queue;},get manifest(){return manifest;},
   attachEncodedStore(store){if(preloadPromise||manifest)throw Error('Cache must attach before loading');encodedStore=store;stats.encodedBudgetBytes=store.maxBytes;return pipeline;},
   selectAssets(ids){if(preloadPromise)throw Error('Selection must precede decoding');selectedIds=new Set(ids);return pipeline;},
-  async cacheEncoded(){deadlineAt=Date.now()+preloadTimeoutMs;stats.manifest='loading';notify();await prepare();for(const a of manifest.assets){validateAsset(a);const approved=a.review.status==='APPROVED'&&!a.candidate&&manifest.status==='APPROVED';if(!approved&&!(allowCandidates&&a.candidate&&a.review.status==='CANDIDATE')){stats.skipped++;continue;}await bounded(a.id,signal=>encoded(a,signal));stats.encodedReady++;notify();}return pipeline;},
-  preload(){if(preloadPromise)return preloadPromise;preloadPromise=(async()=>{deadlineAt=Date.now()+preloadTimeoutMs;stats.manifest='loading';notify();try{await prepare();const active=selectedIds?manifest.assets.filter(a=>selectedIds.has(a.id)):manifest.assets;stats.selectedDeclared=active.length;notify();
-    for(let index=0;index<active.length;index+=4)await Promise.all(active.slice(index,index+4).map(async raw=>{try{const a=validateAsset(raw);if(a.family){const layout=JSON.stringify([a.source.width,a.source.height,a.cell.width,a.cell.height,a.pivot,a.render]);if(familyLayouts.has(a.family)&&familyLayouts.get(a.family)!==layout)throw Error('Family changes fixed canvas/pivot/logical scale');familyLayouts.set(a.family,layout);}if(a.contactShadow.mode==='separate'&&!manifest.assets.some(x=>x.id===a.contactShadow.assetId))throw Error('Missing separate shadow asset');const approved=a.review.status==='APPROVED'&&!a.candidate&&manifest.status==='APPROVED';if(!approved&&!(allowCandidates&&a.candidate&&a.review.status==='CANDIDATE')){stats.skipped++;return;}const image=await fetchImage(a);if(disposed)return;loaded.set(a.id,{asset:a,image,approved});stats.ready++;stats[approved?'approved':'candidates']++;}catch(error){stats.failed++;stats.failures.push({id:raw?.id||'unknown',message:error.message});}finally{notify();}}));
+  async cacheEncoded(){deadlineAt=Date.now()+preloadTimeoutMs;stats.manifest='loading';notify();await prepare();configure(manifest.assets);for(const a of available.values()){validateAsset(a);if(!eagerIds.has(a.id))continue;const approved=a.review.status==='APPROVED'&&!a.candidate&&manifest.status==='APPROVED';if(!approved&&!(allowCandidates&&a.candidate&&a.review.status==='CANDIDATE')){stats.skipped++;continue;}await bounded(a.id,signal=>encoded(a,signal));stats.encodedReady++;notify();}return pipeline;},
+  preload(){if(preloadPromise)return preloadPromise;preloadPromise=(async()=>{deadlineAt=Date.now()+preloadTimeoutMs;stats.manifest='loading';notify();try{await prepare();const active=selectedIds?manifest.assets.filter(a=>selectedIds.has(a.id)):manifest.assets;configure(active);stats.selectedDeclared=available.size;notify();
+    const all=[...available.values()];for(let index=0;index<all.length;index+=4)await Promise.all(all.slice(index,index+4).map(async raw=>{try{const a=validateAsset(raw);if(a.family){const layout=JSON.stringify([a.source.width,a.source.height,a.cell.width,a.cell.height,a.pivot,a.render]);if(familyLayouts.has(a.family)&&familyLayouts.get(a.family)!==layout)throw Error('Family changes fixed canvas/pivot/logical scale');familyLayouts.set(a.family,layout);const key=familyLayoutIdentity(a),logical=logicalFamilyLayout(a);if(logicalLayouts.has(key)&&logicalLayouts.get(key)!==logical)throw Error('Family alias changes fixed canvas/pivot/logical scale');logicalLayouts.set(key,logical);}if(a.contactShadow.mode==='separate'&&!manifest.assets.some(x=>x.id===a.contactShadow.assetId))throw Error('Missing separate shadow asset');const approved=a.review.status==='APPROVED'&&!a.candidate&&manifest.status==='APPROVED';if(!approved&&!(allowCandidates&&a.candidate&&a.review.status==='CANDIDATE')){stats.skipped++;available.delete(a.id);return;}if(!eagerIds.has(a.id))return;const image=await fetchImage(a);if(disposed)return;loaded.set(a.id,{asset:a,image,approved});stats.ready++;stats[approved?'approved':'candidates']++;}catch(error){stats.failed++;stats.failures.push({id:raw?.id||'unknown',message:error.message});}finally{notify();}}));
     stats.status=stats.failed||stats.skipped||!stats.ready?'PLACEHOLDER_ONLY':stats.approved===stats.ready&&manifest.status==='APPROVED'?'APPROVED':'CANDIDATE';
    }catch(error){stats.manifest='error';stats.failures.push({id:'manifest',message:error.message});stats.failed++;stats.status='PLACEHOLDER_ONLY';}notify();return pipeline;})();return preloadPromise;},
   get(id,{state,direction,timeMs=0,frame:frameIndex}={}){let entry=loaded.get(id);if(!entry||state!==undefined&&entry.asset.state!==state||direction!==undefined&&entry.asset.direction!==direction)entry=[...loaded.values()].find(e=>e.asset.family===id&&(state===undefined||e.asset.state===state)&&(direction===undefined||e.asset.direction===direction));
-   if(!entry){const key=`${id}:${state??''}:${direction??''}`;const isNew=!fallbacks.has(key);fallbacks.add(key);stats.status='PLACEHOLDER_ONLY';if(isNew)notify();return {status:'PLACEHOLDER_ONLY',image:null,reason:'No loaded raster for exact asset/state/direction',id};}
-   const {asset:a,image,approved}=entry;const timing=sampleSpriteAnimation(a.frames,{timeMs,loop:a.loop??a.state!=='death',frame:frameIndex}),index=timing.frame;
+   if(!entry){let requestedId=id;const a=available.get(id)||[...available.values()].find(a=>a.family===id&&(state===undefined||a.state===state)&&(direction===undefined||a.direction===direction));
+    if(a&&!eagerIds.has(a.id)&&(state===undefined||a.state===state)&&(direction===undefined||a.direction===direction)){requestedId=a.id;queuePage(a);}
+    const key=`${id}:${state??''}:${direction??''}`;const isNew=!fallbacks.has(key);fallbacks.add(key);stats.status='PLACEHOLDER_ONLY';if(isNew)notify();return {status:'PLACEHOLDER_ONLY',image:null,reason:pending.has(requestedId)?'Exact raster page pending':stats.pageErrors.find(e=>e.id===requestedId)?.message||'No loaded raster for exact asset/state/direction',pending:pending.has(requestedId),id};}
+   const {asset:a,image,approved}=entry;const page=cache.get(pageKey(a));if(page){page.lastUsed=++access;if(!page.pinned){page.pinned=true;const timer=setTimeout(()=>{page.pinned=false;pinTimers.delete(timer);},0);pinTimers.add(timer);}}const timing=sampleSpriteAnimation(a.frames,{timeMs,loop:a.loop??a.state!=='death',frame:frameIndex}),index=timing.frame;
    const f=a.frames[index],scaleX=a.cell.width/a.source.width,scaleY=a.cell.height/a.source.height;
    return {status:approved?'APPROVED':'CANDIDATE',candidate:!approved,approved,id:a.id,family:a.family,image,sx:f.x,sy:f.y,sw:f.width,sh:f.height,frame:index,frameElapsedMs:timing.elapsedMs,animationDurationMs:timing.durationMs,events:timing.events,pivot:{x:a.pivot.x*scaleX,y:a.pivot.y*scaleY},render:{...a.render},contactShadow:{...a.contactShadow},asset:a};},
-  dispose(){disposed=true;for(const record of cache.values())release(record);loaded.clear();cache.clear();stats.ready=0;stats.approved=0;stats.candidates=0;notify();}
+  dispose(){disposed=true;for(const timer of pinTimers)clearTimeout(timer);pinTimers.clear();for(const controller of controllers)controller.abort();pending.clear();stats.pending=0;available.clear();for(const record of cache.values())release(record);loaded.clear();cache.clear();stats.ready=0;stats.approved=0;stats.candidates=0;notify();}
  };
  return pipeline;
 }

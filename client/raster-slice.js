@@ -2,7 +2,7 @@ import {unitArtFamilies} from '../shared/unit-art.js';
 import {selectFortificationArt} from './fortification-art.js';
 import {artRoute} from './art-routes.js';
 import {mountainPropPlacements,hillGroundPlacements,foodResourceEligible,staticResourceEligible} from './terrain-props.js';
-import {authoredActionStates,gatherAnimationTime} from './action-presentation.js';
+import {authoredActionStates,gatherAnimationTime,episodeAnimationTime} from './action-presentation.js';
 import {sampleSpriteAnimation,defaultAnimationLoop,attackAnimationTime} from './sprite-timing.js';
 import {createArtAssetPipeline} from './art-assets.js';
 import {createTerrainTransitions} from './terrain-transitions.js';
@@ -113,9 +113,9 @@ export function createRasterSlice({enabled=artRoute().enabled,manifestUrl=artRou
    const state=normalState(entity);if(typeof state!=='string'||!(direction===null||Number.isInteger(direction)&&direction>=0&&direction<=7))return false;
    // Exact authored actions have priority. Missing living-unit actions may retain a diagnosed static illustration.
    const baseVisualState=state!=='construction'&&entity.hp>0&&(entity.hitUntil||0)>tick?'hit':state;
-   const states=authoredActionStates(entity,baseVisualState);let candidates=[],visualState=baseVisualState;
+   const states=authoredActionStates(entity,baseVisualState);let candidates=[],visualState=states[0];
    for(const requested of states){candidates=(pipeline.manifest?.assets||[]).filter(a=>a.kind===kind&&families.includes(a.family||a.id)&&a.state===requested&&a.direction===direction);if(candidates.length){visualState=requested;break;}}
-   const requestedState=baseVisualState,requestedDirection=direction;let staticIllustrationFallback=false;
+   const requestedState=states[0],requestedDirection=direction;let staticIllustrationFallback=false;
    if(!candidates.length){
     recordMissing(`${families[0]}:${visualState}:${direction}`,'No exact authored raster state/direction');
     // Preserve identity and life/construction state; never depict a dead or unfinished entity as idle.
@@ -134,11 +134,19 @@ export function createRasterSlice({enabled=artRoute().enabled,manifestUrl=artRou
    else if(visualState==='construction')elapsed=Math.max(0,tick*50);
    else if(visualState==='walk'&&asset.locomotion){walkPhase=locomotion.sample(entity.id,{distancePerCycle:asset.locomotion.distancePerCycle,cycleDurationMs:asset.frames.reduce((sum,f)=>sum+f.durationMs,0)});elapsed=walkPhase.timeMs;}
    else if(visualState==='gather'||visualState.startsWith('gather_'))elapsed=gatherAnimationTime(entity,timeMs);
+   else if(['ability','load','unload','build'].includes(visualState))elapsed=episodeAnimationTime(entity,timeMs,asset.frames.reduce((sum,f)=>sum+f.durationMs,0));
    else if(visualState==='hit')elapsed=Math.max(0,timeMs-((entity.hitUntil||tick)-6)*50);
    else if(visualState==='death')elapsed=Math.max(0,(kind==='building'?(asset.fortification?.deathSite==='completed'?Math.min(tick*50,finite(timeMs)?timeMs:tick*50):tick*50):timeMs)-(entity.deadTick??tick)*50);
    else if(visualState==='attack'&&finite(entity.attackStartedTick??entity.lastAttack))elapsed=attackAnimationTime(asset,entity,timeMs);
-   const sample=sampleSpriteAnimation(asset.frames,{timeMs:elapsed,loop:defaultAnimationLoop(asset)});
-   const raster=pipeline.get(asset.id,{state:visualState,direction,timeMs:elapsed,frame:sample.frame});if(!raster.image){recordMissing(asset.id,raster.reason);return false;}
+   const sample=sampleSpriteAnimation(asset.frames,{timeMs:elapsed,loop:['ability','load','unload','build'].includes(visualState)&&typeof entity.visibleAction?.loop==='boolean'?entity.visibleAction.loop:defaultAnimationLoop(asset)});
+   const raster=pipeline.get(asset.id,{state:visualState,direction,timeMs:elapsed,frame:sample.frame});
+   if(!raster.image&&(raster.pending||asset.loadPolicy==='on-demand')&&kind==='unit'&&entity.hp>0&&state!=='death'&&state!=='construction'){
+    // A declared cold page temporarily retains the exact original idle identity, never a new body.
+    const idles=(pipeline.manifest?.assets||[]).filter(a=>a.kind===kind&&families.includes(a.family||a.id)&&a.state==='idle');
+    const idle=idles.find(a=>a.direction===direction)||idles.find(a=>a.direction===0);
+    if(idle){const held=pipeline.get(idle.id,{state:'idle',direction:idle.direction,timeMs:0,frame:0});if(held.image)return {raster:held,visualState:'idle',walkPhase:null,sample:{frame:0,elapsedMs:0},direction:idle.direction,elapsed:0,requestedState,requestedDirection,staticIllustrationFallback:true,presentation:'STATIC_ILLUSTRATION',pagePending:raster.pending===true,pageError:raster.pending?null:raster.reason};}
+   }
+   if(!raster.image){recordMissing(asset.id,raster.reason);return false;}
    return {raster,visualState,walkPhase,sample,direction,elapsed,requestedState,requestedDirection,staticIllustrationFallback,presentation:staticIllustrationFallback?'STATIC_ILLUSTRATION':'AUTHORED'};
   },
   drawEntity(ctx,entity,{project,zoom=1,tick=0,timeMs=tick*50,fortificationTopology}={}) {

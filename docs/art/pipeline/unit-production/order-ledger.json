@@ -1,0 +1,46 @@
+{
+  "schema": "rds-unit-order-ledger/v2",
+  "orders": [
+    {
+      "id": "infantry-D0-walk-existing477",
+      "identity": "infantry",
+      "action": "walk",
+      "direction": 0,
+      "compilerJob": "infantry-original-D0-walk-470",
+      "status": "EXHAUSTED_CLOSED_NO_CALLS",
+      "correctionCap": 2,
+      "correctionsUsed": 2,
+      "correctionOrders": [
+        "474",
+        "475"
+      ],
+      "callsRemaining": 0,
+      "receipts": [
+        {
+          "path": "docs/art/pipeline/infantry-corrected-loop-477/subject.json",
+          "sha256": "f5ead060f1fcbb3cfd656a2bf6127e068a061eaad06dbbdb4fdc5a80829c41f0"
+        },
+        {
+          "path": "docs/art/pipeline/infantry-corrected-loop-477/browser-receipt.json",
+          "sha256": "b58060329477ac4ec28c7d8f7a17350d81792a66274d874327297075d1604116"
+        },
+        {
+          "path": "docs/art/pipeline/infantry-original-loop-470/job.json",
+          "sha256": "fd3be52536555fcd809ca59a2a21de0040f32ec1a2a0f19f6932706fb0af0be3"
+        }
+      ],
+      "motionApproval": false,
+      "worldContactApproval": false,
+      "runtimeInstall": false,
+      "fanoutAuthorized": false,
+      "scope": "Retained eight whole frame candidate; corrected F3from475; technical playback only"
+    }
+  ],
+  "nextDependencies": [
+    "Practical existing477 continuous loop review",
+    "479 actual Move/Pause/Resume/arrival/Stop technical closure; production stride/contact qualification still open",
+    "Missing identity/view locks and weapon ownership locks",
+    "478 presentation episodes implemented; authored ability/load/unload clips and actual scenes missing",
+    "480 opt-in paging implemented; full-target128MiB working-set and encoded lifetime qualification missing"
+  ]
+}

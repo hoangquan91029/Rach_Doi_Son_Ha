@@ -1,0 +1,36 @@
+{
+  "status": "PROVISIONAL_REVIEW_ONLY",
+  "direction": 0,
+  "render": 42,
+  "sourceSquare": 1254,
+  "workingSquare": 256,
+  "projectedWorldUnit": [
+    27,
+    13.5
+  ],
+  "observedApproximateBootPositions256": {
+    "far": [
+      [
+        100,
+        203
+      ],
+      [
+        100,
+        232
+      ]
+    ],
+    "near": [
+      [
+        169,
+        233
+      ],
+      [
+        163,
+        210
+      ]
+    ]
+  },
+  "distancePerCycle": 0.15,
+  "method": "Projection of approximate whole-frame F0/F4 same-boot half-cycle displacements onto engine D0, scaled42/256, doubled; estimate0.14-0.17, not copied from another unit or inferred from gameplay speed",
+  "limitation": "Boot displacement chiefly vertical instead of D0 down-right; cannot establish foot lock or correct timing. Candidate may expose visible sliding or fast cadence; no speed change allowed. Independent review SAMPLES_ONLY, no continuous-motion pass."
+}

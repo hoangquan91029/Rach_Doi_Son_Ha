@@ -1,4 +1,4 @@
-import {visibleVillagerAction} from './visible-action.js';
+import {visibleUnitAction,beginActionEpisode,cancelActionEpisode} from './visible-action.js';
 import {UNITS,BUILDINGS,CHARACTERS,MAPS,TERRAIN,BALANCE,TICK_RATE,SYNERGIES} from './data.js';
 const DT=1/TICK_RATE, sq=(a,b)=>(a.x-b.x)**2+(a.y-b.y)**2, dist=(a,b)=>Math.sqrt(sq(a,b));
 const living=e=>e.hp>0&&!e.embarked;
@@ -159,6 +159,11 @@ function placement(s,p,type,x,y){const d=BUILDINGS[type];if(!bounds(s,x,y)||!ter
 }
 const reject=error=>({ok:false,error});
 export function command(s,p,c){
+ const result=commandImpl(s,p,c);
+ if(result.ok&&['move','attackMove','stop','hold','attack','repair','gather','build','load','unload'].includes(c.type)&&Array.isArray(c.ids))for(const id of c.ids){const e=get(s,id);if(e)cancelActionEpisode(e);}
+ return result;
+}
+function commandImpl(s,p,c){
  if(p!==0&&p!==1)return reject('Invalid player');if(s.winner!==null)return reject('Match finished');if(!c||typeof c!=='object'||Array.isArray(c)||typeof c.type!=='string')return reject('Invalid command');
  if(c.type==='surrender'){s.winner=1-p;s.reason='Surrender';event(s,`${s.players[p].name} surrendered`);return {ok:true};}
  if(c.type==='cancel'){
@@ -208,12 +213,13 @@ export function command(s,p,c){
  if(c.type==='ability'){
   if(es.some(e=>!e.character||e.abilityCooldown>0))return reject('Ability unavailable');
   for(const e of es){const a=CHARACTERS[e.character].ability;if(a.kind==='riverTrap'&&!s.map.tiles.some((t,i)=>TERRAIN[t]?.water&&Math.abs(i%s.map.width+0.5-e.x)<=5&&Math.abs(Math.floor(i/s.map.width)+0.5-e.y)<=5))return reject('Prepare this ability near a river, ford or coast');}
-  for(const e of es){const a=CHARACTERS[e.character].ability;e.abilityCooldown=a.cooldown*TICK_RATE;s.effects.push({owner:p,source:e.id,kind:a.kind,x:e.x,y:e.y,radius:a.kind==='riverTrap'?5:9,until:s.tick+a.duration*TICK_RATE,global:['mobilize','fiscal','network'].includes(a.kind)});if(a.kind==='shock')for(const u of s.entities.filter(u=>u.owner===p&&living(u)&&u.kind==='unit'&&dist(e,u)<9))u.food=Math.max(0,u.food-8);s.players[p].stats.abilities++;event(s,`${a.name} activated`,p);}return {ok:true};
+  for(const e of es){const a=CHARACTERS[e.character].ability;e.abilityCooldown=a.cooldown*TICK_RATE;beginActionEpisode(s,e,'ability');s.effects.push({owner:p,source:e.id,kind:a.kind,x:e.x,y:e.y,radius:a.kind==='riverTrap'?5:9,until:s.tick+a.duration*TICK_RATE,global:['mobilize','fiscal','network'].includes(a.kind)});if(a.kind==='shock')for(const u of s.entities.filter(u=>u.owner===p&&living(u)&&u.kind==='unit'&&dist(e,u)<9))u.food=Math.max(0,u.food-8);s.players[p].stats.abilities++;event(s,`${a.name} activated`,p);}return {ok:true};
  }
  return reject('Unknown command');
 }
 function cancelAttack(e){delete e.pendingAttack;delete e.attackStartedTick;delete e.attackImpactTick;delete e.attackCueKind;}
 function hurt(s,e,damage,attacker){
+ cancelActionEpisode(e);
  if(e.hp<=0||s.winner!==null)return;e.hp=Math.max(0,e.hp-damage);e.hitUntil=s.tick+5;e.morale=Math.max(5,e.morale-damage*0.13);
  if(e.type==='general'&&s.tick%20<2)event(s,e.hp/e.maxHp<0.3?'GENERAL LOW HP':'GENERAL UNDER ATTACK',e.owner);
  if(e.hp>0)return;s.crowdIndex=null;cancelAttack(e);e.state='death';e.deadTick=s.tick;e.order=null;e.path=[];s.players[e.owner].stats.lost++;
@@ -225,6 +231,7 @@ function hurt(s,e,damage,attacker){
  if(e.type==='general'){s.winner=1-e.owner;s.reason='Enemy General defeated';event(s,`${s.players[e.owner].name}'s General has fallen`);}
 }
 function attack(s,e,t){
+ cancelActionEpisode(e);
  const d=UNITS[e.type]||BUILDINGS[e.type],range=d.range+(TERRAIN[tile(s,e.x,e.y)]?.range||0);
  if(e.pendingAttack)return true;
  if(dist(e,t)>range+0.25){if(e.kind==='unit'&&e.order?.type!=='hold')travel(s,e,t,range);return false;}
@@ -276,21 +283,21 @@ function transfer(s,e,t,kind){
  if(e.type==='wagon'){
   if(!stores(t)){e.order=null;return;}if(travel(s,e,t,BUILDINGS[t.type].radius+1.1)){
    const source=kind==='load'?t:e,dest=kind==='load'?e:t,capacity=kind==='load'?UNITS.wagon.capacity:BUILDINGS[t.type].capacity,n=Math.min(source.cargo.food,capacity-dest.cargo.food,40*DT);
-   if(n>0){source.cargo.food-=n;dest.cargo.food+=n;if(kind==='unload')s.players[e.owner].stats.foodTransported+=n;}e.state=kind==='load'?'carry':'idle';if(n<=1e-8)e.order=null;
+   if(n>0){beginActionEpisode(s,e,kind,{continuous:true});source.cargo.food-=n;dest.cargo.food+=n;if(kind==='unload')s.players[e.owner].stats.foodTransported+=n;}e.state=kind==='load'?'carry':'idle';if(n<=1e-8)e.order=null;
   }return;
  }
  if(kind==='load'){
-  if(!t||t.embarked||t.kind!=='unit'||UNITS[t.type].naval){e.order=null;return;}if(travel(s,e,t,2.6)&&dist(e,t)<=2.6){if(e.cargo.units.length<UNITS.transport.capacity){cancelAttack(t);t.embarked=e.id;s.crowdIndex=null;t.order=null;t.path=[];e.cargo.units.push(t.id);}e.order=null;}
+  if(!t||t.embarked||t.kind!=='unit'||UNITS[t.type].naval){e.order=null;return;}if(travel(s,e,t,2.6)&&dist(e,t)<=2.6){if(e.cargo.units.length<UNITS.transport.capacity){cancelAttack(t);cancelActionEpisode(t);t.embarked=e.id;s.crowdIndex=null;t.order=null;t.path=[];e.cargo.units.push(t.id);beginActionEpisode(s,e,'load');}e.order=null;}
  }else{
   const candidates=[];for(let y=Math.floor(e.y)-3;y<=Math.floor(e.y)+3;y++)for(let x=Math.floor(e.x)-3;x<=Math.floor(e.x)+3;x++)if(pass(s,{type:'villager',owner:e.owner},x+.5,y+.5)&&dist(e,{x:x+.5,y:y+.5})<=3)candidates.push({x:x+.5,y:y+.5});
-  const remaining=[];for(const id of e.cargo.units){const u=get(s,id);if(!u)continue;const spot=candidates.find(q=>admissionClear(s,u,q.x,q.y));if(!spot){remaining.push(id);continue;}u.x=spot.x;u.y=spot.y;u.embarked=null;u.state='idle';s.crowdIndex=null;}e.cargo.units=remaining;if(!remaining.length)e.order=null;
+  const remaining=[];for(const id of e.cargo.units){const u=get(s,id);if(!u)continue;const spot=candidates.find(q=>admissionClear(s,u,q.x,q.y));if(!spot){remaining.push(id);continue;}u.x=spot.x;u.y=spot.y;u.embarked=null;u.state='idle';beginActionEpisode(s,e,'unload');s.crowdIndex=null;}e.cargo.units=remaining;if(!remaining.length)e.order=null;
 
  }
 }
 function admissionClear(s,e,x,y){if(!pass(s,e,x,y))return false;return !s.entities.some(u=>u.id!==e.id&&u.kind==='unit'&&living(u)&&!!UNITS[u.type]?.naval===!!UNITS[e.type]?.naval&&Math.hypot(u.x-x,u.y-y)<crowdRadius(e)+crowdRadius(u)-1e-8);}
 function spawnPoint(s,b,type){const e={type,owner:b.owner};let best=null;for(let r=1;r<=4&&!best;r++)for(let y=-r;y<=r&&!best;y++)for(let x=-r;x<=r&&!best;x++){if(Math.abs(x)!==r&&Math.abs(y)!==r)continue;const xx=Math.floor(b.x)+x+0.5,yy=Math.floor(b.y)+y+0.5;if(admissionClear(s,e,xx,yy))best={x:xx,y:yy};}return best;}
 function tickBuilding(s,b){
- if(b.construction){const u=get(s,b.construction.builder);if(u&&u.order?.type==='build'&&u.order.target===b.id&&dist(u,b)<=BUILDINGS[b.type].radius+1.4){const amount=DT*(active(s,u,'restore')?2:1);b.construction.remaining-=amount;b.hp=Math.min(b.maxHp,b.hp+b.maxHp*0.88/b.construction.total*amount);u.state='build';if(b.construction.remaining<=0){b.construction=null;b.hp=b.maxHp;u.order=null;event(s,`${BUILDINGS[b.type].name} completed`,b.owner);}}return;}
+ if(b.construction){const u=get(s,b.construction.builder);if(u&&u.order?.type==='build'&&u.order.target===b.id&&dist(u,b)<=BUILDINGS[b.type].radius+1.4){const amount=DT*(active(s,u,'restore')?2:1);b.construction.remaining-=amount;beginActionEpisode(s,u,'build',{continuous:true});b.hp=Math.min(b.maxHp,b.hp+b.maxHp*0.88/b.construction.total*amount);u.state='build';if(b.construction.remaining<=0){b.construction=null;b.hp=b.maxHp;u.order=null;event(s,`${BUILDINGS[b.type].name} completed`,b.owner);}}return;}
  if(b.queue.length){const q=b.queue[0];q.remaining=Math.max(0,q.remaining-DT*(active(s,b,'mobilize')?2:1));if(q.remaining===0){const spot=spawnPoint(s,b,q.unit);if(spot){add(s,b.owner,q.unit,spot.x,spot.y);b.queue.shift();}}}
  if(b.type==='residence')for(const u of s.entities)if(u.owner===b.owner&&u.kind==='unit'&&living(u)&&dist(u,b)<=BUILDINGS.residence.healRadius)u.hp=Math.min(u.maxHp,u.hp+BUILDINGS.residence.heal*s.players[b.owner].modifiers.heal*DT);
  if(BUILDINGS[b.type].damage){const t=nearestEnemy(s,b,BUILDINGS[b.type].range);if(t)attack(s,b,t);}
@@ -306,14 +313,14 @@ function tickUnit(s,e){
  for(const f of s.effects)if(f.kind==='riverTrap'&&f.owner!==e.owner&&f.until>s.tick&&dist(e,f)<f.radius&&TERRAIN[tile(s,e.x,e.y)]?.water)hurt(s,e,7*DT,{owner:f.owner});
  if(!living(e))return;if(e.pendingAttack){e.state='attack';return;}const previous={x:e.x,y:e.y},o=e.order;e.state='idle';
  if(o?.type==='build'){const b=get(s,o.target);if(!b||!b.construction)e.order=null;else travel(s,e,b,BUILDINGS[b.type].radius+1.25);}
- else if(o?.type==='repair'){const b=get(s,o.target);if(!b||b.hp>=b.maxHp)e.order=null;else if(travel(s,e,b,BUILDINGS[b.type].radius+1.25)){const n=Math.min(b.maxHp-b.hp,6*DT,s.players[e.owner].resources.wood*5);if(n>0){b.hp+=n;s.players[e.owner].resources.wood-=n/5;e.state='build';}}}
+ else if(o?.type==='repair'){const b=get(s,o.target);if(!b||b.hp>=b.maxHp)e.order=null;else if(travel(s,e,b,BUILDINGS[b.type].radius+1.25)){const n=Math.min(b.maxHp-b.hp,6*DT,s.players[e.owner].resources.wood*5);if(n>0){beginActionEpisode(s,e,'build',{continuous:true});b.hp+=n;s.players[e.owner].resources.wood-=n/5;e.state='build';}}}
  else if(o?.type==='gather')gather(s,e,s.map.resources.find(r=>r.id===o.target));
  else if(o?.type==='load'||o?.type==='unload'){const t=get(s,o.target);if(!t)e.order=null;else transfer(s,e,t,o.type);}
  else if(o?.type==='attack'){const t=get(s,o.target);if(!t)e.order=null;else if(visible(s,e.owner,t)){o.lastX=t.x;o.lastY=t.y;attack(s,e,t);}else if(travel(s,e,{x:o.lastX,y:o.lastY},0.8))e.order=null;}
  else if(o?.type==='move'){if(travel(s,e,o,0.7,true))e.order=null;}
  else if(o?.type==='attackMove'){const t=d.damage?nearestEnemy(s,e,Math.min(d.vision,7)):null;if(t)attack(s,e,t);else if(travel(s,e,o,0.7,true))e.order=null;}
  else if(d.damage>0&&e.type!=='villager'&&e.type!=='king'){const t=nearestEnemy(s,e,o?.type==='hold'||e.type==='general'?d.range:6);if(t)attack(s,e,t);}
- if(e.x!==previous.x||e.y!==previous.y)e.lastMovedTick=s.tick;
+ if(e.x!==previous.x||e.y!==previous.y){e.lastMovedTick=s.tick;cancelActionEpisode(e);}
 }
 function navalSortie(s,p,own,army){
  const ai=s.players[p].ai,spawn=s.map.spawns[p],enemySpawn=s.map.spawns[1-p],shore={x:spawn.x,y:39.5},landing={x:enemySpawn.x,y:40.5};
@@ -400,7 +407,7 @@ export function step(s){
 }
 export function view(s,p){
  if(p!==0&&p!==1)throw new Error('Invalid viewer');updateFog(s);const result={tick:s.tick,map:{id:s.map.id,name:s.map.name,width:s.map.width,height:s.map.height,tiles:[...s.map.tiles],resources:s.map.resources.map(r=>s.fog[p].resources[r.id]).filter(Boolean).map(clone)},players:s.players.map(player=>({id:player.id,name:player.name,king:player.king,general:player.general,resources:player.id===p?clone(player.resources):{wood:0,food:0,iron:0},population:player.id===p?player.population:0,populationCap:BALANCE.populationCap,synergies:player.synergies,stats:player.id===p||s.winner!==null?clone(player.stats):undefined})),entities:[],winner:s.winner,reason:s.reason,events:s.events.filter(e=>e.owner===null||e.owner===p).map(e=>e.text),fog:clone(s.fog[p]),effects:s.effects.filter(f=>f.owner===p||s.fog[p].visible[Math.floor(f.y)*s.map.width+Math.floor(f.x)]).map(clone)};
- for(const e of s.entities){if(e.owner!==p&&!visible(s,p,e))continue;const {tempoConsumed,path,pathKey,retryPath,order,pendingAttack,gatherEpisode,crowdRoute,crowdGoal,crowdRetry,...publicEntity}=e;const v=clone(publicEntity);if(e.kind==='building')v.underConstruction=Boolean(e.construction);const visibleAction=visibleVillagerAction(s,e);if(visibleAction)v.visibleAction=visibleAction;if(e.owner===p)v.order=order?clone(order):null;else{v.queue=[];v.cargo={food:0,wood:0,iron:0,units:[]};delete v.abilityCooldown;delete v.construction;}result.entities.push(v);}
+ for(const e of s.entities){if(e.owner!==p&&!visible(s,p,e))continue;const {tempoConsumed,path,pathKey,retryPath,order,pendingAttack,gatherEpisode,actionEpisode,crowdRoute,crowdGoal,crowdRetry,...publicEntity}=e;const v=clone(publicEntity);if(e.kind==='building')v.underConstruction=Boolean(e.construction);const visibleAction=visibleUnitAction(s,e);if(visibleAction)v.visibleAction=visibleAction;if(e.owner===p)v.order=order?clone(order):null;else{v.queue=[];v.cargo={food:0,wood:0,iron:0,units:[]};delete v.abilityCooldown;delete v.construction;}result.entities.push(v);}
  return result;
 }
 export function hashState(s){let hash=2166136261;const text=JSON.stringify(s);for(let i=0;i<text.length;i++){hash^=text.charCodeAt(i);hash=Math.imul(hash,16777619);}return (hash>>>0).toString(16).padStart(8,'0');}

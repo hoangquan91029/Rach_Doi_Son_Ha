@@ -1,0 +1,29 @@
+# Whole-frame compiler 471
+
+This offline packaging tool preserves pinned whole RGBA frames. It performs no image generation, pose changes, runtime installation or visual approval. This framework is not evidence that any motion passes review.
+
+Run `python3 scripts/sprite-production.py /absolute/path/job.json --mode diagnostic` from the repository. Pillow must already be available. `job.schema.json` describes the input contract; the compiler checks cross-field invariants and decoded image custody. `job.example.json` is a template with deliberately invalid placeholder hashes and missing files, not an accepted infantry cycle.
+
+- `diagnostic` accepts explicitly candidate, held or selected frames and records every status.
+- `selected` requires each frame to be selected and have an explicit custody reference.
+- `production` additionally requires a SHA-pinned JSON qualification record binding `status: qualified`, `masterSHA`, `family`, `action`, `direction` and ordered `frameSHAs` to this exact cycle. Walk requires a positive `distancePerCycle` in both job locomotion and record, and `measurementRecord` referring to that record.
+
+Every mode emits a CANDIDATE runtime descriptor and a receipt with `visualApproval: false` and `installAuthorized: false`. Production mode verifies declared evidence, not the truth of a visual or world-contact judgment. Promotion remains a separate owner process.
+
+The source canvas must be square and identical for every frame. The pivot is declared once in original source coordinates; logical render size must remain square. Whole-frame Lanczos resizes independently produce 256-square working images and direct-from-raw 128-square runtime cells. No crop, fit, mirror, warp, per-frame pivot, or shadow compositing occurs. The atlas uses a fixed 132-square slot with two transparent padding pixels on each edge, up to 15 columns. A separate shadow asset is required and must be provided by the eventual manifest owner.
+
+`asset.json` matches the current runtime `validateAsset` contract, includes original source paths with encoded/decoded RGBA SHA256 pins, and uses the manifest-relative `atlas.png`. `receipt.json` records master/job/output pins and decoded memory. The sum of the new atlas and unique supplied `otherDecodedPages` keyed by path plus SHA must fit 128 MiB. Those pages are budget declarations; this command does not load or install a bank. Do not omit actual retained pages when preparing a release. Fixed cell packing is mandatory; exceeding budget fails rather than shrinking or repacking units.
+
+Output is staged in a sibling temporary directory and must be a new directory. Existing outputs are refused; source files are read only. The source path is retained in the descriptor for custody, so package owners must retain those sources. The compiler never grants renderer approval based on packaging success.
+
+Run `node --test tests/sprite-production471.test.js` for synthetic packaging checks, including the actual JavaScript schema validator and existing Python decoded-pixel validator. Synthetic frames test custody and geometry only, not animation quality.
+
+Action timing is explicit: `loop` accepts a boolean override and defaults to true only for idle, walk, gather, build and carry. Death must remain nonlooping with total duration at most 4000 ms. Frame `events` retain validated uppercase names and offsets strictly inside their frame. Production attack requires exactly one impact marker recognized by the existing runtime: `WEAPON_CONTACT`, `FIRE_PROJECTILE` or `DEAL_DAMAGE`. `layout.columns` can override packing with 1–15 fixed columns. Optional walk locomotion in diagnostic/selected mode is labeled `PROVISIONAL`; production distance is bound to the qualified measurement record.
+
+Each new output also contains `contact-sheet.png`, whole-frame `game-size.png` (APNG where multiple decoded frames differ), `master-preview.png`, and a generic `preview.html`. Serve that output directory over HTTP to use the preview. It reads actual descriptor rectangles/durations and uses a fixed whole-canvas display size of `render.width × previewZoom` (default 1.68). Pause/Play and `window.previewState` expose ready, seen frame indices, cycles, errors, running and elapsed milliseconds for read-only observation. Original identity, F0 and motion appear side by side, labeled candidate with world contact open. These exports provide a review surface, never a visual pass. Receipt output pins use relative paths, including every distinct working frame.
+
+New jobs use schema version 2 and must declare `loop` explicitly, including ability, load, unload, build and work actions. Version 1 remains readable for sealed historical jobs with its documented legacy defaults. Atlas dimensions must each be at most 2048 pixels; fixed 132-pixel slots permit at most 15 columns/rows. Oversized cycles must be split into independently reviewed jobs rather than changing scale.
+
+Optional `previewBank` is a list of up to eight `{path, sha256}` descriptor pins. Compilation verifies each descriptor and runtime PNG encoded SHA, shared `identityMasterSHA`, family/action, source canvas, pivot and render size, and unique directions. The generic HTML exposes a direction selector and loads each descriptor's own rectangles and timing. It is a read-only review bank; switching directions does not modify simulation or qualify artwork. To serve sibling bank paths, serve their common parent directory. Current-direction duplicates are omitted from the selector.
+
+The generic preview includes eight simultaneous direction cells sharing one playback clock. Missing directions are explicitly missing; no mirroring or idle substitution. Descriptor durations and loop flags remain individual. CSS size preserves the exact logical render × zoom even when backing pixels are rounded.

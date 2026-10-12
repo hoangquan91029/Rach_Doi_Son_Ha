@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 2,
+  "id": "infantry-walk-d0-example",
+  "family": "infantry",
+  "action": "walk",
+  "direction": 0,
+  "master": {
+    "path": "original.png",
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "rgbaSha256": "0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "masterSHA": "0000000000000000000000000000000000000000000000000000000000000000",
+  "fixedCanvas": {
+    "width": 1254,
+    "height": 1254
+  },
+  "pivot": {
+    "space": "source",
+    "x": 653,
+    "y": 1057
+  },
+  "render": {
+    "width": 42,
+    "height": 42
+  },
+  "cell": {
+    "width": 128,
+    "height": 128
+  },
+  "contactShadow": {
+    "mode": "separate",
+    "assetId": "unit-shadow"
+  },
+  "frameCount": 2,
+  "frames": [
+    {
+      "input": {
+        "path": "frame-0.png",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "rgbaSha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "status": "held",
+      "phase": 0.0,
+      "durationMs": 150
+    },
+    {
+      "input": {
+        "path": "frame-1.png",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "rgbaSha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "status": "held",
+      "phase": 0.5,
+      "durationMs": 150
+    }
+  ],
+  "callBudget": {
+    "limit": 0,
+    "used": 0
+  },
+  "output": {
+    "directory": "diagnostic-output",
+    "runtimePath": "atlas.png"
+  },
+  "loop": true
+}

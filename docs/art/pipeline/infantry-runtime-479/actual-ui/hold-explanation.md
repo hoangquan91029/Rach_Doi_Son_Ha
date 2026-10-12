@@ -1,0 +1,1 @@
+Original attempt stopped before any move order: harness proposed8world units although unit vision is7. Exact visible-path assertion failed; no gameplay failure inferred. Next finite attempt uses6units with all same actual fog/terrain/footprint/ownership guards and unchanged sealed source/build. Original receipt/harness retained.

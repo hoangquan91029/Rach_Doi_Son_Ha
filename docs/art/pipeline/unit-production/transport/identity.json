@@ -1,0 +1,155 @@
+{
+  "schema": "rds-unit-identity/v1",
+  "identity": "transport",
+  "families": [
+    "transport",
+    "unit.transport"
+  ],
+  "roles": [
+    "transport"
+  ],
+  "master": {
+    "assetId": "transport-idle-d0-447",
+    "direction": 0,
+    "path": "docs/art/units/transport-identity-447/working-256.png",
+    "sha256": "88be0e796dddf70c16e29501ea13ea7fc093bede0c67e05eba67394a7e2c6b0b",
+    "rgbaSha256": "1682a54cb88c0ab5b204ad1a604423c9d00764528b14bfbe810ad96f191320be",
+    "status": "existing source custody; no new view or motion approval"
+  },
+  "views": [
+    {
+      "direction": 0,
+      "source": {
+        "assetId": "transport-idle-d0-447",
+        "direction": 0,
+        "path": "docs/art/units/transport-identity-447/working-256.png",
+        "sha256": "88be0e796dddf70c16e29501ea13ea7fc093bede0c67e05eba67394a7e2c6b0b",
+        "rgbaSha256": "1682a54cb88c0ab5b204ad1a604423c9d00764528b14bfbe810ad96f191320be",
+        "status": "existing source custody; no new view or motion approval"
+      },
+      "status": "existing static source"
+    },
+    {
+      "direction": 1,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 2,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 3,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 4,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 5,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 6,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 7,
+      "source": null,
+      "status": "missing"
+    }
+  ],
+  "actions": [
+    {
+      "action": "idle",
+      "alias": false,
+      "applicable": true,
+      "frames": 4,
+      "roles": [
+        "transport"
+      ],
+      "requiresSeparatePoses": false
+    },
+    {
+      "action": "walk",
+      "alias": false,
+      "applicable": true,
+      "frames": 8,
+      "roles": [
+        "transport"
+      ],
+      "requiresSeparatePoses": false
+    },
+    {
+      "action": "load",
+      "alias": false,
+      "applicable": true,
+      "frames": 8,
+      "roles": [
+        "transport"
+      ],
+      "requiresSeparatePoses": true
+    },
+    {
+      "action": "unload",
+      "alias": false,
+      "applicable": true,
+      "frames": 8,
+      "roles": [
+        "transport"
+      ],
+      "requiresSeparatePoses": true
+    },
+    {
+      "action": "hit",
+      "alias": false,
+      "applicable": true,
+      "frames": 4,
+      "roles": [
+        "transport"
+      ],
+      "requiresSeparatePoses": false
+    },
+    {
+      "action": "death",
+      "alias": false,
+      "applicable": true,
+      "frames": 8,
+      "roles": [
+        "transport"
+      ],
+      "requiresSeparatePoses": false
+    }
+  ],
+  "invariants": [
+    "Preserve whole original identity; no role art substitution"
+  ],
+  "excludedReferences": [],
+  "review": "No new approval inferred from registry",
+  "runtime": "Active manifest presence only",
+  "release": "No promotion authorization",
+  "camera": {
+    "label": "dimetric 2:1 ground projection; fixed whole original elevated camera; no independent camera fit",
+    "screenFacing": [
+      "ESE",
+      "South",
+      "WSW",
+      "West",
+      "WNW",
+      "North",
+      "ENE",
+      "East"
+    ],
+    "basis": "shared/sim.js atan2 eight world octants; screen x=(worldX-worldY), y=(worldX+worldY)/2; labels describe projected vector"
+  },
+  "weaponOwnership": null,
+  "allowedReferences": [],
+  "excludedReferencePaths": [],
+  "masterAuthority": "retained derived source; original master verification pending"
+}

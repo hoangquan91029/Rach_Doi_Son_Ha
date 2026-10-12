@@ -1,0 +1,145 @@
+{
+  "schema": "rds-unit-identity/v1",
+  "identity": "artillery",
+  "families": [
+    "artillery",
+    "unit.artillery"
+  ],
+  "roles": [
+    "artillery"
+  ],
+  "master": {
+    "assetId": "artillery-idle-d0-409",
+    "direction": 0,
+    "path": "docs/art/units/artillery-idle-409/working-256.png",
+    "sha256": "98fbeb9b2a92ec276beac293ec62c5562f07bdecb96d8e4f293753b4c18fba9d",
+    "rgbaSha256": "628b93a4d30501424d83d0960fb7da1fabf4e3d9e2fd3b540a0f5969eca6b281",
+    "status": "existing source custody; no new view or motion approval"
+  },
+  "views": [
+    {
+      "direction": 0,
+      "source": {
+        "assetId": "artillery-idle-d0-409",
+        "direction": 0,
+        "path": "docs/art/units/artillery-idle-409/working-256.png",
+        "sha256": "98fbeb9b2a92ec276beac293ec62c5562f07bdecb96d8e4f293753b4c18fba9d",
+        "rgbaSha256": "628b93a4d30501424d83d0960fb7da1fabf4e3d9e2fd3b540a0f5969eca6b281",
+        "status": "existing source custody; no new view or motion approval"
+      },
+      "status": "existing static source"
+    },
+    {
+      "direction": 1,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 2,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 3,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 4,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 5,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 6,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 7,
+      "source": null,
+      "status": "missing"
+    }
+  ],
+  "actions": [
+    {
+      "action": "idle",
+      "alias": false,
+      "applicable": true,
+      "frames": 4,
+      "roles": [
+        "artillery"
+      ],
+      "requiresSeparatePoses": false
+    },
+    {
+      "action": "walk",
+      "alias": false,
+      "applicable": true,
+      "frames": 8,
+      "roles": [
+        "artillery"
+      ],
+      "requiresSeparatePoses": false
+    },
+    {
+      "action": "attack",
+      "alias": false,
+      "applicable": true,
+      "frames": 8,
+      "roles": [
+        "artillery"
+      ],
+      "requiresSeparatePoses": false
+    },
+    {
+      "action": "hit",
+      "alias": false,
+      "applicable": true,
+      "frames": 4,
+      "roles": [
+        "artillery"
+      ],
+      "requiresSeparatePoses": false
+    },
+    {
+      "action": "death",
+      "alias": false,
+      "applicable": true,
+      "frames": 8,
+      "roles": [
+        "artillery"
+      ],
+      "requiresSeparatePoses": false
+    }
+  ],
+  "invariants": [
+    "Preserve whole original identity; no role art substitution"
+  ],
+  "excludedReferences": [],
+  "review": "No new approval inferred from registry",
+  "runtime": "Active manifest presence only",
+  "release": "No promotion authorization",
+  "camera": {
+    "label": "dimetric 2:1 ground projection; fixed whole original elevated camera; no independent camera fit",
+    "screenFacing": [
+      "ESE",
+      "South",
+      "WSW",
+      "West",
+      "WNW",
+      "North",
+      "ENE",
+      "East"
+    ],
+    "basis": "shared/sim.js atan2 eight world octants; screen x=(worldX-worldY), y=(worldX+worldY)/2; labels describe projected vector"
+  },
+  "weaponOwnership": null,
+  "allowedReferences": [],
+  "excludedReferencePaths": [],
+  "masterAuthority": "retained derived source; original master verification pending"
+}

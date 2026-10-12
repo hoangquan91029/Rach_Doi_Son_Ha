@@ -1,0 +1,171 @@
+{
+  "id": "infantry-original-D0-walk-470",
+  "family": "infantry",
+  "kind": "unit",
+  "state": "walk",
+  "direction": 0,
+  "source": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/units/sources/infantry-neutral-se-refine-01-imagegen-raw.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+    "rgbaSha256": "0fdc9a92dab8aa2c420c764ff0808977daec9f4133eda860cdebc18e67463179"
+  },
+  "runtime": {
+    "path": "atlas.png",
+    "width": 528,
+    "height": 264,
+    "sha256": "e467c851fe26c4c005210b41f4e45f0100f835f2507ec60b4f87068b03505c2f",
+    "rgbaSha256": "ba9f3d39f718483a1196c5078c99c34f27d5a782ee44f3b8a71032124332b5a7",
+    "derivation": {
+      "method": "atlas",
+      "filter": "lanczos",
+      "sourceSha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f"
+    }
+  },
+  "cell": {
+    "width": 128,
+    "height": 128
+  },
+  "pivot": {
+    "x": 653,
+    "y": 1057,
+    "space": "source"
+  },
+  "render": {
+    "width": 42,
+    "height": 42
+  },
+  "contactShadow": {
+    "mode": "separate",
+    "assetId": "unit-contact-shadow"
+  },
+  "alphaPolicy": "transparent",
+  "frames": [
+    {
+      "x": 2,
+      "y": 2,
+      "width": 128,
+      "height": 128,
+      "durationMs": 90,
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/units/sources/infantry-neutral-se-refine-01-imagegen-raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+        "rgbaSha256": "0fdc9a92dab8aa2c420c764ff0808977daec9f4133eda860cdebc18e67463179"
+      },
+      "events": []
+    },
+    {
+      "x": 134,
+      "y": 2,
+      "width": 128,
+      "height": 128,
+      "durationMs": 90,
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/units/infantry-inbetweens-469/F1-raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "147bbadbaf5a55c7beb022429ff03bb08adf00e7c13aa02e7b767dddcb691f3b",
+        "rgbaSha256": "bc3681789fa691f24f99ad4f52c9f78c5c96fb5ab7c91c4b0f44930390238abb"
+      },
+      "events": []
+    },
+    {
+      "x": 266,
+      "y": 2,
+      "width": 128,
+      "height": 128,
+      "durationMs": 90,
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/units/infantry-passing-keys-468/F2-raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "8ea6f3e944166e57ced56124912eed9620395edfb4178c3e3041fdc3f6c4cef6",
+        "rgbaSha256": "634ff2cb39f60ef06097b8831cfa8d6ca06436a3aa5cdc4808593c2bdf2a85af"
+      },
+      "events": []
+    },
+    {
+      "x": 398,
+      "y": 2,
+      "width": 128,
+      "height": 128,
+      "durationMs": 90,
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/units/infantry-F3-correction-475/raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "26386bca78e68ae3f4e5f93430cb748efaa8e1b16eb16ba6bd75b86064f26002",
+        "rgbaSha256": "665c788e74322877823491eedeebe8b25b98be54cc0ffe96127dcfd6a8c6820a"
+      },
+      "events": []
+    },
+    {
+      "x": 2,
+      "y": 134,
+      "width": 128,
+      "height": 128,
+      "durationMs": 90,
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/units/infantry-opposite-contact-465/raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "d1aa33b30c884fcaa30a756bb555eac49b00ffa2f2b8760a00c89136fbb6df2a",
+        "rgbaSha256": "87e64ead3ee5d0177742af4a97d64bd7e29eec41ef21e48bb0d2898e6979af32"
+      },
+      "events": []
+    },
+    {
+      "x": 134,
+      "y": 134,
+      "width": 128,
+      "height": 128,
+      "durationMs": 90,
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/units/infantry-inbetweens-469/F5-raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "dd4a426127b59d65f0d1a89f472541e8428c9a228e58273811b91aa80cfb1c3a",
+        "rgbaSha256": "1919ba48dbc47b0f0ca24f2169cbb933f37f629beb0201970329b86e3759a7a8"
+      },
+      "events": []
+    },
+    {
+      "x": 266,
+      "y": 134,
+      "width": 128,
+      "height": 128,
+      "durationMs": 90,
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/units/infantry-passing-keys-468/F6-raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "58334157ab152d3f3dc7d237de9bb943b2d72f50528a8471cadfe1e908797294",
+        "rgbaSha256": "e29f7fe124ff2138d44b6559d934206adb2e53eee0fcb2bcd0e39597628e092c"
+      },
+      "events": []
+    },
+    {
+      "x": 398,
+      "y": 134,
+      "width": 128,
+      "height": 128,
+      "durationMs": 90,
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/units/infantry-inbetweens-469/F7-raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "5094c3e0e92b0fcc0e3eae5ab9e99361503e69a4b65bfe35a7371ee4c104598f",
+        "rgbaSha256": "f1e282b6d2132d66c8dbdc02b6a44a16727cdc004909af3319aa61bbf0304128"
+      },
+      "events": []
+    }
+  ],
+  "candidate": true,
+  "review": {
+    "status": "CANDIDATE"
+  },
+  "loop": true
+}

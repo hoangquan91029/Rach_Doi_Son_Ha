@@ -1,0 +1,383 @@
+{
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": 2
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_.-]{1,120}$"
+    },
+    "family": {
+      "type": "string",
+      "minLength": 1
+    },
+    "action": {
+      "type": "string",
+      "minLength": 1
+    },
+    "direction": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 7
+    },
+    "master": {
+      "type": "object",
+      "properties": {
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "rgbaSha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      },
+      "required": [
+        "path",
+        "sha256",
+        "rgbaSha256"
+      ]
+    },
+    "masterSHA": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "fixedCanvas": {
+      "type": "object",
+      "properties": {
+        "width": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 16384
+        },
+        "height": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 16384
+        }
+      },
+      "required": [
+        "width",
+        "height"
+      ]
+    },
+    "pivot": {
+      "type": "object",
+      "properties": {
+        "space": {
+          "const": "source"
+        },
+        "x": {
+          "type": "number",
+          "minimum": 0
+        },
+        "y": {
+          "type": "number",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "space",
+        "x",
+        "y"
+      ]
+    },
+    "render": {
+      "type": "object",
+      "properties": {
+        "width": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "height": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        }
+      },
+      "required": [
+        "width",
+        "height"
+      ]
+    },
+    "cell": {
+      "const": {
+        "width": 128,
+        "height": 128
+      }
+    },
+    "contactShadow": {
+      "type": "object",
+      "properties": {
+        "mode": {
+          "const": "separate"
+        },
+        "assetId": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "mode",
+        "assetId"
+      ]
+    },
+    "frameCount": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 256
+    },
+    "frames": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 256,
+      "items": {
+        "type": "object",
+        "properties": {
+          "input": {
+            "type": "object",
+            "properties": {
+              "path": {
+                "type": "string",
+                "minLength": 1
+              },
+              "sha256": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              },
+              "rgbaSha256": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              }
+            },
+            "required": [
+              "path",
+              "sha256",
+              "rgbaSha256"
+            ]
+          },
+          "status": {
+            "enum": [
+              "candidate",
+              "held",
+              "selected"
+            ]
+          },
+          "phase": {
+            "type": "number",
+            "minimum": 0,
+            "exclusiveMaximum": 1
+          },
+          "durationMs": {
+            "type": "number",
+            "exclusiveMinimum": 0,
+            "maximum": 60000
+          },
+          "custody": {
+            "type": "string",
+            "minLength": 1
+          },
+          "events": {
+            "type": "array",
+            "maxItems": 32,
+            "items": {
+              "type": "object",
+              "required": [
+                "name",
+                "offsetMs"
+              ],
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "pattern": "^[A-Z][A-Z0-9_]{0,63}$"
+                },
+                "offsetMs": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "input",
+          "status",
+          "phase",
+          "durationMs"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "callBudget": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "used": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "limit",
+        "used"
+      ]
+    },
+    "output": {
+      "type": "object",
+      "properties": {
+        "directory": {
+          "type": "string",
+          "minLength": 1
+        },
+        "runtimePath": {
+          "const": "atlas.png"
+        }
+      },
+      "required": [
+        "directory",
+        "runtimePath"
+      ]
+    },
+    "qualification": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "const": "qualified"
+        },
+        "record": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      },
+      "required": [
+        "status",
+        "record",
+        "sha256"
+      ]
+    },
+    "locomotion": {
+      "type": "object",
+      "properties": {
+        "distancePerCycle": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "measurementRecord": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "distancePerCycle"
+      ]
+    },
+    "otherDecodedPages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "width": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "height": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "required": [
+          "path",
+          "sha256",
+          "width",
+          "height"
+        ]
+      }
+    },
+    "loop": {
+      "type": "boolean"
+    },
+    "layout": {
+      "type": "object",
+      "required": [
+        "columns"
+      ],
+      "properties": {
+        "columns": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 15
+        }
+      },
+      "additionalProperties": false
+    },
+    "previewZoom": {
+      "type": "number",
+      "exclusiveMinimum": 0,
+      "maximum": 8
+    },
+    "previewBank": {
+      "type": "array",
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "required": [
+          "path",
+          "sha256"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "id",
+    "family",
+    "action",
+    "direction",
+    "master",
+    "masterSHA",
+    "fixedCanvas",
+    "pivot",
+    "render",
+    "cell",
+    "contactShadow",
+    "frameCount",
+    "frames",
+    "callBudget",
+    "output",
+    "loop"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Sprite production 471 whole-frame job",
+  "additionalProperties": false
+}

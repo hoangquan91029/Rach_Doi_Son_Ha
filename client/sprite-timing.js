@@ -20,7 +20,7 @@ export function sampleSpriteAnimation(frames,{timeMs=0,loop=true,frame:requested
  return {frame,elapsedMs,durationMs,events:(frames[frame].events||[]).map(event=>({...event}))};
 }
 
-export function defaultAnimationLoop(asset){return asset.loop??['idle','walk','construction'].includes(asset.state);}
+export function defaultAnimationLoop(asset){return asset.loop??['idle','walk','construction','build','repair'].includes(asset.state);}
 /** Map an authored contact marker onto authoritative impact; no gameplay dispatch. */
 export function attackAnimationTime(asset,entity,visualTimeMs){
  const start=entity.attackStartedTick*50,impact=entity.attackImpactTick*50,ready=entity.attackReadyTick*50;

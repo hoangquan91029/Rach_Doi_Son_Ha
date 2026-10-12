@@ -1,0 +1,158 @@
+{
+  "schema": "rds-unit-identity/v1",
+  "identity": "le_thanh_tong",
+  "families": [
+    "le_thanh_tong",
+    "unit.le_thanh_tong"
+  ],
+  "roles": [
+    "king",
+    "general"
+  ],
+  "master": null,
+  "views": [
+    {
+      "direction": 0,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 1,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 2,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 3,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 4,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 5,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 6,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 7,
+      "source": null,
+      "status": "missing"
+    }
+  ],
+  "actions": [
+    {
+      "action": "idle",
+      "alias": false,
+      "applicable": true,
+      "frames": 4,
+      "roles": [
+        "king",
+        "general"
+      ],
+      "requiresSeparatePoses": false
+    },
+    {
+      "action": "walk",
+      "alias": false,
+      "applicable": true,
+      "frames": 8,
+      "roles": [
+        "king",
+        "general"
+      ],
+      "requiresSeparatePoses": false
+    },
+    {
+      "action": "attack",
+      "alias": false,
+      "applicable": true,
+      "frames": 8,
+      "roles": [
+        "king",
+        "general"
+      ],
+      "requiresSeparatePoses": false
+    },
+    {
+      "action": "hit",
+      "alias": false,
+      "applicable": true,
+      "frames": 4,
+      "roles": [
+        "king",
+        "general"
+      ],
+      "requiresSeparatePoses": false
+    },
+    {
+      "action": "death",
+      "alias": false,
+      "applicable": true,
+      "frames": 8,
+      "roles": [
+        "king",
+        "general"
+      ],
+      "requiresSeparatePoses": false
+    },
+    {
+      "action": "ability",
+      "alias": false,
+      "applicable": true,
+      "frames": 6,
+      "roles": [
+        "king",
+        "general"
+      ],
+      "requiresSeparatePoses": true
+    },
+    {
+      "action": "build",
+      "alias": false,
+      "applicable": true,
+      "frames": 8,
+      "roles": [
+        "king"
+      ],
+      "requiresSeparatePoses": false
+    }
+  ],
+  "invariants": [
+    "Preserve whole original identity; no role art substitution"
+  ],
+  "excludedReferences": [],
+  "review": "No new approval inferred from registry",
+  "runtime": "Active manifest presence only",
+  "release": "No promotion authorization",
+  "camera": {
+    "label": "dimetric 2:1 ground projection; fixed whole original elevated camera; no independent camera fit",
+    "screenFacing": [
+      "ESE",
+      "South",
+      "WSW",
+      "West",
+      "WNW",
+      "North",
+      "ENE",
+      "East"
+    ],
+    "basis": "shared/sim.js atan2 eight world octants; screen x=(worldX-worldY), y=(worldX+worldY)/2; labels describe projected vector"
+  },
+  "weaponOwnership": null,
+  "allowedReferences": [],
+  "excludedReferencePaths": [],
+  "masterAuthority": "missing"
+}

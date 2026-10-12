@@ -1,0 +1,47 @@
+{
+  "schema": "rds-worker-order-template/v2",
+  "status": "EXHAUSTED_CLOSED_NO_CALLS",
+  "template": "worker_order",
+  "identity": "infantry",
+  "references": [
+    {
+      "assetId": "infantry-idle-D00",
+      "direction": 0,
+      "path": "docs/art/units/sources/infantry-neutral-se-refine-01-imagegen-raw.png",
+      "sha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+      "rgbaSha256": "0fdc9a92dab8aa2c420c764ff0808977daec9f4133eda860cdebc18e67463179",
+      "status": "existing source custody; no new view or motion approval",
+      "role": "originalmaster"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/units/infantry-opposite-contact-465/raw.png",
+      "sha256": "d1aa33b30c884fcaa30a756bb555eac49b00ffa2f2b8760a00c89136fbb6df2a",
+      "rgbaSha256": "87e64ead3ee5d0177742af4a97d64bd7e29eec41ef21e48bb0d2898e6979af32",
+      "role": "neighbor",
+      "status": "selected",
+      "phase": 0.5,
+      "frame": 4,
+      "jobId": "infantry-original-D0-walk-470",
+      "custody": "Originating builtin receipt/pinned master and parent intake469; selected only as sequence source, not motion acceptance"
+    }
+  ],
+  "values": {
+    "identity": "infantry",
+    "master": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+    "direction": "0",
+    "camera": "dimetric 2:1 ground projection; fixed whole original elevated camera; no independent camera fit",
+    "screenFacing": "ESE",
+    "weaponOwnership": "Physical sword hand and shield hand remain those of original084845; D0 sword screenleft and shield screenright only; screen sides change with view",
+    "referenceRoles": "originalmaster,neighbor",
+    "invariants": "Same original084845 face helmet armor sash colors and whole canvas",
+    "action": "walk",
+    "phase": "F3 reach opposite contact",
+    "budget": "Two corrections already used by474 and475; zero calls remaining",
+    "ownership": "Closed existing477 pilot only; no image call or fanout",
+    "movingParts": "Whole legs exchange support and reach; never detached limbs",
+    "bodyMotion": "Weight moves over current support foot with natural body bob",
+    "equipmentMotion": "Sword and shield follow their original physical hands without changing equipment",
+    "nextKey": "Selected F4 opposite contact from465"
+  },
+  "dependsOn": "477 continuity review and actual travel; this exhausted order cannot reopen or fan out"
+}

@@ -1,0 +1,247 @@
+{
+  "schema": "rds-unit-identity/v1",
+  "identity": "infantry",
+  "families": [
+    "infantry",
+    "unit.infantry"
+  ],
+  "roles": [
+    "infantry"
+  ],
+  "master": {
+    "assetId": "infantry-idle-D00",
+    "direction": 0,
+    "path": "docs/art/units/sources/infantry-neutral-se-refine-01-imagegen-raw.png",
+    "sha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+    "rgbaSha256": "0fdc9a92dab8aa2c420c764ff0808977daec9f4133eda860cdebc18e67463179",
+    "status": "existing source custody; no new view or motion approval"
+  },
+  "views": [
+    {
+      "direction": 0,
+      "source": {
+        "assetId": "infantry-idle-D00",
+        "direction": 0,
+        "path": "docs/art/units/sources/infantry-neutral-se-refine-01-imagegen-raw.png",
+        "sha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+        "rgbaSha256": "0fdc9a92dab8aa2c420c764ff0808977daec9f4133eda860cdebc18e67463179",
+        "status": "existing source custody; no new view or motion approval"
+      },
+      "status": "existing static source"
+    },
+    {
+      "direction": 1,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 2,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 3,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 4,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 5,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 6,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 7,
+      "source": null,
+      "status": "missing"
+    }
+  ],
+  "actions": [
+    {
+      "action": "idle",
+      "alias": false,
+      "applicable": true,
+      "frames": 4,
+      "roles": [
+        "infantry"
+      ],
+      "requiresSeparatePoses": false
+    },
+    {
+      "action": "walk",
+      "alias": false,
+      "applicable": true,
+      "frames": 8,
+      "roles": [
+        "infantry"
+      ],
+      "requiresSeparatePoses": false
+    },
+    {
+      "action": "attack",
+      "alias": false,
+      "applicable": true,
+      "frames": 8,
+      "roles": [
+        "infantry"
+      ],
+      "requiresSeparatePoses": false
+    },
+    {
+      "action": "hit",
+      "alias": false,
+      "applicable": true,
+      "frames": 4,
+      "roles": [
+        "infantry"
+      ],
+      "requiresSeparatePoses": false
+    },
+    {
+      "action": "death",
+      "alias": false,
+      "applicable": true,
+      "frames": 8,
+      "roles": [
+        "infantry"
+      ],
+      "requiresSeparatePoses": false
+    }
+  ],
+  "invariants": [
+    "Original084845 master only",
+    "same face/helmet/armor/sash/colors",
+    "shield screenright; sword screenleft for D0"
+  ],
+  "excludedReferences": [
+    "429",
+    "436",
+    "439",
+    "440",
+    "443",
+    "guide-only427/438/441"
+  ],
+  "review": "No new approval inferred from registry",
+  "runtime": "Active manifest presence only",
+  "release": "No promotion authorization",
+  "camera": {
+    "label": "dimetric 2:1 ground projection; fixed whole original elevated camera; no independent camera fit",
+    "screenFacing": [
+      "ESE",
+      "South",
+      "WSW",
+      "West",
+      "WNW",
+      "North",
+      "ENE",
+      "East"
+    ],
+    "basis": "shared/sim.js atan2 eight world octants; screen x=(worldX-worldY), y=(worldX+worldY)/2; labels describe projected vector"
+  },
+  "weaponOwnership": "Physical sword hand and shield hand remain those of original084845; D0 sword screenleft and shield screenright only; screen sides change with view",
+  "allowedReferences": [
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/units/sources/infantry-neutral-se-refine-01-imagegen-raw.png",
+      "sha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+      "rgbaSha256": "0fdc9a92dab8aa2c420c764ff0808977daec9f4133eda860cdebc18e67463179",
+      "role": "neighbor",
+      "status": "selected",
+      "phase": 0,
+      "frame": 0,
+      "jobId": "infantry-original-D0-walk-470",
+      "custody": "Originating builtin receipt/pinned master and parent intake469; selected only as sequence source, not motion acceptance"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/units/infantry-inbetweens-469/F1-raw.png",
+      "sha256": "147bbadbaf5a55c7beb022429ff03bb08adf00e7c13aa02e7b767dddcb691f3b",
+      "rgbaSha256": "bc3681789fa691f24f99ad4f52c9f78c5c96fb5ab7c91c4b0f44930390238abb",
+      "role": "neighbor",
+      "status": "selected",
+      "phase": 0.125,
+      "frame": 1,
+      "jobId": "infantry-original-D0-walk-470",
+      "custody": "Originating builtin receipt/pinned master and parent intake469; selected only as sequence source, not motion acceptance"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/units/infantry-passing-keys-468/F2-raw.png",
+      "sha256": "8ea6f3e944166e57ced56124912eed9620395edfb4178c3e3041fdc3f6c4cef6",
+      "rgbaSha256": "634ff2cb39f60ef06097b8831cfa8d6ca06436a3aa5cdc4808593c2bdf2a85af",
+      "role": "neighbor",
+      "status": "selected",
+      "phase": 0.25,
+      "frame": 2,
+      "jobId": "infantry-original-D0-walk-470",
+      "custody": "Originating builtin receipt/pinned master and parent intake469; selected only as sequence source, not motion acceptance"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/units/infantry-F3-correction-475/raw.png",
+      "sha256": "26386bca78e68ae3f4e5f93430cb748efaa8e1b16eb16ba6bd75b86064f26002",
+      "rgbaSha256": "665c788e74322877823491eedeebe8b25b98be54cc0ffe96127dcfd6a8c6820a",
+      "role": "neighbor",
+      "status": "selected",
+      "phase": 0.375,
+      "frame": 3,
+      "jobId": "infantry-original-D0-walk-470",
+      "custody": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/units/infantry-F3-correction-475/receipt.json"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/units/infantry-opposite-contact-465/raw.png",
+      "sha256": "d1aa33b30c884fcaa30a756bb555eac49b00ffa2f2b8760a00c89136fbb6df2a",
+      "rgbaSha256": "87e64ead3ee5d0177742af4a97d64bd7e29eec41ef21e48bb0d2898e6979af32",
+      "role": "neighbor",
+      "status": "selected",
+      "phase": 0.5,
+      "frame": 4,
+      "jobId": "infantry-original-D0-walk-470",
+      "custody": "Originating builtin receipt/pinned master and parent intake469; selected only as sequence source, not motion acceptance"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/units/infantry-inbetweens-469/F5-raw.png",
+      "sha256": "dd4a426127b59d65f0d1a89f472541e8428c9a228e58273811b91aa80cfb1c3a",
+      "rgbaSha256": "1919ba48dbc47b0f0ca24f2169cbb933f37f629beb0201970329b86e3759a7a8",
+      "role": "neighbor",
+      "status": "selected",
+      "phase": 0.625,
+      "frame": 5,
+      "jobId": "infantry-original-D0-walk-470",
+      "custody": "Originating builtin receipt/pinned master and parent intake469; selected only as sequence source, not motion acceptance"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/units/infantry-passing-keys-468/F6-raw.png",
+      "sha256": "58334157ab152d3f3dc7d237de9bb943b2d72f50528a8471cadfe1e908797294",
+      "rgbaSha256": "e29f7fe124ff2138d44b6559d934206adb2e53eee0fcb2bcd0e39597628e092c",
+      "role": "neighbor",
+      "status": "selected",
+      "phase": 0.75,
+      "frame": 6,
+      "jobId": "infantry-original-D0-walk-470",
+      "custody": "Originating builtin receipt/pinned master and parent intake469; selected only as sequence source, not motion acceptance"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/units/infantry-inbetweens-469/F7-raw.png",
+      "sha256": "5094c3e0e92b0fcc0e3eae5ab9e99361503e69a4b65bfe35a7371ee4c104598f",
+      "rgbaSha256": "f1e282b6d2132d66c8dbdc02b6a44a16727cdc004909af3319aa61bbf0304128",
+      "role": "neighbor",
+      "status": "selected",
+      "phase": 0.875,
+      "frame": 7,
+      "jobId": "infantry-original-D0-walk-470",
+      "custody": "Originating builtin receipt/pinned master and parent intake469; selected only as sequence source, not motion acceptance"
+    }
+  ],
+  "excludedReferencePaths": [],
+  "currentJob": {
+    "path": "docs/art/pipeline/infantry-original-loop-470/job.json",
+    "sha256": "fd3be52536555fcd809ca59a2a21de0040f32ec1a2a0f19f6932706fb0af0be3"
+  },
+  "masterAuthority": "original"
+}

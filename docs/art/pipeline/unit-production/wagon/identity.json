@@ -1,0 +1,154 @@
+{
+  "schema": "rds-unit-identity/v1",
+  "identity": "wagon",
+  "families": [
+    "wagon",
+    "unit.wagon"
+  ],
+  "roles": [
+    "wagon"
+  ],
+  "master": {
+    "path": "docs/art/units/supply-wagon-horse-415/raw.png",
+    "sha256": "93124b0a4959072880579ba0fd88f0a31ee227c4eb7369bde80880828d8a8030",
+    "status": "whole original415; selection inherited only from existing custody, motion open",
+    "direction": 0
+  },
+  "views": [
+    {
+      "direction": 0,
+      "source": {
+        "assetId": "supply-wagon-horse-idle-d0-415",
+        "direction": 0,
+        "path": "docs/art/units/supply-wagon-horse-415/working-256.png",
+        "sha256": "39a2aa11091214de4ad1236d3be65f77b1e5668d2e9054b19c0613770003436c",
+        "rgbaSha256": "f152f2eb87d6011d56fcacb2b03b6305a27dd9c9c7ed802f36fc42bc85b88200",
+        "status": "existing source custody; no new view or motion approval"
+      },
+      "status": "existing static source"
+    },
+    {
+      "direction": 1,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 2,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 3,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 4,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 5,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 6,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 7,
+      "source": null,
+      "status": "missing"
+    }
+  ],
+  "actions": [
+    {
+      "action": "idle",
+      "alias": false,
+      "applicable": true,
+      "frames": 4,
+      "roles": [
+        "wagon"
+      ],
+      "requiresSeparatePoses": false
+    },
+    {
+      "action": "walk",
+      "alias": false,
+      "applicable": true,
+      "frames": 8,
+      "roles": [
+        "wagon"
+      ],
+      "requiresSeparatePoses": false
+    },
+    {
+      "action": "load",
+      "alias": false,
+      "applicable": true,
+      "frames": 8,
+      "roles": [
+        "wagon"
+      ],
+      "requiresSeparatePoses": true
+    },
+    {
+      "action": "unload",
+      "alias": false,
+      "applicable": true,
+      "frames": 8,
+      "roles": [
+        "wagon"
+      ],
+      "requiresSeparatePoses": true
+    },
+    {
+      "action": "hit",
+      "alias": false,
+      "applicable": true,
+      "frames": 4,
+      "roles": [
+        "wagon"
+      ],
+      "requiresSeparatePoses": false
+    },
+    {
+      "action": "death",
+      "alias": false,
+      "applicable": true,
+      "frames": 8,
+      "roles": [
+        "wagon"
+      ],
+      "requiresSeparatePoses": false
+    }
+  ],
+  "invariants": [
+    "Whole415 horse/cart/harness/cargo; no detached cart"
+  ],
+  "excludedReferences": [],
+  "review": "No new approval inferred from registry",
+  "runtime": "Active manifest presence only",
+  "release": "No promotion authorization",
+  "camera": {
+    "label": "dimetric 2:1 ground projection; fixed whole original elevated camera; no independent camera fit",
+    "screenFacing": [
+      "ESE",
+      "South",
+      "WSW",
+      "West",
+      "WNW",
+      "North",
+      "ENE",
+      "East"
+    ],
+    "basis": "shared/sim.js atan2 eight world octants; screen x=(worldX-worldY), y=(worldX+worldY)/2; labels describe projected vector"
+  },
+  "weaponOwnership": "Verified no weapon: whole original415 horse, cart, harness and cargo; no weapon hand ownership",
+  "allowedReferences": [],
+  "excludedReferencePaths": [],
+  "masterAuthority": "original",
+  "weaponOwnershipStatus": "verified none from original415 whole source"
+}
