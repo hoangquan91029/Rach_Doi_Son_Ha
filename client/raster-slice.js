@@ -13,9 +13,9 @@ const TW=TILE_WIDTH,TH=TILE_HEIGHT;
 const finite=n=>Number.isFinite(n);
 const normalState=entity=>entity.hp<=0?'death':entity.kind==='building'&&(entity.construction||entity.underConstruction===true)?'construction':entity.state;
 /** Optional candidate art over actual simulation. No substitute map, fake units, or sprite mirroring. */
-export function createRasterSlice({enabled=artRoute().enabled,manifestUrl=artRoute().manifestUrl,onStatus=()=>{},materialWorldSize=8}={}) {
+export function createRasterSlice({enabled=artRoute().enabled,manifestUrl=artRoute().manifestUrl,onStatus=()=>{},materialWorldSize=8,unitActionPolicy='on-demand'}={}) {
  const worldArtEnabled=()=>artRoute().world;
- const pipeline=createArtAssetPipeline({manifestUrl,allowCandidates:true,onStatus});
+ const pipeline=createArtAssetPipeline({manifestUrl,allowCandidates:true,onStatus,unitActionPolicy});
  const locomotion=createLocomotionPhase();
  const cells=new Map(),patterns=new WeakMap(),missing=new Set();let ready=false,currentDrawCount=0;
  const status={enabled,phase:enabled?'CANDIDATE':'DISABLED',quality:'PLACEHOLDER_ONLY',groundDraws:0,propDraws:0,entityDraws:0,currentEntityDraws:{},currentEntityDrawsDropped:0,renderObservation:0,walkDraws:0,idleDraws:0,lastWalk:null,gatherDraws:0,lastGather:null,buildingDeathDraws:0,lastBuildingDeath:null,missing:[],pipeline:pipeline.stats};

@@ -1,0 +1,124 @@
+{
+  "status": "VERIFIED_SYNTAX_ONLY",
+  "purpose": "Reusable ordinary-UI isolated legacy encoded warm / deferred unit action decode compatibility scene",
+  "exclusiveOutputs": [
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/qa/action-streaming-scene.mjs",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/action-streaming-493/worker-scene.json"
+  ],
+  "sourceSha256": "31f3b1ce1db97c2478b0275a5a705369629122d9115db477fda64640f721f301",
+  "actualTools": [
+    "Node --check",
+    "read-only source inspection",
+    "agent-preflight"
+  ],
+  "preflight": {
+    "schema": "rds-agent-preflight/v1",
+    "task": "runtime",
+    "head": "22ce3cd82049399086b9bef3bc29b3b63f7a94ab",
+    "status": " M client/art-assets.js\n M client/raster-slice.js\n?? docs/art/pipeline/action-streaming-493/\n?? scripts/qa/action-streaming-scene.mjs\n?? tests/art-action-policy493.test.js",
+    "readFiles": [
+      {
+        "path": "docs/agent-read-contract.json",
+        "sha256": "5e85c1c9a649aa6d71d03f6dd2b69a4e54f6b77c80f157a26e648a07f8ec3f99",
+        "bytes": 986
+      },
+      {
+        "path": "AGENTS.md",
+        "sha256": "f157cd34b996be9b37e4a7d26f6417592dad55129d077c2524d57b7170aeda88",
+        "bytes": 7405
+      },
+      {
+        "path": "docs/PROJECT_STATE.md",
+        "sha256": "f1fc84f09ef9b00759544bfbbaef4600b64de09550db6e6c35cd845fc7112b6a",
+        "bytes": 6893
+      },
+      {
+        "path": "docs/NEXT_STEPS.md",
+        "sha256": "81764d12e3bdff8edc829dca6cffb63362a586301f887f7686e421eb773fbbe2",
+        "bytes": 2132
+      },
+      {
+        "path": "docs/ARCHITECTURE_DECISIONS.md",
+        "sha256": "0b2b348bff0b0ffa6305e1aebf9d713faca7b9b10fb913df81640758ce1389c8",
+        "bytes": 2157
+      },
+      {
+        "path": "docs/art/pipeline/ANIMATION_CONTRACT.md",
+        "sha256": "7edd5b99ae59b9e848458ee4ac06c72dd575a3bee4e27288823dad1e31b87014",
+        "bytes": 6993
+      },
+      {
+        "path": "docs/art/pipeline/ASSET_QA.md",
+        "sha256": "7ad426a1a2b9d8fd10ae56aa7897fc19be67d3b00a40fac3987e1ef07cd66418",
+        "bytes": 3343
+      },
+      {
+        "path": "shared/unit-action-spec.js",
+        "sha256": "04d987298651c73187920391754f729fd203c1313536eb54c29c629048db05bf",
+        "bytes": 1686
+      },
+      {
+        "path": "shared/visible-action.js",
+        "sha256": "35d4352d3c6a85bce7b99638934e9c0512c900df801fc3b59296ba1b606b27b0",
+        "bytes": 2228
+      },
+      {
+        "path": "client/world-presentation.js",
+        "sha256": "d87fadfb176f765d35b26c2d247af536288d9ada9df6ecc8ec254d889231db98",
+        "bytes": 240
+      }
+    ],
+    "sources": [
+      {
+        "path": "scripts/qa/unit-walk-scene.mjs",
+        "sha256": "b95a71f820b2249bfbaeb93a33f6e4f1b59c657319b6c3e500250edb2a25f121",
+        "bytes": 10668
+      }
+    ],
+    "ledger": {
+      "path": "docs/art/pipeline/unit-production/order-ledger.json",
+      "sha256": "41befce34c8a2c628f5057051b4389d683fd0191c184113c7d9b397a475c8abd",
+      "locked": false,
+      "unresolvedClaims": []
+    },
+    "limits": [
+      "Existence and byte hashes do not establish understanding, permission, approval or tool availability.",
+      "Explicit invocation only; this helper is not a mandatory global hook.",
+      "Externally verify tools and actual live handles/preservation guards; no guards are declared closed."
+    ]
+  },
+  "runtime": "UNKNOWN: not run; root frozen isolated stage required",
+  "inputs": {
+    "stage": "absolute isolated stage root",
+    "build": "absolute isolated Vite outDir",
+    "output": "absolute receipt directory",
+    "browser": "chromium or firefox",
+    "pins": "exact path/SHA256 pairs before/after",
+    "unit": "villager",
+    "deferredAssetId": "villager-walk-south-014",
+    "idleId": "villager-idle-south-014",
+    "offlineAfterMenu": "optional true",
+    "expectedEncodedReady": 51,
+    "expectedInitialReady": 48,
+    "expectedDeferredDeclared": 3
+  },
+  "checks": [
+    "menu decoded0 and encoded51",
+    "match ready48 eager48 deferred3 policy on-demand",
+    "ordinary Delta selection living own villager and clear D1 corridor",
+    "exact D1 walk per-actor current draw and ready49",
+    "Pause/Resume fixed tick/position/frame",
+    "assigned engine target arrival within0.700001",
+    "ordinary Stop exact same D1 idle",
+    "return-menu decoded0",
+    "page errors and non-health network failures empty",
+    "handles independently close; before/after preservation"
+  ],
+  "limitations": [
+    "No imagecalls, art change, motion/contact/owner approval, fanout, deployment",
+    "Health request failures classified separately from asset failures",
+    "No createImageBitmap mock/instrumentation or state/command injection"
+  ],
+  "handles": "No browser/server/test run opened; syntax check exited",
+  "nextDependency": "Root runs against frozen pinned stage; integration diagnostics exposes unitActionPolicy."
+}

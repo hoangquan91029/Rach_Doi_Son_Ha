@@ -1,0 +1,282 @@
+{
+  "schema": "rds-action-streaming-checkpoint/v1",
+  "status": "LOCAL_TECHNICAL_PASS_MOTION_OPEN",
+  "purpose": "Implement per-match/action page loading for future full action × eight-direction banks without changing artwork or simulation",
+  "inputHead": "22ce3cd82049399086b9bef3bc29b3b63f7a94ab",
+  "exclusiveGameDeltas": [
+    "client/art-assets.js",
+    "client/raster-slice.js"
+  ],
+  "implementation": {
+    "pipelineDefault": "manifest (backward compatible)",
+    "rasterDefault": "on-demand",
+    "scope": "Non-idle unit decoding deferred; idle/terrain/UI/portrait/separate shadows eager",
+    "encodedPolicy": "Legacy implicit/eager pages warmed in menu; future explicit on-demand pages not warmed",
+    "manifestUnchanged": true,
+    "limits": {
+      "decodedBytes": 134217728,
+      "encodedBytes": 67108864
+    },
+    "quality": "No artwork/pose/timing/stride/selection/review changes"
+  },
+  "workers": [
+    {
+      "name": "action_loader493",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "low",
+      "scope": "Loader and focused tests"
+    },
+    {
+      "name": "action_scene493",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "low",
+      "scope": "Exclusive ordinary UI streaming scene script"
+    },
+    {
+      "name": "action_review493",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "low",
+      "scope": "Independent source and receipt review"
+    }
+  ],
+  "checks": {
+    "command": "node --test tests/art-action-policy493.test.js tests/art-streaming480.test.js tests/art-encoded-cache484.test.js tests/art-bank175.test.js tests/raster-streaming480.test.js tests/raster-draw-trace490.test.js",
+    "passed": 29,
+    "failed": 0,
+    "log": "docs/art/pipeline/action-streaming-493/test-output.txt",
+    "scope": "Decode mocked in unit tests, real encoded hashes. Real decode/gameplay separately below; no full suite/full match."
+  },
+  "build": {
+    "stage": "/tmp/rds-action493-20261013-stage",
+    "output": "/tmp/rds-action493-20261013-build",
+    "literalCwd": true,
+    "viteConfig": "/tmp/rds-action493-20261013-stage/vite.config.js",
+    "viteVersion": "7.3.7",
+    "modules": 34,
+    "chunk": "/tmp/rds-action493-20261013-build/assets/index-Bbxa-XT6.js",
+    "sha256": "49c7a0c8b66e7edfd76f81ba6c4b27c02e1bff41ad79181d0e43f79890e475da",
+    "bytes": 182125,
+    "published": false
+  },
+  "scenes": [
+    {
+      "receipt": "docs/art/pipeline/action-streaming-493/actual-chromium/receipt.json",
+      "sha256": "ad8d0b34269babe7615a89951b68db42145b45883ac30e976b08f507e07fce12",
+      "status": "HOLD_ACTUAL_UI",
+      "browser": "151.0.7922.34",
+      "error": "Error: Ordinary UI guard timed out\n    at wait (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/qa/action-streaming-scene.mjs:9:173)\n    at async file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/qa/action-streaming-scene.mjs:16:138",
+      "offlineAfterMenu": false,
+      "initial": null,
+      "action": null,
+      "handles": {
+        "browserConnected": false,
+        "serverListening": false,
+        "rooms": 0
+      },
+      "allPinsPreserved": true,
+      "checkedPins": 858,
+      "errors": [],
+      "network": [],
+      "menuDecodedBytes": null,
+      "storedReceipt": "docs/art/pipeline/action-streaming-493/actual-chromium/receipt.json.gz",
+      "storedSha256": "4bb836a74e8a6d9051f0ffbab83acb110653b9a141063d0ee5f46ab5a062d633",
+      "custody": "Original raw local bytes retained/ignored; committed lossless gzip decodes to receipt SHA256"
+    },
+    {
+      "receipt": "docs/art/pipeline/action-streaming-493/actual-chromium-menu-cache/receipt.json",
+      "sha256": "9a6a96f21a09de2e4aff42cfa9ef24eba3a08616ab3819860f8fb7c2f0bd0028",
+      "status": "PASS_STREAMING_COMPATIBILITY_ONLY",
+      "browser": "151.0.7922.34",
+      "error": null,
+      "offlineAfterMenu": true,
+      "initial": {
+        "unitActionPolicy": "on-demand",
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 51,
+        "ready": 48,
+        "approved": 0,
+        "candidates": 48,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 17629184,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 38,
+        "encodedReady": 0,
+        "retainedEncodedBytes": 4608899,
+        "encodedBudgetBytes": 67108864,
+        "selectedDeclared": 51,
+        "eagerDeclared": 48,
+        "deferredDeclared": 3,
+        "pending": 0,
+        "pageErrors": [],
+        "evictedPages": 0,
+        "evictedEncodedPages": 0,
+        "failures": []
+      },
+      "action": {
+        "unitActionPolicy": "on-demand",
+        "status": "PLACEHOLDER_ONLY",
+        "manifest": "ready",
+        "declared": 51,
+        "ready": 49,
+        "approved": 0,
+        "candidates": 49,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 1,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 18186752,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 39,
+        "encodedReady": 0,
+        "retainedEncodedBytes": 4608899,
+        "encodedBudgetBytes": 67108864,
+        "selectedDeclared": 51,
+        "eagerDeclared": 48,
+        "deferredDeclared": 3,
+        "pending": 0,
+        "pageErrors": [],
+        "evictedPages": 0,
+        "evictedEncodedPages": 0,
+        "failures": []
+      },
+      "handles": {
+        "browserConnected": false,
+        "serverListening": false,
+        "rooms": 0
+      },
+      "allPinsPreserved": true,
+      "checkedPins": 858,
+      "errors": [],
+      "network": [],
+      "menuDecodedBytes": 0,
+      "storedReceipt": "docs/art/pipeline/action-streaming-493/actual-chromium-menu-cache/receipt.json.gz",
+      "storedSha256": "2305aff8410db7f42256ad39fe23acbdd1a008c68218ede603f8fc502241bbe1",
+      "custody": "Original raw local bytes retained/ignored; committed lossless gzip decodes to receipt SHA256"
+    },
+    {
+      "receipt": "docs/art/pipeline/action-streaming-493/actual-firefox-menu-cache/receipt.json",
+      "sha256": "8082ad9d8cf5c8bc0468c5c76a6a27adf7c529090fe7a06dc0fa2b888b32445f",
+      "status": "PASS_STREAMING_COMPATIBILITY_ONLY",
+      "browser": "153.0",
+      "error": null,
+      "offlineAfterMenu": true,
+      "initial": {
+        "unitActionPolicy": "on-demand",
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 51,
+        "ready": 48,
+        "approved": 0,
+        "candidates": 48,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 17629184,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 38,
+        "encodedReady": 0,
+        "retainedEncodedBytes": 4608899,
+        "encodedBudgetBytes": 67108864,
+        "selectedDeclared": 51,
+        "eagerDeclared": 48,
+        "deferredDeclared": 3,
+        "pending": 0,
+        "pageErrors": [],
+        "evictedPages": 0,
+        "evictedEncodedPages": 0,
+        "failures": []
+      },
+      "action": {
+        "unitActionPolicy": "on-demand",
+        "status": "PLACEHOLDER_ONLY",
+        "manifest": "ready",
+        "declared": 51,
+        "ready": 49,
+        "approved": 0,
+        "candidates": 49,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 1,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 18186752,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 39,
+        "encodedReady": 0,
+        "retainedEncodedBytes": 4608899,
+        "encodedBudgetBytes": 67108864,
+        "selectedDeclared": 51,
+        "eagerDeclared": 48,
+        "deferredDeclared": 3,
+        "pending": 0,
+        "pageErrors": [],
+        "evictedPages": 0,
+        "evictedEncodedPages": 0,
+        "failures": []
+      },
+      "handles": {
+        "browserConnected": false,
+        "serverListening": false,
+        "rooms": 0
+      },
+      "allPinsPreserved": true,
+      "checkedPins": 858,
+      "errors": [],
+      "network": [],
+      "menuDecodedBytes": 0,
+      "storedReceipt": "docs/art/pipeline/action-streaming-493/actual-firefox-menu-cache/receipt.json.gz",
+      "storedSha256": "93640aa8c8f324c60a7b1a21c16388d31a91a6fa741f1081cb408ce77424412d",
+      "custody": "Original raw local bytes retained/ignored; committed lossless gzip decodes to receipt SHA256"
+    }
+  ],
+  "failurePreservation": {
+    "initialSceneScript": "docs/art/pipeline/action-streaming-493/scene-initial.mjs",
+    "diagnosis": "Initial QA read encodedReady from a disposed priming pipeline. Actual menu retains encoded bytes in ArtBank and creates an empty raster pipeline. Harness fixed to observe live bank + all41 distinct page HTTP responses. Original failure/config/script retained. SAME build, no product fix/rebuild."
+  },
+  "media": [
+    {
+      "path": "docs/art/pipeline/action-streaming-493/actual-chromium-menu-cache/video/page@977e66828b0c1af253ba47196402159e.webm",
+      "sha256": "42ed18ca38a41c955360b05578c2d24cbe583aba62d6ee04612217552870e8e8",
+      "bytes": 1260955,
+      "custody": "Original local bytes retained, Git ignored"
+    },
+    {
+      "path": "docs/art/pipeline/action-streaming-493/actual-firefox-menu-cache/video/page@4d2b89b27c6a57994c00402b88ba4ea8.webm",
+      "sha256": "8d816a69ecfb0974e47f2b945dc8ef6921c05689040a78aaa8eeec90f4fb22dd",
+      "bytes": 1429719,
+      "custody": "Original local bytes retained, Git ignored"
+    },
+    {
+      "path": "docs/art/pipeline/action-streaming-493/actual-chromium/video/page@6ba974dee17951d4b023dc5150ef4800.webm",
+      "sha256": "b0bcff690db0c077ee74a89e6591be0baff1b69b2dadb6d191162a8deab89fc1",
+      "bytes": 1044505,
+      "custody": "Original local bytes retained, Git ignored"
+    }
+  ],
+  "preservation": {
+    "protectedFiles": 433,
+    "allUnchanged": true,
+    "ledgerUnchanged": true,
+    "public451runtime230Changed": false
+  },
+  "independentReview": {
+    "path": "docs/art/pipeline/action-streaming-493/independent-review.json",
+    "sha256": "0d782c1fc62487c7ddbe7c5660efcedf4cc949d1e5b21b71469fe5dff5eddb68"
+  },
+  "imageCalls": 0,
+  "newSelectedSources": 0,
+  "motion": "FAILED_OWNER490 remains open; both491/492 controls held; no new qualification/fanout",
+  "limitations": [
+    "Cold living action may retain same original idle briefly; death/construction cannot borrow living idle.",
+    "Legacy offline only for warmed bytes still retained under64MiB; future explicit demand not guaranteed offline before use.",
+    "Current51-asset bank and one D1 ordinary-UI action only; no dense full-roster/live-room performance/WAN/externaldevice qualification.",
+    "Lower decoded working set is memory progress, not smoother/corrected movement.",
+    "No production exchange/backend restart/shared simulation change."
+  ],
+  "handles": "All workers/browser/test/isolated servers CLOSED; production intentionally running runtime230, observed PID3408 only",
+  "nextDependency": "Usable whole realistic original-derived passing key or materially different demonstrated pure2D conditioning; no repeat491/492 or cap reset. Full game remains open."
+}
