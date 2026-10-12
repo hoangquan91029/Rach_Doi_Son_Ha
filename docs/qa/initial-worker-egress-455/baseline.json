@@ -1,0 +1,328 @@
+{
+  "status": "REPRODUCED_ACCEPTED_MOVE_ZERO_TRAVEL",
+  "scope": "Deterministic new simulation state, ordinary public command API only. No live browser injection or gameplay-state edits.",
+  "accepted": {
+    "ok": true
+  },
+  "initial": {
+    "x": 8.7,
+    "y": 21.5
+  },
+  "final": {
+    "x": 8.7,
+    "y": 21.5
+  },
+  "samples": [
+    {
+      "tick": 1,
+      "actor": {
+        "id": 9,
+        "owner": 0,
+        "type": "villager",
+        "kind": "unit",
+        "x": 8.7,
+        "y": 21.5,
+        "hp": 65,
+        "maxHp": 65,
+        "food": 40,
+        "foodMax": 40,
+        "morale": 95,
+        "state": "walk",
+        "dir": 0,
+        "cooldown": 0,
+        "order": {
+          "type": "move",
+          "x": 8.4998808415058,
+          "y": 26.5000111144266
+        },
+        "path": [
+          {
+            "x": 7.5,
+            "y": 21.5
+          },
+          {
+            "x": 7.5,
+            "y": 22.5
+          },
+          {
+            "x": 7.5,
+            "y": 23.5
+          },
+          {
+            "x": 7.5,
+            "y": 24.5
+          },
+          {
+            "x": 7.5,
+            "y": 25.5
+          },
+          {
+            "x": 8.5,
+            "y": 26.5
+          }
+        ],
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "retryPath": 0,
+        "resuppliedTick": 1,
+        "starving": 0,
+        "pathKey": "8,26,0.7,0",
+        "crowdRoute": [],
+        "crowdRetry": 11
+      },
+      "crowdStats": {
+        "plans": 1,
+        "edges": 1256,
+        "expansions": 288,
+        "waits": 1,
+        "queries": 1178,
+        "bodyChecks": 793,
+        "rebuilds": 1,
+        "tick": 1,
+        "plannerEdges": 1255,
+        "eligible": [
+          9
+        ],
+        "admissions": [
+          {
+            "id": 9,
+            "tick": 1
+          }
+        ]
+      }
+    },
+    {
+      "tick": 20,
+      "actor": {
+        "id": 9,
+        "owner": 0,
+        "type": "villager",
+        "kind": "unit",
+        "x": 8.7,
+        "y": 21.5,
+        "hp": 65,
+        "maxHp": 65,
+        "food": 40,
+        "foodMax": 40,
+        "morale": 95,
+        "state": "walk",
+        "dir": 0,
+        "cooldown": 0,
+        "order": {
+          "type": "move",
+          "x": 8.4998808415058,
+          "y": 26.5000111144266
+        },
+        "path": [
+          {
+            "x": 7.5,
+            "y": 21.5
+          },
+          {
+            "x": 7.5,
+            "y": 22.5
+          },
+          {
+            "x": 7.5,
+            "y": 23.5
+          },
+          {
+            "x": 7.5,
+            "y": 24.5
+          },
+          {
+            "x": 7.5,
+            "y": 25.5
+          },
+          {
+            "x": 8.5,
+            "y": 26.5
+          }
+        ],
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "retryPath": 0,
+        "resuppliedTick": 20,
+        "starving": 0,
+        "pathKey": "8,26,0.7,0",
+        "crowdRoute": [],
+        "crowdRetry": 21
+      },
+      "crowdStats": {
+        "plans": 0,
+        "edges": 1,
+        "expansions": 576,
+        "waits": 2,
+        "queries": 2374,
+        "bodyChecks": 1622,
+        "rebuilds": 20,
+        "tick": 20,
+        "plannerEdges": 0,
+        "eligible": [],
+        "admissions": []
+      }
+    },
+    {
+      "tick": 100,
+      "actor": {
+        "id": 9,
+        "owner": 0,
+        "type": "villager",
+        "kind": "unit",
+        "x": 8.7,
+        "y": 21.5,
+        "hp": 65,
+        "maxHp": 65,
+        "food": 40,
+        "foodMax": 40,
+        "morale": 95,
+        "state": "walk",
+        "dir": 0,
+        "cooldown": 0,
+        "order": {
+          "type": "move",
+          "x": 8.4998808415058,
+          "y": 26.5000111144266
+        },
+        "path": [
+          {
+            "x": 7.5,
+            "y": 21.5
+          },
+          {
+            "x": 7.5,
+            "y": 22.5
+          },
+          {
+            "x": 7.5,
+            "y": 23.5
+          },
+          {
+            "x": 7.5,
+            "y": 24.5
+          },
+          {
+            "x": 7.5,
+            "y": 25.5
+          },
+          {
+            "x": 8.5,
+            "y": 26.5
+          }
+        ],
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "retryPath": 0,
+        "resuppliedTick": 100,
+        "starving": 0,
+        "pathKey": "8,26,0.7,0",
+        "crowdRoute": [],
+        "crowdRetry": 101
+      },
+      "crowdStats": {
+        "plans": 0,
+        "edges": 1,
+        "expansions": 2880,
+        "waits": 10,
+        "queries": 11870,
+        "bodyChecks": 8110,
+        "rebuilds": 100,
+        "tick": 100,
+        "plannerEdges": 0,
+        "eligible": [],
+        "admissions": []
+      }
+    },
+    {
+      "tick": 400,
+      "actor": {
+        "id": 9,
+        "owner": 0,
+        "type": "villager",
+        "kind": "unit",
+        "x": 8.7,
+        "y": 21.5,
+        "hp": 65,
+        "maxHp": 65,
+        "food": 40,
+        "foodMax": 40,
+        "morale": 95,
+        "state": "walk",
+        "dir": 0,
+        "cooldown": 0,
+        "order": {
+          "type": "move",
+          "x": 8.4998808415058,
+          "y": 26.5000111144266
+        },
+        "path": [
+          {
+            "x": 7.5,
+            "y": 21.5
+          },
+          {
+            "x": 7.5,
+            "y": 22.5
+          },
+          {
+            "x": 7.5,
+            "y": 23.5
+          },
+          {
+            "x": 7.5,
+            "y": 24.5
+          },
+          {
+            "x": 7.5,
+            "y": 25.5
+          },
+          {
+            "x": 8.5,
+            "y": 26.5
+          }
+        ],
+        "queue": [],
+        "cargo": {
+          "food": 0,
+          "wood": 0,
+          "iron": 0,
+          "units": []
+        },
+        "retryPath": 0,
+        "resuppliedTick": 400,
+        "starving": 0,
+        "pathKey": "8,26,0.7,0",
+        "crowdRoute": [],
+        "crowdRetry": 401
+      },
+      "crowdStats": {
+        "plans": 0,
+        "edges": 1,
+        "expansions": 11520,
+        "waits": 40,
+        "queries": 47480,
+        "bodyChecks": 32440,
+        "rebuilds": 400,
+        "tick": 400,
+        "plannerEdges": 0,
+        "eligible": [],
+        "admissions": []
+      }
+    }
+  ]
+}

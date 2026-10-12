@@ -1,3 +1,11 @@
+# Current override — checkpoint460
+
+Yêu cầu HUMAN mới nhất: **chỉ tạo chuyển động cho đúng unit gốc; không thiết kế/vẽ lại thành unit khác**. 429/436/439/440 đổi identity;443 edit trực tiếp original vẫn lệch composition nên tất cả HELD, không runtime hoặc continuity authority. Original infantry084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f là master duy nhất; giữ face/body/costume/helmet/colors và shield screenright/sword screenleft. Wagon phải giữ wholeoriginal415 cùng ngựa/xe/harness/cargo. Guide427/438/441 chỉ history, không guide-only foreignbody→repaint. Không gọi lại exhausted order hoặc mở keys/fanout khi identity chưa giữ được. Không lấy lời hứa prompt làm bằng chứng. Motion213/216/233 owner/worldcontact/runtime/fanout OPEN; wood032/iron141 accepted ONLYshownD1; food101 riêng; loadedgoods ordinarywalk.
+
+Human chỉ yêu cầu chuyển động của unit hiện có. Không dùng older guide/repaint plans bên dưới làm authority để tạo identity mới. Source213 vẫn candidate riêng, không approve từ195. Original443 failedpose preserved/notinstalled; không call lại. Currentfamily42/defaultzoom1.68 đã deployed433/451, sourcepixels/pivots/timing unchanged.
+
+---
+
 # Movement production — kế hoạch hiện hành232, nghiên cứu212 / preview213
 
 Ngày 10/10/2026. **D0 vẫn là candidate, chưa đủ điều kiện sản xuất hàng loạt.** Mục tiêu là một người dân có vóc dáng nhất quán, bước tự nhiên và mượt ở kích thước chơi; giữ phong cách minh họa chân thực của canonical.

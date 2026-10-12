@@ -1,0 +1,11 @@
+{
+  "stage": "/tmp/rds-egress456-fullsuite-stage",
+  "candidateSimSHA256": "95decc36cf5b4ef39ce2a8043220efc896019bc775344a0e5683d39067a5817d",
+  "migratedStrictTestSHA256": "aea5840462c3d68b054485e7b29dc75b1059cdff67e1af910c0a705ee96a4f45",
+  "testChanges": "Add455 originalspawn regressions and replace ONLY staged177reference with separatelypinned identicallyfixednonmemoized177reference. All assertions including completehash remain. Originalcanonical test/fixture untouched.",
+  "readOnlyDependencies": [
+    "docs symlink",
+    "node_modules symlink",
+    "dist symlink"
+  ]
+}

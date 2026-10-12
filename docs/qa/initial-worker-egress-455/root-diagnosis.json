@@ -1,0 +1,18 @@
+{
+  "status": "REPRODUCED_REAL_MOVE_STALL_PENDING_SAFE_FIX",
+  "scope": "Actual454ordinaryUI failure plus deterministic ordinarycommand reproduction. No browser state injection.",
+  "initialCommand": {
+    "map": "coast",
+    "actor": 9,
+    "target": [
+      8.4998808415058,
+      26.5000111144266
+    ]
+  },
+  "observed": "accepted move, zero displacement after400steps",
+  "hypothesis": "Nonterminal local reconnect goal7.5,24.5 overlaps stationary king at7.5,25 by0.5 < sum radii0.56. Existing crowdPatch requires exact goal and cannot connect. Must choose a free earlier/later path reconnect without relaxing actual sweep/collisions/FIFO/budgets.",
+  "art": "Transport source447 not exercised; no artfailure inferred.",
+  "setupFailure": "First root reproduction imported nonexistent tick export; source exports inspected and corrected harness to step. No runtime change or baseline game result from failed import.",
+  "production": "451+immutable230 unchanged; no install of ship candidate453 or gameplayfix yet.",
+  "next": "Finite455isolatedfix/regression; actual UI qualification andpairedbackendrelease remain required."
+}

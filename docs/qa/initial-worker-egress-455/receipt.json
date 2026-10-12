@@ -1,0 +1,39 @@
+{
+  "order": 455,
+  "status": "CLOSED_CANDIDATE_TARGETED_PASS_HISTORICAL_FULLHASH_LIMIT",
+  "profile": "gpt-6.1-sol/low",
+  "stage": "/tmp/rds-egress455-stage",
+  "sourceHEAD": "39e3eb08a18479ffce671a4b3e8994ba4159bee2",
+  "originalSimSHA256": "29233a059ec084bc8577d20a1bccfd28ddc3024b9cb9bf4d5598c22f220f748b",
+  "candidateSimSHA256": "95decc36cf5b4ef39ce2a8043220efc896019bc775344a0e5683d39067a5817d",
+  "patchSHA256": "b5c17f3d80f6063274180c48620428b4ac0e781c3ceaddfaced02bcafc761eb1",
+  "diagnosis": "OriginalCoastworker9 acceptedmove stays8.7/21.5 after400steps. Nonterminalreconnect7.5/24.5 is0.5fromking5 at7.5/25, below0.56combinedradii. Existing localplanner cannot reach its exactblockedgoal.",
+  "change": "Single predicate filters occupied nonterminal reconnectwaypoints through crowdSweep(q,q,true). Terminal goal retains contact-ring handling; earlier free waypoints can reconnect. Existing fallback, terrain/bodyconstraints, speed/radii, map/economy unchanged.",
+  "budget": "Pointchecks occur before FIFO planner admission and count in same4096plannerEdges budget;4plans limit/FIFO/requestretention untouched. No budget increase.",
+  "coreChecks": {
+    "newRegression": 13,
+    "existingCrowd": 10,
+    "existingNavigation": 6,
+    "pass": 29,
+    "exactCoast9": "Arrives within0.7normalrange; repeatedhashdeterminism; neighbors unchanged and no bodyoverlap; candidate400step final8.196091331556403/25.869367162862236 ordernull.",
+    "bothMapsWorkers": "Originalspawns7\u201312 individualcommands to originalfreevisible8.4998808415058/26.5000111144266; eacharrives; allpairs clearance and stationaryneighbors preserved.",
+    "existingAdmissionTests": "Persistentblockedrequesters admitted and plannerbudgetexhaustion independentmovement PASS."
+  },
+  "historicalCache177": {
+    "unchangedCurrentBaseline": "8/8PASS exactfixture",
+    "candidate": "5/8PASS,3historicalfullhashassertionsFAIL; originalfailures retained",
+    "firstBuildDifference": "tick23 crowdStats.edges/queries/plannerEdges +1 only; entity/path/order same atfirstdifference",
+    "firstAIDifference": "bothmaps tick45 same3counters +2 only; entity/path/order same atfirstdifference",
+    "scope": "Not claims of later identicalstates/fullmatches. Exacthistoricwholehash not PASS forcandidate. No tests/assertions weakened.",
+    "initialHarnessFailure": "Missing historicalfixture in isolatedstage; original log retained, exactfixture copied; tests retried. Shellcopy relativecwd error corrected usingabsoluteQApath."
+  },
+  "canonicalPublic451Backend230HEADPreserved": true,
+  "baselineReceiptPreserved": true,
+  "health": {
+    "ok": true,
+    "rooms": 0
+  },
+  "imageBuildBrowserDeploymentCalls": 0,
+  "handles": "CLOSED",
+  "pending": "Root review candidatepatch and hash-equivalence limitation, then new pairedruntime/build/UI qualification before canonical/public deployment. Actual454 scene remains blocked, no replay/bypass by thisworker."
+}

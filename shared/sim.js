@@ -139,7 +139,7 @@ function travel(s,e,target,range=0.65,finalGround=false){
  while(e.path.length&&remaining>1e-8){let next=e.crowdRoute?.[0]||e.path[0];const d=dist(e,next),amount=Math.min(d,remaining),to=d?{x:e.x+(next.x-e.x)*amount/d,y:e.y+(next.y-e.y)*amount/d}:next;
  if(!crowdSweep(s,e,e,to)){
   e.crowdRoute=[];if((e.crowdRetry??0)>s.tick)break;
-  const goal=[...e.path].reverse().find(q=>dist(e,q)<=4&&dist(e,q)>1)||e.path[0];const terminal=goal===e.path.at(-1)?{target,range}:null;const route=crowdPatch(s,e,goal,terminal);if(!route)break;e.crowdRoute=route;e.crowdGoal={...goal};continue;
+  const goal=[...e.path].reverse().find(q=>dist(e,q)<=4&&dist(e,q)>1&&(q===e.path.at(-1)||crowdSweep(s,e,q,q,true)))||e.path[0];const terminal=goal===e.path.at(-1)?{target,range}:null;const route=crowdPatch(s,e,goal,terminal);if(!route)break;e.crowdRoute=route;e.crowdGoal={...goal};continue;
  }
  if(d>0)e.dir=(Math.round(Math.atan2(to.y-e.y,to.x-e.x)/(Math.PI/4))+8)%8;const old={x:e.x,y:e.y};e.x=to.x;e.y=to.y;crowdUpdate(s,e,old);remaining-=amount;
  if(d<=amount+1e-8){if(e.crowdRoute?.length){e.crowdRoute.shift();if(!e.crowdRoute.length){const i=e.path.findIndex(q=>q.x===e.crowdGoal.x&&q.y===e.crowdGoal.y);if(i>=0)e.path.splice(0,i+1);}}else e.path.shift();}

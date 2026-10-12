@@ -1,0 +1,35 @@
+{
+  "order": 447,
+  "profile": "gpt-6.1-sol/low",
+  "head": "39e3eb08a18479ffce671a4b3e8994ba4159bee2",
+  "callCap": 1,
+  "retries": 0,
+  "mode": "new-missing-whole-identity",
+  "inputRoles": {
+    "docs/art/pipeline/shipyard-idle-164/working.png": "medium/camera only, embedded hull not extracted",
+    "docs/art/granary/variant-01/raw.png": "medium/timber only, not identity"
+  },
+  "inputPins": {
+    "docs/art/pipeline/shipyard-idle-164/working.png": "f966bf728f0b6057d6ea57afd4eaf83690b5618529623cd3fab5a4ea12591855",
+    "docs/art/granary/variant-01/raw.png": "0d0c3963f3faed9341cd09f2ff118a753e9bd1ee431290b51635eebb17b61715",
+    "shared/data.js": "ffc3f45adc58f212066d3763c591377ce15b9f6ac78e4685a95fc3ac747818e1",
+    "docs/art/pipeline/GRAPHICS_PRODUCTION_PLAN.md": "32d176a4dec284bee89ac310edae9bf8c65dd135606c7a2c00d3ac3fc2398d42",
+    "docs/art/pipeline/PURE_2D_MASTER_DIRECTIVE_20261008.txt": "8acf4a45029d6febb0797c53900ae207f16f4318ccdd4de07c1f298462a1d537",
+    "docs/art/units/naval-source-intake-445/receipt.json": "2b42965bef65a5f052b6d057bacdea877531049bbc8e72df27d09bbd3a023cce",
+    "public/assets/art-v1/fort-202-manifest.json": "42425c68d448f89047ea15fe6e108ec2b25393d34312ae0adb37ff1d9be282fa"
+  },
+  "sourceReference": {
+    "url": "https://www.rmg.co.uk/collections/objects/rmgc-object-602623",
+    "id": "P33997",
+    "date": "1937\u20131938",
+    "caveat": "Traditional wooden Tonkin type evidence only; precise game-period authenticity unverified."
+  },
+  "canvas": "whole square raw\u2192256\u2192128 uniform only",
+  "render": 78,
+  "waterlinePivotProposal": [
+    0.5,
+    0.78
+  ],
+  "installation": false,
+  "motion": false
+}

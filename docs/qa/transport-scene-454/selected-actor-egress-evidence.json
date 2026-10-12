@@ -1,0 +1,42 @@
+{
+  "path": "NOT_EXPOSED_IN_VIEW",
+  "pathKey": "NOT_EXPOSED_IN_VIEW",
+  "retryPath": "NOT_EXPOSED_IN_VIEW",
+  "crowdRoute": "NOT_EXPOSED_IN_VIEW",
+  "crowdGoal": "NOT_EXPOSED_IN_VIEW",
+  "crowdRetry": "NOT_EXPOSED_IN_VIEW",
+  "wait": "NOT_EXPOSED_IN_VIEW",
+  "entity": {
+    "id": 9,
+    "owner": 0,
+    "type": "villager",
+    "kind": "unit",
+    "x": 8.7,
+    "y": 21.5,
+    "hp": 65,
+    "maxHp": 65,
+    "food": 40,
+    "foodMax": 40,
+    "morale": 95,
+    "state": "walk",
+    "dir": 0,
+    "cooldown": 0,
+    "queue": [],
+    "cargo": {
+      "food": 0,
+      "wood": 0,
+      "iron": 0,
+      "units": []
+    },
+    "resuppliedTick": 369,
+    "starving": 0,
+    "order": {
+      "type": "move",
+      "x": 8.4998808415058,
+      "y": 26.5000111144266
+    }
+  },
+  "reason": "shared/sim.js view explicitly excludes path/pathKey/retryPath/crowdRoute/crowdGoal/crowdRetry; no private browser reads or injection performed",
+  "browserClosed": true,
+  "sourcePreserved": true
+}

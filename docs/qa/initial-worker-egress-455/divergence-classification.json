@@ -1,0 +1,47 @@
+{
+  "scope": "First historical hash divergence only, no mature fullmatch replay; existing177 assertions retained unchanged.",
+  "rows": [
+    {
+      "mapId": "delta",
+      "tick": 45,
+      "firstDifference": [
+        {
+          "path": "crowdStats.edges",
+          "candidate": 1875,
+          "baseline": 1873
+        },
+        {
+          "path": "crowdStats.queries",
+          "candidate": 1867,
+          "baseline": 1865
+        },
+        {
+          "path": "crowdStats.plannerEdges",
+          "candidate": 1865,
+          "baseline": 1863
+        }
+      ]
+    },
+    {
+      "mapId": "coast",
+      "tick": 45,
+      "firstDifference": [
+        {
+          "path": "crowdStats.edges",
+          "candidate": 1875,
+          "baseline": 1873
+        },
+        {
+          "path": "crowdStats.queries",
+          "candidate": 1867,
+          "baseline": 1865
+        },
+        {
+          "path": "crowdStats.plannerEdges",
+          "candidate": 1865,
+          "baseline": 1863
+        }
+      ]
+    }
+  ]
+}

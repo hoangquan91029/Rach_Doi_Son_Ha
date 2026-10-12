@@ -1,0 +1,745 @@
+{
+  "ignoredField": "crowdStats ONLY, removed at top level; all other state fields compared every tick",
+  "syntheticFixture": "Exact original177 test setup changes preserved in diagnostic only; no live injection",
+  "rows": [
+    {
+      "name": "delta normalAI exact177scenario2000ticks",
+      "ticksCompared": 2000,
+      "firstNonCounterDifference": {
+        "tick": 501,
+        "differences": [
+          {
+            "path": "entities.24.x",
+            "candidate": 56.597007350913685,
+            "baseline": 56.5
+          },
+          {
+            "path": "entities.24.y",
+            "candidate": 24.42638162356485,
+            "baseline": 24.386199863166517
+          },
+          {
+            "path": "entities.24.dir",
+            "candidate": 0,
+            "baseline": 2
+          },
+          {
+            "path": "entities.24.crowdRoute.0",
+            "candidate": {
+              "x": 56.96193976625565,
+              "y": 24.577541579349063
+            }
+          },
+          {
+            "path": "entities.24.crowdRoute.1",
+            "candidate": {
+              "x": 57.5,
+              "y": 25
+            }
+          },
+          {
+            "path": "entities.24.crowdRoute.2",
+            "candidate": {
+              "x": 58,
+              "y": 25.5
+            }
+          },
+          {
+            "path": "entities.24.crowdRoute.3",
+            "candidate": {
+              "x": 58.5,
+              "y": 25.5
+            }
+          },
+          {
+            "path": "entities.24.crowdRoute.4",
+            "candidate": {
+              "x": 58.5,
+              "y": 26
+            }
+          },
+          {
+            "path": "entities.24.crowdRoute.5",
+            "candidate": {
+              "x": 58.5,
+              "y": 26.5
+            }
+          },
+          {
+            "path": "entities.24.crowdRoute.6",
+            "candidate": {
+              "x": 58.5,
+              "y": 27
+            }
+          },
+          {
+            "path": "entities.24.crowdRoute.7",
+            "candidate": {
+              "x": 58.5,
+              "y": 27.5
+            }
+          },
+          {
+            "path": "entities.24.crowdRoute.8",
+            "candidate": {
+              "x": 58,
+              "y": 27.5
+            }
+          },
+          {
+            "path": "entities.24.crowdRoute.9",
+            "candidate": {
+              "x": 57.5,
+              "y": 27.5
+            }
+          },
+          {
+            "path": "entities.24.crowdRoute.10",
+            "candidate": {
+              "x": 57,
+              "y": 27.5
+            }
+          },
+          {
+            "path": "entities.24.crowdRoute.11",
+            "candidate": {
+              "x": 56.5,
+              "y": 28
+            }
+          },
+          {
+            "path": "entities.24.crowdRoute.12",
+            "candidate": {
+              "x": 56,
+              "y": 28.5
+            }
+          },
+          {
+            "path": "entities.24.crowdRoute.13",
+            "candidate": {
+              "x": 55.5,
+              "y": 28
+            }
+          },
+          {
+            "path": "entities.24.crowdRoute.14",
+            "candidate": {
+              "x": 55,
+              "y": 27.5
+            }
+          },
+          {
+            "path": "entities.24.crowdRoute.15",
+            "candidate": {
+              "x": 55.5,
+              "y": 27
+            }
+          },
+          {
+            "path": "entities.24.crowdRoute.16",
+            "candidate": {
+              "x": 56,
+              "y": 26.5
+            }
+          },
+          {
+            "path": "entities.24.crowdRoute.17",
+            "candidate": {
+              "x": 56.5,
+              "y": 26.5
+            }
+          },
+          {
+            "path": "entities.24.crowdGoal.x",
+            "candidate": 56.5,
+            "baseline": 53.5
+          },
+          {
+            "path": "entities.24.crowdGoal.y",
+            "candidate": 26.5,
+            "baseline": 19.5
+          },
+          {
+            "path": "entities.24.lastMovedTick",
+            "candidate": 501,
+            "baseline": 500
+          }
+        ]
+      },
+      "nonCounterDivergentTicks": 1500,
+      "maxCounters": {
+        "candidate": {
+          "plans": 4,
+          "plannerEdges": 2371,
+          "edges": 2385,
+          "queries": 80707,
+          "bodyChecks": 110559,
+          "expansions": 1683,
+          "waits": 68,
+          "rebuilds": 1930
+        },
+        "baseline": {
+          "plans": 4,
+          "plannerEdges": 1863,
+          "edges": 1873,
+          "queries": 165790,
+          "bodyChecks": 183674,
+          "expansions": 23583,
+          "waits": 203,
+          "rebuilds": 1938
+        }
+      },
+      "budgetExceeded": false,
+      "terminal": {
+        "tick": 2000,
+        "equalIgnoringOnlyCrowdStats": false,
+        "candidateSHA256": "0bdfae9227646b684c50d8d045d8f9b1f9b76828ebdfeee9350ee2871906d08f",
+        "baselineSHA256": "617b0a4518fb5190263ea20358d30c35c3ad60d2dfc5debf9826565f7ea00957",
+        "differences": [
+          {
+            "path": "map.resources.6.amount",
+            "candidate": 3659.9999999999827,
+            "baseline": 3652.199999999978
+          },
+          {
+            "path": "map.resources.7.amount",
+            "candidate": 3458.549999999859,
+            "baseline": 3475.2499999998695
+          },
+          {
+            "path": "map.resources.8.amount",
+            "candidate": 2400.0999999995092,
+            "baseline": 2316.0499999994577
+          },
+          {
+            "path": "map.resources.9.amount",
+            "candidate": 3408.899999999944,
+            "baseline": 3479.9999999999877
+          },
+          {
+            "path": "players.0.population",
+            "candidate": 12,
+            "baseline": 9
+          },
+          {
+            "path": "players.0.stats.kills",
+            "candidate": 3,
+            "baseline": 2
+          },
+          {
+            "path": "players.0.stats.lost",
+            "candidate": 1,
+            "baseline": 4
+          },
+          {
+            "path": "players.1.resources.wood",
+            "candidate": 45,
+            "baseline": 185
+          },
+          {
+            "path": "players.1.resources.food",
+            "candidate": 76.72671999999352,
+            "baseline": 97.22006399999256
+          },
+          {
+            "path": "players.1.resources.iron",
+            "candidate": 650,
+            "baseline": 795
+          },
+          {
+            "path": "players.1.population",
+            "candidate": 25,
+            "baseline": 29
+          },
+          {
+            "path": "players.1.stats.kills",
+            "candidate": 1,
+            "baseline": 4
+          },
+          {
+            "path": "players.1.stats.lost",
+            "candidate": 3,
+            "baseline": 2
+          },
+          {
+            "path": "players.1.stats.gathered",
+            "candidate": 2172.450000000585,
+            "baseline": 2176.5000000005875
+          },
+          {
+            "path": "players.1.stats.foodTransported",
+            "candidate": 137.7715200000295,
+            "baseline": 149.19129600003532
+          },
+          {
+            "path": "players.1.ai.builder",
+            "candidate": null,
+            "baseline": 26
+          },
+          {
+            "path": "players.1.ai.building",
+            "candidate": null,
+            "baseline": "fort"
+          },
+          {
+            "path": "players.1.ai.naval",
+            "candidate": {
+              "transport": 51,
+              "raiders": [
+                40,
+                44,
+                48
+              ],
+              "stage": "sail",
+              "began": 1395
+            }
+          },
+          {
+            "path": "players.1.populationQueued",
+            "candidate": 2,
+            "baseline": 1
+          },
+          {
+            "path": "entities.2.hp",
+            "candidate": 480,
+            "baseline": 265.72800000000007
+          },
+          {
+            "path": "entities.2.morale",
+            "candidate": 95,
+            "baseline": 67.14464000000002
+          },
+          {
+            "path": "entities.2.hitUntil",
+            "baseline": 2000
+          },
+          {
+            "path": "entities.3.hp",
+            "candidate": 650,
+            "baseline": 555.7999999999998
+          },
+          {
+            "path": "entities.3.morale",
+            "candidate": 95,
+            "baseline": 82.75399999999998
+          },
+          {
+            "path": "entities.3.hitUntil",
+            "baseline": 1991
+          },
+          {
+            "path": "entities.5.hp",
+            "candidate": 360,
+            "baseline": 167.31593653165038
+          },
+          {
+            "path": "entities.5.morale",
+            "candidate": 95,
+            "baseline": 94.76080000000013
+          },
+          {
+            "path": "entities.5.hitUntil",
+            "baseline": 1994
+          },
+          {
+            "path": "entities.5.attackStartedTick",
+            "baseline": 1908
+          },
+          {
+            "path": "entities.5.attackImpactTick",
+            "baseline": 1912
+          }
+        ]
+      }
+    },
+    {
+      "name": "coast normalAI exact177scenario2000ticks",
+      "ticksCompared": 2000,
+      "firstNonCounterDifference": {
+        "tick": 501,
+        "differences": [
+          {
+            "path": "entities.24.x",
+            "candidate": 56.597007350913685,
+            "baseline": 56.5
+          },
+          {
+            "path": "entities.24.y",
+            "candidate": 24.42638162356485,
+            "baseline": 24.386199863166517
+          },
+          {
+            "path": "entities.24.dir",
+            "candidate": 0,
+            "baseline": 2
+          },
+          {
+            "path": "entities.24.crowdRoute.0",
+            "candidate": {
+              "x": 56.96193976625565,
+              "y": 24.577541579349063
+            }
+          },
+          {
+            "path": "entities.24.crowdRoute.1",
+            "candidate": {
+              "x": 57.5,
+              "y": 25
+            }
+          },
+          {
+            "path": "entities.24.crowdRoute.2",
+            "candidate": {
+              "x": 58,
+              "y": 25.5
+            }
+          },
+          {
+            "path": "entities.24.crowdRoute.3",
+            "candidate": {
+              "x": 58.5,
+              "y": 25.5
+            }
+          },
+          {
+            "path": "entities.24.crowdRoute.4",
+            "candidate": {
+              "x": 58.5,
+              "y": 26
+            }
+          },
+          {
+            "path": "entities.24.crowdRoute.5",
+            "candidate": {
+              "x": 58.5,
+              "y": 26.5
+            }
+          },
+          {
+            "path": "entities.24.crowdRoute.6",
+            "candidate": {
+              "x": 58.5,
+              "y": 27
+            }
+          },
+          {
+            "path": "entities.24.crowdRoute.7",
+            "candidate": {
+              "x": 58.5,
+              "y": 27.5
+            }
+          },
+          {
+            "path": "entities.24.crowdRoute.8",
+            "candidate": {
+              "x": 58,
+              "y": 27.5
+            }
+          },
+          {
+            "path": "entities.24.crowdRoute.9",
+            "candidate": {
+              "x": 57.5,
+              "y": 27.5
+            }
+          },
+          {
+            "path": "entities.24.crowdRoute.10",
+            "candidate": {
+              "x": 57,
+              "y": 27.5
+            }
+          },
+          {
+            "path": "entities.24.crowdRoute.11",
+            "candidate": {
+              "x": 56.5,
+              "y": 28
+            }
+          },
+          {
+            "path": "entities.24.crowdRoute.12",
+            "candidate": {
+              "x": 56,
+              "y": 28.5
+            }
+          },
+          {
+            "path": "entities.24.crowdRoute.13",
+            "candidate": {
+              "x": 55.5,
+              "y": 28
+            }
+          },
+          {
+            "path": "entities.24.crowdRoute.14",
+            "candidate": {
+              "x": 55,
+              "y": 27.5
+            }
+          },
+          {
+            "path": "entities.24.crowdRoute.15",
+            "candidate": {
+              "x": 55.5,
+              "y": 27
+            }
+          },
+          {
+            "path": "entities.24.crowdRoute.16",
+            "candidate": {
+              "x": 56,
+              "y": 26.5
+            }
+          },
+          {
+            "path": "entities.24.crowdRoute.17",
+            "candidate": {
+              "x": 56.5,
+              "y": 26.5
+            }
+          },
+          {
+            "path": "entities.24.crowdGoal.x",
+            "candidate": 56.5,
+            "baseline": 53.5
+          },
+          {
+            "path": "entities.24.crowdGoal.y",
+            "candidate": 26.5,
+            "baseline": 19.5
+          },
+          {
+            "path": "entities.24.lastMovedTick",
+            "candidate": 501,
+            "baseline": 500
+          }
+        ]
+      },
+      "nonCounterDivergentTicks": 1500,
+      "maxCounters": {
+        "candidate": {
+          "plans": 4,
+          "plannerEdges": 2371,
+          "edges": 2387,
+          "queries": 85781,
+          "bodyChecks": 122063,
+          "expansions": 1153,
+          "waits": 66,
+          "rebuilds": 1930
+        },
+        "baseline": {
+          "plans": 4,
+          "plannerEdges": 1863,
+          "edges": 1873,
+          "queries": 191906,
+          "bodyChecks": 219505,
+          "expansions": 26510,
+          "waits": 211,
+          "rebuilds": 1938
+        }
+      },
+      "budgetExceeded": false,
+      "terminal": {
+        "tick": 2000,
+        "equalIgnoringOnlyCrowdStats": false,
+        "candidateSHA256": "56258820c89a27ae1cf2d159bdf2a74eab217b5cf1160ed2d2c76c9b2ddc72d5",
+        "baselineSHA256": "6a9f85146a20df4bc391521ade9217a7e97a3953d420ea27ded9bd1132147a3c",
+        "differences": [
+          {
+            "path": "map.resources.6.amount",
+            "candidate": 3659.9999999999827,
+            "baseline": 3652.199999999978
+          },
+          {
+            "path": "map.resources.7.amount",
+            "candidate": 3458.549999999859,
+            "baseline": 3475.2499999998695
+          },
+          {
+            "path": "map.resources.8.amount",
+            "candidate": 2398.8999999995085,
+            "baseline": 2316.0499999994577
+          },
+          {
+            "path": "map.resources.9.amount",
+            "candidate": 3407.3999999999432,
+            "baseline": 3479.9999999999877
+          },
+          {
+            "path": "players.0.population",
+            "candidate": 13,
+            "baseline": 9
+          },
+          {
+            "path": "players.0.stats.kills",
+            "candidate": 3,
+            "baseline": 1
+          },
+          {
+            "path": "players.0.stats.lost",
+            "candidate": 0,
+            "baseline": 4
+          },
+          {
+            "path": "players.1.resources.wood",
+            "candidate": 0,
+            "baseline": 185
+          },
+          {
+            "path": "players.1.resources.food",
+            "candidate": 75.9498879999823,
+            "baseline": 173.32623999999134
+          },
+          {
+            "path": "players.1.resources.iron",
+            "candidate": 610,
+            "baseline": 795
+          },
+          {
+            "path": "players.1.population",
+            "candidate": 25,
+            "baseline": 30
+          },
+          {
+            "path": "players.1.stats.kills",
+            "candidate": 0,
+            "baseline": 4
+          },
+          {
+            "path": "players.1.stats.lost",
+            "candidate": 3,
+            "baseline": 1
+          },
+          {
+            "path": "players.1.stats.gathered",
+            "candidate": 2175.1500000005867,
+            "baseline": 2176.5000000005875
+          },
+          {
+            "path": "players.1.stats.foodTransported",
+            "candidate": 129.8370560000323,
+            "baseline": 145.7070720000341
+          },
+          {
+            "path": "players.1.ai.builder",
+            "candidate": null,
+            "baseline": 26
+          },
+          {
+            "path": "players.1.ai.building",
+            "candidate": null,
+            "baseline": "fort"
+          },
+          {
+            "path": "players.1.ai.naval",
+            "candidate": {
+              "transport": 51,
+              "raiders": [
+                40,
+                44,
+                48
+              ],
+              "stage": "sail",
+              "began": 1395
+            }
+          },
+          {
+            "path": "players.1.populationQueued",
+            "candidate": 3,
+            "baseline": 1
+          },
+          {
+            "path": "entities.3.hp",
+            "candidate": 650,
+            "baseline": 367.2799999999997
+          },
+          {
+            "path": "entities.3.morale",
+            "candidate": 95,
+            "baseline": 58.24640000000001
+          },
+          {
+            "path": "entities.3.hitUntil",
+            "baseline": 2002
+          },
+          {
+            "path": "entities.5.hp",
+            "candidate": 360,
+            "baseline": 247.39999999999674
+          },
+          {
+            "path": "entities.5.morale",
+            "candidate": 95,
+            "baseline": 94.57480000000002
+          },
+          {
+            "path": "entities.5.hitUntil",
+            "baseline": 2000
+          },
+          {
+            "path": "entities.12.id",
+            "candidate": 13,
+            "baseline": 17
+          },
+          {
+            "path": "entities.12.type",
+            "candidate": "infantry",
+            "baseline": "wagon"
+          },
+          {
+            "path": "entities.12.x",
+            "candidate": 26.38577358318328,
+            "baseline": 12.5
+          },
+          {
+            "path": "entities.12.y",
+            "candidate": 27.35554703098559,
+            "baseline": 30.5
+          },
+          {
+            "path": "entities.12.hp",
+            "candidate": 55.02553149358447,
+            "baseline": 140
+          }
+        ]
+      }
+    },
+    {
+      "name": "same-tickbuildandcombatdeath exact177scenario",
+      "ticksCompared": 109,
+      "firstNonCounterDifference": null,
+      "nonCounterDivergentTicks": 0,
+      "maxCounters": {
+        "candidate": {
+          "plans": 1,
+          "plannerEdges": 273,
+          "edges": 275,
+          "queries": 439,
+          "bodyChecks": 306,
+          "expansions": 23,
+          "waits": 0,
+          "rebuilds": 96
+        },
+        "baseline": {
+          "plans": 1,
+          "plannerEdges": 272,
+          "edges": 274,
+          "queries": 438,
+          "bodyChecks": 306,
+          "expansions": 23,
+          "waits": 0,
+          "rebuilds": 96
+        }
+      },
+      "budgetExceeded": false,
+      "terminal": {
+        "tick": 109,
+        "equalIgnoringOnlyCrowdStats": true,
+        "candidateSHA256": "df410114e566abf4a507556d333e7b5e29813c32430db6f1eedfe199390c09a2",
+        "baselineSHA256": "df410114e566abf4a507556d333e7b5e29813c32430db6f1eedfe199390c09a2",
+        "differences": []
+      }
+    }
+  ]
+}

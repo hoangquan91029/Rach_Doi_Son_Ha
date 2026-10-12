@@ -1,0 +1,58 @@
+{
+  "id": "transport-idle-d0-447",
+  "family": "unit.transport",
+  "kind": "unit",
+  "state": "idle",
+  "direction": 0,
+  "candidate": true,
+  "review": {
+    "status": "CANDIDATE"
+  },
+  "source": {
+    "path": "docs/art/units/transport-identity-447/working-256.png",
+    "sha256": "88be0e796dddf70c16e29501ea13ea7fc093bede0c67e05eba67394a7e2c6b0b",
+    "rgbaSha256": "1682a54cb88c0ab5b204ad1a604423c9d00764528b14bfbe810ad96f191320be",
+    "width": 256,
+    "height": 256
+  },
+  "runtime": {
+    "path": "transport-447/idle.png",
+    "sha256": "d3cbc022df157c74d9d6cad5051cdc2836fa1b68bac3a65764b443e4d2755eba",
+    "rgbaSha256": "5a97c4e8c84a5e43192406a3da9498b83fc7921fe8c2105f39c9177fb2dd7531",
+    "width": 128,
+    "height": 128,
+    "derivation": {
+      "method": "resize",
+      "filter": "lanczos",
+      "sourceSha256": "88be0e796dddf70c16e29501ea13ea7fc093bede0c67e05eba67394a7e2c6b0b"
+    }
+  },
+  "cell": {
+    "width": 128,
+    "height": 128
+  },
+  "pivot": {
+    "x": 128,
+    "y": 166.4,
+    "space": "source"
+  },
+  "render": {
+    "width": 78,
+    "height": 78
+  },
+  "alphaPolicy": "transparent",
+  "contactShadow": {
+    "mode": "baked"
+  },
+  "frames": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 1000
+    }
+  ],
+  "loop": true,
+  "notes": "Whole new missing transport identity447 D0 static candidate only. Waterline midpoint pivot0.5/0.65 chosen from brief whole source presentation, provisional; no animation/eightdirection/runtime/scene acceptance."
+}

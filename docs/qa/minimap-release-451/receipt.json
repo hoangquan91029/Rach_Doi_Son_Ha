@@ -1,0 +1,49 @@
+{
+  "status": "PROMOTED_PUBLIC451_MINIMAP446_BACKEND230_UNCHANGED",
+  "sourceHEAD": "39e3eb08a18479ffce671a4b3e8994ba4159bee2",
+  "files": 209,
+  "assets": 50,
+  "scope": "Index/newJS only; every old image/manifest/chunk exact; no new art or motion acceptance.",
+  "normalTLSPins": {
+    "index.html": {
+      "sha256": "4569b161354f3142a2349fa931269229bb12e9ce2736e1648d048bb46bf22048",
+      "status": 200,
+      "bytes": 4459
+    },
+    "assets/index-CU9fIOQr.js": {
+      "sha256": "08f8cb813455dc5725d8ba9b29005cd78c40bf1ba7dd416f03f10cadc940f555",
+      "status": 200,
+      "bytes": 173690
+    },
+    "assets/index-Dx0ueiQl.css": {
+      "sha256": "b5a28e062b20446a0d96f4ca389e4a45838d993c17d5f5804f1c50801f871cc5",
+      "status": 200,
+      "bytes": 15562
+    },
+    "assets/art-v1/fort-202-manifest.json": {
+      "sha256": "42425c68d448f89047ea15fe6e108ec2b25393d34312ae0adb37ff1d9be282fa",
+      "status": 200,
+      "bytes": 120636
+    }
+  },
+  "pairedRollback": "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/releases/449/rollback433.tar.gz",
+  "pairedRollbackSHA": "32a12ecb2b8ee4da82dd759e04d1c5d2290352966d6cdb18f4bc9270596e851e",
+  "old433Tree": "/home/kieu-hoang-quan/Videos/rds-public450-next-dist",
+  "policy": {
+    "service": "ActiveState=active\nFragmentPath=/home/kieu-hoang-quan/.config/systemd/user/rach-doi-son-ha.service\nDropInPaths=/home/kieu-hoang-quan/.config/systemd/user/rach-doi-son-ha.service.d/207-release.conf\nMainPID=3229\nWorkingDirectory=/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/releases/230/runtime230\n",
+    "pid": 3229,
+    "health": {
+      "ok": true,
+      "rooms": 0
+    },
+    "funnel": "{\n  \"TCP\": {\n    \"443\": {\n      \"HTTPS\": true\n    },\n    \"8443\": {\n      \"HTTPS\": true\n    }\n  },\n  \"Web\": {\n    \"kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net:443\": {\n      \"Handlers\": {\n        \"/\": {\n          \"Proxy\": \"http://127.0.0.1:3000\"\n        }\n      }\n    },\n    \"kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net:8443\": {\n      \"Handlers\": {\n        \"/\": {\n          \"Proxy\": \"http://127.0.0.1:3000\"\n        }\n      }\n    }\n  },\n  \"AllowFunnel\": {\n    \"kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net:443\": true,\n    \"kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net:8443\": true\n  }\n}\n",
+    "cmdlineSHA256": "64219d26cb2c512365907eebd2c4fea6f3288c15cba178fd1ab04cfdaab71853",
+    "environmentSHA256": "4f0cf090bb237c3e795918129655b5613b762b5d3533de046e929ef603d697f0",
+    "runtimeDistLink": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/dist"
+  },
+  "canonicalPreserved": true,
+  "exchanges": 1,
+  "restartCalls": 0,
+  "guards": "CLOSED",
+  "pending": "One relevant public browser minimap smoke; full goal INCOMPLETE"
+}

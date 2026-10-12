@@ -1,0 +1,46 @@
+{
+  "status": "PASS453_SCHEMA_TRANSPORT_SELECTION_LIVING_STATIC_DEATH_CONSTRUCTION_IDENTITY_CONTRACTS",
+  "assets": 51,
+  "results": [
+    {
+      "state": "idle",
+      "requestedDirection": 0,
+      "result": {
+        "asset": "transport-idle-d0-447",
+        "presentation": "AUTHORED",
+        "illustrationDirection": 0
+      }
+    },
+    {
+      "state": "walk",
+      "requestedDirection": 0,
+      "result": {
+        "asset": "transport-idle-d0-447",
+        "presentation": "STATIC_ILLUSTRATION",
+        "illustrationDirection": 0
+      }
+    },
+    {
+      "state": "walk",
+      "requestedDirection": 3,
+      "result": {
+        "asset": "transport-idle-d0-447",
+        "presentation": "STATIC_ILLUSTRATION",
+        "illustrationDirection": 0
+      }
+    },
+    {
+      "state": "death",
+      "requestedDirection": 0,
+      "result": "MISSING_NO_LIVING_IDLE_BORROW"
+    },
+    {
+      "state": "construction",
+      "requestedDirection": 0,
+      "result": "MISSING_NO_LIVING_IDLE_BORROW"
+    }
+  ],
+  "warshipDoesNotBorrowTransport": true,
+  "scope": "Focused selection contracts only; no source/motion/scene approval",
+  "handles": "CLOSED"
+}

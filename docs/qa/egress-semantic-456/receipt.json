@@ -1,0 +1,61 @@
+{
+  "order": "456A",
+  "status": "CLOSED_STRICT_FIXEDREFERENCE_PASS_FULLSUITE_PREEXISTING16FAIL",
+  "profile": "gpt-6.1-sol/low",
+  "sourceHEAD": "39e3eb08a18479ffce671a4b3e8994ba4159bee2",
+  "semanticDiagnostic": {
+    "ignored": "crowdStats ONLY",
+    "ticksCompared": 4109,
+    "sameTickBuild": "109/109ticks equal exceptcounters; terminalequal",
+    "normalAI": "Bothmaps firstactualnoncounterdiff tick501, enemyvillager25 moveorder54.5/38.5. Candidatecrowdgoal56.5/26.5 vs originalstalegoal53.5/19.5; routes/positions differ; terminaldifferent through2000. Not counters-only.",
+    "budgetExceeded": false,
+    "maxPlans": 4,
+    "maxPlannerEdges": 2371
+  },
+  "strictMigration": {
+    "result": "8/8PASS alloriginalcompletehashassertions",
+    "method": "Newcopiedoldnonmemoized177fixture has identical455reconnectpredicate; candidate retains currentquerymemo optimization. Only newfixtureurl/SHA/importlocations changed in diagnostictest, no droppedcounters/assertions/scenarios.",
+    "fixture": "reference-fixed/shared",
+    "fixedFixtureSHA": "caf654f1c472023346d79194d3b07c1e62cb389c373345124233944419cdf420",
+    "futureTestProposal": "navigation-cache177-migration-proposal.test.js",
+    "originalFixtureAndTestPreserved": true
+  },
+  "fullSuite": {
+    "stage": "/tmp/rds-egress456-fullsuite-stage",
+    "tests": 349,
+    "pass": 333,
+    "fail": 16,
+    "newRegressions": 13,
+    "migratedStrict177": 8,
+    "result": "NOT_FULL_PASS",
+    "controlFiles": 12,
+    "unchangedCurrentControl": {
+      "tests": 49,
+      "pass": 33,
+      "fail": 16,
+      "sameFailingLocations": true
+    },
+    "failureClassification": {
+      "artCatalogDefaultWoodGateFortHistoricalCounts": 4,
+      "buildingLivingHitFallbackExpectation": 6,
+      "retiredWoodWallDeathFixtures": 3,
+      "oldDepotRenderMetadataEquality": 1,
+      "livingFirearmNowAuthoredMissingIdentityExpectation": 1,
+      "registryMissingLivingStateDirectionNowStaticFallback": 1
+    },
+    "deadMissingIdentity": "Separate currentdeathclassificationPASS: deadvillager/deathstate/deadfirearm/genericking remainfalse. Original388failure livingfirearm408nowexists, notdeadidleborrow.",
+    "historicalFailuresNotRepaired": true
+  },
+  "canonicalPublic451Backend230HEADOriginal177And455Preserved": true,
+  "health": {
+    "ok": true,
+    "rooms": 0
+  },
+  "imageBrowserBuildDeployCalls": 0,
+  "handles": "CLOSED",
+  "logCaveats": [
+    "First fullsuitelaunch attempted nonexistentcwd beforeprepare; exec process rejected, no suite ran; repairedprepare then ONEfullsuite.",
+    "First baselinecontrol detachedPopen ended withoutresults; no controlcompleted; properboundedexec then49controls completed."
+  ],
+  "pending": "Rootreview explicitbugfix/reference migration and preexistingarttestcontrols, then pairedruntime/UIqualification. No canonical/publicdeployment by thisworker."
+}

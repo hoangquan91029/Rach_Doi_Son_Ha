@@ -1,7 +1,7 @@
 import test from 'node:test';import assert from 'node:assert/strict';import {mkdtempSync,cpSync,writeFileSync,readFileSync,rmSync} from 'node:fs';import os from 'node:os';import path from 'node:path';import {pathToFileURL} from 'node:url';import {createHash} from 'node:crypto';
 import * as candidate from '../shared/sim.js';
-const fixture=new URL('../docs/qa/navigation-cache-177/baseline/shared/',import.meta.url),temp=mkdtempSync(path.join(os.tmpdir(),'navigation-cache177-'));
-assert.equal(createHash('sha256').update(readFileSync(new URL('sim.js',fixture))).digest('hex'),'a266e0de5a6719579e48fd8a57888f09509f6af745190cb09b47c5641bab7796');cpSync(fixture,path.join(temp,'shared'),{recursive:true});writeFileSync(path.join(temp,'package.json'),'{"type":"module"}');const baseline=await import(pathToFileURL(path.join(temp,'shared/sim.js')));test.after(()=>rmSync(temp,{recursive:true,force:true}));
+const fixture=new URL('../docs/qa/egress-semantic-456/reference-fixed/shared/',import.meta.url),temp=mkdtempSync(path.join(os.tmpdir(),'navigation-cache177-'));
+assert.equal(createHash('sha256').update(readFileSync(new URL('sim.js',fixture))).digest('hex'),'caf654f1c472023346d79194d3b07c1e62cb389c373345124233944419cdf420');cpSync(fixture,path.join(temp,'shared'),{recursive:true});writeFileSync(path.join(temp,'package.json'),'{"type":"module"}');const baseline=await import(pathToFileURL(path.join(temp,'shared/sim.js')));test.after(()=>rmSync(temp,{recursive:true,force:true}));
 const equal=(a,b)=>assert.equal(candidate.hashState(a),baseline.hashState(b),'complete authoritative state/path differs');
 const pair=(setup,options={})=>[candidate,baseline].map(api=>{const s=api.createMatch(options);setup?.(s);return {api,s};});
 const entity=(s,type,owner=0)=>s.entities.find(e=>e.owner===owner&&e.type===type&&e.hp>0);

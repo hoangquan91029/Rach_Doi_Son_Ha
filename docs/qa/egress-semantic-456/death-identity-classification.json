@@ -1,0 +1,30 @@
+{
+  "status": "PASS_CURRENT_DEATH_MISSINGIDENTITY_GUARDS",
+  "rows": [
+    {
+      "name": "dead hp0",
+      "result": "NO_LIVING_IDLE_BORROW"
+    },
+    {
+      "name": "deathstate hp50",
+      "result": "NO_LIVING_IDLE_BORROW"
+    },
+    {
+      "name": "generic king noidentity",
+      "result": "NO_LIVING_IDLE_BORROW"
+    },
+    {
+      "name": "living authoredfirearm408",
+      "result": {
+        "asset": "unit-firearm-idle-d0-408",
+        "presentation": "STATIC_ILLUSTRATION"
+      }
+    },
+    {
+      "name": "dead firearm",
+      "result": "NO_LIVING_IDLE_BORROW"
+    }
+  ],
+  "classification": "Original388test combines dead/missing checks with living firearm expectedmissing. Actualfailure is legitimate authored408identity; deadguards PASS.",
+  "handles": "CLOSED"
+}

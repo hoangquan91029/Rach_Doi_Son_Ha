@@ -1,0 +1,25 @@
+{
+  "status": "PASS_PREBUILD457_WAIT_ROOT_EXPLICIT_CWD_BUILD",
+  "cwd": "/tmp/rds-transport457-stage",
+  "outDir": "/tmp/rds-transport457-build",
+  "config": "/tmp/rds-transport457-stage/vite.config.js",
+  "configSHA256": "18fc6a1c5544b54f954ce0779837c23695e29ca485f5c8de5a1cf03dddeb046d",
+  "candidateSimSHA256": "95decc36cf5b4ef39ce2a8043220efc896019bc775344a0e5683d39067a5817d",
+  "baselineSimSHA256": "29233a059ec084bc8577d20a1bccfd28ddc3024b9cb9bf4d5598c22f220f748b",
+  "soleDelta": [
+    "shared/sim.js"
+  ],
+  "assets": 51,
+  "original453Unchanged": true,
+  "allOldAssetClientServerBytesUnchanged": true,
+  "actualTrialServerEntrypoint": "/tmp/rds-transport457-stage/server/index.js",
+  "trialDistDir": "/tmp/rds-transport457-build",
+  "trialMustUse457Server": true,
+  "immutable230MustNotServeTrial": true,
+  "buildExists": false,
+  "sourceHEAD": "39e3eb08a18479ffce671a4b3e8994ba4159bee2",
+  "imageCalls": 0,
+  "buildCalls": 0,
+  "browserCalls": 0,
+  "guards": "CLOSED_PREPARED"
+}
