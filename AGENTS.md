@@ -1,4 +1,12 @@
-# Project task profile — checkpoint460 / source460 / public451
+# Project task profile — checkpoint467 / source460 / public451
+
+Checkpoint467:465 ONEbuiltin/0retry original PRIMARYedit target +463same-original wholeclothed POSEONLYguide yielded opposite contact. RootONE86squarecomparison selects keycandidate: sameface/helmet/armor/sash/shieldRIGHT/swordLEFT preserved and FARleftboot leads. Rawd1aa33b30c884fcaa30a756bb555eac49b00ffa2f2b8760a00c89136fbb6df2a; uniform1254→256→128, pivot6531057. NO runtimeinstall, continuousmotion/worldcontact/bodyshadow/fanoutapproval.443 and429/436/439/440 held unchanged, notreferences. Original084845…0517f remainsPRIMARYidentity/editmaster,465 secondaryselectedcontact only.
+
+466 SAMEsealed457actualChromehost+Firefoxguest onlineCoast: host9 exactoldmove/actualassignedarrival matchesreadonlyserver, guestreload reconnect/resync, ordinaryguestleave→hostOpponentleft resultMenu→bothmenu0/rooms0/errorsnetworkHTTP0 PASS. Guestenemyfog legitimatelyomits9; no dualvisibleactor/fullmatch/WAN/performanceclaim.461reloadbootrace and464pausebehindresult timeout kept as harnessfailures. Protectedcanonical/public451/backend230/453/457 unchanged during trials; no publicdeployment.
+
+462 test-only migration12files: activefort51/currentaccepted sameidentitylivingidle fallback/stonewalls+woodgates; death/construction/missingidentity/direction/phaseclock guards retained/strengthened. Historical321authoreddeath used SHA-pinned mockedclockfixture ONLY, never restoredwoodruntime. Original16failures/tests retained. Isolatedsamecurrentcode50focused+350fullsuite PASS; exacttestedtestbytes copied canonical onlyafter466guardsCLOSED. Not finalart/motion/completion proof.
+
+NEXT: identity-first SAMEoriginal infantry cycle. Use originalmaster andselected465oppositecontact, no rejectedbody/guideidentity. Prepare wholeclothed originalderived passingkeysF2/F6 with correctsupportside, finitebuiltin keyedits, then actualwholeinbetweens/atlas/ONEbriefgameplayloop/actualtravelStop. Do not redesign toobtainpose or openunit/directionfanout.465 singlekey is not walkPASS. Source460nav455/boat447 nowhas466onlinepairedqualification but public451/backend230 unchanged; futurepromotion needs451frontend+230backend currentrollback and NEWpairedrelease, neverfrontend-only/backend230claim.
 
 Checkpoint460: minimap446 đã lên PUBLIC451 và qua Firefox452. Source hiện có bản sửa455 chọn reconnect waypoint không bị unit đứng yên chiếm chỗ; actualCoast459 chứng minh dân làng9 hoàn thành đúng lệnh đã kẹt ở454. Localfort51 thêm ONLY tàu vận tải447 idle sau scene Shipyard→queue→spawn→pick→Move/Pause/Resume/arrival/Stop/menu; không thay artwork/unit đã có. Frame bộ binh443 vẫn HELD, không cài. Full goal INCOMPLETE.
 
@@ -16,7 +24,7 @@ Production vẫn immutable230 `~/.local/share/rach-doi-son-ha/releases/230/runti
 
 455:29focused PASS.456 strict memoized vs independently nonmemoized reference WITHsamebugfix8/8completehash PASS; giữ original177fixture/test và failures. AI khác originalbuggy routing từtick501, không chỉ counters; max4plans/2371plannerEdges. ONEfullsuite333/349,16failures tái hiện y hệt ở unchangedcurrent controls49tests33pass16fail (historical asset counts/fallback/wooddeath expectations). KHÔNG fullsuitePASS; không bỏ counters/assertions hoặc sửa unrelatedarttests để che lỗi.458 falsearrival timeout do idealtarget.7000416 vs actualassigned.6999999 được giữ;459 sửa CHỈ diagnostic và PASS trên SAMEsealed457.
 
-NEXT: motion identity preservation trước fanout; nav455/localtransport447 cần ONEnewpaired online/browser qualification và rollback451+230 trước promotion. Không call lại443 hoặc455/459, không build/mutate457. 453/457 sealedcandidate sources retained; root canonical460 selected only after459 CLOSED.
+NEXT:465sameidentity oppositecontact selected; controlledpassingkeys/inbetweens beforeloop/runtime/fanout.466pairedonline qualificationPASS; nav455/localtransport447 cần rollback451+230/newpairedrelease trước promotion. Không call lại443 hoặc455/459, không build/mutate457. 453/457 sealedcandidate sources retained; root canonical460 selected only after459 CLOSED.
 
 ## Controls and open goal
 

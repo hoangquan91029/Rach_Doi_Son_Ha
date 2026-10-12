@@ -1,0 +1,24 @@
+{
+  "id": 465,
+  "type": "ONE_BUILTIN_EDIT_ZERO_RETRY",
+  "state": "EXECUTED_RETURNED_CLOSED",
+  "inputs": [
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/units/sources/infantry-neutral-se-refine-01-imagegen-raw.png",
+      "sha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+      "role": "PRIMARY_EDIT_TARGET_ORIGINAL_IDENTITY"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/units/infantry-original-guide-463/f4-whole-clothed-guide.png",
+      "sha256": "90c2e6d0544384a045f09b6f24a60777a4a408f42655195bbfbc1d8dfe79e95e",
+      "role": "SECONDARY_ORIGINAL_DERIVED_POSE_ONLY"
+    }
+  ],
+  "newMethod": "Primaryactualoriginal with complete originalderived clothed pose constraint; no guideperson\u2192identityrepaint.443soleoriginalF1 and439foreignguide held unchanged/notreferences",
+  "maxImageCalls": 1,
+  "manualRetries": 0,
+  "runtimeWrites": 0,
+  "nextGate": "ONEbriefsameuniformgameplay-size comparison; ifsameidentityandoppositephase selectkeycandidate, notmotionapproval",
+  "originalMustRemainUnchanged": true,
+  "profile": "roottoolbuiltin; codeworkers gpt-6.1-sol/low"
+}

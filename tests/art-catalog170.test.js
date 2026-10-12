@@ -31,7 +31,7 @@ test('scoped bank retains world, desired building/body/portrait and separate-sha
  const result=compileManifest(catalog,{route:'shipyard',scope});assert.deepEqual(result.manifest.assets.map(a=>a.id),bank.assetIds);assert.ok(!result.manifest.assets.some(a=>a.kind==='portrait'));
 });
 test('catalog deduplicates definitions, recipes deduplicate bank IDs, runtime variants stay distinct',()=>{
- assert.equal(Object.keys(catalog.definitions).length,29);const c=copy(catalog);c.recipes.pilot.assetIds.push(c.recipes.pilot.assetIds[0]);const bank=selectBank(c,{route:'pilot'});assert.equal(bank.assetIds.filter(id=>id==='grass').length,1);
+ assert.equal(Object.keys(catalog.definitions).length,52);assert.deepEqual(Object.keys(catalog.definitions).sort(),[...new Set(Object.values(catalog.recipes).flatMap(r=>r.assetIds))].sort());const c=copy(catalog);c.recipes.pilot.assetIds.push(c.recipes.pilot.assetIds[0]);const bank=selectBank(c,{route:'pilot'});assert.equal(bank.assetIds.filter(id=>id==='grass').length,1);
  const original=catalog.definitions['villager-walk-south-014'];assert.equal(original.mappingKey,JSON.stringify(['unit','unit.villager','walk',1,original.asset.runtime.sha256]));assert.equal(compileManifest(c,{route:'pilot'}).manifest.assets.length,catalog.recipes.pilot.assetIds.length);
 });
 test('missing requested family remains explicit fallback and cannot be a release scope',()=>{

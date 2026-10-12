@@ -1,0 +1,27 @@
+{
+  "status": "ROOT_REVIEWED_TEST_ONLY_MIGRATION_PASS",
+  "focused": "50/50PASS",
+  "fullSuite": "350/350PASS exactisolatedstage",
+  "source": "0bfefd6/source460 sim455",
+  "files": [
+    "tests/art-catalog170.test.js",
+    "tests/art-default387.test.js",
+    "tests/barracks122.test.js",
+    "tests/building-collapse-clock329.test.js",
+    "tests/camp148.test.js",
+    "tests/depot127.test.js",
+    "tests/fort202.test.js",
+    "tests/illustration-fallback388.test.js",
+    "tests/roster-registry296.test.js",
+    "tests/shipyard165.test.js",
+    "tests/wood-gate378.test.js",
+    "tests/workshop144.test.js"
+  ],
+  "runtimeChanges": 0,
+  "artChanges": 0,
+  "oldTestsAndFailureEvidencePreserved": true,
+  "reference": "SHA-pinned historical321 wholeasset mocked only for existingclockimplementation, never activewoodart",
+  "strictGuards": "death/construction/noidentity/invaliddirection/phaseclock unchanged or strengthened",
+  "worker": "terminal error; root took over, inspected actual50focusedPASS then ONEfullsuite350PASS",
+  "handles": "CLOSED"
+}
