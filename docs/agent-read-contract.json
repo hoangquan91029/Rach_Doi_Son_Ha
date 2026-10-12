@@ -1,0 +1,36 @@
+{
+  "schema": "rds-agent-read/v1",
+  "common": [
+    "AGENTS.md",
+    "docs/PROJECT_STATE.md",
+    "docs/NEXT_STEPS.md",
+    "docs/ARCHITECTURE_DECISIONS.md"
+  ],
+  "tasks": {
+    "audit": [
+      "docs/PROJECT_ROADMAP.md",
+      "docs/art/pipeline/ANIMATION_RESEARCH.md"
+    ],
+    "art": [
+      "docs/art/ART_DIRECTION.md",
+      "docs/art/pipeline/ANIMATION_CONTRACT.md",
+      "docs/art/pipeline/SPRITE_PRODUCTION_WORKFLOW.md",
+      "docs/art/pipeline/IMAGE_GENERATION_TEMPLATES.md",
+      "docs/art/pipeline/ANIMATION_ARCHETYPES.md",
+      "docs/art/pipeline/ASSET_QA.md",
+      "docs/art/pipeline/REVIEW_PRIORITY_20261008.md"
+    ],
+    "runtime": [
+      "docs/art/pipeline/ANIMATION_CONTRACT.md",
+      "docs/art/pipeline/ASSET_QA.md",
+      "shared/unit-action-spec.js",
+      "shared/visible-action.js",
+      "client/world-presentation.js"
+    ],
+    "release": [
+      "docs/PROJECT_ROADMAP.md",
+      "server/DEPLOY.md",
+      "docs/art/pipeline/ASSET_QA.md"
+    ]
+  }
+}

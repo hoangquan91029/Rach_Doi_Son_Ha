@@ -1,0 +1,45 @@
+{
+  "orderId": "infantry-D0-F4-target-edit-486",
+  "slotIndex": 4,
+  "kind": "key",
+  "values": {
+    "identity": "infantry",
+    "master": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+    "direction": "0",
+    "camera": "dimetric 2:1 ground projection; fixed whole original elevated camera; no independent camera fit",
+    "screenFacing": "ESE",
+    "weaponOwnership": "Physical sword hand and shield hand remain those of original084845; D0 sword screenleft and shield screenright only; screen sides change with view",
+    "referenceRoles": "originalmaster,neighbor",
+    "invariants": "Image1 is the canonical appearance reference only. Image2 is the WHOLE465 EDIT TARGET and already has correct opposite physical leg ownership. Start from image2. Preserve its face, helmet, armor, red sash, sword screenleft/shield screenright, body proportions, camera and1254canvas/pivot6531057. Do not revert its legs to image1. No redesign, background, labels or ground shadow.",
+    "action": "walk",
+    "phase": "0.5",
+    "support": "Retain ContactB of image2: sword-side FAR leg leads, shield-side NEAR leg trails. Correct only the projected reach so both soles share the same dimetric ground plane.",
+    "movingParts": "In the1254canvas, lead far sword-side boot moves diagonally down-right toward sole around(784,1141); trailing near shield-side boot moves up-left toward sole around(534,994). Repose complete connected legs naturally from their EXISTING hips and knees, retaining which physical leg leads. Both boot toes follow travel down-right; no detached parts, straight vertical leg lift or swapped ownership.",
+    "bodyMotion": "Keep image2 head/torso/root/overall height fixed. Small natural pelvis weight shift only as needed for a grounded diagonal stride; maintain original body volume.",
+    "equipmentMotion": "Keep image2 sword and shield, the same physical hands and grips, equipment sizes and positions. No new weapon or armor detail.",
+    "nextKey": "This ONE contact correction is experimental. Preserve ContactB leg exchange; no other frames, poses or directions."
+  },
+  "references": [
+    {
+      "assetId": "infantry-idle-D00",
+      "direction": 0,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/units/sources/infantry-neutral-se-refine-01-imagegen-raw.png",
+      "sha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+      "rgbaSha256": "0fdc9a92dab8aa2c420c764ff0808977daec9f4133eda860cdebc18e67463179",
+      "status": "existing source custody; no new view or motion approval",
+      "role": "originalmaster"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/units/infantry-opposite-contact-465/raw.png",
+      "sha256": "d1aa33b30c884fcaa30a756bb555eac49b00ffa2f2b8760a00c89136fbb6df2a",
+      "rgbaSha256": "87e64ead3ee5d0177742af4a97d64bd7e29eec41ef21e48bb0d2898e6979af32",
+      "role": "neighbor",
+      "status": "selected",
+      "phase": 0.5,
+      "frame": 4,
+      "jobId": "infantry-original-D0-walk-470",
+      "custody": "Originating builtin receipt/pinned master and parent intake469; selected only as sequence source, not motion acceptance"
+    }
+  ],
+  "expectedLedgerSHA": "7e2b1c6d424aa7b39dd87db7a1f27d53e9230612114c859cf876ac6163581ac6"
+}

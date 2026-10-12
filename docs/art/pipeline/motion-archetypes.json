@@ -1,0 +1,148 @@
+{
+  "schema": "rds-motion-design/v1",
+  "status": "PROPOSED_NOT_QUALIFIED",
+  "projection": {
+    "tile": [
+      54,
+      27
+    ],
+    "defaultZoom": 1.68,
+    "worldDirections": [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        -1,
+        1
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        -1,
+        -1
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        1,
+        -1
+      ]
+    ],
+    "projectedLabels": [
+      "ESE",
+      "South",
+      "WSW",
+      "West",
+      "WNW",
+      "North",
+      "ENE",
+      "East"
+    ]
+  },
+  "humanoidWalk": {
+    "phases": [
+      {
+        "slot": 0,
+        "phase": 0.0,
+        "name": "contact_A",
+        "supportIntent": "A",
+        "swingIntent": "B",
+        "note": "Contact keys include weight transfer/double support; verify actual receiving foot."
+      },
+      {
+        "slot": 1,
+        "phase": 0.125,
+        "name": "weight_A",
+        "supportIntent": "A",
+        "swingIntent": "B",
+        "note": "Contact keys include weight transfer/double support; verify actual receiving foot."
+      },
+      {
+        "slot": 2,
+        "phase": 0.25,
+        "name": "passing_B",
+        "supportIntent": "A",
+        "swingIntent": "B",
+        "note": "Contact keys include weight transfer/double support; verify actual receiving foot."
+      },
+      {
+        "slot": 3,
+        "phase": 0.375,
+        "name": "reach_B",
+        "supportIntent": "A",
+        "swingIntent": "B",
+        "note": "Contact keys include weight transfer/double support; verify actual receiving foot."
+      },
+      {
+        "slot": 4,
+        "phase": 0.5,
+        "name": "contact_B",
+        "supportIntent": "B",
+        "swingIntent": "A",
+        "note": "Contact keys include weight transfer/double support; verify actual receiving foot."
+      },
+      {
+        "slot": 5,
+        "phase": 0.625,
+        "name": "weight_B",
+        "supportIntent": "B",
+        "swingIntent": "A",
+        "note": "Contact keys include weight transfer/double support; verify actual receiving foot."
+      },
+      {
+        "slot": 6,
+        "phase": 0.75,
+        "name": "passing_A",
+        "supportIntent": "B",
+        "swingIntent": "A",
+        "note": "Contact keys include weight transfer/double support; verify actual receiving foot."
+      },
+      {
+        "slot": 7,
+        "phase": 0.875,
+        "name": "reach_A",
+        "supportIntent": "B",
+        "swingIntent": "A",
+        "note": "Contact keys include weight transfer/double support; verify actual receiving foot."
+      }
+    ],
+    "requiredPerView": [
+      "physicalLegLandmarks",
+      "selectedContactPins",
+      "travelVector",
+      "ownDepthLanes",
+      "occlusionOrder",
+      "stanceIntervals",
+      "sourceToLogicalScale",
+      "measuredDistancePerCycle"
+    ],
+    "qualifiedSource": null
+  },
+  "archetypes": [
+    "HUMANOID_GENERIC",
+    "HUMANOID_SPEAR",
+    "HUMANOID_FIREARM",
+    "COMMANDER",
+    "CAVALRY",
+    "ARTILLERY_CREW",
+    "SUPPLY_WAGON",
+    "SHIP"
+  ],
+  "limits": [
+    "Planning data only; not consumed by current runtime or finite dispatcher.",
+    "No anatomy, new equipment, mirrored view or motion approval inferred."
+  ]
+}

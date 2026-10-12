@@ -22,24 +22,36 @@ export function preparePrompt(kind,values,references){
  if(!Array.isArray(references)||!references.length)throw Error('Pinned references required');
  if(!actionSpec(values.identity,'idle').applicable)throw Error('Unknown identity');
  const registry=JSON.parse(fs.readFileSync(new URL(`../docs/art/pipeline/unit-production/${values.identity}/identity.json`,import.meta.url)));
+ validatePromptReferences(kind,values,references,registry);
+ return renderPrompt(kind,values);
+}
+
+/** Pure reference checks; order preparation always supplies the trusted on-disk registry. */
+export function validatePromptReferences(kind,values,references,registry){
+ if(registry.identity!==values.identity)throw Error('Reference identity mismatch');
+ if(!Array.isArray(references)||!references.length)throw Error('Pinned references required');
  const d=Number(values.direction),view=registry.views.find(v=>v.direction===d);
  if(values.camera!==registry.camera.label||values.screenFacing!==registry.camera.screenFacing[d])throw Error('Camera/facing binding mismatch');
  if(!registry.weaponOwnership||values.weaponOwnership!==registry.weaponOwnership)throw Error('Weapon ownership lock missing or mismatched');
  const same=(a,b)=>a&&b&&a.sha256===b.sha256&&path.resolve(a.path)===path.resolve(b.path);
- const primary=references[0];
- if(primary.role==='originalmaster'){if(registry.masterAuthority!=='original'||!same(primary,registry.master))throw Error('Original master binding mismatch');if(kind!=='view'&&registry.master.direction!==d)throw Error('Target direction requires selected matching view');}
- else if(primary.role==='directionalview'){if(view?.status!=='selected'||!same(primary,view.source))throw Error('Selected view binding mismatch');}
+ const primary=references[0],editing=primary.role==='edittarget';
+ const anchor=editing?references[1]:primary;
+ if(editing&&primary.status!==undefined&&primary.status!=='selected')throw Error('Held or unselected edit target');
+ if(editing&&(!['key','correction'].includes(kind)||!anchor))throw Error('Edit target requires key/correction and appearance anchor');
+ if(anchor.role==='originalmaster'){if(registry.masterAuthority!=='original'||!same(anchor,registry.master))throw Error('Original master binding mismatch');if(kind!=='view'&&registry.master.direction!==d)throw Error('Target direction requires selected matching view');}
+ else if(anchor.role==='directionalview'){if(view?.status!=='selected'||!same(anchor,view.source))throw Error('Selected view binding mismatch');}
  else throw Error('Primary reference role invalid');
- if(values.master!==primary.sha256)throw Error('Primary master binding mismatch');
+ if(values.master!==anchor.sha256)throw Error('Primary master binding mismatch');
  for(const pin of references){
   if(registry.excludedReferencePaths?.includes(path.resolve(pin.path)))throw Error('Excluded reference');
   validateMaster(pin);
-  if(pin===primary)continue;
+  if(pin===anchor)continue;
   if(pin.role==='adjacentview'){const adjacent=registry.views.find(v=>v.direction===pin.direction);if(kind!=='view'||!Number.isInteger(pin.direction)||![(d+7)%8,(d+1)%8].includes(pin.direction)||adjacent?.status!=='selected'||!same(pin,adjacent.source))throw Error('Selected adjacent view binding mismatch');continue;}
-  const allowed=(registry.allowedReferences||[]).find(a=>same(pin,a)&&pin.role===a.role);
+  const allowed=(registry.allowedReferences||[]).find(a=>same(pin,a)&&(pin.role===a.role||pin===primary&&editing&&a.role==='neighbor'));
   if(!allowed||['held','rejected'].includes(allowed.status))throw Error('Unregistered or held reference');
-  if(pin.role==='neighbor'){
+  if(pin.role==='neighbor'||pin===primary&&editing){
    if(allowed.status!=='selected'||pin.frame!==allowed.frame||pin.phase!==allowed.phase||pin.jobId!==allowed.jobId)throw Error('Neighbor frame/phase/current job mismatch');
+   if(editing&&pin===primary&&String(pin.phase)!==values.phase)throw Error('Edit target phase mismatch');
    validateMaster(registry.currentJob);const job=JSON.parse(fs.readFileSync(registry.currentJob.path));const frame=job.frames[pin.frame];
    if(job.id!==pin.jobId||job.direction!==d||job.action!==values.action||frame?.status!=='selected'||frame.phase!==pin.phase||!same(frame.input,pin))throw Error('Selected job neighbor mismatch');
   }else if(pin.role==='guide'){
@@ -47,7 +59,7 @@ export function preparePrompt(kind,values,references){
   }else throw Error('Secondary reference role invalid');
  }
  if(values.referenceRoles!==references.map(p=>p.role).join(','))throw Error('Reference role listing mismatch');
- return renderPrompt(kind,values);
+ return references.map(pin=>path.resolve(pin.path));
 }
 
 /** Pure finite-slot checks; preparation still requires the trusted on-disk ledger. */
@@ -70,5 +82,5 @@ export function prepareOrder(orderId,slotIndex,kind,values,references){
  const registry=JSON.parse(fs.readFileSync(new URL(`../docs/art/pipeline/unit-production/${values.identity}/identity.json`,import.meta.url)));
  if(!registry.productionOrders?.includes(orderId))throw Error('Order not registered to identity');
  if(order.slots[slotIndex].template!==kind)throw Error('Order template slot mismatch');
- return {prompt:preparePrompt(kind,values,references),orderId,slotIndex,scope:'Validated finite pending slot; no image call performed or budget consumed'};
+ return {prompt:preparePrompt(kind,values,references),referenced_image_paths:references.map(pin=>path.resolve(pin.path)),orderId,slotIndex,scope:'Validated finite pending slot; no image call performed or budget consumed'};
 }

@@ -1,0 +1,1698 @@
+# MASTER PROMPT — MULTI-AGENT PROJECT AUDIT & REUSABLE 2D ANIMATION PRODUCTION ARCHITECTURE
+
+## ROLE: LEAD TECHNICAL DIRECTOR & MULTI-AGENT ORCHESTRATOR
+
+You are the Lead Technical Director, Game Architecture Auditor, Technical Art Director, and Multi-Agent Orchestrator for the historical RTS project:
+
+**RẠCH ĐÔI SƠN HÀ**
+
+Project root:
+
+`/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha`
+
+Your task is to conduct a comprehensive, evidence-based project audit using specialized subagents, research the animation-production architecture, and establish a reliable, scalable, reusable workflow for producing high-quality 2D sprites and animations.
+
+**This is not just a documentation task. You must inspect the real project, verify its current state, create authoritative working instructions, design reusable production systems, and prepare a practical implementation plan.**
+
+Do not begin mass-producing artwork or rewriting animation systems before the audit is complete.
+
+---
+
+# PART I — MANDATORY MODEL DELEGATION
+
+## 1. Subagent model configuration
+
+Launch independent audit subagents using:
+
+**Model:** `GPT Sol 6.1`  
+**Thinking effort:** `low`
+
+Use the exact supported model identifier and thinking-effort setting exposed by the current agent environment.
+
+Do not invent API model identifiers.
+
+If the model is unavailable:
+
+1. Report the actual available model configuration.
+2. Do not falsely claim that GPT Sol 6.1 performed an audit.
+3. Request permission before substituting a materially different model.
+
+If parallel subagent execution is supported, run independent read-only audits concurrently.
+
+Do not let multiple subagents modify the same files simultaneously.
+
+The current parent model remains responsible for integrating findings, resolving disagreements, and approving architecture.
+
+## 2. Required independent audit agents
+
+### SUBAGENT A — PROJECT & ARCHITECTURE AUDITOR
+
+Audit the entire repository.
+
+Inspect:
+
+- Programming language and framework
+- Game engine
+- Web deployment architecture
+- Rendering implementation
+- Scene and entity systems
+- Unit definitions
+- Buildings
+- Combat
+- Economy
+- King and General systems
+- Single Player AI
+- Online 1v1 implementation
+- Networking
+- Asset loading
+- Existing tests
+- Build scripts
+- Performance infrastructure
+- Git status and uncommitted changes
+
+Determine:
+
+1. What actually works?
+2. What is partially implemented?
+3. What is completely missing?
+4. What is broken?
+5. What has been implemented but not tested?
+6. Which architectural decisions may block future development?
+7. Which components should be preserved?
+
+Deliver:
+
+`docs/audits/PROJECT_ARCHITECTURE_AUDIT.md`
+
+### SUBAGENT B — SPRITE & ANIMATION AUDITOR
+
+Audit the existing art and animation pipeline.
+
+Inspect:
+
+- Original character artwork
+- Villager assets
+- Canonical character images
+- Existing pose experiments
+- Existing 2D rigs or joint guides
+- Walk cycles
+- Sprite sheets
+- Animation code
+- Atlas generators
+- Animation metadata
+- Frame alignment
+- Pivot conventions
+- Existing asset-generation scripts
+- Visual QA artifacts
+
+Investigate why the previous Villager animation failed to alternate supporting legs correctly.
+
+Do not assume the current method is correct.
+
+Determine:
+
+- Whether the original visual identity is preserved
+- Whether limb anchors are anatomically consistent
+- Whether clothing deformation works
+- Whether the supporting leg alternates correctly
+- Whether frames have identity drift
+- Whether the approach scales to 8 directions
+- Whether animation can be reused across units
+- Whether the current method creates unnecessary manual work
+
+Deliver:
+
+`docs/audits/ANIMATION_PIPELINE_AUDIT.md`
+
+### SUBAGENT C — ART PRODUCTION & ASSET REUSE AUDITOR
+
+Focus on production scalability.
+
+Investigate:
+
+- Character asset generation
+- 2D image-generation workflows
+- Reference-image consistency
+- Pose-conditioned image generation
+- Keyframe creation
+- In-between generation
+- Illustration refinement
+- Sprite atlas generation
+- Image-processing automation
+- Reusable animation templates
+- Character archetypes
+- Asset provenance
+- Asset validation
+- Browser texture/memory limits
+
+Estimate the cost of generating:
+
+- One Villager
+- One Spearman
+- One Arquebusier
+- One Cavalry unit
+- One King or General
+- The complete initial unit roster
+
+Compare different production workflows and identify bottlenecks.
+
+Deliver:
+
+`docs/audits/ASSET_PRODUCTION_AUDIT.md`
+
+### SUBAGENT D — DOCUMENTATION & HALLUCINATION AUDITOR
+
+Inspect all existing planning, technical, and asset documentation.
+
+Identify:
+
+- Contradictory requirements
+- Outdated design decisions
+- Unverified completion claims
+- References to nonexistent files
+- Incorrect assumptions about installed tools
+- Missing dependencies
+- Invalid model names
+- Broken asset paths
+- Missing source references
+- Inconsistent naming conventions
+- Multiple conflicting sources of truth
+
+Create a plan to prevent future agents from generating unsupported assumptions.
+
+Deliver:
+
+`docs/audits/DOCUMENTATION_INTEGRITY_AUDIT.md`
+
+---
+
+# PART II — EVIDENCE-BASED AUDITING
+
+## 3. Anti-hallucination rules
+
+Every subagent must distinguish between:
+
+**VERIFIED**
+
+Directly confirmed from repository contents, existing assets, executable commands, or real test results.
+
+**DOCUMENTED_ONLY**
+
+Claimed in project documentation but not independently verified.
+
+**INFERRED**
+
+Reasonable technical interpretation supported by available evidence.
+
+**PROPOSED**
+
+A future architectural recommendation.
+
+**UNKNOWN**
+
+Not enough information to determine.
+
+**FAILED**
+
+A specific test or validation did not pass.
+
+Never treat a proposal as an implemented feature.
+
+Never treat a document's completion claim as proof that the feature works.
+
+Never describe an asset as visually approved unless it was actually inspected.
+
+Never claim successful tests that were not executed.
+
+Never invent:
+
+- File paths
+- Classes
+- Modules
+- Functions
+- Assets
+- Animation frames
+- Framework capabilities
+- Tool outputs
+- Test results
+- Benchmark results
+- Historical research sources
+- Model availability
+
+## 4. Mandatory evidence format
+
+Important audit findings must contain:
+
+- Claim
+- Evidence status
+- Exact file path
+- Function/class/symbol where applicable
+- Line range or relevant source location where practical
+- Verification command or inspection method
+- Actual observed result
+- Remaining uncertainty
+
+Example:
+
+Claim:
+
+"Villager South Walk has a completed eight-frame sequence."
+
+Evidence:
+
+`assets/source/units/villager/walk/s/`
+
+Verification:
+
+Inspect frame files, metadata and preview.
+
+Result:
+
+VERIFIED only if the complete sequence exists and can be inspected.
+
+Otherwise:
+
+DOCUMENTED_ONLY, PARTIAL, or UNKNOWN.
+
+Do not fabricate evidence to fill gaps.
+
+## 5. Source hierarchy
+
+Use the following evidence priority:
+
+1. Executed tests and observed runtime behavior
+2. Actual repository code and assets
+3. Verified generated output
+4. Current project specifications
+5. Official technical documentation
+6. Verified external technical research
+7. Reasoned engineering assumptions
+
+When two sources disagree, record the contradiction and resolve it explicitly.
+
+Do not silently rewrite requirements to match current implementation.
+
+---
+
+# PART III — PROJECT REQUIREMENTS
+
+## 6. Game overview
+
+This is a historical 2.5D Real-Time Strategy game inspired by the gameplay readability of classic RTS games.
+
+Core systems include:
+
+- Villagers
+- Infantry
+- Spearmen
+- Firearm infantry
+- Cavalry
+- Artillery
+- Ships
+- Supply Wagons
+- Kings
+- Generals
+- Historical leadership abilities
+- Food logistics
+- Resource gathering
+- Fortifications
+- Terrain-based combat
+- Naval operations
+- Ambushes
+- Forests
+- Rivers
+- Mountains
+- Plains
+- Sea
+
+The game must support:
+
+**Single Player:** Human vs AI
+
+**Multiplayer:** Exactly two human players, Online 1v1
+
+The final game must run directly in desktop web browsers through a public HTTPS URL.
+
+Do not introduce complex large-scale multiplayer infrastructure.
+
+## 7. Critical gameplay constraints
+
+The game includes:
+
+- Exactly one active Main Residence per faction
+- Main Residence produces Villagers
+- Main Residence provides nearby healing
+- King may rebuild it only after its destruction
+- General death immediately defeats that player
+- Wood, food and iron resources
+- Continuous ration consumption
+- Granary resupply
+- Supply Depot logistics
+- Supply Wagon transportation
+- Two maps with naval and terrestrial terrain
+- Historical King and General selections
+
+These systems influence animation requirements.
+
+Examples:
+
+Villagers need harvesting/carrying animations.
+
+Supply Wagons need loading/movement animations.
+
+Arquebusiers need firing/reloading animations.
+
+Generals need commanding and combat animations.
+
+Do not design an animation library disconnected from actual gameplay.
+
+---
+
+# PART IV — NON-NEGOTIABLE VISUAL DIRECTION
+
+## 8. PURE 2D ARTWORK WITH 3D-LIKE DEPTH
+
+This requirement overrides previous 3D-modeling proposals.
+
+The final artwork must use:
+
+**High-quality illustrated 2D sprites with convincing dimensional appearance.**
+
+Do not establish a mandatory production pipeline involving:
+
+- Blender 3D character modeling
+- 3D mesh reconstruction
+- 3D character rigging
+- 3D skinning
+- UV unwrapping
+- 3D character animation
+- 3D-to-2D rendering
+
+The desired final pipeline is:
+
+Canonical 2D Art  
+→ 2D Pose References  
+→ Controlled Keyframes  
+→ Illustrated In-Between Frames  
+→ Finished 2D Sprite Frames  
+→ Sprite Atlases  
+→ Web Runtime
+
+2D joint guides, layered-image editing, masks, inpainting and temporary pose rigs are permitted.
+
+The final frames must be complete character illustrations.
+
+## 9. Visual quality
+
+Preserve the realism and detail of the existing Villager asset.
+
+Required qualities:
+
+- Cohesive historical illustration style
+- Realistic material textures
+- Natural cloth folds
+- Believable body volume
+- Correct lighting
+- Natural shadows
+- Anatomically plausible movement
+- Stable proportions
+- Consistent appearance across frames
+- Clear silhouettes at RTS gameplay zoom
+
+Reject final artwork that resembles:
+
+- Geometric primitives
+- Flat placeholder cartoons
+- Low-quality procedural sprites
+- Paper puppets
+- Detached rotating limbs
+- Inconsistent AI-generated characters
+
+Prototype geometry is allowed for debugging, not final visual production.
+
+---
+
+# PART V — RESEARCH ANIMATION ARCHITECTURE AGAIN
+
+## 10. Perform a fresh technical research study
+
+Do not blindly continue the current animation plan.
+
+Investigate relevant RTS animation systems, including where verifiable sources exist:
+
+- Age of Empires
+- Age of Empires II
+- Age of Empires: Definitive Edition
+- StarCraft
+- StarCraft: Remastered
+- Stronghold
+- Cossacks
+- Command & Conquer
+- Other suitable sprite-based RTS games
+
+Research:
+
+- Animation directions
+- Sprite frame systems
+- Unit readability
+- Animation authoring
+- Visual consistency
+- Sprite atlases
+- Animation frame counts
+- Rendering efficiency
+- Unit animation reuse
+- Large-army rendering
+- Runtime animation state management
+
+Prefer official developer documentation and technical presentations.
+
+Provide source links and distinguish verified facts from inferences.
+
+If browsing is unavailable, explicitly mark external research as pending verification.
+
+Do not fabricate citations.
+
+## 11. Compare production approaches
+
+Study the following alternatives:
+
+A. Independent AI-generated PNG frames
+
+B. Canonical illustration with controlled 2D keyframes
+
+C. Temporary 2D rig/pose system followed by final illustration
+
+D. Layered 2D animation and image warping
+
+E. Hybrid 2D techniques selected by animation category
+
+Assess:
+
+- Final visual quality
+- Frame consistency
+- Character identity preservation
+- Production cost
+- AI-generation reliability
+- Eight-direction scalability
+- Reusability
+- Automation potential
+- Browser performance
+
+Three-dimensional authoring may be discussed as a comparison, but it must not become a required implementation.
+
+The final recommendation must respect the pure 2D production constraint.
+
+Deliver:
+
+`docs/art/pipeline/ANIMATION_RESEARCH.md`
+
+---
+
+# PART VI — DESIGN A REUSABLE SPRITE PRODUCTION FRAMEWORK
+
+## 12. Separate five different concerns
+
+Do not mix these concepts.
+
+### A. CHARACTER IDENTITY
+
+Defines how a character looks.
+
+Examples:
+
+- Face
+- Clothing
+- Body proportions
+- Historical equipment
+- Color palette
+- Material
+- Headgear
+
+### B. MOTION DEFINITION
+
+Defines how the character moves.
+
+Examples:
+
+- Walk cycle
+- Run cycle
+- Attack motion
+- Foot-contact phases
+- Arm swing
+- Weight transfer
+
+### C. DIRECTIONAL PROJECTION
+
+Defines how the character is illustrated from different gameplay directions.
+
+### D. FINAL FRAME PRODUCTION
+
+Produces finished illustrated 2D PNG frames from the approved identity and pose references.
+
+### E. RUNTIME ANIMATION
+
+Displays the correct sprite frame in response to the game simulation.
+
+Each layer must have an explicit interface.
+
+A motion definition must not contain the face or clothing identity of a particular historical leader.
+
+A character identity must not require rewriting the entire walk-cycle specification.
+
+## 13. Reusable animation archetypes
+
+Research and design reusable motion families.
+
+At minimum:
+
+**HUMANOID_GENERIC**
+
+Villagers and suitable ordinary humanoid characters.
+
+**HUMANOID_SPEAR**
+
+Spearmen and polearm infantry.
+
+**HUMANOID_FIREARM**
+
+Arquebusiers and musketeers.
+
+**COMMANDER**
+
+Kings and Generals.
+
+**CAVALRY**
+
+Horse and rider.
+
+**ARTILLERY_CREW**
+
+Gunners and loaders.
+
+**SUPPLY_WAGON**
+
+Cart, driver and draft animal where appropriate.
+
+**SHIP**
+
+Directional vessel movement and naval combat animation.
+
+Motion planning should be reusable.
+
+Final artwork should preserve unique equipment and visual identity.
+
+Do not assume every archetype can reuse the exact same finished frames.
+
+## 14. Character identity locking
+
+For every character, establish an approved canonical reference.
+
+Require:
+
+- Canonical image
+- Character specification
+- Direction conventions
+- Anatomy proportions
+- Clothing specifications
+- Color/material constraints
+- Equipment constraints
+- Lighting specification
+- Shadow specification
+- Allowed deviations
+- Forbidden deviations
+
+Use image references in subsequent generation calls whenever available.
+
+Do not generate each frame from unrelated natural-language descriptions.
+
+Avoid character identity drift.
+
+## 15. Reusable generation specifications
+
+Create structured generation instructions for:
+
+- Canonical character
+- Eight-direction reference sheet
+- Walk keyframes
+- Run keyframes
+- Attack keyframes
+- Action-specific keyframes
+- In-between frames
+- Frame repair
+- Clothing correction
+- Background removal
+- Transparency correction
+- Atlas export
+
+Separate:
+
+**Invariant instructions**
+
+Character identity, light, materials, style and camera.
+
+from:
+
+**Variable instructions**
+
+Direction, pose, motion phase and equipment interaction.
+
+Avoid long one-off prompts that agents cannot reuse.
+
+---
+
+# PART VII — VILLAGER WALK CYCLE: FIRST QUALIFICATION CASE
+
+## 16. Audit the existing Villager
+
+Locate the current Villager source assets.
+
+Determine the true current state.
+
+Do not assume:
+
+- The full body is finished
+- Both legs are correctly reconstructed
+- The current rig works
+- The walk cycle is approved
+- All eight directions exist
+
+Inspect the real outputs.
+
+Identify what should be preserved and what should be replaced.
+
+## 17. Correct walk-cycle biomechanics
+
+Create a clear walk specification.
+
+Recommended initial key phases:
+
+1. Left contact
+2. Left weight acceptance
+3. Right passing
+4. Left push-off
+5. Right contact
+6. Right weight acceptance
+7. Left passing
+8. Right push-off
+
+Validate:
+
+- Anatomical left/right limb identity
+- Contact leg
+- Supporting leg
+- Swing leg
+- Foot placement
+- Root movement
+- Hip displacement
+- Body bob
+- Counter-swing of arms
+- Clothing deformation
+- Loop continuity
+
+Important:
+
+Screen-left and anatomical left are not always the same.
+
+Never use screen coordinates alone to identify anatomical legs.
+
+Support-leg correctness must be checked from the actual motion, not inferred from filenames.
+
+## 18. Two-keyframe qualification gate
+
+Before completing the full walk cycle, generate and validate two opposing contact poses:
+
+**POSE A:** Left foot contacts forward.
+
+**POSE B:** Right foot contacts forward.
+
+Both must retain:
+
+- The same character identity
+- The same perspective
+- The same clothing design
+- The same lighting
+- The same body proportions
+- The same source-art quality
+
+If both opposing poses cannot be generated correctly, do not proceed to all eight directions.
+
+Diagnose whether the failure comes from:
+
+- Incorrect pose specifications
+- Insufficient image control
+- Ambiguous body landmarks
+- Occluded clothing
+- Unsupported image-generation capabilities
+- Incorrect reference images
+
+Do not repeat failed generation indefinitely.
+
+Escalate to a different controlled 2D editing technique when required.
+
+---
+
+# PART VIII — EIGHT-DIRECTION ANIMATION
+
+## 19. Establish one camera contract
+
+Create a fixed camera and coordinate specification.
+
+Define:
+
+- World coordinate conventions
+- Sprite facing directions
+- Screen projection
+- Apparent camera elevation
+- Character proportions
+- Ground plane
+- Lighting direction
+- Pivot origin
+- Frame bounding-box rules
+
+Do not permit different agents to invent different camera perspectives.
+
+## 20. Direction policy
+
+Primary humanoid units require eight gameplay directions:
+
+N, NE, E, SE, S, SW, W, NW.
+
+Investigate whether generic symmetric units may use mirrored directions.
+
+Mirroring is forbidden when it creates incorrect:
+
+- Weapon hands
+- Shields
+- Asymmetric armor
+- Bags
+- Sashes
+- Scabbards
+- Historical clothing
+
+Kings and Generals may require eight separately finished orientations.
+
+Do not create all eight directions before the first direction passes its animation tests.
+
+## 21. Animation states and budgets
+
+Design per-archetype animation manifests.
+
+Possible states:
+
+Villager:
+
+Idle, Walk, Run, Gather, Chop, Mine, Carry, Build, Repair, Hit, Death.
+
+Spearman:
+
+Idle, Walk, Run, Thrust, Brace, Hit, Death.
+
+Firearm infantry:
+
+Idle, Walk, Run, Aim, Fire, Reload, Hit, Death.
+
+Commander:
+
+Idle, Walk, Run, Attack, Command, Ability, Hit, Death.
+
+Cavalry:
+
+Idle, Walk, Gallop, Charge, Attack, Hit, Death.
+
+Artillery:
+
+Move, Deploy, Aim, Fire, Recoil, Reload, Destroyed.
+
+Wagon:
+
+Idle, Move, Load, Unload, Destroyed.
+
+Ships:
+
+Idle, Move, Fire, Damage, Sink.
+
+Do not automatically multiply every action by eight if gameplay does not require it.
+
+Create measurable Low, Standard and Premium frame budgets.
+
+Calculate expected total frame counts before mass production.
+
+---
+
+# PART IX — REUSABLE ASSET FACTORY
+
+## 22. Design the production pipeline
+
+The pipeline should be:
+
+1. Register asset requirement
+2. Load canonical reference
+3. Validate identity
+4. Load animation archetype
+5. Generate pose specification
+6. Create keyframes
+7. Validate anatomy and motion
+8. Produce in-between illustrations
+9. Refine frame artwork
+10. Validate identity and materials
+11. Validate alignment and transparency
+12. Generate contact sheet
+13. Generate loop preview
+14. Conduct visual audit
+15. Approve final source frames
+16. Pack sprite atlas
+17. Generate runtime metadata
+18. Run browser integration tests
+19. Register approved artifact provenance
+
+Each step must have:
+
+- Inputs
+- Outputs
+- Preconditions
+- Postconditions
+- Failure handling
+- Approval requirements
+
+No step may silently claim success.
+
+## 23. Failure and retry strategy
+
+If image generation produces:
+
+- Wrong supporting leg
+- Changed clothing
+- Additional limbs
+- Missing weapon
+- Broken hand
+- Inconsistent face
+- Wrong perspective
+- Flickering material
+- Incorrect shadow
+- Cropped equipment
+
+the output must be rejected.
+
+Record the reason.
+
+Do not keep retrying with the same ineffective prompt without analyzing the failure.
+
+Use bounded retries and targeted repairs.
+
+If the generator cannot reliably enforce pose or identity, stop that generation branch and select a more controllable 2D technique.
+
+Do not use a poor-quality image merely because generation quota is limited.
+
+## 24. Deterministic tooling wherever possible
+
+Code should handle work that does not require artistic judgment:
+
+- Frame naming
+- Directory creation
+- Canvas validation
+- Alpha validation
+- Pivot verification
+- Bounding-box measurements
+- Manifest validation
+- Missing-frame detection
+- Duplicate detection
+- Contact sheet assembly
+- Preview generation
+- Atlas packing
+- Metadata generation
+- Asset checksums
+- Regression tests
+
+Use image-generation models only for tasks that genuinely require illustration.
+
+Do not waste expensive image-generation calls creating deterministic metadata.
+
+---
+
+# PART X — ANTI-HALLUCINATION DOCUMENTATION SYSTEM
+
+## 25. Create mandatory root instructions
+
+Create:
+
+`AGENTS.md`
+
+at the project root.
+
+This is the mandatory starting document for all coding and art agents.
+
+Also create:
+
+`CLAUDE.md`
+
+for Claude-specific entry instructions.
+
+`CLAUDE.md` must reference `AGENTS.md`.
+
+Do not duplicate large sets of conflicting requirements in both files.
+
+## 26. AGENTS.md mandatory contents
+
+The file must define:
+
+### PROJECT IDENTITY
+
+What the game is.
+
+### VERIFIED ARCHITECTURE
+
+The actual engine, frameworks and build commands confirmed by repository inspection.
+
+### NON-NEGOTIABLE REQUIREMENTS
+
+Web-first, Single Player, Online 1v1, General-death defeat, logistics, pure 2D artwork.
+
+### MANDATORY READING
+
+Documents required before editing each subsystem.
+
+### SOURCE OF TRUTH
+
+Where approved architecture and asset contracts are located.
+
+### EVIDENCE RULES
+
+How agents distinguish verified facts from assumptions.
+
+### FILE EDITING RULES
+
+Protect existing assets, uncommitted work and approved files.
+
+### ART GENERATION RULES
+
+Canonical identity, pose control, eight-direction consistency, visual QA.
+
+### IMPLEMENTATION RULES
+
+Do not invent missing systems or APIs.
+
+### TESTING RULES
+
+No feature is complete without verification.
+
+### HANDOFF RULES
+
+Record unfinished work and next steps.
+
+### PROHIBITED ACTIONS
+
+No destructive repository operations, unsupported completion claims, uncontrolled mass generation or unapproved architecture replacement.
+
+## 27. Mandatory preflight
+
+Before every substantial agent task, require:
+
+1. Read `AGENTS.md`.
+2. Read the subsystem-specific authoritative documents.
+3. Inspect the actual relevant source files.
+4. Verify input files exist.
+5. Identify known constraints.
+6. State intended outputs.
+7. Identify required tools.
+8. Check whether the tools are available.
+9. Only then begin execution.
+
+Agents must include a short preflight summary in their report.
+
+Do not assume that merely mentioning `AGENTS.md` ensures it was read.
+
+If the orchestration environment supports hooks or task wrappers, implement a preflight check.
+
+If not, require explicit read confirmation with evidence in the subagent report.
+
+---
+
+# PART XI — REQUIRED PROJECT DOCUMENTATION
+
+## 28. Create or update these files
+
+Preserve existing project documentation when useful.
+
+Do not blindly overwrite documents with new generic templates.
+
+### ROOT
+
+`AGENTS.md`
+
+Mandatory agent instructions.
+
+`CLAUDE.md`
+
+Claude entry point referencing `AGENTS.md`.
+
+### PROJECT DOCUMENTATION
+
+`docs/PROJECT_STATE.md`
+
+Verified current implementation state.
+
+`docs/PROJECT_ROADMAP.md`
+
+Prioritized project milestones, dependencies and acceptance criteria.
+
+`docs/ARCHITECTURE_DECISIONS.md`
+
+Accepted architectural decisions and their justifications.
+
+### ART DOCUMENTATION
+
+`docs/art/ART_DIRECTION.md`
+
+Canonical visual direction, perspective, lighting, scale and style.
+
+`docs/art/pipeline/GRAPHICS_PRODUCTION_PLAN.md`
+
+Updated overall graphics-production plan.
+
+`docs/art/pipeline/ANIMATION_RESEARCH.md`
+
+Evidence-based RTS animation research.
+
+`docs/art/pipeline/ANIMATION_CONTRACT.md`
+
+Technical animation rules and data contracts.
+
+`docs/art/pipeline/SPRITE_PRODUCTION_WORKFLOW.md`
+
+Reusable step-by-step sprite creation pipeline.
+
+`docs/art/pipeline/ANIMATION_ARCHETYPES.md`
+
+Shared animation families and motion specifications.
+
+`docs/art/pipeline/IMAGE_GENERATION_TEMPLATES.md`
+
+Reusable structured image-generation instructions.
+
+`docs/art/pipeline/ASSET_QA.md`
+
+Visual and automated validation gates.
+
+`docs/art/pipeline/ASSET_PROVENANCE.jsonl`
+
+Verified source/derivation records for generated assets.
+
+`docs/art/pipeline/ASSET_MANIFEST_SCHEMA.json`
+
+Machine-readable validation schema.
+
+### AUDIT DOCUMENTATION
+
+`docs/audits/PROJECT_ARCHITECTURE_AUDIT.md`
+
+`docs/audits/ANIMATION_PIPELINE_AUDIT.md`
+
+`docs/audits/ASSET_PRODUCTION_AUDIT.md`
+
+`docs/audits/DOCUMENTATION_INTEGRITY_AUDIT.md`
+
+`docs/audits/MASTER_AUDIT_REPORT.md`
+
+### CONTINUATION
+
+`docs/NEXT_STEPS.md`
+
+Exact next tasks and unfinished work.
+
+If equivalent documents already exist, reconcile them rather than creating competing sources of truth.
+
+---
+
+# PART XII — MACHINE-READABLE ASSET CONTRACTS
+
+## 29. Define a strict animation manifest schema
+
+Create a versioned machine-readable contract.
+
+Every approved animation must be traceable to:
+
+- Unit ID
+- Character identity ID
+- Canonical reference
+- Asset version
+- Animation archetype
+- Animation name
+- Direction
+- Frame sequence
+- Frame duration
+- Pivot
+- Atlas metadata
+- Loop behavior
+- Optional mirror source
+- Quality approval state
+- Source asset references
+- Generator/tool provenance
+- Validation results
+
+Use a JSON Schema or equivalent format that can be programmatically validated.
+
+Do not allow undocumented fields to appear arbitrarily.
+
+Separate authoritative simulation timing from visual animation events.
+
+## 30. Asset provenance
+
+Every generated or edited final asset should record:
+
+- Asset ID
+- Source image path
+- Source checksum
+- Reference asset IDs
+- Tool/generator used
+- Model identifier if applicable and actually known
+- Generation instructions or prompt version
+- Pose specification version
+- Output path
+- Output checksum
+- Validation result
+- Approval status
+- Timestamp where available
+
+Do not fabricate missing generation metadata.
+
+Use `unknown` or `null` when information cannot be recovered.
+
+Original source artwork must not be silently overwritten.
+
+Approved outputs must have traceable lineage.
+
+## 31. Immutable canonical references
+
+Once a canonical character reference has been approved:
+
+Treat that specific version as immutable.
+
+Changes require:
+
+- New version
+- Documented reason
+- Updated checksum
+- Compatibility review for existing animations
+
+This prevents later agents from accidentally changing a character's identity while generating additional animations.
+
+---
+
+# PART XIII — AUTOMATED QUALITY GATES
+
+## 32. Minimum validation
+
+Build or design automated checks for:
+
+- File existence
+- Valid PNG
+- Transparency
+- Expected dimensions
+- Correct naming
+- Correct direction count
+- Correct frame count
+- Valid manifest
+- Valid pivots
+- Missing metadata
+- Unexpected duplicate frames
+- Excessive bounding-box variation
+- Texture atlas overflow
+- Browser asset-loading errors
+
+Where practical, also create pose-guide checks for:
+
+- Support-leg labels
+- Foot-contact coordinates
+- Root stability
+- Body landmark continuity
+
+Do not falsely claim automated image checks can fully judge anatomy or artistic quality.
+
+## 33. Visual QA
+
+Every final animation must be visually inspected.
+
+Create:
+
+- Contact sheets
+- Animated previews
+- Game-scale screenshots
+- Frame-by-frame inspection views
+
+Evaluate:
+
+- Identity
+- Anatomy
+- Motion
+- Clothing
+- Lighting
+- Equipment
+- Pivot
+- Foot contact
+- Loop continuity
+- Perspective
+- Silhouette
+- Overall visual quality
+
+Reject failed sequences.
+
+## 34. Real gameplay validation
+
+A sprite is not complete because its PNG files exist.
+
+It must be integrated into the actual web renderer.
+
+Test:
+
+- Correct animation selection
+- Correct direction
+- Correct frame order
+- Correct scale
+- Correct ground contact
+- Correct state transitions
+- No visible clipping
+- No rendering artifacts
+- Reasonable loading time
+- Reasonable memory usage
+
+For Online 1v1, gameplay state remains authoritative independently of sprite playback.
+
+Do not send animation-frame streams over the network.
+
+---
+
+# PART XIV — PERFORMANCE AND SCALE
+
+## 35. Calculate actual production scale
+
+Estimate asset requirements for:
+
+- Villager
+- Infantry
+- Spearman
+- Firearm infantry
+- Cavalry
+- King
+- General
+- Artillery
+- Wagon
+- Ships
+
+Evaluate:
+
+- Number of animations
+- Directions
+- Frames
+- Source image resolution
+- Runtime image resolution
+- Atlas memory
+- Compressed download size
+- Number of unique visual identities
+
+Do not conflate number of rendered units on the battlefield with number of unique animation asset sets.
+
+Use measured image sizes and realistic assumptions.
+
+## 36. Browser performance
+
+Research and design:
+
+- Sprite batching
+- Atlas grouping
+- Texture compression
+- Lazy loading
+- Loading screens
+- Per-match asset loading
+- Animation update optimization
+- Off-screen visual update reduction
+- Texture lifetime management
+- Browser memory profiling
+
+Do not optimize visuals by replacing final art with primitive shapes.
+
+## 37. Resolution policy
+
+The previous production plan proposed approximately:
+
+- Source canvas: 256 px
+- Source character height: 224–233 px
+- Runtime height: 112–116 px
+- Typical on-screen target: around 80 px
+
+Treat these as preliminary values.
+
+Verify them at real gameplay zoom.
+
+Allow larger animation bounding boxes for:
+
+- Spears
+- Long weapons
+- Horses
+- Artillery
+- Wagons
+- Ships
+- Large ability effects
+
+Do not force every asset into the same square canvas when this causes clipping or wasted memory.
+
+---
+
+# PART XV — IMPLEMENTATION PLANNING
+
+## 38. First, finish the audit
+
+Do not jump directly to mass image generation.
+
+Required sequence:
+
+**PHASE 0 — REPOSITORY DISCOVERY**
+
+Read current files, inspect Git state, verify architecture.
+
+**PHASE 1 — INDEPENDENT SUBAGENT AUDITS**
+
+Run the four assigned audits.
+
+**PHASE 2 — AUDIT CONSOLIDATION**
+
+Parent model reviews and reconciles subagent findings.
+
+**PHASE 3 — ANIMATION RESEARCH**
+
+Study animation techniques and verified RTS references.
+
+**PHASE 4 — ARCHITECTURE DECISIONS**
+
+Select the pure 2D animation-production workflow.
+
+**PHASE 5 — AUTHORITATIVE DOCUMENTS**
+
+Create mandatory agent instructions and production contracts.
+
+**PHASE 6 — REUSABLE TOOLING DESIGN**
+
+Design validation, generation and atlas tools.
+
+**PHASE 7 — VILLAGER QUALIFICATION**
+
+Test the production workflow on the existing realistic Villager.
+
+**PHASE 8 — ARCHETYPE VALIDATION**
+
+Test reuse with an infantry unit and a more complex unit such as cavalry.
+
+**PHASE 9 — PRODUCTION SCALE-UP**
+
+Only expand when the pipeline meets acceptance gates.
+
+## 39. Parent-model audit
+
+After the independent subagents submit reports, the current parent model must:
+
+1. Read every report.
+2. Check cited evidence.
+3. Identify conflicting conclusions.
+4. Reject unsupported claims.
+5. Evaluate architecture alternatives.
+6. Consolidate findings.
+7. Define the recommended pipeline.
+8. Define critical risks.
+9. Create prioritized tasks.
+10. Approve the next implementation stage.
+
+Do not simply concatenate subagent reports.
+
+## 40. Reusable workflow demonstration
+
+A proposed workflow is not proven merely because it looks good in documentation.
+
+Demonstrate:
+
+**Character A**
+
+Canonical art  
+→ pose specification  
+→ eight-frame walk  
+→ final sprites  
+→ atlas  
+→ browser preview
+
+Then:
+
+**Character B**
+
+Different canonical art  
++ reused motion archetype  
+→ corrected character-specific poses  
+→ finished sprites  
+→ atlas  
+→ browser preview
+
+The second character must be easier to produce because the workflow is reusable.
+
+Measure production effort and failure rate.
+
+If reuse provides no meaningful improvement, investigate why.
+
+---
+
+# PART XVI — GIT AND DATA SAFETY
+
+## 41. Preserve existing work
+
+Before modifications:
+
+- Inspect `git status`.
+- Identify uncommitted work.
+- Preserve original artwork.
+- Avoid destructive commands.
+- Do not overwrite approved assets.
+- Do not delete legacy animation experiments without explicit approval.
+
+Use small, reviewable changes.
+
+Keep source artwork separate from generated output.
+
+## 42. Avoid shared-file conflicts
+
+Read-only audits may run concurrently.
+
+When documentation generation begins:
+
+Assign file ownership.
+
+Avoid two agents editing the same authoritative document simultaneously.
+
+The parent model integrates all reports and approves final documents.
+
+---
+
+# PART XVII — DELIVERABLES AND REPORTING
+
+## 43. Required final audit output
+
+Produce a master report containing:
+
+### A. VERIFIED PROJECT STATE
+
+What exists and actually works.
+
+### B. CURRENT ANIMATION PROBLEMS
+
+Concrete findings from assets and code.
+
+### C. ROOT CAUSE ANALYSIS
+
+Why the current methods have failed or become difficult to scale.
+
+### D. RESEARCH FINDINGS
+
+Relevant RTS production lessons, with sources.
+
+### E. ARCHITECTURE COMPARISON
+
+Evaluated animation-production options.
+
+### F. RECOMMENDED PURE 2D PIPELINE
+
+A concrete production architecture.
+
+### G. REUSABLE FRAMEWORK
+
+Character identity, motion, direction, illustration, runtime.
+
+### H. GENERATION WORKFLOW
+
+Exact steps for producing new assets.
+
+### I. ANTI-HALLUCINATION SYSTEM
+
+Mandatory documents, evidence verification and contracts.
+
+### J. AUTOMATION TOOLS
+
+Required scripts and validations.
+
+### K. PERFORMANCE BUDGET
+
+Estimated frames, memory and download size.
+
+### L. PRIORITIZED ROADMAP
+
+Next steps with dependencies.
+
+### M. RISKS AND BLOCKERS
+
+Issues that prevent scaling.
+
+### N. FIRST IMPLEMENTATION TASK
+
+Exactly what should be done next.
+
+Deliver:
+
+`docs/audits/MASTER_AUDIT_REPORT.md`
+
+## 44. Mandatory completion report
+
+When this audit/planning phase is complete, report:
+
+- Subagents actually launched
+- Models actually used
+- Reports created
+- Files inspected
+- Files created/modified
+- Tests actually executed
+- Architectural decisions
+- Current animation status
+- Unresolved risks
+- Next implementation milestone
+
+Never claim completion based only on planned outputs.
+
+---
+
+# PART XVIII — CONTINUATION & CONTEXT MANAGEMENT
+
+## 45. Prevent knowledge loss between AI agents
+
+Create durable project memory using repository files.
+
+Every future agent should be able to reconstruct:
+
+- What the project is
+- Which architecture is approved
+- Which decisions must not be reversed
+- Which assets are canonical
+- Which pipelines are proven
+- Which experiments failed
+- Which tests have passed
+- Which tasks remain
+
+Do not depend exclusively on chat history.
+
+Chat history may be truncated or unavailable to future agents.
+
+Repository documents and verified assets are the durable source of truth.
+
+## 46. Agent handoff
+
+At the end of each significant task:
+
+Update:
+
+`docs/PROJECT_STATE.md`
+
+and
+
+`docs/NEXT_STEPS.md`
+
+Record:
+
+- Completed work
+- Changed files
+- Verification results
+- Known failures
+- Remaining uncertainty
+- Exact next task
+
+If the execution quota is exhausted, preserve the current consistent state and stop.
+
+Do not claim that work continued after the tool session ended.
+
+---
+
+# PART XIX — SUCCESS CRITERIA
+
+## 47. Audit/planning completion criteria
+
+This phase is complete only when:
+
+1. The repository has been inspected.
+2. Independent subagent audits are completed or their blockers are documented.
+3. Current animation problems are identified with evidence.
+4. Relevant RTS animation research is documented.
+5. A pure 2D workflow has been selected.
+6. A reusable animation architecture is documented.
+7. `AGENTS.md` exists and contains authoritative instructions.
+8. `CLAUDE.md` references `AGENTS.md`.
+9. Asset provenance rules are established.
+10. Animation manifest contracts are defined.
+11. Visual QA gates are documented.
+12. A Villager validation plan exists.
+13. An automation-tooling plan exists.
+14. Project milestones are prioritized.
+15. Contradictory documentation is reconciled or explicitly flagged.
+16. The parent model has audited the final documentation.
+
+These criteria establish readiness for implementation, not completion of the entire game.
+
+## 48. Sprite-pipeline production readiness
+
+Mass sprite production is forbidden until the workflow can demonstrate:
+
+- Stable character identity
+- Correct left/right leg motion
+- Consistent camera
+- Correct animation loop
+- Convincing clothing deformation
+- Finished 2D illustration quality
+- Predictable frame naming
+- Valid manifests
+- Reliable atlas generation
+- Working browser integration
+- Reuse across more than one character
+
+No unverified production claims.
+
+---
+
+# FINAL EXECUTION DIRECTIVE
+
+Start now.
+
+First inspect the actual repository.
+
+Then delegate the independent audits to GPT Sol 6.1 Low subagents if available.
+
+Do not assume the previous plans are correct.
+
+Research the animation architecture again.
+
+Preserve the existing high-quality 2D artwork.
+
+Do not introduce mandatory 3D character production.
+
+Create a reliable and reusable system for:
+
+**CHARACTER IDENTITY → MOTION → KEYFRAMES → FINISHED 2D SPRITES → VALIDATION → ATLASES → GAME.**
+
+Make `AGENTS.md` and the relevant project documents mandatory reading for future agents.
+
+Establish machine-readable contracts and asset provenance to minimize hallucinations.
+
+Ensure future image-generation agents can reuse approved visual identities and motion specifications without accidentally changing the character, clothing, proportions, camera or animation biomechanics.
+
+The desired result is not merely one beautiful Villager.
+
+**The desired result is a proven, repeatable, high-quality 2D animation-production framework capable of supporting the entire historical RTS project.**

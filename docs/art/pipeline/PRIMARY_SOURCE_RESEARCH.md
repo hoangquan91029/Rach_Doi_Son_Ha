@@ -1,3 +1,5 @@
+> **HISTORICAL / SUPERSEDED.** The 3D recommendation below was superseded by the human pure2D directive. It is retained verbatim as history, not current instructions. Read [ANIMATION_RESEARCH.md](ANIMATION_RESEARCH.md) and [ANIMATION_CONTRACT.md](ANIMATION_CONTRACT.md).
+
 # Deterministic villager animation: production decision note
 
 **Prepared:** 2026-10-08  

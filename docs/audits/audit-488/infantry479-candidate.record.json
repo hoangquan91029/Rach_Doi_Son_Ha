@@ -1,0 +1,172 @@
+{
+  "schema": "rds-animation-record/v1",
+  "identityId": "infantry",
+  "unitId": "infantry",
+  "assetId": "infantry-original-D0-walk-479",
+  "version": "479-retained-candidate",
+  "archetype": "HUMANOID_GENERIC",
+  "action": "walk",
+  "direction": 0,
+  "canonicalReference": {
+    "path": "docs/art/units/sources/infantry-neutral-se-refine-01-imagegen-raw.png",
+    "sha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f"
+  },
+  "job": {
+    "path": "docs/art/pipeline/infantry-runtime-479/walk-job.json",
+    "sha256": "355dc1aa0fc0e4bc3b8ed801e0647bb090ccbc11f45492642171a2f136622b5c"
+  },
+  "descriptor": {
+    "path": "docs/art/pipeline/infantry-runtime-479/walk/asset.json",
+    "sha256": "41ecba5903ba9f76d3b88e4c32974f6694b0f6ee25acf93e0d71222f7007ed52"
+  },
+  "sources": [
+    {
+      "pin": {
+        "path": "docs/art/units/sources/infantry-neutral-se-refine-01-imagegen-raw.png",
+        "sha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f"
+      },
+      "status": "selected"
+    },
+    {
+      "pin": {
+        "path": "docs/art/units/infantry-inbetweens-469/F1-raw.png",
+        "sha256": "147bbadbaf5a55c7beb022429ff03bb08adf00e7c13aa02e7b767dddcb691f3b"
+      },
+      "status": "selected"
+    },
+    {
+      "pin": {
+        "path": "docs/art/units/infantry-passing-keys-468/F2-raw.png",
+        "sha256": "8ea6f3e944166e57ced56124912eed9620395edfb4178c3e3041fdc3f6c4cef6"
+      },
+      "status": "selected"
+    },
+    {
+      "pin": {
+        "path": "docs/art/units/infantry-F3-correction-475/raw.png",
+        "sha256": "26386bca78e68ae3f4e5f93430cb748efaa8e1b16eb16ba6bd75b86064f26002"
+      },
+      "status": "selected"
+    },
+    {
+      "pin": {
+        "path": "docs/art/units/infantry-opposite-contact-465/raw.png",
+        "sha256": "d1aa33b30c884fcaa30a756bb555eac49b00ffa2f2b8760a00c89136fbb6df2a"
+      },
+      "status": "selected"
+    },
+    {
+      "pin": {
+        "path": "docs/art/units/infantry-inbetweens-469/F5-raw.png",
+        "sha256": "dd4a426127b59d65f0d1a89f472541e8428c9a228e58273811b91aa80cfb1c3a"
+      },
+      "status": "selected"
+    },
+    {
+      "pin": {
+        "path": "docs/art/units/infantry-passing-keys-468/F6-raw.png",
+        "sha256": "58334157ab152d3f3dc7d237de9bb943b2d72f50528a8471cadfe1e908797294"
+      },
+      "status": "selected"
+    },
+    {
+      "pin": {
+        "path": "docs/art/units/infantry-inbetweens-469/F7-raw.png",
+        "sha256": "5094c3e0e92b0fcc0e3eae5ab9e99361503e69a4b65bfe35a7371ee4c104598f"
+      },
+      "status": "selected"
+    }
+  ],
+  "tool": {
+    "name": "builtin imagegen; historical per-frame receipts",
+    "model": null,
+    "promptVersion": null,
+    "poseVersion": null,
+    "timestamp": null
+  },
+  "geometry": {
+    "sourceWidth": 1254,
+    "sourceHeight": 1254,
+    "cellWidth": 128,
+    "cellHeight": 128,
+    "pivotX": 653,
+    "pivotY": 1057,
+    "renderWidth": 42,
+    "renderHeight": 42,
+    "padding": 2
+  },
+  "frameSequence": [
+    {
+      "sourceIndex": 0,
+      "phase": 0.0,
+      "durationMs": 90
+    },
+    {
+      "sourceIndex": 1,
+      "phase": 0.125,
+      "durationMs": 90
+    },
+    {
+      "sourceIndex": 2,
+      "phase": 0.25,
+      "durationMs": 90
+    },
+    {
+      "sourceIndex": 3,
+      "phase": 0.375,
+      "durationMs": 90
+    },
+    {
+      "sourceIndex": 4,
+      "phase": 0.5,
+      "durationMs": 90
+    },
+    {
+      "sourceIndex": 5,
+      "phase": 0.625,
+      "durationMs": 90
+    },
+    {
+      "sourceIndex": 6,
+      "phase": 0.75,
+      "durationMs": 90
+    },
+    {
+      "sourceIndex": 7,
+      "phase": 0.875,
+      "durationMs": 90
+    }
+  ],
+  "loop": true,
+  "mirrorSource": null,
+  "qualification": {
+    "technical": {
+      "status": "UNREVIEWED",
+      "evidence": []
+    },
+    "motion": {
+      "status": "UNREVIEWED",
+      "evidence": []
+    },
+    "runtime": {
+      "status": "UNREVIEWED",
+      "evidence": []
+    },
+    "owner": {
+      "status": "UNREVIEWED",
+      "evidence": []
+    },
+    "release": {
+      "status": "UNREVIEWED",
+      "evidence": []
+    }
+  },
+  "scope": "candidate",
+  "distancePerCycle": 0.15,
+  "limitations": [
+    "Custody wrapper over retained479; no new review or approval.",
+    "Provisional distance0.15 is unsuitable for production.",
+    "Legacy source model/prompt/pose timestamps not inferred.",
+    "Identity labels declared here; registry certification not supplied by this validator."
+  ]
+}

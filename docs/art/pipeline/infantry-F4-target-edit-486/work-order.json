@@ -1,0 +1,81 @@
+{
+  "id": "infantry-D0-F4-target-edit-486",
+  "identity": "infantry",
+  "action": "walk",
+  "direction": 0,
+  "status": "OPEN",
+  "callLimit": 1,
+  "callsUsed": 0,
+  "correctionCap": 0,
+  "correctionsUsed": 0,
+  "callsRemaining": 1,
+  "slots": [
+    {
+      "frame": 0,
+      "phase": 0.0,
+      "status": "selected",
+      "kind": "initial",
+      "template": "key"
+    },
+    {
+      "frame": 1,
+      "phase": 0.125,
+      "status": "selected",
+      "kind": "initial",
+      "template": "key"
+    },
+    {
+      "frame": 2,
+      "phase": 0.25,
+      "status": "selected",
+      "kind": "initial",
+      "template": "key"
+    },
+    {
+      "frame": 3,
+      "phase": 0.375,
+      "status": "selected",
+      "kind": "initial",
+      "template": "key"
+    },
+    {
+      "frame": 4,
+      "phase": 0.5,
+      "status": "pending",
+      "kind": "initial",
+      "template": "key"
+    },
+    {
+      "frame": 5,
+      "phase": 0.625,
+      "status": "selected",
+      "kind": "initial",
+      "template": "key"
+    },
+    {
+      "frame": 6,
+      "phase": 0.75,
+      "status": "selected",
+      "kind": "initial",
+      "template": "key"
+    },
+    {
+      "frame": 7,
+      "phase": 0.875,
+      "status": "selected",
+      "kind": "initial",
+      "template": "key"
+    }
+  ],
+  "humanAuthorization": {
+    "answer": "Th\u1eed m\u1ed9t edit tr\u00ean F4/465",
+    "questionItemId": "[\"request_user_input_async\",\"call_EJ2igxqlIwcXRsUdWOW6Wqh6\",0]",
+    "scope": "ONE builtin whole465 edit, no retry, no API, retain opposite physical leg ownership while correcting diagonal contact. Does not reopen477482483."
+  },
+  "executionSequence": [
+    4
+  ],
+  "motionApproval": false,
+  "runtimeInstall": false,
+  "fanoutAuthorized": false
+}

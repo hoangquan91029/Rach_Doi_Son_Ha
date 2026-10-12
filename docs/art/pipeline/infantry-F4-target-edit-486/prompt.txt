@@ -1,0 +1,16 @@
+key: identity: infantry
+master: 084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f
+direction: 0
+camera: dimetric 2:1 ground projection; fixed whole original elevated camera; no independent camera fit
+screenFacing: ESE
+weaponOwnership: Physical sword hand and shield hand remain those of original084845; D0 sword screenleft and shield screenright only; screen sides change with view
+referenceRoles: originalmaster,neighbor
+invariants: Image1 is the canonical appearance reference only. Image2 is the WHOLE465 EDIT TARGET and already has correct opposite physical leg ownership. Start from image2. Preserve its face, helmet, armor, red sash, sword screenleft/shield screenright, body proportions, camera and1254canvas/pivot6531057. Do not revert its legs to image1. No redesign, background, labels or ground shadow.
+action: walk
+phase: 0.5
+support: Retain ContactB of image2: sword-side FAR leg leads, shield-side NEAR leg trails. Correct only the projected reach so both soles share the same dimetric ground plane.
+movingParts: In the1254canvas, lead far sword-side boot moves diagonally down-right toward sole around(784,1141); trailing near shield-side boot moves up-left toward sole around(534,994). Repose complete connected legs naturally from their EXISTING hips and knees, retaining which physical leg leads. Both boot toes follow travel down-right; no detached parts, straight vertical leg lift or swapped ownership.
+bodyMotion: Keep image2 head/torso/root/overall height fixed. Small natural pelvis weight shift only as needed for a grounded diagonal stride; maintain original body volume.
+equipmentMotion: Keep image2 sword and shield, the same physical hands and grips, equipment sizes and positions. No new weapon or armor detail.
+nextKey: This ONE contact correction is experimental. Preserve ContactB leg exchange; no other frames, poses or directions.
+Edit the same whole original identity. Keep the verified elevated camera and screen-facing direction. Physical equipment hands persist while screen sides change across views. Concrete body, moving parts and equipment changes must lead toward the stated next key; selected phase neighbors define continuity. No redesign, mirror, warp, crop, per-frame fit, limb cutout or source pixel splice. Built-in image generation only. Candidate output; review, world contact, runtime and release remain separate. Ability, load and unload require distinct action poses.

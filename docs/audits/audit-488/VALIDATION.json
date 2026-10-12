@@ -1,0 +1,72 @@
+{
+  "schema": "rds-audit-validation/v1",
+  "date": "2026-10-12",
+  "headBefore": "d26cf7555f634b1bfcf65153c22e503d95e14ce7",
+  "scope": "Audit488 documentation/helpers plus preserved486. No game build/browser/image/deployment.",
+  "checks": {
+    "protectedBaselineFiles": 439,
+    "changedProtectedFiles": [],
+    "internalMarkdownDocuments": 25,
+    "brokenInternalLinks": [],
+    "jsonSchemaAndCandidate": "Prior actual validate-animation-record result VALID_CANDIDATE_CUSTODY for eight retained479 frames; visualApproval=false; productionAuthorized=false",
+    "testsObservedEarlierInAudit": [
+      {
+        "command": "node --test tests/agent-preflight.test.js",
+        "passed": 6,
+        "failed": 0
+      },
+      {
+        "command": "python3 -m unittest discover -s tests -p test_animation_record.py -v",
+        "passed": 11,
+        "failed": 0
+      }
+    ],
+    "testsRerunForReceipt": false,
+    "gitDiffCheck": true
+  },
+  "documentPins": {
+    "AGENTS.md": "a1bac4530beb062c593de86c0eecb61f9bf1e6cdde44728cd08b0cdb5dba83ee",
+    "CLAUDE.md": "af2f37467f9fa04c50b395045eb0bada246bd6f2f341368c12f2fa90b24b9bc7",
+    "NEXT_STEPS.md": "82b3fde3c622c43faeee12eb4d69b25d0bf0fd455af6cff735a403add532e491",
+    "PROJECT_STATUS.md": "d9d51a8c71049dd3a17330cc3b141302d459da50e98d00c9d8ce94ce2ed3c8df",
+    "docs/PROJECT_PLAN.md": "c57b6fba8cbd3865394572f3d66f8f43f1afccb890695869e5a79adc8855cbe2",
+    "docs/PROJECT_STATE.md": "b850ea28b249cabe525a7f24794e57a264c9b53137b6978b8491e6ab37b34d17",
+    "docs/PROJECT_ROADMAP.md": "972ed40c9db986d33c4b8046376902a9444c7ab94a27cdf4bbfb79bae0e6f30c",
+    "docs/NEXT_STEPS.md": "40e847135178289bbeef6cbfcc440f5c9cc1b1e3c1461210dc035110c2d4f1fb",
+    "docs/ARCHITECTURE_DECISIONS.md": "0b2b348bff0b0ffa6305e1aebf9d713faca7b9b10fb913df81640758ce1389c8",
+    "docs/art/ART_DIRECTION.md": "d64614e926465c0d540606634a25aeabc4f5364d6be7ced210eeab3182ffd429",
+    "docs/art/pipeline/ANIMATION_CONTRACT.md": "c77984786772c442cedb5bd3489f581dbad1ea2f89d5dea8dba64f1330b5113b",
+    "docs/art/pipeline/ANIMATION_ARCHETYPES.md": "165869e44eb58c6b37a0e29e1f461fd7c5dd36c73e1afb595742865e2299f43b",
+    "docs/art/pipeline/ANIMATION_RESEARCH.md": "b6a1abb8c76d416a29a3c7bee95e3ea05502be71c2c02002a43bfbd9c43808d9",
+    "docs/art/pipeline/SPRITE_PRODUCTION_WORKFLOW.md": "0617c6eb90887dc740f4e34308c188425cb0ad22549267eee82490144423deee",
+    "docs/art/pipeline/IMAGE_GENERATION_TEMPLATES.md": "3a518d9e9b5cda3c523d13aead5dad24e7bf9b95328db28937eaea45c0f2f8b8",
+    "docs/art/pipeline/ASSET_QA.md": "7ad426a1a2b9d8fd10ae56aa7897fc19be67d3b00a40fac3987e1ef07cd66418",
+    "docs/art/pipeline/GRAPHICS_PRODUCTION_PLAN.md": "4206747240e9f4d4c2035ea72f052df5d01162aa005441572d8baeb54ad6cf06",
+    "docs/art/pipeline/MOVEMENT_PRODUCTION_PLAN_20261010.md": "fbbd2f902feac1e3d28ce8ca44c3266083f77fc285cb9e94eaecfd683e2e1d02",
+    "docs/art/pipeline/PURE_2D_CHARACTER_PIPELINE.md": "b26c3cf61b3c3e39551a6576c814ac1fb911d2c472b350d248d143a8767d40e7",
+    "docs/art/pipeline/unit-production/README.md": "374c273cf463f72adc7f0a0d921741384033188f385b7fae0c30f98caee3a995",
+    "docs/audits/ANIMATION_PIPELINE_AUDIT.md": "9ef6f5c2522666794d1ec7196ce5f9563b1a09f8862c7120182611bb68a3f676",
+    "docs/audits/MASTER_AUDIT_REPORT.md": "d2aa8236bfafd0e733a33787663151b97fc27e30b8b3405eca606f22cfce94d9",
+    "docs/audits/PROJECT_ARCHITECTURE_AUDIT.md": "dfc37af291fcfda25e21b959f6f065d4a1e89e6505a0668e0bdd40d59aea4f09",
+    "docs/audits/ASSET_PRODUCTION_AUDIT.md": "f1eda108dfb60d8af6b714e7256f2a13f619d462aae29dd04dc8946cb7a129b5",
+    "docs/audits/DOCUMENTATION_INTEGRITY_AUDIT.md": "cf40e282329ce716c7e58992d2bf496d88ee41ee1197f32a419588e433ceba69"
+  },
+  "unresolvedClaims": [],
+  "imageCalls": 0,
+  "newSelectedFrames": 0,
+  "runtimeInstall": false,
+  "publicChanged": false,
+  "visualApproval": false,
+  "fullGoalComplete": false,
+  "remaining": [
+    "P1 finite view jobs/equipment/per-job refs",
+    "actual Villager walk/reuse qualification",
+    "new evidence-envelope trusted production adapter",
+    "full roster/performance/public completion"
+  ],
+  "limits": [
+    "Prior tests are exact observed tool results, not freshly rerun for this receipt.",
+    "Internal-link check excludes external URLs and all historical prose paths.",
+    "Hashes do not establish art quality or deployed state."
+  ]
+}
