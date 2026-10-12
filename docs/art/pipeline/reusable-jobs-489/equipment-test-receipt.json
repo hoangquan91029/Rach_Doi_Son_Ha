@@ -1,0 +1,131 @@
+{
+  "schema": "rds-equipment-registry-tests/v1",
+  "status": "VERIFIED_SCOPED_TESTS",
+  "command": "node --test tests/equipment-registry.test.js",
+  "result": {
+    "exitCode": 0,
+    "tests": 6,
+    "pass": 6,
+    "fail": 0,
+    "durationMs": 91.106232
+  },
+  "testPin": {
+    "path": "tests/equipment-registry.test.js",
+    "sha256": "35f94c9d394d22e0e2d859e29053c2698e2eaee3cd5a3b5edea635c7cb206a40"
+  },
+  "inputPins": [
+    {
+      "path": "scripts/sprite-prompts.mjs",
+      "sha256": "c9b22409b05c8007d5ca32f8ebf37be03a73267647bad7395093f19335f59316"
+    },
+    {
+      "path": "docs/art/pipeline/reusable-jobs-489/registry-intake.json",
+      "sha256": "e05a123ffe9d78e04573d339ad49e8468af30c596d68e13c6ddebaf06447b1b6"
+    },
+    {
+      "path": "docs/art/pipeline/unit-production/artillery/identity.json",
+      "sha256": "7bd9763b17a792b501280a949d9b7ae3e7274a04cb11639755f0d334bbf96823"
+    },
+    {
+      "path": "docs/art/pipeline/unit-production/cavalry/identity.json",
+      "sha256": "425ab787ec07da12928f7254607b1365ecea924e5bc5dca469ce8f58c3dd6ca3"
+    },
+    {
+      "path": "docs/art/pipeline/unit-production/firearm/identity.json",
+      "sha256": "414d82388982a903a51acaabe2bbf6d13c28d1c4c1ce1d7ab434f59a47322316"
+    },
+    {
+      "path": "docs/art/pipeline/unit-production/han_xin/identity.json",
+      "sha256": "e0e95ae01cdc09e4b0b7282c4e1f75cb733b33e3eba84b3f020cfa47447a44e7"
+    },
+    {
+      "path": "docs/art/pipeline/unit-production/infantry/identity.json",
+      "sha256": "71e5ed6178b287e734a04dca739efaab56fc6ce26703f24ae3d2fc6bcc6b7aa7"
+    },
+    {
+      "path": "docs/art/pipeline/unit-production/le_thanh_tong/identity.json",
+      "sha256": "50cead809a3106969b846efd435379cc54ec4a15201a02b915fd69c285ce4296"
+    },
+    {
+      "path": "docs/art/pipeline/unit-production/ly_thuong_kiet/identity.json",
+      "sha256": "2ae3f900e6bba8527c1b956453d27827270e2c2f5af802d07639c5940465d485"
+    },
+    {
+      "path": "docs/art/pipeline/unit-production/minh_menh/identity.json",
+      "sha256": "112604eb3bd2d50017624ca5d3f17f36180cd90ecc9350a957b936be6d9a4d81"
+    },
+    {
+      "path": "docs/art/pipeline/unit-production/napoleon_bonaparte/identity.json",
+      "sha256": "50b7cf37b12b02a127a28a761693115eabbb51c7922d8fdd0dd01e6de8f0ecf9"
+    },
+    {
+      "path": "docs/art/pipeline/unit-production/nguyen_anh/identity.json",
+      "sha256": "998ade4591b26069407324a79a1f8734c6733ef253ab0219e1147d8237635e23"
+    },
+    {
+      "path": "docs/art/pipeline/unit-production/nguyen_hue/identity.json",
+      "sha256": "56b2ab285aa9473561224d2839e23fdf9fc21783175f1b844d75b291f92d8ccd"
+    },
+    {
+      "path": "docs/art/pipeline/unit-production/nguyen_phuc_chu/identity.json",
+      "sha256": "d7e14fdbabf618880bdda9cc5410c5ddb289994f6e688a9974009237d0df0c2e"
+    },
+    {
+      "path": "docs/art/pipeline/unit-production/spearman/identity.json",
+      "sha256": "2d96deafc7a9f6af2ac3e5382cb4e0ce6786c3790defd1b76d4de423eca81e1d"
+    },
+    {
+      "path": "docs/art/pipeline/unit-production/tran_hung_dao/identity.json",
+      "sha256": "9be313215d2b60a31ed0943c3612f8d1ce5153e8f6d84147900c0ec001fc3740"
+    },
+    {
+      "path": "docs/art/pipeline/unit-production/tran_nhan_tong/identity.json",
+      "sha256": "260f606336a88c9e9131bc42c95b790db305451335d535f160eb1efe3ec8e7fb"
+    },
+    {
+      "path": "docs/art/pipeline/unit-production/transport/identity.json",
+      "sha256": "195ff137ce246b5364a3de50cd1f7f19aac543f894fca1db9c965db0282d763b"
+    },
+    {
+      "path": "docs/art/pipeline/unit-production/trinh_cuong/identity.json",
+      "sha256": "fdab26d668761533042ba581c1ea36787d39098daad949064ff48b19de775128"
+    },
+    {
+      "path": "docs/art/pipeline/unit-production/villager/identity.json",
+      "sha256": "e095c86117ef863c62bc15868c3145822d21f6d34adbff73b2e4f13a3e84e231"
+    },
+    {
+      "path": "docs/art/pipeline/unit-production/wagon/identity.json",
+      "sha256": "e78e9822bfba5587f24076f0ec7837f52d9be4c70795ae95f232dc98958a0846"
+    },
+    {
+      "path": "docs/art/pipeline/unit-production/warship/identity.json",
+      "sha256": "43320e4ab70dcd9146dd5a4f2cb4947e0d9ad49e742721b26fe5ec2310eb3d89"
+    },
+    {
+      "path": "docs/art/pipeline/unit-production/xiang_yu/identity.json",
+      "sha256": "ed2014f0b2d59184e6bd6abe85f713fece0ba07cf3992a020c09a01e5ad98ff8"
+    }
+  ],
+  "scope": [
+    "Actual21 registry equipment records:10master pins and11missing-master unknowns",
+    "Existing original infantry/wagon master SHA and ownership preservation",
+    "Idle-only Villager/TNT N/A: invented statement rejects; exact idle statement also rejects Villager gather_wood/gather_iron/gather_food/build/attack and TNT attack/build/ability for lack of separately pinned action equipment.",
+    "Typed unique actual action/direction/variant job pins and content validation",
+    "Existing static statuses and no new review/release/layout/motion approval",
+    "Isolated finite VillagerD2 view fixture succeeds without action/phase; missingD2 action rejects borrowingD0; source and call budget unchanged"
+  ],
+  "history": "Initial6 tests passed; exact ownership assertions strengthened and rerun passed. Root requested stronger N/A action guards; assertions were added before live490 guard. No mutation or test run while490guard live; root reported allguardsCLOSED and strict guards ready, then final6-test run passed.",
+  "outputs": [
+    "tests/equipment-registry.test.js",
+    "docs/art/pipeline/reusable-jobs-489/equipment-test-receipt.json"
+  ],
+  "limits": [
+    "No image call, ledger claim, generation, production order, browser or runtime qualification.",
+    "No continuous motion/owner/new-view/release approval.",
+    "Fixture adds productionOrders only to in-memory clone; actual registry and ledger unchanged.",
+    "Root integrates changes; worker edited only assigned test and receipt."
+  ],
+  "handles": "All tool commands completed; no live test/call handle remains.",
+  "guardClosure": "Root message: AllguardsCLOSED; later strictguardsimplementedready and no browseropen. Final test executed only after readiness."
+}

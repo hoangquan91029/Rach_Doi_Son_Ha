@@ -142,7 +142,7 @@
     ],
     "basis": "shared/sim.js atan2 eight world octants; screen x=(worldX-worldY), y=(worldX+worldY)/2; labels describe projected vector"
   },
-  "weaponOwnership": null,
+  "weaponOwnership": "Preserve the original long firearm, stock/barrel relationship and visible two-hand hold; do not assign unobserved anatomical sides or exchange the physical grips.",
   "allowedReferences": [],
   "excludedReferencePaths": [],
   "masterAuthority": "original",
@@ -193,5 +193,16 @@
       "conversion": "Whole source-coordinate normalization to retained original canvas; logical render unchanged"
     },
     "visualApproval": false
-  }
+  },
+  "equipmentLock": {
+    "status": "verified",
+    "statement": "Preserve the original long firearm, stock/barrel relationship and visible two-hand hold; do not assign unobserved anatomical sides or exchange the physical grips.",
+    "source": {
+      "path": "docs/art/units/firearm-idle-408/imagegen-raw.png",
+      "sha256": "3c0cc8181f5f49996403873c921baabd3902354825c3ab807a78572fb67517e9"
+    },
+    "basis": "Long firearm crosses the front of the figure, supported by visible arm/hand contacts; exact fingers and anatomical ownership are not resolved at gameplay size.",
+    "scope": "Original static equipment/assembly only; action-specific tools require separately pinned action locks"
+  },
+  "jobs": []
 }

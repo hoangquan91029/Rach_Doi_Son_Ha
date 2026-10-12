@@ -1,0 +1,87 @@
+{
+  "schema": "rds-motion-spec-candidate/v1",
+  "identity": "villager",
+  "action": "walk",
+  "direction": 1,
+  "status": "PROPOSED_PHASE_LABELS_UNMEASURED",
+  "physicalLegA": {
+    "persistentLandmark": null,
+    "anatomicalSide": null
+  },
+  "physicalLegB": {
+    "persistentLandmark": null,
+    "anatomicalSide": null
+  },
+  "phases": [
+    {
+      "frame": 0,
+      "normalizedPhase": 0.0,
+      "intent": "contactA receiving weight",
+      "observedSupportFoot": null,
+      "landmarkPixels": null,
+      "stanceInterval": null
+    },
+    {
+      "frame": 1,
+      "normalizedPhase": 0.125,
+      "intent": "weightA",
+      "observedSupportFoot": null,
+      "landmarkPixels": null,
+      "stanceInterval": null
+    },
+    {
+      "frame": 2,
+      "normalizedPhase": 0.25,
+      "intent": "B passes A",
+      "observedSupportFoot": null,
+      "landmarkPixels": null,
+      "stanceInterval": null
+    },
+    {
+      "frame": 3,
+      "normalizedPhase": 0.375,
+      "intent": "B reaches",
+      "observedSupportFoot": null,
+      "landmarkPixels": null,
+      "stanceInterval": null
+    },
+    {
+      "frame": 4,
+      "normalizedPhase": 0.5,
+      "intent": "contactB receiving weight",
+      "observedSupportFoot": null,
+      "landmarkPixels": null,
+      "stanceInterval": null
+    },
+    {
+      "frame": 5,
+      "normalizedPhase": 0.625,
+      "intent": "weightB",
+      "observedSupportFoot": null,
+      "landmarkPixels": null,
+      "stanceInterval": null
+    },
+    {
+      "frame": 6,
+      "normalizedPhase": 0.75,
+      "intent": "A passes B",
+      "observedSupportFoot": null,
+      "landmarkPixels": null,
+      "stanceInterval": null
+    },
+    {
+      "frame": 7,
+      "normalizedPhase": 0.875,
+      "intent": "A reaches F0",
+      "observedSupportFoot": null,
+      "landmarkPixels": null,
+      "stanceInterval": null
+    }
+  ],
+  "travelVector": null,
+  "distancePerCycle": {
+    "value": 1.26,
+    "status": "HISTORICAL_PROVISIONAL_NOT_QUALIFIED"
+  },
+  "limit": "A/B phase intents from ANIMATION_CONTRACT; legacy LEFT/RIGHT event names preserved as markers, not verified anatomical assignment or support flip."
+}

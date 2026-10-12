@@ -1,0 +1,177 @@
+{
+  "schema": "rds-registry-intake/v1",
+  "status": "VERIFIED_METADATA_ONLY",
+  "producer": "root",
+  "changes": [
+    {
+      "identity": "artillery",
+      "before": "db1871cc892839dedf1404802ef885f5cd60fe41f93cc9af1f39a11e029e46f6",
+      "after": "7bd9763b17a792b501280a949d9b7ae3e7274a04cb11639755f0d334bbf96823",
+      "equipmentStatus": "verified",
+      "jobs": []
+    },
+    {
+      "identity": "cavalry",
+      "before": "8873e495e763c68535a7f2cc28aefbd3533a9e9eb5094da9c590e31df06ee27d",
+      "after": "425ab787ec07da12928f7254607b1365ecea924e5bc5dca469ce8f58c3dd6ca3",
+      "equipmentStatus": "verified",
+      "jobs": []
+    },
+    {
+      "identity": "firearm",
+      "before": "304a9e6f101c2830e931c097cd42992a85822827acdc8a126db96ffb5e012542",
+      "after": "414d82388982a903a51acaabe2bbf6d13c28d1c4c1ce1d7ab434f59a47322316",
+      "equipmentStatus": "verified",
+      "jobs": []
+    },
+    {
+      "identity": "han_xin",
+      "before": "a9cba76134b6ae3187f60fc3dbd1030e27384133db47f1d34f17bf8021627ac0",
+      "after": "e0e95ae01cdc09e4b0b7282c4e1f75cb733b33e3eba84b3f020cfa47447a44e7",
+      "equipmentStatus": "unknown",
+      "jobs": []
+    },
+    {
+      "identity": "infantry",
+      "before": "d7f469d679d814400b971fc9909c264758e89a43352b12270de170dd50813141",
+      "after": "71e5ed6178b287e734a04dca739efaab56fc6ce26703f24ae3d2fc6bcc6b7aa7",
+      "equipmentStatus": "verified",
+      "jobs": [
+        {
+          "id": "infantry-original-D0-walk-470",
+          "action": "walk",
+          "direction": 0,
+          "variant": "original-candidate-470",
+          "path": "docs/art/pipeline/infantry-original-loop-470/job.json",
+          "sha256": "fd3be52536555fcd809ca59a2a21de0040f32ec1a2a0f19f6932706fb0af0be3"
+        }
+      ]
+    },
+    {
+      "identity": "le_thanh_tong",
+      "before": "c77786aa7d2d7be7705b934038d12473dbdc2863b5642148040f52b3b3eab166",
+      "after": "50cead809a3106969b846efd435379cc54ec4a15201a02b915fd69c285ce4296",
+      "equipmentStatus": "unknown",
+      "jobs": []
+    },
+    {
+      "identity": "ly_thuong_kiet",
+      "before": "3185342268ff4341ae89892d1cfdda5cf867cca1ee76f5dbf679e72b46d13d46",
+      "after": "2ae3f900e6bba8527c1b956453d27827270e2c2f5af802d07639c5940465d485",
+      "equipmentStatus": "unknown",
+      "jobs": []
+    },
+    {
+      "identity": "minh_menh",
+      "before": "c0845ab574defb3d456c0d7a0d11dc89cc9143672fe7d5048a3fcca490ef24e0",
+      "after": "112604eb3bd2d50017624ca5d3f17f36180cd90ecc9350a957b936be6d9a4d81",
+      "equipmentStatus": "unknown",
+      "jobs": []
+    },
+    {
+      "identity": "napoleon_bonaparte",
+      "before": "17e289f2cfd1cfcccb238055b9f6f46fb5a16adab5b8577db906a95ed574638b",
+      "after": "50b7cf37b12b02a127a28a761693115eabbb51c7922d8fdd0dd01e6de8f0ecf9",
+      "equipmentStatus": "unknown",
+      "jobs": []
+    },
+    {
+      "identity": "nguyen_anh",
+      "before": "b7d741186ad418ebbf4797a1bedd5fba3434b6d01cbfa524e82a9683640e1b32",
+      "after": "998ade4591b26069407324a79a1f8734c6733ef253ab0219e1147d8237635e23",
+      "equipmentStatus": "unknown",
+      "jobs": []
+    },
+    {
+      "identity": "nguyen_hue",
+      "before": "527471050074a471c440357d1e11d5d43cb36a460c31437f6ce621972a663adf",
+      "after": "56b2ab285aa9473561224d2839e23fdf9fc21783175f1b844d75b291f92d8ccd",
+      "equipmentStatus": "unknown",
+      "jobs": []
+    },
+    {
+      "identity": "nguyen_phuc_chu",
+      "before": "4d80f24f9421b9918e74d1d7beb63f98d53b8ae90d384c14756682f995390b1c",
+      "after": "d7e14fdbabf618880bdda9cc5410c5ddb289994f6e688a9974009237d0df0c2e",
+      "equipmentStatus": "unknown",
+      "jobs": []
+    },
+    {
+      "identity": "spearman",
+      "before": "9a912d6cca34379acf41f9a03c39d66f147c7f1d799fb1626995bfad7869b018",
+      "after": "2d96deafc7a9f6af2ac3e5382cb4e0ce6786c3790defd1b76d4de423eca81e1d",
+      "equipmentStatus": "verified",
+      "jobs": []
+    },
+    {
+      "identity": "tran_hung_dao",
+      "before": "4a91d904189144686abd6d0e9d6138fd992ca83b26728d3bc5a8cc040c3973cf",
+      "after": "9be313215d2b60a31ed0943c3612f8d1ce5153e8f6d84147900c0ec001fc3740",
+      "equipmentStatus": "verified",
+      "jobs": []
+    },
+    {
+      "identity": "tran_nhan_tong",
+      "before": "4585a7ce8b1033035e18b672f9066b3570cc3f383b671f8b9e404fb8c092bc0f",
+      "after": "260f606336a88c9e9131bc42c95b790db305451335d535f160eb1efe3ec8e7fb",
+      "equipmentStatus": "not-applicable",
+      "jobs": []
+    },
+    {
+      "identity": "transport",
+      "before": "054dc033613b7ca8eeee7af884534c7aed176617a4caa6601896e491844932a2",
+      "after": "195ff137ce246b5364a3de50cd1f7f19aac543f894fca1db9c965db0282d763b",
+      "equipmentStatus": "verified",
+      "jobs": []
+    },
+    {
+      "identity": "trinh_cuong",
+      "before": "6a1bc749b51c0ac2404f8514573e6d1ff724c1c421c1c3ffa5401dbfaa9ee960",
+      "after": "fdab26d668761533042ba581c1ea36787d39098daad949064ff48b19de775128",
+      "equipmentStatus": "unknown",
+      "jobs": []
+    },
+    {
+      "identity": "villager",
+      "before": "be434dc94bf44e026e0ba0ca410c5708e43ff538044b1096e78dc832bb96d2ad",
+      "after": "e095c86117ef863c62bc15868c3145822d21f6d34adbff73b2e4f13a3e84e231",
+      "equipmentStatus": "not-applicable",
+      "jobs": [
+        {
+          "id": "villager-D1-walk-490",
+          "action": "walk",
+          "direction": 1,
+          "variant": "reused-D1-candidate-490",
+          "path": "docs/art/pipeline/villager-qualification-490/compiler-job.json",
+          "sha256": "cb5e99d686d1f86a329635f768439ccb5e83399d7fcb48e3befd053dd9d5041c"
+        }
+      ]
+    },
+    {
+      "identity": "wagon",
+      "before": "10ff989b3372394986ac715ae2afe564a67e9e2648f862a04ddb453ad81057fe",
+      "after": "e78e9822bfba5587f24076f0ec7837f52d9be4c70795ae95f232dc98958a0846",
+      "equipmentStatus": "verified",
+      "jobs": []
+    },
+    {
+      "identity": "warship",
+      "before": "0a16f556c334bea347cc7b44a6c9e8690a3f27c3d463497d29a41801862222eb",
+      "after": "43320e4ab70dcd9146dd5a4f2cb4947e0d9ad49e742721b26fe5ec2310eb3d89",
+      "equipmentStatus": "unknown",
+      "jobs": []
+    },
+    {
+      "identity": "xiang_yu",
+      "before": "beef7292764d6681883476c58b2f69ed5aca0c92d629d7c171795f8a96f36735",
+      "after": "ed2014f0b2d59184e6bd6abe85f713fece0ba07cf3992a020c09a01e5ad98ff8",
+      "equipmentStatus": "unknown",
+      "jobs": []
+    }
+  ],
+  "limits": [
+    "No image call, view selection, motion approval or runtime promotion",
+    "Existing currentJob preserved only as historical compatibility; new typed orders require jobs binding",
+    "Missing11 world masters stay unknown; tool grips for work actions remain separate dependencies"
+  ]
+}

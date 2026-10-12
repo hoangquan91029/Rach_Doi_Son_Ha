@@ -165,8 +165,19 @@
     ],
     "basis": "shared/sim.js atan2 eight world octants; screen x=(worldX-worldY), y=(worldX+worldY)/2; labels describe projected vector"
   },
-  "weaponOwnership": null,
+  "weaponOwnership": "Preserve the original sheathed hip sword, hilt contact and tassel; the original hilt-contacting hand remains that hand in authored views, without an anatomical left/right claim.",
   "allowedReferences": [],
   "excludedReferencePaths": [],
-  "masterAuthority": "original"
+  "masterAuthority": "original",
+  "equipmentLock": {
+    "status": "verified",
+    "statement": "Preserve the original sheathed hip sword, hilt contact and tassel; the original hilt-contacting hand remains that hand in authored views, without an anatomical left/right claim.",
+    "source": {
+      "path": "docs/art/characters/tran-hung-dao-neutral-D00-screen-ESE/raw.png",
+      "sha256": "21e7d7c160fc27b52f8e9475702914e73a628752a5c2b5a4c290d9c7b466d553"
+    },
+    "basis": "Selective original inspection shows one hand resting around the sword hilt at the hip, a hanging sheath/tassel, and the other hand hanging free.",
+    "scope": "Original static equipment/assembly only; action-specific tools require separately pinned action locks"
+  },
+  "jobs": []
 }

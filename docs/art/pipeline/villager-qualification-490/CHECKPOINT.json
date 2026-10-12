@@ -1,0 +1,150 @@
+{
+  "schema": "rds-villager-qualification-checkpoint/v1",
+  "status": "TECHNICAL_PASS_OWNER_MOTION_FAILED",
+  "reusedSelectedSourceFrames": 8,
+  "imageCalls": 0,
+  "newFrames": 0,
+  "timingPreviewMs": 600,
+  "stride": {
+    "worldDistancePerCycle": 1.26,
+    "qualification": "PROVISIONAL"
+  },
+  "wholeCanvasPx": 70.56,
+  "sourceCanvas": 1254,
+  "working": 256,
+  "runtimeCell": 128,
+  "padding": 2,
+  "atlas": {
+    "path": "docs/art/pipeline/villager-qualification-490/compiled/atlas.png",
+    "sha256": "b2bdd86bd02f967bde9b070e5952e97dae257706b5d52730b787e32e9580fc13",
+    "byteEqualExistingWalk014": true
+  },
+  "originalPreserved": true,
+  "familyShadowConflict": "D0baked/D1separate OPEN; exactexistingD1matchingidle/shadowretained",
+  "browserPreview": {
+    "path": "docs/art/pipeline/villager-qualification-490/preview-browser.json",
+    "sha256": "c8dab5704198a024bee418165e4b70a5e978d7ebf3685c43380e99efc4915c06",
+    "scope": "Actualbrowserplayback8frames/3cycles/pauseplay/size ONLY"
+  },
+  "sceneAttempts": [
+    {
+      "path": "docs/art/pipeline/villager-qualification-490/actual-chrome/receipt.json",
+      "sha256": "4e0776dae83fb8b7426eafff03a68214e956ef2a30bfcffe32ad9a38ea8a0c5c",
+      "status": "HOLD_ACTUAL_UI",
+      "error": "AssertionError [ERR_ASSERTION]: Living owned unit with visible clear directional corridor\n    at file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/qa/unit-walk-scene.mjs:19:9\n    at runNextTicks (node:internal/process/task_queues:65:5)\n    at process.processImmediate (node:internal/timers:472:9)",
+      "frames": null,
+      "errors": [],
+      "network": [],
+      "pins": 861,
+      "allPinsPreserved": true,
+      "handles": {
+        "browserClosed": true,
+        "serverListening": false,
+        "rooms": 0
+      },
+      "storedReceipt": "docs/art/pipeline/villager-qualification-490/actual-chrome/receipt.json.gz",
+      "custody": "Unchangedrawlocal; committed losslessgzip, QA_CUSTODY decodedSHA binding"
+    },
+    {
+      "path": "docs/art/pipeline/villager-qualification-490/actual-chrome-clearance/receipt.json",
+      "sha256": "2dbeb36d93031f0abd8465ed97f2f722b77411c237ca0c4ab4bfdb4d2b83588f",
+      "status": "HOLD_ACTUAL_UI",
+      "error": "Error: Ordinary UI guard timed out\n    at wait (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/qa/unit-walk-scene.mjs:9:173)\n    at async file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/qa/unit-walk-scene.mjs:42:457",
+      "frames": null,
+      "errors": [],
+      "network": [],
+      "pins": 861,
+      "allPinsPreserved": true,
+      "handles": {
+        "browserClosed": true,
+        "serverListening": false,
+        "rooms": 0
+      },
+      "storedReceipt": "docs/art/pipeline/villager-qualification-490/actual-chrome-clearance/receipt.json.gz",
+      "custody": "Unchangedrawlocal; committed losslessgzip, QA_CUSTODY decodedSHA binding"
+    },
+    {
+      "path": "docs/art/pipeline/villager-qualification-490/actual-chrome-trace/receipt.json",
+      "sha256": "0eff71cbb9d19448c280e3d6f199eae7d246a85beb4da169d5d48818077402a2",
+      "status": "PASS_ACTUAL_UI_TECHNICAL_ONLY",
+      "error": null,
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "errors": [],
+      "network": [],
+      "pins": 861,
+      "allPinsPreserved": true,
+      "handles": {
+        "browserClosed": true,
+        "serverListening": false,
+        "rooms": 0
+      },
+      "storedReceipt": "docs/art/pipeline/villager-qualification-490/actual-chrome-trace/receipt.json.gz",
+      "custody": "Unchangedrawlocal; committed losslessgzip, QA_CUSTODY decodedSHA binding"
+    },
+    {
+      "path": "docs/art/pipeline/villager-qualification-490/actual-firefox-trace/receipt.json",
+      "sha256": "e662276f6b9cd2a58e28e7efa133e1014499cb9804c1abce317e9245844ebbeb",
+      "status": "PASS_ACTUAL_UI_TECHNICAL_ONLY",
+      "error": null,
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "errors": [],
+      "network": [],
+      "pins": 861,
+      "allPinsPreserved": true,
+      "handles": {
+        "browserClosed": true,
+        "serverListening": false,
+        "rooms": 0
+      },
+      "storedReceipt": "docs/art/pipeline/villager-qualification-490/actual-firefox-trace/receipt.json.gz",
+      "custody": "Unchangedrawlocal; committed losslessgzip, QA_CUSTODY decodedSHA binding"
+    }
+  ],
+  "successfulScope": "OrdinaryDeltaUI living ownVillager; clearanceMove thenD1walk8frames/subtickmotion/PauseResume/actualassignedarrival/secondMoveStop exactD1idle/menu0decoded; no injectedcommands/state/direction/outcome",
+  "owner": {
+    "path": "docs/art/pipeline/villager-qualification-490/owner-review.json",
+    "sha256": "a6a3c489a7c410cce14630e98245c2e96b374a164ed09fe491bed12bad2c25df",
+    "result": "FAILED_OWNER_MOTION",
+    "quote": "Chưa ổn, cần sửa chuyển động"
+  },
+  "poseDiagnosis": "F2/F6 weak passing silhouettes inferred once fromstillkeys; not proved physical-contact defect",
+  "historicalCorrectionBudget": {
+    "receipt": "docs/art/pipeline/villager-qualification-490/budget-intake.json",
+    "atLeastConsumed": 2,
+    "newOrder": null
+  },
+  "reuseMetrics": {
+    "reusedFrames": 8,
+    "newCalls": 0,
+    "newAcceptedFrames": 0,
+    "newMotionQualifiedClips": 0,
+    "manualAuthoringMinutes": null,
+    "AtoBMeasuredReuse": "NOT_YET_DEMONSTRATED"
+  },
+  "clientDelta": "Bounded current-render actualsuccessfuldraw diagnostics; no appearance/simulation/gameplaychange",
+  "canonicalInstallOfBank": false,
+  "publicChanged": false,
+  "fanoutAllowed": false,
+  "next": "Resolve physicalsole lanes/projected stance in newwholeclothed2D control; ownerrejectionstands; no blindsimilarretry",
+  "allOwnedHandles": "CLOSED",
+  "fullGoalComplete": false,
+  "clips": "Localoriginalbytes retained/hashed in QA_CUSTODY, Gitignored"
+}

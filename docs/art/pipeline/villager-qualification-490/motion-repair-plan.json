@@ -1,0 +1,110 @@
+{
+  "schema": "rds-motion-repair-plan/v1",
+  "identity": "villager",
+  "action": "walk",
+  "direction": 1,
+  "ownerFeedback": {
+    "quote": "Ch\u01b0a \u1ed5n, c\u1ea7n s\u1eeda chuy\u1ec3n \u0111\u1ed9ng",
+    "scope": "Displayed490 game-size D1 loop rejected; no specific world-foot-lock diagnosis supplied"
+  },
+  "status": "PROPOSED_ROOT_REVIEW_REQUIRED",
+  "imageCalls": 0,
+  "reviewMethod": "One71px whole-canvas F0/F2/F4/F6 sheet; related already-viewed shared128px diagnostic; still comparisons only, no continuous motion claim",
+  "reviewSheet": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-qualification-490/rootbriefsheet.png",
+    "sha256": "d7c8d3cf61442d48855c77c1d17038455f087008dfa3f16ce66835e7615c864f"
+  },
+  "projection": {
+    "status": "VERIFIED_SOURCE_CONTRACT",
+    "direction": 1,
+    "screenFacing": "South",
+    "groundProjection": "x=(worldX-worldY), y=(worldX+worldY)/2",
+    "worldTravelIntent": [
+      1,
+      1
+    ],
+    "screenTravelIntent": [
+      0,
+      1
+    ],
+    "nearFarLegAssignment": null,
+    "limitation": "South travel direction is known; physical near/far ordering cannot be established confidently from these overlapped stills"
+  },
+  "visibleDefectCandidate": {
+    "status": "INFERRED_FROM_STILLS",
+    "observation": "F2 retains similar split-foot silhouette to F0: one boot low and the opposite boot raised laterally. F6 likewise retains a similar split-foot silhouette to F4. At game size the two passing keys are weakly distinct from their preceding contact keys.",
+    "implication": "Prioritize clear passing under the pelvis and receiving-weight phase rather than repainting identity or all eight frames.",
+    "limitations": "No measured support intervals or anatomical landmark continuity; cannot assert foot slide, contact error, seam failure or physical-side assignment from stills."
+  },
+  "physicalLegs": {
+    "A": {
+      "provisionalIdentity": "Leg receiving weight at legacy F0 contact intent",
+      "anatomicalSide": null,
+      "persistentLandmark": null
+    },
+    "B": {
+      "provisionalIdentity": "Opposite leg receiving weight at legacy F4 contact intent",
+      "anatomicalSide": null,
+      "persistentLandmark": null
+    },
+    "status": "PROPOSED_PHASE_IDENTITY_NOT_OBSERVED_ANATOMICAL_ASSIGNMENT"
+  },
+  "preserve": [
+    {
+      "frame": 0,
+      "input": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/authoring-tools/villager-walk-SOUTH-007/walk/keys/F00-left-contact-01/raw.png",
+        "sha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001",
+        "rgbaSha256": "07bc362e869f40e8a3d5ba0b6fabdd7845f6132c0aa4656a17f762ee46609410"
+      },
+      "status": "EXISTING_SELECTED_IDENTITY_CONTACT_CANDIDATE_NOT_MOTION_PASS"
+    },
+    {
+      "frame": 4,
+      "input": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-009/F4-trailing-contact-correction-01/raw.png",
+        "sha256": "929b9805f696abf341b8ea9b4df425a753da2c48b1be9ca13282bb5c72e0793f",
+        "rgbaSha256": "12a430a74fe4a945971a0821b6a0c7548cf6db9b84f40aedaeccfd40b28b75d8"
+      },
+      "status": "EXISTING_SELECTED_IDENTITY_CONTACT_CANDIDATE_NOT_MOTION_PASS"
+    }
+  ],
+  "repairPriority": [
+    {
+      "frame": 2,
+      "status": "PROPOSED_VISIBLE_PHASE_REPAIR",
+      "wholePoseControl": "Keep original whole character/camera/canvas/pivot/equipment. A receives/supports weight; B swings through beneath the pelvis, knee flexed, swing boot clear of ground. Make passing read distinctly from F0 split-foot contact. Keep natural small counter-swing and body weight shift; do not freeze upper body. Preserve physical leg continuity through F1/F3."
+    },
+    {
+      "frame": 6,
+      "status": "PROPOSED_SECOND_HALF_PHASE_REPAIR",
+      "wholePoseControl": "Opposite weight transfer: B receives/supports weight; A passes beneath pelvis with flexed knee and clear swing boot. Distinct from F4 split-foot contact. Preserve physical leg continuity through F5/F7; do not mirror F2."
+    }
+  ],
+  "changedControl": {
+    "status": "PROPOSED_NOT_CALLED_OR_QUALIFIED",
+    "method": "Exact Villager D1 source-bound whole-frame edits of passing keys with explicit support/swing and receiving-weight intents; preserve valid contacts and whole original appearance anchor. Root must approve persistent leg mapping and a whole-clothed guide before any finite order.",
+    "guide": null,
+    "reasonGuideDeferred": "Anatomical/persistent A/B assignment uncertain. Drawing arbitrary landmark coordinates would conceal that uncertainty.",
+    "inputOrderIntent": [
+      "exact target passing frame",
+      "canonical D1 whole appearance anchor",
+      "selected adjacent frames",
+      "root-approved whole-clothed phase guide if prepared"
+    ],
+    "finalPixelRule": "No transformed limb pixels, cuts, warps, mirrors or per-frame fit; guide is authoring aid only",
+    "distinctionFromClosedInfantry": "Different identity/action-direction pilot with existing Villager sources; this does not reopen Infantry482/483/486 or reset any consumed budget. Distinction is not proof edit control will work."
+  },
+  "finiteOrderProposal": {
+    "status": "UNAUTHORIZED_PENDING_ROOT_REVIEW",
+    "slots": [
+      "F2",
+      "F6"
+    ],
+    "otherSlots": "REUSE_EXISTING; only reassess adjacent inbetweens if resulting brief loop shows a visible phase/seam defect",
+    "actionDirectionCorrectionCap": 2,
+    "priorHistoricalCalls": "preserve all South007/009/010/011/013 and existing ledgers; root must audit applicable historical correction cap before claim",
+    "newBudgetGranted": false
+  },
+  "nextPrerequisite": "Root resolves physical leg continuity/whole-clothed guide control and historical applicable budget; then explicit finite source-bound order. After repair one brief actual-size loop plus related ordinary UI scene."
+}

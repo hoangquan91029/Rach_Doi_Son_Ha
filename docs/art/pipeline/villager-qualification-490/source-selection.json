@@ -1,0 +1,331 @@
+{
+  "schema": "rds-villager-source-selection/v1",
+  "status": "VERIFIED_SOURCE_CANDIDATE",
+  "approval": {
+    "motion": "OPEN",
+    "runtime": "OPEN_CURRENT_SCOPE",
+    "owner": "OPEN",
+    "release": "OPEN"
+  },
+  "purpose": "Reuse exact existing D1 walk sources; no generation or canonical install",
+  "head": "7f8cd34f23169240f2839d9cb3a7524bbbb1caa0",
+  "original": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+    "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+    "rgbaSha256": "c960d206222a191b903a8cc1a679e82bdce8d8c51df4010a935f444b3cacdb9c"
+  },
+  "directionalMaster": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+    "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+    "rgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6"
+  },
+  "registry": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/unit-production/villager/identity.json",
+    "sha256": "be434dc94bf44e026e0ba0ca410c5708e43ff538044b1096e78dc832bb96d2ad"
+  },
+  "sourceJob": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-action-adapter-017/walk-job.json",
+    "sha256": "57aecc8582b1688743f01e89af2d3a7c6649b0d455bd40790d235c9dfc8645cd"
+  },
+  "frames": [
+    {
+      "input": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/authoring-tools/villager-walk-SOUTH-007/walk/keys/F00-left-contact-01/raw.png",
+        "sha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001",
+        "rgbaSha256": "07bc362e869f40e8a3d5ba0b6fabdd7845f6132c0aa4656a17f762ee46609410"
+      },
+      "status": "selected",
+      "custody": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-loop-preview-014/selection/F0.json; historical source selection only; motion OPEN",
+      "phase": 0.0,
+      "durationMs": 75,
+      "events": [
+        {
+          "name": "FOOT_CONTACT_LEFT",
+          "offsetMs": 0
+        }
+      ]
+    },
+    {
+      "input": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-011/F1-inbetween-01/raw.png",
+        "sha256": "1306a28e6424d6f9c1d547ee3c68bff22a93e544bd9264117514b3cc10b96356",
+        "rgbaSha256": "623ec4c6991fe775a328a7e90e5ada0ddaa9c7c6007c3627191a98d2afa7a6b8"
+      },
+      "status": "selected",
+      "custody": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-loop-preview-014/selection/F1.json; historical source selection only; motion OPEN",
+      "phase": 0.125,
+      "durationMs": 75,
+      "events": []
+    },
+    {
+      "input": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-010/F2-right-passing-01/raw.png",
+        "sha256": "bd2679353741d51575a99ccd0ded835281d0688abb1018146ed60d3077cc2b1c",
+        "rgbaSha256": "1a9f899a98ff1daea6c4e8a32ae9a507b8098a5e65ea9541c1757f5432e3208c"
+      },
+      "status": "selected",
+      "custody": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-loop-preview-014/selection/F2.json; historical source selection only; motion OPEN",
+      "phase": 0.25,
+      "durationMs": 75,
+      "events": []
+    },
+    {
+      "input": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-011/F3-inbetween-01/raw.png",
+        "sha256": "b7201ddf0e9e791b708835fd52a278af5c9487a2ee1a9c9592fa42d6b3e12687",
+        "rgbaSha256": "ed7d1f5900e1793eac8f0aa84c0a8a98e9f5c02a03c979fec898fe43b13f1805"
+      },
+      "status": "selected",
+      "custody": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-loop-preview-014/selection/F3.json; historical source selection only; motion OPEN",
+      "phase": 0.375,
+      "durationMs": 75,
+      "events": []
+    },
+    {
+      "input": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-009/F4-trailing-contact-correction-01/raw.png",
+        "sha256": "929b9805f696abf341b8ea9b4df425a753da2c48b1be9ca13282bb5c72e0793f",
+        "rgbaSha256": "12a430a74fe4a945971a0821b6a0c7548cf6db9b84f40aedaeccfd40b28b75d8"
+      },
+      "status": "selected",
+      "custody": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-loop-preview-014/selection/F4.json; historical source selection only; motion OPEN",
+      "phase": 0.5,
+      "durationMs": 75,
+      "events": [
+        {
+          "name": "FOOT_CONTACT_RIGHT",
+          "offsetMs": 0
+        }
+      ]
+    },
+    {
+      "input": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-011/F5-inbetween-01/raw.png",
+        "sha256": "9db20e4f44a57dfe0c801673b6e18c41350b44c88d486933d03d7dd359f90b36",
+        "rgbaSha256": "13b06b25f91d66e1022c3e84b534669d678cb2da05aee6850e38ca0cf1db06de"
+      },
+      "status": "selected",
+      "custody": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-loop-preview-014/selection/F5.json; historical source selection only; motion OPEN",
+      "phase": 0.625,
+      "durationMs": 75,
+      "events": []
+    },
+    {
+      "input": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-010/F6-left-passing-01/raw.png",
+        "sha256": "6ed3e9b8f0693441c457038e748789496421cefe3e02c696b6956fa074f34822",
+        "rgbaSha256": "7e13e010294f7013a3b871a67b9a9c390f4559e68fa2eb6b27546538b576d41b"
+      },
+      "status": "selected",
+      "custody": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-loop-preview-014/selection/F6.json; historical source selection only; motion OPEN",
+      "phase": 0.75,
+      "durationMs": 75,
+      "events": []
+    },
+    {
+      "input": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-013/F7-spacing-correction-01/raw.png",
+        "sha256": "716902cbeeb96793da81583548b736bd0c9ab735922398ac5728c574d680f479",
+        "rgbaSha256": "962762d41e745f8b0f238668105af0488da16307c19a096eea01c0273904b92a"
+      },
+      "status": "selected",
+      "custody": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-loop-preview-014/selection/F7.json; historical source selection only; motion OPEN",
+      "phase": 0.875,
+      "durationMs": 75,
+      "events": []
+    }
+  ],
+  "runtimeManifest": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/public/assets/art-v1/fort-202-manifest.json",
+    "sha256": "77c75ef2bea8cff633b28fe8635e51b5a7efc151bb1871b5b5d9d17850d4271c"
+  },
+  "runtimeAtlas": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/public/assets/art-v1/walk-014/atlas.png",
+    "sha256": "b2bdd86bd02f967bde9b070e5952e97dae257706b5d52730b787e32e9580fc13"
+  },
+  "layout": {
+    "fixedCanvas": {
+      "width": 1254,
+      "height": 1254
+    },
+    "pivot": {
+      "x": 654,
+      "y": 1140,
+      "space": "source"
+    },
+    "render": {
+      "width": 42,
+      "height": 42
+    },
+    "cell": {
+      "width": 128,
+      "height": 128
+    },
+    "contactShadow": {
+      "mode": "separate",
+      "assetId": "unit-contact-shadow"
+    }
+  },
+  "shadowConflict": "Registry original D0 layout baked; exact D1 walk runtime uses separate unit-contact-shadow. Retained D1 separate shadow; no automatic family shadow promotion.",
+  "scale": {
+    "sourceToLogical": 0.03349282296650718,
+    "defaultZoom": 1.68,
+    "canvasScreenPixels": 70.56,
+    "previewRoundedCanvasPixels": 71,
+    "sourceToScreen": 0.05626794258373206,
+    "measurementMethod": "Pillow RGBA alpha bounding box; extent includes any authored alpha, not anatomical body height",
+    "frames": [
+      {
+        "frame": 0,
+        "alphaBBox": [
+          55,
+          42,
+          1192,
+          1230
+        ],
+        "visibleAlphaExtentAtDefaultZoom": [
+          63.977,
+          66.846
+        ],
+        "selectionReceipt": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-loop-preview-014/selection/F0.json",
+          "sha256": "844feb9222f8c4e6d9c24e04116f26f5c370a9446434ed52809b744b16e98ce6"
+        }
+      },
+      {
+        "frame": 1,
+        "alphaBBox": [
+          0,
+          37,
+          1240,
+          1243
+        ],
+        "visibleAlphaExtentAtDefaultZoom": [
+          69.772,
+          67.859
+        ],
+        "selectionReceipt": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-loop-preview-014/selection/F1.json",
+          "sha256": "1a906047c09937aada8355489ccd3cfe140eaeb144f677c39eb3475939ad2684"
+        }
+      },
+      {
+        "frame": 2,
+        "alphaBBox": [
+          0,
+          19,
+          1232,
+          1230
+        ],
+        "visibleAlphaExtentAtDefaultZoom": [
+          69.322,
+          68.14
+        ],
+        "selectionReceipt": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-loop-preview-014/selection/F2.json",
+          "sha256": "41bc7d8b1fde752ec05e65aa6a416a6aa89b11456548967bf6635cc5f685a0d3"
+        }
+      },
+      {
+        "frame": 3,
+        "alphaBBox": [
+          0,
+          21,
+          1240,
+          1254
+        ],
+        "visibleAlphaExtentAtDefaultZoom": [
+          69.772,
+          69.378
+        ],
+        "selectionReceipt": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-loop-preview-014/selection/F3.json",
+          "sha256": "1edebaf970f00cae9ffa7ada070478a87d2400cbbb4510439541eaf0a85db2a2"
+        }
+      },
+      {
+        "frame": 4,
+        "alphaBBox": [
+          0,
+          17,
+          1240,
+          1213
+        ],
+        "visibleAlphaExtentAtDefaultZoom": [
+          69.772,
+          67.296
+        ],
+        "selectionReceipt": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-loop-preview-014/selection/F4.json",
+          "sha256": "5c5f91abb5909541414562f8862e81e740132340f79656092323df3b58c9a46f"
+        }
+      },
+      {
+        "frame": 5,
+        "alphaBBox": [
+          0,
+          3,
+          1254,
+          1254
+        ],
+        "visibleAlphaExtentAtDefaultZoom": [
+          70.56,
+          70.391
+        ],
+        "selectionReceipt": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-loop-preview-014/selection/F5.json",
+          "sha256": "eec7435476fbd1cb381348b0e47ff8888ecc85cde30b68dc01beeaa8984c14b1"
+        }
+      },
+      {
+        "frame": 6,
+        "alphaBBox": [
+          0,
+          32,
+          1232,
+          1232
+        ],
+        "visibleAlphaExtentAtDefaultZoom": [
+          69.322,
+          67.522
+        ],
+        "selectionReceipt": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-loop-preview-014/selection/F6.json",
+          "sha256": "2d4efbb987ba1c7e1c4bdb96af3fb68338b0e5eaaf17cd96b8ab40a4f5445499"
+        }
+      },
+      {
+        "frame": 7,
+        "alphaBBox": [
+          0,
+          19,
+          1240,
+          1230
+        ],
+        "visibleAlphaExtentAtDefaultZoom": [
+          69.772,
+          68.14
+        ],
+        "selectionReceipt": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/pure2d-loop-preview-014/selection/F7.json",
+          "sha256": "adeb963b4cabff6e71846c5f6f23a3d66e354856758181a4cd87bc231daa07f0"
+        }
+      }
+    ]
+  },
+  "previousBrowserEvidence": {
+    "status": "DOCUMENTED_ONLY",
+    "pin": {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-walk-runtime-016/chromium/receipt.json",
+      "sha256": "83205f36a55d2dfed4322688b6ab5099758715d4e9777140597d763be0ff0036"
+    },
+    "zoom": 1.08,
+    "durationSeconds": 2.5,
+    "limit": "historical technical UI playback; independent review did not view continuous motion"
+  },
+  "preservedAcceptance": "wood032 and iron141 only shown D1; no walk or food acceptance",
+  "imageCalls": 0,
+  "reusedFrames": 8,
+  "manualAuthoringMinutes": null,
+  "nextDependency": "Root one brief real-size continuous loop plus isolated ordinary UI travel/Stop/PauseResume scene; physical leg landmarks/support intervals unmeasured"
+}

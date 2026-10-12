@@ -401,5 +401,25 @@
       "conversion": "Whole source-coordinate normalization to retained original canvas; logical render unchanged"
     },
     "visualApproval": false
-  }
+  },
+  "equipmentLock": {
+    "status": "verified",
+    "statement": "Physical sword hand and shield hand remain those of original084845; D0 sword screenleft and shield screenright only; screen sides change with view",
+    "source": {
+      "path": "docs/art/units/sources/infantry-neutral-se-refine-01-imagegen-raw.png",
+      "sha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f"
+    },
+    "basis": "Sword and round shield are visible in the game-size sheet; existing registry explicitly locks physical ownership and D0 screen placement.",
+    "scope": "Original static equipment/assembly only; action-specific tools require separately pinned action locks"
+  },
+  "jobs": [
+    {
+      "id": "infantry-original-D0-walk-470",
+      "action": "walk",
+      "direction": 0,
+      "variant": "original-candidate-470",
+      "path": "docs/art/pipeline/infantry-original-loop-470/job.json",
+      "sha256": "fd3be52536555fcd809ca59a2a21de0040f32ec1a2a0f19f6932706fb0af0be3"
+    }
+  ]
 }

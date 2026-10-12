@@ -1,0 +1,809 @@
+{
+  "schema": "rds-equipment-proposals/v1",
+  "status": "PROPOSED_ROOT_INTAKE_REQUIRED",
+  "head": "7f8cd34f23169240f2839d9cb3a7524bbbb1caa0",
+  "scope": "Static original equipment metadata only; not view or motion qualification",
+  "counts": {
+    "identities": 21,
+    "existingMasters": 10,
+    "missingMastersUnknown": 11,
+    "verifiedEquipmentOrAssembly": 8,
+    "notApplicableHeldEquipmentInInspectedIdleOnly": 2
+  },
+  "inspection": {
+    "method": "One game-size static contact sheet of ten existing masters; selective original cavalry/THD and selected256 TNT inspection. No continuous motion or browser observation.",
+    "sheet": "docs/art/pipeline/reusable-jobs-489/equipment-game-size-sheet.png",
+    "sheetSHA256": "46a247b7bd5e8afa823ccb380dc4fddce36f9182e014424d0dd7653b3538de22",
+    "scale": "round(identity.layoutLock.render.width * 1.68), whole square canvas. THD/TNT missing layoutLock use matching manifest asset render.width42. No fitting or cropping."
+  },
+  "preflight": {
+    "schema": "rds-agent-preflight/v1",
+    "task": "art",
+    "head": "7f8cd34f23169240f2839d9cb3a7524bbbb1caa0",
+    "status": " M scripts/sprite-prompts.mjs\n?? docs/art/pipeline/reusable-jobs-489/\n?? docs/art/pipeline/villager-qualification-490/\n?? tests/sprite-order-run.test.js",
+    "readFiles": [
+      {
+        "path": "docs/agent-read-contract.json",
+        "sha256": "5e85c1c9a649aa6d71d03f6dd2b69a4e54f6b77c80f157a26e648a07f8ec3f99",
+        "bytes": 986
+      },
+      {
+        "path": "AGENTS.md",
+        "sha256": "a1bac4530beb062c593de86c0eecb61f9bf1e6cdde44728cd08b0cdb5dba83ee",
+        "bytes": 6674
+      },
+      {
+        "path": "docs/PROJECT_STATE.md",
+        "sha256": "b850ea28b249cabe525a7f24794e57a264c9b53137b6978b8491e6ab37b34d17",
+        "bytes": 2992
+      },
+      {
+        "path": "docs/NEXT_STEPS.md",
+        "sha256": "40e847135178289bbeef6cbfcc440f5c9cc1b1e3c1461210dc035110c2d4f1fb",
+        "bytes": 1396
+      },
+      {
+        "path": "docs/ARCHITECTURE_DECISIONS.md",
+        "sha256": "0b2b348bff0b0ffa6305e1aebf9d713faca7b9b10fb913df81640758ce1389c8",
+        "bytes": 2157
+      },
+      {
+        "path": "docs/art/ART_DIRECTION.md",
+        "sha256": "d64614e926465c0d540606634a25aeabc4f5364d6be7ced210eeab3182ffd429",
+        "bytes": 3087
+      },
+      {
+        "path": "docs/art/pipeline/ANIMATION_CONTRACT.md",
+        "sha256": "c77984786772c442cedb5bd3489f581dbad1ea2f89d5dea8dba64f1330b5113b",
+        "bytes": 5619
+      },
+      {
+        "path": "docs/art/pipeline/SPRITE_PRODUCTION_WORKFLOW.md",
+        "sha256": "0617c6eb90887dc740f4e34308c188425cb0ad22549267eee82490144423deee",
+        "bytes": 5052
+      },
+      {
+        "path": "docs/art/pipeline/IMAGE_GENERATION_TEMPLATES.md",
+        "sha256": "3a518d9e9b5cda3c523d13aead5dad24e7bf9b95328db28937eaea45c0f2f8b8",
+        "bytes": 6961
+      },
+      {
+        "path": "docs/art/pipeline/ANIMATION_ARCHETYPES.md",
+        "sha256": "165869e44eb58c6b37a0e29e1f461fd7c5dd36c73e1afb595742865e2299f43b",
+        "bytes": 2812
+      },
+      {
+        "path": "docs/art/pipeline/ASSET_QA.md",
+        "sha256": "7ad426a1a2b9d8fd10ae56aa7897fc19be67d3b00a40fac3987e1ef07cd66418",
+        "bytes": 3343
+      },
+      {
+        "path": "docs/art/pipeline/REVIEW_PRIORITY_20261008.md",
+        "sha256": "cacc2b746cb7360d4d6c9dba0b94d55dea0530e43402d60a891b3711e3c1a525",
+        "bytes": 960
+      }
+    ],
+    "sources": [
+      {
+        "path": "docs/art/pipeline/unit-production/villager/identity.json",
+        "sha256": "be434dc94bf44e026e0ba0ca410c5708e43ff538044b1096e78dc832bb96d2ad",
+        "bytes": 5295
+      }
+    ],
+    "ledger": {
+      "path": "docs/art/pipeline/unit-production/order-ledger.json",
+      "sha256": "bb52f26cab9a83322af001dbb6876e875d693ba562577c034f38dd0592a16e5c",
+      "locked": false,
+      "unresolvedClaims": []
+    },
+    "limits": [
+      "Existence and byte hashes do not establish understanding, permission, approval or tool availability.",
+      "Explicit invocation only; this helper is not a mandatory global hook.",
+      "Externally verify tools and actual live handles/preservation guards; no guards are declared closed."
+    ]
+  },
+  "identities": [
+    {
+      "identity": "artillery",
+      "registry": {
+        "path": "docs/art/pipeline/unit-production/artillery/identity.json",
+        "sha256": "db1871cc892839dedf1404802ef885f5cd60fe41f93cc9af1f39a11e029e46f6"
+      },
+      "existingWeaponOwnership": null,
+      "equipment": {
+        "status": "verified",
+        "statement": "Preserve the whole original cannon barrel, wooden carriage, wheels and their attachments; no crew or hands may be introduced.",
+        "source": {
+          "path": "docs/art/units/artillery-idle-409/raw.png",
+          "sha256": "da11202383f484326348b6c73acc3855509e32c98f926eb545dcdbe2b089d913"
+        },
+        "basis": "A barrel rests on a wheeled wooden carriage; no human crew is visible."
+      },
+      "cameraViewConsistency": {
+        "status": "PROPOSED",
+        "statement": "Preserve the selected whole painting camera and authored view; engine direction labels describe world octants, not anatomical sides. No mirror, camera refit or hidden-view reconstruction.",
+        "sourceDirection": 0,
+        "otherViewsApproved": false
+      },
+      "gripOrAssemblyTrace": {
+        "status": "VERIFIED_STATIC",
+        "basis": "A barrel rests on a wheeled wooden carriage; no human crew is visible.",
+        "anatomicalSides": null,
+        "rule": "Preserve only observed original contact/assembly; unseen anatomy and occluded connections remain unasserted."
+      },
+      "custody": {
+        "registryMasterAuthority": "original",
+        "receipt": "docs/art/pipeline/original-identities-485/receipt.json",
+        "limit": "Custody/selection only; no new view, motion, owner, runtime or release acceptance."
+      },
+      "unresolvedDependency": null
+    },
+    {
+      "identity": "cavalry",
+      "registry": {
+        "path": "docs/art/pipeline/unit-production/cavalry/identity.json",
+        "sha256": "8873e495e763c68535a7f2cc28aefbd3533a9e9eb5094da9c590e31df06ee27d"
+      },
+      "existingWeaponOwnership": null,
+      "equipment": {
+        "status": "verified",
+        "statement": "Preserve the original sword grip and separate rein grip, plus horse, saddle, bridle and stirrup assembly; do not exchange physical grips between views.",
+        "source": {
+          "path": "docs/art/units/sources/cavalry-neutral-se-imagegen-raw.png",
+          "sha256": "552c4fcdf8ce6bdb802c6faae1bc139416393d53cb30caa95a1d22309b77b091"
+        },
+        "basis": "Mounted rider holds a curved sword beside the saddle and the reins above the horse neck; original selectively viewed to distinguish the two grips."
+      },
+      "cameraViewConsistency": {
+        "status": "PROPOSED",
+        "statement": "Preserve the selected whole painting camera and authored view; engine direction labels describe world octants, not anatomical sides. No mirror, camera refit or hidden-view reconstruction.",
+        "sourceDirection": 0,
+        "otherViewsApproved": false
+      },
+      "gripOrAssemblyTrace": {
+        "status": "VERIFIED_STATIC",
+        "basis": "Mounted rider holds a curved sword beside the saddle and the reins above the horse neck; original selectively viewed to distinguish the two grips.",
+        "anatomicalSides": null,
+        "rule": "Preserve only observed original contact/assembly; unseen anatomy and occluded connections remain unasserted."
+      },
+      "custody": {
+        "registryMasterAuthority": "original",
+        "receipt": "docs/art/pipeline/original-identities-485/receipt.json",
+        "limit": "Custody/selection only; no new view, motion, owner, runtime or release acceptance."
+      },
+      "unresolvedDependency": null
+    },
+    {
+      "identity": "firearm",
+      "registry": {
+        "path": "docs/art/pipeline/unit-production/firearm/identity.json",
+        "sha256": "304a9e6f101c2830e931c097cd42992a85822827acdc8a126db96ffb5e012542"
+      },
+      "existingWeaponOwnership": null,
+      "equipment": {
+        "status": "verified",
+        "statement": "Preserve the original long firearm, stock/barrel relationship and visible two-hand hold; do not assign unobserved anatomical sides or exchange the physical grips.",
+        "source": {
+          "path": "docs/art/units/firearm-idle-408/imagegen-raw.png",
+          "sha256": "3c0cc8181f5f49996403873c921baabd3902354825c3ab807a78572fb67517e9"
+        },
+        "basis": "Long firearm crosses the front of the figure, supported by visible arm/hand contacts; exact fingers and anatomical ownership are not resolved at gameplay size."
+      },
+      "cameraViewConsistency": {
+        "status": "PROPOSED",
+        "statement": "Preserve the selected whole painting camera and authored view; engine direction labels describe world octants, not anatomical sides. No mirror, camera refit or hidden-view reconstruction.",
+        "sourceDirection": 0,
+        "otherViewsApproved": false
+      },
+      "gripOrAssemblyTrace": {
+        "status": "VERIFIED_STATIC",
+        "basis": "Long firearm crosses the front of the figure, supported by visible arm/hand contacts; exact fingers and anatomical ownership are not resolved at gameplay size.",
+        "anatomicalSides": null,
+        "rule": "Preserve only observed original contact/assembly; unseen anatomy and occluded connections remain unasserted."
+      },
+      "custody": {
+        "registryMasterAuthority": "original",
+        "receipt": "docs/art/pipeline/original-identities-485/receipt.json",
+        "limit": "Custody/selection only; no new view, motion, owner, runtime or release acceptance."
+      },
+      "unresolvedDependency": null
+    },
+    {
+      "identity": "han_xin",
+      "registry": {
+        "path": "docs/art/pipeline/unit-production/han_xin/identity.json",
+        "sha256": "a9cba76134b6ae3187f60fc3dbd1030e27384133db47f1d34f17bf8021627ac0"
+      },
+      "existingWeaponOwnership": null,
+      "equipment": {
+        "status": "unknown",
+        "statement": null,
+        "source": null,
+        "basis": "Registry master is null and all eight view sources are missing. No world-body equipment observation exists; portraits cannot resolve this."
+      },
+      "cameraViewConsistency": {
+        "status": "UNKNOWN",
+        "statement": null,
+        "sourceDirection": null,
+        "otherViewsApproved": false
+      },
+      "gripOrAssemblyTrace": {
+        "status": "UNKNOWN",
+        "basis": "Registry master is null and all eight view sources are missing. No world-body equipment observation exists; portraits cannot resolve this.",
+        "anatomicalSides": null,
+        "rule": "Preserve only observed original contact/assembly; unseen anatomy and occluded connections remain unasserted."
+      },
+      "custody": {
+        "registryMasterAuthority": "missing",
+        "receipt": null,
+        "limit": "Custody/selection only; no new view, motion, owner, runtime or release acceptance."
+      },
+      "unresolvedDependency": "Select a genuine whole world identity master; then inspect and pin its equipment."
+    },
+    {
+      "identity": "infantry",
+      "registry": {
+        "path": "docs/art/pipeline/unit-production/infantry/identity.json",
+        "sha256": "d7f469d679d814400b971fc9909c264758e89a43352b12270de170dd50813141"
+      },
+      "existingWeaponOwnership": "Physical sword hand and shield hand remain those of original084845; D0 sword screenleft and shield screenright only; screen sides change with view",
+      "equipment": {
+        "status": "verified",
+        "statement": "Preserve physical sword and shield hands of original084845; D0 sword screenleft and shield screenright only; screen sides change with view.",
+        "source": {
+          "path": "docs/art/units/sources/infantry-neutral-se-refine-01-imagegen-raw.png",
+          "sha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f"
+        },
+        "basis": "Sword and round shield are visible in the game-size sheet; existing registry explicitly locks physical ownership and D0 screen placement."
+      },
+      "cameraViewConsistency": {
+        "status": "PROPOSED",
+        "statement": "Preserve the selected whole painting camera and authored view; engine direction labels describe world octants, not anatomical sides. No mirror, camera refit or hidden-view reconstruction.",
+        "sourceDirection": 0,
+        "otherViewsApproved": false
+      },
+      "gripOrAssemblyTrace": {
+        "status": "VERIFIED_STATIC",
+        "basis": "Sword and round shield are visible in the game-size sheet; existing registry explicitly locks physical ownership and D0 screen placement.",
+        "anatomicalSides": null,
+        "rule": "Preserve only observed original contact/assembly; unseen anatomy and occluded connections remain unasserted."
+      },
+      "custody": {
+        "registryMasterAuthority": "original",
+        "receipt": null,
+        "limit": "Custody/selection only; no new view, motion, owner, runtime or release acceptance."
+      },
+      "unresolvedDependency": null
+    },
+    {
+      "identity": "le_thanh_tong",
+      "registry": {
+        "path": "docs/art/pipeline/unit-production/le_thanh_tong/identity.json",
+        "sha256": "c77786aa7d2d7be7705b934038d12473dbdc2863b5642148040f52b3b3eab166"
+      },
+      "existingWeaponOwnership": null,
+      "equipment": {
+        "status": "unknown",
+        "statement": null,
+        "source": null,
+        "basis": "Registry master is null and all eight view sources are missing. No world-body equipment observation exists; portraits cannot resolve this."
+      },
+      "cameraViewConsistency": {
+        "status": "UNKNOWN",
+        "statement": null,
+        "sourceDirection": null,
+        "otherViewsApproved": false
+      },
+      "gripOrAssemblyTrace": {
+        "status": "UNKNOWN",
+        "basis": "Registry master is null and all eight view sources are missing. No world-body equipment observation exists; portraits cannot resolve this.",
+        "anatomicalSides": null,
+        "rule": "Preserve only observed original contact/assembly; unseen anatomy and occluded connections remain unasserted."
+      },
+      "custody": {
+        "registryMasterAuthority": "missing",
+        "receipt": null,
+        "limit": "Custody/selection only; no new view, motion, owner, runtime or release acceptance."
+      },
+      "unresolvedDependency": "Select a genuine whole world identity master; then inspect and pin its equipment."
+    },
+    {
+      "identity": "ly_thuong_kiet",
+      "registry": {
+        "path": "docs/art/pipeline/unit-production/ly_thuong_kiet/identity.json",
+        "sha256": "3185342268ff4341ae89892d1cfdda5cf867cca1ee76f5dbf679e72b46d13d46"
+      },
+      "existingWeaponOwnership": null,
+      "equipment": {
+        "status": "unknown",
+        "statement": null,
+        "source": null,
+        "basis": "Registry master is null and all eight view sources are missing. No world-body equipment observation exists; portraits cannot resolve this."
+      },
+      "cameraViewConsistency": {
+        "status": "UNKNOWN",
+        "statement": null,
+        "sourceDirection": null,
+        "otherViewsApproved": false
+      },
+      "gripOrAssemblyTrace": {
+        "status": "UNKNOWN",
+        "basis": "Registry master is null and all eight view sources are missing. No world-body equipment observation exists; portraits cannot resolve this.",
+        "anatomicalSides": null,
+        "rule": "Preserve only observed original contact/assembly; unseen anatomy and occluded connections remain unasserted."
+      },
+      "custody": {
+        "registryMasterAuthority": "missing",
+        "receipt": null,
+        "limit": "Custody/selection only; no new view, motion, owner, runtime or release acceptance."
+      },
+      "unresolvedDependency": "Select a genuine whole world identity master; then inspect and pin its equipment."
+    },
+    {
+      "identity": "minh_menh",
+      "registry": {
+        "path": "docs/art/pipeline/unit-production/minh_menh/identity.json",
+        "sha256": "c0845ab574defb3d456c0d7a0d11dc89cc9143672fe7d5048a3fcca490ef24e0"
+      },
+      "existingWeaponOwnership": null,
+      "equipment": {
+        "status": "unknown",
+        "statement": null,
+        "source": null,
+        "basis": "Registry master is null and all eight view sources are missing. No world-body equipment observation exists; portraits cannot resolve this."
+      },
+      "cameraViewConsistency": {
+        "status": "UNKNOWN",
+        "statement": null,
+        "sourceDirection": null,
+        "otherViewsApproved": false
+      },
+      "gripOrAssemblyTrace": {
+        "status": "UNKNOWN",
+        "basis": "Registry master is null and all eight view sources are missing. No world-body equipment observation exists; portraits cannot resolve this.",
+        "anatomicalSides": null,
+        "rule": "Preserve only observed original contact/assembly; unseen anatomy and occluded connections remain unasserted."
+      },
+      "custody": {
+        "registryMasterAuthority": "missing",
+        "receipt": null,
+        "limit": "Custody/selection only; no new view, motion, owner, runtime or release acceptance."
+      },
+      "unresolvedDependency": "Select a genuine whole world identity master; then inspect and pin its equipment."
+    },
+    {
+      "identity": "napoleon_bonaparte",
+      "registry": {
+        "path": "docs/art/pipeline/unit-production/napoleon_bonaparte/identity.json",
+        "sha256": "17e289f2cfd1cfcccb238055b9f6f46fb5a16adab5b8577db906a95ed574638b"
+      },
+      "existingWeaponOwnership": null,
+      "equipment": {
+        "status": "unknown",
+        "statement": null,
+        "source": null,
+        "basis": "Registry master is null and all eight view sources are missing. No world-body equipment observation exists; portraits cannot resolve this."
+      },
+      "cameraViewConsistency": {
+        "status": "UNKNOWN",
+        "statement": null,
+        "sourceDirection": null,
+        "otherViewsApproved": false
+      },
+      "gripOrAssemblyTrace": {
+        "status": "UNKNOWN",
+        "basis": "Registry master is null and all eight view sources are missing. No world-body equipment observation exists; portraits cannot resolve this.",
+        "anatomicalSides": null,
+        "rule": "Preserve only observed original contact/assembly; unseen anatomy and occluded connections remain unasserted."
+      },
+      "custody": {
+        "registryMasterAuthority": "missing",
+        "receipt": null,
+        "limit": "Custody/selection only; no new view, motion, owner, runtime or release acceptance."
+      },
+      "unresolvedDependency": "Select a genuine whole world identity master; then inspect and pin its equipment."
+    },
+    {
+      "identity": "nguyen_anh",
+      "registry": {
+        "path": "docs/art/pipeline/unit-production/nguyen_anh/identity.json",
+        "sha256": "b7d741186ad418ebbf4797a1bedd5fba3434b6d01cbfa524e82a9683640e1b32"
+      },
+      "existingWeaponOwnership": null,
+      "equipment": {
+        "status": "unknown",
+        "statement": null,
+        "source": null,
+        "basis": "Registry master is null and all eight view sources are missing. No world-body equipment observation exists; portraits cannot resolve this."
+      },
+      "cameraViewConsistency": {
+        "status": "UNKNOWN",
+        "statement": null,
+        "sourceDirection": null,
+        "otherViewsApproved": false
+      },
+      "gripOrAssemblyTrace": {
+        "status": "UNKNOWN",
+        "basis": "Registry master is null and all eight view sources are missing. No world-body equipment observation exists; portraits cannot resolve this.",
+        "anatomicalSides": null,
+        "rule": "Preserve only observed original contact/assembly; unseen anatomy and occluded connections remain unasserted."
+      },
+      "custody": {
+        "registryMasterAuthority": "missing",
+        "receipt": null,
+        "limit": "Custody/selection only; no new view, motion, owner, runtime or release acceptance."
+      },
+      "unresolvedDependency": "Select a genuine whole world identity master; then inspect and pin its equipment."
+    },
+    {
+      "identity": "nguyen_hue",
+      "registry": {
+        "path": "docs/art/pipeline/unit-production/nguyen_hue/identity.json",
+        "sha256": "527471050074a471c440357d1e11d5d43cb36a460c31437f6ce621972a663adf"
+      },
+      "existingWeaponOwnership": null,
+      "equipment": {
+        "status": "unknown",
+        "statement": null,
+        "source": null,
+        "basis": "Registry master is null and all eight view sources are missing. No world-body equipment observation exists; portraits cannot resolve this."
+      },
+      "cameraViewConsistency": {
+        "status": "UNKNOWN",
+        "statement": null,
+        "sourceDirection": null,
+        "otherViewsApproved": false
+      },
+      "gripOrAssemblyTrace": {
+        "status": "UNKNOWN",
+        "basis": "Registry master is null and all eight view sources are missing. No world-body equipment observation exists; portraits cannot resolve this.",
+        "anatomicalSides": null,
+        "rule": "Preserve only observed original contact/assembly; unseen anatomy and occluded connections remain unasserted."
+      },
+      "custody": {
+        "registryMasterAuthority": "missing",
+        "receipt": null,
+        "limit": "Custody/selection only; no new view, motion, owner, runtime or release acceptance."
+      },
+      "unresolvedDependency": "Select a genuine whole world identity master; then inspect and pin its equipment."
+    },
+    {
+      "identity": "nguyen_phuc_chu",
+      "registry": {
+        "path": "docs/art/pipeline/unit-production/nguyen_phuc_chu/identity.json",
+        "sha256": "4d80f24f9421b9918e74d1d7beb63f98d53b8ae90d384c14756682f995390b1c"
+      },
+      "existingWeaponOwnership": null,
+      "equipment": {
+        "status": "unknown",
+        "statement": null,
+        "source": null,
+        "basis": "Registry master is null and all eight view sources are missing. No world-body equipment observation exists; portraits cannot resolve this."
+      },
+      "cameraViewConsistency": {
+        "status": "UNKNOWN",
+        "statement": null,
+        "sourceDirection": null,
+        "otherViewsApproved": false
+      },
+      "gripOrAssemblyTrace": {
+        "status": "UNKNOWN",
+        "basis": "Registry master is null and all eight view sources are missing. No world-body equipment observation exists; portraits cannot resolve this.",
+        "anatomicalSides": null,
+        "rule": "Preserve only observed original contact/assembly; unseen anatomy and occluded connections remain unasserted."
+      },
+      "custody": {
+        "registryMasterAuthority": "missing",
+        "receipt": null,
+        "limit": "Custody/selection only; no new view, motion, owner, runtime or release acceptance."
+      },
+      "unresolvedDependency": "Select a genuine whole world identity master; then inspect and pin its equipment."
+    },
+    {
+      "identity": "spearman",
+      "registry": {
+        "path": "docs/art/pipeline/unit-production/spearman/identity.json",
+        "sha256": "9a912d6cca34379acf41f9a03c39d66f147c7f1d799fb1626995bfad7869b018"
+      },
+      "existingWeaponOwnership": null,
+      "equipment": {
+        "status": "verified",
+        "statement": "Preserve the original spear shaft/head and original visible grip contacts; no new grip, hand or weapon and no anatomical side assertion for obscured contacts.",
+        "source": {
+          "path": "docs/art/units/spearman-margin-400/imagegen-raw.png",
+          "sha256": "6baa9a7404680545eb396f04e43cdfdd97129416cea8c0144e95891344c69f37"
+        },
+        "basis": "A long pointed spear crosses the figure diagonally; small-view contacts justify original-preservation rather than invented anatomical labels."
+      },
+      "cameraViewConsistency": {
+        "status": "PROPOSED",
+        "statement": "Preserve the selected whole painting camera and authored view; engine direction labels describe world octants, not anatomical sides. No mirror, camera refit or hidden-view reconstruction.",
+        "sourceDirection": 0,
+        "otherViewsApproved": false
+      },
+      "gripOrAssemblyTrace": {
+        "status": "VERIFIED_STATIC",
+        "basis": "A long pointed spear crosses the figure diagonally; small-view contacts justify original-preservation rather than invented anatomical labels.",
+        "anatomicalSides": null,
+        "rule": "Preserve only observed original contact/assembly; unseen anatomy and occluded connections remain unasserted."
+      },
+      "custody": {
+        "registryMasterAuthority": "original",
+        "receipt": "docs/art/pipeline/original-identities-485/receipt.json",
+        "limit": "Custody/selection only; no new view, motion, owner, runtime or release acceptance."
+      },
+      "unresolvedDependency": null
+    },
+    {
+      "identity": "tran_hung_dao",
+      "registry": {
+        "path": "docs/art/pipeline/unit-production/tran_hung_dao/identity.json",
+        "sha256": "4a91d904189144686abd6d0e9d6138fd992ca83b26728d3bc5a8cc040c3973cf"
+      },
+      "existingWeaponOwnership": null,
+      "equipment": {
+        "status": "verified",
+        "statement": "Preserve the original sheathed hip sword, hilt contact and tassel; the original hilt-contacting hand remains that hand in authored views, without an anatomical left/right claim.",
+        "source": {
+          "path": "docs/art/characters/tran-hung-dao-neutral-D00-screen-ESE/raw.png",
+          "sha256": "21e7d7c160fc27b52f8e9475702914e73a628752a5c2b5a4c290d9c7b466d553"
+        },
+        "basis": "Selective original inspection shows one hand resting around the sword hilt at the hip, a hanging sheath/tassel, and the other hand hanging free."
+      },
+      "cameraViewConsistency": {
+        "status": "PROPOSED",
+        "statement": "Preserve the selected whole painting camera and authored view; engine direction labels describe world octants, not anatomical sides. No mirror, camera refit or hidden-view reconstruction.",
+        "sourceDirection": 0,
+        "otherViewsApproved": false
+      },
+      "gripOrAssemblyTrace": {
+        "status": "VERIFIED_STATIC",
+        "basis": "Selective original inspection shows one hand resting around the sword hilt at the hip, a hanging sheath/tassel, and the other hand hanging free.",
+        "anatomicalSides": null,
+        "rule": "Preserve only observed original contact/assembly; unseen anatomy and occluded connections remain unasserted."
+      },
+      "custody": {
+        "registryMasterAuthority": "original",
+        "receipt": null,
+        "limit": "Custody/selection only; no new view, motion, owner, runtime or release acceptance."
+      },
+      "unresolvedDependency": null
+    },
+    {
+      "identity": "tran_nhan_tong",
+      "registry": {
+        "path": "docs/art/pipeline/unit-production/tran_nhan_tong/identity.json",
+        "sha256": "4585a7ce8b1033035e18b672f9066b3570cc3f383b671f8b9e404fb8c092bc0f"
+      },
+      "existingWeaponOwnership": null,
+      "equipment": {
+        "status": "not-applicable",
+        "statement": "No held weapon is visible in this selected static master; preserve empty visible hands and belt/robe. This does not define future action equipment.",
+        "source": {
+          "path": "docs/art/characters/tran-nhan-tong-idle-396/working256.png",
+          "sha256": "0f54a83aada804661ef826183d417b1ba027eff4d86ca785ab2845f69165f7e6"
+        },
+        "basis": "Game-size sheet and selected 256 master show lowered empty hand and an empty hand at the belt; no held weapon is shown."
+      },
+      "cameraViewConsistency": {
+        "status": "PROPOSED",
+        "statement": "Preserve the selected whole painting camera and authored view; engine direction labels describe world octants, not anatomical sides. No mirror, camera refit or hidden-view reconstruction.",
+        "sourceDirection": 0,
+        "otherViewsApproved": false
+      },
+      "gripOrAssemblyTrace": {
+        "status": "VERIFIED_STATIC",
+        "basis": "Game-size sheet and selected 256 master show lowered empty hand and an empty hand at the belt; no held weapon is shown.",
+        "anatomicalSides": null,
+        "rule": "Preserve only observed original contact/assembly; unseen anatomy and occluded connections remain unasserted."
+      },
+      "custody": {
+        "registryMasterAuthority": "retained derived source; original master verification pending",
+        "receipt": null,
+        "limit": "Custody/selection only; no new view, motion, owner, runtime or release acceptance."
+      },
+      "unresolvedDependency": null
+    },
+    {
+      "identity": "transport",
+      "registry": {
+        "path": "docs/art/pipeline/unit-production/transport/identity.json",
+        "sha256": "054dc033613b7ca8eeee7af884534c7aed176617a4caa6601896e491844932a2"
+      },
+      "existingWeaponOwnership": null,
+      "equipment": {
+        "status": "verified",
+        "statement": "Preserve the whole original wooden hull, deck fittings, mast/spars, rigging and cargo structure; no invented crew, hands or weapons.",
+        "source": {
+          "path": "docs/art/units/transport-identity-447/raw.png",
+          "sha256": "395559ef5f4f5cb56aece69a9210f474b48b4c3af44ad2326bc39dd76c03c2a0"
+        },
+        "basis": "Open wooden hull with deck cargo and mast/spar/rigging assembly is visible; no human crew or held weapon is visible."
+      },
+      "cameraViewConsistency": {
+        "status": "PROPOSED",
+        "statement": "Preserve the selected whole painting camera and authored view; engine direction labels describe world octants, not anatomical sides. No mirror, camera refit or hidden-view reconstruction.",
+        "sourceDirection": 0,
+        "otherViewsApproved": false
+      },
+      "gripOrAssemblyTrace": {
+        "status": "VERIFIED_STATIC",
+        "basis": "Open wooden hull with deck cargo and mast/spar/rigging assembly is visible; no human crew or held weapon is visible.",
+        "anatomicalSides": null,
+        "rule": "Preserve only observed original contact/assembly; unseen anatomy and occluded connections remain unasserted."
+      },
+      "custody": {
+        "registryMasterAuthority": "original",
+        "receipt": "docs/art/pipeline/original-identities-485/receipt.json",
+        "limit": "Custody/selection only; no new view, motion, owner, runtime or release acceptance."
+      },
+      "unresolvedDependency": null
+    },
+    {
+      "identity": "trinh_cuong",
+      "registry": {
+        "path": "docs/art/pipeline/unit-production/trinh_cuong/identity.json",
+        "sha256": "6a1bc749b51c0ac2404f8514573e6d1ff724c1c421c1c3ffa5401dbfaa9ee960"
+      },
+      "existingWeaponOwnership": null,
+      "equipment": {
+        "status": "unknown",
+        "statement": null,
+        "source": null,
+        "basis": "Registry master is null and all eight view sources are missing. No world-body equipment observation exists; portraits cannot resolve this."
+      },
+      "cameraViewConsistency": {
+        "status": "UNKNOWN",
+        "statement": null,
+        "sourceDirection": null,
+        "otherViewsApproved": false
+      },
+      "gripOrAssemblyTrace": {
+        "status": "UNKNOWN",
+        "basis": "Registry master is null and all eight view sources are missing. No world-body equipment observation exists; portraits cannot resolve this.",
+        "anatomicalSides": null,
+        "rule": "Preserve only observed original contact/assembly; unseen anatomy and occluded connections remain unasserted."
+      },
+      "custody": {
+        "registryMasterAuthority": "missing",
+        "receipt": null,
+        "limit": "Custody/selection only; no new view, motion, owner, runtime or release acceptance."
+      },
+      "unresolvedDependency": "Select a genuine whole world identity master; then inspect and pin its equipment."
+    },
+    {
+      "identity": "villager",
+      "registry": {
+        "path": "docs/art/pipeline/unit-production/villager/identity.json",
+        "sha256": "be434dc94bf44e026e0ba0ca410c5708e43ff538044b1096e78dc832bb96d2ad"
+      },
+      "existingWeaponOwnership": null,
+      "equipment": {
+        "status": "not-applicable",
+        "statement": "No held tool or weapon is visible in this idle master; preserve empty visible hands. Separate work-action tools require their own existing source pins and grips.",
+        "source": {
+          "path": "docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+          "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94"
+        },
+        "basis": "Game-size idle figure has arms down and no visible held tool or weapon; idle observation does not resolve axe/pick/food work equipment."
+      },
+      "cameraViewConsistency": {
+        "status": "PROPOSED",
+        "statement": "Preserve the selected whole painting camera and authored view; engine direction labels describe world octants, not anatomical sides. No mirror, camera refit or hidden-view reconstruction.",
+        "sourceDirection": 0,
+        "otherViewsApproved": false
+      },
+      "gripOrAssemblyTrace": {
+        "status": "VERIFIED_STATIC",
+        "basis": "Game-size idle figure has arms down and no visible held tool or weapon; idle observation does not resolve axe/pick/food work equipment.",
+        "anatomicalSides": null,
+        "rule": "Preserve only observed original contact/assembly; unseen anatomy and occluded connections remain unasserted."
+      },
+      "custody": {
+        "registryMasterAuthority": "original",
+        "receipt": null,
+        "limit": "Custody/selection only; no new view, motion, owner, runtime or release acceptance."
+      },
+      "unresolvedDependency": null
+    },
+    {
+      "identity": "wagon",
+      "registry": {
+        "path": "docs/art/pipeline/unit-production/wagon/identity.json",
+        "sha256": "10ff989b3372394986ac715ae2afe564a67e9e2648f862a04ddb453ad81057fe"
+      },
+      "existingWeaponOwnership": "Verified no weapon: whole original415 horse, cart, harness and cargo; no weapon hand ownership",
+      "equipment": {
+        "status": "verified",
+        "statement": "Preserve whole original415 horse, cart, harness/traces, wheels and cargo; no detached cart, invented driver, hands or weapon.",
+        "source": {
+          "path": "docs/art/units/supply-wagon-horse-415/raw.png",
+          "sha256": "93124b0a4959072880579ba0fd88f0a31ee227c4eb7369bde80880828d8a8030"
+        },
+        "basis": "Whole horse/cart/cargo assembly is visible, with connecting shafts/harness; existing registry locks whole415 and no weapon ownership."
+      },
+      "cameraViewConsistency": {
+        "status": "PROPOSED",
+        "statement": "Preserve the selected whole painting camera and authored view; engine direction labels describe world octants, not anatomical sides. No mirror, camera refit or hidden-view reconstruction.",
+        "sourceDirection": 0,
+        "otherViewsApproved": false
+      },
+      "gripOrAssemblyTrace": {
+        "status": "VERIFIED_STATIC",
+        "basis": "Whole horse/cart/cargo assembly is visible, with connecting shafts/harness; existing registry locks whole415 and no weapon ownership.",
+        "anatomicalSides": null,
+        "rule": "Preserve only observed original contact/assembly; unseen anatomy and occluded connections remain unasserted."
+      },
+      "custody": {
+        "registryMasterAuthority": "original",
+        "receipt": null,
+        "limit": "Custody/selection only; no new view, motion, owner, runtime or release acceptance."
+      },
+      "unresolvedDependency": null
+    },
+    {
+      "identity": "warship",
+      "registry": {
+        "path": "docs/art/pipeline/unit-production/warship/identity.json",
+        "sha256": "0a16f556c334bea347cc7b44a6c9e8690a3f27c3d463497d29a41801862222eb"
+      },
+      "existingWeaponOwnership": null,
+      "equipment": {
+        "status": "unknown",
+        "statement": null,
+        "source": null,
+        "basis": "Registry master is null and all eight view sources are missing. No world-body equipment observation exists; portraits cannot resolve this."
+      },
+      "cameraViewConsistency": {
+        "status": "UNKNOWN",
+        "statement": null,
+        "sourceDirection": null,
+        "otherViewsApproved": false
+      },
+      "gripOrAssemblyTrace": {
+        "status": "UNKNOWN",
+        "basis": "Registry master is null and all eight view sources are missing. No world-body equipment observation exists; portraits cannot resolve this.",
+        "anatomicalSides": null,
+        "rule": "Preserve only observed original contact/assembly; unseen anatomy and occluded connections remain unasserted."
+      },
+      "custody": {
+        "registryMasterAuthority": "missing",
+        "receipt": null,
+        "limit": "Custody/selection only; no new view, motion, owner, runtime or release acceptance."
+      },
+      "unresolvedDependency": "Select a genuine whole world identity master; then inspect and pin its equipment."
+    },
+    {
+      "identity": "xiang_yu",
+      "registry": {
+        "path": "docs/art/pipeline/unit-production/xiang_yu/identity.json",
+        "sha256": "beef7292764d6681883476c58b2f69ed5aca0c92d629d7c171795f8a96f36735"
+      },
+      "existingWeaponOwnership": null,
+      "equipment": {
+        "status": "unknown",
+        "statement": null,
+        "source": null,
+        "basis": "Registry master is null and all eight view sources are missing. No world-body equipment observation exists; portraits cannot resolve this."
+      },
+      "cameraViewConsistency": {
+        "status": "UNKNOWN",
+        "statement": null,
+        "sourceDirection": null,
+        "otherViewsApproved": false
+      },
+      "gripOrAssemblyTrace": {
+        "status": "UNKNOWN",
+        "basis": "Registry master is null and all eight view sources are missing. No world-body equipment observation exists; portraits cannot resolve this.",
+        "anatomicalSides": null,
+        "rule": "Preserve only observed original contact/assembly; unseen anatomy and occluded connections remain unasserted."
+      },
+      "custody": {
+        "registryMasterAuthority": "missing",
+        "receipt": null,
+        "limit": "Custody/selection only; no new view, motion, owner, runtime or release acceptance."
+      },
+      "unresolvedDependency": "Select a genuine whole world identity master; then inspect and pin its equipment."
+    }
+  ]
+}

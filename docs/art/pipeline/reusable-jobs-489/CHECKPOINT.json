@@ -1,0 +1,52 @@
+{
+  "schema": "rds-pipeline-checkpoint/v1",
+  "stage": "P1_IMPLEMENTED",
+  "inputHEAD": "7f8cd34f23169240f2839d9cb3a7524bbbb1caa0",
+  "models": "3exclusiveworkers gpt-6.1-sol reasoning_effort=low",
+  "implementation": [
+    "Explicitview/action finiteorders",
+    "Immutable jobs per identity/action/direction/variant",
+    "SharedPNG neighbor/target resolution includes job/frame/phase",
+    "10static equipment sources bound to original master;11missing masters unknown",
+    "Idle-only N/A cannot authorize other action equipment",
+    "Durable runner source and trusted ledger unchanged"
+  ],
+  "validation": {
+    "focusedCombined": {
+      "tests": 32,
+      "pass": 32,
+      "fail": 0
+    },
+    "afterFinalEquipmentSourceBinding": {
+      "tests": 18,
+      "pass": 18,
+      "fail": 0
+    },
+    "initialTemplateCaseFailure": "Preserved worker finalrun17/18 and root31/32 failure; corrected case-insensitive assertion, unchanged semantictemplate requirement",
+    "fullSuiteRun": false,
+    "fullMatchRun": false
+  },
+  "sourcePins": {
+    "scripts/sprite-prompts.mjs": "8e70d12975523a5ea44b403920e0569870ea92ddad023dbdb524eb924af6e5d4",
+    "scripts/sprite-order-run.mjs": "2055fc537344cfbb1bc725c70414183ff2c93de5a64acb975bf99ead62eefb42",
+    "docs/art/pipeline/unit-production/templates/view.txt": "1194db036bab9c04ab7050fc60228f275ad4f13d8bd33434ded839a797dd86c7",
+    "tests/sprite-order-run.test.js": "930536129c616ff97231149ba97881430340df109da2bb65339b7bf8e8e80cfc",
+    "tests/sprite-prompts.test.js": "8791d6663642db6800ba0e85efabf8f0d1078de8d93d9677e4f0a6fe53fe3c8c",
+    "tests/equipment-registry.test.js": "35f94c9d394d22e0e2d859e29053c2698e2eaee3cd5a3b5edea635c7cb206a40"
+  },
+  "protected": {
+    "baselineFiles": 435,
+    "unchanged": 434,
+    "authorizedDelta": [
+      "client/raster-slice.js"
+    ],
+    "rawOriginalsPublicDistSharedServer": "unchanged"
+  },
+  "imageCalls": 0,
+  "newSelectedFrames": 0,
+  "newImageOrder": false,
+  "motionAcceptance": false,
+  "release": false,
+  "fullGoalComplete": false,
+  "next": "Villager490 owner-motionFAILED: genuinely different whole-clothed2D projectedcontactcontrol before anotherfinite trial; no similaroutline/capreset."
+}

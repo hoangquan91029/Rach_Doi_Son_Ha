@@ -50,3 +50,7 @@ Run relevant checks; no fullsuite/fullmatch for each sprite or docs edit. Action
 Public451frontend + immutable230backend are a documented baseline; inspect live rooms/service/pins before release, never act on old PID. Nav455/shared478 require future paired release and verified451+230 rollback. No room kicking, historical restart or currentdist permission repair. Preserve stone walls, wooden gates, other wooden assets and horse wagon415.
 
 Handoff updates only authoritative state/queue and one task receipt: actual outputs/checks/failures/unknowns/calls/handle closure/next dependency. Full game remains open until all completion criteria pass. Automation311 status unresolved: do not claim active five-hour scheduling or recreate without inspection.
+
+## Current handoff489/490
+
+P0 is sealed7f8cd34; P1 typed jobs/equipment/finite dispatch and exact-job shared-source reuse are implemented. Read current state/queue and489receipt; do not resume audit setup or bypass unknown masters/tools.490 reuses8 D1 walk sources, shared compiler and actual Chrome/Firefox travel controls. Owner explicitly rejected the shown71px loop. No motion/stride/owner/fanout approval; no new image order. Similar old passing-outline method and cap resets are blocked; first resolve whole-clothed pure2D pose control/contact projection and budget. Current-render per-actor actualdraw trace replaces stale global fallback inference in shared scene checks. Production451/230 and original art are preserved.

@@ -17,8 +17,8 @@ export function createRasterSlice({enabled=artRoute().enabled,manifestUrl=artRou
  const worldArtEnabled=()=>artRoute().world;
  const pipeline=createArtAssetPipeline({manifestUrl,allowCandidates:true,onStatus});
  const locomotion=createLocomotionPhase();
- const cells=new Map(),patterns=new WeakMap(),missing=new Set();let ready=false;
- const status={enabled,phase:enabled?'CANDIDATE':'DISABLED',quality:'PLACEHOLDER_ONLY',groundDraws:0,propDraws:0,entityDraws:0,walkDraws:0,idleDraws:0,lastWalk:null,gatherDraws:0,lastGather:null,buildingDeathDraws:0,lastBuildingDeath:null,missing:[],pipeline:pipeline.stats};
+ const cells=new Map(),patterns=new WeakMap(),missing=new Set();let ready=false,currentDrawCount=0;
+ const status={enabled,phase:enabled?'CANDIDATE':'DISABLED',quality:'PLACEHOLDER_ONLY',groundDraws:0,propDraws:0,entityDraws:0,currentEntityDraws:{},currentEntityDrawsDropped:0,renderObservation:0,walkDraws:0,idleDraws:0,lastWalk:null,gatherDraws:0,lastGather:null,buildingDeathDraws:0,lastBuildingDeath:null,missing:[],pipeline:pipeline.stats};
  const recordMissing=(key,reason)=>{if(!missing.has(key)){missing.add(key);status.missing.push({key,reason,status:'PLACEHOLDER_ONLY'});status.quality='PLACEHOLDER_ONLY';}};
  const select=({families,kind,state,direction,variant=0,timeMs=0})=>{
   if(!enabled||!ready)return null;
@@ -69,7 +69,7 @@ export function createRasterSlice({enabled=artRoute().enabled,manifestUrl=artRou
   onMissingBank:()=>recordMissing('shore:material:null','Dedicated authored bank material unavailable; bounded original-material blending remains a candidate')});
  return {
   status,pipeline,
-  observeEntities(entities,options){status.lastGather=null;status.lastBuildingDeath=null;if(enabled)locomotion.observe(entities,options);},
+  observeEntities(entities,options){status.currentEntityDraws={};currentDrawCount=0;status.currentEntityDrawsDropped=0;status.renderObservation++;status.lastGather=null;status.lastBuildingDeath=null;if(enabled)locomotion.observe(entities,options);},
   drawTransitions(ctx,options){if(!enabled||!ready)return false;return transitions.draw(ctx,options);},
   async preload(){if(!enabled)return this;await pipeline.preload();ready=true;status.quality=pipeline.stats.status;return this;},
   /** project uses existing renderer logical pixels; camera zoom and DPR must not be applied twice. */
@@ -151,7 +151,10 @@ export function createRasterSlice({enabled=artRoute().enabled,manifestUrl=artRou
   },
   drawEntity(ctx,entity,{project,zoom=1,tick=0,timeMs=tick*50,fortificationTopology}={}) {
    if(typeof project!=='function')return false;const result=this.sampleEntity(entity,{tick,timeMs,fortificationTopology});if(!result)return false;const {raster,visualState,walkPhase,sample,direction,elapsed}=result,asset=raster.asset;
-   if(rasterAt(ctx,raster,project(entity.x,entity.y),zoom)){status.entityDraws++;if(result.staticIllustrationFallback){status.staticIllustrationDraws=(status.staticIllustrationDraws||0)+1;status.lastStaticIllustration={entityId:entity.id,assetId:asset.id,requestedState:result.requestedState,requestedDirection:result.requestedDirection,illustrationDirection:direction,presentation:'STATIC_ILLUSTRATION'};}if(visualState==='death'&&entity.kind==='building'){status.buildingDeathDraws++;status.lastBuildingDeath={entityId:entity.id,assetId:asset.id,frame:sample.frame,tick,deadTick:entity.deadTick??tick,elapsedMs:elapsed,presentationTimeMs:timeMs};}if(['gather_wood','gather_food','gather_iron'].includes(visualState)&&entity.type==='villager'){status.gatherDraws++;status.lastGather={entityId:entity.id,frame:sample.frame,direction,assetId:asset.id,visualState,startedTick:entity.visibleAction?.startedTick??null,elapsedMs:sample.elapsedMs,timeMs:elapsed,presentationTimeMs:timeMs};}if(walkPhase){status.walkDraws++;status.lastWalk={entityId:entity.id,frame:sample.frame,distance:walkPhase.distance,distancePerCycle:asset.locomotion.distancePerCycle,direction};}else if(visualState==='idle'&&asset.family==='unit.villager')status.idleDraws++;return true;}return false;
+   if(rasterAt(ctx,raster,project(entity.x,entity.y),zoom)){status.entityDraws++;
+    const key=String(entity.id);
+    if(Object.hasOwn(status.currentEntityDraws,key)||currentDrawCount<1024){if(!Object.hasOwn(status.currentEntityDraws,key))currentDrawCount++;status.currentEntityDraws[key]={entityId:entity.id,assetId:asset.id,frame:sample.frame,visualState,requestedState:result.requestedState,requestedDirection:result.requestedDirection,direction,presentation:result.presentation,staticIllustrationFallback:result.staticIllustrationFallback,render:{...raster.render},pivot:{...raster.pivot},cell:{width:raster.sw,height:raster.sh},tick,presentationTimeMs:timeMs,renderObservation:status.renderObservation};}else status.currentEntityDrawsDropped++;
+    if(result.staticIllustrationFallback){status.staticIllustrationDraws=(status.staticIllustrationDraws||0)+1;status.lastStaticIllustration={entityId:entity.id,assetId:asset.id,requestedState:result.requestedState,requestedDirection:result.requestedDirection,illustrationDirection:direction,presentation:'STATIC_ILLUSTRATION'};}if(visualState==='death'&&entity.kind==='building'){status.buildingDeathDraws++;status.lastBuildingDeath={entityId:entity.id,assetId:asset.id,frame:sample.frame,tick,deadTick:entity.deadTick??tick,elapsedMs:elapsed,presentationTimeMs:timeMs};}if(['gather_wood','gather_food','gather_iron'].includes(visualState)&&entity.type==='villager'){status.gatherDraws++;status.lastGather={entityId:entity.id,frame:sample.frame,direction,assetId:asset.id,visualState,startedTick:entity.visibleAction?.startedTick??null,elapsedMs:sample.elapsedMs,timeMs:elapsed,presentationTimeMs:timeMs};}if(walkPhase){status.walkDraws++;status.lastWalk={entityId:entity.id,frame:sample.frame,distance:walkPhase.distance,distancePerCycle:asset.locomotion.distancePerCycle,direction};}else if(visualState==='idle'&&asset.family==='unit.villager')status.idleDraws++;return true;}return false;
   },
   /** Deterministic existing forest density, sorted ready for a merged prop/entity depth queue. */
   propsForState(state,{onlyVisible=true}={}) {
@@ -160,6 +163,6 @@ export function createRasterSlice({enabled=artRoute().enabled,manifestUrl=artRou
    for(let y=0;y<height;y++)for(let x=0;x<width;x++){const index=y*width+x,v=(x*17+y*31)%19;if(tiles[index]!=='forest'||v>=5||onlyVisible&&state.fog?.visible&&!state.fog.visible[index])continue;props.push({type:'forest',x:x+.5,y:y+.5,variant:v,key:`forest:${x}:${y}`,depth:x+y});}
    props.push(...mountainPropPlacements(state,mountainReady(),{onlyVisible,clustered:Boolean(mountainGround()?.image)}));return props.sort((a,b)=>a.depth-b.depth||a.y-b.y||a.x-b.x);
   },
-  dispose(){locomotion.clear();transitions.dispose();transitionMaterials.clear();pipeline.dispose();cells.clear();ready=false;}
+  dispose(){status.currentEntityDraws={};status.currentEntityDrawsDropped=0;locomotion.clear();transitions.dispose();transitionMaterials.clear();pipeline.dispose();cells.clear();ready=false;}
  };
 }

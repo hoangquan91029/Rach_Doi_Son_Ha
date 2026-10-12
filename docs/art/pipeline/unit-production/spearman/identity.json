@@ -142,7 +142,7 @@
     ],
     "basis": "shared/sim.js atan2 eight world octants; screen x=(worldX-worldY), y=(worldX+worldY)/2; labels describe projected vector"
   },
-  "weaponOwnership": null,
+  "weaponOwnership": "Preserve the original spear shaft/head and original visible grip contacts; no new grip, hand or weapon and no anatomical side assertion for obscured contacts.",
   "allowedReferences": [],
   "excludedReferencePaths": [],
   "masterAuthority": "original",
@@ -194,5 +194,16 @@
       "conversion": "Whole source-coordinate normalization to retained original canvas; logical render unchanged"
     },
     "visualApproval": false
-  }
+  },
+  "equipmentLock": {
+    "status": "verified",
+    "statement": "Preserve the original spear shaft/head and original visible grip contacts; no new grip, hand or weapon and no anatomical side assertion for obscured contacts.",
+    "source": {
+      "path": "docs/art/units/spearman-margin-400/imagegen-raw.png",
+      "sha256": "6baa9a7404680545eb396f04e43cdfdd97129416cea8c0144e95891344c69f37"
+    },
+    "basis": "A long pointed spear crosses the figure diagonally; small-view contacts justify original-preservation rather than invented anatomical labels.",
+    "scope": "Original static equipment/assembly only; action-specific tools require separately pinned action locks"
+  },
+  "jobs": []
 }

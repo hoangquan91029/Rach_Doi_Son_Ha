@@ -154,5 +154,13 @@
   "weaponOwnership": null,
   "allowedReferences": [],
   "excludedReferencePaths": [],
-  "masterAuthority": "missing"
+  "masterAuthority": "missing",
+  "equipmentLock": {
+    "status": "unknown",
+    "statement": null,
+    "source": null,
+    "basis": "Registry master is null and all eight view sources are missing. No world-body equipment observation exists; portraits cannot resolve this.",
+    "scope": "Original static equipment/assembly only; action-specific tools require separately pinned action locks"
+  },
+  "jobs": []
 }

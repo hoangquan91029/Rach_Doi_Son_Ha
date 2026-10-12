@@ -1,12 +1,10 @@
-# Active queue — audit488
+# Active queue — pipeline489 / qualification490
 
-1. Complete root intake of four reports and checks for new contracts/preflight. Audit delivery is not motion approval.
-2. Implement P1: finite view jobs, per-action/direction bindings and verified equipment metadata. Preserve dirty486 and consumed claims. Keep engine/compiler.
-3. Reuse VillagerD1 sources and family layout; inspect existing loop briefly before producing anything. Only missing/visibly failed poses need new finite order. Do not regenerate acceptedwood032/iron141.
-4. If pose control cannot pass contacts, perform selected local2D feasibility branch. PCI-visible RTX2050 does not prove usable driver/VRAM/backend. No installed/Krita/ControlNet efficacy claim.
-5. Qualify VillagerA walk/travel, reuse on InfantryB then complexhorse/wagon. Measure actualeffort/calls, not just metadatareuse.
-6. Complete action×8direction banks, per-matchmemory, building/map/performance and finalpublicscope per roadmap.
+1. P0 audit is sealed at `7f8cd34`; P1 is implemented. Read [489checkpoint](art/pipeline/reusable-jobs-489/CHECKPOINT.json), current identity/jobs and shared guards. Do not repeat completed audit or old full matches.
+2. Villager490 reused all8 originalD1 sources; shared compiler/preview and actual Chrome/Firefox travel/PauseResume/assignedarrival/Stop/menu passed technically. **Owner rejected the shown71px walk loop.** Keep motion/stride/contact/fanout/release open; do not present it again as accepted.
+3. Prepare genuinely different pure2D pose control: whole-clothed cycle from original, persistent physical leg lanes, projected contact path and natural timing. F2/F6 weak passing silhouettes are a still-based priority, not a proved full diagnosis. Inspect [repair plan](art/pipeline/villager-qualification-490/motion-repair-plan.json) and [budget intake](art/pipeline/villager-qualification-490/budget-intake.json). Similar old outline-guided edits/cap resets are blocked; no new finite order currently exists.
+4. Optional local2D branch: NVIDIA kernel driver is present but NVML load failed; VRAM/inference/Krita remain unverified/unavailable. Read [capability](art/pipeline/reusable-jobs-489/local-2d-capability.json). No blind framework/model installation.
+5. Once new Villager motion passes one brief real-size loop and practical travel, reuse the qualified specification on original Infantry then wholehorsewagon415/cavalry; measure actual authoring effort/calls. Do not regenerate469 or reopen482/483/486.
+6. Complete each applicable action×8directions and actual working-set/dense/content/release requirements. Keep source, technical, motion, runtime, owner and release evidence separate.
 
-Do not resume477 exhausted corrections,482/483 failed methods,486consumedauthorization. Target-first change remains uncalled;469alreadyimported;479controls and466online are completed scoped technicalproofs. This queue grants no imagecall/runtimeinstall/deployment by itself.
-
-Before task: Git, mandatoryreading, realhandles and exclusiveownership. Recordedpublic451/backend230 is separate from canonicalsource. No quota polling. Full goal OPEN.
+No new call/order/install/public change is authorized by this queue alone. Typed finite orders require selected reference authority, exact job pins and durable claim. No quota polling. Public451 + immutable230 remain separate from canonical source; future shared-simulation release must be paired with verified currentrollback. Actual owned browser/server handles are CLOSED; inspect live state before resuming. Full goal INCOMPLETE.

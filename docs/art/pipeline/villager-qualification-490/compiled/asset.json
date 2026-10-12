@@ -1,0 +1,187 @@
+{
+  "identityMasterSHA": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+  "directionalMasterSHA": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+  "id": "villager-D1-walk-490",
+  "family": "unit.villager",
+  "kind": "unit",
+  "state": "walk",
+  "direction": 1,
+  "source": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/authoring-tools/villager-walk-SOUTH-007/walk/keys/F00-left-contact-01/raw.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001",
+    "rgbaSha256": "07bc362e869f40e8a3d5ba0b6fabdd7845f6132c0aa4656a17f762ee46609410"
+  },
+  "runtime": {
+    "path": "atlas.png",
+    "width": 528,
+    "height": 264,
+    "sha256": "b2bdd86bd02f967bde9b070e5952e97dae257706b5d52730b787e32e9580fc13",
+    "rgbaSha256": "44c8454d0663c6c9823138633596a46af50efe5b42530f2ef1ab210d2c6790eb",
+    "derivation": {
+      "method": "atlas",
+      "filter": "lanczos",
+      "sourceSha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001"
+    }
+  },
+  "cell": {
+    "width": 128,
+    "height": 128
+  },
+  "pivot": {
+    "x": 654,
+    "y": 1140,
+    "space": "source"
+  },
+  "render": {
+    "width": 42,
+    "height": 42
+  },
+  "contactShadow": {
+    "mode": "separate",
+    "assetId": "unit-contact-shadow"
+  },
+  "alphaPolicy": "transparent",
+  "frames": [
+    {
+      "x": 2,
+      "y": 2,
+      "width": 128,
+      "height": 128,
+      "durationMs": 75,
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/authoring-tools/villager-walk-SOUTH-007/walk/keys/F00-left-contact-01/raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001",
+        "rgbaSha256": "07bc362e869f40e8a3d5ba0b6fabdd7845f6132c0aa4656a17f762ee46609410"
+      },
+      "events": [
+        {
+          "name": "FOOT_CONTACT_LEFT",
+          "offsetMs": 0
+        }
+      ]
+    },
+    {
+      "x": 134,
+      "y": 2,
+      "width": 128,
+      "height": 128,
+      "durationMs": 75,
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-011/F1-inbetween-01/raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "1306a28e6424d6f9c1d547ee3c68bff22a93e544bd9264117514b3cc10b96356",
+        "rgbaSha256": "623ec4c6991fe775a328a7e90e5ada0ddaa9c7c6007c3627191a98d2afa7a6b8"
+      },
+      "events": []
+    },
+    {
+      "x": 266,
+      "y": 2,
+      "width": 128,
+      "height": 128,
+      "durationMs": 75,
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-010/F2-right-passing-01/raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "bd2679353741d51575a99ccd0ded835281d0688abb1018146ed60d3077cc2b1c",
+        "rgbaSha256": "1a9f899a98ff1daea6c4e8a32ae9a507b8098a5e65ea9541c1757f5432e3208c"
+      },
+      "events": []
+    },
+    {
+      "x": 398,
+      "y": 2,
+      "width": 128,
+      "height": 128,
+      "durationMs": 75,
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-011/F3-inbetween-01/raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "b7201ddf0e9e791b708835fd52a278af5c9487a2ee1a9c9592fa42d6b3e12687",
+        "rgbaSha256": "ed7d1f5900e1793eac8f0aa84c0a8a98e9f5c02a03c979fec898fe43b13f1805"
+      },
+      "events": []
+    },
+    {
+      "x": 2,
+      "y": 134,
+      "width": 128,
+      "height": 128,
+      "durationMs": 75,
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-009/F4-trailing-contact-correction-01/raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "929b9805f696abf341b8ea9b4df425a753da2c48b1be9ca13282bb5c72e0793f",
+        "rgbaSha256": "12a430a74fe4a945971a0821b6a0c7548cf6db9b84f40aedaeccfd40b28b75d8"
+      },
+      "events": [
+        {
+          "name": "FOOT_CONTACT_RIGHT",
+          "offsetMs": 0
+        }
+      ]
+    },
+    {
+      "x": 134,
+      "y": 134,
+      "width": 128,
+      "height": 128,
+      "durationMs": 75,
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-011/F5-inbetween-01/raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "9db20e4f44a57dfe0c801673b6e18c41350b44c88d486933d03d7dd359f90b36",
+        "rgbaSha256": "13b06b25f91d66e1022c3e84b534669d678cb2da05aee6850e38ca0cf1db06de"
+      },
+      "events": []
+    },
+    {
+      "x": 266,
+      "y": 134,
+      "width": 128,
+      "height": 128,
+      "durationMs": 75,
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-010/F6-left-passing-01/raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "6ed3e9b8f0693441c457038e748789496421cefe3e02c696b6956fa074f34822",
+        "rgbaSha256": "7e13e010294f7013a3b871a67b9a9c390f4559e68fa2eb6b27546538b576d41b"
+      },
+      "events": []
+    },
+    {
+      "x": 398,
+      "y": 134,
+      "width": 128,
+      "height": 128,
+      "durationMs": 75,
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-013/F7-spacing-correction-01/raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "716902cbeeb96793da81583548b736bd0c9ab735922398ac5728c574d680f479",
+        "rgbaSha256": "962762d41e745f8b0f238668105af0488da16307c19a096eea01c0273904b92a"
+      },
+      "events": []
+    }
+  ],
+  "candidate": true,
+  "review": {
+    "status": "CANDIDATE"
+  },
+  "loop": true,
+  "locomotion": {
+    "distancePerCycle": 1.26,
+    "status": "PROVISIONAL"
+  }
+}

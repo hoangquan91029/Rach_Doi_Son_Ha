@@ -12,7 +12,7 @@
 
 **Implemented tools:** `scripts/sprite-prompts.mjs`, `sprite-order-run.mjs`, `sprite-production.py`, `sprite-action-bank.mjs`, `sprite-preview.html`, `qa/sprite-preview.mjs`, `qa/unit-walk-scene.mjs`, `unit-art-coverage.mjs`. Inspect their CLI before invoking; do not invent options.
 
-**Still proposed P1:** separate `jobKind:view` (one neutral view) and `jobKind:action` (one directional action), references keyed by identity/action/direction/variant instead of single currentJob, and explicit category equipment N/A. Current view template alone cannot bypass finite-order validation. No manual ledger bypass to compensate.
+**Implemented P1 (489):** dispatch requires explicit `jobKind:view` or `jobKind:action`. View has one frame0/phase0 slot and no action/phase prompt values; callLimit≤1. Action binds an exact immutable `registry.jobs` record `{id,action,direction,variant,path,sha256}`. New typed orders do not fall back to currentJob. Historic helpers remain compatible for inspection. `equipmentLock` uses verified/not-applicable/unknown with source/basis; missing master stays unknown. Idle-only N/A allows view/idle/walk, and cannot establish action tools. Source reuse resolves exact job/frame/phase. Root registers common metadata; durable claim still precedes tool. These guards do not create visual acceptance or authorize an order.
 
 ## Action matrix
 

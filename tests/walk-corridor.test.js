@@ -1,0 +1,11 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {corridorPoint,clearWalkCorridor,WORLD_OCTANTS,findWalkClearance,clearWalkSegment} from '../scripts/qa/walk-corridor.mjs';
+const fixture=()=>{const actor={id:'actor',x:12.5,y:12.5,hp:100,owner:0,kind:'unit'},state={map:{width:25,height:25,tiles:Array(625).fill('plain')},fog:{visible:Array(625).fill(true)},entities:[actor]};return {actor,state};};
+test('all eight normalized world corridors have exact length and opposite pairs',()=>{for(let d=0;d<8;d++){const {actor,state}=fixture(),p=corridorPoint(actor,d,9),opposite=corridorPoint(actor,(d+4)%8,9);assert.ok(Math.abs(Math.hypot(p.x-actor.x,p.y-actor.y)-9)<1e-10);assert.ok(Math.abs(p.x+opposite.x-2*actor.x)<1e-10);assert.ok(Math.abs(p.y+opposite.y-2*actor.y)<1e-10);assert.equal(clearWalkCorridor(state,actor,d,9),true);assert.equal(Math.sign(p.x-actor.x),WORLD_OCTANTS[d][0]);assert.equal(Math.sign(p.y-actor.y),WORLD_OCTANTS[d][1]);}assert.throws(()=>corridorPoint({x:0,y:0},8,6),/direction/);});
+test('corridors reject bounds hidden tiles terrain buildings and living traffic in diagonal/negative directions',()=>{for(const d of [1,3,5,7]){const {actor,state}=fixture(),p=corridorPoint(actor,d,3),i=Math.floor(p.y)*25+Math.floor(p.x);state.fog.visible[i]=false;assert.equal(clearWalkCorridor(state,actor,d,6),false);state.fog.visible[i]=true;state.map.tiles[i]='water';assert.equal(clearWalkCorridor(state,actor,d,6),false);state.map.tiles[i]='plain';state.entities.push({id:'obstacle',x:p.x,y:p.y,hp:100,kind:'building'});assert.equal(clearWalkCorridor(state,actor,d,6),false);state.entities[1].kind='unit';assert.equal(clearWalkCorridor(state,actor,d,6),false);state.entities[1].hp=0;assert.equal(clearWalkCorridor(state,actor,d,6),true);assert.equal(clearWalkCorridor(state,{...actor,x:.1,y:.1},5,6),false);}});
+
+test('finite clearance picks visible clear reachable start and does not bypass blocked route',()=>{
+ const {actor,state}=fixture();actor.x=5.5;actor.y=5.5;state.map.tiles[5*25+7]='water';
+ const plan=findWalkClearance(state,[actor],0,9);assert.ok(plan);assert.equal(plan.actorId,actor.id);assert.ok(clearWalkSegment(state,actor,plan.start));assert.ok(clearWalkCorridor(state,{...actor,...plan.start},0,9));
+ state.fog.visible.fill(false);assert.equal(findWalkClearance(state,[actor],0,9),null);
+});

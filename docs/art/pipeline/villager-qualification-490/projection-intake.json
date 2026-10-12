@@ -1,0 +1,45 @@
+{
+  "schema": "rds-projection-authoring-intake/v1",
+  "status": "VERIFIED_MATH_NOT_CONTACT_QUALIFICATION",
+  "source": {
+    "tile": [
+      54,
+      27
+    ],
+    "zoom": 1.68,
+    "sourceCanvas": 1254,
+    "render": 42,
+    "direction": 1,
+    "worldVector": [
+      1,
+      1
+    ],
+    "screenVector": [
+      0,
+      1
+    ]
+  },
+  "historicalStride": {
+    "worldDistancePerCycle": 1.26,
+    "status": "PROVISIONAL"
+  },
+  "requiredStanceForThatStride": {
+    "normalizedGroundPixelsPerWorld": 32.07436359462179,
+    "cycleGroundPixels": 40.41369812922346,
+    "quarterCycleGroundPixels": 10.103424532305866,
+    "quarterSourcePixels": 179.55916048060593,
+    "rule": "During known planted interval, same physical sole local offset moves opposite the actual projected actor travel. Fixed camera/pivot; no frame fitting."
+  },
+  "observedActualFootLandmarks": null,
+  "oldGuideLandmarks": "AUTHORED estimates only, not measured actual PNG foot contacts",
+  "motionDiagnosis": "Owner rejected loop; no specific foot slide asserted. Passing edits alone do not establish source contact path/cadence compatibility.",
+  "changedControlPrerequisite": [
+    "Use one persistent physical sole anchor per leg, retaining near/far occlusion through complete whole-clothed cycle",
+    "Compare selectedsource local sole path with actual render/world path before choosing stride; do not inherit1.26 or0.15 automatically",
+    "If needed stride creates implausible cadence, alter illustrated whole pose/contact travel rather than simulation speed",
+    "Author a complete clothed rough whole-cycle with changed projection/contact control; old simpleoutline prompt retries remainblocked"
+  ],
+  "newCalls": 0,
+  "newOrder": null,
+  "motionApproved": false
+}

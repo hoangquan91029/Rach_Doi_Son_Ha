@@ -165,8 +165,19 @@
     ],
     "basis": "shared/sim.js atan2 eight world octants; screen x=(worldX-worldY), y=(worldX+worldY)/2; labels describe projected vector"
   },
-  "weaponOwnership": null,
+  "weaponOwnership": "No held weapon is visible in this selected static master; preserve empty visible hands and belt/robe. This does not define future action equipment.",
   "allowedReferences": [],
   "excludedReferencePaths": [],
-  "masterAuthority": "retained derived source; original master verification pending"
+  "masterAuthority": "retained derived source; original master verification pending",
+  "equipmentLock": {
+    "status": "not-applicable",
+    "statement": "No held weapon is visible in this selected static master; preserve empty visible hands and belt/robe. This does not define future action equipment.",
+    "source": {
+      "path": "docs/art/characters/tran-nhan-tong-idle-396/working256.png",
+      "sha256": "0f54a83aada804661ef826183d417b1ba027eff4d86ca785ab2845f69165f7e6"
+    },
+    "basis": "Game-size sheet and selected 256 master show lowered empty hand and an empty hand at the belt; no held weapon is shown.",
+    "scope": "Original static equipment/assembly only; action-specific tools require separately pinned action locks"
+  },
+  "jobs": []
 }

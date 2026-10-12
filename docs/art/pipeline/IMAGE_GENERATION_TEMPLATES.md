@@ -4,7 +4,7 @@ These are recipes for shared templates, not image orders. Current executable tem
 
 ## Shared invariant block
 
-Fill from immutable identity.json: identity/master hash, selectedview, physical limb/equipment ownership, body proportions, face/headwear/costume/palette/materials, camera/light, canvas/pivot/family scale/shadow. Null equipment for a ship should become a verified category-specific N/A lock through P1, not made-up weapon hands. Missing required values or unresolved placeholders block dispatch.
+Fill from immutable identity.json: identity/master hash, selectedview, physical limb/equipment ownership, body proportions, face/headwear/costume/palette/materials, camera/light, canvas/pivot/family scale/shadow. A ship uses its verified whole-hull/rigging/assembly lock, not invented weapon hands; idle-only no-held-equipment observations do not define action tools. Missing required values or unresolved placeholders block dispatch.
 
 Variable block: action, engine direction and verified projected label, slot/phase, receiving/support/swing contact, own-lane motion and occlusion, torso/cloth motion, tool interaction, selected neighbors, next-key intent. Specify what changes; do not lock the whole body rigid.
 
@@ -33,7 +33,7 @@ physical weapon hands, complete equipment, camera, lighting, pivot and scale.
 Neutral whole pose, transparent background. No mirror, crop or per-frame fit.
 ```
 
-Eight-direction reference sheet is deterministic assembly of eight selected view PNGs, not one generated mosaic to cut apart. Existing view dispatcher gap must be fixed in P1 before finite view calls; this recipe is not a bypass.
+Eight-direction reference sheet is deterministic assembly of eight selected view PNGs, not one generated mosaic to cut apart. P1 view dispatch is implemented489; use a registered explicit view order with one slot/no action or phase values. This recipe is not an order or bypass.
 
 ## 3 — Action key
 

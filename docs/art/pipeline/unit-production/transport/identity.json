@@ -152,7 +152,7 @@
     ],
     "basis": "shared/sim.js atan2 eight world octants; screen x=(worldX-worldY), y=(worldX+worldY)/2; labels describe projected vector"
   },
-  "weaponOwnership": null,
+  "weaponOwnership": "Preserve the whole original wooden hull, deck fittings, mast/spars, rigging and cargo structure; no invented crew, hands or weapons.",
   "allowedReferences": [],
   "excludedReferencePaths": [],
   "masterAuthority": "original",
@@ -203,5 +203,16 @@
       "conversion": "Whole source-coordinate normalization to retained original canvas; logical render unchanged"
     },
     "visualApproval": false
-  }
+  },
+  "equipmentLock": {
+    "status": "verified",
+    "statement": "Preserve the whole original wooden hull, deck fittings, mast/spars, rigging and cargo structure; no invented crew, hands or weapons.",
+    "source": {
+      "path": "docs/art/units/transport-identity-447/raw.png",
+      "sha256": "395559ef5f4f5cb56aece69a9210f474b48b4c3af44ad2326bc39dd76c03c2a0"
+    },
+    "basis": "Open wooden hull with deck cargo and mast/spar/rigging assembly is visible; no human crew or held weapon is visible.",
+    "scope": "Original static equipment/assembly only; action-specific tools require separately pinned action locks"
+  },
+  "jobs": []
 }

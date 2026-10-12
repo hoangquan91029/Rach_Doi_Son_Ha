@@ -1,0 +1,170 @@
+{
+  "schema": "rds-reusable-jobs-code-receipt/v1",
+  "purpose": "P1 finite view dispatch, immutable per-job references and explicit equipment ownership locks",
+  "worker": "pipeline_jobs489",
+  "exclusiveOutputs": [
+    "scripts/sprite-prompts.mjs",
+    "scripts/sprite-order-run.mjs",
+    "tests/sprite-prompts.test.js",
+    "tests/sprite-order-run.test.js",
+    "docs/art/pipeline/reusable-jobs-489/code-receipt.json"
+  ],
+  "inputHEAD": "7f8cd34f23169240f2839d9cb3a7524bbbb1caa0",
+  "initialGitStatus": "clean",
+  "preflight": {
+    "schema": "rds-agent-preflight/v1",
+    "task": "art",
+    "head": "7f8cd34f23169240f2839d9cb3a7524bbbb1caa0",
+    "status": " M scripts/sprite-prompts.mjs\n?? docs/art/pipeline/reusable-jobs-489/\n?? docs/art/pipeline/villager-qualification-490/\n?? tests/sprite-order-run.test.js",
+    "readFiles": [
+      {
+        "path": "docs/agent-read-contract.json",
+        "sha256": "5e85c1c9a649aa6d71d03f6dd2b69a4e54f6b77c80f157a26e648a07f8ec3f99",
+        "bytes": 986
+      },
+      {
+        "path": "AGENTS.md",
+        "sha256": "a1bac4530beb062c593de86c0eecb61f9bf1e6cdde44728cd08b0cdb5dba83ee",
+        "bytes": 6674
+      },
+      {
+        "path": "docs/PROJECT_STATE.md",
+        "sha256": "b850ea28b249cabe525a7f24794e57a264c9b53137b6978b8491e6ab37b34d17",
+        "bytes": 2992
+      },
+      {
+        "path": "docs/NEXT_STEPS.md",
+        "sha256": "40e847135178289bbeef6cbfcc440f5c9cc1b1e3c1461210dc035110c2d4f1fb",
+        "bytes": 1396
+      },
+      {
+        "path": "docs/ARCHITECTURE_DECISIONS.md",
+        "sha256": "0b2b348bff0b0ffa6305e1aebf9d713faca7b9b10fb913df81640758ce1389c8",
+        "bytes": 2157
+      },
+      {
+        "path": "docs/art/ART_DIRECTION.md",
+        "sha256": "d64614e926465c0d540606634a25aeabc4f5364d6be7ced210eeab3182ffd429",
+        "bytes": 3087
+      },
+      {
+        "path": "docs/art/pipeline/ANIMATION_CONTRACT.md",
+        "sha256": "c77984786772c442cedb5bd3489f581dbad1ea2f89d5dea8dba64f1330b5113b",
+        "bytes": 5619
+      },
+      {
+        "path": "docs/art/pipeline/SPRITE_PRODUCTION_WORKFLOW.md",
+        "sha256": "0617c6eb90887dc740f4e34308c188425cb0ad22549267eee82490144423deee",
+        "bytes": 5052
+      },
+      {
+        "path": "docs/art/pipeline/IMAGE_GENERATION_TEMPLATES.md",
+        "sha256": "3a518d9e9b5cda3c523d13aead5dad24e7bf9b95328db28937eaea45c0f2f8b8",
+        "bytes": 6961
+      },
+      {
+        "path": "docs/art/pipeline/ANIMATION_ARCHETYPES.md",
+        "sha256": "165869e44eb58c6b37a0e29e1f461fd7c5dd36c73e1afb595742865e2299f43b",
+        "bytes": 2812
+      },
+      {
+        "path": "docs/art/pipeline/ASSET_QA.md",
+        "sha256": "7ad426a1a2b9d8fd10ae56aa7897fc19be67d3b00a40fac3987e1ef07cd66418",
+        "bytes": 3343
+      },
+      {
+        "path": "docs/art/pipeline/REVIEW_PRIORITY_20261008.md",
+        "sha256": "cacc2b746cb7360d4d6c9dba0b94d55dea0530e43402d60a891b3711e3c1a525",
+        "bytes": 960
+      }
+    ],
+    "sources": [
+      {
+        "path": "scripts/sprite-prompts.mjs",
+        "sha256": "834ead48b9e0c8070d4723823bfa26ca2996b16a436901ae01d9d7f438732dc7",
+        "bytes": 11306
+      }
+    ],
+    "ledger": {
+      "path": "docs/art/pipeline/unit-production/order-ledger.json",
+      "sha256": "bb52f26cab9a83322af001dbb6876e875d693ba562577c034f38dd0592a16e5c",
+      "locked": false,
+      "unresolvedClaims": []
+    },
+    "limits": [
+      "Existence and byte hashes do not establish understanding, permission, approval or tool availability.",
+      "Explicit invocation only; this helper is not a mandatory global hook.",
+      "Externally verify tools and actual live handles/preservation guards; no guards are declared closed."
+    ]
+  },
+  "outputs": [
+    {
+      "path": "scripts/sprite-prompts.mjs",
+      "sha256": "3c11509ac8c95bbaa9105a61036f634fa3b39ba01e2777b3c1bcf9be7c0a0eaa",
+      "changed": true
+    },
+    {
+      "path": "scripts/sprite-order-run.mjs",
+      "sha256": "2055fc537344cfbb1bc725c70414183ff2c93de5a64acb975bf99ead62eefb42",
+      "changed": false
+    },
+    {
+      "path": "tests/sprite-prompts.test.js",
+      "sha256": "04a7e598263e68d759925c62e89443d88facf1fc9f83b9b120978702fb2ed3e5",
+      "changed": false
+    },
+    {
+      "path": "tests/sprite-order-run.test.js",
+      "sha256": "a8aba72e1d93c520883a1179759eabc007b2f1fc0f0c455c1816db70064bcb18",
+      "changed": true
+    }
+  ],
+  "checks": {
+    "status": "FAILED_ONE_PREEXISTING_CASE_SENSITIVE_TEMPLATE_ASSERTION",
+    "command": "node --test tests/sprite-order-run.test.js tests/sprite-prompts.test.js tests/sprite-order-run485.test.js",
+    "tests": 18,
+    "passed": 17,
+    "failed": 1,
+    "failure": "tests/sprite-prompts.test.js:4 still requires lowercase same whole original; root changed view template to uppercase SAME. Worker authorization permits only sprite-order-run.test.js; root must fix this unrelated assertion. All4 new order-run tests and6 historical485 runner tests pass."
+  },
+  "tools": [
+    "exec_command",
+    "Python3 file editing",
+    "Node node:test"
+  ],
+  "calls": {
+    "image": 0,
+    "build": 0,
+    "browser": 0,
+    "runtimeInstall": 0,
+    "commit": 0
+  },
+  "interfaces": {
+    "view": "jobKind=view; omit action on order and action/phase in values; one slot frame=0 phase=0 template=view; callLimit<=1; correctionCap<=2; identity productionOrders registration required",
+    "action": "jobKind=action requires order.job exact registry.jobs record {id,action,direction,variant,path,sha256}; pinned JSON id/action/direction must match; variant if present must match; no typed currentJob fallback",
+    "equipment": "registry.equipmentLock={status:verified|not-applicable|unknown,statement,source:{path,sha256},basis}; verified/N/A require nonempty statement+basis, valid source and master; values.weaponOwnership matches statement; unknown blocks; legacy weaponOwnership string remains compatible",
+    "helper": "prepareOrderWithRegistry(order,slotIndex,kind,values,references,registry) is fixture-only dependency injection; production prepareOrder and CLI retain trusted paths",
+    "claims": "Existing runner already uses durable lock/CAS/claim before dispatch and held settlement; unchanged source. No automatic retries or approval."
+  },
+  "dependencies": [
+    "Root alone migrates identity registry metadata and authoritative docs",
+    "No new order authorized; closed470/477/482/483/486 budgets remain unchanged"
+  ],
+  "limitations": [
+    "Tests establish finite guards/custody only; no artwork/motion/runtime/owner/release qualification",
+    "Registry jobs are pinned immutable records; root owns registration, not helper",
+    "View correction cap is metadata ceiling; literal total callLimit<=1 means no automatic correction dispatch"
+  ],
+  "handleClosure": {
+    "tests": "completed",
+    "temporaryFixtures": "removed by test cleanup",
+    "imageCalls": "none",
+    "ledgerLocks": "fixture locks cleaned; trusted ledger not mutated"
+  },
+  "finalReuseFix": {
+    "status": "VERIFIED_FOCUSED_TEST",
+    "lookup": "Neighbor/edit-target allowedReferences now matches path+sha256+role+jobId+frame+phase before selection; exact typed order job validation remains",
+    "test": "Two different immutable action jobs intentionally share one PNG; both neighbor and first edit-target bind correctly; cross-job, unknown ID, wrong frame and phase refuse",
+    "limitations": "No browser/art/build/commit; sealed490 source untouched"
+  }
+}

@@ -38,3 +38,9 @@ For each record actual newcalls, acceptedfirstpassframes, corrections, heldoutpu
 ## Parallel assignments
 
 A artpilot, B tooling, C independentreview/spec, rootintegration. Only afterpilot+viewlocks: A:D0–2, B:D3–5, C:D6–7 of ONEactionbank. All exact Sol6.1Low. Selectedkeys must exist before dependentparallel calls. Each order namesexclusiveoutputs, slot IDs, sourcepins and callcap. Reviewer is differentfromproducer. Registry/commonmanifest mutations serialized byroot; durableclaimbeforetool.
+
+## Current implementation and repair boundary
+
+P1 implemented489: explicit view/action finite dispatch, job-specific source lookup, equipment pins and unknown/N/A restrictions. See [registry guide](unit-production/README.md). Empty hands in idle are not a tool definition. New imagery still requires a trusted registered order and durable claim.
+
+The reused Villager490 walk passed source/layout/playback/UI checks but was rejected by owner at actual size. Do not use its technical receipt to close motion. Inspect [budget intake](villager-qualification-490/budget-intake.json) before another method; similar old passing-outline retries cannot reset caps. A new whole-clothed control must resolve physical lanes and contact travel in the real projection. [Projection intake](villager-qualification-490/projection-intake.json) computes the travel demanded by provisional1.26; foot landmarks remain unmeasured, so it grants no stride or motion approval.

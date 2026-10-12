@@ -1,0 +1,24 @@
+{
+  "schema": "rds-owner-review/v1",
+  "status": "FAILED_OWNER_MOTION",
+  "identity": "villager",
+  "action": "walk",
+  "direction": 1,
+  "package": "villager-D1-walk-490",
+  "preview": {
+    "path": "docs/art/pipeline/villager-qualification-490/compiled/game-size.png",
+    "sha256": "cf7055425d5a323d405ff4a12c1ba59faa6b9125bbee0c8600d87f2e1c439252",
+    "wholeCanvasPxRounded": 71,
+    "gameCanvasPx": 70.56
+  },
+  "atlas": {
+    "path": "docs/art/pipeline/villager-qualification-490/compiled/atlas.png",
+    "sha256": "b2bdd86bd02f967bde9b070e5952e97dae257706b5d52730b787e32e9580fc13"
+  },
+  "response": "Chưa ổn, cần sửa chuyển động",
+  "question": "Sau khi xem loop đi D1 của dân làng ở kích thước trên khoảng 10 giây, chuyển động có đủ tự nhiên và mượt không?",
+  "motionAcceptance": false,
+  "defectSpecifics": "UNKNOWN: owner did not specify a frame or world-contact defect",
+  "scope": "The exact shown D1 walking loop; does not revoke accepted wood032/iron141 nor invent a body/foot diagnosis",
+  "next": "Bounded same-identity phase repair; no direction/unit fanout or public promotion"
+}

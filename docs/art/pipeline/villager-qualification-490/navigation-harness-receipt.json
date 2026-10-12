@@ -1,0 +1,285 @@
+{
+  "schema": "rds-navigation-harness-receipt/v1",
+  "status": "VERIFIED_SOURCE_AND_PURE_GEOMETRY_ONLY",
+  "purpose": "Generalize existing ordinary-UI candidate walk harness to D0-D7 clear world corridors",
+  "exclusiveOutputs": [
+    "scripts/qa/unit-walk-scene.mjs",
+    "scripts/qa/walk-corridor.mjs",
+    "tests/walk-corridor.test.js",
+    "docs/art/pipeline/villager-qualification-490/navigation-harness-receipt.json"
+  ],
+  "preflight": {
+    "schema": "rds-agent-preflight/v1",
+    "task": "runtime",
+    "head": "7f8cd34f23169240f2839d9cb3a7524bbbb1caa0",
+    "status": " M scripts/sprite-prompts.mjs\n?? docs/art/pipeline/reusable-jobs-489/\n?? docs/art/pipeline/villager-qualification-490/\n?? tests/sprite-order-run.test.js",
+    "readFiles": [
+      {
+        "path": "docs/agent-read-contract.json",
+        "sha256": "5e85c1c9a649aa6d71d03f6dd2b69a4e54f6b77c80f157a26e648a07f8ec3f99",
+        "bytes": 986
+      },
+      {
+        "path": "AGENTS.md",
+        "sha256": "a1bac4530beb062c593de86c0eecb61f9bf1e6cdde44728cd08b0cdb5dba83ee",
+        "bytes": 6674
+      },
+      {
+        "path": "docs/PROJECT_STATE.md",
+        "sha256": "b850ea28b249cabe525a7f24794e57a264c9b53137b6978b8491e6ab37b34d17",
+        "bytes": 2992
+      },
+      {
+        "path": "docs/NEXT_STEPS.md",
+        "sha256": "40e847135178289bbeef6cbfcc440f5c9cc1b1e3c1461210dc035110c2d4f1fb",
+        "bytes": 1396
+      },
+      {
+        "path": "docs/ARCHITECTURE_DECISIONS.md",
+        "sha256": "0b2b348bff0b0ffa6305e1aebf9d713faca7b9b10fb913df81640758ce1389c8",
+        "bytes": 2157
+      },
+      {
+        "path": "docs/art/pipeline/ANIMATION_CONTRACT.md",
+        "sha256": "c77984786772c442cedb5bd3489f581dbad1ea2f89d5dea8dba64f1330b5113b",
+        "bytes": 5619
+      },
+      {
+        "path": "docs/art/pipeline/ASSET_QA.md",
+        "sha256": "7ad426a1a2b9d8fd10ae56aa7897fc19be67d3b00a40fac3987e1ef07cd66418",
+        "bytes": 3343
+      },
+      {
+        "path": "shared/unit-action-spec.js",
+        "sha256": "04d987298651c73187920391754f729fd203c1313536eb54c29c629048db05bf",
+        "bytes": 1686
+      },
+      {
+        "path": "shared/visible-action.js",
+        "sha256": "35d4352d3c6a85bce7b99638934e9c0512c900df801fc3b59296ba1b606b27b0",
+        "bytes": 2228
+      },
+      {
+        "path": "client/world-presentation.js",
+        "sha256": "d87fadfb176f765d35b26c2d247af536288d9ada9df6ecc8ec254d889231db98",
+        "bytes": 240
+      }
+    ],
+    "sources": [
+      {
+        "path": "scripts/qa/unit-walk-scene.mjs",
+        "sha256": "e6c1d2433d98f97cdd335b381a366a2ceb4127e2075c2edb716d0557a28f02c0",
+        "bytes": 8724
+      }
+    ],
+    "ledger": {
+      "path": "docs/art/pipeline/unit-production/order-ledger.json",
+      "sha256": "bb52f26cab9a83322af001dbb6876e875d693ba562577c034f38dd0592a16e5c",
+      "locked": false,
+      "unresolvedClaims": []
+    },
+    "limits": [
+      "Existence and byte hashes do not establish understanding, permission, approval or tool availability.",
+      "Explicit invocation only; this helper is not a mandatory global hook.",
+      "Externally verify tools and actual live handles/preservation guards; no guards are declared closed."
+    ]
+  },
+  "pins": [
+    {
+      "path": "scripts/qa/unit-walk-scene.mjs",
+      "sha256": "b95a71f820b2249bfbaeb93a33f6e4f1b59c657319b6c3e500250edb2a25f121"
+    },
+    {
+      "path": "scripts/qa/walk-corridor.mjs",
+      "sha256": "a264935fc748d3dde9e1b57126b87b9aa2400490d92186b174a96db42a350d5a"
+    },
+    {
+      "path": "tests/walk-corridor.test.js",
+      "sha256": "a17fc8a82ed9241164d0509f93c454714aa48341ffc79698c8270642ade13abe"
+    }
+  ],
+  "interface": {
+    "config.direction": "Integer0..7, default0; normalized simulation world octant; D1=(1,1)",
+    "config.idleId": "Caller supplies matching direction idle illustration asset; Stop requires exact configured idleId, actor, requested idle state and requestedDirection",
+    "corridor": "Select owned living unembarked actor whose visible plain/hill corridor extends9world units; first trial6, Stop trial3 from actual arrival; quarter-unit obstacle sampling; conservative building footprint",
+    "assignedTarget": "Retains first observed actual actor.order.x/y after ordinary Move click; arrival<=.700001; no ideal target substitution"
+  },
+  "checks": [
+    {
+      "command": "node --test tests/walk-corridor.test.js",
+      "tests": 3,
+      "passed": 3,
+      "failed": 0
+    },
+    {
+      "command": "node --check scripts/qa/unit-walk-scene.mjs",
+      "passed": true
+    },
+    {
+      "command": "git diff --check",
+      "passed": true
+    }
+  ],
+  "preservedGuards": [
+    "ordinary selection/Move/Pause/Resume/Stop",
+    "living local ownership and exact selection before Move",
+    "actual first assigned order and engine0.7 arrival",
+    "pause tick/position/frame freeze",
+    "zero page/request failures",
+    "menu decoded-memory cleanup",
+    "browser/context/server close and source preservation hashes"
+  ],
+  "tools": [
+    "exec_command",
+    "Python3 edits",
+    "Node node:test"
+  ],
+  "browserCalls": 0,
+  "buildCalls": 0,
+  "imageCalls": 0,
+  "runtimeQualification": "UNKNOWN_NOT_RUN",
+  "dependencies": [
+    "Root reviews renderer diagnostics then builds fresh isolated candidate for actual browser verification"
+  ],
+  "limitations": [
+    "Pure geometry does not prove nav path/facing, contact or runtime behavior; live guards fail closed",
+    "client/world-presentation.js contains only tile/camera constants in actual source; world octants verified against shared/sim.js atan2 direction formula, no browser module imported",
+    "No production/public/HEAD mutation or generated-art call"
+  ],
+  "handleClosure": "Only syntax/pure tests run and complete; no live browser/server created",
+  "clearance": {
+    "trigger": "No direct clear9unit corridor",
+    "search": "Finite visible tile centers within1..12world units; shortest clear straight sampled route; destination9unit trial corridor checked plus eight .700001 arrival-offset samples",
+    "observedFailurePlan": {
+      "actorId": 12,
+      "start": {
+        "x": 13.5,
+        "y": 15.5
+      },
+      "travel": 7.224956747275376,
+      "direction": 1,
+      "distance": 9
+    },
+    "source": "docs/art/pipeline/villager-qualification-490/actual-chrome/receipt.json failure.displayedState",
+    "dispatch": "ONE ordinary Move; record actual assigned target and arrival<=.700001; require living ownership; revalidate corridor at actual arrival before trial",
+    "retry": "No automatic alternative/retry if arrival or corridor fails",
+    "qualification": "PROPOSED_ACTUAL_UI_NOT_RUN"
+  },
+  "drawTracePreflight": {
+    "schema": "rds-agent-preflight/v1",
+    "task": "runtime",
+    "head": "7f8cd34f23169240f2839d9cb3a7524bbbb1caa0",
+    "status": " M docs/art/pipeline/unit-production/artillery/identity.json\n M docs/art/pipeline/unit-production/cavalry/identity.json\n M docs/art/pipeline/unit-production/firearm/identity.json\n M docs/art/pipeline/unit-production/han_xin/identity.json\n M docs/art/pipeline/unit-production/infantry/identity.json\n M docs/art/pipeline/unit-production/le_thanh_tong/identity.json\n M docs/art/pipeline/unit-production/ly_thuong_kiet/identity.json\n M docs/art/pipeline/unit-production/minh_menh/identity.json\n M docs/art/pipeline/unit-production/napoleon_bonaparte/identity.json\n M docs/art/pipeline/unit-production/nguyen_anh/identity.json\n M docs/art/pipeline/unit-production/nguyen_hue/identity.json\n M docs/art/pipeline/unit-production/nguyen_phuc_chu/identity.json\n M docs/art/pipeline/unit-production/spearman/identity.json\n M docs/art/pipeline/unit-production/templates/view.txt\n M docs/art/pipeline/unit-production/tran_hung_dao/identity.json\n M docs/art/pipeline/unit-production/tran_nhan_tong/identity.json\n M docs/art/pipeline/unit-production/transport/identity.json\n M docs/art/pipeline/unit-production/trinh_cuong/identity.json\n M docs/art/pipeline/unit-production/villager/identity.json\n M docs/art/pipeline/unit-production/wagon/identity.json\n M docs/art/pipeline/unit-production/warship/identity.json\n M docs/art/pipeline/unit-production/xiang_yu/identity.json\n M scripts/qa/unit-walk-scene.mjs\n M scripts/sprite-prompts.mjs\n?? docs/art/pipeline/reusable-jobs-489/\n?? docs/art/pipeline/villager-qualification-490/\n?? scripts/qa/walk-corridor.mjs\n?? tests/equipment-registry.test.js\n?? tests/sprite-order-run.test.js\n?? tests/walk-corridor.test.js",
+    "readFiles": [
+      {
+        "path": "docs/agent-read-contract.json",
+        "sha256": "5e85c1c9a649aa6d71d03f6dd2b69a4e54f6b77c80f157a26e648a07f8ec3f99",
+        "bytes": 986
+      },
+      {
+        "path": "AGENTS.md",
+        "sha256": "a1bac4530beb062c593de86c0eecb61f9bf1e6cdde44728cd08b0cdb5dba83ee",
+        "bytes": 6674
+      },
+      {
+        "path": "docs/PROJECT_STATE.md",
+        "sha256": "b850ea28b249cabe525a7f24794e57a264c9b53137b6978b8491e6ab37b34d17",
+        "bytes": 2992
+      },
+      {
+        "path": "docs/NEXT_STEPS.md",
+        "sha256": "40e847135178289bbeef6cbfcc440f5c9cc1b1e3c1461210dc035110c2d4f1fb",
+        "bytes": 1396
+      },
+      {
+        "path": "docs/ARCHITECTURE_DECISIONS.md",
+        "sha256": "0b2b348bff0b0ffa6305e1aebf9d713faca7b9b10fb913df81640758ce1389c8",
+        "bytes": 2157
+      },
+      {
+        "path": "docs/art/pipeline/ANIMATION_CONTRACT.md",
+        "sha256": "c77984786772c442cedb5bd3489f581dbad1ea2f89d5dea8dba64f1330b5113b",
+        "bytes": 5619
+      },
+      {
+        "path": "docs/art/pipeline/ASSET_QA.md",
+        "sha256": "7ad426a1a2b9d8fd10ae56aa7897fc19be67d3b00a40fac3987e1ef07cd66418",
+        "bytes": 3343
+      },
+      {
+        "path": "shared/unit-action-spec.js",
+        "sha256": "04d987298651c73187920391754f729fd203c1313536eb54c29c629048db05bf",
+        "bytes": 1686
+      },
+      {
+        "path": "shared/visible-action.js",
+        "sha256": "35d4352d3c6a85bce7b99638934e9c0512c900df801fc3b59296ba1b606b27b0",
+        "bytes": 2228
+      },
+      {
+        "path": "client/world-presentation.js",
+        "sha256": "d87fadfb176f765d35b26c2d247af536288d9ada9df6ecc8ec254d889231db98",
+        "bytes": 240
+      }
+    ],
+    "sources": [
+      {
+        "path": "client/raster-slice.js",
+        "sha256": "908741c543a24f298f340c35e4d0619299791b82d877f9821b050a5732a61718",
+        "bytes": 19338
+      }
+    ],
+    "ledger": {
+      "path": "docs/art/pipeline/unit-production/order-ledger.json",
+      "sha256": "bb52f26cab9a83322af001dbb6876e875d693ba562577c034f38dd0592a16e5c",
+      "locked": false,
+      "unresolvedClaims": []
+    },
+    "limits": [
+      "Existence and byte hashes do not establish understanding, permission, approval or tool availability.",
+      "Explicit invocation only; this helper is not a mandatory global hook.",
+      "Externally verify tools and actual live handles/preservation guards; no guards are declared closed."
+    ]
+  },
+  "drawTrace": {
+    "status": "VERIFIED_FOCUSED_TESTS_RUNTIME_UNKNOWN",
+    "source": "client/raster-slice.js createRasterSlice.observeEntities/drawEntity",
+    "interface": "status.currentEntityDraws[String(entityId)] populated only after successful rasterAt; cleared each observeEntities/render; max1024 IDs; currentEntityDrawsDropped counts overflow; renderObservation identifies current render",
+    "fields": [
+      "entityId",
+      "assetId",
+      "frame",
+      "visualState",
+      "requestedState",
+      "requestedDirection",
+      "direction",
+      "presentation",
+      "staticIllustrationFallback",
+      "render",
+      "pivot",
+      "cell",
+      "tick",
+      "presentationTimeMs",
+      "renderObservation"
+    ],
+    "snapshot": "Existing rtsDiagnostics.snapshot clones raster.status; no diagnostics API changes",
+    "harness": "sample includes actual actor draw; Stop/cold fallback inspect actual actor current draw instead of historical global lastStaticIllustration",
+    "behavior": "Diagnostic observation only; no altered art selection, timing, visual draw, gameplay or injected commands",
+    "checks": {
+      "command": "node --test tests/raster-draw-trace490.test.js tests/raster-streaming480.test.js tests/walk-corridor.test.js",
+      "tests": 8,
+      "passed": 8,
+      "failed": 0
+    },
+    "pins": [
+      {
+        "path": "client/raster-slice.js",
+        "sha256": "692fd9d91128017eaea0eeb54fa016fbcb43f3c10a462ae7444e20fd0792b3c4"
+      },
+      {
+        "path": "tests/raster-draw-trace490.test.js",
+        "sha256": "ee1c95ed7aa9bb1fe0221d4b3a12bd34ef4fd4f2a0e9a21e17802ad0736111b9"
+      }
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "status": "UNKNOWN_INFERENCE",
+  "installedOrDownloaded": false,
+  "nvidiaSmiOnPath": false,
+  "kritaOnPath": false,
+  "kernelDriver": "nvidia",
+  "kernelVersion": "595.99.02",
+  "basis": "actual lspci/proc driver inspection; PCI GA107 RTX2050",
+  "inference": "NOT_TESTED",
+  "poseConditioning": "NOT_AVAILABLE",
+  "VRAM": null,
+  "nvmlError": "libnvidia-ml.so.1: cannot open shared object file: No such file or directory",
+  "deviceNodes": [
+    {
+      "path": "/dev/nvidia-modeset",
+      "readable": true,
+      "writable": true
+    },
+    {
+      "path": "/dev/nvidia-uvm-tools",
+      "readable": true,
+      "writable": true
+    },
+    {
+      "path": "/dev/nvidia-uvm",
+      "readable": true,
+      "writable": true
+    },
+    {
+      "path": "/dev/nvidia0",
+      "readable": true,
+      "writable": true
+    },
+    {
+      "path": "/dev/nvidiactl",
+      "readable": true,
+      "writable": true
+    }
+  ],
+  "tools": {
+    "krita": null,
+    "gimp": null,
+    "inkscape": null,
+    "nvidia-smi": null
+  },
+  "limitation": "Visible kernel/PCI data does not establish accessible inference device, userspace CUDA/NVML or pose conditioning; no framework or model downloaded"
+}
