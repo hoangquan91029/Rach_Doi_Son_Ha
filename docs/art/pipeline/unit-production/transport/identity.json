@@ -11,10 +11,12 @@
   "master": {
     "assetId": "transport-idle-d0-447",
     "direction": 0,
-    "path": "docs/art/units/transport-identity-447/working-256.png",
-    "sha256": "88be0e796dddf70c16e29501ea13ea7fc093bede0c67e05eba67394a7e2c6b0b",
-    "rgbaSha256": "1682a54cb88c0ab5b204ad1a604423c9d00764528b14bfbe810ad96f191320be",
-    "status": "existing source custody; no new view or motion approval"
+    "path": "docs/art/units/transport-identity-447/raw.png",
+    "sha256": "395559ef5f4f5cb56aece69a9210f474b48b4c3af44ad2326bc39dd76c03c2a0",
+    "rgbaSha256": "31dfff0aa3c7e01d62cc8e8d63c260c8e0bc8646b22ecabfdf985ef0e1642186",
+    "status": "Selected existing whole original identity source only; no motion/new-view approval",
+    "width": 1254,
+    "height": 1254
   },
   "views": [
     {
@@ -22,10 +24,12 @@
       "source": {
         "assetId": "transport-idle-d0-447",
         "direction": 0,
-        "path": "docs/art/units/transport-identity-447/working-256.png",
-        "sha256": "88be0e796dddf70c16e29501ea13ea7fc093bede0c67e05eba67394a7e2c6b0b",
-        "rgbaSha256": "1682a54cb88c0ab5b204ad1a604423c9d00764528b14bfbe810ad96f191320be",
-        "status": "existing source custody; no new view or motion approval"
+        "path": "docs/art/units/transport-identity-447/raw.png",
+        "sha256": "395559ef5f4f5cb56aece69a9210f474b48b4c3af44ad2326bc39dd76c03c2a0",
+        "rgbaSha256": "31dfff0aa3c7e01d62cc8e8d63c260c8e0bc8646b22ecabfdf985ef0e1642186",
+        "status": "Selected existing whole original identity source only; no motion/new-view approval",
+        "width": 1254,
+        "height": 1254
       },
       "status": "existing static source"
     },
@@ -151,5 +155,53 @@
   "weaponOwnership": null,
   "allowedReferences": [],
   "excludedReferencePaths": [],
-  "masterAuthority": "retained derived source; original master verification pending"
+  "masterAuthority": "original",
+  "retainedDerivedMaster": {
+    "assetId": "transport-idle-d0-447",
+    "direction": 0,
+    "path": "docs/art/units/transport-identity-447/working-256.png",
+    "sha256": "88be0e796dddf70c16e29501ea13ea7fc093bede0c67e05eba67394a7e2c6b0b",
+    "rgbaSha256": "1682a54cb88c0ab5b204ad1a604423c9d00764528b14bfbe810ad96f191320be",
+    "status": "existing source custody; no new view or motion approval"
+  },
+  "sourceCustody": {
+    "receipt": "docs/art/pipeline/original-identities-485/receipt.json",
+    "rawPivot": [
+      627,
+      815.1
+    ],
+    "derivation": "Whole original Lanczos to retained derived canvas; decoded RGBA exact match",
+    "motionApproval": false,
+    "weaponOwnershipStatus": "Preserve exact original equipment/grips; anatomical side binding remains unresolved where registry weaponOwnership is null"
+  },
+  "layoutLock": {
+    "fixedCanvas": {
+      "width": 1254,
+      "height": 1254
+    },
+    "cell": {
+      "width": 128,
+      "height": 128
+    },
+    "pivot": {
+      "space": "source",
+      "x": 627,
+      "y": 815.1
+    },
+    "render": {
+      "width": 78,
+      "height": 78
+    },
+    "contactShadow": {
+      "mode": "baked"
+    },
+    "padding": 2,
+    "basis": {
+      "manifestPath": "public/assets/art-v1/fort-202-manifest.json",
+      "manifestSHA256": "77c75ef2bea8cff633b28fe8635e51b5a7efc151bb1871b5b5d9d17850d4271c",
+      "assetId": "transport-idle-d0-447",
+      "conversion": "Whole source-coordinate normalization to retained original canvas; logical render unchanged"
+    },
+    "visualApproval": false
+  }
 }

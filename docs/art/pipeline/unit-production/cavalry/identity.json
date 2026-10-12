@@ -14,7 +14,9 @@
     "path": "docs/art/units/sources/cavalry-neutral-se-imagegen-raw.png",
     "sha256": "552c4fcdf8ce6bdb802c6faae1bc139416393d53cb30caa95a1d22309b77b091",
     "rgbaSha256": "3c4a110747c50488d420b70d45f564b93c740a31227a5c278b7af190fe0d3caf",
-    "status": "existing source custody; no new view or motion approval"
+    "status": "Selected existing whole original identity source only; no motion/new-view approval",
+    "width": 1254,
+    "height": 1254
   },
   "views": [
     {
@@ -25,7 +27,9 @@
         "path": "docs/art/units/sources/cavalry-neutral-se-imagegen-raw.png",
         "sha256": "552c4fcdf8ce6bdb802c6faae1bc139416393d53cb30caa95a1d22309b77b091",
         "rgbaSha256": "3c4a110747c50488d420b70d45f564b93c740a31227a5c278b7af190fe0d3caf",
-        "status": "existing source custody; no new view or motion approval"
+        "status": "Selected existing whole original identity source only; no motion/new-view approval",
+        "width": 1254,
+        "height": 1254
       },
       "status": "existing static source"
     },
@@ -141,5 +145,53 @@
   "weaponOwnership": null,
   "allowedReferences": [],
   "excludedReferencePaths": [],
-  "masterAuthority": "original"
+  "masterAuthority": "original",
+  "retainedDerivedMaster": {
+    "assetId": "cavalry-idle-D00",
+    "direction": 0,
+    "path": "docs/art/units/sources/cavalry-neutral-se-imagegen-raw.png",
+    "sha256": "552c4fcdf8ce6bdb802c6faae1bc139416393d53cb30caa95a1d22309b77b091",
+    "rgbaSha256": "3c4a110747c50488d420b70d45f564b93c740a31227a5c278b7af190fe0d3caf",
+    "status": "existing source custody; no new view or motion approval"
+  },
+  "sourceCustody": {
+    "receipt": "docs/art/pipeline/original-identities-485/receipt.json",
+    "rawPivot": [
+      655,
+      1110
+    ],
+    "derivation": "Whole original Lanczos to retained derived canvas; decoded RGBA exact match",
+    "motionApproval": false,
+    "weaponOwnershipStatus": "Preserve exact original equipment/grips; anatomical side binding remains unresolved where registry weaponOwnership is null"
+  },
+  "layoutLock": {
+    "fixedCanvas": {
+      "width": 1254,
+      "height": 1254
+    },
+    "cell": {
+      "width": 128,
+      "height": 128
+    },
+    "pivot": {
+      "space": "source",
+      "x": 655,
+      "y": 1110
+    },
+    "render": {
+      "width": 51,
+      "height": 51
+    },
+    "contactShadow": {
+      "mode": "baked"
+    },
+    "padding": 2,
+    "basis": {
+      "manifestPath": "public/assets/art-v1/fort-202-manifest.json",
+      "manifestSHA256": "77c75ef2bea8cff633b28fe8635e51b5a7efc151bb1871b5b5d9d17850d4271c",
+      "assetId": "cavalry-idle-D00",
+      "conversion": "Whole source-coordinate normalization to retained original canvas; logical render unchanged"
+    },
+    "visualApproval": false
+  }
 }

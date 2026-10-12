@@ -11,10 +11,12 @@
   "master": {
     "assetId": "artillery-idle-d0-409",
     "direction": 0,
-    "path": "docs/art/units/artillery-idle-409/working-256.png",
-    "sha256": "98fbeb9b2a92ec276beac293ec62c5562f07bdecb96d8e4f293753b4c18fba9d",
-    "rgbaSha256": "628b93a4d30501424d83d0960fb7da1fabf4e3d9e2fd3b540a0f5969eca6b281",
-    "status": "existing source custody; no new view or motion approval"
+    "path": "docs/art/units/artillery-idle-409/raw.png",
+    "sha256": "da11202383f484326348b6c73acc3855509e32c98f926eb545dcdbe2b089d913",
+    "rgbaSha256": "ed3a4f519245ed6ca223d086c80db43f267ecbf2e2e47f4c00707e764140b5b3",
+    "status": "Selected existing whole original identity source only; no motion/new-view approval",
+    "width": 1254,
+    "height": 1254
   },
   "views": [
     {
@@ -22,10 +24,12 @@
       "source": {
         "assetId": "artillery-idle-d0-409",
         "direction": 0,
-        "path": "docs/art/units/artillery-idle-409/working-256.png",
-        "sha256": "98fbeb9b2a92ec276beac293ec62c5562f07bdecb96d8e4f293753b4c18fba9d",
-        "rgbaSha256": "628b93a4d30501424d83d0960fb7da1fabf4e3d9e2fd3b540a0f5969eca6b281",
-        "status": "existing source custody; no new view or motion approval"
+        "path": "docs/art/units/artillery-idle-409/raw.png",
+        "sha256": "da11202383f484326348b6c73acc3855509e32c98f926eb545dcdbe2b089d913",
+        "rgbaSha256": "ed3a4f519245ed6ca223d086c80db43f267ecbf2e2e47f4c00707e764140b5b3",
+        "status": "Selected existing whole original identity source only; no motion/new-view approval",
+        "width": 1254,
+        "height": 1254
       },
       "status": "existing static source"
     },
@@ -141,5 +145,53 @@
   "weaponOwnership": null,
   "allowedReferences": [],
   "excludedReferencePaths": [],
-  "masterAuthority": "retained derived source; original master verification pending"
+  "masterAuthority": "original",
+  "retainedDerivedMaster": {
+    "assetId": "artillery-idle-d0-409",
+    "direction": 0,
+    "path": "docs/art/units/artillery-idle-409/working-256.png",
+    "sha256": "98fbeb9b2a92ec276beac293ec62c5562f07bdecb96d8e4f293753b4c18fba9d",
+    "rgbaSha256": "628b93a4d30501424d83d0960fb7da1fabf4e3d9e2fd3b540a0f5969eca6b281",
+    "status": "existing source custody; no new view or motion approval"
+  },
+  "sourceCustody": {
+    "receipt": "docs/art/pipeline/original-identities-485/receipt.json",
+    "rawPivot": [
+      654,
+      1140
+    ],
+    "derivation": "Whole original Lanczos to retained derived canvas; decoded RGBA exact match",
+    "motionApproval": false,
+    "weaponOwnershipStatus": "Preserve exact original equipment/grips; anatomical side binding remains unresolved where registry weaponOwnership is null"
+  },
+  "layoutLock": {
+    "fixedCanvas": {
+      "width": 1254,
+      "height": 1254
+    },
+    "cell": {
+      "width": 128,
+      "height": 128
+    },
+    "pivot": {
+      "space": "source",
+      "x": 654,
+      "y": 1140
+    },
+    "render": {
+      "width": 55,
+      "height": 55
+    },
+    "contactShadow": {
+      "mode": "baked"
+    },
+    "padding": 2,
+    "basis": {
+      "manifestPath": "public/assets/art-v1/fort-202-manifest.json",
+      "manifestSHA256": "77c75ef2bea8cff633b28fe8635e51b5a7efc151bb1871b5b5d9d17850d4271c",
+      "assetId": "artillery-idle-d0-409",
+      "conversion": "Whole source-coordinate normalization to retained original canvas; logical render unchanged"
+    },
+    "visualApproval": false
+  }
 }

@@ -368,5 +368,36 @@
       "path": "docs/art/pipeline/infantry-whole-pose-483/job.json",
       "sha256": "259ceee77da8c2cd5645c4af1a44b4f6a20d52c2e11d56d9b76cf3652583641f"
     }
-  ]
+  ],
+  "layoutLock": {
+    "fixedCanvas": {
+      "width": 1254,
+      "height": 1254
+    },
+    "cell": {
+      "width": 128,
+      "height": 128
+    },
+    "pivot": {
+      "space": "source",
+      "x": 653,
+      "y": 1057
+    },
+    "render": {
+      "width": 42,
+      "height": 42
+    },
+    "contactShadow": {
+      "mode": "separate",
+      "assetId": "unit-contact-shadow"
+    },
+    "padding": 2,
+    "basis": {
+      "manifestPath": "public/assets/art-v1/fort-202-manifest.json",
+      "manifestSHA256": "77c75ef2bea8cff633b28fe8635e51b5a7efc151bb1871b5b5d9d17850d4271c",
+      "assetId": "infantry-idle-D00",
+      "conversion": "Whole source-coordinate normalization to retained original canvas; logical render unchanged"
+    },
+    "visualApproval": false
+  }
 }

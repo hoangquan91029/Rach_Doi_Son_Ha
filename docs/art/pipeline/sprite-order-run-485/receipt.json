@@ -1,0 +1,22 @@
+{
+  "status": "IMPLEMENTED_FIXTURE_TESTS_PASS",
+  "scope": "Durable finite-slot claim and held-only settlement helper; no dispatch",
+  "trustedCLI": "Fixed order-ledger.json and existing prepareOrder; JSON request cannot override ledger/preparer",
+  "atomicity": "Exclusive lock, expected revision SHA, prepare under lock, consumed slot/token/requestSHA/counters, fsync temporary ledger then atomic rename and directory fsync",
+  "settlement": "Matching used slot token required; output bytes SHA verified; success/failure both held, approval false",
+  "recovery": "No automatic retry or stale lock reset. Claim remains used after dispatch crash. Human custody review required for uncertain dispatch.",
+  "verification": {
+    "command": "node --test tests/sprite-order-run485.test.js tests/sprite-prompts.test.js",
+    "passed": 13,
+    "failed": 0
+  },
+  "sha256": {
+    "scripts/sprite-order-run.mjs": "2055fc537344cfbb1bc725c70414183ff2c93de5a64acb975bf99ead62eefb42",
+    "tests/sprite-order-run485.test.js": "3c20d5b5d1375ee66599c6d38b4976698fb4feeebe8643fdef9a192b3bba06be"
+  },
+  "preservation": "Actual ledger/registries/images/runtime untouched; temp test fixtures removed",
+  "limitations": [
+    "All future callers must use this helper for reservation; prepareOrder remains read-only and cannot prevent bypass",
+    "Not an image dispatcher or visual approval gate"
+  ]
+}

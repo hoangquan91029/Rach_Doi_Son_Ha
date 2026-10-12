@@ -83,3 +83,56 @@ test('atlas cap and pinned reusable direction-bank preview',()=>withFixture(f=>{
  const descriptor=readFileSync(join(f.dir,'output/asset.json'));f.job.previewBank=[{path:'output/asset.json',sha256:createHash('sha256').update(descriptor).digest('hex')}];f.job.output.directory='bank';f.job.direction=1;assert.equal(f.run().status,0);const config=JSON.parse(readFileSync(join(f.dir,'bank/preview-config.json')));assert.equal(config.bank[0].direction,0);assert.equal(config.bank[0].path,'../output/asset.json');
  f.job.output.directory='tampered-bank';f.job.previewBank[0].sha256='0'.repeat(64);assert.match(f.run().stderr,/bank descriptor SHA/);assert.equal(existsSync(join(f.dir,'tampered-bank')),false);
 }));
+function differentView(f,size=32){
+ const result=spawnSync('python3',['-c',`from PIL import Image
+import hashlib,json
+from pathlib import Path
+p=Path(${JSON.stringify(f.dir)});im=Image.new('RGBA',(${size},${size}),(30,100,160,255));im.save(p/'view.png')
+(p/'view-pin.json').write_text(json.dumps({'path':'view.png','sha256':hashlib.sha256((p/'view.png').read_bytes()).hexdigest(),'rgbaSha256':hashlib.sha256(im.tobytes()).hexdigest()}))`],{encoding:'utf8'});
+ assert.equal(result.status,0,result.stderr);return JSON.parse(readFileSync(join(f.dir,'view-pin.json')));
+}
+test('schema2 shares original identity anchor across distinct directional masters and preview clips',()=>withFixture(f=>{
+ f.job.schemaVersion=2;f.job.loop=true;f.job.identityMaster={...f.job.master};
+ assert.equal(f.run().status,0);
+ const original=readFileSync(join(f.dir,'output/asset.json'));
+ const view=differentView(f);f.job.master=view;f.job.masterSHA=view.sha256;f.job.direction=1;f.job.frames.forEach(x=>x.input=view);
+ f.job.previewBank=[{path:'output/asset.json',sha256:createHash('sha256').update(original).digest('hex')}];f.job.output.directory='view';
+ const result=f.run();assert.equal(result.status,0,result.stderr);
+ const asset=JSON.parse(readFileSync(join(f.dir,'view/asset.json')));
+ assert.equal(asset.identityMasterSHA,f.job.identityMaster.sha256);assert.equal(asset.directionalMasterSHA,view.sha256);assert.equal(asset.source.sha256,view.sha256);
+ const preview=spawnSync('python3',['-c',`from PIL import Image
+from pathlib import Path
+p=Path(${JSON.stringify(f.dir)});actual=Image.open(p/'view/master-preview.png');original=Image.open(p/'raw.png').resize((128,128),Image.Resampling.LANCZOS);direction=Image.open(p/'view.png').resize((128,128),Image.Resampling.LANCZOS)
+assert actual.tobytes()==original.tobytes()
+assert actual.tobytes()!=direction.tobytes()`],{encoding:'utf8'});
+ assert.equal(preview.status,0,preview.stderr);
+ assert.deepEqual(JSON.parse(readFileSync(join(f.dir,'view/receipt.json'))).identityMaster.sha256,f.job.identityMaster.sha256);
+ assert.equal(JSON.parse(readFileSync(join(f.dir,'view/preview-config.json'))).bank[0].direction,0);
+}));
+test('identity anchor rejects bad pins, wrong canvas and schema1 before creating output',()=>withFixture(f=>{
+ f.job.identityMaster={...f.job.master};assert.match(f.run().stderr,/requires schema 2/);
+ f.job.schemaVersion=2;f.job.loop=true;f.job.identityMaster.sha256='0'.repeat(64);assert.match(f.run().stderr,/encoded SHA256/);
+ f.job.identityMaster={...f.job.master,rgbaSha256:'0'.repeat(64)};assert.match(f.run().stderr,/decoded RGBA SHA256/);
+ f.job.identityMaster=differentView(f,16);assert.match(f.run().stderr,/fixed canvas/);assert.equal(existsSync(join(f.dir,'output')),false);
+}));
+test('production qualification binds explicit original identity anchor in addition to directional master',()=>withFixture(f=>{
+ f.job.schemaVersion=2;f.job.loop=true;f.job.identityMaster={...f.job.master};const view=differentView(f);f.job.master=view;f.job.masterSHA=view.sha256;f.job.direction=1;
+ f.job.frames.forEach(x=>{x.input=view;x.status='selected';x.custody='fixture';});
+ const qualification={status:'qualified',masterSHA:view.sha256,family:f.job.family,action:'walk',direction:1,frameSHAs:f.job.frames.map(x=>x.input.sha256),distancePerCycle:1};
+ function bind(){const record=JSON.stringify(qualification);writeFileSync(join(f.dir,'qualification.json'),record);f.job.qualification={status:'qualified',record:'qualification.json',sha256:createHash('sha256').update(record).digest('hex')};}
+ f.job.locomotion={distancePerCycle:1,measurementRecord:'qualification.json'};bind();assert.match(f.run('production').stderr,/bind identity master/);
+ qualification.identityMasterSHA=view.sha256;bind();assert.match(f.run('production').stderr,/bind identity master/);
+ qualification.identityMasterSHA=f.job.identityMaster.sha256;bind();const result=f.run('production');assert.equal(result.status,0,result.stderr);
+}));
+test('legacy master remains identity and directional anchor without optional pin',()=>withFixture(f=>{
+ const result=f.run();assert.equal(result.status,0,result.stderr);const asset=JSON.parse(readFileSync(join(f.dir,'output/asset.json')));
+ assert.equal(asset.identityMasterSHA,f.job.masterSHA);assert.equal(asset.directionalMasterSHA,f.job.masterSHA);
+}));
+
+test('whole baked-shadow candidate preserves its own shadow and rejects missing ground shadow',()=>withFixture(f=>{
+ f.job.contactShadow={mode:'baked'};const result=f.run();assert.equal(result.status,0,result.stderr);
+ const asset=JSON.parse(readFileSync(join(f.dir,'output/asset.json')));validateAsset(asset);assert.deepEqual(asset.contactShadow,{mode:'baked'});assert.equal(Object.hasOwn(asset.contactShadow,'assetId'),false);
+ for(const contactShadow of [{mode:'none'},{mode:'unknown'},{mode:'separate'},{mode:'separate',assetId:''}]){
+  f.job.output.directory='invalid-shadow';f.job.contactShadow=contactShadow;assert.match(f.run().stderr,/grounded baked or separate shadow/);assert.equal(existsSync(join(f.dir,'invalid-shadow')),false);
+ }
+}));

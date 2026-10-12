@@ -54,7 +54,8 @@ def compile_job(job_path, mode):
     pivot = job['pivot']; render = job['render']
     require(pivot.get('space') == 'source' and all(number(pivot.get(k)) and 0 <= pivot[k] <= canvas[i] for i, k in enumerate(('x', 'y'))), 'invalid fixed pivot')
     require(all(number(render.get(k)) and render[k] > 0 for k in ('width', 'height')) and render['width'] == render['height'], 'invalid fixed logical scale')
-    require(job['contactShadow'].get('mode') == 'separate' and isinstance(job['contactShadow'].get('assetId'), str), 'separate shadow required')
+    shadow = job['contactShadow']
+    require(shadow.get('mode') in ('baked', 'separate') and (shadow['mode'] != 'separate' or isinstance(shadow.get('assetId'), str) and bool(shadow['assetId'])), 'grounded baked or separate shadow required')
     calls = job['callBudget']
     require(all(type(calls.get(k)) is int and calls[k] >= 0 for k in ('limit', 'used')) and calls['used'] <= calls['limit'], 'invalid call budget')
     frames = job['frames']
@@ -77,6 +78,11 @@ def compile_job(job_path, mode):
         if mode != 'diagnostic':
             require(f['status'] == 'selected' and isinstance(f.get('custody'), str) and f['custody'], 'selected frame and custody required')
     require(len({f['phase'] for f in frames}) == len(frames) and [f['phase'] for f in frames] == sorted(f['phase'] for f in frames), 'phases must be unique and ordered')
+    require('identityMaster' not in job or job['schemaVersion'] == 2, 'identityMaster requires schema 2')
+    identity_pin = None
+    identity_master = None
+    if 'identityMaster' in job:
+        identity_master, identity_pin = pinned_image(job['identityMaster'], base, canvas)
     if mode == 'production':
         q = job.get('qualification', {})
         require(q.get('status') == 'qualified' and isinstance(q.get('record'), str) and q['record'], 'qualified record required')
@@ -84,6 +90,8 @@ def compile_job(job_path, mode):
         require(digest(record) == q.get('sha256'), 'qualification record SHA256 mismatch')
         qualification = json.loads(record)
         require(qualification.get('status') == 'qualified' and all(qualification.get(k) == job[k] for k in ('masterSHA', 'family', 'action', 'direction')) and qualification.get('frameSHAs') == [f['input']['sha256'] for f in frames], 'qualification does not bind this cycle')
+        if identity_pin is not None:
+            require(qualification.get('identityMasterSHA') == identity_pin['sha256'], 'qualification does not bind identity master')
         if job['action'] == 'attack':
             require(sum(e['name'] in ('WEAPON_CONTACT', 'FIRE_PROJECTILE', 'DEAL_DAMAGE') for f in frames for e in f.get('events', [])) == 1, 'production attack requires one WEAPON_CONTACT, FIRE_PROJECTILE or DEAL_DAMAGE event')
         if job['action'] == 'walk':
@@ -106,6 +114,8 @@ def compile_job(job_path, mode):
     require(memory <= BUDGET, 'decoded unique-page memory exceeds 128 MiB')
     master, master_pin = pinned_image(job['master'], base, canvas)
     require(job['masterSHA'] == master_pin['sha256'], 'master SHA mismatch')
+    identity_pin = identity_pin or master_pin
+    identity_master = identity_master if identity_master is not None else master
     images = [pinned_image(f['input'], base, canvas) for f in frames]
     target = (base / job['output']['directory']).resolve()
     require(not target.exists(), 'refuse overwrite output')
@@ -123,7 +133,7 @@ def compile_job(job_path, mode):
             descriptor_frames.append(dict(x=x, y=y, width=128, height=128, durationMs=frames[i]['durationMs'], source=pin, events=frames[i].get('events', [])))
         atlas.save(temporary / 'atlas.png')
         runtime = dict(path='atlas.png', width=size[0], height=size[1], sha256=digest((temporary / 'atlas.png').read_bytes()), rgbaSha256=digest(atlas.tobytes()), derivation=dict(method='atlas', filter='lanczos', sourceSha256=images[0][1]['sha256']))
-        descriptor = dict(identityMasterSHA=master_pin['sha256'], id=job['id'], family=job['family'], kind='unit', state=job['action'], direction=job['direction'], source=images[0][1], runtime=runtime, cell=job['cell'], pivot=pivot, render=render, contactShadow=job['contactShadow'], alphaPolicy='transparent', frames=descriptor_frames, candidate=True, review=dict(status='CANDIDATE'), loop=loop)
+        descriptor = dict(identityMasterSHA=identity_pin['sha256'], directionalMasterSHA=master_pin['sha256'], id=job['id'], family=job['family'], kind='unit', state=job['action'], direction=job['direction'], source=images[0][1], runtime=runtime, cell=job['cell'], pivot=pivot, render=render, contactShadow=job['contactShadow'], alphaPolicy='transparent', frames=descriptor_frames, candidate=True, review=dict(status='CANDIDATE'), loop=loop)
         if job['action'] == 'walk' and 'locomotion' in job:
             require(number(job['locomotion'].get('distancePerCycle')) and job['locomotion']['distancePerCycle'] > 0, 'invalid provisional locomotion distance')
             descriptor['locomotion'] = {**job['locomotion'], 'status': 'MEASURED' if mode == 'production' else 'PROVISIONAL'}
@@ -141,7 +151,7 @@ def compile_job(job_path, mode):
             contact.alpha_composite(thumb, (x, y))
             draw.text((x, y + 130), f"F{i} {frames[i]['status']}", fill='white')
         contact.save(temporary / 'contact-sheet.png')
-        master.resize((128, 128), Image.Resampling.LANCZOS).save(temporary / 'master-preview.png')
+        identity_master.resize((128, 128), Image.Resampling.LANCZOS).save(temporary / 'master-preview.png')
         previews = [image.resize((preview_size, preview_size), Image.Resampling.LANCZOS) for image, pin in images]
         previews[0].save(temporary / 'game-size.png', save_all=True, append_images=previews[1:], duration=[f['durationMs'] for f in frames], loop=0 if loop else 1, disposal=0, blend=0)
         (temporary / 'preview.html').write_text(Path(__file__).with_name('sprite-preview.html').read_text())
@@ -152,7 +162,7 @@ def compile_job(job_path, mode):
             raw = path.read_bytes()
             require(digest(raw) == entry['sha256'], 'bank descriptor SHA mismatch')
             asset = json.loads(raw)
-            require(asset.get('identityMasterSHA') == master_pin['sha256'], 'bank identity master SHA mismatch')
+            require(asset.get('identityMasterSHA') == identity_pin['sha256'], 'bank identity master SHA mismatch')
             require(asset['family'] == job['family'] and asset['state'] == job['action'] and asset['pivot'] == pivot and asset['render'] == render and (asset['source']['width'], asset['source']['height']) == canvas, 'bank changes identity layout/action')
             require(type(asset['direction']) is int and 0 <= asset['direction'] <= 7 and asset['direction'] not in directions, 'invalid or repeated bank direction')
             directions.add(asset['direction'])
@@ -162,7 +172,7 @@ def compile_job(job_path, mode):
             bank.append({'direction': asset['direction'], 'path': os.path.relpath(path, target)})
         require(len(bank) <= 8, 'bank allows at most eight directions')
         (temporary / 'preview-config.json').write_text(json.dumps({'zoom': zoom, 'mode': mode, 'bank': bank}) + '\n')
-        receipt = dict(schemaVersion=1, mode=mode, visualApproval=False, installAuthorized=False, master=master_pin, inputJobSHA256=digest(job_path.read_bytes()), decodedUniquePageBytes=memory, decodedBudgetBytes=BUDGET, frameStatuses=[f['status'] for f in frames], outputPins={p.relative_to(temporary).as_posix():digest(p.read_bytes()) for p in temporary.rglob('*') if p.is_file()})
+        receipt = dict(schemaVersion=1, mode=mode, visualApproval=False, installAuthorized=False, master=master_pin, identityMaster=identity_pin, inputJobSHA256=digest(job_path.read_bytes()), decodedUniquePageBytes=memory, decodedBudgetBytes=BUDGET, frameStatuses=[f['status'] for f in frames], outputPins={p.relative_to(temporary).as_posix():digest(p.read_bytes()) for p in temporary.rglob('*') if p.is_file()})
         (temporary / 'receipt.json').write_text(json.dumps(receipt, indent=2) + '\n')
         require(not target.exists(), 'refuse overwrite output')
         os.rename(temporary, target)

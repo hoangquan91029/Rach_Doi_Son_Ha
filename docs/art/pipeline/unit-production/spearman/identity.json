@@ -11,10 +11,12 @@
   "master": {
     "assetId": "spearman-idle-d0-400",
     "direction": 0,
-    "path": "docs/art/units/spearman-margin-400/spearman-idle-d0-256.png",
-    "sha256": "e82c30d4613b8ffaee04d639739ecb262d203b27d151d785e9204e16a0ac6c6c",
-    "rgbaSha256": "56651603cefcca86421784405c05b017b5f99b7192f7fa0022ac6b37454b23be",
-    "status": "existing source custody; no new view or motion approval"
+    "path": "docs/art/units/spearman-margin-400/imagegen-raw.png",
+    "sha256": "6baa9a7404680545eb396f04e43cdfdd97129416cea8c0144e95891344c69f37",
+    "rgbaSha256": "5cddac61b33097ca373f5c757504cd925607c6b0f6a1832168a2ae5613bbb44a",
+    "status": "Selected existing whole original identity source only; no motion/new-view approval",
+    "width": 1254,
+    "height": 1254
   },
   "views": [
     {
@@ -22,10 +24,12 @@
       "source": {
         "assetId": "spearman-idle-d0-400",
         "direction": 0,
-        "path": "docs/art/units/spearman-margin-400/spearman-idle-d0-256.png",
-        "sha256": "e82c30d4613b8ffaee04d639739ecb262d203b27d151d785e9204e16a0ac6c6c",
-        "rgbaSha256": "56651603cefcca86421784405c05b017b5f99b7192f7fa0022ac6b37454b23be",
-        "status": "existing source custody; no new view or motion approval"
+        "path": "docs/art/units/spearman-margin-400/imagegen-raw.png",
+        "sha256": "6baa9a7404680545eb396f04e43cdfdd97129416cea8c0144e95891344c69f37",
+        "rgbaSha256": "5cddac61b33097ca373f5c757504cd925607c6b0f6a1832168a2ae5613bbb44a",
+        "status": "Selected existing whole original identity source only; no motion/new-view approval",
+        "width": 1254,
+        "height": 1254
       },
       "status": "existing static source"
     },
@@ -141,5 +145,54 @@
   "weaponOwnership": null,
   "allowedReferences": [],
   "excludedReferencePaths": [],
-  "masterAuthority": "retained derived source; original master verification pending"
+  "masterAuthority": "original",
+  "retainedDerivedMaster": {
+    "assetId": "spearman-idle-d0-400",
+    "direction": 0,
+    "path": "docs/art/units/spearman-margin-400/spearman-idle-d0-256.png",
+    "sha256": "e82c30d4613b8ffaee04d639739ecb262d203b27d151d785e9204e16a0ac6c6c",
+    "rgbaSha256": "56651603cefcca86421784405c05b017b5f99b7192f7fa0022ac6b37454b23be",
+    "status": "existing source custody; no new view or motion approval"
+  },
+  "sourceCustody": {
+    "receipt": "docs/art/pipeline/original-identities-485/receipt.json",
+    "rawPivot": [
+      654,
+      1140
+    ],
+    "derivation": "Whole original Lanczos to retained derived canvas; decoded RGBA exact match",
+    "motionApproval": false,
+    "weaponOwnershipStatus": "Preserve exact original equipment/grips; anatomical side binding remains unresolved where registry weaponOwnership is null"
+  },
+  "layoutLock": {
+    "fixedCanvas": {
+      "width": 1254,
+      "height": 1254
+    },
+    "cell": {
+      "width": 128,
+      "height": 128
+    },
+    "pivot": {
+      "space": "source",
+      "x": 654,
+      "y": 1140
+    },
+    "render": {
+      "width": 42,
+      "height": 42
+    },
+    "contactShadow": {
+      "mode": "separate",
+      "assetId": "unit-contact-shadow"
+    },
+    "padding": 2,
+    "basis": {
+      "manifestPath": "public/assets/art-v1/fort-202-manifest.json",
+      "manifestSHA256": "77c75ef2bea8cff633b28fe8635e51b5a7efc151bb1871b5b5d9d17850d4271c",
+      "assetId": "spearman-idle-d0-400",
+      "conversion": "Whole source-coordinate normalization to retained original canvas; logical render unchanged"
+    },
+    "visualApproval": false
+  }
 }

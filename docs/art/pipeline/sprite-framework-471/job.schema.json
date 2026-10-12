@@ -356,6 +356,29 @@
         },
         "additionalProperties": false
       }
+    },
+    "identityMaster": {
+      "type": "object",
+      "properties": {
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "rgbaSha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      },
+      "required": [
+        "path",
+        "sha256",
+        "rgbaSha256"
+      ],
+      "description": "Optional schema2 whole original identity anchor, distinct from the directional master; same fixed canvas"
     }
   },
   "required": [
