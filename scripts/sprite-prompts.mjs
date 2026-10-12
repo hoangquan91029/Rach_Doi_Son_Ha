@@ -3,7 +3,7 @@ import path from 'node:path';
 import {createHash} from 'node:crypto';
 import {actionSpec} from '../shared/unit-action-spec.js';
 const common=['identity','master','direction','camera','screenFacing','weaponOwnership','referenceRoles','invariants'];
-export const TEMPLATE_FIELDS=Object.freeze({view:[...common],key:[...common,'action','phase','support','movingParts','bodyMotion','equipmentMotion','nextKey'],inbetween:[...common,'action','phase','neighbors','support','movingParts','bodyMotion','equipmentMotion','nextKey'],correction:[...common,'action','phase','defect','neighbors','movingParts','bodyMotion','equipmentMotion','nextKey'],worker_order:[...common,'action','phase','budget','ownership','movingParts','bodyMotion','equipmentMotion','nextKey']});
+export const TEMPLATE_FIELDS=Object.freeze({view:[...common],key:[...common,'action','phase','support','movingParts','bodyMotion','equipmentMotion','nextKey'],guide_key:[...common,'action','phase','support','movingParts','bodyMotion','equipmentMotion','nextKey'],inbetween:[...common,'action','phase','neighbors','support','movingParts','bodyMotion','equipmentMotion','nextKey'],correction:[...common,'action','phase','defect','neighbors','movingParts','bodyMotion','equipmentMotion','nextKey'],worker_order:[...common,'action','phase','budget','ownership','movingParts','bodyMotion','equipmentMotion','nextKey']});
 export function renderPrompt(kind,values){
  const fields=TEMPLATE_FIELDS[kind];if(!fields)throw Error('Unknown prompt kind');
  if(Object.keys(values).some(k=>!fields.includes(k)))throw Error('Unexpected placeholder');
@@ -43,8 +43,11 @@ export function validatePromptReferences(kind,values,references,registry,order=n
  }else if(!registry.weaponOwnership||values.weaponOwnership!==registry.weaponOwnership)throw Error('Weapon ownership lock missing or mismatched');
  if(order?.jobKind==='action')validateJobBinding(order.job,registry,values);
  const same=(a,b)=>a&&b&&a.sha256===b.sha256&&path.resolve(a.path)===path.resolve(b.path);
- const primary=references[0],editing=primary.role==='edittarget';
- const anchor=editing?references[1]:primary;
+ const primary=references[0],editing=primary.role==='edittarget',guiding=primary.role==='guidetarget';
+ if(kind==='guide_key'||guiding||order?.referenceMode==='guide-first'){
+  if(kind!=='guide_key'||!guiding||order?.jobKind!=='action'||order.status!=='OPEN'||order.referenceMode!=='guide-first'||!references[1])throw Error('Guide target requires guide_key and OPEN typed guide-first action order');
+ }
+ const anchor=editing||guiding?references[1]:primary;
  if(editing&&primary.status!==undefined&&primary.status!=='selected')throw Error('Held or unselected edit target');
  if(editing&&(!['key','correction'].includes(kind)||!anchor))throw Error('Edit target requires key/correction and appearance anchor');
  if(anchor.role==='originalmaster'){if(registry.masterAuthority!=='original'||!same(anchor,registry.master))throw Error('Original master binding mismatch');if(kind!=='view'&&registry.master.direction!==d)throw Error('Target direction requires selected matching view');}
@@ -57,6 +60,10 @@ export function validatePromptReferences(kind,values,references,registry,order=n
   if(pin===anchor)continue;
   if(pin.role==='adjacentview'){const adjacent=registry.views.find(v=>v.direction===pin.direction);if(kind!=='view'||!Number.isInteger(pin.direction)||![(d+7)%8,(d+1)%8].includes(pin.direction)||adjacent?.status!=='selected'||!same(pin,adjacent.source))throw Error('Selected adjacent view binding mismatch');continue;}
   const neighbor=pin.role==='neighbor'||pin===primary&&editing;
+  if(pin.role==='guidetarget'){
+   if(pin!==primary||!guiding)throw Error('Guide target must be primary');
+   validateGuideTarget(pin,anchor,registry,order,values,same);continue;
+  }
   const allowed=(registry.allowedReferences||[]).find(a=>same(pin,a)&&(pin.role===a.role||pin===primary&&editing&&a.role==='neighbor')&&(!neighbor||pin.jobId===a.jobId&&pin.frame===a.frame&&pin.phase===a.phase));
   if(!allowed||['held','rejected'].includes(allowed.status))throw Error('Unregistered or held reference (neighbor frame/phase/current job mismatch)');
   if(pin.role==='neighbor'||pin===primary&&editing){
@@ -77,6 +84,30 @@ export function validatePromptReferences(kind,values,references,registry,order=n
  }
  if(values.referenceRoles!==references.map(p=>p.role).join(','))throw Error('Reference role listing mismatch');
  return references.map(pin=>path.resolve(pin.path));
+}
+
+/** Source-bound authoring metadata checks, never visual truth or image-call permission. */
+function validateGuideTarget(pin,anchor,registry,order,values,same){
+ const binding=validateJobBinding(order.job,registry,values),guide=order.poseGuide;
+ const exact=a=>a&&a.jobId===binding.id&&a.frame===pin.frame&&a.phase===pin.phase;
+ if(pin.status!==undefined&&pin.status!=='authoring-only')throw Error('Guide target held or not authoring-only');
+ if(!Number.isInteger(pin.frame)||String(pin.phase)!==values.phase||!exact(pin)||!exact(guide)||!same(pin,guide)||guide.role!=='guidetarget')throw Error('Guide target order frame/phase/current job mismatch');
+ const job=JSON.parse(fs.readFileSync(binding.path));
+ if(job.frames?.[pin.frame]?.phase!==pin.phase)throw Error('Guide target current job frame/phase mismatch');
+ const slot=order.slots[pin.frame];
+ if(!slot||slot.frame!==pin.frame||slot.phase!==pin.phase||slot.template!=='guide_key'||slot.status!=='pending')throw Error('Guide target pending slot mismatch');
+ const allowed=(registry.allowedReferences||[]).filter(a=>same(pin,a)&&a.role==='guidetarget'&&exact(a));
+ if(allowed.length!==1||allowed[0].status!=='authoring-only')throw Error('Guide target unregistered or held');
+ const registered=allowed[0];
+ if(registered.derivedFromSHA!==registry.master?.sha256||!registered.provenance||!same(registered.provenance,guide.provenance)||!same(registered.provenance,pin.provenance))throw Error('Guide target original provenance binding missing');
+ validateMaster(registered.provenance);validateMaster(registry.master);
+ const provenance=JSON.parse(fs.readFileSync(registered.provenance.path));
+ if(provenance.schema!=='rds-guide-target/v1'||provenance.kind!=='whole-clothed-authoring'||provenance.sourcePixelUse!==false||provenance.identity!==values.identity||provenance.action!==values.action||provenance.direction!==Number(values.direction)||!exact(provenance))throw Error('Guide target structured provenance mismatch');
+ if(!same(provenance.input?.originalMaster,registry.master)||!same(provenance.input?.appearance,anchor)||!same(provenance.output,pin))throw Error('Guide target provenance input/output binding mismatch');
+ for(const source of [provenance.input.originalMaster,provenance.input.appearance,provenance.output]){
+  if(registry.excludedReferencePaths?.some(p=>path.resolve(p)===path.resolve(source.path)))throw Error('Excluded guide provenance source');
+  validateMaster(source);
+ }
 }
 
 /** Pure finite-slot checks; preparation still requires the trusted on-disk ledger. */

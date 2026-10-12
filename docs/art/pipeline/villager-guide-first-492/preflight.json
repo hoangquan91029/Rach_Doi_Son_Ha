@@ -1,0 +1,91 @@
+{
+  "schema": "rds-agent-preflight/v1",
+  "task": "art",
+  "head": "d3691858c486d2aaf5b2c05babe7045c0d8b5451",
+  "status": "?? docs/art/pipeline/villager-guide-first-492/",
+  "readFiles": [
+    {
+      "path": "docs/agent-read-contract.json",
+      "sha256": "5e85c1c9a649aa6d71d03f6dd2b69a4e54f6b77c80f157a26e648a07f8ec3f99",
+      "bytes": 986
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "f157cd34b996be9b37e4a7d26f6417592dad55129d077c2524d57b7170aeda88",
+      "bytes": 7405
+    },
+    {
+      "path": "docs/PROJECT_STATE.md",
+      "sha256": "385d50f8c49f84835f3b687c8284e00516a14002f905684ee6e5a056b282b8cd",
+      "bytes": 6198
+    },
+    {
+      "path": "docs/NEXT_STEPS.md",
+      "sha256": "3ca78eef4d94e502e8f2a3652ef1b45b9a1ac3a83319d840865764f7dc2a66a8",
+      "bytes": 2262
+    },
+    {
+      "path": "docs/ARCHITECTURE_DECISIONS.md",
+      "sha256": "0b2b348bff0b0ffa6305e1aebf9d713faca7b9b10fb913df81640758ce1389c8",
+      "bytes": 2157
+    },
+    {
+      "path": "docs/art/ART_DIRECTION.md",
+      "sha256": "d64614e926465c0d540606634a25aeabc4f5364d6be7ced210eeab3182ffd429",
+      "bytes": 3087
+    },
+    {
+      "path": "docs/art/pipeline/ANIMATION_CONTRACT.md",
+      "sha256": "984b795f11438af7dc4be8c91bb168c1320605b4b90188801dcf3c2923e2e2f8",
+      "bytes": 6004
+    },
+    {
+      "path": "docs/art/pipeline/SPRITE_PRODUCTION_WORKFLOW.md",
+      "sha256": "f01c6ef46383841e1321cdf9e8df8990c4764cb509381554fc4e596f4c176895",
+      "bytes": 6005
+    },
+    {
+      "path": "docs/art/pipeline/IMAGE_GENERATION_TEMPLATES.md",
+      "sha256": "aa75599552b8c5d43dfe4486292a85577b9cf4f5f0bffcf0da3a97db8af50d92",
+      "bytes": 7049
+    },
+    {
+      "path": "docs/art/pipeline/ANIMATION_ARCHETYPES.md",
+      "sha256": "165869e44eb58c6b37a0e29e1f461fd7c5dd36c73e1afb595742865e2299f43b",
+      "bytes": 2812
+    },
+    {
+      "path": "docs/art/pipeline/ASSET_QA.md",
+      "sha256": "7ad426a1a2b9d8fd10ae56aa7897fc19be67d3b00a40fac3987e1ef07cd66418",
+      "bytes": 3343
+    },
+    {
+      "path": "docs/art/pipeline/REVIEW_PRIORITY_20261008.md",
+      "sha256": "cacc2b746cb7360d4d6c9dba0b94d55dea0530e43402d60a891b3711e3c1a525",
+      "bytes": 960
+    }
+  ],
+  "sources": [
+    {
+      "path": "scripts/sprite-prompts.mjs",
+      "sha256": "8e70d12975523a5ea44b403920e0569870ea92ddad023dbdb524eb924af6e5d4",
+      "bytes": 11999
+    },
+    {
+      "path": "scripts/sprite-order-run.mjs",
+      "sha256": "2055fc537344cfbb1bc725c70414183ff2c93de5a64acb975bf99ead62eefb42",
+      "bytes": 4082
+    }
+  ],
+  "ledger": {
+    "path": "docs/art/pipeline/unit-production/order-ledger.json",
+    "sha256": "7c29f43ab97863c82644f22ca5e11cd1239e4a72595557a80d0071fd6a0d3550",
+    "locked": false,
+    "unresolvedClaims": []
+  },
+  "limits": [
+    "Existence and byte hashes do not establish understanding, permission, approval or tool availability.",
+    "Explicit invocation only; this helper is not a mandatory global hook.",
+    "Externally verify tools and actual live handles/preservation guards; no guards are declared closed."
+  ]
+}

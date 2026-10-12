@@ -1,0 +1,244 @@
+{
+  "schema": "rds-independent-method-intake/v1",
+  "status": "RECOMMEND_ONE_INITIAL_DIFFERENT_CONTROL_PROBE",
+  "reviewer": "guide_intake492",
+  "purpose": "Independent distinction intake for guide-primary whole illustration, not output acceptance or call authorization",
+  "exclusiveOutput": "docs/art/pipeline/villager-guide-first-492/independent-intake.json",
+  "inputHEAD": "d3691858c486d2aaf5b2c05babe7045c0d8b5451",
+  "inputPins": [
+    {
+      "path": "docs/art/pipeline/villager-guide-first-492/method-intake.json",
+      "sha256": "bdc61f5f34c8c09c59353f6365ca096bb462ac7a680ed566eb994bc3a042da7a"
+    },
+    {
+      "path": "docs/art/pipeline/villager-guide-first-492/guide-target-provenance.json",
+      "sha256": "b0d380521b6b0c6c7790e9bb8d6b7d6cc926a91f028b232e3452e0ecf6b2b98a"
+    },
+    {
+      "path": "docs/art/pipeline/villager-guide-first-492/job.json",
+      "sha256": "e6cdb058bad63d961729f713f0b7ea163d90afedc34d55e03fef54e5b65e8663"
+    },
+    {
+      "path": "docs/art/pipeline/villager-pose-control-491/trial-review.json",
+      "sha256": "080976233e8cbcc7ce8bf8ff407a86c2b64960d404586b5a0ce07c6b5708d702"
+    },
+    {
+      "path": "docs/art/pipeline/villager-pose-control-491/CHECKPOINT.json",
+      "sha256": "63e98958534cc7f0446a69769a3f2d0a40deeae69affe953dd70542df7d656b8"
+    },
+    {
+      "path": "docs/art/pipeline/villager-pose-control-491/guide/F2.png",
+      "sha256": "cad740daf00c33a47a41ef41e0509ab817db4cd8dc8a5c3e485d7502c3568c1c"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+    }
+  ],
+  "preflight": {
+    "schema": "rds-agent-preflight/v1",
+    "task": "art",
+    "head": "d3691858c486d2aaf5b2c05babe7045c0d8b5451",
+    "status": " M scripts/sprite-prompts.mjs\n?? docs/art/pipeline/unit-production/templates/guide_key.txt\n?? docs/art/pipeline/villager-guide-first-492/\n?? tests/sprite-guide-target.test.js",
+    "readFiles": [
+      {
+        "path": "docs/agent-read-contract.json",
+        "sha256": "5e85c1c9a649aa6d71d03f6dd2b69a4e54f6b77c80f157a26e648a07f8ec3f99",
+        "bytes": 986
+      },
+      {
+        "path": "AGENTS.md",
+        "sha256": "f157cd34b996be9b37e4a7d26f6417592dad55129d077c2524d57b7170aeda88",
+        "bytes": 7405
+      },
+      {
+        "path": "docs/PROJECT_STATE.md",
+        "sha256": "385d50f8c49f84835f3b687c8284e00516a14002f905684ee6e5a056b282b8cd",
+        "bytes": 6198
+      },
+      {
+        "path": "docs/NEXT_STEPS.md",
+        "sha256": "3ca78eef4d94e502e8f2a3652ef1b45b9a1ac3a83319d840865764f7dc2a66a8",
+        "bytes": 2262
+      },
+      {
+        "path": "docs/ARCHITECTURE_DECISIONS.md",
+        "sha256": "0b2b348bff0b0ffa6305e1aebf9d713faca7b9b10fb913df81640758ce1389c8",
+        "bytes": 2157
+      },
+      {
+        "path": "docs/art/ART_DIRECTION.md",
+        "sha256": "d64614e926465c0d540606634a25aeabc4f5364d6be7ced210eeab3182ffd429",
+        "bytes": 3087
+      },
+      {
+        "path": "docs/art/pipeline/ANIMATION_CONTRACT.md",
+        "sha256": "984b795f11438af7dc4be8c91bb168c1320605b4b90188801dcf3c2923e2e2f8",
+        "bytes": 6004
+      },
+      {
+        "path": "docs/art/pipeline/SPRITE_PRODUCTION_WORKFLOW.md",
+        "sha256": "f01c6ef46383841e1321cdf9e8df8990c4764cb509381554fc4e596f4c176895",
+        "bytes": 6005
+      },
+      {
+        "path": "docs/art/pipeline/IMAGE_GENERATION_TEMPLATES.md",
+        "sha256": "aa75599552b8c5d43dfe4486292a85577b9cf4f5f0bffcf0da3a97db8af50d92",
+        "bytes": 7049
+      },
+      {
+        "path": "docs/art/pipeline/ANIMATION_ARCHETYPES.md",
+        "sha256": "165869e44eb58c6b37a0e29e1f461fd7c5dd36c73e1afb595742865e2299f43b",
+        "bytes": 2812
+      },
+      {
+        "path": "docs/art/pipeline/ASSET_QA.md",
+        "sha256": "7ad426a1a2b9d8fd10ae56aa7897fc19be67d3b00a40fac3987e1ef07cd66418",
+        "bytes": 3343
+      },
+      {
+        "path": "docs/art/pipeline/REVIEW_PRIORITY_20261008.md",
+        "sha256": "cacc2b746cb7360d4d6c9dba0b94d55dea0530e43402d60a891b3711e3c1a525",
+        "bytes": 960
+      }
+    ],
+    "sources": [
+      {
+        "path": "docs/art/pipeline/villager-guide-first-492/job.json",
+        "sha256": "e6cdb058bad63d961729f713f0b7ea163d90afedc34d55e03fef54e5b65e8663",
+        "bytes": 6311
+      }
+    ],
+    "ledger": {
+      "path": "docs/art/pipeline/unit-production/order-ledger.json",
+      "sha256": "7c29f43ab97863c82644f22ca5e11cd1239e4a72595557a80d0071fd6a0d3550",
+      "locked": false,
+      "unresolvedClaims": []
+    },
+    "limits": [
+      "Existence and byte hashes do not establish understanding, permission, approval or tool availability.",
+      "Explicit invocation only; this helper is not a mandatory global hook.",
+      "Externally verify tools and actual live handles/preservation guards; no guards are declared closed."
+    ]
+  },
+  "actualTools": [
+    "exec_command: read contracts, Git status/diff, preflight, SHA256 checks and exclusive receipt write",
+    "functions.image: ONE in-memory 71px whole-canvas guide/South comparison via Pillow; no source mutation"
+  ],
+  "observations": [
+    {
+      "status": "VERIFIED",
+      "method": "ONE brief 71px whole-canvas still comparison",
+      "evidence": "491 guide/F2.png alongside originalSouth raw.png",
+      "observation": "Guide shows the recognizable hat, light tunic, dark sash/shorts and sandals as complete clothed authoring composition. Its feet are much closer in passing alignment under the body than the broad neutral South stance. Vector simplification remains obvious; originalSouth must supply finished person and appearance. No broad visible identity/composition blocker for a bounded probe at this size."
+    },
+    {
+      "status": "VERIFIED",
+      "method": "Read492 method-intake/job/provenance plus shared guide_key template and sprite-prompts diff",
+      "observation": "Concrete proposed hierarchy changes primary target to existing whole-clothed F2 guide, with South original second for appearance; no old walk frame is attached by this recipe. F2 is missing/null in the new job; historical other slots remain source selections, not calls."
+    },
+    {
+      "status": "DOCUMENTED_ONLY",
+      "evidence": "491 trial-review.json and CHECKPOINT.json",
+      "observation": "491 target-first trial kept wrong split-foot silhouette and was HELD, closed one call zero retries. This review does not replay its visual audit."
+    },
+    {
+      "status": "VERIFIED",
+      "method": "Hash all eight original490 paths against source-selection pins",
+      "observation": "All eight original source bytes remain present and identical; F2 missing qualification does not delete original F2."
+    }
+  ],
+  "decision": {
+    "recommendation": "ONE_INITIAL_DIFFERENT_CONTROL_PROBE",
+    "reason": "Editing the complete pose composition first and assigning the South reference appearance-only removes the old walk frame as the competing edited composition. This is a concrete distinct input hierarchy, not a renamed current-frame correction. One probe can test whether the built-in whole illustration follows this hierarchy; input priority alone cannot force geometry.",
+    "proposedCallCap": 1,
+    "proposedCorrectionCap": 0,
+    "additionalCallsAuthorizedByReviewer": 0,
+    "rootOwnsFiniteLedger": true,
+    "historicalCapsReset": false,
+    "historicalOrdersReopened": false,
+    "otherFramesCalled": false,
+    "nextDependency": "Root completes/validates concrete reference contract and finite ledger before any prepareOrder/durableclaim/call. Preserve old491/009/013/Infantry caps. Actual returned pose decides HELD or candidate; no automatic descendants."
+  },
+  "preservedOriginalFrames": [
+    {
+      "frame": 0,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/authoring-tools/villager-walk-SOUTH-007/walk/keys/F00-left-contact-01/raw.png",
+      "sha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001",
+      "matches490": true
+    },
+    {
+      "frame": 1,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-011/F1-inbetween-01/raw.png",
+      "sha256": "1306a28e6424d6f9c1d547ee3c68bff22a93e544bd9264117514b3cc10b96356",
+      "matches490": true
+    },
+    {
+      "frame": 2,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-010/F2-right-passing-01/raw.png",
+      "sha256": "bd2679353741d51575a99ccd0ded835281d0688abb1018146ed60d3077cc2b1c",
+      "matches490": true
+    },
+    {
+      "frame": 3,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-011/F3-inbetween-01/raw.png",
+      "sha256": "b7201ddf0e9e791b708835fd52a278af5c9487a2ee1a9c9592fa42d6b3e12687",
+      "matches490": true
+    },
+    {
+      "frame": 4,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-009/F4-trailing-contact-correction-01/raw.png",
+      "sha256": "929b9805f696abf341b8ea9b4df425a753da2c48b1be9ca13282bb5c72e0793f",
+      "matches490": true
+    },
+    {
+      "frame": 5,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-011/F5-inbetween-01/raw.png",
+      "sha256": "9db20e4f44a57dfe0c801673b6e18c41350b44c88d486933d03d7dd359f90b36",
+      "matches490": true
+    },
+    {
+      "frame": 6,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-010/F6-left-passing-01/raw.png",
+      "sha256": "6ed3e9b8f0693441c457038e748789496421cefe3e02c696b6956fa074f34822",
+      "matches490": true
+    },
+    {
+      "frame": 7,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-013/F7-spacing-correction-01/raw.png",
+      "sha256": "716902cbeeb96793da81583548b736bd0c9ab735922398ac5728c574d680f479",
+      "matches490": true
+    }
+  ],
+  "unknowns": [
+    "Actual finished anatomy and identity retention of unreturned output",
+    "Observed physical support intervals and world contact",
+    "Real illustrated stride/cadence and continuous seam",
+    "Whether built-in tool follows guide geometry or preserves vector styling",
+    "Runtime and owner approval"
+  ],
+  "claimsNotMade": [
+    "finished art PASS",
+    "motion approval",
+    "world foot lock",
+    "stride qualification",
+    "eight-direction completion",
+    "owner approval",
+    "production/release approval"
+  ],
+  "handles": {
+    "imageCalls": 0,
+    "testsRun": 0,
+    "browserServerHandlesOpened": 0,
+    "liveLedgerObserved": {
+      "locked": false,
+      "unresolvedClaims": []
+    },
+    "worker": "This exclusive reviewer only; parent owns other live handles"
+  },
+  "limitations": [
+    "Single still intake at rounded70.56px whole canvas, not body height",
+    "No detailed anatomy/cloth/pixel scoring or continuous loop observed",
+    "Method recipe and guard inspection does not substitute for successful prepareOrder or call authority"
+  ]
+}

@@ -178,6 +178,12 @@
       "sha256": "e3bfb1a2863d8304df51017bb04e3d4354207a999e97573c446185036ab66ba6",
       "status": "held",
       "reason": "491 newwholeclothed pose-control not followed; no meaningful passing repair"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-guide-first-492/trial-F2-raw.png",
+      "sha256": "900ba5d184b37f6374a1953e3796bd828022a6f9e1b32be8d4365bcc7a21b650",
+      "status": "held",
+      "reason": "492 guide-first fails closepassing and fixedupperbody/hat scale"
     }
   ],
   "review": "No new approval inferred from registry",
@@ -239,10 +245,25 @@
         "sha256": "0f84e8e89778c596aced1e4eef6dee69a2bf2e1ce96f8bcfc7c10bb6c4bf0431"
       },
       "status": "authoring-only"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pose-control-491/guide/F2.png",
+      "sha256": "cad740daf00c33a47a41ef41e0509ab817db4cd8dc8a5c3e485d7502c3568c1c",
+      "role": "guidetarget",
+      "status": "authoring-only",
+      "jobId": "villager-D1-guide-first-492",
+      "frame": 2,
+      "phase": 0.25,
+      "provenance": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-guide-first-492/guide-target-provenance.json",
+        "sha256": "b0d380521b6b0c6c7790e9bb8d6b7d6cc926a91f028b232e3452e0ecf6b2b98a"
+      },
+      "derivedFromSHA": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94"
     }
   ],
   "excludedReferencePaths": [
-    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pose-control-491/trial-F2-raw.png"
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pose-control-491/trial-F2-raw.png",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-guide-first-492/trial-F2-raw.png"
   ],
   "masterAuthority": "original",
   "layoutLock": {
@@ -301,9 +322,18 @@
       "variant": "whole-contour-stance-method-trial",
       "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pose-control-491/trial-job.json",
       "sha256": "9b99a994661159072381da0b1f944cc0b0fb1824e1581d6bef771668f072c10f"
+    },
+    {
+      "id": "villager-D1-guide-first-492",
+      "action": "walk",
+      "direction": 1,
+      "variant": "guide-primary-whole-illustration",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-guide-first-492/job.json",
+      "sha256": "e6cdb058bad63d961729f713f0b7ea163d90afedc34d55e03fef54e5b65e8663"
     }
   ],
   "productionOrders": [
-    "villager-D1-whole-clothed-control-491-F2-ONE"
+    "villager-D1-whole-clothed-control-491-F2-ONE",
+    "villager-D1-guide-first-492-F2-ONE"
   ]
 }

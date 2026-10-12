@@ -101,3 +101,9 @@ source-bound receipt, read preflight and next dependency. Never self-approve art
 ## Record actual tool behavior
 
 A claimed request keeps actual ordered paths, prompt version/text hash, slot/phase, generator name, returned output mapping and raw bytes. Model/seed/timestamp stay null if not supplied by the tool. Never infer a model ID from marketing names or the worker model. A receipt records what was sent/returned, not only what the prompt intended. Helper acceptance does not grant image-call permission by itself.
+
+## Implemented guide-first variant492
+
+Use executable `unit-production/templates/guide_key.txt` only with a registered typed `referenceMode:guide-first` order. Image1 is a source-bound whole-clothed `guidetarget`; image2 is original matching master or selected matching view for appearance. No original walking edit-target is required. Do not promote a held frame, foreign guide or arbitrary primary image into this role. Structured `rds-guide-target/v1` provenance and exact job/phase/pending slot are mandatory; prepareOrder and durableclaim still apply.
+
+Request one whole illustrated original person in the guide pose, with original face, clothing, camera, bodyvolume and material rendering. Guide vector/personstyle is not finalstyle, and its pixels cannot be spliced/warped into runtime art. Actual492probe did **not** follow passing/scale sufficiently; this is a legal reference recipe, not a pose-control guarantee or permission to retry.

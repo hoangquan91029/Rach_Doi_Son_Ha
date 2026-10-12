@@ -41,3 +41,9 @@ Keep existing schema2 compiler jobs and runtime schema1 descriptors. Whole rawâ†
 Record availability(candidate/selected/held), technical, motion, runtime, owner and release separately. PASS requires nonempty pinned evidence; existence of that evidence still does not establish its truth. Unknown generator/model/time stays null. Mirror source is always null. Source hashes and actual ordered references are immutable. Historical records must not be silently upgraded.
 
 Provenance JSONL starts with a clearly scoped seed, not a claim that all legacy assets are indexed. Coverage counts exact animation/sharedclip/staticfallback/missing/N/A; fallback never closes the required bank. Root controls selection and manifest promotion after independent review.
+
+## Guide-first authoring reference contract492
+
+`guide_key` uses the strict key fields. `guidetarget` must be primary in a typed OPEN action order with `referenceMode:guide-first` and exact `poseGuide` job/frame/phase/provenance pin. Second input is original matching master or selected matching view, preserving identity authority. Registered guide status is authoring-only, derived from original master. `rds-guide-target/v1` binds identity/action/direction/job/frame/phase, originalMaster, appearance, output and sourcePixelUse=false. Hash checks cover actual original/appearance/guide/provenance. `preparePrompt` without an order cannot prepare this route; durableclaim still precedes dispatch. Existing held/excluded/edit-target/view/neighbor safeguards remain.
+
+This metadata proves declared byte relationships only. Actual492ONE trial is HELD for passing/scale; guide-first is implemented but **not motion-qualified**. No new call/production authorization comes from this section.

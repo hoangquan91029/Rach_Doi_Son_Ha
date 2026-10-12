@@ -1,6 +1,6 @@
 # Reusable whole2D production workflow
 
-One folder per unit/action/direction job; one frame ledger and append-only output custody. No new document set per frame. Five template types already exist; enrich shared data, not one-off compiler/harness code.
+One folder per unit/action/direction job; one frame ledger and append-only output custody. No new document set per frame. Shared templates include the original five types plus explicit guide-first `guide_key`; enrich shared data, not one-off compiler/harness code.
 
 | Step | Input / precondition | Output / completion | Failure handling |
 |---|---|---|---|
@@ -44,3 +44,5 @@ A artpilot, B tooling, C independentreview/spec, rootintegration. Only afterpilo
 P1 implemented489: explicit view/action finite dispatch, job-specific source lookup, equipment pins and unknown/N/A restrictions. See [registry guide](unit-production/README.md). Empty hands in idle are not a tool definition. New imagery still requires a trusted registered order and durable claim.
 
 The reused Villager490 walk passed source/layout/playback/UI checks but was rejected by owner at actual size. Do not use its technical receipt to close motion. Inspect [budget intake](villager-qualification-490/budget-intake.json) before another method; similar old passing-outline retries cannot reset caps. A new whole-clothed control must resolve physical lanes and contact travel in the real projection. [Projection intake](villager-qualification-490/projection-intake.json) computes the travel demanded by provisional1.26; foot landmarks remain unmeasured, so it grants no stride or motion approval.
+
+492 adds a legal guide-first branch to shared dispatch. It separates original appearance from primary whole-clothed guide, with exact provenance/job/phase checks. One actual probe is HELD: input ordering alone did not achieve passing or stable upperbody scale. Both491/492 controls remain unqualified; original source/caps/owner rejection stand. Do not call the same methods again under a new package name. [Current receipt](villager-guide-first-492/CHECKPOINT.json).

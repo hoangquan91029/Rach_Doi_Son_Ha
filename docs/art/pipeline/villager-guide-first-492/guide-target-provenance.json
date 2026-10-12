@@ -1,0 +1,43 @@
+{
+  "schema": "rds-guide-target/v1",
+  "kind": "whole-clothed-authoring",
+  "status": "AUTHORING_ONLY_UNQUALIFIED",
+  "identity": "villager",
+  "action": "walk",
+  "direction": 1,
+  "jobId": "villager-D1-guide-first-492",
+  "frame": 2,
+  "phase": 0.25,
+  "input": {
+    "originalMaster": {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+      "rgbaSha256": "c960d206222a191b903a8cc1a679e82bdce8d8c51df4010a935f444b3cacdb9c"
+    },
+    "appearance": {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "rgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6"
+    }
+  },
+  "output": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pose-control-491/guide/F2.png",
+    "sha256": "cad740daf00c33a47a41ef41e0509ab817db4cd8dc8a5c3e485d7502c3568c1c"
+  },
+  "sourcePixelUse": false,
+  "sourceGuideProvenance": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pose-control-491/guide-provenance.json",
+    "sha256": "0f84e8e89778c596aced1e4eef6dee69a2bf2e1ce96f8bcfc7c10bb6c4bf0431"
+  },
+  "authoringControl": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pose-control-491/control.json",
+    "sha256": "dfa57aad048e5fcf299d15f2d49e4153fb1d84e2035b88847a442b439c7479ea"
+  },
+  "scope": "Existing whole-clothed491 F2 guide reused unchanged; explicit primary pose role in NEW492 method probe, not finished image authority",
+  "limitations": [
+    "No observed support intervals or stride qualification",
+    "OriginalSouth determines same appearance, guide camera/layout intent still handwritten",
+    "Primary guide content is not final style/personface; output requires finishedwholeillustration",
+    "No new guide regeneration or oldcapreset"
+  ]
+}

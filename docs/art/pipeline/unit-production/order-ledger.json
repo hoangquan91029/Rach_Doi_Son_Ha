@@ -436,6 +436,134 @@
       "callsRemaining": 0,
       "closed": true,
       "closure": "ONE call consumed; illustration retained old split-foot pose rather than whole-clothed passing control. Independent trial-review HELD, zero retries, no dependent calls, no source selection/install."
+    },
+    {
+      "id": "villager-D1-guide-first-492-F2-ONE",
+      "jobKind": "action",
+      "identity": "villager",
+      "action": "walk",
+      "direction": 1,
+      "job": {
+        "id": "villager-D1-guide-first-492",
+        "action": "walk",
+        "direction": 1,
+        "variant": "guide-primary-whole-illustration",
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-guide-first-492/job.json",
+        "sha256": "e6cdb058bad63d961729f713f0b7ea163d90afedc34d55e03fef54e5b65e8663"
+      },
+      "referenceMode": "guide-first",
+      "poseGuide": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pose-control-491/guide/F2.png",
+        "sha256": "cad740daf00c33a47a41ef41e0509ab817db4cd8dc8a5c3e485d7502c3568c1c",
+        "role": "guidetarget",
+        "status": "authoring-only",
+        "jobId": "villager-D1-guide-first-492",
+        "frame": 2,
+        "phase": 0.25,
+        "provenance": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-guide-first-492/guide-target-provenance.json",
+          "sha256": "b0d380521b6b0c6c7790e9bb8d6b7d6cc926a91f028b232e3452e0ecf6b2b98a"
+        }
+      },
+      "status": "HELD_GUIDE_FIRST_POSE_AND_SCALE",
+      "callLimit": 1,
+      "callsUsed": 1,
+      "correctionCap": 0,
+      "correctionsUsed": 0,
+      "slots": [
+        {
+          "frame": 0,
+          "phase": 0,
+          "status": "selected",
+          "kind": "initial",
+          "template": "key"
+        },
+        {
+          "frame": 1,
+          "phase": 0.125,
+          "status": "selected",
+          "kind": "initial",
+          "template": "key"
+        },
+        {
+          "frame": 2,
+          "phase": 0.25,
+          "status": "held",
+          "kind": "initial",
+          "template": "guide_key",
+          "claim": {
+            "token": "1f4b0e65-eb7b-436f-93f3-b56c2e8a5b71",
+            "requestSHA": "0c3a80f7bb7b6d34a1dd2abc64e1e7b4408b9bad7f023cbff7dbf9f01458b952",
+            "claimedAt": "2026-10-12T15:40:19.906Z"
+          },
+          "settlement": {
+            "token": "1f4b0e65-eb7b-436f-93f3-b56c2e8a5b71",
+            "settledAt": "2026-10-12T15:41:54.054Z",
+            "output": {
+              "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-guide-first-492/trial-F2-raw.png",
+              "sha256": "900ba5d184b37f6374a1953e3796bd828022a6f9e1b32be8d4365bcc7a21b650"
+            },
+            "approval": false
+          }
+        },
+        {
+          "frame": 3,
+          "phase": 0.375,
+          "status": "selected",
+          "kind": "initial",
+          "template": "key"
+        },
+        {
+          "frame": 4,
+          "phase": 0.5,
+          "status": "selected",
+          "kind": "initial",
+          "template": "key"
+        },
+        {
+          "frame": 5,
+          "phase": 0.625,
+          "status": "selected",
+          "kind": "initial",
+          "template": "key"
+        },
+        {
+          "frame": 6,
+          "phase": 0.75,
+          "status": "selected",
+          "kind": "initial",
+          "template": "key"
+        },
+        {
+          "frame": 7,
+          "phase": 0.875,
+          "status": "selected",
+          "kind": "initial",
+          "template": "key"
+        }
+      ],
+      "executionSequence": [
+        2
+      ],
+      "scope": "ONE missingF2 whole originalidentity illustration probe; no oldwalkframe attached, no descendantcall/correction/install/fanout",
+      "changedControl": "Primary pose target authoredwholeclothedguide; appearance second originalSouth, rather than491actualoldF2 edit target. New explicit reference contract, not weakened edittargetguard or heldtargetbypass.",
+      "authorizationBasis": "Latest human continue directs queued guide-first mechanism implementation. Root integrates after independently recommendedONE probe and typedreferenceguard tests. No guarantee geometry follows.",
+      "independentIntake": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-guide-first-492/independent-intake.json",
+        "sha256": "d12a1f770d6c6d62b5777fcf2ffcb7c21686db17fdd9136346c047ecffdb82b8"
+      },
+      "historicalBudget": {
+        "009013CorrectionsConsumedAtLeast": 2,
+        "491TargetFirstCalls": 1,
+        "reset": false,
+        "oldMethodsAndOrders": "All CLOSED originalbytes untouched; no Infantry482483486 work"
+      },
+      "motionApproval": false,
+      "runtimeInstall": false,
+      "fanoutAuthorized": false,
+      "callsRemaining": 0,
+      "closed": true,
+      "closure": "ONE guide-first builtin output remained splitfoot rather than closepassing and changedupperbody/hat scale. Independenttrialreview HELD;0retries/corrections/descendants. No source selected, no runtime install."
     }
   ],
   "nextDependencies": [

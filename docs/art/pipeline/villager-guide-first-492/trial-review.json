@@ -1,0 +1,95 @@
+{
+  "schema": "rds-independent-trial-review/v1",
+  "status": "HELD",
+  "reviewer": "guide_intake492",
+  "exclusiveOutput": "docs/art/pipeline/villager-guide-first-492/trial-review.json",
+  "scope": "Single actual492 returnedF2 pose-control review; no continuous motion observation",
+  "inputPins": [
+    {
+      "path": "docs/art/pipeline/villager-guide-first-492/comparison.png",
+      "sha256": "dd247a9e5bf6cc7a831c0e64eecc0751269c4fd01b59c76be9649e7a298f25fc"
+    },
+    {
+      "path": "docs/art/pipeline/villager-guide-first-492/trial-F2-working256.png",
+      "sha256": "b0a9669a3abf2b8f5c1b2c7b696e55fb1bbcf8860fa6ff13289671458c75ffa5"
+    },
+    {
+      "path": "docs/art/pipeline/villager-guide-first-492/trial-F2-raw.png",
+      "sha256": "900ba5d184b37f6374a1953e3796bd828022a6f9e1b32be8d4365bcc7a21b650"
+    },
+    {
+      "path": "docs/art/pipeline/villager-guide-first-492/claimed.json",
+      "sha256": "f18831c5270c89999f5362731748b137e5814f2df9b2c12b60b39ffdad9ecf0f"
+    },
+    {
+      "path": "docs/art/pipeline/villager-guide-first-492/settled.json",
+      "sha256": "2b0f434776eced1cd4ab736224ce693a9412733b01bb2ae053b111fae06a137f"
+    }
+  ],
+  "actualTools": [
+    "view_image: ONE comparison.png at71px; ONE working256 inspection needed to distinguish passing stance",
+    "exec_command: actual claimed/settled reads, hashes and exclusive receipt write"
+  ],
+  "observations": [
+    {
+      "status": "VERIFIED",
+      "evidence": "docs/art/pipeline/villager-guide-first-492/comparison.png",
+      "method": "ONE brief oldF2/newF2/guide71px comparison",
+      "observation": "New F2 changes upper-body/hat presentation and slightly narrows the feet, but retains a long low image-right foot and raised image-left foot behind it. The close under-body passing relationship visible in the guide is not meaningfully reproduced. Torso/hat silhouette scale also differs visibly from oldF2 at the same whole-canvas presentation."
+    },
+    {
+      "status": "VERIFIED",
+      "evidence": "docs/art/pipeline/villager-guide-first-492/trial-F2-working256.png",
+      "method": "ONE necessary phase inspection, no microaudit",
+      "observation": "The new figure keeps a recognizable conical hat, pale crossover tunic, dark sash/trousers and wrapped shins/open sandals. Image-right leg remains long and extends toward the canvas bottom; lifted image-left sandal remains behind and above it. This confirms old split-step character rather than the guide close passing pose. Broad appearance preservation does not establish matching bodyvolume/camera/layout or movement compatibility."
+    },
+    {
+      "status": "VERIFIED",
+      "evidence": "docs/art/pipeline/villager-guide-first-492/claimed.json",
+      "method": "Read actual durable prepared references",
+      "observation": "Actual two ordered inputs are whole-clothed491F2 guide FIRST and originalSouth SECOND. No old walk frame was attached. Changed hierarchy was actually tried, but returned pose did not visibly achieve its intended change."
+    }
+  ],
+  "decision": {
+    "availability": "HELD",
+    "methodOutcome": "FAILED_POSE_CONTROL_FOR_THIS_ONE_GUIDE_FIRST_TRIAL",
+    "reason": "Desired passing relationship is still absent; upper-body scale change creates an additional sequence-compatibility concern. The frame is not a selectedSOURCE candidate.",
+    "additionalCallsAuthorized": 0,
+    "retries": 0,
+    "corrections": 0,
+    "descendantsAuthorized": 0,
+    "nextDependency": "Root retains raw custody, records finite failure and closes order. No loop/gamebuild for heldframe and no equivalent retry/cap reset."
+  },
+  "qualification": {
+    "source": "HELD_EXCLUDED",
+    "technical": "Raw hash verified; no fresh compiler validation",
+    "anatomy": "UNKNOWN beyond brief broad silhouette observation",
+    "contact": "UNKNOWN",
+    "stride": "UNKNOWN",
+    "motion": "NOT_APPROVED",
+    "bodyvolumeCameraLayout": "NOT_QUALIFIED; visible upper silhouette change",
+    "owner": "NOT_APPROVED",
+    "eightDirections": "NOT_APPROVED",
+    "runtime": "NOT_TESTED",
+    "release": "UNCHANGED"
+  },
+  "claimsNotMade": [
+    "continuous motion",
+    "world foot lock",
+    "stride qualification",
+    "owner approval",
+    "eight-direction completion",
+    "finishedbank acceptance"
+  ],
+  "handles": {
+    "reviewImageCalls": 0,
+    "parentReportedActualTrialCalls": 1,
+    "browserServerHandlesOpened": 0,
+    "testsRun": 0
+  },
+  "limitations": [
+    "Single returned still, not loop or world travel",
+    "No detailed cloth/anatomy/pixel scoring",
+    "Whole original source preservation confirmed in intake; this review makes no new production claim"
+  ]
+}
