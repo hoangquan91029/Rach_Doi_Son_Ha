@@ -1,0 +1,110 @@
+{
+  "schema": "rds-agent-preflight/v1",
+  "task": "release",
+  "head": "527037d1bd63b2a0568fff4e8db24a3825c08837",
+  "status": " M client/art-assets.js\n M docs/audits/implementation-495/tasks.json\n?? docs/qa/gameplay-profile-496/\n?? docs/qa/paired-release-preparation-496/\n?? docs/qa/working-set-496/\n?? tests/art-working-set496.test.js",
+  "readFiles": [
+    {
+      "path": "docs/agent-read-contract.json",
+      "sha256": "3063b312cbde80b414c7718a17f308f53cab8e7714b944e49657cf62b160c093",
+      "bytes": 1096
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "f153ddf7216bfb982efc024e0a1ad5cd0ca769e149e69eb71586988dfdf5173c",
+      "bytes": 8569
+    },
+    {
+      "path": "docs/PROJECT_STATE.md",
+      "sha256": "c9509c4d4dac1e22eb0183a50c0edaff903d305a04bd9a187bc8256878caadd3",
+      "bytes": 11236
+    },
+    {
+      "path": "docs/NEXT_STEPS.md",
+      "sha256": "b6ea715bd55cc56bdfe831250c6a1fcabf78d9fa17f4a939119d86f6b570f7a1",
+      "bytes": 2298
+    },
+    {
+      "path": "docs/ARCHITECTURE_DECISIONS.md",
+      "sha256": "9698dfab772f18700081e2a252275d0fb14e6b8d1dd2d60eb23c2f72d0c1e319",
+      "bytes": 2698
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "f55b464de4b4e2a5833f6b8c25242a921d24deec4acd735133acbc08c9bdbaaa",
+      "bytes": 4897
+    },
+    {
+      "path": "docs/PROJECT_ROADMAP.md",
+      "sha256": "10254285ea79f0f9dbae5f922e56d3cd1bd7a9bfb6ea289eda274fb39ad71fa8",
+      "bytes": 7594
+    },
+    {
+      "path": "server/DEPLOY.md",
+      "sha256": "a5224eb65e088eca0404ef53cc4fcc71f3334ec1696c39586546817bbae508c5",
+      "bytes": 1281
+    },
+    {
+      "path": "docs/art/pipeline/ASSET_QA.md",
+      "sha256": "7ad426a1a2b9d8fd10ae56aa7897fc19be67d3b00a40fac3987e1ef07cd66418",
+      "bytes": 3343
+    },
+    {
+      "path": "docs/COMPLETION_MATRIX.md",
+      "sha256": "e10eb3b7dd1c289383a047027097bb4773218cd3b55550347eb5b9836079dd1c",
+      "bytes": 30666
+    }
+  ],
+  "sources": [
+    {
+      "path": "server/index.js",
+      "sha256": "4e6a7e82f02d1d856f4ea788863c4836930bc00250be6a5b020ba2bdd8884198",
+      "bytes": 12563
+    },
+    {
+      "path": "shared/sim.js",
+      "sha256": "c9a01adba8630e89e1c3f195c1b98c08c32e74468d389a55891c664e3906e562",
+      "bytes": 51614
+    }
+  ],
+  "assignment": {
+    "taskId": "root-release-preparation496",
+    "registration": {
+      "path": "docs/audits/implementation-495/tasks.json",
+      "sha256": "154671ba9f36fcb7e3227d6abf1fcf2fce321774dbec8d37bee1f8278d9a7989",
+      "bytes": 8717
+    },
+    "inputs": [
+      {
+        "path": "server/index.js",
+        "sha256": "4e6a7e82f02d1d856f4ea788863c4836930bc00250be6a5b020ba2bdd8884198"
+      },
+      {
+        "path": "shared/sim.js",
+        "sha256": "c9a01adba8630e89e1c3f195c1b98c08c32e74468d389a55891c664e3906e562"
+      },
+      {
+        "path": "dist/assets/art-v1/fort-202-manifest.json",
+        "sha256": "42425c68d448f89047ea15fe6e108ec2b25393d34312ae0adb37ff1d9be282fa"
+      }
+    ],
+    "outputs": [
+      "docs/qa/paired-release-preparation-496",
+      "docs/PROJECT_STATE.md",
+      "docs/NEXT_STEPS.md",
+      "docs/audits/implementation-495/tasks.json"
+    ],
+    "slots": []
+  },
+  "ledger": {
+    "path": "docs/art/pipeline/unit-production/order-ledger.json",
+    "sha256": "48cdd19d3148b0d0838500dce65fa94bc47bf5970d636adbce1dcad873bb3f50",
+    "locked": false,
+    "unresolvedClaims": []
+  },
+  "limits": [
+    "Existence and byte hashes do not establish understanding, permission, approval or tool availability.",
+    "Explicit invocation only; this helper is not a mandatory global hook.",
+    "Externally verify tools and actual live handles/preservation guards; no guards are declared closed."
+  ]
+}

@@ -1,0 +1,17 @@
+{
+ "schema":"rds-working-set-checkpoint/v1",
+ "state":"LOCAL_SCOPED_COUNTEREXAMPLE_FIXED_BROWSER_DENSE_OPEN",
+ "taskId":"working-set496",
+ "model":"gpt-6.1-sol",
+ "reasoningEffort":"low",
+ "purpose":"Bounded encoded working-set disposal ownership correction",
+ "inputPreflight":"preflight.json",
+ "registeredInputs":"inputs.json",
+ "outputPins":"output-pins.json",
+ "demonstration":{"state":"VERIFIED","before":"before.txt","observation":"Disposed eager encoded page remained required=true and blocked a different selected epoch under unchanged max(real page bytes) capacity","method":"Real retained grass/water encoded bytes/descriptors, isolated vfx descriptor fixtures, mocked ImageBitmap decode"},
+ "correction":{"source":"client/art-assets.js","symbols":["releaseEncodedOwnership","configure","evictEncodedFor","encoded","dispose"],"observation":"Replace sticky required flag with per-pipeline owner Set; release/reassign on configure and dispose; preserve live other pipeline eager ownership","unchanged":["client/art-bank.js","shared/art-bank.js","manifest/artwork","decoded/encoded default budgets","493 load policy","simulation","public/dist"]},
+ "checks":{"state":"VERIFIED","command":"node --test tests/art-working-set496.test.js tests/art-streaming480.test.js tests/art-bank175.test.js","cwd":"/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha","exitCode":0,"output":"after.txt","observation":"New counterexample, shared live owner/exhaustion/recovery, twelve alternating real-page epochs, existing deferred LRU/aliases/pins/disposal/hash/offline/bank checks passed"},
+ "limitations":["Mocked decoder tests custody/lifecycle/counters; does not measure actual browser decode/GPU/memory latency","Fixture capacity is deliberately bounded for reproduction, not a changed product budget","No full-roster dense browser qualification, visual approval, motion improvement or public release","Concurrent shared fetch initiating-pipeline abort ownership not redesigned; remains outside this demonstrated sticky-retention correction","Scoped input art-assets hash intentionally drifts after demonstrated own correction; output pins capture frozen result, root must refresh registered pin before subsequent dependent work"],
+ "handles":"All owned test processes terminal; no browser/server/image call opened; production untouched",
+ "nextDependency":"Root frozen-code isolated browser/dense qualification; input registration refresh required for changed art-assets source"
+}

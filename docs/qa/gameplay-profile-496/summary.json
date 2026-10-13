@@ -1,0 +1,67 @@
+{
+  "status": "PROFILE20_OBSERVED_50_OPEN",
+  "method": "ONE ordinary UI Delta easy trial on headless Chromium; readonly diagnostics1s sampling plus passive rAF timing observer, no simulation/state/command injection",
+  "browser": "151.0.7922.34",
+  "host": {
+    "cpu": "12th Gen Intel(R) Core(TM) i5-12450HX",
+    "logicalCPUs": 12,
+    "totalRAM": 28578369536,
+    "freeRAM": 13228965888,
+    "platform": "linux"
+  },
+  "viewport": {
+    "width": 1920,
+    "height": 1080,
+    "dpr": 1
+  },
+  "cohort20": {
+    "durationMs": 60817,
+    "diagnosticSamples": 58,
+    "ownLivingRange": [
+      20,
+      23
+    ],
+    "visibleEntityRange": [
+      24,
+      32
+    ],
+    "renderCostMs": {
+      "p50": 4.399999998509884,
+      "p95": 14.5,
+      "max": 20.69999999552965
+    },
+    "rAFIntervalsMs": {
+      "count": 3567,
+      "p50": 16.69999999999709,
+      "p95": 16.79999999998836,
+      "max": 33.40000000000873
+    },
+    "decodedBytesRange": [
+      18186752,
+      18186752
+    ]
+  },
+  "cohort50": "NOT_ACHIEVED; match ended via ordinary simulation winner1 at tick3239. Finalowned23 king+22villagers; no50sample",
+  "actions": {
+    "trainVillagerClicks": 20,
+    "gatherAssignments": 6
+  },
+  "pageErrors": [],
+  "requestFailures": [],
+  "allFrozenPinsPreserved": true,
+  "handles": {
+    "browserConnected": false,
+    "serverListening": false,
+    "rooms": 0
+  },
+  "limitations": [
+    "Headless Chromium software/disabledGPUcompositing observed in process flags; not ordinarylaptopGPU benchmark",
+    "Cohort is growing20-23 and receives AIcombat; not fixed20entitybaseline",
+    "60second1Hz rendercost samples cannot attribute simulation vsrendererhotspot; rAFwallintervals include hostload",
+    "Staticfallback/incompleteart and fewunittypes cannot establish dense200/240/fullroster performance",
+    "No motion/art/owner/publicrelease acceptance",
+    "No blindretry; largerlegalcohort requires separate concrete defense/economy/prep strategy"
+  ],
+  "nextDependency": "Separate bounded legal defense/economy strategy to preserve General while training50; no observed20cohort evidence attributes a renderer or memory bottleneck.",
+  "maxOwnedDuringPrep": 24
+}

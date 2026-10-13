@@ -54,6 +54,8 @@ export function createArtAssetPipeline({manifestUrl='/assets/art-v1/manifest.jso
  if(!['manifest','on-demand'].includes(unitActionPolicy))throw Error('Invalid unit action policy');
  if(!Number.isSafeInteger(maxDecodedBytes)||maxDecodedBytes<1)throw Error('Invalid decoded RGBA byte budget');
  let encodedStore={records:new Map(),manifests:new Map(),bytes:0,maxBytes:64*1024*1024},selectedIds=null;
+ const encodedOwner=Symbol('art-pipeline');
+ const releaseEncodedOwnership=()=>{for(const record of encodedStore.records.values())record.requiredOwners?.delete(encodedOwner);};
  const available=new Map(),eagerIds=new Set(),eagerKeys=new Set(),pending=new Map(),controllers=new Set(),pinTimers=new Set();let access=0,queue=Promise.resolve();
  const loaded=new Map(),cache=new Map(),fallbacks=new Set(),familyLayouts=new Map(),logicalLayouts=new Map();let manifest=null,disposed=false,preloadPromise=null,deadlineAt=Infinity;
  const stats={unitActionPolicy,status:'PLACEHOLDER_ONLY',manifest:'not-loaded',declared:0,ready:0,approved:0,candidates:0,failed:0,skipped:0,fallbacks:0,decodedBudgetBytes:maxDecodedBytes,retainedDecodedBytes:0,reservedDecodedBytes:0,uniqueDecodedImages:0,encodedReady:0,retainedEncodedBytes:0,encodedBudgetBytes:64*1024*1024,selectedDeclared:0,eagerDeclared:0,deferredDeclared:0,pending:0,pageErrors:[],evictedPages:0,evictedEncodedPages:0,failures:[]};
@@ -69,10 +71,10 @@ export function createArtAssetPipeline({manifestUrl='/assets/art-v1/manifest.jso
  const mandatoryEager=a=>a.state==='idle'||['terrain','ui','portrait'].includes(a.kind);
  const warmEncoded=a=>a.loadPolicy!=='on-demand'||mandatoryEager(a);
  const decodeEager=a=>mandatoryEager(a)||(warmEncoded(a)&&!(unitActionPolicy==='on-demand'&&a.kind==='unit'));
- const configure=active=>{available.clear();eagerIds.clear();eagerKeys.clear();for(const a of active)available.set(a.id,a);
+ const configure=active=>{releaseEncodedOwnership();available.clear();eagerIds.clear();eagerKeys.clear();for(const a of active)available.set(a.id,a);
   for(const a of active)if(decodeEager(a))eagerIds.add(a.id);
   for(const a of available.values())if(a.contactShadow?.mode==='separate'){const shadow=manifest.assets.find(x=>x.id===a.contactShadow.assetId);if(!shadow)throw Error('Missing separate shadow asset');available.set(shadow.id,shadow);eagerIds.add(shadow.id);}
-  for(const id of eagerIds)eagerKeys.add(pageKey(available.get(id)));stats.eagerDeclared=eagerIds.size;stats.deferredDeclared=available.size-eagerIds.size;
+  for(const id of eagerIds)eagerKeys.add(pageKey(available.get(id)));for(const key of eagerKeys){const record=encodedStore.records.get(key);if(record){record.requiredOwners??=new Set();record.requiredOwners.add(encodedOwner);}}stats.eagerDeclared=eagerIds.size;stats.deferredDeclared=available.size-eagerIds.size;
  };
  const evictFor=bytes=>{for(const [key,record] of [...cache].sort((a,b)=>a[1].lastUsed-b[1].lastUsed)){
   if(bytes<=maxDecodedBytes-stats.retainedDecodedBytes-stats.reservedDecodedBytes)break;
@@ -84,15 +86,15 @@ export function createArtAssetPipeline({manifestUrl='/assets/art-v1/manifest.jso
  const touchEncoded=key=>{const record=encodedStore.records.get(key);if(record)record.lastUsed=encodedStore.access=(encodedStore.access||0)+1;};
  const evictEncodedFor=bytes=>{for(const [key,record] of [...encodedStore.records].sort((a,b)=>(a[1].lastUsed||0)-(b[1].lastUsed||0))){
   if(bytes<=encodedStore.maxBytes-encodedStore.bytes)break;
-  if(record.required||record.loading||record.users||!record.bytes||eagerKeys.has(key)||cache.get(key)?.pinned||[...pending.keys()].some(id=>available.has(id)&&pageKey(available.get(id))===key))continue;
+  if(record.requiredOwners?.size||record.loading||record.users||!record.bytes||eagerKeys.has(key)||cache.get(key)?.pinned||[...pending.keys()].some(id=>available.has(id)&&pageKey(available.get(id))===key))continue;
   encodedStore.records.delete(key);encodedStore.bytes-=record.bytes;stats.evictedEncodedPages++;
  }stats.retainedEncodedBytes=encodedStore.bytes;};
  const encoded=async(a,signal)=>{
   const url=runtimeUrl(a),key=`${url}|${a.runtime.sha256.toLowerCase()}`;
   if(!encodedStore.records.has(key)){
-   const record={promise:null,bytes:0,loading:true,users:0,required:eagerKeys.has(key),lastUsed:0};record.promise=(async()=>{try{const response=await fetchImpl(url,{credentials:'same-origin',signal});if(!response.ok)throw Error(`Raster HTTP ${response.status}`);const bytes=await response.arrayBuffer();if(bytes.byteLength>maxImageBytes)throw Error('Raster exceeds byte budget');if(await digest(bytes)!==a.runtime.sha256.toLowerCase())throw Error('Runtime encoded SHA256 mismatch');if(signal?.aborted||disposed)throw Error('Art pipeline disposed or loading expired');if(bytes.byteLength>encodedStore.maxBytes)throw Error('Encoded bank byte budget exceeded');evictEncodedFor(bytes.byteLength);if(bytes.byteLength>encodedStore.maxBytes-encodedStore.bytes)throw Error('Encoded bank byte budget exceeded');record.bytes=bytes.byteLength;encodedStore.bytes+=bytes.byteLength;record.loading=false;return bytes;}catch(error){if(encodedStore.records.get(key)===record)encodedStore.records.delete(key);throw error;}})();encodedStore.records.set(key,record);
+   const record={promise:null,bytes:0,loading:true,users:0,requiredOwners:new Set(),lastUsed:0};record.promise=(async()=>{try{const response=await fetchImpl(url,{credentials:'same-origin',signal});if(!response.ok)throw Error(`Raster HTTP ${response.status}`);const bytes=await response.arrayBuffer();if(bytes.byteLength>maxImageBytes)throw Error('Raster exceeds byte budget');if(await digest(bytes)!==a.runtime.sha256.toLowerCase())throw Error('Runtime encoded SHA256 mismatch');if(signal?.aborted||disposed)throw Error('Art pipeline disposed or loading expired');if(bytes.byteLength>encodedStore.maxBytes)throw Error('Encoded bank byte budget exceeded');evictEncodedFor(bytes.byteLength);if(bytes.byteLength>encodedStore.maxBytes-encodedStore.bytes)throw Error('Encoded bank byte budget exceeded');record.bytes=bytes.byteLength;encodedStore.bytes+=bytes.byteLength;record.loading=false;return bytes;}catch(error){if(encodedStore.records.get(key)===record)encodedStore.records.delete(key);throw error;}})();encodedStore.records.set(key,record);
   }
-  const record=encodedStore.records.get(key);if(eagerKeys.has(key))record.required=true;touchEncoded(key);const bytes=await record.promise;stats.retainedEncodedBytes=encodedStore.bytes;return bytes;
+  const record=encodedStore.records.get(key);record.requiredOwners??=new Set();if(eagerKeys.has(key))record.requiredOwners.add(encodedOwner);touchEncoded(key);const bytes=await record.promise;stats.retainedEncodedBytes=encodedStore.bytes;return bytes;
  };
  const prepare=async()=>{
   if(disposed)throw Error('Art pipeline disposed');
@@ -143,7 +145,7 @@ export function createArtAssetPipeline({manifestUrl='/assets/art-v1/manifest.jso
    const {asset:a,image,approved}=entry;touchEncoded(pageKey(a));const page=cache.get(pageKey(a));if(page){page.lastUsed=++access;if(!page.pinned){page.pinned=true;const timer=setTimeout(()=>{page.pinned=false;pinTimers.delete(timer);},0);pinTimers.add(timer);}}const timing=sampleSpriteAnimation(a.frames,{timeMs,loop:a.loop??a.state!=='death',frame:frameIndex}),index=timing.frame;
    const f=a.frames[index],scaleX=a.cell.width/a.source.width,scaleY=a.cell.height/a.source.height;
    return {status:approved?'APPROVED':'CANDIDATE',candidate:!approved,approved,id:a.id,family:a.family,image,sx:f.x,sy:f.y,sw:f.width,sh:f.height,frame:index,frameElapsedMs:timing.elapsedMs,animationDurationMs:timing.durationMs,events:timing.events,pivot:{x:a.pivot.x*scaleX,y:a.pivot.y*scaleY},render:{...a.render},contactShadow:{...a.contactShadow},asset:a};},
-  dispose(){disposed=true;for(const timer of pinTimers)clearTimeout(timer);pinTimers.clear();for(const controller of controllers)controller.abort();pending.clear();stats.pending=0;available.clear();for(const record of cache.values())release(record);loaded.clear();cache.clear();stats.ready=0;stats.approved=0;stats.candidates=0;notify();}
+  dispose(){disposed=true;releaseEncodedOwnership();for(const timer of pinTimers)clearTimeout(timer);pinTimers.clear();for(const controller of controllers)controller.abort();pending.clear();stats.pending=0;available.clear();for(const record of cache.values())release(record);loaded.clear();cache.clear();stats.ready=0;stats.approved=0;stats.candidates=0;notify();}
  };
  return pipeline;
 }

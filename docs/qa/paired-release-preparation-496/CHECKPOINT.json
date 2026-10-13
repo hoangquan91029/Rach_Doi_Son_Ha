@@ -1,0 +1,47 @@
+{
+  "schema": "rds-paired-rollback/v1",
+  "status": "VERIFIED_PRIVATE_SNAPSHOT_AND_EXACT_RESTORE_ONLY",
+  "sourceHEAD": "527037d1bd63b2a0568fff4e8db24a3825c08837",
+  "frontendFiles": 209,
+  "frontendAssets": 50,
+  "frontendManifestSHA": "42425c68d448f89047ea15fe6e108ec2b25393d34312ae0adb37ff1d9be282fa",
+  "backend": "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/releases/230/runtime230",
+  "backendSimSHA": "29233a059ec084bc8577d20a1bccfd28ddc3024b9cb9bf4d5598c22f220f748b",
+  "backendServerSHA": "4e6a7e82f02d1d856f4ea788863c4836930bc00250be6a5b020ba2bdd8884198",
+  "wsVersion": "8.22.0",
+  "runtimeDistLink": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/dist",
+  "archive": "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/releases/paired-451-230-496-v4b02zpt/rollback451-230.tar.gz",
+  "archiveSHA": "f6de28c98786c88c7c263500fae2fbe96ca2b4c23247e8d771508154efe895ef",
+  "inventory": "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/releases/paired-451-230-496-v4b02zpt/inventory.json",
+  "inventorySHA": "4f3c8a48c17a7b4c16a50cecd03ece3c1545bbb837678b68f39c1bc261c5f320",
+  "restoreTrial": "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/releases/paired-451-230-496-v4b02zpt/restore-trial",
+  "exactRestoredModesAndBytes": true,
+  "currentFrontendBackendPreserved": true,
+  "policyPins": [
+    {
+      "path": "/home/kieu-hoang-quan/.config/systemd/user/rach-doi-son-ha.service",
+      "archiveMember": "policy/unit.service",
+      "sha256": "04ce22ebb38727aa3ee82e3314cdf421c9b90ccadb339bafa2e7838f19cddca5"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/.config/systemd/user/rach-doi-son-ha.service.d/207-release.conf",
+      "archiveMember": "policy/207-release.conf",
+      "sha256": "071d99adda9eb2382438a9f9ad6b37568c6ad0a6d22ba31c2fc31784da30c25c"
+    }
+  ],
+  "serviceObserved": "ActiveState=active\nFragmentPath=/home/kieu-hoang-quan/.config/systemd/user/rach-doi-son-ha.service\nDropInPaths=/home/kieu-hoang-quan/.config/systemd/user/rach-doi-son-ha.service.d/207-release.conf\nMainPID=3408\nExecStart={ path=/home/kieu-hoang-quan/.nvm/versions/node/v24.15.0/bin/node ; argv[]=/home/kieu-hoang-quan/.nvm/versions/node/v24.15.0/bin/node /home/kieu-hoang-quan/.local/share/rach-doi-son-ha/releases/230/runtime230/server/index.js ; ignore_errors=no ; start_time=[Mon 2026-10-12 11:13:56 +07] ; stop_time=[n/a] ; pid=3408 ; code=(null) ; status=0/0 }\nWorkingDirectory=/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/releases/230/runtime230\n",
+  "healthObserved": {
+    "ok": true,
+    "rooms": 0
+  },
+  "productionMutations": 0,
+  "restartCalls": 0,
+  "roomsKicked": 0,
+  "limits": [
+    "Private backup only, not deployment or public proof.",
+    "No restoration against active service; current health0 does not authorize later restart without reinspection.",
+    "Backenddistlink excluded from archive; restore policy must point old230 to actual restored451front.",
+    "Same backend already exact: rollback frontend need not restart identical backend.",
+    "Archive may contain original service policy; kept private700, only hashes in tracked receipt."
+  ]
+}

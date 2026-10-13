@@ -1,11 +1,13 @@
-# Active queue — implementation495
+# Active queue — continuous goal496
 
 1. Read495 root receipt and tasks index plus current state. G0 integrated: required execution contract/completion matrix/roadmap and optional future-order safeguards;103combinedtargetedchecks pass. Read exactlimitations; noretroactiveguardclaims.493loader is already implemented; no repeat.
 2. G1 local2D capability receipt reports FAILED_RUNTIME_PREREQUISITES: testedPython3.14/3.12 lack inference packages; CUDA/NVML dlopen failed. KernelGPU/cache names are not runnablepipeline. No install/download/driverrepair/imagecall. Next art dependency is a usable supported runtime, then actual CUDA/PyTorch verification and one finite conditioned trial; no fallback/491492 retry.
 3. Owner rejected490walk.491target-first/492guide-first CLOSED/HELD and old482483486caps intact. No new imageorder, source selection, stride/motion/owner/fanout acceptance. Wood032/iron141 onlyshownD1; food separate; goodsreturnordinarywalk.
 4. Root candidate stone policy checks candidate+neighbors ownliving gridwall/gate includingconstruction, rejectsdegree>2 withoutspend. Browser preview shares rule but is explicitly topology-only, not fullterrain/cost approval. ActualChromium ordinaryline/corner/Trejection/PauseResume/Stop/menu passed; independentboundsfindingfixed/preserved. Do not replayunchangedscene. Sharedchange remains LOCAL until pairedrelease.
-5. Independent next: intended-bank working-set/LRU/cold/offlinecache profiling493 and actual legaldensegameplay; building lifecycle state preparation / bothmap composition. Choose concrete implementation gaps from completion matrix, not proof-only busywork or repeated unchangedfullmatches.
+5.496 encodedretentionbug fixed/17checks; actualChrome+Firefox3matchepochs pass. No redoingunchangedbankscene.20–23unit/60.817sactualheadlessprofile collected on frozenpre-fixcandidate;50notachieved becauseAIGeneraldefeat tick3239; no50/200/240/GPU/fullrosterclaim. NEXT finite newstrategy: ordinaryUI defensiveGeneralposition/fortification+parallelproduction/economy plan before one50cohortattempt; preserve failedprep, no blindsame-villagertrainretry. Independent authoredbuildinglifecycle/mapcomposition stillopen.
 6. After usable passing keys: originalVillager actualloop/travel/turn/Stop → Infantryreuse → wholehorsewagon415/cavalry → completeapplicableactions×8directions. Root finiteorders only; no batch untilarchetype/view/keygates.
 7. Future release: inspect actual live rooms/service/sourcepins; exactpairedfrontend/backend and verified current451+230rollback; finaldefaultart/bothmode/bothmap/externalWAN requirements remainOPEN.
 
 All automation status claims require actualinspection;311stillunresolved, no schedule recreated in495. Production intentionallyrunning. State/receipt, not elapsedtime or stalePID, govern resumption.
+
+496 current451+230pairedrollback snapshot/isolatedexactrestore isprepared privately; see qa/paired-release-preparation-496/CHECKPOINT.json. No release occurred. FullgoaltoolACTIVE at explicituserrequest; automation311 status unchanged/unresolved.

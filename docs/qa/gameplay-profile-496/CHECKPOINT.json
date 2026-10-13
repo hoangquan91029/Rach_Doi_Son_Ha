@@ -1,0 +1,77 @@
+{
+  "schema": "rds-gameplay-profile-checkpoint/v1",
+  "taskId": "gameplay-profile496",
+  "worker": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low"
+  },
+  "stage": "/tmp/rds-gameplay496-stage",
+  "build": "/tmp/rds-gameplay496-build",
+  "buildCommand": "./node_modules/.bin/vite build --config /tmp/rds-gameplay496-stage/vite.config.js --outDir /tmp/rds-gameplay496-build",
+  "literalCwd": "/tmp/rds-gameplay496-stage",
+  "buildResult": {
+    "exitCode": 0,
+    "viteVersion": "7.3.7",
+    "modules": 35,
+    "chunk": "assets/index-DqFPpfOg.js",
+    "chunkSHA256": "f1dd2e8741a16f9243f09be4d4ad671f4573c681b16f14629cc560b7f5459b80",
+    "published": false
+  },
+  "sceneCommand": "node scripts/qa/gameplay-profile496.mjs docs/qa/gameplay-profile-496/config.json",
+  "sceneExitCode": 0,
+  "status": "PROFILE20_OBSERVED_50_OPEN",
+  "pins": [
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/qa/gameplay-profile496.mjs",
+      "sha256": "6f1d81f4c28984188b9b431151175798bf650cf8f7345f48ba5c5e24c8bb353b",
+      "bytes": 6619
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/gameplay-profile-496/receipt.json",
+      "sha256": "6a46e2fb857a47dc6bcc5759caf54f91eae9993ff59fe921f2ab1619e9dd9314",
+      "bytes": 1131094
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/gameplay-profile-496/summary.json",
+      "sha256": "2d4729a1c631f0f101ce28bb428834928885706e912a8f79a39e8157ce553920",
+      "bytes": 2181
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/gameplay-profile-496/config.json",
+      "sha256": "0d4a91c4008e6602f917eb522f8f0c2c24b50b744aa4ec37d143c143ac4abb07",
+      "bytes": 69309
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/gameplay-profile-496/preflight.json",
+      "sha256": "01f86745973a041872db22d440a98f8b4fa93df73a55e6a4f576da9c586b1de5",
+      "bytes": 3893
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/gameplay-profile-496/preflight-initial-failure.json",
+      "sha256": "2a17653e9408cd92711ddcd46e8704aa10f1bc4cce735fe0585cba82592f7b77",
+      "bytes": 323
+    }
+  ],
+  "preservation": {
+    "frozenStageBuildPins": 423,
+    "allExact": true,
+    "canonicalGuard": false
+  },
+  "bounds": {
+    "prepLoopMaxMs": 190000,
+    "sampleRequestedMs": 60000,
+    "sampleActualMs": 60817,
+    "note": "UIlaunch/initialsixgatherassignment overhead precedes190s prep loop; match ended early at tick3239. No190s budget overrun inferred from totalrun; sample overhead0.817s explicitly retained."
+  },
+  "technical": "Local20cohort observed;50notachieved; no producttests/fullsuite/replay",
+  "motion": "UNKNOWN; owner490rejectionunchanged",
+  "owner": "UNKNOWN; no humanapproval",
+  "release": "UNKNOWN; public451/backend230untouched",
+  "handles": {
+    "browserConnected": false,
+    "serverListening": false,
+    "rooms": 0
+  },
+  "imageCalls": 0,
+  "nextDependency": "Separate bounded legal defense/economy strategy to preserve General while training50; no observed20cohort evidence attributes a renderer or memory bottleneck."
+}

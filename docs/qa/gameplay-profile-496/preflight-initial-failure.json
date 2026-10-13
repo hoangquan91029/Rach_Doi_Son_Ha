@@ -1,0 +1,1 @@
+{"command":"node scripts/agent-preflight.mjs --task runtime --source shared/sim.js --task-id gameplay-profile496 --inputs docs/qa/gameplay-profile-496/inputs.json","exitCode":1,"error":"Expected scoped task inputs required","correction":"Input file array unwrapped; no guards bypassed; success retained in preflight.json"}

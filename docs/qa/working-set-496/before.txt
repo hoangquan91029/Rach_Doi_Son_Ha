@@ -1,0 +1,28 @@
+✖ disposed eager encoded pages relinquish retention so a different selected epoch fits unchanged budget (7.227348ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 0
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 50.294314
+
+✖ failing tests:
+
+test at tests/art-working-set496.test.js:16:1
+✖ disposed eager encoded pages relinquish retention so a different selected epoch fits unchanged budget (7.227348ms)
+  AssertionError [ERR_ASSERTION]: [{"id":"fixture1","message":"Encoded bank byte budget exceeded"}]
+  
+  1 !== 0
+  
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/art-working-set496.test.js:18:87)
+      at async Test.run (node:internal/test_runner/test:1208:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

@@ -1,0 +1,25 @@
+✔ both maps include every legal unit/building and both actual player leaders (1.006126ms)
+✔ encoded startup has zero decoded ownership; offline both-map relaunch releases real images (76.284268ms)
+✔ menu cancellation closes late decoded image and prevents epoch resurrection (19.290422ms)
+✔ encoded aggregate budget and hash mismatch fail without caching unverified bytes (3.102656ms)
+✔ Continue after partial encoded boot failure retries selected missing bytes on recovery (28.484165ms)
+✔ unavailable boot manifest is explicitly primed again before recovered match decoding (32.741753ms)
+✔ actual launch failure keeps gameplay/Pause gate until explicit retry or menu (1.965684ms)
+✔ deferred pages excluded from encoded prime and decode startup; exact first request pending (11.635911ms)
+✔ LRU evicts only deferred page; retained encoded bytes permit offline re-decode (6.346258ms)
+✔ simultaneous requests serialize reservations, bounded budget and current-page pins (4.980823ms)
+✔ dispose aborts request signal, closes late decode and never restores page (0.948204ms)
+✔ separate shadow dependencies eagerly retained and bank activation checks only eager set (1.85632ms)
+✔ deferred aliases share unique decoded page and rejected art never queues (1.649057ms)
+✔ deferred errors explicit; encoded limit and invalid load policy remain enforced (1.59159ms)
+✔ disposed eager encoded pages relinquish retention so a different selected epoch fits unchanged budget (7.891425ms)
+✔ live shared eager owner blocks eviction until every owner disposes; failed epoch can retry (4.966659ms)
+✔ bounded repeated selected epochs evict and refetch real pages without retained decoded ownership (15.275686ms)
+ℹ tests 17
+ℹ suites 0
+ℹ pass 17
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 219.853915
