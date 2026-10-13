@@ -1,0 +1,101 @@
+{
+  "status": "PASS_ACTUAL_LINE_CORNER_SHARED_PREVIEW_AND_T_REJECTION",
+  "method": "One isolated ordinary DeltaUI Wall/Gate/Wall + corner + actual forbidden third-branch attempt with normal Pause/Resume controls, shared hover preview, read-only diagnostics; no injected commands/state",
+  "errors": [],
+  "structures": [
+    {
+      "id": 35,
+      "type": "wall",
+      "x": 2.5,
+      "y": 23.5,
+      "completedTick": 306
+    },
+    {
+      "id": 43,
+      "type": "gate",
+      "x": 3.5,
+      "y": 23.5,
+      "completedTick": 603
+    },
+    {
+      "id": 52,
+      "type": "wall",
+      "x": 4.5,
+      "y": 23.5,
+      "completedTick": 858
+    },
+    {
+      "id": 53,
+      "type": "wall",
+      "x": 4.5,
+      "y": 24.5,
+      "completedTick": 1122
+    }
+  ],
+  "movement": [],
+  "bundleSHA256": "f1dd2e8741a16f9243f09be4d4ad671f4573c681b16f14629cc560b7f5459b80",
+  "workerId": 7,
+  "line": {
+    "x": 3.5,
+    "y": 23.5,
+    "staging": {
+      "x": 3.5,
+      "y": 21.5
+    },
+    "d": 4
+  },
+  "cornerPreview": {
+    "text": "Straight/corner layout; terrain, clearance and resources checked on placement.",
+    "topology": "allowed"
+  },
+  "forbiddenPreview": {
+    "text": "Stone walls and wooden gates support straight lines and corners only; T and cross junctions are not allowed.",
+    "topology": "blocked"
+  },
+  "beforeReject": {
+    "tick": 1268,
+    "materials": {
+      "wood": 415,
+      "food": 759.1011840000924,
+      "iron": 235
+    },
+    "buildings": [
+      1,
+      2,
+      3,
+      4,
+      35,
+      43,
+      52,
+      53
+    ],
+    "order": null
+  },
+  "afterReject": {
+    "tick": 1271,
+    "materials": {
+      "wood": 415,
+      "food": 758.9819520000926,
+      "iron": 235
+    },
+    "buildings": [
+      1,
+      2,
+      3,
+      4,
+      35,
+      43,
+      52,
+      53
+    ],
+    "order": null,
+    "toast": "Stone walls and wooden gates support straight lines and corners only; T and cross junctions are not allowed."
+  },
+  "foodLimit": "Food consumption advances between real Resume/click/Pause; no injected pause or command. Exact full resource immutability established separately by authoritative scoped tests.",
+  "cleanup": {
+    "rooms": 0,
+    "serverListening": false,
+    "browserClosed": true
+  },
+  "browserScope": "Chromium actual UI only; no Firefox/fullmatch/public/WAN/motion/artquality claim"
+}

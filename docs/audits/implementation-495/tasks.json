@@ -1,0 +1,129 @@
+{
+  "schema": "rds-agent-tasks/v1",
+  "tasks": [
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "root-integration495",
+      "status": "CLOSED",
+      "purpose": "Integrate approved plan and LOCAL stonepolicy; do not deploy or generate. Root model unknown, not fabricated.",
+      "worker": {
+        "id": "/root",
+        "role": "ROOT",
+        "model": null,
+        "reasoningEffort": null
+      },
+      "outputs": [
+        "AGENTS.md",
+        "docs/AGENT_EXECUTION_CONTRACT.md",
+        "docs/COMPLETION_MATRIX.md",
+        "docs/PROJECT_STATE.md",
+        "docs/PROJECT_ROADMAP.md",
+        "docs/NEXT_STEPS.md",
+        "docs/ARCHITECTURE_DECISIONS.md",
+        "docs/agent-read-contract.json",
+        "docs/art/pipeline/SPRITE_PRODUCTION_WORKFLOW.md",
+        "docs/art/pipeline/IMAGE_GENERATION_TEMPLATES.md",
+        "docs/art/pipeline/unit-production/README.md",
+        "scripts/unit-art-coverage.mjs",
+        "shared/sim.js",
+        "shared/fortification-placement.js",
+        "client/main.js",
+        "tests/fortification-placement495.test.js",
+        "docs/qa/stone-policy-495/browser.mjs",
+        "docs/qa/stone-policy-495/config.json",
+        "docs/qa/stone-policy-495/build.txt",
+        "docs/qa/stone-policy-495/browser-receipt.json",
+        "docs/qa/stone-policy-495/actual-forbidden-preview.png",
+        "docs/qa/stone-policy-495/failure.png",
+        "docs/audits/implementation-495/tasks.json",
+        "docs/audits/implementation-495/root-inputs.json",
+        "docs/audits/implementation-495/root-preflight.json",
+        "docs/audits/implementation-495/root-scoped-preflight.json",
+        "docs/audits/implementation-495/requirements",
+        "docs/audits/implementation-495/prior-active",
+        "docs/audits/implementation-495/baseline.json",
+        "docs/audits/implementation-495/CHECKPOINT.json",
+        "docs/audits/implementation-495/checks.txt",
+        "docs/audits/implementation-495/link-check.json",
+        "docs/audits/implementation-495/preservation.json",
+        "docs/art/pipeline/unit-production/order-ledger.json",
+        "docs/audits/implementation-495/ledger-metadata-change.json"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "shared/data.js",
+          "sha256": "ffc3f45adc58f212066d3763c591377ce15b9f6ac78e4685a95fc3ac747818e1"
+        },
+        {
+          "path": "shared/unit-action-spec.js",
+          "sha256": "04d987298651c73187920391754f729fd203c1313536eb54c29c629048db05bf"
+        },
+        {
+          "path": "public/assets/art-v1/fort-202-manifest.json",
+          "sha256": "77c75ef2bea8cff633b28fe8635e51b5a7efc151bb1871b5b5d9d17850d4271c"
+        },
+        {
+          "path": "docs/art/pipeline/unit-production/order-ledger.json",
+          "sha256": "48cdd19d3148b0d0838500dce65fa94bc47bf5970d636adbce1dcad873bb3f50"
+        }
+      ],
+      "acceptance": "Scoped helper/placement tests, ordinaryUI scene, authoritative docs; preserve art/public and future gates",
+      "registrationLimit": "Ownership enforcement introduced after worker dispatch; records do not claim initial preflight was already gated.",
+      "closure": "Actual owned checks/provider/browser/serverhandles terminal; production intentionallyrunning; no automatic expiry or refundedcalls."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "controls495",
+      "status": "CLOSED",
+      "purpose": "Finish retained controls preflight refresh after root created required matrix; no code/test/ledger edits",
+      "worker": {
+        "id": "/root/plan_controls494",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "scripts/agent-preflight.mjs",
+        "scripts/sprite-order-run.mjs",
+        "scripts/agent-task-contract.mjs",
+        "tests/agent-preflight.test.js",
+        "tests/agent-task-contract.test.js",
+        "docs/audits/implementation-495/controls"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "docs/art/pipeline/unit-production/order-ledger.json",
+          "sha256": "48cdd19d3148b0d0838500dce65fa94bc47bf5970d636adbce1dcad873bb3f50"
+        }
+      ],
+      "acceptance": "Focused35tests and independent root review; no ledgerchange",
+      "closure": "Actual owned checks/provider/browser/serverhandles terminal; production intentionallyrunning; no automatic expiry or refundedcalls."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "local2d495",
+      "status": "CLOSED",
+      "purpose": "Bounded capability, then independent stone source review; no install/models/images",
+      "worker": {
+        "id": "/root/plan_art494",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "docs/art/pipeline/local2d-capability-495",
+        "docs/qa/stone-policy-495/review.json"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "docs/art/pipeline/local2d-capability-495/CHECKPOINT.json",
+          "sha256": "c219c13a1e2453067806b88f9f24496ccbd88e83a418463a8044159791b74b20"
+        }
+      ],
+      "closure": "Actual owned checks/provider/browser/serverhandles terminal; production intentionallyrunning; no automatic expiry or refundedcalls."
+    }
+  ]
+}

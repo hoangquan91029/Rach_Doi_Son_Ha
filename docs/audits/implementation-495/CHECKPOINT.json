@@ -1,0 +1,224 @@
+{
+  "schema": "rds-agent-receipt/v1",
+  "taskId": "root-integration495",
+  "baseHEAD": "2187c0a873cbe1731e8322d59b53b974081f2f87",
+  "scope": "First approved implementation wave: G0 instructions/guards, G1 bounded failed capability, G5 LOCAL stone straight/corner placement. Full objective remains OPEN.",
+  "modelMetadata": "Root model/effort not tool-reported: null; workers exactgpt-6.1-sol/low. Thirdworker spawn failed threadlimit; root performedstonework, two workers actually used.",
+  "checks": [
+    {
+      "command": "node --test tests/agent-task-contract.test.js tests/agent-preflight.test.js tests/sprite-order-run.test.js tests/sprite-order-run485.test.js tests/sprite-prompts.test.js tests/fortification-placement495.test.js tests/fortification-placement210.test.js tests/fortification-topology215.test.js tests/fortification-art235.test.js",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "method": "Actual targeted node tests, isolated helperfixtures; no fullsuite/fullmatch",
+      "state": "VERIFIED",
+      "executed": true,
+      "exitCode": 0,
+      "observation": "103/103 pass;35controls+68placement/topology/artcontracts",
+      "evidence": [
+        {
+          "path": "docs/audits/implementation-495/checks.txt",
+          "sha256": "ef1629f60b9c80ade409d2fc01d2b530684ddccd5411e0d5971eb3eb1a7f53e4"
+        }
+      ]
+    },
+    {
+      "command": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/node_modules/.bin/vite build --config /tmp/rds-495-stage-je7fdyld/vite.config.js --outDir /tmp/rds-495-build-b5_88eja",
+      "cwd": "/tmp/rds-495-stage-je7fdyld",
+      "method": "Isolated literalstage/absoluteoutDir/exactconfig, active dist untouched",
+      "state": "VERIFIED",
+      "executed": true,
+      "exitCode": 0,
+      "observation": "35modules; index-DqFPpfOg.js; runtime canonical testedstage hashmatch",
+      "evidence": [
+        {
+          "path": "docs/qa/stone-policy-495/build.txt",
+          "sha256": "cd2c33980d6371a8c020c4f4d51914be2b6621cc1750eaa690693e6ec05c003f"
+        },
+        {
+          "path": "docs/audits/implementation-495/preservation.json",
+          "sha256": "11ece7281e6d07ed41f1d0499eca72a16b574fa911ea89b7c5c0e0ba4dbd2e17"
+        }
+      ]
+    },
+    {
+      "command": "node docs/qa/stone-policy-495/browser.mjs",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "method": "Actual ordinaryChromiumDeltaUI + readonlydiagnostics",
+      "state": "VERIFIED",
+      "executed": true,
+      "exitCode": 0,
+      "observation": "PASS_ACTUAL_LINE_CORNER_SHARED_PREVIEW_AND_T_REJECTION",
+      "evidence": [
+        {
+          "path": "docs/qa/stone-policy-495/browser-receipt.json",
+          "sha256": "edb93eeec4fdfc441b05fb059c7a1363dbc439dc2da7aec8e5dda7bc4e986089"
+        },
+        {
+          "path": "docs/qa/stone-policy-495/browser.mjs",
+          "sha256": "6db0d3225ff06b5a8f8ba9f1cca19ec3b30a52ac68bd9665df89dfe94ea7ab64"
+        }
+      ]
+    },
+    {
+      "command": "Worker capability command series: see pinned receipt checks/argv",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "method": "Worker actualargv/stdout/stderr, presence/loadchecks only; no inference",
+      "state": "DOCUMENTED_ONLY",
+      "executed": false,
+      "exitCode": null,
+      "observation": "Worker observed FAILED_RUNTIME_PREREQUISITES; root consumes actual receipt, did not rerun commandseries.",
+      "evidence": [
+        {
+          "path": "docs/art/pipeline/local2d-capability-495/CHECKPOINT.json",
+          "sha256": "c219c13a1e2453067806b88f9f24496ccbd88e83a418463a8044159791b74b20"
+        }
+      ]
+    }
+  ],
+  "technical": {
+    "state": "VERIFIED",
+    "observation": "Instructions+scopedguards integrated;103targetedchecks,35moduleisolatedbuild",
+    "limitation": "No comprehension/proseauthenticity/artquality guarantee; optionalfutureorderguards, historicalordersnotmigrated. Taskregistration introduced afterinitialdispatch.",
+    "evidence": [
+      {
+        "path": "docs/audits/implementation-495/checks.txt",
+        "sha256": "ef1629f60b9c80ade409d2fc01d2b530684ddccd5411e0d5971eb3eb1a7f53e4"
+      },
+      {
+        "path": "docs/audits/implementation-495/controls/README.md",
+        "sha256": "255f7e84107f26b957ac878aa3842fb292d9b85c3c4da101795d7fc3e029695e"
+      }
+    ]
+  },
+  "motion": {
+    "state": "UNKNOWN",
+    "limitation": "No new frame or loop. Ownerreject490,held491492 and oldcaps preserved; no stride/contact/fanout approval."
+  },
+  "runtime": {
+    "state": "VERIFIED",
+    "observation": "Actual LOCAL Chrome wallgatewall+corner, sharedpreview, thirdbranch rejected; woodiron/order/buildingIDs unchanged; PauseResume/Stop/menu0/errors0",
+    "limitation": "Chromium only, food naturallyadvancesduringunpausedsteps; exactfullmaterials invariance unitchecks. Notnewart/Firefox/fullmatch/publicproof.",
+    "evidence": [
+      {
+        "path": "docs/qa/stone-policy-495/browser-receipt.json",
+        "sha256": "edb93eeec4fdfc441b05fb059c7a1363dbc439dc2da7aec8e5dda7bc4e986089"
+      }
+    ]
+  },
+  "owner": {
+    "state": "UNKNOWN",
+    "limitation": "Approvedplan is taskauthorization; no new shownanimation owneracceptance. Prior490rejection retained."
+  },
+  "release": {
+    "state": "UNKNOWN",
+    "limitation": "No publish. Localshared differs immutable230; futurepairedfrontend/backend/current451+230rollback required."
+  },
+  "handles": [
+    {
+      "id": "root-tests495",
+      "status": "CLOSED",
+      "observation": "103targetedchecks exited0"
+    },
+    {
+      "id": "browser-server495",
+      "status": "CLOSED",
+      "observation": "Actualtrialfinally context/browser/gameclosed; rooms0/serverListeningfalse"
+    },
+    {
+      "id": "workers495",
+      "status": "CLOSED",
+      "observation": "Two workers finalreturns; no retained checks/provider/browser/serverhandles"
+    },
+    {
+      "id": "production230",
+      "status": "INTENTIONALLY_RUNNING",
+      "observation": "Read-only service activePID3408/runtime230;healthrooms0; no restart"
+    }
+  ],
+  "callCounts": {
+    "imageCalls": 0,
+    "newSelectedFrames": 0,
+    "installs": 0,
+    "downloads": 0,
+    "productionMutations": 0
+  },
+  "failuresPreserved": [
+    "Independent source review offmapfogindexalias; boundsfixretained",
+    "Controls preflight ENOENT during rootcontractupdate, preserved workerreceipt",
+    "Rootinitiallocal-linkcheck failed because pendinghandoffreceipt missing; initialreportpreserved",
+    "Root final receipt validator caught controlsREADME pin drift during explicitly reopened workerfinalization; before-refreshreceipt preserved, final pins rebound only after terminal return."
+  ],
+  "inputsOutputs": {
+    "stage": {
+      "stage": "/tmp/rds-495-stage-je7fdyld",
+      "build": "/tmp/rds-495-build-b5_88eja",
+      "output": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/stone-policy-495/browser",
+      "pins": [
+        [
+          "/tmp/rds-495-stage-je7fdyld/shared/sim.js",
+          "c9a01adba8630e89e1c3f195c1b98c08c32e74468d389a55891c664e3906e562"
+        ],
+        [
+          "/tmp/rds-495-stage-je7fdyld/shared/fortification-placement.js",
+          "3282dd68e3e7de07e17c795f878dfd248851c2548d11b066b3e3d87ddef4d971"
+        ],
+        [
+          "/tmp/rds-495-stage-je7fdyld/client/main.js",
+          "ed8e60ebc54da9d4a6f258be153a63bc72034ff8cca011480a2a1b97de4a8957"
+        ],
+        [
+          "/tmp/rds-495-stage-je7fdyld/public/assets/art-v1/fort-202-manifest.json",
+          "77c75ef2bea8cff633b28fe8635e51b5a7efc151bb1871b5b5d9d17850d4271c"
+        ]
+      ]
+    },
+    "runtimePins": [
+      {
+        "path": "shared/sim.js",
+        "sha256": "c9a01adba8630e89e1c3f195c1b98c08c32e74468d389a55891c664e3906e562",
+        "testedStageSHA": "c9a01adba8630e89e1c3f195c1b98c08c32e74468d389a55891c664e3906e562",
+        "same": true
+      },
+      {
+        "path": "shared/fortification-placement.js",
+        "sha256": "3282dd68e3e7de07e17c795f878dfd248851c2548d11b066b3e3d87ddef4d971",
+        "testedStageSHA": "3282dd68e3e7de07e17c795f878dfd248851c2548d11b066b3e3d87ddef4d971",
+        "same": true
+      },
+      {
+        "path": "client/main.js",
+        "sha256": "ed8e60ebc54da9d4a6f258be153a63bc72034ff8cca011480a2a1b97de4a8957",
+        "testedStageSHA": "ed8e60ebc54da9d4a6f258be153a63bc72034ff8cca011480a2a1b97de4a8957",
+        "same": true
+      },
+      {
+        "path": "public/assets/art-v1/fort-202-manifest.json",
+        "sha256": "77c75ef2bea8cff633b28fe8635e51b5a7efc151bb1871b5b5d9d17850d4271c",
+        "testedStageSHA": "77c75ef2bea8cff633b28fe8635e51b5a7efc151bb1871b5b5d9d17850d4271c",
+        "same": true
+      }
+    ],
+    "artPreservation": "5165 originallytracked client/shared/server/public/docsart bytes exact except explicitlynamed plannedfiles; allledgerorderprefixbytes exact",
+    "requirements": "143extractedsectionheaders,4suppliedbytecustodysources; notfullclausePASS"
+  },
+  "productionObserved": {
+    "health": {
+      "ok": true,
+      "rooms": 0
+    },
+    "service": {
+      "active": true,
+      "pid": 3408,
+      "runtime": "releases/230/runtime230"
+    },
+    "distManifestSHA": "42425c68d448f89047ea15fe6e108ec2b25393d34312ae0adb37ff1d9be282fa",
+    "immutableSimSHA": "29233a059ec084bc8577d20a1bccfd28ddc3024b9cb9bf4d5598c22f220f748b",
+    "immutableServerSHA": "4e6a7e82f02d1d856f4ea788863c4836930bc00250be6a5b020ba2bdd8884198",
+    "limitation": "Read-only localstate/pins; not newpublicHTTPS/WANproof"
+  },
+  "nextDependency": [
+    "Supported usable local2D runtime before anyconditionedpilot; no driverrepair/fallbackauthorized",
+    "Independent G6 intendedworking-set/legaldenseprofiling or buildinglifecycle/map implementation",
+    "FutureG7pairedrelease+relevantFirefox/publicqualification; fullroster/actions8dirs/finalfullgameOPEN"
+  ],
+  "handleFinalization": "Controls was temporarily reopened solely to fix retained preflight ENOENT after root created matrix; final worker return terminal, no code/check rerun. Task registry CLOSED after actual return."
+}

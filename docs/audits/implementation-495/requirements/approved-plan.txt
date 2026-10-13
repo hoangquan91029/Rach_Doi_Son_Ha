@@ -1,0 +1,381 @@
+PLEASE IMPLEMENT THIS PLAN:
+# Kế hoạch hoàn thiện Rạch Đôi Sơn Hà và kiểm soát công việc của các agent
+
+## 1. Kết luận audit và mục tiêu
+
+**Giữ kiến trúc game hiện tại. Ưu tiên giải quyết chuyển động của đúng nhân vật gốc, sau đó sản xuất đủ bộ và hoàn thiện các yêu cầu còn lại.**
+
+Lượt này có **hai subagent GPT‑6.1 Sol / Low** audit độc lập về artwork và cơ chế kiểm soát công việc; root kiểm tra thêm simulation, multiplayer, triển khai và hiệu năng. Git hiện ở `2187c0a`, sạch. Không sửa file, tạo ảnh, cài phần mềm hoặc deploy trong lượt Plan này.
+
+| Hạng mục | Quan sát hiện tại | Giới hạn kết luận |
+|---|---|---|
+| Engine | Vite, Canvas2D, simulation tick cố định, Node/WebSocket | Không cần viết lại |
+| Phạm vi nhân vật | 21 identity, 1.080 clip action/hướng, 7.104 vị trí frame dự kiến | Không phải số call được phép chạy |
+| Coverage animation | 3 loop, 397 ô dùng static fallback, 680 ô thiếu | Có loop không đồng nghĩa chuyển động đạt |
+| Villager walk | Người dùng đã từ chối loop490; thử491/492 đều held | Chưa được fanout |
+| Identity | Có 10 world master; thiếu 11, gồm chiến thuyền và 10 lãnh đạo | Portrait không thay được world sprite |
+| Hướng nhìn | Có nguồn cho 11/168 ô neutral view | Chưa phải 11 hướng đã nghiệm thu |
+| Action streaming493 | Đã triển khai local | Chưa chứng minh working set toàn roster/cảnh đông |
+| Tài liệu | Một số entrypoint vẫn chỉ489/490 và giao lại việc493 | Cần sửa chỉ dẫn hiện hành |
+| Production | Service đang chạy immutable230; health local báo0 room | Không thay cho kiểm định HTTPS/WAN mới |
+| Full game | **OPEN** | Không báo hoàn thành từ một pilot hoặc một đợt test |
+
+Những lựa chọn đã chốt trong lượt này:
+
+- Nghiên cứu **2D cục bộ có pose control**; chỉ nhận làm pipeline khi thử thực tế đạt.
+- Hiệu năng hướng tới laptop phổ thông: **30 FPS ổn định khi đông**, mục tiêu60 FPS ở cảnh nhẹ.
+- Tường đá chỉ gồm **thẳng và góc**; chặn cách đặt tạo nút chữ T/chữ thập. Cổng tiếp tục bằng gỗ.
+
+Các cơ chế dưới đây giúp ngăn những lỗi cụ thể. Chúng **không bảo đảm agent không hallucinate**, không chứng minh đã hiểu tài liệu và không tự đánh giá được chuyển động đẹp.
+
+## 2. Ghim hướng dẫn vào project, không tạo thêm nhiều nguồn trạng thái
+
+Khi triển khai, cập nhật trực tiếp hệ thống tài liệu hiện có:
+
+| Tài liệu | Nội dung duy nhất mà tài liệu sở hữu |
+|---|---|
+| [AGENTS.md](/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/AGENTS.md) | Điểm bắt buộc đọc, quy tắc điều phối, giới hạn và đường dẫn đến nguồn đúng |
+| [PROJECT_STATE.md](/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/PROJECT_STATE.md) | Trạng thái quan sát được, bằng chứng, hạn chế |
+| [PROJECT_ROADMAP.md](/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/PROJECT_ROADMAP.md) | Các giai đoạn, phụ thuộc và điều kiện hoàn thành |
+| [NEXT_STEPS.md](/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/NEXT_STEPS.md) | Queue hiện hành; không lặp lại toàn bộ roadmap |
+| `docs/agent-read-contract.json` | Tài liệu/source bắt buộc theo loại công việc |
+| Animation contract, production workflow, prompt templates | Quy tắc camera, pose, nguồn, đóng gói, runtime và mẫu giao việc |
+| **Mới: `docs/COMPLETION_MATRIX.md`** | Truy vết master brief,81–145 và các sửa đổi sau này đến source, bằng chứng và công việc còn thiếu |
+
+`CLAUDE.md` tiếp tục dẫn về `AGENTS.md`, không nhân bản quy định.
+
+Các cập nhật bắt buộc:
+
+- Sửa những chỉ dẫn đang yêu cầu làm lại loader493 hoặc coi491 chưa gọi.
+- Ghi rõ owner đã từ chối walk490;491/492 đóng, không có call còn lại.
+- Đánh dấu những quy định lịch sử đã bị thay thế: cho phép3D, mirror, carry riêng, kiểm tra giải phẫu nhiều vòng hoặc thứ tự infantry-first.
+- Giữ nguyên tài liệu lịch sử, receipt lỗi, raw, nguồn held và rejected.
+- Các tài liệu phụ dẫn đến trạng thái hiện hành thay vì chép lại checkpoint và số liệu dễ lỗi thời.
+- Không mở một checkpoint/project nhỏ cho từng frame. Một action package dùng một receipt tổng hợp.
+
+Mỗi dòng trong completion matrix có: yêu cầu gốc, sửa đổi có hiệu lực, phần triển khai liên quan, bằng chứng hiện có, giới hạn, task còn thiếu và tiêu chí đóng. **Không coi có source là đã chạy đúng trên production.**
+
+## 3. Hợp đồng bắt buộc cho subagent
+
+### Phân quyền
+
+Tối đa ba worker cùng root, tất cả worker dùng chính xác:
+
+```text
+model: gpt-6.1-sol
+reasoning_effort: low
+```
+
+Nếu không tạo được đúng model hoặc hết slot, task chờ; không tự thay model.
+
+| Vai trò | Quyền sở hữu |
+|---|---|
+| Worker A | Một pilot hoặc nhóm slot artwork đã được giao |
+| Worker B | Công cụ pipeline hoặc một phần runtime độc lập |
+| Worker C | Review độc lập, hoặc một phần game/world độc lập |
+| Root | Chọn nguồn, giải quyết xung đột, ghép registry/manifest, state và release |
+
+Người tạo artwork không tự cấp motion PASS cho gói mình tạo. Review chéo hoặc root thực hiện.
+
+### Mẫu giao việc dùng chung
+
+```text
+TASK ID:
+Purpose:
+Model: gpt-6.1-sol
+Reasoning: low
+
+Inputs:
+- Git HEAD và hash các source thực sự phụ thuộc
+- Identity/view/job/receipt chính xác
+- Các quyết định người dùng đang áp dụng
+
+Exclusive outputs:
+- File hoặc thư mục được phép ghi
+- Identity/action/direction/frame slots được sở hữu
+
+Allowed operations:
+- Công cụ đã xác nhận khả dụng
+- Call cap và correction cap nếu có tạo ảnh
+
+Prerequisites:
+- Những đầu vào phải tồn tại và đã được chọn
+- Những approval bắt buộc, nếu có
+
+Acceptance:
+- Kết quả cụ thể cần bàn giao
+- Kiểm tra liên quan
+- Những điều không được suy ra từ kết quả
+
+Stop conditions:
+- Input thay đổi, quyền sở hữu chồng lấn
+- Call còn chưa rõ trạng thái
+- Hết budget hoặc phương pháp bị đóng
+- Thiếu công cụ/nguồn bắt buộc
+
+Return:
+- Output thực tế và hash
+- Kiểm tra đã chạy, lỗi và giới hạn
+- Số call, nguồn held
+- Handle còn mở
+- Phụ thuộc tiếp theo
+```
+
+### Bổ sung tối thiểu vào helper đang có
+
+Không viết một hệ thống orchestration mới. Mở rộng preflight, order runner và receipt validation hiện tại:
+
+| Lỗi cần ngăn | Kiểm soát cần thêm |
+|---|---|
+| Đọc source cũ rồi gọi ảnh/sửa phần phụ thuộc | Claim kiểm tra lại scoped input pins; matching HEAD chưa đủ nếu file đã đổi |
+| Hai worker cùng sửa file/slot | Root đăng ký ownership; phát hiện đường dẫn chồng lấn, parent directory và symlink |
+| Đổi tên order để thử lại cách đã thất bại | Ghi method family, failed parent và lý do cơ chế mới khác thực chất |
+| In-between dùng key chưa được chọn | Prerequisite có source/hash/status cụ thể; không chỉ ghi trong prose |
+| Hạ counter để tạo thêm call | Tính usage từ durable claims và receipt lịch sử đã pin |
+| Đóng order khi provider còn chạy | Chỉ đóng khi claim đã settle và handle đã xác nhận kết thúc |
+| Gọi screenshot là review chuyển động | Receipt phân biệt continuous review, samples và technical playback |
+| Gọi test cũ là test vừa chạy | Lưu command/cwd/output/exit status; kết quả cũ mang `DOCUMENTED_ONLY` |
+
+Đăng ký ownership chỉ kiểm soát workflow và integration; không tuyên bố nó ngăn được mọi lệnh shell tùy ý.
+
+Trạng thái bằng chứng dùng nhất quán: `VERIFIED`, `DOCUMENTED_ONLY`, `INFERRED`, `PROPOSED`, `UNKNOWN`, `FAILED`. Tách riêng **source, technical, motion, runtime, owner, release**.
+
+## 4. Giải quyết nút thắt animation trước khi sản xuất hàng loạt
+
+### Giai đoạn A — kiểm chứng một phương án 2D có điều khiển thực sự
+
+Không gọi lại491/492 bằng cách đổi thứ tự reference hoặc đổi vài câu prompt.
+
+Chọn **một môi trường nghiên cứu cô lập**, dùng Diffusers với:
+
+- Stable Diffusion1.5 làm nền nghiên cứu.
+- ControlNet OpenPose để điều khiển cấu trúc.
+- IP‑Adapter để truyền appearance từ original.
+- Img2img từ whole-frame gốc khi cần bảo toàn bố cục.
+
+Tài liệu chính thức mô tả việc kết hợp IP‑Adapter với ControlNet và có pipeline ControlNet img2img. Đây là cơ sở lựa chọn thử nghiệm, **chưa chứng minh giữ đúng nhân vật trong project**. [IP‑Adapter](https://huggingface.co/docs/diffusers/v0.36.0/using-diffusers/ip_adapter), [ControlNet](https://huggingface.co/docs/diffusers/v0.36.0/api/pipelines/controlnet).
+
+Thực hiện theo thứ tự:
+
+1. Xác minh driver, CUDA/runtime, GPU sử dụng được, RAM/VRAM và dung lượng đĩa. PCI nhận card không đủ.
+2. Nếu thiếu điều kiện hệ thống, ghi blocker cụ thể; không tải model trước hoặc tự sửa driver.
+3. Nếu đạt, tạo một môi trường cô lập. Pin phiên bản thư viện, model revision, giấy phép và hash các file thực tải.
+4. Thử khả năng chạy ở working256 trước. Không tự tăng ảnh mới lên1024/2048 hoặc tải thêm nhiều framework để tìm may mắn.
+5. Guide có thể chứa landmarks/skeleton nội bộ nhưng phải bắt nguồn từ **whole-clothed original**. Output cuối vẫn là một nhân vật minh họa hoàn chỉnh.
+6. Giữ nguyên raw output. Tách nền chỉ phục vụ alpha toàn hình; không ghép bộ phận, bóp hình hoặc dịch từng frame để giả chuyển động.
+
+Capability stage chưa tạo quyền chạy batch. Sau khi runtime hoạt động, root mở đúng một pilot có đầu vào và budget riêng.
+
+### Giai đoạn B — Villager D1
+
+Pilot mới chỉ nhằm sửa những passing pose đang sai:
+
+- Pin original South, các contact hợp lệ hiện có và hai thử nghiệm thất bại491/492.
+- Mô tả rõ chân trụ, chân vung, lane trên màn hình và che khuất cho F2/F6.
+- Tối đa **hai output ban đầu cho hai passing slot và một correction chung** trong lần kiểm chứng cơ chế mới.
+- Không đổi seed liên tục hoặc chạy batch nhiều ảnh ngoài budget.
+- Nếu vẫn đổi vóc dáng hoặc không ra passing pose, giữ output held và đóng thử nghiệm. Không fanout.
+
+Nếu có key dùng được:
+
+1. Chỉ thay slot cần sửa; không tái tạo toàn bộ nguồn hợp lệ.
+2. Hoàn thiện in-between bị ảnh hưởng từ selected neighbors.
+3. Xuất bằng compiler chung, fixed family transform.
+4. Xem một loop10–15 giây ở kích thước gameplay.
+5. Chạy actual Move → Pause/Resume → tới assigned destination → Stop → idle.
+6. Đo stride từ chân trong illustration và phép chiếu thực; không dùng guide làm bằng chứng foot contact, không sao chép stride dân khác hoặc đổi tốc độ simulation.
+
+Kết quả đóng pilot phải là **đúng Villager gốc và chuyển động đạt**, không chỉ có tám file hợp lệ. Owner rejection490 chỉ được thay bởi phản hồi mới gắn với đúng bản đã sửa.
+
+### Giai đoạn C — chứng minh reuse
+
+Sau Villager:
+
+- Áp dụng cùng motion specification và compiler cho original infantry; giữ nguồn470/477 và mọi held source.
+- Tiếp theo thử whole horse wagon415 hoặc cavalry với gait riêng.
+- Đo số call, frame mới đạt, correction, held và thời gian authoring.
+- Không tính frame tái sử dụng là “frame mới đạt ngay”; không gọi workflow hiệu quả chỉ vì schema dùng chung.
+
+Nếu local2D không đạt, kết quả nghiên cứu là **FAILED/HELD**, không tự đổi sang backend khác. Phần game độc lập vẫn tiếp tục; phụ thuộc artwork được báo rõ.
+
+## 5. Workflow sản xuất đủ action và tám hướng
+
+### Đơn vị công việc
+
+Một package là **một identity × một action × tám hướng**, chia thành tám job hướng. Mỗi frame là một slot trong job, không phải một dự án mới.
+
+Trình tự bắt buộc:
+
+1. Tìm nguồn hiện có và loại nguồn held/rejected.
+2. Khóa identity, view, camera, equipment ownership và family layout.
+3. Khóa key của action.
+4. Tạo in-between từ hai selected neighbors.
+5. Compiler xuất atlas, descriptor, contact sheet, preview và báo cáo dung lượng.
+6. Review chuyển động một lần; sửa lỗi nhìn thấy trong correction cap.
+7. Thử hành vi liên quan trong game.
+8. Root ghép manifest và cập nhật coverage.
+
+Key và neighboring-frame workflow phù hợp với hướng dẫn animation của Krita; công cụ sinh ảnh vẫn phải được đánh giá bằng output thật. [Krita animation](https://docs.krita.org/en/user_manual/animation.html).
+
+### Prompt được dựng từ dữ liệu, không viết lại tùy hứng
+
+Giữ các template hiện có, bổ sung những trường bắt buộc:
+
+```text
+TASK: Create ONE finished whole-frame pose of the SAME existing unit.
+
+IDENTITY ANCHOR: {selected original/view}
+EDIT TARGET: {actual target, if applicable}
+SELECTED NEIGHBORS: {previous and next source IDs}
+ACTION / DIRECTION / SLOT: {values}
+PROJECTED FACING: {verified screen vector or label}
+
+INVARIANTS:
+{body volume, face, clothing, equipment ownership,
+camera, lighting, canvas, pivot, family scale}
+
+MOVEMENT:
+{contact/support/swing, screen lanes, occlusion,
+weight transfer, tool motion, intended next pose}
+
+VISIBLE DEFECT TO CORRECT:
+{one concrete defect, only for correction orders}
+
+OUTPUT:
+One complete realistic illustrated unit with transparent background.
+No redesign, mirrored view, cutout assembly, pixel warp or frame fitting.
+```
+
+Preflight chặn placeholder chưa điền, reference sai loại, hash lệch, key held và direction chưa xác minh. Câu “preserve identity” trong prompt **không phải bằng chứng** output đã giữ identity.
+
+### Scope và budget
+
+| Nhóm | Action bắt buộc ở D0–D7 |
+|---|---|
+| Villager | Idle, walk, attack, hit, death, wood, food, iron, build/repair |
+| Infantry, spearman | Idle, walk, attack, hit, death |
+| Firearm | Idle, walk, attack gồm ngắm–bắn–nạp, hit, death |
+| Cavalry | Idle, move, attack, hit, death |
+| Artillery | Idle, move, attack gồm bắn–giật–hồi, hit, destroyed |
+| Horse wagon | Idle, move, load, unload, hit, destroyed |
+| Warship | Idle, move, attack, hit, sink |
+| Transport | Idle, move, load, unload, hit, sink |
+| 12 leader identities | Idle, walk, attack, hit, death, ability; build chỉ khi làm King |
+
+Mặc định giữ idle4, walk8, attack8, hit4, death8, work8, ability6, load/unload8. Tăng frame chỉ khi chuyển động thực tế cần.
+
+Không tạo bộ carry riêng; aim/fire/reload thuộc attack; repair alias build khi cùng thao tác. Không thêm run, charge hoặc deploy.
+
+Sau khi pilot và views đạt, chia hướng: A:D0–D2, B:D3–D5, C:D6–D7. Không giao in-between trước khi endpoint được chọn.
+
+### Scale, shadow và atlas
+
+- Humanoid working256/runtime128; raw cũ giữ nguyên.
+- Fixed pivot và một transform cho cả family; không fit từng frame.
+- `render42 × zoom1.68 = 70,56px` là canvas, không phải chiều cao thân người. Báo cáo body height riêng.
+- Chốt baked/separate shadow theo family; giải quyết Villager D0/D1 đang khác chính sách để tránh bóng kép.
+- Wagon, cavalry, artillery, tàu chỉ mở canvas khi đo được clipping. Nếu cần, version layout cả family.
+- Padding2px, không trim/rotate. Alias family phải thống nhất để không né kiểm tra scale.
+- Coverage phân biệt exact animation, shared clip có chủ đích, static fallback, missing và not applicable.
+
+## 6. Hoàn thiện phần game và thế giới còn lại
+
+Không làm lại những mechanics đã có chỉ vì tài liệu cũ. Completion matrix xác định phần nào cần source fix, art hoặc production qualification.
+
+| Luồng | Công việc còn phải đóng | Nghiệm thu |
+|---|---|---|
+| Lãnh đạo | Tạo11 world master còn thiếu; khóa geometry/equipment; hoàn thiện12 identity | Cùng identity giữa King/General, nguồn lịch sử rõ, ability/build đúng role |
+| Công trình | Construction, hit, death; attack cho công trình thực sự có hành vi bắn | Trạng thái có hình riêng, không dùng living idle thay destruction/construction |
+| Tường/cổng | Tường đá thẳng/góc; cổng gỗ; cấm placement tạo T/cross | Preview và server cùng quy tắc, không mất tài nguyên khi bị từ chối |
+| Maps | Hoàn thiện bố cục hai map, bờ nước, rừng, núi, hill edges và repetition | Readability, occlusion/picking, tuyến bộ/thủy và supply routes trong game thật |
+| Gameplay | Đối chiếu kinh tế, AI, leadership, Residence, logistics, terrain/fog với requirement matrix | Sửa gap có bằng chứng; không đổi balance để che animation/navigation lỗi |
+| Multiplayer | Xác minh phiên bản release đúng create/join/ready/reconnect/victory/rematch | Hai client thật, server authoritative, không severe desync |
+| Release | Đưa bộ đồ họa được nghiệm thu thành mặc định | Người dùng mở bare HTTPS URL thấy bản hoàn chỉnh, không cần query thử nghiệm |
+
+Quy tắc tường mới áp dụng cho **cách đặt mới**: kiểm tra topology của vị trí đặt và các hàng xóm bị tác động, bao gồm wall/gate liên quan. Node tối đa hai nhánh, tạo thẳng hoặc góc; server từ chối T/cross với lý do rõ. Không tự xóa công trình đang tồn tại hoặc kick room. Đây là thay đổi simulation, phải đi trong paired release.
+
+Với công trình, xác định state duration từ gameplay trước khi sản xuất key. Không áp ngân sách frame của humanoid lên tất cả công trình.
+
+Giữ những mechanics đã xác nhận trong source:
+
+- General chết mới gây defeat theo luật hiện có.
+- Residence bị phá không gây thua ngay; chỉ King dựng lại sau khi đã mất.
+- Food có inventory và chuỗi vận chuyển thực.
+- Wood/iron gửi vào kho rồi chuyển về stockpile theo thiết kế hiện hành; không tự thêm xe chở gỗ/sắt.
+- Animation chỉ trình bày damage, cargo, cooldown và kết quả do simulation quyết định.
+
+## 7. Hiệu năng, kiểm tra và release
+
+### Hiệu năng
+
+Không preload toàn bộ7.104 frame: padded RGBA tối thiểu đã khoảng472MiB, chưa tính terrain và browser overhead.
+
+Giữ giới hạn **128MiB decoded/64MiB encoded** hiện hành; hoàn thiện và đo working set của loader493:
+
+- First use, đổi action, quay lại action đã evict.
+- Đổi unit/bank, chuyển map và về menu.
+- Mất mạng sau tải: phân biệt trang đã cache với bank chưa tải.
+- Không hứa offline reload hoặc toàn roster offline nếu chưa có cơ chế tương ứng.
+
+Profile chuẩn: desktop1920×1080, DPR1, default zoom; lưu chính xác CPU/GPU/RAM/browser thực thử.
+
+- Cảnh nhẹ: mục tiêu60 FPS.
+- Cảnh đông: mục tiêu p95 frame time≤33,3ms, p99≤50ms trong đoạn đo60 giây sau warmup.
+- Kiểm tra20/50/100/200/240 unit hợp lệ. Cap hiện tại120 mỗi bên; không tăng cap để chứng minh500.
+- Server20Hz: đo tải1/2/4/8 room tới giới hạn cấu hình; không suy từ benchmark simulation đơn lẻ thành live-room PASS.
+- Nếu máy không đạt, tối ưu draw/load/culling và admission capacity; không giảm tốc simulation hoặc nâng memory cap để test qua.
+
+Synthetic benchmark chỉ hỗ trợ tìm bottleneck; không thay ordinary-gameplay qualification.
+
+### Kiểm tra theo thay đổi
+
+| Thay đổi | Kiểm tra bắt buộc |
+|---|---|
+| Helper/dispatch | Negative tests cho ownership, stale pins, budget, dependency và receipt |
+| Một action bank | Nguồn/layout/timing + một loop thật |
+| Walk | Move, turn, Pause/Resume, assigned arrival, Stop/idle |
+| Combat | Attack/hit interruption, authoritative impact, death giữ frame cuối |
+| Load/unload/ability | Pose bám event, không làm thay đổi cargo/cooldown |
+| Unit hoàn chỉnh | Cảnh chuyển trạng thái, action đặc trưng, hit/death; Chrome và Firefox liên quan |
+| Mechanics/shared simulation | Regression đúng phạm vi; kiểm tra server/client tương ứng |
+| Release cuối | Clean HTTPS, hai mode, hai map, reconnect/rematch và trận hoàn chỉnh |
+
+Không chạy fullsuite/fullmatch mỗi ảnh. Giữ lỗi đầu tiên và kết quả sửa trong cùng receipt.
+
+### Release
+
+- Build trong isolated stage với cwd, Vite config và absolute outDir cụ thể.
+- Freeze source/build trước browser trial; không sửa canonical giữa preservation guard.
+- Snapshot **frontend451 + backend230 thực tế** làm rollback cho lần thay shared tiếp theo; không nhầm archive rollback cũ của451 là snapshot451.
+- Khi navigation/shared simulation thay đổi, phát hành frontend và backend cùng phiên bản.
+- Root kiểm tra live rooms, không kick room; chờ điều kiện chuyển an toàn.
+- Smoke sau publish kiểm tra đúng response hashes, asset loading và hành vi vừa đổi.
+
+Nghiệm thu cuối gồm bốn tổ hợp **Single Player/Online × Delta/Coast**, kết thúc trận bằng gameplay bình thường. Online dùng hai browser/client, có reconnect, victory sync và rematch. Bổ sung một lượt desktop ở mạng ngoài máy host để đóng WAN/device requirement.
+
+## 8. Thứ tự triển khai và điều kiện đóng
+
+| Giai đoạn | Kết quả cần có | Điều kiện chuyển tiếp |
+|---|---|---|
+| G0 | Sửa entrypoint, completion matrix, task ownership và các lỗ hổng helper cụ thể | Negative checks đạt; không còn queue giao lại việc đã xong |
+| G1 | Một môi trường local2D được xác minh | Runtime/model thật hoạt động; hoặc blocker được xác định rõ |
+| G2 | Villager D1 được sửa | Đúng identity, loop đạt, actual travel/Stop đạt |
+| G3 | Infantry và archetype ngựa/xe chứng minh reuse | Kết quả motion thật và số liệu authoring |
+| G4 | Hoàn thiện từng unit theo action×8dirs | Không tính static fallback là xong |
+| G5 | Building states, stone-wall policy và hai map | Art/state/readability và mechanics tương ứng đạt |
+| G6 | Working set, cảnh đông và live-room capacity | Đạt profile đã chốt, không nới giới hạn để che lỗi |
+| G7 | Paired public release và kiểm định cuối | Public HTTPS chơi đủ hai mode/hai map, toàn bộ critical criteria đóng |
+
+G5 và các phần G6 không phụ thuộc ảnh mới được chạy song song với G1–G4. Không chờ art để làm lại audit đã hoàn tất; chỉ nhận công việc độc lập còn thiếu.
+
+Đợt triển khai đầu tiên:
+
+- **Root:** cập nhật nguồn trạng thái và phân quyền task.
+- **Worker A:** xác minh khả năng local2D; chưa gọi tạo ảnh trước capability gate.
+- **Worker B:** bổ sung dispatch/ownership/dependency/budget checks vào helper hiện có.
+- **Worker C:** triển khai quy tắc tường thẳng/góc cùng kiểm tra client/server, trong phạm vi file riêng.
+- Root tích hợp từng phần sau independent review; chưa deploy chung với thử nghiệm artwork.
+
+Mỗi đợt kết thúc bằng một handoff ngắn: output thực tế, kiểm tra, lỗi/unknown, call count, handle closure và dependency tiếp theo. Không cần hỏi người dùng duyệt từng frame; chỉ cần phản hồi ở pilot quan trọng hoặc quyết định thay đổi identity/phương pháp.
+
+**Project chỉ được đánh dấu hoàn thành khi completion matrix không còn critical requirement mở, và người dùng bình thường có thể mở public HTTPS để chơi trọn vẹn cả hai mode.** Việc ghim tài liệu, helper PASS hay một pilot đẹp đều chỉ đóng đúng phần tương ứng.

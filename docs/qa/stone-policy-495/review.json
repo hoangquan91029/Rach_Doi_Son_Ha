@@ -1,0 +1,99 @@
+{
+  "schema": "rds-stone-policy-review/v1",
+  "observedAtUTC": "2026-10-13T01:19:54.937178+00:00",
+  "reviewer": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low",
+    "independentOfProducer": true
+  },
+  "status": "SOURCE_REVIEW_CORRECTION_VERIFIED_BROWSER_OPEN",
+  "sourcePins": [
+    {
+      "path": "shared/fortification-placement.js",
+      "sha256": "3282dd68e3e7de07e17c795f878dfd248851c2548d11b066b3e3d87ddef4d971"
+    },
+    {
+      "path": "shared/sim.js",
+      "sha256": "c9a01adba8630e89e1c3f195c1b98c08c32e74468d389a55891c664e3906e562"
+    },
+    {
+      "path": "client/main.js",
+      "sha256": "ed8e60ebc54da9d4a6f258be153a63bc72034ff8cca011480a2a1b97de4a8957"
+    },
+    {
+      "path": "tests/fortification-placement495.test.js",
+      "sha256": "bb0c4304881bdee24fa9c70ed37aed8a0c04718160107afebe66ca431765892f"
+    },
+    {
+      "path": "client/fortification-topology.js",
+      "sha256": "80049674ec4907421f22498615c3ed09131d12476609d5d568caf67f0e822f18"
+    }
+  ],
+  "method": "Read policy, build branch, preview handlers/frame loop, focused tests, renderer topology; inspected relevant working diff. No tests/build/browser run by reviewer. Root reported68tests is DOCUMENTED_ONLY here.",
+  "findings": [
+    {
+      "priority": "P2",
+      "path": "client/main.js",
+      "symbol": "previewFortification",
+      "line": 82,
+      "problem": "Off-map x/y are not bounds checked before flattened fog indexing. x=-1 or x=map.width can alias a valid neighboring-row fog entry, causing an outside-map pointer site to be classified topology allowed/blocked instead of unknown.",
+      "reproduction": "For width64, preview x=-1,y=1 reads visible[63]; if that in-map cell is visible, an invalid off-map preview appears visible. Candidate policy accepts finite off-map coordinates because map bounds intentionally belong to authority.",
+      "impact": "Misleading topology preview only; authoritative build bounds guard still rejects outside-map commands before costs/orders.",
+      "recommended": "Require integer x/y within0<=x<width,0<=y<height before fog indexing; invalid coordinates yield visible=false/unknown.",
+      "resolution": "SOURCE_CORRECTION_VERIFIED"
+    }
+  ],
+  "verifiedSourceObservations": [
+    "Candidate and four immediate neighbors re-evaluated after candidate inserted into local Set; every newly changed degree>2 blocked.",
+    "Living construction sites included; dead/enemy/embarked/non-grid entities excluded; same-owner exact .5-grid adjacency.",
+    "Already occupied friendly cell bypasses topology as ordinary footprint overlap guard runs first in authority.",
+    "Policy mutates only local Set, never entities. Build topology check precedes path/cost/spend/add/navVersion/builder order/attack cancellation; command wrapper cancels episodes only result.ok.",
+    "Role/residence/fog/bounds/terrain/coastal/footprint guards unchanged in shared/sim.js diff.",
+    "Preview and click use same Math.round(unprojected coordinate); authority normalizes transmitted coordinate Math.floor+.5. This preserves existing click convention.",
+    "Preview updates each render and pointermove, clears on pointerleave/cancel/buildclick; text explicitly reserves terrain/clearance/resource authority.",
+    "Focus tests cover candidateT/cross, neighbor thirdbranch, construction reservation, dead/enemy/embarked/off-grid exclusions, untouched unrelated junction, no spend/order/nav/entitymutation."
+  ],
+  "limitations": [
+    "No browser/art/motion/release PASS",
+    "No whole-repo guard or shared writes",
+    "Preview has only visible filtered view; renderer completed-link topology excludes construction while future placement deliberately reserves construction",
+    "Existingjunctions remain and are not repaired; touching anexisting degree>2 junction can reject although unrelated placement permitted"
+  ],
+  "handles": "No persistent own browser/server/test handles opened",
+  "exclusiveOutput": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/stone-policy-495/review.json",
+  "originalSourcePins": [
+    {
+      "path": "shared/fortification-placement.js",
+      "sha256": "3282dd68e3e7de07e17c795f878dfd248851c2548d11b066b3e3d87ddef4d971"
+    },
+    {
+      "path": "shared/sim.js",
+      "sha256": "c9a01adba8630e89e1c3f195c1b98c08c32e74468d389a55891c664e3906e562"
+    },
+    {
+      "path": "client/main.js",
+      "sha256": "3be893a3bdf910806ac9acde0f1db684038bdc708b9a21a7c6a0d407de48a12f"
+    },
+    {
+      "path": "tests/fortification-placement495.test.js",
+      "sha256": "bb0c4304881bdee24fa9c70ed37aed8a0c04718160107afebe66ca431765892f"
+    },
+    {
+      "path": "client/fortification-topology.js",
+      "sha256": "80049674ec4907421f22498615c3ed09131d12476609d5d568caf67f0e822f18"
+    }
+  ],
+  "correctionReview": {
+    "observedAtUTC": "2026-10-13T01:20:23.303808+00:00",
+    "path": "client/main.js",
+    "sha256": "ed8e60ebc54da9d4a6f258be153a63bc72034ff8cca011480a2a1b97de4a8957",
+    "observedLines": [
+      {
+        "line": 82,
+        "text": " const tile=renderer.unproject(app.buildPointer.x,app.buildPointer.y),x=Math.round(tile.x),y=Math.round(tile.y),inBounds=x>=0&&y>=0&&x<app.state.map.width&&y<app.state.map.height,visible=inBounds&&app.state.fog?.visible?.[y*app.state.map.width+x];"
+      }
+    ],
+    "observation": "Explicit x/y bounds precede visible fog index with short-circuit inBounds&&; off-map site no longer reads neighboring-row fog. Original finding preserved above.",
+    "scope": "Source-only correction review; no browser/UI acceptance or tests run by reviewer."
+  }
+}

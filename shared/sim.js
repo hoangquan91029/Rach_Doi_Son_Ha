@@ -1,4 +1,5 @@
 import {visibleUnitAction,beginActionEpisode,cancelActionEpisode} from './visible-action.js';
+import {fortificationPlacement} from './fortification-placement.js';
 import {UNITS,BUILDINGS,CHARACTERS,MAPS,TERRAIN,BALANCE,TICK_RATE,SYNERGIES} from './data.js';
 const DT=1/TICK_RATE, sq=(a,b)=>(a.x-b.x)**2+(a.y-b.y)**2, dist=(a,b)=>Math.sqrt(sq(a,b));
 const living=e=>e.hp>0&&!e.embarked;
@@ -202,6 +203,7 @@ function commandImpl(s,p,c){
   if(c.building==='residence'&&(es[0].type!=='king'||s.entities.some(e=>e.owner===p&&e.type==='residence'&&e.hp>0)))return reject('Only the King may replace a destroyed Main Residence');
   if(c.building!=='residence'&&es[0].type!=='villager')return reject('Select a villager');if(!bounds(s,c.x,c.y))return reject('Invalid construction site');
   const x=Math.floor(c.x)+0.5,y=Math.floor(c.y)+0.5;if(!s.fog[p].visible[Math.floor(y)*s.map.width+Math.floor(x)])return reject('Construction site must be visible');if(!placement(s,p,c.building,x,y))return reject('Construction site blocked or shipyard is inland');
+  const topology=fortificationPlacement(s.entities,p,c.building,x,y);if(!topology.ok)return reject(topology.error);
   const route=path(s,es[0],{x,y},d.radius+1.25);if(dist(es[0],{x,y})>d.radius+1.25&&(!route.length||dist(route.at(-1),{x,y})>d.radius+1.25))return reject('Builder cannot reach this site');
   const cost={...d.cost};if(c.building==='residence')cost.wood*=s.players[p].modifiers.rebuild;if(!affordable(s,p,cost))return reject('Not enough resources');spend(s,p,cost,es[0]);const b=add(s,p,c.building,x,y,{hp:d.hp*0.12,spentCost:cost,construction:{remaining:d.buildTime,total:d.buildTime,builder:es[0].id},cargo:{food:0,wood:0,iron:0,units:[]}});s.navVersion++;cancelAttack(es[0]);es[0].order={type:'build',target:b.id};es[0].path=[];es[0].retryPath=0;return {ok:true,entity:b.id};
  }

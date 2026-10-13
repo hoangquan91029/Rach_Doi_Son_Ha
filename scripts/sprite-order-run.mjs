@@ -3,10 +3,13 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {createHash,randomUUID} from 'node:crypto';
 import {prepareOrder,validateFiniteOrder,validateMaster} from './sprite-prompts.mjs';
+import {validateGuardedOrder,validateClaimAccounting,validateTaskReceipt,validateTaskContracts,validateOwnedOutput} from './agent-task-contract.mjs';
 const trustedLedger=fileURLToPath(new URL('../docs/art/pipeline/unit-production/order-ledger.json',import.meta.url));
+const trustedRoot=fileURLToPath(new URL('..',import.meta.url));
 const hash=bytes=>createHash('sha256').update(bytes).digest('hex');
 /** Dependency injection is for isolated fixtures. Production CLI never accepts a ledger or preparer override. */
-export function createOrderRunner({ledgerPath=trustedLedger,prepare=prepareOrder}={}){
+export function createOrderRunner({ledgerPath=trustedLedger,prepare=prepareOrder,root=trustedRoot,taskRegistryPath=path.join(root,'docs/audits/implementation-495/tasks.json')}={}){
+ const contracts=()=>{const registration=JSON.parse(fs.readFileSync(taskRegistryPath));if(registration.schema!=='rds-agent-tasks/v1')throw Error('Invalid trusted task registration');return validateTaskContracts(root,registration.tasks);};
  const mutate=(expectedLedgerSHA,action)=>{
   if(!/^[a-f0-9]{64}$/.test(expectedLedgerSHA||''))throw Error('Expected ledger SHA required');
   const lock=ledgerPath+'.lock';let fd;
@@ -23,8 +26,9 @@ export function createOrderRunner({ledgerPath=trustedLedger,prepare=prepareOrder
   }finally{if(temp&&fs.existsSync(temp))fs.unlinkSync(temp);fs.closeSync(fd);fs.unlinkSync(lock);}
  };
  return {
-  claim({expectedLedgerSHA,orderId,slotIndex,kind,values,references}){return mutate(expectedLedgerSHA,ledger=>{
+  claim({expectedLedgerSHA,orderId,slotIndex,kind,values,references,taskId,expectedInputs}){return mutate(expectedLedgerSHA,ledger=>{
    const order=ledger.orders.find(o=>o.id===orderId),slot=validateFiniteOrder(order,values,slotIndex);
+   validateGuardedOrder(root,ledger,order,{taskId,expectedInputs,slotIndex},order.enforcement?contracts():undefined);
    if(slot.template!==kind)throw Error('Order template slot mismatch');
    const prepared=prepare(orderId,slotIndex,kind,values,references);
    const token=randomUUID(),requestSHA=hash(JSON.stringify({kind,values,references,prompt:prepared.prompt}));
@@ -34,16 +38,29 @@ export function createOrderRunner({ledgerPath=trustedLedger,prepare=prepareOrder
   });},
   settle({expectedLedgerSHA,orderId,slotIndex,token,output,failure}){return mutate(expectedLedgerSHA,ledger=>{
    const order=ledger.orders.find(o=>o.id===orderId),slot=order?.slots?.[slotIndex];
+   if(order)validateClaimAccounting(order);
    if(!token||slot?.status!=='used'||slot.claim?.token!==token)throw Error('Claim token/order/slot mismatch or already settled');
    if(Boolean(output)===Boolean(failure))throw Error('Exactly one output or failure required');
-   if(output)validateMaster(output);else if(typeof failure!=='string'||!failure.trim())throw Error('Failure description required');
+   if(output){
+    validateMaster(output);
+    if(order.enforcement){const task=contracts().find(c=>c.id===order.enforcement.taskId);if(task?.status!=='ACTIVE')throw Error('Settlement requires active registered task');validateOwnedOutput(root,task,output.path);}
+   }else if(typeof failure!=='string'||!failure.trim())throw Error('Failure description required');
    slot.status='held';slot.settlement={token,settledAt:new Date().toISOString(),...(output?{output:{path:path.resolve(output.path),sha256:output.sha256}}:{failure}),approval:false};
    return {orderId,slotIndex,status:'held',approval:false,scope:'Custody only; selection requires separate review'};
+  });},
+  close({expectedLedgerSHA,orderId,taskId,receipt}){return mutate(expectedLedgerSHA,ledger=>{
+   const order=ledger.orders.find(o=>o.id===orderId);
+   if(!order?.enforcement||order.status!=='OPEN'||order.enforcement.taskId!==taskId)throw Error('Closure requires OPEN guarded order/task');
+   const task=contracts().find(c=>c.id===taskId);if(task?.status!=='ACTIVE')throw Error('Closure requires active registered task');
+   validateClaimAccounting(order);validateTaskReceipt(root,receipt);
+   if(receipt.taskId!==taskId||receipt.handles.some(h=>h.status==='UNRESOLVED')||order.slots.some(s=>s.claim&&(!s.settlement||!receipt.handles.some(h=>h.id===s.claim.token&&h.status==='CLOSED'))))throw Error('Unresolved claim/handle or closure receipt task mismatch');
+   order.status='CLOSED';order.closed=true;order.closure={taskId,receiptSHA:hash(JSON.stringify(receipt)),scope:'Custody closure only; no approval, refund or handle authenticity guarantee'};
+   return {orderId,status:order.status,approval:false};
   });}
  };
 }
 if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)){
- try{const [operation,requestPath,...extra]=process.argv.slice(2);if(!['claim','settle'].includes(operation)||!requestPath||extra.length)throw Error('Usage: sprite-order-run.mjs claim|settle request.json');
-  const request=JSON.parse(fs.readFileSync(requestPath));if('ledgerPath'in request||'prepare'in request)throw Error('CLI trusted ledger cannot be overridden');console.log(JSON.stringify(createOrderRunner()[operation](request),null,2));
+ try{const [operation,requestPath,...extra]=process.argv.slice(2);if(!['claim','settle','close'].includes(operation)||!requestPath||extra.length)throw Error('Usage: sprite-order-run.mjs claim|settle|close request.json');
+  const request=JSON.parse(fs.readFileSync(requestPath));if(['ledgerPath','prepare','root','taskRegistryPath'].some(k=>k in request))throw Error('CLI trusted ledger/registration cannot be overridden');console.log(JSON.stringify(createOrderRunner()[operation](request),null,2));
  }catch(error){console.error(error.message);process.exitCode=1;}
 }

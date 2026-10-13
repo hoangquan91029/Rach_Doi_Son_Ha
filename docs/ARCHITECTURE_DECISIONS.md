@@ -17,4 +17,9 @@
 
 A motion record is a semantic plan, not a means to reconstruct every view from one picture. Occlusion and clothing still require whole-frame authorship. A schema only enforces its implemented checks.
 
-Current source/local qualification/public release are distinct. Future shared changes require pairedfrontend/backend release with verified451frontend+230backend rollback. This audit edits docs and verification helpers only.
+Current source/local qualification/public release are distinct. Future shared changes require pairedfrontend/backend release with verified451frontend+230backend rollback. Implementation495 adds guarded task dispatch and LOCAL straight/corner fortification policy; production unchanged.
+
+
+## Approved495 decisions
+
+Local2D research uses one isolated SD1.5/ControlNetOpenPose/IP-Adapter path only after capability. Failed runtime495 is a prerequisite gap, no authorized driver repair/download/fanout. Dense laptop30FPS target/light60FPS; exact measured profile. New stonewall/woodgate placement rejectsT/cross for candidate+affectedneighbors inclconstruction; existing sites retained. Root ownership and scoped pins in495 taskindex; no promise of zero hallucination.

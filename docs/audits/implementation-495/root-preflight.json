@@ -1,0 +1,72 @@
+{
+  "schema": "rds-agent-preflight/v1",
+  "task": "audit",
+  "head": "2187c0a873cbe1731e8322d59b53b974081f2f87",
+  "status": " M client/main.js\n M scripts/agent-preflight.mjs\n M scripts/sprite-order-run.mjs\n M shared/sim.js\n M tests/agent-preflight.test.js\n?? docs/art/pipeline/local2d-capability-495/\n?? docs/audits/implementation-495/\n?? docs/qa/stone-policy-495/\n?? scripts/agent-task-contract.mjs\n?? shared/fortification-placement.js\n?? tests/agent-task-contract.test.js\n?? tests/fortification-placement495.test.js",
+  "readFiles": [
+    {
+      "path": "docs/agent-read-contract.json",
+      "sha256": "5e85c1c9a649aa6d71d03f6dd2b69a4e54f6b77c80f157a26e648a07f8ec3f99",
+      "bytes": 986
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "f157cd34b996be9b37e4a7d26f6417592dad55129d077c2524d57b7170aeda88",
+      "bytes": 7405
+    },
+    {
+      "path": "docs/PROJECT_STATE.md",
+      "sha256": "c8017faa05f5edfe02e86c77ef5a214f1f9d45a987abfad719d899fecebd9f08",
+      "bytes": 8392
+    },
+    {
+      "path": "docs/NEXT_STEPS.md",
+      "sha256": "1c3d15f2410718fa24ac7891f312e6790fb4ad1ae5244e9375fd8a5f915b3e20",
+      "bytes": 2838
+    },
+    {
+      "path": "docs/ARCHITECTURE_DECISIONS.md",
+      "sha256": "0b2b348bff0b0ffa6305e1aebf9d713faca7b9b10fb913df81640758ce1389c8",
+      "bytes": 2157
+    },
+    {
+      "path": "docs/PROJECT_ROADMAP.md",
+      "sha256": "45876b3c879a460be5f42a8705fad244cf4f7d79ba929d10b0e82e6ac619a8e6",
+      "bytes": 4190
+    },
+    {
+      "path": "docs/art/pipeline/ANIMATION_RESEARCH.md",
+      "sha256": "b6a1abb8c76d416a29a3c7bee95e3ea05502be71c2c02002a43bfbd9c43808d9",
+      "bytes": 5913
+    }
+  ],
+  "sources": [
+    {
+      "path": "shared/data.js",
+      "sha256": "ffc3f45adc58f212066d3763c591377ce15b9f6ac78e4685a95fc3ac747818e1",
+      "bytes": 8265
+    },
+    {
+      "path": "shared/unit-action-spec.js",
+      "sha256": "04d987298651c73187920391754f729fd203c1313536eb54c29c629048db05bf",
+      "bytes": 1686
+    },
+    {
+      "path": "client/art-assets.js",
+      "sha256": "c134c41b8d0470fa1af88d655e254c5e7e76f14026b2c4950a05ed8c93018db0",
+      "bytes": 22743
+    }
+  ],
+  "assignment": null,
+  "ledger": {
+    "path": "docs/art/pipeline/unit-production/order-ledger.json",
+    "sha256": "41befce34c8a2c628f5057051b4389d683fd0191c184113c7d9b397a475c8abd",
+    "locked": false,
+    "unresolvedClaims": []
+  },
+  "limits": [
+    "Existence and byte hashes do not establish understanding, permission, approval or tool availability.",
+    "Explicit invocation only; this helper is not a mandatory global hook.",
+    "Externally verify tools and actual live handles/preservation guards; no guards are declared closed."
+  ]
+}

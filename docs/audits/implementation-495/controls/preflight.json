@@ -1,0 +1,82 @@
+{
+  "schema": "rds-agent-preflight/v1",
+  "task": "audit",
+  "head": "2187c0a873cbe1731e8322d59b53b974081f2f87",
+  "status": " M AGENTS.md\n M client/main.js\n M docs/ARCHITECTURE_DECISIONS.md\n M docs/NEXT_STEPS.md\n M docs/PROJECT_ROADMAP.md\n M docs/PROJECT_STATE.md\n M docs/agent-read-contract.json\n M docs/art/pipeline/IMAGE_GENERATION_TEMPLATES.md\n M docs/art/pipeline/SPRITE_PRODUCTION_WORKFLOW.md\n M docs/art/pipeline/unit-production/README.md\n M docs/art/pipeline/unit-production/order-ledger.json\n M scripts/agent-preflight.mjs\n M scripts/sprite-order-run.mjs\n M scripts/unit-art-coverage.mjs\n M shared/sim.js\n M tests/agent-preflight.test.js\n?? docs/AGENT_EXECUTION_CONTRACT.md\n?? docs/COMPLETION_MATRIX.md\n?? docs/art/pipeline/local2d-capability-495/\n?? docs/audits/implementation-495/\n?? docs/qa/stone-policy-495/\n?? scripts/agent-task-contract.mjs\n?? shared/fortification-placement.js\n?? tests/agent-task-contract.test.js\n?? tests/fortification-placement495.test.js",
+  "readFiles": [
+    {
+      "path": "docs/agent-read-contract.json",
+      "sha256": "3063b312cbde80b414c7718a17f308f53cab8e7714b944e49657cf62b160c093",
+      "bytes": 1096
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "f153ddf7216bfb982efc024e0a1ad5cd0ca769e149e69eb71586988dfdf5173c",
+      "bytes": 8569
+    },
+    {
+      "path": "docs/PROJECT_STATE.md",
+      "sha256": "c9509c4d4dac1e22eb0183a50c0edaff903d305a04bd9a187bc8256878caadd3",
+      "bytes": 11236
+    },
+    {
+      "path": "docs/NEXT_STEPS.md",
+      "sha256": "b6ea715bd55cc56bdfe831250c6a1fcabf78d9fa17f4a939119d86f6b570f7a1",
+      "bytes": 2298
+    },
+    {
+      "path": "docs/ARCHITECTURE_DECISIONS.md",
+      "sha256": "9698dfab772f18700081e2a252275d0fb14e6b8d1dd2d60eb23c2f72d0c1e319",
+      "bytes": 2698
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "f55b464de4b4e2a5833f6b8c25242a921d24deec4acd735133acbc08c9bdbaaa",
+      "bytes": 4897
+    },
+    {
+      "path": "docs/PROJECT_ROADMAP.md",
+      "sha256": "10254285ea79f0f9dbae5f922e56d3cd1bd7a9bfb6ea289eda274fb39ad71fa8",
+      "bytes": 7594
+    },
+    {
+      "path": "docs/art/pipeline/ANIMATION_RESEARCH.md",
+      "sha256": "b6a1abb8c76d416a29a3c7bee95e3ea05502be71c2c02002a43bfbd9c43808d9",
+      "bytes": 5913
+    },
+    {
+      "path": "docs/COMPLETION_MATRIX.md",
+      "sha256": "e10eb3b7dd1c289383a047027097bb4773218cd3b55550347eb5b9836079dd1c",
+      "bytes": 30666
+    }
+  ],
+  "sources": [
+    {
+      "path": "scripts/agent-preflight.mjs",
+      "sha256": "c39ac0bcd8392b6f995982aa7d0598d67acc8114ebf2e6800a2c44c2126082fe",
+      "bytes": 4699
+    },
+    {
+      "path": "scripts/sprite-order-run.mjs",
+      "sha256": "a105dd089da37cb38ec9ebfcaa2a5758f4131f5de1bc0137e1604d623456b034",
+      "bytes": 6114
+    },
+    {
+      "path": "scripts/agent-task-contract.mjs",
+      "sha256": "85391ab4ea0058a52b3462ef1bbf88f0e81bb2d373a7cff7f6bc4ff3e3d3e0b9",
+      "bytes": 11335
+    }
+  ],
+  "assignment": null,
+  "ledger": {
+    "path": "docs/art/pipeline/unit-production/order-ledger.json",
+    "sha256": "48cdd19d3148b0d0838500dce65fa94bc47bf5970d636adbce1dcad873bb3f50",
+    "locked": false,
+    "unresolvedClaims": []
+  },
+  "limits": [
+    "Existence and byte hashes do not establish understanding, permission, approval or tool availability.",
+    "Explicit invocation only; this helper is not a mandatory global hook.",
+    "Externally verify tools and actual live handles/preservation guards; no guards are declared closed."
+  ]
+}

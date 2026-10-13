@@ -1,0 +1,43 @@
+✔ reads actual bytes, hashes and git without modifying tracked or untracked state (28.462394ms)
+✔ rejects missing required read and missing source (18.612705ms)
+✔ rejects lexical and symlink repository escapes (12.531868ms)
+✔ unresolved durable claims deny art but remain intact and visible in audit (19.760831ms)
+✔ ledger lock denies art and settled claims do not deny art (19.482799ms)
+✔ rejects unknown task and invalid contract (12.939492ms)
+✔ optional registered assignment verifies scoped source bytes without treating unrelated dirty file as stale (26.38567ms)
+✔ ownership rejects parent/child overlap and slot duplication across active workers (3.970177ms)
+✔ nonexistent output under symlink aliases is compared physically and escapes denied (0.87147ms)
+✔ scoped snapshot rejects omitted stale duplicate and changed inputs (1.167634ms)
+✔ guarded runner denies stale input and unowned slot without consuming ledger (2.48871ms)
+✔ renamed closed method and failed-parent unsupported new family fail closed (2.367921ms)
+✔ selected prerequisite rejects held phase stale byte and foreign source (1.786825ms)
+✔ durable accounting catches counter reset after held settlement and mismatched token (3.943706ms)
+✔ receipt refuses old check as rerun failed check PASS still review owner rejection and local release (1.403743ms)
+✔ closure refuses unsettled claim and unknown handles; held settlement closes without refund or approval (3.033456ms)
+✔ guarded output settlement rejects other task path and closes only actual owned claim token (2.563663ms)
+✔ finite view traverses render references preparation and durable claim once (6.815177ms)
+✔ view refuses action values kind swaps caps extra slots unknown ownership and unknown refs without consumption (1.060296ms)
+✔ same identity disjoint action jobs bind exact registry records and reject cross-job stale held and fallback refs (1.927192ms)
+✔ identical whole PNG is selected independently by immutable job metadata for neighbor and edit target (2.359434ms)
+✔ claim consumes before dispatch; duplicate/concurrent expected revision refuses (7.127493ms)
+✔ hash and finite caps refuse without consuming (1.320036ms)
+✔ successful output settlement is held with pinned custody, never selected (1.477038ms)
+✔ failed output remains held with no automatic retry; crashed claims stay consumed (0.833087ms)
+✔ preparation failure consumes nothing and removes own lock (0.645405ms)
+✔ second claimant cannot enter while first prepares under exclusive lock (0.685228ms)
+✔ templates require all strict placeholders before generation (3.074431ms)
+✔ required poses and scoped aliases do not create carry or foreign actions (0.638946ms)
+✔ all registry master pins resolve to retained exact bytes (21.573374ms)
+✔ pre-call preparation binds identity camera primary and selected neighbors (22.763474ms)
+✔ existing477 order is finite exhausted and its receipt pins remain exact (0.417706ms)
+✔ non-view jobs cannot use original D0 to bypass missing direction locks (4.436082ms)
+✔ finite order checks locked D0 slots and refuses future views and exhausted orders (0.972638ms)
+✔ edit target precedes same-original appearance anchor and binds current selected phase/job (14.133883ms)
+ℹ tests 35
+ℹ suites 0
+ℹ pass 35
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 203.773733

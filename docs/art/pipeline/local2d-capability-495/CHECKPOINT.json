@@ -1,0 +1,200 @@
+{
+  "schema": "rds-local2d-capability/v1",
+  "observedAtUTC": "2026-10-13T01:16:40.540248+00:00",
+  "purpose": "G1 bounded runtime capability inspection for isolated Diffusers SD1.5 + OpenPose ControlNet + IP-Adapter; no inference or download",
+  "worker": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low"
+  },
+  "exclusiveOutputs": [
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/local2d-capability-495/CHECKPOINT.json"
+  ],
+  "inputPins": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "f157cd34b996be9b37e4a7d26f6417592dad55129d077c2524d57b7170aeda88",
+      "bytes": 7405
+    },
+    {
+      "path": "docs/PROJECT_STATE.md",
+      "sha256": "c8017faa05f5edfe02e86c77ef5a214f1f9d45a987abfad719d899fecebd9f08",
+      "bytes": 8392
+    },
+    {
+      "path": "docs/NEXT_STEPS.md",
+      "sha256": "1c3d15f2410718fa24ac7891f312e6790fb4ad1ae5244e9375fd8a5f915b3e20",
+      "bytes": 2838
+    },
+    {
+      "path": "docs/ARCHITECTURE_DECISIONS.md",
+      "sha256": "0b2b348bff0b0ffa6305e1aebf9d713faca7b9b10fb913df81640758ce1389c8",
+      "bytes": 2157
+    },
+    {
+      "path": "docs/art/pipeline/ANIMATION_CONTRACT.md",
+      "sha256": "7edd5b99ae59b9e848458ee4ac06c72dd575a3bee4e27288823dad1e31b87014",
+      "bytes": 6993
+    },
+    {
+      "path": "docs/art/pipeline/SPRITE_PRODUCTION_WORKFLOW.md",
+      "sha256": "2b9ab4353f9d5216137c8302f8f55d84ac26036e12e49a34c658e5b208e02cef",
+      "bytes": 6527
+    },
+    {
+      "path": "docs/art/pipeline/IMAGE_GENERATION_TEMPLATES.md",
+      "sha256": "01ada8385b6689093b28565c9036a52b5633d1d4a1555ffe23513088c12fc527",
+      "bytes": 7997
+    },
+    {
+      "path": "docs/art/pipeline/villager-pose-control-491/local-capability.json",
+      "sha256": "3a74700285465b6cbe0c694f2a1bf7017e9fe1fa6916a212d2c34333e286b8f8",
+      "bytes": 8562
+    },
+    {
+      "path": "docs/art/pipeline/villager-guide-first-492/CHECKPOINT.json",
+      "sha256": "6a6ee33601dc0eb7b75f670379ef03587ca6531ef2e490dcc1ec25e73892e225",
+      "bytes": 4798
+    }
+  ],
+  "checks": [
+    {
+      "name": "preflight",
+      "argv": [
+        "node",
+        "scripts/agent-preflight.mjs",
+        "--task",
+        "art",
+        "--source",
+        "docs/art/pipeline/ANIMATION_CONTRACT.md"
+      ],
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0,
+      "stdout": "{\n  \"schema\": \"rds-agent-preflight/v1\",\n  \"task\": \"art\",\n  \"head\": \"2187c0a873cbe1731e8322d59b53b974081f2f87\",\n  \"status\": \"\",\n  \"readFiles\": [\n    {\n      \"path\": \"docs/agent-read-contract.json\",\n      \"sha256\": \"5e85c1c9a649aa6d71d03f6dd2b69a4e54f6b77c80f157a26e648a07f8ec3f99\",\n      \"bytes\": 986\n    },\n    {\n      \"path\": \"AGENTS.md\",\n      \"sha256\": \"f157cd34b996be9b37e4a7d26f6417592dad55129d077c2524d57b7170aeda88\",\n      \"bytes\": 7405\n    },\n    {\n      \"path\": \"docs/PROJECT_STATE.md\",\n      \"sha256\": \"c8017faa05f5edfe02e86c77ef5a214f1f9d45a987abfad719d899fecebd9f08\",\n      \"bytes\": 8392\n    },\n    {\n      \"path\": \"docs/NEXT_STEPS.md\",\n      \"sha256\": \"1c3d15f2410718fa24ac7891f312e6790fb4ad1ae5244e9375fd8a5f915b3e20\",\n      \"bytes\": 2838\n    },\n    {\n      \"path\": \"docs/ARCHITECTURE_DECISIONS.md\",\n      \"sha256\": \"0b2b348bff0b0ffa6305e1aebf9d713faca7b9b10fb913df81640758ce1389c8\",\n      \"bytes\": 2157\n    },\n    {\n      \"path\": \"docs/art/ART_DIRECTION.md\",\n      \"sha256\": \"d64614e926465c0d540606634a25aeabc4f5364d6be7ced210eeab3182ffd429\",\n      \"bytes\": 3087\n    },\n    {\n      \"path\": \"docs/art/pipeline/ANIMATION_CONTRACT.md\",\n      \"sha256\": \"7edd5b99ae59b9e848458ee4ac06c72dd575a3bee4e27288823dad1e31b87014\",\n      \"bytes\": 6993\n    },\n    {\n      \"path\": \"docs/art/pipeline/SPRITE_PRODUCTION_WORKFLOW.md\",\n      \"sha256\": \"2b9ab4353f9d5216137c8302f8f55d84ac26036e12e49a34c658e5b208e02cef\",\n      \"bytes\": 6527\n    },\n    {\n      \"path\": \"docs/art/pipeline/IMAGE_GENERATION_TEMPLATES.md\",\n      \"sha256\": \"01ada8385b6689093b28565c9036a52b5633d1d4a1555ffe23513088c12fc527\",\n      \"bytes\": 7997\n    },\n    {\n      \"path\": \"docs/art/pipeline/ANIMATION_ARCHETYPES.md\",\n      \"sha256\": \"165869e44eb58c6b37a0e29e1f461fd7c5dd36c73e1afb595742865e2299f43b\",\n      \"bytes\": 2812\n    },\n    {\n      \"path\": \"docs/art/pipeline/ASSET_QA.md\",\n      \"sha256\": \"7ad426a1a2b9d8fd10ae56aa7897fc19be67d3b00a40fac3987e1ef07cd66418\",\n      \"bytes\": 3343\n    },\n    {\n      \"path\": \"docs/art/pipeline/REVIEW_PRIORITY_20261008.md\",\n      \"sha256\": \"cacc2b746cb7360d4d6c9dba0b94d55dea0530e43402d60a891b3711e3c1a525\",\n      \"bytes\": 960\n    }\n  ],\n  \"sources\": [\n    {\n      \"path\": \"docs/art/pipeline/ANIMATION_CONTRACT.md\",\n      \"sha256\": \"7edd5b99ae59b9e848458ee4ac06c72dd575a3bee4e27288823dad1e31b87014\",\n      \"bytes\": 6993\n    }\n  ],\n  \"ledger\": {\n    \"path\": \"docs/art/pipeline/unit-production/order-ledger.json\",\n    \"sha256\": \"41befce34c8a2c628f5057051b4389d683fd0191c184113c7d9b397a475c8abd\",\n    \"locked\": false,\n    \"unresolvedClaims\": []\n  },\n  \"limits\": [\n    \"Existence and byte hashes do not establish understanding, permission, approval or tool availability.\",\n    \"Explicit invocation only; this helper is not a mandatory global hook.\",\n    \"Externally verify tools and actual live handles/preservation guards; no guards are declared closed.\"\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "gpu-driver",
+      "argv": [
+        "python3",
+        "-c",
+        "from pathlib import Path; p=Path(\"/proc/driver/nvidia/version\"); print(p.read_text() if p.exists() else \"ABSENT\"); p=Path(\"/proc/driver/nvidia/gpus\"); print(\"GPU records:\"); print(\"\\n\".join(x.read_text() for x in p.glob(\"*/information\")) if p.exists() else \"ABSENT\"); print(\"devices:\", [str(x) for x in Path(\"/dev\").glob(\"nvidia*\")])"
+      ],
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0,
+      "stdout": "NVRM version: NVIDIA UNIX Open Kernel Module for x86_64  595.99.02  Release Build  (dvs-builder@U22-I3-AF05-06-2)  Wed Aug 26 05:20:50 UTC 2026\nGCC version:  gcc version 15.2.0 (Ubuntu 15.2.0-16ubuntu1) \n\nGPU records:\nModel: \t\t NVIDIA GeForce RTX 2050\nIRQ:   \t\t 151\nGPU UUID: \t GPU-11ae8feb-2c0d-aec3-cb8f-d2416cefd12c\nVideo BIOS: \t 94.07.8b.00.4e\nBus Type: \t PCI\nDMA Size: \t 47 bits\nDMA Mask: \t 0x7fffffffffff\nBus Location: \t 0000:01:00.0\nDevice Minor: \t 0\nGPU Firmware: \t 595.99.02\nGPU Excluded:\t No\n\ndevices: ['/dev/nvidia-modeset', '/dev/nvidia-uvm-tools', '/dev/nvidia-uvm', '/dev/nvidia0', '/dev/nvidiactl']\n",
+      "stderr": ""
+    },
+    {
+      "name": "nvidia-smi",
+      "argv": [
+        "nvidia-smi",
+        "--query-gpu=name,driver_version,memory.total,memory.free",
+        "--format=csv,noheader"
+      ],
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": null,
+      "error": "[Errno 2] No such file or directory: 'nvidia-smi'"
+    },
+    {
+      "name": "cuda-compiler",
+      "argv": [
+        "nvcc",
+        "--version"
+      ],
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": null,
+      "error": "[Errno 2] No such file or directory: 'nvcc'"
+    },
+    {
+      "name": "memory-disk",
+      "argv": [
+        "python3",
+        "-c",
+        "from pathlib import Path; import shutil,json; print(Path(\"/proc/meminfo\").read_text()); print(json.dumps({\"workspace_disk\":shutil.disk_usage(\".\")._asdict()}))"
+      ],
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0,
+      "stdout": "MemTotal:       27908564 kB\nMemFree:         1099904 kB\nMemAvailable:   12935596 kB\nBuffers:          172712 kB\nCached:         14627148 kB\nSwapCached:            0 kB\nActive:         13186204 kB\nInactive:        8387860 kB\nActive(anon):    9683540 kB\nInactive(anon):   936184 kB\nActive(file):    3502664 kB\nInactive(file):  7451676 kB\nUnevictable:     2537828 kB\nMlocked:             184 kB\nSwapTotal:             0 kB\nSwapFree:              0 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:              4996 kB\nWriteback:             0 kB\nAnonPages:       9312068 kB\nMapped:          2526656 kB\nShmem:           3845912 kB\nKReclaimable:    1319248 kB\nSlab:            1759692 kB\nSReclaimable:    1318804 kB\nSUnreclaim:       440888 kB\nKernelStack:       37060 kB\nPageTables:       166292 kB\nSecPageTables:      9272 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:    13954280 kB\nCommitted_AS:   50026636 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:      134232 kB\nVmallocChunk:          0 kB\nPercpu:            17760 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:  2338816 kB\nShmemPmdMapped:        0 kB\nFileHugePages:     61440 kB\nFilePmdMapped:         0 kB\nCmaTotal:              0 kB\nCmaFree:               0 kB\nUnaccepted:            0 kB\nBalloon:               0 kB\nGPUActive:             0 kB\nGPUReclaim:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      577792 kB\nDirectMap2M:    16949248 kB\nDirectMap1G:    11534336 kB\n\n{\"workspace_disk\": {\"total\": 265036312576, \"used\": 193446297600, \"free\": 58052374528}}\n",
+      "stderr": ""
+    },
+    {
+      "name": "inference-runtime",
+      "argv": [
+        "python3",
+        "-c",
+        "import sys, json, importlib.util, importlib.metadata as m, ctypes, ctypes.util\nprint(\"Python:\",sys.version)\nfor name in [\"torch\",\"diffusers\",\"transformers\",\"accelerate\",\"safetensors\",\"huggingface_hub\",\"controlnet_aux\",\"PIL\",\"cv2\"]:\n try: spec=importlib.util.find_spec(name)\n except (ImportError,ValueError): spec=None\n print(json.dumps({\"module\":name,\"present\":spec is not None,\"location\":spec.origin if spec else None,\"distributionVersion\": next((m.version(d) for d in ({\"PIL\":[\"Pillow\"],\"cv2\":[\"opencv-python\",\"opencv-python-headless\"]}.get(name,[name])) if m.packages_distributions().get(name) and d in m.packages_distributions().get(name,[])),None)}))\nfor lib in [\"cuda\",\"nvidia-ml\"]:\n resolved=ctypes.util.find_library(lib); print(\"library\",lib,\"resolved\",resolved)\n try:\n  loaded=ctypes.CDLL(resolved or (\"libcuda.so.1\" if lib==\"cuda\" else \"libnvidia-ml.so.1\")); print(\"load SUCCESS\")\n  if lib==\"cuda\":\n   result=loaded.cuInit(0);print(\"cuInit\",result)\n   if result==0:\n    count=ctypes.c_int(); print(\"cuDeviceGetCount\",loaded.cuDeviceGetCount(ctypes.byref(count)),\"count\",count.value)\n  else:\n   result=loaded.nvmlInit_v2();print(\"nvmlInit_v2\",result)\n   if result==0: print(\"nvmlShutdown\",loaded.nvmlShutdown())\n except OSError as e: print(\"load FAILED\",str(e))\nif importlib.util.find_spec(\"torch\"):\n try:\n  import torch\n  print(\"torch\",torch.__version__,\"compiledCUDA\",torch.version.cuda,\"cudaAvailable\",torch.cuda.is_available(),\"deviceCount\",torch.cuda.device_count())\n  if torch.cuda.is_available():\n   t=torch.ones((16,16),device=\"cuda\"); torch.cuda.synchronize();print(\"CUDA tensor arithmetic\",float((t@t).sum().cpu()),\"memory\",torch.cuda.mem_get_info())\n except Exception as e: print(\"torch runtime FAILED\",type(e).__name__,str(e))\n"
+      ],
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0,
+      "stdout": "Python: 3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]\n{\"module\": \"torch\", \"present\": false, \"location\": null, \"distributionVersion\": null}\n{\"module\": \"diffusers\", \"present\": false, \"location\": null, \"distributionVersion\": null}\n{\"module\": \"transformers\", \"present\": false, \"location\": null, \"distributionVersion\": null}\n{\"module\": \"accelerate\", \"present\": false, \"location\": null, \"distributionVersion\": null}\n{\"module\": \"safetensors\", \"present\": false, \"location\": null, \"distributionVersion\": null}\n{\"module\": \"huggingface_hub\", \"present\": false, \"location\": null, \"distributionVersion\": null}\n{\"module\": \"controlnet_aux\", \"present\": false, \"location\": null, \"distributionVersion\": null}\n{\"module\": \"PIL\", \"present\": true, \"location\": \"/usr/lib/python3/dist-packages/PIL/__init__.py\", \"distributionVersion\": null}\n{\"module\": \"cv2\", \"present\": false, \"location\": null, \"distributionVersion\": null}\nlibrary cuda resolved None\nload FAILED libcuda.so.1: cannot open shared object file: No such file or directory\nlibrary nvidia-ml resolved None\nload FAILED libnvidia-ml.so.1: cannot open shared object file: No such file or directory\n",
+      "stderr": ""
+    },
+    {
+      "name": "explicit-cache-presence",
+      "argv": [
+        "python3",
+        "-c",
+        "from pathlib import Path; import json; roots=[Path.home()/\".cache/huggingface/hub\",Path.home()/\".cache/torch/hub\",Path(\"models\")]; print(json.dumps([{ \"path\":str(p),\"exists\":p.exists(),\"immediateModelDirectories\":[x.name for x in p.iterdir() if x.is_dir() and (x.name.startswith(\"models--\") or p.name==\"models\")] if p.exists() else []} for p in roots],indent=2))"
+      ],
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0,
+      "stdout": "[\n  {\n    \"path\": \"/home/kieu-hoang-quan/.cache/huggingface/hub\",\n    \"exists\": true,\n    \"immediateModelDirectories\": [\n      \"models--stabilityai--sd-turbo\",\n      \"models--openai--clip-vit-base-patch32\",\n      \"models--stable-diffusion-v1-5--stable-diffusion-v1-5\"\n    ]\n  },\n  {\n    \"path\": \"/home/kieu-hoang-quan/.cache/torch/hub\",\n    \"exists\": false,\n    \"immediateModelDirectories\": []\n  },\n  {\n    \"path\": \"models\",\n    \"exists\": false,\n    \"immediateModelDirectories\": []\n  }\n]\n",
+      "stderr": ""
+    },
+    {
+      "name": "cached-model-file-presence-and-interpreters",
+      "argv": [
+        "python3",
+        "-c",
+        "from pathlib import Path;import json,shutil\nroot=Path.home()/\".cache/huggingface/hub\"\nfor name in [\"models--stable-diffusion-v1-5--stable-diffusion-v1-5\",\"models--openai--clip-vit-base-patch32\",\"models--stabilityai--sd-turbo\"]:\n p=root/name; entries=[]\n if p.exists():\n  for f in p.glob(\"snapshots/*/**/*\"):\n   if f.is_file(): entries.append({\"path\":str(f.relative_to(p)),\"bytes\":f.stat().st_size,\"symlink\":f.is_symlink()})\n print(json.dumps({\"modelCache\":name,\"files\":entries,\"count\":len(entries)},indent=2))\nprint(\"interpreterPaths\",{n:shutil.which(n) for n in [\"python3\",\"python3.10\",\"python3.11\",\"python3.12\",\"python3.13\",\"python3.14\"]})\n"
+      ],
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0,
+      "stdout": "{\n  \"modelCache\": \"models--stable-diffusion-v1-5--stable-diffusion-v1-5\",\n  \"files\": [\n    {\n      \"path\": \"snapshots/451f4fe16113bff5a5d2269ed5ad43b0592e9a14/model_index.json\",\n      \"bytes\": 541,\n      \"symlink\": true\n    },\n    {\n      \"path\": \"snapshots/451f4fe16113bff5a5d2269ed5ad43b0592e9a14/unet/diffusion_pytorch_model.fp16.safetensors\",\n      \"bytes\": 1719125304,\n      \"symlink\": true\n    },\n    {\n      \"path\": \"snapshots/451f4fe16113bff5a5d2269ed5ad43b0592e9a14/unet/diffusion_pytorch_model.safetensors\",\n      \"bytes\": 3438167540,\n      \"symlink\": true\n    },\n    {\n      \"path\": \"snapshots/451f4fe16113bff5a5d2269ed5ad43b0592e9a14/unet/config.json\",\n      \"bytes\": 743,\n      \"symlink\": true\n    },\n    {\n      \"path\": \"snapshots/451f4fe16113bff5a5d2269ed5ad43b0592e9a14/feature_extractor/preprocessor_config.json\",\n      \"bytes\": 342,\n      \"symlink\": true\n    },\n    {\n      \"path\": \"snapshots/451f4fe16113bff5a5d2269ed5ad43b0592e9a14/text_encoder/config.json\",\n      \"bytes\": 617,\n      \"symlink\": true\n    },\n    {\n      \"path\": \"snapshots/451f4fe16113bff5a5d2269ed5ad43b0592e9a14/text_encoder/model.fp16.safetensors\",\n      \"bytes\": 246144864,\n      \"symlink\": true\n    },\n    {\n      \"path\": \"snapshots/451f4fe16113bff5a5d2269ed5ad43b0592e9a14/text_encoder/model.safetensors\",\n      \"bytes\": 492265874,\n      \"symlink\": true\n    },\n    {\n      \"path\": \"snapshots/451f4fe16113bff5a5d2269ed5ad43b0592e9a14/safety_checker/config.json\",\n      \"bytes\": 4723,\n      \"symlink\": true\n    },\n    {\n      \"path\": \"snapshots/451f4fe16113bff5a5d2269ed5ad43b0592e9a14/safety_checker/model.fp16.safetensors\",\n      \"bytes\": 608018440,\n      \"symlink\": true\n    },\n    {\n      \"path\": \"snapshots/451f4fe16113bff5a5d2269ed5ad43b0592e9a14/tokenizer/vocab.json\",\n      \"bytes\": 1059962,\n      \"symlink\": true\n    },\n    {\n      \"path\": \"snapshots/451f4fe16113bff5a5d2269ed5ad43b0592e9a14/tokenizer/tokenizer_config.json\",\n      \"bytes\": 806,\n      \"symlink\": true\n    },\n    {\n      \"path\": \"snapshots/451f4fe16113bff5a5d2269ed5ad43b0592e9a14/tokenizer/special_tokens_map.json\",\n      \"bytes\": 472,\n      \"symlink\": true\n    },\n    {\n      \"path\": \"snapshots/451f4fe16113bff5a5d2269ed5ad43b0592e9a14/tokenizer/merges.txt\",\n      \"bytes\": 524619,\n      \"symlink\": true\n    },\n    {\n      \"path\": \"snapshots/451f4fe16113bff5a5d2269ed5ad43b0592e9a14/vae/diffusion_pytorch_model.fp16.safetensors\",\n      \"bytes\": 167335342,\n      \"symlink\": true\n    },\n    {\n      \"path\": \"snapshots/451f4fe16113bff5a5d2269ed5ad43b0592e9a14/vae/diffusion_pytorch_model.safetensors\",\n      \"bytes\": 334643276,\n      \"symlink\": true\n    },\n    {\n      \"path\": \"snapshots/451f4fe16113bff5a5d2269ed5ad43b0592e9a14/vae/config.json\",\n      \"bytes\": 547,\n      \"symlink\": true\n    },\n    {\n      \"path\": \"snapshots/451f4fe16113bff5a5d2269ed5ad43b0592e9a14/scheduler/scheduler_config.json\",\n      \"bytes\": 308,\n      \"symlink\": true\n    }\n  ],\n  \"count\": 18\n}\n{\n  \"modelCache\": \"models--openai--clip-vit-base-patch32\",\n  \"files\": [\n    {\n      \"path\": \"snapshots/3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268/pytorch_model.bin\",\n      \"bytes\": 605247071,\n      \"symlink\": true\n    },\n    {\n      \"path\": \"snapshots/3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268/vocab.json\",\n      \"bytes\": 862328,\n      \"symlink\": true\n    },\n    {\n      \"path\": \"snapshots/3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268/tokenizer_config.json\",\n      \"bytes\": 592,\n      \"symlink\": true\n    },\n    {\n      \"path\": \"snapshots/3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268/config.json\",\n      \"bytes\": 4186,\n      \"symlink\": true\n    },\n    {\n      \"path\": \"snapshots/3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268/preprocessor_config.json\",\n      \"bytes\": 316,\n      \"symlink\": true\n    },\n    {\n      \"path\": \"snapshots/3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268/special_tokens_map.json\",\n      \"bytes\": 389,\n      \"symlink\": true\n    },\n    {\n      \"path\": \"snapshots/3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268/merges.txt\",\n      \"bytes\": 524657,\n      \"symlink\": true\n    },\n    {\n      \"path\": \"snapshots/3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268/tokenizer.json\",\n      \"bytes\": 2224041,\n      \"symlink\": true\n    },\n    {\n      \"path\": \"snapshots/c237dc49a33fc61debc9276459120b7eac67e7ef/model.safetensors\",\n      \"bytes\": 605157884,\n      \"symlink\": true\n    }\n  ],\n  \"count\": 9\n}\n{\n  \"modelCache\": \"models--stabilityai--sd-turbo\",\n  \"files\": [\n    {\n      \"path\": \"snapshots/b261bac6fd2cf515557d5d0707481eafa0485ec2/model_index.json\",\n      \"bytes\": 616,\n      \"symlink\": true\n    },\n    {\n      \"path\": \"snapshots/b261bac6fd2cf515557d5d0707481eafa0485ec2/unet/diffusion_pytorch_model.fp16.safetensors\",\n      \"bytes\": 1731904736,\n      \"symlink\": true\n    },\n    {\n      \"path\": \"snapshots/b261bac6fd2cf515557d5d0707481eafa0485ec2/unet/config.json\",\n      \"bytes\": 1867,\n      \"symlink\": true\n    },\n    {\n      \"path\": \"snapshots/b261bac6fd2cf515557d5d0707481eafa0485ec2/text_encoder/config.json\",\n      \"bytes\": 618,\n      \"symlink\": true\n    },\n    {\n      \"path\": \"snapshots/b261bac6fd2cf515557d5d0707481eafa0485ec2/text_encoder/model.fp16.safetensors\",\n      \"bytes\": 680820392,\n      \"symlink\": true\n    },\n    {\n      \"path\": \"snapshots/b261bac6fd2cf515557d5d0707481eafa0485ec2/tokenizer/vocab.json\",\n      \"bytes\": 1059962,\n      \"symlink\": true\n    },\n    {\n      \"path\": \"snapshots/b261bac6fd2cf515557d5d0707481eafa0485ec2/tokenizer/tokenizer_config.json\",\n      \"bytes\": 855,\n      \"symlink\": true\n    },\n    {\n      \"path\": \"snapshots/b261bac6fd2cf515557d5d0707481eafa0485ec2/tokenizer/special_tokens_map.json\",\n      \"bytes\": 574,\n      \"symlink\": true\n    },\n    {\n      \"path\": \"snapshots/b261bac6fd2cf515557d5d0707481eafa0485ec2/tokenizer/merges.txt\",\n      \"bytes\": 524619,\n      \"symlink\": true\n    },\n    {\n      \"path\": \"snapshots/b261bac6fd2cf515557d5d0707481eafa0485ec2/vae/diffusion_pytorch_model.fp16.safetensors\",\n      \"bytes\": 167335342,\n      \"symlink\": true\n    },\n    {\n      \"path\": \"snapshots/b261bac6fd2cf515557d5d0707481eafa0485ec2/vae/config.json\",\n      \"bytes\": 655,\n      \"symlink\": true\n    },\n    {\n      \"path\": \"snapshots/b261bac6fd2cf515557d5d0707481eafa0485ec2/scheduler/scheduler_config.json\",\n      \"bytes\": 553,\n      \"symlink\": true\n    }\n  ],\n  \"count\": 12\n}\ninterpreterPaths {'python3': '/usr/bin/python3', 'python3.10': None, 'python3.11': None, 'python3.12': '/usr/bin/python3.12', 'python3.13': None, 'python3.14': '/usr/bin/python3.14'}\n",
+      "stderr": ""
+    },
+    {
+      "name": "python312-inference-runtime",
+      "argv": [
+        "/usr/bin/python3.12",
+        "-c",
+        "import sys, json, importlib.util, importlib.metadata as m, ctypes, ctypes.util\nprint(\"Python:\",sys.version)\nfor name in [\"torch\",\"diffusers\",\"transformers\",\"accelerate\",\"safetensors\",\"huggingface_hub\",\"controlnet_aux\",\"PIL\",\"cv2\"]:\n try: spec=importlib.util.find_spec(name)\n except (ImportError,ValueError): spec=None\n print(json.dumps({\"module\":name,\"present\":spec is not None,\"location\":spec.origin if spec else None,\"distributionVersion\": next((m.version(d) for d in ({\"PIL\":[\"Pillow\"],\"cv2\":[\"opencv-python\",\"opencv-python-headless\"]}.get(name,[name])) if m.packages_distributions().get(name) and d in m.packages_distributions().get(name,[])),None)}))\nfor lib in [\"cuda\",\"nvidia-ml\"]:\n resolved=ctypes.util.find_library(lib); print(\"library\",lib,\"resolved\",resolved)\n try:\n  loaded=ctypes.CDLL(resolved or (\"libcuda.so.1\" if lib==\"cuda\" else \"libnvidia-ml.so.1\")); print(\"load SUCCESS\")\n  if lib==\"cuda\":\n   result=loaded.cuInit(0);print(\"cuInit\",result)\n   if result==0:\n    count=ctypes.c_int(); print(\"cuDeviceGetCount\",loaded.cuDeviceGetCount(ctypes.byref(count)),\"count\",count.value)\n  else:\n   result=loaded.nvmlInit_v2();print(\"nvmlInit_v2\",result)\n   if result==0: print(\"nvmlShutdown\",loaded.nvmlShutdown())\n except OSError as e: print(\"load FAILED\",str(e))\nif importlib.util.find_spec(\"torch\"):\n try:\n  import torch\n  print(\"torch\",torch.__version__,\"compiledCUDA\",torch.version.cuda,\"cudaAvailable\",torch.cuda.is_available(),\"deviceCount\",torch.cuda.device_count())\n  if torch.cuda.is_available():\n   t=torch.ones((16,16),device=\"cuda\"); torch.cuda.synchronize();print(\"CUDA tensor arithmetic\",float((t@t).sum().cpu()),\"memory\",torch.cuda.mem_get_info())\n except Exception as e: print(\"torch runtime FAILED\",type(e).__name__,str(e))\n"
+      ],
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0,
+      "stdout": "Python: 3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]\n{\"module\": \"torch\", \"present\": false, \"location\": null, \"distributionVersion\": null}\n{\"module\": \"diffusers\", \"present\": false, \"location\": null, \"distributionVersion\": null}\n{\"module\": \"transformers\", \"present\": false, \"location\": null, \"distributionVersion\": null}\n{\"module\": \"accelerate\", \"present\": false, \"location\": null, \"distributionVersion\": null}\n{\"module\": \"safetensors\", \"present\": false, \"location\": null, \"distributionVersion\": null}\n{\"module\": \"huggingface_hub\", \"present\": false, \"location\": null, \"distributionVersion\": null}\n{\"module\": \"controlnet_aux\", \"present\": false, \"location\": null, \"distributionVersion\": null}\n{\"module\": \"PIL\", \"present\": true, \"location\": \"/usr/lib/python3/dist-packages/PIL/__init__.py\", \"distributionVersion\": null}\n{\"module\": \"cv2\", \"present\": false, \"location\": null, \"distributionVersion\": null}\nlibrary cuda resolved None\nload FAILED libcuda.so.1: cannot open shared object file: No such file or directory\nlibrary nvidia-ml resolved None\nload FAILED libnvidia-ml.so.1: cannot open shared object file: No such file or directory\n",
+      "stderr": ""
+    }
+  ],
+  "scope": "PATH python3 environment, NVIDIA procfs/devices, direct library initialization, explicit default cache paths; no whole filesystem model search or secret environment dump",
+  "mutations": "Only exclusive receipt directory/files; no install/download/driver repair/environment/model/ledger/code change",
+  "imageCalls": 0,
+  "artAcceptance": false,
+  "handles": "All checks synchronous subprocesses exited; timed-out checks killed/waited; no persistent own handle",
+  "conclusion": {
+    "status": "FAILED_RUNTIME_PREREQUISITES",
+    "canAdvanceToDiffusersSD15OpenPoseIPAdapter": false,
+    "verified": [
+      "Loaded NVIDIA595.99.02 kernel driver reports RTX2050 and device nodes exist",
+      "PATH python3 is3.14.4; inference Python modules absent in this interpreter",
+      "Default CUDA and NVML libraries fail to load",
+      "Default HuggingFace cache has named SD1.5/SDturbo/CLIP directories; filename presence does not prove usable weights",
+      "RAM total27908564KiB; available12935596KiB at check; diskfree58052374528bytes at workspace",
+      "PATH-discovered Python3.12 also inspected with identical module/library/runtime probe; output retained"
+    ],
+    "failed": [
+      "libcuda.so.1 load: not found",
+      "libnvidia-ml.so.1 load: not found",
+      "nvidia-smi command: not found",
+      "No usable torch/diffusers runtime in tested Python"
+    ],
+    "unknown": [
+      "VRAM total/free",
+      "Alternate environments or bundled runtimes not globally inventoried",
+      "Cached model completeness/authenticity/licensing/compatibility; no weights loaded or hashed",
+      "SD1.5+OpenPoseControlNet+IP-Adapter pipeline quality/performance/identity/pose",
+      "Compatible Python/CUDA/package installation feasibility"
+    ],
+    "nextDependency": "User/root decision on supported local runtime prerequisite repair or explicitly supplied known-good environment. Driver userspace/CUDA accessibility and compatible Python+torch must be verified before any isolated Diffusers package/model stage. This task grants no repair/download/model adoption; cached names do not unblock inference."
+  }
+}

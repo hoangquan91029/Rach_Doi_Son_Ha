@@ -1,0 +1,145 @@
+{
+  "schema": "rds-agent-preflight/v1",
+  "task": "runtime",
+  "head": "2187c0a873cbe1731e8322d59b53b974081f2f87",
+  "status": " M AGENTS.md\n M client/main.js\n M docs/ARCHITECTURE_DECISIONS.md\n M docs/NEXT_STEPS.md\n M docs/PROJECT_ROADMAP.md\n M docs/PROJECT_STATE.md\n M docs/agent-read-contract.json\n M docs/art/pipeline/IMAGE_GENERATION_TEMPLATES.md\n M docs/art/pipeline/SPRITE_PRODUCTION_WORKFLOW.md\n M docs/art/pipeline/unit-production/README.md\n M docs/art/pipeline/unit-production/order-ledger.json\n M scripts/agent-preflight.mjs\n M scripts/sprite-order-run.mjs\n M scripts/unit-art-coverage.mjs\n M shared/sim.js\n M tests/agent-preflight.test.js\n?? docs/AGENT_EXECUTION_CONTRACT.md\n?? docs/COMPLETION_MATRIX.md\n?? docs/art/pipeline/local2d-capability-495/\n?? docs/audits/implementation-495/\n?? docs/qa/stone-policy-495/\n?? scripts/agent-task-contract.mjs\n?? shared/fortification-placement.js\n?? tests/agent-task-contract.test.js\n?? tests/fortification-placement495.test.js",
+  "readFiles": [
+    {
+      "path": "docs/agent-read-contract.json",
+      "sha256": "3063b312cbde80b414c7718a17f308f53cab8e7714b944e49657cf62b160c093",
+      "bytes": 1096
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "f153ddf7216bfb982efc024e0a1ad5cd0ca769e149e69eb71586988dfdf5173c",
+      "bytes": 8569
+    },
+    {
+      "path": "docs/PROJECT_STATE.md",
+      "sha256": "c9509c4d4dac1e22eb0183a50c0edaff903d305a04bd9a187bc8256878caadd3",
+      "bytes": 11236
+    },
+    {
+      "path": "docs/NEXT_STEPS.md",
+      "sha256": "b6ea715bd55cc56bdfe831250c6a1fcabf78d9fa17f4a939119d86f6b570f7a1",
+      "bytes": 2298
+    },
+    {
+      "path": "docs/ARCHITECTURE_DECISIONS.md",
+      "sha256": "9698dfab772f18700081e2a252275d0fb14e6b8d1dd2d60eb23c2f72d0c1e319",
+      "bytes": 2698
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "f55b464de4b4e2a5833f6b8c25242a921d24deec4acd735133acbc08c9bdbaaa",
+      "bytes": 4897
+    },
+    {
+      "path": "docs/art/pipeline/ANIMATION_CONTRACT.md",
+      "sha256": "7edd5b99ae59b9e848458ee4ac06c72dd575a3bee4e27288823dad1e31b87014",
+      "bytes": 6993
+    },
+    {
+      "path": "docs/art/pipeline/ASSET_QA.md",
+      "sha256": "7ad426a1a2b9d8fd10ae56aa7897fc19be67d3b00a40fac3987e1ef07cd66418",
+      "bytes": 3343
+    },
+    {
+      "path": "shared/unit-action-spec.js",
+      "sha256": "04d987298651c73187920391754f729fd203c1313536eb54c29c629048db05bf",
+      "bytes": 1686
+    },
+    {
+      "path": "shared/visible-action.js",
+      "sha256": "35d4352d3c6a85bce7b99638934e9c0512c900df801fc3b59296ba1b606b27b0",
+      "bytes": 2228
+    },
+    {
+      "path": "client/world-presentation.js",
+      "sha256": "d87fadfb176f765d35b26c2d247af536288d9ada9df6ecc8ec254d889231db98",
+      "bytes": 240
+    }
+  ],
+  "sources": [
+    {
+      "path": "shared/fortification-placement.js",
+      "sha256": "3282dd68e3e7de07e17c795f878dfd248851c2548d11b066b3e3d87ddef4d971",
+      "bytes": 1481
+    }
+  ],
+  "assignment": {
+    "taskId": "root-integration495",
+    "registration": {
+      "path": "docs/audits/implementation-495/tasks.json",
+      "sha256": "8407ae08639a13e8999b71891da038bf7683ec74c187b6193183730e896b363b",
+      "bytes": 5024
+    },
+    "inputs": [
+      {
+        "path": "shared/data.js",
+        "sha256": "ffc3f45adc58f212066d3763c591377ce15b9f6ac78e4685a95fc3ac747818e1"
+      },
+      {
+        "path": "shared/unit-action-spec.js",
+        "sha256": "04d987298651c73187920391754f729fd203c1313536eb54c29c629048db05bf"
+      },
+      {
+        "path": "public/assets/art-v1/fort-202-manifest.json",
+        "sha256": "77c75ef2bea8cff633b28fe8635e51b5a7efc151bb1871b5b5d9d17850d4271c"
+      },
+      {
+        "path": "docs/art/pipeline/unit-production/order-ledger.json",
+        "sha256": "48cdd19d3148b0d0838500dce65fa94bc47bf5970d636adbce1dcad873bb3f50"
+      }
+    ],
+    "outputs": [
+      "AGENTS.md",
+      "docs/AGENT_EXECUTION_CONTRACT.md",
+      "docs/COMPLETION_MATRIX.md",
+      "docs/PROJECT_STATE.md",
+      "docs/PROJECT_ROADMAP.md",
+      "docs/NEXT_STEPS.md",
+      "docs/ARCHITECTURE_DECISIONS.md",
+      "docs/agent-read-contract.json",
+      "docs/art/pipeline/SPRITE_PRODUCTION_WORKFLOW.md",
+      "docs/art/pipeline/IMAGE_GENERATION_TEMPLATES.md",
+      "docs/art/pipeline/unit-production/README.md",
+      "scripts/unit-art-coverage.mjs",
+      "shared/sim.js",
+      "shared/fortification-placement.js",
+      "client/main.js",
+      "tests/fortification-placement495.test.js",
+      "docs/qa/stone-policy-495/browser.mjs",
+      "docs/qa/stone-policy-495/config.json",
+      "docs/qa/stone-policy-495/build.txt",
+      "docs/qa/stone-policy-495/browser-receipt.json",
+      "docs/qa/stone-policy-495/actual-forbidden-preview.png",
+      "docs/qa/stone-policy-495/failure.png",
+      "docs/audits/implementation-495/tasks.json",
+      "docs/audits/implementation-495/root-inputs.json",
+      "docs/audits/implementation-495/root-preflight.json",
+      "docs/audits/implementation-495/root-scoped-preflight.json",
+      "docs/audits/implementation-495/requirements",
+      "docs/audits/implementation-495/prior-active",
+      "docs/audits/implementation-495/baseline.json",
+      "docs/audits/implementation-495/CHECKPOINT.json",
+      "docs/audits/implementation-495/checks.txt",
+      "docs/audits/implementation-495/link-check.json",
+      "docs/audits/implementation-495/preservation.json",
+      "docs/art/pipeline/unit-production/order-ledger.json",
+      "docs/audits/implementation-495/ledger-metadata-change.json"
+    ],
+    "slots": []
+  },
+  "ledger": {
+    "path": "docs/art/pipeline/unit-production/order-ledger.json",
+    "sha256": "48cdd19d3148b0d0838500dce65fa94bc47bf5970d636adbce1dcad873bb3f50",
+    "locked": false,
+    "unresolvedClaims": []
+  },
+  "limits": [
+    "Existence and byte hashes do not establish understanding, permission, approval or tool availability.",
+    "Explicit invocation only; this helper is not a mandatory global hook.",
+    "Externally verify tools and actual live handles/preservation guards; no guards are declared closed."
+  ]
+}

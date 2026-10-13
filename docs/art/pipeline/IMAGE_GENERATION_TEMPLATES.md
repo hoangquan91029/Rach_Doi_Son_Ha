@@ -77,7 +77,7 @@ Keep identity/equipment/composition and accepted motion outside that correction.
 No extra polish, redesign, camera/scale change. One whole transparent output.
 ```
 
-Clothing repair uses this only if flicker, clipping or changed silhouette is visible while playing. Background/alpha repair uses built-in transparency editing with the exact existing whole frame, unchanged canvas/pivot; confirm the defect first. An alpha decode/packaging bug is a code fix, not an image edit. Neither counts as a new accepted motion phase. Current target-first support is uncalled; no guarantee it cures contact failures.
+Clothing repair uses this only if flicker, clipping or changed silhouette is visible while playing. Background/alpha repair uses built-in transparency editing with the exact existing whole frame, unchanged canvas/pivot; confirm the defect first. An alpha decode/packaging bug is a code fix, not an image edit. Neither counts as a new accepted motion phase. Target-first491 and guide-first492 both failed their actual probes; methods CLOSED. No equivalent retry authorization.
 
 ## 6 — Export (no image call)
 
@@ -107,3 +107,10 @@ A claimed request keeps actual ordered paths, prompt version/text hash, slot/pha
 Use executable `unit-production/templates/guide_key.txt` only with a registered typed `referenceMode:guide-first` order. Image1 is a source-bound whole-clothed `guidetarget`; image2 is original matching master or selected matching view for appearance. No original walking edit-target is required. Do not promote a held frame, foreign guide or arbitrary primary image into this role. Structured `rds-guide-target/v1` provenance and exact job/phase/pending slot are mandatory; prepareOrder and durableclaim still apply.
 
 Request one whole illustrated original person in the guide pose, with original face, clothing, camera, bodyvolume and material rendering. Guide vector/personstyle is not finalstyle, and its pixels cannot be spliced/warped into runtime art. Actual492probe did **not** follow passing/scale sufficiently; this is a legal reference recipe, not a pose-control guarantee or permission to retry.
+
+
+##495 mandatory template fields and local conditioning boundary
+
+Every request must supply actual identity anchor, edit target if applicable, selected neighbors when required, action/D/slot, verified projected facing, fixed bodyvolume/face/clothing/equipment/camera/light/pivot/scale, contact/support/swing lanes and occlusion, weight/tool motion and next-key intent. Correction names one observed gameplay-size defect. Unknown required values block generation. One complete transparent realisticillustration; no redesign/cutouts/warps/mirror/fit.
+
+Local2D research is not executable built-in template data. Only a qualified local capability may add real ControlNet structural and IP-Adapter appearance inputs; do not invent built-in tooloptions. Approved new-mechanism pilot maximum2passing outputs+1correction after rootregistration; existing methods remainclosed. Read root task contract and actual model/API version before any request. Prompt output is not evidence that instructions succeeded.

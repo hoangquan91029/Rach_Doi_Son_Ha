@@ -46,3 +46,10 @@ P1 implemented489: explicit view/action finite dispatch, job-specific source loo
 The reused Villager490 walk passed source/layout/playback/UI checks but was rejected by owner at actual size. Do not use its technical receipt to close motion. Inspect [budget intake](villager-qualification-490/budget-intake.json) before another method; similar old passing-outline retries cannot reset caps. A new whole-clothed control must resolve physical lanes and contact travel in the real projection. [Projection intake](villager-qualification-490/projection-intake.json) computes the travel demanded by provisional1.26; foot landmarks remain unmeasured, so it grants no stride or motion approval.
 
 492 adds a legal guide-first branch to shared dispatch. It separates original appearance from primary whole-clothed guide, with exact provenance/job/phase checks. One actual probe is HELD: input ordering alone did not achieve passing or stable upperbody scale. Both491/492 controls remain unqualified; original source/caps/owner rejection stand. Do not call the same methods again under a new package name. [Current receipt](villager-guide-first-492/CHECKPOINT.json).
+
+
+##495 execution and package boundary
+
+Read [mandatory execution contract](../../AGENT_EXECUTION_CONTRACT.md). Root-registered task snapshot/exclusive outputs/slots precede dependent work. Future orders use methodlineage/dependency/budget guards; oldrecords unchanged. Codeproof does not grant artapproval. One identity/action/8direction package,8directionjobs, finiteframe slots and one package receipt; no checkpointproject perframe. Compiler emits atlas/descriptor/contactsheet/preview/memory once; review only changed part after visiblefix.
+
+Capability495 FAILED testedruntime; no imageorder opened. One isolated local2Dpose+appearance route may advance only after actual runtime verification. Old491/492 guide/reference order methods remainclosed; words or newIDs are not changed control. Preserve wood032/iron141 scope and rejected490walk.

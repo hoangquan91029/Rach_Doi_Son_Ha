@@ -1,0 +1,1033 @@
+{
+  "schema": "rds-requirement-source-index/v1",
+  "sources": [
+    {
+      "label": "MASTER",
+      "source": "/home/kieu-hoang-quan/.codex/attachments/f02d2b41-c0be-4cdd-a0e0-2ff20698c759/Pasted text.txt",
+      "custody": "docs/audits/implementation-495/requirements/master.txt",
+      "sha256": "0a9057a796d8000e8c9c2ec4b939edc6e7c166649e02107f180fc7caad1a6223"
+    },
+    {
+      "label": "WEB",
+      "source": "/home/kieu-hoang-quan/.codex/attachments/a83e0b3f-593e-4913-946c-6cc9b3df2432/Pasted text.txt",
+      "custody": "docs/audits/implementation-495/requirements/web.txt",
+      "sha256": "f08da3f71e7325639b8645ba624bac05b1321981e0a554ed1d0d7f75f6ed2f38"
+    },
+    {
+      "label": "VISUAL",
+      "source": "/home/kieu-hoang-quan/.codex/attachments/b7dddf9e-9485-4c8e-9ac7-7e45c4220008/Pasted text.txt",
+      "custody": "docs/audits/implementation-495/requirements/visual.txt",
+      "sha256": "f5ee25202ee85d232748e2910d33e104cc22776c29d11a48536c43bc10e3abc1"
+    },
+    {
+      "label": "ANIMATION",
+      "source": "docs/FRAME_ANIMATION_REQUIREMENTS_115_145.md",
+      "custody": "docs/audits/implementation-495/requirements/animation.txt",
+      "sha256": "138ccbba07f428a99868ed260e54a99fab860728333180eef304655bc9b7c59c"
+    }
+  ],
+  "sections": [
+    {
+      "section": 0,
+      "title": "PRIMARY GOAL",
+      "source": "docs/audits/implementation-495/requirements/master.txt",
+      "line": 15,
+      "label": "MASTER"
+    },
+    {
+      "section": 1,
+      "title": "PROJECT INSPECTION FIRST",
+      "source": "docs/audits/implementation-495/requirements/master.txt",
+      "line": 40,
+      "label": "MASTER"
+    },
+    {
+      "section": 2,
+      "title": "SUBAGENT MODEL ASSIGNMENT",
+      "source": "docs/audits/implementation-495/requirements/master.txt",
+      "line": 84,
+      "label": "MASTER"
+    },
+    {
+      "section": 3,
+      "title": "CORE MATCH STRUCTURE",
+      "source": "docs/audits/implementation-495/requirements/master.txt",
+      "line": 153,
+      "label": "MASTER"
+    },
+    {
+      "section": 4,
+      "title": "MAIN RESIDENCE / PALACE SYSTEM",
+      "source": "docs/audits/implementation-495/requirements/master.txt",
+      "line": 183,
+      "label": "MASTER"
+    },
+    {
+      "section": 5,
+      "title": "BUILDINGS",
+      "source": "docs/audits/implementation-495/requirements/master.txt",
+      "line": 213,
+      "label": "MASTER"
+    },
+    {
+      "section": 6,
+      "title": "RESOURCE SYSTEM",
+      "source": "docs/audits/implementation-495/requirements/master.txt",
+      "line": 264,
+      "label": "MASTER"
+    },
+    {
+      "section": 7,
+      "title": "FOOD / RATION SYSTEM",
+      "source": "docs/audits/implementation-495/requirements/master.txt",
+      "line": 303,
+      "label": "MASTER"
+    },
+    {
+      "section": 8,
+      "title": "GRANARY RESUPPLY",
+      "source": "docs/audits/implementation-495/requirements/master.txt",
+      "line": 348,
+      "label": "MASTER"
+    },
+    {
+      "section": 9,
+      "title": "SUPPLY DEPOT",
+      "source": "docs/audits/implementation-495/requirements/master.txt",
+      "line": 374,
+      "label": "MASTER"
+    },
+    {
+      "section": 10,
+      "title": "SUPPLY WAGON",
+      "source": "docs/audits/implementation-495/requirements/master.txt",
+      "line": 391,
+      "label": "MASTER"
+    },
+    {
+      "section": 11,
+      "title": "HISTORICAL KING / GENERAL SYSTEM",
+      "source": "docs/audits/implementation-495/requirements/master.txt",
+      "line": 419,
+      "label": "MASTER"
+    },
+    {
+      "section": 12,
+      "title": "CHARACTER GAMEPLAY IDENTITIES",
+      "source": "docs/audits/implementation-495/requirements/master.txt",
+      "line": 456,
+      "label": "MASTER"
+    },
+    {
+      "section": 13,
+      "title": "KING + GENERAL SYNERGY SYSTEM",
+      "source": "docs/audits/implementation-495/requirements/master.txt",
+      "line": 621,
+      "label": "MASTER"
+    },
+    {
+      "section": 14,
+      "title": "VISUAL STYLE",
+      "source": "docs/audits/implementation-495/requirements/master.txt",
+      "line": 671,
+      "label": "MASTER"
+    },
+    {
+      "section": 15,
+      "title": "HISTORICAL CHARACTER ART",
+      "source": "docs/audits/implementation-495/requirements/master.txt",
+      "line": 735,
+      "label": "MASTER"
+    },
+    {
+      "section": 16,
+      "title": "MAPS",
+      "source": "docs/audits/implementation-495/requirements/master.txt",
+      "line": 769,
+      "label": "MASTER"
+    },
+    {
+      "section": 17,
+      "title": "MAP 1 DESIGN PHILOSOPHY",
+      "source": "docs/audits/implementation-495/requirements/master.txt",
+      "line": 795,
+      "label": "MASTER"
+    },
+    {
+      "section": 18,
+      "title": "MAP 2 DESIGN PHILOSOPHY",
+      "source": "docs/audits/implementation-495/requirements/master.txt",
+      "line": 825,
+      "label": "MASTER"
+    },
+    {
+      "section": 19,
+      "title": "TERRAIN GAMEPLAY",
+      "source": "docs/audits/implementation-495/requirements/master.txt",
+      "line": 853,
+      "label": "MASTER"
+    },
+    {
+      "section": 20,
+      "title": "FOG OF WAR",
+      "source": "docs/audits/implementation-495/requirements/master.txt",
+      "line": 890,
+      "label": "MASTER"
+    },
+    {
+      "section": 21,
+      "title": "COMBAT",
+      "source": "docs/audits/implementation-495/requirements/master.txt",
+      "line": 906,
+      "label": "MASTER"
+    },
+    {
+      "section": 22,
+      "title": "MORALE",
+      "source": "docs/audits/implementation-495/requirements/master.txt",
+      "line": 943,
+      "label": "MASTER"
+    },
+    {
+      "section": 23,
+      "title": "FORMATIONS",
+      "source": "docs/audits/implementation-495/requirements/master.txt",
+      "line": 964,
+      "label": "MASTER"
+    },
+    {
+      "section": 24,
+      "title": "PATHFINDING",
+      "source": "docs/audits/implementation-495/requirements/master.txt",
+      "line": 980,
+      "label": "MASTER"
+    },
+    {
+      "section": 25,
+      "title": "USER INTERFACE",
+      "source": "docs/audits/implementation-495/requirements/master.txt",
+      "line": 1005,
+      "label": "MASTER"
+    },
+    {
+      "section": 26,
+      "title": "SELECTION AND CONTROLS",
+      "source": "docs/audits/implementation-495/requirements/master.txt",
+      "line": 1046,
+      "label": "MASTER"
+    },
+    {
+      "section": 27,
+      "title": "AI",
+      "source": "docs/audits/implementation-495/requirements/master.txt",
+      "line": 1066,
+      "label": "MASTER"
+    },
+    {
+      "section": 28,
+      "title": "PERFORMANCE TARGET",
+      "source": "docs/audits/implementation-495/requirements/master.txt",
+      "line": 1099,
+      "label": "MASTER"
+    },
+    {
+      "section": 29,
+      "title": "DATA-DRIVEN DESIGN",
+      "source": "docs/audits/implementation-495/requirements/master.txt",
+      "line": 1128,
+      "label": "MASTER"
+    },
+    {
+      "section": 30,
+      "title": "DEVELOPMENT ORDER",
+      "source": "docs/audits/implementation-495/requirements/master.txt",
+      "line": 1149,
+      "label": "MASTER"
+    },
+    {
+      "section": 31,
+      "title": "DEFINITION OF DONE FOR EACH FEATURE",
+      "source": "docs/audits/implementation-495/requirements/master.txt",
+      "line": 1222,
+      "label": "MASTER"
+    },
+    {
+      "section": 32,
+      "title": "TESTING",
+      "source": "docs/audits/implementation-495/requirements/master.txt",
+      "line": 1239,
+      "label": "MASTER"
+    },
+    {
+      "section": 33,
+      "title": "VISUAL SUBAGENT WORKFLOW",
+      "source": "docs/audits/implementation-495/requirements/master.txt",
+      "line": 1297,
+      "label": "MASTER"
+    },
+    {
+      "section": 34,
+      "title": "CODE SUBAGENT WORKFLOW",
+      "source": "docs/audits/implementation-495/requirements/master.txt",
+      "line": 1338,
+      "label": "MASTER"
+    },
+    {
+      "section": 35,
+      "title": "AUDIT LOOP",
+      "source": "docs/audits/implementation-495/requirements/master.txt",
+      "line": 1355,
+      "label": "MASTER"
+    },
+    {
+      "section": 36,
+      "title": "DO NOT STOP EARLY",
+      "source": "docs/audits/implementation-495/requirements/master.txt",
+      "line": 1414,
+      "label": "MASTER"
+    },
+    {
+      "section": 37,
+      "title": "QUOTA / CONTEXT LIMIT HANDLING",
+      "source": "docs/audits/implementation-495/requirements/master.txt",
+      "line": 1434,
+      "label": "MASTER"
+    },
+    {
+      "section": 38,
+      "title": "GIT SAFETY",
+      "source": "docs/audits/implementation-495/requirements/master.txt",
+      "line": 1468,
+      "label": "MASTER"
+    },
+    {
+      "section": 39,
+      "title": "PROJECT DOCUMENTATION",
+      "source": "docs/audits/implementation-495/requirements/master.txt",
+      "line": 1503,
+      "label": "MASTER"
+    },
+    {
+      "section": 40,
+      "title": "IMPORTANT GAME-DESIGN PRINCIPLE",
+      "source": "docs/audits/implementation-495/requirements/master.txt",
+      "line": 1526,
+      "label": "MASTER"
+    },
+    {
+      "section": 41,
+      "title": "FIRST ACTION RIGHT NOW",
+      "source": "docs/audits/implementation-495/requirements/master.txt",
+      "line": 1568,
+      "label": "MASTER"
+    },
+    {
+      "section": 42,
+      "title": "COMPLETION CRITERIA",
+      "source": "docs/audits/implementation-495/requirements/master.txt",
+      "line": 1593,
+      "label": "MASTER"
+    },
+    {
+      "section": 43,
+      "title": "WEB-FIRST GAME REQUIREMENT \u2014 HARD REQUIREMENT",
+      "source": "docs/audits/implementation-495/requirements/web.txt",
+      "line": 2,
+      "label": "WEB"
+    },
+    {
+      "section": 44,
+      "title": "WEB RENDERING",
+      "source": "docs/audits/implementation-495/requirements/web.txt",
+      "line": 49,
+      "label": "WEB"
+    },
+    {
+      "section": 45,
+      "title": "WEB PERFORMANCE",
+      "source": "docs/audits/implementation-495/requirements/web.txt",
+      "line": 72,
+      "label": "WEB"
+    },
+    {
+      "section": 46,
+      "title": "MAIN MENU",
+      "source": "docs/audits/implementation-495/requirements/web.txt",
+      "line": 111,
+      "label": "WEB"
+    },
+    {
+      "section": 47,
+      "title": "SINGLE PLAYER MODE",
+      "source": "docs/audits/implementation-495/requirements/web.txt",
+      "line": 134,
+      "label": "WEB"
+    },
+    {
+      "section": 48,
+      "title": "ONLINE MULTIPLAYER \u2014 EXACTLY TWO PLAYERS",
+      "source": "docs/audits/implementation-495/requirements/web.txt",
+      "line": 176,
+      "label": "WEB"
+    },
+    {
+      "section": 49,
+      "title": "ONLINE USER EXPERIENCE",
+      "source": "docs/audits/implementation-495/requirements/web.txt",
+      "line": 209,
+      "label": "WEB"
+    },
+    {
+      "section": 50,
+      "title": "NO ACCOUNT REQUIRED FOR BASIC PLAY",
+      "source": "docs/audits/implementation-495/requirements/web.txt",
+      "line": 252,
+      "label": "WEB"
+    },
+    {
+      "section": 51,
+      "title": "TWO-PLAYER LOBBY",
+      "source": "docs/audits/implementation-495/requirements/web.txt",
+      "line": 283,
+      "label": "WEB"
+    },
+    {
+      "section": 52,
+      "title": "MULTIPLAYER NETWORK ARCHITECTURE",
+      "source": "docs/audits/implementation-495/requirements/web.txt",
+      "line": 330,
+      "label": "WEB"
+    },
+    {
+      "section": 53,
+      "title": "SERVER AUTHORITY",
+      "source": "docs/audits/implementation-495/requirements/web.txt",
+      "line": 371,
+      "label": "WEB"
+    },
+    {
+      "section": 54,
+      "title": "RTS NETWORK SYNCHRONIZATION",
+      "source": "docs/audits/implementation-495/requirements/web.txt",
+      "line": 404,
+      "label": "WEB"
+    },
+    {
+      "section": 55,
+      "title": "FIXED SIMULATION TICK",
+      "source": "docs/audits/implementation-495/requirements/web.txt",
+      "line": 440,
+      "label": "WEB"
+    },
+    {
+      "section": 56,
+      "title": "DETERMINISM",
+      "source": "docs/audits/implementation-495/requirements/web.txt",
+      "line": 466,
+      "label": "WEB"
+    },
+    {
+      "section": 57,
+      "title": "STATE HASH / DESYNC DETECTION",
+      "source": "docs/audits/implementation-495/requirements/web.txt",
+      "line": 501,
+      "label": "WEB"
+    },
+    {
+      "section": 58,
+      "title": "NETWORK LATENCY",
+      "source": "docs/audits/implementation-495/requirements/web.txt",
+      "line": 529,
+      "label": "WEB"
+    },
+    {
+      "section": 59,
+      "title": "DISCONNECTION / RECONNECTION",
+      "source": "docs/audits/implementation-495/requirements/web.txt",
+      "line": 550,
+      "label": "WEB"
+    },
+    {
+      "section": 60,
+      "title": "PAUSE ON CONNECTION LOSS",
+      "source": "docs/audits/implementation-495/requirements/web.txt",
+      "line": 580,
+      "label": "WEB"
+    },
+    {
+      "section": 61,
+      "title": "ROOM LIFECYCLE",
+      "source": "docs/audits/implementation-495/requirements/web.txt",
+      "line": 593,
+      "label": "WEB"
+    },
+    {
+      "section": 62,
+      "title": "MULTIPLAYER SECURITY",
+      "source": "docs/audits/implementation-495/requirements/web.txt",
+      "line": 612,
+      "label": "WEB"
+    },
+    {
+      "section": 63,
+      "title": "PUBLIC DEPLOYMENT",
+      "source": "docs/audits/implementation-495/requirements/web.txt",
+      "line": 633,
+      "label": "WEB"
+    },
+    {
+      "section": 64,
+      "title": "DEPLOYMENT PIPELINE",
+      "source": "docs/audits/implementation-495/requirements/web.txt",
+      "line": 665,
+      "label": "WEB"
+    },
+    {
+      "section": 65,
+      "title": "LOCAL DEVELOPMENT",
+      "source": "docs/audits/implementation-495/requirements/web.txt",
+      "line": 697,
+      "label": "WEB"
+    },
+    {
+      "section": 66,
+      "title": "MULTIPLAYER SIMULATION TESTS",
+      "source": "docs/audits/implementation-495/requirements/web.txt",
+      "line": 725,
+      "label": "WEB"
+    },
+    {
+      "section": 67,
+      "title": "MULTIPLAYER LOAD TEST SCOPE",
+      "source": "docs/audits/implementation-495/requirements/web.txt",
+      "line": 794,
+      "label": "WEB"
+    },
+    {
+      "section": 68,
+      "title": "SINGLE PLAYER AND MULTIPLAYER MUST SHARE GAME RULES",
+      "source": "docs/audits/implementation-495/requirements/web.txt",
+      "line": 821,
+      "label": "WEB"
+    },
+    {
+      "section": 69,
+      "title": "MULTIPLAYER MAP RULE",
+      "source": "docs/audits/implementation-495/requirements/web.txt",
+      "line": 858,
+      "label": "WEB"
+    },
+    {
+      "section": 71,
+      "title": "ONLINE GAME FLOW",
+      "source": "docs/audits/implementation-495/requirements/web.txt",
+      "line": 911,
+      "label": "WEB"
+    },
+    {
+      "section": 72,
+      "title": "REMATCH",
+      "source": "docs/audits/implementation-495/requirements/web.txt",
+      "line": 966,
+      "label": "WEB"
+    },
+    {
+      "section": 73,
+      "title": "SHAREABLE ROOM LINK",
+      "source": "docs/audits/implementation-495/requirements/web.txt",
+      "line": 983,
+      "label": "WEB"
+    },
+    {
+      "section": 74,
+      "title": "WEB REFRESH BEHAVIOR",
+      "source": "docs/audits/implementation-495/requirements/web.txt",
+      "line": 1011,
+      "label": "WEB"
+    },
+    {
+      "section": 75,
+      "title": "BROWSER TAB BEHAVIOR",
+      "source": "docs/audits/implementation-495/requirements/web.txt",
+      "line": 1028,
+      "label": "WEB"
+    },
+    {
+      "section": 76,
+      "title": "NETWORK DEBUG OVERLAY",
+      "source": "docs/audits/implementation-495/requirements/web.txt",
+      "line": 1040,
+      "label": "WEB"
+    },
+    {
+      "section": 77,
+      "title": "WEB DEVELOPMENT PRIORITY CHANGE",
+      "source": "docs/audits/implementation-495/requirements/web.txt",
+      "line": 1065,
+      "label": "WEB"
+    },
+    {
+      "section": 78,
+      "title": "WEB MVP MUST COME EARLY",
+      "source": "docs/audits/implementation-495/requirements/web.txt",
+      "line": 1153,
+      "label": "WEB"
+    },
+    {
+      "section": 79,
+      "title": "PUBLIC URL IS PART OF DEFINITION OF DONE",
+      "source": "docs/audits/implementation-495/requirements/web.txt",
+      "line": 1190,
+      "label": "WEB"
+    },
+    {
+      "section": 80,
+      "title": "KEEP MULTIPLAYER SIMPLE",
+      "source": "docs/audits/implementation-495/requirements/web.txt",
+      "line": 1219,
+      "label": "WEB"
+    },
+    {
+      "section": 82,
+      "title": "VISUAL QUALITY IS A HARD REQUIREMENT",
+      "source": "docs/audits/implementation-495/requirements/visual.txt",
+      "line": 2,
+      "label": "VISUAL"
+    },
+    {
+      "section": 83,
+      "title": "NO PRIMITIVE-SHAPE FINAL ART",
+      "source": "docs/audits/implementation-495/requirements/visual.txt",
+      "line": 30,
+      "label": "VISUAL"
+    },
+    {
+      "section": 84,
+      "title": "VISUAL ACCEPTANCE GATE",
+      "source": "docs/audits/implementation-495/requirements/visual.txt",
+      "line": 83,
+      "label": "VISUAL"
+    },
+    {
+      "section": 85,
+      "title": "TARGET VISUAL IMPRESSION",
+      "source": "docs/audits/implementation-495/requirements/visual.txt",
+      "line": 120,
+      "label": "VISUAL"
+    },
+    {
+      "section": 86,
+      "title": "ART DIRECTION BEFORE MASS ASSET CREATION",
+      "source": "docs/audits/implementation-495/requirements/visual.txt",
+      "line": 151,
+      "label": "VISUAL"
+    },
+    {
+      "section": 87,
+      "title": "HISTORICAL CHARACTER ART QUALITY",
+      "source": "docs/audits/implementation-495/requirements/visual.txt",
+      "line": 188,
+      "label": "VISUAL"
+    },
+    {
+      "section": 89,
+      "title": "ANIMATION QUALITY",
+      "source": "docs/audits/implementation-495/requirements/visual.txt",
+      "line": 268,
+      "label": "VISUAL"
+    },
+    {
+      "section": 90,
+      "title": "BUILDING QUALITY",
+      "source": "docs/audits/implementation-495/requirements/visual.txt",
+      "line": 313,
+      "label": "VISUAL"
+    },
+    {
+      "section": 91,
+      "title": "ERA / CULTURE ARCHITECTURE",
+      "source": "docs/audits/implementation-495/requirements/visual.txt",
+      "line": 361,
+      "label": "VISUAL"
+    },
+    {
+      "section": 92,
+      "title": "TERRAIN MUST BE BEAUTIFUL",
+      "source": "docs/audits/implementation-495/requirements/visual.txt",
+      "line": 381,
+      "label": "VISUAL"
+    },
+    {
+      "section": 93,
+      "title": "FORESTS",
+      "source": "docs/audits/implementation-495/requirements/visual.txt",
+      "line": 408,
+      "label": "VISUAL"
+    },
+    {
+      "section": 94,
+      "title": "MOUNTAINS AND HILLS",
+      "source": "docs/audits/implementation-495/requirements/visual.txt",
+      "line": 436,
+      "label": "VISUAL"
+    },
+    {
+      "section": 95,
+      "title": "WATER QUALITY",
+      "source": "docs/audits/implementation-495/requirements/visual.txt",
+      "line": 455,
+      "label": "VISUAL"
+    },
+    {
+      "section": 96,
+      "title": "MAP COMPOSITION",
+      "source": "docs/audits/implementation-495/requirements/visual.txt",
+      "line": 477,
+      "label": "VISUAL"
+    },
+    {
+      "section": 97,
+      "title": "ENVIRONMENTAL DETAIL",
+      "source": "docs/audits/implementation-495/requirements/visual.txt",
+      "line": 510,
+      "label": "VISUAL"
+    },
+    {
+      "section": 98,
+      "title": "VFX QUALITY",
+      "source": "docs/audits/implementation-495/requirements/visual.txt",
+      "line": 538,
+      "label": "VISUAL"
+    },
+    {
+      "section": 99,
+      "title": "LIGHTING AND SHADOWS",
+      "source": "docs/audits/implementation-495/requirements/visual.txt",
+      "line": 576,
+      "label": "VISUAL"
+    },
+    {
+      "section": 100,
+      "title": "UNIT GROUNDING",
+      "source": "docs/audits/implementation-495/requirements/visual.txt",
+      "line": 603,
+      "label": "VISUAL"
+    },
+    {
+      "section": 101,
+      "title": "UI MUST ALSO LOOK PROFESSIONAL",
+      "source": "docs/audits/implementation-495/requirements/visual.txt",
+      "line": 618,
+      "label": "VISUAL"
+    },
+    {
+      "section": 102,
+      "title": "WEB UI POLISH",
+      "source": "docs/audits/implementation-495/requirements/visual.txt",
+      "line": 653,
+      "label": "VISUAL"
+    },
+    {
+      "section": 103,
+      "title": "VISUAL HIERARCHY",
+      "source": "docs/audits/implementation-495/requirements/visual.txt",
+      "line": 674,
+      "label": "VISUAL"
+    },
+    {
+      "section": 104,
+      "title": "KING AND GENERAL VISUAL IMPORTANCE",
+      "source": "docs/audits/implementation-495/requirements/visual.txt",
+      "line": 703,
+      "label": "VISUAL"
+    },
+    {
+      "section": 105,
+      "title": "VISUAL CONSISTENCY OVER RAW DETAIL",
+      "source": "docs/audits/implementation-495/requirements/visual.txt",
+      "line": 724,
+      "label": "VISUAL"
+    },
+    {
+      "section": 106,
+      "title": "AI ART REQUIRES CURATION",
+      "source": "docs/audits/implementation-495/requirements/visual.txt",
+      "line": 744,
+      "label": "VISUAL"
+    },
+    {
+      "section": 107,
+      "title": "NO FAKE DETAIL",
+      "source": "docs/audits/implementation-495/requirements/visual.txt",
+      "line": 775,
+      "label": "VISUAL"
+    },
+    {
+      "section": 108,
+      "title": "VISUAL VERTICAL SLICE",
+      "source": "docs/audits/implementation-495/requirements/visual.txt",
+      "line": 789,
+      "label": "VISUAL"
+    },
+    {
+      "section": 109,
+      "title": "SCREENSHOT QUALITY TEST",
+      "source": "docs/audits/implementation-495/requirements/visual.txt",
+      "line": 826,
+      "label": "VISUAL"
+    },
+    {
+      "section": 110,
+      "title": "PLACEHOLDER DEBT TRACKING",
+      "source": "docs/audits/implementation-495/requirements/visual.txt",
+      "line": 852,
+      "label": "VISUAL"
+    },
+    {
+      "section": 111,
+      "title": "LUNA HIGH 6 ART RESPONSIBILITY",
+      "source": "docs/audits/implementation-495/requirements/visual.txt",
+      "line": 874,
+      "label": "VISUAL"
+    },
+    {
+      "section": 112,
+      "title": "CURRENT MODEL VISUAL AUDIT",
+      "source": "docs/audits/implementation-495/requirements/visual.txt",
+      "line": 904,
+      "label": "VISUAL"
+    },
+    {
+      "section": 113,
+      "title": "GRAPHICS ARE NOT OPTIONAL POLISH",
+      "source": "docs/audits/implementation-495/requirements/visual.txt",
+      "line": 936,
+      "label": "VISUAL"
+    },
+    {
+      "section": 114,
+      "title": "FINAL VISUAL DEFINITION OF DONE",
+      "source": "docs/audits/implementation-495/requirements/visual.txt",
+      "line": 961,
+      "label": "VISUAL"
+    },
+    {
+      "section": 115,
+      "title": "FRAME-BY-FRAME SPRITE ANIMATION IS THE MANDATORY FINAL CHARACTER ANIMATION STYLE",
+      "source": "docs/audits/implementation-495/requirements/animation.txt",
+      "line": 2,
+      "label": "ANIMATION"
+    },
+    {
+      "section": 116,
+      "title": "IMPORTANT DISTINCTION: AUTHORING METHOD VS FINAL OUTPUT",
+      "source": "docs/audits/implementation-495/requirements/animation.txt",
+      "line": 49,
+      "label": "ANIMATION"
+    },
+    {
+      "section": 117,
+      "title": "DO NOT CONTINUE THE CURRENT UNCONTROLLED",
+      "source": "docs/audits/implementation-495/requirements/animation.txt",
+      "line": 101,
+      "label": "ANIMATION"
+    },
+    {
+      "section": 118,
+      "title": "CANONICAL CHARACTER IDENTITY",
+      "source": "docs/audits/implementation-495/requirements/animation.txt",
+      "line": 138,
+      "label": "ANIMATION"
+    },
+    {
+      "section": 119,
+      "title": "FRAME CONTINUITY RULE",
+      "source": "docs/audits/implementation-495/requirements/animation.txt",
+      "line": 180,
+      "label": "ANIMATION"
+    },
+    {
+      "section": 120,
+      "title": "WALK CYCLE MUST USE EXPLICIT LEG PHASES",
+      "source": "docs/audits/implementation-495/requirements/animation.txt",
+      "line": 207,
+      "label": "ANIMATION"
+    },
+    {
+      "section": 121,
+      "title": "WALK CYCLE VALIDATION",
+      "source": "docs/audits/implementation-495/requirements/animation.txt",
+      "line": 314,
+      "label": "ANIMATION"
+    },
+    {
+      "section": 122,
+      "title": "TEMPORARY LEG DEBUG MARKERS",
+      "source": "docs/audits/implementation-495/requirements/animation.txt",
+      "line": 350,
+      "label": "ANIMATION"
+    },
+    {
+      "section": 123,
+      "title": "KEYFRAME-FIRST PRODUCTION",
+      "source": "docs/audits/implementation-495/requirements/animation.txt",
+      "line": 371,
+      "label": "ANIMATION"
+    },
+    {
+      "section": 124,
+      "title": "IN-BETWEEN FRAME METHOD",
+      "source": "docs/audits/implementation-495/requirements/animation.txt",
+      "line": 417,
+      "label": "ANIMATION"
+    },
+    {
+      "section": 125,
+      "title": "DO NOT FORCE EVERY ANIMATION TO USE THE SAME NUMBER OF FRAMES",
+      "source": "docs/audits/implementation-495/requirements/animation.txt",
+      "line": 450,
+      "label": "ANIMATION"
+    },
+    {
+      "section": 126,
+      "title": "GAME FPS != ANIMATION FPS",
+      "source": "docs/audits/implementation-495/requirements/animation.txt",
+      "line": 503,
+      "label": "ANIMATION"
+    },
+    {
+      "section": 127,
+      "title": "ANIMATION TIMING",
+      "source": "docs/audits/implementation-495/requirements/animation.txt",
+      "line": 537,
+      "label": "ANIMATION"
+    },
+    {
+      "section": 128,
+      "title": "EIGHT DIRECTION REQUIREMENT",
+      "source": "docs/audits/implementation-495/requirements/animation.txt",
+      "line": 575,
+      "label": "ANIMATION"
+    },
+    {
+      "section": 129,
+      "title": "DIRECTION PRODUCTION ORDER",
+      "source": "docs/audits/implementation-495/requirements/animation.txt",
+      "line": 604,
+      "label": "ANIMATION"
+    },
+    {
+      "section": 130,
+      "title": "MIRRORING POLICY",
+      "source": "docs/audits/implementation-495/requirements/animation.txt",
+      "line": 633,
+      "label": "ANIMATION"
+    },
+    {
+      "section": 131,
+      "title": "FRAME-BY-FRAME COMIC QUALITY",
+      "source": "docs/audits/implementation-495/requirements/animation.txt",
+      "line": 666,
+      "label": "ANIMATION"
+    },
+    {
+      "section": 132,
+      "title": "SILHOUETTE IS MORE IMPORTANT THAN TINY DETAIL",
+      "source": "docs/audits/implementation-495/requirements/animation.txt",
+      "line": 691,
+      "label": "ANIMATION"
+    },
+    {
+      "section": 133,
+      "title": "FRAME CONSISTENCY TEST",
+      "source": "docs/audits/implementation-495/requirements/animation.txt",
+      "line": 712,
+      "label": "ANIMATION"
+    },
+    {
+      "section": 134,
+      "title": "PIVOT LOCK",
+      "source": "docs/audits/implementation-495/requirements/animation.txt",
+      "line": 752,
+      "label": "ANIMATION"
+    },
+    {
+      "section": 135,
+      "title": "FOOT SLIDING TEST",
+      "source": "docs/audits/implementation-495/requirements/animation.txt",
+      "line": 775,
+      "label": "ANIMATION"
+    },
+    {
+      "section": 136,
+      "title": "ROOT MOTION POLICY",
+      "source": "docs/audits/implementation-495/requirements/animation.txt",
+      "line": 791,
+      "label": "ANIMATION"
+    },
+    {
+      "section": 137,
+      "title": "SPRITE SOURCE VS RUNTIME FORMAT",
+      "source": "docs/audits/implementation-495/requirements/animation.txt",
+      "line": 813,
+      "label": "ANIMATION"
+    },
+    {
+      "section": 138,
+      "title": "TEXTURE ATLAS PIPELINE",
+      "source": "docs/audits/implementation-495/requirements/animation.txt",
+      "line": 848,
+      "label": "ANIMATION"
+    },
+    {
+      "section": 139,
+      "title": "ANIMATION EVENTS",
+      "source": "docs/audits/implementation-495/requirements/animation.txt",
+      "line": 876,
+      "label": "ANIMATION"
+    },
+    {
+      "section": 140,
+      "title": "VISUAL ANIMATION MUST NOT CONTROL AUTHORITATIVE MULTIPLAYER STATE",
+      "source": "docs/audits/implementation-495/requirements/animation.txt",
+      "line": 918,
+      "label": "ANIMATION"
+    },
+    {
+      "section": 141,
+      "title": "HISTORICAL LEADER ANIMATION",
+      "source": "docs/audits/implementation-495/requirements/animation.txt",
+      "line": 940,
+      "label": "ANIMATION"
+    },
+    {
+      "section": 142,
+      "title": "VILLAGER ANIMATION PIPELINE RESTART",
+      "source": "docs/audits/implementation-495/requirements/animation.txt",
+      "line": 983,
+      "label": "ANIMATION"
+    },
+    {
+      "section": 143,
+      "title": "FIRST REQUIRED WALK PROTOTYPE",
+      "source": "docs/audits/implementation-495/requirements/animation.txt",
+      "line": 1014,
+      "label": "ANIMATION"
+    },
+    {
+      "section": 144,
+      "title": "ANIMATION AUDIT GATE",
+      "source": "docs/audits/implementation-495/requirements/animation.txt",
+      "line": 1045,
+      "label": "ANIMATION"
+    },
+    {
+      "section": 145,
+      "title": "FINAL ANIMATION PRINCIPLE",
+      "source": "docs/audits/implementation-495/requirements/animation.txt",
+      "line": 1074,
+      "label": "ANIMATION"
+    }
+  ],
+  "limits": "Section headers extracted from supplied text; not every sentence mechanically mapped or completion established."
+}

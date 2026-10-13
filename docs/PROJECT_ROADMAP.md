@@ -1,34 +1,59 @@
-# Active roadmap — pipeline489 / qualification490
+# Remaining project roadmap — approved implementation495
 
-Complete useful integrated banks, not image counts. No row implicitly authorizes an image call.
+Full goal OPEN. This is the approved order and exit criteria, not an image order. Current observed state: PROJECT_STATE.md; active queue: NEXT_STEPS.md; requirement traceability: COMPLETION_MATRIX.md. Exact previous roadmap archived in audits/implementation-495/prior-active/.
 
-| Stage | Concrete work | Exit evidence | Owner/dependency |
-|---|---|---|---|
-|P0 Audit DONE|Four reports and mandatory contracts sealed7f8cd34|488receipt; no motion claim|Historical snapshot|
-|P1 Reusable jobs IMPLEMENTED489|Distinct view/action job kinds;1-view vs action slot rules; immutable job bindings by identity/action/direction/variant; verified equipment or explicit N/A|Focused view-claim/concurrent-job/stalehash/heldref tests; preserve oldledger|Pipeline worker, before direction fanout|
-|P2 Motion plan|Version walk phases + per-view contact lanes; reuse VillagerD1 sources first|Two opposing whole contact keys preserve identity; no duplicate generation|Art worker + independent review|
-|P2L Local2D feasibility|Check actual driver/VRAM/tool/license/storage; first original-derived full-clothed guide + built-in. If insufficient, isolated2D mask/pose-conditioned capability trial|Actual command/capability; genuinely different method max2contacts+1visible correction; unavailable/failed branch HELD|User selected research, no install/generation488|
-|P3 Villager A MOTION_REJECTED490|Reused loop technically passed, owner rejected; repair before fanout. fill only missing slots after contacts;10–15s real-size loop + walk/turn/PauseResume/arrival/Stop|Natural motion, measured distancePerCycle and projected stance; no gameplay speed change|P2/fixed family geometry|
-|P4 Infantry B|Reuse archetype/spec, original084845, character-specific equipment/cloth; reuse470/477 where valid|Actual loop/travel; compare calls, first-pass rate, corrections, manual minutes, elapsed effort A→B|P3; no promised efficiency percentage|
-|P5 Complex|Wholehorsewagon415 or cavalry; fourhooves/harness/wheels/rider weight|Own gait pilot and travel/Stop; no transplanted human walk|P4|
-|P6 Full banks|Infantry5actions×8dirs; Villager gaps; spear/firearm; wagon/cavalry; artillery/ships;12leaders|Eight selected views/clips per action; shared aliases explicit; one unit integration scene|Qualified archetype; A:D0–2/B:D3–5/C:D6–7|
-|P7 Content/performance|Use existing deferred loader for actual per-match selection; dense/cold/eviction profiling; building states and map composition|Bounded memory, actual dense scene, final illustrated art|Independent work can progress while motion held|
-|P8 Public completion|Exact build/source, paired backend if changed, rollback, relevant browser scenes, external desktop/WAN and bothmaps×bothmodes|User's full completion criteria; protect active rooms|Root release|
+| Gate | Work / dependency | Exit evidence |
+|---|---|---|
+|G0|Refresh active instructions; ownership/scoped pins/method lineage/prerequisites/durable budgets/receipt checks on existing helpers|Focused negative tests; old orders/sources retained; no stale queue doing493again|
+|G1|One isolated Diffusers SD1.5 + OpenPoseControlNet + IP-Adapter capability path; actual GPU/library/Python/RAM/disk before install/model download|Actual runnable pipeline, or explicit prerequisite failure.495 failed runtime; no adoption|
+|G2|Original VillagerD1 passing/control repair; reuse valid source slots|Original identity; one10–15s real-size loop; actual Move/turn/PauseResume/assignedarrival/Stop; measured stride; owner status only actual reply|
+|G3|Reuse on original Infantry, then wholehorsewagon415/cavalry|Motion/runtime pass; actual newcalls/corrections/held/reuse/manualeffort, not schema-count claims|
+|G4|Finish each identity/action×D0–D7; view lock and selected keys before parallel inbetweens|All applicable exact/shared clips integrated; static fallback never completion|
+|G5|Building construction/hit/death/real attack; straight/corner stonewall policy; both map compositions|Dedicated lifecycle art; actual scene/picking/readability; authoritative policy tests and ordinaryUI|
+|G6|Full intended working set and dense browser/live-room profiling; loader493 already implemented|128MiBdecoded/64MiBencoded; ordinary-gameplay cohorts; exact hardware/browser profile|
+|G7|Accepted default art; exact paired frontend/backend release+rollback; final public two-mode/two-map checks|Clean HTTPS desktop, externalWAN/device, complete ordinary matches, reconnect/victory/rematch, no critical requirement open|
 
-## Budget, not call authorization
+G5 and relevantG6 tasks may progress independently whileG1–G4 held. Do not regenerate valid469, reopen482/483/486/491/492, repeat completed466/462/493, or invent mechanics to obtain art.
 
-135identity/action banks,1080directional clips. Standard:idle4/walk8/attack8/hit4/death8/work8/ability6/load-unload8. Same leader shares ability by identity across roles; King build separate. Aliases add no frames.
+## Production sequence and package contract
 
-| Tier | idle/walk/attack/hit/death/work/ability/load-unload | Planned total |
-|---|---|---:|
-|Low|2/6/6/2/6/6/4/6|4944|
-|Standard|4/8/8/4/8/8/6/8|7104|
-|Premium|6/12/12/6/12/12/8/12|10560|
+Identity → motion → projection → whole illustrated frames → runtime. One identity/action package has8 direction jobs, finite slots and one receipt. Reuse original/view/layout/equipment; source missing remains missing. Opposing contacts before passing keys; selected key endpoints before inbetweens. Original appearance reference, physical A/B limb/tool ownership and verified screen travel/occlusion separate from screen-left/right. Whole finished2D only.
 
-Low is diagnostic comparison, not permission to reduce agreedscope. Premium only for observed motion need. Standard132×132paddedRGBA requires495,120,384bytes beforepage slack/nonunit/GPU overhead; one8dir×8framebank4,460,544bytes. Measure encoded bytes per actual bank. Dollar/time estimate UNKNOWN until pilots measure pass rate.7104positions≠7104calls; reuse sources and bound corrections.
+One sheet +10–15s gameplay-size loop + relevant scene. Block visible changed identity, phase/contact error, torso/weapon/scale jump, missing limb, obvious clipping/seam/sliding. Minor folds do not block. Technical8frame playback is not motion approval. Never alter facing/speed to hide error.
 
-## Ownership and escalation
+Initial materially different local Villager trial: F2/F6 two outputs + one correction total, only after capability passes and root finite registration. If it repeats geometry/identity failure, held/closed with no seed sweep or renamed retry. Built-in remains available under existing exact finite guards; no paid API/key/CLI fallback.
 
-Root owns source selection, commonmanifest/state/release. A owns active artpilot. B owns shared tooling, then exclusive direction group. C independently reviews loop/prepares nextarchetype. Fourauditors run in two waves with max3workers. Serialize root registrations and durable claims; no overlapping file/slot ownership.
+## Full scope / counts
 
-Same defect repeated: hold package, retainraw, name visible problem, change real control mechanism. No cap reset or equivalent renamed order. If no usable authoringroute, report exact capability gap and progress independent realrequirements; never promote badart. Measure reuse from actual A→B effort, not number of framework files.
+21identities (9 ordinary +12 historical),135actionbanks,1080applicable directional clips,7104Standard frame positions. This is workload, not call permission. Idle4/walk8/attack8/hit4/death8/work8/ability6/load8/unload8; increase only observed need. Aliases add no banks: repair→build; villager goodsreturn→walk; destroyed/sink→death; firearm aim/fire/reload and artillery recoil/recovery withinattack. Same historical identity shares common art between King/General; build King-only. No run/charge/deploy.
+
+| Group | Actions at D0–D7 |
+|---|---|
+|Villager|idle/walk/attack/hit/death/gather_wood/gather_food/gather_iron/build|
+|Infantry/spearman/firearm/cavalry/artillery/warship|idle/walk/attack/hit/death (archetype-specific move/fire/sink presentation)|
+|Horsewagon/transport|idle/walk/load/unload/hit/death|
+|12leaders|idle/walk/attack/hit/death/ability/build (buildKingonly)|
+
+10world masters retained;11missing (warship+10leaders).157/168neutralview slots lack source. Portraits cannot substitute for worldbody. Existing neutral view source is not eight-direction approval. Author uncertain historical equipment only after source/design decision; no invented facts.
+
+After qualified pilot+views: A:D0–2, B:D3–5, C:D6–7 of onebank; every worker exactgpt-6.1-sol/low. Root alone selects sources/manifest/release. Review different from producer. If worker limit/model unavailable, queue or root performs; no substitute.
+
+## Layout / resource policy
+
+Humanoid working256/runtime128 directly from raw independently; fixed family transform/pivot/shadow; padding2, no trim/rotate/fit/mirror. Keep large originals custody. Render42×defaultzoom1.68=70.56pxcanvas, measure alpha/body separately. Larger/rectangular envelope only measured clipping and versioned family extension. Settle Villager baked/separate shadow conflict; never double-shadow.
+
+Full padded7104target minimum495,120,384RGBAbytes (~472.18MiB), excludes slack/nonunit/browser/GPU. Do not preload whole roster or raise128MiBdecoded/64MiBencoded to pass.493 nonidle action decode implemented local; dense/LRU/first-use/eviction/cache retention remain unqualified. Future first-use offline requires cached bank; no full offline reload promise.
+
+## World / mechanics
+
+Preserve stonewall/woodgate/otherwood/wholehorsewagon415. New wall/gate placement degree≤2 (candidate+affected own living grid neighbors, unfinished included); straight/corner only, T/cross rejected without spend. Existing sites not deleted. Dedicated construction/death, not livingidle. Derive building lifecycle duration from actual sim before budgetingframes; Fortattack only ifrealattackstate. Bothmaps need shore/river/ford/forest/hill/mountain composition/readability/naval/multipleattack/supplyroutes; material filepresence isn't finalvisualpass.
+
+General death defeat, unique replaceableResidence/King-onlyrebuild, physicalfood/Granary/Depot/wagon, wood/iron centraltransfer, authoritative damage/cargo/cooldown unchanged unless evidenced gap. Existing code mechanics need finalrelease validation, not unnecessary rewrites.
+
+## Performance and production acceptance
+
+Profile1920×1080/DPR1/defaultzoom, record exact hardware/browser. Dense p95≤33.3ms/p99≤50ms over60s afterwarm; light60FPStarget. Ordinary cohorts20/50/100/200/240 legalunits (120/side);500onlyoptionaldiagnostic, no raisedcap. Server20Hz profile1/2/4/8rooms up to configuredcapacity with realnetwork; simulation-onlybenchmark notlive-roomproof. Optimize render/load/culling/admission, notsimulationrate/caps.
+
+Final4ordinary matches: SinglePlayer/Online × Delta/Coast, actual Generalcombat defeat, syncedvictory/reconnect/rematch, cleanChrome/relevantFirefox, at leastoneexternaldesktopWAN/device pair. Reuse matching release receipts; no fullmatch per sprite. BareURL must show acceptedart without opt-inquery.
+
+Build isolated literalcwd/absoluteoutDir/exactconfig; freeze beforetrial. Future shared release pairs frontend/backend, snapshot actual451front+230back rollback (not451's earlier433archive). No roomkicking/historicalPIDrestart. Root performs source/build/rollback intake and scoped publicsmoke. All critical completion matrix rows closed before COMPLETE.
