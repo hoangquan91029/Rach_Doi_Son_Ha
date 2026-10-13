@@ -1,4 +1,4 @@
-# Animation contract — v1, audit488
+# Animation contract — v1, audit488; authoring override499
 
 ## Five layers and authority
 
@@ -7,7 +7,7 @@
 |Identity|immutable original, selected views, physical equipment, exclusions, layout|Existing identity.json; missing locks remain missing|
 |Motion|phase/contact/support/swing/body/tool intents in normalized cycle|Reusable archetype below; numeric per-unit pose constraints still authored|
 |Projection|engine octant, ground vector, depth/occlusion, source landmarks|Existing54×27 projection + per-view authoring, never screen-side anatomy guessing|
-|Frames|whole original-derived keys, neighbor in-betweens, raw/provenance|Built-in edits are probabilistic; local2D branch unqualified|
+|Frames|whole original-derived illustration or newly authorized Blender whole-frame render, raw/provenance|Imagegen edits probabilistic; Blender capability/model/motion unqualified; no proxy final art|
 |Runtime|compiler descriptor/atlas, fixed pivot, distance/tick clocks, bank|Existing implementations reused; no simulation decisions from art|
 
 **Implemented tools:** `scripts/sprite-prompts.mjs`, `sprite-order-run.mjs`, `sprite-production.py`, `sprite-action-bank.mjs`, `sprite-preview.html`, `qa/sprite-preview.mjs`, `qa/unit-walk-scene.mjs`, `unit-art-coverage.mjs`. Inspect their CLI before invoking; do not invent options.
@@ -47,3 +47,7 @@ Provenance JSONL starts with a clearly scoped seed, not a claim that all legacy 
 `guide_key` uses the strict key fields. `guidetarget` must be primary in a typed OPEN action order with `referenceMode:guide-first` and exact `poseGuide` job/frame/phase/provenance pin. Second input is original matching master or selected matching view, preserving identity authority. Registered guide status is authoring-only, derived from original master. `rds-guide-target/v1` binds identity/action/direction/job/frame/phase, originalMaster, appearance, output and sourcePixelUse=false. Hash checks cover actual original/appearance/guide/provenance. `preparePrompt` without an order cannot prepare this route; durableclaim still precedes dispatch. Existing held/excluded/edit-target/view/neighbor safeguards remain.
 
 This metadata proves declared byte relationships only. Actual492ONE trial is HELD for passing/scale; guide-first is implemented but **not motion-qualified**. No new call/production authorization comes from this section.
+
+## Active499 rendered-frame branch
+
+Read [Blender sprite pipeline](BLENDER_SPRITE_PIPELINE.md). Model/rig authoring now permitted by human; final sprite output and simulation authority unchanged. Source256/render128 family migration requires one whole-original derivative and calibrated normalized pivot, original lineage, consistent shadow and explicit compiler adapter. The new scripts/blender exporter validates/plans candidate jobs; actual .blend/render/custody/layout adapter remains unqualified. Orthographic physical30° derives from equalworld X/Y and54:27 projection;26.565° is screen-axis slope. Original artwork camera match still needs real neutral renders. Rig actions sample shared normalized phase across all eight real orientations; no mirrors. Old image-call budgets do not become Blender render budgets or reset.

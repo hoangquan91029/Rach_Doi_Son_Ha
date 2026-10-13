@@ -1,0 +1,62 @@
+{
+  "schema": "rds-method-difference/v1",
+  "family": "whole2D.residence.construction.selected-key-sequence.v1",
+  "parentOrderIds": [
+    "residence-construction-F0-497"
+  ],
+  "reviewer": "/root/plan_art494",
+  "producer": "/root",
+  "decision": "MATERIALLY_DIFFERENT",
+  "changedControl": "497F0 used only original completed Residence as illustration reference.498sequence binds the actually selected same-family same-construction F0 source as primary structural/edit reference plus original Residence appearance authority; F2 begins from selectedF0, and F1/F3 depend on selectedF0+selectedF2 neighbors after F2 selection. This introduces actual construction-state pixel/reference constraints and phase-specific tied-tarp changes, instead of asking completed-original-only to reconstruct construction independently. Fixed roof/scaffold/terrace/stair/columns/pivot/canvas remain; no reissue F0 or failedunitwalk route. Material novelty is declared reference/control scope, not deterministic model enforcement.",
+  "observedAtUTC": "2026-10-13T04:02:34.401591+00:00",
+  "inputPins": [
+    {
+      "path": "docs/art/pipeline/residence-construction-497/source-selection.json",
+      "sha256": "e9dfbe17ab7ca930ab1c6a29fe0f35fc1a84ac8d6e4a35cedf8fa5c1abcc3435"
+    },
+    {
+      "path": "docs/art/pipeline/residence-construction-497/selected-keys.json",
+      "sha256": "139ebf4662598f433ec9ba0ebd9c0e55e74147c71ddd0563b79c1ae809360510"
+    },
+    {
+      "path": "docs/art/pipeline/residence-construction-497/prepared.json",
+      "sha256": "0626181d73c87708d5d24cbde17ff71bf2edc1f26c9401d728120b3c3767d928"
+    },
+    {
+      "path": "docs/art/pipeline/residence-construction-497/raw-F0.png",
+      "sha256": "e98afbf79b648b7645b32c8e2d9ad1dbbe8a6346e26ad68a49b4b33c840daea0"
+    },
+    {
+      "path": "docs/art/residence/variant-02/raw.png",
+      "sha256": "f617c3540680cafff467358bab1adb01bf735417563f2cba86ab8af523b07dcc"
+    },
+    {
+      "path": "scripts/building-sprite-contract.mjs",
+      "sha256": "03544fe68faa3d0bc68bb2931c402b8967677e3fe4e0d64d9488d0e9280b7715"
+    }
+  ],
+  "budget": {
+    "priorF0InitialCalls": 1,
+    "newMissingSlots": [
+      2,
+      1,
+      3
+    ],
+    "newInitialCap": 3,
+    "cumulativeInitialCap": 4,
+    "corrections": 0,
+    "F0Retry": false,
+    "capReset": false,
+    "unitFanout": false
+  },
+  "sourceObservation": "selected-keys.json has onlyF0selected; F1F2F3pending. source-selection.json explicitly records sourcecandidate notmotion/runtime/owner/release. prepared.json actualreference array is only originalraw.",
+  "dependencyGate": "F2 may use only pinned selectedF0+original; F1/F3 remain blocked until actualF2 independently reviewed and rootselected. Actualpreparedorder input arrays must match this declared control; this assessment itself is not imagecall authorization.",
+  "limits": [
+    "No guarantee pose/geometry consistency or provider compliance",
+    "No image/tool/order/registry mutations by reviewer",
+    "No continuousmotion/runtime/owner/artbank/releasePASS",
+    "Wholeframes only; no tarpcutout/warp/pixelsplice/perframefit",
+    "Changingdust is notneeded; phased tied-tarpflutter only as root498scope"
+  ],
+  "method": "Independent read of real497 preparedinputs, selectedsource/job/selectionpins and root498proposal; no invented tool constraint"
+}

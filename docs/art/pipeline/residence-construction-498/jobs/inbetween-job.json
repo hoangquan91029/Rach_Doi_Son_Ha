@@ -1,0 +1,90 @@
+{
+  "schema": "rds-building-job/v1",
+  "id": "residence-construction-loop498-inbetweens",
+  "kind": "building",
+  "buildingType": "residence",
+  "state": "construction",
+  "direction": null,
+  "frameCount": 4,
+  "originalMaster": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/residence/variant-02/raw.png",
+    "sha256": "f617c3540680cafff467358bab1adb01bf735417563f2cba86ab8af523b07dcc"
+  },
+  "descriptorSHA": "11b26f3221aa9c56d32de37b8d601570504f997523abf0feb2e297b3bc7d787a",
+  "layout": {
+    "family": "residence",
+    "pivot": {
+      "x": 640,
+      "y": 970,
+      "space": "source"
+    },
+    "render": {
+      "width": 130,
+      "height": 130
+    },
+    "contactShadow": {
+      "mode": "baked"
+    }
+  },
+  "frames": [
+    {
+      "frame": 0,
+      "phase": 0.0,
+      "status": "selected",
+      "input": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/residence-construction-497/raw-F0.png",
+        "sha256": "e98afbf79b648b7645b32c8e2d9ad1dbbe8a6346e26ad68a49b4b33c840daea0",
+        "rgbaSha256": "a8a98142205a4ebd817867a933e2b13beda81ce106278a23613559bbb3de8c8e"
+      },
+      "sourceSelectionScope": "Root chooses independently reviewed original-building construction activity key; not phase/motion/runtime/owner/production qualification."
+    },
+    {
+      "frame": 1,
+      "phase": 0.25,
+      "status": "pending"
+    },
+    {
+      "frame": 2,
+      "phase": 0.5,
+      "status": "selected",
+      "input": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/residence-construction-498/raw/F2.png",
+        "sha256": "d03465a161d1df3c77fe0366d95c4a0957175d32c40153e1d8077b7c40a5e164",
+        "rgbaSha256": "03ff521d10d10eacd871b8c9cc8346b142c4508e88e69268de8970e83f03dce0"
+      },
+      "sourceSelectionScope": "Independent fixed219source review + rootchosen F2key; no motion/runtime/owner/clipqualification"
+    },
+    {
+      "frame": 3,
+      "phase": 0.75,
+      "status": "pending"
+    }
+  ],
+  "timing": {
+    "loop": true,
+    "durationMs": [
+      300,
+      300,
+      300,
+      300
+    ],
+    "scope": "Proposed4-frame maintenance/building activity loop; not progressmeter or changed24secondconstruction mechanic"
+  },
+  "phasePlan": [
+    "Selected497F0restingblueworktarp, entirestructurefixed",
+    "Laterinbetween F0towardF2; no scaffolding/roofshift",
+    "SameF0structure, blueworktarp lower edge gentlybillowsoutward, attachmentpointsfixed, no newroof/buildstage",
+    "LaterinbetweenF2returnF0; no roof/scaffoldshift"
+  ],
+  "limits": "F0/F2source-selected; ONLYF1/F3missinginitialcalls, cumulative4initialincl497F0; nocorrections/retries/fanout.",
+  "packageBudget": {
+    "initialLimit": 4,
+    "priorCalls": 1,
+    "missingFrames": [
+      1,
+      2,
+      3
+    ],
+    "correctionLimit": 0
+  }
+}

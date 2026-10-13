@@ -1,0 +1,86 @@
+{
+  "schema": "rds-agent-preflight/v1",
+  "task": "audit",
+  "head": "cebdfd5afd9e3e629d5ae07bf43d51ce88870fea",
+  "status": " M AGENTS.md\n M docs/AGENT_EXECUTION_CONTRACT.md\n M docs/ARCHITECTURE_DECISIONS.md\n M docs/COMPLETION_MATRIX.md\n M docs/NEXT_STEPS.md\n M docs/PROJECT_ROADMAP.md\n M docs/PROJECT_STATE.md\n M docs/agent-read-contract.json\n M docs/art/pipeline/ANIMATION_CONTRACT.md\n M docs/art/pipeline/IMAGE_GENERATION_TEMPLATES.md\n M docs/art/pipeline/SPRITE_PRODUCTION_WORKFLOW.md\n M docs/art/pipeline/building-production/residence/identity.json\n M docs/art/pipeline/unit-production/order-ledger.json\n M docs/audits/implementation-495/tasks.json\n M scripts/sprite-production.py\n?? docs/art/pipeline/BLENDER_SPRITE_PIPELINE.md\n?? docs/art/pipeline/building-compiler-498/\n?? docs/art/pipeline/residence-construction-498/\n?? docs/audits/blender-transition-499/\n?? scripts/blender/\n?? tests/blender-export499.test.js\n?? tests/building-sprite-compiler498.test.js",
+  "readFiles": [
+    {
+      "path": "docs/agent-read-contract.json",
+      "sha256": "416ca4786e698dcbb3e4418a7b679d7d3bfb6ce8c3c8589c30d07fe7e6985d26",
+      "bytes": 1258
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "cc426aeb2344eae7a03c912efd7d10813ec999154173e716c58f6dbfe047dae5",
+      "bytes": 10585
+    },
+    {
+      "path": "docs/PROJECT_STATE.md",
+      "sha256": "a7f1fc852d48f66c2f6ecfcb6665e304a4d7fcaff592a2f5e75da068b04cbac4",
+      "bytes": 19408
+    },
+    {
+      "path": "docs/NEXT_STEPS.md",
+      "sha256": "e4edc995aa90c0e56f0217cd7317e1bd7a8876835b8f3003afa1398ccd58f7ab",
+      "bytes": 3916
+    },
+    {
+      "path": "docs/ARCHITECTURE_DECISIONS.md",
+      "sha256": "7bfd25399fe1dfa21e3ed5d4acab9c7d1b0e2e54da408cc8cccf548da95af39f",
+      "bytes": 3389
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "225d9c16f9db5c4fbe941c93053fbcb958b1672824043b757b58ebb4f41b8569",
+      "bytes": 5779
+    },
+    {
+      "path": "docs/PROJECT_ROADMAP.md",
+      "sha256": "213e0bafd00ffe1ec20a7965d320e64460fa0e6a91d813853e1d1b20309b924c",
+      "bytes": 8510
+    },
+    {
+      "path": "docs/art/pipeline/ANIMATION_RESEARCH.md",
+      "sha256": "b6a1abb8c76d416a29a3c7bee95e3ea05502be71c2c02002a43bfbd9c43808d9",
+      "bytes": 5913
+    },
+    {
+      "path": "docs/COMPLETION_MATRIX.md",
+      "sha256": "a12e0f5d25fa778a2d1a3a05b7a11fa0c4855a14546ef7d900a33b555b18b6d4",
+      "bytes": 31557
+    },
+    {
+      "path": "docs/art/pipeline/BLENDER_SPRITE_PIPELINE.md",
+      "sha256": "a99e7897d6f2bc74d7a6ee15c10abc35263623df5d29ca3483d004ce20dbb125",
+      "bytes": 11529
+    }
+  ],
+  "sources": [
+    {
+      "path": "scripts/blender/export_job.py",
+      "sha256": "5156756cb4e8401d4c22a7cae29bad2b4c2f75daa92b57edcbe1f534f074350a",
+      "bytes": 12879
+    }
+  ],
+  "assignment": null,
+  "ledger": {
+    "path": "docs/art/pipeline/unit-production/order-ledger.json",
+    "sha256": "a687d7b292859ff5ef7b973001c2ae1308ec3fcf1023db160ac1f1792d3ce7b4",
+    "locked": false,
+    "unresolvedClaims": [
+      {
+        "order": "residence-construction-F1-F3-498",
+        "slot": 1
+      },
+      {
+        "order": "residence-construction-F1-F3-498",
+        "slot": 3
+      }
+    ]
+  },
+  "limits": [
+    "Existence and byte hashes do not establish understanding, permission, approval or tool availability.",
+    "Explicit invocation only; this helper is not a mandatory global hook.",
+    "Externally verify tools and actual live handles/preservation guards; no guards are declared closed."
+  ]
+}

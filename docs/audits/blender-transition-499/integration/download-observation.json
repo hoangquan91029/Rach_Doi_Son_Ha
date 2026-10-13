@@ -1,0 +1,10 @@
+{
+  "evidence": "VERIFIED_HTTP_FAILURE_AND_DOCUMENTED_INDEX",
+  "observation": "Root web search returned official release4.5 listing including blender-4.5.14-linux-x64.tar.xz (378045212 bytes) and blender-4.5.14.sha256. Direct curl HEAD to exact official checksum returned403 cf-mitigated challenge; web open returned402.",
+  "officialIndex": "https://download.blender.org/release/Blender4.5/",
+  "checksumURL": "https://download.blender.org/release/Blender4.5/blender-4.5.14.sha256",
+  "archiveFetched": false,
+  "publishedChecksum": null,
+  "installedVersion": null,
+  "limit": "An indexed filename is not current download/verification. No unchecked alternative binary installed; worker original403 failure remains."
+}

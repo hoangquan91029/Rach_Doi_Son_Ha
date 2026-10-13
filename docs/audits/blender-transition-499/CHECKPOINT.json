@@ -1,0 +1,211 @@
+{
+  "schema": "rds-agent-receipt/v1",
+  "taskId": "root-blender499",
+  "state": "LOCAL_BLENDER_TRANSITION_FRAMEWORK_RUNTIME_BLOCKED_FULL_GOAL_OPEN",
+  "purpose": "Audit delegated Blender source-bound pipeline, fix concrete exporter findings, update authoritativeplan and preserve interrupted498 work",
+  "head": "cebdfd5afd9e3e629d5ae07bf43d51ce88870fea",
+  "delegation": {
+    "workers": [
+      "/root/blender_capability499",
+      "/root/blender_identity499",
+      "/root/blender_export499"
+    ],
+    "model": "gpt-6.1-sol",
+    "reasoningEffort": "low",
+    "maxConcurrentWorkers": 3,
+    "rootRole": "audit, scope decisions, plan, independent intake"
+  },
+  "checks": [
+    {
+      "command": "node --test tests/blender-export499.test.js",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "method": "Focused strictjob/projection/ownership/matrix counterexamples, no bpy or actualBlender",
+      "state": "VERIFIED",
+      "executed": true,
+      "exitCode": 0,
+      "observation": "25tests passed after five rootaudit fixes; no Blenderruntime/visual assertion",
+      "evidence": [
+        {
+          "path": "docs/audits/blender-transition-499/integration/root-tests.txt",
+          "sha256": "e796f69959dc8c8b129a1f761294136dc8f1f76a05d8925d9e9f32381314e8c5"
+        }
+      ]
+    },
+    {
+      "command": "node scripts/agent-preflight.mjs --task audit --source scripts/blender/export_job.py --task-id root-blender499 --inputs docs/audits/blender-transition-499/integration/inputs.json",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "method": "Scoped registeredtask and mandatoryread/source hashes; unresolvedimageclaims remain visible",
+      "state": "VERIFIED",
+      "executed": true,
+      "exitCode": 0,
+      "observation": "Actual scopedpreflight result retained; hashes notunderstanding/permission",
+      "evidence": [
+        {
+          "path": "docs/audits/blender-transition-499/integration/scoped-preflight.json",
+          "sha256": "97260ed39fc4ea90188a7b72601446924cae8411498b8934af316fe4aeff9694"
+        }
+      ]
+    }
+  ],
+  "technical": {
+    "state": "VERIFIED",
+    "observation": "Source-only planner/export implementation reviewed and25focusedchecks passed; 438of439protectedpins unchanged, onlyrootauthorizedAGENTS difference",
+    "limitation": "Non-bpy syntheticfixtures; shader/scene/actualBlender methods and compileradapter are not executed or qualified",
+    "evidence": [
+      {
+        "path": "scripts/blender/export_job.py",
+        "sha256": "5156756cb4e8401d4c22a7cae29bad2b4c2f75daa92b57edcbe1f534f074350a"
+      },
+      {
+        "path": "docs/audits/blender-transition-499/integration/root-tests.txt",
+        "sha256": "e796f69959dc8c8b129a1f761294136dc8f1f76a05d8925d9e9f32381314e8c5"
+      },
+      {
+        "path": "docs/audits/blender-transition-499/integration/preservation.json",
+        "sha256": "959f95601d6163d87503bf363721460b5970aad30079e4fc5b43eb16fa2b5589"
+      }
+    ]
+  },
+  "motion": {
+    "state": "UNKNOWN",
+    "limitation": "No rendered Blender character/action loop; old490ownerrejection and failedorders unchanged"
+  },
+  "runtime": {
+    "state": "UNKNOWN",
+    "limitation": "No installedBlender/bpy/headlessPNG or candidate engineintegration; officialdownload403/402 blocked prerequisite"
+  },
+  "owner": {
+    "state": "UNKNOWN",
+    "limitation": "Human accepted authoringmethod/delegation only, not any new model or motion"
+  },
+  "release": {
+    "state": "UNKNOWN",
+    "limitation": "No publicmutation/deploy; currentdist/server/shared/client pins unchanged, finaltwomode/twomap/WAN remainsOPEN"
+  },
+  "handles": [
+    {
+      "id": "three499workers-and-focusedtests",
+      "status": "CLOSED",
+      "observation": "Allthree worker terminal reports and roottest exit observed; no workeropened Blender/server/browser"
+    },
+    {
+      "id": "residence498-F1/F3-existing-providerclaims",
+      "status": "UNRESOLVED",
+      "observation": "Bothused durableclaims retained; no savedreturnedmapping; no duplicate/refund/closure inferred"
+    },
+    {
+      "id": "existing-production",
+      "status": "INTENTIONALLY_RUNNING",
+      "observation": "No499 restart/deploy/permission/config action; scopedpublic/dist/server bytes unchanged, no new publichealthproof"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "docs/art/pipeline/BLENDER_SPRITE_PIPELINE.md",
+      "sha256": "a99e7897d6f2bc74d7a6ee15c10abc35263623df5d29ca3483d004ce20dbb125"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "cc426aeb2344eae7a03c912efd7d10813ec999154173e716c58f6dbfe047dae5"
+    },
+    {
+      "path": "docs/PROJECT_STATE.md",
+      "sha256": "a7f1fc852d48f66c2f6ecfcb6665e304a4d7fcaff592a2f5e75da068b04cbac4"
+    },
+    {
+      "path": "docs/NEXT_STEPS.md",
+      "sha256": "e4edc995aa90c0e56f0217cd7317e1bd7a8876835b8f3003afa1398ccd58f7ab"
+    },
+    {
+      "path": "docs/PROJECT_ROADMAP.md",
+      "sha256": "213e0bafd00ffe1ec20a7965d320e64460fa0e6a91d813853e1d1b20309b924c"
+    },
+    {
+      "path": "docs/ARCHITECTURE_DECISIONS.md",
+      "sha256": "7bfd25399fe1dfa21e3ed5d4acab9c7d1b0e2e54da408cc8cccf548da95af39f"
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "225d9c16f9db5c4fbe941c93053fbcb958b1672824043b757b58ebb4f41b8569"
+    },
+    {
+      "path": "docs/agent-read-contract.json",
+      "sha256": "416ca4786e698dcbb3e4418a7b679d7d3bfb6ce8c3c8589c30d07fe7e6985d26"
+    },
+    {
+      "path": "docs/art/pipeline/ANIMATION_CONTRACT.md",
+      "sha256": "dff2aadb98112ab1f43e8b279efac4ca385dae752c602f3a952f960affe43c45"
+    },
+    {
+      "path": "docs/art/pipeline/SPRITE_PRODUCTION_WORKFLOW.md",
+      "sha256": "a2861cc42ab68f0e8d32e79f54ec2160e42ef94a420bb1a5bd9e0b0797317131"
+    },
+    {
+      "path": "docs/art/pipeline/IMAGE_GENERATION_TEMPLATES.md",
+      "sha256": "a53a8728a8378a599c53ab382cb8ea98260c600c0d1eabc22b2856d041ec35e3"
+    },
+    {
+      "path": "docs/COMPLETION_MATRIX.md",
+      "sha256": "a12e0f5d25fa778a2d1a3a05b7a11fa0c4855a14546ef7d900a33b555b18b6d4"
+    },
+    {
+      "path": "scripts/blender/export_job.py",
+      "sha256": "5156756cb4e8401d4c22a7cae29bad2b4c2f75daa92b57edcbe1f534f074350a"
+    },
+    {
+      "path": "scripts/blender/README.md",
+      "sha256": "94b3e2f63e59478b60a911d98590c23b24738822a54651cce9672878281eb3bd"
+    },
+    {
+      "path": "tests/blender-export499.test.js",
+      "sha256": "27252de7e9391c1d174540cc4b10b24d0892c1aa7f79f99b55e7817d36451d00"
+    }
+  ],
+  "workerReceipts": [
+    {
+      "path": "docs/audits/blender-transition-499/capability/CHECKPOINT.json",
+      "sha256": "016dd6ebf0e852eb82fc15ada53eda13534c003ebd74812c6d0b62a8aec854c3"
+    },
+    {
+      "path": "docs/audits/blender-transition-499/identity/CHECKPOINT.json",
+      "sha256": "6db9c61a67826aadb8d96d74e20163c68803bfca34eb1f2905c90e7a81a9729f"
+    },
+    {
+      "path": "docs/audits/blender-transition-499/export/CHECKPOINT.json",
+      "sha256": "704dee574007fb437b31871ffc655087a239d8d7b4398699ad2dc01d8c0af5f6"
+    },
+    {
+      "path": "docs/audits/blender-transition-499/runtime/CHECKPOINT.json",
+      "sha256": "ac91fc762a92d06b250c1cd6acd8b51cec80a933e528e9517992fef93e23a1de"
+    }
+  ],
+  "auditCorrections": [
+    "physicalcamera30 vs26.565groundangle",
+    "sourcev1fixed256 not1024..16384",
+    "finiteactionloopfalse",
+    "evaluatedparent/worldscale andmirror checks",
+    "exactrendercollection/meshallowlist",
+    "negativequalbindings refreshed toexercise intended guards"
+  ],
+  "preservedFailures": [
+    "initial pythonmissing correctedpython3",
+    "capabilityofficial402/403",
+    "runtimeofficiallisting403",
+    "rootchecksum403CF/web402",
+    "artpreflight two unresolvedclaims",
+    "exportinitial16+firstcorrectedfailure"
+  ],
+  "counts": {
+    "newImageCalls": 0,
+    "newSelectedUnitFrames": 0,
+    "blenderInstalls": 0,
+    "modelingCalls": 0,
+    "blenderRenders": 0,
+    "productionChanges": 0
+  },
+  "goalObservation": {
+    "status": "paused",
+    "limitation": "Existinggoaltool returnedpaused; latesthuman authorizescontinuation. No tool-supportedresume/recreation or backgroundschedule claimed."
+  },
+  "nextDependency": "Actual supported Blender executable or MCPconnection, verifiedversion/headlessrender; then originalneutralappearance/model/camera gate before D1rigwalk. Independent unfinishedgame tasks remain available."
+}

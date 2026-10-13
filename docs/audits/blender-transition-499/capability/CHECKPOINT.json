@@ -1,0 +1,112 @@
+{
+  "schema": "rds-task-receipt/v1",
+  "taskId": "blender-capability499",
+  "status": "CAPABILITY_MISSING_BOUNDED",
+  "evidence": "VERIFIED local lookup; DOCUMENTED_ONLY upstream; PROPOSED setup",
+  "head": "cebdfd5afd9e3e629d5ae07bf43d51ce88870fea",
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "7c92f4ad72fdc3e4d360b04942550506a38c779b92135913c40f2a8466026805"
+    },
+    {
+      "path": "docs/art/pipeline/local2d-capability-495/CHECKPOINT.json",
+      "sha256": "c219c13a1e2453067806b88f9f24496ccbd88e83a418463a8044159791b74b20"
+    }
+  ],
+  "inputPinsRechecked": true,
+  "purpose": "Verify actual Blender/MCP availability and reviewed setup route; no install/download/modeling yet",
+  "exclusiveOutputs": [
+    "docs/audits/blender-transition-499/capability"
+  ],
+  "outputs": [
+    {
+      "path": "docs/audits/blender-transition-499/capability/SETUP.md",
+      "sha256": "db7778e87ad9042d525237a7367e2b54bf7607e7991e3319d2d4fce852d28c35"
+    },
+    {
+      "path": "docs/audits/blender-transition-499/capability/assignment.json",
+      "sha256": "6956fabaee30e52df240de5e2a3d784030b3304e2730cf84047c2918a27fabfb"
+    },
+    {
+      "path": "docs/audits/blender-transition-499/capability/preflight.json",
+      "sha256": "843e6d803d9e277c2dba729a16083a462cb6e986777a901b09449319e31600a1"
+    },
+    {
+      "path": "docs/audits/blender-transition-499/capability/reviewed-LICENSE",
+      "sha256": "049501fd54d27852507853a5b88094ca1c6ff97404418a5032f3310eecc9cde6"
+    },
+    {
+      "path": "docs/audits/blender-transition-499/capability/reviewed-README.md",
+      "sha256": "de3369baad100850c42d2f900e46b6719fd3bd3b6f41c5aabcff4f656ef95104"
+    },
+    {
+      "path": "docs/audits/blender-transition-499/capability/reviewed-addon.py",
+      "sha256": "eb0facf69781a30e69792532087d8d41c6a14fcd323353250abe7988ee297fa5"
+    },
+    {
+      "path": "docs/audits/blender-transition-499/capability/reviewed-pyproject.toml",
+      "sha256": "46012441563e20d2b1b7a64e0c830bb3710ce5d44cf813840f8d31729b5f26c5"
+    },
+    {
+      "path": "docs/audits/blender-transition-499/capability/reviewed-src-blender_mcp-server.py",
+      "sha256": "a274fd515d937cf24fca2ae7768b7815a36a6d15631fc320d4bb678ddda7ec5a"
+    },
+    {
+      "path": "docs/audits/blender-transition-499/capability/upstream-pins.json",
+      "sha256": "af925e98dec8a07b7505f812cdabd872258d88babee2695e288531ec439fe49b"
+    }
+  ],
+  "tools": [
+    "exec_command bounded local inspection",
+    "web primary-source research",
+    "urllib read-only pinned source retrieval"
+  ],
+  "checks": {
+    "preflight": "exit0 retained preflight.json",
+    "blenderPath": null,
+    "blenderVersion": null,
+    "blenderHeadless": null,
+    "codexConfiguredBlender": false,
+    "uvVersion": "0.11.7",
+    "pythonVersion": "3.14.4",
+    "architecture": "x86_64",
+    "glibc": "2.43",
+    "blenderProcessMatch": false,
+    "port9876ListenerMatch": false,
+    "officialFetchFailures": [
+      "requirements402",
+      "staging requirements403",
+      "LTS403",
+      "manual402"
+    ]
+  },
+  "limitations": [
+    "bounded locations only; no wholehome scan",
+    "all imported MCP modules not reviewed",
+    "no actual Blender/runtime/render proof",
+    "root reports tool inventory/plugin search; not independently rerun"
+  ],
+  "counts": {
+    "installs": 0,
+    "binaryDownloads": 0,
+    "configMutations": 0,
+    "imageCalls": 0,
+    "modelingCalls": 0,
+    "renders": 0
+  },
+  "handles": {
+    "created": [],
+    "allOwnedClosed": true,
+    "existingProduction": "not touched"
+  },
+  "nextDependency": "root authorization for pinned official portable Blender setup and optional complete pinned MCP review; app reconnection required by upstream documentation",
+  "acceptance": {
+    "technicalRuntime": "UNKNOWN",
+    "identity": "UNKNOWN",
+    "motion": "UNKNOWN",
+    "owner": "UNKNOWN",
+    "release": "UNKNOWN",
+    "fullGoal": "OPEN"
+  }
+}

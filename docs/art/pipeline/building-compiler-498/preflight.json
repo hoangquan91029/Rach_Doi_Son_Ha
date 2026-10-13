@@ -1,0 +1,119 @@
+{
+  "schema": "rds-agent-preflight/v1",
+  "task": "art",
+  "head": "cebdfd5afd9e3e629d5ae07bf43d51ce88870fea",
+  "status": " M docs/audits/implementation-495/tasks.json\n?? docs/art/pipeline/building-compiler-498/",
+  "readFiles": [
+    {
+      "path": "docs/agent-read-contract.json",
+      "sha256": "3063b312cbde80b414c7718a17f308f53cab8e7714b944e49657cf62b160c093",
+      "bytes": 1096
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "f153ddf7216bfb982efc024e0a1ad5cd0ca769e149e69eb71586988dfdf5173c",
+      "bytes": 8569
+    },
+    {
+      "path": "docs/PROJECT_STATE.md",
+      "sha256": "c583e9120ce12c9798270d4ac6563de6fd77109d81e32f834ed3634214bbedd0",
+      "bytes": 16417
+    },
+    {
+      "path": "docs/NEXT_STEPS.md",
+      "sha256": "21fc4f1e65d05d38532d18b3028311cec57beb73787a6ff4517fc25e6a32141b",
+      "bytes": 3506
+    },
+    {
+      "path": "docs/ARCHITECTURE_DECISIONS.md",
+      "sha256": "9698dfab772f18700081e2a252275d0fb14e6b8d1dd2d60eb23c2f72d0c1e319",
+      "bytes": 2698
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "f55b464de4b4e2a5833f6b8c25242a921d24deec4acd735133acbc08c9bdbaaa",
+      "bytes": 4897
+    },
+    {
+      "path": "docs/art/ART_DIRECTION.md",
+      "sha256": "d64614e926465c0d540606634a25aeabc4f5364d6be7ced210eeab3182ffd429",
+      "bytes": 3087
+    },
+    {
+      "path": "docs/art/pipeline/ANIMATION_CONTRACT.md",
+      "sha256": "7edd5b99ae59b9e848458ee4ac06c72dd575a3bee4e27288823dad1e31b87014",
+      "bytes": 6993
+    },
+    {
+      "path": "docs/art/pipeline/SPRITE_PRODUCTION_WORKFLOW.md",
+      "sha256": "99acc71679d6ddc0bfef2d30523ab10381615805ec93d2aa8c21f6673df5c867",
+      "bytes": 7374
+    },
+    {
+      "path": "docs/art/pipeline/IMAGE_GENERATION_TEMPLATES.md",
+      "sha256": "d8d47e957f4b47871e73c578763424d0c2be1527328609aecaa7baeda9bc2a2f",
+      "bytes": 9035
+    },
+    {
+      "path": "docs/art/pipeline/ANIMATION_ARCHETYPES.md",
+      "sha256": "165869e44eb58c6b37a0e29e1f461fd7c5dd36c73e1afb595742865e2299f43b",
+      "bytes": 2812
+    },
+    {
+      "path": "docs/art/pipeline/ASSET_QA.md",
+      "sha256": "7ad426a1a2b9d8fd10ae56aa7897fc19be67d3b00a40fac3987e1ef07cd66418",
+      "bytes": 3343
+    },
+    {
+      "path": "docs/art/pipeline/REVIEW_PRIORITY_20261008.md",
+      "sha256": "cacc2b746cb7360d4d6c9dba0b94d55dea0530e43402d60a891b3711e3c1a525",
+      "bytes": 960
+    }
+  ],
+  "sources": [
+    {
+      "path": "scripts/sprite-production.py",
+      "sha256": "1f49dfb05cd0d8bfb03b932ec09925b3c5b58fd8d7d1b03c8c72965275ed675e",
+      "bytes": 14098
+    }
+  ],
+  "assignment": {
+    "taskId": "building-compiler498",
+    "registration": {
+      "path": "docs/audits/implementation-495/tasks.json",
+      "sha256": "3dee31b5b8b8998075c6ed4cecd0a63192cbfbd36342c358c9e8a13a7d347788",
+      "bytes": 18801
+    },
+    "inputs": [
+      {
+        "path": "scripts/sprite-production.py",
+        "sha256": "1f49dfb05cd0d8bfb03b932ec09925b3c5b58fd8d7d1b03c8c72965275ed675e"
+      },
+      {
+        "path": "client/art-assets.js",
+        "sha256": "af4db82838cf5b936549307272f96aef4ef16d1ac6f672cb8f4dd7c73437ab06"
+      },
+      {
+        "path": "docs/art/pipeline/residence-construction-497/canonical-asset.json",
+        "sha256": "11b26f3221aa9c56d32de37b8d601570504f997523abf0feb2e297b3bc7d787a"
+      }
+    ],
+    "outputs": [
+      "scripts/sprite-production.py",
+      "tests/building-sprite-compiler498.test.js",
+      "docs/art/pipeline/building-compiler-498"
+    ],
+    "slots": []
+  },
+  "ledger": {
+    "path": "docs/art/pipeline/unit-production/order-ledger.json",
+    "sha256": "4f2c951f266888200cabe1780ac173ee4d0a09160478e5f24cffaf9c4ac9f5f2",
+    "locked": false,
+    "unresolvedClaims": []
+  },
+  "limits": [
+    "Existence and byte hashes do not establish understanding, permission, approval or tool availability.",
+    "Explicit invocation only; this helper is not a mandatory global hook.",
+    "Externally verify tools and actual live handles/preservation guards; no guards are declared closed."
+  ]
+}

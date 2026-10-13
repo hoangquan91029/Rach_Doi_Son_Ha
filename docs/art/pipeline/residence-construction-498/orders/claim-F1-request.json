@@ -1,0 +1,87 @@
+{
+  "orderId": "residence-construction-F1-F3-498",
+  "slotIndex": 1,
+  "kind": "building_key",
+  "values": {
+    "buildingType": "residence",
+    "state": "construction",
+    "direction": "none",
+    "phase": "0.25",
+    "master": "f617c3540680cafff467358bab1adb01bf735417563f2cba86ab8af523b07dcc",
+    "assemblyLock": "Original Vietnamese timber hall: single orange terracotta hip roof with curved eaves and three ridge ornaments, same front wooden column bays/red-gold hanging banners, stone raised terrace and central stair, front/visible right side; no added wing, tower, person or changed footprint.",
+    "invariants": "ONE wholetransparent constructionACTIVITY in-between F1. IMAGE1=canonical appearanceonly. IMAGE2=selected previousconstructionkey F0; IMAGE3=selected nextconstructionkey F2. Allrigidarchitecture/roof/scaffold/terrace/stair/column/tilepile positions stayidentical to constructionkeys, not originalcompletedroof. BetweenIMAGE2 restingF0 andIMAGE3billowedF2: lowerblue tarp freeedgehalfwayoutward, slightslack folds; attachmentsfixed. Onlyloose blueworktarpchanges, not roof tiles/rafters/scaffoldprogress or light/camera/scale. No people/newobjects/dustclouds/labels. Same1254RGBAcanvas/pivot640970/render130/bakedshadow; nofit/recenter/warp/mirror/cutout. Natural subdued realistic illustrated2Dcloth at219canvas, wholefinishedPNG, not mosaic/variants. Preserve sameunfinishedhall andallstructure; do not copyendpointexactly."
+  },
+  "references": [
+    {
+      "role": "originalmaster",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/residence/variant-02/raw.png",
+      "sha256": "f617c3540680cafff467358bab1adb01bf735417563f2cba86ab8af523b07dcc"
+    },
+    {
+      "role": "neighbor",
+      "jobId": "residence-construction-loop498-inbetweens",
+      "frame": 0,
+      "phase": 0,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/residence-construction-497/raw-F0.png",
+      "sha256": "e98afbf79b648b7645b32c8e2d9ad1dbbe8a6346e26ad68a49b4b33c840daea0",
+      "rgbaSha256": "a8a98142205a4ebd817867a933e2b13beda81ce106278a23613559bbb3de8c8e"
+    },
+    {
+      "role": "neighbor",
+      "jobId": "residence-construction-loop498-inbetweens",
+      "frame": 2,
+      "phase": 0.5,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/residence-construction-498/raw/F2.png",
+      "sha256": "d03465a161d1df3c77fe0366d95c4a0957175d32c40153e1d8077b7c40a5e164",
+      "rgbaSha256": "03ff521d10d10eacd871b8c9cc8346b142c4508e88e69268de8970e83f03dce0"
+    }
+  ],
+  "taskId": "root-construction498",
+  "expectedInputs": [
+    {
+      "path": "docs/art/residence/variant-02/raw.png",
+      "sha256": "f617c3540680cafff467358bab1adb01bf735417563f2cba86ab8af523b07dcc"
+    },
+    {
+      "path": "docs/art/pipeline/residence-construction-497/raw-F0.png",
+      "sha256": "e98afbf79b648b7645b32c8e2d9ad1dbbe8a6346e26ad68a49b4b33c840daea0"
+    },
+    {
+      "path": "scripts/sprite-prompts.mjs",
+      "sha256": "6e0dcf805f489c0f3853b6d6f1640377f523ff8165604030320d4ee811163c1e"
+    },
+    {
+      "path": "scripts/building-sprite-contract.mjs",
+      "sha256": "03544fe68faa3d0bc68bb2931c402b8967677e3fe4e0d64d9488d0e9280b7715"
+    },
+    {
+      "path": "docs/art/pipeline/residence-construction-498/jobs/key-job.json",
+      "sha256": "3d8449f4d603c966f5ca99db3a714309ff928fcb4fbe9421c9ea3ec45cbf4920"
+    },
+    {
+      "path": "docs/art/pipeline/residence-construction-498/reviews/method-difference.json",
+      "sha256": "f3c600df01155576d73a2d4a541a58d612bbe266872ca9f9b9aeb59d1026f809"
+    },
+    {
+      "path": "docs/art/pipeline/residence-construction-497/canonical-asset.json",
+      "sha256": "11b26f3221aa9c56d32de37b8d601570504f997523abf0feb2e297b3bc7d787a"
+    },
+    {
+      "path": "docs/art/pipeline/building-production/residence/identity.json",
+      "sha256": "f93134d8f2cac437dafddbed06ef3c8ab6ebc929d9788a4510a3365d9352736f"
+    },
+    {
+      "path": "docs/art/pipeline/residence-construction-498/jobs/inbetween-job.json",
+      "sha256": "3da67a45a03f41375427b5d746963530ee3ef10d5d6f3c7200a37a2da12416de"
+    },
+    {
+      "path": "docs/art/pipeline/residence-construction-498/raw/F2.png",
+      "sha256": "d03465a161d1df3c77fe0366d95c4a0957175d32c40153e1d8077b7c40a5e164"
+    },
+    {
+      "path": "docs/art/pipeline/residence-construction-498/reviews/source-F2.json",
+      "sha256": "28e637c6905c9dbece2c3dae953d921a08302c5755e5c7b7bf343e9c8c2a03c6"
+    }
+  ],
+  "expectedLedgerSHA": "9951d7f3181ec64089b58041214cdb52bda848a8ed42f61268cf0144f1531ace"
+}

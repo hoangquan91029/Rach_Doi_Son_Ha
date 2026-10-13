@@ -1,0 +1,33 @@
+{
+  "schema": "rds-agent-task/v1",
+  "id": "blender-runtime499",
+  "status": "ACTIVE",
+  "purpose": "User-authorized Blender transition: install ONE pinned official portable LTS in exclusive userlandtools directory and bounded CPU technical capability, no character art/MCP config/driverchange",
+  "worker": {
+    "id": "/root/blender_capability499",
+    "role": "WORKER",
+    "model": "gpt-6.1-sol",
+    "reasoningEffort": "low"
+  },
+  "outputs": [
+    "docs/audits/blender-transition-499/runtime"
+  ],
+  "slots": [],
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "7c92f4ad72fdc3e4d360b04942550506a38c779b92135913c40f2a8466026805"
+    },
+    {
+      "path": "docs/audits/blender-transition-499/capability/SETUP.md",
+      "sha256": "db7778e87ad9042d525237a7367e2b54bf7607e7991e3319d2d4fce852d28c35"
+    },
+    {
+      "path": "docs/audits/blender-transition-499/capability/CHECKPOINT.json",
+      "sha256": "016dd6ebf0e852eb82fc15ada53eda13534c003ebd74812c6d0b62a8aec854c3"
+    }
+  ],
+  "externalToolInstallRoot": "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/blender499",
+  "allowedOperations": "Official one version portable Blender download/extract with published checksum and license pin; factory-startup noautoexec version+bpy import+one CPU transparentRGBA fixture only; no characterart. No unreviewed remote code/config/systempackages/driver/MCP socket. Download cap600MiB, verify disk beforedownload.",
+  "acceptance": "Verified exactbinary version/runtime/headlessPNG or explicit blocker, no visualart approval."
+}

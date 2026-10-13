@@ -1,0 +1,287 @@
+{
+  "schema": "rds-blender-source-bindings/v1",
+  "status": "VERIFIED_BYTES_AND_SOURCE_MATH_NOT_ART_APPROVAL",
+  "head": "cebdfd5afd9e3e629d5ae07bf43d51ce88870fea",
+  "pins": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "7c92f4ad72fdc3e4d360b04942550506a38c779b92135913c40f2a8466026805"
+    },
+    {
+      "path": "client/renderer.js",
+      "sha256": "d2c34bc266c03c95b2379ebc3c115993a338dbe2de826507ddf6450ab1b53553"
+    },
+    {
+      "path": "client/raster-slice.js",
+      "sha256": "dcb84bc166863b1b5f85940931f8ef558df29bba573496531632f52816676983"
+    },
+    {
+      "path": "client/locomotion-phase.js",
+      "sha256": "ce0d164b1b044f2621068943c26556ef8f5d2228ab0bc4570f12d02cd99cf39a"
+    },
+    {
+      "path": "shared/unit-action-spec.js",
+      "sha256": "04d987298651c73187920391754f729fd203c1313536eb54c29c629048db05bf"
+    },
+    {
+      "path": "shared/data.js",
+      "sha256": "ffc3f45adc58f212066d3763c591377ce15b9f6ac78e4685a95fc3ac747818e1"
+    },
+    {
+      "path": "docs/art/pipeline/unit-production/villager/identity.json",
+      "sha256": "962336f8751180cbf39d56993ea8938cc4117ac967800159d435d38812c22dde"
+    },
+    {
+      "path": "docs/art/pipeline/villager-pose-control-491/static-view-selection.json",
+      "sha256": "1199d74b86f5a8e805090f17ccb6af8d7e0c7bd209cb7773ac3024b4ecb18514"
+    },
+    {
+      "path": "docs/art/pipeline/villager-qualification-490/compiler-job.json",
+      "sha256": "cb5e99d686d1f86a329635f768439ccb5e83399d7fcb48e3befd053dd9d5041c"
+    },
+    {
+      "path": "docs/art/pipeline/villager-qualification-490/projection-intake.json",
+      "sha256": "e0e4a3922ad9789b89fa61095ff7691165389e9b882a7907624d432dc64e1744"
+    },
+    {
+      "path": "docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94"
+    },
+    {
+      "path": "docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+    }
+  ],
+  "master": {
+    "assetId": "villager-idle-D00",
+    "direction": 0,
+    "path": "docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+    "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+    "rgbaSha256": "c960d206222a191b903a8cc1a679e82bdce8d8c51df4010a935f444b3cacdb9c",
+    "status": "existing source custody; no new view or motion approval"
+  },
+  "staticSouth": {
+    "direction": 1,
+    "source": {
+      "assetId": "villager-idle-south-014",
+      "direction": 1,
+      "path": "docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "rgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6",
+      "status": "existing source custody; no new view or motion approval"
+    },
+    "status": "selected",
+    "selectionScope": "Existing whole originalSouth neutral view appearance/camera only; no walk/motion/eight-direction approval; root inspected actual master",
+    "selectionReceipt": {
+      "path": "docs/art/pipeline/villager-pose-control-491/static-view-selection.json",
+      "sha256": "1199d74b86f5a8e805090f17ccb6af8d7e0c7bd209cb7773ac3024b4ecb18514"
+    }
+  },
+  "missingOriginalDirections": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "equipmentLock": {
+    "status": "not-applicable",
+    "statement": "No held tool or weapon is visible in this idle master; preserve empty visible hands. Separate work-action tools require their own existing source pins and grips.",
+    "source": {
+      "path": "docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94"
+    },
+    "basis": "Game-size idle figure has arms down and no visible held tool or weapon; idle observation does not resolve axe/pick/food work equipment.",
+    "scope": "Original static equipment/assembly only; action-specific tools require separately pinned action locks"
+  },
+  "fixedLayout": {
+    "fixedCanvas": {
+      "width": 1254,
+      "height": 1254
+    },
+    "cell": {
+      "width": 128,
+      "height": 128
+    },
+    "pivot": {
+      "space": "source",
+      "x": 654,
+      "y": 1140
+    },
+    "render": {
+      "width": 42,
+      "height": 42
+    },
+    "contactShadow": {
+      "mode": "baked"
+    },
+    "padding": 2,
+    "basis": {
+      "manifestPath": "public/assets/art-v1/fort-202-manifest.json",
+      "manifestSHA256": "77c75ef2bea8cff633b28fe8635e51b5a7efc151bb1871b5b5d9d17850d4271c",
+      "assetId": "villager-idle-D00",
+      "conversion": "Whole source-coordinate normalization to retained original canvas; logical render unchanged"
+    },
+    "visualApproval": false
+  },
+  "walkCandidateShadow": {
+    "mode": "separate",
+    "assetId": "unit-contact-shadow",
+    "basis": "compiler-job490; different from baked original"
+  },
+  "directions": [
+    {
+      "direction": 0,
+      "worldUnitVector": [
+        1.0,
+        0.0
+      ],
+      "screenPixelsPerWorldAtZoom1": [
+        27.0,
+        13.5
+      ],
+      "screenFacing": "ESE",
+      "originalViewAvailable": true
+    },
+    {
+      "direction": 1,
+      "worldUnitVector": [
+        0.707106781187,
+        0.707106781187
+      ],
+      "screenPixelsPerWorldAtZoom1": [
+        0.0,
+        19.091883092037
+      ],
+      "screenFacing": "South",
+      "originalViewAvailable": true
+    },
+    {
+      "direction": 2,
+      "worldUnitVector": [
+        0.0,
+        1.0
+      ],
+      "screenPixelsPerWorldAtZoom1": [
+        -27.0,
+        13.5
+      ],
+      "screenFacing": "WSW",
+      "originalViewAvailable": false
+    },
+    {
+      "direction": 3,
+      "worldUnitVector": [
+        -0.707106781187,
+        0.707106781187
+      ],
+      "screenPixelsPerWorldAtZoom1": [
+        -38.183766184074,
+        0.0
+      ],
+      "screenFacing": "West",
+      "originalViewAvailable": false
+    },
+    {
+      "direction": 4,
+      "worldUnitVector": [
+        -1.0,
+        0.0
+      ],
+      "screenPixelsPerWorldAtZoom1": [
+        -27.0,
+        -13.5
+      ],
+      "screenFacing": "WNW",
+      "originalViewAvailable": false
+    },
+    {
+      "direction": 5,
+      "worldUnitVector": [
+        -0.707106781187,
+        -0.707106781187
+      ],
+      "screenPixelsPerWorldAtZoom1": [
+        -0.0,
+        -19.091883092037
+      ],
+      "screenFacing": "North",
+      "originalViewAvailable": false
+    },
+    {
+      "direction": 6,
+      "worldUnitVector": [
+        -0.0,
+        -1.0
+      ],
+      "screenPixelsPerWorldAtZoom1": [
+        27.0,
+        -13.5
+      ],
+      "screenFacing": "ENE",
+      "originalViewAvailable": false
+    },
+    {
+      "direction": 7,
+      "worldUnitVector": [
+        0.707106781187,
+        -0.707106781187
+      ],
+      "screenPixelsPerWorldAtZoom1": [
+        38.183766184074,
+        -0.0
+      ],
+      "screenFacing": "East",
+      "originalViewAvailable": false
+    }
+  ],
+  "derivedCamera": {
+    "status": "PROPOSED_ENGINE_MATCH_NOT_ORIGINAL_CAMERA_MEASUREMENT",
+    "elevationDegrees": 30,
+    "horizontalAzimuthDegrees": 45,
+    "rightBasis": [
+      0.7071067811865475,
+      -0.7071067811865475,
+      0
+    ],
+    "upBasis": [
+      -0.35355339059327373,
+      -0.35355339059327373,
+      0.8660254037844386
+    ],
+    "gameUnitsPerBlenderMeter": null,
+    "orthoScaleBlenderMeters": null,
+    "cameraShift": null
+  },
+  "distancePerCycle": null,
+  "appearanceApproval": false,
+  "motionApproval": false,
+  "ownerApproval": false,
+  "releaseApproval": false,
+  "proposedBlenderSourceLayout": {
+    "status": "PROPOSED_VERSIONED_ROOT_INTEGRATION_REQUIRED",
+    "canvas": [
+      256,
+      256
+    ],
+    "pivot": [
+      133.51196172248802,
+      232.72727272727272
+    ],
+    "runtimeCanvas": [
+      128,
+      128
+    ],
+    "render": [
+      42,
+      42
+    ],
+    "originalAuthorityCanvas": [
+      1254,
+      1254
+    ],
+    "wholeOriginalDerivativeSHA256": null,
+    "existingCompilerCompatibleWithoutVersionedIdentityMaster": false
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "schema": "rds-agent-receipt/v1",
+  "taskId": "blender-identity499",
+  "status": "SPECIFICATION_COMPLETE_UNQUALIFIED_PILOT",
+  "purpose": "source-bound identity/camera/rig/reuse specification",
+  "exclusiveOutputs": [
+    "docs/audits/blender-transition-499/identity"
+  ],
+  "tools": [
+    "exec_command read/research/scoped docs write",
+    "view_image actual originalD0 andSouthD1",
+    "web primaryBlender docs"
+  ],
+  "outputs": [
+    {
+      "path": "docs/audits/blender-transition-499/identity/PILOT.md",
+      "sha256": "1a53f6f36444f14399b73fcb89183ccd1faf88bdff83c2b247ea80e5b52caba7",
+      "bytes": 11358
+    },
+    {
+      "path": "docs/audits/blender-transition-499/identity/PROMPTS.md",
+      "sha256": "27a371638ec43b4fc4ce78dace7470b01a4cb2b7dab2d88f8770026218a468b5",
+      "bytes": 3026
+    },
+    {
+      "path": "docs/audits/blender-transition-499/identity/SOURCE_BINDINGS.json",
+      "sha256": "4456182c39530209f479b687d77d355c70a1c0cac3bf3858882a19c258f641b4",
+      "bytes": 8087
+    },
+    {
+      "path": "docs/audits/blender-transition-499/identity/assignment.json",
+      "sha256": "02eea8587185d921b7f05f362b6700a090a4195dddf115f9acd64cffe13babce",
+      "bytes": 1234
+    },
+    {
+      "path": "docs/audits/blender-transition-499/identity/inputs.json",
+      "sha256": "21ce5ea1da17acfc14d7a977ba361fd9328c3a0ffc2c8a32de6061c7c25ebbce",
+      "bytes": 519
+    },
+    {
+      "path": "docs/audits/blender-transition-499/identity/preflight-audit.json",
+      "sha256": "4282583e77fc1a57946e6a229a38a76e11e5fb24ef4333fd4040d61fa7a8a882",
+      "bytes": 3835
+    },
+    {
+      "path": "docs/audits/blender-transition-499/identity/preflight-failure.json",
+      "sha256": "72b46b09c977887000b5c642b593d1b2ad012c55c11308403a3fb0c580ad5f72",
+      "bytes": 275
+    },
+    {
+      "path": "docs/audits/blender-transition-499/identity/preflight.json",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "docs/audits/blender-transition-499/identity/preflight.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  ],
+  "checks": {
+    "sourceHashes": "VERIFIED recalculated",
+    "cameraVectors": "VERIFIED source mathematics",
+    "originalViews": "VERIFIED inspected two originals;D2-D7UNKNOWN",
+    "artPreflight": "FAILED unresolved claims2,lockfalse",
+    "auditPreflight": "VERIFIED exit0 with registered task scopedpins",
+    "tests": "No runtime/fullsuite tests appropriate to documentation-only spec"
+  },
+  "failures": [
+    "initial scoped snapshot incorrectly supplied assignment object; corrected inputs array",
+    "art preflight denied due2 unresolved claims, never settled/reset",
+    "direct4.2officialdocfetches402",
+    "nonexistent centralregistry path probe corrected: actualperidentityregistry is identity.json"
+  ],
+  "generationCalls": 0,
+  "createdModels": 0,
+  "handles": {
+    "ownedLive": [],
+    "observation": "ps showed noBlender/sprite-order process; this does not close ledgerclaims or remote handles"
+  },
+  "gates": {
+    "sourceSelection": "unchanged staticD1only",
+    "technical": "planonly",
+    "appearance": "UNKNOWN",
+    "motion": "UNKNOWN owner490rejection stands",
+    "runtime": "unchanged",
+    "owner": "noapproval",
+    "release": "noapproval"
+  },
+  "nextDependencies": [
+    "root claim/preservation lifecycle",
+    "actualBlender/MCP capability/export receipt",
+    "one calibratedneutralmodel with fixedcamera/scale",
+    "independent identity and D1walk/travel review",
+    "versioned256source identityMaster/layout derivative root integration; old1254jobs not compatible"
+  ]
+}

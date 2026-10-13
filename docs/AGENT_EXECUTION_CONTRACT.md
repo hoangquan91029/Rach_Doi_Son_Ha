@@ -40,10 +40,14 @@ Receipt records actual argv/cwd, outputs/log hashes, exit status, evidence class
 
 ## Historical overrides
 
-Later human directives override archived115–145 examples: no character3D/Blender; no mirroring; whole-frame illustration, no limb pixel assembly/warps/per-frame fit; no separate carry bank; no exhaustive anatomy/cloth scoring; Villager-first; only Sol6.1Low workers. Preserve archived text and rejected sources. Stone walls only are stone; gates and other wooden assets remain. Whole horsewagon415 must keep horse/harness/cart/cargo.
+Latest499 human acceptance allows Blender character modeling/rigging/rendering into whole2D sprite output. This supersedes previous no-character3D/Blender authoring text; historical bytes remain preserved. Other overrides remain: no mirroring; no final limb pixel assembly/warps/per-frame fit; no separate carry bank; no exhaustive anatomy/cloth scoring; Villager-first; only Sol6.1Low workers. Preserve archived text and rejected sources. Stone walls only are stone; gates and other wooden assets remain. Whole horsewagon415 must keep horse/harness/cart/cargo.
 
 ## Research and release boundary
 
 Local2D capability is one isolated route; hardware/model filenames are not inference proof. Missing runtime stops model download/driver repair. Existing capability failure does not revoke user scope or authorize fallback. After usable runtime, root may open exactly2passing outputs+1shared correction for a materially different Villager trial. No batch/fanout until motion/travel qualify.
 
 Test build only isolated literal cwd, absolute outDir, exact Vite config; freeze before browser guard. Never overwrite active dist while testing. Paired release for shared simulation changes, verified current451+230 rollback, live rooms inspection, no kicking/restarting historical PID. Root alone publishes.
+
+##499 capability and scene ownership
+
+Read [Blender pipeline](art/pipeline/BLENDER_SPRITE_PIPELINE.md). Root assigns disjoint .blend scene copies, tools, review and outputs. Fixed camera/root/family calibration, not per-frame fit. Blender scene operations are separate from image-provider finite calls; pending498 claims stay consumed/unresolved, and art-preflight failure must be retained. No claim reset or duplicate image call through this route. New scene authoring needs actual capability and a scoped root task; export uses exact source-bound model/rig/action/camera/render-object qualification, not fabricated VERIFIED strings. World derivatives and PNG inspection still require actual render; source selection, motion and release remain distinct.

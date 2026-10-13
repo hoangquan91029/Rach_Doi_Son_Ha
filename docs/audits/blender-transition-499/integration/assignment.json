@@ -1,0 +1,49 @@
+{
+  "schema": "rds-agent-task/v1",
+  "id": "root-blender499",
+  "status": "ACTIVE",
+  "purpose": "Audit and integrate delegated Blender transition plan/tooling/capability while preserving498 and fullgoal gates",
+  "worker": {
+    "id": "/root",
+    "role": "ROOT",
+    "model": null,
+    "reasoningEffort": null
+  },
+  "outputs": [
+    "AGENTS.md",
+    "docs/ARCHITECTURE_DECISIONS.md",
+    "docs/AGENT_EXECUTION_CONTRACT.md",
+    "docs/PROJECT_STATE.md",
+    "docs/NEXT_STEPS.md",
+    "docs/PROJECT_ROADMAP.md",
+    "docs/agent-read-contract.json",
+    "docs/art/pipeline/ANIMATION_CONTRACT.md",
+    "docs/art/pipeline/SPRITE_PRODUCTION_WORKFLOW.md",
+    "docs/art/pipeline/IMAGE_GENERATION_TEMPLATES.md",
+    "docs/art/pipeline/BLENDER_SPRITE_PIPELINE.md",
+    "docs/COMPLETION_MATRIX.md",
+    "docs/audits/implementation-495/tasks.json",
+    "docs/audits/blender-transition-499/CHECKPOINT.json",
+    "docs/audits/blender-transition-499/initial-preflight.json",
+    "docs/audits/blender-transition-499/initial-error.txt",
+    "docs/audits/blender-transition-499/prior-active",
+    "docs/audits/blender-transition-499/integration"
+  ],
+  "slots": [],
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "7c92f4ad72fdc3e4d360b04942550506a38c779b92135913c40f2a8466026805"
+    },
+    {
+      "path": "scripts/sprite-production.py",
+      "sha256": "ed43f04c1db641b85cc1c003c53991d3e7e5295edf277cc34fd7b9e5407d1723"
+    },
+    {
+      "path": "docs/art/pipeline/unit-production/order-ledger.json",
+      "sha256": "a687d7b292859ff5ef7b973001c2ae1308ec3fcf1023db160ac1f1792d3ce7b4"
+    }
+  ],
+  "allowedOperations": "Read/source research/scoped implementation only. No generation, production or driver changes.",
+  "acceptance": "Actual outputs, source pins, scoped checks and explicit unqualified gates; one receipt per task."
+}

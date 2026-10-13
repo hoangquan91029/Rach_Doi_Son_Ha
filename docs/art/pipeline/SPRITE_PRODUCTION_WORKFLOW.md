@@ -1,4 +1,6 @@
-# Reusable whole2D production workflow
+# Reusable whole2D output production workflow
+
+**Active499 authoring override:** human permits Blender model/rig → complete2D rendered sprites of the SAME original identity. Read [Blender pipeline](BLENDER_SPRITE_PIPELINE.md) for capability → appearance → rig/clip → game-size review → runtime sequence. The image-edit recipe below remains valid for imagegen only, with all failed methods/caps intact; it is no longer the only permitted authoring route. No blocky final units, mirrored sprites, pixel assemblies or per-frame fitting.
 
 One folder per unit/action/direction job; one frame ledger and append-only output custody. No new document set per frame. Shared templates include the original five types plus explicit guide-first `guide_key`; enrich shared data, not one-off compiler/harness code.
 

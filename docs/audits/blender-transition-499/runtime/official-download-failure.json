@@ -1,0 +1,18 @@
+{
+  "method": "urllib.request.urlopen(url,timeout=30)",
+  "url": "https://download.blender.org/release/Blender4.5/",
+  "result": "FAILED",
+  "errorType": "urllib.error.HTTPError",
+  "httpStatus": 403,
+  "reason": "Forbidden",
+  "archiveRequests": 0,
+  "archiveBytes": 0,
+  "publishedVersion": null,
+  "publishedSha256": null,
+  "selection": "Blender4.5 official LTS series listing candidate; exact version not selected",
+  "disk": {
+    "path": "/home/kieu-hoang-quan/.local/share",
+    "availableBytes": 57849061376
+  },
+  "toolrootExists": false
+}

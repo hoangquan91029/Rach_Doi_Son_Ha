@@ -18,7 +18,7 @@ This is the root requirement index, not a new queue or image order. Supplied ori
 |WORLD /5,14,82+|Realisticillustratedbuilding idle/construction/hit/death and Fortattackifreal; no primitivefinalart|manifest + client/raster-slice.js|Staticidle10types; one staticwallconstruction; ResidenceF0sourcekey497 only, clip/runtime lifecyclemissing|G5 derive statewindows, wholeauthoredstates, actualconstruction/combat/destruction; fallbacknotcomplete|
 |WALL /laterhuman495|Stonewallstraight/corner only; woodgate; otherwoodunchanged; NEWT/crossblocked, oldsitesretained|shared/fortification-placement.js;495targetedtests/source review|LOCALordinaryChrome line/corner/Trejection PASS495; productionunchanged|CompletedChrome495; pairedsharedrelease + relevantFirefoxremaining|
 |IDENTITY /118,131–133,later|Sameoriginalperson/vehicle; no redesign/mirror/cutout/splice/warp/framefit; horsewagon415whole|identityregistry; held491/492; pure2Ddirective|Originalpreserved;11worldmastersmissing;157neutralviewslotsno source|G2Villager qualifies → G3reuse → G4locks/actions; uncertainhistoryexplicit|
-|MOTION /115–145,later|Wholeillustratedframes; naturalmotion atgameplay size; contact/phase/pivot/seam/scale; no exhaustivemicroaudit|animationcontract;490ownerreply;491492held|FAILED_OWNER_MOTION490; no stride/owner/fanoutapproval|G1runtime capability→G2actualnewpassing/loop/travel/turn/Stop; no renamedmethods|
+|MOTION /115–145,later|Wholeillustratedframes; naturalmotion atgameplay size; contact/phase/pivot/seam/scale; no exhaustivemicroaudit|animationcontract;490ownerreply;491492held|FAILED_OWNER_MOTION490; no stride/owner/fanoutapproval|G1Blender capability→G2SAMEoriginalmodel/camera then D1loop/travel/turn/Stop; no renamedimage methods|
 |ALLACTIONS /81,128,later|Everyapplicableaction×8directions; ability/load/unloaddistinct; carrywalk/repairbuildaliases|shared/unit-action-spec.js; unit-art-coverage.mjs|1080applicableclips/7104positions;3loops/397staticfallback/680missing; availability≠acceptance|G4 completeeachbank/source+loop+runtime; static/D0fallbacknever closescoverage|
 |RUNTIME /126–140|Distancewalk/wheels; authoritativeimpact/tick/episodes; finitehit/death; Pause/reconnect/tabreturn|shared/visible-action.js; actionpresentation; compiler;493|Implementedlocal; exactnewbankevent qualificationOPEN|One relatedscene perbank; completedunitturn/action/hit/death/Stop; no gameplayauthorityfrommarkers|
 |MEMORY /137–138,performance|128MiBdecoded/64MiBencoded; streamperunit/action, fixedpivot/padding2|client/art-assets.js/raster-slice.js;493receipt|LOCAL29checks/offlineaftermenu; fullrosterLru/cold/denseOPEN|G6 actualintendedbanks firstuse/eviction/revisit/menu; no capraise/fullofflinepromise|
@@ -31,7 +31,7 @@ This is the root requirement index, not a new queue or image order. Supplied ori
 
 ## Overrides / assumptions
 
-- Latest human directives supersede historical3D/mirror/Luna/oldquota/carry/anatomy-score permissions; archived bytes remain immutable.
+- Latest499 human override permits Blender3D authoring→whole2D sprites and supersedes the earlier no3D authoring rule. No mirrored sprites/Luna/oldquota/carrybank/exhaustive anatomy scoring; archived bytes remain immutable.
 - Local2D selected for bounded feasibility;495FAILED CUDA/NVML/Python prerequisites. No modeldownload/install/driverrepair/backendadoption from failedcapability. Unknown fields null.
 - Existing wood032/iron141owneracceptance only shownD1; not walk/otherdirection approval. Food101separate. Ownerreject490 remains.
 - Sourceworking256/runtime128; originalsretained; fixedfamilylayout; only measuredclipping permits versioned envelopechange. Canvas70.56px at42×1.68 is notbodyheight.
@@ -189,3 +189,7 @@ Each header below is tied to exact supplied bytes/line. Functional closure is th
 | 145 | FINAL ANIMATION PRINCIPLE | [ANIMATION:1074](audits/implementation-495/requirements/animation.txt#L1074) | G2–G4 motion/identity/runtime; later pure2D/brief-review overrides |
 
 Section81 finalcriteria and later explicit replies are preserved in approved userplan custody in implementation495. No missing-number sections are invented; requirement headings absent from supplied files remain unindexed until actual source is supplied.
+
+##499 scoped progress — no completion gate closed
+
+Human authorizes Blender model/rig→whole2D rendered sprites; realistic original appearance required. Capability lookup missing; officiallisting/checksum fetch403/402, no executable/render. New fixed256candidate exporter/planner and source-bound Villager spec exist; focused validation only, compiler migration/model/rig/motion/owner/runtime/release OPEN. Buildingcompiler498 implementation retained; its F1/F3 interrupted provider claims remainUNRESOLVED/consumed, no complete constructionclip. All previous source/technical/owner scopes retained; production451/230 unchanged. [499handoff](audits/blender-transition-499/CHECKPOINT.json).

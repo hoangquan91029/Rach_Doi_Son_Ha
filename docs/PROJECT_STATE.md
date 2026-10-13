@@ -1,4 +1,20 @@
-# Project state — implementation495, 13 October 2026
+# Project state — current transition499, 13 October 2026
+
+## Latest499 state — read before historical sequence below
+
+Human accepted Blender model/rig → complete2D sprite PNG and parallel exactSol6.1Low delegation. Older no-character3D/Blender authoring rule is superseded; realistic SAME original unit, no crude geometric final art, no mirrors/per-frame fit and simulation authority remain. [Active Blender pipeline](art/pipeline/BLENDER_SPRITE_PIPELINE.md).
+
+| Scope | Actual499 observation | Open dependency |
+|---|---|---|
+| Workers | Three exactSol6.1Low workers delivered independent capability, original-bound identity/camera/prompt spec and reusable exporter; root requested five concrete fixes | No model/art approval from worker completion |
+| Blender/MCP | VERIFIED bounded lookup: no executable/configuredMCP/exposedtool; plugin search empty. Official download listing/checksum fetch403/402; no archive/install | Actual supported executable/headlessrender; MCP actualhandshake ifused |
+| Identity | VERIFIED hashes and actualinspection D0/D1 originals; exacteight groundvectors; missingviews explicitunknown | Neutral clothed/material model matchingoriginal before rigproduction |
+| Camera/layout | Derived orthographic30° from27/13.5projection; screenaxis26.565° differs; proposed256source/128runtime fixednormalizedpivot | Original-viewcalibration, wholeoriginal→256 reference derivative and explicitcompileradapter |
+| Exporter | Local source-bound candidate planner/lazybpy adapter;25focused non-bpy checks root rerunexit0 afterfiveauditfixes | Actual .blend/Blender/Pngdecode/appearance/motion/runtime/owner/release UNKNOWN |
+| Retained498 | DOCUMENTED_ONLY19compilerchecks, exactlocalsource reviewed. SelectedF0/F2constructionkeys, notcompleteclip | F1/F3 interruptedproviderclaims consumedUNRESOLVED; no returnedmapping/retry/refund |
+| Game/public | client/shared/server/public/dist/ledger unchanged during499 (exactpins retained) | Fullmatrix/defaultrelease/WAN stillOPEN |
+
+`get_goal` returned existing objective statusPAUSED in this session; latest human message authorizes project continuation. No goal recreated, completed or programmatically resumed; resume is a user/app control. This state does not claim background execution or active scheduling. Current work progressed under the human request. Historical ACTIVE observations below describe their recorded turn only.
 
 Full goal: **INCOMPLETE**. Baseline HEAD `d26cf75` had uncommitted486; preserved in [baseline](audits/audit-488/baseline.json). Audit486/488 was sealed at `7f8cd34`; actual Git governs over this dated snapshot.
 
@@ -75,3 +91,7 @@ RootONE built-inimagecall aftertrustedprepare+durableclaim forResidenceconstruct
 VERIFIED actual50ordinaryUIprofile withmateriallydifferentdefense/economyvs496: actualGeneralMove assigned7.499988,29.499998→within.7arrival→Hold; Fort35at14.5,23.5 +Fort36at9.5,29.5accepted/completed; realgather/parallelResidence+Barracksproduction. Prep283.255s<480bound;60.079s/57samples ownedliving50constant (40Villager8InfantryKingGeneral), visiblelivingunits50–51/allentities56–57. Generalalive111/360atend. Renderp50/p95=3.5/6.3ms, passive3567rAFp50/p95=16.7/16.8ms,max33.5ms; decoded18,744,320B/encoded4,608,899B,errors/requestfails0. Hostload/freeRAMobserved.423frozenpinsunchanged, allownedhandlesclosed. Headlesssmallroster only, not200/240/GPU/fullbanks/motion/finalpublicqualification. [Profile50](qa/defense-profile-497/CHECKPOINT.json).
 
 Next: reusablecompilerextension exactbuildingkind/null direction (not fakeunit/D0), source-boundfixedlayout fromselectedkey beforefourframeexport. MissingF2/F1/F3 requireNEWfinitecontinuedpackageorder/cumulativebudget andselectedkeydependency, noF0rerun oroldmethodcapreset. Largerperformancecohort needs materiallydifferentlegaleconomy/defense or twohumanordinaryroom, notblindprofile50repeat. Fullgoal/G1localruntime/G2walk/G3reuse/G4roster/G5world/G6dense/G7production remainOPEN.
+
+##498 interrupted source work, retained at499 checkpoint
+
+Existingcompiler schema3building/null direction implemented locally with fixedcanonical layout, cumulativebudget/sourceguards;19scopedchecks DOCUMENTED_ONLY from frozenworkerreceipt. F2ONEactualbuiltin call returnedwhole1254PNG SHA d03465a161d1df3c77fe0366d95c4a0957175d32c40153e1d8077b7c40a5e164, independentlysourcecandidate selected beside497F0. No motion/owner/runtime/completeclip. ParallelF1/F3calls were interrupted and have no savedreturnedmapping;claims remainused/unsettled. An elapsedtime or migration toBlender does notrefund/close them. Oldledger orderhistory exact.

@@ -1,0 +1,66 @@
+{
+  "expectedLedgerSHA": "e800e06700f6fbbd6c24d9a41a0fcc127305e7b03930f2d8776b8f436e06f044",
+  "orderId": "residence-construction-F2-498",
+  "slotIndex": 2,
+  "kind": "building_key",
+  "values": {
+    "buildingType": "residence",
+    "state": "construction",
+    "direction": "none",
+    "phase": "0.5",
+    "master": "f617c3540680cafff467358bab1adb01bf735417563f2cba86ab8af523b07dcc",
+    "assemblyLock": "Original Vietnamese timber hall: single orange terracotta hip roof with curved eaves and three ridge ornaments, same front wooden column bays/red-gold hanging banners, stone raised terrace and central stair, front/visible right side; no added wing, tower, person or changed footprint.",
+    "invariants": "ONE F2 whole transparent illustration for fourframe construction ACTIVITY loop. IMAGE1 is original completed hall APPEARANCE anchor only. IMAGE2 is selected incomplete construction F0 and determines the ENTIRE architecture/scaffolding/roofwork layout for this frame. Preserve IMAGE2 hall/terrace/stair/columns/roof tiles/exposedrafters/scaffold poles/tilepiles and their exact camera/canvas positions. Change only loose BLUE WORK TARP at visible right scaffold: lower free edge gently billows outward one small wave, pinned upper/side attachmentpoints remainfixed. Do not move any rigid roof beam/pole/hall/foundation; do not advanceconstructionprogress, add/remove roof tiles, people, equipment or dust clouds. Natural subdued tarpwave visible at219pxwholecanvas; no exaggerated motion. Same1254x1254RGBA transparent canvas, pivot640970/source/render130, bakedgroundshadow. No recenter/fit/warp/mirror/cutout or newbuilding. ONE finishedwholePNG, not atlas/mosaic/variants; preserve realisticillustration ofboth actualsources."
+  },
+  "references": [
+    {
+      "role": "originalmaster",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/residence/variant-02/raw.png",
+      "sha256": "f617c3540680cafff467358bab1adb01bf735417563f2cba86ab8af523b07dcc"
+    },
+    {
+      "role": "neighbor",
+      "jobId": "residence-construction-loop498-key",
+      "frame": 0,
+      "phase": 0,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/residence-construction-497/raw-F0.png",
+      "sha256": "e98afbf79b648b7645b32c8e2d9ad1dbbe8a6346e26ad68a49b4b33c840daea0",
+      "rgbaSha256": "a8a98142205a4ebd817867a933e2b13beda81ce106278a23613559bbb3de8c8e"
+    }
+  ],
+  "taskId": "root-construction498",
+  "expectedInputs": [
+    {
+      "path": "docs/art/residence/variant-02/raw.png",
+      "sha256": "f617c3540680cafff467358bab1adb01bf735417563f2cba86ab8af523b07dcc"
+    },
+    {
+      "path": "docs/art/pipeline/residence-construction-497/raw-F0.png",
+      "sha256": "e98afbf79b648b7645b32c8e2d9ad1dbbe8a6346e26ad68a49b4b33c840daea0"
+    },
+    {
+      "path": "scripts/sprite-prompts.mjs",
+      "sha256": "6e0dcf805f489c0f3853b6d6f1640377f523ff8165604030320d4ee811163c1e"
+    },
+    {
+      "path": "scripts/building-sprite-contract.mjs",
+      "sha256": "03544fe68faa3d0bc68bb2931c402b8967677e3fe4e0d64d9488d0e9280b7715"
+    },
+    {
+      "path": "docs/art/pipeline/building-production/residence/identity.json",
+      "sha256": "4823c134aecf2c0ae3ee17f20c85826bb92bb5a134bf922cdb8f30ebc295c776"
+    },
+    {
+      "path": "docs/art/pipeline/residence-construction-498/jobs/key-job.json",
+      "sha256": "3d8449f4d603c966f5ca99db3a714309ff928fcb4fbe9421c9ea3ec45cbf4920"
+    },
+    {
+      "path": "docs/art/pipeline/residence-construction-498/reviews/method-difference.json",
+      "sha256": "f3c600df01155576d73a2d4a541a58d612bbe266872ca9f9b9aeb59d1026f809"
+    },
+    {
+      "path": "docs/art/pipeline/residence-construction-497/canonical-asset.json",
+      "sha256": "11b26f3221aa9c56d32de37b8d601570504f997523abf0feb2e297b3bc7d787a"
+    }
+  ]
+}

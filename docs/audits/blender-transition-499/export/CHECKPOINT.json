@@ -1,0 +1,119 @@
+{
+  "schema": "rds-task-receipt/v1",
+  "taskId": "blender-export499",
+  "evidence": "VERIFIED",
+  "purpose": "Reusable strict Blender render-job/export adapter with fail-closed external input and focused non-Blender checks; no modeling/render claims",
+  "exclusiveOutputs": [
+    "scripts/blender",
+    "tests/blender-export499.test.js",
+    "docs/audits/blender-transition-499/export"
+  ],
+  "inputPins": [
+    {
+      "path": "AGENTS.md",
+      "expected": "7c92f4ad72fdc3e4d360b04942550506a38c779b92135913c40f2a8466026805",
+      "actual": "7c92f4ad72fdc3e4d360b04942550506a38c779b92135913c40f2a8466026805"
+    },
+    {
+      "path": "scripts/sprite-production.py",
+      "expected": "ed43f04c1db641b85cc1c003c53991d3e7e5295edf277cc34fd7b9e5407d1723",
+      "actual": "ed43f04c1db641b85cc1c003c53991d3e7e5295edf277cc34fd7b9e5407d1723"
+    },
+    {
+      "path": "client/renderer.js",
+      "expected": "d2c34bc266c03c95b2379ebc3c115993a338dbe2de826507ddf6450ab1b53553",
+      "actual": "d2c34bc266c03c95b2379ebc3c115993a338dbe2de826507ddf6450ab1b53553"
+    },
+    {
+      "path": "client/art-assets.js",
+      "expected": "af4db82838cf5b936549307272f96aef4ef16d1ac6f672cb8f4dd7c73437ab06",
+      "actual": "af4db82838cf5b936549307272f96aef4ef16d1ac6f672cb8f4dd7c73437ab06"
+    }
+  ],
+  "actualTools": [
+    "exec shell",
+    "python3 stdlib",
+    "node test runner",
+    "node source imports"
+  ],
+  "checks": [
+    {
+      "argv": "node --test tests/blender-export499.test.js",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitStatus": 0,
+      "tests": 16,
+      "limit": "Synthetic fixtures; no bpy import, no actual Blender/art qualification"
+    },
+    {
+      "argv": "node --test tests/blender-export499.test.js",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitStatus": 0,
+      "tests": 25,
+      "log": "docs/audits/blender-transition-499/export/tests.corrected.log",
+      "limit": "Pure stdlib synthetic matrix/allowlist and source-binding checks; bpy integration UNKNOWN"
+    }
+  ],
+  "outputs": {
+    "scripts/blender/export_job.py": "5156756cb4e8401d4c22a7cae29bad2b4c2f75daa92b57edcbe1f534f074350a",
+    "scripts/blender/README.md": "94b3e2f63e59478b60a911d98590c23b24738822a54651cce9672878281eb3bd",
+    "tests/blender-export499.test.js": "27252de7e9391c1d174540cc4b10b24d0892c1aa7f79f99b55e7817d36451d00",
+    "docs/audits/blender-transition-499/export/preflight.log": "04c9043ec886d0de60e771d0f915250aa61b5fdfeb77db3738a7fc9cf2d396e6",
+    "docs/audits/blender-transition-499/export/tests.log": "090b3f04c9155ee58f06ed50bb9efbe62ede32fbd8a1c3c909295bc2d752c654",
+    "docs/audits/blender-transition-499/export/CHECKPOINT.initial16.json": "ec2c12b606c253ea9e897c6d3299513f4acbaf61a77bfa98e783e58bb5a4d13c",
+    "docs/audits/blender-transition-499/export/tests.initial16.log": "090b3f04c9155ee58f06ed50bb9efbe62ede32fbd8a1c3c909295bc2d752c654",
+    "docs/audits/blender-transition-499/export/tests.corrected-first-failure.log": "6c8a9958c3c633b7b37cd218002e84b9ca90f9139927c267ff2e942f148ba94c",
+    "docs/audits/blender-transition-499/export/tests.corrected.log": "0792e3f7aab01b0e25f3e7cda7fa84297b9bd4d2a1ae0141f89aa03860a38640"
+  },
+  "failures": [
+    {
+      "method": "rg shared/direction.js and client/direction*",
+      "observation": "paths absent; corrected to actual renderer facing() source",
+      "status": "retained in tool output"
+    },
+    {
+      "method": "first corrected25 tests",
+      "status": "retained",
+      "observation": "NaN bound equality initially rejected at qualification rather than timing; frame guards moved before qualification check, intended timing message now asserted",
+      "log": "docs/audits/blender-transition-499/export/tests.corrected-first-failure.log"
+    }
+  ],
+  "imageCalls": 0,
+  "blenderCalls": 0,
+  "installCalls": 0,
+  "handles": {
+    "ownedRemaining": [],
+    "observation": "scoped ps inspection found no Blender/order/test worker process; no global service touched"
+  },
+  "acceptance": {
+    "sourcePlan": "VERIFIED",
+    "nonBlenderValidation": "VERIFIED",
+    "blenderExecution": "UNKNOWN",
+    "compilerIntegration": "UNKNOWN",
+    "visual": "UNKNOWN",
+    "motion": "UNKNOWN",
+    "runtime": "UNKNOWN",
+    "owner": "UNKNOWN",
+    "release": "UNKNOWN"
+  },
+  "nextDependencies": [
+    "Actual Blender capability independently established",
+    "Actual qualified selected original/view/model/rig/camera with pinned blend",
+    "Run actual source-bound renderer and decode PNG verify alpha/canvas/RGBA",
+    "Independent original identity/motion review",
+    "Qualified explicit adapter into existing compiler; no provenance acceptance inferred",
+    "Root qualified original1254\u2192fixedwholeappearance256/familypivot calibration and explicit compiler adapter; legacy samecanvas requirement preserved"
+  ],
+  "limitations": [
+    "Qualification JSON mechanically binds assertions but cannot authenticate review prose",
+    "No model, rig, camera or animation was created/rendered",
+    "Engine26.565 elevation label distinct from physical orthographic30deg; original projection must be measured",
+    "Root independent review pending"
+  ],
+  "rootReviewCorrections": [
+    "fixed256 source canvas",
+    "canonical finite/continuous loop policy",
+    "positive evaluatedworld determinant/fixed scale includingparents",
+    "explicit pinned render collection/mesh allowlist without hiding",
+    "negative tests refresh qualification and assert specificguard"
+  ]
+}

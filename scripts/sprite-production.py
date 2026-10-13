@@ -8,6 +8,7 @@ import os
 import re
 import shutil
 import tempfile
+import subprocess
 from pathlib import Path
 from PIL import Image, ImageDraw
 
@@ -40,17 +41,37 @@ def compile_job(job_path, mode):
     job_path = Path(job_path).resolve()
     job = json.loads(job_path.read_text())
     base = job_path.parent
-    require(job.get('schemaVersion') in (1, 2), 'unsupported job schema')
+    require(job.get('schemaVersion') in (1, 2, 3), 'unsupported job schema')
+    building = job.get('schemaVersion') == 3
+    canonical = None
+    if building:
+        require(job.get('kind') == 'building' and job.get('direction') is None, 'schema3 requires building/null direction')
+        definitions = json.loads(subprocess.check_output(['node', '--input-type=module', '-e', f"import {{BUILDINGS}} from {json.dumps((Path(__file__).resolve().parents[1] / 'shared/data.js').as_uri())}; process.stdout.write(JSON.stringify(BUILDINGS));"], text=True))
+        kind = job.get('buildingType')
+        require(kind in definitions and job.get('family') in (kind, 'building.' + kind), 'known building family/type required')
+        require(job.get('action') in ('construction', 'hit', 'death', 'attack') and (job.get('action') != 'attack' or definitions[kind].get('damage', 0) > 0), 'invalid building state/attack')
+        require('locomotion' not in job and not job.get('previewBank'), 'building locomotion/directional bank forbidden')
+        pin = job.get('canonicalDescriptor', {})
+        raw = (base / pin.get('path', '')).resolve().read_bytes()
+        require(digest(raw) == pin.get('sha256'), 'canonical building descriptor SHA mismatch')
+        canonical = json.loads(raw)
+        require(canonical.get('kind') == 'building' and canonical.get('direction') is None and canonical.get('family') in (kind, 'building.' + kind), 'canonical building type/direction mismatch')
+        require(all(job.get(k) == canonical.get(k) for k in ('cell', 'pivot', 'render', 'contactShadow')), 'building canonical layout mismatch')
+        require(job.get('fixedCanvas') == {k: canonical['source'][k] for k in ('width', 'height')}, 'building canonical source canvas mismatch')
+        require(job.get('originalMaster', {}).get('sha256') == canonical['source']['sha256'] == job.get('masterSHA') and job.get('master') == job.get('originalMaster'), 'building original master binding mismatch')
+        require(job.get('loop') is True if job.get('action') == 'construction' else type(job.get('loop')) is bool, 'building explicit construction loop required')
     require(not any(k in job for k in ('transform', 'mirror', 'warp', 'fit')), 'whole-frame transforms forbidden')
     require(mode in ('diagnostic', 'selected', 'production'), 'invalid mode')
     require(re.fullmatch(r'[A-Za-z0-9_.-]{1,120}', job['id']), 'invalid ID')
     require(isinstance(job['family'], str) and job['family'], 'family required')
     require(isinstance(job['action'], str) and job['action'], 'action required')
-    require(type(job['direction']) is int and 0 <= job['direction'] <= 7, 'invalid direction')
+    require(building or type(job['direction']) is int and 0 <= job['direction'] <= 7, 'invalid direction')
     canvas = tuple(job['fixedCanvas'][k] for k in ('width', 'height'))
     require(all(type(n) is int and 1 <= n <= 16384 for n in canvas), 'invalid canvas')
     require(canvas[0] == canvas[1] and canvas[0] * canvas[1] <= 32 * 1024 * 1024, 'square fixed canvas required within 32 megapixels')
-    require(job['cell'] == {'width': 128, 'height': 128}, 'runtime cell must be 128 square')
+    require(building or job['cell'] == {'width': 128, 'height': 128}, 'runtime cell must be 128 square')
+    cell = job['cell']['width']
+    require(type(cell) is int and cell > 0 and job['cell']['height'] == cell, 'square runtime cell required')
     pivot = job['pivot']; render = job['render']
     require(pivot.get('space') == 'source' and all(number(pivot.get(k)) and 0 <= pivot[k] <= canvas[i] for i, k in enumerate(('x', 'y'))), 'invalid fixed pivot')
     require(all(number(render.get(k)) and render[k] > 0 for k in ('width', 'height')) and render['width'] == render['height'], 'invalid fixed logical scale')
@@ -89,6 +110,8 @@ def compile_job(job_path, mode):
         record = (base / q['record']).resolve().read_bytes()
         require(digest(record) == q.get('sha256'), 'qualification record SHA256 mismatch')
         qualification = json.loads(record)
+        if building:
+            require(qualification.get('kind') == 'building' and qualification.get('buildingType') == job['buildingType'] and qualification.get('direction') is None and qualification.get('canonicalDescriptorSHA') == job['canonicalDescriptor']['sha256'] and all(qualification.get(k) == job[k] for k in ('fixedCanvas', 'cell', 'pivot', 'render', 'contactShadow')), 'building qualification does not bind canonical kind/layout')
         require(qualification.get('status') == 'qualified' and all(qualification.get(k) == job[k] for k in ('masterSHA', 'family', 'action', 'direction')) and qualification.get('frameSHAs') == [f['input']['sha256'] for f in frames], 'qualification does not bind this cycle')
         if identity_pin is not None:
             require(qualification.get('identityMasterSHA') == identity_pin['sha256'], 'qualification does not bind identity master')
@@ -100,7 +123,8 @@ def compile_job(job_path, mode):
     columns = job.get('layout', {}).get('columns', min(15, len(frames)))
     require(type(columns) is int and 1 <= columns <= 15, 'invalid layout columns')
     rows = math.ceil(len(frames) / columns)
-    size = (columns * 132, rows * 132)
+    stride = cell + 4
+    size = (columns * stride, rows * stride)
     require(max(size) <= 2048, 'atlas exceeds 2048px; split into independently qualified jobs')
     pages = job.get('otherDecodedPages', [])
     unique = {}
@@ -128,12 +152,14 @@ def compile_job(job_path, mode):
         descriptor_frames = []
         for i, (image, pin) in enumerate(images):
             image.resize((256, 256), Image.Resampling.LANCZOS).save(temporary / 'working' / f'{i:03}.png')
-            x, y = (i % columns) * 132 + 2, (i // columns) * 132 + 2
-            atlas.paste(image.resize((128, 128), Image.Resampling.LANCZOS), (x, y))
-            descriptor_frames.append(dict(x=x, y=y, width=128, height=128, durationMs=frames[i]['durationMs'], source=pin, events=frames[i].get('events', [])))
+            x, y = (i % columns) * stride + 2, (i // columns) * stride + 2
+            atlas.paste(image.resize((cell, cell), Image.Resampling.LANCZOS), (x, y))
+            descriptor_frames.append(dict(x=x, y=y, width=cell, height=cell, durationMs=frames[i]['durationMs'], source=pin, events=frames[i].get('events', [])))
         atlas.save(temporary / 'atlas.png')
         runtime = dict(path='atlas.png', width=size[0], height=size[1], sha256=digest((temporary / 'atlas.png').read_bytes()), rgbaSha256=digest(atlas.tobytes()), derivation=dict(method='atlas', filter='lanczos', sourceSha256=images[0][1]['sha256']))
         descriptor = dict(identityMasterSHA=identity_pin['sha256'], directionalMasterSHA=master_pin['sha256'], id=job['id'], family=job['family'], kind='unit', state=job['action'], direction=job['direction'], source=images[0][1], runtime=runtime, cell=job['cell'], pivot=pivot, render=render, contactShadow=job['contactShadow'], alphaPolicy='transparent', frames=descriptor_frames, candidate=True, review=dict(status='CANDIDATE'), loop=loop)
+        if building:
+            descriptor.update(kind='building', direction=None, loadPolicy='on-demand', canonicalDescriptorSHA=job['canonicalDescriptor']['sha256'])
         if job['action'] == 'walk' and 'locomotion' in job:
             require(number(job['locomotion'].get('distancePerCycle')) and job['locomotion']['distancePerCycle'] > 0, 'invalid provisional locomotion distance')
             descriptor['locomotion'] = {**job['locomotion'], 'status': 'MEASURED' if mode == 'production' else 'PROVISIONAL'}

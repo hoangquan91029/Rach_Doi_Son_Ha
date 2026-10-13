@@ -1,0 +1,15 @@
+# Source-bound worker instructions — proposals, not executable orders
+
+Every future worker: exact gpt-6.1-sol/low, root registration before dispatch, exclusive model/rig/clip/export paths and pinned SOURCE_BINDINGS inputs. Read current state, ownership and capability receipt. Unknown required values block execution; no placeholders passed to Blender or MCP. No automatic source/art/motion approval. No image provider retry, installation, driver repair or remote-code execution.
+
+## Modeling assignment
+
+Create SAME Villager model from pinned original D0 `145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94` and static D1 `68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db`. Preserve hat/face/crossover/rolled cuffs/sash/trouser/calfwrap/sandal locks described in PILOT.md. Empty hands. Missing rear evidence UNKNOWN. Produce neutral candidate D0/D1 using one calibrated30° orthographic camera; do not self-approve. Final surface realistic illustrated, proxy-only outputs clearly labeled. Stop if source pins drift or actual capability unavailable. Model file name/output directory must be assigned by root before writes outside499identity.
+
+## Rig and clip assignment
+
+After independently reviewed neutral model/calibration pins exist, rig persistent physical foot controls and knee poles; legs two-bone IK, no stretch. Author translating full cycle and source-relative fixed-root render version with measured root-distance metadata. Export phase0,.125,.25,.375,.5,.625,.75,.875; closed phase1 only seam diagnostic. Body counterswing, weight transfer, toe clearance, deterministic garment motion. Render only D1 walk in first finite package. Keep70.56px canvas presentation and normalized256 pivot133.5119617,232.7272727 (original1254 pivot654,1140). No shortcut to mirrored rear views, no Villager equipment assumptions for Infantry. Required numeric s/orthoScale/camera shift/clip timing/actual engine settings remain UNKNOWN until calibration and runtime receipt; do not issue a runnable call with these omitted or guessed.
+
+## Export assignment
+
+Use actual qualified export tool/API, not a fictional Blender option. Input model, rig, Action, calibration manifest and capability receipt must exist with hashes. Fixed256square RGBA newsource →128runtime; original1254 remains appearance authority with whole→256 reference derivative/hash and versioned root identityMaster/calibration registration before compiler intake, render42, padding2. Walk separate `unit-contact-shadow`, no baked ground shadow in body. Export only assigned action/D slots. Keep raw PNG custody, source hash and known Blender version/render settings. Produce candidate atlas/descriptor through existing compiler conventions; root integrates shared metadata. Measure contact/root travel and propose distancePerCycle; do not inherit1.26 or modify simulation speed. Return output/hash/check failures plus owned-handle closure, unknowns and independent-review dependency. No atlas approval from successful rendering.

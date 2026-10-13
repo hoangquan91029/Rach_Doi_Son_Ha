@@ -1,0 +1,94 @@
+{
+  "schema": "rds-task-receipt/v1",
+  "taskId": "blender-runtime499",
+  "status": "FAILED_OFFICIAL_DOWNLOAD_LISTING",
+  "purpose": "User-authorized Blender transition: install ONE pinned official portable LTS in exclusive userlandtools directory and bounded CPU technical capability, no character art/MCP config/driverchange",
+  "exclusiveOutputs": [
+    "docs/audits/blender-transition-499/runtime"
+  ],
+  "externalToolInstallRoot": "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/blender499",
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "7c92f4ad72fdc3e4d360b04942550506a38c779b92135913c40f2a8466026805"
+    },
+    {
+      "path": "docs/audits/blender-transition-499/capability/SETUP.md",
+      "sha256": "db7778e87ad9042d525237a7367e2b54bf7607e7991e3319d2d4fce852d28c35"
+    },
+    {
+      "path": "docs/audits/blender-transition-499/capability/CHECKPOINT.json",
+      "sha256": "016dd6ebf0e852eb82fc15ada53eda13534c003ebd74812c6d0b62a8aec854c3"
+    }
+  ],
+  "inputPinsRechecked": true,
+  "actualTools": [
+    "exec_command",
+    "Python3 urllib read-only official listing request",
+    "agent-preflight audit"
+  ],
+  "evidence": {
+    "method": "urllib.request.urlopen(url,timeout=30)",
+    "url": "https://download.blender.org/release/Blender4.5/",
+    "result": "FAILED",
+    "errorType": "urllib.error.HTTPError",
+    "httpStatus": 403,
+    "reason": "Forbidden",
+    "archiveRequests": 0,
+    "archiveBytes": 0,
+    "publishedVersion": null,
+    "publishedSha256": null,
+    "selection": "Blender4.5 official LTS series listing candidate; exact version not selected",
+    "disk": {
+      "path": "/home/kieu-hoang-quan/.local/share",
+      "availableBytes": 57849061376
+    },
+    "toolrootExists": false
+  },
+  "preflight": {
+    "path": "docs/audits/blender-transition-499/runtime/preflight.json",
+    "exitCode": 0
+  },
+  "limits": {
+    "downloadCapBytes": 629145600,
+    "maxArchives": 1
+  },
+  "actual": {
+    "archiveDownloads": 0,
+    "binaryDownloads": 0,
+    "extractions": 0,
+    "binaryVersion": null,
+    "headlessBpy": null,
+    "renders": 0,
+    "png": null,
+    "mcpConfigChanges": 0,
+    "driverChanges": 0
+  },
+  "handles": {
+    "created": [],
+    "allOwnedClosed": true
+  },
+  "nextDependency": "Official download listing/checksum availability or human-provided verified official portable archive; no alternate binary attempted",
+  "acceptance": {
+    "runtime": "FAILED prerequisite retrieval",
+    "art": "UNKNOWN",
+    "motion": "UNKNOWN",
+    "owner": "UNKNOWN",
+    "release": "UNKNOWN",
+    "fullGoal": "OPEN"
+  },
+  "outputs": [
+    {
+      "path": "docs/audits/blender-transition-499/runtime/assignment.json",
+      "sha256": "306fe187092720bb24b197ebb6936b5cc31e237aef9aa404d66514aa4e44b6ff"
+    },
+    {
+      "path": "docs/audits/blender-transition-499/runtime/official-download-failure.json",
+      "sha256": "742a9039d79ded99218c882a069b0113a01d0562d4ff632c78cacf756f947c5c"
+    },
+    {
+      "path": "docs/audits/blender-transition-499/runtime/preflight.json",
+      "sha256": "3ecdeb81732acbc0fa348dc52afe5297c0d9202089603ff0563a806ddf3866ca"
+    }
+  ]
+}

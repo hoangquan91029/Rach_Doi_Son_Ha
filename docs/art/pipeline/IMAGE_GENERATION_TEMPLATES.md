@@ -1,4 +1,4 @@
-# Reusable image instructions — v1
+# Reusable image instructions — v1; Blender branch499
 
 These are recipes for shared templates, not image orders. Current executable templates live in `unit-production/templates/`; exact accepted fields come from `scripts/sprite-prompts.mjs`. Never paste extra fields into a validated payload, drop a failing guard or invent seed/mask/pose parameters. Built-in tool currently exposes prompt, inspected reference paths and transparency; it does not expose a strict skeletal constraint or separate mask argument. A textual request to respect a guide is not deterministic control.
 
@@ -114,3 +114,7 @@ Request one whole illustrated original person in the guide pose, with original f
 Every request must supply actual identity anchor, edit target if applicable, selected neighbors when required, action/D/slot, verified projected facing, fixed bodyvolume/face/clothing/equipment/camera/light/pivot/scale, contact/support/swing lanes and occlusion, weight/tool motion and next-key intent. Correction names one observed gameplay-size defect. Unknown required values block generation. One complete transparent realisticillustration; no redesign/cutouts/warps/mirror/fit.
 
 Local2D research is not executable built-in template data. Only a qualified local capability may add real ControlNet structural and IP-Adapter appearance inputs; do not invent built-in tooloptions. Approved new-mechanism pilot maximum2passing outputs+1correction after rootregistration; existing methods remainclosed. Read root task contract and actual model/API version before any request. Prompt output is not evidence that instructions succeeded.
+
+##499 Blender worker templates
+
+Human now permits source-bound Blender authoring; image-generation request payloads and finite-provider guards above are unchanged. Use [Blender pipeline](BLENDER_SPRITE_PIPELINE.md) and [source-bound worker prompts](../../audits/blender-transition-499/identity/PROMPTS.md) for model/material, rig/action and export tasks. Exact source/scene/object/action/tool availability and unknown calibration values must be resolved before executable calls. Prompts do not supply a qualified mesh/rig or authenticate visual approval. All worker outputs stay exclusive; root integrates state/manifests.

@@ -650,6 +650,226 @@
         "receiptSHA": "5ad689a1a7fb707a21419807fd715e4bd03e2384a6b2b926df9f2720a8f708e5",
         "scope": "Custody closure only; no approval, refund or handle authenticity guarantee"
       }
+    },
+    {
+      "id": "residence-construction-F2-498",
+      "jobKind": "building-state",
+      "kind": "building",
+      "buildingType": "residence",
+      "state": "construction",
+      "direction": null,
+      "status": "OPEN",
+      "job": {
+        "id": "residence-construction-loop498-key",
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/residence-construction-498/jobs/key-job.json",
+        "sha256": "3d8449f4d603c966f5ca99db3a714309ff928fcb4fbe9421c9ea3ec45cbf4920"
+      },
+      "callLimit": 1,
+      "callsUsed": 1,
+      "correctionCap": 0,
+      "correctionsUsed": 0,
+      "callsRemaining": 0,
+      "slots": [
+        {
+          "frame": 0,
+          "phase": 0,
+          "status": "selected",
+          "kind": "initial",
+          "template": "building_key"
+        },
+        {
+          "frame": 1,
+          "phase": 0.25,
+          "status": "pending",
+          "kind": "initial",
+          "template": "building_key"
+        },
+        {
+          "frame": 2,
+          "phase": 0.5,
+          "status": "held",
+          "kind": "initial",
+          "template": "building_key",
+          "claim": {
+            "token": "bb441b2c-d710-4344-86a4-1f236e0f1f49",
+            "requestSHA": "155e5bb0e00b2b7306218d11d8b254589430cb755e1c40922a94705168369273",
+            "claimedAt": "2026-10-13T04:04:28.067Z"
+          },
+          "settlement": {
+            "token": "bb441b2c-d710-4344-86a4-1f236e0f1f49",
+            "settledAt": "2026-10-13T04:05:48.290Z",
+            "output": {
+              "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/residence-construction-498/raw/F2.png",
+              "sha256": "d03465a161d1df3c77fe0366d95c4a0957175d32c40153e1d8077b7c40a5e164"
+            },
+            "approval": false
+          }
+        },
+        {
+          "frame": 3,
+          "phase": 0.75,
+          "status": "pending",
+          "kind": "initial",
+          "template": "building_key"
+        }
+      ],
+      "enforcement": {
+        "version": 1,
+        "taskId": "root-construction498",
+        "baseline": {
+          "callsUsed": 0,
+          "correctionsUsed": 0
+        },
+        "method": {
+          "family": "whole2D.residence.construction.selected-key-sequence.v1",
+          "parentOrderIds": [
+            "residence-construction-F0-497"
+          ],
+          "differenceEvidence": {
+            "path": "docs/art/pipeline/residence-construction-498/reviews/method-difference.json",
+            "sha256": "f3c600df01155576d73a2d4a541a58d612bbe266872ca9f9b9aeb59d1026f809"
+          }
+        },
+        "prerequisites": [
+          {
+            "job": {
+              "path": "docs/art/pipeline/residence-construction-498/jobs/key-job.json",
+              "sha256": "3d8449f4d603c966f5ca99db3a714309ff928fcb4fbe9421c9ea3ec45cbf4920"
+            },
+            "frame": 0,
+            "phase": 0,
+            "input": {
+              "path": "docs/art/pipeline/residence-construction-497/raw-F0.png",
+              "sha256": "e98afbf79b648b7645b32c8e2d9ad1dbbe8a6346e26ad68a49b4b33c840daea0"
+            }
+          }
+        ]
+      },
+      "packageBudget": {
+        "initialLimit": 4,
+        "priorCalls": 1,
+        "missingFrames": [
+          1,
+          2,
+          3
+        ],
+        "correctionLimit": 0
+      },
+      "authorizationBasis": "Activefullgoal+approvedG5: originalF0selected, ONEnewmissingF2 fromF0neighbor undercumulative4initial/correction0. F1/F3notcalleduntilF2selected; no F0retry/unitfanout/failedmethodreset."
+    },
+    {
+      "id": "residence-construction-F1-F3-498",
+      "jobKind": "building-state",
+      "kind": "building",
+      "buildingType": "residence",
+      "state": "construction",
+      "direction": null,
+      "status": "OPEN",
+      "job": {
+        "id": "residence-construction-loop498-inbetweens",
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/residence-construction-498/jobs/inbetween-job.json",
+        "sha256": "3da67a45a03f41375427b5d746963530ee3ef10d5d6f3c7200a37a2da12416de"
+      },
+      "callLimit": 2,
+      "callsUsed": 2,
+      "correctionCap": 0,
+      "correctionsUsed": 0,
+      "callsRemaining": 0,
+      "slots": [
+        {
+          "frame": 0,
+          "phase": 0,
+          "status": "selected",
+          "kind": "initial",
+          "template": "building_key"
+        },
+        {
+          "frame": 1,
+          "phase": 0.25,
+          "status": "used",
+          "kind": "initial",
+          "template": "building_key",
+          "claim": {
+            "token": "c39d4f3a-afe4-4dba-bd98-1e71de33e2c9",
+            "requestSHA": "810429525a16fd07f75f6c02d21bba97c592b55189c54244b21fd7d60e134aa8",
+            "claimedAt": "2026-10-13T04:08:29.036Z"
+          }
+        },
+        {
+          "frame": 2,
+          "phase": 0.5,
+          "status": "selected",
+          "kind": "initial",
+          "template": "building_key"
+        },
+        {
+          "frame": 3,
+          "phase": 0.75,
+          "status": "used",
+          "kind": "initial",
+          "template": "building_key",
+          "claim": {
+            "token": "1166301b-86da-497a-a3b7-4787f7c5df22",
+            "requestSHA": "9704449053b6ffb9feddabc897e0c7fa7b9fda75fb9538495598938624a9873e",
+            "claimedAt": "2026-10-13T04:08:29.099Z"
+          }
+        }
+      ],
+      "enforcement": {
+        "version": 1,
+        "taskId": "root-construction498",
+        "baseline": {
+          "callsUsed": 0,
+          "correctionsUsed": 0
+        },
+        "method": {
+          "family": "whole2D.residence.construction.selected-key-sequence.v1",
+          "parentOrderIds": [
+            "residence-construction-F0-497"
+          ],
+          "differenceEvidence": {
+            "path": "docs/art/pipeline/residence-construction-498/reviews/method-difference.json",
+            "sha256": "f3c600df01155576d73a2d4a541a58d612bbe266872ca9f9b9aeb59d1026f809"
+          }
+        },
+        "prerequisites": [
+          {
+            "job": {
+              "path": "docs/art/pipeline/residence-construction-498/jobs/inbetween-job.json",
+              "sha256": "3da67a45a03f41375427b5d746963530ee3ef10d5d6f3c7200a37a2da12416de"
+            },
+            "frame": 0,
+            "phase": 0,
+            "input": {
+              "path": "docs/art/pipeline/residence-construction-497/raw-F0.png",
+              "sha256": "e98afbf79b648b7645b32c8e2d9ad1dbbe8a6346e26ad68a49b4b33c840daea0"
+            }
+          },
+          {
+            "job": {
+              "path": "docs/art/pipeline/residence-construction-498/jobs/inbetween-job.json",
+              "sha256": "3da67a45a03f41375427b5d746963530ee3ef10d5d6f3c7200a37a2da12416de"
+            },
+            "frame": 2,
+            "phase": 0.5,
+            "input": {
+              "path": "docs/art/pipeline/residence-construction-498/raw/F2.png",
+              "sha256": "d03465a161d1df3c77fe0366d95c4a0957175d32c40153e1d8077b7c40a5e164"
+            }
+          }
+        ]
+      },
+      "packageBudget": {
+        "initialLimit": 4,
+        "priorInitialCalls": 2,
+        "missing": [
+          1,
+          3
+        ],
+        "correctionLimit": 0,
+        "reset": false
+      },
+      "authorizationBasis": "SelectedF0/F2prerequisites exist afterindependentreview;2missinginbetweensONLY, old497F0 and498F2consumed; cumulative4initialcalls,noretry."
     }
   ],
   "nextDependencies": [

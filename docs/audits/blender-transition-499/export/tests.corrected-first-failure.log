@@ -1,0 +1,74 @@
+✔ Blender candidate validation: valid (59.824079ms)
+✔ Blender candidate validation: projection (55.08132ms)
+✔ Blender candidate validation: pin (75.702801ms)
+✔ Blender candidate validation: escape (78.389484ms)
+✔ Blender candidate validation: absolute (76.81709ms)
+✔ Blender candidate validation: action (82.880172ms)
+✔ Blender candidate validation: direction (56.586621ms)
+✔ Blender candidate validation: frame (81.579669ms)
+✔ Blender candidate validation: fit (76.545106ms)
+✔ Blender candidate validation: phase (80.889657ms)
+✔ Blender candidate validation: status (78.597214ms)
+✔ Blender candidate validation: qualification (75.189165ms)
+✔ Blender candidate validation: unknown (54.417434ms)
+✔ Blender candidate validation: overwrite (81.292348ms)
+✔ Blender candidate validation: symlink (79.45283ms)
+✖ Blender candidate validation: timing (118.07282ms)
+✔ Blender candidate validation: canvas (77.700619ms)
+✔ Blender candidate validation: continuousloop (73.15998ms)
+✔ Blender candidate validation: finiteloop (78.193169ms)
+✔ Blender candidate validation: duplicateallowlist (80.389667ms)
+✔ Blender candidate validation: world (51.704677ms)
+✔ Blender candidate validation: worldmirror (52.366365ms)
+✔ Blender candidate validation: worldscale (52.952456ms)
+✔ Blender candidate validation: extramesh (51.915962ms)
+✔ Blender candidate validation: outsidecollection (55.372844ms)
+ℹ tests 25
+ℹ suites 0
+ℹ pass 24
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1829.152831
+
+✖ failing tests:
+
+test at tests/blender-export499.test.js:70:2
+✖ Blender candidate validation: timing (118.07282ms)
+  AssertionError [ERR_ASSERTION]: Traceback (most recent call last):
+    File "<string>", line 61, in <module>
+      try:m.validate(j,root)
+          ~~~~~~~~~~^^^^^^^^
+    File "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/blender/export_job.py", line 82, in validate
+      require(q.get('schema') == 'rds-blender-selection/v1' and q.get('status') == 'qualified' and q.get('bindings') == bindings and all(q.get(k) == 'VERIFIED' for k in ('identityReview','modelReview','rigReview','cameraReview')), 'source-bound selected model/rig/camera qualification required')
+      ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/blender/export_job.py", line 16, in require
+      raise ValueError(message)
+  ValueError: source-bound selected model/rig/camera qualification required
+  
+  During handling of the above exception, another exception occurred:
+  
+  Traceback (most recent call last):
+    File "<string>", line 62, in <module>
+      except ValueError as e:assert str(e)==expected[case],str(e)
+                                    ^^^^^^^^^^^^^^^^^^^^^^
+  AssertionError: source-bound selected model/rig/camera qualification required
+  
+  
+  1 !== 0
+  
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/blender-export499.test.js:70:125)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

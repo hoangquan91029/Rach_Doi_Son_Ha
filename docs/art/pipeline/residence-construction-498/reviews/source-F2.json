@@ -1,0 +1,44 @@
+{
+  "schema": "rds-building-source-review/v1",
+  "reviewer": "/root/plan_art494",
+  "producer": "/root",
+  "method": "One brief actual219px fixed-canvas side-by-side observation using view_image; still source review only",
+  "observedAtUTC": "2026-10-13T04:06:28.115411+00:00",
+  "subject": "Residence construction F2",
+  "decision": "RECOMMEND_SOURCE_KEY_CANDIDATE",
+  "inputPins": [
+    {
+      "path": "docs/art/pipeline/residence-construction-498/raw/F2.png",
+      "sha256": "d03465a161d1df3c77fe0366d95c4a0957175d32c40153e1d8077b7c40a5e164"
+    },
+    {
+      "path": "docs/art/pipeline/residence-construction-498/inputs/F0-F2-fixed219.png",
+      "sha256": "73317fd710d61dc3734ae6c7991c064658dee36756f9aab2cc202d0e4873d034"
+    },
+    {
+      "path": "docs/art/pipeline/residence-construction-497/raw-F0.png",
+      "sha256": "e98afbf79b648b7645b32c8e2d9ad1dbbe8a6346e26ad68a49b4b33c840daea0"
+    }
+  ],
+  "observations": [
+    "Same recognizable timberhall/terracotta roof/originalunfinishedrightroofsection, terrace/stair and facadecolumn arrangement visible inboth219px cells",
+    "Camera/presentation scale and overallroof/scaffold silhouette appear stable atshownsize; no visiblebuildingwing/person/newstructuralcomponent introduced",
+    "Tied right-side tarp has visiblechanged lower/right cloth shape, consistentwith boundedopposite flutter key; fixedscaffold/hallremain readable",
+    "No visible source blocker found inthisbriefstillcomparison"
+  ],
+  "limitations": [
+    "Stillscannotestablishcontinuousmotion/seam/phaseinterpolation",
+    "Visualapparentstabilitynotpixelidenticalgeometry ormetrologicalguarantee",
+    "No runtime/owner/release/clipPASS",
+    "F1/F3remainpending; recommendationdoesnotselectregisterorcall",
+    "Noexhaustivepixel/anatomyaudit"
+  ],
+  "budgetScope": {
+    "cumulativeInitialCalls": 2,
+    "prior497F0": 1,
+    "current498F2": 1,
+    "retries": 0,
+    "corrections": 0
+  },
+  "source": "Rootreportsactual1254RGBAtoolreturnsettled; thisreviewobservedfixedgame-sizecomparison notindependentdecodevalidation"
+}

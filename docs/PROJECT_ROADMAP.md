@@ -5,8 +5,8 @@ Full goal OPEN. This is the approved order and exit criteria, not an image order
 | Gate | Work / dependency | Exit evidence |
 |---|---|---|
 |G0|Refresh active instructions; ownership/scoped pins/method lineage/prerequisites/durable budgets/receipt checks on existing helpers|Focused negative tests; old orders/sources retained; no stale queue doing493again|
-|G1|One isolated Diffusers SD1.5 + OpenPoseControlNet + IP-Adapter capability path; actual GPU/library/Python/RAM/disk before install/model download|Actual runnable pipeline, or explicit prerequisite failure.495 failed runtime; no adoption|
-|G2|Original VillagerD1 passing/control repair; reuse valid source slots|Original identity; one10–15s real-size loop; actual Move/turn/PauseResume/assignedarrival/Stop; measured stride; owner status only actual reply|
+|G1|Latest499 Blender model/rig→2D authoring capability; actual binary/version/headlessCPU and MCP handshake if used|Actual supported runtime; bounded499 lookup missing, officialfetch403/402; no installation/render or adoption.495 localDiffusers failure retained|
+|G2|Original Villager neutral model/material/camera gate, then controlled D1 rig/walk pilot; preserve/reuse valid originals|Sameoriginal realistic appearance; actual loop/Move/turn/PauseResume/assignedarrival/Stop; calibrated stride; owner only exact reply|
 |G3|Reuse on original Infantry, then wholehorsewagon415/cavalry|Motion/runtime pass; actual newcalls/corrections/held/reuse/manualeffort, not schema-count claims|
 |G4|Finish each identity/action×D0–D7; view lock and selected keys before parallel inbetweens|All applicable exact/shared clips integrated; static fallback never completion|
 |G5|Building construction/hit/death/real attack; straight/corner stonewall policy; both map compositions|Dedicated lifecycle art; actual scene/picking/readability; authoritative policy tests and ordinaryUI|
@@ -17,11 +17,11 @@ G5 and relevantG6 tasks may progress independently whileG1–G4 held. Do not reg
 
 ## Production sequence and package contract
 
-Identity → motion → projection → whole illustrated frames → runtime. One identity/action package has8 direction jobs, finite slots and one receipt. Reuse original/view/layout/equipment; source missing remains missing. Opposing contacts before passing keys; selected key endpoints before inbetweens. Original appearance reference, physical A/B limb/tool ownership and verified screen travel/occlusion separate from screen-left/right. Whole finished2D only.
+Identity → motion → projection → whole illustrated frames → runtime. One identity/action package has8 direction jobs, finite slots and one receipt. Reuse original/view/layout/equipment; source missing remains missing. Opposing contacts before passing keys; selected key endpoints before inbetweens. Original appearance reference, physical A/B limb/tool ownership and verified screen travel/occlusion separate from screen-left/right. Finished whole2D browser output; newly authorized Blender character authoring per499 pipeline.
 
 One sheet +10–15s gameplay-size loop + relevant scene. Block visible changed identity, phase/contact error, torso/weapon/scale jump, missing limb, obvious clipping/seam/sliding. Minor folds do not block. Technical8frame playback is not motion approval. Never alter facing/speed to hide error.
 
-Initial materially different local Villager trial: F2/F6 two outputs + one correction total, only after capability passes and root finite registration. If it repeats geometry/identity failure, held/closed with no seed sweep or renamed retry. Built-in remains available under existing exact finite guards; no paid API/key/CLI fallback.
+Historical495 localDiffusers Villager trial was not opened; its capability failed. New499 Blender neutralmodel then D1walk requires capability, root-scoped scene/model/rig/camera/action pins and independent gates, rather than renamed image-provider trials. If it repeats geometry/identity failure, held/closed with no seed sweep or renamed retry. Built-in remains available under existing exact finite guards; no paid API/key/CLI fallback.
 
 ## Full scope / counts
 
@@ -57,3 +57,7 @@ Profile1920×1080/DPR1/defaultzoom, record exact hardware/browser. Dense p95≤3
 Final4ordinary matches: SinglePlayer/Online × Delta/Coast, actual Generalcombat defeat, syncedvictory/reconnect/rematch, cleanChrome/relevantFirefox, at leastoneexternaldesktopWAN/device pair. Reuse matching release receipts; no fullmatch per sprite. BareURL must show acceptedart without opt-inquery.
 
 Build isolated literalcwd/absoluteoutDir/exactconfig; freeze beforetrial. Future shared release pairs frontend/backend, snapshot actual451front+230back rollback (not451's earlier433archive). No roomkicking/historicalPIDrestart. Root performs source/build/rollback intake and scoped publicsmoke. All critical completion matrix rows closed before COMPLETE.
+
+## Current499 sequence and delegation
+
+[Blender pipeline](art/pipeline/BLENDER_SPRITE_PIPELINE.md) owns detailed authoring process. B0actualtools→B1SAMEoriginalappearance→B2camera/layout/rig→B3D1pilot→B4views+fullVillager→B5Infantry/horsewagon reuse→G4roster. Three exactSol6.1Low workers delivered capability, source-bound identity/prompt specifications and minimal exporter; root audited and requested five concrete exporter fixes. No executable/model/render/art approval from these outputs. Setup fetch failed; obtain actual supported Blender/MCP capability before modeling. G5/G6 independent remaining game work stays eligible, not repeated completed audits.
