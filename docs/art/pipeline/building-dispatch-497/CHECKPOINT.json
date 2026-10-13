@@ -1,0 +1,61 @@
+{
+  "schema": "rds-building-dispatch-checkpoint/v1",
+  "state": "FINITE_GUARD_IMPLEMENTED_KEY_SOURCE_OPEN",
+  "taskId": "building-dispatch497",
+  "model": "gpt-6.1-sol",
+  "reasoningEffort": "low",
+  "preflight": "preflight.json",
+  "inputPins": "inputs.json",
+  "outputPins": "output-pins.json",
+  "checks": {
+    "command": "node --test tests/building-sprite-dispatch497.test.js tests/sprite-prompts.test.js tests/sprite-order-run.test.js tests/sprite-order-run485.test.js tests/agent-task-contract.test.js",
+    "exitCode": 0,
+    "passed": 33,
+    "output": "tests.txt",
+    "priorOutput": "tests-before-family-guard.txt"
+  },
+  "implemented": [
+    "Strict separate building-state dispatch with known BUILDINGS type and construction/hit/death/attack; attack only actual positive damage",
+    "Null direction bound to prompt none; no fake octant",
+    "Four planned positions with finite call/correction budget, one pending key preparation",
+    "Root registered original wholemaster/descriptor/layout/assembly/job/source/selectedneighbor guards",
+    "Trusted prepareOrder requires task enforcement snapshot and runner repeats guard under claim lock",
+    "Legacy unit validation branches preserved; sixth preparer context backward compatible",
+    "Descriptor family must normalize building. prefix to exact known buildingType; consistently rehashed foreign family denied"
+  ],
+  "actualLayoutInspected": {
+    "asset": "residence",
+    "manifest": "public/assets/art-v1/fort-202-manifest.json",
+    "sourceCanvas": [
+      1254,
+      1254
+    ],
+    "runtime": [
+      512,
+      512
+    ],
+    "pivot": {
+      "x": 640,
+      "y": 970,
+      "space": "source"
+    },
+    "render": {
+      "width": 130,
+      "height": 130
+    },
+    "shadow": "baked",
+    "limitation": "Source/layout observation only; compiler extension and key quality remain open"
+  },
+  "calls": 0,
+  "productionWrites": [],
+  "limitations": [
+    "Fixtures do not authorize or generate a building key",
+    "Four planned positions do not imply completed state clip",
+    "No renderer/simulation/compiler changes",
+    "First root order must retain callLimit1 correctionCap0; policy is root registration, not permission inferred from helper",
+    "Source/technical/motion/runtime/owner/release remain distinct",
+    "Input hash changes for owned prompt/runner are intentional and root must re-register before later dependent work"
+  ],
+  "handles": "All owned tests terminal; no browser/server/image call opened",
+  "nextDependency": "Root independent review then actual original master/job/order registration; source gate precedes compiler extension"
+}

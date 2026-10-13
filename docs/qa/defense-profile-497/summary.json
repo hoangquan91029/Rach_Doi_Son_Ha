@@ -1,0 +1,249 @@
+{
+  "status": "PROFILE50_OBSERVED",
+  "browser": "151.0.7922.34",
+  "viewport": {
+    "width": 1920,
+    "height": 1080,
+    "dpr": 1
+  },
+  "host": {
+    "cpu": "12th Gen Intel(R) Core(TM) i5-12450HX",
+    "logicalCPUs": 12,
+    "totalRAM": 28578369536,
+    "freeRAM": 11978362880,
+    "platform": "linux"
+  },
+  "General": {
+    "actualAssignedTarget": {
+      "x": 7.499988083612353,
+      "y": 29.49999811619888
+    },
+    "arrival": {
+      "id": 6,
+      "owner": 0,
+      "type": "general",
+      "kind": "unit",
+      "x": 7.956560941747524,
+      "y": 29.043439058252474,
+      "hp": 360,
+      "maxHp": 360,
+      "food": 65,
+      "foodMax": 65,
+      "morale": 95,
+      "state": "walk",
+      "dir": 3,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "character": "tran_hung_dao",
+      "abilityCooldown": 0,
+      "resuppliedTick": 64,
+      "starving": 0,
+      "lastMovedTick": 64,
+      "order": null
+    },
+    "holdConfirmed": {
+      "type": "hold"
+    },
+    "finalHP": 111.00385359999954
+  },
+  "forts": [
+    {
+      "builder": 7,
+      "candidate": {
+        "x": 14,
+        "y": 23,
+        "world": {
+          "x": 14.5,
+          "y": 23.5
+        },
+        "distance": 7.280109889280519,
+        "preference": 0
+      },
+      "beforeTick": 78,
+      "accepted": {
+        "id": 35,
+        "x": 14.5,
+        "y": 23.5,
+        "tick": 86,
+        "order": {
+          "type": "build",
+          "target": 35
+        }
+      }
+    },
+    {
+      "builder": 8,
+      "candidate": {
+        "x": 9,
+        "y": 29,
+        "world": {
+          "x": 9.5,
+          "y": 29.5
+        },
+        "distance": 8.121576201698781,
+        "preference": 0.6456746758691824
+      },
+      "beforeTick": 103,
+      "accepted": {
+        "id": 36,
+        "x": 9.5,
+        "y": 29.5,
+        "tick": 109,
+        "order": {
+          "type": "build",
+          "target": 36
+        }
+      }
+    }
+  ],
+  "fortCompletion": [
+    {
+      "id": 35,
+      "owner": 0,
+      "type": "fort",
+      "kind": "building",
+      "x": 14.5,
+      "y": 23.5,
+      "hp": 1250,
+      "maxHp": 1250,
+      "food": 0,
+      "foodMax": 0,
+      "morale": 95,
+      "state": "idle",
+      "dir": 0,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "spentCost": {
+        "wood": 180,
+        "food": 0,
+        "iron": 100
+      },
+      "construction": null,
+      "underConstruction": false,
+      "order": null
+    },
+    {
+      "id": 36,
+      "owner": 0,
+      "type": "fort",
+      "kind": "building",
+      "x": 9.5,
+      "y": 29.5,
+      "hp": 1250,
+      "maxHp": 1250,
+      "food": 0,
+      "foodMax": 0,
+      "morale": 95,
+      "state": "idle",
+      "dir": 0,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "spentCost": {
+        "wood": 180,
+        "food": 0,
+        "iron": 100
+      },
+      "construction": null,
+      "underConstruction": false,
+      "order": null
+    }
+  ],
+  "cohort": {
+    "targetOwnedLiving": 50,
+    "actualOwnLivingRange": [
+      50,
+      50
+    ],
+    "actualVisibleLivingUnitRange": [
+      50,
+      51
+    ],
+    "allVisibleEntityRange": [
+      56,
+      57
+    ],
+    "startTick": 5656,
+    "endTick": 6836,
+    "durationMs": 60079,
+    "diagnosticSamples": 57,
+    "frameCostMs": {
+      "p50": 3.5,
+      "p95": 6.299999997019768,
+      "max": 7.899999998509884
+    },
+    "rAFIntervalsMs": {
+      "p50": 16.70000000001164,
+      "p95": 16.79999999998836,
+      "max": 33.5
+    },
+    "rAFCount": 3567,
+    "decodedBytesRange": [
+      18744320,
+      18744320
+    ],
+    "encodedBytesRange": [
+      4608899,
+      4608899
+    ],
+    "hostLoadRange": [
+      [
+        1.59,
+        2.02
+      ],
+      [
+        1.54,
+        1.6
+      ],
+      [
+        1.08,
+        1.1
+      ]
+    ],
+    "hostFreeRAMRange": [
+      10618359808,
+      11457474560
+    ]
+  },
+  "productionClicks": {
+    "villager": 34,
+    "infantry": 23
+  },
+  "gatherOrders": 16,
+  "prepWallSeconds": 283.255,
+  "errors": [],
+  "requestFailures": [],
+  "all423FrozenPinsPreserved": true,
+  "handles": {
+    "browserConnected": false,
+    "serverListening": false,
+    "rooms": 0
+  },
+  "limitations": [
+    "ONElegaldefensiveDeltaeasyhosttrial; no finalcombat/fullmatchacceptance",
+    "Actual50contains mostlyVillagers; final40Villager8InfantryKingGeneral; notcompleteaction/fullroster/dense200or240",
+    "Headlesssoftwarecompositinghost, notordinarylaptopGPUbenchmark",
+    "Readonly1Hzframecost+passiverAF measurescannotattributesimulationvsrenderhotspot",
+    "Generalremainalivebutfinal111/360HP; defensiveplanisnotinvulnerable",
+    "Rootartcalloverlap/hostloadnotcausallyattributed",
+    "Noart/motion/owner/releaseapproval; primitive/staticfallbackremains"
+  ],
+  "nextDependency": "Qualifiedrealactionbanks and bounded diverse/dense cohort/paging evidence on intended target device; do notrepeatthispassed50scene solelyfornewreceipts."
+}

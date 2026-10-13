@@ -316,7 +316,7 @@
         }
       ],
       "humanAuthorization": {
-        "answer": "Th\u1eed m\u1ed9t edit tr\u00ean F4/465",
+        "answer": "Thử một edit trên F4/465",
         "questionItemId": "[\"request_user_input_async\",\"call_EJ2igxqlIwcXRsUdWOW6Wqh6\",0]",
         "scope": "ONE builtin whole465 edit, no retry, no API, retain opposite physical leg ownership while correcting diagonal contact. Does not reopen477482483."
       },
@@ -564,6 +564,92 @@
       "callsRemaining": 0,
       "closed": true,
       "closure": "ONE guide-first builtin output remained splitfoot rather than closepassing and changedupperbody/hat scale. Independenttrialreview HELD;0retries/corrections/descendants. No source selected, no runtime install."
+    },
+    {
+      "id": "residence-construction-F0-497",
+      "jobKind": "building-state",
+      "kind": "building",
+      "buildingType": "residence",
+      "state": "construction",
+      "direction": null,
+      "status": "CLOSED",
+      "job": {
+        "id": "residence-construction-whole497",
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/residence-construction-497/job.json",
+        "sha256": "3fd0f1e56f91e17ff67d486668117008c8795cfee2e7d3623e891e5f0784d7de"
+      },
+      "callLimit": 1,
+      "callsUsed": 1,
+      "correctionCap": 0,
+      "correctionsUsed": 0,
+      "slots": [
+        {
+          "frame": 0,
+          "phase": 0,
+          "status": "held",
+          "kind": "initial",
+          "template": "building_key",
+          "claim": {
+            "token": "0f59e612-a818-4873-9173-0dc71742e4a0",
+            "requestSHA": "37e24cde638d4cda808180c9d2510c967bdbf56206ac09af651bc984bbfacb98",
+            "claimedAt": "2026-10-13T03:50:32.460Z"
+          },
+          "settlement": {
+            "token": "0f59e612-a818-4873-9173-0dc71742e4a0",
+            "settledAt": "2026-10-13T03:52:31.148Z",
+            "output": {
+              "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/residence-construction-497/raw-F0.png",
+              "sha256": "e98afbf79b648b7645b32c8e2d9ad1dbbe8a6346e26ad68a49b4b33c840daea0"
+            },
+            "approval": false
+          }
+        },
+        {
+          "frame": 1,
+          "phase": 0.25,
+          "status": "pending",
+          "kind": "initial",
+          "template": "building_key"
+        },
+        {
+          "frame": 2,
+          "phase": 0.5,
+          "status": "pending",
+          "kind": "initial",
+          "template": "building_key"
+        },
+        {
+          "frame": 3,
+          "phase": 0.75,
+          "status": "pending",
+          "kind": "initial",
+          "template": "building_key"
+        }
+      ],
+      "enforcement": {
+        "version": 1,
+        "taskId": "root-art-intake497",
+        "baseline": {
+          "callsUsed": 0,
+          "correctionsUsed": 0
+        },
+        "method": {
+          "family": "whole2D.residence.construction.first-key.v1",
+          "parentOrderIds": []
+        },
+        "prerequisites": []
+      },
+      "authorizationBasis": "User approved fullprojectplan G5authoredbuildingstates, activecontinuousgoal. Root independent nonunitbuilding task; ONEF0construction source from existingmaster, no unitfanout/no failedmethodreset.",
+      "selectionApproval": false,
+      "runtimeInstall": false,
+      "releaseApproval": false,
+      "callsRemaining": 0,
+      "closed": true,
+      "closure": {
+        "taskId": "root-art-intake497",
+        "receiptSHA": "5ad689a1a7fb707a21419807fd715e4bd03e2384a6b2b926df9f2720a8f708e5",
+        "scope": "Custody closure only; no approval, refund or handle authenticity guarantee"
+      }
     }
   ],
   "nextDependencies": [

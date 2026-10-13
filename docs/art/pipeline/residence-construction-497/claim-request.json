@@ -1,0 +1,61 @@
+{
+  "expectedLedgerSHA": "2b628000c5eae817308d2c6db23429378def8e29d1eca38108d4cbfb7e8acfe3",
+  "orderId": "residence-construction-F0-497",
+  "slotIndex": 0,
+  "kind": "building_key",
+  "values": {
+    "buildingType": "residence",
+    "state": "construction",
+    "direction": "none",
+    "phase": "0",
+    "master": "f617c3540680cafff467358bab1adb01bf735417563f2cba86ab8af523b07dcc",
+    "assemblyLock": "Original Vietnamese timber hall: single orange terracotta hip roof with curved eaves and three ridge ornaments, same front wooden column bays/red-gold hanging banners, stone raised terrace and central stair, front/visible right side; no added wing, tower, person or changed footprint.",
+    "invariants": "EDIT IMAGE1 only into an unfinished construction site of the same original hall. Preserve identical stone terrace, central stair, column grid, facade front and visible right side, orange roof material, light/camera, proportions and footprint. Leave about one third of original roofing unfinished at the upper/right roof section so SAME dark timber rafters show, retain remaining original curved eaves and ridge ornaments. Add just two sparse bamboo scaffold sections against this same structure, one tied work tarp resting near scaffolding and a small contained stack of its own roofing tiles. No new wing/tower/church/building/person/worker or equipment. Fixed1254x1254 source canvas with terrace ground pivot640,970; do not shift/fit/recenter the hall. Same realistic detailed illustrated style readable at render130/defaultzoom, whole building, natural bakedcontactshadow. Transparent background with true alpha; no floor/environment, no labels/text/guide marks. Return ONE finished whole PNG, not a sheet or multiplevariants. F0constructionkey only, not a progressmeter or rebuiltwholeunit."
+  },
+  "references": [
+    {
+      "role": "originalmaster",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/residence/variant-02/raw.png",
+      "sha256": "f617c3540680cafff467358bab1adb01bf735417563f2cba86ab8af523b07dcc"
+    }
+  ],
+  "taskId": "root-art-intake497",
+  "expectedInputs": [
+    {
+      "path": "shared/data.js",
+      "sha256": "ffc3f45adc58f212066d3763c591377ce15b9f6ac78e4685a95fc3ac747818e1"
+    },
+    {
+      "path": "public/assets/art-v1/fort-202-manifest.json",
+      "sha256": "77c75ef2bea8cff633b28fe8635e51b5a7efc151bb1871b5b5d9d17850d4271c"
+    },
+    {
+      "path": "docs/art/residence/variant-02/raw.png",
+      "sha256": "f617c3540680cafff467358bab1adb01bf735417563f2cba86ab8af523b07dcc"
+    },
+    {
+      "path": "docs/art/pipeline/building-production/residence/identity.json",
+      "sha256": "a9e202cf7f508e5a7fd59bb561c2477038d4b59df25c498c667a30b8efdaedb5"
+    },
+    {
+      "path": "docs/art/pipeline/residence-construction-497/job.json",
+      "sha256": "3fd0f1e56f91e17ff67d486668117008c8795cfee2e7d3623e891e5f0784d7de"
+    },
+    {
+      "path": "docs/art/pipeline/residence-construction-497/canonical-asset.json",
+      "sha256": "11b26f3221aa9c56d32de37b8d601570504f997523abf0feb2e297b3bc7d787a"
+    },
+    {
+      "path": "scripts/sprite-prompts.mjs",
+      "sha256": "6e0dcf805f489c0f3853b6d6f1640377f523ff8165604030320d4ee811163c1e"
+    },
+    {
+      "path": "scripts/building-sprite-contract.mjs",
+      "sha256": "03544fe68faa3d0bc68bb2931c402b8967677e3fe4e0d64d9488d0e9280b7715"
+    },
+    {
+      "path": "scripts/sprite-order-run.mjs",
+      "sha256": "8436a7eedbe2d4a0dac8634bfcc9e7ad27a365e8862771ef230b9cfc47eb5d90"
+    }
+  ]
+}

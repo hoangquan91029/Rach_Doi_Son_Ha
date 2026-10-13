@@ -1,0 +1,77 @@
+{
+  "id": "residence",
+  "family": "residence",
+  "kind": "building",
+  "source": {
+    "path": "../../../docs/art/residence/variant-02/raw.png",
+    "sha256": "f617c3540680cafff467358bab1adb01bf735417563f2cba86ab8af523b07dcc",
+    "rgbaSha256": "51fd1193e644b8c444fd9daa23a6febbc1b79a26c96a430273d7715645baaed2",
+    "width": 1254,
+    "height": 1254,
+    "bbox": [
+      17,
+      21,
+      1254,
+      1254
+    ],
+    "alphaExtrema": [
+      0,
+      255
+    ]
+  },
+  "runtime": {
+    "path": "runtime/residence-512.webp",
+    "sha256": "225bbbae5f3f72695bbddf91270743b96f08488e09f23db2b5339ace78d091ea",
+    "rgbaSha256": "09ec25135fabdde428f5406afe325029f8d7d4927c7df53adb145bebb9e63a8e",
+    "width": 512,
+    "height": 512,
+    "bbox": [
+      6,
+      35,
+      512,
+      483
+    ],
+    "alphaExtrema": [
+      0,
+      255
+    ],
+    "derivation": {
+      "method": "resize",
+      "sourceSha256": "f617c3540680cafff467358bab1adb01bf735417563f2cba86ab8af523b07dcc",
+      "filter": "lanczos"
+    }
+  },
+  "cell": {
+    "width": 512,
+    "height": 512
+  },
+  "pivot": {
+    "x": 640,
+    "y": 970,
+    "space": "source"
+  },
+  "render": {
+    "width": 130,
+    "height": 130
+  },
+  "state": "idle",
+  "direction": null,
+  "loop": true,
+  "frames": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 1000
+    }
+  ],
+  "alphaPolicy": "transparent",
+  "contactShadow": {
+    "mode": "baked"
+  },
+  "review": {
+    "status": "CANDIDATE"
+  },
+  "candidate": true
+}

@@ -1,0 +1,51 @@
+{
+  "schema": "rds-independent-building-source-review/v1",
+  "reviewer": "/root/plan_controls494",
+  "producer": "/root",
+  "state": "VERIFIED_SOURCE_OBSERVATION_ONLY",
+  "recommendation": "SOURCE_KEY_CANDIDATE_SELECTION",
+  "inputs": [
+    {
+      "path": "docs/art/residence/variant-02/raw.png",
+      "sha256": "f617c3540680cafff467358bab1adb01bf735417563f2cba86ab8af523b07dcc"
+    },
+    {
+      "path": "docs/art/pipeline/residence-construction-497/raw-F0.png",
+      "sha256": "e98afbf79b648b7645b32c8e2d9ad1dbbe8a6346e26ad68a49b4b33c840daea0"
+    },
+    {
+      "path": "docs/art/pipeline/residence-construction-497/fixed-canvas-comparison-219.png",
+      "sha256": "94433dc5af616c26b4a5a2d6114b0b53feeff71343334282363d1768ef0c174e"
+    },
+    {
+      "path": "docs/art/pipeline/residence-construction-497/canonical-asset.json",
+      "sha256": "11b26f3221aa9c56d32de37b8d601570504f997523abf0feb2e297b3bc7d787a"
+    },
+    {
+      "path": "docs/art/pipeline/residence-construction-497/raw-intake.json",
+      "sha256": "c5009f9864a5c8d50dd410a6e559d5430b35d2b9eb688bb863b836f4acdb97a0"
+    }
+  ],
+  "method": "Actually viewed returned raw RGBA illustration and original/candidate fixed-canvas219px comparison with image viewer; one static gameplay-size look, not continuous review",
+  "observation": {
+    "identity": "Same orange tiled wholehall, raised stone terrace, front staircase, timber column spacing, red hanging panels and upward roof corners remain recognizable in comparison. Front columns and staircase occupy comparable positions; fixed camera reads consistently.",
+    "construction": "Exposed rafters and missing right roof tiles, right-side scaffold, stacked orange tiles and draped cloth are visibly legible at219px. This reads as construction/roof work rather than unrelated building.",
+    "scale": "Wholehall silhouette and terrace footprint appear comparable at fixed canvas size; scaffold adds expected right-side silhouette. No visible major structure substitution or gross per-frame fitting is observed from this single key.",
+    "limitation": "Illustration depicts an already standing largely roofed hall undergoing work; suitability as constructionF0 gameplay phase depends on root intended progress semantic. Single still cannot establish construction progression or temporal stability."
+  },
+  "sourceGate": {
+    "candidateRecommendation": true,
+    "selectedByReviewer": false,
+    "visibleHold": false,
+    "reason": "No blocking identity/camera/scale or construction-readability error observed at scoped219px look"
+  },
+  "technical": "DOCUMENTED_ONLY raw-intake1254RGBA; reviewer did not independently decode dimensions",
+  "motion": "UNKNOWN no loop",
+  "runtime": "UNKNOWN not installed",
+  "owner": "UNKNOWN no human approval inferred",
+  "clipCompletion": false,
+  "fanoutApproval": false,
+  "callsByReviewer": 0,
+  "handles": "Image views terminal; no provider/browser/server/order opened",
+  "nextDependency": "Root source selection judgment only; later state keys need progress semantics, compiler/runtime and independent actual-scene qualification"
+}

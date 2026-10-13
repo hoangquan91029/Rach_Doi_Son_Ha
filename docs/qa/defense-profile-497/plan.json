@@ -1,0 +1,58 @@
+{
+  "schema": "rds-defense-profile-plan/v1",
+  "taskId": "defense-profile497",
+  "worker": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low"
+  },
+  "attempts": 1,
+  "viewport": {
+    "width": 1920,
+    "height": 1080,
+    "DPR": 1,
+    "zoom": 1.68
+  },
+  "preparationDeadlineMs": 480000,
+  "sampleDurationMs": 60000,
+  "deadlineStarts": "first ordinary match ready snapshot; setup/actions share named480s deadline",
+  "sourceFacts": {
+    "spawn0": [
+      9.5,
+      23.5
+    ],
+    "GeneralInitial": [
+      11,
+      25.5
+    ],
+    "fortCost": {
+      "wood": 180,
+      "iron": 100
+    },
+    "fortBuildSeconds": 25,
+    "fortRange": 7,
+    "initialResources": {
+      "wood": 550,
+      "iron": 260,
+      "foodApproximately": 810
+    },
+    "production": "existingResidenceVillager7s + BarracksInfantry9s; actualmodifiers honored"
+  },
+  "sequence": [
+    "read exactstartup diagnostics, confirm Deltaeasy, ownedlivingGeneral/builder/stores/production",
+    "General safe candidate tilecenter west/base side nearestResidence, boundedvisibleclear plain/hill corridor; exactselection thenMove viaUI; retain actualassignedordergoal, wait<=.700001arrival thenHold",
+    "FirstFort within6units Residence easternapproach, second nearby coveringGeneral only if funds/sameguard. One distinct builder perFort; visibleterrain/clearfootprint/cost check fromreadonly state beforeONEUIplacement; completion wait holds on deadbuilder/rejection",
+    "initialsix:2builders,2food,1wood,1iron; aftercompletedFort builders becomefood. NewlytrainedVillagers economicassignments cyclefoodfoodwoodiron up to16workers; additionalVillagers remainnearbase",
+    "parallelResidenceVillager + BarracksInfantry production, queues<=2 and exactfunds; preserve180wood100iron until secondFort decision; stopbuying onceowned+queued>=50",
+    "duringprep monitorGeneralhp/ownership/matchwinner, builderhealth, production/resources and visibleenemy; noAIstop orspeedchange",
+    "onactual50livingown units ONE60s sample, population/visibleentities/owncounts separately; if50notachieved deadline/winner/failureHOLD preserveallcohortcounts"
+  ],
+  "candidateGuards": {
+    "general": "actual startup entities, visibleplain/hill, within7Residence westward preferred, clearWalkSegment; no invented safe-coordinate authority",
+    "fort": "integercommandx/y normalized+.5, bounds, visible tile, notford/water/impassable, allaliveentities footprint clearance copied from sourceformula, nearbybuilder; sourceguard notpermission; actualserverresult governs",
+    "selection": "exactone aliveown actor/building afterordinaryclick; no retry on failedselection/deadbuilder",
+    "resource": "actualdiscoverednonempty resource and observedgatherorder exacttarget",
+    "tools": "PlaywrightordinaryUI; rtsDiagnosticsreadonly; isolatedcreateGameServer; passive rAF observer",
+    "exclusions": "no state/command injection, speed/balancechanges, realproductionrelease, generation/modelinstall"
+  },
+  "failurePolicy": "ONEattempt; anyselection/generalarrival/builder/placementfailure terminatesHOLD. No substituteunit orsamemethodretry. MissingvalidsecondFort can recordoneFort scope, notpretendtwo.50notachieved retainsnextdependency."
+}

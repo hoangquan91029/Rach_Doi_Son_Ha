@@ -1,7 +1,10 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
 import {actionSpec} from '../shared/unit-action-spec.js';
+import {validateBuildingOrder,prepareBuildingOrder} from './building-sprite-contract.mjs';
+import {validateGuardedOrder} from './agent-task-contract.mjs';
 const common=['identity','master','direction','camera','screenFacing','weaponOwnership','referenceRoles','invariants'];
 export const TEMPLATE_FIELDS=Object.freeze({view:[...common],key:[...common,'action','phase','support','movingParts','bodyMotion','equipmentMotion','nextKey'],guide_key:[...common,'action','phase','support','movingParts','bodyMotion','equipmentMotion','nextKey'],inbetween:[...common,'action','phase','neighbors','support','movingParts','bodyMotion','equipmentMotion','nextKey'],correction:[...common,'action','phase','defect','neighbors','movingParts','bodyMotion','equipmentMotion','nextKey'],worker_order:[...common,'action','phase','budget','ownership','movingParts','bodyMotion','equipmentMotion','nextKey']});
 export function renderPrompt(kind,values){
@@ -121,6 +124,7 @@ export function validateJobBinding(binding,registry,values){
  return binding;
 }
 export function validateFiniteOrder(order,values,slotIndex){
+ if(order?.jobKind==='building-state')return validateBuildingOrder(order,values,slotIndex);
  if(!order||order.status!=='OPEN'||order.identity!==values.identity||order.direction!==Number(values.direction))throw Error('Finite order identity/action/direction/status mismatch');
  const jobKind=order.jobKind??'action';
  if(!['view','action'].includes(jobKind))throw Error('Unknown order jobKind');
@@ -139,6 +143,7 @@ export function validateFiniteOrder(order,values,slotIndex){
 }
 /** Isolated fixtures only; CLI loads the trusted ledger and identity itself. */
 export function prepareOrderWithRegistry(order,slotIndex,kind,values,references,registry){
+ if(order?.jobKind==='building-state'){if(kind!=='building_key')throw Error('Building template slot mismatch');return prepareBuildingOrder(order,slotIndex,values,references,registry);}
  if(!['view','action'].includes(order?.jobKind))throw Error('Explicit order jobKind required');
  validateFiniteOrder(order,values,slotIndex);
  if(!registry.productionOrders?.includes(order.id))throw Error('Order not registered to identity');
@@ -146,9 +151,17 @@ export function prepareOrderWithRegistry(order,slotIndex,kind,values,references,
  validatePromptReferences(kind,values,references,registry,order);
  return {prompt:renderPrompt(kind,values),referenced_image_paths:references.map(pin=>path.resolve(pin.path)),orderId:order.id,slotIndex,scope:'Validated finite pending slot; no image call performed or budget consumed'};
 }
-export function prepareOrder(orderId,slotIndex,kind,values,references){
+export function prepareOrder(orderId,slotIndex,kind,values,references,taskContext={}){
  const ledger=JSON.parse(fs.readFileSync(new URL('../docs/art/pipeline/unit-production/order-ledger.json',import.meta.url)));
  const order=ledger.orders.find(o=>o.id===orderId);validateFiniteOrder(order,values,slotIndex);
+ if(order.jobKind==='building-state'){
+  const root=fileURLToPath(new URL('..',import.meta.url));
+  const registration=JSON.parse(fs.readFileSync(new URL('../docs/audits/implementation-495/tasks.json',import.meta.url)));
+  if(registration.schema!=='rds-agent-tasks/v1')throw Error('Invalid trusted task registration');
+  validateGuardedOrder(root,ledger,order,{...taskContext,slotIndex},registration.tasks);
+  const registry=JSON.parse(fs.readFileSync(new URL(`../docs/art/pipeline/building-production/${order.buildingType}/identity.json`,import.meta.url)));
+  return prepareOrderWithRegistry(order,slotIndex,kind,values,references,registry);
+ }
  const registry=JSON.parse(fs.readFileSync(new URL(`../docs/art/pipeline/unit-production/${values.identity}/identity.json`,import.meta.url)));
  return prepareOrderWithRegistry(order,slotIndex,kind,values,references,registry);
 }

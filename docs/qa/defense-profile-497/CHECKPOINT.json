@@ -1,0 +1,63 @@
+{
+  "schema": "rds-defense-profile-checkpoint/v1",
+  "taskId": "defense-profile497",
+  "worker": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low"
+  },
+  "status": "PROFILE50_OBSERVED",
+  "stage": "/tmp/rds-defense497-stage",
+  "build": "/tmp/rds-defense497-build",
+  "buildCommand": "./node_modules/.bin/vite build --config /tmp/rds-defense497-stage/vite.config.js --outDir /tmp/rds-defense497-build",
+  "literalCwd": "/tmp/rds-defense497-stage",
+  "viteVersion": "7.3.7",
+  "modules": 35,
+  "sceneCommand": "node scripts/qa/defense-profile497.mjs docs/qa/defense-profile-497/config.json",
+  "sceneExitCode": 0,
+  "attempts": 1,
+  "pins": [
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/qa/defense-profile497.mjs",
+      "sha256": "8311e2894a1e153650095695727eaecf4121fde9463aed1486c41cb689c696dc",
+      "bytes": 11720
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/defense-profile-497/plan.json",
+      "sha256": "ab3715c4fa60255e9ccb80c34f905d128f7c92110d82e4a112c4c73b015878c1",
+      "bytes": 3209
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/defense-profile-497/preflight.json",
+      "sha256": "19930c6cba5ec9468a31b8f9c7fc18fa86495bb7d6fe5315569dec16b43bb67a",
+      "bytes": 3681
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/defense-profile-497/receipt.json",
+      "sha256": "66f63d63b12d8833e43706ff0fed1236ce6a14302624905b22ee635527316529",
+      "bytes": 1673680
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/defense-profile-497/summary.json",
+      "sha256": "1d7a2cc1a89df77a860136907744f8e79e458df92ee249aad5a9f892b1dcbb6b",
+      "bytes": 5189
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/defense-profile-497/config.json",
+      "sha256": "c091e1200a8f8e6da0f36ddfbbc78528bb832d4a70a37fd8782ebb5e2f0a431c",
+      "bytes": 68883
+    }
+  ],
+  "frozenPinCount": 423,
+  "allExact": true,
+  "canonicalGuard": false,
+  "handles": {
+    "browserConnected": false,
+    "serverListening": false,
+    "rooms": 0
+  },
+  "imageCalls": 0,
+  "release": false,
+  "motion": "UNKNOWN_REJECTED490_UNCHANGED",
+  "owner": "UNKNOWN",
+  "nextDependency": "Qualifiedrealactionbanks and bounded diverse/dense cohort/paging evidence on intended target device; do notrepeatthispassed50scene solelyfornewreceipts."
+}

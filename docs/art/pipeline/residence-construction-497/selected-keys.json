@@ -1,0 +1,74 @@
+{
+  "schema": "rds-building-job/v1",
+  "id": "residence-construction-whole497",
+  "kind": "building",
+  "buildingType": "residence",
+  "state": "construction",
+  "direction": null,
+  "frameCount": 4,
+  "originalMaster": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/residence/variant-02/raw.png",
+    "sha256": "f617c3540680cafff467358bab1adb01bf735417563f2cba86ab8af523b07dcc"
+  },
+  "descriptorSHA": "11b26f3221aa9c56d32de37b8d601570504f997523abf0feb2e297b3bc7d787a",
+  "layout": {
+    "family": "residence",
+    "pivot": {
+      "x": 640,
+      "y": 970,
+      "space": "source"
+    },
+    "render": {
+      "width": 130,
+      "height": 130
+    },
+    "contactShadow": {
+      "mode": "baked"
+    }
+  },
+  "frames": [
+    {
+      "frame": 0,
+      "phase": 0.0,
+      "status": "selected",
+      "input": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/residence-construction-497/raw-F0.png",
+        "sha256": "e98afbf79b648b7645b32c8e2d9ad1dbbe8a6346e26ad68a49b4b33c840daea0",
+        "rgbaSha256": "a8a98142205a4ebd817867a933e2b13beda81ce106278a23613559bbb3de8c8e"
+      },
+      "sourceSelectionScope": "Root chooses independently reviewed original-building construction activity key; not phase/motion/runtime/owner/production qualification."
+    },
+    {
+      "frame": 1,
+      "phase": 0.25,
+      "status": "pending"
+    },
+    {
+      "frame": 2,
+      "phase": 0.5,
+      "status": "pending"
+    },
+    {
+      "frame": 3,
+      "phase": 0.75,
+      "status": "pending"
+    }
+  ],
+  "timing": {
+    "loop": true,
+    "durationMs": [
+      300,
+      300,
+      300,
+      300
+    ],
+    "scope": "Proposed4-frame maintenance/building activity loop; not progressmeter or changed24secondconstruction mechanic"
+  },
+  "phasePlan": [
+    "Incomplete original hall with identical stone terrace/stair/column grid, partial roof revealing original rafters, two sparse bamboo scaffold sections, tied work tarp resting",
+    "Same structural key; slight work tarp lift and restrained constructiondust",
+    "Same key; opposite tarp settle/dust decay",
+    "Same key; return to initial tarp position; no animatedworkers/newcharacter"
+  ],
+  "limits": "One F0 key call only; nextframes notauthorized by this job. Not motion/source/production approval."
+}

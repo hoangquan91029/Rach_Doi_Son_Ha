@@ -1,0 +1,76 @@
+{
+  "schema": "rds-agent-receipt/v1",
+  "taskId": "root-art-intake497",
+  "checks": [
+    {
+      "command": "node --test tests/building-sprite-dispatch497.test.js tests/sprite-prompts.test.js tests/sprite-order-run.test.js tests/agent-task-contract.test.js",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "method": "Workeractualfocusedchecks; rootsource-reviewedAPI andactualtrustedprepare+claim+settle",
+      "state": "DOCUMENTED_ONLY",
+      "executed": false,
+      "exitCode": null,
+      "observation": "33/33 scopedworkerchecks; exactcommand/outputinworkerCHECKPOINT, rootnotrerun unchangedsuite",
+      "evidence": [
+        {
+          "path": "docs/art/pipeline/building-dispatch-497/CHECKPOINT.json",
+          "sha256": "bff19df776db95794df9e32f255a408b41abd61a744c01b7474ba2fe5a8bce97"
+        }
+      ]
+    }
+  ],
+  "technical": {
+    "state": "VERIFIED",
+    "observation": "Actualbuiltinreturned1254RGBA/alpha0..255, storedraw;trustedsource/order/taskvalidated;claimsettledheldcustody,0retry.",
+    "limitation": "Not clip/geometry/motion/visualproduction qualification",
+    "evidence": [
+      {
+        "path": "docs/art/pipeline/residence-construction-497/raw-intake.json",
+        "sha256": "c5009f9864a5c8d50dd410a6e559d5430b35d2b9eb688bb863b836f4acdb97a0"
+      },
+      {
+        "path": "docs/art/pipeline/residence-construction-497/settled.json",
+        "sha256": "2ce1e9313d22f2b3c08fa6fe33f553c5b41ac0575ca28cc56a87dd2873d72f10"
+      }
+    ]
+  },
+  "motion": {
+    "state": "UNKNOWN",
+    "limitation": "No completeconstructionloop orcontinuousreview"
+  },
+  "runtime": {
+    "state": "UNKNOWN",
+    "limitation": "No compiler/runtimeinstall; buildingcompilerstillunitonly"
+  },
+  "owner": {
+    "state": "UNKNOWN",
+    "limitation": "Humanplan authorization is not motion/artacceptance"
+  },
+  "release": {
+    "state": "UNKNOWN",
+    "limitation": "No deploy; activeproductionunchanged"
+  },
+  "handles": [
+    {
+      "id": "0f59e612-a818-4873-9173-0dc71742e4a0",
+      "status": "CLOSED",
+      "observation": "Actualbuiltinexec returned onePNG;rawcopied+settlementconfirmed;nocallopen"
+    },
+    {
+      "id": "production230",
+      "status": "INTENTIONALLY_RUNNING",
+      "observation": "Preserved liveproduction, no operation"
+    }
+  ],
+  "sourceSelection": "SELECTED_SOURCE_KEY_CANDIDATE",
+  "callCounts": {
+    "imageCalls": 1,
+    "corrections": 0,
+    "retries": 0,
+    "remaining": 0
+  },
+  "originalsPreserved": {
+    "masterSHA": "f617c3540680cafff467358bab1adb01bf735417563f2cba86ab8af523b07dcc",
+    "historicalOrders": "All previous orders equal ledger-before snapshot; onlynew497orderappended/claimed/settled"
+  },
+  "next": "VersionselectedkeysforfuturemissingF2/F1/F3underfinitecontinuedpackagebudget; extendexistingcompilerbuildingkind/null direction beforeexport, notfakeunitmetadata"
+}

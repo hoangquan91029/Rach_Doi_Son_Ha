@@ -30,7 +30,7 @@ export function createOrderRunner({ledgerPath=trustedLedger,prepare=prepareOrder
    const order=ledger.orders.find(o=>o.id===orderId),slot=validateFiniteOrder(order,values,slotIndex);
    validateGuardedOrder(root,ledger,order,{taskId,expectedInputs,slotIndex},order.enforcement?contracts():undefined);
    if(slot.template!==kind)throw Error('Order template slot mismatch');
-   const prepared=prepare(orderId,slotIndex,kind,values,references);
+   const prepared=prepare(orderId,slotIndex,kind,values,references,{taskId,expectedInputs});
    const token=randomUUID(),requestSHA=hash(JSON.stringify({kind,values,references,prompt:prepared.prompt}));
    slot.status='used';slot.claim={token,requestSHA,claimedAt:new Date().toISOString()};order.callsUsed++;if(slot.kind==='correction')order.correctionsUsed++;
    order.callsRemaining=order.callLimit-order.callsUsed;

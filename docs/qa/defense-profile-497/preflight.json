@@ -1,0 +1,112 @@
+{
+  "schema": "rds-agent-preflight/v1",
+  "task": "runtime",
+  "head": "1be37dd1c41a07eb10bd33f0ddbdca8e0db91a22",
+  "status": " M docs/audits/implementation-495/tasks.json\n?? docs/art/pipeline/building-dispatch-497/\n?? docs/qa/defense-profile-497/",
+  "readFiles": [
+    {
+      "path": "docs/agent-read-contract.json",
+      "sha256": "3063b312cbde80b414c7718a17f308f53cab8e7714b944e49657cf62b160c093",
+      "bytes": 1096
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "f153ddf7216bfb982efc024e0a1ad5cd0ca769e149e69eb71586988dfdf5173c",
+      "bytes": 8569
+    },
+    {
+      "path": "docs/PROJECT_STATE.md",
+      "sha256": "5583b86277b9bcf1f465cd5385111828cbf7a02929ad4412b442657dc97f9346",
+      "bytes": 13778
+    },
+    {
+      "path": "docs/NEXT_STEPS.md",
+      "sha256": "82f9153dff73b6884ace2073e163af06dbee6b95923addf4cc6cb4de8f90fddd",
+      "bytes": 2776
+    },
+    {
+      "path": "docs/ARCHITECTURE_DECISIONS.md",
+      "sha256": "9698dfab772f18700081e2a252275d0fb14e6b8d1dd2d60eb23c2f72d0c1e319",
+      "bytes": 2698
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "f55b464de4b4e2a5833f6b8c25242a921d24deec4acd735133acbc08c9bdbaaa",
+      "bytes": 4897
+    },
+    {
+      "path": "docs/art/pipeline/ANIMATION_CONTRACT.md",
+      "sha256": "7edd5b99ae59b9e848458ee4ac06c72dd575a3bee4e27288823dad1e31b87014",
+      "bytes": 6993
+    },
+    {
+      "path": "docs/art/pipeline/ASSET_QA.md",
+      "sha256": "7ad426a1a2b9d8fd10ae56aa7897fc19be67d3b00a40fac3987e1ef07cd66418",
+      "bytes": 3343
+    },
+    {
+      "path": "shared/unit-action-spec.js",
+      "sha256": "04d987298651c73187920391754f729fd203c1313536eb54c29c629048db05bf",
+      "bytes": 1686
+    },
+    {
+      "path": "shared/visible-action.js",
+      "sha256": "35d4352d3c6a85bce7b99638934e9c0512c900df801fc3b59296ba1b606b27b0",
+      "bytes": 2228
+    },
+    {
+      "path": "client/world-presentation.js",
+      "sha256": "d87fadfb176f765d35b26c2d247af536288d9ada9df6ecc8ec254d889231db98",
+      "bytes": 240
+    }
+  ],
+  "sources": [
+    {
+      "path": "shared/sim.js",
+      "sha256": "c9a01adba8630e89e1c3f195c1b98c08c32e74468d389a55891c664e3906e562",
+      "bytes": 51614
+    }
+  ],
+  "assignment": {
+    "taskId": "defense-profile497",
+    "registration": {
+      "path": "docs/audits/implementation-495/tasks.json",
+      "sha256": "2ae0b95fc674673594d830372420716734cbc767270a5a007aae3e72f19f403f",
+      "bytes": 13133
+    },
+    "inputs": [
+      {
+        "path": "client/main.js",
+        "sha256": "ed8e60ebc54da9d4a6f258be153a63bc72034ff8cca011480a2a1b97de4a8957"
+      },
+      {
+        "path": "shared/sim.js",
+        "sha256": "c9a01adba8630e89e1c3f195c1b98c08c32e74468d389a55891c664e3906e562"
+      },
+      {
+        "path": "shared/data.js",
+        "sha256": "ffc3f45adc58f212066d3763c591377ce15b9f6ac78e4685a95fc3ac747818e1"
+      },
+      {
+        "path": "client/art-assets.js",
+        "sha256": "af4db82838cf5b936549307272f96aef4ef16d1ac6f672cb8f4dd7c73437ab06"
+      }
+    ],
+    "outputs": [
+      "scripts/qa/defense-profile497.mjs",
+      "docs/qa/defense-profile-497"
+    ],
+    "slots": []
+  },
+  "ledger": {
+    "path": "docs/art/pipeline/unit-production/order-ledger.json",
+    "sha256": "48cdd19d3148b0d0838500dce65fa94bc47bf5970d636adbce1dcad873bb3f50",
+    "locked": false,
+    "unresolvedClaims": []
+  },
+  "limits": [
+    "Existence and byte hashes do not establish understanding, permission, approval or tool availability.",
+    "Explicit invocation only; this helper is not a mandatory global hook.",
+    "Externally verify tools and actual live handles/preservation guards; no guards are declared closed."
+  ]
+}
