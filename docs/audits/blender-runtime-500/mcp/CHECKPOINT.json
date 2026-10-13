@@ -1,0 +1,157 @@
+{
+  "schema": "rds-task-receipt/v1",
+  "taskId": "blender-mcp500",
+  "purpose": "Prepare reviewed pinned MCP bridge/addon setup against actualavailable Blender; disableoptionalremote integrations/telemetry; no configurationyet",
+  "evidence": "VERIFIED",
+  "inputPins": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "cc426aeb2344eae7a03c912efd7d10813ec999154173e716c58f6dbfe047dae5",
+      "actual": "cc426aeb2344eae7a03c912efd7d10813ec999154173e716c58f6dbfe047dae5"
+    },
+    {
+      "path": "docs/audits/blender-transition-499/capability/upstream-pins.json",
+      "sha256": "af925e98dec8a07b7505f812cdabd872258d88babee2695e288531ec439fe49b",
+      "actual": "af925e98dec8a07b7505f812cdabd872258d88babee2695e288531ec439fe49b"
+    },
+    {
+      "path": "docs/audits/blender-transition-499/capability/reviewed-pyproject.toml",
+      "sha256": "46012441563e20d2b1b7a64e0c830bb3710ce5d44cf813840f8d31729b5f26c5",
+      "actual": "46012441563e20d2b1b7a64e0c830bb3710ce5d44cf813840f8d31729b5f26c5"
+    }
+  ],
+  "exclusiveOutputs": [
+    "docs/audits/blender-runtime-500/mcp",
+    "scripts/blender/mcp500"
+  ],
+  "upstreamCommit": "7a0373ec9199183cb460068c4f96aed9c579fb4f",
+  "sourceFiles": 30,
+  "licenseSHA256": "049501fd54d27852507853a5b88094ca1c6ff97404418a5032f3310eecc9cde6",
+  "checks": [
+    {
+      "path": "scripts/blender/mcp500/offline_addon_candidate.py",
+      "status": "VERIFIED",
+      "method": "stdlibASTparse",
+      "limit": "syntaxonly; noimports/execution"
+    },
+    {
+      "path": "scripts/blender/mcp500/offline_server_candidate.py",
+      "status": "VERIFIED",
+      "method": "stdlibASTparse",
+      "limit": "syntaxonly; noimports/execution"
+    }
+  ],
+  "preflight": "docs/audits/blender-runtime-500/mcp/preflight.log",
+  "tools": [
+    "python3stdlibHTTPfetch/AST/hash/TOML",
+    "shellrg/cat",
+    "read-onlyconfigTOMLinventory"
+  ],
+  "failures": [
+    {
+      "status": "FAILED",
+      "observation": "pinnedGit omittedtelemetryconfig.py importedbeforeenvdisable"
+    },
+    {
+      "status": "FAILED",
+      "observation": "uv.lock root2.1.8 mismatchespyproject2.1.9"
+    },
+    {
+      "status": "FAILED",
+      "observation": "exactauthorizedPyPIblender-mcp2.1.9HTTP404",
+      "receipt": "docs/audits/blender-runtime-500/mcp/pypi-inspection.json"
+    },
+    {
+      "status": "UNKNOWN",
+      "observation": "Blenderrequests/MCPdependencies and GUI/virtualdisplay capability unresolved"
+    }
+  ],
+  "operations": {
+    "remoteSourceFetch": 30,
+    "remoteCodeExecution": 0,
+    "install": 0,
+    "configurationChanges": 0,
+    "BlenderCalls": 0,
+    "socketListeners": 0,
+    "imageCalls": 0,
+    "wheelInspection": 1
+  },
+  "handles": {
+    "ownedRemaining": [],
+    "closed": "fetchshellsession75481 completedexit0; no socket/browser/serveropened"
+  },
+  "acceptance": {
+    "sourceReview": "VERIFIED",
+    "setupCandidates": "PROPOSED",
+    "dependencyRuntime": "UNKNOWN",
+    "Blender": "UNKNOWN",
+    "MCPHandshake": "UNKNOWN",
+    "config": "UNCONFIGURED",
+    "art": "UNKNOWN",
+    "release": "UNKNOWN"
+  },
+  "nextDependency": "Rootindependentreviewfork/wheel and resolveauthenticatedBlenderGUI + exactrevieweddependencies beforefinitehandshake; noinstall/config/socket yet",
+  "outputPins": {
+    "docs/audits/blender-runtime-500/mcp/mcp_for_blender-2.1.9-py3-none-any.whl": "a5cbc6cf316fa7433566eb505a0c26ca22e28c10083bd1b09a23d9e357821ccc",
+    "docs/audits/blender-runtime-500/mcp/wheel-files.json": "f9c1a6ae5c52e0bbc5b4f4fe1b6c5e734e1aa2c3cf0cec0663afe928c0f65c83",
+    "docs/audits/blender-runtime-500/mcp/wheel-inspection.json": "c78f2855b7c77b201603bc4847e24460a18af7d881564b193e7fb7f5a66b7ba2",
+    "docs/audits/blender-runtime-500/mcp/wheel-METADATA.txt": "072386ff8a50d0ea7cbce50eba10d99a05ed3c15f588aebe38cb1f270b937443",
+    "docs/audits/blender-runtime-500/mcp/import-review.json": "9ec8895ed598a79a8fc20c60c7279a21e9175c3a49e88cf329d78e5cdda33c71",
+    "docs/audits/blender-runtime-500/mcp/pypi-mcp-for-blender-2.1.9.json": "d6da482a701cb868060af6c9acd9935b7976194681c00a1597520a42d076d089",
+    "docs/audits/blender-runtime-500/mcp/config-inventory.json": "63a6fcd52f479f2d9dbc1e5df9317282ca75e61206a1e7a1e07c889ac134b464",
+    "docs/audits/blender-runtime-500/mcp/fetch-paths.json": "5563a5b5283157f4ea51f4f6ef45fbb65b002f37a1927ac3daf6cfc284ba0187",
+    "docs/audits/blender-runtime-500/mcp/upstream-pins.json": "b56f120d4de4972f0183ea5c268e8ba4dc10363130f7f8b9a789f40fd543f9f7",
+    "docs/audits/blender-runtime-500/mcp/REVIEW.md": "e22a0f4d32a64bee1f5675ad1a3bb06170b50988c63703a7bc84bef2a208beba",
+    "docs/audits/blender-runtime-500/mcp/source-scan.log": "c8dd1ac7480e192d8af1f47b531283e50e9806eedfd5b269153cb0d8f3d0a81b",
+    "docs/audits/blender-runtime-500/mcp/dependency-review.json": "c7f9bf406d44a4c076de918f0fa657f9576807214c01684ef1e24c31575f2be0",
+    "docs/audits/blender-runtime-500/mcp/assignment.json": "116b3073937d8029e527a6fe5db6b214b1a992e893cf24afb4a45eb4dcc3e02f",
+    "docs/audits/blender-runtime-500/mcp/wheel-config.py": "a70c8e3d707e78fb8fc7cba75425c63cae39f0b03c661c88bdb83d0e93e65907",
+    "docs/audits/blender-runtime-500/mcp/config-candidate.json": "3f59d0489c86a72f083283a8584e04ad4b5c88286a5cf1cda7a9e77cd40d7105",
+    "docs/audits/blender-runtime-500/mcp/preflight.log": "f1703c1e71ffbbb711c43b88dc9f591b99787b092f7f0dce8e7d507e83ca01d4",
+    "docs/audits/blender-runtime-500/mcp/pypi-inspection.json": "f90e790236fa908b5767c8ca4efd087342f95b91c3a698e4b697955bc09c1cee",
+    "docs/audits/blender-runtime-500/mcp/tree.json": "1f22eea12ddfcbde0da5e2e9f693a221484ca66bdce124e2407cdf7968a557d2",
+    "docs/audits/blender-runtime-500/mcp/upstream/addon.py": "eb0facf69781a30e69792532087d8d41c6a14fcd323353250abe7988ee297fa5",
+    "docs/audits/blender-runtime-500/mcp/upstream/uv.lock": "d177b4a4fa6e13de856f97294d1296ef11889019df9491c193dc4bed0fa3e5c2",
+    "docs/audits/blender-runtime-500/mcp/upstream/LICENSE": "049501fd54d27852507853a5b88094ca1c6ff97404418a5032f3310eecc9cde6",
+    "docs/audits/blender-runtime-500/mcp/upstream/pyproject.toml": "46012441563e20d2b1b7a64e0c830bb3710ce5d44cf813840f8d31729b5f26c5",
+    "docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/consent_prompt.py": "413ee3e627b4be74c7f9e96226a2a1a58e5b0ce84b9cb1d10ff1021236977659",
+    "docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/update_cli.py": "3446e291fd48260b52befc9e6c4cced3e23b68e07384f14129c213103509f07d",
+    "docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/premium_hint.py": "72c39f0d6f11e69baa78f784230c7b6daa0f69973865b231bb6f8a45a9a2b63a",
+    "docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/guides.py": "17b23a8cba8a335392cb0c23211fddb04a6f98bfe4ef044fc4b31621adb5aa1c",
+    "docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/openai_apps.py": "09501df1bb8396ee8ebea551aaa95ac399ffcb7ff785a09be63f5aa7da4a531f",
+    "docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/server.py": "a274fd515d937cf24fca2ae7768b7815a36a6d15631fc320d4bb678ddda7ec5a",
+    "docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/blender_scripts.py": "b2fb96d6e95d6f18d0024d84117299e73458169e1744c204ab2f4f3108d60124",
+    "docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/addon_manager.py": "3d9123a20a2a2afee0137fed421b46ad3e7a3db61c7f9841562680707058ba52",
+    "docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/trajectory.py": "4615ebdfd1845637bc6833b2f1ac6a15619b184c3b0d985d162e8e9a95d0c53c",
+    "docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/safe_mode.py": "b16e7cac74fc4f6b48901a7976a0a81e6c3f6325dbb6030d941b2e7a8006a1fa",
+    "docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/__init__.py": "e5c184d2696d3383ffe6b653b0f448a26c2a3cc6b2ce9d8bd460c53c14c9fce8",
+    "docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/context_log.py": "a8e2f180a850388e03d137f98d5f7a061d5487cb23dd7a4c8de585bbd2adac84",
+    "docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry_decorator.py": "4f0da2619bddd1c5f5d0202b324326fb8473acb2e8a124ea7e06f6e2b066f270",
+    "docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/setup_cli.py": "006e062ea5a7c1ea0ecb0ceb2815c37de498bcb4df52b84c8ad8187069b59596",
+    "docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py": "fd65b30cbf053cb870f96e6af054b517e28fa6c594230a768cb2ff67f6a011ea",
+    "docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/generation.py": "24884c88d3352425b62f3fe53767dba1ce84d1917fd4c02cf13390e3ae50e596",
+    "docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/bundled/addon.py": "eb0facf69781a30e69792532087d8d41c6a14fcd323353250abe7988ee297fa5",
+    "docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/bundled/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/apps/viewport.html": "a69acee1fbd8b85fb873fa965e92cc4e508f4cec631a3a51e7ce068d83738374",
+    "docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/guides/materials.md": "462db0a42e1718078db50d690b5678b162eea6e42063466dd9811fd34ac075c3",
+    "docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/guides/animation.md": "c65ee11aa9a35dbbab1717385d24932da63ddc389eea6e81313a50f2b3e03447",
+    "docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/guides/retopology.md": "1100988d01389ed3786d805ff512022697b505ef2fdb40cfadb6355a3f6e63bd",
+    "docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/guides/scene.md": "c3dd5897ad2f5390ca68912b621eb61057dd98cab7ba7986fe93f8f0f0812dcc",
+    "docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/guides/level-design.md": "4932d7b06be3b9fb9a837adf851b97d4413a0b0b3d16ec606438ad0e126f799f",
+    "docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/guides/bpy.md": "f2e7d1ced7fe2fcc3b323bcd102c7064ccdea05a85ab8c2181b41999006cf165",
+    "docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/guides/rigging.md": "a70cbe9894f8f58b648e1ed1cc4c42055ee216547084d96317a73adb7a718755",
+    "scripts/blender/mcp500/offline_addon_candidate.py": "219a496eda7248dfada013b5c83ce5e3356da590cbf24493dadb65ca92f03c7c",
+    "scripts/blender/mcp500/offline_server_candidate.py": "95ccf3d3ee9c88ccd09751530359ff17d36cb35c0e107fdf0787afae8fb5720b"
+  },
+  "wheelInspection": {
+    "distribution": "mcp-for-blender",
+    "version": "2.1.9",
+    "sha256": "a5cbc6cf316fa7433566eb505a0c26ca22e28c10083bd1b09a23d9e357821ccc",
+    "licenseMatchesPinnedGit": true,
+    "importedModulesMatchPinnedGitExceptAddedConfig": true,
+    "sourceCommitAttestation": "UNKNOWN",
+    "configurationDefaultEnabled": true,
+    "status": "VERIFIED_STATIC_ARCHIVE_REVIEW",
+    "receipt": "docs/audits/blender-runtime-500/mcp/wheel-inspection.json"
+  }
+}

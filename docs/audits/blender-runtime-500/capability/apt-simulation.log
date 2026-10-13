@@ -1,0 +1,193 @@
+NOTE: This is only a simulation!
+      apt-get needs root privileges for real execution.
+      Keep also in mind that locking is deactivated,
+      so don't depend on the relevance to the real current situation!
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Solving dependencies...
+The following packages were automatically installed and are no longer required:
+  libnvidia-egl-wayland1 libxnvctrl0 nvidia-settings python3-mutagen
+  python3-proton-vpn-local-agent python3-pycryptodome python3-websockets
+  screen-resolution-extra
+Use 'apt autoremove' to remove them.
+The following additional packages will be installed:
+  blender-data dcmtk-data gdal-data gdal-plugins libaec0 libarmadillo15
+  libarpack2t64 libavif16 libblosc1 libcfitsio10t64 libcharls2 libdcmtk19
+  libembree4-4 libfreexl1 libfyba0t64 libgav1-2 libgdal38 libgdcm3.0t64
+  libgeos-c1t64 libgeos3.14.1 libgeotiff5 libhdf4-0 libhdf5-310 libhdf5-hl-310
+  libhwloc15 libimath-3-1-29t64 libjsoncpp26 libkmlbase1t64 libkmldom1t64
+  libkmlengine1t64 liblog4cplus-2.0.5t64 libminizip-ng4t64 libminizip1t64
+  libmuparser2v5 libmysqlclient24 libnetcdf22 libodbcinst2 libopenblas0
+  libopenblas0-pthread libopencolorio2.5 libopencv-core410
+  libopencv-imgcodecs410 libopencv-imgproc410 libopencv-videoio410
+  libopenexr-3-1-30 libopenimageio2.5 libopenvdb10.0t64 libopenxr-loader1
+  libosdcpu3.6.0 libosdgpu3.6.0 libpotrace0 libpugixml1v5 libpystring0
+  libqhull-r8.0 libraw23t64 librttopo1 libshaderc1 libsocket++1
+  libspatialite8t64 libspnav0 libsuperlu7 libsz2 libtbb12 libtbbbind-2-5
+  libtbbmalloc2 liburiparser1 libxerces-c3.2t64 libyaml-cpp0.8 libyuv0
+  unixodbc-common
+Suggested packages:
+  geotiff-bin gdal-bin libgeotiff-epsg libhdf4-dev hdf4-tools
+  libhwloc-contrib-plugins spacenavd
+Recommended packages:
+  proj-bin libhwloc-plugins
+The following NEW packages will be installed:
+  blender blender-data dcmtk-data gdal-data gdal-plugins libaec0
+  libarmadillo15 libarpack2t64 libavif16 libblosc1 libcfitsio10t64 libcharls2
+  libdcmtk19 libembree4-4 libfreexl1 libfyba0t64 libgav1-2 libgdal38
+  libgdcm3.0t64 libgeos-c1t64 libgeos3.14.1 libgeotiff5 libhdf4-0 libhdf5-310
+  libhdf5-hl-310 libhwloc15 libimath-3-1-29t64 libjsoncpp26 libkmlbase1t64
+  libkmldom1t64 libkmlengine1t64 liblog4cplus-2.0.5t64 libminizip-ng4t64
+  libminizip1t64 libmuparser2v5 libmysqlclient24 libnetcdf22 libodbcinst2
+  libopenblas0 libopenblas0-pthread libopencolorio2.5 libopencv-core410
+  libopencv-imgcodecs410 libopencv-imgproc410 libopencv-videoio410
+  libopenexr-3-1-30 libopenimageio2.5 libopenvdb10.0t64 libopenxr-loader1
+  libosdcpu3.6.0 libosdgpu3.6.0 libpotrace0 libpugixml1v5 libpystring0
+  libqhull-r8.0 libraw23t64 librttopo1 libshaderc1 libsocket++1
+  libspatialite8t64 libspnav0 libsuperlu7 libsz2 libtbb12 libtbbbind-2-5
+  libtbbmalloc2 liburiparser1 libxerces-c3.2t64 libyaml-cpp0.8 libyuv0
+  unixodbc-common
+0 upgraded, 71 newly installed, 0 to remove and 23 not upgraded.
+Inst blender-data (5.0.1+dfsg-1ubuntu1 Ubuntu:26.04/resolute [all])
+Inst libhwloc15 (2.13.0-2 Ubuntu:26.04/resolute [amd64])
+Inst libtbbbind-2-5 (2022.3.0-2 Ubuntu:26.04/resolute [amd64])
+Inst libtbbmalloc2 (2022.3.0-2 Ubuntu:26.04/resolute [amd64])
+Inst libtbb12 (2022.3.0-2 Ubuntu:26.04/resolute [amd64])
+Inst libembree4-4 (4.4.0+dfsg-1 Ubuntu:26.04/resolute [amd64])
+Inst libimath-3-1-29t64 (3.1.12-1ubuntu5 Ubuntu:26.04/resolute [amd64])
+Inst libminizip-ng4t64 (4.0.10+dfsg-2 Ubuntu:26.04/resolute [amd64])
+Inst libpystring0 (1.1.4-2 Ubuntu:26.04/resolute [amd64])
+Inst libyaml-cpp0.8 (0.8.0+dfsg-9 Ubuntu:26.04/resolute [amd64])
+Inst libopencolorio2.5 (2.5.1+dfsg-1 Ubuntu:26.04/resolute [amd64])
+Inst libopenexr-3-1-30 (3.1.13-2build1 Ubuntu:26.04/resolute [amd64])
+Inst dcmtk-data (3.7.0+really3.6.9-1 Ubuntu:26.04/resolute [all])
+Inst libdcmtk19 (3.7.0+really3.6.9-1 Ubuntu:26.04/resolute [amd64])
+Inst libopenblas0-pthread (0.3.32+ds-5 Ubuntu:26.04/resolute [amd64])
+Inst libopenblas0 (0.3.32+ds-5 Ubuntu:26.04/resolute [amd64])
+Inst libopencv-core410 (4.10.0+dfsg-7ubuntu5 Ubuntu:26.04/resolute [amd64])
+Inst libopencv-imgproc410 (4.10.0+dfsg-7ubuntu5 Ubuntu:26.04/resolute [amd64])
+Inst gdal-data (3.12.2+dfsg-1build2 Ubuntu:26.04/resolute [all])
+Inst gdal-plugins (3.12.2+dfsg-1build2 Ubuntu:26.04/resolute [amd64])
+Inst libaec0 (1.1.5-1 Ubuntu:26.04/resolute [amd64])
+Inst libarpack2t64 (3.9.1-6build1 Ubuntu:26.04/resolute [amd64])
+Inst libsuperlu7 (7.0.1+dfsg1-2build1 Ubuntu:26.04/resolute [amd64])
+Inst libarmadillo15 (1:15.2.1+dfsg-2 Ubuntu:26.04/resolute [amd64])
+Inst libgav1-2 (0.20.0-2build1 Ubuntu:26.04/resolute [amd64])
+Inst libyuv0 (0.0.1922.20260106-1 Ubuntu:26.04/resolute [amd64])
+Inst libavif16 (1.3.0-1ubuntu4 Ubuntu:26.04/resolute [amd64])
+Inst libblosc1 (1.21.5+ds-2 Ubuntu:26.04/resolute [amd64])
+Inst libcfitsio10t64 (4.6.3-1 Ubuntu:26.04/resolute [amd64])
+Inst libminizip1t64 (1:1.3.dfsg+really1.3.1-1ubuntu3.1 Ubuntu:26.04/resolute-updates, Ubuntu:26.04/resolute-security [amd64])
+Inst libfreexl1 (2.0.0-1build3 Ubuntu:26.04/resolute [amd64])
+Inst libfyba0t64 (4.1.1-11build2 Ubuntu:26.04/resolute [amd64])
+Inst libgeos3.14.1 (3.14.1-2 Ubuntu:26.04/resolute [amd64])
+Inst libgeos-c1t64 (3.14.1-2 Ubuntu:26.04/resolute [amd64])
+Inst libgeotiff5 (1.7.4-1build1 Ubuntu:26.04/resolute [amd64])
+Inst libsz2 (1.1.5-1 Ubuntu:26.04/resolute [amd64])
+Inst libhdf4-0 (4.3.1-2 Ubuntu:26.04/resolute [amd64])
+Inst libhdf5-310 (1.14.6+repack-2 Ubuntu:26.04/resolute [amd64])
+Inst liburiparser1 (0.9.8+dfsg-2build1 Ubuntu:26.04/resolute [amd64])
+Inst libkmlbase1t64 (1.3.0-13 Ubuntu:26.04/resolute [amd64])
+Inst libkmldom1t64 (1.3.0-13 Ubuntu:26.04/resolute [amd64])
+Inst libkmlengine1t64 (1.3.0-13 Ubuntu:26.04/resolute [amd64])
+Inst libmuparser2v5 (2.3.4-2 Ubuntu:26.04/resolute [amd64])
+Inst libmysqlclient24 (8.4.11-0ubuntu0.26.04.1 Ubuntu:26.04/resolute-updates, Ubuntu:26.04/resolute-security [amd64])
+Inst libhdf5-hl-310 (1.14.6+repack-2 Ubuntu:26.04/resolute [amd64])
+Inst libnetcdf22 (1:4.9.3-1build2 Ubuntu:26.04/resolute [amd64])
+Inst unixodbc-common (2.3.14-1 Ubuntu:26.04/resolute [all])
+Inst libodbcinst2 (2.3.14-1 Ubuntu:26.04/resolute [amd64])
+Inst libqhull-r8.0 (2020.2-8 Ubuntu:26.04/resolute [amd64])
+Inst librttopo1 (1.1.0-4build1 Ubuntu:26.04/resolute [amd64])
+Inst libspatialite8t64 (5.1.0-3ubuntu2 Ubuntu:26.04/resolute [amd64])
+Inst libxerces-c3.2t64 (3.2.4+debian-1.3build2 Ubuntu:26.04/resolute [amd64])
+Inst libgdal38 (3.12.2+dfsg-1build2 Ubuntu:26.04/resolute [amd64])
+Inst libcharls2 (2.4.2-2build3 Ubuntu:26.04/resolute [amd64])
+Inst libsocket++1 (1.12.13+git20131030.5d039ba-2 Ubuntu:26.04/resolute [amd64])
+Inst libgdcm3.0t64 (3.0.24-9ubuntu1 Ubuntu:26.04/resolute [amd64])
+Inst libopencv-imgcodecs410 (4.10.0+dfsg-7ubuntu5 Ubuntu:26.04/resolute [amd64])
+Inst libopencv-videoio410 (4.10.0+dfsg-7ubuntu5 Ubuntu:26.04/resolute [amd64])
+Inst liblog4cplus-2.0.5t64 (2.0.8-1.1ubuntu4 Ubuntu:26.04/resolute [amd64])
+Inst libopenvdb10.0t64 (10.0.1-3 Ubuntu:26.04/resolute [amd64])
+Inst libraw23t64 (0.21.5b-1ubuntu1.1 Ubuntu:26.04/resolute-updates, Ubuntu:26.04/resolute-security [amd64])
+Inst libopenimageio2.5 (2.5.19.1+dfsg-2 Ubuntu:26.04/resolute [amd64])
+Inst libjsoncpp26 (1.9.6-5 Ubuntu:26.04/resolute [amd64])
+Inst libopenxr-loader1 (1.1.47~ds-2build1 Ubuntu:26.04/resolute [amd64])
+Inst libosdcpu3.6.0 (3.6.0-3build1 Ubuntu:26.04/resolute [amd64])
+Inst libosdgpu3.6.0 (3.6.0-3build1 Ubuntu:26.04/resolute [amd64])
+Inst libpotrace0 (1.16-2build2 Ubuntu:26.04/resolute [amd64])
+Inst libpugixml1v5 (1.14-2build1 Ubuntu:26.04/resolute [amd64])
+Inst libshaderc1 (2026.1-1 Ubuntu:26.04/resolute [amd64])
+Inst libspnav0 (1.2-1build1 Ubuntu:26.04/resolute [amd64])
+Inst blender (5.0.1+dfsg-1ubuntu1 Ubuntu:26.04/resolute [amd64])
+Conf blender-data (5.0.1+dfsg-1ubuntu1 Ubuntu:26.04/resolute [all])
+Conf libhwloc15 (2.13.0-2 Ubuntu:26.04/resolute [amd64])
+Conf libtbbbind-2-5 (2022.3.0-2 Ubuntu:26.04/resolute [amd64])
+Conf libtbbmalloc2 (2022.3.0-2 Ubuntu:26.04/resolute [amd64])
+Conf libtbb12 (2022.3.0-2 Ubuntu:26.04/resolute [amd64])
+Conf libembree4-4 (4.4.0+dfsg-1 Ubuntu:26.04/resolute [amd64])
+Conf libimath-3-1-29t64 (3.1.12-1ubuntu5 Ubuntu:26.04/resolute [amd64])
+Conf libminizip-ng4t64 (4.0.10+dfsg-2 Ubuntu:26.04/resolute [amd64])
+Conf libpystring0 (1.1.4-2 Ubuntu:26.04/resolute [amd64])
+Conf libyaml-cpp0.8 (0.8.0+dfsg-9 Ubuntu:26.04/resolute [amd64])
+Conf libopencolorio2.5 (2.5.1+dfsg-1 Ubuntu:26.04/resolute [amd64])
+Conf libopenexr-3-1-30 (3.1.13-2build1 Ubuntu:26.04/resolute [amd64])
+Conf dcmtk-data (3.7.0+really3.6.9-1 Ubuntu:26.04/resolute [all])
+Conf libdcmtk19 (3.7.0+really3.6.9-1 Ubuntu:26.04/resolute [amd64])
+Conf libopenblas0-pthread (0.3.32+ds-5 Ubuntu:26.04/resolute [amd64])
+Conf libopenblas0 (0.3.32+ds-5 Ubuntu:26.04/resolute [amd64])
+Conf libopencv-core410 (4.10.0+dfsg-7ubuntu5 Ubuntu:26.04/resolute [amd64])
+Conf libopencv-imgproc410 (4.10.0+dfsg-7ubuntu5 Ubuntu:26.04/resolute [amd64])
+Conf gdal-data (3.12.2+dfsg-1build2 Ubuntu:26.04/resolute [all])
+Conf gdal-plugins (3.12.2+dfsg-1build2 Ubuntu:26.04/resolute [amd64])
+Conf libaec0 (1.1.5-1 Ubuntu:26.04/resolute [amd64])
+Conf libarpack2t64 (3.9.1-6build1 Ubuntu:26.04/resolute [amd64])
+Conf libsuperlu7 (7.0.1+dfsg1-2build1 Ubuntu:26.04/resolute [amd64])
+Conf libarmadillo15 (1:15.2.1+dfsg-2 Ubuntu:26.04/resolute [amd64])
+Conf libgav1-2 (0.20.0-2build1 Ubuntu:26.04/resolute [amd64])
+Conf libyuv0 (0.0.1922.20260106-1 Ubuntu:26.04/resolute [amd64])
+Conf libavif16 (1.3.0-1ubuntu4 Ubuntu:26.04/resolute [amd64])
+Conf libblosc1 (1.21.5+ds-2 Ubuntu:26.04/resolute [amd64])
+Conf libcfitsio10t64 (4.6.3-1 Ubuntu:26.04/resolute [amd64])
+Conf libminizip1t64 (1:1.3.dfsg+really1.3.1-1ubuntu3.1 Ubuntu:26.04/resolute-updates, Ubuntu:26.04/resolute-security [amd64])
+Conf libfreexl1 (2.0.0-1build3 Ubuntu:26.04/resolute [amd64])
+Conf libfyba0t64 (4.1.1-11build2 Ubuntu:26.04/resolute [amd64])
+Conf libgeos3.14.1 (3.14.1-2 Ubuntu:26.04/resolute [amd64])
+Conf libgeos-c1t64 (3.14.1-2 Ubuntu:26.04/resolute [amd64])
+Conf libgeotiff5 (1.7.4-1build1 Ubuntu:26.04/resolute [amd64])
+Conf libsz2 (1.1.5-1 Ubuntu:26.04/resolute [amd64])
+Conf libhdf4-0 (4.3.1-2 Ubuntu:26.04/resolute [amd64])
+Conf libhdf5-310 (1.14.6+repack-2 Ubuntu:26.04/resolute [amd64])
+Conf liburiparser1 (0.9.8+dfsg-2build1 Ubuntu:26.04/resolute [amd64])
+Conf libkmlbase1t64 (1.3.0-13 Ubuntu:26.04/resolute [amd64])
+Conf libkmldom1t64 (1.3.0-13 Ubuntu:26.04/resolute [amd64])
+Conf libkmlengine1t64 (1.3.0-13 Ubuntu:26.04/resolute [amd64])
+Conf libmuparser2v5 (2.3.4-2 Ubuntu:26.04/resolute [amd64])
+Conf libmysqlclient24 (8.4.11-0ubuntu0.26.04.1 Ubuntu:26.04/resolute-updates, Ubuntu:26.04/resolute-security [amd64])
+Conf libhdf5-hl-310 (1.14.6+repack-2 Ubuntu:26.04/resolute [amd64])
+Conf libnetcdf22 (1:4.9.3-1build2 Ubuntu:26.04/resolute [amd64])
+Conf unixodbc-common (2.3.14-1 Ubuntu:26.04/resolute [all])
+Conf libodbcinst2 (2.3.14-1 Ubuntu:26.04/resolute [amd64])
+Conf libqhull-r8.0 (2020.2-8 Ubuntu:26.04/resolute [amd64])
+Conf librttopo1 (1.1.0-4build1 Ubuntu:26.04/resolute [amd64])
+Conf libspatialite8t64 (5.1.0-3ubuntu2 Ubuntu:26.04/resolute [amd64])
+Conf libxerces-c3.2t64 (3.2.4+debian-1.3build2 Ubuntu:26.04/resolute [amd64])
+Conf libgdal38 (3.12.2+dfsg-1build2 Ubuntu:26.04/resolute [amd64])
+Conf libcharls2 (2.4.2-2build3 Ubuntu:26.04/resolute [amd64])
+Conf libsocket++1 (1.12.13+git20131030.5d039ba-2 Ubuntu:26.04/resolute [amd64])
+Conf libgdcm3.0t64 (3.0.24-9ubuntu1 Ubuntu:26.04/resolute [amd64])
+Conf libopencv-imgcodecs410 (4.10.0+dfsg-7ubuntu5 Ubuntu:26.04/resolute [amd64])
+Conf libopencv-videoio410 (4.10.0+dfsg-7ubuntu5 Ubuntu:26.04/resolute [amd64])
+Conf liblog4cplus-2.0.5t64 (2.0.8-1.1ubuntu4 Ubuntu:26.04/resolute [amd64])
+Conf libopenvdb10.0t64 (10.0.1-3 Ubuntu:26.04/resolute [amd64])
+Conf libraw23t64 (0.21.5b-1ubuntu1.1 Ubuntu:26.04/resolute-updates, Ubuntu:26.04/resolute-security [amd64])
+Conf libopenimageio2.5 (2.5.19.1+dfsg-2 Ubuntu:26.04/resolute [amd64])
+Conf libjsoncpp26 (1.9.6-5 Ubuntu:26.04/resolute [amd64])
+Conf libopenxr-loader1 (1.1.47~ds-2build1 Ubuntu:26.04/resolute [amd64])
+Conf libosdcpu3.6.0 (3.6.0-3build1 Ubuntu:26.04/resolute [amd64])
+Conf libosdgpu3.6.0 (3.6.0-3build1 Ubuntu:26.04/resolute [amd64])
+Conf libpotrace0 (1.16-2build2 Ubuntu:26.04/resolute [amd64])
+Conf libpugixml1v5 (1.14-2build1 Ubuntu:26.04/resolute [amd64])
+Conf libshaderc1 (2026.1-1 Ubuntu:26.04/resolute [amd64])
+Conf libspnav0 (1.2-1build1 Ubuntu:26.04/resolute [amd64])
+Conf blender (5.0.1+dfsg-1ubuntu1 Ubuntu:26.04/resolute [amd64])

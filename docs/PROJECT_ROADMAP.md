@@ -5,7 +5,7 @@ Full goal OPEN. This is the approved order and exit criteria, not an image order
 | Gate | Work / dependency | Exit evidence |
 |---|---|---|
 |G0|Refresh active instructions; ownership/scoped pins/method lineage/prerequisites/durable budgets/receipt checks on existing helpers|Focused negative tests; old orders/sources retained; no stale queue doing493again|
-|G1|Latest499 Blender model/rig→2D authoring capability; actual binary/version/headlessCPU and MCP handshake if used|Actual supported runtime; bounded499 lookup missing, officialfetch403/402; no installation/render or adoption.495 localDiffusers failure retained|
+|G1|Latest499 Blender model/rig→2D authoring capability; actual binary/version/headlessCPU and MCP handshake if used|VERIFIED500 signedUbuntuAPT isolatedBlender5.0.1 headlessCPU; nativeGUI/MCP501 +lifecycle502/readscope config. ChattoolexposureUNKNOWN; model/motion unqualified.495/499 failures retained|
 |G2|Original Villager neutral model/material/camera gate, then controlled D1 rig/walk pilot; preserve/reuse valid originals|Sameoriginal realistic appearance; actual loop/Move/turn/PauseResume/assignedarrival/Stop; calibrated stride; owner only exact reply|
 |G3|Reuse on original Infantry, then wholehorsewagon415/cavalry|Motion/runtime pass; actual newcalls/corrections/held/reuse/manualeffort, not schema-count claims|
 |G4|Finish each identity/action×D0–D7; view lock and selected keys before parallel inbetweens|All applicable exact/shared clips integrated; static fallback never completion|
@@ -61,3 +61,5 @@ Build isolated literalcwd/absoluteoutDir/exactconfig; freeze beforetrial. Future
 ## Current499 sequence and delegation
 
 [Blender pipeline](art/pipeline/BLENDER_SPRITE_PIPELINE.md) owns detailed authoring process. B0actualtools→B1SAMEoriginalappearance→B2camera/layout/rig→B3D1pilot→B4views+fullVillager→B5Infantry/horsewagon reuse→G4roster. Three exactSol6.1Low workers delivered capability, source-bound identity/prompt specifications and minimal exporter; root audited and requested five concrete exporter fixes. No executable/model/render/art approval from these outputs. Setup fetch failed; obtain actual supported Blender/MCP capability before modeling. G5/G6 independent remaining game work stays eligible, not repeated completed audits.
+
+Current500/501 sourcegate: API/runtime setup succeeded; first originalVillagerneutral candidateFAILED at71px after1/1correction, so G2appearance/rig/motion remainsOPEN and501doesnotfanout. Next geometry/materialcontrol mustbind actualoriginalD0/D1 landmarks/surfaces; no renamedglobalUV/hat retry. G6ordinaryonline503 exactrectangle acquisitionpassed; queueobservability failed before100profile. Neither32TOTAL nor technicalBlenderfixtures close roster/dense/visual requirements.

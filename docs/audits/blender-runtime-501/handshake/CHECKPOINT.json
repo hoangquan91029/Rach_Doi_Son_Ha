@@ -1,0 +1,259 @@
+{
+  "schema": "rds-task-receipt/v1",
+  "taskId": "blender-handshake501",
+  "purpose": "InstallisolatedreviewedSDK dependencies and actualprivateGUIBlender handshake-only MCP test beforeCodexconfig",
+  "evidence": "VERIFIED",
+  "inputPins": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "cc426aeb2344eae7a03c912efd7d10813ec999154173e716c58f6dbfe047dae5",
+      "actual": "cc426aeb2344eae7a03c912efd7d10813ec999154173e716c58f6dbfe047dae5"
+    },
+    {
+      "path": "docs/audits/blender-runtime-500/mcp/CHECKPOINT.json",
+      "sha256": "ed1ab60842f284bb1f2947a03690fa7ffb17705a1ffa950076d0ab095ec9c11f",
+      "actual": "ed1ab60842f284bb1f2947a03690fa7ffb17705a1ffa950076d0ab095ec9c11f"
+    },
+    {
+      "path": "scripts/blender/mcp500/offline_addon_candidate.py",
+      "sha256": "219a496eda7248dfada013b5c83ce5e3356da590cbf24493dadb65ca92f03c7c",
+      "actual": "219a496eda7248dfada013b5c83ce5e3356da590cbf24493dadb65ca92f03c7c"
+    },
+    {
+      "path": "scripts/blender/mcp500/offline_server_candidate.py",
+      "sha256": "95ccf3d3ee9c88ccd09751530359ff17d36cb35c0e107fdf0787afae8fb5720b",
+      "actual": "95ccf3d3ee9c88ccd09751530359ff17d36cb35c0e107fdf0787afae8fb5720b"
+    },
+    {
+      "path": "docs/audits/blender-runtime-500/capability/CHECKPOINT.json",
+      "sha256": "5c0e3540553cf4d509a74953e59d8968d251e031581edb03fdb114ba79f4eea7",
+      "actual": "5c0e3540553cf4d509a74953e59d8968d251e031581edb03fdb114ba79f4eea7"
+    },
+    {
+      "path": "docs/audits/blender-runtime-500/capability/runtime-checks.json",
+      "sha256": "8b31a0f43b8716311f84631ffa3bc15b11f5d5c99fae7a696e04d809937b2788",
+      "actual": "8b31a0f43b8716311f84631ffa3bc15b11f5d5c99fae7a696e04d809937b2788"
+    }
+  ],
+  "exclusiveOutputs": [
+    "scripts/blender/mcp501",
+    "docs/audits/blender-runtime-501/handshake"
+  ],
+  "installation": {
+    "root": "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/mcp501",
+    "bytes": 67775101,
+    "capBytes": 157286400,
+    "python": "3.14.4",
+    "packages": 32,
+    "interpreterDownloaded": false,
+    "sourceBuild": false,
+    "hashLock": "docs/audits/blender-runtime-501/handshake/requirements.lock",
+    "licenseMetadata": "docs/audits/blender-runtime-501/handshake/dependency-wheels.json",
+    "pipHTTPDefaultCache": "usedonread-onlywheeldownload; notclaimedonlywritesinsideinstallroot"
+  },
+  "actualHandshake": {
+    "run": {
+      "blenderArgv": [
+        "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/blender500/root/usr/bin/blender",
+        "--factory-startup",
+        "--disable-autoexec",
+        "--python",
+        "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/blender/mcp501/addon_launcher.py",
+        "--",
+        "19876"
+      ],
+      "environmentOverrides": {
+        "LD_LIBRARY_PATH": "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/blender500/root/usr/lib/x86_64-linux-gnu:/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/blender500/root/usr/lib:/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/blender500/root/usr/lib/x86_64-linux-gnu/openblas-pthread",
+        "BLENDER_SYSTEM_RESOURCES": "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/blender500/root/usr/lib/blender",
+        "BLENDER_SYSTEM_SCRIPTS": "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/blender500/root/usr/lib/blender/scripts",
+        "BLENDER_SYSTEM_DATAFILES": "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/blender500/root/usr/lib/blender/datafiles"
+      },
+      "ownedPID": 389854,
+      "ready": true,
+      "SDKExit": 0,
+      "allOwnedClosed": true,
+      "BlenderExit": -15
+    },
+    "protocolVersion": "2025-11-25",
+    "SDKVersion": "1.29.0",
+    "BlenderVersion": "5.0.1",
+    "addonProtocol": 13,
+    "addonVersion": [
+      1,
+      8
+    ],
+    "consent": false,
+    "remoteIntegrations": "alloff",
+    "scene": {
+      "name": "Scene",
+      "object_count": 3,
+      "objects": [
+        {
+          "name": "Cube",
+          "type": "MESH",
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Light",
+          "type": "LIGHT",
+          "location": [
+            4.08,
+            1.01,
+            5.9
+          ]
+        },
+        {
+          "name": "Camera",
+          "type": "CAMERA",
+          "location": [
+            7.36,
+            -6.93,
+            4.96
+          ]
+        }
+      ],
+      "materials_count": 2
+    },
+    "toolNames": [
+      "get_addon_status",
+      "disable_telemetry",
+      "get_scene_info",
+      "execute_blender_code",
+      "record_trajectory_feedback",
+      "look",
+      "generate_3d",
+      "search_assets",
+      "import_asset"
+    ],
+    "limit": "PrivateactualSDK only; upstreamoptionaltools stilladvertisedbutaddonforkdenies; noCodexexposure"
+  },
+  "failures": [
+    {
+      "method": "initialuvresolver",
+      "status": "FAILED_REPAIRED",
+      "log": "docs/audits/blender-runtime-501/handshake/resolve-initial-error.log",
+      "observation": "no-build/only-binary mutuallyexclusive; retainedthenusedno-build"
+    },
+    {
+      "status": "WARNINGS_RETAINED",
+      "observation": "GUIlibdecor/EGLBAD_MATCH;SDKPydanticforwardreference; nativehandshakeexit0"
+    }
+  ],
+  "checks": [
+    {
+      "method": "actualverifiedbinaryGUI+MCP SDK",
+      "exitStatus": 0,
+      "calls": [
+        "initialize",
+        "tools/list",
+        "get_addon_status",
+        "get_scene_info"
+      ],
+      "observation": "nativeprotocol/status/factoryscene",
+      "receipt": "docs/audits/blender-runtime-501/handshake/sdk-response.json"
+    },
+    {
+      "method": "ssPIDloopbacklistener andclosedlistener",
+      "status": "VERIFIED",
+      "limit": "connectionsnapshotafterSDKclosed; no continuousnetworkaudit"
+    },
+    {
+      "method": "stdlibTOMLparse+officialOpenAIdocs",
+      "status": "VERIFIED_SCHEMA_CANDIDATE",
+      "limit": "candidateonly userconfig untouched",
+      "source": "https://learn.chatgpt.com/docs/extend/mcp?surface=cli"
+    }
+  ],
+  "handles": {
+    "allOwnedClosed": true,
+    "GUIpid": 389854,
+    "SDKSession": 76135,
+    "SDKExit": 0,
+    "BlenderExit": -15,
+    "finalPS": "noownGUI/offlineMCP/SDK processes observed"
+  },
+  "counts": {
+    "GUIstarts": 1,
+    "SDKhandshakes": 1,
+    "arbitraryCodeCalls": 0,
+    "generations": 0,
+    "renders": 0,
+    "CodexConfigChanges": 0,
+    "systemInstalls": 0,
+    "driverChanges": 0
+  },
+  "acceptance": {
+    "dependencyRuntime": "VERIFIED",
+    "GUI": "VERIFIED_SCOPED",
+    "privateMCP": "VERIFIED",
+    "CodexToolExposure": "UNKNOWN_UNCONFIGURED",
+    "appearance": "UNKNOWN",
+    "motion": "UNKNOWN",
+    "owner": "UNKNOWN",
+    "release": "UNKNOWN"
+  },
+  "nextDependency": "Root independentlyintakeactualreceipt/fork/dependencylock; authorizepersistentGUIlifecycle and Codexconfiguration separately beforetoolclaim",
+  "outputPins": {
+    "docs/audits/blender-runtime-501/handshake/install.log": "5454f091e3fab4e77cdb81663eab616e5770a6f69e9f6ac55a0091fb217b3da8",
+    "docs/audits/blender-runtime-501/handshake/README.md": "e37c5ff13f811690674eb6fe21b3f51e9b1eb1897529403ec401c40ad57b97b8",
+    "docs/audits/blender-runtime-501/handshake/actual-run.json": "53b949075a4e584828686277ecaf65ac989db7b7d97fa52db286321ee8da46a3",
+    "docs/audits/blender-runtime-501/handshake/connections.log": "cd23c472d09665d16d7855427f98cf45a7cbdc5ce007460e2393109c22e8df78",
+    "docs/audits/blender-runtime-501/handshake/requirements.in": "166488ffdd9a438089d688ef545551e2a82a50f4482aff3bb9bbf05ea0aa1cf5",
+    "docs/audits/blender-runtime-501/handshake/xdpyinfo.log": "97a7f3902f3dc766763473d4fe15542ba21eae7d8f19737d9958e68bac7c1df7",
+    "docs/audits/blender-runtime-501/handshake/resolve-initial-error.log": "bd3faed6db1c58881fb3e7634df04c1e72b5fdfb7a421bd61e7148dc5c71e60c",
+    "docs/audits/blender-runtime-501/handshake/dependency-wheels.json": "13c5bc54df3d785837dd451f4c9d9506d9e6366a670e6e88bd97b3f3c05866e6",
+    "docs/audits/blender-runtime-501/handshake/wheel-download.log": "040b8432ae4312a41ae6b7c0c68e8abf8cf0d7a7890ffdc3fb2875cef66035d4",
+    "docs/audits/blender-runtime-501/handshake/installed-packages.json": "016333a0d93a925667d5053d133f6ddb940726fcc52adc04527544ae669c2580",
+    "docs/audits/blender-runtime-501/handshake/codex-config-candidate.toml": "68701df556ad7d94750151e75ee8efce0f89cd583bfe97369917960d1abe3a89",
+    "docs/audits/blender-runtime-501/handshake/sdk-response.json": "dd4f376b8973ca7c897e3c6ea2db0fd96cf5a8c00cc1d8c7fd8d03ca217aa2b1",
+    "docs/audits/blender-runtime-501/handshake/requirements.lock": "75bc8a770989c965d943f78f4fce8513c25d693ce8c1b766c519dbb3dabf55fe",
+    "docs/audits/blender-runtime-501/handshake/venv.log": "0cd8e5987c90f44a208b35dedc30d11854fbd9596660c50047d2e2e8bba3515e",
+    "docs/audits/blender-runtime-501/handshake/gui.log": "8b26c1b3fff466d6c58f6f7531e26d5ae73a1a6d69056655260c84716d09c555",
+    "docs/audits/blender-runtime-501/handshake/sdk.log": "4e137b21b6d1b0a69201bfa27e2bd15355f16949ddbe79626c564a7693d6965e",
+    "docs/audits/blender-runtime-501/handshake/listener.log": "58c4c793cc94fea0f2981d04ab7751624fdbd92415f8ec57fbda510e0a0fb930",
+    "docs/audits/blender-runtime-501/handshake/assignment.json": "e7e3e7b3f63106e7e0ed08577aae8272a88daacb33b1a20677c349f7ba5c347a",
+    "docs/audits/blender-runtime-501/handshake/preflight.log": "008381d365a9ea663e2152fef28d28602ffb0384423ab814e2706e3960155168",
+    "docs/audits/blender-runtime-501/handshake/display-env.json": "48c5ab77a5a4a6fae7b95e9f57018c42ef51cac2893ef0d040632917eeabdb50",
+    "docs/audits/blender-runtime-501/handshake/resolve.log": "aff31e766c3c25d350e6981467d012e767ef13477819893d0957d2c1ec025d48",
+    "docs/audits/blender-runtime-501/handshake/listener-closed.log": "c197d3a326943478f230167435f7ec1412ad2129b4475bb04c8af176f83bdaaf",
+    "docs/audits/blender-runtime-501/handshake/licenses/urllib3-2.8.0-py3-none-any/LICENSE.txt": "130e3a64d5fdd5d096a752694634a7d9df284469de86e5732100268041e3d686",
+    "docs/audits/blender-runtime-501/handshake/licenses/uvicorn-0.54.0-py3-none-any/LICENSE.md": "efe1acf3e62fb99c288b0ec73e5a773b7268ef4320fe757ea994214e4b63c371",
+    "docs/audits/blender-runtime-501/handshake/licenses/mcp-1.29.0-py3-none-any/LICENSE": "5e13dbbc1d120fc2a03cecde7c91424ae2d7de11b63d58ded2f4431e261ee50d",
+    "docs/audits/blender-runtime-501/handshake/licenses/rpds_py-2026.9.1-cp314-cp314-manylinux_2_17_x86_64.manylinux2014_x86_64/LICENSE": "314e4e91be3baa93c0fb4bccc9e4e97cd643eb839b065af921782c2175fe9909",
+    "docs/audits/blender-runtime-501/handshake/licenses/pycparser-3.11-py3-none-any/LICENSE": "0a9e78156ae8b96caf1b4f11ac2df424b83de29736f9e757630548a6272fdf90",
+    "docs/audits/blender-runtime-501/handshake/licenses/cryptography-50.0.2-cp311-abi3-manylinux_2_34_x86_64/LICENSE.APACHE": "aac73b3148f6d1d7111dbca32099f68d26c644c6813ae1e4f05f6579aa2663fe",
+    "docs/audits/blender-runtime-501/handshake/licenses/cryptography-50.0.2-cp311-abi3-manylinux_2_34_x86_64/LICENSE": "3e0c7c091a948b82533ba98fd7cbb40432d6f1a9acbf85f5922d2f99a93ae6bb",
+    "docs/audits/blender-runtime-501/handshake/licenses/cryptography-50.0.2-cp311-abi3-manylinux_2_34_x86_64/LICENSE.BSD": "602c4c7482de6479dd2e9793cda275e5e63d773dacd1eca689232ab7008fb4fb",
+    "docs/audits/blender-runtime-501/handshake/licenses/python_dotenv-1.2.4-py3-none-any/LICENSE": "80619b7049f08c81683ad0e01f08f257a840652dd71ee83146d36658c7d2c2b9",
+    "docs/audits/blender-runtime-501/handshake/licenses/httpcore-1.0.9-py3-none-any/LICENSE.md": "fdcb59154c74cbaba16a11242f7740bea9f23d6feb5547917d8c5f94a80392a5",
+    "docs/audits/blender-runtime-501/handshake/licenses/typing_inspection-0.4.4-py3-none-any/LICENSE": "804b59b25f2c31bd278f9202a19ae49a3945aa2664387e2d0a128c7cacc61ec3",
+    "docs/audits/blender-runtime-501/handshake/licenses/annotated_types-0.8.0-py3-none-any/LICENSE": "fe1049884b1a0d9342901e88e07f32925d24b3121d9972b6a6805fb9824b095d",
+    "docs/audits/blender-runtime-501/handshake/licenses/pydantic-2.14.1-py3-none-any/LICENSE": "a9e186f3ca16b5eef84318e7a701721351a00cb7b8ae3a4394b67b49e3529ef3",
+    "docs/audits/blender-runtime-501/handshake/licenses/httpx-0.28.1-py3-none-any/LICENSE.md": "4ec59d544f12b5f539a3a716fd321ac58ccd8030b465221f2c880200cdf28d8d",
+    "docs/audits/blender-runtime-501/handshake/licenses/pydantic_core-2.50.1-cp314-cp314-manylinux_2_17_x86_64.manylinux2014_x86_64/LICENSE": "2afdd30d54b4d62b6f488a6bcc1546e84ec5061f13f4209c03d012348783795a",
+    "docs/audits/blender-runtime-501/handshake/licenses/pydantic_settings-2.15.0-py3-none-any/LICENSE": "eb355a753e020346d33d83bf9769135b89fc610568ac531a01c295bcee7fd998",
+    "docs/audits/blender-runtime-501/handshake/licenses/httpx_sse-0.4.3-py3-none-any/LICENSE": "beec67e4ee83a7af26f242bed9987aa863d6d2dfb776106aa2360c4187f31901",
+    "docs/audits/blender-runtime-501/handshake/licenses/starlette-1.7.0-py3-none-any/LICENSE.md": "dcb95677a02240243187e964f941847d19b17821cf99e5afae684fab328c19bf",
+    "docs/audits/blender-runtime-501/handshake/licenses/click-8.5.0-py3-none-any/LICENSE.txt": "9a8ad106a394e853bfe21f42f4e72d592819a22805d991b5f3275029292b658d",
+    "docs/audits/blender-runtime-501/handshake/licenses/attrs-26.1.0-py3-none-any/LICENSE": "882115c95dfc2af1eeb6714f8ec6d5cbcabf667caff8729f42420da63f714e9f",
+    "docs/audits/blender-runtime-501/handshake/licenses/cffi-2.1.1-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64/LICENSE": "5ba24ddc57067f9249add644c3afc41a5d6dc37e23433ef759d95df370b0af63",
+    "docs/audits/blender-runtime-501/handshake/licenses/idna-3.20-py3-none-any/LICENSE.md": "1a9a4f0e3d479a27240ddd59a9137a66ab4a0f9dfdc8ca6188cc0bfd85187f04",
+    "docs/audits/blender-runtime-501/handshake/licenses/typing_extensions-4.16.0-py3-none-any/LICENSE": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf",
+    "docs/audits/blender-runtime-501/handshake/licenses/certifi-2026.7.22-py3-none-any/LICENSE": "e93716da6b9c0d5a4a1df60fe695b370f0695603d21f6f83f053e42cfc10caf7",
+    "docs/audits/blender-runtime-501/handshake/licenses/charset_normalizer-3.5.2-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64/LICENSE": "6d0d41bfe170ac6c7dc248c9a63e254d0fb45a60d50a8257d0af92c6e249b887",
+    "docs/audits/blender-runtime-501/handshake/licenses/anyio-4.15.1-py3-none-any/LICENSE": "5361ac9dc58f2ef5fd2e9b09c68297c17f04950909bbc8023bdb82eacf22c2b0",
+    "docs/audits/blender-runtime-501/handshake/licenses/python_multipart-0.0.32-py3-none-any/LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "docs/audits/blender-runtime-501/handshake/licenses/h11-0.16.0-py3-none-any/LICENSE.txt": "37db5bb85926db28a427a25867f10b1232003aea1be69ccb851138adb8e6f361",
+    "docs/audits/blender-runtime-501/handshake/licenses/pyjwt-2.15.1-py3-none-any/LICENSE": "797a7a20231d4c433e9f1911db1731d06b5828b98f499819a034f7c0f56f5ce5",
+    "docs/audits/blender-runtime-501/handshake/licenses/sse_starlette-3.5.0-py3-none-any/LICENSE": "80af6bfccbebd2c14d4aab96695cab9950e177190cc80f5ef819e99996883e8e",
+    "docs/audits/blender-runtime-501/handshake/licenses/requests-2.34.2-py3-none-any/LICENSE": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b",
+    "docs/audits/blender-runtime-501/handshake/licenses/requests-2.34.2-py3-none-any/NOTICE": "f5110972dedad2b4e9d314518daf3b7d72d6e02e499acd802181de6f74571dcc",
+    "scripts/blender/mcp501/sdk_handshake.py": "e8ca0ce4992e08fb5a08b19b047c598a0a8a177f914568fdc92ca1b03b1d437d",
+    "scripts/blender/mcp501/addon_launcher.py": "010e97960179897f6fe079a36d10d02dd97a57ad4e2c072b79d95e59ce55c67a",
+    "scripts/blender/mcp501/run_handshake.py": "e09efdeab779c2b8b8079fc8d9d578b921c3f445e352ef08f4fbab85c00610ae"
+  }
+}

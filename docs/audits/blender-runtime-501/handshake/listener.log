@@ -1,0 +1,24 @@
+State  Recv-Q Send-Q               Local Address:Port  Peer Address:PortProcess                                 
+LISTEN 0      4096               100.123.145.115:8443       0.0.0.0:*                                           
+LISTEN 0      4096                     127.0.0.1:8317       0.0.0.0:*    users:(("cli-proxy-api",pid=3400,fd=8))
+LISTEN 0      32                   192.168.122.1:53         0.0.0.0:*                                           
+LISTEN 0      4096                    127.0.0.54:53         0.0.0.0:*                                           
+LISTEN 0      200                      127.0.0.1:5432       0.0.0.0:*                                           
+LISTEN 0      4096               100.123.145.115:443        0.0.0.0:*                                           
+LISTEN 0      5                        127.0.0.1:5054       0.0.0.0:*    users:(("ulauncher",pid=6146,fd=26))   
+LISTEN 0      4096               100.123.145.115:50558      0.0.0.0:*                                           
+LISTEN 0      1024                     127.0.0.1:40000      0.0.0.0:*                                           
+LISTEN 0      4096                     127.0.0.1:631        0.0.0.0:*                                           
+LISTEN 0      70                       127.0.0.1:33060      0.0.0.0:*                                           
+LISTEN 0      4096                 127.0.0.53%lo:53         0.0.0.0:*                                           
+LISTEN 0      151                      127.0.0.1:3306       0.0.0.0:*                                           
+LISTEN 0      5                        127.0.0.1:19876      0.0.0.0:*    users:(("blender",pid=389854,fd=14))   
+LISTEN 0      511                      127.0.0.1:3000       0.0.0.0:*    users:(("MainThread",pid=3408,fd=21))  
+LISTEN 0      10                       127.0.0.1:34991      0.0.0.0:*    users:(("MainThread",pid=306911,fd=62))
+LISTEN 0      511                      127.0.0.1:18789      0.0.0.0:*    users:(("MainThread",pid=3406,fd=25))  
+LISTEN 0      511                      127.0.0.1:18791      0.0.0.0:*    users:(("MainThread",pid=3406,fd=28))  
+LISTEN 0      4096   [fd7a:115c:a1e0::e701:91d7]:53001         [::]:*                                           
+LISTEN 0      4096   [fd7a:115c:a1e0::e701:91d7]:443           [::]:*                                           
+LISTEN 0      511                          [::1]:18789         [::]:*    users:(("MainThread",pid=3406,fd=26))  
+LISTEN 0      4096                         [::1]:631           [::]:*                                           
+LISTEN 0      4096   [fd7a:115c:a1e0::e701:91d7]:8443          [::]:*                                           

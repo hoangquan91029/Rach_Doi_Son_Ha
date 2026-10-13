@@ -1,0 +1,201 @@
+{
+  "schema": "rds-task-receipt/v1",
+  "taskId": "codex-blender502",
+  "purpose": "Registeruserauthorized verifiedBlender MCP readscope with ownedstdioGUI lifecycle and preservedCodexconfiguration",
+  "evidence": "VERIFIED",
+  "inputPins": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "cc426aeb2344eae7a03c912efd7d10813ec999154173e716c58f6dbfe047dae5",
+      "actual": "cc426aeb2344eae7a03c912efd7d10813ec999154173e716c58f6dbfe047dae5"
+    },
+    {
+      "path": "docs/audits/blender-runtime-501/handshake/CHECKPOINT.json",
+      "sha256": "81d67a456d2912917f70b20c5823f3c93fd5a04780ab226528144f3ab2b6e9ff",
+      "actual": "81d67a456d2912917f70b20c5823f3c93fd5a04780ab226528144f3ab2b6e9ff"
+    },
+    {
+      "path": "scripts/blender/mcp500/offline_addon_candidate.py",
+      "sha256": "219a496eda7248dfada013b5c83ce5e3356da590cbf24493dadb65ca92f03c7c",
+      "actual": "219a496eda7248dfada013b5c83ce5e3356da590cbf24493dadb65ca92f03c7c"
+    },
+    {
+      "path": "scripts/blender/mcp500/offline_server_candidate.py",
+      "sha256": "95ccf3d3ee9c88ccd09751530359ff17d36cb35c0e107fdf0787afae8fb5720b",
+      "actual": "95ccf3d3ee9c88ccd09751530359ff17d36cb35c0e107fdf0787afae8fb5720b"
+    },
+    {
+      "path": "scripts/blender/mcp501/addon_launcher.py",
+      "sha256": "010e97960179897f6fe079a36d10d02dd97a57ad4e2c072b79d95e59ce55c67a",
+      "actual": "010e97960179897f6fe079a36d10d02dd97a57ad4e2c072b79d95e59ce55c67a"
+    },
+    {
+      "path": "docs/audits/blender-runtime-500/capability/CHECKPOINT.json",
+      "sha256": "5c0e3540553cf4d509a74953e59d8968d251e031581edb03fdb114ba79f4eea7",
+      "actual": "5c0e3540553cf4d509a74953e59d8968d251e031581edb03fdb114ba79f4eea7"
+    }
+  ],
+  "exclusiveOutputs": [
+    "scripts/blender/mcp502",
+    "docs/audits/blender-runtime-502/connection"
+  ],
+  "lifecycle": {
+    "runs": [
+      {
+        "schema": "rds-owned-stdio/v1",
+        "runDirectory": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/audits/blender-runtime-502/connection/runs/64a7521315c5444f83169d2803df40c4",
+        "port": 19876,
+        "GUIpid": 397323,
+        "serverPID": 397419,
+        "ready": true,
+        "closed": true,
+        "failure": null,
+        "serverExitBeforeCleanup": 0,
+        "serverExit": 0,
+        "GUIexit": -15
+      },
+      {
+        "schema": "rds-owned-stdio/v1",
+        "runDirectory": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/audits/blender-runtime-502/connection/runs/409e7b05d0bc48779f99fa8d75e413eb",
+        "port": 19876,
+        "GUIpid": 396749,
+        "serverPID": null,
+        "ready": false,
+        "closed": true,
+        "failure": "ownedGUI exited 1",
+        "serverExit": null,
+        "GUIexit": 1
+      }
+    ],
+    "testedArgv": [
+      "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/mcp501/venv/bin/python",
+      "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/blender/mcp502/test_lifecycle.py"
+    ],
+    "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+    "correctedExitStatus": 0,
+    "initialExitStatus": 1,
+    "protocolVersion": "2025-11-25",
+    "calls": [
+      "initialize",
+      "tools/list",
+      "get_addon_status",
+      "get_scene_info"
+    ],
+    "status": {
+      "BlenderVersion": "5.0.1",
+      "addonProtocol": 13,
+      "consent": false,
+      "providers": "off"
+    },
+    "limit": "actualread-onlySDK/privatefactoryscene; currentCodextoolinventorynotrefreshed"
+  },
+  "configuration": {
+    "status": "VERIFIED_CONFIGURED_READ_SCOPE",
+    "path": "/home/kieu-hoang-quan/.codex/config.toml",
+    "beforeSHA256": "20aa532d40c7eee9316071622627b881feec6b99987fc615c64ab3545027208a",
+    "afterSHA256": "d668332dbd482b43cf4ce73ada44e73c32f080a18a6bff2c3c2da2bde804a03f",
+    "rawPrefixPreserved": true,
+    "otherParsedEntriesPreserved": true,
+    "originalMode": "0o600",
+    "afterMode": "0o600",
+    "backup": {
+      "path": "/home/kieu-hoang-quan/.codex/backups/blender502-416281f47f4641b4a3e7b33a84988f8e/config.toml.before",
+      "mode": "0o600",
+      "sha256": "20aa532d40c7eee9316071622627b881feec6b99987fc615c64ab3545027208a"
+    },
+    "serverNamesBefore": [
+      "mysql-marketing",
+      "node_repl"
+    ],
+    "serverNamesAfter": [
+      "mysql-marketing",
+      "node_repl",
+      "rds_blender501"
+    ],
+    "enabledTools": [
+      "get_addon_status",
+      "get_scene_info"
+    ],
+    "toolExposure": "UNKNOWN currentchat inventory notrefreshed; noapprestart",
+    "scope": "Configurationonly; noauthoring/generation/production"
+  },
+  "actualToolInventory": {
+    "blenderToolNames": [],
+    "method": "currentALL_TOOLS namefilter",
+    "scope": "currentagentcatalogonly; futureapprefreshUNKNOWN"
+  },
+  "failures": [
+    {
+      "status": "FAILED_REPAIRED",
+      "observation": "SDKstdio environment omittedactualGUI variables; initialGUIexit1/no listener. Documented env_vars forwarding corrected, initialreceiptretained",
+      "log": "docs/audits/blender-runtime-502/connection/sdk-initial-error.log"
+    }
+  ],
+  "checks": [
+    {
+      "method": "actualnativeSDKinitialize/list/status/scene throughchangedownedlauncher",
+      "status": "VERIFIED",
+      "exitStatus": 0,
+      "receipt": "docs/audits/blender-runtime-502/connection/sdk-response.json"
+    },
+    {
+      "method": "oldconfigprefix+parsedCAS/TOML/mode+atomicwrite/privatebackup",
+      "status": "VERIFIED",
+      "receipt": "docs/audits/blender-runtime-502/connection/config-receipt.json"
+    },
+    {
+      "method": "stdinEOFlifecycle+finalps/ss",
+      "status": "VERIFIED",
+      "observation": "server0/GUI-15/closedlistener/noownedprocessremaining",
+      "limit": "SIGTERM path structurallyimplemented; noadditionalfulltest replay"
+    }
+  ],
+  "counts": {
+    "initialFailedGUIstarts": 1,
+    "correctedSuccessfulGUIstarts": 1,
+    "nativeHandshakesSucceeded": 1,
+    "configServerAppends": 1,
+    "extraDependencyInstalls": 0,
+    "arbitraryCodeCalls": 0,
+    "generations": 0,
+    "artRenders": 0,
+    "CodexRestarts": 0,
+    "productionChanges": 0
+  },
+  "handles": {
+    "allOwnedClosed": true,
+    "terminalSession21353Closed": true,
+    "currentListener19876": false
+  },
+  "acceptance": {
+    "ownedLifecycle": "VERIFIED",
+    "CodexConfig": "VERIFIED",
+    "currentChatToolExposure": "UNKNOWN",
+    "sceneAuthoring": "NOT_PERFORMED",
+    "appearance": "UNKNOWN",
+    "motion": "UNKNOWN",
+    "owner": "UNKNOWN",
+    "release": "UNKNOWN"
+  },
+  "nextDependency": "Rootintake and actualrefreshedMCPinventory/connection beforeactive/exposedclaim; characterpilot gatesremainOPEN",
+  "outputPins": {
+    "docs/audits/blender-runtime-502/connection/README.md": "3251a86e13605dcf533ae465c1d7b6e705e43d467fa166208906cb11ae79fe31",
+    "docs/audits/blender-runtime-502/connection/server-stanza.toml": "ee0308ec0a6177041e864da520423acd800711b377ca3fb65a49f0ec72d5119f",
+    "docs/audits/blender-runtime-502/connection/sdk-response.json": "922a55782c8f2b2e39e6b4a810743502f8886b303c51bd52ad833aef0ca9c104",
+    "docs/audits/blender-runtime-502/connection/sdk.log": "d40d5a2d8f8549cf2e04de33ada0c104f8b796648a6b72e2e852f569781811d6",
+    "docs/audits/blender-runtime-502/connection/sdk-initial-error.log": "452726345844dbac8c334a7bbe8724d83b325085070441cc12c5560fae94d967",
+    "docs/audits/blender-runtime-502/connection/assignment.json": "2ea198db7c8db55e39efcb7c43e45038a0207318a46eecc84fc3febdb80131a7",
+    "docs/audits/blender-runtime-502/connection/preflight.log": "598a747babcc13c70584da408bb1e712f9bb2a7fcb09ba6ef487cbe00c3048ae",
+    "docs/audits/blender-runtime-502/connection/config-receipt.json": "ec403955640283aa32607c38574934286b1752ba51593005cb9213128fe2d0f8",
+    "docs/audits/blender-runtime-502/connection/runs/64a7521315c5444f83169d2803df40c4/receipt.json": "755f08337f94f121e9640106f4f784c7571069141cd69233c67493e45afc42a1",
+    "docs/audits/blender-runtime-502/connection/runs/64a7521315c5444f83169d2803df40c4/gui.log": "8d0eb2b4dd3d8c16e3abd86e6fc9f769e5fd7e96680f4eed2f9f030f5def518c",
+    "docs/audits/blender-runtime-502/connection/runs/64a7521315c5444f83169d2803df40c4/listener.log": "7cfeaed7db98fcd7a1681953e40d26169e78a6ca7153611b5007bfa6f9371c4b",
+    "docs/audits/blender-runtime-502/connection/runs/64a7521315c5444f83169d2803df40c4/listener-closed.log": "c197d3a326943478f230167435f7ec1412ad2129b4475bb04c8af176f83bdaaf",
+    "docs/audits/blender-runtime-502/connection/runs/409e7b05d0bc48779f99fa8d75e413eb/receipt.json": "4795a5cd62179f7b80bbdff866806754f833dc548a0e878a1a3ecbe31000446f",
+    "docs/audits/blender-runtime-502/connection/runs/409e7b05d0bc48779f99fa8d75e413eb/gui.log": "c6b521fc67d0a2f1ef0ae4d3464ca477de7718d85d59ca24f7149ae65686dd12",
+    "docs/audits/blender-runtime-502/connection/runs/409e7b05d0bc48779f99fa8d75e413eb/listener-closed.log": "c197d3a326943478f230167435f7ec1412ad2129b4475bb04c8af176f83bdaaf",
+    "scripts/blender/mcp502/lifecycle.py": "006073d5bf82ad5f4a42c507194e545c2992607f0bdac7169c70d8edf8b3abd0",
+    "scripts/blender/mcp502/test_lifecycle.py": "47d158e678aa59312039667eaf462b00c0f436d03edfa54d2328592900a415d0",
+    "scripts/blender/mcp502/register_config.py": "4f4b33a3d7973955275a9a417fc4ece4f3295cdccbe22de2d0a24a8f776c4b52"
+  }
+}

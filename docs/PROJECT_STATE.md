@@ -1,5 +1,15 @@
 # Project state — current transition499, 13 October 2026
 
+## Live500/501 continuation — goal ACTIVE, Blender CPU now verified
+
+`get_goal` now reports ACTIVE after the app/user resumed continuation. Previous499 PAUSED observation remains history, not current state.
+
+- VERIFIED500: exact Ubuntu signedAPT package closure71packages/139,745,492bytes extracted in isolated userland; no systeminstall/driverrepair. Blender5.0.1/Python3.14.4 headlessbpy + actualCPU256RGBA render works. GPU performance is UNKNOWN. See [capability](audits/blender-runtime-500/capability/CHECKPOINT.json).
+- VERIFIED501 technicalexport: actual freshBlender existingexporter generatedfour256RGBA fixtureframes. Freshload dirtyflag issue corrected by source-pinned reload onlyinbackground; interactiveunsavedstate rejected.28focusedchecks fromworker, actualAPIreceipt retained; syntheticfixture notcharacterart. [Export](audits/blender-runtime-501/export-fixture/CHECKPOINT.json).
+- VERIFIED501/502 privateGUI/MCP: nativeSDKinitialize/status/scene succeeded withconsentfalse/providersoff; testedstdio lifecycle closesownedGUI/listener. UserauthorizedCodexconfig append read-only rds_blender501 status/scene, existingentries/mode/rawprefix/privatebackup retained. Currentchattoolcatalog notyetexposed; don'tclaimnativeagentcalls occurred. [Connection](audits/blender-runtime-502/connection/CHECKPOINT.json).
+- FAILED501 originalVillagerneutralmodel firstD0/D1render: actualcurvedvolume/packedwholeoriginaltexture exists, but texture/head/hat appearance diverges;0selected/0rig/0walk/0runtime. RootnamedexactUV andfrontbrim defects; ONEreservedcorrectionconsumed1/1, stillFAILED underroot71pxlook.501CLOSED/HELD, no furtherretry/rig/walk/fanout. Initialbytespreserved. [Initial](art/pipeline/blender-villager-501/CHECKPOINT.json).
+- FAILED500 online100TOTALattempt: ordinarytwohumanroom/gathers worked, selectionrace clicked26ratherthan27; guardstopped/no training/profile100. Contexts/serverclosedrooms0/654pinsexact.502paused acquisition wasSOURCEBLOCKED, zeroattempt: onlinePausepaneldoesnotfreezefield.503groundanchor dragrectangle passed16exactacquisitions/14gather/10trainobservations, thenfirstqueue-confirmationtimeoutSTOP at32TOTAL.100/profile60sNOTRUN; causeUNKNOWN (briefsnapshotsomitqueues), no gamebug/rejection/completionrace inferred. Bothordinarymenus/rooms0/651pinsexact. Dense/100viewport/public/WAN OPEN.
+
 ## Latest499 state — read before historical sequence below
 
 Human accepted Blender model/rig → complete2D sprite PNG and parallel exactSol6.1Low delegation. Older no-character3D/Blender authoring rule is superseded; realistic SAME original unit, no crude geometric final art, no mirrors/per-frame fit and simulation authority remain. [Active Blender pipeline](art/pipeline/BLENDER_SPRITE_PIPELINE.md).

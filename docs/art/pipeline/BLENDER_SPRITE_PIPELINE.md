@@ -10,7 +10,7 @@ MCP is a transport to control Blender. It does not reconstruct the approved unit
 
 ## B0 — establish actual capability
 
-Read capability499 and runtime499 receipts, inspect actual executable and exposed tools. Root plugin search returned no Blender entry and this session exposed no Blender tool. Bounded local lookup found no executable. A portable official build needs exact version/published checksum, actual headless bpy and transparent CPU render before any model/render claim. No driver repair or system upgrade follows from prior CUDA failure. Only one task owns setup/config; other workers prepare source-bound tooling/specs.
+Read capability499 and runtime499 receipts, inspect actual executable and exposed tools. Historical499 root plugin search had no Blender entry and bounded lookup found no executable. Current500 verifies signedUbuntuAPT userland Blender5.0.1 CPU/bpy/PNG and501actualexport compatibility.502 privateGUI/MCP lifecycle and Codex readscope registration verified; currentchattool exposure remainsUNKNOWN. A portable official build needs exact version/published checksum, actual headless bpy and transparent CPU render before any model/render claim. No driver repair or system upgrade follows from prior CUDA failure. Only one task owns setup/config; other workers prepare source-bound tooling/specs.
 
 Existing `--task art` preflight correctly rejects two unresolved498 image-provider claims. Do not claim it passed or reset those claims. A future independent Blender scene-authoring assignment needs root-scoped ownership and an explicit capability/model task intake; inspect with the existing audit/runtime preflight and record the distinct route, not a blanket imagegen bypass. This does not authorize any image-provider call, retry or settlement. Scene/camera/model pins and owned Blender handles must be checked separately.
 
@@ -73,3 +73,9 @@ Use the existing compiler/preview after a source/layout adapter is actually vali
 ## Remaining full-project lanes
 
 World/building lifecycle/maps/stone-wall rules and meaningful dense/live-room profiling may progress independently. Building compiler498 is local packaging work, not a finished construction clip. The interrupted F1/F3 provider claims remain UNRESOLVED and consumed; no retry/refund/selection until actual tool mapping returns. Current public451/immutable230 remain separate from local changes; shared fixes require paired release and verified current rollback. Final bare HTTPS, two modes/two maps, externaldesktop/WAN and all critical completion matrix gates remain OPEN.
+
+## Current501 appearance failure / authoring boundary
+
+ActualneutralD0/D1 from procedural garment/body volumes + oneglobalcanonicaltextureprojection failed originalappearance. Root identified activeUV andfrontbrim defects; exactlyonecorrection stillfailshead/face/silhouette at71px.501CLOSED/HELD; preserveallraw/scene/script/initial/correctionbytes, 0selected/0rig/0walk/0fanout. NativeBlender/UVfix success cannotapprove a differentunit.
+
+Next source-control research is a bounded originaltwo-view geometry/semanticmaterial calibration (source-feature/body landmarks, continuousclothedsurfaces, explicitUV/material regions onwholeoriginaltexture, measuredcamera residual). It mustmateriallydiffer fromglobaltexture projection onto genericlofts; no further501parameter tweaks undernewID. This is PROPOSED, notinstalled/qualifiedmodel orpermission for unboundedrenders. Root finite task and originalsourcepins/independentappearance gate beforemotion. Keepnewsource256/runtime128/fixedfamilypivot; sourcefit happens once onneutralmodel, never perframeimagewarp/fit. No separate limbtexturefiles orbillboardunit.

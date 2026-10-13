@@ -1,0 +1,152 @@
+{
+  "schema": "rds-task-receipt/v1",
+  "taskId": "online-rectangle503",
+  "status": "VERIFIED_RECTANGLE_ACQUISITION_FAILED_TRAIN_CONFIRMATION_NO_RETRY",
+  "purpose": "Verifiedexistinggroundanchor dragrectangle acquisition bypassesspriteoverlapwithoutfreezingonlinefield; ONE100TOTALroomprofile",
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "cc426aeb2344eae7a03c912efd7d10813ec999154173e716c58f6dbfe047dae5"
+    },
+    {
+      "path": "client/main.js",
+      "sha256": "ed8e60ebc54da9d4a6f258be153a63bc72034ff8cca011480a2a1b97de4a8957"
+    },
+    {
+      "path": "client/renderer.js",
+      "sha256": "d2c34bc266c03c95b2379ebc3c115993a338dbe2de826507ddf6450ab1b53553"
+    },
+    {
+      "path": "scripts/qa/online-profile500.mjs",
+      "sha256": "6de2772270db7f3fc27449a7ed96813a9f77f83044e92e1358f61bc9b284d55b"
+    },
+    {
+      "path": "docs/qa/online-profile-500/CHECKPOINT.json",
+      "sha256": "9cf4ec4d7c2e46ed30f7f3f7f619e6def38bb1b2734c8ef097c7c42ecc922f85"
+    },
+    {
+      "path": "docs/qa/online-profile-502/CHECKPOINT.json",
+      "sha256": "7490cf0e4ff1d2c399d5ab6a4db7e78975eb726184fdacc0f1f0317dfb296eca"
+    }
+  ],
+  "inputPinsExact": true,
+  "exclusiveOutputs": [
+    "scripts/qa/online-profile503.mjs",
+    "docs/qa/online-profile-503"
+  ],
+  "actualTools": [
+    "exec_command",
+    "PlaywrightChromium151 ordinaryUI",
+    "read-onlyrtsDiagnostics",
+    "view_image actualfailurePNG"
+  ],
+  "method": "10x10px ordinarygroundanchor drag, idle/order-null100msstable target, livingownnoembark, no otherlivingownanchor within15px x/y halfextent; exactselection verified beforecommand. Buildings use stationarynongroundfallback entityPoint candidate and exactselection",
+  "checks": {
+    "preflightRuntime": "exit0",
+    "syntax": "node--check exit0",
+    "frozenPins": 651,
+    "allPinsExact": true,
+    "reusedBuild": "prior500core/stage/build exact scopedpins",
+    "rectangleAcquisitions": 16,
+    "gatherOrderConfirmed": 14,
+    "trainQueueConfirmed": 10,
+    "errors": 0,
+    "requestFailures": 0
+  },
+  "failure": {
+    "error": "Error: Finite ordinary UI guard timed out\n    at wait (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/qa/online-profile503.mjs:5:190)\n    at async train (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/qa/online-profile503.mjs:9:609)\n    at async file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/qa/online-profile503.mjs:11:3300",
+    "type": "trainingqueueconfirmation timeout",
+    "limit": "Actual post-click fullqueue state not retained in brief snapshots; exactcause UNKNOWN. Do not infer cost/queue legality or repeat from timeout alone."
+  },
+  "actualCohort": {
+    "totalLiving": 32,
+    "perSide": [
+      16,
+      16
+    ],
+    "target": "100TOTAL=50perSide",
+    "profile60s": "NOT_RUN",
+    "fogVisibleEntityCounts": [
+      20,
+      20
+    ],
+    "successfulRasterDraws": [
+      20,
+      20
+    ],
+    "viewportDensity": "UNKNOWN successfuldrawcounter may includeoffcanvas; fogdisplayedcount not viewport"
+  },
+  "cleanup": [
+    {
+      "side": 0,
+      "menuVisible": true,
+      "tick": null,
+      "paused": false
+    },
+    {
+      "side": 1,
+      "menuVisible": true,
+      "tick": null,
+      "paused": false
+    }
+  ],
+  "handles": {
+    "browserConnected": false,
+    "serverListening": false,
+    "rooms": 0
+  },
+  "attempts": {
+    "newRooms": 1,
+    "retry": 0,
+    "stateOrCommandInjection": 0,
+    "gameSourceChanges": 0
+  },
+  "nextDependency": "Source-bound stronger training acceptance observation may consider authoritative newqueue OR completedunit/resource delta with exacttype/cost/time, before another separatelyregisteredfiniteattempt; this method has proven unitrectangleselection but100total remainsOPEN",
+  "acceptance": {
+    "ordinaryRectangleSelection": "VERIFIED exact16acquisitions",
+    "localTwoHumanRoom": "VERIFIED oneDelta room ordinaryUI and cleanleave",
+    "performance100": "UNKNOWN NOT_RUN",
+    "GPU": "UNKNOWN",
+    "fullRoster": "UNKNOWN",
+    "publicWAN": "UNKNOWN",
+    "fullGoal": "OPEN"
+  },
+  "outputs": [
+    {
+      "path": "docs/qa/online-profile-503/assignment.json",
+      "sha256": "c4ea80e061822475f40fcb8032f57b839235c46d982c0101b09fe67a706fa213"
+    },
+    {
+      "path": "docs/qa/online-profile-503/config.json",
+      "sha256": "af50ea25c5e21b09d363fcaf81d95cafbf30dbf854db4c4303a29a0e9d6cb158"
+    },
+    {
+      "path": "docs/qa/online-profile-503/failure-side0.png",
+      "sha256": "9f13956001fa2c3cbc11aafd0be132d80f02a2c3f4eb13ded99adcfd6b959b57"
+    },
+    {
+      "path": "docs/qa/online-profile-503/failure-side1.png",
+      "sha256": "235138793f2aeb1603e85d31120d57bf910355aa14274350ea489161ac3aaffa"
+    },
+    {
+      "path": "docs/qa/online-profile-503/live-handles.json",
+      "sha256": "dfb646af4bfb5b2749f988743e34e1fa92d44caa455da9287e3e1fc64ef142f9"
+    },
+    {
+      "path": "docs/qa/online-profile-503/preflight.json",
+      "sha256": "4f936e834e63a42ca07fb27d50a37db4a3a50da52005648f862d82c9343d0d31"
+    },
+    {
+      "path": "docs/qa/online-profile-503/receipt.json",
+      "sha256": "7b2c9110b914d05185f80b0b16512a9f3cd078847617471da67aa646a27caf38"
+    },
+    {
+      "path": "docs/qa/online-profile-503/run.log",
+      "sha256": "8b6721359d5f089bd5ab260c20a82d468b12768d07b0daaca15cebd69e9a5788"
+    },
+    {
+      "path": "scripts/qa/online-profile503.mjs",
+      "sha256": "fe155e7f91456e7f10edd5872c6a35f1db2d4fbaea0dfe29c3e9c5c199d390ed"
+    }
+  ]
+}

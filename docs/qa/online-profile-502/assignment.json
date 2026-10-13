@@ -1,0 +1,49 @@
+{
+  "schema": "rds-agent-task/v1",
+  "id": "online-acquisition502",
+  "status": "ACTIVE",
+  "purpose": "RepairdemonstratedUIacquisition race throughordinaryPause/Resume and one finite100TOTALtwohuman profile, no gameplaychange",
+  "worker": {
+    "id": "/root/blender_capability499",
+    "role": "WORKER",
+    "model": "gpt-6.1-sol",
+    "reasoningEffort": "low"
+  },
+  "outputs": [
+    "scripts/qa/online-profile502.mjs",
+    "docs/qa/online-profile-502"
+  ],
+  "slots": [],
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "cc426aeb2344eae7a03c912efd7d10813ec999154173e716c58f6dbfe047dae5"
+    },
+    {
+      "path": "scripts/qa/online-profile500.mjs",
+      "sha256": "6de2772270db7f3fc27449a7ed96813a9f77f83044e92e1358f61bc9b284d55b"
+    },
+    {
+      "path": "docs/qa/online-profile-500/CHECKPOINT.json",
+      "sha256": "9cf4ec4d7c2e46ed30f7f3f7f619e6def38bb1b2734c8ef097c7c42ecc922f85"
+    },
+    {
+      "path": "client/renderer.js",
+      "sha256": "d2c34bc266c03c95b2379ebc3c115993a338dbe2de826507ddf6450ab1b53553"
+    },
+    {
+      "path": "client/main.js",
+      "sha256": "ed8e60ebc54da9d4a6f258be153a63bc72034ff8cca011480a2a1b97de4a8957"
+    },
+    {
+      "path": "shared/sim.js",
+      "sha256": "c9a01adba8630e89e1c3f195c1b98c08c32e74468d389a55891c664e3906e562"
+    },
+    {
+      "path": "server/index.js",
+      "sha256": "4e6a7e82f02d1d856f4ea788863c4836930bc00250be6a5b020ba2bdd8884198"
+    }
+  ],
+  "allowedOperations": "ONE concretechangedUIacquisition: ordinaryhostPause bothclientsstatepaused confirm, exactselectedactor pickwhilefrozen thenordinaryResume/orderconfirmation. Handleactualopponentleave resultMenu cleanup insteadPauseaftermodal. Reusefrozen500build ONLYexactsamecorepins/hash; freshguardcore/stage/build/harness. One100TOTAL50perSide prep<=12min+60s profile; noAI, no blindretry/injection/forceclick/weakguards/production. Reportactualviewportdraw counts ifavailable, total!=visible. No corecodeedits.",
+  "acceptance": "Proofnewordinaryacquisition removesdemonstratedrace thenscopedtwohumanperformance orhonestfinitefailure; allhandlesclosed/rooms0"
+}

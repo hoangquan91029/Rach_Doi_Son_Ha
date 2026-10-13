@@ -1,0 +1,273 @@
+{
+  "schema": "rds-task-receipt/v1",
+  "taskId": "blender-apt500",
+  "status": "VERIFIED_HEADLESS_CPU_PNG",
+  "purpose": "Alternate supported publisher: Ubuntu signedAPT package isolated Blender runtime; no systeminstall or uncheckedmirror",
+  "head": "d74bd406c10f217e5f72c8e6249884b55e3fa1ec",
+  "exclusiveOutputs": [
+    "docs/audits/blender-runtime-500/capability"
+  ],
+  "externalInstallRoot": "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/blender500",
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "cc426aeb2344eae7a03c912efd7d10813ec999154173e716c58f6dbfe047dae5"
+    },
+    {
+      "path": "docs/audits/blender-transition-499/runtime/CHECKPOINT.json",
+      "sha256": "ac91fc762a92d06b250c1cd6acd8b51cec80a933e528e9517992fef93e23a1de"
+    }
+  ],
+  "inputPinsRechecked": true,
+  "actualTools": [
+    "apt-cache policy/show",
+    "apt-get simulate no-install-recommends",
+    "apt-get indextargets",
+    "gpgv Ubuntu archive keyring",
+    "apt-helper cat-file",
+    "Python urllib HTTPS exact Ubuntu packages",
+    "dpkg-deb fsys-tarfile",
+    "Python tarfile safe extraction",
+    "Blender absolute binary",
+    "Pillow PNG inspection",
+    "view_image visual fixture check"
+  ],
+  "packageEvidence": {
+    "version": "5.0.1+dfsg-1ubuntu1",
+    "blenderSha256": "53e7a3b2bd496031e59582b88b4a2cb38ccff8d131a66b03a2e05e97a32d46f4",
+    "packages": 71,
+    "downloadBytes": 139745492,
+    "capBytes": 838860800,
+    "signedMetadata": "VERIFIED gpgv signatures resolute/updates/security plus decompressed main/universe Packages hashes; exact downloaded package SHA256/size checked before extraction",
+    "license": "Ubuntu package copyright copied; mixed GPL Blender and dependency license details in retained copyright",
+    "extraction": "userland-only, no maintainer scripts executed; safe entry paths and link destinations within root",
+    "missingDependencies": "APT simulation no-install-recommends selected currently missing dependency closure; installed host libraries reused"
+  },
+  "runtime": {
+    "binary": "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/blender500/root/usr/bin/blender",
+    "binarySha256": "6e7b6dc680f12157007afbd2511b9a3b431a06da6a80c1f7179e647c9c42a15a",
+    "blenderVersion": "5.0.1",
+    "pythonVersion": "3.14.4",
+    "checks": {
+      "checks": [
+        {
+          "name": "version",
+          "argv": [
+            "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/blender500/root/usr/bin/blender",
+            "--version"
+          ],
+          "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/audits/blender-runtime-500/capability",
+          "exitCode": 0,
+          "elapsedSeconds": 0.1305617899997742
+        },
+        {
+          "name": "help",
+          "argv": [
+            "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/blender500/root/usr/bin/blender",
+            "--help"
+          ],
+          "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/audits/blender-runtime-500/capability",
+          "exitCode": 0,
+          "elapsedSeconds": 0.131004381000821
+        },
+        {
+          "name": "bpy",
+          "argv": [
+            "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/blender500/root/usr/bin/blender",
+            "--background",
+            "--factory-startup",
+            "--disable-autoexec",
+            "--python-expr",
+            "import bpy,sys; print(bpy.app.version_string); print(sys.version)"
+          ],
+          "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/audits/blender-runtime-500/capability",
+          "exitCode": 0,
+          "elapsedSeconds": 1.0283640380002907
+        }
+      ],
+      "environmentOverrides": {
+        "LD_LIBRARY_PATH": "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/blender500/root/usr/lib/x86_64-linux-gnu:/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/blender500/root/usr/lib:/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/blender500/root/usr/lib/x86_64-linux-gnu/openblas-pthread",
+        "BLENDER_SYSTEM_RESOURCES": "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/blender500/root/usr/lib/blender",
+        "BLENDER_SYSTEM_SCRIPTS": "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/blender500/root/usr/lib/blender/scripts",
+        "BLENDER_SYSTEM_DATAFILES": "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/blender500/root/usr/lib/blender/datafiles"
+      }
+    },
+    "fixture": {
+      "argv": [
+        "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/blender500/root/usr/bin/blender",
+        "--background",
+        "--factory-startup",
+        "--disable-autoexec",
+        "--python",
+        "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/audits/blender-runtime-500/capability/fixture.py"
+      ],
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/audits/blender-runtime-500/capability",
+      "exitCode": 0,
+      "elapsedSeconds": 0.5373668169995653
+    },
+    "png": {
+      "mode": "RGBA",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "ff82082a041cd1aa9daf4759455e4844d9824e30a71e91bce96239c18a90c7c0",
+      "bytes": 35315
+    },
+    "engine": "CYCLES",
+    "device": "CPU",
+    "samples": 8,
+    "threads": 2,
+    "visualObservation": "single faceted sphere visible; transparency demonstrated by alpha0..255, no character art",
+    "gpu": "UNKNOWN; no GPU runtime tested"
+  },
+  "initialFailuresRetained": [
+    "initial-index-error.log: updates package absent in resolute-only lookup; signedupdates/security indexes added",
+    "initial-symlink-error.log: normal relative doclink rejected by overlystrict check; resolved-destination containment repair",
+    "initial-libspnav-error.log: isolated usr/lib needed in LD_LIBRARY_PATH",
+    "initial-openblas-error.log: package alternatives nested openblas-pthread library directory needed",
+    "initial-resource-error.log: initial headless exit-11 missing scripts/datafiles; actual --help documented explicitresource env overrides then exit0"
+  ],
+  "counts": {
+    "imageCalls": 0,
+    "characterModels": 0,
+    "technicalRenders": 1,
+    "mcpConfigChanges": 0,
+    "systemInstalls": 0,
+    "driverChanges": 0,
+    "productionChanges": 0
+  },
+  "handles": {
+    "downloadSession": {
+      "id": 46410,
+      "exitCode": 0,
+      "closed": true
+    },
+    "runtimeSessions": [
+      {
+        "id": 87156,
+        "closed": true
+      },
+      {
+        "id": 43384,
+        "closed": true
+      }
+    ],
+    "allOwnedClosed": true
+  },
+  "preservation": "Prior499 receipts inputpins exact; originals/ledger/production not modified",
+  "acceptance": {
+    "technicalHeadlessCPU": "VERIFIED",
+    "gui": "UNKNOWN",
+    "MCP": "UNKNOWN not configured",
+    "identity": "UNKNOWN",
+    "motion": "UNKNOWN",
+    "eightDirections": "UNKNOWN",
+    "owner": "UNKNOWN",
+    "release": "UNKNOWN",
+    "fullGoal": "OPEN"
+  },
+  "nextDependency": "Root may use exact binary/environment for exporter technical fixture; MCP requires separately reviewed pinned server/addon/config and reconnect, character pilot needs originalidentity authoring and independent review",
+  "outputs": [
+    {
+      "path": "docs/audits/blender-runtime-500/capability/acquire.log",
+      "sha256": "e405893be6b4e15717228282d3478c92d9dda9a3624918d3aea5a26fcbd1c522"
+    },
+    {
+      "path": "docs/audits/blender-runtime-500/capability/acquire.py",
+      "sha256": "05cf43b532a0cfb903ac102b660dd215c40aaff60a80f95f9931092f7b4c8858"
+    },
+    {
+      "path": "docs/audits/blender-runtime-500/capability/apt-simulation.log",
+      "sha256": "57ff242287953dd95a70e2aa56f072c1c33d2671eeaa6104ff37591f0e67f7da"
+    },
+    {
+      "path": "docs/audits/blender-runtime-500/capability/assignment.json",
+      "sha256": "b663d128a1aab422156c07f5997ed7c52b770bb7862fd10ec6bd8b6fdb060164"
+    },
+    {
+      "path": "docs/audits/blender-runtime-500/capability/blender-changelog.Debian.gz",
+      "sha256": "9a54fa9c72de351db18b9fc129f5659bc308845e55a247c417f6cf02ac1310cb"
+    },
+    {
+      "path": "docs/audits/blender-runtime-500/capability/blender-copyright",
+      "sha256": "e002e0b0ad8324cf58ed3eeae3c849bac9dc43ebd132a8c3c84e5ef761fdb8d6"
+    },
+    {
+      "path": "docs/audits/blender-runtime-500/capability/bpy.log",
+      "sha256": "18f682a92e753d1489c97db6d7ecbcc403a6ad44c08a225d0829932b5ed4a5aa"
+    },
+    {
+      "path": "docs/audits/blender-runtime-500/capability/check-runtime.py",
+      "sha256": "e10ff1c0c003bfc620f82d54405abd35be11169f0d04e8d3c060fd05afabe700"
+    },
+    {
+      "path": "docs/audits/blender-runtime-500/capability/fixture-check.json",
+      "sha256": "00652a7ca3484906715609b4be384b92a87fbd776a2fb9e8700bd223e727748a"
+    },
+    {
+      "path": "docs/audits/blender-runtime-500/capability/fixture.log",
+      "sha256": "26ecc2a383427fdb63fe68b6be7933ee7bef84f6ff84a43181115c09ad02a7ce"
+    },
+    {
+      "path": "docs/audits/blender-runtime-500/capability/fixture.png",
+      "sha256": "ff82082a041cd1aa9daf4759455e4844d9824e30a71e91bce96239c18a90c7c0"
+    },
+    {
+      "path": "docs/audits/blender-runtime-500/capability/fixture.py",
+      "sha256": "80b2143b12e4c7277763a74cbee9887a6ae06027e9196749ef299d0850f802cb"
+    },
+    {
+      "path": "docs/audits/blender-runtime-500/capability/help.log",
+      "sha256": "bdc30046f111ad6261f9d5764ad192d4618e2a8153abcb76e4fdc28414fd7c77"
+    },
+    {
+      "path": "docs/audits/blender-runtime-500/capability/initial-index-error.log",
+      "sha256": "d9b0aef4af0a0ef089e62598a926ec15f2a55e85ae490c50767590564e56bbb3"
+    },
+    {
+      "path": "docs/audits/blender-runtime-500/capability/initial-libspnav-error.log",
+      "sha256": "b2587b00859b30e7a17f521f90eaeb7619c96c8f1ea0c3d22b39c0f14283b11d"
+    },
+    {
+      "path": "docs/audits/blender-runtime-500/capability/initial-openblas-error.log",
+      "sha256": "cb3f636405d7bca2d1aa9e24fa0145a906100a721acb8dd1c38aa82ef7bac2f8"
+    },
+    {
+      "path": "docs/audits/blender-runtime-500/capability/initial-resource-error.log",
+      "sha256": "7683c244173aa39336b6787146adbccdf1acd77131e261c59f1aa21a781feffd"
+    },
+    {
+      "path": "docs/audits/blender-runtime-500/capability/initial-symlink-error.log",
+      "sha256": "3c0ad97fb92a7594e1c2f7ff5b227d87982c9816003606f6bc80726c6d36dbea"
+    },
+    {
+      "path": "docs/audits/blender-runtime-500/capability/package-plan.json",
+      "sha256": "debb8dfcccc814e04303e5275f12723f2427604ed159182ced606648ade2a433"
+    },
+    {
+      "path": "docs/audits/blender-runtime-500/capability/png-check.json",
+      "sha256": "1220284b228e670e71b98d7dedf85ecfb7777e1a5879bb769f25e39704bd40a7"
+    },
+    {
+      "path": "docs/audits/blender-runtime-500/capability/preflight.json",
+      "sha256": "cf490aa1abe8b9ffa24ac9264499ec55f8b62c15338e7d99809ac3cb116a2186"
+    },
+    {
+      "path": "docs/audits/blender-runtime-500/capability/runtime-checks.json",
+      "sha256": "8b31a0f43b8716311f84631ffa3bc15b11f5d5c99fae7a696e04d809937b2788"
+    },
+    {
+      "path": "docs/audits/blender-runtime-500/capability/signature.log",
+      "sha256": "832b6fedf310d52fbeac2a8d6b189af62ce57a0bfc833609f6ddad6cba285c5e"
+    },
+    {
+      "path": "docs/audits/blender-runtime-500/capability/version.log",
+      "sha256": "e81795d58d953fc8533c30b2cb2ac6100f2d116ea99749079aa28567510f1096"
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "schema": "rds-agent-receipt/v1",
+  "taskId": "online-profile500",
+  "status": "FAILED_FIRST_UI_SELECTION_NO_RETRY",
+  "purpose": "one new localOnlineDelta twohuman100total=50perside cohort attempt",
+  "head": "d74bd406c10f217e5f72c8e6249884b55e3fa1ec",
+  "exclusiveOutputs": [
+    "scripts/qa/online-profile500.mjs",
+    "docs/qa/online-profile-500"
+  ],
+  "tools": [
+    "exec_command",
+    "PlaywrightChromium151.0.7922.34 ordinaryUI/read-onlyrtsDiagnostics",
+    "view_image failure screenshots"
+  ],
+  "checks": {
+    "runtimePreflight": "VERIFIED scopedtaskinputs exit0",
+    "harnessSyntax": "VERIFIED node--check exit0",
+    "build": "VERIFIED isolatedstage35modules index-YbNGhd_5.js",
+    "frozenPins": 654,
+    "preservationAllExact": true,
+    "processExit": 0,
+    "errorCount": 0,
+    "requestFailureCount": 0
+  },
+  "scope": {
+    "targetTotalLiving": 100,
+    "targetPerSide": 50,
+    "actualTotalLiving": 26,
+    "actualPerSide": [
+      {
+        "localPlayer": 0,
+        "tick": 265,
+        "ownLiving": 13,
+        "visibleEntities": 17,
+        "visibleLivingUnits": 13,
+        "population": 13,
+        "populationCap": 120,
+        "types": {
+          "king": 1,
+          "general": 1,
+          "villager": 6,
+          "infantry": 3,
+          "spearman": 1,
+          "wagon": 1
+        },
+        "frameMs": 2.9000000059604645
+      },
+      {
+        "localPlayer": 1,
+        "tick": 273,
+        "ownLiving": 13,
+        "visibleEntities": 17,
+        "visibleLivingUnits": 13,
+        "population": 13,
+        "populationCap": 120,
+        "types": {
+          "king": 1,
+          "general": 1,
+          "villager": 6,
+          "infantry": 3,
+          "spearman": 1,
+          "wagon": 1
+        },
+        "frameMs": 2.2999999970197678
+      }
+    ],
+    "visibleCountsLimit": "visibleEntities/visibleLivingUnits are fog-filtered displayedState counts, NOT measured on-screen draw counts; exact viewport density UNKNOWN",
+    "viewport": [
+      1920,
+      1080
+    ],
+    "dpr": 1,
+    "zoom": 1.68,
+    "profile60s": "NOT_RUN",
+    "actualRenderAndRAFPercentiles": null
+  },
+  "actions": {
+    "gatherAccepted": 9,
+    "generalHoldPerSide": true,
+    "trainAccepted": 0,
+    "stateOrCommandInjection": false
+  },
+  "failure": "AssertionError [ERR_ASSERTION]: ONEexactselection; no retry\n+ actual - expected\n\n  [\n+   26\n-   27\n  ]\n\n    at select (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/qa/online-profile500.mjs:7:388)\n    at async gather (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/qa/online-profile500.mjs:8:44)\n    at async file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/qa/online-profile500.mjs:11:2591",
+  "cleanup": [
+    {
+      "side": 0,
+      "menuVisible": true,
+      "tick": null,
+      "paused": false
+    },
+    {
+      "side": 1,
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#pauseBtn')\u001b[22m\n\u001b[2m    - locator resolved to <button id=\"pauseBtn\" title=\"Pause\" class=\"icon-btn\">\u2161</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 \u00d7 waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div id=\"modalLayer\" class=\"modal-layer\">\u2026</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 \u00d7 waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div id=\"modalLayer\" class=\"modal-layer\">\u2026</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    32 \u00d7 waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div id=\"modalLayer\" class=\"modal-layer\">\u2026</div> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n"
+    }
+  ],
+  "ownedHandles": {
+    "browserConnected": false,
+    "serverListening": false,
+    "rooms": 0
+  },
+  "artifactHashes": [
+    {
+      "path": "scripts/qa/online-profile500.mjs",
+      "sha256": "6de2772270db7f3fc27449a7ed96813a9f77f83044e92e1358f61bc9b284d55b"
+    },
+    {
+      "path": "docs/qa/online-profile-500/preflight.json",
+      "sha256": "c2cac9c28fe5f1e2779c8e9739dc7992d76205d45652fa5d47e10e9af5436f7e"
+    },
+    {
+      "path": "docs/qa/online-profile-500/config.json",
+      "sha256": "dc99a7d7342b78f8568bd780560b67c4e44b9d0fa2ab4a0b4c4836dc5d338936"
+    },
+    {
+      "path": "docs/qa/online-profile-500/receipt.json",
+      "sha256": "33b0efeeee6c2c23aee63aabfed1fd51c5abcdfc131558f8d6256fe725bfb3c4"
+    },
+    {
+      "path": "docs/qa/online-profile-500/run.log",
+      "sha256": "8e92dacb7eab6463053ce8743fc954e78d20cb29786001e7dccfcd3529994965"
+    },
+    {
+      "path": "docs/qa/online-profile-500/failure-side0.png",
+      "sha256": "7de54fce15c9927ac14c69645125468d3ec0ba4892c6ba12f911233d3ee381dc"
+    },
+    {
+      "path": "docs/qa/online-profile-500/failure-side1.png",
+      "sha256": "6d4f763f1a83f129e5327a5f8ddfebad7d4e16da1de0d3154caf7cda1785a90c"
+    },
+    {
+      "path": "docs/qa/online-profile-500/live-handles.json",
+      "sha256": "dfb646af4bfb5b2749f988743e34e1fa92d44caa455da9287e3e1fc64ef142f9"
+    }
+  ],
+  "limitations": [
+    "singlefiniteattemptendedduringgathersetup",
+    "no100cohort/dense/fullroster/ordinarylaptopGPU/public/WAN/240qualification",
+    "noart/motion/sourceapproval",
+    "side1ordinarymenucleanupnotcompleted;finallyclosedallownedhandles"
+  ],
+  "nextDependency": "concretelydifferent ordinaryUI acquisition that avoids moving overlapping unit hitboxes before a newly authorized finite trial; no blindretry"
+}

@@ -1,0 +1,29 @@
+{
+  "schema": "rds-agent-task/v1",
+  "id": "blender-apt500",
+  "status": "ACTIVE",
+  "purpose": "Alternate supported publisher: Ubuntu signedAPT package isolated Blender runtime; no systeminstall or uncheckedmirror",
+  "worker": {
+    "id": "/root/blender_capability499",
+    "role": "WORKER",
+    "model": "gpt-6.1-sol",
+    "reasoningEffort": "low"
+  },
+  "outputs": [
+    "docs/audits/blender-runtime-500/capability"
+  ],
+  "slots": [],
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "cc426aeb2344eae7a03c912efd7d10813ec999154173e716c58f6dbfe047dae5"
+    },
+    {
+      "path": "docs/audits/blender-transition-499/runtime/CHECKPOINT.json",
+      "sha256": "ac91fc762a92d06b250c1cd6acd8b51cec80a933e528e9517992fef93e23a1de"
+    }
+  ],
+  "allowedOperations": "APT signedmetadata inspect/download/extract Blender exactcandidate5.0.1+dfsg-1ubuntu1 and necessarymissing dependencies into exclusiveuserlandroot; verify SHA256/URLs/packageorigin/license. cap800MiBdownloads no sudo/driver/systemconfig. Actual headlessversion/bpy/ONECPU256RGBAfixture, no characterart/MCPconfig.",
+  "acceptance": "Scopedactual evidence, pins, closedownedhandles; no source/visual/release expansion from technicalsuccess",
+  "externalInstallRoot": "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/blender500"
+}

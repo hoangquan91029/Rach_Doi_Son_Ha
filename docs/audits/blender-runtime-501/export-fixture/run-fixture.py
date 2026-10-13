@@ -1,0 +1,14 @@
+from pathlib import Path
+import json,os,subprocess,time,hashlib,shutil
+p=Path(__file__).resolve().parent;repo=p.parents[3];a=json.loads((p/'assignment.json').read_text())
+for i in a['inputs']:assert hashlib.sha256((repo/i['path']).read_bytes()).hexdigest()==i['sha256'],i['path']
+base=repo/'docs/audits/blender-runtime-500/capability';env=os.environ.copy();env.update(json.loads((base/'runtime-checks.json').read_text())['environmentOverrides']);binary=json.loads((base/'runtime-checks.json').read_text())['checks'][0]['argv'][0];calls=[]
+def run(name,args):
+ argv=[binary]+args;t=time.monotonic();r=subprocess.run(argv,cwd=repo,env=env,capture_output=True,text=True,timeout=120);(p/(name+'.log')).write_text(r.stdout+r.stderr);calls.append({'name':name,'argv':argv,'cwd':str(repo),'exitCode':r.returncode,'elapsedSeconds':time.monotonic()-t});(p/'calls.json').write_text(json.dumps(calls,indent=2)+'\n');return r
+r=run('create',['--background','--factory-startup','--disable-autoexec','--python',str(p/'create-fixture.py')]);assert r.returncode==0
+shutil.copyfile(base/'fixture.png',p/'synthetic-source.png')
+def pin(n):return {'path':n,'sha256':hashlib.sha256((p/n).read_bytes()).hexdigest()}
+j={'schema':'rds-blender-job/v1','id':'TECHNICAL_ONLY_SYNTHETIC501','identity':'villager','action':'idle','direction':1,'original':pin('synthetic-source.png'),'view':pin('synthetic-source.png'),'blend':pin('technical.blend'),'selection':{'scene':'TechnicalScene','model':'TechnicalModel','rig':'TechnicalRig','camera':'TechnicalCamera','action':'IdleAction','renderCollection':'TechnicalRender','renderMeshes':['TechnicalModel']},'layout':{'fixedCanvas':{'width':256,'height':256},'cell':{'width':128,'height':128},'pivot':{'space':'source','x':128,'y':232},'render':{'width':42,'height':42},'contactShadow':{'mode':'baked'},'camera':{'projection':'dimetric','ratio':[2,1],'tile':[54,27],'elevation':26.565}},'frames':[{'slot':i,'blenderFrame':i+1,'phase':i/4,'durationMs':100,'status':'candidate'} for i in range(4)],'loop':True,'output':'technical-output','candidate':True}
+q={'schema':'rds-blender-selection/v1','status':'qualified','bindings':{k:j[k] for k in ('identity','action','direction','original','view','blend','selection','layout','frames','loop')},**{k:'VERIFIED' for k in ('identityReview','modelReview','rigReview','cameraReview')},'scope':'TECHNICAL_ONLY_SYNTHETIC_TEST_SCHEMA_FIELDS_NOT_PRODUCTION_APPROVAL','limitation':'Synthetic sphere+rig and fixturePNG only. No real identity/model/camera or motion qualification.'}
+(p/'technical-qualification.json').write_text(json.dumps(q,indent=2)+'\n');j['qualification']=pin('technical-qualification.json');(p/'job.json').write_text(json.dumps(j,indent=2)+'\n')
+r=run('export',[str(p/'technical.blend'),'--background','--disable-autoexec','--python',str(repo/'scripts/blender/export_job.py'),'--',str(p/'job.json'),'--render']);print(r.returncode,r.stdout[-300:],r.stderr[-1000:])

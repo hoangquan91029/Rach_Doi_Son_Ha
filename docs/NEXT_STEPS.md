@@ -1,4 +1,15 @@
-# Active queue — Blender transition499 / full goal OPEN
+# Active queue — actual Blender500/connection502 / full goal OPEN
+
+
+## Current continuation priority (supersedes earlier499 blockers below)
+
+1. **B0 executable solved.** ActualBlender5.0.1 userland fromverified signedUbuntuAPT, headlessbpy/CPU256RGBAworks. Use500capabilityreceipt exactbinary/env; no driverrepair/systeminstall. NativeGUI/MCP501 and ownedstdio lifecycle502 actualtests pass; Codex rds_blender501 read-onlystatus/scene registered, currentchattoolcatalog notexposed. Noapprestartperformed orauthoringMCParbitrarycode enabled.
+2. **Actual exporter compatibility.** Source-pinned backgroundreload fixesrealBlenderfresh-loaddirtyflag; interactiveunsavedstate rejected. Fouractualtechnicalframes+28focusedchecks stand; no rerununchangedfixtures. API successnotart. Imageprovider498F1/F3claims remainconsumedUNRESOLVED, no retries/refunds.
+3. **501appearance FAILED/CLOSED.** InitialneutralD0/D1 proceduralvolumes+globalcanonicaltextureprojection andONEUV/brimcorrection bothfail SAMEoriginal at71px. Preserveallinitial/correction/blend/raw/scripts, 0selected/0rig/0walk. No more501parameter-tweak retries or renamedsamecontrol. Nextartorder needs materiallydifferent originaltwo-view constrained model/semanticmaterial authoring, exactsource/equipment/camera/layout andfinitebudget; assessoriginalscene/projection mismatch beforeanynewrender. This is source-qualitywork, notincreasedframecount/nativeanatomyscoring. Originalart staysruntime.
+4. **Onlineprofiling next dependency.**500firstspriteclickraceFAILED,502pausedstrategySOURCEBLOCKED (onlinePause onlypanel),503ordinarygroundanchorrectangle now16exactselections succeeded.503stoppedatqueueconfirmationtimeout32TOTAL; no100cohort/profile. Preservefailures; beforeanynewfinitefulltrial improveactualqueue/spawn/resource/WebSocketerror observations against shared/sim train/pop semantics, notjustcount growth. CauseUNKNOWN; no gamebug or commandrejection claimwithoutsource/runtime evidence. Do not replaysameexpectation orfreezeonlinefield. GPU/fullroster/200/240/publicrooms/WAN open.
+5. Continue G5world/maps/buildingstates and G6 relevantunfinishedwork independently withfiniteexclusiveorders. Currentgame/client/shared/public/dist bytes unchanged; fullroster/actions×8directions/neutralappearance/motion/owner/defaultrelease andallcriticalfullgoal gates OPEN. Goaltool nowACTIVE; prior499PAUSED ishistory. Automation311status stillunresolved; no heartbeatclaim.
+
+## Historical499 intake (preserved context, no longer current executable blocker)
 
 Read PROJECT_STATE and [Blender pipeline](art/pipeline/BLENDER_SPRITE_PIPELINE.md) before historic receipts. Root audits/adjusts plan and registers disjoint exactSol6.1Low tasks; max3workers+root. No substitute, quota polling or stale method restart.
 

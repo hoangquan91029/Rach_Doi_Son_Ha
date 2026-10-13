@@ -1,0 +1,33 @@
+[
+  {
+    "name": "create",
+    "argv": [
+      "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/blender500/root/usr/bin/blender",
+      "--background",
+      "--factory-startup",
+      "--disable-autoexec",
+      "--python",
+      "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/audits/blender-runtime-501/export-fixture/create-fixture.py"
+    ],
+    "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+    "exitCode": 0,
+    "elapsedSeconds": 0.3609124430004158
+  },
+  {
+    "name": "export",
+    "argv": [
+      "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/blender500/root/usr/bin/blender",
+      "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/audits/blender-runtime-501/export-fixture/technical.blend",
+      "--background",
+      "--disable-autoexec",
+      "--python",
+      "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/blender/export_job.py",
+      "--",
+      "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/audits/blender-runtime-501/export-fixture/job.json",
+      "--render"
+    ],
+    "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+    "exitCode": 0,
+    "elapsedSeconds": 0.4296613289989182
+  }
+]

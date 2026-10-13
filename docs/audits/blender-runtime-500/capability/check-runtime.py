@@ -1,0 +1,6 @@
+import subprocess,pathlib,json,os,time
+p=pathlib.Path(__file__).resolve().parent;r=pathlib.Path('/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/blender500/root');b=r/'usr/bin/blender';env=os.environ.copy();env['LD_LIBRARY_PATH']=str(r/'usr/lib/x86_64-linux-gnu')+':'+str(r/'usr/lib')+':'+str(r/'usr/lib/x86_64-linux-gnu/openblas-pthread');env['BLENDER_SYSTEM_RESOURCES']=str(r/'usr/lib/blender');env['BLENDER_SYSTEM_SCRIPTS']=str(r/'usr/lib/blender/scripts');env['BLENDER_SYSTEM_DATAFILES']=str(r/'usr/lib/blender/datafiles');checks=[]
+for name,args in [('version',['--version']),('help',['--help']),('bpy',['--background','--factory-startup','--disable-autoexec','--python-expr','import bpy,sys; print(bpy.app.version_string); print(sys.version)'])]:
+ argv=[str(b)]+args;start=time.monotonic();c=subprocess.run(argv,env=env,cwd=str(p),capture_output=True,text=True,timeout=60);(p/(name+'.log')).write_text(c.stdout+c.stderr);checks.append({'name':name,'argv':argv,'cwd':str(p),'exitCode':c.returncode,'elapsedSeconds':time.monotonic()-start});print(name,c.returncode,c.stdout[:200],c.stderr[:200],flush=True)
+ if c.returncode:break
+(p/'runtime-checks.json').write_text(json.dumps({'checks':checks,'environmentOverrides':{k:env[k] for k in ['LD_LIBRARY_PATH','BLENDER_SYSTEM_RESOURCES','BLENDER_SYSTEM_SCRIPTS','BLENDER_SYSTEM_DATAFILES']}},indent=2)+'\n')

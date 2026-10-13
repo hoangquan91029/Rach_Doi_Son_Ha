@@ -1,0 +1,61 @@
+{
+  "schema": "rds-task-receipt/v1",
+  "taskId": "online-acquisition502",
+  "status": "BLOCKED_UNAVAILABLE_ORDINARY_ONLINE_PAUSE",
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "cc426aeb2344eae7a03c912efd7d10813ec999154173e716c58f6dbfe047dae5"
+    },
+    {
+      "path": "scripts/qa/online-profile500.mjs",
+      "sha256": "6de2772270db7f3fc27449a7ed96813a9f77f83044e92e1358f61bc9b284d55b"
+    },
+    {
+      "path": "docs/qa/online-profile-500/CHECKPOINT.json",
+      "sha256": "9cf4ec4d7c2e46ed30f7f3f7f619e6def38bb1b2734c8ef097c7c42ecc922f85"
+    },
+    {
+      "path": "client/renderer.js",
+      "sha256": "d2c34bc266c03c95b2379ebc3c115993a338dbe2de826507ddf6450ab1b53553"
+    },
+    {
+      "path": "client/main.js",
+      "sha256": "ed8e60ebc54da9d4a6f258be153a63bc72034ff8cca011480a2a1b97de4a8957"
+    },
+    {
+      "path": "shared/sim.js",
+      "sha256": "c9a01adba8630e89e1c3f195c1b98c08c32e74468d389a55891c664e3906e562"
+    },
+    {
+      "path": "server/index.js",
+      "sha256": "4e6a7e82f02d1d856f4ea788863c4836930bc00250be6a5b020ba2bdd8884198"
+    }
+  ],
+  "inputPinsExact": true,
+  "exclusiveOutputs": [
+    "scripts/qa/online-profile502.mjs",
+    "docs/qa/online-profile-502"
+  ],
+  "observation": {
+    "client/main.js:openPause": "line117 sets paused true ONLYoffline; online label explicitly says authoritative field continues; resume changespaused ONLYoffline",
+    "client/main.js:onNetwork": "paused flag received from server m.paused, not ordinaryonlinePause command",
+    "server/index.js:snapshots": "line64 sets paused when playing and a seat websocket missing; read-only source shows no ordinaryonlinePause message",
+    "prior500": "failure actor27 picked26 while moving; actual failure-side0 screenshot inspected"
+  },
+  "method": "Read actual canonical source, old500receipt/config/failurePNG; preflightruntime audit and exactinputhashchecks",
+  "attempts": {
+    "browser": 0,
+    "profile": 0,
+    "newRoom": 0,
+    "build": 0,
+    "stateOrCommandInjection": 0
+  },
+  "handles": {
+    "created": [],
+    "allOwnedClosed": true
+  },
+  "nextDependency": "Root must select materiallydifferent ordinary UI acquisition strategy that exists or separatelyauthorize productpause change. No disconnect/injection workaround; currentpausedtwohumanstrategy cannot be executed",
+  "limits": "No guard weakening or blind unpaused repeat; 100TOTAL/viewport/GPU/WAN unqualified",
+  "fullGoal": "OPEN"
+}

@@ -1,0 +1,44 @@
+{
+  "checks": [
+    {
+      "name": "version",
+      "argv": [
+        "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/blender500/root/usr/bin/blender",
+        "--version"
+      ],
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/audits/blender-runtime-500/capability",
+      "exitCode": 0,
+      "elapsedSeconds": 0.1305617899997742
+    },
+    {
+      "name": "help",
+      "argv": [
+        "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/blender500/root/usr/bin/blender",
+        "--help"
+      ],
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/audits/blender-runtime-500/capability",
+      "exitCode": 0,
+      "elapsedSeconds": 0.131004381000821
+    },
+    {
+      "name": "bpy",
+      "argv": [
+        "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/blender500/root/usr/bin/blender",
+        "--background",
+        "--factory-startup",
+        "--disable-autoexec",
+        "--python-expr",
+        "import bpy,sys; print(bpy.app.version_string); print(sys.version)"
+      ],
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/audits/blender-runtime-500/capability",
+      "exitCode": 0,
+      "elapsedSeconds": 1.0283640380002907
+    }
+  ],
+  "environmentOverrides": {
+    "LD_LIBRARY_PATH": "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/blender500/root/usr/lib/x86_64-linux-gnu:/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/blender500/root/usr/lib:/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/blender500/root/usr/lib/x86_64-linux-gnu/openblas-pthread",
+    "BLENDER_SYSTEM_RESOURCES": "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/blender500/root/usr/lib/blender",
+    "BLENDER_SYSTEM_SCRIPTS": "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/blender500/root/usr/lib/blender/scripts",
+    "BLENDER_SYSTEM_DATAFILES": "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/blender500/root/usr/lib/blender/datafiles"
+  }
+}

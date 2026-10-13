@@ -1,0 +1,46 @@
+{
+  "schema": "rds-agent-task/v1",
+  "id": "codex-blender502",
+  "status": "ACTIVE",
+  "purpose": "Registeruserauthorized verifiedBlender MCP readscope with ownedstdioGUI lifecycle and preservedCodexconfiguration",
+  "worker": {
+    "id": "/root/blender_export499",
+    "role": "WORKER",
+    "model": "gpt-6.1-sol",
+    "reasoningEffort": "low"
+  },
+  "outputs": [
+    "scripts/blender/mcp502",
+    "docs/audits/blender-runtime-502/connection"
+  ],
+  "slots": [],
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "cc426aeb2344eae7a03c912efd7d10813ec999154173e716c58f6dbfe047dae5"
+    },
+    {
+      "path": "docs/audits/blender-runtime-501/handshake/CHECKPOINT.json",
+      "sha256": "81d67a456d2912917f70b20c5823f3c93fd5a04780ab226528144f3ab2b6e9ff"
+    },
+    {
+      "path": "scripts/blender/mcp500/offline_addon_candidate.py",
+      "sha256": "219a496eda7248dfada013b5c83ce5e3356da590cbf24493dadb65ca92f03c7c"
+    },
+    {
+      "path": "scripts/blender/mcp500/offline_server_candidate.py",
+      "sha256": "95ccf3d3ee9c88ccd09751530359ff17d36cb35c0e107fdf0787afae8fb5720b"
+    },
+    {
+      "path": "scripts/blender/mcp501/addon_launcher.py",
+      "sha256": "010e97960179897f6fe079a36d10d02dd97a57ad4e2c072b79d95e59ce55c67a"
+    },
+    {
+      "path": "docs/audits/blender-runtime-500/capability/CHECKPOINT.json",
+      "sha256": "5c0e3540553cf4d509a74953e59d8968d251e031581edb03fdb114ba79f4eea7"
+    }
+  ],
+  "externalConfiguration": "/home/kieu-hoang-quan/.codex/config.toml",
+  "allowedOperations": "UseracceptedMCP connection: reviewedownedstdio launcherstartsONEactualGUIBlender+offline501bridge, passesstdioSDKstream andterminatesonlyownedchildren. ONEactuallauncher SDK test with2readtools andclose. Thenappend exactly mcp_servers.rds_blender501 withactualcommand/args/cwd/enabled_tools status+scene/currentofficialfields. Private600backup outsideGit, preserveoldrawprefix/parsedallotherentries/mode, no secretprinting/preferences/startup/driver/publicchange. Noexecute/generator/toolsautoreadartPASS.",
+  "acceptance": "ActualMCPnewlifecycletest, configbytesvalidated andpreservedotherentries; currentchattoolexposureUNKNOWN unlessactualinventoryshows it."
+}

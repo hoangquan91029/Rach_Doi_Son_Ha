@@ -1,0 +1,45 @@
+{
+  "schema": "rds-agent-task/v1",
+  "id": "online-rectangle503",
+  "status": "ACTIVE",
+  "purpose": "Verifiedexistinggroundanchor dragrectangle acquisition bypassesspriteoverlapwithoutfreezingonlinefield; ONE100TOTALroomprofile",
+  "worker": {
+    "id": "/root/blender_capability499",
+    "role": "WORKER",
+    "model": "gpt-6.1-sol",
+    "reasoningEffort": "low"
+  },
+  "outputs": [
+    "scripts/qa/online-profile503.mjs",
+    "docs/qa/online-profile-503"
+  ],
+  "slots": [],
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "cc426aeb2344eae7a03c912efd7d10813ec999154173e716c58f6dbfe047dae5"
+    },
+    {
+      "path": "client/main.js",
+      "sha256": "ed8e60ebc54da9d4a6f258be153a63bc72034ff8cca011480a2a1b97de4a8957"
+    },
+    {
+      "path": "client/renderer.js",
+      "sha256": "d2c34bc266c03c95b2379ebc3c115993a338dbe2de826507ddf6450ab1b53553"
+    },
+    {
+      "path": "scripts/qa/online-profile500.mjs",
+      "sha256": "6de2772270db7f3fc27449a7ed96813a9f77f83044e92e1358f61bc9b284d55b"
+    },
+    {
+      "path": "docs/qa/online-profile-500/CHECKPOINT.json",
+      "sha256": "9cf4ec4d7c2e46ed30f7f3f7f619e6def38bb1b2734c8ef097c7c42ecc922f85"
+    },
+    {
+      "path": "docs/qa/online-profile-502/CHECKPOINT.json",
+      "sha256": "7490cf0e4ff1d2c399d5ab6a4db7e78975eb726184fdacc0f1f0317dfb296eca"
+    }
+  ],
+  "allowedOperations": "ExistingselectRect(main96) usesownlivingunitgroundanchors; chooseactualidleactorand10x10pixelrectanglefreshdisplaypoint/nootheranchorinside+movementclearance, ordinarymouse drag>7. Verifyexactownselection beforecommand. No freeze/pause/disconnect/forceclick/injectedstate orpickweakening. ONEnewfinite100TOTAL50perside prep12min/profile60s; buildings use stableexactopacitypicks+ownership. Reuseexactfrozen500core/build orisolatednewbuildifactualdrift. Preservefirstguardfailure stopnoretry. CleanupresultMenu afteropponentleave.",
+  "acceptance": "ActualUI rectangleacquisition thenordinaryroom/counterprofile scopedproof orfinitefailedreceipt; original500/502 held/failedmethods unchanged"
+}

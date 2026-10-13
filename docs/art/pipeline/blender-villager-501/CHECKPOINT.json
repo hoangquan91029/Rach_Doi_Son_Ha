@@ -1,0 +1,270 @@
+{
+  "schema": "rds-agent-receipt/v1",
+  "taskId": "villager-neutral501",
+  "status": "CORRECTION_COMPLETE_1_OF_1_APPEARANCE_FAILED_NOT_SELECTED",
+  "purpose": "ONE originalVillager wholeclothed neutralBlender scene + fixedcameraD0/D1 candidate appearance renders beforemotion",
+  "exclusiveOutputs": [
+    "scripts/blender/villager501.py",
+    "docs/art/pipeline/blender-villager-501"
+  ],
+  "head": "d74bd406c10f217e5f72c8e6249884b55e3fa1ec",
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "cc426aeb2344eae7a03c912efd7d10813ec999154173e716c58f6dbfe047dae5",
+      "unchanged": true
+    },
+    {
+      "path": "docs/audits/blender-runtime-500/capability/CHECKPOINT.json",
+      "sha256": "5c0e3540553cf4d509a74953e59d8968d251e031581edb03fdb114ba79f4eea7",
+      "unchanged": true
+    },
+    {
+      "path": "docs/audits/blender-runtime-500/capability/runtime-checks.json",
+      "sha256": "8b31a0f43b8716311f84631ffa3bc15b11f5d5c99fae7a696e04d809937b2788",
+      "unchanged": true
+    },
+    {
+      "path": "docs/audits/blender-transition-499/identity/SOURCE_BINDINGS.json",
+      "sha256": "4456182c39530209f479b687d77d355c70a1c0cac3bf3858882a19c258f641b4",
+      "unchanged": true
+    },
+    {
+      "path": "docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+      "unchanged": true
+    },
+    {
+      "path": "docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "unchanged": true
+    }
+  ],
+  "tools": [
+    "exec_command",
+    "Blender5.0.1 bpy/CYCLES CPU exact500binary/env",
+    "Pillow rawPNGchecks/fixedwhole256references/71pxdiagnosticcomparison",
+    "view_image originalD0/D1 andactualrenders"
+  ],
+  "checks": {
+    "auditPreflight": "VERIFIED scopedinputs exit0",
+    "artPreflight": "FAILED two unresolvedimageclaims preserved",
+    "scriptSyntax": "VERIFIED py_compile (owncache removed)",
+    "actualBlenderRender": "VERIFIED exit0 twoinitialrenders",
+    "png": "VERIFIED256RGBA alpha0..255 seepng-checks.json",
+    "scene": "VERIFIED saved.blend packedwholeD0texture;102meshobjects44794verts/44706faces",
+    "inputsRecheck": "VERIFIED exact"
+  },
+  "initialFailurePaths": [
+    "wrong runtime-checks path beforecorrectcapabilitysubfolder (readfailure only)"
+  ],
+  "appearanceObservation": {
+    "class": "FAILED",
+    "method": "actualview_image at256 andone71wholecanvascomparison",
+    "observed": "D0changes hatwidth/costume silhouette; sourceprojection visible misplacedpattern/limbs; D1 breaks head/neck and face underhat, wrongshoulder/bodyproportions; not SAME finished realisticillustratedidentity",
+    "limit": "Producer reports visiblefailure; no independent or ownerPASS. Geometry is actualvolumetric authoredcandidate, not acceptedfinishedart.",
+    "correction": {
+      "class": "FAILED_PRODUCER_OBSERVATION_ROOT_REVIEW_PENDING",
+      "method": "actual256D0/D1 plusone71pxcomparison",
+      "observation": "UVfix removes some misplacedhand/footdetails; D1 still has malformed/hiddenface/head anddifferenthat/body/costume silhouette. Wholeoriginalprojection ontocoarseauthoredgeometry didnotpreserve SAME finishedidentity."
+    }
+  },
+  "counts": {
+    "initialRenders": 2,
+    "correctionsUsed": 1,
+    "correctionCap": 1,
+    "models": 1,
+    "rigs": 0,
+    "walkFrames": 0,
+    "imageProviderCalls": 0,
+    "selectedNewFrames": 0,
+    "runtimeChanges": 0,
+    "releaseChanges": 0,
+    "correctionRenders": 2,
+    "totalNeutralRenders": 4
+  },
+  "handles": {
+    "execSession": 96162,
+    "exitCode": 0,
+    "ownedBlenderProcessesClosed": true,
+    "observation": "renderlog Blenderquit; sessioncompleted; psfound noownedBlenderprocess",
+    "correctionExecSession": 2857,
+    "correctionExitCode": 0,
+    "correctionClosed": true
+  },
+  "acceptance": {
+    "source": "unchanged twooriginalauthorities",
+    "technical": "VERIFIED actualCPUrender only",
+    "appearance": "FAILED",
+    "motion": "NOT_RUN",
+    "runtime": "NOT_INSTALLED",
+    "owner": "UNKNOWN",
+    "release": "NOT_AUTHORIZED"
+  },
+  "nextDependency": "Root actualappearance review. Correction1/1consumed; no furtherrender/modelcorrection/rig/fanout authorized. Need concrete differentauthoring resolution, notblindretry.",
+  "outputs": [
+    {
+      "path": "docs/art/pipeline/blender-villager-501/README.md",
+      "sha256": "3e1fcc8339d44575f05cc61daa9be63a969817eade3609b4e85fdafd4a44e013",
+      "bytes": 1103
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-501/art-preflight-error.json",
+      "sha256": "20f5ff82db93fc6d34a7b68fbd9de0420c72832183fc02a952081ede73569a26",
+      "bytes": 111
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-501/art-preflight.json",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-501/assignment.json",
+      "sha256": "2a7adc7e8f611b998362a1b6d25f52cd8c2361722476436544f196b3879c438b",
+      "bytes": 2214
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-501/correction/gameplay-size-comparison.png",
+      "sha256": "be4f4836da15a5f35410fd64bc88859b7d44b30dd70ae3798e204e679b2c7c84",
+      "bytes": 22350
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-501/correction/neutral-D0.png",
+      "sha256": "1e7dcd0ee3ff998270572e18fdf9a8280389b87f474f0c926478aa649cf4d7fe",
+      "bytes": 60811
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-501/correction/neutral-D1.png",
+      "sha256": "6f7d14b5f70630f195667d7115f7d110c375807f4d8a6cea88be64a74258a3c9",
+      "bytes": 63417
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-501/correction/png-checks.json",
+      "sha256": "a4cbcd5d67028e6272e45e19904a47e1f4872819e1ffa57bf18b5a335b6f53fe",
+      "bytes": 2323
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-501/correction/scene-receipt.json",
+      "sha256": "4a076a3c34b9d256977ab842509a8d56736952b6826032432eea270896c13bfa",
+      "bytes": 2153
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-501/correction/villager-neutral501.blend",
+      "sha256": "9c67675cb2a1013b704a33c90f6c0a9023850d49ccddc783e4febc207a94aa07",
+      "bytes": 2056389
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-501/correction/villager-neutral501.blend1",
+      "sha256": "49b0c3ab861ef2d319ed08e79e6bfd3479f0da2d1e7dc18516f6ffb32bce39ec",
+      "bytes": 2056332
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-501/correction-invocation.json",
+      "sha256": "d4bb5ff147d8b98abf5bba504fdf622676ba568f994e5faf79a51fdee030b526",
+      "bytes": 1299
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-501/correction-process.json",
+      "sha256": "c8d6cdd308414d95c80c953a1bdecc9376a99d35b6b760cdb747ffae666e37de",
+      "bytes": 83
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-501/correction-render.log",
+      "sha256": "2f78d52e1d15d900c39638c9a5307cb0277aac83e5be27655351fcf9378294a7",
+      "bytes": 835
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-501/initial/gameplay-size-comparison.png",
+      "sha256": "06035f6e74fa83fe3a6349417f0678d0bd97679b305df31fefb976de9c422732",
+      "bytes": 22430
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-501/initial/neutral-D0.png",
+      "sha256": "62cd115cb37fda575c026a42a758f030088929f30ac6e648306696a971fd4a52",
+      "bytes": 61935
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-501/initial/neutral-D1.png",
+      "sha256": "f49cb759bae20eab37399cfd1c3a8f4c40b14dcee66cc68745cbf9e2fe27db15",
+      "bytes": 65306
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-501/initial/original-D0-whole256.png",
+      "sha256": "c416061439498b78c752ae9eb45340bd81de0cc63ca8dc588525d3ce3f882cab",
+      "bytes": 46511
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-501/initial/original-D1-whole256.png",
+      "sha256": "78d86e984f3d5b8a3c097624956530f62b3f8a86e10a70432170ce4c7481d277",
+      "bytes": 47241
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-501/initial/scene-receipt.json",
+      "sha256": "93f3d407af73f68cc4c4bfc2cbcdb24849f9d37b32a42fbdf004a73c8723bde4",
+      "bytes": 1846
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-501/initial/villager-neutral501.blend",
+      "sha256": "d5bc720ae12d6e94d58035d899301cb056986e444216e427965a05cfa0149c22",
+      "bytes": 2067763
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-501/initial/villager-neutral501.blend1",
+      "sha256": "73e6ecd7d49241e0d70fb5112c02ad89920ab67eb13bed865b6667859e550efa",
+      "bytes": 2067747
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-501/initial/villager501-initial.py",
+      "sha256": "13404c41a816fcc160f6dab12b05ca053dd21613ca39dc8dacc0ee16b1d8c29f",
+      "bytes": 13549
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-501/initial-preservation.json",
+      "sha256": "b5dfc9dd8ffaa665501a02f636fe19f194009ce7ae10f124279eb5298b0cd19f",
+      "bytes": 1575
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-501/inputs.json",
+      "sha256": "967759b9268a736ab39d4f38df2e241dcde3a40328b31e303ec714095463761c",
+      "bytes": 956
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-501/invocation.json",
+      "sha256": "16f2b67337f7ad3c127e4fd5ad522770144e3f3e2a637b48cb8ac6c13a78720f",
+      "bytes": 1254
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-501/png-checks.json",
+      "sha256": "895a762238755aced6486fd25aec5126b844edf9085d41cca95113f4fdd1bded",
+      "bytes": 2645
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-501/preflight.json",
+      "sha256": "9581eaf89d7ca979fc4d54a706fe43a3d8ccf0f854e3ff124bbd3a181d7bc4cd",
+      "bytes": 4364
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-501/process.json",
+      "sha256": "273330ac92c085a5db84e070650040c45f49b2b5cab4dd2d24ad5b08b36bb949",
+      "bytes": 38
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-501/render.log",
+      "sha256": "ac7162f5c5609634691f5d3e2ca38975e0909fc9ceec54cd85d2c70e116303d4",
+      "bytes": 826
+    },
+    {
+      "path": "scripts/blender/villager501.py",
+      "sha256": "07c72ae11bc3386ea63252018fc1960810345927b20e55351f59bbe6e7466492"
+    }
+  ],
+  "rootCorrection": {
+    "authorization": "parent queuedmessage thenexplicitnewtask execute sameone reservedcorrection",
+    "package": "explicitUVMapnodebinding +active_render newUVlayer forALLmesh; fixedwholehatlocalY-12degree tilt about(-.045,0,1.765)",
+    "used": 1,
+    "cap": 1,
+    "noAdditionalRetry": true,
+    "cameraRootScaleBodyCostumeUnchanged": true,
+    "initialArtifactsExact": true
+  }
+}

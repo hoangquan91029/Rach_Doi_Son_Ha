@@ -1,0 +1,20 @@
+{
+  "status": "PROPOSED_UNCONFIGURED",
+  "mcpServers": {
+    "rds_blender500": {
+      "command": "/ABSOLUTE/ROOT_REVIEWED_VENV/bin/python",
+      "args": [
+        "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/blender/mcp500/offline_server_candidate.py",
+        "--port",
+        "19876"
+      ],
+      "env": {
+        "BLENDER_MCP_DISABLE_TELEMETRY": "1",
+        "BLENDER_MCP_SAFE_MODE": "1",
+        "BLENDERMCP_NO_UPDATE_CHECK": "1",
+        "BLENDER_HOST": "127.0.0.1",
+        "BLENDER_PORT": "19876"
+      }
+    }
+  }
+}

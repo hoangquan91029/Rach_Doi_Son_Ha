@@ -1,0 +1,10 @@
+estimate 71 139745492
+extracted blender-data
+extracted libhwloc15
+extracted libtbbbind-2-5
+extracted libtbbmalloc2
+Traceback (most recent call last):
+  File "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/audits/blender-runtime-500/capability/acquire.py", line 31, in <module>
+    if m.issym() or m.islnk():assert not pathlib.PurePosixPath(m.linkname).is_absolute() and '..' not in pathlib.PurePosixPath(m.linkname).parts,(d['name'],m.name,m.linkname)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('libtbb12', './usr/share/doc/libtbb12/changelog.Debian.gz', '../libtbbbind-2-5/changelog.Debian.gz')

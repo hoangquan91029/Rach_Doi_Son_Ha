@@ -1,0 +1,38 @@
+{
+  "schema": "rds-agent-task/v1",
+  "id": "blender-export-fixture501",
+  "status": "ACTIVE",
+  "purpose": "ActualBlender5 technicalcompatibility of existingexport499 API and pinnedcandidate output; fixtureONLY no visualqualification",
+  "worker": {
+    "id": "/root/blender_capability499",
+    "role": "WORKER",
+    "model": "gpt-6.1-sol",
+    "reasoningEffort": "low"
+  },
+  "outputs": [
+    "docs/audits/blender-runtime-501/export-fixture",
+    "scripts/blender/export_job.py",
+    "tests/blender-export501.test.js"
+  ],
+  "slots": [],
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "cc426aeb2344eae7a03c912efd7d10813ec999154173e716c58f6dbfe047dae5"
+    },
+    {
+      "path": "scripts/blender/export_job.py",
+      "sha256": "5156756cb4e8401d4c22a7cae29bad2b4c2f75daa92b57edcbe1f534f074350a"
+    },
+    {
+      "path": "docs/audits/blender-runtime-500/capability/CHECKPOINT.json",
+      "sha256": "5c0e3540553cf4d509a74953e59d8968d251e031581edb03fdb114ba79f4eea7"
+    },
+    {
+      "path": "docs/audits/blender-runtime-500/capability/runtime-checks.json",
+      "sha256": "8b31a0f43b8716311f84631ffa3bc15b11f5d5c99fae7a696e04d809937b2788"
+    }
+  ],
+  "allowedOperations": "One syntheticrender fixtureactual5.0.1 withdeclaredtest-onlyqualification and sourcecaps; saveownscratchblend; runexistingexportCLI actualfouridleframes; inspectPNGalpha/hashes/pivot andnooverwrite. FixonlydemonstratedAPI issue inassignedexporter andfocusedtests; no visualapproval or finalart. MayvalidateBlenderAPI usingrenderfixture only; no applicationcontextconfig/imageprovider/canonicalgame/production.",
+  "acceptance": "Actualexport API evidence or specific incompatibility, not model/art approval"
+}

@@ -1,0 +1,184 @@
+00:00.197  blend            | Read blend: "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/audits/blender-runtime-501/export-fixture/technical.blend"
+00:00.229  blend            | Read blend: "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/audits/blender-runtime-501/export-fixture/technical.blend"
+00:00.314  render           | Saved: '/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/audits/blender-runtime-501/export-fixture/technical-output/F0.png'
+00:00.339  render           | Saved: '/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/audits/blender-runtime-501/export-fixture/technical-output/F1.png'
+00:00.367  render           | Saved: '/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/audits/blender-runtime-501/export-fixture/technical-output/F2.png'
+00:00.393  render           | Saved: '/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/audits/blender-runtime-501/export-fixture/technical-output/F3.png'
+{
+  "schema": "rds-blender-plan/v1",
+  "job": {
+    "schema": "rds-blender-job/v1",
+    "id": "TECHNICAL_ONLY_SYNTHETIC501",
+    "identity": "villager",
+    "action": "idle",
+    "direction": 1,
+    "original": {
+      "path": "synthetic-source.png",
+      "sha256": "ff82082a041cd1aa9daf4759455e4844d9824e30a71e91bce96239c18a90c7c0"
+    },
+    "view": {
+      "path": "synthetic-source.png",
+      "sha256": "ff82082a041cd1aa9daf4759455e4844d9824e30a71e91bce96239c18a90c7c0"
+    },
+    "blend": {
+      "path": "technical.blend",
+      "sha256": "c4aec949f34ede294e3b9981af1e5eeba97502a2ab2a909fe28e167a8138082c"
+    },
+    "selection": {
+      "scene": "TechnicalScene",
+      "model": "TechnicalModel",
+      "rig": "TechnicalRig",
+      "camera": "TechnicalCamera",
+      "action": "IdleAction",
+      "renderCollection": "TechnicalRender",
+      "renderMeshes": [
+        "TechnicalModel"
+      ]
+    },
+    "layout": {
+      "fixedCanvas": {
+        "width": 256,
+        "height": 256
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "space": "source",
+        "x": 128,
+        "y": 232
+      },
+      "render": {
+        "width": 42,
+        "height": 42
+      },
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "camera": {
+        "projection": "dimetric",
+        "ratio": [
+          2,
+          1
+        ],
+        "tile": [
+          54,
+          27
+        ],
+        "elevation": 26.565
+      }
+    },
+    "frames": [
+      {
+        "slot": 0,
+        "blenderFrame": 1,
+        "phase": 0.0,
+        "durationMs": 100,
+        "status": "candidate"
+      },
+      {
+        "slot": 1,
+        "blenderFrame": 2,
+        "phase": 0.25,
+        "durationMs": 100,
+        "status": "candidate"
+      },
+      {
+        "slot": 2,
+        "blenderFrame": 3,
+        "phase": 0.5,
+        "durationMs": 100,
+        "status": "candidate"
+      },
+      {
+        "slot": 3,
+        "blenderFrame": 4,
+        "phase": 0.75,
+        "durationMs": 100,
+        "status": "candidate"
+      }
+    ],
+    "loop": true,
+    "output": "technical-output",
+    "candidate": true,
+    "qualification": {
+      "path": "technical-qualification.json",
+      "sha256": "37a12e9c5d8c30f74604d63052dfb752a7e374820a9f07cae7052306eb79cb11"
+    }
+  },
+  "inputHashes": {
+    "original": "ff82082a041cd1aa9daf4759455e4844d9824e30a71e91bce96239c18a90c7c0",
+    "view": "ff82082a041cd1aa9daf4759455e4844d9824e30a71e91bce96239c18a90c7c0",
+    "blend": "c4aec949f34ede294e3b9981af1e5eeba97502a2ab2a909fe28e167a8138082c",
+    "qualification": "37a12e9c5d8c30f74604d63052dfb752a7e374820a9f07cae7052306eb79cb11"
+  },
+  "mapping": [
+    {
+      "slot": 0,
+      "path": "F0.png",
+      "blenderFrame": 1,
+      "sha256": "f1f2e6c2a5b58b942942cba93e48d76cf38d7fa3f99fec81e8a39842a751e2a2"
+    },
+    {
+      "slot": 1,
+      "path": "F1.png",
+      "blenderFrame": 2,
+      "sha256": "ff5349f5cb29264f946b11b40e476d681e557d1f987d1253f56e78fd8c75dc2a"
+    },
+    {
+      "slot": 2,
+      "path": "F2.png",
+      "blenderFrame": 3,
+      "sha256": "38ca36a4940b3ce6e55cf801080ea284657dc68cfc3703614c46ed318f5e5128"
+    },
+    {
+      "slot": 3,
+      "path": "F3.png",
+      "blenderFrame": 4,
+      "sha256": "b352f6317a8a5dfc88ae0bf0785dcc9a77be6fa83995559fb4efbc5bf919be1e"
+    }
+  ],
+  "groundVector": [
+    0.7071067811865476,
+    0.7071067811865475
+  ],
+  "screenVector": [
+    1.1102230246251565e-16,
+    0.7071067811865475
+  ],
+  "acceptance": {
+    "blenderExecution": "VERIFIED",
+    "visual": "UNKNOWN",
+    "motion": "UNKNOWN",
+    "runtime": "UNKNOWN",
+    "owner": "UNKNOWN",
+    "release": "UNKNOWN"
+  },
+  "compilerIntegration": "UNKNOWN",
+  "orthographicBasis": {
+    "right": [
+      0.7071067811865476,
+      -0.7071067811865476,
+      0
+    ],
+    "up": [
+      -0.3535533905932738,
+      -0.3535533905932738,
+      0.8660254037844386
+    ],
+    "view": [
+      0.6123724356957945,
+      0.6123724356957945,
+      0.5
+    ],
+    "worldPixelScale": 38.18376618407357,
+    "physicalElevationDegrees": 30,
+    "engineElevationLabel": 26.565,
+    "engineToBlender": "(x,y,z) -> (x,-y,z)"
+  },
+  "blenderVersion": "5.0.1"
+}
+Blender 5.0.1
+
+Blender quit

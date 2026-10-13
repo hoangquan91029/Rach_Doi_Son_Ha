@@ -1,0 +1,135 @@
+{
+  "url": "https://pypi.org/pypi/mcp-for-blender/2.1.9/json",
+  "distribution": "mcp-for-blender",
+  "version": "2.1.9",
+  "projectUrls": {
+    "Bug Tracker": "https://github.com/ahujasid/blender-mcp/issues",
+    "Homepage": "https://github.com/ahujasid/blender-mcp"
+  },
+  "license": null,
+  "requiresPython": ">=3.10",
+  "wheelFilename": "mcp_for_blender-2.1.9-py3-none-any.whl",
+  "wheelURL": "https://files.pythonhosted.org/packages/e1/0b/53f520a143bd7b4cbb64d5311d29c8b51bab365bbbfd438a934006dc93a3/mcp_for_blender-2.1.9-py3-none-any.whl",
+  "wheelSHA256": "a5cbc6cf316fa7433566eb505a0c26ca22e28c10083bd1b09a23d9e357821ccc",
+  "configModule": [
+    "blender_mcp/config.py"
+  ],
+  "moduleComparison": [
+    {
+      "path": "blender_mcp/__init__.py",
+      "gitPresent": true,
+      "sameSHA": true,
+      "wheelSHA256": "e5c184d2696d3383ffe6b653b0f448a26c2a3cc6b2ce9d8bd460c53c14c9fce8"
+    },
+    {
+      "path": "blender_mcp/addon_manager.py",
+      "gitPresent": true,
+      "sameSHA": true,
+      "wheelSHA256": "3d9123a20a2a2afee0137fed421b46ad3e7a3db61c7f9841562680707058ba52"
+    },
+    {
+      "path": "blender_mcp/blender_scripts.py",
+      "gitPresent": true,
+      "sameSHA": true,
+      "wheelSHA256": "b2fb96d6e95d6f18d0024d84117299e73458169e1744c204ab2f4f3108d60124"
+    },
+    {
+      "path": "blender_mcp/config.py",
+      "gitPresent": false,
+      "sameSHA": false,
+      "wheelSHA256": "a70c8e3d707e78fb8fc7cba75425c63cae39f0b03c661c88bdb83d0e93e65907"
+    },
+    {
+      "path": "blender_mcp/consent_prompt.py",
+      "gitPresent": true,
+      "sameSHA": true,
+      "wheelSHA256": "413ee3e627b4be74c7f9e96226a2a1a58e5b0ce84b9cb1d10ff1021236977659"
+    },
+    {
+      "path": "blender_mcp/context_log.py",
+      "gitPresent": true,
+      "sameSHA": true,
+      "wheelSHA256": "a8e2f180a850388e03d137f98d5f7a061d5487cb23dd7a4c8de585bbd2adac84"
+    },
+    {
+      "path": "blender_mcp/generation.py",
+      "gitPresent": true,
+      "sameSHA": true,
+      "wheelSHA256": "24884c88d3352425b62f3fe53767dba1ce84d1917fd4c02cf13390e3ae50e596"
+    },
+    {
+      "path": "blender_mcp/guides.py",
+      "gitPresent": true,
+      "sameSHA": true,
+      "wheelSHA256": "17b23a8cba8a335392cb0c23211fddb04a6f98bfe4ef044fc4b31621adb5aa1c"
+    },
+    {
+      "path": "blender_mcp/openai_apps.py",
+      "gitPresent": true,
+      "sameSHA": true,
+      "wheelSHA256": "09501df1bb8396ee8ebea551aaa95ac399ffcb7ff785a09be63f5aa7da4a531f"
+    },
+    {
+      "path": "blender_mcp/premium_hint.py",
+      "gitPresent": true,
+      "sameSHA": true,
+      "wheelSHA256": "72c39f0d6f11e69baa78f784230c7b6daa0f69973865b231bb6f8a45a9a2b63a"
+    },
+    {
+      "path": "blender_mcp/safe_mode.py",
+      "gitPresent": true,
+      "sameSHA": true,
+      "wheelSHA256": "b16e7cac74fc4f6b48901a7976a0a81e6c3f6325dbb6030d941b2e7a8006a1fa"
+    },
+    {
+      "path": "blender_mcp/server.py",
+      "gitPresent": true,
+      "sameSHA": true,
+      "wheelSHA256": "a274fd515d937cf24fca2ae7768b7815a36a6d15631fc320d4bb678ddda7ec5a"
+    },
+    {
+      "path": "blender_mcp/setup_cli.py",
+      "gitPresent": true,
+      "sameSHA": true,
+      "wheelSHA256": "006e062ea5a7c1ea0ecb0ceb2815c37de498bcb4df52b84c8ad8187069b59596"
+    },
+    {
+      "path": "blender_mcp/telemetry.py",
+      "gitPresent": true,
+      "sameSHA": true,
+      "wheelSHA256": "fd65b30cbf053cb870f96e6af054b517e28fa6c594230a768cb2ff67f6a011ea"
+    },
+    {
+      "path": "blender_mcp/telemetry_decorator.py",
+      "gitPresent": true,
+      "sameSHA": true,
+      "wheelSHA256": "4f0da2619bddd1c5f5d0202b324326fb8473acb2e8a124ea7e06f6e2b066f270"
+    },
+    {
+      "path": "blender_mcp/trajectory.py",
+      "gitPresent": true,
+      "sameSHA": true,
+      "wheelSHA256": "4615ebdfd1845637bc6833b2f1ac6a15619b184c3b0d985d162e8e9a95d0c53c"
+    },
+    {
+      "path": "blender_mcp/update_cli.py",
+      "gitPresent": true,
+      "sameSHA": true,
+      "wheelSHA256": "3446e291fd48260b52befc9e6c4cced3e23b68e07384f14129c213103509f07d"
+    },
+    {
+      "path": "blender_mcp/bundled/__init__.py",
+      "gitPresent": true,
+      "sameSHA": true,
+      "wheelSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "blender_mcp/bundled/addon.py",
+      "gitPresent": true,
+      "sameSHA": true,
+      "wheelSHA256": "eb0facf69781a30e69792532087d8d41c6a14fcd323353250abe7988ee297fa5"
+    }
+  ],
+  "sourceCommit": "UNKNOWN",
+  "limit": "ProjectURLs support repository attribution; metadata does not prove exactGitcommit; no import/install/execute"
+}

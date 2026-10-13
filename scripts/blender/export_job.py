@@ -92,12 +92,22 @@ def validate(job, root):
     angle = job['direction']*math.pi/4
     return {'schema':'rds-blender-plan/v1','job':job,'inputHashes':{k:digest(v) for k,v in paths.items()},'mapping':[{'slot':f['slot'],'path':f"F{f['slot']}.png",'blenderFrame':f['blenderFrame']} for f in frames], 'groundVector':[math.cos(angle),math.sin(angle)],'screenVector':[math.cos(angle)-math.sin(angle),(math.cos(angle)+math.sin(angle))/2], 'acceptance':{k:'UNKNOWN' for k in ('blenderExecution','visual','motion','runtime','owner','release')},'compilerIntegration':'UNKNOWN','orthographicBasis':{'right':[2**-.5,-2**-.5,0],'up':[-.5*2**-.5,-.5*2**-.5,math.sqrt(3)/2],'view':[math.sqrt(3/8),math.sqrt(3/8),.5],'worldPixelScale':27*math.sqrt(2),'physicalElevationDegrees':30,'engineElevationLabel':actual['camera']['elevation'],'engineToBlender':'(x,y,z) -> (x,-y,z)'}}
 
+def saved_background_state(bpy, expected):
+    """Blender 5 marks freshly loaded files dirty; reload disk in background only.
+
+    Reload discards all in-memory changes. Never save or bless interactive state.
+    """
+    require(Path(bpy.data.filepath).resolve() == expected, 'opened blend mismatch')
+    if bpy.data.is_dirty:
+        require(bpy.app.background, 'unsaved Blender data forbidden')
+        bpy.ops.wm.open_mainfile(filepath=str(expected), use_scripts=False)
+        require(Path(bpy.data.filepath).resolve() == expected, 'opened blend mismatch')
+
 def export(job, root):
     plan = validate(job, root)
     import bpy  # only Blender execution requires this dependency
     require(not bpy.context.preferences.filepaths.use_scripts_auto_execute, 'disable Blender auto-execution required')
-    require(not bpy.data.is_dirty, 'unsaved Blender data forbidden')
-    require(Path(bpy.data.filepath).resolve() == pin(root,job['blend']), 'opened blend mismatch')
+    saved_background_state(bpy, pin(root,job['blend']))
     selection = job['selection']
     scene = bpy.data.scenes.get(selection['scene'])
     require(scene is not None and bpy.context.scene == scene, 'selected active scene missing')

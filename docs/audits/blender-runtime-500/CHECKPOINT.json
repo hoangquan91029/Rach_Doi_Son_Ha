@@ -1,0 +1,219 @@
+{
+  "schema": "rds-agent-receipt/v1",
+  "taskId": "root-runtime500",
+  "state": "ACTUAL_BLENDER_MCP_SETUP_VERIFIED_MODEL_APPEARANCE_FAILED_FULL_GOAL_OPEN",
+  "head": "d74bd406c10f217e5f72c8e6249884b55e3fa1ec",
+  "previousGoalTurnClassification": "PROGRESS, newauthoritative499pipeline/tooling/verifiedblocker; thisturn materiallyresolvedruntime and nativeMCPsetup",
+  "purpose": "Userauthorizedfullgoal andSol6.1Low delegation: actualBlender/SDKsetup, exporter APIcompatibility, originalneutralappearance trial and localtwohumanordinaryUI profiling; rootauditsandrevisesplan",
+  "workers": [
+    "/root/blender_capability499",
+    "/root/blender_export499",
+    "/root/blender_identity499"
+  ],
+  "model": "gpt-6.1-sol",
+  "reasoningEffort": "low",
+  "checks": [
+    {
+      "command": "node --test tests/blender-export499.test.js tests/blender-export501.test.js",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "method": "Actualrootexecution28focusedchecks afterworker-ownedcompatibility fix",
+      "state": "VERIFIED",
+      "executed": true,
+      "exitCode": 0,
+      "observation": "28pass0fail; no visualapproval",
+      "evidence": [
+        {
+          "path": "docs/audits/blender-runtime-500/integration/root-tests.json",
+          "sha256": "a68a1f945859d1b8af8c4fc84208cc73645e75ea120471d8326cfdf485d16bb0"
+        }
+      ]
+    },
+    {
+      "command": "node scripts/agent-preflight.mjs --task runtime --source scripts/blender/export_job.py --task-id root-runtime500 --inputs docs/audits/blender-runtime-500/integration/inputs.json",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "method": "Scopedtask/source/controlhashes; imageclaims remainUNRESOLVED",
+      "state": "VERIFIED",
+      "executed": true,
+      "exitCode": 0,
+      "observation": "Actualresultretained, not understanding/permission proof",
+      "evidence": [
+        {
+          "path": "docs/audits/blender-runtime-500/integration/scoped-preflight.json",
+          "sha256": "e8b4f48b1fa349b3b7523a06edeb81b8d4fb665246c2a63f321dacd9b451c591"
+        }
+      ]
+    }
+  ],
+  "technical": {
+    "state": "VERIFIED",
+    "evidence": [
+      {
+        "path": "docs/audits/blender-runtime-500/capability/CHECKPOINT.json",
+        "sha256": "5c0e3540553cf4d509a74953e59d8968d251e031581edb03fdb114ba79f4eea7"
+      },
+      {
+        "path": "docs/audits/blender-runtime-501/export-fixture/CHECKPOINT.json",
+        "sha256": "2b663e4f980d1728d11b3314370b6a0de9c718c41e4d464400cdc20acd04e398"
+      },
+      {
+        "path": "docs/audits/blender-runtime-502/connection/CHECKPOINT.json",
+        "sha256": "3f14d1c30ff1f9704c9b158847ec139fda8b2dd389ab708226dc6de7187d1362"
+      },
+      {
+        "path": "docs/audits/blender-runtime-500/integration/preservation.json",
+        "sha256": "f71fe5d69502b1139bf62355df384d2f47d5280b2303a91a31756a16f5b7f5a4"
+      }
+    ],
+    "observation": "ActualsigneduserlandBlender5.0.1/bpy/CPU256RGBA, actualfreshblendexportAPI, nativeMCPGUI+SDKandownedlifecycle/configreadscope verified; allprotectedgame/ledger/publicbytesexact",
+    "limitation": "CPUandtechnicalfixturesonly; GUI/MCPprotocoldoesnotpreserveidentity or authoringmodel. Configcatalogcurrentlyunexposed; no GPU/production proof."
+  },
+  "motion": {
+    "state": "UNKNOWN",
+    "limitation": "No rig/walk created; neutralappearance501failedrootlookafter1/1correction,0selected/fanout"
+  },
+  "runtime": {
+    "state": "UNKNOWN",
+    "limitation": "Newcharacter notinstalledinengine; oldoriginalraster assets retained. 50332TOTALbeforetrainobservertimeout, no100cohort or60sprofile; no finalperformance."
+  },
+  "owner": {
+    "state": "UNKNOWN",
+    "limitation": "Human authorizedroute/delegation, not newneutralmodel or motion.490rejection unchanged."
+  },
+  "release": {
+    "state": "UNKNOWN",
+    "limitation": "No public/shared/client/dist modifications ordeployment; final2mode2map/defaultart/WAN stillOPEN"
+  },
+  "handles": [
+    {
+      "id": "all500-503ownedworker-render-SDK-GUI-browser-servers",
+      "status": "CLOSED",
+      "observation": "Workerterminalcallbacks/actualprocessreceipts confirm closure; 503bothordinarymenus/rooms0; privateGUIlistenersclosed"
+    },
+    {
+      "id": "residence498existingF1F3providerclaims",
+      "status": "UNRESOLVED",
+      "observation": "Bothdurableusedclaims unmodified; no savedresultmapping/no retry/refund/selection"
+    },
+    {
+      "id": "existingproduction",
+      "status": "INTENTIONALLY_RUNNING",
+      "observation": "No source/dist/service/permission action; currentserverPID/health notfreshlyqualified thisturn"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "52cda32fd631f5cde21b0f861d7cd50db4e8948f8d7475f052e8086c0b149c8b"
+    },
+    {
+      "path": "docs/PROJECT_STATE.md",
+      "sha256": "224026e77b353d8dea25c2968970c5c8a28b7182ee2c68573df37593ea0ae449"
+    },
+    {
+      "path": "docs/NEXT_STEPS.md",
+      "sha256": "dc90dda6ad0e8f54099cca8d995a6bc23f9f3e4e77c14ec277bc6545b54d09ba"
+    },
+    {
+      "path": "docs/PROJECT_ROADMAP.md",
+      "sha256": "f301544b9375909773a73ad39a3d1f24974cb366bdf26cef47aeb944fec0b135"
+    },
+    {
+      "path": "docs/COMPLETION_MATRIX.md",
+      "sha256": "3fad38e2251177c797cb2d2f51d016cb818a52b530c1d2d71fc53fd9d9995dda"
+    },
+    {
+      "path": "docs/art/pipeline/BLENDER_SPRITE_PIPELINE.md",
+      "sha256": "335f4ce5965650dae237f93baddad6e1340f3c3a8d3530a86e82f6944434cbfe"
+    },
+    {
+      "path": "scripts/blender/export_job.py",
+      "sha256": "cc22d934a0b1911aa760adce53c2176844e88f2e0310ae874e04559238baf45c"
+    },
+    {
+      "path": "scripts/blender/villager501.py",
+      "sha256": "07c72ae11bc3386ea63252018fc1960810345927b20e55351f59bbe6e7466492"
+    },
+    {
+      "path": "scripts/qa/online-profile500.mjs",
+      "sha256": "6de2772270db7f3fc27449a7ed96813a9f77f83044e92e1358f61bc9b284d55b"
+    },
+    {
+      "path": "scripts/qa/online-profile503.mjs",
+      "sha256": "fe155e7f91456e7f10edd5872c6a35f1db2d4fbaea0dfe29c3e9c5c199d390ed"
+    },
+    {
+      "path": "scripts/blender/mcp502/lifecycle.py",
+      "sha256": "006073d5bf82ad5f4a42c507194e545c2992607f0bdac7169c70d8edf8b3abd0"
+    }
+  ],
+  "receipts": [
+    {
+      "path": "docs/audits/blender-runtime-500/capability/CHECKPOINT.json",
+      "sha256": "5c0e3540553cf4d509a74953e59d8968d251e031581edb03fdb114ba79f4eea7"
+    },
+    {
+      "path": "docs/audits/blender-runtime-500/mcp/CHECKPOINT.json",
+      "sha256": "ed1ab60842f284bb1f2947a03690fa7ffb17705a1ffa950076d0ab095ec9c11f"
+    },
+    {
+      "path": "docs/audits/blender-runtime-501/export-fixture/CHECKPOINT.json",
+      "sha256": "2b663e4f980d1728d11b3314370b6a0de9c718c41e4d464400cdc20acd04e398"
+    },
+    {
+      "path": "docs/audits/blender-runtime-501/handshake/CHECKPOINT.json",
+      "sha256": "81d67a456d2912917f70b20c5823f3c93fd5a04780ab226528144f3ab2b6e9ff"
+    },
+    {
+      "path": "docs/audits/blender-runtime-502/connection/CHECKPOINT.json",
+      "sha256": "3f14d1c30ff1f9704c9b158847ec139fda8b2dd389ab708226dc6de7187d1362"
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-501/CHECKPOINT.json",
+      "sha256": "b1cc9cf46dc56f03cfbb7d8c311f93ab7dd4dbc22d510f68bc3b557bf09fef9a"
+    },
+    {
+      "path": "docs/qa/online-profile-500/CHECKPOINT.json",
+      "sha256": "9cf4ec4d7c2e46ed30f7f3f7f619e6def38bb1b2734c8ef097c7c42ecc922f85"
+    },
+    {
+      "path": "docs/qa/online-profile-502/CHECKPOINT.json",
+      "sha256": "7490cf0e4ff1d2c399d5ab6a4db7e78975eb726184fdacc0f1f0317dfb296eca"
+    },
+    {
+      "path": "docs/qa/online-profile-503/CHECKPOINT.json",
+      "sha256": "313591ca0444146efe4f1f9ec4741e7093a31159453712cfad4ecdfaf599bce4"
+    }
+  ],
+  "failuresPreserved": [
+    "499official403 prior",
+    "APTindex/link/library/resource failures repairedwithoutdriverchanges",
+    "MCPGitmissingconfig/uvlock mismatch/oldPyPI404 fixedreadonlypublishedwheelcontext",
+    "SDKdependencyflagfailure and502DISPLAY envforwarding failure",
+    "actualBlenderfreshloadis_dirty compatibilityfail\u2192sourcepinnedbackgroundreload",
+    "500spritepickrace",
+    "root502assumedonlinePausefreeze butsourceblocked beforeattempt",
+    "503trainingcountobservertimeout; causeUNKNOWN notgamebug/rejectionassertion",
+    "501initial+onecorrected originalneutralappearanceFAILED"
+  ],
+  "counts": {
+    "imageProviderCalls": 0,
+    "technicalBlenderFixtures": 1,
+    "actualExportFixtureFrames": 4,
+    "neutralModels": 1,
+    "neutralInitialRenders": 2,
+    "neutralModelCorrections": 1,
+    "neutralCorrectionRenders": 2,
+    "selectedNewArt": 0,
+    "rigs": 0,
+    "walkFrames": 0,
+    "unitFanout": 0,
+    "publicChanges": 0
+  },
+  "goal": {
+    "status": "ACTIVE",
+    "completed": false,
+    "blocked": false,
+    "reason": "Concreteprogress towardprerequisites; fullcriticalscope unchanged, further source-constrainedauthoring and gamework actionable."
+  },
+  "nextDependency": "Materiallydifferent originaltwo-view constrainedneutralmodel/semanticmaterial controls beforeanynewrender; no equivalent501retry. Properqueue/spawn/resource/WebSocketerror evidence beforeanotherfinite100roomtrial. NativeCodextoolexposure inspectactualcatalognextturn."
+}

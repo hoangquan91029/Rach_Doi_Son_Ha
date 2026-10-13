@@ -1,0 +1,26 @@
+{
+  "evidence": "FAILED",
+  "method": "Actualview_image of fixed71px comparison and rawD1PNG plus authoringscriptinspection",
+  "reviewer": "/root",
+  "producer": "/root/blender_identity499",
+  "sourcePins": [
+    {
+      "path": "docs/art/pipeline/blender-villager-501/initial/gameplay-size-comparison.png",
+      "sha256": "06035f6e74fa83fe3a6349417f0678d0bd97679b305df31fefb976de9c422732"
+    },
+    {
+      "path": "scripts/blender/villager501.py",
+      "sha256": "13404c41a816fcc160f6dab12b05ca053dd21613ca39dc8dacc0ee16b1d8c29f"
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-501/initial/neutral-D1.png",
+      "sha256": "f49cb759bae20eab37399cfd1c3a8f4c40b14dcee66cc68745cbf9e2fe27db15"
+    }
+  ],
+  "observed": "Originalappearance notpreserved: face/garmenttexture misplaced and D1hat hideshead; initialmodel notselected or runtimeinstalled.",
+  "mechanicalDiagnosis": "Primitive sphere generatedUVMap remains first/renderUV while newcamera-projection UV layer is added; image node unspecifiedUV. Physicalfrontstrawbrim low at30camera hidesface. Diagnosis guides ONEcorrection, doesnotprovefix.",
+  "correction": "Rootapproved1/1globalmodelrevision: explicitprojectedUV/active_render andfixedwholehatfronttilt, sameD0/D1two neutralrenders only, no imagegen/motion/fanout.",
+  "motion": "UNKNOWN notcreated/reviewed",
+  "owner": "UNKNOWN noapproval",
+  "remainingImageProviderClaims": "498F1/F3consumedUNRESOLVED unchanged"
+}

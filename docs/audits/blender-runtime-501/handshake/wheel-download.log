@@ -1,0 +1,99 @@
+Collecting annotated-types==0.8.0 (from -r docs/audits/blender-runtime-501/handshake/requirements.lock (line 3))
+  Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+Collecting anyio==4.15.1 (from -r docs/audits/blender-runtime-501/handshake/requirements.lock (line 7))
+  Downloading anyio-4.15.1-py3-none-any.whl (132 kB)
+Collecting attrs==26.1.0 (from -r docs/audits/blender-runtime-501/handshake/requirements.lock (line 15))
+  Downloading attrs-26.1.0-py3-none-any.whl (67 kB)
+Collecting certifi==2026.7.22 (from -r docs/audits/blender-runtime-501/handshake/requirements.lock (line 21))
+  Downloading certifi-2026.7.22-py3-none-any.whl (136 kB)
+Collecting cffi==2.1.1 (from -r docs/audits/blender-runtime-501/handshake/requirements.lock (line 28))
+  Downloading cffi-2.1.1-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (221 kB)
+Collecting charset-normalizer==3.5.2 (from -r docs/audits/blender-runtime-501/handshake/requirements.lock (line 130))
+  Downloading charset_normalizer-3.5.2-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (255 kB)
+Collecting click==8.5.0 (from -r docs/audits/blender-runtime-501/handshake/requirements.lock (line 304))
+  Downloading click-8.5.0-py3-none-any.whl (125 kB)
+Collecting cryptography==50.0.2 (from -r docs/audits/blender-runtime-501/handshake/requirements.lock (line 308))
+  Downloading cryptography-50.0.2-cp311-abi3-manylinux_2_34_x86_64.whl (4.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.8/4.8 MB 744.9 kB/s eta 0:00:00
+Collecting h11==0.16.0 (from -r docs/audits/blender-runtime-501/handshake/requirements.lock (line 369))
+  Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+Collecting httpcore==1.0.9 (from -r docs/audits/blender-runtime-501/handshake/requirements.lock (line 375))
+  Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+Collecting httpx==0.28.1 (from -r docs/audits/blender-runtime-501/handshake/requirements.lock (line 379))
+  Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+Collecting httpx-sse==0.4.3 (from -r docs/audits/blender-runtime-501/handshake/requirements.lock (line 385))
+  Downloading httpx_sse-0.4.3-py3-none-any.whl (9.0 kB)
+Collecting idna==3.20 (from -r docs/audits/blender-runtime-501/handshake/requirements.lock (line 389))
+  Downloading idna-3.20-py3-none-any.whl (69 kB)
+Collecting jsonschema==4.26.0 (from -r docs/audits/blender-runtime-501/handshake/requirements.lock (line 396))
+  Downloading jsonschema-4.26.0-py3-none-any.whl (90 kB)
+Collecting jsonschema-specifications==2025.9.1 (from -r docs/audits/blender-runtime-501/handshake/requirements.lock (line 400))
+  Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+Collecting mcp==1.29.0 (from -r docs/audits/blender-runtime-501/handshake/requirements.lock (line 404))
+  Downloading mcp-1.29.0-py3-none-any.whl (223 kB)
+Collecting pycparser==3.11 (from -r docs/audits/blender-runtime-501/handshake/requirements.lock (line 408))
+  Downloading pycparser-3.11-py3-none-any.whl (51 kB)
+Collecting pydantic==2.14.1 (from -r docs/audits/blender-runtime-501/handshake/requirements.lock (line 412))
+  Downloading pydantic-2.14.1-py3-none-any.whl (488 kB)
+Collecting pydantic-core==2.50.1 (from -r docs/audits/blender-runtime-501/handshake/requirements.lock (line 418))
+  Downloading pydantic_core-2.50.1-cp314-cp314-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 1.0 MB/s eta 0:00:00
+Collecting pydantic-settings==2.15.0 (from -r docs/audits/blender-runtime-501/handshake/requirements.lock (line 557))
+  Downloading pydantic_settings-2.15.0-py3-none-any.whl (69 kB)
+Collecting pyjwt==2.15.1 (from -r docs/audits/blender-runtime-501/handshake/requirements.lock (line 561))
+  Downloading pyjwt-2.15.1-py3-none-any.whl (33 kB)
+Collecting python-dotenv==1.2.4 (from -r docs/audits/blender-runtime-501/handshake/requirements.lock (line 565))
+  Downloading python_dotenv-1.2.4-py3-none-any.whl (23 kB)
+Collecting python-multipart==0.0.32 (from -r docs/audits/blender-runtime-501/handshake/requirements.lock (line 569))
+  Downloading python_multipart-0.0.32-py3-none-any.whl (30 kB)
+Collecting referencing==0.37.0 (from -r docs/audits/blender-runtime-501/handshake/requirements.lock (line 573))
+  Downloading referencing-0.37.0-py3-none-any.whl (26 kB)
+Collecting requests==2.34.2 (from -r docs/audits/blender-runtime-501/handshake/requirements.lock (line 579))
+  Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+Collecting rpds-py==2026.9.1 (from -r docs/audits/blender-runtime-501/handshake/requirements.lock (line 583))
+  Downloading rpds_py-2026.9.1-cp314-cp314-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (371 kB)
+Collecting sse-starlette==3.5.0 (from -r docs/audits/blender-runtime-501/handshake/requirements.lock (line 715))
+  Downloading sse_starlette-3.5.0-py3-none-any.whl (17 kB)
+Collecting starlette==1.7.0 (from -r docs/audits/blender-runtime-501/handshake/requirements.lock (line 719))
+  Downloading starlette-1.7.0-py3-none-any.whl (78 kB)
+Collecting typing-extensions==4.16.0 (from -r docs/audits/blender-runtime-501/handshake/requirements.lock (line 725))
+  Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Collecting typing-inspection==0.4.4 (from -r docs/audits/blender-runtime-501/handshake/requirements.lock (line 734))
+  Downloading typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+Collecting urllib3==2.8.0 (from -r docs/audits/blender-runtime-501/handshake/requirements.lock (line 741))
+  Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+Collecting uvicorn==0.54.0 (from -r docs/audits/blender-runtime-501/handshake/requirements.lock (line 745))
+  Downloading uvicorn-0.54.0-py3-none-any.whl (87 kB)
+Saved /home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/mcp501/wheels/annotated_types-0.8.0-py3-none-any.whl
+Saved /home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/mcp501/wheels/anyio-4.15.1-py3-none-any.whl
+Saved /home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/mcp501/wheels/attrs-26.1.0-py3-none-any.whl
+Saved /home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/mcp501/wheels/certifi-2026.7.22-py3-none-any.whl
+Saved /home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/mcp501/wheels/cffi-2.1.1-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+Saved /home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/mcp501/wheels/charset_normalizer-3.5.2-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+Saved /home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/mcp501/wheels/click-8.5.0-py3-none-any.whl
+Saved /home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/mcp501/wheels/cryptography-50.0.2-cp311-abi3-manylinux_2_34_x86_64.whl
+Saved /home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/mcp501/wheels/h11-0.16.0-py3-none-any.whl
+Saved /home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/mcp501/wheels/httpcore-1.0.9-py3-none-any.whl
+Saved /home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/mcp501/wheels/httpx-0.28.1-py3-none-any.whl
+Saved /home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/mcp501/wheels/httpx_sse-0.4.3-py3-none-any.whl
+Saved /home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/mcp501/wheels/idna-3.20-py3-none-any.whl
+Saved /home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/mcp501/wheels/jsonschema-4.26.0-py3-none-any.whl
+Saved /home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/mcp501/wheels/jsonschema_specifications-2025.9.1-py3-none-any.whl
+Saved /home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/mcp501/wheels/mcp-1.29.0-py3-none-any.whl
+Saved /home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/mcp501/wheels/pycparser-3.11-py3-none-any.whl
+Saved /home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/mcp501/wheels/pydantic-2.14.1-py3-none-any.whl
+Saved /home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/mcp501/wheels/pydantic_core-2.50.1-cp314-cp314-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+Saved /home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/mcp501/wheels/pydantic_settings-2.15.0-py3-none-any.whl
+Saved /home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/mcp501/wheels/pyjwt-2.15.1-py3-none-any.whl
+Saved /home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/mcp501/wheels/python_dotenv-1.2.4-py3-none-any.whl
+Saved /home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/mcp501/wheels/python_multipart-0.0.32-py3-none-any.whl
+Saved /home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/mcp501/wheels/referencing-0.37.0-py3-none-any.whl
+Saved /home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/mcp501/wheels/requests-2.34.2-py3-none-any.whl
+Saved /home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/mcp501/wheels/rpds_py-2026.9.1-cp314-cp314-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+Saved /home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/mcp501/wheels/sse_starlette-3.5.0-py3-none-any.whl
+Saved /home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/mcp501/wheels/starlette-1.7.0-py3-none-any.whl
+Saved /home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/mcp501/wheels/typing_extensions-4.16.0-py3-none-any.whl
+Saved /home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/mcp501/wheels/typing_inspection-0.4.4-py3-none-any.whl
+Saved /home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/mcp501/wheels/urllib3-2.8.0-py3-none-any.whl
+Saved /home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/mcp501/wheels/uvicorn-0.54.0-py3-none-any.whl
+Successfully downloaded annotated-types anyio attrs certifi cffi charset-normalizer click cryptography h11 httpcore httpx httpx-sse idna jsonschema jsonschema-specifications mcp pycparser pydantic pydantic-core pydantic-settings pyjwt python-dotenv python-multipart referencing requests rpds-py sse-starlette starlette typing-extensions typing-inspection urllib3 uvicorn

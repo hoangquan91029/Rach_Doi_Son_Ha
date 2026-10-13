@@ -1,0 +1,349 @@
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/context_log.py:10:import base64
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/context_log.py:11:import json
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/context_log.py:12:import logging
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/context_log.py:13:import os
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/context_log.py:14:import struct
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/context_log.py:15:import sys
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/context_log.py:16:import time
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/context_log.py:17:from pathlib import Path
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/context_log.py:18:from typing import Any
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/context_log.py:20:from mcp.types import CallToolRequest, CallToolResult, ImageContent, ListToolsRequest, TextContent
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/context_log.py:29:    return os.environ.get(CONTEXT_LOG_ENV, "").strip().lower() in {"1", "true", "yes", "on"}
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/context_log.py:35:        base = Path(os.environ.get("APPDATA", Path.home() / "AppData" / "Roaming"))
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/context_log.py:39:        base = Path(os.environ.get("XDG_DATA_HOME", Path.home() / ".local" / "share"))
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/addon_manager.py:10:from __future__ import annotations
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/addon_manager.py:12:import logging
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/addon_manager.py:13:import os
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/addon_manager.py:14:import re
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/addon_manager.py:15:import shutil
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/addon_manager.py:16:import sys
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/addon_manager.py:17:from dataclasses import dataclass, field
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/addon_manager.py:18:from pathlib import Path
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/addon_manager.py:198:        appdata = os.environ.get("APPDATA")
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/addon_manager.py:221:    env = os.environ.get("BLENDER_USER_ADDONS") or os.environ.get("BLENDERMCP_ADDONS_DIR")
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/openai_apps.py:5:before. Spec: https://github.com/openai/mcp-extensions/blob/main/docs/spec.md
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/openai_apps.py:20:from __future__ import annotations
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/openai_apps.py:22:import logging
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/openai_apps.py:23:import os
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/openai_apps.py:24:import threading
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/openai_apps.py:25:import time
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/openai_apps.py:26:from dataclasses import dataclass
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/openai_apps.py:27:from importlib import resources
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/openai_apps.py:28:from typing import Any, Literal
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/openai_apps.py:30:from mcp.shared.message import ServerMessageMetadata
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/openai_apps.py:31:from mcp.types import ElicitResult, Icon
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/openai_apps.py:32:from pydantic import BaseModel
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/openai_apps.py:51:    value = os.environ.get(name, "").strip().lower()
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/openai_apps.py:216:    '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">'
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/generation.py:12:import asyncio
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/generation.py:13:import base64
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/generation.py:14:import hashlib
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/generation.py:15:import json
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/generation.py:16:import logging
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/generation.py:17:import os
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/generation.py:18:import re
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/generation.py:19:import time
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/generation.py:20:from dataclasses import dataclass
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/generation.py:21:from pathlib import Path
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/generation.py:22:from typing import Any, Awaitable, Callable
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/generation.py:23:from urllib.parse import urlparse
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/generation.py:189:        "https://mcp-for-blender.com/premium"
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/premium_hint.py:5:consent prompt, so it never repeats within one chat.
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/premium_hint.py:8:import logging
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/premium_hint.py:9:import threading
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/premium_hint.py:10:from typing import Any
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/premium_hint.py:14:PREMIUM_URL = "https://mcp-for-blender.com/premium"
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/consent_prompt.py:1:"""First-run telemetry consent prompt.
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/consent_prompt.py:3:Consent lives in one place: the ``telemetry_consent`` checkbox in the Blender
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/consent_prompt.py:10:``consent=True`` turns collection on. Clients without it are left alone -- a
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/consent_prompt.py:17:from __future__ import annotations
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/consent_prompt.py:19:import json
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/consent_prompt.py:20:import logging
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/consent_prompt.py:21:import os
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/consent_prompt.py:22:import threading
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/consent_prompt.py:23:import time
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/consent_prompt.py:24:from pathlib import Path
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/consent_prompt.py:25:from typing import Any
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/consent_prompt.py:45:        "consent": {
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/consent_prompt.py:55:    "required": ["consent"],
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/consent_prompt.py:69:    base = os.environ.get("XDG_CONFIG_HOME")
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/consent_prompt.py:71:    return root / "blender-mcp" / "consent_prompt.json"
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/consent_prompt.py:96:        logger.debug(f"Could not persist consent prompt state: {e}")
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/consent_prompt.py:132:def _current_consent() -> bool | None:
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/consent_prompt.py:133:    """Read consent from Blender. None if Blender could not be reached."""
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/consent_prompt.py:137:        return get_telemetry().check_user_consent()
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/consent_prompt.py:139:        logger.debug(f"Could not read telemetry consent: {e}")
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/consent_prompt.py:143:def _apply_consent(consent: bool) -> bool:
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/consent_prompt.py:144:    """Write consent to Blender and refresh the cached value."""
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/consent_prompt.py:151:            "set_telemetry_consent", {"consent": consent}
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/consent_prompt.py:154:            logger.debug(f"Addon rejected consent write: {result['error']}")
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/consent_prompt.py:156:        telemetry.invalidate_consent_cache()
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/consent_prompt.py:159:        logger.debug(f"Could not set telemetry consent: {e}")
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/consent_prompt.py:163:async def maybe_prompt_for_consent(ctx: Any) -> str:
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/consent_prompt.py:184:        consent = _current_consent()
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/consent_prompt.py:185:        if consent is None or consent:
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/consent_prompt.py:201:            # Only a literal True is consent; anything else is "not granted".
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/consent_prompt.py:202:            granted = (result.content or {}).get("consent") is True
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/consent_prompt.py:204:            _write_state(action="accept", consent=granted, via="elicitation")
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/consent_prompt.py:205:            if granted and _apply_consent(True):
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/consent_prompt.py:215:            _write_state(action="decline", consent=False, via="elicitation")
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/safe_mode.py:36:    subprocess, socket, ...) — only bpy, bmesh, mathutils, and pure-python
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/safe_mode.py:44:    and the pre-3.6 `script_directory`, plus `use_scripts_auto_execute`
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/safe_mode.py:56:from __future__ import annotations
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/safe_mode.py:58:import ast
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/safe_mode.py:59:import os
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/safe_mode.py:60:from typing import Final
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/safe_mode.py:77:    return os.environ.get(SAFE_MODE_ENV, "").strip().lower() in ("true", "1", "yes", "on")
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/safe_mode.py:150:        "environ",
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/safe_mode.py:200:    "exec": "exec() executes arbitrary code",
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/safe_mode.py:371:    "use_self": "enables driver expression access to the owning datablock",
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/safe_mode.py:376:    "use_scripts_auto_execute": "enables automatic execution of embedded scripts",
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/safe_mode.py:560:    def _bind(self, name: str, node: ast.AST) -> None:
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/safe_mode.py:646:            self._bind(alias.asname or alias.name, node)
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/safe_mode.py:653:            self._bind(name, node)
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/safe_mode.py:812:        self._bind(node.arg, node)
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/safe_mode.py:825:        self._bind(node.name, node)
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/safe_mode.py:830:            self._bind(node.name, node)
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/trajectory.py:5:to Supabase only (no local/JSONL storage). Reuses telemetry config + consent.
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/trajectory.py:8:from __future__ import annotations
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/trajectory.py:10:import contextlib
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/trajectory.py:11:import json
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/trajectory.py:12:import logging
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/trajectory.py:13:import platform
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/trajectory.py:14:import queue
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/trajectory.py:15:import threading
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/trajectory.py:16:import time
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/trajectory.py:17:import uuid
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/trajectory.py:18:from collections import deque
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/trajectory.py:19:from typing import Any
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/trajectory.py:21:import httpx
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/trajectory.py:23:from .telemetry import MCP_VERSION, get_telemetry
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/trajectory.py:102:import json
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/trajectory.py:103:import bpy
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/trajectory.py:104:import mathutils
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/trajectory.py:582:            return bool(telemetry._check_user_consent())
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/trajectory.py:584:            logger.debug(f"Trajectory consent check failed: {e}")
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/trajectory.py:652:            use_native = self._native_snapshot_supported is not False
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/trajectory.py:653:            if use_native:
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/trajectory.py:673:            if self._native_snapshot_supported is False or not use_native:
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/trajectory.py:891:        """Record what the agent actually observed (consent-gated buffer). Never raises."""
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:6:import contextlib
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:7:import logging
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:8:import os
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:9:import platform
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:10:import queue
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:11:import sys
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:12:import threading
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:13:import time
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:14:import uuid
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:15:from dataclasses import dataclass
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:16:from enum import Enum
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:17:from importlib.metadata import PackageNotFoundError, version
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:18:from pathlib import Path
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:19:from typing import Any
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:21:import httpx
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:81:        # Check if disabled via environment variables
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:84:            logger.warning("Telemetry disabled via environment variable")
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:94:        self._consent_cache: bool | None = None
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:95:        self._consent_cached_at: float = 0.0
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:96:        self._consent_lock = threading.Lock()
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:108:        """Check if telemetry is disabled via environment variables"""
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:116:            if os.environ.get(var, "").lower() in ("true", "1", "yes", "on"):
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:123:            base_dir = Path(os.environ.get('APPDATA', Path.home() / 'AppData' / 'Roaming'))
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:127:            base_dir = Path(os.environ.get('XDG_DATA_HOME', Path.home() / '.local' / 'share'))
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:157:    def _check_user_consent(self) -> bool:
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:159:        return self.check_user_consent() is True
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:161:    def check_user_consent(self) -> bool | None:
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:165:        otherwise trigger several consent round-trips (telemetry event, plus a
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:169:        with self._consent_lock:
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:171:                self._consent_cache is not None
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:172:                and (time.time() - self._consent_cached_at) < CONSENT_CACHE_TTL
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:174:                return self._consent_cache
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:179:            result = blender.send_command("get_telemetry_consent")
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:180:            consent = bool(result.get("consent", False))
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:182:            logger.debug(f"Could not check telemetry consent: {e}")
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:185:        with self._consent_lock:
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:186:            self._consent_cache = consent
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:187:            self._consent_cached_at = time.time()
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:188:        return consent
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:190:    def invalidate_consent_cache(self) -> None:
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:191:        """Force the next consent check to re-query Blender."""
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:192:        with self._consent_lock:
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:193:            self._consent_cache = None
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:194:            self._consent_cached_at = 0.0
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:211:        # Check user consent for private data collection
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:212:        user_consent = self._check_user_consent()
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:214:        if not user_consent:
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:215:            # Without consent, only collect minimal anonymous usage data:
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:225:                error_message = "Error occurred (details withheld without consent)"
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:227:        # Truncate prompt if needed (only if consent was given)
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:231:        # Truncate error messages (only if consent was given and not already sanitized)
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:232:        if error_message and user_consent and len(error_message) > 200:
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:320:        # Only upload screenshots with user consent
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:321:        if not self._check_user_consent():
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry.py:322:            logger.debug("User has not consented to telemetry, skipping screenshot upload")
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry_decorator.py:5:import functools
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry_decorator.py:6:import inspect
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry_decorator.py:7:import logging
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry_decorator.py:8:import time
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry_decorator.py:9:from typing import Callable, Any
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry_decorator.py:11:from .telemetry import get_telemetry, EventType
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry_decorator.py:23:async def _consent_note(args: tuple, kwargs: dict) -> str:
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry_decorator.py:24:    """First-run consent prompt. Returns "" on all but the first call."""
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry_decorator.py:29:        from .consent_prompt import maybe_prompt_for_consent
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry_decorator.py:31:        return await maybe_prompt_for_consent(ctx)
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry_decorator.py:246:                return _append_note(result, await _consent_note(args, kwargs))
+docs/audits/blender-runtime-500/mcp/upstream/src/blender_mcp/telemetry_decorator.py:448:                return _append_note(result, await _consent_note(args, kwargs))
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:3:import re
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:4:import textwrap
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:5:import bpy
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:6:import mathutils
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:7:import json
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:8:import threading
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:9:import socket
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:10:import queue
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:11:import time
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:12:import requests
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:13:import tempfile
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:14:import traceback
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:15:import os
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:16:import shutil
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:17:import uuid
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:18:import zipfile
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:19:import zlib
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:20:from bpy.props import IntProperty, BoolProperty
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:21:import io
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:22:from datetime import datetime
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:23:import hashlib, hmac, base64
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:24:import os.path as osp
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:25:from collections import deque
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:26:from urllib.parse import quote, urlencode, urlparse, urlunparse, parse_qsl
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:27:from contextlib import contextmanager, redirect_stdout, suppress
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:28:from bpy.app.handlers import persistent
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:37:    "doc_url": "https://mcp-for-blender.com/",
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:54:DISCORD_URL = "https://discord.gg/SNqPn4TcKQ"
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:89:    if not scene.blendermcp_auto_start_server or _user_stopped_server:
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:113:def _blendermcp_schedule_auto_start(delay=0.5):
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:126:    _blendermcp_schedule_auto_start()
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:129:def _blendermcp_register_auto_start():
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:135:    _blendermcp_schedule_auto_start()
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:138:def _blendermcp_unregister_auto_start():
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:147:POLYPIZZA_API_BASE = "https://api.poly.pizza/v1.1"
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:247:            "a residential connection, or download the .glb by hand from https://poly.pizza and import "
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:263:POLYHAVEN_API_BASE = "https://api.polyhaven.com"
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:271:    + " (+https://github.com/ahujasid/blender-mcp)"
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:338:POLYHAVEN_SITE = "https://polyhaven.com"
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:1074:def _telemetry_consent_enabled():
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:1075:    """Read the consent preference directly. Fails closed."""
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:1080:        return bool(addon_prefs.preferences.telemetry_consent)
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:1086:    """Attach manual-edit handlers, but only with telemetry consent."""
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:1087:    if not _telemetry_consent_enabled():
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:1103:    """Re-apply the consent gate. Safe to call when consent or server state changes."""
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:1213:            env_value = os.getenv(env_var, "")
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:1263:        ) or "http://localhost:8081"
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:1281:            self.socket.bind((self.host, self.port))
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:1513:            "get_telemetry_consent": self.get_telemetry_consent,
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:1514:            "set_telemetry_consent": self.set_telemetry_consent,
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:1525:        if bpy.context.scene.blendermcp_use_polyhaven:
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:1536:        if bpy.context.scene.blendermcp_use_hyper3d:
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:1545:        if bpy.context.scene.blendermcp_use_sketchfab:
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:1554:        if bpy.context.scene.blendermcp_use_polypizza:
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:1562:        if bpy.context.scene.blendermcp_use_hunyuan3d:
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:1607:                "get_telemetry_consent",
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:1608:                "set_telemetry_consent",
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:1696:            if not self.get_telemetry_consent().get("consent"):
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:1840:            tree = id_block.node_tree if getattr(id_block, "use_nodes", False) else None
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:1842:                color = getattr(id_block, "diffuse_color", None) or getattr(id_block, "color", None)
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:2248:                exec(code, namespace)
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:2586:        use_selection = False
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:2600:            use_selection = True
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:2605:            use_selection = True
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:2621:                filepath=filepath, export_format='GLB', use_selection=use_selection,
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:2622:                use_active_scene=True, export_apply=apply_modifiers,
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:2626:                filepath=filepath, use_selection=use_selection, apply_unit_scale=True,
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:2627:                bake_space_transform=apply_modifiers, use_mesh_modifiers=apply_modifiers,
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:2633:            "selection_only": use_selection,
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:2887:            world.use_nodes = True
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:2955:        mat.use_nodes = True
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:3249:                    if not slot.material.use_nodes:
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:3296:            "has_nodes": mat.use_nodes,
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:3393:    def get_telemetry_consent(self):
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:3394:        """Get the current telemetry consent status.
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:3396:        Fails closed: if preferences cannot be read we report no consent. Not
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:3404:                consent = bool(addon_prefs.preferences.telemetry_consent)
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:3406:                consent = False
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:3408:            consent = False
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:3409:        return {"consent": consent}
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:3411:    def set_telemetry_consent(self, consent=False):
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:3412:        """Write the telemetry consent preference.
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:3423:            addon_prefs.preferences.telemetry_consent = bool(consent)
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:3425:            return {"error": f"Could not set telemetry consent: {e}"}
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:3432:        return {"consent": bool(consent)}
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:3436:        enabled = bpy.context.scene.blendermcp_use_polyhaven
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:3452:            return premium_integration_status("hyper3d", bpy.context.scene.blendermcp_use_hyper3d)
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:3453:        enabled = bpy.context.scene.blendermcp_use_hyper3d
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:3516:                "https://hyperhuman.deemos.com/api/v2/rodin",
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:3548:                "https://queue.fal.run/fal-ai/hyper3d/rodin",
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:3578:            "https://hyperhuman.deemos.com/api/v2/status",
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:3598:            f"https://queue.fal.run/fal-ai/hyper3d/requests/{request_id}/status",
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:3691:            "https://hyperhuman.deemos.com/api/v2/download",
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:3761:            f"https://queue.fal.run/fal-ai/hyper3d/requests/{request_id}",
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:3821:        enabled = bpy.context.scene.blendermcp_use_sketchfab
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:3832:                    "https://api.sketchfab.com/v3/me",
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:3909:                "https://api.sketchfab.com/v3/search",
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:3956:                f"https://api.sketchfab.com/v3/models/{uid}",
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:4048:            download_endpoint = f"https://api.sketchfab.com/v3/models/{uid}/download"
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:4256:        enabled = bpy.context.scene.blendermcp_use_polypizza
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:4268:                            1. Get a free API key at https://poly.pizza/settings/api
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:4278:                            1. Get a free API key at https://poly.pizza/settings/api
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:4580:            return premium_integration_status("hunyuan3d", bpy.context.scene.blendermcp_use_hunyuan3d)
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:4581:        enabled = bpy.context.scene.blendermcp_use_hunyuan3d
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:4649:        endpoint = f"https://{host}"
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:4967:            return {"error": "Invalid URL format. Must start with http:// or https://"}
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:5158:PREMIUM_API_URL_DEFAULT = "https://dbunjhuejdwwcafedslw.supabase.co/functions/v1/premium"
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:5159:PREMIUM_PRICING_URL = "https://mcp-for-blender.com/premium"
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:5160:PREMIUM_MANAGE_URL_DEFAULT = "https://mcp-for-blender.com/account"
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:5183:    "hyper3d": ("Hyper3D Rodin", "blendermcp_use_hyper3d"),
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:5184:    "hunyuan3d": ("Hunyuan3D", "blendermcp_use_hunyuan3d"),
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:5185:    "tripo": ("Tripo", "blendermcp_use_tripo"),
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:5205:    return value or os.getenv(env_var, "")
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:5217:    return (os.getenv("BLENDERMCP_PREMIUM_API_URL") or PREMIUM_API_URL_DEFAULT).rstrip("/")
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:5226:    return bool(os.getenv("BLENDERMCP_PREMIUM_LICENSE_KEY"))
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:5504:    enabled = bool(getattr(bpy.context.scene, "blendermcp_use_tripo", False))
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:5512:    if not (premium_active() and getattr(bpy.context.scene, "blendermcp_use_tripo", False)):
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:5554:        return {"error": "Invalid URL format. Must start with http:// or https://"}
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:5717:    def _on_telemetry_consent_changed(self, context):
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:5723:    telemetry_consent: BoolProperty(
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:5727:        update=_on_telemetry_consent_changed,
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:5802:        row.prop(self, "telemetry_consent", text="Allow Telemetry")
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:5806:        if self.telemetry_consent:
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:5832:            row.operator("wm.url_open", text="hyper3d.ai keys", icon='URL').url = "https://hyper3d.ai/"
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:5833:            row.operator("wm.url_open", text="fal.ai keys", icon='URL').url = "https://fal.ai/dashboard/keys"
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:5838:                "https://console.cloud.tencent.com/cam/capi"
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:5887:            layout, scene, "blendermcp_use_polyhaven", "Poly Haven", 'WORLD')
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:5894:            layout, scene, "blendermcp_use_sketchfab", "Sketchfab", 'MESH_MONKEY')
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:5903:            layout, scene, "blendermcp_use_polypizza", "Poly Pizza", 'MESH_ICOSPHERE')
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:5921:            layout, scene, "blendermcp_use_hyper3d", "Hyper3D Rodin", 'MESH_UVSPHERE')
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:5935:            layout, scene, "blendermcp_use_hunyuan3d", "Tencent Hunyuan 3D", 'MESH_CUBE')
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:5961:            sub = self._integration_header(layout, scene, "blendermcp_use_tripo", "Tripo", 'MESH_TORUS')
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:6050:ADDON_UPDATE_URL = "https://raw.githubusercontent.com/ahujasid/blender-mcp/main/addon.py"
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:6051:ADDON_CHANGES_URL = "https://github.com/ahujasid/blender-mcp/commits/main/addon.py"
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:6122:    if not bpy.app.background and not os.environ.get(ADDON_UPDATE_CHECK_ENV):
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:6204:        terms_url = "https://github.com/ahujasid/blender-mcp/blob/main/TERMS_AND_CONDITIONS.md"
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:6229:    bpy.types.Scene.blendermcp_auto_start_server = bpy.props.BoolProperty(
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:6235:    bpy.types.Scene.blendermcp_use_polyhaven = bpy.props.BoolProperty(
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:6241:    bpy.types.Scene.blendermcp_use_hyper3d = bpy.props.BoolProperty(
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:6264:    bpy.types.Scene.blendermcp_use_hunyuan3d = bpy.props.BoolProperty(
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:6304:        default="http://localhost:8081"
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:6337:    bpy.types.Scene.blendermcp_use_sketchfab = bpy.props.BoolProperty(
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:6350:    bpy.types.Scene.blendermcp_use_tripo = bpy.props.BoolProperty(
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:6356:    bpy.types.Scene.blendermcp_use_polypizza = bpy.props.BoolProperty(
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:6387:    _blendermcp_register_auto_start()
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:6392:    _blendermcp_unregister_auto_start()
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:6417:    del bpy.types.Scene.blendermcp_auto_start_server
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:6418:    del bpy.types.Scene.blendermcp_use_polyhaven
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:6419:    del bpy.types.Scene.blendermcp_use_hyper3d
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:6422:    del bpy.types.Scene.blendermcp_use_sketchfab
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:6424:    del bpy.types.Scene.blendermcp_use_tripo
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:6425:    del bpy.types.Scene.blendermcp_use_polypizza
+docs/audits/blender-runtime-500/mcp/upstream/addon.py:6427:    del bpy.types.Scene.blendermcp_use_hunyuan3d

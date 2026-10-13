@@ -193,3 +193,7 @@ Section81 finalcriteria and later explicit replies are preserved in approved use
 ##499 scoped progress — no completion gate closed
 
 Human authorizes Blender model/rig→whole2D rendered sprites; realistic original appearance required. Capability lookup missing; officiallisting/checksum fetch403/402, no executable/render. New fixed256candidate exporter/planner and source-bound Villager spec exist; focused validation only, compiler migration/model/rig/motion/owner/runtime/release OPEN. Buildingcompiler498 implementation retained; its F1/F3 interrupted provider claims remainUNRESOLVED/consumed, no complete constructionclip. All previous source/technical/owner scopes retained; production451/230 unchanged. [499handoff](audits/blender-transition-499/CHECKPOINT.json).
+
+##500–503 scoped continuation — fullgoalOPEN
+
+Blender5.0.1 signeduserland CPU/bpy/actualexport and nativeGUI/MCPtransport verified; Codex readscopeconfigured but currentchattoolexposureUNKNOWN.501neutralmodel FAILED afteronecorrection;0selected/0rig/0walk/eightdirectionclosure. Originalart untouched. Online503 groundanchor dragselection16exactpassed, but queueconfirmationSTOP32TOTAL/no100profile; servercommandrejection vsqueuecompletionrace UNKNOWN. No engine/shared/public/defaultart/release/WAN gate closed. [500handoff](audits/blender-runtime-500/CHECKPOINT.json).

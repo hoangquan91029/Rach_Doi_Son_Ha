@@ -1,0 +1,273 @@
+{
+  "schema": "rds-task-receipt/v1",
+  "taskId": "blender-export-fixture501",
+  "status": "VERIFIED_EXPORT_API_TECHNICAL_ONLY",
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "cc426aeb2344eae7a03c912efd7d10813ec999154173e716c58f6dbfe047dae5"
+    },
+    {
+      "path": "scripts/blender/export_job.py",
+      "sha256": "5156756cb4e8401d4c22a7cae29bad2b4c2f75daa92b57edcbe1f534f074350a"
+    },
+    {
+      "path": "docs/audits/blender-runtime-500/capability/CHECKPOINT.json",
+      "sha256": "5c0e3540553cf4d509a74953e59d8968d251e031581edb03fdb114ba79f4eea7"
+    },
+    {
+      "path": "docs/audits/blender-runtime-500/capability/runtime-checks.json",
+      "sha256": "8b31a0f43b8716311f84631ffa3bc15b11f5d5c99fae7a696e04d809937b2788"
+    }
+  ],
+  "inputPinsRechecked": "unchanged inputs exact; assigned exporter intentionally changed after demonstratedcompat failure",
+  "exclusiveOutputs": [
+    "docs/audits/blender-runtime-501/export-fixture",
+    "scripts/blender/export_job.py",
+    "tests/blender-export501.test.js"
+  ],
+  "method": "Synthetic sphere mesh+armature/actionslot IdleAction, exact camera basis and fixed source layout; saved .blend, fresh actualBlender5.0.1 process invoked existingexporter with --render",
+  "sourceScope": "TECHNICAL_ONLY synthetic-source PNG from500 sphere fixture; identity=villager only exercises existing action schema. technicalqualification contains explicit synthetic test scope, never production registry or art approval",
+  "originalFailure": "initial-export-failure.log: freshly loaded Blender5 bpy.data.is_dirty True rejected by unsavedguard; dirty-probe/reload-probe independently demonstrate startup/reload marksdirty",
+  "fix": "saved_background_state checks pinned openedpath first; dirty foreground rejected, background reloads pinned disk with use_scripts=False and does not save. Any in-memory edits discarded; Blender dirty flag after reload does not authenticate provenance",
+  "checks": {
+    "create": {
+      "name": "create",
+      "argv": [
+        "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/blender500/root/usr/bin/blender",
+        "--background",
+        "--factory-startup",
+        "--disable-autoexec",
+        "--python",
+        "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/audits/blender-runtime-501/export-fixture/create-fixture.py"
+      ],
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0,
+      "elapsedSeconds": 0.3609124430004158
+    },
+    "initialExport": {
+      "name": "export",
+      "argv": [
+        "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/blender500/root/usr/bin/blender",
+        "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/audits/blender-runtime-501/export-fixture/technical.blend",
+        "--background",
+        "--disable-autoexec",
+        "--python",
+        "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/blender/export_job.py",
+        "--",
+        "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/audits/blender-runtime-501/export-fixture/job.json",
+        "--render"
+      ],
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0,
+      "elapsedSeconds": 0.4296613289989182
+    },
+    "rerun": {
+      "argv": [
+        "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/blender500/root/usr/bin/blender",
+        "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/audits/blender-runtime-501/export-fixture/technical.blend",
+        "--background",
+        "--disable-autoexec",
+        "--python",
+        "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/blender/export_job.py",
+        "--",
+        "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/audits/blender-runtime-501/export-fixture/job.json",
+        "--render"
+      ],
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0,
+      "elapsedSeconds": 0.584333817998413
+    },
+    "tests": "node --test tests/blender-export499.test.js tests/blender-export501.test.js:28/28pass exit0; original25validation+3focused savedstate checks",
+    "pngs": [
+      {
+        "path": "docs/audits/blender-runtime-501/export-fixture/technical-output/F0.png",
+        "sha256": "f1f2e6c2a5b58b942942cba93e48d76cf38d7fa3f99fec81e8a39842a751e2a2",
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA",
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "bytes": 18349
+      },
+      {
+        "path": "docs/audits/blender-runtime-501/export-fixture/technical-output/F1.png",
+        "sha256": "ff5349f5cb29264f946b11b40e476d681e557d1f987d1253f56e78fd8c75dc2a",
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA",
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "bytes": 18349
+      },
+      {
+        "path": "docs/audits/blender-runtime-501/export-fixture/technical-output/F2.png",
+        "sha256": "38ca36a4940b3ce6e55cf801080ea284657dc68cfc3703614c46ed318f5e5128",
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA",
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "bytes": 18349
+      },
+      {
+        "path": "docs/audits/blender-runtime-501/export-fixture/technical-output/F3.png",
+        "sha256": "b352f6317a8a5dfc88ae0bf0785dcc9a77be6fa83995559fb4efbc5bf919be1e",
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA",
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "bytes": 18349
+      }
+    ],
+    "blendSha256": "c4aec949f34ede294e3b9981af1e5eeba97502a2ab2a909fe28e167a8138082c",
+    "cameraPivot": "fixed256/sourcepivot128,232; basis exact exporter gate; no pixel/worldcontact measurement claim"
+  },
+  "actualTools": [
+    "verified500 absoluteBlender5.0.1 CPUenvironment",
+    "Pythonfixture scripts",
+    "existing export_job.py",
+    "node targetedtests",
+    "Pillow inspection"
+  ],
+  "calls": {
+    "technicalFrames": 4,
+    "imageCalls": 0,
+    "realCharacterArt": 0,
+    "publicChanges": 0
+  },
+  "handles": {
+    "sessions": [
+      99364
+    ],
+    "allOwnedClosed": true
+  },
+  "acceptance": {
+    "actualBlenderExportAPI": "VERIFIED",
+    "productionQualification": "UNKNOWN",
+    "identity": "UNKNOWN",
+    "appearance": "UNKNOWN",
+    "continuousMotion": "UNKNOWN",
+    "worldContact": "UNKNOWN",
+    "runtime": "UNKNOWN",
+    "owner": "UNKNOWN",
+    "release": "UNKNOWN",
+    "fullGoal": "OPEN"
+  },
+  "nextDependency": "Independentrootreview of guard and fixture; real source-bound character authoring/rig/camera appearance review and actual motion remain required",
+  "outputs": [
+    {
+      "path": "docs/audits/blender-runtime-501/export-fixture/assignment.json",
+      "sha256": "9837a9b26e6f681401abae50ab2b72f8311b2f1bba2a19e940f4e1ab226bc483"
+    },
+    {
+      "path": "docs/audits/blender-runtime-501/export-fixture/calls.json",
+      "sha256": "0932f5448c4b4d9e4d2a456ad44f569f208f9bb21affe01c3f72cf0e46dd8519"
+    },
+    {
+      "path": "docs/audits/blender-runtime-501/export-fixture/create-fixture.py",
+      "sha256": "abdb3793a29398d97002d0e0993b566aa975e16c8641670c1969dd852971ab0f"
+    },
+    {
+      "path": "docs/audits/blender-runtime-501/export-fixture/create.log",
+      "sha256": "624267bf7588ec545d3492700535c31000f372c47bdee804b6bd9c9b90a1a45e"
+    },
+    {
+      "path": "docs/audits/blender-runtime-501/export-fixture/dirty-probe.log",
+      "sha256": "ca13b542727523226ec8fdc4b8f83d472aa1d32ad8e6a6844eaa3a83779abcf0"
+    },
+    {
+      "path": "docs/audits/blender-runtime-501/export-fixture/export.log",
+      "sha256": "ddbc55a69206b6433bc92e54164c59f1c55d55059c1dba9f18a4033222db75e4"
+    },
+    {
+      "path": "docs/audits/blender-runtime-501/export-fixture/initial-export-failure.log",
+      "sha256": "1add037030708360520342f2fefa38835493cf97e024e222bb4a3284973fc2cd"
+    },
+    {
+      "path": "docs/audits/blender-runtime-501/export-fixture/job.json",
+      "sha256": "bd216ac5180d108d0365c97df5743510a166dc2aa8cff0fb3e87bb76ca3f905d"
+    },
+    {
+      "path": "docs/audits/blender-runtime-501/export-fixture/png-checks.json",
+      "sha256": "9de196569391fefe9bbca6b191ea9431baa1f7428802d3d6b62c29f0614be0d0"
+    },
+    {
+      "path": "docs/audits/blender-runtime-501/export-fixture/preflight.json",
+      "sha256": "4b4f51cb4334b2ad2c53e8416af00d0356a27790952ab4ea6696f3bf35cddc72"
+    },
+    {
+      "path": "docs/audits/blender-runtime-501/export-fixture/reload-probe.log",
+      "sha256": "e4b6802a857726155165c3652fa5db118e570fad2e8869dcb69ed0f5c893b672"
+    },
+    {
+      "path": "docs/audits/blender-runtime-501/export-fixture/rerun-call.json",
+      "sha256": "815417bc38d2e64882023b4624b1e059a94079d0d3e3065e533db9cfc5b79825"
+    },
+    {
+      "path": "docs/audits/blender-runtime-501/export-fixture/run-fixture.py",
+      "sha256": "d0a9b1a428e9a3565b5acc2339f924ff20129b8247963913d38aa6c6c6335b5a"
+    },
+    {
+      "path": "docs/audits/blender-runtime-501/export-fixture/synthetic-source.png",
+      "sha256": "ff82082a041cd1aa9daf4759455e4844d9824e30a71e91bce96239c18a90c7c0"
+    },
+    {
+      "path": "docs/audits/blender-runtime-501/export-fixture/technical-output/F0.png",
+      "sha256": "f1f2e6c2a5b58b942942cba93e48d76cf38d7fa3f99fec81e8a39842a751e2a2"
+    },
+    {
+      "path": "docs/audits/blender-runtime-501/export-fixture/technical-output/F1.png",
+      "sha256": "ff5349f5cb29264f946b11b40e476d681e557d1f987d1253f56e78fd8c75dc2a"
+    },
+    {
+      "path": "docs/audits/blender-runtime-501/export-fixture/technical-output/F2.png",
+      "sha256": "38ca36a4940b3ce6e55cf801080ea284657dc68cfc3703614c46ed318f5e5128"
+    },
+    {
+      "path": "docs/audits/blender-runtime-501/export-fixture/technical-output/F3.png",
+      "sha256": "b352f6317a8a5dfc88ae0bf0785dcc9a77be6fa83995559fb4efbc5bf919be1e"
+    },
+    {
+      "path": "docs/audits/blender-runtime-501/export-fixture/technical-output/receipt.json",
+      "sha256": "dc98197d87dfde009914c216d1538f89a4df422aa48085a776eeab57134b33b8"
+    },
+    {
+      "path": "docs/audits/blender-runtime-501/export-fixture/technical-qualification.json",
+      "sha256": "37a12e9c5d8c30f74604d63052dfb752a7e374820a9f07cae7052306eb79cb11"
+    },
+    {
+      "path": "docs/audits/blender-runtime-501/export-fixture/technical.blend",
+      "sha256": "c4aec949f34ede294e3b9981af1e5eeba97502a2ab2a909fe28e167a8138082c"
+    },
+    {
+      "path": "docs/audits/blender-runtime-501/export-fixture/tests.log",
+      "sha256": "a6c7bd151d07036cf215171d39407112a4b877e9783c6b58344fab39db365e41"
+    },
+    {
+      "path": "scripts/blender/export_job.py",
+      "sha256": "cc22d934a0b1911aa760adce53c2176844e88f2e0310ae874e04559238baf45c"
+    },
+    {
+      "path": "tests/blender-export501.test.js",
+      "sha256": "bf56020aad6b1c6893129c91f3d2b6da0646217ea7206d50d2a87df9b973a71c"
+    }
+  ]
+}

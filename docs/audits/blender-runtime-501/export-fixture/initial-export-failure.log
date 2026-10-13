@@ -1,0 +1,14 @@
+00:00.192  blend            | Read blend: "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/audits/blender-runtime-501/export-fixture/technical.blend"
+Blender 5.0.1
+
+Blender quit
+Traceback (most recent call last):
+  File "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/blender/export_job.py", line 158, in <module>
+    print(json.dumps((export if args.render else validate)(job,source.parent),indent=2))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/blender/export_job.py", line 99, in export
+    require(not bpy.data.is_dirty, 'unsaved Blender data forbidden')
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/blender/export_job.py", line 16, in require
+    raise ValueError(message)
+ValueError: unsaved Blender data forbidden

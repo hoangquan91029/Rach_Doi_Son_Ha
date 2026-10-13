@@ -1,0 +1,30 @@
+{
+  "status": "VERIFIED_CONFIGURED_READ_SCOPE",
+  "path": "/home/kieu-hoang-quan/.codex/config.toml",
+  "beforeSHA256": "20aa532d40c7eee9316071622627b881feec6b99987fc615c64ab3545027208a",
+  "afterSHA256": "d668332dbd482b43cf4ce73ada44e73c32f080a18a6bff2c3c2da2bde804a03f",
+  "rawPrefixPreserved": true,
+  "otherParsedEntriesPreserved": true,
+  "originalMode": "0o600",
+  "afterMode": "0o600",
+  "backup": {
+    "path": "/home/kieu-hoang-quan/.codex/backups/blender502-416281f47f4641b4a3e7b33a84988f8e/config.toml.before",
+    "mode": "0o600",
+    "sha256": "20aa532d40c7eee9316071622627b881feec6b99987fc615c64ab3545027208a"
+  },
+  "serverNamesBefore": [
+    "mysql-marketing",
+    "node_repl"
+  ],
+  "serverNamesAfter": [
+    "mysql-marketing",
+    "node_repl",
+    "rds_blender501"
+  ],
+  "enabledTools": [
+    "get_addon_status",
+    "get_scene_info"
+  ],
+  "toolExposure": "UNKNOWN currentchat inventory notrefreshed; noapprestart",
+  "scope": "Configurationonly; noauthoring/generation/production"
+}

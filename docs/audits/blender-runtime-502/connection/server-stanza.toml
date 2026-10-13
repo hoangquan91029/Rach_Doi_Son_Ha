@@ -1,0 +1,10 @@
+
+# User-authorized Blender MCP read scope; reviewed owned GUI lifecycle502.
+[mcp_servers.rds_blender501]
+command = "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/mcp501/venv/bin/python"
+args = ["/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/blender/mcp502/lifecycle.py"]
+cwd = "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha"
+env_vars = ["DISPLAY", "WAYLAND_DISPLAY", "XDG_RUNTIME_DIR", "XAUTHORITY"]
+enabled_tools = ["get_addon_status", "get_scene_info"]
+startup_timeout_sec = 40
+tool_timeout_sec = 25

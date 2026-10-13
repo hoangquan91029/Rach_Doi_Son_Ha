@@ -1,0 +1,45 @@
+{
+  "schema": "rds-agent-task/v1",
+  "id": "villager-neutral501",
+  "status": "ACTIVE",
+  "purpose": "ONE originalVillager wholeclothed neutralBlender scene + fixedcameraD0/D1 candidate appearance renders beforemotion",
+  "worker": {
+    "id": "/root/blender_identity499",
+    "role": "WORKER",
+    "model": "gpt-6.1-sol",
+    "reasoningEffort": "low"
+  },
+  "outputs": [
+    "scripts/blender/villager501.py",
+    "docs/art/pipeline/blender-villager-501"
+  ],
+  "slots": [],
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "cc426aeb2344eae7a03c912efd7d10813ec999154173e716c58f6dbfe047dae5"
+    },
+    {
+      "path": "docs/audits/blender-runtime-500/capability/CHECKPOINT.json",
+      "sha256": "5c0e3540553cf4d509a74953e59d8968d251e031581edb03fdb114ba79f4eea7"
+    },
+    {
+      "path": "docs/audits/blender-runtime-500/capability/runtime-checks.json",
+      "sha256": "8b31a0f43b8716311f84631ffa3bc15b11f5d5c99fae7a696e04d809937b2788"
+    },
+    {
+      "path": "docs/audits/blender-transition-499/identity/SOURCE_BINDINGS.json",
+      "sha256": "4456182c39530209f479b687d77d355c70a1c0cac3bf3858882a19c258f641b4"
+    },
+    {
+      "path": "docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94"
+    },
+    {
+      "path": "docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+    }
+  ],
+  "allowedOperations": "ActualverifiedBlender5.0.1 userland CPU; authorfullvolumetricorganichead/body/garments/hat/sandals realisticmaterials fromcanonicalwholeart. Preserveoriginal/no redrawnidentity/blockyfinal/cardcutouts. Initial2neutral256RGBA rendersD0D1+maxONE correction ifrootnamesvisibledefect, no rigwalk/fanout/imagegen/API/runtime/manifest/production. WholeoriginalUV/materialprojection permissible whenpreservingactualvolumes; no separate limbtexturefiles orplanes masquerading unit. Fixednormalizedpivot/render42/shadowselectedpolicy sourcehashes/version/scene scriptreceipt.",
+  "acceptance": "Actualscopedoutputs/checks/handles/sourcepins; root orindependentreview art, no selfPASS/fanout/production"
+}

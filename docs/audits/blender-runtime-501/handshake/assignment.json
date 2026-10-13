@@ -1,0 +1,46 @@
+{
+  "schema": "rds-agent-task/v1",
+  "id": "blender-handshake501",
+  "status": "ACTIVE",
+  "purpose": "InstallisolatedreviewedSDK dependencies and actualprivateGUIBlender handshake-only MCP test beforeCodexconfig",
+  "worker": {
+    "id": "/root/blender_export499",
+    "role": "WORKER",
+    "model": "gpt-6.1-sol",
+    "reasoningEffort": "low"
+  },
+  "outputs": [
+    "scripts/blender/mcp501",
+    "docs/audits/blender-runtime-501/handshake"
+  ],
+  "slots": [],
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "cc426aeb2344eae7a03c912efd7d10813ec999154173e716c58f6dbfe047dae5"
+    },
+    {
+      "path": "docs/audits/blender-runtime-500/mcp/CHECKPOINT.json",
+      "sha256": "ed1ab60842f284bb1f2947a03690fa7ffb17705a1ffa950076d0ab095ec9c11f"
+    },
+    {
+      "path": "scripts/blender/mcp500/offline_addon_candidate.py",
+      "sha256": "219a496eda7248dfada013b5c83ce5e3356da590cbf24493dadb65ca92f03c7c"
+    },
+    {
+      "path": "scripts/blender/mcp500/offline_server_candidate.py",
+      "sha256": "95ccf3d3ee9c88ccd09751530359ff17d36cb35c0e107fdf0787afae8fb5720b"
+    },
+    {
+      "path": "docs/audits/blender-runtime-500/capability/CHECKPOINT.json",
+      "sha256": "5c0e3540553cf4d509a74953e59d8968d251e031581edb03fdb114ba79f4eea7"
+    },
+    {
+      "path": "docs/audits/blender-runtime-500/capability/runtime-checks.json",
+      "sha256": "8b31a0f43b8716311f84631ffa3bc15b11f5d5c99fae7a696e04d809937b2788"
+    }
+  ],
+  "allowedOperations": "Rootreviewacceptsoffline500candidateonly: disabledtelemetry/update/remoteproviders; pinnedexactwheel/reviewedsources. Isolatedvenv/userlanddeps<=150MiB pinresolverlock/licences; actualBlenderGUI/virtualdisplay ownprocess no driver/globalchange. Startloopbackownedport, actualSDKinitialize/listtools/get_scene_info/status thencloseallownhandles. Read-onlyscene/status commands only; no arbitrarycode/generator/remoteassets. NoCodexconfigmutation untilrootintake; reportmissingGUI/deps precisely.",
+  "acceptance": "Actualscopedoutputs/checks/handles/sourcepins; root orindependentreview art, no selfPASS/fanout/production",
+  "externalInstallRoot": "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/mcp501"
+}

@@ -1,0 +1,103 @@
+{
+  "schema": "rds-blender-selection/v1",
+  "status": "qualified",
+  "bindings": {
+    "identity": "villager",
+    "action": "idle",
+    "direction": 1,
+    "original": {
+      "path": "synthetic-source.png",
+      "sha256": "ff82082a041cd1aa9daf4759455e4844d9824e30a71e91bce96239c18a90c7c0"
+    },
+    "view": {
+      "path": "synthetic-source.png",
+      "sha256": "ff82082a041cd1aa9daf4759455e4844d9824e30a71e91bce96239c18a90c7c0"
+    },
+    "blend": {
+      "path": "technical.blend",
+      "sha256": "c4aec949f34ede294e3b9981af1e5eeba97502a2ab2a909fe28e167a8138082c"
+    },
+    "selection": {
+      "scene": "TechnicalScene",
+      "model": "TechnicalModel",
+      "rig": "TechnicalRig",
+      "camera": "TechnicalCamera",
+      "action": "IdleAction",
+      "renderCollection": "TechnicalRender",
+      "renderMeshes": [
+        "TechnicalModel"
+      ]
+    },
+    "layout": {
+      "fixedCanvas": {
+        "width": 256,
+        "height": 256
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "pivot": {
+        "space": "source",
+        "x": 128,
+        "y": 232
+      },
+      "render": {
+        "width": 42,
+        "height": 42
+      },
+      "contactShadow": {
+        "mode": "baked"
+      },
+      "camera": {
+        "projection": "dimetric",
+        "ratio": [
+          2,
+          1
+        ],
+        "tile": [
+          54,
+          27
+        ],
+        "elevation": 26.565
+      }
+    },
+    "frames": [
+      {
+        "slot": 0,
+        "blenderFrame": 1,
+        "phase": 0.0,
+        "durationMs": 100,
+        "status": "candidate"
+      },
+      {
+        "slot": 1,
+        "blenderFrame": 2,
+        "phase": 0.25,
+        "durationMs": 100,
+        "status": "candidate"
+      },
+      {
+        "slot": 2,
+        "blenderFrame": 3,
+        "phase": 0.5,
+        "durationMs": 100,
+        "status": "candidate"
+      },
+      {
+        "slot": 3,
+        "blenderFrame": 4,
+        "phase": 0.75,
+        "durationMs": 100,
+        "status": "candidate"
+      }
+    ],
+    "loop": true
+  },
+  "identityReview": "VERIFIED",
+  "modelReview": "VERIFIED",
+  "rigReview": "VERIFIED",
+  "cameraReview": "VERIFIED",
+  "scope": "TECHNICAL_ONLY_SYNTHETIC_TEST_SCHEMA_FIELDS_NOT_PRODUCTION_APPROVAL",
+  "limitation": "Synthetic sphere+rig and fixturePNG only. No real identity/model/camera or motion qualification."
+}

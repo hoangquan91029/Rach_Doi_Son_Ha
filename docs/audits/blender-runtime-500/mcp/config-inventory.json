@@ -1,0 +1,16 @@
+{
+  "configExists": true,
+  "servers": [
+    {
+      "name": "mysql-marketing",
+      "command": "npx",
+      "enabled": null
+    },
+    {
+      "name": "node_repl",
+      "command": "/usr/lib/chatgpt/resources/cua_node/bin/node_repl",
+      "enabled": null
+    }
+  ],
+  "limit": "No environment values copied"
+}
