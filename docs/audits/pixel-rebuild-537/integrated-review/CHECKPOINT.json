@@ -1,0 +1,56 @@
+{
+  "taskId": "pixel-integrated-review537",
+  "model": "gpt-6.1-sol",
+  "reasoningEffort": "low",
+  "verdict": "PASS_SCOPED_SOURCE_AND_TESTS",
+  "inputDrift": [],
+  "findings": [],
+  "observations": [
+    {
+      "path": "client/pixel-sprite-bank.js:19-20",
+      "evidence": "Transient hit selected by visualTimeMs/50; authoritative five ticks scaled into clip duration. Tests cover F7 at740/749ms with tick15, idleF0 at750; no simulation changes. HP0 hidden and frozen samples retain frame."
+    },
+    {
+      "path": "client/pixel-animation.js:15-25",
+      "evidence": "Exact provenance union: unchanged provider sources+callTokens OR native kind/sources/recipe/framePlan. Native branch rejects callTokens and binds all pins to same docs/art/pixel-* package. Hashes remain byte custody only."
+    },
+    {
+      "path": "scripts/pixel-sprites.py:77-109",
+      "evidence": "Python independently checks exact fields, relative native paths, SHA256 actual file bytes, root containment, every symlink component and same native package. Executed negative tests cover bad SHA, forbidden legacy path, wrong package, file symlink, directory symlink."
+    },
+    {
+      "path": "scripts/pixel-sprites.py:150-174",
+      "evidence": "Finite GIF omits loop extension; looping GIF explicitly loop0. Actual Python output reopened and verified eight frames, individual timing and alpha."
+    }
+  ],
+  "tests": [
+    {
+      "argv": "node --test tests/pixel-animation535.test.js tests/pixel-integration535.test.js tests/pixel-correctness537.test.js tests/pixel-native-provenance537.test.js tests/pixel-sprite-contract535.test.js tests/pixel-dispatch535.test.js",
+      "result": "26 PASS / 0 FAIL",
+      "log": "node-tests.log"
+    },
+    {
+      "argv": "python3 tests/pixel-sprites535.py",
+      "result": "4 PASS",
+      "log": "python-sprites.log"
+    },
+    {
+      "argv": "python3 tests/pixel-gif537.py",
+      "result": "PASS finite/loop GIF metadata, eight frames, timing and transparency",
+      "log": "python-gif.log"
+    },
+    {
+      "argv": "python3 tests/pixel-native-provenance537.py",
+      "result": "1 PASS",
+      "log": "python-native.log"
+    }
+  ],
+  "preflight": "preflight.log",
+  "limitations": [
+    "Synthetic metadata and pixels test logic/structure; no real artwork acceptance.",
+    "No browser, engine scene, motion, owner or public release qualification.",
+    "Native recipe+plan hashes do not authenticate recipe execution or authored pose quality.",
+    "No code/common docs edits, no image calls, no background processes."
+  ],
+  "nextDependency": "Independent actual-size motion review of exactly eight newly authored S Worker walk frames; runtime qualification remains OPEN."
+}

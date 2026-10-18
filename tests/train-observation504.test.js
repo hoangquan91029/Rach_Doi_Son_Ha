@@ -1,0 +1,14 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {observeTrain} from '../scripts/qa/train-observation504.mjs';
+const q=(unit,remaining,total=10)=>({unit,remaining,total}),s=(queue,tick=100)=>({queue,units:[],tick});
+const status=(b,a,t='villager')=>observeTrain(b,a,t).status;
+test('specific appended queue accepted',()=>assert.equal(status(s([]),s([q('villager',9.8)],104)),'ACCEPTED_QUEUE'));
+test('timed completion plus append accepted',()=>assert.equal(status(s([q('villager',.1)]),s([q('villager',9.9)],104)),'ACCEPTED_QUEUE'));
+test('old queue8->7 does not prove completion',()=>assert.equal(status(s([q('villager',8)]),s([q('villager',7)],110)),'PENDING'));
+test('old nearfullqueue advance rejected',()=>assert.equal(status(s([q('villager',9.9)]),s([q('villager',9.8)],104)),'PENDING'));
+test('missing elapsed rejected',()=>assert.equal(status({queue:[],units:[]},{queue:[q('villager',10)],units:[]}),'PENDING'));
+test('same tick rejected',()=>assert.equal(status(s([]),s([q('villager',10)])),'PENDING'));
+test('sum removedprefix beyond time rejected',()=>assert.equal(status(s([q('villager',.1),q('villager',8)]),s([q('villager',9.9)],104)),'PENDING'));
+test('reordered retainedprefix rejected',()=>assert.equal(status(s([q('infantry',8),q('villager',9)]),s([q('villager',8),q('infantry',7),q('villager',10)],104)),'PENDING'));
+test('different unit append rejected',()=>assert.equal(status(s([]),s([q('infantry',9.8)],104)),'PENDING'));
+test('unrelated spawn rejected',()=>assert.equal(status(s([]),{queue:[],units:[{id:12,type:'villager'}],tick:104}),'PENDING'));
+test('explicit rejection retained',()=>assert.equal(observeTrain(s([]),s([],104),'villager',['Not enough resources']).status,'REJECTED'));

@@ -1,0 +1,25 @@
+{
+  "schema": "rds-source-correspondence-constraints/v1",
+  "status": "PROPOSED_CODE_GUIDANCE_NOT_ART_APPROVAL",
+  "sourceAuthority": "OnecanonicalwholeSouthimage withoriginalD0 crossviewappearanceauthority; sourcepins immutable",
+  "constraints": [
+    "Construct genuinelyopenfrontVneck with skinvisibleinsidevoid; realoverlappinglapel/frontpanels. SourceVneckcolor mustnotpaint over closedopaque chest.",
+    "Drapedtunic geometry extends sourcekneelength/upperthighhem over trousers with realfrontoverlap/sidevolume; texturecannotrepresent missingpanelorhem.",
+    "Map each frontpanel to corresponding originalcreamgarment region, sleeve/cuff to corresponding sleeve/cuff, sash/knot/tails to originalsashregions, trousers to darktrouserregions, wraps/skin/face to ownregions. Samewholeimage allowed; no materialreferences to croppedlimbtexturefiles.",
+    "Declare sourcepixelregion and physicalmodelregion/UVcornerhandedness for everyregion. In front+X/up+Z convention anatomicalleft=+Y; D1rootrotation-45deg makeslocal+Y screenright. Originalsourceleft corresponds anatomicalright, unless independently documentedotherwise.",
+    "Use sourceRGB only on actualvolumetric surfaces; alpha isnotopacitygeometry and isnotconnectedtoAlpha. No imageplanes/billboards/alphacards or finalPNGwarps.",
+    "No wholebody camera projection repeatedoverallmeshes. Match frontregionalUV landmarks and maintain coherent wraparoundtransition; unseenrear remainsproposed ratherthansampling inventedrear fromfront.",
+    "Keep fixed256source/128runtime/42logical layout and normalizedpivot; onecamera/root forD0/D1. Shape/UV changes neverauthorizeperviewfit or mirror.",
+    "Exactcode review checks realneckopening/overlap, coherentUVsourcecorrespondence, scopedpins/noautogeneration, not illustrationquality; initialrender requires separate rootfiniteauthorization."
+  ],
+  "knownFailedParents": [
+    "501globalunitprojection genericvolume",
+    "504plainsemanticroundedshirt andface-onlyUV"
+  ],
+  "unknowns": [
+    "True originalcamera",
+    "Unseenreargarment/hair",
+    "Actual506appearanceuntilauthorizedrender"
+  ],
+  "reviewStatus": "PENDING exactscript/hash"
+}

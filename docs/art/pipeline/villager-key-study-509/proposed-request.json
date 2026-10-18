@@ -1,0 +1,40 @@
+{
+  "orderId": "villager-D1-joint-key-study-509-ONE",
+  "slotIndex": 0,
+  "kind": "key_study",
+  "values": {
+    "identity": "villager",
+    "action": "walk",
+    "master": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+    "direction": "1",
+    "camera": "dimetric 2:1 ground projection; fixed whole original elevated camera; no independent camera fit",
+    "screenFacing": "South",
+    "weaponOwnership": "No held tool or weapon is visible in this idle master; preserve empty visible hands. Separate work-action tools require their own existing source pins and grips.",
+    "referenceRoles": "directionalview,originalmaster,studyguide",
+    "invariants": "SAME man in reference1: broad low conical straw hat, moustache and short pointed beard, cream crossover tunic open at neck, dark tied waist sash with long tails, baggy dark brown trousers, cream shin wraps and open brown sandals with toes. Empty hands. Realistic illustrated depth and brushwork from originals, no vector face. Natural weight shift, slight body bob, alternating counter-swing, cloth followthrough. No floor or baked shadow; separate runtime shadow. Fixed whole canvas and normalized pivot per cell. Four whole complementary poses share one image context."
+  },
+  "references": [
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "role": "directionalview",
+      "status": "selected"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+      "role": "originalmaster"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-key-study-509/joint-guide.png",
+      "sha256": "4a62e739ffe141095b76c418e871b973e5db0d93311b76b7e04e87dacdb83dbf",
+      "role": "studyguide",
+      "status": "authoring-only",
+      "derivedFromSHA": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+      "provenance": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-key-study-509/guide-provenance.json",
+        "sha256": "224ae9f378ed8359151ba15c32e01f621523e49498fb6c1fee3a5434d2ce0ebe"
+      }
+    }
+  ]
+}

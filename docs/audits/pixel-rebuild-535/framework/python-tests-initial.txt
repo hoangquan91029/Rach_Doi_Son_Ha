@@ -1,0 +1,14 @@
+/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/pixel-sprites.py:27: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  pixels = list(frame.getdata())
+/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/pixel-sprites535.py:31: ResourceWarning: unclosed file <_io.BufferedReader name='/tmp/tmpmsfexkpy/atlas.png'>
+  atlas=Path(tmp)/'atlas.png';p.pack(strips,atlas);self.assertEqual(Image.open(atlas).size,(1024,1024))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/pixel-sprites.py:111: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  colors=sorted({(r,g,b) for f in frames for r,g,b,a in f.getdata() if a})
+/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/pixel-sprites.py:118: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  p.putdata([lookup[(r,g,b)] if a else 0 for r,g,b,a in frame.getdata()])
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.778s
+
+OK

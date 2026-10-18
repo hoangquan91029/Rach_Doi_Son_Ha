@@ -1,12 +1,13 @@
 import {UNIT_ART_FAMILIES, LEADER_ART_FAMILIES} from './unit-art.js';
 export const DIRECTIONS = Object.freeze([0,1,2,3,4,5,6,7]);
 export const ACTION_FRAMES = Object.freeze({idle:4,walk:8,attack:8,hit:4,death:8,gather_wood:8,gather_food:8,gather_iron:8,build:8,ability:6,load:8,unload:8});
-export const ACTIONS = Object.freeze(Object.keys(ACTION_FRAMES));
-const combat=['idle','walk','attack','hit','death'];
+// Legacy death frame counts remain available for archived descriptor parsing only.
+export const ACTIONS = Object.freeze(Object.keys(ACTION_FRAMES).filter(action=>action!=='death'));
+const combat=['idle','walk','attack','hit'];
 export function identityActions(identity){
  if(Object.hasOwn(LEADER_ART_FAMILIES,identity))return [...combat,'ability','build'];
  if(identity==='villager')return [...combat,'gather_wood','gather_food','gather_iron','build'];
- if(['wagon','transport'].includes(identity))return ['idle','walk','load','unload','hit','death'];
+ if(['wagon','transport'].includes(identity))return ['idle','walk','load','unload','hit'];
  return Object.hasOwn(UNIT_ART_FAMILIES,identity)?[...combat]:[];
 }
 export function actionSpec(identity,action){

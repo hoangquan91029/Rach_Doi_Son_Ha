@@ -1,0 +1,173 @@
+{
+  "schema": "rds-frame-source-custody/v1",
+  "package": "villager-idle-523",
+  "sourceSelection": "FOUR_SOURCE_CANDIDATES_ONLY",
+  "frames": [
+    {
+      "frame": 0,
+      "phase": 0.0,
+      "durationMs": 750,
+      "input": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+        "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+        "rgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6"
+      },
+      "selection": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-idle-523/authoring/F0-selection.json",
+        "sha256": "e28dfb44fc03213299314b502c4cb0395dc2587660e5cd77ada1b1a7cf47c6dc"
+      },
+      "source": "EXACT_ORIGINAL_REUSED"
+    },
+    {
+      "frame": 1,
+      "phase": 0.25,
+      "durationMs": 750,
+      "input": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-idle-523/illustration/F1-raw.png",
+        "sha256": "624beec46371dfc6502c182b03ffb1cd2dff614966134e337161f4c8875ae643",
+        "rgbaSha256": "7763943b73a72179a24d4f8c9212108f6495058625c53abb23dce54bf8b259d1"
+      },
+      "selection": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-idle-523/authoring/F1-selection.json",
+        "sha256": "6e3173331e7714ca071d5490b838a91994f1e1613fb274a40cc4c4cbcd0801d7"
+      },
+      "source": "WHOLE_BUILTIN_ILLUSTRATION",
+      "claim": {
+        "path": "docs/art/pipeline/villager-idle-523/orders/F1-claim-result.json",
+        "sha256": "c5c67de8a4cf9d1e2c3fa8ffc1e905276bfda3cf7ff3c35797e1049571f5a432"
+      },
+      "toolCustody": {
+        "path": "docs/art/pipeline/villager-idle-523/authoring/F1-tool-custody.json",
+        "sha256": "639f42bc5a63840b129f5fdd1e63fd0a443e3f8e23f39c8bec90e1efed733974"
+      },
+      "settlement": {
+        "path": "docs/art/pipeline/villager-idle-523/orders/F1-settle-result.json",
+        "sha256": "412cd661f40952095e40e8a496e5973747746f00fc54b2a6baf3ec66156a0b36"
+      },
+      "generatorModel": null
+    },
+    {
+      "frame": 2,
+      "phase": 0.5,
+      "durationMs": 750,
+      "input": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-idle-523/illustration/F2-raw.png",
+        "sha256": "7e2f4c8c46d3bd61bd680019e020425f3bca0e4cc434559e39645a225fefe502",
+        "rgbaSha256": "b749a4a0fbe6ac0b7a0ea4e74aa651c8d986729120fd1488acff1c67398e1329"
+      },
+      "selection": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-idle-523/authoring/F2-selection.json",
+        "sha256": "9f1d8c8e5289548f8475d43e3fb3ec3d3c5abe0a94e1a58532601c26d1798c29"
+      },
+      "source": "WHOLE_BUILTIN_ILLUSTRATION",
+      "claim": {
+        "path": "docs/art/pipeline/villager-idle-523/orders/F2-claim-result.json",
+        "sha256": "7a419b816f736fd9cad976c26bd17624e9b1dc9c9bd0c39591483f292836c2c6"
+      },
+      "toolCustody": {
+        "path": "docs/art/pipeline/villager-idle-523/authoring/F2-tool-custody.json",
+        "sha256": "0377f67052acf9ea9a520a4d218446ad33872a55a99e5890794419bb215586de"
+      },
+      "settlement": {
+        "path": "docs/art/pipeline/villager-idle-523/orders/F2-settle-result.json",
+        "sha256": "ac5295a7ea37f606973191557e4356d4df30a486085f706451cff4371bc35d3c"
+      },
+      "generatorModel": null
+    },
+    {
+      "frame": 3,
+      "phase": 0.75,
+      "durationMs": 750,
+      "input": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-idle-523/illustration/F3-raw.png",
+        "sha256": "faa0cda1c00f5aadd3f12034b6d6ce15b8b7093ff8702f60a221bc55dbcd454b",
+        "rgbaSha256": "764f9a4bb869c7beb88d1540397cb33ffe9b1f627b5a44f663adb4d3865f3691"
+      },
+      "selection": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-idle-523/authoring/F3-selection.json",
+        "sha256": "11411eaaa63f0cbd93ca81ef7d1aa42e5a9b19e565ae12e02e9a1c51e72ef1ed"
+      },
+      "source": "WHOLE_BUILTIN_ILLUSTRATION",
+      "claim": {
+        "path": "docs/art/pipeline/villager-idle-523/orders/F3-claim-result.json",
+        "sha256": "62179047847cb3ee1edce5019c27e3166948a70c25a9a0c8aa59f6506312c327"
+      },
+      "toolCustody": {
+        "path": "docs/art/pipeline/villager-idle-523/authoring/F3-tool-custody.json",
+        "sha256": "fd459bfa6ce3ce1787df474aa77b164cba9cb47c9c7ca0de38fda6e664e40d83"
+      },
+      "settlement": {
+        "path": "docs/art/pipeline/villager-idle-523/orders/F3-settle-result.json",
+        "sha256": "275f14c3fbfa1e754a6785fc1cbddf50068ac72d6c9d983b4a8bf3f2dfba45ce"
+      },
+      "generatorModel": null
+    }
+  ],
+  "job": {
+    "path": "docs/art/pipeline/villager-idle-523/authoring/compiler-job.json",
+    "sha256": "dd56282470b81e36a7da5381abfadbc85d195ccd1ad166229ba963c7214ac93c"
+  },
+  "asset": {
+    "path": "docs/art/pipeline/villager-idle-523/exports/compiled-selected/asset.json",
+    "sha256": "00d92ecc5725b0d02f83f49caa32da0a8dbfb4e9f8b28bf5a947bb45406b6c5c"
+  },
+  "atlas": {
+    "path": "docs/art/pipeline/villager-idle-523/exports/compiled-selected/atlas.png",
+    "sha256": "2963cd4beea9ff9a5b0378d9da9e1b43f684f7c123813ff25d66074ce47de2ce"
+  },
+  "layout": {
+    "fixedCanvas": {
+      "width": 1254,
+      "height": 1254
+    },
+    "pivot": {
+      "space": "source",
+      "x": 654,
+      "y": 1140
+    },
+    "render": {
+      "width": 42,
+      "height": 42
+    },
+    "cell": {
+      "width": 128,
+      "height": 128
+    },
+    "shadow": {
+      "mode": "baked"
+    },
+    "padding": 2,
+    "columns": 2,
+    "atlasSize": [
+      264,
+      264
+    ],
+    "logicalCanvasAtZoom1_68": 70.56,
+    "observedPreviewCSSCanvas": 70.546875
+  },
+  "timingMs": [
+    750,
+    750,
+    750,
+    750
+  ],
+  "loop": true,
+  "calls": {
+    "initial": 3,
+    "corrections": 0,
+    "retry": 0,
+    "originalReused": 1
+  },
+  "quality": {
+    "technical": "VERIFIED_COMPILER_CLIENT_PACKAGING_BROWSER_CONTROLS",
+    "motion": "UNKNOWN - actualcontinuousnormal-loopreviewpending; stillkeys/seenframes/countersnotmotionproof",
+    "runtime": "UNKNOWN - no ordinarygamestage",
+    "owner": "VERIFIED - directhuman naturalkeep decision bound exactD1idleAPNG/asset/atlas",
+    "release": "OPEN - no public/canonicalpromotion"
+  },
+  "rawPolicy": "All original/generatedraws preserved byte-for-byte; raw->working256 and raw->runtime128 independentuniformwholecanvassizing. No crop/mirror/warp/splice/fit.",
+  "ownerFeedback": {
+    "path": "docs/art/pipeline/villager-idle-523/authoring/owner-loop-approval.json",
+    "sha256": "843d3d723831f9cd217e7d95c200505febffffe06f54bc6b2cf1030fb0ec2fbd"
+  }
+}

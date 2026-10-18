@@ -1,0 +1,92 @@
+{
+  "schema": "rds-task-receipt/v1",
+  "taskId": "key-study-contract507",
+  "status": "IMPLEMENTED_LOCAL_NO_CALL",
+  "inputs": [
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "225d9c16f9db5c4fbe941c93053fbcb958b1672824043b757b58ebb4f41b8569",
+      "actualAfter": "225d9c16f9db5c4fbe941c93053fbcb958b1672824043b757b58ebb4f41b8569",
+      "changedByAssignedTask": false
+    },
+    {
+      "path": "docs/audits/continuation-504/root/IMAGE_ANIMATION_DECISION.md",
+      "sha256": "03aa5b3cf1068bd97a78eb5f8f4f2ee834ec6b05772a44ae62ae9ba631d6d1ea",
+      "actualAfter": "03aa5b3cf1068bd97a78eb5f8f4f2ee834ec6b05772a44ae62ae9ba631d6d1ea",
+      "changedByAssignedTask": false
+    },
+    {
+      "path": "scripts/sprite-prompts.mjs",
+      "sha256": "6e0dcf805f489c0f3853b6d6f1640377f523ff8165604030320d4ee811163c1e",
+      "actualAfter": "666c7fced2b5383a959deaa300e582739b87d2217e7e1e04b5468b23a83d3833",
+      "changedByAssignedTask": true
+    },
+    {
+      "path": "scripts/sprite-order-run.mjs",
+      "sha256": "8436a7eedbe2d4a0dac8634bfcc9e7ad27a365e8862771ef230b9cfc47eb5d90",
+      "actualAfter": "8436a7eedbe2d4a0dac8634bfcc9e7ad27a365e8862771ef230b9cfc47eb5d90",
+      "changedByAssignedTask": false
+    },
+    {
+      "path": "scripts/agent-task-contract.mjs",
+      "sha256": "85391ab4ea0058a52b3462ef1bbf88f0e81bb2d373a7cff7f6bc4ff3e3d3e0b9",
+      "actualAfter": "85391ab4ea0058a52b3462ef1bbf88f0e81bb2d373a7cff7f6bc4ff3e3d3e0b9",
+      "changedByAssignedTask": false
+    }
+  ],
+  "exclusiveOutputs": [
+    "scripts/sprite-key-study.mjs",
+    "scripts/sprite-prompts.mjs",
+    "docs/art/pipeline/unit-production/templates/key_study.txt",
+    "tests/sprite-key-study.test.js",
+    "docs/audits/animation-context-507/contract"
+  ],
+  "preflight": "docs/audits/animation-context-507/contract/preflight.log",
+  "checks": [
+    {
+      "argv": "node --test tests/sprite-key-study.test.js tests/sprite-prompts.test.js tests/sprite-order-run.test.js tests/sprite-order-run485.test.js",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitStatus": 0,
+      "tests": 32,
+      "limit": "Fixturemetadata/legacyrunnerchecks; no actualimagecall/guidequality"
+    }
+  ],
+  "failures": [
+    {
+      "status": "FAILED_REPAIRED",
+      "observation": "Newtemplate initiallyomittedphrase generictemplateassertion required; correctedwording",
+      "log": "docs/audits/animation-context-507/contract/tests-initial-failure.log"
+    }
+  ],
+  "counts": {
+    "providerCalls": 0,
+    "ledgerWrites": 0,
+    "identityWrites": 0,
+    "sourceSelections": 0,
+    "newBlenderCalls": 0
+  },
+  "handles": {
+    "ownedRemaining": []
+  },
+  "acceptance": {
+    "technicalContract": "VERIFIED_SCOPED_TESTS",
+    "actualDispatch": "UNKNOWN",
+    "guidePoseQuality": "UNKNOWN",
+    "motion": "UNKNOWN",
+    "owner": "UNKNOWN",
+    "runtime": "UNKNOWN",
+    "release": "UNKNOWN"
+  },
+  "nextDependency": "Rootindependentreview + sourceboundcompleteclothedguide/orderauthorization; unresolvedglobalartpreflight retained",
+  "outputPins": {
+    "scripts/sprite-key-study.mjs": "e5c2833a8f3f943e16b6020d6078a659221159cff340484a11c59ad517e8e25f",
+    "scripts/sprite-prompts.mjs": "666c7fced2b5383a959deaa300e582739b87d2217e7e1e04b5468b23a83d3833",
+    "docs/art/pipeline/unit-production/templates/key_study.txt": "121c61b211154e8942ab6c1335880daef39f7930d0b335c5c1a602022858c240",
+    "tests/sprite-key-study.test.js": "430d6dbfa10e245a1ffa890240cd5cb9897a8e75c3aceddb4d47202a0bdf73ee",
+    "docs/audits/animation-context-507/contract/tests.log": "bf94ff550cac3ac951a504ffc012d044068a4d354c48da5600bc302e076311de",
+    "docs/audits/animation-context-507/contract/README.md": "e27df35abe22ae961d21d34647a1cdbd1a087235f9e7a1a72679aee0edb6277d",
+    "docs/audits/animation-context-507/contract/tests-initial-failure.log": "3ebc03a16ae857de1441b85d2118f4c945f090aa9412b390a7f8ea0eebcd5f5f",
+    "docs/audits/animation-context-507/contract/assignment.json": "f1512d3be1cde443fb5e25fb8a91ef15bb197e00b1af31190e068295d4da8bb2",
+    "docs/audits/animation-context-507/contract/preflight.log": "68179bf347ffe22ec98ca61ca88e6e4a48d8a55a34998407adf5eb513abf3cfb"
+  }
+}

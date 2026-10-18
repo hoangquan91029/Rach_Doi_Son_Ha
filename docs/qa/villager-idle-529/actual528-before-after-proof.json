@@ -1,0 +1,1376 @@
+{
+  "scope": "Offline exactsaved528sourceplanner proof only",
+  "before": {
+    "staging": {
+      "x": 8.5,
+      "y": 19.5
+    },
+    "actual": {
+      "x": 8.18694341128344,
+      "y": 20.126100133136422
+    },
+    "assigned": {
+      "x": 8.499990505642362,
+      "y": 19.5
+    },
+    "ideal": null,
+    "actualShifted": "ground-segment-building:1",
+    "actualFixedGeometry": null,
+    "actualFixedInitialUnits": "occupied-unit:11"
+  },
+  "plan": {
+    "selected": {
+      "actorId": 7,
+      "staging": {
+        "x": 6.5,
+        "y": 28.5
+      },
+      "firstTarget": {
+        "x": 9.5,
+        "y": 31.5
+      },
+      "secondTarget": {
+        "x": 11,
+        "y": 33
+      },
+      "certificate": {
+        "arrivalRadius": 0.7,
+        "method": "Conservativewholecellplain-visible rectangle plus exactcontinuous buildingAABB, fixedfirsttarget and recheckedshortactualsegment",
+        "box": {
+          "minX": 5.8,
+          "minY": 27.8,
+          "maxX": 11.7,
+          "maxY": 33.7
+        },
+        "naturalD1": "delta range[2.3,3.7] forbothaxes; ratio range0.621..1.609 strictlyinsideD1sector0.414..2.414"
+      }
+    },
+    "rejections": [
+      {
+        "actorId": 7,
+        "point": {
+          "x": 7.5,
+          "y": 21.5
+        },
+        "reason": "insufficient-egress-distance"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 7.5,
+          "y": 20.5
+        },
+        "reason": "insufficient-egress-distance"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 6.5,
+          "y": 21.5
+        },
+        "reason": "insufficient-egress-distance"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 8.5,
+          "y": 21.5
+        },
+        "reason": "insufficient-egress-distance"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 7.5,
+          "y": 22.5
+        },
+        "reason": "insufficient-egress-distance"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 6.5,
+          "y": 20.5
+        },
+        "reason": "insufficient-egress-distance"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 8.5,
+          "y": 20.5
+        },
+        "reason": "insufficient-egress-distance"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 6.5,
+          "y": 22.5
+        },
+        "reason": "insufficient-egress-distance"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 8.5,
+          "y": 22.5
+        },
+        "reason": "building-footprint:1"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 7.5,
+          "y": 19.5
+        },
+        "reason": "envelope-cell-building-footprint:1"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 5.5,
+          "y": 21.5
+        },
+        "reason": "not-plain"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 9.5,
+          "y": 21.5
+        },
+        "reason": "envelope-cell-building-footprint:4"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 7.5,
+          "y": 23.5
+        },
+        "reason": "envelope-cell-building-footprint:1"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 6.5,
+          "y": 19.5
+        },
+        "reason": "envelope-cell-not-plain"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 8.5,
+          "y": 19.5
+        },
+        "reason": "envelope-cell-building-footprint:4"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 5.5,
+          "y": 20.5
+        },
+        "reason": "envelope-cell-not-plain"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 9.5,
+          "y": 20.5
+        },
+        "reason": "envelope-cell-building-footprint:4"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 5.5,
+          "y": 22.5
+        },
+        "reason": "envelope-cell-not-plain"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 9.5,
+          "y": 22.5
+        },
+        "reason": "building-footprint:1"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 6.5,
+          "y": 23.5
+        },
+        "reason": "envelope-cell-building-footprint:1"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 8.5,
+          "y": 23.5
+        },
+        "reason": "building-footprint:1"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 5.5,
+          "y": 19.5
+        },
+        "reason": "envelope-cell-not-plain"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 9.5,
+          "y": 19.5
+        },
+        "reason": "envelope-cell-building-footprint:4"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 5.5,
+          "y": 23.5
+        },
+        "reason": "envelope-cell-building-footprint:1"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 9.5,
+          "y": 23.5
+        },
+        "reason": "building-footprint:1"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 7.5,
+          "y": 18.5
+        },
+        "reason": "envelope-cell-not-plain"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 4.5,
+          "y": 21.5
+        },
+        "reason": "envelope-cell-not-plain"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 10.5,
+          "y": 21.5
+        },
+        "reason": "envelope-cell-building-footprint:4"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 7.5,
+          "y": 24.5
+        },
+        "reason": "envelope-cell-building-footprint:1"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 6.5,
+          "y": 18.5
+        },
+        "reason": "envelope-cell-not-plain"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 8.5,
+          "y": 18.5
+        },
+        "reason": "envelope-cell-not-plain"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 4.5,
+          "y": 20.5
+        },
+        "reason": "envelope-cell-not-plain"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 10.5,
+          "y": 20.5
+        },
+        "reason": "envelope-cell-building-footprint:4"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 4.5,
+          "y": 22.5
+        },
+        "reason": "envelope-cell-not-plain"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 10.5,
+          "y": 22.5
+        },
+        "reason": "building-footprint:1"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 6.5,
+          "y": 24.5
+        },
+        "reason": "envelope-cell-building-footprint:1"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 8.5,
+          "y": 24.5
+        },
+        "reason": "building-footprint:1"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 5.5,
+          "y": 18.5
+        },
+        "reason": "envelope-cell-not-plain"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 9.5,
+          "y": 18.5
+        },
+        "reason": "envelope-cell-building-footprint:4"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 4.5,
+          "y": 19.5
+        },
+        "reason": "envelope-cell-not-plain"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 10.5,
+          "y": 19.5
+        },
+        "reason": "envelope-cell-building-footprint:4"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 4.5,
+          "y": 23.5
+        },
+        "reason": "envelope-cell-building-footprint:1"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 10.5,
+          "y": 23.5
+        },
+        "reason": "building-footprint:1"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 5.5,
+          "y": 24.5
+        },
+        "reason": "envelope-cell-building-footprint:1"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 9.5,
+          "y": 24.5
+        },
+        "reason": "building-footprint:1"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 7.5,
+          "y": 17.5
+        },
+        "reason": "not-plain"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 3.5,
+          "y": 21.5
+        },
+        "reason": "envelope-cell-not-plain"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 11.5,
+          "y": 21.5
+        },
+        "reason": "envelope-cell-building-footprint:4"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 7.5,
+          "y": 25.5
+        },
+        "reason": "envelope-cell-building-footprint:1"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 6.5,
+          "y": 17.5
+        },
+        "reason": "not-plain"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 8.5,
+          "y": 17.5
+        },
+        "reason": "envelope-cell-not-plain"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 3.5,
+          "y": 20.5
+        },
+        "reason": "envelope-cell-not-plain"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 11.5,
+          "y": 20.5
+        },
+        "reason": "envelope-cell-building-footprint:4"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 3.5,
+          "y": 22.5
+        },
+        "reason": "envelope-cell-not-plain"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 11.5,
+          "y": 22.5
+        },
+        "reason": "envelope-cell-building-footprint:1"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 6.5,
+          "y": 25.5
+        },
+        "reason": "envelope-cell-building-footprint:1"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 8.5,
+          "y": 25.5
+        },
+        "reason": "envelope-cell-building-footprint:1"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 4.5,
+          "y": 18.5
+        },
+        "reason": "envelope-cell-not-plain"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 10.5,
+          "y": 18.5
+        },
+        "reason": "envelope-cell-building-footprint:4"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 4.5,
+          "y": 24.5
+        },
+        "reason": "envelope-cell-building-footprint:1"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 10.5,
+          "y": 24.5
+        },
+        "reason": "building-footprint:1"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 5.5,
+          "y": 17.5
+        },
+        "reason": "not-plain"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 9.5,
+          "y": 17.5
+        },
+        "reason": "envelope-cell-building-footprint:4"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 3.5,
+          "y": 19.5
+        },
+        "reason": "envelope-cell-not-plain"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 11.5,
+          "y": 19.5
+        },
+        "reason": "envelope-cell-building-footprint:4"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 3.5,
+          "y": 23.5
+        },
+        "reason": "envelope-cell-building-footprint:1"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 11.5,
+          "y": 23.5
+        },
+        "reason": "envelope-cell-building-footprint:1"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 5.5,
+          "y": 25.5
+        },
+        "reason": "envelope-cell-building-footprint:1"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 9.5,
+          "y": 25.5
+        },
+        "reason": "envelope-cell-building-footprint:1"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 7.5,
+          "y": 16.5
+        },
+        "reason": "not-plain"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 4.5,
+          "y": 17.5
+        },
+        "reason": "not-plain"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 10.5,
+          "y": 17.5
+        },
+        "reason": "envelope-cell-building-footprint:4"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 3.5,
+          "y": 18.5
+        },
+        "reason": "envelope-cell-not-visible"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 11.5,
+          "y": 18.5
+        },
+        "reason": "envelope-cell-building-footprint:4"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 2.5,
+          "y": 21.5
+        },
+        "reason": "envelope-cell-not-plain"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 12.5,
+          "y": 21.5
+        },
+        "reason": "envelope-cell-building-footprint:4"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 3.5,
+          "y": 24.5
+        },
+        "reason": "envelope-cell-building-footprint:1"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 11.5,
+          "y": 24.5
+        },
+        "reason": "envelope-cell-building-footprint:1"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 4.5,
+          "y": 25.5
+        },
+        "reason": "envelope-cell-building-footprint:1"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 10.5,
+          "y": 25.5
+        },
+        "reason": "envelope-cell-building-footprint:1"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 7.5,
+          "y": 26.5
+        },
+        "reason": "envelope-cell-building-footprint:2"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 6.5,
+          "y": 16.5
+        },
+        "reason": "not-plain"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 8.5,
+          "y": 16.5
+        },
+        "reason": "envelope-cell-not-plain"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 2.5,
+          "y": 20.5
+        },
+        "reason": "envelope-cell-not-visible"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 12.5,
+          "y": 20.5
+        },
+        "reason": "envelope-cell-building-footprint:4"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 2.5,
+          "y": 22.5
+        },
+        "reason": "envelope-cell-not-plain"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 12.5,
+          "y": 22.5
+        },
+        "reason": "envelope-building:3"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 6.5,
+          "y": 26.5
+        },
+        "reason": "building-footprint:2"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 8.5,
+          "y": 26.5
+        },
+        "reason": "envelope-cell-building-footprint:3"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 5.5,
+          "y": 16.5
+        },
+        "reason": "not-plain"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 9.5,
+          "y": 16.5
+        },
+        "reason": "envelope-cell-building-footprint:4"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 2.5,
+          "y": 19.5
+        },
+        "reason": "envelope-cell-not-visible"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 12.5,
+          "y": 19.5
+        },
+        "reason": "envelope-cell-building-footprint:4"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 2.5,
+          "y": 23.5
+        },
+        "reason": "envelope-cell-building-footprint:2"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 12.5,
+          "y": 23.5
+        },
+        "reason": "envelope-cell-building-footprint:3"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 5.5,
+          "y": 26.5
+        },
+        "reason": "envelope-cell-building-footprint:2"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 9.5,
+          "y": 26.5
+        },
+        "reason": "envelope-cell-building-footprint:3"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 3.5,
+          "y": 17.5
+        },
+        "reason": "envelope-cell-not-visible"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 11.5,
+          "y": 17.5
+        },
+        "reason": "envelope-cell-building-footprint:4"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 3.5,
+          "y": 25.5
+        },
+        "reason": "envelope-cell-building-footprint:1"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 11.5,
+          "y": 25.5
+        },
+        "reason": "envelope-cell-building-footprint:1"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 4.5,
+          "y": 16.5
+        },
+        "reason": "not-plain"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 10.5,
+          "y": 16.5
+        },
+        "reason": "envelope-cell-building-footprint:4"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 2.5,
+          "y": 18.5
+        },
+        "reason": "envelope-cell-not-visible"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 12.5,
+          "y": 18.5
+        },
+        "reason": "envelope-cell-building-footprint:4"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 2.5,
+          "y": 24.5
+        },
+        "reason": "envelope-cell-building-footprint:2"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 12.5,
+          "y": 24.5
+        },
+        "reason": "envelope-cell-building-footprint:3"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 4.5,
+          "y": 26.5
+        },
+        "reason": "envelope-cell-building-footprint:2"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 10.5,
+          "y": 26.5
+        },
+        "reason": "envelope-cell-building-footprint:3"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 7.5,
+          "y": 15.5
+        },
+        "reason": "not-plain"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 1.5,
+          "y": 21.5
+        },
+        "reason": "envelope-cell-out-of-interior"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 13.5,
+          "y": 21.5
+        },
+        "reason": "envelope-cell-building-footprint:4"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 7.5,
+          "y": 27.5
+        },
+        "reason": "envelope-cell-building-footprint:2"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 6.5,
+          "y": 15.5
+        },
+        "reason": "not-plain"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 8.5,
+          "y": 15.5
+        },
+        "reason": "envelope-cell-not-visible"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 1.5,
+          "y": 20.5
+        },
+        "reason": "envelope-cell-out-of-interior"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 13.5,
+          "y": 20.5
+        },
+        "reason": "building-footprint:4"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 1.5,
+          "y": 22.5
+        },
+        "reason": "envelope-cell-out-of-interior"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 13.5,
+          "y": 22.5
+        },
+        "reason": "envelope-building:3"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 6.5,
+          "y": 27.5
+        },
+        "reason": "envelope-cell-building-footprint:2"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 8.5,
+          "y": 27.5
+        },
+        "reason": "envelope-cell-building-footprint:3"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 5.5,
+          "y": 15.5
+        },
+        "reason": "not-plain"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 9.5,
+          "y": 15.5
+        },
+        "reason": "envelope-cell-building-footprint:4"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 1.5,
+          "y": 19.5
+        },
+        "reason": "not-visible"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 13.5,
+          "y": 19.5
+        },
+        "reason": "envelope-cell-building-footprint:4"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 1.5,
+          "y": 23.5
+        },
+        "reason": "envelope-cell-out-of-interior"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 13.5,
+          "y": 23.5
+        },
+        "reason": "envelope-cell-building-footprint:3"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 5.5,
+          "y": 27.5
+        },
+        "reason": "envelope-cell-building-footprint:2"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 9.5,
+          "y": 27.5
+        },
+        "reason": "envelope-cell-building-footprint:3"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 3.5,
+          "y": 16.5
+        },
+        "reason": "envelope-cell-not-visible"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 11.5,
+          "y": 16.5
+        },
+        "reason": "envelope-cell-building-footprint:4"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 2.5,
+          "y": 17.5
+        },
+        "reason": "not-visible"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 12.5,
+          "y": 17.5
+        },
+        "reason": "envelope-cell-building-footprint:4"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 2.5,
+          "y": 25.5
+        },
+        "reason": "envelope-cell-building-footprint:2"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 12.5,
+          "y": 25.5
+        },
+        "reason": "envelope-cell-building-footprint:3"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 3.5,
+          "y": 26.5
+        },
+        "reason": "envelope-cell-building-footprint:2"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 11.5,
+          "y": 26.5
+        },
+        "reason": "envelope-cell-building-footprint:3"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 4.5,
+          "y": 15.5
+        },
+        "reason": "not-visible"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 10.5,
+          "y": 15.5
+        },
+        "reason": "envelope-cell-building-footprint:4"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 1.5,
+          "y": 18.5
+        },
+        "reason": "not-visible"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 13.5,
+          "y": 18.5
+        },
+        "reason": "envelope-cell-building-footprint:4"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 1.5,
+          "y": 24.5
+        },
+        "reason": "envelope-cell-out-of-interior"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 13.5,
+          "y": 24.5
+        },
+        "reason": "envelope-cell-building-footprint:3"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 4.5,
+          "y": 27.5
+        },
+        "reason": "envelope-cell-building-footprint:2"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 10.5,
+          "y": 27.5
+        },
+        "reason": "envelope-cell-building-footprint:3"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 7.5,
+          "y": 14.5
+        },
+        "reason": "not-visible"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 0.5,
+          "y": 21.5
+        },
+        "reason": "out-of-interior"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 14.5,
+          "y": 21.5
+        },
+        "reason": "envelope-cell-building-footprint:4"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 7.5,
+          "y": 28.5
+        },
+        "reason": "envelope-building:3"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 6.5,
+          "y": 14.5
+        },
+        "reason": "not-visible"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 8.5,
+          "y": 14.5
+        },
+        "reason": "envelope-cell-not-visible"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 2.5,
+          "y": 16.5
+        },
+        "reason": "not-visible"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 12.5,
+          "y": 16.5
+        },
+        "reason": "envelope-cell-building-footprint:4"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 0.5,
+          "y": 20.5
+        },
+        "reason": "out-of-interior"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 14.5,
+          "y": 20.5
+        },
+        "reason": "envelope-cell-building-footprint:4"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 0.5,
+          "y": 22.5
+        },
+        "reason": "out-of-interior"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 14.5,
+          "y": 22.5
+        },
+        "reason": "envelope-building:3"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 2.5,
+          "y": 26.5
+        },
+        "reason": "envelope-cell-building-footprint:2"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 12.5,
+          "y": 26.5
+        },
+        "reason": "envelope-cell-building-footprint:3"
+      }
+    ],
+    "search": {
+      "actors": 6,
+      "visitedCells": 401,
+      "radius": 8,
+      "maxCells": 4096
+    }
+  },
+  "worstOffsetSamples": [
+    {
+      "dx": -0.7,
+      "dy": -0.7,
+      "kind": "conservative-square-corner-includes-outside-disk"
+    },
+    {
+      "dx": -0.7,
+      "dy": 0,
+      "kind": "conservative-square-corner-includes-outside-disk"
+    },
+    {
+      "dx": -0.7,
+      "dy": 0.7,
+      "kind": "conservative-square-corner-includes-outside-disk"
+    },
+    {
+      "dx": 0,
+      "dy": -0.7,
+      "kind": "conservative-square-corner-includes-outside-disk"
+    },
+    {
+      "dx": 0,
+      "dy": 0,
+      "kind": "conservative-square-corner-includes-outside-disk"
+    },
+    {
+      "dx": 0,
+      "dy": 0.7,
+      "kind": "conservative-square-corner-includes-outside-disk"
+    },
+    {
+      "dx": 0.7,
+      "dy": -0.7,
+      "kind": "conservative-square-corner-includes-outside-disk"
+    },
+    {
+      "dx": 0.7,
+      "dy": 0,
+      "kind": "conservative-square-corner-includes-outside-disk"
+    },
+    {
+      "dx": 0.7,
+      "dy": 0.7,
+      "kind": "conservative-square-corner-includes-outside-disk"
+    }
+  ]
+}

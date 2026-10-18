@@ -1,0 +1,445 @@
+{
+  "schema": "rds-native-pixel-plan/v1",
+  "identity": "villager",
+  "action": "walk",
+  "direction": "S",
+  "engineDirection": 1,
+  "canvas": [
+    128,
+    128
+  ],
+  "anchor": [
+    64,
+    112
+  ],
+  "durationsMs": [
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100
+  ],
+  "producerScope": "Exactly eight poses; no atlas/fanout/selection/approval from code",
+  "frames": [
+    {
+      "frame": 0,
+      "phase": "left_contact",
+      "torsoWeightX": 0,
+      "bodyBobY": 1,
+      "leftLeg": {
+        "hip": [
+          69,
+          86
+        ],
+        "knee": [
+          70,
+          100
+        ],
+        "ankle": [
+          70,
+          111
+        ],
+        "toe": [
+          70,
+          114
+        ],
+        "stance": true
+      },
+      "rightLeg": {
+        "hip": [
+          59,
+          86
+        ],
+        "knee": [
+          58,
+          96
+        ],
+        "ankle": [
+          58,
+          104
+        ],
+        "toe": [
+          58,
+          108
+        ],
+        "stance": false
+      },
+      "rightHand": [
+        56,
+        84
+      ],
+      "leftHand": [
+        74,
+        79
+      ]
+    },
+    {
+      "frame": 1,
+      "phase": "left_load_right_toeoff",
+      "torsoWeightX": 1,
+      "bodyBobY": 0,
+      "leftLeg": {
+        "hip": [
+          70,
+          86
+        ],
+        "knee": [
+          70,
+          99
+        ],
+        "ankle": [
+          70,
+          110
+        ],
+        "toe": [
+          70,
+          113
+        ],
+        "stance": true
+      },
+      "rightLeg": {
+        "hip": [
+          60,
+          86
+        ],
+        "knee": [
+          58,
+          97
+        ],
+        "ankle": [
+          57,
+          103
+        ],
+        "toe": [
+          57,
+          106
+        ],
+        "stance": false
+      },
+      "rightHand": [
+        55,
+        85
+      ],
+      "leftHand": [
+        75,
+        78
+      ]
+    },
+    {
+      "frame": 2,
+      "phase": "right_passing_left_support",
+      "torsoWeightX": 1,
+      "bodyBobY": -1,
+      "leftLeg": {
+        "hip": [
+          70,
+          85
+        ],
+        "knee": [
+          70,
+          98
+        ],
+        "ankle": [
+          70,
+          109
+        ],
+        "toe": [
+          70,
+          112
+        ],
+        "stance": true
+      },
+      "rightLeg": {
+        "hip": [
+          60,
+          85
+        ],
+        "knee": [
+          59,
+          99
+        ],
+        "ankle": [
+          60,
+          101
+        ],
+        "toe": [
+          60,
+          104
+        ],
+        "stance": false
+      },
+      "rightHand": [
+        57,
+        83
+      ],
+      "leftHand": [
+        73,
+        80
+      ]
+    },
+    {
+      "frame": 3,
+      "phase": "right_reach_left_heelrise",
+      "torsoWeightX": 0,
+      "bodyBobY": 0,
+      "leftLeg": {
+        "hip": [
+          69,
+          86
+        ],
+        "knee": [
+          69,
+          97
+        ],
+        "ankle": [
+          69,
+          107
+        ],
+        "toe": [
+          69,
+          111
+        ],
+        "stance": true
+      },
+      "rightLeg": {
+        "hip": [
+          59,
+          86
+        ],
+        "knee": [
+          58,
+          101
+        ],
+        "ankle": [
+          58,
+          110
+        ],
+        "toe": [
+          58,
+          113
+        ],
+        "stance": false
+      },
+      "rightHand": [
+        60,
+        80
+      ],
+      "leftHand": [
+        71,
+        84
+      ]
+    },
+    {
+      "frame": 4,
+      "phase": "right_contact",
+      "torsoWeightX": 0,
+      "bodyBobY": 1,
+      "leftLeg": {
+        "hip": [
+          69,
+          86
+        ],
+        "knee": [
+          70,
+          96
+        ],
+        "ankle": [
+          70,
+          104
+        ],
+        "toe": [
+          70,
+          108
+        ],
+        "stance": false
+      },
+      "rightLeg": {
+        "hip": [
+          59,
+          86
+        ],
+        "knee": [
+          58,
+          100
+        ],
+        "ankle": [
+          58,
+          111
+        ],
+        "toe": [
+          58,
+          114
+        ],
+        "stance": true
+      },
+      "rightHand": [
+        60,
+        79
+      ],
+      "leftHand": [
+        71,
+        85
+      ]
+    },
+    {
+      "frame": 5,
+      "phase": "right_load_left_toeoff",
+      "torsoWeightX": -1,
+      "bodyBobY": 0,
+      "leftLeg": {
+        "hip": [
+          68,
+          86
+        ],
+        "knee": [
+          70,
+          97
+        ],
+        "ankle": [
+          71,
+          103
+        ],
+        "toe": [
+          71,
+          106
+        ],
+        "stance": false
+      },
+      "rightLeg": {
+        "hip": [
+          58,
+          86
+        ],
+        "knee": [
+          58,
+          99
+        ],
+        "ankle": [
+          58,
+          110
+        ],
+        "toe": [
+          58,
+          113
+        ],
+        "stance": true
+      },
+      "rightHand": [
+        61,
+        78
+      ],
+      "leftHand": [
+        70,
+        86
+      ]
+    },
+    {
+      "frame": 6,
+      "phase": "left_passing_right_support",
+      "torsoWeightX": -1,
+      "bodyBobY": -1,
+      "leftLeg": {
+        "hip": [
+          68,
+          85
+        ],
+        "knee": [
+          69,
+          99
+        ],
+        "ankle": [
+          68,
+          101
+        ],
+        "toe": [
+          68,
+          104
+        ],
+        "stance": false
+      },
+      "rightLeg": {
+        "hip": [
+          58,
+          85
+        ],
+        "knee": [
+          58,
+          98
+        ],
+        "ankle": [
+          58,
+          109
+        ],
+        "toe": [
+          58,
+          112
+        ],
+        "stance": true
+      },
+      "rightHand": [
+        59,
+        80
+      ],
+      "leftHand": [
+        72,
+        84
+      ]
+    },
+    {
+      "frame": 7,
+      "phase": "left_reach_right_heelrise",
+      "torsoWeightX": 0,
+      "bodyBobY": 0,
+      "leftLeg": {
+        "hip": [
+          69,
+          86
+        ],
+        "knee": [
+          70,
+          101
+        ],
+        "ankle": [
+          70,
+          110
+        ],
+        "toe": [
+          70,
+          113
+        ],
+        "stance": false
+      },
+      "rightLeg": {
+        "hip": [
+          59,
+          86
+        ],
+        "knee": [
+          59,
+          97
+        ],
+        "ankle": [
+          59,
+          107
+        ],
+        "toe": [
+          59,
+          111
+        ],
+        "stance": true
+      },
+      "rightHand": [
+        57,
+        83
+      ],
+      "leftHand": [
+        74,
+        81
+      ]
+    }
+  ],
+  "limits": "Guide only; verify foot lanes, authored anatomy, seam and actual support from final pixels; stride unknown."
+}

@@ -1,0 +1,33 @@
+{
+  "schema": "rds-method-difference/v1",
+  "family": "joint-complementary-four-key-context507",
+  "parentOrderIds": [
+    "villager-D1-whole-clothed-control-491-F2-ONE",
+    "villager-D1-guide-first-492-F2-ONE"
+  ],
+  "reviewer": "/root/review507",
+  "decision": "MATERIALLY_DIFFERENT",
+  "changedControl": "491 requested one F2 with target/original/contact neighbors/guide;492 requested one F2 with guide and original. This finite study asks one shared2x2 output containing opposite contactA, passingB, contactB, passingA together with the whole cycle guide. Simultaneous complementary pose composition changes within-request context, rather than only reference ordering or single-frame prompt wording. It provides no hard pose constraint or demonstrated motion improvement.",
+  "limits": [
+    "One raw candidate sheet; zero corrections; no selected frame or in-between authorization",
+    "Actual guide has readable complementary intent only; original-preserving finished artwork remains unproved"
+  ],
+  "evidence": [
+    {
+      "path": "docs/art/pipeline/villager-key-study-509/proposed-order.json",
+      "sha256": "9004c742e0b6257d7f5f192ae1a3028eeabc9582fe518f9fc4d2a37ebe5bc0ce"
+    },
+    {
+      "path": "docs/art/pipeline/villager-key-study-509/proposed-request.json",
+      "sha256": "a5f08f7e91f92e9aa3c25bf02133003b7c1b25ae50a1a4a210a40479f318412f"
+    },
+    {
+      "path": "docs/art/pipeline/villager-key-study-509/joint-guide.png",
+      "sha256": "4a62e739ffe141095b76c418e871b973e5db0d93311b76b7e04e87dacdb83dbf"
+    },
+    {
+      "path": "docs/audits/animation-context-507/review/MECHANISM.json",
+      "sha256": "8cddf7819f89d1e6b477520b6a7e0ca666a027c4621b7b6c09534584116a420a"
+    }
+  ]
+}

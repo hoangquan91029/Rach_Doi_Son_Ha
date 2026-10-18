@@ -1,0 +1,71 @@
+{
+  "schema": "rds-readonly-review/v1",
+  "taskId": "review-idleclock524",
+  "decision": "SCOPED_READY",
+  "findings": [],
+  "method": "Independent exactdiff/source/caller/test inspection; actual producer19PASS log read, no rerun",
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "bb1c12bbda8727835a5e9d2a4a68ca20af7d463b237ad704a189de3329cdb3ae"
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+    },
+    {
+      "path": "client/action-presentation.js",
+      "sha256": "543c640458f423715030382259c20f2d2580fd1bae249e7cc1df3ce1ced45bea"
+    },
+    {
+      "path": "client/raster-slice.js",
+      "sha256": "af6736681580d42e4f9f168209d6c3beed9c0bd59f0f578ec9505d7598d661b8"
+    },
+    {
+      "path": "tests/idle-entry-phase524.test.js",
+      "sha256": "cbb1742c957fef523f73536240d3f6e0adfbce11818d1b14426dc5e10d063ad6"
+    },
+    {
+      "path": "docs/qa/idle-entry-phase-524/CHECKPOINT.json",
+      "sha256": "c0239602c20dea9190e6e3dd607a5bfdabefc58f4a602ba8daed16002d40a878"
+    },
+    {
+      "path": "shared/sim.js",
+      "sha256": "c9a01adba8630e89e1c3f195c1b98c08c32e74468d389a55891c664e3906e562"
+    },
+    {
+      "path": "shared/visible-action.js",
+      "sha256": "35d4352d3c6a85bce7b99638934e9c0512c900df801fc3b59296ba1b606b27b0"
+    }
+  ],
+  "checks": [
+    {
+      "command": "node scripts/agent-preflight.mjs --task audit --source client/action-presentation.js --source client/raster-slice.js --task-id review-idleclock524 --inputs docs/audits/movement-priority-522/root/review-idleclock524-inputs.json",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0,
+      "evidence": "docs/qa/idle-entry-phase-524-review/preflight.json",
+      "sha256": "e7053e47b0365cae59582bbda2b44706afa6a7e607d6383959184b5bd87118dc"
+    },
+    {
+      "state": "DOCUMENTED_ONLY",
+      "evidence": "docs/qa/idle-entry-phase-524/tests-final.log",
+      "sha256": "2d2963d86c12ce19d8248f15929d397b225401fed846f4eb239e75abaa5cd49e",
+      "observation": "Actual producer19PASS log read; not independently executed"
+    }
+  ],
+  "observations": [
+    "Requestedsemanticstate decides idle before missing artwork can substitute idle: authoredActionStates handleshit/ability/load/unload/build/repair/gather. Leaving trueidle prunes itsclock even if missing/coldbank showsstaticF0.",
+    "Trueunitidle elapsed usesentryclock; STATIC_ILLUSTRATION remainselapsed0 beforeidlebranch. Coldpage temporaryfallback explicitlyreturnsF0. Firstsamplewithoutobserve deliberatelyF0; productionrenderer observesbeforedrawing/picking.",
+    "Reusedidentity/facing/createdTick resetsentries; backwardtick/time clearsall. Dead/embarked/nonunit/absentactors pruned. Rasterdispose clearsclock; recreate hasnewclock.",
+    "Frozenobservations offsetstart bytimeadvance, normalconstantpausedvisualtime doesnotadvance; renderer/main supply frozen+visualTimeMs. Entryclock cap1024 scalartracks preventsunboundedgrowth; overflowF0 conservative.",
+    "Only trueunitidle branch changed; distancewalk/gather/episode/attack/hit calculation branches remainexact, buildings stillusepreviousclock. sharedsim andvisibleaction pins unchanged."
+  ],
+  "limitations": [
+    "Source/focusedcheck review only; no actualbrowser/runtime/artmotion/owner/publicqualification.",
+    "First observedsemanticidle, rather than authoritativeunobservedtransitiontick, definesentry; snapshots mayskipverybriefinterveningactions. This is statedcosmeticobservational scope, not simulationauthority.",
+    "1024cap overflowfallsbackF0; sourcebound notdensebrowserprofile."
+  ],
+  "calls": 0,
+  "handles": [],
+  "preservation": "All registeredinputs unchanged at finalhashcheck; exclusive reviewdirectory only written."
+}

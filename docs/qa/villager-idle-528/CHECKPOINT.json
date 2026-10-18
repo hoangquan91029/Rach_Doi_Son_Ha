@@ -1,0 +1,330 @@
+{
+  "schema": "rds-task-receipt/v1",
+  "taskId": "villager-idle-runtime528",
+  "status": "HOLD_FIRST_ACTUAL_ARRIVAL_D1_SEGMENT_INTERSECTS_RESIDENCE",
+  "phase": "EXECUTED_ONE_TERMINAL_NO_REPLAY",
+  "builds": 0,
+  "browserLaunches": 1,
+  "serverLaunches": 1,
+  "attempts": 1,
+  "mechanism": "Newexplicitordinaryegress prerequisite route after527initialcorridorfailure; not replay/reset525527",
+  "source": "scripts/qa/villager-idle528.mjs",
+  "planner": "docs/qa/villager-idle-528/planner.mjs",
+  "changes": [
+    "Reuses527frozenstage/build readonly; no newbuild/sourceupdates. Protectswhole525and527terminaltrees/scripts, canonicalexacttree, raw/order andfullledgerpins.",
+    "Finitepureplanner reads actualpublicsnapshot localPlayer/maptiles/fog/entities only; selectsinitialidleVillager withoutinitialidealD1corridor. Visible-land BFS 4096cells, radius8/289stagingpoints, max24actors; allrejectionsretained.",
+    "BUILDINGSradius+0.15 squarefootprints/friendlygatepass, diagonalneighborpass andwholegroundsegment slabintersections preserved. Staging+4.5diagonal requiresvisibleplain/unoccupiedpath. NormalUI M-egressnavigation->actualassigned0.7arrival beforeactualD1segment recheck.",
+    "Persistsfullinitialsnapshot/finiteplanningselectedpointsandrejections beforeanyplannerexception; egressUIactionfilewrittenimmediatelybeforeassignedwait. Shortsecond1.5D1moveStop, no changedoldwalkart/speed/facing.",
+    "Retainsstartupdiagnostics/actualpipelinefirstfailure/510custody/terminalHOLDnonzero/oneattempt150sscope from527."
+  ],
+  "offlineProof": {
+    "evidence": "VERIFIED_SOURCE_PLANNER_ONLY",
+    "path": "docs/qa/villager-idle-528/offline-source-plan.json",
+    "fixture": "createMatchdelta seed1 ->publicview(state,0) solelyofflineplanner, no browsercommands or qualification",
+    "selected": {
+      "actorId": 7,
+      "staging": {
+        "x": 8.5,
+        "y": 19.5
+      },
+      "firstTarget": {
+        "x": 11.5,
+        "y": 22.5
+      },
+      "secondTarget": {
+        "x": 13,
+        "y": 24
+      }
+    },
+    "rejections": 14,
+    "snapshotUnchanged": true,
+    "checks": "10groups: actualinitialfixturestagefound, readonlyinput, footprint/wholebuildingsegmentreject, missingvisibility/hidden/blockedterrain/mapcap/bounds/diagonalneighborreject"
+  },
+  "checks": [
+    {
+      "command": "node scripts/agent-preflight.mjs --task runtime --task-id villager-idle-runtime528 --inputs docs/qa/villager-idle-528/inputs.json --source shared/sim.js --source scripts/qa/villager-idle527.mjs",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0,
+      "evidence": "docs/qa/villager-idle-528/preflight.json"
+    },
+    {
+      "command": "node docs/qa/villager-idle-528/planner-checks.mjs",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0,
+      "evidence": "docs/qa/villager-idle-528/planner-checks-final.log"
+    },
+    {
+      "command": "node --check scripts/qa/villager-idle528.mjs",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0,
+      "evidence": "docs/qa/villager-idle-528/syntax.log"
+    },
+    {
+      "command": "node scripts/agent-preflight.mjs --task runtime --task-id villager-idle-runtime528 --inputs docs/qa/villager-idle-528/execute-inputs.json --source scripts/qa/villager-idle528.mjs --source docs/qa/villager-idle-528/planner.mjs",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0,
+      "evidence": "docs/qa/villager-idle-528/execute-preflight.json"
+    }
+  ],
+  "preservation": {
+    "actualPinsExact": true,
+    "stageSource": "docs/qa/villager-idle-527/stage",
+    "reusedBuild": "docs/qa/villager-idle-527/build",
+    "newBuilds": 0,
+    "previousTerminalMutation": false,
+    "actualTerminalGuard": true
+  },
+  "executionProposed": {
+    "argv": [
+      "node",
+      "scripts/qa/villager-idle528.mjs"
+    ],
+    "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+    "gate": "Trusted528ACTIVE exactphaseEXECUTE_ONE_REVIEWED_SCENE/noattemptfile, rootonlyauthorization",
+    "configuration": "ONE150s/SPDeltaEasy1920x1080DPR1zoom1.68;group/M-egress/assigned0.7/D1idleF0all4/move1.5Stop/PauseResume/menu"
+  },
+  "outputs": [
+    {
+      "path": "scripts/qa/villager-idle528.mjs",
+      "sha256": "e54683eb89eb97269551ee46cfb0459e2888c383383a1e42617d62f869fde55b"
+    },
+    {
+      "path": "docs/qa/villager-idle-528/planner.mjs",
+      "sha256": "2e9ba649bf4389fadaa83d35591a94f292d515ebaa8e31bacab4287fd96f9631"
+    },
+    {
+      "path": "docs/qa/villager-idle-528/planner-checks.mjs",
+      "sha256": "287a4ebf20abc6780a3d7b383638ad0bcc990a5e65cf9541d0729bdac02803eb"
+    },
+    {
+      "path": "docs/qa/villager-idle-528/planner-checks.log",
+      "sha256": "b34bfa563eb8a5fd88d604669014c542701114d13960fdafc288e3a61e767973"
+    },
+    {
+      "path": "docs/qa/villager-idle-528/planner-checks-final.log",
+      "sha256": "962994cccd5a00882ddf55f6bbd9f602efe99b85816919db58098efe32419b1d"
+    },
+    {
+      "path": "docs/qa/villager-idle-528/offline-source-plan.json",
+      "sha256": "e20a41877ee72bead99900170c53c462608847fdc253b4b177b1a439303d1897"
+    },
+    {
+      "path": "docs/qa/villager-idle-528/inputs.json",
+      "sha256": "b7afd2b07b8dfd2b2370fe7e243c3118add0016856f636c196779ec91330f665"
+    },
+    {
+      "path": "docs/qa/villager-idle-528/preflight.json",
+      "sha256": "6987a2dddde16140d99514ad8631366cfbbb983a52afda58476673c545771556"
+    },
+    {
+      "path": "docs/qa/villager-idle-528/syntax.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qa/villager-idle-528/canonical-pins.json",
+      "sha256": "cd66ff256137018a7359d8a3bca67010d97dc3d5ae2e436522220157fd2bc3c0"
+    },
+    {
+      "path": "docs/qa/villager-idle-528/stage-source-pins.json",
+      "sha256": "53d3b748ad44e3d028a791b61600634746f315071f10aeb3c6299381b77ee902"
+    },
+    {
+      "path": "docs/qa/villager-idle-528/build-pins.json",
+      "sha256": "5503d2fafb4d1e25c998e2c8f76cf688fe632df8e90daa0d19950383084acab4"
+    },
+    {
+      "path": "docs/qa/villager-idle-528/prior525-pins.json",
+      "sha256": "19467241f3fb079bb685cdac345f687dfb7ea01fc8b999c3244cfc7223226742"
+    },
+    {
+      "path": "docs/qa/villager-idle-528/prior527-pins.json",
+      "sha256": "e2809a08a392b13ef19c6f382aee6a8987e546a6180e6c6053ed1b13cf65c2f7"
+    },
+    {
+      "path": "docs/qa/villager-idle-528/artwork-pins.json",
+      "sha256": "5537e4c8021e6f21aec1201551387973a457f36c8865f2c144eb61c6000eb11b"
+    },
+    {
+      "path": "docs/qa/villager-idle-528/historical-order-pins.json",
+      "sha256": "7c336543f0240bb3fe2f74590535206d527849330dc77ca9cd750d6a7e2f9276"
+    },
+    {
+      "path": "docs/qa/villager-idle-528/ledger-pin.json",
+      "sha256": "34c2d4fe3e51c788e0101ceb1b4cce615c79e04bb5a642cbe89fbdcb83273179"
+    },
+    {
+      "path": "docs/qa/villager-idle-528/execute-inputs.json",
+      "sha256": "142ee3885ae7662c2e9f2822b5544ba03063aafd7ab75a0a3caa36807c2c991c"
+    },
+    {
+      "path": "docs/qa/villager-idle-528/execute-preflight.json",
+      "sha256": "f713eaab9a8912793095be15f554c11e41b5ea7f942c6f2741f8525cb552fe15"
+    },
+    {
+      "path": "docs/qa/villager-idle-528/attempt.json",
+      "sha256": "d9cbc52b318d769a34730c05b500dab74c6960a32658dc833f381a9b0d2ca958"
+    },
+    {
+      "path": "docs/qa/villager-idle-528/receipt.json",
+      "sha256": "6856dbc2e8c2ef52fd56a553ce69dfd46910d4f073fa75b0043871281fb6ae6f"
+    },
+    {
+      "path": "docs/qa/villager-idle-528/run.log",
+      "sha256": "a50f87b677f4b08ae82fad7a7851a064e329140099ad579453c191bf9f52cae2"
+    },
+    {
+      "path": "docs/qa/villager-idle-528/initial-snapshot.json",
+      "sha256": "25c5b4aa5cccde7ddee189b88b74eea50f120cfcf456a4161fa4e9ded45be6eb"
+    },
+    {
+      "path": "docs/qa/villager-idle-528/planning.json",
+      "sha256": "b470c7bc1fce8ebab907f6366be641da179cf7b28f6542e2d450cb684f01cb05"
+    },
+    {
+      "path": "docs/qa/villager-idle-528/egress-actions.json",
+      "sha256": "de5669fcc83174d771595d7be1c5081845bb7d3752d58fa8a548ce8634ccc31c"
+    },
+    {
+      "path": "docs/qa/villager-idle-528/startup-diagnostics.json",
+      "sha256": "48c34f8a53f6d3babb417b4c2611fc90b75688abbb3fb718cba6cb57353e186f"
+    },
+    {
+      "path": "docs/qa/villager-idle-528/live-handles.json",
+      "sha256": "a0a70daa0da8c6cf0c35217cdeaac3e9dcf2322e0cb7909b7f2b7c82724f16c8"
+    },
+    {
+      "path": "docs/qa/villager-idle-528/browser-custody/status.json",
+      "sha256": "3630ca06e5ffd63033ac1ddd5429e86859c59e2fc8f3d5369be10d9d28f17e54"
+    },
+    {
+      "path": "docs/qa/villager-idle-528/browser-custody/lifecycle.jsonl",
+      "sha256": "ea7ab736151b34ce60cccd27707b673125512baac8a21bdad853b2c0b74c2d51"
+    },
+    {
+      "path": "docs/qa/villager-idle-528/browser-custody/browser-stderr.bin",
+      "sha256": "6434c49d21863fea1a01b6fc6d8d09704733339d30dd3dfce63d74fdeed02d9e"
+    }
+  ],
+  "handles": {
+    "runnerPID": 660973,
+    "browserPID": 660987,
+    "port": 42849,
+    "browserProcessAlive": false,
+    "browserSignal": null,
+    "browserConnected": false,
+    "browserExit": 0,
+    "serverListening": false,
+    "rooms": 0
+  },
+  "calls": 0,
+  "failures": [],
+  "limitations": [
+    "Offlinefixtureplan only, actualruntime snapshotmaydiffer and actualnavigation/arrival/facing stillneedsobservation.",
+    "527specificrejectedcandidate reasons remainUNKNOWN; newsourcegeometrymechanism addressesknowninitialResidenceobstruction assumption withoutinventingpaststate.",
+    "No browser/build/scene/image/publicchange; oldwalk014 held/rejected andno motion/owner/publicPASS.",
+    "Planner seesonlyvisiblepublicbuildings; hiddenblockers/dynamicunits can invalidate route, actualscene firstfailurestops.",
+    "Actualenginearrivaloffset wasaccepted at0.7, notidealclick; failednextD1groundsegment isplannerprerequisite failure, not gameplayfailure.",
+    "No ordinarymenuclosureproof; cleanupcontextsclosed only. No idleclipmotion/Stop/Pause/runtimepublicPASS."
+  ],
+  "nextDependency": "Root readonlyactualarrival/collision evidence intake; any newfiniteplanner mechanism musthandle real0.7arrivalenvelope, preserve528terminal anddo nottightenarrival/facing/speedtohideerror.",
+  "execution": {
+    "argv": [
+      "node",
+      "scripts/qa/villager-idle528.mjs"
+    ],
+    "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+    "sessionId": 88079,
+    "exitCode": 1,
+    "firstException": {
+      "atUTC": "2026-10-13T13:51:35.201Z",
+      "message": "AssertionError [ERR_ASSERTION]: Actual D1 segment prerequisite\n+ actual - expected\n\n+ 'ground-segment-building:1'\n- null\n\n    at destination (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/qa/villager-idle528.mjs:45:255)\n    at move (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/qa/villager-idle528.mjs:46:181)\n    at async runScene (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/qa/villager-idle528.mjs:53:17)\n    at async file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/qa/villager-idle528.mjs:58:84"
+    },
+    "actions": [
+      {
+        "kind": "ordinary-groundrectangle-Ctrl1",
+        "id": 7
+      },
+      {
+        "kind": "ordinary-M-egress",
+        "target": {
+          "x": 8.5,
+          "y": 19.5
+        },
+        "assigned": {
+          "x": 8.499990505642362,
+          "y": 19.5
+        }
+      }
+    ],
+    "samples": 12,
+    "noRetry": true
+  },
+  "actualEvidence": {
+    "evidence": "VERIFIED_SAVED_ACTUAL_UI_DIAGNOSTICS",
+    "actor": {
+      "id": 7,
+      "owner": 0,
+      "type": "villager",
+      "kind": "unit",
+      "x": 7.5,
+      "y": 21.5,
+      "hp": 65,
+      "maxHp": 65,
+      "food": 40,
+      "foodMax": 40,
+      "morale": 95,
+      "state": "idle",
+      "dir": 0,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 0,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "resuppliedTick": 6,
+      "starving": 0,
+      "order": null
+    },
+    "selectedPlan": {
+      "actorId": 7,
+      "staging": {
+        "x": 8.5,
+        "y": 19.5
+      },
+      "firstTarget": {
+        "x": 11.5,
+        "y": 22.5
+      },
+      "secondTarget": {
+        "x": 13,
+        "y": 24
+      }
+    },
+    "plannerRejects": 14,
+    "egressAssigned": {
+      "x": 8.499990505642362,
+      "y": 19.5
+    },
+    "actualArrival": {
+      "x": 8.18694341128344,
+      "y": 20.126100133136422,
+      "state": "idle",
+      "dir": 0,
+      "tick": 58,
+      "assignedDistance": 0.6999998999999991
+    },
+    "actualSegmentRecheck": {
+      "kind": "actual-D1-segment",
+      "from": {
+        "x": 8.18694341128344,
+        "y": 20.126100133136422
+      },
+      "d": 3,
+      "reason": "ground-segment-building:1"
+    },
+    "observation": "Initialordinarygroundrectangle/Ctrl1 andM-egress executed, engineassignedarrival within0.7. Actualoffset shiftsD1segment intoResidence1; noD1commandissued afterfirstprerequisitefailure. Candidateidle/Stop/Pause/menu notobserved.",
+    "limitation": "Staging exactcenter clear doesnotguarantee allactualarrivaloffsets safe; collisionguardworks, plannercertificate needsarrivalenvelope beforeanynewscope."
+  }
+}

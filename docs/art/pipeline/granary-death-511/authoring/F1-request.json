@@ -1,0 +1,39 @@
+{
+  "orderId": "granary-death-whole511",
+  "slotIndex": 1,
+  "kind": "building_key",
+  "values": {
+    "buildingType": "granary",
+    "state": "death",
+    "direction": "none",
+    "phase": "0.25",
+    "master": "0d0c3963f3faed9341cd09f2ff118a753e9bd1ee431290b51635eebb17b61715",
+    "assemblyLock": "SAME original Vietnamese raised timber granary: one long orange terracotta gable roof with upturned eaves and dark wooden ridge beam, exposed right gable and small right porch roof, front column bays and vertical timber planks, open grain sacks/baskets, central stair, stone footings. Preserve original footprint, camera, floor/stair/footing locations and recognizable material design; death may collapse this exact roof/posts, never redesign into a different building.",
+    "invariants": "F1 phase0.25: the original heavy tile roof has given way halfway inward after F0. Central ridge/timber beams break and drop toward the platform; tile planes visibly buckle downward more than F0, while end gable fragments remain partially elevated. Front post joints fail inward; the original raised floor and lower support footings do not shift. Intermediate half-collapse, clearly before the low settled F3 pile. Image1 original controls appearance, footprint, fixed elevated camera, warm timber/orange tile materials and light. Image2 selected F0 shows the first cracked ridge and sagging roof. Image3 selected F3 is the final collapsed destination. Make a distinct whole collapse pose between those endpoints for the SAME granary. Keep original raised floor, front stair and stone footing locations steady, same right porch footprint, original baked contact shadow. Keep all broken roof/timber/grain debris within the whole1254squarecanvas/sourcepivot640,1050/logicalrender85x85. No people, flames, smoke, dust plume, extra ground patch, added architecture, crop, fitting, warp, mirror or pixel splices. ONE whole realistic illustrated transparent PNG; no sheet. Do not copy either endpoint unchanged."
+  },
+  "references": [
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/granary/variant-01/raw.png",
+      "sha256": "0d0c3963f3faed9341cd09f2ff118a753e9bd1ee431290b51635eebb17b61715",
+      "role": "originalmaster"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/illustration/F0-raw.png",
+      "sha256": "c853a3340a6e8173f882312a5b69c1f1abb8fc67a4743a39d93e7abce2280815",
+      "role": "neighbor",
+      "status": "selected",
+      "jobId": "granary-death-whole511-selected-endpoints",
+      "frame": 0,
+      "phase": 0
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/illustration/F3-raw.png",
+      "sha256": "e53a36ffe4a52477e2e598f7d4222d4a79ef75e222e09f479cf26159294719e9",
+      "role": "neighbor",
+      "status": "selected",
+      "jobId": "granary-death-whole511-selected-endpoints",
+      "frame": 3,
+      "phase": 0.75
+    }
+  ]
+}

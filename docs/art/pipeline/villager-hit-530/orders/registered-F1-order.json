@@ -1,0 +1,77 @@
+{
+  "id": "villager-hit-D1-whole530-THREE",
+  "status": "OPEN",
+  "jobKind": "action",
+  "identity": "villager",
+  "action": "hit",
+  "direction": 1,
+  "job": {
+    "id": "villager-hit-D1-whole530",
+    "action": "hit",
+    "direction": 1,
+    "variant": "nonfatal-planted-recoil-original-rest",
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-hit-530/authoring/job-initial.json",
+    "sha256": "1a4bcec98dba4cea42eda0bb30a2d48feaa828cc18e37aa256017b6aa2d0c65d"
+  },
+  "callLimit": 3,
+  "callsUsed": 0,
+  "correctionCap": 0,
+  "correctionsUsed": 0,
+  "callsRemaining": 3,
+  "slots": [
+    {
+      "frame": 0,
+      "phase": 0.0,
+      "status": "pending",
+      "kind": "initial",
+      "template": "inbetween"
+    },
+    {
+      "frame": 1,
+      "phase": 0.25,
+      "status": "pending",
+      "kind": "initial",
+      "template": "key"
+    },
+    {
+      "frame": 2,
+      "phase": 0.5,
+      "status": "pending",
+      "kind": "initial",
+      "template": "inbetween"
+    },
+    {
+      "frame": 3,
+      "phase": 0.75,
+      "status": "selected",
+      "kind": "initial",
+      "template": "key"
+    }
+  ],
+  "enforcement": {
+    "version": 1,
+    "taskId": "illustration-hit530",
+    "baseline": {
+      "callsUsed": 0,
+      "correctionsUsed": 0
+    },
+    "method": {
+      "family": "same-original-stationary-nonfatal-hit530",
+      "parentOrderIds": []
+    },
+    "prerequisites": [
+      {
+        "job": {
+          "path": "docs/art/pipeline/villager-hit-530/authoring/job-initial.json",
+          "sha256": "1a4bcec98dba4cea42eda0bb30a2d48feaa828cc18e37aa256017b6aa2d0c65d"
+        },
+        "frame": 3,
+        "phase": 0.75,
+        "input": {
+          "path": "docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+          "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+        }
+      }
+    ]
+  }
+}

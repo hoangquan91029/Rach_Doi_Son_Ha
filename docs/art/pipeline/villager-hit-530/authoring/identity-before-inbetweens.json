@@ -1,0 +1,493 @@
+{
+  "schema": "rds-unit-identity/v1",
+  "identity": "villager",
+  "families": [
+    "villager",
+    "unit.villager"
+  ],
+  "roles": [
+    "villager"
+  ],
+  "master": {
+    "assetId": "villager-idle-D00",
+    "direction": 0,
+    "path": "docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+    "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+    "rgbaSha256": "c960d206222a191b903a8cc1a679e82bdce8d8c51df4010a935f444b3cacdb9c",
+    "status": "existing source custody; no new view or motion approval"
+  },
+  "views": [
+    {
+      "direction": 0,
+      "source": {
+        "assetId": "villager-idle-D00",
+        "direction": 0,
+        "path": "docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+        "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+        "rgbaSha256": "c960d206222a191b903a8cc1a679e82bdce8d8c51df4010a935f444b3cacdb9c",
+        "status": "existing source custody; no new view or motion approval"
+      },
+      "status": "existing static source"
+    },
+    {
+      "direction": 1,
+      "source": {
+        "assetId": "villager-idle-south-014",
+        "direction": 1,
+        "path": "docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+        "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+        "rgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6",
+        "status": "existing source custody; no new view or motion approval"
+      },
+      "status": "selected",
+      "selectionScope": "Existing whole originalSouth neutral view appearance/camera only; no walk/motion/eight-direction approval; root inspected actual master",
+      "selectionReceipt": {
+        "path": "docs/art/pipeline/villager-pose-control-491/static-view-selection.json",
+        "sha256": "1199d74b86f5a8e805090f17ccb6af8d7e0c7bd209cb7773ac3024b4ecb18514"
+      }
+    },
+    {
+      "direction": 2,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 3,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 4,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 5,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 6,
+      "source": null,
+      "status": "missing"
+    },
+    {
+      "direction": 7,
+      "source": null,
+      "status": "missing"
+    }
+  ],
+  "actions": [
+    {
+      "action": "idle",
+      "alias": false,
+      "applicable": true,
+      "frames": 4,
+      "roles": [
+        "villager"
+      ],
+      "requiresSeparatePoses": false
+    },
+    {
+      "action": "walk",
+      "alias": false,
+      "applicable": true,
+      "frames": 8,
+      "roles": [
+        "villager"
+      ],
+      "requiresSeparatePoses": false
+    },
+    {
+      "action": "attack",
+      "alias": false,
+      "applicable": true,
+      "frames": 8,
+      "roles": [
+        "villager"
+      ],
+      "requiresSeparatePoses": false
+    },
+    {
+      "action": "hit",
+      "alias": false,
+      "applicable": true,
+      "frames": 4,
+      "roles": [
+        "villager"
+      ],
+      "requiresSeparatePoses": false
+    },
+    {
+      "action": "death",
+      "alias": false,
+      "applicable": true,
+      "frames": 8,
+      "roles": [
+        "villager"
+      ],
+      "requiresSeparatePoses": false
+    },
+    {
+      "action": "gather_wood",
+      "alias": false,
+      "applicable": true,
+      "frames": 8,
+      "roles": [
+        "villager"
+      ],
+      "requiresSeparatePoses": false
+    },
+    {
+      "action": "gather_food",
+      "alias": false,
+      "applicable": true,
+      "frames": 8,
+      "roles": [
+        "villager"
+      ],
+      "requiresSeparatePoses": false
+    },
+    {
+      "action": "gather_iron",
+      "alias": false,
+      "applicable": true,
+      "frames": 8,
+      "roles": [
+        "villager"
+      ],
+      "requiresSeparatePoses": false
+    },
+    {
+      "action": "build",
+      "alias": false,
+      "applicable": true,
+      "frames": 8,
+      "roles": [
+        "villager"
+      ],
+      "requiresSeparatePoses": false
+    }
+  ],
+  "invariants": [
+    "Preserve whole original identity; no role art substitution"
+  ],
+  "excludedReferences": [
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pose-control-491/trial-F2-raw.png",
+      "sha256": "e3bfb1a2863d8304df51017bb04e3d4354207a999e97573c446185036ab66ba6",
+      "status": "held",
+      "reason": "491 newwholeclothed pose-control not followed; no meaningful passing repair"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-guide-first-492/trial-F2-raw.png",
+      "sha256": "900ba5d184b37f6374a1953e3796bd828022a6f9e1b32be8d4365bcc7a21b650",
+      "status": "held",
+      "reason": "492 guide-first fails closepassing and fixedupperbody/hat scale"
+    }
+  ],
+  "review": "No new approval inferred from registry",
+  "runtime": "Active manifest presence only",
+  "release": "No promotion authorization",
+  "camera": {
+    "label": "dimetric 2:1 ground projection; fixed whole original elevated camera; no independent camera fit",
+    "screenFacing": [
+      "ESE",
+      "South",
+      "WSW",
+      "West",
+      "WNW",
+      "North",
+      "ENE",
+      "East"
+    ],
+    "basis": "shared/sim.js atan2 eight world octants; screen x=(worldX-worldY), y=(worldX+worldY)/2; labels describe projected vector"
+  },
+  "weaponOwnership": "No held tool or weapon is visible in this idle master; preserve empty visible hands. Separate work-action tools require their own existing source pins and grips.",
+  "allowedReferences": [
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-010/F2-right-passing-01/raw.png",
+      "sha256": "bd2679353741d51575a99ccd0ded835281d0688abb1018146ed60d3077cc2b1c",
+      "rgbaSha256": "1a9f899a98ff1daea6c4e8a32ae9a507b8098a5e65ea9541c1757f5432e3208c",
+      "role": "neighbor",
+      "frame": 2,
+      "phase": 0.25,
+      "jobId": "villager-D1-whole-clothed-control-491",
+      "status": "selected"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/authoring-tools/villager-walk-SOUTH-007/walk/keys/F00-left-contact-01/raw.png",
+      "sha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001",
+      "rgbaSha256": "07bc362e869f40e8a3d5ba0b6fabdd7845f6132c0aa4656a17f762ee46609410",
+      "role": "neighbor",
+      "frame": 0,
+      "phase": 0.0,
+      "jobId": "villager-D1-whole-clothed-control-491",
+      "status": "selected"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pure2d-SOUTH-009/F4-trailing-contact-correction-01/raw.png",
+      "sha256": "929b9805f696abf341b8ea9b4df425a753da2c48b1be9ca13282bb5c72e0793f",
+      "rgbaSha256": "12a430a74fe4a945971a0821b6a0c7548cf6db9b84f40aedaeccfd40b28b75d8",
+      "role": "neighbor",
+      "frame": 4,
+      "phase": 0.5,
+      "jobId": "villager-D1-whole-clothed-control-491",
+      "status": "selected"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pose-control-491/guide/F2.png",
+      "sha256": "cad740daf00c33a47a41ef41e0509ab817db4cd8dc8a5c3e485d7502c3568c1c",
+      "role": "guide",
+      "derivedFromSHA": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+      "provenance": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pose-control-491/guide-provenance.json",
+        "sha256": "0f84e8e89778c596aced1e4eef6dee69a2bf2e1ce96f8bcfc7c10bb6c4bf0431"
+      },
+      "status": "authoring-only"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pose-control-491/guide/F2.png",
+      "sha256": "cad740daf00c33a47a41ef41e0509ab817db4cd8dc8a5c3e485d7502c3568c1c",
+      "role": "guidetarget",
+      "status": "authoring-only",
+      "jobId": "villager-D1-guide-first-492",
+      "frame": 2,
+      "phase": 0.25,
+      "provenance": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-guide-first-492/guide-target-provenance.json",
+        "sha256": "b0d380521b6b0c6c7790e9bb8d6b7d6cc926a91f028b232e3452e0ecf6b2b98a"
+      },
+      "derivedFromSHA": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-key-study-509/joint-guide.png",
+      "sha256": "4a62e739ffe141095b76c418e871b973e5db0d93311b76b7e04e87dacdb83dbf",
+      "role": "studyguide",
+      "status": "authoring-only",
+      "derivedFromSHA": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+      "provenance": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-key-study-509/guide-provenance.json",
+        "sha256": "224ae9f378ed8359151ba15c32e01f621523e49498fb6c1fee3a5434d2ce0ebe"
+      }
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-idle-523/authoring/guide/F2.png",
+      "sha256": "72f94b1eefc0e33e023f82ef4f1b5ae2421d8d2a667fa653dd4bbea467e02fcc",
+      "role": "guide",
+      "status": "authoring-only",
+      "derivedFromSHA": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+      "provenance": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-idle-523/authoring/guide-provenance.json",
+        "sha256": "e71162893a77411997aa20ba6dff3f27a6fb24fdfdbc913e193f78226e33eebb"
+      }
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-idle-523/illustration/F2-raw.png",
+      "sha256": "7e2f4c8c46d3bd61bd680019e020425f3bca0e4cc434559e39645a225fefe502",
+      "role": "neighbor",
+      "frame": 2,
+      "phase": 0.5,
+      "jobId": "villager-idle-D1-whole523",
+      "status": "selected"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-idle-523/authoring/guide/F1.png",
+      "sha256": "150f0e3e3868116dbb94b6b2bd32c469c27461235cbb162011c4be21f8440af5",
+      "role": "guide",
+      "status": "authoring-only",
+      "derivedFromSHA": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+      "provenance": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-idle-523/authoring/guide-provenance.json",
+        "sha256": "e71162893a77411997aa20ba6dff3f27a6fb24fdfdbc913e193f78226e33eebb"
+      }
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-idle-523/authoring/guide/F3.png",
+      "sha256": "150f0e3e3868116dbb94b6b2bd32c469c27461235cbb162011c4be21f8440af5",
+      "role": "guide",
+      "status": "authoring-only",
+      "derivedFromSHA": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+      "provenance": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-idle-523/authoring/guide-provenance.json",
+        "sha256": "e71162893a77411997aa20ba6dff3f27a6fb24fdfdbc913e193f78226e33eebb"
+      }
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-hit-530/guide/F0.png",
+      "sha256": "cdc2a7c59919339bf9a02fd2d6664fc14d80e4a848363acb714eaa967ec3faa8",
+      "role": "guide",
+      "status": "authoring-only",
+      "derivedFromSHA": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+      "provenance": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-hit-530/authoring/guide-provenance.json",
+        "sha256": "30efb2ba404ce36b00fabcbf468c8bc9a87bae0bc7a1183fa3c8a3e9e6a6716b"
+      }
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-hit-530/guide/F1.png",
+      "sha256": "cc7a4b3c8bf4f8c4fee1460213103af489294ff2fd171c3dff4e84efe10678e1",
+      "role": "guide",
+      "status": "authoring-only",
+      "derivedFromSHA": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+      "provenance": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-hit-530/authoring/guide-provenance.json",
+        "sha256": "30efb2ba404ce36b00fabcbf468c8bc9a87bae0bc7a1183fa3c8a3e9e6a6716b"
+      }
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-hit-530/guide/F2.png",
+      "sha256": "a36ba6f4578c9a757e8c02f93499f95d596ce7384396d3229700d3001d05bbe2",
+      "role": "guide",
+      "status": "authoring-only",
+      "derivedFromSHA": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+      "provenance": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-hit-530/authoring/guide-provenance.json",
+        "sha256": "30efb2ba404ce36b00fabcbf468c8bc9a87bae0bc7a1183fa3c8a3e9e6a6716b"
+      }
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-hit-530/guide/F3.png",
+      "sha256": "9c6fcf8e9a9e5acbe3173df93a713a6bd30424453465db78131ef2c18d371923",
+      "role": "guide",
+      "status": "authoring-only",
+      "derivedFromSHA": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+      "provenance": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-hit-530/authoring/guide-provenance.json",
+        "sha256": "30efb2ba404ce36b00fabcbf468c8bc9a87bae0bc7a1183fa3c8a3e9e6a6716b"
+      }
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "role": "neighbor",
+      "status": "selected",
+      "jobId": "villager-hit-D1-whole530",
+      "frame": 3,
+      "phase": 0.75
+    }
+  ],
+  "excludedReferencePaths": [
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pose-control-491/trial-F2-raw.png",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-guide-first-492/trial-F2-raw.png",
+    "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-key-study-509/illustration/raw.png"
+  ],
+  "masterAuthority": "original",
+  "layoutLock": {
+    "fixedCanvas": {
+      "width": 1254,
+      "height": 1254
+    },
+    "cell": {
+      "width": 128,
+      "height": 128
+    },
+    "pivot": {
+      "space": "source",
+      "x": 654,
+      "y": 1140
+    },
+    "render": {
+      "width": 42,
+      "height": 42
+    },
+    "contactShadow": {
+      "mode": "baked"
+    },
+    "padding": 2,
+    "basis": {
+      "manifestPath": "public/assets/art-v1/fort-202-manifest.json",
+      "manifestSHA256": "77c75ef2bea8cff633b28fe8635e51b5a7efc151bb1871b5b5d9d17850d4271c",
+      "assetId": "villager-idle-D00",
+      "conversion": "Whole source-coordinate normalization to retained original canvas; logical render unchanged"
+    },
+    "visualApproval": false
+  },
+  "equipmentLock": {
+    "status": "not-applicable",
+    "statement": "No held tool or weapon is visible in this idle master; preserve empty visible hands. Separate work-action tools require their own existing source pins and grips.",
+    "source": {
+      "path": "docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94"
+    },
+    "basis": "Game-size idle figure has arms down and no visible held tool or weapon; idle observation does not resolve axe/pick/food work equipment.",
+    "scope": "Original static equipment/assembly only; action-specific tools require separately pinned action locks"
+  },
+  "jobs": [
+    {
+      "id": "villager-D1-walk-490",
+      "action": "walk",
+      "direction": 1,
+      "variant": "reused-D1-candidate-490",
+      "path": "docs/art/pipeline/villager-qualification-490/compiler-job.json",
+      "sha256": "cb5e99d686d1f86a329635f768439ccb5e83399d7fcb48e3befd053dd9d5041c"
+    },
+    {
+      "id": "villager-D1-whole-clothed-control-491",
+      "action": "walk",
+      "direction": 1,
+      "variant": "whole-contour-stance-method-trial",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pose-control-491/trial-job.json",
+      "sha256": "9b99a994661159072381da0b1f944cc0b0fb1824e1581d6bef771668f072c10f"
+    },
+    {
+      "id": "villager-D1-guide-first-492",
+      "action": "walk",
+      "direction": 1,
+      "variant": "guide-primary-whole-illustration",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-guide-first-492/job.json",
+      "sha256": "e6cdb058bad63d961729f713f0b7ea163d90afedc34d55e03fef54e5b65e8663"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-key-study-509/job.json",
+      "sha256": "2710265b0914446ae6fad1c6d9c2dc54e4f9bd1327fc47813fd8078871de5534",
+      "id": "villager-D1-joint-key-study-509",
+      "action": "walk",
+      "direction": 1,
+      "variant": "joint-complementary-four-key-context"
+    },
+    {
+      "id": "villager-idle-D1-whole523",
+      "action": "idle",
+      "direction": 1,
+      "variant": "rest-breath-rest-original-endpoint",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-idle-523/authoring/job-initial.json",
+      "sha256": "c6f7cb5191ca4bd2514c400c72259bc725857e4d03a1f7cc67ab69ca2820ecf9"
+    },
+    {
+      "id": "villager-idle-D1-whole523",
+      "action": "idle",
+      "direction": 1,
+      "variant": "rest-breath-rest-original-endpoint",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-idle-523/authoring/job-selected-endpoints.json",
+      "sha256": "167998417205c7d1d0ab6186feb8ec5b3aa717cda9e3932d2ee115cd78d595ac"
+    },
+    {
+      "id": "villager-hit-D1-whole530",
+      "action": "hit",
+      "direction": 1,
+      "variant": "nonfatal-planted-recoil-original-rest",
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-hit-530/authoring/job-initial.json",
+      "sha256": "1a4bcec98dba4cea42eda0bb30a2d48feaa828cc18e37aa256017b6aa2d0c65d"
+    }
+  ],
+  "productionOrders": [
+    "villager-D1-whole-clothed-control-491-F2-ONE",
+    "villager-D1-guide-first-492-F2-ONE",
+    "villager-D1-joint-key-study-509-ONE",
+    "villager-idle-D1-whole523-THREE",
+    "villager-hit-D1-whole530-THREE"
+  ],
+  "actionEquipmentLocks": [
+    {
+      "action": "hit",
+      "status": "verified",
+      "statement": "For this nonfatal Villager hit/recovery action only, both original empty hands remain empty; no tool, weapon, equipment transfer or attack grip is introduced.",
+      "basis": "Root inspected selected original South007 wholePNG: bothhands empty. Nonfatalstationaryhit only recoil/recovery, no actionequipmentintroduced. This separatehitlock doesnotauthorizeattack/gather/build or otheractions. Independent source review533 confirmed emptyhands and originalcostumepriority.",
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+        "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+      }
+    }
+  ]
+}

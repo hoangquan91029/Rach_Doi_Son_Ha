@@ -1,4 +1,27 @@
+# Decision535 — newly authored pixel characters
+
+15 October2026, explicit human request preserved in docs/audits/pixel-rebuild-535/HUMAN_REQUEST.md. All new characters native128pixel frames,8distinct directions,8realframes minimum and1024square8×8 action atlases. New ordinary identities, no ordinary legacy imagery as references/final assets; Ruler/Commander images identity reference only, redrawn pixels. This explicitly supersedes historical realistic/same-original ordinary character authoring and active legacy sprite use. Preserve sources and every claim/history, keep buildings/terrain/shared simulation architecture, no Blender. HP0 presentation disappearance and death-art waiver522 remain. Native all-frame source/structural/visual/runtime gates; Workerpilot first. No public deployment or completion implied.
+
+## Preserved earlier decisions
+
 # Architecture decisions — audit488
+
+## Latest explicit human decision522 — living movement first; death waived
+
+Human now prioritizes complete, seamless living unit animation: idle → move/walk → Stop/idle → attack/recovery, plus each applicable work, build/repair, ability, load/unload and hit state. Root authors/selects whole-clothed guides; exact LunaHigh illustrates through built-in imagegen; exact Sol6.1Low handles code/review. Preserve SAME original identities, realistic illustration, gameplay scale and actual eight directions. No Blender.
+
+**ALL units AND buildings:** keep living health bars; as soon as the displayed authoritative HP reaches0, disappear from world/minimap/picking. No death, sink, destroyed, collapse, rubble or corpse animation is required or to be generated. This supersedes every older death-art/action/lifecycle requirement below and in historical briefs/roadmaps/skills. Preserve all death raws, descriptors, order history and receipts. Gameplay death still owns damage, cargo/passengers, statistics, General defeat and outcome; do not alter simulation to implement presentation disappearance.
+
+Current source522 implements HP0 presentation hiding and excludes death from required coverage;12 focused checks and independent source review pass. Runtime/public qualification is still OPEN. Legacy death frame definitions exist only for history. Living-unit requirements now114 action banks,912 action/direction clips,5760 standard frame positions across21 identities; static fallback does not complete a clip. Existing source registry action arrays are historical snapshots; use current shared/unit-action-spec.js for new required coverage.
+
+Prior failed/held methods491/492/509 remain CLOSED; this priority change does not reset their budget or authorize an equivalent retry. Residence498 claims stay consumed UNRESOLVED. No new image call follows from a plan or this decision. Register finite original-bound jobs, inspect method lineage and exact references, prepareOrder and durable claim before every call. Code presence does not prove movement quality. No owner/motion/public approval from tests.
+
+Authoritative queue/state: docs/NEXT_STEPS.md and docs/PROJECT_STATE.md. Receipt: docs/audits/movement-priority-522/root/CHECKPOINT.json. Capacity521 remains prepared/deferred; no more death work. Full project goal ACTIVE, with public HTTPS two modes/two maps and remaining critical requirements still OPEN.
+
+## Earlier decisions and requirements (preserved;522 overrides death and priority)
+
+
+**Current507 human assignment:** root owns whole-clothed motion sketches and key selection; illustration tasks explicitly marked `workKind: image-generation` use `gpt-6-luna / high`; code and independent review use `gpt-6.1-sol / low`. This supersedes older universal Sol-only wording below, without changing finite calls, references, original identity or review gates. Latest supplied AGENTS prohibits new character Blender work; retain the older branch as history. Current source/queue is PROJECT_STATE/NEXT_STEPS.
 
 | ID | Decision | Reason / limit |
 |---|---|---|

@@ -1,0 +1,53 @@
+{
+  "schema": "rds-readonly-live509/v1",
+  "state": "VERIFIED_READONLY_HEALTH_AND_PINS",
+  "observedAt": "2026-10-13T07:51:44.244300+00:00",
+  "purpose": "Read-only current Funnel/service/health/pins and existing rollback; not deploy/match/WAN acceptance",
+  "url": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net",
+  "mutationCalls": 0,
+  "restartCalls": 0,
+  "roomsKicked": 0,
+  "requests": [
+    {
+      "url": "http://127.0.0.1:3000/health",
+      "status": 200,
+      "bytes": 21,
+      "sha256": "fb41a8e6fee2d2c16ed0b04434a00be9ba508d63042e512ed00fd7aedd092ef1",
+      "body": {
+        "ok": true,
+        "rooms": 0
+      }
+    },
+    {
+      "url": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/health",
+      "status": 200,
+      "bytes": 21,
+      "sha256": "fb41a8e6fee2d2c16ed0b04434a00be9ba508d63042e512ed00fd7aedd092ef1",
+      "body": {
+        "ok": true,
+        "rooms": 0
+      }
+    },
+    {
+      "url": "https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net/",
+      "status": 200,
+      "bytes": 4459,
+      "sha256": "4569b161354f3142a2349fa931269229bb12e9ce2736e1648d048bb46bf22048",
+      "localDistIndexEquals": true
+    }
+  ],
+  "rollbackArchiveExists": true,
+  "rollbackArchiveMatches": true,
+  "backendPins": {
+    "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/releases/230/runtime230/shared/sim.js": {
+      "sha256": "29233a059ec084bc8577d20a1bccfd28ddc3024b9cb9bf4d5598c22f220f748b",
+      "matchesRollback": true
+    },
+    "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/releases/230/runtime230/server/index.js": {
+      "sha256": "4e6a7e82f02d1d856f4ea788863c4836930bc00250be6a5b020ba2bdd8884198",
+      "matchesRollback": true
+    }
+  },
+  "service": "ActiveState=active\nMainPID=3408\nExecStart={ path=/home/kieu-hoang-quan/.nvm/versions/node/v24.15.0/bin/node ; argv[]=/home/kieu-hoang-quan/.nvm/versions/node/v24.15.0/bin/node /home/kieu-hoang-quan/.local/share/rach-doi-son-ha/releases/230/runtime230/server/index.js ; ignore_errors=no ; start_time=[Mon 2026-10-12 11:13:56 +07] ; stop_time=[n/a] ; pid=3408 ; code=(null) ; status=0/0 }\nWorkingDirectory=/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/releases/230/runtime230\n",
+  "funnel": "\n# Funnel on:\n#     - https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net\n#     - https://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net:8443\n\nhttps://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net (Funnel on)\n|-- / proxy http://127.0.0.1:3000\n\nhttps://kieu-hoang-quan-loq-15iax9.tail5247a0.ts.net:8443 (Funnel on)\n|-- / proxy http://127.0.0.1:3000\n\n"
+}

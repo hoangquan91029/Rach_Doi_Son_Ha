@@ -1,0 +1,318 @@
+{
+  "schema": "rds-joint-key-mechanism-review/v1",
+  "reviewer": "/root/blender_identity499",
+  "decision": "MATERIALLY_DIFFERENT_CONTEXT_PROPOSED_FINITE_STUDY_NOT_POSE_GUARANTEE",
+  "evidence": "VERIFIED existing491/492prepared actualrefs/prompts read; ONE actual491eightcellguidesheet view; landmarkmath read",
+  "difference": "491requested ONE F2 with target/original/contactneighbors/guide;492requested ONE F2 with guide+original.507proposes ONE JOINT2x2 output containing complementary contactA/passingB/contactB/passingA from simultaneouscompletecyclecontext. Multi-output jointcomposition is a changedcontext/controlexperiment, not reorderedrefs or independent sameF2retry. It offers shared within-call identity/phasecontrast but exposes no hard skeletal/temporal/pixelcontrol.",
+  "recommendation": {
+    "layout": "regular2x2 rowmajor F0,F2,F4,F6",
+    "keys": [
+      {
+        "cell": 0,
+        "row": 0,
+        "column": 0,
+        "frame": 0,
+        "phase": 0,
+        "path": "docs/art/pipeline/villager-pose-control-491/guide/F0.png",
+        "sha256": "4c65fc68ca43be5b347af02d3b019cd48b659f257f8eef488c4eaee8b68b702e",
+        "physicalFeet": {
+          "A": {
+            "id": "A",
+            "laneX": 146,
+            "cyclePhase": 0,
+            "stance": true,
+            "swingT": null,
+            "groundY": 249,
+            "lift": 0,
+            "sole": [
+              146,
+              249
+            ],
+            "soleLine": [
+              [
+                136,
+                249
+              ],
+              [
+                156,
+                249
+              ]
+            ],
+            "calfTopY": 216,
+            "projectedCalfLength": 33,
+            "foreshortening": 1
+          },
+          "B": {
+            "id": "B",
+            "laneX": 116,
+            "cyclePhase": 0.5,
+            "stance": false,
+            "swingT": 0,
+            "groundY": 187,
+            "lift": 0,
+            "sole": [
+              116,
+              187
+            ],
+            "soleLine": [
+              [
+                106,
+                187
+              ],
+              [
+                126,
+                187
+              ]
+            ],
+            "calfTopY": 165,
+            "projectedCalfLength": 22,
+            "foreshortening": 0.6666666666666666
+          }
+        },
+        "depthOrder": [
+          "B",
+          "A"
+        ]
+      },
+      {
+        "cell": 1,
+        "row": 0,
+        "column": 1,
+        "frame": 2,
+        "phase": 0.25,
+        "path": "docs/art/pipeline/villager-pose-control-491/guide/F2.png",
+        "sha256": "cad740daf00c33a47a41ef41e0509ab817db4cd8dc8a5c3e485d7502c3568c1c",
+        "physicalFeet": {
+          "A": {
+            "id": "A",
+            "laneX": 146,
+            "cyclePhase": 0.25,
+            "stance": true,
+            "swingT": null,
+            "groundY": 218,
+            "lift": 0,
+            "sole": [
+              146,
+              218
+            ],
+            "soleLine": [
+              [
+                136,
+                218
+              ],
+              [
+                156,
+                218
+              ]
+            ],
+            "calfTopY": 185,
+            "projectedCalfLength": 33,
+            "foreshortening": 1
+          },
+          "B": {
+            "id": "B",
+            "laneX": 116,
+            "cyclePhase": 0.75,
+            "stance": false,
+            "swingT": 0.5,
+            "groundY": 218,
+            "lift": 22,
+            "sole": [
+              116,
+              196
+            ],
+            "soleLine": [
+              [
+                106,
+                196
+              ],
+              [
+                126,
+                196
+              ]
+            ],
+            "calfTopY": 174,
+            "projectedCalfLength": 22,
+            "foreshortening": 0.6666666666666666
+          }
+        },
+        "depthOrder": [
+          "B",
+          "A"
+        ]
+      },
+      {
+        "cell": 2,
+        "row": 1,
+        "column": 0,
+        "frame": 4,
+        "phase": 0.5,
+        "path": "docs/art/pipeline/villager-pose-control-491/guide/F4.png",
+        "sha256": "ae69073ba705d169ec5de830d7b08b48a07c714b7128be0f818ab9d399474475",
+        "physicalFeet": {
+          "A": {
+            "id": "A",
+            "laneX": 146,
+            "cyclePhase": 0.5,
+            "stance": false,
+            "swingT": 0,
+            "groundY": 187,
+            "lift": 0,
+            "sole": [
+              146,
+              187
+            ],
+            "soleLine": [
+              [
+                136,
+                187
+              ],
+              [
+                156,
+                187
+              ]
+            ],
+            "calfTopY": 165,
+            "projectedCalfLength": 22,
+            "foreshortening": 0.6666666666666666
+          },
+          "B": {
+            "id": "B",
+            "laneX": 116,
+            "cyclePhase": 0,
+            "stance": true,
+            "swingT": null,
+            "groundY": 249,
+            "lift": 0,
+            "sole": [
+              116,
+              249
+            ],
+            "soleLine": [
+              [
+                106,
+                249
+              ],
+              [
+                126,
+                249
+              ]
+            ],
+            "calfTopY": 216,
+            "projectedCalfLength": 33,
+            "foreshortening": 1
+          }
+        },
+        "depthOrder": [
+          "A",
+          "B"
+        ]
+      },
+      {
+        "cell": 3,
+        "row": 1,
+        "column": 1,
+        "frame": 6,
+        "phase": 0.75,
+        "path": "docs/art/pipeline/villager-pose-control-491/guide/F6.png",
+        "sha256": "95ea7a2b7e2173232ad6f6fdc731d06004e49669e00bf9182cf23bbaaf2ea67d",
+        "physicalFeet": {
+          "A": {
+            "id": "A",
+            "laneX": 146,
+            "cyclePhase": 0.75,
+            "stance": false,
+            "swingT": 0.5,
+            "groundY": 218,
+            "lift": 22,
+            "sole": [
+              146,
+              196
+            ],
+            "soleLine": [
+              [
+                136,
+                196
+              ],
+              [
+                156,
+                196
+              ]
+            ],
+            "calfTopY": 174,
+            "projectedCalfLength": 22,
+            "foreshortening": 0.6666666666666666
+          },
+          "B": {
+            "id": "B",
+            "laneX": 116,
+            "cyclePhase": 0.25,
+            "stance": true,
+            "swingT": null,
+            "groundY": 218,
+            "lift": 0,
+            "sole": [
+              116,
+              218
+            ],
+            "soleLine": [
+              [
+                106,
+                218
+              ],
+              [
+                126,
+                218
+              ]
+            ],
+            "calfTopY": 185,
+            "projectedCalfLength": 33,
+            "foreshortening": 1
+          }
+        },
+        "depthOrder": [
+          "A",
+          "B"
+        ]
+      }
+    ],
+    "identityAuthority": "unchanged originalD0+selectedstaticSouthD1; guides authoringonly, never finalsourcepixels",
+    "physicalA": "image-right cuff/sandal laneX146 in fixedSouth",
+    "physicalB": "image-left cuff/sandal laneX116 in fixedSouth",
+    "anatomicalSide": null,
+    "lanes": "No persistent physicallegswap even ifdepthorderchanges; compare receiving vs planted/swing, not labelsalone",
+    "stance": "GuideA beginsreceivingF0 thensupportsF2; GuideB receivesF4 thensupportsF6; contact doesnotproveworldfootlock",
+    "guideSuitability": "PROPOSED reusablewhole-clothed keys for phaseintent; notqualifiedfinishedmotion. Sheet view shows alternate bentpassing/extendedcontacts withoutsourcecutout. Existingguide distortion/controlfailures remainlimitations. No redraw requested."
+  },
+  "failureConditions": [
+    "sheet repeatsneutral orcontactposes instead ofoppositepassing keys",
+    "A/B cuff/sandal lanes swap ornewlimb/boot/equipment",
+    "wholeidentityhat/face/bodyvolume/costume scales vary acrosscells",
+    "cellcontainscroppedbody, neighboringbody/labels/guideart, or lacksvalidalpha",
+    "grid/pivots/scale inconsistent suchthat extractionrequirespercellfit/warp/cutout",
+    "fixedcommontransform cannot preservewholecanvas withoutclipping",
+    "sheetsucceedsstatic but travel/cadence/contacts unqualified; no runtimeuse fromkeysalone"
+  ],
+  "extraction": {
+    "allowed": "completecells only; one exactgridcrop operation and ONE commonuniformsource\u2192familytransform, fixedcanvas/pivot and no individualtrim/fit/mirror",
+    "forbidden": "limbsplicing, sourcewarping, alpha-card reconstruction, bbox-driven scale/offset percell",
+    "raw": "retainsheetbytes/grid/cellboundaries/outputhashes; rawsheetnotselectedruntimeatlas",
+    "size": "256guides maps uniformly into eachdeclaredsourcecell; actualreturnedsize UNKNOWN untiltoolresult"
+  },
+  "guideStrideLimit": "Guide62sourcepxsolepathspan implies124pxroottravel/cycle, notacceptedworldstride.600msguideclock is authoredproposal; actualdistancePerCycle remainsUNKNOWN untilactualwhole-framecontact/travelmeasurement. Neverinherit1.26orchangesimspeed.",
+  "budget": "Existing491/492closedcaps, owner490rejection and unresolved498claims retained; rootversionedfinitepackage mustregisterjointsheet lineage/cap/claim beforecall. Thisreviewauthorizesnocall.",
+  "acceptance": {
+    "sourceSelected": false,
+    "motion": false,
+    "owner": false,
+    "runtime": false,
+    "release": false
+  },
+  "counts": {
+    "newGuides": 0,
+    "images": 0,
+    "renders": 0,
+    "continuousLoops": 0
+  },
+  "nextDependency": "Exactnewkey-studycontractrootforwards; verifyonejointsheetpackage withallfourkeyslots and finitecall/claim custody, no oneframecontractbypass"
+}

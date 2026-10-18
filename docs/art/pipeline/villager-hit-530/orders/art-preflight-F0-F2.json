@@ -1,0 +1,206 @@
+{
+  "schema": "rds-agent-preflight/v1",
+  "task": "art",
+  "head": "1c7097fc80f94fc87f2fdc97d355e414601c37a4",
+  "status": " M AGENTS.md\n M client/action-presentation.js\n M client/art-assets.js\n M client/raster-slice.js\n M client/renderer.js\n M docs/AGENT_EXECUTION_CONTRACT.md\n M docs/ARCHITECTURE_DECISIONS.md\n M docs/COMPLETION_MATRIX.md\n M docs/NEXT_STEPS.md\n M docs/PROJECT_ROADMAP.md\n M docs/PROJECT_STATE.md\n M docs/art/pipeline/ANIMATION_CONTRACT.md\n M docs/art/pipeline/IMAGE_GENERATION_TEMPLATES.md\n M docs/art/pipeline/SPRITE_PRODUCTION_WORKFLOW.md\n M docs/art/pipeline/unit-production/order-ledger.json\n M docs/art/pipeline/unit-production/villager/identity.json\n M docs/audits/implementation-495/tasks.json\n M scripts/agent-preflight.mjs\n M scripts/agent-task-contract.mjs\n M scripts/art-coverage.mjs\n M scripts/qa/sprite-preview.mjs\n M scripts/sprite-preview.html\n M scripts/sprite-prompts.mjs\n M shared/unit-action-spec.js\n M tests/sprite-prompts.test.js\n?? MASTER_HANDOFF.md\n?? docs/art/pipeline/blender-villager-504/\n?? docs/art/pipeline/blender-villager-506/\n?? docs/art/pipeline/building-production/granary/\n?? docs/art/pipeline/granary-death-511/\n?? docs/art/pipeline/unit-production/templates/key_study.txt\n?? docs/art/pipeline/villager-hit-530/\n?? docs/art/pipeline/villager-idle-523/\n?? docs/art/pipeline/villager-key-study-509/\n?? docs/audits/animation-context-507/\n?? docs/audits/blender-removal-508/\n?? docs/audits/blender-runtime-500/mcp/isolated-runtime-config/\n?? docs/audits/blender-runtime-502/connection/runs/1260828fa04e48d6b4dd4775df70a070/\n?? docs/audits/blender-runtime-502/connection/runs/205e1735a77f4da89c1c68e8ea65e287/\n?? docs/audits/blender-runtime-502/connection/runs/31ad1b9cef624041b54d0f9c8a10476d/\n?? docs/audits/blender-runtime-502/connection/runs/628b44df2ea64e469a62f7ee7622fa68/\n?? docs/audits/blender-runtime-502/connection/runs/78c7c0ef24864151b4c4d2afff9a984a/\n?? docs/audits/blender-runtime-502/connection/runs/9271d344564342a6936296c576fe3d2a/\n?? docs/audits/blender-runtime-502/connection/runs/b48a76aec35e4695bac1f9640e59774c/\n?? docs/audits/blender-runtime-502/connection/runs/b5405e4f3c6b478e873a7b95b67b73ed/\n?? docs/audits/blender-runtime-502/connection/runs/c91a741082bc4c908a1c4921f6384989/\n?? docs/audits/blender-runtime-502/connection/runs/db8bf054007f48c2b60b78d0b6890c95/\n?? docs/audits/blender-runtime-502/connection/runs/dff8df9cb52d4a8a8c325f5634ba5dd1/\n?? docs/audits/blender-runtime-502/connection/runs/eed04592d0234d6ca9c691fa7308ceb1/\n?? docs/audits/blender-runtime-502/connection/runs/f6f9d57ba9e04eae868eff267f8c2333/\n?? docs/audits/continuation-504/\n?? docs/audits/continuation-509/\n?? docs/audits/movement-priority-522/\n?? docs/qa/action-equipment-532/\n?? docs/qa/browser-close-514/\n?? docs/qa/browser-custody-510-review/\n?? docs/qa/browser-custody-510/\n?? docs/qa/browser-lifetime-520/\n?? docs/qa/building-preview-513/\n?? docs/qa/family-layout-526-review/\n?? docs/qa/family-layout-526/\n?? docs/qa/granary-death-515/\n?? docs/qa/granary-death-516/\n?? docs/qa/granary-death-518/\n?? docs/qa/granary-death-519/\n?? docs/qa/hit-clock-531/\n?? docs/qa/idle-entry-phase-524-review/\n?? docs/qa/idle-entry-phase-524/\n?? docs/qa/live-rooms-521/\n?? docs/qa/living-coverage-534-review/\n?? docs/qa/living-coverage-534/\n?? docs/qa/living-hit-533-review/\n?? docs/qa/online-profile-504/\n?? docs/qa/online-profile-505/\n?? docs/qa/online-profile-506/\n?? docs/qa/online-profile-509/\n?? docs/qa/online-profile-512/\n?? docs/qa/unit-disappearance-522-review/\n?? docs/qa/unit-disappearance-522/\n?? docs/qa/villager-idle-525-review/\n?? docs/qa/villager-idle-525/\n?? docs/qa/villager-idle-527-review/\n?? docs/qa/villager-idle-527/\n?? docs/qa/villager-idle-528-review/\n?? docs/qa/villager-idle-528/\n?? docs/qa/villager-idle-529-intake/\n?? docs/qa/villager-idle-529-review/\n?? docs/qa/villager-idle-529/\n?? scripts/blender/villager504.py\n?? scripts/blender/villager506.py\n?? scripts/qa/browser-custody510.mjs\n?? scripts/qa/browser-lifetime520.mjs\n?? scripts/qa/granary-death515.mjs\n?? scripts/qa/granary-death516.mjs\n?? scripts/qa/granary-death518.mjs\n?? scripts/qa/granary-death519.mjs\n?? scripts/qa/live-rooms521.mjs\n?? scripts/qa/online-profile504.mjs\n?? scripts/qa/online-profile506.mjs\n?? scripts/qa/online-profile509.mjs\n?? scripts/qa/online-profile512.mjs\n?? scripts/qa/train-observation504.mjs\n?? scripts/qa/villager-idle525.mjs\n?? scripts/qa/villager-idle527.mjs\n?? scripts/qa/villager-idle528.mjs\n?? scripts/qa/villager-idle529.mjs\n?? scripts/sprite-key-study.mjs\n?? tests/action-equipment532.test.js\n?? tests/agent-preflight-scope507.test.js\n?? tests/agent-task-model507.test.js\n?? tests/browser-custody510.test.js\n?? tests/building-preview513.test.js\n?? tests/family-layout526.test.js\n?? tests/hit-clock531.test.js\n?? tests/idle-entry-phase524.test.js\n?? tests/sprite-key-study.test.js\n?? tests/train-observation504.test.js\n?? tests/unit-disappearance522.test.js",
+  "readFiles": [
+    {
+      "path": "docs/agent-read-contract.json",
+      "sha256": "416ca4786e698dcbb3e4418a7b679d7d3bfb6ce8c3c8589c30d07fe7e6985d26",
+      "bytes": 1258
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "bb1c12bbda8727835a5e9d2a4a68ca20af7d463b237ad704a189de3329cdb3ae",
+      "bytes": 16841
+    },
+    {
+      "path": "docs/PROJECT_STATE.md",
+      "sha256": "2214a12551cdd5a488e93c99ca6bba856c42bd4f92d643afbab914e61335a276",
+      "bytes": 44209
+    },
+    {
+      "path": "docs/NEXT_STEPS.md",
+      "sha256": "e56c7e2514c18a08c8f8db22dec0d909401cb4419d8f7569d52d0972fd781711",
+      "bytes": 18088
+    },
+    {
+      "path": "docs/ARCHITECTURE_DECISIONS.md",
+      "sha256": "520958513dbbcdc0b3e7d6747c0f97d1d61364432b7298d3503e3b94b02e4332",
+      "bytes": 6409
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517",
+      "bytes": 6297
+    },
+    {
+      "path": "docs/art/ART_DIRECTION.md",
+      "sha256": "d64614e926465c0d540606634a25aeabc4f5364d6be7ced210eeab3182ffd429",
+      "bytes": 3087
+    },
+    {
+      "path": "docs/art/pipeline/ANIMATION_CONTRACT.md",
+      "sha256": "b6c3eefbc330ef05b20fee04489940402b8f3489c9043f5427a440e8793bdf40",
+      "bytes": 10935
+    },
+    {
+      "path": "docs/art/pipeline/SPRITE_PRODUCTION_WORKFLOW.md",
+      "sha256": "8d15bf7205610b5f2b92d80aa9582daf787d6ec6e4a007dce7874cf0e5a23d45",
+      "bytes": 10898
+    },
+    {
+      "path": "docs/art/pipeline/IMAGE_GENERATION_TEMPLATES.md",
+      "sha256": "e593ccbbead4366e9762cd2bebf723cbaf43b8cba8fa1cda76d2d02d7c98467c",
+      "bytes": 10196
+    },
+    {
+      "path": "docs/art/pipeline/ANIMATION_ARCHETYPES.md",
+      "sha256": "165869e44eb58c6b37a0e29e1f461fd7c5dd36c73e1afb595742865e2299f43b",
+      "bytes": 2812
+    },
+    {
+      "path": "docs/art/pipeline/ASSET_QA.md",
+      "sha256": "7ad426a1a2b9d8fd10ae56aa7897fc19be67d3b00a40fac3987e1ef07cd66418",
+      "bytes": 3343
+    },
+    {
+      "path": "docs/art/pipeline/REVIEW_PRIORITY_20261008.md",
+      "sha256": "cacc2b746cb7360d4d6c9dba0b94d55dea0530e43402d60a891b3711e3c1a525",
+      "bytes": 960
+    },
+    {
+      "path": "docs/art/pipeline/BLENDER_SPRITE_PIPELINE.md",
+      "sha256": "335f4ce5965650dae237f93baddad6e1340f3c3a8d3530a86e82f6944434cbfe",
+      "bytes": 12822
+    }
+  ],
+  "sources": [
+    {
+      "path": "docs/art/pipeline/villager-hit-530/authoring/job-after-F1.json",
+      "sha256": "2d7caa81993185016477d40ecc5f3bd736226c40e17f42749905238684a77405",
+      "bytes": 2664
+    }
+  ],
+  "assignment": {
+    "taskId": "illustration-hit530",
+    "registration": {
+      "path": "docs/audits/implementation-495/tasks.json",
+      "sha256": "52520e51d775d656f7fa351a823f923344053dbb71336a32d28a488691f71235",
+      "bytes": 274065
+    },
+    "inputs": [
+      {
+        "path": "AGENTS.md",
+        "sha256": "bb1c12bbda8727835a5e9d2a4a68ca20af7d463b237ad704a189de3329cdb3ae"
+      },
+      {
+        "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+        "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+      },
+      {
+        "path": "docs/art/pipeline/unit-production/villager/identity.json",
+        "sha256": "bf5268cb8ed69c975e273167427df3b2d7590597f33289bbae5f7dca02f72f40"
+      },
+      {
+        "path": "scripts/sprite-prompts.mjs",
+        "sha256": "7841f65694f5258e4d222f918a3e47a803e27bef50f8e8633f46f48ac7c2ffa7"
+      },
+      {
+        "path": "scripts/sprite-order-run.mjs",
+        "sha256": "8436a7eedbe2d4a0dac8634bfcc9e7ad27a365e8862771ef230b9cfc47eb5d90"
+      },
+      {
+        "path": "docs/art/pipeline/villager-hit-530/authoring/job-after-F1.json",
+        "sha256": "2d7caa81993185016477d40ecc5f3bd736226c40e17f42749905238684a77405"
+      },
+      {
+        "path": "docs/art/pipeline/villager-hit-530/authoring/F1-selection.json",
+        "sha256": "f02bb7fb3def51ca6e47944f0f87f48a00d0dd1f3130d98d29308b48abfa5d80"
+      },
+      {
+        "path": "docs/art/pipeline/villager-hit-530/review/F1-key-review.json",
+        "sha256": "048ffa564f34f1e675e466608688f1ef442af89e85a18fa7d7ae3ca892e9df5d"
+      },
+      {
+        "path": "docs/art/pipeline/villager-hit-530/illustration/F1-raw.png",
+        "sha256": "e89cf68b92047683d0385d745c40e9299a6c7fbf9f3b4c15e21a526c3ed35d23"
+      },
+      {
+        "path": "docs/art/pipeline/villager-hit-530/illustration/F1-custody.json",
+        "sha256": "650f52d24bc860cd6fd98434596a9b016323eaf400fd79e5b091e0ac4a6cf90e"
+      },
+      {
+        "path": "docs/art/pipeline/villager-hit-530/authoring/F0-request-base.json",
+        "sha256": "4f93c814aed9c4c6e6e5fc8bf7df4536282bd5f9e17e6d95b014d86763d01f60"
+      },
+      {
+        "path": "docs/art/pipeline/villager-hit-530/authoring/F2-request-base.json",
+        "sha256": "2a1d59e81394bfdbfd32591a241637da4812cc69fd7d9af538dd611e736825a0"
+      },
+      {
+        "path": "docs/art/pipeline/villager-hit-530/authoring/guide-provenance.json",
+        "sha256": "30efb2ba404ce36b00fabcbf468c8bc9a87bae0bc7a1183fa3c8a3e9e6a6716b"
+      },
+      {
+        "path": "docs/art/pipeline/villager-hit-530/guide/F0.png",
+        "sha256": "cdc2a7c59919339bf9a02fd2d6664fc14d80e4a848363acb714eaa967ec3faa8"
+      },
+      {
+        "path": "docs/art/pipeline/villager-hit-530/guide/F2.png",
+        "sha256": "a36ba6f4578c9a757e8c02f93499f95d596ce7384396d3229700d3001d05bbe2"
+      },
+      {
+        "path": "docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+        "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+      },
+      {
+        "path": "docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+        "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94"
+      }
+    ],
+    "outputs": [
+      "docs/art/pipeline/villager-hit-530/illustration"
+    ],
+    "slots": [
+      {
+        "orderId": "villager-hit-D1-whole530-THREE",
+        "slotIndex": 0
+      },
+      {
+        "orderId": "villager-hit-D1-whole530-THREE",
+        "slotIndex": 2
+      }
+    ]
+  },
+  "orderScope": {
+    "orderId": "villager-hit-D1-whole530-THREE",
+    "taskId": "illustration-hit530",
+    "slots": [
+      0,
+      2
+    ],
+    "unrelatedUnresolvedClaims": 2,
+    "scope": "Disjoint mechanical scope only; not image dispatch permission or custody closure"
+  },
+  "ledger": {
+    "path": "docs/art/pipeline/unit-production/order-ledger.json",
+    "sha256": "888ecef3a56c3b8b1881f29b01ea43556fce4b7fb09f7134513feb247a8e4ad4",
+    "locked": false,
+    "unresolvedClaims": [
+      {
+        "order": "residence-construction-F1-F3-498",
+        "slot": 1
+      },
+      {
+        "order": "residence-construction-F1-F3-498",
+        "slot": 3
+      }
+    ]
+  },
+  "limits": [
+    "Existence and byte hashes do not establish understanding, permission, approval or tool availability.",
+    "Explicit invocation only; this helper is not a mandatory global hook.",
+    "Externally verify tools and actual live handles/preservation guards; no guards are declared closed."
+  ]
+}

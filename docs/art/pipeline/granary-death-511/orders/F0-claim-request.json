@@ -1,0 +1,94 @@
+{
+  "orderId": "granary-death-whole511",
+  "slotIndex": 0,
+  "kind": "building_key",
+  "values": {
+    "buildingType": "granary",
+    "state": "death",
+    "direction": "none",
+    "phase": "0",
+    "master": "0d0c3963f3faed9341cd09f2ff118a753e9bd1ee431290b51635eebb17b61715",
+    "assemblyLock": "SAME original Vietnamese raised timber granary: one long orange terracotta gable roof with upturned eaves and dark wooden ridge beam, exposed right gable and small right porch roof, front column bays and vertical timber planks, open grain sacks/baskets, central stair, stone footings. Preserve original footprint, camera, floor/stair/footing locations and recognizable material design; death may collapse this exact roof/posts, never redesign into a different building.",
+    "invariants": "F0 death onset of the same original granary, BEFORE the selected F3 terminal wreckage. Image1 original is appearance, geometry, camera and fixed footprint authority. Image2 selected terminal F3 supplies the later destination for the SAME building. At F0 the heavy roof is still mostly standing but its central wooden ridge has just fractured, the middle roof sags inward slightly, and a small cluster of orange tiles has broken away. Front and side supports show the first snapped joints; keep the raised floor, front stair, stone footing positions, baskets and right porch layout stable. This is a visibly damaged beginning of collapse, not an unchanged idle roof and not already the low terminal F3 pile. No flames, smoke, dust cloud, people, extra ground patch or new building. Match original realistic warm timber/orange tile brushwork and baked contact shadow. Entire whole1254square canvas and sourcepivot640,1050/logicalrender85x85 remain fixed. No crop, recenter, fitting, mirroring, warp or assembled source pixels. ONE complete transparent PNG. F1/F2 will later connect this F0 to the selected F3; generate only F0 now."
+  },
+  "references": [
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/granary/variant-01/raw.png",
+      "sha256": "0d0c3963f3faed9341cd09f2ff118a753e9bd1ee431290b51635eebb17b61715",
+      "role": "originalmaster"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/illustration/F3-raw.png",
+      "sha256": "e53a36ffe4a52477e2e598f7d4222d4a79ef75e222e09f479cf26159294719e9",
+      "role": "neighbor",
+      "status": "selected",
+      "jobId": "granary-death-whole511-F3-selected",
+      "frame": 3,
+      "phase": 0.75
+    }
+  ],
+  "expectedLedgerSHA": "1d6225aeaf259dcf5931444c8b3f400141fe6760030f056a28b16480c125d4b4",
+  "taskId": "illustration-building511",
+  "expectedInputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "a81895b57e445ae913773fd7bf55049f84d859d407e175de2d106edc4f3c52bd"
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+    },
+    {
+      "path": "scripts/building-sprite-contract.mjs",
+      "sha256": "03544fe68faa3d0bc68bb2931c402b8967677e3fe4e0d64d9488d0e9280b7715"
+    },
+    {
+      "path": "scripts/sprite-prompts.mjs",
+      "sha256": "7f0311c91371ce989bdaf852169c641017367b911f094086762b607d4aecc2a7"
+    },
+    {
+      "path": "scripts/sprite-order-run.mjs",
+      "sha256": "8436a7eedbe2d4a0dac8634bfcc9e7ad27a365e8862771ef230b9cfc47eb5d90"
+    },
+    {
+      "path": "scripts/agent-preflight.mjs",
+      "sha256": "60a93e9f83e1270940e439cac2ee6332e7d8d3d1d09fcaba02e5431bc817ed36"
+    },
+    {
+      "path": "scripts/agent-task-contract.mjs",
+      "sha256": "ab70ec1dc9e99293a54ea2873cb802ab2745d62942ff80c6fa0cb714ae0a60b1"
+    },
+    {
+      "path": "docs/art/granary/variant-01/raw.png",
+      "sha256": "0d0c3963f3faed9341cd09f2ff118a753e9bd1ee431290b51635eebb17b61715"
+    },
+    {
+      "path": "docs/art/pipeline/building-production/granary/identity.json",
+      "sha256": "c223818ce15708802f31d66bada671b5911193351965ef772d1e75588f9a7752"
+    },
+    {
+      "path": "docs/art/pipeline/granary-death-511/authoring/job-F3-selected.json",
+      "sha256": "665a414bb22f25a4f17d01e475c968ccefe1bb285ed3fe0fb4786a0b42241e24"
+    },
+    {
+      "path": "docs/art/pipeline/granary-death-511/authoring/canonical-asset.json",
+      "sha256": "068d25dc8374270fba8a169966f777e2174d7b68a1755fb3615ead431f5a0913"
+    },
+    {
+      "path": "docs/art/pipeline/granary-death-511/authoring/F0-request.json",
+      "sha256": "d6da6de84215a342d37006780efce16cde8b4a25de39e30a3523a065f41b2b15"
+    },
+    {
+      "path": "docs/art/pipeline/granary-death-511/authoring/F3-selection.json",
+      "sha256": "5f69f907b681fbb921718ca753e1801eb466e2895420500dbace0d468eac4709"
+    },
+    {
+      "path": "docs/art/pipeline/granary-death-511/illustration/F3-raw.png",
+      "sha256": "e53a36ffe4a52477e2e598f7d4222d4a79ef75e222e09f479cf26159294719e9"
+    },
+    {
+      "path": "docs/art/pipeline/granary-death-511/review/CHECKPOINT.json",
+      "sha256": "bfe12bd81babc6a81fcaff8d6c7dd8e4e76a5eac4cf96fa6f1548e1a3871feae"
+    }
+  ]
+}

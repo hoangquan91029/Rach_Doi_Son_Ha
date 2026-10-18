@@ -1,0 +1,174 @@
+{
+  "schema": "rds-agent-receipt/v1",
+  "taskId": "pixel-framework535",
+  "outputs": [
+    {
+      "path": "client/pixel-animation.js",
+      "sha256": "87881bd048565d98d7b10ff1ad22190d6e14b0d34b688e2635fae457fc6f08e1"
+    },
+    {
+      "path": "scripts/pixel-sprites.py",
+      "sha256": "0d0853d3c1a57516354d50c3ae42b3881a527f98d1b02e2a3380f9de09c6298f"
+    },
+    {
+      "path": "scripts/pixel-sprite-contract.mjs",
+      "sha256": "34cfe56bb0df96d4ab98c3b5af61154e3a6eb779f8aca77f218d2fa016144475"
+    },
+    {
+      "path": "tests/pixel-animation535.test.js",
+      "sha256": "d4a5af9964b9dd1f322fddb72f917e23dece3d180079edb2e0a87e299fe62700"
+    },
+    {
+      "path": "tests/pixel-sprite-contract535.test.js",
+      "sha256": "602462b9045127cba341074d753cfbfeda012b650aa4ae8d9269fd50a0956cf1"
+    },
+    {
+      "path": "tests/pixel-sprites535.py",
+      "sha256": "05046ad0230f589719ff937e81dfb821ca53802e48ea7a2fe3889bbb8bd9376f"
+    }
+  ],
+  "checks": [
+    {
+      "command": "node scripts/agent-preflight.mjs --task audit --source docs/ANIMATION_SPEC.md",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "method": "SCOPED_EXECUTION",
+      "state": "VERIFIED",
+      "executed": true,
+      "exitCode": 0,
+      "observation": "Scoped audit preflight exited0; hashes are not comprehension or permission",
+      "evidence": [
+        {
+          "path": "docs/audits/pixel-rebuild-535/framework/preflight.txt",
+          "sha256": "c0f71d5829d6485802597c0230a0cf86596c2aef1ec537359769a3226a7ce1cf"
+        }
+      ]
+    },
+    {
+      "command": "node --test tests/pixel-animation535.test.js tests/pixel-sprite-contract535.test.js",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "method": "SCOPED_EXECUTION",
+      "state": "VERIFIED",
+      "executed": true,
+      "exitCode": 0,
+      "observation": "7 targeted JS tests PASS",
+      "evidence": [
+        {
+          "path": "docs/audits/pixel-rebuild-535/framework/node-tests-final.txt",
+          "sha256": "ff53f018eeb45d1aea209c30ff0f73efa497144346d2501bef2573e881ec935a"
+        }
+      ]
+    },
+    {
+      "command": "python3 tests/pixel-sprites535.py",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "method": "SCOPED_EXECUTION",
+      "state": "VERIFIED",
+      "executed": true,
+      "exitCode": 0,
+      "observation": "2 Python native packing/rejection/GIF tests PASS; Pillow12.1.1 available",
+      "evidence": [
+        {
+          "path": "docs/audits/pixel-rebuild-535/framework/python-tests-final.txt",
+          "sha256": "e9b0eeb10a95005dcd51718aed3e486ebdc9c317717cd762435b23ccebf43f36"
+        }
+      ]
+    },
+    {
+      "command": "python3 tests/pixel-sprites535.py",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "method": "SCOPED_EXECUTION",
+      "state": "VERIFIED",
+      "executed": true,
+      "exitCode": 0,
+      "observation": "4 Python tests PASS including cyclic exact/mirrored row substitution and legacy/reference/symlink provenance rejection",
+      "evidence": [
+        {
+          "path": "docs/audits/pixel-rebuild-535/framework/python-tests-hardening.txt",
+          "sha256": "254c803736f0b818e434dc759fdcf2192966d6873852599ba0c5a4243a228fbe"
+        }
+      ]
+    },
+    {
+      "command": "node --test tests/pixel-animation535.test.js tests/pixel-sprite-contract535.test.js",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "method": "SCOPED_EXECUTION",
+      "state": "VERIFIED",
+      "executed": true,
+      "exitCode": 0,
+      "observation": "7 JS tests PASS including metadata rejection of legacy sources",
+      "evidence": [
+        {
+          "path": "docs/audits/pixel-rebuild-535/framework/node-tests-hardening.txt",
+          "sha256": "8ffed7ceca6cad84a87db9ec41d3a7149f5ffd87fdad4dc535ea0421020fbde7"
+        }
+      ]
+    }
+  ],
+  "handles": [],
+  "technical": {
+    "state": "VERIFIED",
+    "limitation": "Focused synthetic structural/controller fixtures only. No provider artwork or full game qualification.",
+    "observation": "Strict metadata, finite fresh-pixel preparation, frame packing QA, honest GIF timings, controller targeted tests pass",
+    "evidence": [
+      {
+        "path": "client/pixel-animation.js",
+        "sha256": "87881bd048565d98d7b10ff1ad22190d6e14b0d34b688e2635fae457fc6f08e1"
+      },
+      {
+        "path": "scripts/pixel-sprites.py",
+        "sha256": "0d0853d3c1a57516354d50c3ae42b3881a527f98d1b02e2a3380f9de09c6298f"
+      },
+      {
+        "path": "scripts/pixel-sprite-contract.mjs",
+        "sha256": "34cfe56bb0df96d4ab98c3b5af61154e3a6eb779f8aca77f218d2fa016144475"
+      },
+      {
+        "path": "tests/pixel-animation535.test.js",
+        "sha256": "d4a5af9964b9dd1f322fddb72f917e23dece3d180079edb2e0a87e299fe62700"
+      },
+      {
+        "path": "tests/pixel-sprite-contract535.test.js",
+        "sha256": "602462b9045127cba341074d753cfbfeda012b650aa4ae8d9269fd50a0956cf1"
+      },
+      {
+        "path": "tests/pixel-sprites535.py",
+        "sha256": "05046ad0230f589719ff937e81dfb821ca53802e48ea7a2fe3889bbb8bd9376f"
+      }
+    ]
+  },
+  "motion": {
+    "state": "UNKNOWN",
+    "limitation": "No authored artwork or independent continuous review"
+  },
+  "runtime": {
+    "state": "UNKNOWN",
+    "limitation": "No browser engine scene executed by this worker"
+  },
+  "owner": {
+    "state": "UNKNOWN",
+    "limitation": "No owner approval claimed"
+  },
+  "release": {
+    "state": "UNKNOWN",
+    "limitation": "No build or deployment performed"
+  },
+  "calls": 0,
+  "preservedFailures": [
+    "Initial cat used tasks/framework/inputs.json wrong path; corrected framework/inputs.json. Initial Python tests passed with deprecation/resource warnings; retained initial logs, corrected warnings, final pass."
+  ],
+  "api": {
+    "metadataProvenance": "sources:[{path,sha256}],callTokens:[string]",
+    "review": "null|PASS|FAIL|UNKNOWN per structural/visual/runtime",
+    "animator": "createPixelAnimator({strideDistance}).sample(clip,{entityId,actionInstance,direction,timeMs,distance,frozen}) => frame,row,events,complete; missing stride adds unqualified/reason",
+    "clock": "First sample captures origin; integration may prime authoritative elapsed at0 then sample elapsed. distance monotonic accumulated world travel. Pause discards intervening delta. clear(entityId) removes state.",
+    "tools": "python3/Pillow12.1.1/node, no installation",
+    "cli": "python3 scripts/pixel-sprites.py inspect-strip INPUT; pack eight ordered strips --output atlas; inspect-atlas INPUT --metadata metadata --root ROOT; preview INPUT --metadata metadata --row0..7 --output gif",
+    "limits": "Packing/metadata provenance bytes do not authenticate hand authoring, custody claims, historical accuracy or motion. JSON metadata strict validated by browser-safe JS from Python atlas inspect. GIF durations must multiples10ms for honest timing. No banned legacy references in initial fresh order; actual source usage requires root-reviewed pinned job/prompt and custody."
+  },
+  "hardening": {
+    "initialReceipt": "docs/audits/pixel-rebuild-535/framework/CHECKPOINT-initial.json",
+    "directionCheck": "Whole-row exact or mirrored substitution across all8 cyclic phase offsets, ignores hidden RGB; no claim to detect redrawn variants or symmetric single poses. Within-row mirror rejection omitted because actual symmetric poses can be legitimate.",
+    "sources": "Only root-relative docs/art/pixel-*/raw/**/*.png or raws/**/*.png; declared and resolved paths checked in Python. Browser checks lexical new-raw path. Sources represent newly authored pixel raws, not identity-reference imagery; leader references must not be listed as pixel sources.",
+    "admission": "Root/integration must rerun inspect-atlas against exact PNG and metadata bytes and bind successful QA receipt before registry admission; JSON PASS alone cannot establish pixel integrity."
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "schema": "rds-owner-loop-feedback/v1",
+  "identity": "villager",
+  "action": "idle",
+  "direction": 1,
+  "decision": "APPROVED",
+  "humanReply": "Tự nhiên, giữ clip này",
+  "question": "Bạn xem loop idle Villager vừa mở: nhịp thở và lần quay về tư thế gốc trông thế nào ở kích thước gameplay?",
+  "evidence": "Directhuman request_user_input_async reply inthisthread; no guessedmessageID/time",
+  "artifact": {
+    "path": "docs/art/pipeline/villager-idle-523/exports/compiled-selected/game-size.png",
+    "sha256": "ac14902bf6eef15dd960594ccd36e8d8595e3ad61e917dec3a87aa8493dbd81e"
+  },
+  "asset": {
+    "path": "docs/art/pipeline/villager-idle-523/exports/compiled-selected/asset.json",
+    "sha256": "00d92ecc5725b0d02f83f49caa32da0a8dbfb4e9f8b28bf5a947bb45406b6c5c"
+  },
+  "atlas": {
+    "path": "docs/art/pipeline/villager-idle-523/exports/compiled-selected/atlas.png",
+    "sha256": "2963cd4beea9ff9a5b0378d9da9e1b43f684f7c123813ff25d66074ce47de2ce"
+  },
+  "scope": "Owner accepts actualshownD1idleloop and sayskeepit. This fixes selectedidleart; no walk/attack/otherview/unit/worldcontact/runtime/publicapproval. No duration/cyclecount invented.",
+  "independentReview": "Sol actualraw/keyreview usable; ownCUA loopconnector hadno browser. Keepactualreviewlimitation, do notconvertownerreply into a fabricatedSolcontinuousreview."
+}

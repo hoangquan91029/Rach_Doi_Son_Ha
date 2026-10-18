@@ -1,0 +1,89 @@
+{
+  "schema": "rds-independent-coverage-review/v1",
+  "taskId": "living-coverage534-review",
+  "status": "SCOPED_READY",
+  "method": "Read exact before/delta/current tests/spec/identity families and retained logs; audit preflight exit0; no rerun",
+  "inputPins": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "bb1c12bbda8727835a5e9d2a4a68ca20af7d463b237ad704a189de3329cdb3ae"
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+    },
+    {
+      "path": "tests/sprite-prompts.test.js",
+      "sha256": "11830266fd1ede7449f4e8fc58b3cb4808509e283f7f12fc11071be0ba8e050c"
+    },
+    {
+      "path": "shared/unit-action-spec.js",
+      "sha256": "1e796554394506f668aa06a69443de26ab22ceaa6497fd28a6157030dc0b9fc9"
+    },
+    {
+      "path": "docs/qa/living-coverage-534/CHECKPOINT.json",
+      "sha256": "86e34a5e9043c652c4cb26603e60c0178d2d8808359416132d07c28acd7dcbd2"
+    }
+  ],
+  "additionalEvidence": [
+    {
+      "path": "docs/qa/living-coverage-534/sprite-prompts.before.js",
+      "sha256": "8791d6663642db6800ba0e85efabf8f0d1078de8d93d9677e4f0a6fe53fe3c8c"
+    },
+    {
+      "path": "docs/qa/living-coverage-534/change.diff",
+      "sha256": "9fae8cca9d05a9a2f908b0edff393eee37c47d874906dff3b8a35e6bb72e5e25"
+    },
+    {
+      "path": "docs/qa/living-coverage-534/tests.log",
+      "sha256": "af36a2fd4dae83b956449e47d150aa3866908fbd7a3e4b829ddd5537ad5c4d23"
+    },
+    {
+      "path": "docs/qa/living-coverage-534/prior-failure.log",
+      "sha256": "da55a3d02c4fc686367d7c3969723836deae6c802d756529b3df1648069fb47b"
+    },
+    {
+      "path": "shared/unit-art.js",
+      "sha256": "ad4adbfd61311c7f14cf4786f3a7467003e526e56f1bbd6c4a1f0f333719ccd3"
+    }
+  ],
+  "findings": [
+    {
+      "class": "VERIFIED",
+      "claim": "Test-only delta replaces obsolete wagon death requirement and adds explicit living lists for all9ordinary+12leaders; family key-set comparisons prevent omitted/extra identities."
+    },
+    {
+      "class": "VERIFIED",
+      "claim": "Expected lists match actual identityActions: villager8 banks,6ordinarycombat identities4 each, wagon/transport5 each,12leaders6 each; total114banks,8directions=>912clips, ACTION_FRAMES summation5760positions. Counts are requirements, not art completion."
+    },
+    {
+      "class": "VERIFIED",
+      "claim": "Every21identity denies death/destroyed/sink applicable and returns nullframes/emptyroles; retained ACTION_FRAMES.death8 remains explicitly asserted. No production spec change."
+    },
+    {
+      "class": "VERIFIED",
+      "claim": "Leader build and repair roles king-only; ability king+general/distinct poses. wagon/transport load/unload separate pose flags, infantry foreign actions denied. Villager repair aliases build and returns wood/food/iron ordinary walk; infantry return/repair denied."
+    },
+    {
+      "class": "DOCUMENTED_ONLY",
+      "claim": "Existing tests.log reports18PASS0FAIL exit0; not rerun by reviewer. prior-failure.log preserves earlier obsolete wagondeath expectation; no fabricated historical pass."
+    }
+  ],
+  "gaps": [],
+  "limits": [
+    "Requirement applicability/source tests cannot establish selected art, completed banks/clips/frames, natural motion, contact, runtime, owner or public completion.",
+    "Test King-only role semantics are contract scope; no browser gameplay role qualification.",
+    "Death waived allunits/buildings; this test scope covers unit action requirements, not runtime building disappearance.",
+    "Full goal remains OPEN."
+  ],
+  "operations": {
+    "testsRerun": 0,
+    "browser": 0,
+    "build": 0,
+    "imageCalls": 0,
+    "codeChanges": 0,
+    "registryChanges": 0,
+    "stateChanges": 0
+  },
+  "handles": []
+}

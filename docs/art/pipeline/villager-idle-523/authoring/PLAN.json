@@ -1,0 +1,41 @@
+{
+  "schema": "rds-living-animation-plan/v1",
+  "purpose": "Firstnewidle livingbank connected to originalrest; no samefailedwalkretry",
+  "identity": "villager",
+  "action": "idle",
+  "direction": 1,
+  "frames": [
+    {
+      "frame": 0,
+      "source": "REUSE_EXACT_ORIGINALREST",
+      "durationMs": 750
+    },
+    {
+      "frame": 1,
+      "source": "MISSING risingbreath wholeillustration afterF2selected",
+      "durationMs": 750
+    },
+    {
+      "frame": 2,
+      "source": "MISSING smallpeak wholeillustration firstendpointtrial",
+      "durationMs": 750
+    },
+    {
+      "frame": 3,
+      "source": "MISSING fallingbreath wholeillustration afterF2selected",
+      "durationMs": 750
+    }
+  ],
+  "calls": {
+    "limit": 3,
+    "correctionCap": 0,
+    "retry": 0
+  },
+  "gates": [
+    "Independentreviewactualoriginal/rootguide/plan; confirmnewidleactiondistinctfromclosedwalkfamilies",
+    "Guardedtask/order/prepareOrder+durableF2claim thenONEexactLunaHighcall",
+    "IndependentactualF2atgameplaysize +rootselection beforeanyF1/F3claims",
+    "Wholecycleactualbriefloop independentmotion,seamreview; relatedordinaryUIidle/move/stop/attacktransitiononlywhenlivingbanksready"
+  ],
+  "scope": "No atlas/public/runtimepromotion or fullunit/fanout approval from raw/still/guide. Both501Blenderfailures and491492509walkfailures remainclosed. Deathwaived522."
+}

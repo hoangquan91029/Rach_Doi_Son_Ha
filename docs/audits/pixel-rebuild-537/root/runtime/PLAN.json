@@ -1,0 +1,26 @@
+{
+  "scope": "One isolated Chromium ordinary-UI infrastructure smoke after source fix; zero new pixel artwork/visual/motion acceptance",
+  "maxBuilds": 1,
+  "maxBrowserSessions": 1,
+  "maxScenes": 1,
+  "maps": [
+    "delta"
+  ],
+  "actions": [
+    "open actual menu sprite viewer",
+    "inspect all eight direction options and explicit empty registry",
+    "Pause/Resume and Stop missing state",
+    "close viewer",
+    "launch SP Delta",
+    "read-only diagnostics readiness",
+    "ordinary Pause/Resume/menu"
+  ],
+  "forbidden": [
+    "simulation/commands injection",
+    "legacy character admission",
+    "art placeholder acceptance",
+    "public/service mutation",
+    "blind runtime retry"
+  ],
+  "close": "Close owned browser/context/server; verify port/process absence; canonical source/public/dist and ledger stay frozen"
+}

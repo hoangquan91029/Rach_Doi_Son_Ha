@@ -41,7 +41,13 @@ export function validateTaskContracts(root,contracts){
   const worker=contract.worker;
   requireValue(text(worker?.id),'Task worker identity required');
   if(worker.role==='ROOT')requireValue(worker.id==='/root'&&worker.model===null&&worker.reasoningEffort===null,'Root metadata must be /root with unknown model/effort');
-  else requireValue((worker.role===undefined||worker.role==='WORKER')&&worker.id!=='/root'&&worker.model==='gpt-6.1-sol'&&worker.reasoningEffort==='low','Task worker must be gpt-6.1-sol/low');
+  else {
+   // Preserve historical Luna assignment records for audit and unresolved custody.
+   // Current dispatch policy is enforced separately in validateTaskSnapshot.
+   const sol=worker.model==='gpt-6.1-sol'&&worker.reasoningEffort==='low';
+   const luna=(contract.workKind==='image-generation'||(contract.id==='blender-removal508'&&contract.workKind==='blender-removal'))&&worker.model==='gpt-6-luna'&&worker.reasoningEffort==='high';
+   requireValue((worker.role===undefined||worker.role==='WORKER')&&worker.id!=='/root'&&(sol||luna),'Task worker must be gpt-6.1-sol/low, or explicitly image-generation / authorized blender-removal508 gpt-6-luna/high');
+  }
   requireValue(Array.isArray(contract.outputs)&&contract.outputs.length&&Array.isArray(contract.slots)&&Array.isArray(contract.inputs)&&contract.inputs.length,'Task outputs/slots/inputs required');
   const outputs=contract.outputs.map(name=>taskPath(root,name));
   requireValue(new Set(outputs).size===outputs.length,'Duplicate task output');
@@ -60,6 +66,9 @@ export function validateTaskSnapshot(root,contracts,taskId,expectedInputs){
  validateTaskContracts(root,contracts);
  const task=contracts.find(c=>c.id===taskId);
  requireValue(task?.status==='ACTIVE','Active registered task required');
+ // Latest human routing536 applies to every dispatched worker, including illustration.
+ // Historical Luna records remain readable without authorizing another dispatch.
+ requireValue(task.worker.role==='ROOT'||(task.worker.model==='gpt-6.1-sol'&&task.worker.reasoningEffort==='low'),'Current worker dispatch requires gpt-6.1-sol/low; historical Luna assignments are audit-only');
  requireValue(Array.isArray(expectedInputs)&&expectedInputs.length===task.inputs.length,'Expected scoped task inputs required');
  const normalized=p=>JSON.stringify([taskPath(root,p.path),p.sha256]);
  requireValue(new Set(expectedInputs.map(normalized)).size===expectedInputs.length&&task.inputs.every(p=>expectedInputs.some(q=>normalized(p)===normalized(q))),'Scoped task snapshot mismatch');

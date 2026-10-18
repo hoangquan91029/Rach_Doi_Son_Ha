@@ -1,0 +1,191 @@
+{
+  "schema": "rds-independent-review/v1",
+  "taskId": "living-hit533-review",
+  "status": "SCOPED_CODE_AND_SOURCE_PLAN_REVIEW_COMPLETE",
+  "tools": [
+    "exec_command read-only source/log/preflight",
+    "view_image actual original and four guides"
+  ],
+  "preflight": {
+    "exit": 0,
+    "path": "docs/qa/living-hit-533-review/preflight.json"
+  },
+  "inputPins": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "bb1c12bbda8727835a5e9d2a4a68ca20af7d463b237ad704a189de3329cdb3ae",
+      "actualSha256": "bb1c12bbda8727835a5e9d2a4a68ca20af7d463b237ad704a189de3329cdb3ae"
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517",
+      "actualSha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+    },
+    {
+      "path": "client/raster-slice.js",
+      "sha256": "4d2399c56e78f21ee0c8bc35116a811522784581f7541344320bb2dfc852a20d",
+      "actualSha256": "4d2399c56e78f21ee0c8bc35116a811522784581f7541344320bb2dfc852a20d"
+    },
+    {
+      "path": "tests/hit-clock531.test.js",
+      "sha256": "d70e85dc3984cac3a9bfd618ffb37813888e1ee31f70b8faa36bc10ccdab1a44",
+      "actualSha256": "d70e85dc3984cac3a9bfd618ffb37813888e1ee31f70b8faa36bc10ccdab1a44"
+    },
+    {
+      "path": "docs/qa/hit-clock-531/CHECKPOINT.json",
+      "sha256": "342525e4422c96fe234b063acfdb96bf64329aa0991b6b470f9287b1526924e1",
+      "actualSha256": "342525e4422c96fe234b063acfdb96bf64329aa0991b6b470f9287b1526924e1"
+    },
+    {
+      "path": "docs/qa/hit-clock-531/checks.log",
+      "sha256": "814aa91db13e127d45764f35578411d0f45b8ac47c4e71f10243ad28a55188ca",
+      "actualSha256": "814aa91db13e127d45764f35578411d0f45b8ac47c4e71f10243ad28a55188ca"
+    },
+    {
+      "path": "scripts/sprite-prompts.mjs",
+      "sha256": "7841f65694f5258e4d222f918a3e47a803e27bef50f8e8633f46f48ac7c2ffa7",
+      "actualSha256": "7841f65694f5258e4d222f918a3e47a803e27bef50f8e8633f46f48ac7c2ffa7"
+    },
+    {
+      "path": "tests/action-equipment532.test.js",
+      "sha256": "36cf80bec1704cf9e22f5da7f32328f761a7a2fb098753412a88d6502df3f3ab",
+      "actualSha256": "36cf80bec1704cf9e22f5da7f32328f761a7a2fb098753412a88d6502df3f3ab"
+    },
+    {
+      "path": "docs/qa/action-equipment-532/CHECKPOINT.json",
+      "sha256": "811c51d7e2ac230fd67cca86ae71d3c8ebe3e9a8ba559f3a82b20131fcd58393",
+      "actualSha256": "811c51d7e2ac230fd67cca86ae71d3c8ebe3e9a8ba559f3a82b20131fcd58393"
+    },
+    {
+      "path": "docs/qa/action-equipment-532/change.diff",
+      "sha256": "93779cb49ffc8a747e5576463ecd4c879ba45aa18ae5d56d7f530e3ebfc78bd2",
+      "actualSha256": "93779cb49ffc8a747e5576463ecd4c879ba45aa18ae5d56d7f530e3ebfc78bd2"
+    },
+    {
+      "path": "docs/art/pipeline/unit-production/villager/identity.json",
+      "sha256": "60ea0f867ab4d54ab01067deb1c642f53ca5015cbd53072949b9c0cafcb71d2b",
+      "actualSha256": "60ea0f867ab4d54ab01067deb1c642f53ca5015cbd53072949b9c0cafcb71d2b"
+    },
+    {
+      "path": "docs/art/pipeline/villager-hit-530/authoring/PLAN.json",
+      "sha256": "24d2a045505676ded2b24c0c93a7173663a55121b6e68979c17a9966e19603b6",
+      "actualSha256": "24d2a045505676ded2b24c0c93a7173663a55121b6e68979c17a9966e19603b6"
+    },
+    {
+      "path": "docs/art/pipeline/villager-hit-530/authoring/guide-provenance.json",
+      "sha256": "30efb2ba404ce36b00fabcbf468c8bc9a87bae0bc7a1183fa3c8a3e9e6a6716b",
+      "actualSha256": "30efb2ba404ce36b00fabcbf468c8bc9a87bae0bc7a1183fa3c8a3e9e6a6716b"
+    },
+    {
+      "path": "docs/art/pipeline/villager-hit-530/authoring/proposed-hit-equipment-lock.json",
+      "sha256": "df89806dffa6d14d6108aecc4b45b7c189137e2fe5e9392c130549433a78af3c",
+      "actualSha256": "df89806dffa6d14d6108aecc4b45b7c189137e2fe5e9392c130549433a78af3c"
+    },
+    {
+      "path": "docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "actualSha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+    },
+    {
+      "path": "docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+      "actualSha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94"
+    },
+    {
+      "path": "shared/sim.js",
+      "sha256": "c9a01adba8630e89e1c3f195c1b98c08c32e74468d389a55891c664e3906e562",
+      "actualSha256": "c9a01adba8630e89e1c3f195c1b98c08c32e74468d389a55891c664e3906e562"
+    },
+    {
+      "path": "docs/art/pipeline/villager-hit-530/guide/F0.png",
+      "sha256": "cdc2a7c59919339bf9a02fd2d6664fc14d80e4a848363acb714eaa967ec3faa8",
+      "actualSha256": "cdc2a7c59919339bf9a02fd2d6664fc14d80e4a848363acb714eaa967ec3faa8"
+    },
+    {
+      "path": "docs/art/pipeline/villager-hit-530/guide/F1.png",
+      "sha256": "cc7a4b3c8bf4f8c4fee1460213103af489294ff2fd171c3dff4e84efe10678e1",
+      "actualSha256": "cc7a4b3c8bf4f8c4fee1460213103af489294ff2fd171c3dff4e84efe10678e1"
+    },
+    {
+      "path": "docs/art/pipeline/villager-hit-530/guide/F2.png",
+      "sha256": "a36ba6f4578c9a757e8c02f93499f95d596ce7384396d3229700d3001d05bbe2",
+      "actualSha256": "a36ba6f4578c9a757e8c02f93499f95d596ce7384396d3229700d3001d05bbe2"
+    },
+    {
+      "path": "docs/art/pipeline/villager-hit-530/guide/F3.png",
+      "sha256": "9c6fcf8e9a9e5acbe3173df93a713a6bd30424453465db78131ef2c18d371923",
+      "actualSha256": "9c6fcf8e9a9e5acbe3173df93a713a6bd30424453465db78131ef2c18d371923"
+    }
+  ],
+  "code531": {
+    "status": "SOURCE_READY",
+    "evidenceClass": "VERIFIED",
+    "observation": "Only sampled hit origin changed from -6 to -5. shared/sim hurt sets hitUntil=tick+5, so time at damage tick samples0; idle/action/locomotion/death clocks and simulation unaffected.",
+    "checks": {
+      "class": "DOCUMENTED_ONLY",
+      "log": "docs/qa/hit-clock-531/checks.log",
+      "pass": 22,
+      "fail": 0,
+      "rerun": false,
+      "limits": "Synthetic raster/decode fixture tests clock including refresh/late observer/expiry/fallback/HP0/Pause; no actual artwork/runtime proof."
+    }
+  },
+  "code532": {
+    "status": "SOURCE_READY",
+    "evidenceClass": "VERIFIED",
+    "observation": "Optional actionEquipmentLocks validates applicable action/duplicates/status/nonempty statement+basis, prohibits N/A beyond idle/walk, requires original master/hashvalid source, rejects both exclusion lists, matches target selected view or masterdirection, validates exact request statement. Global lock remains status/source/mastervalidated, and unmatched attack/work keeps old globalNA denial. Byte bindings cannot establish visual truth.",
+    "checks": {
+      "class": "DOCUMENTED_ONLY",
+      "focused": "docs/qa/action-equipment-532/focused-tests.log",
+      "pass": 9,
+      "fail": 0,
+      "broader": "docs/qa/action-equipment-532/tests.log",
+      "broaderPass": 16,
+      "broaderFail": 1,
+      "limitation": "Old required-poses assertion includes wagon death; current522 excludes death. Failure preserved, no fullsuitePASS claim.",
+      "rerun": false
+    }
+  },
+  "sourcePlan": {
+    "schema": "rds-source-guide-review/v1",
+    "status": "SCOPED_POSE_PLAN_READY_PENDING_REGISTERED_FINITE_ORDER",
+    "method": "view_image actual South007 original and F0/F1/F2/F3 PNGs; read PLAN/provenance/proposed hit equipment lock; no playback or generated artwork",
+    "source": {
+      "class": "VERIFIED",
+      "observation": "OriginalSouth007 full human wearing conical hat, cream crossover tunic/sash, brown gathered trousers, cream lower-leg wraps and sandals; both hands empty. Proposed lock statement is consistent only for stationary nonfatal hit/recovery."
+    },
+    "guides": {
+      "class": "VERIFIED",
+      "observation": "Four whole clothed drawn guides visibly retain common canvas/framing and planted foot arrangement; F0 small brace, F1 strongest shoulder/head shift and inward forearms, F2 smaller release, F3 neutral rest. No visible weapon/fall/death. These are simplified vector pose aids, not identity artwork or strict motion control.",
+      "caveat": "Guide lower clothing simplifies original gathered full trousers into short brown form/cream shin blocks. Future prompt must preserve exact original trousers/wraps/garments/materials/anatomy; guides cannot override appearance."
+    },
+    "plan": {
+      "class": "PROPOSED",
+      "observation": "1254canvas/sourcepivot6541140/render42/cell128/bakedshadow; durations50/70/80/50 total250ms; nonloop; F3 exact original PNG reuse (F3 guide is not finalF3); missingF0/F1/F2 only max3calls0correction0retry. FirstF1 must be independently reviewed and root-selected before F0/F2.",
+      "lineage": "Stationary nonfatal hit is a separate untried action, not a closed walk retry or fanout. Guide probabilistic only; no demonstrated original-preserving pose or motion result."
+    },
+    "pending": [
+      "Root must register exact hit-only emptyhands source lock without changing globalNA or authorizing other actions.",
+      "Exact finite LunaHigh assignment/order/prepareOrder/durable claim still required before a call.",
+      "Actual F1 returned custody/raw independent review and root selection before inbetweens.",
+      "Actual whole250ms gameplay-size loop and related living hit/idle transition required before motion/runtime/owner/public approval."
+    ],
+    "motion": "UNKNOWN",
+    "calls": 0
+  },
+  "statusLimits": [
+    "Source/plan readiness does not authorize an image call or source selection.",
+    "No actual generated hit frame, continuous motion, foot-lock proof, owner or runtime/public PASS.",
+    "All units/buildings living HP0 disappearance/death waiver remain authority; full goalOPEN."
+  ],
+  "operations": {
+    "imageCalls": 0,
+    "testsRerun": 0,
+    "browser": 0,
+    "build": 0,
+    "codeChanges": 0,
+    "registryChanges": 0,
+    "stateChanges": 0
+  },
+  "handles": []
+}

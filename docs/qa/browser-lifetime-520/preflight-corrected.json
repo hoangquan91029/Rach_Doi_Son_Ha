@@ -1,0 +1,139 @@
+{
+  "schema": "rds-agent-preflight/v1",
+  "task": "runtime",
+  "head": "1c7097fc80f94fc87f2fdc97d355e414601c37a4",
+  "status": " M AGENTS.md\n M docs/AGENT_EXECUTION_CONTRACT.md\n M docs/ARCHITECTURE_DECISIONS.md\n M docs/NEXT_STEPS.md\n M docs/PROJECT_ROADMAP.md\n M docs/PROJECT_STATE.md\n M docs/art/pipeline/ANIMATION_CONTRACT.md\n M docs/art/pipeline/IMAGE_GENERATION_TEMPLATES.md\n M docs/art/pipeline/SPRITE_PRODUCTION_WORKFLOW.md\n M docs/art/pipeline/unit-production/order-ledger.json\n M docs/art/pipeline/unit-production/villager/identity.json\n M docs/audits/implementation-495/tasks.json\n M scripts/agent-preflight.mjs\n M scripts/agent-task-contract.mjs\n M scripts/qa/sprite-preview.mjs\n M scripts/sprite-preview.html\n M scripts/sprite-prompts.mjs\n?? MASTER_HANDOFF.md\n?? docs/art/pipeline/blender-villager-504/\n?? docs/art/pipeline/blender-villager-506/\n?? docs/art/pipeline/building-production/granary/\n?? docs/art/pipeline/granary-death-511/\n?? docs/art/pipeline/unit-production/templates/key_study.txt\n?? docs/art/pipeline/villager-key-study-509/\n?? docs/audits/animation-context-507/\n?? docs/audits/blender-removal-508/\n?? docs/audits/blender-runtime-500/mcp/isolated-runtime-config/\n?? docs/audits/blender-runtime-502/connection/runs/1260828fa04e48d6b4dd4775df70a070/\n?? docs/audits/blender-runtime-502/connection/runs/205e1735a77f4da89c1c68e8ea65e287/\n?? docs/audits/blender-runtime-502/connection/runs/31ad1b9cef624041b54d0f9c8a10476d/\n?? docs/audits/blender-runtime-502/connection/runs/628b44df2ea64e469a62f7ee7622fa68/\n?? docs/audits/blender-runtime-502/connection/runs/78c7c0ef24864151b4c4d2afff9a984a/\n?? docs/audits/blender-runtime-502/connection/runs/9271d344564342a6936296c576fe3d2a/\n?? docs/audits/blender-runtime-502/connection/runs/b48a76aec35e4695bac1f9640e59774c/\n?? docs/audits/blender-runtime-502/connection/runs/b5405e4f3c6b478e873a7b95b67b73ed/\n?? docs/audits/blender-runtime-502/connection/runs/c91a741082bc4c908a1c4921f6384989/\n?? docs/audits/blender-runtime-502/connection/runs/db8bf054007f48c2b60b78d0b6890c95/\n?? docs/audits/blender-runtime-502/connection/runs/dff8df9cb52d4a8a8c325f5634ba5dd1/\n?? docs/audits/blender-runtime-502/connection/runs/eed04592d0234d6ca9c691fa7308ceb1/\n?? docs/audits/blender-runtime-502/connection/runs/f6f9d57ba9e04eae868eff267f8c2333/\n?? docs/audits/continuation-504/\n?? docs/audits/continuation-509/\n?? docs/qa/browser-close-514/\n?? docs/qa/browser-custody-510-review/\n?? docs/qa/browser-custody-510/\n?? docs/qa/browser-lifetime-520/\n?? docs/qa/building-preview-513/\n?? docs/qa/granary-death-515/\n?? docs/qa/granary-death-516/\n?? docs/qa/granary-death-518/\n?? docs/qa/granary-death-519/\n?? docs/qa/online-profile-504/\n?? docs/qa/online-profile-505/\n?? docs/qa/online-profile-506/\n?? docs/qa/online-profile-509/\n?? docs/qa/online-profile-512/\n?? scripts/blender/villager504.py\n?? scripts/blender/villager506.py\n?? scripts/qa/browser-custody510.mjs\n?? scripts/qa/granary-death515.mjs\n?? scripts/qa/granary-death516.mjs\n?? scripts/qa/granary-death518.mjs\n?? scripts/qa/granary-death519.mjs\n?? scripts/qa/online-profile504.mjs\n?? scripts/qa/online-profile506.mjs\n?? scripts/qa/online-profile509.mjs\n?? scripts/qa/online-profile512.mjs\n?? scripts/qa/train-observation504.mjs\n?? scripts/sprite-key-study.mjs\n?? tests/agent-preflight-scope507.test.js\n?? tests/agent-task-model507.test.js\n?? tests/browser-custody510.test.js\n?? tests/building-preview513.test.js\n?? tests/sprite-key-study.test.js\n?? tests/train-observation504.test.js",
+  "readFiles": [
+    {
+      "path": "docs/agent-read-contract.json",
+      "sha256": "416ca4786e698dcbb3e4418a7b679d7d3bfb6ce8c3c8589c30d07fe7e6985d26",
+      "bytes": 1258
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "a81895b57e445ae913773fd7bf55049f84d859d407e175de2d106edc4f3c52bd",
+      "bytes": 14339
+    },
+    {
+      "path": "docs/PROJECT_STATE.md",
+      "sha256": "52db5cb227dae8712b14e18d725d3a530a0442f618bc280e8d7bc3dd8f6900c2",
+      "bytes": 31727
+    },
+    {
+      "path": "docs/NEXT_STEPS.md",
+      "sha256": "3f37c7160b9f096b244a88111768c4df91752aa82443fd77d46bf5bccc0777db",
+      "bytes": 12585
+    },
+    {
+      "path": "docs/ARCHITECTURE_DECISIONS.md",
+      "sha256": "3b23fd9680317a0c0fbaab250ab3878ea58d1f782be48b67976c73592286fcb6",
+      "bytes": 3907
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517",
+      "bytes": 6297
+    },
+    {
+      "path": "docs/art/pipeline/ANIMATION_CONTRACT.md",
+      "sha256": "abf0bb8cb4aeeaa7d470b7e94811d2fee964c5b3667bd784b2878f11bd62765b",
+      "bytes": 8433
+    },
+    {
+      "path": "docs/art/pipeline/ASSET_QA.md",
+      "sha256": "7ad426a1a2b9d8fd10ae56aa7897fc19be67d3b00a40fac3987e1ef07cd66418",
+      "bytes": 3343
+    },
+    {
+      "path": "shared/unit-action-spec.js",
+      "sha256": "04d987298651c73187920391754f729fd203c1313536eb54c29c629048db05bf",
+      "bytes": 1686
+    },
+    {
+      "path": "shared/visible-action.js",
+      "sha256": "35d4352d3c6a85bce7b99638934e9c0512c900df801fc3b59296ba1b606b27b0",
+      "bytes": 2228
+    },
+    {
+      "path": "client/world-presentation.js",
+      "sha256": "d87fadfb176f765d35b26c2d247af536288d9ada9df6ecc8ec254d889231db98",
+      "bytes": 240
+    },
+    {
+      "path": "docs/art/pipeline/BLENDER_SPRITE_PIPELINE.md",
+      "sha256": "335f4ce5965650dae237f93baddad6e1340f3c3a8d3530a86e82f6944434cbfe",
+      "bytes": 12822
+    }
+  ],
+  "sources": [
+    {
+      "path": "scripts/qa/browser-custody510.mjs",
+      "sha256": "f0bf514e1988bf3a3c7bcd3abd6111c5721f4f4f63bdce6782eff099d9194ecd",
+      "bytes": 6948
+    }
+  ],
+  "assignment": {
+    "taskId": "browser-lifetime520",
+    "registration": {
+      "path": "docs/audits/implementation-495/tasks.json",
+      "sha256": "15c212c342091ff8f00ea1088ee554bc972a314f5398ec76babb15e762086357",
+      "bytes": 149098
+    },
+    "inputs": [
+      {
+        "path": "AGENTS.md",
+        "sha256": "a81895b57e445ae913773fd7bf55049f84d859d407e175de2d106edc4f3c52bd"
+      },
+      {
+        "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+        "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+      },
+      {
+        "path": "scripts/qa/browser-custody510.mjs",
+        "sha256": "f0bf514e1988bf3a3c7bcd3abd6111c5721f4f4f63bdce6782eff099d9194ecd"
+      },
+      {
+        "path": "docs/qa/browser-custody-510/CHECKPOINT.json",
+        "sha256": "5ad4466b21aed24ac380b7cbee3e46672cfb8f465dbb3a571e7db8565d5055ba"
+      },
+      {
+        "path": "docs/qa/browser-close-514/CHECKPOINT.json",
+        "sha256": "e07c92c0266d52e353623cd2bf525d999e7d7fed6dc7fd48351c844feb63da42"
+      },
+      {
+        "path": "docs/qa/online-profile-512/CHECKPOINT.json",
+        "sha256": "f737d4c4f8af7161d5c0bde669dc94cc8672876af910543b8dabba52b0691a70"
+      },
+      {
+        "path": "scripts/qa/granary-death519.mjs",
+        "sha256": "259c82f1ff4b3168b031961f1d1e6b40c767a6f578786b87053db8c5d60ce2da"
+      }
+    ],
+    "outputs": [
+      "scripts/qa/browser-lifetime520.mjs",
+      "docs/qa/browser-lifetime-520"
+    ],
+    "slots": []
+  },
+  "orderScope": null,
+  "ledger": {
+    "path": "docs/art/pipeline/unit-production/order-ledger.json",
+    "sha256": "1da55dd273d89669461c6b039e1e714a253a6a9c4579dead63148ce6f312c94d",
+    "locked": false,
+    "unresolvedClaims": [
+      {
+        "order": "residence-construction-F1-F3-498",
+        "slot": 1
+      },
+      {
+        "order": "residence-construction-F1-F3-498",
+        "slot": 3
+      }
+    ]
+  },
+  "limits": [
+    "Existence and byte hashes do not establish understanding, permission, approval or tool availability.",
+    "Explicit invocation only; this helper is not a mandatory global hook.",
+    "Externally verify tools and actual live handles/preservation guards; no guards are declared closed."
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "schema": "rds-illustration-custody/v1",
+  "taskId": "illustration-building511",
+  "workerModel": "gpt-6-luna",
+  "workerReasoning": "high",
+  "workKind": "image-generation",
+  "orderId": "granary-death-whole511",
+  "slotIndex": 3,
+  "durableClaimToken": "5e796818-d267-47d9-9af0-1a21dde77969",
+  "requestSHA": "7738b5bcf9bca5a1cf8c044ea30621347cc4004afdffffe008c2c81d4353ad56",
+  "scope": "First authorized terminal F3 raw key only. No other frames, selection, clip completion, or approval.",
+  "inputPins": {
+    "manifest": "docs/art/pipeline/granary-death-511/orders/task-inputs.json",
+    "manifestSHA256": "0b675999ad0def3df8e884da18d380f65f14060c14122c2b68449f5a7c6cb7ba",
+    "verifiedPins": [
+      {
+        "path": "AGENTS.md",
+        "sha256": "a81895b57e445ae913773fd7bf55049f84d859d407e175de2d106edc4f3c52bd"
+      },
+      {
+        "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+        "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+      },
+      {
+        "path": "scripts/building-sprite-contract.mjs",
+        "sha256": "03544fe68faa3d0bc68bb2931c402b8967677e3fe4e0d64d9488d0e9280b7715"
+      },
+      {
+        "path": "scripts/sprite-prompts.mjs",
+        "sha256": "7f0311c91371ce989bdaf852169c641017367b911f094086762b607d4aecc2a7"
+      },
+      {
+        "path": "scripts/sprite-order-run.mjs",
+        "sha256": "8436a7eedbe2d4a0dac8634bfcc9e7ad27a365e8862771ef230b9cfc47eb5d90"
+      },
+      {
+        "path": "scripts/agent-preflight.mjs",
+        "sha256": "60a93e9f83e1270940e439cac2ee6332e7d8d3d1d09fcaba02e5431bc817ed36"
+      },
+      {
+        "path": "scripts/agent-task-contract.mjs",
+        "sha256": "ab70ec1dc9e99293a54ea2873cb802ab2745d62942ff80c6fa0cb714ae0a60b1"
+      },
+      {
+        "path": "docs/art/granary/variant-01/raw.png",
+        "sha256": "0d0c3963f3faed9341cd09f2ff118a753e9bd1ee431290b51635eebb17b61715"
+      },
+      {
+        "path": "docs/art/pipeline/building-production/granary/identity.json",
+        "sha256": "cd28575f47b66ac17f854f2550a5429becdc76136c377d17bcae204b7736d34d"
+      },
+      {
+        "path": "docs/art/pipeline/granary-death-511/authoring/job.json",
+        "sha256": "2dc20bde31d00efe23c89730fec95373e5fa686ded852e8f6a18a7a3683b9f9b"
+      },
+      {
+        "path": "docs/art/pipeline/granary-death-511/authoring/canonical-asset.json",
+        "sha256": "068d25dc8374270fba8a169966f777e2174d7b68a1755fb3615ead431f5a0913"
+      },
+      {
+        "path": "docs/art/pipeline/granary-death-511/authoring/proposed-request.json",
+        "sha256": "8e24a656b38a93ed57e2706465861f37b7932fd60a9f3d654095e48f5744485d"
+      },
+      {
+        "path": "docs/art/pipeline/granary-death-511/review/CHECKPOINT.json",
+        "sha256": "cbbfebea9d3aadb5eec8a839c2a43359f91a58c1b0f604d2a13ecaeb6a654945"
+      }
+    ]
+  },
+  "call": {
+    "tool": "tools.image_gen__imagegen (built-in imagegen)",
+    "callsMade": 1,
+    "promptSHA256": "6f1a74e139eb648cb743db2446274609f43f8f5100f63ba9241c20a240736985",
+    "promptSource": "orders/claim-result.json prepared.prompt",
+    "orderedReferences": [
+      "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/granary/variant-01/raw.png"
+    ],
+    "transparentBackground": true,
+    "workerModelIsNotGeneratorModel": true,
+    "generatorModel": null,
+    "providerHandle": null,
+    "seed": null,
+    "timestamp": null
+  },
+  "result": {
+    "status": "RETURNED",
+    "providerSavedPath": "/home/kieu-hoang-quan/.codex/generated_images/01a1343c-857b-73b1-8d93-ec0156f91c64/exec-a60eb136-6d4a-4a72-a8dc-d060d797450c.png",
+    "toolOutputHint": "Generated images are saved to /home/kieu-hoang-quan/.codex/generated_images/01a1343c-857b-73b1-8d93-ec0156f91c64 as /home/kieu-hoang-quan/.codex/generated_images/01a1343c-857b-73b1-8d93-ec0156f91c64/exec-a60eb136-6d4a-4a72-a8dc-d060d797450c.png by default. If you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it. The generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "ownedCopy": "docs/art/pipeline/granary-death-511/illustration/F3-raw.png",
+    "byteCopy": "unchanged copy; provider original retained",
+    "sha256": "e53a36ffe4a52477e2e598f7d4222d4a79ef75e222e09f479cf26159294719e9",
+    "decoded": {
+      "format": "PNG",
+      "mode": "RGBA",
+      "width": 1254,
+      "height": 1254,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "rgbaSha256": "081c8bf225e4288f7121a45e0074fe506408c2cea0ccfd1bf7aeea1ec587945c"
+    },
+    "outputMapping": "single returned raw PNG is the one claimed F3 terminal candidate"
+  },
+  "limitations": [
+    "No provider generator model, durable provider handle, seed, or timestamp appeared in tool output; values remain null.",
+    "Candidate raw only; no source selection, visual review verdict, completed death clip, runtime, owner, or release approval is established.",
+    "Root owns ledger settlement and claim handle closure."
+  ]
+}

@@ -1,0 +1,7 @@
+# Worker537 native pixel design
+
+New ordinary adult Vietnamese rural Worker: indigo cross-front tunic, long sleeves, narrow ochre belt, brown tied trousers, dark headcloth, bare feet. No legacy references. Proposed historical clothing design, not a verified personal likeness. Elevated RTS three-quarter front (S); all source frames128RGBA, fixed anchor64,112, head-to-ground72px, 2px border, no ground/shadow painted. Upper-left lighting, coherent material ramps, maximum32colors, alpha0/255. Art must read as a person with textured pixel clusters at game64px and source128px; primitive mannequin geometry is not final acceptance. No stretch/fitting/flipping of whole frames.
+
+Head top40, ground anchor112. Base face center64,50; shoulders64,63; hips64,88. Frame plan defines body support and leg/arm keypoints, not final pixel quality. Whole character remains centered in a fixed source camera with subtle weight transfer; anatomical left is screen-right in S view. Separate authored hands/fingers, knees/trouser folds and bare feet; no rubber limbs. Shadow-side outline1px, selective lit edge; ordered integer clusters (no noise dithering or smooth vector edges).
+
+Root plan eight phases in walk-S-plan.json. Feet change actual bend/reach/lift while silhouette, face, costume and material illumination remain consistent. Explicit foot stance samples are proposed guide coordinates; measured worldstride UNKNOWN until final reviewed pixels, never copied from guides.

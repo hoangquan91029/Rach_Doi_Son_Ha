@@ -1,0 +1,94 @@
+{
+  "schema": "rds-task-receipt/v1",
+  "taskId": "blender-removal508",
+  "phase": 2,
+  "status": "REMOVAL_COMPLETE_VERIFIED",
+  "purpose": "Remove user-authorized isolated Blender runtime and project-specific Codex MCP while preserving project assets and host software.",
+  "authorization": "Root Phase 2 GO under explicit human uninstall authorization.",
+  "config": {
+    "path": "/home/kieu-hoang-quan/.codex/config.toml",
+    "removedEntry": "[mcp_servers.rds_blender501]",
+    "removedLinesAtIntake": "338-345 inclusive (8 lines; no nested table sections were present)",
+    "beforeSha256": "d668332dbd482b43cf4ce73ada44e73c32f080a18a6bff2c3c2da2bde804a03f",
+    "afterSha256": "5a2f9af10233465c6afcbba37efc9cddae5811147a2b88168132f863e20415ca",
+    "modeBeforeAndAfter": "0600",
+    "privateBackup": {
+      "path": "/home/kieu-hoang-quan/.codex/backups/blender-removal-508/config.toml.before",
+      "mode": "0600",
+      "sha256": "d668332dbd482b43cf4ce73ada44e73c32f080a18a6bff2c3c2da2bde804a03f"
+    },
+    "previous502Backup": {
+      "path": "/home/kieu-hoang-quan/.codex/backups/blender502-416281f47f4641b4a3e7b33a84988f8e/config.toml.before",
+      "preserved": true,
+      "mode": "0600",
+      "sha256": "20aa532d40c7eee9316071622627b881feec6b99987fc615c64ab3545027208a"
+    },
+    "verification": {
+      "targetEntryAbsent": true,
+      "unrelatedParsedTopLevelAndMcpValuesUnchanged": true,
+      "allRawBytesOutsideRemovedTableExactlyPreserved": true,
+      "postWriteTomlParseSucceeded": true,
+      "environmentValuesExposed": false
+    }
+  },
+  "removedPaths": [
+    {
+      "path": "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/blender500",
+      "preRemovalFilesAndSymlinks": 2306,
+      "preRemovalRegularFileBytes": 672582338,
+      "absentAfterRemoval": true
+    },
+    {
+      "path": "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/mcp501",
+      "preRemovalFilesAndSymlinks": 1629,
+      "preRemovalRegularFileBytes": 67775070,
+      "absentAfterRemoval": true
+    },
+    {
+      "path": "/home/kieu-hoang-quan/.cache/blender",
+      "preRemovalFilesAndSymlinks": 13,
+      "preRemovalRegularFileBytes": 120194,
+      "absentAfterRemoval": true
+    }
+  ],
+  "processesAndHost": {
+    "ownedProcessesAtRemoval": [],
+    "ownedProcessesAfterRemoval": [],
+    "port19876ListenerAfterRemoval": false,
+    "pathBlenderBinaryAbsent": true,
+    "usrBinBlenderAbsent": true,
+    "usrLocalBinBlenderAbsent": true,
+    "snapBinBlenderAbsent": true,
+    "blenderCommandOnPath": false,
+    "installedDpkgBlenderOrBlenderData": false,
+    "systemPackagesDriversAndPythonRemoved": false
+  },
+  "preservation": {
+    "repoMcpLifecycleScript": "scripts/blender/mcp502/lifecycle.py exists",
+    "repoAddonLauncher": "scripts/blender/mcp501/addon_launcher.py exists",
+    "repoOfflineServerSource": "scripts/blender/mcp500/offline_server_candidate.py exists",
+    "blendScenes": [
+      "docs/art/pipeline/blender-villager-501/initial/villager-neutral501.blend exists",
+      "docs/art/pipeline/blender-villager-504/initial/candidate.blend exists",
+      "docs/audits/blender-runtime-501/export-fixture/technical.blend exists",
+      "docs/audits/blender-runtime-502/connection/runs/dff8df9cb52d4a8a8c325f5634ba5dd1/private-config/userpref.blend retained within repo"
+    ],
+    "unresolved498LedgerSha256": "a687d7b292859ff5ef7b973001c2ae1308ec3fcf1023db160ac1f1792d3ce7b4",
+    "unresolved498LedgerUnchanged": true,
+    "priorRemovalReceiptPreserved": "docs/audits/blender-removal-508/worker/PHASE1_INVENTORY.json"
+  },
+  "actualTools": [
+    "Python path/symlink checks and /proc process identity inspection",
+    "targeted ss listener inspection",
+    "Python tomllib parse plus byte-preserving table removal and atomic config replacement",
+    "Python private exact-byte backup (0600)",
+    "shutil.rmtree on only the three approved canonical non-symlink directories",
+    "post-removal command/dpkg/config/filesystem/process/socket verification",
+    "SHA256 verification of both current and prior config backups and unresolved498 ledger"
+  ],
+  "limits": [
+    "Only the named project-specific MCP registration was removed. The current Codex app may need its normal config refresh before reflecting the change in its UI.",
+    "The repository retains Blender scripts, .blend data and historical receipts by explicit preservation scope.",
+    "No system package, graphics driver, system Python or unrelated application package was removed."
+  ]
+}

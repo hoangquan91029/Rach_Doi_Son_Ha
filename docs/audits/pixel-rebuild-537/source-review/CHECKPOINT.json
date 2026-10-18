@@ -1,0 +1,66 @@
+{
+  "taskId": "pixel-source-review537",
+  "model": "gpt-6.1-sol",
+  "reasoningEffort": "low",
+  "evidence": "VERIFIED_SOURCE_AND_BOUNDED_TESTS",
+  "head": "1c7097fc80f94fc87f2fdc97d355e414601c37a4",
+  "inputDrift": [],
+  "findings": [
+    {
+      "priority": "P2",
+      "path": "client/pixel-sprite-bank.js",
+      "lines": [
+        19,
+        20
+      ],
+      "title": "Hit clip truncates to authoritative 250ms window",
+      "evidence": "shared/sim.js:225 sets hitUntil=tick+5 without changing idle state. Bank selects hit only while hitUntil>tick and advances unscaled elapsed milliseconds. 800ms 8-frame fixture renders frames 0,0,1,1,2 at ticks10..14 then selects idle at15. Retained reproduce-hit.log.",
+      "recommendation": "Map hit episode elapsed fraction to full clip duration while preserving simulation window; test real idle entity with hitUntil, not permanent state=hit."
+    },
+    {
+      "priority": "P2",
+      "path": "scripts/pixel-sprites.py",
+      "lines": [
+        142,
+        142
+      ],
+      "title": "Finite preview GIFs always repeat",
+      "evidence": "preview() writes loop=0 unconditionally and main passes only durations, losing metadata.loop=false. Finite hit/attack/recovery clips therefore preview as endless loops. Source verified only.",
+      "recommendation": "Pass loop policy into preview; omit loop extension for finite clips and verify exported GIF timing/loop metadata."
+    }
+  ],
+  "tests": [
+    {
+      "command": "node --test tests/pixel-animation535.test.js tests/pixel-integration535.test.js",
+      "exitCode": 0,
+      "result": "16 PASS",
+      "log": "tests.log"
+    },
+    {
+      "command": "node docs/audits/pixel-rebuild-537/source-review/reproduce-hit.mjs",
+      "exitCode": 0,
+      "result": "Confirmed truncated hit",
+      "log": "reproduce-hit.log"
+    }
+  ],
+  "errors": [
+    "Initial reproduction preparation used unavailable python command; subsequent python3 used successfully. Initial node file-missing error occurred because preparation did not create file. No source changes.",
+    "Initial bounded rg named absent shared/simulation.js; actual implementation found shared/sim.js."
+  ],
+  "limitations": [
+    "No images, browser, server, deployment or visual/runtime/owner approval.",
+    "Synthetic metadata/decode fixtures test controller logic only.",
+    "Legacy detachment focused tests pass; actual browser asset requests unobserved.",
+    "No code or shared registry edits. All outputs exclusive source-review directory."
+  ],
+  "imageCalls": 0,
+  "handles": "No background processes created",
+  "nextDependency": "Root fix/review hit episode mapping and finite GIF export before related qualification.",
+  "additionalReview": {
+    "pause": "Pure animator frozen path drops clock/distance gaps; existing focused test verifies frame frozen and resumes by new delta. No additional confirmed pause bug.",
+    "events": "Finite marker crossings and action reentry verified by focused test; no simulation mutation in pixel controller. Loop marker output coalesces multiple crossed cycles to one marker per name per sample, so consumers must not assume per-cycle count.",
+    "stride": "Per-identity reviewed stride lookup, missing stride unqualified and distance-only progress covered by current focused tests. No browser foot-lock assessment.",
+    "viewer": "Direction mapping inverse of engine mapping is correct; Stop missing idle remains explicit; deterministic finite episode preview test uses permanent hit state and therefore misses real transient hit truncation.",
+    "detachment": "Renderer routes non-buildings to pixel bank; unit/portrait manifests filtered; focused checks pass. No live network loading observation."
+  }
+}

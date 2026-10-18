@@ -1,0 +1,100 @@
+{
+  "schema": "rds-scoped-runtime-intake/v1",
+  "taskId": "runtime529-intake",
+  "status": "SCOPED_TERMINAL_EVIDENCE_INTAKE_COMPLETE",
+  "method": "Read existing raw JSON/log/source; scoped audit preflight; /proc absence and localhost TCP refused. No trial replay.",
+  "head": "1c7097fc80f94fc87f2fdc97d355e414601c37a4",
+  "inputs": [
+    {
+      "path": "scripts/qa/villager-idle529.mjs",
+      "sha256": "0b9371b66d4366491407394d3b78f31196549fa349f32ed015f667b6c7f9ae7c"
+    },
+    {
+      "path": "client/art-assets.js",
+      "sha256": "fdf0caf83b59a749918a4713fb444ca6eb2bf018e9645f795e851c48e9309cf4"
+    },
+    {
+      "path": "client/raster-slice.js",
+      "sha256": "af6736681580d42e4f9f168209d6c3beed9c0bd59f0f578ec9505d7598d661b8"
+    },
+    {
+      "path": "client/action-presentation.js",
+      "sha256": "543c640458f423715030382259c20f2d2580fd1bae249e7cc1df3ce1ced45bea"
+    },
+    {
+      "path": "shared/sim.js",
+      "sha256": "c9a01adba8630e89e1c3f195c1b98c08c32e74468d389a55891c664e3906e562"
+    },
+    {
+      "path": "docs/art/pipeline/villager-idle-523/exports/compiled-selected/asset.json",
+      "sha256": "00d92ecc5725b0d02f83f49caa32da0a8dbfb4e9f8b28bf5a947bb45406b6c5c"
+    },
+    {
+      "path": "docs/qa/villager-idle-529/receipt.json",
+      "sha256": "2982983373418617bfb79250990dda14bf2a034e4cf8431ce26ff45d6a1b6159"
+    },
+    {
+      "path": "docs/qa/villager-idle-529/run.log",
+      "sha256": "ff8b4f285b61847e3b1ecb055ab854edb5962b1c50101cdc89c7622c227f6f1f"
+    },
+    {
+      "path": "docs/qa/villager-idle-529/browser-custody/status.json",
+      "sha256": "2b26258bb570145cb5ea31df4a40d1e69fe3b55f58090df4c1f98bfdc9f1fcc2"
+    }
+  ],
+  "preflight": {
+    "exit": 0,
+    "path": "docs/qa/villager-idle-529-intake/preflight.json"
+  },
+  "facts": [
+    {
+      "class": "VERIFIED",
+      "claim": "Existing terminal receipt and run.log agree on SCOPED_IDLE_ENTRY_FRAMES_STOP_PAUSE_MENU_OBSERVED; one attempt.json; 80 samples; empty errors, consoleErrors and requestFailures. This verifies recorded evidence, not direct continuous observation."
+    },
+    {
+      "class": "VERIFIED",
+      "claim": "Arrival uses actual assigned target and distance 0.6228471928634196 <=0.7; entity idle D1/order null; authored whole523 F0 nonstatic. Stop entry tick239 repeats idle D1 F0."
+    },
+    {
+      "class": "VERIFIED",
+      "claim": "Idle-allframes samples contain F0-F3. Pause-before/after both tick243, time12131.36400000298, frame0; resume tick250 and advancing time. Harness uses ordinary buttons and keyboard plus read-only diagnostic snapshot/point; menu singleStart visible assertion recorded completion."
+    },
+    {
+      "class": "VERIFIED",
+      "claim": "Descriptor is four128x128 cells,750ms each,42x42 render, source pivot654/1140, baked contactShadow. Runtime arrival/Stop draw uses constant pivot66.75598086124403/116.36363636363636 and128 cell. Raster drawAt uses shared render/pivot; no per-frame fit in this route."
+    },
+    {
+      "class": "VERIFIED",
+      "claim": "Custody510 status: process exit/close0, disconnected true, context-close and owned-browser-server-close cleanup markers. Current /proc674077 and674091 absent; TCP33735 ECONNREFUSED. Terminal handles no browser/server/rooms; preservation true."
+    }
+  ],
+  "contradictions": [
+    {
+      "class": "VERIFIED",
+      "claim": "529 CHECKPOINT remains PREPARED_EXACT528_TRACE_AND_CONSERVATIVE_ENVELOPE_PROOF_PENDING_REVIEW and pre-execution limitations; raw receipt/runlog supersede it for execution facts. Preserved untouched."
+    },
+    {
+      "class": "VERIFIED",
+      "claim": "Arrival-walk samples initially entity walk D2 with villager-idle-D00 static illustration, then D1 entity walk with whole523 draw; transition samples do not prove oldwalk014 playback or walk quality. Scope must not claim authored D1 walk observed throughout."
+    }
+  ],
+  "limits": [
+    "80 diagnostic samples/still do not establish continuous motion, foot lock, natural seam or quality PASS.",
+    "Owner-loop-approval523 is documented direct human acceptance only for exact idleD1; cannot extend to movement/runtime/public/other actions or directions.",
+    "Local offline Delta/easy oneactor id7; no public/multiplayer/fullunit qualification.",
+    "Global pipeline PLACEHOLDER_ONLY/fallback1 remains visible despite authored target idle.",
+    "Custody markers are recorded intent, not proven cleanup cause; process/port checks establish current absence only.",
+    "Full goal OPEN; HP0 disappearance for all units/buildings; death art waived."
+  ],
+  "operations": {
+    "browser": 0,
+    "build": 0,
+    "tests": 0,
+    "image": 0,
+    "sourceChanges": 0,
+    "registryChanges": 0,
+    "stateChanges": 0
+  },
+  "handlesOwned": [],
+  "nextDependency": "Root may integrate scoped facts into authoritative state/queue; living movement and broader/runtime/public completion remain open."
+}

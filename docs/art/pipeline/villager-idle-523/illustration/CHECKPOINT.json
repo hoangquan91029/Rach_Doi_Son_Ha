@@ -1,0 +1,82 @@
+{
+  "schema": "rds-idle523-illustration-package/v1",
+  "taskId": "illustration-idle523",
+  "workerModel": "gpt-6-luna",
+  "workerReasoning": "high",
+  "workKind": "image-generation",
+  "scope": "One three-frame South Villager idle candidate package. Root selected F2 as a source endpoint only; F1/F3 are returned candidates. No motion or clip approval.",
+  "preservedF2Checkpoint": {
+    "file": "checkpoint-F2-stage.json",
+    "sha256": "eac9b2007882db48805c2f6e9a0b3acd6ff57842a78ab34cbc7d24a60905756d"
+  },
+  "calls": [
+    {
+      "key": "F2",
+      "custodyFile": "F2-custody.json",
+      "custodySHA256": "0377f67052acf9ea9a520a4d218446ad33872a55a99e5890794419bb215586de",
+      "orderId": "villager-idle-D1-whole523-THREE",
+      "slotIndex": 2,
+      "claimToken": "ac551f7f-db74-441a-ab07-f99c59fa00b4",
+      "requestSHA": "d2b256f6613b44b6d108bf4327d2af403cd30e2c5b3f0277f94430e977c8f8fb",
+      "raw": "F2-raw.png",
+      "rawSHA256": "7e2f4c8c46d3bd61bd680019e020425f3bca0e4cc434559e39645a225fefe502",
+      "callsMade": 1
+    },
+    {
+      "key": "F1",
+      "custodyFile": "F1-custody.json",
+      "custodySHA256": "639f42bc5a63840b129f5fdd1e63fd0a443e3f8e23f39c8bec90e1efed733974",
+      "orderId": "villager-idle-D1-whole523-THREE",
+      "slotIndex": 1,
+      "claimToken": "5a865837-6efb-443b-b096-47a96b1807af",
+      "requestSHA": "1da85b10b0c27771387aff861289d1162aafdefb54767ecdea4692595985d1fd",
+      "raw": "F1-raw.png",
+      "rawSHA256": "624beec46371dfc6502c182b03ffb1cd2dff614966134e337161f4c8875ae643",
+      "callsMade": 1
+    },
+    {
+      "key": "F3",
+      "custodyFile": "F3-custody.json",
+      "custodySHA256": "fd459bfa6ce3ce1787df474aa77b164cba9cb47c9c7ca0de38fda6e664e40d83",
+      "orderId": "villager-idle-D1-whole523-THREE",
+      "slotIndex": 3,
+      "claimToken": "2741a288-59e0-47d6-8a73-0656ae8b80a1",
+      "requestSHA": "8ba5aa9ebd620bd0b8f681d230fda15ff13f7afb35833626c78f102a7be8178d",
+      "raw": "F3-raw.png",
+      "rawSHA256": "faa0cda1c00f5aadd3f12034b6d6ce15b8b7093ff8702f60a221bc55dbcd454b",
+      "callsMade": 1
+    }
+  ],
+  "totals": {
+    "callBudget": 3,
+    "durableClaims": 3,
+    "callsReturned": 3,
+    "framesGenerated": 3,
+    "corrections": 0,
+    "retries": 0,
+    "otherSlotsTouched": false
+  },
+  "handles": [
+    {
+      "slot": "F2",
+      "providerHandle": null,
+      "completion": "image payload returned synchronously"
+    },
+    {
+      "slot": "F1",
+      "providerHandle": null,
+      "completion": "image payload returned synchronously"
+    },
+    {
+      "slot": "F3",
+      "providerHandle": null,
+      "completion": "image payload returned synchronously"
+    }
+  ],
+  "limitations": [
+    "Generator model, seed, provider handles, and timestamps were not exposed; values remain null.",
+    "F2 was root-selected as a source endpoint only. F1 and F3 are candidates. No full idle-loop seam, motion/contact, runtime, owner, or release approval is claimed.",
+    "Root owns durable claim settlement, compiler integration, and full-loop review."
+  ],
+  "nextGate": "Root integrates selected F2 with F0 and reviews the complete idle loop; F1/F3 remain candidate frames pending root selection."
+}

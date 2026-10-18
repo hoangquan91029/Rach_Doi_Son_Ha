@@ -1,5 +1,22 @@
 # Reusable whole2D output production workflow
 
+## Latest explicit human decision522 — living movement first; death waived
+
+Human now prioritizes complete, seamless living unit animation: idle → move/walk → Stop/idle → attack/recovery, plus each applicable work, build/repair, ability, load/unload and hit state. Root authors/selects whole-clothed guides; exact LunaHigh illustrates through built-in imagegen; exact Sol6.1Low handles code/review. Preserve SAME original identities, realistic illustration, gameplay scale and actual eight directions. No Blender.
+
+**ALL units AND buildings:** keep living health bars; as soon as the displayed authoritative HP reaches0, disappear from world/minimap/picking. No death, sink, destroyed, collapse, rubble or corpse animation is required or to be generated. This supersedes every older death-art/action/lifecycle requirement below and in historical briefs/roadmaps/skills. Preserve all death raws, descriptors, order history and receipts. Gameplay death still owns damage, cargo/passengers, statistics, General defeat and outcome; do not alter simulation to implement presentation disappearance.
+
+Current source522 implements HP0 presentation hiding and excludes death from required coverage;12 focused checks and independent source review pass. Runtime/public qualification is still OPEN. Legacy death frame definitions exist only for history. Living-unit requirements now114 action banks,912 action/direction clips,5760 standard frame positions across21 identities; static fallback does not complete a clip. Existing source registry action arrays are historical snapshots; use current shared/unit-action-spec.js for new required coverage.
+
+Prior failed/held methods491/492/509 remain CLOSED; this priority change does not reset their budget or authorize an equivalent retry. Residence498 claims stay consumed UNRESOLVED. No new image call follows from a plan or this decision. Register finite original-bound jobs, inspect method lineage and exact references, prepareOrder and durable claim before every call. Code presence does not prove movement quality. No owner/motion/public approval from tests.
+
+Authoritative queue/state: docs/NEXT_STEPS.md and docs/PROJECT_STATE.md. Receipt: docs/audits/movement-priority-522/root/CHECKPOINT.json. Capacity521 remains prepared/deferred; no more death work. Full project goal ACTIVE, with public HTTPS two modes/two maps and remaining critical requirements still OPEN.
+
+## Earlier decisions and requirements (preserved;522 overrides death and priority)
+
+
+**Current507 human assignment:** root owns whole-clothed motion sketches and key selection; illustration tasks explicitly marked `workKind: image-generation` use `gpt-6-luna / high`; code and independent review use `gpt-6.1-sol / low`. This supersedes older universal Sol-only wording below, without changing finite calls, references, original identity or review gates. Latest supplied AGENTS prohibits new character Blender work; retain the older branch as history. Current source/queue is PROJECT_STATE/NEXT_STEPS.
+
 **Active499 authoring override:** human permits Blender model/rig → complete2D rendered sprites of the SAME original identity. Read [Blender pipeline](BLENDER_SPRITE_PIPELINE.md) for capability → appearance → rig/clip → game-size review → runtime sequence. The image-edit recipe below remains valid for imagegen only, with all failed methods/caps intact; it is no longer the only permitted authoring route. No blocky final units, mirrored sprites, pixel assemblies or per-frame fitting.
 
 One folder per unit/action/direction job; one frame ledger and append-only output custody. No new document set per frame. Shared templates include the original five types plus explicit guide-first `guide_key`; enrich shared data, not one-off compiler/harness code.

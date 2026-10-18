@@ -1,0 +1,11 @@
+529 uses one conservative mechanism: an arrival square enclosing the engine's radius-0.7 disk, a fixed first target, and a rectangle enclosing both rest positions and every short continuation.
+
+For staging S and fixed first target T=S+(3,3), any arrival A within S±0.7 has both T−A coordinates in [2.3,3.7]. Their ratio lies in [0.6216,1.6087], inside the D1 angular sector [tan22.5°,tan67.5°]=[0.4142,2.4142]. This establishes intended vector direction only; actual grid/crowd navigation and final facing must be observed.
+
+The certificate rectangle is [S.x−0.7,S.x+5.2] × [S.y−0.7,S.y+5.2]. It contains the first arrival square, fixed target T, the radius-0.7 first-D1 arrival square around T, and all +1.5,+1.5 short segments from that square. Every intersecting grid cell must be visible/plain/passable at its center. These cells cover all source diagonal side-cell tests. Exact continuous square building-footprint intersections use BUILDINGS.radius+0.15 and friendly-gate semantics. Current unit occupants are conservatively excluded with an additional0.7 margin.
+
+After the ordinary egress command, the certificate is checked again around the actual engine-assigned center before waiting for engine0.7 arrival. From actual arrival the fixed original first target is checked anew; it is not translated by the arrival error. The next short segment is planned and checked from the actual first-D1 arrival. Neither threshold, simulation speed nor facing is altered.
+
+The exact528 saved trace proves ideal point clear while translated actual segment crosses Residence1. The old fixed target avoids that building in source geometry but can meet an initial visible unit, so529 uses the stronger whole-envelope certificate and chooses another visible staging region. This does not prove actual528 dynamic unit positions or authorize bypassing occupancy checks: runtime always checks units.
+
+Finite corner tests supplement the conservative rectangle proof; samples alone are not proof of all offsets. New hidden buildings, moving units or changed visibility can invalidate the certificate. Actual assigned target, path/facing, entry frames, Stop and Pause remain unproven until one separately authorized scene.

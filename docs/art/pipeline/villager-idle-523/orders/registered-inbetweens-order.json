@@ -1,0 +1,103 @@
+{
+  "id": "villager-idle-D1-whole523-THREE",
+  "status": "OPEN",
+  "jobKind": "action",
+  "identity": "villager",
+  "action": "idle",
+  "direction": 1,
+  "job": {
+    "id": "villager-idle-D1-whole523",
+    "action": "idle",
+    "direction": 1,
+    "variant": "rest-breath-rest-original-endpoint",
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-idle-523/authoring/job-selected-endpoints.json",
+    "sha256": "167998417205c7d1d0ab6186feb8ec5b3aa717cda9e3932d2ee115cd78d595ac"
+  },
+  "callLimit": 3,
+  "callsUsed": 1,
+  "correctionCap": 0,
+  "correctionsUsed": 0,
+  "callsRemaining": 2,
+  "slots": [
+    {
+      "frame": 0,
+      "phase": 0,
+      "status": "selected",
+      "kind": "initial",
+      "template": "key"
+    },
+    {
+      "frame": 1,
+      "phase": 0.25,
+      "status": "pending",
+      "kind": "initial",
+      "template": "inbetween"
+    },
+    {
+      "frame": 2,
+      "phase": 0.5,
+      "status": "held",
+      "kind": "initial",
+      "template": "key",
+      "claim": {
+        "token": "ac551f7f-db74-441a-ab07-f99c59fa00b4",
+        "requestSHA": "d2b256f6613b44b6d108bf4327d2af403cd30e2c5b3f0277f94430e977c8f8fb",
+        "claimedAt": "2026-10-13T12:20:49.343Z"
+      },
+      "settlement": {
+        "token": "ac551f7f-db74-441a-ab07-f99c59fa00b4",
+        "settledAt": "2026-10-13T12:26:01.448Z",
+        "output": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-idle-523/illustration/F2-raw.png",
+          "sha256": "7e2f4c8c46d3bd61bd680019e020425f3bca0e4cc434559e39645a225fefe502"
+        },
+        "approval": false
+      }
+    },
+    {
+      "frame": 3,
+      "phase": 0.75,
+      "status": "pending",
+      "kind": "initial",
+      "template": "inbetween"
+    }
+  ],
+  "enforcement": {
+    "version": 1,
+    "taskId": "illustration-idle523",
+    "baseline": {
+      "callsUsed": 0,
+      "correctionsUsed": 0
+    },
+    "method": {
+      "family": "same-original-rest-breath-idle523",
+      "parentOrderIds": []
+    },
+    "prerequisites": [
+      {
+        "job": {
+          "path": "docs/art/pipeline/villager-idle-523/authoring/job-selected-endpoints.json",
+          "sha256": "167998417205c7d1d0ab6186feb8ec5b3aa717cda9e3932d2ee115cd78d595ac"
+        },
+        "frame": 0,
+        "phase": 0.0,
+        "input": {
+          "path": "docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+          "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+        }
+      },
+      {
+        "job": {
+          "path": "docs/art/pipeline/villager-idle-523/authoring/job-selected-endpoints.json",
+          "sha256": "167998417205c7d1d0ab6186feb8ec5b3aa717cda9e3932d2ee115cd78d595ac"
+        },
+        "frame": 2,
+        "phase": 0.5,
+        "input": {
+          "path": "docs/art/pipeline/villager-idle-523/illustration/F2-raw.png",
+          "sha256": "7e2f4c8c46d3bd61bd680019e020425f3bca0e4cc434559e39645a225fefe502"
+        }
+      }
+    ]
+  }
+}

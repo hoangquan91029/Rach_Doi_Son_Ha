@@ -1,0 +1,8 @@
+{
+  "state": "FAILED_ROOT_INDEPENDENT_CHECK",
+  "command": "node --test tests/train-observation504.test.js",
+  "exitCode": 1,
+  "observation": "Old queue merelyadvances8to7/total10 incorrectly ACCEPTED_QUEUE: arbitrarytotal-3 threshold allowsinventedprefixcompletion. Workerreported6/6pass contradicts retainedtests.log, which actuallyshows5pass1fail; no prior6pass execution proven. Actual100TOTAL/60scohort observations stand, acceptedcommandbinding counts require revalidation.",
+  "failedHelperSHA256": "f2a3b921eda740966c7f0a7b820d357be4ea6b950b2bfbb26671a5e80902e238",
+  "method": "Actualroot test execution toolchunk17c3b7; summary retained, notraw test log."
+}

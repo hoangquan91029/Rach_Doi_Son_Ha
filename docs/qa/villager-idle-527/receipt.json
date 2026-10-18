@@ -1,0 +1,81 @@
+{
+  "status": "HOLD_FIRST_ERROR",
+  "scope": "ONE private SPDelta exact523D1idle technicaltransition; oldwalkheld/rejected, no newwalk/motion/owner/publicPASS",
+  "errors": [],
+  "consoleErrors": [],
+  "requestFailures": [],
+  "startup": [
+    {
+      "atUTC": "2026-10-13T13:39:18.024Z",
+      "tick": 3,
+      "mode": "offline",
+      "artLoading": false,
+      "pipeline": {
+        "unitActionPolicy": "on-demand",
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 51,
+        "ready": 48,
+        "approved": 0,
+        "candidates": 48,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 17842432,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 38,
+        "encodedReady": 0,
+        "retainedEncodedBytes": 4651704,
+        "encodedBudgetBytes": 67108864,
+        "selectedDeclared": 51,
+        "eagerDeclared": 48,
+        "deferredDeclared": 3,
+        "pending": 0,
+        "pageErrors": [],
+        "evictedPages": 0,
+        "evictedEncodedPages": 0,
+        "failures": []
+      },
+      "modal": "Preparing field artwork…The selected campaign bank is loading.",
+      "errors": [],
+      "consoleErrors": [],
+      "requestFailures": []
+    }
+  ],
+  "actions": [],
+  "samples": [],
+  "cleanup": [
+    {
+      "contextClosed": true
+    }
+  ],
+  "handlesStarted": {
+    "runnerPID": 654481,
+    "browserPID": 654495,
+    "port": 44403
+  },
+  "viewport": {
+    "width": 1920,
+    "height": 1080,
+    "dpr": 1
+  },
+  "firstException": {
+    "atUTC": "2026-10-13T13:39:18.094Z",
+    "message": "AssertionError [ERR_ASSERTION]: Actual visible plain diagonal corridor required\n    at runScene (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/qa/villager-idle527.mjs:49:235)\n    at async file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/qa/villager-idle527.mjs:55:84"
+  },
+  "handles": {
+    "runnerPID": 654481,
+    "browserPID": 654495,
+    "port": 44403,
+    "browserProcessAlive": false,
+    "browserSignal": null,
+    "browserConnected": false,
+    "browserExit": 0,
+    "serverListening": false,
+    "rooms": 0
+  },
+  "preservation": true,
+  "unresolvedHandles": [],
+  "endedUTC": "2026-10-13T13:39:18.351Z"
+}

@@ -1,0 +1,66 @@
+{
+  "schema": "rds-agent-receipt/v1",
+  "taskId": "root-model-routing536",
+  "status": "ROUTING_COMPLETE_PIXEL_REBUILD_OPEN",
+  "checks": [
+    {
+      "command": "node --test tests/agent-task-model507.test.js tests/pixel-dispatch535.test.js tests/agent-preflight-scope507.test.js",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "method": "26 scoped model/dispatch and claim-preservation tests",
+      "state": "VERIFIED",
+      "executed": true,
+      "exitCode": 0,
+      "observation": "26 passed, zero failed. Exact Sol6.1Low required at current worker snapshot dispatch; old Luna records remain auditable.",
+      "evidence": [
+        {
+          "path": "docs/audits/model-routing-536/checks.txt",
+          "sha256": "6d145de2766f6753f6ef3d31c3385b787240987087ce77c4a3b5d3dd2787f344"
+        }
+      ]
+    }
+  ],
+  "technical": {
+    "state": "VERIFIED",
+    "limitation": "Mechanical model-routing policy only; no image quality, motion, runtime or project completion proof.",
+    "observation": "Current dispatch guard enforces gpt-6.1-sol/low across worker roles; preservation comparisons passed.",
+    "evidence": [
+      {
+        "path": "scripts/agent-task-contract.mjs",
+        "sha256": "a4e6842c9c6e206dc64f0fceafd4a9cb90bf0f6cdbbca19f481c7105f7baf2c5"
+      },
+      {
+        "path": "tests/agent-task-model507.test.js",
+        "sha256": "abc70d0f4c054cdef298cec35778ad9975fb37acfc9ae086dec5076554f4b966"
+      },
+      {
+        "path": "docs/audits/model-routing-536/checks.txt",
+        "sha256": "6d145de2766f6753f6ef3d31c3385b787240987087ce77c4a3b5d3dd2787f344"
+      }
+    ]
+  },
+  "handles": [],
+  "imageCalls": 0,
+  "subagentsLaunched": 0,
+  "preservation": {
+    "ledgerSHA256": "0ae4e29f18e05713f2aa308a1aecb8759a4e892d547d03ce5f77f896bd1f4cf7",
+    "previousTaskWorkersInputsSlotsStatusesUnchanged": true,
+    "beforeDirectory": "docs/audits/model-routing-536/before"
+  },
+  "nextDependency": "Pixel rebuild535 remains open. Inspect held535 raw/custody; no consumed order can be retried merely by changing worker model.",
+  "motion": {
+    "state": "UNKNOWN",
+    "limitation": "Not assessed or approved by this model-routing task."
+  },
+  "runtime": {
+    "state": "UNKNOWN",
+    "limitation": "Not assessed or approved by this model-routing task."
+  },
+  "owner": {
+    "state": "UNKNOWN",
+    "limitation": "Not assessed or approved by this model-routing task."
+  },
+  "release": {
+    "state": "UNKNOWN",
+    "limitation": "Not assessed or approved by this model-routing task."
+  }
+}

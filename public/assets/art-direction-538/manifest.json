@@ -1,0 +1,106 @@
+{
+  "schema": "rds-native-scene-study/v1",
+  "status": "OWNER_REVIEW_PENDING",
+  "provenance": {
+    "kind": "native-raster",
+    "recipe": {
+      "path": "docs/art/pixel-village-538/authoring/draw_village.py",
+      "sha256": "e0d2b8b3d2fea5285e5f001cdc01fce7e17b78493d4c895af9837677f5d97e37"
+    },
+    "framePlan": {
+      "path": "docs/art/pixel-village-538/authoring/frame-plan.json",
+      "sha256": "c75ba977fef3af407bf35279de0f0b776c03224c46a379ed18c17aecb9b123d3"
+    },
+    "providerCalls": 0,
+    "callTokens": null,
+    "sources": [
+      {
+        "path": "docs/art/pixel-village-538/raw/ground.png",
+        "sha256": "40583d1e2e7256133182308e7a87c88ab53cc6ca8b8967892a8ae5ff892d2463"
+      },
+      {
+        "path": "docs/art/pixel-village-538/raw/house.png",
+        "sha256": "ed9a4f3e76b7b3415fe6a932d7c2d8fb9b61f8ccf6263a744901666d3c7e2142"
+      },
+      {
+        "path": "docs/art/pixel-village-538/raw/tools.png",
+        "sha256": "65b4d25eec33fb64f6482ede6ef0fd0ad3b485bd6b32590472048d64ce4b775b"
+      },
+      {
+        "path": "docs/art/pixel-village-538/raw/tree.png",
+        "sha256": "b6ed15cd22bfd2110804ebb50cbbd1b6819ef0c30b04ef20599dcfe97a9f239f"
+      },
+      {
+        "path": "docs/art/pixel-village-538/raw/worker-N.png",
+        "sha256": "8814a57c7f4dffbf42546e23eb7c6a6c75fbff4bad83490aeed340fca4bb0f51"
+      },
+      {
+        "path": "docs/art/pixel-village-538/raw/worker-S.png",
+        "sha256": "43a81b4a4a8b9af81cc1db9014325114c4094601c917a127e364cc00109f1e65"
+      },
+      {
+        "path": "docs/art/pixel-village-538/raw/worker-SE.png",
+        "sha256": "86f698aa01f69a6956699f274862989d868eef4f6b0142e4be61d270f6c6e592"
+      },
+      {
+        "path": "docs/art/pixel-village-538/raw/worker-closeup-2x.png",
+        "sha256": "9a9d930c1c3ce5bb19b680882033af8549acb912d66d1a301b7f6020e3a2afb4"
+      },
+      {
+        "path": "docs/art/pixel-village-538/raw/worker-study.png",
+        "sha256": "a0ae3bcc4e9d5318755ad8944318b3c4881d39fcb62a675983402d97daa41255"
+      }
+    ]
+  },
+  "worker": {
+    "cellSize": 128,
+    "renderSize": [
+      128,
+      128
+    ],
+    "anchor": [
+      64,
+      112
+    ],
+    "directions": [
+      "S",
+      "SE",
+      "N"
+    ],
+    "frameCount": 3,
+    "animation": false,
+    "palette": [
+      "#202c30",
+      "#403c35",
+      "#574b3f",
+      "#75624d",
+      "#927d5d",
+      "#ac9570",
+      "#bba681",
+      "#242e30",
+      "#394344",
+      "#596260",
+      "#ac744e",
+      "#7d513c",
+      "#cc9464",
+      "#e1b17b",
+      "#303238",
+      "#5b4a39",
+      "#786047",
+      "#958062",
+      "#b18a48",
+      "#d1ae63",
+      "#86643a",
+      "#8d9f94",
+      "#9caeab",
+      "#99734c"
+    ]
+  },
+  "review": {
+    "visual": "UNKNOWN",
+    "motion": "NOT_STARTED",
+    "runtime": "UNKNOWN",
+    "owner": "PENDING",
+    "release": "NOT_REQUESTED"
+  }
+}

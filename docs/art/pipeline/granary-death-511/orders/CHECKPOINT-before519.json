@@ -1,0 +1,139 @@
+{
+  "schema": "rds-agent-receipt/v1",
+  "taskId": "illustration-building511",
+  "status": "FOUR_SOURCE_CANDIDATES_TECHNICAL_PREVIEW_PASS_GAMEPLAY_PENDING",
+  "purpose": "Complete original Granary whole2D fourphase death source package under finiteLunaHigh illustration; root custodyclosure and technicalintake",
+  "checks": [
+    {
+      "command": "python3 scripts/sprite-production.py docs/art/pipeline/granary-death-511/authoring/compiler-job.json --mode selected",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "method": "EXISTING_SCHEMA3_CANONICAL_BUILDING_COMPILER",
+      "state": "VERIFIED",
+      "executed": true,
+      "exitCode": 0,
+      "observation": "Four selected1254RGBA raws -> independentworking256/runtime512, fixedpivot6401050/render85, padding2,1032squareatlas; nonloop1600ms",
+      "evidence": [
+        {
+          "path": "docs/art/pipeline/granary-death-511/exports/compile.log",
+          "sha256": "8d3d0724c23761c3f97189288540fb17aba5b2e9c57ed585315e4ad154ed31ae"
+        }
+      ]
+    },
+    {
+      "command": "node scripts/qa/sprite-preview.mjs docs/art/pipeline/granary-death-511/exports/compiled-selected docs/art/pipeline/granary-death-511/exports/browser-preview.json",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "method": "ACTUAL_BROWSER_PREVIEW_CONTROLS",
+      "state": "VERIFIED",
+      "executed": true,
+      "exitCode": 0,
+      "observation": "Fourframesseen, F3held at1600ms, Replay/PauseResume pass at142.796875pxcanvas; errors0; ownedQAhandlesclosed",
+      "evidence": [
+        {
+          "path": "docs/art/pipeline/granary-death-511/exports/browser-preview.json",
+          "sha256": "32f6676348af1cb310cd52dfcecc18b8924fafd11d322bafd56c27365f18359e"
+        }
+      ]
+    },
+    {
+      "command": "python3 scripts/validate-art-assets.py docs/art/pipeline/granary-death-511/exports/compiled-selected/manifest.json --output docs/art/pipeline/granary-death-511/exports/packaging-validation.json",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "method": "ACTUAL_PACKAGING_VALIDATION",
+      "state": "VERIFIED",
+      "executed": true,
+      "exitCode": 0,
+      "observation": "Actualalpha/source/runtime/layout checks; novisualapproval",
+      "evidence": [
+        {
+          "path": "docs/art/pipeline/granary-death-511/exports/packaging-validation.json",
+          "sha256": "b70bac69ab9167a32f1a5472a729b83f629250b258b0cbb4b3480eb68c9ef50c"
+        }
+      ]
+    }
+  ],
+  "technical": {
+    "state": "VERIFIED",
+    "observation": "Allfour claims mapped toactualreturned1254RGBAraws/decodedhash, four initialcalls/0corrections/0retry, scopedsourcekeys selectedafterindependentreview; compiler/manifest/packaging/previewcontrols actualPASS",
+    "evidence": [
+      {
+        "path": "docs/art/pipeline/granary-death-511/illustration/CHECKPOINT.json",
+        "sha256": "222ee32fa6b5f6eda2349bff8877d0dd663e1d8c2f013ad35d36b5b6ca944e7e"
+      },
+      {
+        "path": "docs/art/pipeline/granary-death-511/exports/compiled-selected/frame-source-ledger.json",
+        "sha256": "228ebd55fa44bd514ce6088fdff0ea64c07c5db04c09e79e85d0fd8a124e22ce"
+      },
+      {
+        "path": "docs/art/pipeline/granary-death-511/exports/compiled-selected/receipt.json",
+        "sha256": "c56656e71c812bec73687fbcead416898085de445da5038519826e481829cbcc"
+      },
+      {
+        "path": "docs/art/pipeline/granary-death-511/exports/browser-preview.json",
+        "sha256": "32f6676348af1cb310cd52dfcecc18b8924fafd11d322bafd56c27365f18359e"
+      }
+    ],
+    "limitation": "Sourcekeyselection and browsercontrols only; not naturalmotion/ordinarygameplay/owner/release qualification"
+  },
+  "motion": {
+    "state": "UNKNOWN",
+    "limitation": "Source stillreviews note largeF2toF3roofdrop; actualcontinuousmotion notverified, userpreviewfeedbackpending",
+    "evidence": [
+      {
+        "path": "docs/art/pipeline/granary-death-511/review/CHECKPOINT.json",
+        "sha256": "f7c0941454f9061b70f615e0046339d901a729d072c302aadd9ed85677e56a08"
+      }
+    ]
+  },
+  "runtime": {
+    "state": "UNKNOWN",
+    "limitation": "PrivateordinaryUI candidate515 inprogress; no canonicalruntime/publicpromotion"
+  },
+  "owner": {
+    "state": "UNKNOWN",
+    "limitation": "No humanreply to currentpreview; neither rootnorworker selfawardsapproval"
+  },
+  "release": {
+    "state": "UNKNOWN",
+    "limitation": "No public/deploy/defaultmanifestchange"
+  },
+  "handles": [
+    {
+      "id": "06997374-f91e-42a6-b682-f12021a51c9d",
+      "status": "CLOSED",
+      "observation": "Exactbuiltintoolreturnedpath/rawmapping received; claimedslot settledHELDapprovalfalse. Sourcecandidate selectedseparately; no retry/refund."
+    },
+    {
+      "id": "f8e252cc-fd62-44b9-b100-9cfb60b568ef",
+      "status": "CLOSED",
+      "observation": "Exactbuiltintoolreturnedpath/rawmapping received; claimedslot settledHELDapprovalfalse. Sourcecandidate selectedseparately; no retry/refund."
+    },
+    {
+      "id": "6ea91e30-2d50-4889-94dd-b8290d6415a8",
+      "status": "CLOSED",
+      "observation": "Exactbuiltintoolreturnedpath/rawmapping received; claimedslot settledHELDapprovalfalse. Sourcecandidate selectedseparately; no retry/refund."
+    },
+    {
+      "id": "5e796818-d267-47d9-9af0-1a21dde77969",
+      "status": "CLOSED",
+      "observation": "Exactbuiltintoolreturnedpath/rawmapping received; claimedslot settledHELDapprovalfalse. Sourcecandidate selectedseparately; no retry/refund."
+    },
+    {
+      "id": "preview-http/session89969/port46625",
+      "status": "INTENTIONALLY_RUNNING",
+      "observation": "ReadonlycandidatepreviewHTTP kept foractualhumanfeedback; notgame room; processsession recorded"
+    }
+  ],
+  "calls": {
+    "initial": 4,
+    "corrections": 0,
+    "retries": 0,
+    "heldCustodyOutputs": 4,
+    "sourceCandidateSelections": 4
+  },
+  "inputCustody": {
+    "priorOrdersUnchanged": "Compare orders/ledger-before.json toallcurrentorders excludingnewgranaryorder; includes509closed and2unresolved498claims",
+    "rawPreserved": true,
+    "generatorModel": null,
+    "workerModel": "gpt-6-luna/high"
+  },
+  "nextDependency": "PrivateordinaryUIdeath515; actualcontinuousreview/humanmotionfeedback. No newimagebudget/fanout/release from custodyclosure."
+}

@@ -1,0 +1,94 @@
+{
+  "schema": "rds-agent-receipt/v1",
+  "taskId": "pixel-illustration535",
+  "status": "ONE_CALL_OUTPUT_CUSTODY_RECORDED_STRUCTURAL_HOLD",
+  "callCount": 1,
+  "orderId": "fresh-pixel-worker-walk-S-535-ONE",
+  "requestSHA": "c982f399ee02bda909572fdbb5e9617aadfbcaf1b4e50f984c1db150468f6ad1",
+  "outputs": [
+    {
+      "path": "docs/art/pixel-worker-535/raw/walk-S-provider.png",
+      "sha256": "190d53e28528a04e3bc8201fe9bbdce68c768e1db97dfd989c74681af3056a68",
+      "providerOriginal": "/home/kieu-hoang-quan/.codex/generated_images/01a13e4c-bc0f-71c3-adbd-047d5623e845/exec-de09e732-985e-49ab-99e6-b00341340160.png",
+      "dimensions": [
+        1983,
+        793
+      ],
+      "mode": "RGBA"
+    }
+  ],
+  "checks": [
+    {
+      "command": "node scripts/agent-preflight.mjs --task art --source docs/art/pixel-worker-535/authoring/job.json --task-id pixel-illustration535 --inputs docs/art/pixel-worker-535/illustration/inputs.json --order-id fresh-pixel-worker-walk-S-535-ONE",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "method": "scoped agent preflight",
+      "state": "VERIFIED",
+      "executed": true,
+      "exitCode": 0,
+      "observation": "Exact task, source pins, OPEN order, pending slot and disjoint ownership validated; unrelated unresolved claims preserved.",
+      "evidence": [
+        {
+          "path": "docs/art/pixel-worker-535/illustration/preflight.txt",
+          "sha256": "cd082d5cd20c95f24da2e7916d019e796c3e0c26e23dbf7bebe16d3099e2b4cb"
+        }
+      ]
+    },
+    {
+      "command": "python3 scripts/pixel-sprites.py inspect-strip docs/art/pixel-worker-535/raw/walk-S-provider.png",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "method": "read-only native strip structural inspection",
+      "state": "FAILED",
+      "executed": true,
+      "exitCode": 1,
+      "observation": "PNG is RGBA but 1983x793; required native RGBA strip is exactly1024x128. Candidate held unchanged.",
+      "evidence": [
+        {
+          "path": "docs/art/pixel-worker-535/illustration/inspect-strip.txt",
+          "sha256": "827df92420826f9fb927390d08424ad3d2de1cefe44bc9bc94aea770ceddf45e"
+        },
+        {
+          "path": "docs/art/pixel-worker-535/raw/walk-S-provider.png",
+          "sha256": "190d53e28528a04e3bc8201fe9bbdce68c768e1db97dfd989c74681af3056a68"
+        }
+      ]
+    }
+  ],
+  "technical": {
+    "state": "FAILED",
+    "limitation": "Provider PNG dimensions 1983x793 violate the required 1024x128 strip. No resize, crop or other repair was performed.",
+    "evidence": [
+      {
+        "path": "docs/art/pixel-worker-535/raw/walk-S-provider.png",
+        "sha256": "190d53e28528a04e3bc8201fe9bbdce68c768e1db97dfd989c74681af3056a68"
+      },
+      {
+        "path": "docs/art/pixel-worker-535/illustration/inspect-strip.txt",
+        "sha256": "827df92420826f9fb927390d08424ad3d2de1cefe44bc9bc94aea770ceddf45e"
+      }
+    ],
+    "observation": "Native strip structural check returned HELD."
+  },
+  "motion": {
+    "state": "UNKNOWN",
+    "limitation": "No independent continuous-loop review; phases and foot contact are unapproved."
+  },
+  "runtime": {
+    "state": "UNKNOWN",
+    "limitation": "No atlas intake or engine runtime test was authorized or performed."
+  },
+  "owner": {
+    "state": "UNKNOWN",
+    "limitation": "No owner review or approval."
+  },
+  "release": {
+    "state": "UNKNOWN",
+    "limitation": "No release qualification."
+  },
+  "handles": [
+    {
+      "id": "03c6ea39-1c01-4fe3-8922-b770d8afeb18",
+      "status": "CLOSED",
+      "observation": "The single provider call returned; its PNG is copied byte-for-byte into the task-owned raw directory and SHA-pinned. Claim settled as held custody."
+    }
+  ]
+}

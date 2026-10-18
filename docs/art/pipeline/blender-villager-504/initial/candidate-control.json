@@ -1,0 +1,172 @@
+{
+  "control": {
+    "schema": "rds-two-view-semantic-control/v1",
+    "status": "PROPOSED_CODE_NOT_EXECUTED",
+    "sourcePins": [
+      {
+        "path": "docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+        "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94"
+      },
+      {
+        "path": "docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+        "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+      }
+    ],
+    "pivot": [
+      133.51196172248802,
+      232.72727272727272
+    ],
+    "orthoScale": 2.0,
+    "pixelsPerMeter": 128,
+    "render": [
+      42,
+      42
+    ],
+    "cameraElevation": 30,
+    "faceSourceD1Px": [
+      560,
+      161,
+      710,
+      280
+    ],
+    "faceWindowStatus": "AUTHORED source inspection estimate, originalwholefile sampling only; UValignment/identityUNKNOWN",
+    "materials": {
+      "cream": [
+        0.7,
+        0.63,
+        0.5
+      ],
+      "sash": [
+        0.14,
+        0.105,
+        0.085
+      ],
+      "trousers": [
+        0.19,
+        0.135,
+        0.095
+      ],
+      "skin": [
+        0.49,
+        0.29,
+        0.16
+      ],
+      "hair": [
+        0.033,
+        0.021,
+        0.014
+      ],
+      "rope": [
+        0.24,
+        0.15,
+        0.075
+      ],
+      "straw": [
+        0.53,
+        0.39,
+        0.21
+      ]
+    },
+    "torsoSections": [
+      {
+        "z": 0.64,
+        "D1HalfWidthPx": 31,
+        "D0HalfWidthPx": 29
+      },
+      {
+        "z": 0.75,
+        "D1HalfWidthPx": 30,
+        "D0HalfWidthPx": 27
+      },
+      {
+        "z": 0.96,
+        "D1HalfWidthPx": 24,
+        "D0HalfWidthPx": 23
+      },
+      {
+        "z": 1.1,
+        "D1HalfWidthPx": 23,
+        "D0HalfWidthPx": 21
+      },
+      {
+        "z": 1.25,
+        "D1HalfWidthPx": 27,
+        "D0HalfWidthPx": 23
+      },
+      {
+        "z": 1.39,
+        "D1HalfWidthPx": 29,
+        "D0HalfWidthPx": 25
+      },
+      {
+        "z": 1.48,
+        "D1HalfWidthPx": 24,
+        "D0HalfWidthPx": 22
+      },
+      {
+        "z": 1.52,
+        "D1HalfWidthPx": 11,
+        "D0HalfWidthPx": 12
+      }
+    ],
+    "sectionStatus": "ManualAUTHORED garment-width estimates fromwhole256original visualinspection; same modelconstraints forbothviews. Notactualmeasuredprojectionlandmarks. Fixedbaseline no perdirectionfit.",
+    "renderGate": "ROOT_SEPARATE_FINITE_AUTHORIZATION_REQUIRED",
+    "closedParent": "villager-neutral501 initial+correctionFAILED/CLOSED",
+    "changedControl": [
+      "D1lateral+ D0oblique widthconstraints solve garmentsectiondepth; 501handguessedglobalvolume replaced",
+      "semanticmaterial regions with only sourceD1face-window on curvedthickfacialvolume, globalwholeunitUVprohibited",
+      "locally raisedfrontbrim shallowcone geometry maintaining rearheight, no globalhatrotation",
+      "cream kneelengthgarment atz.64 throughshoulder1.52; darktrouser lowerleg underneath, rolledelbow cuffs, widecharcoalsash andside tails"
+    ],
+    "limits": [
+      "2Doriginals are illustrated, not consistent orthographic photogrammetry; depthfit is approximation",
+      "Facewindow/proportion/material palette requires actualrootreview; no finishedidentity claim",
+      "hatfrontshape needs actualexposure observation",
+      "No rigs/motion/rearidentity/fanout/runtime/release"
+    ],
+    "independentMacroConstraints": {
+      "path": "docs/audits/continuation-504/identity-review/CONSTRAINTS.json",
+      "sha256": "3c76ea01e2ff43ef5cfc6c7aa2c7a9ceba6468944bb108a77706558d977a79a6",
+      "status": "INFERRED_NOT_APPROVED",
+      "usage": "D1projectedcrown/brim/face/shoulder/sash/hem/cuffs/contacts guideactualgeometry; D0depth crosscheck. Sourcecamera UNKNOWN despiteenginebasis30degrees."
+    },
+    "originalD1MacroLevels": {
+      "sourceCanvas": 1254,
+      "uncertaintyPx": 25,
+      "apexY": 50,
+      "brimY": 195,
+      "faceY": [
+        161,
+        280
+      ],
+      "shoulderSpan": [
+        465,
+        766
+      ],
+      "sashY": 531,
+      "hemY": 817,
+      "cuffsY": 950,
+      "sandalsY": 1165
+    },
+    "authoringLevelConversion": "z\u2248(pivotY-originalY*256/1254)/(128*sin60), with depth correction fromcamera basis; fixedcalibration notbbox/perviewfit",
+    "sashPhysicalSide": {
+      "status": "INFERRED_FROM_ACTUAL_ORIGINAL_VIEWS",
+      "D1KnotSourcePx": [
+        700,
+        540
+      ],
+      "D1WaistCenterPx": [
+        635,
+        531
+      ],
+      "physicalLocalY": "+Y",
+      "projectionReason": "At root-45degrees, local+Y produces positivescreenX; knot andtails remain samephysicalside acrossD0/D1",
+      "D0Observation": "OriginalD0 hasknot/tails image-right ofwaistcenter, consistentwithlocal+Y underobliqueview",
+      "limitations": "Sourceillustrations/handestimatedanchors notrecovered3D; noUVflip/mirror orperviewsidechange"
+    }
+  },
+  "rendered": false,
+  "appearance": "UNKNOWN",
+  "faceIdentity": "UNKNOWN until actualD0/D1 review",
+  "unseenRear": "PROPOSED"
+}

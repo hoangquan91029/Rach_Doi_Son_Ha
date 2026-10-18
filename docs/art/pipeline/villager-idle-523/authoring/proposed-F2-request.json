@@ -1,0 +1,34 @@
+{
+  "orderId": "villager-idle-D1-whole523-THREE",
+  "slotIndex": 2,
+  "kind": "key",
+  "values": {
+    "identity": "villager",
+    "master": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+    "direction": "1",
+    "camera": "dimetric 2:1 ground projection; fixed whole original elevated camera; no independent camera fit",
+    "screenFacing": "South",
+    "weaponOwnership": "No held tool or weapon is visible in this idle master; preserve empty visible hands. Separate work-action tools require their own existing source pins and grips.",
+    "referenceRoles": "directionalview,guide",
+    "invariants": "Usecase identity-preserve. One whole realistic illustrated transparent PNG, the EXACT original South Villager. Preserve conicalstrawhat, moustache/beard, beige crossover tunic/darksash/baggybrowntrousers/creamcalfwraps/openbrownsandals and toes. Canvas1254square, exact original camera/pivot6541140/render42/fixedfamily scale. First image is ORIGINALAPPEARANCE ANDRESTPOSE. Second is authoringONLY wholeclothed breathguide: it controls small chest/sleeve expansion ONLY, never borrow vectorface/cone/costume/style. Both soles/feet and lowerbody/face/hat remain at original positions; do not translate or scale whole body. Transparent background, no labels/ground/props.",
+    "action": "idle",
+    "phase": "0.5",
+    "support": "Both original feet stay planted, weight evenly balanced, original two sandal silhouettes, no walking or leg switch. Hip/knees/ankles and fixedbodyenvelope kept.",
+    "movingParts": "F2 peak of slow3000ms breath: modest chest volume expansion under original tunic, upper sleeves/shoulders rise slightly while feet/hips and hat/face remain fixed; naturalconnected torso. No arm gesture, no headturn, no new tool.",
+    "bodyMotion": "RestF0 tosmallbreathpeakF2 and back. Keep silhouette change below about1logicalpixel at70.56px gameplay, while coherent breathing isvisible acrosswholeloop. Preserve anatomy and drawnvolume, no entireimage resize/shift.",
+    "equipmentMotion": "Empty relaxed hands stay by original sides. Sash knot, trouserwrappings and sandals notredesigned; robe reacts gently to chestmotion. Bakedshadow mode matches original; no separate extra shadow.",
+    "nextKey": "NextF3 descends toward EXACToriginalrestF0; reserve F1/F3 pending until independentkeyreview/rootselection. This single candidate is notwalkrepair or fullcycleproof."
+  },
+  "references": [
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "role": "directionalview"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-idle-523/authoring/guide/F2.png",
+      "sha256": "72f94b1eefc0e33e023f82ef4f1b5ae2421d8d2a667fa653dd4bbea467e02fcc",
+      "role": "guide"
+    }
+  ]
+}

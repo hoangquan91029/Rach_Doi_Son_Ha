@@ -1,0 +1,61 @@
+{
+  "schema": "rds-task-receipt/v1",
+  "taskId": "browser-lifetime520",
+  "status": "VERIFIED_BLANK_LIFETIME330S_ONLY_ROOT_INTAKE",
+  "observation": {
+    "status": "BLANK_SESSION_SURVIVED330S",
+    "durationMs": 330006.36032700003,
+    "browser": "151.0.7922.34",
+    "heartbeats": 67,
+    "handles": {
+      "browserPID": 593587,
+      "browserConnected": false,
+      "exitCode": 0,
+      "signalCode": null,
+      "unresolved": false
+    },
+    "actualProcessAbsence": {
+      "593538": true,
+      "593587": true
+    }
+  },
+  "evidence": [
+    {
+      "path": "scripts/qa/browser-lifetime520.mjs",
+      "sha256": "00f19e0d753e805a208b1b38f5682382f0d0318997d82b4c2c358f8fd30930ae"
+    },
+    {
+      "path": "docs/qa/browser-lifetime-520/receipt.json",
+      "sha256": "b410b5775c603c34d9a18037f881b42c29145889e99d6e231cf75e53e89e405d"
+    },
+    {
+      "path": "docs/qa/browser-lifetime-520/browser-custody/lifecycle.jsonl",
+      "sha256": "bbecfa767d654475fbd22f5415fecac16bc279d751b80e4d282907b362dd88fc"
+    },
+    {
+      "path": "docs/qa/browser-lifetime-520/heartbeat.json",
+      "sha256": "d0482598fae1ec7bfb2a4e6c8f9201dea25f0a143f0ac91682e8718b5d97dbdb"
+    },
+    {
+      "path": "docs/qa/browser-lifetime-520/run.log",
+      "sha256": "b27c83f7a7f37693da126896a276a7e215441781b0f1744aef6939b91e2f287d"
+    },
+    {
+      "path": "docs/qa/live-rooms-521/CHECKPOINT.json",
+      "sha256": "96f1d4e666193c5299b8cb121212edab87ec0934c08a2d185c5cdeb441a7f193"
+    }
+  ],
+  "limitations": [
+    "Two blank pages survived single330s observation; game512close causeUNKNOWN. Noprofile/GPU/game/publicproof.",
+    "Worker providerusage-limit after session launch; autonomousscriptfinished/closed. OriginalworkerCHECKPOINTabsent; this is rootintake ofactualsavedbytes. Noquota polling/retry/substitution.",
+    "Rootinputs-envelope firstpreflighterror preserved; exactmarray correctionpassed before solelaunch."
+  ],
+  "calls": {
+    "browserSession": 1,
+    "restart": 0,
+    "game": 0,
+    "image": 0,
+    "production": 0
+  },
+  "nextDependency": "No live520handles. Human522 prioritizeslivingunitmovement; defer roomcapacity521 preparedsource without execution."
+}

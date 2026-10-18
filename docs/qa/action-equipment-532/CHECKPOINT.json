@@ -1,0 +1,93 @@
+{
+  "task": "action-equipment532",
+  "evidence": "VERIFIED LOCAL",
+  "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+  "head": "1c7097fc80f94fc87f2fdc97d355e414601c37a4",
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "bb1c12bbda8727835a5e9d2a4a68ca20af7d463b237ad704a189de3329cdb3ae",
+      "observedSha256": "bb1c12bbda8727835a5e9d2a4a68ca20af7d463b237ad704a189de3329cdb3ae",
+      "matches": true
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517",
+      "observedSha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517",
+      "matches": true
+    },
+    {
+      "path": "docs/art/pipeline/unit-production/villager/identity.json",
+      "sha256": "60ea0f867ab4d54ab01067deb1c642f53ca5015cbd53072949b9c0cafcb71d2b",
+      "observedSha256": "60ea0f867ab4d54ab01067deb1c642f53ca5015cbd53072949b9c0cafcb71d2b",
+      "matches": true
+    },
+    {
+      "path": "docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "observedSha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "matches": true
+    },
+    {
+      "path": "shared/unit-action-spec.js",
+      "sha256": "1e796554394506f668aa06a69443de26ab22ceaa6497fd28a6157030dc0b9fc9",
+      "observedSha256": "1e796554394506f668aa06a69443de26ab22ceaa6497fd28a6157030dc0b9fc9",
+      "matches": true
+    }
+  ],
+  "baselineSourceSha256": "7f0311c91371ce989bdaf852169c641017367b911f094086762b607d4aecc2a7",
+  "outputs": [
+    {
+      "path": "scripts/sprite-prompts.mjs",
+      "sha256": "7841f65694f5258e4d222f918a3e47a803e27bef50f8e8633f46f48ac7c2ffa7"
+    },
+    {
+      "path": "tests/action-equipment532.test.js",
+      "sha256": "36cf80bec1704cf9e22f5da7f32328f761a7a2fb098753412a88d6502df3f3ab"
+    },
+    {
+      "path": "docs/qa/action-equipment-532/preflight.json",
+      "sha256": "b981ee1d70e1a297b21a07539a21026267bab01867dacf22eb4953f245452679"
+    },
+    {
+      "path": "docs/qa/action-equipment-532/focused-tests.log",
+      "sha256": "ed17f24b45a6cf95205f3c402a7a15b1704234bf0a3359f2cbdcda6365e02738"
+    },
+    {
+      "path": "docs/qa/action-equipment-532/tests.log",
+      "sha256": "da55a3d02c4fc686367d7c3969723836deae6c802d756529b3df1648069fb47b"
+    },
+    {
+      "path": "docs/qa/action-equipment-532/change.diff",
+      "sha256": "93779cb49ffc8a747e5576463ecd4c879ba45aa18ae5d56d7f530e3ebfc78bd2"
+    }
+  ],
+  "checks": [
+    {
+      "argv": "node scripts/agent-preflight.mjs --task runtime --source scripts/sprite-prompts.mjs",
+      "exit": 0,
+      "receipt": "preflight.json"
+    },
+    {
+      "argv": "node --test tests/action-equipment532.test.js tests/sprite-order-run.test.js",
+      "exit": 0,
+      "pass": 9,
+      "fail": 0
+    },
+    {
+      "argv": "node --test tests/action-equipment532.test.js tests/sprite-order-run.test.js tests/sprite-prompts.test.js",
+      "exit": 1,
+      "pass": 16,
+      "fail": 1,
+      "limitation": "Existing required poses test expects wagon death; current522 source excludes required death. Outside task ownership; retained in tests.log."
+    }
+  ],
+  "imageCalls": 0,
+  "handles": [],
+  "limits": [
+    "No identity registry/order/ledger mutation. No image generation or art approval.",
+    "Source pins authenticate bytes and registry bindings, not equipment visual truth. Root independently reviews exact action/source before registering metadata.",
+    "Scoped equipment source must match original-authority master at target direction or selected target directional view. Nonmatching actions preserve legacy global guard.",
+    "Independent source review required."
+  ]
+}

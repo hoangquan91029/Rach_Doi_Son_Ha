@@ -1,0 +1,51 @@
+{
+  "scope": "PRIVATE_STATIC_ART_DIRECTION_AND_NATIVE_RENDER_INFRASTRUCTURE",
+  "runs": [
+    {
+      "browser": "chromium",
+      "errors": [],
+      "failedRequests": [],
+      "screenshots": [],
+      "checks": [],
+      "version": "151.0.7922.34",
+      "status": "HOLD",
+      "firstException": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('body[data-ready=true]') to be visible\u001b[22m\n\u001b[2m    34 × locator resolved to hidden <body data-ready=\"true\">…</body>\u001b[22m\n\n    at /home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/audits/art-rebuild-538/root/runtime/smoke.mjs:22:107",
+      "handles": {
+        "browserConnected": false,
+        "browserProcessAlive": false
+      }
+    },
+    {
+      "browser": "firefox",
+      "errors": [],
+      "failedRequests": [],
+      "screenshots": [],
+      "checks": [],
+      "version": "153.0",
+      "status": "HOLD",
+      "firstException": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('body[data-ready=true]') to be visible\u001b[22m\n\u001b[2m    34 × locator resolved to hidden <body data-ready=\"true\">…</body>\u001b[22m\n\n    at /home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/audits/art-rebuild-538/root/runtime/smoke.mjs:22:107",
+      "handles": {
+        "browserConnected": false,
+        "browserProcessAlive": false
+      }
+    }
+  ],
+  "errors": [
+    "chromium: locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('body[data-ready=true]') to be visible\u001b[22m\n\u001b[2m    34 × locator resolved to hidden <body data-ready=\"true\">…</body>\u001b[22m\n",
+    "firefox: locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('body[data-ready=true]') to be visible\u001b[22m\n\u001b[2m    34 × locator resolved to hidden <body data-ready=\"true\">…</body>\u001b[22m\n"
+  ],
+  "acceptance": {
+    "owner": "PENDING",
+    "motion": "NOT_STARTED",
+    "fullGame": "OPEN",
+    "release": "NOT_REQUESTED"
+  },
+  "serverListening": false,
+  "rooms": 0,
+  "status": "HOLD",
+  "limits": [
+    "Scene uses three stills, outside animation registry. No pose duplication/atlas/animation or approved game art.",
+    "No eight-direction motion/contact/combat/HP0 visual/performance qualification; existing focused source checks separate.",
+    "Headless local Chrome/Firefox only; no production deployment."
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "schema": "rds-readonly-review/v1",
+  "taskId": "review-idle-runtime525",
+  "decision": "HOLD_TERMINAL_EVIDENCE_GATES",
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "bb1c12bbda8727835a5e9d2a4a68ca20af7d463b237ad704a189de3329cdb3ae"
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+    },
+    {
+      "path": "scripts/qa/villager-idle525.mjs",
+      "sha256": "d9292a7ffb2e9754e9909bfcdda81f6e6cdd93d095ae4ceeded7f38294572846"
+    },
+    {
+      "path": "docs/qa/villager-idle-525/CHECKPOINT.json",
+      "sha256": "d489ee505c1db3f5a1d4de994aaab702906fefcfa1105d3b249ee6e0a43d5355"
+    },
+    {
+      "path": "docs/qa/villager-idle-525/ledger-pin.json",
+      "sha256": "34c2d4fe3e51c788e0101ceb1b4cce615c79e04bb5a642cbe89fbdcb83273179"
+    },
+    {
+      "path": "docs/qa/villager-idle-525/private-replacement.json",
+      "sha256": "3ef330ed61d1bb3bf74f16c768d2e8877d1228f8adf17f46bdf0c2407933cbb3"
+    },
+    {
+      "path": "docs/qa/villager-idle-525/stage/client/raster-slice.js",
+      "sha256": "af6736681580d42e4f9f168209d6c3beed9c0bd59f0f578ec9505d7598d661b8"
+    },
+    {
+      "path": "docs/qa/villager-idle-525/stage/client/action-presentation.js",
+      "sha256": "543c640458f423715030382259c20f2d2580fd1bae249e7cc1df3ce1ced45bea"
+    },
+    {
+      "path": "docs/qa/villager-idle-525/stage/client/main.js",
+      "sha256": "ed8e60ebc54da9d4a6f258be153a63bc72034ff8cca011480a2a1b97de4a8957"
+    },
+    {
+      "path": "docs/qa/villager-idle-525/stage/public/assets/art-v1/fort-202-manifest.json",
+      "sha256": "1ba64b7a0d2c13da5949c59b956735076dd16660a4a1d1c2c9768f2a15eff66c"
+    },
+    {
+      "path": "client/main.js",
+      "sha256": "ed8e60ebc54da9d4a6f258be153a63bc72034ff8cca011480a2a1b97de4a8957"
+    },
+    {
+      "path": "scripts/qa/browser-custody510.mjs",
+      "sha256": "f0bf514e1988bf3a3c7bcd3abd6111c5721f4f4f63bdce6782eff099d9194ecd"
+    }
+  ],
+  "preflight": {
+    "path": "docs/qa/villager-idle-525-review/preflight.json",
+    "sha256": "2e6f2f2b8f7cfd014276391b1dc883ee8e19a08bdb2ec258c59340bba7ac2046",
+    "exitCode": 0
+  },
+  "findings": [
+    {
+      "priority": 1,
+      "path": "scripts/qa/villager-idle525.mjs",
+      "symbol": "finally",
+      "observation": "Final preservationguard catch only records r.preservation=false/r.guardError. Browser/context/server cleanup exceptions only append cleanup fields. r.status canremain SCOPED_IDLE_ENTRY_FRAMES_STOP_PAUSE_MENU_OBSERVED and process.exitCode0 even when preservation fails or ownedshutdown unresolved.",
+      "requiredRepair": "Terminalfailedpreservation/unresolvedcleanup must forceHOLD +nonzeroexit while retainingoriginalfirstexception andexplicitunresolvedhandleevidence. Rootrecover exactownedhandles; no automaticrelaunch."
+    }
+  ],
+  "observations": [
+    "ACTIVEtask+exactEXECUTE_ONE_REVIEWED_SCENE andattemptfileabsence are asserted beforetry/import/server/browser launch; exclusiveattemptwrittenbeforelaunch; root phase stillpreparation so notexecutableyet.",
+    "UIselectors alignactualmain.js; ordinarygroundrectangle diagonal6/6 totals8.49px exceeds7px selectRect threshold, Ctrl1/1 recall uses actualkeyhandler. Mleftclick uses projectedreadonlypoint andactualUI, assigneddestination captured thenarrival<=0.7.",
+    "SPDelta easy corridorselection checksactualplainvisibletiles andlivingbuildingclearance; tick/winner/error/idleF0/4frames/Stop/PauseResume/menu checked. No simulation/state/commands/facing injection.",
+    "PrivateD1idle replacement occurs at existingindex15, avoidingstaticfirstmatch; samefamily/camera/pivot/render andbakedshadow onlynewidle. Oldwalk andseparateshadow retained, no concealment or naturalwalkapproval.",
+    "436canonicalexacttree,231stagetree,193buildtree and29artpins plus8historicalorders+FULLledgerSHA guard start/periodic/end. Sourceguard tracksmetadata stage too; rootmustfreeze inputs throughout oneattempt.",
+    "Browsercustody510 usespublicownedlaunchServer/newContext process/stderr/disconnect/percontextintent; captureserror.ownedBrowser onstartupfailure. Context/browser/server cleanup attempts present, but abovefailurepromotion blocker prevents scopedready."
+  ],
+  "limits": [
+    "150s is observationdeadline usedbyuntil, nothardprocesswallclockkill; individualUIoperationtimeouts andboundedbrowsercleanup mayextend elapsed. No 150s harddeadlineclaim.",
+    "Sourceonly; no browser/build/test/call executed byreviewer. Readpreparedbuild receipt only, notruntimePASS.",
+    "Humanapprovedshownidle523 isparentsessiondecision; no repeatedownerquestionneeded. Existingwalkheld/rejected remainsnotnaturalqualified."
+  ],
+  "nextDependency": "Producerrepairterminalfailuregating undernewsourcepins; rootreviewintake thenphaseexecution authorization. No runtimeclaim beforeactualscene.",
+  "calls": 0,
+  "handles": [],
+  "preservation": "Allreviewinputpins unchanged; exclusive reviewdirectory written."
+}

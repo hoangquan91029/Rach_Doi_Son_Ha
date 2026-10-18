@@ -1,0 +1,149 @@
+ M AGENTS.md
+ M client/action-presentation.js
+ M client/art-assets.js
+ M client/boot-ui-assets.js
+ M client/main.js
+ M client/raster-slice.js
+ M client/renderer.js
+ M docs/AGENT_EXECUTION_CONTRACT.md
+ M docs/ARCHITECTURE_DECISIONS.md
+ M docs/COMPLETION_MATRIX.md
+ M docs/NEXT_STEPS.md
+ M docs/PROJECT_ROADMAP.md
+ M docs/PROJECT_STATE.md
+ M docs/agent-read-contract.json
+ M docs/art/pipeline/ANIMATION_CONTRACT.md
+ M docs/art/pipeline/IMAGE_GENERATION_TEMPLATES.md
+ M docs/art/pipeline/SPRITE_PRODUCTION_WORKFLOW.md
+ M docs/art/pipeline/unit-production/order-ledger.json
+ M docs/art/pipeline/unit-production/villager/identity.json
+ M docs/audits/implementation-495/tasks.json
+ M scripts/agent-preflight.mjs
+ M scripts/agent-task-contract.mjs
+ M scripts/art-coverage.mjs
+ M scripts/qa/sprite-preview.mjs
+ M scripts/sprite-preview.html
+ M scripts/sprite-prompts.mjs
+ M shared/unit-action-spec.js
+ M tests/boot-ui-assets.test.js
+ M tests/sprite-prompts.test.js
+?? MASTER_HANDOFF.md
+?? client/pixel-animation.js
+?? client/pixel-sprite-bank.js
+?? client/pixel-sprite-viewer.css
+?? client/pixel-sprite-viewer.html
+?? client/pixel-sprite-viewer.js
+?? docs/ANIMATION_SPEC.md
+?? docs/PIXEL_ART_STYLE_GUIDE.md
+?? docs/SPRITE_PIPELINE.md
+?? docs/SPRITE_QA_CHECKLIST.md
+?? docs/art/pipeline/blender-villager-504/
+?? docs/art/pipeline/blender-villager-506/
+?? docs/art/pipeline/building-production/granary/
+?? docs/art/pipeline/granary-death-511/
+?? docs/art/pipeline/unit-production/templates/key_study.txt
+?? docs/art/pipeline/villager-hit-530/
+?? docs/art/pipeline/villager-idle-523/
+?? docs/art/pipeline/villager-key-study-509/
+?? docs/art/pixel-references/
+?? docs/art/pixel-worker-535/
+?? docs/art/pixel-worker-537/
+?? docs/audits/animation-context-507/
+?? docs/audits/blender-removal-508/
+?? docs/audits/blender-runtime-500/mcp/isolated-runtime-config/
+?? docs/audits/blender-runtime-502/connection/runs/1260828fa04e48d6b4dd4775df70a070/
+?? docs/audits/blender-runtime-502/connection/runs/205e1735a77f4da89c1c68e8ea65e287/
+?? docs/audits/blender-runtime-502/connection/runs/31ad1b9cef624041b54d0f9c8a10476d/
+?? docs/audits/blender-runtime-502/connection/runs/628b44df2ea64e469a62f7ee7622fa68/
+?? docs/audits/blender-runtime-502/connection/runs/78c7c0ef24864151b4c4d2afff9a984a/
+?? docs/audits/blender-runtime-502/connection/runs/9271d344564342a6936296c576fe3d2a/
+?? docs/audits/blender-runtime-502/connection/runs/b48a76aec35e4695bac1f9640e59774c/
+?? docs/audits/blender-runtime-502/connection/runs/b5405e4f3c6b478e873a7b95b67b73ed/
+?? docs/audits/blender-runtime-502/connection/runs/c91a741082bc4c908a1c4921f6384989/
+?? docs/audits/blender-runtime-502/connection/runs/db8bf054007f48c2b60b78d0b6890c95/
+?? docs/audits/blender-runtime-502/connection/runs/dff8df9cb52d4a8a8c325f5634ba5dd1/
+?? docs/audits/blender-runtime-502/connection/runs/eed04592d0234d6ca9c691fa7308ceb1/
+?? docs/audits/blender-runtime-502/connection/runs/f6f9d57ba9e04eae868eff267f8c2333/
+?? docs/audits/continuation-504/
+?? docs/audits/continuation-509/
+?? docs/audits/model-routing-536/
+?? docs/audits/movement-priority-522/
+?? docs/audits/pixel-rebuild-535/
+?? docs/audits/pixel-rebuild-537/
+?? docs/qa/action-equipment-532/
+?? docs/qa/browser-close-514/
+?? docs/qa/browser-custody-510-review/
+?? docs/qa/browser-custody-510/
+?? docs/qa/browser-lifetime-520/
+?? docs/qa/building-preview-513/
+?? docs/qa/family-layout-526-review/
+?? docs/qa/family-layout-526/
+?? docs/qa/granary-death-515/
+?? docs/qa/granary-death-516/
+?? docs/qa/granary-death-518/
+?? docs/qa/granary-death-519/
+?? docs/qa/hit-clock-531/
+?? docs/qa/idle-entry-phase-524-review/
+?? docs/qa/idle-entry-phase-524/
+?? docs/qa/live-rooms-521/
+?? docs/qa/living-coverage-534-review/
+?? docs/qa/living-coverage-534/
+?? docs/qa/living-hit-533-review/
+?? docs/qa/online-profile-504/
+?? docs/qa/online-profile-505/
+?? docs/qa/online-profile-506/
+?? docs/qa/online-profile-509/
+?? docs/qa/online-profile-512/
+?? docs/qa/unit-disappearance-522-review/
+?? docs/qa/unit-disappearance-522/
+?? docs/qa/villager-idle-525-review/
+?? docs/qa/villager-idle-525/
+?? docs/qa/villager-idle-527-review/
+?? docs/qa/villager-idle-527/
+?? docs/qa/villager-idle-528-review/
+?? docs/qa/villager-idle-528/
+?? docs/qa/villager-idle-529-intake/
+?? docs/qa/villager-idle-529-review/
+?? docs/qa/villager-idle-529/
+?? public/assets/pixel-v1/
+?? scripts/blender/villager504.py
+?? scripts/blender/villager506.py
+?? scripts/pixel-sprite-contract.mjs
+?? scripts/pixel-sprites.py
+?? scripts/qa/browser-custody510.mjs
+?? scripts/qa/browser-lifetime520.mjs
+?? scripts/qa/granary-death515.mjs
+?? scripts/qa/granary-death516.mjs
+?? scripts/qa/granary-death518.mjs
+?? scripts/qa/granary-death519.mjs
+?? scripts/qa/live-rooms521.mjs
+?? scripts/qa/online-profile504.mjs
+?? scripts/qa/online-profile506.mjs
+?? scripts/qa/online-profile509.mjs
+?? scripts/qa/online-profile512.mjs
+?? scripts/qa/train-observation504.mjs
+?? scripts/qa/villager-idle525.mjs
+?? scripts/qa/villager-idle527.mjs
+?? scripts/qa/villager-idle528.mjs
+?? scripts/qa/villager-idle529.mjs
+?? scripts/sprite-key-study.mjs
+?? tests/action-equipment532.test.js
+?? tests/agent-preflight-scope507.test.js
+?? tests/agent-task-model507.test.js
+?? tests/browser-custody510.test.js
+?? tests/building-preview513.test.js
+?? tests/family-layout526.test.js
+?? tests/hit-clock531.test.js
+?? tests/idle-entry-phase524.test.js
+?? tests/pixel-animation535.test.js
+?? tests/pixel-correctness537.test.js
+?? tests/pixel-dispatch535.test.js
+?? tests/pixel-gif537.py
+?? tests/pixel-integration535.test.js
+?? tests/pixel-native-provenance537.py
+?? tests/pixel-native-provenance537.test.js
+?? tests/pixel-sprite-contract535.test.js
+?? tests/pixel-sprites535.py
+?? tests/sprite-key-study.test.js
+?? tests/train-observation504.test.js
+?? tests/unit-disappearance522.test.js

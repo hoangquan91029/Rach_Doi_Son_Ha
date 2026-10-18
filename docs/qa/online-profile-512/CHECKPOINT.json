@@ -1,0 +1,692 @@
+{
+  "schema": "rds-task-receipt/v1",
+  "taskId": "online-profile512",
+  "status": "HOLD_FIRST_UNEXPLAINED_PAGE_CONTEXT_CLOSE_NO200PROFILE",
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "a81895b57e445ae913773fd7bf55049f84d859d407e175de2d106edc4f3c52bd"
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+    },
+    {
+      "path": "scripts/qa/online-profile509.mjs",
+      "sha256": "c6b08911fdd3cd1d6425e13967f25dbeea23b5d8f6e31fafe0c7f8009b34aef9"
+    },
+    {
+      "path": "scripts/qa/browser-custody510.mjs",
+      "sha256": "f0bf514e1988bf3a3c7bcd3abd6111c5721f4f4f63bdce6782eff099d9194ecd"
+    },
+    {
+      "path": "docs/qa/browser-custody-510-review/CHECKPOINT.json",
+      "sha256": "2714720096e14edd152e7b3a0192f0df82465ac1511e63431a9b538392392dc7"
+    },
+    {
+      "path": "scripts/qa/train-observation504.mjs",
+      "sha256": "0538fc1723dc2314288310445454362a2532311bb5fe8a41fb93b9b029235780"
+    },
+    {
+      "path": "docs/qa/online-profile-509/CHECKPOINT.json",
+      "sha256": "414bf12dd65b8f29d570b03eb353bba3a6159de71d7d9fa2da813b57b3cb1aac"
+    },
+    {
+      "path": "shared/sim.js",
+      "sha256": "c9a01adba8630e89e1c3f195c1b98c08c32e74468d389a55891c664e3906e562"
+    },
+    {
+      "path": "server/index.js",
+      "sha256": "4e6a7e82f02d1d856f4ea788863c4836930bc00250be6a5b020ba2bdd8884198"
+    }
+  ],
+  "purpose": "One new diagnostic/ordinary mixedcohort200TOTAL100perside acquisition, repaired510custody and sustainable30assignedworkers. Not509restart",
+  "checks": [
+    {
+      "argv": [
+        "node",
+        "scripts/agent-preflight.mjs",
+        "--task",
+        "runtime",
+        "--task-id",
+        "online-profile512",
+        "--inputs",
+        "docs/audits/continuation-509/root/online-profile512-inputs.json",
+        "--source",
+        "scripts/qa/online-profile509.mjs"
+      ],
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0,
+      "log": "docs/qa/online-profile-512/preflight.json"
+    },
+    {
+      "argv": [
+        "node",
+        "--check",
+        "scripts/qa/online-profile512.mjs"
+      ],
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0
+    },
+    {
+      "argv": [
+        "node",
+        "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/node_modules/vite/bin/vite.js",
+        "build",
+        "--config",
+        "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/online-profile-512/stage/vite.config.js",
+        "--outDir",
+        "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/online-profile-512/build"
+      ],
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/online-profile-512/stage",
+      "exitCode": 0,
+      "log": "docs/qa/online-profile-512/build.log"
+    },
+    {
+      "argv": [
+        "node",
+        "scripts/qa/online-profile512.mjs",
+        "docs/qa/online-profile-512/config.json"
+      ],
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0,
+      "log": "docs/qa/online-profile-512/run.log",
+      "limit": "Runner catches HOLD; exit0 notqualificationPASS"
+    }
+  ],
+  "observations": {
+    "evidence": "VERIFIED",
+    "browser": "151.0.7922.34",
+    "host": {
+      "cpu": "12th Gen Intel(R) Core(TM) i5-12450HX",
+      "logicalCPUs": 12,
+      "totalRAM": 28578369536,
+      "freeRAM": 9460056064,
+      "platform": "linux"
+    },
+    "initial": [
+      {
+        "phase": "initial",
+        "side": 0,
+        "state": {
+          "tick": 5,
+          "localPlayer": 0,
+          "winner": null,
+          "ownLiving": 13,
+          "visibleEntities": 17,
+          "visibleLivingUnits": 13,
+          "population": 13,
+          "populationCap": 120,
+          "types": {
+            "king": 1,
+            "general": 1,
+            "villager": 6,
+            "infantry": 3,
+            "spearman": 1,
+            "wagon": 1
+          },
+          "resources": {
+            "wood": 550,
+            "food": 809.7681600000004,
+            "iron": 260
+          },
+          "frameMs": 5.899999991059303,
+          "pipeline": {
+            "unitActionPolicy": "on-demand",
+            "status": "CANDIDATE",
+            "manifest": "ready",
+            "declared": 51,
+            "ready": 48,
+            "approved": 0,
+            "candidates": 48,
+            "failed": 0,
+            "skipped": 0,
+            "fallbacks": 0,
+            "decodedBudgetBytes": 134217728,
+            "retainedDecodedBytes": 17629184,
+            "reservedDecodedBytes": 0,
+            "uniqueDecodedImages": 38,
+            "encodedReady": 0,
+            "retainedEncodedBytes": 4608899,
+            "encodedBudgetBytes": 67108864,
+            "selectedDeclared": 51,
+            "eagerDeclared": 48,
+            "deferredDeclared": 3,
+            "pending": 0,
+            "pageErrors": [],
+            "evictedPages": 0,
+            "evictedEncodedPages": 0,
+            "failures": []
+          },
+          "bank": {
+            "phase": "match",
+            "epoch": 2,
+            "encodedBytes": 4608899,
+            "encodedBudgetBytes": 67108864,
+            "activeIds": [
+              "grass",
+              "water",
+              "forest",
+              "residence",
+              "infantry-idle-D00",
+              "cavalry-idle-D00",
+              "villager-idle-D00",
+              "tran-hung-dao-idle-D00",
+              "unit-contact-shadow",
+              "ford",
+              "shore",
+              "forest-bamboo",
+              "forest-palm",
+              "granary",
+              "villager-walk-south-014",
+              "villager-idle-south-014",
+              "villager-gather-wood-south-024",
+              "mountain-outcrop-108",
+              "grassy-hill-111",
+              "food-resource-114",
+              "iron-resource-119",
+              "barracks-idle-121",
+              "supply-depot-idle-126",
+              "villager-gather-iron-south-136",
+              "artillery-workshop-idle-140",
+              "cavalry-camp-idle-147",
+              "shipyard-idle-164",
+              "fort-idle-198",
+              "rocky-ground-338",
+              "stone-wall-X-362-mask0",
+              "stone-wall-X-362-mask1",
+              "stone-wall-X-362-mask2",
+              "stone-wall-X-362-mask3",
+              "stone-wall-Y-364-mask4",
+              "stone-wall-Y-364-mask8",
+              "stone-wall-Y-364-mask12",
+              "stone-wall-corner-365-mask5",
+              "stone-wall-construction-373",
+              "gate-whole-245-X-mask0",
+              "gate-whole-245-X-mask1",
+              "gate-whole-245-X-mask2",
+              "gate-whole-245-X-mask3",
+              "gate-whole-252-Y-mask4",
+              "gate-whole-252-Y-mask8",
+              "gate-whole-252-Y-mask12",
+              "tran-nhan-tong-idle-396-D0",
+              "spearman-idle-d0-400",
+              "supply-wagon-horse-idle-d0-415",
+              "unit-firearm-idle-d0-408",
+              "artillery-idle-d0-409",
+              "transport-idle-d0-447"
+            ],
+            "availableIds": [
+              "grass",
+              "water",
+              "forest",
+              "residence",
+              "infantry-idle-D00",
+              "cavalry-idle-D00",
+              "villager-idle-D00",
+              "tran-hung-dao-idle-D00",
+              "unit-contact-shadow",
+              "ford",
+              "shore",
+              "forest-bamboo",
+              "forest-palm",
+              "granary",
+              "villager-walk-south-014",
+              "villager-idle-south-014",
+              "villager-gather-wood-south-024",
+              "mountain-outcrop-108",
+              "grassy-hill-111",
+              "food-resource-114",
+              "iron-resource-119",
+              "barracks-idle-121",
+              "supply-depot-idle-126",
+              "villager-gather-iron-south-136",
+              "artillery-workshop-idle-140",
+              "cavalry-camp-idle-147",
+              "shipyard-idle-164",
+              "fort-idle-198",
+              "rocky-ground-338",
+              "stone-wall-X-362-mask0",
+              "stone-wall-X-362-mask1",
+              "stone-wall-X-362-mask2",
+              "stone-wall-X-362-mask3",
+              "stone-wall-Y-364-mask4",
+              "stone-wall-Y-364-mask8",
+              "stone-wall-Y-364-mask12",
+              "stone-wall-corner-365-mask5",
+              "stone-wall-construction-373",
+              "gate-whole-245-X-mask0",
+              "gate-whole-245-X-mask1",
+              "gate-whole-245-X-mask2",
+              "gate-whole-245-X-mask3",
+              "gate-whole-252-Y-mask4",
+              "gate-whole-252-Y-mask8",
+              "gate-whole-252-Y-mask12",
+              "tran-nhan-tong-idle-396-D0",
+              "spearman-idle-d0-400",
+              "supply-wagon-horse-idle-d0-415",
+              "unit-firearm-idle-d0-408",
+              "artillery-idle-d0-409",
+              "transport-idle-d0-447"
+            ],
+            "scope": {
+              "map": "delta",
+              "roster": [
+                "villager",
+                "king",
+                "general",
+                "infantry",
+                "spearman",
+                "firearm",
+                "cavalry",
+                "artillery",
+                "wagon",
+                "warship",
+                "transport"
+              ],
+              "buildings": [
+                "residence",
+                "barracks",
+                "cavalryCamp",
+                "artilleryWorkshop",
+                "shipyard",
+                "fort",
+                "wall",
+                "gate",
+                "depot",
+                "granary"
+              ],
+              "leaders": [
+                "tran_nhan_tong",
+                "tran_hung_dao"
+              ]
+            }
+          },
+          "pingMs": 22.299999997019768,
+          "currentSuccessfulRasterDraws": 17,
+          "rasterDrawCounterScope": "successful raster draws thisrender, may includeoffcanvas; exactviewportdensityUNKNOWN"
+        },
+        "viewport": {
+          "width": 1920,
+          "height": 1080,
+          "dpr": 1,
+          "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+          "hardwareConcurrency": 12,
+          "deviceMemory": 32,
+          "gpu": {
+            "vendor": "Google Inc. (Google)",
+            "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+          }
+        }
+      },
+      {
+        "phase": "initial",
+        "side": 1,
+        "state": {
+          "tick": 197,
+          "localPlayer": 1,
+          "winner": null,
+          "ownLiving": 13,
+          "visibleEntities": 17,
+          "visibleLivingUnits": 13,
+          "population": 13,
+          "populationCap": 120,
+          "types": {
+            "king": 1,
+            "general": 1,
+            "villager": 6,
+            "infantry": 3,
+            "spearman": 1,
+            "wagon": 1
+          },
+          "resources": {
+            "wood": 550,
+            "food": 806.0852160000071,
+            "iron": 260
+          },
+          "frameMs": 2.5,
+          "pipeline": {
+            "unitActionPolicy": "on-demand",
+            "status": "CANDIDATE",
+            "manifest": "ready",
+            "declared": 51,
+            "ready": 48,
+            "approved": 0,
+            "candidates": 48,
+            "failed": 0,
+            "skipped": 0,
+            "fallbacks": 0,
+            "decodedBudgetBytes": 134217728,
+            "retainedDecodedBytes": 17629184,
+            "reservedDecodedBytes": 0,
+            "uniqueDecodedImages": 38,
+            "encodedReady": 0,
+            "retainedEncodedBytes": 4608899,
+            "encodedBudgetBytes": 67108864,
+            "selectedDeclared": 51,
+            "eagerDeclared": 48,
+            "deferredDeclared": 3,
+            "pending": 0,
+            "pageErrors": [],
+            "evictedPages": 0,
+            "evictedEncodedPages": 0,
+            "failures": []
+          },
+          "bank": {
+            "phase": "match",
+            "epoch": 2,
+            "encodedBytes": 4608899,
+            "encodedBudgetBytes": 67108864,
+            "activeIds": [
+              "grass",
+              "water",
+              "forest",
+              "residence",
+              "infantry-idle-D00",
+              "cavalry-idle-D00",
+              "villager-idle-D00",
+              "tran-hung-dao-idle-D00",
+              "unit-contact-shadow",
+              "ford",
+              "shore",
+              "forest-bamboo",
+              "forest-palm",
+              "granary",
+              "villager-walk-south-014",
+              "villager-idle-south-014",
+              "villager-gather-wood-south-024",
+              "mountain-outcrop-108",
+              "grassy-hill-111",
+              "food-resource-114",
+              "iron-resource-119",
+              "barracks-idle-121",
+              "supply-depot-idle-126",
+              "villager-gather-iron-south-136",
+              "artillery-workshop-idle-140",
+              "cavalry-camp-idle-147",
+              "shipyard-idle-164",
+              "fort-idle-198",
+              "rocky-ground-338",
+              "stone-wall-X-362-mask0",
+              "stone-wall-X-362-mask1",
+              "stone-wall-X-362-mask2",
+              "stone-wall-X-362-mask3",
+              "stone-wall-Y-364-mask4",
+              "stone-wall-Y-364-mask8",
+              "stone-wall-Y-364-mask12",
+              "stone-wall-corner-365-mask5",
+              "stone-wall-construction-373",
+              "gate-whole-245-X-mask0",
+              "gate-whole-245-X-mask1",
+              "gate-whole-245-X-mask2",
+              "gate-whole-245-X-mask3",
+              "gate-whole-252-Y-mask4",
+              "gate-whole-252-Y-mask8",
+              "gate-whole-252-Y-mask12",
+              "tran-nhan-tong-idle-396-D0",
+              "spearman-idle-d0-400",
+              "supply-wagon-horse-idle-d0-415",
+              "unit-firearm-idle-d0-408",
+              "artillery-idle-d0-409",
+              "transport-idle-d0-447"
+            ],
+            "availableIds": [
+              "grass",
+              "water",
+              "forest",
+              "residence",
+              "infantry-idle-D00",
+              "cavalry-idle-D00",
+              "villager-idle-D00",
+              "tran-hung-dao-idle-D00",
+              "unit-contact-shadow",
+              "ford",
+              "shore",
+              "forest-bamboo",
+              "forest-palm",
+              "granary",
+              "villager-walk-south-014",
+              "villager-idle-south-014",
+              "villager-gather-wood-south-024",
+              "mountain-outcrop-108",
+              "grassy-hill-111",
+              "food-resource-114",
+              "iron-resource-119",
+              "barracks-idle-121",
+              "supply-depot-idle-126",
+              "villager-gather-iron-south-136",
+              "artillery-workshop-idle-140",
+              "cavalry-camp-idle-147",
+              "shipyard-idle-164",
+              "fort-idle-198",
+              "rocky-ground-338",
+              "stone-wall-X-362-mask0",
+              "stone-wall-X-362-mask1",
+              "stone-wall-X-362-mask2",
+              "stone-wall-X-362-mask3",
+              "stone-wall-Y-364-mask4",
+              "stone-wall-Y-364-mask8",
+              "stone-wall-Y-364-mask12",
+              "stone-wall-corner-365-mask5",
+              "stone-wall-construction-373",
+              "gate-whole-245-X-mask0",
+              "gate-whole-245-X-mask1",
+              "gate-whole-245-X-mask2",
+              "gate-whole-245-X-mask3",
+              "gate-whole-252-Y-mask4",
+              "gate-whole-252-Y-mask8",
+              "gate-whole-252-Y-mask12",
+              "tran-nhan-tong-idle-396-D0",
+              "spearman-idle-d0-400",
+              "supply-wagon-horse-idle-d0-415",
+              "unit-firearm-idle-d0-408",
+              "artillery-idle-d0-409",
+              "transport-idle-d0-447"
+            ],
+            "scope": {
+              "map": "delta",
+              "roster": [
+                "villager",
+                "king",
+                "general",
+                "infantry",
+                "spearman",
+                "firearm",
+                "cavalry",
+                "artillery",
+                "wagon",
+                "warship",
+                "transport"
+              ],
+              "buildings": [
+                "residence",
+                "barracks",
+                "cavalryCamp",
+                "artilleryWorkshop",
+                "shipyard",
+                "fort",
+                "wall",
+                "gate",
+                "depot",
+                "granary"
+              ],
+              "leaders": [
+                "tran_nhan_tong",
+                "tran_hung_dao"
+              ]
+            }
+          },
+          "pingMs": 12.5,
+          "currentSuccessfulRasterDraws": 17,
+          "rasterDrawCounterScope": "successful raster draws thisrender, may includeoffcanvas; exactviewportdensityUNKNOWN"
+        },
+        "viewport": {
+          "width": 1920,
+          "height": 1080,
+          "dpr": 1,
+          "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+          "hardwareConcurrency": 12,
+          "deviceMemory": 32,
+          "gpu": {
+            "vendor": "Google Inc. (Google)",
+            "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+          }
+        }
+      }
+    ],
+    "lastPreparation": {
+      "elapsedMs": 284190,
+      "clients": [
+        {
+          "tick": 5305,
+          "ownLiving": 62,
+          "types": {
+            "king": 1,
+            "general": 1,
+            "villager": 31,
+            "infantry": 27,
+            "spearman": 1,
+            "wagon": 1
+          },
+          "resources": {
+            "wood": 665,
+            "food": 148.91667200005696,
+            "iron": 1425
+          },
+          "winner": null
+        },
+        {
+          "tick": 5305,
+          "ownLiving": 61,
+          "types": {
+            "king": 1,
+            "general": 1,
+            "villager": 30,
+            "infantry": 27,
+            "spearman": 1,
+            "wagon": 1
+          },
+          "resources": {
+            "wood": 685,
+            "food": 128.37904000028595,
+            "iron": 1445
+          },
+          "winner": null
+        }
+      ]
+    },
+    "assigned": [
+      {
+        "side": 0,
+        "commandAssignedDistinct": 30,
+        "resources": {
+          "food": 20,
+          "wood": 5,
+          "iron": 5
+        },
+        "currentlyHarvesting": "UNKNOWN: no final fullentity snapshot recorded; commands do not prove currentharvesting",
+        "idleWorkers": "UNKNOWN"
+      },
+      {
+        "side": 1,
+        "commandAssignedDistinct": 30,
+        "resources": {
+          "food": 20,
+          "wood": 5,
+          "iron": 5
+        },
+        "currentlyHarvesting": "UNKNOWN: no final fullentity snapshot recorded; commands do not prove currentharvesting",
+        "idleWorkers": "UNKNOWN"
+      }
+    ],
+    "trainSpecificQueueStatuses": {
+      "ACCEPTED_QUEUE": 104
+    },
+    "pageErrors": [],
+    "requestFailures": [],
+    "profileStarted": false,
+    "warm10s": false,
+    "profile60s": false,
+    "framePercentiles": null
+  },
+  "failure": {
+    "error": "page.waitForTimeout: Target page, context or browser has been closed\n    at /home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/qa/online-profile512.mjs:16:4701",
+    "cause": "UNKNOWN",
+    "chronology": "Page/contextclose observed before intentionalcleanup marker; browserdisconnect/process exit0 signalnull observed aftermarker. Exit0 may reflect cleanup and does not explain earlier pageclose. No pagecrash observed.",
+    "stderr": "docs/qa/online-profile-512/browser-custody/browser-stderr.bin",
+    "lifecycle": "docs/qa/online-profile-512/browser-custody/lifecycle.jsonl",
+    "cleanupUI": [
+      {
+        "side": 0,
+        "error": "locator.isVisible: page.evaluate: page.evaluate: Browser closed"
+      },
+      {
+        "side": 1,
+        "error": "locator.isVisible: locator.isVisible: page.evaluate: page.evaluate: Browser closed"
+      }
+    ],
+    "diagnosticLimits": "No external trigger inferred; original509cause remainsUNKNOWN"
+  },
+  "preservation": {
+    "protectedFiles": 436,
+    "unchanged": 436,
+    "allUnchanged": true,
+    "scope": "existing canonical client/shared/server/public/dist hashed1sguard; directoryadditions not activelymonitored; old509source/receipts untouched"
+  },
+  "calls": {
+    "newAcquisition": 1,
+    "browserLaunch": 1,
+    "profile60s": 0,
+    "restart": 0,
+    "production": 0,
+    "image": 0,
+    "Blender": 0
+  },
+  "handles": {
+    "sessionId": 28411,
+    "runnerPID": 565166,
+    "port": 41639,
+    "browserProcessPID": 565181,
+    "browserProcessExit": 0,
+    "browserProcessSignal": null,
+    "unresolvedOwnedBrowser": false,
+    "browserConnected": false,
+    "serverListening": false,
+    "rooms": 0,
+    "closeErrors": [],
+    "allOwnedClosed": true
+  },
+  "unknowns": [
+    "200TOTALqualification",
+    "currentharvest/idleworker split",
+    "denseviewport/targetGPU/fullroster/WAN/public",
+    "page/contextclose trigger"
+  ],
+  "nextDependency": "Root inspect actualcustody chronology and environmentprocess policy before any separately authorized acquisition. No retry512. FullgameOPEN.",
+  "outputs": [
+    {
+      "path": "scripts/qa/online-profile512.mjs",
+      "sha256": "517ad2c9524e0a58f2c55ad3b9b6a3441cc79074c6cf81dba31eb13a04f6d081"
+    },
+    {
+      "path": "docs/qa/online-profile-512/receipt.json",
+      "sha256": "ec494b8ce238b1cd715e98bf3f0c94c0cfc5400c81707b841c590e574f208846"
+    },
+    {
+      "path": "docs/qa/online-profile-512/run.log",
+      "sha256": "ef8e2622e11f657721effd394fedcb45b17144981b96a1c20739537b3064804a"
+    },
+    {
+      "path": "docs/qa/online-profile-512/browser-custody/status.json",
+      "sha256": "ee512da369ff3c06d00a5c56886f9a6659ad2b33b3022b1508ef91ed39bf285f"
+    },
+    {
+      "path": "docs/qa/online-profile-512/browser-custody/lifecycle.jsonl",
+      "sha256": "02e08cabfd60553eadc15740414457702b99895c7f907fcdfc37d8ce3ab482e2"
+    },
+    {
+      "path": "docs/qa/online-profile-512/browser-custody/browser-stderr.bin",
+      "sha256": "0af356bd7cb3f7273a23dbd8cfe53377c7b7d58578fae226b7603688347d07d1"
+    }
+  ]
+}

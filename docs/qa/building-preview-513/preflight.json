@@ -1,0 +1,123 @@
+{
+  "schema": "rds-agent-preflight/v1",
+  "task": "audit",
+  "head": "1c7097fc80f94fc87f2fdc97d355e414601c37a4",
+  "status": " M AGENTS.md\n M docs/AGENT_EXECUTION_CONTRACT.md\n M docs/ARCHITECTURE_DECISIONS.md\n M docs/NEXT_STEPS.md\n M docs/PROJECT_ROADMAP.md\n M docs/PROJECT_STATE.md\n M docs/art/pipeline/ANIMATION_CONTRACT.md\n M docs/art/pipeline/IMAGE_GENERATION_TEMPLATES.md\n M docs/art/pipeline/SPRITE_PRODUCTION_WORKFLOW.md\n M docs/art/pipeline/unit-production/order-ledger.json\n M docs/art/pipeline/unit-production/villager/identity.json\n M docs/audits/implementation-495/tasks.json\n M scripts/agent-preflight.mjs\n M scripts/agent-task-contract.mjs\n M scripts/sprite-prompts.mjs\n?? MASTER_HANDOFF.md\n?? docs/art/pipeline/blender-villager-504/\n?? docs/art/pipeline/blender-villager-506/\n?? docs/art/pipeline/building-production/granary/\n?? docs/art/pipeline/granary-death-511/\n?? docs/art/pipeline/unit-production/templates/key_study.txt\n?? docs/art/pipeline/villager-key-study-509/\n?? docs/audits/animation-context-507/\n?? docs/audits/blender-removal-508/\n?? docs/audits/blender-runtime-500/mcp/isolated-runtime-config/\n?? docs/audits/blender-runtime-502/connection/runs/1260828fa04e48d6b4dd4775df70a070/\n?? docs/audits/blender-runtime-502/connection/runs/205e1735a77f4da89c1c68e8ea65e287/\n?? docs/audits/blender-runtime-502/connection/runs/31ad1b9cef624041b54d0f9c8a10476d/\n?? docs/audits/blender-runtime-502/connection/runs/628b44df2ea64e469a62f7ee7622fa68/\n?? docs/audits/blender-runtime-502/connection/runs/78c7c0ef24864151b4c4d2afff9a984a/\n?? docs/audits/blender-runtime-502/connection/runs/9271d344564342a6936296c576fe3d2a/\n?? docs/audits/blender-runtime-502/connection/runs/b48a76aec35e4695bac1f9640e59774c/\n?? docs/audits/blender-runtime-502/connection/runs/b5405e4f3c6b478e873a7b95b67b73ed/\n?? docs/audits/blender-runtime-502/connection/runs/c91a741082bc4c908a1c4921f6384989/\n?? docs/audits/blender-runtime-502/connection/runs/db8bf054007f48c2b60b78d0b6890c95/\n?? docs/audits/blender-runtime-502/connection/runs/dff8df9cb52d4a8a8c325f5634ba5dd1/\n?? docs/audits/blender-runtime-502/connection/runs/eed04592d0234d6ca9c691fa7308ceb1/\n?? docs/audits/blender-runtime-502/connection/runs/f6f9d57ba9e04eae868eff267f8c2333/\n?? docs/audits/continuation-504/\n?? docs/audits/continuation-509/\n?? docs/qa/browser-custody-510-review/\n?? docs/qa/browser-custody-510/\n?? docs/qa/building-preview-513/\n?? docs/qa/online-profile-504/\n?? docs/qa/online-profile-505/\n?? docs/qa/online-profile-506/\n?? docs/qa/online-profile-509/\n?? docs/qa/online-profile-512/\n?? scripts/blender/villager504.py\n?? scripts/blender/villager506.py\n?? scripts/qa/browser-custody510.mjs\n?? scripts/qa/online-profile504.mjs\n?? scripts/qa/online-profile506.mjs\n?? scripts/qa/online-profile509.mjs\n?? scripts/qa/online-profile512.mjs\n?? scripts/qa/train-observation504.mjs\n?? scripts/sprite-key-study.mjs\n?? tests/agent-preflight-scope507.test.js\n?? tests/agent-task-model507.test.js\n?? tests/browser-custody510.test.js\n?? tests/sprite-key-study.test.js\n?? tests/train-observation504.test.js",
+  "readFiles": [
+    {
+      "path": "docs/agent-read-contract.json",
+      "sha256": "416ca4786e698dcbb3e4418a7b679d7d3bfb6ce8c3c8589c30d07fe7e6985d26",
+      "bytes": 1258
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "a81895b57e445ae913773fd7bf55049f84d859d407e175de2d106edc4f3c52bd",
+      "bytes": 14339
+    },
+    {
+      "path": "docs/PROJECT_STATE.md",
+      "sha256": "01107c1e70c18444218f86a6b073536332b6952e7cf8a4df45d181a41d498248",
+      "bytes": 28617
+    },
+    {
+      "path": "docs/NEXT_STEPS.md",
+      "sha256": "5cdcb097830cc65c11e03f4973b14698d72b8d9d40debd0fe57895ea64a1538c",
+      "bytes": 10852
+    },
+    {
+      "path": "docs/ARCHITECTURE_DECISIONS.md",
+      "sha256": "3b23fd9680317a0c0fbaab250ab3878ea58d1f782be48b67976c73592286fcb6",
+      "bytes": 3907
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517",
+      "bytes": 6297
+    },
+    {
+      "path": "docs/PROJECT_ROADMAP.md",
+      "sha256": "06e099ae02208b43a9ad4fe01a2ad2cd50eba21a2a1d9570623f5cb31f2896df",
+      "bytes": 9550
+    },
+    {
+      "path": "docs/art/pipeline/ANIMATION_RESEARCH.md",
+      "sha256": "b6a1abb8c76d416a29a3c7bee95e3ea05502be71c2c02002a43bfbd9c43808d9",
+      "bytes": 5913
+    },
+    {
+      "path": "docs/COMPLETION_MATRIX.md",
+      "sha256": "3fad38e2251177c797cb2d2f51d016cb818a52b530c1d2d71fc53fd9d9995dda",
+      "bytes": 32134
+    },
+    {
+      "path": "docs/art/pipeline/BLENDER_SPRITE_PIPELINE.md",
+      "sha256": "335f4ce5965650dae237f93baddad6e1340f3c3a8d3530a86e82f6944434cbfe",
+      "bytes": 12822
+    }
+  ],
+  "sources": [
+    {
+      "path": "scripts/sprite-preview.html",
+      "sha256": "cd8e9c3dc3f7f8f689f14a8a6106d109a51c2364889a3361cc0e50a29401948e",
+      "bytes": 5950
+    }
+  ],
+  "assignment": {
+    "taskId": "building-preview513",
+    "registration": {
+      "path": "docs/audits/implementation-495/tasks.json",
+      "sha256": "3258de9df4a1048ef3d009b74ad141a279530821cd1ca9dcc9c24e0d6ddd6d38",
+      "bytes": 124409
+    },
+    "inputs": [
+      {
+        "path": "AGENTS.md",
+        "sha256": "a81895b57e445ae913773fd7bf55049f84d859d407e175de2d106edc4f3c52bd"
+      },
+      {
+        "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+        "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+      },
+      {
+        "path": "scripts/sprite-preview.html",
+        "sha256": "cd8e9c3dc3f7f8f689f14a8a6106d109a51c2364889a3361cc0e50a29401948e"
+      },
+      {
+        "path": "scripts/qa/sprite-preview.mjs",
+        "sha256": "ccf57c0723a04011e0d9e7f4b3791ed9888fa24d95be334bbe1ccd0680a455f3"
+      },
+      {
+        "path": "scripts/sprite-production.py",
+        "sha256": "ed43f04c1db641b85cc1c003c53991d3e7e5295edf277cc34fd7b9e5407d1723"
+      }
+    ],
+    "outputs": [
+      "scripts/sprite-preview.html",
+      "scripts/qa/sprite-preview.mjs",
+      "tests/building-preview513.test.js",
+      "docs/qa/building-preview-513"
+    ],
+    "slots": []
+  },
+  "orderScope": null,
+  "ledger": {
+    "path": "docs/art/pipeline/unit-production/order-ledger.json",
+    "sha256": "a31344eb8e57b43583e5c6e17610101616b5d25ff95d3fae7c82336984a0cfba",
+    "locked": false,
+    "unresolvedClaims": [
+      {
+        "order": "residence-construction-F1-F3-498",
+        "slot": 1
+      },
+      {
+        "order": "residence-construction-F1-F3-498",
+        "slot": 3
+      }
+    ]
+  },
+  "limits": [
+    "Existence and byte hashes do not establish understanding, permission, approval or tool availability.",
+    "Explicit invocation only; this helper is not a mandatory global hook.",
+    "Externally verify tools and actual live handles/preservation guards; no guards are declared closed."
+  ]
+}

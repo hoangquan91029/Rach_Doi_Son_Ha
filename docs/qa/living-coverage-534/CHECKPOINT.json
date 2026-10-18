@@ -1,0 +1,85 @@
+{
+  "task": "living-coverage534",
+  "evidence": "VERIFIED LOCAL",
+  "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+  "head": "1c7097fc80f94fc87f2fdc97d355e414601c37a4",
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "bb1c12bbda8727835a5e9d2a4a68ca20af7d463b237ad704a189de3329cdb3ae",
+      "observedSha256": "bb1c12bbda8727835a5e9d2a4a68ca20af7d463b237ad704a189de3329cdb3ae",
+      "matches": true
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517",
+      "observedSha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517",
+      "matches": true
+    },
+    {
+      "path": "shared/unit-action-spec.js",
+      "sha256": "1e796554394506f668aa06a69443de26ab22ceaa6497fd28a6157030dc0b9fc9",
+      "observedSha256": "1e796554394506f668aa06a69443de26ab22ceaa6497fd28a6157030dc0b9fc9",
+      "matches": true
+    },
+    {
+      "path": "shared/unit-art.js",
+      "sha256": "ad4adbfd61311c7f14cf4786f3a7467003e526e56f1bbd6c4a1f0f333719ccd3",
+      "observedSha256": "ad4adbfd61311c7f14cf4786f3a7467003e526e56f1bbd6c4a1f0f333719ccd3",
+      "matches": true
+    },
+    {
+      "path": "docs/qa/action-equipment-532/tests.log",
+      "sha256": "da55a3d02c4fc686367d7c3969723836deae6c802d756529b3df1648069fb47b",
+      "observedSha256": "da55a3d02c4fc686367d7c3969723836deae6c802d756529b3df1648069fb47b",
+      "matches": true
+    }
+  ],
+  "beforeTestSha256": "8791d6663642db6800ba0e85efabf8f0d1078de8d93d9677e4f0a6fe53fe3c8c",
+  "outputs": [
+    {
+      "path": "tests/sprite-prompts.test.js",
+      "sha256": "11830266fd1ede7449f4e8fc58b3cb4808509e283f7f12fc11071be0ba8e050c"
+    },
+    {
+      "path": "docs/qa/living-coverage-534/sprite-prompts.before.js",
+      "sha256": "8791d6663642db6800ba0e85efabf8f0d1078de8d93d9677e4f0a6fe53fe3c8c"
+    },
+    {
+      "path": "docs/qa/living-coverage-534/prior-failure.log",
+      "sha256": "da55a3d02c4fc686367d7c3969723836deae6c802d756529b3df1648069fb47b"
+    },
+    {
+      "path": "docs/qa/living-coverage-534/preflight.json",
+      "sha256": "45d032d4333546b78ec4f3cf193a828507a2d2268daab71b3a0c44d0b6488973"
+    },
+    {
+      "path": "docs/qa/living-coverage-534/tests.log",
+      "sha256": "af36a2fd4dae83b956449e47d150aa3866908fbd7a3e4b829ddd5537ad5c4d23"
+    },
+    {
+      "path": "docs/qa/living-coverage-534/change.diff",
+      "sha256": "9fae8cca9d05a9a2f908b0edff393eee37c47d874906dff3b8a35e6bb72e5e25"
+    }
+  ],
+  "checks": [
+    {
+      "argv": "node scripts/agent-preflight.mjs --task audit --source tests/sprite-prompts.test.js",
+      "exit": 0
+    },
+    {
+      "argv": "node --test tests/sprite-prompts.test.js tests/action-equipment532.test.js tests/sprite-order-run.test.js",
+      "exit": 0,
+      "pass": 18,
+      "fail": 0
+    }
+  ],
+  "imageCalls": 0,
+  "handles": [],
+  "limits": [
+    "Only tests/sprite-prompts.test.js changed; no production source/spec/registry/ledger/art/state mutation.",
+    "Explicit expected living action lists cover 9 ordinary and 12 leader identities. No death/destroyed/sink applicable; legacy death frame definition remains8.",
+    "Requirement checks do not prove living art coverage, actual motion, runtime, owner or release approval.",
+    "Original obsolete death assertion failure preserved in prior-failure.log."
+  ]
+}

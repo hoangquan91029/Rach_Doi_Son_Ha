@@ -1,0 +1,217 @@
+{
+  "manifest": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-idle-523/exports/compiled-selected/manifest.json",
+  "packaging": "PASS",
+  "visualApprovalGranted": false,
+  "manifestStatus": "CANDIDATE",
+  "assets": [
+    {
+      "id": "villager-idle-D1-whole523",
+      "packaging": "PASS",
+      "visualReview": "CANDIDATE",
+      "candidate": true,
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+        "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+        "rgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          69,
+          21,
+          1218,
+          1198
+        ],
+        "warnings": []
+      },
+      "runtime": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-idle-523/exports/compiled-selected/atlas.png",
+        "sha256": "2963cd4beea9ff9a5b0378d9da9e1b43f684f7c123813ff25d66074ce47de2ce",
+        "rgbaSha256": "f147cb62dfc97202bcb4de3f2ee8aa0f6e6f7a2920fce1d92d2a8c22ec718d75",
+        "dimensions": [
+          264,
+          264
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          40,
+          5,
+          224,
+          257
+        ],
+        "warnings": []
+      },
+      "frames": [
+        {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+          "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+          "rgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6",
+          "dimensions": [
+            1254,
+            1254
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            69,
+            21,
+            1218,
+            1198
+          ],
+          "warnings": []
+        },
+        {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-idle-523/illustration/F1-raw.png",
+          "sha256": "624beec46371dfc6502c182b03ffb1cd2dff614966134e337161f4c8875ae643",
+          "rgbaSha256": "7763943b73a72179a24d4f8c9212108f6495058625c53abb23dce54bf8b259d1",
+          "dimensions": [
+            1254,
+            1254
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            0,
+            33,
+            1198,
+            1250
+          ],
+          "warnings": [
+            {
+              "status": "CANDIDATE_WARNING",
+              "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+              "borderMax": 1,
+              "threshold16BBox": [
+                397,
+                50,
+                862,
+                1183
+              ]
+            }
+          ]
+        },
+        {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-idle-523/illustration/F2-raw.png",
+          "sha256": "7e2f4c8c46d3bd61bd680019e020425f3bca0e4cc434559e39645a225fefe502",
+          "rgbaSha256": "b749a4a0fbe6ac0b7a0ea4e74aa651c8d986729120fd1488acff1c67398e1329",
+          "dimensions": [
+            1254,
+            1254
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            25,
+            15,
+            1208,
+            1254
+          ],
+          "warnings": [
+            {
+              "status": "CANDIDATE_WARNING",
+              "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+              "borderMax": 1,
+              "threshold16BBox": [
+                397,
+                49,
+                861,
+                1183
+              ]
+            }
+          ]
+        },
+        {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-idle-523/illustration/F3-raw.png",
+          "sha256": "faa0cda1c00f5aadd3f12034b6d6ce15b8b7093ff8702f60a221bc55dbcd454b",
+          "rgbaSha256": "764f9a4bb869c7beb88d1540397cb33ffe9b1f627b5a44f663adb4d3865f3691",
+          "dimensions": [
+            1254,
+            1254
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            0,
+            0,
+            1234,
+            1250
+          ],
+          "warnings": [
+            {
+              "status": "CANDIDATE_WARNING",
+              "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+              "borderMax": 1,
+              "threshold16BBox": [
+                397,
+                48,
+                859,
+                1185
+              ]
+            }
+          ]
+        }
+      ],
+      "fixedPivot": {
+        "space": "source",
+        "x": 654,
+        "y": 1140
+      },
+      "logicalRender": {
+        "width": 42,
+        "height": 42
+      },
+      "warnings": [
+        {
+          "status": "CANDIDATE_WARNING",
+          "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+          "borderMax": 1,
+          "threshold16BBox": [
+            397,
+            50,
+            862,
+            1183
+          ]
+        },
+        {
+          "status": "CANDIDATE_WARNING",
+          "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+          "borderMax": 1,
+          "threshold16BBox": [
+            397,
+            49,
+            861,
+            1183
+          ]
+        },
+        {
+          "status": "CANDIDATE_WARNING",
+          "message": "Low-alpha border fringe retained exactly; strict margin fails, visual review and strict release margin still required",
+          "borderMax": 1,
+          "threshold16BBox": [
+            397,
+            48,
+            859,
+            1185
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

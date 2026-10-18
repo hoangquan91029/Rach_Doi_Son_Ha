@@ -2,7 +2,7 @@ import {unitArtFamilies} from '../shared/unit-art.js';
 import {selectFortificationArt} from './fortification-art.js';
 import {artRoute} from './art-routes.js';
 import {mountainPropPlacements,hillGroundPlacements,foodResourceEligible,staticResourceEligible} from './terrain-props.js';
-import {authoredActionStates,gatherAnimationTime,episodeAnimationTime} from './action-presentation.js';
+import {authoredActionStates,gatherAnimationTime,episodeAnimationTime,createIdleEntryClock} from './action-presentation.js';
 import {sampleSpriteAnimation,defaultAnimationLoop,attackAnimationTime} from './sprite-timing.js';
 import {createArtAssetPipeline} from './art-assets.js';
 import {createTerrainTransitions} from './terrain-transitions.js';
@@ -16,7 +16,7 @@ const normalState=entity=>entity.hp<=0?'death':entity.kind==='building'&&(entity
 export function createRasterSlice({enabled=artRoute().enabled,manifestUrl=artRoute().manifestUrl,onStatus=()=>{},materialWorldSize=8,unitActionPolicy='on-demand'}={}) {
  const worldArtEnabled=()=>artRoute().world;
  const pipeline=createArtAssetPipeline({manifestUrl,allowCandidates:true,onStatus,unitActionPolicy});
- const locomotion=createLocomotionPhase();
+ const locomotion=createLocomotionPhase(),idleEntry=createIdleEntryClock();
  const cells=new Map(),patterns=new WeakMap(),missing=new Set();let ready=false,currentDrawCount=0;
  const status={enabled,phase:enabled?'CANDIDATE':'DISABLED',quality:'PLACEHOLDER_ONLY',groundDraws:0,propDraws:0,entityDraws:0,currentEntityDraws:{},currentEntityDrawsDropped:0,renderObservation:0,walkDraws:0,idleDraws:0,lastWalk:null,gatherDraws:0,lastGather:null,buildingDeathDraws:0,lastBuildingDeath:null,missing:[],pipeline:pipeline.stats};
  const recordMissing=(key,reason)=>{if(!missing.has(key)){missing.add(key);status.missing.push({key,reason,status:'PLACEHOLDER_ONLY'});status.quality='PLACEHOLDER_ONLY';}};
@@ -69,7 +69,7 @@ export function createRasterSlice({enabled=artRoute().enabled,manifestUrl=artRou
   onMissingBank:()=>recordMissing('shore:material:null','Dedicated authored bank material unavailable; bounded original-material blending remains a candidate')});
  return {
   status,pipeline,
-  observeEntities(entities,options){status.currentEntityDraws={};currentDrawCount=0;status.currentEntityDrawsDropped=0;status.renderObservation++;status.lastGather=null;status.lastBuildingDeath=null;if(enabled)locomotion.observe(entities,options);},
+  observeEntities(entities,options){status.currentEntityDraws={};currentDrawCount=0;status.currentEntityDrawsDropped=0;status.renderObservation++;status.lastGather=null;status.lastBuildingDeath=null;if(enabled){locomotion.observe(entities.filter(e=>e.hp>0),options);idleEntry.observe(entities,options);}},
   drawTransitions(ctx,options){if(!enabled||!ready)return false;return transitions.draw(ctx,options);},
   async preload(){if(!enabled)return this;await pipeline.preload();ready=true;status.quality=pipeline.stats.status;return this;},
   /** project uses existing renderer logical pixels; camera zoom and DPR must not be applied twice. */
@@ -106,7 +106,7 @@ export function createRasterSlice({enabled=artRoute().enabled,manifestUrl=artRou
    if(rasterAt(ctx,raster,project(resource.x,resource.y),zoom)){const key=resource.type==='iron'?'ironResourceDraws':'foodResourceDraws';status[key]=(status[key]||0)+1;return true;}return false;
   },
   sampleEntity(entity,{tick=0,timeMs=tick*50,fortificationTopology}={}) {
-   if(!enabled||!ready||!entity||entity.embarked||!finite(entity.x)||!finite(entity.y))return false;
+   if(!enabled||!ready||!entity||entity.hp<=0||entity.embarked||!finite(entity.x)||!finite(entity.y))return false;
    let families,kind,direction;
    if(entity.kind==='building'){if(['wall','gate'].includes(entity.type)&&!['fort','stone'].includes(artRoute().name))return false;if(!['residence','granary','wall','gate'].includes(entity.type)&&!(['barracks','depot','artilleryWorkshop','cavalryCamp'].includes(entity.type)&&worldArtEnabled())&&!(entity.type==='shipyard'&&['shipyard','fort'].includes(artRoute().name) )&&!(entity.type==='fort'&&artRoute().name==='fort'))return false;families=[entity.type,`building.${entity.type}`];kind='building';direction=null;}
    else {families=unitArtFamilies(entity);if(!families)return false;kind='unit';direction=entity.dir;}
@@ -131,11 +131,13 @@ export function createRasterSlice({enabled=artRoute().enabled,manifestUrl=artRou
    let walkPhase=null;
    // Construction loops describe visible activity, never private completion progress.
    if(staticIllustrationFallback)elapsed=0;
+   else if(visualState==='idle'&&kind==='unit')elapsed=idleEntry.sample(entity.id);
    else if(visualState==='construction')elapsed=Math.max(0,tick*50);
    else if(visualState==='walk'&&asset.locomotion){walkPhase=locomotion.sample(entity.id,{distancePerCycle:asset.locomotion.distancePerCycle,cycleDurationMs:asset.frames.reduce((sum,f)=>sum+f.durationMs,0)});elapsed=walkPhase.timeMs;}
    else if(visualState==='gather'||visualState.startsWith('gather_'))elapsed=gatherAnimationTime(entity,timeMs);
    else if(['ability','load','unload','build'].includes(visualState))elapsed=episodeAnimationTime(entity,timeMs,asset.frames.reduce((sum,f)=>sum+f.durationMs,0));
-   else if(visualState==='hit')elapsed=Math.max(0,timeMs-((entity.hitUntil||tick)-6)*50);
+   // hurt() exposes five ticks: the damage tick is the hit clip's origin.
+   else if(visualState==='hit')elapsed=Math.max(0,timeMs-((entity.hitUntil||tick)-5)*50);
    else if(visualState==='death')elapsed=Math.max(0,(kind==='building'?(asset.fortification?.deathSite==='completed'?Math.min(tick*50,finite(timeMs)?timeMs:tick*50):tick*50):timeMs)-(entity.deadTick??tick)*50);
    else if(visualState==='attack'&&finite(entity.attackStartedTick??entity.lastAttack))elapsed=attackAnimationTime(asset,entity,timeMs);
    const sample=sampleSpriteAnimation(asset.frames,{timeMs:elapsed,loop:['ability','load','unload','build'].includes(visualState)&&typeof entity.visibleAction?.loop==='boolean'?entity.visibleAction.loop:defaultAnimationLoop(asset)});
@@ -163,6 +165,6 @@ export function createRasterSlice({enabled=artRoute().enabled,manifestUrl=artRou
    for(let y=0;y<height;y++)for(let x=0;x<width;x++){const index=y*width+x,v=(x*17+y*31)%19;if(tiles[index]!=='forest'||v>=5||onlyVisible&&state.fog?.visible&&!state.fog.visible[index])continue;props.push({type:'forest',x:x+.5,y:y+.5,variant:v,key:`forest:${x}:${y}`,depth:x+y});}
    props.push(...mountainPropPlacements(state,mountainReady(),{onlyVisible,clustered:Boolean(mountainGround()?.image)}));return props.sort((a,b)=>a.depth-b.depth||a.y-b.y||a.x-b.x);
   },
-  dispose(){status.currentEntityDraws={};status.currentEntityDrawsDropped=0;locomotion.clear();transitions.dispose();transitionMaterials.clear();pipeline.dispose();cells.clear();ready=false;}
+  dispose(){status.currentEntityDraws={};status.currentEntityDrawsDropped=0;locomotion.clear();idleEntry.clear();transitions.dispose();transitionMaterials.clear();pipeline.dispose();cells.clear();ready=false;}
  };
 }

@@ -1,4 +1,5 @@
 // Invisible selection masks follow the artwork; they never draw replacement art.
+import {pixelDrawBounds} from './pixel-animation.js';
 import {fortificationContains} from './fortification-picking.js';
 const alphaCache=new WeakMap();
 function alphaAt(image,x,y){
@@ -12,7 +13,14 @@ export function pickVisibleEntity(renderer,screenX,screenY){
  const z=renderer.camera.zoom,pipeline=renderer.raster.pipeline;
  const entities=state.entities.filter(e=>e.hp>0&&!e.embarked&&renderer.visible(e,state,renderer.localPlayer)).slice().sort((a,b)=>(b.x+b.y)-(a.x+a.y)||b.id-a.id);
  for(const e of entities){const p=renderer.project(e.x,e.y);
-  const raster=renderer.raster.sampleEntity(e,{tick:state.tick,timeMs:renderer.visualTimeMs??state.tick*50,...(renderer.fortificationTopology?{fortificationTopology:renderer.fortificationTopology}:{})})?.raster;
+  if(e.kind==='unit'){
+   const sample=renderer.pixelBank?.sampleEntity(e);
+   if(sample?.image&&sample.clip){const b=pixelDrawBounds(sample.clip,p,z);
+    if(screenX>=b.left&&screenX<b.left+b.width&&screenY>=b.top&&screenY<b.top+b.height&&alphaAt(sample.image,sample.sx+(screenX-b.left)/b.width*sample.sw,sample.sy+(screenY-b.top)/b.height*sample.sh)>=80)return e;
+    continue;
+   }
+  }
+  const raster=e.kind==='building'&&renderer.raster.sampleEntity(e,{tick:state.tick,timeMs:renderer.visualTimeMs??state.tick*50,...(renderer.fortificationTopology?{fortificationTopology:renderer.fortificationTopology}:{})})?.raster;
   if(raster?.image){const width=raster.render.width*z,height=raster.render.height*z,left=p.x-raster.pivot.x/raster.sw*width,top=p.y-raster.pivot.y/raster.sh*height;
    if(screenX>=left&&screenX<left+width&&screenY>=top&&screenY<top+height&&alphaAt(raster.image,raster.sx+(screenX-left)/width*raster.sw,raster.sy+(screenY-top)/height*raster.sh)>=80)return e;
    continue;

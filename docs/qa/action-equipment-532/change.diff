@@ -1,0 +1,56 @@
+diff --git a/docs/qa/action-equipment-532/sprite-prompts.before.mjs b/scripts/sprite-prompts.mjs
+index b4d6453..13b614a 100644
+--- a/docs/qa/action-equipment-532/sprite-prompts.before.mjs
++++ b/scripts/sprite-prompts.mjs
+@@ -37,15 +37,16 @@ export function validatePromptReferences(kind,values,references,registry,order=n
+  if(!Array.isArray(references)||!references.length)throw Error('Pinned references required');
+  const d=Number(values.direction),view=registry.views.find(v=>v.direction===d);
+  if(values.camera!==registry.camera.label||values.screenFacing!==registry.camera.screenFacing[d])throw Error('Camera/facing binding mismatch');
++ const scopedEquipment=validateActionEquipmentLocks(registry,values);
+  const equipment=registry.equipmentLock;
+  if(equipment){
+   if(!['verified','not-applicable'].includes(equipment.status)||typeof equipment.statement!=='string'||!equipment.statement.trim()||typeof equipment.basis!=='string'||!equipment.basis.trim())throw Error('Equipment ownership lock unknown or invalid');
+   validateMaster(equipment.source);
+   if(!registry.master)throw Error('Missing master cannot establish equipment N/A');
+   if(equipment.source.sha256!==registry.master.sha256||path.resolve(equipment.source.path)!==path.resolve(registry.master.path))throw Error('Equipment lock source must bind original master');
+-  if(values.weaponOwnership!==equipment.statement)throw Error('Equipment ownership lock mismatched');
+-  if(equipment.status==='not-applicable'&&values.action&&!['idle','walk'].includes(values.action))throw Error('Idle-only N/A lock requires separately pinned action equipment');
+- }else if(!registry.weaponOwnership||values.weaponOwnership!==registry.weaponOwnership)throw Error('Weapon ownership lock missing or mismatched');
++  if(!scopedEquipment&&values.weaponOwnership!==equipment.statement)throw Error('Equipment ownership lock mismatched');
++  if(!scopedEquipment&&equipment.status==='not-applicable'&&values.action&&!['idle','walk'].includes(values.action))throw Error('Idle-only N/A lock requires separately pinned action equipment');
++ }else if(!scopedEquipment&&(!registry.weaponOwnership||values.weaponOwnership!==registry.weaponOwnership))throw Error('Weapon ownership lock missing or mismatched');
+  if(order?.jobKind==='action')validateJobBinding(order.job,registry,values);
+  const same=(a,b)=>a&&b&&a.sha256===b.sha256&&path.resolve(a.path)===path.resolve(b.path);
+  const primary=references[0],editing=primary.role==='edittarget',guiding=primary.role==='guidetarget';
+@@ -91,6 +92,31 @@ export function validatePromptReferences(kind,values,references,registry,order=n
+  return references.map(pin=>path.resolve(pin.path));
+ }
+ 
++/** Optional exact-action metadata; byte binding does not establish visual truth. */
++function validateActionEquipmentLocks(registry,values){
++ const locks=registry.actionEquipmentLocks;
++ if(locks===undefined)return null;
++ if(!Array.isArray(locks))throw Error('Action equipment locks must be an array');
++ const seen=new Set();
++ for(const lock of locks){
++  if(!lock||typeof lock.action!=='string'||!actionSpec(registry.identity,lock.action).applicable||seen.has(lock.action))throw Error('Action equipment action unknown or duplicate');
++  seen.add(lock.action);
++  if(!['verified','not-applicable'].includes(lock.status)||typeof lock.statement!=='string'||!lock.statement.trim()||typeof lock.basis!=='string'||!lock.basis.trim())throw Error('Action equipment ownership lock unknown or invalid');
++  if(lock.status==='not-applicable'&&!['idle','walk'].includes(lock.action))throw Error('Idle-only N/A lock requires verified action equipment');
++  if(registry.masterAuthority!=='original'||!registry.master)throw Error('Action equipment requires original master authority');
++  validateMaster(registry.master);validateMaster(lock.source);
++  if(registry.excludedReferencePaths?.some(p=>path.resolve(p)===path.resolve(lock.source.path))||registry.excludedReferences?.some(p=>path.resolve(p.path)===path.resolve(lock.source.path)))throw Error('Excluded action equipment source');
++  const same=p=>p&&p.sha256===lock.source.sha256&&path.resolve(p.path)===path.resolve(lock.source.path);
++  const d=Number(values.direction);
++  if(lock.action===values.action){
++   const view=registry.views.find(v=>v.direction===d);
++   if(!(registry.master.direction===d&&same(registry.master))&&!(view?.status==='selected'&&same(view.source)))throw Error('Action equipment source must bind original matching view/master');
++   if(values.weaponOwnership!==lock.statement)throw Error('Action equipment ownership lock mismatched');
++  }else if(!same(registry.master)&&!registry.views.some(v=>v.status==='selected'&&same(v.source)))throw Error('Action equipment source must bind original view/master');
++ }
++ return locks.find(lock=>lock.action===values.action)||null;
++}
++
+ /** Source-bound authoring metadata checks, never visual truth or image-call permission. */
+ function validateGuideTarget(pin,anchor,registry,order,values,same){
+  const binding=validateJobBinding(order.job,registry,values),guide=order.poseGuide;

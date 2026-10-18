@@ -1,0 +1,51 @@
+{
+  "schema": "rds-agent-receipt/v1",
+  "taskId": "key-study-review507",
+  "status": "MECHANISM_ASSESSMENT_COMPLETE_CONTRACT_REVIEW_PENDING",
+  "inputs": [
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "225d9c16f9db5c4fbe941c93053fbcb958b1672824043b757b58ebb4f41b8569"
+    },
+    {
+      "path": "docs/audits/continuation-504/root/IMAGE_ANIMATION_DECISION.md",
+      "sha256": "03aa5b3cf1068bd97a78eb5f8f4f2ee834ec6b05772a44ae62ae9ba631d6d1ea"
+    },
+    {
+      "path": "docs/art/pipeline/villager-pose-control-491/prepared.json",
+      "sha256": "be0fd0ff1356707bab1a5a5b1a29b6c544f0cb9ff41a0782e23d4a52ea80e16e"
+    },
+    {
+      "path": "docs/art/pipeline/villager-guide-first-492/prepared.json",
+      "sha256": "9f58b0dc064529a2ee75d19fc10c791c817bce56264a1eb1b970a4acab203017"
+    },
+    {
+      "path": "docs/art/pipeline/villager-pose-control-491/guide/landmarks.json",
+      "sha256": "6a1eb7f20e5b88194b25660ea441efe7546284c7563eccef2def12786f4a4cc2"
+    }
+  ],
+  "checks": {
+    "preflight": "VERIFIEDauditexit0",
+    "inputpins": "VERIFIEDunchanged",
+    "actualGuideView": "ONEexisting8cellguidesheet"
+  },
+  "outputs": [
+    {
+      "path": "docs/audits/animation-context-507/review/MECHANISM.json",
+      "sha256": "8cddf7819f89d1e6b477520b6a7e0ca666a027c4621b7b6c09534584116a420a"
+    },
+    {
+      "path": "docs/audits/animation-context-507/review/REVIEW.md",
+      "sha256": "8ae6473b23e1140c94756332c5bfbc21c65538506310a3ab8467ba3ae8a14442"
+    },
+    {
+      "path": "docs/audits/animation-context-507/review/preflight.json",
+      "sha256": "96a851f26f6cde108cc5828dd62c5c5025ddce634ddc5daead696eeee0feeb89"
+    }
+  ],
+  "counts": {
+    "newArtGuidesImagesRenders": 0
+  },
+  "ownedHandles": [],
+  "nextDependency": "Rootforwardexactjointkeycontract"
+}

@@ -1,0 +1,30 @@
+{
+  "schema": "rds-browser-custody/v1",
+  "startedUTC": "2026-10-15T08:17:46.462Z",
+  "pid": 260006,
+  "eventCount": 14,
+  "droppedEvents": 0,
+  "stderrBytes": 144,
+  "droppedStderrBytes": 0,
+  "processExit": {
+    "code": 0,
+    "signal": null,
+    "atUTC": "2026-10-15T08:18:01.679Z",
+    "elapsedMs": 15216.226557
+  },
+  "processClose": {
+    "code": 0,
+    "signal": null,
+    "atUTC": "2026-10-15T08:18:01.684Z",
+    "elapsedMs": 15222.019551000001
+  },
+  "disconnected": true,
+  "cleanup": [
+    {
+      "scope": "owned-browser-server-close",
+      "atUTC": "2026-10-15T08:18:01.664Z",
+      "elapsedMs": 15201.924993
+    }
+  ],
+  "limitation": "stderr/process events observed only after launchServer resolves; markers record intent, not proven cause"
+}

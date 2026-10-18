@@ -1,8 +1,43 @@
 import test from 'node:test';import assert from 'node:assert/strict';
 import {renderPrompt,TEMPLATE_FIELDS,validateMaster} from '../scripts/sprite-prompts.mjs';
-import {actionSpec,identityActions} from '../shared/unit-action-spec.js';import fs from 'node:fs';
+import {actionSpec,identityActions,ACTION_FRAMES} from '../shared/unit-action-spec.js';import fs from 'node:fs';
+import {UNIT_ART_FAMILIES,LEADER_ART_FAMILIES} from '../shared/unit-art.js';
 test('templates require all strict placeholders before generation',()=>{for(const [kind,fields] of Object.entries(TEMPLATE_FIELDS)){const values=Object.fromEntries(fields.map(f=>[f,f==='direction'?'0':f==='identity'?'infantry':f==='action'?'walk':'verified value']));assert.match(renderPrompt(kind,values),/same whole original/i);assert.throws(()=>renderPrompt(kind,{...values,master:'TODO'}),/Invalid placeholder/);const missing={...values};delete missing.master;assert.throws(()=>renderPrompt(kind,missing),/Invalid placeholder/);assert.throws(()=>renderPrompt(kind,{...values,extra:'value'}),/Unexpected/);}});
-test('required poses and scoped aliases do not create carry or foreign actions',()=>{assert.deepEqual(identityActions('wagon'),['idle','walk','load','unload','hit','death']);assert.equal(actionSpec('villager','return_wood').action,'walk');assert.equal(actionSpec('infantry','return_wood').applicable,false);assert.equal(actionSpec('artillery','destroyed').action,'death');assert.equal(actionSpec('wagon','destroyed').action,'death');assert.equal(actionSpec('warship','sink').action,'death');assert.equal(actionSpec('wagon','load').requiresSeparatePoses,true);assert.deepEqual(actionSpec('tran_nhan_tong','build').roles,['king']);assert.equal(actionSpec('infantry','ability').applicable,false);});
+test('living requirements cover explicit ordinary and leader identities with death waived',()=>{
+ const ordinary={
+  villager:['idle','walk','attack','hit','gather_wood','gather_food','gather_iron','build'],
+  infantry:['idle','walk','attack','hit'],spearman:['idle','walk','attack','hit'],firearm:['idle','walk','attack','hit'],
+  cavalry:['idle','walk','attack','hit'],artillery:['idle','walk','attack','hit'],
+  wagon:['idle','walk','load','unload','hit'],warship:['idle','walk','attack','hit'],transport:['idle','walk','load','unload','hit']
+ };
+ const leaders=['han_xin','xiang_yu','napoleon_bonaparte','ly_thuong_kiet','tran_hung_dao','nguyen_hue','le_thanh_tong','minh_menh','nguyen_anh','nguyen_phuc_chu','tran_nhan_tong','trinh_cuong'];
+ assert.deepEqual(Object.keys(UNIT_ART_FAMILIES).sort(),Object.keys(ordinary).sort());
+ assert.deepEqual(Object.keys(LEADER_ART_FAMILIES).sort(),[...leaders].sort());
+ for(const [identity,expected] of Object.entries(ordinary))assert.deepEqual(identityActions(identity),expected,identity);
+ for(const identity of leaders){
+  assert.deepEqual(identityActions(identity),['idle','walk','attack','hit','ability','build'],identity);
+  assert.deepEqual(actionSpec(identity,'build').roles,['king']);
+  assert.deepEqual(actionSpec(identity,'repair').roles,['king']);
+  assert.deepEqual(actionSpec(identity,'ability').roles,['king','general']);
+  assert.equal(actionSpec(identity,'ability').requiresSeparatePoses,true);
+ }
+ for(const identity of [...Object.keys(ordinary),...leaders])for(const action of ['death','destroyed','sink']){
+  const spec=actionSpec(identity,action);assert.equal(spec.applicable,false,identity+'/'+action);assert.equal(spec.frames,null);assert.deepEqual(spec.roles,[]);
+ }
+ assert.equal(ACTION_FRAMES.death,8);
+});
+test('living scoped aliases and distinct special poses do not grant foreign actions',()=>{
+ for(const action of ['return_wood','return_food','return_iron']){
+  assert.equal(actionSpec('villager',action).action,'walk');assert.equal(actionSpec('villager',action).applicable,true);
+  assert.equal(actionSpec('infantry',action).applicable,false);
+ }
+ assert.equal(actionSpec('villager','repair').action,'build');assert.equal(actionSpec('villager','repair').applicable,true);
+ assert.equal(actionSpec('infantry','repair').applicable,false);
+ for(const identity of ['wagon','transport'])for(const action of ['load','unload']){assert.equal(actionSpec(identity,action).applicable,true);assert.equal(actionSpec(identity,action).requiresSeparatePoses,true);}
+ assert.equal(actionSpec('infantry','load').applicable,false);assert.equal(actionSpec('infantry','unload').applicable,false);
+ assert.equal(actionSpec('infantry','ability').applicable,false);assert.equal(actionSpec('villager','ability').applicable,false);
+ assert.equal(actionSpec('artillery','destroyed').action,'death');assert.equal(actionSpec('wagon','destroyed').action,'death');assert.equal(actionSpec('warship','sink').action,'death');
+});
 test('all registry master pins resolve to retained exact bytes',()=>{for(const identity of fs.readdirSync('docs/art/pipeline/unit-production').filter(n=>fs.existsSync(`docs/art/pipeline/unit-production/${n}/identity.json`))){const record=JSON.parse(fs.readFileSync(`docs/art/pipeline/unit-production/${identity}/identity.json`));assert.equal(record.views.length,8);if(record.master)assert.equal(validateMaster(record.master),true);for(const v of record.views)if(v.source)assert.equal(validateMaster(v.source),true);}assert.throws(()=>validateMaster({path:'AGENTS.md',sha256:'0'.repeat(64)}),/mismatch/);});
 test('pre-call preparation binds identity camera primary and selected neighbors',async()=>{const {preparePrompt}=await import('../scripts/sprite-prompts.mjs');const r=JSON.parse(fs.readFileSync('docs/art/pipeline/unit-production/infantry/identity.json'));const pin={...r.master,role:'originalmaster'};const values=Object.fromEntries(TEMPLATE_FIELDS.view.map(f=>[f,'verified value']));Object.assign(values,{identity:'infantry',master:pin.sha256,direction:'0',camera:r.camera.label,screenFacing:r.camera.screenFacing[0],weaponOwnership:r.weaponOwnership,referenceRoles:'originalmaster'});assert.ok(preparePrompt('view',values,[pin]));assert.throws(()=>preparePrompt('view',values,[]),/required/);assert.throws(()=>preparePrompt('view',{...values,master:'wrong'},[pin]),/binding/);assert.throws(()=>preparePrompt('view',{...values,screenFacing:'North'},[pin]),/facing/);
  const foreign=JSON.parse(fs.readFileSync('docs/art/pipeline/unit-production/wagon/identity.json')).master;assert.throws(()=>preparePrompt('view',{...values,master:foreign.sha256},[{...foreign,role:'originalmaster'}]),/Original master/);

@@ -1,0 +1,96 @@
+{
+  "schema": "rds-building-job/v1",
+  "id": "granary-death-whole511-selected-endpoints",
+  "kind": "building",
+  "buildingType": "granary",
+  "state": "death",
+  "direction": null,
+  "frameCount": 4,
+  "originalMaster": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/granary/variant-01/raw.png",
+    "sha256": "0d0c3963f3faed9341cd09f2ff118a753e9bd1ee431290b51635eebb17b61715"
+  },
+  "descriptorSHA": "068d25dc8374270fba8a169966f777e2174d7b68a1755fb3615ead431f5a0913",
+  "layout": {
+    "family": "granary",
+    "pivot": {
+      "x": 640,
+      "y": 1050,
+      "space": "source"
+    },
+    "render": {
+      "width": 85,
+      "height": 85
+    },
+    "contactShadow": {
+      "mode": "baked"
+    }
+  },
+  "frames": [
+    {
+      "frame": 0,
+      "phase": 0.0,
+      "status": "selected",
+      "input": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/illustration/F0-raw.png",
+        "sha256": "c853a3340a6e8173f882312a5b69c1f1abb8fc67a4743a39d93e7abce2280815",
+        "rgbaSha256": "7080a6a6a71ea1bc1063bed025b1ad5728839db6a90051ddf95f5af5fff0a993"
+      },
+      "selectionReceipt": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/authoring/F0-selection.json",
+        "sha256": "e8e49781ef50ed41f8f2d61a737d6f182a064a63d6c7a870c3eb43801d8dc7ba"
+      }
+    },
+    {
+      "frame": 1,
+      "phase": 0.25,
+      "status": "pending"
+    },
+    {
+      "frame": 2,
+      "phase": 0.5,
+      "status": "pending"
+    },
+    {
+      "frame": 3,
+      "phase": 0.75,
+      "status": "selected",
+      "input": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/illustration/F3-raw.png",
+        "sha256": "e53a36ffe4a52477e2e598f7d4222d4a79ef75e222e09f479cf26159294719e9",
+        "rgbaSha256": "081c8bf225e4288f7121a45e0074fe506408c2cea0ccfd1bf7aeea1ec587945c"
+      },
+      "selectionReceipt": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/authoring/F3-selection.json",
+        "sha256": "5f69f907b681fbb921718ca753e1801eb466e2895420500dbace0d468eac4709"
+      }
+    }
+  ],
+  "timing": {
+    "loop": false,
+    "durationMs": [
+      250,
+      250,
+      300,
+      800
+    ],
+    "terminalHold": true,
+    "scope": "1600msnonloopcollapse, F3helduntilactual4000mscorpseremoval; no simulationchange"
+  },
+  "phasePlan": [
+    "F0 death onset: central ridge snaps and main roof sags visibly; a few tiles release; floor, stair and stonefootings remain fixed",
+    "F1 load gives way: main roof collapses halfway inward along its original ridge; broken supports tilt toward original interior; same front/right footprint",
+    "F2 remaining roof/posts fall onto the platform; original orange tiles and timber occupy a low piled roof wreckage over exact footprint, grain sacks displaced locally",
+    "F3 terminal rest: low collapsed heap of this original orange-tile roof and splintered beams on original raised platform; stair, stonefootings and short post stubs identify samebuilding, no intact standing roof, no floating/debris motion"
+  ],
+  "packageBudget": {
+    "initialLimit": 4,
+    "correctionLimit": 0,
+    "authorizedNow": [
+      1,
+      2
+    ],
+    "otherSlotsWaitForRootAfterTerminalSourceReview": true
+  },
+  "limits": "Wholeillustratedoriginalbuildingdeath only; exactsource1254/runtime512/render85 unchanged. No pixelsplices/cutouts/warps/mirrors/perframefit. No livingidlefallback."
+}

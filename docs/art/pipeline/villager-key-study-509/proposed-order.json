@@ -1,0 +1,100 @@
+{
+  "id": "villager-D1-joint-key-study-509-ONE",
+  "jobKind": "key-study",
+  "studySchema": "rds-key-study/v1",
+  "status": "OPEN",
+  "identity": "villager",
+  "action": "walk",
+  "direction": 1,
+  "callLimit": 1,
+  "callsUsed": 0,
+  "correctionCap": 0,
+  "correctionsUsed": 0,
+  "slots": [
+    {
+      "frame": 0,
+      "phase": 0,
+      "status": "pending",
+      "kind": "initial",
+      "template": "key_study"
+    }
+  ],
+  "keyMap": [
+    {
+      "frame": 0,
+      "phase": 0.0,
+      "row": 0,
+      "column": 0
+    },
+    {
+      "frame": 2,
+      "phase": 0.25,
+      "row": 0,
+      "column": 1
+    },
+    {
+      "frame": 4,
+      "phase": 0.5,
+      "row": 1,
+      "column": 0
+    },
+    {
+      "frame": 6,
+      "phase": 0.75,
+      "row": 1,
+      "column": 1
+    }
+  ],
+  "job": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-key-study-509/job.json",
+    "sha256": "2710265b0914446ae6fad1c6d9c2dc54e4f9bd1327fc47813fd8078871de5534",
+    "id": "villager-D1-joint-key-study-509",
+    "action": "walk",
+    "direction": 1,
+    "variant": "joint-complementary-four-key-context"
+  },
+  "studyGuide": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-key-study-509/joint-guide.png",
+    "sha256": "4a62e739ffe141095b76c418e871b973e5db0d93311b76b7e04e87dacdb83dbf",
+    "role": "studyguide",
+    "status": "authoring-only",
+    "derivedFromSHA": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+    "provenance": {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-key-study-509/guide-provenance.json",
+      "sha256": "224ae9f378ed8359151ba15c32e01f621523e49498fb6c1fee3a5434d2ce0ebe"
+    }
+  },
+  "studyLayout": {
+    "cell": {
+      "width": 256,
+      "height": 256
+    },
+    "pivot": {
+      "x": 133.51196172248802,
+      "y": 232.72727272727272,
+      "space": "source"
+    },
+    "render": {
+      "width": 42,
+      "height": 42
+    },
+    "columns": 2,
+    "rows": 2
+  },
+  "enforcement": {
+    "version": 1,
+    "taskId": "illustration-key-study509",
+    "baseline": {
+      "callsUsed": 0,
+      "correctionsUsed": 0
+    },
+    "method": {
+      "family": "joint-complementary-four-key-context507",
+      "parentOrderIds": [
+        "villager-D1-whole-clothed-control-491-F2-ONE",
+        "villager-D1-guide-first-492-F2-ONE"
+      ]
+    },
+    "prerequisites": []
+  }
+}

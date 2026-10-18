@@ -1,0 +1,24 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
+import {createHash} from 'node:crypto';
+import {KEY_MAP} from '../scripts/sprite-key-study.mjs';
+import {prepareOrderWithRegistry,validateFiniteOrder,preparePrompt} from '../scripts/sprite-prompts.mjs';
+function fixture(){
+ const root=fs.mkdtempSync(path.join(os.tmpdir(),'key-study-'));const pin=(name,data)=>{const p=path.join(root,name);fs.writeFileSync(p,typeof data==='string'?data:JSON.stringify(data));return {path:p,sha256:createHash('sha256').update(fs.readFileSync(p)).digest('hex')};};
+ const original=pin('original','original'),anchor=pin('view','view'),guide=pin('guide','guide');
+ const layout={cell:{width:256,height:256},pivot:{space:'source',x:133.51196172248802,y:232.72727272727272},render:{width:42,height:42},columns:2,rows:2};
+ const job=pin('job.json',{id:'walkD1',action:'walk',direction:1,variant:'study',fixedCanvas:layout.cell,pivot:layout.pivot,render:layout.render,frames:Array.from({length:8},(_,i)=>({phase:i/8}))});Object.assign(job,{id:'walkD1',action:'walk',direction:1,variant:'study'});
+ const prov={schema:'rds-key-study-guide/v1',kind:'complete-whole-clothed-cycle',sourcePixelUse:false,identity:'villager',action:'walk',direction:1,job,input:{originalMaster:original,appearance:anchor},output:guide,motion:{physicalA:'left leg identified by left cuff seam screen left at contactA',physicalB:'right leg identified by right cuff seam screen right at contactA',keys:KEY_MAP.map(k=>({frame:k.frame,support:'physical A or B pinned stance',swing:'opposite physical leg forward passing',occlusion:'near leg lane preserved'}))},keyMap:KEY_MAP,cyclePhases:Array.from({length:8},(_,i)=>({frame:i,phase:i/8})),layout};
+ const provenance=pin('provenance.json',prov);const studyGuide={...guide,role:'studyguide',status:'authoring-only',derivedFromSHA:original.sha256,provenance};
+ const registry={identity:'villager',masterAuthority:'original',master:{...original,direction:3},views:[{direction:1,status:'selected',source:anchor}],camera:{label:'dimetric',screenFacing:{1:'South'}},weaponOwnership:'none',jobs:[job],allowedReferences:[studyGuide],productionOrders:['study507']};
+ const order={id:'study507',jobKind:'key-study',studySchema:'rds-key-study/v1',status:'OPEN',identity:'villager',action:'walk',direction:1,callLimit:1,callsUsed:0,correctionCap:0,correctionsUsed:0,slots:[{frame:0,phase:0,status:'pending',kind:'initial',template:'key_study'}],keyMap:KEY_MAP,job,studyGuide,studyLayout:layout};
+ const values={identity:'villager',action:'walk',master:anchor.sha256,direction:'1',camera:'dimetric',screenFacing:'South',weaponOwnership:'none',referenceRoles:'directionalview,originalmaster,studyguide',invariants:'same original and fixed layout'};
+ const refs=[{...anchor,role:'directionalview'},{...original,role:'originalmaster'},studyGuide];return {root,pin,prov,order,values,refs,registry};
+}
+const cases={nomotion:f=>{delete f.prov.motion;const p=f.pin('provenance.json',f.prov);f.order.studyGuide.provenance=p;f.refs[2].provenance=p;f.registry.allowedReferences[0].provenance=p;},largecell:f=>{f.order.studyLayout.cell={width:512,height:512};},transform:f=>f.order.mirror=true,map:f=>f.order.keyMap=[...KEY_MAP].reverse(),budget:f=>f.order.correctionCap=1,slots:f=>f.order.slots.push({...f.order.slots[0]}),held:f=>f.registry.views[0].status='held',stale:f=>fs.appendFileSync(f.refs[2].path,'changed'),layout:f=>f.order.studyLayout={...f.order.studyLayout,pivot:{space:'source',x:1,y:2}},guide:f=>f.registry.allowedReferences[0].status='held',phase:f=>f.values.phase='0',wrongjob:f=>f.order.job={...f.order.job,direction:2},refmap:f=>f.refs.reverse(),provenance:f=>{f.prov.sourcePixelUse=true;const p=f.pin('provenance.json',f.prov);f.order.studyGuide.provenance=p;f.refs[2].provenance=p;f.registry.allowedReferences[0].provenance=p;}};
+for(const [name,mutate] of Object.entries(cases))test(`key study rejects ${name}`,()=>{const f=fixture();try{mutate(f);assert.throws(()=>prepareOrderWithRegistry(f.order,0,'key_study',f.values,f.refs,f.registry));}finally{fs.rmSync(f.root,{recursive:true});}});
+test('one request yields candidate sheet preparation, no mutation',()=>{const f=fixture();try{const before=JSON.stringify(f.order);const p=prepareOrderWithRegistry(f.order,0,'key_study',f.values,f.refs,f.registry);assert.match(p.prompt,/F6/);assert.match(p.prompt,/Physical A:/);assert.match(p.prompt,/occlusion/);assert.equal(p.referenced_image_paths.length,3);assert.match(p.scope,/ONE candidate raw/);assert.equal(JSON.stringify(f.order),before);assert.equal(validateFiniteOrder(f.order,f.values,0).frame,0);}finally{fs.rmSync(f.root,{recursive:true});}});
+test('freeform key study preparation denied',()=>assert.throws(()=>preparePrompt('key_study',{},[]),/typed finite/));

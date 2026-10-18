@@ -1,0 +1,129 @@
+{
+  "schema": "rds-audit-checkpoint/v1",
+  "task": "references538",
+  "model": "gpt-6.1-sol",
+  "reasoningEffort": "low",
+  "status": "RESEARCH_COMPLETE_STILL_REVIEW_PENDING",
+  "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+  "head": "1c7097fc80f94fc87f2fdc97d355e414601c37a4",
+  "tools": [
+    "exec_command",
+    "web.run"
+  ],
+  "preflight": {
+    "argv": "node scripts/agent-preflight.mjs --task audit --source docs/PIXEL_ART_STYLE_GUIDE.md",
+    "exitStatus": 0,
+    "output": "preflight.json"
+  },
+  "inputPinChecks": [
+    {
+      "path": "AGENTS.md",
+      "expected": "757aec6a679c127d1fdc9576a1f4efa8af84457163ea9b44c72e9faf55cd647f",
+      "actual": "757aec6a679c127d1fdc9576a1f4efa8af84457163ea9b44c72e9faf55cd647f",
+      "matches": true
+    },
+    {
+      "path": "docs/PIXEL_ART_STYLE_GUIDE.md",
+      "expected": "13bbeb81f263fb69f67ebda15313909a02c24b2f92ca309644deb877a06430c8",
+      "actual": "13bbeb81f263fb69f67ebda15313909a02c24b2f92ca309644deb877a06430c8",
+      "matches": true
+    },
+    {
+      "path": "docs/SPRITE_PIPELINE.md",
+      "expected": "d4fadb8144a3402b72facd484489b188ce013213ed93ad3827ef2052a0e018f4",
+      "actual": "d4fadb8144a3402b72facd484489b188ce013213ed93ad3827ef2052a0e018f4",
+      "matches": true
+    },
+    {
+      "path": "docs/ANIMATION_SPEC.md",
+      "expected": "8b5515d4efa065823351cdda8112f69b578eb6ffb90dd431ba50aa7ccfa45d59",
+      "actual": "8b5515d4efa065823351cdda8112f69b578eb6ffb90dd431ba50aa7ccfa45d59",
+      "matches": true
+    },
+    {
+      "path": "docs/SPRITE_QA_CHECKLIST.md",
+      "expected": "0040d9132e4bf1e88bd342ee76d7f75cf306dc12905cdca39e76abb93fb85be3",
+      "actual": "0040d9132e4bf1e88bd342ee76d7f75cf306dc12905cdca39e76abb93fb85be3",
+      "matches": true
+    },
+    {
+      "path": "client/pixel-animation.js",
+      "expected": "e974a30f8ec1d22d850ffee90de99c5a45b9e0af6a6b3bb31a1f273ea5da101e",
+      "actual": "28e740f0d233aa4384ee3c1c6c5b12743d9f78ca1ac87bcbcd28a72b6a179297",
+      "matches": false
+    },
+    {
+      "path": "client/pixel-sprite-bank.js",
+      "expected": "87570154f9b33f3880cdc2e5a94421b144a7c7e49107138c3137621d211812b6",
+      "actual": "171c3a51f8e685fd24c8c264338eb8e7d5c60ddf0e6e5a642f3b227f1cab8b30",
+      "matches": false
+    },
+    {
+      "path": "client/main.js",
+      "expected": "0aae96eff07df04dc093f31c43809188cb0a7903ebaddcc46d83cca06cea3abb",
+      "actual": "73277baca600327a003645f232b890a12bf1700f90eee2292af8e9526f905020",
+      "matches": false
+    },
+    {
+      "path": "docs/art/pipeline/unit-production/order-ledger.json",
+      "expected": "0ae4e29f18e05713f2aa308a1aecb8759a4e892d547d03ce5f77f896bd1f4cf7",
+      "actual": "0ae4e29f18e05713f2aa308a1aecb8759a4e892d547d03ce5f77f896bd1f4cf7",
+      "matches": true
+    }
+  ],
+  "outputs": [
+    {
+      "path": "docs/audits/art-rebuild-538/references538/REFERENCES.md",
+      "sha256": "56f5a8ce90cf287695571e3ff5ea840323e440ecf698cd7a1d767203bf4ce3a0"
+    },
+    {
+      "path": "docs/audits/art-rebuild-538/references538/preflight.json",
+      "sha256": "bac2c42012b376b08f073f3adb954e6edd9793c79633f2ef00890589ee2664d4"
+    }
+  ],
+  "sourceCount": 3,
+  "errors": [
+    "vme.org.vn legacy page internal error; recovered through current vass.gov.vn museum page",
+    "Two museum click calls could not resolve; no observations derived",
+    "python executable absent; python3 used"
+  ],
+  "imageCalls": 0,
+  "claimsChanged": false,
+  "reviews": {
+    "still": "PENDING",
+    "motion": "OPEN",
+    "runtime": "OPEN",
+    "owner": "OPEN",
+    "release": "OPEN"
+  },
+  "handlesCreated": [],
+  "nextDependency": "Exact candidate PNG/screenshot hashes and latest human size/view authority for still review",
+  "dossierFollowup": {
+    "status": "MAPPING_COMPLETE_STILL_REVIEW_PENDING",
+    "dossierPath": "/home/kieu-hoang-quan/.codex/attachments/e799a2ea-58b8-43be-8b06-ae9219d22d7e/Pasted text.txt",
+    "dossierSha256": "362b34aa4e5e35af43a588eacaed75a2bc828269d1da25273b5959a439eea1c7",
+    "observations": [
+      "Michigan403, exact supplied edition unread",
+      "Bodleian1705 primary transcription indexed passage read, scan not compared",
+      "Museum article direct HTTP read; image inspection not performed"
+    ],
+    "outputs": [
+      {
+        "path": "docs/audits/art-rebuild-538/references538/DOSSIER_MAPPING.md",
+        "sha256": "12dd5e23b943df95da40c800aa9ba29a4a9fa02aa123ec8d874dd431a3411348"
+      },
+      {
+        "path": "docs/audits/art-rebuild-538/references538/museum-scroll-page.txt",
+        "sha256": "877144aab795bbfc37a3314500f2f63f036bd98ea8563cfccc4e4f8b4b0c28cc"
+      }
+    ]
+  },
+  "stillReview": {
+    "status": "HOLD",
+    "receipt": "docs/audits/art-rebuild-538/references538/STILL_REVIEW.json",
+    "sha256": "c38cdab2a08bccdf307660c873bce947229c2c8b2f93fb706d6fc22a86a788dc",
+    "sceneScreenshotsInspected": 3,
+    "productionEdits": false,
+    "motionRuntimeOwnerReleaseApproved": false
+  }
+}

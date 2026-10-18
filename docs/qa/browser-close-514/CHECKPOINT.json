@@ -1,0 +1,160 @@
+{
+  "schema": "rds-task-receipt/v1",
+  "taskId": "browser-close514",
+  "status": "VERIFIED_SOURCE_TIMELINE_LIMITS_CAUSE_UNKNOWN",
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "a81895b57e445ae913773fd7bf55049f84d859d407e175de2d106edc4f3c52bd"
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+    },
+    {
+      "path": "scripts/qa/online-profile512.mjs",
+      "sha256": "517ad2c9524e0a58f2c55ad3b9b6a3441cc79074c6cf81dba31eb13a04f6d081"
+    },
+    {
+      "path": "scripts/qa/browser-custody510.mjs",
+      "sha256": "f0bf514e1988bf3a3c7bcd3abd6111c5721f4f4f63bdce6782eff099d9194ecd"
+    },
+    {
+      "path": "docs/qa/online-profile-512/CHECKPOINT.json",
+      "sha256": "f737d4c4f8af7161d5c0bde669dc94cc8672876af910543b8dabba52b0691a70"
+    },
+    {
+      "path": "docs/qa/online-profile-512/browser-custody/lifecycle.jsonl",
+      "sha256": "02e08cabfd60553eadc15740414457702b99895c7f907fcdfc37d8ce3ab482e2"
+    },
+    {
+      "path": "docs/qa/online-profile-512/browser-custody/status.json",
+      "sha256": "ee512da369ff3c06d00a5c56886f9a6659ad2b33b3022b1508ef91ed39bf285f"
+    },
+    {
+      "path": "docs/qa/online-profile-512/receipt.json",
+      "sha256": "ec494b8ce238b1cd715e98bf3f0c94c0cfc5400c81707b841c590e574f208846"
+    },
+    {
+      "path": "server/index.js",
+      "sha256": "4e6a7e82f02d1d856f4ea788863c4836930bc00250be6a5b020ba2bdd8884198"
+    },
+    {
+      "path": "client/main.js",
+      "sha256": "ed8e60ebc54da9d4a6f258be153a63bc72034ff8cca011480a2a1b97de4a8957"
+    }
+  ],
+  "checks": [
+    {
+      "argv": [
+        "node",
+        "scripts/agent-preflight.mjs",
+        "--task",
+        "audit",
+        "--task-id",
+        "browser-close514",
+        "--inputs",
+        "docs/audits/continuation-509/root/browser-close514-inputs.json",
+        "--source",
+        "scripts/qa/online-profile512.mjs"
+      ],
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0,
+      "log": "docs/qa/browser-close-514/preflight.json"
+    }
+  ],
+  "findings": [
+    {
+      "evidence": "VERIFIED",
+      "source": "scripts/qa/online-profile512.mjs catch/finally",
+      "observation": "catch stores error.stack without firstexception UTC/monotonic marker; failed snapshot/screenshot ignored; finally attempts UIcleanup then calls c.context.close() with no custodyintent; browserintent only later in ownedBrowser.close(). Therefore page/context events cleanupStarted:false do not prove events preceded all intentionalcleanup."
+    },
+    {
+      "evidence": "VERIFIED",
+      "source": "node_modules/playwright-core/lib/coreBundle.js:62389 connectToBrowser connectionclosehandler",
+      "observation": "Playwright connectionclose invokes eachpage._onClose(), eachcontext._onClose(), schedules browser._didClose() with zero-delay timer. Retainedpage/contextclose then delayeddisconnect is compatible with this sourcepath, but actual connectionclose trigger not recorded so this remains mechanism possibility only."
+    },
+    {
+      "evidence": "VERIFIED",
+      "source": "node_modules/playwright-core/lib/coreBundle.js:60218/23730 Frame.waitForTimeout",
+      "observation": "Client waitForTimeout useskNoTimeout; server creates requestedtimer and races page/detachedscope. Harnesserror atline16column4701 is ordinary1000ms wait. No298/300s disposal timer found in these actualpaths."
+    },
+    {
+      "evidence": "VERIFIED",
+      "source": "node_modules/playwright-core/lib/coreBundle.js:4264/57140/62375",
+      "observation": "DefaultPlaywrighttimeout30s, configuredpage default20s, connecttimeout0 unless specified; connectdeadline is initialization only. TimeoutSettings returns timeout rather than closing browser. No actual300s globalbrowserlifetime found in boundedsource search."
+    },
+    {
+      "evidence": "UNKNOWN",
+      "observation": "Exit0/signalnull happens after ownedbrowsercleanupintent; may be graceful cleanup. Cannot attribute initialerror to host, agent, provider, browsercrash, expiry or externalkill."
+    }
+  ],
+  "missingDiagnostics": [
+    "Firstexception timestamp/monotonic and custodyevent before failurehandling",
+    "Perpage/context intentionalclose markers immediatelybefore eachclose and aftercompletion/error",
+    "Source-labelled observer events with context/page IDs",
+    "Publicconnection/transport close reason if available; currentpublic browserdisconnect event has no cause",
+    "Any responsibleactor callstack/owned process evidence before closure"
+  ],
+  "calls": {
+    "browser": 0,
+    "profile": 0,
+    "gameMutation": 0,
+    "mock": 0,
+    "image": 0,
+    "Blender": 0
+  },
+  "preservation": [
+    {
+      "path": "AGENTS.md",
+      "unchanged": true
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/qa/online-profile512.mjs",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/qa/browser-custody510.mjs",
+      "unchanged": true
+    },
+    {
+      "path": "docs/qa/online-profile-512/CHECKPOINT.json",
+      "unchanged": true
+    },
+    {
+      "path": "docs/qa/online-profile-512/browser-custody/lifecycle.jsonl",
+      "unchanged": true
+    },
+    {
+      "path": "docs/qa/online-profile-512/browser-custody/status.json",
+      "unchanged": true
+    },
+    {
+      "path": "docs/qa/online-profile-512/receipt.json",
+      "unchanged": true
+    },
+    {
+      "path": "server/index.js",
+      "unchanged": true
+    },
+    {
+      "path": "client/main.js",
+      "unchanged": true
+    }
+  ],
+  "handles": {
+    "created": [],
+    "allOwnedClosed": true
+  },
+  "nextDependency": "Add exact firstexception and all intentionalcontextcleanup markers in a separatelyauthorized future diagnostic order before considering anotheracquisition. Existing512/509causes remainUNKNOWN.",
+  "outputs": [
+    {
+      "path": "docs/qa/browser-close-514/source-evidence.json",
+      "sha256": "f3ed8ae9f6bd691316d520677e8d9eef60085b35b2c6b2c6a08570593ecf07d4"
+    }
+  ]
+}

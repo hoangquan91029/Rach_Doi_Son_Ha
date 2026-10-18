@@ -1,0 +1,113 @@
+{
+  "expectedLedgerSHA": "cc25e983a2442f658a330944eb3a0be34500b53e99ab8d1f77303fa126ba50fd",
+  "orderId": "villager-D1-joint-key-study-509-ONE",
+  "taskId": "illustration-key-study509",
+  "receipt": {
+    "schema": "rds-agent-receipt/v1",
+    "taskId": "illustration-key-study509",
+    "status": "HELD_RETURNED_CUSTODY_CLOSED_METHOD_FAILED",
+    "purpose": "ONE built-in four-key study under exact LunaHigh worker; root returned-output custody closure",
+    "checks": [
+      {
+        "command": "node scripts/agent-preflight.mjs --task art --source docs/art/pipeline/villager-key-study-509/job.json --task-id illustration-key-study509 --inputs docs/audits/continuation-509/root/illustration-key-study509-inputs.json --order-id villager-D1-joint-key-study-509-ONE",
+        "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+        "method": "ACTUAL_SCOPED_PREFLIGHT",
+        "state": "VERIFIED",
+        "executed": true,
+        "exitCode": 0,
+        "observation": "Disjoint task/order validated;2unresolved498 claims reported and retained",
+        "evidence": [
+          {
+            "path": "docs/audits/continuation-509/root/art-preflight509.json",
+            "sha256": "f7428414574c0a6a124a1800ba88a05cce49f201ca93cebb7e048021b3a55c60"
+          }
+        ]
+      },
+      {
+        "command": "node scripts/sprite-order-run.mjs claim docs/audits/continuation-509/root/claim-request.json",
+        "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+        "method": "DURABLE_CLAIM",
+        "state": "VERIFIED",
+        "executed": true,
+        "exitCode": 0,
+        "observation": "ONE slot/token consumed;0remaining,0corrections",
+        "evidence": [
+          {
+            "path": "docs/audits/continuation-509/root/claim-result.json",
+            "sha256": "2628c859015e97fba1feade9cab4047f5fc5d28aa529298bece34e60e052c91b"
+          }
+        ]
+      },
+      {
+        "command": "node scripts/sprite-order-run.mjs settle docs/audits/continuation-509/root/settle-request.json",
+        "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+        "method": "EXACT_RETURNED_OUTPUT_CUSTODY",
+        "state": "VERIFIED",
+        "executed": true,
+        "exitCode": 0,
+        "observation": "Actual tool-mapped raw equals byte-copy; settlement HELD approvalfalse",
+        "evidence": [
+          {
+            "path": "docs/audits/continuation-509/root/settle-result.json",
+            "sha256": "dcd0eb0cca2f3904c588650dacd67b0f2e565bf287a787c1d436538fbcf836e6"
+          },
+          {
+            "path": "docs/art/pipeline/villager-key-study-509/illustration/CHECKPOINT.json",
+            "sha256": "320fc7fb7403ee48a98f33dda85657f21519d4105bc34dd08cad8bbcd4c72a71"
+          }
+        ]
+      }
+    ],
+    "handles": [
+      {
+        "id": "d4135c28-f514-4e2a-86f3-c1f12baf8125",
+        "status": "CLOSED",
+        "observation": "ActualONE built-in returned file mapped by worker tool receipt, raw copiedexactly, ledger settlement recorded; no other providerhandle exposed. Sourcequality HELD, no retry."
+      }
+    ],
+    "technical": {
+      "state": "VERIFIED",
+      "observation": "ONE1254squareRGBA output with alpha0\u2013255 and exact ordered3refs; rawcopiedbyteforbyte",
+      "evidence": [
+        {
+          "path": "docs/art/pipeline/villager-key-study-509/illustration/CHECKPOINT.json",
+          "sha256": "320fc7fb7403ee48a98f33dda85657f21519d4105bc34dd08cad8bbcd4c72a71"
+        },
+        {
+          "path": "docs/art/pipeline/villager-key-study-509/illustration/raw.png",
+          "sha256": "f8f7b412133aa047eacec3a2d2aeafe23c70df8de195393687083a842a92971e"
+        }
+      ],
+      "limitation": "Returned dimensions differ512requested; no extractedcells/atlas/selectedsource"
+    },
+    "motion": {
+      "state": "FAILED",
+      "limitation": "Independent candidate keyreview observes sameleadingleg contact and nonopposedpassing. Fourstillkeys only; no continuousloop/stride/worldcontactqualification.",
+      "evidence": [
+        {
+          "path": "docs/audits/continuation-509/review/CHECKPOINT.json",
+          "sha256": "b1d89bda1ccd47c76c5479d2b038e4e4988998fa6e2fe2044c2a33bb1aaf01c9"
+        }
+      ]
+    },
+    "runtime": {
+      "state": "UNKNOWN",
+      "limitation": "No new source installed; existingruntime untouched"
+    },
+    "owner": {
+      "state": "UNKNOWN",
+      "limitation": "No humanapproval of newstudy;490rejection stands"
+    },
+    "release": {
+      "state": "UNKNOWN",
+      "limitation": "No deployment; read-only publichealth is not finalacceptance"
+    },
+    "calls": {
+      "initial": 1,
+      "correction": 0,
+      "retry": 0,
+      "selectedKeys": 0
+    },
+    "nextDependency": "Joint-context family closesHELD. No samefamily/rewordedretry/inbetweens. Any futureart mechanism requires materiallydifferent actualcontrol; independentgamework continues."
+  }
+}

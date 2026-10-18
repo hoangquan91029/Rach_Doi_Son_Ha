@@ -1,0 +1,140 @@
+{
+  "scope": "PRIVATE_STATIC_ART_DIRECTION_AND_NATIVE_RENDER_INFRASTRUCTURE",
+  "runs": [
+    {
+      "browser": "chromium",
+      "errors": [],
+      "failedRequests": [],
+      "screenshots": [
+        "chromium-scene-1366.png",
+        "chromium-scene-1920.png"
+      ],
+      "checks": [
+        {
+          "viewport": {
+            "width": 1366,
+            "height": 768
+          },
+          "layout": {
+            "width": 1366,
+            "scroll": 1366,
+            "canvas": [
+              1366,
+              768
+            ],
+            "smallText": []
+          }
+        },
+        {
+          "viewport": {
+            "width": 1920,
+            "height": 1080
+          },
+          "layout": {
+            "width": 1920,
+            "scroll": 1920,
+            "canvas": [
+              1920,
+              1080
+            ],
+            "smallText": []
+          }
+        },
+        "static scene, two sizes, readable Vietnamese DOM text, closeup/silhouette, zoom, UI target marker, matching menu",
+        "ordinary game viewer reachable, exact empty bank/controller diagnostic, focus restore, SP Delta startup zoom1, Pause/Resume/menu"
+      ],
+      "version": "151.0.7922.34",
+      "game": {
+        "mode": "offline",
+        "tick": 4,
+        "camera": {
+          "x": 9.5,
+          "y": 23.5,
+          "zoom": 1
+        },
+        "artFailures": 0,
+        "qualification": "EMPTY_NATIVE_BANK_INFRASTRUCTURE_ONLY"
+      },
+      "status": "SCOPED_PASS",
+      "handles": {
+        "browserConnected": false,
+        "browserProcessAlive": false
+      }
+    },
+    {
+      "browser": "firefox",
+      "errors": [],
+      "failedRequests": [],
+      "screenshots": [
+        "firefox-scene-1366.png",
+        "firefox-scene-1920.png"
+      ],
+      "checks": [
+        {
+          "viewport": {
+            "width": 1366,
+            "height": 768
+          },
+          "layout": {
+            "width": 1366,
+            "scroll": 1366,
+            "canvas": [
+              1366,
+              768
+            ],
+            "smallText": []
+          }
+        },
+        {
+          "viewport": {
+            "width": 1920,
+            "height": 1080
+          },
+          "layout": {
+            "width": 1920,
+            "scroll": 1920,
+            "canvas": [
+              1920,
+              1080
+            ],
+            "smallText": []
+          }
+        },
+        "static scene, two sizes, readable Vietnamese DOM text, closeup/silhouette, zoom, UI target marker, matching menu",
+        "ordinary game viewer reachable, exact empty bank/controller diagnostic, focus restore, SP Delta startup zoom1, Pause/Resume/menu"
+      ],
+      "version": "153.0",
+      "game": {
+        "mode": "offline",
+        "tick": 4,
+        "camera": {
+          "x": 9.5,
+          "y": 23.5,
+          "zoom": 1
+        },
+        "artFailures": 0,
+        "qualification": "EMPTY_NATIVE_BANK_INFRASTRUCTURE_ONLY"
+      },
+      "status": "SCOPED_PASS",
+      "handles": {
+        "browserConnected": false,
+        "browserProcessAlive": false
+      }
+    }
+  ],
+  "errors": [],
+  "acceptance": {
+    "owner": "PENDING",
+    "motion": "NOT_STARTED",
+    "fullGame": "OPEN",
+    "release": "NOT_REQUESTED"
+  },
+  "serverListening": false,
+  "rooms": 0,
+  "status": "SCOPED_STATIC_SCENE_AND_INFRASTRUCTURE_PASS",
+  "limits": [
+    "Scene uses three stills, outside animation registry. No pose duplication/atlas/animation or approved game art.",
+    "No eight-direction motion/contact/combat/HP0 visual/performance qualification; existing focused source checks separate.",
+    "Headless local Chrome/Firefox only; no production deployment."
+  ]
+}

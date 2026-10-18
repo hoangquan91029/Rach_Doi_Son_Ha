@@ -1,0 +1,15 @@
+Create one original authentic 2D pixel-art animation sprite strip, exactly 1024 pixels wide by128 pixels high, transparent PNG background. Eight evenly spaced128×128cells horizontally; each contains ONE complete whole-body newly designed Worker, same person, at a different real walk phase. No other rows, gridlines, labels, scenery, props, ground surface, text or contact sheet decorations. Do not reference any previous conversation character art. This is new art from scratch.
+
+Style: hard1pixel edges, deliberately placed pixel clusters, NO anti-aliasing, soft paint, blur, vector curves, 3D render, interpolation or gradients. Native pixel density, at most32 coherent opaqueRGBcolors total, binary alpha0 or255. Small historical Vietnamese rural worker, indigo cross-front long-sleeve tunic, brown trousers tied at ankles, narrow ochre belt, dark headcloth, barefoot. Empty hands. Fixed elevated RTS three-quarter/isometric camera facing South/front viewer; upper-left lighting. Human body head-to-ground72nativepixels. Same identity/costume/proportions/scale in all8cells. In every128cell ground anchor at local(64,112); feet stay within2pixel transparent border, body centered. No rescaling between frames.
+
+Draw a complete natural slow WALK cycle with alternating anatomical left/right support and weight transfer. For this front-facing view actor's left is viewer's right. Eight columns ordered:
+0: leftfoot forward/down contacting ground, rightfoot trailing on toe, weight starting onto left.
+1: left leg accepts body weight with flat foot, right heel lifts and begins swing.
+2: right knee bends/passes supporting left leg; torso rises slightly; counter-swing arms.
+3: right leg reaches forward/down, left heel rises; torso weight moves forward.
+4: rightfoot contacts forward/down, leftfoot trails on toe; opposite contact of column0.
+5: right leg accepts body weight flat, left heel lifts and begins swing.
+6: left knee bends/passes supporting right leg; torso rises slightly; opposite arm counter-swing.
+7: left leg reaches forward/down, right heel rises; flowing directly into column0.
+
+All8poses must visibly differ. Do not mirror a column to create the other leg's pose. Do not repeat idle poses, float, detach legs/tools, change body size, swap costume sides, make feet slide sideways or duplicate an endpoint. Anatomical left/right remain physical through all poses. Preserve whole character with arms and hands, intentional1pixel outlines and controlled shading. Exact1024×128 canvas, no margins outside the8cells. Return only the transparent sprite image.

@@ -1,4 +1,10 @@
+# Latest human model routing536 — 15 October 2026
+
+All future subagents use exactly `gpt-6.1-sol` with `reasoningEffort: low` (human: “sol 6.1 light”), including illustration, code, tooling and independent review. Do not dispatch Luna High. This supersedes every older Luna illustration/removal assignment below and in historical handoffs. Maximum3workers+root. Built-in imagegen remains the image tool; the worker model does not identify the tool's internal image model. Preserve original task/receipt model metadata, all consumed/unresolved claims and failed-method limits. A model change never reopens a closed order or grants an extra call. See docs/audits/model-routing-536/.
+
 # Mandatory execution contract — implementation495
+
+**Historical507 human assignment (superseded by536):** root owns whole-clothed motion sketches and key selection; illustration tasks explicitly marked `workKind: image-generation` use `gpt-6-luna / high`; code and independent review use `gpt-6.1-sol / low`. This supersedes older universal Sol-only wording below, without changing finite calls, references, original identity or review gates. Latest supplied AGENTS prohibits new character Blender work; retain the older branch as history. Current source/queue is PROJECT_STATE/NEXT_STEPS.
 
 Read after AGENTS and before substantial work. Actual state/queue own facts. Plans describe intended work; they are not generation orders. Root owns common integration. All workers exact gpt-6.1-sol / low; max3 plus root. If slots/model unavailable, wait or root takes the task; no substitute.
 

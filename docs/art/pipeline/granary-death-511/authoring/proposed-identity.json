@@ -1,0 +1,60 @@
+{
+  "schema": "rds-building-identity/v1",
+  "kind": "building",
+  "buildingType": "granary",
+  "masterAuthority": "original",
+  "master": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/granary/variant-01/raw.png",
+    "sha256": "0d0c3963f3faed9341cd09f2ff118a753e9bd1ee431290b51635eebb17b61715"
+  },
+  "descriptor": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/authoring/canonical-asset.json",
+    "sha256": "068d25dc8374270fba8a169966f777e2174d7b68a1755fb3615ead431f5a0913"
+  },
+  "layout": {
+    "family": "granary",
+    "pivot": {
+      "x": 640,
+      "y": 1050,
+      "space": "source"
+    },
+    "render": {
+      "width": 85,
+      "height": 85
+    },
+    "contactShadow": {
+      "mode": "baked"
+    }
+  },
+  "assemblyLock": {
+    "statement": "SAME original Vietnamese raised timber granary: one long orange terracotta gable roof with upturned eaves and dark wooden ridge beam, exposed right gable and small right porch roof, front column bays and vertical timber planks, open grain sacks/baskets, central stair, stone footings. Preserve original footprint, camera, floor/stair/footing locations and recognizable material design; death may collapse this exact roof/posts, never redesign into a different building.",
+    "source": {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/granary/variant-01/raw.png",
+      "sha256": "0d0c3963f3faed9341cd09f2ff118a753e9bd1ee431290b51635eebb17b61715"
+    }
+  },
+  "jobs": [
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/authoring/job.json",
+      "sha256": "2dc20bde31d00efe23c89730fec95373e5fa686ded852e8f6a18a7a3683b9f9b",
+      "id": "granary-death-whole511"
+    }
+  ],
+  "productionOrders": [
+    "granary-death-whole511"
+  ],
+  "excludedReferencePaths": [],
+  "sourceSelection": {
+    "scope": "OriginalcanonicalidleGranary appearance/footprint only, no deathmotion/runtimeapproval",
+    "receipt": "Root511 actualfullPNGview and canonicalmanifestsourcehash"
+  },
+  "rawCanvas": {
+    "width": 1254,
+    "height": 1254
+  },
+  "exportPolicy": {
+    "working": 256,
+    "runtime": 512,
+    "fixedLayout": true
+  }
+}

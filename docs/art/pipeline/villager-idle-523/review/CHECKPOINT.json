@@ -1,0 +1,92 @@
+{
+  "schema": "rds-idle523-precall-review/v1",
+  "taskId": "review-idle523",
+  "decision": "FIRST_F2_FINITE_CANDIDATE_SCOPE_READY",
+  "findings": [],
+  "method": "Read exact plan/job/order/request/provenance/script and F0 source custody; visually inspect actual South original and F2 guide via view_image",
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "bb1c12bbda8727835a5e9d2a4a68ca20af7d463b237ad704a189de3329cdb3ae"
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+    },
+    {
+      "path": "docs/art/pipeline/unit-production/villager/identity.json",
+      "sha256": "2ac445cd51e466b07998955c206acf67a9f4816db2827ec67503a05d2697e3fa"
+    },
+    {
+      "path": "docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+    },
+    {
+      "path": "docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94"
+    },
+    {
+      "path": "docs/art/pipeline/villager-idle-523/authoring/PLAN.json",
+      "sha256": "05723888d8587c99e5deaafa4466ca630678ff9875e3fc8e0770f26d1864ffaf"
+    },
+    {
+      "path": "docs/art/pipeline/villager-idle-523/authoring/job-initial.json",
+      "sha256": "c6f7cb5191ca4bd2514c400c72259bc725857e4d03a1f7cc67ab69ca2820ecf9"
+    },
+    {
+      "path": "docs/art/pipeline/villager-idle-523/authoring/guide-provenance.json",
+      "sha256": "e71162893a77411997aa20ba6dff3f27a6fb24fdfdbc913e193f78226e33eebb"
+    },
+    {
+      "path": "docs/art/pipeline/villager-idle-523/authoring/guide/F2.png",
+      "sha256": "72f94b1eefc0e33e023f82ef4f1b5ae2421d8d2a667fa653dd4bbea467e02fcc"
+    },
+    {
+      "path": "docs/art/pipeline/villager-idle-523/authoring/proposed-order.json",
+      "sha256": "d4864401a035d84f17d14ee4d27ac66ee6829ec66cef5d988cf8418614958984"
+    },
+    {
+      "path": "docs/art/pipeline/villager-idle-523/authoring/proposed-F2-request.json",
+      "sha256": "2b48fced27d8822a2290b98d2cdf320ae36d320778daaccb5359c6f9d106b7d0"
+    },
+    {
+      "path": "scripts/sprite-prompts.mjs",
+      "sha256": "7f0311c91371ce989bdaf852169c641017367b911f094086762b607d4aecc2a7"
+    },
+    {
+      "path": "scripts/agent-task-contract.mjs",
+      "sha256": "ab70ec1dc9e99293a54ea2873cb802ab2745d62942ff80c6fa0cb714ae0a60b1"
+    },
+    {
+      "path": "docs/audits/continuation-509/review/CHECKPOINT.json",
+      "sha256": "b1d89bda1ccd47c76c5479d2b038e4e4988998fa6e2fe2044c2a33bb1aaf01c9"
+    }
+  ],
+  "preflight": {
+    "path": "docs/art/pipeline/villager-idle-523/review/preflight.json",
+    "sha256": "076e64439c667589215149c3d010231757744f1ea085d226c7316cddfb1bda85",
+    "exitCode": 0,
+    "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha"
+  },
+  "observations": [
+    "Idle breath is separate untried action/pose objective: both feet planted, original resting body, no stride/passing/leg-switch; does not attempt to reopen closed WALK491/492/509. This action separation is substantive; no claimed improved conditioning method or walking qualification.",
+    "Exact original D1 F0 reused with source-selection receipt, not regenerated. New candidate keeps original1254canvas,6541140pivot,42logical render,128cell and bakedshadow. Original visible hands empty; costume/camera described match observed source.",
+    "F2 guide is whole-clothed vector, fixed feet/hip/hat, slight shoulder/chest width change only; style and head/hat silhouette visibly differ from original, correctly restricted to authoring control. Original must remain appearance/scale authority.",
+    "Guide shift1.7/256 at70.56canvas px implies about0.47logicalpx shoulder shift; proposed subtlebreath may be visible but cannot establish meaningful gameplay motion from this still. Original/generated texture/head/edge mismatch could exceed intended displacement and cause seam jump.",
+    "750ms held key durations/4frames may look stepped rather than smooth despite3000mscycle; only actual compiled shortloop can qualify timing. No command or guide can guarantee smoothness."
+  ],
+  "requiredBeforeCall": [
+    "Root registers exact LunaHigh task and pins plus trusted order; initial task owns F2 slot only, not F1/F3. Run real scoped art preflight/prepareOrder and durable claim; no image dispatch from this review.",
+    "Proposed single order currently prerequisites only F0. To enforce F1/F3 gate mechanically later, root must revise guarded prerequisites/task snapshot/order with actual selectedF2 before opening those slots; do not treat prose nextKey as enforced gate."
+  ],
+  "nextGate": "One F2 whole-illustration candidate only, zero correction/retry; actual raw custody then independent original/F2 comparison at gameplay canvas70.56px before root selection. F1/F3 remain forbidden until that selection and updated guarded prerequisites. Wholeloop seam/motion/runtime/owner/public remain OPEN.",
+  "checks": [],
+  "calls": 0,
+  "handles": [],
+  "limitations": [
+    "No image call, rendering/build/browser or tests rerun; no new provider identity/pose proof.",
+    "Still review grants candidate dispatch readiness only, not motion/source selection/runtime/owner/release approval.",
+    "If actualF2 fails visible original/foot/layout scope, HOLD and stop finite method, no renamed budget or equivalent retry."
+  ],
+  "preservation": "All assigned input hashes unchanged at final review; review output directory only written."
+}

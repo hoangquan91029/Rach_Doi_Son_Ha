@@ -17,3 +17,6 @@
 
 .selected-heading .commander-portrait img{position:absolute;max-width:none;width:155px;height:auto;left:50%;top:-2px;transform:translateX(-50%)}
 .boot-screen button{border:1px solid #bba36f;background:#234637;color:#f2e7ce;padding:10px 16px;font-size:12px;letter-spacing:.02em;text-transform:none}.boot-screen [role=status]{max-width:min(560px,85vw);text-align:center;line-height:1.7}
+
+/* Menu tools live inside the card, above the decorative backdrop. */
+.menu-backdrop{pointer-events:none}.menu-card{z-index:1}.menu-art-tools{display:grid;gap:8px;margin-top:8px}.menu-art-tools .secondary{font-size:14px;text-decoration:none}.pixel-viewer-dialog{width:min(850px,92vw);max-height:90vh;overflow:auto;background:#17231f;color:#eee;padding:24px;border:1px solid #dfbf7a;font-size:14px}.pixel-viewer-dialog::backdrop{background:#071711bd}.pixel-viewer-dialog select,.pixel-viewer-dialog button{font:inherit;margin:4px;padding:6px}.pixel-viewer-dialog canvas{display:block;image-rendering:pixelated;background:#283d33}.pixel-viewer-dialog a{color:#dfbf7a}

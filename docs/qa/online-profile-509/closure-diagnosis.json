@@ -1,0 +1,24 @@
+{
+  "evidence": "VERIFIED",
+  "sourceCloseCallScope": {
+    "contextCloseOccurrences": 1,
+    "browserExplicitCloseOccurrences": 0,
+    "sharedCloseLoopOccurrences": 1,
+    "location": "finally block after catch retains error; no browser/context close is called in preparation/train/profile"
+  },
+  "terminalTail": [
+    "{\"phase\":\"PREPARING\",\"elapsedMs\":208546,\"own\":[50,49],\"resources\":[{\"wood\":775,\"food\":919.4844160001758,\"iron\":895},{\"wood\":715,\"food\":797.7004160001586,\"iron\":855}]}",
+    "{\"phase\":\"PREPARING\",\"elapsedMs\":274270,\"own\":[66,64],\"resources\":[{\"wood\":940,\"food\":268.9241600002932,\"iron\":1350},{\"wood\":900,\"food\":45.4627840002415,\"iron\":1310}]}",
+    "{\"phase\":\"PREPARING\",\"elapsedMs\":297654,\"own\":[71,68],\"resources\":[{\"wood\":985,\"food\":0,\"iron\":1525},{\"wood\":1000,\"food\":14.171008000231183,\"iron\":1510}]}",
+    "{\"status\":\"HOLD_ACTUAL_UI\",\"error\":\"page.waitForTimeout: Target page, context or browser has been closed\\n    at /home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/qa/online-profile509.mjs:15:4338\",\"handles\":{\"browserConnected\":false,\"serverListening\":false,\"rooms\":0}}"
+  ],
+  "runnerExitCode": 0,
+  "browserDisconnectEvent": "UNKNOWN: no disconnected-event listener or browser subprocess stderr capture registered",
+  "browserExitCode": "UNKNOWN: Playwright launched browser subprocess; runner did not capture subprocess exitcode/signal",
+  "pageErrors": [],
+  "requestFailures": [],
+  "ownedRunnerProcessAfterExit": "ps -p480952 yielded headeronly exit1, process absent",
+  "actualFailure": "At outerpreparation page.waitForTimeout; then catch failure snapshot/screenshot unavailable and finally ordinary UI cleanup unavailable because target browser/context had already closed",
+  "cause": "UNKNOWN; source confirms no intentional pre-failure browser/context close. No external actor, OS kill or browser crash inferred.",
+  "portAfterClosure": "ss -ltnp sport=:40781 headeronly; no listener"
+}

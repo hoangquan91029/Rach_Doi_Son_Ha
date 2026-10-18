@@ -1,0 +1,33 @@
+{
+  "taskId": "pixel-correctness-fix537",
+  "model": "gpt-6.1-sol",
+  "reasoningEffort": "low",
+  "evidence": "VERIFIED_SOURCE_AND_SYNTHETIC_TESTS",
+  "changes": [
+    "Transient hitUntil selection uses presentation time and maps the authoritative 250ms origin/end interval onto full clip duration, including tick15/time740-749ms lagged rendering; permanent state=hit retains raw-clock preview behavior.",
+    "GIF preview receives metadata.loop; finite clips omit Netscape loop extension, looping clips retain loop=0."
+  ],
+  "tests": [
+    {
+      "command": "node --test tests/pixel-correctness537.test.js tests/pixel-integration535.test.js tests/pixel-animation535.test.js",
+      "exitCode": 0,
+      "result": "19 PASS",
+      "log": "tests.log"
+    },
+    {
+      "command": "python3 tests/pixel-gif537.py",
+      "exitCode": 0,
+      "result": "PASS finite/loop metadata, eight frames, timing, transparency",
+      "log": "gif-tests.log"
+    }
+  ],
+  "preservation": "Original owned source bytes retained under before/client and before/scripts before edits.",
+  "limitations": [
+    "Synthetic controller and GIF fixtures only; no art, browser, runtime, owner or release qualification.",
+    "Five authoritative tick samples cannot display eight distinct frames; finer presentation samples reach F7 before expiry. Tick sequence F0,F1,F3,F4,F6 then idle F0 verified, plus lagged authoritative tick15/time740 and749ms F7, time750ms idle F0.",
+    "Pause drops elapsed gaps in animator and does not alter authoritative hitUntil expiration."
+  ],
+  "imageCalls": 0,
+  "handles": "No background handles created",
+  "commonFilesModified": false
+}

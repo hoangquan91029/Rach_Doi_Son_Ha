@@ -1,0 +1,106 @@
+{
+  "schema": "rds-task-receipt/v1",
+  "taskId": "building-preview513",
+  "status": "REPAIRED_LOOP_BRANCH_SCOPED_SYNTHETIC_PASS_PENDING_INDEPENDENT_REVIEW",
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "a81895b57e445ae913773fd7bf55049f84d859d407e175de2d106edc4f3c52bd"
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+    },
+    {
+      "path": "scripts/sprite-preview.html",
+      "sha256": "cd8e9c3dc3f7f8f689f14a8a6106d109a51c2364889a3361cc0e50a29401948e"
+    },
+    {
+      "path": "scripts/qa/sprite-preview.mjs",
+      "sha256": "ccf57c0723a04011e0d9e7f4b3791ed9888fa24d95be334bbe1ccd0680a455f3"
+    },
+    {
+      "path": "scripts/sprite-production.py",
+      "sha256": "ed43f04c1db641b85cc1c003c53991d3e7e5295edf277cc34fd7b9e5407d1723"
+    }
+  ],
+  "changes": [
+    "Building descriptor kind or null direction hides directionalselector/title/bank; finite time clamps at total duration, holds lastframe, Replay resets candidateclock/seen",
+    "Unit8directionbank and loopclock preserved; Replay available",
+    "QA waits finitecompletion for building instead of3cycles; verifies terminalframe/allframes, pause/resume/replay and configured zoom rather than hardcoded1.68"
+  ],
+  "checks": [
+    {
+      "command": "node --test tests/building-preview513.test.js",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0,
+      "observation": "SYNTHETIC coloredwholecells unit+building controls; onebrowser twocontexts sequentialviews;4framesseen finite480ms terminalhold replay pause/resume size70.56",
+      "evidence": [
+        {
+          "path": "docs/qa/building-preview-513/tests.log",
+          "sha256": "c7ffa2fe48eb4193db449bbc2fb966825d29346bdb15777098f29418fccdd103"
+        }
+      ]
+    },
+    {
+      "command": "node scripts/qa/sprite-preview.mjs docs/qa/building-preview-513/fixture docs/qa/building-preview-513/qa-finite.json",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0,
+      "observation": "Syntheticfinite QA CLI actual PASS; secondbrowser launched and closed",
+      "evidence": [
+        {
+          "path": "docs/qa/building-preview-513/qa-finite.json",
+          "sha256": "eac6086ab7edd6f4d71000fe6f03be74e7ae74e7fb2b56706830927c59fb9c91"
+        },
+        {
+          "path": "docs/qa/building-preview-513/qa.log",
+          "sha256": "1535c13b26690875e374d6b10dc8ddeec2657c0cf248a3b447783d930a168e2f"
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "path": "scripts/sprite-preview.html",
+      "sha256": "a25c4acf047e07b41d6e1593a967bebd8a1435d06ac3d0e849661fd679cdfc3b"
+    },
+    {
+      "path": "scripts/qa/sprite-preview.mjs",
+      "sha256": "f2142564470ab7d8db0df2409843d3709bab3d6c893b130c13c81dfb3f1b1b3d"
+    },
+    {
+      "path": "tests/building-preview513.test.js",
+      "sha256": "e4cc8f6cb8677e358483d50d1c712f1136463a85ddef6fb07f04145af7aeb769"
+    }
+  ],
+  "handles": {
+    "browserLaunches": 3,
+    "httpServers": 3,
+    "allOwnedClosed": true,
+    "repairAuthorizedLaunches": 1
+  },
+  "scopeDeviation": "Requested one isolatedfixture browser; test launchedone, additional QA CLI integration verification launchedsecond. Both closed. No gameplay/profile/artmotion generated.",
+  "limitations": [
+    "Synthetic cells controls only; no realGranary artwork/motion/owner acceptance",
+    "Existing QA directbrowser launch retained; no production/engine/compiler changes",
+    "Finitebuilding loop=false expected; no runtimeinstallation or release evidence"
+  ],
+  "nextDependency": "Independent source review then root realGranary compiler+preview technicalintake after actualframesready",
+  "repair": {
+    "initialRegression": "QA incorrectly awaited completion for allbuilding kinds; constructionloop nevercompleted",
+    "change": "Expose actual descriptor loop flag as previewState.looping. QA waits3cycles for looping descriptors, terminalcompletion and replay for finite descriptors; building directionalbank remains absent for both.",
+    "check": {
+      "command": "node --test tests/building-preview513.test.js",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0,
+      "evidence": [
+        {
+          "path": "docs/qa/building-preview-513/repair-tests.log",
+          "sha256": "845604bdf5973846c3ed91b98e9db0a9f6a976dd2b821482ff6fb16897f1d62f"
+        }
+      ],
+      "observation": "One newlyauthorized browser, sequential unitloop/buildingconstructionloop/buildingfinitedeath syntheticviews. Allframes,8vs0bankcells,3cycles vs480ms finalhold, pause/resume/replay,sizechecked"
+    },
+    "limitation": "No additional QA CLI/browser replay; prior CLIverifiedfinite branch only. RealGranary stillrequires independenttechnical/art review"
+  }
+}

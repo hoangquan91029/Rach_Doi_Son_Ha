@@ -1,0 +1,196 @@
+{
+  "schema": "rds-agent-receipt/v1",
+  "taskId": "villager-control504",
+  "status": "INITIAL_RENDER_COMPLETE_UNREVIEWED",
+  "purpose": "different originaltwo-viewgeometry/semanticmaterialcontrol beforefiniteauthoring/renderorder",
+  "sourcePins": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "52cda32fd631f5cde21b0f861d7cd50db4e8948f8d7475f052e8086c0b149c8b"
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "225d9c16f9db5c4fbe941c93053fbcb958b1672824043b757b58ebb4f41b8569"
+    },
+    {
+      "path": "docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94"
+    },
+    {
+      "path": "docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-501/CHECKPOINT.json",
+      "sha256": "b1cc9cf46dc56f03cfbb7d8c311f93ab7dd4dbc22d510f68bc3b557bf09fef9a"
+    },
+    {
+      "path": "scripts/blender/villager501.py",
+      "sha256": "07c72ae11bc3386ea63252018fc1960810345927b20e55351f59bbe6e7466492"
+    },
+    {
+      "path": "docs/audits/blender-runtime-500/capability/CHECKPOINT.json",
+      "sha256": "5c0e3540553cf4d509a74953e59d8968d251e031581edb03fdb114ba79f4eea7"
+    }
+  ],
+  "checks": {
+    "ASTsyntax": "VERIFIED ast.parse without importingbpy",
+    "pins": "VERIFIED allregisteredinputs unchanged",
+    "auditPreflight": "VERIFIED exit0",
+    "artPreflight": "FAILED unresolvedclaims2 retained",
+    "actualCPU": "VERIFIED Blender5.0.1 samples32threads2 exit0",
+    "PNG": "VERIFIED256RGBA alpha0..255"
+  },
+  "counts": {
+    "BlenderExecutions": 1,
+    "renders": 2,
+    "imageCalls": 0,
+    "modelsCreated": 1,
+    "selectedFrames": 0,
+    "correctionCap": 0
+  },
+  "handles": {
+    "execSession": 69997,
+    "exitCode": 0,
+    "closed": true
+  },
+  "appearance": "UNKNOWN root/Cactualreview pending",
+  "motion": "NOT_RUN",
+  "owner": "UNKNOWN",
+  "release": "NOT_AUTHORIZED",
+  "nextDependency": "Root and C briefactual71pxappearance intake; no correction/rig/fanout authorized",
+  "outputs": [
+    {
+      "path": "docs/art/pipeline/blender-villager-504/DIFFERENCE.md",
+      "sha256": "31ee8eb1ded94d4681af0b285b853ece5e196d0047253bdf5b8d65634840db71",
+      "bytes": 2061
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-504/art-preflight-error.json",
+      "sha256": "20f5ff82db93fc6d34a7b68fbd9de0420c72832183fc02a952081ede73569a26",
+      "bytes": 111
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-504/art-preflight.json",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-504/assignment.json",
+      "sha256": "c3ab7271b7cc3774ecf14e13960bbca9765b744619309e818406f92d8fba21df",
+      "bytes": 2232
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-504/control.json",
+      "sha256": "9253cbc659f5a0fce2d2606eadef9921bdf985567cc9decf2cef32b88cfae966",
+      "bytes": 4528
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-504/initial/actual-render.json",
+      "sha256": "985693a2e83abfb50a4be79e63a903ba2d66f0e7544ffd65110f8ad78b222351",
+      "bytes": 2280
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-504/initial/authoring-script.py",
+      "sha256": "e97cc98b24fa8237028330643a0bbc17eca40f85bfd820367212b751ea7556f8",
+      "bytes": 10272
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-504/initial/candidate-control.json",
+      "sha256": "e7ec9e32ca8d85afc781d2a7cf84d860e204045cae43f5daac503a6c04f29f19",
+      "bytes": 5005
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-504/initial/candidate.blend",
+      "sha256": "9f78792dda178f3716d5f473311566215a450c2551d0668d3fc47021fe36af6f",
+      "bytes": 1090127
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-504/initial/candidate.blend1",
+      "sha256": "b9d710804b9bd1173fe34cd6241807d4544b21c0955c267db7564507d8a8d235",
+      "bytes": 1090078
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-504/initial/gameplay-size-comparison.png",
+      "sha256": "5db0ccf8f84e393c28ac720555190f51d27f7cf304241b9fdd03be84e8a94f93",
+      "bytes": 19300
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-504/initial/neutral-D0.png",
+      "sha256": "6b2bfdd3a4797c990724452fff742ccd60cf51f075267464c899848ae414e105",
+      "bytes": 48233
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-504/initial/neutral-D1.png",
+      "sha256": "9b00869c03f989fffdd31c869982852409b8a97b11b76a196cf921f4ac93375b",
+      "bytes": 51456
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-504/initial/png-checks.json",
+      "sha256": "1ee247f507306e96daa6ca6b87463a59b07471c07c8a6d51ecf88d8982e93d05",
+      "bytes": 2306
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-504/initial/root-authorization.json",
+      "sha256": "1f21f140ff5aa8309c9a0d676f03f013e3401363183171bb70acb3a2c2ca9090",
+      "bytes": 1432
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-504/inputs.json",
+      "sha256": "e5d70e214cf88d5e8c48eb52103c510604e78a65a4b0c86df026b5320102af1e",
+      "bytes": 1052
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-504/invocation.json",
+      "sha256": "86ab75215744cc0e9d72d515f3cd7164be2aed0de8e0e32edcaf44de0de440ef",
+      "bytes": 1272
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-504/preflight.json",
+      "sha256": "8ddaa79c0188805edccabb9a6eb319b16f882b64188a1664344233e854e3bc82",
+      "bytes": 4982
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-504/prior-script.py",
+      "sha256": "cc88dcfd2883c7a5ce14edd28d5e01aa6f586a06ba7a028315deeb08ff18553d",
+      "bytes": 9712
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-504/process.json",
+      "sha256": "273330ac92c085a5db84e070650040c45f49b2b5cab4dd2d24ad5b08b36bb949",
+      "bytes": 38
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-504/render-inputs.json",
+      "sha256": "b58585eb166d9634c02db024fac29c364c92bd93c68494cbf41a97267cde4ba7",
+      "bytes": 1510
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-504/render-preflight.json",
+      "sha256": "8fa4dd747841e9b6ca1e29633553eecdbaebca5957c489e697273d31814aa1b6",
+      "bytes": 5535
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-504/run.log",
+      "sha256": "5534c5ee9e5961d551b7447075308309996ca3bc34a7acbe20adf1681c471bd4",
+      "bytes": 2339
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-504/runner.py",
+      "sha256": "4b90e0618bf7adaa2c38533b37d7f71dfeed277c2b11804dbb1a648879d1fb98",
+      "bytes": 2036
+    }
+  ],
+  "independentConstraintPin": {
+    "path": "docs/audits/continuation-504/identity-review/CONSTRAINTS.json",
+    "sha256": "3c76ea01e2ff43ef5cfc6c7aa2c7a9ceba6468944bb108a77706558d977a79a6",
+    "status": "INFERRED_NOT_APPROVED",
+    "usage": "D1projectedcrown/brim/face/shoulder/sash/hem/cuffs/contacts guideactualgeometry; D0depth crosscheck. Sourcecamera UNKNOWN despiteenginebasis30degrees."
+  },
+  "preRenderReviewFix": {
+    "priorScriptSHA256": "cc88dcfd2883c7a5ce14edd28d5e01aa6f586a06ba7a028315deeb08ff18553d",
+    "principled": "exactoneBSDF_PRINCIPLED bytype +BaseColor/Roughness socketguard",
+    "sash": "samephysical+Y sourceknot/tails, noUV/artflip",
+    "renders": 0
+  }
+}

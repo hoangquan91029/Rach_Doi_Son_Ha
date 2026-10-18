@@ -1,0 +1,77 @@
+{
+  "id": "granary",
+  "family": "granary",
+  "kind": "building",
+  "source": {
+    "path": "../../../docs/art/granary/variant-01/raw.png",
+    "sha256": "0d0c3963f3faed9341cd09f2ff118a753e9bd1ee431290b51635eebb17b61715",
+    "rgbaSha256": "c581948e880937a356ffe68c0be47f2ba26802327eba482356b7a8057d67d3d9",
+    "width": 1254,
+    "height": 1254,
+    "bbox": [
+      41,
+      21,
+      1230,
+      1254
+    ],
+    "alphaExtrema": [
+      0,
+      255
+    ]
+  },
+  "runtime": {
+    "path": "runtime/granary-idle.webp",
+    "sha256": "b663d289fe8fbe44e778b586d8e5aa85aa14401badafcfabe12b4aae963f4cca",
+    "rgbaSha256": "df3e2e6bbc7c4cb6632012228ae1a308ece43325d79053accef479dcf3331cb3",
+    "width": 512,
+    "height": 512,
+    "bbox": [
+      16,
+      42,
+      504,
+      495
+    ],
+    "alphaExtrema": [
+      0,
+      255
+    ],
+    "derivation": {
+      "method": "resize",
+      "filter": "lanczos",
+      "sourceSha256": "0d0c3963f3faed9341cd09f2ff118a753e9bd1ee431290b51635eebb17b61715"
+    }
+  },
+  "cell": {
+    "width": 512,
+    "height": 512
+  },
+  "pivot": {
+    "x": 640,
+    "y": 1050,
+    "space": "source"
+  },
+  "render": {
+    "width": 85,
+    "height": 85
+  },
+  "state": "idle",
+  "direction": null,
+  "loop": true,
+  "frames": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 1000
+    }
+  ],
+  "alphaPolicy": "transparent",
+  "contactShadow": {
+    "mode": "baked"
+  },
+  "review": {
+    "status": "CANDIDATE"
+  },
+  "candidate": true
+}

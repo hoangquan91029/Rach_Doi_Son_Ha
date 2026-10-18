@@ -1,0 +1,126 @@
+{
+  "schema": "rds-task-receipt/v1",
+  "taskId": "review-browser510",
+  "status": "REPAIR_REVIEW_PASS_SCOPED_ONLY",
+  "purpose": "Independent exact browser custody510 review; only isolatedmock reproductions",
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "a81895b57e445ae913773fd7bf55049f84d859d407e175de2d106edc4f3c52bd"
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+    },
+    {
+      "path": "scripts/qa/browser-custody510.mjs",
+      "sha256": "d7d78a3aaa6888a233b8a64274517f0ac615de006b6b6dd79f596d605f0221e6"
+    },
+    {
+      "path": "tests/browser-custody510.test.js",
+      "sha256": "084f4a6d1cb71445f6a24f5be60b96500e3f690995b366b7384de24e24d4b1ec"
+    },
+    {
+      "path": "docs/qa/browser-custody-510/CHECKPOINT.json",
+      "sha256": "d085853d2c0fbf71cbfaf2f15fef0cd8c74e8cdc5937b830de06330c8c2779d6"
+    }
+  ],
+  "findings": [
+    {
+      "priority": "P1",
+      "file": "scripts/qa/browser-custody510.mjs",
+      "line": 66,
+      "problem": "Shutdown failure permanently closes wrapper and observer with live owned browser",
+      "reproduction": "Mock close rejects, kill rejects; first close throws; second noops; browser stillconnected, processExit null, child exitlistener0. Eventual process death cannot be captured. Connectfailure catch likewise finishes observer after killfailure and discards server handle.",
+      "requiredFix": "Keep actual unresolved owned handle/status and preserve eventual exit observation until verified closure; permit safe explicit cleanup recovery or return unresolved handle. Do not terminally mark wrapper closed before shutdown succeeds."
+    },
+    {
+      "priority": "P2",
+      "file": "scripts/qa/browser-custody510.mjs",
+      "line": 12,
+      "problem": "Partial exclusive output initialization leaks file descriptor",
+      "reproduction": "Preexisting browser-stderr.bin with no lifecycle.jsonl: first eventFD opens, second open throwsEEXIST; /proc/self/fd count increases1, eventfile created.",
+      "requiredFix": "Exception-safe multiFD initialization closes successfully opened FD when later open fails; retain consumed observation semantics."
+    },
+    {
+      "priority": "P2",
+      "file": "scripts/qa/browser-custody510.mjs",
+      "line": 56,
+      "problem": "Owned serverclose listener is outside custody cleanup list",
+      "reproduction": "Mock afterfinish childlisteners0 but serverCloseListeners1.",
+      "requiredFix": "Register serverlistener through observer managed listen or explicit removal on finish."
+    }
+  ],
+  "checks": [
+    {
+      "command": "node scripts/agent-preflight.mjs --task audit --task-id review-browser510 --inputs docs/audits/continuation-509/root/review-browser510-inputs.json --source scripts/qa/browser-custody510.mjs",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0,
+      "evidence": [
+        {
+          "path": "docs/qa/browser-custody-510-review/preflight.json",
+          "sha256": "9dfbcd064ea7b00190816c55c2802e559f3b03ce33d4ed6f8073d35157a80e90"
+        }
+      ]
+    },
+    {
+      "command": "node docs/qa/browser-custody-510-review/reproduce.mjs",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0,
+      "evidence": [
+        {
+          "path": "docs/qa/browser-custody-510-review/reproduction.json",
+          "sha256": "b8273009cf7bae319bc10f032d6d54c8e2101b8eb861c0bc0585ec866c834e3e"
+        }
+      ]
+    },
+    {
+      "command": "node docs/qa/browser-custody-510-review/reproduce-fd.mjs",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0,
+      "evidence": [
+        {
+          "path": "docs/qa/browser-custody-510-review/fd-reproduction.json",
+          "sha256": "47ed7458362dbfae565697ba569740cf36eee3071c9241c1b52aadb10f9731e9"
+        }
+      ]
+    }
+  ],
+  "positiveObservation": "Finite event/stderr counters and exit/close status retained after eventcap by source inspection. Existing intentional aboutblank close shows disconnected=true, exit0 and processclose observed.",
+  "limits": [
+    "Prior3tests and actualfixture DOCUMENTED_ONLY; not rerun",
+    "Direct browser.newContext afterattachment unobserved unless explicit observeContext; correctly documented, future integration must use wrapper",
+    "No runtime/profile/browser launch/image/Blender in this review; allmock processes localterminal",
+    "Durability fsync/write errors also can interrupt finish/cleanup; do not infer guaranteed cleanup from normalfixture"
+  ],
+  "nextDependency": "Root integrate with distinct finite futureprofile order; use recoverableownedhandle from errors and never assert unresolvedcleanup closed",
+  "sourceEdits": 0,
+  "repairReview": {
+    "state": "VERIFIED",
+    "source": {
+      "path": "scripts/qa/browser-custody510.mjs",
+      "sha256": "f0bf514e1988bf3a3c7bcd3abd6111c5721f4f4f63bdce6782eff099d9194ecd"
+    },
+    "tests": {
+      "path": "tests/browser-custody510.test.js",
+      "sha256": "99743bc0793d0ae2ea75611ef71823e726d805de51266190c6ddc1f5cdf959cb"
+    },
+    "evidence": [
+      {
+        "path": "docs/qa/browser-custody-510-review/repair-preflight.json",
+        "sha256": "5c21988a2ca0e75f5169597dc308e62c6e1764800edbe7f0fefa1bbe3680fea7"
+      },
+      {
+        "path": "docs/qa/browser-custody-510-review/repair-tests.log",
+        "sha256": "223548d74b29f59a2e5f40760f18cbc86d36955938ae7e0872dd389024ac4cba"
+      }
+    ],
+    "observation": "Independent rerun6focusedmock checks pass. Failed shutdown preserves observer and exposes ownedBrowser, later cleanup allowed. Connectfailure returns recoverable handle and captures eventual exit. Serverclose listener is managed and removed upon successfulfinish. Partial stderrEEXIST closes firstFD. Initial3findings repaired.",
+    "limitations": [
+      "No new realbrowser fixture/profile; old successfulfixture documented only",
+      "closeTimeout does not prove cause or permit killed unrelatedbrowser",
+      "Durable filesystem IO failure can still disrupt cleanup/logcapture; not exercised as generalfailure guarantee",
+      "Future contexts must wrapper.newContext or explicitobserveContext"
+    ]
+  }
+}

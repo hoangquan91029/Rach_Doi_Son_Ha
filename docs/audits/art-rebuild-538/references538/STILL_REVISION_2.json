@@ -1,0 +1,161 @@
+{
+  "schema": "rds-independent-still-revision-review/v1",
+  "task": "references538",
+  "reviewer": {
+    "agent": "/root/references538",
+    "model": "gpt-6.1-sol",
+    "reasoningEffort": "low"
+  },
+  "revision": 2,
+  "status": "HOLD",
+  "scope": "One bounded targeted correction to existing three still views and house; no new directions or animation",
+  "method": "view_image of five latest real assets and three screenshots once; native128 Worker cells plus2x reference; no art edits",
+  "priorReview": {
+    "path": "docs/audits/art-rebuild-538/references538/STILL_REVIEW.json",
+    "sha256": "c38cdab2a08bccdf307660c873bce947229c2c8b2f93fb706d6fc22a86a788dc",
+    "preserved": true
+  },
+  "manifest": {
+    "path": "docs/art/pixel-village-538/manifest.json",
+    "sha256": "66e556593075bbeac715ead9f52575ca55c016f338956e3797f62b6ead286a2e"
+  },
+  "sourcePins": [
+    {
+      "kind": "recipe",
+      "path": "docs/art/pixel-village-538/authoring/draw_village.py",
+      "sha256": "e0d2b8b3d2fea5285e5f001cdc01fce7e17b78493d4c895af9837677f5d97e37",
+      "manifestMatch": true
+    },
+    {
+      "kind": "framePlan",
+      "path": "docs/art/pixel-village-538/authoring/frame-plan.json",
+      "sha256": "c75ba977fef3af407bf35279de0f0b776c03224c46a379ed18c17aecb9b123d3",
+      "manifestMatch": true
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "docs/art/pixel-village-538/raw/worker-closeup-2x.png",
+      "sha256": "9a9d930c1c3ce5bb19b680882033af8549acb912d66d1a301b7f6020e3a2afb4",
+      "manifestMatch": true,
+      "dimensions": [
+        768,
+        256
+      ]
+    },
+    {
+      "path": "docs/art/pixel-village-538/raw/worker-S.png",
+      "sha256": "43a81b4a4a8b9af81cc1db9014325114c4094601c917a127e364cc00109f1e65",
+      "manifestMatch": true,
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "path": "docs/art/pixel-village-538/raw/worker-SE.png",
+      "sha256": "86f698aa01f69a6956699f274862989d868eef4f6b0142e4be61d270f6c6e592",
+      "manifestMatch": true,
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "path": "docs/art/pixel-village-538/raw/worker-N.png",
+      "sha256": "8814a57c7f4dffbf42546e23eb7c6a6c75fbff4bad83490aeed340fca4bb0f51",
+      "manifestMatch": true,
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "path": "docs/art/pixel-village-538/raw/house.png",
+      "sha256": "ed9a4f3e76b7b3415fe6a932d7c2d8fb9b61f8ccf6263a744901666d3c7e2142",
+      "manifestMatch": true,
+      "dimensions": [
+        520,
+        430
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "docs/audits/art-rebuild-538/root/runtime/chromium-scene-1366.png",
+      "sha256": "4217bedbe6444af073192df6803ead09bee570b646f718a87e25bbc078c8aa91",
+      "dimensions": [
+        1366,
+        768
+      ]
+    },
+    {
+      "path": "docs/audits/art-rebuild-538/root/runtime/chromium-scene-1920.png",
+      "sha256": "c29c47c2b3685d035cab19bde1632b16821d3824af87daa2eb475917ca15413f",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "docs/audits/art-rebuild-538/root/runtime/chromium-study.png",
+      "sha256": "466e805652de30b1739cebce8201decf7b13c15e02d9a826f5500f20b1f2f770",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    }
+  ],
+  "defectDisposition": [
+    {
+      "id": "H1",
+      "status": "IMPROVED",
+      "observation": "Roof no longer has closed repeated tile rectangles. Longitudinal thin staggered strokes read more plausibly as straw fibres. Surface remains very regular and fine-lined, so this is material-readability improvement rather than verified thatch construction."
+    },
+    {
+      "id": "H2",
+      "status": "PARTLY_IMPROVED_REMAINS_UNCERTAIN",
+      "observation": "Horizontal window divider is gone; opening reads as a simpler vertical-barred aperture. Broad width, regular wall panelling and plinth remain, and exact17c poor-village construction is still not established."
+    },
+    {
+      "id": "W1",
+      "status": "PARTLY_IMPROVED_REMAINS_HOLD",
+      "observation": "SE nose projection is reduced and far-face detail makes head less fully profile. Small improvement is visible in2x view; native128 gain is subtle. S/N upright elevation and weak elevated-camera foreshortening remain; SE head/torso still do not clearly establish a unified camera."
+    },
+    {
+      "id": "W2",
+      "status": "UNCHANGED_HOLD",
+      "observation": "Body poses unchanged: long straight hanging arms, narrow near-parallel legs and compressed cloth/joint landmarks remain stiff. Human identity is readable, but realistic anatomy is not certified."
+    },
+    {
+      "id": "W3",
+      "status": "UNCHANGED",
+      "observation": "Sash/crossover highlights and leg shading strips remain prominent; rear shoulder panel still abrupt."
+    },
+    {
+      "id": "T1",
+      "status": "NOT_REVIEWED_AGAIN",
+      "observation": "Tree not changed or reinspected as separate asset in this bounded follow-up; appears unchanged in scene."
+    },
+    {
+      "id": "S1",
+      "status": "UNCHANGED",
+      "observation": "Both latest scenes retain modest brown-figure/green-ground contrast;1366 UI covers parts of left trees while central actors remain visible."
+    }
+  ],
+  "positiveObservations": [
+    "Roof material cue is materially clearer.",
+    "Worker S/SE/N still distinguish front, oblique and rear; hands/feet remain legible.",
+    "Scene and study overlay explicitly present still art; no animation inferred."
+  ],
+  "gates": {
+    "stillVisual": "HOLD",
+    "motion": "NOT_REVIEWED",
+    "runtime": "NOT_REVIEWED_SCREENSHOTS_ONLY",
+    "owner": "PENDING_HUMAN",
+    "release": "NOT_REVIEWED"
+  },
+  "productionEdits": false,
+  "imageCalls": 0,
+  "nextDependency": "Human decides whether this pixel direction is acceptable before any animation; remaining camera/anatomy concerns need a separate explicitly bounded revision if pursued."
+}

@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "node",
+    "scripts/agent-preflight.mjs",
+    "--task",
+    "art",
+    "--source",
+    "client/pixel-animation.js"
+  ],
+  "exitCode": 1,
+  "result": {
+    "ok": false,
+    "error": "Art preflight denied: ledger lock=false, unresolved claims=3; never reset automatically"
+  },
+  "note": "Retained exact observed result after initial stdout; no art/provider operations or retry."
+}

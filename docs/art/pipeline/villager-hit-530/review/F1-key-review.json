@@ -1,0 +1,87 @@
+{
+  "schema": "rds-independent-key-review/v1",
+  "taskId": "hit530-key-review",
+  "status": "USABLE_SOURCE_CANDIDATE_PENDING_ROOT_SELECTION",
+  "evidenceClass": "VERIFIED_VISUAL_KEY_ONLY",
+  "method": "view_image inspected full sourcecanvas originalSouth007, actualreturnedF1 and rootF1guide; exact scoped auditpreflight exit0; custody and root intake read. No playback/render/resize/crop/fit/edits.",
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "bb1c12bbda8727835a5e9d2a4a68ca20af7d463b237ad704a189de3329cdb3ae"
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+    },
+    {
+      "path": "docs/art/pipeline/villager-hit-530/illustration/F1-raw.png",
+      "sha256": "e89cf68b92047683d0385d745c40e9299a6c7fbf9f3b4c15e21a526c3ed35d23"
+    },
+    {
+      "path": "docs/art/pipeline/villager-hit-530/illustration/F1-custody.json",
+      "sha256": "650f52d24bc860cd6fd98434596a9b016323eaf400fd79e5b091e0ac4a6cf90e"
+    },
+    {
+      "path": "docs/art/pipeline/villager-hit-530/illustration/CHECKPOINT.json",
+      "sha256": "e88295151a5bb4bfabc8c3f89c8611dbab4cec3c6e920605d1b8e37b19ddda41"
+    },
+    {
+      "path": "docs/art/pipeline/villager-hit-530/authoring/PLAN.json",
+      "sha256": "24d2a045505676ded2b24c0c93a7173663a55121b6e68979c17a9966e19603b6"
+    },
+    {
+      "path": "docs/art/pipeline/villager-hit-530/authoring/F1-root-custody-intake.json",
+      "sha256": "9a28fe2c038d5333265fe4e2074f8ccb9bb487ab50a8ddeeeb4e68b1a539729e"
+    },
+    {
+      "path": "docs/art/pipeline/villager-hit-530/orders/F1-settle-result.json",
+      "sha256": "000cc2d76141c8665a1db723587583f008fc343f61e2e4b582cedf41097fad07"
+    },
+    {
+      "path": "docs/art/pipeline/villager-hit-530/guide/F1.png",
+      "sha256": "cc7a4b3c8bf4f8c4fee1460213103af489294ff2fd171c3dff4e84efe10678e1"
+    },
+    {
+      "path": "docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+    },
+    {
+      "path": "docs/art/pipeline/unit-production/villager/identity.json",
+      "sha256": "44caf5f9e0ad5fa9eeffbdbd71b80d20a5358b357d7165d9b0933581c22047a9"
+    }
+  ],
+  "observation": {
+    "identity": "Face/moustache/beard, straw conical hat, realistic illustrated skin/cloth, cream crossover long tunic, dark sash, full gathered brown trousers, cream calf wraps and open brown sandals plausibly retain original identity. No borrowed-art/vector costume adoption visible.",
+    "action": "F1 shows clear living defensive recoil: head/hat and upperbody lean toward pictureleft, both forearms rise with empty hands. No weapon, attack strike, blood, fall or death pose. Wholebody remains upright.",
+    "contact": "Both sandals occupy visually similar originalground locations; no obvious legswap or solelift. Hip/lowerbody remain broadly comparable; exactworldfootlock is UNKNOWN from stills.",
+    "cameraScale": "Same1254 wholecanvas recorded. No obvious crop or independent enlargement; wholebody volume/elevated view broadly consistent. Source appearance was inspected at tool display size, not an actual70.56px gameplay presentation.",
+    "amplitude": "Upperbody/hat tilt and forearm lift are substantially stronger than the simplified rootguide and gentle1–2logicalpixel request. It reads as a distinct nonfatal hit peak, but cannot claim compliance with numeric movement amplitude or smooth250ms recovery."
+  },
+  "judgment": "Usable candidate peak key for a finite fullclip evaluation, with amplitude caveat carried forward. No source selection is performed. F0/F2 would need coherent earlybrace/settling toward exactoriginalF3; the completed250ms clip may still fail continuity or seam.",
+  "scaleLimit": "Planned1254source→128cell→42logical*1.68=70.56CSSpx. No actual128or70.56 view inspected; avoid gameplay-size quality claim.",
+  "custody": {
+    "rootIntake": "VERIFIED_EXACT prompt/ref/claim/providerbytes and12oldordersunchanged recorded rootintake; exactpins matched here",
+    "workerReceipts": "Worker custody/CHECKPOINT pending-root wording is pre-rootsettlement history; actualF1-settle-result/rootintake establish laterHELDcustody, not selection.",
+    "reviewChanges": 0
+  },
+  "gates": {
+    "sourceSelection": "PENDING_ROOT",
+    "F0F2Authorization": "NOT_GRANTED_BY_REVIEW",
+    "motion": "UNKNOWN",
+    "runtime": "NOT_RUN",
+    "owner": "OPEN",
+    "public": "OPEN"
+  },
+  "calls": 0,
+  "operations": {
+    "testsRerun": 0,
+    "browser": 0,
+    "build": 0,
+    "sourcePixelEdits": 0,
+    "registryWrites": 0,
+    "stateWrites": 0,
+    "orderWrites": 0,
+    "claims": 0
+  },
+  "handles": []
+}

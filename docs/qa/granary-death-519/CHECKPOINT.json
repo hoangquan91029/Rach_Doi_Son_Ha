@@ -1,0 +1,818 @@
+{
+  "schema": "rds-task-receipt/v1",
+  "taskId": "granary-runtime519",
+  "status": "VERIFIED_PRIVATE_CANDIDATE_COLD_DEATH_F0F1F2F3_HOLD_REMOVAL",
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "a81895b57e445ae913773fd7bf55049f84d859d407e175de2d106edc4f3c52bd"
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+    },
+    {
+      "path": "scripts/qa/granary-death518.mjs",
+      "sha256": "d109efebdafdc7176085954f5fab869ae91ab1ccb8f9102ff89722bf562d6ace"
+    },
+    {
+      "path": "docs/qa/granary-death-518/CHECKPOINT.json",
+      "sha256": "f36f5a1c1ecc71d980742acbbe7aab1e5ab7b62c3337d0cd2a9d0aed8adb2987"
+    },
+    {
+      "path": "scripts/qa/browser-custody510.mjs",
+      "sha256": "f0bf514e1988bf3a3c7bcd3abd6111c5721f4f4f63bdce6782eff099d9194ecd"
+    },
+    {
+      "path": "client/main.js",
+      "sha256": "ed8e60ebc54da9d4a6f258be153a63bc72034ff8cca011480a2a1b97de4a8957"
+    },
+    {
+      "path": "client/raster-slice.js",
+      "sha256": "dcb84bc166863b1b5f85940931f8ef558df29bba573496531632f52816676983"
+    },
+    {
+      "path": "shared/sim.js",
+      "sha256": "c9a01adba8630e89e1c3f195c1b98c08c32e74468d389a55891c664e3906e562"
+    },
+    {
+      "path": "docs/art/pipeline/granary-death-511/exports/compiled-selected/asset.json",
+      "sha256": "bd15509226232c966d4284a9cf17cf5e7fe04d59444b0d8daea34ade71de5da1"
+    },
+    {
+      "path": "docs/art/pipeline/granary-death-511/exports/compiled-selected/atlas.png",
+      "sha256": "6c34e21ce79a4e904dbfda02f1d01b2ccb38a02eed7ee0c7e056c494482ef0c8"
+    }
+  ],
+  "checks": [
+    {
+      "argv": [
+        "node",
+        "scripts/agent-preflight.mjs",
+        "--task",
+        "runtime",
+        "--task-id",
+        "granary-runtime519",
+        "--inputs",
+        "docs/audits/continuation-509/root/granary-runtime519-inputs.json",
+        "--source",
+        "client/main.js"
+      ],
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0
+    },
+    {
+      "argv": [
+        "node",
+        "--check",
+        "scripts/qa/granary-death519.mjs"
+      ],
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0
+    },
+    {
+      "argv": [
+        "node",
+        "scripts/qa/granary-death519.mjs"
+      ],
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0,
+      "log": "docs/qa/granary-death-519/run.log"
+    }
+  ],
+  "scene": {
+    "mode": "online",
+    "map": "delta",
+    "clients": 2,
+    "candidate": "granary-death-511-candidate",
+    "privateStageBuild": "docs/qa/granary-death-515/build",
+    "ordinaryActions": [
+      {
+        "kind": "ordinary-rightclick",
+        "side": 1,
+        "id": 22,
+        "target": {
+          "x": 47.5,
+          "y": 11.5
+        }
+      },
+      {
+        "kind": "ordinary-rightclick",
+        "side": 1,
+        "id": 23,
+        "target": {
+          "x": 48.5,
+          "y": 11.5
+        }
+      },
+      {
+        "kind": "ordinary-rightclick",
+        "side": 1,
+        "id": 24,
+        "target": {
+          "x": 49.5,
+          "y": 11.5
+        }
+      },
+      {
+        "kind": "ordinary-rightclick",
+        "side": 1,
+        "id": 25,
+        "target": {
+          "x": 50.5,
+          "y": 11.5
+        }
+      },
+      {
+        "kind": "ordinary-rightclick",
+        "side": 1,
+        "id": 26,
+        "target": {
+          "x": 51.5,
+          "y": 11.5
+        }
+      },
+      {
+        "kind": "ordinary-rightclick",
+        "side": 1,
+        "id": 27,
+        "target": {
+          "x": 52.5,
+          "y": 11.5
+        }
+      },
+      {
+        "kind": "ordinary-rightclick",
+        "side": 1,
+        "id": 28,
+        "target": {
+          "x": 53.5,
+          "y": 11.5
+        }
+      },
+      {
+        "kind": "ordinary-rightclick",
+        "side": 1,
+        "id": 29,
+        "target": {
+          "x": 54.5,
+          "y": 11.5
+        }
+      },
+      {
+        "kind": "ordinary-rightclick",
+        "side": 1,
+        "id": 30,
+        "target": {
+          "x": 55.5,
+          "y": 11.5
+        }
+      },
+      {
+        "kind": "ordinary-rightclick",
+        "side": 1,
+        "id": 31,
+        "target": {
+          "x": 56.5,
+          "y": 11.5
+        }
+      },
+      {
+        "kind": "ordinary-rightclick",
+        "side": 1,
+        "id": 32,
+        "target": {
+          "x": 57.5,
+          "y": 11.5
+        }
+      },
+      {
+        "kind": "ordinary-rightclick",
+        "side": 1,
+        "id": 33,
+        "target": {
+          "x": 58.5,
+          "y": 11.5
+        }
+      },
+      {
+        "kind": "ordinary-rightclick",
+        "side": 1,
+        "id": 34,
+        "target": {
+          "x": 59.5,
+          "y": 11.5
+        }
+      },
+      {
+        "kind": "ordinary-savecontrolgroup",
+        "id": 13,
+        "key": 1
+      },
+      {
+        "kind": "ordinary-savecontrolgroup",
+        "id": 14,
+        "key": 2
+      },
+      {
+        "kind": "ordinary-savecontrolgroup",
+        "id": 15,
+        "key": 3
+      },
+      {
+        "kind": "ordinary-savecontrolgroup",
+        "id": 16,
+        "key": 4
+      },
+      {
+        "kind": "ordinary-rightclick",
+        "side": 0,
+        "id": 13,
+        "target": {
+          "x": 57.5,
+          "y": 26.5
+        }
+      },
+      {
+        "kind": "ordinary-rightclick",
+        "side": 0,
+        "id": 14,
+        "target": {
+          "x": 57.5,
+          "y": 26.5
+        }
+      },
+      {
+        "kind": "ordinary-rightclick",
+        "side": 0,
+        "id": 15,
+        "target": {
+          "x": 57.5,
+          "y": 26.5
+        }
+      },
+      {
+        "kind": "ordinary-rightclick",
+        "side": 0,
+        "id": 16,
+        "target": {
+          "x": 57.5,
+          "y": 26.5
+        }
+      },
+      {
+        "kind": "attack-visibleGranary",
+        "tick": 636,
+        "target": 19
+      }
+    ],
+    "attackerAcquisition": "initialidle groundrectangles thenCtrl1to4 save/plain1to4recall perclient/main.js103\u2013104; no movingpoint reacquisition",
+    "defenderDestinations": [
+      {
+        "x": 47.5,
+        "y": 11.5
+      },
+      {
+        "x": 48.5,
+        "y": 11.5
+      },
+      {
+        "x": 49.5,
+        "y": 11.5
+      },
+      {
+        "x": 50.5,
+        "y": 11.5
+      },
+      {
+        "x": 51.5,
+        "y": 11.5
+      },
+      {
+        "x": 52.5,
+        "y": 11.5
+      },
+      {
+        "x": 53.5,
+        "y": 11.5
+      },
+      {
+        "x": 54.5,
+        "y": 11.5
+      },
+      {
+        "x": 55.5,
+        "y": 11.5
+      },
+      {
+        "x": 56.5,
+        "y": 11.5
+      },
+      {
+        "x": 57.5,
+        "y": 11.5
+      },
+      {
+        "x": 58.5,
+        "y": 11.5
+      },
+      {
+        "x": 59.5,
+        "y": 11.5
+      }
+    ],
+    "target": {
+      "id": 19,
+      "owner": 1,
+      "type": "granary",
+      "kind": "building",
+      "x": 57.5,
+      "y": 26.5,
+      "hp": 450,
+      "maxHp": 450,
+      "food": 0,
+      "foodMax": 0,
+      "morale": 95,
+      "state": "idle",
+      "dir": 4,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 260,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "underConstruction": false,
+      "order": null
+    },
+    "stateInjection": false
+  },
+  "observations": {
+    "evidence": "VERIFIED",
+    "preAttack": {
+      "camera": {
+        "x": 57.496875,
+        "y": 26.498578752790177,
+        "zoom": 1.68
+      },
+      "viewport": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 1
+      },
+      "point": {
+        "x": 960.0772822265621,
+        "y": 540.1031088867187
+      },
+      "world": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1080
+      },
+      "liveDraw": {
+        "entityId": 19,
+        "assetId": "granary",
+        "frame": 0,
+        "visualState": "idle",
+        "requestedState": "idle",
+        "requestedDirection": null,
+        "direction": null,
+        "presentation": "AUTHORED",
+        "staticIllustrationFallback": false,
+        "render": {
+          "width": 85,
+          "height": 85
+        },
+        "pivot": {
+          "x": 261.3078149920255,
+          "y": 428.7081339712919
+        },
+        "cell": {
+          "width": 512,
+          "height": 512
+        },
+        "tick": 288,
+        "presentationTimeMs": 14235.5,
+        "renderObservation": 867
+      },
+      "pipeline": {
+        "unitActionPolicy": "on-demand",
+        "status": "PLACEHOLDER_ONLY",
+        "manifest": "ready",
+        "declared": 52,
+        "ready": 49,
+        "approved": 0,
+        "candidates": 49,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 1,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 18186752,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 39,
+        "encodedReady": 0,
+        "retainedEncodedBytes": 4608899,
+        "encodedBudgetBytes": 67108864,
+        "selectedDeclared": 52,
+        "eagerDeclared": 48,
+        "deferredDeclared": 4,
+        "pending": 0,
+        "pageErrors": [],
+        "evictedPages": 0,
+        "evictedEncodedPages": 0,
+        "failures": []
+      },
+      "candidateRequested": 0
+    },
+    "candidateAtlasResponses": [
+      {
+        "kind": "candidate-response",
+        "atUTC": "2026-10-13T11:44:16.741Z",
+        "status": 200
+      },
+      {
+        "kind": "candidate-response",
+        "atUTC": "2026-10-13T11:44:16.741Z",
+        "status": 200
+      }
+    ],
+    "firstDeadSnapshotTick": 1016,
+    "deadTick": 1016,
+    "firstDeathDraw": {
+      "tick": 1016,
+      "target": {
+        "hp": 0,
+        "state": "death",
+        "deadTick": 1016
+      },
+      "draw": {
+        "entityId": 19,
+        "assetId": "granary-death-511-candidate",
+        "frame": 0,
+        "visualState": "death",
+        "requestedState": "death",
+        "requestedDirection": null,
+        "direction": null,
+        "presentation": "AUTHORED",
+        "staticIllustrationFallback": false,
+        "render": {
+          "width": 85,
+          "height": 85
+        },
+        "pivot": {
+          "x": 261.3078149920255,
+          "y": 428.7081339712919
+        },
+        "cell": {
+          "width": 512,
+          "height": 512
+        },
+        "tick": 1016,
+        "presentationTimeMs": 50666.046600008696,
+        "renderObservation": 3268
+      },
+      "lastBuildingDeath": {
+        "entityId": 19,
+        "assetId": "granary-death-511-candidate",
+        "frame": 0,
+        "tick": 1016,
+        "deadTick": 1016,
+        "elapsedMs": 0,
+        "presentationTimeMs": 50666.046600008696
+      },
+      "pipeline": {
+        "unitActionPolicy": "on-demand",
+        "status": "PLACEHOLDER_ONLY",
+        "manifest": "ready",
+        "declared": 52,
+        "ready": 50,
+        "approved": 0,
+        "candidates": 50,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 2,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 22446848,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 40,
+        "encodedReady": 0,
+        "retainedEncodedBytes": 5795833,
+        "encodedBudgetBytes": 67108864,
+        "selectedDeclared": 52,
+        "eagerDeclared": 48,
+        "deferredDeclared": 4,
+        "pending": 0,
+        "pageErrors": [],
+        "evictedPages": 0,
+        "evictedEncodedPages": 0,
+        "failures": []
+      },
+      "camera": {
+        "x": 57.496875,
+        "y": 26.498578752790177,
+        "zoom": 1.68
+      }
+    },
+    "frameBindings": {
+      "0": [
+        {
+          "snapshotTick": 1016,
+          "drawTick": 1016,
+          "elapsedMs": 0,
+          "renderObservation": 3268
+        },
+        {
+          "snapshotTick": 1020,
+          "drawTick": 1016,
+          "elapsedMs": 0,
+          "renderObservation": 3275
+        },
+        {
+          "snapshotTick": 1020,
+          "drawTick": 1020,
+          "elapsedMs": 200,
+          "renderObservation": 3283
+        }
+      ],
+      "1": [
+        {
+          "snapshotTick": 1024,
+          "drawTick": 1024,
+          "elapsedMs": 400,
+          "renderObservation": 3291
+        },
+        {
+          "snapshotTick": 1024,
+          "drawTick": 1024,
+          "elapsedMs": 400,
+          "renderObservation": 3300
+        }
+      ],
+      "2": [
+        {
+          "snapshotTick": 1028,
+          "drawTick": 1028,
+          "elapsedMs": 600,
+          "renderObservation": 3308
+        }
+      ],
+      "3": [
+        {
+          "snapshotTick": 1032,
+          "drawTick": 1032,
+          "elapsedMs": 800,
+          "renderObservation": 3316
+        },
+        {
+          "snapshotTick": 1032,
+          "drawTick": 1032,
+          "elapsedMs": 800,
+          "renderObservation": 3329
+        },
+        {
+          "snapshotTick": 1036,
+          "drawTick": 1036,
+          "elapsedMs": 1000,
+          "renderObservation": 3337
+        },
+        {
+          "snapshotTick": 1040,
+          "drawTick": 1040,
+          "elapsedMs": 1200,
+          "renderObservation": 3345
+        },
+        {
+          "snapshotTick": 1040,
+          "drawTick": 1040,
+          "elapsedMs": 1200,
+          "renderObservation": 3353
+        },
+        {
+          "snapshotTick": 1044,
+          "drawTick": 1044,
+          "elapsedMs": 1400,
+          "renderObservation": 3361
+        },
+        {
+          "snapshotTick": 1044,
+          "drawTick": 1044,
+          "elapsedMs": 1400,
+          "renderObservation": 3369
+        },
+        {
+          "snapshotTick": 1048,
+          "drawTick": 1048,
+          "elapsedMs": 1600,
+          "renderObservation": 3377
+        },
+        {
+          "snapshotTick": 1052,
+          "drawTick": 1052,
+          "elapsedMs": 1800,
+          "renderObservation": 3385
+        },
+        {
+          "snapshotTick": 1052,
+          "drawTick": 1052,
+          "elapsedMs": 1800,
+          "renderObservation": 3397
+        },
+        {
+          "snapshotTick": 1056,
+          "drawTick": 1056,
+          "elapsedMs": 2000,
+          "renderObservation": 3405
+        },
+        {
+          "snapshotTick": 1060,
+          "drawTick": 1060,
+          "elapsedMs": 2200,
+          "renderObservation": 3415
+        },
+        {
+          "snapshotTick": 1064,
+          "drawTick": 1064,
+          "elapsedMs": 2400,
+          "renderObservation": 3422
+        },
+        {
+          "snapshotTick": 1064,
+          "drawTick": 1064,
+          "elapsedMs": 2400,
+          "renderObservation": 3430
+        },
+        {
+          "snapshotTick": 1068,
+          "drawTick": 1068,
+          "elapsedMs": 2600,
+          "renderObservation": 3438
+        },
+        {
+          "snapshotTick": 1072,
+          "drawTick": 1072,
+          "elapsedMs": 2800,
+          "renderObservation": 3446
+        },
+        {
+          "snapshotTick": 1072,
+          "drawTick": 1072,
+          "elapsedMs": 2800,
+          "renderObservation": 3454
+        },
+        {
+          "snapshotTick": 1076,
+          "drawTick": 1076,
+          "elapsedMs": 3000,
+          "renderObservation": 3467
+        },
+        {
+          "snapshotTick": 1080,
+          "drawTick": 1080,
+          "elapsedMs": 3200,
+          "renderObservation": 3475
+        },
+        {
+          "snapshotTick": 1080,
+          "drawTick": 1080,
+          "elapsedMs": 3200,
+          "renderObservation": 3483
+        },
+        {
+          "snapshotTick": 1084,
+          "drawTick": 1084,
+          "elapsedMs": 3400,
+          "renderObservation": 3491
+        },
+        {
+          "snapshotTick": 1084,
+          "drawTick": 1084,
+          "elapsedMs": 3400,
+          "renderObservation": 3500
+        },
+        {
+          "snapshotTick": 1088,
+          "drawTick": 1088,
+          "elapsedMs": 3600,
+          "renderObservation": 3508
+        },
+        {
+          "snapshotTick": 1092,
+          "drawTick": 1092,
+          "elapsedMs": 3800,
+          "renderObservation": 3516
+        },
+        {
+          "snapshotTick": 1092,
+          "drawTick": 1092,
+          "elapsedMs": 3800,
+          "renderObservation": 3524
+        }
+      ]
+    },
+    "framesSeen": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "removedSnapshotTick": 1096,
+    "lastCorpseSnapshotTick": 1092,
+    "canvasPx": {
+      "width": 142.79999999999998,
+      "height": 142.79999999999998,
+      "basis": "actualdraw85render timesexplicitzoom1.68"
+    },
+    "pivot": {
+      "x": 261.3078149920255,
+      "y": 428.7081339712919
+    },
+    "cell": {
+      "width": 512,
+      "height": 512
+    },
+    "pageErrors": [],
+    "samples": 289
+  },
+  "coldFirstUse": {
+    "evidence": "VERIFIED_SCOPED",
+    "preAttackCandidateResponses": 0,
+    "preAttackPending": 0,
+    "firstDeadTickDrawF0Elapsed0": true,
+    "noArtificialWarmup": true,
+    "limitation": "NoindividualdecodedassetAPI; absenceofcandidateHTTPbeforeattack + on-demandprivateasset + F0firstdeathdraw supportthisscopedcoldfirstuse. Exactdecode/requeststartlatency nottimestamped."
+  },
+  "limits": [
+    "Read-onlysnapshot and renderdraw may have differenttick; bothcaptured, notforcedsynchronous",
+    "50ms requestedpoll plusbrowserexecution/hash1s mayintroducesamplinggaps; frames0..3 actuallycaptured",
+    "F3holdandremoval observed; finalscreenshotsafterremoval, no newdeath screenshot added",
+    "Noordinarymenuclosureproof: contextsclosed incleanup",
+    "Candidateprivate technicalruntimeonly; humanmotion/owner/publicrelease remainOPEN",
+    "Notnetworkloss/PauseResume/densefullroster/publicqualification"
+  ],
+  "preservation": {
+    "canonicalExactTreeBytes": true,
+    "guardInterval": "start/1s/end",
+    "reused515StageBuildUnchanged": true
+  },
+  "handles": {
+    "runnerPID": 589160,
+    "browserPID": 589184,
+    "port": 40623,
+    "browserConnected": false,
+    "browserExit": 0,
+    "serverListening": false,
+    "rooms": 0,
+    "cleanup": [
+      {
+        "side": 0,
+        "closed": true
+      },
+      {
+        "side": 1,
+        "closed": true
+      }
+    ],
+    "allOwnedClosed": true
+  },
+  "calls": {
+    "scene": 1,
+    "restart": 0,
+    "build": 0,
+    "profile": 0,
+    "image": 0,
+    "production": 0
+  },
+  "nextDependency": "Root intake actualprivatecandidate technicalruntimeproof; separatehumanmotionfeedback/sourcepromotion/publicgate remains. Do not replaythis completedearlyphaseproof.",
+  "outputs": [
+    {
+      "path": "scripts/qa/granary-death519.mjs",
+      "sha256": "259c82f1ff4b3168b031961f1d1e6b40c767a6f578786b87053db8c5d60ce2da"
+    },
+    {
+      "path": "docs/qa/granary-death-519/receipt.json",
+      "sha256": "50960f8b5d18a4b1753dc33c8d364184c1f02494038841b16faa916170c9064c"
+    },
+    {
+      "path": "docs/qa/granary-death-519/run.log",
+      "sha256": "39cc865f127f324062a8f7260172a827a426aaa20f0c51e01d3b07789129901b"
+    },
+    {
+      "path": "docs/qa/granary-death-519/browser-custody/lifecycle.jsonl",
+      "sha256": "d8e25419a4a0ba6b1631eaab65693ae18bcda6ce1245f8d79cc8e3d9f478b45b"
+    },
+    {
+      "path": "docs/qa/granary-death-519/browser-custody/status.json",
+      "sha256": "6b5ee563bc9c9d4b3c7790872eece812ebc129a708f2f1e2e54ca56c61ed4bb4"
+    },
+    {
+      "path": "docs/qa/granary-death-519/final-side0.png",
+      "sha256": "46cea77d12f5837aec7f33c6d250e44028936bba91e753bc738a67c62a6e9026"
+    },
+    {
+      "path": "docs/qa/granary-death-519/final-side1.png",
+      "sha256": "c438760d9c7eb3b3782f4fc43bcec4def0ad3860d1a92df18a6f4bebbcd8259f"
+    }
+  ]
+}

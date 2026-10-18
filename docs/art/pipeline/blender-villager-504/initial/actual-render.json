@@ -1,0 +1,79 @@
+{
+  "blender": "5.0.1",
+  "python": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+  "device": "CPU",
+  "samples": 32,
+  "threads": 2,
+  "cameraLocation": [
+    3.3545143604278564,
+    -3.4154133796691895,
+    3.708566188812256
+  ],
+  "cameraRotation": [
+    1.0471975803375244,
+    -9.073185935903894e-08,
+    0.7853981852531433
+  ],
+  "orthoScale": 2.0,
+  "pivot": [
+    133.51196172248802,
+    232.72727272727272
+  ],
+  "render": [
+    42,
+    42
+  ],
+  "resolution": [
+    256,
+    256
+  ],
+  "objectCount": 31,
+  "sceneBuilds": 1,
+  "renderCount": 2,
+  "correctionCap": 0,
+  "appearanceApproval": false,
+  "rig": null,
+  "sourcePins": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "52cda32fd631f5cde21b0f861d7cd50db4e8948f8d7475f052e8086c0b149c8b"
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "225d9c16f9db5c4fbe941c93053fbcb958b1672824043b757b58ebb4f41b8569"
+    },
+    {
+      "path": "docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94"
+    },
+    {
+      "path": "docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-501/CHECKPOINT.json",
+      "sha256": "b1cc9cf46dc56f03cfbb7d8c311f93ab7dd4dbc22d510f68bc3b557bf09fef9a"
+    },
+    {
+      "path": "scripts/blender/villager501.py",
+      "sha256": "07c72ae11bc3386ea63252018fc1960810345927b20e55351f59bbe6e7466492"
+    },
+    {
+      "path": "docs/audits/blender-runtime-500/capability/CHECKPOINT.json",
+      "sha256": "5c0e3540553cf4d509a74953e59d8968d251e031581edb03fdb114ba79f4eea7"
+    },
+    {
+      "path": "scripts/blender/villager504.py",
+      "sha256": "e97cc98b24fa8237028330643a0bbc17eca40f85bfd820367212b751ea7556f8"
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-504/control.json",
+      "sha256": "9253cbc659f5a0fce2d2606eadef9921bdf985567cc9decf2cef32b88cfae966"
+    },
+    {
+      "path": "docs/audits/continuation-504/root/render-authorization.json",
+      "sha256": "1f21f140ff5aa8309c9a0d676f03f013e3401363183171bb70acb3a2c2ca9090"
+    }
+  ],
+  "elapsedSeconds": 0.9640899680016446
+}

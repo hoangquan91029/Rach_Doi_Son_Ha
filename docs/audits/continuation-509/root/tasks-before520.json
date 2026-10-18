@@ -1,0 +1,2980 @@
+{
+  "schema": "rds-agent-tasks/v1",
+  "tasks": [
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "root-integration495",
+      "status": "CLOSED",
+      "purpose": "Integrate approved plan and LOCAL stonepolicy; do not deploy or generate. Root model unknown, not fabricated.",
+      "worker": {
+        "id": "/root",
+        "role": "ROOT",
+        "model": null,
+        "reasoningEffort": null
+      },
+      "outputs": [
+        "AGENTS.md",
+        "docs/AGENT_EXECUTION_CONTRACT.md",
+        "docs/COMPLETION_MATRIX.md",
+        "docs/PROJECT_STATE.md",
+        "docs/PROJECT_ROADMAP.md",
+        "docs/NEXT_STEPS.md",
+        "docs/ARCHITECTURE_DECISIONS.md",
+        "docs/agent-read-contract.json",
+        "docs/art/pipeline/SPRITE_PRODUCTION_WORKFLOW.md",
+        "docs/art/pipeline/IMAGE_GENERATION_TEMPLATES.md",
+        "docs/art/pipeline/unit-production/README.md",
+        "scripts/unit-art-coverage.mjs",
+        "shared/sim.js",
+        "shared/fortification-placement.js",
+        "client/main.js",
+        "tests/fortification-placement495.test.js",
+        "docs/qa/stone-policy-495/browser.mjs",
+        "docs/qa/stone-policy-495/config.json",
+        "docs/qa/stone-policy-495/build.txt",
+        "docs/qa/stone-policy-495/browser-receipt.json",
+        "docs/qa/stone-policy-495/actual-forbidden-preview.png",
+        "docs/qa/stone-policy-495/failure.png",
+        "docs/audits/implementation-495/tasks.json",
+        "docs/audits/implementation-495/root-inputs.json",
+        "docs/audits/implementation-495/root-preflight.json",
+        "docs/audits/implementation-495/root-scoped-preflight.json",
+        "docs/audits/implementation-495/requirements",
+        "docs/audits/implementation-495/prior-active",
+        "docs/audits/implementation-495/baseline.json",
+        "docs/audits/implementation-495/CHECKPOINT.json",
+        "docs/audits/implementation-495/checks.txt",
+        "docs/audits/implementation-495/link-check.json",
+        "docs/audits/implementation-495/preservation.json",
+        "docs/art/pipeline/unit-production/order-ledger.json",
+        "docs/audits/implementation-495/ledger-metadata-change.json"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "shared/data.js",
+          "sha256": "ffc3f45adc58f212066d3763c591377ce15b9f6ac78e4685a95fc3ac747818e1"
+        },
+        {
+          "path": "shared/unit-action-spec.js",
+          "sha256": "04d987298651c73187920391754f729fd203c1313536eb54c29c629048db05bf"
+        },
+        {
+          "path": "public/assets/art-v1/fort-202-manifest.json",
+          "sha256": "77c75ef2bea8cff633b28fe8635e51b5a7efc151bb1871b5b5d9d17850d4271c"
+        },
+        {
+          "path": "docs/art/pipeline/unit-production/order-ledger.json",
+          "sha256": "48cdd19d3148b0d0838500dce65fa94bc47bf5970d636adbce1dcad873bb3f50"
+        }
+      ],
+      "acceptance": "Scoped helper/placement tests, ordinaryUI scene, authoritative docs; preserve art/public and future gates",
+      "registrationLimit": "Ownership enforcement introduced after worker dispatch; records do not claim initial preflight was already gated.",
+      "closure": "Actual owned checks/provider/browser/serverhandles terminal; production intentionallyrunning; no automatic expiry or refundedcalls."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "controls495",
+      "status": "CLOSED",
+      "purpose": "Finish retained controls preflight refresh after root created required matrix; no code/test/ledger edits",
+      "worker": {
+        "id": "/root/plan_controls494",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "scripts/agent-preflight.mjs",
+        "scripts/sprite-order-run.mjs",
+        "scripts/agent-task-contract.mjs",
+        "tests/agent-preflight.test.js",
+        "tests/agent-task-contract.test.js",
+        "docs/audits/implementation-495/controls"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "docs/art/pipeline/unit-production/order-ledger.json",
+          "sha256": "48cdd19d3148b0d0838500dce65fa94bc47bf5970d636adbce1dcad873bb3f50"
+        }
+      ],
+      "acceptance": "Focused35tests and independent root review; no ledgerchange",
+      "closure": "Actual owned checks/provider/browser/serverhandles terminal; production intentionallyrunning; no automatic expiry or refundedcalls."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "local2d495",
+      "status": "CLOSED",
+      "purpose": "Bounded capability, then independent stone source review; no install/models/images",
+      "worker": {
+        "id": "/root/plan_art494",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "docs/art/pipeline/local2d-capability-495",
+        "docs/qa/stone-policy-495/review.json"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "docs/art/pipeline/local2d-capability-495/CHECKPOINT.json",
+          "sha256": "c219c13a1e2453067806b88f9f24496ccbd88e83a418463a8044159791b74b20"
+        }
+      ],
+      "closure": "Actual owned checks/provider/browser/serverhandles terminal; production intentionallyrunning; no automatic expiry or refundedcalls."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "working-set496",
+      "status": "CLOSED",
+      "purpose": "G6 bounded actualpagecache/LRU stress, fix demonstrated defect only; no art/manifest/budget changes",
+      "worker": {
+        "id": "/root/plan_controls494",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "client/art-assets.js",
+        "client/art-bank.js",
+        "tests/art-working-set496.test.js",
+        "docs/qa/working-set-496"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "client/art-assets.js",
+          "sha256": "c134c41b8d0470fa1af88d655e254c5e7e76f14026b2c4950a05ed8c93018db0"
+        },
+        {
+          "path": "client/art-bank.js",
+          "sha256": "5d50c06286757e4a90668314d282aba9ce4dc9a00069cd81045deaf472d239e4"
+        },
+        {
+          "path": "shared/art-bank.js",
+          "sha256": "9d41f2101943092e174e1ded4516faeee6c74e502998518ea860f060eec9cff8"
+        }
+      ],
+      "closure": "Worker17focusedchecks exited, realbytecounterexamplefixed, no persistentownedhandle. Root actualChrome/Firefox3epochs independentlypassed.",
+      "outputsFrozenPins": [
+        {
+          "path": "client/art-assets.js",
+          "sha256": "af4db82838cf5b936549307272f96aef4ef16d1ac6f672cb8f4dd7c73437ab06"
+        }
+      ]
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "gameplay-profile496",
+      "status": "CLOSED",
+      "purpose": "G6 one finite ordinaryDelta easy UI20/50unit cohort profile; isolate build, no state injection or finalfullrosterclaim",
+      "worker": {
+        "id": "/root/plan_art494",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "scripts/qa/gameplay-profile496.mjs",
+        "docs/qa/gameplay-profile-496"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "client/main.js",
+          "sha256": "ed8e60ebc54da9d4a6f258be153a63bc72034ff8cca011480a2a1b97de4a8957"
+        },
+        {
+          "path": "shared/sim.js",
+          "sha256": "c9a01adba8630e89e1c3f195c1b98c08c32e74468d389a55891c664e3906e562"
+        },
+        {
+          "path": "shared/data.js",
+          "sha256": "ffc3f45adc58f212066d3763c591377ce15b9f6ac78e4685a95fc3ac747818e1"
+        },
+        {
+          "path": "client/renderer.js",
+          "sha256": "d2c34bc266c03c95b2379ebc3c115993a338dbe2de826507ddf6450ab1b53553"
+        },
+        {
+          "path": "public/assets/art-v1/fort-202-manifest.json",
+          "sha256": "77c75ef2bea8cff633b28fe8635e51b5a7efc151bb1871b5b5d9d17850d4271c"
+        }
+      ],
+      "closure": "Actualfinitechecks/browser/server closed; production intentionallyrunning; no expiry/refund."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "root-release-preparation496",
+      "status": "CLOSED",
+      "purpose": "Prepare actual451+230 rollback and pairedcandidate inventory, no deploy; activefullgoalcontinuous",
+      "worker": {
+        "id": "/root",
+        "role": "ROOT",
+        "model": null,
+        "reasoningEffort": null
+      },
+      "outputs": [
+        "docs/qa/paired-release-preparation-496",
+        "docs/PROJECT_STATE.md",
+        "docs/NEXT_STEPS.md",
+        "docs/audits/implementation-495/tasks.json",
+        "docs/qa/bank-epochs-496"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "server/index.js",
+          "sha256": "4e6a7e82f02d1d856f4ea788863c4836930bc00250be6a5b020ba2bdd8884198"
+        },
+        {
+          "path": "shared/sim.js",
+          "sha256": "c9a01adba8630e89e1c3f195c1b98c08c32e74468d389a55891c664e3906e562"
+        },
+        {
+          "path": "dist/assets/art-v1/fort-202-manifest.json",
+          "sha256": "42425c68d448f89047ea15fe6e108ec2b25393d34312ae0adb37ff1d9be282fa"
+        }
+      ],
+      "closure": "Actualfinitechecks/browser/server closed; production intentionallyrunning; no expiry/refund."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "building-dispatch497",
+      "status": "CLOSED",
+      "purpose": "Extend existing finite runner for explicit building-state original/master/layout guards; no image/ledger/manifestchanges",
+      "worker": {
+        "id": "/root/plan_controls494",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "scripts/sprite-prompts.mjs",
+        "scripts/sprite-order-run.mjs",
+        "scripts/building-sprite-contract.mjs",
+        "docs/art/pipeline/unit-production/templates/building_key.txt",
+        "tests/building-sprite-dispatch497.test.js",
+        "docs/art/pipeline/building-dispatch-497"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "scripts/sprite-prompts.mjs",
+          "sha256": "e3a49f86b2b3fd05ddbcb5c2ecbac0d7fa022a4e451f5dee645810824d90a25b"
+        },
+        {
+          "path": "scripts/sprite-order-run.mjs",
+          "sha256": "a105dd089da37cb38ec9ebfcaa2a5758f4131f5de1bc0137e1604d623456b034"
+        },
+        {
+          "path": "shared/data.js",
+          "sha256": "ffc3f45adc58f212066d3763c591377ce15b9f6ac78e4685a95fc3ac747818e1"
+        },
+        {
+          "path": "public/assets/art-v1/fort-202-manifest.json",
+          "sha256": "77c75ef2bea8cff633b28fe8635e51b5a7efc151bb1871b5b5d9d17850d4271c"
+        }
+      ],
+      "closure": "Actualworker/browser/server/test/providerhandles terminal; F0claimsettled+closed no remainingcalls; productionintentionallyrunning."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "defense-profile497",
+      "status": "CLOSED",
+      "purpose": "One materiallydifferent ordinaryUI safeGeneral/fort/parallelproduction strategy aiming50; no repeated496plaintrainmethod",
+      "worker": {
+        "id": "/root/plan_art494",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "scripts/qa/defense-profile497.mjs",
+        "docs/qa/defense-profile-497"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "client/main.js",
+          "sha256": "ed8e60ebc54da9d4a6f258be153a63bc72034ff8cca011480a2a1b97de4a8957"
+        },
+        {
+          "path": "shared/sim.js",
+          "sha256": "c9a01adba8630e89e1c3f195c1b98c08c32e74468d389a55891c664e3906e562"
+        },
+        {
+          "path": "shared/data.js",
+          "sha256": "ffc3f45adc58f212066d3763c591377ce15b9f6ac78e4685a95fc3ac747818e1"
+        },
+        {
+          "path": "client/art-assets.js",
+          "sha256": "af4db82838cf5b936549307272f96aef4ef16d1ac6f672cb8f4dd7c73437ab06"
+        }
+      ],
+      "closure": "Actualworker/browser/server/test/providerhandles terminal; F0claimsettled+closed no remainingcalls; productionintentionallyrunning."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "root-art-intake497",
+      "status": "CLOSED",
+      "purpose": "Root source+layout+finitefirstbuildingkey intake; do not open unitfanout or oldorders; actualprepare+claim beforeimage",
+      "worker": {
+        "id": "/root",
+        "role": "ROOT",
+        "model": null,
+        "reasoningEffort": null
+      },
+      "outputs": [
+        "docs/art/pipeline/building-production",
+        "docs/art/pipeline/residence-construction-497",
+        "docs/PROJECT_STATE.md",
+        "docs/NEXT_STEPS.md",
+        "docs/COMPLETION_MATRIX.md",
+        "docs/audits/implementation-495/tasks.json",
+        "docs/art/pipeline/unit-production/order-ledger.json"
+      ],
+      "slots": [
+        {
+          "orderId": "residence-construction-F0-497",
+          "slotIndex": 0
+        }
+      ],
+      "inputs": [
+        {
+          "path": "shared/data.js",
+          "sha256": "ffc3f45adc58f212066d3763c591377ce15b9f6ac78e4685a95fc3ac747818e1"
+        },
+        {
+          "path": "public/assets/art-v1/fort-202-manifest.json",
+          "sha256": "77c75ef2bea8cff633b28fe8635e51b5a7efc151bb1871b5b5d9d17850d4271c"
+        },
+        {
+          "path": "docs/art/residence/variant-02/raw.png",
+          "sha256": "f617c3540680cafff467358bab1adb01bf735417563f2cba86ab8af523b07dcc"
+        },
+        {
+          "path": "docs/art/pipeline/building-production/residence/identity.json",
+          "sha256": "a9e202cf7f508e5a7fd59bb561c2477038d4b59df25c498c667a30b8efdaedb5"
+        },
+        {
+          "path": "docs/art/pipeline/residence-construction-497/job.json",
+          "sha256": "3fd0f1e56f91e17ff67d486668117008c8795cfee2e7d3623e891e5f0784d7de"
+        },
+        {
+          "path": "docs/art/pipeline/residence-construction-497/canonical-asset.json",
+          "sha256": "11b26f3221aa9c56d32de37b8d601570504f997523abf0feb2e297b3bc7d787a"
+        },
+        {
+          "path": "scripts/sprite-prompts.mjs",
+          "sha256": "6e0dcf805f489c0f3853b6d6f1640377f523ff8165604030320d4ee811163c1e"
+        },
+        {
+          "path": "scripts/building-sprite-contract.mjs",
+          "sha256": "03544fe68faa3d0bc68bb2931c402b8967677e3fe4e0d64d9488d0e9280b7715"
+        },
+        {
+          "path": "scripts/sprite-order-run.mjs",
+          "sha256": "8436a7eedbe2d4a0dac8634bfcc9e7ad27a365e8862771ef230b9cfc47eb5d90"
+        }
+      ],
+      "closure": "Actualworker/browser/server/test/providerhandles terminal; F0claimsettled+closed no remainingcalls; productionintentionallyrunning."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "building-compiler498",
+      "status": "CLOSED",
+      "purpose": "Extend existingcompiler strict schema3buildingkind/nulldirection/lockedruntimecell; preserve legacyunit schemas",
+      "worker": {
+        "id": "/root/plan_controls494",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "scripts/sprite-production.py",
+        "tests/building-sprite-compiler498.test.js",
+        "docs/art/pipeline/building-compiler-498"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "scripts/sprite-production.py",
+          "sha256": "1f49dfb05cd0d8bfb03b932ec09925b3c5b58fd8d7d1b03c8c72965275ed675e"
+        },
+        {
+          "path": "client/art-assets.js",
+          "sha256": "af4db82838cf5b936549307272f96aef4ef16d1ac6f672cb8f4dd7c73437ab06"
+        },
+        {
+          "path": "docs/art/pipeline/residence-construction-497/canonical-asset.json",
+          "sha256": "11b26f3221aa9c56d32de37b8d601570504f997523abf0feb2e297b3bc7d787a"
+        }
+      ],
+      "closure": "Worker outputs and owned tests terminal as scoped498 receipts; this does not close root F1/F3 provider claims."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "construction-review498",
+      "status": "CLOSED",
+      "purpose": "Independent changed-control and newkey source review; no image/order/registry/runtime edits",
+      "worker": {
+        "id": "/root/plan_art494",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "docs/art/pipeline/residence-construction-498/reviews"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "docs/art/pipeline/residence-construction-497/source-selection.json",
+          "sha256": "e9dfbe17ab7ca930ab1c6a29fe0f35fc1a84ac8d6e4a35cedf8fa5c1abcc3435"
+        },
+        {
+          "path": "docs/art/pipeline/residence-construction-497/selected-keys.json",
+          "sha256": "139ebf4662598f433ec9ba0ebd9c0e55e74147c71ddd0563b79c1ae809360510"
+        },
+        {
+          "path": "scripts/building-sprite-contract.mjs",
+          "sha256": "03544fe68faa3d0bc68bb2931c402b8967677e3fe4e0d64d9488d0e9280b7715"
+        }
+      ],
+      "closure": "Worker outputs and owned tests terminal as scoped498 receipts; this does not close root F1/F3 provider claims."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "root-construction498",
+      "status": "ACTIVE",
+      "purpose": "MissingconstructionF2thenF1/F3wholeframes, cumulativeinitial4including497F0; rootfiniteorder+sourcegate, no unitfanout",
+      "worker": {
+        "id": "/root",
+        "role": "ROOT",
+        "model": null,
+        "reasoningEffort": null
+      },
+      "outputs": [
+        "docs/art/pipeline/residence-construction-498/inputs",
+        "docs/art/pipeline/residence-construction-498/raw",
+        "docs/art/pipeline/residence-construction-498/jobs",
+        "docs/art/pipeline/residence-construction-498/orders",
+        "docs/art/pipeline/residence-construction-498/exports",
+        "docs/art/pipeline/residence-construction-498/CHECKPOINT.json",
+        "docs/art/pipeline/residence-construction-498/selection.json",
+        "docs/art/pipeline/building-production/residence/identity.json",
+        "docs/art/pipeline/unit-production/order-ledger.json"
+      ],
+      "slots": [
+        {
+          "orderId": "residence-construction-F2-498",
+          "slotIndex": 2
+        },
+        {
+          "orderId": "residence-construction-F1-F3-498",
+          "slotIndex": 1
+        },
+        {
+          "orderId": "residence-construction-F1-F3-498",
+          "slotIndex": 3
+        }
+      ],
+      "inputs": [
+        {
+          "path": "docs/art/residence/variant-02/raw.png",
+          "sha256": "f617c3540680cafff467358bab1adb01bf735417563f2cba86ab8af523b07dcc"
+        },
+        {
+          "path": "docs/art/pipeline/residence-construction-497/raw-F0.png",
+          "sha256": "e98afbf79b648b7645b32c8e2d9ad1dbbe8a6346e26ad68a49b4b33c840daea0"
+        },
+        {
+          "path": "scripts/sprite-prompts.mjs",
+          "sha256": "6e0dcf805f489c0f3853b6d6f1640377f523ff8165604030320d4ee811163c1e"
+        },
+        {
+          "path": "scripts/building-sprite-contract.mjs",
+          "sha256": "03544fe68faa3d0bc68bb2931c402b8967677e3fe4e0d64d9488d0e9280b7715"
+        },
+        {
+          "path": "docs/art/pipeline/residence-construction-498/jobs/key-job.json",
+          "sha256": "3d8449f4d603c966f5ca99db3a714309ff928fcb4fbe9421c9ea3ec45cbf4920"
+        },
+        {
+          "path": "docs/art/pipeline/residence-construction-498/reviews/method-difference.json",
+          "sha256": "f3c600df01155576d73a2d4a541a58d612bbe266872ca9f9b9aeb59d1026f809"
+        },
+        {
+          "path": "docs/art/pipeline/residence-construction-497/canonical-asset.json",
+          "sha256": "11b26f3221aa9c56d32de37b8d601570504f997523abf0feb2e297b3bc7d787a"
+        },
+        {
+          "path": "docs/art/pipeline/building-production/residence/identity.json",
+          "sha256": "f93134d8f2cac437dafddbed06ef3c8ab6ebc929d9788a4510a3365d9352736f"
+        },
+        {
+          "path": "docs/art/pipeline/residence-construction-498/jobs/inbetween-job.json",
+          "sha256": "3da67a45a03f41375427b5d746963530ee3ef10d5d6f3c7200a37a2da12416de"
+        },
+        {
+          "path": "docs/art/pipeline/residence-construction-498/raw/F2.png",
+          "sha256": "d03465a161d1df3c77fe0366d95c4a0957175d32c40153e1d8077b7c40a5e164"
+        },
+        {
+          "path": "docs/art/pipeline/residence-construction-498/reviews/source-F2.json",
+          "sha256": "28e637c6905c9dbece2c3dae953d921a08302c5755e5c7b7bf343e9c8c2a03c6"
+        }
+      ],
+      "relinquishedOutputs499": [
+        "docs/PROJECT_STATE.md",
+        "docs/NEXT_STEPS.md",
+        "docs/COMPLETION_MATRIX.md",
+        "docs/audits/implementation-495/tasks.json"
+      ],
+      "continuationLimit": "Only custody/intake of already consumed498 claims; no new image call or refund. Common docs ownership transferred explicitly to root499."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "blender-capability499",
+      "status": "CLOSED",
+      "purpose": "Verify actual Blender/MCP availability and reviewed setup route; no install/download/modeling yet",
+      "worker": {
+        "id": "/root/blender_capability499",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "docs/audits/blender-transition-499/capability"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "7c92f4ad72fdc3e4d360b04942550506a38c779b92135913c40f2a8466026805"
+        },
+        {
+          "path": "docs/art/pipeline/local2d-capability-495/CHECKPOINT.json",
+          "sha256": "c219c13a1e2453067806b88f9f24496ccbd88e83a418463a8044159791b74b20"
+        }
+      ],
+      "allowedOperations": "Read/source research/scoped implementation only. No generation, production or driver changes.",
+      "acceptance": "Actual outputs, source pins, scoped checks and explicit unqualified gates; one receipt per task.",
+      "closure": "Bounded lookup/research finished, no Blender/MCP installation; receipt pins retained. Further runtime setup uses new disjointtask."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "blender-identity499",
+      "status": "CLOSED",
+      "purpose": "Source-bound Villager identity/camera/action pilot specification, realistic final shading and reuse plan",
+      "worker": {
+        "id": "/root/blender_identity499",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "docs/audits/blender-transition-499/identity"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "7c92f4ad72fdc3e4d360b04942550506a38c779b92135913c40f2a8466026805"
+        },
+        {
+          "path": "client/renderer.js",
+          "sha256": "d2c34bc266c03c95b2379ebc3c115993a338dbe2de826507ddf6450ab1b53553"
+        },
+        {
+          "path": "shared/unit-action-spec.js",
+          "sha256": "04d987298651c73187920391754f729fd203c1313536eb54c29c629048db05bf"
+        },
+        {
+          "path": "docs/art/pipeline/ANIMATION_CONTRACT.md",
+          "sha256": "7edd5b99ae59b9e848458ee4ac06c72dd575a3bee4e27288823dad1e31b87014"
+        }
+      ],
+      "allowedOperations": "Read/source research/scoped implementation only. No generation, production or driver changes.",
+      "acceptance": "Actual outputs, source pins, scoped checks and explicit unqualified gates; one receipt per task.",
+      "closure": "Actual scopedworker/test/download handles terminal; independent root intake retained. No Blender executable/render or art approval; root498 interruptedprovider claims not owned or closed by this task."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "blender-export499",
+      "status": "CLOSED",
+      "purpose": "Reusable strict Blender render-job/export adapter with fail-closed external input and focused non-Blender checks; no modeling/render claims",
+      "worker": {
+        "id": "/root/blender_export499",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "scripts/blender",
+        "tests/blender-export499.test.js",
+        "docs/audits/blender-transition-499/export"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "7c92f4ad72fdc3e4d360b04942550506a38c779b92135913c40f2a8466026805"
+        },
+        {
+          "path": "scripts/sprite-production.py",
+          "sha256": "ed43f04c1db641b85cc1c003c53991d3e7e5295edf277cc34fd7b9e5407d1723"
+        },
+        {
+          "path": "client/renderer.js",
+          "sha256": "d2c34bc266c03c95b2379ebc3c115993a338dbe2de826507ddf6450ab1b53553"
+        },
+        {
+          "path": "client/art-assets.js",
+          "sha256": "af4db82838cf5b936549307272f96aef4ef16d1ac6f672cb8f4dd7c73437ab06"
+        }
+      ],
+      "allowedOperations": "Read/source research/scoped implementation only. No generation, production or driver changes.",
+      "acceptance": "Actual outputs, source pins, scoped checks and explicit unqualified gates; one receipt per task.",
+      "closure": "Actual scopedworker/test/download handles terminal; independent root intake retained. No Blender executable/render or art approval; root498 interruptedprovider claims not owned or closed by this task."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "root-blender499",
+      "status": "CLOSED",
+      "purpose": "Audit and integrate delegated Blender transition plan/tooling/capability while preserving498 and fullgoal gates",
+      "worker": {
+        "id": "/root",
+        "role": "ROOT",
+        "model": null,
+        "reasoningEffort": null
+      },
+      "outputs": [
+        "AGENTS.md",
+        "docs/ARCHITECTURE_DECISIONS.md",
+        "docs/AGENT_EXECUTION_CONTRACT.md",
+        "docs/PROJECT_STATE.md",
+        "docs/NEXT_STEPS.md",
+        "docs/PROJECT_ROADMAP.md",
+        "docs/agent-read-contract.json",
+        "docs/art/pipeline/ANIMATION_CONTRACT.md",
+        "docs/art/pipeline/SPRITE_PRODUCTION_WORKFLOW.md",
+        "docs/art/pipeline/IMAGE_GENERATION_TEMPLATES.md",
+        "docs/art/pipeline/BLENDER_SPRITE_PIPELINE.md",
+        "docs/COMPLETION_MATRIX.md",
+        "docs/audits/implementation-495/tasks.json",
+        "docs/audits/blender-transition-499/CHECKPOINT.json",
+        "docs/audits/blender-transition-499/initial-preflight.json",
+        "docs/audits/blender-transition-499/initial-error.txt",
+        "docs/audits/blender-transition-499/prior-active",
+        "docs/audits/blender-transition-499/integration"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "cc426aeb2344eae7a03c912efd7d10813ec999154173e716c58f6dbfe047dae5"
+        },
+        {
+          "path": "scripts/sprite-production.py",
+          "sha256": "ed43f04c1db641b85cc1c003c53991d3e7e5295edf277cc34fd7b9e5407d1723"
+        },
+        {
+          "path": "docs/art/pipeline/unit-production/order-ledger.json",
+          "sha256": "a687d7b292859ff5ef7b973001c2ae1308ec3fcf1023db160ac1f1792d3ce7b4"
+        }
+      ],
+      "allowedOperations": "Read/source research/scoped implementation only. No generation, production or driver changes.",
+      "acceptance": "Actual outputs, source pins, scoped checks and explicit unqualified gates; one receipt per task.",
+      "previousInputsBeforeDocIntegration": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "7c92f4ad72fdc3e4d360b04942550506a38c779b92135913c40f2a8466026805"
+        },
+        {
+          "path": "scripts/sprite-production.py",
+          "sha256": "ed43f04c1db641b85cc1c003c53991d3e7e5295edf277cc34fd7b9e5407d1723"
+        },
+        {
+          "path": "docs/art/pipeline/unit-production/order-ledger.json",
+          "sha256": "a687d7b292859ff5ef7b973001c2ae1308ec3fcf1023db160ac1f1792d3ce7b4"
+        }
+      ],
+      "inputRefreshReason": "Root-authorized active instruction integration after allworker input reads/edits closed; scopedsource/ledger unchanged.",
+      "closure": "Three workers and root scopedchecks terminal;499 noBlender/image/provider/browser/server handles opened. Existing498 claims remainACTIVE/UNRESOLVED, no automaticclosure orrefundedcalls. Currentgoalopen/runtime setupblocked."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "blender-runtime499",
+      "status": "CLOSED",
+      "purpose": "User-authorized Blender transition: install ONE pinned official portable LTS in exclusive userlandtools directory and bounded CPU technical capability, no character art/MCP config/driverchange",
+      "worker": {
+        "id": "/root/blender_capability499",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "docs/audits/blender-transition-499/runtime"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "7c92f4ad72fdc3e4d360b04942550506a38c779b92135913c40f2a8466026805"
+        },
+        {
+          "path": "docs/audits/blender-transition-499/capability/SETUP.md",
+          "sha256": "db7778e87ad9042d525237a7367e2b54bf7607e7991e3319d2d4fce852d28c35"
+        },
+        {
+          "path": "docs/audits/blender-transition-499/capability/CHECKPOINT.json",
+          "sha256": "016dd6ebf0e852eb82fc15ada53eda13534c003ebd74812c6d0b62a8aec854c3"
+        }
+      ],
+      "externalToolInstallRoot": "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/blender499",
+      "allowedOperations": "Official one version portable Blender download/extract with published checksum and license pin; factory-startup noautoexec version+bpy import+one CPU transparentRGBA fixture only; no characterart. No unreviewed remote code/config/systempackages/driver/MCP socket. Download cap600MiB, verify disk beforedownload.",
+      "acceptance": "Verified exactbinary version/runtime/headlessPNG or explicit blocker, no visualart approval.",
+      "closure": "Actual scopedworker/test/download handles terminal; independent root intake retained. No Blender executable/render or art approval; root498 interruptedprovider claims not owned or closed by this task."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "blender-apt500",
+      "status": "CLOSED",
+      "purpose": "Alternate supported publisher: Ubuntu signedAPT package isolated Blender runtime; no systeminstall or uncheckedmirror",
+      "worker": {
+        "id": "/root/blender_capability499",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "docs/audits/blender-runtime-500/capability"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "cc426aeb2344eae7a03c912efd7d10813ec999154173e716c58f6dbfe047dae5"
+        },
+        {
+          "path": "docs/audits/blender-transition-499/runtime/CHECKPOINT.json",
+          "sha256": "ac91fc762a92d06b250c1cd6acd8b51cec80a933e528e9517992fef93e23a1de"
+        }
+      ],
+      "allowedOperations": "APT signedmetadata inspect/download/extract Blender exactcandidate5.0.1+dfsg-1ubuntu1 and necessarymissing dependencies into exclusiveuserlandroot; verify SHA256/URLs/packageorigin/license. cap800MiBdownloads no sudo/driver/systemconfig. Actual headlessversion/bpy/ONECPU256RGBAfixture, no characterart/MCPconfig.",
+      "acceptance": "Scopedactual evidence, pins, closedownedhandles; no source/visual/release expansion from technicalsuccess",
+      "externalInstallRoot": "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/blender500",
+      "closure": "Scopedworkerterminal; actualAPTversion/bpy/CPUfixture verified, MCPsourcecandidateonly, onlineUI firstguardFAILED/no retry/ownedcontextsserverclosed/rooms0. Prior498 claims unrelatedUNRESOLVED."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "blender-mcp500",
+      "status": "CLOSED",
+      "purpose": "Prepare reviewed pinned MCP bridge/addon setup against actualavailable Blender; disableoptionalremote integrations/telemetry; no configurationyet",
+      "worker": {
+        "id": "/root/blender_export499",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "docs/audits/blender-runtime-500/mcp",
+        "scripts/blender/mcp500"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "cc426aeb2344eae7a03c912efd7d10813ec999154173e716c58f6dbfe047dae5"
+        },
+        {
+          "path": "docs/audits/blender-transition-499/capability/upstream-pins.json",
+          "sha256": "af925e98dec8a07b7505f812cdabd872258d88babee2695e288531ec439fe49b"
+        },
+        {
+          "path": "docs/audits/blender-transition-499/capability/reviewed-pyproject.toml",
+          "sha256": "46012441563e20d2b1b7a64e0c830bb3710ce5d44cf813840f8d31729b5f26c5"
+        }
+      ],
+      "allowedOperations": "Read-only pinnedupstream/dependencyreview, boundedscript/candidateconfig generation and isolatedhelperchecks. No executingaddon or installingserver/configmutation/socket untilrootreviews. No toolconnection claim.",
+      "acceptance": "Scopedactual evidence, pins, closedownedhandles; no source/visual/release expansion from technicalsuccess",
+      "closure": "Scopedworkerterminal; actualAPTversion/bpy/CPUfixture verified, MCPsourcecandidateonly, onlineUI firstguardFAILED/no retry/ownedcontextsserverclosed/rooms0. Prior498 claims unrelatedUNRESOLVED."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "online-profile500",
+      "status": "CLOSED",
+      "purpose": "G6 finiteordinaryOnlineDelta twohuman cohort100 first newscope: noAI, economy/parallelproduction/navigation legal",
+      "worker": {
+        "id": "/root/blender_identity499",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "scripts/qa/online-profile500.mjs",
+        "docs/qa/online-profile-500"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "cc426aeb2344eae7a03c912efd7d10813ec999154173e716c58f6dbfe047dae5"
+        },
+        {
+          "path": "client/main.js",
+          "sha256": "ed8e60ebc54da9d4a6f258be153a63bc72034ff8cca011480a2a1b97de4a8957"
+        },
+        {
+          "path": "client/renderer.js",
+          "sha256": "d2c34bc266c03c95b2379ebc3c115993a338dbe2de826507ddf6450ab1b53553"
+        },
+        {
+          "path": "shared/sim.js",
+          "sha256": "c9a01adba8630e89e1c3f195c1b98c08c32e74468d389a55891c664e3906e562"
+        },
+        {
+          "path": "shared/data.js",
+          "sha256": "ffc3f45adc58f212066d3763c591377ce15b9f6ac78e4685a95fc3ac747818e1"
+        },
+        {
+          "path": "server/index.js",
+          "sha256": "4e6a7e82f02d1d856f4ea788863c4836930bc00250be6a5b020ba2bdd8884198"
+        },
+        {
+          "path": "scripts/qa/defense-profile497.mjs",
+          "sha256": "8311e2894a1e153650095695727eaecf4121fde9463aed1486c41cb689c696dc"
+        }
+      ],
+      "allowedOperations": "Isolatedfrozenstage/build/ownedserver/twoheadlessclients ordinaryUI only, no gamecommand/state/outcomeinjection. cap12minprep+60sprofile thenclose; no publicmutation/production/fullmatchclaim. Recordfailure iflegalcohortcannotreach100; noblindretry ornewstrategyafterbudget.",
+      "acceptance": "Scopedactual evidence, pins, closedownedhandles; no source/visual/release expansion from technicalsuccess",
+      "closure": "Scopedworkerterminal; actualAPTversion/bpy/CPUfixture verified, MCPsourcecandidateonly, onlineUI firstguardFAILED/no retry/ownedcontextsserverclosed/rooms0. Prior498 claims unrelatedUNRESOLVED."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "root-runtime500",
+      "status": "CLOSED",
+      "purpose": "Auditalternatecapability and independentdenseprofile; coordinate afteractualtoolready, preserveallpriorstate",
+      "worker": {
+        "id": "/root",
+        "role": "ROOT",
+        "model": null,
+        "reasoningEffort": null
+      },
+      "outputs": [
+        "docs/audits/blender-runtime-500/integration",
+        "docs/audits/blender-runtime-500/CHECKPOINT.json",
+        "docs/PROJECT_STATE.md",
+        "docs/NEXT_STEPS.md",
+        "docs/audits/implementation-495/tasks.json",
+        "AGENTS.md",
+        "docs/PROJECT_ROADMAP.md",
+        "docs/art/pipeline/BLENDER_SPRITE_PIPELINE.md",
+        "docs/COMPLETION_MATRIX.md"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "52cda32fd631f5cde21b0f861d7cd50db4e8948f8d7475f052e8086c0b149c8b"
+        },
+        {
+          "path": "scripts/blender/export_job.py",
+          "sha256": "cc22d934a0b1911aa760adce53c2176844e88f2e0310ae874e04559238baf45c"
+        },
+        {
+          "path": "docs/art/pipeline/unit-production/order-ledger.json",
+          "sha256": "a687d7b292859ff5ef7b973001c2ae1308ec3fcf1023db160ac1f1792d3ce7b4"
+        }
+      ],
+      "allowedOperations": "Rootreview/finiteorders/commonstateintegration only; no unreviewedruntime/productionchanges",
+      "acceptance": "Scopedactual evidence, pins, closedownedhandles; no source/visual/release expansion from technicalsuccess",
+      "previousInputsBeforeIntegration": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "cc426aeb2344eae7a03c912efd7d10813ec999154173e716c58f6dbfe047dae5"
+        },
+        {
+          "path": "scripts/blender/export_job.py",
+          "sha256": "5156756cb4e8401d4c22a7cae29bad2b4c2f75daa92b57edcbe1f534f074350a"
+        },
+        {
+          "path": "docs/art/pipeline/unit-production/order-ledger.json",
+          "sha256": "a687d7b292859ff5ef7b973001c2ae1308ec3fcf1023db160ac1f1792d3ce7b4"
+        }
+      ],
+      "inputRefreshReason": "Explicitworker-owned export501realAPI fix independentlyrootreviewed; allgame/source/ledger unchanged. Commonstate integrates afterterminalguards.",
+      "closure": "Actualworker/render/test/browser/MCPownedhandles terminal; configpersistedreadscope. Initial+corrected501artHELD no morebudget, 503no100profile. Existing498providerclaims remainACTIVE/UNRESOLVED; productionuntouched. FullgoalACTIVE/OPEN."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "villager-neutral501",
+      "status": "CLOSED",
+      "purpose": "ONE originalVillager wholeclothed neutralBlender scene + fixedcameraD0/D1 candidate appearance renders beforemotion",
+      "worker": {
+        "id": "/root/blender_identity499",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "scripts/blender/villager501.py",
+        "docs/art/pipeline/blender-villager-501"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "cc426aeb2344eae7a03c912efd7d10813ec999154173e716c58f6dbfe047dae5"
+        },
+        {
+          "path": "docs/audits/blender-runtime-500/capability/CHECKPOINT.json",
+          "sha256": "5c0e3540553cf4d509a74953e59d8968d251e031581edb03fdb114ba79f4eea7"
+        },
+        {
+          "path": "docs/audits/blender-runtime-500/capability/runtime-checks.json",
+          "sha256": "8b31a0f43b8716311f84631ffa3bc15b11f5d5c99fae7a696e04d809937b2788"
+        },
+        {
+          "path": "docs/audits/blender-transition-499/identity/SOURCE_BINDINGS.json",
+          "sha256": "4456182c39530209f479b687d77d355c70a1c0cac3bf3858882a19c258f641b4"
+        },
+        {
+          "path": "docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+          "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94"
+        },
+        {
+          "path": "docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+          "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+        }
+      ],
+      "allowedOperations": "ActualverifiedBlender5.0.1 userland CPU; authorfullvolumetricorganichead/body/garments/hat/sandals realisticmaterials fromcanonicalwholeart. Preserveoriginal/no redrawnidentity/blockyfinal/cardcutouts. Initial2neutral256RGBA rendersD0D1+maxONE correction ifrootnamesvisibledefect, no rigwalk/fanout/imagegen/API/runtime/manifest/production. WholeoriginalUV/materialprojection permissible whenpreservingactualvolumes; no separate limbtexturefiles orplanes masquerading unit. Fixednormalizedpivot/render42/shadowselectedpolicy sourcehashes/version/scene scriptreceipt.",
+      "acceptance": "Actualscopedoutputs/checks/handles/sourcepins; root orindependentreview art, no selfPASS/fanout/production",
+      "rootCorrectionDecision": {
+        "cap": 1,
+        "revision": "ONE visiblewholeappearance correction, two neutralD0D1 samples, no imageprovider calls",
+        "observedDefect": "Builtin sphereUV remained selected; originalwholetexture sampledonto wrongbodyvolumes; frontstrawbrim hidesD1face",
+        "changes": "ExplicitprojectedUV binding+active_render andoneglobalhatfrontbrimtilt; originalcamera/root/body/costume retained",
+        "next": "Brief independentrootappearance look; failure closesorder, no motion/fanout",
+        "reserved": 1,
+        "consumed": 1,
+        "dispatchNote": "Prior send_message queued onterminalworker and didnottriggerturn; actualagentterminal/filesconfirmed beforecorrectfollowup. No rerender/claim duplicated."
+      },
+      "closure": "Actualownedworker/render/SDK/browser/server/listener handles terminal.501appearanceFAILEDafter1/1correction;502config/readscopeverified;503queueobserverSTOP32TOTAL/no100. Prior498providerclaimsremainUNRESOLVED/unowned."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "blender-handshake501",
+      "status": "CLOSED",
+      "purpose": "InstallisolatedreviewedSDK dependencies and actualprivateGUIBlender handshake-only MCP test beforeCodexconfig",
+      "worker": {
+        "id": "/root/blender_export499",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "scripts/blender/mcp501",
+        "docs/audits/blender-runtime-501/handshake"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "cc426aeb2344eae7a03c912efd7d10813ec999154173e716c58f6dbfe047dae5"
+        },
+        {
+          "path": "docs/audits/blender-runtime-500/mcp/CHECKPOINT.json",
+          "sha256": "ed1ab60842f284bb1f2947a03690fa7ffb17705a1ffa950076d0ab095ec9c11f"
+        },
+        {
+          "path": "scripts/blender/mcp500/offline_addon_candidate.py",
+          "sha256": "219a496eda7248dfada013b5c83ce5e3356da590cbf24493dadb65ca92f03c7c"
+        },
+        {
+          "path": "scripts/blender/mcp500/offline_server_candidate.py",
+          "sha256": "95ccf3d3ee9c88ccd09751530359ff17d36cb35c0e107fdf0787afae8fb5720b"
+        },
+        {
+          "path": "docs/audits/blender-runtime-500/capability/CHECKPOINT.json",
+          "sha256": "5c0e3540553cf4d509a74953e59d8968d251e031581edb03fdb114ba79f4eea7"
+        },
+        {
+          "path": "docs/audits/blender-runtime-500/capability/runtime-checks.json",
+          "sha256": "8b31a0f43b8716311f84631ffa3bc15b11f5d5c99fae7a696e04d809937b2788"
+        }
+      ],
+      "allowedOperations": "Rootreviewacceptsoffline500candidateonly: disabledtelemetry/update/remoteproviders; pinnedexactwheel/reviewedsources. Isolatedvenv/userlanddeps<=150MiB pinresolverlock/licences; actualBlenderGUI/virtualdisplay ownprocess no driver/globalchange. Startloopbackownedport, actualSDKinitialize/listtools/get_scene_info/status thencloseallownhandles. Read-onlyscene/status commands only; no arbitrarycode/generator/remoteassets. NoCodexconfigmutation untilrootintake; reportmissingGUI/deps precisely.",
+      "acceptance": "Actualscopedoutputs/checks/handles/sourcepins; root orindependentreview art, no selfPASS/fanout/production",
+      "externalInstallRoot": "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/mcp501",
+      "closure": "ActualprivateGUI+SDKinitialize/list/status/scene succeeds; allownprocess/listenerclosed; noCodexconfig yet."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "blender-export-fixture501",
+      "status": "CLOSED",
+      "purpose": "ActualBlender5 technicalcompatibility of existingexport499 API and pinnedcandidate output; fixtureONLY no visualqualification",
+      "worker": {
+        "id": "/root/blender_capability499",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "docs/audits/blender-runtime-501/export-fixture",
+        "scripts/blender/export_job.py",
+        "tests/blender-export501.test.js"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "cc426aeb2344eae7a03c912efd7d10813ec999154173e716c58f6dbfe047dae5"
+        },
+        {
+          "path": "scripts/blender/export_job.py",
+          "sha256": "5156756cb4e8401d4c22a7cae29bad2b4c2f75daa92b57edcbe1f534f074350a"
+        },
+        {
+          "path": "docs/audits/blender-runtime-500/capability/CHECKPOINT.json",
+          "sha256": "5c0e3540553cf4d509a74953e59d8968d251e031581edb03fdb114ba79f4eea7"
+        },
+        {
+          "path": "docs/audits/blender-runtime-500/capability/runtime-checks.json",
+          "sha256": "8b31a0f43b8716311f84631ffa3bc15b11f5d5c99fae7a696e04d809937b2788"
+        }
+      ],
+      "allowedOperations": "One syntheticrender fixtureactual5.0.1 withdeclaredtest-onlyqualification and sourcecaps; saveownscratchblend; runexistingexportCLI actualfouridleframes; inspectPNGalpha/hashes/pivot andnooverwrite. FixonlydemonstratedAPI issue inassignedexporter andfocusedtests; no visualapproval or finalart. MayvalidateBlenderAPI usingrenderfixture only; no applicationcontextconfig/imageprovider/canonicalgame/production.",
+      "acceptance": "Actualexport API evidence or specific incompatibility, not model/art approval",
+      "closure": "ActualfreshBlenderexportCLI and28focusedchecks exit0; ownprocesses closed. Onlytechnicalfixture, no selectedart."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "codex-blender502",
+      "status": "CLOSED",
+      "purpose": "Registeruserauthorized verifiedBlender MCP readscope with ownedstdioGUI lifecycle and preservedCodexconfiguration",
+      "worker": {
+        "id": "/root/blender_export499",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "scripts/blender/mcp502",
+        "docs/audits/blender-runtime-502/connection"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "cc426aeb2344eae7a03c912efd7d10813ec999154173e716c58f6dbfe047dae5"
+        },
+        {
+          "path": "docs/audits/blender-runtime-501/handshake/CHECKPOINT.json",
+          "sha256": "81d67a456d2912917f70b20c5823f3c93fd5a04780ab226528144f3ab2b6e9ff"
+        },
+        {
+          "path": "scripts/blender/mcp500/offline_addon_candidate.py",
+          "sha256": "219a496eda7248dfada013b5c83ce5e3356da590cbf24493dadb65ca92f03c7c"
+        },
+        {
+          "path": "scripts/blender/mcp500/offline_server_candidate.py",
+          "sha256": "95ccf3d3ee9c88ccd09751530359ff17d36cb35c0e107fdf0787afae8fb5720b"
+        },
+        {
+          "path": "scripts/blender/mcp501/addon_launcher.py",
+          "sha256": "010e97960179897f6fe079a36d10d02dd97a57ad4e2c072b79d95e59ce55c67a"
+        },
+        {
+          "path": "docs/audits/blender-runtime-500/capability/CHECKPOINT.json",
+          "sha256": "5c0e3540553cf4d509a74953e59d8968d251e031581edb03fdb114ba79f4eea7"
+        }
+      ],
+      "externalConfiguration": "/home/kieu-hoang-quan/.codex/config.toml",
+      "allowedOperations": "UseracceptedMCP connection: reviewedownedstdio launcherstartsONEactualGUIBlender+offline501bridge, passesstdioSDKstream andterminatesonlyownedchildren. ONEactuallauncher SDK test with2readtools andclose. Thenappend exactly mcp_servers.rds_blender501 withactualcommand/args/cwd/enabled_tools status+scene/currentofficialfields. Private600backup outsideGit, preserveoldrawprefix/parsedallotherentries/mode, no secretprinting/preferences/startup/driver/publicchange. Noexecute/generator/toolsautoreadartPASS.",
+      "acceptance": "ActualMCPnewlifecycletest, configbytesvalidated andpreservedotherentries; currentchattoolexposureUNKNOWN unlessactualinventoryshows it.",
+      "closure": "Actualownedworker/render/SDK/browser/server/listener handles terminal.501appearanceFAILEDafter1/1correction;502config/readscopeverified;503queueobserverSTOP32TOTAL/no100. Prior498providerclaimsremainUNRESOLVED/unowned."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "online-acquisition502",
+      "status": "CLOSED",
+      "purpose": "RepairdemonstratedUIacquisition race throughordinaryPause/Resume and one finite100TOTALtwohuman profile, no gameplaychange",
+      "worker": {
+        "id": "/root/blender_capability499",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "scripts/qa/online-profile502.mjs",
+        "docs/qa/online-profile-502"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "cc426aeb2344eae7a03c912efd7d10813ec999154173e716c58f6dbfe047dae5"
+        },
+        {
+          "path": "scripts/qa/online-profile500.mjs",
+          "sha256": "6de2772270db7f3fc27449a7ed96813a9f77f83044e92e1358f61bc9b284d55b"
+        },
+        {
+          "path": "docs/qa/online-profile-500/CHECKPOINT.json",
+          "sha256": "9cf4ec4d7c2e46ed30f7f3f7f619e6def38bb1b2734c8ef097c7c42ecc922f85"
+        },
+        {
+          "path": "client/renderer.js",
+          "sha256": "d2c34bc266c03c95b2379ebc3c115993a338dbe2de826507ddf6450ab1b53553"
+        },
+        {
+          "path": "client/main.js",
+          "sha256": "ed8e60ebc54da9d4a6f258be153a63bc72034ff8cca011480a2a1b97de4a8957"
+        },
+        {
+          "path": "shared/sim.js",
+          "sha256": "c9a01adba8630e89e1c3f195c1b98c08c32e74468d389a55891c664e3906e562"
+        },
+        {
+          "path": "server/index.js",
+          "sha256": "4e6a7e82f02d1d856f4ea788863c4836930bc00250be6a5b020ba2bdd8884198"
+        }
+      ],
+      "allowedOperations": "ONE concretechangedUIacquisition: ordinaryhostPause bothclientsstatepaused confirm, exactselectedactor pickwhilefrozen thenordinaryResume/orderconfirmation. Handleactualopponentleave resultMenu cleanup insteadPauseaftermodal. Reusefrozen500build ONLYexactsamecorepins/hash; freshguardcore/stage/build/harness. One100TOTAL50perSide prep<=12min+60s profile; noAI, no blindretry/injection/forceclick/weakguards/production. Reportactualviewportdraw counts ifavailable, total!=visible. No corecodeedits.",
+      "acceptance": "Proofnewordinaryacquisition removesdemonstratedrace thenscopedtwohumanperformance orhonestfinitefailure; allhandlesclosed/rooms0",
+      "closure": "Sourceblocked prerequisite: onlinePausepanel doesnotfreezeauthoritativefield; zeroattempt. Retainedrootmethodmistake, no game/guard/injection changes."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "online-rectangle503",
+      "status": "CLOSED",
+      "purpose": "Verifiedexistinggroundanchor dragrectangle acquisition bypassesspriteoverlapwithoutfreezingonlinefield; ONE100TOTALroomprofile",
+      "worker": {
+        "id": "/root/blender_capability499",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "scripts/qa/online-profile503.mjs",
+        "docs/qa/online-profile-503"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "cc426aeb2344eae7a03c912efd7d10813ec999154173e716c58f6dbfe047dae5"
+        },
+        {
+          "path": "client/main.js",
+          "sha256": "ed8e60ebc54da9d4a6f258be153a63bc72034ff8cca011480a2a1b97de4a8957"
+        },
+        {
+          "path": "client/renderer.js",
+          "sha256": "d2c34bc266c03c95b2379ebc3c115993a338dbe2de826507ddf6450ab1b53553"
+        },
+        {
+          "path": "scripts/qa/online-profile500.mjs",
+          "sha256": "6de2772270db7f3fc27449a7ed96813a9f77f83044e92e1358f61bc9b284d55b"
+        },
+        {
+          "path": "docs/qa/online-profile-500/CHECKPOINT.json",
+          "sha256": "9cf4ec4d7c2e46ed30f7f3f7f619e6def38bb1b2734c8ef097c7c42ecc922f85"
+        },
+        {
+          "path": "docs/qa/online-profile-502/CHECKPOINT.json",
+          "sha256": "7490cf0e4ff1d2c399d5ab6a4db7e78975eb726184fdacc0f1f0317dfb296eca"
+        }
+      ],
+      "allowedOperations": "ExistingselectRect(main96) usesownlivingunitgroundanchors; chooseactualidleactorand10x10pixelrectanglefreshdisplaypoint/nootheranchorinside+movementclearance, ordinarymouse drag>7. Verifyexactownselection beforecommand. No freeze/pause/disconnect/forceclick/injectedstate orpickweakening. ONEnewfinite100TOTAL50perside prep12min/profile60s; buildings use stableexactopacitypicks+ownership. Reuseexactfrozen500core/build orisolatednewbuildifactualdrift. Preservefirstguardfailure stopnoretry. CleanupresultMenu afteropponentleave.",
+      "acceptance": "ActualUI rectangleacquisition thenordinaryroom/counterprofile scopedproof orfinitefailedreceipt; original500/502 held/failedmethods unchanged",
+      "closure": "Actualownedworker/render/SDK/browser/server/listener handles terminal.501appearanceFAILEDafter1/1correction;502config/readscopeverified;503queueobserverSTOP32TOTAL/no100. Prior498providerclaimsremainUNRESOLVED/unowned."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "root-integration504",
+      "status": "CLOSED",
+      "purpose": "Audit/coordinate next genuine original-preserving model control and queue evidence; preserve game/public/art sources",
+      "worker": {
+        "id": "/root",
+        "role": "ROOT",
+        "model": null,
+        "reasoningEffort": null
+      },
+      "outputs": [
+        "AGENTS.md",
+        "docs/PROJECT_STATE.md",
+        "docs/NEXT_STEPS.md",
+        "docs/PROJECT_ROADMAP.md",
+        "docs/COMPLETION_MATRIX.md",
+        "docs/art/pipeline/BLENDER_SPRITE_PIPELINE.md",
+        "docs/audits/implementation-495/tasks.json",
+        "docs/audits/continuation-504/root"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "shared/sim.js",
+          "sha256": "c9a01adba8630e89e1c3f195c1b98c08c32e74468d389a55891c664e3906e562"
+        },
+        {
+          "path": "client/main.js",
+          "sha256": "ed8e60ebc54da9d4a6f258be153a63bc72034ff8cca011480a2a1b97de4a8957"
+        },
+        {
+          "path": "server/index.js",
+          "sha256": "4e6a7e82f02d1d856f4ea788863c4836930bc00250be6a5b020ba2bdd8884198"
+        },
+        {
+          "path": "docs/art/pipeline/unit-production/order-ledger.json",
+          "sha256": "a687d7b292859ff5ef7b973001c2ae1308ec3fcf1023db160ac1f1792d3ce7b4"
+        }
+      ],
+      "allowedOperations": "Root integration/docs and readonly MCP native status/scene; no code-generation-provider call or production action. Do not change worker inputs until they close.",
+      "acceptance": "Actual scoped deliverables/checks/input pins/limits/handle closure; no self-granted appearance/motion/release PASS.",
+      "closure": "See docs/audits/continuation-504/root/CHECKPOINT.json; protected bytes exact; retained failures and interrupted506."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "villager-control504",
+      "status": "CLOSED",
+      "purpose": "Implement materiallydifferent original two-view constrained geometry/semantic-material controls before rendering",
+      "worker": {
+        "id": "/root/blender_identity499",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "scripts/blender/villager504.py",
+        "docs/art/pipeline/blender-villager-504"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "52cda32fd631f5cde21b0f861d7cd50db4e8948f8d7475f052e8086c0b149c8b"
+        },
+        {
+          "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+          "sha256": "225d9c16f9db5c4fbe941c93053fbcb958b1672824043b757b58ebb4f41b8569"
+        },
+        {
+          "path": "docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+          "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94"
+        },
+        {
+          "path": "docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+          "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+        },
+        {
+          "path": "docs/art/pipeline/blender-villager-501/CHECKPOINT.json",
+          "sha256": "b1cc9cf46dc56f03cfbb7d8c311f93ab7dd4dbc22d510f68bc3b557bf09fef9a"
+        },
+        {
+          "path": "scripts/blender/villager501.py",
+          "sha256": "07c72ae11bc3386ea63252018fc1960810345927b20e55351f59bbe6e7466492"
+        },
+        {
+          "path": "docs/audits/blender-runtime-500/capability/CHECKPOINT.json",
+          "sha256": "5c0e3540553cf4d509a74953e59d8968d251e031581edb03fdb114ba79f4eea7"
+        },
+        {
+          "path": "scripts/blender/villager504.py",
+          "sha256": "e97cc98b24fa8237028330643a0bbc17eca40f85bfd820367212b751ea7556f8"
+        },
+        {
+          "path": "docs/art/pipeline/blender-villager-504/control.json",
+          "sha256": "9253cbc659f5a0fce2d2606eadef9921bdf985567cc9decf2cef32b88cfae966"
+        },
+        {
+          "path": "docs/audits/continuation-504/root/render-authorization.json",
+          "sha256": "1f21f140ff5aa8309c9a0d676f03f013e3401363183171bb70acb3a2c2ca9090"
+        }
+      ],
+      "allowedOperations": "Write candidate authoring script/control evidence from D0/D1 originals and source-scale projection. No Blender execution/renders yet; no providercall/rig/walk/runtime/fanout. Avoid global whole-character texture on every volume and generic mannequin. Define semantic materials and calibrated body/hat/view geometry at macro scale; no new limb texturefiles/cutout/splice/mirror/fit. Request root review before initial 2 neutral renders, finite budget to be issued separately. Rootfiniteauthorization now permits exactly ONEscene authoringexecution and TWOinitialD0/D1 CPU256RGBA renders fromscript/controlhashes boundbyrender-authorization, correction0. No selection/rig/walk/fanout.",
+      "acceptance": "Actual scoped deliverables/checks/input pins/limits/handle closure; no self-granted appearance/motion/release PASS.",
+      "closure": "ActualONEscene/TWOinitialneutralD0D1 renders closedexit0; root+independent71pxappearance FAILED/HELD,correction0/0. No selectedmodel/rig/walk/runtime/fanout/newcall. Reviewonlyworkerhandlesclosed."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "online-observer504",
+      "status": "CLOSED",
+      "purpose": "Implement train acceptance observer and ONE finite actual online100TOTAL profile with reliable queue/spawn/rejection evidence",
+      "worker": {
+        "id": "/root/blender_capability499",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "scripts/qa/online-profile504.mjs",
+        "scripts/qa/train-observation504.mjs",
+        "tests/train-observation504.test.js",
+        "docs/qa/online-profile-504"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "52cda32fd631f5cde21b0f861d7cd50db4e8948f8d7475f052e8086c0b149c8b"
+        },
+        {
+          "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+          "sha256": "225d9c16f9db5c4fbe941c93053fbcb958b1672824043b757b58ebb4f41b8569"
+        },
+        {
+          "path": "scripts/qa/online-profile503.mjs",
+          "sha256": "fe155e7f91456e7f10edd5872c6a35f1db2d4fbaea0dfe29c3e9c5c199d390ed"
+        },
+        {
+          "path": "docs/qa/online-profile-503/CHECKPOINT.json",
+          "sha256": "313591ca0444146efe4f1f9ec4741e7093a31159453712cfad4ecdfaf599bce4"
+        },
+        {
+          "path": "shared/sim.js",
+          "sha256": "c9a01adba8630e89e1c3f195c1b98c08c32e74468d389a55891c664e3906e562"
+        },
+        {
+          "path": "shared/data.js",
+          "sha256": "ffc3f45adc58f212066d3763c591377ce15b9f6ac78e4685a95fc3ac747818e1"
+        },
+        {
+          "path": "client/main.js",
+          "sha256": "ed8e60ebc54da9d4a6f258be153a63bc72034ff8cca011480a2a1b97de4a8957"
+        },
+        {
+          "path": "server/index.js",
+          "sha256": "4e6a7e82f02d1d856f4ea788863c4836930bc00250be6a5b020ba2bdd8884198"
+        }
+      ],
+      "allowedOperations": "Read actual train/pop semantics; new observer logs full before/after queue unit/remaining/total, resources/pop/queued, units IDs/types and readonly websocket received errors and outbound ordinary UI command timestamps. Acceptance cannot infer from mere globalcount; handle explicit rejection as preparation not gamebug, skip/replan only if actual evidence. Scoped meaningful observer tests then ONE new ordinary twohuman Delta trial <=12min prep+60s profile, reuse exact frozen500stage/build and preserve pins. No injected commands/state/outcome/disconnect/pausefreeze/forceclick, no gameplay mutation, no repeated fullmatch or blind retry. Report exact finite failure if first acquisition/observer guard fails; close owned handles.",
+      "acceptance": "Actual scoped deliverables/checks/input pins/limits/handle closure; no self-granted appearance/motion/release PASS.",
+      "closure": "ActualONEordinaryDelta100TOTAL prep193.761s/profile60.9s success, 652pins exact, errors0, bothmenus/rooms0/allownedhandlesclosed; no100viewport/GPU/public/fullroster claim."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "villager-review504",
+      "status": "CLOSED",
+      "purpose": "Independent original macro appearance/projection review and input constraints for new neutral model",
+      "worker": {
+        "id": "/root/blender_export499",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "docs/audits/continuation-504/identity-review"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "52cda32fd631f5cde21b0f861d7cd50db4e8948f8d7475f052e8086c0b149c8b"
+        },
+        {
+          "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+          "sha256": "225d9c16f9db5c4fbe941c93053fbcb958b1672824043b757b58ebb4f41b8569"
+        },
+        {
+          "path": "docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+          "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94"
+        },
+        {
+          "path": "docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+          "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+        },
+        {
+          "path": "docs/art/pipeline/blender-villager-501/CHECKPOINT.json",
+          "sha256": "b1cc9cf46dc56f03cfbb7d8c311f93ab7dd4dbc22d510f68bc3b557bf09fef9a"
+        },
+        {
+          "path": "scripts/blender/villager501.py",
+          "sha256": "07c72ae11bc3386ea63252018fc1960810345927b20e55351f59bbe6e7466492"
+        },
+        {
+          "path": "docs/audits/blender-runtime-500/capability/CHECKPOINT.json",
+          "sha256": "5c0e3540553cf4d509a74953e59d8968d251e031581edb03fdb114ba79f4eea7"
+        },
+        {
+          "path": "docs/audits/blender-transition-499/identity/SOURCE_BINDINGS.json",
+          "sha256": "4456182c39530209f479b687d77d355c70a1c0cac3bf3858882a19c258f641b4"
+        }
+      ],
+      "allowedOperations": "Observe actual originals+501 initial/corrected gameplay sheet once; record coarse head/body/hat/garment/sash silhouette and fixed projection constraints in explicit data, unknown rear appearance stays unknown. Review proposed mechanism when root forwards script hash. No art generation/render/competing script edits, no microdetail or anatomy scoring, no MCP config/service changes. May use analysis-only pixel bbox/landmark coordinates, no transform of finalsourcepixels. Output short actionable constraints and one review receipt.",
+      "acceptance": "Actual scoped deliverables/checks/input pins/limits/handle closure; no self-granted appearance/motion/release PASS.",
+      "closure": "ActualONEscene/TWOinitialneutralD0D1 renders closedexit0; root+independent71pxappearance FAILED/HELD,correction0/0. No selectedmodel/rig/walk/runtime/fanout/newcall. Reviewonlyworkerhandlesclosed."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "observer-fix505",
+      "status": "CLOSED",
+      "purpose": "Fix demonstratedtrainobserverfalsepositive and contradictory6PASS receipt; offline exact-record replay, NO newbrowsertrial",
+      "worker": {
+        "id": "/root/blender_capability499",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "scripts/qa/train-observation504.mjs",
+        "tests/train-observation504.test.js",
+        "docs/qa/online-profile-505"
+      ],
+      "inputs": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "52cda32fd631f5cde21b0f861d7cd50db4e8948f8d7475f052e8086c0b149c8b"
+        },
+        {
+          "path": "shared/data.js",
+          "sha256": "ffc3f45adc58f212066d3763c591377ce15b9f6ac78e4685a95fc3ac747818e1"
+        },
+        {
+          "path": "shared/sim.js",
+          "sha256": "c9a01adba8630e89e1c3f195c1b98c08c32e74468d389a55891c664e3906e562"
+        },
+        {
+          "path": "scripts/qa/train-observation504.mjs",
+          "sha256": "f2a3b921eda740966c7f0a7b820d357be4ea6b950b2bfbb26671a5e80902e238"
+        },
+        {
+          "path": "tests/train-observation504.test.js",
+          "sha256": "756e79704ede52f7e7edce895ba785494458b97b46f7bc33ded6190b8287ecdd"
+        },
+        {
+          "path": "docs/qa/online-profile-504/receipt.json",
+          "sha256": "142b5f89912f5c277ed3c2c98db8533b56445ab7d1f5c837224da28f8317ec3d"
+        },
+        {
+          "path": "docs/qa/online-profile-504/tests.log",
+          "sha256": "7ea17338142eb7498f07314d2ff9a014e0609b0cadb7d8405f4cf17cb55e3d07"
+        }
+      ],
+      "slots": [],
+      "allowedOperations": "Preserveexact504helper/test/log in505prior. Bind queueprefixcompletion to actualbefore/aftertick/TICK_RATE and removedremainingtime insteadtotal-3 cutoff; tests reject oldqueue-evolves/reorder/noelapsedproof. Replay all saved504trainobservations fromrawreceipt withoutbrowser. Retainactualoldraw5PASS1FAIL log and reported6PASS contradiction; no timeline oroldPASS invented. Do not modify504frozenruninputs orreceipt, new505intakeoverridescurrentclaim. Zero newbrowser/image/render/game mutations.",
+      "acceptance": "Meaningfulnewnegativechecks actualPASS and offline allrecordedqueuebinding outcomes/limits,100TOTALcohort observation keptnarrow",
+      "closure": "Actual11testsPASS; offline74recordsreplay71accepted/3UNKNOWN; old5PASS1FAIL+false6claim preserved/corrected. No newbrowser/profile; allownhandlesclosed."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "online200-506",
+      "status": "CLOSED",
+      "purpose": "ONE ordinary200TOTAL room profile using corrected train observer; 100perSide, existingpopcap120 unchanged",
+      "worker": {
+        "id": "/root/blender_capability499",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "scripts/qa/online-profile506.mjs",
+        "docs/qa/online-profile-506"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "07f78b1281e4ae2f54d1f5b7677104ca23a83570739027c1004098f54a997474"
+        },
+        {
+          "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+          "sha256": "225d9c16f9db5c4fbe941c93053fbcb958b1672824043b757b58ebb4f41b8569"
+        },
+        {
+          "path": "scripts/qa/online-profile504.mjs",
+          "sha256": "ce7126ddbe022a2496fd8adeab35aad45e21bf342f123e333e48f2a21da9c899"
+        },
+        {
+          "path": "scripts/qa/train-observation504.mjs",
+          "sha256": "0538fc1723dc2314288310445454362a2532311bb5fe8a41fb93b9b029235780"
+        },
+        {
+          "path": "docs/qa/online-profile-504/receipt.json",
+          "sha256": "142b5f89912f5c277ed3c2c98db8533b56445ab7d1f5c837224da28f8317ec3d"
+        },
+        {
+          "path": "docs/qa/online-profile-505/CHECKPOINT.json",
+          "sha256": "2f3d010a5b443185345b4b34e0d3670220f86e1c8b6002f48eff2e9497ff55e9"
+        },
+        {
+          "path": "shared/sim.js",
+          "sha256": "c9a01adba8630e89e1c3f195c1b98c08c32e74468d389a55891c664e3906e562"
+        },
+        {
+          "path": "shared/data.js",
+          "sha256": "ffc3f45adc58f212066d3763c591377ce15b9f6ac78e4685a95fc3ac747818e1"
+        },
+        {
+          "path": "client/main.js",
+          "sha256": "ed8e60ebc54da9d4a6f258be153a63bc72034ff8cca011480a2a1b97de4a8957"
+        },
+        {
+          "path": "server/index.js",
+          "sha256": "4e6a7e82f02d1d856f4ea788863c4836930bc00250be6a5b020ba2bdd8884198"
+        }
+      ],
+      "allowedOperations": "ExactlyONEtwohumanDelta trial<=12minprep+60s profile after100each; reuse frozen500core/build if currentpins exact, fresh configpins helper/harness/core/stage/build. Target100perSide parameter and labels accurate, notreplay100TOTAL. Record strictqueuebinding/fulltimeline/error/wire; actualspawnalone notacceptance. Reportrender/rAF/p95p99/memory/fog/viewport limits/hardware, firstunexpectedguard stopsnoretry. No physics/client/sim/public modifications, injected commands/state/facing/speed, forceclick/disconnectfreeze/production. Accept actual explicittrainerror as documentedpreparation response if safe waits withinbound, not weakenobserver. Preserve menu/rooms0/ownedclosure.",
+      "acceptance": "Actual scoped code/checks/source pins/finite operations; independent root intake; no inferred art/fullgoal PASS.",
+      "closure": "Human steeredtoalternative2D/GPT research afterturn interruption. Online506PID429302/port46149 absent, unifiedsession27672 missing, no liveownedChrome found; nofinalreceipt/profile200. Preservepartiallogs; no gamefailure/timeout/counterclaim. Source506 partialauthoringcode exists but no Blenderexecution/renderauthorization; independent506guidance exists, exactscriptreview notcompleted. No budgetrefund/restart."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "source-garment506",
+      "status": "CLOSED",
+      "purpose": "Implement source-quality actualwrappedgarment/head surface and canonicalregionalappearance control, not anotherflatroundedneutralmodel",
+      "worker": {
+        "id": "/root/blender_identity499",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "scripts/blender/villager506.py",
+        "docs/art/pipeline/blender-villager-506"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "07f78b1281e4ae2f54d1f5b7677104ca23a83570739027c1004098f54a997474"
+        },
+        {
+          "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+          "sha256": "225d9c16f9db5c4fbe941c93053fbcb958b1672824043b757b58ebb4f41b8569"
+        },
+        {
+          "path": "scripts/blender/villager504.py",
+          "sha256": "e97cc98b24fa8237028330643a0bbc17eca40f85bfd820367212b751ea7556f8"
+        },
+        {
+          "path": "docs/art/pipeline/blender-villager-504/control.json",
+          "sha256": "9253cbc659f5a0fce2d2606eadef9921bdf985567cc9decf2cef32b88cfae966"
+        },
+        {
+          "path": "docs/audits/continuation-504/identity-review/actualappearance-review.json",
+          "sha256": "cbbf5cc86e7f21089da52157e79480c29dc89768e8e5cf246fb83659679ebe97"
+        },
+        {
+          "path": "docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+          "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94"
+        },
+        {
+          "path": "docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+          "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+        }
+      ],
+      "allowedOperations": "CODE/CONTROL ONLY, zero renders/build/execution for now. 501globalUV and504plainsemanticlofts HELD/CLOSED; do NOTparametertweak. Materiallydistinct mechanism: actualopenVneck/wrappedoverlappingclothedfront/lapels/waistsash/tunicpanels source-landmarked continuous3Dsurfaces; sample corresponding garment regions fromONEpackedwholecanonicalD1 (D0appearance anchor), stableUV onmatchingactualvolumes and clothlayer boundaries, not flatsemanticcoloredshirt or bodypaintglobalimage. No separate limbtexturefiles/UVcards/cutouts/mirror/fit/PNGwarp. Preserveoriginalheadface/hat silhouette andbroad realisticillustratedsource surface; semantic UV/material useactualsourcefeatures ongarment only. Macro folds notveins/toes/polish. Output candidateauthoringcode/control/sourcepins and mechanismdiff; root independent review before anyfinite render. No rig/walk/fanout/runtime/provider/paidAPI/downloads.",
+      "acceptance": "Actual scoped code/checks/source pins/finite operations; independent root intake; no inferred art/fullgoal PASS.",
+      "closure": "Human steeredtoalternative2D/GPT research afterturn interruption. Online506PID429302/port46149 absent, unifiedsession27672 missing, no liveownedChrome found; nofinalreceipt/profile200. Preservepartiallogs; no gamefailure/timeout/counterclaim. Source506 partialauthoringcode exists but no Blenderexecution/renderauthorization; independent506guidance exists, exactscriptreview notcompleted. No budgetrefund/restart."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "source-review506",
+      "status": "CLOSED",
+      "purpose": "Independent source-quality control guidance/review for actualcanonical garment surfaces and regionalappearance",
+      "worker": {
+        "id": "/root/blender_export499",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "docs/audits/continuation-504/source-review506"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "07f78b1281e4ae2f54d1f5b7677104ca23a83570739027c1004098f54a997474"
+        },
+        {
+          "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+          "sha256": "225d9c16f9db5c4fbe941c93053fbcb958b1672824043b757b58ebb4f41b8569"
+        },
+        {
+          "path": "docs/audits/continuation-504/identity-review/actualappearance-review.json",
+          "sha256": "cbbf5cc86e7f21089da52157e79480c29dc89768e8e5cf246fb83659679ebe97"
+        },
+        {
+          "path": "scripts/blender/villager504.py",
+          "sha256": "e97cc98b24fa8237028330643a0bbc17eca40f85bfd820367212b751ea7556f8"
+        },
+        {
+          "path": "docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+          "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94"
+        },
+        {
+          "path": "docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+          "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+        }
+      ],
+      "allowedOperations": "No repeatedstills/anatomy. Read actual504appearancefailure. Give A concise source-correspondence constraints for openneck/tuniclayer/sash/clothregionUV and shape vs sourcecolor separation, no genericmannequin. Review exact506script whenrootforwards; no renders/modelscript/sharedwrites/MCPconfig. Evidence actualcode vsproposedquality; originalregional UV onvolumetricmodel may be permitted, final cutoutcards/limbtextures remainforbidden.",
+      "acceptance": "Actual scoped code/checks/source pins/finite operations; independent root intake; no inferred art/fullgoal PASS.",
+      "closure": "Human steeredtoalternative2D/GPT research afterturn interruption. Online506PID429302/port46149 absent, unifiedsession27672 missing, no liveownedChrome found; nofinalreceipt/profile200. Preservepartiallogs; no gamefailure/timeout/counterclaim. Source506 partialauthoringcode exists but no Blenderexecution/renderauthorization; independent506guidance exists, exactscriptreview notcompleted. No budgetrefund/restart."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "root-context507",
+      "status": "CLOSED",
+      "purpose": "Reconcile latest human2D instructions and research, root integration and finite new mechanism assessment",
+      "worker": {
+        "id": "/root",
+        "role": "ROOT",
+        "model": null,
+        "reasoningEffort": null
+      },
+      "outputs": [
+        "AGENTS.md",
+        "docs/PROJECT_STATE.md",
+        "docs/NEXT_STEPS.md",
+        "docs/PROJECT_ROADMAP.md",
+        "docs/ARCHITECTURE_DECISIONS.md",
+        "docs/AGENT_EXECUTION_CONTRACT.md",
+        "docs/art/pipeline/ANIMATION_CONTRACT.md",
+        "docs/art/pipeline/SPRITE_PRODUCTION_WORKFLOW.md",
+        "docs/art/pipeline/BLENDER_SPRITE_PIPELINE.md",
+        "docs/art/pipeline/IMAGE_GENERATION_TEMPLATES.md",
+        "docs/audits/implementation-495/tasks.json",
+        "docs/audits/animation-context-507/root",
+        "scripts/agent-task-contract.mjs",
+        "tests/agent-task-model507.test.js",
+        "MASTER_HANDOFF.md",
+        "docs/audits/blender-removal-508/root"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+          "sha256": "225d9c16f9db5c4fbe941c93053fbcb958b1672824043b757b58ebb4f41b8569"
+        },
+        {
+          "path": "docs/audits/continuation-504/root/IMAGE_ANIMATION_DECISION.md",
+          "sha256": "03aa5b3cf1068bd97a78eb5f8f4f2ee834ec6b05772a44ae62ae9ba631d6d1ea"
+        },
+        {
+          "path": "scripts/agent-preflight.mjs",
+          "sha256": "c39ac0bcd8392b6f995982aa7d0598d67acc8114ebf2e6800a2c44c2126082fe"
+        }
+      ],
+      "allowedOperations": "No Blender/model/render. No image call until guarded finite order and source-bound intake. Preserve all old claims and sources.",
+      "acceptance": "Scoped source and targeted evidence, no art/motion/production acceptance from helper checks",
+      "handoff": "MASTER_HANDOFF.md",
+      "pending": "Independent final key-study code review, actual2x2guide/provenance, finite order and unresolved-global-art-preflight; no new image source.",
+      "closure": "Transfer snapshot MASTER_HANDOFF.md saved. Blender removal508 verified, project art/history intact.507 code/prompt46checks and model50813checks pass; no jointguide/order/image yet, independent final contract review remains. No image claim reset."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "key-study-contract507",
+      "status": "CLOSED",
+      "purpose": "Add bounded one-image four-key study to existing prepareOrder/runner without selecting frames",
+      "worker": {
+        "id": "/root/blender_export499",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "scripts/sprite-key-study.mjs",
+        "scripts/sprite-prompts.mjs",
+        "docs/art/pipeline/unit-production/templates/key_study.txt",
+        "tests/sprite-key-study.test.js",
+        "docs/audits/animation-context-507/contract"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+          "sha256": "225d9c16f9db5c4fbe941c93053fbcb958b1672824043b757b58ebb4f41b8569"
+        },
+        {
+          "path": "docs/audits/continuation-504/root/IMAGE_ANIMATION_DECISION.md",
+          "sha256": "03aa5b3cf1068bd97a78eb5f8f4f2ee834ec6b05772a44ae62ae9ba631d6d1ea"
+        },
+        {
+          "path": "scripts/sprite-prompts.mjs",
+          "sha256": "6e0dcf805f489c0f3853b6d6f1640377f523ff8165604030320d4ee811163c1e"
+        },
+        {
+          "path": "scripts/sprite-order-run.mjs",
+          "sha256": "8436a7eedbe2d4a0dac8634bfcc9e7ad27a365e8862771ef230b9cfc47eb5d90"
+        },
+        {
+          "path": "scripts/agent-task-contract.mjs",
+          "sha256": "85391ab4ea0058a52b3462ef1bbf88f0e81bb2d373a7cff7f6bc4ff3e3d3e0b9"
+        }
+      ],
+      "allowedOperations": "Code/tests only. No generation, ledger/identity/source mutation or production. Separate study provider request from four candidate visual cells. Legacy guards unchanged.",
+      "acceptance": "Scoped source and targeted evidence, no art/motion/production acceptance from helper checks",
+      "closure": "Worker returned initial scoped result then final follow-up failed at provider usage limit; latest fixes/independent contract review incomplete, root intake pending. No image calls."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "key-study-review507",
+      "status": "CLOSED",
+      "purpose": "Independent assessment of joint-cycle mechanism and reusable existing whole-clothed guide",
+      "worker": {
+        "id": "/root/blender_identity499",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "docs/audits/animation-context-507/review"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+          "sha256": "225d9c16f9db5c4fbe941c93053fbcb958b1672824043b757b58ebb4f41b8569"
+        },
+        {
+          "path": "docs/audits/continuation-504/root/IMAGE_ANIMATION_DECISION.md",
+          "sha256": "03aa5b3cf1068bd97a78eb5f8f4f2ee834ec6b05772a44ae62ae9ba631d6d1ea"
+        },
+        {
+          "path": "docs/art/pipeline/villager-pose-control-491/prepared.json",
+          "sha256": "be0fd0ff1356707bab1a5a5b1a29b6c544f0cb9ff41a0782e23d4a52ea80e16e"
+        },
+        {
+          "path": "docs/art/pipeline/villager-guide-first-492/prepared.json",
+          "sha256": "9f58b0dc064529a2ee75d19fc10c791c817bce56264a1eb1b970a4acab203017"
+        },
+        {
+          "path": "docs/art/pipeline/villager-pose-control-491/guide/landmarks.json",
+          "sha256": "6a1eb7f20e5b88194b25660ea441efe7546284c7563eccef2def12786f4a4cc2"
+        }
+      ],
+      "allowedOperations": "Read-only source, produce concise assessment/constraints in owned review directory. No image/render/guide creation/loop PASS. Review exact new dispatch when root forwards.",
+      "acceptance": "Scoped source and targeted evidence, no art/motion/production acceptance from helper checks",
+      "closure": "Worker returned initial scoped result then final follow-up failed at provider usage limit; latest fixes/independent contract review incomplete, root intake pending. No image calls."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "claims-custody507",
+      "status": "CLOSED",
+      "purpose": "Bounded actual498 output/call custody lookup, no retry",
+      "worker": {
+        "id": "/root/blender_capability499",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "docs/audits/animation-context-507/custody"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+          "sha256": "225d9c16f9db5c4fbe941c93053fbcb958b1672824043b757b58ebb4f41b8569"
+        },
+        {
+          "path": "docs/audits/continuation-504/root/IMAGE_ANIMATION_DECISION.md",
+          "sha256": "03aa5b3cf1068bd97a78eb5f8f4f2ee834ec6b05772a44ae62ae9ba631d6d1ea"
+        },
+        {
+          "path": "docs/art/pipeline/unit-production/order-ledger.json",
+          "sha256": "a687d7b292859ff5ef7b973001c2ae1308ec3fcf1023db160ac1f1792d3ce7b4"
+        }
+      ],
+      "allowedOperations": "Read exact498 tool/order receipts and relevant known generated-output metadata only; no broad private session/config dump. Check actual live handles via owned evidence. Record UNKNOWN if provider mapping unavailable, never settle without proof. No ledger or code edits, no image/Blender/testbench.",
+      "acceptance": "Scoped source and targeted evidence, no art/motion/production acceptance from helper checks",
+      "closure": "UNKNOWN exact498 output mapping; no settle/refund/call, scoped receipt retained."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "scoped-art-preflight507",
+      "status": "CLOSED",
+      "purpose": "Allow explicit registered disjoint art tasks to inspect unrelated unresolved claims without reopening them; preserve global/default denial",
+      "worker": {
+        "id": "/root/blender_capability499",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "scripts/agent-preflight.mjs",
+        "tests/agent-preflight-scope507.test.js",
+        "docs/audits/animation-context-507/preflight-scope"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+          "sha256": "225d9c16f9db5c4fbe941c93053fbcb958b1672824043b757b58ebb4f41b8569"
+        },
+        {
+          "path": "scripts/agent-preflight.mjs",
+          "sha256": "c39ac0bcd8392b6f995982aa7d0598d67acc8114ebf2e6800a2c44c2126082fe"
+        },
+        {
+          "path": "scripts/agent-task-contract.mjs",
+          "sha256": "85391ab4ea0058a52b3462ef1bbf88f0e81bb2d373a7cff7f6bc4ff3e3d3e0b9"
+        },
+        {
+          "path": "docs/art/pipeline/unit-production/order-ledger.json",
+          "sha256": "a687d7b292859ff5ef7b973001c2ae1308ec3fcf1023db160ac1f1792d3ce7b4"
+        }
+      ],
+      "allowedOperations": "Code and isolated tests only. New explicit orderId scope requires ACTIVE exact task/slots/input snapshot and guarded order before permitting unrelated claims; never ignore lock, sameorder, sameidentity/action/direction, samejob or overlapping task claims. Unknown scope denies. No image call, ledger mutation/settlement/refund or broad global bypass.",
+      "acceptance": "Negative tests prove default behavior unchanged and overlap/stale/missing/enforcement absence denied. Scoped result reports every unrelated unresolved claim unchanged.",
+      "closure": "PLAN_ONLY never dispatched; no preflight scope bypass implemented."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "blender-removal508",
+      "status": "CLOSED",
+      "purpose": "Explicit human request: Luna High remove Blender and project-specific Blender MCP from local machine, preserve project originals/history",
+      "workKind": "blender-removal",
+      "worker": {
+        "id": "/root/blender_removal508",
+        "role": "WORKER",
+        "model": "gpt-6-luna",
+        "reasoningEffort": "high"
+      },
+      "outputs": [
+        "docs/audits/blender-removal-508/worker"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "eed816c37669294f640fe02cfee12dd45b85b710640ea2691eb7c55dace4dab6"
+        },
+        {
+          "path": "docs/audits/blender-runtime-500/capability/CHECKPOINT.json",
+          "sha256": "5c0e3540553cf4d509a74953e59d8968d251e031581edb03fdb114ba79f4eea7"
+        },
+        {
+          "path": "docs/audits/blender-runtime-502/connection/CHECKPOINT.json",
+          "sha256": "3f14d1c30ff1f9704c9b158847ec139fda8b2dd389ab708226dc6de7187d1362"
+        }
+      ],
+      "allowedOperations": "Phase1 READ-ONLY targeted installation/MCP config/process inventory. Never print secrets or full Codex config. Report exact installed paths and ownership. Phase2 only root-reviewed exact removal list: stop project-owned Blender MCP processes, remove ONLY rds_blender501 config table preserving other bytes/mode, remove isolated Blender/runtime addon dependencies used solely here. Preserve repo files, .blend scenes, source assets, system/other projects. No driver/system package removal. Explicit user authorized uninstall; no repeat approval needed.",
+      "acceptance": "Exact removals/config diff redacted, process closure and binary absence, unrelated config/source unchanged. Root receives concise result.",
+      "closure": "Transfer snapshot MASTER_HANDOFF.md saved. Blender removal508 verified, project art/history intact.507 code/prompt46checks and model50813checks pass; no jointguide/order/image yet, independent final contract review remains. No image claim reset."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "root-continuation509",
+      "status": "ACTIVE",
+      "purpose": "Take over full goal; own whole-clothed guide/study inputs and shared integration",
+      "worker": {
+        "id": "/root",
+        "role": "ROOT",
+        "model": null,
+        "reasoningEffort": null
+      },
+      "outputs": [
+        "docs/audits/continuation-509/root",
+        "docs/audits/implementation-495/tasks.json",
+        "docs/PROJECT_STATE.md",
+        "docs/NEXT_STEPS.md",
+        "docs/art/pipeline/villager-key-study-509/author-guide.py",
+        "docs/art/pipeline/villager-key-study-509/guide-gameplay.png",
+        "docs/art/pipeline/villager-key-study-509/proposed-order.json",
+        "docs/art/pipeline/villager-key-study-509/authoring-inputs.json",
+        "docs/art/pipeline/villager-key-study-509/proposed-request.json",
+        "docs/art/pipeline/villager-key-study-509/joint-guide.png",
+        "docs/art/pipeline/villager-key-study-509/joint-guide.svg",
+        "docs/art/pipeline/villager-key-study-509/job.json",
+        "docs/art/pipeline/villager-key-study-509/guide-provenance.json",
+        "docs/art/pipeline/unit-production/villager/identity.json",
+        "docs/art/pipeline/villager-key-study-509/registered-order.json",
+        "docs/art/pipeline/villager-key-study-509/prepared.json"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "a81895b57e445ae913773fd7bf55049f84d859d407e175de2d106edc4f3c52bd"
+        },
+        {
+          "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+          "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+        },
+        {
+          "path": "MASTER_HANDOFF.md",
+          "sha256": "5f6cf0b56ad940cb0432f5f74f346fff683a29e9fa7b85994895d20bdb28844e"
+        },
+        {
+          "path": "scripts/sprite-key-study.mjs",
+          "sha256": "4e9d9e45d6d1dffdfbeb8da7f1e8a5211b57666d210c0220ad32f9d88d8130e1"
+        },
+        {
+          "path": "docs/art/pipeline/unit-production/order-ledger.json",
+          "sha256": "a687d7b292859ff5ef7b973001c2ae1308ec3fcf1023db160ac1f1792d3ce7b4"
+        }
+      ],
+      "allowedOperations": "No Blender, no claim reset, no generation until reviewed scoped-art guard/order. Keep all original dirty work. Root alone common state/registry/ledger integration.",
+      "acceptance": "Scoped source checks and actual observations; keep technical/motion/runtime/owner/release separate; no quota polling or model fallback.",
+      "receipt": "docs/audits/continuation-509/root/CHECKPOINT.json"
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "review-key-study509",
+      "status": "CLOSED",
+      "purpose": "Independent final review of current507 key-study source and exact guide/order after root sends it",
+      "worker": {
+        "id": "/root/review507",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "docs/audits/continuation-509/review"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "a81895b57e445ae913773fd7bf55049f84d859d407e175de2d106edc4f3c52bd"
+        },
+        {
+          "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+          "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+        },
+        {
+          "path": "MASTER_HANDOFF.md",
+          "sha256": "5f6cf0b56ad940cb0432f5f74f346fff683a29e9fa7b85994895d20bdb28844e"
+        },
+        {
+          "path": "scripts/sprite-key-study.mjs",
+          "sha256": "4e9d9e45d6d1dffdfbeb8da7f1e8a5211b57666d210c0220ad32f9d88d8130e1"
+        },
+        {
+          "path": "scripts/sprite-prompts.mjs",
+          "sha256": "7f0311c91371ce989bdaf852169c641017367b911f094086762b607d4aecc2a7"
+        },
+        {
+          "path": "scripts/agent-task-contract.mjs",
+          "sha256": "ab70ec1dc9e99293a54ea2873cb802ab2745d62942ff80c6fa0cb714ae0a60b1"
+        },
+        {
+          "path": "tests/sprite-key-study.test.js",
+          "sha256": "ffe2c71f41297c4fb54d42866d2c2954c02c8fff704991c92b254fbaa370f364"
+        },
+        {
+          "path": "scripts/agent-preflight.mjs",
+          "sha256": "60a93e9f83e1270940e439cac2ee6332e7d8d3d1d09fcaba02e5431bc817ed36"
+        },
+        {
+          "path": "tests/agent-preflight-scope507.test.js",
+          "sha256": "4748dff2d0aa530291c7e6d24e6a954077683b8c11cc58d8aae8fac11dc9a4bf"
+        },
+        {
+          "path": "docs/art/pipeline/villager-key-study-509/joint-guide.png",
+          "sha256": "4a62e739ffe141095b76c418e871b973e5db0d93311b76b7e04e87dacdb83dbf"
+        },
+        {
+          "path": "docs/art/pipeline/villager-key-study-509/guide-provenance.json",
+          "sha256": "224ae9f378ed8359151ba15c32e01f621523e49498fb6c1fee3a5434d2ce0ebe"
+        },
+        {
+          "path": "docs/art/pipeline/villager-key-study-509/job.json",
+          "sha256": "2710265b0914446ae6fad1c6d9c2dc54e4f9bd1327fc47813fd8078871de5534"
+        },
+        {
+          "path": "docs/art/pipeline/villager-key-study-509/proposed-order.json",
+          "sha256": "9004c742e0b6257d7f5f192ae1a3028eeabc9582fe518f9fc4d2a37ebe5bc0ce"
+        },
+        {
+          "path": "docs/art/pipeline/villager-key-study-509/proposed-request.json",
+          "sha256": "a5f08f7e91f92e9aa3c25bf02133003b7c1b25ae50a1a4a210a40479f318412f"
+        }
+      ],
+      "allowedOperations": "Read code and current source/receipts; report concrete issues. No producer source edits, image calls, shared writes. Later review scoped guard and actual root guide when forwarded.",
+      "acceptance": "Scoped source checks and actual observations; keep technical/motion/runtime/owner/release separate; no quota polling or model fallback.",
+      "receipt": "docs/audits/continuation-509/review/CHECKPOINT.json",
+      "closure": "ActualONEreturnedstudy HELD: repeated sameleadingleg andnonopposedpassing;0selected,0correction,0retry. Root exactrawsettlement+runnerclosure complete; allpreviousordersincluding498unchanged."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "scoped-preflight509",
+      "status": "CLOSED",
+      "purpose": "Implement previously PLAN_ONLY explicit disjoint-art preflight guard preserving default refusal and all498 claims",
+      "worker": {
+        "id": "/root/scoped_guard",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "scripts/agent-preflight.mjs",
+        "tests/agent-preflight-scope507.test.js",
+        "docs/audits/continuation-509/preflight-scope"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "a81895b57e445ae913773fd7bf55049f84d859d407e175de2d106edc4f3c52bd"
+        },
+        {
+          "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+          "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+        },
+        {
+          "path": "MASTER_HANDOFF.md",
+          "sha256": "5f6cf0b56ad940cb0432f5f74f346fff683a29e9fa7b85994895d20bdb28844e"
+        },
+        {
+          "path": "scripts/agent-preflight.mjs",
+          "sha256": "c39ac0bcd8392b6f995982aa7d0598d67acc8114ebf2e6800a2c44c2126082fe"
+        },
+        {
+          "path": "scripts/agent-task-contract.mjs",
+          "sha256": "ab70ec1dc9e99293a54ea2873cb802ab2745d62942ff80c6fa0cb714ae0a60b1"
+        },
+        {
+          "path": "scripts/sprite-order-run.mjs",
+          "sha256": "8436a7eedbe2d4a0dac8634bfcc9e7ad27a365e8862771ef230b9cfc47eb5d90"
+        },
+        {
+          "path": "docs/art/pipeline/unit-production/order-ledger.json",
+          "sha256": "a687d7b292859ff5ef7b973001c2ae1308ec3fcf1023db160ac1f1792d3ce7b4"
+        }
+      ],
+      "allowedOperations": "Code/isolated negative tests ONLY. Explicit orderId requires active trusted task, exact slots/snapshot, guarded order, scope disjoint from every unresolved claim. Deny lock/missing scope/same order/job/identity-action-direction/overlap. No ledger or registry mutation, generation, settle/refund. Preserve default global deny.",
+      "acceptance": "Scoped source checks and actual observations; keep technical/motion/runtime/owner/release separate; no quota polling or model fallback.",
+      "receipt": "docs/audits/continuation-509/preflight-scope/CHECKPOINT.json",
+      "closure": "Actual26testsPASS; default denies498; ledger unchanged; independent19scope checks PASS. Code-only task closed; no calls."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "online-profile509",
+      "status": "CLOSED",
+      "purpose": "Finish new finite ordinary UI200TOTAL profile using corrected observer; preserve interrupted506",
+      "worker": {
+        "id": "/root/game_profile",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "scripts/qa/online-profile509.mjs",
+        "docs/qa/online-profile-509"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "a81895b57e445ae913773fd7bf55049f84d859d407e175de2d106edc4f3c52bd"
+        },
+        {
+          "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+          "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+        },
+        {
+          "path": "MASTER_HANDOFF.md",
+          "sha256": "5f6cf0b56ad940cb0432f5f74f346fff683a29e9fa7b85994895d20bdb28844e"
+        },
+        {
+          "path": "scripts/qa/online-profile506.mjs",
+          "sha256": "7d8361ddc47a37c334db012e2b20b97c98425385498bc848649de3698c606faa"
+        },
+        {
+          "path": "scripts/qa/train-observation504.mjs",
+          "sha256": "0538fc1723dc2314288310445454362a2532311bb5fe8a41fb93b9b029235780"
+        },
+        {
+          "path": "docs/qa/online-profile-505/CHECKPOINT.json",
+          "sha256": "2f3d010a5b443185345b4b34e0d3670220f86e1c8b6002f48eff2e9497ff55e9"
+        },
+        {
+          "path": "shared/sim.js",
+          "sha256": "c9a01adba8630e89e1c3f195c1b98c08c32e74468d389a55891c664e3906e562"
+        },
+        {
+          "path": "server/index.js",
+          "sha256": "4e6a7e82f02d1d856f4ea788863c4836930bc00250be6a5b020ba2bdd8884198"
+        }
+      ],
+      "allowedOperations": "Inspect partial506 first, do NOT blind restart oldorder. New bounded profile200TOTAL100/side only after source guards/isolation. OrdinaryUI two real local clients, passive diagnostics/wire and corrected queues; no command/state injections, no public/deploy. Explicit Vite config/literal cwd/absolute isolated outDir. No replay100profile. Stop on first unexplained acquisition/queue/guard error; close owned handles. Never label cohort as viewport density or targetGPU/WAN.",
+      "acceptance": "Scoped source checks and actual observations; keep technical/motion/runtime/owner/release separate; no quota polling or model fallback.",
+      "receipt": "docs/qa/online-profile-509/CHECKPOINT.json",
+      "closure": "One finite local ordinaryUI attempt held at73/68 afterunexpected browserclose, causeUNKNOWN; no200/60sprofile.116trainqueue bindings;436canonicalpins unchanged; ownedbrowser/server/roomsclosed. No restart."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "illustration-key-study509",
+      "status": "CLOSED",
+      "purpose": "ONE builtin joint complementary Villager South four-key candidate study after reviewed rootguide/context, no corrections",
+      "workKind": "image-generation",
+      "worker": {
+        "id": "/root/illustration509",
+        "role": "WORKER",
+        "model": "gpt-6-luna",
+        "reasoningEffort": "high"
+      },
+      "outputs": [
+        "docs/art/pipeline/villager-key-study-509/illustration"
+      ],
+      "slots": [
+        {
+          "orderId": "villager-D1-joint-key-study-509-ONE",
+          "slotIndex": 0
+        }
+      ],
+      "inputs": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "a81895b57e445ae913773fd7bf55049f84d859d407e175de2d106edc4f3c52bd"
+        },
+        {
+          "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+          "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+        },
+        {
+          "path": "MASTER_HANDOFF.md",
+          "sha256": "5f6cf0b56ad940cb0432f5f74f346fff683a29e9fa7b85994895d20bdb28844e"
+        },
+        {
+          "path": "scripts/agent-preflight.mjs",
+          "sha256": "60a93e9f83e1270940e439cac2ee6332e7d8d3d1d09fcaba02e5431bc817ed36"
+        },
+        {
+          "path": "scripts/sprite-key-study.mjs",
+          "sha256": "4e9d9e45d6d1dffdfbeb8da7f1e8a5211b57666d210c0220ad32f9d88d8130e1"
+        },
+        {
+          "path": "scripts/sprite-prompts.mjs",
+          "sha256": "7f0311c91371ce989bdaf852169c641017367b911f094086762b607d4aecc2a7"
+        },
+        {
+          "path": "scripts/sprite-order-run.mjs",
+          "sha256": "8436a7eedbe2d4a0dac8634bfcc9e7ad27a365e8862771ef230b9cfc47eb5d90"
+        },
+        {
+          "path": "scripts/agent-task-contract.mjs",
+          "sha256": "ab70ec1dc9e99293a54ea2873cb802ab2745d62942ff80c6fa0cb714ae0a60b1"
+        },
+        {
+          "path": "docs/art/pipeline/unit-production/villager/identity.json",
+          "sha256": "552c450dbb929c396717099adb42e95b9306f2b0170e3300ab303830db3926c7"
+        },
+        {
+          "path": "docs/art/pipeline/unit-production/templates/key_study.txt",
+          "sha256": "65e498f07f6dfa2f0e592a86f27d2e176f2a529a870daa31c0195d89b7b015e9"
+        },
+        {
+          "path": "docs/art/pipeline/villager-key-study-509/job.json",
+          "sha256": "2710265b0914446ae6fad1c6d9c2dc54e4f9bd1327fc47813fd8078871de5534"
+        },
+        {
+          "path": "docs/art/pipeline/villager-key-study-509/guide-provenance.json",
+          "sha256": "224ae9f378ed8359151ba15c32e01f621523e49498fb6c1fee3a5434d2ce0ebe"
+        },
+        {
+          "path": "docs/art/pipeline/villager-key-study-509/joint-guide.png",
+          "sha256": "4a62e739ffe141095b76c418e871b973e5db0d93311b76b7e04e87dacdb83dbf"
+        },
+        {
+          "path": "docs/art/pipeline/villager-key-study-509/proposed-request.json",
+          "sha256": "a5f08f7e91f92e9aa3c25bf02133003b7c1b25ae50a1a4a210a40479f318412f"
+        },
+        {
+          "path": "docs/art/pipeline/villager-key-study-509/registered-order.json",
+          "sha256": "b64ffbfbacdf04eb59e8c9e2a95367f4a513ba8b6e037f793d2c169be845e2d2"
+        },
+        {
+          "path": "docs/audits/continuation-509/review/method-difference.json",
+          "sha256": "38bf443391074e47a78989b95d6cc25d7be62544515bc2522ea1535c3948b476"
+        },
+        {
+          "path": "docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+          "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94"
+        },
+        {
+          "path": "docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+          "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+        },
+        {
+          "path": "docs/art/pipeline/villager-key-study-509/prepared.json",
+          "sha256": "995936c5de34a8e80b90deab4db324975a16abe0849c49ffcc7368d9550392e4"
+        }
+      ],
+      "allowedOperations": "Read exact original/view/guide. Root prepares and durably claims ONE slot; worker dispatches that exact prepared built-in request once only after claim + preflight received. Zero correction/retry/backend/Blender/CLI. Preserve raw tool mapping. Worker NEVER writes ledger/identity/task/state/manifest or selects source.",
+      "acceptance": "Actual raw/tool mapping and honest custody. Candidate only; no self-awarded motion/runtime/owner/release approval.",
+      "receipt": "docs/art/pipeline/villager-key-study-509/illustration/CHECKPOINT.json",
+      "callLimit": 1,
+      "correctionCap": 0,
+      "closure": "ActualONEreturnedstudy HELD: repeated sameleadingleg andnonopposedpassing;0selected,0correction,0retry. Root exactrawsettlement+runnerclosure complete; allpreviousordersincluding498unchanged."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "browser-custody510",
+      "status": "CLOSED",
+      "purpose": "Diagnose retained unexpected509 browserclosure and add reusable browser lifecycle/exit stderr capture, code-only no profile retry",
+      "worker": {
+        "id": "/root/game_profile",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "scripts/qa/browser-custody510.mjs",
+        "tests/browser-custody510.test.js",
+        "docs/qa/browser-custody-510"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "a81895b57e445ae913773fd7bf55049f84d859d407e175de2d106edc4f3c52bd"
+        },
+        {
+          "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+          "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+        },
+        {
+          "path": "scripts/qa/online-profile509.mjs",
+          "sha256": "c6b08911fdd3cd1d6425e13967f25dbeea23b5d8f6e31fafe0c7f8009b34aef9"
+        },
+        {
+          "path": "docs/qa/online-profile-509/CHECKPOINT.json",
+          "sha256": "414bf12dd65b8f29d570b03eb353bba3a6159de71d7d9fa2da813b57b3cb1aac"
+        },
+        {
+          "path": "docs/qa/online-profile-509/closure-diagnosis.json",
+          "sha256": "586df45660aa6a4d3d36eed143418e319f24e37992378ececcac2e3498aa665f"
+        }
+      ],
+      "allowedOperations": "Read retained509 failure; add small reusable observer/helper to capture browser disconnect, context/page crash/close, owned process stderr/exit/signal and intentional cleanup timing. Inspect actual installed Playwright API. No mutation of509/506/oldreceipts or runtime/public, no profile/match/restart/acquisition. Meaningful isolated tests and one brief owned browser lifecycle fixture allowed; no game command/state injection. Unknown509cause staysunknown absent actualevidence.",
+      "acceptance": "Focused tested observer with bounded logs and honest legacy failure. Independentreview before futureuse. No200profilePASS or gameplayclosure.",
+      "receipt": "docs/qa/browser-custody-510/CHECKPOINT.json",
+      "closure": "Actual3initialtests/oneaboutblankfixture retained. Independent3findings repaired with6producer+6independentreviewmockchecks. No newbrowser/game/profile; sourceobserver preserves recoverableunknowncleanup. OwnedfixturePIDclosed; usefuturetaskexplicitwrappercontexts/recoverableerrorhandle."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "review-browser510",
+      "status": "CLOSED",
+      "purpose": "Independent bounded review reusable owned browser lifecycle helper before furthercohort profiling",
+      "worker": {
+        "id": "/root/review507",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "docs/qa/browser-custody-510-review"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "a81895b57e445ae913773fd7bf55049f84d859d407e175de2d106edc4f3c52bd"
+        },
+        {
+          "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+          "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+        },
+        {
+          "path": "scripts/qa/browser-custody510.mjs",
+          "sha256": "f0bf514e1988bf3a3c7bcd3abd6111c5721f4f4f63bdce6782eff099d9194ecd"
+        },
+        {
+          "path": "tests/browser-custody510.test.js",
+          "sha256": "99743bc0793d0ae2ea75611ef71823e726d805de51266190c6ddc1f5cdf959cb"
+        },
+        {
+          "path": "docs/qa/browser-custody-510/CHECKPOINT.json",
+          "sha256": "5ad4466b21aed24ac380b7cbee3e46672cfb8f465dbb3a571e7db8565d5055ba"
+        }
+      ],
+      "allowedOperations": "Read helper/test/actualfixture/installedpublicPlaywright APIs; reproduce concretefailure in isolatedfixtures only asneeded. No sourceedits/registry/state/runtime/public/profile/image/Blender. Return targetedblockingfindings; differentiate lifecycletechnicalcapture fromactualperformance/gameworkproof.",
+      "acceptance": "Review exact sourcepins/cleanup/FD/listener/errors/finiteboundedpersistence handles, actualfixture evidence andunknowns",
+      "receipt": "docs/qa/browser-custody-510-review/CHECKPOINT.json",
+      "closure": "Actual3initialtests/oneaboutblankfixture retained. Independent3findings repaired with6producer+6independentreviewmockchecks. No newbrowser/game/profile; sourceobserver preserves recoverableunknowncleanup. OwnedfixturePIDclosed; usefuturetaskexplicitwrappercontexts/recoverableerrorhandle."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "root-building511",
+      "status": "ACTIVE",
+      "purpose": "Finish missing original Granary death-state whole2D fourframe package independently of failedVillagerpilot, rootplan/selectionintegration",
+      "worker": {
+        "id": "/root",
+        "role": "ROOT",
+        "model": null,
+        "reasoningEffort": null
+      },
+      "outputs": [
+        "docs/art/pipeline/granary-death-511/authoring",
+        "docs/art/pipeline/granary-death-511/orders",
+        "docs/art/pipeline/granary-death-511/exports",
+        "docs/art/pipeline/granary-death-511/CHECKPOINT.json",
+        "docs/art/pipeline/building-production/granary/identity.json",
+        "docs/art/pipeline/granary-death-511/root-preflight.json"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "a81895b57e445ae913773fd7bf55049f84d859d407e175de2d106edc4f3c52bd"
+        },
+        {
+          "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+          "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+        },
+        {
+          "path": "shared/sim.js",
+          "sha256": "c9a01adba8630e89e1c3f195c1b98c08c32e74468d389a55891c664e3906e562"
+        },
+        {
+          "path": "scripts/building-sprite-contract.mjs",
+          "sha256": "03544fe68faa3d0bc68bb2931c402b8967677e3fe4e0d64d9488d0e9280b7715"
+        },
+        {
+          "path": "docs/art/granary/variant-01/raw.png",
+          "sha256": "0d0c3963f3faed9341cd09f2ff118a753e9bd1ee431290b51635eebb17b61715"
+        },
+        {
+          "path": "public/assets/art-v1/manifest.json",
+          "sha256": "01745b177cb45e37fca762fabd5b13bc98093feafcd44daddb91c48918f82dc0"
+        }
+      ],
+      "allowedOperations": "Wholeoriginal building state authoring only; inspect originaldescriptor/shadow and actual4000msdeadwindow. Reusebuildingdispatcher/compiler; no client/publicruntime writes until fullactualgate, no Blender/claimreset. Root integratescommonregistry/ledger via existingrootconstructionledgercustody withoutchanging498orders. Newgranaryjob unrelated498construction.",
+      "acceptance": "Actualoriginalpreservingdeadstate wholeframes+independentreview+technicalcompiler/briefloop/runtime whenready; no idlefallback or finalcompletion inferred",
+      "receipt": "docs/art/pipeline/granary-death-511/CHECKPOINT.json"
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "review-building511",
+      "status": "ACTIVE",
+      "purpose": "Independent review originalGranarydeath4phase plan/terminalfirst typedorder and source/layout beforeLunaillustration",
+      "worker": {
+        "id": "/root/world_review511",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "docs/art/pipeline/granary-death-511/review"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "a81895b57e445ae913773fd7bf55049f84d859d407e175de2d106edc4f3c52bd"
+        },
+        {
+          "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+          "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+        },
+        {
+          "path": "scripts/building-sprite-contract.mjs",
+          "sha256": "03544fe68faa3d0bc68bb2931c402b8967677e3fe4e0d64d9488d0e9280b7715"
+        },
+        {
+          "path": "scripts/agent-preflight.mjs",
+          "sha256": "60a93e9f83e1270940e439cac2ee6332e7d8d3d1d09fcaba02e5431bc817ed36"
+        },
+        {
+          "path": "docs/art/pipeline/granary-death-511/authoring/canonical-asset.json",
+          "sha256": "068d25dc8374270fba8a169966f777e2174d7b68a1755fb3615ead431f5a0913"
+        },
+        {
+          "path": "docs/art/pipeline/granary-death-511/authoring/job.json",
+          "sha256": "2dc20bde31d00efe23c89730fec95373e5fa686ded852e8f6a18a7a3683b9f9b"
+        },
+        {
+          "path": "docs/art/pipeline/granary-death-511/authoring/proposed-identity.json",
+          "sha256": "cd28575f47b66ac17f854f2550a5429becdc76136c377d17bcae204b7736d34d"
+        },
+        {
+          "path": "docs/art/pipeline/granary-death-511/authoring/proposed-order.json",
+          "sha256": "16be5cf2cf6dd55608378671a3f7114d8f90991a7e0fa6f7a67ff9ff881b596b"
+        },
+        {
+          "path": "docs/art/pipeline/granary-death-511/authoring/proposed-request.json",
+          "sha256": "8e24a656b38a93ed57e2706465861f37b7932fd60a9f3d654095e48f5744485d"
+        },
+        {
+          "path": "docs/art/pipeline/granary-death-511/authoring/PLAN.json",
+          "sha256": "1d6d5c3e65d98d1979e3da38b152b6a7be34c7d91312ce11d3832195fe4606a4"
+        },
+        {
+          "path": "docs/art/granary/variant-01/raw.png",
+          "sha256": "0d0c3963f3faed9341cd09f2ff118a753e9bd1ee431290b51635eebb17b61715"
+        },
+        {
+          "path": "scripts/sprite-preview.html",
+          "sha256": "a25c4acf047e07b41d6e1593a967bebd8a1435d06ac3d0e849661fd679cdfc3b"
+        },
+        {
+          "path": "scripts/qa/sprite-preview.mjs",
+          "sha256": "f2142564470ab7d8db0df2409843d3709bab3d6c893b130c13c81dfb3f1b1b3d"
+        },
+        {
+          "path": "tests/building-preview513.test.js",
+          "sha256": "e4cc8f6cb8677e358483d50d1c712f1136463a85ddef6fb07f04145af7aeb769"
+        },
+        {
+          "path": "scripts/sprite-production.py",
+          "sha256": "ed43f04c1db641b85cc1c003c53991d3e7e5295edf277cc34fd7b9e5407d1723"
+        },
+        {
+          "path": "docs/qa/building-preview-513/CHECKPOINT.json",
+          "sha256": "f5af16b54eb259dd5e73386b001d26e1a85409b06038ee8deaa7e854b9cd8622"
+        }
+      ],
+      "allowedOperations": "Readonlyoriginal/source/plan/order/proposedregistry + exactmechanicalprepare in memory; no newimages/sourceedits/registry/state/ledger. Reviewfirst terminalkey afterreturnedraw. Do not callstillsmotionPASS. Confirmwholebuildingdeath separatefromResidence498 and budget/phase/simwindow/layout honest. Also independently review conditional building preview513 source/readiness before real511 compiler intake; producer is different worker. No new synthetic browser or fullsuite; read existing scopedlogs and inspect concrete issues only.",
+      "acceptance": "Concreteblockers or scopedreadiness; actualrawterminalreview later; sourceSelection/runtime/motion/owner separate",
+      "receipt": "docs/art/pipeline/granary-death-511/review/CHECKPOINT.json"
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "illustration-building511",
+      "status": "CLOSED",
+      "purpose": "Only two missing F1/F2 whole Granary collapse inbetweens using selected F0/F3+original; totalfourinitialcalls, zero corrections",
+      "workKind": "image-generation",
+      "worker": {
+        "id": "/root/illustration509",
+        "role": "WORKER",
+        "model": "gpt-6-luna",
+        "reasoningEffort": "high"
+      },
+      "outputs": [
+        "docs/art/pipeline/granary-death-511/illustration"
+      ],
+      "slots": [
+        {
+          "orderId": "granary-death-whole511",
+          "slotIndex": 1
+        },
+        {
+          "orderId": "granary-death-whole511",
+          "slotIndex": 2
+        }
+      ],
+      "inputs": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "a81895b57e445ae913773fd7bf55049f84d859d407e175de2d106edc4f3c52bd"
+        },
+        {
+          "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+          "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+        },
+        {
+          "path": "scripts/building-sprite-contract.mjs",
+          "sha256": "03544fe68faa3d0bc68bb2931c402b8967677e3fe4e0d64d9488d0e9280b7715"
+        },
+        {
+          "path": "scripts/sprite-prompts.mjs",
+          "sha256": "7f0311c91371ce989bdaf852169c641017367b911f094086762b607d4aecc2a7"
+        },
+        {
+          "path": "scripts/sprite-order-run.mjs",
+          "sha256": "8436a7eedbe2d4a0dac8634bfcc9e7ad27a365e8862771ef230b9cfc47eb5d90"
+        },
+        {
+          "path": "scripts/agent-preflight.mjs",
+          "sha256": "60a93e9f83e1270940e439cac2ee6332e7d8d3d1d09fcaba02e5431bc817ed36"
+        },
+        {
+          "path": "scripts/agent-task-contract.mjs",
+          "sha256": "ab70ec1dc9e99293a54ea2873cb802ab2745d62942ff80c6fa0cb714ae0a60b1"
+        },
+        {
+          "path": "docs/art/granary/variant-01/raw.png",
+          "sha256": "0d0c3963f3faed9341cd09f2ff118a753e9bd1ee431290b51635eebb17b61715"
+        },
+        {
+          "path": "docs/art/pipeline/building-production/granary/identity.json",
+          "sha256": "3e3a8e029a5550aff5089ba0122c6c2ff862cdefe58c6536583d4c2801496560"
+        },
+        {
+          "path": "docs/art/pipeline/granary-death-511/authoring/job-selected-endpoints.json",
+          "sha256": "163f2da765c1ee9660cf94576f50692470e2b44b7c46efb64ccc697329dbcd41"
+        },
+        {
+          "path": "docs/art/pipeline/granary-death-511/authoring/canonical-asset.json",
+          "sha256": "068d25dc8374270fba8a169966f777e2174d7b68a1755fb3615ead431f5a0913"
+        },
+        {
+          "path": "docs/art/pipeline/granary-death-511/authoring/F1-request.json",
+          "sha256": "c3240cd13702ade2cf1a1aa10b3962207f51a29cca0ac1f1f1a36bfe443f64a6"
+        },
+        {
+          "path": "docs/art/pipeline/granary-death-511/authoring/F2-request.json",
+          "sha256": "0b3dbc45bfde16c4cab481fcda74230c0f07ff97f7bdb73d6ac305a2a897e1ca"
+        },
+        {
+          "path": "docs/art/pipeline/granary-death-511/authoring/F0-selection.json",
+          "sha256": "e8e49781ef50ed41f8f2d61a737d6f182a064a63d6c7a870c3eb43801d8dc7ba"
+        },
+        {
+          "path": "docs/art/pipeline/granary-death-511/authoring/F3-selection.json",
+          "sha256": "5f69f907b681fbb921718ca753e1801eb466e2895420500dbace0d468eac4709"
+        },
+        {
+          "path": "docs/art/pipeline/granary-death-511/illustration/F0-raw.png",
+          "sha256": "c853a3340a6e8173f882312a5b69c1f1abb8fc67a4743a39d93e7abce2280815"
+        },
+        {
+          "path": "docs/art/pipeline/granary-death-511/illustration/F3-raw.png",
+          "sha256": "e53a36ffe4a52477e2e598f7d4222d4a79ef75e222e09f479cf26159294719e9"
+        },
+        {
+          "path": "docs/art/pipeline/granary-death-511/authoring/F0-independent-review.json",
+          "sha256": "7b0010e1c18efd4c7276ab956dbd485859d9e30ab9d83c4998e8935188ab9af1"
+        },
+        {
+          "path": "docs/art/pipeline/granary-death-511/authoring/F3-independent-review.json",
+          "sha256": "bfe12bd81babc6a81fcaff8d6c7dd8e4e76a5eac4cf96fa6f1548e1a3871feae"
+        }
+      ],
+      "allowedOperations": "Root claims exactlytwo missing slots F1/F2 against selectedendpointprereqs. Worker dispatches each exactprepared builtincall once, sequentially, no retry/correction/otherframes. Stop providerfailure/unknownresult and report consumedremainingclaim. Preserve allraw/callmapping, no selection/job/ledger/identity/manifest/runtime/state changes.",
+      "acceptance": "Actual returnedwholePNG/toolmapping;1254canvas/fixedlayout terminalpose assessedindependently. No selfawardedsource/motion/owner/runtime/releasePASS.",
+      "receipt": "docs/art/pipeline/granary-death-511/illustration/CHECKPOINT.json",
+      "initialCallsAuthorizedNow": 2,
+      "correctionCap": 0,
+      "closure": "Fouractualwholeillustratedraws returned/settled;4sourcecandidatekeys independentlyreviewed, runtime/private515pending. Exactguardedorderclosedcustody; calls4zeroCorrection/retry."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "online-profile512",
+      "status": "CLOSED",
+      "purpose": "New single bounded ordinary UI200TOTAL profile with independently repaired lifecycle observer and sustainable30worker acquisition; preserve509failure, no blindrestart",
+      "worker": {
+        "id": "/root/game_profile",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "scripts/qa/online-profile512.mjs",
+        "docs/qa/online-profile-512"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "a81895b57e445ae913773fd7bf55049f84d859d407e175de2d106edc4f3c52bd"
+        },
+        {
+          "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+          "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+        },
+        {
+          "path": "scripts/qa/online-profile509.mjs",
+          "sha256": "c6b08911fdd3cd1d6425e13967f25dbeea23b5d8f6e31fafe0c7f8009b34aef9"
+        },
+        {
+          "path": "scripts/qa/browser-custody510.mjs",
+          "sha256": "f0bf514e1988bf3a3c7bcd3abd6111c5721f4f4f63bdce6782eff099d9194ecd"
+        },
+        {
+          "path": "docs/qa/browser-custody-510-review/CHECKPOINT.json",
+          "sha256": "2714720096e14edd152e7b3a0192f0df82465ac1511e63431a9b538392392dc7"
+        },
+        {
+          "path": "scripts/qa/train-observation504.mjs",
+          "sha256": "0538fc1723dc2314288310445454362a2532311bb5fe8a41fb93b9b029235780"
+        },
+        {
+          "path": "docs/qa/online-profile-509/CHECKPOINT.json",
+          "sha256": "414bf12dd65b8f29d570b03eb353bba3a6159de71d7d9fa2da813b57b3cb1aac"
+        },
+        {
+          "path": "shared/sim.js",
+          "sha256": "c9a01adba8630e89e1c3f195c1b98c08c32e74468d389a55891c664e3906e562"
+        },
+        {
+          "path": "server/index.js",
+          "sha256": "4e6a7e82f02d1d856f4ea788863c4836930bc00250be6a5b020ba2bdd8884198"
+        }
+      ],
+      "allowedOperations": "Inspect actual509/510closure and livehandles. New512 harness uses launchOwnedBrowser510, wrapper.newContext, close/error.ownedBrowser recovery and durable exit/stderr/disconnect; source guard freezes canonicalclient/shared/server/public/dist. OrdinaryUI only legal200TOTAL100/side, no injectedstate/commands/facing/winner/simrate. Improve sustainable acquisition to30workers with20food/5wood/5iron via actualavailableUI/gather; never assert economy failure from timeout. One bounded browser launch/acquisition60sprofile after10swarmup, target1920x1080DPR1zoom1.68. Explicitliteralisolatedstagecwd/config/absoluteoutDir. Stop first unexplainedqueue/acquisition/browser/guardissue, do not retry. No production/public/release/image/Blender. Retain runner HOLD asfailure even exit0. Monitor subprocess with actual handle; no coldrestart on observationtimeout.",
+      "acceptance": "Actual200TOTALcount/timing/passivewire/queues/hardware/browser+GPU/errors/canonicalpreservation/handles; cohort not denseviewport or fullroster/WAN. No newgamecode unless concretegap separatelyregistered",
+      "receipt": "docs/qa/online-profile-512/CHECKPOINT.json",
+      "attemptLimit": 1,
+      "closure": "Oneattempt HOLD62/61 lastcohort; page/contextclose trigger UNKNOWN. Lifecycle capture differentiates contextclose beforebrowsercleanup/exit0. No200/60sprofile, no retry.436canonicalpins preserved; localownedhandlesclosed/rooms0."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "building-preview513",
+      "status": "CLOSED",
+      "purpose": "Reuse existing sprite schema3 building compiler preview without falsely claiming8directions or3loopcycles for finitebuildingdeath",
+      "worker": {
+        "id": "/root/review507",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "scripts/sprite-preview.html",
+        "scripts/qa/sprite-preview.mjs",
+        "tests/building-preview513.test.js",
+        "docs/qa/building-preview-513"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "a81895b57e445ae913773fd7bf55049f84d859d407e175de2d106edc4f3c52bd"
+        },
+        {
+          "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+          "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+        },
+        {
+          "path": "scripts/sprite-preview.html",
+          "sha256": "cd8e9c3dc3f7f8f689f14a8a6106d109a51c2364889a3361cc0e50a29401948e"
+        },
+        {
+          "path": "scripts/qa/sprite-preview.mjs",
+          "sha256": "ccf57c0723a04011e0d9e7f4b3791ed9888fa24d95be334bbe1ccd0680a455f3"
+        },
+        {
+          "path": "scripts/sprite-production.py",
+          "sha256": "ed43f04c1db641b85cc1c003c53991d3e7e5295edf277cc34fd7b9e5407d1723"
+        }
+      ],
+      "allowedOperations": "Bounded preview/QA only; actualcompiler already schema3building/null direction,512runtime/canonicallayout/padding2. Existingpreview wronglyshows8missingdirections and QA demands3cycles fornonloop. Handle building with no directionalbank; nonloopshowsphasecompletion/terminalhold and replaybutton; preserveunit3cycle/eightbank controls. QA finiteartifactvalidation worksbuildingdeath/pause/resume/replay. Isolatedfixture browser allowed toverifycontrols only, not art/motionapproval. No game/profile/public/client/shared/server/ledger/artsource/registry edits.",
+      "acceptance": "Focused existingunitcompatibility and newbuildingnonlooptechnicalcontrols withownedhandlesclosed. No syntheticartsuccess/owner/motionPASS.",
+      "receipt": "docs/qa/building-preview-513/CHECKPOINT.json",
+      "closure": "Original2syntheticfixture launches exceedinitial1cap, preserved. Rootfoundconstructionloopregression; repairedwithoneauthorizedfixture/unitloop+buildingloop+finitedeath technicalPASS; independentsourcereviewready. Noart/motionqualification."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "browser-close514",
+      "status": "CLOSED",
+      "purpose": "Bounded diagnose actual512 page/context closure before browser cleanup; no new profile attempt",
+      "worker": {
+        "id": "/root/game_profile",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "docs/qa/browser-close-514"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "a81895b57e445ae913773fd7bf55049f84d859d407e175de2d106edc4f3c52bd"
+        },
+        {
+          "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+          "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+        },
+        {
+          "path": "scripts/qa/online-profile512.mjs",
+          "sha256": "517ad2c9524e0a58f2c55ad3b9b6a3441cc79074c6cf81dba31eb13a04f6d081"
+        },
+        {
+          "path": "scripts/qa/browser-custody510.mjs",
+          "sha256": "f0bf514e1988bf3a3c7bcd3abd6111c5721f4f4f63bdce6782eff099d9194ecd"
+        },
+        {
+          "path": "docs/qa/online-profile-512/CHECKPOINT.json",
+          "sha256": "f737d4c4f8af7161d5c0bde669dc94cc8672876af910543b8dabba52b0691a70"
+        },
+        {
+          "path": "docs/qa/online-profile-512/browser-custody/lifecycle.jsonl",
+          "sha256": "02e08cabfd60553eadc15740414457702b99895c7f907fcdfc37d8ce3ab482e2"
+        },
+        {
+          "path": "docs/qa/online-profile-512/browser-custody/status.json",
+          "sha256": "ee512da369ff3c06d00a5c56886f9a6659ad2b33b3022b1508ef91ed39bf285f"
+        },
+        {
+          "path": "docs/qa/online-profile-512/receipt.json",
+          "sha256": "ec494b8ce238b1cd715e98bf3f0c94c0cfc5400c81707b841c590e574f208846"
+        },
+        {
+          "path": "server/index.js",
+          "sha256": "4e6a7e82f02d1d856f4ea788863c4836930bc00250be6a5b020ba2bdd8884198"
+        },
+        {
+          "path": "client/main.js",
+          "sha256": "ed8e60ebc54da9d4a6f258be153a63bc72034ff8cca011480a2a1b97de4a8957"
+        }
+      ],
+      "allowedOperations": "Read exact512source/lifecycle/error/times and installed Playwright1.62.1 primary API implementation for context/page disposal/timers; inspect targeted relevanthostprocess receipts only, not broadprivate logs. Distinguish rootfirsterror timestamp from finally contextclose (currently onlybrowsercleanupmarked). No browserlaunch/profile/newgame/art/Blender/driver/service/config/runtime/source edits unless laterregisteredconcretefix. Max bounded findings; unknowncausestaysunknown. Do not narrate oldbrowserexit0 ascrashproof.",
+      "acceptance": "Concretecode-path cause with reproduction onlyifisolatedmock/sourceproof, or exactremainingobservable needed. No retry basedtime alone; independentgamework remainsactive.",
+      "receipt": "docs/qa/browser-close-514/CHECKPOINT.json",
+      "closure": "Bounded512diagnosis causeUNKNOWN; page/contextclose may beunmarkedfinallycleanup. RelevantinstalledPlaywrightpaths show no298/300slifetime; no extra browser/profile. Futurediagnosticneedsfirsterror/percontextcloseintent."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "granary-runtime515",
+      "status": "CLOSED",
+      "purpose": "One finite ordinaryUI privatecandidate scene validates actual GranarydeathTick/framebinding/terminalhold/removal; no public or sourcepromotion",
+      "worker": {
+        "id": "/root/game_profile",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "scripts/qa/granary-death515.mjs",
+        "docs/qa/granary-death-515"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "a81895b57e445ae913773fd7bf55049f84d859d407e175de2d106edc4f3c52bd"
+        },
+        {
+          "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+          "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+        },
+        {
+          "path": "scripts/qa/browser-custody510.mjs",
+          "sha256": "f0bf514e1988bf3a3c7bcd3abd6111c5721f4f4f63bdce6782eff099d9194ecd"
+        },
+        {
+          "path": "scripts/qa/online-profile512.mjs",
+          "sha256": "517ad2c9524e0a58f2c55ad3b9b6a3441cc79074c6cf81dba31eb13a04f6d081"
+        },
+        {
+          "path": "shared/sim.js",
+          "sha256": "c9a01adba8630e89e1c3f195c1b98c08c32e74468d389a55891c664e3906e562"
+        },
+        {
+          "path": "client/raster-slice.js",
+          "sha256": "dcb84bc166863b1b5f85940931f8ef558df29bba573496531632f52816676983"
+        },
+        {
+          "path": "client/art-assets.js",
+          "sha256": "af4db82838cf5b936549307272f96aef4ef16d1ac6f672cb8f4dd7c73437ab06"
+        },
+        {
+          "path": "server/index.js",
+          "sha256": "4e6a7e82f02d1d856f4ea788863c4836930bc00250be6a5b020ba2bdd8884198"
+        },
+        {
+          "path": "docs/art/pipeline/granary-death-511/exports/compiled-selected/asset.json",
+          "sha256": "bd15509226232c966d4284a9cf17cf5e7fe04d59444b0d8daea34ade71de5da1"
+        },
+        {
+          "path": "docs/art/pipeline/granary-death-511/exports/compiled-selected/atlas.png",
+          "sha256": "6c34e21ce79a4e904dbfda02f1d01b2ccb38a02eed7ee0c7e056c494482ef0c8"
+        },
+        {
+          "path": "docs/art/pipeline/granary-death-511/exports/browser-preview.json",
+          "sha256": "32f6676348af1cb310cd52dfcecc18b8924fafd11d322bafd56c27365f18359e"
+        }
+      ],
+      "allowedOperations": "Stage exactcanonicalclient/shared/server/public plus candidatecompiledGranarydeath asset+atlas ONLY inisolatedstage manifest, notactivepublic/dist. Explicitliteralstagecwd/exactconfig/absoluteoutDir. One localtwohuman ordinaryUI scene, <=180seconds afterstart; move/holdGeneral ordinaryUI and attack actualopponent Granary usingown initialtroops only; no state/command/facing/winner injection. Use actualassignedtarget/arrival0.7. ReadonlydiagnosticdeadTick hp0 frame/elapsed success record at ordinaryticks through4000msremoval. Source family canvas/pivot unchanged, no flips/fitting. launchOwnedBrowser510 wrappercontexts; record firstexception timestamp beforefinally and percontextcleanupIntent before everyclose. FirstunexplainedissueSTOP, no retry. Preservecanonical436+newinventorypath guard, ownedhandlesclosure exact. No canonicalclient/shared/server/public/ledger/artsource/generation/prodchange. Humanmotionfeedbackpending doesnotprevent clearlycandidateprivate technicaltrial; no quality/ownerPASS inferred.",
+      "acceptance": "Actualsimdeath/candidateassetdraws all4frames/F3hold/corpseremoval/ordinarymenuclosure withsnapshotsscreenshots/errors+canonicalpins; trialfailure staysUNKNOWN/FAILED scoped. No fullgame/release/motion approval.",
+      "receipt": "docs/qa/granary-death-515/CHECKPOINT.json",
+      "attemptLimit": 1,
+      "closure": "Firstharnessprereq error map.spawns missing in authoritative clientpublicsnapshot. Noattack/deathcommandsobserved; firstexception+percontextcleanup nowrecorded; ownedhandlesclosed/exactcanonicaltreeunchanged. Preserve515source/log, no hiddenstateinjection."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "granary-runtime516",
+      "status": "CLOSED",
+      "purpose": "Repair proven515 publicsnapshot schema mistake and ONE finite ordinaryUI candidate Granarydeath qualification; no art retry",
+      "worker": {
+        "id": "/root/game_profile",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "scripts/qa/granary-death516.mjs",
+        "docs/qa/granary-death-516"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "a81895b57e445ae913773fd7bf55049f84d859d407e175de2d106edc4f3c52bd"
+        },
+        {
+          "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+          "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+        },
+        {
+          "path": "scripts/qa/granary-death515.mjs",
+          "sha256": "d7accdff116d34a3b22e68ec84e640b293f950c1d37512b77967ecb0a0d07a0a"
+        },
+        {
+          "path": "docs/qa/granary-death-515/CHECKPOINT.json",
+          "sha256": "3c014d9d6915b1bb03695b382df8f4c7d5a93f002c5342799c50aeafa8d428a9"
+        },
+        {
+          "path": "scripts/qa/online-profile512.mjs",
+          "sha256": "517ad2c9524e0a58f2c55ad3b9b6a3441cc79074c6cf81dba31eb13a04f6d081"
+        },
+        {
+          "path": "scripts/qa/browser-custody510.mjs",
+          "sha256": "f0bf514e1988bf3a3c7bcd3abd6111c5721f4f4f63bdce6782eff099d9194ecd"
+        },
+        {
+          "path": "server/index.js",
+          "sha256": "4e6a7e82f02d1d856f4ea788863c4836930bc00250be6a5b020ba2bdd8884198"
+        },
+        {
+          "path": "client/main.js",
+          "sha256": "ed8e60ebc54da9d4a6f258be153a63bc72034ff8cca011480a2a1b97de4a8957"
+        },
+        {
+          "path": "client/raster-slice.js",
+          "sha256": "dcb84bc166863b1b5f85940931f8ef558df29bba573496531632f52816676983"
+        },
+        {
+          "path": "shared/sim.js",
+          "sha256": "c9a01adba8630e89e1c3f195c1b98c08c32e74468d389a55891c664e3906e562"
+        },
+        {
+          "path": "docs/art/pipeline/granary-death-511/exports/compiled-selected/asset.json",
+          "sha256": "bd15509226232c966d4284a9cf17cf5e7fe04d59444b0d8daea34ade71de5da1"
+        },
+        {
+          "path": "docs/art/pipeline/granary-death-511/exports/compiled-selected/atlas.png",
+          "sha256": "6c34e21ce79a4e904dbfda02f1d01b2ccb38a02eed7ee0c7e056c494482ef0c8"
+        }
+      ],
+      "allowedOperations": "Read actualserverpublicState/clientdiagnostics and stagecandidate515 beforewrite. Do not infer map.spawns or hiddenmetadata; derive ownedResidence coordinates fromeachactualclient readonlysnapshot. Reuse isolated515stage/build asREADONLY input if exactpins remain, or newisolated516buildliteralcwd/config/absoluteoutDir. NEW516harness preserves515failedsource. Move ALLopponentlivingunits inclKing/villagers away by ordinaryUI, initialowner0 soldiers approach/attack visibleGranary. Use tested groundanchor selection foridleunits and actualassignedarrival before reselection; no state/commandinjection or simulation change. ONE <=180s ordinaryUI trial afterpreconditions, stopfirstunexplainederror/timeout, no profile/fullmatch/public. Readonlyclock/frames/terminal/removal trace, canonicalexacttreehash guard. Closeownhandles and recordfirstexception/percontextintent. No generation/claimbudgetchanges or canonicalassetinstall.",
+      "acceptance": "ActualdeadTick/hp0 assetid/frame0..3 terminalhold4s removal/errors/picking/canonicalpreservation evidence, orfirstfailure retained. MechanicalrepairONLY cannot create artquality/releasePASS.",
+      "receipt": "docs/qa/granary-death-516/CHECKPOINT.json",
+      "attemptLimit": 1,
+      "closure": "ActualordinaryUIGranarydeath976/candidateframes2,3/terminal1700..3900ms/removal observed1062. Camera centeredafterhp0; F0/F1/colddecode UNKNOWN. Canonical+readonly515stage exact, ownedhandlesclosed; noartregeneration."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "granary-runtime518",
+      "status": "CLOSED",
+      "purpose": "Verify missing F0/F1/first-death decode of exactcandidate through one fixed-camera ordinaryUI scene; preserve516partialproof",
+      "worker": {
+        "id": "/root/game_profile",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "scripts/qa/granary-death518.mjs",
+        "docs/qa/granary-death-518"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "a81895b57e445ae913773fd7bf55049f84d859d407e175de2d106edc4f3c52bd"
+        },
+        {
+          "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+          "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+        },
+        {
+          "path": "scripts/qa/granary-death516.mjs",
+          "sha256": "08e3a7422369944476f9fb47a7a662f64455e9a59c04f9025810a44aa3db71b8"
+        },
+        {
+          "path": "docs/qa/granary-death-516/CHECKPOINT.json",
+          "sha256": "64cb013c8ee0f7e36666b7609c6d00fa405396fce3fc48dce6024e80fb4f00ab"
+        },
+        {
+          "path": "scripts/qa/browser-custody510.mjs",
+          "sha256": "f0bf514e1988bf3a3c7bcd3abd6111c5721f4f4f63bdce6782eff099d9194ecd"
+        },
+        {
+          "path": "client/main.js",
+          "sha256": "ed8e60ebc54da9d4a6f258be153a63bc72034ff8cca011480a2a1b97de4a8957"
+        },
+        {
+          "path": "client/raster-slice.js",
+          "sha256": "dcb84bc166863b1b5f85940931f8ef558df29bba573496531632f52816676983"
+        },
+        {
+          "path": "client/art-assets.js",
+          "sha256": "af4db82838cf5b936549307272f96aef4ef16d1ac6f672cb8f4dd7c73437ab06"
+        },
+        {
+          "path": "shared/sim.js",
+          "sha256": "c9a01adba8630e89e1c3f195c1b98c08c32e74468d389a55891c664e3906e562"
+        },
+        {
+          "path": "docs/art/pipeline/granary-death-511/exports/compiled-selected/asset.json",
+          "sha256": "bd15509226232c966d4284a9cf17cf5e7fe04d59444b0d8daea34ade71de5da1"
+        },
+        {
+          "path": "docs/art/pipeline/granary-death-511/exports/compiled-selected/atlas.png",
+          "sha256": "6c34e21ce79a4e904dbfda02f1d01b2ccb38a02eed7ee0c7e056c494482ef0c8"
+        }
+      ],
+      "allowedOperations": "Reusereadonlyexact515candidate stage/build andraws. New518observer fixescamera BEFORE attack andverifiedaliveGranarydraw; retainexplicitcamera.zoom/targetviewport/coldasset readiness. No per-sample UI/minimap afterhp0; sampleactualreadonlysim/render20-50ms withoutaddingobserverjank; canonicaltreehashguard1s plusstart/end exactsnapshot, no runtimewrites. One <=180s ordinaryUItrial withinitialarmy/deadTick and correctGeneralprotection as516, no fullmatch/profile/assetregeneration. Record all4frames/decoderpending/assetid/scale/elapsed/terminalandremove; firstunexplainederrorSTOP/ no retry. Browserfirstexception/percontextintent/handle recovery; closeownhandles. No command/state injection/simrates/HP/facing changes/public/deploy/sourcepromotion.",
+      "acceptance": "Actualbeforedeathviewport, coldready status, fullphaseindices and correctsimulationtime/removal, or explicitload/presentationfailure/unknown. ScopeLOCALcandidate only; motion/owner/release remainunverified.",
+      "receipt": "docs/qa/granary-death-518/CHECKPOINT.json",
+      "attemptLimit": 1,
+      "closure": "Camera/liveidleGranarydraw/zoom1.68 verified beforeattack; movingattackeropaque click selectedempty vs15; noattack/death. No retry. KnownUIacquisitionrace, ownedhandlesclosed/canonical515stagepreserved. Do not callart/gamefailure."
+    },
+    {
+      "schema": "rds-agent-task/v1",
+      "id": "granary-runtime519",
+      "status": "ACTIVE",
+      "purpose": "Replace provenmovingmouseacquisitionrace with existing ordinaryUI controlgroups; ONEmissingcolddeathphase trial using exactart/readonlystage",
+      "worker": {
+        "id": "/root/game_profile",
+        "role": "WORKER",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "low"
+      },
+      "outputs": [
+        "scripts/qa/granary-death519.mjs",
+        "docs/qa/granary-death-519"
+      ],
+      "slots": [],
+      "inputs": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "a81895b57e445ae913773fd7bf55049f84d859d407e175de2d106edc4f3c52bd"
+        },
+        {
+          "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+          "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+        },
+        {
+          "path": "scripts/qa/granary-death518.mjs",
+          "sha256": "d109efebdafdc7176085954f5fab869ae91ab1ccb8f9102ff89722bf562d6ace"
+        },
+        {
+          "path": "docs/qa/granary-death-518/CHECKPOINT.json",
+          "sha256": "f36f5a1c1ecc71d980742acbbe7aab1e5ab7b62c3337d0cd2a9d0aed8adb2987"
+        },
+        {
+          "path": "scripts/qa/browser-custody510.mjs",
+          "sha256": "f0bf514e1988bf3a3c7bcd3abd6111c5721f4f4f63bdce6782eff099d9194ecd"
+        },
+        {
+          "path": "client/main.js",
+          "sha256": "ed8e60ebc54da9d4a6f258be153a63bc72034ff8cca011480a2a1b97de4a8957"
+        },
+        {
+          "path": "client/raster-slice.js",
+          "sha256": "dcb84bc166863b1b5f85940931f8ef558df29bba573496531632f52816676983"
+        },
+        {
+          "path": "shared/sim.js",
+          "sha256": "c9a01adba8630e89e1c3f195c1b98c08c32e74468d389a55891c664e3906e562"
+        },
+        {
+          "path": "docs/art/pipeline/granary-death-511/exports/compiled-selected/asset.json",
+          "sha256": "bd15509226232c966d4284a9cf17cf5e7fe04d59444b0d8daea34ade71de5da1"
+        },
+        {
+          "path": "docs/art/pipeline/granary-death-511/exports/compiled-selected/atlas.png",
+          "sha256": "6c34e21ce79a4e904dbfda02f1d01b2ccb38a02eed7ee0c7e056c494482ef0c8"
+        }
+      ],
+      "allowedOperations": "Inspectclientmainkeydown controlgroup saved/recall beforework. Select initial4idleattackergroundanchors and save via actualCtrl1..4keyboard UI. Recallgroup1..4 forsubsequentmove/attack, assertselectedexactID/liveowner, no opaque movingmouseclick. Keepdefendercamera/liveidleGranaryviewportverified BEFOREdamage, no UIperdeadsample. Exactreadonly515candidate stage/build, no generation/runtime/public edits. One <=180s ordinaryUItrial only, firstunknownSTOP; no controlgroup/state injection (onlykeyboard/mouse). Capture colddecode/allframes/deadTick/terminal/removal/currentzoom/error/pending andcanonicaltreeguard. Browserfirstexception/percontextintent; closeownhandles. Preserve518firstselectionfailure and516partialproof. No fullmatch/profile/release or artbudgetsreset.",
+      "acceptance": "ActualexistingcontrolgroupUI selection and missingcoldearlydeath/renderphase coverage; ifnotobserved holdscope rather than fakePASS. Artifactqualitystillrequires actualmotionfeedback.",
+      "receipt": "docs/qa/granary-death-519/CHECKPOINT.json",
+      "attemptLimit": 1
+    }
+  ]
+}

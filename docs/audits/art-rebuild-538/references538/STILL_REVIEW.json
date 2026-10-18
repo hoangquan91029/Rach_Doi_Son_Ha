@@ -1,0 +1,216 @@
+{
+  "schema": "rds-independent-still-review/v1",
+  "task": "references538",
+  "reviewer": {
+    "agent": "/root/references538",
+    "model": "gpt-6.1-sol",
+    "reasoningEffort": "low",
+    "role": "independent of root producer"
+  },
+  "status": "HOLD",
+  "scope": "Three STILL Worker directions and standalone house/tree; no motion or runtime acceptance",
+  "method": "Direct visual inspection using view_image of real PNG bytes; native128 individual cells plus enlarged/study image; no proxy inference from documentation",
+  "manifest": {
+    "path": "docs/art/pixel-village-538/manifest.json",
+    "sha256": "44218903c4d1c2a2d44e27921f3e403f89dc4d88dd0b22d1d81caba30d1af02c"
+  },
+  "artifacts": [
+    {
+      "path": "docs/art/pixel-village-538/raw/worker-closeup-2x.png",
+      "sha256": "479046a51b714cef9cb2d68d9c40705b0b25d15d475dafb1fbf2dadc7ea4791d",
+      "manifestMatch": true,
+      "dimensions": [
+        768,
+        256
+      ],
+      "inspection": "view_image; individual Worker native128 cells inspected at original detail; study/closeup supplement only"
+    },
+    {
+      "path": "docs/art/pixel-village-538/raw/worker-study.png",
+      "sha256": "a2f54009e69353602440a2fce6aa0918502b594fe47f50b8ea3754d223774a83",
+      "manifestMatch": true,
+      "dimensions": [
+        768,
+        148
+      ],
+      "inspection": "view_image; individual Worker native128 cells inspected at original detail; study/closeup supplement only"
+    },
+    {
+      "path": "docs/art/pixel-village-538/raw/worker-S.png",
+      "sha256": "43a81b4a4a8b9af81cc1db9014325114c4094601c917a127e364cc00109f1e65",
+      "manifestMatch": true,
+      "dimensions": [
+        128,
+        128
+      ],
+      "inspection": "view_image; individual Worker native128 cells inspected at original detail; study/closeup supplement only"
+    },
+    {
+      "path": "docs/art/pixel-village-538/raw/worker-SE.png",
+      "sha256": "dacd6ab07e88cbd2606e947d25d792d67e72f54cd2476d78593b11fcb7602751",
+      "manifestMatch": true,
+      "dimensions": [
+        128,
+        128
+      ],
+      "inspection": "view_image; individual Worker native128 cells inspected at original detail; study/closeup supplement only"
+    },
+    {
+      "path": "docs/art/pixel-village-538/raw/worker-N.png",
+      "sha256": "8814a57c7f4dffbf42546e23eb7c6a6c75fbff4bad83490aeed340fca4bb0f51",
+      "manifestMatch": true,
+      "dimensions": [
+        128,
+        128
+      ],
+      "inspection": "view_image; individual Worker native128 cells inspected at original detail; study/closeup supplement only"
+    },
+    {
+      "path": "docs/art/pixel-village-538/raw/house.png",
+      "sha256": "70ce4449910c1ad11aa502fbd661c8d8687aaaacc6d8b475d19cfc1aaf555a53",
+      "manifestMatch": true,
+      "dimensions": [
+        520,
+        430
+      ],
+      "inspection": "view_image; individual Worker native128 cells inspected at original detail; study/closeup supplement only"
+    },
+    {
+      "path": "docs/art/pixel-village-538/raw/tree.png",
+      "sha256": "b6ed15cd22bfd2110804ebb50cbbd1b6819ef0c30b04ef20599dcfe97a9f239f",
+      "manifestMatch": true,
+      "dimensions": [
+        280,
+        290
+      ],
+      "inspection": "view_image; individual Worker native128 cells inspected at original detail; study/closeup supplement only"
+    }
+  ],
+  "positiveObservations": [
+    "Worker reads as a clothed adult human, not a geometric placeholder; visible head/torso/arms/legs, distinct hands and bare feet.",
+    "Brown cloth and darker trousers separate from skin; S versus rear N visibly differ; SE has independently different face and limb occlusion.",
+    "House broad roof/wall volumes give a coherent isometric silhouette; tree trunk/canopy silhouette is immediately legible."
+  ],
+  "defects": [
+    {
+      "id": "W1",
+      "severity": "major",
+      "views": [
+        "S",
+        "N",
+        "SE"
+      ],
+      "observation": "S/N mostly read as upright frontal/back elevation with limited top-plane visibility or vertical foreshortening. SE face is near profile while torso is less turned. The set does not yet establish a consistently elevated RTS camera.",
+      "next": "Root/human select intended camera and judge a common visible top/head/shoulder/foot plane before animation."
+    },
+    {
+      "id": "W2",
+      "severity": "moderate",
+      "views": [
+        "S",
+        "N"
+      ],
+      "observation": "Straight hanging arms and nearly parallel narrow legs create a stiff standing silhouette. Shoulder/elbow/hip/knee landmarks remain compressed into angular cloth contours at128; the drawing is human-readable but this does not certify realistic anatomy.",
+      "next": "Refine weight-bearing stance and readable limb joints in a still without treating a palette/proportion match as anatomy approval."
+    },
+    {
+      "id": "W3",
+      "severity": "moderate",
+      "views": [
+        "S",
+        "SE",
+        "N"
+      ],
+      "observation": "Bright sash/crossover and abrupt light/dark strips along trouser legs compete with body volume. N upper back has a broad light shoulder patch which reads as a separate panel more than soft cloth volume.",
+      "next": "Review material shading clusters and garment construction; keep sash/cut explicitly proposed."
+    },
+    {
+      "id": "H1",
+      "severity": "moderate",
+      "views": [
+        "house"
+      ],
+      "observation": "Roof texture consists of repeated diagonal rectangular strokes, giving a shingle/tile-like surface more strongly than layered fibrous thatch.",
+      "next": "If the asset is labelled thatch, author irregular bundled/layered fibre clusters rather than repeated roof units."
+    },
+    {
+      "id": "H2",
+      "severity": "historical-uncertainty",
+      "views": [
+        "house"
+      ],
+      "observation": "Broad framed grid opening, highly regular wall panels and crisp plinth are visually clear but not established by the current17c poor-village evidence. Dampier describes small square openings and low mud/daubed-wattle walls.",
+      "next": "Keep construction proposed; consider smaller simple opening/daubed wall cues for the specific northern poor-worker setting."
+    },
+    {
+      "id": "T1",
+      "severity": "minor",
+      "views": [
+        "tree"
+      ],
+      "observation": "Large flat angular canopy lobes with many small bright leaf flecks read somewhat patterned; trunk ends below an opaque flat canopy without visible branching transition.",
+      "next": "Optional volume/branch refinement after human approves overall pixel style; species stays unknown."
+    },
+    {
+      "id": "S1",
+      "severity": "minor",
+      "views": [
+        "scene1366",
+        "scene1920"
+      ],
+      "observation": "Brown/dark figures have modest luminance separation from the muted green ground; thin outlines and internal details weaken in the wide scene.",
+      "next": "Human judge gameplay readability with actual selection/health UI and intended density before committing animation."
+    }
+  ],
+  "runtimeScreenshots": {
+    "status": "STATIC_SCREENSHOTS_INSPECTED",
+    "artifacts": [
+      {
+        "path": "docs/audits/art-rebuild-538/root/runtime/chromium-scene-1366.png",
+        "sha256": "465b06c276d817453a765247ff0b01963a5aee47f2ec8d76142103d1ffa06b28",
+        "dimensions": [
+          1366,
+          768
+        ],
+        "inspection": "view_image screenshot once"
+      },
+      {
+        "path": "docs/audits/art-rebuild-538/root/runtime/chromium-scene-1920.png",
+        "sha256": "ddd5b47d9ade141aafaf75788b6639d716df11d9ac26c47fa031ff0337d84441",
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "inspection": "view_image screenshot once"
+      },
+      {
+        "path": "docs/audits/art-rebuild-538/root/runtime/chromium-study.png",
+        "sha256": "2cbbcc82fe0fed3c97ad162b80bed5f1c4f1de09e5a23bee407861551a30066d",
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "inspection": "view_image screenshot once"
+      }
+    ],
+    "observedScene": true,
+    "limitation": "Screenshots show private still scene; no interaction, game-controller behavior, animation or ordinary-game runtime independently exercised.",
+    "observations": [
+      "Both scene sizes show legible house/tree/riverbank and three distinct workers; UI identifies a static art study.",
+      "At scene scale workers remain human-readable, but dark brown figures have modest contrast on muted green ground and the nearly frontal camera remains conspicuous beside isometric house.",
+      "1366 layout partly obscures/crops left trees behind fixed UI; central house and all three workers remain visible.1920 gives clearer composition.",
+      "Study overlay explicitly labels three standing poses rather than animation and proposed tunic/headcloth; enlarged and native silhouettes are visible."
+    ]
+  },
+  "historicalReview": "Dampier brown/tawny cotton cue used plausibly; exact garment cut/headcloth/house construction remain PROPOSED. No claim of period authenticity.",
+  "gates": {
+    "stillVisual": "HOLD",
+    "motion": "NOT_REVIEWED",
+    "runtime": "NOT_REVIEWED",
+    "owner": "PENDING_HUMAN",
+    "release": "NOT_REVIEWED"
+  },
+  "productionEdits": false,
+  "imageCalls": 0,
+  "nextDependency": "Human/root decide visual direction and supply exact ordinary-engine scene screenshots. Any revisions require new hashes and a bounded follow-up review."
+}

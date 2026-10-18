@@ -1,0 +1,1266 @@
+{
+  "status": "HOLD_FIRST_ERROR",
+  "scope": "ONE private SPDelta exact523D1idle technicaltransition; oldwalkheld/rejected, no newwalk/motion/owner/publicPASS",
+  "errors": [],
+  "consoleErrors": [],
+  "requestFailures": [],
+  "startup": [
+    {
+      "atUTC": "2026-10-13T13:51:32.479Z",
+      "tick": 4,
+      "mode": "offline",
+      "artLoading": false,
+      "pipeline": {
+        "unitActionPolicy": "on-demand",
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 51,
+        "ready": 48,
+        "approved": 0,
+        "candidates": 48,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 17842432,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 38,
+        "encodedReady": 0,
+        "retainedEncodedBytes": 4651704,
+        "encodedBudgetBytes": 67108864,
+        "selectedDeclared": 51,
+        "eagerDeclared": 48,
+        "deferredDeclared": 3,
+        "pending": 0,
+        "pageErrors": [],
+        "evictedPages": 0,
+        "evictedEncodedPages": 0,
+        "failures": []
+      },
+      "modal": "Preparing field artwork…The selected campaign bank is loading.",
+      "errors": [],
+      "consoleErrors": [],
+      "requestFailures": []
+    }
+  ],
+  "planning": [
+    {
+      "kind": "initial-egress-plan",
+      "selected": {
+        "actorId": 7,
+        "staging": {
+          "x": 8.5,
+          "y": 19.5
+        },
+        "firstTarget": {
+          "x": 11.5,
+          "y": 22.5
+        },
+        "secondTarget": {
+          "x": 13,
+          "y": 24
+        }
+      },
+      "rejections": [
+        {
+          "actorId": 7,
+          "point": {
+            "x": 7.5,
+            "y": 21.5
+          },
+          "reason": "insufficient-egress-distance"
+        },
+        {
+          "actorId": 7,
+          "point": {
+            "x": 7.5,
+            "y": 20.5
+          },
+          "reason": "insufficient-egress-distance"
+        },
+        {
+          "actorId": 7,
+          "point": {
+            "x": 6.5,
+            "y": 21.5
+          },
+          "reason": "insufficient-egress-distance"
+        },
+        {
+          "actorId": 7,
+          "point": {
+            "x": 8.5,
+            "y": 21.5
+          },
+          "reason": "insufficient-egress-distance"
+        },
+        {
+          "actorId": 7,
+          "point": {
+            "x": 7.5,
+            "y": 22.5
+          },
+          "reason": "insufficient-egress-distance"
+        },
+        {
+          "actorId": 7,
+          "point": {
+            "x": 6.5,
+            "y": 20.5
+          },
+          "reason": "insufficient-egress-distance"
+        },
+        {
+          "actorId": 7,
+          "point": {
+            "x": 8.5,
+            "y": 20.5
+          },
+          "reason": "insufficient-egress-distance"
+        },
+        {
+          "actorId": 7,
+          "point": {
+            "x": 6.5,
+            "y": 22.5
+          },
+          "reason": "insufficient-egress-distance"
+        },
+        {
+          "actorId": 7,
+          "point": {
+            "x": 8.5,
+            "y": 22.5
+          },
+          "reason": "building-footprint:1"
+        },
+        {
+          "actorId": 7,
+          "point": {
+            "x": 7.5,
+            "y": 19.5
+          },
+          "reason": "ground-segment-building:1"
+        },
+        {
+          "actorId": 7,
+          "point": {
+            "x": 5.5,
+            "y": 21.5
+          },
+          "reason": "not-plain"
+        },
+        {
+          "actorId": 7,
+          "point": {
+            "x": 9.5,
+            "y": 21.5
+          },
+          "reason": "ground-segment-building:1"
+        },
+        {
+          "actorId": 7,
+          "point": {
+            "x": 7.5,
+            "y": 23.5
+          },
+          "reason": "ground-segment-building:1"
+        },
+        {
+          "actorId": 7,
+          "point": {
+            "x": 6.5,
+            "y": 19.5
+          },
+          "reason": "ground-segment-building:1"
+        }
+      ],
+      "search": {
+        "actors": 6,
+        "visitedCells": 401,
+        "radius": 8,
+        "maxCells": 4096
+      }
+    },
+    {
+      "kind": "actual-D1-segment",
+      "from": {
+        "x": 8.18694341128344,
+        "y": 20.126100133136422
+      },
+      "d": 3,
+      "reason": "ground-segment-building:1"
+    }
+  ],
+  "actions": [
+    {
+      "kind": "ordinary-groundrectangle-Ctrl1",
+      "id": 7
+    },
+    {
+      "kind": "ordinary-M-egress",
+      "target": {
+        "x": 8.5,
+        "y": 19.5
+      },
+      "assigned": {
+        "x": 8.499990505642362,
+        "y": 19.5
+      }
+    }
+  ],
+  "samples": [
+    {
+      "label": "egress-assigned",
+      "tick": 31,
+      "paused": false,
+      "presentationTimeMs": 1542.5000000029802,
+      "entity": {
+        "id": 7,
+        "x": 6.908076118445748,
+        "y": 21.40807611844575,
+        "hp": 65,
+        "state": "walk",
+        "dir": 5,
+        "order": {
+          "type": "move",
+          "x": 8.499990505642362,
+          "y": 19.5
+        }
+      },
+      "draw": {
+        "entityId": 7,
+        "assetId": "villager-idle-D00",
+        "frame": 0,
+        "visualState": "idle",
+        "requestedState": "walk",
+        "requestedDirection": 5,
+        "direction": 0,
+        "presentation": "STATIC_ILLUSTRATION",
+        "staticIllustrationFallback": true,
+        "render": {
+          "width": 42,
+          "height": 42
+        },
+        "pivot": {
+          "x": 267.0239234449761,
+          "y": 465.45454545454544
+        },
+        "cell": {
+          "width": 512,
+          "height": 512
+        },
+        "tick": 31,
+        "presentationTimeMs": 1542.5000000029802,
+        "renderObservation": 88
+      },
+      "pipeline": {
+        "unitActionPolicy": "on-demand",
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 51,
+        "ready": 48,
+        "approved": 0,
+        "candidates": 48,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 17842432,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 38,
+        "encodedReady": 0,
+        "retainedEncodedBytes": 4651704,
+        "encodedBudgetBytes": 67108864,
+        "selectedDeclared": 51,
+        "eagerDeclared": 48,
+        "deferredDeclared": 3,
+        "pending": 0,
+        "pageErrors": [],
+        "evictedPages": 0,
+        "evictedEncodedPages": 0,
+        "failures": []
+      },
+      "camera": {
+        "x": 8.497786458333334,
+        "y": 19.5,
+        "zoom": 1.68
+      }
+    },
+    {
+      "label": "egress-arrival",
+      "tick": 32,
+      "paused": false,
+      "presentationTimeMs": 1592.60000000298,
+      "entity": {
+        "id": 7,
+        "x": 6.83382990642116,
+        "y": 21.333829906421162,
+        "hp": 65,
+        "state": "walk",
+        "dir": 5,
+        "order": {
+          "type": "move",
+          "x": 8.499990505642362,
+          "y": 19.5
+        }
+      },
+      "draw": {
+        "entityId": 7,
+        "assetId": "villager-idle-D00",
+        "frame": 0,
+        "visualState": "idle",
+        "requestedState": "walk",
+        "requestedDirection": 5,
+        "direction": 0,
+        "presentation": "STATIC_ILLUSTRATION",
+        "staticIllustrationFallback": true,
+        "render": {
+          "width": 42,
+          "height": 42
+        },
+        "pivot": {
+          "x": 267.0239234449761,
+          "y": 465.45454545454544
+        },
+        "cell": {
+          "width": 512,
+          "height": 512
+        },
+        "tick": 32,
+        "presentationTimeMs": 1592.60000000298,
+        "renderObservation": 91
+      },
+      "pipeline": {
+        "unitActionPolicy": "on-demand",
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 51,
+        "ready": 48,
+        "approved": 0,
+        "candidates": 48,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 17842432,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 38,
+        "encodedReady": 0,
+        "retainedEncodedBytes": 4651704,
+        "encodedBudgetBytes": 67108864,
+        "selectedDeclared": 51,
+        "eagerDeclared": 48,
+        "deferredDeclared": 3,
+        "pending": 0,
+        "pageErrors": [],
+        "evictedPages": 0,
+        "evictedEncodedPages": 0,
+        "failures": []
+      },
+      "camera": {
+        "x": 8.497786458333334,
+        "y": 19.5,
+        "zoom": 1.68
+      }
+    },
+    {
+      "label": "egress-arrival",
+      "tick": 34,
+      "paused": false,
+      "presentationTimeMs": 1692.5000000029802,
+      "entity": {
+        "id": 7,
+        "x": 6.6853374823719856,
+        "y": 21.185337482371988,
+        "hp": 65,
+        "state": "walk",
+        "dir": 5,
+        "order": {
+          "type": "move",
+          "x": 8.499990505642362,
+          "y": 19.5
+        }
+      },
+      "draw": {
+        "entityId": 7,
+        "assetId": "villager-idle-D00",
+        "frame": 0,
+        "visualState": "idle",
+        "requestedState": "walk",
+        "requestedDirection": 5,
+        "direction": 0,
+        "presentation": "STATIC_ILLUSTRATION",
+        "staticIllustrationFallback": true,
+        "render": {
+          "width": 42,
+          "height": 42
+        },
+        "pivot": {
+          "x": 267.0239234449761,
+          "y": 465.45454545454544
+        },
+        "cell": {
+          "width": 512,
+          "height": 512
+        },
+        "tick": 34,
+        "presentationTimeMs": 1692.5000000029802,
+        "renderObservation": 97
+      },
+      "pipeline": {
+        "unitActionPolicy": "on-demand",
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 51,
+        "ready": 48,
+        "approved": 0,
+        "candidates": 48,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 17842432,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 38,
+        "encodedReady": 0,
+        "retainedEncodedBytes": 4651704,
+        "encodedBudgetBytes": 67108864,
+        "selectedDeclared": 51,
+        "eagerDeclared": 48,
+        "deferredDeclared": 3,
+        "pending": 0,
+        "pageErrors": [],
+        "evictedPages": 0,
+        "evictedEncodedPages": 0,
+        "failures": []
+      },
+      "camera": {
+        "x": 8.497786458333334,
+        "y": 19.5,
+        "zoom": 1.68
+      }
+    },
+    {
+      "label": "egress-arrival",
+      "tick": 36,
+      "paused": false,
+      "presentationTimeMs": 1792.5000000029802,
+      "entity": {
+        "id": 7,
+        "x": 6.536845058322812,
+        "y": 21.036845058322815,
+        "hp": 65,
+        "state": "walk",
+        "dir": 5,
+        "order": {
+          "type": "move",
+          "x": 8.499990505642362,
+          "y": 19.5
+        }
+      },
+      "draw": {
+        "entityId": 7,
+        "assetId": "villager-idle-D00",
+        "frame": 0,
+        "visualState": "idle",
+        "requestedState": "walk",
+        "requestedDirection": 5,
+        "direction": 0,
+        "presentation": "STATIC_ILLUSTRATION",
+        "staticIllustrationFallback": true,
+        "render": {
+          "width": 42,
+          "height": 42
+        },
+        "pivot": {
+          "x": 267.0239234449761,
+          "y": 465.45454545454544
+        },
+        "cell": {
+          "width": 512,
+          "height": 512
+        },
+        "tick": 36,
+        "presentationTimeMs": 1792.5000000029802,
+        "renderObservation": 103
+      },
+      "pipeline": {
+        "unitActionPolicy": "on-demand",
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 51,
+        "ready": 48,
+        "approved": 0,
+        "candidates": 48,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 17842432,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 38,
+        "encodedReady": 0,
+        "retainedEncodedBytes": 4651704,
+        "encodedBudgetBytes": 67108864,
+        "selectedDeclared": 51,
+        "eagerDeclared": 48,
+        "deferredDeclared": 3,
+        "pending": 0,
+        "pageErrors": [],
+        "evictedPages": 0,
+        "evictedEncodedPages": 0,
+        "failures": []
+      },
+      "camera": {
+        "x": 8.497786458333334,
+        "y": 19.5,
+        "zoom": 1.68
+      }
+    },
+    {
+      "label": "egress-arrival",
+      "tick": 38,
+      "paused": false,
+      "presentationTimeMs": 1892.60000000298,
+      "entity": {
+        "id": 7,
+        "x": 6.611647365726362,
+        "y": 20.888352634273637,
+        "hp": 65,
+        "state": "walk",
+        "dir": 7,
+        "order": {
+          "type": "move",
+          "x": 8.499990505642362,
+          "y": 19.5
+        }
+      },
+      "draw": {
+        "entityId": 7,
+        "assetId": "villager-idle-D00",
+        "frame": 0,
+        "visualState": "idle",
+        "requestedState": "walk",
+        "requestedDirection": 7,
+        "direction": 0,
+        "presentation": "STATIC_ILLUSTRATION",
+        "staticIllustrationFallback": true,
+        "render": {
+          "width": 42,
+          "height": 42
+        },
+        "pivot": {
+          "x": 267.0239234449761,
+          "y": 465.45454545454544
+        },
+        "cell": {
+          "width": 512,
+          "height": 512
+        },
+        "tick": 38,
+        "presentationTimeMs": 1892.60000000298,
+        "renderObservation": 109
+      },
+      "pipeline": {
+        "unitActionPolicy": "on-demand",
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 51,
+        "ready": 48,
+        "approved": 0,
+        "candidates": 48,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 17842432,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 38,
+        "encodedReady": 0,
+        "retainedEncodedBytes": 4651704,
+        "encodedBudgetBytes": 67108864,
+        "selectedDeclared": 51,
+        "eagerDeclared": 48,
+        "deferredDeclared": 3,
+        "pending": 0,
+        "pageErrors": [],
+        "evictedPages": 0,
+        "evictedEncodedPages": 0,
+        "failures": []
+      },
+      "camera": {
+        "x": 8.497786458333334,
+        "y": 19.5,
+        "zoom": 1.68
+      }
+    },
+    {
+      "label": "egress-arrival",
+      "tick": 40,
+      "paused": false,
+      "presentationTimeMs": 1992.5000000029802,
+      "entity": {
+        "id": 7,
+        "x": 6.760139789775537,
+        "y": 20.739860210224464,
+        "hp": 65,
+        "state": "walk",
+        "dir": 7,
+        "order": {
+          "type": "move",
+          "x": 8.499990505642362,
+          "y": 19.5
+        }
+      },
+      "draw": {
+        "entityId": 7,
+        "assetId": "villager-idle-D00",
+        "frame": 0,
+        "visualState": "idle",
+        "requestedState": "walk",
+        "requestedDirection": 7,
+        "direction": 0,
+        "presentation": "STATIC_ILLUSTRATION",
+        "staticIllustrationFallback": true,
+        "render": {
+          "width": 42,
+          "height": 42
+        },
+        "pivot": {
+          "x": 267.0239234449761,
+          "y": 465.45454545454544
+        },
+        "cell": {
+          "width": 512,
+          "height": 512
+        },
+        "tick": 40,
+        "presentationTimeMs": 1992.5000000029802,
+        "renderObservation": 115
+      },
+      "pipeline": {
+        "unitActionPolicy": "on-demand",
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 51,
+        "ready": 48,
+        "approved": 0,
+        "candidates": 48,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 17842432,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 38,
+        "encodedReady": 0,
+        "retainedEncodedBytes": 4651704,
+        "encodedBudgetBytes": 67108864,
+        "selectedDeclared": 51,
+        "eagerDeclared": 48,
+        "deferredDeclared": 3,
+        "pending": 0,
+        "pageErrors": [],
+        "evictedPages": 0,
+        "evictedEncodedPages": 0,
+        "failures": []
+      },
+      "camera": {
+        "x": 8.497786458333334,
+        "y": 19.5,
+        "zoom": 1.68
+      }
+    },
+    {
+      "label": "egress-arrival",
+      "tick": 42,
+      "paused": false,
+      "presentationTimeMs": 2092.60000000298,
+      "entity": {
+        "id": 7,
+        "x": 6.908632213824712,
+        "y": 20.59136778617529,
+        "hp": 65,
+        "state": "walk",
+        "dir": 7,
+        "order": {
+          "type": "move",
+          "x": 8.499990505642362,
+          "y": 19.5
+        }
+      },
+      "draw": {
+        "entityId": 7,
+        "assetId": "villager-idle-D00",
+        "frame": 0,
+        "visualState": "idle",
+        "requestedState": "walk",
+        "requestedDirection": 7,
+        "direction": 0,
+        "presentation": "STATIC_ILLUSTRATION",
+        "staticIllustrationFallback": true,
+        "render": {
+          "width": 42,
+          "height": 42
+        },
+        "pivot": {
+          "x": 267.0239234449761,
+          "y": 465.45454545454544
+        },
+        "cell": {
+          "width": 512,
+          "height": 512
+        },
+        "tick": 42,
+        "presentationTimeMs": 2092.60000000298,
+        "renderObservation": 121
+      },
+      "pipeline": {
+        "unitActionPolicy": "on-demand",
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 51,
+        "ready": 48,
+        "approved": 0,
+        "candidates": 48,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 17842432,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 38,
+        "encodedReady": 0,
+        "retainedEncodedBytes": 4651704,
+        "encodedBudgetBytes": 67108864,
+        "selectedDeclared": 51,
+        "eagerDeclared": 48,
+        "deferredDeclared": 3,
+        "pending": 0,
+        "pageErrors": [],
+        "evictedPages": 0,
+        "evictedEncodedPages": 0,
+        "failures": []
+      },
+      "camera": {
+        "x": 8.497786458333334,
+        "y": 19.5,
+        "zoom": 1.68
+      }
+    },
+    {
+      "label": "egress-arrival",
+      "tick": 44,
+      "paused": false,
+      "presentationTimeMs": 2192.50000000298,
+      "entity": {
+        "id": 7,
+        "x": 7.057124637873885,
+        "y": 20.442875362126117,
+        "hp": 65,
+        "state": "walk",
+        "dir": 7,
+        "order": {
+          "type": "move",
+          "x": 8.499990505642362,
+          "y": 19.5
+        }
+      },
+      "draw": {
+        "entityId": 7,
+        "assetId": "villager-idle-D00",
+        "frame": 0,
+        "visualState": "idle",
+        "requestedState": "walk",
+        "requestedDirection": 7,
+        "direction": 0,
+        "presentation": "STATIC_ILLUSTRATION",
+        "staticIllustrationFallback": true,
+        "render": {
+          "width": 42,
+          "height": 42
+        },
+        "pivot": {
+          "x": 267.0239234449761,
+          "y": 465.45454545454544
+        },
+        "cell": {
+          "width": 512,
+          "height": 512
+        },
+        "tick": 44,
+        "presentationTimeMs": 2192.50000000298,
+        "renderObservation": 127
+      },
+      "pipeline": {
+        "unitActionPolicy": "on-demand",
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 51,
+        "ready": 48,
+        "approved": 0,
+        "candidates": 48,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 17842432,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 38,
+        "encodedReady": 0,
+        "retainedEncodedBytes": 4651704,
+        "encodedBudgetBytes": 67108864,
+        "selectedDeclared": 51,
+        "eagerDeclared": 48,
+        "deferredDeclared": 3,
+        "pending": 0,
+        "pageErrors": [],
+        "evictedPages": 0,
+        "evictedEncodedPages": 0,
+        "failures": []
+      },
+      "camera": {
+        "x": 8.497786458333334,
+        "y": 19.5,
+        "zoom": 1.68
+      }
+    },
+    {
+      "label": "egress-arrival",
+      "tick": 46,
+      "paused": false,
+      "presentationTimeMs": 2292.50000000298,
+      "entity": {
+        "id": 7,
+        "x": 7.20561706192306,
+        "y": 20.294382938076943,
+        "hp": 65,
+        "state": "walk",
+        "dir": 7,
+        "order": {
+          "type": "move",
+          "x": 8.499990505642362,
+          "y": 19.5
+        }
+      },
+      "draw": {
+        "entityId": 7,
+        "assetId": "villager-idle-D00",
+        "frame": 0,
+        "visualState": "idle",
+        "requestedState": "walk",
+        "requestedDirection": 7,
+        "direction": 0,
+        "presentation": "STATIC_ILLUSTRATION",
+        "staticIllustrationFallback": true,
+        "render": {
+          "width": 42,
+          "height": 42
+        },
+        "pivot": {
+          "x": 267.0239234449761,
+          "y": 465.45454545454544
+        },
+        "cell": {
+          "width": 512,
+          "height": 512
+        },
+        "tick": 46,
+        "presentationTimeMs": 2292.50000000298,
+        "renderObservation": 133
+      },
+      "pipeline": {
+        "unitActionPolicy": "on-demand",
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 51,
+        "ready": 48,
+        "approved": 0,
+        "candidates": 48,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 17842432,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 38,
+        "encodedReady": 0,
+        "retainedEncodedBytes": 4651704,
+        "encodedBudgetBytes": 67108864,
+        "selectedDeclared": 51,
+        "eagerDeclared": 48,
+        "deferredDeclared": 3,
+        "pending": 0,
+        "pageErrors": [],
+        "evictedPages": 0,
+        "evictedEncodedPages": 0,
+        "failures": []
+      },
+      "camera": {
+        "x": 8.497786458333334,
+        "y": 19.5,
+        "zoom": 1.68
+      }
+    },
+    {
+      "label": "egress-arrival",
+      "tick": 48,
+      "paused": false,
+      "presentationTimeMs": 2392.60000000298,
+      "entity": {
+        "id": 7,
+        "x": 7.354109485972233,
+        "y": 20.14589051402777,
+        "hp": 65,
+        "state": "walk",
+        "dir": 7,
+        "order": {
+          "type": "move",
+          "x": 8.499990505642362,
+          "y": 19.5
+        }
+      },
+      "draw": {
+        "entityId": 7,
+        "assetId": "villager-idle-D00",
+        "frame": 0,
+        "visualState": "idle",
+        "requestedState": "walk",
+        "requestedDirection": 7,
+        "direction": 0,
+        "presentation": "STATIC_ILLUSTRATION",
+        "staticIllustrationFallback": true,
+        "render": {
+          "width": 42,
+          "height": 42
+        },
+        "pivot": {
+          "x": 267.0239234449761,
+          "y": 465.45454545454544
+        },
+        "cell": {
+          "width": 512,
+          "height": 512
+        },
+        "tick": 48,
+        "presentationTimeMs": 2392.60000000298,
+        "renderObservation": 139
+      },
+      "pipeline": {
+        "unitActionPolicy": "on-demand",
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 51,
+        "ready": 48,
+        "approved": 0,
+        "candidates": 48,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 17842432,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 38,
+        "encodedReady": 0,
+        "retainedEncodedBytes": 4651704,
+        "encodedBudgetBytes": 67108864,
+        "selectedDeclared": 51,
+        "eagerDeclared": 48,
+        "deferredDeclared": 3,
+        "pending": 0,
+        "pageErrors": [],
+        "evictedPages": 0,
+        "evictedEncodedPages": 0,
+        "failures": []
+      },
+      "camera": {
+        "x": 8.497786458333334,
+        "y": 19.5,
+        "zoom": 1.68
+      }
+    },
+    {
+      "label": "egress-arrival",
+      "tick": 50,
+      "paused": false,
+      "presentationTimeMs": 2492.60000000298,
+      "entity": {
+        "id": 7,
+        "x": 7.503619184118512,
+        "y": 20.00066436272871,
+        "hp": 65,
+        "state": "walk",
+        "dir": 0,
+        "order": {
+          "type": "move",
+          "x": 8.499990505642362,
+          "y": 19.5
+        }
+      },
+      "draw": {
+        "entityId": 7,
+        "assetId": "villager-idle-D00",
+        "frame": 0,
+        "visualState": "idle",
+        "requestedState": "walk",
+        "requestedDirection": 0,
+        "direction": 0,
+        "presentation": "STATIC_ILLUSTRATION",
+        "staticIllustrationFallback": true,
+        "render": {
+          "width": 42,
+          "height": 42
+        },
+        "pivot": {
+          "x": 267.0239234449761,
+          "y": 465.45454545454544
+        },
+        "cell": {
+          "width": 512,
+          "height": 512
+        },
+        "tick": 50,
+        "presentationTimeMs": 2492.60000000298,
+        "renderObservation": 145
+      },
+      "pipeline": {
+        "unitActionPolicy": "on-demand",
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 51,
+        "ready": 48,
+        "approved": 0,
+        "candidates": 48,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 17842432,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 38,
+        "encodedReady": 0,
+        "retainedEncodedBytes": 4651704,
+        "encodedBudgetBytes": 67108864,
+        "selectedDeclared": 51,
+        "eagerDeclared": 48,
+        "deferredDeclared": 3,
+        "pending": 0,
+        "pageErrors": [],
+        "evictedPages": 0,
+        "evictedEncodedPages": 0,
+        "failures": []
+      },
+      "camera": {
+        "x": 8.497786458333334,
+        "y": 19.5,
+        "zoom": 1.68
+      }
+    },
+    {
+      "label": "egress-arrival",
+      "tick": 58,
+      "paused": false,
+      "presentationTimeMs": 2892.60000000298,
+      "entity": {
+        "id": 7,
+        "x": 8.18694341128344,
+        "y": 20.126100133136422,
+        "hp": 65,
+        "state": "idle",
+        "dir": 0,
+        "order": null
+      },
+      "draw": {
+        "entityId": 7,
+        "assetId": "villager-idle-D00",
+        "frame": 0,
+        "visualState": "idle",
+        "requestedState": "idle",
+        "requestedDirection": 0,
+        "direction": 0,
+        "presentation": "AUTHORED",
+        "staticIllustrationFallback": false,
+        "render": {
+          "width": 42,
+          "height": 42
+        },
+        "pivot": {
+          "x": 267.0239234449761,
+          "y": 465.45454545454544
+        },
+        "cell": {
+          "width": 512,
+          "height": 512
+        },
+        "tick": 58,
+        "presentationTimeMs": 2892.60000000298,
+        "renderObservation": 169
+      },
+      "pipeline": {
+        "unitActionPolicy": "on-demand",
+        "status": "CANDIDATE",
+        "manifest": "ready",
+        "declared": 51,
+        "ready": 48,
+        "approved": 0,
+        "candidates": 48,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 0,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 17842432,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 38,
+        "encodedReady": 0,
+        "retainedEncodedBytes": 4651704,
+        "encodedBudgetBytes": 67108864,
+        "selectedDeclared": 51,
+        "eagerDeclared": 48,
+        "deferredDeclared": 3,
+        "pending": 0,
+        "pageErrors": [],
+        "evictedPages": 0,
+        "evictedEncodedPages": 0,
+        "failures": []
+      },
+      "camera": {
+        "x": 8.497786458333334,
+        "y": 19.5,
+        "zoom": 1.68
+      }
+    }
+  ],
+  "cleanup": [
+    {
+      "contextClosed": true
+    }
+  ],
+  "handlesStarted": {
+    "runnerPID": 660973,
+    "browserPID": 660987,
+    "port": 42849
+  },
+  "viewport": {
+    "width": 1920,
+    "height": 1080,
+    "dpr": 1
+  },
+  "actor": {
+    "id": 7,
+    "owner": 0,
+    "type": "villager",
+    "kind": "unit",
+    "x": 7.5,
+    "y": 21.5,
+    "hp": 65,
+    "maxHp": 65,
+    "food": 40,
+    "foodMax": 40,
+    "morale": 95,
+    "state": "idle",
+    "dir": 0,
+    "cooldown": 0,
+    "queue": [],
+    "cargo": {
+      "food": 0,
+      "wood": 0,
+      "iron": 0,
+      "units": []
+    },
+    "resuppliedTick": 6,
+    "starving": 0,
+    "order": null
+  },
+  "egress": {
+    "label": "egress-arrival",
+    "tick": 58,
+    "paused": false,
+    "presentationTimeMs": 2892.60000000298,
+    "entity": {
+      "id": 7,
+      "x": 8.18694341128344,
+      "y": 20.126100133136422,
+      "hp": 65,
+      "state": "idle",
+      "dir": 0,
+      "order": null
+    },
+    "draw": {
+      "entityId": 7,
+      "assetId": "villager-idle-D00",
+      "frame": 0,
+      "visualState": "idle",
+      "requestedState": "idle",
+      "requestedDirection": 0,
+      "direction": 0,
+      "presentation": "AUTHORED",
+      "staticIllustrationFallback": false,
+      "render": {
+        "width": 42,
+        "height": 42
+      },
+      "pivot": {
+        "x": 267.0239234449761,
+        "y": 465.45454545454544
+      },
+      "cell": {
+        "width": 512,
+        "height": 512
+      },
+      "tick": 58,
+      "presentationTimeMs": 2892.60000000298,
+      "renderObservation": 169
+    },
+    "pipeline": {
+      "unitActionPolicy": "on-demand",
+      "status": "CANDIDATE",
+      "manifest": "ready",
+      "declared": 51,
+      "ready": 48,
+      "approved": 0,
+      "candidates": 48,
+      "failed": 0,
+      "skipped": 0,
+      "fallbacks": 0,
+      "decodedBudgetBytes": 134217728,
+      "retainedDecodedBytes": 17842432,
+      "reservedDecodedBytes": 0,
+      "uniqueDecodedImages": 38,
+      "encodedReady": 0,
+      "retainedEncodedBytes": 4651704,
+      "encodedBudgetBytes": 67108864,
+      "selectedDeclared": 51,
+      "eagerDeclared": 48,
+      "deferredDeclared": 3,
+      "pending": 0,
+      "pageErrors": [],
+      "evictedPages": 0,
+      "evictedEncodedPages": 0,
+      "failures": []
+    },
+    "camera": {
+      "x": 8.497786458333334,
+      "y": 19.5,
+      "zoom": 1.68
+    }
+  },
+  "firstException": {
+    "atUTC": "2026-10-13T13:51:35.201Z",
+    "message": "AssertionError [ERR_ASSERTION]: Actual D1 segment prerequisite\n+ actual - expected\n\n+ 'ground-segment-building:1'\n- null\n\n    at destination (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/qa/villager-idle528.mjs:45:255)\n    at move (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/qa/villager-idle528.mjs:46:181)\n    at async runScene (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/qa/villager-idle528.mjs:53:17)\n    at async file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/qa/villager-idle528.mjs:58:84"
+  },
+  "handles": {
+    "runnerPID": 660973,
+    "browserPID": 660987,
+    "port": 42849,
+    "browserProcessAlive": false,
+    "browserSignal": null,
+    "browserConnected": false,
+    "browserExit": 0,
+    "serverListening": false,
+    "rooms": 0
+  },
+  "preservation": true,
+  "unresolvedHandles": [],
+  "endedUTC": "2026-10-13T13:51:35.536Z"
+}

@@ -1,0 +1,39 @@
+{
+  "schema": "rds-idle523-illustration-candidate/v1",
+  "taskId": "illustration-idle523",
+  "status": "ONE_CANDIDATE_RETURNED",
+  "scope": "Claimed F2 endpoint only; no selection or motion approval.",
+  "custodyFile": "F2-custody.json",
+  "custodySHA256": "0377f67052acf9ea9a520a4d218446ad33872a55a99e5890794419bb215586de",
+  "calls": [
+    {
+      "orderId": "villager-idle-D1-whole523-THREE",
+      "slotIndex": 2,
+      "claimToken": "ac551f7f-db74-441a-ab07-f99c59fa00b4",
+      "custodyFile": "F2-custody.json",
+      "raw": "F2-raw.png",
+      "rawSHA256": "7e2f4c8c46d3bd61bd680019e020425f3bca0e4cc434559e39645a225fefe502",
+      "callsMade": 1
+    }
+  ],
+  "totals": {
+    "authorizedSlots": 1,
+    "callsReturned": 1,
+    "corrections": 0,
+    "retries": 0,
+    "otherSlotsTouched": false
+  },
+  "provider": {
+    "completion": "image payload returned synchronously",
+    "providerHandle": null,
+    "generatorModel": null,
+    "seed": null,
+    "timestamp": null,
+    "unresolved": "No provider handle or generator metadata was surfaced."
+  },
+  "nextGate": "Independent review of exact original and F2 raw at gameplay scale before root selection; F1/F3 remain pending.",
+  "limitations": [
+    "No full-cycle seam, motion, source-selection, owner, runtime, or release approval is claimed.",
+    "Root owns durable claim settlement."
+  ]
+}

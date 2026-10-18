@@ -1,0 +1,3841 @@
+[
+  {
+    "manifest": "public/assets/art-v1/camp-148-manifest.json",
+    "counts": {
+      "terrain": 4,
+      "prop": 7,
+      "building": 6,
+      "unit": 8,
+      "vfx": 1
+    },
+    "detachedCharacterEntries": [
+      {
+        "id": "infantry-idle-D00",
+        "kind": "unit",
+        "family": "infantry",
+        "source": {
+          "path": "../../../docs/art/units/sources/infantry-neutral-se-refine-01-imagegen-raw.png",
+          "sha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+          "rgbaSha256": "0fdc9a92dab8aa2c420c764ff0808977daec9f4133eda860cdebc18e67463179",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            97,
+            48,
+            1208,
+            1222
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/infantry-idle-D00.webp",
+          "sha256": "de7a865b865ee6ac8b9ff7ba3df07825c01106e1e7ac691cb0924a187f145c51",
+          "rgbaSha256": "2d82cb1b8dca4004fbf424c1ca0f079682ac7df3f6c78ae8bb30fecb38c86e94",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            40,
+            19,
+            409,
+            488
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "cavalry-idle-D00",
+        "kind": "unit",
+        "family": "cavalry",
+        "source": {
+          "path": "../../../docs/art/units/sources/cavalry-neutral-se-imagegen-raw.png",
+          "sha256": "552c4fcdf8ce6bdb802c6faae1bc139416393d53cb30caa95a1d22309b77b091",
+          "rgbaSha256": "3c4a110747c50488d420b70d45f564b93c740a31227a5c278b7af190fe0d3caf",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            33,
+            17,
+            1224,
+            1226
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/cavalry-idle-D00.webp",
+          "sha256": "8571f53f2260947f758e796806a8552b96ba221b004b47d4fcdb2c4c2d549709",
+          "rgbaSha256": "285eb7fc4be508b48bde261013e9520aaaf39ce96726f2adc472f2e90ccda3e0",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            29,
+            7,
+            455,
+            500
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "552c4fcdf8ce6bdb802c6faae1bc139416393d53cb30caa95a1d22309b77b091",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "villager-idle-D00",
+        "kind": "unit",
+        "family": "villager",
+        "source": {
+          "path": "../../../docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+          "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+          "rgbaSha256": "c960d206222a191b903a8cc1a679e82bdce8d8c51df4010a935f444b3cacdb9c",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            65,
+            21,
+            1214,
+            1254
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/villager-idle-D00.webp",
+          "sha256": "17aade7d14ecdc4655b5fd88778ed1a73540a2d2123fe18c9ac7482c1fc9762e",
+          "rgbaSha256": "a55d23f10428ca3a64b32b8baf216d145107f2fda04cfe2d6c584ba35e3270ac",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            40,
+            19,
+            465,
+            505
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "tran-hung-dao-idle-D00",
+        "kind": "unit",
+        "family": "tran_hung_dao",
+        "source": {
+          "path": "../../../docs/art/characters/tran-hung-dao-neutral-D00-screen-ESE/raw.png",
+          "sha256": "21e7d7c160fc27b52f8e9475702914e73a628752a5c2b5a4c290d9c7b466d553",
+          "rgbaSha256": "0e609a27dcfb1998b55df073e7f084f35a7b19123c218376ac2cdced3db0e017",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            0,
+            16,
+            1230,
+            1254
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/tran-hung-dao-idle-D00.webp",
+          "sha256": "f1f6b64cd4241120c821f392937dcef2fdaa02df18de0f234291589cd847b04c",
+          "rgbaSha256": "bd6a709084edeb73a33803ef01fbc40808431314c4b0f89b274c2ab5c3e53a92",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            36,
+            5,
+            494,
+            512
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "21e7d7c160fc27b52f8e9475702914e73a628752a5c2b5a4c290d9c7b466d553",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "villager-walk-south-014",
+        "kind": "unit",
+        "family": "unit.villager",
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/authoring-tools/villager-walk-SOUTH-007/walk/keys/F00-left-contact-01/raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001",
+          "rgbaSha256": "07bc362e869f40e8a3d5ba0b6fabdd7845f6132c0aa4656a17f762ee46609410"
+        },
+        "runtime": {
+          "path": "walk-014/atlas.png",
+          "sha256": "b2bdd86bd02f967bde9b070e5952e97dae257706b5d52730b787e32e9580fc13",
+          "rgbaSha256": "44c8454d0663c6c9823138633596a46af50efe5b42530f2ef1ab210d2c6790eb",
+          "width": 528,
+          "height": 264,
+          "derivation": {
+            "method": "atlas",
+            "filter": "lanczos",
+            "sourceSha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001"
+          }
+        }
+      },
+      {
+        "id": "villager-idle-south-014",
+        "kind": "unit",
+        "family": "unit.villager",
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+          "rgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6"
+        },
+        "runtime": {
+          "path": "walk-014/idle.png",
+          "width": 128,
+          "height": 128,
+          "sha256": "17962707943bb616362271cdde1abbfc17a05b0bad950dc714dd3586954b95ab",
+          "rgbaSha256": "701143131c71470bf01612220cb870f0f47abda08a1089e9407c4505f1ac8721",
+          "derivation": {
+            "method": "resize",
+            "filter": "lanczos",
+            "sourceSha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+          }
+        }
+      },
+      {
+        "id": "villager-gather-wood-south-024",
+        "kind": "unit",
+        "family": "unit.villager",
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-018/F00-call01/raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "e6293fe86eaefc2c9f414241320ab178758cdd52ef09946344364b6a41e41117",
+          "rgbaSha256": "7f00697cb2bb32ee39436b83f2169894e7c78569c61faeb22816d4233f4ae7ac"
+        },
+        "runtime": {
+          "path": "gather-026/atlas.png",
+          "sha256": "5db6455a859a823658e2297544ca739dd466509856f8c2534644a05903cd1092",
+          "rgbaSha256": "3d3808dac11252a5c250c08b6a79f3763fc30472be5badf557a7e79215617a50",
+          "width": 528,
+          "height": 264,
+          "derivation": {
+            "method": "atlas",
+            "filter": "lanczos",
+            "sourceSha256": "e6293fe86eaefc2c9f414241320ab178758cdd52ef09946344364b6a41e41117"
+          }
+        }
+      },
+      {
+        "id": "villager-gather-iron-south-136",
+        "kind": "unit",
+        "family": "unit.villager",
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/villager-gather-iron-SOUTH-131/F00-raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "7912b5c550a8deab4718551d7fb2052fa3148b736afb5c69a7308da81e91ee0d",
+          "rgbaSha256": "691739c9d6c0b997d701d7bce811d21c1bb4978442581650a8629a07c5bb8a31"
+        },
+        "runtime": {
+          "path": "iron-137/atlas.png",
+          "sha256": "0f53648dd459d91a93b35dbf113c12fe753017b0971ec0ed8a55ad7647aab7cc",
+          "rgbaSha256": "7962e78ebe5afc46d4a53d4d4d4d52641b6299f5caca944f4344cc4a0c406adf",
+          "width": 528,
+          "height": 264,
+          "derivation": {
+            "method": "atlas",
+            "filter": "lanczos",
+            "sourceSha256": "7912b5c550a8deab4718551d7fb2052fa3148b736afb5c69a7308da81e91ee0d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "manifest": "public/assets/art-v1/food-099-manifest.json",
+    "counts": {
+      "terrain": 4,
+      "prop": 3,
+      "building": 2,
+      "unit": 8,
+      "vfx": 1
+    },
+    "detachedCharacterEntries": [
+      {
+        "id": "infantry-idle-D00",
+        "kind": "unit",
+        "family": "infantry",
+        "source": {
+          "path": "../../../docs/art/units/sources/infantry-neutral-se-refine-01-imagegen-raw.png",
+          "sha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+          "rgbaSha256": "0fdc9a92dab8aa2c420c764ff0808977daec9f4133eda860cdebc18e67463179",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            97,
+            48,
+            1208,
+            1222
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/infantry-idle-D00.webp",
+          "sha256": "de7a865b865ee6ac8b9ff7ba3df07825c01106e1e7ac691cb0924a187f145c51",
+          "rgbaSha256": "2d82cb1b8dca4004fbf424c1ca0f079682ac7df3f6c78ae8bb30fecb38c86e94",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            40,
+            19,
+            409,
+            488
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "cavalry-idle-D00",
+        "kind": "unit",
+        "family": "cavalry",
+        "source": {
+          "path": "../../../docs/art/units/sources/cavalry-neutral-se-imagegen-raw.png",
+          "sha256": "552c4fcdf8ce6bdb802c6faae1bc139416393d53cb30caa95a1d22309b77b091",
+          "rgbaSha256": "3c4a110747c50488d420b70d45f564b93c740a31227a5c278b7af190fe0d3caf",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            33,
+            17,
+            1224,
+            1226
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/cavalry-idle-D00.webp",
+          "sha256": "8571f53f2260947f758e796806a8552b96ba221b004b47d4fcdb2c4c2d549709",
+          "rgbaSha256": "285eb7fc4be508b48bde261013e9520aaaf39ce96726f2adc472f2e90ccda3e0",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            29,
+            7,
+            455,
+            500
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "552c4fcdf8ce6bdb802c6faae1bc139416393d53cb30caa95a1d22309b77b091",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "villager-idle-D00",
+        "kind": "unit",
+        "family": "villager",
+        "source": {
+          "path": "../../../docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+          "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+          "rgbaSha256": "c960d206222a191b903a8cc1a679e82bdce8d8c51df4010a935f444b3cacdb9c",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            65,
+            21,
+            1214,
+            1254
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/villager-idle-D00.webp",
+          "sha256": "17aade7d14ecdc4655b5fd88778ed1a73540a2d2123fe18c9ac7482c1fc9762e",
+          "rgbaSha256": "a55d23f10428ca3a64b32b8baf216d145107f2fda04cfe2d6c584ba35e3270ac",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            40,
+            19,
+            465,
+            505
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "tran-hung-dao-idle-D00",
+        "kind": "unit",
+        "family": "tran_hung_dao",
+        "source": {
+          "path": "../../../docs/art/characters/tran-hung-dao-neutral-D00-screen-ESE/raw.png",
+          "sha256": "21e7d7c160fc27b52f8e9475702914e73a628752a5c2b5a4c290d9c7b466d553",
+          "rgbaSha256": "0e609a27dcfb1998b55df073e7f084f35a7b19123c218376ac2cdced3db0e017",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            0,
+            16,
+            1230,
+            1254
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/tran-hung-dao-idle-D00.webp",
+          "sha256": "f1f6b64cd4241120c821f392937dcef2fdaa02df18de0f234291589cd847b04c",
+          "rgbaSha256": "bd6a709084edeb73a33803ef01fbc40808431314c4b0f89b274c2ab5c3e53a92",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            36,
+            5,
+            494,
+            512
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "21e7d7c160fc27b52f8e9475702914e73a628752a5c2b5a4c290d9c7b466d553",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "villager-walk-south-014",
+        "kind": "unit",
+        "family": "unit.villager",
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/authoring-tools/villager-walk-SOUTH-007/walk/keys/F00-left-contact-01/raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001",
+          "rgbaSha256": "07bc362e869f40e8a3d5ba0b6fabdd7845f6132c0aa4656a17f762ee46609410"
+        },
+        "runtime": {
+          "path": "walk-014/atlas.png",
+          "sha256": "b2bdd86bd02f967bde9b070e5952e97dae257706b5d52730b787e32e9580fc13",
+          "rgbaSha256": "44c8454d0663c6c9823138633596a46af50efe5b42530f2ef1ab210d2c6790eb",
+          "width": 528,
+          "height": 264,
+          "derivation": {
+            "method": "atlas",
+            "filter": "lanczos",
+            "sourceSha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001"
+          }
+        }
+      },
+      {
+        "id": "villager-idle-south-014",
+        "kind": "unit",
+        "family": "unit.villager",
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+          "rgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6"
+        },
+        "runtime": {
+          "path": "walk-014/idle.png",
+          "width": 128,
+          "height": 128,
+          "sha256": "17962707943bb616362271cdde1abbfc17a05b0bad950dc714dd3586954b95ab",
+          "rgbaSha256": "701143131c71470bf01612220cb870f0f47abda08a1089e9407c4505f1ac8721",
+          "derivation": {
+            "method": "resize",
+            "filter": "lanczos",
+            "sourceSha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+          }
+        }
+      },
+      {
+        "id": "villager-gather-wood-south-024",
+        "kind": "unit",
+        "family": "unit.villager",
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-018/F00-call01/raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "e6293fe86eaefc2c9f414241320ab178758cdd52ef09946344364b6a41e41117",
+          "rgbaSha256": "7f00697cb2bb32ee39436b83f2169894e7c78569c61faeb22816d4233f4ae7ac"
+        },
+        "runtime": {
+          "path": "gather-026/atlas.png",
+          "sha256": "5db6455a859a823658e2297544ca739dd466509856f8c2534644a05903cd1092",
+          "rgbaSha256": "3d3808dac11252a5c250c08b6a79f3763fc30472be5badf557a7e79215617a50",
+          "width": 528,
+          "height": 264,
+          "derivation": {
+            "method": "atlas",
+            "filter": "lanczos",
+            "sourceSha256": "e6293fe86eaefc2c9f414241320ab178758cdd52ef09946344364b6a41e41117"
+          }
+        }
+      },
+      {
+        "id": "villager-gather-food-south-096",
+        "kind": "unit",
+        "family": "unit.villager",
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-food-SOUTH-096/F00-raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "fef6e2aed186dc0cc72f0e927d1c983ee92c9ffcacb7e9972b7dfa2ec40de907",
+          "rgbaSha256": "1d3dfd7fc438d93840c2bdddbd1d64fdecef6919b765e1c48dbbbfe43d1d43fd"
+        },
+        "runtime": {
+          "path": "food-099/atlas.png",
+          "sha256": "66d641fee006cff56b42e88619bbf9c87900224faa104ac9054a9dd3aef0b73a",
+          "rgbaSha256": "358fd14187e06bb4bc6f3cd1951216ddde9bd315822df14c1825086ea13b6e36",
+          "width": 528,
+          "height": 264,
+          "derivation": {
+            "method": "atlas",
+            "filter": "lanczos",
+            "sourceSha256": "fef6e2aed186dc0cc72f0e927d1c983ee92c9ffcacb7e9972b7dfa2ec40de907"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "manifest": "public/assets/art-v1/fort-202-manifest.json",
+    "counts": {
+      "terrain": 5,
+      "prop": 7,
+      "building": 24,
+      "unit": 14,
+      "vfx": 1
+    },
+    "detachedCharacterEntries": [
+      {
+        "id": "infantry-idle-D00",
+        "kind": "unit",
+        "family": "infantry",
+        "source": {
+          "path": "../../../docs/art/units/sources/infantry-neutral-se-refine-01-imagegen-raw.png",
+          "sha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+          "rgbaSha256": "0fdc9a92dab8aa2c420c764ff0808977daec9f4133eda860cdebc18e67463179",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            97,
+            48,
+            1208,
+            1222
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/infantry-idle-D00.webp",
+          "sha256": "de7a865b865ee6ac8b9ff7ba3df07825c01106e1e7ac691cb0924a187f145c51",
+          "rgbaSha256": "2d82cb1b8dca4004fbf424c1ca0f079682ac7df3f6c78ae8bb30fecb38c86e94",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            40,
+            19,
+            409,
+            488
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "cavalry-idle-D00",
+        "kind": "unit",
+        "family": "cavalry",
+        "source": {
+          "path": "../../../docs/art/units/sources/cavalry-neutral-se-imagegen-raw.png",
+          "sha256": "552c4fcdf8ce6bdb802c6faae1bc139416393d53cb30caa95a1d22309b77b091",
+          "rgbaSha256": "3c4a110747c50488d420b70d45f564b93c740a31227a5c278b7af190fe0d3caf",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            33,
+            17,
+            1224,
+            1226
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/cavalry-idle-D00.webp",
+          "sha256": "8571f53f2260947f758e796806a8552b96ba221b004b47d4fcdb2c4c2d549709",
+          "rgbaSha256": "285eb7fc4be508b48bde261013e9520aaaf39ce96726f2adc472f2e90ccda3e0",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            29,
+            7,
+            455,
+            500
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "552c4fcdf8ce6bdb802c6faae1bc139416393d53cb30caa95a1d22309b77b091",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "villager-idle-D00",
+        "kind": "unit",
+        "family": "villager",
+        "source": {
+          "path": "../../../docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+          "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+          "rgbaSha256": "c960d206222a191b903a8cc1a679e82bdce8d8c51df4010a935f444b3cacdb9c",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            65,
+            21,
+            1214,
+            1254
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/villager-idle-D00.webp",
+          "sha256": "17aade7d14ecdc4655b5fd88778ed1a73540a2d2123fe18c9ac7482c1fc9762e",
+          "rgbaSha256": "a55d23f10428ca3a64b32b8baf216d145107f2fda04cfe2d6c584ba35e3270ac",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            40,
+            19,
+            465,
+            505
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "tran-hung-dao-idle-D00",
+        "kind": "unit",
+        "family": "tran_hung_dao",
+        "source": {
+          "path": "../../../docs/art/characters/tran-hung-dao-neutral-D00-screen-ESE/raw.png",
+          "sha256": "21e7d7c160fc27b52f8e9475702914e73a628752a5c2b5a4c290d9c7b466d553",
+          "rgbaSha256": "0e609a27dcfb1998b55df073e7f084f35a7b19123c218376ac2cdced3db0e017",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            0,
+            16,
+            1230,
+            1254
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/tran-hung-dao-idle-D00.webp",
+          "sha256": "f1f6b64cd4241120c821f392937dcef2fdaa02df18de0f234291589cd847b04c",
+          "rgbaSha256": "bd6a709084edeb73a33803ef01fbc40808431314c4b0f89b274c2ab5c3e53a92",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            36,
+            5,
+            494,
+            512
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "21e7d7c160fc27b52f8e9475702914e73a628752a5c2b5a4c290d9c7b466d553",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "villager-walk-south-014",
+        "kind": "unit",
+        "family": "unit.villager",
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/authoring-tools/villager-walk-SOUTH-007/walk/keys/F00-left-contact-01/raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001",
+          "rgbaSha256": "07bc362e869f40e8a3d5ba0b6fabdd7845f6132c0aa4656a17f762ee46609410"
+        },
+        "runtime": {
+          "path": "walk-014/atlas.png",
+          "sha256": "b2bdd86bd02f967bde9b070e5952e97dae257706b5d52730b787e32e9580fc13",
+          "rgbaSha256": "44c8454d0663c6c9823138633596a46af50efe5b42530f2ef1ab210d2c6790eb",
+          "width": 528,
+          "height": 264,
+          "derivation": {
+            "method": "atlas",
+            "filter": "lanczos",
+            "sourceSha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001"
+          }
+        }
+      },
+      {
+        "id": "villager-idle-south-014",
+        "kind": "unit",
+        "family": "unit.villager",
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+          "rgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6"
+        },
+        "runtime": {
+          "path": "walk-014/idle.png",
+          "width": 128,
+          "height": 128,
+          "sha256": "17962707943bb616362271cdde1abbfc17a05b0bad950dc714dd3586954b95ab",
+          "rgbaSha256": "701143131c71470bf01612220cb870f0f47abda08a1089e9407c4505f1ac8721",
+          "derivation": {
+            "method": "resize",
+            "filter": "lanczos",
+            "sourceSha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+          }
+        }
+      },
+      {
+        "id": "villager-gather-wood-south-024",
+        "kind": "unit",
+        "family": "unit.villager",
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-018/F00-call01/raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "e6293fe86eaefc2c9f414241320ab178758cdd52ef09946344364b6a41e41117",
+          "rgbaSha256": "7f00697cb2bb32ee39436b83f2169894e7c78569c61faeb22816d4233f4ae7ac"
+        },
+        "runtime": {
+          "path": "gather-026/atlas.png",
+          "sha256": "5db6455a859a823658e2297544ca739dd466509856f8c2534644a05903cd1092",
+          "rgbaSha256": "3d3808dac11252a5c250c08b6a79f3763fc30472be5badf557a7e79215617a50",
+          "width": 528,
+          "height": 264,
+          "derivation": {
+            "method": "atlas",
+            "filter": "lanczos",
+            "sourceSha256": "e6293fe86eaefc2c9f414241320ab178758cdd52ef09946344364b6a41e41117"
+          }
+        }
+      },
+      {
+        "id": "villager-gather-iron-south-136",
+        "kind": "unit",
+        "family": "unit.villager",
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/villager-gather-iron-SOUTH-131/F00-raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "7912b5c550a8deab4718551d7fb2052fa3148b736afb5c69a7308da81e91ee0d",
+          "rgbaSha256": "691739c9d6c0b997d701d7bce811d21c1bb4978442581650a8629a07c5bb8a31"
+        },
+        "runtime": {
+          "path": "iron-137/atlas.png",
+          "sha256": "0f53648dd459d91a93b35dbf113c12fe753017b0971ec0ed8a55ad7647aab7cc",
+          "rgbaSha256": "7962e78ebe5afc46d4a53d4d4d4d52641b6299f5caca944f4344cc4a0c406adf",
+          "width": 528,
+          "height": 264,
+          "derivation": {
+            "method": "atlas",
+            "filter": "lanczos",
+            "sourceSha256": "7912b5c550a8deab4718551d7fb2052fa3148b736afb5c69a7308da81e91ee0d"
+          }
+        }
+      },
+      {
+        "id": "tran-nhan-tong-idle-396-D0",
+        "kind": "unit",
+        "family": "unit.tran_nhan_tong",
+        "source": {
+          "path": "docs/art/characters/tran-nhan-tong-idle-396/working256.png",
+          "sha256": "0f54a83aada804661ef826183d417b1ba027eff4d86ca785ab2845f69165f7e6",
+          "rgbaSha256": "4c5a991438ebffb94d0b8786bcba5944a22d44ce39fe0523ba5de676c4b2ddbf",
+          "width": 256,
+          "height": 256
+        },
+        "runtime": {
+          "path": "initial-actors-403/king396.png",
+          "sha256": "c9f8e63899ffd7481b5bcae463741b369b52ced789139235c77cf58f6948c833",
+          "rgbaSha256": "e756e2960c11c0ecd6a13a33a09c702a2369922d4d5516248cf706fa82b38fbc",
+          "width": 128,
+          "height": 128,
+          "derivation": {
+            "method": "resize",
+            "filter": "lanczos",
+            "sourceSha256": "0f54a83aada804661ef826183d417b1ba027eff4d86ca785ab2845f69165f7e6"
+          }
+        }
+      },
+      {
+        "id": "spearman-idle-d0-400",
+        "kind": "unit",
+        "family": "unit.spearman",
+        "source": {
+          "path": "docs/art/units/spearman-margin-400/spearman-idle-d0-256.png",
+          "sha256": "e82c30d4613b8ffaee04d639739ecb262d203b27d151d785e9204e16a0ac6c6c",
+          "rgbaSha256": "56651603cefcca86421784405c05b017b5f99b7192f7fa0022ac6b37454b23be",
+          "width": 256,
+          "height": 256
+        },
+        "runtime": {
+          "path": "initial-actors-403/spearman400.png",
+          "sha256": "323e16a80b8f503c1f9dcd63010b7c0614ac0ae7462dc498a12e332380dd0ac9",
+          "rgbaSha256": "3001e7882bc45753fab4c1dcd69a0e5f9d089cc41fece43a5601a2f0a0d1e483",
+          "width": 128,
+          "height": 128,
+          "derivation": {
+            "method": "resize",
+            "filter": "lanczos",
+            "sourceSha256": "e82c30d4613b8ffaee04d639739ecb262d203b27d151d785e9204e16a0ac6c6c"
+          }
+        }
+      },
+      {
+        "id": "supply-wagon-horse-idle-d0-415",
+        "kind": "unit",
+        "family": "unit.wagon",
+        "source": {
+          "path": "docs/art/units/supply-wagon-horse-415/working-256.png",
+          "sha256": "39a2aa11091214de4ad1236d3be65f77b1e5668d2e9054b19c0613770003436c",
+          "rgbaSha256": "f152f2eb87d6011d56fcacb2b03b6305a27dd9c9c7ed802f36fc42bc85b88200",
+          "width": 256,
+          "height": 256
+        },
+        "runtime": {
+          "path": "wagon-horse-420/idle.png",
+          "sha256": "d43507d1d590e0f0c5f2461d8a70d858bb600e8233902e08a1dfbe9b3748838a",
+          "rgbaSha256": "8778e9ebc985bfd1ea27ac5af5b48a26a4d05a4ce83cda77d25e10c8175ff603",
+          "width": 128,
+          "height": 128,
+          "derivation": {
+            "method": "resize",
+            "filter": "lanczos",
+            "sourceSha256": "39a2aa11091214de4ad1236d3be65f77b1e5668d2e9054b19c0613770003436c"
+          }
+        }
+      },
+      {
+        "id": "unit-firearm-idle-d0-408",
+        "kind": "unit",
+        "family": "unit.firearm",
+        "source": {
+          "path": "docs/art/units/firearm-idle-408/firearm-idle-d0-256.png",
+          "sha256": "d5c899c901ce7bb8c31adfabe31472dc32ffe5fbf4904a212cba1236731571e8",
+          "rgbaSha256": "4924cee1e89f22fa707e5377444f98e51138def48f44112aa38828360734e7c3",
+          "width": 256,
+          "height": 256
+        },
+        "runtime": {
+          "path": "firepower-410/firearm408.png",
+          "sha256": "748b340589830bba77ac51ac22fb077e517acff9889ff02060190cb85218d0a6",
+          "rgbaSha256": "798bced5d625e7fb134950b26abd3ef2c8f93c0e807b1f293f5875240162796c",
+          "width": 128,
+          "height": 128,
+          "derivation": {
+            "method": "resize",
+            "filter": "lanczos",
+            "sourceSha256": "d5c899c901ce7bb8c31adfabe31472dc32ffe5fbf4904a212cba1236731571e8"
+          }
+        }
+      },
+      {
+        "id": "artillery-idle-d0-409",
+        "kind": "unit",
+        "family": "unit.artillery",
+        "source": {
+          "path": "docs/art/units/artillery-idle-409/working-256.png",
+          "sha256": "98fbeb9b2a92ec276beac293ec62c5562f07bdecb96d8e4f293753b4c18fba9d",
+          "rgbaSha256": "628b93a4d30501424d83d0960fb7da1fabf4e3d9e2fd3b540a0f5969eca6b281",
+          "width": 256,
+          "height": 256
+        },
+        "runtime": {
+          "path": "firepower-410/artillery409.png",
+          "sha256": "8703d237a0de79e0da69edbca52b01880ab369616f4d525eace7cabd4f2812b6",
+          "rgbaSha256": "4299787ef991b9630b9f9af27da6c28e3ded87affdf7c0d5233e2901eda7560e",
+          "width": 128,
+          "height": 128,
+          "derivation": {
+            "method": "resize",
+            "filter": "lanczos",
+            "sourceSha256": "98fbeb9b2a92ec276beac293ec62c5562f07bdecb96d8e4f293753b4c18fba9d"
+          }
+        }
+      },
+      {
+        "id": "transport-idle-d0-447",
+        "kind": "unit",
+        "family": "unit.transport",
+        "source": {
+          "path": "docs/art/units/transport-identity-447/working-256.png",
+          "sha256": "88be0e796dddf70c16e29501ea13ea7fc093bede0c67e05eba67394a7e2c6b0b",
+          "rgbaSha256": "1682a54cb88c0ab5b204ad1a604423c9d00764528b14bfbe810ad96f191320be",
+          "width": 256,
+          "height": 256
+        },
+        "runtime": {
+          "path": "transport-447/idle.png",
+          "sha256": "d3cbc022df157c74d9d6cad5051cdc2836fa1b68bac3a65764b443e4d2755eba",
+          "rgbaSha256": "5a97c4e8c84a5e43192406a3da9498b83fc7921fe8c2105f39c9177fb2dd7531",
+          "width": 128,
+          "height": 128,
+          "derivation": {
+            "method": "resize",
+            "filter": "lanczos",
+            "sourceSha256": "88be0e796dddf70c16e29501ea13ea7fc093bede0c67e05eba67394a7e2c6b0b"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "manifest": "public/assets/art-v1/gather-026-manifest.json",
+    "counts": {
+      "terrain": 4,
+      "prop": 3,
+      "building": 2,
+      "unit": 7,
+      "vfx": 1
+    },
+    "detachedCharacterEntries": [
+      {
+        "id": "infantry-idle-D00",
+        "kind": "unit",
+        "family": "infantry",
+        "source": {
+          "path": "../../../docs/art/units/sources/infantry-neutral-se-refine-01-imagegen-raw.png",
+          "sha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+          "rgbaSha256": "0fdc9a92dab8aa2c420c764ff0808977daec9f4133eda860cdebc18e67463179",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            97,
+            48,
+            1208,
+            1222
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/infantry-idle-D00.webp",
+          "sha256": "de7a865b865ee6ac8b9ff7ba3df07825c01106e1e7ac691cb0924a187f145c51",
+          "rgbaSha256": "2d82cb1b8dca4004fbf424c1ca0f079682ac7df3f6c78ae8bb30fecb38c86e94",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            40,
+            19,
+            409,
+            488
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "cavalry-idle-D00",
+        "kind": "unit",
+        "family": "cavalry",
+        "source": {
+          "path": "../../../docs/art/units/sources/cavalry-neutral-se-imagegen-raw.png",
+          "sha256": "552c4fcdf8ce6bdb802c6faae1bc139416393d53cb30caa95a1d22309b77b091",
+          "rgbaSha256": "3c4a110747c50488d420b70d45f564b93c740a31227a5c278b7af190fe0d3caf",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            33,
+            17,
+            1224,
+            1226
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/cavalry-idle-D00.webp",
+          "sha256": "8571f53f2260947f758e796806a8552b96ba221b004b47d4fcdb2c4c2d549709",
+          "rgbaSha256": "285eb7fc4be508b48bde261013e9520aaaf39ce96726f2adc472f2e90ccda3e0",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            29,
+            7,
+            455,
+            500
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "552c4fcdf8ce6bdb802c6faae1bc139416393d53cb30caa95a1d22309b77b091",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "villager-idle-D00",
+        "kind": "unit",
+        "family": "villager",
+        "source": {
+          "path": "../../../docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+          "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+          "rgbaSha256": "c960d206222a191b903a8cc1a679e82bdce8d8c51df4010a935f444b3cacdb9c",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            65,
+            21,
+            1214,
+            1254
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/villager-idle-D00.webp",
+          "sha256": "17aade7d14ecdc4655b5fd88778ed1a73540a2d2123fe18c9ac7482c1fc9762e",
+          "rgbaSha256": "a55d23f10428ca3a64b32b8baf216d145107f2fda04cfe2d6c584ba35e3270ac",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            40,
+            19,
+            465,
+            505
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "tran-hung-dao-idle-D00",
+        "kind": "unit",
+        "family": "tran_hung_dao",
+        "source": {
+          "path": "../../../docs/art/characters/tran-hung-dao-neutral-D00-screen-ESE/raw.png",
+          "sha256": "21e7d7c160fc27b52f8e9475702914e73a628752a5c2b5a4c290d9c7b466d553",
+          "rgbaSha256": "0e609a27dcfb1998b55df073e7f084f35a7b19123c218376ac2cdced3db0e017",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            0,
+            16,
+            1230,
+            1254
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/tran-hung-dao-idle-D00.webp",
+          "sha256": "f1f6b64cd4241120c821f392937dcef2fdaa02df18de0f234291589cd847b04c",
+          "rgbaSha256": "bd6a709084edeb73a33803ef01fbc40808431314c4b0f89b274c2ab5c3e53a92",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            36,
+            5,
+            494,
+            512
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "21e7d7c160fc27b52f8e9475702914e73a628752a5c2b5a4c290d9c7b466d553",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "villager-walk-south-014",
+        "kind": "unit",
+        "family": "unit.villager",
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/authoring-tools/villager-walk-SOUTH-007/walk/keys/F00-left-contact-01/raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001",
+          "rgbaSha256": "07bc362e869f40e8a3d5ba0b6fabdd7845f6132c0aa4656a17f762ee46609410"
+        },
+        "runtime": {
+          "path": "walk-014/atlas.png",
+          "sha256": "b2bdd86bd02f967bde9b070e5952e97dae257706b5d52730b787e32e9580fc13",
+          "rgbaSha256": "44c8454d0663c6c9823138633596a46af50efe5b42530f2ef1ab210d2c6790eb",
+          "width": 528,
+          "height": 264,
+          "derivation": {
+            "method": "atlas",
+            "filter": "lanczos",
+            "sourceSha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001"
+          }
+        }
+      },
+      {
+        "id": "villager-idle-south-014",
+        "kind": "unit",
+        "family": "unit.villager",
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+          "rgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6"
+        },
+        "runtime": {
+          "path": "walk-014/idle.png",
+          "width": 128,
+          "height": 128,
+          "sha256": "17962707943bb616362271cdde1abbfc17a05b0bad950dc714dd3586954b95ab",
+          "rgbaSha256": "701143131c71470bf01612220cb870f0f47abda08a1089e9407c4505f1ac8721",
+          "derivation": {
+            "method": "resize",
+            "filter": "lanczos",
+            "sourceSha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+          }
+        }
+      },
+      {
+        "id": "villager-gather-wood-south-024",
+        "kind": "unit",
+        "family": "unit.villager",
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-018/F00-call01/raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "e6293fe86eaefc2c9f414241320ab178758cdd52ef09946344364b6a41e41117",
+          "rgbaSha256": "7f00697cb2bb32ee39436b83f2169894e7c78569c61faeb22816d4233f4ae7ac"
+        },
+        "runtime": {
+          "path": "gather-026/atlas.png",
+          "sha256": "5db6455a859a823658e2297544ca739dd466509856f8c2534644a05903cd1092",
+          "rgbaSha256": "3d3808dac11252a5c250c08b6a79f3763fc30472be5badf557a7e79215617a50",
+          "width": 528,
+          "height": 264,
+          "derivation": {
+            "method": "atlas",
+            "filter": "lanczos",
+            "sourceSha256": "e6293fe86eaefc2c9f414241320ab178758cdd52ef09946344364b6a41e41117"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "manifest": "public/assets/art-v1/iron-137-manifest.json",
+    "counts": {
+      "terrain": 4,
+      "prop": 7,
+      "building": 4,
+      "unit": 8,
+      "vfx": 1
+    },
+    "detachedCharacterEntries": [
+      {
+        "id": "infantry-idle-D00",
+        "kind": "unit",
+        "family": "infantry",
+        "source": {
+          "path": "../../../docs/art/units/sources/infantry-neutral-se-refine-01-imagegen-raw.png",
+          "sha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+          "rgbaSha256": "0fdc9a92dab8aa2c420c764ff0808977daec9f4133eda860cdebc18e67463179",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            97,
+            48,
+            1208,
+            1222
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/infantry-idle-D00.webp",
+          "sha256": "de7a865b865ee6ac8b9ff7ba3df07825c01106e1e7ac691cb0924a187f145c51",
+          "rgbaSha256": "2d82cb1b8dca4004fbf424c1ca0f079682ac7df3f6c78ae8bb30fecb38c86e94",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            40,
+            19,
+            409,
+            488
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "cavalry-idle-D00",
+        "kind": "unit",
+        "family": "cavalry",
+        "source": {
+          "path": "../../../docs/art/units/sources/cavalry-neutral-se-imagegen-raw.png",
+          "sha256": "552c4fcdf8ce6bdb802c6faae1bc139416393d53cb30caa95a1d22309b77b091",
+          "rgbaSha256": "3c4a110747c50488d420b70d45f564b93c740a31227a5c278b7af190fe0d3caf",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            33,
+            17,
+            1224,
+            1226
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/cavalry-idle-D00.webp",
+          "sha256": "8571f53f2260947f758e796806a8552b96ba221b004b47d4fcdb2c4c2d549709",
+          "rgbaSha256": "285eb7fc4be508b48bde261013e9520aaaf39ce96726f2adc472f2e90ccda3e0",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            29,
+            7,
+            455,
+            500
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "552c4fcdf8ce6bdb802c6faae1bc139416393d53cb30caa95a1d22309b77b091",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "villager-idle-D00",
+        "kind": "unit",
+        "family": "villager",
+        "source": {
+          "path": "../../../docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+          "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+          "rgbaSha256": "c960d206222a191b903a8cc1a679e82bdce8d8c51df4010a935f444b3cacdb9c",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            65,
+            21,
+            1214,
+            1254
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/villager-idle-D00.webp",
+          "sha256": "17aade7d14ecdc4655b5fd88778ed1a73540a2d2123fe18c9ac7482c1fc9762e",
+          "rgbaSha256": "a55d23f10428ca3a64b32b8baf216d145107f2fda04cfe2d6c584ba35e3270ac",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            40,
+            19,
+            465,
+            505
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "tran-hung-dao-idle-D00",
+        "kind": "unit",
+        "family": "tran_hung_dao",
+        "source": {
+          "path": "../../../docs/art/characters/tran-hung-dao-neutral-D00-screen-ESE/raw.png",
+          "sha256": "21e7d7c160fc27b52f8e9475702914e73a628752a5c2b5a4c290d9c7b466d553",
+          "rgbaSha256": "0e609a27dcfb1998b55df073e7f084f35a7b19123c218376ac2cdced3db0e017",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            0,
+            16,
+            1230,
+            1254
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/tran-hung-dao-idle-D00.webp",
+          "sha256": "f1f6b64cd4241120c821f392937dcef2fdaa02df18de0f234291589cd847b04c",
+          "rgbaSha256": "bd6a709084edeb73a33803ef01fbc40808431314c4b0f89b274c2ab5c3e53a92",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            36,
+            5,
+            494,
+            512
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "21e7d7c160fc27b52f8e9475702914e73a628752a5c2b5a4c290d9c7b466d553",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "villager-walk-south-014",
+        "kind": "unit",
+        "family": "unit.villager",
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/authoring-tools/villager-walk-SOUTH-007/walk/keys/F00-left-contact-01/raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001",
+          "rgbaSha256": "07bc362e869f40e8a3d5ba0b6fabdd7845f6132c0aa4656a17f762ee46609410"
+        },
+        "runtime": {
+          "path": "walk-014/atlas.png",
+          "sha256": "b2bdd86bd02f967bde9b070e5952e97dae257706b5d52730b787e32e9580fc13",
+          "rgbaSha256": "44c8454d0663c6c9823138633596a46af50efe5b42530f2ef1ab210d2c6790eb",
+          "width": 528,
+          "height": 264,
+          "derivation": {
+            "method": "atlas",
+            "filter": "lanczos",
+            "sourceSha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001"
+          }
+        }
+      },
+      {
+        "id": "villager-idle-south-014",
+        "kind": "unit",
+        "family": "unit.villager",
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+          "rgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6"
+        },
+        "runtime": {
+          "path": "walk-014/idle.png",
+          "width": 128,
+          "height": 128,
+          "sha256": "17962707943bb616362271cdde1abbfc17a05b0bad950dc714dd3586954b95ab",
+          "rgbaSha256": "701143131c71470bf01612220cb870f0f47abda08a1089e9407c4505f1ac8721",
+          "derivation": {
+            "method": "resize",
+            "filter": "lanczos",
+            "sourceSha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+          }
+        }
+      },
+      {
+        "id": "villager-gather-wood-south-024",
+        "kind": "unit",
+        "family": "unit.villager",
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-018/F00-call01/raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "e6293fe86eaefc2c9f414241320ab178758cdd52ef09946344364b6a41e41117",
+          "rgbaSha256": "7f00697cb2bb32ee39436b83f2169894e7c78569c61faeb22816d4233f4ae7ac"
+        },
+        "runtime": {
+          "path": "gather-026/atlas.png",
+          "sha256": "5db6455a859a823658e2297544ca739dd466509856f8c2534644a05903cd1092",
+          "rgbaSha256": "3d3808dac11252a5c250c08b6a79f3763fc30472be5badf557a7e79215617a50",
+          "width": 528,
+          "height": 264,
+          "derivation": {
+            "method": "atlas",
+            "filter": "lanczos",
+            "sourceSha256": "e6293fe86eaefc2c9f414241320ab178758cdd52ef09946344364b6a41e41117"
+          }
+        }
+      },
+      {
+        "id": "villager-gather-iron-south-136",
+        "kind": "unit",
+        "family": "unit.villager",
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/villager-gather-iron-SOUTH-131/F00-raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "7912b5c550a8deab4718551d7fb2052fa3148b736afb5c69a7308da81e91ee0d",
+          "rgbaSha256": "691739c9d6c0b997d701d7bce811d21c1bb4978442581650a8629a07c5bb8a31"
+        },
+        "runtime": {
+          "path": "iron-137/atlas.png",
+          "sha256": "0f53648dd459d91a93b35dbf113c12fe753017b0971ec0ed8a55ad7647aab7cc",
+          "rgbaSha256": "7962e78ebe5afc46d4a53d4d4d4d52641b6299f5caca944f4344cc4a0c406adf",
+          "width": 528,
+          "height": 264,
+          "derivation": {
+            "method": "atlas",
+            "filter": "lanczos",
+            "sourceSha256": "7912b5c550a8deab4718551d7fb2052fa3148b736afb5c69a7308da81e91ee0d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "manifest": "public/assets/art-v1/manifest.json",
+    "counts": {
+      "terrain": 4,
+      "prop": 3,
+      "building": 2,
+      "unit": 4,
+      "vfx": 1
+    },
+    "detachedCharacterEntries": [
+      {
+        "id": "infantry-idle-D00",
+        "kind": "unit",
+        "family": "infantry",
+        "source": {
+          "path": "../../../docs/art/units/sources/infantry-neutral-se-refine-01-imagegen-raw.png",
+          "sha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+          "rgbaSha256": "0fdc9a92dab8aa2c420c764ff0808977daec9f4133eda860cdebc18e67463179",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            97,
+            48,
+            1208,
+            1222
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/infantry-idle-D00.webp",
+          "sha256": "de7a865b865ee6ac8b9ff7ba3df07825c01106e1e7ac691cb0924a187f145c51",
+          "rgbaSha256": "2d82cb1b8dca4004fbf424c1ca0f079682ac7df3f6c78ae8bb30fecb38c86e94",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            40,
+            19,
+            409,
+            488
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "cavalry-idle-D00",
+        "kind": "unit",
+        "family": "cavalry",
+        "source": {
+          "path": "../../../docs/art/units/sources/cavalry-neutral-se-imagegen-raw.png",
+          "sha256": "552c4fcdf8ce6bdb802c6faae1bc139416393d53cb30caa95a1d22309b77b091",
+          "rgbaSha256": "3c4a110747c50488d420b70d45f564b93c740a31227a5c278b7af190fe0d3caf",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            33,
+            17,
+            1224,
+            1226
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/cavalry-idle-D00.webp",
+          "sha256": "8571f53f2260947f758e796806a8552b96ba221b004b47d4fcdb2c4c2d549709",
+          "rgbaSha256": "285eb7fc4be508b48bde261013e9520aaaf39ce96726f2adc472f2e90ccda3e0",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            29,
+            7,
+            455,
+            500
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "552c4fcdf8ce6bdb802c6faae1bc139416393d53cb30caa95a1d22309b77b091",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "villager-idle-D00",
+        "kind": "unit",
+        "family": "villager",
+        "source": {
+          "path": "../../../docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+          "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+          "rgbaSha256": "c960d206222a191b903a8cc1a679e82bdce8d8c51df4010a935f444b3cacdb9c",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            65,
+            21,
+            1214,
+            1254
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/villager-idle-D00.webp",
+          "sha256": "17aade7d14ecdc4655b5fd88778ed1a73540a2d2123fe18c9ac7482c1fc9762e",
+          "rgbaSha256": "a55d23f10428ca3a64b32b8baf216d145107f2fda04cfe2d6c584ba35e3270ac",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            40,
+            19,
+            465,
+            505
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "tran-hung-dao-idle-D00",
+        "kind": "unit",
+        "family": "tran_hung_dao",
+        "source": {
+          "path": "../../../docs/art/characters/tran-hung-dao-neutral-D00-screen-ESE/raw.png",
+          "sha256": "21e7d7c160fc27b52f8e9475702914e73a628752a5c2b5a4c290d9c7b466d553",
+          "rgbaSha256": "0e609a27dcfb1998b55df073e7f084f35a7b19123c218376ac2cdced3db0e017",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            0,
+            16,
+            1230,
+            1254
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/tran-hung-dao-idle-D00.webp",
+          "sha256": "f1f6b64cd4241120c821f392937dcef2fdaa02df18de0f234291589cd847b04c",
+          "rgbaSha256": "bd6a709084edeb73a33803ef01fbc40808431314c4b0f89b274c2ab5c3e53a92",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            36,
+            5,
+            494,
+            512
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "21e7d7c160fc27b52f8e9475702914e73a628752a5c2b5a4c290d9c7b466d553",
+            "filter": "lanczos"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "manifest": "public/assets/art-v1/shipyard-165-manifest.json",
+    "counts": {
+      "terrain": 4,
+      "prop": 7,
+      "building": 7,
+      "unit": 8,
+      "vfx": 1
+    },
+    "detachedCharacterEntries": [
+      {
+        "id": "infantry-idle-D00",
+        "kind": "unit",
+        "family": "infantry",
+        "source": {
+          "path": "../../../docs/art/units/sources/infantry-neutral-se-refine-01-imagegen-raw.png",
+          "sha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+          "rgbaSha256": "0fdc9a92dab8aa2c420c764ff0808977daec9f4133eda860cdebc18e67463179",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            97,
+            48,
+            1208,
+            1222
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/infantry-idle-D00.webp",
+          "sha256": "de7a865b865ee6ac8b9ff7ba3df07825c01106e1e7ac691cb0924a187f145c51",
+          "rgbaSha256": "2d82cb1b8dca4004fbf424c1ca0f079682ac7df3f6c78ae8bb30fecb38c86e94",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            40,
+            19,
+            409,
+            488
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "cavalry-idle-D00",
+        "kind": "unit",
+        "family": "cavalry",
+        "source": {
+          "path": "../../../docs/art/units/sources/cavalry-neutral-se-imagegen-raw.png",
+          "sha256": "552c4fcdf8ce6bdb802c6faae1bc139416393d53cb30caa95a1d22309b77b091",
+          "rgbaSha256": "3c4a110747c50488d420b70d45f564b93c740a31227a5c278b7af190fe0d3caf",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            33,
+            17,
+            1224,
+            1226
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/cavalry-idle-D00.webp",
+          "sha256": "8571f53f2260947f758e796806a8552b96ba221b004b47d4fcdb2c4c2d549709",
+          "rgbaSha256": "285eb7fc4be508b48bde261013e9520aaaf39ce96726f2adc472f2e90ccda3e0",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            29,
+            7,
+            455,
+            500
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "552c4fcdf8ce6bdb802c6faae1bc139416393d53cb30caa95a1d22309b77b091",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "villager-idle-D00",
+        "kind": "unit",
+        "family": "villager",
+        "source": {
+          "path": "../../../docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+          "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+          "rgbaSha256": "c960d206222a191b903a8cc1a679e82bdce8d8c51df4010a935f444b3cacdb9c",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            65,
+            21,
+            1214,
+            1254
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/villager-idle-D00.webp",
+          "sha256": "17aade7d14ecdc4655b5fd88778ed1a73540a2d2123fe18c9ac7482c1fc9762e",
+          "rgbaSha256": "a55d23f10428ca3a64b32b8baf216d145107f2fda04cfe2d6c584ba35e3270ac",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            40,
+            19,
+            465,
+            505
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "tran-hung-dao-idle-D00",
+        "kind": "unit",
+        "family": "tran_hung_dao",
+        "source": {
+          "path": "../../../docs/art/characters/tran-hung-dao-neutral-D00-screen-ESE/raw.png",
+          "sha256": "21e7d7c160fc27b52f8e9475702914e73a628752a5c2b5a4c290d9c7b466d553",
+          "rgbaSha256": "0e609a27dcfb1998b55df073e7f084f35a7b19123c218376ac2cdced3db0e017",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            0,
+            16,
+            1230,
+            1254
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/tran-hung-dao-idle-D00.webp",
+          "sha256": "f1f6b64cd4241120c821f392937dcef2fdaa02df18de0f234291589cd847b04c",
+          "rgbaSha256": "bd6a709084edeb73a33803ef01fbc40808431314c4b0f89b274c2ab5c3e53a92",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            36,
+            5,
+            494,
+            512
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "21e7d7c160fc27b52f8e9475702914e73a628752a5c2b5a4c290d9c7b466d553",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "villager-walk-south-014",
+        "kind": "unit",
+        "family": "unit.villager",
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/authoring-tools/villager-walk-SOUTH-007/walk/keys/F00-left-contact-01/raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001",
+          "rgbaSha256": "07bc362e869f40e8a3d5ba0b6fabdd7845f6132c0aa4656a17f762ee46609410"
+        },
+        "runtime": {
+          "path": "walk-014/atlas.png",
+          "sha256": "b2bdd86bd02f967bde9b070e5952e97dae257706b5d52730b787e32e9580fc13",
+          "rgbaSha256": "44c8454d0663c6c9823138633596a46af50efe5b42530f2ef1ab210d2c6790eb",
+          "width": 528,
+          "height": 264,
+          "derivation": {
+            "method": "atlas",
+            "filter": "lanczos",
+            "sourceSha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001"
+          }
+        }
+      },
+      {
+        "id": "villager-idle-south-014",
+        "kind": "unit",
+        "family": "unit.villager",
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+          "rgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6"
+        },
+        "runtime": {
+          "path": "walk-014/idle.png",
+          "width": 128,
+          "height": 128,
+          "sha256": "17962707943bb616362271cdde1abbfc17a05b0bad950dc714dd3586954b95ab",
+          "rgbaSha256": "701143131c71470bf01612220cb870f0f47abda08a1089e9407c4505f1ac8721",
+          "derivation": {
+            "method": "resize",
+            "filter": "lanczos",
+            "sourceSha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+          }
+        }
+      },
+      {
+        "id": "villager-gather-wood-south-024",
+        "kind": "unit",
+        "family": "unit.villager",
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-018/F00-call01/raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "e6293fe86eaefc2c9f414241320ab178758cdd52ef09946344364b6a41e41117",
+          "rgbaSha256": "7f00697cb2bb32ee39436b83f2169894e7c78569c61faeb22816d4233f4ae7ac"
+        },
+        "runtime": {
+          "path": "gather-026/atlas.png",
+          "sha256": "5db6455a859a823658e2297544ca739dd466509856f8c2534644a05903cd1092",
+          "rgbaSha256": "3d3808dac11252a5c250c08b6a79f3763fc30472be5badf557a7e79215617a50",
+          "width": 528,
+          "height": 264,
+          "derivation": {
+            "method": "atlas",
+            "filter": "lanczos",
+            "sourceSha256": "e6293fe86eaefc2c9f414241320ab178758cdd52ef09946344364b6a41e41117"
+          }
+        }
+      },
+      {
+        "id": "villager-gather-iron-south-136",
+        "kind": "unit",
+        "family": "unit.villager",
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/villager-gather-iron-SOUTH-131/F00-raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "7912b5c550a8deab4718551d7fb2052fa3148b736afb5c69a7308da81e91ee0d",
+          "rgbaSha256": "691739c9d6c0b997d701d7bce811d21c1bb4978442581650a8629a07c5bb8a31"
+        },
+        "runtime": {
+          "path": "iron-137/atlas.png",
+          "sha256": "0f53648dd459d91a93b35dbf113c12fe753017b0971ec0ed8a55ad7647aab7cc",
+          "rgbaSha256": "7962e78ebe5afc46d4a53d4d4d4d52641b6299f5caca944f4344cc4a0c406adf",
+          "width": 528,
+          "height": 264,
+          "derivation": {
+            "method": "atlas",
+            "filter": "lanczos",
+            "sourceSha256": "7912b5c550a8deab4718551d7fb2052fa3148b736afb5c69a7308da81e91ee0d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "manifest": "public/assets/art-v1/stone-361-manifest.json",
+    "counts": {
+      "building": 16
+    },
+    "detachedCharacterEntries": []
+  },
+  {
+    "manifest": "public/assets/art-v1/terrain-113-manifest.json",
+    "counts": {
+      "terrain": 4,
+      "prop": 5,
+      "building": 2,
+      "unit": 7,
+      "vfx": 1
+    },
+    "detachedCharacterEntries": [
+      {
+        "id": "infantry-idle-D00",
+        "kind": "unit",
+        "family": "infantry",
+        "source": {
+          "path": "../../../docs/art/units/sources/infantry-neutral-se-refine-01-imagegen-raw.png",
+          "sha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+          "rgbaSha256": "0fdc9a92dab8aa2c420c764ff0808977daec9f4133eda860cdebc18e67463179",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            97,
+            48,
+            1208,
+            1222
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/infantry-idle-D00.webp",
+          "sha256": "de7a865b865ee6ac8b9ff7ba3df07825c01106e1e7ac691cb0924a187f145c51",
+          "rgbaSha256": "2d82cb1b8dca4004fbf424c1ca0f079682ac7df3f6c78ae8bb30fecb38c86e94",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            40,
+            19,
+            409,
+            488
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "cavalry-idle-D00",
+        "kind": "unit",
+        "family": "cavalry",
+        "source": {
+          "path": "../../../docs/art/units/sources/cavalry-neutral-se-imagegen-raw.png",
+          "sha256": "552c4fcdf8ce6bdb802c6faae1bc139416393d53cb30caa95a1d22309b77b091",
+          "rgbaSha256": "3c4a110747c50488d420b70d45f564b93c740a31227a5c278b7af190fe0d3caf",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            33,
+            17,
+            1224,
+            1226
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/cavalry-idle-D00.webp",
+          "sha256": "8571f53f2260947f758e796806a8552b96ba221b004b47d4fcdb2c4c2d549709",
+          "rgbaSha256": "285eb7fc4be508b48bde261013e9520aaaf39ce96726f2adc472f2e90ccda3e0",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            29,
+            7,
+            455,
+            500
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "552c4fcdf8ce6bdb802c6faae1bc139416393d53cb30caa95a1d22309b77b091",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "villager-idle-D00",
+        "kind": "unit",
+        "family": "villager",
+        "source": {
+          "path": "../../../docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+          "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+          "rgbaSha256": "c960d206222a191b903a8cc1a679e82bdce8d8c51df4010a935f444b3cacdb9c",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            65,
+            21,
+            1214,
+            1254
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/villager-idle-D00.webp",
+          "sha256": "17aade7d14ecdc4655b5fd88778ed1a73540a2d2123fe18c9ac7482c1fc9762e",
+          "rgbaSha256": "a55d23f10428ca3a64b32b8baf216d145107f2fda04cfe2d6c584ba35e3270ac",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            40,
+            19,
+            465,
+            505
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "tran-hung-dao-idle-D00",
+        "kind": "unit",
+        "family": "tran_hung_dao",
+        "source": {
+          "path": "../../../docs/art/characters/tran-hung-dao-neutral-D00-screen-ESE/raw.png",
+          "sha256": "21e7d7c160fc27b52f8e9475702914e73a628752a5c2b5a4c290d9c7b466d553",
+          "rgbaSha256": "0e609a27dcfb1998b55df073e7f084f35a7b19123c218376ac2cdced3db0e017",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            0,
+            16,
+            1230,
+            1254
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/tran-hung-dao-idle-D00.webp",
+          "sha256": "f1f6b64cd4241120c821f392937dcef2fdaa02df18de0f234291589cd847b04c",
+          "rgbaSha256": "bd6a709084edeb73a33803ef01fbc40808431314c4b0f89b274c2ab5c3e53a92",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            36,
+            5,
+            494,
+            512
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "21e7d7c160fc27b52f8e9475702914e73a628752a5c2b5a4c290d9c7b466d553",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "villager-walk-south-014",
+        "kind": "unit",
+        "family": "unit.villager",
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/authoring-tools/villager-walk-SOUTH-007/walk/keys/F00-left-contact-01/raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001",
+          "rgbaSha256": "07bc362e869f40e8a3d5ba0b6fabdd7845f6132c0aa4656a17f762ee46609410"
+        },
+        "runtime": {
+          "path": "walk-014/atlas.png",
+          "sha256": "b2bdd86bd02f967bde9b070e5952e97dae257706b5d52730b787e32e9580fc13",
+          "rgbaSha256": "44c8454d0663c6c9823138633596a46af50efe5b42530f2ef1ab210d2c6790eb",
+          "width": 528,
+          "height": 264,
+          "derivation": {
+            "method": "atlas",
+            "filter": "lanczos",
+            "sourceSha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001"
+          }
+        }
+      },
+      {
+        "id": "villager-idle-south-014",
+        "kind": "unit",
+        "family": "unit.villager",
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+          "rgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6"
+        },
+        "runtime": {
+          "path": "walk-014/idle.png",
+          "width": 128,
+          "height": 128,
+          "sha256": "17962707943bb616362271cdde1abbfc17a05b0bad950dc714dd3586954b95ab",
+          "rgbaSha256": "701143131c71470bf01612220cb870f0f47abda08a1089e9407c4505f1ac8721",
+          "derivation": {
+            "method": "resize",
+            "filter": "lanczos",
+            "sourceSha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+          }
+        }
+      },
+      {
+        "id": "villager-gather-wood-south-024",
+        "kind": "unit",
+        "family": "unit.villager",
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-018/F00-call01/raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "e6293fe86eaefc2c9f414241320ab178758cdd52ef09946344364b6a41e41117",
+          "rgbaSha256": "7f00697cb2bb32ee39436b83f2169894e7c78569c61faeb22816d4233f4ae7ac"
+        },
+        "runtime": {
+          "path": "gather-026/atlas.png",
+          "sha256": "5db6455a859a823658e2297544ca739dd466509856f8c2534644a05903cd1092",
+          "rgbaSha256": "3d3808dac11252a5c250c08b6a79f3763fc30472be5badf557a7e79215617a50",
+          "width": 528,
+          "height": 264,
+          "derivation": {
+            "method": "atlas",
+            "filter": "lanczos",
+            "sourceSha256": "e6293fe86eaefc2c9f414241320ab178758cdd52ef09946344364b6a41e41117"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "manifest": "public/assets/art-v1/terrain-115-manifest.json",
+    "counts": {
+      "terrain": 4,
+      "prop": 6,
+      "building": 2,
+      "unit": 7,
+      "vfx": 1
+    },
+    "detachedCharacterEntries": [
+      {
+        "id": "infantry-idle-D00",
+        "kind": "unit",
+        "family": "infantry",
+        "source": {
+          "path": "../../../docs/art/units/sources/infantry-neutral-se-refine-01-imagegen-raw.png",
+          "sha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+          "rgbaSha256": "0fdc9a92dab8aa2c420c764ff0808977daec9f4133eda860cdebc18e67463179",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            97,
+            48,
+            1208,
+            1222
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/infantry-idle-D00.webp",
+          "sha256": "de7a865b865ee6ac8b9ff7ba3df07825c01106e1e7ac691cb0924a187f145c51",
+          "rgbaSha256": "2d82cb1b8dca4004fbf424c1ca0f079682ac7df3f6c78ae8bb30fecb38c86e94",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            40,
+            19,
+            409,
+            488
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "cavalry-idle-D00",
+        "kind": "unit",
+        "family": "cavalry",
+        "source": {
+          "path": "../../../docs/art/units/sources/cavalry-neutral-se-imagegen-raw.png",
+          "sha256": "552c4fcdf8ce6bdb802c6faae1bc139416393d53cb30caa95a1d22309b77b091",
+          "rgbaSha256": "3c4a110747c50488d420b70d45f564b93c740a31227a5c278b7af190fe0d3caf",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            33,
+            17,
+            1224,
+            1226
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/cavalry-idle-D00.webp",
+          "sha256": "8571f53f2260947f758e796806a8552b96ba221b004b47d4fcdb2c4c2d549709",
+          "rgbaSha256": "285eb7fc4be508b48bde261013e9520aaaf39ce96726f2adc472f2e90ccda3e0",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            29,
+            7,
+            455,
+            500
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "552c4fcdf8ce6bdb802c6faae1bc139416393d53cb30caa95a1d22309b77b091",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "villager-idle-D00",
+        "kind": "unit",
+        "family": "villager",
+        "source": {
+          "path": "../../../docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+          "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+          "rgbaSha256": "c960d206222a191b903a8cc1a679e82bdce8d8c51df4010a935f444b3cacdb9c",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            65,
+            21,
+            1214,
+            1254
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/villager-idle-D00.webp",
+          "sha256": "17aade7d14ecdc4655b5fd88778ed1a73540a2d2123fe18c9ac7482c1fc9762e",
+          "rgbaSha256": "a55d23f10428ca3a64b32b8baf216d145107f2fda04cfe2d6c584ba35e3270ac",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            40,
+            19,
+            465,
+            505
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "tran-hung-dao-idle-D00",
+        "kind": "unit",
+        "family": "tran_hung_dao",
+        "source": {
+          "path": "../../../docs/art/characters/tran-hung-dao-neutral-D00-screen-ESE/raw.png",
+          "sha256": "21e7d7c160fc27b52f8e9475702914e73a628752a5c2b5a4c290d9c7b466d553",
+          "rgbaSha256": "0e609a27dcfb1998b55df073e7f084f35a7b19123c218376ac2cdced3db0e017",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            0,
+            16,
+            1230,
+            1254
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/tran-hung-dao-idle-D00.webp",
+          "sha256": "f1f6b64cd4241120c821f392937dcef2fdaa02df18de0f234291589cd847b04c",
+          "rgbaSha256": "bd6a709084edeb73a33803ef01fbc40808431314c4b0f89b274c2ab5c3e53a92",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            36,
+            5,
+            494,
+            512
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "21e7d7c160fc27b52f8e9475702914e73a628752a5c2b5a4c290d9c7b466d553",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "villager-walk-south-014",
+        "kind": "unit",
+        "family": "unit.villager",
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/authoring-tools/villager-walk-SOUTH-007/walk/keys/F00-left-contact-01/raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001",
+          "rgbaSha256": "07bc362e869f40e8a3d5ba0b6fabdd7845f6132c0aa4656a17f762ee46609410"
+        },
+        "runtime": {
+          "path": "walk-014/atlas.png",
+          "sha256": "b2bdd86bd02f967bde9b070e5952e97dae257706b5d52730b787e32e9580fc13",
+          "rgbaSha256": "44c8454d0663c6c9823138633596a46af50efe5b42530f2ef1ab210d2c6790eb",
+          "width": 528,
+          "height": 264,
+          "derivation": {
+            "method": "atlas",
+            "filter": "lanczos",
+            "sourceSha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001"
+          }
+        }
+      },
+      {
+        "id": "villager-idle-south-014",
+        "kind": "unit",
+        "family": "unit.villager",
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+          "rgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6"
+        },
+        "runtime": {
+          "path": "walk-014/idle.png",
+          "width": 128,
+          "height": 128,
+          "sha256": "17962707943bb616362271cdde1abbfc17a05b0bad950dc714dd3586954b95ab",
+          "rgbaSha256": "701143131c71470bf01612220cb870f0f47abda08a1089e9407c4505f1ac8721",
+          "derivation": {
+            "method": "resize",
+            "filter": "lanczos",
+            "sourceSha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+          }
+        }
+      },
+      {
+        "id": "villager-gather-wood-south-024",
+        "kind": "unit",
+        "family": "unit.villager",
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-018/F00-call01/raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "e6293fe86eaefc2c9f414241320ab178758cdd52ef09946344364b6a41e41117",
+          "rgbaSha256": "7f00697cb2bb32ee39436b83f2169894e7c78569c61faeb22816d4233f4ae7ac"
+        },
+        "runtime": {
+          "path": "gather-026/atlas.png",
+          "sha256": "5db6455a859a823658e2297544ca739dd466509856f8c2534644a05903cd1092",
+          "rgbaSha256": "3d3808dac11252a5c250c08b6a79f3763fc30472be5badf557a7e79215617a50",
+          "width": 528,
+          "height": 264,
+          "derivation": {
+            "method": "atlas",
+            "filter": "lanczos",
+            "sourceSha256": "e6293fe86eaefc2c9f414241320ab178758cdd52ef09946344364b6a41e41117"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "manifest": "public/assets/art-v1/terrain-120-manifest.json",
+    "counts": {
+      "terrain": 4,
+      "prop": 7,
+      "building": 2,
+      "unit": 7,
+      "vfx": 1
+    },
+    "detachedCharacterEntries": [
+      {
+        "id": "infantry-idle-D00",
+        "kind": "unit",
+        "family": "infantry",
+        "source": {
+          "path": "../../../docs/art/units/sources/infantry-neutral-se-refine-01-imagegen-raw.png",
+          "sha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+          "rgbaSha256": "0fdc9a92dab8aa2c420c764ff0808977daec9f4133eda860cdebc18e67463179",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            97,
+            48,
+            1208,
+            1222
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/infantry-idle-D00.webp",
+          "sha256": "de7a865b865ee6ac8b9ff7ba3df07825c01106e1e7ac691cb0924a187f145c51",
+          "rgbaSha256": "2d82cb1b8dca4004fbf424c1ca0f079682ac7df3f6c78ae8bb30fecb38c86e94",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            40,
+            19,
+            409,
+            488
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "cavalry-idle-D00",
+        "kind": "unit",
+        "family": "cavalry",
+        "source": {
+          "path": "../../../docs/art/units/sources/cavalry-neutral-se-imagegen-raw.png",
+          "sha256": "552c4fcdf8ce6bdb802c6faae1bc139416393d53cb30caa95a1d22309b77b091",
+          "rgbaSha256": "3c4a110747c50488d420b70d45f564b93c740a31227a5c278b7af190fe0d3caf",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            33,
+            17,
+            1224,
+            1226
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/cavalry-idle-D00.webp",
+          "sha256": "8571f53f2260947f758e796806a8552b96ba221b004b47d4fcdb2c4c2d549709",
+          "rgbaSha256": "285eb7fc4be508b48bde261013e9520aaaf39ce96726f2adc472f2e90ccda3e0",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            29,
+            7,
+            455,
+            500
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "552c4fcdf8ce6bdb802c6faae1bc139416393d53cb30caa95a1d22309b77b091",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "villager-idle-D00",
+        "kind": "unit",
+        "family": "villager",
+        "source": {
+          "path": "../../../docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+          "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+          "rgbaSha256": "c960d206222a191b903a8cc1a679e82bdce8d8c51df4010a935f444b3cacdb9c",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            65,
+            21,
+            1214,
+            1254
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/villager-idle-D00.webp",
+          "sha256": "17aade7d14ecdc4655b5fd88778ed1a73540a2d2123fe18c9ac7482c1fc9762e",
+          "rgbaSha256": "a55d23f10428ca3a64b32b8baf216d145107f2fda04cfe2d6c584ba35e3270ac",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            40,
+            19,
+            465,
+            505
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "tran-hung-dao-idle-D00",
+        "kind": "unit",
+        "family": "tran_hung_dao",
+        "source": {
+          "path": "../../../docs/art/characters/tran-hung-dao-neutral-D00-screen-ESE/raw.png",
+          "sha256": "21e7d7c160fc27b52f8e9475702914e73a628752a5c2b5a4c290d9c7b466d553",
+          "rgbaSha256": "0e609a27dcfb1998b55df073e7f084f35a7b19123c218376ac2cdced3db0e017",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            0,
+            16,
+            1230,
+            1254
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/tran-hung-dao-idle-D00.webp",
+          "sha256": "f1f6b64cd4241120c821f392937dcef2fdaa02df18de0f234291589cd847b04c",
+          "rgbaSha256": "bd6a709084edeb73a33803ef01fbc40808431314c4b0f89b274c2ab5c3e53a92",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            36,
+            5,
+            494,
+            512
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "21e7d7c160fc27b52f8e9475702914e73a628752a5c2b5a4c290d9c7b466d553",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "villager-walk-south-014",
+        "kind": "unit",
+        "family": "unit.villager",
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/authoring-tools/villager-walk-SOUTH-007/walk/keys/F00-left-contact-01/raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001",
+          "rgbaSha256": "07bc362e869f40e8a3d5ba0b6fabdd7845f6132c0aa4656a17f762ee46609410"
+        },
+        "runtime": {
+          "path": "walk-014/atlas.png",
+          "sha256": "b2bdd86bd02f967bde9b070e5952e97dae257706b5d52730b787e32e9580fc13",
+          "rgbaSha256": "44c8454d0663c6c9823138633596a46af50efe5b42530f2ef1ab210d2c6790eb",
+          "width": 528,
+          "height": 264,
+          "derivation": {
+            "method": "atlas",
+            "filter": "lanczos",
+            "sourceSha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001"
+          }
+        }
+      },
+      {
+        "id": "villager-idle-south-014",
+        "kind": "unit",
+        "family": "unit.villager",
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+          "rgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6"
+        },
+        "runtime": {
+          "path": "walk-014/idle.png",
+          "width": 128,
+          "height": 128,
+          "sha256": "17962707943bb616362271cdde1abbfc17a05b0bad950dc714dd3586954b95ab",
+          "rgbaSha256": "701143131c71470bf01612220cb870f0f47abda08a1089e9407c4505f1ac8721",
+          "derivation": {
+            "method": "resize",
+            "filter": "lanczos",
+            "sourceSha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+          }
+        }
+      },
+      {
+        "id": "villager-gather-wood-south-024",
+        "kind": "unit",
+        "family": "unit.villager",
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-018/F00-call01/raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "e6293fe86eaefc2c9f414241320ab178758cdd52ef09946344364b6a41e41117",
+          "rgbaSha256": "7f00697cb2bb32ee39436b83f2169894e7c78569c61faeb22816d4233f4ae7ac"
+        },
+        "runtime": {
+          "path": "gather-026/atlas.png",
+          "sha256": "5db6455a859a823658e2297544ca739dd466509856f8c2534644a05903cd1092",
+          "rgbaSha256": "3d3808dac11252a5c250c08b6a79f3763fc30472be5badf557a7e79215617a50",
+          "width": 528,
+          "height": 264,
+          "derivation": {
+            "method": "atlas",
+            "filter": "lanczos",
+            "sourceSha256": "e6293fe86eaefc2c9f414241320ab178758cdd52ef09946344364b6a41e41117"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "manifest": "public/assets/art-v1/terrain-122-manifest.json",
+    "counts": {
+      "terrain": 4,
+      "prop": 7,
+      "building": 3,
+      "unit": 7,
+      "vfx": 1
+    },
+    "detachedCharacterEntries": [
+      {
+        "id": "infantry-idle-D00",
+        "kind": "unit",
+        "family": "infantry",
+        "source": {
+          "path": "../../../docs/art/units/sources/infantry-neutral-se-refine-01-imagegen-raw.png",
+          "sha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+          "rgbaSha256": "0fdc9a92dab8aa2c420c764ff0808977daec9f4133eda860cdebc18e67463179",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            97,
+            48,
+            1208,
+            1222
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/infantry-idle-D00.webp",
+          "sha256": "de7a865b865ee6ac8b9ff7ba3df07825c01106e1e7ac691cb0924a187f145c51",
+          "rgbaSha256": "2d82cb1b8dca4004fbf424c1ca0f079682ac7df3f6c78ae8bb30fecb38c86e94",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            40,
+            19,
+            409,
+            488
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "cavalry-idle-D00",
+        "kind": "unit",
+        "family": "cavalry",
+        "source": {
+          "path": "../../../docs/art/units/sources/cavalry-neutral-se-imagegen-raw.png",
+          "sha256": "552c4fcdf8ce6bdb802c6faae1bc139416393d53cb30caa95a1d22309b77b091",
+          "rgbaSha256": "3c4a110747c50488d420b70d45f564b93c740a31227a5c278b7af190fe0d3caf",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            33,
+            17,
+            1224,
+            1226
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/cavalry-idle-D00.webp",
+          "sha256": "8571f53f2260947f758e796806a8552b96ba221b004b47d4fcdb2c4c2d549709",
+          "rgbaSha256": "285eb7fc4be508b48bde261013e9520aaaf39ce96726f2adc472f2e90ccda3e0",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            29,
+            7,
+            455,
+            500
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "552c4fcdf8ce6bdb802c6faae1bc139416393d53cb30caa95a1d22309b77b091",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "villager-idle-D00",
+        "kind": "unit",
+        "family": "villager",
+        "source": {
+          "path": "../../../docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+          "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+          "rgbaSha256": "c960d206222a191b903a8cc1a679e82bdce8d8c51df4010a935f444b3cacdb9c",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            65,
+            21,
+            1214,
+            1254
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/villager-idle-D00.webp",
+          "sha256": "17aade7d14ecdc4655b5fd88778ed1a73540a2d2123fe18c9ac7482c1fc9762e",
+          "rgbaSha256": "a55d23f10428ca3a64b32b8baf216d145107f2fda04cfe2d6c584ba35e3270ac",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            40,
+            19,
+            465,
+            505
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "tran-hung-dao-idle-D00",
+        "kind": "unit",
+        "family": "tran_hung_dao",
+        "source": {
+          "path": "../../../docs/art/characters/tran-hung-dao-neutral-D00-screen-ESE/raw.png",
+          "sha256": "21e7d7c160fc27b52f8e9475702914e73a628752a5c2b5a4c290d9c7b466d553",
+          "rgbaSha256": "0e609a27dcfb1998b55df073e7f084f35a7b19123c218376ac2cdced3db0e017",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            0,
+            16,
+            1230,
+            1254
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/tran-hung-dao-idle-D00.webp",
+          "sha256": "f1f6b64cd4241120c821f392937dcef2fdaa02df18de0f234291589cd847b04c",
+          "rgbaSha256": "bd6a709084edeb73a33803ef01fbc40808431314c4b0f89b274c2ab5c3e53a92",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            36,
+            5,
+            494,
+            512
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "21e7d7c160fc27b52f8e9475702914e73a628752a5c2b5a4c290d9c7b466d553",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "villager-walk-south-014",
+        "kind": "unit",
+        "family": "unit.villager",
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/authoring-tools/villager-walk-SOUTH-007/walk/keys/F00-left-contact-01/raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001",
+          "rgbaSha256": "07bc362e869f40e8a3d5ba0b6fabdd7845f6132c0aa4656a17f762ee46609410"
+        },
+        "runtime": {
+          "path": "walk-014/atlas.png",
+          "sha256": "b2bdd86bd02f967bde9b070e5952e97dae257706b5d52730b787e32e9580fc13",
+          "rgbaSha256": "44c8454d0663c6c9823138633596a46af50efe5b42530f2ef1ab210d2c6790eb",
+          "width": 528,
+          "height": 264,
+          "derivation": {
+            "method": "atlas",
+            "filter": "lanczos",
+            "sourceSha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001"
+          }
+        }
+      },
+      {
+        "id": "villager-idle-south-014",
+        "kind": "unit",
+        "family": "unit.villager",
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+          "rgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6"
+        },
+        "runtime": {
+          "path": "walk-014/idle.png",
+          "width": 128,
+          "height": 128,
+          "sha256": "17962707943bb616362271cdde1abbfc17a05b0bad950dc714dd3586954b95ab",
+          "rgbaSha256": "701143131c71470bf01612220cb870f0f47abda08a1089e9407c4505f1ac8721",
+          "derivation": {
+            "method": "resize",
+            "filter": "lanczos",
+            "sourceSha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+          }
+        }
+      },
+      {
+        "id": "villager-gather-wood-south-024",
+        "kind": "unit",
+        "family": "unit.villager",
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-018/F00-call01/raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "e6293fe86eaefc2c9f414241320ab178758cdd52ef09946344364b6a41e41117",
+          "rgbaSha256": "7f00697cb2bb32ee39436b83f2169894e7c78569c61faeb22816d4233f4ae7ac"
+        },
+        "runtime": {
+          "path": "gather-026/atlas.png",
+          "sha256": "5db6455a859a823658e2297544ca739dd466509856f8c2534644a05903cd1092",
+          "rgbaSha256": "3d3808dac11252a5c250c08b6a79f3763fc30472be5badf557a7e79215617a50",
+          "width": 528,
+          "height": 264,
+          "derivation": {
+            "method": "atlas",
+            "filter": "lanczos",
+            "sourceSha256": "e6293fe86eaefc2c9f414241320ab178758cdd52ef09946344364b6a41e41117"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "manifest": "public/assets/art-v1/terrain-127-manifest.json",
+    "counts": {
+      "terrain": 4,
+      "prop": 7,
+      "building": 4,
+      "unit": 7,
+      "vfx": 1
+    },
+    "detachedCharacterEntries": [
+      {
+        "id": "infantry-idle-D00",
+        "kind": "unit",
+        "family": "infantry",
+        "source": {
+          "path": "../../../docs/art/units/sources/infantry-neutral-se-refine-01-imagegen-raw.png",
+          "sha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+          "rgbaSha256": "0fdc9a92dab8aa2c420c764ff0808977daec9f4133eda860cdebc18e67463179",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            97,
+            48,
+            1208,
+            1222
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/infantry-idle-D00.webp",
+          "sha256": "de7a865b865ee6ac8b9ff7ba3df07825c01106e1e7ac691cb0924a187f145c51",
+          "rgbaSha256": "2d82cb1b8dca4004fbf424c1ca0f079682ac7df3f6c78ae8bb30fecb38c86e94",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            40,
+            19,
+            409,
+            488
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "cavalry-idle-D00",
+        "kind": "unit",
+        "family": "cavalry",
+        "source": {
+          "path": "../../../docs/art/units/sources/cavalry-neutral-se-imagegen-raw.png",
+          "sha256": "552c4fcdf8ce6bdb802c6faae1bc139416393d53cb30caa95a1d22309b77b091",
+          "rgbaSha256": "3c4a110747c50488d420b70d45f564b93c740a31227a5c278b7af190fe0d3caf",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            33,
+            17,
+            1224,
+            1226
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/cavalry-idle-D00.webp",
+          "sha256": "8571f53f2260947f758e796806a8552b96ba221b004b47d4fcdb2c4c2d549709",
+          "rgbaSha256": "285eb7fc4be508b48bde261013e9520aaaf39ce96726f2adc472f2e90ccda3e0",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            29,
+            7,
+            455,
+            500
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "552c4fcdf8ce6bdb802c6faae1bc139416393d53cb30caa95a1d22309b77b091",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "villager-idle-D00",
+        "kind": "unit",
+        "family": "villager",
+        "source": {
+          "path": "../../../docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+          "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+          "rgbaSha256": "c960d206222a191b903a8cc1a679e82bdce8d8c51df4010a935f444b3cacdb9c",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            65,
+            21,
+            1214,
+            1254
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/villager-idle-D00.webp",
+          "sha256": "17aade7d14ecdc4655b5fd88778ed1a73540a2d2123fe18c9ac7482c1fc9762e",
+          "rgbaSha256": "a55d23f10428ca3a64b32b8baf216d145107f2fda04cfe2d6c584ba35e3270ac",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            40,
+            19,
+            465,
+            505
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "tran-hung-dao-idle-D00",
+        "kind": "unit",
+        "family": "tran_hung_dao",
+        "source": {
+          "path": "../../../docs/art/characters/tran-hung-dao-neutral-D00-screen-ESE/raw.png",
+          "sha256": "21e7d7c160fc27b52f8e9475702914e73a628752a5c2b5a4c290d9c7b466d553",
+          "rgbaSha256": "0e609a27dcfb1998b55df073e7f084f35a7b19123c218376ac2cdced3db0e017",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            0,
+            16,
+            1230,
+            1254
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/tran-hung-dao-idle-D00.webp",
+          "sha256": "f1f6b64cd4241120c821f392937dcef2fdaa02df18de0f234291589cd847b04c",
+          "rgbaSha256": "bd6a709084edeb73a33803ef01fbc40808431314c4b0f89b274c2ab5c3e53a92",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            36,
+            5,
+            494,
+            512
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "21e7d7c160fc27b52f8e9475702914e73a628752a5c2b5a4c290d9c7b466d553",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "villager-walk-south-014",
+        "kind": "unit",
+        "family": "unit.villager",
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/authoring-tools/villager-walk-SOUTH-007/walk/keys/F00-left-contact-01/raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001",
+          "rgbaSha256": "07bc362e869f40e8a3d5ba0b6fabdd7845f6132c0aa4656a17f762ee46609410"
+        },
+        "runtime": {
+          "path": "walk-014/atlas.png",
+          "sha256": "b2bdd86bd02f967bde9b070e5952e97dae257706b5d52730b787e32e9580fc13",
+          "rgbaSha256": "44c8454d0663c6c9823138633596a46af50efe5b42530f2ef1ab210d2c6790eb",
+          "width": 528,
+          "height": 264,
+          "derivation": {
+            "method": "atlas",
+            "filter": "lanczos",
+            "sourceSha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001"
+          }
+        }
+      },
+      {
+        "id": "villager-idle-south-014",
+        "kind": "unit",
+        "family": "unit.villager",
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+          "rgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6"
+        },
+        "runtime": {
+          "path": "walk-014/idle.png",
+          "width": 128,
+          "height": 128,
+          "sha256": "17962707943bb616362271cdde1abbfc17a05b0bad950dc714dd3586954b95ab",
+          "rgbaSha256": "701143131c71470bf01612220cb870f0f47abda08a1089e9407c4505f1ac8721",
+          "derivation": {
+            "method": "resize",
+            "filter": "lanczos",
+            "sourceSha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+          }
+        }
+      },
+      {
+        "id": "villager-gather-wood-south-024",
+        "kind": "unit",
+        "family": "unit.villager",
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-018/F00-call01/raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "e6293fe86eaefc2c9f414241320ab178758cdd52ef09946344364b6a41e41117",
+          "rgbaSha256": "7f00697cb2bb32ee39436b83f2169894e7c78569c61faeb22816d4233f4ae7ac"
+        },
+        "runtime": {
+          "path": "gather-026/atlas.png",
+          "sha256": "5db6455a859a823658e2297544ca739dd466509856f8c2534644a05903cd1092",
+          "rgbaSha256": "3d3808dac11252a5c250c08b6a79f3763fc30472be5badf557a7e79215617a50",
+          "width": 528,
+          "height": 264,
+          "derivation": {
+            "method": "atlas",
+            "filter": "lanczos",
+            "sourceSha256": "e6293fe86eaefc2c9f414241320ab178758cdd52ef09946344364b6a41e41117"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "manifest": "public/assets/art-v1/walk-014-manifest.json",
+    "counts": {
+      "terrain": 4,
+      "prop": 3,
+      "building": 2,
+      "unit": 6,
+      "vfx": 1
+    },
+    "detachedCharacterEntries": [
+      {
+        "id": "infantry-idle-D00",
+        "kind": "unit",
+        "family": "infantry",
+        "source": {
+          "path": "../../../docs/art/units/sources/infantry-neutral-se-refine-01-imagegen-raw.png",
+          "sha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+          "rgbaSha256": "0fdc9a92dab8aa2c420c764ff0808977daec9f4133eda860cdebc18e67463179",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            97,
+            48,
+            1208,
+            1222
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/infantry-idle-D00.webp",
+          "sha256": "de7a865b865ee6ac8b9ff7ba3df07825c01106e1e7ac691cb0924a187f145c51",
+          "rgbaSha256": "2d82cb1b8dca4004fbf424c1ca0f079682ac7df3f6c78ae8bb30fecb38c86e94",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            40,
+            19,
+            409,
+            488
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "cavalry-idle-D00",
+        "kind": "unit",
+        "family": "cavalry",
+        "source": {
+          "path": "../../../docs/art/units/sources/cavalry-neutral-se-imagegen-raw.png",
+          "sha256": "552c4fcdf8ce6bdb802c6faae1bc139416393d53cb30caa95a1d22309b77b091",
+          "rgbaSha256": "3c4a110747c50488d420b70d45f564b93c740a31227a5c278b7af190fe0d3caf",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            33,
+            17,
+            1224,
+            1226
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/cavalry-idle-D00.webp",
+          "sha256": "8571f53f2260947f758e796806a8552b96ba221b004b47d4fcdb2c4c2d549709",
+          "rgbaSha256": "285eb7fc4be508b48bde261013e9520aaaf39ce96726f2adc472f2e90ccda3e0",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            29,
+            7,
+            455,
+            500
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "552c4fcdf8ce6bdb802c6faae1bc139416393d53cb30caa95a1d22309b77b091",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "villager-idle-D00",
+        "kind": "unit",
+        "family": "villager",
+        "source": {
+          "path": "../../../docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+          "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+          "rgbaSha256": "c960d206222a191b903a8cc1a679e82bdce8d8c51df4010a935f444b3cacdb9c",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            65,
+            21,
+            1214,
+            1254
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/villager-idle-D00.webp",
+          "sha256": "17aade7d14ecdc4655b5fd88778ed1a73540a2d2123fe18c9ac7482c1fc9762e",
+          "rgbaSha256": "a55d23f10428ca3a64b32b8baf216d145107f2fda04cfe2d6c584ba35e3270ac",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            40,
+            19,
+            465,
+            505
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "tran-hung-dao-idle-D00",
+        "kind": "unit",
+        "family": "tran_hung_dao",
+        "source": {
+          "path": "../../../docs/art/characters/tran-hung-dao-neutral-D00-screen-ESE/raw.png",
+          "sha256": "21e7d7c160fc27b52f8e9475702914e73a628752a5c2b5a4c290d9c7b466d553",
+          "rgbaSha256": "0e609a27dcfb1998b55df073e7f084f35a7b19123c218376ac2cdced3db0e017",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            0,
+            16,
+            1230,
+            1254
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/tran-hung-dao-idle-D00.webp",
+          "sha256": "f1f6b64cd4241120c821f392937dcef2fdaa02df18de0f234291589cd847b04c",
+          "rgbaSha256": "bd6a709084edeb73a33803ef01fbc40808431314c4b0f89b274c2ab5c3e53a92",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            36,
+            5,
+            494,
+            512
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "21e7d7c160fc27b52f8e9475702914e73a628752a5c2b5a4c290d9c7b466d553",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "villager-walk-south-014",
+        "kind": "unit",
+        "family": "unit.villager",
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/authoring-tools/villager-walk-SOUTH-007/walk/keys/F00-left-contact-01/raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001",
+          "rgbaSha256": "07bc362e869f40e8a3d5ba0b6fabdd7845f6132c0aa4656a17f762ee46609410"
+        },
+        "runtime": {
+          "path": "walk-014/atlas.png",
+          "sha256": "b2bdd86bd02f967bde9b070e5952e97dae257706b5d52730b787e32e9580fc13",
+          "rgbaSha256": "44c8454d0663c6c9823138633596a46af50efe5b42530f2ef1ab210d2c6790eb",
+          "width": 528,
+          "height": 264,
+          "derivation": {
+            "method": "atlas",
+            "filter": "lanczos",
+            "sourceSha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001"
+          }
+        }
+      },
+      {
+        "id": "villager-idle-south-014",
+        "kind": "unit",
+        "family": "unit.villager",
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+          "rgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6"
+        },
+        "runtime": {
+          "path": "walk-014/idle.png",
+          "width": 128,
+          "height": 128,
+          "sha256": "17962707943bb616362271cdde1abbfc17a05b0bad950dc714dd3586954b95ab",
+          "rgbaSha256": "701143131c71470bf01612220cb870f0f47abda08a1089e9407c4505f1ac8721",
+          "derivation": {
+            "method": "resize",
+            "filter": "lanczos",
+            "sourceSha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "manifest": "public/assets/art-v1/workshop-144-manifest.json",
+    "counts": {
+      "terrain": 4,
+      "prop": 7,
+      "building": 5,
+      "unit": 8,
+      "vfx": 1
+    },
+    "detachedCharacterEntries": [
+      {
+        "id": "infantry-idle-D00",
+        "kind": "unit",
+        "family": "infantry",
+        "source": {
+          "path": "../../../docs/art/units/sources/infantry-neutral-se-refine-01-imagegen-raw.png",
+          "sha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+          "rgbaSha256": "0fdc9a92dab8aa2c420c764ff0808977daec9f4133eda860cdebc18e67463179",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            97,
+            48,
+            1208,
+            1222
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/infantry-idle-D00.webp",
+          "sha256": "de7a865b865ee6ac8b9ff7ba3df07825c01106e1e7ac691cb0924a187f145c51",
+          "rgbaSha256": "2d82cb1b8dca4004fbf424c1ca0f079682ac7df3f6c78ae8bb30fecb38c86e94",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            40,
+            19,
+            409,
+            488
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "084845e5f6cb50be8baf9903b8c2ae0798842811ad039aebf71486320eb0517f",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "cavalry-idle-D00",
+        "kind": "unit",
+        "family": "cavalry",
+        "source": {
+          "path": "../../../docs/art/units/sources/cavalry-neutral-se-imagegen-raw.png",
+          "sha256": "552c4fcdf8ce6bdb802c6faae1bc139416393d53cb30caa95a1d22309b77b091",
+          "rgbaSha256": "3c4a110747c50488d420b70d45f564b93c740a31227a5c278b7af190fe0d3caf",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            33,
+            17,
+            1224,
+            1226
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/cavalry-idle-D00.webp",
+          "sha256": "8571f53f2260947f758e796806a8552b96ba221b004b47d4fcdb2c4c2d549709",
+          "rgbaSha256": "285eb7fc4be508b48bde261013e9520aaaf39ce96726f2adc472f2e90ccda3e0",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            29,
+            7,
+            455,
+            500
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "552c4fcdf8ce6bdb802c6faae1bc139416393d53cb30caa95a1d22309b77b091",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "villager-idle-D00",
+        "kind": "unit",
+        "family": "villager",
+        "source": {
+          "path": "../../../docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+          "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+          "rgbaSha256": "c960d206222a191b903a8cc1a679e82bdce8d8c51df4010a935f444b3cacdb9c",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            65,
+            21,
+            1214,
+            1254
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/villager-idle-D00.webp",
+          "sha256": "17aade7d14ecdc4655b5fd88778ed1a73540a2d2123fe18c9ac7482c1fc9762e",
+          "rgbaSha256": "a55d23f10428ca3a64b32b8baf216d145107f2fda04cfe2d6c584ba35e3270ac",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            40,
+            19,
+            465,
+            505
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "tran-hung-dao-idle-D00",
+        "kind": "unit",
+        "family": "tran_hung_dao",
+        "source": {
+          "path": "../../../docs/art/characters/tran-hung-dao-neutral-D00-screen-ESE/raw.png",
+          "sha256": "21e7d7c160fc27b52f8e9475702914e73a628752a5c2b5a4c290d9c7b466d553",
+          "rgbaSha256": "0e609a27dcfb1998b55df073e7f084f35a7b19123c218376ac2cdced3db0e017",
+          "width": 1254,
+          "height": 1254,
+          "bbox": [
+            0,
+            16,
+            1230,
+            1254
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ]
+        },
+        "runtime": {
+          "path": "runtime/tran-hung-dao-idle-D00.webp",
+          "sha256": "f1f6b64cd4241120c821f392937dcef2fdaa02df18de0f234291589cd847b04c",
+          "rgbaSha256": "bd6a709084edeb73a33803ef01fbc40808431314c4b0f89b274c2ab5c3e53a92",
+          "width": 512,
+          "height": 512,
+          "bbox": [
+            36,
+            5,
+            494,
+            512
+          ],
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "derivation": {
+            "method": "resize",
+            "sourceSha256": "21e7d7c160fc27b52f8e9475702914e73a628752a5c2b5a4c290d9c7b466d553",
+            "filter": "lanczos"
+          }
+        }
+      },
+      {
+        "id": "villager-walk-south-014",
+        "kind": "unit",
+        "family": "unit.villager",
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/authoring-tools/villager-walk-SOUTH-007/walk/keys/F00-left-contact-01/raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001",
+          "rgbaSha256": "07bc362e869f40e8a3d5ba0b6fabdd7845f6132c0aa4656a17f762ee46609410"
+        },
+        "runtime": {
+          "path": "walk-014/atlas.png",
+          "sha256": "b2bdd86bd02f967bde9b070e5952e97dae257706b5d52730b787e32e9580fc13",
+          "rgbaSha256": "44c8454d0663c6c9823138633596a46af50efe5b42530f2ef1ab210d2c6790eb",
+          "width": 528,
+          "height": 264,
+          "derivation": {
+            "method": "atlas",
+            "filter": "lanczos",
+            "sourceSha256": "803163981d41540f237ac3b53652e73eab82f8a35a8ffa68c5db7d4f57019001"
+          }
+        }
+      },
+      {
+        "id": "villager-idle-south-014",
+        "kind": "unit",
+        "family": "unit.villager",
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+          "rgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6"
+        },
+        "runtime": {
+          "path": "walk-014/idle.png",
+          "width": 128,
+          "height": 128,
+          "sha256": "17962707943bb616362271cdde1abbfc17a05b0bad950dc714dd3586954b95ab",
+          "rgbaSha256": "701143131c71470bf01612220cb870f0f47abda08a1089e9407c4505f1ac8721",
+          "derivation": {
+            "method": "resize",
+            "filter": "lanczos",
+            "sourceSha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+          }
+        }
+      },
+      {
+        "id": "villager-gather-wood-south-024",
+        "kind": "unit",
+        "family": "unit.villager",
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-gather-SOUTH-018/F00-call01/raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "e6293fe86eaefc2c9f414241320ab178758cdd52ef09946344364b6a41e41117",
+          "rgbaSha256": "7f00697cb2bb32ee39436b83f2169894e7c78569c61faeb22816d4233f4ae7ac"
+        },
+        "runtime": {
+          "path": "gather-026/atlas.png",
+          "sha256": "5db6455a859a823658e2297544ca739dd466509856f8c2534644a05903cd1092",
+          "rgbaSha256": "3d3808dac11252a5c250c08b6a79f3763fc30472be5badf557a7e79215617a50",
+          "width": 528,
+          "height": 264,
+          "derivation": {
+            "method": "atlas",
+            "filter": "lanczos",
+            "sourceSha256": "e6293fe86eaefc2c9f414241320ab178758cdd52ef09946344364b6a41e41117"
+          }
+        }
+      },
+      {
+        "id": "villager-gather-iron-south-136",
+        "kind": "unit",
+        "family": "unit.villager",
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/motion/villager-gather-iron-SOUTH-131/F00-raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "7912b5c550a8deab4718551d7fb2052fa3148b736afb5c69a7308da81e91ee0d",
+          "rgbaSha256": "691739c9d6c0b997d701d7bce811d21c1bb4978442581650a8629a07c5bb8a31"
+        },
+        "runtime": {
+          "path": "iron-137/atlas.png",
+          "sha256": "0f53648dd459d91a93b35dbf113c12fe753017b0971ec0ed8a55ad7647aab7cc",
+          "rgbaSha256": "7962e78ebe5afc46d4a53d4d4d4d52641b6299f5caca944f4344cc4a0c406adf",
+          "width": 528,
+          "height": 264,
+          "derivation": {
+            "method": "atlas",
+            "filter": "lanczos",
+            "sourceSha256": "7912b5c550a8deab4718551d7fb2052fa3148b736afb5c69a7308da81e91ee0d"
+          }
+        }
+      }
+    ]
+  }
+]

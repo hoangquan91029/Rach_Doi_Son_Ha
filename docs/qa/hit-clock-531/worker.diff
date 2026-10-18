@@ -1,0 +1,12 @@
+--- docs/qa/hit-clock-531/raster-slice.before.js	2026-10-13 22:42:46.849722211 +0700
++++ client/raster-slice.js	2026-10-13 22:44:06.321462390 +0700
+@@ -136,7 +136,8 @@
+    else if(visualState==='walk'&&asset.locomotion){walkPhase=locomotion.sample(entity.id,{distancePerCycle:asset.locomotion.distancePerCycle,cycleDurationMs:asset.frames.reduce((sum,f)=>sum+f.durationMs,0)});elapsed=walkPhase.timeMs;}
+    else if(visualState==='gather'||visualState.startsWith('gather_'))elapsed=gatherAnimationTime(entity,timeMs);
+    else if(['ability','load','unload','build'].includes(visualState))elapsed=episodeAnimationTime(entity,timeMs,asset.frames.reduce((sum,f)=>sum+f.durationMs,0));
+-   else if(visualState==='hit')elapsed=Math.max(0,timeMs-((entity.hitUntil||tick)-6)*50);
++   // hurt() exposes five ticks: the damage tick is the hit clip's origin.
++   else if(visualState==='hit')elapsed=Math.max(0,timeMs-((entity.hitUntil||tick)-5)*50);
+    else if(visualState==='death')elapsed=Math.max(0,(kind==='building'?(asset.fortification?.deathSite==='completed'?Math.min(tick*50,finite(timeMs)?timeMs:tick*50):tick*50):timeMs)-(entity.deadTick??tick)*50);
+    else if(visualState==='attack'&&finite(entity.attackStartedTick??entity.lastAttack))elapsed=attackAnimationTime(asset,entity,timeMs);
+    const sample=sampleSpriteAnimation(asset.frames,{timeMs:elapsed,loop:['ability','load','unload','build'].includes(visualState)&&typeof entity.visibleAction?.loop==='boolean'?entity.visibleAction.loop:defaultAnimationLoop(asset)});

@@ -1,0 +1,39 @@
+{
+  "task": "native-provenance537",
+  "status": "VERIFIED scoped code checks",
+  "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+  "outputs": {
+    "client/pixel-animation.js": "e974a30f8ec1d22d850ffee90de99c5a45b9e0af6a6b3bb31a1f273ea5da101e",
+    "scripts/pixel-sprites.py": "56746bb23c8f2f328a829f89d7f74e7a5c32a5aa11b0f87a003fe16cb9761657",
+    "tests/pixel-native-provenance537.test.js": "35e35e602993b57ad354af40d9bf5b226de7ef1b6c7e76de91d34f8dc8a3368d",
+    "tests/pixel-native-provenance537.py": "b2aadd15ecb8e8ea53a23cf214bdd2d817b64f771455518512641ab3cc8a8427"
+  },
+  "schema": {
+    "imagegen": [
+      "sources",
+      "callTokens"
+    ],
+    "native-raster": [
+      "kind",
+      "sources",
+      "recipe",
+      "framePlan"
+    ],
+    "pin": [
+      "path",
+      "sha256"
+    ]
+  },
+  "checks": {
+    "node": "10 PASS",
+    "python-native": "1 PASS including negative subcases",
+    "python-existing": "4 PASS after error-message compatibility repairs; first failures preserved",
+    "gif-existing": "PASS finite/loop; original implementation unchanged"
+  },
+  "limits": [
+    "No image call, art output, registry, simulation or renderer changes",
+    "Hashes establish byte custody only, not authenticity or visual/runtime approval",
+    "Browser validates lexical pins only; Python rejects symlink components and verifies exact file SHA256"
+  ],
+  "handles": []
+}

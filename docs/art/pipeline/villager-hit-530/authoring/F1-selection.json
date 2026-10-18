@@ -1,0 +1,24 @@
+{
+  "schema": "rds-root-source-selection/v1",
+  "identity": "villager",
+  "action": "hit",
+  "direction": 1,
+  "frame": 1,
+  "phase": 0.25,
+  "source": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-hit-530/illustration/F1-raw.png",
+    "sha256": "e89cf68b92047683d0385d745c40e9299a6c7fbf9f3b4c15e21a526c3ed35d23",
+    "rgbaSha256": "901a33d8bf3fa2fa89c3e7610f451f87d673839604b2a84b93849dec59042f47"
+  },
+  "custody": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-hit-530/illustration/F1-custody.json",
+    "sha256": "650f52d24bc860cd6fd98434596a9b016323eaf400fd79e5b091e0ac4a6cf90e"
+  },
+  "review": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-hit-530/review/F1-key-review.json",
+    "sha256": "048ffa564f34f1e675e466608688f1ef442af89e85a18fa7d7ae3ca892e9df5d"
+  },
+  "decision": "SELECTED_SOURCE_CANDIDATE_FOR_FULL_CLIP",
+  "observation": "Sameoriginalplausiblelivingrecoil, completecostume/emptyhands/contact; strongerpeakthanroughguide allowedforcandidateclip",
+  "limits": "No naturalmotion/footlock/runtime/owner/publicapproval. Full250msloop needed beforemotiongate."
+}

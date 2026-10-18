@@ -1,0 +1,77 @@
+{
+  "id": "villager-idle-D1-whole523-THREE",
+  "status": "OPEN",
+  "jobKind": "action",
+  "identity": "villager",
+  "action": "idle",
+  "direction": 1,
+  "job": {
+    "id": "villager-idle-D1-whole523",
+    "action": "idle",
+    "direction": 1,
+    "variant": "rest-breath-rest-original-endpoint",
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-idle-523/authoring/job-initial.json",
+    "sha256": "c6f7cb5191ca4bd2514c400c72259bc725857e4d03a1f7cc67ab69ca2820ecf9"
+  },
+  "callLimit": 3,
+  "callsUsed": 0,
+  "correctionCap": 0,
+  "correctionsUsed": 0,
+  "callsRemaining": 3,
+  "slots": [
+    {
+      "frame": 0,
+      "phase": 0.0,
+      "status": "selected",
+      "kind": "initial",
+      "template": "key"
+    },
+    {
+      "frame": 1,
+      "phase": 0.25,
+      "status": "pending",
+      "kind": "initial",
+      "template": "inbetween"
+    },
+    {
+      "frame": 2,
+      "phase": 0.5,
+      "status": "pending",
+      "kind": "initial",
+      "template": "key"
+    },
+    {
+      "frame": 3,
+      "phase": 0.75,
+      "status": "pending",
+      "kind": "initial",
+      "template": "inbetween"
+    }
+  ],
+  "enforcement": {
+    "version": 1,
+    "taskId": "illustration-idle523",
+    "baseline": {
+      "callsUsed": 0,
+      "correctionsUsed": 0
+    },
+    "method": {
+      "family": "same-original-rest-breath-idle523",
+      "parentOrderIds": []
+    },
+    "prerequisites": [
+      {
+        "job": {
+          "path": "docs/art/pipeline/villager-idle-523/authoring/job-initial.json",
+          "sha256": "c6f7cb5191ca4bd2514c400c72259bc725857e4d03a1f7cc67ab69ca2820ecf9"
+        },
+        "frame": 0,
+        "phase": 0,
+        "input": {
+          "path": "docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+          "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+        }
+      }
+    ]
+  }
+}

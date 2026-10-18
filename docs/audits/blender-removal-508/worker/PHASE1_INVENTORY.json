@@ -1,0 +1,80 @@
+{
+  "schema": "rds-task-receipt/v1",
+  "taskId": "blender-removal508",
+  "phase": 1,
+  "status": "READ_ONLY_INVENTORY_COMPLETE",
+  "head": "1c7097fc80f94fc87f2fdc97d355e414601c37a4",
+  "gitStatus": "Pre-existing dirty tree; no project files modified by this task except this receipt.",
+  "preflight": {
+    "command": "node scripts/agent-preflight.mjs --task audit --source docs/audits/blender-runtime-500/capability/CHECKPOINT.json",
+    "result": "status emitted; source hash 5c0e3540553cf4d509a74953e59d8968d251e031581edb03fdb114ba79f4eea7; unrelated existing dirty files and unresolved 498 claims reported"
+  },
+  "inputs": [
+    "docs/audits/implementation-495/tasks.json blender-removal508 record",
+    "docs/PROJECT_STATE.md",
+    "docs/NEXT_STEPS.md",
+    "docs/AGENT_EXECUTION_CONTRACT.md",
+    "docs/audits/blender-runtime-500/capability/CHECKPOINT.json",
+    "docs/audits/blender-runtime-502/connection/CHECKPOINT.json",
+    "docs/audits/blender-runtime-502/connection/config-receipt.json"
+  ],
+  "observations": {
+    "projectBlender": {
+      "installRoot": "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/blender500",
+      "binary": "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/blender500/root/usr/bin/blender",
+      "binarySha256From500Receipt": "6e7b6dc680f12157007afbd2511b9a3b431a06da6a80c1f7179e647c9c42a15a",
+      "versionFrom500Receipt": "5.0.1",
+      "contents": "Isolated Ubuntu userland extraction: root/ and debs/; 71 package archives and 649M total on disk.",
+      "symlink": "install root resolves to itself; binary path is within install root",
+      "hostInstall": "command -v/type lookup found no Blender; /usr/bin, /usr/local/bin and /snap/bin checked; dpkg-query showed no installed blender or blender-data package.",
+      "removeCandidate": "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/blender500"
+    },
+    "projectMcpRuntime": {
+      "root": "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/mcp501",
+      "contents": "Isolated venv/, cache/ and wheels/; 70M total on disk.",
+      "configCommand": "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/mcp501/venv/bin/python",
+      "removeCandidate": "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/mcp501"
+    },
+    "codexConfig": {
+      "path": "/home/kieu-hoang-quan/.codex/config.toml",
+      "mode": "0600",
+      "table": "[mcp_servers.rds_blender501]",
+      "lineNumbersAtInventory": "338-345",
+      "command": "/home/kieu-hoang-quan/.local/share/rach-doi-son-ha/tools/mcp501/venv/bin/python",
+      "args": ["/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/blender/mcp502/lifecycle.py"],
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "enabledTools": ["get_addon_status", "get_scene_info"],
+      "environmentValues": "Not displayed or copied.",
+      "priorBackup": "/home/kieu-hoang-quan/.codex/backups/blender502-416281f47f4641b4a3e7b33a84988f8e/config.toml.before",
+      "priorBackupSha256": "20aa532d40c7eee9316071622627b881feec6b99987fc615c64ab3545027208a",
+      "proposal": "Remove only this table while preserving every other config byte and mode 0600; retain the existing backup."
+    },
+    "processes": {
+      "blenderExecutableProcess": "None observed in targeted process inspection.",
+      "listener19876": "None observed.",
+      "lifecycleProcess": "No separately attributable lifecycle process handle was established; do not signal unrelated/app-owned processes. Recheck immediately before any Phase 2 removal."
+    },
+    "userData": {
+      "configBlender": "Absent",
+      "localShareBlender": "Absent",
+      "cacheBlender": "/home/kieu-hoang-quan/.cache/blender exists, 160K, containing Blender shader cache and asset-library index JSON only.",
+      "cacheRemovalCandidate": "/home/kieu-hoang-quan/.cache/blender (disposable app-specific cache; include only if root wants cache cleanup)."
+    },
+    "preserve": [
+      "All repository Blender scripts, receipts, models and history.",
+      "All .blend/.blend1 files, including docs/art/pipeline/blender-villager-501/, docs/art/pipeline/blender-villager-504/, and docs/audits/blender-runtime-501/502/.",
+      "System packages, drivers, system Python, and all other project/application packages.",
+      "The existing private Codex config backup."
+    ]
+  },
+  "actualTools": [
+    "git status / rev-parse",
+    "registered task and project state reads",
+    "node scripts/agent-preflight.mjs",
+    "cat/sed/rg/find/ls/readlink/du",
+    "command/type/dpkg-query/targeted process and socket inspection",
+    "Python tomllib extraction of the named MCP table metadata with env values omitted"
+  ],
+  "mutations": [],
+  "nextDependency": "Root reviews exact removal candidates; Phase 2 remains unperformed in this worker."
+}

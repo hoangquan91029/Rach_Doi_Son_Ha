@@ -1,0 +1,47 @@
+[
+  {
+    "symbol": "Server Frame.waitForTimeout",
+    "path": "node_modules/playwright-core/lib/coreBundle.js",
+    "lines": [
+      23730,
+      23741
+    ],
+    "text": "      async waitForTimeout(progress2, timeout) {\n        let timer;\n        const promise = new Promise((f) => timer = setTimeout(f, timeout));\n        try {\n          await progress2.race(LongStandingScope.raceMultiple([\n            this._page.openScope,\n            this._detachedScope\n          ], promise));\n        } finally {\n          clearTimeout(timer);\n        }\n      }"
+  },
+  {
+    "symbol": "Client Frame.waitForTimeout",
+    "path": "node_modules/playwright-core/lib/coreBundle.js",
+    "lines": [
+      60218,
+      60220
+    ],
+    "text": "      async waitForTimeout(timeout) {\n        await this._channel.waitForTimeout({ waitTimeout: timeout }, kNoTimeout);\n      }"
+  },
+  {
+    "symbol": "BrowserContext.close",
+    "path": "node_modules/playwright-core/lib/coreBundle.js",
+    "lines": [
+      62194,
+      62205
+    ],
+    "text": "      async close(options = {}) {\n        if (this.isClosed())\n          return;\n        this._closeReason = options.reason;\n        this._closingStatus = \"closing\";\n        await this.request.dispose(options);\n        await this._instrumentation.runBeforeCloseBrowserContext(this);\n        await this.tracing._exportAllHars();\n        await this._channel.close(options, kNoTimeout);\n        await this._closedPromise;\n      }\n      async _enableRecorder(params2, eventSink) {"
+  },
+  {
+    "symbol": "connectToBrowser connection close",
+    "path": "node_modules/playwright-core/lib/coreBundle.js",
+    "lines": [
+      62375,
+      62415
+    ],
+    "text": "async function connectToBrowser(playwright2, params2) {\n  const deadline = params2.timeout ? monotonicTime() + params2.timeout : 0;\n  const nameParam = params2.browserName ? { \"x-playwright-browser\": params2.browserName } : {};\n  const headers = { ...nameParam, ...params2.headers };\n  const connectParams = {\n    endpoint: params2.endpoint,\n    headers,\n    exposeNetwork: params2.exposeNetwork,\n    slowMo: params2.slowMo\n  };\n  if (params2.__testHookRedirectPortForwarding)\n    connectParams.socksProxyRedirectPortForTest = params2.__testHookRedirectPortForwarding;\n  const connection = await connectToEndpoint(playwright2._connection, connectParams, { signal: void 0, timeout: params2.timeout || 0 });\n  let browser;\n  connection.on(\"close\", () => {\n    for (const context2 of browser?.contexts() || []) {\n      for (const page of context2.pages())\n        page._onClose();\n      context2._onClose();\n    }\n    setTimeout(() => browser?._didClose(), 0);\n  });\n  const result2 = await raceAgainstDeadline(async () => {\n    if (params2.__testHookBeforeCreateBrowser)\n      await params2.__testHookBeforeCreateBrowser();\n    const playwright3 = await connection.initializePlaywright();\n    if (!playwright3._initializer.preLaunchedBrowser) {\n      connection.close();\n      throw new Error(\"Malformed endpoint. Did you use BrowserType.launchServer method?\");\n    }\n    playwright3.selectors = playwright3.selectors;\n    browser = Browser2.from(playwright3._initializer.preLaunchedBrowser);\n    browser._shouldCloseConnectionOnClose = true;\n    browser.on(Events.Browser.Disconnected, () => connection.close());\n    return browser;\n  }, deadline);\n  if (!result2.timedOut) {\n    return result2.result;\n  } else {\n    connection.close();\n    throw new Error(`Timeout ${params2.timeout}ms exceeded`);"
+  },
+  {
+    "symbol": "TimeoutSettings",
+    "path": "node_modules/playwright-core/lib/coreBundle.js",
+    "lines": [
+      57140,
+      57169
+    ],
+    "text": "      }\n      timeout(options) {\n        return { signal: options.signal, timeout: this._timeout(options) };\n      }\n      launchTimeout(options) {\n        return { signal: options.signal, timeout: this._launchTimeout(options) };\n      }\n      _navigationTimeout(options) {\n        if (typeof options.timeout === \"number\")\n          return options.timeout;\n        if (this._defaultNavigationTimeout !== void 0)\n          return this._defaultNavigationTimeout;\n        if (debugMode() === \"inspector\")\n          return 0;\n        if (this._defaultTimeout !== void 0)\n          return this._defaultTimeout;\n        if (this._parent)\n          return this._parent._navigationTimeout(options);\n        return DEFAULT_PLAYWRIGHT_TIMEOUT;\n      }\n      _timeout(options) {\n        if (typeof options.timeout === \"number\")\n          return options.timeout;\n        if (debugMode() === \"inspector\")\n          return 0;\n        if (this._defaultTimeout !== void 0)\n          return this._defaultTimeout;\n        if (this._parent)\n          return this._parent._timeout(options);\n        return DEFAULT_PLAYWRIGHT_TIMEOUT;"
+  }
+]

@@ -1,0 +1,1490 @@
+{
+  "schema": "rds-unit-order-ledger/v2",
+  "orders": [
+    {
+      "id": "infantry-D0-walk-existing477",
+      "identity": "infantry",
+      "action": "walk",
+      "direction": 0,
+      "compilerJob": "infantry-original-D0-walk-470",
+      "status": "EXHAUSTED_CLOSED_NO_CALLS",
+      "correctionCap": 2,
+      "correctionsUsed": 2,
+      "correctionOrders": [
+        "474",
+        "475"
+      ],
+      "callsRemaining": 0,
+      "receipts": [
+        {
+          "path": "docs/art/pipeline/infantry-corrected-loop-477/subject.json",
+          "sha256": "f5ead060f1fcbb3cfd656a2bf6127e068a061eaad06dbbdb4fdc5a80829c41f0"
+        },
+        {
+          "path": "docs/art/pipeline/infantry-corrected-loop-477/browser-receipt.json",
+          "sha256": "b58060329477ac4ec28c7d8f7a17350d81792a66274d874327297075d1604116"
+        },
+        {
+          "path": "docs/art/pipeline/infantry-original-loop-470/job.json",
+          "sha256": "fd3be52536555fcd809ca59a2a21de0040f32ec1a2a0f19f6932706fb0af0be3"
+        }
+      ],
+      "motionApproval": false,
+      "worldContactApproval": false,
+      "runtimeInstall": false,
+      "fanoutAuthorized": false,
+      "scope": "Retained eight whole frame candidate; corrected F3from475; technical playback only"
+    },
+    {
+      "id": "infantry-D0-projected-walk-482",
+      "identity": "infantry",
+      "action": "walk",
+      "direction": 0,
+      "compilerJob": "infantry-original-D0-projected-walk-482",
+      "status": "HELD_METHOD_FAILURE_NO_MORE_CALLS",
+      "callLimit": 9,
+      "callsUsed": 2,
+      "correctionCap": 2,
+      "correctionsUsed": 1,
+      "slots": [
+        {
+          "frame": 0,
+          "phase": 0,
+          "status": "selected",
+          "kind": "initial",
+          "template": "key"
+        },
+        {
+          "frame": 1,
+          "phase": 0.125,
+          "status": "pending",
+          "kind": "initial",
+          "template": "inbetween"
+        },
+        {
+          "frame": 2,
+          "phase": 0.25,
+          "status": "pending",
+          "kind": "initial",
+          "template": "key"
+        },
+        {
+          "frame": 3,
+          "phase": 0.375,
+          "status": "pending",
+          "kind": "initial",
+          "template": "inbetween"
+        },
+        {
+          "frame": 4,
+          "phase": 0.5,
+          "status": "held",
+          "kind": "correction",
+          "template": "correction"
+        },
+        {
+          "frame": 5,
+          "phase": 0.625,
+          "status": "pending",
+          "kind": "initial",
+          "template": "inbetween"
+        },
+        {
+          "frame": 6,
+          "phase": 0.75,
+          "status": "pending",
+          "kind": "initial",
+          "template": "key"
+        },
+        {
+          "frame": 7,
+          "phase": 0.875,
+          "status": "pending",
+          "kind": "initial",
+          "template": "inbetween"
+        }
+      ],
+      "executionSequence": [
+        4,
+        2,
+        6,
+        1,
+        3,
+        5,
+        7
+      ],
+      "dependencyGate": "F4actualwholecontact mustenactD0 beforedependent6",
+      "reason": "Differentposecontrolafter482projectedgeometryreview; old4772/2cap staysclosed",
+      "motionApproval": false,
+      "worldContactApproval": false,
+      "fanoutAuthorized": false,
+      "calls": [
+        {
+          "frame": 4,
+          "kind": "initial",
+          "status": "HELD_WRONG_CONTACT",
+          "receipt": "docs/art/pipeline/infantry-projected-contact-482/F4-initial-call.json",
+          "sha256": "803d7fd4896f70bb99457f6c0ca9bb80c62f5d6726622e0b4e3b72aab20ea1d4"
+        },
+        {
+          "frame": 4,
+          "kind": "correction",
+          "status": "HELD_REPEATED_WRONG_SUPPORT",
+          "receipt": "docs/art/pipeline/infantry-projected-contact-482/F4-correction1-call.json",
+          "sha256": "0fd7f1efca6aba50807907e2dbcbe9daf53c47b7dbdf76d1ed823e4ca2ee09f9"
+        }
+      ],
+      "callsRemaining": 0,
+      "stopReason": "Two successivewholeoutputsfailedphysicalsupportexchange, includingwholeoriginalarrowguide. No remainingcorrection retry. Dependent6notcalled."
+    },
+    {
+      "id": "infantry-D0-whole-pose-walk-483",
+      "identity": "infantry",
+      "action": "walk",
+      "direction": 0,
+      "compilerJob": "infantry-original-D0-whole-pose-walk-483",
+      "status": "HELD_TOOL_METHOD_FAILURE_NO_MORE_CALLS",
+      "callLimit": 7,
+      "callsUsed": 1,
+      "correctionCap": 0,
+      "correctionsUsed": 0,
+      "slots": [
+        {
+          "frame": 0,
+          "phase": 0,
+          "status": "selected",
+          "kind": "initial",
+          "template": "key"
+        },
+        {
+          "frame": 1,
+          "phase": 0.125,
+          "status": "pending",
+          "kind": "initial",
+          "template": "inbetween"
+        },
+        {
+          "frame": 2,
+          "phase": 0.25,
+          "status": "pending",
+          "kind": "initial",
+          "template": "key"
+        },
+        {
+          "frame": 3,
+          "phase": 0.375,
+          "status": "pending",
+          "kind": "initial",
+          "template": "inbetween"
+        },
+        {
+          "frame": 4,
+          "phase": 0.5,
+          "status": "held",
+          "kind": "initial",
+          "template": "key"
+        },
+        {
+          "frame": 5,
+          "phase": 0.625,
+          "status": "pending",
+          "kind": "initial",
+          "template": "inbetween"
+        },
+        {
+          "frame": 6,
+          "phase": 0.75,
+          "status": "pending",
+          "kind": "initial",
+          "template": "key"
+        },
+        {
+          "frame": 7,
+          "phase": 0.875,
+          "status": "pending",
+          "kind": "initial",
+          "template": "inbetween"
+        }
+      ],
+      "executionSequence": [
+        4,
+        2,
+        6,
+        1,
+        3,
+        5,
+        7
+      ],
+      "dependencyGate": "F4wholeguidecontact mustenactlegexchange; sixdependentscloseduntilindependentstillgate",
+      "reason": "Substantiallydifferentposecontrol: completewholeclothedposeguide withconnectedlegs andocclusion. Prior482closed2calls. No correctionretryonfirstcontact; ifF4fails closemethod.",
+      "motionApproval": false,
+      "worldContactApproval": false,
+      "fanoutAuthorized": false,
+      "calls": [
+        {
+          "frame": 4,
+          "kind": "initial",
+          "status": "HELD_TOOL_METHOD_FAILURE",
+          "receipt": "docs/art/pipeline/infantry-whole-pose-483/F4-call.json",
+          "sha256": "af2fd558489151d7c5f4b191daf6501cf70323734125ea3ecde7afdf5653a26a"
+        }
+      ],
+      "callsRemaining": 0,
+      "stopReason": "Completewholeclothedposeguideignored; zero-correctionpolicyclosesfirstfailure. Threeactualcalls across482/483 failedlegexchange. No equivalentneworders."
+    },
+    {
+      "id": "infantry-D0-F4-target-edit-486",
+      "identity": "infantry",
+      "action": "walk",
+      "direction": 0,
+      "status": "HELD_CONTACT_REVERSION_NO_MORE_CALLS",
+      "callLimit": 1,
+      "callsUsed": 1,
+      "correctionCap": 0,
+      "correctionsUsed": 0,
+      "callsRemaining": 0,
+      "slots": [
+        {
+          "frame": 0,
+          "phase": 0,
+          "status": "selected",
+          "kind": "initial",
+          "template": "key"
+        },
+        {
+          "frame": 1,
+          "phase": 0.125,
+          "status": "selected",
+          "kind": "initial",
+          "template": "key"
+        },
+        {
+          "frame": 2,
+          "phase": 0.25,
+          "status": "selected",
+          "kind": "initial",
+          "template": "key"
+        },
+        {
+          "frame": 3,
+          "phase": 0.375,
+          "status": "selected",
+          "kind": "initial",
+          "template": "key"
+        },
+        {
+          "frame": 4,
+          "phase": 0.5,
+          "status": "held",
+          "kind": "initial",
+          "template": "key",
+          "claim": {
+            "token": "29c11459-5c02-43da-a75b-b87f0203b12b",
+            "requestSHA": "637a608092b03c7944bbfdbfa3a42e0ce1fcb5e3e2bf1617ef44b9198e7eca69",
+            "claimedAt": "2026-10-12T09:46:25.031Z"
+          },
+          "settlement": {
+            "token": "29c11459-5c02-43da-a75b-b87f0203b12b",
+            "settledAt": "2026-10-12T09:49:35.381Z",
+            "output": {
+              "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/infantry-F4-target-edit-486/raw.png",
+              "sha256": "8c71d410d3d4bcb1035f527bbddcc20b97348a4b597a46ce4f4752f1bf2bc414"
+            },
+            "approval": false
+          }
+        },
+        {
+          "frame": 5,
+          "phase": 0.625,
+          "status": "selected",
+          "kind": "initial",
+          "template": "key"
+        },
+        {
+          "frame": 6,
+          "phase": 0.75,
+          "status": "selected",
+          "kind": "initial",
+          "template": "key"
+        },
+        {
+          "frame": 7,
+          "phase": 0.875,
+          "status": "selected",
+          "kind": "initial",
+          "template": "key"
+        }
+      ],
+      "humanAuthorization": {
+        "answer": "Thử một edit trên F4/465",
+        "questionItemId": "[\"request_user_input_async\",\"call_EJ2igxqlIwcXRsUdWOW6Wqh6\",0]",
+        "scope": "ONE builtin whole465 edit, no retry, no API, retain opposite physical leg ownership while correcting diagonal contact. Does not reopen477482483."
+      },
+      "executionSequence": [
+        4
+      ],
+      "motionApproval": false,
+      "runtimeInstall": false,
+      "fanoutAuthorized": false,
+      "closed": true,
+      "closure": "ONE human-authorized actual builtin edit of465 returned F0physicallegownership. Zero retries; no replacement/dependent call authorized. Target-first role support added after trial, not re-dispatched."
+    },
+    {
+      "id": "villager-D1-whole-clothed-control-491-F2-ONE",
+      "jobKind": "action",
+      "identity": "villager",
+      "action": "walk",
+      "direction": 1,
+      "job": {
+        "id": "villager-D1-whole-clothed-control-491",
+        "action": "walk",
+        "direction": 1,
+        "variant": "whole-contour-stance-method-trial",
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pose-control-491/trial-job.json",
+        "sha256": "9b99a994661159072381da0b1f944cc0b0fb1824e1581d6bef771668f072c10f"
+      },
+      "status": "HELD_METHOD_CONTROL_NOT_FOLLOWED",
+      "callLimit": 1,
+      "callsUsed": 1,
+      "correctionCap": 0,
+      "correctionsUsed": 0,
+      "slots": [
+        {
+          "frame": 0,
+          "phase": 0,
+          "status": "selected",
+          "kind": "initial",
+          "template": "key"
+        },
+        {
+          "frame": 1,
+          "phase": 0.125,
+          "status": "selected",
+          "kind": "initial",
+          "template": "key"
+        },
+        {
+          "frame": 2,
+          "phase": 0.25,
+          "status": "held",
+          "kind": "initial",
+          "template": "key",
+          "claim": {
+            "token": "85ab9283-3eb4-4de6-a64b-99cd93f4ba25",
+            "requestSHA": "963ae342c88ce82a4eeecf793d62ed32a4ce6c8a2b623bbce4b05bd9626d641a",
+            "claimedAt": "2026-10-12T15:05:01.160Z"
+          },
+          "settlement": {
+            "token": "85ab9283-3eb4-4de6-a64b-99cd93f4ba25",
+            "settledAt": "2026-10-12T15:07:57.735Z",
+            "output": {
+              "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pose-control-491/trial-F2-raw.png",
+              "sha256": "e3bfb1a2863d8304df51017bb04e3d4354207a999e97573c446185036ab66ba6"
+            },
+            "approval": false
+          }
+        },
+        {
+          "frame": 3,
+          "phase": 0.375,
+          "status": "selected",
+          "kind": "initial",
+          "template": "key"
+        },
+        {
+          "frame": 4,
+          "phase": 0.5,
+          "status": "selected",
+          "kind": "initial",
+          "template": "key"
+        },
+        {
+          "frame": 5,
+          "phase": 0.625,
+          "status": "selected",
+          "kind": "initial",
+          "template": "key"
+        },
+        {
+          "frame": 6,
+          "phase": 0.75,
+          "status": "selected",
+          "kind": "initial",
+          "template": "key"
+        },
+        {
+          "frame": 7,
+          "phase": 0.875,
+          "status": "selected",
+          "kind": "initial",
+          "template": "key"
+        }
+      ],
+      "executionSequence": [
+        2
+      ],
+      "method": "Complete hand-authored clothed silhouette with explicit continuous stance-compensated sole paths; source-pixel-free guide, allphases preauthored before request",
+      "budgetDecision": {
+        "basis": "Latest human rejectedVillager490 and requestedcontinue; workflow permits demonstrably different2D control with finite order. Independent491revision1 recommendsONE methodtrial, root grantsONE initial methodprobe zero corrections/descendants.",
+        "historicalCorrectionsUsedAtLeast": 2,
+        "historicalCorrectionReset": false,
+        "oldMethods": "009013/010 andInfantry482483486 remain consumed/closed; no edits to original ledger records"
+      },
+      "motionApproval": false,
+      "runtimeInstall": false,
+      "fanoutAuthorized": false,
+      "callsRemaining": 0,
+      "closed": true,
+      "closure": "ONE call consumed; illustration retained old split-foot pose rather than whole-clothed passing control. Independent trial-review HELD, zero retries, no dependent calls, no source selection/install."
+    },
+    {
+      "id": "villager-D1-guide-first-492-F2-ONE",
+      "jobKind": "action",
+      "identity": "villager",
+      "action": "walk",
+      "direction": 1,
+      "job": {
+        "id": "villager-D1-guide-first-492",
+        "action": "walk",
+        "direction": 1,
+        "variant": "guide-primary-whole-illustration",
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-guide-first-492/job.json",
+        "sha256": "e6cdb058bad63d961729f713f0b7ea163d90afedc34d55e03fef54e5b65e8663"
+      },
+      "referenceMode": "guide-first",
+      "poseGuide": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pose-control-491/guide/F2.png",
+        "sha256": "cad740daf00c33a47a41ef41e0509ab817db4cd8dc8a5c3e485d7502c3568c1c",
+        "role": "guidetarget",
+        "status": "authoring-only",
+        "jobId": "villager-D1-guide-first-492",
+        "frame": 2,
+        "phase": 0.25,
+        "provenance": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-guide-first-492/guide-target-provenance.json",
+          "sha256": "b0d380521b6b0c6c7790e9bb8d6b7d6cc926a91f028b232e3452e0ecf6b2b98a"
+        }
+      },
+      "status": "HELD_GUIDE_FIRST_POSE_AND_SCALE",
+      "callLimit": 1,
+      "callsUsed": 1,
+      "correctionCap": 0,
+      "correctionsUsed": 0,
+      "slots": [
+        {
+          "frame": 0,
+          "phase": 0,
+          "status": "selected",
+          "kind": "initial",
+          "template": "key"
+        },
+        {
+          "frame": 1,
+          "phase": 0.125,
+          "status": "selected",
+          "kind": "initial",
+          "template": "key"
+        },
+        {
+          "frame": 2,
+          "phase": 0.25,
+          "status": "held",
+          "kind": "initial",
+          "template": "guide_key",
+          "claim": {
+            "token": "1f4b0e65-eb7b-436f-93f3-b56c2e8a5b71",
+            "requestSHA": "0c3a80f7bb7b6d34a1dd2abc64e1e7b4408b9bad7f023cbff7dbf9f01458b952",
+            "claimedAt": "2026-10-12T15:40:19.906Z"
+          },
+          "settlement": {
+            "token": "1f4b0e65-eb7b-436f-93f3-b56c2e8a5b71",
+            "settledAt": "2026-10-12T15:41:54.054Z",
+            "output": {
+              "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-guide-first-492/trial-F2-raw.png",
+              "sha256": "900ba5d184b37f6374a1953e3796bd828022a6f9e1b32be8d4365bcc7a21b650"
+            },
+            "approval": false
+          }
+        },
+        {
+          "frame": 3,
+          "phase": 0.375,
+          "status": "selected",
+          "kind": "initial",
+          "template": "key"
+        },
+        {
+          "frame": 4,
+          "phase": 0.5,
+          "status": "selected",
+          "kind": "initial",
+          "template": "key"
+        },
+        {
+          "frame": 5,
+          "phase": 0.625,
+          "status": "selected",
+          "kind": "initial",
+          "template": "key"
+        },
+        {
+          "frame": 6,
+          "phase": 0.75,
+          "status": "selected",
+          "kind": "initial",
+          "template": "key"
+        },
+        {
+          "frame": 7,
+          "phase": 0.875,
+          "status": "selected",
+          "kind": "initial",
+          "template": "key"
+        }
+      ],
+      "executionSequence": [
+        2
+      ],
+      "scope": "ONE missingF2 whole originalidentity illustration probe; no oldwalkframe attached, no descendantcall/correction/install/fanout",
+      "changedControl": "Primary pose target authoredwholeclothedguide; appearance second originalSouth, rather than491actualoldF2 edit target. New explicit reference contract, not weakened edittargetguard or heldtargetbypass.",
+      "authorizationBasis": "Latest human continue directs queued guide-first mechanism implementation. Root integrates after independently recommendedONE probe and typedreferenceguard tests. No guarantee geometry follows.",
+      "independentIntake": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-guide-first-492/independent-intake.json",
+        "sha256": "d12a1f770d6c6d62b5777fcf2ffcb7c21686db17fdd9136346c047ecffdb82b8"
+      },
+      "historicalBudget": {
+        "009013CorrectionsConsumedAtLeast": 2,
+        "491TargetFirstCalls": 1,
+        "reset": false,
+        "oldMethodsAndOrders": "All CLOSED originalbytes untouched; no Infantry482483486 work"
+      },
+      "motionApproval": false,
+      "runtimeInstall": false,
+      "fanoutAuthorized": false,
+      "callsRemaining": 0,
+      "closed": true,
+      "closure": "ONE guide-first builtin output remained splitfoot rather than closepassing and changedupperbody/hat scale. Independenttrialreview HELD;0retries/corrections/descendants. No source selected, no runtime install."
+    },
+    {
+      "id": "residence-construction-F0-497",
+      "jobKind": "building-state",
+      "kind": "building",
+      "buildingType": "residence",
+      "state": "construction",
+      "direction": null,
+      "status": "CLOSED",
+      "job": {
+        "id": "residence-construction-whole497",
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/residence-construction-497/job.json",
+        "sha256": "3fd0f1e56f91e17ff67d486668117008c8795cfee2e7d3623e891e5f0784d7de"
+      },
+      "callLimit": 1,
+      "callsUsed": 1,
+      "correctionCap": 0,
+      "correctionsUsed": 0,
+      "slots": [
+        {
+          "frame": 0,
+          "phase": 0,
+          "status": "held",
+          "kind": "initial",
+          "template": "building_key",
+          "claim": {
+            "token": "0f59e612-a818-4873-9173-0dc71742e4a0",
+            "requestSHA": "37e24cde638d4cda808180c9d2510c967bdbf56206ac09af651bc984bbfacb98",
+            "claimedAt": "2026-10-13T03:50:32.460Z"
+          },
+          "settlement": {
+            "token": "0f59e612-a818-4873-9173-0dc71742e4a0",
+            "settledAt": "2026-10-13T03:52:31.148Z",
+            "output": {
+              "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/residence-construction-497/raw-F0.png",
+              "sha256": "e98afbf79b648b7645b32c8e2d9ad1dbbe8a6346e26ad68a49b4b33c840daea0"
+            },
+            "approval": false
+          }
+        },
+        {
+          "frame": 1,
+          "phase": 0.25,
+          "status": "pending",
+          "kind": "initial",
+          "template": "building_key"
+        },
+        {
+          "frame": 2,
+          "phase": 0.5,
+          "status": "pending",
+          "kind": "initial",
+          "template": "building_key"
+        },
+        {
+          "frame": 3,
+          "phase": 0.75,
+          "status": "pending",
+          "kind": "initial",
+          "template": "building_key"
+        }
+      ],
+      "enforcement": {
+        "version": 1,
+        "taskId": "root-art-intake497",
+        "baseline": {
+          "callsUsed": 0,
+          "correctionsUsed": 0
+        },
+        "method": {
+          "family": "whole2D.residence.construction.first-key.v1",
+          "parentOrderIds": []
+        },
+        "prerequisites": []
+      },
+      "authorizationBasis": "User approved fullprojectplan G5authoredbuildingstates, activecontinuousgoal. Root independent nonunitbuilding task; ONEF0construction source from existingmaster, no unitfanout/no failedmethodreset.",
+      "selectionApproval": false,
+      "runtimeInstall": false,
+      "releaseApproval": false,
+      "callsRemaining": 0,
+      "closed": true,
+      "closure": {
+        "taskId": "root-art-intake497",
+        "receiptSHA": "5ad689a1a7fb707a21419807fd715e4bd03e2384a6b2b926df9f2720a8f708e5",
+        "scope": "Custody closure only; no approval, refund or handle authenticity guarantee"
+      }
+    },
+    {
+      "id": "residence-construction-F2-498",
+      "jobKind": "building-state",
+      "kind": "building",
+      "buildingType": "residence",
+      "state": "construction",
+      "direction": null,
+      "status": "OPEN",
+      "job": {
+        "id": "residence-construction-loop498-key",
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/residence-construction-498/jobs/key-job.json",
+        "sha256": "3d8449f4d603c966f5ca99db3a714309ff928fcb4fbe9421c9ea3ec45cbf4920"
+      },
+      "callLimit": 1,
+      "callsUsed": 1,
+      "correctionCap": 0,
+      "correctionsUsed": 0,
+      "callsRemaining": 0,
+      "slots": [
+        {
+          "frame": 0,
+          "phase": 0,
+          "status": "selected",
+          "kind": "initial",
+          "template": "building_key"
+        },
+        {
+          "frame": 1,
+          "phase": 0.25,
+          "status": "pending",
+          "kind": "initial",
+          "template": "building_key"
+        },
+        {
+          "frame": 2,
+          "phase": 0.5,
+          "status": "held",
+          "kind": "initial",
+          "template": "building_key",
+          "claim": {
+            "token": "bb441b2c-d710-4344-86a4-1f236e0f1f49",
+            "requestSHA": "155e5bb0e00b2b7306218d11d8b254589430cb755e1c40922a94705168369273",
+            "claimedAt": "2026-10-13T04:04:28.067Z"
+          },
+          "settlement": {
+            "token": "bb441b2c-d710-4344-86a4-1f236e0f1f49",
+            "settledAt": "2026-10-13T04:05:48.290Z",
+            "output": {
+              "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/residence-construction-498/raw/F2.png",
+              "sha256": "d03465a161d1df3c77fe0366d95c4a0957175d32c40153e1d8077b7c40a5e164"
+            },
+            "approval": false
+          }
+        },
+        {
+          "frame": 3,
+          "phase": 0.75,
+          "status": "pending",
+          "kind": "initial",
+          "template": "building_key"
+        }
+      ],
+      "enforcement": {
+        "version": 1,
+        "taskId": "root-construction498",
+        "baseline": {
+          "callsUsed": 0,
+          "correctionsUsed": 0
+        },
+        "method": {
+          "family": "whole2D.residence.construction.selected-key-sequence.v1",
+          "parentOrderIds": [
+            "residence-construction-F0-497"
+          ],
+          "differenceEvidence": {
+            "path": "docs/art/pipeline/residence-construction-498/reviews/method-difference.json",
+            "sha256": "f3c600df01155576d73a2d4a541a58d612bbe266872ca9f9b9aeb59d1026f809"
+          }
+        },
+        "prerequisites": [
+          {
+            "job": {
+              "path": "docs/art/pipeline/residence-construction-498/jobs/key-job.json",
+              "sha256": "3d8449f4d603c966f5ca99db3a714309ff928fcb4fbe9421c9ea3ec45cbf4920"
+            },
+            "frame": 0,
+            "phase": 0,
+            "input": {
+              "path": "docs/art/pipeline/residence-construction-497/raw-F0.png",
+              "sha256": "e98afbf79b648b7645b32c8e2d9ad1dbbe8a6346e26ad68a49b4b33c840daea0"
+            }
+          }
+        ]
+      },
+      "packageBudget": {
+        "initialLimit": 4,
+        "priorCalls": 1,
+        "missingFrames": [
+          1,
+          2,
+          3
+        ],
+        "correctionLimit": 0
+      },
+      "authorizationBasis": "Activefullgoal+approvedG5: originalF0selected, ONEnewmissingF2 fromF0neighbor undercumulative4initial/correction0. F1/F3notcalleduntilF2selected; no F0retry/unitfanout/failedmethodreset."
+    },
+    {
+      "id": "residence-construction-F1-F3-498",
+      "jobKind": "building-state",
+      "kind": "building",
+      "buildingType": "residence",
+      "state": "construction",
+      "direction": null,
+      "status": "OPEN",
+      "job": {
+        "id": "residence-construction-loop498-inbetweens",
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/residence-construction-498/jobs/inbetween-job.json",
+        "sha256": "3da67a45a03f41375427b5d746963530ee3ef10d5d6f3c7200a37a2da12416de"
+      },
+      "callLimit": 2,
+      "callsUsed": 2,
+      "correctionCap": 0,
+      "correctionsUsed": 0,
+      "callsRemaining": 0,
+      "slots": [
+        {
+          "frame": 0,
+          "phase": 0,
+          "status": "selected",
+          "kind": "initial",
+          "template": "building_key"
+        },
+        {
+          "frame": 1,
+          "phase": 0.25,
+          "status": "used",
+          "kind": "initial",
+          "template": "building_key",
+          "claim": {
+            "token": "c39d4f3a-afe4-4dba-bd98-1e71de33e2c9",
+            "requestSHA": "810429525a16fd07f75f6c02d21bba97c592b55189c54244b21fd7d60e134aa8",
+            "claimedAt": "2026-10-13T04:08:29.036Z"
+          }
+        },
+        {
+          "frame": 2,
+          "phase": 0.5,
+          "status": "selected",
+          "kind": "initial",
+          "template": "building_key"
+        },
+        {
+          "frame": 3,
+          "phase": 0.75,
+          "status": "used",
+          "kind": "initial",
+          "template": "building_key",
+          "claim": {
+            "token": "1166301b-86da-497a-a3b7-4787f7c5df22",
+            "requestSHA": "9704449053b6ffb9feddabc897e0c7fa7b9fda75fb9538495598938624a9873e",
+            "claimedAt": "2026-10-13T04:08:29.099Z"
+          }
+        }
+      ],
+      "enforcement": {
+        "version": 1,
+        "taskId": "root-construction498",
+        "baseline": {
+          "callsUsed": 0,
+          "correctionsUsed": 0
+        },
+        "method": {
+          "family": "whole2D.residence.construction.selected-key-sequence.v1",
+          "parentOrderIds": [
+            "residence-construction-F0-497"
+          ],
+          "differenceEvidence": {
+            "path": "docs/art/pipeline/residence-construction-498/reviews/method-difference.json",
+            "sha256": "f3c600df01155576d73a2d4a541a58d612bbe266872ca9f9b9aeb59d1026f809"
+          }
+        },
+        "prerequisites": [
+          {
+            "job": {
+              "path": "docs/art/pipeline/residence-construction-498/jobs/inbetween-job.json",
+              "sha256": "3da67a45a03f41375427b5d746963530ee3ef10d5d6f3c7200a37a2da12416de"
+            },
+            "frame": 0,
+            "phase": 0,
+            "input": {
+              "path": "docs/art/pipeline/residence-construction-497/raw-F0.png",
+              "sha256": "e98afbf79b648b7645b32c8e2d9ad1dbbe8a6346e26ad68a49b4b33c840daea0"
+            }
+          },
+          {
+            "job": {
+              "path": "docs/art/pipeline/residence-construction-498/jobs/inbetween-job.json",
+              "sha256": "3da67a45a03f41375427b5d746963530ee3ef10d5d6f3c7200a37a2da12416de"
+            },
+            "frame": 2,
+            "phase": 0.5,
+            "input": {
+              "path": "docs/art/pipeline/residence-construction-498/raw/F2.png",
+              "sha256": "d03465a161d1df3c77fe0366d95c4a0957175d32c40153e1d8077b7c40a5e164"
+            }
+          }
+        ]
+      },
+      "packageBudget": {
+        "initialLimit": 4,
+        "priorInitialCalls": 2,
+        "missing": [
+          1,
+          3
+        ],
+        "correctionLimit": 0,
+        "reset": false
+      },
+      "authorizationBasis": "SelectedF0/F2prerequisites exist afterindependentreview;2missinginbetweensONLY, old497F0 and498F2consumed; cumulative4initialcalls,noretry."
+    },
+    {
+      "id": "villager-D1-joint-key-study-509-ONE",
+      "jobKind": "key-study",
+      "studySchema": "rds-key-study/v1",
+      "status": "CLOSED",
+      "identity": "villager",
+      "action": "walk",
+      "direction": 1,
+      "callLimit": 1,
+      "callsUsed": 1,
+      "correctionCap": 0,
+      "correctionsUsed": 0,
+      "slots": [
+        {
+          "frame": 0,
+          "phase": 0,
+          "status": "held",
+          "kind": "initial",
+          "template": "key_study",
+          "claim": {
+            "token": "d4135c28-f514-4e2a-86f3-c1f12baf8125",
+            "requestSHA": "826f1c1370dde4ea399aa67c09bffb5add45600f4cb1619ecff52c2c5ad959b4",
+            "claimedAt": "2026-10-13T07:48:36.831Z"
+          },
+          "settlement": {
+            "token": "d4135c28-f514-4e2a-86f3-c1f12baf8125",
+            "settledAt": "2026-10-13T07:53:57.591Z",
+            "output": {
+              "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-key-study-509/illustration/raw.png",
+              "sha256": "f8f7b412133aa047eacec3a2d2aeafe23c70df8de195393687083a842a92971e"
+            },
+            "approval": false
+          }
+        }
+      ],
+      "keyMap": [
+        {
+          "frame": 0,
+          "phase": 0,
+          "row": 0,
+          "column": 0
+        },
+        {
+          "frame": 2,
+          "phase": 0.25,
+          "row": 0,
+          "column": 1
+        },
+        {
+          "frame": 4,
+          "phase": 0.5,
+          "row": 1,
+          "column": 0
+        },
+        {
+          "frame": 6,
+          "phase": 0.75,
+          "row": 1,
+          "column": 1
+        }
+      ],
+      "job": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-key-study-509/job.json",
+        "sha256": "2710265b0914446ae6fad1c6d9c2dc54e4f9bd1327fc47813fd8078871de5534",
+        "id": "villager-D1-joint-key-study-509",
+        "action": "walk",
+        "direction": 1,
+        "variant": "joint-complementary-four-key-context"
+      },
+      "studyGuide": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-key-study-509/joint-guide.png",
+        "sha256": "4a62e739ffe141095b76c418e871b973e5db0d93311b76b7e04e87dacdb83dbf",
+        "role": "studyguide",
+        "status": "authoring-only",
+        "derivedFromSHA": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+        "provenance": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-key-study-509/guide-provenance.json",
+          "sha256": "224ae9f378ed8359151ba15c32e01f621523e49498fb6c1fee3a5434d2ce0ebe"
+        }
+      },
+      "studyLayout": {
+        "cell": {
+          "width": 256,
+          "height": 256
+        },
+        "pivot": {
+          "x": 133.51196172248802,
+          "y": 232.72727272727272,
+          "space": "source"
+        },
+        "render": {
+          "width": 42,
+          "height": 42
+        },
+        "columns": 2,
+        "rows": 2
+      },
+      "enforcement": {
+        "version": 1,
+        "taskId": "illustration-key-study509",
+        "baseline": {
+          "callsUsed": 0,
+          "correctionsUsed": 0
+        },
+        "method": {
+          "family": "joint-complementary-four-key-context507",
+          "parentOrderIds": [
+            "villager-D1-whole-clothed-control-491-F2-ONE",
+            "villager-D1-guide-first-492-F2-ONE"
+          ],
+          "differenceEvidence": {
+            "path": "docs/audits/continuation-509/review/method-difference.json",
+            "sha256": "38bf443391074e47a78989b95d6cc25d7be62544515bc2522ea1535c3948b476"
+          }
+        },
+        "prerequisites": []
+      },
+      "callsRemaining": 0,
+      "closed": true,
+      "closure": {
+        "taskId": "illustration-key-study509",
+        "receiptSHA": "e7edbd6c27e7917d8741c79f31a2e862049b7c7bd89bb3eb0efe553a6efbe3b5",
+        "scope": "Custody closure only; no approval, refund or handle authenticity guarantee"
+      }
+    },
+    {
+      "id": "granary-death-whole511",
+      "jobKind": "building-state",
+      "kind": "building",
+      "buildingType": "granary",
+      "state": "death",
+      "direction": null,
+      "status": "CLOSED",
+      "callLimit": 4,
+      "callsUsed": 4,
+      "correctionCap": 0,
+      "correctionsUsed": 0,
+      "job": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/authoring/job-selected-endpoints.json",
+        "sha256": "163f2da765c1ee9660cf94576f50692470e2b44b7c46efb64ccc697329dbcd41",
+        "id": "granary-death-whole511-selected-endpoints"
+      },
+      "slots": [
+        {
+          "frame": 0,
+          "phase": 0,
+          "status": "held",
+          "kind": "initial",
+          "template": "building_key",
+          "claim": {
+            "token": "06997374-f91e-42a6-b682-f12021a51c9d",
+            "requestSHA": "0240c307a33bf94f9a25e765174ebb4c83f00514673ad57f94bf53d85a6af683",
+            "claimedAt": "2026-10-13T10:53:56.645Z"
+          },
+          "settlement": {
+            "token": "06997374-f91e-42a6-b682-f12021a51c9d",
+            "settledAt": "2026-10-13T10:58:38.958Z",
+            "output": {
+              "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/illustration/F0-raw.png",
+              "sha256": "c853a3340a6e8173f882312a5b69c1f1abb8fc67a4743a39d93e7abce2280815"
+            },
+            "approval": false
+          }
+        },
+        {
+          "frame": 1,
+          "phase": 0.25,
+          "status": "held",
+          "kind": "initial",
+          "template": "building_key",
+          "claim": {
+            "token": "f8e252cc-fd62-44b9-b100-9cfb60b568ef",
+            "requestSHA": "c742a1e523726601b0d3dac9a285036f76c3e5f2e76b70032f9e2195cc247106",
+            "claimedAt": "2026-10-13T11:03:08.781Z"
+          },
+          "settlement": {
+            "token": "f8e252cc-fd62-44b9-b100-9cfb60b568ef",
+            "settledAt": "2026-10-13T11:07:40.058Z",
+            "output": {
+              "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/illustration/F1-raw.png",
+              "sha256": "b32a1f3cbee740b221c6a59bbd95eb05cf61566352f2a49d80489a27d437d6bd"
+            },
+            "approval": false
+          }
+        },
+        {
+          "frame": 2,
+          "phase": 0.5,
+          "status": "held",
+          "kind": "initial",
+          "template": "building_key",
+          "claim": {
+            "token": "6ea91e30-2d50-4889-94dd-b8290d6415a8",
+            "requestSHA": "4a6a39f51c37aa46aec55895bf58f64d6088c1f9d6102c58f58b1ff17c741335",
+            "claimedAt": "2026-10-13T11:03:08.844Z"
+          },
+          "settlement": {
+            "token": "6ea91e30-2d50-4889-94dd-b8290d6415a8",
+            "settledAt": "2026-10-13T11:07:40.078Z",
+            "output": {
+              "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/illustration/F2-raw.png",
+              "sha256": "05a7438ba8550214706d7107a83614235e7aff54c8f546cea5c90cf7487f40fa"
+            },
+            "approval": false
+          }
+        },
+        {
+          "frame": 3,
+          "phase": 0.75,
+          "status": "held",
+          "kind": "initial",
+          "template": "building_key",
+          "claim": {
+            "token": "5e796818-d267-47d9-9af0-1a21dde77969",
+            "requestSHA": "7738b5bcf9bca5a1cf8c044ea30621347cc4004afdffffe008c2c81d4353ad56",
+            "claimedAt": "2026-10-13T10:47:45.993Z"
+          },
+          "settlement": {
+            "token": "5e796818-d267-47d9-9af0-1a21dde77969",
+            "settledAt": "2026-10-13T10:51:20.501Z",
+            "output": {
+              "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/illustration/F3-raw.png",
+              "sha256": "e53a36ffe4a52477e2e598f7d4222d4a79ef75e222e09f479cf26159294719e9"
+            },
+            "approval": false
+          }
+        }
+      ],
+      "enforcement": {
+        "version": 1,
+        "taskId": "illustration-building511",
+        "baseline": {
+          "callsUsed": 0,
+          "correctionsUsed": 0
+        },
+        "method": {
+          "family": "original-granary-death-whole511",
+          "parentOrderIds": []
+        },
+        "prerequisites": [
+          {
+            "job": {
+              "path": "docs/art/pipeline/granary-death-511/authoring/job-selected-endpoints.json",
+              "sha256": "163f2da765c1ee9660cf94576f50692470e2b44b7c46efb64ccc697329dbcd41"
+            },
+            "frame": 0,
+            "phase": 0,
+            "input": {
+              "path": "docs/art/pipeline/granary-death-511/illustration/F0-raw.png",
+              "sha256": "c853a3340a6e8173f882312a5b69c1f1abb8fc67a4743a39d93e7abce2280815"
+            }
+          },
+          {
+            "job": {
+              "path": "docs/art/pipeline/granary-death-511/authoring/job-selected-endpoints.json",
+              "sha256": "163f2da765c1ee9660cf94576f50692470e2b44b7c46efb64ccc697329dbcd41"
+            },
+            "frame": 3,
+            "phase": 0.75,
+            "input": {
+              "path": "docs/art/pipeline/granary-death-511/illustration/F3-raw.png",
+              "sha256": "e53a36ffe4a52477e2e598f7d4222d4a79ef75e222e09f479cf26159294719e9"
+            }
+          }
+        ]
+      },
+      "callsRemaining": 0,
+      "closed": true,
+      "closure": {
+        "taskId": "illustration-building511",
+        "receiptSHA": "9f7601c68d6663905e4f474fc357dea9fac1afce52263d0aab31c8c73c36d66f",
+        "scope": "Custody closure only; no approval, refund or handle authenticity guarantee"
+      }
+    },
+    {
+      "id": "villager-idle-D1-whole523-THREE",
+      "status": "CLOSED",
+      "jobKind": "action",
+      "identity": "villager",
+      "action": "idle",
+      "direction": 1,
+      "job": {
+        "id": "villager-idle-D1-whole523",
+        "action": "idle",
+        "direction": 1,
+        "variant": "rest-breath-rest-original-endpoint",
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-idle-523/authoring/job-selected-endpoints.json",
+        "sha256": "167998417205c7d1d0ab6186feb8ec5b3aa717cda9e3932d2ee115cd78d595ac"
+      },
+      "callLimit": 3,
+      "callsUsed": 3,
+      "correctionCap": 0,
+      "correctionsUsed": 0,
+      "callsRemaining": 0,
+      "slots": [
+        {
+          "frame": 0,
+          "phase": 0,
+          "status": "selected",
+          "kind": "initial",
+          "template": "key"
+        },
+        {
+          "frame": 1,
+          "phase": 0.25,
+          "status": "held",
+          "kind": "initial",
+          "template": "inbetween",
+          "claim": {
+            "token": "5a865837-6efb-443b-b096-47a96b1807af",
+            "requestSHA": "1da85b10b0c27771387aff861289d1162aafdefb54767ecdea4692595985d1fd",
+            "claimedAt": "2026-10-13T12:31:35.036Z"
+          },
+          "settlement": {
+            "token": "5a865837-6efb-443b-b096-47a96b1807af",
+            "settledAt": "2026-10-13T12:35:50.768Z",
+            "output": {
+              "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-idle-523/illustration/F1-raw.png",
+              "sha256": "624beec46371dfc6502c182b03ffb1cd2dff614966134e337161f4c8875ae643"
+            },
+            "approval": false
+          }
+        },
+        {
+          "frame": 2,
+          "phase": 0.5,
+          "status": "held",
+          "kind": "initial",
+          "template": "key",
+          "claim": {
+            "token": "ac551f7f-db74-441a-ab07-f99c59fa00b4",
+            "requestSHA": "d2b256f6613b44b6d108bf4327d2af403cd30e2c5b3f0277f94430e977c8f8fb",
+            "claimedAt": "2026-10-13T12:20:49.343Z"
+          },
+          "settlement": {
+            "token": "ac551f7f-db74-441a-ab07-f99c59fa00b4",
+            "settledAt": "2026-10-13T12:26:01.448Z",
+            "output": {
+              "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-idle-523/illustration/F2-raw.png",
+              "sha256": "7e2f4c8c46d3bd61bd680019e020425f3bca0e4cc434559e39645a225fefe502"
+            },
+            "approval": false
+          }
+        },
+        {
+          "frame": 3,
+          "phase": 0.75,
+          "status": "held",
+          "kind": "initial",
+          "template": "inbetween",
+          "claim": {
+            "token": "2741a288-59e0-47d6-8a73-0656ae8b80a1",
+            "requestSHA": "8ba5aa9ebd620bd0b8f681d230fda15ff13f7afb35833626c78f102a7be8178d",
+            "claimedAt": "2026-10-13T12:31:35.087Z"
+          },
+          "settlement": {
+            "token": "2741a288-59e0-47d6-8a73-0656ae8b80a1",
+            "settledAt": "2026-10-13T12:35:50.789Z",
+            "output": {
+              "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-idle-523/illustration/F3-raw.png",
+              "sha256": "faa0cda1c00f5aadd3f12034b6d6ce15b8b7093ff8702f60a221bc55dbcd454b"
+            },
+            "approval": false
+          }
+        }
+      ],
+      "enforcement": {
+        "version": 1,
+        "taskId": "illustration-idle523",
+        "baseline": {
+          "callsUsed": 0,
+          "correctionsUsed": 0
+        },
+        "method": {
+          "family": "same-original-rest-breath-idle523",
+          "parentOrderIds": []
+        },
+        "prerequisites": [
+          {
+            "job": {
+              "path": "docs/art/pipeline/villager-idle-523/authoring/job-selected-endpoints.json",
+              "sha256": "167998417205c7d1d0ab6186feb8ec5b3aa717cda9e3932d2ee115cd78d595ac"
+            },
+            "frame": 0,
+            "phase": 0,
+            "input": {
+              "path": "docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+              "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+            }
+          },
+          {
+            "job": {
+              "path": "docs/art/pipeline/villager-idle-523/authoring/job-selected-endpoints.json",
+              "sha256": "167998417205c7d1d0ab6186feb8ec5b3aa717cda9e3932d2ee115cd78d595ac"
+            },
+            "frame": 2,
+            "phase": 0.5,
+            "input": {
+              "path": "docs/art/pipeline/villager-idle-523/illustration/F2-raw.png",
+              "sha256": "7e2f4c8c46d3bd61bd680019e020425f3bca0e4cc434559e39645a225fefe502"
+            }
+          }
+        ]
+      },
+      "closed": true,
+      "closure": {
+        "taskId": "illustration-idle523",
+        "receiptSHA": "5f64c05ab848781b4e24afa3b4f96d23d84940dade586ae5f386e89b0d915a92",
+        "scope": "Custody closure only; no approval, refund or handle authenticity guarantee"
+      }
+    },
+    {
+      "id": "villager-hit-D1-whole530-THREE",
+      "status": "OPEN",
+      "jobKind": "action",
+      "identity": "villager",
+      "action": "hit",
+      "direction": 1,
+      "job": {
+        "id": "villager-hit-D1-whole530",
+        "action": "hit",
+        "direction": 1,
+        "variant": "nonfatal-planted-recoil-original-rest",
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-hit-530/authoring/job-after-F1.json",
+        "sha256": "2d7caa81993185016477d40ecc5f3bd736226c40e17f42749905238684a77405"
+      },
+      "callLimit": 3,
+      "callsUsed": 2,
+      "correctionCap": 0,
+      "correctionsUsed": 0,
+      "callsRemaining": 1,
+      "slots": [
+        {
+          "frame": 0,
+          "phase": 0,
+          "status": "used",
+          "kind": "initial",
+          "template": "inbetween",
+          "claim": {
+            "token": "0e5e0984-0bb3-4562-82e2-e255e3ac78aa",
+            "requestSHA": "0d3b6319eeff16d4cb1d9b046d73a673934303b64dd1e8e636a37208055c4cf8",
+            "claimedAt": "2026-10-13T15:59:26.949Z"
+          }
+        },
+        {
+          "frame": 1,
+          "phase": 0.25,
+          "status": "held",
+          "kind": "initial",
+          "template": "key",
+          "claim": {
+            "token": "60b64985-d856-4e42-b098-96138553266a",
+            "requestSHA": "c6f4df9af02162b716f00651f5a52c5187ba9d7d8e09daeceb1c74e6bb0dc150",
+            "claimedAt": "2026-10-13T15:51:24.694Z"
+          },
+          "settlement": {
+            "token": "60b64985-d856-4e42-b098-96138553266a",
+            "settledAt": "2026-10-13T15:54:55.229Z",
+            "output": {
+              "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-hit-530/illustration/F1-raw.png",
+              "sha256": "e89cf68b92047683d0385d745c40e9299a6c7fbf9f3b4c15e21a526c3ed35d23"
+            },
+            "approval": false
+          }
+        },
+        {
+          "frame": 2,
+          "phase": 0.5,
+          "status": "pending",
+          "kind": "initial",
+          "template": "inbetween"
+        },
+        {
+          "frame": 3,
+          "phase": 0.75,
+          "status": "selected",
+          "kind": "initial",
+          "template": "key"
+        }
+      ],
+      "enforcement": {
+        "version": 1,
+        "taskId": "illustration-hit530",
+        "baseline": {
+          "callsUsed": 0,
+          "correctionsUsed": 0
+        },
+        "method": {
+          "family": "same-original-stationary-nonfatal-hit530",
+          "parentOrderIds": []
+        },
+        "prerequisites": [
+          {
+            "job": {
+              "path": "docs/art/pipeline/villager-hit-530/authoring/job-after-F1.json",
+              "sha256": "2d7caa81993185016477d40ecc5f3bd736226c40e17f42749905238684a77405"
+            },
+            "frame": 1,
+            "phase": 0.25,
+            "input": {
+              "path": "docs/art/pipeline/villager-hit-530/illustration/F1-raw.png",
+              "sha256": "e89cf68b92047683d0385d745c40e9299a6c7fbf9f3b4c15e21a526c3ed35d23"
+            }
+          },
+          {
+            "job": {
+              "path": "docs/art/pipeline/villager-hit-530/authoring/job-after-F1.json",
+              "sha256": "2d7caa81993185016477d40ecc5f3bd736226c40e17f42749905238684a77405"
+            },
+            "frame": 3,
+            "phase": 0.75,
+            "input": {
+              "path": "docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+              "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "fresh-pixel-worker-walk-S-535-ONE",
+      "jobKind": "fresh-pixel",
+      "identityMode": "new-pixel-identity",
+      "identity": "villager",
+      "action": "walk",
+      "direction": 1,
+      "status": "CLOSED",
+      "designPin": {
+        "path": "docs/art/pixel-worker-535/authoring/DESIGN.md",
+        "sha256": "8b2411b5b22c49d6d93974a416c0246105a41129b5e5c5aa8cabaf47696302b7"
+      },
+      "stylePin": {
+        "path": "docs/PIXEL_ART_STYLE_GUIDE.md",
+        "sha256": "13bbeb81f263fb69f67ebda15313909a02c24b2f92ca309644deb877a06430c8"
+      },
+      "promptPin": {
+        "path": "docs/art/pixel-worker-535/authoring/walk-S-prompt.txt",
+        "sha256": "b4a08c3ea32c921cd5f25b6e3c5a18be8a80e1995e073f0635f31452d0398715"
+      },
+      "jobPin": {
+        "path": "docs/art/pixel-worker-535/authoring/job.json",
+        "sha256": "52c1e64ed007bd889f80d3dd0be32bc4a6602dc98b61aa1dd314cfa75c92b36c"
+      },
+      "job": {
+        "id": "new-worker-walk-S-535",
+        "path": "docs/art/pixel-worker-535/authoring/job.json",
+        "sha256": "52c1e64ed007bd889f80d3dd0be32bc4a6602dc98b61aa1dd314cfa75c92b36c"
+      },
+      "lineage": {
+        "humanScope": "pixel-rebuild-535"
+      },
+      "callLimit": 1,
+      "callsUsed": 1,
+      "callsRemaining": 0,
+      "correctionCap": 0,
+      "correctionsUsed": 0,
+      "slots": [
+        {
+          "frame": 0,
+          "phase": 0,
+          "kind": "initial",
+          "template": "pixel_strip",
+          "status": "held",
+          "claim": {
+            "token": "03c6ea39-1c01-4fe3-8922-b770d8afeb18",
+            "requestSHA": "c982f399ee02bda909572fdbb5e9617aadfbcaf1b4e50f984c1db150468f6ad1",
+            "claimedAt": "2026-10-15T06:43:45.078Z"
+          },
+          "settlement": {
+            "token": "03c6ea39-1c01-4fe3-8922-b770d8afeb18",
+            "settledAt": "2026-10-15T06:44:59.995Z",
+            "output": {
+              "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pixel-worker-535/raw/walk-S-provider.png",
+              "sha256": "190d53e28528a04e3bc8201fe9bbdce68c768e1db97dfd989c74681af3056a68"
+            },
+            "approval": false
+          }
+        }
+      ],
+      "enforcement": {
+        "version": 1,
+        "taskId": "pixel-illustration535",
+        "baseline": {
+          "callsUsed": 0,
+          "correctionsUsed": 0
+        },
+        "method": {
+          "family": "fresh-native-pixel-cycle535",
+          "parentOrderIds": [
+            "villager-D1-whole-clothed-control-491-F2-ONE",
+            "villager-D1-guide-first-492-F2-ONE",
+            "villager-D1-joint-key-study-509-ONE"
+          ],
+          "differenceEvidence": {
+            "path": "docs/audits/pixel-rebuild-535/review/method-difference.json",
+            "sha256": "fbc4fa5f718630ede1339f0743a3279146fc21f761e93aabb9a7e6e595516175"
+          }
+        },
+        "prerequisites": []
+      },
+      "scope": "One candidate strip only; no selected art/motion/runtime/public approval, no automatic corrections",
+      "closed": true,
+      "closure": {
+        "taskId": "pixel-illustration535",
+        "receiptSHA": "c7262bf232cd56bb52a487f4622399c0d502536ceaafd4af51ae4a86b36258dd",
+        "scope": "Custody closure only; no approval, refund or handle authenticity guarantee"
+      }
+    }
+  ],
+  "nextDependencies": [
+    "Read authoritative docs/PROJECT_STATE.md and docs/NEXT_STEPS.md, not historical checkpoint queues",
+    "490owner rejected walk;491/492 HELD/CLOSED with no equivalent retry or budget reset",
+    "495 local2D capability FAILED runtime prerequisites; usable supported runtime then finite materially different passing trial",
+    "493local action decoding implemented; actual full-roster working-set/cold/eviction/dense qualification OPEN",
+    "Missing identity/view/equipment/layout locks and authored action8direction banks; Villager then Infantry/complex reuse"
+  ]
+}

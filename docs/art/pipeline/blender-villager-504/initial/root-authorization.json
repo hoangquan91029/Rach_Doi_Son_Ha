@@ -1,0 +1,33 @@
+{
+  "schema": "rds-blender-finite-authoring/v1",
+  "taskId": "villager-control504",
+  "decision": "AUTHOR_NEUTRAL_SCENE",
+  "reviewer": "/root",
+  "mechanismDecision": "MATERIALLY_DIFFERENT",
+  "failedParent": "villager-neutral501 CLOSED/FAILED correction1/1",
+  "changedControl": "Sameoriginal two-view garment depth constraints, semantic material boundaries, source-face-only UV on solid curvedhead, original-size frontbrim geometry; old globalwholeunitUV and globalhattilt method not reused. Actualappearance stillUNKNOWN.",
+  "script": {
+    "path": "scripts/blender/villager504.py",
+    "sha256": "e97cc98b24fa8237028330643a0bbc17eca40f85bfd820367212b751ea7556f8"
+  },
+  "controlSHA256": "9253cbc659f5a0fce2d2606eadef9921bdf985567cc9decf2cef32b88cfae966",
+  "independentReview": {
+    "path": "docs/audits/continuation-504/identity-review/mechanism-review.json",
+    "sha256": "63fbaaef899e4339153da84071a3bcf8ae130df0f19de1a8ccc0f4726e792311"
+  },
+  "renderDirections": [
+    0,
+    1
+  ],
+  "initialRenderCap": 2,
+  "correctionCap": 0,
+  "output": "docs/art/pipeline/blender-villager-504/initial",
+  "resolution": [
+    256,
+    256
+  ],
+  "samples": 32,
+  "threads": 2,
+  "device": "CPU",
+  "forbidden": "No rig/walk/perviewfit/mirror/newtexturefiles/fanout/manifest/runtime/provider/production changes. No retry if execution fails until actual issue inspected. No source/model/appearance selection from render counters."
+}

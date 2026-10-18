@@ -1,0 +1,32 @@
+{
+  "schema": "rds-agent-task/v1",
+  "id": "claims-custody507",
+  "status": "ACTIVE",
+  "purpose": "Bounded actual498 output/call custody lookup, no retry",
+  "worker": {
+    "id": "/root/blender_capability499",
+    "role": "WORKER",
+    "model": "gpt-6.1-sol",
+    "reasoningEffort": "low"
+  },
+  "outputs": [
+    "docs/audits/animation-context-507/custody"
+  ],
+  "slots": [],
+  "inputs": [
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "225d9c16f9db5c4fbe941c93053fbcb958b1672824043b757b58ebb4f41b8569"
+    },
+    {
+      "path": "docs/audits/continuation-504/root/IMAGE_ANIMATION_DECISION.md",
+      "sha256": "03aa5b3cf1068bd97a78eb5f8f4f2ee834ec6b05772a44ae62ae9ba631d6d1ea"
+    },
+    {
+      "path": "docs/art/pipeline/unit-production/order-ledger.json",
+      "sha256": "a687d7b292859ff5ef7b973001c2ae1308ec3fcf1023db160ac1f1792d3ce7b4"
+    }
+  ],
+  "allowedOperations": "Read exact498 tool/order receipts and relevant known generated-output metadata only; no broad private session/config dump. Check actual live handles via owned evidence. Record UNKNOWN if provider mapping unavailable, never settle without proof. No ledger or code edits, no image/Blender/testbench.",
+  "acceptance": "Scoped source and targeted evidence, no art/motion/production acceptance from helper checks"
+}

@@ -1,0 +1,32 @@
+{
+  "runtime525": {
+    "runnerPID": 640640,
+    "browserPID": 640654,
+    "port": 43181,
+    "browserProcessAlive": false,
+    "browserSignal": null,
+    "browserConnected": false,
+    "browserExit": 0,
+    "serverListening": false,
+    "rooms": 0
+  },
+  "processExistence": {
+    "640640": false,
+    "640654": false
+  },
+  "idlePreview523": {
+    "pid": 625260,
+    "procExists": true,
+    "scope": "readonly preview retained for accepted clip",
+    "cmdline": "python3 -u -m http.server 0 --bind 127.0.0.1 ",
+    "browserTabObservation": {
+      "oldTab1": "STALE; browser4 inventory empty",
+      "newTab": "2",
+      "browser": "4",
+      "url": "http://127.0.0.1:35261/preview.html",
+      "deliverableMarked": true,
+      "actualObserved": "D1loop F1/5cycles, otherdirections explicitmissing",
+      "scope": "readonly preview only; ownerapproval receipt separately recorded"
+    }
+  }
+}

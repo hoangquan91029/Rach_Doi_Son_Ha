@@ -3,10 +3,12 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
 import {actionSpec} from '../shared/unit-action-spec.js';
+import {validateKeyStudyOrder,prepareKeyStudy} from './sprite-key-study.mjs';
 import {validateBuildingOrder,prepareBuildingOrder} from './building-sprite-contract.mjs';
 import {validateGuardedOrder} from './agent-task-contract.mjs';
+import {validatePixelOrder,preparePixelOrder} from './pixel-sprite-contract.mjs';
 const common=['identity','master','direction','camera','screenFacing','weaponOwnership','referenceRoles','invariants'];
-export const TEMPLATE_FIELDS=Object.freeze({view:[...common],key:[...common,'action','phase','support','movingParts','bodyMotion','equipmentMotion','nextKey'],guide_key:[...common,'action','phase','support','movingParts','bodyMotion','equipmentMotion','nextKey'],inbetween:[...common,'action','phase','neighbors','support','movingParts','bodyMotion','equipmentMotion','nextKey'],correction:[...common,'action','phase','defect','neighbors','movingParts','bodyMotion','equipmentMotion','nextKey'],worker_order:[...common,'action','phase','budget','ownership','movingParts','bodyMotion','equipmentMotion','nextKey']});
+export const TEMPLATE_FIELDS=Object.freeze({key_study:[...common,'action','studyLayout','keyMapping','motionBlock'],view:[...common],key:[...common,'action','phase','support','movingParts','bodyMotion','equipmentMotion','nextKey'],guide_key:[...common,'action','phase','support','movingParts','bodyMotion','equipmentMotion','nextKey'],inbetween:[...common,'action','phase','neighbors','support','movingParts','bodyMotion','equipmentMotion','nextKey'],correction:[...common,'action','phase','defect','neighbors','movingParts','bodyMotion','equipmentMotion','nextKey'],worker_order:[...common,'action','phase','budget','ownership','movingParts','bodyMotion','equipmentMotion','nextKey']});
 export function renderPrompt(kind,values){
  const fields=TEMPLATE_FIELDS[kind];if(!fields)throw Error('Unknown prompt kind');
  if(Object.keys(values).some(k=>!fields.includes(k)))throw Error('Unexpected placeholder');
@@ -22,6 +24,7 @@ export function renderPrompt(kind,values){
 export function validateMaster(pin){if(!pin||!/^([a-f0-9]{64})$/.test(pin.sha256))throw Error('Missing master pin');if(createHash('sha256').update(fs.readFileSync(pin.path)).digest('hex')!==pin.sha256)throw Error('Master pin mismatch');return true;}
 
 export function preparePrompt(kind,values,references){
+ if(kind==='key_study')throw Error('Key study requires typed finite prepareOrder');
  if(!Array.isArray(references)||!references.length)throw Error('Pinned references required');
  if(!actionSpec(values.identity,'idle').applicable)throw Error('Unknown identity');
  const registry=JSON.parse(fs.readFileSync(new URL(`../docs/art/pipeline/unit-production/${values.identity}/identity.json`,import.meta.url)));
@@ -35,15 +38,16 @@ export function validatePromptReferences(kind,values,references,registry,order=n
  if(!Array.isArray(references)||!references.length)throw Error('Pinned references required');
  const d=Number(values.direction),view=registry.views.find(v=>v.direction===d);
  if(values.camera!==registry.camera.label||values.screenFacing!==registry.camera.screenFacing[d])throw Error('Camera/facing binding mismatch');
+ const scopedEquipment=validateActionEquipmentLocks(registry,values);
  const equipment=registry.equipmentLock;
  if(equipment){
   if(!['verified','not-applicable'].includes(equipment.status)||typeof equipment.statement!=='string'||!equipment.statement.trim()||typeof equipment.basis!=='string'||!equipment.basis.trim())throw Error('Equipment ownership lock unknown or invalid');
   validateMaster(equipment.source);
   if(!registry.master)throw Error('Missing master cannot establish equipment N/A');
   if(equipment.source.sha256!==registry.master.sha256||path.resolve(equipment.source.path)!==path.resolve(registry.master.path))throw Error('Equipment lock source must bind original master');
-  if(values.weaponOwnership!==equipment.statement)throw Error('Equipment ownership lock mismatched');
-  if(equipment.status==='not-applicable'&&values.action&&!['idle','walk'].includes(values.action))throw Error('Idle-only N/A lock requires separately pinned action equipment');
- }else if(!registry.weaponOwnership||values.weaponOwnership!==registry.weaponOwnership)throw Error('Weapon ownership lock missing or mismatched');
+  if(!scopedEquipment&&values.weaponOwnership!==equipment.statement)throw Error('Equipment ownership lock mismatched');
+  if(!scopedEquipment&&equipment.status==='not-applicable'&&values.action&&!['idle','walk'].includes(values.action))throw Error('Idle-only N/A lock requires separately pinned action equipment');
+ }else if(!scopedEquipment&&(!registry.weaponOwnership||values.weaponOwnership!==registry.weaponOwnership))throw Error('Weapon ownership lock missing or mismatched');
  if(order?.jobKind==='action')validateJobBinding(order.job,registry,values);
  const same=(a,b)=>a&&b&&a.sha256===b.sha256&&path.resolve(a.path)===path.resolve(b.path);
  const primary=references[0],editing=primary.role==='edittarget',guiding=primary.role==='guidetarget';
@@ -89,6 +93,31 @@ export function validatePromptReferences(kind,values,references,registry,order=n
  return references.map(pin=>path.resolve(pin.path));
 }
 
+/** Optional exact-action metadata; byte binding does not establish visual truth. */
+function validateActionEquipmentLocks(registry,values){
+ const locks=registry.actionEquipmentLocks;
+ if(locks===undefined)return null;
+ if(!Array.isArray(locks))throw Error('Action equipment locks must be an array');
+ const seen=new Set();
+ for(const lock of locks){
+  if(!lock||typeof lock.action!=='string'||!actionSpec(registry.identity,lock.action).applicable||seen.has(lock.action))throw Error('Action equipment action unknown or duplicate');
+  seen.add(lock.action);
+  if(!['verified','not-applicable'].includes(lock.status)||typeof lock.statement!=='string'||!lock.statement.trim()||typeof lock.basis!=='string'||!lock.basis.trim())throw Error('Action equipment ownership lock unknown or invalid');
+  if(lock.status==='not-applicable'&&!['idle','walk'].includes(lock.action))throw Error('Idle-only N/A lock requires verified action equipment');
+  if(registry.masterAuthority!=='original'||!registry.master)throw Error('Action equipment requires original master authority');
+  validateMaster(registry.master);validateMaster(lock.source);
+  if(registry.excludedReferencePaths?.some(p=>path.resolve(p)===path.resolve(lock.source.path))||registry.excludedReferences?.some(p=>path.resolve(p.path)===path.resolve(lock.source.path)))throw Error('Excluded action equipment source');
+  const same=p=>p&&p.sha256===lock.source.sha256&&path.resolve(p.path)===path.resolve(lock.source.path);
+  const d=Number(values.direction);
+  if(lock.action===values.action){
+   const view=registry.views.find(v=>v.direction===d);
+   if(!(registry.master.direction===d&&same(registry.master))&&!(view?.status==='selected'&&same(view.source)))throw Error('Action equipment source must bind original matching view/master');
+   if(values.weaponOwnership!==lock.statement)throw Error('Action equipment ownership lock mismatched');
+  }else if(!same(registry.master)&&!registry.views.some(v=>v.status==='selected'&&same(v.source)))throw Error('Action equipment source must bind original view/master');
+ }
+ return locks.find(lock=>lock.action===values.action)||null;
+}
+
 /** Source-bound authoring metadata checks, never visual truth or image-call permission. */
 function validateGuideTarget(pin,anchor,registry,order,values,same){
  const binding=validateJobBinding(order.job,registry,values),guide=order.poseGuide;
@@ -124,6 +153,8 @@ export function validateJobBinding(binding,registry,values){
  return binding;
 }
 export function validateFiniteOrder(order,values,slotIndex){
+ if(order?.jobKind==='fresh-pixel')return validatePixelOrder(order,values,slotIndex);
+ if(order?.jobKind==='key-study')return validateKeyStudyOrder(order,values,slotIndex);
  if(order?.jobKind==='building-state')return validateBuildingOrder(order,values,slotIndex);
  if(!order||order.status!=='OPEN'||order.identity!==values.identity||order.direction!==Number(values.direction))throw Error('Finite order identity/action/direction/status mismatch');
  const jobKind=order.jobKind??'action';
@@ -143,6 +174,7 @@ export function validateFiniteOrder(order,values,slotIndex){
 }
 /** Isolated fixtures only; CLI loads the trusted ledger and identity itself. */
 export function prepareOrderWithRegistry(order,slotIndex,kind,values,references,registry){
+ if(order?.jobKind==='key-study'){if(kind!=='key_study')throw Error('Key study template mismatch');return prepareKeyStudy(order,slotIndex,values,references,registry,{validateJobBinding,validatePromptReferences,validateMaster,renderPrompt});}
  if(order?.jobKind==='building-state'){if(kind!=='building_key')throw Error('Building template slot mismatch');return prepareBuildingOrder(order,slotIndex,values,references,registry);}
  if(!['view','action'].includes(order?.jobKind))throw Error('Explicit order jobKind required');
  validateFiniteOrder(order,values,slotIndex);
@@ -154,6 +186,13 @@ export function prepareOrderWithRegistry(order,slotIndex,kind,values,references,
 export function prepareOrder(orderId,slotIndex,kind,values,references,taskContext={}){
  const ledger=JSON.parse(fs.readFileSync(new URL('../docs/art/pipeline/unit-production/order-ledger.json',import.meta.url)));
  const order=ledger.orders.find(o=>o.id===orderId);validateFiniteOrder(order,values,slotIndex);
+ if(order.jobKind==='fresh-pixel'){
+  const root=fileURLToPath(new URL('..',import.meta.url));
+  const registration=JSON.parse(fs.readFileSync(new URL('../docs/audits/implementation-495/tasks.json',import.meta.url)));
+  if(registration.schema!=='rds-agent-tasks/v1'||!order.enforcement)throw Error('Fresh pixel enforced task/lineage required');
+  validateGuardedOrder(root,ledger,order,{...taskContext,slotIndex},registration.tasks);
+  return preparePixelOrder(order,slotIndex,kind,values,references,{root});
+ }
  if(order.jobKind==='building-state'){
   const root=fileURLToPath(new URL('..',import.meta.url));
   const registration=JSON.parse(fs.readFileSync(new URL('../docs/audits/implementation-495/tasks.json',import.meta.url)));
@@ -161,6 +200,12 @@ export function prepareOrder(orderId,slotIndex,kind,values,references,taskContex
   validateGuardedOrder(root,ledger,order,{...taskContext,slotIndex},registration.tasks);
   const registry=JSON.parse(fs.readFileSync(new URL(`../docs/art/pipeline/building-production/${order.buildingType}/identity.json`,import.meta.url)));
   return prepareOrderWithRegistry(order,slotIndex,kind,values,references,registry);
+ }
+ if(order.jobKind==='key-study'){
+  if(!order.enforcement)throw Error('Key study enforced task/lineage required');
+  const registration=JSON.parse(fs.readFileSync(new URL('../docs/audits/implementation-495/tasks.json',import.meta.url)));
+  if(registration.schema!=='rds-agent-tasks/v1')throw Error('Invalid trusted task registration');
+  validateGuardedOrder(fileURLToPath(new URL('..',import.meta.url)),ledger,order,{...taskContext,slotIndex},registration.tasks);
  }
  const registry=JSON.parse(fs.readFileSync(new URL(`../docs/art/pipeline/unit-production/${values.identity}/identity.json`,import.meta.url)));
  return prepareOrderWithRegistry(order,slotIndex,kind,values,references,registry);

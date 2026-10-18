@@ -1,5 +1,7 @@
 # Reusable image instructions — v1; Blender branch499
 
+**Current507 human assignment:** root owns whole-clothed motion sketches and key selection; illustration tasks explicitly marked `workKind: image-generation` use `gpt-6-luna / high`; code and independent review use `gpt-6.1-sol / low`. This supersedes older universal Sol-only wording below, without changing finite calls, references, original identity or review gates. Latest supplied AGENTS prohibits new character Blender work; retain the older branch as history. Current source/queue is PROJECT_STATE/NEXT_STEPS.
+
 These are recipes for shared templates, not image orders. Current executable templates live in `unit-production/templates/`; exact accepted fields come from `scripts/sprite-prompts.mjs`. Never paste extra fields into a validated payload, drop a failing guard or invent seed/mask/pose parameters. Built-in tool currently exposes prompt, inspected reference paths and transparency; it does not expose a strict skeletal constraint or separate mask argument. A textual request to respect a guide is not deterministic control.
 
 ## Shared invariant block

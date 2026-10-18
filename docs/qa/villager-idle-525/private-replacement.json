@@ -1,0 +1,176 @@
+{
+  "index": 15,
+  "old": {
+    "id": "villager-idle-south-014",
+    "family": "unit.villager",
+    "kind": "unit",
+    "state": "idle",
+    "direction": 1,
+    "source": {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "rgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6"
+    },
+    "runtime": {
+      "path": "walk-014/idle.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "17962707943bb616362271cdde1abbfc17a05b0bad950dc714dd3586954b95ab",
+      "rgbaSha256": "701143131c71470bf01612220cb870f0f47abda08a1089e9407c4505f1ac8721",
+      "derivation": {
+        "method": "resize",
+        "filter": "lanczos",
+        "sourceSha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+      }
+    },
+    "cell": {
+      "width": 128,
+      "height": 128
+    },
+    "render": {
+      "width": 42,
+      "height": 42
+    },
+    "pivot": {
+      "x": 654,
+      "y": 1140,
+      "space": "source"
+    },
+    "alphaPolicy": "transparent",
+    "contactShadow": {
+      "mode": "separate",
+      "assetId": "unit-contact-shadow"
+    },
+    "candidate": true,
+    "review": {
+      "status": "CANDIDATE"
+    },
+    "loop": true,
+    "frames": [
+      {
+        "x": 0,
+        "y": 0,
+        "width": 128,
+        "height": 128,
+        "durationMs": 1000,
+        "events": []
+      }
+    ],
+    "notes": "Canonical South idle, uniform complete-canvas derivative; candidate only."
+  },
+  "replacement": {
+    "identityMasterSHA": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+    "directionalMasterSHA": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+    "id": "villager-idle-D1-whole523",
+    "family": "unit.villager",
+    "kind": "unit",
+    "state": "idle",
+    "direction": 1,
+    "source": {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "rgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6"
+    },
+    "runtime": {
+      "path": "villager-idle525/atlas.png",
+      "width": 264,
+      "height": 264,
+      "sha256": "2963cd4beea9ff9a5b0378d9da9e1b43f684f7c123813ff25d66074ce47de2ce",
+      "rgbaSha256": "f147cb62dfc97202bcb4de3f2ee8aa0f6e6f7a2920fce1d92d2a8c22ec718d75",
+      "derivation": {
+        "method": "atlas",
+        "filter": "lanczos",
+        "sourceSha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+      }
+    },
+    "cell": {
+      "width": 128,
+      "height": 128
+    },
+    "pivot": {
+      "space": "source",
+      "x": 654,
+      "y": 1140
+    },
+    "render": {
+      "width": 42,
+      "height": 42
+    },
+    "contactShadow": {
+      "mode": "baked"
+    },
+    "alphaPolicy": "transparent",
+    "frames": [
+      {
+        "x": 2,
+        "y": 2,
+        "width": 128,
+        "height": 128,
+        "durationMs": 750,
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+          "rgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6"
+        },
+        "events": []
+      },
+      {
+        "x": 134,
+        "y": 2,
+        "width": 128,
+        "height": 128,
+        "durationMs": 750,
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-idle-523/illustration/F1-raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "624beec46371dfc6502c182b03ffb1cd2dff614966134e337161f4c8875ae643",
+          "rgbaSha256": "7763943b73a72179a24d4f8c9212108f6495058625c53abb23dce54bf8b259d1"
+        },
+        "events": []
+      },
+      {
+        "x": 2,
+        "y": 134,
+        "width": 128,
+        "height": 128,
+        "durationMs": 750,
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-idle-523/illustration/F2-raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "7e2f4c8c46d3bd61bd680019e020425f3bca0e4cc434559e39645a225fefe502",
+          "rgbaSha256": "b749a4a0fbe6ac0b7a0ea4e74aa651c8d986729120fd1488acff1c67398e1329"
+        },
+        "events": []
+      },
+      {
+        "x": 134,
+        "y": 134,
+        "width": 128,
+        "height": 128,
+        "durationMs": 750,
+        "source": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-idle-523/illustration/F3-raw.png",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "faa0cda1c00f5aadd3f12034b6d6ce15b8b7093ff8702f60a221bc55dbcd454b",
+          "rgbaSha256": "764f9a4bb869c7beb88d1540397cb33ffe9b1f627b5a44f663adb4d3865f3691"
+        },
+        "events": []
+      }
+    ],
+    "candidate": true,
+    "review": {
+      "status": "CANDIDATE"
+    },
+    "loop": true
+  },
+  "policy": "Replace exact firstmatching D1 idle only; no livingwalk edits"
+}

@@ -1,0 +1,87 @@
+{
+  "schema": "rds-agent-task/v1",
+  "id": "illustration-idle523",
+  "status": "ACTIVE",
+  "workKind": "image-generation",
+  "purpose": "ExactLunaHigh wholeoriginalVillagerD1idle firstF2endpoint only underrootguide523, livingpriority522",
+  "worker": {
+    "id": "/root/illustration523",
+    "role": "WORKER",
+    "model": "gpt-6-luna",
+    "reasoningEffort": "high"
+  },
+  "outputs": [
+    "docs/art/pipeline/villager-idle-523/illustration"
+  ],
+  "slots": [
+    {
+      "orderId": "villager-idle-D1-whole523-THREE",
+      "slotIndex": 2
+    }
+  ],
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "bb1c12bbda8727835a5e9d2a4a68ca20af7d463b237ad704a189de3329cdb3ae"
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+    },
+    {
+      "path": "docs/art/pipeline/ANIMATION_CONTRACT.md",
+      "sha256": "b6c3eefbc330ef05b20fee04489940402b8f3489c9043f5427a440e8793bdf40"
+    },
+    {
+      "path": "docs/art/pipeline/SPRITE_PRODUCTION_WORKFLOW.md",
+      "sha256": "8d15bf7205610b5f2b92d80aa9582daf787d6ec6e4a007dce7874cf0e5a23d45"
+    },
+    {
+      "path": "docs/art/pipeline/IMAGE_GENERATION_TEMPLATES.md",
+      "sha256": "e593ccbbead4366e9762cd2bebf723cbaf43b8cba8fa1cda76d2d02d7c98467c"
+    },
+    {
+      "path": "docs/art/pipeline/unit-production/villager/identity.json",
+      "sha256": "7641b13e6aa32f828dfa5323d1a59293585eb11ea6d7db16a9621e15a8a05186"
+    },
+    {
+      "path": "docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+    },
+    {
+      "path": "docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94"
+    },
+    {
+      "path": "docs/art/pipeline/villager-idle-523/authoring/job-initial.json",
+      "sha256": "c6f7cb5191ca4bd2514c400c72259bc725857e4d03a1f7cc67ab69ca2820ecf9"
+    },
+    {
+      "path": "docs/art/pipeline/villager-idle-523/authoring/guide/F2.png",
+      "sha256": "72f94b1eefc0e33e023f82ef4f1b5ae2421d8d2a667fa653dd4bbea467e02fcc"
+    },
+    {
+      "path": "docs/art/pipeline/villager-idle-523/authoring/guide-provenance.json",
+      "sha256": "e71162893a77411997aa20ba6dff3f27a6fb24fdfdbc913e193f78226e33eebb"
+    },
+    {
+      "path": "docs/art/pipeline/villager-idle-523/authoring/proposed-F2-request.json",
+      "sha256": "2b48fced27d8822a2290b98d2cdf320ae36d320778daaccb5359c6f9d106b7d0"
+    },
+    {
+      "path": "docs/art/pipeline/villager-idle-523/review/CHECKPOINT.json",
+      "sha256": "3abac8a11e1a03339eeca12719fa96f4db5637deb1bdfa54436ce0706cedbbe7"
+    },
+    {
+      "path": "scripts/sprite-prompts.mjs",
+      "sha256": "7f0311c91371ce989bdaf852169c641017367b911f094086762b607d4aecc2a7"
+    },
+    {
+      "path": "scripts/sprite-order-run.mjs",
+      "sha256": "8436a7eedbe2d4a0dac8634bfcc9e7ad27a365e8862771ef230b9cfc47eb5d90"
+    }
+  ],
+  "allowedOperations": "ExactlyONE F2built-inimagegen call fromroot durableclaim+preparedprompt and exact2orderedrefs. Preserveactualoriginalidentitywhole transparentimage, rootguide smallbreathONLY; no API/key/CLI/Blender/pixelsplices/warps/mirror/fit. No auto retry/correction/source selection/motionapproval. F1/F3NOTassigned andmustwaitactualF2review/rootselection+updatedprereqs. Workerreturns exacttool path/rawbytecopy/request/providercustody/handle/nullunknownmetadata receipt. Root alonecommonregistry/ledger. Failure/unknownproviderhandle remainsconsumed, neverreset/refund.",
+  "acceptance": "Actualraw/source/toolresult custody with onecall/zero retries, no selfmotion/ownerPASS.",
+  "receipt": "docs/art/pipeline/villager-idle-523/illustration/CHECKPOINT.json"
+}

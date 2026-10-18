@@ -1,0 +1,92 @@
+{
+  "schema": "rds-task-receipt/v1",
+  "taskId": "claims-custody507",
+  "status": "UNKNOWN_PROVIDER_OUTPUT_MAPPING",
+  "purpose": "Bounded actual498 output/call custody lookup, no retry",
+  "inputs": [
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "225d9c16f9db5c4fbe941c93053fbcb958b1672824043b757b58ebb4f41b8569"
+    },
+    {
+      "path": "docs/audits/continuation-504/root/IMAGE_ANIMATION_DECISION.md",
+      "sha256": "03aa5b3cf1068bd97a78eb5f8f4f2ee834ec6b05772a44ae62ae9ba631d6d1ea"
+    },
+    {
+      "path": "docs/art/pipeline/unit-production/order-ledger.json",
+      "sha256": "a687d7b292859ff5ef7b973001c2ae1308ec3fcf1023db160ac1f1792d3ce7b4"
+    }
+  ],
+  "inputPinsExact": true,
+  "exclusiveOutputs": [
+    "docs/audits/animation-context-507/custody"
+  ],
+  "method": "Read exact498durableclaims/interruptedcalls/F2knownreturnedmapping and currentledger; inventory only known generated_image conversationfolder29files with hashes and PNGmetadata keys, no private session/config scan",
+  "observations": {
+    "orderStatus": "OPEN",
+    "callsUsed": 2,
+    "callsRemaining": 0,
+    "claims": [
+      {
+        "frame": 1,
+        "token": "c39d4f3a-afe4-4dba-bd98-1e71de33e2c9",
+        "requestSHA": "810429525a16fd07f75f6c02d21bba97c592b55189c54244b21fd7d60e134aa8",
+        "providerHandle": null,
+        "returnedOutput": null
+      },
+      {
+        "frame": 3,
+        "token": "1166301b-86da-497a-a3b7-4787f7c5df22",
+        "requestSHA": "9704449053b6ffb9feddabc897e0c7fa7b9fda75fb9538495598938624a9873e",
+        "providerHandle": null,
+        "returnedOutput": null
+      }
+    ],
+    "existingRawFiles": [
+      "docs/art/pipeline/residence-construction-498/raw/F2.png"
+    ],
+    "boundedFolderFiles": 29,
+    "pngClaimMetadataMatches": 0,
+    "knownF2ReturnedPath": "/home/kieu-hoang-quan/.codex/generated_images/01a1159b-f20c-75d2-8030-3f4d27119543/exec-e34e0406-8a98-45ac-bd78-5b3315234e23.png",
+    "providerStatusTool": "No builtinimagegeneration status/result tool exposed; unrelatedCanvajob tool doesnot querybuiltinprovider",
+    "liveProviderHandles": "UNKNOWN noactualhandleIDs saved in scopedreceipts"
+  },
+  "conclusion": "No exactprovider claim->output mapping recovered. Filenames/timestamps/visualsimilarity cannotsettleF1/F3. BothremainconsumedUNRESOLVED; noretry/refund/ledgeredit",
+  "checks": {
+    "auditPreflight": "exit0 retained",
+    "inputsAfterRead": "exact"
+  },
+  "counts": {
+    "imageCalls": 0,
+    "BlenderCalls": 0,
+    "browserBenchmarks": 0,
+    "ledgerMutations": 0,
+    "settlements": 0,
+    "privateSessionScans": 0
+  },
+  "handles": {
+    "created": [],
+    "ownedClosed": true,
+    "interrupted498provider": "UNKNOWN/unowned"
+  },
+  "nextDependency": "Actual returned toolresult mapping or providerstatus receipt binding eachclaimtoken/requestSHA tooutput; unavailable means stopcustodylookup",
+  "fullGoal": "OPEN",
+  "outputs": [
+    {
+      "path": "docs/audits/animation-context-507/custody/assignment-observed.json",
+      "sha256": "be27623f637573cb952a0c526df89a690416a7d29cd0aa79f6a7618af3643d0d"
+    },
+    {
+      "path": "docs/audits/animation-context-507/custody/bounded-png-metadata.json",
+      "sha256": "0cfb0b51e8c567a0a9040e6d20996807634883e94d8178ae9d677a69aa4c01e8"
+    },
+    {
+      "path": "docs/audits/animation-context-507/custody/known-folder-inventory.json",
+      "sha256": "b35d13d9d1f34fe797e908f15b9159fa5fc2fe14378eee56f519fea5391ff674"
+    },
+    {
+      "path": "docs/audits/animation-context-507/custody/preflight.json",
+      "sha256": "2b0693e5a53cb4d00121fa4189a00353a819f8ac611624787d7a01eb163f4926"
+    }
+  ]
+}

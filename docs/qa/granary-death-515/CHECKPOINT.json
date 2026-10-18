@@ -1,0 +1,214 @@
+{
+  "schema": "rds-task-receipt/v1",
+  "taskId": "granary-runtime515",
+  "status": "HOLD_FIRST_HARNESS_PREREQUISITE_ERROR_NO_DEATH_OBSERVATION",
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "a81895b57e445ae913773fd7bf55049f84d859d407e175de2d106edc4f3c52bd"
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+    },
+    {
+      "path": "scripts/qa/browser-custody510.mjs",
+      "sha256": "f0bf514e1988bf3a3c7bcd3abd6111c5721f4f4f63bdce6782eff099d9194ecd"
+    },
+    {
+      "path": "scripts/qa/online-profile512.mjs",
+      "sha256": "517ad2c9524e0a58f2c55ad3b9b6a3441cc79074c6cf81dba31eb13a04f6d081"
+    },
+    {
+      "path": "shared/sim.js",
+      "sha256": "c9a01adba8630e89e1c3f195c1b98c08c32e74468d389a55891c664e3906e562"
+    },
+    {
+      "path": "client/raster-slice.js",
+      "sha256": "dcb84bc166863b1b5f85940931f8ef558df29bba573496531632f52816676983"
+    },
+    {
+      "path": "client/art-assets.js",
+      "sha256": "af4db82838cf5b936549307272f96aef4ef16d1ac6f672cb8f4dd7c73437ab06"
+    },
+    {
+      "path": "server/index.js",
+      "sha256": "4e6a7e82f02d1d856f4ea788863c4836930bc00250be6a5b020ba2bdd8884198"
+    },
+    {
+      "path": "docs/art/pipeline/granary-death-511/exports/compiled-selected/asset.json",
+      "sha256": "bd15509226232c966d4284a9cf17cf5e7fe04d59444b0d8daea34ade71de5da1"
+    },
+    {
+      "path": "docs/art/pipeline/granary-death-511/exports/compiled-selected/atlas.png",
+      "sha256": "6c34e21ce79a4e904dbfda02f1d01b2ccb38a02eed7ee0c7e056c494482ef0c8"
+    },
+    {
+      "path": "docs/art/pipeline/granary-death-511/exports/browser-preview.json",
+      "sha256": "32f6676348af1cb310cd52dfcecc18b8924fafd11d322bafd56c27365f18359e"
+    }
+  ],
+  "checks": [
+    {
+      "argv": [
+        "node",
+        "scripts/agent-preflight.mjs",
+        "--task",
+        "runtime",
+        "--task-id",
+        "granary-runtime515",
+        "--inputs",
+        "docs/audits/continuation-509/root/granary-runtime515-inputs.json",
+        "--source",
+        "client/raster-slice.js"
+      ],
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0,
+      "log": "docs/qa/granary-death-515/preflight.json"
+    },
+    {
+      "argv": [
+        "node",
+        "--check",
+        "scripts/qa/granary-death515.mjs"
+      ],
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0
+    },
+    {
+      "argv": [
+        "node",
+        "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/node_modules/vite/bin/vite.js",
+        "build",
+        "--config",
+        "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/granary-death-515/stage/vite.config.js",
+        "--outDir",
+        "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/granary-death-515/build"
+      ],
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/granary-death-515/stage",
+      "exitCode": 0,
+      "log": "docs/qa/granary-death-515/build.log"
+    },
+    {
+      "argv": [
+        "node",
+        "scripts/qa/granary-death515.mjs"
+      ],
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0,
+      "limit": "HOLDcaught inreceipt notPASS",
+      "log": "docs/qa/granary-death-515/run.log"
+    }
+  ],
+  "scene": {
+    "map": "delta",
+    "mode": "online",
+    "clients": 2,
+    "candidate": "granary-death-511-candidate",
+    "stageManifest": "docs/qa/granary-death-515/stage/public/assets/art-v1/fort-202-manifest.json",
+    "ordinaryMatchStarted": true,
+    "target": {
+      "id": 19,
+      "owner": 1,
+      "type": "granary",
+      "kind": "building",
+      "x": 57.5,
+      "y": 26.5,
+      "hp": 450,
+      "maxHp": 450,
+      "food": 0,
+      "foodMax": 0,
+      "morale": 95,
+      "state": "idle",
+      "dir": 4,
+      "cooldown": 0,
+      "queue": [],
+      "cargo": {
+        "food": 260,
+        "wood": 0,
+        "iron": 0,
+        "units": []
+      },
+      "underConstruction": false,
+      "order": null
+    },
+    "actions": [],
+    "simulationMutationsInjected": false
+  },
+  "failure": {
+    "atUTC": "2026-10-13T11:16:13.817Z",
+    "message": "TypeError: Cannot read properties of undefined (reading '1')\n    at file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/qa/granary-death515.mjs:8:1988"
+  },
+  "cause": "VERIFIED harness tried displayedState.map.spawns[1] unavailable in diagnostic snapshot; no gameplayfailure inferred",
+  "observations": {
+    "deathClock": "UNKNOWN",
+    "frames0to3": "UNKNOWN",
+    "finalHold": "UNKNOWN",
+    "corpseRemoval": "UNKNOWN",
+    "actual142point8Canvas": "UNKNOWN",
+    "pageErrors": [],
+    "samples": 0,
+    "firstExceptionBeforeCleanup": true,
+    "perContextCleanupMarkers": true
+  },
+  "preservation": {
+    "exactTreePlusBytesGuard": true,
+    "protectedFiles": 436,
+    "candidateWritesStageOnly": true
+  },
+  "handles": {
+    "browserConnected": false,
+    "browserExit": 0,
+    "serverListening": false,
+    "rooms": 0,
+    "runnerPID": 577977,
+    "browserPID": 578019,
+    "port": 43067,
+    "cleanup": [
+      {
+        "side": 0,
+        "closed": true
+      },
+      {
+        "side": 1,
+        "closed": true
+      }
+    ],
+    "allOwnedClosed": true
+  },
+  "calls": {
+    "attempt": 1,
+    "browserLaunch": 1,
+    "restart": 0,
+    "image": 0,
+    "profile": 0,
+    "production": 0
+  },
+  "nextDependency": "Root intake failedoneattempt; noretry. A future separatelyauthorized harness must derive ordinarydefenderdestination from actualownedresidence coordinates rather than missingdisplayedmapspawns; retain515failure. Candidate source technicalonly, motion/owner/publicOPEN.",
+  "outputs": [
+    {
+      "path": "scripts/qa/granary-death515.mjs",
+      "sha256": "d7accdff116d34a3b22e68ec84e640b293f950c1d37512b77967ecb0a0d07a0a"
+    },
+    {
+      "path": "docs/qa/granary-death-515/receipt.json",
+      "sha256": "1f3d9bc6fb82bfaa9eaafb4b40a736e084f5f364c43d41f0f6124ea7a12c8f94"
+    },
+    {
+      "path": "docs/qa/granary-death-515/run.log",
+      "sha256": "c68802ad85c679ba8a706b65a714ca18b99bc8f1bd1d671a239befbd8016d7af"
+    },
+    {
+      "path": "docs/qa/granary-death-515/pins.json",
+      "sha256": "1ce54d27783509dc0d811f3494ad26b262bfd23a6b008c98299eedcc217f5e74"
+    },
+    {
+      "path": "docs/qa/granary-death-515/browser-custody/lifecycle.jsonl",
+      "sha256": "23b7a926e80253e4187f74d516a683508f9a9e5b97963c6b40afd82ea7886290"
+    },
+    {
+      "path": "docs/qa/granary-death-515/browser-custody/status.json",
+      "sha256": "804b3d65b9dcb7e67563ab24c4e21010425f4b7cfb8d5f1e4db4de967b5295ed"
+    }
+  ]
+}

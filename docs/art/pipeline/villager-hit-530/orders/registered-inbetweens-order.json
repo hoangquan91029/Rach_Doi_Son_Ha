@@ -1,0 +1,103 @@
+{
+  "id": "villager-hit-D1-whole530-THREE",
+  "status": "OPEN",
+  "jobKind": "action",
+  "identity": "villager",
+  "action": "hit",
+  "direction": 1,
+  "job": {
+    "id": "villager-hit-D1-whole530",
+    "action": "hit",
+    "direction": 1,
+    "variant": "nonfatal-planted-recoil-original-rest",
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-hit-530/authoring/job-after-F1.json",
+    "sha256": "2d7caa81993185016477d40ecc5f3bd736226c40e17f42749905238684a77405"
+  },
+  "callLimit": 3,
+  "callsUsed": 1,
+  "correctionCap": 0,
+  "correctionsUsed": 0,
+  "callsRemaining": 2,
+  "slots": [
+    {
+      "frame": 0,
+      "phase": 0,
+      "status": "pending",
+      "kind": "initial",
+      "template": "inbetween"
+    },
+    {
+      "frame": 1,
+      "phase": 0.25,
+      "status": "held",
+      "kind": "initial",
+      "template": "key",
+      "claim": {
+        "token": "60b64985-d856-4e42-b098-96138553266a",
+        "requestSHA": "c6f4df9af02162b716f00651f5a52c5187ba9d7d8e09daeceb1c74e6bb0dc150",
+        "claimedAt": "2026-10-13T15:51:24.694Z"
+      },
+      "settlement": {
+        "token": "60b64985-d856-4e42-b098-96138553266a",
+        "settledAt": "2026-10-13T15:54:55.229Z",
+        "output": {
+          "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-hit-530/illustration/F1-raw.png",
+          "sha256": "e89cf68b92047683d0385d745c40e9299a6c7fbf9f3b4c15e21a526c3ed35d23"
+        },
+        "approval": false
+      }
+    },
+    {
+      "frame": 2,
+      "phase": 0.5,
+      "status": "pending",
+      "kind": "initial",
+      "template": "inbetween"
+    },
+    {
+      "frame": 3,
+      "phase": 0.75,
+      "status": "selected",
+      "kind": "initial",
+      "template": "key"
+    }
+  ],
+  "enforcement": {
+    "version": 1,
+    "taskId": "illustration-hit530",
+    "baseline": {
+      "callsUsed": 0,
+      "correctionsUsed": 0
+    },
+    "method": {
+      "family": "same-original-stationary-nonfatal-hit530",
+      "parentOrderIds": []
+    },
+    "prerequisites": [
+      {
+        "job": {
+          "path": "docs/art/pipeline/villager-hit-530/authoring/job-after-F1.json",
+          "sha256": "2d7caa81993185016477d40ecc5f3bd736226c40e17f42749905238684a77405"
+        },
+        "frame": 1,
+        "phase": 0.25,
+        "input": {
+          "path": "docs/art/pipeline/villager-hit-530/illustration/F1-raw.png",
+          "sha256": "e89cf68b92047683d0385d745c40e9299a6c7fbf9f3b4c15e21a526c3ed35d23"
+        }
+      },
+      {
+        "job": {
+          "path": "docs/art/pipeline/villager-hit-530/authoring/job-after-F1.json",
+          "sha256": "2d7caa81993185016477d40ecc5f3bd736226c40e17f42749905238684a77405"
+        },
+        "frame": 3,
+        "phase": 0.75,
+        "input": {
+          "path": "docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+          "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+        }
+      }
+    ]
+  }
+}

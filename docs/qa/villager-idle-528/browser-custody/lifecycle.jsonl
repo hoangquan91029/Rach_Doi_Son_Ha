@@ -1,0 +1,16 @@
+{"type":"launch-start","atUTC":"2026-10-13T13:51:30.700Z","elapsedMs":0.06839100000001963,"cleanupStarted":false}
+{"type":"process-attached","atUTC":"2026-10-13T13:51:30.749Z","elapsedMs":49.89084300000002,"cleanupStarted":false,"pid":660987,"initialExitCode":null,"initialSignalCode":null}
+{"type":"browser-connected","atUTC":"2026-10-13T13:51:30.772Z","elapsedMs":71.98324000000002,"cleanupStarted":false,"version":"151.0.7922.34"}
+{"type":"context-observed","atUTC":"2026-10-13T13:51:30.781Z","elapsedMs":81.604465,"cleanupStarted":false}
+{"type":"page-observed","atUTC":"2026-10-13T13:51:30.811Z","elapsedMs":111.56753700000002,"cleanupStarted":false}
+{"type":"first-exception","atUTC":"2026-10-13T13:51:35.201Z","elapsedMs":4501.791553,"cleanupStarted":false,"message":"AssertionError [ERR_ASSERTION]: Actual D1 segment prerequisite\n+ actual - expected\n\n+ 'ground-segment-building:1'\n- null\n\n    at destination (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/qa/villager-idle528.mjs:45:255)\n    at move (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/qa/villager-idle528.mjs:46:181)\n    at async runScene (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/qa/villager-idle528.mjs:53:17)\n    at async file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/qa/villager-idle528.mjs:58:84"}
+{"type":"cleanup-intent","atUTC":"2026-10-13T13:51:35.207Z","elapsedMs":4507.22034,"cleanupStarted":true,"scope":"context0-close"}
+{"type":"page-close","atUTC":"2026-10-13T13:51:35.214Z","elapsedMs":4514.22672,"cleanupStarted":true}
+{"type":"context-close","atUTC":"2026-10-13T13:51:35.218Z","elapsedMs":4518.62865,"cleanupStarted":true}
+{"type":"cleanup-intent","atUTC":"2026-10-13T13:51:35.221Z","elapsedMs":4521.268957,"cleanupStarted":true,"scope":"owned-browser-server-close"}
+{"type":"browser-disconnected","atUTC":"2026-10-13T13:51:35.228Z","elapsedMs":4528.578936,"cleanupStarted":true}
+{"type":"process-exit","atUTC":"2026-10-13T13:51:35.238Z","elapsedMs":4538.894932,"cleanupStarted":true,"code":0,"signal":null}
+{"type":"browser-server-close","atUTC":"2026-10-13T13:51:35.242Z","elapsedMs":4542.04089,"cleanupStarted":true}
+{"type":"process-close","atUTC":"2026-10-13T13:51:35.244Z","elapsedMs":4544.493325,"cleanupStarted":true,"code":0,"signal":null}
+{"type":"cleanup-finished","atUTC":"2026-10-13T13:51:35.248Z","elapsedMs":4548.403231,"cleanupStarted":true,"browserConnected":false,"processExitCode":0,"processSignalCode":null}
+{"type":"observer-finished","atUTC":"2026-10-13T13:51:35.251Z","elapsedMs":4550.9058589999995,"cleanupStarted":true}

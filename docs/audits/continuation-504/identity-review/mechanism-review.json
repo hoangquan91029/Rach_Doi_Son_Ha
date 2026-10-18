@@ -1,0 +1,68 @@
+{
+  "schema": "rds-control-mechanism-review/v1",
+  "reviewer": "/root/blender_export499",
+  "script": {
+    "path": "scripts/blender/villager504.py",
+    "sha256": "cc88dcfd2883c7a5ce14edd28d5e01aa6f586a06ba7a028315deeb08ff18553d"
+  },
+  "control": {
+    "path": "docs/art/pipeline/blender-villager-504/control.json",
+    "sha256": "39293ceb19c195c2ed5b7823465db8a5e9e8465365227317cb63645a65b69a08"
+  },
+  "method": "Staticactualsource/AST + originaltwo-viewmacroconstraints; no bpyexecution/render",
+  "decision": "FIX_SHADER_LOOKUP_BEFORE_INITIAL_RENDER",
+  "materiallyDifferent501": {
+    "status": "VERIFIED_CODE_CHANGE_INFERRED_CONTROL_DIFFERENCE",
+    "observation": "501 globalwholeD0projectiononallmeshes replaced by two-viewellipticalsectionwidth/depthconstraints and semanticclothingregions; onlyD1facewindow colors on actualcurvedthickmesh; localfrontbrimheight insteadglobalhattilt",
+    "limit": "Depthformula approximates orthographicellipse widths; illustrative originals notphotogrammetry; clamp .004 canmask inconsistentwidths; noqualityapproval"
+  },
+  "sourceBinding": {
+    "status": "VERIFIED_DECLARED_PINS",
+    "observation": "verify() checks bothactualoriginalSHA; faceimage usesfullSouthfile packed toblend, no derivativecutoutfile; sourcealpha notconnected, faceSOLIDIFY .016 and curvedx/y surface; nonfaceclothes use semanticmaterials",
+    "limit": "A semanticfaceUV region ongeometry is a sourcecolorauthoringmethod, not automaticidentity or finishedwhole2Dqualification. No billboardplane or alpha-cutout mechanism found."
+  },
+  "blockingFindings": [
+    {
+      "symbol": "build_candidate materialsetup and face materialsetup",
+      "observation": "nodes.get('Principled BSDF')/n.get('Principled BSDF') relies localizeddisplayname and may returnNone",
+      "requestedChange": "Resolve single node with node.type=='BSDF_PRINCIPLED'; require exactlyone. Existing BaseColor/Roughness socketnames should be checked against actualAPI or socketidentifier beforeexecution."
+    }
+  ],
+  "handedness": {
+    "status": "CONDITIONAL_GEOMETRIC_VERIFICATION",
+    "observation": "faceUVu increaseswithlocalY; surfacefrontnormal is+X; D1 rootrotationaboutZ=-45deg mapslocal+Y to camera screenright under fixedright=(1,1,0)/sqrt2. Thus imageleft\u2192localnegativeY/anatomicalright and imageright\u2192localpositiveY/anatomicalleft for front+X withupright+Z. This is not reversedIF root D1rotation=-45deg and modelanatomicalleft=+Y areexplicitlymaintained. D0 root0 yields threequarterfront+X view; texture is shared withoutmirror.",
+    "requestedChange": "Record explicit localfront+X/up+Z/anatomicalleft+Y, D0rotation0/D1rotation-45deg in control/authoringreceipt. Do not introduceu\u21921-u flip merelybasedon screenleft.",
+    "limit": "No actualheadfeatureplacement or renderedUV alignment observed; faceboxmanual estimate and nativegeometryfeaturedepth can occludetexture."
+  },
+  "nonblockingScopeLimits": [
+    {
+      "symbol": "source_nose_bridge/source_jaw_chin/source_goatee",
+      "observation": "Anatomicalfeatures centralY0; no pairedleft/rightfeatureoffsets to prove detailedhandedness yet; sharedD1texture faceturn fitUNKNOWN"
+    },
+    {
+      "symbol": "waist_sash/sash_tail",
+      "observation": "Two tails existbut no explicitoffcenterknotgeometry in script despite originalknot; add onecoherentsideknotbeforejudging sourceappearance, keepingphysicalhandedness"
+    },
+    {
+      "symbol": "hat mesh",
+      "observation": "AllK apexvertices co-located att1; degenerateapexstrip may affect shading, not identified as executionblocker"
+    },
+    {
+      "symbol": "output/authorization",
+      "observation": "Function saves scene butneverrenders; outputassert onlynonexistence, noapprovedrootcontainment. Rootcaller must provide exclusiveassignedpath and exactdurableauthorization; notsafeuntrustedstandaloneAPI"
+    }
+  ],
+  "acceptance": {
+    "initialRenderAuthorization": "ROOT_ONLY_AFTER_FIX",
+    "appearance": "UNKNOWN",
+    "motion": "UNKNOWN",
+    "owner": "UNKNOWN",
+    "release": "UNKNOWN"
+  },
+  "counts": {
+    "renders": 0,
+    "generations": 0,
+    "MCPWrites": 0,
+    "sourceEdits": 0
+  }
+}

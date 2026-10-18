@@ -1,0 +1,14 @@
+{
+  "decision": "EXACTLY_ONE finite529scene afterreviewedcontinuousarrivalcertificate/sourceproof, reuse527stage/buildread-only",
+  "attemptsBefore": 0,
+  "newBuildsAllowed": 0,
+  "review": {
+    "path": "docs/qa/villager-idle-529-review/CHECKPOINT.json",
+    "sha256": "155d8da577ba41d1d48ff67fd86f92172ff855eb102264a07cdda95b4e53a313"
+  },
+  "source": {
+    "path": "scripts/qa/villager-idle529.mjs",
+    "sha256": "0b9371b66d4366491407394d3b78f31196549fa349f32ed015f667b6c7f9ae7c"
+  },
+  "limits": "Actualnavigation/facing/dynamicsremainunproven;150s observationdeadline, guardfirstfailure; no retry/forcedfacing/physics/pixels/publicchange"
+}

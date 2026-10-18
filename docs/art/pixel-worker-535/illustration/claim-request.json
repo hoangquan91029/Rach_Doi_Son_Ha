@@ -1,0 +1,67 @@
+{
+  "orderId": "fresh-pixel-worker-walk-S-535-ONE",
+  "slotIndex": 0,
+  "kind": "pixel_strip",
+  "values": {
+    "identity": "villager",
+    "action": "walk",
+    "direction": "1"
+  },
+  "references": [],
+  "taskId": "pixel-illustration535",
+  "expectedInputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "2b6a729ea0d55b4c1c69a61f5892863868d8cb3e630679272f3a72dbc54add28"
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+    },
+    {
+      "path": "docs/PIXEL_ART_STYLE_GUIDE.md",
+      "sha256": "13bbeb81f263fb69f67ebda15313909a02c24b2f92ca309644deb877a06430c8"
+    },
+    {
+      "path": "docs/ANIMATION_SPEC.md",
+      "sha256": "8b5515d4efa065823351cdda8112f69b578eb6ffb90dd431ba50aa7ccfa45d59"
+    },
+    {
+      "path": "docs/SPRITE_PIPELINE.md",
+      "sha256": "6ab312bda71f65776a9a5722b302dddf2b77c46b8b8d153843bb457ddedb3e77"
+    },
+    {
+      "path": "docs/SPRITE_QA_CHECKLIST.md",
+      "sha256": "0040d9132e4bf1e88bd342ee76d7f75cf306dc12905cdca39e76abb93fb85be3"
+    },
+    {
+      "path": "docs/art/pixel-worker-535/authoring/DESIGN.md",
+      "sha256": "8b2411b5b22c49d6d93974a416c0246105a41129b5e5c5aa8cabaf47696302b7"
+    },
+    {
+      "path": "docs/art/pixel-worker-535/authoring/walk-S-prompt.txt",
+      "sha256": "b4a08c3ea32c921cd5f25b6e3c5a18be8a80e1995e073f0635f31452d0398715"
+    },
+    {
+      "path": "docs/art/pixel-worker-535/authoring/job.json",
+      "sha256": "52c1e64ed007bd889f80d3dd0be32bc4a6602dc98b61aa1dd314cfa75c92b36c"
+    },
+    {
+      "path": "docs/audits/pixel-rebuild-535/review/method-difference.json",
+      "sha256": "fbc4fa5f718630ede1339f0743a3279146fc21f761e93aabb9a7e6e595516175"
+    },
+    {
+      "path": "scripts/sprite-prompts.mjs",
+      "sha256": "4aef7a62d2fb59cadc9bda3f063534c4399c6471c44354b9f169c553b24fbe6a"
+    },
+    {
+      "path": "scripts/sprite-order-run.mjs",
+      "sha256": "8436a7eedbe2d4a0dac8634bfcc9e7ad27a365e8862771ef230b9cfc47eb5d90"
+    },
+    {
+      "path": "scripts/pixel-sprite-contract.mjs",
+      "sha256": "34cfe56bb0df96d4ab98c3b5af61154e3a6eb779f8aca77f218d2fa016144475"
+    }
+  ],
+  "expectedLedgerSHA": "857999012cd441678e6b70dfc4d04440cd4b3d7a5a8a5770b18d475bb9ed1a2a"
+}

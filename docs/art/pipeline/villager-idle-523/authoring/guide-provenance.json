@@ -1,0 +1,116 @@
+{
+  "schema": "rds-idle-root-guide/v1",
+  "identity": "villager",
+  "action": "idle",
+  "direction": 1,
+  "kind": "whole-clothed-authoring",
+  "sourcePixelUse": false,
+  "originalMaster": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+    "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94"
+  },
+  "appearance": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+    "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+  },
+  "authorScript": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-idle-523/authoring/author-guide.py",
+    "sha256": "632750f9509e926d41560eefa62d9ade1b15661e80c8af39caacab300eaf4d83"
+  },
+  "guides": [
+    {
+      "frame": 0,
+      "phase": 0.0,
+      "input": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-idle-523/authoring/guide/F0.png",
+        "sha256": "9c6fcf8e9a9e5acbe3173df93a713a6bd30424453465db78131ef2c18d371923"
+      },
+      "svg": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-idle-523/authoring/guide/F0.svg",
+        "sha256": "d932b7cb9befcd889451583913c78f5ecc5f42654de4e51d95115d16c7c86f90"
+      },
+      "status": "AUTHORING_ONLY"
+    },
+    {
+      "frame": 1,
+      "phase": 0.25,
+      "input": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-idle-523/authoring/guide/F1.png",
+        "sha256": "150f0e3e3868116dbb94b6b2bd32c469c27461235cbb162011c4be21f8440af5"
+      },
+      "svg": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-idle-523/authoring/guide/F1.svg",
+        "sha256": "954e0b8137564be64fce0bcad49c1b7044af2b8cf421ebc88c19bbb3adaf00cf"
+      },
+      "status": "AUTHORING_ONLY"
+    },
+    {
+      "frame": 2,
+      "phase": 0.5,
+      "input": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-idle-523/authoring/guide/F2.png",
+        "sha256": "72f94b1eefc0e33e023f82ef4f1b5ae2421d8d2a667fa653dd4bbea467e02fcc"
+      },
+      "svg": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-idle-523/authoring/guide/F2.svg",
+        "sha256": "4325c8be5353356a95ba79cf179ed4c520eb2fae6c226ac10d540da14eda0643"
+      },
+      "status": "AUTHORING_ONLY"
+    },
+    {
+      "frame": 3,
+      "phase": 0.75,
+      "input": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-idle-523/authoring/guide/F3.png",
+        "sha256": "150f0e3e3868116dbb94b6b2bd32c469c27461235cbb162011c4be21f8440af5"
+      },
+      "svg": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-idle-523/authoring/guide/F3.svg",
+        "sha256": "954e0b8137564be64fce0bcad49c1b7044af2b8cf421ebc88c19bbb3adaf00cf"
+      },
+      "status": "AUTHORING_ONLY"
+    }
+  ],
+  "motion": {
+    "bothFeet": "Fixedsole/ankle/hip support. No step, slide, leanjump or wholeframeverticaltranslation.",
+    "body": "F0relaxed rest, F1rising breath, F2small chest/sleeve expansion peak, F3falling breath approachingF0. Face/hatfixed, no blink/changeface; emptyhands; tunic reacts lightly.",
+    "sampling": "Fourwholeframes at750ms each,3000mscycle proposed; F1/F3wholeposecanbegeometricallysimilar butillustrationsmustcontinuouslyapproachoppositeendpoints; no artificialpixelinterpolation.",
+    "amplitude": "Smallchest/sleeve displacement guide; source shape scale/cone/face stay actualoriginal, guidestyle neverfinalappearance."
+  },
+  "fixedLayout": {
+    "fixedCanvas": {
+      "width": 1254,
+      "height": 1254
+    },
+    "cell": {
+      "width": 128,
+      "height": 128
+    },
+    "pivot": {
+      "space": "source",
+      "x": 654,
+      "y": 1140
+    },
+    "render": {
+      "width": 42,
+      "height": 42
+    },
+    "contactShadow": {
+      "mode": "baked"
+    },
+    "padding": 2,
+    "basis": {
+      "manifestPath": "public/assets/art-v1/fort-202-manifest.json",
+      "manifestSHA256": "77c75ef2bea8cff633b28fe8635e51b5a7efc151bb1871b5b5d9d17850d4271c",
+      "assetId": "villager-idle-D00",
+      "conversion": "Whole source-coordinate normalization to retained original canvas; logical render unchanged"
+    },
+    "visualApproval": false
+  },
+  "rootSelection": "GuidesselectedAUTHORING_ONLY for idlebreathscope. Newactionnotwalk491492509repair; separatecandidatequalification.",
+  "limits": [
+    "Guide geometry does notprove providercontrol/identity/motion.",
+    "Originalrestframe mayjump toillustratedneighbor; ifvisibleat70.56canvaspx HOLDwholeidlecycle, no blending/warp/fit.",
+    "No newwalkmethod claimed; no otherunit/fanout/openedbudget."
+  ]
+}

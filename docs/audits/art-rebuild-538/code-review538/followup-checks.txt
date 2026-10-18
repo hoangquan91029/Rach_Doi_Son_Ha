@@ -1,0 +1,14 @@
+✔ HP0 unit/building direct raster calls do not request even available death pages (2.280634ms)
+✔ renderer hides dead actors before observations and any authored or primitive fallback; living healthbar stays (0.620133ms)
+✔ current coverage keeps living actions and waives death/destroyed/sink while retaining historical frame counts (0.433592ms)
+✔ HP0 buildings vanish from minimap while living building healthbar remains (0.348781ms)
+✔ default view renders native128 cell one to one without changing projection axes (0.901023ms)
+✔ launch uses shared default while keyboard and wheel retain distant zoom controls (3.227071ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 61.107295

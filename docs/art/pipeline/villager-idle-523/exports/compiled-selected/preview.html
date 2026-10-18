@@ -1,0 +1,61 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Sprite candidate packaging preview</title>
+<style>body{background:#22262b;color:#eee;font:15px system-ui;margin:28px}canvas{background:#30363d}figure{display:inline-block;margin:12px;vertical-align:top}button{padding:8px 16px}#error{color:#ffb2b2}img{max-width:100%}#bank{display:grid;grid-template-columns:repeat(4,minmax(140px,1fr));max-width:780px;gap:12px}#bank figure{margin:0;padding:12px;text-align:center;border:1px solid #505760}#bank canvas{display:block;margin:8px auto}#bank .missing{color:#abb4bf;min-height:90px}</style>
+<h1>Candidate packaging preview</h1>
+<p>Identity review pending · world contact OPEN · no runtime installation or visual approval</p>
+<select id="direction" hidden></select> <button id="toggle">Pause</button> <button id="replay">Replay</button> <span id="status">Loading</span><p id="error"></p>
+<figure><canvas id="master"></canvas><figcaption>Original identity master</figcaption></figure>
+<figure><canvas id="first"></canvas><figcaption>F0 whole canvas</figcaption></figure>
+<figure><canvas id="motion"></canvas><figcaption>Gameplay size · fixed canvas</figcaption></figure>
+<h2 id="bank-title">All eight directions · same playback clock</h2><div id="bank"></div>
+<p><img src="contact-sheet.png" alt="Candidate whole frame contact sheet"></p>
+<script type="module">
+const state=window.previewState={ready:false,seen:[],cycles:0,errors:[],running:true,elapsed:0,directions:{}};
+const toggle=document.querySelector('#toggle'),status=document.querySelector('#status');
+toggle.onclick=()=>{state.running=!state.running;toggle.textContent=state.running?'Pause':'Play';};
+try{
+ const load=async path=>{const r=await fetch(path);if(!r.ok)throw Error(`${path}: HTTP ${r.status}`);return r.json();};
+ let [asset,config]=await Promise.all([load('asset.json'),load('preview-config.json')]);
+ const image=async path=>{const im=new Image();im.src=path;await im.decode();return im;};
+ let [atlas,master]=await Promise.all([image(asset.runtime.path),image('master-preview.png')]);
+ const cssSize=asset.render.width*config.zoom,size=Math.max(1,Math.round(cssSize));
+ for(const name of ['master','first','motion']){const c=document.querySelector('#'+name);c.width=size;c.height=size;c.style.width=cssSize+'px';c.style.height=cssSize+'px';}
+ const draw=(name,frame)=>{const c=document.querySelector('#'+name),ctx=c.getContext('2d');ctx.clearRect(0,0,size,size);ctx.drawImage(atlas,frame.x,frame.y,frame.width,frame.height,0,0,size,size);};
+ document.querySelector('#master').getContext('2d').drawImage(master,0,0,size,size);draw('first',asset.frames[0]);
+ const building=asset.kind==='building'||asset.direction===null;state.kind=building?'building':'unit';state.looping=asset.loop===true;state.completed=false;
+ document.querySelector('#bank-title').hidden=building;document.querySelector('#bank').hidden=building;
+ let duration=asset.frames.reduce((sum,f)=>sum+f.durationMs,0),last=null;
+ const direction=document.querySelector('#direction');
+ const entries=[{direction:asset.direction,path:'asset.json'},...(config.bank||[]).filter(entry=>entry.direction!==asset.direction)];
+ const bank=document.querySelector('#bank'),bankRows=[];
+ for(let d=0;!building&&d<8;d++){
+  const fig=document.createElement('figure'),caption=document.createElement('figcaption');caption.textContent=`D${d}`;fig.append(caption);bank.append(fig);
+  const entry=entries.find(e=>e.direction===d);
+  if(!entry){const note=document.createElement('p');note.className='missing';note.textContent='Missing · no substitute';fig.append(note);state.directions[d]={missing:true};continue;}
+  const url=new URL(entry.path,location.href),a=await load(url.href),im=await image(new URL(a.runtime.path,url).href),c=document.createElement('canvas');
+  c.width=size;c.height=size;c.style.width=cssSize+'px';c.style.height=cssSize+'px';fig.append(c);
+  bankRows.push({direction:d,asset:a,image:im,canvas:c,duration:a.frames.reduce((sum,f)=>sum+f.durationMs,0)});state.directions[d]={missing:false,seen:[],frame:0};
+ }
+ document.querySelector('#replay').onclick=()=>{state.elapsed=0;state.cycles=0;state.seen=[];state.completed=false;state.running=true;last=null;toggle.textContent='Pause';};
+ state.ready=true;
+ const sample=(a,t,duration)=>{let remaining=a.loop===true?t%duration:Math.min(t,duration),index=0;while(index<a.frames.length-1&&remaining>=a.frames[index].durationMs){remaining-=a.frames[index].durationMs;index++;}return index;};
+ if(!building&&entries.length>1){direction.hidden=false;entries.forEach((entry,i)=>{const option=document.createElement('option');option.value=i;option.textContent=`D${entry.direction}`;direction.append(option);});
+ direction.onchange=async()=>{state.running=false;try{const entry=entries[Number(direction.value)],url=new URL(entry.path,location.href);const next=await load(url.href);const nextAtlas=await image(new URL(next.runtime.path,url).href);asset=next;atlas=nextAtlas;duration=asset.frames.reduce((sum,f)=>sum+f.durationMs,0);state.elapsed=0;state.cycles=0;state.seen=[];last=null;draw('first',asset.frames[0]);state.running=true;toggle.textContent='Pause';}catch(error){state.errors.push(error.message);document.querySelector('#error').textContent=error.message;}};
+ }
+ function step(now){
+  if(last!==null&&state.running)state.elapsed+=now-last;last=now;
+  const looping=asset.loop===true,elapsed=looping?state.elapsed%duration:Math.min(state.elapsed,duration);
+  state.cycles=looping?Math.floor(state.elapsed/duration):Math.min(1,Math.floor(state.elapsed/duration));
+  let remaining=elapsed,index=0;while(index<asset.frames.length-1&&remaining>=asset.frames[index].durationMs){remaining-=asset.frames[index].durationMs;index++;}
+  draw('motion',asset.frames[index]);state.frame=index;if(!state.seen.includes(index))state.seen.push(index);
+  for(const row of bankRows){const i=sample(row.asset,state.elapsed,row.duration),f=row.asset.frames[i],ctx=row.canvas.getContext('2d');ctx.clearRect(0,0,size,size);ctx.drawImage(row.image,f.x,f.y,f.width,f.height,0,0,size,size);const info=state.directions[row.direction];info.frame=i;if(!info.seen.includes(i))info.seen.push(i);}
+  state.completed=!looping&&state.elapsed>=duration;
+  if(state.completed){state.elapsed=duration;state.running=false;toggle.textContent='Play';}
+  state.duration=duration;
+  status.textContent=`${config.mode} candidate · F${index} · ${Math.round(state.elapsed)} ms · ${state.cycles} cycles`;
+  requestAnimationFrame(step);
+ }
+ requestAnimationFrame(step);
+}catch(error){state.errors.push(error.message);document.querySelector('#error').textContent=error.message;}
+</script>

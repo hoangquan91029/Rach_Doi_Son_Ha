@@ -1,0 +1,98 @@
+{
+  "schema": "rds-task-receipt/v1",
+  "taskId": "unit-disappearance522",
+  "status": "IMPLEMENTED_TARGETED_CHECKS_PASS_PENDING_INDEPENDENT_REVIEW",
+  "humanPriority": "All units and buildings HP0 disappear immediately; no death/collapse/rubble animation. Preserve livinghealthbars and simulationauthority.",
+  "changes": [
+    "Renderer filters HP0 before locomotion/impact observations and worlddepthqueue; directdraw guard prevents authored/primitive fallback; minimap excludesHP0.",
+    "Directraster sample excludesHP0 before asset lookup/request and observation locomotion seesliving only.",
+    "Current ACTIONS/identityActions and actionSpec death/destroyed/sink eligibility waived; legacydeathframe count/alias canonical mappings retained for history.",
+    "General coverage expectedmatrix excludesunit/leader/buildingdeath; presentationpriority documentsHP0hidden. Historical artwork/manifests/receipts untouched."
+  ],
+  "checks": [
+    {
+      "argv": [
+        "node",
+        "scripts/agent-preflight.mjs",
+        "--task",
+        "runtime",
+        "--source",
+        "client/renderer.js",
+        "--source",
+        "client/raster-slice.js",
+        "--task-id",
+        "unit-disappearance522",
+        "--inputs",
+        "docs/audits/movement-priority-522/root/inputs.json"
+      ],
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0,
+      "evidence": "docs/qa/unit-disappearance-522/preflight.json"
+    },
+    {
+      "argv": [
+        "node",
+        "--test",
+        "tests/unit-disappearance522.test.js",
+        "tests/raster-draw-trace490.test.js",
+        "tests/passenger-physiology156.test.js"
+      ],
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0,
+      "evidence": "docs/qa/unit-disappearance-522/tests-final.log",
+      "observation": "12passed; directHP0unit/building noassetrequest/draw, observationfilter, rendererfallbackguard, minimapbuildingguard, unit+buildinglivinghealthbars, waivedcoverage, livingidle/fallbacktrace; existing Generalstarvationdefeat and transportdeathpassengercargo physiology tests unchanged."
+    }
+  ],
+  "outputs": [
+    {
+      "path": "client/renderer.js",
+      "sha256": "9a71bdf26c2e851bae585eeae97a126a699a44c14d96c96369727c28b30b32d6"
+    },
+    {
+      "path": "client/raster-slice.js",
+      "sha256": "1ebdcbeeb6ad031792bba661e74390a5aec4c5e25ceb288fcb5618548bba73ef"
+    },
+    {
+      "path": "shared/unit-action-spec.js",
+      "sha256": "1e796554394506f668aa06a69443de26ab22ceaa6497fd28a6157030dc0b9fc9"
+    },
+    {
+      "path": "scripts/art-coverage.mjs",
+      "sha256": "810bcade5b503553c7e9e3258d6797b120987630bf0847792e31e314b829fe21"
+    },
+    {
+      "path": "tests/unit-disappearance522.test.js",
+      "sha256": "6c79c5418e3cb08d4fdb3127cc8e3484e107facb321b7cdc31ace7668104e486"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "docs/qa/unit-disappearance-522/preflight.json",
+      "sha256": "b55c7cd18c922b3ca9c21c1375ec90057a09bf8aa231b49c787bdbd38783fcd9"
+    },
+    {
+      "path": "docs/qa/unit-disappearance-522/tests.log",
+      "sha256": "815fa6431632785d90552545e65d4ce6a4b53f6839eaa8110139b782b9afbf6a"
+    },
+    {
+      "path": "docs/qa/unit-disappearance-522/tests-final.log",
+      "sha256": "68b4c452370846c153f4f75d8e2d7da09833857484db4441b668a3096e194967"
+    }
+  ],
+  "preservation": {
+    "sharedSimSHA": "c9a01adba8630e89e1c3f195c1b98c08c32e74468d389a55891c664e3906e562",
+    "unchangedSharedSim": true,
+    "publicManifestSHA": "01745b177cb45e37fca762fabd5b13bc98093feafcd44daddb91c48918f82dc0",
+    "gameplayChanges": false
+  },
+  "scope": "Sourceonly finitepresentation/requiredcoverage; no browser/build/image/deploy/fullsuite",
+  "handles": [],
+  "calls": 0,
+  "limitations": [
+    "No independentreview or actualbrowser/runtime qualification yet.",
+    "Retained dead simulationentities still carry authoritative stats/cargo/deadTick/removal; only presentation hidden.",
+    "Oldtests expecting death as requiredaction may require policy updates; historicalreceipts not rewritten.",
+    "Root owns contracts/state/taskclosure/releaseintegration."
+  ],
+  "nextDependency": "Independent exactdiff review then root currentcontracts integration; livingmotion fullroster remainsOPEN."
+}

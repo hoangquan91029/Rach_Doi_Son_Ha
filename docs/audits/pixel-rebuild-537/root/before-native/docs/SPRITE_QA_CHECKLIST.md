@@ -1,0 +1,9 @@
+# Pixel sprite QA535
+
+Structural automated gates: exact filename and identity/action binding, PNG decode,1024square atlas,128square cells, exact ordered8directions/eightframes, palette limit/declared membership, binary alpha and transparent background, nonempty silhouettes,2px transparent border, fixed anchor metadata, no duplicate RGBA frames within a direction or mirrored direction substitution, positive eight durations, valid event indices, finite/loop metadata, source hashes/call custody, no banned legacy dependencies. Fixed anchor metadata alone does not prove ground contact. Pixel integrity checks do not prove all art is hand-authored or historically true.
+
+Visual independent gates: actual native/gameplay-size loops, consistent face/clothes/scale/palette/light, all8actual views, alternating physical feet/weight/support, planted contact and seam, meaningful body/tool motion, impact/recovery, accurate perspective, no crop/float/slide/pop. Record reviewer and exact atlas/hash, observation duration, defects and verdict. Watch preview motion; a contact sheet alone cannot pass.
+
+Runtime gates: actual game renderer loading new atlas, eight facings, idle→walk→Stop/idle, interaction/recovery, hit, Pause/Resume, game-time markers and no simulation side effects. Ordinary commands only. No silent idle/legacy fallback counts. HP0 hidden/minimap/picking unchanged. Relevant Chrome/Firefox scene. Public release qualification remains separate.
+
+A character is COMPLETE only when ALL applicable actions ×8directions ×8real frames pass structural+visual+in-engine review. Tests/imagegen/palette counts alone never complete it. At rebuild start21identities/114living banks/912clips/7296positions are REQUIRED, zero new pixel positions are accepted. Workerpilot192 positions required before mass production. Never fill a minimum by copying frames.

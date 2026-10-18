@@ -1,0 +1,133 @@
+{
+  "schema": "rds-illustration-custody/v1",
+  "taskId": "illustration-idle523",
+  "workerModel": "gpt-6-luna",
+  "workerReasoning": "high",
+  "workKind": "image-generation",
+  "orderId": "villager-idle-D1-whole523-THREE",
+  "slotIndex": 3,
+  "durableClaimToken": "2741a288-59e0-47d6-8a73-0656ae8b80a1",
+  "requestSHA": "8ba5aa9ebd620bd0b8f681d230fda15ff13f7afb35833626c78f102a7be8178d",
+  "scope": "One raw South-facing Villager idle F3 inbetween candidate only. No source selection or motion approval.",
+  "inputPins": {
+    "manifest": "docs/art/pipeline/villager-idle-523/orders/task-inputs-F1-F3.json",
+    "manifestSHA256": "08d334f2000dcd941400a9266a66d139c63b945add40fb05704727eed8eb9480",
+    "verifiedPins": [
+      {
+        "path": "AGENTS.md",
+        "sha256": "bb1c12bbda8727835a5e9d2a4a68ca20af7d463b237ad704a189de3329cdb3ae"
+      },
+      {
+        "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+        "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+      },
+      {
+        "path": "docs/art/pipeline/ANIMATION_CONTRACT.md",
+        "sha256": "b6c3eefbc330ef05b20fee04489940402b8f3489c9043f5427a440e8793bdf40"
+      },
+      {
+        "path": "docs/art/pipeline/SPRITE_PRODUCTION_WORKFLOW.md",
+        "sha256": "8d15bf7205610b5f2b92d80aa9582daf787d6ec6e4a007dce7874cf0e5a23d45"
+      },
+      {
+        "path": "docs/art/pipeline/IMAGE_GENERATION_TEMPLATES.md",
+        "sha256": "e593ccbbead4366e9762cd2bebf723cbaf43b8cba8fa1cda76d2d02d7c98467c"
+      },
+      {
+        "path": "docs/art/pipeline/unit-production/villager/identity.json",
+        "sha256": "60ea0f867ab4d54ab01067deb1c642f53ca5015cbd53072949b9c0cafcb71d2b"
+      },
+      {
+        "path": "docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+        "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+      },
+      {
+        "path": "docs/art/pipeline/villager-idle-523/illustration/F2-raw.png",
+        "sha256": "7e2f4c8c46d3bd61bd680019e020425f3bca0e4cc434559e39645a225fefe502"
+      },
+      {
+        "path": "docs/art/pipeline/villager-idle-523/authoring/job-selected-endpoints.json",
+        "sha256": "167998417205c7d1d0ab6186feb8ec5b3aa717cda9e3932d2ee115cd78d595ac"
+      },
+      {
+        "path": "docs/art/pipeline/villager-idle-523/authoring/F2-selection.json",
+        "sha256": "9f1d8c8e5289548f8475d43e3fb3ec3d3c5abe0a94e1a58532601c26d1798c29"
+      },
+      {
+        "path": "docs/art/pipeline/villager-idle-523/authoring/F2-independent-review.json",
+        "sha256": "d1715e7cd4e4f31f437c3def0c29ed73ec51bbc38d79860837d160f718dea62a"
+      },
+      {
+        "path": "docs/art/pipeline/villager-idle-523/authoring/guide-provenance.json",
+        "sha256": "e71162893a77411997aa20ba6dff3f27a6fb24fdfdbc913e193f78226e33eebb"
+      },
+      {
+        "path": "docs/art/pipeline/villager-idle-523/authoring/guide/F1.png",
+        "sha256": "150f0e3e3868116dbb94b6b2bd32c469c27461235cbb162011c4be21f8440af5"
+      },
+      {
+        "path": "docs/art/pipeline/villager-idle-523/authoring/guide/F3.png",
+        "sha256": "150f0e3e3868116dbb94b6b2bd32c469c27461235cbb162011c4be21f8440af5"
+      },
+      {
+        "path": "docs/art/pipeline/villager-idle-523/orders/F1-request-base.json",
+        "sha256": "de7a609364c573b8741d16e175ce932f1ece476a3707dec266862d386c10511c"
+      },
+      {
+        "path": "docs/art/pipeline/villager-idle-523/orders/F3-request-base.json",
+        "sha256": "d6489caebe99c79943f3ef72092897985b2bd2def20cf2c12b32f6c566b759fc"
+      },
+      {
+        "path": "scripts/sprite-prompts.mjs",
+        "sha256": "7f0311c91371ce989bdaf852169c641017367b911f094086762b607d4aecc2a7"
+      },
+      {
+        "path": "scripts/sprite-order-run.mjs",
+        "sha256": "8436a7eedbe2d4a0dac8634bfcc9e7ad27a365e8862771ef230b9cfc47eb5d90"
+      }
+    ]
+  },
+  "call": {
+    "tool": "tools.image_gen__imagegen (built-in imagegen)",
+    "callsMade": 1,
+    "promptSHA256": "5fefbccc29c044e26f359855a6e3d1fda8a186d0e897a5f3d006cd5e9dd228ec",
+    "promptSource": "orders/F3-claim-result.json prepared.prompt",
+    "orderedReferences": [
+      "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-idle-523/illustration/F2-raw.png",
+      "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-idle-523/authoring/guide/F3.png"
+    ],
+    "transparentBackground": true,
+    "workerModelIsNotGeneratorModel": true,
+    "generatorModel": null,
+    "providerHandle": null,
+    "seed": null,
+    "timestamp": null
+  },
+  "result": {
+    "status": "RETURNED",
+    "providerSavedPath": "/home/kieu-hoang-quan/.codex/generated_images/01a13535-da65-72d2-9952-e0a90415cffb/exec-cd0ce5ed-b404-4996-b6c2-9c27e201e227.png",
+    "toolOutputHint": "Generated images are saved to /home/kieu-hoang-quan/.codex/generated_images/01a13535-da65-72d2-9952-e0a90415cffb as /home/kieu-hoang-quan/.codex/generated_images/01a13535-da65-72d2-9952-e0a90415cffb/exec-cd0ce5ed-b404-4996-b6c2-9c27e201e227.png by default. If you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it. The generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "ownedCopy": "docs/art/pipeline/villager-idle-523/illustration/F3-raw.png",
+    "byteCopy": "unchanged byte copy; provider original retained",
+    "byteLength": 867147,
+    "sha256": "faa0cda1c00f5aadd3f12034b6d6ce15b8b7093ff8702f60a221bc55dbcd454b",
+    "decoded": {
+      "format": "PNG",
+      "mode": "RGBA",
+      "width": 1254,
+      "height": 1254,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "rgbaSha256": "764f9a4bb869c7beb88d1540397cb33ffe9b1f627b5a44f663adb4d3865f3691"
+    },
+    "outputMapping": "Single returned raw PNG maps to claimed Villager D1 idle F3 candidate slot."
+  },
+  "limitations": [
+    "Image payload returned synchronously; no provider handle exposed. Generator model, seed, and timestamp remain null.",
+    "Candidate still only; no source selection, full-loop seam, motion/contact, runtime, owner, or release approval.",
+    "No correction or retry was made. Root owns claim settlement."
+  ]
+}

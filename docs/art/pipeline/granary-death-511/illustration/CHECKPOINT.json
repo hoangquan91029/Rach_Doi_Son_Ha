@@ -1,0 +1,398 @@
+{
+  "schema": "rds-building-illustration-package/v1",
+  "taskId": "illustration-building511",
+  "workerModel": "gpt-6-luna",
+  "workerReasoning": "high",
+  "workKind": "image-generation",
+  "scope": "Raw candidate keys only. Root independently selected the endpoints before F1/F2 dispatch; this worker does not approve the inbetween frames or clip. Root owns ledger settlement; independent full-sequence review and compiler remain next.",
+  "preservedSnapshots": {
+    "F0-custody.json": "8315f261ef2dc129da3cdb7d1e12d7413b2eb5c285c955b3750201cc2af01461",
+    "F3-custody.json": "b614739a6cbd7dc5d72094664b89abe995d7b75224dfcbc0c645520580f706fc"
+  },
+  "calls": [
+    {
+      "key": "F3-terminal",
+      "custodyFile": "F3-custody.json",
+      "custodySHA256": "b614739a6cbd7dc5d72094664b89abe995d7b75224dfcbc0c645520580f706fc",
+      "orderId": "granary-death-whole511",
+      "slotIndex": 3,
+      "claimToken": "5e796818-d267-47d9-9af0-1a21dde77969",
+      "raw": "F3-raw.png",
+      "rawSHA256": "e53a36ffe4a52477e2e598f7d4222d4a79ef75e222e09f479cf26159294719e9",
+      "callsMade": 1
+    },
+    {
+      "key": "F0-onset",
+      "claimToken": "06997374-f91e-42a6-b682-f12021a51c9d",
+      "slotIndex": 0,
+      "raw": "F0-raw.png",
+      "record": {
+        "orderId": "granary-death-whole511",
+        "slotIndex": 0,
+        "durableClaimToken": "06997374-f91e-42a6-b682-f12021a51c9d",
+        "requestSHA": "0240c307a33bf94f9a25e765174ebb4c83f00514673ad57f94bf53d85a6af683",
+        "inputPins": {
+          "manifest": "docs/art/pipeline/granary-death-511/orders/F0-task-inputs.json",
+          "manifestSHA256": "79b244e3dcdf2617c428f4c46feaa0b6423ff4742c16a766bd340c47dc121ca5",
+          "verifiedPins": [
+            {
+              "path": "AGENTS.md",
+              "sha256": "a81895b57e445ae913773fd7bf55049f84d859d407e175de2d106edc4f3c52bd"
+            },
+            {
+              "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+              "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+            },
+            {
+              "path": "scripts/building-sprite-contract.mjs",
+              "sha256": "03544fe68faa3d0bc68bb2931c402b8967677e3fe4e0d64d9488d0e9280b7715"
+            },
+            {
+              "path": "scripts/sprite-prompts.mjs",
+              "sha256": "7f0311c91371ce989bdaf852169c641017367b911f094086762b607d4aecc2a7"
+            },
+            {
+              "path": "scripts/sprite-order-run.mjs",
+              "sha256": "8436a7eedbe2d4a0dac8634bfcc9e7ad27a365e8862771ef230b9cfc47eb5d90"
+            },
+            {
+              "path": "scripts/agent-preflight.mjs",
+              "sha256": "60a93e9f83e1270940e439cac2ee6332e7d8d3d1d09fcaba02e5431bc817ed36"
+            },
+            {
+              "path": "scripts/agent-task-contract.mjs",
+              "sha256": "ab70ec1dc9e99293a54ea2873cb802ab2745d62942ff80c6fa0cb714ae0a60b1"
+            },
+            {
+              "path": "docs/art/granary/variant-01/raw.png",
+              "sha256": "0d0c3963f3faed9341cd09f2ff118a753e9bd1ee431290b51635eebb17b61715"
+            },
+            {
+              "path": "docs/art/pipeline/building-production/granary/identity.json",
+              "sha256": "c223818ce15708802f31d66bada671b5911193351965ef772d1e75588f9a7752"
+            },
+            {
+              "path": "docs/art/pipeline/granary-death-511/authoring/job-F3-selected.json",
+              "sha256": "665a414bb22f25a4f17d01e475c968ccefe1bb285ed3fe0fb4786a0b42241e24"
+            },
+            {
+              "path": "docs/art/pipeline/granary-death-511/authoring/canonical-asset.json",
+              "sha256": "068d25dc8374270fba8a169966f777e2174d7b68a1755fb3615ead431f5a0913"
+            },
+            {
+              "path": "docs/art/pipeline/granary-death-511/authoring/F0-request.json",
+              "sha256": "d6da6de84215a342d37006780efce16cde8b4a25de39e30a3523a065f41b2b15"
+            },
+            {
+              "path": "docs/art/pipeline/granary-death-511/authoring/F3-selection.json",
+              "sha256": "5f69f907b681fbb921718ca753e1801eb466e2895420500dbace0d468eac4709"
+            },
+            {
+              "path": "docs/art/pipeline/granary-death-511/illustration/F3-raw.png",
+              "sha256": "e53a36ffe4a52477e2e598f7d4222d4a79ef75e222e09f479cf26159294719e9"
+            },
+            {
+              "path": "docs/art/pipeline/granary-death-511/review/CHECKPOINT.json",
+              "sha256": "bfe12bd81babc6a81fcaff8d6c7dd8e4e76a5eac4cf96fa6f1548e1a3871feae"
+            }
+          ]
+        },
+        "call": {
+          "tool": "tools.image_gen__imagegen (built-in imagegen)",
+          "callsMade": 1,
+          "promptSHA256": "ee33c21f88a494c64dbd43b1b04aa663a2d92a2c34aad5778732bfbc36a3f276",
+          "promptSource": "orders/F0-claim-result.json prepared.prompt",
+          "orderedReferences": [
+            "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/granary/variant-01/raw.png",
+            "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/illustration/F3-raw.png"
+          ],
+          "transparentBackground": true,
+          "generatorModel": null,
+          "providerHandle": null,
+          "seed": null,
+          "timestamp": null
+        },
+        "result": {
+          "status": "RETURNED",
+          "providerSavedPath": "/home/kieu-hoang-quan/.codex/generated_images/01a1343c-857b-73b1-8d93-ec0156f91c64/exec-411324f5-086c-435f-b3ae-e23297734be5.png",
+          "toolOutputHint": "Generated images saved under /home/kieu-hoang-quan/.codex/generated_images/01a1343c-857b-73b1-8d93-ec0156f91c64 as exec-411324f5-086c-435f-b3ae-e23297734be5.png; provider advises retaining original after copy.",
+          "ownedCopy": "docs/art/pipeline/granary-death-511/illustration/F0-raw.png",
+          "byteCopy": "unchanged copy; provider original retained",
+          "sha256": "c853a3340a6e8173f882312a5b69c1f1abb8fc67a4743a39d93e7abce2280815",
+          "decoded": {
+            "format": "PNG",
+            "mode": "RGBA",
+            "width": 1254,
+            "height": 1254,
+            "alphaExtrema": [
+              0,
+              255
+            ],
+            "rgbaSha256": "7080a6a6a71ea1bc1063bed025b1ad5728839db6a90051ddf95f5af5fff0a993"
+          },
+          "outputMapping": "single returned raw image corresponds to claimed F0 onset slot"
+        }
+      }
+    },
+    {
+      "orderId": "granary-death-whole511",
+      "slotIndex": 1,
+      "durableClaimToken": "f8e252cc-fd62-44b9-b100-9cfb60b568ef",
+      "requestSHA": "c742a1e523726601b0d3dac9a285036f76c3e5f2e76b70032f9e2195cc247106",
+      "inputPins": {
+        "manifest": "docs/art/pipeline/granary-death-511/orders/inbetween-task-inputs.json",
+        "manifestSHA256": "5b0d3ab28e580ed5c797ecbabba779aed795dea9cdf9000b5fff639c36a3e4bb",
+        "verifiedPins": [
+          {
+            "path": "AGENTS.md",
+            "sha256": "a81895b57e445ae913773fd7bf55049f84d859d407e175de2d106edc4f3c52bd"
+          },
+          {
+            "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+            "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+          },
+          {
+            "path": "scripts/building-sprite-contract.mjs",
+            "sha256": "03544fe68faa3d0bc68bb2931c402b8967677e3fe4e0d64d9488d0e9280b7715"
+          },
+          {
+            "path": "scripts/sprite-prompts.mjs",
+            "sha256": "7f0311c91371ce989bdaf852169c641017367b911f094086762b607d4aecc2a7"
+          },
+          {
+            "path": "scripts/sprite-order-run.mjs",
+            "sha256": "8436a7eedbe2d4a0dac8634bfcc9e7ad27a365e8862771ef230b9cfc47eb5d90"
+          },
+          {
+            "path": "scripts/agent-preflight.mjs",
+            "sha256": "60a93e9f83e1270940e439cac2ee6332e7d8d3d1d09fcaba02e5431bc817ed36"
+          },
+          {
+            "path": "scripts/agent-task-contract.mjs",
+            "sha256": "ab70ec1dc9e99293a54ea2873cb802ab2745d62942ff80c6fa0cb714ae0a60b1"
+          },
+          {
+            "path": "docs/art/granary/variant-01/raw.png",
+            "sha256": "0d0c3963f3faed9341cd09f2ff118a753e9bd1ee431290b51635eebb17b61715"
+          },
+          {
+            "path": "docs/art/pipeline/building-production/granary/identity.json",
+            "sha256": "3e3a8e029a5550aff5089ba0122c6c2ff862cdefe58c6536583d4c2801496560"
+          },
+          {
+            "path": "docs/art/pipeline/granary-death-511/authoring/job-selected-endpoints.json",
+            "sha256": "163f2da765c1ee9660cf94576f50692470e2b44b7c46efb64ccc697329dbcd41"
+          },
+          {
+            "path": "docs/art/pipeline/granary-death-511/authoring/canonical-asset.json",
+            "sha256": "068d25dc8374270fba8a169966f777e2174d7b68a1755fb3615ead431f5a0913"
+          },
+          {
+            "path": "docs/art/pipeline/granary-death-511/authoring/F1-request.json",
+            "sha256": "c3240cd13702ade2cf1a1aa10b3962207f51a29cca0ac1f1f1a36bfe443f64a6"
+          },
+          {
+            "path": "docs/art/pipeline/granary-death-511/authoring/F2-request.json",
+            "sha256": "0b3dbc45bfde16c4cab481fcda74230c0f07ff97f7bdb73d6ac305a2a897e1ca"
+          },
+          {
+            "path": "docs/art/pipeline/granary-death-511/authoring/F0-selection.json",
+            "sha256": "e8e49781ef50ed41f8f2d61a737d6f182a064a63d6c7a870c3eb43801d8dc7ba"
+          },
+          {
+            "path": "docs/art/pipeline/granary-death-511/authoring/F3-selection.json",
+            "sha256": "5f69f907b681fbb921718ca753e1801eb466e2895420500dbace0d468eac4709"
+          },
+          {
+            "path": "docs/art/pipeline/granary-death-511/illustration/F0-raw.png",
+            "sha256": "c853a3340a6e8173f882312a5b69c1f1abb8fc67a4743a39d93e7abce2280815"
+          },
+          {
+            "path": "docs/art/pipeline/granary-death-511/illustration/F3-raw.png",
+            "sha256": "e53a36ffe4a52477e2e598f7d4222d4a79ef75e222e09f479cf26159294719e9"
+          },
+          {
+            "path": "docs/art/pipeline/granary-death-511/authoring/F0-independent-review.json",
+            "sha256": "7b0010e1c18efd4c7276ab956dbd485859d9e30ab9d83c4998e8935188ab9af1"
+          },
+          {
+            "path": "docs/art/pipeline/granary-death-511/authoring/F3-independent-review.json",
+            "sha256": "bfe12bd81babc6a81fcaff8d6c7dd8e4e76a5eac4cf96fa6f1548e1a3871feae"
+          }
+        ]
+      },
+      "call": {
+        "tool": "tools.image_gen__imagegen (built-in imagegen)",
+        "callsMade": 1,
+        "promptSHA256": "6678f537ef0cbb66f625f1352fdeecd6504325ca3c3b2b4566a862ff161c1e1e",
+        "promptSource": "orders/F1-claim-result.json prepared.prompt",
+        "orderedReferences": [
+          "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/granary/variant-01/raw.png",
+          "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/illustration/F0-raw.png",
+          "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/illustration/F3-raw.png"
+        ],
+        "transparentBackground": true,
+        "generatorModel": null,
+        "providerHandle": null,
+        "seed": null,
+        "timestamp": null
+      },
+      "result": {
+        "status": "RETURNED",
+        "providerSavedPath": "/home/kieu-hoang-quan/.codex/generated_images/01a1343c-857b-73b1-8d93-ec0156f91c64/exec-a50d768f-8af6-49aa-954b-31335b0be1dd.png",
+        "toolOutputHint": "Generated image saved by built-in imagegen as /home/kieu-hoang-quan/.codex/generated_images/01a1343c-857b-73b1-8d93-ec0156f91c64/exec-a50d768f-8af6-49aa-954b-31335b0be1dd.png; original retained after byte-copy.",
+        "ownedCopy": "docs/art/pipeline/granary-death-511/illustration/F1-raw.png",
+        "byteCopy": "unchanged copy; provider original retained",
+        "sha256": "b32a1f3cbee740b221c6a59bbd95eb05cf61566352f2a49d80489a27d437d6bd",
+        "decoded": {
+          "format": "PNG",
+          "mode": "RGBA",
+          "width": 1254,
+          "height": 1254,
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "rgbaSha256": "65b86f011a80b2b39c5be11f99c077ff63d732aa2fd5c3660890f280aa6f3c42"
+        },
+        "outputMapping": "single returned raw image corresponds to claimed F1 slot"
+      }
+    },
+    {
+      "orderId": "granary-death-whole511",
+      "slotIndex": 2,
+      "durableClaimToken": "6ea91e30-2d50-4889-94dd-b8290d6415a8",
+      "requestSHA": "4a6a39f51c37aa46aec55895bf58f64d6088c1f9d6102c58f58b1ff17c741335",
+      "inputPins": {
+        "manifest": "docs/art/pipeline/granary-death-511/orders/inbetween-task-inputs.json",
+        "manifestSHA256": "5b0d3ab28e580ed5c797ecbabba779aed795dea9cdf9000b5fff639c36a3e4bb",
+        "verifiedPins": [
+          {
+            "path": "AGENTS.md",
+            "sha256": "a81895b57e445ae913773fd7bf55049f84d859d407e175de2d106edc4f3c52bd"
+          },
+          {
+            "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+            "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+          },
+          {
+            "path": "scripts/building-sprite-contract.mjs",
+            "sha256": "03544fe68faa3d0bc68bb2931c402b8967677e3fe4e0d64d9488d0e9280b7715"
+          },
+          {
+            "path": "scripts/sprite-prompts.mjs",
+            "sha256": "7f0311c91371ce989bdaf852169c641017367b911f094086762b607d4aecc2a7"
+          },
+          {
+            "path": "scripts/sprite-order-run.mjs",
+            "sha256": "8436a7eedbe2d4a0dac8634bfcc9e7ad27a365e8862771ef230b9cfc47eb5d90"
+          },
+          {
+            "path": "scripts/agent-preflight.mjs",
+            "sha256": "60a93e9f83e1270940e439cac2ee6332e7d8d3d1d09fcaba02e5431bc817ed36"
+          },
+          {
+            "path": "scripts/agent-task-contract.mjs",
+            "sha256": "ab70ec1dc9e99293a54ea2873cb802ab2745d62942ff80c6fa0cb714ae0a60b1"
+          },
+          {
+            "path": "docs/art/granary/variant-01/raw.png",
+            "sha256": "0d0c3963f3faed9341cd09f2ff118a753e9bd1ee431290b51635eebb17b61715"
+          },
+          {
+            "path": "docs/art/pipeline/building-production/granary/identity.json",
+            "sha256": "3e3a8e029a5550aff5089ba0122c6c2ff862cdefe58c6536583d4c2801496560"
+          },
+          {
+            "path": "docs/art/pipeline/granary-death-511/authoring/job-selected-endpoints.json",
+            "sha256": "163f2da765c1ee9660cf94576f50692470e2b44b7c46efb64ccc697329dbcd41"
+          },
+          {
+            "path": "docs/art/pipeline/granary-death-511/authoring/canonical-asset.json",
+            "sha256": "068d25dc8374270fba8a169966f777e2174d7b68a1755fb3615ead431f5a0913"
+          },
+          {
+            "path": "docs/art/pipeline/granary-death-511/authoring/F1-request.json",
+            "sha256": "c3240cd13702ade2cf1a1aa10b3962207f51a29cca0ac1f1f1a36bfe443f64a6"
+          },
+          {
+            "path": "docs/art/pipeline/granary-death-511/authoring/F2-request.json",
+            "sha256": "0b3dbc45bfde16c4cab481fcda74230c0f07ff97f7bdb73d6ac305a2a897e1ca"
+          },
+          {
+            "path": "docs/art/pipeline/granary-death-511/authoring/F0-selection.json",
+            "sha256": "e8e49781ef50ed41f8f2d61a737d6f182a064a63d6c7a870c3eb43801d8dc7ba"
+          },
+          {
+            "path": "docs/art/pipeline/granary-death-511/authoring/F3-selection.json",
+            "sha256": "5f69f907b681fbb921718ca753e1801eb466e2895420500dbace0d468eac4709"
+          },
+          {
+            "path": "docs/art/pipeline/granary-death-511/illustration/F0-raw.png",
+            "sha256": "c853a3340a6e8173f882312a5b69c1f1abb8fc67a4743a39d93e7abce2280815"
+          },
+          {
+            "path": "docs/art/pipeline/granary-death-511/illustration/F3-raw.png",
+            "sha256": "e53a36ffe4a52477e2e598f7d4222d4a79ef75e222e09f479cf26159294719e9"
+          },
+          {
+            "path": "docs/art/pipeline/granary-death-511/authoring/F0-independent-review.json",
+            "sha256": "7b0010e1c18efd4c7276ab956dbd485859d9e30ab9d83c4998e8935188ab9af1"
+          },
+          {
+            "path": "docs/art/pipeline/granary-death-511/authoring/F3-independent-review.json",
+            "sha256": "bfe12bd81babc6a81fcaff8d6c7dd8e4e76a5eac4cf96fa6f1548e1a3871feae"
+          }
+        ]
+      },
+      "call": {
+        "tool": "tools.image_gen__imagegen (built-in imagegen)",
+        "callsMade": 1,
+        "promptSHA256": "5e5cb869bd32183a8d68ebf8cd9a5cf2a26d17e23b8741f2c3480d61ecf994f5",
+        "promptSource": "orders/F2-claim-result.json prepared.prompt",
+        "orderedReferences": [
+          "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/granary/variant-01/raw.png",
+          "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/illustration/F0-raw.png",
+          "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/illustration/F3-raw.png"
+        ],
+        "transparentBackground": true,
+        "generatorModel": null,
+        "providerHandle": null,
+        "seed": null,
+        "timestamp": null
+      },
+      "result": {
+        "status": "RETURNED",
+        "providerSavedPath": "/home/kieu-hoang-quan/.codex/generated_images/01a1343c-857b-73b1-8d93-ec0156f91c64/exec-8dce1a23-464b-4cdc-ab5e-a3d2da49aac9.png",
+        "toolOutputHint": "Generated image saved by built-in imagegen as /home/kieu-hoang-quan/.codex/generated_images/01a1343c-857b-73b1-8d93-ec0156f91c64/exec-8dce1a23-464b-4cdc-ab5e-a3d2da49aac9.png; original retained after byte-copy.",
+        "ownedCopy": "docs/art/pipeline/granary-death-511/illustration/F2-raw.png",
+        "byteCopy": "unchanged copy; provider original retained",
+        "sha256": "05a7438ba8550214706d7107a83614235e7aff54c8f546cea5c90cf7487f40fa",
+        "decoded": {
+          "format": "PNG",
+          "mode": "RGBA",
+          "width": 1254,
+          "height": 1254,
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "rgbaSha256": "5430f1f38073e66ffb2aa8545160bd6aa447a37470f6bff5adec3930dd1392d0"
+        },
+        "outputMapping": "single returned raw image corresponds to claimed F2 slot"
+      }
+    }
+  ],
+  "totals": {
+    "callBudget": 4,
+    "durableClaims": 4,
+    "callsReturned": 4,
+    "framesGenerated": 4,
+    "otherSlotsTouched": false
+  },
+  "limitations": [
+    "Generator model, durable provider handles, seeds, and timestamps are unknown where the tool did not expose them.",
+    "All returned frames are 1254x1254 RGBA; dimensions alone do not establish visual acceptance.",
+    "No worker motion, source, runtime, owner, or release approval is claimed."
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": "rds-art-task-checkpoint/v1",
+  "taskId": "illustration-hit530",
+  "status": "CANDIDATE_RETURNED_PENDING_ROOT_INTAKE",
+  "purpose": "One original Villager D1 nonfatal planted hit peak illustration, F1 only.",
+  "outputs": [
+    {
+      "path": "docs/art/pipeline/villager-hit-530/illustration/F1-raw.png",
+      "sha256": "e89cf68b92047683d0385d745c40e9299a6c7fbf9f3b4c15e21a526c3ed35d23",
+      "bytes": 858805
+    },
+    {
+      "path": "docs/art/pipeline/villager-hit-530/illustration/F1-custody.json",
+      "sha256": "650f52d24bc860cd6fd98434596a9b016323eaf400fd79e5b091e0ac4a6cf90e"
+    }
+  ],
+  "checks": [
+    {
+      "name": "scoped-art-preflight",
+      "status": "PASS",
+      "evidence": "docs/art/pipeline/villager-hit-530/illustration/art-preflight.json"
+    },
+    {
+      "name": "prepareOrder exact prompt and input order",
+      "status": "PASS",
+      "evidence": "docs/art/pipeline/villager-hit-530/illustration/prepare-check.json"
+    },
+    {
+      "name": "durable claim before dispatch",
+      "status": "PASS",
+      "evidence": "docs/art/pipeline/villager-hit-530/illustration/claim-result.json"
+    },
+    {
+      "name": "one built-in imagegen call returned and raw PNG copied",
+      "status": "PASS",
+      "evidence": "docs/art/pipeline/villager-hit-530/illustration/F1-custody.json"
+    }
+  ],
+  "dispatch": {
+    "calls": 1,
+    "corrections": 0,
+    "retries": 0
+  },
+  "claim": {
+    "token": "60b64985-d856-4e42-b098-96138553266a",
+    "orderId": "villager-hit-D1-whole530-THREE",
+    "slotIndex": 1,
+    "settled": false
+  },
+  "handles": [
+    {
+      "id": "60b64985-d856-4e42-b098-96138553266a",
+      "type": "durable-image-order-claim",
+      "status": "OPEN_FOR_ROOT_INTAKE",
+      "note": "Provider returned; root owns ledger settlement and closure."
+    }
+  ],
+  "review": {
+    "sourceSelection": "PENDING_ROOT",
+    "motion": "UNKNOWN",
+    "runtime": "NOT_RUN",
+    "ownerApproval": "NOT_REQUESTED",
+    "publicRelease": "NOT_RUN"
+  },
+  "limitations": [
+    "The raw is a candidate only; this task does not select it or approve motion.",
+    "F0 and F2 remain unauthorized pending independent raw review and root selection.",
+    "No order settlement, registry/state/manifest changes, packaging, runtime or release work performed."
+  ]
+}

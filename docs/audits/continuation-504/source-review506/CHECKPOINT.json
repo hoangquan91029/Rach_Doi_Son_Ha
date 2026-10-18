@@ -1,0 +1,62 @@
+{
+  "schema": "rds-task-receipt/v1",
+  "taskId": "source-review506",
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "07f78b1281e4ae2f54d1f5b7677104ca23a83570739027c1004098f54a997474",
+      "actual": "07f78b1281e4ae2f54d1f5b7677104ca23a83570739027c1004098f54a997474"
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "225d9c16f9db5c4fbe941c93053fbcb958b1672824043b757b58ebb4f41b8569",
+      "actual": "225d9c16f9db5c4fbe941c93053fbcb958b1672824043b757b58ebb4f41b8569"
+    },
+    {
+      "path": "docs/audits/continuation-504/identity-review/actualappearance-review.json",
+      "sha256": "cbbf5cc86e7f21089da52157e79480c29dc89768e8e5cf246fb83659679ebe97",
+      "actual": "cbbf5cc86e7f21089da52157e79480c29dc89768e8e5cf246fb83659679ebe97"
+    },
+    {
+      "path": "scripts/blender/villager504.py",
+      "sha256": "e97cc98b24fa8237028330643a0bbc17eca40f85bfd820367212b751ea7556f8",
+      "actual": "e97cc98b24fa8237028330643a0bbc17eca40f85bfd820367212b751ea7556f8"
+    },
+    {
+      "path": "docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+      "actual": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94"
+    },
+    {
+      "path": "docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "actual": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+    }
+  ],
+  "preflight": "docs/audits/continuation-504/source-review506/preflight.log",
+  "method": "Readexistingactual504failure+constraints; no repeatedstills",
+  "status": "GUIDANCE_READY_PENDING_CODE_REVIEW",
+  "outputs": {
+    "docs/audits/continuation-504/source-review506/inputs.json": "8dcf41165ef9431aeb96e081f6f1f8e52a723e9f7cbd1fa2fc6608d3e80ca152",
+    "docs/audits/continuation-504/source-review506/assignment.json": "351d79b871040cd794d071fe19466d872ce2d690f919b1f73a4a1fe224666296",
+    "docs/audits/continuation-504/source-review506/preflight.log": "9cee788ce6ff5e34898ee1e3517a8ffc5d4e551c3e00be612d7e11476c8b63d0",
+    "docs/audits/continuation-504/source-review506/GUIDANCE.json": "deff52030c8209e875ceb4602e620cc1ffceec8644e615f34187a033d1abeb06"
+  },
+  "counts": {
+    "renders": 0,
+    "generations": 0,
+    "MCPWrites": 0,
+    "modelEdits": 0,
+    "sharedWrites": 0
+  },
+  "handles": {
+    "ownedRemaining": []
+  },
+  "appearance": "UNKNOWN_NEW506",
+  "nextDependency": "Exactnew506script/hash fromroot/A forstaticmechanismreview",
+  "routingCorrection": {
+    "observation": "Guidance initially sentoldcapabilityagent name based on assumedArole; actualregistry/root identifies artowner /root/blender_identity499; correctedguidance delivered",
+    "scope": "wrongrecipientread-onlyguidance, noauthorization/modelscript/render/configchange",
+    "lesson": "Use exact registeredworker.id not oldagentroleletters"
+  }
+}

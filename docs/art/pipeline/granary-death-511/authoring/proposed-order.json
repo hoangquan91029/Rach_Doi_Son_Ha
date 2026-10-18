@@ -1,0 +1,61 @@
+{
+  "id": "granary-death-whole511",
+  "jobKind": "building-state",
+  "kind": "building",
+  "buildingType": "granary",
+  "state": "death",
+  "direction": null,
+  "status": "OPEN",
+  "callLimit": 4,
+  "callsUsed": 0,
+  "correctionCap": 0,
+  "correctionsUsed": 0,
+  "job": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/authoring/job.json",
+    "sha256": "2dc20bde31d00efe23c89730fec95373e5fa686ded852e8f6a18a7a3683b9f9b",
+    "id": "granary-death-whole511"
+  },
+  "slots": [
+    {
+      "frame": 0,
+      "phase": 0.0,
+      "status": "pending",
+      "kind": "initial",
+      "template": "building_key"
+    },
+    {
+      "frame": 1,
+      "phase": 0.25,
+      "status": "pending",
+      "kind": "initial",
+      "template": "building_key"
+    },
+    {
+      "frame": 2,
+      "phase": 0.5,
+      "status": "pending",
+      "kind": "initial",
+      "template": "building_key"
+    },
+    {
+      "frame": 3,
+      "phase": 0.75,
+      "status": "pending",
+      "kind": "initial",
+      "template": "building_key"
+    }
+  ],
+  "enforcement": {
+    "version": 1,
+    "taskId": "illustration-building511",
+    "baseline": {
+      "callsUsed": 0,
+      "correctionsUsed": 0
+    },
+    "method": {
+      "family": "original-granary-death-whole511",
+      "parentOrderIds": []
+    },
+    "prerequisites": []
+  }
+}

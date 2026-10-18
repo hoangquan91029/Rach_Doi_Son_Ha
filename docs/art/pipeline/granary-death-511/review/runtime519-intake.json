@@ -1,0 +1,106 @@
+{
+  "taskId": "review-building511",
+  "scope": "Independent readonly runtime519 evidence intake; no scene rerun",
+  "status": "SCOPED_TECHNICAL_EVIDENCE_CONSISTENT",
+  "method": "Current source, exactpin verification, saved samples/outputs/browser lifecycle inspection; auditpreflight exit0",
+  "pins": {
+    "checkpoint": "c8ff48a8211475e03ff0ec657d4368430ac9b6206270ded8233f14e7448e4bcc",
+    "harness": "259c82f1ff4b3168b031961f1d1e6b40c767a6f578786b87053db8c5d60ce2da",
+    "candidateAsset": "bd15509226232c966d4284a9cf17cf5e7fe04d59444b0d8daea34ade71de5da1"
+  },
+  "outputsVerified": [
+    {
+      "path": "scripts/qa/granary-death519.mjs",
+      "hashMatches": true
+    },
+    {
+      "path": "docs/qa/granary-death-519/receipt.json",
+      "hashMatches": true
+    },
+    {
+      "path": "docs/qa/granary-death-519/run.log",
+      "hashMatches": true
+    },
+    {
+      "path": "docs/qa/granary-death-519/browser-custody/lifecycle.jsonl",
+      "hashMatches": true
+    },
+    {
+      "path": "docs/qa/granary-death-519/browser-custody/status.json",
+      "hashMatches": true
+    },
+    {
+      "path": "docs/qa/granary-death-519/final-side0.png",
+      "hashMatches": true
+    },
+    {
+      "path": "docs/qa/granary-death-519/final-side1.png",
+      "hashMatches": true
+    }
+  ],
+  "ordinaryUI": {
+    "evidence": "VERIFIED_SOURCE_PATH",
+    "observation": "Harness uses room/create/join/ready selectors, minimap UI, mouse groundrectangle/rightclick and Ctrl1..4/1..4 keys. Evaluations read rtsDiagnostics snapshot/point/entityPoint or viewport only. No state/command injection found. Source client/main.js103–104 binds same controlgroup keys."
+  },
+  "frames": {
+    "evidence": "DOCUMENTED_ONLY_SCENE_SAMPLES_REVIEWED",
+    "target": 19,
+    "deadTick": 1016,
+    "firstDraw": {
+      "frame": 0,
+      "tick": 1016,
+      "elapsedMs": 0
+    },
+    "bindings": [
+      {
+        "frame": 0,
+        "samples": 3,
+        "minElapsedMs": 0,
+        "maxElapsedMs": 200
+      },
+      {
+        "frame": 1,
+        "samples": 2,
+        "minElapsedMs": 400,
+        "maxElapsedMs": 400
+      },
+      {
+        "frame": 2,
+        "samples": 1,
+        "minElapsedMs": 600,
+        "maxElapsedMs": 600
+      },
+      {
+        "frame": 3,
+        "samples": 25,
+        "minElapsedMs": 800,
+        "maxElapsedMs": 3800
+      }
+    ],
+    "removalSnapshotTick": 1096,
+    "lastCorpseTick": 1092,
+    "observation": "80tick4000ms window matches sharedsim. F3 sampled800–3800ms; no draw/deathstatus at1096. Frame diagnostics show authored candidate, fallbackfalse and85logicalrender at1.68=142.8canvas."
+  },
+  "coldFirstUse": {
+    "evidence": "SCOPED_INDIRECT",
+    "observation": "Both fresh contexts record zero candidate atlas responses at preAttack; exactlytwo200 responses later; private on-demand candidate draw F0 atdeadTick elapsed0.",
+    "limitations": "Response hooks do not timestamp request start or decode completion. PreAttack tick288 precedes attack636; absence atpreAttack alone does not prove every intermediate moment cold. No asset-specific decodedAPI, no injection/warmup found. FirstdrawF0 evidence is sampled, not continuous guaranteedlatency.",
+    "descriptorEvidence": "Actual build/assets/art-v1/fort-202-manifest.json private candidate: granary-death-511-candidate, loopfalse, loadPolicyon-demand, runtimegranary-death515/atlas.png"
+  },
+  "preservation": {
+    "canonical": "Harness exact tree/hash start/periodic1s/end and receipttrue; no independent timeline rerun",
+    "reusedStagePinsChecked": 424,
+    "reusedStageMismatches": []
+  },
+  "cleanup": {
+    "evidence": "VERIFIED_SAVED_CUSTODY_EVIDENCE",
+    "observation": "Two contexts close after cleanupintent; browser process exit/close0, serverclosedrooms0, disconnected. Lifecycle no premature contextclose or exception. Contextclosure does not prove ordinary menu exit."
+  },
+  "contradictions": [],
+  "limitations": [
+    "No new browser/scene/image/build/test by reviewer. Scene observations are inspected saved evidence, not rerun.",
+    "No continuous artmotion, ownerapproval, publicHTTPS, secondmap, fullmatch, PauseResume, networkloss, denseworking-set qualification.",
+    "Private candidate remains approved0/CANDIDATE; technical draw is not visualmotionPASS."
+  ],
+  "nextDependency": "Root integrates scopedtechnicalreceipt without closing independentmotion/owner/publicgates."
+}

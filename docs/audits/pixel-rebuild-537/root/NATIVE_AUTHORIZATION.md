@@ -1,0 +1,1 @@
+Human reply on15October2026 to the concrete proposal question: “Cho phép vẽ pixel trực tiếp”. This explicitly selects direct native pixel authoring described in AUTHORING_PROPOSAL.md. Eight-frame S walk pilot first, independent review before fanout. No imagegen call/budget reset.

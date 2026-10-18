@@ -1,4 +1,25 @@
+# Pixel rebuild535 completion override
+
+ALL character completion rows now require new native128×128 pixel frames,8directions with8realframes each, action-specific body/tool movement, coherent identity/palette/perspective, transparent backgrounds and fixed ground anchor;1024×1024 action atlas8columns×8rows. Require structuralQA + independent visual loop + actual in-engine integration. Legacy sprite source/technical/owner evidence is historical, not replacement pixel qualification. Workerpilot192frames gates remaining production. Full inventory7296minimumpositions, none accepted at rebuild entry. Existing death-art waiver/HP0 disappearance and unrelated gameplay/public gates remain.
+
+## Preserved earlier requirement matrix
+
 # Completion matrix —495, full goal OPEN
+
+## Latest explicit human decision522 — living movement first; death waived
+
+Human now prioritizes complete, seamless living unit animation: idle → move/walk → Stop/idle → attack/recovery, plus each applicable work, build/repair, ability, load/unload and hit state. Root authors/selects whole-clothed guides; exact LunaHigh illustrates through built-in imagegen; exact Sol6.1Low handles code/review. Preserve SAME original identities, realistic illustration, gameplay scale and actual eight directions. No Blender.
+
+**ALL units AND buildings:** keep living health bars; as soon as the displayed authoritative HP reaches0, disappear from world/minimap/picking. No death, sink, destroyed, collapse, rubble or corpse animation is required or to be generated. This supersedes every older death-art/action/lifecycle requirement below and in historical briefs/roadmaps/skills. Preserve all death raws, descriptors, order history and receipts. Gameplay death still owns damage, cargo/passengers, statistics, General defeat and outcome; do not alter simulation to implement presentation disappearance.
+
+Current source522 implements HP0 presentation hiding and excludes death from required coverage;12 focused checks and independent source review pass. Runtime/public qualification is still OPEN. Legacy death frame definitions exist only for history. Living-unit requirements now114 action banks,912 action/direction clips,5760 standard frame positions across21 identities; static fallback does not complete a clip. Existing source registry action arrays are historical snapshots; use current shared/unit-action-spec.js for new required coverage.
+
+Prior failed/held methods491/492/509 remain CLOSED; this priority change does not reset their budget or authorize an equivalent retry. Residence498 claims stay consumed UNRESOLVED. No new image call follows from a plan or this decision. Register finite original-bound jobs, inspect method lineage and exact references, prepareOrder and durable claim before every call. Code presence does not prove movement quality. No owner/motion/public approval from tests.
+
+Authoritative queue/state: docs/NEXT_STEPS.md and docs/PROJECT_STATE.md. Receipt: docs/audits/movement-priority-522/root/CHECKPOINT.json. Capacity521 remains prepared/deferred; no more death work. Full project goal ACTIVE, with public HTTPS two modes/two maps and remaining critical requirements still OPEN.
+
+## Earlier decisions and requirements (preserved;522 overrides death and priority)
+
 
 This is the root requirement index, not a new queue or image order. Supplied original bytes and section-header index: [custody](audits/implementation-495/requirements/source-index.json). Source inspection establishes code, not acceptance. Prior browser/fullsuite receipts are DOCUMENTED_ONLY here unless re-executed for495. Individual row completion needs all critical subrequirements and exact scoped source/art/runtime/release evidence. No row below asserts full-game completion.
 

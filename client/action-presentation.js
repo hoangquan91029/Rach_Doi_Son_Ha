@@ -32,3 +32,27 @@ export function episodeAnimationTime(entity,timeMs,clipDurationMs){
  const elapsed=Math.max(0,Math.min(timeMs,action.endTick*50)-action.startedTick*50),duration=(action.endTick-action.startedTick)*50;
  return action.loop!==true&&Number.isFinite(clipDurationMs)&&clipDurationMs>0&&duration>0?elapsed/duration*clipDurationMs:elapsed;
 }
+
+/** Bounded cosmetic rest clock. Observes requested actions even when their artwork is absent. */
+export function createIdleEntryClock({maxEntries=1024}={}){
+ if(!Number.isInteger(maxEntries)||maxEntries<1)throw Error('Invalid idle clock capacity');
+ const tracks=new Map();let lastTime=-Infinity,lastTick=-Infinity;
+ return {
+  observe(entities,{tick=0,timeMs=tick*50,frozen=false}={}){
+   if(!Number.isFinite(timeMs))return;
+   if(timeMs<lastTime||tick<lastTick)tracks.clear();lastTime=timeMs;lastTick=tick;
+   const idle=entities.filter(e=>e.id!=null&&e.kind==='unit'&&e.hp>0&&!e.embarked&&authoredActionStates(e,(e.hitUntil||0)>tick?'hit':e.state)[0]==='idle');
+   const present=new Set(idle.map(e=>e.id));
+   for(const id of tracks.keys())if(!present.has(id))tracks.delete(id);
+   for(const e of idle){
+    const identity=JSON.stringify([e.owner,e.type,e.character??null,e.createdTick??null,e.dir]);
+    let t=tracks.get(e.id);
+    if(!t||t.identity!==identity){if(t||tracks.size<maxEntries){t={identity,start:timeMs,last:timeMs};tracks.set(e.id,t);}else continue;}
+    else {if(frozen)t.start+=Math.max(0,timeMs-t.last);t.last=timeMs;}
+   }
+  },
+  sample(id){const t=tracks.get(id);return t?Math.max(0,t.last-t.start):0;},
+  clear(){tracks.clear();lastTime=-Infinity;lastTick=-Infinity;},
+  get size(){return tracks.size;}
+ };
+}

@@ -1,0 +1,191 @@
+{
+  "schema": "rds-hit-clock531/v1",
+  "taskId": "hit-clock531",
+  "status": "VERIFIED_LOCAL_SOURCE",
+  "purpose": "Align cosmetic hit clip origin to hurt() five-tick authoritative hitUntil window",
+  "head": "1c7097fc80f94fc87f2fdc97d355e414601c37a4",
+  "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+  "exclusiveOutputs": [
+    "client/raster-slice.js",
+    "tests/hit-clock531.test.js",
+    "docs/qa/hit-clock-531"
+  ],
+  "inputPins": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "bb1c12bbda8727835a5e9d2a4a68ca20af7d463b237ad704a189de3329cdb3ae"
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+    },
+    {
+      "path": "client/raster-slice.js",
+      "sha256": "af6736681580d42e4f9f168209d6c3beed9c0bd59f0f578ec9505d7598d661b8"
+    },
+    {
+      "path": "client/action-presentation.js",
+      "sha256": "543c640458f423715030382259c20f2d2580fd1bae249e7cc1df3ce1ced45bea"
+    },
+    {
+      "path": "shared/sim.js",
+      "sha256": "c9a01adba8630e89e1c3f195c1b98c08c32e74468d389a55891c664e3906e562"
+    },
+    {
+      "path": "shared/unit-action-spec.js",
+      "sha256": "1e796554394506f668aa06a69443de26ab22ceaa6497fd28a6157030dc0b9fc9"
+    }
+  ],
+  "unchangedDependencies": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "bb1c12bbda8727835a5e9d2a4a68ca20af7d463b237ad704a189de3329cdb3ae",
+      "currentSha256": "bb1c12bbda8727835a5e9d2a4a68ca20af7d463b237ad704a189de3329cdb3ae",
+      "unchanged": true
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517",
+      "currentSha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517",
+      "unchanged": true
+    },
+    {
+      "path": "client/action-presentation.js",
+      "sha256": "543c640458f423715030382259c20f2d2580fd1bae249e7cc1df3ce1ced45bea",
+      "currentSha256": "543c640458f423715030382259c20f2d2580fd1bae249e7cc1df3ce1ced45bea",
+      "unchanged": true
+    },
+    {
+      "path": "shared/sim.js",
+      "sha256": "c9a01adba8630e89e1c3f195c1b98c08c32e74468d389a55891c664e3906e562",
+      "currentSha256": "c9a01adba8630e89e1c3f195c1b98c08c32e74468d389a55891c664e3906e562",
+      "unchanged": true
+    },
+    {
+      "path": "shared/unit-action-spec.js",
+      "sha256": "1e796554394506f668aa06a69443de26ab22ceaa6497fd28a6157030dc0b9fc9",
+      "currentSha256": "1e796554394506f668aa06a69443de26ab22ceaa6497fd28a6157030dc0b9fc9",
+      "unchanged": true
+    }
+  ],
+  "change": {
+    "path": "client/raster-slice.js",
+    "symbol": "createRasterSlice.sampleEntity",
+    "observation": "hitUntil - 5 is damage tick; -6 incorrectly starts 50ms into clip",
+    "simulationChanged": false
+  },
+  "tools": [
+    "exec_command",
+    "apply_patch"
+  ],
+  "preflight": {
+    "argv": [
+      "node",
+      "scripts/agent-preflight.mjs",
+      "--task",
+      "runtime",
+      "--source",
+      "client/raster-slice.js",
+      "--source",
+      "shared/sim.js",
+      "--task-id",
+      "hit-clock531",
+      "--inputs",
+      "docs/qa/hit-clock-531/inputs.json"
+    ],
+    "exitStatus": 0,
+    "receipt": "docs/qa/hit-clock-531/preflight.json"
+  },
+  "checks": {
+    "argv": [
+      "node",
+      "--test",
+      "tests/hit-clock531.test.js",
+      "tests/idle-entry-phase524.test.js",
+      "tests/unit-disappearance522.test.js",
+      "tests/action-presentation.test.js",
+      "tests/sprite-timing.test.js",
+      "tests/locomotion-phase.test.js"
+    ],
+    "exitStatus": 0,
+    "passed": 22,
+    "failed": 0,
+    "log": "docs/qa/hit-clock-531/checks.log",
+    "method": "Actual raster selection/sampler with synthetic 4-frame250ms bank and pipeline decode stub; current presentation clock used for Pause"
+  },
+  "failures": [
+    {
+      "evidence": "docs/qa/hit-clock-531/preflight-first-error.json",
+      "observation": "ACTIVE registry overlap denied scoped preflight; root closed completed overlapping old task; same preflight then passed"
+    },
+    {
+      "evidence": "docs/qa/hit-clock-531/reproduction.log",
+      "observation": "Initial fixture import incorrectly pointed to sprite-timing; repaired to actual action-presentation export"
+    },
+    {
+      "evidence": "docs/qa/hit-clock-531/reproduction-clock.log",
+      "observation": "Before fix 3 failures/1 pass; start/refresh50 instead0, resumed200 instead150"
+    },
+    {
+      "observation": "Diff capture execFileSync treated expected diff exit1 as exception; switched spawnSync, diff exit1 is expected changed bytes"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "client/raster-slice.js",
+      "sha256": "4d2399c56e78f21ee0c8bc35116a811522784581f7541344320bb2dfc852a20d"
+    },
+    {
+      "path": "tests/hit-clock531.test.js",
+      "sha256": "d70e85dc3984cac3a9bfd618ffb37813888e1ee31f70b8faa36bc10ccdab1a44"
+    },
+    {
+      "path": "docs/qa/hit-clock-531/checks.log",
+      "sha256": "814aa91db13e127d45764f35578411d0f45b8ac47c4e71f10243ad28a55188ca"
+    },
+    {
+      "path": "docs/qa/hit-clock-531/inputs.json",
+      "sha256": "af29bbd10bcf1ebcc4f41dc9aef9c917f4b5d57eab1355c5ff9f08c41ba53f45"
+    },
+    {
+      "path": "docs/qa/hit-clock-531/preflight-first-error.json",
+      "sha256": "268f46096f19cbf2d58c81a1c2be7b64e4ea1887035bbca91a37a128c3907ef5"
+    },
+    {
+      "path": "docs/qa/hit-clock-531/preflight-recheck-stderr.json",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qa/hit-clock-531/preflight.json",
+      "sha256": "e5c8d25cbe2f5e7e8d785cd0652498aa167c3711e9a2ce893d2b1bda93c5659c"
+    },
+    {
+      "path": "docs/qa/hit-clock-531/raster-slice.before.js",
+      "sha256": "af6736681580d42e4f9f168209d6c3beed9c0bd59f0f578ec9505d7598d661b8"
+    },
+    {
+      "path": "docs/qa/hit-clock-531/reproduction-clock.log",
+      "sha256": "63d255ed31868a204e0c2a5a54e629ee972ea6b21d3246ec332bcc5fd8aae442"
+    },
+    {
+      "path": "docs/qa/hit-clock-531/reproduction.log",
+      "sha256": "2fc561de1293831a0bc3b78c181d1bb0379439295e92a33c27acf366b254df60"
+    },
+    {
+      "path": "docs/qa/hit-clock-531/worker.diff",
+      "sha256": "86239749e79ba2f577d077e974357fafeda69616676d8714f14a6f2b3be7970d"
+    }
+  ],
+  "handles": {
+    "browser": [],
+    "server": [],
+    "imageCalls": 0,
+    "testProcesses": "all completed; no ongoing owned handles"
+  },
+  "limits": [
+    "Local synthetic raster fixture establishes clock behavior only",
+    "No browser/build/image/art/manifest/public changes",
+    "No actual artwork motion, owner or release approval",
+    "Independent source review remains root next dependency"
+  ]
+}

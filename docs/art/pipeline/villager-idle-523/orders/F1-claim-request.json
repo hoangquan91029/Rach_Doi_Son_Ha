@@ -1,0 +1,120 @@
+{
+  "orderId": "villager-idle-D1-whole523-THREE",
+  "slotIndex": 1,
+  "kind": "inbetween",
+  "values": {
+    "identity": "villager",
+    "master": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+    "direction": "1",
+    "camera": "dimetric 2:1 ground projection; fixed whole original elevated camera; no independent camera fit",
+    "screenFacing": "South",
+    "weaponOwnership": "No held tool or weapon is visible in this idle master; preserve empty visible hands. Separate work-action tools require their own existing source pins and grips.",
+    "referenceRoles": "directionalview,neighbor,guide",
+    "invariants": "Usecase identity-preserve. One whole realistic illustrated transparent PNG, the EXACT original South Villager. Preserve conicalstrawhat, moustache/beard, beige crossover tunic/darksash/baggybrowntrousers/creamcalfwraps/openbrownsandals and toes. Canvas1254square, exact original camera/pivot6541140/render42/fixedfamily scale. First image is ORIGINALAPPEARANCE ANDRESTPOSE. Second is SELECTED WHOLEF2 breathpeak from this sameidlejob; use it for texture/upperbodycontinuity. Third is authoringONLY wholeclothed breathguide: it controls small chest/sleeve expansion ONLY, never borrow vectorface/cone/costume/style. Both soles/feet and lowerbody/face/hat remain at original positions; do not translate or scale whole body. Transparent background, no labels/ground/props.",
+    "action": "idle",
+    "phase": "0.25",
+    "support": "Both original feet stay planted, weight evenly balanced, original two sandal silhouettes, no walking or leg switch. Hip/knees/ankles and fixedbodyenvelope kept.",
+    "movingParts": "Wholeidle pose at risingbreath halfway fromoriginalrestF0 towardselectedF2peak: chest/sleeve expansion less thanF2, feet/hips/face/hat remainoriginal. Actualwholeintermediatebody, no armgesture/headturn/tool. Guidestyle neverfinal.",
+    "bodyMotion": "Bothendpointimages share originalcamera/canvas/bodyvolume. Gently interpolate THEPOSE anatomically as a newlyillustratedwholeframe. Keeprealistic materials/style of actualimages1and2; do not morph/warp/splice/rescale their pixels. Preservewholeimage envelope and neutralhand grip.",
+    "equipmentMotion": "Empty relaxed hands stay by original sides. Sash knot, trouserwrappings and sandals notredesigned; robe reacts gently to chestmotion. Bakedshadow mode matches original; no separate extra shadow.",
+    "nextKey": "Next F2 peak endpoint remains selected; continuousbreathing and matchingfoot/hat outline required; fullcompiledloopreview decides seam, stillcandidateonly.",
+    "neighbors": "Image1 exactoriginalrest selectedF0 phase0; Image2 selectedF2 smallbreathpeak phase0.5. Bothwholeoriginal endpoints are currentidle523, notwalksources."
+  },
+  "references": [
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "role": "directionalview"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-idle-523/illustration/F2-raw.png",
+      "sha256": "7e2f4c8c46d3bd61bd680019e020425f3bca0e4cc434559e39645a225fefe502",
+      "role": "neighbor",
+      "frame": 2,
+      "phase": 0.5,
+      "jobId": "villager-idle-D1-whole523",
+      "status": "selected"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-idle-523/authoring/guide/F1.png",
+      "sha256": "150f0e3e3868116dbb94b6b2bd32c469c27461235cbb162011c4be21f8440af5",
+      "role": "guide"
+    }
+  ],
+  "taskId": "illustration-idle523",
+  "expectedInputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "bb1c12bbda8727835a5e9d2a4a68ca20af7d463b237ad704a189de3329cdb3ae"
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+    },
+    {
+      "path": "docs/art/pipeline/ANIMATION_CONTRACT.md",
+      "sha256": "b6c3eefbc330ef05b20fee04489940402b8f3489c9043f5427a440e8793bdf40"
+    },
+    {
+      "path": "docs/art/pipeline/SPRITE_PRODUCTION_WORKFLOW.md",
+      "sha256": "8d15bf7205610b5f2b92d80aa9582daf787d6ec6e4a007dce7874cf0e5a23d45"
+    },
+    {
+      "path": "docs/art/pipeline/IMAGE_GENERATION_TEMPLATES.md",
+      "sha256": "e593ccbbead4366e9762cd2bebf723cbaf43b8cba8fa1cda76d2d02d7c98467c"
+    },
+    {
+      "path": "docs/art/pipeline/unit-production/villager/identity.json",
+      "sha256": "60ea0f867ab4d54ab01067deb1c642f53ca5015cbd53072949b9c0cafcb71d2b"
+    },
+    {
+      "path": "docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+    },
+    {
+      "path": "docs/art/pipeline/villager-idle-523/illustration/F2-raw.png",
+      "sha256": "7e2f4c8c46d3bd61bd680019e020425f3bca0e4cc434559e39645a225fefe502"
+    },
+    {
+      "path": "docs/art/pipeline/villager-idle-523/authoring/job-selected-endpoints.json",
+      "sha256": "167998417205c7d1d0ab6186feb8ec5b3aa717cda9e3932d2ee115cd78d595ac"
+    },
+    {
+      "path": "docs/art/pipeline/villager-idle-523/authoring/F2-selection.json",
+      "sha256": "9f1d8c8e5289548f8475d43e3fb3ec3d3c5abe0a94e1a58532601c26d1798c29"
+    },
+    {
+      "path": "docs/art/pipeline/villager-idle-523/authoring/F2-independent-review.json",
+      "sha256": "d1715e7cd4e4f31f437c3def0c29ed73ec51bbc38d79860837d160f718dea62a"
+    },
+    {
+      "path": "docs/art/pipeline/villager-idle-523/authoring/guide-provenance.json",
+      "sha256": "e71162893a77411997aa20ba6dff3f27a6fb24fdfdbc913e193f78226e33eebb"
+    },
+    {
+      "path": "docs/art/pipeline/villager-idle-523/authoring/guide/F1.png",
+      "sha256": "150f0e3e3868116dbb94b6b2bd32c469c27461235cbb162011c4be21f8440af5"
+    },
+    {
+      "path": "docs/art/pipeline/villager-idle-523/authoring/guide/F3.png",
+      "sha256": "150f0e3e3868116dbb94b6b2bd32c469c27461235cbb162011c4be21f8440af5"
+    },
+    {
+      "path": "docs/art/pipeline/villager-idle-523/orders/F1-request-base.json",
+      "sha256": "de7a609364c573b8741d16e175ce932f1ece476a3707dec266862d386c10511c"
+    },
+    {
+      "path": "docs/art/pipeline/villager-idle-523/orders/F3-request-base.json",
+      "sha256": "d6489caebe99c79943f3ef72092897985b2bd2def20cf2c12b32f6c566b759fc"
+    },
+    {
+      "path": "scripts/sprite-prompts.mjs",
+      "sha256": "7f0311c91371ce989bdaf852169c641017367b911f094086762b607d4aecc2a7"
+    },
+    {
+      "path": "scripts/sprite-order-run.mjs",
+      "sha256": "8436a7eedbe2d4a0dac8634bfcc9e7ad27a365e8862771ef230b9cfc47eb5d90"
+    }
+  ],
+  "expectedLedgerSHA": "8c7f1ec43f67bb110fdb3a980b8cb716261ae4bbb31452e77a08328daec47e3f"
+}

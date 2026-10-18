@@ -1,0 +1,137 @@
+{
+  "schema": "rds-illustration-custody/v1",
+  "taskId": "illustration-key-study509",
+  "workerModel": "gpt-6-luna",
+  "workerReasoning": "high",
+  "workKind": "image-generation",
+  "orderId": "villager-D1-joint-key-study-509-ONE",
+  "slotIndex": 0,
+  "durableClaimToken": "d4135c28-f514-4e2a-86f3-c1f12baf8125",
+  "requestSHA": "826f1c1370dde4ea399aa67c09bffb5add45600f4cb1619ecff52c2c5ad959b4",
+  "scope": "One raw candidate 2x2 joint-key study; cells are candidates only, not selected/production frames.",
+  "inputPins": {
+    "receipt": "docs/audits/continuation-509/root/illustration-key-study509-inputs.json",
+    "sha256": "04b7b716c8bbaf4922ac925acddf8902878a7bd954d70ea7b6a6aefe9515ecf2",
+    "claimedPins": [
+      {
+        "path": "AGENTS.md",
+        "sha256": "a81895b57e445ae913773fd7bf55049f84d859d407e175de2d106edc4f3c52bd"
+      },
+      {
+        "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+        "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+      },
+      {
+        "path": "MASTER_HANDOFF.md",
+        "sha256": "5f6cf0b56ad940cb0432f5f74f346fff683a29e9fa7b85994895d20bdb28844e"
+      },
+      {
+        "path": "scripts/agent-preflight.mjs",
+        "sha256": "60a93e9f83e1270940e439cac2ee6332e7d8d3d1d09fcaba02e5431bc817ed36"
+      },
+      {
+        "path": "scripts/sprite-key-study.mjs",
+        "sha256": "4e9d9e45d6d1dffdfbeb8da7f1e8a5211b57666d210c0220ad32f9d88d8130e1"
+      },
+      {
+        "path": "scripts/sprite-prompts.mjs",
+        "sha256": "7f0311c91371ce989bdaf852169c641017367b911f094086762b607d4aecc2a7"
+      },
+      {
+        "path": "scripts/sprite-order-run.mjs",
+        "sha256": "8436a7eedbe2d4a0dac8634bfcc9e7ad27a365e8862771ef230b9cfc47eb5d90"
+      },
+      {
+        "path": "scripts/agent-task-contract.mjs",
+        "sha256": "ab70ec1dc9e99293a54ea2873cb802ab2745d62942ff80c6fa0cb714ae0a60b1"
+      },
+      {
+        "path": "docs/art/pipeline/unit-production/villager/identity.json",
+        "sha256": "552c450dbb929c396717099adb42e95b9306f2b0170e3300ab303830db3926c7"
+      },
+      {
+        "path": "docs/art/pipeline/unit-production/templates/key_study.txt",
+        "sha256": "65e498f07f6dfa2f0e592a86f27d2e176f2a529a870daa31c0195d89b7b015e9"
+      },
+      {
+        "path": "docs/art/pipeline/villager-key-study-509/job.json",
+        "sha256": "2710265b0914446ae6fad1c6d9c2dc54e4f9bd1327fc47813fd8078871de5534"
+      },
+      {
+        "path": "docs/art/pipeline/villager-key-study-509/guide-provenance.json",
+        "sha256": "224ae9f378ed8359151ba15c32e01f621523e49498fb6c1fee3a5434d2ce0ebe"
+      },
+      {
+        "path": "docs/art/pipeline/villager-key-study-509/joint-guide.png",
+        "sha256": "4a62e739ffe141095b76c418e871b973e5db0d93311b76b7e04e87dacdb83dbf"
+      },
+      {
+        "path": "docs/art/pipeline/villager-key-study-509/proposed-request.json",
+        "sha256": "a5f08f7e91f92e9aa3c25bf02133003b7c1b25ae50a1a4a210a40479f318412f"
+      },
+      {
+        "path": "docs/art/pipeline/villager-key-study-509/registered-order.json",
+        "sha256": "b64ffbfbacdf04eb59e8c9e2a95367f4a513ba8b6e037f793d2c169be845e2d2"
+      },
+      {
+        "path": "docs/audits/continuation-509/review/method-difference.json",
+        "sha256": "38bf443391074e47a78989b95d6cc25d7be62544515bc2522ea1535c3948b476"
+      },
+      {
+        "path": "docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+        "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94"
+      },
+      {
+        "path": "docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+        "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+      },
+      {
+        "path": "docs/art/pipeline/villager-key-study-509/prepared.json",
+        "sha256": "995936c5de34a8e80b90deab4db324975a16abe0849c49ffcc7368d9550392e4"
+      }
+    ]
+  },
+  "call": {
+    "tool": "tools.image_gen__imagegen (built-in imagegen)",
+    "callsMade": 1,
+    "promptSHA256": "49610f8e70c3aba9ff5b9678417304ed39e52123e05151962f558432d845e557",
+    "promptSource": "claim-result.prepared.prompt",
+    "orderedReferences": [
+      "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-key-study-509/joint-guide.png"
+    ],
+    "transparentBackground": true,
+    "provider": "returned image; built-in tool metadata did not expose a provider model or handle",
+    "generatorModel": null,
+    "handle": null,
+    "seed": null,
+    "timestamp": null
+  },
+  "result": {
+    "status": "RETURNED",
+    "providerSavedPath": "/home/kieu-hoang-quan/.codex/generated_images/01a1343c-857b-73b1-8d93-ec0156f91c64/exec-1ccaffa1-fae0-4314-8769-a6087afd1359.png",
+    "toolOutputHint": "Generated images saved under /home/kieu-hoang-quan/.codex/generated_images/01a1343c-857b-73b1-8d93-ec0156f91c64; artifact filename exec-1ccaffa1-fae0-4314-8769-a6087afd1359.png",
+    "ownedCopy": "docs/art/pipeline/villager-key-study-509/illustration/raw.png",
+    "byteCopy": "copied without transformation; provider original retained",
+    "sha256": "f8f7b412133aa047eacec3a2d2aeafe23c70df8de195393687083a842a92971e",
+    "decoded": {
+      "format": "PNG",
+      "mode": "RGBA",
+      "width": 1254,
+      "height": 1254,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "rgbaSha256": "e7b8b423857e437d3dbad1ec3a5c1ea604b5915387c13e89f3d1cf21839220d2"
+    },
+    "outputMapping": "single returned raw image corresponds to the claimed candidate sheet slot; no per-cell frame mapping or extraction"
+  },
+  "limitations": [
+    "Returned dimensions are 1254x1254; requested 512x512. No crop, fit, or cell extraction performed.",
+    "Worker identity is known; image generator model, seed, provider handle, and timestamp were not exposed and remain null.",
+    "No identity, motion/contact, source selection, runtime, owner, or release approval is established.",
+    "Root owns ledger settle and call-handle closure."
+  ]
+}

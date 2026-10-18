@@ -1,0 +1,43 @@
+{
+  "orderId": "villager-hit-D1-whole530-THREE",
+  "slotIndex": 0,
+  "kind": "inbetween",
+  "values": {
+    "identity": "villager",
+    "master": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+    "direction": "1",
+    "camera": "dimetric 2:1 ground projection; fixed whole original elevated camera; no independent camera fit",
+    "screenFacing": "South",
+    "weaponOwnership": "For this nonfatal Villager hit/recovery action only, both original empty hands remain empty; no tool, weapon, equipment transfer or attack grip is introduced.",
+    "referenceRoles": "directionalview,neighbor,guide",
+    "invariants": "Usecase identity-preserve. ONE complete realistic illustrated transparentPNG1254square, SAME originalSouthVillager. OriginalFIRSTimage is appearanceauthority: preserve face/moustache/beard/conicalstrawhat/beigecrossoverlongtunic/darksash/BROWN FULL GATHERED TROUSERS/creamcalfwraps/openbrownsandals and toes, proportions/camera/material/light/pivot6541140/render42. Secondimage SELECTED SAME-JOB PEAK only, thirdimage PURE POSEGUIDE only; DO NOT adopt simplifiedvectorface/shorttunic/shinblocks or vectorstyle. Preserve bothsandals/feetground positions; no wholebodytranslate/rescale, no crop/warp/cutout/mirror. Transparentalpha; no labels/blood/props/attacker/corpse/death.",
+    "action": "hit",
+    "phase": "0",
+    "support": "Bothfeetplanted inexactoriginalpose, weight absorbed byslightlysoftknees; solesneverlift/slide andno legswap. Keep fixedhip/groundpivot, samebodyvolume.",
+    "movingParts": "F0 early involuntarybrace, about30percentofselectedpeakF1 recoil. Emptyforearms begin lifting inward; head/shoulders tilt subtly, footpositions exact. Do NOT duplicate largeF1peak. This is first50ms ofnonfatalhit, notattack/death.",
+    "bodyMotion": "One coherentwholeoriginalpose in selectedrest-to-peak continuum, strongerpeak already selected. Keep anatomy/costume/material/fullbodyvolume; do not copyguidevectorappearance. Newsmallmotionmustconnect to actualselectedpeakandoriginalrest within250ms50/70/80/50.",
+    "equipmentMotion": "No tool/weapon. Keep original brownfulltrousers, sashknot, creamcalfwraps andsameopensandals. Bakedshadowmode; do not invent extra independent shadow.",
+    "nextKey": "NextselectedF1peak atphase0.25 afterthisearlybrace; originalrestF3 usedas pre-hitpose. Full250msclip stillunqualified.",
+    "neighbors": "Image1 ORIGINAL is exactselectedF3rest also the pre-hitrest anchor. Image2 selectedF1peak phase0.25 samejob originalhit530. Image3 handdrawn authoring-only phaseguide. These exact selectedendpoints define coherentwholebodycontinuity; never borrowheldwalksources."
+  },
+  "references": [
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "role": "directionalview"
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-hit-530/illustration/F1-raw.png",
+      "sha256": "e89cf68b92047683d0385d745c40e9299a6c7fbf9f3b4c15e21a526c3ed35d23",
+      "role": "neighbor",
+      "jobId": "villager-hit-D1-whole530",
+      "frame": 1,
+      "phase": 0.25
+    },
+    {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-hit-530/guide/F0.png",
+      "sha256": "cdc2a7c59919339bf9a02fd2d6664fc14d80e4a848363acb714eaa967ec3faa8",
+      "role": "guide"
+    }
+  ]
+}

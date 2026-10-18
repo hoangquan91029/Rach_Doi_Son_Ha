@@ -1,0 +1,3 @@
+import fs from 'node:fs';import path from 'node:path';import {createBrowserCustody} from '../../../scripts/qa/browser-custody510.mjs';
+const directory='docs/qa/browser-custody-510-review/repro-fd';fs.mkdirSync(directory,{recursive:true});fs.writeFileSync(path.join(directory,'browser-stderr.bin'),'existing');
+const before=fs.readdirSync('/proc/self/fd').length;let error;try{createBrowserCustody({directory});}catch(e){error=e.code;}const after=fs.readdirSync('/proc/self/fd').length;console.log(JSON.stringify({error,before,after,leaked:after-before,eventFileCreated:fs.existsSync(path.join(directory,'lifecycle.jsonl'))}));

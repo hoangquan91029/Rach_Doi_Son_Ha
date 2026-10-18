@@ -1,0 +1,75 @@
+{
+  "schema": "rds-living-animation-plan/v1",
+  "identity": "villager",
+  "action": "hit",
+  "direction": 1,
+  "purpose": "Newuntriednonfatalhit/recoverypilot, same original; no closedwalkmethodretry/fanout",
+  "layout": {
+    "canvas": [
+      1254,
+      1254
+    ],
+    "pivot": {
+      "x": 654,
+      "y": 1140,
+      "space": "source"
+    },
+    "render": [
+      42,
+      42
+    ],
+    "runtimeCell": [
+      128,
+      128
+    ],
+    "shadow": "baked"
+  },
+  "timingBasis": "shared/sim hurt hitUntil=tick+5 =>250msvisiblewindow; renderer531 first50mscorrection underway, no simulationchange",
+  "frames": [
+    {
+      "frame": 0,
+      "durationMs": 50,
+      "phase": 0,
+      "pose": "small involuntarybrace, shouldersstart recoil, bothfeetplanted",
+      "source": "MISSING afterpeakselected"
+    },
+    {
+      "frame": 1,
+      "durationMs": 70,
+      "phase": 0.25,
+      "pose": "briefnonfatalpeak shoulders/headslightleftback, forearmsbendinward emptyhands, feet/hipgroundheld",
+      "source": "MISSING firstfiniteendpointtrial"
+    },
+    {
+      "frame": 2,
+      "durationMs": 80,
+      "phase": 0.5,
+      "pose": "settlingrelease towardoriginalrest, no overshoot",
+      "source": "MISSING afterpeakselected"
+    },
+    {
+      "frame": 3,
+      "durationMs": 50,
+      "phase": 0.75,
+      "pose": "exactoriginalneutralrest endpoint",
+      "source": "REUSE_EXACT_ORIGINAL_D1"
+    }
+  ],
+  "loop": false,
+  "calls": {
+    "limit": 3,
+    "correctionCap": 0,
+    "retry": 0,
+    "firstOnlySlot": 1
+  },
+  "equipmentPrerequisite": "Explicit separatelysource-pinnedhit emptyhandproof; existingidleNAlockdoesnotauthorizeattack/work, code532review/rootregistrationbeforeorder",
+  "methodLineage": "Nonfatal stationary hit is untried newaction, notopposingcontactwalk491/492/509 or oldclosedinfantry. Guideprobabilistic only; no claimedstrictcontrol. Peakkeycandidatebeforeinbetweens",
+  "gates": [
+    "Independentrealoriginal/wholeguides/timing/contact/emptyhands/actionapplicabilityreview",
+    "Exactregistry/actionscopelock andfiniteLunaHighworker/order/prepareOrder/durableclaim",
+    "ONEpeakF1wholePNG thenindependentactualkeyreview/rootselection",
+    "OnlymissingF0/F2 afterselectedpeak+originalF3 boundprereqs",
+    "Actualfinite250msloop gameplay-size+relatedlivinghit/idletransition review, no motionfromstills"
+  ],
+  "limits": "No death/fall/blood/tool/weaponattack, speed/facingchanges, cutout/warp/mirror/perframefit/public/canonicalmanifestpromotion. Allclaims/historykept."
+}

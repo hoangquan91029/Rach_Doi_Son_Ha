@@ -1,0 +1,166 @@
+{
+  "schema": "rds-native-worker-receipt/v1",
+  "taskId": "native-worker-S537",
+  "status": "CANDIDATE_UNAPPROVED",
+  "method": "native-raster",
+  "tools": [
+    "Python3",
+    "Pillow ImageDraw integer polygons/lines/pixels",
+    "view_image",
+    "pixel-sprites.py inspect-strip"
+  ],
+  "providerCalls": 0,
+  "providerTokens": null,
+  "correctionsUsed": 0,
+  "artInputs": [
+    "docs/art/pixel-worker-537/authoring/walk-S-plan.json"
+  ],
+  "provenance": {
+    "type": "native-raster",
+    "recipe": "docs/art/pixel-worker-537/authoring/draw_worker.py",
+    "framePlan": "docs/art/pixel-worker-537/authoring/walk-S-plan.json",
+    "sourceFrames": [
+      "docs/art/pixel-worker-537/raw/S/F0.png",
+      "docs/art/pixel-worker-537/raw/S/F1.png",
+      "docs/art/pixel-worker-537/raw/S/F2.png",
+      "docs/art/pixel-worker-537/raw/S/F3.png",
+      "docs/art/pixel-worker-537/raw/S/F4.png",
+      "docs/art/pixel-worker-537/raw/S/F5.png",
+      "docs/art/pixel-worker-537/raw/S/F6.png",
+      "docs/art/pixel-worker-537/raw/S/F7.png"
+    ]
+  },
+  "checks": {
+    "preflight": "PASS; retained preflight.json",
+    "inspectStrip": {
+      "command": "python3 scripts/pixel-sprites.py inspect-strip docs/art/pixel-worker-537/raw/worker-walk-S.png",
+      "exit": 0,
+      "structural": "PASS"
+    },
+    "nativeAssertions": "8 distinct RGBA pixel hashes; 19 visible colors; binaryalpha; all128RGBA",
+    "gif": {
+      "frames": 8,
+      "durationsMs": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "cycleMs": 800,
+      "nativeSize": [
+        128,
+        128
+      ]
+    }
+  },
+  "observations": {
+    "contactSheet": "Producer inspected native contact sheet with view_image; readable headcloth, cross-front clothing, trouser/hand/foot clusters. Not an independent visual verdict.",
+    "phaseFeet": [
+      "F0 anatomical left at screen-right contact, right rear",
+      "F1 left loading; right heel raised",
+      "F2 right knee bends for passing; left support",
+      "F3 right reaching; left heel-rise",
+      "F4 right contact; left rear",
+      "F5 right loading; left heel raised",
+      "F6 left knee bends for passing; right support",
+      "F7 left reaching toward seam"
+    ],
+    "deviations": "Plan joint centers retained. Explicit irregular 6\u20138px bare-foot shapes extend around guide toe, including toe tip+2px. Head top follows authored headcloth crown39+b (plan design top40). Tunic/neck/head geometry independently drawn at each pose coordinate.",
+    "limitations": "Feet move in screen-depth along proposed plan; worldstride and ground lock UNKNOWN. Producer did not continuously review GIF motion. Root independent actual-size motion gate required; no other views/actions or atlas."
+  },
+  "errors": [
+    "First read used nonexistent docs/art/pixel-worker-537/DESIGN.md; corrected to authoring/DESIGN.md and read before authoring.",
+    "Pillow emitted nonfatal getdata deprecation warnings; current output completed successfully."
+  ],
+  "reviews": {
+    "visual": "UNKNOWN",
+    "motion": "UNKNOWN",
+    "stride": "UNKNOWN",
+    "runtime": "UNKNOWN",
+    "owner": "UNKNOWN",
+    "release": "UNKNOWN"
+  },
+  "outputs": [
+    {
+      "path": "docs/art/pixel-worker-537/authoring/draw_worker.py",
+      "sha256": "3bb2ccfc4189c826ccba1df7a9e2ed4cfdb963d0d13e541f8303bc3b9bfc851b",
+      "bytes": 7131
+    },
+    {
+      "path": "docs/art/pixel-worker-537/authoring/walk-S-plan.json",
+      "sha256": "ddd38519ad1a509397d0a25fae5bda0520a04524e7171e238339359f03a156e1",
+      "bytes": 6739
+    },
+    {
+      "path": "docs/art/pixel-worker-537/raw/S/F0.png",
+      "sha256": "515be227d424a68252e760c67ffdb6b9ca22abfbf2a3ec4e4d1c6533077768e7",
+      "bytes": 1929
+    },
+    {
+      "path": "docs/art/pixel-worker-537/raw/S/F1.png",
+      "sha256": "fb74b8935c71c64d5fd639465c25b63f37dfbc027d575e60754a73bc50110ee1",
+      "bytes": 1935
+    },
+    {
+      "path": "docs/art/pixel-worker-537/raw/S/F2.png",
+      "sha256": "0a04da828d93d3d4cb529dbb86361ee67e208b5ee51705f0c91422238f66f089",
+      "bytes": 1864
+    },
+    {
+      "path": "docs/art/pixel-worker-537/raw/S/F3.png",
+      "sha256": "59497b9b24de9dcd62f6bf72fe080f221543f96870b276da1dd8760ef257d84a",
+      "bytes": 1919
+    },
+    {
+      "path": "docs/art/pixel-worker-537/raw/S/F4.png",
+      "sha256": "1cd6b5e3ff23915f0a9053ed19e280182dc414af0b673038f187f599a59f7d86",
+      "bytes": 1854
+    },
+    {
+      "path": "docs/art/pixel-worker-537/raw/S/F5.png",
+      "sha256": "9390c6ba4ac116ecf29436c878a5b40dfd5dfc1c34f8e91821d9f37db869b485",
+      "bytes": 1897
+    },
+    {
+      "path": "docs/art/pixel-worker-537/raw/S/F6.png",
+      "sha256": "da4d875fa9fb1e1a65f76c7c0a7d7313b6bd4a795f4f15f08d0ae4698fa9f33d",
+      "bytes": 1907
+    },
+    {
+      "path": "docs/art/pixel-worker-537/raw/S/F7.png",
+      "sha256": "393f6495258fa1ce58ac0abe46fe57a2445c0e35b6a279c3f7c8b4675c37716c",
+      "bytes": 1974
+    },
+    {
+      "path": "docs/art/pixel-worker-537/raw/worker-walk-S.png",
+      "sha256": "464303c6bf28b686a1f5447b33259f66d14c7104bde7c5a5aae334d03c2f8ac5",
+      "bytes": 6086
+    },
+    {
+      "path": "docs/art/pixel-worker-537/preview/walk-S-native.gif",
+      "sha256": "1f4e4594dfc3486b2aae0f22d451bb86e4f5540b223b38e199331b883217fe1b",
+      "bytes": 12616
+    },
+    {
+      "path": "docs/art/pixel-worker-537/preview/walk-S-contact.png",
+      "sha256": "3814421bf988359945d28395ee8889aef2bb11499aad7005990430ab2208fe0b",
+      "bytes": 8101
+    },
+    {
+      "path": "docs/art/pixel-worker-537/preview/native-check.json",
+      "sha256": "0afa85047adf0b15d8c539a3cae571bb7d06294c2f12cbd81a557d975ac76a9d",
+      "bytes": 1369
+    },
+    {
+      "path": "docs/audits/pixel-rebuild-537/native-worker/preflight.json",
+      "sha256": "037345c0f59fb7a75d6e84d4ece0001c90fd48b80f54f5eed968ca880d79cb27",
+      "bytes": 11136
+    }
+  ],
+  "handles": "No background processes, provider calls, subagents or active tool handles created.",
+  "next": "Independent actual-size/native and gameplay-size GIF review of exact pinned candidate. No fanout before root gate."
+}

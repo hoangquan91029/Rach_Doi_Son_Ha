@@ -1,0 +1,49 @@
+{
+  "schema": "rds-agent-task/v1",
+  "id": "villager-control504",
+  "status": "ACTIVE",
+  "purpose": "Implement materiallydifferent original two-view constrained geometry/semantic-material controls before rendering",
+  "worker": {
+    "id": "/root/blender_identity499",
+    "role": "WORKER",
+    "model": "gpt-6.1-sol",
+    "reasoningEffort": "low"
+  },
+  "outputs": [
+    "scripts/blender/villager504.py",
+    "docs/art/pipeline/blender-villager-504"
+  ],
+  "slots": [],
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "52cda32fd631f5cde21b0f861d7cd50db4e8948f8d7475f052e8086c0b149c8b"
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "225d9c16f9db5c4fbe941c93053fbcb958b1672824043b757b58ebb4f41b8569"
+    },
+    {
+      "path": "docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94"
+    },
+    {
+      "path": "docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-501/CHECKPOINT.json",
+      "sha256": "b1cc9cf46dc56f03cfbb7d8c311f93ab7dd4dbc22d510f68bc3b557bf09fef9a"
+    },
+    {
+      "path": "scripts/blender/villager501.py",
+      "sha256": "07c72ae11bc3386ea63252018fc1960810345927b20e55351f59bbe6e7466492"
+    },
+    {
+      "path": "docs/audits/blender-runtime-500/capability/CHECKPOINT.json",
+      "sha256": "5c0e3540553cf4d509a74953e59d8968d251e031581edb03fdb114ba79f4eea7"
+    }
+  ],
+  "allowedOperations": "Write candidate authoring script/control evidence from D0/D1 originals and source-scale projection. No Blender execution/renders yet; no providercall/rig/walk/runtime/fanout. Avoid global whole-character texture on every volume and generic mannequin. Define semantic materials and calibrated body/hat/view geometry at macro scale; no new limb texturefiles/cutout/splice/mirror/fit. Request root review before initial 2 neutral renders, finite budget to be issued separately.",
+  "acceptance": "Actual scoped deliverables/checks/input pins/limits/handle closure; no self-granted appearance/motion/release PASS."
+}

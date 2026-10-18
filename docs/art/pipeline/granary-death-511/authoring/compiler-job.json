@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 3,
+  "kind": "building",
+  "buildingType": "granary",
+  "id": "granary-death-511-candidate",
+  "family": "granary",
+  "action": "death",
+  "direction": null,
+  "canonicalDescriptor": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/authoring/canonical-asset.json",
+    "sha256": "068d25dc8374270fba8a169966f777e2174d7b68a1755fb3615ead431f5a0913"
+  },
+  "master": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/granary/variant-01/raw.png",
+    "sha256": "0d0c3963f3faed9341cd09f2ff118a753e9bd1ee431290b51635eebb17b61715",
+    "rgbaSha256": "c581948e880937a356ffe68c0be47f2ba26802327eba482356b7a8057d67d3d9"
+  },
+  "originalMaster": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/granary/variant-01/raw.png",
+    "sha256": "0d0c3963f3faed9341cd09f2ff118a753e9bd1ee431290b51635eebb17b61715",
+    "rgbaSha256": "c581948e880937a356ffe68c0be47f2ba26802327eba482356b7a8057d67d3d9"
+  },
+  "masterSHA": "0d0c3963f3faed9341cd09f2ff118a753e9bd1ee431290b51635eebb17b61715",
+  "fixedCanvas": {
+    "width": 1254,
+    "height": 1254
+  },
+  "pivot": {
+    "x": 640,
+    "y": 1050,
+    "space": "source"
+  },
+  "render": {
+    "width": 85,
+    "height": 85
+  },
+  "cell": {
+    "width": 512,
+    "height": 512
+  },
+  "contactShadow": {
+    "mode": "baked"
+  },
+  "layout": {
+    "columns": 2
+  },
+  "frameCount": 4,
+  "loop": false,
+  "frames": [
+    {
+      "input": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/illustration/F0-raw.png",
+        "sha256": "c853a3340a6e8173f882312a5b69c1f1abb8fc67a4743a39d93e7abce2280815",
+        "rgbaSha256": "7080a6a6a71ea1bc1063bed025b1ad5728839db6a90051ddf95f5af5fff0a993"
+      },
+      "status": "selected",
+      "phase": 0.0,
+      "durationMs": 250,
+      "events": [],
+      "custody": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/authoring/F0-selection.json; exact raw/tool claim and independent source-key review; motion OPEN"
+    },
+    {
+      "input": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/illustration/F1-raw.png",
+        "sha256": "b32a1f3cbee740b221c6a59bbd95eb05cf61566352f2a49d80489a27d437d6bd",
+        "rgbaSha256": "65b86f011a80b2b39c5be11f99c077ff63d732aa2fd5c3660890f280aa6f3c42"
+      },
+      "status": "selected",
+      "phase": 0.25,
+      "durationMs": 250,
+      "events": [],
+      "custody": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/authoring/F1-selection.json; exact raw/tool claim and independent source-key review; motion OPEN"
+    },
+    {
+      "input": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/illustration/F2-raw.png",
+        "sha256": "05a7438ba8550214706d7107a83614235e7aff54c8f546cea5c90cf7487f40fa",
+        "rgbaSha256": "5430f1f38073e66ffb2aa8545160bd6aa447a37470f6bff5adec3930dd1392d0"
+      },
+      "status": "selected",
+      "phase": 0.5,
+      "durationMs": 300,
+      "events": [],
+      "custody": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/authoring/F2-selection.json; exact raw/tool claim and independent source-key review; motion OPEN"
+    },
+    {
+      "input": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/illustration/F3-raw.png",
+        "sha256": "e53a36ffe4a52477e2e598f7d4222d4a79ef75e222e09f479cf26159294719e9",
+        "rgbaSha256": "081c8bf225e4288f7121a45e0074fe506408c2cea0ccfd1bf7aeea1ec587945c"
+      },
+      "status": "selected",
+      "phase": 0.75,
+      "durationMs": 800,
+      "events": [],
+      "custody": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/authoring/F3-selection.json; exact raw/tool claim and independent source-key review; motion OPEN"
+    }
+  ],
+  "callBudget": {
+    "limit": 4,
+    "used": 4
+  },
+  "previewZoom": 1.68,
+  "output": {
+    "directory": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/exports/compiled-selected",
+    "runtimePath": "atlas.png"
+  },
+  "productionStatus": "NO motion/runtime/owner/release qualification; selected source candidate only"
+}

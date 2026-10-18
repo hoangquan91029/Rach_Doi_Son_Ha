@@ -1,0 +1,55 @@
+{
+  "schema": "rds-whole-guide-provenance/v1",
+  "identity": "villager",
+  "action": "hit",
+  "direction": 1,
+  "originalMaster": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+    "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94"
+  },
+  "selectedView": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+    "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+  },
+  "method": "ROOT_HAND_AUTHORED_WHOLE_CLOTHED_VECTOR_GUIDE",
+  "sourcePixelUse": false,
+  "authoringScript": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-hit-530/authoring/author-guide.py",
+    "sha256": "0499788c740b245bcbdd348ae3c2e79e25006c926d51592c862b52e7739bac08"
+  },
+  "frames": [
+    {
+      "frame": 0,
+      "phase": 0.0,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-hit-530/guide/F0.png",
+      "sha256": "cdc2a7c59919339bf9a02fd2d6664fc14d80e4a848363acb714eaa967ec3faa8",
+      "status": "authoring-only",
+      "sourcePixelUse": false
+    },
+    {
+      "frame": 1,
+      "phase": 0.25,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-hit-530/guide/F1.png",
+      "sha256": "cc7a4b3c8bf4f8c4fee1460213103af489294ff2fd171c3dff4e84efe10678e1",
+      "status": "authoring-only",
+      "sourcePixelUse": false
+    },
+    {
+      "frame": 2,
+      "phase": 0.5,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-hit-530/guide/F2.png",
+      "sha256": "a36ba6f4578c9a757e8c02f93499f95d596ce7384396d3229700d3001d05bbe2",
+      "status": "authoring-only",
+      "sourcePixelUse": false
+    },
+    {
+      "frame": 3,
+      "phase": 0.75,
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-hit-530/guide/F3.png",
+      "sha256": "9c6fcf8e9a9e5acbe3173df93a713a6bd30424453465db78131ef2c18d371923",
+      "status": "authoring-only",
+      "sourcePixelUse": false
+    }
+  ],
+  "scope": "Manualwholebodyformsguideonly; no PNGsourcepixels/cutout/warp/renderfit, not artwork/motionapproval"
+}

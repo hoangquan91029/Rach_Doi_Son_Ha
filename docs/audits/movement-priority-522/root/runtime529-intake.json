@@ -1,0 +1,227 @@
+{
+  "status": "SCOPED_IDLE_ENTRY_FRAMES_STOP_PAUSE_MENU_OBSERVED",
+  "actions": [
+    {
+      "kind": "ordinary-groundrectangle-Ctrl1",
+      "id": 7
+    },
+    {
+      "kind": "ordinary-M-egress",
+      "target": {
+        "x": 6.5,
+        "y": 28.5
+      },
+      "assigned": {
+        "x": 6.4996763091448955,
+        "y": 28.499889663077326
+      }
+    },
+    {
+      "kind": "ordinary-M-leftclick",
+      "label": "arrival",
+      "target": {
+        "x": 9.5,
+        "y": 31.5
+      },
+      "assigned": {
+        "x": 9.499961742690422,
+        "y": 31.5
+      }
+    },
+    {
+      "kind": "ordinary-M-leftclick",
+      "label": "stop",
+      "target": {
+        "x": 10.559561398043888,
+        "y": 32.55956139804388
+      },
+      "assigned": {
+        "x": 10.559400689664974,
+        "y": 32.55955123228581
+      }
+    },
+    {
+      "kind": "ordinary-Stop"
+    }
+  ],
+  "arrival": {
+    "label": "arrival-idle",
+    "tick": 166,
+    "paused": false,
+    "presentationTimeMs": 8264.86400000298,
+    "entity": {
+      "id": 7,
+      "x": 9.059561398043888,
+      "y": 31.059561398043886,
+      "hp": 65,
+      "state": "idle",
+      "dir": 1,
+      "order": null
+    },
+    "draw": {
+      "entityId": 7,
+      "assetId": "villager-idle-D1-whole523",
+      "frame": 0,
+      "visualState": "idle",
+      "requestedState": "idle",
+      "requestedDirection": 1,
+      "direction": 1,
+      "presentation": "AUTHORED",
+      "staticIllustrationFallback": false,
+      "render": {
+        "width": 42,
+        "height": 42
+      },
+      "pivot": {
+        "x": 66.75598086124403,
+        "y": 116.36363636363636
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "tick": 166,
+      "presentationTimeMs": 8264.86400000298,
+      "renderObservation": 489
+    },
+    "pipeline": {
+      "unitActionPolicy": "on-demand",
+      "status": "PLACEHOLDER_ONLY",
+      "manifest": "ready",
+      "declared": 51,
+      "ready": 49,
+      "approved": 0,
+      "candidates": 49,
+      "failed": 0,
+      "skipped": 0,
+      "fallbacks": 1,
+      "decodedBudgetBytes": 134217728,
+      "retainedDecodedBytes": 18400000,
+      "reservedDecodedBytes": 0,
+      "uniqueDecodedImages": 39,
+      "encodedReady": 0,
+      "retainedEncodedBytes": 4651704,
+      "encodedBudgetBytes": 67108864,
+      "selectedDeclared": 51,
+      "eagerDeclared": 48,
+      "deferredDeclared": 3,
+      "pending": 0,
+      "pageErrors": [],
+      "evictedPages": 0,
+      "evictedEncodedPages": 0,
+      "failures": []
+    },
+    "camera": {
+      "x": 9.496875,
+      "y": 31.5,
+      "zoom": 1.68
+    }
+  },
+  "idleFrames": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "stopEntry": {
+    "label": "stop-idle",
+    "tick": 239,
+    "paused": false,
+    "presentationTimeMs": 11948.16400000298,
+    "entity": {
+      "id": 7,
+      "x": 9.802023518289756,
+      "y": 31.802023518289754,
+      "hp": 65,
+      "state": "idle",
+      "dir": 1,
+      "order": null
+    },
+    "draw": {
+      "entityId": 7,
+      "assetId": "villager-idle-D1-whole523",
+      "frame": 0,
+      "visualState": "idle",
+      "requestedState": "idle",
+      "requestedDirection": 1,
+      "direction": 1,
+      "presentation": "AUTHORED",
+      "staticIllustrationFallback": false,
+      "render": {
+        "width": 42,
+        "height": 42
+      },
+      "pivot": {
+        "x": 66.75598086124403,
+        "y": 116.36363636363636
+      },
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "tick": 239,
+      "presentationTimeMs": 11948.16400000298,
+      "renderObservation": 708
+    },
+    "pipeline": {
+      "unitActionPolicy": "on-demand",
+      "status": "PLACEHOLDER_ONLY",
+      "manifest": "ready",
+      "declared": 51,
+      "ready": 49,
+      "approved": 0,
+      "candidates": 49,
+      "failed": 0,
+      "skipped": 0,
+      "fallbacks": 1,
+      "decodedBudgetBytes": 134217728,
+      "retainedDecodedBytes": 18400000,
+      "reservedDecodedBytes": 0,
+      "uniqueDecodedImages": 39,
+      "encodedReady": 0,
+      "retainedEncodedBytes": 4651704,
+      "encodedBudgetBytes": 67108864,
+      "selectedDeclared": 51,
+      "eagerDeclared": 48,
+      "deferredDeclared": 3,
+      "pending": 0,
+      "pageErrors": [],
+      "evictedPages": 0,
+      "evictedEncodedPages": 0,
+      "failures": []
+    },
+    "camera": {
+      "x": 10.55642361111111,
+      "y": 32.55855887276786,
+      "zoom": 1.68
+    }
+  },
+  "pauseResume": {
+    "tick": 243,
+    "timeMs": 12131.36400000298,
+    "frame": 0
+  },
+  "menu": {
+    "ordinary": true,
+    "mode": "offline"
+  },
+  "handles": {
+    "runnerPID": 674077,
+    "browserPID": 674091,
+    "port": 33735,
+    "browserProcessAlive": false,
+    "browserSignal": null,
+    "browserConnected": false,
+    "browserExit": 0,
+    "serverListening": false,
+    "rooms": 0
+  },
+  "preservation": true,
+  "unresolvedHandles": [],
+  "endedUTC": "2026-10-13T14:06:37.081Z",
+  "processExists": {
+    "674077": false,
+    "674091": false
+  },
+  "limits": "Same529attempt finished; source524/526 technicalruntime only.80samples no continuousmotion/footlock orheldwalkquality proof, localhostnotpublic; workercheckpointpreparationstale retained."
+}

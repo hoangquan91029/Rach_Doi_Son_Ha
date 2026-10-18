@@ -1,0 +1,160 @@
+{
+  "schema": "rds-agent-preflight/v1",
+  "task": "audit",
+  "head": "1c7097fc80f94fc87f2fdc97d355e414601c37a4",
+  "status": " M AGENTS.md\n M client/action-presentation.js\n M client/art-assets.js\n M client/boot-ui-assets.js\n M client/main.js\n M client/raster-slice.js\n M client/renderer.js\n M docs/AGENT_EXECUTION_CONTRACT.md\n M docs/ARCHITECTURE_DECISIONS.md\n M docs/COMPLETION_MATRIX.md\n M docs/NEXT_STEPS.md\n M docs/PROJECT_ROADMAP.md\n M docs/PROJECT_STATE.md\n M docs/agent-read-contract.json\n M docs/art/pipeline/ANIMATION_CONTRACT.md\n M docs/art/pipeline/IMAGE_GENERATION_TEMPLATES.md\n M docs/art/pipeline/SPRITE_PRODUCTION_WORKFLOW.md\n M docs/art/pipeline/unit-production/order-ledger.json\n M docs/art/pipeline/unit-production/villager/identity.json\n M docs/audits/implementation-495/tasks.json\n M scripts/agent-preflight.mjs\n M scripts/agent-task-contract.mjs\n M scripts/art-coverage.mjs\n M scripts/qa/sprite-preview.mjs\n M scripts/sprite-preview.html\n M scripts/sprite-prompts.mjs\n M shared/unit-action-spec.js\n M tests/boot-ui-assets.test.js\n M tests/sprite-prompts.test.js\n?? MASTER_HANDOFF.md\n?? client/pixel-animation.js\n?? client/pixel-sprite-bank.js\n?? client/pixel-sprite-viewer.css\n?? client/pixel-sprite-viewer.html\n?? client/pixel-sprite-viewer.js\n?? docs/ANIMATION_SPEC.md\n?? docs/PIXEL_ART_STYLE_GUIDE.md\n?? docs/SPRITE_PIPELINE.md\n?? docs/SPRITE_QA_CHECKLIST.md\n?? docs/art/pipeline/blender-villager-504/\n?? docs/art/pipeline/blender-villager-506/\n?? docs/art/pipeline/building-production/granary/\n?? docs/art/pipeline/granary-death-511/\n?? docs/art/pipeline/unit-production/templates/key_study.txt\n?? docs/art/pipeline/villager-hit-530/\n?? docs/art/pipeline/villager-idle-523/\n?? docs/art/pipeline/villager-key-study-509/\n?? docs/art/pixel-references/\n?? docs/art/pixel-worker-535/\n?? docs/audits/animation-context-507/\n?? docs/audits/blender-removal-508/\n?? docs/audits/blender-runtime-500/mcp/isolated-runtime-config/\n?? docs/audits/blender-runtime-502/connection/runs/1260828fa04e48d6b4dd4775df70a070/\n?? docs/audits/blender-runtime-502/connection/runs/205e1735a77f4da89c1c68e8ea65e287/\n?? docs/audits/blender-runtime-502/connection/runs/31ad1b9cef624041b54d0f9c8a10476d/\n?? docs/audits/blender-runtime-502/connection/runs/628b44df2ea64e469a62f7ee7622fa68/\n?? docs/audits/blender-runtime-502/connection/runs/78c7c0ef24864151b4c4d2afff9a984a/\n?? docs/audits/blender-runtime-502/connection/runs/9271d344564342a6936296c576fe3d2a/\n?? docs/audits/blender-runtime-502/connection/runs/b48a76aec35e4695bac1f9640e59774c/\n?? docs/audits/blender-runtime-502/connection/runs/b5405e4f3c6b478e873a7b95b67b73ed/\n?? docs/audits/blender-runtime-502/connection/runs/c91a741082bc4c908a1c4921f6384989/\n?? docs/audits/blender-runtime-502/connection/runs/db8bf054007f48c2b60b78d0b6890c95/\n?? docs/audits/blender-runtime-502/connection/runs/dff8df9cb52d4a8a8c325f5634ba5dd1/\n?? docs/audits/blender-runtime-502/connection/runs/eed04592d0234d6ca9c691fa7308ceb1/\n?? docs/audits/blender-runtime-502/connection/runs/f6f9d57ba9e04eae868eff267f8c2333/\n?? docs/audits/continuation-504/\n?? docs/audits/continuation-509/\n?? docs/audits/model-routing-536/\n?? docs/audits/movement-priority-522/\n?? docs/audits/pixel-rebuild-535/\n?? docs/audits/pixel-rebuild-537/\n?? docs/qa/action-equipment-532/\n?? docs/qa/browser-close-514/\n?? docs/qa/browser-custody-510-review/\n?? docs/qa/browser-custody-510/\n?? docs/qa/browser-lifetime-520/\n?? docs/qa/building-preview-513/\n?? docs/qa/family-layout-526-review/\n?? docs/qa/family-layout-526/\n?? docs/qa/granary-death-515/\n?? docs/qa/granary-death-516/\n?? docs/qa/granary-death-518/\n?? docs/qa/granary-death-519/\n?? docs/qa/hit-clock-531/\n?? docs/qa/idle-entry-phase-524-review/\n?? docs/qa/idle-entry-phase-524/\n?? docs/qa/live-rooms-521/\n?? docs/qa/living-coverage-534-review/\n?? docs/qa/living-coverage-534/\n?? docs/qa/living-hit-533-review/\n?? docs/qa/online-profile-504/\n?? docs/qa/online-profile-505/\n?? docs/qa/online-profile-506/\n?? docs/qa/online-profile-509/\n?? docs/qa/online-profile-512/\n?? docs/qa/unit-disappearance-522-review/\n?? docs/qa/unit-disappearance-522/\n?? docs/qa/villager-idle-525-review/\n?? docs/qa/villager-idle-525/\n?? docs/qa/villager-idle-527-review/\n?? docs/qa/villager-idle-527/\n?? docs/qa/villager-idle-528-review/\n?? docs/qa/villager-idle-528/\n?? docs/qa/villager-idle-529-intake/\n?? docs/qa/villager-idle-529-review/\n?? docs/qa/villager-idle-529/\n?? public/assets/pixel-v1/\n?? scripts/blender/villager504.py\n?? scripts/blender/villager506.py\n?? scripts/pixel-sprite-contract.mjs\n?? scripts/pixel-sprites.py\n?? scripts/qa/browser-custody510.mjs\n?? scripts/qa/browser-lifetime520.mjs\n?? scripts/qa/granary-death515.mjs\n?? scripts/qa/granary-death516.mjs\n?? scripts/qa/granary-death518.mjs\n?? scripts/qa/granary-death519.mjs\n?? scripts/qa/live-rooms521.mjs\n?? scripts/qa/online-profile504.mjs\n?? scripts/qa/online-profile506.mjs\n?? scripts/qa/online-profile509.mjs\n?? scripts/qa/online-profile512.mjs\n?? scripts/qa/train-observation504.mjs\n?? scripts/qa/villager-idle525.mjs\n?? scripts/qa/villager-idle527.mjs\n?? scripts/qa/villager-idle528.mjs\n?? scripts/qa/villager-idle529.mjs\n?? scripts/sprite-key-study.mjs\n?? tests/action-equipment532.test.js\n?? tests/agent-preflight-scope507.test.js\n?? tests/agent-task-model507.test.js\n?? tests/browser-custody510.test.js\n?? tests/building-preview513.test.js\n?? tests/family-layout526.test.js\n?? tests/hit-clock531.test.js\n?? tests/idle-entry-phase524.test.js\n?? tests/pixel-animation535.test.js\n?? tests/pixel-dispatch535.test.js\n?? tests/pixel-integration535.test.js\n?? tests/pixel-sprite-contract535.test.js\n?? tests/pixel-sprites535.py\n?? tests/sprite-key-study.test.js\n?? tests/train-observation504.test.js\n?? tests/unit-disappearance522.test.js",
+  "readFiles": [
+    {
+      "path": "docs/agent-read-contract.json",
+      "sha256": "1e16a8128fa7c2a7eb4abe4befef7b4bfcee8ee4a5beb4b004e84446e480a639",
+      "bytes": 1391
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "0cc669e829601d4d782d12d82e7d5ee4a70faf650a327c4990f759aa0982ad5d",
+      "bytes": 19077
+    },
+    {
+      "path": "docs/PROJECT_STATE.md",
+      "sha256": "9b9d31ee5aa0be57c3a24ba8d85c0d64d69e4e12f4f5646d0b1c68cae9c381ec",
+      "bytes": 46244
+    },
+    {
+      "path": "docs/NEXT_STEPS.md",
+      "sha256": "e4814a2d3841d427797102d6caee4eace45bea823878aacb02c4faa0f2c9cea7",
+      "bytes": 19833
+    },
+    {
+      "path": "docs/ARCHITECTURE_DECISIONS.md",
+      "sha256": "87b3ce56f97f3cdfec982a8231ae4067cc83835619a62a416adc5276938ba7cc",
+      "bytes": 7266
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "d0ac05d67b32c82bd37b3538452ce78251ed048216207090bea208be79d2f8a7",
+      "bytes": 7007
+    },
+    {
+      "path": "docs/PIXEL_ART_STYLE_GUIDE.md",
+      "sha256": "13bbeb81f263fb69f67ebda15313909a02c24b2f92ca309644deb877a06430c8",
+      "bytes": 3037
+    },
+    {
+      "path": "docs/ANIMATION_SPEC.md",
+      "sha256": "8b5515d4efa065823351cdda8112f69b578eb6ffb90dd431ba50aa7ccfa45d59",
+      "bytes": 3083
+    },
+    {
+      "path": "docs/SPRITE_PIPELINE.md",
+      "sha256": "3e8d665729996afb1e7322e9531d6b7d9f80b3d173a6281aff3c673fd0bb18d2",
+      "bytes": 2731
+    },
+    {
+      "path": "docs/SPRITE_QA_CHECKLIST.md",
+      "sha256": "0040d9132e4bf1e88bd342ee76d7f75cf306dc12905cdca39e76abb93fb85be3",
+      "bytes": 1863
+    },
+    {
+      "path": "docs/PROJECT_ROADMAP.md",
+      "sha256": "ebd67f034494c0f04252d988dd967cf582c8cb2863053ce760295342092529a8",
+      "bytes": 12788
+    },
+    {
+      "path": "docs/art/pipeline/ANIMATION_RESEARCH.md",
+      "sha256": "b6a1abb8c76d416a29a3c7bee95e3ea05502be71c2c02002a43bfbd9c43808d9",
+      "bytes": 5913
+    },
+    {
+      "path": "docs/COMPLETION_MATRIX.md",
+      "sha256": "22a369207cf4c5fb4483001c37d0c7ff706c406fbb38a9d805318a90edbcaacd",
+      "bytes": 35371
+    },
+    {
+      "path": "docs/art/pipeline/BLENDER_SPRITE_PIPELINE.md",
+      "sha256": "335f4ce5965650dae237f93baddad6e1340f3c3a8d3530a86e82f6944434cbfe",
+      "bytes": 12822
+    }
+  ],
+  "sources": [
+    {
+      "path": "scripts/pixel-sprite-contract.mjs",
+      "sha256": "34cfe56bb0df96d4ab98c3b5af61154e3a6eb779f8aca77f218d2fa016144475",
+      "bytes": 3414
+    }
+  ],
+  "assignment": {
+    "taskId": "pixel-method-review537",
+    "registration": {
+      "path": "docs/audits/implementation-495/tasks.json",
+      "sha256": "5bfc09d9ba05eb6c6939b8771b15c85a0ceee79b521e7f7160552515de21f937",
+      "bytes": 292839
+    },
+    "inputs": [
+      {
+        "path": "docs/audits/pixel-rebuild-537/HUMAN_REQUEST.md",
+        "sha256": "1e13063090b3e7ec420aba1f6ecdf4e383dad6431b1738087ade4de956d24ab8"
+      },
+      {
+        "path": "AGENTS.md",
+        "sha256": "0cc669e829601d4d782d12d82e7d5ee4a70faf650a327c4990f759aa0982ad5d"
+      },
+      {
+        "path": "docs/PIXEL_ART_STYLE_GUIDE.md",
+        "sha256": "13bbeb81f263fb69f67ebda15313909a02c24b2f92ca309644deb877a06430c8"
+      },
+      {
+        "path": "docs/SPRITE_PIPELINE.md",
+        "sha256": "3e8d665729996afb1e7322e9531d6b7d9f80b3d173a6281aff3c673fd0bb18d2"
+      },
+      {
+        "path": "docs/ANIMATION_SPEC.md",
+        "sha256": "8b5515d4efa065823351cdda8112f69b578eb6ffb90dd431ba50aa7ccfa45d59"
+      },
+      {
+        "path": "docs/SPRITE_QA_CHECKLIST.md",
+        "sha256": "0040d9132e4bf1e88bd342ee76d7f75cf306dc12905cdca39e76abb93fb85be3"
+      },
+      {
+        "path": "docs/art/pixel-worker-535/illustration/CHECKPOINT.json",
+        "sha256": "00c2311850099f1188bd1eda8d24a8bc9434cb50185eb730cb1324bf72a0046a"
+      },
+      {
+        "path": "docs/art/pixel-worker-535/authoring/DESIGN.md",
+        "sha256": "8b2411b5b22c49d6d93974a416c0246105a41129b5e5c5aa8cabaf47696302b7"
+      },
+      {
+        "path": "scripts/pixel-sprite-contract.mjs",
+        "sha256": "34cfe56bb0df96d4ab98c3b5af61154e3a6eb779f8aca77f218d2fa016144475"
+      }
+    ],
+    "outputs": [
+      "docs/audits/pixel-rebuild-537/method-review"
+    ],
+    "slots": []
+  },
+  "orderScope": null,
+  "ledger": {
+    "path": "docs/art/pipeline/unit-production/order-ledger.json",
+    "sha256": "0ae4e29f18e05713f2aa308a1aecb8759a4e892d547d03ce5f77f896bd1f4cf7",
+    "locked": false,
+    "unresolvedClaims": [
+      {
+        "order": "residence-construction-F1-F3-498",
+        "slot": 1
+      },
+      {
+        "order": "residence-construction-F1-F3-498",
+        "slot": 3
+      },
+      {
+        "order": "villager-hit-D1-whole530-THREE",
+        "slot": 0
+      }
+    ]
+  },
+  "limits": [
+    "Existence and byte hashes do not establish understanding, permission, approval or tool availability.",
+    "Explicit invocation only; this helper is not a mandatory global hook.",
+    "Externally verify tools and actual live handles/preservation guards; no guards are declared closed."
+  ]
+}

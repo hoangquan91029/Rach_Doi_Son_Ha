@@ -1,0 +1,267 @@
+{
+  "schema": "rds-agent-receipt/v1",
+  "taskId": "review-key-study509",
+  "status": "CANDIDATE_KEYS_HELD_METHOD_STOP",
+  "purpose": "Independent current507 code review; no producer source edits",
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "a81895b57e445ae913773fd7bf55049f84d859d407e175de2d106edc4f3c52bd"
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+    },
+    {
+      "path": "MASTER_HANDOFF.md",
+      "sha256": "5f6cf0b56ad940cb0432f5f74f346fff683a29e9fa7b85994895d20bdb28844e"
+    },
+    {
+      "path": "scripts/sprite-key-study.mjs",
+      "sha256": "4e9d9e45d6d1dffdfbeb8da7f1e8a5211b57666d210c0220ad32f9d88d8130e1"
+    },
+    {
+      "path": "scripts/sprite-prompts.mjs",
+      "sha256": "7f0311c91371ce989bdaf852169c641017367b911f094086762b607d4aecc2a7"
+    },
+    {
+      "path": "scripts/agent-task-contract.mjs",
+      "sha256": "ab70ec1dc9e99293a54ea2873cb802ab2745d62942ff80c6fa0cb714ae0a60b1"
+    },
+    {
+      "path": "tests/sprite-key-study.test.js",
+      "sha256": "ffe2c71f41297c4fb54d42866d2c2954c02c8fff704991c92b254fbaa370f364"
+    },
+    {
+      "path": "scripts/agent-preflight.mjs",
+      "sha256": "60a93e9f83e1270940e439cac2ee6332e7d8d3d1d09fcaba02e5431bc817ed36"
+    },
+    {
+      "path": "tests/agent-preflight-scope507.test.js",
+      "sha256": "4748dff2d0aa530291c7e6d24e6a954077683b8c11cc58d8aae8fac11dc9a4bf"
+    },
+    {
+      "path": "docs/art/pipeline/villager-key-study-509/joint-guide.png",
+      "sha256": "4a62e739ffe141095b76c418e871b973e5db0d93311b76b7e04e87dacdb83dbf"
+    },
+    {
+      "path": "docs/art/pipeline/villager-key-study-509/guide-provenance.json",
+      "sha256": "224ae9f378ed8359151ba15c32e01f621523e49498fb6c1fee3a5434d2ce0ebe"
+    },
+    {
+      "path": "docs/art/pipeline/villager-key-study-509/job.json",
+      "sha256": "2710265b0914446ae6fad1c6d9c2dc54e4f9bd1327fc47813fd8078871de5534"
+    },
+    {
+      "path": "docs/art/pipeline/villager-key-study-509/proposed-order.json",
+      "sha256": "9004c742e0b6257d7f5f192ae1a3028eeabc9582fe518f9fc4d2a37ebe5bc0ce"
+    },
+    {
+      "path": "docs/art/pipeline/villager-key-study-509/proposed-request.json",
+      "sha256": "a5f08f7e91f92e9aa3c25bf02133003b7c1b25ae50a1a4a210a40479f318412f"
+    }
+  ],
+  "findings": [],
+  "observation": "No concrete blocking defect found in current key-study candidate preparation, trusted prepareOrder enforcement, retained runner accounting or507/508 model routing. Source review verified exact3reference roles, original+selectedview pinning, job/guide/provenance binding, 256 fixed cell layout, row-major phases and one initial call/zero corrections. Motion descriptions are nonempty prose guards and require independent actual guide inspection. Fixture APIs are intentionally not production authorization.",
+  "checks": [
+    {
+      "command": "node scripts/agent-preflight.mjs --task audit --task-id review-key-study509 --inputs docs/audits/continuation-509/root/review-key-study509-inputs.json --source scripts/sprite-key-study.mjs",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "method": "ACTUAL_SCOPED_PREFLIGHT",
+      "state": "VERIFIED",
+      "executed": true,
+      "exitCode": 0,
+      "observation": "Registered snapshot matched; ledger lock absent,2unresolved498claims retained",
+      "evidence": [
+        {
+          "path": "docs/audits/continuation-509/review/preflight.json",
+          "sha256": "387870a79598e3c87f808789d9eb687e835f967c1aed340c0bd4f05e1828c7a4"
+        }
+      ]
+    },
+    {
+      "command": "read docs/audits/animation-context-507/root/tests-integrated.log",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "method": "PRIOR_LOG_AND_CURRENT_SOURCE_REVIEW",
+      "state": "DOCUMENTED_ONLY",
+      "evidence": [
+        {
+          "path": "docs/audits/animation-context-507/root/tests-integrated.log",
+          "sha256": "4c1ba4904fe16bcf64f9462a46935230de2da2416709da96c58f7601ba073416"
+        }
+      ]
+    },
+    {
+      "command": "node --test tests/agent-preflight-scope507.test.js",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "method": "FOCUSED_TESTS",
+      "state": "VERIFIED",
+      "executed": true,
+      "exitCode": 0,
+      "observation": "19focused tests pass; disjoint retained claims, default denial and18negative cases",
+      "evidence": [
+        {
+          "path": "docs/audits/continuation-509/review/scoped-tests.log",
+          "sha256": "b6ef16fba19b7b1d31ce228b8794e2a89182215721715dfa8772fc17c0946b38"
+        }
+      ]
+    },
+    {
+      "command": "node scripts/agent-preflight.mjs --task art --source scripts/sprite-key-study.mjs",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "method": "EXPECTED_DENIAL",
+      "state": "FAILED",
+      "executed": true,
+      "exitCode": 1,
+      "observation": "Expected refusal with ledgerlockfalse/unresolvedclaims2; not an art authorization",
+      "evidence": [
+        {
+          "path": "docs/audits/continuation-509/review/default-art-error.json",
+          "sha256": "20f5ff82db93fc6d34a7b68fbd9de0420c72832183fc02a952081ede73569a26"
+        }
+      ]
+    },
+    {
+      "command": "node --input-type=module [owned review/proposed-prepare.json captured]",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "method": "IN_MEMORY_REGISTRY_EXTENSION_ONLY",
+      "state": "VERIFIED",
+      "executed": true,
+      "exitCode": 0,
+      "observation": "Exact proposed order/request prepares successfully after memory-only proposed registry extension; no canonical mutation or guard dispatch authority",
+      "evidence": [
+        {
+          "path": "docs/audits/continuation-509/review/proposed-prepare.json",
+          "sha256": "995936c5de34a8e80b90deab4db324975a16abe0849c49ffcc7368d9550392e4"
+        }
+      ]
+    }
+  ],
+  "technical": {
+    "state": "VERIFIED",
+    "evidence": [
+      {
+        "path": "scripts/sprite-key-study.mjs",
+        "sha256": "4e9d9e45d6d1dffdfbeb8da7f1e8a5211b57666d210c0220ad32f9d88d8130e1"
+      },
+      {
+        "path": "scripts/sprite-prompts.mjs",
+        "sha256": "7f0311c91371ce989bdaf852169c641017367b911f094086762b607d4aecc2a7"
+      },
+      {
+        "path": "scripts/agent-task-contract.mjs",
+        "sha256": "ab70ec1dc9e99293a54ea2873cb802ab2745d62942ff80c6fa0cb714ae0a60b1"
+      },
+      {
+        "path": "scripts/sprite-order-run.mjs",
+        "sha256": "8436a7eedbe2d4a0dac8634bfcc9e7ad27a365e8862771ef230b9cfc47eb5d90"
+      },
+      {
+        "path": "scripts/agent-preflight.mjs",
+        "sha256": "60a93e9f83e1270940e439cac2ee6332e7d8d3d1d09fcaba02e5431bc817ed36"
+      },
+      {
+        "path": "tests/agent-preflight-scope507.test.js",
+        "sha256": "4748dff2d0aa530291c7e6d24e6a954077683b8c11cc58d8aae8fac11dc9a4bf"
+      }
+    ],
+    "observation": "Independent source review found no concrete507 blocker in reviewed paths",
+    "limitation": "19guard tests actually rerun;46prior tests not rerun. Canonical registration absent; actual scoped study success/trusted dispatch not yet observed. Guide visual review is still intent only."
+  },
+  "handles": [],
+  "calls": 0,
+  "sourceEdits": 0,
+  "nextDependency": "Root retain/settle HELD raw custody and close known single call; stop joint study method with0selected keys. Any future route requires materially different finite control, not corrected prompt or renamed retry. Independent whole-game work remains open.",
+  "motion": {
+    "state": "UNKNOWN",
+    "limitation": "Candidate complementary-key intent FAILED; no continuous loop, natural motion, ground stride or world footlock evaluated"
+  },
+  "runtime": {
+    "state": "UNKNOWN",
+    "limitation": "No generated study, loop, gameplay, human approval or public release inspected in this task"
+  },
+  "owner": {
+    "state": "UNKNOWN",
+    "limitation": "No generated study, loop, gameplay, human approval or public release inspected in this task"
+  },
+  "release": {
+    "state": "UNKNOWN",
+    "limitation": "No generated study, loop, gameplay, human approval or public release inspected in this task"
+  },
+  "methodDifference": {
+    "path": "docs/audits/continuation-509/review/method-difference.json",
+    "sha256": "38bf443391074e47a78989b95d6cc25d7be62544515bc2522ea1535c3948b476"
+  },
+  "guideReview": {
+    "state": "INFERRED",
+    "method": "ACTUAL_STILL_GUIDE_AND_GAMEPLAY_SIZE_KEY_PREVIEW",
+    "observation": "512sheet and142preview retain whole bodies; F0/F4 extended opposing contact, F2/F6 compact passing with lifted opposite sandal. A right lane/B left lane persist. No redraw blocker for candidate study.",
+    "evidence": [
+      {
+        "path": "docs/art/pipeline/villager-key-study-509/joint-guide.png",
+        "sha256": "4a62e739ffe141095b76c418e871b973e5db0d93311b76b7e04e87dacdb83dbf"
+      },
+      {
+        "path": "docs/art/pipeline/villager-key-study-509/guide-gameplay.png",
+        "sha256": "1daaa546f00aef8f4a881882c2dbac996e118607e2b28e3d595b8b20e2405d43"
+      }
+    ],
+    "limitation": "Vector authoring aid; no actual generated identity, moving loop, world contact or naturalness approval"
+  },
+  "disjointScope": {
+    "state": "INFERRED",
+    "observation": "Proposed study villager/walk/D1 vs498residence/construction/null; different job IDs and physical paths. Study directory differs from retained498 output directories.",
+    "limitation": "Illustration task not yet registered; actual exclusive ownership/task scope success must be observed after registration"
+  },
+  "canonicalGate": {
+    "state": "VERIFIED",
+    "observation": "Active task contracts validate without output/slot overlap. Claim prepared equals independently reviewed prepare exactly. One initial token consumed, callsUsed1/callsRemaining0/correctionsUsed0. ALL old ledger order objects equal ledger-before snapshot, including498. Root scoped preflight receipt retained2unresolved498claims.",
+    "evidence": [
+      {
+        "path": "docs/audits/continuation-509/review/canonical-check.json",
+        "sha256": "4c3651681acc974bb307b7597e7c059f9b26342714a8d59ffc5830d27e2e5660"
+      },
+      {
+        "path": "docs/audits/continuation-509/root/art-preflight509.json",
+        "sha256": "f7428414574c0a6a124a1800ba88a05cce49f201ca93cebb7e048021b3a55c60"
+      },
+      {
+        "path": "docs/audits/continuation-509/root/claim-result.json",
+        "sha256": "2628c859015e97fba1feade9cab4047f5fc5d28aa529298bece34e60e052c91b"
+      },
+      {
+        "path": "docs/audits/continuation-509/root/ledger-before.json",
+        "sha256": "a687d7b292859ff5ef7b973001c2ae1308ec3fcf1023db160ac1f1792d3ce7b4"
+      }
+    ],
+    "limitation": "Read-only independent equality/contract/accounting check; provider call/output not observed; no artquality approval"
+  },
+  "candidateKeyReview": {
+    "state": "FAILED",
+    "decision": "HELD",
+    "reviewer": "/root/review507",
+    "method": "ACTUAL_RAW_STILL_PLUS_SINGLE_COMMON_GAMEPLAY_PRESENTATION",
+    "evidence": [
+      {
+        "path": "docs/art/pipeline/villager-key-study-509/illustration/raw.png",
+        "sha256": "f8f7b412133aa047eacec3a2d2aeafe23c70df8de195393687083a842a92971e"
+      },
+      {
+        "path": "docs/audits/continuation-509/review/raw-gameplay-whole-sheet.png",
+        "sha256": "edcc155e87c0871a7307bc58bdeced3e2b3aa35abcc2fc42084f3479455ece5e"
+      },
+      {
+        "path": "docs/art/pipeline/villager-key-study-509/illustration/CHECKPOINT.json",
+        "sha256": "320fc7fb7403ee48a98f33dda85657f21519d4105bc34dd08cad8bbcd4c72a71"
+      }
+    ],
+    "observation": "Upper-left and lower-left both show the screen-left cuff/sandal forward and screen-right leg trailing; they do not exchange physical receiving legs. Upper-right and lower-right again prominently lift/advance the screen-left cuff/sandal, rather than opposed passing legs. Arm and cloth variations do not supply the missing opposite support/swing cycle. This remains visibly same-sided at141square sheet presentation (~70.5canvas/cell).",
+    "identityObservation": "Hat, beard, crossover cream tunic and dark sash/trousers remain recognizable compared with actual originals, but this candidate receives no source/identity selection approval.",
+    "layoutObservation": "Returned1254square RGBA differs from requested512square. No individual extraction, fitting, warping or source modification performed. Whole-sheet141square diagnostic uses one uniform scale only; not a runtime atlas.",
+    "limitation": "Four still candidate keys, no continuous loop or world travel/footlock evaluated. Zero correction cap; no retry or in-between authorized."
+  },
+  "sourceSelection": {
+    "state": "UNKNOWN",
+    "observation": "0new selected keys; independent candidate verdict HELD"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "schema": "rds-independent-code-review/v1",
+  "taskId": "code-review538",
+  "status": "FINDINGS_RESOLVED_SOURCE_AND_FOCUSED_CHECKS",
+  "baseline": "refs/checkpoints/art-rebuild-538-before",
+  "scope": [
+    "client/pixel-animation.js",
+    "client/pixel-sprite-bank.js",
+    "client/renderer.js",
+    "client/visual-picking.js",
+    "client/world-presentation.js",
+    "client/main.js",
+    "client/style.css",
+    "client/pixel-sprite-viewer.js",
+    "client/art-direction-scene.js",
+    "client/art-direction-scene.html",
+    "client/art-direction-scene.css"
+  ],
+  "findings": [
+    {
+      "priority": 2,
+      "file": "client/main.js",
+      "line": 18,
+      "title": "Scene link is absent from default production build",
+      "evidence": "New anchor navigates to /client/art-direction-scene.html. vite.config.js:2 defines no additional HTML inputs; anchor-only HTML is not an emitted Vite entry. Dev serving can hide this omission.",
+      "recommendation": "Include scene HTML in build inputs (private stage and eventual canonical build) or provide a bundled route. Verify emitted scene under preview.",
+      "classification": "VERIFIED_SOURCE; built navigation not run independently"
+    },
+    {
+      "priority": 2,
+      "file": "tests/unit-disappearance522.test.js",
+      "line": 18,
+      "title": "Existing HP0 regression mock fails after renderer sample call",
+      "evidence": "Actual focused run: 19 PASS / 1 FAIL. Renderer drawEntity:68 now calls pixelBank.sampleEntity, absent in mock; TypeError prevents living healthbar assertions. Actual production bank does provide method.",
+      "recommendation": "Update mock with sampleEntity and retain HP0 and healthbar assertions.",
+      "classification": "VERIFIED"
+    }
+  ],
+  "checks": {
+    "preflight": "preflight.json, exit0; input pins matched",
+    "focused": "checks.txt: 20 tests,19 PASS,1 FAIL",
+    "source": "Shared pixelDrawBounds supplies draw/picking/overlay metadata;128 strict render metadata; default zoom1; alpha mapping agrees with drawing; viewer uses actual bank and cancels RAF on close including preload race; scene remains static separate assets with labeled sample commands. No simulation write found in scoped changes."
+  },
+  "limits": [
+    "No independent browser execution, asset visual assessment, owner approval, runtime acceptance, or release acceptance. Root browser smoke separate.",
+    "No additional image calls or source edits.",
+    "Existing empty registry is explicitly MISSING; scene stills do not complete animation coverage.",
+    "No memory-derived assertions used."
+  ],
+  "followup": {
+    "scope": [
+      "vite.config.js",
+      "tests/unit-disappearance522.test.js"
+    ],
+    "findingsResolution": [
+      {
+        "finding": 0,
+        "status": "RESOLVED_SOURCE",
+        "evidence": "Vite config now explicitly registers absolute game/scene/viewer HTML inputs via fileURLToPath(new URL(...)); source omission corrected. No independent build/browser rerun."
+      },
+      {
+        "finding": 1,
+        "status": "RESOLVED_VERIFIED",
+        "evidence": "Mock now returns explicit missing sample; independent rerun of HP0 and world presentation tests passes6/6, preserving original19/20 run."
+      }
+    ],
+    "checks": "followup-checks.txt:6 PASS,0 FAIL",
+    "pins": [
+      {
+        "path": "vite.config.js",
+        "sha256": "971aff1fd48a4d5e9d56d37f95d5b5ced18e2d8473c6d39bafb4f66f7f401174"
+      },
+      {
+        "path": "tests/unit-disappearance522.test.js",
+        "sha256": "76bf23f30572af729f063438a26f7cb5d796f9100456b403d90000b7050d3fc9"
+      }
+    ],
+    "drift": "Expected root changes after original snapshot; initial findings and checks retained unchanged. Root-reported browser/CSS changes outside this targeted rereview are not independently verified here.",
+    "remainingActionableFindings": []
+  }
+}

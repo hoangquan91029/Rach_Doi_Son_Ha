@@ -1,0 +1,99 @@
+{
+  "schema": "rds-task-receipt/v1",
+  "taskId": "live-rooms521",
+  "status": "PREPARED_ONLY_PENDING_INDEPENDENT_REVIEW_AND_ROOT_PHASE_UPDATE",
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "a81895b57e445ae913773fd7bf55049f84d859d407e175de2d106edc4f3c52bd"
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+    },
+    {
+      "path": "docs/PROJECT_ROADMAP.md",
+      "sha256": "06e099ae02208b43a9ad4fe01a2ad2cd50eba21a2a1d9570623f5cb31f2896df"
+    },
+    {
+      "path": "docs/COMPLETION_MATRIX.md",
+      "sha256": "3fad38e2251177c797cb2d2f51d016cb818a52b530c1d2d71fc53fd9d9995dda"
+    },
+    {
+      "path": "server/index.js",
+      "sha256": "4e6a7e82f02d1d856f4ea788863c4836930bc00250be6a5b020ba2bdd8884198"
+    },
+    {
+      "path": "client/main.js",
+      "sha256": "ed8e60ebc54da9d4a6f258be153a63bc72034ff8cca011480a2a1b97de4a8957"
+    },
+    {
+      "path": "shared/sim.js",
+      "sha256": "c9a01adba8630e89e1c3f195c1b98c08c32e74468d389a55891c664e3906e562"
+    },
+    {
+      "path": "scripts/qa/browser-custody510.mjs",
+      "sha256": "f0bf514e1988bf3a3c7bcd3abd6111c5721f4f4f63bdce6782eff099d9194ecd"
+    },
+    {
+      "path": "docs/qa/online-profile-512/config.json",
+      "sha256": "34fccb216e9f5e6701a1b3c475476c9a9df9d41f40e9272d34f7840176bd7547"
+    },
+    {
+      "path": "docs/qa/browser-close-514/CHECKPOINT.json",
+      "sha256": "e07c92c0266d52e353623cd2bf525d999e7d7fed6dc7fd48351c844feb63da42"
+    }
+  ],
+  "purpose": "MissingG6 local ordinaryUI idle live1/2/4/8cumulative roomcapacity preparation",
+  "outputs": [
+    {
+      "path": "scripts/qa/live-rooms521.mjs",
+      "sha256": "9de4ceae5db66225d2361a66a67b91c0a2f733eee2f8ebbc7d571b9b2696c94a"
+    },
+    {
+      "path": "docs/qa/live-rooms-521/prepared-config.json",
+      "sha256": "f9218cdb7a6c0ab77eaf7d99073f5f9357d69ee600ca03c3be20a3826c6f172f"
+    }
+  ],
+  "checks": [
+    {
+      "command": "node --check scripts/qa/live-rooms521.mjs",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0,
+      "evidence": [
+        {
+          "path": "docs/qa/live-rooms-521/syntax.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    },
+    {
+      "command": "node scripts/agent-preflight.mjs --task audit --task-id live-rooms521 --inputs docs/audits/continuation-509/root/live-rooms521-inputs.json --source scripts/qa/online-profile512.mjs",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0,
+      "evidence": [
+        {
+          "path": "docs/qa/live-rooms-521/preflight.json",
+          "sha256": "a9a15eb94c9addeab8fa779840897f3185668f57b912ba6ee3c138ca0ea21c6e"
+        }
+      ]
+    }
+  ],
+  "method": "Ordinary create/join/map/ready twoUIclientsperroom, alternatedDelta/Coast. Cumulativecohorts60s each. Passivewire/diagnostic roomstate/ticks/wss/errors/Nodeeventloopmemory. Ownedbrowserwrappercontexts/menu/contextintent; firstexception persisted beforefinally;720sdeadline",
+  "handles": {
+    "serverLaunches": 0,
+    "browserLaunches": 0,
+    "fixtures": 0,
+    "liveHandles": []
+  },
+  "limitations": [
+    "NO LAUNCH authorized inPHASE1; configuration intentionallydenies CLI execution",
+    "Syntaxonly; no test/browser/performance/runtime proof",
+    "Read-only current512stage/build treepins captured; exacttree equality must be reviewed for ordering beforeexecute",
+    "Read-only current512stage/build treepins captured through same exported function; no source/stage/build writes",
+    "No original art/canonicalcode/build/deploy changes",
+    "Stageexistingnode_modules symlink target pinned, linkeddependencytree notrecursed; independentreview mustaccept/check dependencycustody"
+  ],
+  "nextDependency": "Independentsource/config review and rootEXPLICITphase update before actualonebrowser finite run",
+  "initialPreparationError": "Tree pin collector initially rejected existingstage symlink; repaired torecord explicitSYMLINKrealpath withoutfollowing it, no installation/sourcechange"
+}

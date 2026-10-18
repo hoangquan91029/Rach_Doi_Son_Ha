@@ -1,0 +1,57 @@
+{
+  "schema": "rds-native-still-study/v1",
+  "identity": "worker538",
+  "status": "DIRECTION_CANDIDATE_NOT_ANIMATION",
+  "author": "root",
+  "ownership": "root-art538",
+  "method": "native-raster",
+  "frameSize": [
+    128,
+    128
+  ],
+  "renderSize": [
+    128,
+    128
+  ],
+  "anchor": [
+    64,
+    112
+  ],
+  "bodyHeightPx": 84,
+  "headHeightPx": 12,
+  "light": "upper-left",
+  "view": "elevated RTS 2:1 ground projection",
+  "frames": [
+    {
+      "id": "S",
+      "pose": "relaxed standing; two distinct hands; exposed face and crossover"
+    },
+    {
+      "id": "SE",
+      "pose": "independently drawn three-quarter right/down; far arm behind, near arm/foot forward"
+    },
+    {
+      "id": "N",
+      "pose": "independently drawn rear view; back collar, headcloth knot, shoulder plane"
+    }
+  ],
+  "forbidden": [
+    "legacy pixels",
+    "mirroring",
+    "frame interpolation",
+    "whole-image pose transforms",
+    "duplicate frames",
+    "animation before owner scene approval"
+  ],
+  "history": "Worker537 remains preserved and owner rejected; no source pixels used.",
+  "historicalStatus": "PROPOSED costume and house, see references538/REFERENCES.md; no period authenticity claim",
+  "providerCalls": 0,
+  "providerTokens": null,
+  "historicalBasis": {
+    "region": "Dang Ngoai",
+    "period": "late17c, Dampier1688 witness",
+    "cloth": "dark brown cotton, following supplied human dossier",
+    "cut": "PROPOSED crossover, not established by cloth evidence",
+    "reference": "docs/audits/art-rebuild-538/references538/DOSSIER_MAPPING.md"
+  }
+}

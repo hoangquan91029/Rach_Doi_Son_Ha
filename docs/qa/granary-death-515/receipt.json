@@ -1,0 +1,60 @@
+{
+  "status": "HOLD_FIRST_ERROR",
+  "scope": "PRIVATE_CANDIDATE Granarydeath ordinary twohuman Delta; noquality/owner/publicPASS",
+  "errors": [],
+  "actions": [],
+  "samples": [],
+  "cleanup": [
+    {
+      "side": 0,
+      "closed": true
+    },
+    {
+      "side": 1,
+      "closed": true
+    }
+  ],
+  "handlesStarted": {
+    "runnerPID": 577977,
+    "browserPID": 578019,
+    "port": 43067
+  },
+  "roomCode": "C680DE",
+  "target": {
+    "id": 19,
+    "owner": 1,
+    "type": "granary",
+    "kind": "building",
+    "x": 57.5,
+    "y": 26.5,
+    "hp": 450,
+    "maxHp": 450,
+    "food": 0,
+    "foodMax": 0,
+    "morale": 95,
+    "state": "idle",
+    "dir": 4,
+    "cooldown": 0,
+    "queue": [],
+    "cargo": {
+      "food": 260,
+      "wood": 0,
+      "iron": 0,
+      "units": []
+    },
+    "underConstruction": false,
+    "order": null
+  },
+  "firstException": {
+    "atUTC": "2026-10-13T11:16:13.817Z",
+    "message": "TypeError: Cannot read properties of undefined (reading '1')\n    at file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/qa/granary-death515.mjs:8:1988"
+  },
+  "handles": {
+    "browserConnected": false,
+    "browserExit": 0,
+    "serverListening": false,
+    "rooms": 0
+  },
+  "preservation": true,
+  "endedUTC": "2026-10-13T11:16:13.956Z"
+}

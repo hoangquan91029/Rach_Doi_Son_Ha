@@ -1,0 +1,460 @@
+{
+  "schema": "rds-task-receipt/v1",
+  "taskId": "granary-runtime518",
+  "status": "HOLD_FIRST_ORDINARY_SELECTION_FAILURE_NO_DEATH",
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "a81895b57e445ae913773fd7bf55049f84d859d407e175de2d106edc4f3c52bd"
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+    },
+    {
+      "path": "scripts/qa/granary-death516.mjs",
+      "sha256": "08e3a7422369944476f9fb47a7a662f64455e9a59c04f9025810a44aa3db71b8"
+    },
+    {
+      "path": "docs/qa/granary-death-516/CHECKPOINT.json",
+      "sha256": "64cb013c8ee0f7e36666b7609c6d00fa405396fce3fc48dce6024e80fb4f00ab"
+    },
+    {
+      "path": "scripts/qa/browser-custody510.mjs",
+      "sha256": "f0bf514e1988bf3a3c7bcd3abd6111c5721f4f4f63bdce6782eff099d9194ecd"
+    },
+    {
+      "path": "client/main.js",
+      "sha256": "ed8e60ebc54da9d4a6f258be153a63bc72034ff8cca011480a2a1b97de4a8957"
+    },
+    {
+      "path": "client/raster-slice.js",
+      "sha256": "dcb84bc166863b1b5f85940931f8ef558df29bba573496531632f52816676983"
+    },
+    {
+      "path": "client/art-assets.js",
+      "sha256": "af4db82838cf5b936549307272f96aef4ef16d1ac6f672cb8f4dd7c73437ab06"
+    },
+    {
+      "path": "shared/sim.js",
+      "sha256": "c9a01adba8630e89e1c3f195c1b98c08c32e74468d389a55891c664e3906e562"
+    },
+    {
+      "path": "docs/art/pipeline/granary-death-511/exports/compiled-selected/asset.json",
+      "sha256": "bd15509226232c966d4284a9cf17cf5e7fe04d59444b0d8daea34ade71de5da1"
+    },
+    {
+      "path": "docs/art/pipeline/granary-death-511/exports/compiled-selected/atlas.png",
+      "sha256": "6c34e21ce79a4e904dbfda02f1d01b2ccb38a02eed7ee0c7e056c494482ef0c8"
+    }
+  ],
+  "checks": [
+    {
+      "argv": [
+        "node",
+        "scripts/agent-preflight.mjs",
+        "--task",
+        "runtime",
+        "--task-id",
+        "granary-runtime518",
+        "--inputs",
+        "docs/audits/continuation-509/root/granary-runtime518-inputs.json",
+        "--source",
+        "client/raster-slice.js"
+      ],
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0
+    },
+    {
+      "argv": [
+        "node",
+        "--check",
+        "scripts/qa/granary-death518.mjs"
+      ],
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0
+    },
+    {
+      "argv": [
+        "node",
+        "scripts/qa/granary-death518.mjs"
+      ],
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0,
+      "limit": "RunnercaughtHOLD notPASS"
+    }
+  ],
+  "observations": {
+    "preAttack": {
+      "camera": {
+        "x": 57.496875,
+        "y": 26.498578752790177,
+        "zoom": 1.68
+      },
+      "viewport": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 1
+      },
+      "point": {
+        "x": 960.0772822265621,
+        "y": 540.1031088867187
+      },
+      "world": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1080
+      },
+      "liveDraw": {
+        "entityId": 19,
+        "assetId": "granary",
+        "frame": 0,
+        "visualState": "idle",
+        "requestedState": "idle",
+        "requestedDirection": null,
+        "direction": null,
+        "presentation": "AUTHORED",
+        "staticIllustrationFallback": false,
+        "render": {
+          "width": 85,
+          "height": 85
+        },
+        "pivot": {
+          "x": 261.3078149920255,
+          "y": 428.7081339712919
+        },
+        "cell": {
+          "width": 512,
+          "height": 512
+        },
+        "tick": 229,
+        "presentationTimeMs": 11367.900000011921,
+        "renderObservation": 693
+      },
+      "pipeline": {
+        "unitActionPolicy": "on-demand",
+        "status": "PLACEHOLDER_ONLY",
+        "manifest": "ready",
+        "declared": 52,
+        "ready": 49,
+        "approved": 0,
+        "candidates": 49,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 1,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 18186752,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 39,
+        "encodedReady": 0,
+        "retainedEncodedBytes": 4608899,
+        "encodedBudgetBytes": 67108864,
+        "selectedDeclared": 52,
+        "eagerDeclared": 48,
+        "deferredDeclared": 4,
+        "pending": 0,
+        "pageErrors": [],
+        "evictedPages": 0,
+        "evictedEncodedPages": 0,
+        "failures": []
+      },
+      "candidateRequested": 0
+    },
+    "candidateAtlasResponses": [],
+    "sampleCount": 103,
+    "lastSample": {
+      "tick": 585,
+      "target": {
+        "hp": 450,
+        "state": "idle"
+      },
+      "draw": {
+        "entityId": 19,
+        "assetId": "granary",
+        "frame": 0,
+        "visualState": "idle",
+        "requestedState": "idle",
+        "requestedDirection": null,
+        "direction": null,
+        "presentation": "AUTHORED",
+        "staticIllustrationFallback": false,
+        "render": {
+          "width": 85,
+          "height": 85
+        },
+        "pivot": {
+          "x": 261.3078149920255,
+          "y": 428.7081339712919
+        },
+        "cell": {
+          "width": 512,
+          "height": 512
+        },
+        "tick": 585,
+        "presentationTimeMs": 29169.4,
+        "renderObservation": 1846
+      },
+      "lastBuildingDeath": null,
+      "pipeline": {
+        "unitActionPolicy": "on-demand",
+        "status": "PLACEHOLDER_ONLY",
+        "manifest": "ready",
+        "declared": 52,
+        "ready": 49,
+        "approved": 0,
+        "candidates": 49,
+        "failed": 0,
+        "skipped": 0,
+        "fallbacks": 1,
+        "decodedBudgetBytes": 134217728,
+        "retainedDecodedBytes": 18186752,
+        "reservedDecodedBytes": 0,
+        "uniqueDecodedImages": 39,
+        "encodedReady": 0,
+        "retainedEncodedBytes": 4608899,
+        "encodedBudgetBytes": 67108864,
+        "selectedDeclared": 52,
+        "eagerDeclared": 48,
+        "deferredDeclared": 4,
+        "pending": 0,
+        "pageErrors": [],
+        "evictedPages": 0,
+        "evictedEncodedPages": 0,
+        "failures": []
+      },
+      "camera": {
+        "x": 57.496875,
+        "y": 26.498578752790177,
+        "zoom": 1.68
+      }
+    },
+    "ordinaryActions": [
+      {
+        "kind": "ordinary-rightclick",
+        "side": 1,
+        "id": 22,
+        "target": {
+          "x": 47.5,
+          "y": 11.5
+        }
+      },
+      {
+        "kind": "ordinary-rightclick",
+        "side": 1,
+        "id": 23,
+        "target": {
+          "x": 48.5,
+          "y": 11.5
+        }
+      },
+      {
+        "kind": "ordinary-rightclick",
+        "side": 1,
+        "id": 24,
+        "target": {
+          "x": 49.5,
+          "y": 11.5
+        }
+      },
+      {
+        "kind": "ordinary-rightclick",
+        "side": 1,
+        "id": 25,
+        "target": {
+          "x": 50.5,
+          "y": 11.5
+        }
+      },
+      {
+        "kind": "ordinary-rightclick",
+        "side": 1,
+        "id": 26,
+        "target": {
+          "x": 51.5,
+          "y": 11.5
+        }
+      },
+      {
+        "kind": "ordinary-rightclick",
+        "side": 1,
+        "id": 27,
+        "target": {
+          "x": 52.5,
+          "y": 11.5
+        }
+      },
+      {
+        "kind": "ordinary-rightclick",
+        "side": 1,
+        "id": 28,
+        "target": {
+          "x": 53.5,
+          "y": 11.5
+        }
+      },
+      {
+        "kind": "ordinary-rightclick",
+        "side": 1,
+        "id": 29,
+        "target": {
+          "x": 54.5,
+          "y": 11.5
+        }
+      },
+      {
+        "kind": "ordinary-rightclick",
+        "side": 1,
+        "id": 30,
+        "target": {
+          "x": 55.5,
+          "y": 11.5
+        }
+      },
+      {
+        "kind": "ordinary-rightclick",
+        "side": 1,
+        "id": 31,
+        "target": {
+          "x": 56.5,
+          "y": 11.5
+        }
+      },
+      {
+        "kind": "ordinary-rightclick",
+        "side": 1,
+        "id": 32,
+        "target": {
+          "x": 57.5,
+          "y": 11.5
+        }
+      },
+      {
+        "kind": "ordinary-rightclick",
+        "side": 1,
+        "id": 33,
+        "target": {
+          "x": 58.5,
+          "y": 11.5
+        }
+      },
+      {
+        "kind": "ordinary-rightclick",
+        "side": 1,
+        "id": 34,
+        "target": {
+          "x": 59.5,
+          "y": 11.5
+        }
+      },
+      {
+        "kind": "ordinary-rightclick",
+        "side": 0,
+        "id": 13,
+        "target": {
+          "x": 57.5,
+          "y": 26.5
+        }
+      },
+      {
+        "kind": "ordinary-rightclick",
+        "side": 0,
+        "id": 14,
+        "target": {
+          "x": 57.5,
+          "y": 26.5
+        }
+      },
+      {
+        "kind": "ordinary-rightclick",
+        "side": 0,
+        "id": 15,
+        "target": {
+          "x": 57.5,
+          "y": 26.5
+        }
+      },
+      {
+        "kind": "ordinary-rightclick",
+        "side": 0,
+        "id": 16,
+        "target": {
+          "x": 57.5,
+          "y": 26.5
+        }
+      }
+    ],
+    "pageErrors": []
+  },
+  "failure": {
+    "atUTC": "2026-10-13T11:30:41.450Z",
+    "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   15\n- ]\n\n    at select (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/qa/granary-death518.mjs:6:675)\n    at async file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/qa/granary-death518.mjs:8:4030"
+  },
+  "cause": "VERIFIED ordinaryopaqueentityPointselection of movingattacker15 yieldedemptyselection. No subsequentretry. Doesnotestablish pickingenginebug or artfailure.",
+  "coverage": {
+    "deathTick": "UNKNOWN",
+    "F0": "UNKNOWN",
+    "F1": "UNKNOWN",
+    "F2": "UNKNOWN",
+    "F3hold": "UNKNOWN",
+    "corpseRemoval": "UNKNOWN",
+    "cameraBeforeAttack": "VERIFIED zoom1.68 andliveGranarydraw inworldviewport; noafterdeathcameraclick",
+    "candidateCold": "VERIFIED noatlasresponsebeforeattack; pending0 aggregate; individualdecodedstatusnotexposed"
+  },
+  "preservation": {
+    "canonicalExactTreeBytes": true,
+    "guardInterval": "start/1s/end",
+    "reused515StageBuildUnchanged": true
+  },
+  "handles": {
+    "runnerPID": 584114,
+    "browserPID": 584139,
+    "port": 37111,
+    "browserConnected": false,
+    "browserExit": 0,
+    "serverListening": false,
+    "rooms": 0,
+    "cleanup": [
+      {
+        "side": 0,
+        "closed": true
+      },
+      {
+        "side": 1,
+        "closed": true
+      }
+    ],
+    "allOwnedClosed": true
+  },
+  "calls": {
+    "attempt": 1,
+    "restart": 0,
+    "build": 0,
+    "image": 0,
+    "profile": 0,
+    "production": 0
+  },
+  "nextDependency": "Root intake firstfailure. Futureordinaryattack workflow must avoid racingmovingopaqueanchor selection: observeactualassignedarrival/idle beforestablerectangle selection, or retainedordinaryselectedgroup. No retry518. Earlydeathcoverage remainsOPEN.",
+  "outputs": [
+    {
+      "path": "scripts/qa/granary-death518.mjs",
+      "sha256": "d109efebdafdc7176085954f5fab869ae91ab1ccb8f9102ff89722bf562d6ace"
+    },
+    {
+      "path": "docs/qa/granary-death-518/receipt.json",
+      "sha256": "ebea5357c6c2abf496f44697080b2daa75d14ec19120032e184e39d80b5717c7"
+    },
+    {
+      "path": "docs/qa/granary-death-518/run.log",
+      "sha256": "8e4fb79b0df4040cbbd99095d111a42c07c81f0791ee10f8e4277095e7849300"
+    },
+    {
+      "path": "docs/qa/granary-death-518/browser-custody/lifecycle.jsonl",
+      "sha256": "1139dbb70487cd8e19437c45022f5a8207a84ba0c4d6096b78c2209f185fc418"
+    },
+    {
+      "path": "docs/qa/granary-death-518/browser-custody/status.json",
+      "sha256": "7dcbb8bd0021a5dee69c51ab9231ea53b9d1eb4c7e186e5e5f71a706b0d607ae"
+    }
+  ]
+}

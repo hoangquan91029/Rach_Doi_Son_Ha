@@ -1,0 +1,257 @@
+{
+  "schema": "rds-task-receipt/v1",
+  "taskId": "villager-idle-runtime525",
+  "status": "HOLD_FIRST_INITIAL_FIELD_READINESS_TIMEOUT",
+  "phase": "EXECUTED_ONE_TERMINAL_NO_REPLAY",
+  "attempts": 1,
+  "browserLaunches": 1,
+  "serverLaunches": 1,
+  "inputs": "docs/audits/movement-priority-522/root/idle-runtime525-inputs.json",
+  "privateReplacement": {
+    "index": 15,
+    "oldId": "villager-idle-south-014",
+    "newId": "villager-idle-D1-whole523",
+    "family": "unit.villager",
+    "state": "idle",
+    "direction": 1,
+    "runtimeAtlas": {
+      "width": 264,
+      "height": 264,
+      "sha256": "2963cd4beea9ff9a5b0378d9da9e1b43f684f7c123813ff25d66074ce47de2ce"
+    },
+    "pivot": {
+      "space": "source",
+      "x": 654,
+      "y": 1140
+    },
+    "render": {
+      "width": 42,
+      "height": 42
+    },
+    "contactShadow": {
+      "mode": "baked"
+    },
+    "policy": "Replace exactexistingD1idle atsameindex; noappendbehindstatic, no oldwalk modification"
+  },
+  "stage": {
+    "sourcePath": "docs/qa/villager-idle-525/stage",
+    "sourcePins": "docs/qa/villager-idle-525/stage-source-pins.json",
+    "buildPath": "docs/qa/villager-idle-525/build",
+    "buildPins": "docs/qa/villager-idle-525/build-pins.json",
+    "sourceFiles": 231,
+    "canonicalFiles": 436,
+    "canonicalBytePinsMatch": true
+  },
+  "checks": [
+    {
+      "command": "node scripts/agent-preflight.mjs --task runtime --task-id villager-idle-runtime525 --inputs docs/audits/movement-priority-522/root/idle-runtime525-inputs.json --source client/main.js --source client/raster-slice.js",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0,
+      "evidence": "docs/qa/villager-idle-525/preflight.json"
+    },
+    {
+      "command": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/node_modules/.bin/vite build --config /home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/villager-idle-525/stage/vite.config.js --outDir /home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/villager-idle-525/build",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/qa/villager-idle-525/stage",
+      "exitCode": 0,
+      "evidence": "docs/qa/villager-idle-525/build.log",
+      "buildCount": 1
+    },
+    {
+      "command": "node --check scripts/qa/villager-idle525.mjs",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0,
+      "evidence": "docs/qa/villager-idle-525/syntax.log"
+    },
+    {
+      "command": "node docs/qa/villager-idle-525/terminal-negative-checks.mjs",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0,
+      "evidence": "docs/qa/villager-idle-525/terminal-negative-checks.log"
+    },
+    {
+      "command": "node scripts/agent-preflight.mjs --task runtime --task-id villager-idle-runtime525 --inputs docs/audits/movement-priority-522/root/idle-runtime525-execute-inputs.json --source scripts/qa/villager-idle525.mjs",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0,
+      "evidence": "docs/qa/villager-idle-525/execute-preflight.json"
+    }
+  ],
+  "futureScene": {
+    "scope": "ONE<=150s ordinarySPDelta candidate technicalscene; no walk/motion/publicapproval",
+    "authorizationGate": "ACTIVEtask phaseEXECUTE_ONE_REVIEWED_SCENE and no existingattempt.json",
+    "actions": [
+      "ordinaryinitialVillagergroundrectangle Ctrl1save/1recall",
+      "Actualvisibleplain D1diagonal M-groundclick, authoritativeassignedorder destination andarrival<=0.7",
+      "ActualnewidleentryF0/allfourframes3000ms",
+      "NextD1move+ordinaryStop/reentryF0",
+      "ordinaryPauseResume thenLeavecampaign menu"
+    ],
+    "evidence": "ReadonlyrtsDiagnostics snapshots/projectedpoints/currentdraw, nosim/state/facing/command injection",
+    "shadowLimit": "Newidlebaked vsoldwalk separate shadow retained; capture transitiontrace/screenshot, no oldwalkchanges concealjump",
+    "execution": {
+      "argv": [
+        "node",
+        "scripts/qa/villager-idle525.mjs"
+      ],
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "configuration": "Fixedharness out docs/qa/villager-idle-525; private stage/server+build; SPDelta easy;1920x1080DPR1;zoom1.68;deadline150s; headlessChromium custody510",
+      "phaseGate": "Read trusted495tasks taskid villager-idle-runtime525; assert ACTIVE and exactphaseEXECUTE_ONE_REVIEWED_SCENE before serverimport/launch; rejectexistingattempt.json. Worker doesnotmutatetaskauthorization."
+    }
+  },
+  "preservation": {
+    "canonicalGuard": "Exacttree client/shared/server/public/dist start/periodic1s/end",
+    "stageBuildGuard": "Exactfrozenstage/build start/periodic/end",
+    "artworkPins": "docs/qa/villager-idle-525/artwork-pins.json",
+    "artworkFiles": 29,
+    "historicalOrderPins": "docs/qa/villager-idle-525/historical-order-pins.json",
+    "oldOrders": 8,
+    "orderScope": "Parsedexact8historicalorder objecthashes; unrelatedneworder mutations excluded",
+    "ledgerPin": "docs/qa/villager-idle-525/ledger-pin.json",
+    "ledgerGuard": "Root confirmednoactiveimageorders; exactwholeledgerSHA alsofrozen start/periodic/end",
+    "actualTerminalGuard": true
+  },
+  "failures": [
+    {
+      "path": "docs/qa/villager-idle-525/preparation-errors.json",
+      "observation": "Preservationinventory guessed nonexistentF0raw; repairedbyactualcompiledframe.source pins. No generation/buildretry/browser occurred."
+    }
+  ],
+  "outputs": [
+    {
+      "path": "scripts/qa/villager-idle525.mjs",
+      "sha256": "43610e794689513c9f761cda1250fd20b86610fb0fcd3cea586b062662d889d6"
+    },
+    {
+      "path": "docs/qa/villager-idle-525/canonical-pins.json",
+      "sha256": "8004624e6b9e27cabb4605ce3663d443def88765edb8f71fe26ce2adb963dfa1"
+    },
+    {
+      "path": "docs/qa/villager-idle-525/stage-source-pins.json",
+      "sha256": "8a1520df3d0e21bfdf15ad9ad505cc0c1814c003b2ed5f5f5e8fc61a9c3f4ff8"
+    },
+    {
+      "path": "docs/qa/villager-idle-525/build-pins.json",
+      "sha256": "141fe58c6f85785230340e4d36cc6aa6eb7938426bc04c612d70ff7405bdb1c6"
+    },
+    {
+      "path": "docs/qa/villager-idle-525/artwork-pins.json",
+      "sha256": "5537e4c8021e6f21aec1201551387973a457f36c8865f2c144eb61c6000eb11b"
+    },
+    {
+      "path": "docs/qa/villager-idle-525/historical-order-pins.json",
+      "sha256": "7c336543f0240bb3fe2f74590535206d527849330dc77ca9cd750d6a7e2f9276"
+    },
+    {
+      "path": "docs/qa/villager-idle-525/private-replacement.json",
+      "sha256": "3ef330ed61d1bb3bf74f16c768d2e8877d1228f8adf17f46bdf0c2407933cbb3"
+    },
+    {
+      "path": "docs/qa/villager-idle-525/preflight.json",
+      "sha256": "6e163e8c80853945761749f7735f7dfe876e9b51f2b7fad010822f594f25c707"
+    },
+    {
+      "path": "docs/qa/villager-idle-525/build.log",
+      "sha256": "d62dbbbea677a391501404fab9272e53bd9ff6d153b18539237d3c6a9c122d57"
+    },
+    {
+      "path": "docs/qa/villager-idle-525/syntax.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qa/villager-idle-525/preparation-errors.json",
+      "sha256": "ebf55e36251c5e9f44f13a694163638966c20a879f557bb5ad8d77ddeb1256a7"
+    },
+    {
+      "path": "docs/qa/villager-idle-525/ledger-pin.json",
+      "sha256": "34c2d4fe3e51c788e0101ceb1b4cce615c79e04bb5a642cbe89fbdcb83273179"
+    },
+    {
+      "path": "docs/qa/villager-idle-525/terminal-negative-checks.mjs",
+      "sha256": "3609aa45ce96f9c8deb50a7df7c9fa1f9e373dc192f51edc9177cddc680452ca"
+    },
+    {
+      "path": "docs/qa/villager-idle-525/terminal-negative-checks.log",
+      "sha256": "862442f5713670ed5bf4fa7a7146af157a026b7e30f8c645c73fabd881a4ef49"
+    },
+    {
+      "path": "docs/qa/villager-idle-525/execute-preflight.json",
+      "sha256": "8e022b25ae910bae4fa82aaf9869f1f8582ab606b42d148b2a3035d8edf858fa"
+    },
+    {
+      "path": "docs/qa/villager-idle-525/attempt.json",
+      "sha256": "cfb38860ed7221a622d09e316915e8a58388b164fb9261fe520cc44216a4bc6e"
+    },
+    {
+      "path": "docs/qa/villager-idle-525/receipt.json",
+      "sha256": "f805dd416e6e00d766aefbe3f103031ab9b0d4c51fab3cb4cbdb30f9b4e3986a"
+    },
+    {
+      "path": "docs/qa/villager-idle-525/run.log",
+      "sha256": "7f7b4ed0f543f91ab22d1f5cbc3391de3163088dba79b5ae72175e9e7a978804"
+    },
+    {
+      "path": "docs/qa/villager-idle-525/live-handles.json",
+      "sha256": "665c608ab57a90be244520f4b8c267f6171fba7a465c0d0481c5adddafbcbdce"
+    },
+    {
+      "path": "docs/qa/villager-idle-525/browser-custody/status.json",
+      "sha256": "6d4738a8ea682a53df576cc81de1d1d8bfb62ef4f1e24c4b93bb2cd9d9c0c11c"
+    },
+    {
+      "path": "docs/qa/villager-idle-525/browser-custody/lifecycle.jsonl",
+      "sha256": "1acbbfd183841afe2ad5ccd9ad0fb3a0795e3679b9a855ce8b9e1304f2582114"
+    },
+    {
+      "path": "docs/qa/villager-idle-525/browser-custody/browser-stderr.bin",
+      "sha256": "6f6aa39efcd151499f9f59b7199690538b212ff4ecc928da5181ac5281659d64"
+    }
+  ],
+  "handles": {
+    "runnerPID": 640640,
+    "browserPID": 640654,
+    "port": 43181,
+    "browserProcessAlive": false,
+    "browserSignal": null,
+    "browserConnected": false,
+    "browserExit": 0,
+    "serverListening": false,
+    "rooms": 0
+  },
+  "limitations": [
+    "Source/readiness only; no scene actualobservations yet.",
+    "Owner accepted exact523clip separately; this task cannot extendownerapproval towalk, otherdirections/public.",
+    "Existingwalk014held/rejected is mechanicaltransition evidence only.",
+    "No naturalmotion/stride/worldcontact/fullmatch/performance/WAN proof.",
+    "Actualattemptstopped atinitialreadiness wait afterEnterfield; no selectedactor/commands/idleclock/frames/Stop/Pause/menuobserved. Contextcleanup successisnotordinarymenuexitproof."
+  ],
+  "nextDependency": "Root readonlyfailureintake/diagnoseexistingstage orsavedsource; no automaticretry/rebuild/scenepermission. Exactowneraccepted523clip remainsseparate; runtime525 incomplete.",
+  "repair": {
+    "finding": "IndependentreviewHOLD terminalpreservation/closeerrors could leave scopedstatus/exit0",
+    "change": "PureapplyTerminalGate forcesHOLD_TERMINAL_FAILURE and callerexit1 for preservationfalse, anycontext/browser/servercloseerror or livebrowser/server/rooms; originalfirstException preserved, terminalException separatelyrecorded. Recovery retainsrunnerPID/browserPID/port, explicitunresolvedHandles and ownedbrowser/error.ownedBrowser reference; no manualcustody.finish whilelive.",
+    "evidence": "docs/qa/villager-idle-525/terminal-negative-checks.log",
+    "checks": "12pureterminalcases includingfailurecontexts/guards/livehandles/preserveprimary/PID and childexit1; importsafe module doesnotexecute scene; browser/serverlaunches0",
+    "launches": 0,
+    "builds": 0
+  },
+  "execution": {
+    "argv": [
+      "node",
+      "scripts/qa/villager-idle525.mjs"
+    ],
+    "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+    "sessionId": 55828,
+    "exitCode": 1,
+    "runnerPID": 640640,
+    "browserPID": 640654,
+    "port": 43181,
+    "result": "HOLD_FIRST_ERROR",
+    "firstException": {
+      "atUTC": "2026-10-13T13:14:46.558Z",
+      "message": "page.waitForFunction: Timeout 10000ms exceeded.\n    at runScene (/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/qa/villager-idle525.mjs:33:946)\n    at async file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/scripts/qa/villager-idle525.mjs:40:84"
+    },
+    "actions": 0,
+    "samples": 0,
+    "evidence": "docs/qa/villager-idle-525/run.log",
+    "cause": "UNKNOWN: no pretimeoutgamesnapshot retained; cannot infer artworkfailure, gamefailure or timeoutrootcause",
+    "noRestart": true
+  }
+}

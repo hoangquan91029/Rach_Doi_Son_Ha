@@ -1,0 +1,140 @@
+{
+  "scope": "Offline source/public-view planner fixture; no browser or actual commands",
+  "plan": {
+    "selected": {
+      "actorId": 7,
+      "staging": {
+        "x": 8.5,
+        "y": 19.5
+      },
+      "firstTarget": {
+        "x": 11.5,
+        "y": 22.5
+      },
+      "secondTarget": {
+        "x": 13,
+        "y": 24
+      }
+    },
+    "rejections": [
+      {
+        "actorId": 7,
+        "point": {
+          "x": 7.5,
+          "y": 21.5
+        },
+        "reason": "insufficient-egress-distance"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 7.5,
+          "y": 20.5
+        },
+        "reason": "insufficient-egress-distance"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 6.5,
+          "y": 21.5
+        },
+        "reason": "insufficient-egress-distance"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 8.5,
+          "y": 21.5
+        },
+        "reason": "insufficient-egress-distance"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 7.5,
+          "y": 22.5
+        },
+        "reason": "insufficient-egress-distance"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 6.5,
+          "y": 20.5
+        },
+        "reason": "insufficient-egress-distance"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 8.5,
+          "y": 20.5
+        },
+        "reason": "insufficient-egress-distance"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 6.5,
+          "y": 22.5
+        },
+        "reason": "insufficient-egress-distance"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 8.5,
+          "y": 22.5
+        },
+        "reason": "building-footprint:1"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 7.5,
+          "y": 19.5
+        },
+        "reason": "ground-segment-building:1"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 5.5,
+          "y": 21.5
+        },
+        "reason": "not-plain"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 9.5,
+          "y": 21.5
+        },
+        "reason": "ground-segment-building:1"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 7.5,
+          "y": 23.5
+        },
+        "reason": "ground-segment-building:1"
+      },
+      {
+        "actorId": 7,
+        "point": {
+          "x": 6.5,
+          "y": 19.5
+        },
+        "reason": "ground-segment-building:1"
+      }
+    ],
+    "search": {
+      "actors": 6,
+      "visitedCells": 401,
+      "radius": 8,
+      "maxCells": 4096
+    }
+  }
+}

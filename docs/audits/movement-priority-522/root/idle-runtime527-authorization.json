@@ -1,0 +1,15 @@
+{
+  "decision": "EXACTLY_ONE finite527scene afterconcrete526repair+independentsource/harness review; no art/walk/publicapproval",
+  "buildsAlreadyUsed": 1,
+  "remainingBuilds": 0,
+  "attemptsBefore": 0,
+  "review": {
+    "path": "docs/qa/villager-idle-527-review/CHECKPOINT.json",
+    "sha256": "65348056857c26eb692ba5d9936dc03ccb633fa34753ccb452f22792418df650"
+  },
+  "source": {
+    "path": "scripts/qa/villager-idle527.mjs",
+    "sha256": "9f9276c72f64bbc50993014a09ca570eb7b12e9ea165b7236d297802241c2d0a"
+  },
+  "limitations": "150s observation deadline, browseroperation/guards/cleanup mayaddwalltime; firstfailure stops, no retry/rebuild/replay"
+}

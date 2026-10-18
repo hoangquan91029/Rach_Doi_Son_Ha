@@ -1,0 +1,1091 @@
+{
+  "schema": "rds-task-receipt/v1",
+  "taskId": "online-observer504",
+  "status": "VERIFIED_LOCAL_ONLINE100_TOTAL",
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "52cda32fd631f5cde21b0f861d7cd50db4e8948f8d7475f052e8086c0b149c8b"
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "225d9c16f9db5c4fbe941c93053fbcb958b1672824043b757b58ebb4f41b8569"
+    },
+    {
+      "path": "scripts/qa/online-profile503.mjs",
+      "sha256": "fe155e7f91456e7f10edd5872c6a35f1db2d4fbaea0dfe29c3e9c5c199d390ed"
+    },
+    {
+      "path": "docs/qa/online-profile-503/CHECKPOINT.json",
+      "sha256": "313591ca0444146efe4f1f9ec4741e7093a31159453712cfad4ecdfaf599bce4"
+    },
+    {
+      "path": "shared/sim.js",
+      "sha256": "c9a01adba8630e89e1c3f195c1b98c08c32e74468d389a55891c664e3906e562"
+    },
+    {
+      "path": "shared/data.js",
+      "sha256": "ffc3f45adc58f212066d3763c591377ce15b9f6ac78e4685a95fc3ac747818e1"
+    },
+    {
+      "path": "client/main.js",
+      "sha256": "ed8e60ebc54da9d4a6f258be153a63bc72034ff8cca011480a2a1b97de4a8957"
+    },
+    {
+      "path": "server/index.js",
+      "sha256": "4e6a7e82f02d1d856f4ea788863c4836930bc00250be6a5b020ba2bdd8884198"
+    }
+  ],
+  "inputPinsExact": true,
+  "exclusiveOutputs": [
+    "scripts/qa/online-profile504.mjs",
+    "scripts/qa/train-observation504.mjs",
+    "tests/train-observation504.test.js",
+    "docs/qa/online-profile-504"
+  ],
+  "tools": [
+    "PlaywrightChromium151 ordinaryUI",
+    "passive websocket frame observation",
+    "read-onlyrtsDiagnostics",
+    "node scoped observer tests"
+  ],
+  "checks": {
+    "observerTests": "6/6pass",
+    "syntax": "exit0",
+    "preflight": "runtimeexit0",
+    "frozenPins": 652,
+    "preservationAllExact": true,
+    "build": "reusedexact500stage/build corepins no rebuild",
+    "errors": 0,
+    "requestFailures": 0
+  },
+  "actual": {
+    "map": "delta",
+    "mode": "twohumanOnline1v1 local",
+    "viewport": [
+      1920,
+      1080
+    ],
+    "DPR": 1,
+    "zoom": 1.68,
+    "browser": "151.0.7922.34",
+    "preparationMs": 193761,
+    "profileMs": 60900,
+    "samples": 55,
+    "totalLivingRange": [
+      100,
+      100
+    ],
+    "perSideLiving": [
+      50,
+      50
+    ],
+    "metrics": [
+      {
+        "side": 0,
+        "renderFrameCostMs": {
+          "n": 55,
+          "p50": 3.2000000029802322,
+          "p95": 3.5,
+          "max": 4.0999999940395355
+        },
+        "passiveRAFIntervalMs": {
+          "n": 3419,
+          "p50": 16.699999999982538,
+          "p95": 33.20000000001164,
+          "max": 83.39999999999418
+        },
+        "pingMs": {
+          "n": 55,
+          "p50": 14.200000002980232,
+          "p95": 52.600000001490116,
+          "max": 84.5
+        },
+        "fogDisplayedEntitiesRange": [
+          54,
+          54
+        ],
+        "fogLivingUnitsRange": [
+          50,
+          50
+        ],
+        "successfulRasterDrawRange": [
+          54,
+          54
+        ]
+      },
+      {
+        "side": 1,
+        "renderFrameCostMs": {
+          "n": 55,
+          "p50": 3.2999999970197678,
+          "p95": 3.5999999940395355,
+          "max": 4.9000000059604645
+        },
+        "passiveRAFIntervalMs": {
+          "n": 3338,
+          "p50": 16.699999999982538,
+          "p95": 33.29999999998836,
+          "max": 33.40000000002328
+        },
+        "pingMs": {
+          "n": 55,
+          "p50": 14.700000002980232,
+          "p95": 56.399999998509884,
+          "max": 88.10000000149012
+        },
+        "fogDisplayedEntitiesRange": [
+          54,
+          54
+        ],
+        "fogLivingUnitsRange": [
+          50,
+          50
+        ],
+        "successfulRasterDrawRange": [
+          54,
+          54
+        ]
+      }
+    ]
+  },
+  "sourceDiagnosedCause": {
+    "evidence": "shared/sim.js303 completesqueuehead and shifts it;173-176append requested production. Actual504 fullqueue observations show prefixcompletion+append retainslength, so500/503 queuegrowth-only wait can miss acceptedorders",
+    "actualExamples": 5,
+    "example": {
+      "side": 1,
+      "kind": "train-observation",
+      "building": 21,
+      "type": "infantry",
+      "sentAt": 1791869800063,
+      "before": {
+        "tick": 2624,
+        "queue": [
+          {
+            "unit": "infantry",
+            "remaining": 0.2500000000000067,
+            "total": 9
+          }
+        ],
+        "resources": {
+          "wood": 610,
+          "food": 988.9097280000833,
+          "iron": 500
+        },
+        "population": 36,
+        "allQueues": [
+          {
+            "id": 18,
+            "queue": [
+              {
+                "unit": "villager",
+                "remaining": 6.0000000000000036,
+                "total": 7
+              }
+            ]
+          },
+          {
+            "id": 19,
+            "queue": []
+          },
+          {
+            "id": 20,
+            "queue": []
+          },
+          {
+            "id": 21,
+            "queue": [
+              {
+                "unit": "infantry",
+                "remaining": 0.2500000000000067,
+                "total": 9
+              }
+            ]
+          }
+        ],
+        "units": [
+          {
+            "id": 22,
+            "type": "king",
+            "x": 56.5,
+            "y": 25
+          },
+          {
+            "id": 23,
+            "type": "general",
+            "x": 53,
+            "y": 25.5
+          },
+          {
+            "id": 24,
+            "type": "villager",
+            "x": 55.389657129318806,
+            "y": 17.074246212024587
+          },
+          {
+            "id": 25,
+            "type": "villager",
+            "x": 54.5,
+            "y": 20.671544413415095
+          },
+          {
+            "id": 26,
+            "type": "villager",
+            "x": 52.7445367798479,
+            "y": 20.22404499980521
+          },
+          {
+            "id": 27,
+            "type": "villager",
+            "x": 53.44579454758912,
+            "y": 17.401336471466838
+          },
+          {
+            "id": 28,
+            "type": "villager",
+            "x": 58.5,
+            "y": 22.58674971701009
+          },
+          {
+            "id": 29,
+            "type": "villager",
+            "x": 50.5,
+            "y": 26.782484360532205
+          },
+          {
+            "id": 30,
+            "type": "infantry",
+            "x": 48.5,
+            "y": 23.5
+          },
+          {
+            "id": 31,
+            "type": "infantry",
+            "x": 48.5,
+            "y": 24.15
+          },
+          {
+            "id": 32,
+            "type": "infantry",
+            "x": 48.5,
+            "y": 24.8
+          },
+          {
+            "id": 33,
+            "type": "spearman",
+            "x": 48.5,
+            "y": 25.45
+          },
+          {
+            "id": 34,
+            "type": "wagon",
+            "x": 51.5,
+            "y": 30.5
+          },
+          {
+            "id": 36,
+            "type": "villager",
+            "x": 53.517983235528966,
+            "y": 19.53312377844656
+          },
+          {
+            "id": 38,
+            "type": "infantry",
+            "x": 49.5,
+            "y": 19.5
+          },
+          {
+            "id": 40,
+            "type": "villager",
+            "x": 53.34291209673232,
+            "y": 20.16236557685913
+          },
+          {
+            "id": 43,
+            "type": "infantry",
+            "x": 50.5,
+            "y": 19.5
+          },
+          {
+            "id": 44,
+            "type": "villager",
+            "x": 55,
+            "y": 17.533283362405577
+          },
+          {
+            "id": 47,
+            "type": "infantry",
+            "x": 51.5,
+            "y": 19.5
+          },
+          {
+            "id": 48,
+            "type": "villager",
+            "x": 54.289033039090434,
+            "y": 17.733562368340564
+          },
+          {
+            "id": 51,
+            "type": "infantry",
+            "x": 49.5,
+            "y": 20.5
+          },
+          {
+            "id": 52,
+            "type": "villager",
+            "x": 57.58538350961416,
+            "y": 22.11112720076454
+          },
+          {
+            "id": 55,
+            "type": "infantry",
+            "x": 51.5,
+            "y": 20.5
+          },
+          {
+            "id": 56,
+            "type": "villager",
+            "x": 51.37714951463101,
+            "y": 27.089440127298754
+          },
+          {
+            "id": 59,
+            "type": "infantry",
+            "x": 49.5,
+            "y": 21.5
+          },
+          {
+            "id": 60,
+            "type": "villager",
+            "x": 54.59797190889355,
+            "y": 18.56676426649539
+          },
+          {
+            "id": 63,
+            "type": "infantry",
+            "x": 50.5,
+            "y": 21.5
+          },
+          {
+            "id": 64,
+            "type": "villager",
+            "x": 53.73318809300785,
+            "y": 18.733188093007843
+          },
+          {
+            "id": 67,
+            "type": "infantry",
+            "x": 51.5,
+            "y": 21.5
+          },
+          {
+            "id": 68,
+            "type": "villager",
+            "x": 53.693761959329144,
+            "y": 21.00293859488674
+          },
+          {
+            "id": 71,
+            "type": "infantry",
+            "x": 48.5,
+            "y": 18.5
+          },
+          {
+            "id": 72,
+            "type": "villager",
+            "x": 53.5,
+            "y": 16.840000000000003
+          },
+          {
+            "id": 74,
+            "type": "infantry",
+            "x": 49.5,
+            "y": 18.5
+          },
+          {
+            "id": 76,
+            "type": "villager",
+            "x": 56.708205829612055,
+            "y": 20.709196572753388
+          },
+          {
+            "id": 78,
+            "type": "infantry",
+            "x": 50.5,
+            "y": 18.5
+          },
+          {
+            "id": 80,
+            "type": "villager",
+            "x": 55.5,
+            "y": 21.5
+          }
+        ]
+      },
+      "after": [
+        {
+          "tick": 2632,
+          "queue": [],
+          "resources": {
+            "wood": 610,
+            "food": 988.6845120000837,
+            "iron": 520
+          },
+          "population": 37,
+          "allQueues": [
+            {
+              "id": 18,
+              "queue": [
+                {
+                  "unit": "villager",
+                  "remaining": 5.600000000000005,
+                  "total": 7
+                }
+              ]
+            },
+            {
+              "id": 19,
+              "queue": []
+            },
+            {
+              "id": 20,
+              "queue": []
+            },
+            {
+              "id": 21,
+              "queue": []
+            }
+          ],
+          "units": [
+            {
+              "id": 22,
+              "type": "king",
+              "x": 56.5,
+              "y": 25
+            },
+            {
+              "id": 23,
+              "type": "general",
+              "x": 53,
+              "y": 25.5
+            },
+            {
+              "id": 24,
+              "type": "villager",
+              "x": 55.58298552513907,
+              "y": 17.682502701152064
+            },
+            {
+              "id": 25,
+              "type": "villager",
+              "x": 54.027330521803776,
+              "y": 20.027330521803787
+            },
+            {
+              "id": 26,
+              "type": "villager",
+              "x": 52.72469772269765,
+              "y": 19.384279311168562
+            },
+            {
+              "id": 27,
+              "type": "villager",
+              "x": 53.44579454758912,
+              "y": 17.401336471466838
+            },
+            {
+              "id": 28,
+              "type": "villager",
+              "x": 58.5,
+              "y": 22.69174971701009
+            },
+            {
+              "id": 29,
+              "type": "villager",
+              "x": 50.5,
+              "y": 26.782484360532205
+            },
+            {
+              "id": 30,
+              "type": "infantry",
+              "x": 48.5,
+              "y": 23.5
+            },
+            {
+              "id": 31,
+              "type": "infantry",
+              "x": 48.5,
+              "y": 24.15
+            },
+            {
+              "id": 32,
+              "type": "infantry",
+              "x": 48.5,
+              "y": 24.8
+            },
+            {
+              "id": 33,
+              "type": "spearman",
+              "x": 48.5,
+              "y": 25.45
+            },
+            {
+              "id": 34,
+              "type": "wagon",
+              "x": 51.5,
+              "y": 30.5
+            },
+            {
+              "id": 36,
+              "type": "villager",
+              "x": 53.517983235528966,
+              "y": 19.53312377844656
+            },
+            {
+              "id": 38,
+              "type": "infantry",
+              "x": 49.5,
+              "y": 19.5
+            },
+            {
+              "id": 40,
+              "type": "villager",
+              "x": 53.44791209673232,
+              "y": 20.16236557685913
+            },
+            {
+              "id": 43,
+              "type": "infantry",
+              "x": 50.5,
+              "y": 19.5
+            },
+            {
+              "id": 44,
+              "type": "villager",
+              "x": 55.2639511968611,
+              "y": 18.263951196861097
+            },
+            {
+              "id": 47,
+              "type": "infantry",
+              "x": 51.5,
+              "y": 19.5
+            },
+            {
+              "id": 48,
+              "type": "villager",
+              "x": 54.289033039090434,
+              "y": 17.733562368340564
+            },
+            {
+              "id": 51,
+              "type": "infantry",
+              "x": 49.5,
+              "y": 20.5
+            },
+            {
+              "id": 52,
+              "type": "villager",
+              "x": 57.58538350961416,
+              "y": 22.11112720076454
+            },
+            {
+              "id": 55,
+              "type": "infantry",
+              "x": 51.5,
+              "y": 20.5
+            },
+            {
+              "id": 56,
+              "type": "villager",
+              "x": 51.37714951463101,
+              "y": 27.089440127298754
+            },
+            {
+              "id": 59,
+              "type": "infantry",
+              "x": 49.5,
+              "y": 21.5
+            },
+            {
+              "id": 60,
+              "type": "villager",
+              "x": 54.59797190889355,
+              "y": 18.56676426649539
+            },
+            {
+              "id": 63,
+              "type": "infantry",
+              "x": 50.5,
+              "y": 21.5
+            },
+            {
+              "id": 64,
+              "type": "villager",
+              "x": 54.32715778920455,
+              "y": 19.327157789204545
+            },
+            {
+              "id": 67,
+              "type": "infantry",
+              "x": 51.5,
+              "y": 21.5
+            },
+            {
+              "id": 68,
+              "type": "villager",
+              "x": 54.08452169485117,
+              "y": 20.850744180373194
+            },
+            {
+              "id": 71,
+              "type": "infantry",
+              "x": 48.5,
+              "y": 18.5
+            },
+            {
+              "id": 72,
+              "type": "villager",
+              "x": 53.5,
+              "y": 16.840000000000003
+            },
+            {
+              "id": 74,
+              "type": "infantry",
+              "x": 49.5,
+              "y": 18.5
+            },
+            {
+              "id": 76,
+              "type": "villager",
+              "x": 57.53453664081509,
+              "y": 20.558274770297636
+            },
+            {
+              "id": 78,
+              "type": "infantry",
+              "x": 50.5,
+              "y": 18.5
+            },
+            {
+              "id": 80,
+              "type": "villager",
+              "x": 55.5,
+              "y": 21.5
+            },
+            {
+              "id": 82,
+              "type": "infantry",
+              "x": 51.5,
+              "y": 18.5
+            }
+          ]
+        },
+        {
+          "tick": 2636,
+          "queue": [
+            {
+              "unit": "infantry",
+              "remaining": 8.799999999999997,
+              "total": 9
+            }
+          ],
+          "resources": {
+            "wood": 585,
+            "food": 947.6644160000835,
+            "iron": 505
+          },
+          "population": 37,
+          "allQueues": [
+            {
+              "id": 18,
+              "queue": [
+                {
+                  "unit": "villager",
+                  "remaining": 5.400000000000006,
+                  "total": 7
+                }
+              ]
+            },
+            {
+              "id": 19,
+              "queue": []
+            },
+            {
+              "id": 20,
+              "queue": []
+            },
+            {
+              "id": 21,
+              "queue": [
+                {
+                  "unit": "infantry",
+                  "remaining": 8.799999999999997,
+                  "total": 9
+                }
+              ]
+            }
+          ],
+          "units": [
+            {
+              "id": 22,
+              "type": "king",
+              "x": 56.5,
+              "y": 25
+            },
+            {
+              "id": 23,
+              "type": "general",
+              "x": 53,
+              "y": 25.5
+            },
+            {
+              "id": 24,
+              "type": "villager",
+              "x": 55.22203503302831,
+              "y": 17.610841780525973
+            },
+            {
+              "id": 25,
+              "type": "villager",
+              "x": 54.150923818840674,
+              "y": 19.95504782673567
+            },
+            {
+              "id": 26,
+              "type": "villager",
+              "x": 52.72218261140548,
+              "y": 19.277817388594524
+            },
+            {
+              "id": 27,
+              "type": "villager",
+              "x": 53.44579454758912,
+              "y": 17.401336471466838
+            },
+            {
+              "id": 28,
+              "type": "villager",
+              "x": 58.5,
+              "y": 23.111749717010092
+            },
+            {
+              "id": 29,
+              "type": "villager",
+              "x": 50.5,
+              "y": 26.782484360532205
+            },
+            {
+              "id": 30,
+              "type": "infantry",
+              "x": 48.5,
+              "y": 23.5
+            },
+            {
+              "id": 31,
+              "type": "infantry",
+              "x": 48.5,
+              "y": 24.15
+            },
+            {
+              "id": 32,
+              "type": "infantry",
+              "x": 48.5,
+              "y": 24.8
+            },
+            {
+              "id": 33,
+              "type": "spearman",
+              "x": 48.5,
+              "y": 25.45
+            },
+            {
+              "id": 34,
+              "type": "wagon",
+              "x": 51.5,
+              "y": 30.5
+            },
+            {
+              "id": 36,
+              "type": "villager",
+              "x": 53.517983235528966,
+              "y": 19.53312377844656
+            },
+            {
+              "id": 38,
+              "type": "infantry",
+              "x": 49.5,
+              "y": 19.5
+            },
+            {
+              "id": 40,
+              "type": "villager",
+              "x": 53.44791209673232,
+              "y": 20.16236557685913
+            },
+            {
+              "id": 43,
+              "type": "infantry",
+              "x": 50.5,
+              "y": 19.5
+            },
+            {
+              "id": 44,
+              "type": "villager",
+              "x": 55.43906395504055,
+              "y": 18.56093604495945
+            },
+            {
+              "id": 47,
+              "type": "infantry",
+              "x": 51.5,
+              "y": 19.5
+            },
+            {
+              "id": 48,
+              "type": "villager",
+              "x": 54.289033039090434,
+              "y": 17.733562368340564
+            },
+            {
+              "id": 51,
+              "type": "infantry",
+              "x": 49.5,
+              "y": 20.5
+            },
+            {
+              "id": 52,
+              "type": "villager",
+              "x": 57.58538350961416,
+              "y": 22.11112720076454
+            },
+            {
+              "id": 55,
+              "type": "infantry",
+              "x": 51.5,
+              "y": 20.5
+            },
+            {
+              "id": 56,
+              "type": "villager",
+              "x": 51.37714951463101,
+              "y": 27.089440127298754
+            },
+            {
+              "id": 59,
+              "type": "infantry",
+              "x": 49.5,
+              "y": 21.5
+            },
+            {
+              "id": 60,
+              "type": "villager",
+              "x": 54.59797190889355,
+              "y": 18.56676426649539
+            },
+            {
+              "id": 63,
+              "type": "infantry",
+              "x": 50.5,
+              "y": 21.5
+            },
+            {
+              "id": 64,
+              "type": "villager",
+              "x": 54.67556420134252,
+              "y": 19.5
+            },
+            {
+              "id": 67,
+              "type": "infantry",
+              "x": 51.5,
+              "y": 21.5
+            },
+            {
+              "id": 68,
+              "type": "villager",
+              "x": 54.479790239809304,
+              "y": 20.992739875261012
+            },
+            {
+              "id": 71,
+              "type": "infantry",
+              "x": 48.5,
+              "y": 18.5
+            },
+            {
+              "id": 72,
+              "type": "villager",
+              "x": 53.5,
+              "y": 16.840000000000003
+            },
+            {
+              "id": 74,
+              "type": "infantry",
+              "x": 49.5,
+              "y": 18.5
+            },
+            {
+              "id": 76,
+              "type": "villager",
+              "x": 57.94770204641661,
+              "y": 20.48281386906976
+            },
+            {
+              "id": 78,
+              "type": "infantry",
+              "x": 50.5,
+              "y": 18.5
+            },
+            {
+              "id": 80,
+              "type": "villager",
+              "x": 55.5,
+              "y": 21.5
+            },
+            {
+              "id": 82,
+              "type": "infantry",
+              "x": 51.5,
+              "y": 18.5
+            }
+          ]
+        }
+      ],
+      "cost": {
+        "wood": 25,
+        "food": 40,
+        "iron": 15
+      },
+      "result": {
+        "status": "ACCEPTED_QUEUE",
+        "removed": 1,
+        "added": {
+          "unit": "infantry",
+          "remaining": 8.799999999999997,
+          "total": 9
+        }
+      },
+      "wire": [
+        {
+          "at": 1791869800226,
+          "message": {
+            "type": "command",
+            "command": {
+              "type": "train",
+              "building": 21,
+              "unit": "infantry"
+            }
+          }
+        }
+      ]
+    },
+    "limitation": "503 lackedfullqueuebeforeafter so its exacthistoricaltimeout cause remainsINFERRED not conclusivelyproved"
+  },
+  "observer": {
+    "accepted": 74,
+    "rejected": 0,
+    "queueCompletionPrefixObserved": 5,
+    "spawnAlone": "never accepts; IDs/types retained diagnosisonly",
+    "outbound": "ordinaryUI commands passivelyread, no injection",
+    "ambiguity": "sameunit reset witholdremaining<total mayalso satisfy removed0 ifremaining decreases; still proves freshappendedentry fromlength/resetpattern, not globalspawn"
+  },
+  "cleanup": [
+    {
+      "side": 0,
+      "menuVisible": true,
+      "tick": null,
+      "paused": false
+    },
+    {
+      "side": 1,
+      "menuVisible": true,
+      "tick": null,
+      "paused": false
+    }
+  ],
+  "handles": {
+    "browserConnected": false,
+    "serverListening": false,
+    "rooms": 0
+  },
+  "counts": {
+    "trials": 1,
+    "retries": 0,
+    "gameSourceChanges": 0,
+    "stateCommandInjection": 0
+  },
+  "limitations": [
+    "100TOTAL separatefog views, not100denseviewport",
+    "rasterdrawcounter mayincludeoffcanvas; exactviewportdensityUNKNOWN",
+    "headlesshost notordinarylaptopGPU/fullroster/finalpublic/WAN",
+    "no sampledserverCPU/networkbytes qualification"
+  ],
+  "acceptance": {
+    "local100total60s": "VERIFIED",
+    "GPU": "UNKNOWN",
+    "denseViewport100": "UNKNOWN",
+    "fullRoster": "UNKNOWN",
+    "publicWAN": "UNKNOWN",
+    "fullGoal": "OPEN"
+  },
+  "nextDependency": "Rootreview observer/metrics; largerdense/fullroster/performance/public gates remain",
+  "outputs": [
+    {
+      "path": "docs/qa/online-profile-504/assignment.json",
+      "sha256": "091458010c49e8f2e381f7dd88db2393346880245cb7fde7e17a929ae0f74442"
+    },
+    {
+      "path": "docs/qa/online-profile-504/config.json",
+      "sha256": "70263e4eaab07c371de2e34c7cd622fc821eaae2bfa9cc1e0cc535e6bf857aa6"
+    },
+    {
+      "path": "docs/qa/online-profile-504/final-side0.png",
+      "sha256": "83a0ede492669603d6807ad7cc2778dce5f6582cf75f7ff0f50aefa980467fbb"
+    },
+    {
+      "path": "docs/qa/online-profile-504/final-side1.png",
+      "sha256": "df60df38b44ab03aa77df1a1aed15abb5d393b6132ebd753a956a9f1b285dbdf"
+    },
+    {
+      "path": "docs/qa/online-profile-504/inputs.json",
+      "sha256": "9a6a87f5228852d1f2b8e2c6dc71a98f954e7c7607acfbc1c9fac715365ce9e5"
+    },
+    {
+      "path": "docs/qa/online-profile-504/live-handles.json",
+      "sha256": "dfb646af4bfb5b2749f988743e34e1fa92d44caa455da9287e3e1fc64ef142f9"
+    },
+    {
+      "path": "docs/qa/online-profile-504/metrics.json",
+      "sha256": "e188953f055ea5ddb1994f9f16a876f3d6c4ecd995ce40dd4fdbe4efe2486fb3"
+    },
+    {
+      "path": "docs/qa/online-profile-504/preflight.json",
+      "sha256": "67bb03e165e0c779a2de456a46270e9cc8afc45feee48e36ae64394c785d29c9"
+    },
+    {
+      "path": "docs/qa/online-profile-504/receipt.json",
+      "sha256": "142b5f89912f5c277ed3c2c98db8533b56445ab7d1f5c837224da28f8317ec3d"
+    },
+    {
+      "path": "docs/qa/online-profile-504/run.log",
+      "sha256": "050f4580e9b39396fbea64d8a039c6485b0ed76076f062f66b277ca8366f9cda"
+    },
+    {
+      "path": "docs/qa/online-profile-504/tests.log",
+      "sha256": "7ea17338142eb7498f07314d2ff9a014e0609b0cadb7d8405f4cf17cb55e3d07"
+    },
+    {
+      "path": "scripts/qa/online-profile504.mjs",
+      "sha256": "ce7126ddbe022a2496fd8adeab35aad45e21bf342f123e333e48f2a21da9c899"
+    },
+    {
+      "path": "scripts/qa/train-observation504.mjs",
+      "sha256": "f2a3b921eda740966c7f0a7b820d357be4ea6b950b2bfbb26671a5e80902e238"
+    },
+    {
+      "path": "tests/train-observation504.test.js",
+      "sha256": "756e79704ede52f7e7edce895ba785494458b97b46f7bc33ded6190b8287ecdd"
+    }
+  ]
+}

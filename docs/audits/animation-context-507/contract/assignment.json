@@ -1,0 +1,44 @@
+{
+  "schema": "rds-agent-task/v1",
+  "id": "key-study-contract507",
+  "status": "ACTIVE",
+  "purpose": "Add bounded one-image four-key study to existing prepareOrder/runner without selecting frames",
+  "worker": {
+    "id": "/root/blender_export499",
+    "role": "WORKER",
+    "model": "gpt-6.1-sol",
+    "reasoningEffort": "low"
+  },
+  "outputs": [
+    "scripts/sprite-key-study.mjs",
+    "scripts/sprite-prompts.mjs",
+    "docs/art/pipeline/unit-production/templates/key_study.txt",
+    "tests/sprite-key-study.test.js",
+    "docs/audits/animation-context-507/contract"
+  ],
+  "slots": [],
+  "inputs": [
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "225d9c16f9db5c4fbe941c93053fbcb958b1672824043b757b58ebb4f41b8569"
+    },
+    {
+      "path": "docs/audits/continuation-504/root/IMAGE_ANIMATION_DECISION.md",
+      "sha256": "03aa5b3cf1068bd97a78eb5f8f4f2ee834ec6b05772a44ae62ae9ba631d6d1ea"
+    },
+    {
+      "path": "scripts/sprite-prompts.mjs",
+      "sha256": "6e0dcf805f489c0f3853b6d6f1640377f523ff8165604030320d4ee811163c1e"
+    },
+    {
+      "path": "scripts/sprite-order-run.mjs",
+      "sha256": "8436a7eedbe2d4a0dac8634bfcc9e7ad27a365e8862771ef230b9cfc47eb5d90"
+    },
+    {
+      "path": "scripts/agent-task-contract.mjs",
+      "sha256": "85391ab4ea0058a52b3462ef1bbf88f0e81bb2d373a7cff7f6bc4ff3e3d3e0b9"
+    }
+  ],
+  "allowedOperations": "Code/tests only. No generation, ledger/identity/source mutation or production. Separate study provider request from four candidate visual cells. Legacy guards unchanged.",
+  "acceptance": "Scoped source and targeted evidence, no art/motion/production acceptance from helper checks"
+}

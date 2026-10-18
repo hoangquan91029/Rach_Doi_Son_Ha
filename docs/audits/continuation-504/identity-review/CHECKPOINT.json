@@ -1,0 +1,90 @@
+{
+  "schema": "rds-task-receipt/v1",
+  "taskId": "villager-review504",
+  "evidence": "VERIFIED_OBSERVATION_WITH_INFERRED_CONSTRAINTS",
+  "purpose": "Independent original macro appearance/projection review and input constraints for new neutral model",
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "52cda32fd631f5cde21b0f861d7cd50db4e8948f8d7475f052e8086c0b149c8b",
+      "actual": "52cda32fd631f5cde21b0f861d7cd50db4e8948f8d7475f052e8086c0b149c8b"
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "225d9c16f9db5c4fbe941c93053fbcb958b1672824043b757b58ebb4f41b8569",
+      "actual": "225d9c16f9db5c4fbe941c93053fbcb958b1672824043b757b58ebb4f41b8569"
+    },
+    {
+      "path": "docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+      "actual": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94"
+    },
+    {
+      "path": "docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+      "actual": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-501/CHECKPOINT.json",
+      "sha256": "b1cc9cf46dc56f03cfbb7d8c311f93ab7dd4dbc22d510f68bc3b557bf09fef9a",
+      "actual": "b1cc9cf46dc56f03cfbb7d8c311f93ab7dd4dbc22d510f68bc3b557bf09fef9a"
+    },
+    {
+      "path": "scripts/blender/villager501.py",
+      "sha256": "07c72ae11bc3386ea63252018fc1960810345927b20e55351f59bbe6e7466492",
+      "actual": "07c72ae11bc3386ea63252018fc1960810345927b20e55351f59bbe6e7466492"
+    },
+    {
+      "path": "docs/audits/blender-runtime-500/capability/CHECKPOINT.json",
+      "sha256": "5c0e3540553cf4d509a74953e59d8968d251e031581edb03fdb114ba79f4eea7",
+      "actual": "5c0e3540553cf4d509a74953e59d8968d251e031581edb03fdb114ba79f4eea7"
+    },
+    {
+      "path": "docs/audits/blender-transition-499/identity/SOURCE_BINDINGS.json",
+      "sha256": "4456182c39530209f479b687d77d355c70a1c0cac3bf3858882a19c258f641b4",
+      "actual": "4456182c39530209f479b687d77d355c70a1c0cac3bf3858882a19c258f641b4"
+    }
+  ],
+  "observed": [
+    "originalD0 raw",
+    "originalD1 raw",
+    "501initial71pxcomparison",
+    "501corrected71pxcomparison"
+  ],
+  "method": "view_image actualfiles once; PIL dimensions/alpha bbox only; coarsehandlandmarks \u00b125px",
+  "outputs": {
+    "docs/audits/continuation-504/identity-review/CONSTRAINTS.json": "3c76ea01e2ff43ef5cfc6c7aa2c7a9ceba6468944bb108a77706558d977a79a6",
+    "docs/audits/continuation-504/identity-review/REVIEW.md": "93862ea8eaff1bd6c409c3b2bd263b9849c1fd1be70a2e7bc53d4eab7a1aef5c",
+    "docs/audits/continuation-504/identity-review/inputs.json": "f6741e7106222c32e486931de924b2c6a2bf3b4026810e547894f8242280f2b5",
+    "docs/audits/continuation-504/identity-review/assignment.json": "1e1a4d13f347d1449fba5f5c8d651022ca5ca84d85818adc7ab600225789fffe",
+    "docs/audits/continuation-504/identity-review/preflight.log": "0a768534d57608f3eb5a8b511ba7f5c7d1189891ca42652dfc0df4e9098835c3",
+    "docs/audits/continuation-504/identity-review/mechanism-review.json": "63fbaaef899e4339153da84071a3bcf8ae130df0f19de1a8ccc0f4726e792311",
+    "docs/audits/continuation-504/identity-review/actualappearance-review.json": "cbbf5cc86e7f21089da52157e79480c29dc89768e8e5cf246fb83659679ebe97"
+  },
+  "preflight": "docs/audits/continuation-504/identity-review/preflight.log",
+  "mechanismReview": "COMPLETED_STATIC_FIX_SHADER_LOOKUP_BEFORE_INITIAL_RENDER",
+  "counts": {
+    "renders": 0,
+    "generationCalls": 0,
+    "MCPWrites": 0,
+    "configurationChanges": 0,
+    "authoringEdits": 0
+  },
+  "handles": {
+    "ownedRemaining": []
+  },
+  "acceptance": {
+    "originalMacroConstraints": "INFERRED",
+    "501Appearance": "FAILED_RETAINED",
+    "new504Appearance": "FAILED",
+    "motion": "UNKNOWN",
+    "owner": "UNKNOWN",
+    "release": "UNKNOWN"
+  },
+  "nextDependency": {
+    "status": "PROPOSED_SOURCEQUALITY_GATE",
+    "description": "A source-bound canonicalgarment/head model with actual crossoverVneck/lapel, wrappedwaist/offcenterknot/tails, loose trouser/cuff/sandal volumes and originalreadablehat/face relationship, then realisticillustrated regionappearance. Semantic use of wholeoriginal texture on genuinely matching garmentregions may be researched as a distinct proposal, with coherentgeometry/UVs and originalhash authority; no pixelcutout/billboard/perframefit or isolatedhatparameterretry.",
+    "authorization": "No newcode/render/providercall authorized by this review; root registers newboundedcontrol only if materiallydifferent sourcequality method is concrete."
+  },
+  "actualAppearanceReview": "FAILED_APPEARANCE_NOT_SELECTED"
+}

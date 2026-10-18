@@ -1,0 +1,173 @@
+{
+  "expectedLedgerSHA": "add5f418ea08f33eb7a125a116116e514ba78b36778a921628d3a45f33958d5c",
+  "orderId": "villager-idle-D1-whole523-THREE",
+  "taskId": "illustration-idle523",
+  "receipt": {
+    "schema": "rds-agent-receipt/v1",
+    "taskId": "illustration-idle523",
+    "status": "FOUR_SOURCE_CANDIDATES_TECHNICAL_PREVIEW_VERIFIED_MOTION_RUNTIME_OWNER_OPEN",
+    "purpose": "One newVillagerD1idleaction, originalrestplus3wholebuilt-inframes, finite3/3custody; no closedwalkretry",
+    "checks": [
+      {
+        "command": "python3 scripts/sprite-production.py docs/art/pipeline/villager-idle-523/authoring/compiler-job.json --mode selected",
+        "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+        "method": "EXISTING_SCHEMA2_WHOLE_COMPILER",
+        "state": "VERIFIED",
+        "executed": true,
+        "exitCode": 0,
+        "observation": "Fourwhole1254RGBA sourceframes -> working256/runtime128 independently;264atlas,padding2,fixedfamily;3000msloop; no visualapproval",
+        "evidence": [
+          {
+            "path": "docs/art/pipeline/villager-idle-523/exports/compile.log",
+            "sha256": "357b576c1155a345abd3dae81e7089c7783ce0ca24b42a6be32a82511f4aac61"
+          }
+        ]
+      },
+      {
+        "command": "flock -n /tmp/tn-heavy-gate.lock node scripts/qa/sprite-preview.mjs docs/art/pipeline/villager-idle-523/exports/compiled-selected docs/art/pipeline/villager-idle-523/exports/browser-preview.json",
+        "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+        "method": "ACTUAL_BROWSER_PREVIEW_CONTROLS",
+        "state": "VERIFIED",
+        "executed": true,
+        "exitCode": 0,
+        "observation": "Actualframes0..3 seen atnormal timing,3cycles,PauseResume passes; CSS70.546875px; errors0;7directionsmissing,no substitutes; ownheadlesshandlesclosed",
+        "evidence": [
+          {
+            "path": "docs/art/pipeline/villager-idle-523/exports/browser-preview.json",
+            "sha256": "8ca0e0258630df2e17053559dc6a8bcab8b8584afa5fb86cda5f2f03c3937853"
+          }
+        ]
+      },
+      {
+        "command": "python3 scripts/validate-art-assets.py docs/art/pipeline/villager-idle-523/exports/compiled-selected/manifest.json --output docs/art/pipeline/villager-idle-523/exports/packaging-validation.json",
+        "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+        "method": "ACTUAL_PACKAGING_VALIDATION",
+        "state": "VERIFIED",
+        "executed": true,
+        "exitCode": 0,
+        "observation": "PackagingPASS with retainedlowalpha1borderfringewarnings; strictrelease margin isnotpassed/waived. No rawalpha editing/crop toconceal.",
+        "evidence": [
+          {
+            "path": "docs/art/pipeline/villager-idle-523/exports/packaging-validation.json",
+            "sha256": "8ba1f3c675100c197af8f640782c1d55a9dd12bdcf765c8e5888bb30a1b11289"
+          }
+        ]
+      },
+      {
+        "command": "node module call client/art-assets.js validateManifest on candidatecompiledmanifest",
+        "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+        "method": "ACTUAL_CURRENT_CLIENT_MANIFEST_VALIDATION",
+        "state": "VERIFIED",
+        "executed": true,
+        "exitCode": 0,
+        "observation": "Actualcurrentclient acceptsdescriptorschema/layout; notactualgameinstall orquality",
+        "evidence": [
+          {
+            "path": "docs/art/pipeline/villager-idle-523/exports/client-validation.json",
+            "sha256": "439ea61dcce2af2b8cd1d4e359c2ffbf3a95be8be19836fc870f950da9827366"
+          }
+        ]
+      }
+    ],
+    "technical": {
+      "state": "VERIFIED",
+      "limitation": "Compiler/manifest/packaging/previewcontrols only; no naturalmotion/owner/publicapproval. Lowalpha bordercandidatewarnings retained, strictrelease margin unresolved.",
+      "observation": "Exact originalF0rest and3LunaHighwholeframes mappedto3durableclaims/orderedrefs, allrawmetadata preserved/nullunknown; currentcompiled4frame3sD1idlecandidate",
+      "evidence": [
+        {
+          "path": "docs/art/pipeline/villager-idle-523/authoring/full-worker-CHECKPOINT.json",
+          "sha256": "43418df2b85a882ff5742d9a35a75b8c555a4978465627c62895977c18ac5738"
+        },
+        {
+          "path": "docs/art/pipeline/villager-idle-523/exports/compiled-selected/frame-source-ledger.json",
+          "sha256": "612b95686336ee9f7e9a6376cdad9f28e4db3c7963dfe6d8c534913b8470e412"
+        },
+        {
+          "path": "docs/art/pipeline/villager-idle-523/exports/browser-preview.json",
+          "sha256": "8ca0e0258630df2e17053559dc6a8bcab8b8584afa5fb86cda5f2f03c3937853"
+        }
+      ]
+    },
+    "motion": {
+      "state": "UNKNOWN",
+      "limitation": "Independentstillkeys usable; completeactualcontinuousloop/seam/readablebreath not established by frame counters/stills. No worldfootlock/eightdirectionclaim."
+    },
+    "runtime": {
+      "state": "UNKNOWN",
+      "limitation": "No candidateordinaryUI game scene/install;524source19checks/read-onlyreview areseparatemechanicalevidence."
+    },
+    "owner": {
+      "state": "UNKNOWN",
+      "limitation": "No humanreply to actualidleloop; no approval inferred"
+    },
+    "release": {
+      "state": "UNKNOWN",
+      "limitation": "No canonical/public/dist/deploy change; previouspublicbaseline preserved"
+    },
+    "handles": [
+      {
+        "id": "ac551f7f-db74-441a-ab07-f99c59fa00b4",
+        "status": "CLOSED",
+        "observation": "Actualbuilt-inreturnedraw/toolpath/bytecopy/dimensions+orderedclaimreferenceverified; settledHELDapprovalfalse; no retry/refund. Providerhandleunknownnull notusedtofabricateprovenance."
+      },
+      {
+        "id": "5a865837-6efb-443b-b096-47a96b1807af",
+        "status": "CLOSED",
+        "observation": "Actualbuilt-inreturnedraw/toolpath/bytecopy/dimensions+orderedclaimreferenceverified; settledHELDapprovalfalse; no retry/refund. Providerhandleunknownnull notusedtofabricateprovenance."
+      },
+      {
+        "id": "2741a288-59e0-47d6-8a73-0656ae8b80a1",
+        "status": "CLOSED",
+        "observation": "Actualbuilt-inreturnedraw/toolpath/bytecopy/dimensions+orderedclaimreferenceverified; settledHELDapprovalfalse; no retry/refund. Providerhandleunknownnull notusedtofabricateprovenance."
+      },
+      {
+        "id": "preview45500/port35261",
+        "status": "INTENTIONALLY_RUNNING",
+        "observation": "Rootownedlocalhostreadonlypreviewconfirmedstartedcurrentpsmatch; actualIABURL/AX/screenshot observed, keptforfeedback. BrowserID2unavailable theninventory4actualsameIAB observed; failedunboundJS assignment createdtab, reboundexistingURL no duplicate."
+      }
+    ],
+    "calls": {
+      "initial": 3,
+      "corrections": 0,
+      "retries": 0,
+      "originalStaticReused": 1
+    },
+    "inputs": {
+      "originalD1": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+        "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db",
+        "rgbaSha256": "36a11d8a7af5e649fbb760a17404fd1505d82f3f433b18ea39002497cf0207b6"
+      },
+      "originalD0": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+        "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94",
+        "rgbaSha256": "c960d206222a191b903a8cc1a679e82bdce8d8c51df4010a935f444b3cacdb9c"
+      },
+      "rootGuide": {
+        "path": "docs/art/pipeline/villager-idle-523/authoring/guide-provenance.json",
+        "sha256": "e71162893a77411997aa20ba6dff3f27a6fb24fdfdbc913e193f78226e33eebb"
+      },
+      "selectedEndpoints": {
+        "path": "docs/art/pipeline/villager-idle-523/authoring/job-selected-endpoints.json",
+        "sha256": "167998417205c7d1d0ab6186feb8ec5b3aa717cda9e3932d2ee115cd78d595ac"
+      },
+      "priorLedgerSnapshot": {
+        "path": "docs/art/pipeline/villager-idle-523/orders/ledger-before.json",
+        "sha256": "1da55dd273d89669461c6b039e1e714a253a6a9c4579dead63148ce6f312c94d"
+      }
+    },
+    "failuresPreserved": [
+      {
+        "scope": "reviewF2pin",
+        "error": "Root forgot torepin identityregistration afterinitialplan; initialauditfailed beforedecision",
+        "repair": "Oldsnapshot/failureandidentity-before bytes retained; explicitstageonlyidentityrepin; correctedPASS then actualkeyreview."
+      },
+      {
+        "scope": "IABpreview",
+        "error": "OldbrowserID2unavailable; then undeclaredvariableassignment afterawait createdtab beforebindingerror",
+        "repair": "Actualinventory4sameIAB; boundalreadycreatedURLtab1, screenshot confirmsloop; no duplicatetab/create retry."
+      }
+    ],
+    "nextDependency": "Independentactualbriefloopreview/humanfeedback; no newcalls/corrections/retry/fanout; ordinaryliving-relatedscene afterready. Closedwalk491492509 unaffected.2Residence498 claims consumedUNRESOLVED and priorordersexact."
+  }
+}

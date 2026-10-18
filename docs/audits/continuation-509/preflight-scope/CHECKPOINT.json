@@ -1,0 +1,92 @@
+{
+  "schema": "rds-scoped-preflight509-receipt/v1",
+  "taskId": "scoped-preflight509",
+  "state": "VERIFIED",
+  "outputs": [
+    {
+      "path": "scripts/agent-preflight.mjs",
+      "sha256": "60a93e9f83e1270940e439cac2ee6332e7d8d3d1d09fcaba02e5431bc817ed36"
+    },
+    {
+      "path": "tests/agent-preflight-scope507.test.js",
+      "sha256": "4748dff2d0aa530291c7e6d24e6a954077683b8c11cc58d8aae8fac11dc9a4bf"
+    },
+    {
+      "path": "docs/audits/continuation-509/preflight-scope/preflight-before.json",
+      "sha256": "eb86ee0f21f68f87d4effa14135e8141fa2a32bfa4668ed7da8807e84f119884"
+    },
+    {
+      "path": "docs/audits/continuation-509/preflight-scope/tests.log",
+      "sha256": "1f4b86e76589a0ce7552f25f20837962aa1e23cb818719ec7b16bebce9733379"
+    },
+    {
+      "path": "docs/audits/continuation-509/preflight-scope/default-art-denial.log",
+      "sha256": "20f5ff82db93fc6d34a7b68fbd9de0420c72832183fc02a952081ede73569a26"
+    }
+  ],
+  "inputDrift": [
+    {
+      "path": "AGENTS.md",
+      "matchesOriginal": true,
+      "selfOwnedExpectedChange": false
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "matchesOriginal": true,
+      "selfOwnedExpectedChange": false
+    },
+    {
+      "path": "MASTER_HANDOFF.md",
+      "matchesOriginal": true,
+      "selfOwnedExpectedChange": false
+    },
+    {
+      "path": "scripts/agent-preflight.mjs",
+      "matchesOriginal": false,
+      "selfOwnedExpectedChange": true
+    },
+    {
+      "path": "scripts/agent-task-contract.mjs",
+      "matchesOriginal": true,
+      "selfOwnedExpectedChange": false
+    },
+    {
+      "path": "scripts/sprite-order-run.mjs",
+      "matchesOriginal": true,
+      "selfOwnedExpectedChange": false
+    },
+    {
+      "path": "docs/art/pipeline/unit-production/order-ledger.json",
+      "matchesOriginal": true,
+      "selfOwnedExpectedChange": false
+    }
+  ],
+  "checks": [
+    {
+      "command": "node scripts/agent-preflight.mjs --task audit --source scripts/agent-preflight.mjs --task-id scoped-preflight509 --inputs docs/audits/continuation-509/root/scoped-preflight509-inputs.json",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0,
+      "observation": "Actual registered input snapshot valid before edits"
+    },
+    {
+      "command": "node --test tests/agent-preflight.test.js tests/agent-preflight-scope507.test.js",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0,
+      "observation": "26 tests PASS; isolated negative scope fixtures"
+    },
+    {
+      "command": "node scripts/agent-preflight.mjs --task art --source scripts/agent-preflight.mjs",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 1,
+      "observation": "Default art still denies 2 unresolved498 claims"
+    }
+  ],
+  "imageCalls": 0,
+  "ledgerSHA": "a687d7b292859ff5ef7b973001c2ae1308ec3fcf1023db160ac1f1792d3ce7b4",
+  "handles": [],
+  "limitations": [
+    "Only mechanical read-only preflight; no automatic mandatory hook, permission, provider custody closure, selection or motion proof.",
+    "Actual new image order not registered/called in this task; real scoped art prerequisite remains root responsibility.",
+    "No runtime/public/dist/client/server change."
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "schema": "rds-art-direction-checkpoint/v1",
+  "task": "root-art538",
+  "status": "SCENE_CANDIDATE_VISUAL_HOLD_OWNER_PENDING",
+  "latestHumanScope": [
+    "realistic pixel2.5D based on supplied material-culture dossier",
+    "native128RGBA one-to-one default zoom1, about84px human body",
+    "scene-first owner approval before animation"
+  ],
+  "preservation": {
+    "ref": "refs/checkpoints/art-rebuild-538-before",
+    "commit": "2bbca40456610a6f067c1b7a276469663d9454d7",
+    "head": "1c7097fc80f94fc87f2fdc97d355e414601c37a4"
+  },
+  "ownerRejected": {
+    "subject": "Worker537",
+    "status": "OWNER_REJECTED_QUALITY",
+    "preserved": true,
+    "notProductionStandard": true
+  },
+  "historicalBasis": {
+    "attachmentCopy": "docs/audits/art-rebuild-538/root/HUMAN_HISTORICAL_DOSSIER.md",
+    "sha256": "362b34aa4e5e35af43a588eacaed75a2bc828269d1da25273b5959a439eea1c7",
+    "mapping": "docs/audits/art-rebuild-538/references538/DOSSIER_MAPPING.md",
+    "scope": "late17c DangNgoai tawny/brown cotton; exact garment/headcloth/construction PROPOSED"
+  },
+  "outputs": [
+    {
+      "path": "client/art-direction-scene.js",
+      "sha256": "d9c8ddec998a285ee7f6953fe52c0750f68f2ac8e2ea44bd67986f6188ebd4cc"
+    },
+    {
+      "path": "client/art-direction-scene.html",
+      "sha256": "abe655a7686707a23907a7e696a58b655403bfb05d7dce334eae4a6fd2c5a82f"
+    },
+    {
+      "path": "client/art-direction-scene.css",
+      "sha256": "f5927f1c7600abe8dbfc2de4dc7a648ec20c7790fb7052bd5eabb19caa48607f"
+    },
+    {
+      "path": "client/pixel-animation.js",
+      "sha256": "28e740f0d233aa4384ee3c1c6c5b12743d9f78ca1ac87bcbcd28a72b6a179297"
+    },
+    {
+      "path": "client/pixel-sprite-bank.js",
+      "sha256": "171c3a51f8e685fd24c8c264338eb8e7d5c60ddf0e6e5a642f3b227f1cab8b30"
+    },
+    {
+      "path": "client/pixel-sprite-viewer.js",
+      "sha256": "b40d2e8a2f259da39cb81bf09642f92f23212fc5f86cc0d3640e76bfffafc1d2"
+    },
+    {
+      "path": "client/main.js",
+      "sha256": "73277baca600327a003645f232b890a12bf1700f90eee2292af8e9526f905020"
+    },
+    {
+      "path": "client/renderer.js",
+      "sha256": "0d85413e56f945ded1b58c7e0ea4998b1441af9183e02e24f780f953b8ac69d8"
+    },
+    {
+      "path": "client/visual-picking.js",
+      "sha256": "c12ad4d3508848a1f495d6af5923e8b76a343f90ffd4b8f306eff95ada36862f"
+    },
+    {
+      "path": "client/world-presentation.js",
+      "sha256": "de41a63c4883c54e14b85a8a23713d9396bdc96dff56684a5d1e64155d6e4314"
+    },
+    {
+      "path": "vite.config.js",
+      "sha256": "971aff1fd48a4d5e9d56d37f95d5b5ced18e2d8473c6d39bafb4f66f7f401174"
+    },
+    {
+      "path": "docs/art/pixel-village-538/manifest.json",
+      "sha256": "66e556593075bbeac715ead9f52575ca55c016f338956e3797f62b6ead286a2e"
+    }
+  ],
+  "art": {
+    "method": "native-raster",
+    "providerCalls": 0,
+    "callTokens": null,
+    "stills": 3,
+    "directions": [
+      "S",
+      "SE",
+      "N"
+    ],
+    "animationFrames": 0,
+    "atlasProduced": false,
+    "approvedRegistryModified": false,
+    "sourcePackage": "docs/art/pixel-village-538",
+    "retainedVersion": "docs/art/pixel-village-538/versions/review-1",
+    "nativeChecks": {
+      "scope": "THREE_STILLS_ONLY_NOT_ANIMATION",
+      "checks": [
+        {
+          "view": "S",
+          "size": [
+            128,
+            128
+          ],
+          "bodyBounds": [
+            45,
+            28,
+            85,
+            113
+          ],
+          "colors": 21,
+          "binaryAlpha": true,
+          "recipeReproducesPixels": true
+        },
+        {
+          "view": "SE",
+          "size": [
+            128,
+            128
+          ],
+          "bodyBounds": [
+            48,
+            28,
+            82,
+            114
+          ],
+          "colors": 20,
+          "binaryAlpha": true,
+          "recipeReproducesPixels": true
+        },
+        {
+          "view": "N",
+          "size": [
+            128,
+            128
+          ],
+          "bodyBounds": [
+            44,
+            28,
+            85,
+            113
+          ],
+          "colors": 17,
+          "binaryAlpha": true,
+          "recipeReproducesPixels": true
+        }
+      ],
+      "distinct": 3,
+      "noMirrorPair": true,
+      "provenanceHashesMatch": true,
+      "publicCopiesMatch": true,
+      "protectedHistoricalFilesUnchanged": 17,
+      "providerCalls": 0,
+      "visual": "HOLD_INDEPENDENT_REVIEW",
+      "owner": "PENDING"
+    },
+    "independentReview": {
+      "first": "docs/audits/art-rebuild-538/references538/STILL_REVIEW.json",
+      "targetedRevision": "docs/audits/art-rebuild-538/references538/STILL_REVISION_2.json",
+      "verdict": "HOLD",
+      "observations": "Roof fibres improved/window simplified/SE head slight improvement; stiff body and elevated camera consistency remain unqualified"
+    }
+  },
+  "verification": {
+    "sourceTests": {
+      "status": "PASS",
+      "count": 33,
+      "log": "docs/audits/art-rebuild-538/root/focused-tests-final.log"
+    },
+    "independentCode": "docs/audits/art-rebuild-538/code-review538/CHECKPOINT.json",
+    "browser": {
+      "status": "SCOPED_STATIC_SCENE_AND_INFRASTRUCTURE_PASS",
+      "evidence": "docs/audits/art-rebuild-538/root/runtime/receipt.json",
+      "updatedStills": "docs/audits/art-rebuild-538/root/runtime/final-stills.json",
+      "scope": "Private Chromium and Firefox1366x768/1920x1080, still UI/menu/zoom; ordinary actual empty-bank viewer, SPDelta startup defaultzoom1, Pause/Resume/menu only"
+    },
+    "build": {
+      "scope": "ISOLATED_STAGE_ONLY",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/audits/art-rebuild-538/root/runtime/stage",
+      "config": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/audits/art-rebuild-538/root/runtime/stage/vite.config.mjs",
+      "outDir": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/audits/art-rebuild-538/root/runtime/build",
+      "log": "docs/audits/art-rebuild-538/root/runtime/build-final.log"
+    },
+    "retainedErrors": [
+      "docs/audits/art-rebuild-538/root/runtime/prelaunch-error.json",
+      "docs/audits/art-rebuild-538/root/runtime/receipt-first.json",
+      "docs/audits/art-rebuild-538/render538/preflight-first-error.json",
+      "docs/audits/art-rebuild-538/code-review538/CHECKPOINT.json"
+    ]
+  },
+  "handles": {
+    "testBrowserAndGameServers": "CLOSED",
+    "preview": {
+      "url": "http://127.0.0.1:4178/client/art-direction-scene.html",
+      "execSession": 53622,
+      "ownership": "root-art538",
+      "status": "INTENTIONALLY_OPEN_FOR_HUMAN_REVIEW",
+      "kind": "local isolated static Vite preview, no game rooms"
+    }
+  },
+  "acceptance": {
+    "structural": "THREE_STILLS_ONLY_CHECKED",
+    "visual": "HOLD",
+    "motion": "NOT_STARTED",
+    "gameRuntime": "NO_PIXEL_CLIP_QUALIFIED",
+    "owner": "PENDING",
+    "release": "NOT_REQUESTED",
+    "fullProject": "OPEN"
+  },
+  "nextDependency": "Resolve camera/anatomy issues and human scene direction review before any eight-pose S walk or atlas animation. No deployment, automation, claim reset or method retry."
+}

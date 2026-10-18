@@ -1,0 +1,114 @@
+{
+  "identityMasterSHA": "0d0c3963f3faed9341cd09f2ff118a753e9bd1ee431290b51635eebb17b61715",
+  "directionalMasterSHA": "0d0c3963f3faed9341cd09f2ff118a753e9bd1ee431290b51635eebb17b61715",
+  "id": "granary-death-511-candidate",
+  "family": "granary",
+  "kind": "building",
+  "state": "death",
+  "direction": null,
+  "source": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/illustration/F0-raw.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "c853a3340a6e8173f882312a5b69c1f1abb8fc67a4743a39d93e7abce2280815",
+    "rgbaSha256": "7080a6a6a71ea1bc1063bed025b1ad5728839db6a90051ddf95f5af5fff0a993"
+  },
+  "runtime": {
+    "path": "atlas.png",
+    "width": 1032,
+    "height": 1032,
+    "sha256": "6c34e21ce79a4e904dbfda02f1d01b2ccb38a02eed7ee0c7e056c494482ef0c8",
+    "rgbaSha256": "ef9febca5953f6e3c1bb2b4fcc065a6db275bda06aba2b48b70d222515088415",
+    "derivation": {
+      "method": "atlas",
+      "filter": "lanczos",
+      "sourceSha256": "c853a3340a6e8173f882312a5b69c1f1abb8fc67a4743a39d93e7abce2280815"
+    }
+  },
+  "cell": {
+    "width": 512,
+    "height": 512
+  },
+  "pivot": {
+    "x": 640,
+    "y": 1050,
+    "space": "source"
+  },
+  "render": {
+    "width": 85,
+    "height": 85
+  },
+  "contactShadow": {
+    "mode": "baked"
+  },
+  "alphaPolicy": "transparent",
+  "frames": [
+    {
+      "x": 2,
+      "y": 2,
+      "width": 512,
+      "height": 512,
+      "durationMs": 250,
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/illustration/F0-raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "c853a3340a6e8173f882312a5b69c1f1abb8fc67a4743a39d93e7abce2280815",
+        "rgbaSha256": "7080a6a6a71ea1bc1063bed025b1ad5728839db6a90051ddf95f5af5fff0a993"
+      },
+      "events": []
+    },
+    {
+      "x": 518,
+      "y": 2,
+      "width": 512,
+      "height": 512,
+      "durationMs": 250,
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/illustration/F1-raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "b32a1f3cbee740b221c6a59bbd95eb05cf61566352f2a49d80489a27d437d6bd",
+        "rgbaSha256": "65b86f011a80b2b39c5be11f99c077ff63d732aa2fd5c3660890f280aa6f3c42"
+      },
+      "events": []
+    },
+    {
+      "x": 2,
+      "y": 518,
+      "width": 512,
+      "height": 512,
+      "durationMs": 300,
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/illustration/F2-raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "05a7438ba8550214706d7107a83614235e7aff54c8f546cea5c90cf7487f40fa",
+        "rgbaSha256": "5430f1f38073e66ffb2aa8545160bd6aa447a37470f6bff5adec3930dd1392d0"
+      },
+      "events": []
+    },
+    {
+      "x": 518,
+      "y": 518,
+      "width": 512,
+      "height": 512,
+      "durationMs": 800,
+      "source": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/illustration/F3-raw.png",
+        "width": 1254,
+        "height": 1254,
+        "sha256": "e53a36ffe4a52477e2e598f7d4222d4a79ef75e222e09f479cf26159294719e9",
+        "rgbaSha256": "081c8bf225e4288f7121a45e0074fe506408c2cea0ccfd1bf7aeea1ec587945c"
+      },
+      "events": []
+    }
+  ],
+  "candidate": true,
+  "review": {
+    "status": "CANDIDATE"
+  },
+  "loop": false,
+  "loadPolicy": "on-demand",
+  "canonicalDescriptorSHA": "068d25dc8374270fba8a169966f777e2174d7b68a1755fb3615ead431f5a0913"
+}

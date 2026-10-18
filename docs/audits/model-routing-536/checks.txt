@@ -1,0 +1,9 @@
+Observed execution summary (transcribed from tool results, not a raw TAP log):
+node --test tests/agent-task-model507.test.js tests/pixel-dispatch535.test.js tests/agent-preflight-scope507.test.js
+exitCode=0; tests=26; pass=26; fail=0; cancelled=0; skipped=0; todo=0.
+Covered exact Sol/low dispatch, historical Luna audit-only rejection at dispatch, durable pixel claim accounting, stale pins, ownership, lineage and unrelated unresolved claims.
+
+Actual registry validateTaskContracts and root536 validateTaskSnapshot: exitCode=0.
+git diff --check on changed tracked routing files: exitCode=0, no output.
+Ledger SHA unchanged. All prior task worker metadata, input pins, slots and statuses unchanged. Outputs transferred explicitly from root535 to root536.
+No subagent or image call launched. No game build, runtime acceptance or deployment executed.

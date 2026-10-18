@@ -1,0 +1,49 @@
+{
+  "schema": "rds-agent-task/v1",
+  "id": "source-garment506",
+  "status": "ACTIVE",
+  "purpose": "Implement source-quality actualwrappedgarment/head surface and canonicalregionalappearance control, not anotherflatroundedneutralmodel",
+  "worker": {
+    "id": "/root/blender_identity499",
+    "role": "WORKER",
+    "model": "gpt-6.1-sol",
+    "reasoningEffort": "low"
+  },
+  "outputs": [
+    "scripts/blender/villager506.py",
+    "docs/art/pipeline/blender-villager-506"
+  ],
+  "slots": [],
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "07f78b1281e4ae2f54d1f5b7677104ca23a83570739027c1004098f54a997474"
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "225d9c16f9db5c4fbe941c93053fbcb958b1672824043b757b58ebb4f41b8569"
+    },
+    {
+      "path": "scripts/blender/villager504.py",
+      "sha256": "e97cc98b24fa8237028330643a0bbc17eca40f85bfd820367212b751ea7556f8"
+    },
+    {
+      "path": "docs/art/pipeline/blender-villager-504/control.json",
+      "sha256": "9253cbc659f5a0fce2d2606eadef9921bdf985567cc9decf2cef32b88cfae966"
+    },
+    {
+      "path": "docs/audits/continuation-504/identity-review/actualappearance-review.json",
+      "sha256": "cbbf5cc86e7f21089da52157e79480c29dc89768e8e5cf246fb83659679ebe97"
+    },
+    {
+      "path": "docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94"
+    },
+    {
+      "path": "docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+    }
+  ],
+  "allowedOperations": "CODE/CONTROL ONLY, zero renders/build/execution for now. 501globalUV and504plainsemanticlofts HELD/CLOSED; do NOTparametertweak. Materiallydistinct mechanism: actualopenVneck/wrappedoverlappingclothedfront/lapels/waistsash/tunicpanels source-landmarked continuous3Dsurfaces; sample corresponding garment regions fromONEpackedwholecanonicalD1 (D0appearance anchor), stableUV onmatchingactualvolumes and clothlayer boundaries, not flatsemanticcoloredshirt or bodypaintglobalimage. No separate limbtexturefiles/UVcards/cutouts/mirror/fit/PNGwarp. Preserveoriginalheadface/hat silhouette andbroad realisticillustratedsource surface; semantic UV/material useactualsourcefeatures ongarment only. Macro folds notveins/toes/polish. Output candidateauthoringcode/control/sourcepins and mechanismdiff; root independent review before anyfinite render. No rig/walk/fanout/runtime/provider/paidAPI/downloads.",
+  "acceptance": "Actual scoped code/checks/source pins/finite operations; independent root intake; no inferred art/fullgoal PASS."
+}

@@ -1,0 +1,209 @@
+{
+  "schema": "rds-task-receipt/v1",
+  "taskId": "browser-custody510",
+  "status": "VERIFIED_FOCUSED_TESTS_AND_INTENTIONAL_CLOSE_FIXTURE_PENDING_INDEPENDENT_REVIEW",
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "a81895b57e445ae913773fd7bf55049f84d859d407e175de2d106edc4f3c52bd"
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+    },
+    {
+      "path": "scripts/qa/online-profile509.mjs",
+      "sha256": "c6b08911fdd3cd1d6425e13967f25dbeea23b5d8f6e31fafe0c7f8009b34aef9"
+    },
+    {
+      "path": "docs/qa/online-profile-509/CHECKPOINT.json",
+      "sha256": "414bf12dd65b8f29d570b03eb353bba3a6159de71d7d9fa2da813b57b3cb1aac"
+    },
+    {
+      "path": "docs/qa/online-profile-509/closure-diagnosis.json",
+      "sha256": "586df45660aa6a4d3d36eed143418e319f24e37992378ececcac2e3498aa665f"
+    }
+  ],
+  "inputPreservation": [
+    {
+      "path": "AGENTS.md",
+      "unchanged": true
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/qa/online-profile509.mjs",
+      "unchanged": true
+    },
+    {
+      "path": "docs/qa/online-profile-509/CHECKPOINT.json",
+      "unchanged": true
+    },
+    {
+      "path": "docs/qa/online-profile-509/closure-diagnosis.json",
+      "unchanged": true
+    }
+  ],
+  "purpose": "Reusable lifecycle observer before future independently authorized acquisition; no509restart",
+  "tools": {
+    "actualPlaywrightVersion": "1.62.1",
+    "API": "Public BrowserType.launchServer/connect, BrowserServer.process/close/kill, ChildProcess stderr/exit/close/error; browser disconnected/contextclose/pagecrash/pageclose",
+    "sourceEvidence": [
+      "node_modules/playwright-core/types/types.d.ts:17535",
+      "node_modules/playwright-core/types/types.d.ts:20022",
+      "node_modules/playwright-core/lib/coreBundle.js:56864",
+      "node_modules/playwright-core/lib/coreBundle.js:8940"
+    ]
+  },
+  "checks": [
+    {
+      "argv": [
+        "node",
+        "scripts/agent-preflight.mjs",
+        "--task",
+        "runtime",
+        "--source",
+        "scripts/qa/online-profile509.mjs"
+      ],
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0,
+      "log": "docs/qa/browser-custody-510/preflight.json"
+    },
+    {
+      "argv": [
+        "node",
+        "--test",
+        "tests/browser-custody510.test.js"
+      ],
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0,
+      "pass": 3,
+      "fail": 0,
+      "log": "docs/qa/browser-custody-510/tests.log",
+      "observation": "Completed before turn interruption; retained log inspected, no duplicate run"
+    },
+    {
+      "argv": [
+        "node",
+        "--check",
+        "scripts/qa/browser-custody510.mjs"
+      ],
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0
+    },
+    {
+      "argv": [
+        "node",
+        "docs/qa/browser-custody-510/fixture.mjs"
+      ],
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0,
+      "log": "docs/qa/browser-custody-510/fixture.log",
+      "scope": "one aboutblank ownedbrowser launch and intentionalclose only"
+    }
+  ],
+  "fixture": {
+    "browserConnected": false,
+    "pid": 555206,
+    "exitCode": 0,
+    "signalCode": null,
+    "status": {
+      "schema": "rds-browser-custody/v1",
+      "startedUTC": "2026-10-13T10:38:36.998Z",
+      "pid": 555206,
+      "eventCount": 15,
+      "droppedEvents": 0,
+      "stderrBytes": 144,
+      "droppedStderrBytes": 0,
+      "processExit": {
+        "code": 0,
+        "signal": null,
+        "atUTC": "2026-10-13T10:38:37.187Z",
+        "elapsedMs": 188.52266400000002
+      },
+      "processClose": {
+        "code": 0,
+        "signal": null,
+        "atUTC": "2026-10-13T10:38:37.197Z",
+        "elapsedMs": 198.447072
+      },
+      "disconnected": true,
+      "cleanup": [
+        {
+          "scope": "owned-browser-server-close",
+          "atUTC": "2026-10-13T10:38:37.164Z",
+          "elapsedMs": 165.502212
+        }
+      ],
+      "limitation": "stderr/process events observed only after launchServer resolves; markers record intent, not proven cause"
+    }
+  },
+  "limits": [
+    "stderr before launchServer returns is not available; launch failures retain public exception but not child exit signal",
+    "finite256event/262144stderr defaults; dropped counters/status retain processexit even after eventcap",
+    "cleanup marker records intent and relative timing, does not prove root cause",
+    "contexts created using wrapper.newContext are observed; directbrowser.newContext after attachment must explicitly callcustody.observeContext",
+    "stdiofsync writes are bounded and add observation overhead; no performancequalification from fixture",
+    "509browserclose cause remainsUNKNOWN; no gameplay/acquisition/profile/restart executed",
+    "independentreview required before futureuse"
+  ],
+  "calls": {
+    "ownedBrowserFixture": 1,
+    "gameplay": 0,
+    "acquisition": 0,
+    "image": 0,
+    "Blender": 0
+  },
+  "handles": {
+    "pid": 555206,
+    "exitCode": 0,
+    "signalCode": null,
+    "browserConnected": false,
+    "allOwnedClosed": true
+  },
+  "nextDependency": "Root independent SolLow review exact helper/tests then authorize any future acquisition separately; no retroactive509 diagnosis",
+  "outputs": [
+    {
+      "path": "scripts/qa/browser-custody510.mjs",
+      "sha256": "d7d78a3aaa6888a233b8a64274517f0ac615de006b6b6dd79f596d605f0221e6"
+    },
+    {
+      "path": "tests/browser-custody510.test.js",
+      "sha256": "084f4a6d1cb71445f6a24f5be60b96500e3f690995b366b7384de24e24d4b1ec"
+    },
+    {
+      "path": "docs/qa/browser-custody-510/fixture/browser-stderr.bin",
+      "sha256": "12d0c9805786687a01c9a65f5c5a37000caa29a86f26e7a377aa9bfadd561233"
+    },
+    {
+      "path": "docs/qa/browser-custody-510/fixture/lifecycle.jsonl",
+      "sha256": "51ff700969e2daaf6a994911e8cef50bce73cc0089f96ad785a21e3b179f8131"
+    },
+    {
+      "path": "docs/qa/browser-custody-510/fixture/status.json",
+      "sha256": "88b466f4d904821e458860389779cf7e73303663748f098ced8f4f7fceb4641e"
+    },
+    {
+      "path": "docs/qa/browser-custody-510/fixture-result.json",
+      "sha256": "a581b8e988f58263d60c4cf4e8c6bcdc52dcebc928a9a69434653d03777c889a"
+    },
+    {
+      "path": "docs/qa/browser-custody-510/fixture.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qa/browser-custody-510/fixture.mjs",
+      "sha256": "e9226f03e5f10a7aa092125e73f3efa0091828d80055f3c5470f7ca15c15ff80"
+    },
+    {
+      "path": "docs/qa/browser-custody-510/preflight.json",
+      "sha256": "0c167a94fe5786fe08469fb9803146bf36705afbec1b582374a73f7feb221b05"
+    },
+    {
+      "path": "docs/qa/browser-custody-510/tests.log",
+      "sha256": "321b7b169e804256a8beb901ede964fcfb6dc4f0f90dc6ddf3791e47571e762a"
+    }
+  ]
+}

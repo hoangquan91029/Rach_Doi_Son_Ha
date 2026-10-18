@@ -1,0 +1,100 @@
+{
+  "schema": "rds-task-receipt/v1",
+  "taskId": "idle-entry-phase524",
+  "status": "IMPLEMENTED_19_TARGETED_CHECKS_PASS_PENDING_INDEPENDENT_REVIEW",
+  "purpose": "True living unit idle starts neutralF0 from first observedsemanticentry insteadglobalphase",
+  "before": {
+    "path": "docs/qa/idle-entry-phase-524/before.json",
+    "sha256": "b25d0fbe71f8e9a9d259fcb3fe1d892a072566a45e725724b660145e058b514e",
+    "observation": "Pinned prior raster elapsed=timeMs gives F3 atentry2250ms for four750msframes"
+  },
+  "changes": [
+    "createIdleEntryClock uses1024bounded scalar tracks and semanticrequested actions from authoredActionStates includinghit/ability/load/unload/repair/build/gather even when artwork missing.",
+    "Resets on identity/facing/createdTick/backwardtick/time; prunesnonidle/dead/absent/embarked beforecapacityallocation; clearonrasterdispose/recreate.",
+    "Frozenobservation timeadvance offsetsstart; normalpausedpresentationtime remainsunchanged.",
+    "Only trueunitidle branch samplesentryclock; missing/coldSTATIC_ILLUSTRATION remainselapsed0frame0. Existingdistancewalk/episode/gather/attack/hit clocks untouched."
+  ],
+  "checks": [
+    {
+      "argv": [
+        "node",
+        "scripts/agent-preflight.mjs",
+        "--task",
+        "runtime",
+        "--source",
+        "client/raster-slice.js",
+        "--source",
+        "client/action-presentation.js",
+        "--task-id",
+        "idle-entry-phase524",
+        "--inputs",
+        "docs/audits/movement-priority-522/root/idle-entry524-inputs.json"
+      ],
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0,
+      "evidence": "docs/qa/idle-entry-phase-524/preflight.json"
+    },
+    {
+      "argv": [
+        "node",
+        "--test",
+        "tests/idle-entry-phase524.test.js",
+        "tests/action-presentation.test.js",
+        "tests/locomotion-phase.test.js",
+        "tests/raster-draw-trace490.test.js",
+        "tests/raster-streaming480.test.js",
+        "tests/unit-disappearance522.test.js"
+      ],
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0,
+      "evidence": "docs/qa/idle-entry-phase-524/tests-final.log",
+      "observation": "19pass actual; semanticentry/transition/facing/identity/backwardtime/pause/capprune/clear; trueentryF0 at2250,F1at3000; missing/coldwalkfallbackF0 andreturnidleF0; existingpresentation/locomotion/rasterstreaming/HP0policy checks."
+    }
+  ],
+  "outputs": [
+    {
+      "path": "client/action-presentation.js",
+      "sha256": "543c640458f423715030382259c20f2d2580fd1bae249e7cc1df3ce1ced45bea"
+    },
+    {
+      "path": "client/raster-slice.js",
+      "sha256": "af6736681580d42e4f9f168209d6c3beed9c0bd59f0f578ec9505d7598d661b8"
+    },
+    {
+      "path": "tests/idle-entry-phase524.test.js",
+      "sha256": "cbb1742c957fef523f73536240d3f6e0adfbce11818d1b14426dc5e10d063ad6"
+    }
+  ],
+  "logs": [
+    {
+      "path": "docs/qa/idle-entry-phase-524/preflight.json",
+      "sha256": "f1acc259440792696d177312569e1f24c796d965edb21a125a943a33ab08293e"
+    },
+    {
+      "path": "docs/qa/idle-entry-phase-524/before.json",
+      "sha256": "b25d0fbe71f8e9a9d259fcb3fe1d892a072566a45e725724b660145e058b514e"
+    },
+    {
+      "path": "docs/qa/idle-entry-phase-524/tests.log",
+      "sha256": "48fb9b10bb748e7f4aeef3ba27ac24710f0e6de80da2cae655c6b21c728f2f28"
+    },
+    {
+      "path": "docs/qa/idle-entry-phase-524/tests-final.log",
+      "sha256": "2d2963d86c12ce19d8248f15929d397b225401fed846f4eb239e75abaa5cd49e"
+    }
+  ],
+  "preservation": {
+    "sharedSimSHA": "c9a01adba8630e89e1c3f195c1b98c08c32e74468d389a55891c664e3906e562",
+    "sharedVisibleActionSHA": "35d4352d3c6a85bce7b99638934e9c0512c900df801fc3b59296ba1b606b27b0",
+    "simulationChanged": false
+  },
+  "calls": 0,
+  "handles": [],
+  "limitations": [
+    "No browser/build/fullsuite/image/deploy performed.",
+    "Sourcecosmeticclockfix not originalappearance/naturalmotion/worldfootlock/owner/runtime/publicapproval.",
+    "Capacityoverflow entities sampleF0 withoutretainedclock;1024cap exceeds legal240livingmatch but not a fullrosterstressproof.",
+    "Samplingbefore firstobserve returnsF0 deliberately; normalrenderer observessemanticstate eachrender."
+  ],
+  "nextDependency": "Independentexactsource review/rootintegration;523actualidleframes and continuouslivingmotion qualification stillopen."
+}

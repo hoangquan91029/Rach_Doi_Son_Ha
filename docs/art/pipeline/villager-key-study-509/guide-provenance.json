@@ -1,0 +1,205 @@
+{
+  "schema": "rds-key-study-guide/v1",
+  "kind": "complete-whole-clothed-cycle",
+  "sourcePixelUse": false,
+  "identity": "villager",
+  "action": "walk",
+  "direction": 1,
+  "job": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-key-study-509/job.json",
+    "sha256": "2710265b0914446ae6fad1c6d9c2dc54e4f9bd1327fc47813fd8078871de5534",
+    "id": "villager-D1-joint-key-study-509",
+    "action": "walk",
+    "direction": 1,
+    "variant": "joint-complementary-four-key-context"
+  },
+  "input": {
+    "originalMaster": {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+      "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94"
+    },
+    "appearance": {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+      "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+    }
+  },
+  "output": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-key-study-509/joint-guide.png",
+    "sha256": "4a62e739ffe141095b76c418e871b973e5db0d93311b76b7e04e87dacdb83dbf"
+  },
+  "keyMap": [
+    {
+      "frame": 0,
+      "phase": 0.0,
+      "row": 0,
+      "column": 0
+    },
+    {
+      "frame": 2,
+      "phase": 0.25,
+      "row": 0,
+      "column": 1
+    },
+    {
+      "frame": 4,
+      "phase": 0.5,
+      "row": 1,
+      "column": 0
+    },
+    {
+      "frame": 6,
+      "phase": 0.75,
+      "row": 1,
+      "column": 1
+    }
+  ],
+  "cyclePhases": [
+    {
+      "frame": 0,
+      "phase": 0.0
+    },
+    {
+      "frame": 1,
+      "phase": 0.125
+    },
+    {
+      "frame": 2,
+      "phase": 0.25
+    },
+    {
+      "frame": 3,
+      "phase": 0.375
+    },
+    {
+      "frame": 4,
+      "phase": 0.5
+    },
+    {
+      "frame": 5,
+      "phase": 0.625
+    },
+    {
+      "frame": 6,
+      "phase": 0.75
+    },
+    {
+      "frame": 7,
+      "phase": 0.875
+    }
+  ],
+  "layout": {
+    "cell": {
+      "width": 256,
+      "height": 256
+    },
+    "pivot": {
+      "x": 133.51196172248802,
+      "y": 232.72727272727272,
+      "space": "source"
+    },
+    "render": {
+      "width": 42,
+      "height": 42
+    },
+    "columns": 2,
+    "rows": 2
+  },
+  "motion": {
+    "physicalA": "persistent image-right trouser cuff and open sandal, lane x146 in fixed South guide; anatomical side UNKNOWN",
+    "physicalB": "persistent image-left trouser cuff and open sandal, lane x116 in fixed South guide; anatomical side UNKNOWN",
+    "keys": [
+      {
+        "frame": 0,
+        "support": "A receives weight forward at sole146,249; begin stance with brief double support",
+        "swing": "B trails toward lift-off at sole116,187; preserve full clothed leg",
+        "occlusion": "draw trailing B first then receiving A; maintain their cuff lanes"
+      },
+      {
+        "frame": 2,
+        "support": "A planted under weight at sole146,218; torso crosses support naturally",
+        "swing": "B knee bends and passes forward, lifted sole116,196 above ground218; avoid long split contact",
+        "occlusion": "B bent leg behind A except exposed lifted sandal, tunic covers hip without losing calf"
+      },
+      {
+        "frame": 4,
+        "support": "B receives weight forward at sole116,249; opposing contact to F0",
+        "swing": "A trails toward lift-off at sole146,187; opposite arms counter-swing",
+        "occlusion": "draw trailing A first then receiving B; maintain physical cuff identities"
+      },
+      {
+        "frame": 6,
+        "support": "B planted under weight at sole116,218; torso crosses support naturally",
+        "swing": "A knee bends and passes forward, lifted sole146,196 above ground218; opposite passing to F2",
+        "occlusion": "A bent leg behind B except exposed lifted sandal; whole clothing and physical lanes retained"
+      }
+    ]
+  },
+  "rootDecision": "SELECTED_AUTHORING_GUIDE_ONLY; unchanged491 vector wholecells row-major F0 F2 F4 F6; not selected finished art or motion approval",
+  "assembly": {
+    "method": "Rsvg/Cairo nested whole SVG cells with integer translations only",
+    "sourceSVGs": [
+      {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pose-control-491/guide/F0.svg",
+        "sha256": "409163aa25070ca9419878357f5519ae8782d6b17a5663473bf682f46cbfae5f"
+      },
+      {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pose-control-491/guide/F2.svg",
+        "sha256": "0be87d65ffb01ca028e2ddc885ec6b8d0e313c80540c592cbd0c0ffb0ddfdaf2"
+      },
+      {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pose-control-491/guide/F4.svg",
+        "sha256": "86d374f8c76ea72f4ae0e45e0da083acc17ee9314cd83e14562bb138872b1f67"
+      },
+      {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pose-control-491/guide/F6.svg",
+        "sha256": "9e72fd50b86769548db985474e491052ad7d2f9fd421f0a658f903bd34064699"
+      }
+    ],
+    "sourceCycle": [
+      {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pose-control-491/guide/F0.svg",
+        "sha256": "409163aa25070ca9419878357f5519ae8782d6b17a5663473bf682f46cbfae5f"
+      },
+      {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pose-control-491/guide/F1.svg",
+        "sha256": "cb24718dde7f2e6c955cff4ebe01a2df5c9c65d66dc089e480098916225ee311"
+      },
+      {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pose-control-491/guide/F2.svg",
+        "sha256": "0be87d65ffb01ca028e2ddc885ec6b8d0e313c80540c592cbd0c0ffb0ddfdaf2"
+      },
+      {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pose-control-491/guide/F3.svg",
+        "sha256": "d2874dd93bb4a36d9dea1d61d6333b9c5500c496029ad974b195f0792a18524b"
+      },
+      {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pose-control-491/guide/F4.svg",
+        "sha256": "86d374f8c76ea72f4ae0e45e0da083acc17ee9314cd83e14562bb138872b1f67"
+      },
+      {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pose-control-491/guide/F5.svg",
+        "sha256": "410ea0dbfebd6a1b83a22617d778f745c69c4b3f2ea91294e0fae372b928ba38"
+      },
+      {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pose-control-491/guide/F6.svg",
+        "sha256": "9e72fd50b86769548db985474e491052ad7d2f9fd421f0a658f903bd34064699"
+      },
+      {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pose-control-491/guide/F7.svg",
+        "sha256": "ce4974a9ed5c91edb9d7b4573db32db7704e6f4eca030689a1e03adbafa52054"
+      }
+    ],
+    "landmarks": {
+      "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/villager-pose-control-491/guide/landmarks.json",
+      "sha256": "6a1eb7f20e5b88194b25660ea441efe7546284c7563eccef2def12786f4a4cc2"
+    },
+    "noSourcePixels": true,
+    "perCellFit": false,
+    "mirror": false
+  },
+  "limitations": [
+    "Guide600ms and124px authored travel not measured finished stride",
+    "Original remains1254 square; candidate study256 envelope only, normalized pivot",
+    "Four candidate keys not complete eightframe loop"
+  ]
+}

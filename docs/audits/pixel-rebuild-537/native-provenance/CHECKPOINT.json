@@ -1,0 +1,70 @@
+{
+  "taskId": "native-provenance537",
+  "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+  "receipt": "docs/audits/pixel-rebuild-537/native-provenance/RECEIPT.json",
+  "commands": [
+    {
+      "argvShell": "node --test tests/pixel-native-provenance537.test.js tests/pixel-animation535.test.js tests/pixel-correctness537.test.js",
+      "exitCode": 0,
+      "log": "docs/audits/pixel-rebuild-537/native-provenance/node-tests.log",
+      "sha256": "0288ba62a1f3cc7372dd59cb1a8de6845f5f54e663e9315f1dfe1511e202b3c8",
+      "custody": "actual command stdout/stderr redirected during original execution"
+    },
+    {
+      "argvShell": "python3 tests/pixel-native-provenance537.py",
+      "exitCode": 0,
+      "log": "docs/audits/pixel-rebuild-537/native-provenance/python-tests.log",
+      "sha256": "c346f1228fe88f4ab3cb336ffa610dc3a34ec7c7bb7d05df7a1c222f2d928881",
+      "custody": "actual command stdout/stderr redirected during original execution"
+    },
+    {
+      "argvShell": "python3 tests/pixel-sprites535.py",
+      "exitCode": 1,
+      "log": "docs/audits/pixel-rebuild-537/native-provenance/python-existing.log",
+      "sha256": "4a5ef069ee078e159cd0122c0950af5c606071d7711bd84c502c62dce51be54a",
+      "custody": "actual command stdout/stderr redirected during original execution"
+    },
+    {
+      "argvShell": "python3 tests/pixel-gif537.py",
+      "exitCode": 0,
+      "log": "docs/audits/pixel-rebuild-537/native-provenance/gif-existing.log",
+      "sha256": "3de2f9d06b3723c5b6ce14da00a81f94140cf76b6eaa1fc19554afa73bdc4031",
+      "custody": "actual command stdout/stderr redirected during original execution"
+    },
+    {
+      "argvShell": "python3 tests/pixel-sprites535.py",
+      "exitCode": 1,
+      "log": "docs/audits/pixel-rebuild-537/native-provenance/python-existing-repair.log",
+      "sha256": "3bffc89f831bbfbe7aa75b7da2e7638a5f9737ec81ce2bc31ca8d65c93b011f9",
+      "custody": "actual command stdout/stderr redirected during original execution"
+    },
+    {
+      "argvShell": "python3 tests/pixel-sprites535.py",
+      "exitCode": 0,
+      "log": "docs/audits/pixel-rebuild-537/native-provenance/python-existing-repair2.log",
+      "sha256": "9457676fbad30065701293927026a213ac1c19368853be669d7f66875a433ae5",
+      "custody": "actual command stdout/stderr redirected during original execution"
+    },
+    {
+      "argvShell": "python3 tests/pixel-native-provenance537.py",
+      "exitCode": 0,
+      "log": "docs/audits/pixel-rebuild-537/native-provenance/python-native-final.log",
+      "sha256": "c346f1228fe88f4ab3cb336ffa610dc3a34ec7c7bb7d05df7a1c222f2d928881",
+      "custody": "actual command stdout/stderr redirected during original execution"
+    }
+  ],
+  "note": "Logs confirmed present at intake follow-up. No tests rerun or source changes performed. Art preflight initial failure JSON is a later transcription of exact observed tool result, not a raw redirected log. RECEIPT.json preserved unchanged.",
+  "artPreflight": {
+    "exitCode": 1,
+    "record": "docs/audits/pixel-rebuild-537/native-provenance/art-preflight-first-failure.json",
+    "custody": "transcribed exact observed result"
+  },
+  "auditPreflight": {
+    "log": "docs/audits/pixel-rebuild-537/native-provenance/preflight.json",
+    "exitCode": 0
+  },
+  "artApproval": "UNKNOWN",
+  "runtimeApproval": "UNKNOWN",
+  "calls": 0,
+  "handles": []
+}

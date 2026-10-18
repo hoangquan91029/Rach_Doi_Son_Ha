@@ -1,0 +1,3163 @@
+[
+  {
+    "index": 0,
+    "side": 0,
+    "type": "villager",
+    "building": 1,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 384,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 388,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "villager",
+            "remaining": 6.9,
+            "total": 7
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869684446,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 1,
+            "unit": "villager"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 1,
+    "side": 0,
+    "type": "infantry",
+    "building": 4,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 408,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 412,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "infantry",
+            "remaining": 8.899999999999999,
+            "total": 9
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869685710,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 4,
+            "unit": "infantry"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 2,
+    "side": 1,
+    "type": "villager",
+    "building": 18,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 432,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 436,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "villager",
+            "remaining": 6.9,
+            "total": 7
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869686975,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 18,
+            "unit": "villager"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 3,
+    "side": 1,
+    "type": "infantry",
+    "building": 21,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 456,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 460,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "infantry",
+            "remaining": 8.899999999999999,
+            "total": 9
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869688219,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 21,
+            "unit": "infantry"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 4,
+    "side": 0,
+    "type": "villager",
+    "building": 1,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 504,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "villager",
+            "remaining": 7,
+            "total": 7
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869690509,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 1,
+            "unit": "villager"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 5,
+    "side": 0,
+    "type": "infantry",
+    "building": 4,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 524,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 524,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 528,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "infantry",
+            "remaining": 9,
+            "total": 9
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869691576,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 4,
+            "unit": "infantry"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 6,
+    "side": 1,
+    "type": "villager",
+    "building": 18,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 552,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 552,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 556,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "villager",
+            "remaining": 7,
+            "total": 7
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869693010,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 18,
+            "unit": "villager"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 7,
+    "side": 1,
+    "type": "infantry",
+    "building": 21,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 580,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 584,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "infantry",
+            "remaining": 9,
+            "total": 9
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869694545,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 21,
+            "unit": "infantry"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 8,
+    "side": 0,
+    "type": "villager",
+    "building": 1,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 652,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 652,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 656,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "villager",
+            "remaining": 7,
+            "total": 7
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869698143,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 1,
+            "unit": "villager"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 9,
+    "side": 0,
+    "type": "infantry",
+    "building": 4,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 680,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 680,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 684,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "infantry",
+            "remaining": 9,
+            "total": 9
+          },
+          "tickBudgetSeconds": 1.2
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869699577,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 4,
+            "unit": "infantry"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 10,
+    "side": 1,
+    "type": "villager",
+    "building": 18,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 736,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 740,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "villager",
+            "remaining": 6.8500000000000005,
+            "total": 7
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869702526,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 18,
+            "unit": "villager"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 11,
+    "side": 1,
+    "type": "infantry",
+    "building": 21,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 760,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 764,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "infantry",
+            "remaining": 9,
+            "total": 9
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869703844,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 21,
+            "unit": "infantry"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 12,
+    "side": 0,
+    "type": "villager",
+    "building": 1,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 832,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 836,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "villager",
+            "remaining": 6.95,
+            "total": 7
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869707624,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 1,
+            "unit": "villager"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 13,
+    "side": 0,
+    "type": "infantry",
+    "building": 4,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 856,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 860,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "infantry",
+            "remaining": 9,
+            "total": 9
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869708863,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 4,
+            "unit": "infantry"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 14,
+    "side": 1,
+    "type": "villager",
+    "building": 18,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 916,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 920,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "villager",
+            "remaining": 6.95,
+            "total": 7
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869711982,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 18,
+            "unit": "villager"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 15,
+    "side": 1,
+    "type": "infantry",
+    "building": 21,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 944,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 948,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "infantry",
+            "remaining": 9,
+            "total": 9
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869713337,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 21,
+            "unit": "infantry"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 16,
+    "side": 0,
+    "type": "villager",
+    "building": 1,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 1016,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 1016,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 1020,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "villager",
+            "remaining": 6.800000000000001,
+            "total": 7
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869716926,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 1,
+            "unit": "villager"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 17,
+    "side": 0,
+    "type": "infantry",
+    "building": 4,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 1040,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 1044,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "infantry",
+            "remaining": 9,
+            "total": 9
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869718342,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 4,
+            "unit": "infantry"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 18,
+    "side": 1,
+    "type": "villager",
+    "building": 18,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 1100,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 1104,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "villager",
+            "remaining": 6.9,
+            "total": 7
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869721342,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 18,
+            "unit": "villager"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 19,
+    "side": 1,
+    "type": "infantry",
+    "building": 21,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 1128,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "infantry",
+            "remaining": 9,
+            "total": 9
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869722650,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 21,
+            "unit": "infantry"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 20,
+    "side": 0,
+    "type": "villager",
+    "building": 1,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 1196,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 1200,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "villager",
+            "remaining": 6.8500000000000005,
+            "total": 7
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869726224,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 1,
+            "unit": "villager"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 21,
+    "side": 0,
+    "type": "infantry",
+    "building": 4,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 1220,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 1224,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "infantry",
+            "remaining": 9,
+            "total": 9
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869727498,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 4,
+            "unit": "infantry"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 22,
+    "side": 1,
+    "type": "villager",
+    "building": 18,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 1280,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 1284,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "villager",
+            "remaining": 6.8500000000000005,
+            "total": 7
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869730557,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 18,
+            "unit": "villager"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 23,
+    "side": 1,
+    "type": "infantry",
+    "building": 21,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 1304,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 1308,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "infantry",
+            "remaining": 9,
+            "total": 9
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869731820,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 21,
+            "unit": "infantry"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 24,
+    "side": 0,
+    "type": "villager",
+    "building": 1,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 1372,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 1376,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "villager",
+            "remaining": 6.9,
+            "total": 7
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869735341,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 1,
+            "unit": "villager"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 25,
+    "side": 0,
+    "type": "infantry",
+    "building": 4,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 1400,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 1404,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "infantry",
+            "remaining": 9,
+            "total": 9
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869736718,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 4,
+            "unit": "infantry"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 26,
+    "side": 1,
+    "type": "villager",
+    "building": 18,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 1456,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 1460,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "villager",
+            "remaining": 6.800000000000001,
+            "total": 7
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869739560,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 18,
+            "unit": "villager"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 27,
+    "side": 1,
+    "type": "infantry",
+    "building": 21,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 1480,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 1484,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "infantry",
+            "remaining": 9,
+            "total": 9
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869740869,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 21,
+            "unit": "infantry"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 28,
+    "side": 0,
+    "type": "villager",
+    "building": 1,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 1556,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "villager",
+            "remaining": 6.95,
+            "total": 7
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869744692,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 1,
+            "unit": "villager"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 29,
+    "side": 0,
+    "type": "infantry",
+    "building": 4,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 1576,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 1580,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "infantry",
+            "remaining": 9,
+            "total": 9
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869745825,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 4,
+            "unit": "infantry"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 30,
+    "side": 1,
+    "type": "villager",
+    "building": 18,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 1636,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 1640,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "villager",
+            "remaining": 6.8500000000000005,
+            "total": 7
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869748885,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 18,
+            "unit": "villager"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 31,
+    "side": 1,
+    "type": "infantry",
+    "building": 21,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 1664,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 1668,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "infantry",
+            "remaining": 9,
+            "total": 9
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869750328,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 21,
+            "unit": "infantry"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 32,
+    "side": 0,
+    "type": "villager",
+    "building": 1,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 1740,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 1744,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "villager",
+            "remaining": 6.9,
+            "total": 7
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869754258,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 1,
+            "unit": "villager"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 33,
+    "side": 0,
+    "type": "infantry",
+    "building": 4,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 1768,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 1772,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "infantry",
+            "remaining": 9,
+            "total": 9
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869755655,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 4,
+            "unit": "infantry"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 34,
+    "side": 1,
+    "type": "villager",
+    "building": 18,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 1828,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 1832,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "villager",
+            "remaining": 6.9,
+            "total": 7
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869758858,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 18,
+            "unit": "villager"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 35,
+    "side": 1,
+    "type": "infantry",
+    "building": 21,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 1856,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 1860,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "infantry",
+            "remaining": 9,
+            "total": 9
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869760247,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 21,
+            "unit": "infantry"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 36,
+    "side": 0,
+    "type": "villager",
+    "building": 1,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 1932,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 1936,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "villager",
+            "remaining": 6.9,
+            "total": 7
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869764182,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 1,
+            "unit": "villager"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 37,
+    "side": 0,
+    "type": "infantry",
+    "building": 4,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 1960,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 1960,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 1964,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "infantry",
+            "remaining": 9,
+            "total": 9
+          },
+          "tickBudgetSeconds": 1.2
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869765533,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 4,
+            "unit": "infantry"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 38,
+    "side": 1,
+    "type": "villager",
+    "building": 18,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 2024,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 2028,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "villager",
+            "remaining": 6.8500000000000005,
+            "total": 7
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869768935,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 18,
+            "unit": "villager"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 39,
+    "side": 1,
+    "type": "infantry",
+    "building": 21,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 2052,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 2056,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "infantry",
+            "remaining": 9,
+            "total": 9
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869770387,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 21,
+            "unit": "infantry"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 40,
+    "side": 0,
+    "type": "villager",
+    "building": 1,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 2132,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 2136,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "villager",
+            "remaining": 6.9,
+            "total": 7
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869774523,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 1,
+            "unit": "villager"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 41,
+    "side": 0,
+    "type": "infantry",
+    "building": 4,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 2160,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 2164,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "infantry",
+            "remaining": 9,
+            "total": 9
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869775911,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 4,
+            "unit": "infantry"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 42,
+    "side": 1,
+    "type": "villager",
+    "building": 18,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 2216,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 2220,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "villager",
+            "remaining": 6.9,
+            "total": 7
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869778850,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 18,
+            "unit": "villager"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 43,
+    "side": 1,
+    "type": "infantry",
+    "building": 21,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 2244,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 2248,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "infantry",
+            "remaining": 9,
+            "total": 9
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869780280,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 21,
+            "unit": "infantry"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 44,
+    "side": 0,
+    "type": "villager",
+    "building": 1,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 2320,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 2324,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "villager",
+            "remaining": 6.8500000000000005,
+            "total": 7
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869784142,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 1,
+            "unit": "villager"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 45,
+    "side": 0,
+    "type": "infantry",
+    "building": 4,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 2348,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 2348,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 2352,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "infantry",
+            "remaining": 9,
+            "total": 9
+          },
+          "tickBudgetSeconds": 1.2
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869785542,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 4,
+            "unit": "infantry"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 46,
+    "side": 1,
+    "type": "villager",
+    "building": 18,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 2412,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 2416,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "villager",
+            "remaining": 6.9,
+            "total": 7
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869788912,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 18,
+            "unit": "villager"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 47,
+    "side": 1,
+    "type": "infantry",
+    "building": 21,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 2440,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 2444,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "infantry",
+            "remaining": 9,
+            "total": 9
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869790367,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 21,
+            "unit": "infantry"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 48,
+    "side": 0,
+    "type": "villager",
+    "building": 1,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 2524,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "villager",
+            "remaining": 6.95,
+            "total": 7
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869794560,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 1,
+            "unit": "villager"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 49,
+    "side": 0,
+    "type": "infantry",
+    "building": 4,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 2544,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 2548,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "infantry",
+            "remaining": 9,
+            "total": 9
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869795750,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 4,
+            "unit": "infantry"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 50,
+    "side": 1,
+    "type": "villager",
+    "building": 18,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 2604,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 2608,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "villager",
+            "remaining": 6.800000000000001,
+            "total": 7
+          },
+          "tickBudgetSeconds": 1.2
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869798746,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 18,
+            "unit": "villager"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 51,
+    "side": 1,
+    "type": "infantry",
+    "building": 21,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 2632,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [
+            82
+          ],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 2636,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 1,
+          "added": {
+            "unit": "infantry",
+            "remaining": 8.799999999999997,
+            "total": 9
+          },
+          "tickBudgetSeconds": 1.2
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869800226,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 21,
+            "unit": "infantry"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 52,
+    "side": 0,
+    "type": "villager",
+    "building": 1,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 2712,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 2716,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "villager",
+            "remaining": 6.9,
+            "total": 7
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869804474,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 1,
+            "unit": "villager"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 53,
+    "side": 0,
+    "type": "infantry",
+    "building": 4,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 2740,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "infantry",
+            "remaining": 9,
+            "total": 9
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869805797,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 4,
+            "unit": "infantry"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 54,
+    "side": 1,
+    "type": "villager",
+    "building": 18,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 2800,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "villager",
+            "remaining": 6.95,
+            "total": 7
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869808879,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 18,
+            "unit": "villager"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 55,
+    "side": 1,
+    "type": "infantry",
+    "building": 21,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 2824,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 2824,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 2828,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "infantry",
+            "remaining": 8.799999999999997,
+            "total": 9
+          },
+          "tickBudgetSeconds": 1.2
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869810166,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 21,
+            "unit": "infantry"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 56,
+    "side": 0,
+    "type": "villager",
+    "building": 1,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 2876,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 2880,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "villager",
+            "remaining": 6.8500000000000005,
+            "total": 7
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869812895,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 1,
+            "unit": "villager"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 57,
+    "side": 0,
+    "type": "infantry",
+    "building": 4,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 2904,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 2904,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 2908,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "infantry",
+            "remaining": 9,
+            "total": 9
+          },
+          "tickBudgetSeconds": 1.2
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869814295,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 4,
+            "unit": "infantry"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 58,
+    "side": 1,
+    "type": "villager",
+    "building": 18,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 2932,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 2936,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "villager",
+            "remaining": 7,
+            "total": 7
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869815916,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 18,
+            "unit": "villager"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 59,
+    "side": 1,
+    "type": "infantry",
+    "building": 21,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 2964,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 2964,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 2968,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "infantry",
+            "remaining": 9,
+            "total": 9
+          },
+          "tickBudgetSeconds": 1.2
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869817412,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 21,
+            "unit": "infantry"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 60,
+    "side": 0,
+    "type": "villager",
+    "building": 1,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 3016,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 3020,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 1,
+          "added": {
+            "unit": "villager",
+            "remaining": 6.9,
+            "total": 7
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869820172,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 1,
+            "unit": "villager"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 61,
+    "side": 0,
+    "type": "infantry",
+    "building": 4,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 3044,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 3048,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "infantry",
+            "remaining": 9,
+            "total": 9
+          },
+          "tickBudgetSeconds": 1.2
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869821592,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 4,
+            "unit": "infantry"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 62,
+    "side": 1,
+    "type": "villager",
+    "building": 18,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 3072,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 3076,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "villager",
+            "remaining": 7,
+            "total": 7
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869823180,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 18,
+            "unit": "villager"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 63,
+    "side": 1,
+    "type": "infantry",
+    "building": 21,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 3100,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 3104,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "infantry",
+            "remaining": 9,
+            "total": 9
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869824636,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 21,
+            "unit": "infantry"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 64,
+    "side": 0,
+    "type": "villager",
+    "building": 1,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 3152,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 3156,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "villager",
+            "remaining": 7,
+            "total": 7
+          },
+          "tickBudgetSeconds": 1.2
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869827258,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 1,
+            "unit": "villager"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 65,
+    "side": 0,
+    "type": "infantry",
+    "building": 4,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 3180,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869828667,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 4,
+            "unit": "infantry"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 66,
+    "side": 1,
+    "type": "villager",
+    "building": 18,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 3204,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 3208,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "villager",
+            "remaining": 7,
+            "total": 7
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869829990,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 18,
+            "unit": "villager"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 67,
+    "side": 1,
+    "type": "infantry",
+    "building": 21,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 3232,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869831538,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 21,
+            "unit": "infantry"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 68,
+    "side": 0,
+    "type": "villager",
+    "building": 1,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 3284,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "villager",
+            "remaining": 7,
+            "total": 7
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869834032,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 1,
+            "unit": "villager"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 69,
+    "side": 1,
+    "type": "villager",
+    "building": 18,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 3308,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 3312,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "villager",
+            "remaining": 7,
+            "total": 7
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869835495,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 18,
+            "unit": "villager"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 70,
+    "side": 0,
+    "type": "villager",
+    "building": 1,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 3364,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "villager",
+            "remaining": 7,
+            "total": 7
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869838197,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 1,
+            "unit": "villager"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 71,
+    "side": 0,
+    "type": "infantry",
+    "building": 4,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 3388,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 3392,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "infantry",
+            "remaining": 9,
+            "total": 9
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869839502,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 4,
+            "unit": "infantry"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 72,
+    "side": 1,
+    "type": "villager",
+    "building": 18,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 3416,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869840993,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 18,
+            "unit": "villager"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "index": 73,
+    "side": 1,
+    "type": "infantry",
+    "building": 21,
+    "oldVerdict": "ACCEPTED_QUEUE",
+    "verdicts": [
+      {
+        "tick": 3440,
+        "result": {
+          "status": "PENDING",
+          "newRequestedIds": [],
+          "limitation": "spawn alone cannot bind this command to producer"
+        }
+      },
+      {
+        "tick": 3444,
+        "result": {
+          "status": "ACCEPTED_QUEUE",
+          "removed": 0,
+          "added": {
+            "unit": "infantry",
+            "remaining": 9,
+            "total": 9
+          },
+          "tickBudgetSeconds": 0.8
+        }
+      }
+    ],
+    "wire": [
+      {
+        "at": 1791869842275,
+        "message": {
+          "type": "command",
+          "command": {
+            "type": "train",
+            "building": 21,
+            "unit": "infantry"
+          }
+        }
+      }
+    ]
+  }
+]

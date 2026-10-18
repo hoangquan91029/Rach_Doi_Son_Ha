@@ -1,0 +1,84 @@
+{
+  "schema": "rds-pixel-source-review/v1",
+  "reviewer": "/root/pixel_review535",
+  "status": "SCOPED_SOURCE_REVIEW_WITH_OPEN_GAPS",
+  "verified": [
+    "12 focused Node tests pass; see focused-tests.log",
+    "Fixed128 cells/1024 atlas, explicit engine row map, positive timing, finite skipped markers, distance-only walk and missing reviewed stride explicit",
+    "Legacy unit/portrait manifest entries filtered; renderer unit branch uses pixel bank. Empty actual registry makes no new-art completion claim.",
+    "Pixel CLI rejects wrong dimensions/alpha/palette/duplicate within-row; packs whole native cells without correction/resampling. GIF uses nearest scaling and exact10ms timing.",
+    "Fresh order branch invokes existing guarded-order checks; explicit empty-ref new identity path with pinned design/style/prompt/job."
+  ],
+  "findings": [
+    {
+      "severity": "P1_RUNTIME_QUALIFICATION_BLOCKER",
+      "path": "client/renderer.js",
+      "symbol": "constructor/createPixelSpriteBank",
+      "detail": "Renderer and viewer supply no strideDistance, bank has no per-identity setter/metadata field. Any future approved walk returns frame0/unqualified permanently; documented OPEN now, but reviewed per-identity stride must be wired before walk runtime acceptance."
+    },
+    {
+      "severity": "P2_QA_GAP",
+      "path": "scripts/pixel-sprites.py",
+      "symbol": "validate_atlas/pack",
+      "detail": "Mirrored direction check compares matching frame indices only. A mirrored copy with phase-shifted frame order is accepted. Structural mirrored-substitution rule needs cyclic-shift comparison or explicit limitation; visual review still necessary."
+    },
+    {
+      "severity": "P2_QUALIFICATION_WORKFLOW_GAP",
+      "path": "client/pixel-sprite-bank.js",
+      "symbol": "validatePixelRegistry",
+      "detail": "Only all-PASS registry clips load, and viewer uses same default active registry. This protects production but there is no scoped candidate registry/viewer mechanism for actual engine review before runtime PASS. Need isolated explicit candidate qualification mode without publishing candidate in approved active bank."
+    }
+  ],
+  "qaGaps": [
+    "No actual pixel asset/native loop/engine scene exists in reviewed registry. Visual, palette continuity across actions, actual eight views, tool contact, measured stride, gameplay transitions and Chrome/Firefox remain UNKNOWN.",
+    "12 tests use structural/synthetic fixtures; they do not qualify authored pixels or actual loaded renderer.",
+    "PNG command tests not rerun in this review; Pillow runtime depends on bundled environment.",
+    "New typed job checks identity/action/direction, but does not validate full authoring job schema/layout/sourceReuse/references. Pinned current job is correct; strengthen before generalizing."
+  ],
+  "approvals": {
+    "structuralSource": "SCOPED",
+    "visual": "UNKNOWN",
+    "motion": "UNKNOWN",
+    "runtime": "UNKNOWN",
+    "owner": "UNKNOWN",
+    "public": "UNKNOWN"
+  },
+  "sourcePins": [
+    {
+      "path": "client/pixel-animation.js",
+      "sha256": "038110ddc61ca84c987eed074abf46338d89b0811bbcabd0f0624c1188b76252"
+    },
+    {
+      "path": "client/pixel-sprite-bank.js",
+      "sha256": "1472cfcd711b9cba3574ae05b4fad61c79e0e22a3fb5504476e5c0ede181cd7a"
+    },
+    {
+      "path": "client/pixel-sprite-viewer.js",
+      "sha256": "d9e70aa3c52bc9b8fb9242275e3764d33d06d384c85f23b12948e42af386942b"
+    },
+    {
+      "path": "client/renderer.js",
+      "sha256": "8417463887924bd35b8cee4d6f66b30535b1734f50b278c261aa841336f1bcf5"
+    },
+    {
+      "path": "client/art-assets.js",
+      "sha256": "4f3415cdd3b75ade9721672bfe375ed645b152da98ab2591a78b200f70b6bcbb"
+    },
+    {
+      "path": "client/boot-ui-assets.js",
+      "sha256": "3926cc734fe878cc93ad1d24c9ae8f41c4ef67857dfa5475cfa95aaeb08988b7"
+    },
+    {
+      "path": "scripts/pixel-sprites.py",
+      "sha256": "e5988e2098fd2dcec22c8e001c0df1b963f3ad869b63182af958ebe805f45dca"
+    },
+    {
+      "path": "scripts/pixel-sprite-contract.mjs",
+      "sha256": "34cfe56bb0df96d4ab98c3b5af61154e3a6eb779f8aca77f218d2fa016144475"
+    },
+    {
+      "path": "scripts/sprite-prompts.mjs",
+      "sha256": "4aef7a62d2fb59cadc9bda3f063534c4399c6471c44354b9f169c553b24fbe6a"
+    }
+  ]
+}

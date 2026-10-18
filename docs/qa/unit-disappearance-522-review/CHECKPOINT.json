@@ -1,0 +1,76 @@
+{
+  "schema": "rds-readonly-review/v1",
+  "taskId": "review-disappearance522",
+  "decision": "SCOPED_READY",
+  "findings": [],
+  "method": "Independent source/diff/caller inspection and reading existing producer log; no tests rerun",
+  "reviewedInputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "a81895b57e445ae913773fd7bf55049f84d859d407e175de2d106edc4f3c52bd"
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "29ffb1565274551aa4a6033dabb7cda620a01a7a6983bfe5fc84c0ce377fb517"
+    },
+    {
+      "path": "client/renderer.js",
+      "sha256": "9a71bdf26c2e851bae585eeae97a126a699a44c14d96c96369727c28b30b32d6"
+    },
+    {
+      "path": "client/raster-slice.js",
+      "sha256": "1ebdcbeeb6ad031792bba661e74390a5aec4c5e25ceb288fcb5618548bba73ef"
+    },
+    {
+      "path": "shared/unit-action-spec.js",
+      "sha256": "1e796554394506f668aa06a69443de26ab22ceaa6497fd28a6157030dc0b9fc9"
+    },
+    {
+      "path": "scripts/art-coverage.mjs",
+      "sha256": "810bcade5b503553c7e9e3258d6797b120987630bf0847792e31e314b829fe21"
+    },
+    {
+      "path": "tests/unit-disappearance522.test.js",
+      "sha256": "6c79c5418e3cb08d4fdb3127cc8e3484e107facb321b7cdc31ace7668104e486"
+    },
+    {
+      "path": "docs/qa/unit-disappearance-522/CHECKPOINT.json",
+      "sha256": "7e09a6dedfe6181192b2d0f2aa577e0e690a187e057707fa70ea1acdce017ff1"
+    },
+    {
+      "path": "shared/sim.js",
+      "sha256": "c9a01adba8630e89e1c3f195c1b98c08c32e74468d389a55891c664e3906e562"
+    }
+  ],
+  "checks": [
+    {
+      "command": "node scripts/agent-preflight.mjs --task audit --source client/renderer.js --source client/raster-slice.js --source shared/unit-action-spec.js --source scripts/art-coverage.mjs --task-id review-disappearance522 --inputs docs/audits/movement-priority-522/root/review-inputs.json",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0,
+      "evidence": "docs/qa/unit-disappearance-522-review/preflight.json",
+      "sha256": "8dd8f23420a0e24e2a2a94dfa224250b4f64ee4ddb2b4d025499607ba2de3b3b"
+    },
+    {
+      "state": "DOCUMENTED_ONLY",
+      "evidence": "docs/qa/unit-disappearance-522/tests-final.log",
+      "sha256": "68b4c452370846c153f4f75d8e2d7da09833857484db4441b668a3096e194967",
+      "observation": "Read actual producer log: 12 PASS, zero FAIL; not independently rerun"
+    }
+  ],
+  "observations": [
+    "client/renderer.js:40/44 filter HP0 before observations and world depth queue; drawEntity:64 guards before shadow/primitive/authored/bar drawing; minimap:253 excludes HP0. Living healthbar calculation unchanged.",
+    "client/raster-slice.js:109 guards HP0 before page sampling/request; drawEntity routes via sampleEntity. observeEntities:72 resets current traces then excludes dead actors from locomotion.",
+    "client/visual-picking.js:13 already excludes HP0 before direct raster sampling and primitive picking. No dead silhouette is pickable.",
+    "client/action-presentation.js:11 removes impact pulse records when actor missing from filtered living list. client/terrain-cache.js documents and implements static terrain only, no entity capture.",
+    "shared/unit-action-spec.js removes death eligibility while retaining legacy ACTION_FRAMES.death and alias parsing; scripts/unit-art-coverage.mjs imports updated ACTIONS/actionSpec. General art-coverage expectedMatrix removes unit/leader/building death.",
+    "shared/sim.js SHA unchanged from task pin; damage/death/General defeat/cargo remain authoritative and dead entities may remain in simulation for cleanup."
+  ],
+  "limitations": [
+    "Source and focused producer-check review only; no browser/runtime/motion/public PASS.",
+    "Retained corpse/death rendering code is unreachable through current production drawEntity/render HP0 paths; no need to delete historical code/art.",
+    "Legacy coverage prose Twelve action union is stale descriptive text in scripts/unit-art-coverage.mjs; not an executable required-death regression. Root may update prose with current contract integration."
+  ],
+  "calls": 0,
+  "handles": [],
+  "preservation": "All registered input hashes unchanged at final review; only exclusive review outputs written."
+}

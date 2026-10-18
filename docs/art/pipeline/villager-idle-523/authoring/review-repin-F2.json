@@ -1,0 +1,13 @@
+{
+  "method": "Explicit root stage snapshot update after actualtrustedidentityregistration",
+  "mismatches": [
+    {
+      "path": "docs/art/pipeline/unit-production/villager/identity.json",
+      "oldSHA": "2ac445cd51e466b07998955c206acf67a9f4816db2827ec67503a05d2697e3fa",
+      "newSHA": "7641b13e6aa32f828dfa5323d1a59293585eb11ea6d7db16a9621e15a8a05186",
+      "reason": "Root added typedidle job/guide registration after initialplanreview; prioridentitybytes preserved authoring/identity-before.json. No originalartpin drift."
+    }
+  ],
+  "preservedFailure": "review/preflight-F2.json",
+  "imageCalls": 0
+}

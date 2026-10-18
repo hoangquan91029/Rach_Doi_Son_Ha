@@ -1,0 +1,149 @@
+{
+  "schema": "rds-review-building511/v1",
+  "taskId": "review-building511",
+  "status": "F0_AND_F3_CANDIDATE_SOURCE_SELECTABLE",
+  "purpose": "Independent original Granary death terminal-key plan review",
+  "exclusiveOutput": "docs/art/pipeline/granary-death-511/review/",
+  "checks": {
+    "preflight": {
+      "status": "VERIFIED",
+      "exit": 0,
+      "path": "docs/art/pipeline/granary-death-511/review/preflight.json"
+    },
+    "memoryPrepare": {
+      "status": "VERIFIED",
+      "exit": 0,
+      "path": "docs/art/pipeline/granary-death-511/review/memory-prepare.json",
+      "scope": "proposed registry/order only; no guarded dispatch or canonical mutation"
+    },
+    "originalVisual": {
+      "status": "VERIFIED",
+      "path": "docs/art/granary/variant-01/raw.png",
+      "method": "actual view_image full raw",
+      "observed": "Long orange terracotta gable with upturned eaves, right small porch roof, raised timber platform, central front stair, grain baskets, stone footings, baked floor-contact shadow"
+    },
+    "simWindow": {
+      "status": "VERIFIED",
+      "path": "shared/sim.js",
+      "symbols": [
+        "hurt",
+        "step"
+      ],
+      "observed": "death state and deadTick at hp0; entity filter removes at TICK_RATE*4=80ticks=4000ms"
+    },
+    "plan": {
+      "status": "PROPOSED",
+      "observation": "250/250/300/800ms finite collapse; terminal begins800ms, total1600ms, finalpose held until corpse removal. Terminal low broken tiles/beams on fixed original platform materially differs from living/construction states."
+    },
+    "disjointScope": {
+      "status": "VERIFIED",
+      "observation": "proposed Granary death null direction/job differs from Residence construction498 subject/job; review owns no ledger/slots and does not clear unresolved claims",
+      "limitation": "real ACTIVE illustration task scoped art guard, prepareOrder and durable claim still required"
+    },
+    "terminalVisual": {
+      "status": "VERIFIED",
+      "method": "Actual raw plus common whole143px canvas comparison (142.8px target rounded once for both)",
+      "display": "docs/art/pipeline/granary-death-511/review/common-canvas143.png",
+      "observation": "Readably destroyed original orange tile granary: central roof falls inward with snapped beams and shortened post stubs, no intact tall standing roof. Original raised timber floor/front stair/stone footings, front basket remnants, right porch roof material and dimetric design remain recognizable. Baked underfloor contact shadow remains; no added background or active flying debris.",
+      "limitations": "Visual footprint consistency at sampled still; not exact landmark registration or continuous collapse review. Some gable/roof chunks remain elevated but visibly broken, acceptable terminal wreckage."
+    },
+    "onsetVisual": {
+      "status": "VERIFIED",
+      "method": "Independent raw image view plus original/F0/F3 identical whole143px canvas comparison",
+      "display": "docs/art/pipeline/granary-death-511/review/original-F0-F3-common-canvas143.png",
+      "observation": "F0 retains mostly standing original roof with clearly broken central ridge and sagged tile trough; damaged snapped post/bracing and scattered tile pieces make death onset visibly distinct from idle. Floor, stair, stone footings, orange tile/timber materials, camera and overall layout remain recognizable against original. F3 is substantially lower and more collapsed. Small timber damage beyond ridge is compatible with death onset.",
+      "limitations": "Two stills are key source assessment only; exact floor landmark registration and continuous collapse smoothness remain unverified."
+    }
+  },
+  "verdict": {
+    "plan": "NO_CONCRETE_GEOMETRIC_BLOCKER",
+    "sourceKey": "CANDIDATE_USABLE_F0_PHASE0_AND_F3_PHASE0.75_ONLY",
+    "motion": "UNKNOWN_TWO_STILLS_ONLY",
+    "runtime": "UNKNOWN",
+    "owner": "UNKNOWN",
+    "release": "UNKNOWN"
+  },
+  "risks": [
+    "F0/F1/F2 and continuous transition remain absent; this still cannot establish motion, timing smoothness or runtime contact/occlusion.",
+    "Fixed family transform must apply to all returned frames; no per-frame fit/crop."
+  ],
+  "calls": 0,
+  "canonicalWrites": 0,
+  "handles": [],
+  "artifacts": {
+    "preflight.json": "ad212bd830ec3bde95ea02855b2f3b992875318a07632fe31ce6f483022d6f19",
+    "memory-prepare.json": "49b3e1d3f69a8a6e2d5dd931c679681d568a48188ab491b7a10a5f4410943ec5",
+    "common-canvas143.png": "f4fa14672aa01893363a24a1013914c20ea2cf13967c71423fd7db6ecbd6c0f5",
+    "F3-source-review.json": "bfe12bd81babc6a81fcaff8d6c7dd8e4e76a5eac4cf96fa6f1548e1a3871feae",
+    "original-F0-F3-common-canvas143.png": "deaa44f4ec48fdfb7413d83e5135cd2ffdc9f19ea0d000a7b29a4231549dbebe",
+    "preview513-preflight.json": "995c9adc8072f235474768e91ce1a7d5ae45b4c2114d75d16d4b766ce1542511"
+  },
+  "nextDependency": "Root may select exact F0phase0 and use selectedF0/F3 for remaining finiteF1/F2 initial calls; four total initial limit, two calls reportedly consumed, zero corrections. Complete sequence independent review still required.",
+  "finalRequestSHA": "8e24a656b38a93ed57e2706465861f37b7932fd60a9f3d654095e48f5744485d",
+  "finalRequestReview": "Actual reread: spacing repaired, exact terminal geometry/layout and finiteF3 scope unchanged",
+  "candidateSourceSelectable": true,
+  "returnedKey": {
+    "path": "docs/art/pipeline/granary-death-511/illustration/F3-raw.png",
+    "sha256": "e53a36ffe4a52477e2e598f7d4222d4a79ef75e222e09f479cf26159294719e9",
+    "frame": 3,
+    "phase": 0.75,
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alphaExtrema": [
+      0,
+      255
+    ],
+    "method": "Independent actual raw view_image plus PIL byte/hash/dimension verification"
+  },
+  "sourceKeyCandidates": [
+    {
+      "path": "docs/art/pipeline/granary-death-511/illustration/F3-raw.png",
+      "sha256": "e53a36ffe4a52477e2e598f7d4222d4a79ef75e222e09f479cf26159294719e9",
+      "frame": 3,
+      "phase": 0.75,
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "method": "Independent actual raw view_image plus PIL byte/hash/dimension verification"
+    },
+    {
+      "path": "docs/art/pipeline/granary-death-511/illustration/F0-raw.png",
+      "sha256": "c853a3340a6e8173f882312a5b69c1f1abb8fc67a4743a39d93e7abce2280815",
+      "frame": 0,
+      "phase": 0,
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "candidateSourceSelectable": true
+    }
+  ],
+  "previewSourceReview": {
+    "status": "SCOPED_READY_REAL_BUILDING_INTAKE",
+    "evidence": "VERIFIED_SOURCE_REVIEW_DOCUMENTED_TEST_RESULTS",
+    "method": "Readonly actual final source/test/repair-log/receipt; assigned pin preflight exit0; no browser or test rerun",
+    "sourcePins": {
+      "scripts/sprite-preview.html": "a25c4acf047e07b41d6e1593a967bebd8a1435d06ac3d0e849661fd679cdfc3b",
+      "scripts/qa/sprite-preview.mjs": "f2142564470ab7d8db0df2409843d3709bab3d6c893b130c13c81dfb3f1b1b3d",
+      "tests/building-preview513.test.js": "e4cc8f6cb8677e358483d50d1c712f1136463a85ddef6fb07f04145af7aeb769",
+      "docs/qa/building-preview-513/repair-tests.log": "845604bdf5973846c3ed91b98e9db0a9f6a976dd2b821482ff6fb16897f1d62f"
+    },
+    "observation": "Preview reads descriptor.loop: looping clips modulo duration and count cycles; finite clips clamp elapsed, hold final frame and mark completion. QA waits cycles for loop=true and completed only for loop=false; finite Replay resets clock/seen/completion and pause/resume uses actual elapsed. Building has no eightdirection bank; canvas is logicalrender*configuredzoom. Repair fixture covers unitloop, constructionloop and finitebuilding.",
+    "blockingIssues": [],
+    "historicalIssue": "Initial QA mistakenly treated all buildings as finite; constructionloop completion wait would hang. Repair source now branches by actual loop flag.",
+    "launchAccounting": "Producer receipt retains initial2browser launches (second outside initial onefixture scope) plus separatelyauthorized1repairfixture; total3reportedclosed. Reviewer launches0.",
+    "limitations": [
+      "Read source confirms logic; saved producer test pass is DOCUMENTED_ONLY, not independently rerun.",
+      "Current branch is appropriate realGranaryfinite building preview; no artmotion/runtimeapproval follows.",
+      "Unit directionchange descriptors with different loop values can leave previewState.looping metadata stale; irrelevant to no-direction Granary scope, not tested as arbitrary bank compatibility."
+    ]
+  }
+}

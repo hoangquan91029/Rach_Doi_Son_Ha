@@ -1,0 +1,110 @@
+{
+  "taskId": "render538",
+  "status": "IMPLEMENTED_TECHNICAL_ONLY",
+  "purpose": "Native 128 render metadata placement, same-controller accessible viewer, menu art scene navigation",
+  "tools": [
+    "exec_command",
+    "python3",
+    "node --test",
+    "node --check"
+  ],
+  "preflight": {
+    "initial": "FAILED Active task output ownership overlap; old535/537 custody subsequently transferred by root",
+    "rerun": "VERIFIED scoped audit preflight",
+    "path": "docs/audits/art-rebuild-538/render538/preflight.json"
+  },
+  "outputs": [
+    {
+      "path": "client/pixel-animation.js",
+      "sha256": "28e740f0d233aa4384ee3c1c6c5b12743d9f78ca1ac87bcbcd28a72b6a179297"
+    },
+    {
+      "path": "client/pixel-sprite-bank.js",
+      "sha256": "171c3a51f8e685fd24c8c264338eb8e7d5c60ddf0e6e5a642f3b227f1cab8b30"
+    },
+    {
+      "path": "client/pixel-sprite-viewer.js",
+      "sha256": "b40d2e8a2f259da39cb81bf09642f92f23212fc5f86cc0d3640e76bfffafc1d2"
+    },
+    {
+      "path": "client/main.js",
+      "sha256": "73277baca600327a003645f232b890a12bf1700f90eee2292af8e9526f905020"
+    },
+    {
+      "path": "client/style.css",
+      "sha256": "0a6d707485cf5e57ebb9bd47d0f2e10923ffd5d6441fdf552e97c3de8108d159"
+    },
+    {
+      "path": "client/renderer.js",
+      "sha256": "0d85413e56f945ded1b58c7e0ea4998b1441af9183e02e24f780f953b8ac69d8"
+    },
+    {
+      "path": "client/visual-picking.js",
+      "sha256": "c12ad4d3508848a1f495d6af5923e8b76a343f90ffd4b8f306eff95ada36862f"
+    },
+    {
+      "path": "tests/pixel-render538.test.js",
+      "sha256": "0f5001140fbdc6c72bba750d784b2770363298a30e658f1610d27c328cc8f7fd"
+    },
+    {
+      "path": "tests/pixel-animation535.test.js",
+      "sha256": "e42b8a15086a4476d0ad87085d393869fe4b54caf86797da40d2eba6799d3a08"
+    },
+    {
+      "path": "tests/pixel-integration535.test.js",
+      "sha256": "4b477b751fb89a1d7232b35659203bd1ec5a0c6d92ec4dfd254e92dae76c0a41"
+    },
+    {
+      "path": "tests/pixel-correctness537.test.js",
+      "sha256": "2826d387162aafb810b4c62689422fe8cb268b9d9668e489d8e41c17e4ab7f05"
+    },
+    {
+      "path": "tests/pixel-native-provenance537.test.js",
+      "sha256": "1eab84d0eb3234519ecd70bad7459b987c41f463e8d50041b5f5c411eb60ad82"
+    },
+    {
+      "path": "client/world-presentation.js",
+      "sha256": "de41a63c4883c54e14b85a8a23713d9396bdc96dff56684a5d1e64155d6e4314"
+    },
+    {
+      "path": "tests/world-presentation538.test.js",
+      "sha256": "17a06d57cb2677cbb2f8f6647d19375f6ecd4da16789769b57ffe24ad75b1548"
+    }
+  ],
+  "checks": {
+    "focusedPixelTests": "PASS 29 tests across six files (tests-followup.txt); prior26 retained",
+    "syntax": "PASS main.js visual-picking.js renderer.js"
+  },
+  "inputDriftNow": [
+    "client/pixel-animation.js",
+    "client/pixel-sprite-bank.js",
+    "client/main.js"
+  ],
+  "changes": [
+    "strict renderSize128",
+    "metadata bounds shared by drawing alpha picking health bars",
+    "menu-card tools and art direction scene link",
+    "named modal restores focus and cancels animation on close",
+    "NORMAL_ZOOM1 makes native128 cells128 CSS pixels at match launch; tile54/27 axes unchanged",
+    "Regression verifies missing/hidden samples do not require clip metadata"
+  ],
+  "limits": [
+    "No browser observation performed by this worker",
+    "No art acceptance, motion, runtime, public or release approval",
+    "Existing building picking and presentation retained; simulation unchanged",
+    "No provider call or asset generation"
+  ],
+  "calls": 0,
+  "handles": {
+    "openedServers": [],
+    "openedBrowsers": [],
+    "runningTests": []
+  },
+  "nextDependency": "Root integration and independent browser review",
+  "followupReview": {
+    "nullMetadata": "VERIFIED bank draw hidden/missing/image guards; picking sample image+clip guard; renderer health bar optional clip guard",
+    "getWorld": "No getWorld symbol exists in current client sources",
+    "distantZoom": "Source-verified keyboard .55 minimum and wheel .5 minimum unchanged",
+    "browser": "NOT_RUN"
+  }
+}

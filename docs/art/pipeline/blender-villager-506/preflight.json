@@ -1,0 +1,128 @@
+{
+  "schema": "rds-agent-preflight/v1",
+  "task": "audit",
+  "head": "1c7097fc80f94fc87f2fdc97d355e414601c37a4",
+  "status": " M AGENTS.md\n M docs/NEXT_STEPS.md\n M docs/PROJECT_STATE.md\n M docs/audits/implementation-495/tasks.json\n?? docs/art/pipeline/blender-villager-504/\n?? docs/art/pipeline/blender-villager-506/\n?? docs/audits/blender-runtime-500/mcp/isolated-runtime-config/\n?? docs/audits/blender-runtime-502/connection/runs/628b44df2ea64e469a62f7ee7622fa68/\n?? docs/audits/blender-runtime-502/connection/runs/78c7c0ef24864151b4c4d2afff9a984a/\n?? docs/audits/blender-runtime-502/connection/runs/9271d344564342a6936296c576fe3d2a/\n?? docs/audits/blender-runtime-502/connection/runs/b48a76aec35e4695bac1f9640e59774c/\n?? docs/audits/blender-runtime-502/connection/runs/c91a741082bc4c908a1c4921f6384989/\n?? docs/audits/continuation-504/\n?? docs/qa/online-profile-504/\n?? docs/qa/online-profile-505/\n?? docs/qa/online-profile-506/\n?? scripts/blender/villager504.py\n?? scripts/qa/online-profile504.mjs\n?? scripts/qa/online-profile506.mjs\n?? scripts/qa/train-observation504.mjs\n?? tests/train-observation504.test.js",
+  "readFiles": [
+    {
+      "path": "docs/agent-read-contract.json",
+      "sha256": "416ca4786e698dcbb3e4418a7b679d7d3bfb6ce8c3c8589c30d07fe7e6985d26",
+      "bytes": 1258
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "07f78b1281e4ae2f54d1f5b7677104ca23a83570739027c1004098f54a997474",
+      "bytes": 11738
+    },
+    {
+      "path": "docs/PROJECT_STATE.md",
+      "sha256": "d3eca5f861a786d6679a6a9b40412f768dc2c63d87e8560c4c9d89f7d63bfc9c",
+      "bytes": 23445
+    },
+    {
+      "path": "docs/NEXT_STEPS.md",
+      "sha256": "af8da15bcdc07336fc359143af74093d4326946fb48efca2ba50eddc4c069fcb",
+      "bytes": 5605
+    },
+    {
+      "path": "docs/ARCHITECTURE_DECISIONS.md",
+      "sha256": "7bfd25399fe1dfa21e3ed5d4acab9c7d1b0e2e54da408cc8cccf548da95af39f",
+      "bytes": 3389
+    },
+    {
+      "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+      "sha256": "225d9c16f9db5c4fbe941c93053fbcb958b1672824043b757b58ebb4f41b8569",
+      "bytes": 5779
+    },
+    {
+      "path": "docs/PROJECT_ROADMAP.md",
+      "sha256": "f301544b9375909773a73ad39a3d1f24974cb366bdf26cef47aeb944fec0b135",
+      "bytes": 9032
+    },
+    {
+      "path": "docs/art/pipeline/ANIMATION_RESEARCH.md",
+      "sha256": "b6a1abb8c76d416a29a3c7bee95e3ea05502be71c2c02002a43bfbd9c43808d9",
+      "bytes": 5913
+    },
+    {
+      "path": "docs/COMPLETION_MATRIX.md",
+      "sha256": "3fad38e2251177c797cb2d2f51d016cb818a52b530c1d2d71fc53fd9d9995dda",
+      "bytes": 32134
+    },
+    {
+      "path": "docs/art/pipeline/BLENDER_SPRITE_PIPELINE.md",
+      "sha256": "335f4ce5965650dae237f93baddad6e1340f3c3a8d3530a86e82f6944434cbfe",
+      "bytes": 12822
+    }
+  ],
+  "sources": [
+    {
+      "path": "scripts/blender/villager504.py",
+      "sha256": "e97cc98b24fa8237028330643a0bbc17eca40f85bfd820367212b751ea7556f8",
+      "bytes": 10272
+    }
+  ],
+  "assignment": {
+    "taskId": "source-garment506",
+    "registration": {
+      "path": "docs/audits/implementation-495/tasks.json",
+      "sha256": "9c86f0de60136d8e1d167db838c3dd3a50f83ac8422458d7bdb3b3b159dbbe11",
+      "bytes": 75344
+    },
+    "inputs": [
+      {
+        "path": "AGENTS.md",
+        "sha256": "07f78b1281e4ae2f54d1f5b7677104ca23a83570739027c1004098f54a997474"
+      },
+      {
+        "path": "docs/AGENT_EXECUTION_CONTRACT.md",
+        "sha256": "225d9c16f9db5c4fbe941c93053fbcb958b1672824043b757b58ebb4f41b8569"
+      },
+      {
+        "path": "scripts/blender/villager504.py",
+        "sha256": "e97cc98b24fa8237028330643a0bbc17eca40f85bfd820367212b751ea7556f8"
+      },
+      {
+        "path": "docs/art/pipeline/blender-villager-504/control.json",
+        "sha256": "9253cbc659f5a0fce2d2606eadef9921bdf985567cc9decf2cef32b88cfae966"
+      },
+      {
+        "path": "docs/audits/continuation-504/identity-review/actualappearance-review.json",
+        "sha256": "cbbf5cc86e7f21089da52157e79480c29dc89768e8e5cf246fb83659679ebe97"
+      },
+      {
+        "path": "docs/art/characters/villager-neutral-D00-screen-ESE/raw.png",
+        "sha256": "145b976ffd1bdf563cb5da78806547e6849424054f2c26fc297e155a0b366e94"
+      },
+      {
+        "path": "docs/art/characters/villager-neutral-D01-screen-South-007/raw.png",
+        "sha256": "68a7fb9a71ae614f7c01432b1270e7a25071975667cfdf082ae02326d97678db"
+      }
+    ],
+    "outputs": [
+      "scripts/blender/villager506.py",
+      "docs/art/pipeline/blender-villager-506"
+    ],
+    "slots": []
+  },
+  "ledger": {
+    "path": "docs/art/pipeline/unit-production/order-ledger.json",
+    "sha256": "a687d7b292859ff5ef7b973001c2ae1308ec3fcf1023db160ac1f1792d3ce7b4",
+    "locked": false,
+    "unresolvedClaims": [
+      {
+        "order": "residence-construction-F1-F3-498",
+        "slot": 1
+      },
+      {
+        "order": "residence-construction-F1-F3-498",
+        "slot": 3
+      }
+    ]
+  },
+  "limits": [
+    "Existence and byte hashes do not establish understanding, permission, approval or tool availability.",
+    "Explicit invocation only; this helper is not a mandatory global hook.",
+    "Externally verify tools and actual live handles/preservation guards; no guards are declared closed."
+  ]
+}

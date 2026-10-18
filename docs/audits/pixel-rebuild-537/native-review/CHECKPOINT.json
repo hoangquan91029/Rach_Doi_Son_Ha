@@ -1,0 +1,84 @@
+{
+  "schema": "rds-independent-motion-review/v1",
+  "taskId": "native-worker-review537",
+  "status": "SAMPLES_ONLY",
+  "subject": "villager/walk/S eight native poses537",
+  "reviewer": "Independent gpt-6.1-sol/low task; distinct from producer native-worker-S537",
+  "skill": "/home/kieu-hoang-quan/.codex/skills/trinh-nguyen-motion-review/SKILL.md",
+  "technical": {
+    "state": "VERIFIED",
+    "evidence": "verification.json",
+    "pinMismatches": 0,
+    "recipeRGBAReproduced": 8,
+    "frameCount": 8,
+    "dimensions": [
+      128,
+      128
+    ],
+    "visibleColors": 19,
+    "alpha": [
+      0,
+      255
+    ],
+    "distinctRGBA": 8,
+    "method": "Imported recipe with sys.dont_write_bytecode=true; draw_pose only, main never executed; actual PNG bytes decoded and compared. No source/output overwritten."
+  },
+  "geometry": {
+    "state": "VERIFIED",
+    "observation": "Fixed128canvas, eight distinguishable RGBA poses; shared clothing/face pixel vocabulary and alternating screen-depth leg extensions visible in native contact sheet and64px samples. Full figure remains within border. Fixed anchor metadata does not establish planted feet."
+  },
+  "visualSamples": {
+    "state": "SAMPLES_ONLY",
+    "sourceToLogical": 0.5,
+    "cameraZoom": 1,
+    "proposedDPR": 1,
+    "displayCellPx": [
+      64,
+      64
+    ],
+    "method": "Whole-cell nearest-neighbor diagnostic strip in own review directory; observed with view_image, native contact sheet also inspected. Not integrated renderer footage.",
+    "observations": [
+      "Worker clothing/head silhouette remains readable at proposed64px cell scale.",
+      "F0/F4 show opposite leg extensions; F2/F6 shorten opposite swing leg, rather than whole-frame translation alone. Arms and hips change with poses.",
+      "No specific disconnected limb or clipping defect established from these static samples. This does not establish absence during playback."
+    ],
+    "potentialConcern": {
+      "state": "INFERRED",
+      "detail": "Plan stance toe y retreats114\u2192111 overF0\u2013F3, followed by opposite supportF4; passing-to-reach movement differs in magnitude. Whether this gives foot slide or a timing hitch depends on measured travel/continuous playback. Do not change pixels or stride merely from this inference."
+    }
+  },
+  "motion": {
+    "state": "UNKNOWN",
+    "verdict": "SAMPLES_ONLY",
+    "observationDurationMs": null,
+    "reason": "No actual continuous loop observed. Image inspection delivers still frames; no browser playback launched. No PASS_NARROW/no-slide/seam verdict inferred from contact sheets or distinct hashes.",
+    "correctionRequested": null,
+    "correctionsUsed": 0
+  },
+  "viewMapping": {
+    "state": "DOCUMENTED_ONLY",
+    "mapping": "S / engineD1 from pinned frame plan; source pixels front-facing; other directions absent"
+  },
+  "owner": "UNKNOWN",
+  "runtime": "UNKNOWN",
+  "production": "HELD_PENDING_ACTUAL_MOTION",
+  "providerCalls": 0,
+  "sourceEdits": 0,
+  "handles": [],
+  "checks": [
+    {
+      "command": "node scripts/agent-preflight.mjs --task audit --source docs/art/pixel-worker-537/authoring/draw_worker.py --task-id native-worker-review537 --inputs docs/audits/pixel-rebuild-537/native-review/inputs.json",
+      "cwd": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha",
+      "exitCode": 0,
+      "evidence": "preflight.json"
+    }
+  ],
+  "nextDependency": "Root or independent reviewer with actual continuous-playback observation must watch exact pinned800ms loop at proposed64px size, normal speed, then inspect support transfers and F7\u2192F0 seam. Use dark/light/neutral, record exact hashes/scale/duration. Only observed defect permits the one targeted correction; no fanout or other direction/action before motion gate. Runtime/stride and owner remain separate.",
+  "outputs": [
+    "preflight.json",
+    "verification.json",
+    "samples-64.png",
+    "CHECKPOINT.json"
+  ],
+  "limitations": "No browser/server/tool lock created, no provider or imagegen calls. Structural evidence supports native raster custody only, not artistic approval."
+}

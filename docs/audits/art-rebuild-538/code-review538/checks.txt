@@ -1,0 +1,42 @@
+✔ exact schema layout URL palette and provenance reject (1.295186ms)
+✔ actual eight directional rectangles (0.794622ms)
+✔ finite skipped markers exactly once and reentry (1.102111ms)
+✔ pause drops wall clock gap; Stop action starts F0 (0.303118ms)
+✔ walk measured distance only; missing reviewed stride explicitly unqualified (0.222066ms)
+✔ actual transient hit maps full clip into five ticks then returns idle F0 (6.656437ms)
+✔ late first sample primes elapsed; reset and second hit restart; HP0 hidden (0.500188ms)
+✔ pause drops elapsed gap and resumes by subsequent delta (0.274172ms)
+✔ native render128 is strict; old half-sized metadata rejected (1.154259ms)
+✔ bounds follow metadata ratios rather than old fixed half-cell offsets (0.57434ms)
+✔ native draw uses the same anchored cell at default, distant and close zoom (0.361099ms)
+✔ native alpha picking reaches enlarged head and ignores transparent pixels at nondefault zoom (0.406781ms)
+✔ menu viewer has named modal, close disposal and visible art-scene navigation (4.821682ms)
+✔ missing and hidden runtime samples never read absent clip metadata (0.204881ms)
+✔ HP0 unit/building direct raster calls do not request even available death pages (2.302146ms)
+✖ renderer hides dead actors before observations and any authored or primitive fallback; living healthbar stays (0.727869ms)
+✔ current coverage keeps living actions and waives death/destroyed/sink while retaining historical frame counts (0.447881ms)
+✔ HP0 buildings vanish from minimap while living building healthbar remains (0.388302ms)
+✔ default view renders native128 cell one to one without changing projection axes (1.189847ms)
+✔ launch uses shared default while keyboard and wheel retain distant zoom controls (6.243272ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 19
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 73.514372
+
+✖ failing tests:
+
+test at tests/unit-disappearance522.test.js:16:1
+✖ renderer hides dead actors before observations and any authored or primitive fallback; living healthbar stays (0.727869ms)
+  TypeError: this.pixelBank.sampleEntity is not a function
+      at Object.drawEntity (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/client/renderer.js:68:51)
+      at TestContext.<anonymous> (file:///home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/tests/unit-disappearance522.test.js:22:71)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3)

@@ -1,0 +1,194 @@
+{
+  "schema": "rds-frame-source-custody/v1",
+  "package": "granary-death-511",
+  "sourceSelection": "FOUR_SOURCE_CANDIDATES_ONLY",
+  "frames": [
+    {
+      "frame": 0,
+      "phase": 0.0,
+      "raw": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/illustration/F0-raw.png",
+        "sha256": "c853a3340a6e8173f882312a5b69c1f1abb8fc67a4743a39d93e7abce2280815"
+      },
+      "selectionReceipt": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/authoring/F0-selection.json",
+        "sha256": "e8e49781ef50ed41f8f2d61a737d6f182a064a63d6c7a870c3eb43801d8dc7ba"
+      },
+      "claimToken": "06997374-f91e-42a6-b682-f12021a51c9d",
+      "requestSHA": "0240c307a33bf94f9a25e765174ebb4c83f00514673ad57f94bf53d85a6af683",
+      "preparedPromptSHA": "ee33c21f88a494c64dbd43b1b04aa663a2d92a2c34aad5778732bfbc36a3f276",
+      "orderedReferences": [
+        "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/granary/variant-01/raw.png",
+        "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/illustration/F3-raw.png"
+      ],
+      "claimReceipt": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/orders/F0-claim-result.json",
+        "sha256": "4a22b6ba0780445b614372c8c8c3cbc7150411700ae2da3d1d7c8e8cd89eedaf"
+      },
+      "settlementReceipt": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/orders/settle-F0-result.json",
+        "sha256": "99e9aed755b7860e0e75bfb18167adb5424083f9537d9939f0618c0857c5e293"
+      },
+      "workerModel": "gpt-6-luna",
+      "workerReasoning": "high",
+      "generatorModel": null,
+      "providerHandle": null,
+      "sourceMethod": "WHOLE_BUILTIN_ILLUSTRATION"
+    },
+    {
+      "frame": 1,
+      "phase": 0.25,
+      "raw": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/illustration/F1-raw.png",
+        "sha256": "b32a1f3cbee740b221c6a59bbd95eb05cf61566352f2a49d80489a27d437d6bd"
+      },
+      "selectionReceipt": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/authoring/F1-selection.json",
+        "sha256": "09614dd7f4e3982e36f2eba01864a9d46b1479645e4921d69b4f8298563b648b"
+      },
+      "claimToken": "f8e252cc-fd62-44b9-b100-9cfb60b568ef",
+      "requestSHA": "c742a1e523726601b0d3dac9a285036f76c3e5f2e76b70032f9e2195cc247106",
+      "preparedPromptSHA": "6678f537ef0cbb66f625f1352fdeecd6504325ca3c3b2b4566a862ff161c1e1e",
+      "orderedReferences": [
+        "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/granary/variant-01/raw.png",
+        "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/illustration/F0-raw.png",
+        "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/illustration/F3-raw.png"
+      ],
+      "claimReceipt": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/orders/F1-claim-result.json",
+        "sha256": "9a30d266e4392b933f55aaedf5dc65d9f873c9b92059cc84dc26a893621ab938"
+      },
+      "settlementReceipt": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/orders/settle-F1-result.json",
+        "sha256": "357a0a736c3b7766267e62045b787634331c880de0e30bdfb923e23e562dee2e"
+      },
+      "workerModel": "gpt-6-luna",
+      "workerReasoning": "high",
+      "generatorModel": null,
+      "providerHandle": null,
+      "sourceMethod": "WHOLE_BUILTIN_ILLUSTRATION"
+    },
+    {
+      "frame": 2,
+      "phase": 0.5,
+      "raw": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/illustration/F2-raw.png",
+        "sha256": "05a7438ba8550214706d7107a83614235e7aff54c8f546cea5c90cf7487f40fa"
+      },
+      "selectionReceipt": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/authoring/F2-selection.json",
+        "sha256": "42e46346b32b2427a394e11c1d4e5cf9194586f3ff415f41299cd01cfd766574"
+      },
+      "claimToken": "6ea91e30-2d50-4889-94dd-b8290d6415a8",
+      "requestSHA": "4a6a39f51c37aa46aec55895bf58f64d6088c1f9d6102c58f58b1ff17c741335",
+      "preparedPromptSHA": "5e5cb869bd32183a8d68ebf8cd9a5cf2a26d17e23b8741f2c3480d61ecf994f5",
+      "orderedReferences": [
+        "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/granary/variant-01/raw.png",
+        "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/illustration/F0-raw.png",
+        "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/illustration/F3-raw.png"
+      ],
+      "claimReceipt": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/orders/F2-claim-result.json",
+        "sha256": "145badb43dfd60a2f86fadb2e2e6eea29317586b3a21e2f99bba808d498271cb"
+      },
+      "settlementReceipt": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/orders/settle-F2-result.json",
+        "sha256": "fd1956eace1589e87fb75078cf8e0215bcfa921ea25993ea592d8c6923214e5a"
+      },
+      "workerModel": "gpt-6-luna",
+      "workerReasoning": "high",
+      "generatorModel": null,
+      "providerHandle": null,
+      "sourceMethod": "WHOLE_BUILTIN_ILLUSTRATION"
+    },
+    {
+      "frame": 3,
+      "phase": 0.75,
+      "raw": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/illustration/F3-raw.png",
+        "sha256": "e53a36ffe4a52477e2e598f7d4222d4a79ef75e222e09f479cf26159294719e9"
+      },
+      "selectionReceipt": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/authoring/F3-selection.json",
+        "sha256": "5f69f907b681fbb921718ca753e1801eb466e2895420500dbace0d468eac4709"
+      },
+      "claimToken": "5e796818-d267-47d9-9af0-1a21dde77969",
+      "requestSHA": "7738b5bcf9bca5a1cf8c044ea30621347cc4004afdffffe008c2c81d4353ad56",
+      "preparedPromptSHA": "6f1a74e139eb648cb743db2446274609f43f8f5100f63ba9241c20a240736985",
+      "orderedReferences": [
+        "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/granary/variant-01/raw.png"
+      ],
+      "claimReceipt": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/orders/claim-result.json",
+        "sha256": "580daf0e4ed25e7b79b07d451a2f17bbae0e4ada6baba244a759e172a9db5c51"
+      },
+      "settlementReceipt": {
+        "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/orders/settle-F3-result.json",
+        "sha256": "e90fc58097bb549ff53b2ddb6a4d05028df9195cadc6394a8535f38920035a59"
+      },
+      "workerModel": "gpt-6-luna",
+      "workerReasoning": "high",
+      "generatorModel": null,
+      "providerHandle": null,
+      "sourceMethod": "WHOLE_BUILTIN_ILLUSTRATION"
+    }
+  ],
+  "inputJob": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/authoring/compiler-job.json",
+    "sha256": "311de198784f3042ec8c5c4ce46ea0b244e6eb69c5d20606189015ccc1af65c2"
+  },
+  "descriptor": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/exports/compiled-selected/asset.json",
+    "sha256": "bd15509226232c966d4284a9cf17cf5e7fe04d59444b0d8daea34ade71de5da1"
+  },
+  "atlas": {
+    "path": "/home/kieu-hoang-quan/Videos/Rach_Doi_Son_Ha/docs/art/pipeline/granary-death-511/exports/compiled-selected/atlas.png",
+    "sha256": "6c34e21ce79a4e904dbfda02f1d01b2ccb38a02eed7ee0c7e056c494482ef0c8"
+  },
+  "timingMs": [
+    250,
+    250,
+    300,
+    800
+  ],
+  "loop": false,
+  "terminalHold": "F3 clamps, source sim removesdeadentity at80ticks=4000ms",
+  "fixedLayout": {
+    "source": [
+      1254,
+      1254
+    ],
+    "runtimeCell": [
+      512,
+      512
+    ],
+    "pivot": [
+      640,
+      1050
+    ],
+    "logical": [
+      85,
+      85
+    ],
+    "previewCanvas": 142.8,
+    "padding": 2,
+    "atlas": [
+      1032,
+      1032
+    ],
+    "shadow": "baked"
+  },
+  "rawPolicy": "All raws preserved byte-for-byte; raw->working256 and raw->runtime512 independent uniform transforms; no perframefit/crop/warp/mirror",
+  "quality": {
+    "motion": "UNKNOWN - actualcontinuousreview not established by sampledstills/previewcontrols",
+    "runtime": "PENDING_PRIVATE_ORDINARY_UI515",
+    "owner": "UNKNOWN - async actualpreviewfeedback pending",
+    "release": "OPEN - no canonical/public promotion"
+  },
+  "callCounts": {
+    "initialCalls": 4,
+    "corrections": 0,
+    "retries": 0
+  },
+  "proofLimits": "Hash/layout/phase/custody only; no visualapproval from compiler/manifest tests"
+}

@@ -1,0 +1,41 @@
+{
+  "token": "03c6ea39-1c01-4fe3-8922-b770d8afeb18",
+  "orderId": "fresh-pixel-worker-walk-S-535-ONE",
+  "slotIndex": 0,
+  "requestSHA": "c982f399ee02bda909572fdbb5e9617aadfbcaf1b4e50f984c1db150468f6ad1",
+  "prepared": {
+    "prompt": "Create one original authentic 2D pixel-art animation sprite strip, exactly 1024 pixels wide by128 pixels high, transparent PNG background. Eight evenly spaced128×128cells horizontally; each contains ONE complete whole-body newly designed Worker, same person, at a different real walk phase. No other rows, gridlines, labels, scenery, props, ground surface, text or contact sheet decorations. Do not reference any previous conversation character art. This is new art from scratch.\n\nStyle: hard1pixel edges, deliberately placed pixel clusters, NO anti-aliasing, soft paint, blur, vector curves, 3D render, interpolation or gradients. Native pixel density, at most32 coherent opaqueRGBcolors total, binary alpha0 or255. Small historical Vietnamese rural worker, indigo cross-front long-sleeve tunic, brown trousers tied at ankles, narrow ochre belt, dark headcloth, barefoot. Empty hands. Fixed elevated RTS three-quarter/isometric camera facing South/front viewer; upper-left lighting. Human body head-to-ground72nativepixels. Same identity/costume/proportions/scale in all8cells. In every128cell ground anchor at local(64,112); feet stay within2pixel transparent border, body centered. No rescaling between frames.\n\nDraw a complete natural slow WALK cycle with alternating anatomical left/right support and weight transfer. For this front-facing view actor's left is viewer's right. Eight columns ordered:\n0: leftfoot forward/down contacting ground, rightfoot trailing on toe, weight starting onto left.\n1: left leg accepts body weight with flat foot, right heel lifts and begins swing.\n2: right knee bends/passes supporting left leg; torso rises slightly; counter-swing arms.\n3: right leg reaches forward/down, left heel rises; torso weight moves forward.\n4: rightfoot contacts forward/down, leftfoot trails on toe; opposite contact of column0.\n5: right leg accepts body weight flat, left heel lifts and begins swing.\n6: left knee bends/passes supporting right leg; torso rises slightly; opposite arm counter-swing.\n7: left leg reaches forward/down, right heel rises; flowing directly into column0.\n\nAll8poses must visibly differ. Do not mirror a column to create the other leg's pose. Do not repeat idle poses, float, detach legs/tools, change body size, swap costume sides, make feet slide sideways or duplicate an endpoint. Anatomical left/right remain physical through all poses. Preserve whole character with arms and hands, intentional1pixel outlines and controlled shading. Exact1024×128 canvas, no margins outside the8cells. Return only the transparent sprite image.\n",
+    "orderId": "fresh-pixel-worker-walk-S-535-ONE",
+    "slotIndex": 0,
+    "transparent_background": true,
+    "scope": "Fresh pixel finite pending strip; no call consumed or approval",
+    "pixel": {
+      "schema": "rds-pixel-request/v1",
+      "identity": "villager",
+      "action": "walk",
+      "direction": 1,
+      "width": 1024,
+      "height": 128,
+      "cellSize": 128,
+      "frames": 8,
+      "designPin": {
+        "path": "docs/art/pixel-worker-535/authoring/DESIGN.md",
+        "sha256": "8b2411b5b22c49d6d93974a416c0246105a41129b5e5c5aa8cabaf47696302b7"
+      },
+      "stylePin": {
+        "path": "docs/PIXEL_ART_STYLE_GUIDE.md",
+        "sha256": "13bbeb81f263fb69f67ebda15313909a02c24b2f92ca309644deb877a06430c8"
+      },
+      "promptPin": {
+        "path": "docs/art/pixel-worker-535/authoring/walk-S-prompt.txt",
+        "sha256": "b4a08c3ea32c921cd5f25b6e3c5a18be8a80e1995e073f0635f31452d0398715"
+      },
+      "jobPin": {
+        "path": "docs/art/pixel-worker-535/authoring/job.json",
+        "sha256": "52c1e64ed007bd889f80d3dd0be32bc4a6602dc98b61aa1dd314cfa75c92b36c"
+      }
+    }
+  },
+  "scope": "Durable consumed claim; no dispatch, retry, selection or approval",
+  "ledgerSHA": "466b44fd126101ae50bcf52581fe5a4a87d90e0ca0d009b8772b36fae6c35ca3"
+}
